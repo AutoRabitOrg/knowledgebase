@@ -1,0 +1,23 @@
+# Export issues to CSV in CodeScan Cloud
+
+### Overview <a href="#overview" id="overview"></a>
+
+You can export issues as CSV files from CodeScan. Exporting issues to CSV enables you and your team to export all the data collected from issues into a `comma-separated values (CSV)` file, which stores tabular data in plain text. You can narrow down which issues to export using the filters, along with the severities of the issues.
+
+### Use Cases <a href="#use-cases" id="use-cases"></a>
+
+The following are some of the use cases for exporting issues as CSV files:
+
+* Create diagrams, graphs, and charts from the CSV data.
+* Present the data in any other format for auditing or sharing reasons.
+* Import the issues elsewhere to a system outside of CodeScan.
+* Use the long-term data to gather relevant feedback given in the issues, and improve your product based on real metrics.
+
+### How to Export <a href="#how-to-export" id="how-to-export"></a>
+
+1. Login to your CodeScan account and select your CodeScan organization.
+2. Navigate to the **More** tab and choose **CSV Export** from the dropdown.\
+   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QB3CQ7K9.png)
+3. Using the available filters, choose the issues you want to include in the CSV file.
+4. Click **Export** to download the file in your local machine.\
+   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-9U17XKVO.png)

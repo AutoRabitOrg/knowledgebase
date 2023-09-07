@@ -1,0 +1,214 @@
+# Monitor Deployments
+
+### Overview <a href="#overview" id="overview"></a>
+
+You can monitor deployments in progress, check which deployments are validated successfully/failed, check which deployments are in a queue, and view the results of completed deployments on the **`Deployment History`** screen.
+
+The **Deployment History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/firefox browser.
+
+This page lists all deployments that you have triggered in ARM. Use the **Filter** option to scope down the list of deployments based on the deployment label name, date range, or deployment status.
+
+When running a deployment, the **`Deployment History`** page shows you the real-time progress of your current deployment. This page contains charts that visually represent the overall deployment progress. If the current deployment has errors, you can view these errors before the deployment finishes by clicking on the **Deployment Log** button.
+
+#### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+
+You’ll need the **`Deployment History`** access permission.
+
+#### List of fields available on the Deployment History screen <a href="#list-of-fields-available-on-the-deployment-history-screen" id="list-of-fields-available-on-the-deployment-history-screen"></a>
+
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675974244468.png" alt="" width="563"><figcaption></figcaption></figure>
+
+1. **`Deployment Label:`** Deployment label along with the name of the user performing the deployment, the date and time when the deployment started, and the deployment status.
+2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
+3. **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.
+
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675974425563.png" alt="" width="563"><figcaption></figcaption></figure>
+
+1. **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.
+2. **`Deployment Iterations:`**Each new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.Important Notes:
+   1. For Salesforce DX custom deployments, multiple deployments can be rendered in one go, and the results are shown separately. Suppose you have invoked several deployment requests, but you have chosen to abort the deployment phase for one of the deployments, in such case the deployment will be aborted, but the other deployment will continue to operate in parallel
+   2. Detailed information on which deployment was triggered and canceled will appear in the **Log** report.
+3. **`Async ID:`** A unique identifier ID assigned to each deployment that helps track the deployment process.
+4. **`Deployment Status:`** A visual representation of the overall deployment progress. The first chart shows how many components have already been deployed and includes the number of components with errors. After all components have been deployed without errors, Apex tests start executing, if required or enabled. A second chart shows how many Apex tests have run out of the total number of tests and the number of errors returned. In addition, the chart shows the name of the currently running test.
+5. **Deployment Add-ons:**
+   * **`Promotion:`** Downloads the metadata components in your local system. The file format is in ZIP format.
+   * **`Redeploy/Promote:`** This option allows you to redeploy the components into the same destination environment with the changes made or promote the same label into a different destination environment.
+   * **`Rollback:`** Rollbacks revert a deployment to a previous revision.
+   * **`Abort:`** To cancel a running or stuck deployment process.
+   * **`View Graph:`** View Graph gives the graphical representation of the metadata members included in the deployment package.
+   * **`SCA Report:`**Static Code Analysis is usually performed as part of a Code Review and is carried out at the Implementation phase of a Security Development Lifecycle (SDL). Static Analysis tools such as PMD and Checkmarx continuously detect and report on dataflow problems, software defects, language implementation errors, inconsistencies, dangerous usage, coding standard violations, and security vulnerabilities.Important Note:
+     1. AutoRABIT stores the Static Code Analysis source content for 90 days. Post 90 days, the report will auto-deleted.
+     2. For those PMD reports generated before 90 days, those source content files will not be seen in the Static Analysis Report.
+   * **`Test Results:`** View the apex test result that you have configured during the deployment.
+   * **`Deployed Issues:`** Any issues found during deployment can be seen here.
+   * **`Quick Deploy:`** With Quick Deploy, the components validated successfully for the target environment within the last **96 hours** can be deployed quickly.
+6. **Metadata Components Details:**
+   * **`Components:`** This report displays the components successfully deployed into the target sandbox. Here you can download the deployed/ deployable components in XML format. To do so, click on the **`Download`** button.
+   * **`Failed Components:`** This report displays the components that have not been deployed into the target sandbox.
+   * **`Deleted Components:`** When pre-destructive or post-destructive changes are selected during deployment initiation, the deleted components are displayed here.
+   * **`Apex Test Success:`** This report displays the apex test components that have successfully passed unit testing.
+   * **`Apex Test Failures:`** This report displays the apex test components that have failed.
+   * **`Code Coverage Warning:`** This report shows the components in which the minimum code coverage has not been achieved (Salesforce recommends 75% of code coverage).
+   * **`Deployment Notes:`** Specify the reason for the deployment and what has changed across your Salesforce Org.
+   * **`Audit Log`**: The **`Audit Log`** lists the user's changes made during the deployment timestamp (based on the start time and end time of Deployment). Refer to the **`Audit Log`** section.
+
+#### Audit Log <a href="#audit-log" id="audit-log"></a>
+
+A new section called the **`Audit Log`** has been added under the **`Deployment Information`** tab.\
+
+
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656586622958.png" alt="" width="563"><figcaption></figcaption></figure>
+
+The audit log lists the user's changes made during the deployment timestamp (based on the start time and end time of deployment).
+
+Here is the list of changes that Audit Trail tracks-&#x20;
+
+**Administration**
+
+* Company information, default settings like language or locale, and company messages
+* Multiple currencies
+* Users, portal users, roles, permission sets, and profiles
+* Email addresses for any user
+* Deleting email attachments sent as links&#x20;
+* Email footers, including creating, editing, or deleting&#x20;
+* Email deliverability settings&#x20;
+* Divisions, including creating, editing, transferring, and changing users’ default division
+* Certificates, adding or deleting&#x20;
+* Domain names&#x20;
+* Enabling or disabling Salesforce as an identity provider&#x20;
+
+**Profiles**
+
+* Permission for a standard or custom profile changed&#x20;
+* General or admin permission changed
+* FLS changed on the profile&#x20;
+* Entity permission for a standard or custom profile changed&#x20;
+* Profile Page Layout changed&#x20;
+* Tab set on a standard or custom profile changed&#x20;
+* User tab set override changed&#x20;
+* User tab set customization override changed for standard or custom profiles&#x20;
+* Tab set visibility changed for a standard or custom profile&#x20;
+* Tab set visibility modified&#x20;
+* Default tab set modified
+* Custom App default changed on standard or custom profiles&#x20;
+* Profile renamed, cloned, or deleted&#x20;
+* Profile description changed&#x20;
+* Standard or custom profile cloned&#x20;
+* Console setting or layout changed&#x20;
+* View, or modify, all data-enabled for this profile&#x20;
+* Login hours for the profile modified.&#x20;
+* Client settings for the profile modified&#x20;
+* Record type added to or removed from the profile&#x20;
+* Default record type modified&#x20;
+* Default person account record type modified&#x20;
+* Default business account record type modified&#x20;
+* Single sign-on enabled or disabled for this profile&#x20;
+
+**Permission Sets/Groups**
+
+* Permission set (or group) created, cloned, or deleted&#x20;
+* Permission set created or cloned without a license&#x20;
+* Developer name, label, or description of a permission set changed&#x20;
+* Session activation changed by admin&#x20;
+* Permission in a permission set enabled or disabled by the admin&#x20;
+* FLS for an object in the permission set changed by the admin&#x20;
+* Permission set from a user assigned or unassigned by the admin&#x20;
+* Tab settings in permission set changed by admin&#x20;
+* Permission set group assigned or removed for a user&#x20;
+* Permission set group re-calculated&#x20;
+
+**Customization**
+
+* User interface settings like collapsible sections, Quick Create, hover details, or related list hover links&#x20;
+* Page layout, action layout, and search layouts&#x20;
+* Compact layouts&#x20;
+* Salesforce app navigation menu&#x20;
+* Inline edits&#x20;
+* Custom fields and field-level security, including formulas, picklist values, and field attributes like the auto-number field format, field manageability, or masking of encrypted fields&#x20;
+* Lead settings, lead assignment rules, and lead queues&#x20;
+* Activity settings Support settings, business hours, case assignment and escalation rules, and case queues&#x20;
+* Requests to Salesforce Customer Support&#x20;
+* Tab names, including tabs that you reset to the original tab name&#x20;
+* Custom apps (including Salesforce console apps), custom objects, and custom tabs&#x20;
+* Contract settings&#x20;
+* Forecast settings&#x20;
+* Email-to-Case or On-Demand Email-to-Case, enabling or disabling&#x20;
+* Custom buttons, links, and s-controls, including standard button overrides&#x20;
+* Drag-and-drop scheduling, enabling or disabling&#x20;
+* Similar opportunities, enabling, disabling, or customizing&#x20;
+* Quotes, enabling or disabling&#x20;
+* Data category groups, data categories, and category-group assignments to objects&#x20;
+* Article types Category groups and categories&#x20;
+* Salesforce Knowledge settings&#x20;
+* Ideas settings&#x20;
+* Answers settings&#x20;
+* Field tracking in feeds&#x20;
+* Campaign influence settings&#x20;
+* Critical updates, activating or deactivating&#x20;
+* Chatter email notifications, enabling or disabling&#x20;
+* Chatter new user creation settings for invitations and email domains, enabling or disabling&#x20;
+* Validation rules&#x20;
+
+**Security and Sharing**
+
+* Public groups, sharing rules, and org-wide sharing, including the Grant Access Using Hierarchies option&#x20;
+* Password policies&#x20;
+* Password resets&#x20;
+* Session settings, like session timeout (excluding Session times out after and Session security level required at login profile settings)&#x20;
+* Delegated administration groups and the items delegated admins can manage (setup changes made by delegated administrators are also tracked)&#x20;
+* Lightning Login, enabling or disabling, enrollments, and cancellations&#x20;
+* How many records a user permanently delete from their recycle bin and from the org recycle bin&#x20;
+* SAML (Security Assertion Markup Language) configuration settings&#x20;
+* Salesforce certificates&#x20;
+* Identity providers, enabling or disabling&#x20;
+* Named credentials Service providers&#x20;
+* Shield Platform Encryption setup&#x20;
+* Event Manager&#x20;
+* Transaction Security&#x20;
+* Some connected app policy and setting updates&#x20;
+
+**Data Management**
+
+* Using mass delete, including when a mass delete exceeds the user’s Recycle Bin limit on deleted records&#x20;
+* Data export requests&#x20;
+* Mass transfer use&#x20;
+* Reporting snapshots, including defining, deleting, or changing the source report or target object on a reporting snapshot&#x20;
+* Use of the Data Import Wizard&#x20;
+* Sandbox deletions&#x20;
+
+**Development**
+
+* Apex classes and triggers&#x20;
+* Visualforce pages, custom components, and static resources&#x20;
+* Lightning pages&#x20;
+* Action link templates&#x20;
+* Custom settings&#x20;
+* Custom metadata types and records&#x20;
+* Remote access definitions&#x20;
+* Salesforce Sites settings&#x20;
+
+**Various Setups**
+
+* API usage metering notification, creating&#x20;
+* Territories&#x20;
+* Process automation settings&#x20;
+* Approval processes&#x20;
+* Workflow actions, creating or deleting&#x20;
+* Flows&#x20;
+* Packages from Salesforce AppExchange that you installed or uninstalled&#x20;
+* Notification delivery settings for custom and standard notification types&#x20;
+
+**Using the application**
+
+* Account team and opportunity team selling settings&#x20;
+* Activating Google Apps services&#x20;
+* Mobile configuration settings, including data sets, mobile views, and excluded fields&#x20;
+* Users with the “Manage External Users” permission logging in to the partner portal as partner users&#x20;
+* Users with the “Manage Customer Users” permission logging into the Salesforce Customer Portal as Customer Portal users&#x20;
+* Partner portal accounts, enabling or disabling&#x20;
+* Salesforce Customer Portal accounts, disabling&#x20;
+* Salesforce Customer Portal, enabling or disabling&#x20;
+* Creating multiple Customer Portals&#x20;
+* Entitlement processes and entitlement templates, changing or creating&#x20;
+* Self-registration for a Salesforce Customer Portal, enabling or disabling&#x20;
+* Customer Portal or partner portal users, enabling or disabling

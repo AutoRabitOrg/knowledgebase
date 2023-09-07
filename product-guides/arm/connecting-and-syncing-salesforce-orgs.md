@@ -1,0 +1,80 @@
+# Connecting and syncing Salesforce Orgs
+
+The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+
+### About Salesforce org synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
+
+The org synchronization provides a mechanism to export single data, or all content items, from a source to a target Salesforce org effortlessly, thereby establishing consistency among data.
+
+When you move changes from a source org to a production org, the [metadata](https://www.autorabit.com/blog/6-benefits-of-restoring-your-metadata-in-salesforce-after-an-outage/) types would be the same. But when you make changes in the production org, there would be an inconsistency between the source org and production org. Org synchronization helps you compare the differences between the metadata types, so you can add or delete metadata types and ensure that both the orgs are in sync.
+
+### How can I connect and sync metadata between two Salesforce orgs? <a href="#how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs" id="how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs"></a>
+
+To perform org synchronization, follow the below steps:
+
+1. Log in to your ARM account.
+2. Click on the **`Deployment`** tile on the left side of the screen.
+3. Go to the **`Org Synchronization History`** tab.
+4.  Click on the **`Get Org Differences`** call-to-action button.
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652329412447.png" alt=""><figcaption></figcaption></figure>
+5.  In the **`Org Differences`**dialog box, you will need to:
+
+    1. Give the process a **`Name`**.
+    2. Select your **`Source Org`** and **`Destination Org`**.
+    3. Select the **`Exclude baseline Managed Package changes`** checkbox if you do not wish to include baseline Managed Package changes during org sync.
+    4. Select the **`Generate Member Differences`** checkbox to view the metadata member's differences between two Salesforce orgs based on file/data level comparison.
+    5. Specify the **`Batch size for Profile Components`** and the **`Batch size for other Components`** to retrieve records. So, the default size for the profile is **500**, and for other components is **2000**. You can modify it as per your requirement. The bulk retrieve option helps run large jobs that exceed normal processing limits – you can deploy up to **10000 files** at once or a maximum size of **14Mb**. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is the best option.
+
+
+
+    1. To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652330217116.png" alt="" width="375"><figcaption></figcaption></figure>
+6.  On the next screen, you can:
+
+    1. view the metadata list included in both source and target org
+    2. add or delete metadata components to/from the target org
+    3. view the metadata member's difference report (if any)
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652331059036.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652332212481.png" alt=""><figcaption></figcaption></figure>
+7. Once done with your selection, click on **`Synchronize Orgs`**.
+8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each apex test level, refer to the article: [Apex Unit Tests](apex-unit-tests.md)
+
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652331423108.png" alt="" width="563"><figcaption></figcaption></figure>
+
+1. Click on **`Deploy`**.
+2. You'll be navigated to the [**`Deployment History`**](monitor-deployments.md) page, where the current synchronization progress can be seen.
+
+#### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
+
+Synchronization summary information such as label name, source org, destination org, and so on.. can be seen on the **`Org Synchronization History`** page.
+
+![Org Synchronization Summary](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609763158025.png)
+
+1.  **`Info:`** Click the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609763343999.png) icon to view the detailed synchronization report.
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609765055673.png" alt="" width="563"><figcaption></figcaption></figure>
+2. **`Delete:`** Click on the![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609763464111.png) icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
+3. **`Schedule:`** Click the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609763541063.png) icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
+4. **`Run:`** Click the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609763653939.png) icon to rerun the org synchronization process.
+5.  **`Status:`**Status of the synchronization process, i.e., successful or failed.
+
+    * **Log Report:** Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609763891822.png) icon under the **`Status`** column to view the log report for the sync process.
+
+
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609765138091.png" alt="" width="563"><figcaption></figcaption></figure>
+6.  **`Report:`**There are two options in this column.
+
+    1. Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609764528988.png) icon to view the metadata components difference report between the source and the target org.
+    2. Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609764974996.png) icon to download the Diff report in your local system (in PDF or CSV format).
+
+
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1609765237930.png" alt="" width="375"><figcaption></figcaption></figure>

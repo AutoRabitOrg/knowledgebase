@@ -3,7 +3,7 @@
 The ARM sign-up and activation process has several steps— some on our end and others on yours.&#x20;
 
 1. Go to [https://www.autorabit.com/](https://www.autorabit.com/) and find the login option, or go directly to [https://login.autorabit.com/](https://login.autorabit.com/).
-2.  Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.\
+2.  Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears. abc 123\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844592745.png" alt=""><figcaption></figcaption></figure>

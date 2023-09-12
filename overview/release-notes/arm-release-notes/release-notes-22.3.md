@@ -1,6 +1,6 @@
 # Release Notes 22.3
 
-**ember 2022 - Version 22.3 - New Features, Enhancements, Improvements and Changelogs**
+**December 2022 - Version 22.3 - New Features, Enhancements, Improvements and Changelogs**
 
 **Date of release:** _18 December 2022_\
 **Article last updated:** 31 _July 2023_

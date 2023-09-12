@@ -1,6 +1,6 @@
 # Release Notes 22.3
 
-**December 2022 - Version 22.3 - New Features, Enhancements, Improvements and Changelogs**
+**ember 2022 - Version 22.3 - New Features, Enhancements, Improvements and Changelogs**
 
 **Date of release:** _18 December 2022_\
 **Article last updated:** 31 _July 2023_
@@ -90,6 +90,31 @@ For the **Extract** operation, users have the option to edit the query correspon
 ***
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
+
+#### 10 September 2023
+
+**(ARM v22.3.38)**
+
+This is a maintenance release. The following items were enhanced, fixed, or added:
+
+1. As part of this fix deployment, one of the feature flags, '**RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757**,' has been provided. Enabling this feature flag only applies to one specific customer. (#[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365))
+2. Implemented a code fix associated with the **version control** module for a use-case error in which **ALM working items were not loading**. (#[78713](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120177935))
+3. Implemented a code fix for a use-case error pertaining to the **version control** module for an **approval email notification error**. (#[80631](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122540473))
+4. As a result of a use-case error relating to a **feature template migration** issue, a new **feature flag** has been provided, '**MERGE\_CONFLICTS\_AUTORESOLVE\_CONFIGFILES\_USINGSOURCE,'** which must be enabled for one specific customer only: More details are provided in the ticket itself. (#[76008](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000116859424))&#x20;
+5. Implemented a code fix related to a use-case error where the **AutoRABIT deployment** **initiated using Org Synchronization fails**. This error pertains to the **Version Control** module. (#[80987](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123390046))
+6.  Implemented a code fix related to the **CI Jobs** module related to setting up **SFDX deployment, with the Feature Flag:**&#x20;
+
+    | **RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757** |
+    | -------------------------------------------- |
+
+    Regarding ticket #[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365), '**Setting up SFDX Deployment'**: \
+    Only for the '**Create and Install an Unlocked/Managed Package Version from a Version Control Branch'** CI, type in the CI Job configuration. When selecting the 'Trigger build on commit' option, we have hidden the '**Process commit revision received via hook only**' sub-option. This change will be incorporated into our documentation. Further details are available in the ticket itself. (#[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365), #[76649](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000117914023))
+7.  Implemented a code fix related to the **nCino** module error: &#x20;
+
+    | **LLC\_BI\_\_Schedule\_Section\_\_c migration issue#1** |
+    | ------------------------------------------------------- |
+8. Implemented a code fix related to an internal ticket in ARM, in which the user was **not able to migrate related data** using the **Dataloader test environment setup** module. (#[81142](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123734279))
+9. Implemented a code fix related to the **Deployment** module for an **EBR Manual Asyncid XML Copy Automation** error. (Internal ticket)
 
 #### 3 September 2023
 

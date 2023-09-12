@@ -13,7 +13,7 @@
 
 The complete CodeScan rules list can be accessed [HERE](https://knowledgebase.autorabit.com/codescan/docs/codescan-rule-list).
 
-
+***
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
@@ -28,7 +28,7 @@ The complete CodeScan rules list can be accessed [HERE](https://knowledgebase.au
 
 * This release includes minor stability fixes and improvements for the CodeScan platform.
 
-
+***
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
@@ -39,7 +39,7 @@ The complete CodeScan rules list can be accessed [HERE](https://knowledgebase.au
 * CodeScan self-hosted has been upgraded from _**22.8**_ to _**23.1.1**_ version.
 * This release includes Apex-pmd dependency upgrade and significant security improvements. Updating is strongly recommended.
 
-
+***
 
 #### 31 May 2023 <a href="#31-may-2023" id="31-may-2023"></a>
 

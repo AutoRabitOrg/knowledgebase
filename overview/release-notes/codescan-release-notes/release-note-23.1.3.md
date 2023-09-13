@@ -16,6 +16,6 @@ layout:
 
 **What's New:**
 
-CodeScan Self-Hosted version **23.1.3** _(now compatible with **SonarQube™ version 10**_).
+CodeScan Self-Hosted version **23.1.3** is _now compatible with **SonarQube™ version 10**_.
 
 More information will be added here as it becomes available.

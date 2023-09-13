@@ -52,7 +52,7 @@ The **Spreads Schedules Template** template includes the following objects:
 
 [**Read more →**](../../../product-guides/arm/create-a-feature-migration-template.md)
 
-
+***
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 

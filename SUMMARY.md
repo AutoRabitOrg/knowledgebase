@@ -17,6 +17,7 @@
     * [Release Notes 22.3](overview/release-notes/ncino-release-notes/release-notes-22.3.md)
   * [CodeScan Release Notes](overview/release-notes/codescan-release-notes/README.md)
     * [Release Note 23.2](overview/release-notes/codescan-release-notes/release-note-23.2.md)
+    * [Release Note 23.1.3](overview/release-notes/codescan-release-notes/release-note-23.1.3.md)
     * [Release Note 23.1.0](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)
     * [Release Note 22.8](overview/release-notes/codescan-release-notes/release-note-22.8.md)
     * [Release Notes 22.7](overview/release-notes/codescan-release-notes/release-notes-22.7.md)

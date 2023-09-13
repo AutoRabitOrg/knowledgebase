@@ -11,7 +11,7 @@ This update introduces several significant improvements that will enhance your a
 * Greater flexibility and easier maintenance of Quality Profiles
 * Enhanced Token Generation
 * Improved editing control over Quality Gates
-* Mulesoft rules library with scanning XML configuration files
+* MuleSoft rules library with scanning XML configuration files
 * UI/UX updates and improvements
 
 **1. Maintenance of Quality Profiles**\

@@ -1,0 +1,771 @@
+root: ./
+
+​structure:  
+      Create and Deploy Changes in AutoRABIT: product-guides/arm/create-and-deploy-changes-in-autorabit
+      GIT Tag: product-guides/arm/arm-administration/registration/version-control-repository/git-integration/git-tag
+      Update Salesforce Data: product-guides/arm/update-salesforce-data
+      Branching Strategy and CI/CD Pipeline: product-guides/arm/arm-features/branching-strategy-and-ci-cd-pipeline
+      How do I commit?: product-guides/arm/arm-features/how-do-i-commit
+      Branching Baseline: product-guides/arm/arm-features/branching-baseline
+      Prerequisite while performing a commit using AutoRABIT: product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit
+      Salesforce Org Management: product-guides/arm/arm-features/salesforce-org-management
+      UpdateUrlforRemoteSiteSettings: product-guides/arm/arm-features/updateurlforremotesitesettings
+      Pull Request Support for Azure Cloud: product-guides/arm/pull-request-support-for-azure-cloud
+      Configure a webhook in Visual Studio GIT Enterprise: product-guides/arm/webhooks/configure-a-webhook-in-visual-studio-git-enterprise
+      DisableScheduledReports: product-guides/arm/disablescheduledreports
+      ARM User Roles: product-guides/arm/arm-administration/user-management/arm-user-roles
+      Run Test Automation Scripts: product-guides/arm/run-test-automation-scripts
+      SolutionSettingsEdit: product-guides/arm/solutionsettingsedit
+      Install an Unlocked Package from Version Control Branch: product-guides/arm/install-an-unlocked-package-from-version-control-branch
+      Enable History Tracking on Objects: product-guides/arm/enable-history-tracking-on-objects
+      Benefits of AutoRABIT Test Automation Factory compared to traditional model/IDE driven development: product-guides/arm/benefits-comparsiton-of-autorabit-test-automation-factory
+      ALM Labels: product-guides/arm/alm-labels
+      Configure Merge Approval: product-guides/arm/configure-merge-approval
+      Enable Flows: product-guides/arm/enable-flows
+      TAF workflow: product-guides/arm/taf-workflow
+      Glossary: fundamentals/glossary
+      OfflineBriefcaseConfigurationNew: product-guides/arm/offlinebriefcaseconfigurationnew
+      Configuring VS Code Extension: product-guides/arm/configuring-vscode-extension
+      Execute Anonymous Apex: product-guides/arm/execute-anonymous-apex
+      Static Code Analysis in CI-CD: product-guides/arm/static-code-analysis-in-ci-cd
+      Create a Feature Migration Template: product-guides/arm/create-a-feature-migration-template
+      Destructive Changes: product-guides/arm/arm-features/destructive-changes
+      Enforce single sign-on (SSO): product-guides/arm/enforce-single-sign-on-sso
+      Configure Mail Server Settings: product-guides/arm/configure-mail-server-settings
+      Deployment via Version Control using Salesforce Org: product-guides/arm/deployment-via-version-control-using-salesforce-org
+      Deploy from Version Control to a Salesforce Org: product-guides/arm/arm-features/deploy-from-version-control-to-a-salesforce-org
+      Enable Workflow Rules: product-guides/arm/enable-workflow-rules
+      Bitbucket: product-guides/arm/arm-administration/registration/version-control-repository/bitbucket
+      General: fundamentals/getting-set-up/general
+      Who can use ARM?: product-guides/arm/who-can-use-arm
+      Upsert Salesforce Data: product-guides/arm/upsert-salesforce-data
+      Register AutoRABIT Agent: product-guides/arm/register-autorabit-agent
+      Release Notes 22.1: overview/release-notes/arm-release-notes/release-notes-22.1
+      SSO with Microsoft Azure AD: product-guides/arm/sso/sso-with-microsoft-azure-ad
+      Create User's Credentials: product-guides/arm/create-users-credentials
+      Configure Multi-Proxy: product-guides/arm/configure-multi-proxy
+      EmailRelayActivation: product-guides/arm/emailrelayactivation
+      Salesforce Deployment Best Practices: product-guides/arm/troubleshoot/salesforce-deployment-best-practices
+      ARM Credential Manager: product-guides/arm/arm-credential-manager
+      ConsoleLayoutsAssignments: product-guides/arm/consolelayoutsassignments
+      ScheduleApexClassesMonthly: product-guides/arm/scheduleapexclassesmonthly
+      Working with VS Code Extension: product-guides/arm/working-with-vscode-extension
+      Licensing and Subscription: product-guides/arm/licensing-and-subscription
+      NewPredefined: product-guides/arm/newpredefined
+      What can I do with ARM?: product-guides/arm/what-can-i-do-with-arm
+      Salesforce Org Re-Authentication: product-guides/arm/salesforce-org-re-authentication
+      ScheduleApexClassesWeekly: product-guides/arm/scheduleapexclassesweekly
+      DeleteScheduledjobs: product-guides/arm/deletescheduledjobs
+      Using Data Loader with Lookups: product-guides/arm/using-data-loader-with-lookups
+      External Pull Request Summary Page: product-guides/arm/external-pull-request-summary-page
+      FileUploadAndDownloadSecurity: product-guides/arm/fileuploadanddownloadsecurity
+      EmailFooters: product-guides/arm/emailfooters
+      ARM User Permission: product-guides/arm/arm-user-permissions
+      EditDealAlert: product-guides/arm/editdealalert
+      Trigger builds for your CI Job: product-guides/arm/arm-features/triggering-builds-for-your-ci-job
+      Configuring a webhook in Bitbucket: product-guides/arm/webhooks/configuring-a-webhook-in-bitbucket
+      Deployment: product-guides/arm/deployment
+      Retention Policy: product-guides/arm/retention-policy
+      Enable History Tracking on Custom Fields: product-guides/arm/enable-history-tracking-on-custom-fields
+      Merge Conflicts: product-guides/arm/arm-features/merge-conflicts
+      Configure a webhook in Teams: product-guides/arm/webhooks/configure-a-webhook-in-teams
+      UserRecords: product-guides/arm/userrecords
+      ResourcesCalendarDelete: product-guides/arm/resourcescalendardelete
+      ReplaceTeamRole: product-guides/arm/replaceteamrole
+      Release Notes 21.6: overview/release-notes/arm-release-notes/release-notes-21.6
+      Dashboards and Widgets: product-guides/arm/dashboards-and-widgets
+      SSO for ADFS: product-guides/arm/sso/sso-for-adfs
+      Salesforce Authentication using OAuth: product-guides/arm/salesforce-authentication-using-oauth
+      UserInterface: product-guides/arm/userinterface
+      CI Job Rollback: product-guides/arm/ci-job-rollback
+      Running a CI Job: product-guides/arm/running-a-ci-job
+      OrganizationAllProfile: product-guides/arm/organizationallprofile
+      Enabling GitHub Checks: product-guides/arm/enabling-github-checks
+      Monitor Deployments: product-guides/arm/monitor-deployments
+      ARM Known Limitations: product-guides/arm/troubleshoot/arm-known-limitations
+      Authentication: product-guides/arm/authentication
+      Create a Feature migration Template with predefined nCino objects: product-guides/arm/create-a-feature-migration-template-with-predefined-ncino-objects
+      Configure Default Apex Class: product-guides/arm/default-apex-class-configuration
+      SSO for OKTA: product-guides/vault/configuring-vault/sso-configuration/sso-for-okta
+      Enable Validation Rules: product-guides/arm/enable-validation-rules
+      Version Control Branch Workflow: product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow
+      Flows in Salesforce: product-guides/arm/flows-in-salesforce
+      Disable Validation Rules: product-guides/arm/disable-validation-rules
+      Export Users details: product-guides/arm/export-users-details
+      GIT Errors: product-guides/arm/git-errors
+      Deployment Rollback: product-guides/arm/deployment-rollback
+      Connection and Authentication: product-guides/arm/connection-and-authentication
+      Insert Salesforce Data: product-guides/arm/insert-salesforce-data
+      EditAll: product-guides/arm/editall
+      Audit Report: product-guides/arm/audit-report
+      NewQuote: product-guides/arm/newquote
+      Run Destructive Changes: product-guides/arm/run-destructive-changes
+      Commits Summary: product-guides/arm/arm-features/how-do-i-commit/commits-summary
+      EditAdd: product-guides/arm/editadd
+      CodeScan: product-guides/codescan
+      Selenium Test Execution: product-guides/arm/selenium-test-execution
+      Enable Enhanced Domains: product-guides/arm/enable-enhanced-domains
+      Create a Module: product-guides/arm/create-a-module
+      Add New Users: product-guides/arm/add-new-users
+      DeleteFolder: product-guides/arm/deletefolder
+      UpdateCustomLabel: product-guides/arm/updatecustomlabel
+      Static Code Analysis: product-guides/arm/static-code-analysis
+      Workspaces: product-guides/arm/workspaces
+      NewDealAlert: product-guides/arm/newdealalert
+      Disable Apex Triggers: product-guides/arm/disable-apex-triggers
+      Release Notes 20.3.2:
+      ARM supported license models: product-guides/arm/arm-supported-license-models
+      Retrieval APIs: product-guides/arm/retrieval-apis
+      Introduction: product-guides/arm/introduction-to-arm-developer-apis
+      Deployment using Version Control: product-guides/arm/deployment-using-version-control
+      CI Job List: product-guides/arm/ci-job-list
+      Installing VS Code Extension: product-guides/arm/installing-vs-code-extension
+      Metadata comparison between two Salesforce Orgs: product-guides/arm/metadata-comparison-between-two-salesforce-orgs
+      MobileNotifications: product-guides/arm/mobilenotifications
+      CreateNewDashBoardFolder: product-guides/arm/createnewdashboardfolder
+      Release Notes 21.2:
+      SelfServicePublicSolutionsEdit: product-guides/arm/selfservicepublicsolutionsedit
+      ARM Event Type: product-guides/arm/arm-event-type
+      Squash and Merge: product-guides/arm/squash-and-merge
+      EditTeamRole: product-guides/arm/editteamrole
+      Create an Unlocked/Managed Package: product-guides/arm/create-an-unlocked-managed-package
+      Enable Apex Triggers: product-guides/arm/enable-apex-triggers
+      PublicCalenderandResourcesSharingEdit: product-guides/arm/publiccalenderandresourcessharingedit
+      Pipelines: product-guides/arm/pipelines
+      SolutionCategoryAdd: product-guides/arm/solutioncategoryadd
+      EditEmailServices: product-guides/arm/editemailservices
+      Overview of the ARM Dashboard page: product-guides/arm/dashboards-and-widgets
+      Remove or Suspend a User: product-guides/arm/remove-or-suspend-a-user
+      Configure a webhook in GitHub: product-guides/arm/webhooks/configure-a-webhook-in-github
+      Working with Translations in ARM: product-guides/arm/working-with-translations-in-arm
+      Deployment via Template using Salesforce Org: product-guides/arm/deployment-via-template-using-salesforce-org
+      TFS: product-guides/arm/arm-administration/registration/version-control-repository/tfs
+      Parallel Processor: product-guides/arm/parallel-processor
+      Account and Administrator: product-guides/arm/troubleshoot/account-and-administrator
+      Extract Salesforce Data: product-guides/arm/extract-salesforce-data
+      SalesforceOffline: product-guides/arm/arm-features/salesforceoffline
+      DelPredefined: product-guides/arm/arm-features/delpredefined
+      ALM Management: product-guides/arm/arm-features/alm-management
+      Release Notes 22.3 (ARM): overview/release-notes/arm-release-notes/release-notes-22.3
+      Configure Callout URL: product-guides/arm/configure-callout-url
+      SandboxRefresh: product-guides/arm/arm-features/sandbox-refresh
+      TimeBasedWorkflow: product-guides/arm/arm-features/timebasedworkflow
+      PageLayoutAssigment: product-guides/arm/understanding-pagelayoutassignment
+      ApexExceptionEmail: product-guides/arm/arm-features/apexexceptionemail
+      Deployment Errors: product-guides/arm/troubleshoot/deployment-errors
+      Salesforce API version: product-guides/arm/arm-features/salesforce-api-version
+      OfflineBriefcaseConfigurationEdit: product-guides/arm/arm-features/offlinebriefcaseconfigurationedit
+      Connecting and syncing Salesforce Orgs: product-guides/arm/connecting-and-syncing-salesforce-orgs
+      Deployment using Feature Migration Template: product-guides/arm/deployment-using-feature-migration-template
+      Apex Unit Tests: product-guides/arm/apex-unit-tests
+      Subscription Management: product-guides/arm/subscription-management
+      Release Notes 21.1:
+      WebToLead: product-guides/arm/arm-features/webtolead
+      Salesforce API Version Mismatch for the CI Build and for the Custom Deployment: product-guides/arm/salesforce-api-version-mismatch-for-the-ci-build-and-custom-deployment
+      Feature Deployment Summary: product-guides/arm/feature-deployment-summary
+      Enable Delta on PermissionSets: product-guides/arm/enable-delta-on-permissionsets
+      ediyt: product-guides/arm/arm-features/editreminder
+      Delegate Approvals to another User: product-guides/arm/delegate-approvals-to-another-user
+      Migrate Custom Setting Data: product-guides/arm/migrate-custom-settings-data
+      Different Users in ARM: product-guides/arm/different-users-in-arm
+      Azure Cloud Authentication: product-guides/arm/azure-cloud-authentication
+      Disable Workflow Rules: product-guides/arm/arm-features/disable-workflow-rules
+      Contact ARM Support: product-guides/arm/troubleshoot/contact-arm-support
+      DeleteQuote: product-guides/arm/arm-features/deletequote
+      Error: "Failed to initiate deployment. Unexpected end of JSON input": product-guides/arm/troubleshoot/error-failed-to-initiate-deployment.-unexpected-end-of-json-input.
+      Registering a DevHub: product-guides/arm/registering-a-devhub
+      Release Notes 21.5: overview/release-notes/arm-release-notes/release-notes-21.5
+      Deploy a package from Salesforce Org: product-guides/arm/arm-features/deploy-a-package-from-a-salesforce-org
+      ARM Predefined Roles: product-guides/arm/arm-predefined-roles
+      Common Event Format (CEF) Data: product-guides/arm/common-event-format-cef-data
+      Signing Up with ARM: product-guides/arm/getting-started/signing-up-with-arm
+      Configure a webhook in Slack: product-guides/arm/webhooks/configure-a-webhook-in-slack
+      Deploy from SFDX branch to a Salesforce Org: product-guides/arm/arm-features/deploy-from-sfdx-branch-to-a-salesforce-org
+      Deploy from Salesforce with VC backup: product-guides/arm/deploy-from-salesforce-with-vc-backup
+      SSO for PingFederate: product-guides/arm/sso/sso-for-pingfederate
+      Create API Token: product-guides/arm/create-api-token
+      Error: "Unable to fetch Salesforce Org Users": product-guides/arm/troubleshoot/error-unable-to-fetch-salesforce-org-users.
+      Disable History Tracking on Objects: product-guides/arm/arm-features/disable-history-tracking-on-custom-fields
+      NewTeamRole: product-guides/arm/arm-features/newteamrole
+      Disable History Tracking on Custom Fields: product-guides/arm/arm-features/disable-history-tracking-on-custom-fields
+      Tips for working with ARM Support team: product-guides/arm/troubleshoot/tips-for-working-with-the-arm-support-team
+      Provide branch access to a user: product-guides/arm/troubleshoot/provide-branch-access-to-users
+      Preparing the CSV file for ARM dataloader: product-guides/arm/preparing-the-csv-file-for-arm-dataloader
+      MultilineLayoutFieldsForContractLineItems: product-guides/arm/arm-features/multilinelayoutfieldsforcontractlineitems
+      Commit Selenium Test scripts to a Version Control System: product-guides/arm/commit-selenium-test-scripts-to-a-version-control-system
+      Replace: product-guides/arm/arm-features/replace
+      Release Notes 21.3:
+      Release Labels: product-guides/arm/arm-features/release-labels
+      GIT: product-guides/arm/arm-administration/registration/version-control-git
+      Version Control-FAQs: product-guides/arm/troubleshoot/version-control-faqs
+      EmailAdminSettings: product-guides/arm/arm-features/emailadminsettings
+      CI Job History: product-guides/arm/ci-job-history
+      Vlocity: product-guides/arm/vlocity
+      Reorder: product-guides/arm/arm-features/reorder
+      nCino: product-guides/arm/ncino
+      Configure a webhook in GitLab: product-guides/arm/arm-features/configure-a-webhook-in-gitlab.
+      Deploying Vlocity components: product-guides/arm/vlocity/deploying-vlocity-components
+      Manage Users Account: product-guides/arm/arm-administration/user-management/manage-users-account-settings
+      Backup your project to Version Control: product-guides/arm/backup-your-project-to-version-control
+      Feature Migration Summary Page: product-guides/arm/feature-migration-summary-page
+      ShareSettings: product-guides/arm/arm-features/sharesettings
+      Create a Scratch Org: product-guides/arm/create-a-scratch-org
+      Error: "SCM Authentication Failed": product-guides/arm/troubleshoot/error-scm-authentication-failed
+      SVN: product-guides/arm/arm-administration/registration/version-control-repository/svn
+      SocialAccountsContactsAndLeadSettings: product-guides/arm/arm-features/socialaccountscontactsandleadsettings
+      Enable SCA Apex PMD validation criteria: product-guides/arm/arm-features/enable-sca-apex-pmd-validation-criteria.
+      Release Notes 22.2: overview/release-notes/arm-release-notes/release-notes-22.2
+      EnableSalesforcetoSalesforce: product-guides/arm/arm-features/enablesalesforcetosalesforce
+      Errors: product-guides/arm/errors
+      GIT Integrations: product-guides/arm/arm-administration/registration/version-control-repository/git-integration
+      How does TAF accelerate test automation and reduce costs?: product-guides/arm/how-does-taf-accelerate-test-automation-and-reduce-costs
+      Audit Report- Overview: product-guides/arm/arm-features/audit-report-overview
+      CI Job List screen: product-guides/arm/ci-job-list-screen
+      Salesforce DX Metadata Format: product-guides/arm/salesforce-dx-metadata-format
+      Disable Flows: product-guides/arm/disable-flows
+      DeleteEmailServices: product-guides/arm/deleteemailservices
+      Configure a webhook in Visual Studio GIT: product-guides/arm/configure-a-webhook-in-visual-studio-git.
+      API References: product-guides/arm/api-references
+      Configure Record Types Picklist Values: product-guides/arm/configure-record-types-picklist-values
+      CI Job Configurations: product-guides/arm/ci-job-configurations
+      Release Notes 22.3 (nCino): overview/release-notes/ncino-release-notes/release-notes-22.3
+      CI Jobs: fundamentals/faq/ci-jobs
+      Release Notes 21.4: overview/release-notes/codescan-release-notes/release-notes-21.4
+      Version Control Repositories Summary Page: product-guides/arm/arm-features/version-control/version-control-repositories-summary
+      Delete Salesforce Data: product-guides/arm/delete-salesforce-data
+      WebToCase: product-guides/arm/webtocase
+      CI Job Result: product-guides/arm/ci-job-results
+      EditLead: product-guides/arm/editlead
+      IP Whitelist: product-guides/arm/ip-whitelist
+      Configure a webhook in Microsoft Azure: product-guides/arm/webhooks/configure-a-webhook-in-microsoft-azure
+      Deploying the Profile and PermissionSets: product-guides/arm/arm-features/deploying-the-profile-and-permissionsets
+      Salesforce - The Tools You Need to Be Successful: product-guides/arm/salesforce-the-tools-you-need-to-be-successful
+      MobileDashboardSettings: product-guides/arm/mobiledashboardsettings
+      DeleteEmailFooters: product-guides/arm/deleteemailfooters
+      AddTabsinAppManager: product-guides/arm/addtabsinappmanager
+      Reset my password: product-guides/codescan/getting-started/users-roles-and-permissions/reset-the-password
+      Import an Unlocked/Managed Packages: product-guides/arm/import-an-unlocked-managed-package
+      Commit the Vlocity components to a branch: product-guides/arm/vlocity/commit-the-vlocity-components-to-a-branch
+      What is ARM: product-guides/arm/what-is-arm
+      EditName: product-guides/arm/editname
+      Merge Requests: product-guides/arm/merge-requests
+      Salesforce Limitations: product-guides/vault/support/salesforce-limitations
+      Revision Range and Release Label Deployment: product-guides/arm/revision-range-and-release-label-deployment
+      Commit Labels: product-guides/arm/commit-labels
+      Configuring a webhook in Bitbucket Enterprise: product-guides/arm/webhooks/configuring-a-webhook-in-bitbucket-enterprise
+      Libraries: product-guides/arm/libraries
+      Version Control Best Practices: product-guides/arm/version-control-best-practices
+      API Access: product-guides/arm/api-access
+      NewRoleAccount: product-guides/arm/newroleaccount
+      Code Coverage Reports: product-guides/arm/arm-features/code-coverage-reports
+      View my profile: product-guides/arm/arm-administration/user-management/view-my-profile
+      Release Notes 20.3.3:
+      Delete: product-guides/arm/delete
+      Error: "You are not authorized to push changes to remote repository": product-guides/arm/error-you-are-not-authorized-to-push-changes-to-the-remote-repository.
+      AutoNumberFields: product-guides/arm/autonumberfields
+      Build a package from Salesforce: product-guides/arm/build-a-package-from-salesforce
+      OutboundMessages: product-guides/arm/outboundmessages
+      Build a package from Version Control: product-guides/arm/arm-features/version-control/build-a-package-from-version-control
+      ARM Known Issues: product-guides/arm/arm-known-issues
+      
+      Leading Categories:
+      ARM Administration: product-guides/arm/arm-administration-1
+      Deployment: product-guides/arm/deployment
+      Best Practices: product-guides/vault/support/best-practices
+      Single DataLoader: product-guides/arm/dataloader
+      EZ-Commits:
+      Introduction to ARM:
+      Lead Settings: product-guides/arm/editlead
+      Unsupported Metadata Templates: product-guides/arm/unsupported-metadata-templates
+      Commit Templates:
+      Integration and Plugins: product-guides/arm/integration-and-plugins
+      Delete Outbound Messages: product-guides/arm/outboundmessages
+      Schedule Weekly Apex Class Job: product-guides/arm/scheduleapexclassesweekly
+      How-Tos:
+      Delete Time based Workflow: product-guides/arm/arm-features/timebasedworkflow
+      HashiCorp Vault:
+      Feature CI Jobs:
+      Jenkins: product-guides/codescan/codescan-integration/jenkins
+      CodeScan: product-guides/codescan
+      Feature Commits: product-guides/arm/feature-commits
+      EZ-Merge: product-guides/arm/arm-features/ez-merge
+      Schedule Monthly Apex Class Job: product-guides/arm/scheduleapexclassesmonthly
+      Common errors and resolutions:
+      Dataloader Configuration: product-guides/arm/arm-features/dataloader-configuration
+      Create Organization-Wide Email Footers:
+      Create Web to Case: product-guides/arm/webtocase
+      ARM ALM Management:
+      Manage Email Relay Activation: product-guides/arm/emailrelayactivation
+      ARM Merge Approval: product-guides/arm/merge-approvals
+      Azure DevOps: product-guides/arm/azure-devops
+      Test Environment Setup: product-guides/arm/arm-features/test-environment-setup
+      Enable Salesforce to Salesforce: product-guides/arm/arm-features/enablesalesforcetosalesforce
+      ARM Workspaces: product-guides/arm/workspaces
+      Webhooks: product-guides/arm/webhooks
+      Vlocity: product-guides/arm/vlocity
+      Account Teams:
+      Resource Calendar: product-guides/arm/resourcescalendardelete
+      Feature Deployment: product-guides/arm/feature-deployment-summary
+      Salesforce Org Management: product-guides/arm/arm-features/salesforce-org-management
+      Automation and CI: product-guides/arm/automation-and-ci
+      Contact Support: product-guides/arm/troubleshoot/contact-arm-support
+      Dataloader: product-guides/arm/dataloader
+      Public Calendars and Resources Sharing: product-guides/arm/publiccalenderandresourcessharingedit
+      Report Dashboards Create Manage Folders:
+      Validation/Workflow Rules: product-guides/arm/validation-workflow-rules
+      Environment Provisioning: product-guides/arm/environment-provisioning
+      Troubleshoot: product-guides/arm/troubleshoot
+      Release Notes: overview/release-notes
+      Known Issues/ Limitations: product-guides/arm/arm-known-issues
+      General: fundamentals/getting-set-up/general
+      Web to Lead: product-guides/arm/arm-features/webtolead
+      External Pull Request: product-guides/arm/arm-features/external-pull-request
+      CheckMarx: product-guides/arm/sca-for-checkmarx
+      Case Contact Roles:
+      Multi line Layout Fields for Contract Line Items:
+      ARM Subscription Management: product-guides/arm/subscription-management
+      Organization Wide Email Addresses:
+      Opportunity Update Reminders: product-guides/arm/arm-features/editreminder
+      Version Control Branch: product-guides/arm/arm-features/version-control/version-control-branch
+      Quote Templates:
+      Top Features:
+      Create a new CI Job:
+      Introduction to Version Control: product-guides/arm/arm-features/version-control/introduction-to-version-control
+      GIT Revert:
+      Migration Templates: product-guides/arm/migration-template
+      User Management: product-guides/arm/user-management
+      Disable Scheduled Reports: product-guides/arm/disablescheduledreports
+      Provar:
+      Registration: product-guides/arm/arm-administration/registration
+      Update Custom Label: product-guides/arm/updatecustomlabel
+      AccelQ:
+      Case Team Roles:
+      Solution Settings: product-guides/arm/solutionsettingsedit
+      Solution Categories: product-guides/arm/solutioncategoryadd
+      Add Apex Exception Email: product-guides/arm/arm-features/apexexceptionemail
+      Active Directory:
+      JIRA: product-guides/arm/arm-features/jira
+      Manage Email Services:
+      Feature Migration: product-guides/arm/feature-migration-summary-page
+      Static Code Analysis in CI-CD: product-guides/arm/static-code-analysis-in-ci-cd
+      Apex PMD: product-guides/arm/apex-pmd
+      Visual Code Extension: product-guides/arm/installing-vs-code-extension
+      nCino: product-guides/arm/ncino
+      Manage Page Layout Assignments: product-guides/arm/understanding-pagelayoutassignment
+      Sandbox Refresh: product-guides/arm/arm-features/sandbox-refresh
+      Dashboard and Pipeline: product-guides/arm/pipelines
+      ARM Branching Baseline:
+      Version Control: product-guides/arm/arm-features/version-control
+      Dataloader Pro: product-guides/arm/arm-features/dataloader-pro
+      Mobile Administration:
+      Console Layout Assignment: product-guides/arm/consolelayoutsassignments
+      Salesforce Org: product-guides/arm/arm-administration/registration/salesforce-org
+      Getting Started: product-guides/vault/getting-started
+      ARM Search and Substitute: product-guides/arm/search-and-substitute
+      Manage Email Administration Deliverability:
+      User Interface Settings: product-guides/arm/userinterface
+      Delete Scheduled Jobs: product-guides/arm/deletescheduledjobs
+      Self Service Public Solutions: product-guides/arm/selfservicepublicsolutionsedit
+      File Upload Download Security: product-guides/arm/fileuploadanddownloadsecurity
+      Update Url for Remote Site Settings: product-guides/arm/arm-features/updateurlforremotesitesettings
+      Predefined Case Teams:
+      FAQ: fundamentals/faq
+      Manage User Records: product-guides/arm/userrecords
+      Security Information and Event Management: product-guides/arm/security-information-and-event-management
+      Single Sign-On (SSO): product-guides/codescan/codescan-integration/single-sign-on-sso
+      Version Control Repository: product-guides/arm/arm-administration/registration/version-control-repository
+      Social Accounts Contacts And Lead Settings: product-guides/arm/arm-features/socialaccountscontactsandleadsettings
+      Salesforce DX: product-guides/arm/salesforce-dx
+      Create Public Groups:
+      Opportunity Big Deal Alerts:
+      Manage Libraries: product-guides/arm/libraries
+      TAF:
+      Releases
+      SonarQube: product-guides/arm/sonarqube
+      Change Labels:
+      Developer APIs: product-guides/arm/developer-apis
+
+redirects:  
+      Create and Deploy Changes in AutoRABIT: product-guides/arm/create-and-deploy-changes-in-autorabit
+      GIT Tag: product-guides/arm/arm-administration/registration/version-control-repository/git-integration/git-tag
+      Update Salesforce Data: product-guides/arm/update-salesforce-data
+      Branching Strategy and CI/CD Pipeline: product-guides/arm/arm-features/branching-strategy-and-ci-cd-pipeline
+      How do I commit?: product-guides/arm/arm-features/how-do-i-commit
+      Branching Baseline: product-guides/arm/arm-features/branching-baseline
+      Prerequisite while performing a commit using AutoRABIT: product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit
+      Salesforce Org Management: product-guides/arm/arm-features/salesforce-org-management
+      UpdateUrlforRemoteSiteSettings: product-guides/arm/arm-features/updateurlforremotesitesettings
+      Pull Request Support for Azure Cloud: product-guides/arm/pull-request-support-for-azure-cloud
+      Configure a webhook in Visual Studio GIT Enterprise: product-guides/arm/webhooks/configure-a-webhook-in-visual-studio-git-enterprise
+      DisableScheduledReports: product-guides/arm/disablescheduledreports
+      ARM User Roles: product-guides/arm/arm-administration/user-management/arm-user-roles
+      Run Test Automation Scripts: product-guides/arm/run-test-automation-scripts
+      SolutionSettingsEdit: product-guides/arm/solutionsettingsedit
+      Install an Unlocked Package from Version Control Branch: product-guides/arm/install-an-unlocked-package-from-version-control-branch
+      Enable History Tracking on Objects: product-guides/arm/enable-history-tracking-on-objects
+      Benefits of AutoRABIT Test Automation Factory compared to traditional model/IDE driven development: product-guides/arm/benefits-comparsiton-of-autorabit-test-automation-factory
+      ALM Labels: product-guides/arm/alm-labels
+      Configure Merge Approval: product-guides/arm/configure-merge-approval
+      Enable Flows: product-guides/arm/enable-flows
+      TAF workflow: product-guides/arm/taf-workflow
+      Glossary: fundamentals/glossary
+      OfflineBriefcaseConfigurationNew: product-guides/arm/offlinebriefcaseconfigurationnew
+      Configuring VS Code Extension: product-guides/arm/configuring-vscode-extension
+      Execute Anonymous Apex: product-guides/arm/execute-anonymous-apex
+      Static Code Analysis in CI-CD: product-guides/arm/static-code-analysis-in-ci-cd
+      Create a Feature Migration Template: product-guides/arm/create-a-feature-migration-template
+      Destructive Changes: product-guides/arm/arm-features/destructive-changes
+      Enforce single sign-on (SSO): product-guides/arm/enforce-single-sign-on-sso
+      Configure Mail Server Settings: product-guides/arm/configure-mail-server-settings
+      Deployment via Version Control using Salesforce Org: product-guides/arm/deployment-via-version-control-using-salesforce-org
+      Deploy from Version Control to a Salesforce Org: product-guides/arm/arm-features/deploy-from-version-control-to-a-salesforce-org
+      Enable Workflow Rules: product-guides/arm/enable-workflow-rules
+      Bitbucket: product-guides/arm/arm-administration/registration/version-control-repository/bitbucket
+      General: fundamentals/getting-set-up/general
+      Who can use ARM?: product-guides/arm/who-can-use-arm
+      Upsert Salesforce Data: product-guides/arm/upsert-salesforce-data
+      Register AutoRABIT Agent: product-guides/arm/register-autorabit-agent
+      Release Notes 22.1: overview/release-notes/arm-release-notes/release-notes-22.1
+      SSO with Microsoft Azure AD: product-guides/arm/sso/sso-with-microsoft-azure-ad
+      Create User's Credentials: product-guides/arm/create-users-credentials
+      Configure Multi-Proxy: product-guides/arm/configure-multi-proxy
+      EmailRelayActivation: product-guides/arm/emailrelayactivation
+      Salesforce Deployment Best Practices: product-guides/arm/troubleshoot/salesforce-deployment-best-practices
+      ARM Credential Manager: product-guides/arm/arm-credential-manager
+      ConsoleLayoutsAssignments: product-guides/arm/consolelayoutsassignments
+      ScheduleApexClassesMonthly: product-guides/arm/scheduleapexclassesmonthly
+      Working with VS Code Extension: product-guides/arm/working-with-vscode-extension
+      Licensing and Subscription: product-guides/arm/licensing-and-subscription
+      NewPredefined: product-guides/arm/newpredefined
+      What can I do with ARM?: product-guides/arm/what-can-i-do-with-arm
+      Salesforce Org Re-Authentication: product-guides/arm/salesforce-org-re-authentication
+      ScheduleApexClassesWeekly: product-guides/arm/scheduleapexclassesweekly
+      DeleteScheduledjobs: product-guides/arm/deletescheduledjobs
+      Using Data Loader with Lookups: product-guides/arm/using-data-loader-with-lookups
+      External Pull Request Summary Page: product-guides/arm/external-pull-request-summary-page
+      FileUploadAndDownloadSecurity: product-guides/arm/fileuploadanddownloadsecurity
+      EmailFooters: product-guides/arm/emailfooters
+      ARM User Permission: product-guides/arm/arm-user-permissions
+      EditDealAlert: product-guides/arm/editdealalert
+      Trigger builds for your CI Job: product-guides/arm/arm-features/triggering-builds-for-your-ci-job
+      Configuring a webhook in Bitbucket: product-guides/arm/webhooks/configuring-a-webhook-in-bitbucket
+      Deployment: product-guides/arm/deployment
+      Retention Policy: product-guides/arm/retention-policy
+      Enable History Tracking on Custom Fields: product-guides/arm/enable-history-tracking-on-custom-fields
+      Merge Conflicts: product-guides/arm/arm-features/merge-conflicts
+      Configure a webhook in Teams: product-guides/arm/webhooks/configure-a-webhook-in-teams
+      UserRecords: product-guides/arm/userrecords
+      ResourcesCalendarDelete: product-guides/arm/resourcescalendardelete
+      ReplaceTeamRole: product-guides/arm/replaceteamrole
+      Release Notes 21.6: overview/release-notes/arm-release-notes/release-notes-21.6
+      Dashboards and Widgets: product-guides/arm/dashboards-and-widgets
+      SSO for ADFS: product-guides/arm/sso/sso-for-adfs
+      Salesforce Authentication using OAuth: product-guides/arm/salesforce-authentication-using-oauth
+      UserInterface: product-guides/arm/userinterface
+      CI Job Rollback: product-guides/arm/ci-job-rollback
+      Running a CI Job: product-guides/arm/running-a-ci-job
+      OrganizationAllProfile: product-guides/arm/organizationallprofile
+      Enabling GitHub Checks: product-guides/arm/enabling-github-checks
+      Monitor Deployments: product-guides/arm/monitor-deployments
+      ARM Known Limitations: product-guides/arm/troubleshoot/arm-known-limitations
+      Authentication: product-guides/arm/authentication
+      Create a Feature migration Template with predefined nCino objects: product-guides/arm/create-a-feature-migration-template-with-predefined-ncino-objects
+      Configure Default Apex Class: product-guides/arm/default-apex-class-configuration
+      SSO for OKTA: product-guides/vault/configuring-vault/sso-configuration/sso-for-okta
+      Enable Validation Rules: product-guides/arm/enable-validation-rules
+      Version Control Branch Workflow: product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow
+      Flows in Salesforce: product-guides/arm/flows-in-salesforce
+      Disable Validation Rules: product-guides/arm/disable-validation-rules
+      Export Users details: product-guides/arm/export-users-details
+      GIT Errors: product-guides/arm/git-errors
+      Deployment Rollback: product-guides/arm/deployment-rollback
+      Connection and Authentication: product-guides/arm/connection-and-authentication
+      Insert Salesforce Data: product-guides/arm/insert-salesforce-data
+      EditAll: product-guides/arm/editall
+      Audit Report: product-guides/arm/audit-report
+      NewQuote: product-guides/arm/newquote
+      Run Destructive Changes: product-guides/arm/run-destructive-changes
+      Commits Summary: product-guides/arm/arm-features/how-do-i-commit/commits-summary
+      EditAdd: product-guides/arm/editadd
+      CodeScan: product-guides/codescan
+      Selenium Test Execution: product-guides/arm/selenium-test-execution
+      Enable Enhanced Domains: product-guides/arm/enable-enhanced-domains
+      Create a Module: product-guides/arm/create-a-module
+      Add New Users: product-guides/arm/add-new-users
+      DeleteFolder: product-guides/arm/deletefolder
+      UpdateCustomLabel: product-guides/arm/updatecustomlabel
+      Static Code Analysis: product-guides/arm/static-code-analysis
+      Workspaces: product-guides/arm/workspaces
+      NewDealAlert: product-guides/arm/newdealalert
+      Disable Apex Triggers: product-guides/arm/disable-apex-triggers
+      Release Notes 20.3.2:
+      ARM supported license models: product-guides/arm/arm-supported-license-models
+      Retrieval APIs: product-guides/arm/retrieval-apis
+      Introduction: product-guides/arm/introduction-to-arm-developer-apis
+      Deployment using Version Control: product-guides/arm/deployment-using-version-control
+      CI Job List: product-guides/arm/ci-job-list
+      Installing VS Code Extension: product-guides/arm/installing-vs-code-extension
+      Metadata comparison between two Salesforce Orgs: product-guides/arm/metadata-comparison-between-two-salesforce-orgs
+      MobileNotifications: product-guides/arm/mobilenotifications
+      CreateNewDashBoardFolder: product-guides/arm/createnewdashboardfolder
+      Release Notes 21.2:
+      SelfServicePublicSolutionsEdit: product-guides/arm/selfservicepublicsolutionsedit
+      ARM Event Type: product-guides/arm/arm-event-type
+      Squash and Merge: product-guides/arm/squash-and-merge
+      EditTeamRole: product-guides/arm/editteamrole
+      Create an Unlocked/Managed Package: product-guides/arm/create-an-unlocked-managed-package
+      Enable Apex Triggers: product-guides/arm/enable-apex-triggers
+      PublicCalenderandResourcesSharingEdit: product-guides/arm/publiccalenderandresourcessharingedit
+      Pipelines: product-guides/arm/pipelines
+      SolutionCategoryAdd: product-guides/arm/solutioncategoryadd
+      EditEmailServices: product-guides/arm/editemailservices
+      Overview of the ARM Dashboard page: product-guides/arm/dashboards-and-widgets
+      Remove or Suspend a User: product-guides/arm/remove-or-suspend-a-user
+      Configure a webhook in GitHub: product-guides/arm/webhooks/configure-a-webhook-in-github
+      Working with Translations in ARM: product-guides/arm/working-with-translations-in-arm
+      Deployment via Template using Salesforce Org: product-guides/arm/deployment-via-template-using-salesforce-org
+      TFS: product-guides/arm/arm-administration/registration/version-control-repository/tfs
+      Parallel Processor: product-guides/arm/parallel-processor
+      Account and Administrator: product-guides/arm/troubleshoot/account-and-administrator
+      Extract Salesforce Data: product-guides/arm/extract-salesforce-data
+      SalesforceOffline: product-guides/arm/arm-features/salesforceoffline
+      DelPredefined: product-guides/arm/arm-features/delpredefined
+      ALM Management: product-guides/arm/arm-features/alm-management
+      Release Notes 22.3 (ARM): overview/release-notes/arm-release-notes/release-notes-22.3
+      Configure Callout URL: product-guides/arm/configure-callout-url
+      SandboxRefresh: product-guides/arm/arm-features/sandbox-refresh
+      TimeBasedWorkflow: product-guides/arm/arm-features/timebasedworkflow
+      PageLayoutAssigment: product-guides/arm/understanding-pagelayoutassignment
+      ApexExceptionEmail: product-guides/arm/arm-features/apexexceptionemail
+      Deployment Errors: product-guides/arm/troubleshoot/deployment-errors
+      Salesforce API version: product-guides/arm/arm-features/salesforce-api-version
+      OfflineBriefcaseConfigurationEdit: product-guides/arm/arm-features/offlinebriefcaseconfigurationedit
+      Connecting and syncing Salesforce Orgs: product-guides/arm/connecting-and-syncing-salesforce-orgs
+      Deployment using Feature Migration Template: product-guides/arm/deployment-using-feature-migration-template
+      Apex Unit Tests: product-guides/arm/apex-unit-tests
+      Subscription Management: product-guides/arm/subscription-management
+      Release Notes 21.1:
+      WebToLead: product-guides/arm/arm-features/webtolead
+      Salesforce API Version Mismatch for the CI Build and for the Custom Deployment: product-guides/arm/salesforce-api-version-mismatch-for-the-ci-build-and-custom-deployment
+      Feature Deployment Summary: product-guides/arm/feature-deployment-summary
+      Enable Delta on PermissionSets: product-guides/arm/enable-delta-on-permissionsets
+      ediyt: product-guides/arm/arm-features/editreminder
+      Delegate Approvals to another User: product-guides/arm/delegate-approvals-to-another-user
+      Migrate Custom Setting Data: product-guides/arm/migrate-custom-settings-data
+      Different Users in ARM: product-guides/arm/different-users-in-arm
+      Azure Cloud Authentication: product-guides/arm/azure-cloud-authentication
+      Disable Workflow Rules: product-guides/arm/arm-features/disable-workflow-rules
+      Contact ARM Support: product-guides/arm/troubleshoot/contact-arm-support
+      DeleteQuote: product-guides/arm/arm-features/deletequote
+      Error: "Failed to initiate deployment. Unexpected end of JSON input": product-guides/arm/troubleshoot/error-failed-to-initiate-deployment.-unexpected-end-of-json-input.
+      Registering a DevHub: product-guides/arm/registering-a-devhub
+      Release Notes 21.5: overview/release-notes/arm-release-notes/release-notes-21.5
+      Deploy a package from Salesforce Org: product-guides/arm/arm-features/deploy-a-package-from-a-salesforce-org
+      ARM Predefined Roles: product-guides/arm/arm-predefined-roles
+      Common Event Format (CEF) Data: product-guides/arm/common-event-format-cef-data
+      Signing Up with ARM: product-guides/arm/getting-started/signing-up-with-arm
+      Configure a webhook in Slack: product-guides/arm/webhooks/configure-a-webhook-in-slack
+      Deploy from SFDX branch to a Salesforce Org: product-guides/arm/arm-features/deploy-from-sfdx-branch-to-a-salesforce-org
+      Deploy from Salesforce with VC backup: product-guides/arm/deploy-from-salesforce-with-vc-backup
+      SSO for PingFederate: product-guides/arm/sso/sso-for-pingfederate
+      Create API Token: product-guides/arm/create-api-token
+      Error: "Unable to fetch Salesforce Org Users": product-guides/arm/troubleshoot/error-unable-to-fetch-salesforce-org-users.
+      Disable History Tracking on Objects: product-guides/arm/arm-features/disable-history-tracking-on-custom-fields
+      NewTeamRole: product-guides/arm/arm-features/newteamrole
+      Disable History Tracking on Custom Fields: product-guides/arm/arm-features/disable-history-tracking-on-custom-fields
+      Tips for working with ARM Support team: product-guides/arm/troubleshoot/tips-for-working-with-the-arm-support-team
+      Provide branch access to a user: product-guides/arm/troubleshoot/provide-branch-access-to-users
+      Preparing the CSV file for ARM dataloader: product-guides/arm/preparing-the-csv-file-for-arm-dataloader
+      MultilineLayoutFieldsForContractLineItems: product-guides/arm/arm-features/multilinelayoutfieldsforcontractlineitems
+      Commit Selenium Test scripts to a Version Control System: product-guides/arm/commit-selenium-test-scripts-to-a-version-control-system
+      Replace: product-guides/arm/arm-features/replace
+      Release Notes 21.3:
+      Release Labels: product-guides/arm/arm-features/release-labels
+      GIT: product-guides/arm/arm-administration/registration/version-control-git
+      Version Control-FAQs: product-guides/arm/troubleshoot/version-control-faqs
+      EmailAdminSettings: product-guides/arm/arm-features/emailadminsettings
+      CI Job History: product-guides/arm/ci-job-history
+      Vlocity: product-guides/arm/vlocity
+      Reorder: product-guides/arm/arm-features/reorder
+      nCino: product-guides/arm/ncino
+      Configure a webhook in GitLab: product-guides/arm/arm-features/configure-a-webhook-in-gitlab.
+      Deploying Vlocity components: product-guides/arm/vlocity/deploying-vlocity-components
+      Manage Users Account: product-guides/arm/arm-administration/user-management/manage-users-account-settings
+      Backup your project to Version Control: product-guides/arm/backup-your-project-to-version-control
+      Feature Migration Summary Page: product-guides/arm/feature-migration-summary-page
+      ShareSettings: product-guides/arm/arm-features/sharesettings
+      Create a Scratch Org: product-guides/arm/create-a-scratch-org
+      Error: "SCM Authentication Failed": product-guides/arm/troubleshoot/error-scm-authentication-failed
+      SVN: product-guides/arm/arm-administration/registration/version-control-repository/svn
+      SocialAccountsContactsAndLeadSettings: product-guides/arm/arm-features/socialaccountscontactsandleadsettings
+      Enable SCA Apex PMD validation criteria: product-guides/arm/arm-features/enable-sca-apex-pmd-validation-criteria.
+      Release Notes 22.2: overview/release-notes/arm-release-notes/release-notes-22.2
+      EnableSalesforcetoSalesforce: product-guides/arm/arm-features/enablesalesforcetosalesforce
+      Errors: product-guides/arm/errors
+      GIT Integrations: product-guides/arm/arm-administration/registration/version-control-repository/git-integration
+      How does TAF accelerate test automation and reduce costs?: product-guides/arm/how-does-taf-accelerate-test-automation-and-reduce-costs
+      Audit Report- Overview: product-guides/arm/arm-features/audit-report-overview
+      CI Job List screen: product-guides/arm/ci-job-list-screen
+      Salesforce DX Metadata Format: product-guides/arm/salesforce-dx-metadata-format
+      Disable Flows: product-guides/arm/disable-flows
+      DeleteEmailServices: product-guides/arm/deleteemailservices
+      Configure a webhook in Visual Studio GIT: product-guides/arm/configure-a-webhook-in-visual-studio-git.
+      API References: product-guides/arm/api-references
+      Configure Record Types Picklist Values: product-guides/arm/configure-record-types-picklist-values
+      CI Job Configurations: product-guides/arm/ci-job-configurations
+      Release Notes 22.3 (nCino): overview/release-notes/ncino-release-notes/release-notes-22.3
+      CI Jobs: fundamentals/faq/ci-jobs
+      Release Notes 21.4: overview/release-notes/codescan-release-notes/release-notes-21.4
+      Version Control Repositories Summary Page: product-guides/arm/arm-features/version-control/version-control-repositories-summary
+      Delete Salesforce Data: product-guides/arm/delete-salesforce-data
+      WebToCase: product-guides/arm/webtocase
+      CI Job Result: product-guides/arm/ci-job-results
+      EditLead: product-guides/arm/editlead
+      IP Whitelist: product-guides/arm/ip-whitelist
+      Configure a webhook in Microsoft Azure: product-guides/arm/webhooks/configure-a-webhook-in-microsoft-azure
+      Deploying the Profile and PermissionSets: product-guides/arm/arm-features/deploying-the-profile-and-permissionsets
+      Salesforce - The Tools You Need to Be Successful: product-guides/arm/salesforce-the-tools-you-need-to-be-successful
+      MobileDashboardSettings: product-guides/arm/mobiledashboardsettings
+      DeleteEmailFooters: product-guides/arm/deleteemailfooters
+      AddTabsinAppManager: product-guides/arm/addtabsinappmanager
+      Reset my password: product-guides/codescan/getting-started/users-roles-and-permissions/reset-the-password
+      Import an Unlocked/Managed Packages: product-guides/arm/import-an-unlocked-managed-package
+      Commit the Vlocity components to a branch: product-guides/arm/vlocity/commit-the-vlocity-components-to-a-branch
+      What is ARM: product-guides/arm/what-is-arm
+      EditName: product-guides/arm/editname
+      Merge Requests: product-guides/arm/merge-requests
+      Salesforce Limitations: product-guides/vault/support/salesforce-limitations
+      Revision Range and Release Label Deployment: product-guides/arm/revision-range-and-release-label-deployment
+      Commit Labels: product-guides/arm/commit-labels
+      Configuring a webhook in Bitbucket Enterprise: product-guides/arm/webhooks/configuring-a-webhook-in-bitbucket-enterprise
+      Libraries: product-guides/arm/libraries
+      Version Control Best Practices: product-guides/arm/version-control-best-practices
+      API Access: product-guides/arm/api-access
+      NewRoleAccount: product-guides/arm/newroleaccount
+      Code Coverage Reports: product-guides/arm/arm-features/code-coverage-reports
+      View my profile: product-guides/arm/arm-administration/user-management/view-my-profile
+      Release Notes 20.3.3:
+      Delete: product-guides/arm/delete
+      Error: "You are not authorized to push changes to remote repository": product-guides/arm/error-you-are-not-authorized-to-push-changes-to-the-remote-repository.
+      AutoNumberFields: product-guides/arm/autonumberfields
+      Build a package from Salesforce: product-guides/arm/build-a-package-from-salesforce
+      OutboundMessages: product-guides/arm/outboundmessages
+      Build a package from Version Control: product-guides/arm/arm-features/version-control/build-a-package-from-version-control
+      ARM Known Issues: product-guides/arm/arm-known-issues
+      
+      Leading Categories:
+      ARM Administration: product-guides/arm/arm-administration-1
+      Deployment: product-guides/arm/deployment
+      Best Practices: product-guides/vault/support/best-practices
+      Single DataLoader: product-guides/arm/dataloader
+      EZ-Commits:
+      Introduction to ARM:
+      Lead Settings: product-guides/arm/editlead
+      Unsupported Metadata Templates: product-guides/arm/unsupported-metadata-templates
+      Commit Templates:
+      Integration and Plugins: product-guides/arm/integration-and-plugins
+      Delete Outbound Messages: product-guides/arm/outboundmessages
+      Schedule Weekly Apex Class Job: product-guides/arm/scheduleapexclassesweekly
+      How-Tos:
+      Delete Time based Workflow: product-guides/arm/arm-features/timebasedworkflow
+      HashiCorp Vault:
+      Feature CI Jobs:
+      Jenkins: product-guides/codescan/codescan-integration/jenkins
+      CodeScan: product-guides/codescan
+      Feature Commits: product-guides/arm/feature-commits
+      EZ-Merge: product-guides/arm/arm-features/ez-merge
+      Schedule Monthly Apex Class Job: product-guides/arm/scheduleapexclassesmonthly
+      Common errors and resolutions:
+      Dataloader Configuration: product-guides/arm/arm-features/dataloader-configuration
+      Create Organization-Wide Email Footers:
+      Create Web to Case: product-guides/arm/webtocase
+      ARM ALM Management:
+      Manage Email Relay Activation: product-guides/arm/emailrelayactivation
+      ARM Merge Approval: product-guides/arm/merge-approvals
+      Azure DevOps: product-guides/arm/azure-devops
+      Test Environment Setup: product-guides/arm/arm-features/test-environment-setup
+      Enable Salesforce to Salesforce: product-guides/arm/arm-features/enablesalesforcetosalesforce
+      ARM Workspaces: product-guides/arm/workspaces
+      Webhooks: product-guides/arm/webhooks
+      Vlocity: product-guides/arm/vlocity
+      Account Teams:
+      Resource Calendar: product-guides/arm/resourcescalendardelete
+      Feature Deployment: product-guides/arm/feature-deployment-summary
+      Salesforce Org Management: product-guides/arm/arm-features/salesforce-org-management
+      Automation and CI: product-guides/arm/automation-and-ci
+      Contact Support: product-guides/arm/troubleshoot/contact-arm-support
+      Dataloader: product-guides/arm/dataloader
+      Public Calendars and Resources Sharing: product-guides/arm/publiccalenderandresourcessharingedit
+      Report Dashboards Create Manage Folders:
+      Validation/Workflow Rules: product-guides/arm/validation-workflow-rules
+      Environment Provisioning: product-guides/arm/environment-provisioning
+      Troubleshoot: product-guides/arm/troubleshoot
+      Release Notes: overview/release-notes
+      Known Issues/ Limitations: product-guides/arm/arm-known-issues
+      General: fundamentals/getting-set-up/general
+      Web to Lead: product-guides/arm/arm-features/webtolead
+      External Pull Request: product-guides/arm/arm-features/external-pull-request
+      CheckMarx: product-guides/arm/sca-for-checkmarx
+      Case Contact Roles:
+      Multi line Layout Fields for Contract Line Items:
+      ARM Subscription Management: product-guides/arm/subscription-management
+      Organization Wide Email Addresses:
+      Opportunity Update Reminders: product-guides/arm/arm-features/editreminder
+      Version Control Branch: product-guides/arm/arm-features/version-control/version-control-branch
+      Quote Templates:
+      Top Features:
+      Create a new CI Job:
+      Introduction to Version Control: product-guides/arm/arm-features/version-control/introduction-to-version-control
+      GIT Revert:
+      Migration Templates: product-guides/arm/migration-template
+      User Management: product-guides/arm/user-management
+      Disable Scheduled Reports: product-guides/arm/disablescheduledreports
+      Provar:
+      Registration: product-guides/arm/arm-administration/registration
+      Update Custom Label: product-guides/arm/updatecustomlabel
+      AccelQ:
+      Case Team Roles:
+      Solution Settings: product-guides/arm/solutionsettingsedit
+      Solution Categories: product-guides/arm/solutioncategoryadd
+      Add Apex Exception Email: product-guides/arm/arm-features/apexexceptionemail
+      Active Directory:
+      JIRA: product-guides/arm/arm-features/jira
+      Manage Email Services:
+      Feature Migration: product-guides/arm/feature-migration-summary-page
+      Static Code Analysis in CI-CD: product-guides/arm/static-code-analysis-in-ci-cd
+      Apex PMD: product-guides/arm/apex-pmd
+      Visual Code Extension: product-guides/arm/installing-vs-code-extension
+      nCino: product-guides/arm/ncino
+      Manage Page Layout Assignments: product-guides/arm/understanding-pagelayoutassignment
+      Sandbox Refresh: product-guides/arm/arm-features/sandbox-refresh
+      Dashboard and Pipeline: product-guides/arm/pipelines
+      ARM Branching Baseline:
+      Version Control: product-guides/arm/arm-features/version-control
+      Dataloader Pro: product-guides/arm/arm-features/dataloader-pro
+      Mobile Administration:
+      Console Layout Assignment: product-guides/arm/consolelayoutsassignments
+      Salesforce Org: product-guides/arm/arm-administration/registration/salesforce-org
+      Getting Started: product-guides/vault/getting-started
+      ARM Search and Substitute: product-guides/arm/search-and-substitute
+      Manage Email Administration Deliverability:
+      User Interface Settings: product-guides/arm/userinterface
+      Delete Scheduled Jobs: product-guides/arm/deletescheduledjobs
+      Self Service Public Solutions: product-guides/arm/selfservicepublicsolutionsedit
+      File Upload Download Security: product-guides/arm/fileuploadanddownloadsecurity
+      Update Url for Remote Site Settings: product-guides/arm/arm-features/updateurlforremotesitesettings
+      Predefined Case Teams:
+      FAQ: fundamentals/faq
+      Manage User Records: product-guides/arm/userrecords
+      Security Information and Event Management: product-guides/arm/security-information-and-event-management
+      Single Sign-On (SSO): product-guides/codescan/codescan-integration/single-sign-on-sso
+      Version Control Repository: product-guides/arm/arm-administration/registration/version-control-repository
+      Social Accounts Contacts And Lead Settings: product-guides/arm/arm-features/socialaccountscontactsandleadsettings
+      Salesforce DX: product-guides/arm/salesforce-dx
+      Create Public Groups:
+      Opportunity Big Deal Alerts:
+      Manage Libraries: product-guides/arm/libraries
+      TAF:
+      Releases:
+      SonarQube: product-guides/arm/sonarqube
+      Change Labels:
+      Developer APIs: product-guides/arm/developer-apis

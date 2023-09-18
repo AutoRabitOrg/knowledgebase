@@ -91,6 +91,15 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 17 September 2023
+
+**(ARM v22.3.39)**\
+This is a maintenance release. The following items were enhanced, fixed, or added.
+
+* A code fix was implemented to the **Deployment** module related to a use-case error encountered when **deploying Vlocity components** from a **Git branch**. (#[81307](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124026003))
+* A code fix was implemented related to the **CI Jobs** module to institute **best practices** following a user session (#[81378](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124181163))
+* A code fix was implemented to the **Version Control** module related to a use-case error pertaining to **\[integration\_EZ-commit]**. User was getting a **"no package .xml found to retrieve the members"** through **package manifest** when selecting **'all users or the respective SF org user.'** (Internal ticket)
+
 #### 10 September 2023
 
 **(ARM v22.3.38)**

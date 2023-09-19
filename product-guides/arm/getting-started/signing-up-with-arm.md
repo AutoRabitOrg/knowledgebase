@@ -34,7 +34,7 @@ When you are done working in ARM and wish to log out of the system, click your u
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485548576.png)
 
-## Automatic Logout <a href="#automatic-logout" id="automatic-logout"></a>
+## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 
 ARM only allows a username to be logged in under one session, and any additional user sessions started using the same username will be logged out of the previous session. This mechanism is for security, as ARM does not allow multiple sessions for the same username from different machines or browsers. To prevent situations like this, please do not share your login credentials (username and password) with users in your organization.
 

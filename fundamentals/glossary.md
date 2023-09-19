@@ -1,5 +1,18 @@
 # 📙 Glossary
 
+**AutoRABIT Terms:**
+
+1. **Metadata Mastery™:** AutoRABIT's proprietary technology for Salesforce metadata management.
+2. **Data Loader Pro™:** AutoRABIT's feature for complex data migrations, backups, and archiving.
+3. **ALM Masters™:** AutoRABIT's feature for end-to-end application lifecycle management.
+4. **Version Control System (VCS):** AutoRABIT's feature that allows you to track and manage changes to your code.
+5. **Deployment Automation:** AutoRABIT's feature that automates the deployment of code to different environments.
+6. **Test Automation:** AutoRABIT's feature that automates the testing process.
+7. **Release Management:** AutoRABIT's feature that helps manage, schedule and control software delivery process.
+8. **Data Compliance:** AutoRABIT's feature that ensures data in Salesforce complies with policies and standards.
+9. **Backup and Recovery:** AutoRABIT's feature that provides automated backup and recovery solutions for Salesforce data.
+10. **Environment Comparison:** AutoRABIT's feature that allows comparison of metadata and data across different Salesforce environments.
+
 **DevOps Terms:**
 
 1. **Continuous Integration (CI):** The practice of merging all developers' working copies to a shared mainline several times a day.
@@ -25,19 +38,6 @@
 8. **Identity and Access Management (IAM):** The framework of business processes, policies and technologies that facilitates the management of electronic or digital identities.
 9. **Penetration Testing:** An authorized simulated cyberattack on a computer system, performed to evaluate the security of the system.
 10. **Intrusion Detection System (IDS):** A system that monitors network traffic for suspicious activity and issues alerts when such activity is discovered.
-
-**AutoRABIT Terms:**
-
-1. **Metadata Mastery™:** AutoRABIT's proprietary technology for Salesforce metadata management.
-2. **Data Loader Pro™:** AutoRABIT's feature for complex data migrations, backups, and archiving.
-3. **ALM Masters™:** AutoRABIT's feature for end-to-end application lifecycle management.
-4. **Version Control System (VCS):** AutoRABIT's feature that allows you to track and manage changes to your code.
-5. **Deployment Automation:** AutoRABIT's feature that automates the deployment of code to different environments.
-6. **Test Automation:** AutoRABIT's feature that automates the testing process.
-7. **Release Management:** AutoRABIT's feature that helps manage, schedule and control software delivery process.
-8. **Data Compliance:** AutoRABIT's feature that ensures data in Salesforce complies with policies and standards.
-9. **Backup and Recovery:** AutoRABIT's feature that provides automated backup and recovery solutions for Salesforce data.
-10. **Environment Comparison:** AutoRABIT's feature that allows comparison of metadata and data across different Salesforce environments.
 
 **CodeScan Terms:**
 

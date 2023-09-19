@@ -36,7 +36,7 @@ When you are done working in ARM and wish to log out of the system, click your u
 
 ## Automatic Logout <a href="#automatic-logout" id="automatic-logout"></a>
 
-While working in ARM, a user can be automatically logged out of the system. Currently, ARM allows a username to be logged in under only one session, and any additional user sessions started using the same username will log out of the previous session. This mechanism is for security, as ARM does not allow multiple sessions for the same username from different machines or browsers. To prevent situations like this, please do not share your login credentials (username and password) with users in your organization.
+ARM only allows a username to be logged in under one session, and any additional user sessions started using the same username will be logged out of the previous session. This mechanism is for security, as ARM does not allow multiple sessions for the same username from different machines or browsers. To prevent situations like this, please do not share your login credentials (username and password) with users in your organization.
 
 Another situation where users are automatically logged out is when the user does not perform any actions in ARM for a certain period. Configuration settings in the ARM UI control the security timeout period in ARM.&#x20;
 

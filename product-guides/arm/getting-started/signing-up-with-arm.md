@@ -1,6 +1,6 @@
 # Signing Up with ARM
 
-The ARM sign-up and activation process has several steps— some on our end and others on yours.&#x20;
+The ARM signup and activation process has several steps— some on our end and others on yours.&#x20;
 
 1. Go to [https://www.autorabit.com/](https://www.autorabit.com/) and find the login option, or go directly to [https://login.autorabit.com/](https://login.autorabit.com/).
 2.  Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.\
@@ -14,7 +14,7 @@ The ARM sign-up and activation process has several steps— some on our end and 
 4. Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process, we will send you an email with details on your activation status.&#x20;
 5. When your account is activated, you will get a confirmation sent to your email address.&#x20;
 
-Important Note:If your account isn't activated at this stage, you'll get an email explaining why and the next steps you can take.
+Important Note: If your account isn't activated at this stage, you'll get an email explaining why and the next steps you can take.
 
 ## Logging In <a href="#logging-in" id="logging-in"></a>
 
@@ -30,7 +30,7 @@ The ARM login screen allows you to log in to your instance.
 
 ## Logging Out <a href="#logging-out" id="logging-out"></a>
 
-When you are done working in ARM and wish to log out of the system, click your user name in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.
+When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485548576.png)
 
@@ -40,6 +40,6 @@ ARM only allows a username to be logged in under one session, and any additional
 
 Another situation where users are automatically logged out is when the user does not perform any actions in ARM for a certain period. Configuration settings in the ARM UI control the security timeout period in ARM.&#x20;
 
-The users can have multiple tabs of ARM pages open within the same web browser (e.g., Chrome) without getting logged out of the system. For example, this is useful when working with multiple ARM pages or records without navigating away from previous pages.
+Users can have multiple tabs of ARM pages open within the same web browser (e.g., Chrome) without getting logged out of the system. For example, this is useful when working with multiple ARM pages or records without navigating away from previous pages.
 
 \

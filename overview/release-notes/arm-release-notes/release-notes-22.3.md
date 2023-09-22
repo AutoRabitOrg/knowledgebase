@@ -91,6 +91,17 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 24 September 2023
+
+**(ARM v22.3.40)**\
+This is a maintenance release. The following items were enhanced, fixed, or added:
+
+* A code fix was implemented due to a use-case error to the Version Control module regarding an issue with merging destructive changes. (#[82746](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000126225007))
+* A code fix was applied to the Deployment module due to a data error concerning an Org difference pulling changes from the managed packages. (#[81883](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124871010))
+* A code fix was aplied due to an use-case error relating to the Deployments module with a user unable to deploy components via Org Sync. (#[82443](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000125793150))
+* A code fix was applied pertaining to the CI Jobs module relating to a use-case error in which the CI Job has two different package directories and changes fall under one package when an analysis is completed on CodeScan (#[80988](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123400001))
+* Performed a code fix relating to a use-case error in on the Deployments module in which a deployment bug with multi packags and static resource was bugged. (#[82760](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000126263009))
+
 #### 17 September 2023
 
 **(ARM v22.3.39)**\

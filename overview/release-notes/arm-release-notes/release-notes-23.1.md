@@ -1,12 +1,12 @@
 # Release Notes 23.1
 
-### ARM Release Notes 23.1 <a href="#arm-release-notes-23-1" id="arm-release-notes-23-1"></a>
+## ARM Release Notes 23.1 <a href="#arm-release-notes-23-1" id="arm-release-notes-23-1"></a>
 
 **September 2023**
 
 **Version 23.1 – New Features, Enhancements, and Improvements**
 
-#### New Features
+### New Features
 
 **1. Automatic Merge after Successful CI Build**\
 We know that understanding and managing version control can sometimes be a challenge. ARM offers the flexibility to cherry-pick branch revisions for merge or deployment. Now you can automate this process of cherry-picking the revisions in CI Jobs as a post-deployment step.
@@ -65,7 +65,7 @@ The ARM–ServiceNow integration automatically posts updates to ServiceNow ticke
 
 ServiceNow will make information more easily accessible and workflows more streamlined, reducing the time and effort required to manage and resolve service requests. Additionally, the integration will allow teams to work more effectively, improving collaboration and communication.
 
-#### Enhancements
+### Enhancements
 
 **1. Salesforce Winter (API 57.0) & Spring (API 58.0) Support**\
 AutoRABIT supports the most recent API 57.0 & API 58.0 versions in this release to keep our product updated with Salesforce updates. The most recent API version is intended for customizing and developing tools to manage the metadata model.
@@ -105,15 +105,15 @@ We've enhanced the platform with a user-friendly quick filter and export feature
 **8. Create Artifact: Release label more than 180 days**\
 In the Create Artifact section, users can now generate a Release Label and have the flexibility to choose an extended timeframe of over 180 days for retrieving comprehensive commit history data. This enhancement offers users a broader historical perspective, facilitating more in-depth analysis and tracking of commits for their projects.
 
-#### Improvements
+### Improvements
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leveraging newer technologies, collectively resulting in a smoother and faster user experience.\
 
 
-### nCino Release Notes 23.1 <a href="#ncino-release-notes-23-1" id="ncino-release-notes-23-1"></a>
+## nCino Release Notes 23.1 <a href="#ncino-release-notes-23-1" id="ncino-release-notes-23-1"></a>
 
 **September 2023**\
-**nCino Release Notes – Streamlined CI/CD and Enhanced Control**
+**Version 23.1 – Streamlined CI/CD and Enhanced Control**
 
 We're thrilled to introduce a series of exciting enhancements to elevate your nCino experience. Get ready for:
 
@@ -128,3 +128,12 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 **5. Access + Validation:** We've renamed 'Applied Mappings' to 'External ID Mapping' for clarity. Plus, enjoy peace of mind with automated validation, ensuring your access to objects and essential external ID fields.
 
 **6. Post-Deployment Insights:** Keep a finger on the pulse of post-deployment activities. The ‘Post Deploy Details' section provides consolidated updates for multiple Orgs. Dive deeper with 'View Details’ to explore Orgs and their records effortlessly.
+
+## Changelogs
+
+#### 24 September 2023
+
+**(ARM v23.1.1)**\
+This is a maintenance release. The following items were enhanced, fixed, or added:
+
+* A code fix was applied to the Deployment module due to a data error concerning an Org difference pulling changes from the managed packages. (#[81883](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124871010))

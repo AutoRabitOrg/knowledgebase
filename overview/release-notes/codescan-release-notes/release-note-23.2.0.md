@@ -1,12 +1,4 @@
-# Release Note 23.2
-
-### CodeScan 23.2.0 Release Notes
-
-**Sep 2023 Update**
-
-**September 2023 - Version 23.2.0**
-
-### CodeScan 23.2.0 Release Notes
+# Release Note 23.2.0
 
 **September 2023 - Version 23.2.0**
 

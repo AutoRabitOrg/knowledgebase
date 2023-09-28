@@ -38,9 +38,6 @@
 
 * [🛠 Getting set up](fundamentals/getting-set-up/README.md)
   * [General](fundamentals/getting-set-up/general.md)
-  * [Getting Started with ARM](fundamentals/getting-set-up/getting-started-with-arm.md)
-  * [Getting Started with CodeScan](fundamentals/getting-set-up/getting-started-with-codescan.md)
-  * [Getting Started with Vault](fundamentals/getting-set-up/getting-started-with-vault.md)
 * [📙 Glossary](fundamentals/glossary.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/s/community)
 * [ℹ FAQ](fundamentals/faq/README.md)

@@ -11,7 +11,7 @@ description: >-
 
 #### What is AutoRABIT? <a href="#what-is-autorabit" id="what-is-autorabit"></a>
 
-AutoRABIT is a cloud-based CI/CD and release automation suite specifically designed for Salesforce.com. AutoRABIT helps Salesforce developers, admins, analysts, and release managers automate version control, deployment, testing, data loading, and sandbox management across multiple Salesforce orgs.
+AutoRABIT is a cloud-based CI/CD and release automation suite specifically designed for Salesforce. AutoRABIT helps Salesforce developers, admins, analysts, and release managers automate version control, deployment, testing, data loading, and sandbox management across multiple Salesforce orgs.
 
 ## Quick links
 

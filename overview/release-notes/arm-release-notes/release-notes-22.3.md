@@ -91,6 +91,26 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 1 October 2023
+
+**(ARM v22.3.41)**
+
+This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+
+* A code fix was applied to the version control module in releases 22.3 and 23.1 due to a use-case error with a **user being unable to create a new commit**. (#[81654](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124557780))
+* A code fix was performed for release versions 22.3 and 23.1 to the Deployments module for a use-case error resulting in a **buggy deployment** with **multi packages** and the **static resources** being bugged as well. (#[82760](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000126263009))
+* A code fix was applied to the version control module in releases 22.3 and 23.1 concerning a use-case error for an **EZ-Commit**, where the **user was unable to view the 'deleted components' tab** for the commit template when unchecking the '**skip mappings**' checkbox. (Internal ticket)
+* A code fix was implemented to versions 22.3 and 23.1 to correct an error with the Deployments module due to a **deployment** initiated using **Org Synchronization failing**. (#[80987](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123390046))
+* A code fix was applied to releases 22.3 and 23.1 due to a use-case error in which the **registration date** of the **repository** **was not correct** in the **version control repository** (**created date** in AutoRABIT). (#[82475](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000125901011))
+* A code fix was performed to versions 22.3 and 23.1 due to a data error in the version control module **preventing ALM working items from loading**. (#[78713](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120177935))
+* A code fix was initiated to versions 22.3 and 23.1 due to a data error affecting the reports module, in which a user was getting an error message when executing a **static code analysis** (CodeScan) report. (#[74771](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000114633147))
+* A code fix was applied to version 22.3 in the version control module pertaining to a use-case error with **changes not** getting **fetched via autodraft after reverting a commit**. (#[81871](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124911255))
+* A code fix was implemented in versions 22.3 and 23.1 to the version control module related to a use-case error wherein the **baseline job** has **modified the Salesforce folder structure in GitHub**. (#[82270](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000125490160))
+* A code fix was integrated to the version control module in version 22.3 after a data error caused by a **feature template migration** issue. The feature flag is **MERGE\_SKIP\_AUTORESOLVE\_CONFIGURATION\_FILES**. (#[76008](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000116859424))
+* A code fix to version 22.3 was implemented affecting all modules from a data error when **setting up SFDX deployment**. (#[76649](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000117914023))
+* A code fix was applied to the version control module in version 22.3 resulting from a use-case error with an **ARM commit comment label error**. (#[83318](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000127180244))
+* A code fix was implemented to the nCino module for versions 22.3 and 23.1 for a data error in which the **records count** was **not** being **updated** in the **object sidebar** for the version control baseline revision job. (Internal ticket)&#x20;
+
 #### 24 September 2023
 
 **(ARM v22.3.40)**\

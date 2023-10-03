@@ -87,10 +87,10 @@ _**Vault v23.1.11**_
 
 This is a maintenance release. The following items were fixed and/or added:
 
-1. An issue was resolved where users were experiencing a problem replicating records from production to a developer sandbox with the backup with hierarchy option. In this issue, when attempting to replicate over 1100 records, no records were being populated in the developer sandbox ([#63867](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000102578360)).
-2. An issue has been resolved that affected manual backups. Users were unable to obtain all the objects in the backup, even when using the correct configuration settings ([#72993](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113085209)).
-3. An issue has been addressed where users were archiving jobs with a configuration set to limit to 1 million records, but more than 1 million records were being archived. This issue has been fixed ([#73114](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113359027)).
-4. An issue has been resolved where users encountered a problem while searching for a specific set of objects using the filter option during restoration or replication. Instead of selecting only those specific objects, all the objects were selected. This issue has been fixed ([#73354](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113559815)).
+1. An issue was resolved where users were experiencing a problem replicating records from production to a developer sandbox with the backup with hierarchy option. In this issue, when attempting to replicate over 1100 records, no records were being populated in the developer sandbox.
+2. An issue has been resolved that affected manual backups. Users were unable to obtain all the objects in the backup, even when using the correct configuration settings.
+3. An issue has been addressed where users were archiving jobs with a configuration set to limit to 1 million records, but more than 1 million records were being archived. This issue has been fixed.
+4. An issue has been resolved where users encountered a problem while searching for a specific set of objects using the filter option during restoration or replication. Instead of selecting only those specific objects, all the objects were selected. This issue has been fixed.
 
 #### 17 May 2023 <a href="#17-may-2023" id="17-may-2023"></a>
 
@@ -106,7 +106,7 @@ _**Vault v23.1.9**_
 
 This is a maintenance release. The following items were fixed and/or added:
 
-1. Fixed an issue for the **Restore/Replicate** operation where the Person accounts restoration/replication failed when the backup got triggered with Person contacts ([#63867](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000102578360)).
+1. Fixed an issue for the **Restore/Replicate** operation where the Person accounts restoration/replication failed when the backup got triggered with Person contacts.
 
 #### 03 May 2023 <a href="#03-may-2023" id="03-may-2023"></a>
 
@@ -114,9 +114,9 @@ _**Vault v23.1.8**_
 
 This is a maintenance release. The following items were fixed and/or added:
 
-1. Fixed an issue where the Vault archival failed with **`"No Records Archived"`** status in the Vault UI ([#70333](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000109469114)).
-2. Fixed an issue where replicating the **Assest records** from the source to the destination org ran for a few hours, but no records were picked up ([#70349](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000109437480)).
-3. Fixed an issue where the scheduled backups failed for production orgs ([#70193](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000109161211)).
+1. Fixed an issue where the Vault archival failed with **`"No Records Archived"`** status in the Vault UI.
+2. Fixed an issue where replicating the **Assest records** from the source to the destination org ran for a few hours, but no records were picked up.
+3. Fixed an issue where the scheduled backups failed for production orgs.
 
 #### 26 April 2023 <a href="#26-april-2023" id="26-april-2023"></a>
 
@@ -124,8 +124,8 @@ _**Vault v23.1.7**_
 
 This is a maintenance release. The following items were fixed and/or added:
 
-1. Fixed an issue where the scheduled Archival jobs ran even after the **Config** was deleted ([#69498](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000108225692)).
-2. Fixed a bug where users had issues downloading the **Label Names** report in the **Replicate** section ([#69636](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000108598969)).
+1. Fixed an issue where the scheduled Archival jobs ran even after the **Config** was deleted.
+2. Fixed a bug where users had issues downloading the **Label Names** report in the **Replicate** section.
 
 #### 19 April 2023 <a href="#19-april-2023" id="19-april-2023"></a>
 
@@ -133,9 +133,9 @@ _**Vault v23.1.6**_
 
 This is a maintenance release. The following items were fixed and/or added:
 
-1. Fixed an issue when replicating records from the production to a developer sandbox (1100+ records); no records were populated in the developer sandbox ([#63867](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000102578360)).
-2. Fixed an issue where the archive job kept running after data were processed ([#65687](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000104770017)).
-3. Fixed an issue with the Vault's data storage and management where the archive process failed as it could not write a backup to the Amazon S3 bucket ([#68937](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000107846153)).
+1. Fixed an issue when replicating records from the production to a developer sandbox (1100+ records); no records were populated in the developer sandbox.
+2. Fixed an issue where the archive job kept running after data were processed.
+3. Fixed an issue with the Vault's data storage and management where the archive process failed as it could not write a backup to the Amazon S3 bucket.
 
 #### 12 April 2023 <a href="#12-april-2023" id="12-april-2023"></a>
 

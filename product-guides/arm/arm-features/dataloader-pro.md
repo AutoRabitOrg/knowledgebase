@@ -99,7 +99,7 @@ In the **`Destination`** field, select the required destination org whose values
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654863032670.png" alt=""><figcaption></figcaption></figure>
 
-Important Note:ARM selectively suppresses the automatic creation of external ID fields during Dataloader Pro operations.
+<mark style="background-color:blue;">**Important Note:**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">ARM does not support the automatic creation of an ExternalUniqueID. The user has to create this manually on both the Source Org and Destination Org.</mark>
 
 #### Process Details <a href="#process-details" id="process-details"></a>
 

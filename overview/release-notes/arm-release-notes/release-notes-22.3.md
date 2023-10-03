@@ -97,39 +97,39 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
 
-* A code fix was applied to the version control module in releases 22.3 and 23.1 due to a use-case error with a **user being unable to create a new commit**. (#[81654](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124557780))
-* A code fix was performed for release versions 22.3 and 23.1 to the Deployments module for a use-case error resulting in a **buggy deployment** with **multi packages** and the **static resources** being bugged as well. (#[82760](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000126263009))
-* A code fix was applied to the version control module in releases 22.3 and 23.1 concerning a use-case error for an **EZ-Commit**, where the **user was unable to view the 'deleted components' tab** for the commit template when unchecking the '**skip mappings**' checkbox. (Internal ticket)
-* A code fix was implemented to versions 22.3 and 23.1 to correct an error with the Deployments module due to a **deployment** initiated using **Org Synchronization failing**. (#[80987](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123390046))
-* A code fix was applied to releases 22.3 and 23.1 due to a use-case error in which the **registration date** of the **repository** **was not correct** in the **version control repository** (**created date** in AutoRABIT). (#[82475](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000125901011))
-* A code fix was performed to versions 22.3 and 23.1 due to a data error in the version control module **preventing ALM working items from loading**. (#[78713](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120177935))
-* A code fix was initiated to versions 22.3 and 23.1 due to a data error affecting the reports module, in which a user was getting an error message when executing a **static code analysis** (CodeScan) report. (#[74771](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000114633147))
-* A code fix was applied to version 22.3 in the version control module pertaining to a use-case error with **changes not** getting **fetched via autodraft after reverting a commit**. (#[81871](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124911255))
-* A code fix was implemented in versions 22.3 and 23.1 to the version control module related to a use-case error wherein the **baseline job** has **modified the Salesforce folder structure in GitHub**. (#[82270](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000125490160))
-* A code fix was integrated to the version control module in version 22.3 after a data error caused by a **feature template migration** issue. The feature flag is **MERGE\_SKIP\_AUTORESOLVE\_CONFIGURATION\_FILES**. (#[76008](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000116859424))
-* A code fix to version 22.3 was implemented affecting all modules from a data error when **setting up SFDX deployment**. (#[76649](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000117914023))
-* A code fix was applied to the version control module in version 22.3 resulting from a use-case error with an **ARM commit comment label error**. (#[83318](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000127180244))
-* A code fix was implemented to the nCino module for versions 22.3 and 23.1 for a data error in which the **records count** was **not** being **updated** in the **object sidebar** for the version control baseline revision job. (Internal ticket)&#x20;
+* A code fix was applied to the version control module in releases 22.3 and 23.1 due to a use-case error with a **user being unable to create a new commit**.&#x20;
+* A code fix was performed for release versions 22.3 and 23.1 to the Deployments module for a use-case error resulting in a **buggy deployment** with **multi packages** and the **static resources** being bugged as well.&#x20;
+* A code fix was applied to the version control module in releases 22.3 and 23.1 concerning a use-case error for an **EZ-Commit**, where the **user was unable to view the 'deleted components' tab** for the commit template when unchecking the '**skip mappings**' checkbox.&#x20;
+* A code fix was implemented to versions 22.3 and 23.1 to correct an error with the Deployments module due to a **deployment** initiated using **Org Synchronization failing**.
+* A code fix was applied to releases 22.3 and 23.1 due to a use-case error in which the **registration date** of the **repository** **was not correct** in the **version control repository** (**created date** in AutoRABIT).&#x20;
+* A code fix was performed to versions 22.3 and 23.1 due to a data error in the version control module **preventing ALM working items from loading**.&#x20;
+* A code fix was initiated to versions 22.3 and 23.1 due to a data error affecting the reports module, in which a user was getting an error message when executing a **static code analysis** (CodeScan) report.&#x20;
+* A code fix was applied to version 22.3 in the version control module pertaining to a use-case error with **changes not** getting **fetched via autodraft after reverting a commit**.&#x20;
+* A code fix was implemented in versions 22.3 and 23.1 to the version control module related to a use-case error wherein the **baseline job** has **modified the Salesforce folder structure in GitHub**.&#x20;
+* A code fix was integrated to the version control module in version 22.3 after a data error caused by a **feature template migration** issue. The feature flag is **MERGE\_SKIP\_AUTORESOLVE\_CONFIGURATION\_FILES**.&#x20;
+* A code fix to version 22.3 was implemented affecting all modules from a data error when **setting up SFDX deployment**.&#x20;
+* A code fix was applied to the version control module in version 22.3 resulting from a use-case error with an **ARM commit comment label error**.&#x20;
+* A code fix was implemented to the nCino module for versions 22.3 and 23.1 for a data error in which the **records count** was **not** being **updated** in the **object sidebar** for the version control baseline revision job.&#x20;
 
 #### 24 September 2023
 
 **(ARM v22.3.40)**\
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-* A code fix was implemented due to a use-case error to the Version Control module regarding an issue with merging destructive changes. (#[82746](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000126225007))
-* A code fix was applied to the Deployment module due to a data error concerning an Org difference pulling changes from the managed packages. (#[81883](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124871010))
-* A code fix was aplied due to an use-case error relating to the Deployments module with a user unable to deploy components via Org Sync. (#[82443](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000125793150))
-* A code fix was applied pertaining to the CI Jobs module relating to a use-case error in which the CI Job has two different package directories and changes fall under one package when an analysis is completed on CodeScan (#[80988](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123400001))
-* Performed a code fix relating to a use-case error in on the Deployments module in which a deployment bug with multi packags and static resource was bugged. (#[82760](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000126263009))
+* A code fix was implemented due to a use-case error to the Version Control module regarding an issue with merging destructive changes.&#x20;
+* A code fix was applied to the Deployment module due to a data error concerning an Org difference pulling changes from the managed packages.&#x20;
+* A code fix was applied due to a use-case error relating to the Deployments module with a user unable to deploy components via Org Sync.&#x20;
+* A code fix was applied pertaining to the CI Jobs module relating to a use-case error in which the CI Job has two different package directories and changes fall under one package when an analysis is completed on CodeScan&#x20;
+* Performed a code fix relating to a use-case error in on the Deployments module in which a deployment bug with multi packags and static resource was bugged.&#x20;
 
 #### 17 September 2023
 
 **(ARM v22.3.39)**\
 This is a maintenance release. The following items were enhanced, fixed, or added.
 
-* A code fix was implemented to the **Deployment** module related to a use-case error encountered when **deploying Vlocity components** from a **Git branch**. (#[81307](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124026003))
-* A code fix was implemented related to the **CI Jobs** module to institute **best practices** following a user session (#[81378](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000124181163))
-* A code fix was implemented to the **Version Control** module related to a use-case error pertaining to **\[integration\_EZ-commit]**. User was getting a **"no package .xml found to retrieve the members"** through **package manifest** when selecting **'all users or the respective SF org user.'** (Internal ticket)
+* A code fix was implemented to the **Deployment** module related to a use-case error encountered when **deploying Vlocity components** from a **Git branch**.&#x20;
+* A code fix was implemented related to the **CI Jobs** module to institute **best practices** following a user session.
+* A code fix was implemented to the **Version Control** module related to a use-case error pertaining to **\[integration\_EZ-commit]**. User was getting a **"no package .xml found to retrieve the members"** through **package manifest** when selecting **'all users or the respective SF org user.'**&#x20;
 
 #### 10 September 2023
 
@@ -137,24 +137,24 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-1. As part of this fix deployment, one of the feature flags, '**RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757**,' has been provided. Enabling this feature flag only applies to one specific customer. (#[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365))
-2. Implemented a code fix associated with the **version control** module for a use-case error in which **ALM working items were not loading**. (#[78713](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120177935))
-3. Implemented a code fix for a use-case error pertaining to the **version control** module for an **approval email notification error**. (#[80631](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122540473))
-4. As a result of a use-case error relating to a **feature template migration** issue, a new **feature flag** has been provided, '**MERGE\_CONFLICTS\_AUTORESOLVE\_CONFIGFILES\_USINGSOURCE,'** which must be enabled for one specific customer only: More details are provided in the ticket itself. (#[76008](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000116859424))&#x20;
-5. Implemented a code fix related to a use-case error where the **AutoRABIT deployment** **initiated using Org Synchronization fails**. This error pertains to the **Version Control** module. (#[80987](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123390046))
+1. As part of this fix deployment, one of the feature flags, '**RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757**,' has been provided. Enabling this feature flag only applies to one specific customer.&#x20;
+2. Implemented a code fix associated with the **version control** module for a use-case error in which **ALM working items were not loading**.&#x20;
+3. Implemented a code fix for a use-case error pertaining to the **version control** module for an **approval email notification error**.&#x20;
+4. As a result of a use-case error relating to a **feature template migration** issue, a new **feature flag** has been provided, '**MERGE\_CONFLICTS\_AUTORESOLVE\_CONFIGFILES\_USINGSOURCE,'** which must be enabled for one specific customer only: More details are provided in the ticket itself.&#x20;
+5. Implemented a code fix related to a use-case error where the **AutoRABIT deployment** **initiated using Org Synchronization fails**. This error pertains to the **Version Control** module.&#x20;
 6.  Implemented a code fix related to the **CI Jobs** module related to setting up **SFDX deployment, with the Feature Flag:**&#x20;
 
     | **RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757** |
     | -------------------------------------------- |
 
-    Regarding ticket #[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365), '**Setting up SFDX Deployment'**: \
-    Only for the '**Create and Install an Unlocked/Managed Package Version from a Version Control Branch'** CI, type in the CI Job configuration. When selecting the 'Trigger build on commit' option, we have hidden the '**Process commit revision received via hook only**' sub-option. This change will be incorporated into our documentation. Further details are available in the ticket itself. (#[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365), #[76649](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000117914023))
+    Regarding one ticket, '**Setting up SFDX Deployment'**: \
+    Only for the '**Create and Install an Unlocked/Managed Package Version from a Version Control Branch'** CI, type in the CI Job configuration. When selecting the 'Trigger build on commit' option, we have hidden the '**Process commit revision received via hook only**' sub-option. This change will be incorporated into our documentation. Further details are available in the ticket itself.&#x20;
 7.  Implemented a code fix related to the **nCino** module error: &#x20;
 
     | **LLC\_BI\_\_Schedule\_Section\_\_c migration issue#1** |
     | ------------------------------------------------------- |
-8. Implemented a code fix related to an internal ticket in ARM, in which the user was **not able to migrate related data** using the **Dataloader test environment setup** module. (#[81142](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123734279))
-9. Implemented a code fix related to the **Deployment** module for an **EBR Manual Asyncid XML Copy Automation** error. (Internal ticket)
+8. Implemented a code fix related to an internal ticket in ARM, in which the user was **not able to migrate related data** using the **Dataloader test environment setup** module.&#x20;
+9. Implemented a code fix related to the **Deployment** module for an **EBR Manual Asyncid XML Copy Automation** error.&#x20;
 
 #### 3 September 2023
 
@@ -162,9 +162,9 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-* Implemented a **code fix** associated with the **version control** module related to a use-case scenario in which a **review artifact was not working**. (#[80122](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121584476))
-* Implemented a **code fix** to the **nCino** module resulting from a user product suggestion to the **deployment history filter**. (#[80657](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122577493))
-* Implemented a **code fix** to the **nCino** module related to an instance in which the **org name** was **not displayed** for the **destination org value field**. (Internal ticket)
+* Implemented a **code fix** associated with the **version control** module related to a use-case scenario in which a **review artifact was not working**.&#x20;
+* Implemented a **code fix** to the **nCino** module resulting from a user product suggestion to the **deployment history filter**.&#x20;
+* Implemented a **code fix** to the **nCino** module related to an instance in which the **org name** was **not displayed** for the **destination org value field**.&#x20;
 
 #### 27 August 2023
 
@@ -173,35 +173,35 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
 * **Error: "Merging from Devint branch to Developer branch (Back merge) is getting Auto Rejected":** Code fix to Version Control module on user merging from **Devint branch to Developer branch (Back merge) getting Auto Rejected**.&#x20;
-* Implemented a **UI change** to include the **“Ignore Warnings”** option in both the **prevalidation commit** and **merge flows**. This requires a documentation change. See ticket for more details. (#[80509](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122372752))
+* Implemented a **UI change** to include the **“Ignore Warnings”** option in both the **prevalidation commit** and **merge flows**. This requires a documentation change. See ticket for more details.&#x20;
 * **Error: “\[Client] getting frequent page unresponsive errors in ARM":** \
   Introduced a UI change to support Salesforce orgs and the **previous label deployment type** in the deployment module.&#x20;
-* Performed a code fix affecting the Deployments module related to a use-case error with the client **getting frequent page unresponsive errors** in ARM. This also requires an update in our documentation. Further information is in the ticket. (#[76686](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000118035193))
+* Performed a code fix affecting the Deployments module related to a use-case error with the client **getting frequent page unresponsive errors** in ARM. This also requires an update in our documentation. Further information is in the ticket.&#x20;
 * **Error: “Branching baseline is not picking all components from production":** Based on the customer-confirmed downtime window, it was necessary to enable the "**METADATA\_API\_TO\_DX\_CONVERSION**" **feature flag** for this fix deployment.&#x20;
-* Performed a code fix concerning the Admin module due to an error with a branching baseline not picking all components from production with feature flag error: **‘METADATA\_API\_TO\_DX\_CONVERSION’**. (#[70720](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000110077004))
+* Performed a code fix concerning the Admin module due to an error with a branching baseline not picking all components from production with feature flag error: **‘METADATA\_API\_TO\_DX\_CONVERSION’**.&#x20;
 * Error in **CodeScan Plugin pop-up window** where the user was **unable to type text in Org key drop-down selection field**, which required a code fix to the Admin module. (Internal ticket)
-* Performed a code fix related to a use-case error during **Vlocity deployments showing "NoOrgFoung" after activation** of **LWC components**. Fix applied to the CI Jobs and Deployment modules. (#[80889](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122945248))
-* Code fix applied to SFDX module for the user receiving an error message showing **login failed**. Also related to CI Jobs, **scratch org creation was being struck in progress** and **not able to be deleted**. (#[80194](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121706559), #[80654](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122572895))&#x20;
-* Applied a code fix for the Version Control module related to a user being **unable to select the ALM side, getting a JAVA error**. (#[81016](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123430353))
-* Initiated a code fix to the **Deployments** module related to an error during an **EZ deployment from a single revision with profiles and comp-specific changes pulling all comps**. (#[77186](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000118579246))&#x20;
-* Executed a code fix to the Deployments module on a use-case error affecting an **AR deployment initiated using Org Synchronization failing**. (#[80987](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123390046))
-* Applied a code fix related to the following use-case error: **\[Cijobs-DXModulePckagecreation] facing the "\["An unexpected error occurred while preparing endpoint: null. Please contact Salesforce Support and provide the following error code: 795089467-5806 (-1215335089)"]**. (Internal ticket)
-* Initiated a code fix to the **nCino** module for a client use-case error concerning **spread template issues**. (#[79812](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121167328))
-* Performed a code fix for a customer use-case scenario regarding an error related to an **nCino CI job deployment issue**. (#[80908](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000123110001))
+* Performed a code fix related to a use-case error during **Vlocity deployments showing "NoOrgFoung" after activation** of **LWC components**. Fix applied to the CI Jobs and Deployment modules.&#x20;
+* Code fix applied to SFDX module for the user receiving an error message showing **login failed**. Also related to CI Jobs, **scratch org creation was being struck in progress** and **not able to be deleted**.&#x20;
+* Applied a code fix for the Version Control module related to a user being **unable to select the ALM side, getting a JAVA error**.&#x20;
+* Initiated a code fix to the **Deployments** module related to an error during an **EZ deployment from a single revision with profiles and comp-specific changes pulling all comps**. &#x20;
+* Executed a code fix to the Deployments module on a use-case error affecting an **AR deployment initiated using Org Synchronization failing**.&#x20;
+* Applied a code fix related to the following use-case error: **\[Cijobs-DXModulePckagecreation] facing the "\["An unexpected error occurred while preparing endpoint: null. Please contact Salesforce Support and provide the following error code: 795089467-5806 (-1215335089)"]**.&#x20;
+* Initiated a code fix to the **nCino** module for a client use-case error concerning **spread template issues**.&#x20;
+* Performed a code fix for a customer use-case scenario regarding an error related to an **nCino CI job deployment issue**.&#x20;
 
 #### 20 August 2023
 
 **(ARM v22.3.35)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Performed a code fix impacting the Deployments and CI Jobs modules related to use cases in which **selected test classes for production were not running** and users were having **code coverage issues**. (#[80369](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122191173), #[80448](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122253601), #[80458](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122273087), #[80477](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122309287), #[80527](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122316197), #[80522](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122373021))
-* Performed a code fix for the Admin module related to a specific user having difficulty with **PWD policy**. (#[80330](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122140220))
-* Performed a code fix to the CI Jobs and Deployment modules relating to users **unable to deploy changes to production orgs** due to a **CI Jobs coding issue**. (#[80536](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122383051), #[80552](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122316379), #[80495](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122308412))
-* Performed a code fix to the CI Jobs module related to an **error message as login failed**. (#[80194](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121706559), #[80654](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000122572895))
-* Performed a code fix on the CI Jobs module pertaining to **Vlocity SFI components not compiling LWC on destination orgs when deploying via CI Jobs**. (#[80207](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121738013))
-* Performed a code fix related to the CI Jobs module for **CI Job not starting according to schedule**. (#[80215](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121738181))
-* Performed a code fix related to the CI Jobs module to resolve an error related to **setting up SFDX deployment and CI Job configuration**. (#[76649](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000117914023), #[78757](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120251365))
-* Performed a code fix to the **nCino** module for an error in which the **screen template failed** with a **malformed query exception**. (Internal ticket)
+* Performed a code fix impacting the Deployments and CI Jobs modules related to use cases in which **selected test classes for production were not running** and users were having **code coverage issues**.&#x20;
+* Performed a code fix for the Admin module related to a specific user having difficulty with **PWD policy**.&#x20;
+* Performed a code fix to the CI Jobs and Deployment modules relating to users **unable to deploy changes to production orgs** due to a **CI Jobs coding issue**.&#x20;
+* Performed a code fix to the CI Jobs module related to an **error message as login failed**.&#x20;
+* Performed a code fix on the CI Jobs module pertaining to **Vlocity SFI components not compiling LWC on destination orgs when deploying via CI Jobs**.&#x20;
+* Performed a code fix related to the CI Jobs module for **CI Job not starting according to schedule**.&#x20;
+* Performed a code fix related to the CI Jobs module to resolve an error related to **setting up SFDX deployment and CI Job configuration**.&#x20;
+* Performed a code fix to the **nCino** module for an error in which the **screen template failed** with a **malformed query exception**.&#x20;
 
 #### 13 August 2023
 
@@ -209,109 +209,109 @@ This is a maintenance release. The following items were fixed and/or added:
 
 This is a maintenance release. The following items were fixed and/or added:
 
-* Performed a code fix pertaining to all modules relating to an **SFDX to SF CLI Hotfix**. (Internal ticket – SF CLI change request), KB (404.42)
-* Performed a code fix relating to **version control, CI jobs, and deployment modules initiated via change request due to ALM working items not loading**, resolved by enabling the customer domain name. (#[78713](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120177935), #[78770](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120391001))
-* Performed a code fix for a data error with **feature flag name, ‘Disable\_Merge\_Rename\_Detection’** after a merge was failing and took hours to complete. (#[75699](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000116278001))
-* Performed a code fix for the version control, CI jobs, and deployment modules pertaining to a data error, **validation failing for the LWC component despite no error message being displayed in the logs**. (#[80040](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121279342), #[80130](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121636003), #[80074](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121502067))
-* Performed a code fix related to a use-case error in the version control module pertaining to a **commit showing a “no modification” error**. (#[80045](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121428857))
-* Performed a code fix related to a use-case error affecting the version control, CI jobs, and deployment modules caused by an **error merging a commit from the dev environment to the INT environment**. (#[78654](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120124760))
-* Performed a code fix to the version control module resulting from a use-case error where the **commit was incorrectly showing “no modification”**. (#[79376](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120660059))
-* Performed a code fix related to a data error pertaining to the version control module, when **Jira integration stories redeploy post sandbox refresh**. (#[76964](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000118243728))
-* Performed a code fix for a use-case error in the deployment module related to **filter-based retrievals not working when applying the ‘created by,’ ‘modified by,’ ‘created date,’ and ‘modified date’ filters**. (Internal ticket)
-* Performed a code fix related to a performance issue in the nCino module pertaining to **Spread Template** issues. (#[79812](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000121167328))
-* Fixed an error in the deployment module when ‘**Run Specified Tests**’ is selected from the Apex Test Level dropdown. (#[77254](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000118619964))
-* Rather than a code fix, a **customer-specific utility** was provided to address **SSO login issues** in the admin module. This particular utility only works in **versions 22.3.9** or lower for one individual customer. (#[79567](https://support.autorabit.com/agent/autorabit/autorabit/tickets/details/241415000120848004))
+* Performed a code fix pertaining to all modules relating to an **SFDX to SF CLI Hotfix**.&#x20;
+* Performed a code fix relating to **version control, CI jobs, and deployment modules initiated via change request due to ALM working items not loading**, resolved by enabling the customer domain name.&#x20;
+* Performed a code fix for a data error with **feature flag name, ‘Disable\_Merge\_Rename\_Detection’** after a merge was failing and took hours to complete.&#x20;
+* Performed a code fix for the version control, CI jobs, and deployment modules pertaining to a data error, **validation failing for the LWC component despite no error message being displayed in the logs**.&#x20;
+* Performed a code fix related to a use-case error in the version control module pertaining to a **commit showing a “no modification” error**.&#x20;
+* Performed a code fix related to a use-case error affecting the version control, CI jobs, and deployment modules caused by an **error merging a commit from the dev environment to the INT environment**.&#x20;
+* Performed a code fix to the version control module resulting from a use-case error where the **commit was incorrectly showing “no modification”**.&#x20;
+* Performed a code fix related to a data error pertaining to the version control module, when **Jira integration stories redeploy post sandbox refresh**.&#x20;
+* Performed a code fix for a use-case error in the deployment module related to **filter-based retrievals not working when applying the ‘created by,’ ‘modified by,’ ‘created date,’ and ‘modified date’ filters**.&#x20;
+* Performed a code fix related to a performance issue in the nCino module pertaining to **Spread Template** issues.
+* Fixed an error in the deployment module when ‘**Run Specified Tests**’ is selected from the Apex Test Level dropdown.&#x20;
+* Rather than a code fix, a **customer-specific utility** was provided to address **SSO login issues** in the admin module. This particular utility only works in **versions 22.3.9** or lower for one individual customer.&#x20;
 
 #### 06 August 2023
 
 **(ARM v22.3.33)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an error under reports where **code coverage emails** were **missing information**. (#78755)
-* Fixed an error related to a **second deployment** starting in the middle of a deployment. (#78814)
-* Fixed an error in version control module related to **not being able to commit or Repush changes** in the **Training Branch**. (#79294)
+* Fixed an error under reports where **code coverage emails** were **missing information**.&#x20;
+* Fixed an error related to a **second deployment** starting in the middle of a deployment.&#x20;
+* Fixed an error in version control module related to **not being able to commit or Repush changes** in the **Training Branch**.&#x20;
 * Fixed an error in version control module related to a feature flag: **USE\_PATCH\_LOGIC\_IN\_EZCOMMIT** for\
-  **Code overwritten** (feature not enabled by default). (#77649)
-* Fixed an error for CI Job module where **ALM-enabled failed due to Unparsable date error**. (#79316)
-* Fixed an error concerning **multiple CI Jobs failing due to data error**. (#79400)
-* Fixed an error related to the Deployment, CI Jobs, and Version Control modules occurring when **merging a commit from dev environment to INT environment**. (#78654)
-* Fixed an error related to deployments getting **frequent page unresponsive errors** in ARM. (#76686)
-* Fixed an error under the Admin module relating to being **unable to select the revision number while creating the Tag**. (Internal case)
-* Fixed an error for **Create and Install Package** CI job deployment failing if having multiple package directories on the branch. (Internal case)
-* Fixed an error under the Admin module, **My Account >> Merge Settings: Not visible Border for "Notify All Criteria Overwrites To"** field. (Internal case)
-* Fixed an error under the Admin module, which enabled **Domain names to be visible in the inspect mode**. (Internal case)
-* Fixed an error in the nCino module related to **\[ARM-QAN] attachments’** deployment Failed with Bulk API. (Internal case)
-* Fixed an error in the nCino module related to a **Pricebook** entry. (#77421)
-* Fixed an error related to the nCino module with **scheduled Job not showing up in UI** after completion due to **Deploy Status Not Updated**. (Internal case)
-* Fixed an error related to the nCino module with a **CI Job Edit not populating with scheduled time details**. (Internal case)
+  **Code overwritten** (feature not enabled by default).
+* Fixed an error for CI Job module where **ALM-enabled failed due to Unparsable date error**.&#x20;
+* Fixed an error concerning **multiple CI Jobs failing due to data error**.&#x20;
+* Fixed an error related to the Deployment, CI Jobs, and Version Control modules occurring when **merging a commit from dev environment to INT environment**.&#x20;
+* Fixed an error related to deployments getting **frequent page unresponsive errors** in ARM.&#x20;
+* Fixed an error under the Admin module relating to being **unable to select the revision number while creating the Tag**.&#x20;
+* Fixed an error for **Create and Install Package** CI job deployment failing if having multiple package directories on the branch.&#x20;
+* Fixed an error under the Admin module, **My Account >> Merge Settings: Not visible Border for "Notify All Criteria Overwrites To"** field.&#x20;
+* Fixed an error under the Admin module, which enabled **Domain names to be visible in the inspect mode**.&#x20;
+* Fixed an error in the nCino module related to **\[ARM-QAN] attachments’** deployment Failed with Bulk API.&#x20;
+* Fixed an error in the nCino module related to a **Pricebook** entry.&#x20;
+* Fixed an error related to the nCino module with **scheduled Job not showing up in UI** after completion due to **Deploy Status Not Updated**.&#x20;
+* Fixed an error related to the nCino module with a **CI Job Edit not populating with scheduled time details**.&#x20;
 
 #### 30 July 2023 <a href="#23-july-2023" id="23-july-2023"></a>
 
 **(ARM v22.3.32)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an issue with **duplicate** not working on **EZ-merge** requests related to **version control**. (#77808)
-* Fixed EZ deployments from a single revision with profiles **comp-specific changes pulling all comps** during deployments. (#77186)
-* Fixed an error related to **CI Jobs** not running the pipeline. (#78308)
-* Fixed situations with both **version control prevalidation commit and merge** where static code analysis processes are stuck in an **In-progress** state when VNC is not started. (Internal request)
-* Helped generate the reports for CI/CD pipelines for **nCino reports**. (#78673)
-* Performed Jira integration story’s redeploy **post-sandbox refresh** in version control. (#76964)
-* Fixed a specified metadata type is unsupported: **\[processflowmigration]** error in CI Jobs. (#78731)
-* Set up the **SFDX Deployment** in CI Jobs. (#76649)
-* Fixed an error with a **CI Job** not identifying changes. (#77272)
-* Fixed an error related to BHG with **CI Job webhooks** failing to trigger. (#78722)
-* Performed **nCino AR template** updates. (#77277)
+* Fixed an issue with **duplicate** not working on **EZ-merge** requests related to **version control**.&#x20;
+* Fixed EZ deployments from a single revision with profiles **comp-specific changes pulling all comps** during deployments.&#x20;
+* Fixed an error related to **CI Jobs** not running the pipeline.&#x20;
+* Fixed situations with both **version control prevalidation commit and merge** where static code analysis processes are stuck in an **In-progress** state when VNC is not started.&#x20;
+* Helped generate the reports for CI/CD pipelines for **nCino reports**.&#x20;
+* Performed Jira integration story’s redeploy **post-sandbox refresh** in version control.&#x20;
+* Fixed a specified metadata type is unsupported: **\[processflowmigration]** error in CI Jobs.&#x20;
+* Set up the **SFDX Deployment** in CI Jobs.&#x20;
+* Fixed an error with a **CI Job** not identifying changes.
+* Fixed an error related to BHG with **CI Job webhooks** failing to trigger.&#x20;
+* Performed **nCino AR template** updates.&#x20;
 
 #### 23 July 2023 <a href="#23-july-2023" id="23-july-2023"></a>
 
 **(ARM v22.3.31)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an issue with a merge use case of handling **deleted files** in both source and target branches by using **git rm** command (#77154).
-* Fixed an issue where screen redirects to login page on clicking on **User activation email** (internal ticket).
-* Fixed an issue where **Commit stuck in InProgress** (#75267).
-* Fixed an issue where we receive **“JAXB marshall/unmarshall exception”** while getting directed to CI results screen (internal ticket).
-* Fixed an issue where **Release labels are taking 30 minutes** or more to be available for repository in Version control (#76952, #76505, and #77765).
-* Fixed an issue where **Merges are taking a long time** to complete in version control (#75706).
-* Fixed an issue where components selected on review component pages were being repeated in the next category in **Version Control** (#77985).
-* Fixed an issue where same name should be reflected instead of **Commit showing a different name in Bitbucket** in Version Control (#76943).
-* Fixed an issue where **JIRA ALM Filter mappings not working** in My profile & Version Control (#78213).
-* Fixed an issue where the **Login rate exceeded error** on the Salesforce Integration user (#76178).
-* Fixed an issue where **Backup to Version Control** is not backing up **Matching Rules** in Salesforce in CI jobs (#76421).
-* Fixed an issue where the shared server with common DB creates another customer weekly report in another server (internal).
-* Fixed an issue where **Custom field property** didn’t deploy in CI Jobs and Deployment (#76580).
-* Fixed an issue where **Diff report** is not generated in New Deployment Module (#77763).
-* Fixed an issue where **Unsupported metadata template** execution is failing in **Sandbox Refresh** in **Environment Provisioning** module (#77938).
-* Enhanced **DataLoader uber jar upgrade to 58.0.3** (internal ticket).
-* Fixed an issue where we are facing **Record Configuration** Time Out in nCino (#74494).
-* Enhanced UI in **Post Deployment** activities result page in CI Job – nCino (internal ticket).
-* Enhanced the **View details page** not being visible unless post-deployment activities are completed – nCino (internal ticket).
+* Fixed an issue with a merge use case of handling **deleted files** in both source and target branches by using **git rm** command.
+* Fixed an issue where screen redirects to login page on clicking on **User activation email**.
+* Fixed an issue where **Commit stuck in InProgress**.
+* Fixed an issue where we receive **“JAXB marshall/unmarshall exception”** while getting directed to CI results screen.
+* Fixed an issue where **Release labels are taking 30 minutes** or more to be available for repository in Version control.
+* Fixed an issue where **Merges are taking a long time** to complete in version control.
+* Fixed an issue where components selected on review component pages were being repeated in the next category in **Version Control**.
+* Fixed an issue where same name should be reflected instead of **Commit showing a different name in Bitbucket** in Version Control.
+* Fixed an issue where **JIRA ALM Filter mappings not working** in My profile & Version Control.
+* Fixed an issue where the **Login rate exceeded error** on the Salesforce Integration user.
+* Fixed an issue where **Backup to Version Control** is not backing up **Matching Rules** in Salesforce in CI jobs.
+* Fixed an issue where the shared server with common DB creates another customer weekly report in another server.
+* Fixed an issue where **Custom field property** didn’t deploy in CI Jobs and Deployment.
+* Fixed an issue where **Diff report** is not generated in New Deployment Module.
+* Fixed an issue where **Unsupported metadata template** execution is failing in **Sandbox Refresh** in **Environment Provisioning** module.
+* Enhanced **DataLoader uber jar upgrade to 58.0.3**.
+* Fixed an issue where we are facing **Record Configuration** Time Out in nCino.
+* Enhanced UI in **Post Deployment** activities result page in CI Job – nCino.
+* Enhanced the **View details page** not being visible unless post-deployment activities are completed – nCino.
 
 #### 18 June 2023 <a href="#18-june-2023" id="18-june-2023"></a>
 
 **(ARM v22.3.26)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Enhanced ARM by allowing **PAT Authentication** for **Jira** ([#54997](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000089278152)).
-* Fixed an issue where user ran an **Org Synchronization** history job and tried to access the **Diff** report to see the metadata difference, but the page kept loading indefinitely without the required diff ([#74728](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000114618019)).
-* Upgraded **Provar** to **version 2.10.1** ([#73448](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113717007)).
-* Fixed an issue where the **Approval** option wasn't functional for **L1 Approvers**, and the **Org Admin** couldn't bypass the approval gate on EZ-Merge ([#75095](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000115190464), [#75136](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000115291192), and [#75200](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000115393013)).
-* Fixed an issue with **nCino**where user created a **Feature** deployment task, but the jobs were stuck the queue ([#73528](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113859033)).
-* Introduced a new feature in **DataLoader** called **Hard Delete** which can be used to delete the data completely and permanently instead of sending it to the **Recycle Bin** of the org ([#74545](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000114442181)).
-* Fixed an issue where **CI Job build** history was not displaying the results and throwing a blank page instead (internal ticket).
-* Fixed a UI bug where **Abort** option for CI job was displaying even after the build was successful (internal ticket).
-* Fixed an issue where duplicate ALM Commit entries were Displaying while performing ALM Commit with Vlocity repository (internal ticket).
-* Fixed an issue where the CI edit configuration screen was taking longer to load than expected before throwing `Page Unresponsive` alert (internal ticket).
-* Fixed an issue with **DataLoader Pro** where user created a new job and applied filter, but the source and destination orgs are taken from history page (internal ticket).
-* Fixed an issue with **DataLoader** where **Insert** operation bulk API selection was resulting in console error message `serializeToString` (internal ticket).
-* Fixed an issue where **Vlocity** metadata components were getting expanded on the **Finish** page (internal ticket).
+* Enhanced ARM by allowing **PAT Authentication** for **Jira**.
+* Fixed an issue where user ran an **Org Synchronization** history job and tried to access the **Diff** report to see the metadata difference, but the page kept loading indefinitely without the required diff.
+* Upgraded **Provar** to **version 2.10.1**.
+* Fixed an issue where the **Approval** option wasn't functional for **L1 Approvers**, and the **Org Admin** couldn't bypass the approval gate on EZ-Merge.
+* Fixed an issue with **nCino** where user created a **Feature** deployment task, but the jobs were stuck the queue.
+* Introduced a new feature in **DataLoader** called **Hard Delete** which can be used to delete the data completely and permanently instead of sending it to the **Recycle Bin** of the org.
+* Fixed an issue where **CI Job build** history was not displaying the results and throwing a blank page instead.
+* Fixed a UI bug where **Abort** option for CI job was displaying even after the build was successful.
+* Fixed an issue where duplicate ALM Commit entries were Displaying while performing ALM Commit with Vlocity repository.
+* Fixed an issue where the CI edit configuration screen was taking longer to load than expected before throwing `Page Unresponsive` alert.
+* Fixed an issue with **DataLoader Pro** where user created a new job and applied filter, but the source and destination orgs are taken from history page.
+* Fixed an issue with **DataLoader** where **Insert** operation bulk API selection was resulting in console error message `serializeToString`.
+* Fixed an issue where **Vlocity** metadata components were getting expanded on the **Finish** page.
 
 #### 11 June 2023 <a href="#11-june-2023" id="11-june-2023"></a>
 
 **(ARM v22.3.25)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an issue where deployment failed with the error message `File cannot be loaded` ([#73583](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113995080)).
+* Fixed an issue where deployment failed with the error message `File cannot be loaded`.
 * Fixed an issue where the **SharingCriteriaRule** component was not deployed to Production even though the user had selected it ([#73824](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000114206402)).
 * Fixed an issue where the **SharingReasons** component was ignored when the deployment/validation was done using **Commit Label** as source, but the same component was processed using **Single Revision** deployment or **CI Job** deployment ([#72073](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000112029001)).
 * Fixed an issue where user was trying to create an connect an **Active Directory** but it kept failing ([#73582](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113941053)).

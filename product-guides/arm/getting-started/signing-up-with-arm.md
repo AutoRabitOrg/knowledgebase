@@ -7,10 +7,17 @@ The ARM signup and activation process has several steps— some on our end and o
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844592745.png" alt=""><figcaption></figcaption></figure>
-3.  Fill in the registration details, and then click **`Register`**.\
 
+Password Requirements:&#x20;
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844640885.png" alt=""><figcaption></figcaption></figure>
+* Must be at least **10 characters**
+* Must include at least **1 letter**, **1 number,** **1 lower case letter,** and **1 upper case letter**
+* Must **not** include **& < > ' \\" + = | \\\ ; ? , . \` {} \[] characters**
+
+3\. Fill in the registration details, and then click **`Register.`**
+
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844640885.png" alt=""><figcaption></figcaption></figure>
+
 4. Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process, we will send you an email with details on your activation status.&#x20;
 5. When your account is activated, you will get a confirmation sent to your email address.&#x20;
 

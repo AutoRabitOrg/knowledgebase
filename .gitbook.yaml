@@ -516,3 +516,5 @@ structure:
     vault/docs/backup: product-guides/vault/vault-features/backup.md
     vault/docs/replicate: product-guides/vault/vault-features/replicate.md
     vault/docs/configuring-vault: product-guides/vault/configuring-vault.md
+    readme: README.md  
+    summary: SUMMARY.md​

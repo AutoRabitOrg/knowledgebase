@@ -30,3 +30,15 @@ When creating a [Vault™](https://www.autorabit.com/products/vault-data-backup-
 1. The time it takes to receive the activation email can vary. If you haven't received the activation email, check your **spam folder.**&#x20;
 2. If your account is not activated at this stage, you'll receive an email explaining the reason(s) why and the next steps you can take.
 {% endhint %}
+
+**Password Requirements**
+
+New passwords must meet the following criteria:
+
+* **MUST** contain at least **8 characters (10+ recommended)**
+* **MUST** contain at least **one uppercase letter (A-Z)**
+* **MUST** contain at least **one lowercase letter (a-z)**
+* **MUST** contain at least **one number (0-9)**
+* **MUST** contain at least **one special character (!, %, @, <, >, #)**
+* **MUST NOT** contain: an **email** address; **first, middle,** or **last name**; or **commonly used** passwords
+* **MUST NOT** be one of the **13 previously used passwords**

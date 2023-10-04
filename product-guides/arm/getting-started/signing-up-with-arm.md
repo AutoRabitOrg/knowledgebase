@@ -32,7 +32,8 @@ The ARM login screen allows you to log in to your instance.
 ## Password Requirements
 
 * Must be at least **10 characters**
-* Must include at least **1 letter**, **1 number,** **1 lower case letter,** and **1 upper case letter**
+* Must include at least **1 number (0-9)**
+* Must include **1 lowercase letter (a-z)** and **1 uppercase letter (A-Z)**
 * Must **not** include **& < > ' \\" + = | \\\ ; ? , . \` {} \[] characters**
 * Must be different from the last **5** **previously used passwords**
 

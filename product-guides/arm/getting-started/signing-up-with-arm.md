@@ -8,12 +8,6 @@ The ARM signup and activation process has several steps— some on our end and o
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844592745.png" alt=""><figcaption></figcaption></figure>
 
-Password Requirements:&#x20;
-
-* Must be at least **10 characters**
-* Must include at least **1 letter**, **1 number,** **1 lower case letter,** and **1 upper case letter**
-* Must **not** include **& < > ' \\" + = | \\\ ; ? , . \` {} \[] characters**
-
 3\. Fill in the registration details, and then click **`Register.`**
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844640885.png" alt=""><figcaption></figcaption></figure>
@@ -34,6 +28,13 @@ The ARM login screen allows you to log in to your instance.
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485392349.png" alt="" width="375"><figcaption></figcaption></figure>
+
+## Password Requirements
+
+* Must be at least **10 characters**
+* Must include at least **1 letter**, **1 number,** **1 lower case letter,** and **1 upper case letter**
+* Must **not** include **& < > ' \\" + = | \\\ ; ? , . \` {} \[] characters**
+* Must be different from the last **5** **previously used passwords**
 
 ## Logging Out <a href="#logging-out" id="logging-out"></a>
 

@@ -210,7 +210,6 @@ structure:
     docs/arm-release-notes-222: overview/release-notes/arm-release-notes/release-notes-22.2.md
     docs/enablesalesforcetosalesforce: product-guides/arm/arm-features/enablesalesforcetosalesforce.md
     docs/errors: product-guides/arm/errors.md
-    docs/git: product-guides/arm/arm-administration/registration/version-control-repository/git-integration.md
     docs/how-does-taf-accelerate-test-automation-and-reduce-costs: product-guides/arm/how-does-taf-accelerate-test-automation-and-reduce-costs.md
     docs/reports-overview: product-guides/arm/arm-features/audit-report-overview.md
     docs/ci-job-list-screen: product-guides/arm/ci-job-list-screen.md
@@ -269,7 +268,6 @@ structure:
     docs/schedule-weekly-apex-class-job: product-guides/arm/scheduleapexclassesweekly.md
     docs/delete-time-based-workflow: product-guides/arm/arm-features/timebasedworkflow.md
     docs/jenkins: product-guides/codescan/codescan-integration/jenkins.md
-    docs/codescan: product-guides/codescan.md
     docs/ncino-feature-commits: product-guides/arm/feature-commits.md
     docs/ez-merge: product-guides/arm/arm-features/ez-merge.md
     docs/schedule-monthly-apex-class-job: product-guides/arm/scheduleapexclassesmonthly.md
@@ -279,12 +277,9 @@ structure:
     docs/arm-merge-approval: product-guides/arm/merge-approvals.md
     docs/azure-devops: product-guides/arm/azure-devops.md
     docs/test-environments-setup: product-guides/arm/arm-features/test-environment-setup.md
-    docs/enablesalesforcetosalesforce: product-guides/arm/arm-features/enablesalesforcetosalesforce.md
-    docs/arm-workspaces: product-guides/arm/workspaces.md
     docs/webhooks: product-guides/arm/webhooks.md
     docs/vlocity: product-guides/arm/vlocity.md
     docs/feature-deployment: product-guides/arm/feature-deployment-summary.md
-    docs/salesforce-org-management: product-guides/arm/arm-features/salesforce-org-management.md
     docs/automation-and-ci: product-guides/arm/automation-and-ci.md
     docs/arm-support: product-guides/arm/troubleshoot/contact-arm-support.md
     docs/dataloader: product-guides/arm/dataloader.md
@@ -296,7 +291,6 @@ structure:
     docs/web-to-lead: product-guides/arm/arm-features/webtolead.md
     docs/external-pull-request: product-guides/arm/arm-features/external-pull-request.md
     docs/checkmarx: product-guides/arm/sca-for-checkmarx.md
-    docs/arm-subscription-management: product-guides/arm/subscription-management.md
     docs/opportunity-update-reminders: product-guides/arm/arm-features/editreminder.md
     docs/version-control-branch: product-guides/arm/arm-features/version-control/version-control-branch.md
     docs/version-control-overview: product-guides/arm/arm-features/version-control/introduction-to-version-control.md
@@ -305,7 +299,6 @@ structure:
     docs/registration: product-guides/arm/arm-administration/registration.md
     docs/jira: product-guides/arm/arm-features/jira.md
     docs/feature-migration: product-guides/arm/feature-migration-summary-page.md
-    docs/static-code-analysis-in-ci-cd-1: product-guides/arm/static-code-analysis-in-ci-cd.md
     docs/apex-pmd: product-guides/arm/apex-pmd.md
     docs/visual-code-extension: product-guides/arm/installing-vs-code-extension.md
     docs/ncino: product-guides/arm/ncino.md
@@ -516,5 +509,4 @@ structure:
     vault/docs/backup: product-guides/vault/vault-features/backup.md
     vault/docs/replicate: product-guides/vault/vault-features/replicate.md
     vault/docs/configuring-vault: product-guides/vault/configuring-vault.md
-    readme: README.md  
-    summary: SUMMARY.md​
+

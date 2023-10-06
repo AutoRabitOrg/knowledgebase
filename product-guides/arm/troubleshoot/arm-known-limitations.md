@@ -27,6 +27,7 @@ This section summarizes the deployment limits that ARM users should consider:
 8. Due to current ARM behavior, an **object file** is considered as a **destructive change** in deployment if the object file does not exist in the branch, you commit only a field (child), and then the newly committed field is deleted from the branch. This is the case only for **Metadata API** code, not for **SFDX**.
 9. In case of **Vlocity Custom Deployment**, if the **Access Key** for **Local Compilation** is incorrect, ARM is unable to capture it in the logs.
 10. In **Compare Org and Deploy functionality**, a file diff will not be generated between the source and the target for **Bot Version files**.
+11. If a user uses the **SFDX extension** in a **non-SFDX repository** for any metadata type, then it will not be displayed in UI as a **metadata change** and won't be picked up for deployment in **package.XML**, but the file contents will stay in the promotional **ZIP** file.
 
 ### Version Control Known Limitations <a href="#version-control-known-limitations" id="version-control-known-limitations"></a>
 

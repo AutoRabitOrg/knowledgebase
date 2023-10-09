@@ -1,10 +1,12 @@
 # Common Event Format (CEF) Data
 
-CEF is a text-based log format developed by ArcSight™. It uses Syslog as transport. The full format includes a Syslog header or "prefix," a CEF "header," and a CEF "extension." The extension contains a list of key-value pairs. Standard key names are provided, and user-defined extensions can be used for additional key names.
+Common Event Format (CEF) is a standardized logging format developed by ArcSight (now part of Micro Focus), a security information and event management (SIEM) solution provider. CEF is designed to simplify the process of logging security-related events, making it easier to integrate logs from different sources into a single system.&#x20;
+
+CEF is a text-based log format that uses Syslog as transport, which is standard for message logging, and is supported by most network devices and operating systems. The full format includes a Syslog header or "prefix," a CEF "header," and a CEF "extension." The extension contains a list of key-value pairs. Standard key names are provided, and user-defined extensions can be used for additional key names.&#x20;
 
 ### CEF Standard and Custom Key <a href="#cef-standard-and-custom-key" id="cef-standard-and-custom-key"></a>
 
-This table displays the CEF names along with the full names for each CEF key. It is the key name that is required in events.
+This table displays CEF names along with full names for each CEF key. It is the key name that is required in events.
 
 | Key Name                | Full Name                                      | Key Type | Module                                | Data Type    | Length | Description                                                                                                                                                                                                                                                                                                  |
 | ----------------------- | ---------------------------------------------- | -------- | ------------------------------------- | ------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

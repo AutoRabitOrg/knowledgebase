@@ -33,6 +33,9 @@ To register a Salesforce org with Vault, follow the steps below in sequence:
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664783197321.png" alt=""><figcaption></figcaption></figure>
 2. Finally, click on the **`Save`** button to complete the authentication process.
+3. When the user selects the '**Custom**' option under the '**Org Type**' dropdown, the following verbiage should be available in the information icon beside the '**Authenticate**' button **“Use only Salesforce Classic URL for the 'Instance URL'; Lightning URL is not supported.”**
+
+<figure><img src="../../../../.gitbook/assets/Add Note - Authenticate Button.png" alt=""><figcaption></figcaption></figure>
 
 ### What's Next? <a href="#whats-next" id="whats-next"></a>
 

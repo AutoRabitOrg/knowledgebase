@@ -509,6 +509,6 @@ redirects:
     vault/docs/backup: product-guides/vault/vault-features/backup.md
     vault/docs/replicate: product-guides/vault/vault-features/replicate.md
     vault/docs/configuring-vault: product-guides/vault/configuring-vault.md
-    vault/docs/vault-connect-user-guide: product-guides/vault/vault-features/vault-connect.md
+    vault/docs/vault-connect-user-guide: product-guides/vault/vault-features/vault-connect/README.md
     arm/docs/arm-release-notes-231: overview/release-notes/arm-release-notes/release-notes-23.1.md
 

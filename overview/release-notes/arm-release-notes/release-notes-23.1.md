@@ -67,7 +67,7 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 ### Enhancements
 
-**1. Salesforce Winter (API 57.0) & Spring (API 58.0) Support**\
+**1. Salesforce Spring (API 57.0) & Summer (API 58.0) Support**\
 AutoRABIT supports the most recent API 57.0 & API 58.0 versions in this release to keep our product updated with Salesforce updates. The most recent API version is intended for customizing and developing tools to manage the metadata model.
 
 [Read more](https://knowledgebase.autorabit.com/docs/salesforce-api-version)

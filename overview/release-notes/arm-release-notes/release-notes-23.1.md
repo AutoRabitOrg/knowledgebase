@@ -124,32 +124,32 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 
 This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
 
-* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the CI Jobs module concerning a package directory issue.
-* Applied a code fix to versions 22.3 and 23.1 due to a use-case scenario pertaining to the Environmental Provisioning module with users not able to generate a migration template using the migrate custom setting data module.&#x20;
-* Issued a code fix to versions 22.3 and 23.1 for a use-case error in the Version Control module with a custom label translation file.
-* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the Deployments module concerning bugs in deployment with multi-packages and static resource.
-* Instituted an enhancement via code fix to versions 22.3 and 23.1 affecting all ARM modules, applying Salesforce v.59 upgrade for Winter 2024.
-* Applied a code fix to version 22.3 resulting from a use-case error affecting Dataloader returning an 'invalid cross reference id' error for ProcessInput and ProcessingInputCondition objects.
-* Implemented a code fix to version 23.1 for a use-case error to the Version Control module, in which duplicate commits were being created.
-* Performed a code fix to version 23.1 for a use-case error to the Version Control module pertaining to Deployment history, with the deployment status not being visible.
-* Performed a code fix to version 23.1 relating to a use-case error affecting the nCino module in which users are unable to deploy nCino feature (RBC), instead returning a 'malformed query' result.
-* Performed a code fix to version 23.1 relating to a use-case error to the Version Control module with users unable to perform new pull request commit due to commit template permission.
-* Executed a code fix to version 23.1 relating to a use-case error affecting the Version Control module with users continually getting a login redirect error when trying to create a branch through an EZ-Commit.
-* Performed a code fix to version 23.1 relating to a use-case error in the Version Control module with users unable to create a commit label, continually getting a login redirect error.
-* Performed a code fix to version 23.1 relating to a use-case error affecting the Admin module, particularly a SuperAdmin user, not getting any response to the scheduler's service registration button without expanding the selection.
-* Initiated a code fix related to a use-case scenario in version 23.1 affecting the Version Control module with release labels getting failed after restarting the agent.
-* Applied a code fix related to a use-case scenario affecting version 23.1 in the nCino module, when parallel CI jobs limit was reached, the job was not added to the queue.
-* Performed a code fix to correct a use-case error in version 23.1 related to the nCino module for a merge missing changes.
-* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the Version Control module, in which users were unable to create/append a revision to an existing label for a sub-user.
-* Implemented a code fix to version 22.3 relating to a use-case error in the Version Control module in which the user was getting empty error pop-ups under the ALM management screen for a sub-user, not displaying the ALM items.
-* Performed a code fix to version 23.1 relating to a use-case error affecting the nCino module with a job deployment issue.
-* Applied a code fix to version 23.1 relating to a use-case error affecting the nCino module for a CI job build getting failed.
-* Initiated a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the nCino module for a 'no modifications status' displayed for a version control BR job.
+* Instituted an <mark style="background-color:blue;">**enhancement**</mark> via code fix to versions 22.3 and 23.1 affecting **all ARM modules**, applying **Salesforce v.59 upgrade** for **Winter 2024**.
+* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the **CI Jobs** module concerning a **package directory** issue.
+* Applied a code fix to versions 22.3 and 23.1 due to a use-case scenario pertaining to the **Environmental Provisioning** module with **users not able to generate** a **migration template** using the **migrate custom setting data module**.&#x20;
+* Issued a code fix to versions 22.3 and 23.1 for a use-case error in the **Version Control** module with a **custom label translation file**.
+* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the **Deployments** module concerning **bugs in deployment** with **multi-packages** and **static resource**.
+* Applied a code fix to version 22.3 resulting from a use-case error affecting **Dataloader** returning an '**invalid cross reference id**' error for **ProcessInput** and **ProcessingInputCondition** objects.
+* Implemented a code fix to version 23.1 for a use-case error to the **Version Control** module, in which **duplicate commits** were being created.
+* Performed a code fix to version 23.1 for a use-case error to the **Version Control** module pertaining to **Deployment history**, with the **deployment status not being visible**.
+* Performed a code fix to version 23.1 relating to a use-case error affecting the **nCino** module in which users are **unable to deploy nCino feature (RBC)**, instead returning a '**malformed query**' result.
+* Performed a code fix to version 23.1 relating to a use-case error to the **Version Control** module with users **unable to perform new pull request commit** due to **commit template permission**.
+* Executed a code fix to version 23.1 relating to a use-case error affecting the **Version Control** module with users continually **getting a login redirect error** when trying to **create a branc**h through an **EZ-Commit**.
+* Performed a code fix to version 23.1 relating to a use-case error in the **Version Control** module with users **unable to create a commit label**, continually getting a **login redirect** error.
+* Performed a code fix to version 23.1 relating to a use-case error affecting the **Admin** module, particularly a **SuperAdmin** user, not getting any response to the **scheduler's service registration button** without **expanding** the selection.
+* Initiated a code fix related to a use-case scenario in version 23.1 affecting the **Version Control** module with **release labels getting failed after restarting** the agent.
+* Applied a code fix related to a use-case scenario affecting version 23.1 in the **nCino** module, when **parallel CI jobs limit** was reached, the **job** was **not added** to the **queu**e.
+* Performed a code fix to correct a use-case error in version 23.1 related to the **nCino** module for a **merge missing changes**.
+* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the Version Control module, in which users were **unable to create/append a revision** to an **existing label** for a **sub-user**.
+* Implemented a code fix to version 22.3 relating to a use-case error in the **Version Control** module in which the user was getting **empty error pop-ups** under the **ALM management screen** for a **sub-user**, not displaying the **ALM item**s.
+* Performed a code fix to version 23.1 relating to a use-case error affecting the **nCino** module with a **job deployment** issue.
+* Applied a code fix to version 23.1 relating to a use-case error affecting the **nCino** module for a **CI job build getting failed**.
+* Initiated a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the **nCino** module for a '**no modifications status**' displayed for a **version control BR job**.
 
 #### 11 October 2023
 
-* Performed a code fix to versions 22.3 and 23.1 related to a use case scenario affecting the Version Control module related to ALM tickets being bugged after using the ALM sync refresh.
-* Performed a code fix to version 23.1 related to the Deployments and CI Jobs modules affecting a use-case error being issued during CI Deployment for property 'userLicense' not valid in version 57.0.
+* Performed a code fix to versions 22.3 and 23.1 related to a use case scenario affecting the **Version Control** module related to **ALM tickets** being **bugged** after using the **ALM sync refresh**.
+* Performed a code fix to version 23.1 related to the **Deployments** and **CI Jobs** modules affecting a use-case error being issued during **CI Deployment** for **property 'userLicense' not valid** in version 57.0.
 
 #### 8 October 2023
 

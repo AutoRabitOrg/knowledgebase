@@ -15,7 +15,7 @@ The '**Run Merge process on successful deployment**' feature keeps track of buil
 
 Users will be notified via email of the success or failure of the automated merge process.
 
-[Read more](https://knowledgebase.autorabit.com/docs/automatic-merging-when-ci-builds-pass)
+
 
 **2. Create and Install an Unlocked Package Version from a Version Control Branch**\
 Use ARM CI intelligence to create a package version, build using the SFDX project structure in a Version Control branch, and install the same in the destination org of your choice—all from the same page.
@@ -24,7 +24,7 @@ You can now generate an unlocked package version automatically through the CI jo
 
 When users create a CI job using this option, ARM checks the Version Control. If there is a change, it builds a new version on top of the packages. Once the package is created, then the deployment is triggered automatically.
 
-[Read more](https://knowledgebase.autorabit.com/docs/create-and-install-an-unlockedmanaged-package-version-from-a-version-control-branch)
+
 
 **3. Create Connected Apps**\
 ARM now gives access to users to create and maintain their OAuth credentials. Users can set up the **Connected Apps** for Jira OAuth and register the credentials with ARM.
@@ -33,7 +33,7 @@ You can add, edit, and delete your Jira login credentials instead of contacting 
 
 We use these details to connect as an ALM and test the connection.
 
-[Read more](about://knowledgebase.autorabit.com/docs/jira#creating-connected-apps)
+
 
 **4. RESTricted Emails**\
 The new **RESTricted Emails** section on the **Notifications** page of the Admin module helps ensure that ARM-related emails are not sent to deactivated users.
@@ -42,7 +42,7 @@ Admins can either add users to this list manually or deactivate the respective u
 
 There is also a provision for an Admin to remove all users from the **RESTricted Emails** list at once.
 
-[Read more](about://knowledgebase.autorabit.com/docs/configure-mail-server-settings#restricted-emails)
+
 
 **5. Dependency Analyzer**\
 Dependency Analyzer helps you understand the dependencies among various components in your Salesforce org. It allows you to analyze the relationships among objects, fields, classes, triggers, and other metadata components.

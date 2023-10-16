@@ -15,16 +15,12 @@ The '**Run Merge process on successful deployment**' feature keeps track of buil
 
 Users will be notified via email of the success or failure of the automated merge process.
 
-
-
 **2. Create and Install an Unlocked Package Version from a Version Control Branch**\
 Use ARM CI intelligence to create a package version, build using the SFDX project structure in a Version Control branch, and install the same in the destination org of your choice—all from the same page.
 
 You can now generate an unlocked package version automatically through the CI job, and as part of the deployment, it is deployed in the same build cycle. Until the 22.2 version, it picked the latest package version that was already successfully created in ARM.
 
 When users create a CI job using this option, ARM checks the Version Control. If there is a change, it builds a new version on top of the packages. Once the package is created, then the deployment is triggered automatically.
-
-
 
 **3. Create Connected Apps**\
 ARM now gives access to users to create and maintain their OAuth credentials. Users can set up the **Connected Apps** for Jira OAuth and register the credentials with ARM.
@@ -33,16 +29,12 @@ You can add, edit, and delete your Jira login credentials instead of contacting 
 
 We use these details to connect as an ALM and test the connection.
 
-
-
 **4. RESTricted Emails**\
 The new **RESTricted Emails** section on the **Notifications** page of the Admin module helps ensure that ARM-related emails are not sent to deactivated users.
 
 Admins can either add users to this list manually or deactivate the respective users from the **Users** page of the Admin module, and they will be automatically added to this list. These users will not receive ANY emails including deactivation, forgotten password, reset password, jobs executed in the application, etc. Admins can also use the same two methods to reactivate a user and remove them from this list.
 
 There is also a provision for an Admin to remove all users from the **RESTricted Emails** list at once.
-
-
 
 **5. Dependency Analyzer**\
 Dependency Analyzer helps you understand the dependencies among various components in your Salesforce org. It allows you to analyze the relationships among objects, fields, classes, triggers, and other metadata components.
@@ -70,8 +62,6 @@ ServiceNow will make information more easily accessible and workflows more strea
 **1. Salesforce Spring (API 57.0) & Summer (API 58.0) Support**\
 AutoRABIT supports the most recent API 57.0 & API 58.0 versions in this release to keep our product updated with Salesforce updates. The most recent API version is intended for customizing and developing tools to manage the metadata model.
 
-[Read more](https://knowledgebase.autorabit.com/docs/salesforce-api-version)
-
 **2. Exporting Selected User Details**\
 Users with Admin access can now choose the fields they want to include while exporting users' details to a CSV file.
 
@@ -79,12 +69,8 @@ While selecting the Export option, the list of available fields is displayed. Ad
 
 Thus, based on the teams with whom they will be shared, Admins can customize the fields in the list.
 
-[Read more](about://knowledgebase.autorabit.com/docs/users-roles-and-permissions#export-users)
-
 **3. More Info on CI Jobs and Info**\
 Users are now able to view the CI Jobs they created in the CI Job List screen to date inside ARM. The list is displayed in chronological order with the most recent jobs listed at the top.
-
-[Read more](about://knowledgebase.autorabit.com/docs/users-roles-and-permissions#export-users)
 
 **4. 'Created and Requested by' in Deployment UI**\
 Users are now able to view the ‘Created by’ and ‘Triggered by’ fields in the Deployment home screen without scrolling through multiple screens for this info, enabling monitoring of the deployment’s real-time progress.
@@ -107,8 +93,7 @@ In the Create Artifact section, users can now generate a Release Label and have 
 
 ### Improvements
 
-This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leveraging newer technologies, collectively resulting in a smoother and faster user experience.\
-
+This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leveraging newer technologies, collectively resulting in a smoother and faster user experience.
 
 ## nCino Release Notes 23.1 <a href="#ncino-release-notes-23-1" id="ncino-release-notes-23-1"></a>
 
@@ -131,13 +116,48 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 
 ## Changelogs
 
+#### 15 October 2023
+
+**(ARM v23.1.3)**
+
+**AutoRABIT provided the API 59.0 changes as part of its weekly fixes on both 22.3 and 23.1. This is available only for ARM modules, not for Dataloader or nCino. For DL and nCino, API 59.0 changes will be available next week as part of the Wednesday fixes deployment.**
+
+This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+
+* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the CI Jobs module concerning a package directory issue.
+* Applied a code fix to versions 22.3 and 23.1 due to a use-case scenario pertaining to the Environmental Provisioning module with users not able to generate a migration template using the migrate custom setting data module.&#x20;
+* Issued a code fix to versions 22.3 and 23.1 for a use-case error in the Version Control module with a custom label translation file.
+* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the Deployments module concerning bugs in deployment with multi-packages and static resource.
+* Instituted an enhancement via code fix to versions 22.3 and 23.1 affecting all ARM modules, applying Salesforce v.59 upgrade for Winter 2024.
+* Applied a code fix to version 22.3 resulting from a use-case error affecting Dataloader returning an 'invalid cross reference id' error for ProcessInput and ProcessingInputCondition objects.
+* Implemented a code fix to version 23.1 for a use-case error to the Version Control module, in which duplicate commits were being created.
+* Performed a code fix to version 23.1 for a use-case error to the Version Control module pertaining to Deployment history, with the deployment status not being visible.
+* Performed a code fix to version 23.1 relating to a use-case error affecting the nCino module in which users are unable to deploy nCino feature (RBC), instead returning a 'malformed query' result.
+* Performed a code fix to version 23.1 relating to a use-case error to the Version Control module with users unable to perform new pull request commit due to commit template permission.
+* Executed a code fix to version 23.1 relating to a use-case error affecting the Version Control module with users continually getting a login redirect error when trying to create a branch through an EZ-Commit.
+* Performed a code fix to version 23.1 relating to a use-case error in the Version Control module with users unable to create a commit label, continually getting a login redirect error.
+* Performed a code fix to version 23.1 relating to a use-case error affecting the Admin module, particularly a SuperAdmin user, not getting any response to the scheduler's service registration button without expanding the selection.
+* Initiated a code fix related to a use-case scenario in version 23.1 affecting the Version Control module with release labels getting failed after restarting the agent.
+* Applied a code fix related to a use-case scenario affecting version 23.1 in the nCino module, when parallel CI jobs limit was reached, the job was not added to the queue.
+* Performed a code fix to correct a use-case error in version 23.1 related to the nCino module for a merge missing changes.
+* Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the Version Control module, in which users were unable to create/append a revision to an existing label for a sub-user.
+* Implemented a code fix to version 22.3 relating to a use-case error in the Version Control module in which the user was getting empty error pop-ups under the ALM management screen for a sub-user, not displaying the ALM items.
+* Performed a code fix to version 23.1 relating to a use-case error affecting the nCino module with a job deployment issue.
+* Applied a code fix to version 23.1 relating to a use-case error affecting the nCino module for a CI job build getting failed.
+* Initiated a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the nCino module for a 'no modifications status' displayed for a version control BR job.
+
+#### 11 October 2023
+
+* Performed a code fix to versions 22.3 and 23.1 related to a use case scenario affecting the Version Control module related to ALM tickets being bugged after using the ALM sync refresh.
+* Performed a code fix to version 23.1 related to the Deployments and CI Jobs modules affecting a use-case error being issued during CI Deployment for property 'userLicense' not valid in version 57.0.
+
 #### 8 October 2023
 
 #### (ARM v23.1.2)
 
 This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
 
-* Performed a code fix to versions 22.3 and 23.1 for a use-case error affecting the **Admin** module relating to **code coverage issue**s.
+* Performed a code fix to versions 22.3 and 23.1 for a use-case error affecting the **Admin** module relating to **code coverage issues**.
 * Applied a code fix to versions 22.3 and 23.1 related to a use-case error in the **Deployments** module concerning a **flow component missed in the deployment**.   &#x20;
 * Implemented a code fix to versions 22.3 and 23.1 for a use-case error related to a specific customer’s fields for **redeployment**.
 * Applied a code fix to version 23.1 for a use-case error affecting the **Deployments** module related to **metadata production and a deployment issue**. &#x20;

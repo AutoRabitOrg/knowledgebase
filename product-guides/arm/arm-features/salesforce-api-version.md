@@ -1,14 +1,48 @@
 # Salesforce API version
 
-### Overview <a href="#overview" id="overview"></a>
-
-ARM's ability to support Salesforce Standard and Custom Objects is determined by the Salesforce API version used. ARM now supports the Salesforce **API 57.0** version, which means it can support any Salesforce standard or custom object that requires Salesforce API version 57.0 or earlier. &#x20;
+ARM's ability to support Salesforce Standard and Custom Objects is determined by the Salesforce API version used. ARM now supports the **Salesforce API 59.0 version**, which means it can support any Salesforce standard or custom object that requires Salesforce API version **59.0** or earlier.
 
 {% hint style="info" %}
-Important: Only users on an ARM shared instance will observe the changes since the Salesforce API version is being updated to 57.0 as part of weekly hotfixes to the shared instances only.
+Important: Only users on an ARM shared instance will see the changes since the Salesforce API version is being updated to **59.0** as part of weekly hotfixes to shared instances only.
 {% endhint %}
 
+**Troubleshooting:**
+
+Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment. Use Case:
+
+* **API version set in ARM: 59.0**
+* **Salesforce Org API version: 59.0**
+
 To identify which Salesforce API version you are on, please refer to the article: [Find Salesforce Edition and API version](https://help.salesforce.com/s/articleView?id=000334996\&type=1).
+
+#### Salesforce API Supported Metadata Types
+
+The following tables highlight the newly supported metadata types for each API version.
+
+Metadata types added as part of the **API 59** upgrade:
+
+| MetadataType                         | Extension     | FolderName                 |
+| ------------------------------------ | ------------- | -------------------------- |
+| ExternalClientApplication            | .eca          | externalClientApps         |
+| ExtlClntAppGlobalOauthSettings       | .ecaGlblOauth | extlClntAppGlobalOauthSets |
+| ExtlClntAppOauthConfigurablePolicies | .ecaOauthPlcy | extlClntAppOauthPolicies   |
+| ExtlClntAppOauthSettings             | .ecaOauth     | extlClntAppOauthSettings   |
+| FlowTransform                        | NA            | NA                         |
+
+Below is the List of Metadata types support added as part of **API 58** Release -
+
+| MetadataType                   | Extension                   | FolderName                      |
+| ------------------------------ | --------------------------- | ------------------------------- |
+| `AccountingFieldMapping`       | `.accountingFieldMapping`   | `accountingFieldMappings`       |
+| `AIScoringModelDefinition`     | `.aiScoringModelDefinition` | `aiScoringModelDefinitions`     |
+| `DataWeaveResource`            | `.dwl`                      | `dw`                            |
+| `PlatformEventSettings`        | `.settings`                 | `settings`                      |
+| `ExperiencePropertyTypeBundle` | NR                          | `experiencePropertyTypeBundles` |
+| ProcessFlowMigration           | NA                          | NA                              |
+
+{% hint style="warning" %}
+*
+{% endhint %}
 
 **Troubleshooting**:
 
@@ -19,15 +53,14 @@ Ensure your Salesforce API version in ARM matches the API version of the Salesfo
 * API version set in ARM: **56.0**
 * Salesforce Org API version: **57.0**
 
-When you use ARM to perform an EZ-Commit and choose the **Flow** and **Flow Definition** components from a Salesforce org, the properties **'triggerOrder'** and **'Overridable'** do not reflect in your target branch.\
+When you use ARM to perform an EZ-Commit and choose the **Flow** and **Flow Definition** components from a Salesforce org, the properties **'triggerOrder'** and **'Overridable'** do not reflect in your target branch.
+
 It fails when you try to deploy using the above revision after changing the API version to 57.0 in ARM.\
 \
 You'll need to retrigger the commit and deployment process to make the deployment successful.\
 
 
-### Salesforce API Supported Metadata Types <a href="#salesforce-api-supported-metadata-types" id="salesforce-api-supported-metadata-types"></a>
-
-The below tables highlight the newly supported metadata types for each API version.&#x20;
+The below tables highlight the supported metadata types for each API version.&#x20;
 
 **API 57.0 newly Supported Metadata Types**
 

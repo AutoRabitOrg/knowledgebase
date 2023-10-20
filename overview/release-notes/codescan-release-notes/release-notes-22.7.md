@@ -20,7 +20,7 @@ For more information, see [Exporting Issues in CodeScan Cloud](https://knowledge
 
 CodeScan now has a new rule added to their Quality Profile called `Do not use vulnerable packages,` which checks for deprecated and outdated dependencies in the project and highlights the vulnerabilities available.
 
-
+***
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 
@@ -46,7 +46,7 @@ Fig 2: New Screen\
 
 2. With this update, the **Add Member** button on the **Members** page for all CodeScan versions is deleted.
 
-
+***
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
@@ -54,7 +54,7 @@ Fig 2: New Screen\
 * The existing metadata rules in CodeScan have been tweaked for SFDX compatibility.
 * Significant improvements in the ways GitHub is triggered within CodeScan.
 
-
+***
 
 ### Bugs fixed <a href="#bugs-fixed" id="bugs-fixed"></a>
 

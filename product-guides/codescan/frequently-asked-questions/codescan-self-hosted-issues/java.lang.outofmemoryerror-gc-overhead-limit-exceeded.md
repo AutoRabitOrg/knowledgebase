@@ -16,3 +16,4 @@ export ANT_OPTS=$ANT_OPTS -Xmx2048M
 
 If the problem persists, please contact [support@codescan.io](https://support@codescan.io/)
 
+***

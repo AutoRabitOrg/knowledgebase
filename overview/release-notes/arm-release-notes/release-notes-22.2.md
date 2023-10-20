@@ -34,7 +34,7 @@ With the Salesforce CLI Scanner plugin, you can look forward to a:
 
 We’ve added the ability to view and review datasets corresponding to each version of the nCino feature template before using it for deployment. Prior to this release, the capability was available only for the latest version of the template.
 
-
+***
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 
@@ -44,7 +44,7 @@ With this release, PMD has been upgraded to version **6.49**. If you have not up
 
 Click [HERE](https://pmd.github.io/latest/pmd\_next\_major\_development.html#list-of-currently-deprecated-rules) to view the list of currently deprecated rules available on GitHub.
 
-
+***
 
 #### 2. Auto-approve on validation success <a href="#2-autoapprove-on-validation-success" id="2-autoapprove-on-validation-success"></a>
 
@@ -85,13 +85,13 @@ In addition to the **Standard** access type, users can now set up **SSO** as aut
 
 [**Read more →**](../../../product-guides/arm/arm-features/alm-management.md)
 
-
+***
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
 * Users with Admin access can now turn off the Jira comments and notifications created by AR. This ensures a cleaner workspace. These comments and notifications are very development centric, so the end users who use Jira cannot make sense of our technical comments from AR, and this may create confusion for them.
 
-
+***
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 

@@ -122,15 +122,12 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 **(ARM v. 23.1.4)**
 
-* Implemented an <mark style="background-color:blue;">**enhancement**</mark> to version 22.3 identified as part of a use-case issue affecting the **Deployments** and **Org Synchronization** modules requiring changing deploy text for validations.&#x20;
 * Performed a code fix to version 23.1 affecting the **Reports** module resulting from a use-case error with **code coverage report emails missing test class errors in the subject.**&#x20;
 * Applied a code fix to version 23.1 for the **Deployments** module resulting from a use-case scenario with user **unable to see deployment history**.
 * Instituted a code fix to version 23.1 for the **CI Jobs** module resulting from a use-case error with the **org management page**.
 * Implemented a code fix to versions 22.3 and 23.1 affecting the **CI Jobs** module due to a use-case issue to **SFDX/CI jobs with package version installation key**.
 * Performed a code fix to versions 22.3 and 23.1 affecting the **Version Control** module for a use-case issue related to **custom label translation file**.&#x20;
 * Applied a code fix to versions 22.3 and 23.1 related to the **Deployments** module for a use-case error with previous **deployment label 'add members'** option not working.
-* Added **loggers** to version 22.3 affecting the **Version Control** module due to a use-case error with **user roles missing**.
-* Added **loggers** to version 22.3 affecting the **CI Jobs** module resulting from a use-case with **automated package generation CI job AR server exception error**.
 * Performed a code fix to version 23.1 affecting the **Admin** module due to a use-case error with **MyProfile not redirecting properly** and showing the **profile icon** after clicking on the **'profile' button.**
 * Implemented a **flow center change** to versions 22.3 and 23.1 for the **Dataloader** module due to a use-case error with the **download button not working**.
 

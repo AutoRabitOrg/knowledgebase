@@ -91,6 +91,26 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+**22 October 2023**
+
+**(ARM v. 23.1.4)**
+
+This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+
+* Implemented an <mark style="background-color:blue;">**enhancement**</mark> to version 22.3 identified as part of a use-case issue affecting the **Deployments** and **Org Synchronization** modules requiring changing deploy text for validations.&#x20;
+* Implemented a code fix to versions 22.3 and 23.1 affecting the **CI Jobs** module due to a use-case issue to **SFDX/CI jobs with package version installation key**.
+* Performed a code fix to versions 22.3 and 23.1 affecting the **Version Control** module for a use-case issue related to **custom label translation file**.&#x20;
+* Applied a code fix to versions 22.3 and 23.1 related to the **Deployments** module for a use-case error with previous **deployment label 'add members'** option not working.
+* Added **loggers** to version 22.3 affecting the **Version Control** module due to a use-case error with **user roles missing**.
+* Added **loggers** to version 22.3 affecting the **CI Jobs** module resulting from a use-case with **automated package generation CI job AR server exception error**.
+* Implemented a **flow center change** to versions 22.3 and 23.1 for the **Dataloader** module due to a use-case error with the **download button not working**.
+
+#### 18 October 2023
+
+This interim release consisted of the following:
+
+* Performed a code fix to versions 22.3 and 23.1 affecting the Version Control module for a use-case issue with a custom label translation file.
+
 #### 15 October 2023
 
 **(ARM v23.1.3)**

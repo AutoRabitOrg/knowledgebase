@@ -45,7 +45,7 @@ Under the **Salesforce Org** **Details** section, do the following:
 
 1. Click on **Next** to go to the **Record Configuration** Tab.
 
-Important Note:Only those objects will be considered nCino objects if their related prefix is included in the **Plugins** section under the [**My Account**](arm-administration/user-management/manage-users-account-settings/) page.
+Important Note:Only those objects will be considered nCino objects if their related prefix is included in the **Plugins** section under the [**My Account**](getting-started/arm-administration/user-management/manage-users-account-settings/) page.
 
 #### &#x20;Record Configuration <a href="#record-configuration" id="record-configuration"></a>
 

@@ -4,7 +4,7 @@
 
 An audit report gives you a comprehensive view of your business operations by fostering a collaborative operational audit environment. Here, you can download the audit report (CSV format) to view and track all the changes that occurred to help analyze and assess risk for your organization.
 
-1.  Select your [**Salesforce Org**](arm-administration/registration/salesforce-org.md) from the drop-down.\
+1.  Select your [**Salesforce Org**](getting-started/arm-administration/registration/salesforce-org.md) from the drop-down.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654510410480.png" alt="" width="563"><figcaption></figcaption></figure>

@@ -12,7 +12,7 @@
 You can now define a data **Retention Policy** and choose how much data should be stored for how long. ARM will now be considerably quicker by eliminating outdated data. Clearing out old and useless data from the database and moving it to the archives keeps the application from underperforming and improves speed across all modules.
 
 A weekly clean-up will ensure that the application runs smoothly. The default data retention period is set as 12 months which will be implemented with the release of **ARM version 22.3**. Admins can specify the duration of data retention in the history tables from the My Account section and change the retention period from **12 months** to **6 months** or **3 months**.\
-[**Read more →**](../../../product-guides/arm/arm-administration/user-management/manage-users-account-settings/)
+[**Read more →**](../../../product-guides/arm/getting-started/arm-administration/user-management/manage-users-account-settings/)
 
 #### 2. Search, Group, and Filter CI Job List <a href="#2-search-group-and-filter-ci-job-list" id="2-search-group-and-filter-ci-job-list"></a>
 
@@ -59,7 +59,7 @@ It is also beneficial to have this feature so that the rules can be created and 
 With the recent release, the **Export List** will include a few additional details related to the **last login** to ensure security and compliance. Details like the **location, login type, IP address, coordinates,** and the **browser** used.
 
 The access level of users is not mentioned in the export list for security reasons, i.e., if any users are **Admin** or **Super Admin**, this will not be specified. The company can share this list, if required, with people both inside and outside their organization without jeopardizing the confidentiality of the access granted to the users.\
-[**Read more →**](../../../product-guides/arm/arm-administration/user-management/manage-users-account-settings/users-roles-and-permissions.md)
+[**Read more →**](../../../product-guides/arm/getting-started/arm-administration/user-management/manage-users-account-settings/users-roles-and-permissions.md)
 
 #### 4. Dataloader Clone process <a href="#4-dataloader-clone-process" id="4-dataloader-clone-process"></a>
 

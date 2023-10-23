@@ -128,7 +128,7 @@ SCA Supported Metadata Types:
 * For **ApexPMD, Checkmarx, SonarQube**: _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
 * For **Codescan**: _ApexClasses, ApexPages, ApexTriggers, AuraDefinitionBundle, CustomObjects, Flow, LightningComponentBundle, PermissionSets, Profiles, Settings, SharingRules, Workflows._
 
-You can stop the deployment if the SCA doesn't meet the criteria set globally. Go to **`My Account >`** [**`Validation Criteria- Static Code Analysis`**](arm-administration/user-management/manage-users-account-settings/) to set the global configuration for your SCA tool.
+You can stop the deployment if the SCA doesn't meet the criteria set globally. Go to **`My Account >`** [**`Validation Criteria- Static Code Analysis`**](getting-started/arm-administration/user-management/manage-users-account-settings/) to set the global configuration for your SCA tool.
 
 Also, you can select the recipients for the alert under the **`SCA Mail Notifications`** field. Multiple recipients can be added here.
 

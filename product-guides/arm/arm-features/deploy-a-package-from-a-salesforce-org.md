@@ -32,7 +32,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 Under the **Build** section, fill in the below details:
 
-1. Select the source [**Salesforce org**](../arm-administration/registration/salesforce-org.md).
+1. Select the source [**Salesforce org**](../getting-started/arm-administration/registration/salesforce-org.md).
 2. Select the **Package type** to retrieve and bundle the changes from a source sandbox.
    1. **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
    2. **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a Salesforce Org.
@@ -76,7 +76,7 @@ Under the **Build** section, fill in the below details:
 3. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
-4. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+4. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../getting-started/arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 
 #### Deploy <a href="#deploy" id="deploy"></a>
 

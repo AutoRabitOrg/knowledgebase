@@ -8,7 +8,7 @@ The following articles describe using **Single Dataloader** to extract data from
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1685302803257.png" alt=""><figcaption></figcaption></figure>
 
-4. Choose your [**`Salesforce org`**](arm-administration/registration/salesforce-org.md) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
+4. Choose your [**`Salesforce org`**](getting-started/arm-administration/registration/salesforce-org.md) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch objects`** to fetch all the objects from your Salesforce org.
 7. Select the object from which you wish to extract the data. For example, **Account**, **Contact**, **Lead**, etc. You can use the **`Search`** function to search through your objects and  **`filter`** to filter your standard/custom objects quickly.

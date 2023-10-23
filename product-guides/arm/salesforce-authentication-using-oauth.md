@@ -8,7 +8,7 @@ The **Salesforce** platform implements the **OAuth 2.0 Authorization Framework**
 * The following article is
   * **applicable for:** self-hosted and dedicated hosted users
   * **not applicable for:** shared cloud users
-* For share cloud customers, ARM has a pre-configured connected app via salesforce; therefore, _client\_id_ and _client\_secret_ fields are not exposed in the user interface. For more information, please refer to the link: [Adding a Salesforce Org connection via OAuth](arm-administration/registration/salesforce-org.md)
+* For share cloud customers, ARM has a pre-configured connected app via salesforce; therefore, _client\_id_ and _client\_secret_ fields are not exposed in the user interface. For more information, please refer to the link: [Adding a Salesforce Org connection via OAuth](getting-started/arm-administration/registration/salesforce-org.md)
 {% endhint %}
 
 #### To get the Salesforce Client\_ID and Client\_Secret values <a href="#to-get-the-salesforce-clientid-and-clientsecret-values" id="to-get-the-salesforce-clientid-and-clientsecret-values"></a>

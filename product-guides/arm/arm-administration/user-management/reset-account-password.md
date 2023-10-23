@@ -61,7 +61,7 @@ Use the following steps to change your current password:&#x20;
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485958596.png" alt="" width="375"><figcaption></figcaption></figure>
 3. Enter your **`Old Password`** and **`New Password,`** then re-enter your **`New Password`** to confirm.
 
-<figure><img src="../../.gitbook/assets/RMPwd Pic1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/RMPwd Pic1.png" alt=""><figcaption></figcaption></figure>
 
 4. Your new password takes effect immediately.
 

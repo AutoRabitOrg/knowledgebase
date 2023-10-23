@@ -43,7 +43,7 @@ To integrate Checkmarx as an SCA plugin,
 2. Fill in the below details:
    1. **`CxServer:`** Checkmarx Server URL or IP address, e.g., _`http://server-name`_.
    2. **`Team Name:`** Enter the relevant team name for the project.
-   3. **`Select Credential:`** Choose your user's credential from the list. If you cannot find your credentials, you must create a new one (using the + icon) and save them in ARM. Refer [Create User's Credentials](arm-credential-manager.md).
+   3. **`Select Credential:`** Choose your user's credential from the list. If you cannot find your credentials, you must create a new one (using the + icon) and save them in ARM. Refer [Create User's Credentials](arm-administration/user-management/arm-credential-manager.md).
    4. Click on **`Test Connection`** to authenticate your details.
    5. Click **`Save`**.
 3. Click **`Save`** on the **My Account** page to save the plugin configuration.

@@ -40,7 +40,7 @@ SAML-based SSO enables two-way communication between an authentication server (t
 Using the information you gathered from your IdP (the Identity Provider), fill in the below details:
 
 * **`Entity ID:`** String that uniquely identifies your IdP (your IdP generally provides it).&#x20;
-* **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../../../sso/).
+* **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../../sso/).
 *   **`Disable login with ARM credentials:`** When selected, passwords on ARM are no longer used once the SSO is activated. The system forces you and your sub-users to log in via SSO rather than entering their username and password on the login page. However, once disabled, all the authentication requests will go through the classic login interface.\
 
 
@@ -164,7 +164,7 @@ Select the **`Enable criteria based Review Process`** checkbox to enable the mer
 
 #### 10. Salesforce Settings <a href="#10-salesforce-settings" id="10-salesforce-settings"></a>
 
-ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **57.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 57 or earlier. The newly supported Salesforce objects for each API version can be found [here](../../../../arm-features/salesforce-api-version.md).
+ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **57.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 57 or earlier. The newly supported Salesforce objects for each API version can be found [here](../../../arm-features/salesforce-api-version.md).
 
 Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.\
 
@@ -173,7 +173,7 @@ Select the API version to see the supported metadata types and avoid errors whil
 
 
 
-1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. Click [here](../../../../record-types-picklistvalues.md) to go directly to the mentioned topic.&#x20;
+1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. Click [here](../../../record-types-picklistvalues.md) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
 3. **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
    ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678183913072.png)

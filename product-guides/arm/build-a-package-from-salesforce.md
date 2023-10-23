@@ -6,7 +6,7 @@ The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](getting-started/arm-administration/registration/salesforce-org.md). Configure the job to run functional test cases from the ARM TAF library or from version control.
+Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](arm-administration/registration/salesforce-org.md). Configure the job to run functional test cases from the ARM TAF library or from version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
@@ -69,7 +69,7 @@ Under the **Build** section, fill in the below details:
 7. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the **'Exclude Metadata Types'** checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.
 
 {% hint style="info" %}
-**Important Note**: To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](getting-started/arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+**Important Note**: To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 {% endhint %}
 
 #### Notifications <a href="#notifications" id="notifications"></a>

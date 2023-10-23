@@ -9,7 +9,7 @@
 4.  Click **Validate Token** to validate your entered token and the URL entered.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-788.png" alt="" width="563"><figcaption></figcaption></figure>
-5. Upon successful validation of API token, add your [Salesforce Org](getting-started/arm-administration/registration/salesforce-org.md), Remote Repository /Branch into [VS Code](installing-vs-code-extension.md).&#x20;
+5. Upon successful validation of API token, add your [Salesforce Org](arm-administration/registration/salesforce-org.md), Remote Repository /Branch into [VS Code](installing-vs-code-extension.md).&#x20;
 6.  Click **Save Settings** to complete the configuration process.&#x20;
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-976.png" alt="" width="375"><figcaption></figcaption></figure>

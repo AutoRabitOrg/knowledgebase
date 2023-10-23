@@ -47,7 +47,7 @@ Before you proceed with the deployment, it is mandatory to configure your Vlocit
 12. **Static Code Analysis (SCA)**: Choose the SCA tool to detect bugs, code smells, and security vulnerabilities before the deployment begins.SCA-Supported Metadata Types:
     * For **ApexPMD, Checkmarx, Salesforce Scanner,** and **SonarQube**: _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
     * For **Codescan**: _ApexClasses, ApexPages, ApexTriggers, AuraDefinitionBundle, CustomObjects, Flow, LightningComponentBundle, PermissionSets, Profiles, Settings, SharingRules, Workflows._
-13. You can stop the deployment if the SCA doesn't meet the global criteria. Go to **My Account >** [**Validation Criteria- Static Code Analysis**](../getting-started/arm-administration/user-management/manage-users-account-settings/) to set the global configuration for your SCA tool.
+13. You can stop the deployment if the SCA doesn't meet the global criteria. Go to **My Account >** [**Validation Criteria- Static Code Analysis**](../arm-administration/user-management/manage-users-account-settings/) to set the global configuration for your SCA tool.
 14. Also, you can select the recipients for the alert under the **"SCA Mail Notifications"** field. Multiple recipients can be added here.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664787288198.png" alt=""><figcaption></figcaption></figure>

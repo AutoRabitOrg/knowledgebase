@@ -8,7 +8,7 @@ The following articles describe using **Single Dataloader** to delete data from 
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1671010496242.png" alt=""><figcaption></figcaption></figure>
-4. Choose your [**`Salesforce Org`**](getting-started/arm-administration/registration/salesforce-org.md) and your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
+4. Choose your [**`Salesforce Org`**](arm-administration/registration/salesforce-org.md) and your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6.  Click **`Login and Fetch Objects`** to fetch all the objects from your Salesforce Org.\
 

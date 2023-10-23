@@ -2,7 +2,7 @@
 
 ### What’s a Package? <a href="#whats-a-package" id="whats-a-package"></a>
 
-If you’re new to packaging, you can think about a package as a container that you fill with metadata. It contains a set of related features, customizations, and schema. You use packages to move metadata from one [Salesforce org](getting-started/arm-administration/registration/salesforce-org.md) to another.
+If you’re new to packaging, you can think about a package as a container that you fill with metadata. It contains a set of related features, customizations, and schema. You use packages to move metadata from one [Salesforce org](arm-administration/registration/salesforce-org.md) to another.
 
 There are two kinds of packages - _managed_ and _unlocked packages_.
 

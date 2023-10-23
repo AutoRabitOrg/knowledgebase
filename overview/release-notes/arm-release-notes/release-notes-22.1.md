@@ -70,7 +70,7 @@ The **Export All Users** feature allows the org admins to export a CSV file of a
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/export%20all%20users.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/getting-started/arm-administration/user-management/manage-users-account-settings/users-roles-and-permissions.md)
+[**Read more →**](../../../product-guides/arm/arm-administration/user-management/manage-users-account-settings/users-roles-and-permissions.md)
 
 #### 3. Pull request support for Azure cloud repositories <a href="#3-pull-request-support-for-azure-cloud-repositories" id="3-pull-request-support-for-azure-cloud-repositories"></a>
 

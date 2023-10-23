@@ -32,7 +32,7 @@ While deploying the SFDX source from a [Version Control](https://www.autorabit.c
 
 #### During Branching Baseline operation <a href="#during-branching-baseline-operation" id="during-branching-baseline-operation"></a>
 
-While retrieving and committing all the metadata components from a [Salesforce org](getting-started/arm-administration/registration/salesforce-org.md) to SDFX Branch, you need to select the source folder under the **Package Directory** field.
+While retrieving and committing all the metadata components from a [Salesforce org](arm-administration/registration/salesforce-org.md) to SDFX Branch, you need to select the source folder under the **Package Directory** field.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613886342200.png" alt="" width="375"><figcaption></figcaption></figure>
 

@@ -50,7 +50,7 @@ Click [HERE](https://pmd.github.io/latest/pmd\_next\_major\_development.html#lis
 
 We have moved one step closer to automating the flow by adding an option to choose if an **EZ-Commit** or an **EZ-Merge** should be approved automatically if the SCA validation is successful. Combined with the existing option to auto-commit on approval, this leads to a true CI/CD experience.
 
-[**Read more →**](../../../product-guides/arm/getting-started/arm-administration/user-management/manage-users-account-settings/)
+[**Read more →**](../../../product-guides/arm/arm-administration/user-management/manage-users-account-settings/)
 
 #### 3. HashiCorp Vault Integration <a href="#3-hashicorp-vault-integration" id="3-hashicorp-vault-integration"></a>
 

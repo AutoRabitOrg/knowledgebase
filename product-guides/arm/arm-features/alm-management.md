@@ -78,7 +78,7 @@ In this section, you can select the pattern used to read the comment in a revisi
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682079131324.png" alt="" width="375"><figcaption></figcaption></figure>
 
-If you want to configure a webhook in your repository, select the **Enable auto update on webhook** checkbox to reveal the URL required for the webhook settings. For more information on how to configure a webhook in different repositories, refer [HERE](../webhooks/). You can also choose to [sync external smart commits](version-control/version-control-repositories-summary.md).
+If you want to configure a webhook in your repository, select the **Enable auto update on webhook** checkbox to reveal the URL required for the webhook settings. For more information on how to configure a webhook in different repositories, refer [HERE](../webhooks/). You can also choose to [sync external smart commits](version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 #### Repository Mappings <a href="#repository-mappings" id="repository-mappings"></a>
 

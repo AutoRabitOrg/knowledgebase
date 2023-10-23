@@ -73,7 +73,7 @@ Such filters will be displayed here if any filter is applied to the objects. You
 
 Based on your destination selection, you will have different deployment buttons to choose from:
 
-1. **Create Dataset:** Create a dataset from your Salesforce Org. On selection, you will be redirected to the [Commits History](arm-features/how-do-i-commit/commits-summary.md) screen.
+1. **Create Dataset:** Create a dataset from your Salesforce Org. On selection, you will be redirected to the [Commits History](arm-features/commits-summary.md) screen.
 2.  **Create Dataset & Deploy:** Create a dataset and deploy it to your Salesforce Org.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622400163200.png" alt=""><figcaption></figcaption></figure>

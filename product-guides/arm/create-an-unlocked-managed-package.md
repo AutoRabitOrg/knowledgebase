@@ -37,7 +37,7 @@ There are two steps to follow:
 3. On the next screen, give the **Package Name** and the **Package Description**.
 4. Select the **Package Type: Unlocked** or **Managed**.
 5. Select the **Dev Hub** for which the package will be associated.
-6. Under Version Control, enter the [**Version Control Repository**](arm-features/version-control/version-control-repositories-summary.md) and its related **Branch**.
+6. Under Version Control, enter the [**Version Control Repository**](arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md) and its related **Branch**.
 7.  Select the **Package Directory** from the dropdown. (For more information about **Package Directory**, refer to the article: [Salesforce DX Metadata Format](salesforce-dx-metadata-format.md))\
 
 

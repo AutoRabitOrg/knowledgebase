@@ -32,7 +32,7 @@ Each commit shows:
 3. The commit message
 4. The committer's username
 5. The date the commit was created
-6. [Version Control](../version-control/) Repository, Destination, and Source Branch details
+6. [Version Control](version-control/) Repository, Destination, and Source Branch details
 7. Salesforce Org details (applicable only to prevalidated commits and EZ-Commits)
 8. Commit Revision label
 9. Commit/Merge status

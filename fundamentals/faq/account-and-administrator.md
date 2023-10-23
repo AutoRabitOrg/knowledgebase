@@ -148,7 +148,7 @@ Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/ar
 
 #### Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
 
-The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../product-guides/arm/arm-features/version-control/version-control-repositories-summary.md).
+The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 #### What is the functionality of "Sync Branches" radio button in VC Repo's screen? <a href="#what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen" id="what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen"></a>
 

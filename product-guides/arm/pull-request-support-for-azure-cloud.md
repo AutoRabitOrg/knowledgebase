@@ -59,7 +59,7 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
 
 On the next pop-up screen, furnish the below details:
 
-1. Select your [**version control repository**](arm-features/version-control/version-control-repositories-summary.md). Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
+1. Select your [**version control repository**](arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md). Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
 2. Choose the **Source branch** and the **Destination Branch** to compare.
 3. Enter a **Title** and detailed **Description** of your changes, so others can see what problems the changes solve.
 4. Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.&#x20;

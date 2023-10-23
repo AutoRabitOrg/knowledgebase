@@ -37,23 +37,23 @@ Create a pull request to propose and collaborate on changes to a repository. The
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676053727602.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../external-pull-request.md).
+Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../../external-pull-request.md).
 
 #### Branches/Tags <a href="#branchestags" id="branchestags"></a>
 
-The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](../../arm-administration/registration/version-control-repository/git-integration/git-tag.md).
+The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](../../../arm-administration/registration/version-control-repository/git-integration/git-tag.md).
 
 **Additional details under Branch**
 
 **A. Create a Branch**
 
-Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](introduction-to-version-control/version-control-branch-workflow.md))
+Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](version-control-branch-workflow.md))
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682075996942.png)
 
 **B. Register a Branch**
 
-Register an existing branch to the current repository. ([LEARN MORE](./))
+Register an existing branch to the current repository. ([LEARN MORE](../))
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676054134635.png" alt=""><figcaption></figcaption></figure>
 
@@ -94,7 +94,7 @@ For each branch, view the following details:\
     * The folder name must be entered in the **`Metadata Folder Path`** field for SFDX repositories where _foldername/force-app/main/default/_ counts as the metadata folder path.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676057120903.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../alm-management.md).\
+3.  **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../alm-management.md).\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682076638548.png" alt="" width="375"><figcaption></figcaption></figure>

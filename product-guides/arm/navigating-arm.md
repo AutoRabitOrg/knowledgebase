@@ -58,7 +58,7 @@ On the left-hand side of the application, you see a list of icons with the conte
 
 Let's examine each of these links in detail:
 
-#### [Dashboard](dashboards-and-widgets.md) <a href="#dashboard" id="dashboard"></a>
+#### [Dashboard](arm-features/dashboard-and-pipelines/dashboards-and-widgets.md) <a href="#dashboard" id="dashboard"></a>
 
 The ARM Dashboards enable you to display multiple performance analytics, reporting, and other widgets on a single screen. ARM includes pre-defined widgets that can be customized and displayed on the Classic Dashboards page. These widgets are displayed as graphs, tables, and text. Each user can choose the widgets to populate their dashboard.
 

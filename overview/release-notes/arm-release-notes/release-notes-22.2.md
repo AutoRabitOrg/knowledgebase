@@ -71,7 +71,7 @@ Key characteristics to look for:
 
 To keep our product up to date with the most recent Salesforce updates, AutoRABIT supports the most recent **API 56.0** version in this release. The most recent API version is intended for customizing the metadata model and developing tools to manage it.
 
-[**Read more →**](../../../product-guides/arm/arm-features/salesforce-api-version.md)
+[**Read more →**](../../../product-guides/arm/arm-administration/user-management/salesforce-api-version.md)
 
 #### 6. Merge to multiple branches <a href="#6-merge-to-multiple-branches" id="6-merge-to-multiple-branches"></a>
 

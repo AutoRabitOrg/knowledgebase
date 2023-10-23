@@ -60,4 +60,4 @@ The **Spreads Schedules Template** template includes the following objects:
 
 To keep our product up to current with the most recent Salesforce upgrades, AutoRABIT supports the most recent API 57.0 version in this release. The most recent API version is aimed for customising the metadata schema and developing tools to manage it.
 
-[**Read more →**](../../../product-guides/arm/arm-features/salesforce-api-version.md)
+[**Read more →**](../../../product-guides/arm/arm-administration/user-management/salesforce-api-version.md)

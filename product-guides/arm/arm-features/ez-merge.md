@@ -9,8 +9,8 @@ Merging is simply putting a forked history back together again. Say we have a ne
 Before a merge, several preparation steps must be taken to ensure the merge goes smoothly.
 
 1. [**`Register your Version Control Repository in ARM`**](version-control/version-control-repositories-summary.md)**`:`** An Admin can only perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
-2. [**`Register your Salesforce Organization in ARM`**](../arm-administration/registration/salesforce-org.md)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. An Admin can only perform this step.&#x20;
-3. [**`Set Up a Branch`**](version-control/version-control-branch/)**`:`** Instead of directly making changes to the code base, you can branch off from the mainline and work on a specific feature in an isolated branch. An Admin can only perform this step.&#x20;
+2. [**`Register your Salesforce Organization in ARM`**](../arm-administration/registration/salesforce-org/)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. An Admin can only perform this step.&#x20;
+3. [**`Set Up a Branch`**](../arm-administration/registration/version-control-branch/)**`:`** Instead of directly making changes to the code base, you can branch off from the mainline and work on a specific feature in an isolated branch. An Admin can only perform this step.&#x20;
 4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
 5. **`Fetch the latest remote commits:`** Ensure the receiving branch and the merging branch are up to date with the latest remote changes.
 

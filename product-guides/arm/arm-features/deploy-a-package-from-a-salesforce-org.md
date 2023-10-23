@@ -32,7 +32,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 Under the **Build** section, fill in the below details:
 
-1. Select the source [**Salesforce org**](../arm-administration/registration/salesforce-org.md).
+1. Select the source [**Salesforce org**](../arm-administration/registration/salesforce-org/).
 2. Select the **Package type** to retrieve and bundle the changes from a source sandbox.
    1. **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
    2. **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a Salesforce Org.

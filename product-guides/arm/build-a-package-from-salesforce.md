@@ -6,7 +6,7 @@ The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](arm-administration/registration/salesforce-org.md). Configure the job to run functional test cases from the ARM TAF library or from version control.
+Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](arm-administration/registration/salesforce-org/). Configure the job to run functional test cases from the ARM TAF library or from version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

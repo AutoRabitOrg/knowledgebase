@@ -1,6 +1,6 @@
 # Reports Overview
 
-ARM allows its users to view all the deployment, merge, and dataloader-related information that is carried out in the [Salesforce Org](arm-administration/registration/salesforce-org.md) in the form of reports. This information improves productivity, accountability, and insight into your business data by generating reports.
+ARM allows its users to view all the deployment, merge, and dataloader-related information that is carried out in the [Salesforce Org](arm-administration/registration/salesforce-org/) in the form of reports. This information improves productivity, accountability, and insight into your business data by generating reports.
 
 Also, users have the option to produce reports either weekly, monthly, yearly, or between specific dates.
 

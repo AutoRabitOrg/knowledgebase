@@ -36,7 +36,7 @@ To create a module in AutoRABIT, you need to perform the steps as mentioned belo
 6.  Click **Next** to proceed to the **Validate and Push** screen.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613921036958.png" alt=""><figcaption></figcaption></figure>
-7.  The first step is to validate the selected source org with another [Salesforce org](arm-administration/registration/salesforce-org.md) to ensure the dependent metadata components are not skipped from the module.
+7.  The first step is to validate the selected source org with another [Salesforce org](arm-administration/registration/salesforce-org/) to ensure the dependent metadata components are not skipped from the module.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613921279716.png" alt=""><figcaption></figcaption></figure>
 8. **Additional option:**

@@ -78,7 +78,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-TJA6AEBZ.png" alt=""><figcaption></figcaption></figure>
-2. On the **EZ-Commit** screen, select the [**Salesforce Org**](arm-administration/registration/salesforce-org.md) from which the metadata components will get fetched.
+2. On the **EZ-Commit** screen, select the [**Salesforce Org**](arm-administration/registration/salesforce-org/) from which the metadata components will get fetched.
 3. Select the Salesforce Org registered **Author**.
 4. Select the **Version Control Repository** for which the pull request support is enabled. Select its mapped **branch**.
 5. Select the way to fetch the metadata components from the selected Salesforce Org under the **Fetch Changes** section. Choose the one that best fits your needs.

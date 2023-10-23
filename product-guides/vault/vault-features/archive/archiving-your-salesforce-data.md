@@ -59,7 +59,7 @@ You may notice in the schema view that some of the objects are auto-selected by 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656666308476.png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. Now go to the **ARCHIVE** tab.
-14. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org.md) for which you configured the archive recently.&#x20;
+14. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
 15. Select the **Environment**.
 16. Select the archive configured recently under **Configurations** drop-down field.
 

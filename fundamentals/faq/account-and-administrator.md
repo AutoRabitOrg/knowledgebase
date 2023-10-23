@@ -134,7 +134,7 @@ ARM works best in the two most recent versions of these browsers:
 
 #### Given the shift in IP ranges, is it possible to migrate from one AutoABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
 
-Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/arm/arm-administration/registration/salesforce-org.md) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
+Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
 
 #### Why am I able to see some of the users that are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
 

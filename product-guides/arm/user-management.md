@@ -3,8 +3,8 @@
 User Management enables you to manage your account where you can add a new user, edit user roles, remove a user etc.
 
 * [ARM User Roles](arm-administration/user-management/arm-user-roles.md)
-* [Add New Users](add-new-users.md)
-* [Remove or Suspend a User](remove-or-suspend-a-user.md)
+* [Add New Users](arm-administration/user-management/add-new-users.md)
+* [Remove or Suspend a User](arm-administration/user-management/remove-or-suspend-a-user.md)
 * [Different Users in ARM](different-users-in-arm.md)
 * [Export Users details](export-users-details.md)
 * [Reset my password](reset-account-password.md)

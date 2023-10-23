@@ -43,7 +43,7 @@ To integrate Checkmarx as an SCA plugin,
 2. Fill in the below details:
    1. **`CxServer:`** Checkmarx Server URL or IP address, e.g., _`http://server-name`_.
    2. **`Team Name:`** Enter the relevant team name for the project.
-   3. **`Select Credential:`** Choose your user's credential from the list. If you cannot find your credentials, you must create a new one (using the + icon) and save them in ARM. Refer [Create User's Credentials](arm-administration/user-management/arm-credential-manager.md).
+   3. **`Select Credential:`** Choose your user's credential from the list. If you cannot find your credentials, you must create a new one (using the + icon) and save them in ARM. Refer [Create User's Credentials](../arm-administration/user-management/arm-credential-manager.md).
    4. Click on **`Test Connection`** to authenticate your details.
    5. Click **`Save`**.
 3. Click **`Save`** on the **My Account** page to save the plugin configuration.
@@ -54,8 +54,8 @@ To integrate all the functionality in your CodeScan license with ARM, you must i
 
 **Prerequisites:**
 
-* [**CodeScan security token**](../codescan/getting-started/setting-up-a-codescan-cloud-organization/generate-a-security-token.md)**.** This token will be used instead of a password while storing your credentials inside ARM. You can generate a new token inside CodeScan by navigating to **`My Account > Security`** tab.
-* [**CodeScan Organization key**](../codescan/getting-started/setting-up-a-codescan-cloud-organization/finding-your-organization-key.md)**.** You can always find your organization key on the top right corner of your Organization’s home page inside CodeScan.
+* [**CodeScan security token**](../../codescan/getting-started/setting-up-a-codescan-cloud-organization/generate-a-security-token.md)**.** This token will be used instead of a password while storing your credentials inside ARM. You can generate a new token inside CodeScan by navigating to **`My Account > Security`** tab.
+* [**CodeScan Organization key**](../../codescan/getting-started/setting-up-a-codescan-cloud-organization/finding-your-organization-key.md)**.** You can always find your organization key on the top right corner of your Organization’s home page inside CodeScan.
 
 **Integration Steps:**
 

@@ -62,7 +62,7 @@ Under the **Build** section, fill in the below details:
 
            <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664797907228.png" alt="" width="375"><figcaption></figcaption></figure>
 
-       For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](static-code-analysis-in-ci-cd.md).
+       For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](arm-features/static-code-analysis-in-ci-cd.md).
 6. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.

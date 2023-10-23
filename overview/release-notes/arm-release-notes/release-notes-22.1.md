@@ -85,7 +85,7 @@ The org admins' eligibility level has been enhanced with the ARM 22.1 version. I
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/commit-merge%20approval.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/merge-approvals.md)
+[**Read more →**](../../../product-guides/arm/arm-features/merge-approvals.md)
 
 #### 5. CodeScan additional metadata support <a href="#5-codescan-additional-metadata-support" id="5-codescan-additional-metadata-support"></a>
 

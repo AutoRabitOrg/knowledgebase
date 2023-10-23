@@ -43,7 +43,7 @@ This section is about creating the teams and assigning members to those teams. T
 1. Only the **Registered User** can only view the **Subscription Management** page.
 2. The **Team Administrator** cannot view the **Subscription Management** page.
 3. General users and Org Admins added by the Registered User will also not have permission to view the Subscriptions page.
-4. Only delegated or released users list will be displayed in Team Administrator dropdown field. If you want more information on delegate or released users, please refer [HERE](arm-administration/user-management/delegate-approvals-to-another-user.md).
+4. Only delegated or released users list will be displayed in Team Administrator dropdown field. If you want more information on delegate or released users, please refer [HERE](../arm-administration/user-management/delegate-approvals-to-another-user.md).
 5. Users assigned to a team will not be allowed to join another team.
 {% endhint %}
 
@@ -67,7 +67,7 @@ This section is about creating the teams and assigning members to those teams. T
    * **`Subs. Consumed:`** Number of licenses consumed
    * **`Subs. Available:`** Number of licenses pending
 10. Additional options:
-    1. **`Add New Resource:`** Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613373619889.png) symbol to add new resources to the team. The team administrator can create users with his login. However, if you need to add resources from the existing login, follow the steps mentioned in the [Delegate Users](arm-administration/user-management/delegate-approvals-to-another-user.md) section.
+    1. **`Add New Resource:`** Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613373619889.png) symbol to add new resources to the team. The team administrator can create users with his login. However, if you need to add resources from the existing login, follow the steps mentioned in the [Delegate Users](../arm-administration/user-management/delegate-approvals-to-another-user.md) section.
     2. **`Edit Team:`** Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613373639447.png)icon to modify the team details, like assigning a new team administrator, changing the subscription licenses, etc.Important Note:If the current **Team Administrator** is replaced with another Team Administrator, then the entire permissions that the current administrator holds will be delegated to the new administrator.
     3. **`Delete a Team:`** Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613373655253.png) icon to delete the team. This process cannot be undone.
 

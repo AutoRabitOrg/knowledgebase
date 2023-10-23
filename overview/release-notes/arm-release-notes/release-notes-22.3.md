@@ -50,7 +50,7 @@ Until now, the Search and Substitute functionality only had the ability to selec
 This enhancement is also helpful when users want to add object permissions only to the production and not to the lower sandboxes.
 
 It is also beneficial to have this feature so that the rules can be created and used in **CI Jobs** to do the replacements automatically, depending on the deployment settings in the CI Job.\
-[**Read more →**](../../../product-guides/arm/search-and-substitute.md)
+[**Read more →**](../../../product-guides/arm/arm-features/search-and-substitute.md)
 
 #### 3. Additional details in the Users Export List <a href="#3-additional-details-in-the-users-export-list" id="3-additional-details-in-the-users-export-list"></a>
 

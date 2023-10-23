@@ -134,7 +134,7 @@ Also, you can select the recipients for the alert under the **`SCA Mail Notifica
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656659294706.png)
 
-[**`Search and Substitute`**](search-and-substitute.md) If you have created the search and substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, such rule can be found here.&#x20;
+[**`Search and Substitute`**](arm-features/search-and-substitute.md) If you have created the search and substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, such rule can be found here.&#x20;
 
 From the **`Apply Search and Substitute Rules`** list, select the rule that will be associated with the current deployment process. Use the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402857647.png)/![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402882169.png) button to add/remove the rule and using the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402900576.png)/![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402922812.png) button, move the rules list up and down. Based on the selection, the top rule will be deployed initially, and the process will continue for the remaining rules.
 

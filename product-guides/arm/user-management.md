@@ -14,4 +14,4 @@ User Management enables you to manage your account where you can add a new user,
 * [ARM Credential Manager](arm-administration/user-management/arm-credential-manager.md)
 * [Delegate Approvals to another User](arm-administration/user-management/delegate-approvals-to-another-user.md)
 * [Manage Users Account](arm-administration/user-management/manage-users-account-settings/)
-* [Enforce single sign-on (SSO)](enforce-single-sign-on-sso.md)
+* [Enforce single sign-on (SSO)](arm-administration/user-management/enforce-single-sign-on-sso.md)

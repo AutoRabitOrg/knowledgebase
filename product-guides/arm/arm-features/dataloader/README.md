@@ -13,15 +13,15 @@ ARM **Dataloader** allows you to configure your data loading operations in conve
 
 #### Features of Single Dataloader <a href="#features-of-single-dataloader" id="features-of-single-dataloader"></a>
 
-1. [Extracting Data from Salesforce](extract-salesforce-data.md)
-2. [Importing Data into Salesforce](insert-salesforce-data.md)
-3. [Deleting Data from Salesforce](delete-salesforce-data.md)
-4. [Updating Data in Salesforce](update-salesforce-data.md)
-5. [Upserting Data into Salesforce](upsert-salesforce-data.md)
+1. [Extracting Data from Salesforce](single-dataloader/extract-salesforce-data.md)
+2. [Importing Data into Salesforce](single-dataloader/insert-salesforce-data.md)
+3. [Deleting Data from Salesforce](single-dataloader/delete-salesforce-data.md)
+4. [Updating Data in Salesforce](single-dataloader/update-salesforce-data.md)
+5. [Upserting Data into Salesforce](single-dataloader/upsert-salesforce-data.md)
 
 ### Dataloader Pro: Overview <a href="#dataloader-pro-overview" id="dataloader-pro-overview"></a>
 
-**Dataloader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently while automatically handling the parent-child relationship. Migrating the [Salesforce data](update-salesforce-data.md)/objects to more than one object-supporting hierarchy can easily be achieved using the **Dataloader Pro** feature in ARM.
+**Dataloader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently while automatically handling the parent-child relationship. Migrating the [Salesforce data](single-dataloader/update-salesforce-data.md)/objects to more than one object-supporting hierarchy can easily be achieved using the **Dataloader Pro** feature in ARM.
 
 #### Features of Dataloader Pro <a href="#features-of-dataloader-pro" id="features-of-dataloader-pro"></a>
 

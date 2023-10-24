@@ -6,5 +6,5 @@ Benefits to Vault include:
 
 1. Significantly reduced recovery time.
 2. Visual interface to track and identify changes to data and metadata over time.
-3. Compare backup snapshots with live [Salesforce data](../../../arm/update-salesforce-data.md).
+3. Compare backup snapshots with live [Salesforce data](../../../arm/arm-features/dataloader/single-dataloader/update-salesforce-data.md).
 4. Control granularity to entire org or individual objects etc.

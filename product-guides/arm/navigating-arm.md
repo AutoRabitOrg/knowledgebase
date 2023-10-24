@@ -67,7 +67,7 @@ The ARM Dashboards enable you to display multiple performance analytics, reporti
 Version control helps you track changes you make in your code over time. Using a version control system, you can create snapshots of your code by creating branches or copies and isolating the codebase from the central repository. Every change made to the source is tracked, along with who made the change, why they made it, and references to problems fixed or enhancements introduced by the change. This makes it easier to make changes and enhances the overall quality of the code.\
 A list of action items related to the Version Control system will get displayed, such as EZ-Commit, Merge, Manage Labels, etc.
 
-#### [Continuous Integration Job (CI Job)](automation-and-ci.md) <a href="#continuous-integration-job-ci-job" id="continuous-integration-job-ci-job"></a>
+#### [Continuous Integration Job (CI Job)](arm-features/automation-and-ci/) <a href="#continuous-integration-job-ci-job" id="continuous-integration-job-ci-job"></a>
 
 ARM's Continuous Integration (CI) is designed to help customers rapidly release code confidently by automating the build, test, and deployment process to accomplish Continuous Delivery for Salesforce. CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository upon completing every task. You can release code faster as it allows you to track application development and metadata modifications.
 

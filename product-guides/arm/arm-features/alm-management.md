@@ -50,7 +50,7 @@ We've added a new section called **`ALM Management`** to the **`Admin`** module 
              * The **Access Token** expires in one hour. The **Refresh Token** expires every **90 days**.
 5. Click on **`Test Connection`** to authenticate your credentials.
 6. Click **`Save`**.
-7. Once your [ALM](../alm-labels.md) is registered successfully, you can view it in the **`ALM List`** menu.
+7. Once your [ALM](version-control/change-labels/alm-labels.md) is registered successfully, you can view it in the **`ALM List`** menu.
 8. Use the **`AR Comments`** toggle button to turn off the Jira comments from AR. By default, the Jira comments are ON for newly registered and existing ALMs.
 9. Use the **`Access Type`** drop-down list to switch between **`Standard`** and **`OAuth`**. Click on **`Re-Authenticate`** if your credentials have expired. This is only applicable to Jira ALMs.
 

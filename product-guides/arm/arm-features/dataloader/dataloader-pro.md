@@ -6,7 +6,7 @@
 
 While performing **Dataloader Pro** on the objects for the first time, ensure you perform [Dataloader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Dataloader Pro job. This is a one-time operation.
 
-Dataloader plays an essential role in data migration from source [sandbox](../sandbox-refresh.md) to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
+Dataloader plays an essential role in data migration from source [sandbox](../../sandbox-refresh.md) to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
 
 ### How to perform a Dataloader Pro operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
 
@@ -58,7 +58,7 @@ Format for CSV file to filter records:
 * Ensure you have a column header and rows of data populated for all system-required fields, such as **`Account Name`** or **`Contact Last Name`**.
 * There can be only one column header.&#x20;
 
-For more information, see [Preparing the CSV file for Dataloader](../preparing-the-csv-file-for-arm-dataloader.md).
+For more information, see [Preparing the CSV file for Dataloader](preparing-the-csv-file-for-arm-dataloader.md).
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654862389866.png)
 

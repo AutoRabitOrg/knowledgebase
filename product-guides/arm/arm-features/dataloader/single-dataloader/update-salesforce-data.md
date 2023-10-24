@@ -88,7 +88,7 @@ The following article describes using **Single Dataloader** to update data in Sa
 3. **`Schedule:`** Sets the schedule at which the process must run.
 4. **`Delete:`** Deletes the update process.
 5. **`Log:`** Provides information about the execution of the updated task.
-6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../../../validation-workflow-rules.md). Sample VR/WFR attached:
+6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../validation-workflow-rules.md). Sample VR/WFR attached:
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623935471675.png" alt=""><figcaption></figcaption></figure>
 

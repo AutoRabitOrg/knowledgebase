@@ -63,7 +63,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
     1. Prepare Destructive Changes, Run Static Analysis Report, Profile Packaging Options, and Exclude Metadata types option will be disabled whenever **'vlocity build'** checkbox is selected.&#x20;
     2. You can now trigger rollback deployment for **'vlocity build'** i.e., you can keep a copy of the changes before deployment and can revert the changes later. To do so, select the **Rollback** checkbox under the **Deploy** section.
-3. [**Pull Request**](external-pull-request.md)**:** We support pull requests for both Github/Bitbucket (cloud and server) and Azure Cloud (both dx and non-dx repo) for the current CI job if opted.
+3. [**Pull Request**](version-control/external-pull-request/)**:** We support pull requests for both Github/Bitbucket (cloud and server) and Azure Cloud (both dx and non-dx repo) for the current CI job if opted.
 4. [**Merge Request**](version-control/ez-merge/merge-requests.md)**:** This allows you to raise a merge request for the current CI job if opted.
 5. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 6. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.

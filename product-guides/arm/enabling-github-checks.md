@@ -8,7 +8,7 @@ GitHub status checks are an excellent way to track and control the [CI/CD](arm-f
 
 ### Requirement <a href="#requirement" id="requirement"></a>
 
-GitHub repositories registered in AutoRABIT should have the pull request feature enabled. \[[Learn More](arm-features/external-pull-request.md)]
+GitHub repositories registered in AutoRABIT should have the pull request feature enabled. \[[Learn More](arm-features/version-control/external-pull-request/)]
 
 ![GitHub Checks](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1610046025098.png)
 

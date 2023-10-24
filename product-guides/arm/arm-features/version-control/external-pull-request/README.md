@@ -56,7 +56,7 @@ Important Note:AutoRABIT users with the pull request reviewer option enabled and
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1645675496677.png" alt=""><figcaption></figcaption></figure>
 3. Click **Save**.
 4. Next, go to the **Version Control Repository** page.
-5. On this page, select your [**Version Control Repository**](version-control/) from which you like to enable the pull request support.
+5. On this page, select your [**Version Control Repository**](../) from which you like to enable the pull request support.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1617526688904.png" alt=""><figcaption></figcaption></figure>
 

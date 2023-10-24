@@ -18,7 +18,7 @@
 
 #### Pull Request Support for Azure DevOps <a href="#pull-request-support-for-azure-devops" id="pull-request-support-for-azure-devops"></a>
 
-Pull request is a feature that allows you to review code and provide feedback before merging it into the master branch. Previously, we had GitHub and Bitbucket support. We've included support for Azure DevOps in this release. ([Learn More](../../../product-guides/arm/pull-request-support-for-azure-cloud.md))
+Pull request is a feature that allows you to review code and provide feedback before merging it into the master branch. Previously, we had GitHub and Bitbucket support. We've included support for Azure DevOps in this release. ([Learn More](../../../product-guides/arm/arm-features/version-control/external-pull-request/pull-request-support-for-azure-cloud.md))
 
 * During **Ez-Commit** and new **Pull Requests**, you can now create a Pull Request in Azure with the assignee.
 * You should be able to choose the repository, the base branch, and another branch to compare during the creation of a pull request.

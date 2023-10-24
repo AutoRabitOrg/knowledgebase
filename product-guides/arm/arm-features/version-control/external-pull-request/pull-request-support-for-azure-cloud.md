@@ -2,7 +2,7 @@
 
 Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-Previously, we had [GitHub](enabling-github-checks.md) and Bitbucket support. We've included support for [Azure DevOps](azure-devops.md) in the ARM 21.6 release.
+Previously, we had [GitHub](../../../enabling-github-checks.md) and Bitbucket support. We've included support for [Azure DevOps](../../../azure-devops.md) in the ARM 21.6 release.
 
 For each pull request created inside AutoRABIT, you will have a link that will redirect you to the Azure DevOps application externally where you can view the code changes, merge the changes and close the pull request. But, if there are problems with the proposed changes, they can post feedback in the pull request. Follow-up commits will show up right next to the relevant comments.
 
@@ -59,7 +59,7 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
 
 On the next pop-up screen, furnish the below details:
 
-1. Select your [**version control repository**](arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md). Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
+1. Select your [**version control repository**](../introduction-to-version-control/version-control-repositories-summary.md). Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
 2. Choose the **Source branch** and the **Destination Branch** to compare.
 3. Enter a **Title** and detailed **Description** of your changes, so others can see what problems the changes solve.
 4. Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.&#x20;
@@ -78,7 +78,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-TJA6AEBZ.png" alt=""><figcaption></figcaption></figure>
-2. On the **EZ-Commit** screen, select the [**Salesforce Org**](arm-administration/registration/salesforce-org/) from which the metadata components will get fetched.
+2. On the **EZ-Commit** screen, select the [**Salesforce Org**](../../../arm-administration/registration/salesforce-org/) from which the metadata components will get fetched.
 3. Select the Salesforce Org registered **Author**.
 4. Select the **Version Control Repository** for which the pull request support is enabled. Select its mapped **branch**.
 5. Select the way to fetch the metadata components from the selected Salesforce Org under the **Fetch Changes** section. Choose the one that best fits your needs.

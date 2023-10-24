@@ -37,7 +37,7 @@ Create a pull request to propose and collaborate on changes to a repository. The
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676053727602.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../../external-pull-request.md).
+Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../external-pull-request/).
 
 #### Branches/Tags <a href="#branchestags" id="branchestags"></a>
 

@@ -67,7 +67,7 @@ Important Note:
 #### Additional Build options <a href="#additional-build-options" id="additional-build-options"></a>
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
-2. [**Pull Request**](external-pull-request.md)**:** Creates a pull request for the current CI job if opted.
+2. [**Pull Request**](version-control/external-pull-request/)**:** Creates a pull request for the current CI job if opted.
 3. [**Merge Request**](version-control/ez-merge/merge-requests.md)**:** Creates a merge request for the current CI job if opted.
 4. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).
 

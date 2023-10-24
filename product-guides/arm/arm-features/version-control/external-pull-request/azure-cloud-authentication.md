@@ -4,7 +4,7 @@ The recommended way to access your Azure DevOps project is to use personal acces
 
 To create a personal access token, you have to follow the following steps:
 
-1. Sign in to your organization in [Azure DevOps](azure-devops.md).
+1. Sign in to your organization in [Azure DevOps](../../../azure-devops.md).
 2. From your home page, open your profile. Go to your **security details**.
 3. Select **+ New Token**.
 4. **Name** your token, select the **organization** where you want to use the token, and then choose a **lifespan** for your token.

@@ -18,7 +18,7 @@ If I’ve heard anything from my software development community, it’s “Commi
 
 Below are the prerequisites to be performed before proceeding with the commit to AutoRABIT:
 
-1. **Register your** [**Version Control Repository**](https://knowledgebase.autorabit.com/docs/version-control-repository) **in** [**AutoRABIT**](https://www.autorabit.com/)**:** This step can only be performed by an Admin. Register your Version Control Repositories, such as GIT, SVN, or TFS in AutoRABIT.
-2. **Register your Salesforce Organization in AutoRABIT:** AutoRABIT connects to your [Salesforce Org](https://knowledgebase.autorabit.com/docs/salesforce-org) using either secure OAuth method or using username/password connections. This step can only be performed by an Admin.
+1. **Register your Version Control Repository in AutoRABIT:** This step can only be performed by an Admin. Register your Version Control Repositories, such as GIT, SVN, or TFS in AutoRABIT.
+2. **Register your Salesforce Organization in AutoRABIT:** AutoRABIT connects to your Salesforce Org using either secure OAuth method or using username/password connections. This step can only be performed by an Admin.
 3. **Setup a Branch:** Instead of making changes to the code base directly, you can branch off from the mainline and work on a specific feature in an isolated branch. This step can only be performed by an Admin.
-4. **Mapping the users with the** [**Version Control**](https://knowledgebase.autorabit.com/docs/faqs-version-control) **and Salesforce Orgs in the 'My Profile' section:** Set up the permission to create a project in AutoRABIT.
+4. **Mapping the users with the Version Control and Salesforce Orgs in the 'My Profile' section:** Set up the permission to create a project in AutoRABIT.

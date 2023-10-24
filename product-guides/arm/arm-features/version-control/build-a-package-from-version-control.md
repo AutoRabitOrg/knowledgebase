@@ -58,7 +58,7 @@ Important Note:
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
 2. [**Pull Request**](../external-pull-request.md)**:** Creates a pull request for the current CI job if opted.
-3. [**Merge Request**](../../merge-requests.md)**:** Creates a merge request for the current CI job if opted.
+3. [**Merge Request**](ez-merge/merge-requests.md)**:** Creates a merge request for the current CI job if opted.
 4. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 5. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
    1. **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise BITBUCKET, BITBUCKET, VSGIT, GITLAB, GITHUB) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.\

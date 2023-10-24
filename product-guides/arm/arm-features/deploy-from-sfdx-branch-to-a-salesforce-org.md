@@ -68,7 +68,7 @@ Important Note:
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
 2. [**Pull Request**](external-pull-request.md)**:** Creates a pull request for the current CI job if opted.
-3. [**Merge Request**](../merge-requests.md)**:** Creates a merge request for the current CI job if opted.
+3. [**Merge Request**](version-control/ez-merge/merge-requests.md)**:** Creates a merge request for the current CI job if opted.
 4. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).
 
 {% hint style="info" %}
@@ -187,7 +187,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
     3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
     4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](ez-merge.md) section to know more about the fields and their uses.)
+    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](version-control/ez-merge/) section to know more about the fields and their uses.)
        * **Add**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661516772937.png) icon to add up to **5** destination branches.
        * **Delete**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661517037607.png) icon to delete a destination branch row.\
          ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665052943877.png)

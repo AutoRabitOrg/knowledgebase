@@ -8,10 +8,10 @@ Merging is simply putting a forked history back together again. Say we have a ne
 
 Before a merge, several preparation steps must be taken to ensure the merge goes smoothly.
 
-1. [**`Register your Version Control Repository in ARM`**](version-control/introduction-to-version-control/version-control-repositories-summary.md)**`:`** An Admin can only perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
-2. [**`Register your Salesforce Organization in ARM`**](../arm-administration/registration/salesforce-org/)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. An Admin can only perform this step.&#x20;
-3. [**`Set Up a Branch`**](../arm-administration/registration/version-control-branch/)**`:`** Instead of directly making changes to the code base, you can branch off from the mainline and work on a specific feature in an isolated branch. An Admin can only perform this step.&#x20;
-4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
+1. [**`Register your Version Control Repository in ARM`**](../introduction-to-version-control/version-control-repositories-summary.md)**`:`** An Admin can only perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
+2. [**`Register your Salesforce Organization in ARM`**](../../../arm-administration/registration/salesforce-org/)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. An Admin can only perform this step.&#x20;
+3. [**`Set Up a Branch`**](../../../arm-administration/registration/version-control-branch/)**`:`** Instead of directly making changes to the code base, you can branch off from the mainline and work on a specific feature in an isolated branch. An Admin can only perform this step.&#x20;
+4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../../../arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
 5. **`Fetch the latest remote commits:`** Ensure the receiving branch and the merging branch are up to date with the latest remote changes.
 
 ### How do I merge my changes to a branch? <a href="#how-do-i-merge-my-changes-to-a-branch" id="how-do-i-merge-my-changes-to-a-branch"></a>
@@ -166,7 +166,7 @@ In this section, you can assign certain pre-validation merge operations (such as
       Important Note**Standard fields** are not supported for **Ignore Missing Visible Settings**.\
 
    4. **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.&#x20;
-   5.  **Apex Test Level:** Choose your [Apex Test Level](../apex-unit-tests.md) to validate your merge.
+   5.  **Apex Test Level:** Choose your [Apex Test Level](../../../apex-unit-tests.md) to validate your merge.
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682260915531.png" alt=""><figcaption></figcaption></figure>
 

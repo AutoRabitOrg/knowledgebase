@@ -15,7 +15,7 @@ We have added the **Squash and Merge** feature in this release. Sometimes, when 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/squash%20and%20merge.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/squash-and-merge.md)
+[**Read more →**](../../../product-guides/arm/arm-features/version-control/ez-merge/squash-and-merge.md)
 
 #### 2. SFDX- Import packages <a href="#2-sfdx-import-packages" id="2-sfdx-import-packages"></a>
 

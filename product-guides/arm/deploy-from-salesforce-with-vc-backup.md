@@ -155,7 +155,7 @@ This section is all about either deploying or validating the above package onto 
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
     3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
     4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](arm-features/ez-merge.md) section to know more about the fields and their uses.)
+    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](arm-features/version-control/ez-merge/) section to know more about the fields and their uses.)
     6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
     7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link  [ HERE ](parallel-processor.md) .
     8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\

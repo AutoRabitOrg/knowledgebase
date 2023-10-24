@@ -64,7 +64,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
     1. Prepare Destructive Changes, Run Static Analysis Report, Profile Packaging Options, and Exclude Metadata types option will be disabled whenever **'vlocity build'** checkbox is selected.&#x20;
     2. You can now trigger rollback deployment for **'vlocity build'** i.e., you can keep a copy of the changes before deployment and can revert the changes later. To do so, select the **Rollback** checkbox under the **Deploy** section.
 3. [**Pull Request**](external-pull-request.md)**:** We support pull requests for both Github/Bitbucket (cloud and server) and Azure Cloud (both dx and non-dx repo) for the current CI job if opted.
-4. [**Merge Request**](../merge-requests.md)**:** This allows you to raise a merge request for the current CI job if opted.
+4. [**Merge Request**](version-control/ez-merge/merge-requests.md)**:** This allows you to raise a merge request for the current CI job if opted.
 5. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 6. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
    1. **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise BITBUCKET, BITBUCKET, VSGIT, GITLAB, GITHUB) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.\
@@ -158,7 +158,7 @@ This section is all about either deploying or validating the above package onto 
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
     3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
     4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](ez-merge.md) section to know more about the fields and their uses.)
+    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](version-control/ez-merge/) section to know more about the fields and their uses.)
        * **Add**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661516772937.png) icon to add up to **5** destination branches.
        *   **Delete**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661517037607.png) icon to delete a destination branch row.\
 

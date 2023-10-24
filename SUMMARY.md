@@ -120,6 +120,7 @@
         * [Pull Request Support for Azure Cloud](product-guides/arm/arm-features/version-control/external-pull-request/pull-request-support-for-azure-cloud.md)
         * [External Pull Request Summary Page](product-guides/arm/arm-features/version-control/external-pull-request/external-pull-request-summary-page.md)
       * [Commit Templates](product-guides/arm/arm-features/version-control/commit-templates.md)
+      * [GIT Revert](product-guides/arm/arm-features/version-control/git-revert.md)
       * [Build a package from Version Control](product-guides/arm/arm-features/version-control/build-a-package-from-version-control.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)

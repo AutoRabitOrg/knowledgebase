@@ -111,6 +111,7 @@
         * [Merge Conflicts](product-guides/arm/arm-features/version-control/ez-merge/merge-conflicts.md)
         * [Merge Requests](product-guides/arm/arm-features/version-control/ez-merge/merge-requests.md)
         * [Squash and Merge](product-guides/arm/arm-features/version-control/ez-merge/squash-and-merge.md)
+      * [Change Labels](product-guides/arm/arm-features/version-control/change-labels.md)
       * [Build a package from Version Control](product-guides/arm/arm-features/version-control/build-a-package-from-version-control.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)

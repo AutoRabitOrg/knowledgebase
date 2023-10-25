@@ -95,5 +95,5 @@ Click **OK** to complete the feature deployment process.
 
 You'll be redirected to the following:
 
-* [Commit History](../../../feature-commits.md) page if you have opted for the commit process to run.
+* [Commit History](../feature-commits.md) page if you have opted for the commit process to run.
 * [Feature Deployment Summary](feature-deployment-summary.md) page if you have opted for deployment. It is where you can view detailed deployment reports or re-deploy the nCino objects to your salesforce org/version control once again.

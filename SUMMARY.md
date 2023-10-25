@@ -182,6 +182,7 @@
         * [Deployment Using Version Control](product-guides/arm/arm-features/ncino/feature-deployment/deployment-using-version-control.md)
         * [Deployment via Version Control using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org.md)
         * [Feature Deployment Summary](product-guides/arm/arm-features/ncino/feature-deployment/feature-deployment-summary.md)
+        * [External Unique ID Validation](product-guides/arm/arm-features/ncino/feature-deployment/external-unique-id-validation.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

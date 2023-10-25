@@ -66,7 +66,7 @@ Under the **Build** section, fill in the below details:
 8. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.
 
 {% hint style="info" %}
-**Important Note:** To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account** ](arm-administration/user-management/manage-users-account-settings/)page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+**Important Note:** To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account** ](../../../arm-administration/user-management/manage-users-account-settings/)page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 {% endhint %}
 
 #### Backup to Version Control (Auto Commit) <a href="#backup-to-version-control-auto-commit" id="backup-to-version-control-auto-commit"></a>
@@ -74,11 +74,11 @@ Under the **Build** section, fill in the below details:
 Auto Commit option allows you to automatically commit the required changes from your Salesforce Org to the required Version Control System.
 
 1. Choose the Version Control type (GIT, TFS, or SVN).
-2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](salesforce-dx-metadata-format.md)
+2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](../../../salesforce-dx-metadata-format.md)
 3. **Additional option**:
    1. **Check out and commit the changes with user's credentials:** If your commits are being linked to different users, however, you wish to commit the whole changes with the selected user above, select this option
    2. **Check-out with the user credentials and commit the changes with actual modified user credentials:** This option fetches all the changes from the Salesforce org and commits the changes with the actually modified user credential
-   3.  **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](configure-record-types-picklist-values.md))\
+   3.  **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](../../../configure-record-types-picklist-values.md))\
 
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664798972740.png" alt=""><figcaption></figcaption></figure>
@@ -98,8 +98,8 @@ Allows you to schedule the process at which it must run.
 2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
 3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](ci-job-history.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-history.md) page where you can trigger a build for your CI job.

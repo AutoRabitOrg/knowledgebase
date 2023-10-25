@@ -11,7 +11,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Login to your ARM account.
-2.  From the top navigation pane, navigate to **Create New >** [**New CI Job**](../../ci-job-history.md).\
+2.  From the top navigation pane, navigate to **Create New >** [**New CI Job**](../../../ci-job-history.md).\
     \
 
 
@@ -57,8 +57,8 @@ Important Note:
 **Additional options in the 'Build' section**
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
-2. [**Pull Request**](external-pull-request/)**:** Creates a pull request for the current CI job if opted.
-3. [**Merge Request**](ez-merge/merge-requests.md)**:** Creates a merge request for the current CI job if opted.
+2. [**Pull Request**](../../version-control/external-pull-request/)**:** Creates a pull request for the current CI job if opted.
+3. [**Merge Request**](../../version-control/ez-merge/merge-requests.md)**:** Creates a merge request for the current CI job if opted.
 4. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 5. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
    1. **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise BITBUCKET, BITBUCKET, VSGIT, GITLAB, GITHUB) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.\
@@ -71,7 +71,7 @@ Important Note:
 
           <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665048283554.png" alt="" width="375"><figcaption></figcaption></figure>
 6. **Incremental Build:** Incremental builds are important for managing continuous builds for [continuous delivery](https://www.autorabit.com/blog/what-you-need-to-know-about-salesforce-continuous-delivery/). Incremental Builds substantially decrease build times by avoiding the execution of previous metadata that is not needed. This will fetch all the metadata changes beyond the selected Baseline Revision till the successfully deployed revision to the destination org. On the next CI Job run, the previous Baseline Revision automatically gets changed to the successfully deployed revision. Hence, there will be a substantial increase in build time performance for large-project incremental builds when a change to a single file or a small number of files is performed.Important Note:Incremental Build also works to validate **Deployment Jobs**.
-7. **Prepare Destructive Changes:** Pre-destructive changes option will allow the users to delete unwanted fields or metadata components from their destination [Salesforce org](../salesforce-org-management.md) before the deployments begin.
+7. **Prepare Destructive Changes:** Pre-destructive changes option will allow the users to delete unwanted fields or metadata components from their destination [Salesforce org](../../salesforce-org-management.md) before the deployments begin.
 8.  **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.\
 
 
@@ -92,11 +92,11 @@ Important Note:
 
 
             <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665048529349.png" alt="" width="375"><figcaption></figcaption></figure>
-        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../static-code-analysis-in-ci-cd.md).
+        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../static-code-analysis-in-ci-cd.md).
 9. **Additional Profile Packaging Options:**
-   1. **Remove login IP Ranges:** If you want to log in with a [Salesforce org](../../arm-administration/registration/salesforce-org/), you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
+   1. **Remove login IP Ranges:** If you want to log in with a [Salesforce org](../../../arm-administration/registration/salesforce-org/), you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
-10. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+10. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -112,8 +112,8 @@ Allows you to schedule the process at which it must run.
 2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
 3. **No schedule:** The process will only get saved, and you can run it when required.
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../ci-job-history.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-history.md) page where you can trigger a build for your CI job.

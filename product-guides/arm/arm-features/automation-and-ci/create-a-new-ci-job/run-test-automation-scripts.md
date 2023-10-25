@@ -59,7 +59,7 @@ There are different ways to fetch the Test cases:
           <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665046646306.png" alt=""><figcaption></figcaption></figure>
 7. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 \
 \
@@ -97,8 +97,8 @@ Allows you to schedule the process at which it must run.
 2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
 3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](ci-job-results.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-results.md) page where you can trigger a build for your CI job.

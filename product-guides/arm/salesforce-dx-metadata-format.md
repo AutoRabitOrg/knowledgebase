@@ -50,6 +50,6 @@ While creating commit labels for SFDX repositories, you need to select the sourc
 
 #### During Release Label creation <a href="#during-release-label-creation" id="during-release-label-creation"></a>
 
-During release label creation for [SFDX](arm-features/deploy-from-sfdx-branch-to-a-salesforce-org.md) repositories, you need to select the source folder under the **Package Directory** field.
+During release label creation for [SFDX](arm-features/automation-and-ci/create-a-new-ci-job/deploy-from-sfdx-branch-to-a-salesforce-org.md) repositories, you need to select the source folder under the **Package Directory** field.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613886753786.png" alt=""><figcaption></figcaption></figure>

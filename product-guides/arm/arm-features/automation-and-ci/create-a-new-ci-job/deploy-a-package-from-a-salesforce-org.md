@@ -6,7 +6,7 @@ The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on
 
 ### <mark style="color:blue;">1,000,000 customers have moved to SF CLI. Are you ready?</mark>
 
-[Why does Salesforce recommend moving from SFDX to SFCLI?](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/arm/troubleshoot/salesforce-known-limitations#why-does-salesforce-recommend-moving-from-sfdx-to-sfcli) Click [here](../troubleshoot/salesforce-known-limitations.md#why-does-salesforce-recommend-moving-from-sfdx-to-sfcli) for more info.
+[Why does Salesforce recommend moving from SFDX to SFCLI?](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/arm/troubleshoot/salesforce-known-limitations#why-does-salesforce-recommend-moving-from-sfdx-to-sfcli) Click [here](../../../troubleshoot/salesforce-known-limitations.md#why-does-salesforce-recommend-moving-from-sfdx-to-sfcli) for more info.
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -32,7 +32,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 Under the **Build** section, fill in the below details:
 
-1. Select the source [**Salesforce org**](../arm-administration/registration/salesforce-org/).
+1. Select the source [**Salesforce org**](../../../arm-administration/registration/salesforce-org/).
 2. Select the **Package type** to retrieve and bundle the changes from a source sandbox.
    1. **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
    2. **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a Salesforce Org.
@@ -76,7 +76,7 @@ Under the **Build** section, fill in the below details:
 3. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
-4. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+4. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 
 #### Deploy <a href="#deploy" id="deploy"></a>
 
@@ -89,13 +89,13 @@ This section is all about either deploying or validating the above package onto 
 2.  Specify the **Apex test level** you would like to run for the CI job.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 3. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
    1. **No Test Run:** No apex test is run unless it is a production deployment.
    2. **Run Specified Tests:** Only the tests that the user specifies are run. The benefit of choosing this option is that it checks code coverage criteria at the ARM level rather than checking it at the entire org level. The executed tests must cover the classes or triggers contained with a minimum of 75% code coverage. This coverage is computed for each class or trigger individually and is different from the overall coverage percentage.Important Note:Make sure for the runTests parameter, you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to Run Specified Tests.
    3. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
    4. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
-   5. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"** checkbox.Important Notes:
+   5. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"** checkbox.Important Notes:
       1. Only CI Jobs have the **"Do you want us to update the test classes"** checkbox enabled. This feature is yet to be implemented in other modules yet.
       2. Please make sure to execute all apex tests before configuring this option. This allows you to configure the mapping between the main class and the test class.
       3. If you have cleared the last run history in your destination org, again you are required to execute run all tests. If not done, the dependent test execution will fail.&#x20;
@@ -114,7 +114,7 @@ This section is all about either deploying or validating the above package onto 
 4. **Ignore Installed (Managed) components:** This option will exclude any **Managed packages** that the user may have installed.
    * **Ignore all manually created components:** All manually added components in the installed (managed) package will also get excluded.
 5. **Ignore warnings:** These allow the metadata members to get deployed even though errors/warnings are encountered during deployment.&#x20;
-6. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](salesforce-org-management.md) page in our application.
+6. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](../../salesforce-org-management.md) page in our application.
 7. **Run Destructive Changes:** Here you can specify whether to run pre or post-destructive changes while carrying out the deployment process.
 8. **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
 9. **On successful Deployment:**\
@@ -123,9 +123,9 @@ This section is all about either deploying or validating the above package onto 
    2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
    3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
    4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-   5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](version-control/ez-merge/) section to know more about the fields and their uses.)
+   5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
    6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
-   7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../parallel-processor.md) .
+   7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../../../parallel-processor.md) .
    8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
        To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.\
 
@@ -164,7 +164,7 @@ Before proceeding with the CI Job operation, you can run the functional test cas
 There are different ways to fetch the test cases:
 
 1. TAF Labels
-2. [Version Control](version-control/)
+2. [Version Control](../../version-control/)
 3. AccelQ (if AccelQ plugin is installed in ARM)
 4.  Provar (if Provar plugin is installed in ARM)\
 
@@ -207,7 +207,7 @@ There are different ways to fetch the test cases:
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
-The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
+The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../../../configure-callout-url.md))
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -237,4 +237,4 @@ If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vl
   * The following message will be displayed in the log if you do not select this option: **`Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository`**.&#x20;
   * The following message will be displayed in the log if you select this option but enter the wrong key: **`Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository`**.
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).

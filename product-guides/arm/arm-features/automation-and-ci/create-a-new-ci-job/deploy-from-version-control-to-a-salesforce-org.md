@@ -51,7 +51,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 **Additional options in the 'Build' section**
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
-2.  [**Vlocity Build**](../vlocity/)**:** This option allows you to deploy the velocity components from the metadata folder path to the sandbox.
+2.  [**Vlocity Build**](../../../vlocity/)**:** This option allows you to deploy the velocity components from the metadata folder path to the sandbox.
 
     1. **Pack Update:** This option will refresh the data Packs settings to the version included in the project in the destination org. However, this is recommended only if you are on the latest major version of the vlocity managed package.
     2.  **Pack Retry:** Continues a Job retrying all errors to redeploy once again. Pack Retry feature is currently not available for the non-SFDX repository.\
@@ -63,8 +63,8 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
     1. Prepare Destructive Changes, Run Static Analysis Report, Profile Packaging Options, and Exclude Metadata types option will be disabled whenever **'vlocity build'** checkbox is selected.&#x20;
     2. You can now trigger rollback deployment for **'vlocity build'** i.e., you can keep a copy of the changes before deployment and can revert the changes later. To do so, select the **Rollback** checkbox under the **Deploy** section.
-3. [**Pull Request**](version-control/external-pull-request/)**:** We support pull requests for both Github/Bitbucket (cloud and server) and Azure Cloud (both dx and non-dx repo) for the current CI job if opted.
-4. [**Merge Request**](version-control/ez-merge/merge-requests.md)**:** This allows you to raise a merge request for the current CI job if opted.
+3. [**Pull Request**](../../version-control/external-pull-request/)**:** We support pull requests for both Github/Bitbucket (cloud and server) and Azure Cloud (both dx and non-dx repo) for the current CI job if opted.
+4. [**Merge Request**](../../version-control/ez-merge/merge-requests.md)**:** This allows you to raise a merge request for the current CI job if opted.
 5. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 6. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
    1. **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise BITBUCKET, BITBUCKET, VSGIT, GITLAB, GITHUB) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.\
@@ -98,7 +98,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
 
             <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681893223730.png" alt="" width="375"><figcaption></figcaption></figure>
-        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../static-code-analysis.md).
+        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../static-code-analysis.md).
 
         <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681829761145.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -109,7 +109,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 1. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to login with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
-2. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+2. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.Important Note:To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 
 #### Deploy <a href="#deploy" id="deploy"></a>
 
@@ -121,14 +121,14 @@ This section is all about either deploying or validating the above package onto 
 1. Select the **Deployment org**.
 2. Specify the **Apex test level** you would like to run for the CI job.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt="" width="407"><figcaption></figcaption></figure>
 
 1. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
 2. **No Test Run:** No apex test is run unless it is a production deployment.
 3. **Run Specified Tests:** Only the tests that the user specifies are run. The benefit of choosing this option is that it checks code coverage criteria at the ARM level rather than checking it at the entire org level. The executed tests must cover the classes or triggers contained with a minimum of 75% code coverage. This coverage is computed for each class or trigger individually and is different from the overall coverage percentage.Important Note:Make sure for the runTests parameter, you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to Run Specified Tests.
 4. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 5. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
-6. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.Important Notes:
+6. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.Important Notes:
    1. Only CI Jobs have the **"Do you want us to update the test classes"** checkbox enabled. This feature is yet to be implemented in other modules yet.
    2. Please make sure to execute all apex tests before configuring this option. This allows you to configure the mapping between the main class and the test class.
    3. If you have cleared the last run history in your destination org, again you are required to execute run all tests. If not done, the dependent test execution will fail.&#x20;
@@ -148,7 +148,7 @@ This section is all about either deploying or validating the above package onto 
 4. **Ignore Installed (Managed) components:** This option will exclude any **Managed packages** that the user may have installed.
    * **Ignore all manually created components:** All manually added components in the installed (managed) package will also get excluded.
 5. **Ignore warnings:** These allow the metadata members to get deployed even though errors/warnings are encountered during deployment.
-6. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](salesforce-org-management.md) page in our application.
+6. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](../../salesforce-org-management.md) page in our application.
 7. **Run Destructive Changes:** Here you can specify whether to run pre or post-destructive changes while carrying out the deployment process.
 8. **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
 9.  **On successful Deployment**\
@@ -158,14 +158,14 @@ This section is all about either deploying or validating the above package onto 
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
     3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
     4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](version-control/ez-merge/) section to know more about the fields and their uses.)
+    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
        * **Add**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661516772937.png) icon to add up to **5** destination branches.
        *   **Delete**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661517037607.png) icon to delete a destination branch row.\
 
 
            <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661516223786.png" alt=""><figcaption></figcaption></figure>
     6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
-    7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link  [ HERE ](../parallel-processor.md).
+    7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link  [ HERE ](../../../parallel-processor.md).
     8. **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
        \
        To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.
@@ -251,7 +251,7 @@ There are different ways to fetch the test cases:
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
-The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
+The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../../../configure-callout-url.md))
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -287,8 +287,8 @@ If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vl
   * The following message will be displayed in the log if you do not select this option: **`Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository`**.&#x20;
   * The following message will be displayed in the log if you select this option but enter the wrong key: **`Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository`**.
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../ci-job-history.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-history.md) page where you can trigger a build for your CI job.

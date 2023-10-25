@@ -77,7 +77,7 @@ To keep our product up to date with the most recent Salesforce updates, AutoRABI
 
 With this release, you can choose to **merge** from one **source branch** to multiple **destination branches** upon successful deployment.
 
-[**Read more →**](../../../product-guides/arm/arm-features/deploy-from-sfdx-branch-to-a-salesforce-org.md)
+[**Read more →**](../../../product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/deploy-from-sfdx-branch-to-a-salesforce-org.md)
 
 #### 7. OAuth for Jira <a href="#7-oauth-for-jira" id="7-oauth-for-jira"></a>
 

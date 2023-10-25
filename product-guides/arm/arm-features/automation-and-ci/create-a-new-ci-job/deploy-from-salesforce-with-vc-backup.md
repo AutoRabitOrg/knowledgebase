@@ -61,7 +61,7 @@ Under the **Build** section, fill in the below details:
 
         <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664797907228.png" alt=""><figcaption></figcaption></figure>
 
-    For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](arm-features/static-code-analysis-in-ci-cd.md).
+    For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../static-code-analysis-in-ci-cd.md).
 10. **Additional Profile Packaging Options:**
     1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
     2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
@@ -76,11 +76,11 @@ Under the **Build** section, fill in the below details:
 Auto Commit option allows you to automatically commit the required changes from your Salesforce Org to the required Version Control System.
 
 1. Choose the Version Control type (GIT, TFS, or SVN).
-2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](salesforce-dx-metadata-format.md)
+2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](../../../salesforce-dx-metadata-format.md)
 3. **Additional option**:
    1. **Check out and commit the changes with user's credentials:** If your commits are being linked to different users, however, you wish to commit the whole changes with the selected user above, select this option
    2. **Check-out with the user credentials and commit the changes with actual modified user credentials:** This option fetches all the changes from the Salesforce org and commits the changes with the actually modified user credential.
-   3. **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](record-types-picklistvalues.md))
+   3. **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](../../../record-types-picklistvalues.md))
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665056776194.png)
 
@@ -107,7 +107,7 @@ This section is all about either deploying or validating the above package onto 
 
 1. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 2. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
-3. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.
+3. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.
 
 {% hint style="info" %}
 **Important Notes:**
@@ -143,7 +143,7 @@ This section is all about either deploying or validating the above package onto 
 * **Ignore all manually created components:** All manually added components in the installed (managed) package will also get excluded.
 
 2. **Ignore warnings:** These allow the metadata members to get deployed even though errors/warnings are encountered during deployment.
-3. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [**Salesforce Org Management**](arm-features/salesforce-org-management.md) page in our application.
+3. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [**Salesforce Org Management**](../../salesforce-org-management.md) page in our application.
 4. **Run Destructive Changes:** Here you can specify whether to run pre or post-destructive changes while carrying out the deployment process.
 5. **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
 6.  **On successful Deployment**\
@@ -155,9 +155,9 @@ This section is all about either deploying or validating the above package onto 
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
     3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
     4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](arm-features/version-control/ez-merge/) section to know more about the fields and their uses.)
+    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
     6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
-    7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link  [ HERE ](parallel-processor.md) .
+    7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link  [ HERE ](../../../parallel-processor.md) .
     8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
         \
         To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.\
@@ -241,7 +241,7 @@ There are different ways to fetch the test cases:
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
-The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](configure-callout-url.md))
+The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../../../configure-callout-url.md))
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -271,8 +271,8 @@ If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vl
   * The following message will be displayed in the log if you do not select this option: **`Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository`**.&#x20;
   * The following message will be displayed in the log if you select this option but enter the wrong key: **`Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository`**.
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](ci-job-results.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-results.md) page where you can trigger a build for your CI job.

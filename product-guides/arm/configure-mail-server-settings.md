@@ -59,7 +59,7 @@ NoteIf you are not receiving any emails related to the application, you can cont
 
 #### Teams/Slack Settings <a href="#teamsslack-settings" id="teamsslack-settings"></a>
 
-When an event is triggered in ARM, email notifications are sent to the selected individuals. If you want to send notifications for particular events to an entire group within your organization through **`Teams`** or **`Slack`**, then integrate your Teams or Slack application with ARM using the respective **`Webhook Integration URL`**. For more information on configuring a webhook on **`Teams`**, click [HERE](webhooks/configure-a-webhook-in-teams.md). For **`Slack`**, click [HERE](webhooks/configure-a-webhook-in-slack.md).
+When an event is triggered in ARM, email notifications are sent to the selected individuals. If you want to send notifications for particular events to an entire group within your organization through **`Teams`** or **`Slack`**, then integrate your Teams or Slack application with ARM using the respective **`Webhook Integration URL`**. For more information on configuring a webhook on **`Teams`**, click [HERE](arm-features/automation-and-ci/webhooks/configure-a-webhook-in-teams.md). For **`Slack`**, click [HERE](arm-features/automation-and-ci/webhooks/configure-a-webhook-in-slack.md).
 
 1.  Select either **`Teams`** or **`Slack`** as per your organization's requirements.\
 

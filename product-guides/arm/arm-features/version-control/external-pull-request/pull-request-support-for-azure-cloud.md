@@ -2,7 +2,7 @@
 
 Pull requests let your team give feedback on changes in feature branches before merging the code into the master branch. Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-Previously, we had [GitHub](../../../enabling-github-checks.md) and Bitbucket support. We've included support for [Azure DevOps](../../../azure-devops.md) in the ARM 21.6 release.
+Previously, we had [GitHub](../../automation-and-ci/enabling-github-checks.md) and Bitbucket support. We've included support for [Azure DevOps](../../../azure-devops.md) in the ARM 21.6 release.
 
 For each pull request created inside AutoRABIT, you will have a link that will redirect you to the Azure DevOps application externally where you can view the code changes, merge the changes and close the pull request. But, if there are problems with the proposed changes, they can post feedback in the pull request. Follow-up commits will show up right next to the relevant comments.
 

@@ -11,7 +11,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Login to your ARM account.
-2.  From the top navigation pane, navigate to **Create New >** [**New CI Job**](../../../ci-job-history.md).\
+2.  From the top navigation pane, navigate to **Create New >** [**New CI Job**](../ci-job-history.md).\
     \
 
 
@@ -116,4 +116,4 @@ For more information on **Credential Usage** for different types of CI jobs, ref
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-history.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../ci-job-history.md) page where you can trigger a build for your CI job.

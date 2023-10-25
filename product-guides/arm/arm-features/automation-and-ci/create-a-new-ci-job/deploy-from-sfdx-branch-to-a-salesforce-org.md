@@ -192,7 +192,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
        * **Delete**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1661517037607.png) icon to delete a destination branch row.\
          ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665052943877.png)
     6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
-    7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../../../parallel-processor.md) .
+    7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../parallel-processor.md) .
     8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
         \
         To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.\
@@ -278,7 +278,7 @@ There are different ways to fetch the test cases:
 
 ### Callout URL <a href="#callout-url" id="callout-url"></a>
 
-The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../../../configure-callout-url.md))
+The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
 
 ### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -312,4 +312,4 @@ For more information on **Credential Usage** for different types of CI jobs, ref
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../../ci-job-history.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../ci-job-history.md) page where you can trigger a build for your CI job.

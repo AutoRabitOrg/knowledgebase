@@ -125,7 +125,7 @@ This section is all about either deploying or validating the above package onto 
    4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
    5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
    6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
-   7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../../../parallel-processor.md) .
+   7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../parallel-processor.md) .
    8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
        To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.\
 
@@ -207,7 +207,7 @@ There are different ways to fetch the test cases:
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
-The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../../../configure-callout-url.md))
+The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 

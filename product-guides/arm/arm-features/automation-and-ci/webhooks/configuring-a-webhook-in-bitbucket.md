@@ -4,7 +4,7 @@
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinBitbucketcustom1.png" alt="" width="563"><figcaption></figcaption></figure>
-2. Click **Settings** and select [**Webhooks**](../../codescan/codescan-integration/webhooks/).
+2. Click **Settings** and select [**Webhooks**](../../../../codescan/codescan-integration/webhooks/).
 3.  Next, enter the URL in the given format: **InstanceURL/autorabitrest/webhook/triggerSCMPushrequest**\
     For example, if the instance is **https://login.autorabit.com**, then the **payload URL** would be: _https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest_\
 

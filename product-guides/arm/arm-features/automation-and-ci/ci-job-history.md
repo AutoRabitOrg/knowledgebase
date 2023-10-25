@@ -63,7 +63,7 @@ The Changes screen will display the following info:
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1659521211281.png" alt="" width="563"><figcaption></figcaption></figure>
-*   **Destructive Changes:** The destructive changes components will get listed on this tab ([Learn More](arm-features/destructive-changes.md))\
+*   **Destructive Changes:** The destructive changes components will get listed on this tab ([Learn More](../destructive-changes.md))\
     \
 
 

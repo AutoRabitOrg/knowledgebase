@@ -45,7 +45,7 @@ The **RecordType** component may be deployed to the target environment, but it c
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/step%20based%20rollback.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/ci-job-rollback.md)
+[**Read more →**](../../../product-guides/arm/arm-features/automation-and-ci/ci-job-rollback.md)
 
 ***
 

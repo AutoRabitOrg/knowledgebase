@@ -77,4 +77,4 @@ For the CI jobs configured without ALM, the below screen will be displayed.
 * It's best not to edit the CI jobs while the build progresses, which may lead to the failure of the job. Abort the build process if required to edit the CI jobs.
 {% endhint %}
 
-1. You'll be redirected to the [CI Job Results](../ci-job-history.md) page where you can view the detailed report for your build triggered.
+1. You'll be redirected to the [CI Job Results](ci-job-history.md) page where you can view the detailed report for your build triggered.

@@ -19,7 +19,7 @@ A weekly clean-up will ensure that the application runs smoothly. The default da
 Finding a **CI Job** has never been easier. Instead of scrolling through endless pages, you can search for a job or a group by simply typing the name in the new dropdown lists. You can further narrow the search results by combining these two options to look for a particular job within a group.
 
 Additionally, the **filter** feature provides further options to narrow the search results by source type, date range, and more.\
-[**Read more →**](../../../product-guides/arm/ci-job-list.md)
+[**Read more →**](../../../product-guides/arm/arm-features/automation-and-ci/ci-job-list.md)
 
 #### 3. Ability to Abort a Vlocity Deployment <a href="#3-ability-to-abort-a-vlocity-deployment" id="3-ability-to-abort-a-vlocity-deployment"></a>
 

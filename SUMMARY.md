@@ -136,7 +136,6 @@
       * [Preparing the CSV file for ARM Dataloader](product-guides/arm/arm-features/dataloader/preparing-the-csv-file-for-arm-dataloader.md)
     * [Automation and CI](product-guides/arm/arm-features/automation-and-ci/README.md)
       * [Create a New CI Job](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/README.md)
-        * [Create and Install an Unlocked/Managed Package Version from a Version Control Branch](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/create-and-install-an-unlocked-managed-package-version-from-a-version-control-branch.md)
         * [Build a Package from Salesforce](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/build-a-package-from-salesforce.md)
         * [Backup your project to Version Control](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/backup-your-project-to-version-control.md)
         * [Build a package from Version Control](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/build-a-package-from-version-control.md)

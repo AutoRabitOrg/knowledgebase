@@ -162,6 +162,7 @@
         * [Configure a webhook in Visual Studio GIT Enterprise](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-visual-studio-git-enterprise.md)
         * [Configure a Webhook in Teams](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-teams.md)
         * [Configure a Webhook in Slack](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-slack.md)
+      * [Automate Merge When CI Builds Pass](product-guides/arm/arm-features/automation-and-ci/automate-merge-when-ci-builds-pass.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

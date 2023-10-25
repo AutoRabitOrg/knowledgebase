@@ -99,7 +99,7 @@ Environment Provisioning is a unique interface ARM provides to quickly facilitat
 
 Admin-related items are displayed here, such as registering of Salesforce Org, Version Control, adding team members, etc.
 
-#### [nCino](ncino.md) <a href="#ncino" id="ncino"></a>
+#### [nCino](arm-features/ncino/) <a href="#ncino" id="ncino"></a>
 
 nCino-related operations will be displayed in this section, for ex- creating a feature migration template, automating nCino deployments, etc.
 

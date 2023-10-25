@@ -1,6 +1,6 @@
 # Deployment Using Feature Migration Template
 
-This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.&#x20;
+This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](arm-features/ncino/feature-migration/create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.&#x20;
 
 1.  Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 

@@ -50,7 +50,7 @@ The **Spreads Schedules Template** template includes the following objects:
 * LLC\_BI\_\_Schedule\_Section\_\_c
 * LLC\_BI\_\_Schedule\_Entry\_\_c
 
-[**Read more →**](../../../product-guides/arm/create-a-feature-migration-template.md)
+[**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-migration/create-a-feature-migration-template.md)
 
 ***
 

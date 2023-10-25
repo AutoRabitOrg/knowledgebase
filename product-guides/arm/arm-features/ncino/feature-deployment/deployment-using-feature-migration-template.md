@@ -1,6 +1,6 @@
 # Deployment Using Feature Migration Template
 
-This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](arm-features/ncino/feature-migration/create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.&#x20;
+This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](../feature-migration/create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.&#x20;
 
 1.  Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
@@ -95,5 +95,5 @@ Click **OK** to complete the feature deployment process.
 
 You'll be redirected to the following:
 
-* [Commit History](feature-commits.md) page if you have opted for the commit process to run.
+* [Commit History](../../../feature-commits.md) page if you have opted for the commit process to run.
 * [Feature Deployment Summary](feature-deployment-summary.md) page if you have opted for deployment. It is where you can view detailed deployment reports or re-deploy the nCino objects to your salesforce org/version control once again.

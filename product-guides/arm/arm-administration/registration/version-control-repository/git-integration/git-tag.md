@@ -80,6 +80,6 @@ AutoRABIT will create the GIT tag while CI Job is triggered and is successfully 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1617514256063.png" alt=""><figcaption></figcaption></figure>
 
-6. The remaining steps are similar to other deployments methods, do refer to the article: [Create and Deploy Changes](../../../../create-and-deploy-changes-in-autorabit.md)
+6. The remaining steps are similar to other deployments methods, do refer to the article: [Create and Deploy Changes](../../../../arm-features/deployment/create-and-deploy-changes-in-autorabit.md)
 
 \

@@ -166,7 +166,7 @@ In this section, you can assign certain pre-validation merge operations (such as
       Important Note**Standard fields** are not supported for **Ignore Missing Visible Settings**.\
 
    4. **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.&#x20;
-   5.  **Apex Test Level:** Choose your [Apex Test Level](../../../apex-unit-tests.md) to validate your merge.
+   5.  **Apex Test Level:** Choose your [Apex Test Level](../../deployment/apex-unit-tests.md) to validate your merge.
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682260915531.png" alt=""><figcaption></figcaption></figure>
 

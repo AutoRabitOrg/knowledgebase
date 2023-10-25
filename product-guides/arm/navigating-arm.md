@@ -71,7 +71,7 @@ A list of action items related to the Version Control system will get displayed,
 
 ARM's Continuous Integration (CI) is designed to help customers rapidly release code confidently by automating the build, test, and deployment process to accomplish Continuous Delivery for Salesforce. CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository upon completing every task. You can release code faster as it allows you to track application development and metadata modifications.
 
-#### [Deployment](deployment.md) <a href="#deployment" id="deployment"></a>
+#### [Deployment](arm-features/deployment/) <a href="#deployment" id="deployment"></a>
 
 The **Deployment** process allows you to quickly and safely transfer new developments from your sandbox instance to a production instance. You can transfer validation rules, custom objects, new fields, apex codes, and many other components from your development environment to a live production environment using the deployment process.
 

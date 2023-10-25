@@ -76,7 +76,7 @@ You can then perform a Merge Request to trigger the CI job and validate the depl
 
 #### 13. How do I include destructive changes in a CI job? <a href="#13-how-do-i-include-destructive-changes-in-a-ci-job" id="13-how-do-i-include-destructive-changes-in-a-ci-job"></a>
 
-Review this [Knowledge Base article](../../product-guides/arm/arm-features/destructive-changes.md), which covers performing destructive changes through CI jobs.
+Review this [Knowledge Base article](../../product-guides/arm/arm-features/deployment/destructive-changes.md), which covers performing destructive changes through CI jobs.
 
 #### 14. The ‘File Changes’ tab shows that the Quick Actions metadata type is deleted. Why isn’t this reflected in the Destructive Changes tab or the package xml? <a href="#14-the-file-changes-tab-shows-that-the-quick-actions-metadata-type-is-deleted-why-isnt-this-reflecte" id="14-the-file-changes-tab-shows-that-the-quick-actions-metadata-type-is-deleted-why-isnt-this-reflecte"></a>
 

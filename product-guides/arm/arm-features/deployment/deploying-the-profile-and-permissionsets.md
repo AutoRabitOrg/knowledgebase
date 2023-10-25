@@ -25,18 +25,18 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 7.  Select the metadata components (including its metadata members) for which you want to view the selected profile/permissionset comparison report. A minimum of one metadata component selection is required to proceed further.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 8.  About Object Permissions in Profiles, Editing standard objects on standard profiles is not supported by Salesforce. Hence, these changes won't show up in your destination environment.\
     \
 
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2023-06-22 at 12.21.49 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2023-06-22 at 12.21.49 PM.png" alt=""><figcaption></figcaption></figure>
 9. Select the **`'Hide components with no differences'`** checkbox to hide the components with no differences.
 10. Give the process a **`Label Name`**. Click **`Compare`**.\
     \
 
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 11. Important Notes:
     1. Based on the size of your Profiles, the time taken for comparison can vary. You can navigate to a different screen and return to the **`Profile Manager`** page once the results are ready and available.
     2. To optimize browser performance, it is recommended to compare one access setting at a time (in case of large profiles).

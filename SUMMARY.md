@@ -188,6 +188,7 @@
         * [Running a CI Job](product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job.md)
         * [CI Job Results](product-guides/arm/arm-features/ncino/feature-ci-jobs/ci-job-results.md)
         * [CI Job List screen](product-guides/arm/arm-features/ncino/feature-ci-jobs/ci-job-list-screen.md)
+      * [Post Deployment Activities](product-guides/arm/arm-features/ncino/post-deployment-activities.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

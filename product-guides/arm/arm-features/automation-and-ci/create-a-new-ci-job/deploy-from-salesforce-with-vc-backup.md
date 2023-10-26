@@ -76,7 +76,7 @@ Under the **Build** section, fill in the below details:
 Auto Commit option allows you to automatically commit the required changes from your Salesforce Org to the required Version Control System.
 
 1. Choose the Version Control type (GIT, TFS, or SVN).
-2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](../../../salesforce-dx-metadata-format.md)
+2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](../../salesforce-dx/salesforce-dx-metadata-format.md)
 3. **Additional option**:
    1. **Check out and commit the changes with user's credentials:** If your commits are being linked to different users, however, you wish to commit the whole changes with the selected user above, select this option
    2. **Check-out with the user credentials and commit the changes with actual modified user credentials:** This option fetches all the changes from the Salesforce org and commits the changes with the actually modified user credential.

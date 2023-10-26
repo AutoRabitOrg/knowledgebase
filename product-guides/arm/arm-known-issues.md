@@ -4,7 +4,7 @@ These are the known issues in **ARM® 22.2**.
 
 #### Salesforce DX known issues <a href="#salesforce-dx-known-issues" id="salesforce-dx-known-issues"></a>
 
-These are the known issues for [Salesforce DX](salesforce-dx.md) in this release.
+These are the known issues for [Salesforce DX](arm-features/salesforce-dx/) in this release.
 
 **Failed to initiate deployment**\
 If a process is added to Salesforce's queue for more than 30 minutes during the deployment of CI Jobs with SFDX Repo as the source, the error **"Failed to initiate deployment"** is returned.

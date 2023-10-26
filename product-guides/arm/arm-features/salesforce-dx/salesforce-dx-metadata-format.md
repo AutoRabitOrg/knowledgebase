@@ -24,7 +24,7 @@ While committing metadata components from a Salesforce org to an SFDX repository
 
 #### During CI Job <a href="#during-ci-job" id="during-ci-job"></a>
 
-While deploying the SFDX source from a [Version Control](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) branch to a [Salesforce Org](arm-features/salesforce-org-management.md), you need to choose the source folder for your SFDX repository.
+While deploying the SFDX source from a [Version Control](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) branch to a [Salesforce Org](../salesforce-org-management.md), you need to choose the source folder for your SFDX repository.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613886143538.png" alt=""><figcaption></figcaption></figure>
 
@@ -32,7 +32,7 @@ While deploying the SFDX source from a [Version Control](https://www.autorabit.c
 
 #### During Branching Baseline operation <a href="#during-branching-baseline-operation" id="during-branching-baseline-operation"></a>
 
-While retrieving and committing all the metadata components from a [Salesforce org](arm-administration/registration/salesforce-org/) to SDFX Branch, you need to select the source folder under the **Package Directory** field.
+While retrieving and committing all the metadata components from a [Salesforce org](../../arm-administration/registration/salesforce-org/) to SDFX Branch, you need to select the source folder under the **Package Directory** field.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613886342200.png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -50,6 +50,6 @@ While creating commit labels for SFDX repositories, you need to select the sourc
 
 #### During Release Label creation <a href="#during-release-label-creation" id="during-release-label-creation"></a>
 
-During release label creation for [SFDX](arm-features/automation-and-ci/create-a-new-ci-job/deploy-from-sfdx-branch-to-a-salesforce-org.md) repositories, you need to select the source folder under the **Package Directory** field.
+During release label creation for [SFDX](../automation-and-ci/create-a-new-ci-job/deploy-from-sfdx-branch-to-a-salesforce-org.md) repositories, you need to select the source folder under the **Package Directory** field.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613886753786.png" alt=""><figcaption></figcaption></figure>

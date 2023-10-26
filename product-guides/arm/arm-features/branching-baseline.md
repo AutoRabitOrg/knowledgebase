@@ -34,7 +34,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
 {% hint style="info" %}
 
 
-**Important Note**: For Version Control registered in the **SFDX** structure, specify the **Source Folder** from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the **Package Directory** under the **sfdx-project.json** file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](../salesforce-dx-metadata-format.md)
+**Important Note**: For Version Control registered in the **SFDX** structure, specify the **Source Folder** from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the **Package Directory** under the **sfdx-project.json** file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](salesforce-dx/salesforce-dx-metadata-format.md)
 {% endhint %}
 
 5. **`Exclude baseline managed package changes:`** This option will ensure that only unpackaged components are retrieved into your version control branch.&#x20;

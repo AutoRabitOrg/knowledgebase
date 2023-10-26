@@ -231,6 +231,7 @@
       * [Unsupported Metadata Templates](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/README.md)
         * [Account Teams](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/account-teams/README.md)
           * [EnableAccountTeams](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/account-teams/enableaccountteams.md)
+          * [DeleteAccount](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/account-teams/deleteaccount.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

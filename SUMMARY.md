@@ -189,6 +189,7 @@
         * [CI Job Results](product-guides/arm/arm-features/ncino/feature-ci-jobs/ci-job-results.md)
         * [CI Job List screen](product-guides/arm/arm-features/ncino/feature-ci-jobs/ci-job-list-screen.md)
       * [Specify Baseline Revision in Continuous Integration for Version Control](product-guides/arm/arm-features/ncino/specify-baseline-revision-in-continuous-integration-for-version-control.md)
+      * [Selecting a Range of Revisions](product-guides/arm/arm-features/ncino/selecting-a-range-of-revisions.md)
       * [Post Deployment Activities](product-guides/arm/arm-features/ncino/post-deployment-activities.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)

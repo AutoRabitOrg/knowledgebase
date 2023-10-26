@@ -93,7 +93,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **22 October 2023**
 
-**(ARM v. 23.1.4)**
+**(ARM v. 22.3.44)**
 
 This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
 
@@ -113,7 +113,7 @@ This interim release consisted of the following:
 
 #### 15 October 2023
 
-**(ARM v23.1.3)**
+**(ARM v22.3.43)**
 
 **AutoRABIT provided the API 59.0 changes as part of its weekly fixes on both 22.3 and 23.1. This is available only for ARM modules, not for Dataloader or nCino. For DL and nCino, API 59.0 changes will be available next week as part of the Wednesday fixes deployment.**
 

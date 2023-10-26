@@ -98,7 +98,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
 
             <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681893223730.png" alt="" width="375"><figcaption></figcaption></figure>
-        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../reports/static-code-analysis.md).
+        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../static-code-analysis.md).
 
         <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681829761145.png" alt="" width="375"><figcaption></figcaption></figure>
 

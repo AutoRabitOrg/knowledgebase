@@ -4,7 +4,7 @@ description: >-
   model/IDE driven development
 ---
 
-# Benefits Comparsiton of AutoRABIT Test Automation Factory
+# Benefits Comparison of AutoRABIT Test Automation Factory
 
 AutoRABIT TAF has an enhanced Selenium Playback engine developed exclusively for the Salesforce Platform.
 

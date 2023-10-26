@@ -79,7 +79,7 @@ The **Deployment** process allows you to quickly and safely transfer new develop
 
 ARM Data Loader allows you to configure your data loading operations in convenient and user-friendly GUI wizards and even allows importing and exporting Salesforce data without typing a line of code. Its powerful and easy-to-understand scheduling settings will enable you to specify almost any schedule quickly. You may schedule any data-loading operation for automatic execution.
 
-#### [Test Automation Factory (TAF)](arm-features/taf/taf-workflow.md) <a href="#test-automation-factory-taf" id="test-automation-factory-taf"></a>
+#### [Test Automation Factory (TAF)](taf-workflow.md) <a href="#test-automation-factory-taf" id="test-automation-factory-taf"></a>
 
 Test Automation Factory or TAF is a semi-automated functional test automation framework built into the ARM suite that can accelerate the test automation effort and reduce the cost of test automation by 75% of what will incur with traditional programming-driven/IDE (Integrated Development Environment) driven test automation.
 

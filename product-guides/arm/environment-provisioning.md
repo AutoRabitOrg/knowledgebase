@@ -9,7 +9,7 @@ Environment Provisioning is a unique interface provided by AutoRABIT to quickly 
 ### Supported Template Creation <a href="#supported-template-creation" id="supported-template-creation"></a>
 
 1. [Migration Template](arm-features/environment-provisioning/migration-template/)
-2. [Unsupported metadata template](unsupported-metadata-templates.md)
+2. [Unsupported metadata template](arm-features/environment-provisioning/unsupported-metadata-templates/)
 
 ***
 

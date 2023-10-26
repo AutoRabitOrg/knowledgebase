@@ -5,7 +5,7 @@ To create this template, follow the below steps:
 1. Login to your ARM account.
 2. Click on **Env. Pro.** module.
 3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](unsupported-metadata-templates.md) tab.
+4. Go to the **Create** [**Unsupported Metadata Template**](arm-features/environment-provisioning/unsupported-metadata-templates/) tab.
 5. Enter the **Template Name** and a short **Description** of it.
 6. Select the **Sandbox Refresh** checkbox available under **Sandbox Refresh**.
 7. Click **Add**.

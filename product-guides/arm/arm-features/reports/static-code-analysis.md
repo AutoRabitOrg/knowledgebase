@@ -14,7 +14,7 @@ Static analysis is generally good at finding coding issues, such as:
 
 ### Run Static Code Analysis <a href="#run-static-code-analysis" id="run-static-code-analysis"></a>
 
-To run a static code tool on your [Salesforce Org](arm-administration/registration/salesforce-org/) or Version Control Branch, follow the below steps:
+To run a static code tool on your [Salesforce Org](../../arm-administration/registration/salesforce-org/) or Version Control Branch, follow the below steps:
 
 1.  Hover your mouse over the **REPORTS** module and choose the option: [**STATIC CODE ANALYSIS**](https://www.autorabit.com/products/codescan/)\
 
@@ -30,7 +30,7 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654492199871.png" alt="" width="375"><figcaption></figcaption></figure>
-   *   For [**Version Control**](arm-features/version-control/) selection, choose your source **Repository** and **Branch**.\
+   *   For [**Version Control**](../version-control/) selection, choose your source **Repository** and **Branch**.\
 
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654492366768.png" alt="" width="375"><figcaption></figcaption></figure>

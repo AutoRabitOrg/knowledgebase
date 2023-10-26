@@ -30,7 +30,7 @@ To create a new Scratch Org, perform the below steps:
 
 In this section, you would be filling your scratch org details.
 
-Select the **Dev HUB** name. This is the main [Salesforce org](../salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
+Select the **Dev HUB** name. This is the main [Salesforce org](arm-features/salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613934716347.png" alt=""><figcaption></figcaption></figure>
 
@@ -96,7 +96,7 @@ This section is all about choosing the right deployment source; it can be from y
 1. **Remove Login IP Ranges:** This option will remove IP ranges from your profile while deploying.
 2. **Remove System and User Permissions:** Remove the user's permission from your profile while deploying.
 3. **Do not include Destructive members:** Select this checkbox if you have configured certain metadata types to skip while deploying. You can configure such metadata types under the **Admin > Salesforce Org Management** page.
-4. **Do not include Skip members:** Select this checkbox if you have configured certain metadata types to skip while deploying under the [My Account](../../arm-administration/user-management/manage-users-account-settings/) page.
+4. **Do not include Skip members:** Select this checkbox if you have configured certain metadata types to skip while deploying under the [My Account](arm-administration/user-management/manage-users-account-settings/) page.
 5. **Ignore installed components:** When selected, AutoRABIT will scan for the components that are deployed, and if there are any managed package components located in the target org, these components will be excluded from the metadata.zip files while the remaining components will get deployed.
 6. **Fetch Wavexmd components (applicable only if WaveDashboard's metadata type is chosen for deployment):** Upon selection, this checkbox will allow you to select the respective wavexmd files belonging to the wave dashboard metadata type and deploy them via selective deployment to another Salesforce Org. This checkbox will be hidden if the 'WaveDashboard' metadata type or its corresponding members are not picked.&#x20;
 7. Choose the **Static Code Analysis** tool to detect bugs, code smells, and security vulnerabilities before the deployment begins.

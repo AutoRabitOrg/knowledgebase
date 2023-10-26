@@ -26,7 +26,7 @@ The users could previously build a new package (unlocked or managed) and update 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/import%20packages.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/arm-features/salesforce-dx/import-an-unlocked-managed-package.md)
+[**Read more →**](../../../product-guides/arm/import-an-unlocked-managed-package.md)
 
 **Dev Hub management**
 
@@ -34,7 +34,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 ![Dev hub.gif](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Dev%20hub.gif)
 
-[**Read more →**](../../../product-guides/arm/arm-features/salesforce-dx/registering-a-devhub.md)
+[**Read more →**](../../../product-guides/arm/registering-a-devhub.md)
 
 #### 3. Step-based rollback <a href="#3-stepbased-rollback" id="3-stepbased-rollback"></a>
 

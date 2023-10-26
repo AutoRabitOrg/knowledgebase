@@ -79,15 +79,15 @@ The **Deployment** process allows you to quickly and safely transfer new develop
 
 ARM Data Loader allows you to configure your data loading operations in convenient and user-friendly GUI wizards and even allows importing and exporting Salesforce data without typing a line of code. Its powerful and easy-to-understand scheduling settings will enable you to specify almost any schedule quickly. You may schedule any data-loading operation for automatic execution.
 
-#### [Test Automation Factory (TAF)](taf-workflow.md) <a href="#test-automation-factory-taf" id="test-automation-factory-taf"></a>
+#### [Test Automation Factory (TAF)](arm-features/taf/taf-workflow.md) <a href="#test-automation-factory-taf" id="test-automation-factory-taf"></a>
 
 Test Automation Factory or TAF is a semi-automated functional test automation framework built into the ARM suite that can accelerate the test automation effort and reduce the cost of test automation by 75% of what will incur with traditional programming-driven/IDE (Integrated Development Environment) driven test automation.
 
-#### [Salesforce-DX (SFDX)](arm-features/salesforce-dx/) <a href="#salesforcedx-sfdx" id="salesforcedx-sfdx"></a>
+#### [Salesforce-DX (SFDX)](salesforce-dx.md) <a href="#salesforcedx-sfdx" id="salesforcedx-sfdx"></a>
 
 Salesforce Developer Experience (DX) is a new set of tools that streamlines the entire development life cycle. It improves team development and collaboration, facilitates automated testing and continuous integration, and makes the release cycle more efficient and agile. It’s a new approach that supports team collaboration, focusing on predictability, quality, and standardized development life-cycle on Salesforce. Salesforce DX enables developers to build and release the latest features in a short period with minimal risk. ARM provides the best Salesforce Developer Experience with continuous integration and helps deliver software rapidly.
 
-#### [Reports](arm-features/reports/reports-overview.md) <a href="#reports" id="reports"></a>
+#### [Reports](reports-overview.md) <a href="#reports" id="reports"></a>
 
 ARM allows its users to view all the deployment, merge, dataloader related information carried out in the Salesforce Org in the form of reports. This information improves productivity, accountability, and insight into your business data in the form of reports.
 

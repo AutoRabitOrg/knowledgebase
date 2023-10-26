@@ -191,6 +191,7 @@
       * [Post Deployment Activities](product-guides/arm/arm-features/ncino/post-deployment-activities.md)
       * [Specify Baseline Revision in Continuous Integration for Version Control](product-guides/arm/arm-features/ncino/specify-baseline-revision-in-continuous-integration-for-version-control.md)
       * [Selecting a Range of Revisions](product-guides/arm/arm-features/ncino/selecting-a-range-of-revisions.md)
+      * [nCino RBC Deployment Rollback](product-guides/arm/arm-features/ncino/ncino-rbc-deployment-rollback.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

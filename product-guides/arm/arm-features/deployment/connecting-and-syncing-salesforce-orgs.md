@@ -48,8 +48,8 @@ To perform org synchronization, follow the below steps:
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652331423108.png" alt="" width="563"><figcaption></figcaption></figure>
 
-1. Click on **`Deploy`**.
-2. You'll be navigated to the [**`Deployment History`**](monitor-deployments.md) page, where the current synchronization progress can be seen.
+10. Click on **`Deploy`**.
+11. You'll be navigated to the [**`Deployment History`**](monitor-deployments.md) page, where the current synchronization progress can be seen.
 
 #### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
 

@@ -54,22 +54,6 @@ Click on the **Log** icon to view the log report on the right side of the page.
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.
 
-### More Information on Environment Provisioning Screen <a href="#more-information-on-environment-provisioning-screen" id="more-information-on-environment-provisioning-screen"></a>
-
-The following information will be displayed on the **Environment Provisioning History** screen for each template created.
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631506065684.png" alt=""><figcaption></figcaption></figure>
-
-1. **Template Name:** Name of the template along with the template created date/time
-2. **Template Type:** Template type i.e., migration template or an unsupported metadata template&#x20;
-3. **Last Modified By:** User detail who last modified this template Salesforce Org: Destination org where the template was run
-4. **Last Run:** The date/time stamp the template was the last run&#x20;
-5. **Status:** Template status i.e., successfully run or failed&#x20;
-6. **Run:** Run the template&#x20;
-7. **Delete:** Delete the template&#x20;
-8. **Edit:** Edit the template fields&#x20;
-9. **View History:** Detailed info of the template such as last modified date/time of template, log details, etc.&#x20;
-
 #### More Information on Environment Provisioning Screen
 
 The following information will be displayed for each template created on the Environment Provisioning History screen.

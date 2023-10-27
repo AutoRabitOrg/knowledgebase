@@ -28,7 +28,7 @@ To perform org synchronization, follow the below steps:
 
 
 
-    1. To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.
+    To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652330217116.png" alt="" width="375"><figcaption></figcaption></figure>
 6.  On the next screen, you can:

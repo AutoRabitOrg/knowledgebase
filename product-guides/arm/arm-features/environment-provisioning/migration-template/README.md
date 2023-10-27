@@ -69,3 +69,26 @@ The following information will be displayed on the **Environment Provisioning Hi
 7. **Delete:** Delete the template&#x20;
 8. **Edit:** Edit the template fields&#x20;
 9. **View History:** Detailed info of the template such as last modified date/time of template, log details, etc.&#x20;
+
+#### More Information on Environment Provisioning Screen
+
+The following information will be displayed for each template created on the Environment Provisioning History screen.
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+1. **Template Name:** Name of the template along with the template created date/time
+2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template
+3. **Last Modified By:** User detail who last modified this template&#x20;
+4. **Salesforce Org:** Destination org where the template was run
+5. **Last Run:** The date/time stamp the template was last run
+6. **Status:** Template status, i.e., successfully run or failed
+7. **Run:** Run the template
+8. **Delete:** Delete the template
+9. **Edit:** Edit the template fields
+10. **Share:** Click on the share button; if you want to share the template with others, users in the org will be able to access it.
+11. **Revoke**: Click on the revoke button; if you don't want to share the template with others, users in the org will not be able to access it.
+12. **View History:** Detailed info on the template, such as the last modified date/time of the template, log details, etc.
+
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

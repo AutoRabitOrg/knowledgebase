@@ -6,4 +6,4 @@ Our [Release Note](https://knowledgebase.autorabit.com/codescan/docs/codescan-re
 
 You can download the list of CodeScan rules from here:
 
-[CodeScan rules list-updated.xlsx](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/CodeScan%20rules%20list-updated.xlsx)
+{% file src="../../../.gitbook/assets/CodeScan Rules List-10-30-23.xlsx" %}

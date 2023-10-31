@@ -1,4 +1,4 @@
-# Understanding PageLayoutAssignment
+# Page Layout Assignment
 
 This template allows you to create different page layouts to display. After creating page layouts, next assigning the Page Layout to control which page layout users can see by default.
 
@@ -7,7 +7,7 @@ To create this template, follow the below steps:
 1. Login to your AutoRABIT account.
 2. Click on **Env. Pro.** module.
 3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata**](https://knowledgebase.autorabit.com/docs/manage-page-layout-assignments) **Template** tab.
+4. Go to the **Create** [**Unsupported Metadata**](./) **Template** tab.
 5. Give the template a **name** and a **short description** of it.
 6. Select the **PageLayoutAssigment** checkbox available under **Manage** **Page Layout Assignments**.
 7. Click **Add.**

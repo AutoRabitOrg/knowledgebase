@@ -1,4 +1,4 @@
-# MultilineLayoutFieldsForContractLineItems
+# Multiline Layout Fields For Contract Line Items
 
 To create this template, follow the below steps:
 
@@ -19,7 +19,7 @@ To create this template, follow the below steps:
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632062365269.png" alt=""><figcaption></figcaption></figure>
 9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
+10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](../) **History** screen.
 11. Click the **Run** button to run the template on your destination org.
 12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
 13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;

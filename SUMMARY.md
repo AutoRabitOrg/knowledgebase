@@ -256,6 +256,8 @@
           * [ReplaceTeamRole](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/contact-role-templates/replaceteamrole.md)
         * [Console Layout Assignment](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/console-layout-assignment/README.md)
           * [ConsoleLayoutsAssignments](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/console-layout-assignment/consolelayoutsassignments.md)
+          * [DeleteConsoleLayout](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/console-layout-assignment/deleteconsolelayout.md)
+          * [NewConsoleLayouts](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/console-layout-assignment/newconsolelayouts.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

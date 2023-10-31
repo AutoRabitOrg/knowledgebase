@@ -268,6 +268,8 @@
         * [Create Public Groups](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/create-public-groups/README.md)
           * [Assign Roles and Profiles to Public Groups](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/create-public-groups/assign-roles-and-profiles-to-public-groups.md)
           * [PublicGroups](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/create-public-groups/publicgroups.md)
+        * [Web to Case](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/web-to-case.md)
+        * [Data Category Visibility Settings](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/data-category-visibility-settings.md)
     * [Prerequisite while performing a commit using AutoRABIT](product-guides/arm/arm-features/prerequisite-while-performing-a-commit-using-autorabit.md)
     * [UpdateUrlforRemoteSiteSettings](product-guides/arm/arm-features/updateurlforremotesitesettings.md)
     * [SalesforceOffline](product-guides/arm/arm-features/salesforceoffline.md)

@@ -91,6 +91,14 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 25 October 2023
+
+This was a maintenance release. The following items were enhanced, fixed, or added by code fixes resulting from use-case scenarios:
+
+* A Code Fix was applied to the **Deployments** module due to the **Deployment initiated using Org Synchronization failing** caused by a use case with a fix applied to versions 22.3 and 23.1.
+* A Code Fix was applied to the **Version control** module due to a **Validation Error** requiring **Feature Flag:** **VALIDATE\_DEPLOY\_PICK\_FILECHANGES\_FROM\_DIFF** caused by a use case with a fix applied to versions 22.3 and 23.1.
+* A Code Fix was applied to the **Reports** module due to the **Weekly Code/ Test Coverage Report** taking a long time caused by a use case with a fix applied to versions 22.3 and 23.1.
+
 **22 October 2023**
 
 **(ARM v. 22.3.44)**

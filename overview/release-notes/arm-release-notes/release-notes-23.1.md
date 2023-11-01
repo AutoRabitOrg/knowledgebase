@@ -116,11 +116,23 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 
 ### Changelogs
 
-This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+#### 25 October 2023
+
+This was a maintenance release. The following items were enhanced, fixed, or added by code fixes resulting from use-case scenarios:
+
+* A Code Fix was applied to the **Deployments** module due to the **Deployment initiated using Org Synchronization failing** caused by a use case with a fix applied to versions 22.3 and 23.1.
+* A Code Fix was applied to the **Version control** module due to a **Validation Error** requiring **Feature Flag:** **VALIDATE\_DEPLOY\_PICK\_FILECHANGES\_FROM\_DIFF** caused by a use case with a fix applied to versions 22.3 and 23.1.
+* A Code Fix was applied to the **Reports** module due to the **Weekly Code/ Test Coverage Report** taking a long time caused by a use case with a fix applied to versions 22.3 and 23.1.
+* A Code Fix was applied to the **Admin** module due to an **SSO Error** as of Sept 25 caused by a use case with a fix applied to versions 23.1.
+* A Code Fix was applied to the **Admin** module due to an AutoRABIT **Login Issue** caused by a use case with a fix applied to versions 23.1.
+* A Code Fix was applied to the **Version Control** module due to **validation/merge errors** after latest release caused by a use case with a fix applied to versions 23.1.
+* A Code Fix was applied to the **Dataloader** module due to the **download button not working** caused by a use case with a fix applied to versions 23.1.
 
 **22 October 2023**
 
 **(ARM v. 23.1.4)**
+
+This is a maintenance release. The following items were enhanced, fixed, or added.
 
 * Performed a code fix to version 23.1 affecting the **Reports** module resulting from a use-case error with **code coverage report emails missing test class errors in the subject.**&#x20;
 * Applied a code fix to version 23.1 for the **Deployments** module resulting from a use-case scenario with user **unable to see deployment history**.

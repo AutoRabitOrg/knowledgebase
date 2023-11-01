@@ -123,7 +123,6 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 This was a maintenance release. The following items were enhanced, fixed, or added:
 
 * <mark style="background-color:blue;">**Loggers**</mark> were added to **Reports** and **Dashboard** modules in versions 22.3 and 23.1 due to a data error in which users were unable to fetch a Salesforce **code coverage** report.&#x20;
-* An <mark style="background-color:blue;">**enhancement**</mark> was made by a code fix applied to the **Environment Provisioning** module in version 22.3 to enable users to **view Environment Provisioning** templates.
 * An <mark style="background-color:blue;">**enhancement**</mark> was made by a code fix applied to the **Deployments** and **Org Synchronization** modules in versions 22.3 and 23.1 enabling users to **change deploy text for validations**.
 * A code fix was applied to the **CI Jobs** module in version 23.1 identified by use case to **enable validation CI Job comments** to be visible on the **Bitbucket PR**.&#x20;
 * A code fix was applied to the **Admin** module of version 23.1 due to a use case in which modification logs were needed for **Version Control mapping setup**.

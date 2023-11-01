@@ -91,6 +91,20 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 27 October 2023
+
+**(ARM v. 22.3.45)**
+
+This was a maintenance release. The following items were enhanced, fixed, or added:
+
+* <mark style="background-color:blue;">**Loggers**</mark> were added to **Reports** and **Dashboard** modules in versions 22.3 and 23.1 due to a data error in which users were unable to fetch a Salesforce **code coverage** report.&#x20;
+* An <mark style="background-color:blue;">**enhancement**</mark> was made by a code fix applied to the **Environment Provisioning** module in version 22.3 to enable users to **view Environment Provisioning** templates.
+* An <mark style="background-color:blue;">**enhancement**</mark> was made by a code fix applied to the **Deployments** and **Org Synchronization** modules in versions 22.3 and 23.1 enabling users to **change deploy text for validations**.
+* A code fix was applied to the **nCino** module of versions 22.3 and 23.1 due to a use-case scenario during dataset creation with saving only user info in **Json that is relevant to current dataset**.
+* A code fix was applied to the **Version Control** module of versions 22.3 and 23.1 due to a use-case error with an **AR merge failing**.
+* A code fix was applied to the **Version Control** module of versions 22.3 and 23.1 due to a use-case error in which the **incorrect removal of Custom Application type in package.xml on EZ-Commit** via AR occurred.
+* A code fix was applied to the **Version Control** module of versions 22.3 and 23.1 in which two **external pull request** issues were occurring.
+
 #### 25 October 2023
 
 This was a maintenance release. The following items were enhanced, fixed, or added by code fixes resulting from use-case scenarios:

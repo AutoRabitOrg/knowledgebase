@@ -1,4 +1,4 @@
-# UserInterface
+# User Interface Settings
 
 The user can modify the organization's user interface using the **user interface** template.
 
@@ -7,7 +7,7 @@ To create this template, follow the below steps:
 1. Login to your [AutoRABIT](https://www.autorabit.com/) account.
 2. Click on **Env. Pro.** module.
 3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](https://knowledgebase.autorabit.com/docs/unsupported-metadata-templates) tab.
+4. Go to the **Create** [**Unsupported Metadata Template**](./) tab.
 5. Give the template a **name** and a **short description** of it.
 6. Select the **UserInterface** checkbox available under **User Interface Settings.**
 7. Click **Add**.

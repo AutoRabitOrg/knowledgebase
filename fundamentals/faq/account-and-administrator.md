@@ -217,9 +217,9 @@ Please edit the role assigned to the user and ensure that the below-mentioned sp
 You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
 
 * [SCA for CodeScan](../../product-guides/codescan/)
-* [SCA for Checkmarx](../../product-guides/arm/sca-for-checkmarx.md)
-* [SCA for Apex PMD](../../product-guides/arm/apex-pmd.md)
-* [SCA for SonarQube](../../product-guides/arm/sonarqube.md)
+* [SCA for Checkmarx](../../product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
+* [SCA for Apex PMD](../../product-guides/arm/integration-and-plugins/apex-pmd.md)
+* [SCA for SonarQube](../../product-guides/arm/integration-and-plugins/sonarqube.md)
 
 #### We’re switching from an on-premises GitHub account to the Cloud version of GitHub. I created the GitHub cloud account and tried setting up the cloud connection in ARM, but the system gave me an error. <a href="#were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github" id="were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github"></a>
 

@@ -51,7 +51,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 **Additional options in the 'Build' section**
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
-2.  [**Vlocity Build**](../../../vlocity/)**:** This option allows you to deploy the velocity components from the metadata folder path to the sandbox.
+2.  [**Vlocity Build**](../../../integration-and-plugins/vlocity/)**:** This option allows you to deploy the velocity components from the metadata folder path to the sandbox.
 
     1. **Pack Update:** This option will refresh the data Packs settings to the version included in the project in the destination org. However, this is recommended only if you are on the latest major version of the vlocity managed package.
     2.  **Pack Retry:** Continues a Job retrying all errors to redeploy once again. Pack Retry feature is currently not available for the non-SFDX repository.\

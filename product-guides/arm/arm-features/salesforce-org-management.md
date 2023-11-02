@@ -87,7 +87,7 @@ Suppose you want to connect your Salesforce Org with Version Control as a **`GIT
 In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.&#x20;
 
 {% hint style="info" %}
-**Important Note:** To proceed ahead with the below steps, make sure the JIRA is successfully integrated with ARM ([LEARN MORE](jira.md))
+**Important Note:** To proceed ahead with the below steps, make sure the JIRA is successfully integrated with ARM ([LEARN MORE](../integration-and-plugins/jira.md))
 {% endhint %}
 
 1. Click on the **`Mapping`** button beside JIRA.&#x20;

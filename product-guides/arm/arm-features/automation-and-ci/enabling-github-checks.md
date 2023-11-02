@@ -2,7 +2,7 @@
 
 ### About GitHub Status Checks <a href="#about-github-status-checks" id="about-github-status-checks"></a>
 
-GitHub status checks are an excellent way to track and control the [CI/CD](../branching-strategy-and-ci-cd-pipeline.md) status of your projects. AutoRABIT will send status checks for the pull requests to your GitHub repo and allows you to control when pull requests can be merged based on the results of the CI job. AutoRABIT reports the status of workflows and all corresponding jobs under the **Checks** tab on GitHub.
+GitHub status checks are an excellent way to track and control the [CI/CD](../../branching-strategy-and-ci-cd-pipeline.md) status of your projects. AutoRABIT will send status checks for the pull requests to your GitHub repo and allows you to control when pull requests can be merged based on the results of the CI job. AutoRABIT reports the status of workflows and all corresponding jobs under the **Checks** tab on GitHub.
 
 ![Github](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1610046187153.png)
 

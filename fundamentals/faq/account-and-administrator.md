@@ -227,7 +227,7 @@ Once the GitHub cloud account is created, you should be able to set it up with A
 
 #### How can I setup SSO in ARM? <a href="#how-can-i-setup-sso-in-arm" id="how-can-i-setup-sso-in-arm"></a>
 
-Please refer to this Knowledge Base [article](../../product-guides/arm/sso/) to set up SSO for your instance.
+Please refer to this Knowledge Base [article](../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
 
 #### We’re switching from an on-premises GitHub account to the Cloud version of GitHub. I created the GitHub cloud account and tried setting up the cloud connection in ARM, but the system gave me an error. <a href="#were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github" id="were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github"></a>
 
@@ -235,7 +235,7 @@ Once the GitHub cloud account is created, you should be able to set it up with A
 
 #### How can I setup SSO in ARM? <a href="#how-can-i-setup-sso-in-arm1" id="how-can-i-setup-sso-in-arm1"></a>
 
-Please refer to the [Knowledge Base article](../../product-guides/arm/sso/) to set up SSO for your instance.
+Please refer to the [Knowledge Base article](../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
 
 #### We can see the Diff when a Commit is created, but can we see a Diff during the process of Commit? <a href="#we-can-see-the-diff-when-a-commit-is-created-but-can-we-see-a-diff-during-the-process-of-commit" id="we-can-see-the-diff-when-a-commit-is-created-but-can-we-see-a-diff-during-the-process-of-commit"></a>
 

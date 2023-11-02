@@ -40,7 +40,7 @@ SAML-based SSO enables two-way communication between an authentication server (t
 Using the information you gathered from your IdP (the Identity Provider), fill in the below details:
 
 * **`Entity ID:`** String that uniquely identifies your IdP (your IdP generally provides it).&#x20;
-* **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../../sso/).
+* **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../../integration-and-plugins/sso/).
 *   **`Disable login with ARM credentials:`** When selected, passwords on ARM are no longer used once the SSO is activated. The system forces you and your sub-users to log in via SSO rather than entering their username and password on the login page. However, once disabled, all the authentication requests will go through the classic login interface.\
 
 

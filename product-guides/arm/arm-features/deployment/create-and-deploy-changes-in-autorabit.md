@@ -151,6 +151,6 @@ From the **`Apply Search and Substitute Rules`** list, select the rule that will
 
 The next screen is the **`Deployment Summary`** page, where you can view the components one final time before deployment.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1614021629639.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Click on **`Deploy`** You will be redirected to the [Deployment Summary](monitor-deployments.md) screen, showing the deployment progress.
+Click on **`Validate Deployment.`** You will be redirected to the [Deployment Summary](monitor-deployments.md) screen, showing the deployment progress.

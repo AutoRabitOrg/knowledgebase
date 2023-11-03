@@ -31,7 +31,7 @@ Under the **Build** section, fill in the below details:
 1. Select the source [**Salesforce org**](../../salesforce-org-management.md).
 2. Select the **Package type** to retrieve and bundle the changes from a source sandbox.
    1. **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
-   2. **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a [Salesforce Org](../../../metadata-comparison-between-two-salesforce-orgs.md).
+   2. **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a [Salesforce Org](../../../troubleshoot/best-practices/metadata-comparison-between-two-salesforce-orgs.md).
    3.  **Managed packages:** Salesforce partners use these packages to distribute and sell applications to their users. These packages get created from a Developer Edition organization. For more information, refer to the link below:\
 
 

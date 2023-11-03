@@ -120,7 +120,7 @@ The Salesforce Org- Skip Members section shows a summary of the selected metadat
 
 #### Salesforce Org- Default Apex Test Class Configuration <a href="#salesforce-org-default-apex-test-class-configuration" id="salesforce-org-default-apex-test-class-configuration"></a>
 
-This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../default-apex-class-configuration.md).\
+This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../troubleshoot/how-tos/default-apex-class-configuration.md).\
 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1679985724604.png" alt="" width="563"><figcaption></figcaption></figure>

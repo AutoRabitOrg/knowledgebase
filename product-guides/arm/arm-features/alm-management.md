@@ -25,7 +25,7 @@ We've added a new section called **`ALM Management`** to the **`Admin`** module 
        * **`ALM Name:`** Enter a **name** for your ALM connection.
        * **`ALM Type:`** Select the **ALM type**.
        * **`ALM URL:`** Add the **ALM server URL**.
-       * **`Credentials:`** Specify your credentials. Refer to the [Credential Manager](../create-users-credentials.md) section for more info on creating and storing your credential inside ARM.
+       * **`Credentials:`** Specify your credentials. Refer to the [Credential Manager](../troubleshoot/how-tos/create-users-credentials.md) section for more info on creating and storing your credential inside ARM.
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663236280440.png" alt="" width="375"><figcaption></figcaption></figure>
    2.  For **`JIRA:`** \

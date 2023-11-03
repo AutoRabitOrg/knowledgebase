@@ -13,7 +13,7 @@
 
 **Mail Settings** module in the **Admin** section is relabeled as **Notifications**. Through this module, you can choose to send notifications about specific events triggered in ARM to specific groups or channels within your organization through **Teams** or **Slack**. For whichever messaging app you use, you can configure a webhook connection for each of the groups or channels, and then integrate them with ARM. You can customize and select which group(s) to notify when events like build failure, build success, deployment failure, merge reports, etc. are triggered.
 
-[**Read more →**](../../../product-guides/arm/notifications-mail-server-settings.md)
+[**Read more →**](../../../product-guides/arm/troubleshoot/how-tos/notifications-mail-server-settings.md)
 
 #### 2. Salesforce Scanner plugin <a href="#2-salesforce-scanner-plugin" id="2-salesforce-scanner-plugin"></a>
 

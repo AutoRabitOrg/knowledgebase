@@ -78,7 +78,7 @@ Auto Commit option allows you to automatically commit the required changes from 
 3. **Additional option**:
    1. **Check out and commit the changes with user's credentials:** If your commits are being linked to different users, however, you wish to commit the whole changes with the selected user above, select this option
    2. **Check-out with the user credentials and commit the changes with actual modified user credentials:** This option fetches all the changes from the Salesforce org and commits the changes with the actually modified user credential
-   3.  **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](../../../configure-record-types-picklist-values.md))\
+   3.  **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](../../../troubleshoot/how-tos/configure-record-types-picklist-values.md))\
 
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664798972740.png" alt=""><figcaption></figcaption></figure>

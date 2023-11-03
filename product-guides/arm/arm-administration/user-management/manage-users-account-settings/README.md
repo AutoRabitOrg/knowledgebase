@@ -173,7 +173,7 @@ Select the API version to see the supported metadata types and avoid errors whil
 
 
 
-1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. Click [here](../../../record-types-picklistvalues.md) to go directly to the mentioned topic.&#x20;
+1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. Click [here](broken-reference) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
 3. **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
    ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678183913072.png)

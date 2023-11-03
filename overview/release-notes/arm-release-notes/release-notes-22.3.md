@@ -91,6 +91,12 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 5 November 2023
+
+**(ARM v. 22.3.46)**
+
+<table data-full-width="true"><thead><tr><th>Module</th><th>Bug Summary</th><th>Fix Version(s)</th><th>Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>All Modules</td><td>New User Creation</td><td>22.3</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Change Request</p><p> </p></td></tr><tr><td>Environment Provisioning</td><td>View environment provisioning templates</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Enhancement</p><p> </p></td></tr><tr><td>Admin</td><td>Branching baseline is not picking all components from production</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Deployments</td><td>Help with destructive change</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Merge request is failing due to validation credentials</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>CI Jobs, Deployments</td><td>Issues with a release – related to Feature Flag not automatically set: STANDARD_VALUE_SET_DELTA </td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Data</p><p> </p></td></tr><tr><td>Version Control</td><td>Approval button is not visible after successful merge validation</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Data</p><p> </p></td></tr></tbody></table>
+
 #### 27 October 2023
 
 **(ARM v. 22.3.45)**

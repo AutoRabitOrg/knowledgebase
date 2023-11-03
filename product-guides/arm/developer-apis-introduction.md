@@ -13,5 +13,5 @@ For all APIs as `<BASE-ORG-URL>` please use the URL of the [ARM](https://www.aut
 
 **To get started, you need to:**
 
-1. Obtaining your [**access token**](api-access.md): To interact with the API, you need to have a unique, personal access token, which is used to authenticate yourself within the API.
+1. Obtaining your [**access token**](introduction-to-arm-developer-apis/api-access.md): To interact with the API, you need to have a unique, personal access token, which is used to authenticate yourself within the API.
 2. Configure your **projects** within AutoRABIT before using the API.

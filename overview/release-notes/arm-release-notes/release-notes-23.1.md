@@ -75,7 +75,7 @@ Users are now able to view the CI Jobs they created in the CI Job List screen to
 **4. 'Created and Requested by' in Deployment UI**\
 Users are now able to view the ‘Created by’ and ‘Triggered by’ fields in the Deployment home screen without scrolling through multiple screens for this info, enabling monitoring of the deployment’s real-time progress.
 
-[Read more](https://knowledgebase.autorabit.com/docs/single-dataloader)
+[Read more](../../../product-guides/arm/arm-features/deployment/)
 
 **5. Self-Service Connected App Setup for Jira OAuth in ARM**\
 We've introduced a self-service feature allowing users to set up Jira OAuth-connected apps in ARM autonomously. With guidance from our user manual's Connected App guide, users can effortlessly create and register their app credentials, eliminating the need for support team assistance. Users can quickly establish a robust connection by inputting the generated Client ID and Server Key into ARM's settings.

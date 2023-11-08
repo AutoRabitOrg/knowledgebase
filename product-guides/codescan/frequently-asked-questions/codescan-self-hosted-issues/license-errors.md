@@ -30,7 +30,7 @@ A CodeScan license key can be entered via the following ways:
   * **Variable name:** _codescanLicense_
   * **Value:** _\<License\_Key>_
 
-***
+
 
 ### Proxy Errors <a href="#proxy-errors" id="proxy-errors"></a>
 
@@ -61,7 +61,7 @@ This is the proxy replying with an HTML error page when a JSON object is expecte
 
 See [**here**](https://knowledgebase.autorabit.com/codescan/docs/setting-up-codescan-for-use-with-a-proxy) for instructions on how to set up CodeScan on a network with a proxy.
 
-***
+
 
 ### Version Errors <a href="#version-errors" id="version-errors"></a>
 
@@ -84,7 +84,7 @@ This can be avoided by updating to the latest version of CodeScan.
 
 If this is not an option, contact [Support](https://www.codescan.io/contact/) for assistance and we will provide you with the appropriate license version.
 
-***
+
 
 ### Line Count Problems <a href="#line-count-problems" id="line-count-problems"></a>
 

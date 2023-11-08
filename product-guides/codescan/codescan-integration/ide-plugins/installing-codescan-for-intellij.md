@@ -9,7 +9,7 @@ After completing this unit, you'll be able to:
 * [Bind the project with CodeScan](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#bind-the-project-with-codescan)
 * [Find the troubleshooting steps if you ran with IntelliJ CodeScan plugin issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#intellij-troubleshooting).
 
-***
+
 
 ### Get Started with CodeScan IntelliJ plugin <a href="#get-started-with-codescan-intellij-plugin" id="get-started-with-codescan-intellij-plugin"></a>
 
@@ -34,7 +34,7 @@ Make sure you have the following:
 * Latest available **Node.js LTS** version (v16 as of today)
 * Uninstall **SonarLint™** Plugins. The CodeScan and IntelliJ plugin will not work alongside the SonarLint™ installation.
 
-***
+
 
 ### Install the CodeScan IntelliJ plugin <a href="#install-the-codescan-intellij-plugin" id="install-the-codescan-intellij-plugin"></a>
 
@@ -44,7 +44,7 @@ Make sure you have the following:
 4. Click on the **`Install`** button and wait for the installation to complete (click on **`Accept`** if prompted).
 5. Restart **IntelliJ** to save the changes.
 
-***
+
 
 ### Configuration Of CodeScan Plugin in IntelliJ <a href="#configuration-of-codescan-plugin-in-intellij" id="configuration-of-codescan-plugin-in-intellij"></a>
 
@@ -84,7 +84,7 @@ If you are a _CodeScan Cloud_ user, selecting create token takes you directly to
 6. If the errors don't show up immediately, reopen the **file** and you will be able to see the changes.\
    ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(304\).png)
 
-***
+
 
 ### IntelliJ Troubleshooting <a href="#intellij-troubleshooting" id="intellij-troubleshooting"></a>
 

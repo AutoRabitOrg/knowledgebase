@@ -28,7 +28,7 @@ Create a package from a Salesforce org based on a **"Start Date"** and deploy or
 
 Under the **Build** section, fill in the below details:
 
-1. Select the source [**Salesforce org**](../../salesforce-org-management.md).
+1. Select the source [**Salesforce org**](../../../getting-started/salesforce-org-management.md).
 2. Select the **Package type** to retrieve and bundle the changes from a source sandbox.
    1. **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
    2. **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a [Salesforce Org](../../../troubleshoot/best-practices/metadata-comparison-between-two-salesforce-orgs.md).
@@ -62,7 +62,7 @@ Under the **Build** section, fill in the below details:
 
            <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664797907228.png" alt="" width="375"><figcaption></figcaption></figure>
 
-       For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../static-code-analysis-in-ci-cd.md).
+       For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 6. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.

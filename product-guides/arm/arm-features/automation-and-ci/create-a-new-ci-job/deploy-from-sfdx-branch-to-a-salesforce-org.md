@@ -114,7 +114,7 @@ Note: Incremental Build also works to validate Deployment Jobs.
 
         <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681893223730.png" alt="" width="375"><figcaption></figcaption></figure>
 
-    For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../static-code-analysis-in-ci-cd.md).
+    For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 5. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
@@ -175,7 +175,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
 1. **Ignore Installed (Managed) components:** This option will exclude any **Managed packages** that the user may have installed.
    * **Ignore all manually created components:** All manually added components in the installed (managed) package will also get excluded.
 2. **Ignore warnings:** These allow the metadata members to get deployed even though errors/warnings are encountered during deployment.
-3. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](../../salesforce-org-management.md) page in our application.
+3. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](../../../getting-started/salesforce-org-management.md) page in our application.
 4. **Run Destructive Changes:** Here you can specify whether to run pre or post-destructive changes while carrying out the deployment process.
 5. **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
 6.  **On successful Deployment**\

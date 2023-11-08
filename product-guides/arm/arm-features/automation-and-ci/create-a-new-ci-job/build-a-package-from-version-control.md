@@ -71,7 +71,7 @@ Important Note:
 
           <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665048283554.png" alt="" width="375"><figcaption></figcaption></figure>
 6. **Incremental Build:** Incremental builds are important for managing continuous builds for [continuous delivery](https://www.autorabit.com/blog/what-you-need-to-know-about-salesforce-continuous-delivery/). Incremental Builds substantially decrease build times by avoiding the execution of previous metadata that is not needed. This will fetch all the metadata changes beyond the selected Baseline Revision till the successfully deployed revision to the destination org. On the next CI Job run, the previous Baseline Revision automatically gets changed to the successfully deployed revision. Hence, there will be a substantial increase in build time performance for large-project incremental builds when a change to a single file or a small number of files is performed.Important Note:Incremental Build also works to validate **Deployment Jobs**.
-7. **Prepare Destructive Changes:** Pre-destructive changes option will allow the users to delete unwanted fields or metadata components from their destination [Salesforce org](../../salesforce-org-management.md) before the deployments begin.
+7. **Prepare Destructive Changes:** Pre-destructive changes option will allow the users to delete unwanted fields or metadata components from their destination [Salesforce org](../../../getting-started/salesforce-org-management.md) before the deployments begin.
 8.  **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.\
 
 
@@ -92,7 +92,7 @@ Important Note:
 
 
             <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665048529349.png" alt="" width="375"><figcaption></figcaption></figure>
-        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../static-code-analysis-in-ci-cd.md).
+        * For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 9. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a [Salesforce org](../../../arm-administration/registration/salesforce-org/), you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    2. **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.

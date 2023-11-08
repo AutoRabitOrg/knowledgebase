@@ -24,7 +24,7 @@ While committing metadata components from a Salesforce org to an SFDX repository
 
 #### During CI Job <a href="#during-ci-job" id="during-ci-job"></a>
 
-While deploying the SFDX source from a [Version Control](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) branch to a [Salesforce Org](arm-features/salesforce-org-management.md), you need to choose the source folder for your SFDX repository.
+While deploying the SFDX source from a [Version Control](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) branch to a [Salesforce Org](getting-started/salesforce-org-management.md), you need to choose the source folder for your SFDX repository.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613886143538.png" alt=""><figcaption></figcaption></figure>
 

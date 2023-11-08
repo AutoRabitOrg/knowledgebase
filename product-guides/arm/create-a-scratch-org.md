@@ -30,7 +30,7 @@ To create a new Scratch Org, perform the below steps:
 
 In this section, you would be filling your scratch org details.
 
-Select the **Dev HUB** name. This is the main [Salesforce org](arm-features/salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
+Select the **Dev HUB** name. This is the main [Salesforce org](getting-started/salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613934716347.png" alt=""><figcaption></figcaption></figure>
 

@@ -94,7 +94,7 @@ For each branch, view the following details:\
     * The folder name must be entered in the **`Metadata Folder Path`** field for SFDX repositories where _foldername/force-app/main/default/_ counts as the metadata folder path.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676057120903.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../alm-management.md).\
+3.  **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../arm-administration/alm-management.md).\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682076638548.png" alt="" width="375"><figcaption></figcaption></figure>

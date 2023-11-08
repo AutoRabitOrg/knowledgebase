@@ -20,6 +20,6 @@ Finally, run the command to see the **configured** API version:
 sfdx config:get apiVersion --json
 ```
 
-***
+
 
 \

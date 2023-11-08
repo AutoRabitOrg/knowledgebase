@@ -39,7 +39,7 @@ A full deployment transfers all [metadata](https://www.autorabit.com/blog/the-ro
 
 #### Deployment Validations <a href="#deployment-validations" id="deployment-validations"></a>
 
-A deployment validation is a deployment that is used only to check the results of deploying components and is rolled back. Validation doesn't save any deployed components or change the [Salesforce Org](../salesforce-org-management.md) in any way. If validation is completed successfully, and all the tests are passed with sufficient code coverage, you can perform a **Quick Deployment** by deploying this validation to production without running tests.
+A deployment validation is a deployment that is used only to check the results of deploying components and is rolled back. Validation doesn't save any deployed components or change the [Salesforce Org](../../getting-started/salesforce-org-management.md) in any way. If validation is completed successfully, and all the tests are passed with sufficient code coverage, you can perform a **Quick Deployment** by deploying this validation to production without running tests.
 
 #### Rollback Deployment <a href="#rollback-deployment" id="rollback-deployment"></a>
 

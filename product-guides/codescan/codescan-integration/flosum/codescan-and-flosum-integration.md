@@ -21,7 +21,7 @@
 
 Now you have done your complete setup with respect to Flosum-CodeScan.
 
-***
+
 
 ### How Does Flosum-CodeScan Work <a href="#how-does-flosumcodescan-work" id="how-does-flosumcodescan-work"></a>
 
@@ -41,7 +41,7 @@ In this use case we will create a new branch in Flosum and add all new metadata 
    ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(336\).png)
 6. Now you deploy metadata components like **`Apex Class`**, **`triggers`** to your branch and CodeScan will trigger static code analysis on the fly.
 
-***
+
 
 #### Case 2: For an existing branch create a new project <a href="#case-2-for-an-existing-branch-create-a-new-project" id="case-2-for-an-existing-branch-create-a-new-project"></a>
 

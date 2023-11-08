@@ -47,7 +47,7 @@ The **RecordType** component may be deployed to the target environment, but it c
 
 [**Read more →**](../../../product-guides/arm/arm-features/automation-and-ci/ci-job-rollback.md)
 
-***
+
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 
@@ -85,7 +85,7 @@ The org admins' eligibility level has been enhanced with the ARM 22.1 version. I
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/commit-merge%20approval.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/arm-features/merge-approvals.md)
+[**Read more →**](../../../product-guides/arm/arm-features/version-control/merge-approvals.md)
 
 #### 5. CodeScan additional metadata support <a href="#5-codescan-additional-metadata-support" id="5-codescan-additional-metadata-support"></a>
 
@@ -111,14 +111,14 @@ Key characteristics to look for:
 * Quick deploy and rollbacks work for both constructive and destructive changes
 * Package preparation has been improved.
 
-***
+
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
 * The jquery-UI version has been upgraded to **v1.13.0** to fix security issues. Upgrading to the most recent version of jquery makes our application more secure and potentially faster in script execution and loading.
 * Minor performance, bug fixes, and security improvements can also be observed in the ARM portal.
 
-***
+
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
@@ -486,7 +486,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue for the nCino CI Jobs where **Attachments** were failing due to **External Mappings** not being set to the **NAME** field (internal ticket).
 * Added the feature to dynamically handle the respective nCino Prefix rather than depending on the JSON file to identify the External Id field
 
-***
+
 
 #### 14 August 2022 <a href="#14-august-2022" id="14-august-2022"></a>
 
@@ -502,7 +502,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the commit labels was getting auto-rejected while committing Profile FLS ([#46844](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079276142)).
 * Fixed an issue where the users while deploying a destructive XML file from one sandbox to another, is getting auto rejected ([#47714](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000081149440), [#47747](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000081187577)).
 
-***
+
 
 #### 07 August 2022 <a href="#07-august-2022" id="07-august-2022"></a>
 
@@ -524,7 +524,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where while deploying a **nCino-User Interface** template, only partial records are deployed and no deployment logs are generated ([#47494](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000080488668)).
 * Fixed an issue where the users, while performing an EZ-Commit by enabling the run SCA option, the CodeScan analysis is getting failed, but EZ-Commit is not getting auto-rejected ([#47155](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079921059)).
 
-***
+
 
 #### 31 July 2022 <a href="#31-july-2022" id="31-july-2022"></a>
 
@@ -550,7 +550,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the merge was getting failed with the following error: `Fetch operation is failed due to some runtime exceptions from Git` ([#46773](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079094055)).
 * Fixed an issue where the username and passwords fields were not editable for users registered in ARM with basic authentication ([#47099](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079788018)).
 
-***
+
 
 #### 24 July 2022 <a href="#24-july-2022" id="24-july-2022"></a>
 
@@ -570,7 +570,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the settings related with user permissions were erased ([#46472](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000078507457)).
 * Fixed an issue where the users when performed EZ-Commit using a package manifest file, doesn't include managed components that are in the **package.xml** file ([#47083](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079769291)).
 
-***
+
 
 #### 17 July 2022 <a href="#17-july-2022" id="17-july-2022"></a>
 
@@ -589,7 +589,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue for the nCino Feature Deployments where the users were getting audit field issue when trying to deploy with `Insert/Update with Null Values` option (internal ticket).
 * Fixed an issue for the nCino CI jobs using Spreads Templates where the users were getting `NullPointerException` error when trying to deploy with `Insert/Update with Null Values` option (internal ticket).
 
-***
+
 
 #### 10 July 2022 <a href="#10-july-2022" id="10-july-2022"></a>
 
@@ -617,7 +617,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the `Invalid Schema` error is seen for non-SFDX prevalidation merge (internal ticket).
 * Fixed an EZ-Commit issue where additional permissions were removed from Profiles metadata type, which is not a part of the commit ([#44543](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000075040441)).
 
-***
+
 
 #### 03 July 2022 <a href="#03-july-2022" id="03-july-2022"></a>
 
@@ -644,7 +644,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the merges were getting failed and throws the `Schema is invalid for the file` error ([#45768](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000077202614)).
 * Fixed an issue where the exported users list contained inaccurate information ([#44782](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000075451374)).
 
-***
+
 
 #### 26 June 2022 <a href="#26-june-2022" id="26-june-2022"></a>
 
@@ -669,7 +669,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the users were not able to view the log reports after registering **Tags** via ARM (internal ticket).
 * Fixed an issue where the tags creation got failed when the tag name contains **'error'** with custom API flow (internal ticket).
 
-***
+
 
 #### 19 June 2022 <a href="#19-june-2022" id="19-june-2022"></a>
 
@@ -692,7 +692,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **skip members** feature of ARM was not working as expected (internal ticket).
 * Fixed an issue where the user while performing **EZ-Commit** with SonarQube code analysis was getting failed with `Failed to run the sonar-scanner: null` error ([#46070](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000077717988)).
 
-***
+
 
 #### 12 June 2022 <a href="#12-june-2022" id="12-june-2022"></a>
 
@@ -705,7 +705,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users while performing org to org migration of nCino record based configurations, all the related items are getting carried over except the _notes_ and _attachment_ of the Credit Memo from source to the destination environment ([#40990](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069124041))
 * Fixed an issue where the Jenkins builds were failing during the CI/CD process (internal ticket).
 
-***
+
 
 #### 05 June 2022 <a href="#05-june-2022" id="05-june-2022"></a>
 
@@ -721,7 +721,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users could not view the commits list to merge them into a release label ([#43718](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 * Fixed an issue where the code coverage reports fail to include all the classes in the CSV file ([#42848](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000072441595), [#39582](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066807003)).
 
-***
+
 
 #### 29 May 2022 <a href="#29-may-2022" id="29-may-2022"></a>
 
@@ -734,7 +734,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users while performing org to org migration of nCino record based configurations, all the related items are getting carried over except the _notes_ and _attachment_ of the Credit Memo from source to the destination environment ([#40990](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069124041))
 * Fixed an issue where the Jenkins builds were failing during the CI/CD process (internal ticket).
 
-***
+
 
 #### 22 May 2022 <a href="#22-may-2022" id="22-may-2022"></a>
 
@@ -754,7 +754,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the Dataloader Pro job where the users, when trying to migrate the case object along with feed item & feed comment, the ARM application throws the "**invalid cross reference id**" error ([#43703](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073896030)).
 * Fixed an issue where the merge process, after being sucessful, did not display the code coverage report ([#42079](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 
-***
+
 
 #### 15 May 2022 <a href="#15-may-2022" id="15-may-2022"></a>
 
@@ -768,7 +768,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the ARM user interface gets distorted when the zoom is 100% ([#43735](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073906153)).
 * Fixed an issue where the ALM workflow was mismatched ([#43775](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073985001)).
 
-***
+
 
 #### 08 May 2022 <a href="#08-may-2022" id="08-may-2022"></a>
 
@@ -788,7 +788,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the Dataloader Pro job where the users, when trying to migrate the case object along with feed item & feed comment, the ARM application throws the "**invalid cross reference id**" error ([#43703](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073896030)).
 * Fixed an issue where the merge process, after being sucessful, did not display the code coverage report ([#42079](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 
-***
+
 
 #### 01 May 2022 <a href="#01-may-2022" id="01-may-2022"></a>
 
@@ -813,7 +813,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where extra metadata members are picked up for the profile component during the EZ-Commit process ([#41361](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069919263)).
 * Fixed an issue where the users could not use commit template for the deployment ([#43995](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000074325045), [#43586](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073635324), [#43905](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000074163310), [#43407](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073339003)).
 
-***
+
 
 #### 24 April 2022 <a href="#24-april-2022" id="24-april-2022"></a>
 
@@ -833,7 +833,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the Dataloader Pro job where the users, when trying to migrate the case object along with feed item & feed comment, the ARM application throws the "**invalid cross reference id**" error ([#43703](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073896030)).
 * Fixed an issue where the merge process, after being sucessful, did not display the code coverage report ([#42079](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 
-***
+
 
 #### 17 April 2022 <a href="#17-april-2022" id="17-april-2022"></a>
 
@@ -855,7 +855,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * Non-template records are fetched in the dataset.
   * Spread Statement Record failing with the error **“Missing Statement Types.”** This is now fixed.
 
-***
+
 
 #### 10 April 2022 <a href="#10-april-2022" id="10-april-2022"></a>
 
@@ -872,7 +872,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where creating a new nCino feature migration template takes longer than expected ([#41855](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070869289)).
 * Addressed out of memory (OOM) and other performance issues in this weekly release.
 
-***
+
 
 #### 03 April 2022 <a href="#03-april-2022" id="03-april-2022"></a>
 
@@ -887,7 +887,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the non-licensed users were receiving the deployment email failure notification for the unsuccessful deployment ([#41705](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070543145)).
 * Fixed an issue where the users were unable to use the nCino feature after the ARM was upgraded to v21.6 ([#41108](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069360251)).
 
-***
+
 
 #### 27 March 2022 <a href="#27-march-2022" id="27-march-2022"></a>
 

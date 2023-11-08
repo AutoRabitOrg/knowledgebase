@@ -174,7 +174,7 @@ Please contact the AutoRABIT support team; we will adjust the license to make yo
 
 #### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but is there no Revision# created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
-Before proceeding with the Branching Baseline operation, please ensure you have the Write permission on the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../product-guides/arm/arm-features/branching-baseline.md)
+Before proceeding with the Branching Baseline operation, please ensure you have the Write permission on the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../product-guides/arm/getting-started/registration/branching-baseline.md)
 
 #### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application1" id="how-often-do-i-have-to-change-my-password-for-the-arm-application1"></a>
 

@@ -59,7 +59,7 @@ If Apex Tests are not being populated, follow the steps below to ensure that the
 2.  Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613573200619.png" alt="" width="563"><figcaption></figcaption></figure>
-3. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../arm-features/salesforce-org-management.md) page.
+3. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../getting-started/salesforce-org-management.md) page.
 
 ### Manage Apex Class <a href="#manage-apex-class" id="manage-apex-class"></a>
 
@@ -73,5 +73,5 @@ Once you have added an Apex test class or classes, you can perform various actio
 {% hint style="info" %}
 **Important Note**:&#x20;
 
-For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh its Salesforce org from the [**`Salesforce Org Management`**](../../arm-features/salesforce-org-management.md) section.
+For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh its Salesforce org from the [**`Salesforce Org Management`**](../../getting-started/salesforce-org-management.md) section.
 {% endhint %}

@@ -103,6 +103,12 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 
 ### Changelogs
 
+#### 12 November 2023
+
+**(ARM v. 23.1.7)**
+
+<table><thead><tr><th width="151">Module</th><th width="284">Summary</th><th width="76">Fix Version(s)</th><th width="112">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>Deployments</td><td><p> </p><p>During Org Sync, file names are being repeated as part of the deployment results.</p><p> </p></td><td><p> </p><p>23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Deployments</td><td><p> </p><p>User is unable to see the Deployment History.</p><p> </p></td><td><p> </p><p>23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>CI Jobs &#x26; Deployments</td><td><p> </p><p>User is unable to deploy static resource.</p><p> </p></td><td><p> </p><p>23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Reports</td><td><p> </p><p>Scheduled Code Coverage Reports are running at the wrong time.</p><p> </p></td><td><p> </p><p>23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>nCino</td><td><p> </p><p>User is unable to create Feature Migration Template on Debt Schedule object.</p><p> </p></td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Dataloader</td><td><p> </p><p>User is unable to upload files and update records; system logs user out instead.</p><p> </p></td><td><p> </p><p>23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td><p> </p><p>User is getting timeouts in merge screen.</p><p> </p></td><td><p> </p><p>23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+
 #### 5 November 2023
 
 **(ARM v. 23.1.6)**

@@ -1,4 +1,4 @@
-# Release Note 23.1
+# Release Notes 23.1
 
 **April 2023 - Key Updates, and Improvements**
 
@@ -30,7 +30,7 @@ The complete CodeScan rules list can be accessed [HERE](https://knowledgebase.au
 
 ***
 
-### Changelogs/Minor Releases <a href="#changelogs" id="changelogs"></a>
+### Minor Releases / Changelogs <a href="#changelogs" id="changelogs"></a>
 
 #### 12 May 2023 <a href="#12-may-2023" id="12-may-2023"></a>
 

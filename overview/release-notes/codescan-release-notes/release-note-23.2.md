@@ -1,6 +1,6 @@
-# Release Note 23.2.0
+# Release Note 23.2
 
-**September 2023 - Version 23.2.0**
+**September 2023 - Version 23.2**
 
 This update introduces several significant improvements that will enhance your ability to maintain high-quality code and improve your security posture. This includes:
 

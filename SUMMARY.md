@@ -33,7 +33,7 @@
       * [Release Notes 4.4](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.4.md)
       * [Release Notes 4.3](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.3.md)
       * [Release Notes 4.2](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.2.md)
-    * [On-Prem Releases](overview/release-notes/codescan-release-notes/on-prem-releases/README.md)
+    * [On-Premise Releases](overview/release-notes/codescan-release-notes/on-premise-releases/README.md)
       * [Release Notes 23.1](overview/release-notes/codescan-release-notes/cloud-releases/release-note-23.1.0.md)
 
 ## Fundamentals

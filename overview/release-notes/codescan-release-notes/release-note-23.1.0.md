@@ -1,4 +1,4 @@
-# Release Note 23.1.0
+# Release Note 23.1
 
 **April 2023 - Key Updates, and Improvements**
 
@@ -30,7 +30,7 @@ The complete CodeScan rules list can be accessed [HERE](https://knowledgebase.au
 
 ***
 
-### Changelogs <a href="#changelogs" id="changelogs"></a>
+### Changelogs/Minor Releases <a href="#changelogs" id="changelogs"></a>
 
 #### 12 May 2023 <a href="#12-may-2023" id="12-may-2023"></a>
 
@@ -50,5 +50,28 @@ This is a maintenance release. The following items were fixed and/or added:
 * Starting from version **23.1.2**, CodeScan supports integration to GIT with **SSH Keys** and supports **ssh://** protocol. Connecting to GIT repository using the Secure Shell Protocol (SSH) provides a secure channel over an unsecured network. [(Learn More](https://knowledgebase.autorabit.com/codescan/docs/add-a-project-to-codescan-from-git))
 * **Salesforce Spring '23 (API version 57.0) Support:** To keep our product up to current with the most recent Salesforce upgrades, CodeScan supports the most recent **API 57.0** version in this release.
 * This release also includes insecure dependent libraries upgrade and other significant security improvements.
+
+***
+
+**September 2023**
+
+**(CodeScan  v23.1.3)**
+
+What's New:
+
+CodeScan Self-Hosted version **23.1.3** _(now compatible with **SonarQube™ version 10**_).
+
+More information will be added here as it becomes available.
+
+***
+
+**October 2023**
+
+**(CodeScan  v23.1.4)**
+
+The following rules were updated for release 23.1:\
+
+
+<table><thead><tr><th width="360">Rule Key</th><th>Rule Title</th></tr></thead><tbody><tr><td>sf:InsecureEndpoint<br></td><td>Avoid Cleartext Transmission of Sensitive Information<br></td></tr><tr><td>sf:SOQLInjection<br></td><td>Avoid Untrusted/Unescaped Variables in DML Query<br></td></tr></tbody></table>
 
 \

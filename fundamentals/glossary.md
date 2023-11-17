@@ -12,6 +12,7 @@
 8. **Data Compliance:** AutoRABIT's feature that ensures data in Salesforce complies with policies and standards.
 9. **Backup and Recovery:** AutoRABIT's feature that provides automated backup and recovery solutions for Salesforce data.
 10. **Environment Comparison:** AutoRABIT's feature that allows comparison of metadata and data across different Salesforce environments.
+11. **DevHub:** DevHub is the main Salesforce Org that you and your team use to create, delete and manage your Salesforce Scratch Orgs. A Scratch Org is a temporary deployment of Salesforce source code and metadata. Any number of Salesforce Scratch Orgs can be created to start a new project, to start a new feature branch, to test a new feature, start automated testing, perform development tasks directly in an Org, and start from scratch with a fresh new org.
 
 **DevOps Terms:**
 

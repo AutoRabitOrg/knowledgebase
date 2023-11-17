@@ -8,7 +8,6 @@ description: >-
 # ⚡ What we do
 
 Some of the things we specialize in at AutoRABIT:&#x20;
-Test Commit lime
 
 1. **Version Control**: We provide seamless integration with popular version control systems, enabling efficient tracking and management of changes to your codebase.
 2. **Automated Metadata Deployment**: Our platform automates the deployment process, ensuring quick, reliable, and error-free releases.

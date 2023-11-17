@@ -7,7 +7,7 @@ description: >-
 
 # ⚡ What we do
 
-Some of the things we specialize in at AutoRABIT:&#x20; Pull Request Test
+Some of the things we specialize in at AutoRABIT:
 
 1. **Version Control**: We provide seamless integration with popular version control systems, enabling efficient tracking and management of changes to your codebase.
 2. **Automated Metadata Deployment**: Our platform automates the deployment process, ensuring quick, reliable, and error-free releases.
@@ -16,7 +16,7 @@ Some of the things we specialize in at AutoRABIT:&#x20; Pull Request Test
 5. **CodeScan Integration**: We integrate with CodeScan for enhanced static code analysis. This allows us to conduct thorough code quality checks, detect vulnerabilities early, and ensure your code adheres to the highest standards of performance and security.
 6. **Governance and Compliance**: Our platform facilitates adherence to regulatory standards and corporate policies, ensuring smooth audits and compliance checks.
 
-Our mission is to simplify Salesforce DevOps and enhance productivity, letting businesses focus on what they do best: deliver value to their customers. By taking the complexities out of the DevOps process, AutoRABIT helps teams accelerate their development cycles, improve quality, and drive business growth.&#x20;
+Our mission is to simplify Salesforce DevOps and enhance productivity, letting businesses focus on what they do best: deliver value to their customers. By taking the complexities out of the DevOps process, AutoRABIT helps teams accelerate their development cycles, improve quality, and drive business growth.
 
 Join us at AutoRABIT, and let's redefine Salesforce DevOps together.
 

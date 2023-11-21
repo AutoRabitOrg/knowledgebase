@@ -91,6 +91,16 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 19 November 2023
+
+**(ARM v. 22.3.48)**
+
+<table><thead><tr><th width="121">Module</th><th width="283">Summary</th><th width="101">Fix Version</th><th width="105">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Deployments</p><p> </p></td><td>In sub-user, unable to get the branch in Salesforce Org Mappings section in SF Org Management screen if Admin user given only admin module permission.</td><td><p> </p><p>22.3</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Deployments</p><p> </p></td><td>Deployment tab - Redeploy/Promote issue</td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td>Added Loggers</td><td><p> </p><p>Data</p><p> </p></td></tr><tr><td><p> </p><p>nCino</p><p> </p></td><td>Unable to create Feature Migration Template on Debt Schedule object</td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>All Modules</p><p> </p></td><td>Invalid Email ID</td><td>22.3, 23.1</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+
+#### 15 November 2023
+
+<table><thead><tr><th width="118">Module</th><th width="279">Summary</th><th width="107">Fix Version</th><th width="108">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>Deployments</td><td>Page unresponsive in new deployment for "previous deployment" as source type</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
+
 #### 12 November 2023
 
 **(ARM v. 22.3.47)**

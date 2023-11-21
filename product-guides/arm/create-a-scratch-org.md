@@ -20,15 +20,13 @@ To create a new Scratch Org, perform the below steps:
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613934077102.png" alt=""><figcaption></figcaption></figure>
 
-1. Here the page is divided into further sections:
-   1. **Scratch Org Details**
-   2. **Select Deployment Options**
-   3. **Assign Branch and ALM**, and&#x20;
-   4. **Manage Permissions** section.
-
 #### Scratch Org Details <a href="#scratch-org-details" id="scratch-org-details"></a>
 
 In this section, you would be filling your scratch org details.
+
+{% hint style="info" %}
+Note: When configuring your Scratch Org, be aware that certain objects may require associated profiles and dependency data. This requirement isn't always explicit, so it's important to review your objects and their dependencies thoroughly to ensure a seamless setup.
+{% endhint %}
 
 Select the **Dev HUB** name. This is the main [Salesforce org](getting-started/salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
 

@@ -4,6 +4,6 @@ The CodeScan rule list is always expanding. You can view the complete current li
 
 Our [Release Note](https://knowledgebase.autorabit.com/codescan/docs/codescan-release-notes) also have a record of when certain rules were added.
 
-You can download the list of CodeScan rules from here:
+You can download the list of CodeScan rules from here:dsfsdfasdfasdfasd
 
 {% file src="../../../.gitbook/assets/CodeScan Rules List-10-30-23.xlsx" %}

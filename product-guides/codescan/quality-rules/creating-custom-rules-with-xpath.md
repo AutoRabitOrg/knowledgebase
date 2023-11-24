@@ -107,3 +107,24 @@ If you want to create a rule for a new metadata type, spend time looking at the 
 ```
 
 The type of component being visualized is flow. Decisions exist within that flow; they are a direct child of the flow within the XML. Finally, the count () method can determine if there are too many flows.
+
+### Adding your Custom Rule
+
+1. Login to your CodeScan Cloud account or SonarQube™
+2. Click on the Rules menu
+3.  In the Filters pane, search for Xpath rule template.\
+
+
+    <figure><img src="../../../.gitbook/assets/RulesList.png" alt=""><figcaption></figcaption></figure>
+4. Select the XPath rule template of the language of your choice.&#x20;
+5.  Under Custom Rules click on Create.\
+
+
+    <figure><img src="../../../.gitbook/assets/RuleCreate.png" alt=""><figcaption></figcaption></figure>
+6. Assign the values to the Name, key, Type, Severity, Status, Description and Message fields.&#x20;
+7.  Insert the Xpath created in the field provided and click on Create. \
+
+
+    <figure><img src="../../../.gitbook/assets/RuleTemplate.png" alt=""><figcaption></figcaption></figure>
+
+Now you can add it to your Quality Profile as you would any built in rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.

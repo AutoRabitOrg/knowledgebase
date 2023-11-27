@@ -9,7 +9,6 @@ When you integrate AutoRABIT with Azure AD, you can:
 1. Control in Azure AD who has access to AutoRABIT
 2. Enable your users to be automatically signed in to AutoRABIT with their Azure AD accounts
 3. Manage your accounts in one central location - the Azure portal.
-4. This is a merge request example
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 

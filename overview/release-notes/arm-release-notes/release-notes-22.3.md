@@ -91,6 +91,12 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 26 November 2023
+
+**(ARM v. 22.3.49)**
+
+<table data-full-width="true"><thead><tr><th width="120">Module</th><th width="327">Summary</th><th width="140">Fix Version(s)</th><th width="124">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>CI Jobs</p><p> </p></td><td>Post activities, particular job status showing as FAILED in ARM even job execution completed with succeed</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td><p> </p><p>Admin</p><p> </p></td><td>Getting empty Configuration under "Configure Default SCA Baseline Branches"</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td><p> </p><p>Admin</p><p> </p></td><td>Able to view empty role under permissions</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
+
 #### 19 November 2023
 
 **(ARM v. 22.3.48)**

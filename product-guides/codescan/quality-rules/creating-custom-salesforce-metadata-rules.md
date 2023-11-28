@@ -1,21 +1,19 @@
-# Creating Custom Salesforce Metadata Rules
+# Configuring for Salesforce Metadata Rules
 
 ### Learning Objectives: <a href="#learning-objectives" id="learning-objectives"></a>
 
 After completing this unit, you'll be able to:
 
-* Create a custom Salesforce metadata rule
-* Adding Salesforce metadata types for the analysis
-* Adding Salesforce metadata suffixes/extension for the analysis
+* Create a custom Salesforce metadata Quality Profile
+* Add Salesforce metadata types for a Salesforce Org analysis
+* Add Salesforce metadata suffixes/extension for the analysis
 
-### Create a custom Salesforce metadata rule <a href="#create-a-custom-salesforce-metadata-rule" id="create-a-custom-salesforce-metadata-rule"></a>
+### Create a custom Salesforce Quality Profile <a href="#create-a-custom-salesforce-metadata-rule" id="create-a-custom-salesforce-metadata-rule"></a>
 
-This article explains how to create and enable the Salesforce Metadata rules in the CodeScan Cloud environment.
-
-To enable downloading metadata for your Salesforce project, you will need to change some project settings. Remember that the following will only work with code being pulled from Salesforce.
+This article explains how to enable the Salesforce Metadata rules in the CodeScan Cloud environment.
 
 1. Login to your **CodeScan** account.
-2.  Click on the **`Quality profiles`** on your main organization page and then click on **`Create`** button.\
+2.  Click on the **`Quality Profiles`** on your main organization page and then click on **`Create`** button.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-SX39IQ7X.png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +39,11 @@ To enable downloading metadata for your Salesforce project, you will need to cha
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-Y9I1SSLZ.png" alt=""><figcaption></figcaption></figure>
 
-### Adding Salesforce metadata types for the analysis <a href="#adding-salesforce-metadata-types-for-the-analysis" id="adding-salesforce-metadata-types-for-the-analysis"></a>
+### Adding Salesforce metadata types for Salesforce Org analysis <a href="#adding-salesforce-metadata-types-for-the-analysis" id="adding-salesforce-metadata-types-for-the-analysis"></a>
+
+To enable downloading metadata for your Salesforce project, you will need to change some project settings. Remember that the following will only work with code being pulled from Salesforce. &#x20;
+
+If you are using a git repository or any other method of scanning, please skip to the next step.
 
 1.  Once you are done with the activation of the custom rule, go to the project with the rules you wish to run the analysis, and click on **`Project Settings > General settings`**.\
 

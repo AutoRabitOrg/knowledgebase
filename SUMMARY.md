@@ -531,7 +531,7 @@
   * [Quality Rules](product-guides/codescan/quality-rules/README.md)
     * [Creating Custom Rules with XPath](product-guides/codescan/quality-rules/creating-custom-rules-with-xpath.md)
     * [CodeScan Rule List](product-guides/codescan/quality-rules/codescan-rule-list.md)
-    * [Creating Custom Salesforce Metadata Rules](product-guides/codescan/quality-rules/creating-custom-salesforce-metadata-rules.md)
+    * [Configuring for Salesforce Metadata Rules](product-guides/codescan/quality-rules/creating-custom-salesforce-metadata-rules.md)
     * [Metadata Rules on CodeScan Self-Hosted](product-guides/codescan/quality-rules/metadata-rules-on-codescan-self-hosted.md)
   * [CodeScan Rules' Modules](product-guides/codescan/codescan-rules-modules.md)
   * [Issues](product-guides/codescan/issues/README.md)

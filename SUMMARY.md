@@ -20,7 +20,7 @@
   * [CodeScan Release Notes](overview/release-notes/codescan-release-notes/README.md)
     * [Cloud Releases](overview/release-notes/codescan-release-notes/cloud-releases/README.md)
       * [Release Note 23.2](overview/release-notes/codescan-release-notes/cloud-releases/release-note-23.2.md)
-      * [Release Notes 23.1](overview/release-notes/codescan-release-notes/cloud-releases/release-note-23.1.0.md)
+      * [Release Notes 23.1](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)
       * [Release Note 22.8](overview/release-notes/codescan-release-notes/cloud-releases/release-note-22.8.md)
       * [Release Notes 22.7](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-22.7.md)
       * [Release Notes 22.4](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-22.4.md)
@@ -34,7 +34,7 @@
       * [Release Notes 4.3](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.3.md)
       * [Release Notes 4.2](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.2.md)
     * [On-Premise Releases](overview/release-notes/codescan-release-notes/on-premise-releases/README.md)
-      * [Release Notes 23.1](overview/release-notes/codescan-release-notes/cloud-releases/release-note-23.1.0.md)
+      * [Release Notes 23.1](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)
 
 ## Fundamentals
 

@@ -1,8 +1,8 @@
-# Configuring for Salesforce Metadata Rules
+# Configuration for Salesforce Metadata Rules
 
 ### Learning Objectives: <a href="#learning-objectives" id="learning-objectives"></a>
 
-After completing this unit, you'll be able to:
+After reading this guide, you'll be able to:
 
 * Create a custom Salesforce metadata Quality Profile
 * Add Salesforce metadata types for a Salesforce Org analysis

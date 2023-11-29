@@ -7,7 +7,7 @@ description: CodeScan Release 23.1
 **April 2023 - Key Updates, and Improvements**
 
 > Date of release: 23 April 2023\
-> Article last updated: 31 May 2023
+> Article last updated: 7 Nov 2023
 
 ### Key Updates <a href="#key-updates" id="key-updates"></a>
 
@@ -76,6 +76,25 @@ More information will be added here as it becomes available.
 The following rules were updated for release 23.1:\
 
 
-<table><thead><tr><th width="360">Rule Key</th><th>Rule Title</th></tr></thead><tbody><tr><td>sf:InsecureEndpoint<br></td><td>Avoid Cleartext Transmission of Sensitive Information<br></td></tr><tr><td>sf:SOQLInjection<br></td><td>Avoid Untrusted/Unescaped Variables in DML Query<br></td></tr></tbody></table>
+<table><thead><tr><th width="396">Rule Key</th><th>Rule Title</th></tr></thead><tbody><tr><td>sf:InsecureEndpoint<br></td><td>Avoid Cleartext Transmission of Sensitive Information<br></td></tr><tr><td>sf:SOQLInjection<br></td><td>Avoid Untrusted/Unescaped Variables in DML Query<br></td></tr></tbody></table>
+
+***
+
+**November 1 2023**
+
+**(CodeScan  v23.1.5)**
+
+The following was updated for release 23.1:\
+
+
+<table><thead><tr><th width="396">Rule Key</th><th>Rule Title</th></tr></thead><tbody><tr><td>SonarQube Rule sf:AvoidPublicFields</td><td><br></td></tr><tr><td>CodeScan rule sf:AvoidUsingHardCodedId not detecting</td><td></td></tr></tbody></table>
+
+***
+
+**November 7 2023**
 
 \
+**(CodeScan  v23.1.6)**
+
+
+

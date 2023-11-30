@@ -34,14 +34,14 @@ To configure the merge approvals:
 * No criteria can restrict the **org admin** from approving any merge.
 * Even if the **Disable Merge Self Approval** checkbox is selected, the **org admin** can approve their own merges.
 * The **EZ-Merge Approver** _(non-admin user)_ is not allowed to approve their own merges if the **Disable Merge Self Approval** checkbox is selected.
-* If the approval level is set to 2, and the **org admin** approves the merge, no more approval is needed.
-* The L1 and L2 approver email ids cannot be the same when the approval level is set to 2.
+* If the approval level is set to 2, and the **org admin** or **merge administrator** approves the merge, **no more approval** is needed.
+* The L1 and L2 approver email IDs cannot be the same when the approval level is set to 2.
 
 #### More Informations <a href="#more-informations" id="more-informations"></a>
 
 The following details pertain to the criteria for commit validation approval:
 
-* There are no restrictions on the **org admin** ability to approve any prevalidation commits.
+* There are no restrictions on the **org admin**'s ability to approve any prevalidation commits.
 * If the **Disable Commit Self Approval** checkbox is enabled in **Commit Validation - Approval Settings**, the gated check-ins approvers will not be able to approve their own commit unless they are a **org admin**. The org admins can view the _approve/reject_ option and proceed with the prevalidation commits.
 *   If the **Enable Commit Approver** checkbox is checked, the _admin_ and the gated check-ins approver added to the reviewer list will be allowed to approve the prevalidation commits.\
 

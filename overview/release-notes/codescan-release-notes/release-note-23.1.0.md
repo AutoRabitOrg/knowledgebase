@@ -87,7 +87,7 @@ The following rules were updated for release 23.1:\
 The following was updated for release 23.1:\
 
 
-<table><thead><tr><th width="396">Rule Key</th><th>Rule Title</th></tr></thead><tbody><tr><td>SonarQube Rule sf:AvoidPublicFields</td><td><br></td></tr><tr><td>CodeScan rule sf:AvoidUsingHardCodedId not detecting</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="396">Rule Key</th><th>Rule Title</th></tr></thead><tbody><tr><td>sf:AvoidPublicFields</td><td>Class Variable Fields should not have Public Accessibility</td></tr><tr><td>sf:AvoidUsingHardCodedId</td><td>Avoid Using Hard Coded Salesforce Id</td></tr></tbody></table>
 
 ***
 

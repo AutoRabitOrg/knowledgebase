@@ -8,7 +8,7 @@
 
 This update introduces several new rules and bug fixes for current rules. This includes:
 
-### 1. Flow Rules <a href="#1.-flow-rules" id="1.-flow-rules"></a>
+**1. Flow Rules**
 
 There are 19 new rules for Salesforce flows:
 

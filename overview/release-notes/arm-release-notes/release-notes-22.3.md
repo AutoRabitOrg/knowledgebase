@@ -91,6 +91,19 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 3 December 2023
+
+**(ARM v. 22.3.50)**
+
+| Module      | Summary                                                                                                  | Fix Version(s) | Resolution                  | Cause    |
+| ----------- | -------------------------------------------------------------------------------------------------------- | -------------- | --------------------------- | -------- |
+| Admin       | Issue adding user mapping                                                                                | 22.3, 23.1     | Code Fix                    | Use Case |
+| Admin       | nCino View Object Failing                                                                                | NA             | No Code Fix - Added Loggers | Data     |
+| Deployments | Org sync not completing                                                                                  | NA             | No Code Fix - Added Loggers | Data     |
+| Dataloader  | Corrected a spelling mistake in ARM steps.                                                               | 23.1, 22.3     | Code Fix                    | Use Case |
+| Dataloader  | Corrected data seeding error preventing upsert                                                           | 23.1, 22.3     | Code Fix                    | Use Case |
+| nCino       | On-premise testing: CI Job with template option failed due to "data and metadata retrieval failed” error | 23.1, 22.3     | Code Fix                    | Use Case |
+
 #### 26 November 2023
 
 **(ARM v. 22.3.49)**

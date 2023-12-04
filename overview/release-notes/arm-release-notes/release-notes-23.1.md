@@ -103,6 +103,28 @@ We're thrilled to introduce a series of exciting enhancements to elevate your nC
 
 ### Changelogs
 
+#### 3 December 2023
+
+**(ARM v 23.1.10)**
+
+| Module                                 | Summary                                                                                                                                   | Fix Version(s)                    | Resolution                                         | Cause                                 |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | -------------------------------------------------- | ------------------------------------- |
+| <p> </p><p>Admin</p><p> </p>           | Issue adding user mapping                                                                                                                 | <p> </p><p>22.3, 23.1</p><p> </p> | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Deployments</p><p> </p>     | Full org:org deployment failing with no proper reason                                                                                     | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Admin</p><p> </p>           | Issue with registering new branch in the repository                                                                                       | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Reports</p><p> </p>         | ARM and CodeScan integration EZ-Commit validation issue                                                                                   | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Change Request</p><p> </p> |
+| <p> </p><p>Reports</p><p> </p>         | New branch created CodeScan issue                                                                                                         | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Deployments</p><p> </p>     | Destructive package is not generated properly when deploying from git revisions                                                           | 23.1                              | Code Fix                                           | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Admin</p><p> </p>           | nCino View Object Failing                                                                                                                 | <p> </p><p>NA</p><p> </p>         | No Code Fix - Added Loggers                        | Data                                  |
+| Deployments                            | Org sync not completing                                                                                                                   | <p> </p><p>NA</p>                 | <p> </p><p>No Code Fix - Added Loggers</p><p> </p> | Data                                  |
+| Dataloader                             | Corrected a spelling mistake in ARM steps.                                                                                                | <p> </p><p>23.1, 22.3</p><p> </p> | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Dataloader</p><p> </p>      | Corrected data seeding error preventing upsert                                                                                            | <p> </p><p>23.1, 22.3</p><p> </p> | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Reports</p><p> </p>         | Getting ‘cannot invoke "String.length()" because of "text" is “null”’ error when performing the ‘Get latest reports’ in Weekly reports    | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>Reports</p><p> </p>         | When navigating to Static Code Analysis screen from Reports module, getting the “comparison method violates its general contract!” error. | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Data</p><p> </p>           |
+| <p> </p><p>Version Control</p><p> </p> | On DX branch release label artifact execution, on deleted components, the destructive changes artifact preparation is not generated.      | <p> </p><p>23.1</p><p> </p>       | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>nCino</p><p> </p>           | On-premise testing: CI Job with template option failed due to "data and metadata retrieval failed” error                                  | <p> </p><p>23.1, 22.3</p><p> </p> | <p> </p><p>Code Fix</p><p> </p>                    | <p> </p><p>Use Case</p><p> </p>       |
+| <p> </p><p>CI Jobs</p><p> </p>         | Failed to deploy destructive changes though CI jobs.                                                                                      | 23.1                              | Code Fix                                           | Use Case                              |
+
 #### 26 November 2023
 
 **(ARM v 23.1.9)**

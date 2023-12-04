@@ -71,8 +71,6 @@ What's New:
 
 CodeScan Self-Hosted version **23.1.3** _(now compatible with **SonarQube™ version 10**_).
 
-More information will be added here as it becomes available.
-
 ***
 
 #### 31 May 2023 <a href="#31-may-2023" id="31-may-2023"></a>

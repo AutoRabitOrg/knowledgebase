@@ -2,7 +2,7 @@
 
 ## Current Release&#x20;
 
-### CodeScan v. 23.2.6 (Minor)
+### CodeScan v. 23.2.6 (Minor Release)
 
 **November 2023**&#x20;
 

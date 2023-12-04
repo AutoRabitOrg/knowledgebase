@@ -1,4 +1,4 @@
-# Release Note 23.2
+# Release Notes 23.2
 
 ## Current Release&#x20;
 
@@ -198,7 +198,7 @@ New screen
 
 Minor performance enhancements, bug fixes, and security improvements can also be observed in the CodeScan portal.
 
-### CodeScan v. 23.2.6
+
 
 ### **CodeScan v. 23.2.4**
 

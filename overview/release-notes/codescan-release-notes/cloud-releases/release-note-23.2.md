@@ -15,7 +15,7 @@
 
 * The inclusion of special characters into the Payload sent by the GitHub webhook is compelling. If there are any Unicode characters, the hash gets generated differently, which was causing this issue intermittently. With this fix, we have added support for UTF encoding to resolve the issue.​
 * Correct HTTP 400 error during CodeScan execution
-* **Corrected instances of CSV export report not matching Issues tab in project.**
+* Corrected instances of CSV export report not matching Issues tab in project.
 
 **November 2023**&#x20;
 

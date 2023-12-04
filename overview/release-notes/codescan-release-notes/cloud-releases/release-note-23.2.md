@@ -1,6 +1,30 @@
 # Release Note 23.2
 
-**September 2023 - Version 23.2**
+## Current Release
+
+### CodeScan v. 23.2.6
+
+* Flow Module
+* Corrects misdirected TODOs in Apex code&#x20;
+
+## **Major Releases**&#x20;
+
+### **CodeScan v. 23.2.5 (North America \[NA] includes 23.2.1–23.2.4 Rollup)**
+
+**Code fixes applied:**
+
+* The inclusion of special characters into the Payload sent by the GitHub webhook is compelling. If there are any Unicode characters, the hash gets generated differently, which was causing this issue intermittently. With this fix, we have added support for UTF encoding to resolve the issue.​
+* Correct HTTP 400 error during CodeScan execution
+* **Corrected instances of CSV export report not matching Issues tab in project.**
+
+**November 2023**&#x20;
+
+* Application logic leaves existing issues from target branch being displayed in PR. They only filter issues in a RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove that condition only if the new feature flag is disabled.
+* Code fix applied to correct stack overflow error with SOQL injection rule
+
+### CodeScan v. 23.2.0 (EU, AU only)&#x20;
+
+**September 2023** &#x20;
 
 This update introduces several significant improvements that will enhance your ability to maintain high-quality code and improve your security posture. This includes:
 
@@ -141,6 +165,26 @@ New screen
 
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-0MYSLQL9.png)
 
-#### Other Improvements
+## Minor Improvements
 
 Minor performance enhancements, bug fixes, and security improvements can also be observed in the CodeScan portal.
+
+### CodeScan v. 23.2.6
+
+### **CodeScan v. 23.2.4**
+
+* ·Task definition changes for SMTP on API and worker on all SaaS instances.
+
+### **CodeScan v. 23.2.3**
+
+* Fix for Copado integration permissions issue
+
+### **CodeScan v. 23.2.2**
+
+* When users run a comparison branch analysis using the wrong base branch (not the master), the application results in a runtime error while trying to view the project analysis page.
+
+### **CodeScan v. 23.2.1**
+
+* Error related to application logic, which leaves existing issues from target branch being displayed in PR. They filter out only the issues with RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove the condition only if the new feature flag is disabled.
+* Stack overflow error fix with SOQL Injection Rule
+

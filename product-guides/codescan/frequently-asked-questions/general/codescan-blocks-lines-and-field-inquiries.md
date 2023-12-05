@@ -18,4 +18,4 @@ When analyzing code containing queries with multiple fields, each field placed o
 
 ### **Are Empty Lines or Lines with Only Whitespace Included in the Line Count?**&#x20;
 
-No, lines that consist solely of whitespace or are part of comments are not included in the line count in CodeScan. This approach focuses the analysis on functional and meaningful lines of code, providing a more accurate representation of the codebase's complexity and size.
+No, lines that consist solely of whitespace or are part of comments are not included in the line count in CodeScan.&#x20;

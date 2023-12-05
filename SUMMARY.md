@@ -545,6 +545,7 @@
   * [Frequently Asked Questions](product-guides/codescan/frequently-asked-questions/README.md)
     * [General](product-guides/codescan/frequently-asked-questions/general/README.md)
       * [Single sign-on (SSO) FAQs](product-guides/codescan/frequently-asked-questions/general/single-sign-on-sso-faqs.md)
+      * [CodeScan Blocks, Lines, and Field Inquiries](product-guides/codescan/frequently-asked-questions/general/codescan-blocks-lines-and-field-inquiries.md)
       * [Not receiving email notifications from CodeScan for new issue assigned](product-guides/codescan/frequently-asked-questions/general/not-receiving-email-notifications-from-codescan-for-new-issue-assigned.md)
       * [Difference b/w CodeScan Self-Hosted and CodeScan Cloud](product-guides/codescan/frequently-asked-questions/general/difference-b-w-codescan-self-hosted-and-codescan-cloud.md)
       * [CodeScan Static IP Ranges](product-guides/codescan/frequently-asked-questions/general/codescan-static-ip-ranges.md)

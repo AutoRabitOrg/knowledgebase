@@ -46,7 +46,7 @@ There are 19 new rules for Salesforce flows:
 
 **Major Release**
 
-[**CodeScan v. 23.2.5**](release-note-23.2.md#23.2.5-major-release-november-2023) **(Major)**
+[**CodeScan v. 23.2.5**](release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup) **(Major)**
 
 **Minor Releases**
 

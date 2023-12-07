@@ -61,8 +61,8 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
         <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433878410.png" alt="" width="563"><figcaption></figcaption></figure>
 14. Under the **`Post Commit`** section, you can invoke certain processes after the commit is completed.
     1. **`Create/Append Revision to existing Label`**
-       1. **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label- you can reuse the labels and perform multiple commits under a given label. Select the label from the drop-down or create a new one by clicking the + icon.
-       2.  **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.\
+       * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label- you can reuse the labels and perform multiple commits under a given label. Select the label from the drop-down or create a new one by clicking the + icon.
+       *   **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.\
 
 
            <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433959045.png" alt="" width="563"><figcaption></figcaption></figure>

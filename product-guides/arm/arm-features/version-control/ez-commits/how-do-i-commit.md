@@ -66,11 +66,6 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 
 
            <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433959045.png" alt="" width="563"><figcaption></figcaption></figure>
-    2.  **`Update ALM Work Item status:`** After the changes are committed to the version control system, the status of the ALM work item is updated and reflected in your ALM system. You can view the current status of the work item selected. You can choose the new work item status according to your requirements. You can keep or update the current work item status for the same work item.\
-
-
-        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664434059682.png" alt="" width="563"><figcaption></figcaption></figure>
-    3. **`None:`** No post commit action will be taken.
 15. Click **`Next`**.
 
 #### Step 2: Selecting the Components <a href="#step-2-selecting-the-components" id="step-2-selecting-the-components"></a>

@@ -1,4 +1,4 @@
-# Release Note 22.8
+# Release Notes 22.8
 
 **December 2022 - New Updates, Improvements**
 
@@ -26,7 +26,7 @@ The CodeScan IntelliJ plugin has been upgraded to the stable **6.1.4** version. 
 
 This release includes minor stability fixes and improvements for the CodeScan platform.
 
-
+***
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
@@ -40,7 +40,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * SCA report shows only _ApexClass_ and _AuraDefinitionBundle_ results in ARM, whereas the CodeScan app displays the accurate issues count.
   * Log file displays the error: `Only first 10000 issues can be shown` (#[48644](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000082753293)).
 
-
+***
 
 #### 22 March 2023 <a href="#22-march-2023" id="22-march-2023"></a>
 
@@ -55,7 +55,7 @@ This is a maintenance release. The following items were fixed and/or added:
   **`if (objAcc != null && objAcc.getSObjectType().getDescribe().isUpdateable()) {{noformat}`**\
   This case is now added to the rule.(#[58534](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095397001)).
 
-
+***
 
 #### 15 March 2023 <a href="#15-march-2023" id="15-march-2023"></a>
 
@@ -66,7 +66,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **`Avoid running Soql and DML inside loops`** rules were not evaluating properly and throws wrong issue (#[62432](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000100116773)).
 * Fixed an issue with the integration of VS Code and CodeScan where, when a user clicked on the quality profile in the project information page, they were sent to a screen that read, **`The requested Quality Profile was not found`** (#[63569](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000101941939)).
 
-
+***
 
 #### 28 Feb 2023 <a href="#28-feb-2023" id="28-feb-2023"></a>
 

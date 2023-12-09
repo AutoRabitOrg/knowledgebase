@@ -1,12 +1,20 @@
 # Release Notes 23.2
 
-## **Current Release: 23.2.6 (November 2023)**
+## CodeScan Cloud&#x20;
 
-{% tabs %}
-{% tab title="23.2.6" %}
-### CodeScan v. 23.2.6 (Minor Release)
+## Summary 23.2 Release Notes
 
-**November 2023**&#x20;
+Click on the version number in the chart below to go to the release notes.
+
+<table data-full-width="false"><thead><tr><th width="134" align="center">Date</th><th width="95" align="center">Version</th><th width="93" align="center">Type</th><th>Description</th></tr></thead><tbody><tr><td align="center"><mark style="color:blue;">Nov 2023</mark><br><mark style="color:blue;">Current</mark></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.6"><mark style="color:blue;"><strong>23.2.6</strong></mark></a></td><td align="center"><mark style="color:blue;">Minor</mark></td><td><mark style="color:blue;">New rules for Salesforce flows and one rule misfire corrected.</mark></td></tr><tr><td align="center"><strong>Nov 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup"><strong>23.2.5</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>North America includes 23.2.0–23.2.4</strong></td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.4">23.2.4</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.3">23.2.3</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.2">23.2.2</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.1">23.2.1</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"><strong>Sept 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.0-eu-au-only"><strong>23.2.0</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>Europe + Australia only</strong></td></tr></tbody></table>
+
+***
+
+## Current Release
+
+### CodeScan v. 23.2.6
+
+**Nov 2023**
 
 This update introduces several new rules and bug fixes for current rules. This includes:
 
@@ -14,53 +22,33 @@ This update introduces several new rules and bug fixes for current rules. This i
 
 There are 19 new rules for Salesforce flows:
 
-* **Inactive flows should be removed:** Inactive flows may cause clutter in the Salesforce org.  In extreme cases they can begin to hit the organization’s limits. These should be removed if not being used.&#x20;
-* **Avoid Large Flows**: Too many nodes can cause your Flow to become complex and unmanageable.  Consider using Sub flows to make your Flow logic reusable and scalable.&#x20;
+* **Inactive flows should be removed:** Inactive flows may cause clutter in the Salesforce org.  In extreme cases, they can begin to hit the organization’s limits. These should be removed if not being used.&#x20;
+* **Avoid Large Flows**: Too many nodes can cause your Flow to become complex and unmanageable.  Consider using Subflows to make your Flow logic reusable and scalable.&#x20;
 * **DML statements should not be included in the loops:** SOQL and DML in Salesforce is bound by “Governor Limits”.  If a large amount of SOQL and or DML calls are made in a short amount of time, you can run into a Governor Limit Exception. This rule minimizes the chances of this by letting the user know when they are calling these in a loop.&#x20;
 * **Avoid creating nested loops in flows:** Nested loops within your Flows can cause them to become unreadable, inefficient, and complex.  Consider using Invoked Actions to clean up complex Flows.&#x20;
 * **Document Flows and the flow components:** Flows should have adequate documentation.  Any flow elements without a description should have a violation thrown independently.&#x20;
-* **Avoid Hard Coded Values in Flows:** Hard coded values in flows can lead to unexpected output and make maintenance difficult. Instead, Get Records can be used for the respective object using the DeveloperName.  If you’re creating criteria in an entry condition, you can reference DeveloperName (API Name) fields with a formula.&#x20;
-* **Flows Should Include Fault Paths:** Fault paths are a way to handle errors that may occur in your flow.  Depending on the Flow and it’s purpose, errors can be logged, show an error screen or send an email of the failure to a group of users.  Flows should include Fault paths to ensure that all errors are handled appropriately.&#x20;
-* **Flow Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Flows and Domains.&#x20;
-* **Flow Variables & Resources Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Variables, Formulas and Choices.&#x20;
-* **Flow Interaction Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Screens, Actions and Emails.&#x20;
-* **Flow Logic Naming**: Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Decisions, Assignments and Loops.&#x20;
-* **Flow DML Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for DML operations (Query, Update, Create, Delete).&#x20;
-* **Migrate Workflows and Processes to Flows:** Process Builders and Workflows are being phased out over the coming year.  In Winter '23 the ability to create new Workflows will be turned off, in Summer '23 the ability to create new Processes with Process Builder will be turned off. It is recommended that these Processes and Workflows are migrated to Flows.&#x20;
+* **Avoid Hard-Coded Values in Flows:** Hard-coded values in flows can lead to unexpected output and make maintenance difficult. Instead, Get Records can be used for the respective object using the DeveloperName.  If you’re creating criteria in an entry condition, you can reference DeveloperName (API Name) fields with a formula.&#x20;
+* **Flows Should Include Fault Paths:** Fault paths are a way to handle errors that may occur in your flow.  Depending on the Flow and its purpose, errors can be logged, show an error screen, or send an email of the failure to a group of users.  Flows should include Fault paths to ensure that all errors are handled appropriately.&#x20;
+* **Flow Naming:** Standardized naming conventions allow an organization's flows to be clean, maintainable, and readable.  This rule enforces standard naming conventions for Flows and Domains.&#x20;
+* **Flow Variables & Resources Naming:** Standardized naming conventions allow an organization's flows to be clean, maintainable, and readable.  This rule enforces standard naming conventions for Variables, Formulas, and Choices.&#x20;
+* **Flow Interaction Naming:** Standardized naming conventions allow an organization's flows to be clean, maintainable, and readable.  This rule enforces standard naming conventions for Screens, Actions, and Emails.&#x20;
+* **Flow Logic Naming**: Standardized naming conventions allow an organization's flows to be clean, maintainable, and readable.  This rule enforces standard naming conventions for Decisions, Assignments, and Loops.&#x20;
+* **Flow DML Naming:** Standardized naming conventions allow an organization's flows to be clean, maintainable, and readable.  This rule enforces standard naming conventions for DML operations (Query, Update, Create, Delete).&#x20;
+* **Migrate Workflows and Processes to Flows:** Process Builders and Workflows are being phased out over the coming year.  In Winter '23 the ability to create new Workflows will be turned off, in Summer '23 the ability to create new Processes with Process Builder will be turned off. It is recommended that these Processes and Workflows be migrated to Flows.&#x20;
 * **Use Fast Field Updates:** If a flow is only updating the record that triggered it, it should be using the Fast Field Updates option. This can be up to 10 times faster than the more flexible Actions and Related Records Flow.&#x20;
 * **Get Records Should Be Filtered:** This rule mandates the usage of at least one filter in the Data element "Get Records" within Salesforce Flows.  Enforcing this rule will encourage flow designers to think critically about their data retrieval needs and apply relevant filters, reducing the risk of performance bottlenecks and unoptimized queries.&#x20;
 * **Unused Flow Variables:** Consider removing unused Flow variables to increase performance and readability.&#x20;
 * **Missing Null Handler After Get Records in Flow:** By implementing a decision element to validate the result of the Get Records operation, we can proactively identify and handle cases where no data is retrieved. This allows us to avoid potential null reference errors and prevent unexpected crashes or data processing issues.&#x20;
 * **Duplicate DML operations in Flows:** This rule aims to avoid potential issues caused by duplicate database operations that might occur if users go back and forth between screens, triggering the same actions multiple times.&#x20;
-* **Flows API Version Is Too Old:** This rule identifies flows which are using older API versions.  Consider updating the API versions of any flows found.&#x20;
+* **Flows API Version Is Too Old:** This rule identifies flows that are using older API versions.  Consider updating the API versions of any flows found.&#x20;
 
 &#x20;**2. Bug Fixes:**&#x20;
 
 * Rule Misfire: Corrected Apex code incorrectly detecting TODOs.&#x20;
 
-[CodeScan v. 23.2.5 (Major Release)](release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup)&#x20;
-{% endtab %}
+***
 
-{% tab title="23.2.5" %}
-[**CodeScan v. 23.2.6 (Current Release)**](release-note-23.2.md#codescan-v.-23.2.6-minor-release)
-
-**Major Release**
-
-[**CodeScan v. 23.2.5**](release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup) **(Major)**
-
-**Minor Releases**
-
-[**CodeScan v. 23.2.6**](release-note-23.2.md#23.2.6)
-
-[**CodeScan v. 23.2.4**](release-note-23.2.md#codescan-v.-23.2.4-2)
-
-[**CodeScan v. 23.2.3**](release-note-23.2.md#codescan-v.-23.2.3-2)
-
-[**CodeScan v. 23.2.2**](release-note-23.2.md#codescan-v.-23.2.2-2)
-
-[**CodeScan v. 23.2.1**](release-note-23.2.md#codescan-v.-23.2.1-2)
-
-## **Major Release**
+## Major Releases
 
 ### **CodeScan v. 23.2.5 (North America \[NA] includes 23.2.1–23.2.4 Rollup)**
 
@@ -68,80 +56,14 @@ There are 19 new rules for Salesforce flows:
 
 **Code fixes applied:**
 
-* The inclusion of special characters into the Payload sent by the GitHub webhook is compelling. If there are any Unicode characters, the hash gets generated differently, which was causing this issue intermittently. With this fix, we have added support for UTF encoding to resolve the issue.​
+The inclusion of special characters into the Payload sent by the GitHub webhook is compelling. If there are any Unicode characters, the hash gets generated differently, which was causing this issue intermittently. With this fix, we have added support for UTF encoding to resolve the issue.​
+
 * Correct HTTP 400 error during CodeScan execution
-* Corrected instances of CSV export report not matching Issues tab in project.
-* Application logic leaves existing issues from target branch being displayed in PR. They only filter issues in a RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove that condition only if the new feature flag is disabled.
+* Corrected instances of CSV export report not matching the Issues tab in the project.
+* Application logic leaves existing issues from the target branch being displayed in PR. They only filter issues in a RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove that condition only if the new feature flag is disabled.
 * Code fix applied to correct stack overflow error with SOQL injection rule
 
-## Minor Improvements
-
-Minor performance enhancements, bug fixes, and security improvements can also be observed in the CodeScan portal.
-
-### CodeScan v. 23.2.6
-
-**November 2023**&#x20;
-
-This update introduces several new rules and bug fixes for current rules. This includes:
-
-**1. Flow Rules**
-
-There are 19 new rules for Salesforce flows:
-
-* **Inactive flows should be removed:** Inactive flows may cause clutter in the Salesforce org.  In extreme cases they can begin to hit the organization’s limits. These should be removed if not being used.&#x20;
-* **Avoid Large Flows**: Too many nodes can cause your Flow to become complex and unmanageable.  Consider using Sub flows to make your Flow logic reusable and scalable.&#x20;
-* **DML statements should not be included in the loops:** SOQL and DML in Salesforce is bound by “Governor Limits”.  If a large amount of SOQL and or DML calls are made in a short amount of time, you can run into a Governor Limit Exception. This rule minimizes the chances of this by letting the user know when they are calling these in a loop.&#x20;
-* **Avoid creating nested loops in flows:** Nested loops within your Flows can cause them to become unreadable, inefficient, and complex.  Consider using Invoked Actions to clean up complex Flows.&#x20;
-* **Document Flows and the flow components:** Flows should have adequate documentation.  Any flow elements without a description should have a violation thrown independently.&#x20;
-* **Avoid Hard Coded Values in Flows:** Hard coded values in flows can lead to unexpected output and make maintenance difficult. Instead, Get Records can be used for the respective object using the DeveloperName.  If you’re creating criteria in an entry condition, you can reference DeveloperName (API Name) fields with a formula.&#x20;
-* **Flows Should Include Fault Paths:** Fault paths are a way to handle errors that may occur in your flow.  Depending on the Flow and it’s purpose, errors can be logged, show an error screen or send an email of the failure to a group of users.  Flows should include Fault paths to ensure that all errors are handled appropriately.&#x20;
-* **Flow Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Flows and Domains.&#x20;
-* **Flow Variables & Resources Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Variables, Formulas and Choices.&#x20;
-* **Flow Interaction Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Screens, Actions and Emails.&#x20;
-* **Flow Logic Naming**: Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for Decisions, Assignments and Loops.&#x20;
-* **Flow DML Naming:** Standardized naming conventions allow an organizations flows to be clean, maintainable and readable.  This rule enforces standard naming conventions for DML operations (Query, Update, Create, Delete).&#x20;
-* **Migrate Workflows and Processes to Flows:** Process Builders and Workflows are being phased out over the coming year.  In Winter '23 the ability to create new Workflows will be turned off, in Summer '23 the ability to create new Processes with Process Builder will be turned off. It is recommended that these Processes and Workflows are migrated to Flows.&#x20;
-* **Use Fast Field Updates:** If a flow is only updating the record that triggered it, it should be using the Fast Field Updates option. This can be up to 10 times faster than the more flexible Actions and Related Records Flow.&#x20;
-* **Get Records Should Be Filtered:** This rule mandates the usage of at least one filter in the Data element "Get Records" within Salesforce Flows.  Enforcing this rule will encourage flow designers to think critically about their data retrieval needs and apply relevant filters, reducing the risk of performance bottlenecks and unoptimized queries.&#x20;
-* **Unused Flow Variables:** Consider removing unused Flow variables to increase performance and readability.&#x20;
-* **Missing Null Handler After Get Records in Flow:** By implementing a decision element to validate the result of the Get Records operation, we can proactively identify and handle cases where no data is retrieved. This allows us to avoid potential null reference errors and prevent unexpected crashes or data processing issues.&#x20;
-* **Duplicate DML operations in Flows:** This rule aims to avoid potential issues caused by duplicate database operations that might occur if users go back and forth between screens, triggering the same actions multiple times.&#x20;
-* **Flows API Version Is Too Old:** This rule identifies flows which are using older API versions.  Consider updating the API versions of any flows found.&#x20;
-
-&#x20;**2. Bug Fixes:**&#x20;
-
-* Rule Misfire: Corrected Apex code incorrectly detecting TODOs.&#x20;
-
-### **CodeScan v. 23.2.4**
-
-* ·Task definition changes for SMTP on API and worker on all SaaS instances.
-
-### **CodeScan v. 23.2.3**
-
-* Fix for Copado integration permissions issue
-
-### **CodeScan v. 23.2.2**
-
-* When users run a comparison branch analysis using the wrong base branch (not the master), the application results in a runtime error while trying to view the project analysis page.
-
-### **CodeScan v. 23.2.1**
-
-* Error related to application logic, which leaves existing issues from target branch being displayed in PR. They filter out only the issues with RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove the condition only if the new feature flag is disabled.
-* Stack overflow error fix with SOQL Injection Rule
-{% endtab %}
-
-{% tab title="23.2.0" %}
-**Minor Releases**
-
-[**CodeScan v. 23.2.4**](release-note-23.2.md#codescan-v.-23.2.4-1)
-
-[**CodeScan v. 23.2.3**](release-note-23.2.md#codescan-v.-23.2.3-1)
-
-[**CodeScan v. 23.2.2**](release-note-23.2.md#codescan-v.-23.2.2-1)
-
-[**CodeScan v. 23.2.1**](release-note-23.2.md#codescan-v.-23.2.1-1)
-
-## Major Release
+***
 
 ### CodeScan v. 23.2.0 (EU, AU only)&#x20;
 
@@ -259,8 +181,6 @@ An analysis will automatically start on your MuleSoft project under the followin
 1. Any changes are pushed to your specified branch in your Git project.
 2. A pull request is made against your selected branch.
 
-
-
 **5. UI/UX Updates and Improvements**
 
 _**Enabling key shortcuts**_
@@ -282,9 +202,11 @@ Original screen
 
 New screen
 
-3. A new addition to the **My Projects** section is the inclusion of the **My Favorites | All** tab. Under the **My Favorites** tab, you will find a collection of projects you marked as favorites. Selecting the **All** tab will display all the projects currently added in your organization.
+3. A new addition to the **My Projects** section is the inclusion of the **My Favorites | All** tab. Under the **My Favorites** tab, you will find a collection of projects you marked as favorites. Selecting the **All** tab will display all the projects currently added to your organization.
 
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-0MYSLQL9.png)
+
+***
 
 ## Minor Releases
 
@@ -304,10 +226,8 @@ Minor performance enhancements, bug fixes, and security improvements can also be
 
 ### **CodeScan v. 23.2.1**
 
-* Error related to application logic, which leaves existing issues from target branch being displayed in PR. They filter out only the issues with RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove the condition only if the new feature flag is disabled.
+* Error related to application logic, which leaves existing issues from the target branch being displayed in PR. They filter out only the issues with the RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove the condition only if the new feature flag is disabled.
 * Stack overflow error fix with SOQL Injection Rule
-{% endtab %}
-{% endtabs %}
 
 
 

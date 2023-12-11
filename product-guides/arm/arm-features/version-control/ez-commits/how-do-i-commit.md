@@ -60,12 +60,17 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 
         <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433878410.png" alt="" width="563"><figcaption></figcaption></figure>
 14. Under the **`Post Commit`** section, you can invoke certain processes after the commit is completed.
-    1. **`Create/Append Revision to existing Label`**
-       * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label- you can reuse the labels and perform multiple commits under a given label. Select the label from the drop-down or create a new one by clicking the + icon.
-       *   **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.\
+    1.  **`Create/Append Revision to existing Label`**
+
+        * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label- you can reuse the labels and perform multiple commits under a given label. Select the label from the drop-down or create a new one by clicking the + icon.
+        * **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.
 
 
-           <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433959045.png" alt="" width="563"><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+        * **ALM Label:** Users have the option to commit using solely the ALM Label or by choosing "None." This is applicable when the ALM item has been mapped in the Salesforce Org Management mappings section and the skip mappings option is not enabled. As part of this process, an ALM Label is generated post-commit and is visible under "Change labels" in the ALM Labels panel.\
+
 15. Click **`Next`**.
 
 #### Step 2: Selecting the Components <a href="#step-2-selecting-the-components" id="step-2-selecting-the-components"></a>

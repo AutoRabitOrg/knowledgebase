@@ -31,7 +31,7 @@ Hover your mouse over the **`Create New`** menu and click the drop-down icon. Th
 
 Here you can:
 
-1. Find links to [ARM **`Help Center`**](http://127.0.0.1:5000/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/)
+1. Find links to [ARM **`Help Center`**](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/)
 2. Know about the ARM version on which you're logged in
 3. ARM **`Feedback`** page
 4. **`Feature Management`** _(visible only for Administrator for both SAAS and On-Premise instances)_

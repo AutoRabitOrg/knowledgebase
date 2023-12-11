@@ -1,4 +1,4 @@
-# How do I Commit?
+# How Do I Commit?
 
 ### How do I commit? <a href="#how-do-i-commit" id="how-do-i-commit"></a>
 
@@ -62,7 +62,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 14. Under the **`Post Commit`** section, you can invoke certain processes after the commit is completed.
     1.  **`Create/Append Revision to existing Label`**
 
-        * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label- you can reuse the labels and perform multiple commits under a given label. Select the label from the drop-down or create a new one by clicking the + icon.
+        * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label, you can reuse the labels and perform multiple commits under a given label. Select the label from the dropdown or create a new one by clicking the + icon.
         * **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.
 
 

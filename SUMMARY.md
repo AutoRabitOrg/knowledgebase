@@ -127,7 +127,7 @@
         * [Version Control Repositories Summary](product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)
         * [Version Control Branch Workflow](product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md)
       * [EZ-Commits](product-guides/arm/arm-features/version-control/ez-commits/README.md)
-        * [How do I Commit?](product-guides/arm/arm-features/version-control/ez-commits/how-do-i-commit.md)
+        * [How Do I Commit?](product-guides/arm/arm-features/version-control/ez-commits/how-do-i-commit.md)
         * [Commits Summary](product-guides/arm/arm-features/version-control/ez-commits/commits-summary.md)
       * [EZ-Merge](product-guides/arm/arm-features/version-control/ez-merge/README.md)
         * [Merge Conflicts](product-guides/arm/arm-features/version-control/ez-merge/merge-conflicts.md)

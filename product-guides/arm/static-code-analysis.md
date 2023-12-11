@@ -37,20 +37,19 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654492366768.png" alt="" width="375"><figcaption></figcaption></figure>
 
+    * Once the user selects **Source – Salesforce org**, new options are available:
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+
+* When performing a prevalidation commit with SCA analysis in DX format on the respective SF Org and package directory, consistency with previously executed analyses for this SF Org and related directory is crucial. Choosing the appropriate comparison branch is essential for accurate evaluations.
+* Existing analyses lack branch tracking, limiting the effectiveness of the fix to new analyses if transitioning from a base scan in mdapi to DX, project deletion, and rerun become necessary for recreation in the DX source structure.
+* Building on point #1, achieving the described outcome is unattainable with different structures but aligns seamlessly within a single structure per project.
+* Depending on the need, a Salesforce or a repository must be bonded with either mdapi or DX source structure but not with both.
+
+5. Select the SCA tool from the drop-down list. For example, _ApexPMD, Checkmarx, Salesforce Scanner, SonarQube, or_ [_CodeScan_](https://www.codescan.io/).\
 
 
-    <figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
-
-    * **Additional options include:**
-      1. When performing a prevalidation commit with SCA analysis in DX format on the respective SF Org and package directory, consistency with previously executed analyses for this SF Org and related directory is crucial. Choosing the appropriate comparison branch is essential for accurate evaluations.
-      2. Existing analyses lack branch tracking, limiting the effectiveness of the fix to new analyses if transitioning from a base scan in mdapi to DX, project deletion, and rerun become necessary for recreation in the DX source structure.
-      3. Building on point #1, achieving the described outcome is unattainable with different structures but aligns seamlessly within a single structure per project.
-      4. Depending on the need, a Salesforce or a repository must be bonded with either mdapi or DX source structure but not with both.\
-
-5.  Select the SCA tool from the drop-down list. For example, _ApexPMD, Checkmarx, Salesforce Scanner, SonarQube, or_ [_CodeScan_](https://www.codescan.io/).\
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680779760099.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680779760099.png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: Before running the **Static Code Analysis** tool, you must enable them under the **My Account > Plugins** section.

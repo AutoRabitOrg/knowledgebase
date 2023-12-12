@@ -27,7 +27,7 @@ Deployed Fix for issue with the GitLab Handler required fix added configurations
 
 ## Major Releases
 
-### **CodeScan v. 23.2.5 (North America \[NA] includes 23.2.1–23.2.4 Rollup)**
+### **CodeScan v. 23.2.5 (North America \[NA] includes 23.2.0–23.2.4 Rollup plus additional fixes)**
 
 **November 2023**
 

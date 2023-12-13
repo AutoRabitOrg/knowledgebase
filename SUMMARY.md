@@ -418,7 +418,7 @@
     * [SCA For Checkmarx](product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
     * [Apex PMD](product-guides/arm/integration-and-plugins/apex-pmd.md)
     * [CodeScan Overview](product-guides/arm/integration-and-plugins/codescan-overview.md)
-    * [Sonarqube](product-guides/arm/integration-and-plugins/sonarqube.md)
+    * [SonarQube](product-guides/arm/integration-and-plugins/sonarqube.md)
     * [Jenkins](product-guides/arm/integration-and-plugins/jenkins.md)
     * [Visual Code Extension](product-guides/arm/integration-and-plugins/visual-code-extension/README.md)
       * [Installing VS Code Extension](product-guides/arm/integration-and-plugins/visual-code-extension/installing-vs-code-extension.md)

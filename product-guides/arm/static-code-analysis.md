@@ -37,7 +37,7 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654492366768.png" alt="" width="375"><figcaption></figcaption></figure>
 
-    * Once the user selects **Source – Salesforce org**, new options are available:
+    * Select **Source** as **Salesforce org**, then new options become available:
 
 <figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -46,7 +46,7 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 * Building on point #1, achieving the described outcome is unattainable with different structures but aligns seamlessly within a single structure per project.
 * Depending on the need, a Salesforce or a repository must be bonded with either mdapi or DX source structure but not with both.
 
-5. Select the SCA tool from the drop-down list. For example, _ApexPMD, Checkmarx, Salesforce Scanner, SonarQube, or_ [_CodeScan_](https://www.codescan.io/).\
+5. Select the SCA tool from the drop-down list. For example, [_CodeScan_](https://www.codescan.io/), _ApexPMD, Checkmarx, Salesforce Scanner, or SonarQube_.\
 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680779760099.png" alt="" width="375"><figcaption></figcaption></figure>
@@ -111,13 +111,11 @@ When the analysis is run on a zip file, the content is not visible in UI. But Sa
 
 ### **Points to Note:** <a href="#points-to-note" id="points-to-note"></a>
 
-We generated a new project using the master branch for every ARM run (CI build, custom deployment, EZ-commit, EZ-merge, static code analysis report) with CodeScan and SonarQube. However, this was causing trouble.
-
-So, now we’re utilizing **\<sforgname>** or **\<reponame>** as the project’s unique identifier, and we’re creating short-lived branches for each run. Thus, the technique builds a single project for a single Salesforce Org or Version Control Repo/branch and then executes the analysis on the short-lived branches.
+We are utilizing **\<sforgname>** or **\<reponame>** as the project’s unique identifier, and we’re creating short-lived branches for each run. Thus, the technique builds a single project for a single Salesforce Org or Version Control Repo/branch and then executes the analysis on the short-lived branches.
 
 The naming convention for the short-lived branches: **\<jobname\_branchname>**
 
-The short-lived branches are active for a limited time (30 days by default, depending on _SonarQube/CodeScan_ configuration), after which they will be automatically deleted. The report will remain on ARM. However, the branch will be removed from the _SonarQube/ CodeScan_ side.
+The short-lived branches are active for a limited time (30 days by default, depending on _SonarQube/CodeScan_ configuration), after which they will be automatically deleted. The report will remain on ARM. However, the branch will be removed from the _SonarQube/CodeScan_ side.
 
 Scans will run only on the **source**, whether the source is **VC Repo** or **SF Org**. The scan results will then be available in the **Reports** module. Users can trace the job that is run in ARM to the scan using the unique identifier.
 
@@ -126,7 +124,7 @@ Scans will run only on the **source**, whether the source is **VC Repo** or **SF
 
 If there is no **master analysis** available, you will get the following message on the screen:&#x20;
 
-_You do not have a Master analysis. We recommend you to run the Master ( baseline ) analysis from the Static Code Analysis (hyperlink) section in the Reports module before you proceed. If you do not run the Master analysis, the analysis from this job will become your Master (baseline) analysis._
+_You do not have a Master analysis. We recommend you run the Master (baseline) analysis from the Static Code Analysis (hyperlink) section in the Reports module before you proceed. If you do not run the Master analysis, the analysis from this job will become your Master (baseline) analysis._
 
 Click **Continue anyway** to proceed with the new analysis as Master.
 {% endhint %}

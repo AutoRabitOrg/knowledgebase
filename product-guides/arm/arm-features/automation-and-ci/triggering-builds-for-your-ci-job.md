@@ -79,13 +79,13 @@ For the CI jobs configured without ALM, the below screen will be displayed.
 
 1. You'll be redirected to the [CI Job Results](ci-job-history.md) page where you can view the detailed report for your build triggered.
 
-For the following events in Pull request, AutoRABIT will initiate the build:
+### For the following events in Pull request, AutoRABIT will initiate the build:
 
 ```
 GITHUB_ACTIONS_TOPROCEED = "opened,edited,synchronize"
 ```
 
-Here is the validation detail:
+**Here is the validation detail:**
 
 When you edit the pull request and commit the change, the CI job is triggered as expected.
 

@@ -16,7 +16,7 @@ The following articles talk about how to trigger a new build for your CI Job tha
 ### Trigger a new Build <a href="#trigger-a-new-build" id="trigger-a-new-build"></a>
 
 1. Go to the **CI Job Results** screen.
-2.  This screen will list down all the CI Jobs to which the builds have already been triggered.
+2.  This screen will list all the CI Jobs for which the builds have already been triggered.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624787687123.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -26,10 +26,10 @@ The CI Jobs deployed will have ![](https://cdn.document360.io/8711f4e7-c040-4616
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1619434914138.png" alt="" width="375"><figcaption></figcaption></figure>
 
-1.  If there are no build triggered yet, you get the notification as **"No builds found for this job. Please trigger a new build for results"**. Click on **Build Now**.
+1.  If there are no builds triggered yet, you get the notification as, **"No builds found for this job. Please trigger a new build for results."** Click on **Build Now**.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1619432044022.png" alt="" width="563"><figcaption></figcaption></figure>
-2. If the builds already exist and you wish to trigger another one, you can do using the **Build Now** button.
+2. If the builds already exist and you wish to trigger another one, you can do so using the **Build Now** button.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624788002638.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -37,7 +37,7 @@ The new build screen differs based on how your CI job is configured (with or wit
 
 #### 1. ALM configured CI Job <a href="#1-alm-configured-ci-job" id="1-alm-configured-ci-job"></a>
 
-For CI jobs configured with ALM details, the below screens get displayed and you can find the ALM work items details configured to the source Version control branch here.
+For CI jobs configured with ALM details, the following screens are displayed and you can find the ALM work item details configured to the source Version control branch here.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1619434360884.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -51,8 +51,8 @@ For CI jobs configured with ALM details, the below screens get displayed and you
 {% hint style="info" %}
 **Important Note:**
 
-1. **For ALM Label Type as Commit**: When you pick a work item in the drop-down, the result will show all commits regardless of the status configured.
-2. If the user did not specify any label, in such case all the **committed** and **merged work items** revisions will be packaged based on the CI job configuration. This scenario is applicable for scheduled CI jobs too.
+1. **For ALM Label Type as Commit**: When you pick a work item in the dropdown, the result will show all commits regardless of the status configured.
+2. If the user does not specify any label, all the **committed** and **merged work item** revisions will be packaged based on the CI job configuration. This scenario applies to scheduled CI jobs too.
 {% endhint %}
 
 #### 2. Without ALM configured CI Job <a href="#2-without-alm-configured-ci-job" id="2-without-alm-configured-ci-job"></a>
@@ -78,3 +78,23 @@ For the CI jobs configured without ALM, the below screen will be displayed.
 {% endhint %}
 
 1. You'll be redirected to the [CI Job Results](ci-job-history.md) page where you can view the detailed report for your build triggered.
+
+For the following events in Pull request, AutoRABIT will initiate the build:
+
+```
+GITHUB_ACTIONS_TOPROCEED = "opened,edited,synchronize"
+```
+
+Here is the validation detail:
+
+When you edit the pull request and commit the change, the CI job is triggered as expected.
+
+When you edit the pull request, it's marked as edited. Upon committing the pull request, it synchronizes and pushes as expected.
+
+**Refer to the screenshot below for webhook delivery:**
+
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+**The screenshot below refers to webhook configuration settings:**
+
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>

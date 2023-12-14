@@ -239,8 +239,8 @@ With such a formula:
 
 <summary>Language-specific details</summary>
 
-1.
-
+*
+[ ] 
     <table data-header-hidden><thead><tr><th width="139"></th><th></th></tr></thead><tbody><tr><td><strong>Language</strong> </td><td><strong>Note</strong> </td></tr><tr><td>COBOL </td><td>It is the number of paragraphs. </td></tr><tr><td>Java </td><td>Methods in anonymous classes are ignored. </td></tr><tr><td>VB.NET </td><td>Accessors are not considered to be methods. </td></tr></tbody></table>
 
 </details>

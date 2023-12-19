@@ -86,9 +86,7 @@ _**Example:**_\
 | serverID                                                                                            | Add _serverId_ with a value you will remember. You will need to enter the same value in both of the _serverId_ parameters. |
 | [organizationKey](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys) | Add your CodeScan organization key. If you are using CodeScan Self-Hosted, enter your default-organization.                |
 | serverUrl                                                                                           | For CodeScan Cloud, enter:                                                                                                 |
-| https://app.codescan.io/for U.S. region,                                                            |                                                                                                                            |
-| https://app-eu.codescan.io/ for EU, and                                                             |                                                                                                                            |
-| https://app-aus.codescan.io/for AUS.                                                                |                                                                                                                            |
+|                                                                                                     | https://app.codescan.io/for U.S. region, https://app-eu.codescan.io/ for EU, and https://app-aus.codescan.io/for AUS.      |
 
 For Self-Hosted CodeScan, add _serverUrl_ as your SonarQube™ _server URL_ (default is _**http://localhost:9000**_). |\
 \| [token](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token) | Add your security token. For **Self-Hosted CodeScan**, add token generated in SonarQube™. |\

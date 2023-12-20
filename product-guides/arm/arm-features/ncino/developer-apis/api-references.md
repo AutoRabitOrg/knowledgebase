@@ -20,7 +20,7 @@ Retrieve the CI build / job details, trigger new job, and view different CI job 
 
 [/api/cijobs/v1/ncino/ciJobBuildSummary](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#ea6d340c-ae1b-45a1-89df-7f74aa49c4ae)&#x20;
 
-[/api/cijobs/v1/ncino/LatestBuild](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#ea6d340c-ae1b-45a1-89df-7f74aa49c4ae)&#x20;
+[/api/cijobs/v1/ncino/getcijobinfo](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#7cd6557e-5023-46f4-bec0-a1cff1bc9e81)&#x20;
 
 [/api/cijobs/v1/ncino/ciJobBuildHistory](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#5f0d56e5-e995-40c7-9892-9bbf3f581c3c)&#x20;
 

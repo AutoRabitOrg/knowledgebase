@@ -215,6 +215,8 @@
       * [Specify Baseline Revision in Continuous Integration for Version Control](product-guides/arm/arm-features/ncino/specify-baseline-revision-in-continuous-integration-for-version-control.md)
       * [Selecting a Range of Revisions](product-guides/arm/arm-features/ncino/selecting-a-range-of-revisions.md)
       * [nCino RBC Deployment Rollback](product-guides/arm/arm-features/ncino/ncino-rbc-deployment-rollback.md)
+      * [Developer APIs](product-guides/arm/arm-features/ncino/developer-apis/README.md)
+        * [API References](product-guides/arm/arm-features/ncino/developer-apis/api-references.md)
     * [Salesforce DX](product-guides/arm/salesforce-dx.md)
       * [Salesforce DX Metadata Format](product-guides/arm/salesforce-dx-metadata-format.md)
       * [Registering a DevHub](product-guides/arm/registering-a-devhub.md)

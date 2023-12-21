@@ -6,59 +6,13 @@
 
 Click on the version number in the chart below to go to the release notes.
 
-<table data-full-width="false"><thead><tr><th width="132" align="center">Date</th><th width="106" align="center">Version</th><th width="101" align="center">Type</th><th>Description</th></tr></thead><tbody><tr><td align="center"><mark style="color:blue;"><strong>Dec 2023</strong></mark><br><mark style="color:blue;"><strong>Current</strong></mark></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.8-minor-release-for-aws"><mark style="color:blue;"><strong>23.2.8</strong></mark></a></td><td align="center"><mark style="color:blue;"><strong>Minor</strong></mark></td><td><mark style="color:blue;">Performed fixes and enhancements</mark> </td></tr><tr><td align="center"><mark style="color:blue;"><strong>Dec 2023</strong></mark><br><mark style="color:blue;"><strong>Current</strong></mark></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.7-minor-release"><strong>23.2.7</strong></a></td><td align="center"><mark style="color:blue;"><strong>Minor</strong></mark></td><td><mark style="color:blue;">V.S. Code 1.6.12 and support for IntelliJ 7.0.0 <strong>(Only Cloud customers)</strong></mark> </td></tr><tr><td align="center">Nov 2023</td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.6">23.2.6</a></td><td align="center">Minor</td><td>New rules for Salesforce flows and one rule misfire corrected.</td></tr><tr><td align="center"><strong>Nov 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup"><strong>23.2.5</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>North America includes 23.2.0–23.2.4, plus 3 fixes</strong></td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.4">23.2.4</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.3">23.2.3</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.2">23.2.2</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.1">23.2.1</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"><strong>Sept 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.0-eu-au-only"><strong>23.2.0</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>Europe + Australia only</strong></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="134" align="center">Date</th><th width="95" align="center">Version</th><th width="93" align="center">Type</th><th>Description</th></tr></thead><tbody><tr><td align="center"><mark style="color:blue;"><strong>December 2023 Current</strong></mark></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.7-minor-release"><mark style="color:blue;"><strong>23.2.7</strong></mark></a></td><td align="center"><mark style="color:blue;"><strong>Minor</strong></mark></td><td><mark style="color:blue;"><strong>V.S. Code 1.6.12 and support for IntelliJ 7.0.0 (Only Cloud customers)</strong></mark> </td></tr><tr><td align="center"><strong>Nov 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup"><strong>23.2.5</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>North America includes 23.2.0–23.2.4, plus 3 fixes</strong></td></tr><tr><td align="center">Nov 2023</td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.6">23.2.6</a></td><td align="center">Minor</td><td>New rules for Salesforce flows and one rule misfire corrected.</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.4">23.2.4</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.3">23.2.3</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.2">23.2.2</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.1">23.2.1</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"><strong>Sept 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.0-eu-au-only"><strong>23.2.0</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>Europe + Australia only</strong></td></tr></tbody></table>
 
 ***
 
 ## Current Release
 
-### CodeScan 23.2.8 (Minor Release)
-
-Continuing our commitment to offer developers a highly intuitive and robust Static Application Security Testing (SAST) tool for Salesforce, we are excited to unveil the latest CodeScan update. This release introduces a range of notable fixes and enhancements aimed at scaling our Enterprise SAST solution for specific client-driven requirements.
-
-&#x20;**Features/capabilities delivered in this latest release:**
-
-•     Resolved a runtime issue occurring when deleting Quality Gates.
-
-•     Enhanced the cloud license check during VS Code configuration.
-
-•     Determined IDP mapping must have the "default" group enabled within the SAML configuration.
-
-•     Corrected invalid userId contained within Access logs.
-
-
-
-These features are detailed in the sections below.
-
-**Resolved a runtime issue occurring when deleting Quality Gates**
-
-A runtime error was occurring when attempting to delete an org after a Quality Gate was deleted. This was due to the relationship between the org and the Quality Gate not being removed from the org\_quality\_gates table. A fix was implemented to ensure the org\_quality\_gate is removed properly during the Quality Gate deletion by removing both the org and the Quality Gate entries.
-
-**Enhanced the cloud license check during VS Code configuration**
-
-Users intermittently encountered the following error when configuring the CodeScan IDE extension within VS Code: _“CodeScan License has not been set.”_
-
-The issue occurs when executing "/\_codescan/billing/license" API due to a dependency of the host name ending with “.codescan.io” domain name.  In this instance, client utilizes a domain causing the code to not be executed.
-
-In this release, a new property has been added, allowing customization to set the CodeScan Cloud URL.
-
-**IDP mapping must have userId enabled to the "default" group within the SAML configuration**
-
-Existing instance occurred in which user mandated that every org member be assigned to a default group; however, an issue arises during the SAML configurations.  Previously, within the SAML connection, “Members” was set as the default group.
-
-With this release, we've fixed this issue by disabling the “Default Organization” as the default group within the SAML configuration form.
-
-**Invalid userId contained within Access logs has been fixed**
-
-Previously, the userId was not properly sanitized at the end of the request. As such, the API could contain the userId from the previous request.
-
-This issue has been remedied. Also, for further enhancement, the userId must now contain the login name, not the email address. This is because email addresses are optional inside the database AND we already use the login name within the access logs. This enhancement enables CodeScan to be consistent across all microservices.
-
-#### Feedback
-
-![](file:///C:/Users/SHANNA\~1.ZER/AppData/Local/Temp/msohtmlclip1/01/clip\_image001.gif)Please direct any comments or suggestions about this document to [support@autorabit.com](mailto:support@autorabit.com).
-
-### CodeScan 23.2.7 (Minor Release for Cloud Customers Only)
+### CodeScan 23.2.7 (Minor Release)
 
 * VS Code 1.6.12  Error relating to CSS rules not being “active” in VS Code, concerning Quality Profile rules showing different number of rules in the VSCode extension than in CodeScan UI.&#x20;
 * IntelliJ extension 7.0.0  Added support for newer IntelliJ versions (2023.1 and above)&#x20;
@@ -71,9 +25,9 @@ Deployed Fix for issue with the GitLab Handler required fix added configurations
 
 ***
 
-## Major Release
+## Major Releases
 
-### **CodeScan v. 23.2.5 (Major Release for North America \[NA] includes 23.2.0–23.2.4 Rollup plus additional fixes)**
+### **CodeScan v. 23.2.5 (North America \[NA] includes 23.2.0–23.2.4 Rollup plus additional fixes)**
 
 **November 2023**
 

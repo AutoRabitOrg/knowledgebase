@@ -14,7 +14,11 @@ Click on the version number in the chart below to go to the release notes.
 
 ### CodeScan 23.2.7 (Minor Release)
 
-* VS Code 1.6.12  Error relating to CSS rules not being “active” in VS Code, concerning Quality Profile rules showing different number of rules in the VSCode extension than in CodeScan UI.&#x20;
+* The VS code version 1.6.12 fixed several issues that were impacting the performance during the binding process. The issues that were identified and fixed are as follows:&#x20;
+  1. Fixed NPM audit vulnerability to use the latest version of dependencies as the context menu&#x20;
+  2. Added the CSS language that is supported in Sonar version 4.19&#x20;
+  3. Upgraded to SonarQube LTS version 9.9 which has a single language plugin for JavaScript/TypeScript/CSS
+  4. Activated the CSS rules in the VS code Quality Profile so that the VS code extension and CodeScan UI are in sync
 * IntelliJ extension 7.0.0  Added support for newer IntelliJ versions (2023.1 and above)&#x20;
 
 [<mark style="background-color:blue;">NOTE:  This is ONLY for Cloud customers</mark> ](#user-content-fn-1)[^1]

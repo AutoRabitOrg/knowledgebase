@@ -95,7 +95,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **(ARM v. 22.3.52)**
 
-<table data-header-hidden><thead><tr><th width="128">Module</th><th width="313">Summary</th><th width="90">Fix Version(s)</th><th width="111">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td> Admin</td><td><p> </p><p>After baselining the branch, it did not pull all metadata for development.</p><p> </p></td><td>22.3</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td> Deployments</td><td>Deployment status failed when deploying Vlocity components</td><td>22.3 23.1</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="128">Module</th><th width="313">Summary</th><th width="90">Fix Version(s)</th><th width="111">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>MODULE</td><td>SUMMARY</td><td>FIXVERSION</td><td>RESOLUTION</td><td>CAUSE</td></tr><tr><td> Admin</td><td><p> </p><p>After baselining the branch, it did not pull all metadata for development.</p><p> </p></td><td>22.3</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td> Deployments</td><td>Deployment status failed when deploying Vlocity components</td><td>22.3 23.1</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
 
 **10 December 2023**
 

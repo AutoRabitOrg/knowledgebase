@@ -101,7 +101,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **(ARM 22.3.51)**
 
-
+<table data-full-width="true"><thead><tr><th width="118">Module</th><th width="263">Summary</th><th width="111" align="center">Version(s)</th><th width="130" align="center">Resolution</th><th align="center">Cause</th></tr></thead><tbody><tr><td> nCino</td><td>User is unable to do nCino Feature Deployments <br>* Requires documentation</td><td align="center"><p> </p><p>23.1, 22.3</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Admin</td><td>Getting ‘null parameters’ error when clicking on save in the user’s section.</td><td align="center"><p> </p><p>23.1, 22.3</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
 
 #### 3 December 2023
 

@@ -6,6 +6,10 @@
 
 **Version 23.1 – New Features, Enhancements, and Improvements**
 
+**Supports Provar** Current Version: 2.10.1&#x20;
+
+**Supports Apex PMD** Current Version: 7.0.0
+
 ### New Features
 
 **1. Automatic Merge after Successful CI Build**\

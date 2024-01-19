@@ -48,6 +48,18 @@ If a user selects CI deployment job (build and deploy), status check API is upda
 
 If a user selects CI job to build only, status check API is updated after the build is completed.
 
+### PR Validation
+
+GitHub Status Checks API works on the Commit revision number but not on the Pull Request. It is to use the REST API to allow external services to mark commits with an error, failure, pending, or success state, which is then reflected in Pull Requests involving those commits.
+
+**Let’s take an example:**&#x20;
+
+Let's consider three branches: A, B, and C.
+
+1. If Branch B is configured in the CI job with status check API
+2. Suppose we have created the Pull request between branch A and branch B. -> above created CI job is triggered automatically on revision number 1234567, which is the latest revision of branch A.
+3. Status Check API is triggered on CI job build revision number 1234567, which means this revision is available in branch A. So, two Pull requests contain the same source branch, and that’s the reason it is showing in multiple pull requests.
+
 ### Troubleshooting required status checks <a href="#troubleshooting-required-status-checks" id="troubleshooting-required-status-checks"></a>
 
 1. After you enable the required status checks, your branch may need to be up-to-date with the base branch before merging. This ensures that your branch has been tested with the latest code from the base branch. If your branch is out of date, you'll need to merge the base branch into your branch.

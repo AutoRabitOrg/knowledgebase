@@ -93,7 +93,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 #### 21 January 2024
 
-(ARM v. 22.3.53)
+**(ARM v. 22.3.53)**
 
 <table data-full-width="true"><thead><tr><th width="151">Module</th><th width="206">Summary</th><th>Status</th><th>Fix Version(s)</th><th>Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Dataloader Pro</p><p> </p></td><td>Issue while deploying promotions from QAT to PRD the rule set criteria is compressing the value while deploying it to RD<br><br></td><td>QA Passed</td><td><p> </p><p>22.3<br> 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td>Use Case</td></tr><tr><td><p> </p><p>Dataloader Pro</p><p> </p></td><td>Issue on Feature Deployments</td><td>QA Passed</td><td><p> </p><p>22.3<br> 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td>Use Case</td></tr></tbody></table>
 

@@ -234,7 +234,7 @@ In this section, you can assign certain pre-validation merge operations (such as
 5. Based on the permission assigned by your Admin, you will see the options in the active state. Suppose your Admin has assigned you permission to run a static code analysis tool only to review your code before merging them. In that case, the **Run Static Code Analysis** option will remain inactive, while other options will remain disabled or won't be seen.
 6. Based on the Approval Reviewer level set in '**Merge Settings'** (under the **My Account** section), you need to specify the email address of the reviewers for a given proposed code change and to approve merge requests.
 
-#### ALM Integration <a href="#alm-integration" id="alm-integration"></a>
+### ALM Integration <a href="#alm-integration" id="alm-integration"></a>
 
 You can update the status of the ALM work item through the **ALM Integration** section (below the **Pre-validate Merge** section), and the same gets reflected in your ALM system.
 

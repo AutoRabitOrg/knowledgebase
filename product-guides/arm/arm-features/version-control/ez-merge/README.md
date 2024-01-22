@@ -212,6 +212,8 @@ In this section, you can assign certain pre-validation merge operations (such as
 **Important Note**: Whenever a code analysis is triggered, ARM will wait up to **5** hours for a response. If the code analysis is not completed within 5 hours, ARM will throw a timeout exception error. This applies to all SCA tools.
 {% endhint %}
 
+### Validate Deployment
+
 1. **Validate Deployment**: Choose a Salesforce org to validate a future deployment. Further, there are different options to choose from:
    1. **Rollback on error:** This checkbox is selected by default to avoid major deployments. However, you can deselect the checkbox to skip the rollback on error under the validate deploy section in merge pre-validation so that it ignores any errors and deploys the remaining components. This is captured in the **Failed Components** tab of the **Deployment Validation** section on the commit's details page. The deployment status will be captured as **Partially Succeeded**.\
       Note: This checkbox should be selected for Production org deployments.

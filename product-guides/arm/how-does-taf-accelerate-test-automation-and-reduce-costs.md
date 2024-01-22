@@ -4,6 +4,6 @@ AutoRABIT TAF is based on a record and playback solution that can rapidly genera
 
 Once automated, a regression test suite can reduce significant cost, effort, and time of testing in future releases. It also adds scalability to the teams to develop multiple applications in parallel and increase the release velocity.
 
-
+***
 
 Was this article helpful?\

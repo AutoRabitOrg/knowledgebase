@@ -17,7 +17,7 @@
   * **Content-Type**: application/json
   * **Authorization**: Your Bearer token
 
-
+***
 
 ### Obtaining your Access Token <a href="#obtaining-your-access-token" id="obtaining-your-access-token"></a>
 

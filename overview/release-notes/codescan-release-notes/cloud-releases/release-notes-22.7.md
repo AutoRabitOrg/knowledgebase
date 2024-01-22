@@ -4,23 +4,23 @@
 
 ### New Features <a href="#new-features" id="new-features"></a>
 
-#### 1. SAML-based SSO for login <a href="#1-samlbased-sso-for-login" id="1-samlbased-sso-for-login"></a>
+#### 1. SAML-based SSO for login <a href="#id-1-samlbased-sso-for-login" id="id-1-samlbased-sso-for-login"></a>
 
 You can easily log in to CodeScan Cloud by setting up a Single Sign-On (SSO) through SAML-based third-party identity providers such as Okta, PingOne, and Microsoft Azure.
 
 For more information, see [Single Sign-On](https://knowledgebase.autorabit.com/codescan/docs/single-sign-on-sso).
 
-#### 2. CSV Export tool for CodeScan Cloud <a href="#2-csv-export-tool-for-codescan-cloud" id="2-csv-export-tool-for-codescan-cloud"></a>
+#### 2. CSV Export tool for CodeScan Cloud <a href="#id-2-csv-export-tool-for-codescan-cloud" id="id-2-csv-export-tool-for-codescan-cloud"></a>
 
 The ability to download a CSV file containing the issues has now been added. The CodeScan **CSV issue export** option can be found in the **More** menu. Prior to this release, this functionality was only accessible to CodeScan Self-Hosted users; however, we have now enabled support for Cloud users as well.
 
 For more information, see [Exporting Issues in CodeScan Cloud](https://knowledgebase.autorabit.com/codescan/docs/exporting-issues-in-codescan-cloud)
 
-#### 3. New CodeScan Rule <a href="#3-new-codescan-rule" id="3-new-codescan-rule"></a>
+#### 3. New CodeScan Rule <a href="#id-3-new-codescan-rule" id="id-3-new-codescan-rule"></a>
 
 CodeScan now has a new rule added to their Quality Profile called `Do not use vulnerable packages,` which checks for deprecated and outdated dependencies in the project and highlights the vulnerabilities available.
 
-
+***
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 
@@ -46,7 +46,7 @@ Fig 2: New Screen\
 
 2. With this update, the **Add Member** button on the **Members** page for all CodeScan versions is deleted.
 
-
+***
 
 ### Improvements <a href="#improvements" id="improvements"></a>
 
@@ -54,7 +54,7 @@ Fig 2: New Screen\
 * The existing metadata rules in CodeScan have been tweaked for SFDX compatibility.
 * Significant improvements in the ways GitHub is triggered within CodeScan.
 
-
+***
 
 ### Bugs fixed <a href="#bugs-fixed" id="bugs-fixed"></a>
 

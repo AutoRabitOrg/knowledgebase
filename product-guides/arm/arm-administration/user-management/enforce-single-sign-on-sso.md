@@ -9,7 +9,7 @@ To enforce SSO, you need to enable the SSO login configuration:
 
 Your team members will now be forced to log in via SSO only. Even if SSO is enforced, you, as an org administrator, can log in using either standard authentication (username/password) or SSO.
 
-
+***
 
 ### How to override single sign-on (SSO)? <a href="#how-to-override-single-signon-sso" id="how-to-override-single-signon-sso"></a>
 

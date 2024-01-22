@@ -104,6 +104,6 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235724406.png" alt="" width="563"><figcaption></figcaption></figure>
 
-
+***
 
 \

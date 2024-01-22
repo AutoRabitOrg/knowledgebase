@@ -9,7 +9,7 @@
 
 ### Key Features <a href="#key-features" id="key-features"></a>
 
-#### 1. Specify baseline revision in continuous integration for version control <a href="#1-specify-baseline-revision-in-continuous-integration-for-version-control" id="1-specify-baseline-revision-in-continuous-integration-for-version-control"></a>
+#### 1. Specify baseline revision in continuous integration for version control <a href="#id-1-specify-baseline-revision-in-continuous-integration-for-version-control" id="id-1-specify-baseline-revision-in-continuous-integration-for-version-control"></a>
 
 With this nCino release, we've added a new option called **Version Control** to facilitate deployment. The users will now be able to define a starting point from which commit needs to be picked for the range of revisions to be deployed via Continuous Integration (CI) jobs. The key features are:
 
@@ -19,7 +19,7 @@ With this nCino release, we've added a new option called **Version Control** to 
 
 [**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job.md)
 
-#### 2. Reuse the package from the build and deploy in multiple Salesforce environments as post-deployment success activity <a href="#2-reuse-the-package-from-the-build-and-deploy-in-multiple-salesforce-environments-as-postdeployment" id="2-reuse-the-package-from-the-build-and-deploy-in-multiple-salesforce-environments-as-postdeployment"></a>
+#### 2. Reuse the package from the build and deploy in multiple Salesforce environments as post-deployment success activity <a href="#id-2-reuse-the-package-from-the-build-and-deploy-in-multiple-salesforce-environments-as-postdeployment" id="id-2-reuse-the-package-from-the-build-and-deploy-in-multiple-salesforce-environments-as-postdeployment"></a>
 
 As a post-deployment success activity, we've provided the ability to reuse a package from a single build from a single CI job to deploy the same data in various Salesforce environments.
 
@@ -33,7 +33,7 @@ The key features are:
 
 [**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job.md)
 
-#### 3. New 'Spreads Schedule Template' tile in _Feature Creation_ screen <a href="#3-new-spreads-schedule-template-tile-in-feature-creation-screen" id="3-new-spreads-schedule-template-tile-in-feature-creation-screen"></a>
+#### 3. New 'Spreads Schedule Template' tile in _Feature Creation_ screen <a href="#id-3-new-spreads-schedule-template-tile-in-feature-creation-screen" id="id-3-new-spreads-schedule-template-tile-in-feature-creation-screen"></a>
 
 New objects, such as _Schedules_ and _Debt Schedules_, were introduced with the latest nCino version release.
 
@@ -56,7 +56,7 @@ The **Spreads Schedules Template** template includes the following objects:
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 
-#### 1. Salesforce Spring '23 (API version 57.0) Support <a href="#1-salesforce-spring-23-api-version-570-support" id="1-salesforce-spring-23-api-version-570-support"></a>
+#### 1. Salesforce Spring '23 (API version 57.0) Support <a href="#id-1-salesforce-spring-23-api-version-570-support" id="id-1-salesforce-spring-23-api-version-570-support"></a>
 
 To keep our product up to current with the most recent Salesforce upgrades, AutoRABIT supports the most recent API 57.0 version in this release. The most recent API version is aimed for customising the metadata schema and developing tools to manage it.
 

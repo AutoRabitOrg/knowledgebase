@@ -16,7 +16,7 @@ To add a new user in ARM:
 6. Your colleague will receive an email inviting them to set their password and log in.
 7. Newly created users are updated in the **`Users`** tab under the **Admin** module.
 
-
+***
 
 ### Edit a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
 

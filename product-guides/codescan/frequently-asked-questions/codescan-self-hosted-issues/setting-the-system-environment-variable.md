@@ -10,7 +10,7 @@ Point to Note
 
 **Administrator** privileges are required to set the system environment variables.
 
-
+***
 
 ### Set the system environment variables in Windows machine <a href="#set-the-system-environment-variables-in-windows-machine" id="set-the-system-environment-variables-in-windows-machine"></a>
 
@@ -28,7 +28,7 @@ Point to Note
 8. Click **`OK`**.
 9. Click **`OK`** again to close the **`Environment Variables`** screen.
 
-
+***
 
 #### For Windows 10 <a href="#for-windows-10" id="for-windows-10"></a>
 
@@ -45,7 +45,7 @@ Point to Note
 7. Click **`OK`.**
 8. Click **`OK`** again to close the **`Environment Variables`** screen.
 
-
+***
 
 #### In MacOS <a href="#in-macos" id="in-macos"></a>
 

@@ -14,7 +14,7 @@ GitHub repositories registered in AutoRABIT should have the pull request feature
 
 ### Protected Branches <a href="#protected-branches" id="protected-branches"></a>
 
-Protected Branches are a feature in [GitHub](webhooks/configure-a-webhook-in-github.md) which lets you block merging pull requests into specific branches unless status checks have passed.&#x20;
+Protected Branches are a feature in [GitHub](../webhooks/configure-a-webhook-in-github.md) which lets you block merging pull requests into specific branches unless status checks have passed.&#x20;
 
 If you’re a repository owner, you can update your repositories using protected branches to use status checks per the following:
 

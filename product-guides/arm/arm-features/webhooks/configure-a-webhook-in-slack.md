@@ -33,4 +33,4 @@
     This webhook URL will be available in your Slack account. It can be copied again or deleted from the same section.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-DXUZIM8U.png" alt="" width="563"><figcaption></figcaption></figure>
-11. Next, integrate your Slack with ARM. For more information on this, click [HERE](../../../troubleshoot/how-tos/configure-mail-server-settings.md).
+11. Next, integrate your Slack with ARM. For more information on this, click [HERE](../../troubleshoot/how-tos/configure-mail-server-settings.md).

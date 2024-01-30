@@ -71,16 +71,9 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 4. Place JAR files into your **SonarQube™** file installation at **/extensions/plugins/**.
 5. Keep the **SonarQube™** file open for the next steps.
 
-#### Step 3: Start Web Server <a href="#step-3-start-web-server" id="step-3-start-web-server"></a>
+#### Step 3: Start Web Server  <a href="#step-3-start-web-server" id="step-3-start-web-server"></a>
 
-6. In your **SonarQube™** installation file, open **sonar.properties**, located in the **config** folder (\<SONARQUBE\_HOME>/conf/sonar.properties).
-7. **Starting at lines 108-111**, add/replace these to the appropriate web server section and save your changes:
-
-* _sonar.web.host=192.168.0.1_
-* _sonar.web.port=80_
-* _sonar.web.context=/sonarqube_
-
-8. Lastly, you need to **RUNsonar** to execute the script to **start the server**. In your **SonarQube™ installation file, open, '/bin' folder**, choose **server type**, and **select ‘StartSonar’**. Once rendering is finished, the plugin installation is complete.
+6. Lastly, you need to **RUNsonar** to execute the script to **start the server**. In your **SonarQube™ installation file, open, '/bin' folder**, choose **server type**, and **select ‘StartSonar’**. Once rendering is finished, the plugin installation is complete.
 
 ### Standard SonarQube™ Setup <a href="#standard-sonarqube-tm-setup" id="standard-sonarqube-tm-setup"></a>
 

@@ -48,7 +48,7 @@ Another way is via _Autorabit-CodeScan_ integration.
 
 The new properties `sonar.comparison.branch` and `sonar.comparison.base` are equivalents/aliases of these existing two: `sonar.pullrequest.branch` and `sonar.pullrequest.base`.
 
-So, because they are equivalents - the rest logic will be the same. If you mark any issue as `False Positive` or `Resolve as Won't fix` in your Comparison Branch, then this issue will not re-appear in base branch (master) after changes are merged.\
+So, because they are equivalents - the logic will be the same. If you mark any issue as `False Positive` or `Resolve as Won't fix` in your Comparison Branch, then this issue will not re-appear in the project's main branch after changes are merged.\
 Similarly, the new comparison branches reflect the changes on issues made by the user on the project’s main branch.\
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-6ILUVXOB.png)
 

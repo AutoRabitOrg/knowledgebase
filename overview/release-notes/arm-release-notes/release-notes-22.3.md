@@ -95,7 +95,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **(ARM v. 22.3.54)**
 
-<table data-full-width="false"><thead><tr><th width="130">Module</th><th width="247">Summary</th><th width="113">Status</th><th width="77">Fix Version(s)</th><th width="93">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Deployment</p><p> </p></td><td>Vlocity Deployment issue</td><td><p> </p><p>QA Passed</p><p> </p></td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="130">Module</th><th width="247">Summary</th><th width="113">Status</th><th width="77">Fix Version(s)</th><th width="93">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Deployment</p><p> </p></td><td>Vlocity Deployment issue</td><td><p> </p><p>QA Passed</p><p> </p></td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Not fetching merges when trying to create a release label for Vlocity components</td><td>QA Passed</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 #### 21 January 2024
 

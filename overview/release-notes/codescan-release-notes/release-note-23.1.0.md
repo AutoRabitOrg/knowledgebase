@@ -43,7 +43,7 @@ Note: Self-Hosted 23.1 users will not have the same UI/UX changes as Cloud Relea
 
 **(CodeScan  v.23.1.6)**
 
-Additional details will be published as soon as they become available.
+This update included minor improvements.&#x20;
 
 ***
 

@@ -2,7 +2,9 @@
 
 These release notes contain important information about **Vault® 23.2**.&#x20;
 
-This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions for details about additional improvements in this release over your current release.
+This release incorporates new featu
+
+res, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions for details about additional improvements in this release over your current release.
 
 ## Vault 23.2 Release Notes
 
@@ -10,7 +12,7 @@ This release incorporates new features, enhancements, and resolved issues from a
 
 _**What's New?**_
 
-### View Archived Data through Vault Connect (Beta) <a href="#view-archived-data-through-vault-connect-beta" id="view-archived-data-through-vault-connect-beta"></a>
+#### View Archived Data through Vault Connect (Beta) <a href="#view-archived-data-through-vault-connect-beta" id="view-archived-data-through-vault-connect-beta"></a>
 
 The archival capabilities of Vault are now enhanced further to create a connection between Salesforce and the storage environment (AWS S3 bucket), leveraging Salesforce Connect with OData 4.0 adapter to display the archived records directly within Salesforce without having to perform complex data loading operations.
 
@@ -46,19 +48,19 @@ For details on how to configure Vault Connect, please click here to access our [
 
 #### What's New <a href="#whats-new" id="whats-new"></a>
 
-### **Multi-Factor Authentication (MFA) support**
+#### **Multi-Factor Authentication (MFA) support**
 
 Currently, Vault allows _usernames_ and _passwords_ or _SSO-based_ authentication to grant users access to the Vault application; however, most of our customers requested the implementation of an additional layer of protection to prevent the misuse of their credentials if user credentials were compromised. With MFA now supported, it will allow our users to add Google, Salesforce, or other comparable authenticator apps to provide an authentication code at login.
 
 [Read more →](../../product-guides/vault/getting-started/set-up-multifactor-authentication-in-vault.md)
 
-### **Unique Identifiers for Object**
+#### **Unique Identifiers for Object**
 
 With this update, we've added the capability to assign a unique identification to each object, preventing the generation of duplicate records.  The mapping between source and destination records was not previously available with Vault when records were available in a sandbox, making it impossible to uniquely identify the records in the destination.&#x20;
 
 Thanks to this capability, every entity in the Salesforce org can now have a unique identifier configured. You can now restore or replicate data without recreating duplicate records.
 
-### **Enhanced schema representation in restore/replicate**
+#### **Enhanced schema representation in restore/replicate**
 
 With the most recent Vault **23.1** release, we improved the schema representation by showing one level of the child/parent objects at a time. The tree can now be expanded based on your selection rather than the entire tree, which speeds up the download of the schema data and improves the UI.&#x20;
 
@@ -193,10 +195,9 @@ This is a maintenance release. The following items were fixed and/or added:
 
     ***
 
-    \
 
 
-### Vault 22.2 <a href="#vault-222" id="vault-222"></a>
+## Vault 22.2 Release Notes <a href="#vault-222" id="vault-222"></a>
 
 #### What's New <a href="#whats-new1" id="whats-new1"></a>
 
@@ -223,7 +224,7 @@ With this release, we have enhanced the capability of how the users get notified
 \
 
 
-### Vault 21.4 <a href="#vault-214" id="vault-214"></a>
+## Vault 21.4 Release Notes <a href="#vault-214" id="vault-214"></a>
 
 **Release: 01 August 2021**
 
@@ -237,7 +238,7 @@ With this release, we have enhanced the capability of how the users get notified
 * The combination of full and incremental [metadata backups](https://www.autorabit.com/blog/7-salesforce-security-concerns-relating-to-metadata/) was not picking up all metadata for restore. This has now been rectified and is working as it should.&#x20;
 * Due to a certificate issue, SSO for Azure Blob storage was not working. This has been resolved. SSO now functions as intended.
 
-### Vault 21.3 <a href="#vault-213" id="vault-213"></a>
+## Vault 21.3 Release Notes <a href="#vault-213" id="vault-213"></a>
 
 **Release: 06 June 2021**
 
@@ -253,7 +254,7 @@ With this release, we have enhanced the capability of how the users get notified
 * **Field level restores fix for On-Premise offering:** The field level restore showed peculiar behavior for on-prem hosting this issue was identified and fixed. Now you can successfully restore at field level for the on-prem offering.&#x20;
 * **Backup member count for Dashboard, Reports, and EmailTemplate:** There was an issue identified on backup count mismatch for incremental backups for metadata (Dashboard, Reports, and EmailTemplate). This is issue has been fixed, now you can see the exact count of the metadata that got changed and picked up in an incremental backup.
 
-### Vault 21.2 <a href="#vault-212" id="vault-212"></a>
+## Vault 21.2 Release Notes <a href="#vault-212" id="vault-212"></a>
 
 **Release: 26 April 2021**
 
@@ -288,7 +289,7 @@ Until now, when you received a Vault job status notification from us, you had to
 
 We’ve added support for some previously unsupported FinancialForce metadata types – (Layout, QuickAction, CustomObject, DuplicateRule).
 
-### Vault 21.1 <a href="#vault-211" id="vault-211"></a>
+## Vault 21.1 Release Notes <a href="#vault-211" id="vault-211"></a>
 
 **Release: 25 March 2021**
 

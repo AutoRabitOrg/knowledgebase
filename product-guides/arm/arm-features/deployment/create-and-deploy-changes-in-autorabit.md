@@ -4,7 +4,7 @@
 
 The deployment process allows you to quickly and safely transfer new developments from your sandbox instance to a production instance. In this article, we'll go over how to perform the deployment operation in the ARM application.
 
-#### 1. Configuring Deployment Details <a href="#1-configuring-deployment-details" id="1-configuring-deployment-details"></a>
+#### 1. Configuring Deployment Details <a href="#id-1-configuring-deployment-details" id="id-1-configuring-deployment-details"></a>
 
 1. Log in to your ARM account.
 2. Click on the **`Deployment`** module.
@@ -41,11 +41,11 @@ The deployment process allows you to quickly and safely transfer new development
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656593431871.png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### 2. Metadata Filter (optional) <a href="#2-metadata-filter-optional" id="2-metadata-filter-optional"></a>
+#### 2. Metadata Filter (optional) <a href="#id-2-metadata-filter-optional" id="id-2-metadata-filter-optional"></a>
 
 The **`Metadata Filter`** section allows you to specify filters limiting the [metadata](https://www.autorabit.com/blog/why-do-i-need-to-protect-my-salesforce-metadata/) included in your deployment. You can enter filter parameters here or leave these fields blank if they do not apply.
 
-#### 3. Additional Profile/PermissionSet Refactoring Settings <a href="#3-additional-profilepermissionset-refactoring-settings" id="3-additional-profilepermissionset-refactoring-settings"></a>
+#### 3. Additional Profile/PermissionSet Refactoring Settings <a href="#id-3-additional-profilepermissionset-refactoring-settings" id="id-3-additional-profilepermissionset-refactoring-settings"></a>
 
 This section lets you control how the profile settings and permissions are passed on from the source org during the deployment. Remember that in **API version 40.0 and later**, when the user deploys retrieved permission set output from one org to another, the metadata in the deployment replaces the target org metadata. In **API version 39.0 and earlier**, the deployment contents are merged with the current org data.
 
@@ -54,7 +54,7 @@ This section lets you control how the profile settings and permissions are passe
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656594840166.png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### 4. Selection of Metadata <a href="#4-selection-of-metadata" id="4-selection-of-metadata"></a>
+#### 4. Selection of Metadata <a href="#id-4-selection-of-metadata" id="id-4-selection-of-metadata"></a>
 
 Once you're done with the initial setup for your deployment, click on **`Retrieve Metadata`**. You'll be redirected to the metadata selection screen, which allows you to select the metadata components for deployment. You can also use the search filter to find particular metadata types quickly.\
 
@@ -76,7 +76,7 @@ Once you’ve chosen the metadata members to include in the deployment, select o
 * **`Deploy:`** This option will immediately deploy to the destination org.
 * **`Compare Metadata & Deploy (recommended):`** This option allows you to compare the metadata members between the two sources before you proceed with the deployment.
 
-#### 5. Compare Metadata & Deploy <a href="#5-compare-metadata-deploy" id="5-compare-metadata-deploy"></a>
+#### 5. Compare Metadata & Deploy <a href="#id-5-compare-metadata-deploy" id="id-5-compare-metadata-deploy"></a>
 
 On this screen, you will be presented with a list of metadata types and their respective member lists.
 
@@ -97,7 +97,7 @@ When you have determined which metadata members to include in the deployment, cl
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1614020712178.png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### 6. Deployment Settings and Filters <a href="#6-deployment-settings-and-filters" id="6-deployment-settings-and-filters"></a>
+#### 6. Deployment Settings and Filters <a href="#id-6-deployment-settings-and-filters" id="id-6-deployment-settings-and-filters"></a>
 
 On the **`Deployment Settings`** page, you will be presented with a list of filters to use in the [deployment](https://www.autorabit.com/blog/autorabit-tames-complex-software-deployments/):\
 
@@ -147,10 +147,10 @@ From the **`Apply Search and Substitute Rules`** list, select the rule that will
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656673657412.png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### 7. Final Configuration <a href="#7-final-configuration" id="7-final-configuration"></a>
+#### 7. Final Configuration <a href="#id-7-final-configuration" id="id-7-final-configuration"></a>
 
 The next screen is the **`Deployment Summary`** page, where you can view the components one final time before deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on **`Validate Deployment.`** You will be redirected to the [Deployment Summary](monitor-deployments.md) screen, showing the deployment progress.

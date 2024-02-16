@@ -52,4 +52,3 @@ If you want to configure a webhook in your repository, select the 'Enable auto u
 
 /api/webhook/v2/\<orgname>/`enterprise`/sync-alm-commits
 
-a

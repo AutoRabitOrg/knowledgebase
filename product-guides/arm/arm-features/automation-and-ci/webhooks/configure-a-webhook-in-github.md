@@ -18,14 +18,14 @@ Webhooks allow external services to be notified when certain events happen. When
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGITHUBcustom41.png" alt=""><figcaption></figcaption></figure>
 
-5. In the URL form field, paste the copied URL or enter the payload URL manually. The payload URL is the URL of the server that will receive the webhook POST requests.**Payload URL:** <_InstanceURL/autorabitrest/webhook/triggerSCMPushrequest_>
+5. In the URL form field, paste the copied URL or enter the payload URL manually. The payload URL is the URL of the server that will receive the webhook POST requests. \
+   **Payload URL:** \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request\
+   **For example, using instance:** https://login.autorabit.com\
+   **Payload URL:** [https://login.autorabit.com/api/webhook/v2/\<orgname>/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/%3Corgname%3E/trigger-scm-push-request)
 
-**For ex:** **Instance:** https://login.autorabit.com\
-**Payload URL:** https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGITHUBcustom51.png" alt=""><figcaption></figcaption></figure>
 
-6. Select **'application/json'** as the content type. The **application/json** content type will deliver the JSON payload directly as the body of the POST request.
+5. Select **'application/json'** as the content type. The **application/json** content type will deliver the JSON payload directly as the body of the POST request.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGITHUBcustom61.png" alt=""><figcaption></figcaption></figure>
 

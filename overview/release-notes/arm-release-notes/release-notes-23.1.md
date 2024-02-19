@@ -88,6 +88,34 @@ This update has implemented significant performance upgrades to enhance the tool
 
 ### Changelogs
 
+#### 21 February 2024
+
+**(ARM v. 23.1.19)**
+
+| Module                                         | Summary                                                                                                                            |            Resolution           |              Cause              |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | :-----------------------------: | :-----------------------------: |
+| VS Code extension Version Control              | <p> </p><p>Cannot set up VS Code Extension</p><p> </p>                                                                             | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Ci Jobs</p><p> </p>                 | <p> </p><p>CI Job and code coverage not running at correct times</p><p> </p>                                                       | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | <p> </p><p>EZ-Commit &#x26; EZ-Merge SCA validation issue</p><p> </p>                                                              | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>All Modules</p><p> </p>             | <p> </p><p>Support for Salesforce Spring ‘24 * Requires Documentation</p><p> </p>                                                  | <p> </p><p>Code Fix</p><p> </p> |          Change Request         |
+| <p> </p><p>Version Control</p><p> </p>         | Unable to commit the action overrides in service appointment object.                                                               | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | Quick Merge shows below pop-up                                                                                                     | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | <p> </p><p>Unable to add the reviewer's name when using an external pull request</p><p> </p>                                       | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | EZ-Merge Validation Failing: "Metadata package is empty"                                                                           | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Admin</p><p> </p>                   | Branching baseline for main branch not bringing all components from production. \* Feature Flag: METADATA\_API\_TO\_DX\_CONVERSION | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | Unable to commit a profile                                                                                                         | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | Release label throwing InvalidFilterExpression error                                                                               | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>nCino </p><p> </p>                  | Error message when attempting to clone a feature template: ‘Request parameters are empty/null.'                                    | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Dataloader</p><p> </p>              | Dataloader Pro issue while triggering the job                                                                                      | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | Add additional metrics in ARM DB.                                                                                                  | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>nCino &#x26; Dataloader</p><p> </p> | nCino - Support for Salesforce Spring ‘24                                                                                          | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>FC, Deployments</p><p> </p>         | Flow Center API: Create a metadata bundle from an org                                                                              | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Deployments</p><p> </p>             | "Experience container" metadata type component deployment is failed for org-to-org deployment                                      | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | Unable to view the revision number when clicking on prevalidation merge details.                                                   | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p>         | Unable to fetch date from Auto-Draft when selecting DX branch in sub-user with no mappings.                                        | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>Deployments</p><p> </p>             | Deployment failed with error: ‘Cannot invoke "java.util.Map.clear()" because "this.relatedLayoutRecordTypeIdsMap" is null’         | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| <p> </p><p>nCino</p><p> </p>                   | CI Jobs: date filter not selectable or enter date value.                                                                           | <p> </p><p>Code Fix</p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+
 #### 12 February 2024
 
 **(ARM v. 23.1.18)**

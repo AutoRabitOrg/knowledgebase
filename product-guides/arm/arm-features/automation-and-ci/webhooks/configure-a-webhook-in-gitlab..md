@@ -1,30 +1,25 @@
 # Configure a Webhook in GitLab
 
-## Create a Webhook API token from ARM
+## A. Create a Webhook API token from ARM
 
-1\.      Log in into ARM.
-
-2\.      Click on Admin -> API Token.
-
-3\.      Click on 'Create API Token.'
+1. Log in into ARM.
+2. Click on Admin -> API Token.
+3. Click on 'Create API Token.'
 
 <figure><img src="../../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-4\.      Enter the token name.
-
-5\.      Select Type as “webhook.”
-
-6\.      Enter a Description if required.
-
-7\.      Click on 'Create Option.'&#x20;
+4. Enter the token name.
+5. Select Type as “webhook.”
+6. Enter a Description if required.
+7. Click on 'Create Option.'&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
-8\.      Your new API token is created.
+8. Your new API token is created.
 
 ***
 
-## Create a Webhook with Authentication on GitLab
+## B. Create a Webhook with Authentication on GitLab
 
 1. Log in to your GitLab account and select a Repository in which you want to configure a Webhook.
 

@@ -235,7 +235,7 @@ Perform the following actions outside of ARM to determine whether the issue stem
 1. Take a local clone of the repository and then checkout of that branch using the command below:\
    _git checkout \<branchname>_
 2. Cherry-pick merge the revision by executing the command in the applying merge log which is as shown below:\
-   _git cherry-pick < revision > -n --strategy recursive --strategy-option ignore-cr-at-eo_
+   _git cherry-pick < revision > -n --strategy recursive --strategy-option ignore-cr-at-eol_
 3. Check the results for the modified files by running the command below:\
    _git status_
 

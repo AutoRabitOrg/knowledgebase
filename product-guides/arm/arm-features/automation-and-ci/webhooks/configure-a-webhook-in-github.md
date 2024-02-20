@@ -1,6 +1,6 @@
 # Configure a Webhook in GitHub
 
-## Create a Webhook API Token from ARM
+## A. Create a Webhook API Token from ARM
 
 Follow the instructions below to create a webhook API token from ARM.
 
@@ -19,11 +19,9 @@ Follow the instructions below to create a webhook API token from ARM.
 
 1. Your new API token is created.
 
-
-
 ***
 
-## Create Webhook with Authentication on GitHub
+## B. Create Webhook with Authentication on GitHub
 
 Webhooks allow external services to be notified when certain events happen. When the specified events happen, we’ll send a POST request to each of the URLs you provide.
 

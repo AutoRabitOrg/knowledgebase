@@ -2,7 +2,7 @@
 
 ## A. Create a Webhook API token from ARM
 
-1. Log in into ARM.
+1. Log in to ARM.
 2. Click on Admin -> API Token.
 3. Click on 'Create API Token.'
 

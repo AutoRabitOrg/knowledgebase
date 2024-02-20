@@ -1,6 +1,6 @@
-# Configure a webhook in Visual Studio GIT.
+# Configure a Webhook in Visual Studio GIT
 
-A.      Create a Webhook API token from ARM
+## A. Create a Webhook API token from ARM
 
 1\.      Log in to ARM.
 
@@ -10,42 +10,31 @@ A.      Create a Webhook API token from ARM
 
 <figure><img src="../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;4\.      Enter the token name.
-
-5\.      Select Type as “webhook.”
-
-6\.      Enter Description if required.
-
-7\.      Click on Create Option.
-
-&#x20;
+4. Enter the token name.
+5. Select Type as “webhook.”
+6. Enter Description if required.
+7. Click on Create Option.
 
 <figure><img src="../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-8\.      Your New API Token is created.
+8. Your New API Token is created.
 
-&#x20;
+## B. Create a webhook with authentication in Visual Studio Git
 
-## Create a webhook with authentication on Visual Studio Git
-
-&#x20;
-
-1\. Log in to Microsoft Visual Studio Git Account
-
-2\. Go to your project Service Hooks page:
+1. Log in to Microsoft Visual Studio Git Account
+2. Go to your project Service Hooks page:
 
 | https://{orgName}/{projectname}/settings/serviceHooks |
 | ----------------------------------------------------- |
 
 <figure><img src="../../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-3\. Click on Create Subscription.
-
-4\. The wizard will start and give a list of all the services for which integration is to be created.
+3. Click on Create Subscription.
+4. The wizard will start and give a list of all the services for which integration is to be created.
 
 <figure><img src="../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;5\. Click on Next and you will see a list of triggers when an event occurs. Select the event to initiate the trigger on and any filters (if applicable):
+5. Click on Next and you will see a list of triggers when an event occurs. Select the event to initiate the trigger on and any filters (if applicable):
 
 <figure><img src="../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 

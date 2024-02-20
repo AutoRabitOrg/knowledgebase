@@ -11,8 +11,7 @@ Follow the instructions below to create a webhook API token from ARM.
 5. Select Type as "webhook."
 6. Enter a description if required.
 7. Click on 'Create Option.'
-8.
-9. Your new API token is created.
+8. Your new API token is created.
 
 Webhooks allow external services to be notified when certain events happen. When the specified events happen, we’ll send a POST request to each of the URLs you provide.
 

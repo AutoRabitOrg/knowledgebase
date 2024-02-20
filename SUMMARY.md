@@ -126,7 +126,7 @@
     * [Webhooks](product-guides/arm/arm-features/automation-and-ci/webhooks/README.md)
       * [Configure a Webhook in GitHub](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-github.md)
       * [Configure a Webhook in Microsoft Azure](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-microsoft-azure.md)
-      * [Configure a webhook in GitLab.](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-gitlab..md)
+      * [Configure a Webhook in GitLab](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-gitlab..md)
       * [Configuring a Webhook in BitBucket](product-guides/arm/arm-features/automation-and-ci/webhooks/configuring-a-webhook-in-bitbucket.md)
       * [Configuring a Webhook in Bitbucket Enterprise](product-guides/arm/arm-features/automation-and-ci/webhooks/configuring-a-webhook-in-bitbucket-enterprise.md)
       * [Configure a webhook in Visual Studio GIT.](product-guides/arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-visual-studio-git..md)

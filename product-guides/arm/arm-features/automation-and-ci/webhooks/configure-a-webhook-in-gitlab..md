@@ -1,14 +1,63 @@
 # Configure a webhook in GitLab.
 
-1.  Login to your **GitLab** account and select a **Repository** in which you want to configure a Webhook.&#x20;
+## Create a Webhook API token from ARM
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGitlabcustom1.png" alt=""><figcaption></figcaption></figure>
-2.  Navigate to **Settings** **>** **Integrations**.
+1\.      Login into ARM
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGitlabcustom21.png" alt=""><figcaption></figcaption></figure>
-3.  On the next screen, enter the URL in the given format: **InstanceURL/autorabitrest/webhook/triggerSCMPushrequest**\
-    **For example**, if the instance is **https://login.autorabit.com**, then the **payload URL** would be:\
-    **https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest**&#x20;
+2\.      Click on Admin Section -> API Token
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGitlabcustom31.png" alt=""><figcaption></figcaption></figure>
-4. Now fill in the details and click **Add webhook**.
+3\.      Click on Create API Token.
+
+<figure><img src="../../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+4\.      Enter the token name
+
+5\.      Select Type as “webhook”
+
+6\.      Enter Description if required
+
+7\.      Click on Create Option&#x20;
+
+<figure><img src="../../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+8\.      Your New API Token is created
+
+&#x20;
+
+***
+
+1. Login to your GitLab account and select a Repository in which you want to configure a Webhook.
+
+<figure><img src="../../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+2. Navigate to Settings > Integrations.
+
+<figure><img src="../../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+3. On the next screen, enter the URL in the given format: Payload URL: < instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request\
+   \
+   For example: If the instance is https://login.autorabit.com, then the payload URL would be: [_https://login.autorabit.com_/api/webhook/v2/\<orgname>/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/%3Corgname%3E/trigger-scm-push-request)
+
+<figure><img src="../../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
+4. Now fill in the details and click Add webhook.
+
+&#x20;
+
+***
+
+## &#x20;Smart Commits
+
+In this section, you can select the pattern used to read the comment in a revision associated with your ALM story. For example, _'git commit m \[project123] # add README file into the project'_
+
+<figure><img src="../../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+If you want to configure a webhook in your repository, select the Enable auto update on webhook checkbox to reveal the URL required for the webhook settings. For more information on how to configure a webhook in different repositories, refer [HERE](file://product-guides/arm/arm-features/webhooks). You can also choose to [sync external smart commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+
+&#x20;For Enterprise customer’s:
+
+&#x20;/api/webhook/v2/\<orgname>/`enterprise`/trigger-scm-push-request
+
+/api/webhook/v2/\<orgname>/`enterprise`/sync-alm-commits
+
+&#x20;

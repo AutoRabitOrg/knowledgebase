@@ -38,12 +38,12 @@
 
 ## Fundamentals
 
-* [🛠 Getting set up](fundamentals/getting-set-up/README.md)
+* [🛠️ Getting set up](fundamentals/getting-set-up/README.md)
   * [General](fundamentals/getting-set-up/general.md)
   * [Salesforce - The Tools You Need to Be Successful](fundamentals/getting-set-up/salesforce-the-tools-you-need-to-be-successful.md)
 * [📙 Glossary](fundamentals/glossary.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/s/community)
-* [ℹ FAQ](fundamentals/faq/README.md)
+* [ℹ️ FAQ](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)
   * [Account & Administrator](fundamentals/faq/account-and-administrator.md)
   * [Licensing and Subscription](fundamentals/faq/licensing-and-subscription.md)
@@ -691,6 +691,6 @@
 
 ## Use Cases + Resources
 
-* [👩💻 For Developers](use-cases-+-resources/for-developers.md)
-* [🖥 For Admins](use-cases-+-resources/for-admins.md)
+* [👩‍💻 For Developers](use-cases-+-resources/for-developers.md)
+* [🖥️ For Admins](use-cases-+-resources/for-admins.md)
 * [📋 For Release Managers](use-cases-+-resources/for-release-managers.md)

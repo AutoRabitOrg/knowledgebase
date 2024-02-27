@@ -18,9 +18,11 @@ To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, 
    * Open **Bash CLI** like **Git Bash**, etc.
    *   Now, go to the folder with the project sources you want to run a scan on and enter the command as shown below:
 
+       {% code overflow="wrap" fullWidth="false" %}
        ```
        sfdx codescan:run --token <token> --projectkey <project key>> --organization <organization key>
        ```
+       {% endcode %}
 
        Note:To find your **Project Key** and the **Organization Key**, click on the respective links below:
 
@@ -44,7 +46,7 @@ To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, 
        {% endcode %}
 6.  To view a list of **parameters** and **flags** which you can use, run the following command: **`sfdx help codescan:run`**
 
-    {% code overflow="wrap" %}
+    {% code fullWidth="false" %}
     ```actionscript
     USAGE:
 

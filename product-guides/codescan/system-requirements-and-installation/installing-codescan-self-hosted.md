@@ -1,10 +1,10 @@
 # Installing CodeScan Self-Hosted
 
-### CodeScan On-Premise Implementation <a href="#codescan-onpremise-implementation" id="codescan-onpremise-implementation"></a>
+### CodeScan On-Premises Implementation <a href="#codescan-onpremise-implementation" id="codescan-onpremise-implementation"></a>
 
 What's New:
 
-CodeScan Self-Hosted version **23.1.6** _(now compatible with **SonarQube™ version 10.0 or earlier)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
+CodeScan Self-Hosted version **24.0.1** _(now compatible with **SonarQube™ version 10.2 or earlier)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
 [**Download**](https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-23.1.6.zip)
 

@@ -91,6 +91,14 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
+#### 28 February 2024
+
+**(ARM v. 22.3.55)**
+
+| Module                                 | Summary                                                                                    | Fix Version                 | Resolution                       | Cause                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------- | -------------------------------- | ------------------------------- |
+| <p> </p><p>Version Control</p><p> </p> | Merges are not being fetched when trying to create a release label for Vlocity components. | <p> </p><p>22.3</p><p> </p> | <p> </p><p>Code Fix </p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+
 #### 28 January 2024
 
 **(ARM v. 22.3.54)**

@@ -4,7 +4,7 @@
 
 ### Release Notes 24.0.1
 
-This update introduces several new rules and bug fixes for current rules and the CodeScan analysis. This includes:
+This update introduces several new rules and bug fixes for current rules and the CodeScan analysis.&#x20;
 
 **Flow Rules**
 

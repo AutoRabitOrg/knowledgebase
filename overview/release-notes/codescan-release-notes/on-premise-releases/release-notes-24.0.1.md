@@ -38,5 +38,4 @@ There are 19 new rules for Salesforce flows:
 * License Key Update: The license has been updated and will now be associated with specified projects.
 * Parser issue fixed on the rule: “Avoid Untrusted/Unescaped Variables in DML Query."
 * A new rule parameter, allowList, added to the rule “Track Usage of @SuppressWarnings.”
-* Fix provided for an error running a scan of the Salesforce-VA org.
 * Apex Parser Update for Null Coalescing Operator: There will be no parsing error when ?? is present in Apex code.

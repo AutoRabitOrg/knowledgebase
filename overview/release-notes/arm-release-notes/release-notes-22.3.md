@@ -98,6 +98,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 | Module                                 | Summary                                                                                    | Fix Version                 | Resolution                       | Cause                           |
 | -------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------- | -------------------------------- | ------------------------------- |
 | <p> </p><p>Version Control</p><p> </p> | Merges are not being fetched when trying to create a release label for Vlocity components. | <p> </p><p>22.3</p><p> </p> | <p> </p><p>Code Fix </p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
+| Version Control                        | Unable to Commit the Action Overrides in Service Appointment Object                        | 22.3                        | Code Fix                         | Use Case                        |
 
 #### 28 January 2024
 

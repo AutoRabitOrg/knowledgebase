@@ -2,7 +2,7 @@
 
 ## CodeScan Self-Hosted
 
-### Release Notes 24.0.1
+### Release Notes 24.0.2
 
 This update introduces several new rules and bug fixes for current rules and the CodeScan analysis.&#x20;
 
@@ -12,10 +12,10 @@ There are 19 new rules for Salesforce flows:
 
 * **Inactive flows should be removed:** Inactive flows may cause clutter in the Salesforce org. In extreme cases, they can begin to hit the organization’s limits. These should be removed if not being used.
 * **Avoid Large Flows**: Too many nodes can cause your Flow to become complex and unmanageable. Consider using Subflows to make your Flow logic reusable and scalable.
-* **DML statements should not be included in the loops:** SOQL and DML in Salesforce is bound by “Governor Limits.” If a large number of SOQL and or DML calls are made in a short amount of time, you can run into a Governor Limit Exception. This rule minimizes the chances of this by letting the user know when they are calling these in a loop.
-* **Avoid creating nested loops in flows:** Nested loops within your Flows can cause them to become unreadable, inefficient, and complex. Consider using Invoked Actions to clean up complex Flows.
-* **Document Flows and the flow components:** Flows should have adequate documentation. Any flow elements without a description should have a violation thrown independently.
-* **Avoid Hard-Coded Values in Flows:** Hard-coded values in flows can lead to unexpected output and make maintenance difficult. Instead, Get Records can be used for the respective object using the DeveloperName. If you’re creating criteria in an entry condition, you can reference DeveloperName (API Name) fields with a formula.
+* **DML statements should not be included in the loops:** SOQL and DML in Salesforce are bound by “Governor Limits.” If a large number of SOQL and/or DML calls are made in a short amount of time, you can run into a Governor Limit Exception. This rule minimizes the chances of this happening by letting users know when they are calling these in a loop.
+* **Avoid creating nested loops in Flows:** Nested loops within your Flows can cause them to become unreadable, inefficient, and complex. Consider using Invoked Actions to clean up complex Flows.
+* **Document Flows and the Flow components:** Flows should have adequate documentation. Any Flow elements without a description should have a violation thrown independently.
+* **Avoid Hard-Coded Values in Flows:** Hard-coded values in Flows can lead to unexpected output and make maintenance difficult. Instead, Get Records can be used for the respective object using the DeveloperName. If you’re creating criteria in an entry condition, you can reference DeveloperName (API Name) fields with a formula.
 * **Flows Should Include Fault Paths:** Fault paths are a way to handle errors that may occur in your Flow. Depending on the Flow and its purpose, errors can be logged, show an error screen, or send an email of the failure to a group of users. Flows should include Fault paths to ensure that all errors are handled appropriately.
 * **Flow Naming:** Standardized naming conventions allow an organization's Flows to be clean, maintainable, and readable. This rule enforces standard naming conventions for Flows and Domains.
 * **Flow Variables & Resources Naming:** This rule enforces standard naming conventions for Variables, Formulas, and Choices.

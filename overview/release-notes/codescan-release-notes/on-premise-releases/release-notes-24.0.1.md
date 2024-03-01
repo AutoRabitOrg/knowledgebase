@@ -2,7 +2,7 @@
 
 ## CodeScan Self-Hosted
 
-### Release Notes 24.0.2
+### Release Notes 24.0.1
 
 This update introduces several new rules and bug fixes for current rules and the CodeScan analysis.&#x20;
 

@@ -1,8 +1,8 @@
 # Release Notes 24.0
 
-## CodeScan Cloud Release Summary
+## CodeScan Cloud
 
-### 24.0.1 Minor Release  **(Feb 2024)**
+### Release Notes 24.0.1 (Minor) **Feb 2024**
 
 The following items were implemented, fixed, or enhanced with this release:
 

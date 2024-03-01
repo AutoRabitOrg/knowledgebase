@@ -10,6 +10,8 @@ To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, 
 * Java 17
 * NodeJS 18
 
+Note: If you would want to stay on the lower version of the Java, then you will have to use the previous version of our plugin(1.0.8). It can be done by updating the script with a specific version (e.g. sfdx-codescan-plugin@1.0.8).
+
 1. To install the **CodeScan SFDX plugin, follow these steps**:
    * Use **`sfdx plugins:install sfdx-codescan-plugin`**.
    * You'll be prompted that Salesforce does not sign this plugin; type **Y** to continue.

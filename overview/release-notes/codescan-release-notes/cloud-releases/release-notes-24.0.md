@@ -1,8 +1,10 @@
-# Release Notes 24.0.1
+# Release Notes 24.0
 
-## **24.0.1 Minor Release**
+## CodeScan Cloud Release Summary
 
-**Feb 2024**
+### 24.0.1 Minor Release  **(Feb 2024)**
+
+The following items were implemented, fixed, or enhanced with this release:
 
 * We fixed a parser issue in the "Avoid Untrusted/Unescaped Variables in DML Query" rule.
 * A new rule parameter, `allowList`, was added to the "Track Usage of @SuppressWarnings" rule.

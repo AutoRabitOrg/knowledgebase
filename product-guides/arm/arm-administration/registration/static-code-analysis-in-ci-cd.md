@@ -1,6 +1,6 @@
 # Static Code Analysis in CI-CD
 
-### 1. What is a Static Code Analysis (SCA)? <a href="#1-what-is-a-static-code-analysis-sca" id="1-what-is-a-static-code-analysis-sca"></a>
+### 1. What is a Static Code Analysis (SCA)? <a href="#id-1-what-is-a-static-code-analysis-sca" id="id-1-what-is-a-static-code-analysis-sca"></a>
 
 Static code analysis, also known as static analysis or source code analysis, is a method used in software development to analyze the source code of a program without actually executing it. It involves reviewing the code for potential defects, vulnerabilities, and other issues to identify and fix them before the code is compiled or executed.
 
@@ -8,7 +8,7 @@ Static code analysis tools analyze the code for adherence to coding standards, c
 
 Static code analysis helps to identify and fix issues early in the development process, reducing the likelihood of introducing bugs or vulnerabilities into the compiled or executed code. It can also improve code quality, maintainability, and reliability, as it helps developers identify and address potential issues before they become critical problems.
 
-### 2. SCA tools supported <a href="#2-sca-tools-supported" id="2-sca-tools-supported"></a>
+### 2. SCA tools supported <a href="#id-2-sca-tools-supported" id="id-2-sca-tools-supported"></a>
 
 The SCA tools supported with ARM are:
 
@@ -18,7 +18,7 @@ The SCA tools supported with ARM are:
 * Salesforce Scanner
 * SonarQube
 
-### 3. Integrate SCA into your build process <a href="#3-integrate-sca-into-your-build-process" id="3-integrate-sca-into-your-build-process"></a>
+### 3. Integrate SCA into your build process <a href="#id-3-integrate-sca-into-your-build-process" id="id-3-integrate-sca-into-your-build-process"></a>
 
 Incorporate the SCA tool into your build process to automatically scan the source code during the build or continuous integration (CI) process. To do so,
 
@@ -26,7 +26,7 @@ Incorporate the SCA tool into your build process to automatically scan the sourc
 2. Go to the **`Admin > Plugins`** section.
 3. In the **`Static Code Analysis`** section, choose the SCA tool to include as part of the build or CI process.
 
-#### 3.1 Integrate Apex PMD <a href="#31-integrate-apex-pmd" id="31-integrate-apex-pmd"></a>
+#### 3.1 Integrate Apex PMD <a href="#id-31-integrate-apex-pmd" id="id-31-integrate-apex-pmd"></a>
 
 Apex PMD comes with a comprehensive rule set. However, you can define your own rule set to silence warnings that aren't relevant or change the warning level for specific rules.
 
@@ -35,7 +35,7 @@ Apex PMD comes with a comprehensive rule set. However, you can define your own r
 3. To use the default Apex PMD rule set, click on the **`Download`** icon to download the default rule set in .XML format. You will need to upload them again using the **`Choose file`** field.
 4. Click **`Save`** to save the plugin configuration.
 
-#### 3.2 Integrate CheckMarx <a href="#32-integrate-checkmarx" id="32-integrate-checkmarx"></a>
+#### 3.2 Integrate CheckMarx <a href="#id-32-integrate-checkmarx" id="id-32-integrate-checkmarx"></a>
 
 To integrate Checkmarx as an SCA plugin,
 
@@ -48,7 +48,7 @@ To integrate Checkmarx as an SCA plugin,
    5. Click **`Save`**.
 3. Click **`Save`** on the **My Account** page to save the plugin configuration.
 
-#### 3.3 Integrate CodeScan <a href="#33-integrate-codescan" id="33-integrate-codescan"></a>
+#### 3.3 Integrate CodeScan <a href="#id-33-integrate-codescan" id="id-33-integrate-codescan"></a>
 
 To integrate all the functionality in your CodeScan license with ARM, you must integrate CodeScan as a plugin with your ARM account. However, it requires some steps in CodeScan and your ARM account to get configured.
 
@@ -67,7 +67,7 @@ To integrate all the functionality in your CodeScan license with ARM, you must i
 6. Click on **`Test Connection`** to authenticate your details.
 7. Click **`Save`** on the **My Account** page to save the plugin configuration.
 
-#### 3.4 Integrate Salesforce Scanner <a href="#34-integrate-salesforce-scanner" id="34-integrate-salesforce-scanner"></a>
+#### 3.4 Integrate Salesforce Scanner <a href="#id-34-integrate-salesforce-scanner" id="id-34-integrate-salesforce-scanner"></a>
 
 The Salesforce Scanner plugin aggregates the results of static analyzers most relevant to Salesforce developers by employing a unified set of rules checked by their respective rule engines, making additional configuration rules optional.
 
@@ -97,7 +97,7 @@ If the config file has the wrong name or format, an error message will popup. Pl
    3. Click **`Save`** to save the Salesforce Scanner settings
 3. Click **`Save`** on the **My Account** page to save the plugin configuration.
 
-#### 3.5 Integrate SonarQube <a href="#35-integrate-sonarqube" id="35-integrate-sonarqube"></a>
+#### 3.5 Integrate SonarQube <a href="#id-35-integrate-sonarqube" id="id-35-integrate-sonarqube"></a>
 
 To integrate all the functionality in your SonarQube license, you must integrate SonarQube as a plugin with your ARM account. However, configuring in SonarQube and your ARM account requires additional steps.
 
@@ -129,7 +129,7 @@ _You do not have a Master analysis. We recommend you to run the Master (baseline
 Click **Continue anyway** to proceed with the new analysis as Master.
 {% endhint %}
 
-### 4. Setting Global Criteria for SCA <a href="#4-setting-global-criteria-for-sca" id="4-setting-global-criteria-for-sca"></a>
+### 4. Setting Global Criteria for SCA <a href="#id-4-setting-global-criteria-for-sca" id="id-4-setting-global-criteria-for-sca"></a>
 
 We’ve added the feasibility where you can set the global criteria to enforce SCA tools across CI jobs, deployments, and gated commits. Based on the priority set, the build will be successful only if the criteria are met.
 
@@ -142,7 +142,7 @@ Other SCA tools should also follow the same procedures; however, the fields may 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-TL4M8JF2.png" alt="" width="563"><figcaption></figcaption></figure>
 
-### 5. Running SCA in CI Job <a href="#5-running-sca-in-ci-job" id="5-running-sca-in-ci-job"></a>
+### 5. Running SCA in CI Job <a href="#id-5-running-sca-in-ci-job" id="id-5-running-sca-in-ci-job"></a>
 
 Continuously run SCA as part of your development process and regularly review and address the identified issues. Analyze the results and optimize your coding practices based on the feedback from the SCA tool to improve code quality over time.
 
@@ -154,7 +154,7 @@ When executing a CI Job, you can select the Static Code Analysis tool to run int
 
 **For 'ApexPMD' and 'Salesforce Scanner';**
 
-* **Run On All Supported Metadata Types:** Apex PMD and Salesforce Scanner SCA supports various metadata types in Salesforce, including _Apex classes, Apex triggers, Apex pages, Lightning components, Lightning web components, Aura components,_ and more. The scan runs on the supported metadata types on your Salesforce org or version control system configured as part of the build.Supported Metadata Types:
+* **Run On All Supported Metadata Types:** Apex PMD and Salesforce Scanner SCA supports various metadata types in Salesforce, including _Apex classes, Apex triggers, Apex pages, Lightning components, Lightning web components, Aura components,_ and more. The scan runs on the supported metadata types on your Salesforce org or version control system configured as part of the build. Supported Metadata Types:
   * **ApexPMD:** _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
   * **Salesforce Scanner:** _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle, CustomObject, Flow, Profile, PermissionSet, Settings, SharingRules, Workflow, StaticResource._
 * **Run On Newly Added Supported Metadata Types:** The scan runs on the recently added/updated metadata types available on your Salesforce org or version control system configured as part of the build.
@@ -171,11 +171,23 @@ When executing a CI Job, you can select the Static Code Analysis tool to run int
 
 **For 'CodeScan' and 'SonarQube';**
 
-* **Run On All Supported Metadata Types:** CodeScan and SonarQube SCA supports various metadata types in Salesforce, including _Apex classes, Apex triggers, Visualforce pages, Lightning components, Lightning web components, Aura components_, and more. The scan runs on the supported metadata types on your Salesforce org or version control system configured as part of the build.Supported Metadata Types:
-  * **CodeScan:** _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle, CustomObject, Flow, Profile, PermissionSet, Settings, SharingRules, Workflow, StaticResource._
-  * **SonarQube:** _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
-* **Run On Newly Added Supported Metadata Types:** The scan runs on the recently added/updated metadata types available on your Salesforce org or version control system configured as part of the build.
-* **Run On All Supported Metadata Types from the full source:** CodeScan and SonarQube SCA analysis is performed on your entire Salesforce org or version control system for various supported metadata types in Salesforce, regardless of any build changes.
+*   **Run On All Supported Metadata Types:** CodeScan and SonarQube SCA supports various metadata types in Salesforce, including _Apex classes, Apex triggers, Visualforce pages, Lightning components, Lightning web components, Aura components_, and more. The scan runs on the supported metadata types on your Salesforce org or version control system configured as part of the build.
+
+    * This will be visible on both pre-validation commits and merges.&#x20;
+    * Analysis will be run on all selected respective supported components on the pre-validation commit.&#x20;
+    * In merge, it runs on the entire branch irrespective of merging components.
+
+    **Supported Metadata Types:**
+
+    * **CodeScan:** _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle, CustomObject, Flow, Profile, PermissionSet, Settings, SharingRules, Workflow, StaticResource._
+    * **SonarQube:** _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
+* **Run On Newly Added Supported Metadata Types:** The scan runs on the recently added/updated metadata types available on your Salesforce org or version control system configured as part of the build.&#x20;
+  * This will be visible on both pre-validation commits and CI Jobs.
+  * Pre-validation Commits: Analysis will be run on selected respective newly added supported components.
+  * CI Jobs: Analysis will be run on newly retrieved supported components in CI Jobs.
+* **Run On All Supported Metadata Types from the full source:** CodeScan and SonarQube SCA analysis is performed on your entire Salesforce org or version control system for various supported metadata types in Salesforce, regardless of any build changes.&#x20;
+  * This will be visible only on CI Jobs.&#x20;
+  * The analysis will be run on the entire branch.
 
 {% hint style="info" %}
 **Point to note**:
@@ -189,7 +201,7 @@ This option is only available for the following CI jobs:
 
 * **Mark Build As Unstable If Doesn't Meet Below Criteria:** Set the priority for your scan, which means if the priority set is not achieved, the current build will be treated as unstable. This helps in reporting the code quality of the developer team. An email is triggered to inform you that the build failed as the criteria set for static code analysis were not met.
 
-### 6. Running SCA in CI Job <a href="#6-running-sca-in-ci-job" id="6-running-sca-in-ci-job"></a>
+### 6. Running SCA in CI Job <a href="#id-6-running-sca-in-ci-job" id="id-6-running-sca-in-ci-job"></a>
 
 ARM allows you to set the validation criteria to enforce SCA tools while performing EZ-Commits. You can find the option to set the commit validation criteria for your SCA under the **Admin > My Account > Commit Validation – Approval Settings** section.\
 
@@ -202,7 +214,7 @@ Using the **Auto reject commit process if the criteria are not met** checkbox, y
 
 With the **Auto-approve on commit validation** and **Auto-commit on approval** checkboxes, you can choose to auto-approve the commit if the criteria are met, and also auto-commit once it is approved manually or automatically.
 
-### 7. Running an SCA during Deployment <a href="#7-running-an-sca-during-deployment" id="7-running-an-sca-during-deployment"></a>
+### 7. Running an SCA during Deployment <a href="#id-7-running-an-sca-during-deployment" id="id-7-running-an-sca-during-deployment"></a>
 
 You can choose an SCA tool to detect bugs, code smells, and security vulnerabilities on the **Deployment Settings** screen before the deployment begins.\
 
@@ -219,7 +231,7 @@ SCA Supported Metadata Types:
 Select the **Stop deployment if build doesn't meet global criteria** checkbox if you don’t want the deployment to proceed unless all criteria are met. These are the same global criteria you set for your SCA tool in **My Account > Validation Criteria – Static Code Analysis** section.\
 You can also select one or more recipients to alert under the **SCA Mail Notifications** field.
 
-### 8. Running an SCA during an EZ-Merge <a href="#8-running-an-sca-during-an-ezmerge" id="8-running-an-sca-during-an-ezmerge"></a>
+### 8. Running an SCA during an EZ-Merge <a href="#id-8-running-an-sca-during-an-ezmerge" id="id-8-running-an-sca-during-an-ezmerge"></a>
 
 You can select the static code analysis tool on the **New EZ-Merge** page as part of a pre-validation merge before merging to your target branch.\
 

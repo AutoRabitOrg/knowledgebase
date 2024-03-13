@@ -9,14 +9,58 @@ After completing this unit, you'll be able to:
 * [Run VS Code behind a proxy](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#visual-studio-code-behind-a-proxy)
 * [Troubleshooting steps if you ran with VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
 
+### Installing the CodeScan IDE Plugin version 2.0.0
+
+These step-by-step instructions will show you how to install the CodeScan plugin.&#x20;
+
+1. Click the CodeScan icon on the left panel.&#x20;
+
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+
+</div>
+
+1. Click on ‘Add CodeScan Connection.’
+
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+
+</div>
+
+1. Add your CodeScan URL.
+2. Click on 'Generate Token.' This will open CodeScan in a browser.
+3. Click 'Allow Connection' to send the newly generated token back to your IDE.
+4. Add your organization key.
+5. Enter a Unique Connection Name.
+6. Click on 'Save Connection.' You will be able to see your connection appear in your connected mode window.
+
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="196"><figcaption></figcaption></figure>
+
+</div>
+
+1. Click on your connection (CodeScan Cloud in the example.)
+
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+
+</div>
+
+1. Click the + symbol that appears to the right. This will show you a list of projects from the Command palette.
+2. Select the project you would like to connect to.
+3. The project you connect to determines the rules for scanning your open files.
+
+NOTE: If the project you have open in VS Code matches the project you connect to in CodeScan Cloud, your IDE scans will ignore any Won’t Fix or False Positive issues.
+
 ***
-
-
 
 ### Get Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
 
-The **CodeScan VS Code** extension provides immediate feedback to developers on bugs and quality issues; it is a fully integrated user experience in Visual Studio Code (we'll refer to it as VS Code).\
-
+The **CodeScan VS Code** extension provides immediate feedback to developers on bugs and quality issues; it is a fully integrated user experience in Visual Studio Code (we'll refer to it as VS Code).
 
 #### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 

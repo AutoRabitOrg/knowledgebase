@@ -151,6 +151,6 @@ From the **`Apply Search and Substitute Rules`** list, select the rule that will
 
 The next screen is the **`Deployment Summary`** page, where you can view the components one final time before deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Click on **`Validate Deployment.`** You will be redirected to the [Deployment Summary](monitor-deployments.md) screen, showing the deployment progress.

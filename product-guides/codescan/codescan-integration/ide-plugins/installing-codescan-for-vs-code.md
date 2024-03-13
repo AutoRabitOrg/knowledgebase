@@ -73,10 +73,14 @@ Make sure you:
   * Have a licensed, latest version of **CodeScan** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)).
 * Download the **CodeScan** extension from the marketplace
 * Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.
-* Install the **JDK version 11** or above.
-* Install the **Java Runtime (JRE) 11** version or later.
+* Install the **JDK version 17** or above.
+* Install the **Java Runtime (JRE) 17** version or later.
 * Install the latest available **Node.js LTS** version.
 * Uninstall the **Apex PMD** and **SonarLint™** plugins. The CodeScan and VS Code plugin will not work with SonarLint™ or Apex PMD installed.
+
+{% hint style="warning" %}
+Version 2.0.0 requires Java Runtime (JRE) / JDK versions 17 or later. Prior CS versions will still work with older JRE / JDK versions 11.
+{% endhint %}
 
 Note:
 

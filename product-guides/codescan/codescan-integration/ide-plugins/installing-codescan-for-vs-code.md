@@ -11,7 +11,7 @@ After completing this unit, you'll be able to:
 
 ***
 
-###
+
 
 ### Get Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
 

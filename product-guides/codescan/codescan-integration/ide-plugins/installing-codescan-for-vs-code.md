@@ -11,6 +11,8 @@ After completing this unit, you'll be able to:
 
 ***
 
+###
+
 ### Get Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
 
 The **CodeScan VS Code** extension provides immediate feedback to developers on bugs and quality issues; it is a fully integrated user experience in Visual Studio Code (we'll refer to it as VS Code).\

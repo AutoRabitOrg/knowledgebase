@@ -44,7 +44,7 @@ Webhooks allow external services to be notified when certain events happen. When
 5. In the URL form field, paste the copied URL or enter the payload URL manually. The payload URL is the URL of the server that will receive the webhook POST requests. \
    **Payload URL:** \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request\
    **For example, using instance:** https://login.autorabit.com\
-   **Payload URL:** [https://login.autorabit.com/api/webhook/v2/\<orgname>/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/%3Corgname%3E/trigger-scm-push-request)
+   **Payload URL:** [https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

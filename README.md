@@ -9,9 +9,16 @@ description: >-
 
 ## Overview
 
-#### What is AutoRABIT? <a href="#what-is-autorabit" id="what-is-autorabit"></a>
+#### What is AutoRABIT?  <a href="#what-is-autorabit" id="what-is-autorabit"></a>
 
 AutoRABIT is a leading cloud-based CI/CD suite specifically tailored for Salesforce, optimizing the development lifecycle from version control and deployment to testing and sandbox management. By facilitating enhanced collaboration between Salesforce developers, admins, analysts, and release managers, AutoRABIT ensures efficient operations across multiple Salesforce orgs. In tandem with AutoRABIT, CodeScan champions Salesforce code quality by conducting thorough scans for vulnerabilities and code inconsistencies, all customizable to fit organizational standards. On the other hand, Vault revolutionizes Salesforce data management, offering robust storage solutions for vital metadata, integrating automated version control, and providing adept conflict resolution mechanisms. Together, AutoRABIT, CodeScan, and Vault form a holistic ecosystem that supercharges Salesforce development, ensuring precision, security, and excellence throughout the process.
+
+**In our Knowledge Base, you will find:**
+
+* Detailed user guides: Step-by-step instructions to help you understand our product suite and navigate it with ease.
+* How-to tutorials: Practical guides to resolve common issues, configure settings, and maximize your productivity.
+* Frequently asked questions (FAQs): Quick solutions and information on common queries about our products and services.
+* Troubleshooting guides: Handy resources to identify and resolve technical issues.
 
 ## Quick links
 

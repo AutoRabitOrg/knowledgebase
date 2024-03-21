@@ -15,6 +15,7 @@ AutoRABIT is a leading cloud-based CI/CD suite specifically tailored for Salesfo
 
 **In our Knowledge Base, you will find:**
 
+* Fast AI-driven search tool to extract precise steps and details from our documentation. (try it out!)
 * Detailed user guides: Step-by-step instructions to help you understand our product suite and navigate it with ease.
 * How-to tutorials: Practical guides to resolve common issues, configure settings, and maximize your productivity.
 * Frequently asked questions (FAQs): Quick solutions and information on common queries about our products and services.

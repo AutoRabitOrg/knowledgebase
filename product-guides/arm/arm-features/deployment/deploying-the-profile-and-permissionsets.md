@@ -36,7 +36,7 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 11. Important Notes:
     1. Based on the size of your Profiles, the time taken for comparison can vary. You can navigate to a different screen and return to the **`Profile Manager`** page once the results are ready and available.
     2. To optimize browser performance, it is recommended to compare one access setting at a time (in case of large profiles).

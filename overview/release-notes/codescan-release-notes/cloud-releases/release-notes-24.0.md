@@ -2,6 +2,41 @@
 
 ## CodeScan Cloud
 
+### Release Notes 24.0.3
+
+**22 March 2024**
+
+1. **CSV Export**: With this fix, we added a URL column to the CSV Export that enables teams to quickly navigate to the Issue and get a fix in place.
+2. **CSV Export not exporting all issues**: To avoid doubling up the queries, when a user presses the **Export** button, the **Export** and **Reset** buttons are grayed out and unusable. After the buttons are clicked, the following message should show underneath: "Please remain on this page while your report is generated. Depending on the number of issues in your report, this may take up to 5 minutes. Your download will start shortly."&#x20;
+3. **CSV Export added functionality – Pull Request**s: This enables CSV Exports to include the options to filter and group code issues by specific pull request(s).
+4. **Quality Profile error**: A bug that caused project analysis issues is now fixed in the sfmeta:FlowNullHandler rule.
+5. **NullPointerException in IdempotentBinaryOperatorsRule:** This fixes an exception when a null pointer is thrown in IdempotentBinaryOperatorRule.txt.
+6. **Quick Report — Issue Counts**: This fixes a bug causing issue count errors in Quick Report.
+7. **Null Pointer Exception — Apex classes**: This fixes an error causing an exception during analysis of Apex classes.
+8. **Null Pointer Exception for IfElseDefaultCase Rule**: This fixes a null pointer exception thrown for triggers.
+9.  **False Positives**: This fixes false positive errors for the sf:FixDuplicateConditions rule. The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch". This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, while in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior. Addressing false positives for cases such as:
+
+    <pre><code>public class sample{
+    public static void main(){
+        if(a==true){}
+        else if(a == null){}
+
+        if(super.a){}
+        else if(this.a){}
+
+        if(this.a){}
+        else if(this.b){}
+    }
+    }
+    <strong>
+    </strong></code></pre>
+10. **Use Relative, not Absolute URLs**: Code that uses absolute URLs for Salesforce pages will only work when running on the corresponding Salesforce instances. This can cause code to fail when deployed in another sandbox or production environment. Use relative URLs to avoid this issue.
+11. **Null Pointer Exception – sf:AvoidAbsoluteURL rule**: Fixed a null pointer exception during analysis associated with the sf:AvoidAbsoluteURL rule.
+
+
+
+***
+
 ### Release Notes 24.0.2&#x20;
 
 **March 2024**

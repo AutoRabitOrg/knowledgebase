@@ -58,7 +58,7 @@ Click on the **Log** icon to view the log report on the right side of the page.
 
 The following information will be displayed for each template created on the Environment Provisioning History screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Template Name:** Name of the template along with the template created date/time
 2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template
@@ -73,6 +73,6 @@ The following information will be displayed for each template created on the Env
 11. **Revoke**: Click on the revoke button; if you don't want to share the template with others, users in the org will not be able to access it.
 12. **View History:** Detailed info on the template, such as the last modified date/time of the template, log details, etc.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>

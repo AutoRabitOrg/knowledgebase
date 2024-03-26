@@ -5,9 +5,9 @@
 {% hint style="info" %}
 **Exciting News! Enhanced Release Schedule for a Better Experience**
 
-Starting March 27, 2024, we're thrilled to announce a new, streamlined release schedule for CodeScan! Moving forward, we'll be delivering major feature and architecture updates bi-weekly, alongside regular minor updates and weekly maintenance. This begins with our latest release, 24.0.3.
+Starting March 27, 2024, we're thrilled to announce a new, streamlined release schedule for CodeScan! Moving forward, we'll be delivering major feature and architecture updates every two weeks, alongside regular minor updates and weekly maintenance. This begins with our latest release, 24.0.3.
 
-**Why This Matters for You:**
+**Why This Matters to You:**
 
 * **Faster Access to New Features:** Enjoy the latest enhancements and features without the wait.
 * **Improved Stability and Performance:** Weekly maintenance releases mean a smoother, more reliable experience.

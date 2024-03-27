@@ -1,6 +1,6 @@
 # 🖥️ AutoRABIT Support
 
-### Ways to get in touch with us:
+## **Ways to get in touch with us:**
 
 If you need further assistance beyond our Knowledge Base, AutoRABIT Support is at your service 24/7 through multiple contact options:
 
@@ -12,8 +12,8 @@ The best way to contact us is to log in and submit a ticket via our support port
 
 ### ARM Product Support
 
-1. Log into your ARM instance
-2. Go to Quick Links > Click on “**Help Desk & Feedback**” button
+1. Log in to your ARM instance.
+2. Go to Quick Links > Click on “**Help Desk & Feedback**” button.
 
 <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,17 +53,17 @@ The best way to contact us is to log in and submit a ticket via our support port
 
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-### Support Portal
+## Support Portal
 
 * If you’re **unable to log in**, you can submit a ticket via our **Support portal,** [**here**](https://app.gitbook.com/s/ZWyY89cEdp4BWlMfwIlU/team/meet-the-team)**.**
 
-### Email Support
+## Email Support
 
 * If you are unable to use the methods above, you can email us at support@autorabit.com; however, the portal is the preferred and recommended method.
 * If your questions are sales-related, contact your Account Executive or email sales@autorabit.com. They will help get your message to the right people.&#x20;
 * If you need to reach your Customer Success Manager (CSM), but don’t know who to contact, you can email csg@autorabit.com.
 
-### Phone Support&#x20;
+## Phone Support&#x20;
 
 Support by phone is available 24/7, 365 days a year. You can reach us by phone using the following number; however, our support portal is the recommended method.
 

@@ -45,7 +45,7 @@
   * [Salesforce - The Tools You Need to Be Successful](fundamentals/getting-set-up/salesforce-the-tools-you-need-to-be-successful.md)
 * [📙 Glossary](fundamentals/glossary.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/s/community)
-* [🖥️ AutoRABIT Support](fundamentals/autorabit-support.md)
+* [🖥️ AutoRABIT Support](fundamentals/faq/technical-support-services.md)
 * [ℹ️ FAQ](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)
   * [Account & Administrator](fundamentals/faq/account-and-administrator.md)

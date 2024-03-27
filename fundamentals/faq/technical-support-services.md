@@ -63,7 +63,7 @@ The best way to contact us is to log in for a ticket via our support portal. You
 
 ### Phone Support&#x20;
 
-Support by phone is available 24x7, 365 days a year. You can reach us by phone using the following number, however our Support portal is recommended.
+Support by phone is available 24x7, 365 days a year. You can reach us by phone using the following number, however our support portal is recommended.
 
 Phone: +1 925 500 1004
 

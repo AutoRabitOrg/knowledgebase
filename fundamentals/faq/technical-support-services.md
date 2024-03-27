@@ -2,7 +2,7 @@
 
 ### Ways to get in touch with us:
 
-If you can't find the answer, you're looking for in our Knowledge Base, there are several ways to get in touch with us, and we are available 24x7:
+If you need further assistance beyond our Knowledge Base, AutoRABIT Support is at your service 24x7 through multiple contact options:
 
 Support Portal
 

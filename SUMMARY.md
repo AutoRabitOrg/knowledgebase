@@ -45,6 +45,7 @@
   * [Salesforce - The Tools You Need to Be Successful](fundamentals/getting-set-up/salesforce-the-tools-you-need-to-be-successful.md)
 * [📙 Glossary](fundamentals/glossary.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/s/community)
+* [🖥️ AutoRABIT Support](fundamentals/autorabit-support.md)
 * [ℹ️ FAQ](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)
   * [Account & Administrator](fundamentals/faq/account-and-administrator.md)
@@ -54,7 +55,6 @@
   * [Deployment-FAQs](fundamentals/faq/deployment-faqs.md)
   * [CI Jobs](fundamentals/faq/ci-jobs.md)
   * [nCino](fundamentals/faq/ncino.md)
-  * [Technical Support Services](fundamentals/faq/technical-support-services.md)
   * [Retention Policy](fundamentals/faq/retention-policy.md)
 
 ## Product Guides
@@ -587,7 +587,6 @@
     * [Common Issues and Solutions](product-guides/codescan/frequently-asked-questions/common-issues-and-solutions.md)
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)
-    * [Contact Support Team](product-guides/codescan/codescan-support/contact-support-team.md)
   * [CodeScan Integration](product-guides/codescan/codescan-integration/README.md)
     * [Single Sign-On (SSO)](product-guides/codescan/codescan-integration/single-sign-on-sso/README.md)
       * [Single Sign-On with OKTA](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-okta.md)
@@ -681,16 +680,6 @@
         * [Restoring nCino Features](product-guides/vault/vault-features/knowledge-articles/ncino/restoring-ncino-features.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect/README.md)
       * [Vault Connect User Guide](product-guides/vault/vault-features/vault-connect/vault-connect-user-guide.md)
-  * [Support](product-guides/vault/support/README.md)
-    * [Best Practices](product-guides/vault/support/best-practices/README.md)
-      * [Archive Best Practices](product-guides/vault/support/best-practices/archive-best-practices.md)
-      * [Restore Best Practices](product-guides/vault/support/best-practices/restore-best-practices.md)
-      * [Backup Best Practices](product-guides/vault/support/best-practices/backup-best-practices.md)
-    * [Salesforce Limitations](product-guides/vault/support/salesforce-limitations/README.md)
-      * [General Guidelines on Salesforce Limitations](product-guides/vault/support/salesforce-limitations/general-guidelines-on-salesforce-limitations.md)
-      * [Unsupported Components with Metadata API](product-guides/vault/support/salesforce-limitations/unsupported-components-with-metadata-api.md)
-    * [General Questions and Answers](product-guides/vault/support/general-questions-and-answers.md)
-    * [Common Issues & Solutions](product-guides/vault/support/common-issues-and-solutions.md)
 
 ## Use Cases + Resources
 

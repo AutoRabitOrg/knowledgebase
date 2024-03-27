@@ -15,43 +15,43 @@ The best way to contact us is to log in for a ticket via our support portal. You
 1. Log into your ARM instance
 2. Go to Quick Links > Click on “Help Desk & Feedback” button
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 3. It will redirect to the Support Portal page where existing Tickets can be accessible, you may also create new tickets by clicking on “Add Ticket” button.
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 ### Vault Product:
 
 1. Please log into your Vault instance
 2. Click on the question mark icon > then click on "Help Center"
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 3. It will redirect to the Support Portal page where existing Tickets can be accessible and even create new ticket by clicking on “Add Ticket” button
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 ### CodeScan Product:
 
 1. Login to your CodeScan instance.
 2. Click on Question mark icon > then Click on “Get Help”
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 3. It will redirect to the Support Portal page where existing Tickets can be accessible and even create new ticket by clicking on “Add Ticket” button
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 * If you’re unable to login, you can submit a ticket via our Support portal, [here](https://support.autorabit.com/portal/en/newticket?departmentId=241415000000006907\&layoutId=241415000000074011)
 

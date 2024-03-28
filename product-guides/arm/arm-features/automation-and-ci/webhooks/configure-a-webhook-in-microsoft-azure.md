@@ -32,22 +32,6 @@ _A developer writes an application that is running in Azure or anywhere with Int
 
 8. Your New API Token is created&#x20;
 
-&#x20;
-
-&#x20; &#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
 ### Create webhook with authentication on Azure&#x20;
 
 1\. Log into Microsoft Azure Account at [https://portal.azure.com/](https://portal.azure.com/).&#x20;
@@ -76,7 +60,7 @@ Payload URL: `< instance_url>/api/webhook/v2/<orgname>/trigger-scm-push-request`
 
 For example: If the instance is https://login.autorabit.com, then the payload URL would be:
 
-_`https://login.autorabit.com`_`/api/webhook/v2/<orgname>/trigger-scm-push-request`&#x20;
+[https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
 
 7\. Add the basic authentication details as below &#x20;
 

@@ -28,7 +28,7 @@
 2. Click Settings and select [Webhooks](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
 3. Next, enter the URL in the given format: \
    \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request \
-   For example, if the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/api/webhook/v2/\<orgname>/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/%3Corgname%3E/trigger-scm-push-request)
+   For example, if the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest).
 
 <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

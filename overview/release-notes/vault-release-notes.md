@@ -1,14 +1,14 @@
 # Vault Release Notes
 
-These release notes contain important information about **Vault® 23.2**.&#x20;
+These release notes contain important information about **Vault® 24.1**.&#x20;
 
-This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions for details about additional improvements in this release over your current release.
+This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions or details about additional improvements in this release over your current release.
 
-## Vault 24.1 Release Notes
+## **Vault 24.1 Release Notes** <a href="#whats-new" id="whats-new"></a>
 
 **Release Date: 3 April 2024**
 
-#### **What’s new?** <a href="#whats-new" id="whats-new"></a>
+**What’s new?**
 
 **Exciting New Security Enhancements Await in Vault's Latest Release!**
 
@@ -32,7 +32,7 @@ Now, let's dive into additional enhancements aimed at optimizing your data manag
 Say goodbye to repetitive setup tasks! With our enhanced Vault capabilities, you can now create reusable Replicate configurations, saving you valuable time and effort by efficiently rerunning configurations and generating multiple jobs as needed.
 
 **6. Streamlined Workflow: Org-to-Org Cloning of Masking Rules**\
-Simplify your data masking process with ease! Introducing the ability to clone masking rules directly from Salesforce org-to-org, eliminating the hassle of defining rules from scratch for sandboxes and other Salesforce orgs with identical masking requirements.
+Simplify your data masking process with ease! Introducing the ability to clone masking rules directly from one Salesforce org to another, eliminating the hassle of defining rules from scratch for sandboxes and other Salesforce orgs with identical masking requirements.
 
 **7. Enhanced Clarity: Naming Masking Rules**\
 Bring clarity and organization to your masking rules by providing them with descriptive names of your choice. With this new feature, managing and identifying rules has never been easier.

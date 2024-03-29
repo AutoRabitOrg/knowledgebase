@@ -13,10 +13,6 @@
     * [Release Notes 22.1](overview/release-notes/arm-release-notes/release-notes-22.1.md)
     * [Release Notes 21.6](overview/release-notes/arm-release-notes/release-notes-21.6.md)
     * [Release Notes 21.5](overview/release-notes/arm-release-notes/release-notes-21.5.md)
-  * [Vault Release Notes](overview/release-notes/vault-release-notes.md)
-  * [nCino Release Notes](overview/release-notes/ncino-release-notes/README.md)
-    * [Release Notes 23.1](overview/release-notes/ncino-release-notes/release-notes-23.1.md)
-    * [Release Notes 22.3](overview/release-notes/ncino-release-notes/release-notes-22.3.md)
   * [CodeScan Release Notes](overview/release-notes/codescan-release-notes/README.md)
     * [Cloud Releases](overview/release-notes/codescan-release-notes/cloud-releases/README.md)
       * [Release Notes 24.0](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-24.0.md)
@@ -37,6 +33,10 @@
     * [On-Premises Releases](overview/release-notes/codescan-release-notes/on-premise-releases/README.md)
       * [Release Notes 24.0.1](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.1.md)
       * [Release Notes 23.1](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)
+  * [nCino Release Notes](overview/release-notes/ncino-release-notes/README.md)
+    * [Release Notes 23.1](overview/release-notes/ncino-release-notes/release-notes-23.1.md)
+    * [Release Notes 22.3](overview/release-notes/ncino-release-notes/release-notes-22.3.md)
+  * [Vault Release Notes](overview/release-notes/vault-release-notes.md)
 
 ## Fundamentals
 

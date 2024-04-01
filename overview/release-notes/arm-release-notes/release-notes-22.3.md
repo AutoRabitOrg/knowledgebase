@@ -1,5 +1,26 @@
 # Release Notes 22.3
 
+We would like to inform you about the End of Life (EOL) for ARM version 22.3. Per our support agreement, this version is now more than 365 days old and is no longer supported. As part of our ongoing commitment to providing the best possible experience for our users and maintaining the highest standards of security and performance, we have made the decision to discontinue support for ARM 22.3.
+
+**End of Life Date: April 1, 2024**
+
+What Does This Mean?
+
+* End of Support: As of April 1, 2024, we will no longer provide maintenance updates, bug fixes, or technical support for ARM 22.3. This includes both security and non-security updates.
+* Security Risks: Continuing to use ARM 22.3 after the end of support date may expose your system to potential security vulnerabilities, as we will no longer release security patches.
+* Upgrade Recommendations: We strongly recommend migrating to a supported version of ARM to ensure continued reliability, security, and performance. Our team is available to assist you with this transition process and provide guidance on your upgrade.
+* Accessing Resources: While official support for ARM 22.3 will no longer be available, you can still access existing resources such as documentation, knowledge base articles, and the Knowledge Hub for reference purposes.
+
+Action Required:
+
+To mitigate any potential risks associated with the EOL of 22.3, we urge you to take proactive steps towards upgrade immediately. Our customer success and support team are here to assist you every step of the way. Please reach out to your CSM to plan this work.
+
+We understand that this transition may present challenges, and we sincerely apologize for any inconvenience it may cause. However, we believe that focusing our efforts on our latest offerings will ultimately benefit you with enhanced features, improved performance, and better security.
+
+Thank you for your understanding and continued support.
+
+
+
 **December 2022 - Version 22.3 - New Features, Enhancements, Improvements and Changelogs**
 
 **Date of release:** _18 December 2022_\

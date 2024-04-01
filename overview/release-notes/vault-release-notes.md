@@ -6,7 +6,7 @@ This release incorporates new features, enhancements, and resolved issues from a
 
 ## **Vault 24.1 Release Notes** <a href="#whats-new" id="whats-new"></a>
 
-**Release Date: 3 April 2024**
+**Release Date: April 2024**
 
 **What’s new?**
 

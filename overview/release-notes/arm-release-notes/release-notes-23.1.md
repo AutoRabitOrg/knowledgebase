@@ -86,6 +86,12 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 3 April 2024
+
+**(ARM 23.1.25)**
+
+<table data-full-width="true"><thead><tr><th width="171">Module</th><th width="355">Summary</th><th width="130">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>Reports, CI Jobs, Deployments, Version Control</td><td>ARM overwrites any exclusions set up in CodeScan UI * Requires documentation.</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Change Request</p><p> </p></td></tr><tr><td>Deployments</td><td>Single revision deployment taking longer time to retrieve revision</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Org registration issue – resolved by displaying in Logs the exact Salesforce error</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Getting empty revision when performing single revision merge with no modifications</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Unable to create branch with branch name containing "&#x26;" through EZ-commit and Modularization</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>nCino</td><td>Failure to Display Jobs in Deployment History for Version Control using Salesforce with Single Revision of initial commit</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>nCino</td><td>Feature Deployment issue with Salesforce Org Version Control when selecting initial commit as Revision</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+
 #### 27 March 2024
 
 **(ARM 23.1.24)**&#x20;

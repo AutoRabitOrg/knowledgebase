@@ -6,20 +6,18 @@ If you need further assistance beyond our Knowledge Base, AutoRABIT Support is a
 
 ## Support Portal
 
-The best way to contact us is to log in and submit a ticket via our support portal. You can do so by:
-
-* Logging into your instance and open a ticket by doing the following:&#x20;
+The best way to contact us is to log in and submit a ticket via our support portal. You can do so by logging in to your instance and opening a ticket using the following steps:&#x20;
 
 ### ARM Product Support
 
-1. Log in to your ARM instance.
-2. Go to Quick Links > Click on “**Help Desk & Feedback**” button.
+1. **Log in to the instance:** After logging in, proceed to the next step.
+2. **Navigate to Quick Links**: Click on the “Quick Links” section.
+3. **Access the Support Portal:** Locate and select the “Help Desk & Feedback” button. This will redirect you to our Support Portal.
 
 <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
-3. It will redirect you to the Support Portal page where existing tickets can be accessed. You may also create a new ticket by clicking on the “**Add Ticket**” button.
-
-&#x20;
+4. **Existing Tickets:** On the _Support Portal_ page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
+5. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.
 
 <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
@@ -31,12 +29,13 @@ The best way to contact us is to log in and submit a ticket via our support port
 
 ### Vault Product Support
 
-1. Log in to your Vault instance.
-2. Click on the question mark icon (?) > then click on "**Help Center.**"
+1. **Log in to the instance.** After logging in, proceed to the next step.
+2. **Access the Help Center:** Click on the question mark (?) icon (usually located in the top-right corner) and select “Get Help.”
 
 <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
-3. It will redirect you to the Support Portal page where existing tickets can be accessed. You can also create a new ticket by clicking on the “**Add Ticket**” button.
+3. **Existing Tickets:** On the _Support Portal_ page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
+4. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.
 
 <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +45,7 @@ The best way to contact us is to log in and submit a ticket via our support port
 
 ### CodeScan Product Support
 
-1. Log in to your CodeScan instance.
+1. Log in to the instance.
 2. Click on the question mark icon (?) > then click on “**Get Help**.”
 
 <figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
@@ -59,22 +58,9 @@ The best way to contact us is to log in and submit a ticket via our support port
 
 ***
 
-## Support Portal
-
-* If you’re **unable to log in**, you can submit a ticket via our **Support portal,** [**here**](https://app.gitbook.com/s/ZWyY89cEdp4BWlMfwIlU/team/meet-the-team)**.**
-
 ## Email Support
 
 * If you are unable to use the methods above, you can email us at support@autorabit.com; however, the portal is the preferred and recommended method.
-* If your questions are sales-related, contact your Account Executive or email sales@autorabit.com. They will help get your message to the right people.&#x20;
-* If you need to reach your Customer Success Manager (CSM), but don’t know who to contact, you can email csg@autorabit.com.
+* If you need to reach your Customer Success Manager but don’t know whom to contact, you can email csg@autorabit.com.
+* If your questions are sales-related, contact your Account Executive or email sales@autorabit.com. They will help your message get to the right people.&#x20;
 
-***
-
-## Phone Support&#x20;
-
-Support by phone is available 24/7, 365 days a year. You can reach us by phone using the following number; however, our support portal is the recommended method.
-
-Phone: +1 925 500 1004
-
-Additional information about our Technical Support Services is available at [https://www.autorabit.com/technical-support-services/](https://www.autorabit.com/technical-support-services/).

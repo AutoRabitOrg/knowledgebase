@@ -61,6 +61,6 @@ The best way to contact us is to log in and submit a ticket via our support port
 ## Email Support
 
 * If you are unable to use the methods above, you can email us at support@autorabit.com; however, the portal is the preferred and recommended method.
-* If you need to reach your Customer Success Manager but don’t know whom to contact, you can email csg@autorabit.com.
+* If you need to contact your Customer Success Manager but don’t know how to reach them, you can email csg@autorabit.com.
 * If your questions are sales-related, contact your Account Executive or email sales@autorabit.com. They will help your message get to the right people.&#x20;
 

@@ -95,7 +95,7 @@ Once the application is created, you will need to enter the identity provider da
 It’s necessary to sync attributes of IDP users with properties of CodeScan users.
 
 1. In **PingOne**, go to the **`Attribute Mappings`** tab of your SAML Application and click on the **`Edit`** icon.
-2. Add these four attributes and map to corresponding PingOne properties:
+2. Add these attributes and map to corresponding PingOne properties:
 
 <table data-full-width="true"><thead><tr><th>CodeScan Attribute</th><th>PingOne Attribute</th><th>Required</th><th>Description</th></tr></thead><tbody><tr><td>saml_subject</td><td>User ID</td><td>Yes</td><td>User ID is a default required in PingOne</td></tr><tr><td>saml_username</td><td>Username</td><td>Yes</td><td>PingOne username will be used for newly created CodeScan users</td></tr><tr><td>saml_email</td><td>Email Address</td><td>Yes</td><td>PingOne email will be copied to user profile in CodeScan</td></tr><tr><td>saml_name</td><td>Formatted</td><td>Optional</td><td>PingOne formatted name will be copied to user profile in CodeScan</td></tr><tr><td>saml_groups</td><td>Group Names</td><td>Optional</td><td>PingOne user groups will be automatically created in CodeScan Organization, and user will be added to these groups</td></tr></tbody></table>
 

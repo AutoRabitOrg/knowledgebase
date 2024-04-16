@@ -90,9 +90,9 @@ Once the application is created, you will need to enter the identity provider da
 7. Click **`Update`** on the CodeScan page.
 8. The next step is to confirm your corporate domain to get the SSO working. You can confirm domain via raising a request to [Codescan Support](https://mailto:support@autorabit.com/).
 
-### Step 4: (Optional) Adding Attribute Mappings in PingOne <a href="#step-4-optional-adding-attribute-mappings-in-pingone" id="step-4-optional-adding-attribute-mappings-in-pingone"></a>
+### Step 4: Adding Attribute Mappings in PingOne <a href="#step-4-optional-adding-attribute-mappings-in-pingone" id="step-4-optional-adding-attribute-mappings-in-pingone"></a>
 
-It’s possible to sync attributes of IDP users with properties of Codescan users.
+It’s necessary to sync attributes of IDP users with properties of CodeScan users.
 
 1. In **PingOne**, go to the **`Attribute Mappings`** tab of your SAML Application and click on the **`Edit`** icon.
 2. Add these four attributes and map to corresponding PingOne properties:

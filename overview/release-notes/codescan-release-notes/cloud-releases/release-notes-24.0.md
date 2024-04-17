@@ -19,6 +19,10 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
 
 **Release Date: 27 March 2024**
 
+This release has several new features that support enhanced user capabilities.
+
+<figure><img src="../../../../.gitbook/assets/CodeScan slide 2024-04-17.jpg" alt=""><figcaption></figcaption></figure>
+
 1. **CSV Export**: With this fix, we added a URL column to the CSV Export that enables teams to quickly navigate to the Issue and get a fix in place.
 2. **CSV Export not exporting all issues**: To avoid doubling up the queries, when a user presses the **Export** button, the **Export** and **Reset** buttons are grayed out and unusable. After the buttons are clicked, the following message should show underneath: "Please remain on this page while your report is generated. Depending on the number of issues in your report, this may take up to 5 minutes. Your download will start shortly."&#x20;
 3. **CSV Export added functionality – Pull Requests**: This enables CSV Exports to include the options to filter and group code issues by specific pull request(s).

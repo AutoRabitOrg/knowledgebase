@@ -140,8 +140,8 @@ Description automatically generated](../../../.gitbook/assets/15.png)
 
 Description automatically generated](../../../.gitbook/assets/16.png)
 
-1. If the user selects “Salesforce Live Data”, then the user will land directly on the “Select Components” section of the Flow.
-2. The User Can Verify Both The “Metadata” & “Data” tabs to go through the meta data components and objects in the data tabs, as shown below:
+2. If the user selects “Salesforce Live Data”, then the user will land directly on the “Select Components” section of the Flow.
+3. The User Can Verify Both The “Metadata” & “Data” tabs to go through the meta data components and objects in the data tabs, as shown below:
 
 ![A screenshot of a computer
 
@@ -153,32 +153,33 @@ Description automatically generated](../../../.gitbook/assets/18.png)
 
 ![](../../../.gitbook/assets/19.png)
 
-1. **Include all child objects:** Ensures that all the child’s directly related, and the recursively related child’s will also be included
-   1. To ensure optimal performance, only fixe objects were allowed to be selected. If any further child’s are to be selected, the selection can be made by going through the schema
-
-**Mappings**: The user will click on the mappings to map the fields on the source against the fields on the destination
-
-1. The mappings section contains three tabs: Fields, Record Type & Related Picklist
-   1. The user can perform ‘AUTOMAP’ & ‘CLEAR ALL’ on the values of the tabs.
+4. **Include all child objects:** Ensures that all the child’s directly related, and the recursively related child’s will also be included.
+   1. To ensure optimal performance, only fixed objects are allowed to be selected. If any further child's are to be selected, the selection can be made by going through the schema.
+5. **Mappings**: The user will click on the mappings to map the fields on the source against the fields on the destination.&#x20;
+   1. The mappings section contains three tabs: Fields, Record Type & Related Picklist.&#x20;
+   2. The user can perform 'Automap' & 'Clear All' on the values of the tabs.
 
 ![A screenshot of a computer
 
 Description automatically generated](../../../.gitbook/assets/20.png)
 
-1. FIELDS: The fields on source are mapped against the field(s) on the destination
-2. RECORD TYPE: The record type on the source are mapped against the record type on the destination
-3. RESTRICTED PICKLIST: On selecting the ‘restricted picklist’ from the source, the source field values will be mapped against the field values on the destination
-4. On completing the required selection on the tabs under the mappings, the users can perform ‘**APPLY’ & ‘CLEAR ALL.’**
-5. FILTERS: The user can input the query and can set the filter criteria for the records to be filtered
-   1. Once the user clicks the “Publish”, the following popup would be displayed to the user for confirmation.
-6. On clicking “OK” the rule will be published and be available with the global list of rules associated with the ORG
-7. On completing all the required actions the user can click “NEXT” to continue to the “Config Details” section.
-   1. **Ignore Failed Records:** Enabling it, will ensure that the null’s available in the source ORG will be pushed to the destination ORG
-8. **SAVE:** Will save the config created. It will not trigger the job automatically while saving the job.
-   1. The user will observe “SAVE” on the “Replication Config Info” page if “SAVE” is selected.
-9. **SAVE & RUN:** Will save the config created and will trigger the job created to run, and, redirect the user to the “JOB HISTORY” page.
-   1. The user can observe the related job running on the “JOB HISTORY” page
-   2. The user will observe “SAVE & RUN” on the “Replication Config Info” page if “SAVE & RUN” is selected.
+6. **FIELDS**: The fields on source are mapped against the field(s) on the destination
+7. **RECORD TYPE**: The record type on the source are mapped against the record type on the destination.
+8. **RESTRICTED PICKLIST**: On selecting the ‘restricted picklist’ from the source, the source field values will be mapped against the field values on the destination.
+9. On completing the required selection on the tabs under the mappings, the users can perform ‘**APPLY’ & ‘CLEAR ALL.’**
+10. **FILTERS**: The user can input the query and can set the filter criteria for the records to be filtered
+
+    Once the user clicks the “Publish”, the following popup would be displayed to the user for confirmation.
+11. On clicking “OK” the rule will be published and be available with the global list of rules associated with the ORG
+12. On completing all the required actions, the user can click “NEXT” to continue to the “Config Details” section.
+
+    **Ignore Failed Records:** Enabling it, will ensure that the null’s available in the source ORG will be pushed to the destination ORG.
+13. **SAVE:** Will save the config created. It will not trigger the job automatically while saving the job.
+
+    The user will observe “SAVE” on the “Replication Config Info” page if “SAVE” is selected.
+14. **SAVE & RUN:** Will save the config created and will trigger the job created to run and redirect the user to the “JOB HISTORY” page.
+    1. The user can observe the related job running on the “JOB HISTORY” page.
+    2. The user will observe “SAVE & RUN” on the “Replication Config Info” page if “SAVE & RUN” is selected.
 
 ### Job Configuration – Actions
 

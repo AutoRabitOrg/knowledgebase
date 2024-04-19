@@ -14,17 +14,17 @@ Users can follow the depicted flow for the creation of reports.
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/0.png)
+Description automatically generated](<../../../.gitbook/assets/0 (1).png>)
 
 2. In 'Search By,' the following options will be available for the user to select:
 
-![](../../../.gitbook/assets/1.png)
+![](<../../../.gitbook/assets/1 (1).png>)
 
 3. On clicking the “Generate Report” button, the user will see the following popup.
 
 ![A screenshot of a report
 
-Description automatically generated](../../../.gitbook/assets/2.png)
+Description automatically generated](<../../../.gitbook/assets/2 (1).png>)
 
 4. The user can input/select all the required fields:
    1. **Salesforce Org:** The ORG on which the intended report is being generated.
@@ -46,7 +46,7 @@ Description automatically generated](../../../.gitbook/assets/2.png)
     Note: The report created will **expire after 7 days** from the day of creation of the report.
 6. Please observe the following screenshot for reference
 
-![](../../../.gitbook/assets/3.png)
+![](<../../../.gitbook/assets/3 (1).png>)
 
 7. Based on the data within the time range selected, the report may take some time to run and generate the report.
 8.  If multiple reports were created:
@@ -56,45 +56,45 @@ Description automatically generated](../../../.gitbook/assets/2.png)
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/4.png)
+Description automatically generated](<../../../.gitbook/assets/4 (1).png>)
 
 10. The user can click open the report created by clicking on **“Report Label.”**
 11. On clicking the report, the contents of the report can be viewed as shown.
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/5.png)
+Description automatically generated](<../../../.gitbook/assets/5 (1).png>)
 
 12. The contents of the report are searchable, the search is “case insensitive” by default. The case sensitivity can be turned on as shown below.
 
-![](../../../.gitbook/assets/6.png)
+![](<../../../.gitbook/assets/6 (1).png>)
 
 13. The generated report can be "Exported to CSV” with the options shown below:
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/7.png)
+Description automatically generated](<../../../.gitbook/assets/7 (1).png>)
 
 14. **Consolidated Report:** By clicking on this button, the user can view the consolidated report.
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/8.png)
+Description automatically generated](<../../../.gitbook/assets/8 (1).png>)
 
 15. **Change View:** The user can adjust the columns visible on the report by adding or removing the columns from the list of columns available as shown below.
 
-![](../../../.gitbook/assets/9.png)
+![](<../../../.gitbook/assets/9 (1).png>)
 
 16. The user can search through the columns of the selected object as shown below
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/10.png)
+Description automatically generated](<../../../.gitbook/assets/10 (1).png>)
 
 17. Based on the columns selected, the operators may vary in the “operator” column:
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../.gitbook/assets/11.png)
+Description automatically generated](<../../../.gitbook/assets/11 (1).png>)
 
 .

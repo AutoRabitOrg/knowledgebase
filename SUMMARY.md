@@ -666,7 +666,7 @@
       * [Restoring the Metadata/Data to the Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
     * [Replicate](product-guides/vault/vault-features/replicate/README.md)
       * [Replicating Objects between Two Salesforce Orgs](product-guides/vault/vault-features/replicate/replicating-objects-between-two-salesforce-orgs.md)
-    * [Data Seeding](product-guides/vault/vault-features/data-seeding.md)
+      * [Data Seeding](product-guides/vault/vault-features/replicate/data-seeding.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)
       * [Archiving your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
     * [Reporting](product-guides/vault/vault-features/reporting.md)

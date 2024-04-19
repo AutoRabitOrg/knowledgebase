@@ -34,14 +34,16 @@ While creating the job configuration, the user can select from any of the Backup
 
 ![](../../../.gitbook/assets/2.png)
 
-1. **This will have the following options for the user to select:**
-   * Source Org: Source of the data for Replicate operation
-   * Destination Org: Destination to which the data will be moved during the replicate operation
-   * Replicate Source: Defines the kind of data that will be sourced to the replicate operation
-   * Configurations: For the “Replicate Source” selected, provides the available configurations under the “Replicate Source”
-2. User will also have the table with the list of configurations created for the source selected.
-3. User can select the required ‘configs’ from the list of ‘configs’ selected
-4. On clicking “Next”, the user will land on the “Select Components” page. The user can observe “Metadata” and “Data” tabs.
+6. **This will have the following options for the user to select:**
+
+* Source Org: Source of the data for Replicate operation
+* Destination Org: Destination to which the data will be moved during the replicate operation
+* Replicate Source: Defines the kind of data that will be sourced to the replicate operation
+* Configurations: For the “Replicate Source” selected, provides the available configurations under the “Replicate Source”
+
+7. User will also have the table with the list of configurations created for the source selected.
+8. User can select the required ‘configs’ from the list of ‘configs’ selected
+9. On clicking “Next”, the user will land on the “Select Components” page. The user can observe “Metadata” and “Data” tabs.
 
 ![](../../../.gitbook/assets/3.png)
 
@@ -49,70 +51,68 @@ While creating the job configuration, the user can select from any of the Backup
 
 Description automatically generated](../../../.gitbook/assets/4.png)
 
-1. The user can make the required selections under both the “Metadata” & “Data” tabs and continue to the next section.
-   1. **Include all child objects:** Selection ensures that all the child’s directly related, and the recursively related, objects will also be included.
-   2. **Mappings:** The user can click open and observe how the fields have been mapped for data transfer between the environments.
+10. The user can make the required selections under both the “Metadata” & “Data” tabs and continue to the next section.
+    1. **Include all child objects:** Selection ensures that all the child’s directly related, and the recursively related, objects will also be included.
+    2. **Mappings:** The user can click open and observe how the fields have been mapped for data transfer between the environments.
 
 ![](../../../.gitbook/assets/5.png)
 
-*
-  1. **Records**: The user can select the records by clicking the icon under the “Records” column.
+3. **Records**: The user can select the records by clicking the icon under the “Records” column.
 
 ![](../../../.gitbook/assets/6.png)
 
-*
-  1. **Search Text:** The user can search the fields.
-  2. **Slider:** By enabling and disabling the slider, the user can make the search case sensitive or case-insensitive
-  3. **Choose File**: The user can input the file using this option
-  4. **CHANGE VIEW**: The user can the additional fields required to be displayed on the page and can remove the fields that are not required.
+4. **Search Text:** The user can search the fields.
+5. **Slider:** By enabling and disabling the slider, the user can make the search case sensitive or case-insensitive
+6. **Choose File**: The user can input the file using this option
+7. **CHANGE VIEW**: The user can the additional fields required to be displayed on the page and can remove the fields that are not required.
 
 ![A screenshot of a computer
 
 Description automatically generated](../../../.gitbook/assets/7.png)
 
-1. **Masking Rules:** The user can create and publish the rules under this section.
-2. The user clicks on the “New Masking Rule” button to create the rule.
-   1. The rules that are created in a ‘Job Config’ will be specific to that unless it is published.
+11. **Masking Rules:** The user can create and publish the rules under this section.
+12. The user clicks on the “New Masking Rule” button to create the rule.
+    1. The rules that are created in a ‘Job Config’ will be specific to that unless it is published.
 
 ![A screenshot of a computer
 
 Description automatically generated](../../../.gitbook/assets/8.png)
 
-1. The following page will be displayed to the user on clicking the “New Masking Rule” button.
+13. The following page will be displayed to the user on clicking the “New Masking Rule” button.
 
 ![A screenshot of a computer
 
 Description automatically generated](../../../.gitbook/assets/9.png)
 
-1. The user has to input the following for the creation of a rule:
-   1. Rule Name: Label/Name of the rule being created
-   2. Select Object: The object on which the rule is being created
-   3. Field Type: Type of field on which the rule is being created
-   4. Masking Style: Defines the pattern which will replace the data of the ‘Field Type” selected
-   5. “Add To VaultData Masking Rules List”: By selecting this checkbox, the user can directly add this rule to the global rules list.
-   6. The user can also publish a rule after saving the rule, by clicking the publish icon on the rule.
+14. The user has to input the following for the creation of a rule:
+    1. Rule Name: Label/Name of the rule being created
+    2. Select Object: The object on which the rule is being created
+    3. Field Type: Type of field on which the rule is being created
+    4. Masking Style: Defines the pattern which will replace the data of the ‘Field Type” selected
+    5. “Add To VaultData Masking Rules List”: By selecting this checkbox, the user can directly add this rule to the global rules list.
+    6. The user can also publish a rule after saving the rule, by clicking the publish icon on the rule.
 
 ![](../../../.gitbook/assets/10.png)
 
-1. Once the user clicks the “Publish”, the following popup would be displayed to the user for confirmation
+7. Once the user clicks the “Publish”, the following popup would be displayed to the user for confirmation
 
 ![](../../../.gitbook/assets/11.png)
 
-1. On clicking “OK” the rule will be published and be available with the global list of rules associated with the ORG
-2. On completing all the required actions, the user can click “NEXT” to continue to the “Config Details” section.
+8. On clicking “OK” the rule will be published and be available with the global list of rules associated with the ORG
+9. On completing all the required actions, the user can click “NEXT” to continue to the “Config Details” section.
 
 ![](../../../.gitbook/assets/12.png)
 
-1. The user can fill in all the required detail of the “Config Details”
-   1. **Replicate Config Label**: The user can enter the name of the config to be created.
-   2. **Batch Size**: The user can specify the custom batch size and which Vault will utilize for processing the data.
-   3. **Email Notification**: The email to which the notifications can be triggered and sent.
-   4. The user can switch on all the required triggers available on the page.
-   5. **Schedule**: The user can set a custom schedule through the “Schedule” option available
-      1. The user’s set schedule will be utilized to run the job at different intervals
-   6. **Metadata**: The user can observe the selected ‘meta data’ components during the config creation.
-   7. **Data:** The user can observe the objects that are selected during the config creation
-   8. On completing all the required selections, the user can select either “SAVE” or “SAVE & RUN”
+15. The user can fill in all the required detail of the “Config Details”
+    1. **Replicate Config Label**: The user can enter the name of the config to be created.
+    2. **Batch Size**: The user can specify the custom batch size and which Vault will utilize for processing the data.
+    3. **Email Notification**: The email to which the notifications can be triggered and sent.
+    4. The user can switch on all the required triggers available on the page.
+    5. **Schedule**: The user can set a custom schedule through the “Schedule” option available
+       1. The user’s set schedule will be utilized to run the job at different intervals
+    6. **Metadata**: The user can observe the selected ‘meta data’ components during the config creation.
+    7. **Data:** The user can observe the objects that are selected during the config creation
+    8. On completing all the required selections, the user can select either “SAVE” or “SAVE & RUN”
 
 ![A screenshot of a computer
 

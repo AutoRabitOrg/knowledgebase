@@ -18,63 +18,63 @@ This document provides complete information about the new feature Vault Connect,
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../../.gitbook/assets/0.png)
+Description automatically generated](<../../../../.gitbook/assets/0 (1).png>)
 
 Navigate to the setup module of the Vault application.
 
 Click on the required **Org**.
 
-![](../../../../.gitbook/assets/1.png)
+![](<../../../../.gitbook/assets/1 (1).png>)
 
 1. Click on the **Connect (Beta)** module of the Vault application.
 2. On landing on the **Connect (Beta)** tab of the Vault setup, the user will see the following message on the screen:
 
-![](../../../../.gitbook/assets/2.png)
+![](<../../../../.gitbook/assets/2 (1).png>)
 
 1. Once the customer reaches out to AutoRABIT support team as specified on the above screen, our technical team will perform due diligence to enable **Vault Connect** for the customer(s).
 2. When **Vault Connect** is enabled on the application, the user will see the following screen on the **Connect (Beta)** tab of the Vault Setup module.
 
-![](../../../../.gitbook/assets/3.png)
+![](<../../../../.gitbook/assets/3 (1).png>)
 
 1. Click on the **Add Connect Config** button on the application.
 
-![](../../../../.gitbook/assets/4.png)
+![](<../../../../.gitbook/assets/4 (1).png>)
 
 1. A pop-up will be displayed with t**he following information:**
    1. How/where to config the external data source;
    2. OData URL for configuring the external data source; and
    3. What to select when creating Auth. Providers.
 
-![](../../../../.gitbook/assets/5.png)
+![](<../../../../.gitbook/assets/5 (1).png>)
 
 Copy the URL from the pop-up shown.
 
 **Note:** The same URL can be copied from the pop-up and opened by clicking on the information icon available beside the **Add Connect Config** button.
 
-![](../../../../.gitbook/assets/6.png)
+![](<../../../../.gitbook/assets/6 (1).png>)
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../../.gitbook/assets/7.png)
+Description automatically generated](<../../../../.gitbook/assets/7 (1).png>)
 
 Select the required config from the **Archive Config** section and click on the **Next** button.
 
-![](../../../../.gitbook/assets/8.png)
+![](<../../../../.gitbook/assets/8 (1).png>)
 
 On clicking **Next,** you will be redirected to the **Jobs** section.
 
-![](../../../../.gitbook/assets/9.png)
+![](<../../../../.gitbook/assets/9 (1).png>)
 
 1. Select the required **Job** and click on **Next**.
 2. On clicking **Next**, you will be redirected to the **Objects** section.
 
-![](../../../../.gitbook/assets/10.png)
+![](<../../../../.gitbook/assets/10 (1).png>)
 
 The following operations can be performed:
 
 Include/exclude the required objects from the list of objects available.
 
-![](../../../../.gitbook/assets/11.png)
+![](<../../../../.gitbook/assets/11 (1).png>)
 
 1. Include/exclude the fields as required from the list of Fields available.
    1. Click on the **File** icon from the **Fields** column.

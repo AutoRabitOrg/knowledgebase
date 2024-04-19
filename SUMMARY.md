@@ -668,6 +668,7 @@
       * [Replicating Objects between Two Salesforce Orgs](product-guides/vault/vault-features/replicate/replicating-objects-between-two-salesforce-orgs.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)
       * [Archiving your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
+    * [Reporting](product-guides/vault/vault-features/reporting.md)
     * [GDPR - Secure and Comply](product-guides/vault/vault-features/gdpr-secure-and-comply/README.md)
       * [Right to Be Forgotten Request](product-guides/vault/vault-features/gdpr-secure-and-comply/right-to-be-forgotten-request.md)
     * [Knowledge Articles](product-guides/vault/vault-features/knowledge-articles/README.md)

@@ -15,7 +15,54 @@ Starting **March 27, 2024**, we're thrilled to announce a new, streamlined relea
 We're committed to enhancing your experience and ensuring CodeScan meets your evolving needs. Stay tuned for more updates!
 {% endhint %}
 
-### Release Notes 24.0.3
+## Release Notes 24.0.4
+
+**Release Date: 21 April 2024**
+
+### **New Features**
+
+In this release, we've added more metadata suffixes as recognized types for Salesforce metadata:
+
+**Newly added CodeScan logic:**
+
+Any suffix with .\[dot] present will be treated as a correct suffix and not be modified. This means:
+
+1. **.field-meta.xml** - will treat all files ending with .field-meta.xml as metafiles.
+2. **-meta.xml** - will treat all files ending with -meta.xml as metafiles.
+3. **.xml** - will treat all files with .xml suffix as metafiles.
+4. **xml** - will treat all files with .xml suffix as metafiles. (.\[dot] is added at the start if not provided)
+
+### IDE Enhancements
+
+* Add UI element within the CodeScan Administration tab to list IDE license usage at the Org level.
+
+<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
+* Admins are now notified within the UI when IDE licenses have exceeded the maximum allotment.
+
+<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+
+* Users are now notified in IDE when additional IDE licenses are required (i.e., the company has allocated all available licenses).
+
+<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+
+* Added a feature in CodeScan Administration to suppress the IDE notifications displayed in IDE when additional IDE licenses are required.
+
+<figure><img src="../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+
+* CodeScan now removes IDE usage records for users who have been removed from their organization’s member group.
+
+### Fixes
+
+* Improved the CodeScan parser as it relates to Visual Force. Specifically, the parser had some issues recognizing parts of Aura code (for example, with components (cmp), the parser was unable to recognize divs and spans across multiple lines). With this release, we have corrected these issues and verified that the Visual Force parser for .cmp, vf, xml, and .page files are all parsed properly. Further, CodeScan users can successfully see these issues after analysis.
+* Fixed a NullPointerException with the Apex rule “Null Coalescing Operator.”
+* Fixed an issue with New Code settings. Customers who were changing new code settings while selecting the reference branch as “main” were receiving a notification that the settings had been saved. However, the change was not reflected/applied properly to the CodeScan engine. This issue is now resolved.
+
+
+
+***
+
+## Release Notes 24.0.3
 
 **Release Date: 27 March 2024**
 
@@ -54,7 +101,7 @@ This release has several new features that support enhanced user capabilities.
 
 ***
 
-### Release Notes 24.0.2&#x20;
+## Release Notes 24.0.2&#x20;
 
 **March 2024**
 

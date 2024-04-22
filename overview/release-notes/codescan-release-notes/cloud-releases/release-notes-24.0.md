@@ -46,10 +46,6 @@ Any suffix with .\[dot] present will be treated as a correct suffix and not be m
 
 <figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-* Added a feature in CodeScan Administration to suppress the IDE notifications displayed in IDE when additional IDE licenses are required.
-
-<figure><img src="../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
-
 * CodeScan now removes IDE usage records for users who have been removed from their organization’s member group.
 
 ### Fixes

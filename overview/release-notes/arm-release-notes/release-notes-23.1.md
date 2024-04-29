@@ -86,6 +86,24 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 29 April 2024
+
+**(ARM 23.1.28)**
+
+| Module                                 | Summary                                                                                                                   | Status                                                | Fix Version                 | Resolution                      | Cause                           |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------- | ------------------------------- | ------------------------------- |
+| <p> </p><p>Deployments</p><p> </p>     | <p> </p><p>Getting error on deployments</p><p> </p>                                                                       | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>CI Jobs</p><p> </p>         | <p> </p><p>Skip member is not working</p><p> </p>                                                                         | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p> | <p> </p><p>EZ-Commits failing</p><p> </p>                                                                                 | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p> | <p> </p><p>Static resources not identified by ARM SCA </p><p> </p>                                                        | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p> | <p> </p><p>Merge showing as no modifications</p><p> </p>                                                                  | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>Version Control</p><p> </p> | Error occurred when the user attempted to upload the conflicted zip file from the local system after manual modifications | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>Reports</p><p> </p>         | Inquiries regarding report module                                                                                         | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>Deployments</p><p> </p>     | Deployment from Dev Sandbox to B2C2 QA Org by using feature - New Deployment                                              | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+| <p> </p><p>CI Jobs</p><p> </p>         | <p> </p><p>Build did not include second revision</p><p> </p>                                                              | <p> </p><p>Requires Customer Coordination</p><p> </p> |  NA                         | Loggers added                   | Loggers added                   |
+| <p> </p><p>CI Jobs</p><p> </p>         | <p> </p><p>Run test based on changes, noticed issues</p><p> </p>                                                          | <p> </p><p>Requires Customer Coordination</p><p> </p> | <p> </p><p>NA</p><p> </p>   | Loggers added                   | Loggers added                   |
+| <p> </p><p>nCino</p><p> </p>           | IDs of parents/children and records not resolving                                                                         | <p> </p><p>QA Passed</p><p> </p>                      | <p> </p><p>23.1</p><p> </p> | <p> </p><p>Code fix</p><p> </p> | <p> </p><p>Use case</p><p> </p> |
+
 #### 24 April 2024
 
 **(ARM 23.1.27)**

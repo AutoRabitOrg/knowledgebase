@@ -26,7 +26,7 @@ This update introduces several new rules and bug fixes for current rules. This i
 * **API Versions 7.0 through 20.0 Retirement**: The retirement of older Salesforce Platform API versions (7.0 through 20.0) after the Summer '22 release is a critical step to ensure the continued smooth operation of Salesforce applications.
 * **Avoid using methods getDescribe and getMap inside Loops**: The ‘getDescribe’ and ‘getMap’ methods typically involve fetching metadata information for objects and fields. Invoking them inside loops can result in unnecessary overhead.
 
-3. **Assertion Rules:**
+4. **Assertion Rules:**
 
 * **Use Assert.areEqual instead of Assert.isTrue**: This rule detects Unit test assertions in object references equality. Instead of using Assert.isTrue as an equality check, these assertions should be made by more specific methods, like **Assert.areEqual**.
 * **Use Assert.isTrue instead of Assert.areEqual**: When asserting a value that is the same as a Boolean literal, use **Assert.isTrue**, instead of Assert.areEqual.
@@ -38,19 +38,19 @@ This update introduces several new rules and bug fixes for current rules. This i
 * **Use Messages in Assert Statements**: Ensure that messages are included when using the assert method with the message parameter to improve code quality and make it easier to identify the cause of failures during testing and debugging.
 * **Consider Using Assert in place of System.Assert**: This new class aims to enhance the readability and maintainability of test code for developers. It is preferable to use Assert in your tests instead of older System.Assert methods.
 
-4. **LWC Rules:**
+5. **LWC Rules:**
 
 * **Enable Salesforce Lightning Web Security (LWS)**: Enabling LWS ensures that the Lightning components within our Salesforce instance are executed in a secure and controlled environment, reducing the risk of potential security vulnerabilities.
 
-5. **SF Meta:**
+6. **SF Meta:**
 
 * **Adopt the ICU Locale Formats instead of JDK locale formats**: Salesforce is retiring the JDK locale formats with the Spring ’24 release. ICU is the new standard enforced in API version 45. Make sure your custom code does not use JDK locale formats and instead uses locale-neutral methods.
 * **Set Flows to Auto Layout**: Implementing auto-layout for your flows helps designers modify layouts more quickly, allowing them to iterate on their designs with greater speed. It ensures elements are perfectly aligned and evenly spaced, improving readability in complex Flows.
 * **Potential Overuse of Rollup Summaries**: Ensure compliance with Salesforce's limit of 25 roll-up summary fields per object to prevent potential issues arising from exceeding Salesforce platform limits.
 
-6. Improvement was provided on how to fix for the "**Deserializing JSON is Security Sensitive**" rule.
-7. We provided a fix on the "**sf:AvoidUsingHardCodedId**" rule not detecting hard-coded IDs as expected.
-8. Wrongly identified violations in specific scenarios were fixed for the "**Comments are Required"** rule.
-9. The rule "**sf:AvoidPublicFields"** was updated to exclude public fields with the **`@InvocableVariable`** annotation.
-10. We provided a fix for the rule's missing root element in "**RuleSet**."
-11. We provided a fix for the **"Consider removing inactive flows"** rule not working correctly.
+7. Improvement was provided on how to fix for the "**Deserializing JSON is Security Sensitive**" rule.
+8. We provided a fix on the "**sf:AvoidUsingHardCodedId**" rule not detecting hard-coded IDs as expected.
+9. Wrongly identified violations in specific scenarios were fixed for the "**Comments are Required"** rule.
+10. The rule "**sf:AvoidPublicFields"** was updated to exclude public fields with the **`@InvocableVariable`** annotation.
+11. We provided a fix for the rule's missing root element in "**RuleSet**."
+12. We provided a fix for the **"Consider removing inactive flows"** rule not working correctly.

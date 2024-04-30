@@ -14,3 +14,4 @@ layout:
 
 # CodeScan Release Notes
 
+Visit the [Release Notes](./) for Cloud or On-Premises CodeScan.

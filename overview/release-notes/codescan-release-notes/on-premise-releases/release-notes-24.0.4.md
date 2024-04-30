@@ -2,36 +2,9 @@
 
 ## CodeScan On-Premises
 
+## Release Notes 24.0.4
+
 **Release Date: April 2024**
-
-### **New Features**
-
-In this release, we've added more metadata suffixes as recognized types for Salesforce metadata:
-
-**Newly added CodeScan logic:**
-
-Any suffix with .\[dot] present will be treated as a correct suffix and not be modified. This means:
-
-1. **.field-meta.xml** - will treat all files ending with .field-meta.xml as metafiles.
-2. **-meta.xml** - will treat all files ending with -meta.xml as metafiles.
-3. **.xml** - will treat all files with .xml suffix as metafiles.
-4. **xml** - will treat all files with .xml suffix as metafiles. (.\[dot] is added at the start if not provided)
-
-### IDE Enhancements
-
-* Add UI element within the CodeScan Administration tab to list IDE license usage at the Org level.
-
-<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
-
-* Admins are now notified within the UI when IDE licenses have exceeded the maximum allotment.
-
-<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
-
-* Users are now notified in IDE when additional IDE licenses are required (i.e., the company has allocated all available licenses).
-
-<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
-
-* CodeScan now removes IDE usage records for users who have been removed from their organization’s member group.
 
 ### Rules & Fixes
 

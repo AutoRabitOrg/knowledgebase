@@ -684,6 +684,7 @@
         * [Restoring nCino Features](product-guides/vault/vault-features/knowledge-articles/ncino/restoring-ncino-features.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect/README.md)
       * [Vault Connect User Guide](product-guides/vault/vault-features/vault-connect/vault-connect-user-guide.md)
+  * [Vault-FAQs](product-guides/vault/vault-faqs.md)
 
 ## Use Cases + Resources
 

@@ -6,7 +6,7 @@ The following article demonstrates how to create a new CodeScan cloud account, l
 
 Follow the steps below to Sign Up and Log In to CodeScan Cloud:
 
-1.  To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/) and click **Log In** at the top right corner of the page.\
+1.  To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/).\
 
 
     <figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>

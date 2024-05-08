@@ -6,7 +6,7 @@ The ARM signup and activation process has several steps— some on our end and o
 2.  Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.\
 
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844592745.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 3\. Fill in the registration details, and then click **`Register.`**
 

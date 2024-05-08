@@ -13,7 +13,7 @@
 6. Enter Description if required.
 7. Click on Create Option.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Your New API Token is created
 

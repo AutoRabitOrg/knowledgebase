@@ -8,7 +8,7 @@ Follow the instructions below to create a webhook API token from ARM.
 2. Click on the Admin section, then select 'API Token.'
 3. Click on 'Create API Token.'
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the token name.
 2. Select Type as "webhook."

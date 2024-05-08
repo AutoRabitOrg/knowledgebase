@@ -34,3 +34,7 @@ codescan-export MyOrganizationKey MyProjectKey --token=MyToken -f C:/MyDirectory
 codescan-export MyOrganizationKey MyProjectKey --token=MyToken --types=BUG --severities=BLOCKER,CRITICAL -f C:/MyDirectory/MyFileName.csv
 ```
 {% endcode %}
+
+**The following video will provide you with step-by-step instructions for exporting issues:**
+
+{% file src="../../../.gitbook/assets/Codescan_exporttool.mp4" %}

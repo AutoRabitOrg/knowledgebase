@@ -2,6 +2,8 @@
 
 While running an analysis, CodeScan raises an issue every time a piece of code breaks a coding rule. The set of coding rules are defined by the associated quality profile for each language in the project.
 
+Note: Each project in CodeScan is treated independently. Issues cannot be compared or Synced between two separate projects (even if they contain the same files and issues).
+
 ### Issue types <a href="#issue-types" id="issue-types"></a>
 
 There are three types of issues:

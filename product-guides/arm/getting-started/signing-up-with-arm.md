@@ -6,11 +6,11 @@ The ARM signup and activation process has several steps— some on our end and o
 2.  Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.\
 
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12).png" alt="Welcome Page"><figcaption></figcaption></figure>
 
 3\. Fill in the registration details, and then click **`Register.`**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663844640885.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="New Registration"><figcaption></figcaption></figure>
 
 4. Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process, we will send you an email with details on your activation status.&#x20;
 5. When your account is activated, you will get a confirmation sent to your email address.&#x20;
@@ -24,10 +24,9 @@ The ARM login screen allows you to log in to your instance.
 1. Navigate your web browser to your instance's URL (for example, _https://instance.autorabit.com_).&#x20;
 2. The ARM login screen appears.&#x20;
 3. Enter your login credentials (username and password), and then click on **`Login.`**
-4.  Please get in touch with your org administrator for assistance if you do not know your instance's URL or login credentials.\
+4. Please get in touch with your org administrator for assistance if you do not know your instance's URL or login credentials.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485392349.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="Login" width="368"><figcaption></figcaption></figure>
 
 ## Password Requirements
 
@@ -41,7 +40,7 @@ The ARM login screen allows you to log in to your instance.
 
 When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485548576.png)
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677485548576.png" alt="Logout" width="375"><figcaption></figcaption></figure>
 
 ## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 

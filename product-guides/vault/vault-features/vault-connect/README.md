@@ -20,7 +20,7 @@ This document provides complete information about the new feature Vault Connect,
 
 a.      Log in to the **Vault** application.
 
-![](<../../../../.gitbook/assets/image (6).png>)
+![](<../../../../.gitbook/assets/image (6) (1).png>)
 
 &#x20;
 

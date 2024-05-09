@@ -35,7 +35,7 @@ The CI Jobs deployed will have ![](https://cdn.document360.io/8711f4e7-c040-4616
 
 The new build screen differs based on how your CI job is configured (with or without ALM configuration).
 
-#### 1. ALM configured CI Job <a href="#1-alm-configured-ci-job" id="1-alm-configured-ci-job"></a>
+#### 1. ALM configured CI Job <a href="#id-1-alm-configured-ci-job" id="id-1-alm-configured-ci-job"></a>
 
 For CI jobs configured with ALM details, the following screens are displayed and you can find the ALM work item details configured to the source Version control branch here.
 
@@ -55,7 +55,7 @@ For CI jobs configured with ALM details, the following screens are displayed and
 2. If the user does not specify any label, all the **committed** and **merged work item** revisions will be packaged based on the CI job configuration. This scenario applies to scheduled CI jobs too.
 {% endhint %}
 
-#### 2. Without ALM configured CI Job <a href="#2-without-alm-configured-ci-job" id="2-without-alm-configured-ci-job"></a>
+#### 2. Without ALM configured CI Job <a href="#id-2-without-alm-configured-ci-job" id="id-2-without-alm-configured-ci-job"></a>
 
 For the CI jobs configured without ALM, the below screen will be displayed.
 
@@ -93,8 +93,8 @@ When you edit the pull request, it's marked as edited. Upon committing the pull 
 
 **Refer to the screenshot below for webhook delivery:**
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 **The screenshot below refers to webhook configuration settings:**
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>

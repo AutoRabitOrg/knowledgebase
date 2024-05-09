@@ -22,6 +22,7 @@ Once you are done with your development, you need to migrate your code from your
 * **Deploy from Unlocked Package:** Deploy using the Salesforce DX unlocked package
 * **Deploy from Tag:** Deploy using the version control GIT tags
 * **Deploy from Vlocity Components:** Deploy the vlocity components to your target org
+* **Deploy from Commit Label:** Deploy the EZ-Commit labels to your target sandbox. The commit label will send the entire file from the latest commit, rather than utilizing a delta approach.
 
 ### Types of Deployment <a href="#types-of-deployment" id="types-of-deployment"></a>
 

@@ -28,6 +28,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
    **Purpose**: Ensure comments are included when using hardcoded values in Apex classes\
    \
    **Detail:** Ensures any hard-coded values or strings in the code are accompanied by descriptive comments or, alternatively, use constants. This practice enhances code readability, maintainability, and will make it easier for other developers to understand the purpose of these values.\
+   \
 
 2. **Rule Name: “**_**Use the null coalescing operator instead of the ternary operator”**_\
    \
@@ -38,6 +39,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
    **Detail**: In Salesforce's Spring '24 release, the null-coalescing operator has been introduced in Apex. This rule will identify where this operator could be used but isn’t being utilized.\
    \
    For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon\_apex\_NullCoalescingOperator.htm). \
+   \
 
 3. **Rule Name: “**_**Use Accessibility Attributes”**_\
    \
@@ -52,6 +54,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
    For further information, please refer to: \
    [Component Accessibility Attributes](https://developer.salesforce.com/docs/platform/lwc/guide/create-components-accessibility-attributes.html)\
    [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/)\
+   \
 
 4. **Rule Name: “**_**nCino Inactive Workflow Rules”**_\
    \
@@ -78,6 +81,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
    For further information, please refer to: [https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review) - \
    [The Top 20 Vulnerabilities Found in the AppExchange Security Review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review)\
    [MITRE, CWE-79](https://cwe.mitre.org/data/definitions/79.html) - Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\
+   \
 
 6. **Rule Name: “**_**Exposed Lightning Message Channel”**_\
    \
@@ -88,6 +92,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
    **Detail**: This term specifically refers to cases where you have not configured the 'isExposed' flag in Lightning Message Channel to false. Since this provides access to the Lightning Message Service (LMS) API, which lets you publish and subscribe to messages across the DOM and between Aura, Visualforce, and Lightning Web Components, it should be set to false.\
    \
    For further information, please refer to: [https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review)\
+   \
 
 7. **Rule Name: “**_**Utilizing Apex Unit Tests with @IsTest(IsParallel)”**_\
    \
@@ -101,7 +106,8 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
    \
    Additionally, it's important to note that this setting does not affect change set deployment or package upload processes. \
    \
-   By understanding these drawbacks, developers can effectively manage test execution and deployment processes, minimizing errors, and ensuring the reliability of test results.
+   By understanding these drawbacks, developers can effectively manage test execution and deployment processes, minimizing errors, and ensuring the reliability of test results.\
+
 
 ### Fixes
 
@@ -113,9 +119,13 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+
+
 2. **Updated the documentation and example on rule “API Version is Too Old” to:** “This rule identifies visual force pages which are using older versions of the API. Change the API Version of this visual force page.”\
    \
-   **Reason for change**: The description and example needed to be updated for the rule.
+   **Reason for change**: The description and example needed to be updated for the rule.\
+   \
+
 
 ***
 

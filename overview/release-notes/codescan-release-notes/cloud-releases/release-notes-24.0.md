@@ -17,7 +17,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
 
 ## Release Notes 24.0.5
 
-**15 May 2024**
+**Release Date: 15 May 2024**
 
 ### New Rules
 

@@ -26,7 +26,7 @@ The ARM login screen allows you to log in to your instance.
 3. Enter your login credentials (username and password), and then click on **`Login.`**
 4. Please get in touch with your org administrator for assistance if you do not know your instance's URL or login credentials.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="Login" width="368"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66).png" alt="" width="368"><figcaption></figcaption></figure>
 
 ## Password Requirements
 

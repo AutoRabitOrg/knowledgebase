@@ -151,10 +151,10 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
    o Description: Verifying the presence of necessary metadata XML files. \
    o Success (<mark style="color:green;">**✓**</mark>): All required meta XML files are present. \
    o Failure (<mark style="color:red;">**X**</mark>): Missing meta XML files, indicating incomplete configuration.
-5. **Merge Prevalidation Process** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
+5. **Merge Pre-validation Process** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
    o Description: Performing preliminary checks before the actual merge to identify potential issues.\
-   o Success (<mark style="color:green;">**✓**</mark>): Prevalidation checks pass without any major issues. \
-   o Failure (<mark style="color:red;">**X**</mark>): Prevalidation identifies issues that need resolution before merging.
+   o Success (<mark style="color:green;">**✓**</mark>): When the Merge Pre-validation Process returns a green check mark (<mark style="color:green;">**✓**</mark>), it signifies that the pre-validation check has been successfully completed. It does not indicate whether or not the process returns errors - only that the process itself has run. To check for errors please refer to logs and validate the deploy.\
+   o Failure (<mark style="color:red;">**X**</mark>): The appearance of a red cross mark (<mark style="color:red;">**X**</mark>) signifies that a process has encountered an issue or has failed to complete successfully.
 6. **File Diff** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
    o Description: Comparing files to identify the differences between the source and target. \
    o Success (<mark style="color:green;">**✓**</mark>): No significant differences or conflicts were detected during the file comparison. \

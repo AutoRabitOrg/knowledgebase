@@ -11,8 +11,11 @@ This feature will not carry the false positive between projects.\
 
 ### Using suppressUnitTestViolations parameter <a href="#using-suppressunittestviolations-parameter" id="using-suppressunittestviolations-parameter"></a>
 
-For each rule we have provided the parameter **suppressUnitTestViolations**. This stops any violations of this rule being reported in test methods.\
-**For example**, setting **suppressUnitTestViolations** to true for the rule **AvoidSoqlInLoops** would ignore the violation below:
+For each rule we have provided the parameter **suppressUnitTestViolations**. This stops any violations of this rule being reported in test methods.
+
+There are three options for **suppressUnitTestViolations** in the rule configuration when adding a rule to your custom Quality Profile: **Display**, **Suppress** and **Default**.  **Display** will always throw a violation in test classes, **Suppress** will never throw a violation in test classes. **Default** will be either **Suppress** or **Display** based on if the rule applies to test classes. Default will always be set to **Display** unless shown otherwise.\
+\
+**For example**, setting **suppressUnitTestViolations** to **Suppress** for the rule **AvoidSoqlInLoops** would ignore the violation below:
 
 ```
 @IsTest
@@ -23,6 +26,7 @@ class newClass {
      }
    }
 }
+
 ```
 
 ### Using @SuppressWarnings <a href="#using-suppresswarnings" id="using-suppresswarnings"></a>

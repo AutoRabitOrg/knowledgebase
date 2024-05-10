@@ -10,7 +10,7 @@ The ARM signup and activation process has several steps— some on our end and o
 
 3\. Fill in the registration details, and then click **`Register.`**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="New Registration"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="New Registration"><figcaption></figcaption></figure>
 
 4. Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process, we will send you an email with details on your activation status.&#x20;
 5. When your account is activated, you will get a confirmation sent to your email address.&#x20;

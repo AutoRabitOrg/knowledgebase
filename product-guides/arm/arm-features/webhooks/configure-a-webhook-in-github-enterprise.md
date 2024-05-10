@@ -8,7 +8,7 @@ Follow the instructions below to create a webhook API token from ARM.
 2. Click on the Admin section, then select 'API Token.'
 3. Click on 'Create API Token.'
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the token name.
 2. Select Type as "webhook."
@@ -46,11 +46,11 @@ Webhooks allow external services to be notified when certain events happen. When
    **For example, using instance:** https://login.autorabit.com\
    **Payload URL:** [https://login.autorabit.com/autorabitrest/webhook/\<OrgName>/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/%3COrgName%3E/triggerSCMPushrequest)
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Enter the Secret Key generated in ARM as an API token.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Select **'application/json'** as the content type. The **application/json** content type will deliver the JSON payload directly as the body of the POST request.
 

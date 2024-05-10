@@ -13,7 +13,7 @@
 6. Enter Description if required.
 7. Click on Create Option.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Your New API Token is created
 
@@ -23,14 +23,14 @@
 
 1. Log in to your Bitbucket account and select a Repository in which you want to configure a Webhook.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Click Settings and select [Webhooks](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
 3. Next, enter the URL in the given format: \
    \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request \
    For example, if the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest).
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Now fill in the details and click Save.
 

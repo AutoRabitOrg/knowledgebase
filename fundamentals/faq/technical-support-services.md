@@ -10,7 +10,7 @@ The best way to contact us is to log in and submit a ticket via our support port
 
 You can do so by logging in to your instance and opening a ticket using the following steps.&#x20;
 
-_However, if you are **unable to log in to your instance**, please access our portal at_ [_https://support.autorabit.com/portal/en/home_](https://support.autorabit.com/portal/en/home)_. Here, you can view and search for Knowledge Base articles, access existing support tickets, visit the Learning Hub, and watch product support videos. If you still need further assistance, scroll to the bottom of the_[ _Support Portal_](https://support.autorabit.com/portal/en/home) _page to submit a Help Desk ticket._&#x20;
+_However, if you are **unable to log in to your instance**, please access our portal at_ [_https://support.autorabit.com/portal/en/home_](https://support.autorabit.com/portal/en/home)_. Here, you can view and search for Knowledge Base articles, access existing support tickets, visit the Learning Hub, and watch product support videos. If you still need further assistance, scroll to the bottom of the_ [_Support Portal_](https://support.autorabit.com/portal/en/home) _page to submit a Help Desk ticket._&#x20;
 
 ### ARM Product Support
 

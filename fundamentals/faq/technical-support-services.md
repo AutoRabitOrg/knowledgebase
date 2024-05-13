@@ -65,3 +65,6 @@ _However, if you are **unable to log in to your instance**, please access our po
 * If you need to contact your Customer Success Manager but don’t know how to reach them, you can email csg@autorabit.com.
 * If your questions are sales-related, contact your Account Executive or email sales@autorabit.com. They will help your message get to the right people.&#x20;
 
+## Additional Information
+
+Additional information about our Technical Support Services is available at [https://www.autorabit.com/technical-support-services/](https://www.autorabit.com/technical-support-services/).&#x20;

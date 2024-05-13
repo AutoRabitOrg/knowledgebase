@@ -20,12 +20,11 @@ _However, if you are **unable to log in to your instance**, please access our po
 
 <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
-4. **Existing Tickets:** On the _Support Portal_ page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
-5. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.
+4. **Existing Tickets:** On the [_Support Portal_](https://support.autorabit.com/portal/en/home) page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
 
 <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+5. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 

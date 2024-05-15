@@ -12,15 +12,18 @@ If you have not requested to reset your password and receive an email asking you
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1.  Anyone can reset their password by clicking the **Forgot Password?** link on the sign-in page.
+1. Anyone can reset their password by clicking the **Forgot Password?** link on the sign-in page.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235014947.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Forgot Password"><figcaption></figcaption></figure>
+
 2. Check your inbox for a password reset email.
-3.  Click on the **URL** provided in the email and enter a new password.
+3. Click on the **URL** provided in the email and enter a new password.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235027097.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt="Reset Password"><figcaption></figcaption></figure>
 
-Password Requirements:New passwords must meet the following criteria:
+### Password Requirements
+
+New passwords must meet the following criteria:
 
 * MUST contain at least 8 characters (10+ recommended)
 * MUST contain at least one uppercase letter (A-Z)

@@ -6,14 +6,14 @@
 2. Click on Admin Section -> API Token.
 3. Click on Create API Token.
 
-<figure><img src="../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the token name.
 5. Select Type as “webhook.”
 6. Enter Description if required.
 7. Click on Create Option.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Your New API Token is created.
 
@@ -25,12 +25,12 @@
 | https://{orgName}/{projectname}/settings/serviceHooks |
 | ----------------------------------------------------- |
 
-<figure><img src="../../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on Create Subscription.
 4. The wizard will start and give a list of all the services for which integration is to be created.
 
-<figure><img src="../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on Next and you will see a list of triggers when an event occurs. Select the event to initiate the trigger on and any filters (if applicable):
 

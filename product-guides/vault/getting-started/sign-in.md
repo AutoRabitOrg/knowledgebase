@@ -10,7 +10,7 @@ This section describes a daily login procedure using the username and password y
 
 2. Next, enter the **username** and **password** associated with your Vault™ account.
 
-**Password Requirements**
+### **Password Requirements**
 
 New passwords must meet the following criteria:
 

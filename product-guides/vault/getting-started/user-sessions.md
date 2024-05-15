@@ -8,9 +8,9 @@ Vault admins can view all user sessions for an org; non-admins see only their ow
 
 In addition to viewing all active sessions, the administrator can terminate any active session. This will automatically log the user out of the Vault. To do this, the administrator has to navigate to the **Profile > Session Information**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656664029986.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656664156920.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 Here the administrator can select any required user session and click on **Logout** to terminate that user’s session. The user will be automatically logged out from the organization as soon as the administrator clicks **Logout**.
 
@@ -37,11 +37,11 @@ The following table contains information about the fields you can view on this p
 4. Under **Activity Search**, mention the Vault activity to fetch the result. For ex- backup, compare, replicate, etc.&#x20;
 5. Click on **Get Details.**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656664224861.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
 ### Export the Activity Log <a href="#export-the-activity-log" id="export-the-activity-log"></a>
 
 1. Click the **Download** button on the Activity Logs page.
-2.  The file will be downloaded to your device in **CSV** file format.
+2. The file will be downloaded to your device in **CSV** file format.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656664266042.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (72).png" alt="" width="407"><figcaption></figcaption></figure>

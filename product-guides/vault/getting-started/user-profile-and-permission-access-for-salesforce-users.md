@@ -11,49 +11,47 @@ Follow the steps below to:
 
 #### Enable API access in Salesforce by Profile <a href="#enable-api-access-in-salesforce-by-profile" id="enable-api-access-in-salesforce-by-profile"></a>
 
-1.  Click the Gear icon and click **Setup**.\
+1. Click the Gear icon and click **Setup**.
 
+<figure><img src="../../../.gitbook/assets/image (73).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-G2JYQA7E.png" alt="" width="563"><figcaption></figcaption></figure>
-2.  Type **profiles** into the Quick Find box and select **Profiles**.\
+2. Type **profiles** into the Quick Find box and select **Profiles**.
 
+<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-ILBCM1A0.png" alt="" width="188"><figcaption></figcaption></figure>
-3.  Click **Edit** against the Profile you wish to enable API access for.\
+3. Click **Edit** against the Profile you wish to enable API access for.
 
+<figure><img src="../../../.gitbook/assets/image (75).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-GWLPM48M.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  Scroll down to **Administrative Permissions** and check the **API Enabled** box and click **Save**.\
+4. Scroll down to **Administrative Permissions** and check the **API Enabled** box and click **Save**.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-2YAMB63Y.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (76).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Enable API Access in Salesforce by Permission Set <a href="#enable-api-access-in-salesforce-by-permission-set" id="enable-api-access-in-salesforce-by-permission-set"></a>
 
 1.  Click the Gear icon and click **Setup**.\
 
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-JTX9P5S2.png" alt="" width="375"><figcaption></figcaption></figure>
-2.  Type **permission** into the Quick Find box and select Permission Sets.\
+    <figure><img src="../../../.gitbook/assets/image (80).png" alt="" width="375"><figcaption></figcaption></figure>
+2. Type **permission** into the Quick Find box and select Permission Sets.
 
+<figure><img src="../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-6EOIRL3C.png" alt=""><figcaption></figcaption></figure>
-3.  Select the Permission Set you wish to enable API access for.\
+3. Select the Permission Set you wish to enable API access for.
 
+<figure><img src="../../../.gitbook/assets/image (82).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VNY690C8.png" alt=""><figcaption></figcaption></figure>
-4.  Scroll down to **System** and click **System Permissions**.\
+4. Scroll down to **System** and click **System Permissions**.
 
+<figure><img src="../../../.gitbook/assets/image (83).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-6P6HS3O9.png" alt=""><figcaption></figcaption></figure>
-5.  Click **Edit**.\
+5. Click **Edit**.
 
+<figure><img src="../../../.gitbook/assets/image (84).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-I0GC105X.png" alt=""><figcaption></figcaption></figure>
-6.  Check the **API Enabled** box and click **Save**.\
+6. Check the **API Enabled** box and click **Save**.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-Y1NA0ARM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (85).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Object and Field Permissions <a href="#object-and-field-permissions" id="object-and-field-permissions"></a>
 
@@ -82,16 +80,15 @@ One of the key tasks of Salesforce administrator is to assign the privileges to 
 
 1. Within Salesforce, click on **Setup** and then click on **Manage Users**.
 2. Under the **Manage Users** tree click on **Profiles**
-3.  Once the Profiles appear on the right, select which Profile you want to edit and click on the **Edit** link next to the corresponding profile.\
+3. Once the Profiles appear on the right, select which Profile you want to edit and click on the **Edit** link next to the corresponding profile.
 
+<figure><img src="../../../.gitbook/assets/image (79).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1SIAIMWV.png" alt=""><figcaption></figcaption></figure>
 4. Scroll down to the section labeled **Custom Object Permissions**
-5.  Specify the object permissions.\
+5. Specify the object permissions.
 
+<figure><img src="../../../.gitbook/assets/image (77).png" alt="" width="261"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-Q6851TM2.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-MLWP4HDS.png)
-
-7. Click **Save**.
+6. Click **Save**.

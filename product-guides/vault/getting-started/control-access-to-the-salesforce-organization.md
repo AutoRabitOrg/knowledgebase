@@ -4,7 +4,7 @@ The org administrator can restrict their users to access only those Salesforce o
 
 The **Enable org. access control** toggle in the **Manage Users** page is switched on by default. This indicates that the admin has the org access control permission and can specify which users have access to which Salesforce org(s) in the Vault account. If the toggle is turned off, all users in the Vault account will have access to all registered orgs.
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-V2GDLGGS.png)
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 #### Enable org. access control is turned 'On' <a href="#enable-org-access-control-is-turned-on" id="enable-org-access-control-is-turned-on"></a>
 

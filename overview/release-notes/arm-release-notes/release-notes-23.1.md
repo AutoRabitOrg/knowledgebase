@@ -90,10 +90,10 @@ This update has implemented significant performance upgrades to enhance the tool
 
 **(ARM 23.1.30)**
 
-1. [#111008](https://support.autorabit.com/agent/autorabit/support/tickets/details/241415000150758001) Code fix applied to Deployments module due to user receiving error message: INVALID\_LOGIN: Invalid username or password or security token or API version or user locked out.
-2. [#110541](https://support.autorabit.com/agent/autorabit/support/tickets/details/241415000150064831) Code fix applied to Version Control module due to user not being able to see the merge request label name in BitBucket after merging. This required a feature flag, MERGE\_STRATEGY\_ENABLE\_NON\_FF, which is not enabled by default and must be enabled.&#x20;
-3. [#110764](https://support.autorabit.com/agent/autorabit/support/tickets/details/241415000150176528) Code fix applied to the Deployments module related to user experiencing Redeploy/Promote hanging if previous deployment used specified tests. This requires a feature flag, AR\_33697\_ENABLE\_APEX\_TEST\_GET\_CALL, which is not enabled by default and must be enabled.
-4. [#110762](https://support.autorabit.com/agent/autorabit/support/tickets/details/241415000150176361) Code fix applied to Deployments module related to email templates of type Visualforce not being added to the package.xml when deploying.
+1. Code fix applied to Deployments module due to user receiving error message: INVALID\_LOGIN: Invalid username or password or security token or API version or user locked out. #111008
+2. Code fix applied to Version Control module due to user not being able to see the merge request label name in BitBucket after merging. This required a feature flag, MERGE\_STRATEGY\_ENABLE\_NON\_FF, which is not enabled by default and must be enabled. #110541
+3. Code fix applied to the Deployments module related to user experiencing Redeploy/Promote hanging if previous deployment used specified tests. This requires a feature flag, AR\_33697\_ENABLE\_APEX\_TEST\_GET\_CALL, which is not enabled by default and must be enabled. #110764
+4. Code fix applied to Deployments module related to email templates of type Visualforce not being added to the package.xml when deploying. #110762
 5. Internal - Code fix applied to Version Control module due to DX Package Directory Selection lists not being visible when configuration changes from Vlocity SF org and Vlocity repo to DX Repo.
 
 #### 7 May 2024

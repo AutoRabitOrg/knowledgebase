@@ -11,17 +11,17 @@ Once you are done with your development, you need to migrate your code from your
 * **Deploy from Salesforce Org:** Deploys the latest changes made in your source sandbox to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.
 * **Deploy from AutoRABIT Build:** Deploys from AutoRABIT build to your target org.
 * **Deploy from Package.xml:** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as a project manifest. Using this type of control file allows you to initiate a deployment without manually selecting metadata components to be included in the deployment.
-* **Deploy from Metadata Zip:** Upload the zip file and deploy to the [sandbox](https://www.autorabit.com/blog/the-impact-of-automation-in-salesforce-sandbox-management/) using the Metadata Zip facility
+* **Deploy from Metadata Zip:** Upload the zip file and deploy to the [sandbox](https://www.autorabit.com/blog/the-impact-of-automation-in-salesforce-sandbox-management/) using the Metadata Zip facility.
 * **Deploy from Version Control (Full Profiles):** Deploy the latest changes made in your version control repository to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.
 * **Deploy from Single Revision:** Deploy the changes using [version control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) revision.
-* **Deploy from Revision Range:** Deployment based on a range of committed revisions
-* **Deploy from Release label:** Deploy using the Release Labels. A release label is just a group of single revisions combined.
+* **Deploy from Revision Range:** Deployment based on a range of committed revisions.
+* **Deploy from Release label:** Deploy using the Release Labels. A release label is simply a group of single revisions combined.
 * **Deploy from Commit Label:** Deploy the EZ-Commit labels to your target sandbox. The commit label will send the entire file from the latest commit, rather than utilizing a delta approach.
-* **Deploy from Validate & Commit Label:** Deploy using the validate commit labels
-* **Deploy from Previous Deployment Labels:** Redeploy a previously used deployment label to your destination org
-* **Deploy from Unlocked Package:** Deploy using the Salesforce DX unlocked package
-* **Deploy from Tag:** Deploy using the version control GIT tags
-* **Deploy from Vlocity Components:** Deploy the Vlocity components to your target org
+* **Deploy from Validate & Commit Label:** Deploy using the validate commit labels.
+* **Deploy from Previous Deployment Labels:** Redeploy a previously used deployment label to your destination org.
+* **Deploy from Unlocked Package:** Deploy using the Salesforce DX unlocked package.
+* **Deploy from Tag:** Deploy using the version control GIT tags.
+* **Deploy from Vlocity Components:** Deploy the Vlocity components to your target org.
 
 ### Types of Deployment <a href="#types-of-deployment" id="types-of-deployment"></a>
 

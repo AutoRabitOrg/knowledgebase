@@ -504,6 +504,7 @@
       * [Error: "Failed to initiate deployment. Unexpected end of JSON input."](product-guides/arm/troubleshoot/common-errors-and-resolutions/error-failed-to-initiate-deployment.-unexpected-end-of-json-input..md)
       * [Error: "Your Connection is Private"](product-guides/arm/troubleshoot/common-errors-and-resolutions/error-your-connection-is-private.md)
       * [Error: "Not Authorized to Merge"](product-guides/arm/troubleshoot/common-errors-and-resolutions/error-not-authorized-to-merge.md)
+      * [Error: GIT Push remote update Result: pre-receive hook declined](product-guides/arm/troubleshoot/common-errors-and-resolutions/error-git-push-remote-update-result-pre-receive-hook-declined.md)
 * [CodeScan](product-guides/codescan/README.md)
   * [CodeScan Release Notes](overview/release-notes/codescan-release-notes/README.md)
   * [CodeScan Overview](product-guides/codescan/codescan-overview.md)

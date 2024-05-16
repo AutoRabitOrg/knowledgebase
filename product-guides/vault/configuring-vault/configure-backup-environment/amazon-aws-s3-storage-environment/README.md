@@ -7,11 +7,12 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 1. Log in to the AWS Console at [https://aws.amazon.com/console/](https://aws.amazon.com/console/)
 2. From the storage service, click on **S3**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235583015.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
-3.  Click on **Create Bucket**. The **Create bucket** page opens.&#x20;
+3. Click on **Create Bucket**. The **Create bucket** page opens.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235593679.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+
 4. Enter the **Bucket name**.The Bucket name must:
    * Should be unique across the globe
    * Be between 3 and 63 characters long.
@@ -20,18 +21,18 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 5. In **Region**, choose the AWS Region where you want the bucket to reside (keep a note of the AWS region chosen by you. _For ex- us-east-2_). This will come in handy when you configure the bucket in Vault.
 6. Choose **Create bucket**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235608993.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (89).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. Once you're done creating the bucket, go to the **Properties** tab.
 8. Click on **Default Encryption** and choose the second option i.e., **AES-256**.
 9. Click on the **Save** button.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235620241.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (90).png" alt="" width="422"><figcaption></figcaption></figure>
 
 10. Next, search for **IAM** from the **AWS Management console** homepage.
 11. Click on **Policies > Create policy**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235629842.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 12. Switch to the **JSON** tab and paste the below text by replacing '**bucket\_name'** with the name of the bucket that was created in previous steps.
 
@@ -68,22 +69,23 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 }
 ```
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235652798.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (92).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. Click on **Review policy** and provide a name to the policy.
 14. Click on **Create policy**.
 15. After the policy is created, go to the **Users** tab, and click on **Add user**.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235679656.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (93).png" alt="" width="512"><figcaption></figcaption></figure>
+
 16. Enter an IAM username specific for Vault integration.&#x20;
 17. Select the **AWS access type** as **Programmatic access.**
 18. Click on **Next: Permissions** to go to the next page.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235688422.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (94).png" alt="" width="563"><figcaption></figcaption></figure>
 
 19. Click on **Attach existing policies directly.**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235705771.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (95).png" alt="" width="563"><figcaption></figcaption></figure>
 
 20. Search for the policy created in _Steps 10-14._&#x20;
 21. Select the policy and click on **Next: Tags.**&#x20;
@@ -102,7 +104,7 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 8. Enable the checkbox: **AES-256 Encryption**
 9. Click on **Save Settings**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623235724406.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

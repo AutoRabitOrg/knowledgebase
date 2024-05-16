@@ -30,8 +30,10 @@ Amazon's authentication system is incredibly flexible. That is, in addition to s
 1. Once you logged into your Vault account, go to **Settings > Backup Environment**.
 2. Select **AWS S3** as your **Storage Type**.
 3. Provide a **label** of your choice (Need not be the same as your S3 Bucket name).
-4. Select the **Role-based control for dedicated/On-Prem Instance** checkbox.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-JMFDZSYU.png)
+4. Select the **Role-based control for dedicated/On-Prem Instance** checkbox.
+
+<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="" width="377"><figcaption></figcaption></figure>
+
 5. You will need to enter the name of your s3 bucket in the **Bucket Name** field.
 6. Choose the default encryption method i.e., **AES-256** or **AWS-KMS**.
 7. Click **Save Settings**.

@@ -7,8 +7,8 @@ SAN provides server access to data stored at the block level, so that storage de
 For configuring to SAN environment, you need to fill in two important fields:
 
 1. &#x20;Enter a **label** of your choice, and
-2.  Enter the **SAN path**. Each path is defined and identified by these two endpoints: the host server on one end and the storage volume or share on the other.
+2. Enter the **SAN path**. Each path is defined and identified by these two endpoints: the host server on one end and the storage volume or share on the other.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623317600929.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 Once the environment is successfully configured, you can start using [Vault](https://www.autorabit.com/products/vault-data-backup-recovery/) anywhere, anytime.

@@ -15,9 +15,10 @@ To use Azure Blob as your storage environment to backup your metadata and data o
    * The number of path segments comprising the blob name cannot exceed 254. A path segment is a string between consecutive delimiter characters (e.g., the forward slash '/') that corresponds to the name of a virtual directory.&#x20;
    * Avoid blob names that end with a dot (.), a forward slash (/), or a sequence or combination of the two. No path segments should end with a dot (.).
 4. Enter your Azure storage **Account Name**. To create a new storage account, do refer to the following article: [Create Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json\&tabs=azure-portal)
-5.  Next, enter the **Access Key** for the above-selected storage account. For every storage account, you get two keys - **primary** and **secondary**. Specify either. You have two so you can give one out to someone (such as giving the secondary key to a 3rd-party monitoring company) and revoke it by changing the key, without impacting you (assuming you're using the primary key for yourself).
+5. Next, enter the **Access Key** for the above-selected storage account. For every storage account, you get two keys - **primary** and **secondary**. Specify either. You have two so you can give one out to someone (such as giving the secondary key to a 3rd-party monitoring company) and revoke it by changing the key, without impacting you (assuming you're using the primary key for yourself).
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623317209489.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (118).png" alt="" width="563"><figcaption></figcaption></figure>
+
 6. Click on **Save Settings**.
 
 ### Vault Hosted Backup Environment <a href="#vault-hosted-backup-environment" id="vault-hosted-backup-environment"></a>

@@ -29,8 +29,9 @@ Workflow rules is basically a container or business logic engine which automates
 
 > **For example:** If it’s raining, then wear a raincoat.
 
-Below is the basic structure of a workflow rule in Salesforce:\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VGIOS0M2.png)
+Below is the basic structure of a workflow rule in Salesforce:
+
+<figure><img src="../../../.gitbook/assets/image (138).png" alt="" width="393"><figcaption></figcaption></figure>
 
 #### Workflows Components <a href="#workflows-components" id="workflows-components"></a>
 

@@ -95,6 +95,7 @@ This update has implemented significant performance upgrades to enhance the tool
 3. Code fix applied to the Deployments module related to user experiencing Redeploy/Promote hanging if previous deployment used specified tests. This requires a feature flag, AR\_33697\_ENABLE\_APEX\_TEST\_GET\_CALL, which is not enabled by default and must be enabled. #110764
 4. Code fix applied to Deployments module related to email templates of type Visualforce not being added to the package.xml when deploying. #110762
 5. Internal - Code fix applied to Version Control module due to DX Package Directory Selection lists not being visible when configuration changes from Vlocity SF org and Vlocity repo to DX Repo.
+6. Code fix applied to Version Control module related to an auto-rejected merge label being pushed to a remote repo. #112244
 
 #### 7 May 2024
 

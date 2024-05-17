@@ -22,12 +22,12 @@ To enable SSO for Vault, you need to perform the below steps:
       * **Metadata File:** Upload the metadata file obtained from your identity provider.
 5. Click **Save**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623322142708.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
 ### How to log in when SSO is enabled <a href="#how-to-log-in-when-sso-is-enabled" id="how-to-log-in-when-sso-is-enabled"></a>
 
 When SSO is enabled, you can sign in by going to the Vault log-in page, click on **Login with SSO**, and providing your custom domain.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623322161672.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 \

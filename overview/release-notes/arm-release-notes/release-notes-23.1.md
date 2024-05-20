@@ -86,6 +86,17 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 22 May 2024
+
+**(ARM 23.1.31)**
+
+1. A code fix was applied to the Version Control module due to a use-case error related to EZ-Commits and EZ-Merges not taking the master branch, even when Baseline Branch "master" is selected. #107151
+2. A code fix was applied to the Version Control module due to a use-case error in which reverting a commit failed. #112094
+3. A code fix was applied to the Version Control module due to a use-case error related to the system failing to select multiple reports. #112381, #112812
+4. A code fix was applied to the Deployment module due to a data error in which the org sync was not completing. #111545
+5. A code fix was applied to the Deployment module due to a data error in which there was a problem in component selection during deployment. #111892&#x20;
+6. A code fix was applied to the Deployment module due to a data error in which the selected items tab was now showing the selected components, as well as the search filter not always being visible. #112095
+
 #### 15 May 2024
 
 **(ARM 23.1.30)**

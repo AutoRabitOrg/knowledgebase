@@ -6,7 +6,7 @@ This section describes a daily login procedure using the username and password y
 
 1. Navigate to the Vault™ sign-in page. **For example,** [https://na101.autorabit.com](https://na101.autorabit.com/)
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Vault Sign In Page"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (126).png" alt="Vault Sign In Page"><figcaption></figcaption></figure>
 
 2. Next, enter the **username** and **password** associated with your Vault™ account.
 

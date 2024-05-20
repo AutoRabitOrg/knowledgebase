@@ -9,7 +9,7 @@ Follow the steps below to Sign Up and Log In to CodeScan Cloud:
 1.  To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/).\
 
 
-    <figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
 2.  By default, the instance URL is presumed to be from the **United States (US)**, and the URL would look something like [**`https://app.codescan.io/sessions/new?return to=/%2F`**](https://app.codescan.io/sessions/new?returnto=/%2F).
 
     Important Note:
@@ -19,7 +19,7 @@ Follow the steps below to Sign Up and Log In to CodeScan Cloud:
     Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/sessions/new?return to=/%2F**](https://app-eu.codescan.io/sessions/new?returnto=/%2F).
 3. Click on **`Log in with AuthO`**.
 4. Go to the **`Sign Up`** tab.\
-   ![](<../../../.gitbook/assets/image (64).png>)
+   ![](<../../../.gitbook/assets/image (64) (1).png>)
 5. On the next screen, enter the following details to sign up for CodeScan:\
    a. **`Email address`**: Enter a valid email address.\
    b. **`Password`**: Enter your password.\

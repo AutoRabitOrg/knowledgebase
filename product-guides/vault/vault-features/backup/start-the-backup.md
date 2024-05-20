@@ -28,28 +28,28 @@ Vault suits the Salesforce environment and is built for our customers to protect
    * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664800899389.png" alt="" data-size="line">) icon under the **`Actions`** tab.
 4. To initiate a new backup, click on **`Backup Now`**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1673764758565.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 5. On the next screen:
-   1. Enter the **`label`** of your choice or leave the auto-generated default label.
-   2. You'll be prompted to select your backup **configuration** again.
-   3. Select the **`Backup type`** for both metadata and data members. Vault recommends using the **Full-Backup** for metadata/data when performing a backup for the first time.
-      * **`Full-Backup`**: Full backup is a method of backup in which all the files and folders selected are backed up.
-        * **`Incremental-Backup`**: An incremental backup operation will copy only the data/metadata that has been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the previous backup.
+   * Enter the **`label`** of your choice or leave the auto-generated default label.
+   * You'll be prompted to select your backup **configuration** again.
+   * Select the **`Backup type`** for both metadata and data members. Vault recommends using the **Full-Backup** for metadata/data when performing a backup for the first time.
+     1. **`Full-Backup`**: Full backup is a method of backup in which all the files and folders selected are backed up.
+     2. **`Incremental-Backup`**: An incremental backup operation will copy only the data/metadata that has been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the previous backup.
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1673764818499.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="491"><figcaption></figcaption></figure>
 
 8. You'll be taken to the **`Backup Summary`** screen to display the status of the recently triggered backup activity.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1673764904098.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Backup Summary  <a href="#backup-summary" id="backup-summary"></a>
 
 For each backup performed inside Vault, you will find the details below on the **`Backup Summary`** screen.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1673765571945.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

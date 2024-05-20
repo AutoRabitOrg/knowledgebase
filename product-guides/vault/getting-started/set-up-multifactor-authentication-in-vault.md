@@ -18,7 +18,7 @@ Point to Note:
 1. In the **Vault** application, go to **`Manage Users > Users`**.
 2. Enable multi-factor authentication (MFA) for every member in the account using the **`MFA toggle`** button located in the header or, look for the user from the list and enable the MFA by sliding the **`MFA toggle`** button to the right side.
 
-<figure><img src="../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Reset MFA <a href="#reset-mfa" id="reset-mfa"></a>
 
@@ -27,6 +27,6 @@ You can reach out to your administrator to reset your MFA, if you have lost your
 1. The administrator will reset MFA from the **`Manage Users > Users`** screen.
 2. Click on the **`Reset`** icon (next to where the MFA toggle button is displayed).
 
-<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. This will enable the user to register his device again with a new bar code on the authenticator app when he tries to log in.

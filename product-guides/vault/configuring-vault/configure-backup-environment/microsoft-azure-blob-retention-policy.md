@@ -9,7 +9,7 @@ Azure Blob retention policy management using WebAPI needs the below details to s
 3. **Client secret**
 4. **Access Token**
 
-<figure><img src="../../../../.gitbook/assets/image (119).png" alt="" width="551"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (119) (1).png" alt="" width="551"><figcaption></figcaption></figure>
 
 ### **What is Tenant and how to get a Tenant ID in Azure?** <a href="#what-is-tenant-and-how-to-get-a-tenant-id-in-azure" id="what-is-tenant-and-how-to-get-a-tenant-id-in-azure"></a>
 
@@ -17,26 +17,26 @@ Tenant represents your organization and helps you to manage a specific instance 
 
 Log in to the Azure portal and navigate to Azure Active Directory and choose the properties on the left side pane. On the right side pane, you will get your account-related information along with a field named **Directory ID**. Under that field, you will have a text box with an alphanumeric value that can be copied from the text box. This is your Tenant ID.  In this case, the **Tenant ID** is the **Directory ID**.
 
-<figure><img src="../../../../.gitbook/assets/image (120).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (120) (1).png" alt="" width="452"><figcaption></figcaption></figure>
 
 If you are doing a new setup and do not have any existing tenant, then follow the below steps to create a new tenant:
 
 1. Login to Azure portal
 2. Select **Create a resource** from the portal.
 
-<figure><img src="../../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (121) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Search & choose **Azure Active Directory.**
 
-<figure><img src="../../../../.gitbook/assets/image (122).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (122) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Create a directory by providing a name.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (123).png" alt="" width="227"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (123) (1).png" alt="" width="227"><figcaption></figcaption></figure>
 
 5. A **Tenant ID** is automatically created.
 
-<figure><img src="../../../../.gitbook/assets/image (124).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (124) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### **What is client ID and how to create it?** <a href="#what-is-client-id-and-how-to-create-it" id="what-is-client-id-and-how-to-create-it"></a>
 
@@ -46,11 +46,11 @@ Client ID is nothing but Application ID that uses to associate our application w
 
 1. Go to your directory and choose **App registrations** on the left pane and select **New registration** in the right pane.
 
-<figure><img src="../../../../.gitbook/assets/image (125).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (125) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. Register an application by choosing the **single-tenant** option.
 
-<figure><img src="../../../../.gitbook/assets/image (126).png" alt="" width="544"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (126) (1).png" alt="" width="544"><figcaption></figcaption></figure>
 
 3. Click **Register**.&#x20;
 4. Once the app is registered, choose **Authentication** on the left side pane and feed in-app type as a web app and configure the details in the right pane.

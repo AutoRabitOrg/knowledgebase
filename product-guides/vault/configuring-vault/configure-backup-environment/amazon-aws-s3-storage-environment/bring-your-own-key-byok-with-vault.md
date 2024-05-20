@@ -27,7 +27,7 @@ To bring your own key, you must first create an AWS KMS customer master key (CMK
 8. Select the **AR Vault hosted backup environment** checkbox.
 9. Click **Save** **Settings**.
 
-<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (97) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

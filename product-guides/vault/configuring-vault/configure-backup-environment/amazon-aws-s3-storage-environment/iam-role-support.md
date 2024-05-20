@@ -32,7 +32,7 @@ Amazon's authentication system is incredibly flexible. That is, in addition to s
 3. Provide a **label** of your choice (Need not be the same as your S3 Bucket name).
 4. Select the **Role-based control for dedicated/On-Prem Instance** checkbox.
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt="" width="377"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (99) (1).png" alt="" width="377"><figcaption></figcaption></figure>
 
 5. You will need to enter the name of your s3 bucket in the **Bucket Name** field.
 6. Choose the default encryption method i.e., **AES-256** or **AWS-KMS**.

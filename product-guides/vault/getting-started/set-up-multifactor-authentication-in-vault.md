@@ -10,10 +10,12 @@ As an administrator of your account, you can enable multi-factor authentication 
 
 Enabling MFA in your account at a global level affects all members of the account. This means that the users must enroll for MFA at their next login.
 
-Point to Note:
+{% hint style="info" %}
+**Point to Note:**
 
 * Enabling MFA does not affect users already logged in, as the enforcement of MFA on the account takes effect only at new logins.
 * Enabling MFA will mandate users to register their mobile devices for generating and validating tokens using authenticator apps like Google Authenticator or Salesforce Authenticator app.
+{% endhint %}
 
 1. In the **Vault** application, go to **`Manage Users > Users`**.
 2. Enable multi-factor authentication (MFA) for every member in the account using the **`MFA toggle`** button located in the header or, look for the user from the list and enable the MFA by sliding the **`MFA toggle`** button to the right side.

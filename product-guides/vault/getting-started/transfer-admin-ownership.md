@@ -2,9 +2,9 @@
 
 If you are the current Administrator user of your Vault account and want to transfer your permission to another user, then you'll need to send an email to [support@autorabit.com](https://mailto:%3Asupport@autorabit.com/) with the following pieces of information:
 
-* Customer ID and the email address of the current Administrator
-* Email address of the new Administrator
-* Does the current Administrator wish to deactivate his user account?
+1. Customer ID and the email address of the current Administrator
+2. Email address of the new Administrator
+3. Does the current Administrator wish to deactivate his user account?
 
 Note:
 

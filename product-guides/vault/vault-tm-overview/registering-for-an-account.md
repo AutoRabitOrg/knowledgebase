@@ -16,10 +16,10 @@ When creating a [Vault™](https://www.autorabit.com/products/vault-data-backup-
 
 1. Navigate to Vault's signup page and click on the **Sign Up** button.
 2. On the next screen, enter the following details to retrieve your username and generate a password:
-   1. **First and Last name:** The name associated with your account profile
-   2. **Email:** The email address where we'll contact you. Make sure it is an email address you can access.&#x20;
-   3. **Organization:** The name of your company or organization.
-   4. **Description:** Additional details about your profile that help us provide relevant content and guidance.
+   * **First and Last name:** The name associated with your account profile.
+   * **Email:** The email address where we'll contact you. Make sure it is an email address you can access.&#x20;
+   * **Organization:** The name of your company or organization.
+   * **Description:** Additional details about your profile that help us provide relevant content and guidance.
 3. Click **Register**.
 4. You’ll see a confirmation message. We automatically review your entire field to confirm that it complies with our policies and set up the rest of your account. When we've completed this process, we send you an email with details on your activation status.
 5. Check your inbox for the account activation email to complete your account setup and create a password for your account.

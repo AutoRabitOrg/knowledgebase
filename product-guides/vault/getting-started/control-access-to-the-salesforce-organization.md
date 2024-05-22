@@ -8,12 +8,12 @@ The **Enable org. access control** toggle in the **Manage Users** page is switch
 
 #### Enable org. access control is turned 'On' <a href="#enable-org-access-control-is-turned-on" id="enable-org-access-control-is-turned-on"></a>
 
-* On the **Add User** screen, the **Salesforce Orgs** field is enabled; the org admin must select Salesforce orgs when registering a new user with the Vault account.
-* Users will have access to the Salesforce orgs that the org admin has enabled.
-* Users can only perform Vault operations in Salesforce orgs to which they have been granted access.
+1. On the **Add User** screen, the **Salesforce Orgs** field is enabled; the org admin must select Salesforce orgs when registering a new user with the Vault account.
+2. Users will have access to the Salesforce orgs that the org admin has enabled.
+3. Users can only perform Vault operations in Salesforce orgs to which they have been granted access.
 
 #### Enable org. access control is turned 'Off' <a href="#enable-org-access-control-is-turned-off" id="enable-org-access-control-is-turned-off"></a>
 
-* All users in the Vault account will have access to all registered Salesforce orgs.
-* User will have privilege to choose orgs whether or not registered by him to carry out the Vault operation.
-* The **Salesforce Orgs List** shows all of the registered orgs that have been added to the Vault account to date.
+1. All users in the Vault account will have access to all registered Salesforce orgs.
+2. User will have privilege to choose orgs whether or not registered by him to carry out the Vault operation.
+3. The **Salesforce Orgs List** shows all of the registered orgs that have been added to the Vault account to date.

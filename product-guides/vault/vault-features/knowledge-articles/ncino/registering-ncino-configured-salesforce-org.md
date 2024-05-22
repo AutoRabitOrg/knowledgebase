@@ -7,23 +7,23 @@ By default, [Vault](https://www.autorabit.com/products/vault-data-backup-recover
 To register a [Salesforce org](https://knowledgebase.autorabit.com/vault/docs/registering-salesforce-org) configured with nCino objects, follow the steps below in order:
 
 1. Log in to **Vault** using your credentials.
-2.  Visit **Setup > Register New Org** from the Vault homepage.
+2. Visit **Setup > Register New Org** from the Vault homepage.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623318078180.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+
 3. Select [**nCino**](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) as **Environment**.
 4. Select your [**Salesforce Org**](https://knowledgebase.autorabit.com/vault/docs/backup-configuration-for-your-salesforce-org) **type,** e.g., Production Org, Sandbox, QA Org, etc. You can add your custom org by adding your custom URL.
 5.  Next, choose an Authentication Type to register the org. Usually, there are two ways to authenticate your Salesforce Org: **OAuth** or **Standard** (username/password).
 
-    *   **OAuth Authentication**: In OAuth authentication, enter the desired name for the Org in the **Org Title** field and the **Salesforce username**. On clicking **‘Authenticate,’** the page will redirect you to the Salesforce login screen, where you can enter your authentication details. Upon successful authentication, you will be redirected back to the Vault page.
+    * **OAuth Authentication**: In OAuth authentication, enter the desired name for the Org in the **Org Title** field and the **Salesforce username**. On clicking **‘Authenticate,’** the page will redirect you to the Salesforce login screen, where you can enter your authentication details. Upon successful authentication, you will be redirected back to the Vault page.
 
-        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623318099012.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
-        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632306453216.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
+
     * **Standard Authentication**: In Standard authentication, the desired Salesforce Cloud environment, your username, password, and security token of the Salesforce are entered, and Vault authenticates the connection. To verify that Vault can connect to the target Salesforce organization when using the credentials of the target Salesforce user, click on **Test Connection**.
 
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623318138571.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
 6. Finally, click on **Save** to complete the authentication process.
 
 ### What's Next? <a href="#whats-next" id="whats-next"></a>

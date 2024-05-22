@@ -92,7 +92,7 @@ Please reach out to your respective Customer Success Manager or Account Executiv
 5. The solution supports only the customers configured with AWS S3 as a storage option in Vault.
 6. There is a max limit of 5GB of archived data per customer supported for connecting to Salesforce external data source as part of the beta program. This can be extended to a higher limit by raising a request with [support@autorabit.com](http://support@autorabit.com/).
 
-For details on how to configure Vault Connect, please click here to access our [**Vault documentation**](../../product-guides/vault/vault-features/vault-connect/vault-connect-user-guide.md).
+For details on how to configure Vault Connect, please click here to access our [**Vault documentation**](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/vault-connect).
 
 ## Vault 23.1 Release Notes <a href="#vault-231" id="vault-231"></a>
 

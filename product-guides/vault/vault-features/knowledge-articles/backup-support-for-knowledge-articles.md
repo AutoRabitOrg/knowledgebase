@@ -21,13 +21,13 @@ During the backup process, these articles are saved under their respective Artic
 9. Uncheck the **Object Label Name** field to clear all objects selection.
 10. Search for **knowledge** in the **Quick find** box, and select the **Knowledge** object.
 11. Click **Next** to proceed to the final screen. On this screen, you need to:
-    1. Provide a **name** for the backup configuration and add a brief **description**.
-    2. Select the Backup type as **"None"** for _Metadata_ and choose between **"Full Backup"** or **"Incremental Backup"** for _Data_. The incremental backup option will copy only the data that has changed since the last backup operation.
-    3. To optimize data loading or delete extensive records asynchronously through parallel processing, enable the **bulk API** feature for your data objects. Click on the **Gear** icon next to the **Backup Type** field and turn on the **"Enable Bulk API"** option.
-    4. Keep the **"Allow multiple backups to run in parallel"** toggle set to **Yes**.
-    5. Choose the **frequency** of the backup: daily, weekly, monthly, or a specific interval.
-    6. Specify the period for retaining the backed-up data using the **Backup Retention period** field.
-    7. Click **Save Config**.
+    * Provide a **name** for the backup configuration and add a brief **description**.
+    * Select the Backup type as **"None"** for _Metadata_ and choose between **"Full Backup"** or **"Incremental Backup"** for _Data_. The incremental backup option will copy only the data that has changed since the last backup operation.
+    * To optimize data loading or delete extensive records asynchronously through parallel processing, enable the **bulk API** feature for your data objects. Click on the **Gear** icon next to the **Backup Type** field and turn on the **"Enable Bulk API"** option.
+    * Keep the **"Allow multiple backups to run in parallel"** toggle set to **Yes**.
+    * Choose the **frequency** of the backup: daily, weekly, monthly, or a specific interval.
+    * Specify the period for retaining the backed-up data using the **Backup Retention period** field.
+    * Click **Save Config**.
 12. Next, go to the **Backup** module and select your **Salesforce org** configured with Knowledge Articles Versioning (KAV) objects. Click on **Backup Now.**
 13. Choose the backup configuration you created earlier from the dropdown, if it's not already auto-selected. Click **Backup**.
 14. You will be redirected back to the **Backup Summary** screen, which displays the status of the recently triggered backup.

@@ -7,13 +7,13 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
 3. On the **Compare** screen, select the desired **Salesforce org** and the **Configurations** of your choice and click on **GET DETAILS**.&#x20;
 4. The list of backups performed to date will display. **Hierarchica**l and **archival backups** are not supported for **Compare** functionality.
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Next,
 
 * Select **one backup** from the list to compare the backup data with live data from Salesforce org or,
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select **two backup activities** to compare them and show the metadata and data difference results.
 

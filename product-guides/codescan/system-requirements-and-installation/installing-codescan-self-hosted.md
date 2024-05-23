@@ -36,8 +36,13 @@ Provide the following information in the email:\
 
 You must have a SonarQube™ server currently running in your environment. If not, please visit [SonarQube.org](https://www.sonarqube.org/) to download the latest Community version.
 
-At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:\
-![\[CS Self-Hosted pic1.png\] https://www.sonarsource.com/products/sonarqube/downloads/lts/9-9-lts/){target="\_blank"}](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/CS%20Self-Hosted%20pic1\(1\).png)
+At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
+
+<div align="center">
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="362"><figcaption></figcaption></figure>
+
+</div>
 
 <mark style="background-color:blue;">Note: This</mark> [<mark style="background-color:blue;">link</mark>](https://www.sonarsource.com/products/sonarqube/) <mark style="background-color:blue;">will take you to the</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**SonarQube™ 9.9 LTS**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">download.</mark> <mark style="background-color:blue;"></mark>_<mark style="background-color:blue;">**SonarQube™ 10.0 is now supported as well.**</mark>_
 
@@ -49,7 +54,7 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 
 2. You will need to enter your **`License Key`** (to be provided by our Support Team) or a **`Subscription Code`**. For more information on Subscription Codes, click [here](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-subscription-code).
 
-![CS Self-Hosted pic2.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/CS%20Self-Hosted%20pic2.png)
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 3. Accept our [Terms of Service](https://www.codescan.io/tos/self-hosted/) and click on the **`Request Download`** button.
 4. Extract the ZIP file. It contains the **SonarQube™** plugin and an **ant-based tool** enabling you to run an analysis.
@@ -78,14 +83,17 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 ### Standard SonarQube™ Setup <a href="#standard-sonarqube-tm-setup" id="standard-sonarqube-tm-setup"></a>
 
 **Step 1: Log in to the SonarQube™ self-hosted instance at** [**http://localhost:9000/**](https://localhost:9000/).\
-The default System Admin credentials are _**admin/admin**_:\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-TNEKH28M.png)
+The default System Admin credentials are _**admin/admin**_:
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2. Once you've gained access, go to** **`Administrator > Configuration > General Settings`**.
 
 1. Select the **CodeScan tab**.
-2. Enter your **CodeScan License Key** in the designated field.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-27R74NM5.png)
+2. Enter your **CodeScan License Key** in the designated field.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 3. Click **Save**.
 4. You have successfully completed the **CodeScan on-premises integration**. See the instructions below on how to integrate this to ARM.
 
@@ -119,11 +127,11 @@ This initial step is when your **SonarQube™ credentials**, such as your **user
 7. Enter your **SonarQube™ account username**. For password, use the **copied token** mentioned in **Step 1**.
 8. Verify you are using your **SonarQube™ username** instead of the **email address** you use to log in to **SonarQube™**.
 
-![CS Self-Hosted pic3.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/CS%20Self-Hosted%20pic3.png)
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 9. Click **Save**.
 
-![CS Self-Hosted pic4.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/CS%20Self-Hosted%20pic4.png)
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up Your Quality Profiles <a href="#setting-up-your-quality-profiles" id="setting-up-your-quality-profiles"></a>
 
@@ -203,8 +211,4 @@ For more instructions on setting up the **SonarQube™ ant plugin**, see [https:
 
 * Read the tutorials
 * Check the troubleshooting section
-* Contact [Support](https://www.codescan.io/contact/)
-
-***
-
-\
+* Contact [Support](https://www.codescan.io/contact/)\

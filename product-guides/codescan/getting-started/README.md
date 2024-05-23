@@ -6,60 +6,57 @@ The following article demonstrates how to create a new CodeScan cloud account, l
 
 Follow the steps below to Sign Up and Log In to CodeScan Cloud:
 
-1.  To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/).\
+1. To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/).
 
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
-2.  By default, the instance URL is presumed to be from the **United States (US)**, and the URL would look something like [**`https://app.codescan.io/sessions/new?return to=/%2F`**](https://app.codescan.io/sessions/new?returnto=/%2F).
+2. By default, the instance URL is presumed to be from the **United States (US)**, and the URL would look something like [**`https://app.codescan.io/sessions/new?return to=/%2F`**](https://app.codescan.io/sessions/new?returnto=/%2F).
 
-    Important Note:
+**Important Note:** If you are in a region _**other than the US**_, such as _Australia_, change the URL to [**https://app-aus.codescan.io/sessions/new?return to=/%2F**](https://app-aus.codescan.io/sessions/new?returnto=/%2F).\
+Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/sessions/new?return to=/%2F**](https://app-eu.codescan.io/sessions/new?returnto=/%2F).
 
-    If you are in a region _**other than the US**_, such as _Australia_, change the URL to [**https://app-aus.codescan.io/sessions/new?return to=/%2F**](https://app-aus.codescan.io/sessions/new?returnto=/%2F).\
-    \
-    Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/sessions/new?return to=/%2F**](https://app-eu.codescan.io/sessions/new?returnto=/%2F).
 3. Click on **`Log in with AuthO`**.
-4. Go to the **`Sign Up`** tab.\
-   ![](<../../../.gitbook/assets/image (64) (1).png>)
-5. On the next screen, enter the following details to sign up for CodeScan:\
-   a. **`Email address`**: Enter a valid email address.\
-   b. **`Password`**: Enter your password.\
-   c. **`Full name`**: Enter the name associated with your account profile.\
-   d. **`Company name`**: Enter the name of the company or organization.\
-   d. **`Phone number`**: Enter a valid phone number.\
-   e. **`Requires Two-Factor Authentication`**: You can also enable [Two-Factor Authentication](https://knowledgebase.autorabit.com/codescan/docs/codescan-getting-started#twofactor-authentication-mfa2fa) for your login.\
-   f. Read and accept our **terms of service** and **privacy policy** and select the checkbox.
+4. Go to the **`Sign Up`** tab.
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="279"><figcaption></figcaption></figure>
+
+5. On the next screen, enter the following details to sign up for CodeScan:
+   * **`Email address`**: Enter a valid email address.
+   * **`Password`**: Enter your password.
+   * **`Full name`**: Enter the name associated with your account profile.
+   * **`Company name`**: Enter the name of the company or organization.
+   * **`Phone number`**: Enter a valid phone number.
+   * **`Requires Two-Factor Authentication`**: You can also enable [Two-Factor Authentication](https://knowledgebase.autorabit.com/codescan/docs/codescan-getting-started#twofactor-authentication-mfa2fa) for your login.
+   * Read and accept our **terms of service** and **privacy policy** and select the checkbox.
 6. Click on **`Sign Up`** button.
 
 **And you're in! Enjoy!**
 
-Note
-
-When enabling **Two-Factor Authentication** you will be required to download the **Auth0 Guardian** app to your mobile device. You will be prompted for this when you first log in. You cannot make changes to your two-factor authentication after sign up. Please contact [support@codescan.io](https://support@codescan.io/) to make changes to your two-factor authentication.
+**Note:** When enabling **Two-Factor Authentication** you will be required to download the **Auth0 Guardian** app to your mobile device. You will be prompted for this when you first log in. You cannot make changes to your two-factor authentication after sign up. Please contact [support@codescan.io](https://support@codescan.io/) to make changes to your two-factor authentication.
 
 ### Two-Factor Authentication (MFA/2FA) <a href="#twofactor-authentication-mfa2fa" id="twofactor-authentication-mfa2fa"></a>
 
 CodeScan offers 2FA to further support account privacy and security. This document helps you understand how to set up and work with 2FA.
 
-Note
+**Note:** Be sure to save the token generated at signup, as it allows you to reset the 2FA if you have trouble logging in or getting push notifications.
 
-Be sure to save the token generated at signup, as it allows you to reset the 2FA if you have trouble logging in or getting push notifications.
+1. When you [sign up to CodeScan cloud](https://knowledgebase.autorabit.com/codescan/docs/codescan-getting-started#signing-up-with-codescan), you can enable two-factor authentication by selecting the **`Require Two-Factor Authentication`** checkbox.
 
-1.  When you [sign up to CodeScan cloud](https://knowledgebase.autorabit.com/codescan/docs/codescan-getting-started#signing-up-with-codescan), you can enable two-factor authentication by selecting the **`Require Two-Factor Authentication`** checkbox.\
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-AEHB8K8T.png" alt=""><figcaption></figcaption></figure>
 2. Fill in all the details and click on **`Sign Up`** button.
 3. Download the authenticator app on your mobile phone. Once you have downloaded the app, select **`I’ve already downloaded it`** to continue.
-4.  Next, you will be prompted to scan the **QR code** with your Guardian (authenticator) app.\
-    a. A **token** is generated and available on the screen for you to **copy** and **save**.\
+4.  Next, you will be prompted to scan the **QR code** with your Guardian (authenticator) app.
+
+    * A **token** is generated and available on the screen for you to **copy** and **save**.
+
+    <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+    * Click the **checkbox** next to **`I have safely recorded this code`** to confirm you have recorded it and continue.
 
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-0P79448X.png" alt=""><figcaption></figcaption></figure>
 
-b. Click the **checkbox** next to **`I have safely recorded this code`** to confirm you have recorded it and continue.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-0ICC6S9E.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 **And you have set your 2FA!!**
 
@@ -69,34 +66,31 @@ The CodeScan login screen allows you to log in to your instance.
 
 1. Navigate your **web browser** to your instance's URL, for example, [https://app.codescan.io/](https://app.codescan.io/) for **US** region, [https://app-eu.codescan.io/](https://app-eu.codescan.io/) for **EU** region or [https://app-aus.codescan.io/](https://app-aus.codescan.io/) for **AUS** region.
 2. The CodeScan login screen appears.
-3.  You can **`Login with AuthO`** or **`Log in with SAML2`** if enabled or you can click on **`More options`** to enter your login credentials (_username_ and _password_).\
+3. You can **`Login with AuthO`** or **`Log in with SAML2`** if enabled or you can click on **`More options`** to enter your login credentials (_username_ and _password_).
 
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-8AVODN2K.png" alt=""><figcaption></figcaption></figure>
-4.  Click on **`Log in`**.
+4. Click on **`Log in`**.
 
-    Note:
+**Note:** If you do not know your instance's URL or login credentials, please contact your system administrator for assistance.
 
-    If you do not know your instance's URL or login credentials, please contact your system administrator for assistance.
-5.  The CodeScan welcome screen appear.\
+5. The CodeScan welcome screen appear.
 
+<figure><img src="../../../.gitbook/assets/image (14).png" alt="" width="543"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-4INTVKYW.png" alt=""><figcaption></figcaption></figure>
-6.  If you choose **`Application Security Testing`**, you will be taken to the **Projects** page, which will be your default homepage. As a result, the next time you log in to CodeScan, you will be instantly directed to the **Projects** page because it is set as the default page.
+6. If you choose **`Application Security Testing`**, you will be taken to the **Projects** page, which will be your default homepage. As a result, the next time you log in to CodeScan, you will be instantly directed to the **Projects** page because it is set as the default page.
+7. Similarly, if you choose **`Policy Management`**, the **Policy Results** screen will be set as your default homepage.
+8. The **`Policy Results`** page is also accessible via the **`More`** menu.
 
-    Similarly, if you choose **`Policy Management`**, the **Policy Results** screen will be set as your default homepage.
-
-    The **`Policy Results`** page is also accessible via the **`More`** menu.\
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-IFDNW85G.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ### Getting Started with CodeScan Cloud <a href="#getting-started-with-codescan-cloud" id="getting-started-with-codescan-cloud"></a>
 
-There are three steps to get CodeScan Cloud working for you.\
-**1. Defining Your Standards**\
-**2. Achieving Visibility**\
-**3. Enforcing Your Standards**
+There are three steps to get CodeScan Cloud working for you.&#x20;
+
+1. Defining Your Standards&#x20;
+2. Achieving Visibility&#x20;
+3. Enforcing Your Standards
 
 The following sections will include links to articles to help you set up CodeScan through these three steps.
 
@@ -122,4 +116,4 @@ Our support team is always happy to help if you get stuck! You can reach us at [
 
 **Enjoy cleaner code!**
 
-**-CodeScan Team**
+**\~ CodeScan Team**

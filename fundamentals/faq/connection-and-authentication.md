@@ -1,6 +1,6 @@
 # Connection & Authentication
 
-#### Register GitHUB repositories with two-factor authentication <a href="#register-github-repositories-with-twofactor-authentication" id="register-github-repositories-with-twofactor-authentication"></a>
+#### Register GitHub repositories with two-factor authentication <a href="#register-github-repositories-with-twofactor-authentication" id="register-github-repositories-with-twofactor-authentication"></a>
 
 To use two-factor authentication in GitHub, you need to create a personal access token first.
 
@@ -13,9 +13,7 @@ To use two-factor authentication in GitHub, you need to create a personal access
    * Run the following command to list the ciphers: **- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
    * Edit the file **- /etc/ssh/sshd\_config** and add what all strong ciphers you want to have or place in this file as shown in the example below- **Ciphers aes128-ctr,aes192-ctr,aes256-ctr**
    * Now, restart your sshd service using the command:  **service sshd restart**
-2. **Long-term solution:** Enable the **TLS 1.3** protocol.\
-   \
-
+2. **Long-term solution:** Enable the **TLS 1.3** protocol.
 
 #### Why does AutoRABIT need to install GDM (Gnome Desktop Manager) on the virtual machine of the client? <a href="#why-does-autorabit-need-to-install-gdm-gnome-desktop-manager-on-the-virtual-machine-of-the-client" id="why-does-autorabit-need-to-install-gdm-gnome-desktop-manager-on-the-virtual-machine-of-the-client"></a>
 
@@ -34,9 +32,7 @@ Follow the below steps to generate a new API token for JIRA:
 2. Click on **Create API Token** and provide the label name and click on **Create**.
 3. Once the token got created, you will be able to see the **Your new API token** popup, click on the **Copy to Clipboard**.
 4. Use the copied token as a password for creating/updating the credential in AutoRABIT.
-5. Once updated please use the same credential to authenticate the JIRA.\
-   \
-
+5. Once updated please use the same credential to authenticate the JIRA.
 
 #### How can I add a repository to AutoRABIT if one already exists? <a href="#how-can-i-add-a-repository-to-autorabit-if-one-already-exists" id="how-can-i-add-a-repository-to-autorabit-if-one-already-exists"></a>
 

@@ -11,9 +11,9 @@ You must have a SonarQube™ server currently running in your environment. If yo
 3. **100GB** of disk space.
 4. CodeScan must be installed on hard drives that have excellent read & write performance.
 
-Note:
-
-Depending on your use-case, this may be way too much or too little. As SonarQube™ stores all snapshots for a long time, the data can build up for a large project. Additionally, heavy usage for users would cause more load.
+{% hint style="info" %}
+**Note:** Depending on your use-case, this may be way too much or too little. As SonarQube™ stores all snapshots for a long time, the data can build up for a large project. Additionally, heavy usage for users would cause more load.
+{% endhint %}
 
 ### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
 

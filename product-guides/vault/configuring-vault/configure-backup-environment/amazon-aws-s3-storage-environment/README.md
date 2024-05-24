@@ -105,7 +105,3 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 9. Click on **Save Settings**.
 
 <figure><img src="../../../../../.gitbook/assets/image (96) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-
-***
-
-\

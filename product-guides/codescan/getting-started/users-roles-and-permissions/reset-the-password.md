@@ -17,15 +17,17 @@ Follow these steps to reset your password:
 1. Navigate to your instance's URL, for example, [_https://app.codescan.io/_](https://app.codescan.io/) for **US** region, [_https://app-eu.codescan.io/_](https://app-eu.codescan.io/) for **EU** region or [_https://app-aus.codescan.io/_](https://app-aus.codescan.io/) for **AUS** region.
 2. From the login screen, click the **`Don't remember your password?`** button.
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-OGRO155X.png)
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt="" width="284"><figcaption></figcaption></figure>
 
-3. Enter the **`email address`** you used to create your CodeScan account.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-U6EKZJ5V.png)
+3. Enter the **`email address`** you used to create your CodeScan account.
+
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="284"><figcaption></figcaption></figure>
+
 4. Click **`Send Email`**, and an email will be sent to your address with recovery instructions.
 5. Check your inbox for a password reset email.
 6. Click on the **`URL`** provided in the email and enter a new password.
 
-Password Requirements:
+**Password Requirements:**
 
 * New passwords must meet the following criteria:
 * MUST contain at least 8 characters (10+ recommended)

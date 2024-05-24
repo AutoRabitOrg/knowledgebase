@@ -30,9 +30,9 @@ Use the following steps to generate an email alert once the conditions configure
 
 <figure><img src="../../../.gitbook/assets/image (145).png" alt="" width="559"><figcaption></figcaption></figure>
 
-3. Select the alert criteria, whether the records were either added, modified or deleted, or all together.
-4. Vault has a preconfigured alert that is triggered daily at **01:30 AM** **UTC** to evaluate the alert rule.
-5. Select the recipients for the alert. By default, the author who configured the Salesforce Org in Vault will get auto-selected, however, you can add further teammates to notify about the alert. To do so, click on **Edit** and select the recipients who all be notified after the alert criteria are met, and then click **Apply**.
+* Select the alert criteria, whether the records were either added, modified or deleted, or all together.
+* Vault has a preconfigured alert that is triggered daily at **01:30 AM** **UTC** to evaluate the alert rule.
+* Select the recipients for the alert. By default, the author who configured the Salesforce Org in Vault will get auto-selected, however, you can add further teammates to notify about the alert. To do so, click on **Edit** and select the recipients who all be notified after the alert criteria are met, and then click **Apply**.
 
 <figure><img src="../../../.gitbook/assets/image (146).png" alt="" width="559"><figcaption></figcaption></figure>
 

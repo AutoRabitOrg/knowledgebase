@@ -2,7 +2,9 @@
 
 An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, and tables. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS.
 
-Note: If you don't have an Azure subscription, please create a [free account](https://azure.microsoft.com/) before you begin.
+{% hint style="info" %}
+**Note:** If you don't have an Azure subscription, please create a [free account](https://azure.microsoft.com/) before you begin.
+{% endhint %}
 
 To create an Azure storage account with the Azure portal, follow the steps below:
 

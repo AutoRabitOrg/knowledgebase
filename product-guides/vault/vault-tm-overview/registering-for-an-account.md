@@ -25,7 +25,7 @@ When creating a [Vault™](https://www.autorabit.com/products/vault-data-backup-
 5. Check your inbox for the account activation email to complete your account setup and create a password for your account.
 
 {% hint style="info" %}
-**Important Notes:**
+**Important Note:**
 
 1. The time it takes to receive the activation email can vary. If you haven't received the activation email, check your **spam folder.**&#x20;
 2. If your account is not activated at this stage, you'll receive an email explaining the reason(s) why and the next steps you can take.

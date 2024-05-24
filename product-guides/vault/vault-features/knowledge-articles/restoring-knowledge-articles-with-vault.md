@@ -66,15 +66,15 @@ If you choose to deploy KAV objects along with other metadata/data objects, the 
 <figure><img src="../../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 19. Under the **`Actions`** tab, you can perform additional operations:
-    * For an ongoing restore operation, you can **abort** the process in between using the **`Abort`** ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-H6XHMFUA.png) icon.
-    * View the **restore summary report** using ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QGX7RAY4.png) icon.
-    * View the **restore log report** using ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-LC0NYNAP.png) icon.
-    * Trigger **linking kav to case** using ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-X53O2352.png) icon.
+    * For an ongoing restore operation, you can **abort** the process in between using the **`Abort`**![](<../../../../.gitbook/assets/image (71).png>)icon.
+    * View the **restore summary report** using![](<../../../../.gitbook/assets/image (72).png>)icon.
+    * View the **restore log report** using![](<../../../../.gitbook/assets/image (73).png>)icon.
+    * Trigger **linking kav to case** using![](<../../../../.gitbook/assets/image (74).png>)icon.
 
 {% hint style="info" %}
-**Point to Note:**
+**Points to Note:**
 
 * To ensure successful linking, do confirm that the **kav records** for linking are in `Published` status in Salesforce.
-* Once the Kav record is successfully linked, the job status changes to complete (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-KLI63CY6.png)) state.
-* The **`trigger`** (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-X53O2352.png)) button will not be available; henceforth, linking kav to case is triggered.
+* Once the Kav record is successfully linked, the job status changes to complete (![](<../../../../.gitbook/assets/image (76).png>)) state.
+* The **`trigger`** (![](<../../../../.gitbook/assets/image (75).png>)) button will not be available; henceforth, linking kav to case is triggered.
 {% endhint %}

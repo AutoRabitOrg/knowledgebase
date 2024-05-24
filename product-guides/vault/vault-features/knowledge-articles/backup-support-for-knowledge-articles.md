@@ -32,6 +32,4 @@ During the backup process, these articles are saved under their respective Artic
 13. Choose the backup configuration you created earlier from the dropdown, if it's not already auto-selected. Click **Backup**.
 14. You will be redirected back to the **Backup Summary** screen, which displays the status of the recently triggered backup.
 
-***
-
 For more details on how to restore or replicate Knowledge Articles, [check this article](restoring-knowledge-articles-with-vault.md).

@@ -9,5 +9,3 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 1. Optimizing the data storage in Salesforce
 2. For [Salesforce Org](../../configuring-vault/registering-salesforce-org/) with lots of data, searching for particular data is a pain
 3. Application building in the Salesforce platform tends to run slower if unwanted data is available in your org.
-
-\

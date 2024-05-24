@@ -87,7 +87,7 @@ The client secret, known also as an _application password_, is a string value yo
 
 To generate the access token, first, you need to get an authorization code. You need to provide all the above-acquired IDs and hit the API endpoint for generating the authorization code.
 
-Example:
+**Example:**
 
 https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
 

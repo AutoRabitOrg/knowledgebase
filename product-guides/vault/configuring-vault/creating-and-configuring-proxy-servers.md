@@ -1,8 +1,8 @@
 # Creating and Configuring Proxy Servers
 
-Point to Note:
-
-The proxy configuration settings is applicable for **on-premise users** only. Currently not supported for shared instance users.
+{% hint style="info" %}
+**Note:** The proxy configuration settings is applicable for **on-premise users** only. Currently not supported for shared instance users.
+{% endhint %}
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -33,6 +33,6 @@ Follow the steps given below to configure a proxy server:
 
     <figure><img src="../../../.gitbook/assets/image (139).png" alt="" width="434"><figcaption></figcaption></figure>
 5. Click **Submit**. You'll redirected to the **Proxy Configuration Settings** homepage where you can find your recently created proxy on the top of the list.
-6. Using the **Edit** (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-PLXWIV5X.png)) icon, you can later edit the proxy setups or **Delete** (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-ZITSKUBN.png)) any proxy that is no longer needed.
+6. Using the **Edit** (![](<../../../.gitbook/assets/image (66).png>)) icon, you can later edit the proxy setups or **Delete** (![](<../../../.gitbook/assets/image (67).png>)) any proxy that is no longer needed.
 
 <figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>

@@ -33,5 +33,3 @@ With this feature, the user can configure a unique identifier for each object in
 2. This will show a popup with the Salesforce Org registered in Vault in dropdown with at least one object mapped.
 3. Click on **Clone**.
 4. This will check for the availability of the same objects and fields in the new org and perform the same mappings as the source.
-
-\

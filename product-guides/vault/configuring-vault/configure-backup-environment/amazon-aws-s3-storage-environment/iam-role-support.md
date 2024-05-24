@@ -1,9 +1,11 @@
 # IAM Role Support
 
-Point to Note:
+{% hint style="info" %}
+**Points to Note:**
 
-* This article is applicable for enterprise users (dedicated/on-premise) only.
-* Not applicable for shared instances users.
+1. This article is applicable for enterprise users (dedicated/on-premise) only.
+2. Not applicable for shared instances users.
+{% endhint %}
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

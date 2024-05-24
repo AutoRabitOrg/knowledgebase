@@ -12,13 +12,20 @@ For payment options besides credit card, please contact our sales team at [sales
 
 1. Log in to your CodeScan account.
 2. On the menu, go to **`Aministration > Billing`**.
-3. Click on **`Edit Payment`**.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-IPH1G6Y5.png)
-4. Check the plan and enter the **`Credit Card details`** to make payment. If you want to save the credit card details for future payments, click the **`Save`** button.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-5OJZLY9A.png)
-5. Once payment is approved, you should see your **`Current plan`**.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(154\).png)
-6.  You can edit your card details and download invoices at any time.\
-    ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(155\).png)
+3. Click on **`Edit Payment`**.
 
-    ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(156\).png)
+<figure><img src="../../../../.gitbook/assets/image (39).png" alt="" width="450"><figcaption></figcaption></figure>
+
+4. Check the plan and enter the **`Credit Card details`** to make payment. If you want to save the credit card details for future payments, click the **`Save`** button.
+
+<figure><img src="../../../../.gitbook/assets/image (40).png" alt="" width="461"><figcaption></figcaption></figure>
+
+5. Once payment is approved, you should see your **`Current plan`**.
+
+<figure><img src="../../../../.gitbook/assets/image (41).png" alt="" width="563"><figcaption></figcaption></figure>
+
+6. You can edit your card details and download invoices at any time.
+
+<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="563"><figcaption></figcaption></figure>

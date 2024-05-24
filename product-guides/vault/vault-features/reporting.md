@@ -22,20 +22,24 @@ Users can follow the depicted flow for the creation of reports.
 
 <figure><img src="../../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
-4.  The user can input/select all the required fields:
+4. The user can input/select all the required fields:
+   * **Salesforce Org:** The ORG on which the intended report is being generated.
+   * **Report Label:** The user has to input the label they want to use. The report label should not have special characters.
+   * **Report Date Range:** The user has to input the date range. This data range will be the input for fetching the data.
 
-    * **Salesforce Org:** The ORG on which the intended report is being generated.
-    * **Report Label:** The user has to input the label they want to use. The report label should not have special characters.
-    * **Report Date Range:** The user has to input the date range. This data range will be the input for fetching the data.
+{% hint style="info" %}
+**Note:** Only the six months date range is allowed.
+{% endhint %}
 
-    Note: Only the six months date range is allowed.
+* **Object:** The Object for whose data will be considered for data retrieval.
+* **Fields:** This will be the list of fields from the object selected above.
+* **Query:** The fields selected above will form the query, using which the report will be formed. The user can form a custom query as well.
+* **Generate:** Clicking this button will initiate the report creation.
 
-    * **Object:** The Object for whose data will be considered for data retrieval.
-    * **Fields:** This will be the list of fields from the object selected above.
-    * **Query:** The fields selected above will form the query, using which the report will be formed. The user can form a custom query as well.
-    * **Generate:** Clicking this button will initiate the report creation.
+{% hint style="info" %}
+**Note:** The report created will **expire after 7 days** from the day of creation of the report.
+{% endhint %}
 
-    Note: The report created will **expire after 7 days** from the day of creation of the report.
 5. Please observe the following screenshot for reference.
 
 <figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>

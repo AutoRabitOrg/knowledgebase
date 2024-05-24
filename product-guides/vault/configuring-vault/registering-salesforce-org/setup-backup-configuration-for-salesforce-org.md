@@ -80,7 +80,7 @@ Once you are done with selecting metadata types and objects (and their fields), 
 4. Choose the **`Backup Type`** for both _metadata_ and _data_ members.
    * **`Full-Backup:`** Full backup is a method of backup in which all the files and folders selected are backed up.
    * **`Incremental-Backup:`** An incremental backup operation will copy only the data/metadata that has been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the previous backup.
-5. Click on the **`email notification`** <img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675691300327.png" alt="" data-size="line"> icon to select users from the list who will receive an email notification whenever the objects are backed up from your Salesforce Org.
+5. Click on the **`email notification`**<img src="../../../../.gitbook/assets/image (68).png" alt="" data-size="line">icon to select users from the list who will receive an email notification whenever the objects are backed up from your Salesforce Org.
 
 <figure><img src="../../../../.gitbook/assets/image (214).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -107,5 +107,3 @@ Once you are done with selecting metadata types and objects (and their fields), 
     * **`Backup Config Details`**: View the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
     * **`Actions (Edit/Delete)`**: Delete the backup scheduled using the **`Delete`** icon or update the metadata/data components from being backed up using the **`Edit`** icon.
     * **`Last Backup Status`**: Last backup activity status will be displayed in this section.
-
-\

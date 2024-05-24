@@ -20,7 +20,9 @@ This section describes installing the CodeScan self-hosted server, allowing you 
 
 #### Step 1: Request a CodeScan License Key <a href="#step-1-request-a-codescan-license-key" id="step-1-request-a-codescan-license-key"></a>
 
-<mark style="background-color:blue;">**Note:**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">If you already have a</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**License Key**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">or</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Subscription Code**</mark><mark style="background-color:blue;">, proceed to step 2.</mark>
+{% hint style="info" %}
+**Note:** If you already have a **License Key** or **Subscription Code**, proceed to step 2.
+{% endhint %}
 
 **AutoRABIT Access/License Key:** Before downloading the necessary files, email AutoRABIT’s support team at [support@codescan.io](https://support@codescan.io/) to request a **CodeScan License Key.**
 
@@ -40,21 +42,25 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 
 <div align="center">
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
 
 </div>
 
-<mark style="background-color:blue;">Note: This</mark> [<mark style="background-color:blue;">link</mark>](https://www.sonarsource.com/products/sonarqube/) <mark style="background-color:blue;">will take you to the</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**SonarQube™ 9.9 LTS**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">download.</mark> <mark style="background-color:blue;"></mark>_<mark style="background-color:blue;">**SonarQube™ 10.0 is now supported as well.**</mark>_
+{% hint style="info" %}
+**Note:** This [link](https://www.sonarsource.com/products/sonarqube/) will take you to the **SonarQube™ 9.9 LTS** download. _**SonarQube™ 10.0 is now supported as well.**_
+{% endhint %}
 
 #### CodeScan Zip File Download <a href="#codescan-zip-file-download" id="codescan-zip-file-download"></a>
 
 1. Download the latest compatible CodeScan version (currently **24.0.4**) from [here](https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-24.0.4.zip).
 
-<mark style="background-color:blue;">Note: Keep in mind you need to download a version compatible with your</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**SonarJS plugin**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">version. Refer to the</mark> [<mark style="background-color:blue;">requirements</mark>](https://knowledgebase.autorabit.com/codescan/docs/codescan-self-hosted) <mark style="background-color:blue;">section for more information.</mark>
+{% hint style="info" %}
+**Note:** Keep in mind you need to download a version compatible with your **SonarJS plugin** version. Refer to the [requirements](https://knowledgebase.autorabit.com/codescan/docs/codescan-self-hosted) section for more information.
+{% endhint %}
 
 2. You will need to enter your **`License Key`** (to be provided by our Support Team) or a **`Subscription Code`**. For more information on Subscription Codes, click [here](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-subscription-code).
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Accept our [Terms of Service](https://www.codescan.io/tos/self-hosted/) and click on the **`Request Download`** button.
 4. Extract the ZIP file. It contains the **SonarQube™** plugin and an **ant-based tool** enabling you to run an analysis.
@@ -85,14 +91,14 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 **Step 1: Log in to the SonarQube™ self-hosted instance at** [**http://localhost:9000/**](https://localhost:9000/).\
 The default System Admin credentials are _**admin/admin**_:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2. Once you've gained access, go to** **`Administrator > Configuration > General Settings`**.
 
 1. Select the **CodeScan tab**.
 2. Enter your **CodeScan License Key** in the designated field.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Save**.
 4. You have successfully completed the **CodeScan on-premises integration**. See the instructions below on how to integrate this to ARM.
@@ -127,11 +133,11 @@ This initial step is when your **SonarQube™ credentials**, such as your **user
 7. Enter your **SonarQube™ account username**. For password, use the **copied token** mentioned in **Step 1**.
 8. Verify you are using your **SonarQube™ username** instead of the **email address** you use to log in to **SonarQube™**.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up Your Quality Profiles <a href="#setting-up-your-quality-profiles" id="setting-up-your-quality-profiles"></a>
 
@@ -160,7 +166,9 @@ The [Organization Key](https://knowledgebase.autorabit.com/codescan/docs/finding
 
 You can also use **Ant** (this requires **Ant version 1.9+**).
 
-<mark style="background-color:blue;">Note: You will need to edit</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**`antbuild.properties`**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">if your SonarQube™ installation is different than usual, or if you have a proxy. You can also edit</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**`/runner/antbuild.xml`**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">to customize your workflows.</mark>
+{% hint style="info" %}
+**Note:** You will need to edit **`antbuild.properties`** if your SonarQube™ installation is different than usual, or if you have a proxy. You can also edit **`/runner/antbuild.xml`** to customize your workflows.
+{% endhint %}
 
 **Running SFDX plugin behind a proxy**
 
@@ -200,7 +208,9 @@ For more instructions on setting up the **SonarQube™ ant plugin**, see [https:
     ```
     {% endcode %}
 
-<mark style="background-color:blue;">Note: If the Anyone group is not granted</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**Execute Analysis**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">permission, or if the SonarQube™ instance is secured (</mark><mark style="background-color:blue;">**`sonar.forceAuthentication property`**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">is set to</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**`true`**</mark><mark style="background-color:blue;">), a user whose credentials have</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**`Execute Analysis`**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">permission has to be provided through the</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**`sonar.login`**</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">and</mark> <mark style="background-color:blue;"></mark><mark style="background-color:blue;">**`sonar.password properties`**</mark><mark style="background-color:blue;">.</mark>
+{% hint style="info" %}
+**Note:** If the Anyone group is not granted **Execute Analysis** permission, or if the SonarQube™ instance is secured (**`sonar.forceAuthentication property`** is set to **`true`**), a user whose credentials have **`Execute Analysis`** permission has to be provided through the **`sonar.login`** and **`sonar.password properties`**.
+{% endhint %}
 
 ### Proxies <a href="#proxies" id="proxies"></a>
 
@@ -211,4 +221,4 @@ For more instructions on setting up the **SonarQube™ ant plugin**, see [https:
 
 * Read the tutorials
 * Check the troubleshooting section
-* Contact [Support](https://www.codescan.io/contact/)\
+* Contact [Support](https://www.codescan.io/contact/)

@@ -23,20 +23,22 @@ When a pull request is created in a VSTS repository or a repository tracked by y
 
 #### Managing branches <a href="#managing-branches" id="managing-branches"></a>
 
-1. On your **Project Analysis** page, go to **Project Setting > Branches and Pull requests**. This page allows users to delete any new branches and also change the branch that the Analysis Project is checking.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(218\).png)
-   * **Delete Branch**: To delete a branch, click the(![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(224\).png)) button next to the branch and click **Delete Branch**.\
-     ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(220\).png)
-   * **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(223\).png)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.\
-     ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(219\).png)
+On your **Project Analysis** page, go to **Project Setting > Branches and Pull requests**. This page allows users to delete any new branches and also change the branch that the Analysis Project is checking.
+
+<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="450"><figcaption></figcaption></figure>
+
+* **Delete Branch**: To delete a branch, click the (![](<../../../../.gitbook/assets/image (64).png>)) button next to the branch and click **Delete Branch**.
+
+<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+
+* **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../.gitbook/assets/image (65).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
+
+<figure><img src="../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(157\).png)
+<figure><img src="../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 Here you can see the branch has four new violations. If the branch is selected, the details of the violation(s) can be seen. All new branches added in this way will be deleted in **30 days** if they are not analyzed.
-
-\
-
 
 If you have any further questions about CodeScan Cloud, please [contact us](https://www.codescan.io/contact/).

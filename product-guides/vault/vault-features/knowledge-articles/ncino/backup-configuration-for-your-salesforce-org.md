@@ -27,7 +27,7 @@ Once you are done with the selection of nCino objects, set up when you would lik
 <figure><img src="../../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 1. Give a **name** for the backup operation.
-2. Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Screenshot%202021-09-22%20134023\(2\).png) icon to go to the **Backup Setting** page which allows you to enable Bulk API retrieval.
+2. Click on the![](<../../../../../.gitbook/assets/image (77).png>)icon to go to the **Backup Setting** page which allows you to enable Bulk API retrieval.
 
 <figure><img src="../../../../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,6 +53,6 @@ Once you are done with the selection of nCino objects, set up when you would lik
 10. You will be next redirected to the **Configs** page where you will find your newly added backup configured for your Salesforce Org.
 11. **Additional options**:
     * **Schedule**: The user can either enable or disable the backup schedule of a Salesforce org temporarily by sliding the **Schedule** icon on either the right or left side.
-    * **Backup Config Details**: Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Screenshot%202021-09-22%20134023\(3\).png) icon to view the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
-    * **Actions (Edit/Delete)**:  The user can either delete the backup scheduled using Delete (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/2\(1\).png)) icon or update the metadata/data components from being backed up using the **Edit** (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/1.png)) icon.
+    * **Backup Config Details**: Click on the![](<../../../../../.gitbook/assets/image (78).png>)icon to view the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
+    * **Actions (Edit/Delete)**:  The user can either delete the backup scheduled using Delete (![](<../../../../../.gitbook/assets/image (79).png>)) icon or update the metadata/data components from being backed up using the **Edit** (![](<../../../../../.gitbook/assets/image (80).png>)) icon.
     * **Last Backup Status**: Last backup activity status will be displayed in this section.

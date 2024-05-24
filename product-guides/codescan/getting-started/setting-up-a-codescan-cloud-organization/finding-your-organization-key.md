@@ -1,11 +1,15 @@
 # Finding your Organization Key
 
-You can always find your org's organization key on the the top right corner of your **`Organization`** home page.\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-TS8JF5QD.png)
+You can always find your org's organization key on the the top right corner of your **`Organization`** home page.
+
+<figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 There is also an another way to find your organization key.
 
-1. Click on your **`Profile`** icon on the right corner of the screen and select **`My Organizations`**.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-5MG64YYG.png)
-2. The list of the organizations you created will display. For each organization, the organization key will display on the right side.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-YVLQXXT0.png)
+1. Click on your **`Profile`** icon on the right corner of the screen and select **`My Organizations`**.
+
+<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+2. The list of the organizations you created will display. For each organization, the organization key will display on the right side.
+
+<figure><img src="../../../../.gitbook/assets/image (36).png" alt="" width="557"><figcaption></figcaption></figure>

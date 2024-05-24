@@ -2,11 +2,13 @@
 
 The CodeScan **New Code** tab is a great way to keep track of new issues in your project.
 
-How the **New Code** is set determines what issues are displayed as new issues. There are several options for this. The **New Code** can be configured for the specific project by navigating to the **Project Settings > New Code** menu from the project dashboard.\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-9187UG7Y.png)
+How the **New Code** is set determines what issues are displayed as new issues. There are several options for this. The **New Code** can be configured for the specific project by navigating to the **Project Settings > New Code** menu from the project dashboard.
 
-The **New Code** settings can be configured for the project or each branch by clicking on the settings wheel (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-P2L8U745.png)) at the bottom of this page.\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-NOSP68D8.png)
+<figure><img src="../../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+
+The **New Code** settings can be configured for the project or each branch by clicking on the settings wheel (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-P2L8U745.png)) at the bottom of this page.
+
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 #### Date <a href="#date" id="date"></a>
 
@@ -20,19 +22,19 @@ SonarQube™ can be set to show the issues that have arisen within a certain num
 
 By using the _**previous\_version**_ setting, the New Code will be tracked from the previous version set with the _**sonar.projectVersion**_ parameter or from the Activity page.
 
-**For example**, a scan is run on a project with the _**sonar.projectVersion**_ _**1.0**_ . After time, the project’s _**sonar.projectVersion**_ is set to _**1.1**_. The New Code Period set to _**previous\_version**_ would display all issues that have arisen since _**sonar.projectVersion**_ _**1.0**_.
+For example, a scan is run on a project with the _**sonar.projectVersion**_ _**1.0**_ . After time, the project’s _**sonar.projectVersion**_ is set to _**1.1**_. The New Code Period set to _**previous\_version**_ would display all issues that have arisen since _**sonar.projectVersion**_ _**1.0**_.
 
 #### Reference Branch <a href="#reference-branch" id="reference-branch"></a>
 
 The reference branch option compares all issues in the current branch to those in the specified reference branch. The New Code Tab will display the delta of those issues.
 
-**For example**, the main branch of your project is pointing to a production environment. A second branch in your project is pointing at a developer environment. By defining the main branch as the reference for the second branch, you will be able to track new issues created in that developer environment.
+For example, the main branch of your project is pointing to a production environment. A second branch in your project is pointing at a developer environment. By defining the main branch as the reference for the second branch, you will be able to track new issues created in that developer environment.
 
 #### Specific version <a href="#specific-version" id="specific-version"></a>
 
 By entering _**sonar.projectVersion**_ into your projects, the New Code Period will display any issues that have arisen since that specific version.
 
-**For example**, a scan is run on a project with the _**sonar.projectVersion**_ _**BASELINE**_. The project’s _**sonar.projectVersion**_ is then set to _**DEVELOPMENT**_ and all necessary scans are run over time. The New Code Period set to _**BASELINE**_ would display all issues that have arisen since the original scan.
+For example, a scan is run on a project with the _**sonar.projectVersion**_ _**BASELINE**_. The project’s _**sonar.projectVersion**_ is then set to _**DEVELOPMENT**_ and all necessary scans are run over time. The New Code Period set to _**BASELINE**_ would display all issues that have arisen since the original scan.
 
 It is important to note that all violations, including when they were introduced and the version in which they were introduced, are tracked. The New Code Period only filters this information on the project’s Overview dashboard and the Issues screen.
 

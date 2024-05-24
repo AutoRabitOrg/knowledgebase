@@ -107,7 +107,9 @@ This document provides complete information about the new feature Vault Connect,
 
 5. Provide **Name** and **URL Suffix** and click on **Save.**
 
+{% hint style="info" %}
 **Note:** Do not change the remaining settings on the layout.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
 
@@ -143,7 +145,9 @@ This document provides complete information about the new feature Vault Connect,
 
 Salesforce Connect OData 4.0 license subscription.
 
-**Note:** Not required for free developer edition org
+{% hint style="info" %}
+**Note:** Not required for free developer edition org.
+{% endhint %}
 
 ### Limitations <a href="#limitations" id="limitations"></a>
 

@@ -33,5 +33,3 @@ With the thousands of changes made in the Salesforce database daily, regular and
 * **Detect and prevent data errors:** Vault capabilities, such as Compare, identify problems in the data and metadata structures, so you can verify that the most recent data is saved and protected.&#x20;
 * **Comply with industry regulations:** Our Salesforce data recovery manager allows your company to meet policy requirements for IT governance without sacrificing your data restoration needs. You can meet compliance regulations while backing up and recovering data at your ideal frequency.&#x20;
 * **Eliminate manual backup:** Manual efforts to back up Salesforce data and metadata can be lengthy. Automatic backup from Vault eliminates the need to manage the backup process by completing it automatically.
-
-\

@@ -22,9 +22,9 @@ The archive configuring is all about viewing the components that are available i
 4. The **Hierarchy** option will allow you to view your selected object's corresponding child objects. These child objects will also be archived once you archive their parent object. Such a hierarchy schema view can be seen using the **Hierarchy** option.\
    You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object that will be deleted for sure if its parent object is selected for archival policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archival.
 
-<figure><img src="../../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (223).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (224).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Once done, click **Save** to close the hierarchy-schema screen. Similar to **Filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which the hierarchy is selected.
 

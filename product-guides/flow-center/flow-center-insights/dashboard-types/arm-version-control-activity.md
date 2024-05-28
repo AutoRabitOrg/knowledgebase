@@ -7,16 +7,13 @@ This dashboard shows data based on the activity in your version control reposito
 #### Top 25 Committers
 
 *   Track the team members with the highest number of commits. Use this information to identify key contributors, understand team productivity, and recognize individual efforts in your projects.\
-    \
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
 #### Weekly Commits Summary
 
 *   Monitor your team's commit frequency to version control. Committing early and often reduces conflicts, improves collaboration, and enables faster deployments.\
-    \
-    \
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>

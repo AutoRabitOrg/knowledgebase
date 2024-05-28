@@ -10,7 +10,7 @@ To create your first dashboard:
 2.  Choose a dashboard type.\
     \
     \
-    For more information on each dashboard type, refer to “dashboard types[dashboard-types](dashboard-types/ "mention").”\
+    For more information on each dashboard type, refer to [[dashboard-types](dashboard-types/ "mention")](dashboard-types/).\
 
 
     <figure><img src="../../../.gitbook/assets/image (380).png" alt=""><figcaption></figcaption></figure>

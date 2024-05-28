@@ -86,6 +86,21 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 29 May 2024
+
+**ARM 23.1.32**
+
+1. A code fix was applied to the Version Control module to resolve a use-case error in which the user cannot approve or reject a Merge Request when the label name contains a "+" symbol. When the merge label contains unsupported characters, the merge label is not submitted as expected and the validation message displays the supported characters. Support ticket #112715
+2. A code fix was applied to the Admin module related to a use-case error occurring when modifying the Team Administrator, it created duplicate Teams, consuming existing licenses. Support ticket  #109457
+3. A code fix was applied to the CI Jobs module due to a use-case error in which a Checkmarx scan was not matching up and breaking the build. Support ticket #105217
+4. A code fix was applied to the CI Jobs module due to a use-case error occurring when multiple CI jobs run on GitHub PRs, AutoRABIT reports incorrectly that the jobs were successful. \* Issue requires updated documentation. Support ticket #111955
+5. A code fix was applied to the Version Control module related to a use-case error in which Mock Deployment criteria check lines were not logged in the UI during the Prevalidation Deployment refresh, but they do appear after auto-rejection and subsequent refresh.&#x20;
+6. A code fix was applied to the Deployment module to correct a use-case error occurring when selecting and deselecting ApexClass and CustomField metadata types, the Deploy pop-up incorrectly displayed "All components are selected" for ApexClass instead of the list of selected components.&#x20;
+7. A code fix was applied to the Version Control module to correct a use-case error displaying unwanted characters, such as different language letters, like “â€” in the message: "Please waitâ€ when a compare and commit is in progress."
+8. A code fix was applied to the Version Control module due to a use-case PrevalidationMerge error occurring when the user was trying to approve a Merge Label through an API with an auto-rejected label, the status changed from "Auto-reject" to "Commit."&#x20;
+9. A code fix was applied to the Version Control module after a user observed three gaps/issues in Commit Templates: 1) Data Table Change in the Commit Template under the 'All Metadata' tab should also sync across all three places, like Deployments, VC Commit, and Commit Template under the 'All Metadata' tab for data table changes. 2) Folder-Related Members Visibility: Folder-related all members are not visible when selecting the folder. This does not sync with EZ Commit All Metadata, from new commit all members. When selecting the folder, all respective folder-related members are visible but not included in the Commit Template when selecting the same Salesforce org. 3) Input Search Dropdown Missing for selecting Folders.
+10. A code fix was applied to the Data Loader module concerning a use-case error in which the user was unable to create a project journey with a BIC\_\_c field using "LookUp via" feature. Support ticket #110111
+
 #### 22 May 2024
 
 **(ARM 23.1.31)**

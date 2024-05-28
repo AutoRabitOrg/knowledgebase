@@ -686,6 +686,14 @@
         * [Restoring nCino Features](product-guides/vault/vault-features/knowledge-articles/ncino/restoring-ncino-features.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect.md)
   * [Vault-FAQs](product-guides/vault/vault-faqs.md)
+* [Flow Center](product-guides/flow-center/README.md)
+  * [Flow Center Insights](product-guides/flow-center/flow-center-insights/README.md)
+    * [Dashboards](product-guides/flow-center/flow-center-insights/dashboards/README.md)
+      * [Creating Your First Dashboard](product-guides/flow-center/flow-center-insights/dashboards/creating-your-first-dashboard.md)
+      * [Dashboard Types](product-guides/flow-center/flow-center-insights/dashboards/dashboard-types/README.md)
+        * [ARM Deployment Metrics](product-guides/flow-center/flow-center-insights/dashboards/dashboard-types/arm-deployment-metrics.md)
+        * [ARM Version Control Activity](product-guides/flow-center/flow-center-insights/dashboards/dashboard-types/arm-version-control-activity.md)
+      * [Setting Up Your Default Dashboard](product-guides/flow-center/flow-center-insights/dashboards/setting-up-your-default-dashboard.md)
 
 ## Use Cases + Resources
 

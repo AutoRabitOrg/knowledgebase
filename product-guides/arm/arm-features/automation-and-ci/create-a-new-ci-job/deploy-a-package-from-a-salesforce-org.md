@@ -89,7 +89,7 @@ This section is all about either deploying or validating the above package onto 
 2.  Specify the **Apex test level** you would like to run for the CI job.\
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
    1. **No Test Run:** No apex test is run unless it is a production deployment.
    2. **Run Specified Tests:** Only the tests that the user specifies are run. The benefit of choosing this option is that it checks code coverage criteria at the ARM level rather than checking it at the entire org level. The executed tests must cover the classes or triggers contained with a minimum of 75% code coverage. This coverage is computed for each class or trigger individually and is different from the overall coverage percentage.Important Note:Make sure for the runTests parameter, you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to Run Specified Tests.

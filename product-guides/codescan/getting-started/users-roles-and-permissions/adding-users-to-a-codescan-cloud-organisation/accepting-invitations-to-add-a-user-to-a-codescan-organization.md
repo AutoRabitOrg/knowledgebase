@@ -6,7 +6,7 @@
 2. If you can't find the invitation link in your Inbox, check Spam and Junk folders.
 3. Once you have the invitation link, click on it (please note it's valid only for a certain period of time and can only be used once):
 
-<figure><img src="../../../../../.gitbook/assets/image (12).png" alt="" width="548"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1).png" alt="" width="548"><figcaption></figcaption></figure>
 
 4. You will be redirected to the Login screen. As it's your first time to CodeScan, select the **Sign Up** option:
 

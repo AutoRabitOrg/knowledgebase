@@ -6,6 +6,7 @@ To create your first dashboard:
 
 1. Click the + icon on the top right.\
    <img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original">\
+   \
 
 2.  Choose a dashboard type.\
     \
@@ -18,6 +19,7 @@ To create your first dashboard:
 
     </div>
 
+    \
 
 3.  Use the filters to decide which Salesforce org’s data you want to see, as well as the timeframe. Orgs that haven’t had any deployments will not be listed.\
     \
@@ -25,20 +27,31 @@ To create your first dashboard:
 
 
     <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p><br></p></figcaption></figure>
+
+    \
+
 4.  Select the reports you want to include in this dashboard. Use the description to specify what you can generate with each report.\
 
 
     <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
+    \
 
 5.  Click Save\
 
 
     <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p><br></p></figcaption></figure>
+
+    \
+
 6.  Enjoy your dashboard. \
 
 
     <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p><br></p></figcaption></figure>
+
+    \
+    \
+
 7.  On each report, click the “See report” link to see more details and a useful explanation of how to interpret this data.\
 
 

@@ -64,3 +64,13 @@ Let's consider three branches: A, B, and C.
 
 1. After you enable the required status checks, your branch may need to be up-to-date with the base branch before merging. This ensures that your branch has been tested with the latest code from the base branch. If your branch is out of date, you'll need to merge the base branch into your branch.
 2. The results of the deployment status in Github and the AutoRABIT application can sometimes be conflicting. While the deployment is still in progress in AutoRABIT, the status will be updated earlier on Github. This is due to the post-deployment activities being performed in AutoRABIT.
+
+### Status Check API Functionality Documentation
+
+This outlines the functionality of the Status Check API based on the different statuses of CI Jobs. The Status Check API triggers different responses depending on the current status of the CI Job, as detailed below.
+
+* Status check API is triggered as "Pending" if the CI job status is "In progress".
+* Status check API is triggered as "Success" if the cijob status is "Completed," "Partial”
+* Status check API is triggered as "Error" if the cijob status is "Aborted".
+* Status check API is triggered as "Failure" if the job status is "Failed" or "Unstable."
+* If the CI Job status shows as "No Modifications" then the Status Check API should not get triggered at all.

@@ -686,6 +686,7 @@
         * [Restoring nCino Features](product-guides/vault/vault-features/knowledge-articles/ncino/restoring-ncino-features.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect.md)
   * [Vault-FAQs](product-guides/vault/vault-faqs.md)
+  * [Vault Best Practices](product-guides/vault/vault-best-practices.md)
 * [Flow Center](product-guides/flow-center/README.md)
   * [Flow Center Insights](product-guides/flow-center/flow-center-insights/README.md)
     * [Creating Your First Dashboard](product-guides/flow-center/flow-center-insights/creating-your-first-dashboard.md)

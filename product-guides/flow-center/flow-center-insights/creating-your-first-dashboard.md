@@ -5,7 +5,7 @@
 To create your first dashboard:
 
 1. Click the + icon on the top right.\
-   <img src="../../../.gitbook/assets/image (8).png" alt="" data-size="original">\
+   <img src="../../../.gitbook/assets/image (8) (1).png" alt="" data-size="original">\
    \
 
 2.  Choose a dashboard type.\
@@ -26,28 +26,28 @@ To create your first dashboard:
     We currently support data up to one year old.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p><br></p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p><br></p></figcaption></figure>
 
     \
 
 4.  Select the reports you want to include in this dashboard. Use the description to specify what you can generate with each report.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     \
 
 5.  Click Save\
 
 
-    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p><br></p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p><br></p></figcaption></figure>
 
     \
 
 6.  Enjoy your dashboard. \
 
 
-    <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p><br></p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p><br></p></figcaption></figure>
 
     \
     \
@@ -55,7 +55,7 @@ To create your first dashboard:
 7.  On each report, click the “See report” link to see more details and a useful explanation of how to interpret this data.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 

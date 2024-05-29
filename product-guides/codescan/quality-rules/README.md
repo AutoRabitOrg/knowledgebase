@@ -15,28 +15,24 @@ For vulnerabilities, the goal is to have more than 80% of issues be true positiv
 
 Security hotspot rules draw attention to code that is security-sensitive. It is expected that more than 80% of the issues will be quickly resolved as "reviewed" after being reviewed by a developer.
 
-***
-
 ### Access Quality Rules <a href="#access-quality-rules" id="access-quality-rules"></a>
 
 You can access the **Quality Rules** page from the Organization’s home page.
 
 By default, you will see all the available rules installed on your CodeScan instance. You have the ability to review and narrow the selection based on search criteria in the left sidebar:
 
-* **Language:** the language to which a rule applies.
-* **Type:** bug, vulnerability, code smell, or security hotspot rules.
-* **Tag:** it is possible to add tags to rules in order to classify them and to help discover them more easily.
-* **Repository:** the engine/analyzer that contributes rules to CodeScan.
-* **Default Severity:** Filter Quality Rules based on the severity of the rule
-* **Status:** rules can have 3 different statuses:
-  * **Beta:** The rule has been recently implemented, and we haven't gotten enough feedback from users yet, so there may be false positives or false negatives.
-  * **Deprecated:** The rule should no longer be used because a similar, but more powerful and accurate rule exists.
-  * **Ready:** The rule is ready to be used in production.
-* **Available since:** the date when a rule was first added on CodeScan. This is useful to list all the new rules since the last upgrade of a plugin, for instance.
-* **Template:** display the rules created from a template.
-* **Quality profile:** inclusion in or exclusion from a specific profile
-
-***
+1. **Language:** the language to which a rule applies.
+2. **Type:** bug, vulnerability, code smell, or security hotspot rules.
+3. **Tag:** it is possible to add tags to rules in order to classify them and to help discover them more easily.
+4. **Repository:** the engine/analyzer that contributes rules to CodeScan.
+5. **Default Severity:** Filter Quality Rules based on the severity of the rule
+6. **Status:** rules can have 3 different statuses:
+   * **Beta:** The rule has been recently implemented, and we haven't gotten enough feedback from users yet, so there may be false positives or false negatives.
+   * **Deprecated:** The rule should no longer be used because a similar, but more powerful and accurate rule exists.
+   * **Ready:** The rule is ready to be used in production.
+7. **Available since:** the date when a rule was first added on CodeScan. This is useful to list all the new rules since the last upgrade of a plugin, for instance.
+8. **Template:** display the rules created from a template.
+9. **Quality profile:** inclusion in or exclusion from a specific profile
 
 ### Viewing Quality Rules details <a href="#viewing-quality-rules-details" id="viewing-quality-rules-details"></a>
 
@@ -49,19 +45,16 @@ For each rule, you can:
 
 To make changes to the Quality Rules, users must be granted the _**Administer Quality Gates or Profile**_ permission.
 
-***
-
 ### Create Custom Rules <a href="#create-custom-rules" id="create-custom-rules"></a>
 
 Custom rules are considered like any other rule, except that you can edit or delete them. You can define your own custom rules in CodeScan using Rule templates.\
-To find templates, select the **Show Templates Only** option from the **Template** dropdown menu.\
+To find templates, select the **Show Templates Only** option from the **Template** dropdown menu.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-C8PDNCY5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 To create a custom rule from a template, select **Create** next to the **Custom rules** heading and enter the following information:
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-7IB90Y0G.png)
+<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 * Name
 * Key (auto-suggested)
@@ -71,13 +64,10 @@ To create a custom rule from a template, select **Create** next to the **Custom 
 * Description (Markdown format is supported)
 * The parameters specified by the template
 
-***
-
 ### Edit or Delete Custom Rules <a href="#edit-or-delete-custom-rules" id="edit-or-delete-custom-rules"></a>
 
 Unlike other rules, you can edit or delete custom rules. When a custom rule is deleted, it is not removed from the CodeScan Cloud instance. Instead, its status is set to "REMOVED", allowing relevant issues to continue to be displayed properly.
 
-Click on the custom rules to view its details. Under the **Parameter** section, you have the option to edit the custom rule information or delete them.\
+Click on the custom rules to view its details. Under the **Parameter** section, you have the option to edit the custom rule information or delete them.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-TCLNL610.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>

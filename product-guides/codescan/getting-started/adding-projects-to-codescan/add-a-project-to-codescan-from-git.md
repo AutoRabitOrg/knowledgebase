@@ -4,19 +4,37 @@ This document guides how to add a git project to your CodeScan cloud account and
 This method can be used to add a project from any git-based SCM; however, if you use a cloud version of GitHub, Bitbucket, or GitLab, we suggest you use the specific integration for your repository.
 
 1. Login to your **CodeScan** account.
-2. Once you log into your CodeScan account, click on the (**+**) icon in the top right corner and select **Analyze new project**.![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1634904515112.png)
-3. &#x20;It takes you to a different window. Choose the **Organization** for which you'd like to create a project.![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1634904623955.png)
-4. In the next screen, click on **Add Analysis Project** option.![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1634904639645.png)
-5. You will now see a new popup window; select **Git** from the given options.![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1635045899468.png)
-6. Enter the necessary information in the fields as mentioned below:![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1685083354675.png)
-   1. Fill in the **GIT repository URL**. You can add two types of URL addresses in the field:
-      * An **HTTPS URL** like **`https://github.com/user/repo.git`**
-      * An **SSH URL**, like **`git@github.com:user/repo.git`** or  **`ssh://github.com/user/repo`**
-   2. Enter the Git **username** and the **security token** in their respective fields, followed by the **project branch** name.
-   3. Enter the CodeScan **project security key,** followed by the **project name**.\
-      Note:To know where to find the project key, refer to our document on how to do it by clicking [here](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key).
-   4. Under **Scheduling**, choose whether to run the project automatically by selecting **Daily** or manually by selecting **Manual**.
-   5. If you select **Daily**, another field named **Schedule** has to be selected by choosing the time you want the automatic analysis to be triggered.
+2. Once you log into your CodeScan account, click on the (**+**) icon in the top right corner and select **Analyze new project**.
+
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+3. It takes you to a different window. Choose the **Organization** for which you'd like to create a project.
+
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+4. In the next screen, click on **Add Analysis Project** option.
+
+<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
+5. You will now see a new popup window; select **Git** from the given options.
+
+<figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
+6.  Enter the necessary information in the fields as mentioned below:
+
+    <figure><img src="../../../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure>
+
+    * Fill in the **GIT repository URL**. You can add two types of URL addresses in the field:
+      1. An **HTTPS URL** like **`https://github.com/user/repo.git`**
+      2. An **SSH URL**, like **`git@github.com:user/repo.git`** or  **`ssh://github.com/user/repo`**
+    * Enter the Git **username** and the **security token** in their respective fields, followed by the **project branch** name.
+    * Enter the CodeScan **project security key,** followed by the **project name**.
+    * Under **Scheduling**, choose whether to run the project automatically by selecting **Daily** or manually by selecting **Manual**.
+    * If you select **Daily**, another field named **Schedule** has to be selected by choosing the time you want the automatic analysis to be triggered.
+
+{% hint style="info" %}
+**Note:** To know where to find the project key, refer to our document on how to do it by clicking [here](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key).
+{% endhint %}
 
 This triggers the project analysis and the added project under your [CodeScan](https://www.codescan.io/) organization.
 

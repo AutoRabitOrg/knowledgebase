@@ -13,28 +13,28 @@ The following reports are available for this dashboard.
 *   Monitor the execution time of Apex tests, as tests that take a long time to run can significantly impact the speed and reliability of your deployments.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
 #### Top 25 Failing Metadata Types
 
 *   Monitor the metadata types that frequently cause deployment failures. Use this information to identify areas where technical debt may be adversely affecting your deployment process.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Weekly Deployments Summary
 
 *   Track your weekly deployment frequency with this graph. It helps you assess if you're deploying frequently enough for optimal delivery performance. \
     &#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Top 25 Failing Apex Tests
 
 *   Monitor Apex tests that frequently fail and contribute to deployment failures. Utilize this information to identify opportunities for enhancing your tests, thereby increasing the success rate of your deployments.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Weekly Metadata Deployment Count
 
@@ -42,7 +42,7 @@ The following reports are available for this dashboard.
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Top 25 Failing Metadata
 

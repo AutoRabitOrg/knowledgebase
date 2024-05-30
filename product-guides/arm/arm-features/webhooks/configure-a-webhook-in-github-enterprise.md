@@ -10,14 +10,14 @@ Follow the instructions below to create a webhook API token from ARM.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. Enter the token name.
-2. Select Type as "webhook."
-3. Enter a description if required.
-4. Click on 'Create Option.'
+4. Enter the token name.
+5. Select Type as "webhook."
+6. Enter a description if required.
+7. Click on 'Create Option.'
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. Your new API token is created.
+8. Your new API token is created.
 
 ***
 
@@ -44,20 +44,20 @@ Webhooks allow external services to be notified when certain events happen. When
 5. In the URL form field, paste the copied URL or enter the payload URL manually. The payload URL is the URL of the server that will receive the webhook POST requests. \
    **Payload URL:** \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request\
    **For example, using instance:** https://login.autorabit.com\
-   **Payload URL:** [https://login.autorabit.com/autorabitrest/webhook/\<OrgName>/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/%3COrgName%3E/triggerSCMPushrequest)
+   **Payload URL:** [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. Enter the Secret Key generated in ARM as an API token.
+6. Enter the Secret Key generated in ARM as an API token.
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. Select **'application/json'** as the content type. The **application/json** content type will deliver the JSON payload directly as the body of the POST request.
+7. Select **'application/json'** as the content type. The **application/json** content type will deliver the JSON payload directly as the body of the POST request.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoconfigureaWebhookinGITHUBcustom61.png" alt=""><figcaption></figcaption></figure>
 
-7. Select **'Just the push events.'** Events are at the core of webhooks. These webhooks fire whenever a certain action is taken on the repository, which your server's payload URL intercepts and acts upon.
-8. Click **Add Webhook**.
+8. Select **'Just the push events.'** Events are at the core of webhooks. These webhooks fire whenever a certain action is taken on the repository, which your server's payload URL intercepts and acts upon.
+9. Click **Add Webhook**.
 
 &#x20;
 
@@ -67,7 +67,7 @@ Webhooks allow external services to be notified when certain events happen. When
 
 </div>
 
-9. However, to trigger the webhook using pull request, you need to select **'Let me select individual events'** and select the **Pull requests** checkbox.
+10. However, to trigger the webhook using pull request, you need to select **'Let me select individual events'** and select the **Pull requests** checkbox.
 
 <div align="left">
 
@@ -75,7 +75,7 @@ Webhooks allow external services to be notified when certain events happen. When
 
 </div>
 
-10. Click on **Add webhook** to save the webhook.
+11. Click on **Add webhook** to save the webhook.
 
 ***
 

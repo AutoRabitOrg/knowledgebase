@@ -31,7 +31,7 @@
 
 3. On the next screen, enter the URL in the given format: \
    Payload URL: < instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request\
-   For example: If the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest).
+   For example: If the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
 
 <figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

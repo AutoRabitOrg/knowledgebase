@@ -58,9 +58,7 @@ _A developer writes an application that is running in Azure or anywhere with Int
 
 Payload URL: `< instance_url>/api/webhook/v2/<orgname>/trigger-scm-push-request` &#x20;
 
-For example: If the instance is https://login.autorabit.com, then the payload URL would be:
-
-[https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://login.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
+For example: If the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
 
 7\. Add the basic authentication details as below &#x20;
 
@@ -70,21 +68,21 @@ For example: If the instance is https://login.autorabit.com, then the payload UR
 
 <figure><img src="../../../../../.gitbook/assets/unknown (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Enter the Username used in Autorabit and password as webhook API Token generated in ARM.&#x20;
+8. Enter the Username used in Autorabit and password as webhook API Token generated in ARM.&#x20;
 
 {% hint style="info" %}
 NOTE: If any type of trigger event, such as Pull Request and Pull Request updated, is required, use the same hook configuration with the above URL and respective authentication details."&#x20;
 {% endhint %}
 
-8\. confirm the settings are correct, test the subscription and then finish the wizard. &#x20;
+9. Confirm the settings are correct, test the subscription and then finish the wizard. &#x20;
 
 <figure><img src="../../../../../.gitbook/assets/Message.png" alt="" width="563"><figcaption></figcaption></figure>
 
-9. Click on the Finish button to complete the service hook subscription. The webhook can be seen in the Service Hooks tab.&#x20;
+10. Click on the Finish button to complete the service hook subscription. The webhook can be seen in the Service Hooks tab.&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
 
-10. Once the build is triggered via webhook and completed successfully, refresh the service hook tab to find out that the webhook succeeded. We can also view the history of webhooks to see how many times the event was triggered and if the webhook was completed successfully or not.&#x20;
+11. Once the build is triggered via webhook and completed successfully, refresh the service hook tab to find out that the webhook succeeded. We can also view the history of webhooks to see how many times the event was triggered and if the webhook was completed successfully or not.&#x20;
 
 #### For Enterprise customers: &#x20;
 

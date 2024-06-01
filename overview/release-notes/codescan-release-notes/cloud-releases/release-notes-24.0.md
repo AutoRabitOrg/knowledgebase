@@ -38,8 +38,11 @@ There are no New Features associated with this release&#x20;
 
 **Enhancements:**
 
-1. SBOM Upgrade for ADO Extension:&#x20;
-   * CodeScan currently provides an ADO extension to integrate with Azure DevOps. For this enhancement, we have upgraded components and libraries (within our SBOM), eliminating all high severity vulnerabilities.&#x20;
+1.  SBOM Upgrade for ADO Extension:&#x20;
+
+    * CodeScan currently provides an ADO extension to integrate with Azure DevOps. For this enhancement, we have upgraded components and libraries (within our SBOM), eliminating all high severity vulnerabilities.&#x20;
+
+
 2.  &#x20;Severity added to SARIF output:&#x20;
 
     * &#x20;CodeScan currently generates SARIF output that SARIF output in GitHub does not contain the severity. By adding severity to our SARIF output, CodeScan can now provide a more verbose presentation of the issues in GitHub. This change will provide a better experience for our customers working in GitHub Actions.&#x20;
@@ -48,6 +51,8 @@ There are no New Features associated with this release&#x20;
 3.  Added more fields in our Report Header&#x20;
 
     * CodeScan Report Header contained limited information regarding the context of the report.  This enhancement provides much more detailed information including:&#x20;
+
+
 
     **Field 1**&#x20;
 
@@ -84,7 +89,7 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 * Value = Date of the last analysis of the comparison branch
 
 {% hint style="info" %}
-NOTE: If there isn’t a corresponding comparison branch or pull request branch, the value should be “Not Applicable”)
+NOTE: If there isn’t a corresponding comparison branch or pull request branch, the value should be “Not Applicable”
 {% endhint %}
 
 **Field 7**

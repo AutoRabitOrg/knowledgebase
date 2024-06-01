@@ -25,16 +25,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
 
 ### **Summary:**&#x20;
 
-CodeScan 24.0.6 is comprised of the following 5 components:&#x20;
-
-* 3 Enhancements&#x20;
-* 2 Architecture Improvements&#x20;
-
-Component details are listed in their corresponding sections within this document.&#x20;
-
-### **New Features:**&#x20;
-
-There are no New Features associated with this release.
+CodeScan 24.0.6 is comprised of the following 3 enhancements:&#x20;
 
 ### **Enhancements:**
 
@@ -98,14 +89,6 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 * Value = The corresponding version number listed in version history / measure history&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-06-01 at 9.25.18 AM.png" alt=""><figcaption></figcaption></figure>
-
-### **New Rules:**&#x20;
-
-There are no New Rules associated with this release. &#x20;
-
-### **Fixes:**
-
-There are no Fixes associated with this release.&#x20;
 
 
 

@@ -23,7 +23,7 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
 
 **Release Date: 5 June 2024**
 
-**Summary:**&#x20;
+### **Summary:**&#x20;
 
 CodeScan 24.0.6 is comprised of the following 5 components:&#x20;
 
@@ -32,11 +32,11 @@ CodeScan 24.0.6 is comprised of the following 5 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-**New Features:**&#x20;
+### **New Features:**&#x20;
 
 There are no New Features associated with this release.
 
-**Enhancements:**
+### **Enhancements:**
 
 1.  SBOM Upgrade for ADO extension:&#x20;
 
@@ -99,11 +99,11 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-06-01 at 9.25.18 AM.png" alt=""><figcaption></figcaption></figure>
 
-**New Rules:**&#x20;
+### **New Rules:**&#x20;
 
 There are no New Rules associated with this release. &#x20;
 
-**Fixes:**
+### **Fixes:**
 
 There are no Fixes associated with this release.&#x20;
 

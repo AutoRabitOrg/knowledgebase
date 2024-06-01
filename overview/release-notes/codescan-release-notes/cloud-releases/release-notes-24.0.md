@@ -27,19 +27,19 @@ We're committed to enhancing your experience and ensuring CodeScan meets your ev
 
 CodeScan 24.0.6 is comprised of the following 3 enhancements:&#x20;
 
-### **Enhancements:**
 
-1.  SBOM Upgrade for ADO extension:&#x20;
+
+1.  **SBOM Upgrade for ADO extension:**&#x20;
 
     * CodeScan currently provides an ADO extension to integrate with Azure DevOps. For this enhancement, we have upgraded components and libraries (within our SBOM), eliminating all high-severity vulnerabilities.&#x20;
 
 
-2.  &#x20;Severity added to SARIF output:&#x20;
+2.  &#x20;**Severity added to SARIF output:**&#x20;
 
     * CodeScan currently generates SARIF output; however, that SARIF output in GitHub does not contain the severity. By adding severity to our SARIF output, CodeScan can now provide a more verbose presentation of the issues in GitHub. This change will provide a better experience for our customers working in GitHub Actions.&#x20;
 
 
-3.  Added more fields in our Report Header:
+3.  **Added more fields in our Report Header:**
 
     * CodeScan report header contained limited information regarding the context of the report.  This enhancement provides much more detailed information including:&#x20;
 

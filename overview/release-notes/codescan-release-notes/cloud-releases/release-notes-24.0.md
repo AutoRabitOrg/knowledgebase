@@ -1,3 +1,7 @@
+---
+description: Newest CodeScan Release
+---
+
 # Release Notes 24.0
 
 ## CodeScan Cloud
@@ -14,6 +18,91 @@ Starting **March 27, 2024**, we're thrilled to announce a new, streamlined relea
 
 We're committed to enhancing your experience and ensuring CodeScan meets your evolving needs. Stay tuned for more updates!
 {% endhint %}
+
+## Release Notes 24.0.6
+
+**Release Date: 5 June 2024**
+
+**Summary:**&#x20;
+
+CodeScan 24.0.6 is comprised of the following 5 components:&#x20;
+
+* 3 Enhancements&#x20;
+* 2 Architecture Improvements&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+**New Features:**&#x20;
+
+There are no New Features associated with this release&#x20;
+
+**Enhancements:**
+
+1. SBOM Upgrade for ADO Extension:&#x20;
+   * CodeScan currently provides an ADO extension to integrate with Azure DevOps. For this enhancement, we have upgraded components and libraries (within our SBOM), eliminating all high severity vulnerabilities.&#x20;
+2.  &#x20;Severity added to SARIF output:&#x20;
+
+    * &#x20;CodeScan currently generates SARIF output that SARIF output in GitHub does not contain the severity. By adding severity to our SARIF output, CodeScan can now provide a more verbose presentation of the issues in GitHub. This change will provide a better experience for our customers working in GitHub Actions.&#x20;
+
+
+3.  Added more fields in our Report Header&#x20;
+
+    * CodeScan Report Header contained limited information regarding the context of the report.  This enhancement provides much more detailed information including:&#x20;
+
+    **Field 1**&#x20;
+
+    * Label = "Report Generation Date"
+    * Value = Date report was created
+
+    **Field 2**
+
+    * Label = “Project Name”&#x20;
+    * Value = name of project&#x20;
+
+    **Field 3**
+
+    * Label = “Main Branch”&#x20;
+    * Value = name of the Main Branch&#x20;
+
+    **Field 4**
+
+    * Label = “Main Branch – Last Analysis Date”&#x20;
+    * Value = Date of the last analysis of the main branch&#x20;
+
+    **Field 5**
+
+    * Label = “Comparison Branch”&#x20;
+    * Value = name of the comparison branch or the name of the pull request branch.&#x20;
+
+{% hint style="info" %}
+NOTE: If there is not a corresponding comparison branch or pull request branch, the value should be “Not Applicable”
+{% endhint %}
+
+**Field 6**
+
+* Label = “Comparison Branch – Last Analysis Date”&#x20;
+* Value = Date of the last analysis of the comparison branch
+
+{% hint style="info" %}
+NOTE: If there isn’t a corresponding comparison branch or pull request branch, the value should be “Not Applicable”)
+{% endhint %}
+
+**Field 7**
+
+* Label = “Version”&#x20;
+* Value = The corresponding version number listed in version history / measure history&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2024-06-01 at 9.25.18 AM.png" alt=""><figcaption></figcaption></figure>
+
+**New Rules:**&#x20;
+
+There are no New Rules associated with this release &#x20;
+
+**Fixes:**
+
+There are no Fixes associated with this release&#x20;
+
+***
 
 ## Release Notes 24.0.5
 

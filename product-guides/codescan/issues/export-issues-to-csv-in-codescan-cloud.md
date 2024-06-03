@@ -17,7 +17,12 @@ The following are some of the use cases for exporting issues as CSV files:
 
 1. Login to your CodeScan account and select your CodeScan organization.
 2. Navigate to the **More** tab and choose **CSV Export** from the dropdown.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QB3CQ7K9.png)
+
+
+<figure><img src="../../../.gitbook/assets/image (399).png" alt="" width="563"><figcaption></figcaption></figure>
+
 3. Using the available filters, choose the issues you want to include in the CSV file.
 4. Click **Export** to download the file in your local machine.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-9U17XKVO.png)
+
+
+<figure><img src="../../../.gitbook/assets/image (400).png" alt="" width="476"><figcaption></figcaption></figure>

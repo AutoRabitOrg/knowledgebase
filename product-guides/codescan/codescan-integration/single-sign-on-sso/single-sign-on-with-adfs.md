@@ -36,11 +36,11 @@ Before configuring SSO in ADFS, you must enable SSO in CodeScan.
 
 7. Keep the **SAML Connection status** checkbox as **Enabled** and click on the **Create** button.
 
-![A screenshot of a computer](../../../../.gitbook/assets/1.jpeg)
+![](../../../../.gitbook/assets/1.jpeg)
 
 8. You can see the **Metadata URL** generated for your SSO configuration. Copy the **Metadata URL** in a new browser tab to download the XML file on your local device.
 
-![A screenshot of a computer](../../../../.gitbook/assets/2.jpeg)
+![](../../../../.gitbook/assets/2.jpeg)
 
 ### **Step 2: Setting up Single Sign-On using Active Directory with ADFS and SAML 2.0**
 
@@ -52,7 +52,7 @@ To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), f
 2. Go to **Tools > AD FS Management** to launch the **ADFS Management Console**.
 3. Click on **Add Relying Party Trust…** from the **Actions** sidebar on the right.
 
-![A screenshot of a computer](../../../../.gitbook/assets/4.jpeg)
+![](../../../../.gitbook/assets/4.jpeg)
 
 4. On the **Welcome** screen, select the **Claims aware** option and click **Start**.
 
@@ -61,15 +61,15 @@ To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), f
 5. On the **Select Data Source** screen, select the second option: **Import data about the relying party from a file**.
 6. Browse for the **metadata XML** file from your local computer and upload it in the **Federation**  **metadata file location**.
 
-![A screenshot of a computer](../../../../.gitbook/assets/7.jpeg)
+![](../../../../.gitbook/assets/7.jpeg)
 
 7. On the next screen, enter a **display name** that you will recognize in the future.
 
-![A screenshot of a computer](../../../../.gitbook/assets/9.jpeg)
+![](../../../../.gitbook/assets/9.jpeg)
 
 8. On the next screen, leave the defaults.
 
-![A screenshot of a computer](../../../../.gitbook/assets/11.jpeg)
+![](../../../../.gitbook/assets/11.jpeg)
 
 9. On the **Configure URL** screen:
 
@@ -94,27 +94,21 @@ Your connection\_id will be available in the **Metadata URL** generated inside C
 11. On the next screen, add a **Relying party trust identifier** . This should be the name of your SAML connection in CodeScan. In this case, it is _**CodeScan.**_
 12. Click **Add**.
 
-![A screenshot of a computer
-
-Description automatically generated](../../../../.gitbook/assets/15.jpeg)
+![](../../../../.gitbook/assets/15.jpeg)
 
 13. On the next screen, leave the defaults.
 
-![A screenshot of a computer
-
-Description automatically generated](../../../../.gitbook/assets/17.jpeg)
+![](../../../../.gitbook/assets/17.jpeg)
 
 14. The wizard will display an overview of your settings on the next screen. Click **Next**.
 
-![A screenshot of a computer
-
-Description automatically generated](../../../../.gitbook/assets/19.jpeg)
+![](../../../../.gitbook/assets/19.jpeg)
 
 15. On the final screen, keep the **Configure claims issuance policy for this application** checkbox selected, and click on the **Close** button to open the Claim Rules editor.
 
 <figure><img src="../../../../.gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
 
-**2.2 Creating Claim Rules**
+#### **2.2 Creating Claim Rules**
 
 Once the Relying Party Trust exists, you can create the claim rules and update the Relying Party Trust with minor changes that the wizard does not set.
 

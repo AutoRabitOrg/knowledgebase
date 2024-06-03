@@ -86,6 +86,19 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 5 June 2024
+
+**ARM 23.1.33**
+
+1. A code fix was applied to all modules prompted by an internal change request in preparation for support of the Salesforce Summer '24 release. This will require updates to internal documentation.
+2. A code fix was applied to the Deployments module resulting from an internal request to correct a use-case error in which a deployment failure and document discrepancy were encountered, with subsequent deployment attempts unsuccessful.
+3. &#x20;A code fix was applied to the Version Control module initiated by a use-case error in which the team encountered an ALM commit issue related to the label name when testing a user story. Support ticket #113308
+4. A code fix was applied to the Version Control module related to a use-case error occurring when processing merge conflicts. Support ticket #113606
+5. A code fix was applied to the Admin module related to a data error in which the branching baseline was not updating the LWCs in the branch. Support ticket #113174
+6. A code fix was applied to the Data Loader module related to a configuration error causing Data Loader to not work as expected. Support ticket #113575&#x20;
+
+
+
 #### 29 May 2024
 
 **ARM 23.1.32**

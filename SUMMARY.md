@@ -60,6 +60,7 @@
   * [CodeScan–FAQs](fundamentals/faq/codescan-faqs.md)
   * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
     * [Common Restore Errors & Solutions](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)
+    * [Archival Best Practices](fundamentals/faq/vault-faqs/archival-best-practices.md)
 
 ## Product Guides
 

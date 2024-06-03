@@ -58,6 +58,7 @@
   * [nCino](fundamentals/faq/ncino.md)
   * [Retention Policy](fundamentals/faq/retention-policy.md)
   * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
+  * [CodeScan–FAQs](fundamentals/faq/codescan-faqs.md)
 
 ## Product Guides
 

@@ -58,7 +58,7 @@
   * [nCino](fundamentals/faq/ncino.md)
   * [Retention Policy](fundamentals/faq/retention-policy.md)
   * [CodeScan–FAQs](fundamentals/faq/codescan-faqs.md)
-  * [Vault-FAQs](fundamentals/faq/vault-faqs/README.md)
+  * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
     * [Common Restore Errors & Solutions](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)
 
 ## Product Guides

@@ -7,7 +7,7 @@ You can set up a default dashboard to see first when you log in to Insights. Her
 1.  Click on the “All dashboards” breadcrumb.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -15,6 +15,6 @@ You can set up a default dashboard to see first when you log in to Insights. Her
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>
 
 That’s it. Next time you log in to FlowCenter Insights, this dashboard will appear as your home page.&#x20;

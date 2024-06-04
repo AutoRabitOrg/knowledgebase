@@ -15,6 +15,23 @@ For vulnerabilities, the goal is to have more than 80% of issues be true positiv
 
 Security hotspot rules draw attention to code that is security-sensitive. It is expected that more than 80% of the issues will be quickly resolved as "reviewed" after being reviewed by a developer.
 
+{% hint style="info" %}
+Please note that not all rules available on CodeScan Cloud are available in the Self Hosted CodeScan version.  The following rules will not function on CodeScan Self Hosted:
+
+
+
+* Limit number of Custom Profiles with Modify All Data Permission (sfmeta:CustomProfilesPermission)
+* Limit number of Page Layouts per object (sfmeta:ExcessivePageLayout)
+* Limit number of Custom Fields per object (sfmeta:LimitCustomFields)
+* Limit number of System Administrators(sfmeta:CheckSystemAdministrator)
+
+
+
+These rules require a direct connection to the Salesforce environment to execute queries.&#x20;
+{% endhint %}
+
+
+
 ### Access Quality Rules <a href="#access-quality-rules" id="access-quality-rules"></a>
 
 You can access the **Quality Rules** page from the Organization’s home page.

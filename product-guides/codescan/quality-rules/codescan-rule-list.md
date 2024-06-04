@@ -8,9 +8,9 @@ You can download the list of CodeScan rules from here:
 
 {% file src="../../../.gitbook/assets/CodeScan Rules List-05-15-24.xlsx" %}
 
-#### CodeScan Cloud-only Rules
+### Rules not available On-premise
 
-There are a few rules that are available only on cloud. Refer to the list that follows:
+There are a few rules that are not available for Self-hosted. Refer to the list that follows:
 
 {% file src="../../../.gitbook/assets/CodeScan_Cloud_Only_Rules_24_0_4.xlsx" %}
 

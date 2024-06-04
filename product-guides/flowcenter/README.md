@@ -12,10 +12,10 @@ layout:
     visible: true
 ---
 
-# Flow Center
+# FlowCenter
 
-### 'What is FlowCenter?
+### 'What is FlowCenter Insights?
 
-FlowCenter is an umbrella term that groups different capabilities that bring visibility into your DevOps process.&#x20;
+FlowCenter Insights is an umbrella term that groups different capabilities that bring visibility into your DevOps process.&#x20;
 
 {% embed url="https://youtu.be/YDUjTRSpl1k" %}

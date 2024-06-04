@@ -12,16 +12,16 @@ Retrieve the CI build / job details, trigger new job, and view different CI job 
 
 
 
-[/api/cijobs/v1/ncino/getAllProjects](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#451dcaa6-cec6-4986-9d01-40af42cb5cac)&#x20;
+[/api/cijobs/v1/ncino/getAllProjects](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#c5683af0-82c3-473e-bb2e-5f4bbbb5b948)&#x20;
 
-[/api/cijobs/v1/ncino/jobHistory](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#0278ea20-95b1-41d1-8aeb-e8753a03e94b)&#x20;
+[/api/cijobs/v1/ncino/jobHistory](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#e942aa30-6f6b-43b4-a126-f249736068b4)&#x20;
 
-[/api/cijobs/v1/ncino/triggerBuild](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#cc5ef13f-93e0-497f-b512-2cd3a2f2146d)&#x20;
+[/api/cijobs/v1/ncino/triggerBuild](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#e0af79bd-e099-4ee3-ab8a-3dd68c571868)&#x20;
 
-[/api/cijobs/v1/ncino/ciJobBuildSummary](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#ea6d340c-ae1b-45a1-89df-7f74aa49c4ae)&#x20;
+[/api/cijobs/v1/ncino/ciJobBuildSummary](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#b588c95a-2fed-43be-9634-c2e913bdab36)&#x20;
 
-[/api/cijobs/v1/ncino/getcijobinfo](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#7cd6557e-5023-46f4-bec0-a1cff1bc9e81)&#x20;
+[/api/cijobs/v1/ncino/getcijobinfo](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#7043dc37-8984-4cea-8d01-684adbde3922)&#x20;
 
-[/api/cijobs/v1/ncino/ciJobBuildHistory](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#5f0d56e5-e995-40c7-9892-9bbf3f581c3c)&#x20;
+[/api/cijobs/v1/ncino/ciJobBuildHistory](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#498dac72-224d-4a44-b756-20d31791c7a1)&#x20;
 
-[/api/cijobs/v1/ncino/pollStatus](https://documenter.getpostman.com/view/27926954/2s9YXpVyxH#b9dad5b8-bfba-4979-83f4-aa73c3937ac2)&#x20;
+[/api/cijobs/v1/ncino/pollStatus](https://documenter.getpostman.com/view/35959276/2sA3QwdAaS#ec2b3059-996d-41f8-a4b5-a7f82512056a)&#x20;

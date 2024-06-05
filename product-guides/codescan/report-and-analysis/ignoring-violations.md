@@ -26,7 +26,6 @@ class newClass {
      }
    }
 }
-
 ```
 
 ### Using @SuppressWarnings <a href="#using-suppresswarnings" id="using-suppresswarnings"></a>
@@ -72,11 +71,14 @@ class newClass {
 
 **The names of the rules can be found in:**
 
-* **SonarQube™/**[**CodeScan Cloud**](https://www.codescan.io/products/cloud/), by clicking on a specific rule in the Rules menu.\
-  ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(293\).png)
+* **SonarQube™/**[**CodeScan Cloud**](https://www.codescan.io/products/cloud/), by clicking on a specific rule in the Rules menu.
+
+<figure><img src="../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+
 * **IntelliJ**, next to the rule violations themselves when a violation is selected.\
-  CodeScan Rules found in IntelliJ\
-  ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(294\).png)
+  CodeScan Rules found in IntelliJ
+
+<figure><img src="../../../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
 
 **The syntax is as follows:**
 

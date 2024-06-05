@@ -12,6 +12,6 @@ Your edition of SonarQube™ also limits the features. SonarQube™ provides a f
 
 Platform API endpoints are very similar but are also subject to the version and the edition of SonarQube™ you are using.
 
-Note:
-
-**SonarQube™** documentation can be found at [https://docs.sonarqube.org](https://docs.sonarqube.org/) and has information on current integrations and analysis options with a self-hosted installation.
+{% hint style="info" %}
+**Note:** SonarQube™ documentation can be found at [https://docs.sonarqube.org](https://docs.sonarqube.org/) and has information on current integrations and analysis options with a self-hosted installation.
+{% endhint %}

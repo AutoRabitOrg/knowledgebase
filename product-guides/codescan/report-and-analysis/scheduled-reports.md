@@ -4,15 +4,17 @@
 
 You can schedule to run the project reports daily, weekly or monthly using this option. On scheduling the report, the selected report gets generated automatically on the specified date and time and the generated report is sent to the respective user through e-mail. Thus by scheduling the reports you get the data in regular intervals without manually generating it.
 
-What's New
+#### What's New
 
 Previously, the project reports were available for download for the main branches. With **CodeScan 22.7** update, we now support generating reports manually or by scheduling them for every project branch.
 
 To configure scheduled reports,
 
 1. Select the CodeScan organization and choose your project.
-2. Navigate to the **More** tab and choose **Project Reports** from the dropdown.\
-   ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-K708W1C7.png)
+2. Navigate to the **More** tab and choose **Project Reports** from the dropdown.
+
+<figure><img src="../../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure>
+
 3. Choose **Scheduling** option as **Cron**, if not automatically selected.
 4. The **Cron expression** is a string consisting five subexpressions (fields) that describe individual details of the schedule.
 
@@ -24,7 +26,7 @@ To configure scheduled reports,
 | Month        | 0-11 or JAN-DEC | , - \* /                   |
 | Day of week  | 1-7 or SUN-SAT  | , - \* ? / L C #           |
 
-5. Choose **Recieve Scheduled Reports** as **Enabled**.
+5. Choose **Receive Scheduled Reports** as **Enabled**.
 6. Click **Run now**.
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QA1O2UXL.png)
+<figure><img src="../../../.gitbook/assets/image (415).png" alt="" width="486"><figcaption></figcaption></figure>

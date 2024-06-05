@@ -1,6 +1,6 @@
 # CodeScan License Issues (IDE)
 
-Depending on permissions in your SonarQube instance, the following issue can occur when running the analysis:
+Depending on permissions in your SonarQube™ instance, the following issue can occur when running the analysis:
 
 \[Warn  - 12:10:58] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#x20;
 
@@ -10,11 +10,10 @@ Depending on permissions in your SonarQube instance, the following issue can occ
 
 \[Error - 12:10:58] CodeScan is NOT licensed. Please contact [support@code-scan.com](mailto:support@code-scan.com) to purchase or renew your license
 
-\
-
-
 The issue is that the license is a variable that needs to be checked by [CodeScan](https://www.codescan.io/) when it runs and the user that created the token needs certain permissions for the plugin to access the license variable.\
-So this can be solved by allowing access to the variable or providing the license early. Here are the options:
+So this can be solved by allowing access to the variable or providing the license early.&#x20;
+
+**Here are the options:**
 
 Enable the Execute Analysis permission on the Global level to read the CodeScan license key configured on the organization level for each member/group that is using [VS Code](https://www.autorabit.com/ide-extension/).
 

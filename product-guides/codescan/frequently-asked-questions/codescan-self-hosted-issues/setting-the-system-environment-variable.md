@@ -6,11 +6,9 @@ You must renew your subscription by entering a new licence key if your subscript
 
 A CodeScan license key can be passed on by setting the path and environment variables in user's machine.
 
-Point to Note
-
-**Administrator** privileges are required to set the system environment variables.
-
-***
+{% hint style="info" %}
+**Note:** Administrator privileges are required to set the system environment variables.
+{% endhint %}
 
 ### Set the system environment variables in Windows machine <a href="#set-the-system-environment-variables-in-windows-machine" id="set-the-system-environment-variables-in-windows-machine"></a>
 
@@ -28,8 +26,6 @@ Point to Note
 8. Click **`OK`**.
 9. Click **`OK`** again to close the **`Environment Variables`** screen.
 
-***
-
 #### For Windows 10 <a href="#for-windows-10" id="for-windows-10"></a>
 
 1. Press the **`Windows key+X`** to access the **`Power User Task`** menu.
@@ -39,13 +35,9 @@ Point to Note
 5. In the **`Environment Variables`** window, click on **`New`** button in the **`System variables`** section.
 6. Enter the following details:
    * **`Variable name`:** **codescanLicense**
-   * **`Value:`** **\<License\_Key>**\
-     \
-
+   * **`Value:`** **\<License\_Key>**
 7. Click **`OK`.**
 8. Click **`OK`** again to close the **`Environment Variables`** screen.
-
-***
 
 #### In MacOS <a href="#in-macos" id="in-macos"></a>
 

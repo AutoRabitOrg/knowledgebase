@@ -10,7 +10,6 @@ If you are in the **EU** region;
 | ------------------------------ | ----------------------------------------------- |
 | **https://app-eu.codescan.io** | <p>3.121.33.223<br><br>3.74.191.216<br><br></p> |
 
-\
 
 
 If you are in the **US** region;

@@ -14,23 +14,19 @@ License expired on <date_of_expiry>
 Code: 6
 
 XXXXXXXXXXXXXXXXXXXXX
+
 ```
-
-\
-
 
 A CodeScan license key can be entered via the following ways:
 
-* [**Sonarqube UI**](https://docs.sonarqube.org/9.6/instance-administration/license-administration/)
-* **Command Line parameter** \[-Dsf.license.secured]
-* In the **sonar.properties**, **codescan.properties** or **sfdx-project.json** inside the **project** folder considered for analysis
-* In the **Sonarqube-{version} installation** folder\
-  **Example:** _sonarqube-1.0.12345/conf/sonar.properties_
-* [**System environment variable**](https://knowledgebase.autorabit.com/codescan/docs/setting-the-system-environment-variable)**:** Add an environment variable called **codescanLicense** containing the license on the user's machine.
-  * **Variable name:** _codescanLicense_
-  * **Value:** _\<License\_Key>_
-
-***
+1. [**Sonarqube UI**](https://docs.sonarqube.org/9.6/instance-administration/license-administration/)
+2. **Command Line parameter** \[-Dsf.license.secured]
+3. In the **sonar.properties**, **codescan.properties** or **sfdx-project.json** inside the **project** folder considered for analysis
+4. In the **Sonarqube-{version} installation** folder\
+   **Example:** _sonarqube-1.0.12345/conf/sonar.properties_
+5. [**System environment variable**](https://knowledgebase.autorabit.com/codescan/docs/setting-the-system-environment-variable)**:** Add an environment variable called **codescanLicense** containing the license on the user's machine.
+   * **Variable name:** _codescanLicense_
+   * **Value:** _\<License\_Key>_
 
 ### Proxy Errors <a href="#proxy-errors" id="proxy-errors"></a>
 
@@ -46,8 +42,6 @@ The most common problem with licensing problems are when your network has a prox
 
 **Couldn't fetch license for unlicensed product** is sometimes coupled with something similar to:
 
->
-
 {% code overflow="wrap" %}
 ```
 JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF near <!DOCTYPE html PUBLIC "-//W3C//DTD
@@ -55,13 +49,9 @@ JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected EOF
 ```
 {% endcode %}
 
-\
-\
 This is the proxy replying with an HTML error page when a JSON object is expected.
 
 See [**here**](https://knowledgebase.autorabit.com/codescan/docs/setting-up-codescan-for-use-with-a-proxy) for instructions on how to set up CodeScan on a network with a proxy.
-
-***
 
 ### Version Errors <a href="#version-errors" id="version-errors"></a>
 
@@ -83,8 +73,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 This can be avoided by updating to the latest version of CodeScan.
 
 If this is not an option, contact [Support](https://www.codescan.io/contact/) for assistance and we will provide you with the appropriate license version.
-
-***
 
 ### Line Count Problems <a href="#line-count-problems" id="line-count-problems"></a>
 

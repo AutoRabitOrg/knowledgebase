@@ -5,15 +5,13 @@ My team member assigned me issues for a project, yet, I have not received any em
 
 **Probable Cause:**
 
-1.  Verify the **notifications feature is turned on** for any new issues in your profile.\
+1. Verify the **notifications feature is turned on** for any new issues in your profile.
 
+<figure><img src="../../../../.gitbook/assets/image (429).png" alt="" width="518"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-B5TEX58T.png" alt=""><figcaption></figcaption></figure>
 2. If you login to CodeScan through SSO, ensure the following:
-   1. Email attributes are configured in SAML configuration.
-   2. If **SAML username** attribute contains **email** as a value, email security tools may block the notifications.
-
-***
+   * Email attributes are configured in SAML configuration.
+   * If **SAML username** attribute contains **email** as a value, email security tools may block the notifications.
 
 **Key point to note related to CodeScan Notification issue**
 

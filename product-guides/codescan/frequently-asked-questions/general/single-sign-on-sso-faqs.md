@@ -46,4 +46,6 @@ If a user's session times out, CodeScan will direct the user back to the Identit
 
 All non-Admin users must log in using the Identity Provider after SSO is enabled. To access your CodeScan organisation, new users must first be added to the Identity Provider.
 
+{% hint style="info" %}
 **Note:** If your team has single sign-on (SSO) and **`Enforce SSO`** enabled, Admins should not invite new users via the CodeScan app. You must invite new users via your Identity Provider.
+{% endhint %}

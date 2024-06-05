@@ -1,6 +1,6 @@
 # Issue "ip restricted"
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-LMO4KJOV.png)
+<figure><img src="../../../../.gitbook/assets/image (450).png" alt=""><figcaption></figcaption></figure>
 
 The **ip restricted** issue can be solved by relaxing the ip restrictions for the CodeScan connected app in the org you are trying to scan.
 

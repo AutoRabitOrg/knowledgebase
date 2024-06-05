@@ -2,12 +2,12 @@
 
 This error can be solved by manually adding a parameter to dedicate memory to the build process.
 
-* In your Jenkins project, click **configure**.
-* Scroll down to the **Build** section of the page to the Build Step titled **Invoke Ant** with the fields:
-  * **Ant Version**: [CodeScan](https://www.codescan.io/) Bundled Ant
-  * **Targets**: sonar
-* Click on **Advanced**.
-* In the **Java Options** field, add the parameter -**Xmx2000m**. This will assign **2000mb** of memory to you build.
+1. In your Jenkins project, click **configure**.
+2. Scroll down to the **Build** section of the page to the Build Step titled **Invoke Ant** with the fields:
+   * **Ant Version**: [CodeScan](https://www.codescan.io/) Bundled Ant
+   * **Targets**: sonar
+3. Click on **Advanced**.
+4. In the **Java Options** field, add the parameter -**Xmx2000m**. This will assign **2000mb** of memory to you build.
 
 If after increasing the heap space you get the error:
 

@@ -15,28 +15,28 @@ The Replication functionality enables you to replicate objects between two Sales
 1. Login to your Vault account.
 2. Click on **`Replicate`** from the Vault dashboard page and click on **Replicate Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, select your **`Salesforce Org`**.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Next, select the **`Destination Org`**.
 
-<figure><img src="../../../../.gitbook/assets/image (58) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Next, select the **`Replicate Source`** and its **`configuration`** from the drop-down.
 
-<figure><img src="../../../../.gitbook/assets/image (59) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Based on the **replicate source** and **configuration** selection, the configured list will get displayed.
 7. For **`backup`** as the replicate source, you can select multiple backups for replication. However for **`archival/hierarchical backup`**, you can choose only one from the list.
 
-<figure><img src="../../../../.gitbook/assets/image (60) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (61) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (62) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click on either **`EZ Replicate`** or **`Selective Replicate`**.
 
@@ -46,11 +46,11 @@ Full replication copies everything from the source to the destination, including
 
 1. Select the **`backups/hierarchical/archival`** to replicate and click on the **`EZ Replicate`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The replicate checklists are displayed on the next pop-up screen, which must be considered before we proceed with the replicate operation. Click **`Got It`** to close the popup.
 
-<figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -64,7 +64,7 @@ Full replication copies everything from the source to the destination, including
 5. The list of metadata and data objects replicated will be displayed for the last time before the replicate process begins. You will not have options to select individual objects as it is an entire replicate process.
 6. Click **`Replicate Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (65) (1) (1).png" alt="" width="551"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1).png" alt="" width="551"><figcaption></figcaption></figure>
 
 #### Selective Replicate <a href="#selective-replicate" id="selective-replicate"></a>
 
@@ -72,16 +72,16 @@ This option allows you to select specific metadata/data that gets replicated onl
 
 1. Select the **backups/archival** to replicate and click the **`Selective Replicate`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (66) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The next screen displays the metadata and data objects that will be replicated. From the list of **Metadata** and **Data** type components, the user needs to select the components (along with their member) that will get replicated.
 3. Under the **`Metadata`** tab, you can choose the metadata members for each metadata type.
 
-<figure><img src="../../../../.gitbook/assets/image (67) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (69) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (69) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  On the **`Data`** tab, you additionally have the below configurations:
 
@@ -91,27 +91,27 @@ This option allows you to select specific metadata/data that gets replicated onl
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1650393728235.png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (72) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (72) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 5. You may notice in the schema view that some objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object, which will be replicated if its parent object is selected. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for replication. A warning popup appears when you click the **`Save`** button, stating you must select the appropriate hierarchy for the replicate procedure, or the process will fail. Click **`OK`** to dismiss the popup notification and return to the previous screen.
 
-<figure><img src="../../../../.gitbook/assets/image (73) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (73) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. **`Mappings:`** Map your source fields to your destination fields. Any matching headers from your source fields and your destination fields map automatically.
 
-<figure><img src="../../../../.gitbook/assets/image (74) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. **`Records:`** View the list of records for the object selected. Here, you can choose the records you wish to replicate to the destination org. You also have the option of importing records from a CSV file. To upload the CSV, click the **`Choose File`** button in the top right corner of the screen.
 
-<figure><img src="../../../../.gitbook/assets/image (75) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (75) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Next, click on either the **`Next`** or **`Replicate`** button. If you choose **`Next`**, you will be navigated to a new screen where you can add a new masking rule. Data masking refers to changing certain data elements within a data store so that the structure remains similar while the information is changed to protect sensitive information. It ensures that sensitive customer information is unavailable beyond the permitted production environment.&#x20;
 9. However, if you want to skip the masking steps, click **`Replicate`**.
 
-<figure><img src="../../../../.gitbook/assets/image (76) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (76) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Let's create a masking rule before we conclude the replicate process. To do so, click on **`Next`**. Now, click on the **`New Masking Rule`** button available in the top right corner.
 
-<figure><img src="../../../../.gitbook/assets/image (77) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (77) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 11. In the **`Masking Form`** screen, do the following:
 
@@ -124,15 +124,15 @@ This option allows you to select specific metadata/data that gets replicated onl
 * Choose the fields for which the masking will be applicable.&#x20;
 * Once done, click on the **`Add`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (79) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (79) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 12. Now, click on the **`Replicate`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (80) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. The following popup screen displays the restore checklists, which must be considered before we continue with the replicate operation. Click on **`Got It`** button to close the popup.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (81) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (81) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 14. On the next screen, you will need to:
     * On the next screen, enter the **`Replicate label`** of your choice or leave the auto-generated default label.
@@ -145,20 +145,20 @@ This option allows you to select specific metadata/data that gets replicated onl
       4. **`Disable Triggers:`** When working with data and metadata, you may want to disable triggers you have in place to guarantee a successful replicate operation. _This feature disables Salesforce triggers only. Any managed package triggers will not be disabled._
 15. Click **`Replicate Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (82).png" alt="" width="368"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (82) (1).png" alt="" width="368"><figcaption></figcaption></figure>
 
 16. You will be redirected to the **`Replicate Summary`** homepage, which will show you the progress of the replicate operation recently triggered.
 17. Click on the **`Replicate Label`** to view the list of metadata/data being replicated to the org. Click on **`Export`** to locally save the restored metadata/data info in CSV format.
 
-<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (84) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Replicate Summary <a href="#replicate-summary" id="replicate-summary"></a>
 
 For each Replicate activity triggered in Vault, you will find the below details:
 
-<figure><img src="../../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (85) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute        | Description                                                                                                                                                                                                                                                                                                 |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

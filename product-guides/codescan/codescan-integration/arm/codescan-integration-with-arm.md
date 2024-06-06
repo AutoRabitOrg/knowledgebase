@@ -6,7 +6,7 @@ This helps us to offer essential solutions to the [Salesforce DevOps](https://ww
 
 To integrate all the functionalities included in your CodeScan account with ARM, you need to integrate CodeScan as a plugin with your ARM account which involves a few steps in your CodeScan as well as ARM account.
 
-To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the prcodure as described below.
+To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the procedure as described below.
 
 #### Create a CodeScan Token <a href="#create-a-codescan-token" id="create-a-codescan-token"></a>
 

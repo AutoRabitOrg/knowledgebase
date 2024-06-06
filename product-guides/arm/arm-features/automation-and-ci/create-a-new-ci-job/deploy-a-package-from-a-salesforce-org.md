@@ -110,44 +110,49 @@ This section is all about either deploying or validating the above package onto 
 1. **Validate Only:** With ARM, you can set up validation-only CI jobs between your Salesforce Orgs or Version Control, so you can catch any problematic changes early and make sure that when the time comes to deploy, you’ll be able to release successfully. All success and error messages are displayed on the CI Job Result page.&#x20;
    * **Prevent Deployment:** With AR 20.1 release onward, ARM will make sure that you do not trigger a build deployment for the validation-only CI jobs. Therefore, the **Deploy** option will either be in disabled mode or in some cases, will not be seen to the user whenever trying to trigger a new build for the validation-only CI jobs.Important NoteBuild triggers do not execute **Test Cases** if the **Validate Only** check box is selected.
 2. **Rollback:** Keep a copy of the changes before deployment and can revert the changes later.
-3. **Ignore Missing Visibility Settings, If Package Contains Profiles Or PermissionSets:** With this option, differences in visibility settings between the source and destination orgs will not cause the deployment to fail. ARM will compare the source and destination orgs and keep only the profile/permission sets settings that are common between both orgs.Important Note**Standard fields** are not supported for **Ignore Missing Visible Settings**.
+3. **Ignore Missing Visibility Settings, If Package Contains Profiles Or PermissionSets:** With this option, differences in visibility settings between the source and destination orgs will not cause the deployment to fail. ARM will compare the source and destination orgs and keep only the profile/permission sets settings that are common between both orgs. **Please Note:**
+   * **Deploying Standard Objects:** AutoRabit does not ignore Standard Objects like Cases during the deployment phase when layout assignments and RecordType permissions are provided in profiles. Ensure that the necessary layouts and record types are deployed to the target sandbox before handling Field-Level Security (FLS) permissions.
+   * **Limitation with FLS Permissions:** Note that the "Ignore Missing Visibility" option in AutoRABIT cannot be used to ignore FLS permissions for Standard Objects. FLS permissions for Standard Objects cannot be ignored, and it is important to follow the recommended process of deploying layouts and record types first.&#x20;
 4. **Ignore Installed (Managed) components:** This option will exclude any **Managed packages** that the user may have installed.
    * **Ignore all manually created components:** All manually added components in the installed (managed) package will also get excluded.
 5. **Ignore warnings:** These allow the metadata members to get deployed even though errors/warnings are encountered during deployment.&#x20;
 6. **Do not include 'Skip members' during Deployment:** This option will get displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](../../../getting-started/salesforce-org-management.md) page in our application.
 7. **Run Destructive Changes:** Here you can specify whether to run pre or post-destructive changes while carrying out the deployment process.
 8. **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
-9. **On successful Deployment:**\
+9. **On successful Deployment**\
    ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665054574032.png)
-   1. **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
-   2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
-   3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
-   4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
-   5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
-   6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
-   7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../parallel-processor.md) .
-   8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
-       To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.\
+
+**Options available:**
+
+1. **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
+2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
+3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
+4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
+5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
+6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
+7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../parallel-processor.md) .
+8.  **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
+    To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.\
 
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665053092797.png" alt="" width="375"><figcaption></figcaption></figure>
-   9.  However, **XYZ** would like to run the above activities in the following sequence:
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665053092797.png" alt="" width="375"><figcaption></figcaption></figure>
+9.  However, **XYZ** would like to run the above activities in the following sequence:
 
-       1. First, the DataLoader job
-       2. Second, CI Job and
-       3.  Environment Provisioning template at last.\
-           Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\
-           Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.\
+    1. First, the DataLoader job
+    2. Second, CI Job and
+    3.  Environment Provisioning template at last.\
+        Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\
+        Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.\
 
 
-           <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665053178364.png" alt="" width="563"><figcaption></figcaption></figure>
+        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665053178364.png" alt="" width="563"><figcaption></figcaption></figure>
 
-       **Important Note:**
+    **Important Note:**
 
-       1. Both the CI Job and the Environment Provisioning post activities are allowed to run parallel once the Dataloader job is successfully completed. This can be achieved if both the CI Job and Environment Provisioning checkboxes are selected together as the next activity.
-       2. However, if you select the CI Job checkbox and leave the Environment Provisioning checkbox blank, in such case:
-          1. CI Job will get triggered only if the Dataloader Job is successfully executed,
-          2. Environment Provisioning will run in parallel to the Dataloader Job.&#x20;
+    1. Both the CI Job and the Environment Provisioning post activities are allowed to run parallel once the Dataloader job is successfully completed. This can be achieved if both the CI Job and Environment Provisioning checkboxes are selected together as the next activity.
+    2. However, if you select the CI Job checkbox and leave the Environment Provisioning checkbox blank, in such case:
+       1. CI Job will get triggered only if the Dataloader Job is successfully executed,
+       2. Environment Provisioning will run in parallel to the Dataloader Job.&#x20;
 
 #### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
 

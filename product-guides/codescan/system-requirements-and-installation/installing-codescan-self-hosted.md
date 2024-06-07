@@ -42,7 +42,7 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 
 <div align="center">
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
 
 </div>
 

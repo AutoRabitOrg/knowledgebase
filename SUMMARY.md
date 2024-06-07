@@ -692,12 +692,12 @@
   * [Vault-FAQs](product-guides/vault/vault-faqs.md)
   * [Vault Best Practices](product-guides/vault/vault-best-practices.md)
 * [FlowCenter](product-guides/flow-center/README.md)
-  * [Flow Center Insights](product-guides/flow-center/flow-center-insights/README.md)
-    * [Creating Your First Dashboard](product-guides/flow-center/flow-center-insights/creating-your-first-dashboard.md)
-    * [Dashboard Types](product-guides/flow-center/flow-center-insights/dashboard-types/README.md)
-      * [ARM Deployment Metrics](product-guides/flow-center/flow-center-insights/dashboard-types/arm-deployment-metrics.md)
-      * [ARM Version Control Activity](product-guides/flow-center/flow-center-insights/dashboard-types/arm-version-control-activity.md)
-    * [Setting Up Your Default Dashboard](product-guides/flow-center/flow-center-insights/setting-up-your-default-dashboard.md)
+  * [FlowCenter Insights](product-guides/flowcenter/flowcenter-insights/README.md)
+    * [Creating Your First Dashboard](product-guides/flowcenter/flowcenter-insights/creating-your-first-dashboard.md)
+    * [Dashboard Types](product-guides/flowcenter/flowcenter-insights/dashboard-types/README.md)
+      * [ARM Deployment Metrics](product-guides/flowcenter/flowcenter-insights/dashboard-types/arm-deployment-metrics.md)
+      * [ARM Version Control Activity](product-guides/flowcenter/flowcenter-insights/dashboard-types/arm-version-control-activity.md)
+    * [Setting Up Your Default Dashboard](product-guides/flowcenter/flowcenter-insights/setting-up-your-default-dashboard.md)
 
 ## Use Cases + Resources
 

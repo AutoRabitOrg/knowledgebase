@@ -4,15 +4,11 @@
 
 You can set up a default dashboard to see first when you log in to Insights. Here are the steps:
 
-1.  Click on the “All dashboards” breadcrumb.\
+1.  Click on the “**All dashboards**” breadcrumb.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
-
+    <figure><img src="../../../.gitbook/assets/image (382).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Find the dashboard you want to make the default, and tick the “Mark as default” radio button.\
-    \
 
 
     <figure><img src="../../../.gitbook/assets/image (381).png" alt=""><figcaption></figcaption></figure>

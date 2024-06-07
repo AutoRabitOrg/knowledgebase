@@ -74,9 +74,6 @@ To break the builds based on the Quality Gate once this analysis has run, you ca
     >
     > **`{codescan_instance_url}:`** Your instance's URL, for example, [_https://app.codescan.io/_](https://app.codescan.io/) for **US** region, [_https://app-eu.codescan.io/_](https://app-eu.codescan.io/) for **EU** region or [_https://app-aus.codescan.io/_](https://app-aus.codescan.io/) for **AUS** region.
 
-\
-
-
 {% code fullWidth="true" %}
 ```
  $token = [System.Text.Encoding]::UTF8.GetBytes($env:CODESCAN_TOKEN + ":")
@@ -109,6 +106,4 @@ To break the builds based on the Quality Gate once this analysis has run, you ca
 ```
 {% endcode %}
 
-\
-\
 The pipeline will now fail if the quality gates for the project are not passed.

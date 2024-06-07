@@ -24,12 +24,15 @@ To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, 
        ```
        {% endcode %}
 
-       Note:To find your **Project Key** and the **Organization Key**, click on the respective links below:
+{% hint style="info" %}
+**Note:** To find your **Project Key** and the **Organization Key**, click on the respective links below:
 
-       * [Project Key](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key)
-       * [Organization Key](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys)
+* [Project Key](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key)
+* [Organization Key](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys)
 
-       Project keys differ from project to project as the **organization** and **project keys** are unique.
+Project keys differ from project to project as the **organization** and **project keys** are unique.
+{% endhint %}
+
 3. This will start the analysis directly on the [CodeScan cloud](https://www.codescan.io/products/cloud/).
 4. To learn how to generate a **Security Token**, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
 5. If you want to run the analysis in the [CodeScan Self-Hosted](https://www.codescan.io/products/self-hosted/), then make the following changes in the command:

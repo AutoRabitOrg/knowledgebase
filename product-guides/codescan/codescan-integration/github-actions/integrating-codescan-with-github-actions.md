@@ -1,10 +1,11 @@
 # Integrating CodeScan with Github Actions
 
-Point to Note:
+{% hint style="info" %}
+**Note:** The creation of the project in CodeScan creates a webhook in GitHub.
+{% endhint %}
 
-The creation of the project in CodeScan creates a webhook in GitHub.
+This webhook triggers on pushes to your tracked branch and certain pull request actions. These are: _**pull request opened, reopened, synchronized**_.
 
-This webhook triggers on pushes to your tracked branch and certain pull request actions. These are: _**pull request opened, reopened, synchronized**_.\
 The pull request triggers allow your comparisons in CodeScan to be kept up to date if the pull request is updated.
 
 ### Running CodeScan SCA jobs from Github Workflow <a href="#running-codescan-sca-jobs-from-github-workflow" id="running-codescan-sca-jobs-from-github-workflow"></a>
@@ -20,8 +21,9 @@ First, we'll need to add your CodeScan token as a variable we can access in our 
 
 Now you'll be able to access this variable by using **`$codescan_token`** in your **.YML file**.
 
-If you do not have a workflow setup on your GitHub Repository, go to **`Actions > New workflow`** to create a **.yml workflow**.\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(340\).png)
+If you do not have a workflow setup on your GitHub Repository, go to **`Actions > New workflow`** to create a **.yml workflow**.
+
+<figure><img src="../../../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
 
 Add the following into your **.YML file** in the workflow:
 
@@ -79,8 +81,9 @@ You will need to replace the placeholder variables (in single quotes) in the env
 
 The **`failOnRedQualityGate`** parameter is available on _CodeScan scanner action version **1.4**_ and later.
 
-Now, you will be able to view the **.yml workflow** on your repository.\
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(341\).png)
+Now, you will be able to view the **.yml workflow** on your repository.
+
+<figure><img src="../../../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
 
 And also check for the name of the master branch on both CodeScan platform and Git repository, as the new Git update changed the name of master branch to main.
 
@@ -94,22 +97,23 @@ The branches names and comparisons are set by the following parameters:
 
 The uploaded **SARIF file** in the **.yml** helps you to get the code analysis reports in two ways:
 
-1.  For the files already existing in the repository, results can be found under code scanning alerts under the **`Security`** tab on Github repository.\
+1. For the files already existing in the repository, results can be found under code scanning alerts under the **`Security`** tab on Github repository.
 
+<figure><img src="../../../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(343).png" alt=""><figcaption></figcaption></figure>
-2. For the new files being uploaded to the repository, you can view the analysis during the pull-requests on GitHub by clicking on the details:
-   *   Select the relevant pull-request and then click on **`Details`**.\
+2.  For the new files being uploaded to the repository, you can view the analysis during the pull-requests on GitHub by clicking on the details:
 
+    * Select the relevant pull-request and then click on **`Details`**.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(344).png" alt=""><figcaption></figcaption></figure>
-   *   Once you click on the **`Details`**, go to **`Code scanning results > CodeScan`**.\
+    <figure><img src="../../../../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
 
+    * Once you click on the **`Details`**, go to **`Code scanning results > CodeScan`**.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(345).png" alt=""><figcaption></figcaption></figure>
-   * Results are categorized as follows:
-     * All the **bugs** and **vulnerabilities** are marked as **ERRORS**.
-     * Whereas, all the major and minor **code smells** are marked as **WARNINGS**.
+    <figure><img src="../../../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
+
+    * Results are categorized as follows:
+      1. All the **bugs** and **vulnerabilities** are marked as **ERRORS**.
+      2. Whereas, all the major and minor **code smells** are marked as **WARNINGS**.
 
 This **.yml file** helps you to run an analysis on the project while linking it to CodeScan.
 

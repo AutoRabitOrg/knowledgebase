@@ -2,9 +2,9 @@
 
 Integrating CodeScan into your Bitbucket pipeline is easy with our sfdx plugin. There are only a few lines to add to your **.YML file** to run CodeScan when a build is triggered.
 
-Note:
-
-The following is based on a docker pipeline with **Java** and **Node** installed in the container.
+{% hint style="info" %}
+**Note:** The following is based on a docker pipeline with **Java** and **Node** installed in the container.
+{% endhint %}
 
 First, we'll need to add your [CodeScan](https://www.codescan.io/) token as a variable we can access in our **.YML file**.
 
@@ -14,9 +14,9 @@ First, we'll need to add your [CodeScan](https://www.codescan.io/) token as a va
 
 Add the following into your **.YML file**:
 
-Note:
-
-The install scripts for the sfdx plugin have been added to the steps below to provide easy boiler plate code. This installation should be completed in the container in a production pipeline.
+{% hint style="info" %}
+**Note:** The install scripts for the sfdx plugin have been added to the steps below to provide easy boiler plate code. This installation should be completed in the container in a production pipeline.
+{% endhint %}
 
 ```
 image: salesforce/salesforcedx #Your docker image, complete with node and java (8+) installed.

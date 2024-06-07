@@ -1,10 +1,10 @@
 # CodeScan in Github Actions using the SFDX Plugin
 
-Integrating CodeScan into your Github pipeline is easy with our sfdx plugin. There are only a few lines to add to your **.YML file** to run codescan when a build is triggered.
+Integrating CodeScan into your Github pipeline is easy with our sfdx plugin. There are only a few lines to add to your **.YML file** to run CodeScan when a build is triggered.
 
-Note:
-
-The following is based on a docker pipeline with **Java** and **Node** installed in the container.
+{% hint style="info" %}
+**Note:** The following is based on a docker pipeline with **Java** and **Node** installed in the container.
+{% endhint %}
 
 First, we'll need to add your [CodeScan](https://www.codescan.io/) token as a variable we can access in our **.YML file**.
 

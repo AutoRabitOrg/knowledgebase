@@ -4,18 +4,23 @@
 
 You will need:
 
-* Jenkins
-* Salesforce CLI
-* Git
+1. Jenkins
+2. Salesforce CLI
+3. Git
 
 ### Add Environment Variables <a href="#add-environment-variables" id="add-environment-variables"></a>
 
-* In user environment Path variable, add the **Salesforce CLI** and **Git bin directories**.\
-  ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(346\).png)\
-  ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(347\).png)
-* In the System environment Path variable add the **Git\cmd**, **Git\usr\bin**, and **Salesforce CLI\bin directories**.\
-  ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(348\).png)\
-  ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(349\).png)
+* In user environment Path variable, add the **Salesforce CLI** and **Git bin directories**.
+
+<figure><img src="../../../../.gitbook/assets/image (527).png" alt="" width="450"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (528).png" alt="" width="395"><figcaption></figcaption></figure>
+
+* In the System environment Path variable add the **Git\cmd**, **Git\usr\bin**, and **Salesforce CLI\bin directories**.
+
+<figure><img src="../../../../.gitbook/assets/image (529).png" alt="" width="450"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (530).png" alt="" width="400"><figcaption></figcaption></figure>
 
 ### Setup Jenkins <a href="#setup-jenkins" id="setup-jenkins"></a>
 
@@ -52,5 +57,3 @@ echo y|sfdx plugins:install sfdx-codescan-plugin
 
 4. Run the **pipeline**. If everything is set up correctly and your Quality Gate passes, you will be able to see you pipeline pass.
 5. If your Quality Gate fails, you will see the error in the CodeScan stage of the build.
-
-\

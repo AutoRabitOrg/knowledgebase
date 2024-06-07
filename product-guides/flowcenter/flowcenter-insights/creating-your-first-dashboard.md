@@ -23,7 +23,7 @@ To create your first dashboard:
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-5. Click **Save**
+5. Click **Save.**
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt="" width="563"><figcaption><p><br></p></figcaption></figure>
 

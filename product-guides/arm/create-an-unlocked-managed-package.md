@@ -53,7 +53,8 @@ Under the **Package Version** section, do the following:
 
 1. **Version Name:** Version name gets auto-generated based on the package name. However, you can edit the name and enter your desired name. It is really up to you.
 2. **Version Description:** Brief description of your Package version.
-3. **Version Number:** Version numbers are formatted as **major.minor.patch.build**. **For ex-** 1.2.1.8.
+3. **Version Number:** Version numbers are formatted as **major.minor.patch.build (**1.2.1.8)
+   * **Note:** The format of the version MUST consist of **four** numbers separated by dots for example (1.2.3.4) where each number represents the **major version, minor version, patch version and build version** respectively. The use of any other character to separate the version number fields will generate the error message, “Can’t create package version. The package version number specified in your sfdx-project.json file or on the command line isn’t valid. Check the package version number, and try creating the package version again.“&#x20;
 4. **Installation Key:** Enter the installation key that protects your package from being installed by unauthorized individuals.
 5.  **Tag:** Enter the tag that is required to release the package. **For ex-** Release 1.0.0\
 

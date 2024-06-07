@@ -96,6 +96,7 @@ This update has implemented significant performance upgrades to enhance the tool
 4. A code fix was applied to the Version Control module related to a use-case error occurring when processing merge conflicts. Support ticket #113606
 5. A code fix was applied to the Admin module related to a data error in which the branching baseline was not updating the LWCs in the branch. Support ticket #113174
 6. A code fix was applied to the Data Loader module related to a configuration error causing Data Loader to not work as expected. Support ticket #113575&#x20;
+7. A code fix was applied to the ARM module related to a use-case audit logging API error with start time and end time issues occurring when fetching logs. #113739
 
 
 

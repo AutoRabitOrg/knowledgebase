@@ -4,11 +4,11 @@
 
 What's New:
 
-CodeScan Self-Hosted version **24.0.4** _(now compatible with **SonarQube™ version 10.2 or earlier)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
+CodeScan Self-Hosted version **24.0.5** _(now compatible with **SonarQube™ version 10.2 or earlier)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
-[**Download**](https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-24.0.4.zip)
+[**Download**](https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-24.0.5.zip)
 
-[**Release Note**](../../../overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.4.md#release-notes-24.0.4)
+[**Release Note**](../../../overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.5.md)
 
 ***
 

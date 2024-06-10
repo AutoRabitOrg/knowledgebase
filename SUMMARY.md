@@ -167,7 +167,7 @@
       * [GIT Revert](product-guides/arm/arm-features/version-control/git-revert.md)
       * [Merge Approvals](product-guides/arm/arm-features/version-control/merge-approvals.md)
     * [Data Loader](product-guides/arm/arm-features/dataloader/README.md)
-      * [Single DataLoader](product-guides/arm/arm-features/dataloader/single-dataloader/README.md)
+      * [Single Data Loader](product-guides/arm/arm-features/dataloader/single-dataloader/README.md)
         * [Extract Salesforce Data](product-guides/arm/arm-features/dataloader/single-dataloader/extract-salesforce-data.md)
         * [Insert Salesforce Data](product-guides/arm/arm-features/dataloader/single-dataloader/insert-salesforce-data.md)
         * [Update Salesforce Data](product-guides/arm/arm-features/dataloader/single-dataloader/update-salesforce-data.md)

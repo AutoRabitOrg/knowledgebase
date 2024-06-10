@@ -8,7 +8,7 @@ Follow the instructions below to create a webhook API token from ARM.
 2. Click on the Admin section, then select 'API Token.'
 3. Click on 'Create API Token.'
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the token name.
 5. Select Type as "webhook."
@@ -46,7 +46,7 @@ Webhooks allow external services to be notified when certain events happen. When
    **For example, using instance:** https://login.autorabit.com\
    **Payload URL:** [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Enter the Secret Key generated in ARM as an API token.
 

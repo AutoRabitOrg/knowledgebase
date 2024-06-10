@@ -18,7 +18,7 @@ This article is for the **registered user** in particular. **General users** do 
 **NOTE:** The below-highlighted Subscription button will only appear if a customer procures more than 20+ licenses to manage different Teams.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Subscription Management: Overview <a href="#subscription-management-overview" id="subscription-management-overview"></a>
 

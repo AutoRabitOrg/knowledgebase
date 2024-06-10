@@ -175,7 +175,21 @@ Finally, click on **`Save`** to complete the initial process. You will be redire
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864276450.png" alt=""><figcaption></figcaption></figure>
 
-### Running the Data Loader Pro Job <a href="#running-the-dataloader-pro-job" id="running-the-dataloader-pro-job"></a>
+### Job Configuration Settings
+
+1.  This feature will allow the user to select the required job settings to disable workflow rules, disable validation rules etc., as required during the job creation.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+2. Once the job is saved the selected job configuration settings will be saved.
+3.  On running the job, the retained job settings will be displayed on the pop-up, “Run Configuration”.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+4. Any changes made during the run of the job will only affect that individual job run.
+5. To permanently change the configured settings during the job creation, the user has to edit the created job and change the settings and save the job.
+
+### &#x20;Running the Data Loader Pro Job
 
 Select your job from the **`Data Loader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
 

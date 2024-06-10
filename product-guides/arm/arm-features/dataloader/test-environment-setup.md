@@ -6,7 +6,7 @@ This enables data transfer from .csv files to the destination sandbox more conve
 
 ### Create a New Test Environment Setup <a href="#create-a-new-test-environment-setup" id="create-a-new-test-environment-setup"></a>
 
-1.  Hover your mouse over the [**`Dataloader`**](./) module and select **`Dataloder Test Environment Setup`**.\
+1.  Hover your mouse over the [**`Dataloader`**](./) module and select **`Data Loader Test Environment Setup`**.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656498200051.png" alt="" width="375"><figcaption></figcaption></figure>

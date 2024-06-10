@@ -178,7 +178,7 @@
       * [Data Loader Configuration](product-guides/arm/arm-features/dataloader/dataloader-configuration.md)
       * [Test Environment Setup](product-guides/arm/arm-features/dataloader/test-environment-setup.md)
       * [Validation / Workflow Rules](product-guides/arm/arm-features/dataloader/validation-workflow-rules.md)
-      * [Preparing the CSV file for ARM Dataloader](product-guides/arm/arm-features/dataloader/preparing-the-csv-file-for-arm-dataloader.md)
+      * [Preparing the CSV file for ARM Data Loader](product-guides/arm/arm-features/dataloader/preparing-the-csv-file-for-arm-dataloader.md)
     * [Automation and CI](product-guides/arm/arm-features/automation-and-ci/README.md)
       * [Create a New CI Job](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/README.md)
         * [Build a Package from Salesforce](product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/build-a-package-from-salesforce.md)

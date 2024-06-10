@@ -1,13 +1,13 @@
-# Dataloader Configuration
+# Data Loader Configuration
 
-### Dataloader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
+### Data Loader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
 
-Dataloader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing data between the org with the help of ARM external ID. Now, the user can use data synchronization to connect the source and destination on the objects for which data migration is required.
+Data Loader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing data between the org with the help of ARM external ID. Now, the user can use data synchronization to connect the source and destination on the objects for which data migration is required.
 
-### Creating a new Dataloader Configuration <a href="#creating-a-new-dataloader-configuration" id="creating-a-new-dataloader-configuration"></a>
+### Creating a new Data Loader Configuration <a href="#creating-a-new-dataloader-configuration" id="creating-a-new-dataloader-configuration"></a>
 
 1. Log in to your ARM account.
-2.  Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/wp-content/uploads/2020/12/Salesforce-Data-Loader-1.pdf) module and select **`Dataloader Configuration`**.\
+2.  Hover your mouse over the [**`Dataloader`**](dataloader-configuration.md#dataloader-configuration-overview) module and select **`Data Loader Configuration`**.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656497969999.png" alt="" width="375"><figcaption></figcaption></figure>

@@ -1,18 +1,18 @@
-# Dataloader Pro
+# Data Loader Pro
 
-**Dataloader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Dataloader Pro** feature in ARM.&#x20;
+**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Data Loader Pro** feature in ARM.&#x20;
 
 ### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
-While performing **Dataloader Pro** on the objects for the first time, ensure you perform [Dataloader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Dataloader Pro job. This is a one-time operation.
+While performing **Data Loader Pro** on the objects for the first time, ensure you perform [Data Loader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Data Loader Pro job. This is a one-time operation.
 
-Dataloader plays an essential role in data migration from source [sandbox](broken-reference) to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
+Data Loader plays an essential role in data migration from source [sandbox](broken-reference) to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
 
-### How to perform a Dataloader Pro operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
+### How to perform a Data Loader Pro operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Dataloader`** module and select **`Dataloader Pro`**.
-3.  Click on **`Create New Job`**.\
+2. Hover your mouse over the **`Data Loader`** module and select **`Data Loader Pro`**.
+3.  Click on **`Create New Job.`**\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654843186125.png" alt=""><figcaption></figcaption></figure>
@@ -54,11 +54,11 @@ Upload the **`CSV`** file (if required) if there is a large amount of data and r
 
 Format for CSV file to filter records:
 
-* ARM Dataloader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
+* ARM Data Loader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
 * Ensure you have a column header and rows of data populated for all system-required fields, such as **`Account Name`** or **`Contact Last Name`**.
 * There can be only one column header.&#x20;
 
-For more information, see [Preparing the CSV file for Dataloader](preparing-the-csv-file-for-arm-dataloader.md).
+For more information, see [Preparing the CSV file for Data Loader](preparing-the-csv-file-for-arm-dataloader.md).
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654862389866.png)
 
@@ -88,9 +88,9 @@ Using the **`Auto-map`** feature, you can map the fields automatically based on 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654862782202.png" alt=""><figcaption></figcaption></figure>
 
-**External Id Field Mapping**
+**External ID Field Mapping**
 
-In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the Dataloader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
+In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the Data Loader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
 
 In the **`Source`** field, select the source whose values will be populated in the destination external ID field.
 
@@ -105,7 +105,7 @@ In the **`Destination`** field, select the required destination org whose values
 
 Here in this section, fill in the process details listed below:&#x20;
 
-1. Give the job a **`Name`**.
+1. Enter a **`Name`**for the job.
 2. Select the category in the **`Job Group`** field. This is important if you'd like to group related jobs into a single category. You can also create a new group and assign your job to this group.
 3. **`Master Object`** and **`External ID`** are auto-populated.
 4.  Enter the **`User Name Suffix`** for the **`Source Org`** and the **`Destination Org`**. Below are some examples of usernames and the corresponding suffixes:
@@ -136,7 +136,7 @@ Here in this section, fill in the process details listed below:&#x20;
 
 #### Masking Wizard <a href="#masking-wizard" id="masking-wizard"></a>
 
-Data Masking refers to changing certain data elements within a data store so the structure remains similar while the information is altered to protect sensitive information. It ensures sensitive customer information is unavailable beyond the permitted production environment.
+Data masking refers to changing certain data elements within a data store so the structure remains similar while the information is altered to protect sensitive information. It ensures sensitive customer information is unavailable beyond the permitted production environment.
 
 Under the **`Masking Wizard`** section, click on **`New`** to add a masking rule.\
 
@@ -157,7 +157,7 @@ In the **`Masking Form`** screen, do the following:\
    5. **`Generate Random`**: This option helps mask the original value with a random value within a specified range. For example, if the field value in source org is ABC, and the random string length value is set to 7, then the deployed field value would be similar to 15d3aRG.\
 
 
-Important Note:Masking is not applicable if the field value for the record is empty.
+Important Note: Masking is not applicable if the field value for the record is empty.
 
 #### Process Schedule <a href="#process-schedule" id="process-schedule"></a>
 
@@ -170,14 +170,14 @@ In the Scheduling procedure, the user can schedule the process it must run.
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864127268.png" alt=""><figcaption></figcaption></figure>
 
-Finally, click on **`Save`** to complete the initial process. You will be redirected to the **`Dataloader Pro Summary`** page, where the dataloader process initiated can be seen at the top of the list.\
+Finally, click on **`Save`** to complete the initial process. You will be redirected to the **`Dataloader Pro Summary`** page, where the Data Loader process initiated can be seen at the top of the list.\
 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864276450.png" alt=""><figcaption></figcaption></figure>
 
-### Running the Dataloader Pro Job <a href="#running-the-dataloader-pro-job" id="running-the-dataloader-pro-job"></a>
+### Running the Data Loader Pro Job <a href="#running-the-dataloader-pro-job" id="running-the-dataloader-pro-job"></a>
 
-Select your job from the **`Dataloader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
+Select your job from the **`Data Loader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864354991.png) ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864448599.png)
 
@@ -192,19 +192,18 @@ The table below lists the configurations to choose from, along with their descri
 | 5             | **`Minimize multiple references between the same objects`**                | When there are multiple references between the same objects, unnecessary API calls are not triggered upon selecting this option.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | 6             | **`Automatically apply master object filter on other dependency objects`** | All objects in the hierarchy are calculated based on the Master Object filters; this option avoids extra records addition due to self-references and multiple references.                                                                                                                                                                                                                                                                                                                                                                                     |
 | 7             | **`Data encryption for data files`**                                       | Data encryption for data files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 8             | **`Incremental data migration`**                                           | After a dataloading process is done, only the newly added records are transferred into the destination sandbox.                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 8             | **`Incremental data migration`**                                           | After a data-loading process is done, only the newly added records are transferred into the destination sandbox.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-1.
-   1. **`Edit:`** Edits the processes in the selected category to rerun them.
-   2. **`Abort:`** Aborts the process.
-   3. **`Schedule:`** Schedules the data loading process for the selected category.
-   4. **`Clone:`** Clones the respective Dataloader Pro job.
-   5.  **`Log:`** Provides information about the process execution.\
+1. **`Edit:`** Edits the processes in the selected category to rerun them.
+2. **`Abort:`** Aborts the process.
+3. **`Schedule:`** Schedules the data-loading process for the selected category.
+4. **`Clone:`** Clones the respective Data Loader Pro job.
+5.  **`Log:`** Provides information about the process execution.\
 
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864805793.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654864805793.png" alt=""><figcaption></figcaption></figure>
 
 #### Schema (Grid View) <a href="#schema-grid-view" id="schema-grid-view"></a>
 

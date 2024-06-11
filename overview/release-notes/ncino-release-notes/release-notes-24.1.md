@@ -15,30 +15,30 @@ nCino 24.1 is a major release which encompasses the following release items:&#x2
 * **Triggering nCino CI Jobs Using REST API**
 * **Select external unique identifier During nCino Feature Deployment**
 
-**New Features**
+### **New Features**
 
 1.  **nCino Compare Functionality**
 
     **Overview:** This provides users with enhanced control and insight into the deployment of nCino Record-Based Configurations (RBC). \
     **Application:** The nCino RBC Comparison Tool allows users to effortlessly compare RBC configurations between those ready for deployment and those already existing in the target environment. This comparison ensures that users can identify discrepancies, confirm consistency, and make informed decisions before finalizing deployments. \
     **Benefit:** This tool addresses the need for a reliable method to ensure consistency and accuracy in RBC deployments, reducing the risk of configuration errors and streamlining the configuration management process.\
-    **Additional Information:** For more detailed information, please refer to our Knowledge Base.\
+    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
 
 2.  **Enhanced Data Loader Pro Job Configuration**\
-    **Purpose:** To provide users with greater flexibility and control over the data loading process by allowing the users to enable and disable the validation rules, workflow rules, and triggers.
+    **Overview:** To provide users with greater flexibility and control over the data loading process by allowing the users to enable and disable the validation rules, workflow rules, and triggers.
 
-    **Overview:** Users can now enable or disable validation rules, workflow rules, and triggers as part of the Data Loader Pro job configuration. This feature allows users to leverage pre-configured selections during the scheduled execution of the job, ensuring that the data-loading process adheres to their specific requirements.
+    **Application:** Users can now enable or disable validation rules, workflow rules, and triggers as part of the Data Loader Pro job configuration. This feature allows users to leverage pre-configured selections during the scheduled execution of the job, ensuring that the data-loading process adheres to their specific requirements.
 
-    **Resolution** Enhances flexibility and control over the data loading process, enabling users to customize job configurations to meet their unique needs and reducing the risk of unintended rule or trigger executions.
+    **Benefit:** Enhances flexibility and control over the data loading process, enabling users to customize job configurations to meet their unique needs and reducing the risk of unintended rule or trigger executions.
 
     **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
 
 3.  **Triggering nCino CI Jobs Using REST API**\
-    **Purpose:** Customers can now trigger nCino CI (Continuous Integration) jobs using the provided API endpoints.
+    **Overview:** Customers can now trigger nCino CI (Continuous Integration) jobs using the provided API endpoints.
 
-    **Describe how and/or why it works:** This enhancement simplifies and automates the Continuous Integration (CI) process for nCino users by allowing them to trigger CI jobs through REST API calls. With this capability, users can integrate CI job execution seamlessly into their existing automation workflows or CI/CD pipelines. By leveraging API endpoints, users gain greater flexibility and control over the CI process, enabling efficient and consistent integration testing and deployment.
+    **Application:** This enhancement simplifies and automates the Continuous Integration (CI) process for nCino users by allowing them to trigger CI jobs through REST API calls. With this capability, users can integrate CI job execution seamlessly into their existing automation workflows or CI/CD pipelines. By leveraging API endpoints, users gain greater flexibility and control over the CI process, enabling efficient and consistent integration testing and deployment.
 
-    **Issue Resolved:** Addresses the need for streamlined and automated CI processes by providing customers with the ability to trigger nCino CI jobs via API endpoints. This enhancement improves efficiency, reduces manual intervention, and enhances the overall CI experience for users.
+    **Benefit:** Addresses the need for streamlined and automated CI processes by providing customers with the ability to trigger nCino CI jobs via API endpoints. This enhancement improves efficiency, reduces manual intervention, and enhances the overall CI experience for users.
 
     **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
 

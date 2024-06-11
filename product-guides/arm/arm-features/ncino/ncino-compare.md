@@ -4,7 +4,7 @@
 
 Compare and selective deployment functionality allows you to perform compare operations on different datasets and from various objects across the orgs and promote the selected/required records to further environments.
 
-### Overview
+## Overview
 
 1. Compare functionality enables you to perform the org-to-org comparison and org to Version Control comparison.
 2. You can perform the relational compare operation on the initial dataset retrieved from the initial compare operation performed.
@@ -13,9 +13,9 @@ Compare and selective deployment functionality allows you to perform compare ope
 5. Once finished with record selection, you can continue with the deployment by clicking on **“Save and Deploy.”**
 6. On the object summary screen, you can review the records selected on the compare screen(s) and continue with RBC deployments.
 
-### Step-by-Step Guide
+## Step-by-Step Guide
 
-#### Initiating Compare Operations
+### Initiating Compare Operations
 
 #### Feature Deployment – Template + Version Control
 
@@ -38,8 +38,8 @@ Compare and selective deployment functionality allows you to perform compare ope
 
 ![](../../../../.gitbook/assets/2.png)
 
-1. Once you click on “Compare,” a pop-up will be shown.
-2. The compare operation can be performed either as “Org to Org” or “Version Control.”
+2. Once you click on “Compare,” a pop-up will be shown.
+3. The compare operation can be performed either as “Org to Org” or “Version Control.”
 
 #### Org-to-Org Comparison
 

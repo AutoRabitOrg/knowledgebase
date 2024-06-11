@@ -36,9 +36,9 @@
       * [Release Notes 24.0.1](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.1.md)
       * [Release Notes 23.1](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)
   * [nCino Release Notes](overview/release-notes/ncino-release-notes/README.md)
+    * [Release Notes 24.1](overview/release-notes/ncino-release-notes/release-notes-24.1.md)
     * [Release Notes 23.1](overview/release-notes/ncino-release-notes/release-notes-23.1.md)
     * [Release Notes 22.3](overview/release-notes/ncino-release-notes/release-notes-22.3.md)
-    * [Release Notes 24.1](overview/release-notes/ncino-release-notes/release-notes-24.1.md)
   * [Vault Release Notes](overview/release-notes/vault-release-notes.md)
   * [Flow Center Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)
 

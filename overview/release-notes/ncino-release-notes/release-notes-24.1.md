@@ -8,26 +8,22 @@
 
 nCino 24.1 is a major release which encompasses the following release items:&#x20;
 
-·       **nCino Compare Functionality**
-
-·       **Enhanced Data Loader Pro Job Configuration** &#x20;
-
-·       **Exclude the OwnerID From Automapping in nCino CI jobs**&#x20;
-
-·       **DataLoader PRO Job Run Options in Configuration**
-
-·       **Triggering nCino CI Jobs Using REST API**
-
-**Select external unique identifier During nCino Feature Deployment**
+* **nCino Compare Functionality**
+* **Enhanced Data Loader Pro Job Configuration** &#x20;
+* **Exclude the OwnerID from Automapping in nCino CI jobs**&#x20;
+* **Data Loader Pro Job Run Options in Configuration**
+* **Triggering nCino CI Jobs Using REST API**
+* **Select external unique identifier During nCino Feature Deployment**
 
 **New Features**
 
 1.  **nCino Compare Functionality**
 
-    **Purpose:** This provides users with enhanced control and insight into the deployment of nCino Record-Based Configurations (RBC). \
-    **Overview:** The nCino RBC Comparison Tool allows users to effortlessly compare RBC configurations between those ready for deployment and those already existing in the target environment. This comparison ensures that users can identify discrepancies, confirm consistency, and make informed decisions before finalizing deployments. \
-    **Resolution:** This tool addresses the need for a reliable method to ensure consistency and accuracy in RBC deployments, reducing the risk of configuration errors and streamlining the configuration management process.\
-    **Additional Information:** For more detailed information, please refer to our [Knowledge Base](../../../fundamentals/faq/ncino.md).
+    **Overview:** This provides users with enhanced control and insight into the deployment of nCino Record-Based Configurations (RBC). \
+    **Application:** The nCino RBC Comparison Tool allows users to effortlessly compare RBC configurations between those ready for deployment and those already existing in the target environment. This comparison ensures that users can identify discrepancies, confirm consistency, and make informed decisions before finalizing deployments. \
+    **Benefit:** This tool addresses the need for a reliable method to ensure consistency and accuracy in RBC deployments, reducing the risk of configuration errors and streamlining the configuration management process.\
+    **Additional Information:** For more detailed information, please refer to our Knowledge Base.\
+
 2.  **Enhanced Data Loader Pro Job Configuration**\
     **Purpose:** To provide users with greater flexibility and control over the data loading process by allowing the users to enable and disable the validation rules, workflow rules, and triggers.
 
@@ -35,19 +31,21 @@ nCino 24.1 is a major release which encompasses the following release items:&#x2
 
     **Resolution** Enhances flexibility and control over the data loading process, enabling users to customize job configurations to meet their unique needs and reducing the risk of unintended rule or trigger executions.
 
-    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../fundamentals/faq/ncino.md).
+    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
+
 3.  **Triggering nCino CI Jobs Using REST API**\
-    **Detail Enhancements to Existing Features:** Customers can now trigger nCino CI (Continuous Integration) jobs using the provided API endpoints.
+    **Purpose:** Customers can now trigger nCino CI (Continuous Integration) jobs using the provided API endpoints.
 
     **Describe how and/or why it works:** This enhancement simplifies and automates the Continuous Integration (CI) process for nCino users by allowing them to trigger CI jobs through REST API calls. With this capability, users can integrate CI job execution seamlessly into their existing automation workflows or CI/CD pipelines. By leveraging API endpoints, users gain greater flexibility and control over the CI process, enabling efficient and consistent integration testing and deployment.
 
     **Issue Resolved:** Addresses the need for streamlined and automated CI processes by providing customers with the ability to trigger nCino CI jobs via API endpoints. This enhancement improves efficiency, reduces manual intervention, and enhances the overall CI experience for users.
 
-    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../fundamentals/faq/ncino.md).
+    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
+
 
 ### Enhancements
 
-1.  **Exclude the OwnerID From Automapping in nCino CI jobs**
+1.  **Exclude the OwnerID from Automapping in nCino CI jobs**
 
     **Overview:** Users can now disable the auto-mapping of ownerIDs between environments within the application.
 
@@ -55,7 +53,8 @@ nCino 24.1 is a major release which encompasses the following release items:&#x2
 
     **Benefit:** Helps avoid issues encountered during record-based configuration migration due to limited access to record owners in higher environments. This enhancement ensures that migrations do not fail or cause access-related issues, improving the reliability and consistency of deployments across different environments.
 
-    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../fundamentals/faq/ncino.md). &#x20;
+    **Further documentation:** For more detailed information, please refer to our Knowledge Base. \
+    &#x20;
 2.  **Data Loader Pro Job Run Options in Configuration**
 
     **Overview:** All job run options can now be configured when creating a job in Data Loader Pro.
@@ -64,8 +63,9 @@ nCino 24.1 is a major release which encompasses the following release items:&#x2
 
     **Benefit:** Enhances customization and control over Data Loader Pro job executions and ensures that job settings are consistently applied during scheduled runs, reducing the risk of errors and improving efficiency.
 
-    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/dataloader/dataloader-pro.md).
-3.  **Select external unique identifier During nCino Feature Deployment**
+    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
+
+3.  **Select External Unique Identifier During nCino Feature Deployment**
 
     **Overview:** Users now have the option to select the external unique identifier instead of AutoRABIT external ID for deployments.
 

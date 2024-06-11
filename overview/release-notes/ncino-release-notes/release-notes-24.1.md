@@ -6,7 +6,7 @@
 
 ### Overview
 
-nCino 24.1 is a major release which encompasses the following release items:&#x20;
+nCino 24.1 is a major release that encompasses the following release items:&#x20;
 
 * **nCino Compare Functionality**
 * **Enhanced Data Loader Pro Job Configuration** &#x20;

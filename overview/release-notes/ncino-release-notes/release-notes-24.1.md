@@ -22,7 +22,7 @@ nCino 24.1 is a major release which encompasses the following release items:&#x2
     **Overview:** This provides users with enhanced control and insight into the deployment of nCino Record-Based Configurations (RBC). \
     **Application:** The nCino RBC Comparison Tool allows users to effortlessly compare RBC configurations between those ready for deployment and those already existing in the target environment. This comparison ensures that users can identify discrepancies, confirm consistency, and make informed decisions before finalizing deployments. \
     **Benefit:** This tool addresses the need for a reliable method to ensure consistency and accuracy in RBC deployments, reducing the risk of configuration errors and streamlining the configuration management process.\
-    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
+    **Further documentation:** For more detailed information, please refer to our [Knowledge Base.](../../../product-guides/arm/arm-features/ncino/ncino-compare.md)\
 
 2.  **Enhanced Data Loader Pro Job Configuration**\
     **Overview:** To provide users with greater flexibility and control over the data loading process by allowing the users to enable and disable the validation rules, workflow rules, and triggers.
@@ -31,7 +31,7 @@ nCino 24.1 is a major release which encompasses the following release items:&#x2
 
     **Benefit:** Enhances flexibility and control over the data loading process, enabling users to customize job configurations to meet their unique needs and reducing the risk of unintended rule or trigger executions.
 
-    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
+    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/dataloader/dataloader-configuration.md).\
 
 3.  **Triggering nCino CI Jobs Using REST API**\
     **Overview:** Customers can now trigger nCino CI (Continuous Integration) jobs using the provided API endpoints.

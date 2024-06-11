@@ -59,15 +59,15 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
 
 ![](../../../../.gitbook/assets/5.png)
 
-1. On this screen, you can alter the destination as required.
-2. You can select from the following fields on the compare screen:
+2. On this screen, you can alter the destination as required.
+3. You can select from the following fields on the compare screen:
    * Destination
    * Feature Name
    * Object
    * Unique ID
    * Exclude From Compare
-3. Upon completing the required selections, click on the “Compare” button on the pop-up.
-4. You can see the results on the “Compare Results” screen.
+4. Upon completing the required selections, click on the “Compare” button on the pop-up.
+5. You can see the results on the “Compare Results” screen.
 
 ![](../../../../.gitbook/assets/6.png)
 
@@ -75,38 +75,44 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
 
 ![](../../../../.gitbook/assets/8.png)
 
-1. **Object:** Users can select one object at a time for comparison against the destination.
-2. **Unique ID:** User can select one Unique ID at a time from the dropdown.
-3. **Exclude From Compare:** This multi selection checkbox allows users to select fields to be excluded from the comparison.
+6. **Object:** Users can select one object at a time for comparison against the destination.
+7. **Unique ID:** User can select one Unique ID at a time from the dropdown.
+8. **Exclude From Compare:** This multi selection checkbox allows users to select fields to be excluded from the comparison.
 
-**Note: **_**You can perform the “Compare” operation to see each time there is a change in the object for the respective selections.**_
+{% hint style="info" %}
+**Note:** You can perform the “Compare” operation to see each time there is a change in the object for the respective selections.
+{% endhint %}
 
-1. **Select**: Through this dropdown, you can select either of the options “Select the Current Page Records” or “Select All Records.”
-2. You can search through the data from the compare operation using the:
-   * **Search By Field**: User can select the field to search.
-   * **Value**: User must enter the value to search for.
+9. **Select**: Through this dropdown, you can select either of the options “Select the Current Page Records” or “Select All Records.”
+10. You can search through the data from the compare operation using the:
+    * **Search By Field**: User can select the field to search.
+    * **Value**: User must enter the value to search for.
 
-**NOTE:** Select View Records, LLC\_BI\_lookupKey\_c and Name would be the default fields on the screen that you can see.
+{% hint style="info" %}
+**Note:** Select View Records, LLC\_BI\_lookupKey\_c and Name would be the default fields on the screen that you can see.
+{% endhint %}
 
-1. You will see the first 10 fields from the compare result set retrieved from the compare operation in the table view under **“Compare Results.”**
-2. **Excluded From Compare:** Users can open the link and verify the fields excluded from the compare.
-3. **Export:** The compare results can be exported to Excel through either of these options:
-   * **Records on the page:** This will export the records on the current page to Excel.
-   * **All Records:** This will export all the records retrieved from the compare operation.
+11. You will see the first 10 fields from the compare result set retrieved from the compare operation in the table view under **“Compare Results.”**
+12. **Excluded From Compare:** Users can open the link and verify the fields excluded from the compare.
+13. **Export:** The compare results can be exported to Excel through either of these options:
+    * **Records on the page:** This will export the records on the current page to Excel.
+    * **All Records:** This will export all the records retrieved from the compare operation.
 
 ![](../../../../.gitbook/assets/9.png)
 
-1. **Change View:** You can click open the link and add/remove the fields to be displayed in the compare results grid.
-   * Only 10 fields can be displayed on the grid at a time.
+14. **Change View:** You can click open the link and add/remove the fields to be displayed in the compare results grid.
+    * Only 10 fields can be displayed on the grid at a time.
 
 ![](../../../../.gitbook/assets/10.png)
 
-1. **Save and Continue:** Click on ‘OK’ to continue with the selection for “selective deployment.”
-2. **Save and Deploy:** Click on ‘OK’ to continue with the deployment(s). You will be taken to the deployment page with the selected records displayed.
+15. **Save and Continue:** Click on ‘OK’ to continue with the selection for “selective deployment.”
+16. **Save and Deploy:** Click on ‘OK’ to continue with the deployment(s). You will be taken to the deployment page with the selected records displayed.
 
+{% hint style="info" %}
 **Note:** Count of the selected records can be seen on the **“Object Summary”** screen, while being redirected to the deployment page.
+{% endhint %}
 
-1. Upon clicking **“Save and Deploy,”** you can see the object summary of all the records selected.
+17. Upon clicking **“Save and Deploy,”** you can see the object summary of all the records selected.
 
 ![](../../../../.gitbook/assets/11.png)
 
@@ -114,18 +120,18 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
 
 ![](../../../../.gitbook/assets/12.png)
 
-1. Clicking on the total under **“Selected Records”** will show you the record(s) in a pop-up.
+2. Clicking on the total under **“Selected Records”** will show you the record(s) in a pop-up.
 
 ![](../../../../.gitbook/assets/13.png)
 
 ![](../../../../.gitbook/assets/14.png)
 
-1. Click on **“Deploy”** to perform the deployment of the selected records.
-2. On successful deployment, the iteration will be changed to “1” and users can see **Success** and **Failure** records.
+3. Click on **“Deploy”** to perform the deployment of the selected records.
+4. On successful deployment, the iteration will be changed to “1” and users can see **Success** and **Failure** records.
 
 ![](../../../../.gitbook/assets/15.png)
 
-1. You can see the “Success” and “Failure” results of the deployments.
+5. You can see the “Success” and “Failure” results of the deployments.
 
 ### Relational Compare - Global & Record-Level
 
@@ -138,50 +144,47 @@ This will compare the selected object with the object in the destination and ide
 
 ![](../../../../.gitbook/assets/16.png)
 
-* **You can make selection on parent and child sections:**
-  1. **Object:** Select the required items from the list of objects for comparison
-  2. **Unique ID:** Select the unique ID from the list.
-  3. **Exclude From Compare:** Select the records to be excluded from the compare operation.
+2. **You can make selection on parent and child sections:**
+   * **Object:** Select the required items from the list of objects for comparison
+   * **Unique ID:** Select the unique ID from the list.
+   * **Exclude From Compare:** Select the records to be excluded from the compare operation.
+3. Click on the **Compare** icon to initiate the compare operation.
+4. On completing the comparison, the identified records will be highlighted.
 
-**Note**: Click on the compare icon to initiate the compare operation.
-
-1. On completing the comparison, the identified records will be highlighted.
-
-#### Record-Level Relational Compare:
+#### Record-Level Relational Compare
 
 1. Click on the record-level relational compare icon to perform the relational compare operation.
 
 ![](../../../../.gitbook/assets/17.png)
 
-**You can make the respective selection(s) on parent and child sections:**
-
-1. **Object:** Select the required object from the list of objects for comparison
-2. **Unique ID:** Select the unique id from the available list.
-3. **Exclude From Compare:** Select the records to be excluded from the compare operation.
-4. Click on the compare icon to initiate the compare operation
-5. Upon completing the compare operation, you will be taken to the “Level 1” relational compare results page.
-6. You can continue to perform the relational compare operation to the ‘nth’ level or indefinitely.
+2. **You can make the respective selection(s) on parent and child sections:**
+   * **Object:** Select the required object from the list of objects for comparison
+   * **Unique ID:** Select the unique id from the available list.
+   * **Exclude From Compare:** Select the records to be excluded from the compare operation.
+   * Click on the compare icon to initiate the compare operation
+   * Upon completing the compare operation, you will be taken to the “Level 1” relational compare results page.
+     * You can continue to perform the relational compare operation to the ‘nth’ level or indefinitely.
 
 ![](../../../../.gitbook/assets/18.png)
 
-1. **View Records:** You can see the details of the _**record on which the record-level comparison is performed**_.
-2. You can both collapse and expand the “Relational Parent” and “Relational Child” sections, as observed above.
-3. The “Relational Parent” and “Relational Child” sections are collapsed for the convenience of viewing.
-4. As shown below, you can perform the relational compare at different levels.
+3. **View Records:** You can see the details of the _**record on which the record-level comparison is performed**_.
+4. You can both collapse and expand the “Relational Parent” and “Relational Child” sections, as observed above.
+   * The “Relational Parent” and “Relational Child” sections are collapsed for the convenience of viewing.
+5. As shown below, you can perform the relational compare at different levels.
 
 ![](../../../../.gitbook/assets/19.png)
 
 ![](../../../../.gitbook/assets/20.png)
 
-1. You can perform the **‘Global Relational Compare’** and the **‘Record-Level Comparison’** at these levels too, as displayed in the following screenshot.
-2. You can continue to select from the set of records that are extracted from the compare operation.
-3. Upon concluding the records selection, you can either:
-   1. **Save and Continue**: Save the initial record selections and can continue with the further selection of records or performing relational compare operations.
-   2. **Save and Deploy**: You can continue to save and deploy the records. On selecting this, you will be taken to the deployment page, where the selected records can be deployed to further environments.
-4. You can see the “Object Summary” for reviewing the selected records.
-5. By clicking on the total displayed under the **“Selected Records”**, you can see the records in a pop-up.
-6. Once you click on the “Save and Deploy” button, you will be redirected to the deployment page with the **“Iteration – Staging.”**
-7. Click on **“Deploy”** to perform the deployment of the selected records.
-8. On successful deployment of the records, the iteration will be changed to “1” and you can see Success and Failed records.
-9. You can see the **“Success”** & **“Failed”** counts of the deployed records on the above screen.
+6. You can perform the **‘Global Relational Compare’** and the **‘Record-Level Comparison’** at these levels too, as displayed in the following screenshot.
+7. You can continue to select from the set of records that are extracted from the compare operation.
+8. Upon concluding the records selection, you can either:
+   * **Save and Continue**: Save the initial record selections and can continue with the further selection of records or performing relational compare operations.
+   * **Save and Deploy**: You can continue to save and deploy the records. On selecting this, you will be taken to the deployment page, where the selected records can be deployed to further environments.
+9. You can see the “Object Summary” for reviewing the selected records.
+10. By clicking on the total displayed under the **“Selected Records”**, you can see the records in a pop-up.
+11. Once you click on the “Save and Deploy” button, you will be redirected to the deployment page with the **“Iteration – Staging.”**
+12. Click on **“Deploy”** to perform the deployment of the selected records.
+13. On successful deployment of the records, the iteration will be changed to “1” and you can see Success and Failed records.
+14. You can see the **“Success”** & **“Failed”** counts of the deployed records on the above screen.
 

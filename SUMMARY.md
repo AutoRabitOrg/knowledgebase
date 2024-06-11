@@ -232,6 +232,7 @@
         * [Exclude the OwnerID from Automapping in nCino CI jobs](product-guides/arm/arm-features/ncino/ncino-rbc-deployment-rollback/exclude-the-ownerid-from-automapping-in-ncino-ci-jobs.md)
       * [Developer APIs](product-guides/arm/arm-features/ncino/developer-apis/README.md)
         * [API References](product-guides/arm/arm-features/ncino/developer-apis/api-references.md)
+      * [nCino Compare](product-guides/arm/arm-features/ncino/ncino-compare.md)
     * [Salesforce DX](product-guides/arm/salesforce-dx.md)
       * [Salesforce DX Metadata Format](product-guides/arm/salesforce-dx-metadata-format.md)
       * [Registering a DevHub](product-guides/arm/registering-a-devhub.md)

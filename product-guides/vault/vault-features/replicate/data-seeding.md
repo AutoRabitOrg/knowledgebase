@@ -71,7 +71,7 @@ While creating the job configuration, the user can select from any of the Backup
 
 ![A screenshot of a computer
 
-Description automatically generated](../../../../.gitbook/assets/8.png)
+Description automatically generated](<../../../../.gitbook/assets/8 (1).png>)
 
 13. The following page will be displayed to the user on clicking the “New Masking Rule” button.
 
@@ -94,7 +94,7 @@ Description automatically generated](../../../../.gitbook/assets/8.png)
 16. On clicking “OK” the rule will be published and be available with the global list of rules associated with the ORG
 17. On completing all the required actions, the user can click “NEXT” to continue to the “Config Details” section.
 
-![](../../../../.gitbook/assets/12.png)
+![](<../../../../.gitbook/assets/12 (2).png>)
 
 18. The user can fill in all the required detail of the “Config Details”
 

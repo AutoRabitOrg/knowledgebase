@@ -30,18 +30,16 @@
 
 6. **New Email Templates Implementation**\
    In this release, a significant enhancement has been made by implementing new email templates that align with current visualization standards. This update reflects our commitment to maintaining high standards in user interface design and enhancing overall user engagement.\
-   \
 
-7. **Seamless Log-Level Adjustment** \
-   This update introduces a convenient feature allowing System Administrators to modify log levels for specific logger categories without service interruption. Administrators can effortlessly fine-tune log settings to capture relevant information without restarting the service, enhancing monitoring precision and troubleshooting efficiency. This dynamic log-level configuration capability captures critical details as needed, streamlining the debugging process and improving overall system reliability.
 
 ### Improvements
 
 This update improves the tool's efficiency and responsiveness and leverages new technologies, collectively resulting in a smoother, faster user experience.
 
 1. In this release, we revolutionized the system by converting all JSP pages into a RESTful API, enhancing modularity, scalability, and interoperability.
-2. SF CLI Version upgrade to 2.19.8
+2. SF CLI Version upgrade to 2.41.8
 3. SOAP to REST services upgrade
 4. By merging SalesforceDxHub into SalesforceOrg, it effectively reduces redundancy in data storage. Users can now register once from SalesforceOrg, with the added capability to specify a registered org as a Dev hub. When a production org is registered as a Dev hub, it appears on both screens, streamlining data management and enhancing user workflow. This release optimizes data storage, improves user experience, and simplifies registration processes, ultimately enhancing overall system efficiency.
 5. Upgrade of third-party libraries
 6. Salesforce integration credentials (Client ID & Secret) are now encrypted for improved security. Existing tokens are also migrated to the new format. This enhances protection against unauthorized access.
+7. Log-leveling: Dynamically modify log levels for specific logger categories to enhance monitoring and troubleshooting.

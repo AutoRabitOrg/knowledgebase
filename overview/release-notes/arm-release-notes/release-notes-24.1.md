@@ -43,3 +43,9 @@ This update improves the tool's efficiency and responsiveness and leverages new 
 5. Upgrade of third-party libraries
 6. Salesforce integration credentials (Client ID & Secret) are now encrypted for improved security. Existing tokens are also migrated to the new format. This enhances protection against unauthorized access.
 7. Log-leveling: Dynamically modify log levels for specific logger categories to enhance monitoring and troubleshooting.
+
+
+
+### nCino Improvements
+
+See the recent updates to [nCino release 24.1](../ncino-release-notes/release-notes-24.1.md) notes as well.&#x20;

@@ -20,10 +20,11 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654171410625.png" alt="" width="375"><figcaption></figcaption></figure>
-2.  Click on the **NEW STATIC CODE ANALYSIS** button at the top right corner of the screen.\
+2. Click on the **NEW STATIC CODE ANALYSIS** button at the top right corner of the screen.\
 
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654171495291.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-20240610-042146.png" alt=""><figcaption></figcaption></figure>
+
 3. On the next screen, enter a **Label Name**.
 4.  Choose **Source** as **Salesforce Org** or **Version Control**.
 
@@ -55,21 +56,21 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 Note: Before running the **Static Code Analysis** tool, you must enable them under the **My Account > Plugins** section.
 {% endhint %}
 
-1. The list of respective **Metadata Types** is displayed for the selected SCA tool. By default, all are selected. You can unselect certain metadata types as per your requirements.\
+6. The list of respective **Metadata Types** is displayed for the selected SCA tool. By default, all are selected. You can unselect certain metadata types as per your requirements.\
    Supported Metadata Types:
    * For **ApexPMD, Checkmarx, SonarQube**: _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
    * For **Codescan, Salesforce Scanner**: _ApexClasses, ApexPages, ApexTriggers, AuraDefinitionBundle, CustomObjects, Flow, LightningComponentBundle, PermissionSets, Profiles, Settings, SharingRules, Workflows, StaticResource._
-2. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.\
+7. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.\
    ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680783298926.png)
-3. Select the recipients for the alert under the **Notifications** field. Multiple recipients can be added here.
-4. Next, choose the frequency for SCA to run, i.e., daily, weekly, or at any specific interval. For example, if you want the SCA tool to run daily at **10 AM**, select the **Daily** option and set the fixed time to 10.
+8. Select the recipients for the alert under the **Notifications** field. Multiple recipients can be added here.
+9. Next, choose the frequency for SCA to run, i.e., daily, weekly, or at any specific interval. For example, if you want the SCA tool to run daily at **10 AM**, select the **Daily** option and set the fixed time to 10.
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680783585264.png" alt="" width="563"><figcaption></figcaption></figure>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654498545565.png" alt="" width="563"><figcaption></figcaption></figure>
 
-5. Click on **SAVE**.
-6. Upon confirmation, you'll be redirected to the home page, where you can find your recently configured SCA.
+10. Click on **SAVE**.
+11. Upon confirmation, you'll be redirected to the home page, where you can find your recently configured SCA.
 
 <figure><img src="../../.gitbook/assets/image-20240201-152439.png" alt=""><figcaption></figcaption></figure>
 

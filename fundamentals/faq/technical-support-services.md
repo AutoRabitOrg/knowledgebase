@@ -16,15 +16,15 @@ _However, if you are **unable to log in to your instance**, please access our po
 2. **Navigate to Quick Links**: Click on the “Quick Links” section.
 3. **Access the Support Portal:** Locate and select the “Help Desk & Feedback” button. This will redirect you to our Support Portal.
 
-<figure><img src="../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **Existing Tickets:** On the [_Support Portal_](https://support.autorabit.com/portal/en/home) page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
 
-<figure><img src="../../.gitbook/assets/image (34) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (35) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -33,14 +33,14 @@ _However, if you are **unable to log in to your instance**, please access our po
 1. **Log in to the instance.** After logging in, proceed to the next step.
 2. **Access the Help Center:** Click on the question mark (?) icon (usually located in the top-right corner) and select “Get Help.”
 
-<figure><img src="../../.gitbook/assets/image (36) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Existing Tickets:** On the _Support Portal_ page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
 4. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.
 
-<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (37) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (38) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,13 +49,13 @@ _However, if you are **unable to log in to your instance**, please access our po
 1. Log in to the instance.
 2. Click on the question mark icon (?) > then click on “**Get Help**.”
 
-<figure><img src="../../.gitbook/assets/image (39) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (39) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. It will redirect you to the Support Portal page where existing tickets can be accessed. You can also create a new ticket by clicking on the “**Add Ticket**” button.
 
-<figure><img src="../../.gitbook/assets/image (40) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (41) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (41) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

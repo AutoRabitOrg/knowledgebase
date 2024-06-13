@@ -2,19 +2,17 @@
 
 ### Welcome to ARM!! <a href="#welcome-to-arm" id="welcome-to-arm"></a>
 
-You'll see this when you log in to your ARM account.\
+You'll see this when you log in to your ARM account.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667374331788.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 Let's get to know the main areas of the ARM application.
 
 ### The Menu <a href="#the-menu" id="the-menu"></a>
 
-You see a list of icons with the context in the top-right corner.\
+You see a list of icons with the context in the top-right corner.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667374381275.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 Let's examine each of these links in detail:
 
@@ -22,21 +20,20 @@ Let's examine each of these links in detail:
 
 A **`Create New`** drop-down is available, which allows users to perform the primary and most used features in ARM, such as creating a CI job or a merge operation, etc., The users can also find the listed **`Create New`** operations within the ARM sub-module.
 
-Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.\
+Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667374488024.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 #### **Quick Links** <a href="#quick-links" id="quick-links"></a>
 
 Here you can:
 
-1. Find links to [ARM **`Help Center`**](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/)
+1. Find links to [**ARM `Help Center`**](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/)
 2. Know about the ARM version on which you're logged in
 3. ARM **`Feedback`** page
 4. **`Feature Management`** _(visible only for Administrator for both SAAS and On-Premise instances)_
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1655698394821.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="452"><figcaption></figcaption></figure>
 
 #### **User Details** <a href="#user-details" id="user-details"></a>
 
@@ -44,17 +41,15 @@ Here you can:
 
 1. View your profile or update your basic information, personal email settings, etc.
 2. Change your current password
-3.  Logout from your ARM account\
+3. Logout from your ARM account
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667374584758.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35).png" alt="" width="336"><figcaption></figcaption></figure>
 
 ### Left Navigation Bar <a href="#left-navigation-bar" id="left-navigation-bar"></a>
 
-On the left-hand side of the application, you see a list of icons with the context in it. These icons are nothing but the modules or features of ARM. The sub-modules which are part of it will be listed by hovering your mouse over each module.\
+On the left-hand side of the application, you see a list of icons with the context in it. These icons are nothing but the modules or features of ARM. The sub-modules which are part of it will be listed by hovering your mouse over each module.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667374693852.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36).png" alt="" width="201"><figcaption></figcaption></figure>
 
 Let's examine each of these links in detail:
 
@@ -91,16 +86,14 @@ Salesforce Developer Experience (DX) is a new set of tools that streamlines the 
 
 ARM allows its users to view all the deployment, merge, dataloader related information carried out in the Salesforce Org in the form of reports. This information improves productivity, accountability, and insight into your business data in the form of reports.
 
-#### [Environment Provisioning](broken-reference) <a href="#environment-provisioning" id="environment-provisioning"></a>
+#### [Environment Provisioning](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/environment-provisioning) <a href="#environment-provisioning" id="environment-provisioning"></a>
 
 Environment Provisioning is a unique interface ARM provides to quickly facilitate a Salesforce sandbox with metadata and data requirements that suit specific needs. These can be created as a template and stored in ARM. The same templates can be reused multiple times across various modules in ARM. For example, you can create an Environment Provisioning template to disable validation rules, enable history tracking, anonymous Apex, etc., of a particular object as a post-deployment setup.
 
-#### [Admin](broken-reference) <a href="#admin" id="admin"></a>
+#### [Admin](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration) <a href="#admin" id="admin"></a>
 
 Admin-related items are displayed here, such as registering of Salesforce Org, Version Control, adding team members, etc.
 
 #### [nCino](../arm-features/ncino/) <a href="#ncino" id="ncino"></a>
 
-nCino-related operations will be displayed in this section, for ex- creating a feature migration template, automating nCino deployments, etc.
-
-\
+nCino - related operations will be displayed in this section, for ex- creating a feature migration template, automating nCino deployments, etc.

@@ -1,7 +1,7 @@
 # Salesforce Org Management
 
 {% hint style="info" %}
-Important Note: This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users. &#x20;
+**Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users. &#x20;
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
@@ -14,17 +14,15 @@ The **Salesforce Org Management** page shows information about:
 2. ALM / Plugins mapped with your Salesforce org
 3. List of metadata members available with your Salesforce org
 4. Default Apex Test Class configured
-5.  User Permissions assigned to your Salesforce org\
+5. User Permissions assigned to your Salesforce org
 
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678957882200.png" alt="" width="563"><figcaption></figcaption></figure>
+#### Salesforce Org - Details <a href="#salesforce-org-details" id="salesforce-org-details"></a>
 
-#### Salesforce Org- Details <a href="#salesforce-org-details" id="salesforce-org-details"></a>
+A summary of the Salesforce org registered with ARM is displayed in this area.
 
-A summary of the Salesforce org registered with ARM is displayed in this area.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678957974228.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 The fields displayed in this section are described in the table below:&#x20;
 
@@ -43,45 +41,44 @@ The fields displayed in this section are described in the table below:&#x20;
 
 About nCino Package EnabledSelecting the **Enable nCino package** previously required getting all nCino deployed packages of the Salesforce org; however, users without **Modify All Data** and **Download App** permissions could not register the org in the ARM application. To avoid this, the mandatory option to load nCino deployed packages while registering a Salesforce org has been disabled.
 
-**Additional options under 'Salesforce Org - Details' section**\
+**Additional options under 'Salesforce Org - Details' section**
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678958376511.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Clone:`** ARM clone functionality creates duplicate records to reduce unnecessary retyping.
 2. **`View/Download Audit Log:`** The audit log shows the recent changes made to your org. It lists the date of the change, who made it, and what the change was. All objects include fields to store the name of the user who created the record and who last modified the record. This provides some basic auditing information. Use the **`Download Audit Log`** button to save the audit log in your local system.
-3.  **`Generate Code Coverage Report:`** This function allows you to run all available Apex Test Classes in the Salesforce org and generate a code coverage report. The code coverage report will be emailed to your registered email id with the CSV file attached. The CSV file will contain the failed test classes that require the user's attention to resolve. Select **`Do you want us to update the test classes?`** checkbox to avoid classes from getting overwritten after deployment.\
+3. **`Generate Code Coverage Report:`** This function allows you to run all available Apex Test Classes in the Salesforce org and generate a code coverage report. The code coverage report will be emailed to your registered email id with the CSV file attached. The CSV file will contain the failed test classes that require the user's attention to resolve. Select **`Do you want us to update the test classes?`** checkbox to avoid classes from getting overwritten after deployment.
 
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681225685458.png" alt=""><figcaption></figcaption></figure>
-4. Attached is the sample email that will be notified to the user whenever the code coverage is run.
-   1.  Code Coverage with a success rate of more than 75%
+4.  Attached is the sample email that will be notified to the user whenever the code coverage is run.
 
-       ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678960569516.png)
-   2.  Code Coverage with a failure count of more than 20\
+    * Code Coverage with a success rate of more than 75%
 
+    <figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678960667460.png" alt="" width="375"><figcaption></figcaption></figure>
-   3.  Code Coverage with failure count of less than 20 (detailed error report will be included in the email body)\
+    * Code Coverage with a failure count of more than 20
 
+    <figure><img src="../../../.gitbook/assets/image (9).png" alt="" width="341"><figcaption></figcaption></figure>
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678960797091.png" alt="" width="375"><figcaption></figcaption></figure>
+    * Code Coverage with failure count of less than 20 (detailed error report will be included in the email body)
 
-#### Salesforce Org- Mappings <a href="#salesforce-org-mappings" id="salesforce-org-mappings"></a>
+    <figure><img src="../../../.gitbook/assets/image (10).png" alt="" width="301"><figcaption></figcaption></figure>
 
-Mapping your Salesforce org with your version control system or ALM configured in ARM. This helps create a control during a commit, merge, or deployment action performed on your Salesforce org or version control branch.\
+#### Salesforce Org - Mappings <a href="#salesforce-org-mappings" id="salesforce-org-mappings"></a>
 
+Mapping your Salesforce org with your version control system or ALM configured in ARM. This helps create a control during a commit, merge, or deployment action performed on your Salesforce org or version control branch.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678963852300.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Suppose you want to connect your Salesforce Org with Version Control as a **`GIT`**.&#x20;
 
 1. Click on the **`Mapping`** button for Version Control as **`GIT`**.
 2. Select the respective version control **`Repository`** and the **`Branch`** for your GIT.
-3.  Click **`Test Connection`** to authenticate your connection.\
+3. Click **`Test Connection`** to authenticate your connection.
 
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678963958732.png" alt="" width="563"><figcaption></figcaption></figure>
 4. Remember to click on **`Save Mappings`** to save the details, or else you need to repeat the above steps.
 
 In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.&#x20;
@@ -92,42 +89,36 @@ In another scenario, let us assume you also like to configure JIRA (ALM tool) wi
 
 1. Click on the **`Mapping`** button beside JIRA.&#x20;
 2. Select the **`Jira`** label and the **`Project`** from the drop-down list.&#x20;
-3.  Click on **`Save Mappings`** to save the details, and you're done.\
+3. Click on **`Save Mappings`** to save the details, and you're done.
 
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678964357906.png" alt="" width="563"><figcaption></figcaption></figure>
+#### Salesforce Org - Skip Members <a href="#salesforce-org-skip-members" id="salesforce-org-skip-members"></a>
 
-#### Salesforce Org- Skip Members <a href="#salesforce-org-skip-members" id="salesforce-org-skip-members"></a>
+In this section, you can add certain metadata members from your Salesforce org that will be skipped whenever any deployment happens to the org.
 
-In this section, you can add certain metadata members from your Salesforce org that will be skipped whenever any deployment happens to the org.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678964735544.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 Suppose you want to skip **Analytics Cloud Integration User**, **Analytics Cloud Security User**, and **Authenticated Website** metadata members for the **`Profile`** metadata type. In such a case, select the **`Type`** as **`Profile`** under and click the **`Fetch Members`** button.
 
-Select the metadata members from the list. These members will be skipped each time the deployment is performed on the above Salesforce org. Click **`OK`**.\
+Select the metadata members from the list. These members will be skipped each time the deployment is performed on the above Salesforce org. Click **`OK`**.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1679985389075.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Similarly, you can add different metadata members for various metadata types. Additionally, if you remember certain members you like to add manually, you can enter the **`Enter members manually`** field and click **`Add`**.
 
-The Salesforce Org- Skip Members section shows a summary of the selected metadata members. Click on **`Save Members`** to save the steps configured.\
+The Salesforce Org- Skip Members section shows a summary of the selected metadata members. Click on **`Save Members`** to save the steps configured.
 
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1679985472611.png" alt="" width="563"><figcaption></figcaption></figure>
+#### Salesforce Org - Default Apex Test Class Configuration <a href="#salesforce-org-default-apex-test-class-configuration" id="salesforce-org-default-apex-test-class-configuration"></a>
 
-#### Salesforce Org- Default Apex Test Class Configuration <a href="#salesforce-org-default-apex-test-class-configuration" id="salesforce-org-default-apex-test-class-configuration"></a>
+This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../troubleshoot/how-tos/default-apex-class-configuration.md).
 
-This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../troubleshoot/how-tos/default-apex-class-configuration.md).\
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
+### Salesforce Org - User Permissions <a href="#salesforce-org-user-permissions" id="salesforce-org-user-permissions"></a>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1679985724604.png" alt="" width="563"><figcaption></figcaption></figure>
+The list of users allowed to work with your Salesforce Org is available in this section. The administrator may assign permission to its users on various modules of ARM that are feasible with the Salesforce Org.
 
-### Salesforce Org- User Permissions <a href="#salesforce-org-user-permissions" id="salesforce-org-user-permissions"></a>
-
-The list of users allowed to work with your Salesforce Org is available in this section. The administrator may assign permission to its users on various modules of ARM that are feasible with the Salesforce Org.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1679985870843.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>

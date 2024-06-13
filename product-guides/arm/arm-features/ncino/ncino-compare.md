@@ -116,22 +116,22 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
 
 ![](../../../../.gitbook/assets/11.png)
 
-1. Once you click on the **“Save and Deploy”** button, you will be redirected to the deployment page with the **“Iteration – Staging”** designation.
+18. Once you click on the **“Save and Deploy”** button, you will be redirected to the deployment page with the **“Iteration – Staging”** designation.
 
 ![](../../../../.gitbook/assets/12.png)
 
-2. Clicking on the total under **“Selected Records”** will show you the record(s) in a pop-up.
+19. Clicking on the total under **“Selected Records”** will show you the record(s) in a pop-up.
 
 ![](../../../../.gitbook/assets/13.png)
 
 ![](../../../../.gitbook/assets/14.png)
 
-3. Click on **“Deploy”** to perform the deployment of the selected records.
-4. On successful deployment, the iteration will be changed to “1” and users can see **Success** and **Failure** records.
+20. Click on **“Deploy”** to perform the deployment of the selected records.
+21. On successful deployment, the iteration will be changed to “1” and users can see **Success** and **Failure** records.
 
 ![](../../../../.gitbook/assets/15.png)
 
-5. You can see the “Success” and “Failure” results of the deployments.
+22. You can see the “Success” and “Failure” results of the deployments.
 
 ### Relational Compare - Global & Record-Level
 
@@ -144,7 +144,7 @@ This will compare the selected object with the object in the destination and ide
 
 ![](../../../../.gitbook/assets/16.png)
 
-2. **You can make selection on parent and child sections:**
+2. **You can make a selection on parent and child sections:**
    * **Object:** Select the required items from the list of objects for comparison
    * **Unique ID:** Select the unique ID from the list.
    * **Exclude From Compare:** Select the records to be excluded from the compare operation.
@@ -170,7 +170,7 @@ This will compare the selected object with the object in the destination and ide
 3. **View Records:** You can see the details of the _**record on which the record-level comparison is performed**_.
 4. You can both collapse and expand the “Relational Parent” and “Relational Child” sections, as observed above.
    * The “Relational Parent” and “Relational Child” sections are collapsed for the convenience of viewing.
-5. As shown below, you can perform the relational compare at different levels.
+5. As shown below, you can perform the relational comparison at different levels.
 
 ![](../../../../.gitbook/assets/19.png)
 
@@ -179,12 +179,12 @@ This will compare the selected object with the object in the destination and ide
 6. You can perform the **‘Global Relational Compare’** and the **‘Record-Level Comparison’** at these levels too, as displayed in the following screenshot.
 7. You can continue to select from the set of records that are extracted from the compare operation.
 8. Upon concluding the records selection, you can either:
-   * **Save and Continue**: Save the initial record selections and can continue with the further selection of records or performing relational compare operations.
+   * **Save and Continue**: Save the initial record selections and continue to select additional records or perform relational compare operations.
    * **Save and Deploy**: You can continue to save and deploy the records. On selecting this, you will be taken to the deployment page, where the selected records can be deployed to further environments.
 9. You can see the “Object Summary” for reviewing the selected records.
-10. By clicking on the total displayed under the **“Selected Records”**, you can see the records in a pop-up.
+10. By clicking on the total displayed under **“Selected Records,”** you can see the records in a pop-up.
 11. Once you click on the “Save and Deploy” button, you will be redirected to the deployment page with the **“Iteration – Staging.”**
 12. Click on **“Deploy”** to perform the deployment of the selected records.
-13. On successful deployment of the records, the iteration will be changed to “1” and you can see Success and Failed records.
+13. Upon successful deployment of the records, the iteration will be changed to “1” and you can see Success and Failed records.
 14. You can see the **“Success”** & **“Failed”** counts of the deployed records on the above screen.
 

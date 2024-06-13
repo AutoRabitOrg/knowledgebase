@@ -1,4 +1,4 @@
-# Customising Quality Gates
+# Customizing Quality Gates
 
 The Quality Gates gives you a **Pass** or **Fail** rating for your project, depending on your provided metrics.
 
@@ -6,7 +6,7 @@ The Quality Gates gives you a **Pass** or **Fail** rating for your project, depe
 
 To create a new Quality Gate, follow the steps below:
 
-1. Go to your Organisation's main page and click **Quality Gate** on the top menu.
+1. Go to your Organization's main page and click **Quality Gate** on the top menu.
 
 <figure><img src="../../../.gitbook/assets/image (69) (1).png" alt=""><figcaption></figcaption></figure>
 

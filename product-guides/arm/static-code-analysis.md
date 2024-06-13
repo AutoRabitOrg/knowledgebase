@@ -69,10 +69,9 @@ Note: Before running the **Static Code Analysis** tool, you must enable them und
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654498545565.png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Click on **SAVE**.
-2.  Upon confirmation, you'll be redirected to the home page, where you can find your recently configured SCA.\
+2. Upon confirmation, you'll be redirected to the home page, where you can find your recently configured SCA.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654498737908.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-20240201-152439.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -82,29 +81,41 @@ When the analysis is run on a zip file, the content is not visible in UI. But Sa
 
 #### Additional options on this page <a href="#additional-options-on-this-page" id="additional-options-on-this-page"></a>
 
-1.  **Running On-demand SCA**: To run the SCA tool before the scheduled time frame, click on the **Run (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606930977496.png)**)** button.\
-    \
+1. **Editing the Schedule:** Locate the edit schedule icon:
+
+<figure><img src="../../.gitbook/assets/image-20240610-042145.png" alt=""><figcaption></figcaption></figure>
+
+1. Choose the desired report frequency (daily, weekly, monthly, etc.).
+2. Specify the exact times for reports to run.
+3. Please add/remove an email If you want to send/not send the notification.
+4. Save and confirm the changes made to the schedule.
+
+<figure><img src="../../.gitbook/assets/image-20240201-152456.png" alt=""><figcaption></figcaption></figure>
+
+6. **Running On-demand SCA**: To run the SCA tool before the scheduled time frame, click on the **Run (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606930977496.png)**)** button.\
 
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504103193.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-20240201-152439.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504162496.png" alt="" width="375"><figcaption></figcaption></figure>
-2. **Log**: Click on the **Log** (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606931380303.png)) icon to find the detailed log report.
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504162496.png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504310168.png" alt=""><figcaption></figcaption></figure>
+7. **Log**: Click on the **Log** (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606931380303.png)) icon to find the detailed log report.
+
+<figure><img src="../../.gitbook/assets/image-20240201-152439.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504452138.png" alt="" width="563"><figcaption></figcaption></figure>
 
-1.  **SCA Result**: ARM generates a detailed SCA report whenever you run static code analysis. This report will have info about the reviewed files and the related violations. Click on each file to view its related violations at the bottom right side of the page. If you click on any violation, it will take you to the respective line (in the black screen on the right side) where the violation occurred.\
-    \
+1. **SCA Result**: ARM generates a detailed SCA report whenever you run static code analysis. This report will have info about the reviewed files and the related violations. Click on each file to view its related violations at the bottom right side of the page. If you click on any violation, it will take you to the respective line (in the black screen on the right side) where the violation occurred.\
+   \
 
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504548788.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-20240201-152439.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504690692.png" alt=""><figcaption></figcaption></figure>
-2. **Download SCA Report**: Click on the **Download** (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606932031535.png)) icon to download the report in CSV format on your local device.
-3. **Delete SCA process**: Click on the **Delete (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606932171961.png)**)** icon to delete the SCA process configured for your org/anch. This cannot be undone.
-4.  **View the SCA run details**: To view the list of SCA runs to date along with individual SCA results, click on the **Label Name**. The main screen shows the last details of the SCA run.\
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654504690692.png" alt=""><figcaption></figcaption></figure>
+
+1. **Download SCA Report**: Click on the **Download** (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606932031535.png)) icon to download the report in CSV format on your local device.
+2. **Delete SCA process**: Click on the **Delete (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606932171961.png)**)** icon to delete the SCA process configured for your org/anch. This cannot be undone.
+3.  **View the SCA run details**: To view the list of SCA runs to date along with individual SCA results, click on the **Label Name**. The main screen shows the last details of the SCA run.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654505378608.png" alt="" width="563"><figcaption></figcaption></figure>

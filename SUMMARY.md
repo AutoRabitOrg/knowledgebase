@@ -549,7 +549,7 @@
     * [Exporting CodeScan Quality Profiles](product-guides/codescan/quality-profiles/exporting-codescan-quality-profiles.md)
     * [Setting a Default Quality Profile](product-guides/codescan/quality-profiles/setting-a-default-quality-profile.md)
   * [Quality Gates](product-guides/codescan/quality-gates/README.md)
-    * [Assigning Quality Gate to specific Projects](product-guides/codescan/quality-gates/assigning-quality-gate-to-specific-projects.md)
+    * [Assigning Quality Gates to Specific Projects](product-guides/codescan/quality-gates/assigning-quality-gate-to-specific-projects.md)
     * [Customizing Quality Gates](product-guides/codescan/quality-gates/customising-quality-gates.md)
   * [Quality Rules](product-guides/codescan/quality-rules/README.md)
     * [CodeScan Rule List](product-guides/codescan/quality-rules/codescan-rule-list.md)

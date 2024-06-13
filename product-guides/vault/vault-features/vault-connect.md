@@ -1,16 +1,16 @@
 # Vault Connect
 
-### Introduction
+## Introduction
 
 This document provides complete information about the new feature Vault Connect, which will enhance the user’s capability to better utilize Vault in viewing archived Salesforce data from an external data source.
 
-### Feature Overview
+## Feature Overview
 
 1. OData protocol is an open and platform-independent protocol that can be integrated with the system of the user’s choice (along with Salesforce) as it exposes REST APIs for consuming and querying data from the underlying archives.
 2. External objects support most of the capabilities that standard and custom objects have in Salesforce.
 3. No need to install any managed packages or write custom scripts in Salesforce.
 
-### Step-by-Step Guide
+## Step-by-Step Guide
 
 **Create Connect Config**
 
@@ -149,25 +149,25 @@ This document provides complete information about the new feature Vault Connect,
 
 This feature enables the user to sync the latest metadata changes on the Salesforce with Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects
 
-### Step-By-Step Guide:
+### Step-by-Step Guide:
 
-1. Please log in to the Vault application
-2.  Please click on any ORG to navigate to the “Vault - Connect”.\
+1. Log in to the Vault application.
+2.  Click on any Org to navigate to Vault – Connect.\
 
 
     <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-3.  Click on the “Connect” TAB to land on the Connect application.\
+3.  Click on the “Connect” tab to go to the Connect application.\
 
 
     <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-4. Click on the “SYNC WITH SALESFORCE” button to initiate the sync procedure
+4. Click on the “**Sync with Salesforce**” button to initiate the sync procedure
    * Please observe the information icon for informational purposes.
-5.  On initiating the “SYNC WITH SALESFORCE”, the user will land on the “Sync history” page.\
+5.  On initiating “**Sync with Salesforce,**” the user will go to the “Sync history” page.\
 
 
     <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-6. This page will provide information on how many times the sync has happened till date \[ENV1] .
-7.  On clicking the “SYNC WITH SALESFORCE”, the following pop-up will be displayed.\
+6. This page will provide information on how many times the sync has happened until date \[ENV1] .
+7.  On clicking “**Sync with Salesforce,**” the following pop-up will be displayed.\
 
 
     <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
@@ -175,32 +175,32 @@ This feature enables the user to sync the latest metadata changes on the Salesfo
 
 
     <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-9.  Clicking on “VIEW LOGS” will provide the related logs.\
+9.  Clicking on “View Logs” will provide the related logs.\
 
 
     <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
-10. Clicking on any of the objects will open the pop-up related to the object and the required selections can be done.\
+10. Clicking on any of the objects will open the pop-up related to the object and the required selections can be made.\
 
 
     <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 11. Field Label Name: The field label can be updated to a custom name by clicking on the pencil icon provided.
-12. Reference to: If a field has a pencil icon beside it, then “Type” for that field will be set to “Reference”.
+12. Reference to: If a field has a pencil icon beside it, then “Type” for that field will be set to “Reference.”
 13. For polymorphic fields, at least one reference has to be selected.
 
-    * For polymorphic fields a pencil icon will be displayed beside the fields under the “Reference to” column.
+    * For polymorphic fields, a pencil icon will be displayed beside the fields under the “Reference to” column.
 
     <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-14. An error will be displayed under the ‘error’ column, if, no references were selected under the “Reference to” column.\
+14. An error will be displayed under the ‘error’ column if no references were selected under the “Reference to” column.\
 
 
     <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-15. On completing the selection(s), click on the “SYNC WITH SALESFORCE” button to continue with the sync procedure.\
+15. On completing the selection(s), click on the “**Sync with Salesforce**” button to continue with the sync procedure.\
 
 
     <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-16. An information pop-up will be displayed on clicking the “SYNC WITH SALESFORCE” button.\
+16. An information pop-up will be displayed on clicking the “**Sync with Salesforce**” button.\
 
 
     <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>

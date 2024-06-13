@@ -372,6 +372,18 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 * Some useful debugging information is available under the **`Output`** window under the ‘**`CodeScan`**’ tab.
 * Also, you can check for any serious errors by going to **`Help > Toggle Developer Tools`** to bring up the console.
 
+#### Changelog:
+
+**v. 2.0.2  (13 June 2024)**&#x20;
+
+New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review. You can click on the specific _Type_ or _Severity_ to only see issues of that type.
+
+<figure><img src="../../../../.gitbook/assets/image (567).png" alt=""><figcaption></figcaption></figure>
+
+The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
+
+
+
 ### Raising a support ticket <a href="#raising-a-support-ticket" id="raising-a-support-ticket"></a>
 
 Before raising a support ticket, perform the following checks in VS Code:

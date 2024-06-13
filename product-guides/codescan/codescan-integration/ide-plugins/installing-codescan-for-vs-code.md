@@ -372,7 +372,11 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 * Some useful debugging information is available under the **`Output`** window under the ‘**`CodeScan`**’ tab.
 * Also, you can check for any serious errors by going to **`Help > Toggle Developer Tools`** to bring up the console.
 
-#### Changelog:
+
+
+***
+
+### Changelog:
 
 **v. 2.0.2  (13 June 2024)**&#x20;
 
@@ -383,6 +387,8 @@ New CodeScan Issue Filter: Quickly sort and filter issues by type and severity f
 The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
 
 
+
+***
 
 ### Raising a support ticket <a href="#raising-a-support-ticket" id="raising-a-support-ticket"></a>
 
@@ -397,6 +403,10 @@ Before raising a support ticket, perform the following checks in VS Code:
 <figure><img src="../../../../.gitbook/assets/image (501).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Perform the **CodeScan Update Binding** and check if the issue is resolved.
+
+
+
+***
 
 **What's Next?**\
 If you're still having issue with VS Code, raise a support ticket on the [CodeScan Support Page](https://support.autorabit.com/portal/en/home) and share with us the following informations:

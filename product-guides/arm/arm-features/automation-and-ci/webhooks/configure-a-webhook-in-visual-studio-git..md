@@ -6,14 +6,14 @@
 2. Click on Admin Section -> API Token.
 3. Click on Create API Token.
 
-<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the token name.
 5. Select Type as “webhook.”
 6. Enter Description if required.
 7. Click on Create Option.
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Your new API token is created.
 

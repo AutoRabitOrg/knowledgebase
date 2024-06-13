@@ -141,6 +141,90 @@ This document provides complete information about the new feature Vault Connect,
    * Click on the **New** button.
 5. Under **Objects**, you can see the objects that are part of the Config created with the naming convention **“Object\_\_X”.**
 
+
+
+## Sync with Salesforce
+
+### Overview
+
+This feature enables the user to sync the latest metadata changes on the Salesforce with Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects
+
+### Step-By-Step Guide:
+
+1. Please log in to the Vault application
+2.  Please click on any ORG to navigate to the “Vault - Connect”.\
+
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+3.  Click on the “Connect” TAB to land on the Connect application.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+4. Click on the “SYNC WITH SALESFORCE” button to initiate the sync procedure
+   * Please observe the information icon for informational purposes.
+5.  On initiating the “SYNC WITH SALESFORCE”, the user will land on the “Sync history” page.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+6. This page will provide information on how many times the sync has happened till date \[ENV1] .
+7.  On clicking the “SYNC WITH SALESFORCE”, the following pop-up will be displayed.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+8.  Clicking on “Confirm” will redirect the user to the object list page, where the list of objects can be observed.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+9.  Clicking on “VIEW LOGS” will provide the related logs.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+10. Clicking on any of the objects will open the pop-up related to the object and the required selections can be done.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+11. Field Label Name: The field label can be updated to a custom name by clicking on the pencil icon provided.
+12. Reference to: If a field has a pencil icon beside it, then “Type” for that field will be set to “Reference”.
+13. For polymorphic fields, at least one reference has to be selected.
+
+    * For polymorphic fields a pencil icon will be displayed beside the fields under the “Reference to” column.
+
+    <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+14. An error will be displayed under the ‘error’ column, if, no references were selected under the “Reference to” column.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+15. On completing the selection(s), click on the “SYNC WITH SALESFORCE” button to continue with the sync procedure.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+16. An information pop-up will be displayed on clicking the “SYNC WITH SALESFORCE” button.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+17. Clicking on “CONFIRM” will display a success message pop-up.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+18. The latest job can be observed as the top entry on the “Sync history” page.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+19. Clicking on the latest job will provide the list of objects from the job.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+20. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+***
+
 ### Prerequisites
 
 Salesforce Connect OData 4.0 license subscription.

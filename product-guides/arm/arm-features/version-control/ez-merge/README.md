@@ -192,12 +192,32 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 6. **Skip Layout/Profile/Perm. Set Access-Setting Duplicity Check:** If you do not want ARM to list all duplicate entries for your layout/profile/permission sets, please select this checkbox. ([Learn More](merge-conflicts.md))
 7. **Review Artifact:** Select this checkbox to see the list of the changed files staged for commit (during merge conflicts). This allows you to preview the changes, review them or edit the files before pushing them into your version control. ([Learn More](merge-conflicts.md))
 
+## Skip prevalidation criteria for back merge branches
+
+1. **Select the Skip Pre-Validation for Back-Merge Check-Box**:
+   * Navigate to **Merge Settings** under the **Admin** section.
+   * Select the **Skip Pre-Validation for Back-Merge** checkbox.
+
+<figure><img src="../../../../../.gitbook/assets/image-20240612-082136.png" alt=""><figcaption></figcaption></figure>
+
+2. **Perform a New EZ-Merge**:
+   * Execute a new EZ-Merge from a higher to a lower branch (e.g., INT to DEV).
+3. **Automatic Skipping of Prevalidation Criteria**:
+   * The prevalidation criteria will be automatically skipped during the back merge process.
+
+<figure><img src="../../../../../.gitbook/assets/image-20240612-081835.png" alt=""><figcaption></figcaption></figure>
+
+4. **Back Merge Indicator**:
+   * After performing the merge, you will see an indicator confirming that the validation is being skipped automatically as it is a back merge.
+
+<figure><img src="../../../../../.gitbook/assets/image-20240612-155317.png" alt=""><figcaption></figcaption></figure>
+
 ### Prevalidate Merge <a href="#prevalidate-merge" id="prevalidate-merge"></a>
 
 In this section, you can assign certain pre-validation merge operations before merging to your target branch. These operations include deployment validation with up to three selected Salesforce Orgs, choosing Apex test classes to run, selecting the static code analysis tool, and generating difference reports.\
 
 
-**Pre-Validation Merge Options:**
+**Prevalidation Merge Options:**
 
 Use these options to customize and control your pre-validation merge operations, ensuring robust and flexible deployment validation tailored to your specific needs:
 

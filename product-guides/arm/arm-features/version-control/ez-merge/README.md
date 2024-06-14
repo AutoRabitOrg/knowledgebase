@@ -194,12 +194,26 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 
 ### Prevalidate Merge <a href="#prevalidate-merge" id="prevalidate-merge"></a>
 
-In this section, you can assign certain pre-validation merge operations (such as deployment validation with another Salesforce Org, choosing the Apex test class to run, selecting the static code analysis tool, generating difference reports, etc.) before merging to your target branch.\
+In this section, you can assign certain pre-validation merge operations before merging to your target branch. These operations include deployment validation with up to three selected Salesforce Orgs, choosing Apex test classes to run, selecting the static code analysis tool, and generating difference reports.\
 
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682070811281.png" alt=""><figcaption></figcaption></figure>
+**Pre-Validation Merge Options:**
 
-**Different Prevalidate Merge Criteria:**
+Use these options to customize and control your pre-validation merge operations, ensuring robust and flexible deployment validation tailored to your specific needs:
+
+1. **Deployment Validation with Multiple Salesforce Orgs**:
+   * You can now select up to three Salesforce Orgs for deployment validation. This allows for thorough testing across different environments before completing the merge.
+2. **Apex Test Class Selection**:
+   * You can select separate Apex test classes for each Salesforce Org. This provides the flexibility to run different tests tailored to each environment's needs.
+3. **Merge Success Criteria**:
+   * **All Orgs Success**: The merge will be successful only if all selected Salesforce Orgs pass the validation. This option ensures that changes are consistently valid across all environments.
+   * **Any One Org Success**: The merge will be successful if at least one of the selected Salesforce Orgs passes the validation. This option provides flexibility, allowing the merge to proceed even if some orgs do not validate successfully.
+4. **Skip Members Option**:
+   * The skip members option will only be visible if it has been configured. Ensure that this configuration is in place if you intend to use this feature.
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2024-02-28 at 2.56.39 PM-20240228-092717 (1).png" alt=""><figcaption></figcaption></figure>
+
+**Different Pre-Validate Merge Criteria:**
 
 1. **Generate Diff Report:** Select this option to auto-generate a code difference report on completion of the commit.
 2. **Run Static code Analysis:** Select this option if you want to run a [static code analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Similar to "**Generate Diff Report,"** this option will also be auto-selected by default if the criteria are set globally (under the **My Account > Commit Validation - Approval Settings** section).
@@ -219,11 +233,23 @@ In this section, you can assign certain pre-validation merge operations (such as
       Note: This checkbox should be selected for Production org deployments.
    2. **Run Destructive Changes:** Here, you can specify whether to run pre or post-destructive changes while carrying out the merge process.
    3. &#x20;**Ignore Missing Visibility:** With this option, differences in visibility settings between the source and destination branches will not cause the merge to fail. ARM will compare the source and destination branches and keep only the common settings between both branches.\
-      Important Note**Standard fields** are not supported for **Ignore Missing Visible Settings**.
+      Important Note: **Standard fields** are not supported for **Ignore Missing Visible Settings**.
    4. **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.&#x20;
-   5.  **Apex Test Level:** Choose your [Apex Test Level](../../deployment/apex-unit-tests.md) to validate your merge.
+   5. **Apex Test Level:** Choose your [Apex Test Level](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/deployment/apex-unit-tests) to validate your merge.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682260915531.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image-20240612-080815.png" alt=""><figcaption></figcaption></figure>
+
+**Apex Test Class selection:**
+
+Select Org 1 by clicking on the drop-down of destination:
+
+<figure><img src="../../../../../.gitbook/assets/image-20240612-080915.png" alt=""><figcaption></figcaption></figure>
+
+Select Org 2 by clicking on the drop-down of destination:
+
+<figure><img src="../../../../../.gitbook/assets/image-20240612-081000.png" alt=""><figcaption></figcaption></figure>
+
+**Note:** If your validate deployment fails on an org, it shows a (**X**). If it passes, it shows a (**✓**)
 
 **Points to Remember**:
 

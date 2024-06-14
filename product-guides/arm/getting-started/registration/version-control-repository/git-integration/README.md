@@ -16,7 +16,7 @@ Before registering Git with ARM, you must check off some of the boxes on the pre
 
 1. Ensure you enable the **`GIT`** plugin under **`Plugins`** in the **`My Account`** section to use GIT for version control.
 
-<figure><img src="../../../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (37) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. You must have a GitHub account. If you don’t already have a GitHub account, you can create one at [github.com](https://github.com/). Once you have a GitHub account, you can create a new repository or use an existing one.
 3. You must have permission to register a repository.

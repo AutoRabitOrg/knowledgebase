@@ -4,7 +4,7 @@
 
 You'll see this when you log in to your ARM account.
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (2).png" alt=""><figcaption></figcaption></figure>
 
 Let's get to know the main areas of the ARM application.
 
@@ -12,7 +12,7 @@ Let's get to know the main areas of the ARM application.
 
 You see a list of icons with the context in the top-right corner.
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (2).png" alt=""><figcaption></figcaption></figure>
 
 Let's examine each of these links in detail:
 
@@ -22,7 +22,7 @@ A **`Create New`** drop-down is available, which allows users to perform the pri
 
 Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.
 
-<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Quick Links** <a href="#quick-links" id="quick-links"></a>
 
@@ -33,7 +33,7 @@ Here you can:
 3. ARM **`Feedback`** page
 4. **`Feature Management`** _(visible only for Administrator for both SAAS and On-Premise instances)_
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (2).png" alt="" width="452"><figcaption></figcaption></figure>
 
 #### **User Details** <a href="#user-details" id="user-details"></a>
 
@@ -43,13 +43,13 @@ Here you can:
 2. Change your current password
 3. Logout from your ARM account
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (2).png" alt="" width="336"><figcaption></figcaption></figure>
 
 ### Left Navigation Bar <a href="#left-navigation-bar" id="left-navigation-bar"></a>
 
 On the left-hand side of the application, you see a list of icons with the context in it. These icons are nothing but the modules or features of ARM. The sub-modules which are part of it will be listed by hovering your mouse over each module.
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (2).png" alt="" width="201"><figcaption></figcaption></figure>
 
 Let's examine each of these links in detail:
 

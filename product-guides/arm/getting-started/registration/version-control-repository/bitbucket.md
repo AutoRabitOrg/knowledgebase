@@ -64,8 +64,11 @@ If you wish to set up a Bitbucket repository, ensure that you have an account cr
 > Follow the steps to copy the URL from the Bitbucket account:\
 > a. Select your registered Bitbucket repository.\
 > b. Click on **`Clone`** and select **`HTTPS`**.\
-> c. **`Copy the URL`** to paste in the ARM.\
-> **Note:** _Make sure to remove “git clone” before pasting the URL._
+> c. **`Copy the URL`** to paste in the ARM.
+
+{% hint style="info" %}
+**Note:** Make sure to remove “git clone” before pasting the URL.
+{% endhint %}
 
 7. Choose the correct user's **`Credentials`** from the list that you saved earlier.
 8. The **`Default Branch`** selection will be in disabled mode by default. Click on the **`refresh`** button to fetch and list down all the available branches on your remote repository.

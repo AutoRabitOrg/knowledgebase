@@ -21,7 +21,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 5. Select the user registered for the above Salesforce org.
 6. Select the version control **`Repository`** and the **`Branch`** where the changes will be committed. For Version Control as GIT type, the user can create a new branch from the EZ-Commit user interface.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2024-03-04 at 11.35.01 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2024-03-04 at 11.35.01 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Important Notes:**
    1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.&#x20;
@@ -94,17 +94,43 @@ The next screen is displayed based on your commit process selection (prevalidate
 
 ARM allows performing a validation deployment before actually committing the changes.
 
-1. Under the **`Validation Report`** section, you can:
-   1. **`Generate Diff Report at current Head:`**Select this option to auto-generate a code difference report upon commit completion.Important Note:In some scenarios, this option is selected by default. This usually occurs if you set the criteria for the commit process globally, which enables you to generate a Diff Report by default. Your commit criteria are under the **`My Account > Commit Validation - Approval Settings`** section. However, remember that once the criteria is set, the commit is automatically rejected if you deselect the **`Generate Diff Report`** checkbox.
-   2. **`Run Static Code Analysis:`** You can initiate a [Static Code Analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Like **`Generate Diff Report at current HEAD`**, this option is auto-selected by default if the criteria are set globally (under the **`My Account > Commit Validation - Approval Settings`** section).
-      * For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
-        * Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.\
-          ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680679238135.png)![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680679315548.png)
-   3.  **`Validate Deployment:`** Choose a Salesforce Org and the test level to validate a future deployment.\
+1.  Under the **`Validation Report`** section, you can:
+
+    1. **`Generate Diff Report at current Head:`**Select this option to auto-generate a code difference report upon commit completion.Important Note:In some scenarios, this option is selected by default. This usually occurs if you set the criteria for the commit process globally, which enables you to generate a Diff Report by default. Your commit criteria are under the **`My Account > Commit Validation - Approval Settings`** section. However, remember that once the criteria is set, the commit is automatically rejected if you deselect the **`Generate Diff Report`** checkbox.
+    2. **`Run Static Code Analysis:`** You can initiate a [Static Code Analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Like **`Generate Diff Report at current HEAD`**, this option is auto-selected by default if the criteria are set globally (under the **`My Account > Commit Validation - Approval Settings`** section).
+       * For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
+         * Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.\
+           ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680679238135.png)![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680679315548.png)
+    3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. \
 
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680679465730.png" alt=""><figcaption></figcaption></figure>
-2. Under the **`Validation Settings`**, users are prompted to enter the commit label, commit message (if any), and reviewer email ID(s) to send an email notification of the commit process performed and the difference reports. Additionally, there are various options you can configure:
+        #### Selecting Salesforce Orgs for Validation
+
+        1. Click on the option to select Salesforce orgs for validation.
+        2. A dropdown will appear, displaying your available Salesforce orgs.
+        3. Choose up to 3 orgs by clicking the checkbox next to each desired org.
+
+        #### Setting Apex Test Levels (Individual)
+
+        1. Select the option within each org section and locate the option to set the Apex test level.
+        2. Choose the desired test level (e.g., Class, Suite, Organization) for each org independently.
+
+        #### Skip Members Option
+
+        1. The "Skip Members" checkbox will only be visible if any of the selected Salesforce orgs are configured to skip members during validation.
+        2. If enabled, you can choose to skip specific members from the validation process for each org where skipping is configured.
+
+        #### Selecting Test Classes
+
+        1. You'll find a dedicated section for each chosen Salesforce org to select test classes. This section is labeled "Test Classes."
+        2. Within each org section, browse or search for the available test classes associated with that specific org.
+        3. To select the desired test classes for each org, click the checkbox next to each class you want to include in the validation.
+
+
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2024-02-28 at 3.46.03 PM-20240228-101618.png" alt=""><figcaption></figcaption></figure>
+
+1. Under the **`Validation Settings`**, users are prompted to enter the commit label, commit message (if any), and reviewer email ID(s) to send an email notification of the commit process performed and the difference reports. Additionally, there are various options you can configure:
    1. **`Commit WaveXMD Components:`** Upon selection, this checkbox allows you to choose the respective Wave XMD files belonging to the Wave dashboard metadata. This checkbox is hidden if the 'WaveDashboard' metadata type or its corresponding members are not picked.
    2. **`Commit Options for Profile:`**This option lets you choose to commit settings for a full profile operation.
       * **`Commit Access Settings for selected metadata (Profiles ONLY):`** This allows you to perform the commit operation based only on the profiles available for the selected metadata.
@@ -120,7 +146,7 @@ ARM allows performing a validation deployment before actually committing the cha
    6. **`Ignore Missing Visibility Settings:`** With this option, differences in visibility settings between the source and destination orgs will not cause the deployment to fail. ARM will compare the source and destination orgs and keep only the common settings between both orgs.\
       Important Note**Standard fields** are not supported for **Ignore Missing Visible Settings**.
    7. **`Ignore installed components:`** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files when the remaining components are deployed.
-3.  **`Apply Search and Substitute Rules:`** If you created search and substitute rules to define custom find and replace rules which ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, that rule can be found here.\
+2.  **`Apply Search and Substitute Rules:`** If you created search and substitute rules to define custom find and replace rules which ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, that rule can be found here.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664445849330.png" alt="" width="375"><figcaption></figcaption></figure>

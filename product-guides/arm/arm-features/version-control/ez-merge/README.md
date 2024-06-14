@@ -213,7 +213,7 @@ Use these options to customize and control your pre-validation merge operations,
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2024-02-28 at 2.56.39 PM-20240228-092717 (1).png" alt=""><figcaption></figcaption></figure>
 
-**Different Pre-Validate Merge Criteria:**
+**Different Prevalidate Merge Criteria:**
 
 1. **Generate Diff Report:** Select this option to auto-generate a code difference report on completion of the commit.
 2. **Run Static code Analysis:** Select this option if you want to run a [static code analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Similar to "**Generate Diff Report,"** this option will also be auto-selected by default if the criteria are set globally (under the **My Account > Commit Validation - Approval Settings** section).

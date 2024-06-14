@@ -166,10 +166,42 @@ During the implementation phase of a Security Development Lifecycle (SDL), [Stat
 
 These reports will have information about the files that were reviewed and its related violations.
 
-* Click on each file to view its related violations that will appear at the bottom right side of the page.
-* If you click on any violation, it will take you to the respective line (in the black screen on the right side) where such violation occurred.
+To display CodeScan results that are applicable for all kinds of tools ( CodeScan, Checkmarx, Apex PMD, Salesforce Scanner, Sonar Qube) you will be presented with the following screens:
 
-<figure><img src="../../../../.gitbook/assets/image (475).png" alt=""><figcaption></figcaption></figure>
+**Components and Layout**:
+
+1. **Left Sidebar**:
+   * **Metadata List**: Display a list of all metadata types.
+   * **Fields List**: The corresponding fields will be displayed when a user clicks on a specific metadata type.
+
+<figure><img src="../../../../.gitbook/assets/image-20240612-161907.png" alt=""><figcaption></figcaption></figure>
+
+2. **Right Pane**:
+   * **Issues List**: Display a list of issues related to the selected metadata and fields.
+
+<figure><img src="../../../../.gitbook/assets/image-20240612-161928.png" alt=""><figcaption></figcaption></figure>
+
+3. **Code Lines**: When a user clicks on an issue, display the relevant lines of code where the issue occurs.
+
+<figure><img src="../../../../.gitbook/assets/image-20240612-161952.png" alt=""><figcaption></figcaption></figure>
+
+4. **Top Section**:
+   * **Grid View**: Display an overview grid containing information such as files, violations, and other relevant statistics.
+   * **Details in Grid View**:
+     * **Files**: List of scanned files.
+     * **Violations**: Total number of violations, categorized by severity (e.g., critical, major, minor).
+
+<figure><img src="../../../../.gitbook/assets/image-20240612-162042.png" alt=""><figcaption></figcaption></figure>
+
+**User Interactions**:
+
+* **Metadata Navigation**: Users can browse and select metadata types from the left sidebar.
+* **Field Display**: Upon selecting a metadata type, fields related to that metadata type will be displayed.
+* **Issue Details**: Clicking on a field will show issues related to that field on the right pane.
+* **Code View**: Clicking on an issue will display the specific lines of code related to that issue on the right pane.
+* **Top Grid Interaction**: The grid at the top allows users to get an overview and drill down into specific files and their violations.
+
+**CodeScan Analysis Dashboard**
 
 * Click on the **link** at the bottom of the page as in the image below which will redirect you to CodeScan Analysis Dashboard page to compare the SCA report in your CodeScan account.
 

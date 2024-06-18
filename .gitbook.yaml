@@ -444,6 +444,12 @@ redirects:
     codescan/docs/users-roles-and-permissions: product-guides/codescan/getting-started/users-roles-and-permissions.md
     codescan/docs/copado: product-guides/codescan/codescan-integration/copado.md
     codescan/docs/codescan-support: product-guides/codescan/codescan-support.md
+    codescan/: product-guides/codescan/codescan-overview.md
+    codescan/en/: product-guides/codescan/codescan-overview.md
+    codescan/docs/webhooks/: product-guides/codescan/codescan-integration/webhooks
+    codescan/docs/security-reports/: product-guides/codescan/report-and-analysis/scheduled-reports
+    codescan/docs/codescan-release-notes: /overview/release-notes/codescan-release-notes/cloud-releases
+    codescan/docs/codescan-getting-started: product-guides/codescan/getting-started
     vault/docs/backup-best-practices: product-guides/vault/support/best-practices/backup-best-practices.md
     vault/docs/restoring-the-metadatadata-to-the-salesforce-org: product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md
     vault/docs/set-up-multifactor-authentication-for-vault: product-guides/vault/getting-started/set-up-multifactor-authentication-in-vault.md

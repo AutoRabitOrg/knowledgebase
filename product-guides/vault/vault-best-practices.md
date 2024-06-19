@@ -33,6 +33,16 @@ See Vault Archival Best Practices
 
 
 
+### Archival Best Practices
+
+* Archiving parent objects will result in the deletion of all the child objects related through mandatory lookups and master-detail relationships recursively as it is an expected behavior of Salesforce. For the children related through a lookup (which is not mandatory), the reference to the parent will be removed from the child object before performing deletion of the parent.
+* Ensure that only one object is chosen for archival at a time in an org to avoid issues with row locks and interdependencies during the deletion of the records from Salesforce.
+* Always select the option to ‘Notify before deleting data from Salesforce’ to avoid auto-deletion of the records without consent and review of the records that are going to be deleted as part of the job.
+* Use limit and offset or an auto-increment field on the object to chunk the data for deletion into smaller batches to help understand the impact and strategize the deletion of subsequent batches based on the errors experienced in the initial batches.
+* Provide a smaller Bulk API batch size when triggering the archival to avoid errors arising out of Salesforce processing capabilities.
+* Run the archival job in serial mode to avoid errors like row locks or any other issues arising out of parallel processing in Salesforce. This is recommended only if you experience errors due to parallel mode as running the job in serial mode will impact the time it takes to execute the job.
+* Ensure that options to disable workflows, validation rules, and triggers are enabled during the initiation of the archive job to ensure the deletion of records won’t result in reaching Salesforce processing limitations and allocations.
+
 ### Unsupported Components with Metadata API
 
 The following components cannot be retrieved or deployed with Metadata API, and changes to them must be made manually in each of your organizations:
@@ -80,6 +90,8 @@ The following components cannot be retrieved or deployed with Metadata API, and 
 Reference: [https://developer.salesforce.com/docs/atlas.en-](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#:\~:text=Some%20things%20yo](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [u%20can%20customize,Account%20Teams](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams)
 
 &#x20;
+
+1.
 
 ### Managed Package Limitations
 

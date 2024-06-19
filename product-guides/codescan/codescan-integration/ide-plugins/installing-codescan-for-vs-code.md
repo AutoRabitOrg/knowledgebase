@@ -396,7 +396,7 @@ Before raising a support ticket, perform the following checks in VS Code:
 
 * **Are Sonarlint or ApexPmd plugin installed alongside CodeScan?-** _If so, uninstall it._
 * **Is the Salesforce extension pack installed in VS Code ?-** _If not, install as this is mandatory._
-* **What version of Java is installed?**_- Java 11 version is required_
+* **What version of Java is installed?**_-_ Version 2.0.0 onwards requires Java Runtime (JRE) / JDK versions 17 or later. Prior CS versions will still work with older JRE / JDK versions 11.
 * **Is the Java path passed to CodeScan (codescan.ls.javaHome)?**- Verify by going to **`VS Code Settings > Settings > Extensions > CodeScan`** and under **`Codescan › Ls: Java Home (Not synced),`** you should see the **`JAVA_HOME`** path mentioned. If not present, please enter the **`JAVA_HOME`** path.
 * You can also add the **`JAVA_HOME`** path in the **settings.json** file inside **`codescan.ls.javaHome`** property.
 

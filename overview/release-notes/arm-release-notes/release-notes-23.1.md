@@ -86,6 +86,25 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 12 June 2024
+
+ARM 23.1.34
+
+&#x20;               &#x20;
+
+1. A code fix was performed due to a use-case error related to the CI Jobs module in which nCino CI Jobs were not triggered by metadata CI Jobs on success. Support ticket #113887
+2. A code fix was performed due to a use-case error related to the Version Control module in which the API response from CodeScan returned a page not found (404) error in ARM. Support tickets #108895,  #115120, #114434
+3. A code fix was performed due to a use-case error related to the Deployment module in which the Deployment button was not enabled in AutoRABIT after validation. Support ticket #107108
+4. A code fix was performed due to a use-case error related to the Deployment module in which the user was unable to deploy a Bot from a Branch to a sandbox. Support ticket #11497&#x20;
+5. A code fix was performed due to a use-case error related to the Version Control module in which an ALM work item was not displaying in the merge. Support ticket #113626
+6. A code fix was performed due to a use-case error related to the Admin module in which a user was unable to implement ARM and Zoho desk integration with JWT.
+7. A code fix was performed due to a use-case error related to the Version Control module in which a user was unable to perform EZ-Commits. Support ticket #114441
+8. A code fix was performed due to a use-case error related to the Version Control module in which the previously validated commit label showed to add a date instead of the label dropdown. Support ticket #115249
+9. A code fix was performed due to a use-case error related to the Reports module that required us to fix recursive errors.
+10. A code fix was performed due to a use-case error related to the Data Loader module in which the master-child relationships were not being applied when loaded through Data Loader Pro. Support ticket #111780
+11. A code fix was performed due to a use-case error related to the nCino module in which the CI job was not updating templated objects and object record count when the checkout was not taken from version control. Support ticket #112704
+12. A code fix was performed due to a use-case error related to the nCino module wherein CI Jobs for nCino RBC feature migrations were failing. Support ticket #114991
+
 #### 5 June 2024
 
 **ARM 23.1.33**

@@ -26,6 +26,7 @@ Follow the instructions below for your source code location.
 4. In the Agent pool dropdown menu, select **`Azure Pipelines`**.
 5. In the **`Agent Specification`** dropdown menu, select **`ubuntu-20.04`**.
 6. Click the **`Prepare Analysis on CodeScan Cloud`** section, and create a new service endpoint.
+   * Add your CodeScan server URL (eg. https://app.codescan.io/)
    * You will need a **token** from your CodeScan Cloud account for this step. Learn how to create security token [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
    * Add a **name** for your connection.
    * Make sure to **verify the connection** before leaving the pop-up.

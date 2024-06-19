@@ -447,7 +447,7 @@
   * [Security Information and Event Management](product-guides/arm/security-information-and-event-management/README.md)
     * [Common Event Format (CEF) Data](product-guides/arm/security-information-and-event-management/common-event-format-cef-data.md)
     * [ARM Event Type](product-guides/arm/security-information-and-event-management/arm-event-type.md)
-    * [Retrieval API's](product-guides/arm/security-information-and-event-management/retrieval-apis.md)
+    * [Retrieval APIs](product-guides/arm/security-information-and-event-management/retrieval-apis.md)
   * [Developer APIs](product-guides/arm/introduction-to-arm-developer-apis/README.md)
     * [Authentication](product-guides/arm/introduction-to-arm-developer-apis/authentication.md)
     * [API Access](product-guides/arm/introduction-to-arm-developer-apis/api-access.md)

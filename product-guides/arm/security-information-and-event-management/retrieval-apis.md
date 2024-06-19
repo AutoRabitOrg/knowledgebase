@@ -1,4 +1,4 @@
-# Retrieval API's
+# Retrieval APIs
 
 ### API Specification <a href="#api-specification" id="api-specification"></a>
 
@@ -78,3 +78,73 @@ curl --location --request GET 'https://previewauditlogs.autorabit.com/logs/audit
     "path": "/logs/audit_logs"
 }
 ```
+
+## Audit Logs Retrieval API Guide
+
+This guide provides information on how to use the Audit Logs Retrieval API to view and download audit logs. The API offers endpoints for retrieving audit log data and downloading it in a ZIP file format. Follow the instructions below to integrate and use these APIs in your application.
+
+### Viewing Audit Logs
+
+#### Endpoint
+
+`GET <https://<domain>>/logs/audit_logs`
+
+**Example:**
+
+`<https://testauditlogs.autorabit.com/logs/audit_logs>`
+
+#### Query String Parameters
+
+* `startTime` (optional): The start time for the audit logs in ISO 8601 format (YYYY-MM-DDThh:mm:ss). If not specified, the current day's logs are presumed.
+  * **Example:** `2021-03-14T10:00:00`
+* `maxResults` (optional): The maximum number of results to return. Default value is 1000.
+  * **Example:** `maxResults=1000`
+* `eventType` (optional): A comma-separated list of event types to filter the logs. If not specified, all event types are loaded.
+  * **Example:** `eventType=DEPLOYMENT,DATALOADERPRO`
+
+#### Example Request
+
+`GET <https://testauditlogs.autorabit.com/logs/audit_logs?startTime=2021-03-14T10:00:00&maxResults=500&eventType=DEPLOYMENT,DATALOADERPRO>`
+
+#### Response
+
+The response will contain the audit logs based on the specified parameters.
+
+***
+
+### Downloading Audit Logs
+
+#### Endpoint
+
+`GET {domain}/logs/audit_logs/download`
+
+#### Parameters
+
+* `startTime` (required): The start date for the audit logs in ISO 8601 format.
+* `endTime` (optional): The end date for the audit logs in ISO 8601 format. If not specified, the logs are provided until the current day, provided the duration is within 90 days from the `startTime`.
+
+#### Example Request Using Curl
+
+`curl --location '<https://<domain>>/logs/audit_logs/download?startTime=2021-03-14T10:00:00&endTime=2021-03-20T10:00:00' \ --header 'Content-Type: application/json' \ --header 'Authorization: Bearer <bearer token>'`
+
+#### Notes
+
+* If only the `startTime` is provided, logs are retrieved up to the current day.
+* The date range (from `startTime` to `endTime` or the current day) must be within 90 days.
+* The downloaded logs are provided in a ZIP file.
+
+#### Example Download Request
+
+`GET <https://<domain>>/logs/audit_logs/download?startTime=2021-03-14T10:00:00&endTime=2021-03-20T10:00:00`
+
+The logs between March 14, 2021, and March 20, 2021, will be downloaded in a ZIP file.
+
+### Authorization
+
+All requests to the API endpoints must include an `Authorization` header with a valid Bearer token.
+
+**Example:**
+
+`--header 'Authorization: Bearer <bearer token>'`
+
+Ensure your Bearer token is kept secure and is valid for accessing the API.

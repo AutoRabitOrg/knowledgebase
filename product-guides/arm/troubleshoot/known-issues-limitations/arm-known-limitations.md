@@ -28,6 +28,13 @@ This section summarizes the deployment limits that ARM users should consider:
 9. In case of **Vlocity Custom Deployment**, if the **Access Key** for **Local Compilation** is incorrect, ARM is unable to capture it in the logs.
 10. In **Compare Org and Deploy functionality**, a file diff will not be generated between the source and the target for **Bot Version files**.
 11. If a user uses the **SFDX extension** in a **non-SFDX repository** for any metadata type, then it will not be displayed in UI as a **metadata change** and won't be picked up for deployment in **package.XML**, but the file contents will stay in the promotional **ZIP** file.&#x20;
+12. When dealing with the limitations of integrating Salesforce DX (SFDX) with Vlocity components, several key considerations must be taken into account to ensure effective management and deployment of these components. Below are the **compatibility issues** that must be considered for this feature:
+    * **Metadata Types**: Understand the differences in metadata types between SFDX and Vlocity. SFDX does not natively support Vlocity-specific metadata, which requires using specialized tools like the Vlocity Build Tool.
+    * **Deployment Methods**: SFDX deployment methods (e.g., packages, change sets) are not fully compatible with Vlocity DataPacks, necessitating alternative deployment strategies.
+    * **Hybrid Approach**:&#x20;
+      * Maintain separate repositories for SFDX and Vlocity components.&#x20;
+      * Use SFDX for Salesforce metadata and development, while managing Vlocity components through their own repository and tools.&#x20;
+      * Follow the specific guidelines and best practices provided by Vlocity and Salesforce DX for managing and deploying each type of component.
 
 ### Version Control Known Limitations <a href="#version-control-known-limitations" id="version-control-known-limitations"></a>
 

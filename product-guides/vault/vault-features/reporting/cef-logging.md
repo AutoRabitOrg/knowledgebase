@@ -1,10 +1,12 @@
-# Page 1
+# CEF Logging
 
-## Introduction <a href="#introduction" id="introduction"></a>
+## KONE Monitoring Tools: CEF Logging – Event Logs <a href="#introduction" id="introduction"></a>
+
+### Introduction <a href="#introduction" id="introduction"></a>
 
 #### CEF logs is a standardized log management system developed to record and transport event data.  <a href="#cef-logs-is-a-standardized-log-management-system-developed-to-record-and-transport-the-event-data" id="cef-logs-is-a-standardized-log-management-system-developed-to-record-and-transport-the-event-data"></a>
 
-## How To Access CEF Logs <a href="#how-to-access-cef-logs" id="how-to-access-cef-logs"></a>
+### How To Access CEF Logs <a href="#how-to-access-cef-logs" id="how-to-access-cef-logs"></a>
 
 * An option is provided to download logs from the UI.
 

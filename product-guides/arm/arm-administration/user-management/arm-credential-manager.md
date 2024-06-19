@@ -1,6 +1,8 @@
 # ARM Credential Manager
 
-Important Note:This article is for **Org Administrators** in particular. The actions discussed in the article are not available to general users. &#x20;
+{% hint style="info" %}
+**Important Note:** This article is for **Org Administrators** in particular. The actions discussed in the article are not available to general users. &#x20;
+{% endhint %}
 
 ### Credential Manager: Overview <a href="#credential-manager-overview" id="credential-manager-overview"></a>
 
@@ -10,14 +12,14 @@ Credential Manager (CM) is the "digital locker" where ARM stores log-in credenti
 
 Log into ARM with username _xyz@autorabit.com_, for example, then do the following:&#x20;
 
-1.  Hover your mouse over the **`Admin`** tile and select the option for **`Credentials`**.\
+1. Hover your mouse over the **`Admin`** tile and select the option for **`Credentials`**.
 
+<figure><img src="broken-reference" alt="" width="218"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682400604799.png" alt="" width="375"><figcaption></figcaption></figure>
-2.  Click **`Create Credential`**.\
+2. Click **`Create Credential`**.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682400659117.png" alt=""><figcaption></figcaption></figure>
 3. On the next pop-up screen, enter a **`Credential name`**.
 4. Choose a **`Credential Type`** from the drop-down field.&#x20;
    * Username with Password&#x20;
@@ -28,10 +30,9 @@ Log into ARM with username _xyz@autorabit.com_, for example, then do the followi
 
 #### Username with Password  <a href="#username-with-password" id="username-with-password"></a>
 
-Password-based authentication requires the user to enter their username and password to create a credential.\
+Password-based authentication requires the user to enter their username and password to create a credential.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682400914282.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
 
 Credential Scope lets you specify exactly what type of access you need.&#x20;
 
@@ -40,25 +41,25 @@ Credential Scope lets you specify exactly what type of access you need.&#x20;
 
 #### SSH <a href="#ssh" id="ssh"></a>
 
-**`SSH`** is an encrypted protocol used to administer and communicate with servers. SSH is a secure way to access a site’s server remotely. The user must generate a public/private key pair on the client machine to identify them on the servers. You can choose to protect it with a password. Entering it with no password means anyone with access to the key files has the same level of access as the user, and no password is required when the client connects to the servers. Protecting the keys with a password means that whenever the user connects to a server using those keys, the password for decrypting it is required.\
+**`SSH`** is an encrypted protocol used to administer and communicate with servers. SSH is a secure way to access a site’s server remotely. The user must generate a public/private key pair on the client machine to identify them on the servers. You can choose to protect it with a password. Entering it with no password means anyone with access to the key files has the same level of access as the user, and no password is required when the client connects to the servers. Protecting the keys with a password means that whenever the user connects to a server using those keys, the password for decrypting it is required.
 
+<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682499869449.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Important Note:
+{% hint style="info" %}
+**Important Note:**
 
 1. We recommend using SSH-type credentials rather than password-type credentials for increased security.
 2. Credential Scope lets you specify exactly what type of access you need.
    * **`Global:`** Credential to be accessed by the team
    * **`Private:`** Credential for private usage
 3. Upload the Private key, if available on your local machine, or paste it into the clipboard provided.
+{% endhint %}
 
 #### HashiCorp Vault <a href="#hashicorp-vault" id="hashicorp-vault"></a>
 
-You can now choose the **`AWS Authentication`** method while adding HashiCorp credentials to ARM to generate the **`Vault Token`** automatically whenever the existing token expires. Now the user does not have to update the token manually from the application when it expires. Click [here](arm-credential-manager.md#hashicorp-vault) for a more detailed article on this topic.\
+You can now choose the **`AWS Authentication`** method while adding HashiCorp credentials to ARM to generate the **`Vault Token`** automatically whenever the existing token expires. Now the user does not have to update the token manually from the application when it expires. Click [here](arm-credential-manager.md#hashicorp-vault) for a more detailed article on this topic.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682499945028.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Authentication using SSH Certificates <a href="#authentication-using-ssh-certificates" id="authentication-using-ssh-certificates"></a>
 
@@ -78,11 +79,11 @@ To give organizations more control over how their members access their repositor
 
 SSH certificates only allow access to repositories that belong to their organization.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682500281739.png)
+<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
 
-Limitation:
-
-Adding SSH certificates is currently limited to organizations using GitHub Enterprise Cloud.
+> **Limitation:**&#x20;
+>
+> Adding SSH certificates is currently limited to organizations using GitHub Enterprise Cloud.
 
 #### Application Token (for Enterprise users only) <a href="#application-token-for-enterprise-users-only" id="application-token-for-enterprise-users-only"></a>
 
@@ -90,7 +91,7 @@ As an **Enterprise** user, you can now connect ARM to Jira with the support of *
 
 Select **`Application Token`** from the **`Credential Type`** dropdown, enter the **`Token`** generated from Jira, and click **`Save`**.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1686556111050.png)
+<figure><img src="broken-reference" alt="" width="408"><figcaption></figcaption></figure>
 
 This feature is only available upon request. If you would like to use PAT authentication to connect to Jira, please reach out to us at [support@autorabit.com,](mailto:support@autorabit.com,) and the AutoRABIT support team will be able to assist you further.
 

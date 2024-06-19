@@ -9,15 +9,15 @@ If a user is out of the office, the admin can delegate his/her responsibilities 
 To delegate user permissions and tasks to another user:
 
 1. Login to your AutoRABIT account.
-2.  Hover your mouse over the **`Admin`** tab and click on the **`Users`** option.\
+2. Hover your mouse over the **`Admin`** tab and click on the **`Users`** option.
 
+<figure><img src="broken-reference" alt="" width="251"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665580700724.png" alt=""><figcaption></figcaption></figure>
 3. Locate the **user** you'd like to delegate his permission and tasks to another user.&#x20;
-4.  Click **`Delegate`**.\
+4. Click **`Delegate`**.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665580918786.png" alt=""><figcaption></figcaption></figure>
 5. The next screen gets divided into multiple sections where each section contains roles and permissions exercised by the current user and such roles/permissions will get delegated to a different user. **For example-** the **`Salesforce Orgs`** tab contains all the Salesforce Orgs that are registered on his name, the **`Version Control Repositories`** section will contain the list of repositories and branches for each VCS (Version Control System) that the user had registered in AutoRABIT and the repositories permission allotted to him/her.
 
 {% hint style="info" %}
@@ -28,13 +28,12 @@ To delegate user permissions and tasks to another user:
 3. **Super Admin** and the **user currently logged in** are disabled for ALL actions. Their roles cannot be delegated to other users.
 {% endhint %}
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665581013504.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-1. Finally, choose the user to whom you want to delegate your task and approvals.
-2.  Click **`Release User`**.\
+6. Finally, choose the user to whom you want to delegate your task and approvals.
+7. Click **`Release User`**.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665581100670.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="408"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -43,10 +42,9 @@ To delegate user permissions and tasks to another user:
 2. The user who delegates his tasks/approvals will be deactivated.
 {% endhint %}
 
-1.  For delegated users, you can find the delegation report and the log details on the **`Users`** screen.\
+8.  For delegated users, you can find the delegation report and the log details on the **`Users`** screen.
 
+    * **`Log Details:`** The log contains information about events and activities that have occurred during the user delegation process. It may contain errors, informational events or warnings, or our application problem.
+    * **`User delegation report:`** View the summary list of approvals/ scheduled tasks that are delegated to the user.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665581455782.png" alt=""><figcaption></figcaption></figure>
-
-    1. **`Log Details:`** The log contains information about events and activities that have occurred during the user delegation process. It may contain errors, informational events or warnings, or our application problem.
-    2. **`User delegation report:`** View the summary list of approvals/ scheduled tasks that are delegated to the user.
+    <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>

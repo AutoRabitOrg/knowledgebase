@@ -30,15 +30,15 @@ To create a new user account:
 
 1. Log in to your ARM account.&#x20;
 2. Hover your mouse over the **`Admin`** tab and click on the **`Users`**.
-3.  Click the **`Add User`** button.\
+3. Click the **`Add User`** button.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665987042319.png" alt="" width="563"><figcaption></figcaption></figure>
 4. Fill in the **`User Details`** and configure the **`Role Permissions`**.
-5.  Click **`Save & Activate`** to activate the users or **`Save Now & Activate Later`** to save the user details. They can be activated later from this page.\
+5. Click **`Save & Activate`** to activate the users or **`Save Now & Activate Later`** to save the user details. They can be activated later from this page.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665641436522.png" alt="" width="563"><figcaption></figcaption></figure>
 6. Your colleague will receive an email inviting them to set their password and log in.
 7. Newly created users are updated in the **`Users`** tab under the **`Admin`** module.
 
@@ -48,10 +48,10 @@ After you’ve created a user, you can change most of their information and perm
 
 1. Log in to your ARM account.&#x20;
 2. Go to the **`Users`** tab. Locate the user to whom you would like to make changes.
-3.  Click on the **`Edit`** icon.\
+3. Click on the **`Edit`** icon.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665987066419.png" alt="" width="563"><figcaption></figcaption></figure>
 4. Make any desired changes and click on **`Save`**.
 
 ### Delete or Suspend a User's Account <a href="#delete-or-suspend-a-users-account" id="delete-or-suspend-a-users-account"></a>
@@ -60,14 +60,14 @@ If you have user management permissions, you can suspend or delete users. Suspen
 
 1. Sign in using an administrator account.
 2. Navigate to **`Admin > Users`** tab. Locate and select the user you'd like to make changes to.
-3.  Click on **`Delete User`** to delete the user account permanently.\
+3. Click on **`Delete User`** to delete the user account permanently.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665987494313.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  You can temporarily block users' access to your organization's services by suspending their accounts. Select the user and click on **`Activate/De-activate`** button.\
+4. You can temporarily block users' access to your organization's services by suspending their accounts. Select the user and click on **`Activate/De-activate`** button.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665987506536.png" alt="" width="563"><figcaption></figcaption></figure>
 5. Click **`OK`** to confirm your selection.
 
 ### Enforce single sign-on (SSO) <a href="#enforce-single-signon-sso" id="enforce-single-signon-sso"></a>
@@ -80,9 +80,11 @@ To enforce SSO, you need to enable the SSO login configuration. Go to the **`My 
 
 If you, an org admin, want to override the SSO configuration for an individual team member or group of users, you uncheck the **`Enforce SSO`** boxes after selecting the team members from the list.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Enforce%20SSO.gif)
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 **Note:** When the **`Disable login with AutoRABIT credentials`** option is selected, the **`Enforce SSO`** checkboxes are automatically checked for all users.
+{% endhint %}
 
 ### Export Users <a href="#export-users" id="export-users"></a>
 
@@ -110,24 +112,28 @@ If you have **`Admin`** permissions, you can export a CSV file of all the users 
 | `Deactivated Date`    | Date when the account was deactivated (if applicable)              |
 | `Deactivated By`      | The user who deactivated the user account                          |
 
-Important NoteWhen a user logs in to ARM, the browser pop-up message will ask permission to access the location details. If you **allow** permission, the location details will be retrieved through your browser, but if you **deny** permission, the location details will be retrieved through your IP Address.
+{% hint style="info" %}
+**Important Note:** When a user logs in to ARM, the browser pop-up message will ask permission to access the location details. If you **allow** permission, the location details will be retrieved through your browser, but if you **deny** permission, the location details will be retrieved through your IP Address.
+{% endhint %}
 
 **To export all user's details in CSV:**
 
-1.  On the **`Users`** screen, in the upper right, click **`Export All Users`**.\
+1. On the **`Users`** screen, in the upper right, click **`Export All Users`**.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665987537141.png" alt="" width="563"><figcaption></figcaption></figure>
 2. The fields you can export will be displayed on the next screen. Click the **`Export`** button after choosing the fields you want to export as CSV.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675969071794.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="511"><figcaption></figcaption></figure>
 
-1. Fields like _`First Name`_, _`Last Name`_, _`Status`_, _`Email`_, and _`Login Name`_ are automatically selected by default when a CSV file is exported. If necessary, you can exclude them from being exported.
-2. Your export will begin processing, and the CSV file will be downloaded on your local machine.
+3. Fields like _`First Name`_, _`Last Name`_, _`Status`_, _`Email`_, and _`Login Name`_ are automatically selected by default when a CSV file is exported. If necessary, you can exclude them from being exported.
+4. Your export will begin processing, and the CSV file will be downloaded on your local machine.
 
-Export Data Limitations:The parameters in the CSV for previously registered users (older than 60 days) will be slightly different:
+**Export Data Limitations**
 
-* CreatedDate= OrgCreatedDate
+The parameters in the CSV for previously registered users (older than 60 days) will be slightly different:
+
+* CreatedDate = OrgCreatedDate
 * CreatedByName = registered user of the org
 * LastModifiedDate, LastModifiedByName, Deactivated Date, and Deactivate by fields will be null
 
@@ -137,24 +143,26 @@ As expected, the exported CSV file will contain the newest parameter data and ch
 
 You must assign at least one role to each user, with specific permissions granted to each role. If a user has multiple roles, the role with the most significant permissions trumps any others assigned.&#x20;
 
-1.  Hover your mouse over the **`Admin`** tab and click the **`Roles`** option.\
+1. Hover your mouse over the **`Admin`** tab and click the **`Roles`** option.
 
+<figure><img src="broken-reference" alt="" width="251"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665641746211.png" alt=""><figcaption></figcaption></figure>
-2.  Click on the **`Create Role`** button.\
+2. Click on the **`Create Role`** button.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665641832126.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  On the next screen, enter a **`Role Name`** and **`Description`** for the role. On the **`Permissions`** tab, select the checkboxes to assign the roles you want users to have.\
+3. On the next screen, enter a **`Role Name`** and **`Description`** for the role. On the **`Permissions`** tab, select the checkboxes to assign the roles you want users to have.
 
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665641896911.png" alt="" width="563"><figcaption></figcaption></figure>
 4. Click **`Save`**.
 
-Important Note:
+{% hint style="info" %}
+**Important Note:**
 
-* The Admin has the maximum permissions and cannot be edited or renamed.
-* The permissions you select determine which dashboard controls are in the Admin console and what settings the user can manage.
+1. The Admin has the maximum permissions and cannot be edited or renamed.
+2. The permissions you select determine which dashboard controls are in the Admin console and what settings the user can manage.
+{% endhint %}
 
 ### User Permission <a href="#user-permission" id="user-permission"></a>
 
@@ -162,27 +170,23 @@ This section summarizes the permissions assigned to the user. It allows them to 
 
 To assign users to a role and permission, use the following steps:
 
-1.  From the ARM home page, click and go to the **`Permissions`** tab.\
+1. From the ARM home page, click and go to the **`Permissions`** tab.
 
+<figure><img src="broken-reference" alt="" width="251"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665641939605.png" alt=""><figcaption></figcaption></figure>
 2. Select at least **two users** you like to assign permissions from the user's list view.
-3.  Click on **`Bulk Assignment`**.\
+3. Click on **`Bulk Assignment`**.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665642027271.png" alt="" width="563"><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Note:** The user(s) with the Admin role is not displayed on the **Permission** page.
+{% endhint %}
 
-**Important Note:**
+4. On the next screen, select the **`roles`** to be assigned and select the module(s) you would like to add to these users.
+5. Click **`Save`**.
+6. You can click the user's name to open the user's record in detail view from the **`User Permission`** page.
 
-The user(s) with the Admin role is not displayed on the **Permission** page.
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-1. On the next screen, select the **`roles`** to be assigned and select the module(s) you would like to add to these users.
-2. Click **`Save`**.
-3. You can click the user's name to open the user's record in detail view from the **`User Permission`** page.
-
-\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665642290404.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665642351793.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>

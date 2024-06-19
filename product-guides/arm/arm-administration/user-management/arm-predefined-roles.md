@@ -1,6 +1,8 @@
 # ARM Predefined Roles
 
-In ARM, a set of predefined roles can be assigned to your account based on your needs through your org owner or administrator. It is not possible to delete or change these roles. Here is the list of roles available:
+In ARM, a set of predefined roles can be assigned to your account based on your needs through your org owner or administrator. It is not possible to delete or change these roles.&#x20;
+
+Here is the list of roles available:
 
 | Role                                                                                                 | Module                   | Description                                                                                                                                                                                                                                                                                                                                                                                    |
 | ---------------------------------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

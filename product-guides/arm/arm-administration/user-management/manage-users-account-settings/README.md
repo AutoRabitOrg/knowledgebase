@@ -1,37 +1,36 @@
 # Manage Users' Account Settings
 
-Important Note:This article is for the **Org Administrator** in particular. The actions discussed in this article will not be available to general users.
+{% hint style="info" %}
+**Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in this article will not be available to general users.
+{% endhint %}
 
 You can create, edit, and view user account details as an Org administrator. Admins can view their account details too.
 
 ### View User Account <a href="#view-user-account" id="view-user-account"></a>
 
-1.  Hover your mouse over the **`Admin`** tile and select **`My Account`**.\
+1. Hover your mouse over the **`Admin`** tile and select **`My Account`**.
 
+<figure><img src="broken-reference" alt="" width="243"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662704605098.png" alt="" width="188"><figcaption></figcaption></figure>
-2.  The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:\
+2. The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662704686330.png" alt="" width="563"><figcaption></figcaption></figure>
+#### 1. Account Contact Details (Read only) <a href="#id-1-account-contact-details-read-only" id="id-1-account-contact-details-read-only"></a>
 
-#### 1. Account Contact Details (Read only) <a href="#1-account-contact-details-read-only" id="1-account-contact-details-read-only"></a>
+**`The Account Contact Details`** section contains your account's primary information and your subscription period with ARM.
 
-**`The Account Contact Details`** section contains your account's primary information and your subscription period with ARM.\
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
+#### 2. Subscription Type (Read only) <a href="#id-2-subscription-type-read-only" id="id-2-subscription-type-read-only"></a>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662704940679.png" alt=""><figcaption></figcaption></figure>
+**`Subscription Types`** are set up to match your organization's requirements. View the current subscription type and list of modules granted by ARM based on your subscription. Click on **`View Models`** to view the complete subscription model.
 
-#### 2. Subscription Type (Read only) <a href="#2-subscription-type-read-only" id="2-subscription-type-read-only"></a>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-**`Subscription Types`** are set up to match your organization's requirements. View the current subscription type and list of modules granted by ARM based on your subscription. Click on **`View Models`** to view the complete subscription model.\
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662718580936.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662718767438.png" alt="" width="563"><figcaption></figcaption></figure>
-
-#### 3. SSO Configuration <a href="#3-sso-configuration" id="3-sso-configuration"></a>
+#### 3. SSO Configuration <a href="#id-3-sso-configuration" id="id-3-sso-configuration"></a>
 
 **Single Sign-On (SSO)** is an authentication process that allows a user to access multiple applications with only one set of credentials. ARM uses the secure and widely adopted industry-standard **Security Assertion Markup Language 2.0 (SAML 2.0)**, which means our implementation of SSO integrates easily with any large identity provider that supports SAML 2.0.
 
@@ -41,29 +40,29 @@ Using the information you gathered from your IdP (the Identity Provider), fill i
 
 * **`Entity ID:`** String that uniquely identifies your IdP (your IdP generally provides it).&#x20;
 * **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../../integration-and-plugins/sso/).
-*   **`Disable login with ARM credentials:`** When selected, passwords on ARM are no longer used once the SSO is activated. The system forces you and your sub-users to log in via SSO rather than entering their username and password on the login page. However, once disabled, all the authentication requests will go through the classic login interface.\
+* **`Disable login with ARM credentials:`** When selected, passwords on ARM are no longer used once the SSO is activated. The system forces you and your sub-users to log in via SSO rather than entering their username and password on the login page. However, once disabled, all the authentication requests will go through the classic login interface.
 
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678172915608.png" alt="" width="563"><figcaption></figcaption></figure>
-*   How to override single sign-on (SSO)?Sub-users registered to that organization cannot log in to the ARM application using the standard (username + password) approach if the **`Disable login with AutoRABIT credentials`** checkbox is selected. If the org admin wants to override the **`SSO configuration`** for an individual user or group of users, he can do so under the **`Admin > Users`** section. Uncheck the **`Enforce SSO`** boxes after selecting the users from the list. Save the **`SSO Configuration`** by clicking **`Save`**.\
+* How to override single sign-on (SSO)?Sub-users registered to that organization cannot log in to the ARM application using the standard (username + password) approach if the **`Disable login with AutoRABIT credentials`** checkbox is selected. If the org admin wants to override the **`SSO configuration`** for an individual user or group of users, he can do so under the **`Admin > Users`** section. Uncheck the **`Enforce SSO`** boxes after selecting the users from the list. Save the **`SSO Configuration`** by clicking **`Save`**.
 
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678341357392.png" alt="" width="563"><figcaption></figcaption></figure>
-* **Note:** When the **`Disable login with AutoRABIT credentials`** option is selected, the **`Enforce SSO`** checkboxes are automatically checked for all the users.
+{% hint style="info" %}
+**Note:** When the **`Disable login with AutoRABIT credentials`** option is selected, the **`Enforce SSO`** checkboxes are automatically checked for all the users.
+{% endhint %}
 
-#### 4. Mail Extensions <a href="#4-mail-extensions" id="4-mail-extensions"></a>
+#### 4. Mail Extensions <a href="#id-4-mail-extensions" id="id-4-mail-extensions"></a>
 
-The admin can add different mail extensions based on the organization's requirements in this section.\
+The admin can add different mail extensions based on the organization's requirements in this section.
 
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678173008436.png" alt="" width="563"><figcaption></figcaption></figure>
+This allows new users to sign up for the ARM account by giving their mail extensions.
 
-This allows new users to sign up for the ARM account by giving their mail extensions.\
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678173109256.png" alt=""><figcaption></figcaption></figure>
-
-#### 5. Plugins <a href="#5-plugins" id="5-plugins"></a>
+#### 5. Plugins <a href="#id-5-plugins" id="id-5-plugins"></a>
 
 This section lists various plugins that are configured in ARM. Based on the organization's requirements, admins can select the desired plugins to be used and register by giving the correct credentials.&#x20;
 
@@ -75,41 +74,38 @@ Browsers Supported:
 * Internet Explorer 7+&#x20;
 * Firefox 3+
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663056837093.png)
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-#### 6. Configure Default SCA Baseline Branches <a href="#6-configure-default-sca-baseline-branches" id="6-configure-default-sca-baseline-branches"></a>
+#### 6. Configure Default SCA Baseline Branches <a href="#id-6-configure-default-sca-baseline-branches" id="id-6-configure-default-sca-baseline-branches"></a>
 
 Developers must select the appropriate baseline branch to compare against. If they don't, a new branch will be created, which causes problems.
 
-Admins can configure the default baseline branches for CodeScan and SonarQube SCA plugins in the **`My Account`** section. This resolves the confusion developers previously faced when selecting baseline branches for SCA and. It also helps Admins control the default baseline branches.\
+Admins can configure the default baseline branches for CodeScan and SonarQube SCA plugins in the **`My Account`** section. This resolves the confusion developers previously faced when selecting baseline branches for SCA and. It also helps Admins control the default baseline branches.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680676378273.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 **Configure the baseline branches**
 
-1. Select **`CodeScan`** or **`SonarQube`**.
-2. **`Select Project`** from the dropdown list.
-3. Click on the **`Select Default Branch`** field to display the available branches within the selected project, then click on the branch name from the list. You can choose multiple branches for each project. These branches are available for a developer to choose from during EZ-Commit.
-4. Other options:
-   * Click the![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680677437217.png) icon to add a project.
-   * Click the![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680677149002.png) icon to remove a branch from a project.
-   * Click the![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1680677287728.png) icon to delete the project completely.
-5. Click **`Save`** after selecting, adding, or deleting the required projects and corresponding branches.
+* Select **`CodeScan`** or **`SonarQube`**.
+* **`Select Project`** from the dropdown list.
+* Click on the **`Select Default Branch`** field to display the available branches within the selected project, then click on the branch name from the list. You can choose multiple branches for each project. These branches are available for a developer to choose from during EZ-Commit.
+* Other options:
+  1. Click the![](broken-reference) icon to add a project.
+  2. Click the ![](broken-reference) icon to remove a branch from a project.
+  3. Click the![](broken-reference)icon to delete the project completely.
+* Click **`Save`** after selecting, adding, or deleting the required projects and corresponding branches.
 
-#### 7. Validation Criteria- Static Code Analysis <a href="#7-validation-criteria-static-code-analysis" id="7-validation-criteria-static-code-analysis"></a>
+#### 7. Validation Criteria- Static Code Analysis <a href="#id-7-validation-criteria-static-code-analysis" id="id-7-validation-criteria-static-code-analysis"></a>
 
-With the current release, users can set the global criteria to enforce **`Static Code Analysis (SCA)`** tools across CI jobs and merge jobs. Based on the priority set, the build will be successful only if the criteria are met. The build will only succeed if the **Apex Classes**, **Triggers**, and **Visualforce** pages pass the priority set.\
+With the current release, users can set the global criteria to enforce **`Static Code Analysis (SCA)`** tools across CI jobs and merge jobs. Based on the priority set, the build will be successful only if the criteria are met. The build will only succeed if the **Apex Classes**, **Triggers**, and **Visualforce** pages pass the priority set.
 
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663057025331.png" alt=""><figcaption></figcaption></figure>
+#### 8. Commit Validation - Approval Settings <a href="#id-8-commit-validation-approval-settings" id="id-8-commit-validation-approval-settings"></a>
 
-#### 8. Commit Validation - Approval Settings <a href="#8-commit-validation-approval-settings" id="8-commit-validation-approval-settings"></a>
+Here the admin can specify specific evaluation criteria for which the commit will get reviewed before being committed to the version control branch.
 
-Here the admin can specify specific evaluation criteria for which the commit will get reviewed before being committed to the version control branch.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662719302147.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 **Auto reject commit after XX days**
 
@@ -117,67 +113,69 @@ Auto rejects an approval for pre-validation commit after the days mentioned here
 
 **Enable criteria-based Review Process**
 
-Select the **`Enable criteria based Review Process`** checkbox to enable the commit criteria.\
+Select the **`Enable criteria based Review Process`** checkbox to enable the commit criteria.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662719472812.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 Next, choose the approval criteria based on your requirement:&#x20;
 
 * **`Enable file comparison reports:`** When selected, this generates a code difference report upon completion of the commit operation.
-* **`Should pass validation criteria for Static Code Analysis:`** Select this option if you would like to run a static code analysis tool to identify potential software quality issues before the code moves to production.
-  *   Select the SCA tool according to your requirements.\
+*   **`Should pass validation criteria for Static Code Analysis:`** Select this option if you would like to run a static code analysis tool to identify potential software quality issues before the code moves to production.
 
+    * Select the SCA tool according to your requirements.
 
-      <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663057148314.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="broken-reference" alt="" width="430"><figcaption></figcaption></figure>
 * Select the **`Auto reject commit process if the criteria are not met`** checkbox to auto-reject the commit if the set criteria are not met.
 * **`Auto approve on commit validation success:`** If all the criteria selected under **`Enable criteria based Review Process`** are successfully validated, selecting this checkbox will automatically approve the commit.
 
-Important Note:The user can set the commit validation criteria under the **`Validation Criteria- Static Code Analysis`** section on the **`My Account`** page.
+{% hint style="info" %}
+**Important Note:** The user can set the commit validation criteria under the **`Validation Criteria- Static Code Analysis`** section on the **`My Account`** page.
+{% endhint %}
 
 **Auto commit on Approval**
 
-Once the reviewer has approved the changes, or if you have opted to auto-approve upon successful validation, the commit process is automatically pushed to the destination branch.\
+Once the reviewer has approved the changes, or if you have opted to auto-approve upon successful validation, the commit process is automatically pushed to the destination branch.
 
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662719826525.png" alt=""><figcaption></figcaption></figure>
-
-#### 9. Merge Settings <a href="#9-merge-settings" id="9-merge-settings"></a>
+#### 9. Merge Settings <a href="#id-9-merge-settings" id="id-9-merge-settings"></a>
 
 Here the administrator can specify specific evaluation criteria on which the merge will be reviewed before committing to the version control branch. The New Merge screen reflects the same option based on the criteria selected.
 
-Select the **`Enable criteria based Review Process`** checkbox to enable the merge setting.\
+Select the **`Enable criteria based Review Process`** checkbox to enable the merge setting.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1663057278161.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="465"><figcaption></figcaption></figure>
 
 **Merge Criteria**
 
-1. **`Enable file comparison reports:`** When selected, this generates a code difference report on completion of the merge operation.
-2. **`Should pass validation criteria for Static Code Analysis:`** Select this checkbox to run one or more SCA tools to identify potential software quality issues before the code moves to production.
-3. **`Should pass mock Deployment:`** This allows the users to perform a validation deployment before committing the changes. If the deployment is successful, the commit is executed. This option only permits the merge operation to proceed if the deployment is successfully validated. Here, you need to specify the code coverage percentage, beyond which allows proceeding for validation deployment, or else the deployment fails.What is a Code Coverage Report?The code coverage report details the apex tests run, the classes covered, and the failed assertions. It also provides a percentage of the code covered by the test execution.
-4. **`Disable Merge Self Approval:`** This option allows the Admin to prevent users who have committed to a merge request from approving it.
-5. **`Auto commit on Approval:`** This option allows developers to work on their feature branches, and after review (approval), it gets automatically committed to the trunk. View the commit revision information when you click the Revisions link.
-6. **`Enable Merge Approver:`** Enables the pprover to perform enforced code review by requiring specified people to approve a merge request before it can be unblocked for merging. Please set the number of necessary approvers before open merge requests can be merged under the **`Approval Levels`** drop-down box. The minimum approval level can be 1.
-7. **`Auto approve on merge validation success:`** If all the criteria selected under **`Enable criteria based Review Process`** are successfully validated, selecting this checkbox will automatically approve the merge. The merge will appear to have been approved by ARM. If the user has selected multiple approver levels, both levels will automatically be approved upon successful validation.
-8. **`Notify All Criteria Overwrites To:`** The email address(es) specified here will receive an overwrite email notification every time the user tries to overwrite the evaluation criteria set in the **`Merge Settings`** section and tries to merge the files to a branch.
+* **`Enable file comparison reports:`** When selected, this generates a code difference report on completion of the merge operation.
+* **`Should pass validation criteria for Static Code Analysis:`** Select this checkbox to run one or more SCA tools to identify potential software quality issues before the code moves to production.
+* **`Should pass mock Deployment:`** This allows the users to perform a validation deployment before committing the changes. If the deployment is successful, the commit is executed. This option only permits the merge operation to proceed if the deployment is successfully validated. Here, you need to specify the code coverage percentage, beyond which allows proceeding for validation deployment, or else the deployment fails.What is a Code Coverage Report?The code coverage report details the apex tests run, the classes covered, and the failed assertions. It also provides a percentage of the code covered by the test execution.
+* **`Disable Merge Self Approval:`** This option allows the Admin to prevent users who have committed to a merge request from approving it.
+* **`Auto commit on Approval:`** This option allows developers to work on their feature branches, and after review (approval), it gets automatically committed to the trunk. View the commit revision information when you click the Revisions link.
+* **`Enable Merge Approver:`** Enables the pprover to perform enforced code review by requiring specified people to approve a merge request before it can be unblocked for merging. Please set the number of necessary approvers before open merge requests can be merged under the **`Approval Levels`** drop-down box. The minimum approval level can be 1.
+* **`Auto approve on merge validation success:`** If all the criteria selected under **`Enable criteria based Review Process`** are successfully validated, selecting this checkbox will automatically approve the merge. The merge will appear to have been approved by ARM. If the user has selected multiple approver levels, both levels will automatically be approved upon successful validation.
+* **`Notify All Criteria Overwrites To:`** The email address(es) specified here will receive an overwrite email notification every time the user tries to overwrite the evaluation criteria set in the **`Merge Settings`** section and tries to merge the files to a branch.
 
-#### 10. Salesforce Settings <a href="#10-salesforce-settings" id="10-salesforce-settings"></a>
+#### 10. Salesforce Settings <a href="#id-10-salesforce-settings" id="id-10-salesforce-settings"></a>
 
 ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **57.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 57 or earlier. The newly supported Salesforce objects for each API version can be found [here](../salesforce-api-version.md).
 
-Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.\
+Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.
 
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678183370026.png" alt=""><figcaption></figcaption></figure>
-
-
-
-1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. Click [here](broken-reference) to go directly to the mentioned topic.&#x20;
+1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
-3. **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
-   ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678183913072.png)
-4. Important Note:Enabling the **`Configuration for running delta on RecordType Picklist values`** checkbox may lead to more time for the build. If you deselect it, your build cycles will be shorter.
+3. **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.
+
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Important Note:**&#x20;
+
+Enabling the **`Configuration for running delta on RecordType Picklist values`** checkbox may lead to more time for the build. If you deselect it, your build cycles will be shorter.
+{% endhint %}
 
 **Packaging and Deployment Settings**
 
@@ -190,13 +188,15 @@ Several options can be configured in this section:&#x20;
 
 **Rollback Settings**
 
-Ensure you exclude them to avoid retrieving unwanted metadata types deployment or commits rollback.\
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662721234320.png)
+Ensure you exclude them to avoid retrieving unwanted metadata types deployment or commits rollback.
+
+<figure><img src="broken-reference" alt="" width="540"><figcaption></figcaption></figure>
 
 **Profile/PermissionSets Settings**
 
-This section pertains to granting or revoking permissions to the **`Profiles/PermissionSets`** of any org. Based on the permission granted or revoked, the same is affected after committing the custom object in the Version Control.\
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662721267275.png)
+This section pertains to granting or revoking permissions to the **`Profiles/PermissionSets`** of any org. Based on the permission granted or revoked, the same is affected after committing the custom object in the Version Control.
+
+<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
 
 **What is a Profile?**
 
@@ -213,8 +213,8 @@ Create permission sets to grant access among logical groupings of users, regardl
 1. Click the **`New`** button.
 2. Select the **`Salesforce Org`**.
 3. Click either **`Get Profiles`** or **`Get PermissionSets`**.
-   1. **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
-   2. **`Get PermissionSets`** will list all permission sets available in Salesforce Orgs.
+   * **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
+   * **`Get PermissionSets`** will list all permission sets available in Salesforce Orgs.
 4. Based on the above selection, choose either the **`Profile`** or **`Permission`** from the list.
 5. Next, grant or revoke the permissions for the selected Profiles/Permission Sets.
 
@@ -238,7 +238,7 @@ Create permission sets to grant access among logical groupings of users, regardl
 | modifyAllRecords | Indicates whether the object referenced by the object field can be read, edited, or deleted by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object. |
 | viewAllRecords   | Indicates whether the object referenced by the object field can be read by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object.                     |
 
-#### 11. Vlocity Configuration Settings <a href="#11-vlocity-configuration-settings" id="11-vlocity-configuration-settings"></a>
+#### 11. Vlocity Configuration Settings <a href="#id-11-vlocity-configuration-settings" id="id-11-vlocity-configuration-settings"></a>
 
 Vlocity integration with ARM allows you to retrieve and deploy Vlocity metadata in the same way as for the Salesforce metadata, and commit the changes either to the repository or to a Version control branch.
 
@@ -247,55 +247,55 @@ Vlocity Version Supported: v1.17.1
 **Integrate Vlocity as a plugin in ARM**
 
 1. In the **`Vlocity Configuration Settings`** section, select the **`Enable Vlocity`** checkbox.
-2. Next, you must select the various parameters required to integrate Vlocity with ARM:
-   1. **`Compile On Build:`** When selected or set to true, the _compileonbuild_ code is modified in the YAML file, and the same gets committed to your Version Control branch during the EZ-Commit process. When you're trying to deploy to a Salesforce org using the above-configured branch, the compilation will take place before the deployment begins. **However, ARM recommends that you keep this checkbox unselected.** This is because the Vlocity tool throws compilation errors when you're trying to deploy the data that doesn't have dependent components when **`Compile On Build`** is checked.
-   2. **`Auto Update Settings:`** This option ensures you have the latest Data Pack settings before each export and deployment. This check is quick, and we recommend that you allow it.
-   3. **`Separate Matrix Versions:`** Add the ability to export matrix versions separately.
-   4. **`Local Compilation:`** To perform a local compilation of **`FlexCard`** and **`OmniScript`** metadata types, select this checkbox and enter the **`Access Key`** of Vlocity's private NPM repository to load the OmniStudio LWC compiler and deploy the compiled objects.\
+2.  Next, you must select the various parameters required to integrate Vlocity with ARM:
+
+    * **`Compile On Build:`** When selected or set to true, the _compileonbuild_ code is modified in the YAML file, and the same gets committed to your Version Control branch during the EZ-Commit process. When you're trying to deploy to a Salesforce org using the above-configured branch, the compilation will take place before the deployment begins. **However, ARM recommends that you keep this checkbox unselected.** This is because the Vlocity tool throws compilation errors when you're trying to deploy the data that doesn't have dependent components when **`Compile On Build`** is checked.
+    * **`Auto Update Settings:`** This option ensures you have the latest Data Pack settings before each export and deployment. This check is quick, and we recommend that you allow it.
+    * **`Separate Matrix Versions:`** Add the ability to export matrix versions separately.
+    * **`Local Compilation:`** To perform a local compilation of **`FlexCard`** and **`OmniScript`** metadata types, select this checkbox and enter the **`Access Key`** of Vlocity's private NPM repository to load the OmniStudio LWC compiler and deploy the compiled objects.\
       NoteIf you do not have the NPM repository Access Key, you can request one from your Vlocity customer representative at [_https://repo.vlocity.com/repository/vlocity-public/_](https://repo.vlocity.com/repository/vlocity-public/), by filing a support case with the subject **Request for Access Key to Vlocity's Private NPM Repository**.
-   5. **`MaxDepth:`** MaxDepth decides the level of dependencies that will be executed while fetching and committing vlocity components. By default, MaxDepth is set to **`-1`**.
-      * When MaxDepth Values is set to **`-1`** means, it will execute all-level dependencies of selected data pack record
-      * When MaxDepth Values is set to **`0`** means, it will execute only selected data pack record and
-      * When MaxDepth Values is set to **`1`** means, it will execute only first-level dependencies of the selected data pack record.
-   6.  **`Data Pack Types:`** This gives you an option to choose your specific Vlocity components that will be committed to your destination org/branch.\
+    * **`MaxDepth:`** MaxDepth decides the level of dependencies that will be executed while fetching and committing vlocity components. By default, MaxDepth is set to **`-1`**.
+      1. When MaxDepth Values is set to **`-1`** means, it will execute all-level dependencies of selected data pack record
+      2. When MaxDepth Values is set to **`0`** means, it will execute only selected data pack record and
+      3. When MaxDepth Values is set to **`1`** means, it will execute only first-level dependencies of the selected data pack record.
+    * **`Data Pack Types:`** This gives you an option to choose your specific Vlocity components that will be committed to your destination org/branch.
 
-
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681291810276.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 3. Click **`Save`**.
 
-#### 12. Session Settings <a href="#12-session-settings" id="12-session-settings"></a>
+#### 12. Session Settings <a href="#id-12-session-settings" id="id-12-session-settings"></a>
 
-After logging in, a user establishes a session with the ARM platform. As an admin, you can control when an inactive user session expires. The default session timeout is 30 mins of inactivity. When the session timeout is reached, users are prompted with a dialog that allows them to log out or continue working.\
+After logging in, a user establishes a session with the ARM platform. As an admin, you can control when an inactive user session expires. The default session timeout is 30 mins of inactivity. When the session timeout is reached, users are prompted with a dialog that allows them to log out or continue working.
 
+<figure><img src="broken-reference" alt="" width="374"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1678181831468.png" alt="" width="375"><figcaption></figcaption></figure>
-
-#### 13. Retention Policy <a href="#13-retention-policy" id="13-retention-policy"></a>
+#### 13. Retention Policy <a href="#id-13-retention-policy" id="id-13-retention-policy"></a>
 
 In this section, the admin can define the period for which data is retained by ARM in the history tables.&#x20;
 
-Clearing historical and irrelevant data from the database helps prevent the application from lagging, resulting in better performance in all modules. The default retention period is set as **`12 months`**. Data older than 12 months will be automatically cleaned. Admins can later change it to **`6 months`** or **`3 months`**.\
+Clearing historical and irrelevant data from the database helps prevent the application from lagging, resulting in better performance in all modules. The default retention period is set as **`12 months`**. Data older than 12 months will be automatically cleaned. Admins can later change it to **`6 months`** or **`3 months`**.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667989086112.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt="" width="293"><figcaption></figcaption></figure>
 
 This is applicable to the historical data on the following pages:
 
-* Deployment history
-* CI Job History
-* Org Sync History
-* Commits page
-  * EZ-Commits history
-  * Prevalidation commits history
-  * Reverted commits history
-  * Merges history
-  * Prevalidation merge history
-* Merge Requests history
-* External Pull Requests page
-* Branching baseline page
-* Change the Labels page
-  * Commit Labels
-  * Release Labels
-  * ALM Labels
+1. Deployment history
+2. CI Job History
+3. Org Sync History
+4. Commits page
+   * EZ-Commits history
+   * Prevalidation commits history
+   * Reverted commits history
+   * Merges history
+   * Prevalidation merge history
+5. Merge Requests history
+6. External Pull Requests page
+7. Branching baseline page
+8. Change the Labels page
+   * Commit Labels
+   * Release Labels
+   * ALM Labels
 
-Important NoteThe clean-up of the historical data will run every Saturday. To access any historical data that has already been cleaned up, contact us at **support@autorabit.com**, and we will provide the data in a CSV file format. Deleted data cannot be restored to the application.
+{% hint style="info" %}
+**Important Note:** The clean-up of the historical data will run every Saturday. To access any historical data that has already been cleaned up, contact us at **support@autorabit.com**, and we will provide the data in a CSV file format. Deleted data cannot be restored to the application.
+{% endhint %}

@@ -40,7 +40,7 @@ nCino 24.1 is a major release that encompasses the following release items:&#x20
 
     **Benefit:** Addresses the need for streamlined and automated CI processes by providing customers with the ability to trigger nCino CI jobs via API endpoints. This enhancement improves efficiency, reduces manual intervention, and enhances the overall CI experience for users.
 
-    **Further documentation:** For more detailed information, please refer to our Knowledge Base.\
+    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/ncino/developer-apis/api-references).\
 
 
 ### Enhancements

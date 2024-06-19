@@ -64,7 +64,6 @@
   * [CodeScan–FAQs](fundamentals/faq/codescan-faqs.md)
   * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
     * [Common Restore Errors & Solutions](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)
-    * [Archival Best Practices](fundamentals/faq/vault-faqs/archival-best-practices.md)
 
 ## Product Guides
 
@@ -696,7 +695,8 @@
         * [Restoring nCino Features](product-guides/vault/vault-features/knowledge-articles/ncino/restoring-ncino-features.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect.md)
   * [Vault-FAQs](product-guides/vault/vault-faqs.md)
-  * [Vault Best Practices](product-guides/vault/vault-best-practices.md)
+  * [Vault Best Practices](product-guides/vault/vault-best-practices/README.md)
+    * [Archival Best Practices](product-guides/vault/vault-best-practices/archival-best-practices.md)
 * [FlowCenter](product-guides/flow-center/README.md)
   * [FlowCenter Insights](product-guides/flowcenter/flowcenter-insights/README.md)
     * [Creating Your First Dashboard](product-guides/flowcenter/flowcenter-insights/creating-your-first-dashboard.md)

@@ -6,7 +6,7 @@
 
 Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail.
 
-
+See Vault Archival Best Practices
 
 ### Backup Best Practices
 

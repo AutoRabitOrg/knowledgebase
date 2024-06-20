@@ -7,7 +7,7 @@
 3. Select the SVN repository for which the branch needs to be created.
 4. Click on **`Create`** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (13).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. In the **`Create Branch`** screen, give the branch a name in the **`Display Name`** field.
 
@@ -20,13 +20,13 @@
 8. **`Parent URL`** is auto-filled; however, you can modify it (if necessary).&#x20;
 9. Click **`Create`** to complete the creation process.
 
-<figure><img src="../../../../../.gitbook/assets/image (14).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (14) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Registration of an existing SVN branch <a href="#registration-of-an-existing-svn-branch" id="registration-of-an-existing-svn-branch"></a>
 
 1. On the **`VC Repo's`** page, select one SVN repository from the **`Repository List`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (15).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (15) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. Click **`Register`**.
 3. On the next screen, enter the **branch name** you want to register in ARM.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
@@ -34,4 +34,4 @@
 5. Select the **`Last Commit Date`**. The last commit date fetches changes from Salesforce org in EZ-Commit based on the specified date.
 6. Click **`Register`** to complete the registration of the branch.
 
-<figure><img src="../../../../../.gitbook/assets/image (16).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (3).png" alt="" width="563"><figcaption></figcaption></figure>

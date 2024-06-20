@@ -9,7 +9,7 @@ By default, ARM connects to orgs using the secure OAuth method (our recommended 
 1. Log in to your ARM account.&#x20;
 2. Go to the **`Admin > SF Org Mgmt.`** page.
 
-<figure><img src="../../../../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. From the **`SF Org Mgmt.`** screen, click on the **`Add`** button.
 

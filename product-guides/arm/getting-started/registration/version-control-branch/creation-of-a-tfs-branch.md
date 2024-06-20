@@ -7,7 +7,7 @@
 3. Select a TFS repository for which the branch needs to be created.
 4. Click on **`Create`** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (9).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`** field.
 
@@ -26,18 +26,18 @@
    * Enter your **`Branch`** name.
 9. Click **`Create`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Registration of an existing TFS branch <a href="#registration-of-an-existing-tfs-branch" id="registration-of-an-existing-tfs-branch"></a>
 
 1. On the **`VC Repo's`** page, select a TFS repository from the **`Repository List`**.
 2. Click on **`Register`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (11).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. On the next screen, enter the **`Display Name`** of the branch that you want to register in ARM.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
 4. The **`Repository`** field is auto-filled with the URL entered when registering the repository.
 5. Select the **`Last Commit Date`**. The last commit date fetches changes from Salesforce org in EZ-Commit based on the specified date.
 6. Click **`Register`** to complete the registration of the branch.
 
-<figure><img src="../../../../../.gitbook/assets/image (12).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (3).png" alt="" width="563"><figcaption></figcaption></figure>

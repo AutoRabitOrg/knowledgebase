@@ -7,7 +7,7 @@ This section guides you to register the TFS repository in ARM.
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and select the option: **`VC Repos`**.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt="" width="285"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17).png" alt="" width="285"><figcaption></figcaption></figure>
 
 3. Click on **`Register Repository`**.
 4. Select the **`Version Control System`** as TFS on the **`Register Repository`** page.
@@ -16,7 +16,7 @@ This section guides you to register the TFS repository in ARM.
 7. Choose the correct user's **`Credentials`** from the list. To create a new credential, click on the **`+`** icon.
 8. Click **`Test Connection`** to check if the connection has been authenticated. A success message is displayed after the authentication is completed.
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (4).png" alt="" width="375"><figcaption></figcaption></figure>
 
 9. Finally, click **`Save`** to complete the TFS repository registration process and to close the **`Register Repository`** screen.
 

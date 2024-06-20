@@ -47,6 +47,15 @@ This section summarizes the Version control limits that ARM users should conside
 3. While trying to delete aura components from a Version control branch using the EZ-Commit process in ARM, the Aura components don't get deleted. It still remains available in the version control branch. There is a dependency which prevents deletion of aura components from the version control branch although the components are not available in the Salesforce org.
 4. While trying to commit via **previously validated commit labels**, you may not find components listed on the **Deleted** tab. This is expected behavior from our application. To view the deleted components, make sure you use the **Auto Draft** functionality during the EZ-commit process.
 5. During an **EZ-Commit**, some of the standard fields like **Account.BillingCountry**, **Account.BillingGeocodeAccuracy**, etc. are not getting fetched from the Salesforce org. This is because there is no proper API to fetch these standard fields from Salesforce.
+6.  SFDX structure methods (e.g., packages, change sets) are not fully compatible with Vlocity DataPacks, necessitating non-SFDX repositories, therefore, what is suggested is as follows:
+
+    &#x20;
+
+    **Hybrid Approach**:
+
+    * Maintain separate repositories for SFDX and Vlocity components.
+    * Use SFDX for Salesforce metadata and development, while managing Vlocity components through their own repository and tools.
+    * Follow the specific guidelines and best practices provided by Vlocity and Salesforce DX for managing and deploying each type of component.
 
 #### During EZ-Merge <a href="#during-ezmerge" id="during-ezmerge"></a>
 

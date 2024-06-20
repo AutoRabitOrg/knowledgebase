@@ -32,12 +32,12 @@ To create a new user account:
 2. Hover your mouse over the **`Admin`** tab and click on the **`Users`**.
 3. Click the **`Add User`** button.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (606).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the **`User Details`** and configure the **`Role Permissions`**.
 5. Click **`Save & Activate`** to activate the users or **`Save Now & Activate Later`** to save the user details. They can be activated later from this page.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (607).png" alt=""><figcaption></figcaption></figure>
 
 6. Your colleague will receive an email inviting them to set their password and log in.
 7. Newly created users are updated in the **`Users`** tab under the **`Admin`** module.
@@ -50,7 +50,7 @@ After you’ve created a user, you can change most of their information and perm
 2. Go to the **`Users`** tab. Locate the user to whom you would like to make changes.
 3. Click on the **`Edit`** icon.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (609).png" alt=""><figcaption></figcaption></figure>
 
 4. Make any desired changes and click on **`Save`**.
 
@@ -62,11 +62,11 @@ If you have user management permissions, you can suspend or delete users. Suspen
 2. Navigate to **`Admin > Users`** tab. Locate and select the user you'd like to make changes to.
 3. Click on **`Delete User`** to delete the user account permanently.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (610).png" alt=""><figcaption></figcaption></figure>
 
 4. You can temporarily block users' access to your organization's services by suspending their accounts. Select the user and click on **`Activate/De-activate`** button.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (611).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **`OK`** to confirm your selection.
 
@@ -80,7 +80,7 @@ To enforce SSO, you need to enable the SSO login configuration. Go to the **`My 
 
 If you, an org admin, want to override the SSO configuration for an individual team member or group of users, you uncheck the **`Enforce SSO`** boxes after selecting the team members from the list.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (612).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** When the **`Disable login with AutoRABIT credentials`** option is selected, the **`Enforce SSO`** checkboxes are automatically checked for all users.
@@ -120,11 +120,11 @@ If you have **`Admin`** permissions, you can export a CSV file of all the users 
 
 1. On the **`Users`** screen, in the upper right, click **`Export All Users`**.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (613).png" alt=""><figcaption></figcaption></figure>
 
 2. The fields you can export will be displayed on the next screen. Click the **`Export`** button after choosing the fields you want to export as CSV.
 
-<figure><img src="broken-reference" alt="" width="511"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (614).png" alt="" width="511"><figcaption></figcaption></figure>
 
 3. Fields like _`First Name`_, _`Last Name`_, _`Status`_, _`Email`_, and _`Login Name`_ are automatically selected by default when a CSV file is exported. If necessary, you can exclude them from being exported.
 4. Your export will begin processing, and the CSV file will be downloaded on your local machine.
@@ -145,15 +145,15 @@ You must assign at least one role to each user, with specific permissions grante
 
 1. Hover your mouse over the **`Admin`** tab and click the **`Roles`** option.
 
-<figure><img src="broken-reference" alt="" width="251"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (615).png" alt="" width="251"><figcaption></figcaption></figure>
 
 2. Click on the **`Create Role`** button.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, enter a **`Role Name`** and **`Description`** for the role. On the **`Permissions`** tab, select the checkboxes to assign the roles you want users to have.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (617).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Click **`Save`**.
 
@@ -172,12 +172,12 @@ To assign users to a role and permission, use the following steps:
 
 1. From the ARM home page, click and go to the **`Permissions`** tab.
 
-<figure><img src="broken-reference" alt="" width="251"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (618).png" alt="" width="251"><figcaption></figcaption></figure>
 
 2. Select at least **two users** you like to assign permissions from the user's list view.
 3. Click on **`Bulk Assignment`**.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (619).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The user(s) with the Admin role is not displayed on the **Permission** page.
@@ -187,6 +187,6 @@ To assign users to a role and permission, use the following steps:
 5. Click **`Save`**.
 6. You can click the user's name to open the user's record in detail view from the **`User Permission`** page.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (621).png" alt="" width="563"><figcaption></figcaption></figure>

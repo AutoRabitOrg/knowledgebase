@@ -102,7 +102,7 @@
       * [Export Users Details](product-guides/arm/arm-administration/user-management/export-users-details.md)
       * [Reset Account Password](product-guides/arm/arm-administration/user-management/reset-account-password.md)
       * [View my Profile](product-guides/arm/arm-administration/user-management/view-my-profile.md)
-      * [Manage Users' Account Settings](product-guides/arm/arm-administration/user-management/manage-users-account-settings/README.md)
+      * [Manage User's Account Settings](product-guides/arm/arm-administration/user-management/manage-users-account-settings/README.md)
         * [Users, Roles & Permissions](product-guides/arm/arm-administration/user-management/manage-users-account-settings/users-roles-and-permissions.md)
       * [ARM Predefined Roles](product-guides/arm/arm-administration/user-management/arm-predefined-roles.md)
       * [ARM User Permissions](product-guides/arm/arm-administration/user-management/arm-user-permissions.md)

@@ -14,11 +14,11 @@ Log into ARM with username _xyz@autorabit.com_, for example, then do the followi
 
 1. Hover your mouse over the **`Admin`** tile and select the option for **`Credentials`**.
 
-<figure><img src="broken-reference" alt="" width="218"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (630).png" alt="" width="326"><figcaption></figcaption></figure>
 
 2. Click **`Create Credential`**.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (631).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next pop-up screen, enter a **`Credential name`**.
 4. Choose a **`Credential Type`** from the drop-down field.&#x20;
@@ -32,7 +32,7 @@ Log into ARM with username _xyz@autorabit.com_, for example, then do the followi
 
 Password-based authentication requires the user to enter their username and password to create a credential.
 
-<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (632).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Credential Scope lets you specify exactly what type of access you need.&#x20;
 
@@ -43,7 +43,7 @@ Credential Scope lets you specify exactly what type of access you need.&#x20;
 
 **`SSH`** is an encrypted protocol used to administer and communicate with servers. SSH is a secure way to access a site’s server remotely. The user must generate a public/private key pair on the client machine to identify them on the servers. You can choose to protect it with a password. Entering it with no password means anyone with access to the key files has the same level of access as the user, and no password is required when the client connects to the servers. Protecting the keys with a password means that whenever the user connects to a server using those keys, the password for decrypting it is required.
 
-<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (633).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -59,7 +59,7 @@ Credential Scope lets you specify exactly what type of access you need.&#x20;
 
 You can now choose the **`AWS Authentication`** method while adding HashiCorp credentials to ARM to generate the **`Vault Token`** automatically whenever the existing token expires. Now the user does not have to update the token manually from the application when it expires. Click [here](arm-credential-manager.md#hashicorp-vault) for a more detailed article on this topic.
 
-<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (635).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Authentication using SSH Certificates <a href="#authentication-using-ssh-certificates" id="authentication-using-ssh-certificates"></a>
 
@@ -79,7 +79,7 @@ To give organizations more control over how their members access their repositor
 
 SSH certificates only allow access to repositories that belong to their organization.
 
-<figure><img src="broken-reference" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (636).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > **Limitation:**&#x20;
 >
@@ -91,7 +91,7 @@ As an **Enterprise** user, you can now connect ARM to Jira with the support of *
 
 Select **`Application Token`** from the **`Credential Type`** dropdown, enter the **`Token`** generated from Jira, and click **`Save`**.
 
-<figure><img src="broken-reference" alt="" width="408"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
 
 This feature is only available upon request. If you would like to use PAT authentication to connect to Jira, please reach out to us at [support@autorabit.com,](mailto:support@autorabit.com,) and the AutoRABIT support team will be able to assist you further.
 

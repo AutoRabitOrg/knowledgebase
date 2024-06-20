@@ -1,4 +1,4 @@
-# Manage Users' Account Settings
+# Manage User's Account Settings
 
 {% hint style="info" %}
 **Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in this article will not be available to general users.
@@ -8,27 +8,27 @@ You can create, edit, and view user account details as an Org administrator. Adm
 
 ### View User Account <a href="#view-user-account" id="view-user-account"></a>
 
-1. Hover your mouse over the **`Admin`** tile and select **`My Account`**.
+* Hover your mouse over the **`Admin`** tile and select **`My Account`**.
 
-<figure><img src="broken-reference" alt="" width="243"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (579).png" alt="" width="243"><figcaption></figcaption></figure>
 
-2. The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:
+* The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Account Contact Details (Read only) <a href="#id-1-account-contact-details-read-only" id="id-1-account-contact-details-read-only"></a>
 
 **`The Account Contact Details`** section contains your account's primary information and your subscription period with ARM.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Subscription Type (Read only) <a href="#id-2-subscription-type-read-only" id="id-2-subscription-type-read-only"></a>
 
 **`Subscription Types`** are set up to match your organization's requirements. View the current subscription type and list of modules granted by ARM based on your subscription. Click on **`View Models`** to view the complete subscription model.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (583).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 3. SSO Configuration <a href="#id-3-sso-configuration" id="id-3-sso-configuration"></a>
 
@@ -42,11 +42,11 @@ Using the information you gathered from your IdP (the Identity Provider), fill i
 * **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../../integration-and-plugins/sso/).
 * **`Disable login with ARM credentials:`** When selected, passwords on ARM are no longer used once the SSO is activated. The system forces you and your sub-users to log in via SSO rather than entering their username and password on the login page. However, once disabled, all the authentication requests will go through the classic login interface.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (584).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * How to override single sign-on (SSO)?Sub-users registered to that organization cannot log in to the ARM application using the standard (username + password) approach if the **`Disable login with AutoRABIT credentials`** checkbox is selected. If the org admin wants to override the **`SSO configuration`** for an individual user or group of users, he can do so under the **`Admin > Users`** section. Uncheck the **`Enforce SSO`** boxes after selecting the users from the list. Save the **`SSO Configuration`** by clicking **`Save`**.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (585).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** When the **`Disable login with AutoRABIT credentials`** option is selected, the **`Enforce SSO`** checkboxes are automatically checked for all the users.
@@ -56,11 +56,11 @@ Using the information you gathered from your IdP (the Identity Provider), fill i
 
 The admin can add different mail extensions based on the organization's requirements in this section.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (586).png" alt="" width="563"><figcaption></figcaption></figure>
 
 This allows new users to sign up for the ARM account by giving their mail extensions.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (587).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 5. Plugins <a href="#id-5-plugins" id="id-5-plugins"></a>
 
@@ -74,7 +74,7 @@ Browsers Supported:
 * Internet Explorer 7+&#x20;
 * Firefox 3+
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
 
 #### 6. Configure Default SCA Baseline Branches <a href="#id-6-configure-default-sca-baseline-branches" id="id-6-configure-default-sca-baseline-branches"></a>
 
@@ -82,7 +82,7 @@ Developers must select the appropriate baseline branch to compare against. If th
 
 Admins can configure the default baseline branches for CodeScan and SonarQube SCA plugins in the **`My Account`** section. This resolves the confusion developers previously faced when selecting baseline branches for SCA and. It also helps Admins control the default baseline branches.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (589).png" alt=""><figcaption></figcaption></figure>
 
 **Configure the baseline branches**
 
@@ -90,22 +90,22 @@ Admins can configure the default baseline branches for CodeScan and SonarQube SC
 * **`Select Project`** from the dropdown list.
 * Click on the **`Select Default Branch`** field to display the available branches within the selected project, then click on the branch name from the list. You can choose multiple branches for each project. These branches are available for a developer to choose from during EZ-Commit.
 * Other options:
-  1. Click the![](broken-reference) icon to add a project.
-  2. Click the ![](broken-reference) icon to remove a branch from a project.
-  3. Click the![](broken-reference)icon to delete the project completely.
+  1. Click the ![](<../../../../../.gitbook/assets/image (590).png>) icon to add a project.
+  2. Click the![](<../../../../../.gitbook/assets/image (591).png>)icon to remove a branch from a project.
+  3. Click the![](<../../../../../.gitbook/assets/image (592).png>)icon to delete the project completely.
 * Click **`Save`** after selecting, adding, or deleting the required projects and corresponding branches.
 
 #### 7. Validation Criteria- Static Code Analysis <a href="#id-7-validation-criteria-static-code-analysis" id="id-7-validation-criteria-static-code-analysis"></a>
 
 With the current release, users can set the global criteria to enforce **`Static Code Analysis (SCA)`** tools across CI jobs and merge jobs. Based on the priority set, the build will be successful only if the criteria are met. The build will only succeed if the **Apex Classes**, **Triggers**, and **Visualforce** pages pass the priority set.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (593).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### 8. Commit Validation - Approval Settings <a href="#id-8-commit-validation-approval-settings" id="id-8-commit-validation-approval-settings"></a>
 
 Here the admin can specify specific evaluation criteria for which the commit will get reviewed before being committed to the version control branch.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
 
 **Auto reject commit after XX days**
 
@@ -115,7 +115,7 @@ Auto rejects an approval for pre-validation commit after the days mentioned here
 
 Select the **`Enable criteria based Review Process`** checkbox to enable the commit criteria.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
 Next, choose the approval criteria based on your requirement:&#x20;
 
@@ -124,7 +124,7 @@ Next, choose the approval criteria based on your requirement:&#x20;
 
     * Select the SCA tool according to your requirements.
 
-    <figure><img src="broken-reference" alt="" width="430"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (596).png" alt="" width="430"><figcaption></figcaption></figure>
 * Select the **`Auto reject commit process if the criteria are not met`** checkbox to auto-reject the commit if the set criteria are not met.
 * **`Auto approve on commit validation success:`** If all the criteria selected under **`Enable criteria based Review Process`** are successfully validated, selecting this checkbox will automatically approve the commit.
 
@@ -136,7 +136,7 @@ Next, choose the approval criteria based on your requirement:&#x20;
 
 Once the reviewer has approved the changes, or if you have opted to auto-approve upon successful validation, the commit process is automatically pushed to the destination branch.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
 
 #### 9. Merge Settings <a href="#id-9-merge-settings" id="id-9-merge-settings"></a>
 
@@ -144,7 +144,7 @@ Here the administrator can specify specific evaluation criteria on which the mer
 
 Select the **`Enable criteria based Review Process`** checkbox to enable the merge setting.
 
-<figure><img src="broken-reference" alt="" width="465"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (598).png" alt="" width="465"><figcaption></figcaption></figure>
 
 **Merge Criteria**
 
@@ -163,13 +163,13 @@ ARM supports all the metadata types based on the **`Salesforce API Version`**. A
 
 Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (599).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
 3. **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (600).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**&#x20;
@@ -190,13 +190,13 @@ Several options can be configured in this section:&#x20;
 
 Ensure you exclude them to avoid retrieving unwanted metadata types deployment or commits rollback.
 
-<figure><img src="broken-reference" alt="" width="540"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (601).png" alt="" width="540"><figcaption></figcaption></figure>
 
 **Profile/PermissionSets Settings**
 
 This section pertains to granting or revoking permissions to the **`Profiles/PermissionSets`** of any org. Based on the permission granted or revoked, the same is affected after committing the custom object in the Version Control.
 
-<figure><img src="broken-reference" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (602).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **What is a Profile?**
 
@@ -260,14 +260,14 @@ Vlocity Version Supported: v1.17.1
       3. When MaxDepth Values is set to **`1`** means, it will execute only first-level dependencies of the selected data pack record.
     * **`Data Pack Types:`** This gives you an option to choose your specific Vlocity components that will be committed to your destination org/branch.
 
-    <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (603).png" alt=""><figcaption></figcaption></figure>
 3. Click **`Save`**.
 
 #### 12. Session Settings <a href="#id-12-session-settings" id="id-12-session-settings"></a>
 
 After logging in, a user establishes a session with the ARM platform. As an admin, you can control when an inactive user session expires. The default session timeout is 30 mins of inactivity. When the session timeout is reached, users are prompted with a dialog that allows them to log out or continue working.
 
-<figure><img src="broken-reference" alt="" width="374"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (604).png" alt="" width="374"><figcaption></figcaption></figure>
 
 #### 13. Retention Policy <a href="#id-13-retention-policy" id="id-13-retention-policy"></a>
 
@@ -275,7 +275,7 @@ In this section, the admin can define the period for which data is retained by A
 
 Clearing historical and irrelevant data from the database helps prevent the application from lagging, resulting in better performance in all modules. The default retention period is set as **`12 months`**. Data older than 12 months will be automatically cleaned. Admins can later change it to **`6 months`** or **`3 months`**.
 
-<figure><img src="broken-reference" alt="" width="293"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
 
 This is applicable to the historical data on the following pages:
 

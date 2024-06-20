@@ -6,12 +6,12 @@ To add a new user in ARM:
 2. Hover your mouse over the **`Admin`** tab and click on the **`Users`**.
 3. Click the **`Add User`** button.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the **`User Details`** and configure the **`Role Permissions`**.
 5. Click **`Save & Activate`** to activate the users or **`Save Now & Activate Later`** to save the user details. They can be activated later from this page.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (573).png" alt=""><figcaption></figcaption></figure>
 
 6. Your colleague will receive an email inviting them to set their password and log in.
 7. Newly created users are updated in the **`Users`** tab under the **`Admin`** module.
@@ -24,6 +24,6 @@ After you’ve created a user, you can change most of their information and perm
 2. Go to the **`Users`** tab. Locate the user to whom you would like to make changes.
 3. Click on the **`Edit`** icon.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (574).png" alt=""><figcaption></figcaption></figure>
 
 4. Make any desired changes and click on **`Save`**.

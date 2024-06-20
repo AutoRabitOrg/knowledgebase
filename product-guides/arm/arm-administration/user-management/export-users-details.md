@@ -32,14 +32,14 @@ If you have **`Admin`** permissions, you can export a CSV file of all the users 
 
 1. On the **`Users`** screen, in the upper right, click **`Export All Users`**.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (577).png" alt=""><figcaption></figcaption></figure>
 
 2. The fields you can export will be displayed on the next screen. Click the **`Export`** button after choosing the fields you want to export as CSV.
 
-<figure><img src="broken-reference" alt="" width="511"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (578).png" alt="" width="511"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Fields like _`First Name,`` ``Last Name``, Status,`` ``Email, and Login Name`_ are automatically selected by default when a CSV file is exported. If necessary, you can exclude them from being exported.
+Fields like _`First Name, Last Name, Status, Email, and Login Name`_ are automatically selected by default when a CSV file is exported. If necessary, you can exclude them from being exported.
 {% endhint %}
 
 3. Your export will begin processing, and the CSV file will be downloaded on your local machine.

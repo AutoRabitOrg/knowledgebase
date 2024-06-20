@@ -90,8 +90,6 @@ This update has implemented significant performance upgrades to enhance the tool
 
 ARM 23.1.34
 
-&#x20;               &#x20;
-
 1. A code fix was performed due to a use-case error related to the CI Jobs module in which nCino CI Jobs were not triggered by metadata CI Jobs on success. Support ticket #113887
 2. A code fix was performed due to a use-case error related to the Version Control module in which the API response from CodeScan returned a page not found (404) error in ARM. Support tickets #108895,  #115120, #114434
 3. A code fix was performed due to a use-case error related to the Deployment module in which the Deployment button was not enabled in AutoRABIT after validation. Support ticket #107108
@@ -104,6 +102,7 @@ ARM 23.1.34
 10. A code fix was performed due to a use-case error related to the Data Loader module in which the master-child relationships were not being applied when loaded through Data Loader Pro. Support ticket #111780
 11. A code fix was performed due to a use-case error related to the nCino module in which the CI job was not updating templated objects and object record count when the checkout was not taken from version control. Support ticket #112704
 12. A code fix was performed due to a use-case error related to the nCino module wherein CI Jobs for nCino RBC feature migrations were failing. Support ticket #114991
+13. A code fix was performed to the Admin module as a result of a change request related to users being unable to log in to AutoRABIT. Support tickets #115392, #113300
 
 #### 5 June 2024
 

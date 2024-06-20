@@ -169,6 +169,6 @@ Please refer [here](https://help.salesforce.com/s/articleView?id=release-notes.r
 
 Below is the list of **API 49.0** metadata types supported for both **Salesforce DX** and **non-DX platforms**:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (638).png" alt=""><figcaption></figcaption></figure>
 
 For versions **48.0 and earlier**, please refer [here](https://developer.salesforce.com/docs/atlas.en-us.object\_reference.meta/object\_reference/sforce\_api\_objects\_list.htm) to find the list of Salesforce objects and their supported API versions.

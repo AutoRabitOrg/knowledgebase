@@ -429,7 +429,7 @@ redirects:
     codescan/docs/single-sign-on-sso: product-guides/codescan/codescan-integration/single-sign-on-sso.md
     codescan/docs/adding-projects: product-guides/codescan/getting-started/adding-projects-to-codescan.md
     codescan/docs/codescan-self-hosted-issues: product-guides/codescan/frequently-asked-questions/codescan-self-hosted-issues.md
-    codescan/docs/webhooks: product-guides/codescan/codescan-integration/webhooks.md
+    codescan/docs/webhooks: product-guides/codescan/codescan-integration/webhooks
     codescan/docs/azure-devops: product-guides/codescan/codescan-integration/azure-devops.md
     codescan/docs/codescan-self-hosted-requirements: product-guides/codescan/system-requirements-and-installation.md
     codescan/docs/autorabit: product-guides/codescan/codescan-integration/arm.md

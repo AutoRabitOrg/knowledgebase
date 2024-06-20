@@ -11,12 +11,12 @@ To delegate user permissions and tasks to another user:
 1. Login to your AutoRABIT account.
 2. Hover your mouse over the **`Admin`** tab and click on the **`Users`** option.
 
-<figure><img src="broken-reference" alt="" width="251"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (639).png" alt=""><figcaption></figcaption></figure>
 
 3. Locate the **user** you'd like to delegate his permission and tasks to another user.&#x20;
 4. Click **`Delegate`**.
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
 
 5. The next screen gets divided into multiple sections where each section contains roles and permissions exercised by the current user and such roles/permissions will get delegated to a different user. **For example-** the **`Salesforce Orgs`** tab contains all the Salesforce Orgs that are registered on his name, the **`Version Control Repositories`** section will contain the list of repositories and branches for each VCS (Version Control System) that the user had registered in AutoRABIT and the repositories permission allotted to him/her.
 
@@ -28,12 +28,12 @@ To delegate user permissions and tasks to another user:
 3. **Super Admin** and the **user currently logged in** are disabled for ALL actions. Their roles cannot be delegated to other users.
 {% endhint %}
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
 
 6. Finally, choose the user to whom you want to delegate your task and approvals.
 7. Click **`Release User`**.
 
-<figure><img src="broken-reference" alt="" width="408"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (642).png" alt="" width="408"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -47,4 +47,4 @@ To delegate user permissions and tasks to another user:
     * **`Log Details:`** The log contains information about events and activities that have occurred during the user delegation process. It may contain errors, informational events or warnings, or our application problem.
     * **`User delegation report:`** View the summary list of approvals/ scheduled tasks that are delegated to the user.
 
-    <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>

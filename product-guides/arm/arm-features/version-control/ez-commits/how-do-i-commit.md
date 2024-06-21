@@ -23,57 +23,73 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2024-03-04 at 11.35.01 PM (1).png" alt=""><figcaption></figcaption></figure>
 
-1. **Important Notes:**
-   1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.&#x20;
-   2. In addition to the ALL provision, any Salesforce Org Authors who have access to create, edit, or delete data through either profile or permission-set assignments will be listed and can be selected individually.
-   3. These options are accessible only to ARM administrators or users who have permission to commit on behalf of others.&#x20;
-   4. When **Skip Mapping** is set to false, users cannot choose associated child branches of a mapped branch. In the recent release, ARM reads the mapped branch for your version control repository and displays the related child branches during commit, even if skip mapping is disabled.
-2.  Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.\
+* **Important Notes:**
+  1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.&#x20;
+  2. In addition to the ALL provision, any Salesforce Org Authors who have access to create, edit, or delete data through either profile or permission-set assignments will be listed and can be selected individually.
+  3. These options are accessible only to ARM administrators or users who have permission to commit on behalf of others.&#x20;
+  4. When **Skip Mapping** is set to false, users cannot choose associated child branches of a mapped branch. In the recent release, ARM reads the mapped branch for your version control repository and displays the related child branches during commit, even if skip mapping is disabled.
+*   Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433597653.png" alt=""><figcaption></figcaption></figure>
-3. **`Metadata Components:`** When selected, this retrieves all the metadata components available in the source Salesforce Org. Different ways to fetch the [**`Metadata Components`**](https://www.autorabit.com/blog/7-salesforce-security-concerns-relating-to-metadata/)are:
-   1.  **`Auto Draft:`** This brings all the changes the author has made in the Salesforce org that is not yet committed to the Version Control (ARM does the calculation by using the last modified date in the Salesforce Org and comparing it against the last commit date to Version Control branch).\
+* **`Metadata Components:`** When selected, this retrieves all the metadata components available in the source Salesforce Org. Different ways to fetch the [**`Metadata Components`**](https://www.autorabit.com/blog/7-salesforce-security-concerns-relating-to-metadata/)are:
+  1.  **`Auto Draft:`** This brings all the changes the author has made in the Salesforce org that is not yet committed to the Version Control (ARM does the calculation by using the last modified date in the Salesforce Org and comparing it against the last commit date to Version Control branch).\
 
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433652174.png" alt="" width="563"><figcaption></figcaption></figure>
-   2. **`Select Manually:`** Choose the metadata components individually to be committed to the destination branch.
-   3.  **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.\
+      <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433652174.png" alt="" width="563"><figcaption></figcaption></figure>
+  2. **`Select Manually:`** Choose the metadata components individually to be committed to the destination branch.
+  3.  **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.\
 
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433707623.png" alt="" width="563"><figcaption></figcaption></figure>
-   4. Important Note:Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto Draft`**. If you click the checkbox above, the metadata components in the uploaded XML file will be compared to your source control and Salesforce, and any modified/added components will be displayed on the next Commits screen. If left unchecked, the components will be compared only with Salesforce, and any changed or newly added components will be shown on the next screen.
-4.  **`Re-use Previous Validated Commit Label:`** If you placed changes related to a user story or task, etc., under a specific commit label, you can choose the same in this field. The main advantage of creating a commit label is to reuse the labels and perform multiple commits under a given label.\
+      <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433707623.png" alt="" width="563"><figcaption></figcaption></figure>
+  4. Important Note:Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto Draft`**. If you click the checkbox above, the metadata components in the uploaded XML file will be compared to your source control and Salesforce, and any modified/added components will be displayed on the next Commits screen. If left unchecked, the components will be compared only with Salesforce, and any changed or newly added components will be shown on the next screen.
+*   **`Re-use Previous Validated Commit Label:`** If you placed changes related to a user story or task, etc., under a specific commit label, you can choose the same in this field. The main advantage of creating a commit label is to reuse the labels and perform multiple commits under a given label.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433768284.png" alt=""><figcaption></figcaption></figure>
-5.  **`Vlocity Components:`** This option exports Vlocity data packs from a Salesforce org through a YAML manifest describing your project and committing the same to a VCS. The primary goal is to enable [Continuous Integration](https://www.autorabit.com/ebooks/how-banks-benefit-from-continuous-integration-and-delivery/) for Vlocity metadata through source control.\
+*   **`Vlocity Components:`** This option exports Vlocity data packs from a Salesforce org through a YAML manifest describing your project and committing the same to a VCS. The primary goal is to enable [Continuous Integration](https://www.autorabit.com/ebooks/how-banks-benefit-from-continuous-integration-and-delivery/) for Vlocity metadata through source control.\
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433820118.png" alt=""><figcaption></figcaption></figure>
-6. Important Note:
-   * **About Review Artifact:** You can create a review of selected artifacts or a module or collection. You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
-   * If you check the **Review Artifact** box and choose only commit options for Profile/PermissionSet, the artifacts option will be ignored. The flow will continue with only commit options for Profile/PermissionSet.
-7. Under the **`Perform`**section, you have different options:
-   1. **`Validation of Changes (Before Commit):`** ARM allows performing a validation deployment before committing the changes. This command creates the validation deployment without committing any changes to the repository. If the deployment is successful, the commit is executed.
-   2. **`Commit (Without Validation):`** Directly commit to your Version Control System without extra validations.
-   3.  **`Create a Pull Request:`** Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures the master branch only contains finished and approved work.\
+
+Important Note about **Review Artifact:** You can create a review of selected artifacts or a module or collection. You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
+
+To view changes to Salesforce metadata, edit them, and see the impact to ensure that your changes are correct, follow these steps:
+
+1. Select the Review Artifact option while performing an EZ commit.
+2. The Review Artifact screen will contain a **compare changes icon** that you can click on to view and edit any discrepancies that were identified with the artifacts:
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2024-06-21 at 4.12.14 PM.png" alt=""><figcaption></figcaption></figure>
+
+3. When you edit any of the code in the integrated development environment (IDE) and save the changes, the 'Compare Changes' screen should automatically reflect the current changes, highlighting the modifications with a color difference to distinguish between what has been changed and what has not.
+
+<figure><img src="../../../../../.gitbook/assets/image-20231206-072438.png" alt=""><figcaption></figcaption></figure>
+
+3. If you open the 'Compare Changes' screen and perform edits on any of the artifacts and then click on the close button, the system will navigate back to the 'Review Artifact' screen, and any new changes made will be reflected in the 'Compare Changes' screen.
+4. If you are in the 'Review Artifact' screen and perform additional changes, once the changes are saved, the 'Compare Changes' screen will pick up the new changes and update the screen to reflect the most recent modifications.
+
+If you check the **Review Artifact** box and choose only commit options for Profile/PermissionSet, the artifacts option will be ignored. The flow will continue with only commit options for Profile/PermissionSet.
+
+* Under the **`Perform`**section, you have different options:
+  1. **`Validation of Changes (Before Commit):`** ARM allows performing a validation deployment before committing the changes. This command creates the validation deployment without committing any changes to the repository. If the deployment is successful, the commit is executed.
+  2. **`Commit (Without Validation):`** Directly commit to your Version Control System without extra validations.
+  3.  **`Create a Pull Request:`** Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures the master branch only contains finished and approved work.\
 
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433878410.png" alt="" width="563"><figcaption></figcaption></figure>
-8. Under the **`Post Commit`** section, you can invoke certain processes after the commit is completed.
-   1.  **`Create/Append Revision to existing Label`**
+      <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664433878410.png" alt="" width="563"><figcaption></figcaption></figure>
+* Under the **`Post Commit`** section, you can invoke certain processes after the commit is completed.
+  1.  **`Create/Append Revision to existing Label`**
 
-       * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label, you can reuse the labels and perform multiple commits under a given label. Select the label from the dropdown or create a new one by clicking the + icon.
-       * **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.
+      * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label, you can reuse the labels and perform multiple commits under a given label. Select the label from the dropdown or create a new one by clicking the + icon.
+      * **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.
 
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-       * **ALM Label:** Users have the option to commit using solely the ALM Label or by choosing "None." This is applicable when the ALM item has been mapped in the Salesforce Org Management mappings section and the skip mappings option is not enabled. As part of this process, an ALM Label is generated post-commit and is visible under "Change labels" in the ALM Labels panel.\
+      * **ALM Label:** Users have the option to commit using solely the ALM Label or by choosing "None." This is applicable when the ALM item has been mapped in the Salesforce Org Management mappings section and the skip mappings option is not enabled. As part of this process, an ALM Label is generated post-commit and is visible under "Change labels" in the ALM Labels panel.\
 
-9. Click **`Next`**.
+* Click **`Next`**.
 
 #### Step 2: Selecting the Components <a href="#step-2-selecting-the-components" id="step-2-selecting-the-components"></a>
 

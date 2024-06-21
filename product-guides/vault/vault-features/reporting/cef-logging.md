@@ -1,6 +1,6 @@
 # SIEM Logs
 
-## KONE Monitoring Tools: CEF Logging – Event Logs <a href="#introduction" id="introduction"></a>
+## SIEM Logging – Event Logs <a href="#introduction" id="introduction"></a>
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -12,16 +12,16 @@
 * Users can access the logs from the following path:
   * Click on Profiles to access the Session Information.
 
-<figure><img src="../../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the “Session Information” tab to access the “Activity” button.
 
-<figure><img src="../../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the “Activity Log” to access the user activity.
 * On landing on the “Activity Logs”, click on the “Download” drop-down to access the available options
 
-<figure><img src="../../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

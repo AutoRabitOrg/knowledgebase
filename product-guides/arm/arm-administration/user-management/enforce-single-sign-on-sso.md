@@ -13,7 +13,7 @@ Your team members will now be forced to log in via SSO only. Even if SSO is enfo
 
 If you, an org admin, want to override the SSO configuration for an individual team member or group of users, you uncheck the **`Enforce SSO`** boxes after selecting the team members from the list.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Enforce%20SSO(1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.gif" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** When selecting the **Disable login with AutoRABIT credentials** option, the **Enforce SSO** checkboxes are automatically checked for all users.

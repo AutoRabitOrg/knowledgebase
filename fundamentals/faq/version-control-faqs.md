@@ -52,7 +52,7 @@ Remote repositories allow us to share our changes with other members of the team
 Below are the reasons why ARM rejects your merge request:
 
 * It will be auto-rejected if the proper **merge criteria** are not enabled. The merge criteria must be enabled before you are performing the jobs.
-  * Navigate to **Admin > My Account > Merge Setting** to select the proper merge criteria. Click [Here](https://knowledgebase.autorabit.com/docs/manage-user-account-settings?highlight=merge%20setting#9-merge-settings) for a more detailed explanation.
+  * Navigate to **Admin > My Account > Merge Setting** to select the proper merge criteria. Click [Here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/manage-users-account-settings#id-9-merge-settings) for a more detailed explanation.
 * **Workspaces** is wrongly configured
   * Search for the workspace id which has the name of the source & target branch and reset that workspace. Once the workspace reset is complete, trigger a new merge.
 * Failed to meet the actual code coverage criteria

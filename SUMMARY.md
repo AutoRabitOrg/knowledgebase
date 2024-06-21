@@ -684,7 +684,7 @@
     * [Reporting](product-guides/vault/vault-features/reporting.md)
     * [Restore](product-guides/vault/vault-features/restore/README.md)
       * [Restoring the Metadata/Data to the Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
-    * [SIEM Logs](product-guides/vault/vault-features/reporting/cef-logging.md)
+    * [SIEM Logs](product-guides/vault/vault-features/siem-logging.md)
     * [Knowledge Articles](product-guides/vault/vault-features/knowledge-articles/README.md)
       * [Backup Support for Knowledge Articles](product-guides/vault/vault-features/knowledge-articles/backup-support-for-knowledge-articles.md)
       * [Restoring Knowledge Articles with Vault](product-guides/vault/vault-features/knowledge-articles/restoring-knowledge-articles-with-vault.md)

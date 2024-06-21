@@ -4,7 +4,7 @@
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
-#### SIEM logs is a standardized log management system developed to record and transport event data.  <a href="#cef-logs-is-a-standardized-log-management-system-developed-to-record-and-transport-the-event-data" id="cef-logs-is-a-standardized-log-management-system-developed-to-record-and-transport-the-event-data"></a>
+#### SIEM is a standardized log management system developed to record and transport event data.  <a href="#cef-logs-is-a-standardized-log-management-system-developed-to-record-and-transport-the-event-data" id="cef-logs-is-a-standardized-log-management-system-developed-to-record-and-transport-the-event-data"></a>
 
 ### How to Access SIEM Logs <a href="#how-to-access-cef-logs" id="how-to-access-cef-logs"></a>
 
@@ -12,16 +12,16 @@
 * Users can access the logs from the following path:
   * Click on Profiles to access the Session Information.
 
-<figure><img src="../../../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the “Session Information” tab to access the “Activity” button.
 
-<figure><img src="../../../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
 
 * Click on the “Activity Log” to access the user activity.
 * On landing on the “Activity Logs”, click on the “Download” drop-down to access the available options
 
-<figure><img src="../../../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

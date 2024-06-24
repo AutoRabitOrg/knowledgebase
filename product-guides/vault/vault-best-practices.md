@@ -27,9 +27,10 @@ See Vault Archival Best Practices
 ### Restore/ Replicate Best Practices
 
 1. Active validation rules, triggers, process builder and workflow may lead to restore/replicate failures of certain data or metadata. Make sure to disable these before restore/replicate operations.
-2. Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail. Make sure the metadata size is less than 400MB for a single job. You can split the metadata into multiple jobs to achieve restore/replicate if metadata is larger than 400 MB.
-3. Define batch size based on the size of metadata or data you want to perform jobs on.
-4. Make sure record owners are active on Salesforce, as Restore/Replicate will fail for inactive owners. If activating owners is not an option, you can enable [‘Set Audit](https://help.salesforce.com/articleView?id=000227663\&type=1) [Fields and Update Records with Inactive Owners’](https://help.salesforce.com/articleView?id=000227663\&type=1) on Salesforce.
+2. We strongly urge everyone to implement frameworks such as Trigger Handlers that allow you to disable automation (Triggers, Flows, Workflow Rules, etc.) for certain users or at certain times. Salesforce offers brief [guidance on this on Trailhead](https://trailhead.salesforce.com/content/learn/modules/success-cloud-coding-conventions/implement-frameworks-sc), and there are multiple Trigger Handler patterns available such as the [Apex Trigger Actions Framework](https://github.com/mitchspano/apex-trigger-actions-framework). Data restore jobs generally do not need to re-process that business automation. By bypassing this automation you can reduce time to write data to Salesforce by 10x or more.
+3. Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail. Make sure the metadata size is less than 400MB for a single job. You can split the metadata into multiple jobs to achieve restore/replicate if metadata is larger than 400 MB.
+4. Define batch size based on the size of metadata or data you want to perform jobs on.
+5. Make sure record owners are active on Salesforce, as Restore/Replicate will fail for inactive owners. If activating owners is not an option, you can enable [‘Set Audit](https://help.salesforce.com/articleView?id=000227663\&type=1) [Fields and Update Records with Inactive Owners’](https://help.salesforce.com/articleView?id=000227663\&type=1) on Salesforce.
 
 
 

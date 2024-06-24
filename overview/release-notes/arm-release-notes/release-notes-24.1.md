@@ -51,7 +51,7 @@ ARM 24.1.1
 3. A code fix was applied to the Version Control module for a use-case error related to a validation org being requested when attempting to merge changes. Support ticket #115787
 4. A code fix was applied to the Version Control module for a use-case error related to the create artifact button not being visible when attempting to create a release label.
 5. A code fix was applied to the Reports module for a use-case error related to an alignment issue in the weekly reports filter for no deployments.&#x20;
-6. A code fix was applied to the Search and Substitute module for a use-case error in which the user is unable to create a search and substitute rule.&#x20;
+6. A code fix was applied to the Admin module for a use-case error in which the user is unable to create a search and substitute rule.&#x20;
 7. A code fix was applied to the Admin module for a use-case error related to being unable to register a branch.&#x20;
 
 

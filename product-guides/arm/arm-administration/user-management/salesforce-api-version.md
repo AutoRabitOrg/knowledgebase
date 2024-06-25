@@ -1,23 +1,30 @@
 # Salesforce API version
 
-ARM's ability to support Salesforce Standard and Custom Objects is determined by the Salesforce API version used. ARM now supports the **Salesforce API 59.0 version**, which means it can support any Salesforce standard or custom object that requires Salesforce API version **59.0** or earlier.
+ARM's ability to support Salesforce Standard and Custom Objects is determined by the Salesforce API version used. ARM now supports the **Salesforce API 61 version**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 61 or earlier.
 
 {% hint style="info" %}
-**Important Note:** Only users on an ARM shared instance will see the changes since the Salesforce API version is being updated to **59.0** as part of weekly hotfixes to shared instances only.
+**Important Note:** Only users on an ARM shared instance will see the changes since the Salesforce API version is being updated to **61** as part of weekly hotfixes to shared instances only.
 {% endhint %}
 
 **Troubleshooting:**
 
-Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment. Use Case:
+Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment. Use case:
 
-* **API version set in ARM: 59.0**
-* **Salesforce Org API version: 59.0**
+* **API version set in ARM: 61.0**
+* **Salesforce Org API version: 61.0**
 
 To identify which Salesforce API version you are on, please refer to the article: [Find Salesforce Edition and API version](https://help.salesforce.com/s/articleView?id=000334996\&type=1).
 
 #### Salesforce API Supported Metadata Types
 
-The following tables highlight the newly supported metadata types for each API version.
+The following sections highlight the newly supported metadata types for each API version.
+
+Metadata types added as part of the **API 61** upgrade:
+
+* EnablementMeasureDefinition
+* EnablementProgramDefinition
+
+
 
 Metadata types added as part of the **API 59** upgrade:
 
@@ -29,7 +36,7 @@ Metadata types added as part of the **API 59** upgrade:
 | ExtlClntAppOauthSettings             | .ecaOauth     | extlClntAppOauthSettings   |
 | FlowTransform                        | NA            | NA                         |
 
-Below is the List of Metadata types support added as part of **API 58** Release -
+Below is a list of the Metadata types supported, which were added as part of **API 58** release -
 
 | MetadataType                   | Extension                   | FolderName                      |
 | ------------------------------ | --------------------------- | ------------------------------- |

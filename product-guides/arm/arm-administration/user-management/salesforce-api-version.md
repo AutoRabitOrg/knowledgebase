@@ -1,6 +1,6 @@
 # Salesforce API version
 
-ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API 61 version**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 61 or earlier.
+ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API version 61**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 61 or earlier.
 
 {% hint style="info" %}
 **Important Note:** Only users on an ARM shared instance will see the changes since the Salesforce API version is being updated to **61** as part of weekly hotfixes to shared instances only.

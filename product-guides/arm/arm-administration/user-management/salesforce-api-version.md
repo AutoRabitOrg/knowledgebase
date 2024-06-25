@@ -1,6 +1,6 @@
 # Salesforce API version
 
-ARM's ability to support Salesforce Standard and Custom Objects is determined by the Salesforce API version used. ARM now supports the **Salesforce API 61 version**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 61 or earlier.
+ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API 61 version**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 61 or earlier.
 
 {% hint style="info" %}
 **Important Note:** Only users on an ARM shared instance will see the changes since the Salesforce API version is being updated to **61** as part of weekly hotfixes to shared instances only.
@@ -8,12 +8,14 @@ ARM's ability to support Salesforce Standard and Custom Objects is determined by
 
 **Troubleshooting:**
 
-Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment. Use case:
+Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment.&#x20;
+
+Use case:
 
 * **API version set in ARM: 61.0**
 * **Salesforce Org API version: 61.0**
 
-To identify which Salesforce API version you are on, please refer to the article: [Find Salesforce Edition and API version](https://help.salesforce.com/s/articleView?id=000334996\&type=1).
+To identify which Salesforce API version you are using, please refer to [Find Salesforce Edition and API version](https://help.salesforce.com/s/articleView?id=000334996\&type=1).
 
 #### Salesforce API Supported Metadata Types
 
@@ -106,10 +108,7 @@ Troubleshooting:Below is the list of the metadata types in the _API 55.0 version
 
 **API 54.0 newly Supported Metadata Types**
 
-| S. No. | Metadata Type       | Folder Name           | File Extension       |
-| ------ | ------------------- | --------------------- | -------------------- |
-| 1      | LoyaltyProgramSetup | loyaltyProgramSetups  | .loyaltyProgramSetup |
-| 2      | RecordAlertCategory | recordAlertCategories | .recordAlertCategory |
+<table><thead><tr><th width="83">S. No.</th><th>Metadata Type</th><th>Folder Name</th><th>File Extension</th></tr></thead><tbody><tr><td>1</td><td>LoyaltyProgramSetup</td><td>loyaltyProgramSetups</td><td>.loyaltyProgramSetup</td></tr><tr><td>2</td><td>RecordAlertCategory</td><td>recordAlertCategories</td><td>.recordAlertCategory</td></tr></tbody></table>
 
 **API 53.0 Supported Metadata Types**
 
@@ -117,21 +116,7 @@ Please refer [here](https://help.salesforce.com/s/articleView?id=release-notes.r
 
 **API 52.0 newly Supported Metadata Types**
 
-| S. No. | Metadata Type                 | File Extension                 | Folder Name                  |
-| ------ | ----------------------------- | ------------------------------ | ---------------------------- |
-| 1      | EinsteinAgentSettings         | EinsteinAgent.settings         | settings                     |
-| 2      | FieldRestrictionRule          | .rule                          | fieldRestrictionRules        |
-| 3      | ForecastingObjectListSettings | ForecastingObjectList.settings | settings                     |
-| 4      | ForecastingSourceDefinition   | .forecastingSourceDefinition   | forecastingSourceDefinitions |
-| 5      | ForecastingType               | .forecastingType               | forecastingTypes             |
-| 6      | ForecastingTypeSource         | .forecastingTypeSource         | ForecastingTypeSources       |
-| 7      | FunctionReference(Beta)       | .functions                     | functions                    |
-| 8      | MktCalcInsightObjectDef       | .mktCalcInsightObjectDef       | mktCalcInsightObjectDefs     |
-| 9      | OcrSampleDocument             | .ocrSampleDocument             | ocrSampleDocuments           |
-| 10     | OcrTemplate                   | .ocrTemplate                   | ocrTemplates                 |
-| 11     | RestrictionRule               | .rule                          | restrictionRules             |
-| 12     | ServiceCloudVoiceSettings     | ServiceCloudVoice.settings     | settings                     |
-| 13     | WorkforceEngagementSettings   | WorkforceEngagement.settings   | settings                     |
+<table><thead><tr><th width="78">S. No.</th><th>Metadata Type</th><th>File Extension</th><th>Folder Name</th></tr></thead><tbody><tr><td>1</td><td>EinsteinAgentSettings</td><td>EinsteinAgent.settings</td><td>settings</td></tr><tr><td>2</td><td>FieldRestrictionRule</td><td>.rule</td><td>fieldRestrictionRules</td></tr><tr><td>3</td><td>ForecastingObjectListSettings</td><td>ForecastingObjectList.settings</td><td>settings</td></tr><tr><td>4</td><td>ForecastingSourceDefinition</td><td>.forecastingSourceDefinition</td><td>forecastingSourceDefinitions</td></tr><tr><td>5</td><td>ForecastingType</td><td>.forecastingType</td><td>forecastingTypes</td></tr><tr><td>6</td><td>ForecastingTypeSource</td><td>.forecastingTypeSource</td><td>ForecastingTypeSources</td></tr><tr><td>7</td><td>FunctionReference(Beta)</td><td>.functions</td><td>functions</td></tr><tr><td>8</td><td>MktCalcInsightObjectDef</td><td>.mktCalcInsightObjectDef</td><td>mktCalcInsightObjectDefs</td></tr><tr><td>9</td><td>OcrSampleDocument</td><td>.ocrSampleDocument</td><td>ocrSampleDocuments</td></tr><tr><td>10</td><td>OcrTemplate</td><td>.ocrTemplate</td><td>ocrTemplates</td></tr><tr><td>11</td><td>RestrictionRule</td><td>.rule</td><td>restrictionRules</td></tr><tr><td>12</td><td>ServiceCloudVoiceSettings</td><td>ServiceCloudVoice.settings</td><td>settings</td></tr><tr><td>13</td><td>WorkforceEngagementSettings</td><td>WorkforceEngagement.settings</td><td>settings</td></tr></tbody></table>
 
 **API 51.0 newly  Supported Metadata Types**
 

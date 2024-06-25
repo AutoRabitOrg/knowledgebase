@@ -241,6 +241,9 @@ You can select the static code analysis tool on the **New EZ-Merge** page as par
 **Run Static Code Analysis:** Select this checkbox if you want to run a Static Code Analysis tool to identify potential software quality issues before the code moves to production. Like **Generate Diff Report**, this checkbox is selected by default if the criteria are set globally under the **My Account > Commit Validation – Approval Settings** section.
 
 * For **Apex PMD**, **Checkmarx**, **CodeScan**, and **SonarQube**, ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
+*   The SCA with “all supported metadata” will scan the entire target branch during the EZ merge.
+
+    Whereas during an EZ commit, the SCA with “all supported metadata” will scan only the supported metadata that are part of the commit.
 
 Timeout Exceptions:
 

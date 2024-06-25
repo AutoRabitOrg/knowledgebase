@@ -47,22 +47,7 @@ Below is a list of the Metadata types supported, which were added as part of **A
 | `ExperiencePropertyTypeBundle` | NR                          | `experiencePropertyTypeBundles` |
 | ProcessFlowMigration           | NA                          | NA                              |
 
-**Troubleshooting**:
 
-Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment.\
-\
-**Use Case:**
-
-* API version set in ARM: **56.0**
-* Salesforce Org API version: **57.0**
-
-When you use ARM to perform an EZ-Commit and choose the **Flow** and **Flow Definition** components from a Salesforce org, the properties **'triggerOrder'** and **'Overridable'** do not reflect in your target branch.
-
-It fails when you try to deploy using the above revision after changing the API version to 57.0 in ARM.\
-\
-You'll need to retrigger the commit and deployment process to make the deployment successful.
-
-The below tables highlight the supported metadata types for each API version.&#x20;
 
 **API 57.0 newly Supported Metadata Types**
 
@@ -76,19 +61,11 @@ The below tables highlight the supported metadata types for each API version.&#x
 
 **API 56.0 newly Supported Metadata Types**
 
-| **S. No.** | **Metadata Type**       | **Folder Name**          | **File Extension**       |
-| ---------- | ----------------------- | ------------------------ | ------------------------ |
-| 1          | AIUsecaseDefinition     | aiUsecaseDefinitions     | .aiUsecaseDefinitions    |
-| 2          | DigitalExperienceBundle | digitalExperiences       | .digitalExperience       |
-| 3          | DigitalExperienceConfig | digitalExperienceConfigs | .digitalExperienceConfig |
-| 4          | EventRelayConfig        | eventRelays              | .eventRelay              |
-| 5          | OauthOidcSettings       | settings                 | .settings                |
+<table data-header-hidden><thead><tr><th width="94"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>S. No.</strong></td><td><strong>Metadata Type</strong></td><td><strong>Folder Name</strong></td><td><strong>File Extension</strong></td></tr><tr><td>1</td><td>AIUsecaseDefinition</td><td>aiUsecaseDefinitions</td><td>.aiUsecaseDefinitions</td></tr><tr><td>2</td><td>DigitalExperienceBundle</td><td>digitalExperiences</td><td>.digitalExperience</td></tr><tr><td>3</td><td>DigitalExperienceConfig</td><td>digitalExperienceConfigs</td><td>.digitalExperienceConfig</td></tr><tr><td>4</td><td>EventRelayConfig</td><td>eventRelays</td><td>.eventRelay</td></tr><tr><td>5</td><td>OauthOidcSettings</td><td>settings</td><td>.settings</td></tr></tbody></table>
 
-**Troubleshooting:**
-
-Ensure that your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in errors while accessing the Salesforce org in Version Control, CI Jobs, Deployment, or SFDX modules.Important Note:
-
-The following fields have been deprecated on the **NamedCredential** metadata type in API version 56.0. These fields are valid only when **namedCredentialType** is **null** or set to **Legacy**.
+{% hint style="info" %}
+**Important Note:** The following fields have been deprecated on the NamedCredential metadata type in API version 56.0. These fields are valid only when namedCredentialType is null or set to Legacy.
+{% endhint %}
 
 * authProvider
 * authTokenEndpointUrl

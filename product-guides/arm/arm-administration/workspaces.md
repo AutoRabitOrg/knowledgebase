@@ -17,20 +17,22 @@ This section describes how Org Administrators can manage existing workspaces wit
 To view the workspace:
 
 1. Log into your ARM account.
-2.  Hover your mouse over the **Admin** tab and click on **Workspaces**.
+2. Hover your mouse over the **Admin** tab and click on **Workspaces**.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613542405387.png" alt="" width="188"><figcaption></figcaption></figure>
-3.  The list of workspaces created/available to date will get listed on this page.
+<figure><img src="../../../.gitbook/assets/image (721).png" alt="" width="170"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613542492393.png" alt=""><figcaption></figcaption></figure>
+3. The list of workspaces created/available to date will get listed on this page.
+
+<figure><img src="../../../.gitbook/assets/image (722).png" alt=""><figcaption></figcaption></figure>
+
 4. Each workspace will have:
-   1. Workspace label
-   2. Date/time stamp for workspace created
-   3. Workspace allocated author detail
-   4. Repo and Branch details
-   5. Workspace status i.e., running or in idle state
-   6. The module on which the workspace has been allotted
-   7. Last used on along with the size consumed
+   * Workspace label
+   * Date/time stamp for workspace created
+   * Workspace allocated author detail
+   * Repo and Branch details
+   * Workspace status i.e., running or in idle state
+   * The module on which the workspace has been allotted
+   * Last used on along with the size consumed
 
 #### Reset a Workspace <a href="#reset-a-workspace" id="reset-a-workspace"></a>
 
@@ -39,7 +41,7 @@ You reset your workspace to return back to the default workspace settings for yo
 1. In the **Workspaces** tab, check for your workspace label and click on **Reset**.
 2. Upon your confirmation, the workspace gets reset to the default workspace for your user account.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613543615991.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure>
 
 #### Deleting a Workspace <a href="#deleting-a-workspace" id="deleting-a-workspace"></a>
 
@@ -51,9 +53,9 @@ An **Org Administrative** user can delete the workspaces of another user.
 **Important Note**: If you are unable to delete a workspace, it is because you lack the required permissions. The **Delete** option will no longer be available.
 {% endhint %}
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613543652658.png)
+<figure><img src="../../../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure>
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1618692124471.png)
+<figure><img src="../../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>
 
 Once confirmed, the workspace gets deleted.
 
@@ -63,9 +65,9 @@ Deleting inactive workspaces can free up resources for other users. Workspace **
 
 Click on the **Settings** button and specify the last date until all workspaces are cleared.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613543692142.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1618692634020.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (727).png" alt="" width="418"><figcaption></figcaption></figure>
 
 ### Workspace Configurations <a href="#workspace-configurations" id="workspace-configurations"></a>
 
@@ -75,4 +77,4 @@ The Super Admin needs to log in to ARM with super admin credentials and then nav
 
 Based on the user's org requirement/ subscription, the super admin will add additional workspace to the current org limit. The max size limit which can be increased is **1000 GB**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613543905665.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>

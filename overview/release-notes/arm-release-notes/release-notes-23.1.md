@@ -86,9 +86,18 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 26 June 2024
+
+**ARM 23.1.35**
+
+1. A data error reported in version 23.1 with the Version Control module that resulted in version control being deleted was resolved in both 23.1 and 24.1 through adding loggers. Support ticket #114503
+2. A use-case error reported in version 23.1 with the Version Control module in which the user was unable to use an existing conflicted file, which resulted in reraising merge requests, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #115084
+3. &#x20;A use-case error reported in version 23.1, which resulted in an issue with the Data Loader module in which the software was not inserting the correct record type, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #114076
+4. A use-case error reported in version 23.1 with the nCino module in which rollbacks were only partially being completed was resolved in both 23.1 and 24.1 through a code fix. Support ticket #115204
+
 #### 12 June 2024
 
-ARM 23.1.34
+**ARM 23.1.34**
 
 1. A code fix was performed due to a use-case error related to the CI Jobs module in which nCino CI Jobs were not triggered by metadata CI Jobs on success. Support ticket #113887
 2. A code fix was performed due to a use-case error related to the Version Control module in which the API response from CodeScan returned a page not found (404) error in ARM. Support tickets #108895,  #115120, #114434

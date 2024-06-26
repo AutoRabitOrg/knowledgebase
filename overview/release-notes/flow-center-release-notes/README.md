@@ -1,8 +1,10 @@
 # Flow Center Release Notes
 
-## The following Release Notes are available for Flow Center:
+The following Release Notes are available for Flow Center:
 
-[Release Notes 24.0.2](../)
+{% content-ref url="release-notes-24.0.md" %}
+[release-notes-24.0.md](release-notes-24.0.md)
+{% endcontent-ref %}
 
 &#x20;
 

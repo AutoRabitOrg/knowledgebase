@@ -53,3 +53,13 @@ Each widget now features a subtitle positioned under the DORA metrics pills. Thi
 #### Improved Widget Tooltips&#x20;
 
 The tooltips for widgets displaying combined data from multiple organizations now show a detailed breakdown of the data by organization. On hover, users can see the name of the area, the breakdown of data from each organization, and the total. This enhancement ensures consistent ordering of organizations across all widgets in a single dashboard and maintains text readability regardless of the background color.&#x20;
+
+
+
+## Release Notes 24.0.1 (Pilot)
+
+Flow Center is your Salesforce DevOps command and control center, presenting an oversight dashboard CIOs and CISOs can use to gain a high-level overview of projects as well as detailed drill-down components for team members and project managers. This tool enables you to view your projects, insights, dashboards, and pipelines in one comprehensive solution, streamlining operations and offering an integrated platform to simplify decision-making. From giving team members a holistic overview of projects to presenting CIOs and CISOs with data insights, the dashboards allow teams to visualize both in-depth, component-level details as well as the overall progress of each release in your pipeline.
+
+### Notes on the Flow Center Pilot
+
+This Pilot release of Flow Center is intentionally thin on functionality. Our goal is to introduce and get early feedback on the concepts and organization before making a fuller set of capabilities available.

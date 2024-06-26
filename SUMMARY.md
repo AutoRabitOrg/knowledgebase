@@ -42,6 +42,8 @@
     * [Release Notes 22.3](overview/release-notes/ncino-release-notes/release-notes-22.3.md)
   * [Vault Release Notes](overview/release-notes/vault-release-notes.md)
   * [Flow Center Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)
+  * [Flow Center Release Notes](overview/release-notes/flow-center-release-notes/README.md)
+    * [Release Notes 24.0](overview/release-notes/flow-center-release-notes/release-notes-24.0.md)
 
 ## Fundamentals
 

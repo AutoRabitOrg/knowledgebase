@@ -12,8 +12,8 @@ Here, you'll find detailed release notes that provide insights into new features
 [codescan-release-notes](codescan-release-notes/)
 {% endcontent-ref %}
 
-{% content-ref url="vault-release-notes/" %}
-[vault-release-notes](vault-release-notes/)
+{% content-ref url="vault-release-notes.md" %}
+[vault-release-notes.md](vault-release-notes.md)
 {% endcontent-ref %}
 
 {% content-ref url="ncino-release-notes/" %}

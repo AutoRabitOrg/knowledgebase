@@ -42,6 +42,18 @@ This update improves the tool's efficiency and responsiveness and leverages new 
 
 The following weekly fixes were implemented.
 
+#### 26 June 2024
+
+**ARM 24.1.2**
+
+1. A data error reported in version 23.1 with the Version Control module that resulted in version control being deleted was resolved in both 23.1 and 24.1 through adding loggers. Support ticket #114503
+2. A use-case error reported in version 23.1 with the Version Control module in which the user was unable to use an existing conflicted file, which resulted in reraising merge requests, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #115084
+3. &#x20;A use-case error reported in version 23.1, which resulted in an issue with the Data Loader module in which the software was not inserting the correct record type, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #114076
+4. A use-case error reported in version 23.1 with the nCino module in which rollbacks were only partially being completed was resolved in both 23.1 and 24.1 through a code fix. Support ticket #115204
+5. A use-case error in version 24.1 with the Version Control module in which commits were remaining in progress was resolved through a code fix. Support ticket #115691
+6. A use-case error in version 24.1 with the Version Control module with commit CI Job deployment errors was resolved in 24.1 through a code fix. Support ticket #115817
+7. A use-case error reported in version 24.1 required an update to the Admin module to properly reflect X rather than Twitter along with revised copyright information, which was resolved through a code fix. Support ticket #115756
+
 #### 23 June 2024
 
 ARM 24.1.1

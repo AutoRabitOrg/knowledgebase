@@ -23,3 +23,5 @@ Each issue has one of five severities:
 3. `MAJOR:` A quality flaw that can highly impact the developer's productivity. An uncovered piece of code, duplicated blocks, or unused parameters are examples of MAJOR issues.
 4. `MINOR:` A quality flaw that can slightly impact the developer's productivity. For example, lines should not be too long, and "switch" statements should have at least 3 cases, are both be considered MINOR issues.
 5. `INFO:` Neither a bug nor a quality flaw, just a finding.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-06-26 at 8.49.55 AM.png" alt=""><figcaption></figcaption></figure>

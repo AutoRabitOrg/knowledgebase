@@ -20,6 +20,10 @@ Here, you'll find detailed release notes that provide insights into new features
 [ncino-release-notes](ncino-release-notes/)
 {% endcontent-ref %}
 
+{% content-ref url="flow-center-release-notes/" %}
+[flow-center-release-notes](flow-center-release-notes/)
+{% endcontent-ref %}
+
 By staying tuned to this page, you'll gain a deeper understanding of how our products are evolving to meet your needs and the changing landscape of software development. From small adjustments to major overhauls, every update is documented here to ensure you have all the information you need at your fingertips.
 
 Whether you're a new user learning the ropes or an experienced customer seeking to optimize your use of our products, our Release Notes page is an invaluable tool for staying up-to-date with AutoRABIT's dynamic suite of solutions.

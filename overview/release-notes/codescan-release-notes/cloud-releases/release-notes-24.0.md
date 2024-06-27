@@ -94,7 +94,21 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 #### 27 June 2024
 
-Changes were required to support fixes and enhancements of the VSCode CodeScan Plugin (v2.0.3) to VSCode Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.
+**v. 2.0.3**
+
+Changes were required to support fixes and enhancements of the **VSCode CodeScan Plugin (v2.0.3)** to VSCode Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.
+
+
+
+**13 June 2024**
+
+**v. 2.0.2** &#x20;
+
+New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review. You can click on the specific _Type_ or _Severity_ to only see issues of that type.
+
+<figure><img src="../../../../.gitbook/assets/image (567).png" alt=""><figcaption></figcaption></figure>
+
+The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
 
 
 

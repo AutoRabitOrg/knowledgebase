@@ -10,14 +10,10 @@
     _For example: 2021-03-14T1000:00_
   * **maxResults**=**1000** (optional, default value is 1000)
   * **eventType**=**event1, event2** (this is optional, however, if not specified it will load all the events)\
-    _For example: eventType=DEPLOYMENT, DATALOADERPRO will load events for DEPLOYMENT and DATALOADERPRO respectively._\
-    \
-
+    _For example: eventType=DEPLOYMENT, DATALOADERPRO will load events for DEPLOYMENT and DATALOADERPRO respectively._
 * **Request Headers**:
   * **Content-Type**: application/json
   * **Authorization**: Your Bearer token
-
-***
 
 ### Obtaining your Access Token <a href="#obtaining-your-access-token" id="obtaining-your-access-token"></a>
 
@@ -95,12 +91,12 @@ This guide provides information on how to use the Audit Logs Retrieval API to vi
 
 #### Query String Parameters
 
-* `startTime` (optional): The start time for the audit logs in ISO 8601 format (YYYY-MM-DDThh:mm:ss). If not specified, the current day's logs are presumed.
-  * **Example:** `2021-03-14T10:00:00`
-* `maxResults` (optional): The maximum number of results to return. Default value is 1000.
-  * **Example:** `maxResults=1000`
-* `eventType` (optional): A comma-separated list of event types to filter the logs. If not specified, all event types are loaded.
-  * **Example:** `eventType=DEPLOYMENT,DATALOADERPRO`
+1. `startTime` (optional): The start time for the audit logs in ISO 8601 format (YYYY-MM-DDThh:mm:ss). If not specified, the current day's logs are presumed.
+   * **Example:** `2021-03-14T10:00:00`
+2. `maxResults` (optional): The maximum number of results to return. Default value is 1000.
+   * **Example:** `maxResults=1000`
+3. `eventType` (optional): A comma-separated list of event types to filter the logs. If not specified, all event types are loaded.
+   * **Example:** `eventType=DEPLOYMENT,DATALOADERPRO`
 
 #### Example Request
 
@@ -109,8 +105,6 @@ This guide provides information on how to use the Audit Logs Retrieval API to vi
 #### Response
 
 The response will contain the audit logs based on the specified parameters.
-
-***
 
 ### Downloading Audit Logs
 
@@ -127,7 +121,7 @@ The response will contain the audit logs based on the specified parameters.
 
 `curl --location '<https://<domain>>/logs/audit_logs/download?startTime=2021-03-14T10:00:00&endTime=2021-03-20T10:00:00' \ --header 'Content-Type: application/json' \ --header 'Authorization: Bearer <bearer token>'`
 
-#### Notes
+#### Notes:
 
 * If only the `startTime` is provided, logs are retrieved up to the current day.
 * The date range (from `startTime` to `endTime` or the current day) must be within 90 days.

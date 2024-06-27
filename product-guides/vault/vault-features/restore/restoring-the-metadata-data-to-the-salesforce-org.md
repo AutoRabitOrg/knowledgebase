@@ -15,28 +15,28 @@ This article discusses the procedure for restoring metadata and data to your Sal
 1. Login to your Vault account.
 2. Click **`Restore`** from the Vault dashboard page and click on **`Restore Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, select your source [**`Salesforce Org`**](../../configuring-vault/registering-salesforce-org/).
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Next, select the **`restore source`** and its **`configuration`** from the drop-down.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **`Get Details`**.
 6.  The configured list will be displayed based on the restore source and configuration selection.
 
     * To restore the **source** as **`backup`**, select multiple backups for restoration.
 
-    <figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * For **`hierarchical backup`** and **`archival`**, you can choose only one from the list.
 
-    <figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Click on either **`EZ Restore`** or **`Selective Restore`**.Important Note:Restore Source as **`nCino features`** will be displayed only for Salesforce Orgs configured with nCino objects. For detailed nCino restore features, refer to the article: [nCino Restore Features](../knowledge-articles/ncino/restoring-ncino-features.md).
 
 #### EZ-Restore <a href="#ezrestore" id="ezrestore"></a>

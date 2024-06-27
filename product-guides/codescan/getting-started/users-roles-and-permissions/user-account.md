@@ -4,7 +4,7 @@
 
 As a CodeScan user, you have your own space where you can see the things that are relevant to you. View your personal space under **`My Account`** page.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Profile <a href="#profile" id="profile"></a>
 
@@ -15,13 +15,13 @@ It gives you a summary of your:
 * Groups
 * SCM accounts
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
 
 #### Security <a href="#security" id="security"></a>
 
 Manage your own authentication tokens in this section. You can create as many tokens as you want. Once a Token is created, you can use it to perform analysis on a project where you have **Execute Analysis** permission.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="500"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="500"><figcaption></figcaption></figure>
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -32,7 +32,7 @@ Email notifications are managed here. It is possible to define your overall noti
 * New quality gate status
 * My new issues
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**
@@ -46,7 +46,7 @@ Email notifications are managed here. It is possible to define your overall noti
 
 To receive CodeScan cloud new features notification, select the **`Activate`** checkbox. By default, email notifications are turned on to receive new features updates.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 **Adding Notifications to a Project**
 
@@ -55,10 +55,10 @@ To add notifications per project, select **`Add a Project`** and **`Search`** a 
 * Issues resolved as false positive or won't fix
 * New issues
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 #### Projects <a href="#projects" id="projects"></a>
 
 The **`Projects`** tab lists all of the projects you are administering. You can select a project from here for full access.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="527"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt="" width="527"><figcaption></figcaption></figure>

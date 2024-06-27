@@ -8,7 +8,7 @@ Follow the steps below to Sign Up and Log In to CodeScan Cloud:
 
 1. To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/).
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. By default, the instance URL is presumed to be from the **United States (US)**, and the URL would look something like [**`https://app.codescan.io/sessions/new?return to=/%2F`**](https://app.codescan.io/sessions/new?returnto=/%2F).
 
@@ -20,7 +20,7 @@ Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/ses
 3. Click on **`Log in with AuthO`**.
 4. Go to the **`Sign Up`** tab.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt="" width="279"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="279"><figcaption></figcaption></figure>
 
 5. On the next screen, enter the following details to sign up for CodeScan:
    * **`Email address`**: Enter a valid email address.
@@ -48,7 +48,7 @@ CodeScan offers 2FA to further support account privacy and security. This docume
 
 1. When you [sign up to CodeScan cloud](https://knowledgebase.autorabit.com/codescan/docs/codescan-getting-started#signing-up-with-codescan), you can enable two-factor authentication by selecting the **`Require Two-Factor Authentication`** checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in all the details and click on **`Sign Up`** button.
 3. Download the authenticator app on your mobile phone. Once you have downloaded the app, select **`I’ve already downloaded it`** to continue.
@@ -56,11 +56,11 @@ CodeScan offers 2FA to further support account privacy and security. This docume
 
     * A **token** is generated and available on the screen for you to **copy** and **save**.
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Click the **checkbox** next to **`I have safely recorded this code`** to confirm you have recorded it and continue.
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **And you have set your 2FA!!**
 
@@ -72,7 +72,7 @@ The CodeScan login screen allows you to log in to your instance.
 2. The CodeScan login screen appears.
 3. You can **`Login with AuthO`** or **`Log in with SAML2`** if enabled or you can click on **`More options`** to enter your login credentials (_username_ and _password_).
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click on **`Log in`**.
 
@@ -82,13 +82,13 @@ The CodeScan login screen allows you to log in to your instance.
 
 5. The CodeScan welcome screen appear.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt="" width="543"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png" alt="" width="543"><figcaption></figcaption></figure>
 
 6. If you choose **`Application Security Testing`**, you will be taken to the **Projects** page, which will be your default homepage. As a result, the next time you log in to CodeScan, you will be instantly directed to the **Projects** page because it is set as the default page.
 7. Similarly, if you choose **`Policy Management`**, the **Policy Results** screen will be set as your default homepage.
 8. The **`Policy Results`** page is also accessible via the **`More`** menu.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Getting Started with CodeScan Cloud <a href="#getting-started-with-codescan-cloud" id="getting-started-with-codescan-cloud"></a>
 

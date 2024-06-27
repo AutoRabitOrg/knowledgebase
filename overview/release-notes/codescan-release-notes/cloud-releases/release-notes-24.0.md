@@ -90,6 +90,12 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-06-01 at 9.25.18 AM.png" alt=""><figcaption></figcaption></figure>
 
+### Changelogs
+
+#### 27 June 2024
+
+Changes were required to support fixes and enhancements of the VSCode CodeScan Plugin (v2.0.3) to VSCode Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.
+
 
 
 ***

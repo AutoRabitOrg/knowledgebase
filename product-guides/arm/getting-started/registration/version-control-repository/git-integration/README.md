@@ -16,7 +16,7 @@ Before registering Git with ARM, you must check off some of the boxes on the pre
 
 1. Ensure you enable the **`GIT`** plugin under **`Plugins`** in the **`My Account`** section to use GIT for version control.
 
-<figure><img src="../../../../../../.gitbook/assets/image (37) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (37) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. You must have a GitHub account. If you don’t already have a GitHub account, you can create one at [github.com](https://github.com/). Once you have a GitHub account, you can create a new repository or use an existing one.
 3. You must have permission to register a repository.
@@ -30,13 +30,13 @@ This is an initial step in storing your user's credentials (usually a username, 
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
 3. Next, click on **`Create Credential`** from the right navigation bar.
 
-<figure><img src="../../../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (38) (2).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **`Credential name`**.
 5. Choose the **`Credential Type`** as **`Username With Password.`**
 6. Enter your GitHub **`Username`** and **API Token** (in the **`Password`** field), and we will store this encrypted. GitHub no longer supports basic authentication using passwords. You must now authenticate to GitHub with an API token instead. For more information on how to create an API token, see the **Troubleshooting** section on this page.
 
-<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (39) (2).png" alt="" width="416"><figcaption></figcaption></figure>
 
 7. Click **`Save`**.
 
@@ -47,15 +47,15 @@ To set up a GIT repository, ensure an account is created and configured at [GIT]
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on **`VC Repo's`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (40).png" alt="" width="428"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (40) (2).png" alt="" width="428"><figcaption></figcaption></figure>
 
 3. Click on **`Register Repository`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (41).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (41) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Select the **`Version Control System`** as **`GIT`** on the **`Register Repository`** page.
 
-<figure><img src="../../../../../../.gitbook/assets/image (42).png" alt="" width="412"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (42) (2).png" alt="" width="412"><figcaption></figcaption></figure>
 
 5. Select the **AWS CodeCommit Repository** checkbox. ARM fetches data from the repository if the GIT gets hosted on **AWS (Amazon Web Services)**.
 6. Enter the name of the repository to display it locally.
@@ -84,23 +84,23 @@ This section guides you through creating your personal access token directly on 
 1. Log in to your GitHub account.
 2. In the upper-right corner of any page, click your profile photo, then click **`Settings`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (43).png" alt="" width="205"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (43) (2).png" alt="" width="205"><figcaption></figcaption></figure>
 
 3. In the left sidebar, click **`Developer settings`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (44).png" alt="" width="225"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (44) (2).png" alt="" width="225"><figcaption></figcaption></figure>
 
 4. In the left sidebar, click **`Personal access tokens`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (45).png" alt="" width="221"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (45) (2).png" alt="" width="221"><figcaption></figcaption></figure>
 
 5. Click **`Generate new token`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (46) (2).png" alt=""><figcaption></figcaption></figure>
 
 6. Give your token a descriptive name.
 
-<figure><img src="../../../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (47) (2).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the scopes or permissions you want to grant this token. Select **`repo`** to use your token to access repositories from the command line.
 

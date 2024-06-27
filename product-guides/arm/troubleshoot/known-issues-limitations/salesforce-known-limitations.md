@@ -16,26 +16,25 @@ This article summarizes Salesforce's known issues and limitations that AutoRABIT
 6. A report with multiple subfolders was created by the user in Salesforce, and this report was subsequently added to **Skip Members** in ARM. Next, a job was created and the **Do Not Include Skip Members** check box was selected. After the job was finished, it was discovered that the report had not been skipped as anticipated. Analysis revealed that Salesforce is not displaying information about the parent folder. So, ARM cannot retrieve the right file path for the reports contained in the sub-folders.
 
 {% hint style="info" %}
-Important Notes:
+**Important Notes:**
 
 * This issue exists both for **CI Jobs** as well as **Deployments**, in **DX Repo** and **Non-DX Repo.**
 * Jobs with skipped reports without any subfolders are working as expected.
 {% endhint %}
 
-1. It is not possible to deploy the removal of **Field dependency** values from one org to another because **Field Dependencies** cannot be removed via **Metadata API**. This is expected behavior and a known limitation from Salesforce.\
+7. It is not possible to deploy the removal of **Field dependency** values from one org to another because **Field Dependencies** cannot be removed via **Metadata API**. This is expected behavior and a known limitation from Salesforce.\
    **Reference:** [https://developer.salesforce.com/docs/atlas.enus.api\_meta.meta/api\_meta/meta\_field\_types.htm#meta\_type\_valueset](https://developer.salesforce.com/docs/atlas.enus.api\_meta.meta/api\_meta/meta\_field\_types.htm#meta\_type\_valueset)
-2. A deployment in ARM might fail with the following error: **\`UNKNOWN\_EXCEPTION: An unexpected error occurred. Please include this ErrorId if you contact support.\`** This API exception is thrown by Salesforce and not by AutoRABIT. We don't have any more information about these errors. Please get in touch with **Salesforce Customer Support** and provide them with the deployment **Async Request ID** and the error message for further assistance.
-3.  If the **Flow Entry** criteria formulas are failing to **Commit/Deploy**, we recommend updating the **Salesforce API** **version** to **55.0** or later in ARM, then re-perform the commit/deployment, because the entry-related attributes for the **Flow** metadata were introduced in the **API version 55.0**.\
-    Here's a list of the entry attributes only present in **API 55.0** from Flow metadata documentation:\
+8. A deployment in ARM might fail with the following error: **\`UNKNOWN\_EXCEPTION: An unexpected error occurred. Please include this ErrorId if you contact support.\`** This API exception is thrown by Salesforce and not by AutoRABIT. We don't have any more information about these errors. Please get in touch with **Salesforce Customer Support** and provide them with the deployment **Async Request ID** and the error message for further assistance.
+9. If the **Flow Entry** criteria formulas are failing to **Commit/Deploy**, we recommend updating the **Salesforce API** **version** to **55.0** or later in ARM, then re-perform the commit/deployment, because the entry-related attributes for the **Flow** metadata were introduced in the **API version 55.0**.\
+   Here's a list of the entry attributes only present in **API 55.0** from Flow metadata documentation:
 
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1685594552962.png" alt=""><figcaption></figcaption></figure>
-4.  **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm)
+10. **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm)
 
-    To update the Salesforce API version, go to **Admin** > **My Account** > **Salesforce Settings**.\
+    To update the Salesforce API version, go to **Admin** > **My Account** > **Salesforce Settings**.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1685595241903.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Version Control <a href="#version-control" id="version-control"></a>
 

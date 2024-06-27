@@ -14,11 +14,11 @@ Deployment via revision range is all about deploying the codes based on a range 
 
 **For example,** to deploy the below-mentioned commit revisions to your target org;
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1625493245286.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Choose the **From Revision Date** as **a1022af** and the **To Date** as **d86165a** while you're carrying out the deployment via revision range.
 
-![Deployment Details](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1625493443289.png)
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 **Changes on Custom Object**
 

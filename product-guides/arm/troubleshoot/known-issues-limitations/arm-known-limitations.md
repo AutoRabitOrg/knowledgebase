@@ -67,10 +67,10 @@ This section summarizes the Version control limits that ARM users should conside
 6. If the **meta-XML** file does not exist in the destination branch and is available in the source branch, then the meta-XML file is copied from the source banch to the destination branch, before committing to the remote repository. The newly added meta-XML file will be added to the files list and will be committed to the remote repository and will also be added to **Validate Deployment** package.
 7. AutoRABIT stores the static code analysis source content for **90 days**, post 90 days, the report will auto-deleted.
 8. For those PMD/lint report which was generated before **ARM 19.2.1** release, those source content file will not be seen in the static analysis report.
-9.  For the **Dry Run** merge operation, if a user submits an already merged revision, then the **'Empty Commit Exception'** message gets displayed. See the image below.\
+9. For the **Dry Run** merge operation, if a user submits an already merged revision, then the **'Empty Commit Exception'** message gets displayed. See the image below.
 
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(106).png" alt="" width="563"><figcaption></figcaption></figure>
 10. Users with the **Merge Review Overridable** role also can approve the commit although he does not qualify to do so. In such a scenario, a notification alert mail gets triggered to the email id(s) as configured in **My Account > Merge Settings** page.
 11. While resolving merge conflict files via Inline Editor, a situation may arise where the files that you are trying to resolve are improperly resolved. This can lead to the malformation of the conflicted files. To resolve those, you need to download the file locally, work on the conflicted files using your merge tool and make necessary changes to it. Then upload the same.
 12. You are allowed to manually edit and correct the code using the Inline Editor only if there are some merge conflicts. When there are no conflicts, editing is not permitted.
@@ -81,9 +81,9 @@ This section summarizes the Version control limits that ARM users should conside
 
 When trying to get the list of commits labels committed from the merge process for your SFDX repository and choosing your package directory, the commit labels result may differ from the actual one. No outcome can be found in some situations. It is therefore recommended to search for commit labels keeping the **Package Directory** as **ALL** until the root cause of the problem is identified.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(108\).png)
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image\(109\).png)
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 #### For Pull Request <a href="#for-pull-request" id="for-pull-request"></a>
 
@@ -134,10 +134,9 @@ Below are the limitations of ARM related to salesforce dx:
 ```
 
 3. **For ALM configured CI jobs:** The metadata members which are associated with the revision of a merged label will be included in the build. If the user has enabled the rollback option while configuring their CI jobs, the ALM work items status will get updated once the deployment is successful. However, if the user would like to rollback the same deployment, the ALM work items status remains unchanged.
-4.  The below points highlight the limitation for those CI jobs in which post-deployment activities are configured.\
+4.  The below points highlight the limitation for those CI jobs in which post-deployment activities are configured.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(112).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (17).png" alt="" width="459"><figcaption></figcaption></figure>
 
     * Currently, workflow sequence is not supported as a post-deployment action for **"Run Skuid Pages"**
     * While carrying out the post-deployment workflow, make sure no manual effort has interfered.
@@ -152,29 +151,27 @@ Below are the limitations of ARM related to salesforce dx:
 
     However, for the SFDX and vlocity jobs, users will not get notified of any failed revisions.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-XNQBOYJP.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
 6. Code coverage results during the CI job come from any tests you've run from the AutoRABIT application, however, you will be able to view the report only if the code coverage is more than **0%**.
 7. For CI Jobs builds that are more than 30 days old, **deployment/ quick deployment/ rollback reports** will not be accessible.
 8. **DX deploy** - We are considering the constructive changes deployment status for updating the ALM status, but not for pre/post destructive deployment.
 9. For Validate deployments and Quick Deployment, we will not update the ALM statues.
-10. **Internet Explorer (IE)** is no longer supported as a **Test Browser** to **Run Test Automation Scripts** when creating CI jobs. The IE icon/checkbox has been disabled. The Firefox and the Chrome browser are still supported.\
+10. **Internet Explorer (IE)** is no longer supported as a **Test Browser** to **Run Test Automation Scripts** when creating CI jobs. The IE icon/checkbox has been disabled. The Firefox and the Chrome browser are still supported.
 
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt="" width="536"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-EUQX7SHP.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20).png" alt="" width="563"><figcaption></figcaption></figure>
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-JJEX8LC4.png)
+The **Test Results** will not show any test scripts configured to run with the IE browser. However, the **Total Tests** in the report will include the IE tests. This may cause a discrepancy between the number of tests shown and the tests listed.
 
-The **Test Results** will not show any test scripts configured to run with the IE browser. However, the **Total Tests** in the report will include the IE tests. This may cause a discrepancy between the number of tests shown and the tests listed.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-25OOBF3P.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ### TAF Known Limitations <a href="#taf-known-limitations" id="taf-known-limitations"></a>
 
-1.  ARM is unable to load the log files for any job using the **View Log** option in the report. Instead, an error _No log file found_ appears where the logs should be.\
+ARM is unable to load the log files for any job using the **View Log** option in the report. Instead, an error _No log file found_ appears where the logs should be.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-O7D03HLJ.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Vlocity Known Limitations <a href="#vlocity-known-limitations" id="vlocity-known-limitations"></a>
 
@@ -183,20 +180,17 @@ The **Test Results** will not show any test scripts configured to run with the I
 3. Vlocity commits remain in an in-progress state for a longer time: This may occur if your org storage limit has been reached. To avoid this, it's better to clean up your unwanted data from your org and re-trigger the vlocity commit once again.
 4. AutoRABIT supports the below YAML file structures while uploading the YAML file manually during EZ- Commit operation.
 
-**Structure 1**\
+**Structure 1**
 
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(116).png" alt=""><figcaption></figcaption></figure>
+**Structure 2**
 
-**Structure 2**\
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt="" width="498"><figcaption></figcaption></figure>
 
+**Structure 3**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(117).png" alt="" width="563"><figcaption></figcaption></figure>
-
-**Structure 3**\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image(118).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
@@ -204,5 +198,3 @@ The **Test Results** will not show any test scripts configured to run with the I
 * Structure 1 and Structure 2 can be combined and used together in a single YAML file.
 * Structure 3 must be used independently and never be combined with other structures in a single YAML file.
 {% endhint %}
-
-***

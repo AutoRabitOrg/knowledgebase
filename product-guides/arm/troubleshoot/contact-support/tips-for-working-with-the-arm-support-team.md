@@ -10,8 +10,4 @@ Generally, we prefer separate issues to be reported via separate conversations. 
 
 ## **Ad-hoc training**
 
-We encourage each of our customers to access the [AutoRABIT Academy](https://academy.autorabit.com/) / [Help Center](https://knowledgebase.autorabit.com/) regularly as we continually refine and expand the training and help materials available there. If you need additional training on parts of the platform, you can arrange it through your Customer Success Manager. We are happy to help you identify how to utilize the platform better.
-
-***
-
-\
+We encourage each of our customers to access the [AutoRABIT LearningHub](https://learninghub.autorabit.com/s/) / [Help Center](https://knowledgebase.autorabit.com/) regularly as we continually refine and expand the training and help materials available there. If you need additional training on parts of the platform, you can arrange it through your Customer Success Manager. We are happy to help you identify how to utilize the platform better.

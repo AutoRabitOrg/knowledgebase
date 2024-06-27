@@ -6,16 +6,15 @@ Translation feature can help you translate almost everything in your organizatio
 
 In order to translate custom objects for a variety of languages, you need to commit the following components.
 
-1.  Select the `CustomObject` metadata type and select the specific custom objects that you want to move the translation.\
+1. Select the `CustomObject` metadata type and select the specific custom objects that you want to move the translation.
 
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-LAK0RMNM.png" alt=""><figcaption></figcaption></figure>
-2.  Select the `CustomObjectTranslation` metadata type and select the translations associated with the custom object.\
+2. Select the `CustomObjectTranslation` metadata type and select the translations associated with the custom object.
 
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-NZW709NL.png" alt=""><figcaption></figcaption></figure>
-
-Point to Note:
+**Point to Note:**
 
 * The translation will not take place and nothing will be retrieved if you merely use the `CustomObjectTranslation` metadata type and leave out the `Custom Object`.
 * The translation should be activated for the custom object in the destination org.
@@ -24,16 +23,15 @@ Point to Note:
 
 To commit and deploy custom field translations with ARM, you need to commit the following components.
 
-1.  Select the `CustomField` metadata type and select the specific custom fields that you want to move the translation.\
+1. Select the `CustomField` metadata type and select the specific custom fields that you want to move the translation.
 
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-5OB9T44G.png" alt=""><figcaption></figcaption></figure>
-2.  Select the metadata type `CustomObjectTranslation` and select the members associated with the custom object.\
+2. Select the metadata type `CustomObjectTranslation` and select the members associated with the custom object.
 
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-ZAG3WXLH.png" alt=""><figcaption></figcaption></figure>
-
-Troubleshooting:
+**Troubleshooting:**
 
 In some circumstances, the `CustomObjectTranslation` might just have the opening and closing xml tags. In this situation, we advise you to do a commit while selecting the **Review Artifacts** option, allowing you to inspect the contents of the files before committing them.
 
@@ -43,14 +41,13 @@ Translations for custom labels determine what text to display for the label’s 
 
 To commit or deploy custom label translations with ARM, you need to commit the following components.
 
-1.  Select the name of the custom label you want to translate available under the `CustomLabel` metadata type.\
+1. Select the name of the custom label you want to translate available under the `CustomLabel` metadata type.
 
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-IPPPUXNF.png" alt=""><figcaption></figcaption></figure>
-2.  Look for the `Translation` metadata type and select the language from the list.\
+2. Look for the `Translation` metadata type and select the language from the list.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-0BDZ9TRZ.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### D. Commit and Deploy 'Field Set' Translations with ARM <a href="#d-commit-and-deploy-field-set-translations-with-arm" id="d-commit-and-deploy-field-set-translations-with-arm"></a>
 
@@ -58,14 +55,13 @@ A field set is a group of different fields. For example, a field set that contai
 
 In order to commit and deploy field set translations with ARM, you need to commit the following components.
 
-1.  Select the `FieldSet` metadata type and select the specific field set(s) that you want to move the translation.\
+1. Select the `FieldSet` metadata type and select the specific field set(s) that you want to move the translation.
 
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QLG6S8O7.png" alt=""><figcaption></figcaption></figure>
-2.  Select the metadata type `Translations` and select the language you want the translations to be moved. This deploy the field sets along with the translations for the language selected.\
+2. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploy the field sets along with the translations for the language selected.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-LR3JEM2U.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### E. Commit and Deploy 'Standard Value Set' Translations with ARM <a href="#e-commit-and-deploy-standard-value-set-translations-with-arm" id="e-commit-and-deploy-standard-value-set-translations-with-arm"></a>
 

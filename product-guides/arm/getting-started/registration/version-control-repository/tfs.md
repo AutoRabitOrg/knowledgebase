@@ -7,7 +7,7 @@ This section guides you to register the TFS repository in ARM.
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and select the option: **`VC Repos`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (17).png" alt="" width="285"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (3).png" alt="" width="285"><figcaption></figcaption></figure>
 
 3. Click on **`Register Repository`**.
 4. Select the **`Version Control System`** as TFS on the **`Register Repository`** page.

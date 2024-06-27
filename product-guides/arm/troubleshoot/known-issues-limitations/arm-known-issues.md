@@ -30,12 +30,10 @@ Let's assume **Branch 1** has workflow components, _workflow 1_ and _workflow 2_
 If _workflow 1_ and _workflow 2_ are deleted from **Branch 2**, and merge is done from **Branch 2** to **Branch 1** with **Run Destructive Changes** checkbox selected, EZ-Merge prevalidation will fail with error: `Cannot delete <metadata_type>; <metadata_components> must be deleted individually.`\
 This happens because the deleted workflow details are not retained in the application for validation.
 
-**Sample image attached:**\
+**Sample image attached:**
 
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VRDT6QSY.png" alt=""><figcaption></figcaption></figure>
+**Workaround:** If you see the aforementioned issue, please avoid selecting the **Run Destructive Changes** checkbox under the **Prevalidate Merge** section.
 
-**Workaround:** If you see the aforementioned issue, please avoid selecting the **Run Destructive Changes** checkbox under the **Prevalidate Merge** section.\
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-UDI72B9B.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt="" width="563"><figcaption></figcaption></figure>

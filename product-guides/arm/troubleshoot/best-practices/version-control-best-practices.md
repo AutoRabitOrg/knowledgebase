@@ -11,13 +11,13 @@
 
 1. Ensure that your scheduled CI jobs are evenly spread in a day to avoid delays. This helps in reducing the time to run a CI job and it is also especially useful in a SAAS environment as it reduces the load on the application as well.
 2. To avoid unnecessary fetching of metadata types while executing a CI job, ensure that you have excluded them.
-   1. To set this option at a global level, go to the My Salesforce Settings section in the My Account page under the Admin module and select the metadata types to exclude. This reflects in all CI jobs that are created henceforth and globally across other modules as well.
-   2. To restrict this to a specific CI job select the Exclude Metadata Types under the BUILD section and choose the metadata types exclusively.
+   * To set this option at a global level, go to the My Salesforce Settings section in the My Account page under the Admin module and select the metadata types to exclude. This reflects in all CI jobs that are created henceforth and globally across other modules as well.
+   * To restrict this to a specific CI job select the Exclude Metadata Types under the BUILD section and choose the metadata types exclusively.
 3. Ensure that **Remove Login IP Ranges** under the **Additional Profile Packaging Options** are selected in the **Build** section while creating new CI Jobs. This will help to avoid overriding whitelisted IP ranges to access Salesforce orgs.
 4. Incremental Build is always recommended over Full Build
-   1. As it deploys only delta changes (avoids redundant deployments on unchanged metadata components)
-   2. The chance of reaching governor limits with the full build is avoided
-   3. Skips the build initiation process if there are no metadata changes.
+   * As it deploys only delta changes (avoids redundant deployments on unchanged metadata components)
+   * The chance of reaching governor limits with the full build is avoided
+   * Skips the build initiation process if there are no metadata changes.
 5. Always select the **Prepare Destructive changes** in the **Build** section and **Run Destructive Changes** in the **Deploy** section to automatically delete metadata members from the destination based on the latest changes (to reflect deletion of metadata components) in a specific branch commit history.
 6. If you need to fetch only changes from a specific revision, then it is recommended to set the **Baseline revision** while creating a CI job or else all changes are fetched from base revision till head revision. **For ex-**If you set the **Baseline revision** to 9, then all changes from revision 10 till the head revision are fetched.
 

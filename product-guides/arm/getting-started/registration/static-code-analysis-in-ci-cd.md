@@ -137,7 +137,7 @@ For example, when you use the Apex PMD rule during a scan, you have to give it P
 
 Other SCA tools should also follow the same procedures; however, the fields may differ from those for ApexPMD.
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt="" width="557"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (3).png" alt="" width="557"><figcaption></figcaption></figure>
 
 ### 5. Running SCA in CI Job <a href="#id-5-running-sca-in-ci-job" id="id-5-running-sca-in-ci-job"></a>
 
@@ -190,7 +190,7 @@ This option is only available for the following CI jobs:
 
 ARM allows you to set the validation criteria to enforce SCA tools while performing EZ-Commits. You can find the option to set the commit validation criteria for your SCA under the **Admin > My Account > Commit Validation – Approval Settings** section.
 
-<figure><img src="../../../../.gitbook/assets/image (34).png" alt="" width="300"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34) (3).png" alt="" width="300"><figcaption></figcaption></figure>
 
 Select the **Enable criteria-based review process** checkbox, and then select the **Should pass validation criteria for Static Code Analysis** checkbox to reveal all the SCA tools. You can choose one or more, or all the tools, to run your code through.
 
@@ -202,7 +202,7 @@ With the **Auto-approve on commit validation** and **Auto-commit on approval** c
 
 You can choose an SCA tool to detect bugs, code smells, and security vulnerabilities on the **Deployment Settings** screen before the deployment begins.
 
-<figure><img src="../../../../.gitbook/assets/image (35).png" alt="" width="311"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35) (3).png" alt="" width="311"><figcaption></figcaption></figure>
 
 ARM stores the Static Code Analysis source content for 90 days. The report is deleted automatically after 90 days. For PMD reports generated less than 90 days before, the source content files are not shown in the Static Code Analysis report.
 
@@ -218,7 +218,7 @@ You can also select one or more recipients to alert under the **SCA Mail Notific
 
 You can select the static code analysis tool on the **New EZ-Merge** page as part of a pre-validation merge before merging to your target branch.
 
-<figure><img src="../../../../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Run Static Code Analysis:** Select this checkbox if you want to run a Static Code Analysis tool to identify potential software quality issues before the code moves to production. Like **Generate Diff Report**, this checkbox is selected by default if the criteria are set globally under the **My Account > Commit Validation – Approval Settings** section.
 

@@ -16,11 +16,11 @@ Components are retrieved and committed from a Salesforce org to a version contro
 1. Log into your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on **`Branching Baseline`**.
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt="" width="217"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (3).png" alt="" width="217"><figcaption></figcaption></figure>
 
 3. From the **`Branching Baseline`** screen, click on **`New Branching Baseline`**.
 
-<figure><img src="../../../../.gitbook/assets/image (26).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4.  The **`Branching Baseline`** screen appears where you need to fill in the details listed below:
 
@@ -28,7 +28,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
     * Select your **`Salesforce Org`** as the source of the commit.
     * Select your **`Repository`** and **`Branch`** to which you like to commit code.
 
-    <figure><img src="../../../../.gitbook/assets/image (27).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (27) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: For Version Control registered in the **SFDX** structure, specify the **Source Folder** from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the **Package Directory** under the **sfdx-project.json** file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](../../salesforce-dx-metadata-format.md)
@@ -50,22 +50,22 @@ Components are retrieved and committed from a Salesforce org to a version contro
 **Point to Note**: Branching baseline commits for the **SVN repository** may take **10 minutes** to complete.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (28).png" alt="" width="334"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (3).png" alt="" width="334"><figcaption></figcaption></figure>
 
 #### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (29).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. **`Info:`** This will give the info about the Salesforce Org and the Version Control Repository/ Branch selected for the Branching Baseline operation.
 2. **`Revision:`** View the revision generated at the Version Control along with the filename status. You can even download the report if required.
 3. **`Log:`** View the execution log of the Branching Baseline operation.&#x20;
 4. **`Status:`** View the status of the Branching Baseline operation
 
-| Status                                                                             | Description                                     |
-| ---------------------------------------------------------------------------------- | ----------------------------------------------- |
-| <img src="../../../../.gitbook/assets/image (30).png" alt="" data-size="original"> | The branching baseline operation is in progress |
-| ![](<../../../../.gitbook/assets/image (31).png>)                                  | The branching baseline is completed             |
-| ![](<../../../../.gitbook/assets/image (32).png>)                                  | The baseline operation got failed               |
+| Status                                                                                 | Description                                     |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| <img src="../../../../.gitbook/assets/image (30) (3).png" alt="" data-size="original"> | The branching baseline operation is in progress |
+| ![](<../../../../.gitbook/assets/image (31) (3).png>)                                  | The branching baseline is completed             |
+| ![](<../../../../.gitbook/assets/image (32) (3).png>)                                  | The baseline operation got failed               |
 
 5. **`Run:`** This option allows you to run your branching baseline operation at a later stage. It iterates a new baseline operation to update your branch with the latest metadata from your Salesforce Org.
 6. **`Delete:`** Deletes the branching baseline operation when you don’t require one, like older ones. Once deleted, this cannot be undone.

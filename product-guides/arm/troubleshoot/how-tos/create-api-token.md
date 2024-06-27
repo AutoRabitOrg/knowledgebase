@@ -14,28 +14,29 @@ Important Note:The token is the equivalent of the user name and password pair. O
 
 To generate your access token, you should:
 
-1.  Hover your mouse over the **`Admin`** tile and select the option: **`API Tokens`**
+1. Hover your mouse over the **`Admin`** tile and select the option: **`API Tokens.`**
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613370758758.png" alt="" width="188"><figcaption></figcaption></figure>
-2.  Click on the **`Create API Token`** button to generate a new token.\
+<figure><img src="../../../../.gitbook/assets/image (35).png" alt="" width="182"><figcaption></figcaption></figure>
 
+2. Click on the **`Create API Token`** button to generate a new token.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1684928550795.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36).png" alt="" width="563"><figcaption></figcaption></figure>
+
 3. Enter the API **`Token Name`** on the next screen.&#x20;
-4.  Click **`Create`**.\
+4. Click **`Create`**.
 
+<figure><img src="../../../../.gitbook/assets/image (37).png" alt="" width="515"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1684928702012.png" alt="" width="375"><figcaption></figcaption></figure>
-5.  Write down your newly generated token as you will need it soon.\
+5. Write down your newly generated token as you will need it soon.
 
+<figure><img src="../../../../.gitbook/assets/image (38).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1684928773555.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Important Note:For security reasons, viewing the token after closing the creation dialog is not possible. If necessary, create a new token. A maximum of 10 tokens are permitted for each user license. It is best to store the token securely, as with any password.
+{% hint style="info" %}
+**Important Note:** For security reasons, viewing the token after closing the creation dialog is not possible. If necessary, create a new token. A maximum of 10 tokens are permitted for each user license. It is best to store the token securely, as with any password.
+{% endhint %}
 
 ### Token Deactivation <a href="#token-deactivation" id="token-deactivation"></a>
 
-If an ARM user account is deactivated, the API Token will be deactivated simultaneously. In some cases, ARM needs to revoke or invalidate tokens, for example, when a user logs out of the ARM application. If you revoke a token, it can be re-approved anytime before it expires.\
+If an ARM user account is deactivated, the API Token will be deactivated simultaneously. In some cases, ARM needs to revoke or invalidate tokens, for example, when a user logs out of the ARM application. If you revoke a token, it can be re-approved anytime before it expires.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1684928606996.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (39).png" alt="" width="563"><figcaption></figcaption></figure>

@@ -96,7 +96,7 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 **v. 2.0.3**
 
-Changes were required to support fixes and enhancements of the **VSCode CodeScan Plugin (v2.0.3)** to VSCode Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.
+Changes were required to support fixes and enhancements of the **VSCode CodeScan Plugin (v2.0.3)** to VSCode Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules. Support ticket #114684
 
 
 

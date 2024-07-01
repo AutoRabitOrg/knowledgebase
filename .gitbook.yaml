@@ -286,7 +286,7 @@ redirects:
     docs/validation-workflow-rules: product-guides/arm/validation-workflow-rules.md
     docs/environment-provisioning: product-guides/arm/environment-provisioning.md
     docs/troubleshoot: product-guides/arm/troubleshoot.md
-    docs/release-notes: overview/release-notes.md
+    docs/release-notes: overview/release-notes/README.md
     docs/known-issues-limitations: product-guides/arm/arm-known-issues.md
     docs/web-to-lead: product-guides/arm/arm-features/webtolead.md
     docs/external-pull-request: product-guides/arm/arm-features/external-pull-request.md
@@ -407,7 +407,7 @@ redirects:
     codescan/docs/analysis-scope-on-codescan-cloud: product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud.md
     codescan/docs/codescan-ip-ranges: product-guides/codescan/frequently-asked-questions/general/codescan-static-ip-ranges.md
     codescan/docs/installing-codescan-for-vs-code: product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-vs-code.md
-    codescan/docs/codescan-webhooks: product-guides/codescan/codescan-integration/webhooks.md
+    codescan/docs/codescan-webhooks: product-guides/codescan/codescan-integration/webhooks/README.md
     codescan/docs/codescan-release-notes-223: overview/release-notes/codescan-release-notes/release-notes-22.3.md
     codescan/docs/release-note-228: overview/release-notes/codescan-release-notes/release-note-22.8.md
     codescan/docs/understanding-branches-for-salesforce-project: product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/understanding-branches-for-salesforce-project.md
@@ -421,7 +421,7 @@ redirects:
     codescan/docs/github-actions: product-guides/codescan/codescan-integration/github-actions.md
     codescan/docs/gitlab: product-guides/codescan/codescan-integration/gitlab.md
     codescan/docs/bitbucket-pipelines: product-guides/codescan/codescan-integration/bitbucket-pipelines.md
-    codescan/docs/codescan-getting-started: product-guides/codescan/getting-started.md
+    codescan/docs/codescan-getting-started: product-guides/codescan/getting-started/README.md
     codescan/docs/analyzing-results: product-guides/codescan/report-and-analysis.md
     codescan/docs/jenkins: product-guides/codescan/codescan-integration/jenkins.md
     codescan/docs/codescan-cloud-issues: product-guides/codescan/frequently-asked-questions/codescan-cloud-issues.md

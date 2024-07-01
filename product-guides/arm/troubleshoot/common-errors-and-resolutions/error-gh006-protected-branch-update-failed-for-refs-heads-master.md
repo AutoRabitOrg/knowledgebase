@@ -8,5 +8,3 @@ I encountered an error while attempting to commit the changes for the production
 ### Resolution
 
 It is because protected branch doesn't allow force push. Get in touch with your Administrator to turn off the protection on that branch, it should work.
-
-\

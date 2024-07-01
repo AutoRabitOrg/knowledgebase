@@ -11,5 +11,3 @@ This is due to invalid characters like (>>>, <<<) symbols used in the file.
 ### Resolution
 
 Download the merge conflict files and validate the characters present in those XML files.
-
-\

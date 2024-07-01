@@ -11,5 +11,3 @@ This is due to the fact that while adding the Salesforce org to ARM, you did not
 ### Resolution
 
 Use **My Domain URL** while registering a Salesforce org inside ARM.
-
-\

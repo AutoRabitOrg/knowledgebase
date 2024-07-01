@@ -14,5 +14,3 @@ ARM throws the following error: **"cannot open git-upload-pack,"** when trying t
 
 * Try recreating a new credential, and updating the credentials under the **Admin > Credential** section.
 * Re-register your bitbucket repository once again in ARM.
-
-\

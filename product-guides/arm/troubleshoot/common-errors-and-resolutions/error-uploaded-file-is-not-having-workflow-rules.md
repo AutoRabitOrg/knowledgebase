@@ -11,5 +11,3 @@ If you are using the wrong file format for the **package.xml** file, then the ab
 ### Resolution
 
 Upload the correct package.xml file during the creation of environment provisioning jobs.
-
-\

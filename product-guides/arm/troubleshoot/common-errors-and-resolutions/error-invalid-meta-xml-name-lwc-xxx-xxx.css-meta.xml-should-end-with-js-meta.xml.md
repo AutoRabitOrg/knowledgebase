@@ -11,5 +11,3 @@ This error usually occurs due to behavior in the Salesforce CLI 7.83 version. Wh
 ### Resolution
 
 Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again.
-
-\

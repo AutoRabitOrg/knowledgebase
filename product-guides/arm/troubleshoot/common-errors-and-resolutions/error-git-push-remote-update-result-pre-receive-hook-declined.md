@@ -26,4 +26,4 @@ Modify the existing Repository Link’s Key to align with the AutoRABIT Branchin
 
 Need to disable the Repository Link.
 
-For more content, go through [![](https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon.png)Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
+For more content, go through![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)

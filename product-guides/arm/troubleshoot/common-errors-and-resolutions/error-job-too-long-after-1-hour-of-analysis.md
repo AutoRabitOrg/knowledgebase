@@ -16,5 +16,3 @@ Increase the timeouts to avoid problems like these. To increase the timeouts, fo
 2. Click the **CodeScan** tab on the left and modify the timeout under the **Unit Test Timeout** once you're in **General Settings**.
 
 For detailed information on how to change the timeouts, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/unit-test-timeout).
-
-\

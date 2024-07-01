@@ -15,5 +15,3 @@ The following is some helpful information that will assist you in resolving the 
 
 1. Upgrade the API source flow in your Salesforce org to the most recent version and maintain the same Salesforce version in ARM.
 2. To do so, go to **Admin > My Account > My Salesforce Settings** and update the API version.
-
-\

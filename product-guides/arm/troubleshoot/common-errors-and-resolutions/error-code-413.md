@@ -11,5 +11,3 @@ When you try to download numerous files at one go, you'll see such an issue.
 ### Resolution
 
 If you download one profile file at a time, you should be able to do it without a problem.
-
-\

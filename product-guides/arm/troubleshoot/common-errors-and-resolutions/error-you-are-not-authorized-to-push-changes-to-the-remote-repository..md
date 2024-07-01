@@ -11,5 +11,3 @@ Your version control credentials are insufficient for pushing changes to your br
 ## Steps for Resolution <a href="#steps-for-resolution" id="steps-for-resolution"></a>
 
 Re-run a new branching baseline operation after updating your permissions.
-
-\

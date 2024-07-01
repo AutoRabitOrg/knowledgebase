@@ -11,5 +11,3 @@ This is expected. When the branch is set with the branch policy, you cannot push
 ### Resolution
 
 Once you remove the branch policy, you should have the ability to push changes to the master branch. Please contact the GitHub Administrator to request push permissions.
-
-\

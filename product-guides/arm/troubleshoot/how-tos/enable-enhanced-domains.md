@@ -37,7 +37,7 @@ Before performing any deployment or CI activities in ARM, reauthenticate your re
 
 **Solution:** Once Salesforce Org has been reauthenticated, save the job again.
 
-***
+
 
 **Query 2:** Considering the possibility of just the build package being backed up, why is the deployment log referencing the target org?
 

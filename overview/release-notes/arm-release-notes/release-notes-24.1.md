@@ -52,9 +52,10 @@ The following weekly fixes were implemented.
 4. A code fix identified in version 24.1 by internal ticket was initiated to the EBR Change module in version 24.1, prompted by a change to the EBR plugin info.
 5. A use-error identified in version 24.1 by internal ticket required a code fix to the Version Control module in version 24.1 due to the commit history screen getting stuck loading when the repo name has a special character in it (e.g., plus sign \[+]).
 6. A use-case scenario identified in version 24.1 by internal ticket required a code fix to the CI Jobs module in version 24.1 for the time-frame window to be added for the ARM admin API to fetch data.
-7. A use-case error identified in version 23.1 required a code fix to the Deployment module, applied in versions 23.1 and 24.1, to correct metadata retrieval in the repository from failing. Support ticket #115818&#x20;
-8. A use-case error identified in version 23.1 required a code fix to the CI Jobs module, applied in versions 23.1 and 24.1, to correct instances where configuration changes were not being saved to the CI job. Support ticket #116047&#x20;
-9. A code fix identified in version 23.1 by internal request ticket was applied to the Admin and CI jobs modules in versions 23.1 and 24.1 to upgrade v61 (Beta) to v61.
+7. A use-case scenario identified in version 24.1 required a code fix to the Version Control module in version 24.1 due to release labels not showing. Support ticket #116413
+8. A use-case error identified in version 23.1 required a code fix to the Deployment module, applied in versions 23.1 and 24.1, to correct metadata retrieval in the repository from failing. Support ticket #115818&#x20;
+9. A use-case error identified in version 23.1 required a code fix to the CI Jobs module, applied in versions 23.1 and 24.1, to correct instances where configuration changes were not being saved to the CI job. Support ticket #116047&#x20;
+10. A code fix identified in version 23.1 by internal request ticket was applied to the Admin and CI jobs modules in versions 23.1 and 24.1 to upgrade v61 (Beta) to v61.
 
 #### 26 June 2024
 

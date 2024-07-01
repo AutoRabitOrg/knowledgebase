@@ -28,51 +28,52 @@ If you do not have a workflow setup on your GitHub Repository, go to **`Actions 
 Add the following into your **.YML file** in the workflow:
 
 ```none
-name: CI
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Cache files
-        uses: actions/cache@v2
-        with:
-            path: |
-                ~/.sonar
-            key: ${{ runner.os }}-sonar
-            restore-keys: ${{ runner.os }}-sonar
-      - name: Run Codescan On Push
-        if: github.event_name == 'push'
-        uses: codescan-io/codescan-scanner-action@1.4
-        with:
-          organization: ‘Enter organization key here’
-          projectKey: ‘Enter project key here’
-          login: ${{ secrets.codescan_token }}
-          generateSarifFile: true
-          failOnRedQualityGate: true
-      - name: Run Codescan On PR
-        if: github.event_name == 'pull_request'
-        uses: codescan-io/codescan-scanner-action@1.4
-        with:
-          organization: ‘Enter organization key here’
-          projectKey: ‘Enter project key here’
-          login: ${{ secrets.codescan_token }}
-          generateSarifFile: true
-          failOnRedQualityGate: true
-          args: |
-            sonar.pullrequest.branch=${{github.head_ref}}
-            sonar.pullrequest.base=${{github.base_ref}}
-            sonar.pullrequest.key=${{github.event.number}}
-      - name: Upload SARIF file
-          uses: github/codeql-action/upload-sarif@v2
-          with:
-            sarif_file: codescan.sarif
+name: CI 
+on: 
+  push: 
+    branches: [main] 
+  pull_request: 
+    branches: [main] 
+jobs: 
+  build: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Checkout repository 
+        uses: actions/checkout@v2 
+      - name: Cache files 
+        uses: actions/cache@v2 
+        with: 
+            path: | 
+                ~/.sonar 
+            key: ${{ runner.os }}-sonar 
+            restore-keys: ${{ runner.os }}-sonar 
+      - name: Run Codescan On Push 
+        if: github.event_name == 'push' 
+        uses: codescan-io/codescan-scanner-action@1.5 
+        with: 
+          organization: ‘Enter organization key here’ 
+          projectKey: ‘Enter project key here’ 
+          login: ${{ secrets.codescan_token }} 
+          generateSarifFile: true 
+          failOnRedQualityGate: true 
+      - name: Run Codescan On PR 
+        if: github.event_name == 'pull_request' 
+        uses: codescan-io/codescan-scanner-action@1.5 
+        with: 
+          organization: ‘Enter organization key here’ 
+          projectKey: ‘Enter project key here’ 
+          login: ${{ secrets.codescan_token }} 
+          scanChangedFilesOnly: true 
+          generateSarifFile: true 
+          failOnRedQualityGate: true 
+          args: | 
+            sonar.pullrequest.branch=${{github.head_ref}} 
+            sonar.pullrequest.base=${{github.base_ref}} 
+            sonar.pullrequest.key=${{github.event.number}} 
+      - name: Upload SARIF file 
+          uses: github/codeql-action/upload-sarif@v2 
+          with: 
+            sarif_file: codescan.sarif 
 ```
 
 You will need to replace the placeholder variables (in single quotes) in the env section of the script with your [**Project Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key) and [**Organization Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys).

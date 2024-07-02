@@ -16,7 +16,7 @@ Before you set the SCA criteria, ensure the following:
 5. In the screenshot below, the **Priority-3** is set to **greater** than **5**, which means if **Priority-3** related errors are more than **5**, it should **pass**, or else it will **fail**.\
    This means if **Priority-3** related errors are more than 5, it should pass, or&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **Save** to save the changes.
 7. Now, go to the **Commit Validation - Approval Settings** section. You can enforce the SCA criteria to run for all commits before being merged to the version control branch.
@@ -25,10 +25,10 @@ Before you set the SCA criteria, ensure the following:
 10. Choose **ApexPMD**.
 11. Select the **Auto reject commit process if the criteria are not met** checkbox to auto-reject the commit if the set standards are not met _(as mentioned in Step-2)_.
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1).png" alt="" width="486"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (1).png" alt="" width="486"><figcaption></figcaption></figure>
 
 12. Click **Save**.
 
 In the below screenshot, the SCA criteria were fulfilled _(Priority-3 should be greater than 5)_, and the validation commit was moved to the **Approved** state as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (34) (1).png" alt="" width="519"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34) (1) (1).png" alt="" width="519"><figcaption></figcaption></figure>

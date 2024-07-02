@@ -8,25 +8,25 @@ Vlocity integration with ARM allows you to retrieve and deploy Vlocity metadata 
 
 Before you proceed with the deployment, it is mandatory to configure your Vlocity data pack type from the **My Account > Vlocity Configuration Settings** section.
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Deploying Vlocity Components <a href="#deploying-vlocity-components" id="deploying-vlocity-components"></a>
 
 1. Login to your AutoRABIT account.
 2. Click on **Create New > New Deployment** from the top navigation bar.
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="299"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46) (1).png" alt="" width="299"><figcaption></figcaption></figure>
 
 3. Give a **label** name for the deployment.
 4. Choose **Deployment From** as **Vlocity Components.**
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="350"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47) (1).png" alt="" width="350"><figcaption></figcaption></figure>
 
 5. Select the **Source Pack** from where the vlocity components data packs will be fetched. There are five options to choose from:
 
 | Source Pack               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Pack from Salesforce Org  | <p>The vlocity components will be fetched from the source Salesforce org. You need to specify the destination org where the vlocity components will be deployed.</p><p><img src="../../../../.gitbook/assets/image (48).png" alt="" data-size="original"></p><p><strong>Note:</strong> <em>Only those Salesforce orgs must be chosen under the source and the destination org fields in which the vlocity managed package is installed.</em><br></p>                    |
+| Pack from Salesforce Org  | <p>The vlocity components will be fetched from the source Salesforce org. You need to specify the destination org where the vlocity components will be deployed.</p><p><img src="../../../../.gitbook/assets/image (48) (1).png" alt="" data-size="original"></p><p><strong>Note:</strong> <em>Only those Salesforce orgs must be chosen under the source and the destination org fields in which the vlocity managed package is installed.</em><br></p>                |
 | Pack from AutoRABIT Build | <p>The vlocity components will be fetched from the build number of the specified project, as shown below—only those built to be selected constructed on vlocity components.<br><img src="../../../../.gitbook/assets/image (49).png" alt=""></p>                                                                                                                                                                                                                        |
 | Pack from Version Control | <p>Select this option if you want to fetch the vlocity components from your source version control's data pack folder path. For the same, you need to fill in the details such as version control type (GIT, SVN, TFS), repository and its mapped branch, the data pack folder path, and the destination org where the vlocity components will be deployed.<br><img src="../../../../.gitbook/assets/image (50).png" alt=""></p>                                        |
 | Pack from Commit Label    | <p>This will allow you to fetch the vlocity components from the data pack folder path of the commit label and deploy them to the destination org. For the same, you need to fill in the details such as version control type (GIT, SVN, TFS), repository and its mapped branch, commit label, data pack folder path, and the destination org where the Vlocity components will be deployed.</p><p><img src="../../../../.gitbook/assets/image (51).png" alt=""><br></p> |

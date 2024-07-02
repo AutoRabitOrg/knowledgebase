@@ -36,11 +36,11 @@ Before configuring SSO in ADFS, you must enable SSO in CodeScan.
 
 7. Keep the **SAML Connection status** checkbox as **Enabled** and click on the **Create** button.
 
-<figure><img src="../../../../.gitbook/assets/image (43) (1) (1).png" alt="" width="383"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43) (1) (1) (1).png" alt="" width="383"><figcaption></figcaption></figure>
 
 8. You can see the **Metadata URL** generated for your SSO configuration. Copy the **Metadata URL** in a new browser tab to download the XML file on your local device.
 
-<figure><img src="../../../../.gitbook/assets/image (44) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Setting up Single Sign-On using Active Directory with ADFS and SAML 2.0**
 
@@ -52,20 +52,20 @@ To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), f
 2. Go to **Tools > AD FS Management** to launch the **ADFS Management Console**.
 3. Click on **Add Relying Party Trust…** from the **Actions** sidebar on the right.
 
-<figure><img src="../../../../.gitbook/assets/image (45) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the **Welcome** screen, select the **Claims aware** option and click **Start**.
 
-<figure><img src="../../../../.gitbook/assets/image (46) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. On the **Select Data Source** screen, select the second option: **Import data about the relying party from a file**.
 6. Browse for the **metadata XML** file from your local computer and upload it in the **Federation**  **metadata file location**.
 
-<figure><img src="../../../../.gitbook/assets/image (47) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. On the next screen, enter a **display name** that you will recognize in the future.
 
-<figure><img src="../../../../.gitbook/assets/image (48) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. On the next screen, leave the defaults.
 

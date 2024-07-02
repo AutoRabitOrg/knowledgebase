@@ -32,8 +32,8 @@ This happens because the deleted workflow details are not retained in the applic
 
 **Sample image attached:**
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Workaround:** If you see the aforementioned issue, please avoid selecting the **Run Destructive Changes** checkbox under the **Prevalidate Merge** section.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

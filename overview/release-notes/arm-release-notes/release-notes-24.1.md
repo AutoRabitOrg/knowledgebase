@@ -46,16 +46,18 @@ The following weekly fixes were implemented.
 
 **ARM 24.1.3**
 
-1. A code fix identified in version 24.1 by internal ticket was implemented in version 24.1 to correct a use-case error in which the Version Control module’s Validate and Merge button was not being reflected immediately after changing the EZ-Merge validation criteria in MyAccounts.
-2. A code fix identified in version 24.1 by internal ticket was applied to version 24.1 due to the minimization feature not working in the Version Control module.
-3. A code fix identified by internal ticket in version 24.1 was applied to the Version Control module in version 24.1 due a use-case error where ‘Path View’ section highlighting is occurring when toggling from the ‘File Changes’ screen to the ‘Path’ view, then back to the ‘File Changes Path’ view.
-4. A code fix identified in version 24.1 by internal ticket was initiated to the EBR Change module in version 24.1, prompted by a change to the EBR plugin info.
-5. A use-error identified in version 24.1 by internal ticket required a code fix to the Version Control module in version 24.1 due to the commit history screen getting stuck loading when the repo name has a special character in it (e.g., plus sign \[+]).
-6. A use-case scenario identified in version 24.1 by internal ticket required a code fix to the CI Jobs module in version 24.1 for the time-frame window to be added for the ARM admin API to fetch data.
-7. A use-case scenario identified in version 24.1 required a code fix to the Version Control module in version 24.1 due to release labels not showing. Support ticket #116413
-8. A use-case error identified in version 23.1 required a code fix to the Deployment module, applied in versions 23.1 and 24.1, to correct metadata retrieval in the repository from failing. Support ticket #115818&#x20;
-9. A use-case error identified in version 23.1 required a code fix to the CI Jobs module, applied in versions 23.1 and 24.1, to correct instances where configuration changes were not being saved to the CI job. Support ticket #116047&#x20;
-10. A code fix identified in version 23.1 by internal request ticket was applied to the Admin and CI jobs modules in versions 23.1 and 24.1 to upgrade v61 (Beta) to v61.
+1. A use-case error identified in version 23.1 required a code fix to the CI Jobs module, applied in versions 23.1 and 24.1, to correct instances where configuration changes were not being saved to the CI job. Support ticket #116047&#x20;
+2. A code fix identified in version 24.1 by an internal ticket was implemented in version 24.1 to correct a use-case error in which the Version Control module’s Validate and Merge button was not being reflected immediately after changing the EZ-Merge validation criteria in MyAccounts.
+3. A code fix identified in version 24.1 by an internal ticket was applied to version 24.1 due to the minimization feature not working in the Version Control module.
+4. A code fix identified by an internal ticket in version 24.1 was applied to the Version Control module in version 24.1 due a use-case error where ‘Path View’ section highlighting is occurring when toggling from the ‘File Changes’ screen to the ‘Path’ view, then back to the ‘File Changes Path’ view.
+5. A code fix identified in version 24.1 by an internal ticket was initiated to the EBR Change module in version 24.1, prompted by a change to the EBR plugin info.
+6. A use-case error identified in version 24.1 by an internal ticket required a code fix to the Version Control module in version 24.1 due to the commit history screen getting stuck loading when the repo name has a special character in it (e.g., plus sign \[+]).
+7. A use-case scenario identified in version 24.1 by an internal ticket required a code fix to the CI Jobs module in version 24.1 for the time-frame window to be added for the ARM admin API to fetch data.
+8. A use-case error identified in version 24.1 by an internal ticket required a code fix applied to the nCino module in version 24.1 to correct where the option "automap user/owner data" is disabled by default for CI jobs created in 23.1.x versions.
+9. A use-case scenario identified in version 24.1 required a code fix to the Version Control module in version 24.1 due to release labels not showing. Support ticket #116413
+10. A use-case error identified in version 24.1 required a code fix to the Version Control module in version 24.1 due to an issue with the Level 1 approver choice while performing a merge. Support ticket #116417
+11. A use-case error identified in version 23.1 required a code fix to the Deployment module, applied in versions 23.1 and 24.1, to correct the metadata retrieval in the repository from failing. Support ticket #115818&#x20;
+12. A code fix identified in version 23.1 by an internal request ticket was applied to the Admin and CI jobs modules in versions 23.1 and 24.1 to upgrade v61 (Beta) to v61.
 
 #### 26 June 2024
 

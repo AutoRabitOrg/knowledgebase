@@ -29,9 +29,9 @@ To get started, you need the following items:
 7. On the **Select a Single sign-on method** dialog, select **SAML** mode to enable single sign-on.
 8. On the **Set up Single Sign-On with SAML** page, click the **Edit (pencil)** icon for Basic SAML Configuration to edit the settings.
 9. On the **Basic SAML Configuration** section, perform the following steps:
-   1. In the **Identifier (Entity ID)** field, enter the URL in the following format: **\<instanceURL>/saml/metadata**. _For example-_ If your instance is **https://xyz.com**, then the Identifier (Entity ID) would be: _**https://xyz.com/saml/metadata**_
-   2. In the **Reply URL** field, enter the URL in the following format: **\<instanceURL>/saml/SSO.** _For example-_ If your instance is **https://xyz.com**, then the payload URL would be: _**https://xyz.com/saml/SSO**_
-   3. In the **Sign on URL** field type the secure URL of your domain (i.e. starting with https://). For example- _**https://xyz.com**_
+   * In the **Identifier (Entity ID)** field, enter the URL in the following format: **\<instanceURL>/saml/metadata**. _For example-_ If your instance is **https://xyz.com**, then the Identifier (Entity ID) would be: _**https://xyz.com/saml/metadata**_
+   * In the **Reply URL** field, enter the URL in the following format: **\<instanceURL>/saml/SSO.** _For example-_ If your instance is **https://xyz.com**, then the payload URL would be: _**https://xyz.com/saml/SSO**_
+   * In the **Sign on URL** field type the secure URL of your domain (i.e. starting with https://). For example- _**https://xyz.com**_
 10. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, find **Federation Metadata XML** and select **Download** to download the certificate and save it on your computer.
 
 ### In AutoRABIT <a href="#in-autorabit" id="in-autorabit"></a>

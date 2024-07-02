@@ -82,18 +82,16 @@
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623583059333.png" alt=""><figcaption></figcaption></figure>
 
 22. Under **Attribute Contract Fulfillment**, enter the below source and values for **Email** and **SAML\_SUBJECT attribute contracts.**
+
     * For **Email** attribute contract, source as **LDAP** and Value as **mail.**
-    *   For **SAML\_SUBJECT** attribute contract, source as **LDAP** and Value as **Subject DN.**
+    * For **SAML\_SUBJECT** attribute contract, source as **LDAP** and Value as **Subject DN.**
 
-
-
-        <figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1623583034237.png&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6777508c&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (862).png" alt=""><figcaption></figcaption></figure>
 23. Click **Next**.
 24. View the **Attribute source** summary page on the next screen.
 
+<figure><img src="../../../../.gitbook/assets/image (863).png" alt="" width="542"><figcaption></figcaption></figure>
 
-
-    <figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1623583047427.png&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=7a20f62b&#x26;sv=1" alt="" width="563"><figcaption></figcaption></figure>
 25. On the next screen, leave the defaults.
 
 <figure><img src="../../../../.gitbook/assets/image (830).png" alt=""><figcaption></figcaption></figure>

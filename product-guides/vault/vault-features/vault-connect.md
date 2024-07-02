@@ -155,7 +155,7 @@ This feature enables the user to sync the latest metadata changes on the Salesfo
 2.  Click on any Org to navigate to Vault – Connect.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (68) (2).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the “Connect” tab to go to the Connect application.\
 
 

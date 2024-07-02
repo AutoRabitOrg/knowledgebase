@@ -25,19 +25,19 @@ When a pull request is created in a VSTS repository or a repository tracked by y
 
 On your **Project Analysis** page, go to **Project Setting > Branches and Pull requests**. This page allows users to delete any new branches and also change the branch that the Analysis Project is checking.
 
-<figure><img src="../../../../.gitbook/assets/image (45) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
 
 * **Delete Branch**: To delete a branch, click the (![](<../../../../.gitbook/assets/image (64) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
 
-<figure><img src="../../../../.gitbook/assets/image (46) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../.gitbook/assets/image (65) (1) (1) (1).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
 
-<figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (44) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here you can see the branch has four new violations. If the branch is selected, the details of the violation(s) can be seen. All new branches added in this way will be deleted in **30 days** if they are not analyzed.
 

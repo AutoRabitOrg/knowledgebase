@@ -4,25 +4,23 @@ This section deals with exporting of vlocity data packs from a Salesforce Org th
 
 ### Commit Vlocity Components <a href="#commit-vlocity-components" id="commit-vlocity-components"></a>
 
-1.  Go to the **New EZ-Commit** screen,\
+1. Go to the **New EZ-Commit** screen,
 
+<figure><img src="../../../../.gitbook/assets/image (61).png" alt="" width="479"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664517191098.png" alt="" width="563"><figcaption></figcaption></figure>
 2. In the **EZ-Commit** screen, select your **Salesforce Org.**
 3. Select the **Salesforce Org Author**.
-4.  Under **Commit To** section, select the **Version Control Repository** and the **Branch** where the commits need to be done.\
+4. Under **Commit To** section, select the **Version Control Repository** and the **Branch** where the commits need to be done.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664518357017.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section.  Else, the branch will automatically be selected based on the org mappings and it is not editable.
 {% endhint %}
 
-1.  Under **Fetch Changes**, select the components as **'Vlocity Components'**.\
+5. Under **Fetch Changes**, select the components as **'Vlocity Components'**.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664518748813.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63).png" alt="" width="431"><figcaption></figcaption></figure>
 
 #### Different options for Vlocity Components <a href="#different-options-for-vlocity-components" id="different-options-for-vlocity-components"></a>
 
@@ -40,9 +38,9 @@ Max Depth decides the level of dependencies that will be executed while fetching
 
 However, the user can modify the value based on his requirement.
 
-1. When Max Depth Values is set to **-1** means it will execute all-level dependencies of the selected data pack record
-2. When Max Depth Values is set to **0** means it will execute only selected data pack records and
-3. When Max Depth Values is set to **1** means it will execute only first-level dependencies of the selected data pack record.
+* When Max Depth Values is set to **-1** means it will execute all-level dependencies of the selected data pack record
+* When Max Depth Values is set to **0** means it will execute only selected data pack records and
+* When Max Depth Values is set to **1** means it will execute only first-level dependencies of the selected data pack record.
 
 **4. Custom YAML File**
 
@@ -68,17 +66,15 @@ Fill in the remaining fields as per your requirements, and proceed to the next s
 
 **Scenario 1:** If the metadata folder path is not available. For such a case, the vlocity components will fetch from the _**\<repoURL>/\<yaml project path>**_ path by default.
 
-**Example:**\
+**Example:**
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexCommittheVlocitycomponentsfromaSalesforceOrgtoaVersionControlBranchcustom42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64).png" alt="" width="452"><figcaption></figcaption></figure>
 
 **Retrieval Path:**_**"\<repoURL>/\<yaml project path>"**_**Scenario 2:** The metadata folder path is available.In such case, the vlocity components will get retrieved from _r**epoURL>/\<metadata folder path>/\<yaml project path>**_.
 
-**Example:**\
+**Example:**
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexCommittheVlocitycomponentsfromaSalesforceOrgtoaVersionControlBranchcustom52.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65).png" alt="" width="452"><figcaption></figcaption></figure>
 
 **Retrieval Path:**_**"\<repoURL>/\<Vlocity Component>/\<yaml project path>"**_
 
@@ -86,18 +82,16 @@ Fill in the remaining fields as per your requirements, and proceed to the next s
 
 **Scenario 1:** The metadata folder path is not available. For such a case, the vlocity components will fetch from _**\<repoURL>/autorabit\_alldefault\_vlocity\_build**_ path by default.
 
-**Example:**\
+**Example:**
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexCommittheVlocitycomponentsfromaSalesforceOrgtoaVersionControlBranchcustom43.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66).png" alt="" width="452"><figcaption></figcaption></figure>
 
 **Retrieval Path**: _**"\<repoURL>/\<autorabit\_alldefault\_vlocity\_build>"**_
 
 **Scenario 2:** The metadata folder path is available.In such case, the vlocity components will get retrieved from _**\<repoURL>/\<metadata folder path>**_.
 
-**Example:**\
+**Example:**
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexCommittheVlocitycomponentsfromaSalesforceOrgtoaVersionControlBranchcustom53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt="" width="452"><figcaption></figcaption></figure>
 
 **Retrieval Path:**_**"\<repoURL>/\<metadata folder path>"**_

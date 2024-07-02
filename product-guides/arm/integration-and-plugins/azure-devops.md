@@ -13,49 +13,55 @@ This article refers to the AutoRABIT and Azure DevOps integration. AutoRABIT pro
 To integrate Azure DevOps as a plugin in AutoRABIT, follow the below steps:
 
 1. Log in to your AutoRABIT account.
-2.  From the AutoRABIT home page, click on the **Admin** module and go to the **My Account** tab.\
+2. From the AutoRABIT home page, click on the **Admin** module and go to the **My Account** tab.
 
+<figure><img src="../../../.gitbook/assets/image (34).png" alt="" width="289"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664454125717.png" alt="" width="375"><figcaption></figcaption></figure>
-3.  Click on **New ALM System** under **ALM Management**.\
+3. Click on **New ALM System** under **ALM Management**.
 
+<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664454173777.png" alt=""><figcaption></figcaption></figure>
-4.  Select the ALM type as **Azure DevOps**.\
+4. Select the ALM type as **Azure DevOps**.
 
+<figure><img src="../../../.gitbook/assets/image (36).png" alt="" width="379"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664454249641.png" alt="" width="375"><figcaption></figcaption></figure>
 5. Enter the **label name** and paste the **Azure DevOps host URL**.
 6. Select the user credential from the drop-down field. In case the user detail is not stored in AutoRABIT, click on **Create Credentials**.
 7. Once you are done, click on **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
-8. Click **Save (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1616321827258.png)**)** and you are all set with Azure DevOps Integration.
+8. Click **Save (**![](<../../../.gitbook/assets/image (37).png>)**)** and you are all set with Azure DevOps Integration.
 9. Once you log in, Azure DevOps is integrated with your AutoRABIT account and you can start logging issues with just one click directly to Azure DevOps.
 
-Note:
+{% hint style="info" %}
+**Note:**
 
 1. To create a new credential, you need to give a **credential name**, choose the **credential type** i.e., User Name / Password credentials or basic SSH Private Key type, and the **credential scope** (global or private).
 2. For **User Name/Password** as credential type authentication, a secured personal access token is required. The same token should be entered in the **Password** field.&#x20;
+{% endhint %}
 
 ### Authentication Access via Azure DevOps Personal Access Tokens <a href="#authentication-access-via-azure-devops-personal-access-tokens" id="authentication-access-via-azure-devops-personal-access-tokens"></a>
 
 1. Sign in to your organization in **Azure DevOps** _(https://dev.azure.com/{yourorganization})._
-2.  From your home page, navigate to your **Profile > Security** to view your security details.
+2. From your home page, navigate to your **Profile > Security** to view your security details.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623584744997.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt="" width="275"><figcaption></figcaption></figure>
+
 3. Go to **Security > Personal access token** and click on **+ New Token** to create a personal access token.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623584762840.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-4.  On the next screen, **name** your token. Select a **lifespan** for your token.
+4. On the next screen, **name** your token. Select a **lifespan** for your token.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623584853941.png" alt=""><figcaption></figcaption></figure>
-5.  Select the **scopes** that this token will authorize for your specific tasks.
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623584891407.png" alt="" width="563"><figcaption></figcaption></figure>
+5. Select the **scopes** that this token will authorize for your specific tasks.
+
+<figure><img src="../../../.gitbook/assets/image (42).png" alt="" width="458"><figcaption></figcaption></figure>
+
 6. Click on **Create Token** available at the bottom of the screen.
-7.  When you're done, make sure to copy the token. You'll use this token as your password.
+7. When you're done, make sure to copy the token. You'll use this token as your password.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1623584922916.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+
 8. Enter the same token in the **Password** field while registering the user's credential via **UserName/Password** credential type in AutoRABIT.
 
 ### Mapping Azure DevOps ALM to your Salesforce Org/Version Control <a href="#mapping-azure-devops-alm-to-your-salesforce-orgversion-control" id="mapping-azure-devops-alm-to-your-salesforce-orgversion-control"></a>
@@ -65,9 +71,9 @@ Once you are done registering the plugins with AutoRABIT, make sure you map the 
 1. Login to your AutoRABIT account.
 2. Hover your mouse over the **Admin** module and select the option: **SF Org Mgmt**
 3. Select the **Salesforce org** for which you like to map the Azure DevOps as an **ALM**.
-4.  Under **Salesforce Org- Mappings** tab, choose **Azure DevOps** as ALM type and click on **Mapping**.\
+4. Under **Salesforce Org- Mappings** tab, choose **Azure DevOps** as ALM type and click on **Mapping**.
 
+<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664454374970.png" alt=""><figcaption></figcaption></figure>
 5. Select the **label** and the **project**.
 6. Click **Save Mappings**.

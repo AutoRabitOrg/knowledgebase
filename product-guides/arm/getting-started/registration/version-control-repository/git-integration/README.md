@@ -104,15 +104,15 @@ This section guides you through creating your personal access token directly on 
 
 7. Select the scopes or permissions you want to grant this token. Select **`repo`** to use your token to access repositories from the command line.
 
-<figure><img src="../../../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (48) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Click **`Generate token`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (49) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-9. Click  ![](<../../../../../../.gitbook/assets/image (50).png>) to copy the token to your clipboard. You cannot see the token again after navigating off the page for security reasons.
+9. Click  ![](<../../../../../../.gitbook/assets/image (50) (2).png>) to copy the token to your clipboard. You cannot see the token again after navigating off the page for security reasons.
 
-<figure><img src="../../../../../../.gitbook/assets/image (51).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (51) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. Use the copied token as a password for creating/updating the credential in ARM.
 11. Once updated, please use the same credential to authenticate the GIT.Important Note:Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.

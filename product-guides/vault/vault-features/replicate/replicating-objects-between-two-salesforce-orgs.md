@@ -15,7 +15,7 @@ The Replication functionality enables you to replicate objects between two Sales
 1. Login to your Vault account.
 2. Click on **`Replicate`** from the Vault dashboard page and click on **Replicate Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, select your **`Salesforce Org`**.
 

@@ -69,7 +69,7 @@ To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), f
 
 8. On the next screen, leave the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (49) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9.  On the **Configure URL** screen:
 
@@ -77,7 +77,7 @@ To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), f
     * In the **Relying party SAML 2.0 SSO service URL** , enter the _service URL_ in the below format: _**{instance\_url}/\_codescan/saml2/metadata/{connection\_id}**_\
       **For example:** If your **instance URL** is _**https://app.codescan.io**_ and the **connection\_id** is _**CodeScan**_, your service URL would be _**https://app.codescan.io/\_codescan/saml2/metadata/CodeScan**_
 
-    <figure><img src="../../../../.gitbook/assets/image (50) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (50) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Where can I find my connection\_id?**
@@ -93,19 +93,19 @@ Your connection\_id will be available in the **Metadata URL** generated inside C
 11. On the next screen, add a **Relying party trust identifier** . This should be the name of your SAML connection in CodeScan. In this case, it is _**CodeScan.**_
 12. Click **Add**.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. On the next screen, leave the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 14. The wizard will display an overview of your settings on the next screen. Click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 15. On the final screen, keep the **Configure claims issuance policy for this application** checkbox selected, and click on the **Close** button to open the Claim Rules editor.
 
-<figure><img src="../../../../.gitbook/assets/image (54) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### **2.2 Creating Claim Rules**
 
@@ -114,11 +114,11 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
 1. By default, the Claim Rules editor opens once you create the trust.
 2. To create a new rule, click on **Add Rule**.
 
-<figure><img src="../../../../.gitbook/assets/image (55) (1).png" alt="" width="437"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1) (1).png" alt="" width="437"><figcaption></figcaption></figure>
 
 3. Select **Send LDAP Attributes as Claims** as the claim rule template.
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the next screen, give the claim rule a unique **name**.
 5. Using **Active Directory** as your attribute store, enter the following details:

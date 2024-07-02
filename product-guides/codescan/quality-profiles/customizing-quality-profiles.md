@@ -42,16 +42,16 @@ To customize the Quality Profile, follow the steps below:
 
 8. You can bulk activate/deactivate rules for your profile using the **Bulk Change** button.
 
-<figure><img src="../../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (49) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. When activating a rule, you will be given the option to change its **severity** and any other parameters the rule may have.
 
-<figure><img src="../../../.gitbook/assets/image (50) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (50) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
 
 > **Example**:\
 > You can update the severity of the rule to `Major/Critical/Minor/Blocker/Info`
 >
-> ![](<../../../.gitbook/assets/image (56) (1) (1).png>)
+> ![](<../../../.gitbook/assets/image (56) (1) (1) (1).png>)
 >
 > To use the rule mentioned above, the parameter `minimumCommentDensity` needs to be set to a value. The minimum value is 25. If you use the value of 35 as an example, the density of comment lines of 35 will be considered.
 >

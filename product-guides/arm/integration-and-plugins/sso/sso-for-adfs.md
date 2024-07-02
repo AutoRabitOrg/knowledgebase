@@ -10,7 +10,7 @@ To set up the ADFS connection with AutoRABIT using a Relying Party Trust (RPT), 
 2. Launch the **ADFS Management Console**.
 3. Click on **“Add Relying Party Trust…”** from the **Actions** sidebar on the right.
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56).png" alt="" width="488"><figcaption></figcaption></figure>
 
 4. On the **Select Data Source** screen, select the last option: **Enter data about the relying party manually.**
 

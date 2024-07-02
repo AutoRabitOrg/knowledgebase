@@ -113,13 +113,13 @@ You also have the option of importing records from a CSV file. To upload the CSV
 
 <figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **`Selected Fields:`** By default, all the fields will be chosen for the objects selected. Clicking **`“All”`** under the **`Selected Fields`** column will open a popup window with all the fields listed for the selected objects. You can also use the **search** filter to search for a specific field faster. Here, you can map your source field with the destination field. The destination field should default be mapped based on the source field name.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -131,7 +131,7 @@ You also have the option of importing records from a CSV file. To upload the CSV
 
 Based on your selection, the restore will happen only for selected fields. Post selection, the summary table should show the number of fields selected.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **`Trigger Restore`**.
 
@@ -139,7 +139,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 * The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -153,7 +153,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
      5. **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may disable any triggers you have set. _This feature disables Salesforce triggers only. Any managed package triggers are not disabled._
 5. Click **`Restore Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. You'll be taken to the **`Restore Summary`** screen, which will display the status of the recently triggered restore activity.
 
@@ -161,7 +161,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 For each restore activity triggered in Vault, you will find the details below:
 
-<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute        | Description                                                                                                                                                                                                                                                                                                                                                                                    |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

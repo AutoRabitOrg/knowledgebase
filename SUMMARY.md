@@ -173,6 +173,7 @@
       * [Commit Templates](product-guides/arm/arm-features/version-control/commit-templates.md)
       * [GIT Revert](product-guides/arm/arm-features/version-control/git-revert.md)
       * [Merge Approvals](product-guides/arm/arm-features/version-control/merge-approvals.md)
+      * [Understanding Duplicate File Change Commits in Git](product-guides/arm/arm-features/version-control/understanding-duplicate-file-change-commits-in-git.md)
     * [Data Loader](product-guides/arm/arm-features/dataloader/README.md)
       * [Single Data Loader](product-guides/arm/arm-features/dataloader/single-dataloader/README.md)
         * [Extract Salesforce Data](product-guides/arm/arm-features/dataloader/single-dataloader/extract-salesforce-data.md)

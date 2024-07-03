@@ -4,23 +4,21 @@
 
 Create a pre-validation request to commit from your local [version control](https://www.autorabit.com/7-tips-for-salesforce-version-control-integration/) repository.
 
-![Local Version Control Repository](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/aaa4.png)
+<figure><img src="../../../../.gitbook/assets/image (889).png" alt=""><figcaption></figcaption></figure>
 
 ### B. Stage Changes
 
 #### Stage all changes
 
-![Stage all changes](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/aaaa.png)
+<figure><img src="../../../../.gitbook/assets/image (890).png" alt=""><figcaption></figcaption></figure>
 
 #### Stage changes for a file
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/aaa2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (891).png" alt=""><figcaption></figcaption></figure>
 
 #### Stage selective line of code
 
-#### &#x20;
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/aaa3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (892).png" alt=""><figcaption></figcaption></figure>
 
 ### C. Submit Pre-validation Request
 
@@ -42,36 +40,36 @@ AutoRABIT compares the metadata between the source org and the destination branc
 
 AutoRABIT performs a check-only deployment to your selected org/branch. Nothing will be deployed however if anything goes wrong - for example, the deployment fails, or tests do not pass - we will show you exactly what happened, so you can fix it.
 
-![prevalidation request](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-382.png)
+<figure><img src="../../../../.gitbook/assets/image (893).png" alt=""><figcaption></figcaption></figure>
 
 ### D. Commit approved pre-validation request
 
 This will allow you to commit the code once the pre-validation request is approved.
 
-![commit approved pre validation request](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-808.png)
+<figure><img src="../../../../.gitbook/assets/image (894).png" alt=""><figcaption></figcaption></figure>
 
 ### E. View Pre-validation Requests
 
 #### Diff Report
 
-![view pre validation request](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-671.png)
+<figure><img src="../../../../.gitbook/assets/image (895).png" alt=""><figcaption></figcaption></figure>
 
 #### Static Code Analysis Report
 
-![static code analysis report](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-210.png)
+<figure><img src="../../../../.gitbook/assets/image (896).png" alt=""><figcaption></figcaption></figure>
 
 #### Validate Deployment Report
 
-![validate deployment report](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-719.png)
+<figure><img src="../../../../.gitbook/assets/image (897).png" alt=""><figcaption></figcaption></figure>
 
 ### F. Trigger Build
 
 This extension will also allow developers to run builds once the code is committed. Different quick actions such as Quick Deploy, or Abort are associated to each build.
 
-![Trigger Build](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-202.png)
+<figure><img src="../../../../.gitbook/assets/image (898).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### G. Deployments
 
-This extension will allow viewing results for pre-validations, builds, and deployments.&#x20;
+This extension will allow viewing results for pre-validations, builds, and deployments.
 
-![Deployments](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-734.png)
+<figure><img src="../../../../.gitbook/assets/image (899).png" alt="" width="563"><figcaption></figcaption></figure>

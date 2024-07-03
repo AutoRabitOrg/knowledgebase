@@ -20,4 +20,6 @@ Once you have Visual Studio Code installed for your particular platform (macOS, 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624076274583.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Important Note:The Salesforce Extension Pack extension installs eight extensions including Salesforce CLI Integration, Apex, Apex Interactive Debugger, Apex Replay Debugger, Lightning Web Components, Aura components, Visualforce, and Salesforce Lightning Design System (SDLS) Validator.
+{% hint style="info" %}
+**Important Note:** The Salesforce Extension Pack extension installs eight extensions including Salesforce CLI Integration, Apex, Apex Interactive Debugger, Apex Replay Debugger, Lightning Web Components, Aura components, Visualforce, and Salesforce Lightning Design System (SDLS) Validator.
+{% endhint %}

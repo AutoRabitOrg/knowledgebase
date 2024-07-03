@@ -344,7 +344,7 @@ This is an initial step where your SonarQube credential such as username and pas
 8. Please double-check that you use your SonarQube username instead of the email address that you use to log in to SonarQube.
 9. Click **Save**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1616325381996.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (873).png" alt="" width="393"><figcaption></figcaption></figure>
 
 #### Step 3: Integrate SonarQube with AutoRABIT <a href="#step-3-integrate-sonarqube-with-autorabit" id="step-3-integrate-sonarqube-with-autorabit"></a>
 
@@ -352,19 +352,19 @@ If you're logged out from your account, log in again into AutoRABIT with your cr
 
 1. Go to **Admin > My Account** section.
 2. Go to the **Plugins** section.
-3.  Check the **SonarQube** checkbox under **Static Code Analysis**.\
+3. Check the **SonarQube** checkbox under **Static Code Analysis**.
 
+<figure><img src="../../../.gitbook/assets/image (874).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664796628363.png" alt=""><figcaption></figcaption></figure>
-4. Fill in the below details:
-   * Enter the SonarQube **hosted URL**. For the SonarQube cloud version use **https://sonarcloud.io**
-   * Choose the **Host Type** i.e., _Cloud_ or _On-premise_. For SonarQube hosted on Cloud, you need to add the **Organization Key.**&#x20;
-   * Select your **Credential** from the drop-down.
-   * Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
-   *   Click **Save**.\
+4.  Fill in the below details:
 
+    * Enter the SonarQube **hosted URL**. For the SonarQube cloud version use **https://sonarcloud.io**
+    * Choose the **Host Type** i.e., _Cloud_ or _On-premise_. For SonarQube hosted on Cloud, you need to add the **Organization Key.**&#x20;
+    * Select your **Credential** from the drop-down.
+    * Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
+    * Click **Save**.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664796687941.png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (875).png" alt="" width="383"><figcaption></figcaption></figure>
 5. Click on **Save** once again and you are all set with SonarQube integration.
 
 #### Step 4: Setting SonarQube Global Criteria Settings <a href="#step-4-setting-sonarqube-global-criteria-settings" id="step-4-setting-sonarqube-global-criteria-settings"></a>
@@ -374,22 +374,21 @@ You can now set the global Quality Gate criteria to enforce SonarQube Static cod
 1. Go to **Admin > My Account** section.
 2. Next, navigate to the **Validation Criteria-Static Code Analysis** section.
 3. Select the **Enable** checkbox.
-4.  Enable the **SonarQube** checkbox and assign the Quality Gate status for all your projects. By default, it is set to **ERROR**, however, you can choose the criteria of your own. If the Quality Gate matches with the status assigned to the projects on your SonarQube tool, the validation process gets failed and the build aborts.\
+4. Enable the **SonarQube** checkbox and assign the Quality Gate status for all your projects. By default, it is set to **ERROR**, however, you can choose the criteria of your own. If the Quality Gate matches with the status assigned to the projects on your SonarQube tool, the validation process gets failed and the build aborts.
 
+<figure><img src="../../../.gitbook/assets/image (876).png" alt="" width="511"><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664796890806.png" alt="" width="563"><figcaption></figcaption></figure>
 5. Click **Save**.
 6. Next, go to the next section i.e., **Commit Validation - Approval Settings**. In this section, you can allow the SonarQube tool to identifying potential software quality issues before the code moves to production and abort the commit process if the Quality Gate set earlier matches with the status in the SonarQube application.&#x20;
 7. Select the checkbox: **Enable criteria based Review Process**&#x20;
-8. Enable the **Should pass validation criteria for Static Code Analysis** checkbox, select the below checkboxes:
-   * **SonarQube**
-   *   **Auto reject commit process if the criteria are not met**\
+8.  Enable the **Should pass validation criteria for Static Code Analysis** checkbox, select the below checkboxes:
 
+    * **SonarQube**
+    * **Auto reject commit process if the criteria are not met**
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1664796960434.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (877).png" alt=""><figcaption></figcaption></figure>
 9. Click **Save**.
 10. Similar to SonarQube criteria globally configured in AutoRABIT for Commit operation, you can even set the same for Merge Process. Go to the next section: **Merge Settings**
 11. Select the **Enable criteria-based Review Process** checkbox.
 12. Under **Should pass validation criteria for Static Code Analysis**, select the **SonarQube** checkbox.
 13. Finally, click on **Save**.
-

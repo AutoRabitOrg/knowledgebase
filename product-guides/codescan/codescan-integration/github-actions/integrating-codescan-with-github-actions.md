@@ -82,6 +82,10 @@ You will need to replace the placeholder variables (in single quotes) in the env
 
 The **`failOnRedQualityGate`** parameter is available on _CodeScan scanner action version **1.4**_ and later.
 
+**`scanChangedFilesOnly`** parameter is set to **false** by default.  When set to **true**, the scan will only take changed files into account.
+
+The **`scanChangedFilesOnly`** parameter will only work on a pull request trigger.  It is available on CodeScan scanner action version **1.5** and later.
+
 Now, you will be able to view the **.yml workflow** on your repository.
 
 <figure><img src="../../../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>

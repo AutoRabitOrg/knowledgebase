@@ -2,16 +2,16 @@
 
 **Overview:** Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.\
 \
-This article delves into a specific scenario where the same file changes are merged twice within Git, exploring how Git manages commit history and why duplicate commits may occur under certain conditions.
+This article delves into a specific scenario in which the same file changes are merged twice within Git, exploring how Git manages commit history and why duplicate commits may occur under certain conditions.
 
-**Scenario Description:** In a recent test scenario, we replicated the following steps to observe Git's behaviour:
+**Scenario Description:** In a recent test scenario, we replicated the following steps to observe Git's behavior:
 
 1. **First Merge:**
-   * Initiated a merge operation with specific file changes and approved the merge.
+   * We initiated a merge operation with specific file changes and approved the merge.
    * Despite the identical changes, Git creates a new commit to record this merge in the repository.
 2. **Second Merge:**
    * Subsequently, another merge was initiated with the same file changes, involving the same source and destination branches and the same head revision.
-   * Approved the merge label and committed the changes.
+   * We approved the merge label and committed the changes.
 3. **Commit and Repository Update:**
    * The changes were pushed into the repository by clicking the commit button for the second merge.
    * Notably, the changes were already reflected in the repository after the commit for the first merge.
@@ -24,7 +24,7 @@ This article delves into a specific scenario where the same file changes are mer
 **Implications and Use Cases:**
 
 * **Version Control Integrity:** Despite creating duplicate commits, Git ensures the integrity of file contents by only recording changes distinct in timestamps and commit hashes.
-* **Tool Agnostic Behavior:** This behaviour remains consistent whether merges are performed directly through Git commands or integrated tools like AutoRABIT, emphasizing Git's robustness in managing version control operations.
+* **Tool-Agnostic Behavior:** This behavior remains consistent whether merges are performed directly through Git commands or integrated tools like AutoRABIT, emphasizing Git's robustness in managing version control operations.
 
 In conclusion, Git's capability to handle duplicate file change commits under specific chronological conditions highlights its flexibility and reliability in version control management. By understanding these nuances, teams can effectively manage and track changes across branches, ensuring a clear and accurate commit history within their repositories.
 

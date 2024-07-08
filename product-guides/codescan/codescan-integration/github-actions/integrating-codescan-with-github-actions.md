@@ -1,16 +1,16 @@
-# Integrating CodeScan with Github Actions
+# Integrating CodeScan with GitHub Actions
 
 {% hint style="info" %}
-**Note:** The creation of the project in CodeScan creates a webhook in GitHub.
+**Note:** The creation of a project in CodeScan creates a webhook in GitHub.
 {% endhint %}
 
 This webhook triggers on pushes to your tracked branch and certain pull request actions. These are: _**pull request opened, reopened, synchronized**_.
 
 The pull request triggers allow your comparisons in CodeScan to be kept up to date if the pull request is updated.
 
-### Running CodeScan SCA jobs from Github Workflow <a href="#running-codescan-sca-jobs-from-github-workflow" id="running-codescan-sca-jobs-from-github-workflow"></a>
+### Running CodeScan SCA jobs from GitHub Workflow <a href="#running-codescan-sca-jobs-from-github-workflow" id="running-codescan-sca-jobs-from-github-workflow"></a>
 
-You can now run CodeScan static code analysis jobs from Github workflow. The codescan action will produce a **SARIF report file** with the analysis result.
+You can now run CodeScan static code analysis jobs from GitHub workflow. The codescan action will produce a **SARIF report file** with the analysis result.
 
 There are only a few lines to add to your **.YML file** for codescan to be triggered.
 
@@ -21,7 +21,7 @@ First, we'll need to add your CodeScan token as a variable we can access in our 
 
 Now you'll be able to access this variable by using **`$codescan_token`** in your **.YML file**.
 
-If you do not have a workflow setup on your GitHub Repository, go to **`Actions > New workflow`** to create a **.yml workflow**.
+If you do not have a workflow setup on your GitHub repository, go to **`Actions > New workflow`** to create a **.yml workflow**.
 
 <figure><img src="../../../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,17 +84,17 @@ The **`failOnRedQualityGate`** parameter is available on _CodeScan scanner actio
 
 **`scanChangedFilesOnly`** parameter is set to **false** by default.  When set to **true**, the scan will only take changed files into account.
 
-The **`scanChangedFilesOnly`** parameter will only work on a pull request trigger.  It is available on CodeScan scanner action version **1.5** and later.
+The **`scanChangedFilesOnly`** parameter will only work on a pull request trigger. It is available on CodeScan scanner action version **1.5** and later.
 
 Now, you will be able to view the **.yml workflow** on your repository.
 
 <figure><img src="../../../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
 
-And also check for the name of the master branch on both CodeScan platform and Git repository, as the new Git update changed the name of master branch to main.
+And also check for the name of the master branch on both the CodeScan platform and the Git repository, as the new Git update changed the name of master branch to main.
 
-If the name on CodeScan platform is not the same as Git repository, go to your **`CodeScan project`** and then navigate to **`Dashboard > Administration > Branches & Pull Requests > Actions`** and change the **branch name**.
+If the name on the CodeScan platform is not the same as the Git repository, go to your **`CodeScan project`** and then navigate to **`Dashboard > Administration > Branches & Pull Requests > Actions`** and change the **branch name**.
 
-The branches names and comparisons are set by the following parameters:
+The branch names and comparisons are set by the following parameters:
 
 * **`sonar.pullrequest.key`**: The pull request number
 * **`sonar.pullrequest.base`**: The comparison branch for pull request type branches
@@ -102,13 +102,13 @@ The branches names and comparisons are set by the following parameters:
 
 The uploaded **SARIF file** in the **.yml** helps you to get the code analysis reports in two ways:
 
-1. For the files already existing in the repository, results can be found under code scanning alerts under the **`Security`** tab on Github repository.
+1. For the files already existing in the repository, results can be found under code scanning alerts under the **`Security`** tab on GitHub repository.
 
 <figure><img src="../../../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
 
-2.  For the new files being uploaded to the repository, you can view the analysis during the pull-requests on GitHub by clicking on the details:
+2.  For the new files being uploaded to the repository, you can view the analysis during the pull requests on GitHub by clicking on the details:
 
-    * Select the relevant pull-request and then click on **`Details`**.
+    * Select the relevant pull request and then click on **`Details`**.
 
     <figure><img src="../../../../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
 
@@ -117,9 +117,9 @@ The uploaded **SARIF file** in the **.yml** helps you to get the code analysis r
     <figure><img src="../../../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
 
     * Results are categorized as follows:
-      1. All the **bugs** and **vulnerabilities** are marked as **ERRORS**.
-      2. Whereas, all the major and minor **code smells** are marked as **WARNINGS**.
+      1. **Bugs** and **vulnerabilities** are marked as **ERRORS**.
+      2. Major and minor **code smells** are marked as **WARNINGS**.
 
-This **.yml file** helps you to run an analysis on the project while linking it to CodeScan.
+The **.yml file** helps you run an analysis on the project while linking it to CodeScan.
 
 You can go to the **`CI workflow`** under **`Git actions`** to view the analysis.

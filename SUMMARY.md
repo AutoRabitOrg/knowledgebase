@@ -632,7 +632,7 @@
       * [Integrating CodeScan in Bitbucket Pipelines](product-guides/codescan/codescan-integration/bitbucket-pipelines/integrating-codescan-in-bitbucket-pipelines.md)
     * [GitHub Actions](product-guides/codescan/codescan-integration/github-actions/README.md)
       * [CodeScan in Github Actions using the SFDX Plugin](product-guides/codescan/codescan-integration/github-actions/codescan-in-github-actions-using-the-sfdx-plugin.md)
-      * [Integrating CodeScan with Github Actions](product-guides/codescan/codescan-integration/github-actions/integrating-codescan-with-github-actions.md)
+      * [Integrating CodeScan with GitHub Actions](product-guides/codescan/codescan-integration/github-actions/integrating-codescan-with-github-actions.md)
     * [Jenkins](product-guides/codescan/codescan-integration/jenkins/README.md)
       * [CodeScan with Windows Agents](product-guides/codescan/codescan-integration/jenkins/codescan-with-windows-agents.md)
       * [CodeScan with Linux/Unix Agents](product-guides/codescan/codescan-integration/jenkins/codescan-with-linux-unix-agents.md)

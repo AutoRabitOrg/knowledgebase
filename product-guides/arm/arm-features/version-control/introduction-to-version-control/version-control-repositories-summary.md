@@ -8,11 +8,11 @@
 
 The lists of repositories you have added yourself and any other repositories your team members have shared can be seen on the **`VC Repo's`**` ``(`**`Version Control Repository)`** page.
 
-Repositories with **Salesforce DX** enabled will have ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613573720637.png) icon displayed, and nCino objects configured will have ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613574637463.png) icon beside their repository under **`Repositories List`** for easier identification.
+Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitbook/assets/image (1027).png>)icon displayed, and nCino objects configured will have![](<../../../../../.gitbook/assets/image (1028).png>)icon beside their repository under **`Repositories List`** for easier identification.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676053017632.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1029).png" alt="" width="231"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676053213037.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1030).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For each version control repository registered in ARM, the following information or fields are displayed:
 
@@ -29,13 +29,13 @@ Create a pull request to propose and collaborate on changes to a repository. Thi
 | `Enable nCino app`     | On selection, the nCino objects will get registered with the current repository.                                                                  |
 | `Pull Request Support` | Create a pull request to propose and collaborate on changes to a repository. This is discussed later.                                             |
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676053578831.png)
+<figure><img src="../../../../../.gitbook/assets/image (1031).png" alt=""><figcaption></figcaption></figure>
 
 #### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
 
 Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676053727602.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
 
 Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../external-pull-request/).
 
@@ -49,21 +49,21 @@ The Git tags created or branches registered for the version control repository w
 
 Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](version-control-branch-workflow.md))
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682075996942.png)
+<figure><img src="../../../../../.gitbook/assets/image (1033).png" alt=""><figcaption></figcaption></figure>
 
 **B. Register a Branch**
 
 Register an existing branch to the current repository. ([LEARN MORE](../))
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676054134635.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1034).png" alt=""><figcaption></figcaption></figure>
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676054216313.png)
+<figure><img src="../../../../../.gitbook/assets/image (1035).png" alt=""><figcaption></figcaption></figure>
 
 **C. Unregister a Branch**
 
 Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676054346674.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1036).png" alt=""><figcaption></figcaption></figure>
 
 **D. Sync Branches**
 
@@ -71,10 +71,9 @@ The **`Sync Branches`** option will allow you to view the branches that are no l
 
 **E. Branch Details:**
 
-For each branch, view the following details:\
+For each branch, view the following details:
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682076122660.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1037).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Branch Name:`** Name of the branch assigned.
 2.  **`Branch Settings:`**This option allows you to update your branch configuration, which means:
@@ -93,15 +92,15 @@ For each branch, view the following details:\
     * For ARM to detect your repository as being in DX format, it looks for an **sfdx-project.json** file in your local directory. The **sfdx-project.json** file is the configuration file. For the SFDX repository created outside and registered later with ARM, the source folder has to be declared in the **sfdx-project.json** file under the array named _packageDirectories_. This will allow you to pick the source folder you declared in the **sfdx-project.json** during the commit/ CI Job operation or while creating unlocked packages.&#x20;
     * The folder name must be entered in the **`Metadata Folder Path`** field for SFDX repositories where _foldername/force-app/main/default/_ counts as the metadata folder path.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676057120903.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../arm-administration/alm-management.md).\
+    <figure><img src="../../../../../.gitbook/assets/image (1038).png" alt="" width="511"><figcaption></figcaption></figure>
+3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../arm-administration/alm-management.md).
 
+<figure><img src="../../../../../.gitbook/assets/image (1039).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1682076638548.png" alt="" width="375"><figcaption></figcaption></figure>
 4. **`Status:`** View the branch status along with the branch log report.
 5. **`Info:`** Hover your mouse over the icon to view the branch details, such as the branch created date, parent branch, and author details.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1676054988068.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1040).png" alt=""><figcaption></figcaption></figure>
 
-1. **`Clear AutorabitExtId:`** Deletes the **`AutorabitExtId__c`** field from your branch.
-2. **`Migrate:`** Migrates custom object field **`Picklist`** to **`Value Set`** in your branch.
+6. **`Clear AutorabitExtId:`** Deletes the **`AutorabitExtId__c`** field from your branch.
+7. **`Migrate:`** Migrates custom object field **`Picklist`** to **`Value Set`** in your branch.

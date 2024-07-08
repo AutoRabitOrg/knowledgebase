@@ -42,6 +42,19 @@ This update improves the tool's efficiency and responsiveness and leverages new 
 
 The following weekly fixes were implemented.
 
+#### 10 July 2024
+
+ARM 24.1.4
+
+#### 10 July 2024
+
+**ARM 23.1.37**
+
+1. A use-case error identified in version 23.1 required a code fix applied in versions 23.1 and 24.1 to the Deployment and Version Control modules, to correct a scenario in an org-to-org full-profile deployment in which package visibility and permissions were not captured. Support ticket #110760
+2. A code fix was applied to versions 23.1 and 24.1 due to a use-case error identified in version 23.1 in which commits were failing with a 'no credentials mapped' error in the Version Control module. Support ticket #116704&#x20;
+3. A code fix identified in version 24.1 was applied to the Admin module in version 24.1 due to a use-case error identified by internal ticket in which the on-premises server was not starting up after migrating from 23.1 to 24.1 build.&#x20;
+4. A use-case error in the Version Control module identified in version 24.1 by internal ticket required a code fix to version 24.1 to correct an instance in which the user was unable to create a release label.
+
 #### 3 & 7 July 2024
 
 **ARM 24.1.3**

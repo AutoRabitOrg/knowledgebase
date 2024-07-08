@@ -86,14 +86,14 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
-#### **3 July 2024**
+#### **3 & 7 July 2024**
 
 **ARM 23.1.36**
 
-1. A code fix identified in version 23.1 was applied to correct a use-case error in the Version Control module of version 23.1 related to commit templates. Support tickets #116124, #116138
-2. A use-case error identified in version 23.1 required a code fix to the Deployment module, applied in versions 23.1 and 24.1, to correct metadata retrieval in the repository from failing. Support ticket #115818&#x20;
-3. A use-case error identified in version 23.1 required a code fix to the CI Jobs module, applied in versions 23.1 and 24.1, to correct instances where configuration changes were not being saved to the CI job. Support ticket #116047&#x20;
-4. A code fix identified in version 23.1 by internal request ticket was applied to the Admin and CI jobs modules in versions 23.1 and 24.1 to upgrade v61 (Beta) to v61.
+1. A use-case scenario identified an error in version 23.1 with metadata retrieval from the repository failing in the Deployment module, which was resolved in versions 23.1 and 24.1. Support ticket #115818
+2. A code fix identified in version 23.1 was applied to correct a use-case error in the Version Control module of version 23.1 related to commit templates. Support tickets #116124, #116138
+3. A code fix identified in version 23.1 by internal request ticket was applied to the Admin and CI jobs modules in versions 23.1 and 24.1 to upgrade v61 (Beta) to v61.
+4. A use-case error in version 23.1 required a code fix to version 23.1 Deployment and Version Control modules due to an org comparison not showing diff results. Support tickets #112752, #116025&#x20;
 
 #### 26 June 2024
 

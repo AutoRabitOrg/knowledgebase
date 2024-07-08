@@ -86,6 +86,14 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 10 July 2024
+
+**ARM 23.1.37**
+
+1. A use-case error identified in version 23.1 required a code fix, which was applied in versions 23.1 and 24.1 to the Deployment and Version Control modules, to correct a scenario in an org-to-org full-profile deployment where it was not capturing package visibility and permissions. Support ticket #110760
+2. A use-case error identified a code fix needed to the Reports module of version 23.1 to fix a product test class in which the weekly scheduled job failed. Support ticket #115654&#x20;
+3. A code fix was applied to versions 23.1 and 24.1 due to a use-case error identified in version 23.1 where commits were failing with a 'no credentials mapped' error in the Version Control module. Support ticket #116704
+
 #### **3 & 7 July 2024**
 
 **ARM 23.1.36**

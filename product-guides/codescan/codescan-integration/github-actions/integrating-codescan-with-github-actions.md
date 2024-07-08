@@ -1,23 +1,23 @@
 # Integrating CodeScan with GitHub Actions
 
 {% hint style="info" %}
-**Note:** The creation of a project in CodeScan creates a webhook in GitHub.
+
 {% endhint %}
 
-This webhook triggers on pushes to your tracked branch and certain pull request actions. These are: _**pull request opened, reopened, synchronized**_.
+The creation of a project in CodeScan creates a webhook in GitHub. This webhook triggers on pushes to your tracked branch and certain pull request actions. These are: _**pull request opened, reopened, synchronized**_.
 
 The pull request triggers allow your comparisons in CodeScan to be kept up to date if the pull request is updated.
 
 ### Running CodeScan SCA jobs from GitHub Workflow <a href="#running-codescan-sca-jobs-from-github-workflow" id="running-codescan-sca-jobs-from-github-workflow"></a>
 
-You can now run CodeScan static code analysis jobs from GitHub workflow. The codescan action will produce a **SARIF report file** with the analysis result.
+You can now run CodeScan static code analysis (SCA) jobs from GitHub workflow. The CodeScan action will produce a **SARIF report file** with the analysis result.
 
-There are only a few lines to add to your **.YML file** for codescan to be triggered.
+There are only a few lines to add to your **.YML file** for CodeScan to be triggered.
 
-First, we'll need to add your CodeScan token as a variable we can access in our **.YML file**.
+First, you'll need to add your CodeScan token as a variable you can access in your **.YML file**.
 
 * Open your project and navigate to **`Repository Settings > Secrets > Add new secret`**.
-* Add your token with the name **`codescan_token`** and check the **`Secured`** box. To learn how to generate a token, see [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
+* Add your token with the name **`codescan_token`** and check the **`Secured`** box. To learn how to generate a token, refer [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
 
 Now you'll be able to access this variable by using **`$codescan_token`** in your **.YML file**.
 
@@ -90,7 +90,7 @@ Now, you will be able to view the **.yml workflow** on your repository.
 
 <figure><img src="../../../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
 
-And also check for the name of the master branch on both the CodeScan platform and the Git repository, as the new Git update changed the name of master branch to main.
+Also check for the name of the master branch on both the CodeScan platform and the Git repository, as the new Git update changes the name of master branch to main.
 
 If the name on the CodeScan platform is not the same as the Git repository, go to your **`CodeScan project`** and then navigate to **`Dashboard > Administration > Branches & Pull Requests > Actions`** and change the **branch name**.
 

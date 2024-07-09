@@ -19,6 +19,25 @@ Starting **March 27, 2024**, we're thrilled to announce a new, streamlined relea
 We're committed to enhancing your experience and ensuring CodeScan meets your evolving needs. Stay tuned for more updates!
 {% endhint %}
 
+## Release Notes 24.0.7
+
+**Release Date: 14 June 2024**
+
+### Rule Updates&#x20;
+
+1. The 'Hard Coded Credentials' rule name has been changed to 'Use Named Credentials' for clarity.&#x20;
+2. 'Use Named Credentials' and 'Field Level Security' rules have updated descriptions highlighting Salesforce best practices and better paths to resolution.
+
+### Bug Fixes&#x20;
+
+Fixed a false positive in the rule 'Avoid using methods getDescribe and getMap inside Loops' when using custom methods with similar names.&#x20;
+
+A link was fixed on the rule description pages.&#x20;
+
+Filtering the list by project, the rule now works correctly.&#x20;
+
+New code settings no longer switch depending on the main branch of the project; all branches can be configured independently. A warning will be shown if the setting chosen will have no effect.
+
 ## Release Notes 24.0.6
 
 **Release Date: 5 June 2024**

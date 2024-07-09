@@ -21,4 +21,4 @@ You're getting an error because you're using an old version of CodeScan. Request
 
 The below-highlighted Subscription button will appear only if the customer procures more than 20+ licenses to manage different Teams.
 
-<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

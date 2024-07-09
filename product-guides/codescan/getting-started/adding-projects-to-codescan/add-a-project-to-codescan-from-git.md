@@ -6,23 +6,23 @@ This method can be used to add a project from any git-based SCM; however, if you
 1. Login to your **CodeScan** account.
 2. Once you log into your CodeScan account, click on the (**+**) icon in the top right corner and select **Analyze new project**.
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. It takes you to a different window. Choose the **Organization** for which you'd like to create a project.
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. In the next screen, click on **Add Analysis Project** option.
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. You will now see a new popup window; select **Git** from the given options.
 
-<figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6.  Enter the necessary information in the fields as mentioned below:
 
-    <figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
     * Fill in the **GIT repository URL**. You can add two types of URL addresses in the field:
       1. An **HTTPS URL** like **`https://github.com/user/repo.git`**

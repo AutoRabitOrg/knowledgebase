@@ -27,15 +27,15 @@ Before configuring SSO in Azure AD, you must enable SSO in CodeScan.
 
 1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Go to **`Administration > SAML Connections`**.
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **`Create Connection`**.
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `AD-SAML`
@@ -50,42 +50,42 @@ Before configuring SSO in Azure AD, you must enable SSO in CodeScan.
     * If the **`Enforce SSO`** checkbox is enabled prematurely, it will prohibit all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 7. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
 
 8. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to Azure AD.
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: Configuring Azure <a href="#step-2-configuring-azure" id="step-2-configuring-azure"></a>
 
 1. Log in to the Azure portal (https://portal.azure.com/). In the left-hand menu, click **`Azure Active Directory > Enterprise applications`**.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select **`All applications`** under the **`Manage`** section.
 3. Click **`+ New application`** at the top of the screen.
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 4. On the next screen, click on the **`+ Create your own application`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1).png" alt="" width="349"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1).png" alt="" width="349"><figcaption></figcaption></figure>
 
 5. Enter the name of the app as **`CODESCAN`** and choose the third option i.e., **`Integrate any other application you don't find in the gallery (Non-gallery)`**. Click **`Create`**.
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
 
 6. Once the CodeScan application is created, click on **`Single sign-on`** under the **`Manage`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
 
 7. On the **`Select a Single sign-on method`** dialog, select **`SAML`** mode to enable single sign-on.
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. On the **`Set up Single Sign-On with SAML`** page, click the **`Edit (pencil)`** icon for **`Basic SAML Configuration`** to edit the settings.
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9.  On the **`Basic SAML Configuration`** section, perform the following steps:
 
@@ -94,7 +94,7 @@ Before configuring SSO in Azure AD, you must enable SSO in CodeScan.
       **For example:** If your **instance URL** is `https://app.codescan.io` and the **connection\_id** is `AD-SAML,` your **Reply URL** would be _`https://app.codescan.io/_codescan/login/saml2/sso/OKTA-SAML`_\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
     * Click **`Save`** and close the dialog box.
 
@@ -109,15 +109,15 @@ _Connection\_Id-_ `AD-SAML`
 
 10. Click the **`Edit (pencil)`** icon for **`Attributes & Claims`** to edit the attributes settings.
 
-<figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. On the **`Attributes & Claims`** section, delete the auto-generated claims available in the **`Additional claims`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 12. Next, click on **`+ Add New Claim`**.
 
-<figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. In the **`Manage Claim`** page, fill in the below details:
 
@@ -133,7 +133,7 @@ _Connection\_Id-_ `AD-SAML`
 | saml\_username | Attribute | user.mail        |
 | saml\_name     | Attribute | user.displayname |
 
-<figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 16. Close the dialog box and navigate to **`Users and groups`** section. Click on **`+ Add user/group`** button to assign users and groups to app-roles for the CodeScan application.
 17. Click on **`Single sign-on`** to navigate back to the **`Set up Single Sign-On with SAML`** page.
@@ -150,22 +150,22 @@ Now that your Azure SSO implementation is set up, you’ll need to follow just a
 
 1. In **CodeScan**, on the **`SAML`** page, go to **`Actions`** and click on **`Edit`**.
 
-<figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Open the **`Federation Metadata XML`** certificate that you have earlier downloaded from Azure in a new tab of your browser.
 3.  In the **`Edit SAML Connection`** dialog box on CodeScan, enter the following values:
 
     * **`Provider Entity Id`**: Copy the **entityID** value from the _Federation Metadata XML certificate_ and paste it into **`Provider Entity Id`** inside CodeScan.
 
-    <figure><img src="../../../../.gitbook/assets/image (40) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **`Sign In URL`**: Copy the **SingleSignOnService Location** value and paste it into the **`Sign In URL`** inside CodeScan.
 
-    <figure><img src="../../../../.gitbook/assets/image (41) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Open the **Certificate (Base64)** that you have downloaded from Azure in your Notepad++, copy the entire content and paste into the **`X509 Signing Certificate`** field of the CodeScan SAML connection.
 
-    <figure><img src="../../../../.gitbook/assets/image (42) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
 4. Click **`Update`** on the CodeScan page.
 5. The next step is to confirm your corporate domain to get the SSO working. You can confirm domain via raising a request to [Codescan Support](https://mailto:support@autorabit.com/).
 

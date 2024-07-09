@@ -28,7 +28,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
    * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (69) (1) (1) (1).png" alt="" data-size="line">) icon under the **`Actions`** tab.
 4. To initiate a new backup, click on **`Backup Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -39,17 +39,17 @@ Vault suits the Salesforce environment and is built for our customers to protect
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
 
 8. You'll be taken to the **`Backup Summary`** screen to display the status of the recently triggered backup activity.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Backup Summary  <a href="#backup-summary" id="backup-summary"></a>
 
 For each backup performed inside Vault, you will find the details below on the **`Backup Summary`** screen.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

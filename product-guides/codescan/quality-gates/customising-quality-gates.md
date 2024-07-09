@@ -2,7 +2,7 @@
 
 The Quality Gates gives you a **Pass** or **Fail** rating for your project, depending on your provided metrics.
 
-<figure><img src="../../../.gitbook/assets/image (68) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To create a new Quality Gate, follow the steps below:
 

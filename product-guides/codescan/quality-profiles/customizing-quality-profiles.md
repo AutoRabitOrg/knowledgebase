@@ -18,40 +18,40 @@ To customize the Quality Profile, follow the steps below:
 
 1. Access the Quality Profile menu from the Organization’s home page.
 
-<figure><img src="../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Use the **Create** button at the top right of the page to create a new Quality Profile.
 3. Enter the **Name** and choose a **Language** for the profile. Additionally, you can give your new profile a **Parent** profile.
 4. Click **Create**.
 
-<figure><img src="../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. Click on the (![](<../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1).png>)) icon and then click on **Copy** to copy a default profile.
+5. Click on the (![](<../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1).png>)) icon and then click on **Copy** to copy a default profile.
 
-<figure><img src="../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Once you have chosen a name for your profile, click the **Activate More** button to begin your customization.
 
-<figure><img src="../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1).png" alt="" width="344"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1).png" alt="" width="344"><figcaption></figcaption></figure>
 
 7. Use the filters on the left to determine the rules you want to see, and click the **active/inactive** button to add/remove them from your quality profile.
 
-<figure><img src="../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. You can bulk activate/deactivate rules for your profile using the **Bulk Change** button.
 
-<figure><img src="../../../.gitbook/assets/image (49) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. When activating a rule, you will be given the option to change its **severity** and any other parameters the rule may have.
 
-<figure><img src="../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
 
 > **Example**:\
 > You can update the severity of the rule to `Major/Critical/Minor/Blocker/Info`
 >
-> ![](<../../../.gitbook/assets/image (56) (1) (1) (1) (1).png>)
+> ![](<../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1).png>)
 >
 > To use the rule mentioned above, the parameter `minimumCommentDensity` needs to be set to a value. The minimum value is 25. If you use the value of 35 as an example, the density of comment lines of 35 will be considered.
 >
@@ -61,12 +61,12 @@ To customize the Quality Profile, follow the steps below:
 > `Suppress`: _Unit test violations will be suppressed._\
 >
 >
-> ![](<../../../.gitbook/assets/image (57) (1) (1) (1).png>)
+> ![](<../../../.gitbook/assets/image (57) (1) (1) (1) (1).png>)
 
 ### Setting a default Quality Profile <a href="#setting-a-default-quality-profile" id="setting-a-default-quality-profile"></a>
 
 By setting a default Quality Profile, you assign every project without a specific Quality Profile to use the default one. To assign Quality Profiles to specific Projects, use the **Project Settings > Quality Profiles** menu for your project and select the one you would like to use.
 
-<figure><img src="../../../.gitbook/assets/image (58) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (58) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (59) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (59) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>

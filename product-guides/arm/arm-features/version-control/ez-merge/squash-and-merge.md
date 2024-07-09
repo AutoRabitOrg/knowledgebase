@@ -45,7 +45,8 @@ Date:   Sun Feb 6 14:34:35 2022 +0530
 
 Here we want to squash the fifth, sixth, and seventh commit and create a new commit on top of commit 64710 (lets name it as target).
 
-**After Squash:**\
+**After Squash:**
+
 This results in a single commit with a commit message that is a concatenation of all three messages. All intermediary commits are gone and ready to merge!
 
 ```
@@ -73,10 +74,9 @@ Date:   Sun May 6 14:34:35 2022 +0530
 
 All you have to do is select the **Squash and Merge** checkbox while creating a merge request.
 
-Explore: **Version Control > Merge Request History > New Merge Request**.\
+Explore: **Version Control > Merge Request History > New Merge Request**.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-RICA4M0Y.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (79).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### When to delete source branch in squash merge? <a href="#when-to-delete-source-branch-in-squash-merge" id="when-to-delete-source-branch-in-squash-merge"></a>
 

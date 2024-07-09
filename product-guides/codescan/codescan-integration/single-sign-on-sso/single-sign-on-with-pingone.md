@@ -18,15 +18,15 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 
 1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Go to **`Administration > SAML Connections`**.
 
-<figure><img src="../../../../.gitbook/assets/image (74).png" alt="" width="284"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74) (1).png" alt="" width="284"><figcaption></figcaption></figure>
 
 3. Click on **`Create Connection`**.
 
-<figure><img src="../../../../.gitbook/assets/image (71).png" alt="" width="492"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (71) (1).png" alt="" width="492"><figcaption></figcaption></figure>
 
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `PingOne-SAML`
@@ -42,11 +42,11 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 3. If the **`Enforce SSO`** is enabled prematurely, it will prevent all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 4. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 
-![](<../../../../.gitbook/assets/image (72).png>)
+![](<../../../../.gitbook/assets/image (72) (1).png>)
 
 5. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to PingOne.
 
-<img src="../../../../.gitbook/assets/image (73).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (73) (1).png" alt="" data-size="original">
 {% endhint %}
 
 ### Step 2: Adding CodeScan as an App in PingOne <a href="#step-2-adding-codescan-as-an-app-in-pingone" id="step-2-adding-codescan-as-an-app-in-pingone"></a>
@@ -57,24 +57,24 @@ Set up the PingOne application to provide necessary configuration information fo
 2. Select the **`Environment`**.
 3. Go to the **`Connections`** tab and select **`Applications`** as a sub-tab.
 
-<figure><img src="../../../../.gitbook/assets/image (75).png" alt="" width="232"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (75) (1).png" alt="" width="232"><figcaption></figcaption></figure>
 
-4. Click on the![](<../../../../.gitbook/assets/image (76).png>)icon besides **`Applications`** to add a new app.
+4. Click on the![](<../../../../.gitbook/assets/image (76) (1).png>)icon besides **`Applications`** to add a new app.
 5.  In the **`Add Application`** section,
 
     * Enter **`CodeScan`** for the application name and give a short description.
     * Choose **`Application Type`** as **`SAML Application`**.
 
-    <figure><img src="../../../../.gitbook/assets/image (78).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (78) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 6. Click **`Configure`**.
 7. In the **`SAML Configuration`** section, select the **`Import From URL`** option.
 8. Enter the same **`Metadata URL`** which you have generated inside CodeScan.
 
-<figure><img src="../../../../.gitbook/assets/image (79).png" alt="" width="441"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (79) (1).png" alt="" width="441"><figcaption></figcaption></figure>
 
 9. Click on the **`Import`** button. The metadata should be successfully imported, and you should see the parsed metadata values.
 
-<figure><img src="../../../../.gitbook/assets/image (80).png" alt="" width="430"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80) (1).png" alt="" width="430"><figcaption></figcaption></figure>
 
 10. Click **`Save`**.
 

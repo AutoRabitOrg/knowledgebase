@@ -17,11 +17,11 @@ This is an initial step where the user's JIRA credential, such as username and p
 1. Log in to your ARM account.
 2. Hover your mouse over the **Admin** module and click on the **Credentials** tab.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 3. Next, click on **Create Credential** from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **Credential name**.
 5. Choose the **Credential Type** as '**User name with Password.'**
@@ -29,7 +29,7 @@ This is an initial step where the user's JIRA credential, such as username and p
 7. Please double-check that you use your JIRA username instead of the email address that you use to log in to JIRA.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Troubleshooting:**
@@ -49,11 +49,11 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 2. Go to **Admin > My Account** section.
 3. Click on **New ALM System** under the **ALM Management** section.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select **ALM type** as '**JIRA'** from the drop-down.
 
-<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt="" width="379"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 
 5. Enter the **label name** of your own choice.
 6. Enter your JIRA subdomain (e.g., _https://\[subdomain].atlassian.net_) in the **URL** field.
@@ -78,7 +78,7 @@ Once you are done registering the plugins with ARM, make sure you map the JIRA A
 4. Select the **label** and the **project**.
 5. Click **Save Mappings**. The selected plugin will be mapped with your Salesforce Org.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Configuring JIRA Work items in ARM <a href="#configuring-jira-work-items-in-arm" id="configuring-jira-work-items-in-arm"></a>
 
@@ -93,7 +93,7 @@ In the **EZ-Commit** screen and under the **Post Commit** section, you need to:
 3. Select the **ALM Label, project,** and the **sprint** for which the commit is planned.
 4. Select the **work item** and the **status**.
 
-<figure><img src="../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the changes are committed to the version control system, the status of the ALM work item is updated and reflected in your ALM system.
 
@@ -113,19 +113,19 @@ Configuring the Jira work items is applicable to the following CI jobs:
 1. Go to the **Build** section under the **New Create CI Job** screen.
 2. Tick the **Map ALM Project (Ex: Jira)** checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt="" width="441"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1) (1).png" alt="" width="441"><figcaption></figcaption></figure>
 
 3. Go to the **ALM** section. Here you can configure the work item type status in JIRA ALM to include in the build.
 4. Select the **ALM type** as **JIRA.**
 5. Select the **ALM Label** and its related **Projects**.
 
-<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. The active sprint(s) for the above-selected Project will be available in the **Sprint** drop-down. ARM has given provisions for you to update multiple sprints related to tasks or bugs and update the status on the go when running the CI Job. You can select either one of the sprints or if you wish to update the status for all the sprints, leave it as default, i.e., keep **'All Active Sprints'** in the selected mode.
 
-<figure><img src="../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the **Work Item** type. Here you can select multiple work items that you like the update the status in your ALM. To use all the work item types, keep the **'All Work Item Type'** option selected by default.
 8. Based on the above work item selected, you need to update the status for each work item type. See the screenshot attached.
 
-<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>

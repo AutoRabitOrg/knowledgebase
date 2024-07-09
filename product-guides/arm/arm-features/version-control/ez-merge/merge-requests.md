@@ -20,29 +20,32 @@ To initiate a new merge request, go to the [**Version Control**](https://www.aut
 
 The **Merge Request History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 
-![merge request](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628537831330.png)
+<figure><img src="../../../../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. On the **New Merge Request** page, choose the **source repository** and **branch** that contain your changes, and the **target branch** where you want to merge the changes.
-2. Click on **Compare Branches and Continue**.![new merge request](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628537891364.png)
+2. Click on **Compare Branches and Continue**.
+
+<figure><img src="../../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
 3. On the next screen, give the merge request a **name** and a short **description** (if required).
 4. Enter the **assignee** username. You can assign the merge request to yourself by clicking on the _assign to yourself_ link. The assignee will be notified by email about the created merge request.
 5. In the **Approver** field, enter the user email address from whom you want to request a review. It is also possible to assign multiple approvers to review your merge request.&#x20;
 6. Enable the **"Delete Source Branch when Merge Request is closed"** option to keep your repository clean. By doing this, the source branch will be automatically deleted right after the merge request is accepted. This is optional.
 7. **Squash and Merge**: Sometimes, when merging a long list of changes from a development branch into the master, it’s useful to squash those commits into one change for ease of review and to declutter the repo’s commit history. AutoRABIT now offers the option to squash all of the commits in a merge request into one commit after the merge is approved and completed. **(**[**Learn More**](squash-and-merge.md)**)**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1645124182768.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58).png" alt="" width="561"><figcaption></figcaption></figure>
 
-1. In the **ALM DETAILS** section, you will have the list of the Jira IDs with the current status and the expected status after a successful merge.For no ALM configured, you will have the message popup stating **"No ALM details found."**
+8. In the **ALM DETAILS** section, you will have the list of the Jira IDs with the current status and the expected status after a successful merge.For no ALM configured, you will have the message popup stating **"No ALM details found."**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1655102472978.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59).png" alt="" width="563"><figcaption></figcaption></figure>
 
-1. Click on **Create Merge Request.**
+9. Click on **Create Merge Request.**
 
 ### Running a merge request during CI Job <a href="#running-a-merge-request-during-ci-job" id="running-a-merge-request-during-ci-job"></a>
 
 While triggering a new CI job, you can run a merge request on your GitHub version control repository. To do so, select the **Merge Request** checkbox for your repo under the **Build** section.&#x20;
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1616440072882.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 Whenever the job runs, [AutoRABIT](https://www.autorabit.com/) will run a merge request on the target branch, and the details can be found on the **Merge Request History** page.
 
@@ -50,10 +53,9 @@ Whenever the job runs, [AutoRABIT](https://www.autorabit.com/) will run a merge 
 
 When the assignee initiates a new merge request, an email notification is sent to the assignee's email address. The approvers, on the other hand, are responsible for analyzing and approving or rejecting merge requests, and they will be notified through email whenever one arrives. The assignee and the relevant approvers will also be notified via email anytime there is an update or addition of comments to the merge requests.
 
-**Sample email attached:**\
+**Sample email attached:**
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1625829935598.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (61).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Merge Request History <a href="#merge-request-history" id="merge-request-history"></a>
 
@@ -61,43 +63,46 @@ The merge request screen displays the list of merge requests created to date alo
 
 It's a good idea to break data into multiple pages when dealing with multiple merge request records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628585290930.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-1.  Under the **Detail View**, you can find detailed information for the initiated merge request.
+1. Under the **Detail View**, you can find detailed information for the initiated merge request.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628585522067.png" alt=""><figcaption></figcaption></figure>
-2.  The status will be shown as **Open** for the merge request in the open state, or, **Merge Conflict** for any merging conflicts, which you need to resolve before merging the changes to the target branch. The status normally appears as **Commit** for no conflicts.
+<figure><img src="../../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1640027716321.png" alt=""><figcaption></figcaption></figure>
+2. The status will be shown as **Open** for the merge request in the open state, or, **Merge Conflict** for any merging conflicts, which you need to resolve before merging the changes to the target branch. The status normally appears as **Commit** for no conflicts.
+
+<figure><img src="../../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+
 3.  The merge request log details, together with the metadata changes report, commits, and the comments can be viewed here.&#x20;
 
-    1.  **Log**: Contains the detailed history of the check-in performed.
+    * **Log**: Contains the detailed history of the check-in performed.
 
-        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1640027755715.png" alt="" width="563"><figcaption></figcaption></figure>
-    2. Log Statuses:For each operation performed in the commit phase, the log report will be available. A (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1602090365748.png)) mark against each log segment shows the completion of the operation; you will have (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1602090382768.png)) and (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1602090395794.png)) icons, respectively present against each log segment for a failed or a partially successful operation.
-    3. **Files Changed**: This tab displays the number of insertions and deletions to each metadata file. The lines highlighted in **RED** color indicate those are updated (added/deleted/modified) in the source branch and in **GREEN** color indicate those are updated (added/deleted/modified) in the destination branch. The highlighted lines are the modified lines.
+    <figure><img src="../../../../../.gitbook/assets/image (65).png" alt="" width="497"><figcaption></figcaption></figure>
 
+    * **Log Statuses:** For each operation performed in the commit phase, the log report will be available. A (![](<../../../../../.gitbook/assets/image (66).png>)) mark against each log segment shows the completion of the operation; you will have (![](<../../../../../.gitbook/assets/image (67).png>)) and (![](<../../../../../.gitbook/assets/image (68).png>)) icons, respectively present against each log segment for a failed or a partially successful operation.
+    * **Files Changed**: This tab displays the number of insertions and deletions to each metadata file. The lines highlighted in **RED** color indicate those are updated (added/deleted/modified) in the source branch and in **GREEN** color indicate those are updated (added/deleted/modified) in the destination branch. The highlighted lines are the modified lines.
 
+    <figure><img src="../../../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1643981571632.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
+{% hint style="danger" %}
 **nCino Changes Limitation:** In the **File View**, nCino-related metadata and data components will show the differences, but the **Path View** will be empty.
 {% endhint %}
 
-4.  **ALM Details:** This section displays the ALM status for your configured work items.
+4. **ALM Details:** This section displays the ALM status for your configured work items.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1642939845431.png" alt=""><figcaption></figcaption></figure>
-5.  **Commits**: If there are already commits on the branch, those will be listed in this tab.
+<figure><img src="../../../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1640027887896.png" alt=""><figcaption></figcaption></figure>
-6.  **Comments**: In the comments tab, add your suggestions or other information required. You can edit your own comments at any time, reply to a comment or delete it. Replying to a comment creates another comment.\
+5. **Commits**: If there are already commits on the branch, those will be listed in this tab.
 
+<figure><img src="../../../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1640027936576.png" alt=""><figcaption></figcaption></figure>
-7.  **CI Info**: This tab details when you have enabled pull requests while creating a CI job. Along with your CI job details, you can also find the SCA report in detail (PMD).
+6. **Comments**: In the comments tab, add your suggestions or other information required. You can edit your own comments at any time, reply to a comment or delete it. Replying to a comment creates another comment.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1640028941677.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+
+7. **CI Info**: This tab details when you have enabled pull requests while creating a CI job. Along with your CI job details, you can also find the SCA report in detail (PMD).
+
+<figure><img src="../../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ### Reviewing the Merge Request <a href="#reviewing-the-merge-request" id="reviewing-the-merge-request"></a>
 
@@ -111,24 +116,22 @@ After you create a merge request, you can ask a specific person to review your p
 
 1. **Filtering merge requests by “repository”**: To filter merge requests by repository, you can select your source repository from the dropdown.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628586566480.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-1. **Filtering merge requests by “status”:** You can search through **Open**, **Closed**, **All** issues, or **Opened** issues assigned to you directly from the **Filter By** dropdown for your selected source repository.
+2. **Filtering merge requests by “status”:** You can search through **Open**, **Closed**, **All** issues, or **Opened** issues assigned to you directly from the **Filter By** dropdown for your selected source repository.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628586606733.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
-1. **Filtering merge requests by “title”**: You can filter merge requests by specific terms included in titles.
+3. **Filtering merge requests by “title”**: You can filter merge requests by specific terms included in titles.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628586700974.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
-1.  **Advanced Filters:**
+4.  **Advanced Filters:**
 
-    1. **Filtering merge requests by “branch”**: Filters merge requests by source/target branch.
-    2. **Filtering merge requests by “author”**: To filter merge requests by a particular user, you can select the user from the **Author** dropdown.
-    3. **Filtering merge requests by “date range”:** You can select a date range to show only the merge requests contained during that time frame.
+    * **Filtering merge requests by “branch”**: Filters merge requests by source/target branch.
+    * **Filtering merge requests by “author”**: To filter merge requests by a particular user, you can select the user from the **Author** dropdown.
+    * **Filtering merge requests by “date range”:** You can select a date range to show only the merge requests contained during that time frame.
 
+    <figure><img src="../../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628586755156.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628586784166.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>

@@ -44,11 +44,7 @@ The following weekly fixes were implemented.
 
 #### 10 July 2024
 
-ARM 24.1.4
-
-#### 10 July 2024
-
-**ARM 23.1.37**
+**ARM 24.1.4**
 
 1. A use-case error identified in version 23.1 required a code fix applied in versions 23.1 and 24.1 to the Deployment and Version Control modules, to correct a scenario in an org-to-org full-profile deployment in which package visibility and permissions were not captured. Support ticket #110760
 2. A code fix was applied to versions 23.1 and 24.1 due to a use-case error identified in version 23.1 in which commits were failing with a 'no credentials mapped' error in the Version Control module. Support ticket #116704&#x20;

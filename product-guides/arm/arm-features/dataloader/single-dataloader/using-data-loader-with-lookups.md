@@ -16,18 +16,15 @@ You can use Lookups to **Insert**, **Update**, or **Upsert** data in Data Loader
 
 Assuming you create an **Insert** task, and have uploaded the CSV file to import, and, when you reach the **Fields Mapping** step, you will be able to find the **"Lookup via"** checkbox.
 
-**For example:** To map the **Account Name** to the **AccountID** in Salesforce, click on the **"Lookup via"** checkbox and select the field you want to use to search the ID. In this example, you have selected **'Account Name'**, which is the field you want to use to search the ID. So, when you run the task, ARM dataloader will go and search for the **Account ID** using the **Account Name** on each case, and send the IDs that Salesforce is expecting.\
+**For example:** To map the **Account Name** to the **AccountID** in Salesforce, click on the **"Lookup via"** checkbox and select the field you want to use to search the ID. In this example, you have selected **'Account Name'**, which is the field you want to use to search the ID. So, when you run the task, ARM dataloader will go and search for the **Account ID** using the **Account Name** on each case, and send the IDs that Salesforce is expecting.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-M6ZL3C6Q.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 ### More Lookup Options <a href="#more-lookup-options" id="more-lookup-options"></a>
 
 **Use first match in multiple results**
 
-Data Loader will pick the first value if more than one match is found for the selected non-unique field. In the above example, there might be more than one Account under the name **'GenePoint'**, in such a case, the data loader will just use the ID of the first occurrence of those Accounts.\
-\
-
+Data Loader will pick the first value if more than one match is found for the selected non-unique field. In the above example, there might be more than one Account under the name **'GenePoint'**, in such a case, the data loader will just use the ID of the first occurrence of those Accounts.
 
 **Mark record with an error if more than one match is found**
 

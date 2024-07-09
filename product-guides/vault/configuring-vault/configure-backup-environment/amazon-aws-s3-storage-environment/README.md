@@ -7,11 +7,11 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 1. Log in to the AWS Console at [https://aws.amazon.com/console/](https://aws.amazon.com/console/)
 2. From the storage service, click on **S3**.
 
-<figure><img src="../../../../../.gitbook/assets/image (87) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (87) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **Create Bucket**. The **Create bucket** page opens.
 
-<figure><img src="../../../../../.gitbook/assets/image (88) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (88) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the **Bucket name**.The Bucket name must:
    * Should be unique across the globe
@@ -21,13 +21,13 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 5. In **Region**, choose the AWS Region where you want the bucket to reside (keep a note of the AWS region chosen by you. _For ex- us-east-2_). This will come in handy when you configure the bucket in Vault.
 6. Choose **Create bucket**.
 
-<figure><img src="../../../../../.gitbook/assets/image (89) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (89) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. Once you're done creating the bucket, go to the **Properties** tab.
 8. Click on **Default Encryption** and choose the second option i.e., **AES-256**.
 9. Click on the **Save** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (90) (1) (1).png" alt="" width="422"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (90) (1) (1) (1).png" alt="" width="422"><figcaption></figcaption></figure>
 
 10. Next, search for **IAM** from the **AWS Management console** homepage.
 11. Click on **Policies > Create policy**.

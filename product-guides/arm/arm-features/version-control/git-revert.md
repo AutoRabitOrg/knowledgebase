@@ -18,32 +18,30 @@ To revert a commit, simply click on three dots at the end of any commit from the
 
 The **New EZ-Commit** screen is best viewed when the zoom setting is set to **75%** on your chrome/firefox browser.
 
-![Revert a Commit](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621276290272.png)
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 A revert introduces a new commit to the commit history whose sole purpose is to undo the changes of a targeted commit. Importantly, this means that the existing commit history prior to the newly added "undo" commit, including the original error commit, is preserved. A revert will create a new commit with a new revision number to track the changes. The reverted commits will have the identification initials as **RC** with a different label name starting with **Revert commit - {label name used earlier}**. You can view the list of committed files for the reverted commit in the **Detailed View** under the **Committed Files** tab.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621277415239.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-![Committed Files](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621277514973.png)
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Email notifications are triggered for each revert commit along with the summary and the status report (success, failed, or revert conflicts). Sample email notifications are attached here (one with a successful revert commit and the other with conflicts):
 
-Success Revert Commits
+**Success Revert Commits**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621279367911.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Revert Commits Conflicts
+**Revert Commits Conflicts**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621279653156.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Conflicts in Revert Commit <a href="#conflicts-in-revert-commit" id="conflicts-in-revert-commit"></a>
 
 The revert feature will revert the changes of a given commit, and it will compare your current state with the PARENT of that commit whose changes you are reverting. If the current state and that parent conflict, you will get a revert commit status as **Merge Conflict**. In this case, you must first resolve the conflict (using the **Resolve Conflict** button) before proceeding with the reverting of your commits.
 
-![Conflicts in Revert Commit](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621278710086.png)
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-The next screen is the **Resolve Conflicts** screen, where you can see the files that are in conflict on the left side under the Conflicted Files section. Either you can download the conflict files in your local system, resolve them and upload them again and proceed with the commit or you can use the AutoRABIT inline editor to resolve the conflicted files. [Merge Conflicts](ez-merge/merge-conflicts.md)
+The next screen is the **Resolve Conflicts** screen, where you can see the files that are in conflict on the left side under the Conflicted Files section. Either you can download the conflict files in your local system, resolve them and upload them again and proceed with the commit or you can use the AutoRABIT inline editor to resolve the conflicted files. [Merge Conflicts](ez-merge/merge-conflicts.md).
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1621279032562.png" alt=""><figcaption></figcaption></figure>
-
-Was this article helpful?
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>

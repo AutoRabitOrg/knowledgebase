@@ -33,6 +33,6 @@ Follow the steps given below to configure a proxy server:
 
     <figure><img src="../../../.gitbook/assets/image (139).png" alt="" width="434"><figcaption></figcaption></figure>
 5. Click **Submit**. You'll redirected to the **Proxy Configuration Settings** homepage where you can find your recently created proxy on the top of the list.
-6. Using the **Edit** (![](<../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1).png>)) icon, you can later edit the proxy setups or **Delete** (![](<../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1).png>)) any proxy that is no longer needed.
+6. Using the **Edit** (![](<../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1).png>)) icon, you can later edit the proxy setups or **Delete** (![](<../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1) (1).png>)) any proxy that is no longer needed.
 
 <figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>

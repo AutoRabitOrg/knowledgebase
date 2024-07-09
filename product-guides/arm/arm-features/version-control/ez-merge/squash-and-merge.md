@@ -76,7 +76,7 @@ All you have to do is select the **Squash and Merge** checkbox while creating a 
 
 Explore: **Version Control > Merge Request History > New Merge Request**.
 
-<figure><img src="../../../../../.gitbook/assets/image (79).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (79) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### When to delete source branch in squash merge? <a href="#when-to-delete-source-branch-in-squash-merge" id="when-to-delete-source-branch-in-squash-merge"></a>
 

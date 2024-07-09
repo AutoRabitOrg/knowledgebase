@@ -9,28 +9,34 @@ Commit Templates are predefined collections of metadata that you use regularly t
 To create a fresh commit template:
 
 1. Sign in to your AutoRABIT account.
-2. Click **Create New > New Commit Template** from the top navigation bar or hover your mouse over the **Version Control** tab and select **Commit Templates**. Click on **New Commit Template**.The **Commit Templates** screen is best viewed when the zoom setting is set to **75%** on your chrome/firefox browser.
+2. Click **Create New > New Commit Template** from the top navigation bar or hover your mouse over the **Version Control** tab and select **Commit Templates**.&#x20;
+3. Click on **New Commit Template**. The **Commit Templates** screen is best viewed when the zoom setting is set to **75%** on your chrome/firefox browser.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628488177054.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3. Give the template a **Label Name**.&#x20;
-4. Choose the **Source Org**. All available metadata will be fetched based on the source org selection.Important Note:The templates aren't dependent on the Source Org you choose. This means you can use this template to add/modify metadata components from different Salesforce Organizations.
-5. **Optional:** Enter a description of the template.
-6. Click **Next**.
+4. Give the template a **Label Name**.&#x20;
+5. Choose the **Source Org**. All available metadata will be fetched based on the source org selection.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1620934489196.png" alt="" width="563"><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Important Note:** The templates aren't dependent on the Source Org you choose. This means you can use this template to add/modify metadata components from different Salesforce Organizations.
+{% endhint %}
 
-7. Choose the **metadata components (including their members)** that should be included in the template. Use the **search** filter to quickly find and add any particular metadata member.
-8. The **Selected** tab will show you all of the metadata you've chosen and are ready to use in the template.
+6. **Optional:** Enter a description of the template.
+7. Click **Next**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1620935119528.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-9. Click **Next**.
-10. The next screen will allow viewing the components you're going to use in the template one more time before you save it. You can also go back to the previous screen and add any metadata components that were overlooked.
-11. Finally, click on **Save Template**.&#x20;
-12. You'll be redirected to the **Commit Templates Summary** page after confirmation, where you'll see your freshly created commit template at the top of the list.
+8. Choose the **metadata components (including their members)** that should be included in the template. Use the **search** filter to quickly find and add any particular metadata member.
+9. The **Selected** tab will show you all of the metadata you've chosen and are ready to use in the template.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1620935690490.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+10. Click **Next**.
+11. The next screen will allow viewing the components you're going to use in the template one more time before you save it. You can also go back to the previous screen and add any metadata components that were overlooked.
+12. Finally, click on **Save Template**.&#x20;
+13. You'll be redirected to the **Commit Templates Summary** page after confirmation, where you'll see your freshly created commit template at the top of the list.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 For each commit template, you can find the below details:
 
@@ -40,8 +46,8 @@ For each commit template, you can find the below details:
 | Created By             | The author who created the template                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Created Date/Timestamp | Date and Timestamp when the template was created                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Description            | The template's description. If nothing appears, it means that no description was given at the time the template was created.                                                                                                                                                                                                                                                                                                                              |
-| Last Used              | <p>Timestamp when the template was last used.<br><strong>Note:</strong> The templates used for the commit process will be color-coded in GREEN for easier differentiation, while the unused templates will be color-coded in ORANGE.</p>                                                                                                                                                                                                                  |
-| Share Template         | <p>Share your template with the rest of your team.</p><p><strong>Note:</strong> The text will appear as <strong>Shared Template</strong> if your org admin or sub-users shared their commit templates with you.</p>                                                                                                                                                                                                                                       |
+| Last Used              | <p>Timestamp when the template was last used.<br></p><p><strong>Note:</strong> The templates used for the commit process will be color-coded in GREEN for easier differentiation, while the unused templates will be color-coded in ORANGE.</p>                                                                                                                                                                                                           |
+| Share Template         | <p>Share your template with the rest of your team.</p><p></p><p><strong>Note:</strong> The text will appear as <strong>Shared Template</strong> if your org admin or sub-users shared their commit templates with you.</p>                                                                                                                                                                                                                                |
 | Actions                | <p>Additional actions for each template:</p><ul><li><strong>Edit</strong>: Add/modify/delete the components included in the template</li><li><strong>Clone</strong>: Create a duplicate template with all the data from the parent template</li><li><strong>Download</strong>: Download the template in your local system. The file format is Package.XML</li><li><strong>Delete</strong>: Deletes the template. This process cannot be undone.</li></ul> |
 
 ### Filtering Commit Templates
@@ -50,7 +56,7 @@ You can search for commit templates within a particular **salesforce organizatio
 
 It is also possible to search for templates based on the **content**. To filter the exact result, you need to enter the commit template label or title in the search field.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1628491202478.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 It's always a good idea to break data into multiple pages when dealing with multiple templates records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
 
@@ -66,10 +72,10 @@ You can use the predefined components included in the template for your commit o
 6. Under the  **Perform** tab, select the commit process (_prevalidate commit_ or _commit_ only).
 7. Leave the rest of the field as default and proceed to the next screen. Click **Next**.
 8. The next screen will be divided into 3-4 different  tabs:
-   1. **Added/Modified Metadata Components:** On this page, you'll notice that some of the components are selected by default, while others are disabled. The auto-selected components are a part of both the commit template and your source org. The disabled components mean that they are part of the commit template, but they are missing from your source org.
-   2. **Deleted:** AutoRABIT compares the change with the source org and the version control branch and lists all the components that are available in the branch. If you like to delete those components from the branch while committing, you can select those components in this tab.&#x20;
-   3. **All Metadata Components:** All of the metadata components that are available for your source org will be listed here. Select the components you like to commit to the Version Control branch.
-   4. **Selected:** Total components that you have selected will get displayed in this tab. The metadata components that will be newly added or updated in the destination branch will be shown as A/M (Added/ Modified) and the components that will get deleted from the destination branch will be shown as D (Deleted) under the **Action** tab.
+   * **Added/Modified Metadata Components:** On this page, you'll notice that some of the components are selected by default, while others are disabled. The auto-selected components are a part of both the commit template and your source org. The disabled components mean that they are part of the commit template, but they are missing from your source org.
+   * **Deleted:** AutoRABIT compares the change with the source org and the version control branch and lists all the components that are available in the branch. If you like to delete those components from the branch while committing, you can select those components in this tab.&#x20;
+   * **All Metadata Components:** All of the metadata components that are available for your source org will be listed here. Select the components you like to commit to the Version Control branch.
+   * **Selected:** Total components that you have selected will get displayed in this tab. The metadata components that will be newly added or updated in the destination branch will be shown as A/M (Added/ Modified) and the components that will get deleted from the destination branch will be shown as D (Deleted) under the **Action** tab.
 9. Click **Next**.
 10. On the final screen, fill in with the necessary **Commit Setting** details.
 11. To create a fresh template using the selected metadata components, select the checkbox: **Use Selected Metadata and Create a Commit Template**

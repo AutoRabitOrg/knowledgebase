@@ -13,45 +13,45 @@ Follow the steps below to:
 
 1. Click the Gear icon and click **Setup**.
 
-<figure><img src="../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Type **profiles** into the Quick Find box and select **Profiles**.
 
-<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Edit** against the Profile you wish to enable API access for.
 
-<figure><img src="../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Scroll down to **Administrative Permissions** and check the **API Enabled** box and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Enable API Access in Salesforce by Permission Set <a href="#enable-api-access-in-salesforce-by-permission-set" id="enable-api-access-in-salesforce-by-permission-set"></a>
 
 1.  Click the Gear icon and click **Setup**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (80) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (80) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2. Type **permission** into the Quick Find box and select Permission Sets.
 
-<figure><img src="../../../.gitbook/assets/image (81) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (81) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the Permission Set you wish to enable API access for.
 
-<figure><img src="../../../.gitbook/assets/image (82) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (82) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Scroll down to **System** and click **System Permissions**.
 
-<figure><img src="../../../.gitbook/assets/image (83) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (83) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Click **Edit**.
 
-<figure><img src="../../../.gitbook/assets/image (84) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (84) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Check the **API Enabled** box and click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (85) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (85) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Object and Field Permissions <a href="#object-and-field-permissions" id="object-and-field-permissions"></a>
 
@@ -82,13 +82,13 @@ One of the key tasks of Salesforce administrator is to assign the privileges to 
 2. Under the **Manage Users** tree click on **Profiles**
 3. Once the Profiles appear on the right, select which Profile you want to edit and click on the **Edit** link next to the corresponding profile.
 
-<figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Scroll down to the section labeled **Custom Object Permissions**
 5. Specify the object permissions.
 
-<figure><img src="../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1).png" alt="" width="261"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1) (1).png" alt="" width="261"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (78) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (78) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **Save**.

@@ -17,33 +17,32 @@ To configure the merge approvals:
 2. Navigate to **Admin > My Account** and expand the **Merge Settings**
 3. Tick the **Enable criteria based Review Process** checkbox.
 4. Select the **Enable Merge Approver** checkbox.
-5.  Set the minimum number of required approvals under the **Approval Level** box. _**Minimum Approval Level can be 1.**_\
+5. Set the minimum number of required approvals under the **Approval Level** box. _**Minimum Approval Level can be 1.**_
 
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-60JUCWBN.png" alt=""><figcaption></figcaption></figure>
 6. Click **Save**.
-7. The steps above are the minimum required to get approvals working in your merge, but there are a couple more options available that might be suitable to your workflow:
-   * **Auto commits on Approval:** This option will allow developers to work on their feature branches and after review (approved), it gets automatically commit to the trunk.
-   *   **Disable Merge Self Approval:** This option will allow you to prevent _EZ-Merge approvers_ that have committed to a merge from approving it. However, the Org admins can still view the _approve/reject_ option and proceed with all the merges.\
+7.  The steps above are the minimum required to get approvals working in your merge, but there are a couple more options available that might be suitable to your workflow:
 
+    * **Auto commits on Approval:** This option will allow developers to work on their feature branches and after review (approved), it gets automatically commit to the trunk.
+    * **Disable Merge Self Approval:** This option will allow you to prevent _EZ-Merge approvers_ that have committed to a merge from approving it. However, the Org admins can still view the _approve/reject_ option and proceed with all the merges.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-M6NQPWC4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ### Eligible Approvers <a href="#eligible-approvers" id="eligible-approvers"></a>
 
-* No criteria can restrict the **org admin** from approving any merge.
-* Even if the **Disable Merge Self Approval** checkbox is selected, the **org admin** can approve their own merges.
-* The **EZ-Merge Approver** _(non-admin user)_ is not allowed to approve their own merges if the **Disable Merge Self Approval** checkbox is selected.
-* If the approval level is set to 2, and the **org admin** or **merge administrator** approves the merge, **no more approval** is needed.
-* The L1 and L2 approver email IDs cannot be the same when the approval level is set to 2.
+1. No criteria can restrict the **org admin** from approving any merge.
+2. Even if the **Disable Merge Self Approval** checkbox is selected, the **org admin** can approve their own merges.
+3. The **EZ-Merge Approver** _(non-admin user)_ is not allowed to approve their own merges if the **Disable Merge Self Approval** checkbox is selected.
+4. If the approval level is set to 2, and the **org admin** or **merge administrator** approves the merge, **no more approval** is needed.
+5. The L1 and L2 approver email IDs cannot be the same when the approval level is set to 2.
 
 #### More Informations <a href="#more-informations" id="more-informations"></a>
 
 The following details pertain to the criteria for commit validation approval:
 
-* There are no restrictions on the **org admin**'s ability to approve any prevalidation commits.
-* If the **Disable Commit Self Approval** checkbox is enabled in **Commit Validation - Approval Settings**, the gated check-ins approvers will not be able to approve their own commit unless they are a **org admin**. The org admins can view the _approve/reject_ option and proceed with the prevalidation commits.
-*   If the **Enable Commit Approver** checkbox is checked, the _admin_ and the gated check-ins approver added to the reviewer list will be allowed to approve the prevalidation commits.\
+1. There are no restrictions on the **org admin**'s ability to approve any prevalidation commits.
+2. If the **Disable Commit Self Approval** checkbox is enabled in **Commit Validation - Approval Settings**, the gated check-ins approvers will not be able to approve their own commit unless they are a **org admin**. The org admins can view the _approve/reject_ option and proceed with the prevalidation commits.
+3. If the **Enable Commit Approver** checkbox is checked, the _admin_ and the gated check-ins approver added to the reviewer list will be allowed to approve the prevalidation commits.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-L1UAYH9F.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

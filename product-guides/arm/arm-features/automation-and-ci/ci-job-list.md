@@ -6,52 +6,50 @@ The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on
 
 The **CI Job List** screen displays the CI jobs you created to date inside ARM. The list is displayed in chronological order, meaning the most recent jobs will be displayed at the top.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675971662181.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1179).png" alt=""><figcaption></figcaption></figure>
 
-**The CI jobs deployed will have** ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624787522949.png)**symbols next to them, and the ones with only validated CI Jobs will have** ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624787497205.png)**symbols next to it.**
+The CI jobs deployed will have![](<../../../../.gitbook/assets/image (1180).png>)symbols next to them, and the ones with only validated CI Jobs will have![](<../../../../.gitbook/assets/image (1181).png>)symbols next to it.
 
 #### Filtering Options: <a href="#filtering-options" id="filtering-options"></a>
 
 You can use the filtering options on this page to narrow your search for a CI job.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675971898047.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1182).png" alt=""><figcaption></figcaption></figure>
 
 1. **Group By:** Limit your search to jobs from a particular group by typing the group name in this field or scrolling down through the dropdown list. To display jobs from all groups, select **All Groups**.
 2. **Job Name:** Search for a job by typing the job name in this field or scrolling down through the dropdown list.
 3. **Last Modified Date Range:** By using this filter, you may narrow down the jobs based on when they were created or modified. By default, the **last seven days'** jobs are displayed. The jobs created/modified within the previous 14 days, 30 days, or 24 hours can be filtered. Use the **custom range** filter to specify more criteria. Then, choose the date and time range for when you wish to view the jobs.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675973254356.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1183).png" alt="" width="563"><figcaption></figcaption></figure>
 
-1. **Filter options (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1666868865860.png)**):**
+4. **Filter options (**![](<../../../../.gitbook/assets/image (1184).png>)**):**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675971944798.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1185).png" alt="" width="401"><figcaption></figcaption></figure>
 
-1. **Job Source Type:** Choose the source type as **Sandbox** or **Version Control**. To include jobs from both source types, select **All**.
-   * **Sandbox:** Select the **Source Org** from the dropdown list for the sandbox as the **source type**. To include jobs from all source orgs, select **All**.
-   *   **Version Control:** Select the **Source Repository** from the dropdown list for the version control source type. To include jobs from all repositories, select **All**. Also, select the **Source Branch** from the dropdown list.\
+5.  **Job Source Type:** Choose the source type as **Sandbox** or **Version Control**. To include jobs from both source types, select **All**.
 
+    * **Sandbox:** Select the **Source Org** from the dropdown list for the sandbox as the **source type**. To include jobs from all source orgs, select **All**.
+    * **Version Control:** Select the **Source Repository** from the dropdown list for the version control source type. To include jobs from all repositories, select **All**. Also, select the **Source Branch** from the dropdown list.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1666873520341.png" alt="" width="563"><figcaption></figcaption></figure>
-2. **Destination Org:** Select the **Destination Org** from the dropdown list. To include jobs from all destination orgs, select **All**.
+    <figure><img src="../../../../.gitbook/assets/image (1186).png" alt="" width="563"><figcaption></figcaption></figure>
+6. **Destination Org:** Select the **Destination Org** from the dropdown list. To include jobs from all destination orgs, select **All**.
 
 **More options on this page:**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675973438641.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1187).png" alt="" width="550"><figcaption></figcaption></figure>
 
 1. **Info:** The info icon gives you detailed information for your CI job, such as source/destination org, version control repo/branch, date and time stamp for the job created, etc.
 2. **Clone:** Create a new job using information from the existing job.
-3.  **Edit:** Update or modify the details for your CI jobs. If the job is already in progress, a popup screen appears when you click **Save**.\
+3.  **Edit:** Update or modify the details for your CI jobs. If the job is already in progress, a popup screen appears when you click **Save**.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1657179593976.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1188).png" alt="" width="332"><figcaption></figcaption></figure>
 
     * If you click **YES**, the job in progress will be aborted, the job details will be saved, the screen will be redirected to the **CI jobs Result** page, and queued jobs will start running.&#x20;
-    *   If you click **NO**, the job details will not be saved and remain on the same screen.\
-        \
-        If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vlocity, you must verify 2 things:\
+    * If you click **NO**, the job details will not be saved and remain on the same screen.
+    * If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vlocity, you must verify 2 things:
 
+    <figure><img src="../../../../.gitbook/assets/image (1189).png" alt="" width="452"><figcaption></figcaption></figure>
 
-        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1681473879014.png" alt="" width="375"><figcaption></figcaption></figure>
     * The destination org must be registered with **OAuth**. If it is registered with **Standard**, you must register it with OAuth first and then proceed with the deployment. If the org is registered with Standard, the deployment will fail and the following message will display in the log: **`To deploy compiled versions of OmniScript and FlexCards, Please re-register your destination org with OAuth and update the Local Compilation key in the My Account section`**.
     * You must select the **Local Compilation** checkbox in the **My Account** section and enter the **Access Key**.&#x20;
       * The following message will be displayed in the log if you do not select this option: **`Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository`**.&#x20;

@@ -4,16 +4,16 @@ When creating the CSV file, you will have to take into the following considerati
 
 ### File format and general recommendations <a href="#file-format-and-general-recommendations" id="file-format-and-general-recommendations"></a>
 
-* ARM Data Loader accepts CSV (comma separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
-* The file must be UTF-8 encoded
-* Make sure you don't have any duplicated or empty headers.
-* Ensure you do not have any empty columns or any columns with the same header names as this can cause field mapping issues.
-* Ensure you have a column header and rows of data populated for all system required fields such as Account Name or Contact Last Name
-* Try to name your column headers with the same names as your Salesforce ID fields to make mapping easier.
-* In your Excel file, prior to saving it as a CSV, leverage conditional formatting functionality to highlight cells with duplicate values in columns that should not have duplicates
-* Keep your files at a maximum size of 10MB.
-* When dealing with files that are larger than **200 rows**, pick the **Use Bulk API** option in the **Run Configuration** dialog box. This will give you optimum performance for large files.
-* Data Loader does not allow importing multiple columns into one field in Salesforce. You will need to concatenate these fields before uploading.
+1. ARM Data Loader accepts CSV (comma separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
+2. The file must be UTF-8 encoded
+3. Make sure you don't have any duplicated or empty headers.
+4. Ensure you do not have any empty columns or any columns with the same header names as this can cause field mapping issues.
+5. Ensure you have a column header and rows of data populated for all system required fields such as Account Name or Contact Last Name
+6. Try to name your column headers with the same names as your Salesforce ID fields to make mapping easier.
+7. In your Excel file, prior to saving it as a CSV, leverage conditional formatting functionality to highlight cells with duplicate values in columns that should not have duplicates
+8. Keep your files at a maximum size of 10MB.
+9. When dealing with files that are larger than **200 rows**, pick the **Use Bulk API** option in the **Run Configuration** dialog box. This will give you optimum performance for large files.
+10. Data Loader does not allow importing multiple columns into one field in Salesforce. You will need to concatenate these fields before uploading.
 
 ### Field type format supported <a href="#field-type-format-supported" id="field-type-format-supported"></a>
 
@@ -65,7 +65,6 @@ Must contain record ID from an existing record in ARM.
 
 ### Sample CSV file <a href="#sample-csv-file" id="sample-csv-file"></a>
 
-The following CSV sample includes 11 records for the Account object. Each record contains six fields. You can include any field for an object that you're processing. If you use this file to update existing accounts, any fields that aren't defined in the CSV file are ignored during the update.\
+The following CSV sample includes 11 records for the Account object. Each record contains six fields. You can include any field for an object that you're processing. If you use this file to update existing accounts, any fields that aren't defined in the CSV file are ignored during the update.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-JPSF51D7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1139).png" alt=""><figcaption></figcaption></figure>

@@ -5,7 +5,7 @@ This document guides how to add a **GitHub** project to your CodeScan cloud acco
 1. Login to your **CodeScan** account.
 2. On the top right corner, click on the **'+'** icon and select **Analyze new project**.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. It takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click **Set Up**.
 

@@ -19,7 +19,7 @@ To configure the merge approvals:
 4. Select the **Enable Merge Approver** checkbox.
 5. Set the minimum number of required approvals under the **Approval Level** box. _**Minimum Approval Level can be 1.**_
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **Save**.
 7.  The steps above are the minimum required to get approvals working in your merge, but there are a couple more options available that might be suitable to your workflow:
@@ -27,7 +27,7 @@ To configure the merge approvals:
     * **Auto commits on Approval:** This option will allow developers to work on their feature branches and after review (approved), it gets automatically commit to the trunk.
     * **Disable Merge Self Approval:** This option will allow you to prevent _EZ-Merge approvers_ that have committed to a merge from approving it. However, the Org admins can still view the _approve/reject_ option and proceed with all the merges.
 
-    <figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Eligible Approvers <a href="#eligible-approvers" id="eligible-approvers"></a>
 

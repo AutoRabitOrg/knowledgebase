@@ -15,17 +15,17 @@ A **Release Label** is a combination of multiple commit labels. Creating a relea
 2. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) module and click on the **`Change Labels > Release Labels`** or directly go to the **`Change Labels`** tab and select **`Release Labels`** from the dropdown.The **Release Label** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 3. Click on **`Create Release Label.`**
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, give the release label creation process a **`Label Name`** and a short **`Description`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Select the **`Repository`** and the **`Branch`** containing the commit labels.Note:For the version control repository registered in the SFDX structure, you must choose an additional option, i.e., Package Directory. To know more about Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md)
 6. Select the commit **`Label Type`**, i.e., **`Salesforce`** or **`Vlocity`**.Known LimitationsIf a branch-to-branch merge involves multiple commits that include data from Vlocity and Salesforce components, the ARM cannot classify those commits as **Vlocity** or **Salesforce** components.
 7. From the **`No of Days`** dropdown list, you can choose to retrieve the commit history for the previous **30**, **60**, **90**, **120**, **180**, or **365** days, or **ALL** the commits at once. Please note that selecting **ALL** may result in a slight delay in fetching the entire commit history.InfoWith the ARM 22.3 release, you can create a release label and start the artifact preparation immediately by selecting the **`Create package manifest for Deployment`** checkbox for Salesforce labels. If you do not select this checkbox on this screen, you can still click the **`Create Artifact`** button on the **`Release Label Summary`** screen to create and run a package manually.
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **`Fetch Commit History`** to retrieve all the revisions available on your selected repo and branch. If no records appear, then no revisions have been committed to the branch.
 9. Select two or more revisions from the left column to group them into a single release label. The **`Selected Revisions`** are displayed in a second column on the right side to make it easier to see. You can also unselect revisions from this section.

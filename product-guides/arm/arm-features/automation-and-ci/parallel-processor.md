@@ -10,10 +10,12 @@ The **Parallel Processor** feature allows you to configure POST requests to be f
 
 When you're triggering a new CI job, look for the **Configure Parallel Processor** function under the **Deploy > On Successful Deployment** section.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1620377411543.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:** This feature is currently available for the following CI Jobs:
+**Important Note:**&#x20;
+
+This feature is currently available for the following CI Jobs:
 
 1. Deploy from Salesforce Org
 2. Deploy from Salesforce Org with a Version Control backup
@@ -34,38 +36,35 @@ When you're triggering a new CI job, look for the **Configure Parallel Processor
    * **Grant Type (required)**: Client Credentials auto-selected by default
    * **Version (required):** Enter the version here
 3. Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
-4. The **Content-Type** header describes the format in the body of your request is being sent in. For example, the body of your requests can be sent as **JSON** or **XML**.
-   1. To send **JSON** in a request, use **application/json** and add your content in the body provided
-   2.  To send **XML** in a request, use **application/xml** and add your content in the body provided
+4.  The **Content-Type** header describes the format in the body of your request is being sent in. For example, the body of your requests can be sent as **JSON** or **XML**.
 
-       <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606249385222.png" alt=""><figcaption></figcaption></figure>
-5.  **Dynamic URL Parameters:** AutoRABIT allows you to include the various variables from your AutoRABIT organization, for example, the name of the CI job, build number, etc\
-    **Dynamic Parameters:**\
+    * To send **JSON** in a request, use **application/json** and add your content in the body provided
+    * To send **XML** in a request, use **application/xml** and add your content in the body provided
 
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+5. **Dynamic URL Parameters:** AutoRABIT allows you to include the various variables from your AutoRABIT organization, for example, the name of the CI job, build number, etc
 
-    | Parameter                | Description                            |
-    | ------------------------ | -------------------------------------- |
-    | <p>{projectName}<br></p> | <p>Name of the CI Job<br></p>          |
-    | <p>{buildNumber}<br></p> | <p>Build Number of your CI Job<br></p> |
-    | <p>{sforgName}<br></p>   | <p>Name of your Salesforce Org<br></p> |
+**Dynamic Parameters:**
 
-
+| Parameter                | Description                            |
+| ------------------------ | -------------------------------------- |
+| <p>{projectName}<br></p> | <p>Name of the CI Job<br></p>          |
+| <p>{buildNumber}<br></p> | <p>Build Number of your CI Job<br></p> |
+| <p>{sforgName}<br></p>   | <p>Name of your Salesforce Org<br></p> |
 
 {% hint style="info" %}
 **Note:** You must specify values for dynamic parameters before executing the query, and the types of the specified values must match the expected types.
 {% endhint %}
 
-1. **Request API Version (required):** Enter the API versions
-2. To add a custom header, click on the **Add Header** button and enter the keys and the value to it. Multiple adding of keys and values are allowed.
+6. **Request API Version (required):** Enter the API versions
+7. To add a custom header, click on the **Add Header** button and enter the keys and the value to it. Multiple adding of keys and values are allowed.&#x20;
 
-&#x20;
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606934340480.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Default headers is set as _**"Accept" :"application/json", "Content-Type":"application/json"**_&#x20;
 
-1. **Poll Duration (Mins):** This allows you to define the polling duration in minutes for the job execution. This field is mandatory. AutoRABIT will perform the HTTP request based on the poll duration chosen and if a 200 OK is returned, it will continue with the next step. If the 200 response code is not seen within the given time frame, You will be shown a timeout message in the log file.
-2. **Poll Interval (Mins):** Time-bound between two consecutive API calls, for example, 1minute, 5minute. This field is mandatory.&#x20;
-3. Click on **Save**.
+8. **Poll Duration (Mins):** This allows you to define the polling duration in minutes for the job execution. This field is mandatory. AutoRABIT will perform the HTTP request based on the poll duration chosen and if a 200 OK is returned, it will continue with the next step. If the 200 response code is not seen within the given time frame, You will be shown a timeout message in the log file.
+9. **Poll Interval (Mins):** Time-bound between two consecutive API calls, for example, 1minute, 5minute. This field is mandatory.&#x20;
+10. Click on **Save**.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1652642184858.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>

@@ -116,16 +116,16 @@ The type of component being visualized is flow. Decisions exist within that flow
 2. Click on the Rules menu
 3. In the Filters pane, search for Xpath rule template.
 
-<figure><img src="../../../.gitbook/assets/image (77) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (77) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the XPath rule template of the language of your choice.&#x20;
 5. Under Custom Rules click on Create.
 
-<figure><img src="../../../.gitbook/assets/image (78) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (78) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Assign the values to the Name, Key, Type, Severity, Status, Description and Message fields.&#x20;
 7. Insert the Xpath created in the field provided and click on Create.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Now you can add it to your Quality Profile as you would any built in rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.

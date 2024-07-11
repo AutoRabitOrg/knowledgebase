@@ -18,7 +18,7 @@ Assuming you create an **Insert** task, and have uploaded the CSV file to import
 
 **For example:** To map the **Account Name** to the **AccountID** in Salesforce, click on the **"Lookup via"** checkbox and select the field you want to use to search the ID. In this example, you have selected **'Account Name'**, which is the field you want to use to search the ID. So, when you run the task, ARM dataloader will go and search for the **Account ID** using the **Account Name** on each case, and send the IDs that Salesforce is expecting.
 
-<figure><img src="../../../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (89) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### More Lookup Options <a href="#more-lookup-options" id="more-lookup-options"></a>
 

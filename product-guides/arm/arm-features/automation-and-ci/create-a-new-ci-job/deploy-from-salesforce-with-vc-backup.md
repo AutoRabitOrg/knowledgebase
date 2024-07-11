@@ -98,22 +98,23 @@ This section is all about either deploying or validating the above package onto 
 
 <figure><img src="../../../../../.gitbook/assets/image (1265).png" alt="" width="434"><figcaption></figcaption></figure>
 
-1. Select the **Deployment org**.
-2. Specify the **Apex test level** you would like to run for the CI job.
+Select the **Deployment org**.
+
+Specify the **Apex test level** you would like to run for the CI job.
 
 <figure><img src="../../../../../.gitbook/assets/image (1266).png" alt="" width="407"><figcaption></figcaption></figure>
 
-3. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
-4. **No Test Run:** No apex test is run unless it is a production deployment.
-5. **Run Specified Tests:** Only the tests that the user specifies are run. The benefit of choosing this option is that it checks code coverage criteria at the ARM level rather than checking it at the entire org level. The executed tests must cover the classes or triggers contained with a minimum of 75% code coverage. This coverage is computed for each class or trigger individually and is different from the overall coverage percentage.
+1. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
+2. **No Test Run:** No apex test is run unless it is a production deployment.
+3. **Run Specified Tests:** Only the tests that the user specifies are run. The benefit of choosing this option is that it checks code coverage criteria at the ARM level rather than checking it at the entire org level. The executed tests must cover the classes or triggers contained with a minimum of 75% code coverage. This coverage is computed for each class or trigger individually and is different from the overall coverage percentage.
 
 {% hint style="info" %}
 **Important Note:** Make sure for the runTests parameter, you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to Run Specified Tests.
 {% endhint %}
 
-6. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
-7. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
-8. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.
+4. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
+5. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
+6. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.
 
 {% hint style="info" %}
 **Important Notes:**
@@ -170,8 +171,10 @@ This section is all about either deploying or validating the above package onto 
         1. First, the DataLoader job
         2. Second, CI Job and
         3. Environment Provisioning template at last.
-        4. Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.
-        5. Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.
+
+        Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.
+
+        Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.
 
         <figure><img src="../../../../../.gitbook/assets/image (1270).png" alt="" width="459"><figcaption></figcaption></figure>
 
@@ -198,31 +201,32 @@ Before proceeding with the CI Job operation, you can run the functional test cas
 
 There are different ways to fetch the test cases:
 
-1. TAF Labels
-2. Version Control
-3. AccelQ (if AccelQ plugin is installed in ARM)
-4. Provar (if Provar plugin is installed in ARM)
+* TAF Labels
+* Version Control
+* AccelQ (if AccelQ plugin is installed in ARM)
+* Provar (if Provar plugin is installed in ARM)
 
 <figure><img src="../../../../../.gitbook/assets/image (1272).png" alt="" width="391"><figcaption></figcaption></figure>
 
-5.  **TAF Labels:** The test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
+1.  **TAF Labels:** The test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
 
     * **Stop Deployment if Test cases fail to compile:** This prevents the deployment to proceed if any errors/warnings occur during running the test cases.
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
     <figure><img src="../../../../../.gitbook/assets/image (1273).png" alt="" width="379"><figcaption></figcaption></figure>
-6. **Version Control:** The test cases committed to a branch in version control are displayed.
+2. **Version Control:** The test cases committed to a branch in version control are displayed.
    * Select the **Version Control Repository** type.
    * Select the **Repository** and the **Branch**.&#x20;
-   * Select the way you would like to run your test cases, i.e., TAF, Selenium Maven, or Selenium Non-Maven.
-     1. For the **Selenium Maven** test type, you need to enter the test case root path in the **Test Case Root Path** field. Also, specify the goals.
-     2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type**, and enter the test case root path in the **Test Case Root Path** field.
+   *   Select the way you would like to run your test cases, i.e., TAF, Selenium Maven, or Selenium Non-Maven.
 
-#### **Additional options**
+       1. For the **Selenium Maven** test type, you need to enter the test case root path in the **Test Case Root Path** field. Also, specify the goals.
+       2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type**, and enter the test case root path in the **Test Case Root Path** field.
 
-1. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
-2. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
+       **Additional options**
+
+       1. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
+       2. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
 <figure><img src="../../../../../.gitbook/assets/image (1274).png" alt="" width="547"><figcaption></figcaption></figure>
 
@@ -230,27 +234,41 @@ There are different ways to fetch the test cases:
 
 <figure><img src="../../../../../.gitbook/assets/image (1275).png" alt="" width="467"><figcaption></figcaption></figure>
 
-4. **Provar:** Select Fetch Test Cases From as **'Provar'**.
-   * Select your **Version Control Repository** and the **Branch** and provide the **provar test cases path**.
-   * **Test Cases Root Path**: Enter the test case root path till the **.testproject** file
-   * **Test Cases Execution Path:** Enter the test cases execution path here. **Ex:** tests/sample and if not specified, all the test cases from the **'tests'** folder will get executed.
-   *   **Additional options:**
+4.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
 
-       1. **Stop Deployment if Test cases fail to compile:** This prevents the deployment to proceed if any errors/warnings occur during running the test cases.
-       2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment gets failed.
-       3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
+    * Select your **Version Control Repository** and the **Branch** and provide the **provar test cases path**.
+    * **Test Cases Root Path**: Enter the test case root path till the **.testproject** file
+    * **Test Cases Execution Path:** Enter the test cases execution path here. **Ex:** tests/sample and if not specified, all the test cases from the **'tests'** folder will get executed.
 
-       <figure><img src="../../../../../.gitbook/assets/image (1276).png" alt="" width="542"><figcaption></figcaption></figure>
-5. **Callout URL:** The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
-6. **Notifications:** Send email notifications to selected users email on the success or failure of a build.
+    **Additional options:**
+
+    1. **Stop Deployment if Test cases fail to compile:** This prevents the deployment to proceed if any errors/warnings occur during running the test cases.
+    2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment gets failed.
+    3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
+
+    <figure><img src="../../../../../.gitbook/assets/image (1276).png" alt="" width="542"><figcaption></figcaption></figure>
+
+#### **Callout URL** <a href="#callout-url" id="callout-url"></a>
+
+The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
+
+#### **Notifications**  <a href="#callout-url" id="callout-url"></a>
+
+Send email notifications to selected users email on the success or failure of a build.
 
 <figure><img src="../../../../../.gitbook/assets/image (1277).png" alt=""><figcaption></figcaption></figure>
 
-7. **Schedule:** Allows you to schedule the process at which it must run.
-   * **Daily:** The process will run every day at the scheduled time or time interval set.
-   * **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
-   * **No schedule:** The process will only get saved, and you can run it when required.&#x20;
-8. **Save:** Finally, click **Save** to save the new CI job details.
+#### **Schedule**  <a href="#schedule" id="schedule"></a>
+
+Allows you to schedule the process at which it must run.
+
+1. **Daily:** The process will run every day at the scheduled time or time interval set.
+2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
+3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
+
+#### **Save**&#x20;
+
+Finally, click **Save** to save the new CI job details.
 
 If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vlocity, you must verify 2 things:
 

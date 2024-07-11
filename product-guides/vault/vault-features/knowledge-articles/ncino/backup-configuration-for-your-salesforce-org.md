@@ -27,7 +27,7 @@ Once you are done with the selection of nCino objects, set up when you would lik
 <figure><img src="../../../../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 1. Give a **name** for the backup operation.
-2. Click on the![](<../../../../../.gitbook/assets/image (77) (1) (1) (1) (1).png>)icon to go to the **Backup Setting** page which allows you to enable Bulk API retrieval.
+2. Click on the![](<../../../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1).png>)icon to go to the **Backup Setting** page which allows you to enable Bulk API retrieval.
 
 <figure><img src="../../../../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,6 +53,6 @@ Once you are done with the selection of nCino objects, set up when you would lik
 10. You will be next redirected to the **Configs** page where you will find your newly added backup configured for your Salesforce Org.
 11. **Additional options**:
     * **Schedule**: The user can either enable or disable the backup schedule of a Salesforce org temporarily by sliding the **Schedule** icon on either the right or left side.
-    * **Backup Config Details**: Click on the![](<../../../../../.gitbook/assets/image (78) (1) (1) (1) (1).png>)icon to view the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
-    * **Actions (Edit/Delete)**:  The user can either delete the backup scheduled using Delete (![](<../../../../../.gitbook/assets/image (79) (1) (1) (1) (1).png>)) icon or update the metadata/data components from being backed up using the **Edit** (![](<../../../../../.gitbook/assets/image (80) (1) (1) (1) (1).png>)) icon.
+    * **Backup Config Details**: Click on the![](<../../../../../.gitbook/assets/image (78) (1) (1) (1) (1) (1).png>)icon to view the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
+    * **Actions (Edit/Delete)**:  The user can either delete the backup scheduled using Delete (![](<../../../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1).png>)) icon or update the metadata/data components from being backed up using the **Edit** (![](<../../../../../.gitbook/assets/image (80) (1) (1) (1) (1) (1).png>)) icon.
     * **Last Backup Status**: Last backup activity status will be displayed in this section.

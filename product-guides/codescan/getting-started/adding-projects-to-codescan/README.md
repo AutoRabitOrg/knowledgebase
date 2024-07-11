@@ -6,7 +6,7 @@ This document provides a description about how to create a project in CodeScan.
 
 You will need a CodeScan organization to add a project to it. When signing up with [CodeScan Cloud](https://www.codescan.io/products/cloud/), an organization is created automatically under your user name. New organizations can be created at any time using the '**+**' icon at the top right corner of the screen.
 
-<figure><img src="../../../../.gitbook/assets/image (90) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (90) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Adding a project into CodeScan <a href="#adding-a-project-into-codescan" id="adding-a-project-into-codescan"></a>
 

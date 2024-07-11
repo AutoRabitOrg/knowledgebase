@@ -42,7 +42,7 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 
 <div align="center">
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
 
 </div>
 
@@ -60,7 +60,7 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 
 2. You will need to enter your **`License Key`** (to be provided by our Support Team) or a **`Subscription Code`**. For more information on Subscription Codes, click [here](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-subscription-code).
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Accept our [Terms of Service](https://www.codescan.io/tos/self-hosted/) and click on the **`Request Download`** button.
 4. Extract the ZIP file. It contains the **SonarQube™** plugin and an **ant-based tool** enabling you to run an analysis.
@@ -91,14 +91,14 @@ At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 **Step 1: Log in to the SonarQube™ self-hosted instance at** [**http://localhost:9000/**](https://localhost:9000/).\
 The default System Admin credentials are _**admin/admin**_:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2. Once you've gained access, go to** **`Administrator > Configuration > General Settings`**.
 
 1. Select the **CodeScan tab**.
 2. Enter your **CodeScan License Key** in the designated field.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Save**.
 4. You have successfully completed the **CodeScan on-premises integration**. See the instructions below on how to integrate this to ARM.
@@ -133,11 +133,11 @@ This initial step is when your **SonarQube™ credentials**, such as your **user
 7. Enter your **SonarQube™ account username**. For password, use the **copied token** mentioned in **Step 1**.
 8. Verify you are using your **SonarQube™ username** instead of the **email address** you use to log in to **SonarQube™**.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Setting up Your Quality Profiles <a href="#setting-up-your-quality-profiles" id="setting-up-your-quality-profiles"></a>
 

@@ -28,13 +28,13 @@ Convert and package your version control files to [Salesforce Metadata](https://
 
 1. The first step is to choose your [**Version Control**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) **Systems**. Currently, ARM supports Version Control Systems like GIT, SVN, and TFS.
 2. Select the **Repository** and the **Branch**.
-3.  Under the **'Build Using'** dropdown, there are two different options to choose from:
+3. Under the **'Build Using'** dropdown, there are two different options to choose from:
 
-    * **Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (1232).png>)) icon to select the baseline revision. A new pop-up window appears; from the list displayed choose the required baseline revision number.
+**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (90).png>)) icon to select the baseline revision. A new pop-up window appears; from the list displayed choose the required baseline revision number.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1231).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1233).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -43,7 +43,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 2. **Get Latest HEAD** points out the last commit in the current checkout branch.
 {% endhint %}
 
-4. **Time Range:** This option allows you to create a CI job using a timeline. You need to specify the time period from where the revisions will get fetched. This improves the usability of our CI server and helps build a package based on time rather than commits.
+**Time Range:** This option allows you to create a CI job using a timeline. You need to specify the time period from where the revisions will get fetched. This improves the usability of our CI server and helps build a package based on time rather than commits.
 
 <figure><img src="../../../../../.gitbook/assets/image (1234).png" alt=""><figcaption></figcaption></figure>
 
@@ -74,21 +74,21 @@ Convert and package your version control files to [Salesforce Metadata](https://
 
     <figure><img src="../../../../../.gitbook/assets/image (1228).png" alt=""><figcaption></figcaption></figure>
 
-    * **For ApexPMD** and **Checkmarx:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+    **For ApexPMD** and **Checkmarx:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
     <figure><img src="../../../../../.gitbook/assets/image (1227).png" alt=""><figcaption></figcaption></figure>
 
-    *   **For CodeScan** and **SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+    **For CodeScan** and **SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-        <figure><img src="../../../../../.gitbook/assets/image (1226).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1226).png" alt=""><figcaption></figcaption></figure>
 
-        * **Run on all supported Metadata types:** Analysis is performed on all the supported metadata types. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
-        * **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components.
-        * **Run on all supported Metadata types from the Full source:** Analysis is performed on the entire branch, including all supported metadata types, regardless of any build changes.
+    * **Run on all supported Metadata types:** Analysis is performed on all the supported metadata types. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
+    * **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components.
+    * **Run on all supported Metadata types from the Full source:** Analysis is performed on the entire branch, including all supported metadata types, regardless of any build changes.
 
-        <figure><img src="../../../../../.gitbook/assets/image (1225).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1225).png" alt=""><figcaption></figcaption></figure>
 
-        For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
+    For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 9. **Additional Profile Packaging Options:**
    * **Remove login IP Ranges:** If you want to log in with a [Salesforce org](../../../arm-administration/registration/salesforce-org/), you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
    * **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.

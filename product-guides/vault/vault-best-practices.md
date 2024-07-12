@@ -6,7 +6,27 @@
 
 Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail.
 
-See Vault Archival Best Practices
+See [Vault Archival Best Practices](vault-best-practices.md#archival-best-practices) below.
+
+### **Email Messages Attachment Limitation**
+
+**Issue**\
+Salesforce has a limitation where files can only be added to Email Messages in the draft state. This presents a challenge when replicating data between organizations (Orgs).
+
+**AutoRABIT Solution**\
+We address this issue by implementing the following steps during the replication process:
+
+1. **Draft State Conversion**
+   * All Email Messages are replicated in a draft state in the destination Org.
+   * This allows for file attachments to be added to the Email Messages.
+2. **Email Messages Replication**
+   * All existing Email Messages with attachments in the destination Org must be deleted if they are already available in the destination without attachments.
+   * Email Messages from the source Org or backup are then replicated to the destination Org.
+3. **File Attachment**
+   * During the replication process, while the Email Messages are in the draft state, any available files are attached to the Email Messages.  &#x20;
+   * Email Messages are changed to the same state as in the backup or source Org, ensuring the data replication is completed successfully.
+
+This structured approach ensures files are properly attached to Email Messages during the data replication process between Orgs using AutoRABIT.
 
 ### Backup Best Practices
 
@@ -90,10 +110,8 @@ The following components cannot be retrieved or deployed with Metadata API, and 
 
 Reference: [https://developer.salesforce.com/docs/atlas.en-](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#:\~:text=Some%20things%20yo](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [u%20can%20customize,Account%20Teams](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams)
 
-&#x20;
 
-1.
 
 ### Managed Package Limitations
 
-For any operation, the extent of a successful backup, restore, or replicate job depends on the permissions associated with the managed package. There is a possibility of failures of a few metadata components for which the package does not provide access. This is a limitation from the managed package and can be addressed by contacting the third-party vendor for required access.
+For any operation, the extent of a successful backup, restore, or replicate job depends on the permissions associated with the managed package. There is a possibility of failures of a few metadata components for which the package does not provide access. This is a limitation of the managed package and can be addressed by contacting the third-party vendor for required access.

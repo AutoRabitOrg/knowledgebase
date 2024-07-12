@@ -1,6 +1,6 @@
 # Common Restore Errors & Solutions
 
-## Vault–FAQs
+## Vault FAQs
 
 ### Common Restore/Replicate Errors & Solutions
 

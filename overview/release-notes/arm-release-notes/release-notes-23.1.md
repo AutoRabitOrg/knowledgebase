@@ -93,6 +93,8 @@ This update has implemented significant performance upgrades to enhance the tool
 1. A use-case error identified in version 23.1 required a code fix, which was applied in versions 23.1 and 24.1 to the Deployment and Version Control modules, to correct a scenario in an org-to-org full-profile deployment where it was not capturing package visibility and permissions. Support ticket #110760
 2. A use-case error identified a code fix needed to the Reports module of version 23.1 to fix a product test class in which the weekly scheduled job failed. Support ticket #115654&#x20;
 3. A code fix was applied to versions 23.1 and 24.1 due to a use-case error identified in version 23.1 where commits were failing with a 'no credentials mapped' error in the Version Control module. Support ticket #116704
+4. A code fix was applied to the Admin module in version 23.1 related to a use-case scenario that required additional support to create the ARM instance from scratch. Support ticket #117015
+5. A code fix was applied to the Deployment module in version 23.1 due to a use-case error in which the user was unable to get the popup while deploying using package.xml as the source. Support ticket #116967
 
 #### **3 & 7 July 2024**
 

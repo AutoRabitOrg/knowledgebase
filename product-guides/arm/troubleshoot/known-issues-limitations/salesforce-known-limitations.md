@@ -2,7 +2,27 @@
 
 This article summarizes Salesforce's known issues and limitations that AutoRABIT users should consider:
 
-#### Deployment <a href="#deployment" id="deployment"></a>
+### **Email Messages Attachment Limitation**
+
+**Issue**\
+Salesforce has a limitation where files can only be added to Email Messages in the draft state. This presents a challenge when replicating data between organizations (ORGs).
+
+**AutoRABIT Solution**\
+We address this issue by implementing the following steps during the replication process:
+
+1. **Draft State Conversion**
+   * All Email Messages are replicated in a draft state in the destination Org.
+   * This allows for file attachments to be added to the Email Messages.
+2. **Email Messages Replication**
+   * All existing Email Messages with attachments in the destination Org must be deleted if they are already available in the destination without attachments.
+   * Email Messages from the source Org or backup are then replicated to the destination Org.
+3. **File Attachment**
+   * During the replication process, while the Email Messages are in the draft state, any available files are attached to the Email Messages.  &#x20;
+   * Email Messages are changed to the same state as in the backup or source Org, ensuring the data replication is completed successfully.
+
+This structured approach ensures files are properly attached to Email Messages during the data replication process between Orgs using AutoRABIT.
+
+## Deployment <a href="#deployment" id="deployment"></a>
 
 1. For Salesforce API version **45.0**, Salesforce does not allow deployment or retrieval of the **"PlatformEventChannel"** component in any environment. Therefore, AutoRABIT will not be able to retrieve the **"PlatformEventChannel"** component into the destination org even though the deployment is successful.
 2. The above case is also similar to the **"PermissionSetGroup"** component (for API version 45.0 only). However, Salesforce has provision for selected customers to deploy the **PermissionSetGroup** component through a pilot program that requires agreement to specific terms and conditions. To be nominated to participate in the program, do contact Salesforce.
@@ -36,12 +56,12 @@ This article summarizes Salesforce's known issues and limitations that AutoRABIT
 
 <figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### Version Control <a href="#version-control" id="version-control"></a>
+## Version Control <a href="#version-control" id="version-control"></a>
 
 1. While performing an **EZ-Commit**, Salesforce Org is unable to retrieve the complete information on whether some members of the **WaveDataflow** metadata type are available or not in the package.xml file; and if it is available then whether it is **Added, Modified,** and **Deleted.** If the metadata type is available in the package.xml file, it will be listed in both **Added/Modified** and **Deleted** tabs. Select the metadata type in the correct tab, and it will become unavailable in the other tab immediately.
 2. For Salesforce API version **57.0**, **OmniSupervisorConfig** metadata type is not supported in **Unlocked Package** creation, but is working as expected in **Commits** and **Deployments**.
 
-#### SFDX <a href="#sfdx" id="sfdx"></a>
+## SFDX <a href="#sfdx" id="sfdx"></a>
 
 Listed below in the table are the [metadata types](https://www.autorabit.com/blog/the-role-of-metadata-in-devops-for-salesforce/) which are currently not supported in the DX format:
 
@@ -54,13 +74,13 @@ Listed below in the table are the [metadata types](https://www.autorabit.com/blo
 | UserAuthCertificate          | UserProvisioningConfig | DecisionMatrixDefinitionVersion |
 | UserAccessPolicy             | ExternalAiModel        | <p><br></p>                     |
 
-#### Profiles & Permission Sets Limitations <a href="#profiles-permission-sets-limitations" id="profiles-permission-sets-limitations"></a>
+## Profiles & Permission Sets Limitations <a href="#profiles-permission-sets-limitations" id="profiles-permission-sets-limitations"></a>
 
 1. Any profile permission (say Object’s FLS, User permission) which holds a Boolean value is changed from True to False, the change cannot be committed to a branch through AutoRABIT.
 2. Any Object CRUD for the profile is only fetched if at least one value is chosen. For example, if I change an Object CRUD from Create, Read, Update to None, this change is not fetched for Commit. In order to fetch Object CRUD at least one of Create, Edit, Read, Delete, View All, Modify All options should be selected.
 3. The same behavior is applicable for Permission Sets as well. Any permission that holds Boolean value is changed from True to False, the change cannot be committed to a branch through AutoRABIT.
 
-#### Why does Salesforce recommend moving from SFDX to SFCLI?
+## Why does Salesforce recommend moving from SFDX to SFCLI?
 
 Salesforce strongly recommends moving from SFDX to SF CLI because SF CLI is the newer, more powerful, and more flexible tool. SFDX is based on the Force.com CLI, which was originally designed for command-line developers. &#x20;
 
@@ -75,7 +95,7 @@ SFCLI is based on the Salesforce CLI, which was designed for a wider range of de
 | Flexibility                     | Less flexible           | More flexible                      |
 | Ease of use                     | More difficult to learn | Easier to learn                    |
 
-#### Limitations of SF CLI
+## Limitations of SF CLI
 
 Salesforce is aware of the limitations in SF CLI and is working to address them. One of the limitations that Salesforce is working to address includes:
 
@@ -101,14 +121,14 @@ _**What is AutoRABIT doing to help customers?**_
 
 AutoRABIT is committed to delivering an exceptional customer experience. We continue to work closely with Salesforce to overcome limitations where they exist. While we jointly pursue a more elegant solution, please use the workaround cited above and continue providing the much-needed feedback that makes AutoRABIT the best choice for Salesforce DevOps. Stay tuned for our weekly updates where new information will be communicated.
 
-#### Dataloader <a href="#dataloader" id="dataloader"></a>
+## Data Loader <a href="#dataloader" id="dataloader"></a>
 
-1. Execution Governors Limitations handled by AutoRABIT's Dataloader Pro
+1. Execution Governors Limitations handled by AutoRABIT's Data Loader Pro
    * A total number of records retrieved by SOQL queries if it is greater than 50,000 limits- Dataloader Pro uses the **"Querymore"** operator to retrieve all the records that are greater than 50,000 limits.
    * SOQL query runtime before Salesforce cancels the transaction is above 120 seconds- As per the Salesforce execution governors limitation, the maximum SOQL query runtime before Salesforce cancels the transaction is 120 seconds. If it is beyond 120 seconds, this cannot be handled by our Dataloader Pro.
    * SOQL characters length should be 20,000 characters- Dataloader Pro divides a single query into multiple queries and execute them. Getting proper estimation while saving a [Dataloader](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) job, is very difficult as the queries are randomly generated. This normally occurs in two different scenarios:
-     * while fetching parents and child records that are linked to the master objects and
-     * while extracting data of a particular object with all the linked fields. Since there are millions of records, there are more chances of the query being timed out. Therefore, it is highly recommended to create two or more jobs rather than creating a single job; apply proper filters on the master objects and select a minimum multiple reference option during execution.
+     * When fetching parents and child records that are linked to the master objects and
+     * When extracting data of a particular object with all the linked fields. Since there are millions of records, there are more chances of the query being timed out. Therefore, it is highly recommended to create two or more jobs rather than creating a single job; apply proper filters on the master objects and select a minimum multiple reference option during execution.
 2. Salesforce does not retrieve Validation rules from destination org for a particular object if the same object is duplicated and is available in **Deleted objects** list.
 3. Salesforce restricts access to create an **External Id** for the following objects in AutoRABIT. These listed objects are not supported in **Dataloader Pro **_**(**for more details, refer_ _to_ [_How to perform Dataloader Pro Operation_](../../arm-features/dataloader/dataloader-pro.md), step 6_**)**_ and **Test Environment Setup **_**(**for more details, refer to_ [_Create a New Test Environment Setup_](../../arm-features/dataloader/test-environment-setup.md)_, step 5**)**_.
 

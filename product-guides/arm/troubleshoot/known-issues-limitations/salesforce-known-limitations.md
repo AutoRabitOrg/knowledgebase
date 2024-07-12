@@ -2,26 +2,6 @@
 
 This article summarizes Salesforce's known issues and limitations that AutoRABIT users should consider:
 
-### **Email Messages Attachment Limitation**
-
-**Issue**\
-Salesforce has a limitation where files can only be added to Email Messages in the draft state. This presents a challenge when replicating data between organizations (ORGs).
-
-**AutoRABIT Solution**\
-We address this issue by implementing the following steps during the replication process:
-
-1. **Draft State Conversion**
-   * All Email Messages are replicated in a draft state in the destination Org.
-   * This allows for file attachments to be added to the Email Messages.
-2. **Email Messages Replication**
-   * All existing Email Messages with attachments in the destination Org must be deleted if they are already available in the destination without attachments.
-   * Email Messages from the source Org or backup are then replicated to the destination Org.
-3. **File Attachment**
-   * During the replication process, while the Email Messages are in the draft state, any available files are attached to the Email Messages.  &#x20;
-   * Email Messages are changed to the same state as in the backup or source Org, ensuring the data replication is completed successfully.
-
-This structured approach ensures files are properly attached to Email Messages during the data replication process between Orgs using AutoRABIT.
-
 ## Deployment <a href="#deployment" id="deployment"></a>
 
 1. For Salesforce API version **45.0**, Salesforce does not allow deployment or retrieval of the **"PlatformEventChannel"** component in any environment. Therefore, AutoRABIT will not be able to retrieve the **"PlatformEventChannel"** component into the destination org even though the deployment is successful.

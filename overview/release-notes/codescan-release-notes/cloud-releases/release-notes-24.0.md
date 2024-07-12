@@ -19,6 +19,123 @@ Starting **March 27, 2024**, we're thrilled to announce a new, streamlined relea
 We're committed to enhancing your experience and ensuring CodeScan meets your evolving needs. Stay tuned for more updates!
 {% endhint %}
 
+## Release Notes 24.0.8
+
+**Release Date: 10 July 2024**
+
+The latest CodeScan release is comprised of  the following:
+
+* New Features&#x20;
+* Enhancements&#x20;
+* Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### New Features&#x20;
+
+This update includes several New Features and Enhancements within CodeScan’s VS Code IDE Extension: &#x20;
+
+* New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1279).png" alt=""><figcaption></figcaption></figure>
+
+* Fixed a plugin issue that caused non-recognition of CodeScan-specific JavaScript (JS) and VisualForce (VF) rules. &#x20;
+* Resolved duplicate issue detection for specific Apex rules. &#x20;
+* Added automatic token generation and connection flow UI. &#x20;
+* Added support for SonarQube 9.9 and later versions&#x20;
+
+### Enhancements
+
+1. **Rule Enhancement for “Avoid Using Test.isRunningTest()” {APEX Rule}:**&#x20;
+
+&#x20;Summary: Previously, this rule was flagging violations when finding methods written as  Test.isRunningTest(). This rule has been enhanced to also flag violations when finding methods written as System.Test.isRunningTest().&#x20;
+
+2. **Decrease False Positives reported for Rule “sf:FixDuplicateMethods”**&#x20;
+
+Summary: CodeScan recognizes that methods should not share the same implementations&#x20;
+
+As such, the scope of the rule will be limited to methods with actual implementations, rather than including interface method declarations. &#x20;
+
+This means the rule will now focus solely on detecting and addressing duplicate implementations within concrete classes, ensuring that only methods containing executable code are evaluated. &#x20;
+
+Violations reported by this rule will now include details of all duplicate methods affected. This means each violation will list every instance of a method that shares the same implementation, making it easier to identify and resolve duplicated code. &#x20;
+
+These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness.&#x20;
+
+3. **Enhancement to Rule: "Field Level Security"** &#x20;
+
+&#x20;CodeScan’s FLS rule did not detect DML methods called when syntax is insert(record), update(record), etc.&#x20;
+
+Instead, FLS was only detecting when “insert record;” syntax was used. &#x20;
+
+We made a parser update within CodeScan, and then an enhancement to the rule was applied which corrected the syntax detection.&#x20;
+
+4. **Enhancement to Rule: "Field Level Security"**&#x20;
+
+Summary: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'.&#x20;
+
+5. **Added dashboardUrl to Job status API**&#x20;
+
+Summary: On the Project Analysis page, we have added dashboardUrl to Job status API on success/failure of analysis:
+
+<figure><img src="../../../../.gitbook/assets/image (1280).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+1. UI Improvement on Rule “NullCoalescing operator”&#x20;
+
+We have completed an alignment adjustment within the CodeScan UI for this specific rule.&#x20;
+
+**Previous UI:**&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1281).png" alt=""><figcaption></figcaption></figure>
+
+**Adjusted UI:**
+
+<figure><img src="../../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure>
+
+2. UI Improvement on Rule “Lightning channel Exposed”&#x20;
+
+We have completed an alignment adjustment within the CodeScan UI for this specific rule.&#x20;
+
+**Previous UI:**&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1283).png" alt=""><figcaption></figcaption></figure>
+
+**Adjusted UI:**
+
+<figure><img src="../../../../.gitbook/assets/image (1284).png" alt=""><figcaption></figcaption></figure>
+
+3. **Improved IDE Usage Tracking**&#x20;
+
+Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. &#x20;
+
+The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code &#x20;
+
+Note:  Only VS code updates on the page&#x20;
+
+Additionally, instead of loginID , we now display the name of the user and the email under a single column called ‘User’. &#x20;
+
+Also, we changed the title to IDE Usage instead of “IDE Usages” \* &#x20;
+
+Finally, we removed the token information (as it is not needed). &#x20;
+
+4. **Fixed CodeScan IntelliJ Plugin error** &#x20;
+
+Previously, the CodeScan IntelliJ Plugin was throwing an error during binding updates when connected to SonarQube 10.&#x20;
+
+The issue was caused from self-hosted connections being incorrectly detected as cloud connections, resulting in an error popup.&#x20;
+
+This issue occurred when connecting to self-hosted SQ 10.x versions in both 2023 and 2024 based IntelliJ versions. The issue error message (popup) resulted from an API call failure.&#x20;
+
+This issue has now been remedied with this fix.&#x20;
+
+5. **Generated SARIF now associated with the branch being scanned**&#x20;
+
+Previously, when SARIF was generated while scanning from our SFDX plugin, the SARIF was generated from the main branch of the project, and NOT the branch that is being scanned. &#x20;
+
+This has been corrected, and now the SARIF generates from the branch of the project that has just been scanned.&#x20;
+
 ## Release Notes 24.0.7
 
 **Release Date: 14 June 2024**
@@ -45,8 +162,6 @@ New code settings no longer switch depending on the main branch of the project; 
 ### **Summary:**&#x20;
 
 CodeScan 24.0.6 is comprised of the following 3 enhancements:&#x20;
-
-
 
 1.  **SBOM Upgrade for ADO extension:**&#x20;
 

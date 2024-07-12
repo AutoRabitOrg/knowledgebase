@@ -19,20 +19,6 @@ Starting **March 27, 2024**, we're thrilled to announce a new, streamlined relea
 We're committed to enhancing your experience and ensuring CodeScan meets your evolving needs. Stay tuned for more updates!
 {% endhint %}
 
-## Release Notes 24.0.8
-
-**10 July 2024**
-
-CodeScan 24.0.8 is comprised of one new feature, five enhancements, and five fixes as shown below.
-
-### New Feature
-
-
-
-
-
-
-
 ## Release Notes 24.0.7
 
 **Release Date: 14 June 2024**

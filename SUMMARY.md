@@ -560,7 +560,7 @@
   * [Quality Rules](product-guides/codescan/quality-rules/README.md)
     * [CodeScan Rule List](product-guides/codescan/quality-rules/codescan-rule-list.md)
     * [Creating Custom Rules with XPath](product-guides/codescan/quality-rules/creating-custom-rules-with-xpath.md)
-    * [Configure Polyfill.io Vulnerability Rules](product-guides/codescan/quality-rules/configure-polyfill.io-vulnerability-rules.md)
+    * [Configuration for Polyfill.io Vulnerability Rules](product-guides/codescan/quality-rules/configuration-for-polyfill.io-vulnerability-rules.md)
     * [Configuration for Salesforce Metadata Rules](product-guides/codescan/quality-rules/creating-custom-salesforce-metadata-rules.md)
     * [Metadata Rules on CodeScan Self-Hosted](product-guides/codescan/quality-rules/metadata-rules-on-codescan-self-hosted.md)
   * [Issues](product-guides/codescan/issues/README.md)

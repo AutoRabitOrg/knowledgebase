@@ -1,5 +1,5 @@
 ---
-description: Newest CodeScan Release
+description: Newest CodeScan Releases
 ---
 
 # Release Notes 24.0

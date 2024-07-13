@@ -14,6 +14,12 @@ AutoRABIT scans for the **sfdx-project.json** in your local directory which is t
 
 For the SFDX repository created outside and registered later with AutoRABIT, the source folder has to be declared in an **sfdx-project.json** file under the array named **packageDirectories**. This will allow you to pick the source folder that you have declared in the **sfdx-project.json** during commit/ CI Job operation or while creating unlocked packages. If you are in trouble finding the declared source folder yet, press the **Refresh** button to re-scan the Package Directories for the new source folder path.
 
+ARM does not currently support custom SFDX directory structures. As per the standard SFDX directory structure, we follow and accept only the `<force-app*>/main/default/*` structure. This is the default structure created when we run the project generate command, as follows:
+
+<figure><img src="../../.gitbook/assets/image (1286).png" alt="" width="552"><figcaption></figcaption></figure>
+
+There can be multiple package directories, and all of them should follow the same structure. The `sfdx-project.json` file is used to identify the list of package directories, and all ARM functionalities work with the `<package-directory>/main/default` structure.
+
 ### Places to find the Source SFDX Folder Path <a href="#places-to-find-the-source-sfdx-folder-path" id="places-to-find-the-source-sfdx-folder-path"></a>
 
 #### EZ-Commit screen <a href="#ezcommit-screen" id="ezcommit-screen"></a>

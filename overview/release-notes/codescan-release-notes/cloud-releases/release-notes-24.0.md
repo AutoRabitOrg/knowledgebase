@@ -6,19 +6,6 @@ description: Newest CodeScan Release
 
 ## CodeScan Cloud
 
-{% hint style="info" %}
-**Exciting News! Enhanced Release Schedule for a Better Experience**
-
-Starting **March 27, 2024**, we're thrilled to announce a new, streamlined release schedule for CodeScan! Moving forward, we'll be delivering a unified release of new features, enhancements, and architectural improvements **every two weeks**. This begins with our latest release, **24.0.3**.
-
-**Why This Matters to You:**
-
-* **Faster Access to New Features:** Enjoy the latest enhancements and features without the wait.
-* **Stay Ahead:** Frequent updates ensure you're always using the most advanced version of CodeScan.
-
-We're committed to enhancing your experience and ensuring CodeScan meets your evolving needs. Stay tuned for more updates!
-{% endhint %}
-
 ## Release Notes 24.0.8
 
 **Release Date: 10 July 2024**

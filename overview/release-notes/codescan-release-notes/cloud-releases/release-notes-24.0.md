@@ -57,7 +57,7 @@ Instead, FLS was only detecting when “insert record;” syntax was used. &#x20
 
 We made a parser update within CodeScan, and then an enhancement to the rule was applied which corrected the syntax detection.&#x20;
 
-4. **Enhancement to Rule: "Field Level Security"**&#x20;
+4. **Enhancement to Rule: "Cyclomatic Complexity"**&#x20;
 
 Summary: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'.&#x20;
 

@@ -123,6 +123,28 @@ Previously, when SARIF was generated while scanning from our SFDX plugin, the SA
 
 This has been corrected, and now the SARIF generates from the branch of the project that has just been scanned.&#x20;
 
+## CodeScan Polyfill Protection Release
+
+**Release Date: 06 July 2024**
+
+We are excited to announce that CodeScan has been updated with crucial enhancements to address recent security concerns related to polyfills. Recent advisories have highlighted significant threats stemming from polyfills, particularly those distributed via the CDN polyfill.io, which are linked to malware.&#x20;
+
+This update, effective **July 6th**, introduces advanced protection mechanisms to ensure your Salesforce environment remains secure.&#x20;
+
+Here’s how CodeScan is advancing your security:&#x20;
+
+1. **Configuration Scanning:** Our enhanced system now scans the configuration settings of Salesforce components, including Salesforce Sites, Salesforce CORS (Cross-Origin Resource Sharing), and Salesforce CSP (Content Security Policy), to detect any unauthorized calls to polyfill.io domains.&#x20;
+2. **Component Scanning:** We are scanning the core Salesforce components that enable developers to build sophisticated, custom user interfaces including Visualforce, Aura, Lightning, and other web components&#x20;
+3. **Package Scanning:** Our updated scanning mechanism checks downloaded packages from Salesforce AppExchange to ensure they do not contain insecure calls to polyfill.io domains&#x20;
+
+**Why This Matters**&#x20;
+
+Recent security advisories highlight the risks associated with compromised polyfills. &#x20;
+
+**What Do I Need to Do?**&#x20;
+
+For our SaaS Cloud clients, these updates were included in the most recent maintenance release on July 06, so no action is required on your side.  For our On Prem clients, these rules will be included in the 24.0.8 On Prem release, which is scheduled for July 17.  For our Dedicated Cloud clients, please contact your Account Team to schedule your upgrade. &#x20;
+
 ## Release Notes 24.0.7
 
 **Release Date: 19 June 2024**

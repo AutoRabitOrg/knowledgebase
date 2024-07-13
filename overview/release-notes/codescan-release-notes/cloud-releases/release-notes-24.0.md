@@ -138,7 +138,7 @@ This has been corrected, and now the SARIF generates from the branch of the proj
 
 ## Release Notes 24.0.7
 
-**Release Date: 14 June 2024**
+**Release Date: 19 June 2024**
 
 ### Rule Updates&#x20;
 

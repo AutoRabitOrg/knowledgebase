@@ -40,7 +40,7 @@ This update includes several New Features within CodeScan’s VS Code IDE Extens
    **Summary**: CodeScan recognizes that methods should not share the same implementations. As such, the scope of the rule will be limited to methods with actual implementations, rather than including interface method declarations. This means the rule will now focus solely on detecting and addressing duplicate implementations within concrete classes, ensuring that only methods containing executable code are evaluated.  Violations reported by this rule will now include details of all duplicate methods affected. This means each violation will list every instance of a method that shares the same implementation, making it easier to identify and resolve duplicated code.  \
    These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness. \
 
-3. **Enhancement to Rule: "Field Level Security"**  \
+3. **Enhancement to Rule: "Field-Level Security" (FLS)**\
    CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan and an enhancement to the rule was applied, which corrected the syntax detection. \
 
 4. **Enhancement to Rule: "Cyclomatic Complexity"** \
@@ -79,12 +79,7 @@ This update includes several New Features within CodeScan’s VS Code IDE Extens
 <figure><img src="../../../../.gitbook/assets/image (1284).png" alt=""><figcaption></figcaption></figure>
 
 3. **Improved IDE Usage Tracking** \
-   Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code. Additionally, instead of login ID, we now display the name of the user and the email under a single column called ‘User’.  Also, we changed the title to IDE Usage instead of “IDE Usages” \* Finally, we removed the token information, as it is not needed. &#x20;
-
-{% hint style="info" %}
-Note: Only VS code updates on the page
-{% endhint %}
-
+   Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code. <mark style="background-color:yellow;">NOTE: Only VS Code updates on the page.</mark> Additionally, instead of login ID, we now display the name of the user and the email under a single column called ‘User’.  Also, we changed the title to IDE Usage instead of “IDE Usages” \* Finally, we removed the token information, as it is not needed. &#x20;
 4. **Fixed CodeScan IntelliJ Plugin error**  \
    Previously, the CodeScan IntelliJ Plugin was throwing an error during binding updates when connected to SonarQube 10. The issue was caused by self-hosted connections being incorrectly detected as cloud connections, resulting in an error popup. This issue occurred when connecting to self-hosted SQ 10.x versions in both 2023 and 2024-based IntelliJ versions. The issue error message (popup) resulted from an API call failure. This issue has now been remedied with this fix.&#x20;
 5. **Generated SARIF now associated with the branch being scanned** \

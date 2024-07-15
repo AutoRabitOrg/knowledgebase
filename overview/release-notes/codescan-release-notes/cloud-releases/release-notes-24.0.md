@@ -10,7 +10,7 @@ description: Newest CodeScan Releases
 
 **Release Date: 10 July 2024**
 
-The latest CodeScan release is comprised of  the following:
+The latest CodeScan release is comprised of the following:
 
 * [New Features](release-notes-24.0.md#new-features)&#x20;
 * [Enhancements](release-notes-24.0.md#enhancements)&#x20;
@@ -20,16 +20,16 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features&#x20;
 
-This update includes several New Features and Enhancements within CodeScan’s VS Code IDE Extension: &#x20;
+This update includes several New Features within CodeScan’s VS Code IDE Extension: &#x20;
 
-* New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.&#x20;
+1. New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1279).png" alt=""><figcaption></figcaption></figure>
 
-* Fixed a plugin issue that caused non-recognition of CodeScan-specific JavaScript (JS) and VisualForce (VF) rules. &#x20;
-* Resolved duplicate issue detection for specific Apex rules. &#x20;
-* Added automatic token generation and connection flow UI. &#x20;
-* Added support for SonarQube 9.9 and later versions.
+2. Fixed a plugin issue that failed to recognize CodeScan-specific JavaScript (JS) and VisualForce (VF) rules. &#x20;
+3. Resolved duplicate issue detection for specific Apex rules. &#x20;
+4. Added automatic token generation and connection flow UI. &#x20;
+5. Added support for SonarQube 9.9 and later versions.
 
 ### Enhancements
 
@@ -41,13 +41,13 @@ This update includes several New Features and Enhancements within CodeScan’s V
    These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness. \
 
 3. **Enhancement to Rule: "Field Level Security"**  \
-   CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan, then an enhancement to the rule was applied, which corrected the syntax detection. \
+   CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan and an enhancement to the rule was applied, which corrected the syntax detection. \
 
 4. **Enhancement to Rule: "Cyclomatic Complexity"** \
    **Summary**: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'. \
 
-5. **Added dashboardUrl to Job status API** \
-   **Summary**: On the Project Analysis page, we have added dashboardUrl to Job status API on success/failure of analysis:
+5. **Added dashboard Url to Job status API** \
+   **Summary**: On the Project Analysis page, we have added dashboard Url to Job status API on success/failure of analysis:
 
 <figure><img src="../../../../.gitbook/assets/image (1280).png" alt=""><figcaption></figcaption></figure>
 

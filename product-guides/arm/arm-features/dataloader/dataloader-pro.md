@@ -185,7 +185,7 @@ Finally, click on **`Save`** to complete the initial process. You will be redire
 3.  On running the job, the retained job settings will be displayed on the pop-up, “Run Configuration”.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Any changes made during the run of the job will only affect that individual job run.
 5. To permanently change the configured settings during the job creation, the user has to edit the created job and change the settings and save the job.
 

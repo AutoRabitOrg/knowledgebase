@@ -29,7 +29,9 @@ This update includes several New Features and Enhancements within CodeScan’s V
 * Fixed a plugin issue that caused non-recognition of CodeScan-specific JavaScript (JS) and VisualForce (VF) rules. &#x20;
 * Resolved duplicate issue detection for specific Apex rules. &#x20;
 * Added automatic token generation and connection flow UI. &#x20;
-* Added support for SonarQube 9.9 and later versions.Enhancements
+* Added support for SonarQube 9.9 and later versions.
+
+### Enhancements
 
 1. **Rule Enhancement for “Avoid Using Test.isRunningTest()” {APEX Rule}:** \
    **Summary**: Previously, this rule was flagging violations when finding methods written as  Test.isRunningTest(). This rule has been enhanced to also flag violations when finding methods written as System.Test.isRunningTest(). \
@@ -51,23 +53,24 @@ This update includes several New Features and Enhancements within CodeScan’s V
 
 ### Fixes
 
-1. UI Improvement on Rule “NullCoalescing operator” \
-   We completed an alignment adjustment within the CodeScan UI for this specific rule. \
-   **Previous UI:** \
-   \
-   **Adjusted UI:**
-
-<figure><img src="../../../../.gitbook/assets/image (1281).png" alt=""><figcaption></figcaption></figure>
+1.  **UI Improvement on Rule “NullCoalescing operator”** \
+    We completed an alignment adjustment within the CodeScan UI for this specific rule. \
+    **Previous UI:** \
 
 
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+**Adjusted UI:**
+
+<div align="center" data-full-width="true">
 
 <figure><img src="../../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure>
 
-2. UI Improvement on Rule “Lightning channel Exposed”&#x20;
+</div>
 
-We have completed an alignment adjustment within the CodeScan UI for this specific rule.&#x20;
-
-**Previous UI:**&#x20;
+2. **UI Improvement on Rule “Lightning channel Exposed”**\
+   We completed an alignment adjustment within the CodeScan UI for this specific rule. \
+   **Previous UI:**&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1283).png" alt=""><figcaption></figcaption></figure>
 
@@ -75,39 +78,21 @@ We have completed an alignment adjustment within the CodeScan UI for this specif
 
 <figure><img src="../../../../.gitbook/assets/image (1284).png" alt=""><figcaption></figcaption></figure>
 
-3. **Improved IDE Usage Tracking**&#x20;
+3. **Improved IDE Usage Tracking** \
+   Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code. Additionally, instead of login ID, we now display the name of the user and the email under a single column called ‘User’.  Also, we changed the title to IDE Usage instead of “IDE Usages” \* Finally, we removed the token information, as it is not needed. &#x20;
 
-Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. &#x20;
+{% hint style="info" %}
+Note: Only VS code updates on the page
+{% endhint %}
 
-The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code &#x20;
-
-Note:  Only VS code updates on the page&#x20;
-
-Additionally, instead of loginID , we now display the name of the user and the email under a single column called ‘User’. &#x20;
-
-Also, we changed the title to IDE Usage instead of “IDE Usages” \* &#x20;
-
-Finally, we removed the token information (as it is not needed). &#x20;
-
-4. **Fixed CodeScan IntelliJ Plugin error** &#x20;
-
-Previously, the CodeScan IntelliJ Plugin was throwing an error during binding updates when connected to SonarQube 10.&#x20;
-
-The issue was caused from self-hosted connections being incorrectly detected as cloud connections, resulting in an error popup.&#x20;
-
-This issue occurred when connecting to self-hosted SQ 10.x versions in both 2023 and 2024 based IntelliJ versions. The issue error message (popup) resulted from an API call failure.&#x20;
-
-This issue has now been remedied with this fix.&#x20;
-
-5. **Generated SARIF now associated with the branch being scanned**&#x20;
-
-Previously, when SARIF was generated while scanning from our SFDX plugin, the SARIF was generated from the main branch of the project, and NOT the branch that is being scanned. &#x20;
-
-This has been corrected, and now the SARIF generates from the branch of the project that has just been scanned.&#x20;
+4. **Fixed CodeScan IntelliJ Plugin error**  \
+   Previously, the CodeScan IntelliJ Plugin was throwing an error during binding updates when connected to SonarQube 10. The issue was caused by self-hosted connections being incorrectly detected as cloud connections, resulting in an error popup. This issue occurred when connecting to self-hosted SQ 10.x versions in both 2023 and 2024-based IntelliJ versions. The issue error message (popup) resulted from an API call failure. This issue has now been remedied with this fix.&#x20;
+5. **Generated SARIF now associated with the branch being scanned** \
+   Previously when SARIF was generated while scanning from our SFDX plugin, the SARIF was generated from the main branch of the project and NOT the branch being scanned. This has been corrected, and now the SARIF is generated from the branch of the project that has just been scanned.&#x20;
 
 ## CodeScan Polyfill Protection Release
 
-**Release Date: 06 July 2024**
+**Release Date: 6 July 2024**
 
 We are excited to announce that CodeScan has been updated with crucial enhancements to address recent security concerns related to polyfills. Recent advisories have highlighted significant threats stemming from polyfills, particularly those distributed via the CDN polyfill.io, which are linked to malware.&#x20;
 
@@ -341,7 +326,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Value**: The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch." This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, but in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

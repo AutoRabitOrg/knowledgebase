@@ -24,19 +24,19 @@ To create a fresh commit template:
 6. **Optional:** Enter a description of the template.
 7. Click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Choose the **metadata components (including their members)** that should be included in the template. Use the **search** filter to quickly find and add any particular metadata member.
 9. The **Selected** tab will show you all of the metadata you've chosen and are ready to use in the template.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Click **Next**.
 11. The next screen will allow viewing the components you're going to use in the template one more time before you save it. You can also go back to the previous screen and add any metadata components that were overlooked.
 12. Finally, click on **Save Template**.&#x20;
 13. You'll be redirected to the **Commit Templates Summary** page after confirmation, where you'll see your freshly created commit template at the top of the list.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For each commit template, you can find the below details:
 

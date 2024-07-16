@@ -42,6 +42,15 @@ This update improves the tool's efficiency and responsiveness and leverages new 
 
 The following weekly fixes were implemented.
 
+#### 17 July 2024
+
+**ARM 24.1.5**
+
+1. A code fix was applied to version 24.1 as a result of a data error encountered in the CI Jobs module related to CI Jobs not triggering. Support ticket #116677
+2. A code fix was applied to the Version Control module in version 24.1 related to a data error causing the WebLink deletion feature to not work. Support ticket #115994
+3. A code fix was applied to the CI Jobs module in version 24.1 due to a data error identified internally with the CI Edit edit mode where the "Do you want us to update the test classes" feature is not saving.
+4. A code fix was applied to the nCino module in version 24.1 related to a use-case error in which Data Loader Pro was not fetching the child object. Support tickets #116928, #115313
+
 #### 10 July 2024
 
 **ARM 24.1.4**

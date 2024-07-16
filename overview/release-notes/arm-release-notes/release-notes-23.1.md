@@ -86,6 +86,12 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 17 July 2024
+
+**ARM 23.1.38**
+
+1. A code fix was applied to the nCino module in version 23.1 related to a use-case error in which Data Loader Pro was not fetching the child object. Support ticket #115313
+
 #### 10 July 2024
 
 **ARM 23.1.37**

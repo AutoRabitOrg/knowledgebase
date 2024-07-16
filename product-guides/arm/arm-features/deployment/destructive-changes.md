@@ -17,7 +17,7 @@ Removing dead code is an important software development aspect that is often neg
 
 After selecting the list of components to be deployed to the target Salesforce org, go to the **`Destructive Items`** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
 
 You’ll see the list of metadata components in your target org but not in your source under the **`Post-Destructive Changes`** tab. Select the checkbox next to a component you want to delete, and that component will be deleted when you deploy.
 

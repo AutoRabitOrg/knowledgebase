@@ -8,18 +8,18 @@ The following articles describe using **Single Dataloader** to upsert data into 
 2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/wp-content/uploads/2020/12/Salesforce-Data-Loader-1.pdf) module and select **`Dataloader`**.
 3. Click **`Upsert`** on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Choose your **`Salesforce Org`** and your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch Objects`** to fetch all the objects from your Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the object you wish to upsert the data. For example, **`Account`**, **`Contact`**, **`Lead`**, etc. You can use the **`search`** function to search through your objects and the **`filter`** button to filter your standard/custom objects quickly.
 8. Click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (65) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Import your file from your local directory on the next screen. Upload the **`CSV`** file you wish to import by clicking the **`Upload`** button.
 
@@ -83,7 +83,7 @@ The following articles describe using **Single Dataloader** to upsert data into 
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. **`Edit:`** Modifies or updates the process details.&#x20;
 2. **`Abort:`** Aborts the process while it is still running.
@@ -92,10 +92,10 @@ The following articles describe using **Single Dataloader** to upsert data into 
 5. **`Log:`** Provides information about the execution of the upserted task.
 6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](https://knowledgebase.autorabit.com/arm/docs/validation-workflow-rules). Sample VR/WFR attached:
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. **`Clone:`** Creates a copy (clone) of the insert process. Operation type and object name are displayed. Enter the **`Process Name`** in the field. The default **`Salesforce Org`** is automatically selected. To choose a different org, use the dropdown list. Select the **`Choose Different Data CSV File`** check box to upload a different CSV file. Finally, click **`Clone`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>

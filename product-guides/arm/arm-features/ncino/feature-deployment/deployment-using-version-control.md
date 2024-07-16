@@ -2,53 +2,47 @@
 
 This section is all about deploying the nCino data using [Version Control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)
 
-1.  Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
+1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1614514112387.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22).png" alt="" width="202"><figcaption></figcaption></figure>
+
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1627883038382.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-1. On the next screen, give the process a **name** and a brief **description**.
-2. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
-3. Select your **version control** type.
-4. Select your **repository** and **branch**.
-5.  Select the deployment type. There are three options to choose from:
+3. On the next screen, give the process a **name** and a brief **description**.
+4. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
+5. Select your **version control** type.
+6. Select your **repository** and **branch**.
+7.  Select the deployment type. There are three options to choose from:
 
-    1. **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **version when selecting** the entire branch option.
+    * **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **version when selecting** the entire branch option.
 
+    <figure><img src="../../../../../.gitbook/assets/image (25).png" alt="" width="470"><figcaption></figcaption></figure>
 
+    * **Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622171803666.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (26).png" alt="" width="454"><figcaption></figcaption></figure>
 
-    1. **Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
+    <figure><img src="../../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
+    * **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
 
+    <figure><img src="../../../../../.gitbook/assets/image (29).png" alt="" width="434"><figcaption></figcaption></figure>
+8. The object configuration section will render the selected objects and apply filters and mappings based on your selection.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622173577245.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622173622447.png" alt=""><figcaption></figcaption></figure>
+9. Choose your **target org**.
 
-1. **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
+<figure><img src="../../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1627883500122.png" alt=""><figcaption></figcaption></figure>
+10. There are various options that you can configure to your objects before you proceed with deployment:
 
-1. The object configuration section will render the selected objects and apply filters and mappings based on your selection.
+    * Applied Mappings
+    * Applied Filters
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622398255729.png" alt=""><figcaption></figcaption></figure>
-
-1. Choose your **target org**.
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622398395954.png" alt=""><figcaption></figcaption></figure>
-
-1.  There are various options that you can configure to your objects before you proceed with deployment:
-
-    1. Applied Mappings
-    2. Applied Filters
-
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622398505292.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mapping <a href="#applied-mapping" id="applied-mapping"></a>
 
@@ -58,10 +52,10 @@ In the **Source** field: Select your source field whose values will be populated
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1618515786180.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Important Note (About Applied Mappings):
+**Important Note (About Applied Mappings):**
 
 1. If there is no Lookup key and the name is set to External ID, AutoRABIT is still supported.
 2. Because the source for this is a CSV extract and not a salesforce org, all fields from the source sandbox will be fetched, regardless of the External ID in the **Source** column, whereas the source for Destination is a salesforce org.
@@ -71,7 +65,7 @@ Important Note (About Applied Mappings):
 
 Such filters will be displayed here if any filter is applied to the objects.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622398705203.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: The dataset is already prepared at the time of the commit, so you can’t edit it at this point. However, if you like to edit the filter, use the feature: [Deployment via Version Control using Salesforce org](deployment-via-version-control-using-salesforce-org.md)
@@ -87,7 +81,7 @@ Click on **Deploy** to proceed to the next screen. The next screen will display 
 4. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in source org) in destination org.
 5. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1670997599960.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (35).png" alt="" width="510"><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process.
 

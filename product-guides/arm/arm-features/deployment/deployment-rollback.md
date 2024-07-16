@@ -12,18 +12,18 @@ ARM can take a snapshot of your orgs' metadata and copy or deploy it to another 
 
 Before rolling back your deployment, ensure the rollback feature is turned on for your deployment. This implies that the **`Take Backup`** checkbox is selected on the **`Deployment Settings`** screen when a deployment is run. The deployment will not be able to be rolled back if the checkbox is not enabled.
 
-<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next,
 
 1. Go to the **`Deployment History`** screen and choose the deployment label from the list for which you would like to trigger the rollback.
 2. Click **`Rollback`**.
 
-<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Find the metadata components that will be rollbacked (under the **`Constructive Changes`** section).
 
-<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** In previous releases, ARM didn't have the option to exclude the members while doing the rollback. However, in the recent release, you will now have the feasibility to exclude/deselect the metadata members from the **`Constructive Changes`** section.
@@ -35,9 +35,9 @@ Next,
     * **`Post Destructive Changes:`** The post destructive changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
     * **`Pre Destructive Changes:`** Pre-destructive changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
 
-    <figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Remember:** You must add the version number before continuing with destructive changes for active flow metadata. See the [FlowDefinition guide](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_flowdefinition.htm) for more detail.
@@ -45,7 +45,7 @@ Next,
 
 6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Apex Unit Tests](apex-unit-tests.md)
 
-<figure><img src="../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Next, you will find two more deployment options to choose from:
    * **Deploy purge on delete**: Salesforce uses a recycle bin metaphor for data that users delete. Instead of removing the data, Salesforce flags it as deleted and makes it visible through the recycle bin. ARM has a provision to identify the components that users want to delete and permanently delete them from their Salesforce environment instead of keeping the deleted components in recycle bin. Once purged, they can not be recovered.
@@ -53,6 +53,6 @@ Next,
 8. Add information about the current rollback deployment process in the **`Deployment Notes`** box.
 9. Type '**`Rollback`**' in the field provided and click on **`Yes`**.
 
-<figure><img src="../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!

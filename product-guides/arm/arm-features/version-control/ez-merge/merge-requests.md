@@ -20,12 +20,12 @@ To initiate a new merge request, go to the [**Version Control**](https://www.aut
 
 The **Merge Request History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. On the **New Merge Request** page, choose the **source repository** and **branch** that contain your changes, and the **target branch** where you want to merge the changes.
 2. Click on **Compare Branches and Continue**.
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the merge request a **name** and a short **description** (if required).
 4. Enter the **assignee** username. You can assign the merge request to yourself by clicking on the _assign to yourself_ link. The assignee will be notified by email about the created merge request.
@@ -33,11 +33,11 @@ The **Merge Request History** screen is best viewed when the zoom setting is set
 6. Enable the **"Delete Source Branch when Merge Request is closed"** option to keep your repository clean. By doing this, the source branch will be automatically deleted right after the merge request is accepted. This is optional.
 7. **Squash and Merge**: Sometimes, when merging a long list of changes from a development branch into the master, it’s useful to squash those commits into one change for ease of review and to declutter the repo’s commit history. AutoRABIT now offers the option to squash all of the commits in a merge request into one commit after the merge is approved and completed. **(**[**Learn More**](squash-and-merge.md)**)**
 
-<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1).png" alt="" width="561"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1).png" alt="" width="561"><figcaption></figcaption></figure>
 
 8. In the **ALM DETAILS** section, you will have the list of the Jira IDs with the current status and the expected status after a successful merge.For no ALM configured, you will have the message popup stating **"No ALM details found."**
 
-<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. Click on **Create Merge Request.**
 
@@ -45,7 +45,7 @@ The **Merge Request History** screen is best viewed when the zoom setting is set
 
 While triggering a new CI job, you can run a merge request on your GitHub version control repository. To do so, select the **Merge Request** checkbox for your repo under the **Build** section.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Whenever the job runs, [AutoRABIT](https://www.autorabit.com/) will run a merge request on the target branch, and the details can be found on the **Merge Request History** page.
 
@@ -55,7 +55,7 @@ When the assignee initiates a new merge request, an email notification is sent t
 
 **Sample email attached:**
 
-<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Merge Request History <a href="#merge-request-history" id="merge-request-history"></a>
 
@@ -63,21 +63,21 @@ The merge request screen displays the list of merge requests created to date alo
 
 It's a good idea to break data into multiple pages when dealing with multiple merge request records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
 
-<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Under the **Detail View**, you can find detailed information for the initiated merge request.
 
-<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The status will be shown as **Open** for the merge request in the open state, or, **Merge Conflict** for any merging conflicts, which you need to resolve before merging the changes to the target branch. The status normally appears as **Commit** for no conflicts.
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  The merge request log details, together with the metadata changes report, commits, and the comments can be viewed here.&#x20;
 
     * **Log**: Contains the detailed history of the check-in performed.
 
-    <figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1).png" alt="" width="497"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1).png" alt="" width="497"><figcaption></figcaption></figure>
 
     * **Log Statuses:** For each operation performed in the commit phase, the log report will be available. A (![](<../../../../../.gitbook/assets/image (66) (1) (1) (1) (1).png>)) mark against each log segment shows the completion of the operation; you will have (![](<../../../../../.gitbook/assets/image (67) (1) (1) (1) (1).png>)) and (![](<../../../../../.gitbook/assets/image (68) (1) (1) (1) (1).png>)) icons, respectively present against each log segment for a failed or a partially successful operation.
     * **Files Changed**: This tab displays the number of insertions and deletions to each metadata file. The lines highlighted in **RED** color indicate those are updated (added/deleted/modified) in the source branch and in **GREEN** color indicate those are updated (added/deleted/modified) in the destination branch. The highlighted lines are the modified lines.

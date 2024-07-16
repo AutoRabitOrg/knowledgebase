@@ -6,4 +6,4 @@ To assign Quality Profiles to specific Projects, use the **Project Settings > Qu
 
 <figure><img src="../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

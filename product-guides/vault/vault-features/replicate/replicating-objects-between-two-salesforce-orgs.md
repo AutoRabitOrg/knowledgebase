@@ -15,28 +15,28 @@ The Replication functionality enables you to replicate objects between two Sales
 1. Login to your Vault account.
 2. Click on **`Replicate`** from the Vault dashboard page and click on **Replicate Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, select your **`Salesforce Org`**.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Next, select the **`Destination Org`**.
 
-<figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Next, select the **`Replicate Source`** and its **`configuration`** from the drop-down.
 
-<figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Based on the **replicate source** and **configuration** selection, the configured list will get displayed.
 7. For **`backup`** as the replicate source, you can select multiple backups for replication. However for **`archival/hierarchical backup`**, you can choose only one from the list.
 
-<figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click on either **`EZ Replicate`** or **`Selective Replicate`**.
 
@@ -46,11 +46,11 @@ Full replication copies everything from the source to the destination, including
 
 1. Select the **`backups/hierarchical/archival`** to replicate and click on the **`EZ Replicate`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The replicate checklists are displayed on the next pop-up screen, which must be considered before we proceed with the replicate operation. Click **`Got It`** to close the popup.
 
-<figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -64,7 +64,7 @@ Full replication copies everything from the source to the destination, including
 5. The list of metadata and data objects replicated will be displayed for the last time before the replicate process begins. You will not have options to select individual objects as it is an entire replicate process.
 6. Click **`Replicate Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="551"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="551"><figcaption></figcaption></figure>
 
 #### Selective Replicate <a href="#selective-replicate" id="selective-replicate"></a>
 

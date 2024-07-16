@@ -2,49 +2,43 @@
 
 This section is about deploying the nCino metadata and data via version control using the Salesforce dataset.
 
-1.  Hover your mouse over the [nCino ](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/)module and click on the **Deployment History** option.
+1. Hover your mouse over the [nCino ](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/)module and click on the **Deployment History** option.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1614514112387.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (38).png" alt="" width="202"><figcaption></figcaption></figure>
+
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1614514363853.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description** of it.
 4. In the **Source** section, select Deployment From as [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **using Salesforce Org**.
-5.  Select your **Version Control** type, **Repository**, and **Branch**.
+5. Select your **Version Control** type, **Repository**, and **Branch**.
+6.  Select the **deployment type**.
 
-    1.  Select the **Deployment Type**:
+    * **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **template version** when you select the entire branch option.
 
-        1. **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **template version** when you select the entire branch option.
+    <figure><img src="../../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
+    * **Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
 
+    <figure><img src="../../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622399421303.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+7. Select your **Source Salesforce Org**.
+8. Based on your template selection, the object configuration section will render the selected objects and apply filters and mappings.
 
-        2.**Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
+<figure><img src="../../../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
+9. Choose your **Destination Environment**.
 
+<figure><img src="../../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622399568329.png" alt=""><figcaption></figcaption></figure>
+10. There are various options that you can configure to your objects before you proceed with deployment or commit:
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622173622447.png" alt="" width="563"><figcaption></figcaption></figure>
+    * Applied Mappings
+    * Applied Filters
 
-6. Select your **Source Salesforce Org**.
-7. Based on your template selection, the object configuration section will render the selected objects and apply filters and mappings.
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622399677028.png" alt=""><figcaption></figcaption></figure>
-
-8. Choose your **Destination Environment**.
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622399738838.png" alt=""><figcaption></figcaption></figure>
-
-9. There are various options that you can configure to your objects before you proceed with deployment or commit:
-   1. Applied Mappings
-   2. Applied Filters
-
-
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622399889928.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mappings <a href="#applied-mappings" id="applied-mappings"></a>
 
@@ -54,7 +48,7 @@ In the **Source** field: Select your own source field whose values will get popu
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1618515786180.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings)**:
@@ -67,16 +61,16 @@ In the **Destination** field: Select the required field from the destination org
 
 Such filters will be displayed here if any filter is applied to the objects. You can edit the already applied filter (if required) using **Edit Filter.**
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622400015405.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 #### Deployment Option <a href="#deployment-option" id="deployment-option"></a>
 
 Based on your destination selection, you will have different deployment buttons to choose from:
 
 1. **Create Dataset:** Create a dataset from your Salesforce Org. On selection, you will be redirected to the [Commits History](../../version-control/ez-commits/commits-summary.md) screen.
-2.  **Create Dataset & Deploy:** Create a dataset and deploy it to your Salesforce Org.
+2. **Create Dataset & Deploy:** Create a dataset and deploy it to your Salesforce Org.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1622400163200.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.
 
@@ -88,6 +82,6 @@ For deploying to the destination org, you will find the list of deployment crite
 4. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in Source Org) in Destination Org
 5. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1670997599960.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (36).png" alt="" width="510"><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process. You'll be redirected to the [Feature Deployment Summary](feature-deployment-summary.md) page, where you can view detailed deployment reports or re-deploy the nCino objects to your Salesforce Org once again.

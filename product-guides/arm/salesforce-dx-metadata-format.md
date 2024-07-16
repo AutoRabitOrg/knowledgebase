@@ -16,7 +16,7 @@ For the SFDX repository created outside and registered later with AutoRABIT, the
 
 ARM does not currently support custom SFDX directory structures. As per the standard SFDX directory structure, we follow and accept only the `<force-app*>/main/default/*` structure. This is the default structure created when we run the project generate command, as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="484"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="484"><figcaption></figcaption></figure>
 
 There can be multiple package directories, and all of them should follow the same structure. The `sfdx-project.json` file is used to identify the list of package directories, and all ARM functionalities work with the `<package-directory>/main/default` structure.
 

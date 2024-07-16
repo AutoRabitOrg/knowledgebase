@@ -49,10 +49,10 @@ Sometimes you may want to roll back a deployment — for example, when the deplo
 
 As part of a deployment, all Apex tests are run in production. If the production org contains many Apex tests, executing the tests can be time-consuming and can delay your deployment. To reduce deployment time to production, you can perform a quick deployment by skipping the execution of tests. Quick deployments are available when the following requirements are met:
 
-* The components have been validated successfully for the target environment within the last 10 days.
-* Code coverage requirements are met.
-  * If all tests in the org or all **Local tests** are run, overall code coverage is at least 75%, and Apex triggers have some coverage.
-  * If specific tests are run with the **Run specified tests** test level, each class and trigger that was deployed is covered by at least 75% individually.
+1. The components have been validated successfully for the target environment within the last 10 days.
+2. Code coverage requirements are met.
+   * If all tests in the org or all **Local tests** are run, overall code coverage is at least 75%, and Apex triggers have some coverage.
+   * If specific tests are run with the **Run specified tests** test level, each class and trigger that was deployed is covered by at least 75% individually.
 
 A validation enables you to view the success or failure messages that you would receive with an actual deployment.
 
@@ -63,12 +63,12 @@ In the Deployment Status page, deploy a recent validation by clicking **Quick De
 1. Give the deployment a **label name**.
 2. Select the **destination environment**.
 3. AutoRABIT creates a random Asynchronous Id for every validation and deployment in the destination environment. However, Asynchronous Id which is older than 4 days (96 hours) cannot be used for Quick deployment. Under the **Asynchronous Id** field, you have two options to choose from:
-   1. **AutoRABIT generated:** You can select the Asynchronous Id from the drop-down that was generated for the target environment.
-   2. **Custom:** As the name suggests, you can manually enter the Asynchronous Id of your choice.
+   * **AutoRABIT generated:** You can select the Asynchronous Id from the drop-down that was generated for the target environment.
+   * **Custom:** As the name suggests, you can manually enter the Asynchronous Id of your choice.
 4. Select the **Take Backup** checkbox, if you would like to preserve the snapshot of members before deployment to ensure roll backing the deployment if any issues arise.
 5. Next, before running the quick deployment, you may like to run the functional test cases in order to test the functionality of the code being deployed to the destination environment. For example, If you would like to fetch the test cases from [AccelQ](https://www.autorabit.com/blog/autorabit-and-accelq-partner-to-achieve-a-complete-continuous-delivery-solution/), select **AccelQ** under **Fetch Test Cases From** drop-down.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/drexHowtoperformQuickDeploymentcustom7.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="473"><figcaption></figcaption></figure>
 
 6. To fetch the test cases, you'll need to enter the **Project Name**, **Test Job Name**, and set the **parameters** for your AccelQ test cases.
 7. Click **Deploy.** You will be again redirected to the **Deployment History** screen where the progress of your deployment can be seen.

@@ -4,7 +4,7 @@
 
 The Record Type node contains certain picklist fields and their corresponding picklist values that are assigned to Record Type.
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
 
 As per the behavior of Salesforce, if a user likes to retrieve a certain picklist field along with the Record type, only those picklist values in the Record Type Node get retrieved.
 
@@ -12,7 +12,7 @@ As per the behavior of Salesforce, if a user likes to retrieve a certain picklis
 * **RecordTypes PicklistValues** configuration as **Replace All**: This is the same as **'Replace,'** the only difference is it will replace the entire existing picklist values.
 * **RecordTypes PicklistValues** configuration as **Append**: Instead of overriding the entire record type picklist values, it adds to the existing picklist values.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The below table highlights the expected behavior on **Picklist Fields** and **Picklist Values** of Record Type node for **Append**, **Replace** and **Replace All** configuration.
 
@@ -35,11 +35,11 @@ The below table highlights the expected behavior on **Picklist Fields** and **Pi
 
 **Scenario 1-** **Picklist field exists in the Record Type:** If the Picklist field exists in the Record Type, it overrides its corresponding Picklist values.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Before:** Search Picklist field 1
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **After:** Picklist field 1 being available, it overrides the existing values for Picklist field 1
 
@@ -47,11 +47,11 @@ The below table highlights the expected behavior on **Picklist Fields** and **Pi
 
 **Scenario 2- Picklist field does not exist in the Record Type:** It searches for the Picklist field availability in the Record Type and if the Picklist field is not present, it gets added to the Record Type. Refer to the screenshot attached below:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Before:** Search Picklist field 2
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **After:** Picklist field 2 not being available, it gets added to the Record Type thereby acting as an append operation
 
@@ -59,11 +59,11 @@ The below table highlights the expected behavior on **Picklist Fields** and **Pi
 
 Replaces the entire Picklist fields and its corresponding Picklist values for the Record type.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Before**
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **After**
 
@@ -73,11 +73,11 @@ There can also be two possible scenarios:
 
 **Scenario 1-** Picklist field exists in the Record Type: If the Picklist field exists in the Record Type, it updates the existing Picklist values and adds the new ones.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Before:** Search Picklist field 1
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **After:** Picklist field 1 being available, new Picklist Values gets added
 
@@ -85,10 +85,10 @@ There can also be two possible scenarios:
 
 **Scenario 2- Picklist Field does not exist in the Record Type:** Its searches for the Picklist Field availability in the Record Type and if the Picklist Field is not present, it gets added to the Record Type. Refer to the screenshot attached below:
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Before:** Search Picklist field 2
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **After:** Picklist Field 2 not being available, it gets added to the Record Type

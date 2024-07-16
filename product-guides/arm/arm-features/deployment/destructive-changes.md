@@ -17,15 +17,15 @@ Removing dead code is an important software development aspect that is often neg
 
 After selecting the list of components to be deployed to the target Salesforce org, go to the **`Destructive Items`** tab.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624943754146.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 You’ll see the list of metadata components in your target org but not in your source under the **`Post-Destructive Changes`** tab. Select the checkbox next to a component you want to delete, and that component will be deleted when you deploy.
 
 You can also delete some undesired components from your target org by going to **`Modify`** and selecting the components and their destructive natures.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624952462528.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66).png" alt="" width="485"><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1624952723466.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 Use the **`Clear All`** button to clear all the components you've opted for destructive changes (pre- and post-destructive). The **`Reset`** button resets the entire components selection except for the auto-populated components.&#x20;
 

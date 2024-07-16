@@ -15,9 +15,9 @@ The **Run Merge process on successful deployment** feature keeps track of builds
 
 You will find the **`On Successful Deployment > Run Merge Process`** checkbox under the **`Deploy`** section when you create a CI job in ARM and fill out all required details in the **`Build`** section (such as _version control repository, branch, and revisions_).
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Configuring auto-merge**
 
@@ -34,7 +34,7 @@ The following fields must be configured to start a merge when the build succeeds
 | Merge Type              | Type of merges supported in ARM, i.e., _entire branch, single revision, commit label, release label, alm label_.                                                                                                                                                    |
 | Create GIT Tag          | Create a GIT tag. GIT tags are a simple and effective way to ensure you can keep track of the different versions of your code and the critical quality of Git's version control. GIT Tag operation allows meaningful names to a specific version in the repository. |
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Users will be notified via email of the success or failure of the automated merge process.
 
@@ -49,7 +49,7 @@ A new checkbox called **`Merge built revisions only`** is newly added under the 
 | Resolve Type            | Choose merge method, i.e., **dry run** (shows how the merge will execute without making any changes) or **merge** (commits the changes). |
 | Create GIT Tag          | Create a GIT tag.                                                                                                                        |
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**

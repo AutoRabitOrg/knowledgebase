@@ -16,33 +16,45 @@ You’ll need the **`Deployment History`** access permission.
 
 #### List of fields available on the Deployment History screen <a href="#list-of-fields-available-on-the-deployment-history-screen" id="list-of-fields-available-on-the-deployment-history-screen"></a>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675974244468.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Deployment Label:`** Deployment label along with the name of the user performing the deployment, the date and time when the deployment started, and the deployment status.
 2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
 3. **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1675974425563.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-1. **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.
-2. **`Deployment Iterations:`**Each new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.Important Notes:
-   1. For Salesforce DX custom deployments, multiple deployments can be rendered in one go, and the results are shown separately. Suppose you have invoked several deployment requests, but you have chosen to abort the deployment phase for one of the deployments, in such case the deployment will be aborted, but the other deployment will continue to operate in parallel
-   2. Detailed information on which deployment was triggered and canceled will appear in the **Log** report.
-3. **`Async ID:`** A unique identifier ID assigned to each deployment that helps track the deployment process.
-4. **`Deployment Status:`** A visual representation of the overall deployment progress. The first chart shows how many components have already been deployed and includes the number of components with errors. After all components have been deployed without errors, Apex tests start executing, if required or enabled. A second chart shows how many Apex tests have run out of the total number of tests and the number of errors returned. In addition, the chart shows the name of the currently running test.
-5. **Deployment Add-ons:**
+4. **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.
+5. **`Deployment Iterations:`**Each new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.
+
+{% hint style="info" %}
+**Important Notes:**
+
+1. For Salesforce DX custom deployments, multiple deployments can be rendered in one go, and the results are shown separately. Suppose you have invoked several deployment requests, but you have chosen to abort the deployment phase for one of the deployments, in such case the deployment will be aborted, but the other deployment will continue to operate in parallel.
+2. Detailed information on which deployment was triggered and canceled will appear in the **Log** report.
+{% endhint %}
+
+6. **`Async ID:`** A unique identifier ID assigned to each deployment that helps track the deployment process.
+7. **`Deployment Status:`** A visual representation of the overall deployment progress. The first chart shows how many components have already been deployed and includes the number of components with errors. After all components have been deployed without errors, Apex tests start executing, if required or enabled. A second chart shows how many Apex tests have run out of the total number of tests and the number of errors returned. In addition, the chart shows the name of the currently running test.
+8. **Deployment Add-ons:**
    * **`Promotion:`** Downloads the metadata components in your local system. The file format is in ZIP format.
    * **`Redeploy/Promote:`** This option allows you to redeploy the components into the same destination environment with the changes made or promote the same label into a different destination environment. This feature enables users to either redeploy the components to the same destination environment with the applied changes or promote the same label to a different destination environment. Notably, users will now have visibility into all previously selected checkboxes and dropdowns from the previous iteration. This enhancement aims to streamline the process by eliminating the need for users to reselect options, enabling them to directly click on the redeploy option. Additionally, users have the flexibility to edit the checkboxes as needed.
    * **`Rollback:`** Rollbacks revert a deployment to a previous revision.
    * **`Abort:`** To cancel a running or stuck deployment process.
    * **`View Graph:`** View Graph gives the graphical representation of the metadata members included in the deployment package.
-   * **`SCA Report:`**Static Code Analysis is usually performed as part of a Code Review and is carried out at the Implementation phase of a Security Development Lifecycle (SDL). Static Analysis tools such as PMD and Checkmarx continuously detect and report on dataflow problems, software defects, language implementation errors, inconsistencies, dangerous usage, coding standard violations, and security vulnerabilities.Important Note:
-     1. AutoRABIT stores the Static Code Analysis source content for 90 days. Post 90 days, the report will auto-deleted.
-     2. For those PMD reports generated before 90 days, those source content files will not be seen in the Static Analysis Report.
+   * **`SCA Report:`**Static Code Analysis is usually performed as part of a Code Review and is carried out at the Implementation phase of a Security Development Lifecycle (SDL). Static Analysis tools such as PMD and Checkmarx continuously detect and report on dataflow problems, software defects, language implementation errors, inconsistencies, dangerous usage, coding standard violations, and security vulnerabilities.
    * **`Test Results:`** View the apex test result that you have configured during the deployment.
    * **`Deployed Issues:`** Any issues found during deployment can be seen here.
    * **`Quick Deploy:`** With Quick Deploy, the components validated successfully for the target environment within the last **96 hours** can be deployed quickly.
-6. **Metadata Components Details:**
+
+{% hint style="info" %}
+**Important Note:**
+
+1. AutoRABIT stores the Static Code Analysis source content for 90 days. Post 90 days, the report will auto-deleted.
+2. For those PMD reports generated before 90 days, those source content files will not be seen in the Static Analysis Report.
+{% endhint %}
+
+9. **Metadata Components Details:**
    * **`Components:`** This report displays the components successfully deployed into the target sandbox. Here you can download the deployed/ deployable components in XML format. To do so, click on the **`Download`** button.
    * **`Failed Components:`** This report displays the components that have not been deployed into the target sandbox.
    * **`Deleted Components:`** When pre-destructive or post-destructive changes are selected during deployment initiation, the deleted components are displayed here.
@@ -54,10 +66,9 @@ You’ll need the **`Deployment History`** access permission.
 
 #### Audit Log <a href="#audit-log" id="audit-log"></a>
 
-A new section called the **`Audit Log`** has been added under the **`Deployment Information`** tab.\
+A new section called the **`Audit Log`** has been added under the **`Deployment Information`** tab.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1656586622958.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="560"><figcaption></figcaption></figure>
 
 The audit log lists the user's changes made during the deployment timestamp (based on the start time and end time of deployment).
 

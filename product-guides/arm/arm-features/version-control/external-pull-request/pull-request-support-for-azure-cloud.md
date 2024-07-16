@@ -14,17 +14,17 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 
     * The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and selecting the **'External Pull Requests'** checkbox under the [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) section
 
-    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 2.  Pull Request support is enabled for the **Azure Cloud plugin**.
 
     * Make sure the [**Azure Cloud**](azure-cloud-authentication.md) checkbox is selected under the **My Account** > **Plugins** > **Pull Request Support** section.
 
-    <figure><img src="../../../../../.gitbook/assets/image (46) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Users have appropriate **roles** or **permissions** to integrate their repository for pull requests.
    * Such privileges are granted by their account owner or admin. They can assign the required permission to the employees by visiting the **Admin > Roles** tab and selecting the **'Create Pull Request'** checkbox under the **'Special Permissions In Version Control'** section.
 4. The Approver should have the **Pull Request Approver** permission.
 
-<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5.  Your **version control repo** should be eligible for the Azure cloud pull requests.
 
@@ -32,7 +32,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
     * Select the checkbox: **Enable Pull Request Support**
     * Select **Azure Cloud** as a pull request plugin.
 
-    <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Click **Save Details**.
 
 ### Creating a Pull Request <a href="#creating-a-pull-request" id="creating-a-pull-request"></a>
@@ -53,7 +53,7 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
 1. Go to **Version Control** > **External Pull Requests**.
 2. Click on the **Create Pull Request** button on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  On the next pop-up screen, furnish the below details:
 
@@ -63,10 +63,10 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
     * Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.&#x20;
     * Additional checkbox to **delete the source branch once the pull request has been approved**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1).png" alt="" width="428"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1).png" alt="" width="428"><figcaption></figcaption></figure>
 4. Click **OK**. The newly created pull request will get displayed on top of the list on the **External Pull Request Summary** page.
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating a Pull Request during EZ-Commit <a href="#id-2-creating-a-pull-request-during-ezcommit" id="id-2-creating-a-pull-request-during-ezcommit"></a>
 
@@ -74,7 +74,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 
 1. From the top navigation pane, go to **Create New** > **New EZ-Commit**.
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. On the **EZ-Commit** screen, select the [**Salesforce Org**](../../../arm-administration/registration/salesforce-org/) from which the metadata components will get fetched.
 3. Select the Salesforce Org registered **Author**.
@@ -82,12 +82,12 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 5. Select the way to fetch the metadata components from the selected Salesforce Org under the **Fetch Changes** section. Choose the one that best fits your needs.
 6. Under **Perform** section, select the option: **Create a Pull Request**
 
-<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Leave the remaining field as default and click on the **Next** button to proceed ahead.
 8. On the next page, select the metadata components and their members to be committed to the Version Control branch. Click **Next**.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9.  On the next screen, you need to do the following:
 
@@ -95,14 +95,14 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
     * **Apply Search and Substitute Rules**: If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules, AutoRABIT applies whenever you commit and deploy files from one Sandbox to another Sandbox one Sandbox to Version Control or vice-versa, such rule can be found here.
     * Enter the **Commit Comment**. This is a mandatory step.
 
-    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 10. Under **Create a Pull Request** section, choose where you like to commit i.e., in your base branch, or create a new branch and commit under it.
 11. To create a new branch and later commit the changes, enter the new branch name.
 12. Give the Pull Request a **Label Name**.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. Once all the fields are filled in, click on **Finish**. This concludes the creation of a pull request and is ready for review. After you create a pull request, you can ask a specific person to review your proposed changes.
 14. Once the commit process is initiated, you will be redirected to the **Commits** screen where you can view the progress of your commit operation initiated.
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -13,11 +13,11 @@ Load your test cases irrespective of the build or deployment got failed and fire
 1. Login to your AutoRABIT account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Choose the tile: **Run Test Automation Scripts**
 
-<figure><img src="../../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, give the job a descriptive name in the **Job Name** field.
 5. Add a brief **description** of the current CI job.
@@ -35,7 +35,7 @@ There are different ways to fetch the Test cases:
 * AccelQ (if AccelQ plugin is installed in AutoRABIT)
 * Provar (if Provar plugin is installed in AutoRABIT)
 
-<figure><img src="../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  **TAF Labels:** The test labels that are present in the AutoRABIT TAF module get displayed. Select the test cases as per your requirement.
 
@@ -43,7 +43,7 @@ There are different ways to fetch the Test cases:
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (61).png" alt="" width="379"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (61) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 2.  **Version Control:** The test cases committed to a branch in version control are displayed.
 
     * Select the **Version Control Repository** type.
@@ -57,16 +57,16 @@ There are different ways to fetch the Test cases:
     1. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     2. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (62).png" alt="" width="547"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (62) (1).png" alt="" width="547"><figcaption></figcaption></figure>
 3. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
-<figure><img src="../../../../../.gitbook/assets/image (63).png" alt="" width="467"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 If you're not aware of where to find your **Project Name** and **Test Job name** in AccelQ, you can find your Project name from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ. Similarly, the Test Job name will be available in the Job section on AccelQ.
 
-<figure><img src="../../../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (65) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
 
@@ -80,13 +80,13 @@ If you're not aware of where to find your **Project Name** and **Test Job name**
     2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment gets failed.
     3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Choose Target <a href="#choose-target" id="choose-target"></a>
 
 In this section, select the Salesforce Org where the automated test cases will execute. If you are running a Provar Test script, the selected Salesforce Org will be used for pre-authentication.
 
-<figure><img src="../../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule  <a href="#schedule" id="schedule"></a>
 

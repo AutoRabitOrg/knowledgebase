@@ -18,7 +18,7 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 
 1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Go to **`Administration > SAML Connections`**.
 

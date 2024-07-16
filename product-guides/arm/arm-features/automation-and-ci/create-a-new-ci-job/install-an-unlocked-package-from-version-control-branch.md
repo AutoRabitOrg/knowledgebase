@@ -19,7 +19,7 @@ Unlocked packages help you add, edit, and remove metadata in your org in a track
 1. Login to your AutoRABIT account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Choose the tile: **Install an Unlocked Package from a Version Control Branch**
 

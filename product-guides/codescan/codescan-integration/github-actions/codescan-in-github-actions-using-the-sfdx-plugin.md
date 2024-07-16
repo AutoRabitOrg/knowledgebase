@@ -72,17 +72,18 @@ jobs:
         target: ${{github.base_ref}}
         branch_type: SHORT 
       run: |
-        sfdx codescan:run --token=$codescan_token --projectkey=$codescan_project_key --organization=$codescan_org -Dsonar.branch.name=$branch_name -Dsonar.branch.target=$target -Dsonar.branch.type=$branch_type
+        sfdx codescan:run --token=$codescan_token --projectkey=$codescan_project_key --organization=$codescan_org -Dsonar.pullrequest.branch=${{github.head_ref}}
+-Dsonar.pullrequest.base=${{github.base_ref}} -Dsonar.pullrequest.key=${{github.event.number}}
 ```
 {% endcode %}
 
 You will need to replace the placeholder variables (in **bold**) in the env section of the script with your **Project Key** and **Organization Key**.
 
-The branches names and types are set by the following parameters:
+The branch names and comparisons are set by the following parameters:
 
-* **sonar.branch.type**: this is SHORT or LONG as described in the [Branching](https://knowledgebase.autorabit.com/codescan/docs/understanding-branches-in-codescan-cloud) article.
-* **sonar.branch.target**: the comparison branch for SHORT type branches
-* **sonar.branch.name**: the name of the branch
+**`sonar.pullrequest.key`**: The pull request number\
+**`sonar.pullrequest.base`**: The comparison branch for pull request type branches\
+**`sonar.pullrequest.branch`**: The name of the branch
 
 The conditionals in your script determine what triggered the build and by defining the branch type, name and target using [Bitbucket pipeline's built in variables](https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/), you can create a project that gives you visibility on your new code while allowing you to plan your refactoring effort.
 

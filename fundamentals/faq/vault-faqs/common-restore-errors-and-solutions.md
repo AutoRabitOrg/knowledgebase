@@ -8,10 +8,10 @@
 
 To filter data based on specific dates from a backup using a CSV file and Excel, follow these steps:
 
-1. Download CSV File: Download the CSV file corresponding to the object on which the date needs to be filtered from the backup.
-2. Filter Dates Using Excel: Open the downloaded CSV file in Excel. Use Excel's filtering features to filter out the IDs for which the dates match the required criteria.
-3. Create Final CSV File: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
-4. Upload and Filter Backup: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
+1. **Download CSV File**: Download the CSV file corresponding to the object on which the date needs to be filtered from the backup.
+2. **Filter Dates Using Excel**: Open the downloaded CSV file in Excel. Use Excel's filtering features to filter out the IDs for which the dates match the required criteria.
+3. **Create Final CSV File**: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
+4. **Upload and Filter Backup**: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
 
 ### Common Restore/Replicate Errors & Solutions
 

@@ -221,9 +221,80 @@ This feature enables the user to sync the latest metadata changes on the Salesfo
 
     <figure><img src="../../../.gitbook/assets/image (16) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
+***
+
+## Global Search: Prerequisites, Limitations, and Troubleshooting
+
+### Prerequisite: Enabling Global Search with Vault Connect <a href="#prerequisite-enabling-global-search-with-vault-connect" id="prerequisite-enabling-global-search-with-vault-connect"></a>
+
+#### **Steps to Enable Global Search** <a href="#steps-to-enable-global-search" id="steps-to-enable-global-search"></a>
+
+1. **Access Setup:**
+   * Go to **Setup** in Salesforce.
+2. **Search for External Data Sources:**
+   * In the Quick Find box, search for **External Data Sources**.
+3. **Edit External Data Source:**
+   * Select the external data source you created for Vault Connect.
+   * Click on **Edit**.
+4. **Enable Free-Text Search Expressions:**
+   * Enable the checkbox labeled **Use Free-Text Search Expressions**.
+
+By following these steps, you will enable **global search** functionality for **Vault Connect** in Salesforce.
+
+
+
+### Limitations of Querying Archived Data via Vault Connect <a href="#limitations-of-querying-archived-data-via-vault-connect" id="limitations-of-querying-archived-data-via-vault-connect"></a>
+
+#### 1. Indexed Fields Only <a href="#id-1.-indexed-fields-only" id="id-1.-indexed-fields-only"></a>
+
+* Search and queries are restricted to indexed fields from the original object in Salesforce.
+* **Note**: To determine what is indexed in a Salesforce object, run the following query from the Salesforce developer console:\
+  SELECT QualifiedApiName FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName =\<Salesforce object Name> and IsIndexed = true
+
+#### 2. Complete Value Searches <a href="#id-2.-complete-value-searches" id="id-2.-complete-value-searches"></a>
+
+* Only complete value searches or queries using the equals (=) operator will work on indexed fields.
+
+#### 3. Non-Indexed Fields <a href="#id-3.-non-indexed-fields" id="id-3.-non-indexed-fields"></a>
+
+* Queries or Salesforce functionalities that require a query on non-indexed fields may or may not work.
+* **Impact**: As the size of your archived data increases, these queries are more likely to result in timeouts.
+
 &#x20;
 
-***
+### Troubleshooting Guide: Verifying Salesforce Queries to External Database (Vault Connect) <a href="#troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect" id="troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect"></a>
+
+#### Issue <a href="#issue" id="issue"></a>
+
+* **Symptom:** Records are not visible in the external object or global search is not functioning.
+
+#### Steps to Verify Salesforce Queries to Vault Connect <a href="#steps-to-verify-salesforce-queries-to-vault-connect" id="steps-to-verify-salesforce-queries-to-vault-connect"></a>
+
+1. **Open Developer Console:**
+   * Navigate to the Developer Console in Salesforce.
+2. **Change Log Level:**
+   * Click on the **Debug** tab.
+   * Select **Change Log Levels**.
+3. **Adjust General Settings:**
+   * Under the **General Setting** for your user, click on **Add / Change** under the **Debug Level Action**.
+4. **Set Callout Level to Finest:**
+   * Change the callout level to **Finest**.
+5. **Check Logs:**
+   * Look for logs with the operation **"/aura"**. These logs will capture the details of the callouts from Salesforce to Vault Connect.
+
+#### Resolution <a href="#resolution" id="resolution"></a>
+
+1. **Validate and Sync External Data Source:**
+   * Go to **Setup**.
+   * Search for **External Data Sources**.
+   * Click the external data source you created for Vault Connect.
+   * Click on **Validate and Sync**.
+2. **Reestablish Link:**
+   * Completing the **Validate and Sync** will ensure that the link between Salesforce and the external data source is reestablished if there is any problem.
+
+By following these steps, you can troubleshoot and resolve issues related to the visibility of records in external objects and the functionality of global search.
+
+
 
 ### Prerequisites
 
@@ -256,4 +327,4 @@ Define a custom number field, e.g., "Number." Give it length = 3 and decimal pla
 
 **Example 2:**&#x20;
 
-Say a field holds info on geo location latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.
+Say a field holds info on geolocation latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.

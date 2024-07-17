@@ -15,8 +15,6 @@ This error is a result of an issue stemming from a trigger in the Org.
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Use the option to disable the triggers in the job configuration. For the triggers which cannot be disabled via metadata API, manually disable the triggers in the Salesforce and re-run the job.
 
-&#x20;
-
 #### CANNOT\_EXECUTE\_FLOW\_TRIGGER
 
 * Typical error message - We can't save this record because the ‘Online Applicant Validation’ process failed. Give your Salesforce admin these details. An error occurred when executing a flow interview. Error ID: 1545064308-45750 (1670083917)
@@ -27,8 +25,6 @@ This error is a result of an issue stemming from a trigger in the Org.
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Locate the process builder process / flow that caused the error. Temporarily disable the automation and rerun the job to restore/replicate failed records.
 3. Alternately, the job can be retried by specifying a lower batch size in the job config which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
-
-&#x20;
 
 #### INACTIVE\_OWNER\_OR\_USER
 
@@ -41,8 +37,6 @@ This error is due to the owner of the records about to be inserted into the dest
 3. Enable these permissions in the permission set corresponding to the data loading user in the destination Org.
 4. To access details on how to do this in Salesforce, click on this link: [https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1](https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1)
 
-&#x20;
-
 #### FIELD\_CUSTOM\_VALIDATION\_EXCEPTION
 
 This error is due to validation rules applied on certain fields.
@@ -51,8 +45,6 @@ This error is due to validation rules applied on certain fields.
 
 1. Click on Restore/Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Disable validation rules in the restore modal in the final step of the restore process.
-
-&#x20;
 
 #### INVALID\_OR\_NULL\_FOR\_RESTRICTED\_PICKLIST
 
@@ -64,8 +56,6 @@ This error occurs when the destination Org doesn't have the value enabled that i
 2. Sync the values in the restricted picklist between the source and destination.
 3. Alternately, use the mappings for restricted picklist to cross-map a value in the restricted picklist from source to another value in the destination Org as part of the replicate job config.
 
-&#x20;
-
 #### REQUIRED\_FIELD\_MISSING
 
 This error occurs due to a failure of a required parent record (related through master-detail/required).
@@ -75,8 +65,6 @@ This error occurs due to a failure of a required parent record (related through 
 1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Such errors occur when failure of a required parent record (related through master-detail/required  lookup) leads to the failure of its associated child records.
 3. Check the fields that failed. Review the error corresponding to the failure of the referencing parent record(s), rectify them, and restore the corresponding failed parent records first, then restore failed related child records.
-
-&#x20;
 
 #### INVALID\_CROSS\_REFERENCE\_KEY
 
@@ -89,8 +77,6 @@ This error is caused by the Parent record not being included in the job or permi
 3. Review the authenticated user to ensure the user has access to the parent record that is referenced within the error.
 4. If it is a lookup relationship then ensure the parent object is included in the job.
 
-&#x20;
-
 #### CANNOT\_UPDATE\_CONVERTED\_LEAD
 
 This error is due to a Lead record once converted (to a contact) becomes read only which prevents you from updating the lead.
@@ -100,8 +86,6 @@ This error is due to a Lead record once converted (to a contact) becomes read on
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. You can check to ensure that the lead is converted by checking the isConverted field.
 
-&#x20;
-
 #### FIELD\_INTEGRITY\_EXCEPTION
 
 This error typically occurs when upsert tried to populate a lookup field with a wrong ID either because the parent failed or Vault is unable to recognize the parent record Id.
@@ -110,8 +94,6 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Need to pass the correct Id for a lookup field.
-
-&#x20;
 
 #### INVALID\_OPERATION: Too many files in zip
 
@@ -123,8 +105,6 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 1. Click on Replicate/restore job summary-> Click on logs-> view error the 'Error' column.
 2. Reduce the number of metadata components restored/replicated in each job to less than 10,000 files.
 
-&#x20;
-
 **RECORD-TYPE ACCESS ISSUE**
 
 This error indicates that the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).
@@ -133,8 +113,6 @@ This error indicates that the Salesforce user authenticated on Vault doesn’t h
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
-
-&#x20;
 
 #### UNKNOWN USER PERMISSION
 
@@ -145,8 +123,6 @@ This error is generated when the required user permissions are missing in Salesf
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Assign user to the desired permission set in Salesforce.
 
-&#x20;
-
 #### INVALID\_CROSS\_REFERENCE\_KEY
 
 * Typical error message - Record Type ID: this ID value isn't valid for the user: 012D0000000BfaLIAS:RecordTypeId --
@@ -156,8 +132,6 @@ This error is generated when the required user permissions are missing in Salesf
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
-
-&#x20;&#x20;
 
 #### CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY
 
@@ -170,8 +144,6 @@ This error is generated when the required user permissions are missing in Salesf
 2. Disable the triggers on the destination Org either by using the option to disable triggers in Vault or by performing the same in the Salesforce Org.
 3. Alternately, try lowering the batch size of the operation to avoid more records from getting inserted/updated in parallel which may result in a CPU time limit exception.
 
-&#x20;
-
 #### UNABLE\_TO\_LOCK\_ROW
 
 * Typical error message - unable to obtain exclusive access to this record or 126 records.
@@ -181,8 +153,6 @@ This error is generated when the required user permissions are missing in Salesf
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Execute the job in serial mode instead of parallel mode to help prevent records in different batches having dependency with each other getting inserted into Salesforce in parallel and causing the error.
-
-&#x20;
 
 #### TooManyLockFailure
 
@@ -199,21 +169,30 @@ This error is generated when the required user permissions are missing in Salesf
 
 ### REPLICATE
 
-#### &#x20;DUPLICATE\_VALUE
+#### DUPLICATE\_VALUE
 
 Such failures occurs when such records are already present in the destination
 
 **Resolution Steps:**
 
-1. Click on Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column
+1. Click on Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. An existing automation is blocking the upsert operation. Try disabling the automation if necessary.
 3. If you would like Vault to recognize the existing records in the destination that are created/transferred outside of Vault, you can configure the unique identifier for the object and enable the option ‘Prevent duplicate record creation using unique identifiers in replicate job config to avoid Vault from attempting to recreate an existing record matching the value in the unique identifier specified.
 4. For steps on how to configure unique identifiers, go to this link:
 
 &#x20;[Unique Identifier (UID) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/configuring-vault/registering-salesforce-org/unique-identifier-uid)
 
-&#x20;
+***
 
-&#x20;
+### FILTER BACKUP BY DATE
+
+How can I filter data based on specific dates from a backup and use it as the source to Restore/Replicate?
+
+To filter data based on specific dates from a backup using a CSV file and Excel, follow these steps:
+
+1. Download CSV File: Download the CSV file corresponding to the object on which the date needs to be filtered from the backup.
+2. Filter Dates Using Excel: Open the downloaded CSV file in Excel. Use Excel's filtering features to filter out the IDs for which the dates match the required criteria.
+3. Create Final CSV File: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
+4. Upload and Filter Backup: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
 
 &#x20;

@@ -10,4 +10,4 @@ How can I view the precise date an EZ-Commit/Merge was triggered, instead of the
 3. Select any **EZ-Commit/Merge** and hover the mouse over the icon where it says **XX days ago**.
 4. The exact time stamp when the EZ-Commit or EZ-Merge was triggered is visible.
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

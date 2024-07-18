@@ -14,17 +14,17 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 
     * The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and selecting the **'External Pull Requests'** checkbox under the [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) section
 
-    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 2.  Pull Request support is enabled for the **Azure Cloud plugin**.
 
     * Make sure the [**Azure Cloud**](azure-cloud-authentication.md) checkbox is selected under the **My Account** > **Plugins** > **Pull Request Support** section.
 
-    <figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Users have appropriate **roles** or **permissions** to integrate their repository for pull requests.
    * Such privileges are granted by their account owner or admin. They can assign the required permission to the employees by visiting the **Admin > Roles** tab and selecting the **'Create Pull Request'** checkbox under the **'Special Permissions In Version Control'** section.
 4. The Approver should have the **Pull Request Approver** permission.
 
-<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5.  Your **version control repo** should be eligible for the Azure cloud pull requests.
 
@@ -32,7 +32,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
     * Select the checkbox: **Enable Pull Request Support**
     * Select **Azure Cloud** as a pull request plugin.
 
-    <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Click **Save Details**.
 
 ### Creating a Pull Request <a href="#creating-a-pull-request" id="creating-a-pull-request"></a>
@@ -53,7 +53,7 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
 1. Go to **Version Control** > **External Pull Requests**.
 2. Click on the **Create Pull Request** button on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  On the next pop-up screen, furnish the below details:
 
@@ -63,10 +63,10 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
     * Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.&#x20;
     * Additional checkbox to **delete the source branch once the pull request has been approved**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt="" width="428"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1).png" alt="" width="428"><figcaption></figcaption></figure>
 4. Click **OK**. The newly created pull request will get displayed on top of the list on the **External Pull Request Summary** page.
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating a Pull Request during EZ-Commit <a href="#id-2-creating-a-pull-request-during-ezcommit" id="id-2-creating-a-pull-request-during-ezcommit"></a>
 

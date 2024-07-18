@@ -13,11 +13,11 @@ Use ARM CI intelligence to extract and package from a [Version Control](https://
 1. Login to your ARM account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Choose the tile: **Deploy SFDX source from** [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)
 
-<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, give the job a descriptive name in the **Job Name** field.
 5. Add a brief **description** of the current CI job.
@@ -32,11 +32,11 @@ Under the **Build** section, fill in the below details:
 2. Select the **Repository** and the **Branch**.
 3. Under the **'Build Using'** dropdown, there are two different options to choose from:
 
-**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (32) (1) (1).png>)) icon to select the baseline revision from the revision list. A new pop-up window appears; from the list displayed, choose the required baseline revision number.
+**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (32) (1) (1) (1).png>)) icon to select the baseline revision from the revision list. A new pop-up window appears; from the list displayed, choose the required baseline revision number.
 
-<figure><img src="../../../../../.gitbook/assets/image (31) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (31) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -48,7 +48,7 @@ Under the **Build** section, fill in the below details:
 
 **Time Range:** This option allows you to create a CI job using a timeline. You need to specify the time period from where the revisions will get fetched. This improves the usability of our CI server and helps build a package based on time rather than commits.
 
-<figure><img src="../../../../../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Next, select the **Source Folder** under the **Package Directory** drop-down field for your SFDX Repo. However, this is optional and it will allow users to package the SFDX structure without the App folder being a necessity.
 
@@ -76,7 +76,7 @@ Under the **Build** section, fill in the below details:
        2. **Developer B** has also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 AM this morning.\
           So, when ARM builds get triggered by webhook, **Developer B** changes will be packaged and deployed and the codes get updated with the latest revision. However, **Developer A** changes are ahead of **Developer B**, ARM will show no modifications for the build since the **Developer B** changes are in the **HEAD** position. To overcome this scenario, ARM has come with an option to **"Process commit revision via hook only"**. This will prepare the build from the revision of **Developer A** to the HEAD revision of the branch, therefore no commits are skipped through the ARM cycle.
 
-       <figure><img src="../../../../../.gitbook/assets/image (35) (1) (1).png" alt="" width="553"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (35) (1) (1) (1).png" alt="" width="553"><figcaption></figcaption></figure>
 6. **Incremental Build:** Incremental builds are important for managing continuous builds for continuous delivery. Incremental Builds substantially decrease build times by avoiding the execution of previous metadata that is not needed. This will fetch all the metadata changes beyond the selected Baseline Revision till the successfully deployed revision to the destination org. On the next CI Job run, the previous Baseline Revision automatically gets changed to the successfully deployed revision. Hence, there will be a substantial increase in build time performance for large-project incremental builds when a change to a single file or a small number of files is performed.
 
 {% hint style="info" %}
@@ -86,21 +86,21 @@ Under the **Build** section, fill in the below details:
 7. **Prepare Destructive Changes:** Pre-destructive changes option will allow the users to delete unwanted fields or metadata components from their destination Salesforce org before the deployments begin.
 8. **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
 
-<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **For ApexPMD and Checkmarx:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-<figure><img src="../../../../../.gitbook/assets/image (37) (1) (1).png" alt="" width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (37) (1) (1) (1).png" alt="" width="506"><figcaption></figcaption></figure>
 
 **For CodeScan and SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1).png" alt="" width="345"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1).png" alt="" width="345"><figcaption></figcaption></figure>
 
 * **Run on all supported Metadata types:** Analysis is performed on all the metadata types that are supported. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
 * **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components&#x20;
 * **Run on all supported Metadata types from the Full source:** Analysis is performed on the entire branch, including all supported metadata types, regardless of any build changes.
 
-<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1).png" alt="" width="368"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1).png" alt="" width="368"><figcaption></figcaption></figure>
 
 For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 
@@ -118,12 +118,12 @@ For more information on running **Static Code Analysis in CI Jobs**, refer [HERE
 This section is about deploying or validating the above package onto a different Salesforce Org.\
 
 
-<figure><img src="../../../../../.gitbook/assets/image (40) (1) (1).png" alt="" width="434"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (40) (1) (1) (1).png" alt="" width="434"><figcaption></figcaption></figure>
 
 1. Select the **Deployment org**.
 2. Specify the **Apex test level** you would like to run for the CI job.
 
-<figure><img src="../../../../../.gitbook/assets/image (42) (1) (1).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1).png" alt="" width="407"><figcaption></figcaption></figure>
 
 3. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
 4. **No Test Run:** No apex test is run unless it is a production deployment.
@@ -149,7 +149,7 @@ This section is about deploying or validating the above package onto a different
 
 #### Additional Deploy options <a href="#additional-deploy-options" id="additional-deploy-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1).png" alt="" width="378"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1).png" alt="" width="378"><figcaption></figcaption></figure>
 
 1. **Validate Only:** You can now set up validation-only CI jobs between your Salesforce Orgs or Version Control, so you can catch any problematic changes early and make sure that when the time comes to deploy, you’ll be able to release successfully. All success and error messages are displayed on the CI Job Result page.&#x20;
    * **Prevent Deployment:** With the ARM 20.1 release, ARM ensures that you do not trigger a build deployment for the validation-only CI jobs. Therefore, the **Deploy** option will either be in disabled mode or in some cases, will not be seen whenever you try to trigger a new build for the CI validate jobs.
@@ -173,7 +173,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
 8. **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
 9.  **On successful Deployment**
 
-    <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     1. **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
@@ -181,18 +181,18 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
     4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
     5.  **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
 
-        * **Add**: Click on the![](<../../../../../.gitbook/assets/image (45) (1) (1).png>)icon to add up to **5** destination branches.
-        * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (46) (1) (1).png>)icon to delete a destination branch row.\
+        * **Add**: Click on the![](<../../../../../.gitbook/assets/image (45) (1) (1) (1).png>)icon to add up to **5** destination branches.
+        * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (46) (1) (1) (1).png>)icon to delete a destination branch row.\
 
 
-        <figure><img src="../../../../../.gitbook/assets/image (47) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
     7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE](../parallel-processor.md).
     8. **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.
 
     To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.
 
-    <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1).png" alt="" width="431"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1).png" alt="" width="431"><figcaption></figcaption></figure>
 
     However, **XYZ** would like to run the above activities in the following sequence:
 
@@ -202,7 +202,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
       Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\
       Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.
 
-    <figure><img src="../../../../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -230,7 +230,7 @@ There are different ways to fetch the test cases:
 * AccelQ (if AccelQ plugin is installed in ARM)
 * Provar (if Provar plugin is installed in ARM)
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1).png" alt="" width="391"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1).png" alt="" width="391"><figcaption></figcaption></figure>
 
 1.  **TAF Labels:** The test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
 

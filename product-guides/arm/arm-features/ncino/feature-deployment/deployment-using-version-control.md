@@ -4,11 +4,11 @@ This section is all about deploying the nCino data using [Version Control](https
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (22).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22) (1).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description**.
 4. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
@@ -18,31 +18,31 @@ This section is all about deploying the nCino data using [Version Control](https
 
     * **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **version when selecting** the entire branch option.
 
-    <figure><img src="../../../../../.gitbook/assets/image (25).png" alt="" width="470"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (25) (1).png" alt="" width="470"><figcaption></figcaption></figure>
 
     * **Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
 
-    <figure><img src="../../../../../.gitbook/assets/image (26).png" alt="" width="454"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (26) (1).png" alt="" width="454"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
 
-    <figure><img src="../../../../../.gitbook/assets/image (29).png" alt="" width="434"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (29) (1).png" alt="" width="434"><figcaption></figcaption></figure>
 8. The object configuration section will render the selected objects and apply filters and mappings based on your selection.
 
-<figure><img src="../../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Choose your **target org**.
 
-<figure><img src="../../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. There are various options that you can configure to your objects before you proceed with deployment:
 
     * Applied Mappings
     * Applied Filters
 
-    <figure><img src="../../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mapping <a href="#applied-mapping" id="applied-mapping"></a>
 
@@ -52,7 +52,7 @@ In the **Source** field: Select your source field whose values will be populated
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings):**
@@ -65,7 +65,7 @@ In the **Destination** field: Select the required field from the destination org
 
 Such filters will be displayed here if any filter is applied to the objects.
 
-<figure><img src="../../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: The dataset is already prepared at the time of the commit, so you can’t edit it at this point. However, if you like to edit the filter, use the feature: [Deployment via Version Control using Salesforce org](deployment-via-version-control-using-salesforce-org.md)
@@ -81,7 +81,7 @@ Click on **Deploy** to proceed to the next screen. The next screen will display 
 4. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in source org) in destination org.
 5. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/image (35).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (35) (1).png" alt="" width="510"><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process.
 

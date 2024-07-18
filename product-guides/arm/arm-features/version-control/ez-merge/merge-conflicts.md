@@ -119,18 +119,18 @@ This tab will list all duplicate entries for your profile/permission sets and yo
 
 2. There can also be a situation where the files are improperly solved while resolving the conflicted files. This can lead to the malformation of the conflicted files. To resolve those, you need to download the file locally, work on the conflicted files using your merge tool, and make necessary changes to it. Then upload the same.
 
-![](<../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
 
 #### Review Artifacts <a href="#review-artifacts" id="review-artifacts"></a>
 
 The **Review Artifacts** tab will appear in the merge conflict screen only if you enabled the **Review Artifacts** checkbox while creating the merge operation.
 
-Under the **Review Artifacts** tab, you can see a list of the conflict resolved files staged for commit. This gives you the ability to preview the changes, review them or edit the files before pushing them into your version control. You can switch to the diff mode (using![](<../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1).png>)icon) where you can compare the code from the source to the target branch before you merge them.
+Under the **Review Artifacts** tab, you can see a list of the conflict resolved files staged for commit. This gives you the ability to preview the changes, review them or edit the files before pushing them into your version control. You can switch to the diff mode (using![](<../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1).png>)icon) where you can compare the code from the source to the target branch before you merge them.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Finally, click on the **Commit** button to commit the necessary changes to your target branch.
 

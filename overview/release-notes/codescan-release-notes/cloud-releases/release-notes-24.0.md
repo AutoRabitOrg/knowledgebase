@@ -354,15 +354,15 @@ Any suffix with .\[dot] present will be treated as a correct suffix and not be m
 
 * Add UI element within the CodeScan Administration tab to list IDE license usage at the Org level.
 
-<figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Admins are now notified within the UI when IDE licenses have exceeded the maximum allotment.
 
-<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Users are now notified in IDE when additional IDE licenses are required (i.e., the company has allocated all available licenses).
 
-<figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * CodeScan now removes IDE usage records for users who have been removed from their organization’s member group.
 

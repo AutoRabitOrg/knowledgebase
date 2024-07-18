@@ -4,7 +4,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (51).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 

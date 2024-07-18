@@ -18,15 +18,15 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 
 1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Go to **`Administration > SAML Connections`**.
 
-<figure><img src="../../../../.gitbook/assets/image (74) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
 
 3. Click on **`Create Connection`**.
 
-<figure><img src="../../../../.gitbook/assets/image (71) (1) (1) (1).png" alt="" width="492"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (71) (1) (1) (1) (1).png" alt="" width="492"><figcaption></figcaption></figure>
 
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `PingOne-SAML`
@@ -42,11 +42,11 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 3. If the **`Enforce SSO`** is enabled prematurely, it will prevent all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 4. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 
-![](<../../../../.gitbook/assets/image (72) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (72) (1) (1) (1) (1).png>)
 
 5. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to PingOne.
 
-<img src="../../../../.gitbook/assets/image (73) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (73) (1) (1) (1) (1).png" alt="" data-size="original">
 {% endhint %}
 
 ### Step 2: Adding CodeScan as an App in PingOne <a href="#step-2-adding-codescan-as-an-app-in-pingone" id="step-2-adding-codescan-as-an-app-in-pingone"></a>

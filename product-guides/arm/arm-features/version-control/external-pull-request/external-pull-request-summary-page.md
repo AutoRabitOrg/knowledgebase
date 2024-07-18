@@ -16,11 +16,11 @@ It's always a good idea to break data into multiple pages when dealing with mult
 
 To create a new pull request, use the **Create Pull Request** button on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the next pop-up screen, furnish the below details:
 
-<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1).png" alt="" width="406"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1).png" alt="" width="406"><figcaption></figcaption></figure>
 
 1. Select your version control repository. Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
 2. Choose the **Source Branch** and the **Target Branch** from the respective dropdowns.
@@ -33,17 +33,17 @@ On the next pop-up screen, furnish the below details:
 
 ARM compares the metadata between the **Source and Target branches** and generates a metadata difference report. Such information can be viewed on the **Diff** screen. This screen will display the number of insertions and deletions to each metadata file. The lines highlighted in **RED** color indicate those that are deleted in the **Source Branch,** and for **GREEN** color indicates those that are newly added in the **Target Branch**.
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Similarly, you can **view/add/edit comments** on the revision level (revisions under **Commit** sections).
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -55,15 +55,15 @@ Similarly, you can **view/add/edit comments** on the revision level (revisions u
 
 ## Additional Actions on the Pull Request Page <a href="#additional-actions-on-pull-request-page" id="additional-actions-on-pull-request-page"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### More Operations <a href="#id-1-more-operations" id="id-1-more-operations"></a>
 
 1. **Navigate to Pull Request Page:** Clicking on the Pull Request label will take you to your _GitHub/Bitbucket_ Pull Request page.
 
-<figure><img src="../../../../../.gitbook/assets/image (66) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (66) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-2. **Edit Pull Request:** Modify the pull request information using the **Edit** (![](<../../../../../.gitbook/assets/image (67) (1) (1) (1).png>)) button.
+2. **Edit Pull Request:** Modify the pull request information using the **Edit** (![](<../../../../../.gitbook/assets/image (67) (1) (1) (1) (1).png>)) button.
 
 ### Actions for the Pull request <a href="#id-2-actions-for-the-pull-request" id="id-2-actions-for-the-pull-request"></a>
 

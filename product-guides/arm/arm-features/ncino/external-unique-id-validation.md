@@ -13,7 +13,6 @@ Now users no longer have to worry about the possibility of '**External Unique ID
 ### Step-by-Step Guide
 
 1. Select the required values from the dropdown available on the ‘**Feature Deployment**’ section.
-2.  If the ‘**external ID**’ is not available, then the following notification as highlighted will be displayed in the popup, when users click on ‘**Create Dataset & Deploy**’, as displayed in the following screenshot.\
+2. If the ‘**external ID**’ is not available, then the following notification as highlighted will be displayed in the popup, when users click on ‘**Create Dataset & Deploy**’, as displayed in the following screenshot.
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-WF0V4LIZ.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>

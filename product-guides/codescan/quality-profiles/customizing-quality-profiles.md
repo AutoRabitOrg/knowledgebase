@@ -51,7 +51,7 @@ To customize the Quality Profile, follow the steps below:
 > **Example**:\
 > You can update the severity of the rule to `Major/Critical/Minor/Blocker/Info`
 >
-> ![](<../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+> ![](<../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 >
 > To use the rule mentioned above, the parameter `minimumCommentDensity` needs to be set to a value. The minimum value is 25. If you use the value of 35 as an example, the density of comment lines of 35 will be considered.
 >
@@ -61,12 +61,12 @@ To customize the Quality Profile, follow the steps below:
 > `Suppress`: _Unit test violations will be suppressed._\
 >
 >
-> ![](<../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+> ![](<../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ### Setting a default Quality Profile <a href="#setting-a-default-quality-profile" id="setting-a-default-quality-profile"></a>
 
 By setting a default Quality Profile, you assign every project without a specific Quality Profile to use the default one. To assign Quality Profiles to specific Projects, use the **Project Settings > Quality Profiles** menu for your project and select the one you would like to use.
 
-<figure><img src="../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>

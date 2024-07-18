@@ -68,7 +68,7 @@ In the Deployment Status page, deploy a recent validation by clicking **Quick De
 4. Select the **Take Backup** checkbox, if you would like to preserve the snapshot of members before deployment to ensure roll backing the deployment if any issues arise.
 5. Next, before running the quick deployment, you may like to run the functional test cases in order to test the functionality of the code being deployed to the destination environment. For example, If you would like to fetch the test cases from [AccelQ](https://www.autorabit.com/blog/autorabit-and-accelq-partner-to-achieve-a-complete-continuous-delivery-solution/), select **AccelQ** under **Fetch Test Cases From** drop-down.
 
-<figure><img src="../../../../.gitbook/assets/image (65).png" alt="" width="473"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1).png" alt="" width="473"><figcaption></figcaption></figure>
 
 6. To fetch the test cases, you'll need to enter the **Project Name**, **Test Job Name**, and set the **parameters** for your AccelQ test cases.
 7. Click **Deploy.** You will be again redirected to the **Deployment History** screen where the progress of your deployment can be seen.

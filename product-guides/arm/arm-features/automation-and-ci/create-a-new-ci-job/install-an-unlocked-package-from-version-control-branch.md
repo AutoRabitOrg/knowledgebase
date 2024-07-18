@@ -19,11 +19,11 @@ Unlocked packages help you add, edit, and remove metadata in your org in a track
 1. Login to your AutoRABIT account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Choose the tile: **Install an Unlocked Package from a Version Control Branch**
 
-<figure><img src="../../../../../.gitbook/assets/image (69).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (69) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the next screen, give the job a descriptive name in the **Job Name** field.
 5. Add a brief **description** of the current CI job.
@@ -38,11 +38,11 @@ This section deals with retrieving the [SFDX](https://knowledgebase.autorabit.co
 2. Select the **Repository** and the **Branch**.
 3. Under the **'Build Using'** dropdown, there are two different options to choose from:
 
-**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (70).png>)) icon to select the baseline revision from the revision list. A new pop-up window appears; from the list displayed, choose the required baseline revision number.
+**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (70) (1).png>)) icon to select the baseline revision from the revision list. A new pop-up window appears; from the list displayed, choose the required baseline revision number.
 
-<figure><img src="../../../../../.gitbook/assets/image (71).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (71) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (72).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (72) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -54,7 +54,7 @@ This section deals with retrieving the [SFDX](https://knowledgebase.autorabit.co
 
 **Time Range:** This option allows you to create a CI job using a timeline. You need to specify the time period from where the revisions will get fetched. This improves the usability of our CI server and helps build a package based on time rather than commits.
 
-<figure><img src="../../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (73) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Next, select the **Source Folder** under the **Package Directory** drop-down field for your SFDX Repo. However, this is optional and it will allow users to package the SFDX structure without the App folder being a necessity.
 
@@ -64,7 +64,7 @@ This section deals with retrieving the [SFDX](https://knowledgebase.autorabit.co
 
 **Additional options in the 'Build' section**
 
-<figure><img src="../../../../../.gitbook/assets/image (74).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74) (1).png" alt="" width="398"><figcaption></figcaption></figure>
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
 2. [**Pull Request**](https://knowledgebase.autorabit.com/arm/docs/external-pull-request)**:** Creates a pull request for the current CI job if opted.

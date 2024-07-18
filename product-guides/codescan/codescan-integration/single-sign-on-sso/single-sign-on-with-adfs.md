@@ -97,15 +97,15 @@ Your connection\_id will be available in the **Metadata URL** generated inside C
 
 13. On the next screen, leave the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 14. The wizard will display an overview of your settings on the next screen. Click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 15. On the final screen, keep the **Configure claims issuance policy for this application** checkbox selected, and click on the **Close** button to open the Claim Rules editor.
 
-<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### **2.2 Creating Claim Rules**
 
@@ -114,11 +114,11 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
 1. By default, the Claim Rules editor opens once you create the trust.
 2. To create a new rule, click on **Add Rule**.
 
-<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="437"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="437"><figcaption></figcaption></figure>
 
 3. Select **Send LDAP Attributes as Claims** as the claim rule template.
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the next screen, give the claim rule a unique **name**.
 5. Using **Active Directory** as your attribute store, enter the following details:
@@ -129,23 +129,23 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
 | Display-Name        | Name                    |
 | User-Principal-Name | Name ID                 |
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **Finish** to save the new rule and then **OK** again to finish creating rules.
 7. Under **ADFS Management Console** , navigate to **Service > Endpoints** and find the metadata URL. Copy and paste the URL to open the XML file on your browser. Keep the tab open; you will need certain information from here to add to the CodeScan application.
 
-<figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8.  To download the **X509 Signing Certificate**, navigate to **Service > Certificates** under the ADFS Management Console.&#x20;
 
     * Export the Token-signing certificates from ADFS and add them to the CodeScan SAML configuration. When using the certificate exporting wizard, select **Base-64 encoded X.509 (.CER)** for the encoding format.
     * Open the exported file in a text editor to get the certificate value.
 
-    <figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="374"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="374"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
 
 ### **Step 3: Configuring in CodeScan SAML Connection**
 
@@ -158,20 +158,20 @@ Now that your ADFS SSO implementation is set up, you must follow a few more step
     * **Provider Entity Id:** Copy the **entityID** value from the ADFS Metadata XML file and paste it into **Provider Entity Id** inside CodeScan. \
       The entity Id format would be in _**https://\<ADFS\_DOMAIN\_NAME>/adfs/services/trust.**_
 
-    <figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Sign In URL:** Copy the **SingleSignOnService Location** value and paste it into the **Sign-In URL** inside CodeScan.
 
-    <figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Open the **Certificate (.CER)** you downloaded from ADFS in your text editor, copy the entire content, and paste it into the **X509 Signing Certificate** field of the CodeScan SAML connection.
 
-<figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
 
 5. Set up the SAML attributes in **CodeScan** in accordance with the **Active Directory** attributes (refer to [_**Section 2.2**_](https://knowledgebase.autorabit.com/codescan/docs/single-sign-on-with-adfs#22-creating-claim-rules)_**, Point 5**_):
 
-<figure><img src="../../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **Update** on the CodeScan page.
 7. The next step is to confirm your corporate domain to get the SSO working. You can confirm the domain by raising a request to CodeScan support at [http://mailto:support@autorabit.com/](http://mailto:support@autorabit.com/).

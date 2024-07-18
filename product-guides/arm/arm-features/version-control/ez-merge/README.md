@@ -22,7 +22,7 @@ The merge process is generally performed when a feature is ready for user testin
 
 1. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) module and select **`Commits.`**
 
-<figure><img src="../../../../../.gitbook/assets/image (68) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68) (1) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
 
 2.  Click on the **`New EZ-Merge`** button.
 

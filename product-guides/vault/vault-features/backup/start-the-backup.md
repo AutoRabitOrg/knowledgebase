@@ -25,7 +25,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
 2. Go to the **`Backup`** module.
 3. Select your **`Salesforce Org`**, **`Environment (Salesforce/nCino),`** and backup **`Configurations`** from the drop-down.Note:
    * A list of all scheduled and manual backups triggered to date will get displayed under the **`Backup Summary`** section.&#x20;
-   * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (69) (1) (1) (1) (1) (1).png" alt="" data-size="line">) icon under the **`Actions`** tab.
+   * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (69) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) icon under the **`Actions`** tab.
 4. To initiate a new backup, click on **`Backup Now`**.
 
 <figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

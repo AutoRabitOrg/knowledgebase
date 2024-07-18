@@ -366,11 +366,11 @@ Follow the below steps to integrate HashiCorp Vault with AutoRABIT:
    * **Vault Server URL:** Enter the Vault server to configure with AutoRABIT. The Vault dev server defaults to running at **http://127.0.0.1:8200**. The server is initialized and unsealed.
    *   **Authentication Method AWS:** This checkbox will be selected by default. After you enter the remaining details, the Vault token will automatically be generated through the AWS login authentication method whenever the existing token expires.
 
-       <figure><img src="../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1).png" alt="" width="293"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="293"><figcaption></figcaption></figure>
 
        * If you deselect the **Authentication Method AWS** checkbox, then the below **Vault Token** mandatory field will be displayed.
 
-       <figure><img src="../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1).png" alt="" width="288"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="288"><figcaption></figcaption></figure>
    * **Vault Token:** Enter the Vault token that you generated earlier using unseal key. For more information, refer [HERE](https://learn.hashicorp.com/tutorials/vault/generate-root?in=vault/operations).
    * **Key Name**: Enter the **Key Name** that you have obtained in HashiCorp CLI.
    * **Secret Path**: Enter the Secret Path.

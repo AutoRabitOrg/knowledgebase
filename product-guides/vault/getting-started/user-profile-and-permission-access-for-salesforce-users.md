@@ -13,11 +13,11 @@ Follow the steps below to:
 
 1. Click the Gear icon and click **Setup**.
 
-<figure><img src="../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Type **profiles** into the Quick Find box and select **Profiles**.
 
-<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Edit** against the Profile you wish to enable API access for.
 

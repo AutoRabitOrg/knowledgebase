@@ -4,7 +4,7 @@
 
 The Record Type node contains certain picklist fields and their corresponding picklist values that are assigned to Record Type.
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
 
 As per the behavior of Salesforce, if a user likes to retrieve a certain picklist field along with the Record type, only those picklist values in the Record Type Node get retrieved.
 

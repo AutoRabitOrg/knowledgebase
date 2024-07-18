@@ -238,7 +238,7 @@ There are different ways to fetch the test cases:
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (52) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 2.  **Version Control:** The test cases committed to a branch in version control are displayed.
 
     * Select the **Version Control Repository** type.
@@ -252,10 +252,10 @@ There are different ways to fetch the test cases:
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (53) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 4.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
 
@@ -269,7 +269,7 @@ There are different ways to fetch the test cases:
     2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment gets failed.
     3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
@@ -279,7 +279,7 @@ The Callout URL lets you call another service from the ARM application via an HT
 
 Send email notifications to selected users' emails on the success or failure of a build. However, if the number of CheckIn users is more than 50, then the notification is not sent.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule  <a href="#schedule" id="schedule"></a>
 
@@ -295,7 +295,7 @@ Finally, click **Save** to save the new CI job details.
 
 If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vlocity, you must verify 2 things:
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. The destination org must be registered with **OAuth**. If it is registered with **Standard**, you must register it with OAuth first and then proceed with the deployment. If the org is registered with Standard, the deployment will fail and the following message will display in the log: **`To deploy compiled versions of OmniScript and FlexCards, Please re-register your destination org with OAuth and update the Local Compilation key in the My Account section.`**
 2. You must select the **Local Compilation** checkbox in the **My Account** section and enter the **Access Key**.

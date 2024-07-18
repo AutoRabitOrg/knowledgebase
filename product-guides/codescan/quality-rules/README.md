@@ -1,4 +1,4 @@
-# Quality Rules
+# CodeScan Rules
 
 CodeScan has a set of metadata rules; these rules allow you to scan your settings to ensure that your org is secure and clean.
 
@@ -67,7 +67,7 @@ To make changes to the Quality Rules, users must be granted the _**Administer Qu
 Custom rules are considered like any other rule, except that you can edit or delete them. You can define your own custom rules in CodeScan using Rule templates.\
 To find templates, select the **Show Templates Only** option from the **Template** dropdown menu.
 
-<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To create a custom rule from a template, select **Create** next to the **Custom rules** heading and enter the following information:
 

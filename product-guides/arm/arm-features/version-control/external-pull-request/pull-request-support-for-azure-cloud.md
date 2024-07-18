@@ -74,7 +74,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 
 1. From the top navigation pane, go to **Create New** > **New EZ-Commit**.
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. On the **EZ-Commit** screen, select the [**Salesforce Org**](../../../arm-administration/registration/salesforce-org/) from which the metadata components will get fetched.
 3. Select the Salesforce Org registered **Author**.
@@ -82,12 +82,12 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 5. Select the way to fetch the metadata components from the selected Salesforce Org under the **Fetch Changes** section. Choose the one that best fits your needs.
 6. Under **Perform** section, select the option: **Create a Pull Request**
 
-<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Leave the remaining field as default and click on the **Next** button to proceed ahead.
 8. On the next page, select the metadata components and their members to be committed to the Version Control branch. Click **Next**.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9.  On the next screen, you need to do the following:
 
@@ -95,14 +95,14 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
     * **Apply Search and Substitute Rules**: If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules, AutoRABIT applies whenever you commit and deploy files from one Sandbox to another Sandbox one Sandbox to Version Control or vice-versa, such rule can be found here.
     * Enter the **Commit Comment**. This is a mandatory step.
 
-    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 10. Under **Create a Pull Request** section, choose where you like to commit i.e., in your base branch, or create a new branch and commit under it.
 11. To create a new branch and later commit the changes, enter the new branch name.
 12. Give the Pull Request a **Label Name**.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. Once all the fields are filled in, click on **Finish**. This concludes the creation of a pull request and is ready for review. After you create a pull request, you can ask a specific person to review your proposed changes.
 14. Once the commit process is initiated, you will be redirected to the **Commits** screen where you can view the progress of your commit operation initiated.
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

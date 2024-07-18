@@ -92,4 +92,4 @@ The following articles describe using **Single Dataloader** to delete data from 
 
 7. **`Clone:`** Creates a copy (clone) of the insert process. Operation type and object name are displayed. Enter the **`Process Name`** in the field. The default **`Salesforce Org`** is automatically selected. To choose a different org, use the dropdown list. Select the **`Choose Different Data CSV File`** check box to upload a different CSV file. Finally, click **`Clone`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (74) (1).png" alt="" width="399"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1).png" alt="" width="399"><figcaption></figcaption></figure>

@@ -21,16 +21,16 @@ The following article describes using **Single Dataloader** to update data in Sa
 
 9. Import your file from your local directory on the next screen. Upload the **`CSV`** file you wish to import by clicking the **`Upload`** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. A notification pop-up will display the number of records that will be impacted. Click **`OK`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 11. The next step is to prepare your field mappings. Field mappings match columns in your CSV to fields in your Salesforce Org.
 12. You can automatically map the members and the fields using **`Automap`**. It compares the destination fields with the fields available in uploaded CSV files, and if both match, the value is selected automatically.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. The number of fields mapped out of the total number of fields is displayed below the **`Automap`** checkbox.
 14. Use the **`search`** option to look up a field by name from the long list to map it.
@@ -42,7 +42,7 @@ The following article describes using **Single Dataloader** to update data in Sa
 16. Make sure you have mapped all the required fields. Otherwise, you can't move forward. Click **`Next`**.
 17. On the **`Process Summary`** screen, you can:
 
-    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
     * Give the process/job a **`Name`**.
     * Select the **`Category`**. Categories are used to classify and group similar processes having similar functionality. In simple terms, you are assigning similar processes to a category. You can either select an existing category or create a new category by clicking the **`+`** icon.
@@ -55,7 +55,7 @@ The following article describes using **Single Dataloader** to update data in Sa
 20. Your task is listed on top of the lists in the **`Dataloader Summary`** screen.
 21. Click **`Run`** to run the Dataloader immediately before the scheduled time.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 22. Select the criteria you can set for the dataloader process to continue:
 
@@ -70,11 +70,11 @@ The following article describes using **Single Dataloader** to update data in Sa
 
 23. Click **`Run`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
 
 24. The number of successful or failed records updated can be seen in the **`Results of Last Run`** section. The values in this field are updated dynamically while the job is still running. You can view the records or download them to your local system. The records are generated in CSV format.
 
-<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 25. The number of impacted records can be seen in the **`Records`** section. The value in this field is updated dynamically while the job is still running.
 

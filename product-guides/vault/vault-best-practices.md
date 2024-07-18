@@ -1,5 +1,31 @@
 # Vault Best Practices
 
+## Understanding Salesforce Backup and Recovery: Challenges, Best Practices, and Effective Strategies <a href="#title-text" id="title-text"></a>
+
+### **Introduction**
+
+Salesforce, a highly customizable and dynamic CRM platform, presents unique challenges in data backup and recovery. Unlike traditional SQL databases, Salesforce does not offer straightforward methods to export and restore entire datasets, making full recovery of data nearly impossible under current constraints. This document aims to elucidate the challenges, best practices, and effective strategies for Salesforce data backup and recovery.
+
+### **Shared Responsibility for Data Security**
+
+Salesforce operates on a shared responsibility model, where users must take active steps to ensure data safety. The platform provides minimal tools to prevent data loss and facilitate restoration, requiring users to leverage external solutions and strategies to manage backups effectively.
+
+### **Challenges in Salesforce Data Backup and Recovery**
+
+1. **Governor Limits**: Salesforce imposes strict governor limits, including maximum API callouts and batch processing constraints. These limits significantly impact the ability to perform comprehensive backups and restores, often requiring careful planning and execution to avoid hitting these thresholds. For example, an enterprise attempting to back up or restore a large volume of data may find that they quickly exhaust their daily API call limits, leading to incomplete backups.
+2. **Lack of Full Data Export Options**: Unlike traditional databases, Salesforce does not allow users to easily export and re-import entire datasets. This limitation complicates full data recovery, as incremental and selective backups become necessary. Organizations often need to develop custom scripts or use third-party tools to extract data, which can be both time-consuming and error-prone.
+3. **Customization and Complexity**: Salesforce's flexibility allows extensive customization, resulting in unique environments for each organization. This diversity makes it challenging to implement a one-size-fits-all backup and recovery solution. Custom scripts and tailored approaches are often needed to accommodate specific organizational needs. For instance, a company with highly customized Salesforce objects and workflows may find that generic backup solutions fail to capture all necessary data and metadata.
+4. **Triggers and Other Process Automation**: Salesforce allows many kinds of process automation to occur when records are inserted, deleted, or updated in Salesforce. This process automation takes time to run. That time may be insignificant for individual record updates, but can cause substantial delays when writing large volumes of data. It is critical for customers to be architect their applications in such a way that this automation **does not execute** when doing large data loads such as restores or replications.
+5. **Constraints of Managed Packages**: Managed packages within Salesforce come with their own set of limitations, further complicating backup and recovery processes. Operations within these packages can be slow and cumbersome, adding another layer of complexity to data management. For example, attempting to back up data from a managed package that has stringent data access controls can lead to incomplete or failed backups.
+
+### **Techniques and Best Practices for Effective Backup and Recovery**
+
+1. **Identify Critical Data and Objects**: AutoRABIT works with customers to determine the critical objects and data essential for business continuity. Establish Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO) around these critical elements to ensure prioritized recovery in case of data loss. For example, a financial services company might prioritize backing up customer account data and transaction histories to ensure minimal disruption in case of data loss.
+2. **Using Trigger Handlers or Other Means to Disable Automation**: It is important to prevent automated jobs from executing when we are performing restore and replication jobs. While Vault has the ability to disable Triggers and Workflow rules, this is not an efficient way to disable automation since it requires a deployment to the org, which can require test execution, and will disable this automation for ALL users. By contrast, Trigger handlers allow this automation to be disabled only for the user performing the restore jobs. See [this article](https://knowledgebase.autorabit.com/product-guides/vault/vault-best-practices#restore-replicate-best-practices) for more information.
+3. **Incremental Testing**: For large datasets, test recovery processes using smaller data chunks before scaling up. This approach helps identify potential issues early and ensures a smoother recovery process when dealing with full datasets. A practical application might involve a retail company testing the recovery of sales data for a single store before attempting to recover data for all locations.
+4. **Regular Customization Reviews**: Periodically review and assess the ongoing customizations in the Salesforce environment and their impact on the backup and recovery times. This practice helps identify changes that might complicate the restore process, allowing for timely adjustments to recovery strategies and ensuring RTOs are met. For instance, a healthcare provider could regularly review custom patient data fields to ensure they are included in backup procedures and an inclusion of a rich text field in such objects leading to increased time to recover.
+5. **Leverage Automated Solutions**: Utilize automated backup and recovery strategies to minimize manual intervention and reduce the risk of human error. For example, scheduling automated daily backups and performing regular automated recovery tests can help ensure that backups are up-to-date and reliable.
+
 ## Best Practices for Salesforce backup and recovery using Vault
 
 ### General Guidelines on Salesforce Limitations
@@ -30,23 +56,23 @@ This structured approach ensures files are properly attached to Email Messages d
 
 ### Backup Best Practices
 
-1. Configure your full backup, which includes all the Objects (standard and custom) in Salesforce org. Recommended frequency is weekly, preferably on the weekend.
-2. Configure backup for Special objects like history, system, audit logs, and KAV objects on a weekly basis. Can be set to daily basis, if needed.
-3. Configure incremental backups to include all the objects in Salesforce. Recommended frequency for this backup is daily.
-4. Configure the scheduled time for full and incremental backups with enough of a time gap between them to avoid any bottlenecks in Salesforce, which may be caused due to queries being executed on same objects in parallel.
+1. Configure your full backup, which includes all the Objects (standard and custom) in Salesforce org. The recommended frequency is weekly, preferably on the weekend.
+2. Configure backup for Special objects like history, system, audit logs, and KAV objects on a weekly basis. Can be set to a daily basis, if needed.
+3. Configure incremental backups to include all the objects in Salesforce. THe recommended frequency for this backup is daily.
+4. Configure the scheduled time for full and incremental backups with enough of a time gap between them to avoid any bottlenecks in Salesforce, which may be caused due to queries being executed on the same objects in parallel.
 5. Create backup schedules that are in sync with your production deployment schedules. Backup your entire production instance or relevant instance data before deploying to a production instance.
 6. Identify a set of business-critical objects. Configure a backup specifically to include these objects to run at higher frequency levels (recommended frequency is multiple times a day) depending on RPO and RTO requirements.
-7. Use the option to exclude formula fields in case of objects with a large number of fields, without which Salesforce queries may be errored out or giving results slowly.
+7. Use the option to exclude formula fields in case of objects with a large number of fields, without which Salesforce queries may be errored out or give results slowly.
 8. Configure email addresses of users who need to be notified upon completion or failure of backups. (By default, the user who configured the backup will be notified automatically).
 9. Go through logs and results of backups on a weekly basis to ensure that automated backups are happening as expected.
 10. Adjust frequency and scheduled time of backup configurations based on API call limit and API call consumption by other systems.
-11. A Salesforce user with which an org is registered on Vault should have admin-level permissions in the org. Recommendation is to create an admin user separately for Vault.
+11. A Salesforce user with which an org is registered on Vault should have admin-level permissions in the org. The recommendation is to create an admin user separately for Vault.
 
 
 
 ### Restore/ Replicate Best Practices
 
-1. Active validation rules, triggers, process builder and workflow may lead to restore/replicate failures of certain data or metadata. Make sure to disable these before restore/replicate operations.
+1. Active validation rules, triggers, process builder, and workflow may lead to restore/replicate failures of certain data or metadata. Make sure to disable these before performing restore/replicate operations.
 2. We strongly urge everyone to implement frameworks such as Trigger Handlers that allow you to disable automation (Triggers, Flows, Workflow Rules, etc.) for certain users or at certain times. Salesforce offers brief [guidance on this on Trailhead](https://trailhead.salesforce.com/content/learn/modules/success-cloud-coding-conventions/implement-frameworks-sc), and there are multiple Trigger Handler patterns available such as the [Apex Trigger Actions Framework](https://github.com/mitchspano/apex-trigger-actions-framework). Data restore jobs generally do not need to re-process that business automation. By bypassing this automation you can reduce time to write data to Salesforce by 10x or more.
 3. Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail. Make sure the metadata size is less than 400MB for a single job. You can split the metadata into multiple jobs to achieve restore/replicate if metadata is larger than 400 MB.
 4. Define batch size based on the size of metadata or data you want to perform jobs on.

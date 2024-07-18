@@ -16,7 +16,7 @@ An audit report gives you a comprehensive view of your business operations by fo
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654510600047.png" alt=""><figcaption></figcaption></figure>
-4. **Note:** There is a difference between the audit report date and the deployment date because the audit report dates are are not converted to the user’s profile/user\`s time zone to align with Salesforce audit dates. AutoRABIT audit reports consistently use GMT date and time, so the audit date and time are not similar, and there is a difference due to the time zone difference.
+4. **Note:** There is a difference between the audit report date and the deployment date because the audit report dates are not converted to the user’s profile/user\`s time zone to align with Salesforce audit dates. AutoRABIT audit reports consistently use GMT date and time, so the audit date and time are not similar, and there is a difference due to the time zone difference.
 
 ### **Job Audit Report** <a href="#job-audit-report" id="job-audit-report"></a>
 

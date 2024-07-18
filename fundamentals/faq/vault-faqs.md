@@ -7,7 +7,7 @@ layout:
   tableOfContents:
     visible: true
   outline:
-    visible: true
+    visible: false
   pagination:
     visible: true
 ---
@@ -16,4 +16,4 @@ layout:
 
 ## Frequently Asked Questions (FAQs)
 
-The following pages contain [solutions to common errors and questions](vault-faqs.md) in Vault.
+The following pages contain solutions to common errors and questions in Vault as well as Unsupported Metadata Types.

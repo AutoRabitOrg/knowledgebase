@@ -37,6 +37,23 @@ When there are conflicting changes on the same lines, a “merge conflict” occ
 
 As you work with your files that are under version control, each change is tracked automatically. This can include modifying a file, deleting a directory, adding a new file, moving files or just about anything else that might alter the state of the file. Instead of recording each change individually, the version control system will wait for you to submit your changes as a single collection of actions. In version control, this collection of actions is known as a commit.
 
+## **How does Git handle Duplicate File Change Commits**
+
+Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.
+
+1.  **Q: Why does Git allow duplicate commits when performing duplicate merges in AutoRABIT?**
+
+    **A:** Git's behavior of creating new commits for each merge, even if the changes are merged multiple times, is intrinsic to its design. This allows Git to maintain a detailed commit history and track changes accurately.
+2.  **Q: How can users prevent unintended duplicate merges in AutoRABIT when encountering duplicate commit scenarios?**
+
+    **A:** To prevent unintended duplicate merges, users should follow version control best practices, such as reviewing changes before committing, resolving merge conflicts promptly, and educating themselves on Git's behavior regarding commit history.
+3.  **Q: Is the behavior of duplicate merges in Git a flaw in AutoRABIT's integration with Git?**
+
+    **A:** No, the behavior of duplicate merges in Git is not a flaw in AutoRABIT but rather a fundamental aspect of Git's functionality. AutoRABIT works within the framework of Git's design and behaviour when handling merge operations.
+4.  **Q: How can AutoRABIT users effectively manage duplicate merges and maintain code integrity in their development processes?**
+
+    **A:** Users can effectively manage duplicate merges by understanding Git's behavior, educating themselves on version control best practices, training on commit history management, and implementing enhanced error handling mechanisms to alert users of potential duplicate commits.
+
 ## Branching and Merging- what's the difference? <a href="#branching-and-merging-whats-the-difference" id="branching-and-merging-whats-the-difference"></a>
 
 A **branch** allows you to create a copy (or snapshot) of the repository that you can modify in parallel without altering the main set. You can continue to commit new changes to the branch as you work, while others commit to the trunk or master without the changes affecting each other.

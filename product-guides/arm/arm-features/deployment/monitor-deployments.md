@@ -54,6 +54,13 @@ You’ll need the **`Deployment History`** access permission.
 2. For those PMD reports generated before 90 days, those source content files will not be seen in the Static Analysis Report.
 {% endhint %}
 
+**Note:** If the Quick Deploy button is grayed out after successful validation the issue is that there are invalid characters in the metadata file. To fix this issue please follow these steps:
+
+* **Access Deployment Logs** by navigating to the Deployment History section. Select the specific deployment label where the Quick Deploy button is missing. Review the deployment logs for any errors or warnings related to special characters.&#x20;
+* **Check Deployment Metadata** to identify the files or metadata containing special characters. The common special characters include: +, &, <, >, ", ', etc. Note the specific characters and their locations in the metadata.
+* **Re-run Deployment** after you make necessary adjustments to the deployment files to ensure special characters are correctly encoded. Re-run the deployment process with the modified files. The Quick Deploy button should not be grayed out.
+* **Escalate if Unresolved**, if the issue persists, escalate to AutoRABIT support for further assistance and provide detailed logs and steps taken to resolve the issue.
+
 9. **Metadata Components Details:**
    * **`Components:`** This report displays the components successfully deployed into the target sandbox. Here you can download the deployed/ deployable components in XML format. To do so, click on the **`Download`** button.
    * **`Failed Components:`** This report displays the components that have not been deployed into the target sandbox.

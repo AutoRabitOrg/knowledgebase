@@ -37,7 +37,7 @@ When there are conflicting changes on the same lines, a “merge conflict” occ
 
 As you work with your files that are under version control, each change is tracked automatically. This can include modifying a file, deleting a directory, adding a new file, moving files or just about anything else that might alter the state of the file. Instead of recording each change individually, the version control system will wait for you to submit your changes as a single collection of actions. In version control, this collection of actions is known as a commit.
 
-## **How does Git handle Duplicate File Change Commits**
+## **How does Git handle Duplicate File Change Commits?**
 
 Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.
 

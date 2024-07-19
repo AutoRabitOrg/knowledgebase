@@ -38,10 +38,9 @@ There are two steps to follow:
 4. Select the **Package Type: Unlocked** or **Managed**.
 5. Select the **Dev Hub** for which the package will be associated.
 6. Under Version Control, enter the [**Version Control Repository**](arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md) and its related **Branch**.
-7.  Select the **Package Directory** from the dropdown. (For more information about **Package Directory**, refer to the article: [Salesforce DX Metadata Format](salesforce-dx-metadata-format.md))\
+7. Select the **Package Directory** from the dropdown. (For more information about **Package Directory**, refer to the article: [Salesforce DX Metadata Format](salesforce-dx-metadata-format.md))
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658922976011.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1453).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Create a Package Version <a href="#step-2-create-a-package-version" id="step-2-create-a-package-version"></a>
 
@@ -54,61 +53,59 @@ Under the **Package Version** section, do the following:
 1. **Version Name:** Version name gets auto-generated based on the package name. However, you can edit the name and enter your desired name. It is really up to you.
 2. **Version Description:** Brief description of your Package version.
 3. **Version Number:** Version numbers are formatted as **major.minor.patch.build (**1.2.1.8)
-   * **Note:** The format of the version MUST consist of **four** numbers separated by dots for example (1.2.3.4) where each number represents the **major version, minor version, patch version and build version** respectively. The use of any other character to separate the version number fields will generate the error message, “Can’t create package version. The package version number specified in your sfdx-project.json file or on the command line isn’t valid. Check the package version number, and try creating the package version again.“&#x20;
+
+{% hint style="info" %}
+**Note:** The format of the version MUST consist of **four** numbers separated by dots for example (1.2.3.4) where each number represents the **major version, minor version, patch version and build version** respectively. The use of any other character to separate the version number fields will generate the error message, "Can’t create package version. The package version number specified in your sfdx-project.json file or on the command line isn’t valid. Check the package version number, and try creating the package version again."
+{% endhint %}
+
 4. **Installation Key:** Enter the installation key that protects your package from being installed by unauthorized individuals.
-5.  **Tag:** Enter the tag that is required to release the package. **For ex-** Release 1.0.0\
+5. **Tag:** Enter the tag that is required to release the package. **For ex-** Release 1.0.0
 
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658923698967.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1454).png" alt=""><figcaption></figcaption></figure>
 
 **Package Dependencies:** The Dev Hub org can own multiple packages that are created in AutoRABIT. Such dependent packages will get displayed in this section.&#x20;
 
-From the **Available Packages** list, select the dependent packages that will be associated with the current module. Use the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402857647.png)/![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402882169.png) button to add/remove the dependent packages to the module and using the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402900576.png)/![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613402922812.png) button, move the package list up and down. Based on the selection, the top package will be deployed in the beginning and the process continues for the remaining dependent packages.
+From the **Available Packages** list, select the dependent packages that will be associated with the current module. Use the ![](<../../.gitbook/assets/image (1445).png>)/![](<../../.gitbook/assets/image (1446).png>) button to add/remove the dependent packages to the module and using the ![](<../../.gitbook/assets/image (1455).png>)/![](<../../.gitbook/assets/image (1457).png>) button, move the package list up and down. Based on the selection, the top package will be deployed in the beginning and the process continues for the remaining dependent packages.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658923720319.png)
+<figure><img src="../../.gitbook/assets/image (1458).png" alt=""><figcaption></figcaption></figure>
 
 Click either **View Metadata** or **Create Package**.
 
-1.  **View Metadata:** This option will allow the users to view the metadata types and their members that get pulled out from the Version control repository and review the same before creating a package.\
+1. **View Metadata:** This option will allow the users to view the metadata types and their members that get pulled out from the Version control repository and review the same before creating a package.
 
+<figure><img src="../../.gitbook/assets/image (1459).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658924214669.png" alt=""><figcaption></figcaption></figure>
 2. **Create Package:** This will allow you to create the package for the data that you've filled above.
 
 Upon confirmation, the package gets created and the progress status gets displayed on the **Unlocked Package** home screen.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658924274420.png)
+<figure><img src="../../.gitbook/assets/image (1460).png" alt=""><figcaption></figcaption></figure>
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658924440742.png)
+<figure><img src="../../.gitbook/assets/image (1461).png" alt=""><figcaption></figcaption></figure>
 
-### More Information on the 'Package' screen  <a href="#more-information-on-the-package-screen" id="more-information-on-the-package-screen"></a>
+### More Information on the 'Package' screen <a href="#more-information-on-the-package-screen" id="more-information-on-the-package-screen"></a>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1658924558565.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1462).png" alt=""><figcaption></figcaption></figure>
 
 1. **Status:** View the status of the Package i.e., success or failed along with the Package Log report.
 2. **Actions:**&#x20;
-   1. **Delete a Package:** Delete a package and its related version details. This process cannot be undone!!
-   2. **Create a Version:** Using the **+** icon to create a new package version for the current package. On the next screen, fill in the basic details such as version name, version number, installation key, tag, and description and click **Create**.
-3.  **Info:**
+   * **Delete a Package:** Delete a package and its related version details. This process cannot be undone!!
+   * **Create a Version:** Using the **+** icon to create a new package version for the current package. On the next screen, fill in the basic details such as version name, version number, installation key, tag, and description and click **Create**.
+3. **Info:**
 
-    1. **View Packaged versions (**![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1613896513485.png)**):** You can click on this icon to view the version details (package version name, version number, percentage of code coverage covered, etc.,) of an unlocked or managed package. Alternatively, you can click on the package name on the **Packages** screen to view the version details. The installation URL for the package version gets auto-generated and used in creating a package. You can add a new version to the current package by clicking **Create Package Version**.
+**View Packaged versions (**![](<../../.gitbook/assets/image (1463).png>)**):** You can click on this icon to view the version details (package version name, version number, percentage of code coverage covered, etc.,) of an unlocked or managed package. Alternatively, you can click on the package name on the **Packages** screen to view the version details. The installation URL for the package version gets auto-generated and used in creating a package. You can add a new version to the current package by clicking **Create Package Version**.
 
-    \
-    \
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1646407711517.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1464).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Important Notes:
+**Important Notes:**
 
-* For **Unlocked Packages**, when a new package version is created, the latest promoted version of the package will be considered as an ancestor.\
+1. For **Unlocked Packages**, when a new package version is created, the latest promoted version of the package will be considered as an ancestor.
+2. For **Managed Packages**, if you do not choose any ancestor then the latest promoted version will be selected as an ancestor by default. If you choose **None**, the package version will be created without an ancestor. If you want to choose an ancestor other than the latest promoted version then select the **Skip Ancestor Check** check box.
 
-* For **Managed Packages**, if you do not choose any ancestor then the latest promoted version will be selected as an ancestor by default. If you choose **None**, the package version will be created without an ancestor. If you want to choose an ancestor other than the latest promoted version then select the **Skip Ancestor Check** check box.
+![](<../../.gitbook/assets/image (1465).png>)
 
-<img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1671801329383.png" alt="" data-size="original">
-
-* Creating non-linear package versions in the same branch is restricted as it might cause issues during build and deployment.
+3. Creating non-linear package versions in the same branch is restricted as it might cause issues during build and deployment.
 {% endhint %}
 
 **Promote:** With this option, you promote your package versions to be released. A version number uses the format _major.minor.patch.build_. When you promote a package version, you cannot promote the same package again unless you increment the minor or major number. _**For example-**_ if you created and promoted package _1.0.0.2_, you can create packages _1.0.0.3_, _1.0.0.4_, and so on. However, you cannot promote more packages with the 1.0.0 scheme. To promote another package, create a new package with an incremented major or minor version number.
@@ -122,7 +119,6 @@ Important Notes:
 4. You can promote once for each package version number, and you can’t undo the change to the package status.
 {% endhint %}
 
-**Package info:** Hover your mouse over the info icon to view the package information such as package author name, date and time stamp of the package created, package last modified date/time, and the author who did the last modification.\
+**Package info:** Hover your mouse over the info icon to view the package information such as package author name, date and time stamp of the package created, package last modified date/time, and the author who did the last modification.
 
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1659000005751.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1466).png" alt=""><figcaption></figcaption></figure>

@@ -56,6 +56,11 @@ The selected components will be listed under the **`Selected Items`** tab.
 
 <figure><img src="../../../../.gitbook/assets/image (31) (1) (1).png" alt="" width="423"><figcaption></figcaption></figure>
 
+**Note:** Salesforce does not display inactive custom metadata components so they will not be displayed in the deployment list of metadata components. If inactive metadata components are required for the deployment, please refer to the following steps:
+
+1. **Activate Inactive Components:** If certain components are required for deployment but are currently inactive, consider activating them in the latest Salesforce account if the option is still available, before initiating the deployment process. This can ensure that all necessary components are included in the deployment.
+2. **Consult Salesforce Documentation:** For more specific guidance and troubleshooting, refer to the Salesforce documentation on metadata deployment. The documentation provides detailed information on deployment settings, component visibility, and best practices for deploying metadata. However, it is important to note that the specific behavior of inactive custom metadata not being visible may be consistent with Salesforce's intended design, even though it is not explicitly mentioned in the documentation. **Please note** that the specific steps and solutions may vary depending on your Salesforce setup and configuration. It is recommended to consult your Salesforce administrator or support team for assistance tailored to your specific scenario.
+
 You’ll see the list of metadata components in your target org but not in your source under the **`Destructive Items`** tab. Check the box next to a component you want to delete, and it will be deleted when you deploy. For a detailed explanation of destructive changes, refer to the article: [Destructive Changes](destructive-changes.md).
 
 <figure><img src="../../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>

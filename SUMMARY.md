@@ -36,6 +36,7 @@
       * [Release Notes 24.0.4](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.4.md)
       * [Release Notes 24.0.1](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.1.md)
       * [Release Notes 23.1](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)
+      * [Release Notes 24.0.8](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.8.md)
   * [nCino Release Notes](overview/release-notes/ncino-release-notes/README.md)
     * [Release Notes 24.1](overview/release-notes/ncino-release-notes/release-notes-24.1.md)
     * [Release Notes 23.1](overview/release-notes/ncino-release-notes/release-notes-23.1.md)

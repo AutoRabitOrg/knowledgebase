@@ -7,12 +7,17 @@ The code coverage report provides information about the apex tests that are run,
 
 ### Generating the code coverage report <a href="#generating-the-code-coverage-report" id="generating-the-code-coverage-report"></a>
 
-1. Hover your mouse over the **Admin** module and select the option: **SF Org Mgmt.**\
-   ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654168662410.png)
-2. Select the **Salesforce Org** and click on **Generate Code Coverage Report.** \
-   ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654168634326.png)
-3. Next, fill in the details to run the apex test class for the selected Salesforce Org. Click **Update & Run**.\
-   ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654168923440.png)
+1. Hover your mouse over the **Admin** module and select the option: **SF Org Mgmt.**
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="237"><figcaption></figcaption></figure>
+
+2. Select the **Salesforce Org** and click on **Generate Code Coverage Report.**&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+3. Next, fill in the details to run the apex test class for the selected Salesforce Org. Click **Update & Run**.
+
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### Viewing the code coverage report <a href="#viewing-the-code-coverage-report" id="viewing-the-code-coverage-report"></a>
 
@@ -20,39 +25,37 @@ The code coverage report provides information about the apex tests that are run,
 2. Click on the **Code Coverage Reports** tab.&#x20;
 3. Choose your **Salesforce Org** from the dropdown to view the detailed code coverage report.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662027817193.png)
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Each code coverage report generated reflects the details listed below:
 
-| Title                          | Description                                                                                                                     |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| Iteration                      | The revision number of the Salesforce Org for which the code coverage report is generated                                       |
-| Last Triggered By              | Details for the author who triggered the most recent code coverage report                                                       |
-| Run Type                       | Whether the report is generated, scheduled, or forced (on demand)                                                               |
-| Test Level                     | Apex test levels, i.e., specific test or running apex class on all tests in an org                                              |
-| Status                         | Status of code coverage (failure or success)                                                                                    |
-| Overall Code Coverage In Org   | Percentage of code coverage in total                                                                                            |
-| Methods Executed               | The total number of methods executed                                                                                            |
-| Total Failures                 | The total number of failures that occurred when executing the code coverage.                                                    |
-| Total Execution Time(hh:mm:ss) | The overall amount of time (in hours, minutes, and seconds) it took to generate a code coverage report for your Salesforce Org  |
+| Title                           | Description                                                                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Iteration                       | The revision number of the Salesforce Org for which the code coverage report is generated                                       |
+| Last Triggered By               | Details for the author who triggered the most recent code coverage report                                                       |
+| Run Type                        | Whether the report is generated, scheduled, or forced (on demand)                                                               |
+| Test Level                      | Apex test levels, i.e., specific test or running apex class on all tests in an org                                              |
+| Status                          | Status of code coverage (failure or success)                                                                                    |
+| Overall Code Coverage In Org    | Percentage of code coverage in total                                                                                            |
+| Methods Executed                | The total number of methods executed                                                                                            |
+| Total Failures                  | The total number of failures that occurred when executing the code coverage.                                                    |
+| Total Execution Time (hh:mm:ss) | The overall amount of time (in hours, minutes, and seconds) it took to generate a code coverage report for your Salesforce Org  |
 
 #### Log Details <a href="#log-details" id="log-details"></a>
 
 View the apex test results log information by clicking on the **Log** icon.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662027939115.png)
+<figure><img src="../../../.gitbook/assets/image (12).png" alt="" width="239"><figcaption></figcaption></figure>
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1662028132664.png)
+<figure><img src="../../../.gitbook/assets/image (13).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Apex Test Results <a href="#apex-test-results" id="apex-test-results"></a>
 
 View the _apex class coverage_ and the _apex test coverage_ on the **Apex Test Results** screen. You can view the number of covered and uncovered lines for each test coverage. In addition, you can download both reports locally in **CSV** format as well.
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654170097209.png)
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654171140803.png)
-
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654171192701.png)
 
 #### Apex Test Summary <a href="#apex-test-summary" id="apex-test-summary"></a>
 
@@ -69,4 +72,4 @@ After running tests, you can view code coverage information in the **Apex Test S
 * Information for each test that succeeds
 * The time it took to run the test
 
-![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1654170799984.png)
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>

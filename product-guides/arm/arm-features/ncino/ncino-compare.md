@@ -19,7 +19,7 @@ Compare and selective deployment functionality allows you to perform compare ope
 
 #### Feature Deployment – Template + Version Control
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 1. On selecting “Template” or “Version Control,” you will see the “Retrieve Dataset” option.
 2. Clicking “Retrieve Dataset” will take you to the “Deployment History” page.
@@ -30,13 +30,13 @@ Compare and selective deployment functionality allows you to perform compare ope
 1. Select “Template Using Salesforce Org/VC Using Salesforce Org” to see “Create Dataset” visible.
 2. Click on the “Create Dataset” option to continue performing the ‘compare’ operation after you are taken to the “Deployment History” page.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Perform Compare
 
 1. Open the deployment, then click on the “Compare” button.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 2. Once you click on “Compare,” a pop-up will be shown.
 3. The compare operation can be performed either as “Org to Org” or “Version Control.”
@@ -45,19 +45,19 @@ Compare and selective deployment functionality allows you to perform compare ope
 
 Select the ‘Salesforce Org’ radio button to perform an Org-to-Org comparison.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 #### Org-to-VC Comparison
 
 Select the ‘Version Control’ radio button to perform the Org-to-VC comparison.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Compare Results
 
 1. Perform either the Org-to-Org or Org-to-VC compare operation.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 2. On this screen, you can alter the destination as required.
 3. You can select from the following fields on the compare screen:
@@ -69,11 +69,11 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
 4. Upon completing the required selections, click on the “Compare” button on the pop-up.
 5. You can see the results on the “Compare Results” screen.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
 6. **Object:** Users can select one object at a time for comparison against the destination.
 7. **Unique ID:** User can select one Unique ID at a time from the dropdown.
@@ -99,12 +99,12 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
     * **Records on the page:** This will export the records on the current page to Excel.
     * **All Records:** This will export all the records retrieved from the compare operation.
 
-    <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (4).png" alt=""><figcaption></figcaption></figure>
 14. **Change View:** You can click open the link and add/remove the fields to be displayed in the compare results grid.
 
     * Only 10 fields can be displayed on the grid at a time.
 
-    <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (10) (4).png" alt=""><figcaption></figcaption></figure>
 15. **Save and Continue:** Click on ‘OK’ to continue with the selection for “selective deployment.”
 16. **Save and Deploy:** Click on ‘OK’ to continue with the deployment(s). You will be taken to the deployment page with the selected records displayed.
 
@@ -114,22 +114,22 @@ Select the ‘Version Control’ radio button to perform the Org-to-VC compariso
 
 17. Upon clicking **“Save and Deploy,”** you can see the object summary of all the records selected.
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (4).png" alt=""><figcaption></figcaption></figure>
 
 18. Once you click on the **“Save and Deploy”** button, you will be redirected to the deployment page with the **“Iteration – Staging”** designation.
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (4).png" alt=""><figcaption></figcaption></figure>
 
 19. Clicking on the total under **“Selected Records”** will show you the record(s) in a pop-up.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
 
 20. Click on **“Deploy”** to perform the deployment of the selected records.
 21. On successful deployment, the iteration will be changed to “1” and users can see **Success** and **Failure** records.
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (4).png" alt=""><figcaption></figcaption></figure>
 
 22. You can see the “Success” and “Failure” results of the deployments.
 
@@ -143,7 +143,7 @@ This will compare the selected object with the object in the destination and ide
 
     * This will perform a global-level relational compare operation on all the records that are retrieved as part of the initial compare operation.
 
-    <figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (16) (4).png" alt=""><figcaption></figcaption></figure>
 2. **You can make a selection on parent and child sections:**
    * **Object:** Select the required items from the list of objects for comparison
    * **Unique ID:** Select the unique ID from the list.
@@ -155,7 +155,7 @@ This will compare the selected object with the object in the destination and ide
 
 1. Click on the record-level relational compare icon to perform the relational compare operation.
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (4).png" alt=""><figcaption></figcaption></figure>
 
 2. **You can make the respective selection(s) on parent and child sections:**
    * **Object:** Select the required object from the list of objects for comparison
@@ -166,15 +166,15 @@ This will compare the selected object with the object in the destination and ide
 
        * You can continue to perform the relational compare operation to the ‘nth’ level or indefinitely.
 
-       <figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (18) (4).png" alt=""><figcaption></figcaption></figure>
 3. **View Records:** You can see the details of the _**record on which the record-level comparison is performed**_.
 4. You can both collapse and expand the “Relational Parent” and “Relational Child” sections, as observed above.
    * The “Relational Parent” and “Relational Child” sections are collapsed for the convenience of viewing.
 5. As shown below, you can perform the relational comparison at different levels.
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (4).png" alt=""><figcaption></figcaption></figure>
 
 6. You can perform the **‘Global Relational Compare’** and the **‘Record-Level Comparison’** at these levels too, as displayed in the following screenshot.
 7. You can continue to select from the set of records that are extracted from the compare operation.

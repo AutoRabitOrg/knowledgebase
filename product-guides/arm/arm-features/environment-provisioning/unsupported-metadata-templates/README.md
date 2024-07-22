@@ -82,27 +82,23 @@ To create a new unsupported metadata template, please follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button.
 
-&#x20;
+<figure><img src="../../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619787581.png" alt=""><figcaption></figcaption></figure>
+9.  However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
 
-1.  However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
+    * Click on![](<../../../../../.gitbook/assets/image (23).png>)icon.
+    * Enter the page layout name in the **Page Layout** field.&#x20;
+    * Activate the page layout by selecting the **Active** checkbox.&#x20;
+    * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
+    * Click **OK**.
 
-    1. Click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png) icon.
-    2. Enter the page layout name in the **Page Layout** field.&#x20;
-    3. Activate the page layout by selecting the **Active** checkbox.&#x20;
-    4. You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
-    5. Click **OK**.
-
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619843373.png" alt=""><figcaption></figcaption></figure>
-2. Click **Save** to save the template.
-3. You can find your recently created template on the **Environment Provisioning History** page.
-4. The next step is to run the template on your destination Salesforce org.
-5. Look for your template on the **Environment Provisioning History** screen and click on **Run**.
-6. Select your **destination org** from the dropdown and enter the email address(es) to receive an email notification whenever the operation is carried out.
-7. Click **Run**.
+    <figure><img src="../../../../../.gitbook/assets/image (24).png" alt="" width="534"><figcaption></figcaption></figure>
+10. Click **Save** to save the template.
+11. You can find your recently created template on the **Environment Provisioning History** page.
+12. The next step is to run the template on your destination Salesforce org.
+13. Look for your template on the **Environment Provisioning History** screen and click on **Run**.
+14. Select your **destination org** from the dropdown and enter the email address(es) to receive an email notification whenever the operation is carried out.
+15. Click **Run**.
 
 ### View History <a href="#view-history" id="view-history"></a>
 
@@ -110,11 +106,11 @@ The **View History** screen will display the detailed summary report of the temp
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1616328277736.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1616328449188.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 **Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.&#x20;
 

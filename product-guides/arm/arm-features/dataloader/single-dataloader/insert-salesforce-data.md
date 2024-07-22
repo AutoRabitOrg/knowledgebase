@@ -6,28 +6,28 @@ The following articles describe using the **Single Dataloader** to insert data i
 2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`Dataloader`**. The **Dataloader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
 3. Click **`Insert`** on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (31) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Choose your **`Salesforce Org`** and your org **Environment** (_Production_ or _Development e_dition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch Objects`** to fetch all the objects from your Salesforce org.
 
-<figure><img src="../../../../../.gitbook/assets/image (32) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the object in which you wish to insert the data. For example, **Account**, **Contact**, **Lead**, etc. You can use the **`search`** function to search through your objects and the **`filter`** button to filter your standard/custom objects quickly.
 8. Click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. You can import your file from your local directory on the next screen. Upload the **`CSV`** file you wish to import by clicking the **`Upload`** button.
 10. A notification pop-up will display the number of records that will be impacted. Click **`OK`**.
 11. The next step is to prepare your field mappings. Field mappings match columns in your CSV to fields in your Salesforce org. When clicking on a salesforce field, use the **"Quick Search"** function to search through those and the quick filter tabs to find your _Required_, _Unmapped_, _IDs_ and _Custom fields_.
 
-<figure><img src="../../../../../.gitbook/assets/image (34) (1) (1) (1) (1).png" alt="" width="415"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png" alt="" width="415"><figcaption></figcaption></figure>
 
 12. You can automatically map the members and the fields using **`Automap`**. It compares the destination fields with the fields available in uploaded CSV files, and if both match, the value is selected automatically.
 
-<figure><img src="../../../../../.gitbook/assets/image (35) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. The number of fields mapped out of the total number of fields is displayed below the **`Automap`** checkbox.
 14. Use the **`search`** option to look up a field by name from the long list to map it.
@@ -38,7 +38,7 @@ The following articles describe using the **Single Dataloader** to insert data i
       After selecting the filter, the list updates automatically as you map or unmap each field.
 16. Make sure you have mapped all the required fields. Otherwise, you can't move forward. Click **`Next`**.Lookup Reference ObjectsIf you need an object ID but don't have it, you can use the lookup function to retrieve it dynamically. For example, if you're importing Contacts with the **"Account name"** but not the **"ID,"** you can use the [lookup feature](using-data-loader-with-lookups.md) to find it.
 
-<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1).png" alt="" width="448"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1).png" alt="" width="448"><figcaption></figcaption></figure>
 
 17. On the **`Process Summary`** screen, you can:
 
@@ -49,13 +49,13 @@ The following articles describe using the **Single Dataloader** to insert data i
     * View the number of impacted **records**.
     * Use **Bulk API**.About Bulk APIThe **Bulk API** is based on REST principles and is optimized for inserting, updating, and deleting large data sets. You can use the **Bulk API** to process jobs in **serial** or **parallel** mode. Processing batches serially means running them one after another, while processing batches in parallel means running multiple batches simultaneously. When you run a bulk API job, processing more batches in parallel means giving that job a higher degree of parallelism, providing your overall run with better data throughput.
 
-    <figure><img src="../../../../../.gitbook/assets/image (37) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 18. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 19. Finally, click **`Save`** to save your task and run it later.
 20. Your task is listed at the top of the list on the **`Dataloader Summary`** screen.
 21. Click **`Run`** to start Dataloader immediately before the scheduled time.
 
-<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 22. Select the criteria you can set for the data loader process to continue:
 
@@ -70,17 +70,17 @@ The following articles describe using the **Single Dataloader** to insert data i
 
 23. Click **`Run`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1) (1).png" alt="" width="494"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1).png" alt="" width="494"><figcaption></figcaption></figure>
 
 24. The **`Results of Last Run`** section shows the number of successful or failed records. The values in this field are updated dynamically while the job is still running. You can view the records or download them to your local system. The records are generated in CSV format.
 
-<figure><img src="../../../../../.gitbook/assets/image (40) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 25. The number of impacted records can be seen in the **`Records`** section. The value in this field is updated dynamically while the job is still running.
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (41) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. **`Edit:`** Modifies or updates the process details.&#x20;
 2. **`Abort:`** Aborts the process while it is still running.
@@ -89,10 +89,10 @@ The following articles describe using the **Single Dataloader** to insert data i
 5. **`Log:`** Provides information about the execution of the inserted task.
 6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../validation-workflow-rules.md). Sample VR/WFR attached:
 
-<figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. **`Clone:`** Creates a copy (clone) of the insert process. Operation type and object name are displayed. Enter the **`Process Name`** in the field. The default **`Salesforce Org`** is automatically selected. To choose a different org, use the dropdown list. Select the **`Choose Different Data CSV File`** check box to upload a different CSV file. Finally, click **`Clone`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (44) (1) (1) (1) (1).png" alt="" width="399"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1).png" alt="" width="399"><figcaption></figcaption></figure>

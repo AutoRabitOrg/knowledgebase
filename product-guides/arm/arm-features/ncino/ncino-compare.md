@@ -19,7 +19,7 @@ Compare and selective deployment functionality allows you to perform compare ope
 
 #### Feature Deployment – Template + Version Control
 
-<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (3).png" alt=""><figcaption></figcaption></figure>
 
 1. On selecting “Template” or “Version Control,” you will see the “Retrieve Dataset” option.
 2. Clicking “Retrieve Dataset” will take you to the “Deployment History” page.

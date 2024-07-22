@@ -6,18 +6,18 @@ The following article describes using **Single Dataloader** to update data in Sa
 2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`Dataloader`**.
 3. Click **`Update`** on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Choose your **`Salesforce Org`** and your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch Objects`** to fetch all the objects from your Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the object for which you wish to update the data. For example, **`Account`**, **`Contact`**, **`Lead`**, etc. You can use the **`Search`** function to search through your objects and the **`filter`** button to filter your standard/custom objects quickly.
 8. Click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Import your file from your local directory on the next screen. Upload the **`CSV`** file you wish to import by clicking the **`Upload`** button.
 
@@ -80,7 +80,7 @@ The following article describes using **Single Dataloader** to update data in Sa
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. **`Edit:`** Modifies or updates the process details.&#x20;
 2. **`Abort:`** Aborts the process while it is still running.
@@ -89,10 +89,10 @@ The following article describes using **Single Dataloader** to update data in Sa
 5. **`Log:`** Provides information about the execution of the updated task.
 6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../validation-workflow-rules.md). Sample VR/WFR attached:
 
-<figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. **`Clone:`** Creates a copy (clone) of the insert process. Operation type and object name are displayed. Enter the **`Process Name`** in the field. The default **`Salesforce Org`** is automatically selected. To choose a different org, use the dropdown list. Select the **`Choose Different Data CSV File`** check box to upload a different CSV file. Finally, click **`Clone`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>

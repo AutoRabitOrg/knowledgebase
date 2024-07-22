@@ -12,17 +12,17 @@ To create this template, follow the below steps:
 6. Select the **ApexExceptionalEmail** checkbox available under **Add Apex Exception Email.**
 7. Click **Add**.&#x20;
 8. On the next screen, a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.
-9.  Users can add the required details in the fields of **Salesforce User, External Email Addresses, and Delete Salesforce User.** To add further details, click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png)icon.
+9.  Users can add the required details in the fields of **Salesforce User, External Email Addresses, and Delete Salesforce User.** To add further details, click on![](<../../../../../.gitbook/assets/image (34).png>)icon.
 
-    1. You can even add multiple pages for the above-generated test cases. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-    2. Click **OK**.&#x20;
-    3. Once done, click on the **Save** button to save this page.
+    * You can even add multiple pages for the above-generated test cases. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
+    * Click **OK**.&#x20;
+    * Once done, click on the **Save** button to save this page.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632208256079.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632208289821.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632208328645.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 10. Next, Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click the **Run** button to run the template on your destination org.

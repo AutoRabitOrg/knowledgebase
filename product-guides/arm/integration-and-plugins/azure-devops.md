@@ -15,20 +15,20 @@ To integrate Azure DevOps as a plugin in AutoRABIT, follow the below steps:
 1. Log in to your AutoRABIT account.
 2. From the AutoRABIT home page, click on the **Admin** module and go to the **My Account** tab.
 
-<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="289"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="289"><figcaption></figcaption></figure>
 
 3. Click on **New ALM System** under **ALM Management**.
 
-<figure><img src="../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the ALM type as **Azure DevOps**.
 
-<figure><img src="../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 
 5. Enter the **label name** and paste the **Azure DevOps host URL**.
 6. Select the user credential from the drop-down field. In case the user detail is not stored in AutoRABIT, click on **Create Credentials**.
 7. Once you are done, click on **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
-8. Click **Save (**![](<../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1).png>)**)** and you are all set with Azure DevOps Integration.
+8. Click **Save (**![](<../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)**)** and you are all set with Azure DevOps Integration.
 9. Once you log in, Azure DevOps is integrated with your AutoRABIT account and you can start logging issues with just one click directly to Azure DevOps.
 
 {% hint style="info" %}
@@ -43,24 +43,24 @@ To integrate Azure DevOps as a plugin in AutoRABIT, follow the below steps:
 1. Sign in to your organization in **Azure DevOps** _(https://dev.azure.com/{yourorganization})._
 2. From your home page, navigate to your **Profile > Security** to view your security details.
 
-<figure><img src="../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="275"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="275"><figcaption></figcaption></figure>
 
 3. Go to **Security > Personal access token** and click on **+ New Token** to create a personal access token.
 
-<figure><img src="../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, **name** your token. Select a **lifespan** for your token.
 
-<figure><img src="../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Select the **scopes** that this token will authorize for your specific tasks.
 
-<figure><img src="../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="458"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="458"><figcaption></figcaption></figure>
 
 6. Click on **Create Token** available at the bottom of the screen.
 7. When you're done, make sure to copy the token. You'll use this token as your password.
 
-<figure><img src="../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Enter the same token in the **Password** field while registering the user's credential via **UserName/Password** credential type in AutoRABIT.
 
@@ -73,7 +73,7 @@ Once you are done registering the plugins with AutoRABIT, make sure you map the 
 3. Select the **Salesforce org** for which you like to map the Azure DevOps as an **ALM**.
 4. Under **Salesforce Org- Mappings** tab, choose **Azure DevOps** as ALM type and click on **Mapping**.
 
-<figure><img src="../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Select the **label** and the **project**.
 6. Click **Save Mappings**.

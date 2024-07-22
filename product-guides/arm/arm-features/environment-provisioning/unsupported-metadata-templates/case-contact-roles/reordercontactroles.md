@@ -12,10 +12,10 @@ To create this template, follow the below steps:
 6. Select the **ReorderContactRoles** checkbox available under **Case Contact Roles.**
 7. Click **Add**.
 8. On the next screen, you will find a **test case name** appear automatically by default. To add the custom test data, click on **Add** button. You will have the following options to check:
-   1. **Values**
-   2. **Default Value**
-   3. Check the **Sort Alphabetically** field.
-   4. Once done click on **Save** to save this page.
+   * **Values**
+   * **Default Value**
+   * Check the **Sort Alphabetically** field.
+   * Once done click on **Save** to save this page.
 9. Next, Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

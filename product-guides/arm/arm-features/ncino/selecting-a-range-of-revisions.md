@@ -51,8 +51,8 @@ This feature allows users to select a range of commits from the available commit
 
 11. Once ‘Save’ is clicked, users are redirected to the ‘CI Job’ list page.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 12. Click on the ‘Play’ button to trigger the build. Upon clicking the ‘Play’ button, users are redirected to the following page.
 
-<figure><img src="../../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53) (3).png" alt=""><figcaption></figcaption></figure>

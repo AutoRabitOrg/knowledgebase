@@ -8,7 +8,7 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 2. From the top navigation pane, navigate to **`Create New > New Deployment`**.
 3. Click on the **`Profile Manager`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (48) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. In the **`Profile/PermissionSet Manager`** screen, select the **`Salesforce orgs`** that need to be compared (max 3 Orgs).
 5.  Click on either the **`Get Profiles`** or the **`Get PermissionSets`**button.
@@ -16,14 +16,14 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
     * **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
     * **`Get PermissionSets`** will list all available permission sets in Salesforce Orgs
 
-    <figure><img src="../../../../.gitbook/assets/image (49) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Select the **`Profile/PermissionSets`** type based on the above selection.
 
-<figure><img src="../../../../.gitbook/assets/image (50) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the metadata components (including its metadata members) for which you want to view the selected profile/permissionset comparison report. A minimum of one metadata component selection is required to proceed further.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. About Object Permissions in Profiles, Editing standard objects on standard profiles is not supported by Salesforce. Hence, these changes won't show up in your destination environment.
 

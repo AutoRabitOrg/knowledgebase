@@ -69,12 +69,12 @@ If you choose to deploy KAV objects along with other metadata/data objects, the 
     * For an ongoing restore operation, you can **abort** the process in between using the **`Abort`**![](<../../../../.gitbook/assets/image (71) (1) (1) (1) (1) (1) (1).png>)icon.
     * View the **restore summary report** using![](<../../../../.gitbook/assets/image (72) (1) (1) (1) (1) (1) (1).png>)icon.
     * View the **restore log report** using![](<../../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1).png>)icon.
-    * Trigger **linking kav to case** using![](<../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1).png>)icon.
+    * Trigger **linking kav to case** using![](<../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1).png>)icon.
 
 {% hint style="info" %}
 **Points to Note:**
 
 * To ensure successful linking, do confirm that the **kav records** for linking are in `Published` status in Salesforce.
-* Once the Kav record is successfully linked, the job status changes to complete (![](<../../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1).png>)) state.
-* The **`trigger`** (![](<../../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1).png>)) button will not be available; henceforth, linking kav to case is triggered.
+* Once the Kav record is successfully linked, the job status changes to complete (![](<../../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1).png>)) state.
+* The **`trigger`** (![](<../../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1).png>)) button will not be available; henceforth, linking kav to case is triggered.
 {% endhint %}

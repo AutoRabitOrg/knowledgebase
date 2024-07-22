@@ -12,11 +12,11 @@ To create this template, follow the below steps:
 6. Select the **ReplaceTeamRole** checkbox available under **Case Team Roles.**
 7. Click **Add**.
 8. On the next screen, you will find a **Test case name** appear automatically by default. To add the custom test data, click on **Add** button. You will have the following options to check:
-9. Click on![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png)icon to add the below details:
-   1. **Member Role Name:** Enter the name of the current role you'd like to replace.
-   2. **Existing Team Role:** Enter the team Role to be replaced.
-   3. You can even add multiple values for the above-generated test case. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-   4. Click **OK**. Once done, click on **Save** to save this page.
+9. Click on![](<../../../../../../.gitbook/assets/image (48).png>)icon to add the below details:
+   * **Member Role Name:** Enter the name of the current role you'd like to replace.
+   * **Existing Team Role:** Enter the team Role to be replaced.
+   * You can even add multiple values for the above-generated test case. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
+   * Click **OK**. Once done, click on **Save** to save this page.
 10. Next, Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click the **Run** button to run the template on your destination org.

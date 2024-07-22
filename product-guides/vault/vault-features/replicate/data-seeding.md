@@ -18,11 +18,11 @@ While creating the job configuration, the user can select from any of the Backup
 
 1. Access the “Job Config” under the “Replicate” module and create the “New Replicate Config” as shown below.
 
-<figure><img src="../../../../.gitbook/assets/image (86) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (86) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. On clicking “New Replicate Config,” the user will be prompted with “Replicate Config” with the dropdowns “Source”, “Destination,” and “Replicate Source.”
 
-<figure><img src="../../../../.gitbook/assets/image (87) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (87) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Replicate Source has the following values:
    * Backup
@@ -32,7 +32,7 @@ While creating the job configuration, the user can select from any of the Backup
 4. _**For any selection of Backup, Hierarchical Backup & Archive.**_
 5. The user will land on the **“Replicate Config”** page:
 
-<figure><img src="../../../../.gitbook/assets/image (88) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (88) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. _**This will have the following options for the user to select:**_
    * **`Source Org:`** Source of the data for Replicate operation
@@ -43,9 +43,9 @@ While creating the job configuration, the user can select from any of the Backup
 8. User can select the required ‘configs’ from the list of ‘configs’ selected.
 9. On clicking “Next”, the user will land on the “Select Components” page. The user can observe “Metadata” and “Data” tabs.
 
-<figure><img src="../../../../.gitbook/assets/image (89) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (89) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (91) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (91) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. The user can make the required selections under both the “Metadata” & “Data” tabs and continue to the next section.
 

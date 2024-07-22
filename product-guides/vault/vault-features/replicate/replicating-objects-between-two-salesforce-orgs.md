@@ -98,20 +98,20 @@ This option allows you to select specific metadata/data that gets replicated onl
 
 6. **`Mappings:`** Map your source fields to your destination fields. Any matching headers from your source fields and your destination fields map automatically.
 
-<figure><img src="../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. **`Records:`** View the list of records for the object selected. Here, you can choose the records you wish to replicate to the destination org. You also have the option of importing records from a CSV file. To upload the CSV, click the **`Choose File`** button in the top right corner of the screen.
 
-<figure><img src="../../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Next, click on either the **`Next`** or **`Replicate`** button. If you choose **`Next`**, you will be navigated to a new screen where you can add a new masking rule. Data masking refers to changing certain data elements within a data store so that the structure remains similar while the information is changed to protect sensitive information. It ensures that sensitive customer information is unavailable beyond the permitted production environment.&#x20;
 9. However, if you want to skip the masking steps, click **`Replicate`**.
 
-<figure><img src="../../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Let's create a masking rule before we conclude the replicate process. To do so, click on **`Next`**. Now, click on the **`New Masking Rule`** button available in the top right corner.
 
-<figure><img src="../../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 11. In the **`Masking Form`** screen, do the following:
 
@@ -124,15 +124,15 @@ This option allows you to select specific metadata/data that gets replicated onl
 * Choose the fields for which the masking will be applicable.&#x20;
 * Once done, click on the **`Add`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 12. Now, click on the **`Replicate`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (80) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 13. The following popup screen displays the restore checklists, which must be considered before we continue with the replicate operation. Click on **`Got It`** button to close the popup.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (81) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (81) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 14. On the next screen, you will need to:
     * On the next screen, enter the **`Replicate label`** of your choice or leave the auto-generated default label.
@@ -145,20 +145,20 @@ This option allows you to select specific metadata/data that gets replicated onl
       4. **`Disable Triggers:`** When working with data and metadata, you may want to disable triggers you have in place to guarantee a successful replicate operation. _This feature disables Salesforce triggers only. Any managed package triggers will not be disabled._
 15. Click **`Replicate Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (82) (1) (1) (1).png" alt="" width="368"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (82) (1) (1) (1) (1).png" alt="" width="368"><figcaption></figcaption></figure>
 
 16. You will be redirected to the **`Replicate Summary`** homepage, which will show you the progress of the replicate operation recently triggered.
 17. Click on the **`Replicate Label`** to view the list of metadata/data being replicated to the org. Click on **`Export`** to locally save the restored metadata/data info in CSV format.
 
-<figure><img src="../../../../.gitbook/assets/image (83) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (84) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (84) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Replicate Summary <a href="#replicate-summary" id="replicate-summary"></a>
 
 For each Replicate activity triggered in Vault, you will find the below details:
 
-<figure><img src="../../../../.gitbook/assets/image (85) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (85) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute        | Description                                                                                                                                                                                                                                                                                                 |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

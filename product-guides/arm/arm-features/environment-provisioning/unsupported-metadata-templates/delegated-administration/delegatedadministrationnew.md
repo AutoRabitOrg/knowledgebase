@@ -10,8 +10,8 @@ To create this template, follow the below steps:
 6. Select the **DelegatedAdministrationNew** checkbox available under **Delegated Administration.**
 7. Click **Add**.
 8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
-   1. **Delegated Group Name:** Enter the delegated group name in the field.
-   2. **Developer Name:** Give a name to a developer who will be performing the action.
+   * **Delegated Group Name:** Enter the delegated group name in the field.
+   * **Developer Name:** Give a name to a developer who will be performing the action.
 9. Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

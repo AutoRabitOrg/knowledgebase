@@ -11,10 +11,10 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. A **Test Case Name** and **Fields To Delete** appear automatically on the next screen by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, If you want to change the fields name for the auto-generated or custom test cases. To change the field name, do the following:
-   1. Click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png) icon.
-   2. Enter the new field name in the blank field.&#x20;
-   3. You can even add multiple fields for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-   4. Click **OK**. Once you are finished, click **Save** to save this page.
+   * Click on![](<../../../../../../.gitbook/assets/image (75).png>)icon.
+   * Enter the new field name in the blank field.&#x20;
+   * You can even add multiple fields for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
+   * Click **OK**. Once you are finished, click **Save** to save this page.
 10. Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click the **Run** button to run the template on your destination org.

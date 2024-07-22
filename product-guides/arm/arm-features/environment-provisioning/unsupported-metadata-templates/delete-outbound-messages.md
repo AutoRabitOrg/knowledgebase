@@ -13,10 +13,10 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. If you want to add more outbound messages to your auto-generated or custom test cases, you can do so. Do the following to add more outbound messages:
-   1. Click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png) icon.
-   2. In the **Delete Outbound Messaged** field, type the message you want to delete.
-   3. You can even add multiple messages for the above-generated test case name. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
-   4. Click **OK**. Once you are finished, click **Save** to save this page
+   * Click on![](<../../../../../.gitbook/assets/image (58).png>)icon.
+   * In the **Delete Outbound Messaged** field, type the message you want to delete.
+   * You can even add multiple messages for the above-generated test case name. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
+   * Click **OK**. Once you are finished, click **Save** to save this page
 10. Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click on the **Run** button to run the current template on your destination org.

@@ -64,21 +64,21 @@ This section deals with retrieving the [SFDX](https://knowledgebase.autorabit.co
 
 **Additional options in the 'Build' section**
 
-<figure><img src="../../../../../.gitbook/assets/image (74) (1).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
 2. [**Pull Request**](https://knowledgebase.autorabit.com/arm/docs/external-pull-request)**:** Creates a pull request for the current CI job if opted.
 3. [**Merge Request**](https://knowledgebase.autorabit.com/arm/docs/merge-requests)**:** Creates a merge request for the current CI job if opted.
 4.  **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).
 
-    <figure><img src="../../../../../.gitbook/assets/image (75).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (75) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
     * Select your **ALM type**. Currently, AutoRABIT supports ALM types such as JIRA, IBMRTC, Version One, CA Agile Central, and Azure DevOps.
     * Select the **ALM Label** and its related **Projects**.
     * The active sprint(s) for the above selected Project will be available in the **Sprint** drop-down. AutoRABIT has given provision to you to update multiple sprints related to tasks or bugs and update the status at ongoing when running the CI Job. You can select either one of Sprint or if you wish to update the status for all the sprints, leave as default i.e., keep **'All Active Sprints'** in the selected mode.
     * Select the **Work Item type**. Here you can select multiple work items that you like the update the status in your ALM. To use all the work item types, keep the 'All Work Item Type' option selected by default.
 
-    <figure><img src="../../../../../.gitbook/assets/image (76).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (76) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
     * Based on the above work Item selected, you need to update the status for each work item type. Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 5. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
@@ -90,7 +90,7 @@ This section deals with retrieving the [SFDX](https://knowledgebase.autorabit.co
        2. **Developer B** has also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 AM this morning.\
           So, when AutoRABIT builds get triggered by webhook, **Developer B** changes will be packaged and deployed and the codes get updated with the latest revision. However, **Developer A** changes are ahead of **Developer B**, AutoRABIT will show no modifications for the build since the **Developer B** changes are in the **HEAD** position. To overcome this scenario, AutoRABIT has come with an option to **"Process commit revision via hook only"**. This will prepare the build from the revision of **Developer A** to the HEAD revision of the branch, therefore no commits are skipped through the AutoRABIT cycle.
 
-       <figure><img src="../../../../../.gitbook/assets/image (77).png" alt="" width="553"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (77) (1).png" alt="" width="553"><figcaption></figcaption></figure>
 6. **Incremental Build:** Incremental builds are important for managing continuous builds for continuous delivery. Incremental Builds substantially decrease build times by avoiding the execution of previous metadata that is not needed. This will fetch all the metadata changes beyond the selected Baseline Revision till the successfully deployed revision to the destination org. On the next CI Job run, the previous Baseline Revision automatically gets changed to the successfully deployed revision. Hence, there will be a substantial increase in build time performance for large-project incremental builds when a change to a single file or a small number of files is performed.
 
 {% hint style="info" %}
@@ -101,13 +101,13 @@ This section deals with retrieving the [SFDX](https://knowledgebase.autorabit.co
 
 This section is all about deploying the above package onto a target Salesforce Org or you can create a new scratch org and install the unlocked packages to it.
 
-<figure><img src="../../../../../.gitbook/assets/image (78).png" alt="" width="555"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (78) (1).png" alt="" width="555"><figcaption></figcaption></figure>
 
 **1. Deploy only the latest version of each package**
 
 Select this checkbox to install only the latest version of each package.
 
-<figure><img src="../../../../../.gitbook/assets/image (79).png" alt="" width="485"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (79) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 **2. Run Apex Compile**
 
@@ -137,7 +137,7 @@ Keep a copy of the changes before deployment and can revert the changes later.&#
 
 List of actions to perform once the build is successfully deployed.
 
-<figure><img src="../../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (80) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
 2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
@@ -150,7 +150,7 @@ List of actions to perform once the build is successfully deployed.
    \
    To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through AutoRABIT and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, the **XYZ** user navigates to the **Deploy > On Successful Deployment** section and selects the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.
 
-<figure><img src="../../../../../.gitbook/assets/image (81).png" alt="" width="431"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (81) (1).png" alt="" width="431"><figcaption></figcaption></figure>
 
 However, **XYZ** would like to run the above activities in the following sequence:
 
@@ -160,7 +160,7 @@ However, **XYZ** would like to run the above activities in the following sequenc
    Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\
    Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.
 
-<figure><img src="../../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (82) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -175,7 +175,7 @@ However, **XYZ** would like to run the above activities in the following sequenc
 
 This section allows users to query dependency relationships between the metadata components in a Salesforce org to view and manage dependent metadata components so that your commits do not break any existing functionalities in your org. Dependency Analyzer offers a dependency check, which allows users to see what they are missing due to Salesforce specificity.
 
-<figure><img src="../../../../../.gitbook/assets/image (83).png" alt="" width="470"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (83) (1).png" alt="" width="470"><figcaption></figcaption></figure>
 
 To analyze failed components in case of a failed deployment, select the **Source Org for analysis** from the drop-down. Users can view the results of this analysis in the **Dependency Analyzer** tab of the **Deployment Report**, or download it in manifest (.json) or .xls format.
 
@@ -190,7 +190,7 @@ There are different ways to fetch the test cases:
 * AccelQ (if AccelQ plugin is installed in AutoRABIT)
 * Provar (if Provar plugin is installed in AutoRABIT)
 
-<figure><img src="../../../../../.gitbook/assets/image (84).png" alt="" width="391"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (84) (1).png" alt="" width="391"><figcaption></figcaption></figure>
 
 1.  **TAF Labels:** The test labels that are present in the AutoRABIT TAF module get displayed. Select the test cases as per your requirement.
 
@@ -198,7 +198,7 @@ There are different ways to fetch the test cases:
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (85).png" alt="" width="379"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 2.  **Version Control:** The test cases committed to a branch in version control are displayed.
 
     * Select the  [ **Version Control Repository** ](https://knowledgebase.autorabit.com/docs/version-control-repository)  type.
@@ -212,10 +212,10 @@ There are different ways to fetch the test cases:
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (86).png" alt="" width="547"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (86) (1).png" alt="" width="547"><figcaption></figcaption></figure>
 3. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
-<figure><img src="../../../../../.gitbook/assets/image (87).png" alt="" width="467"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (87) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 4.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
 
@@ -229,7 +229,7 @@ There are different ways to fetch the test cases:
     2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment gets failed.
     3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (88).png" alt="" width="542"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (88) (1).png" alt="" width="542"><figcaption></figcaption></figure>
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
@@ -239,7 +239,7 @@ The Callout URL lets you call another service from the AutoRABIT application via
 
 Send email notifications to selected users email on the success or failure of a build.
 
-<figure><img src="../../../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (89) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

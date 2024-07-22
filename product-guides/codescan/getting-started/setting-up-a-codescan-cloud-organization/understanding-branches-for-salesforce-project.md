@@ -20,13 +20,13 @@ When you create an analysis project from Salesforce, the org or sandbox you auth
     * **Comparison Branch**- This branch determines only the recent issues in a project branch based on comparing with the standard branch in your project.
     * **Standard Branch**- This branch will have your project's entire history and dashboards.
 
-    <figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="482"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="482"><figcaption></figcaption></figure>
 6. Select your Salesforce environment.
 7. Once you click on **Authorize**, it will redirect you to the Salesforce login page to validate your credentials.
 8. This triggers the project analysis and the project being added under your CodeScan organization.
 9. You'll be redirected to the **Project Analysis** screen, where you can view the status of your triggered analysis.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Features of a comparison branch <a href="#features-of-a-comparison-branch" id="features-of-a-comparison-branch"></a>
 

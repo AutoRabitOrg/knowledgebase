@@ -116,15 +116,15 @@ After you create a merge request, you can ask a specific person to review your p
 
 1. **Filtering merge requests by “repository”**: To filter merge requests by repository, you can select your source repository from the dropdown.
 
-<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Filtering merge requests by “status”:** You can search through **Open**, **Closed**, **All** issues, or **Opened** issues assigned to you directly from the **Filter By** dropdown for your selected source repository.
 
-<figure><img src="../../../../../.gitbook/assets/image (75) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (75) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. **Filtering merge requests by “title”**: You can filter merge requests by specific terms included in titles.
 
-<figure><img src="../../../../../.gitbook/assets/image (76) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (76) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  **Advanced Filters:**
 
@@ -132,6 +132,6 @@ After you create a merge request, you can ask a specific person to review your p
     * **Filtering merge requests by “author”**: To filter merge requests by a particular user, you can select the user from the **Author** dropdown.
     * **Filtering merge requests by “date range”:** You can select a date range to show only the merge requests contained during that time frame.
 
-    <figure><img src="../../../../../.gitbook/assets/image (77) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (77) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (78) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (78) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

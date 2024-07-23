@@ -51,6 +51,7 @@ The following weekly fixes were implemented.
 3. A code fix was applied to the Admin module of version 24.1 to correct a use-case error in which test class mappings were missing. Support tickets #116984, #117737&#x20;
 4. A code fix was applied to the Admin module of version 24.1 to correct a use-case issue with log visibility in the branching baseline for admin users. Support ticket #117485&#x20;
 5. A code fix was applied to the Admin module of version 24.1 from an internal ticket identifying a use case in which the user was getting an 'unauthorized 401' error during a new account signup registration.&#x20;
+6. A code fix was applied to the Admin module of version 24.1 identified by internal ticket a use case in which the user was unable to log in via the default SSO login page; also, the build version and revsion information were not displaying.
 
 #### 17 July 2024
 

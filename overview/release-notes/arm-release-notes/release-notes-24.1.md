@@ -42,6 +42,16 @@ This update improves the tool's efficiency and responsiveness and leverages new 
 
 The following weekly fixes were implemented.
 
+#### 24 July 2024
+
+**ARM 24.1.6**
+
+1. A code fix was applied to the CI Jobs module of version 24.1 due to a typo in the ARM CI Jobs creation screen. Support ticket #116616
+2. A code fix was applied to the Deployments module of version 24.1 due to a use-case error in which the 'add member' option was not working. Support tickets #116545, #117480
+3. A code fix was applied to the Admin module of version 24.1 to correct a use-case error in which test class mappings were missing. Support tickets #116984, #117737&#x20;
+4. A code fix was applied to the Admin module of version 24.1 to correct a use-case issue with log visibility in the branching baseline for admin users. Support ticket #117485&#x20;
+5. A code fix was applied to the Admin module of version 24.1 from an internal ticket identifying a use case in which the user was getting an 'unauthorized 401' error during a new account signup registration.&#x20;
+
 #### 17 July 2024
 
 **ARM 24.1.5**

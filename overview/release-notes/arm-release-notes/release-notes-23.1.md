@@ -86,6 +86,20 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 24 July 2024
+
+**ARM 23.1.39**
+
+1. A code fix was applied to the Version Control module in version 23.1 related to a use-case error in which the merge completion was taking too long. Support ticket #113102
+2. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which an issue was occurring with the system administrator lite. Support ticket #117297
+3. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to see the metadata through the single revision deployment. Support ticket #116919
+4. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to deploy the Einstein Prediction builder. Support ticket #116909
+5. A code fix was applied to the Admin module of versions 23.1 and 24.1 due to a use-case error with users losing access. Support ticket #111830
+6. A code fix was applied to the Version Control module of versions 23.1 and 24.1 due to a use-case error requiring multiple revisions on an ALM work item. Support ticket #117810
+7. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error with the new profile compare feature. Support ticket #117309
+8. A code fix was applied to the Deployments module of version 23.1 due to a use-case error with 'add additional member' showing duplicates when expanding the toggle. Internal request.
+9. A code fix was applied to the Version Control module of version 23.1 due to a use-case error with users getting an error for a commits tab external pull request using Bit bucket repo. Internal request.&#x20;
+
 #### 17 July 2024
 
 **ARM 23.1.38**

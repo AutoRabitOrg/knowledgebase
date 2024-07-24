@@ -415,7 +415,6 @@
           * [Solution Category Edit](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/solution-categories/solution-category-edit.md)
         * [Solution Settings Edit](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/solutionsettingsedit.md)
         * [Tag Settings](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/tag-settings.md)
-        * [Page](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/page.md)
         * [Territory View Rules](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/territory-view-rules/README.md)
           * [Delete Territory View Rules](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/territory-view-rules/delete-territory-view-rules.md)
           * [Edit Territory View Rules](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/territory-view-rules/edit-territory-view-rules.md)

@@ -9,6 +9,6 @@ You can delete people from your organization who are no longer required if you h
 5. Click on **`Gear`** icon on the right side of the user you'd like to make changes to.
 6. Select the **`Remove from organization's members`** option.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Select the **`Remove`** button once more to confirm your choice. The user will now be removed from your CodeScan organization.

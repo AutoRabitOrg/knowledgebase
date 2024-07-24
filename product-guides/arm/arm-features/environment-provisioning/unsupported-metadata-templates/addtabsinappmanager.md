@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. A **Test Case Name** and **App Name** appear automatically on the next screen by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, if you want to add a new App Name for the auto-generated or your custom test case, do the following:
-   * Click on![](<../../../../../.gitbook/assets/image (33).png>)icon.
+   * Click on![](<../../../../../.gitbook/assets/image (33) (1).png>)icon.
    * Enter the App name in the **App Name** field.&#x20;
    * You can even add multiple apps for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
    * Click **OK**. Once you are finished, click **Save** to save this page

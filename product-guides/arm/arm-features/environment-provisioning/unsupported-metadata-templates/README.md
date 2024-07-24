@@ -82,17 +82,17 @@ To create a new unsupported metadata template, please follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 9.  However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
 
-    * Click on![](<../../../../../.gitbook/assets/image (23).png>)icon.
+    * Click on![](<../../../../../.gitbook/assets/image (23) (1).png>)icon.
     * Enter the page layout name in the **Page Layout** field.&#x20;
     * Activate the page layout by selecting the **Active** checkbox.&#x20;
     * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
     * Click **OK**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (24).png" alt="" width="534"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (24) (1).png" alt="" width="534"><figcaption></figcaption></figure>
 10. Click **Save** to save the template.
 11. You can find your recently created template on the **Environment Provisioning History** page.
 12. The next step is to run the template on your destination Salesforce org.
@@ -106,11 +106,11 @@ The **View History** screen will display the detailed summary report of the temp
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="../../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.&#x20;
 

@@ -9,7 +9,10 @@ To create this template, follow the below steps:
 5. Give the template a **name** and a **short description** of it.
 6. Select the **PublicCalendarEdit** checkbox available under **Public Calendar.**
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appear automatically by default. Enter the details in **Public Calendar to Edit** and  **Label Name** field, Select the checkbox to **Active Label** to activate it.![Test data](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632124238993.png)
+8. On the next screen, you will find a **Test Case Name** appear automatically by default. Enter the details in **Public Calendar to Edit** and  **Label Name** field, Select the checkbox to **Active Label** to activate it.
+
+<figure><img src="../../../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
 9. To add the custom test data, click on **Add** button and give a name to them. Click **Save** to save this page.
 10. Next, Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.

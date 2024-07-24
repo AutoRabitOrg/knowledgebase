@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, a **Test case name** and **Picklist Value** appear automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. If you want to create new **Picklist Values** for the auto-generated or custom test case, you can do so. Do the following to create a new picklist value:
-   * Click on![](<../../../../../../.gitbook/assets/image (30).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (30) (1).png>)icon.
    * Enter the name of the account role in the **New account role** field.&#x20;
    * You can even add multiple account roles for the above-generated test case. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
    * Click **OK**. Once done, click **Save** to save this page.

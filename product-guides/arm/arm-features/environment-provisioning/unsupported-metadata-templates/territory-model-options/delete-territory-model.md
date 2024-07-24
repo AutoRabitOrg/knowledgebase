@@ -10,8 +10,8 @@ To create this template, follow the below steps:
 6. Select the **DeleteTerritoryModel** checkbox available under **NewTerriority Model**.
 7. Click **Add.**
 8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
-   1. &#x20;**Label Name:** Enter the Label name in this field.
-   2. Once you are finished, click **Save** to save this page.
+   * &#x20;**Label Name:** Enter the Label name in this field.
+   * Once you are finished, click **Save** to save this page.
 9. Next, Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

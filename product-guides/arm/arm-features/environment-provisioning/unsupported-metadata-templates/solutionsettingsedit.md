@@ -1,4 +1,4 @@
-# SolutionSettingsEdit
+# Solution Settings Edit
 
 To create this template, follow the below steps:
 
@@ -11,11 +11,11 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** that appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you must add a **Solution Settings** field for the auto-generated or your custom test case. To add, do the following:
-   1. Click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png) icon.
-   2. Enter the setting name in the **Solution Setting Name** field.&#x20;
-   3. Activate the page layout by selecting the **Active** checkbox.&#x20;
-   4. You can even add multiple page layouts for the above-generated test case name. Click on the **+** symbol beside **Active** and fill in the fields mentioned in the earlier steps.&#x20;
-   5. Click **OK**. Once you are finished, click **Save** to save this page.
+   * Click on![](<../../../../../.gitbook/assets/image (53).png>)icon.
+   * Enter the setting name in the **Solution Setting Name** field.&#x20;
+   * Activate the page layout by selecting the **Active** checkbox.&#x20;
+   * You can even add multiple page layouts for the above-generated test case name. Click on the **+** symbol beside **Active** and fill in the fields mentioned in the earlier steps.&#x20;
+   * Click **OK**. Once you are finished, click **Save** to save this page.
 10. Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click the **Run** button to run the template on your destination org.

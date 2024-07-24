@@ -4,11 +4,11 @@ The CodeScan **New Code** tab is a great way to keep track of new issues in your
 
 How the **New Code** is set determines what issues are displayed as new issues. There are several options for this. The **New Code** can be configured for the specific project by navigating to the **Project Settings > New Code** menu from the project dashboard.
 
-<figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The **New Code** settings can be configured for the project or each branch by clicking on the settings wheel (![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-P2L8U745.png)) at the bottom of this page.
 
-<figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Date <a href="#date" id="date"></a>
 

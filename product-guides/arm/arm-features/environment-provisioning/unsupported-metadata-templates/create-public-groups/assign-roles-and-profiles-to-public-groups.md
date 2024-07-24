@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **test case name** appear automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you'll need to add a new **Members** for the auto-generated or your custom test case name, do the steps that follow:
-   * Click on![](<../../../../../../.gitbook/assets/image (53).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (53) (1).png>)icon.
    * Enter the **Public Group Name**, **Type**, and **Member** in the respective fields.&#x20;
    * You can even add multiple members details for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
    * Click **OK**. Once finished, click **Save** to save this page

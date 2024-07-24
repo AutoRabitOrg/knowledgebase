@@ -14,12 +14,12 @@ To create this template, follow the below steps:
 8. On the next screen, a **Test Case Name** and **Deleting Email** appear automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9.  However, you must add more email addresses for the auto-generated or your custom test case name. To add more emails, do the following:
 
-    1. Click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png) icon.
-    2. Enter the email ID in the **Org Wide Email Address** field.&#x20;
-    3. You can even add multiple pages for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-    4. Click **OK**. Once you are finished, click **Save** to save this page.
+    * Click on![](<../../../../../../.gitbook/assets/image (13).png>)icon.
+    * Enter the email ID in the **Org Wide Email Address** field.&#x20;
+    * You can even add multiple pages for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
+    * Click **OK**. Once you are finished, click **Save** to save this page.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632115885009.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 10. Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click the **Run** button to run the template on your destination org.

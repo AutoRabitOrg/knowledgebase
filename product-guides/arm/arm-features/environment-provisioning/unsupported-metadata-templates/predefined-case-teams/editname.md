@@ -13,17 +13,15 @@ To create this template, follow the below steps:
 7. Click **Add.**
 8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
 
-    1. Click on ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1631619313556.png) icon.
-    2. **Edit Name:** Under the **Edit Name** section, enter the existing Predefined Case Team for which the name needs to be modified. Enter the new Team Name in the **Team Name** field.
-    3. You can add multiple team member pages for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-    4. Click **OK**. Once you are finished, click **Save** to save this page.
+    * Click on![](<../../../../../../.gitbook/assets/image (26).png>)icon.
+    * **Edit Name:** Under the **Edit Name** section, enter the existing Predefined Case Team for which the name needs to be modified. Enter the new Team Name in the **Team Name** field.
+    * You can add multiple team member pages for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
+    * Click **OK**. Once you are finished, click **Save** to save this page.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632117979152.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 9. Next, Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click the **Run** button to run the template on your destination org.
 12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
 13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
 14. Please check the **View History** page for a detailed summary report of the operation carried out.
-
-\

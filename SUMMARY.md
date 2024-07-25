@@ -62,6 +62,7 @@
   * [General-FAQs](fundamentals/faq/general-faqs.md)
   * [Account & Administrator](fundamentals/faq/account-and-administrator.md)
   * [Licensing and Subscription](fundamentals/faq/licensing-and-subscription.md)
+  * [AutoRABIT Platform User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
   * [Connection & Authentication](fundamentals/faq/connection-and-authentication.md)
   * [Version Control-FAQs](fundamentals/faq/version-control-faqs.md)
   * [Deployment-FAQs](fundamentals/faq/deployment-faqs.md)

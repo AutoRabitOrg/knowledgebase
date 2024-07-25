@@ -122,7 +122,7 @@ This document provides complete information about the new feature Vault Connect,
 <figure><img src="../../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
 2. Click on **New External Data Sources.**
-3. Provide **External Data** source.
+3. Provide **External Data** **Source**.
    * Provide Name.
    * Type → Salesforce Data: OData 4.0
    * **Identity type** → Named Principal
@@ -145,11 +145,11 @@ This document provides complete information about the new feature Vault Connect,
 
 ## Sync with Salesforce
 
-### Overview
+**Overview**
 
 This feature enables the user to sync the latest metadata changes on Salesforce with Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects.
 
-### Step-by-Step Guide:
+**Step-by-Step Guide:**
 
 1. Log in to the Vault application.
 2.  Click on any Org to navigate to Vault – Connect.\
@@ -171,52 +171,53 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
-8.  Clicking on “Confirm” will redirect the user to the object list page, where the list of objects can be observed.\
+8.  Clicking on “**Confirm**” will redirect the user to the object list page, where the list of objects is shown.\
 
 
     <figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
-9.  Clicking on “View Logs” will display the related logs.\
+9.  Click on “View Logs” to display the related logs.\
 
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
-10. Clicking on any of the objects will open the pop-up related to the object and the required selections can be made.\
+10. Logs can be downloaded using the "Download" button.
+11. Click on any of the objects to open the related pop-up and make the required selections.\
 
 
     <figure><img src="../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
-11. Field Label Name: The field label can be updated to a custom name by clicking on the pencil icon provided.
-12. Reference to: If a field has a pencil icon beside it, then “Type” for that field will be set to “Reference.”
-13. For polymorphic fields, at least one reference has to be selected.
+12. Field Label Name: The field label can be updated to a custom name by clicking on the pencil icon provided.
+13. Reference to: If a field has a pencil icon beside it, then “Type” for that field will be set to “Reference.”
+14. For polymorphic fields, at least one reference has to be selected.
 
     * For polymorphic fields, a pencil icon will be displayed beside the fields under the “Reference to” column.
 
     <figure><img src="../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
-14. An error will be displayed under the ‘error’ column if no references were selected under the “Reference to” column.\
+15. An error will be displayed under the ‘error’ column if no references were selected under the “Reference to” column.\
 
 
     <figure><img src="../../../.gitbook/assets/image (9) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (10) (1) (2).png" alt=""><figcaption></figcaption></figure>
-15. On completing the selection(s), click on the “**Sync with Salesforce**” button to continue with the sync procedure.\
+16. On completing the selection(s), click on the “**Sync with Salesforce**” button to continue with the sync procedure.\
 
 
     <figure><img src="../../../.gitbook/assets/image (11) (1) (2).png" alt=""><figcaption></figcaption></figure>
-16. An information pop-up will be displayed on clicking the “**Sync with Salesforce**” button.\
+17. An information pop-up will be displayed on clicking the “**Sync with Salesforce**” button.\
 
 
     <figure><img src="../../../.gitbook/assets/image (12) (1) (2).png" alt=""><figcaption></figcaption></figure>
-17. Clicking on “CONFIRM” will display a success message pop-up.\
+18. Clicking on “CONFIRM” will display a success message pop-up.\
 
 
     <figure><img src="../../../.gitbook/assets/image (13) (1) (2).png" alt=""><figcaption></figcaption></figure>
-18. The latest job can be observed as the top entry on the “Sync history” page.\
+19. The latest job can be observed as the top entry on the “Sync history” page.\
 
 
     <figure><img src="../../../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>
-19. Clicking on the latest job will provide the list of objects from the job.\
+20. Clicking on the latest job will provide the list of objects from the job.\
 
 
     <figure><img src="../../../.gitbook/assets/image (15) (1) (2).png" alt=""><figcaption></figcaption></figure>
-20. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.\
+21. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.\
 
 
     <figure><img src="../../../.gitbook/assets/image (16) (1) (2).png" alt=""><figcaption></figcaption></figure>

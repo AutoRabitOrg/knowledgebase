@@ -6,7 +6,7 @@
 
 While performing **Data Loader Pro** on the objects for the first time, ensure you perform [Data Loader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Data Loader Pro job. This is a one-time operation.
 
-Data Loader plays an essential role in data migration from source [sandbox](broken-reference) to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
+Data Loader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
 
 ### How to perform a Data Loader Pro operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
 

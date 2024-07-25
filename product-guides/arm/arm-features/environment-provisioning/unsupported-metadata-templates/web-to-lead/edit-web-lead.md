@@ -13,12 +13,12 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
 
-    1. **Enabled:** Enable your organization to receive online leads.
-    2. **Default Lead Creator:** Here, enter the user name who will be listed as Creator when a Lead is created online.&#x20;
-    3. **Default Response Template:** Use Lead Auto-Response Rules to select different email response templates based on attributes of the leads submitted online. Leads not matching any of the rules will be sent the default response template entered in this field.
-    4. Once you are finished, click **Save** to save this page.
+    * **Enabled:** Enable your organization to receive online leads.
+    * **Default Lead Creator:** Here, enter the user name who will be listed as Creator when a Lead is created online.&#x20;
+    * **Default Response Template:** Use Lead Auto-Response Rules to select different email response templates based on attributes of the leads submitted online. Leads not matching any of the rules will be sent the default response template entered in this field.
+    * Once you are finished, click **Save** to save this page.
 
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1632200832555.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (1481).png" alt=""><figcaption></figcaption></figure>
 9. Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

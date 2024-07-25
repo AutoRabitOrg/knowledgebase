@@ -8,7 +8,7 @@
 
 **2. Can a customer's own key be used to encrypt their data? Is this possible?**
 
-**Answer:** Currently, AutoRABIT does not support customer encryption keys for data encryption. This feature is not supported at the moment as confirmed by our product team.
+**Answer:** Currently, AutoRABIT does not support customer encryption keys for data encryption. This feature is not supported at the moment.
 
 **3. Where is the result data (including exported data) physically stored, and can it be moved to a specific location (e.g., Another country)? Can we ensure this data is not stored in AutoRABIT?**
 

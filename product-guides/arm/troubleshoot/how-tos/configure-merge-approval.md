@@ -17,7 +17,7 @@ To configure the merge approvals:
 4. Select the **Enable Merge Approver** checkbox.
 5. Set the minimum number of required approvals under the **Approval Level** box. _The minimum **Approval Level** can be **1**._
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **Save**.
 7.  The steps above are the minimum required to get approvals working in your merge, but there are a couple more options available that might be suitable to your workflow:

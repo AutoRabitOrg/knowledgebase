@@ -17,11 +17,11 @@ This is an initial step where the user's JIRA credential, such as username and p
 1. Log in to your ARM account.
 2. Hover your mouse over the **Admin** module and click on the **Credentials** tab.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 3. Next, click on **Create Credential** from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **Credential name**.
 5. Choose the **Credential Type** as '**User name with Password.'**
@@ -29,7 +29,7 @@ This is an initial step where the user's JIRA credential, such as username and p
 7. Please double-check that you use your JIRA username instead of the email address that you use to log in to JIRA.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Troubleshooting:**
@@ -49,11 +49,11 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 2. Go to **Admin > My Account** section.
 3. Click on **New ALM System** under the **ALM Management** section.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Select **ALM type** as '**JIRA'** from the drop-down.
 
-<figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 
 5. Enter the **label name** of your own choice.
 6. Enter your JIRA subdomain (e.g., _https://\[subdomain].atlassian.net_) in the **URL** field.
@@ -78,7 +78,7 @@ Once you are done registering the plugins with ARM, make sure you map the JIRA A
 4. Select the **label** and the **project**.
 5. Click **Save Mappings**. The selected plugin will be mapped with your Salesforce Org.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Configuring JIRA Work items in ARM <a href="#configuring-jira-work-items-in-arm" id="configuring-jira-work-items-in-arm"></a>
 

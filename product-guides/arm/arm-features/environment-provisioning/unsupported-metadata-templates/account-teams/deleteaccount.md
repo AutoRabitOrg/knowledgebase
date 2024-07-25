@@ -17,7 +17,7 @@ To create this template, follow the below steps:
 
     <figure><img src="../../../../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * Click on![](<../../../../../../.gitbook/assets/image (28) (1).png>)icon.
+    * Click on![](<../../../../../../.gitbook/assets/image (28) (1) (1).png>)icon.
     * Enter the replacing value name in the **Deleting Fields** section.&#x20;
     * You can even add multiple deleting fields for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
     * Click **OK**. Once done, click **Save** to save this page.

@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appear automatically by default. Enter the details in **Public Calendar to Edit** and  **Label Name** field, Select the checkbox to **Active Label** to activate it.
 
-<figure><img src="../../../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. To add the custom test data, click on **Add** button and give a name to them. Click **Save** to save this page.
 10. Next, Click **Save** to save the template.

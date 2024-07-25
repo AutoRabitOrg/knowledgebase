@@ -10,13 +10,13 @@ The deployment process allows you to quickly and safely transfer new development
 2. Click on the **`Deployment`** module.
 3. Click on **`New Deployment`**.
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the **`New Deployment`** page, choose the basic parameters of your deployment, including the source org from which you'll be retrieving output and the destination org from which you'll be deploying the retrieved components.
 5. Give your deployment a name.
 6. Choose the deployment method from the **`Deployment From`** dropdown to carry out the deployment. There are approx. 10-14 different deployment ways to carry out your deployment in the ARM application.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1).png" alt="" width="315"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1).png" alt="" width="315"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** Only the new release labels for which the package has been successfully prepared will be visible in the **Release Label** dropdown if you choose **Deployment From:** **Release Label**. Release labels created before the **22.3** release will not be visible under this dropdown yet. Please go to the **Release Label Summary** screen and click **Create Artifact** to prepare the package. Then, the release label will be available to use for deployment.
@@ -32,7 +32,7 @@ The deployment process allows you to quickly and safely transfer new development
     * **`Selective Deployment`** is a deployment in which only the metadata types you’ve selected are deployed from the source org to the destination org.
     * **`Full Deployment`** transfers all metadata types in the source org to the destination org. However, a few metadata types, such as dynamic package XML files, can’t be retrieved in this process. In this case, the irretrievable data types will generate warnings during deployment, but ARM will continue the deployment and transfer the retrievable metadata types.
 
-    <figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1).png" alt="" width="444"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png" alt="" width="444"><figcaption></figcaption></figure>
 
 #### Metadata Filter (optional) <a href="#id-2-metadata-filter-optional" id="id-2-metadata-filter-optional"></a>
 

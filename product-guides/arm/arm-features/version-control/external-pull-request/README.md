@@ -47,7 +47,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 2. Users have appropriate **roles** or **permissions** to integrate their Version Control Repository for pull requests. Such privileges are granted by their account owner or admin. They can assign the required permission to the employees by visiting the **Admin > Roles** tab and selecting the **'Create Pull Request'** checkbox under the **'Special Permissions In** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/)**'** section.
 3. The Approver should have the **Pull Request Approver** permission.
 
-<figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Users are allowed to access the **'External Pull Requests'** page. The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and selecting the **'External Pull Requests'** checkbox under the **Version Control** section.
 

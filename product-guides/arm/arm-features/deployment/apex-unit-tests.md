@@ -18,7 +18,7 @@ Salesforce recommends the following components that need to be tested:
 
 The following test options are available when you deploy or commit or use CI jobs:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt="" width="418"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="418"><figcaption></figcaption></figure>
 
 * **`No Test Run:`** No tests are run. This test level applies only to deployments to development environments like Sandbox, Developer Edition, or trial organizations. This test level is the default for development environments.
 * **`Run Specified Tests:`** Only the tests that you specify are run. Provide the names of test classes in a comma-separated list.Make sure for the runTests parameter, and you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to **`Run Specified Tests`**.\
@@ -27,7 +27,7 @@ The following test options are available when you deploy or commit or use CI job
 * **`Run All Tests In Org:`** All tests are run. The tests include all tests in your organization, including tests of managed packages.
 * **`Run Tests Based On Changes:`** This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified apex classes from the packages in your [default apex test class configuration](https://knowledgebase.autorabit.com/arm/docs/default-apex-class-configuration) list, please check the "**`Do you want us to update the test classes`**" checkbox.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" width="413"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="413"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Points to Note**:&#x20;
@@ -57,24 +57,24 @@ _\*\*\*\*\*\*\*\*\*\*\* DEPLOYMENT FAILED \*\*\*\*\*\*\*\*\*\*\*_
 
 In the **`Submit for Validation`** screen, select the **`Validate Deployment`** checkbox and choose an org to validate your commit. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### During EZ-Merge Prevalidation <a href="#during-ezmerge-prevalidation" id="during-ezmerge-prevalidation"></a>
 
 In the **`New Merge`** screen and under the **`Prevalidate Merge`** section, select the **`Validate Deployment`** checkbox and choose an org to validate your merge. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="371"><figcaption></figcaption></figure>
 
 #### During Deployment <a href="#during-deployment" id="during-deployment"></a>
 
 In the **`Deployment Settings`** screen, you can choose the apex test level to validate the deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### During Continuous Integration (CI) Jobs <a href="#during-continuous-integration-ci-jobs" id="during-continuous-integration-ci-jobs"></a>
 
 You can set the apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For more information on Apex unit tests, Refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex\_testing/units/apex\_testing\_intro) module on Apex test level testing.

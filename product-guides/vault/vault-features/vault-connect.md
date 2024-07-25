@@ -38,7 +38,7 @@ This document provides complete information about the new feature Vault Connect,
 
 8.  A pop-up will be displayed with the following information:
 
-    * &#x20;How/where to config the external data source;
+    * How/where to config the external data source;
     * OData URL for configuring the external data source; and
     * What to select when creating Auth. Providers.
 
@@ -147,7 +147,7 @@ This document provides complete information about the new feature Vault Connect,
 
 ### Overview
 
-This feature enables the user to sync the latest metadata changes on the Salesforce with Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects
+This feature enables the user to sync the latest metadata changes on Salesforce with Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects.
 
 ### Step-by-Step Guide:
 
@@ -166,7 +166,7 @@ This feature enables the user to sync the latest metadata changes on the Salesfo
 
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
-6. This page will provide information on how many times the sync has happened until date \[ENV1] .
+6. This page will provide information on how many times the sync has happened to date.
 7.  On clicking “**Sync with Salesforce,**” the following pop-up will be displayed.\
 
 
@@ -175,7 +175,7 @@ This feature enables the user to sync the latest metadata changes on the Salesfo
 
 
     <figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
-9.  Clicking on “View Logs” will provide the related logs.\
+9.  Clicking on “View Logs” will display the related logs.\
 
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
@@ -294,8 +294,6 @@ By following these steps, you will enable **global search** functionality for **
 
 By following these steps, you can troubleshoot and resolve issues related to the visibility of records in external objects and the functionality of global search.
 
-
-
 ### Prerequisites
 
 Salesforce Connect OData 4.0 license subscription.
@@ -306,25 +304,32 @@ Salesforce Connect OData 4.0 license subscription.
 
 ### Limitations <a href="#limitations" id="limitations"></a>
 
-1. Files and attachments are not supported for viewing through external objects in Salesforce.&#x20;
+1. Files are not supported for viewing through external objects in Salesforce.&#x20;
 2. Salesforce OData 4.0 adapter has a limitation on the number of callouts per hour. This will be addressed with the support for the Salesforce OData 4.01 adapter in subsequent versions of the capability.
-3. Relationships between external objects and Salesforce objects need to be established manually, e.g., if cases are archived and they are related to accounts that are not archived, the reference to accounts that are in the Salesforce object will be available in the external object but will not be reflected as a lookup relationship.&#x20;
-4. All the limitations of Salesforce external objects are applicable as mentioned in this article: [Help and Training Community](https://help.salesforce.com/s/articleView?language=en\_US\&id=sf.platform\_connect\_general\_limits.htm\&type=5)
-5. The solution only supports customers configured with AWS S3 as a storage option in Vault.
-6. There is a max limit of 5GB of archived data per customer supported for connecting to Salesforce external data source as part of the beta program. This can be extended to a higher limit by raising a request with [support@autorabit.com](mailto:support@autorabit.com).
-7. Fields of type XmlObjectWrapper are not supported.
-8.  Fields of the object that have soapType as double, values will be truncated according to the precision and scale, as defined in the metadata of the object’s field.
+3. All the limitations of Salesforce external objects are applicable as mentioned in this article: [Help and Training Community](https://help.salesforce.com/s/articleView?language=en\_US\&id=sf.platform\_connect\_general\_limits.htm\&type=5)
+4. The solution only supports customers configured with AWS S3 as a storage option in Vault.
+5. There is a max limit of 5GB of archived data per customer supported for connecting to Salesforce external data source as part of the beta program. This can be extended to a higher limit by raising a request with [support@autorabit.com](mailto:support@autorabit.com).
+6. Fields of type XmlObjectWrapper are not supported.
+7.  Fields of the object that have soapType as double, values will be truncated according to the precision and scale, as defined in the metadata of the object’s field.
 
     **For example:** If a field holds decimal value information for that object, precision and scale values will be predefined.
 
-    **Precision:** The maximum number of digits in a numeric value includes all numbers to the left and to the right of the decimal point (but excludes the decimal point character).
+    **Precision:** The maximum number of digits in a numeric value includes all numbers to the left and the right of the decimal point (but excludes the decimal point character).
 
-    **Scale:** The number of digits to the right of the decimal point in a numeric value must be less than the precision value.
+    **Scale:** The number of digits to the right of the decimal point in a numeric value must be less than the precision value.\
+    **Example 1:**&#x20;
 
-**Example 1:**&#x20;
+    Define a custom number field, e.g., "Number." Give it length = 3 and decimal places = 1 (scale). It might seem that this is done to restrict the precision of the field to one decimal place. However, on the UI level (on a standard edit page), if you try to type in, for example, 237.631, it will round it off to 237.631. Here precision is 4 and scale is 1. When mapping it back to Salesforce as the external object’s field, the value will be truncated to 237.6.
 
-Define a custom number field, e.g., "Number." Give it length = 3 and decimal places = 1 (scale). It might seem that this is done to restrict the precision of the field to one decimal place. However, on the UI level (on a standard edit page), if you try to type in, for example, 237.631, it will round it off to 237.631. Here precision is 4 and scale is 1. When mapping it back to Salesforce as the external object’s field, the value will be truncated to 237.6.
+    **Example 2:**&#x20;
 
-**Example 2:**&#x20;
+    Say a field holds info on geolocation latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.
+8. **Don’t add more than four external lookup fields to your page layout.** On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5).
+9. **Restoration of System-Generated Chatter-Feed Items**
+   * **Issue**: Salesforce does not allow the restoration of chatter-feed items generated by the system.
+   * **Details**: Only feed items manually added by users to the chatter feed can be restored.
+   * **Error Message**: Attempting to restore system-generated chatter-feed items will result in the error: "Required field missing: Body."
+10. **Restoration of Shared Objects Data**
+    * **Issue**: Salesforce does not permit the restoration of data in shared objects generated by sharing rules.
+    * **Details**: Only manually added share-related records in the shared object can be restored.
 
-Say a field holds info on geolocation latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.

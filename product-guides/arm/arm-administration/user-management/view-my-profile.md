@@ -4,7 +4,7 @@ Numerous configuration options are available to users when setting up their prof
 
 To access user preferences, click your user name on the upper right corner and select **`Profile`**.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="252"><figcaption></figcaption></figure>
 
 #### Personal Details <a href="#personal-details" id="personal-details"></a>
 

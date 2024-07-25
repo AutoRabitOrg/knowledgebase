@@ -14,22 +14,22 @@ Data Loader plays an essential role in data migration from source sandbox to des
 2. Hover your mouse over the **`Data Loader`** module and select **`Data Loader Pro`**.
 3. Click on **`Create New Job.`**
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, choose the **`Source Org`** and the **`Destination Org`** that automatically populate the selected sandbox's details.
 5. Click **`Login and Fetch Objects`**.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Next, **`Select Master Object`**.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 7. View the relationship between child objects/ancestor objects and the master object in the **`Schema (Grid View)`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-8. Change the grid view to a graph view by clicking the **`Switch to Graph View`** button. Click on the![](<../../../../.gitbook/assets/image (5).png>)icon to view the graphical representation on full screen.
+8. Change the grid view to a graph view by clicking the **`Switch to Graph View`** button. Click on the![](<../../../../.gitbook/assets/image (5) (1).png>)icon to view the graphical representation on full screen.
 
 <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 

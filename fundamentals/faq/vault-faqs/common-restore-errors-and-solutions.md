@@ -1,4 +1,4 @@
-# Common Restore Errors & Solutions
+# Common Restore Errors & Limitations
 
 ## Vault FAQs
 
@@ -21,8 +21,8 @@ This error is a result of an issue stemming from a trigger in the Org.
 
 **Resolution Steps:**
 
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Use the option to disable the triggers in the job configuration. For the triggers which cannot be disabled via metadata API, manually disable the triggers in the Salesforce and re-run the job.
+1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
+2. Use the option to disable the triggers in the job configuration. For the triggers that cannot be disabled via metadata API, manually disable the triggers in Salesforce and re-run the job.
 
 
 
@@ -35,7 +35,7 @@ This error is a result of an issue stemming from a trigger in the Org.
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Locate the process builder process / flow that caused the error. Temporarily disable the automation and rerun the job to restore/replicate failed records.
-3. Alternately, the job can be retried by specifying a lower batch size in the job config which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
+3. Alternatively, the job can be retried by specifying a lower batch size in the job config which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
 
 
 
@@ -45,20 +45,20 @@ This error is due to the owner of the records about to be inserted into the dest
 
 **Resolution Steps:**
 
-1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
+1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
 2. Enable "Set Audit Fields upon Record Creation" and "Update Records with Inactive Owners" permissions in Salesforce settings.
-3. Enable these permissions in the permission set corresponding to the data loading user in the destination Org.
+3. Enable these permissions in the permission set corresponding to the dataloading user in the destination Org.
 4. To access details on how to do this in Salesforce, click on this link: [https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1](https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1)
 
 
 
 #### FIELD\_CUSTOM\_VALIDATION\_EXCEPTION
 
-This error is due to validation rules applied on certain fields.
+This error is due to validation rules applied to certain fields.
 
 **Resolution Steps:**
 
-1. Click on Restore/Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column.
+1. Click on Restore/Replicate job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
 2. Disable validation rules in the restore modal in the final step of the restore process.
 
 
@@ -69,9 +69,9 @@ This error occurs when the destination Org doesn't have the value enabled that i
 
 **Resolution Steps:**
 
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
+1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
 2. Sync the values in the restricted picklist between the source and destination.
-3. Alternately, use the mappings for restricted picklist to cross-map a value in the restricted picklist from source to another value in the destination Org as part of the replicate job config.
+3. Alternatively, use the mappings for restricted picklist to cross-map a value in the restricted picklist from the source to another value in the destination Org as part of the replicate job configuration.
 
 
 
@@ -81,7 +81,7 @@ This error occurs due to a failure of a required parent record (related through 
 
 **Resolution Steps:**
 
-1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
+1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
 2. Such errors occur when failure of a required parent record (related through master-detail/required  lookup) leads to the failure of its associated child records.
 3. Check the fields that failed. Review the error corresponding to the failure of the referencing parent record(s), rectify them, and restore the corresponding failed parent records first, then restore failed related child records.
 

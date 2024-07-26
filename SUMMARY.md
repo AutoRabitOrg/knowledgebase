@@ -72,7 +72,7 @@
   * [Retention Policy](fundamentals/faq/retention-policy.md)
   * [CodeScan–FAQs](fundamentals/faq/codescan-faqs.md)
   * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
-    * [Common Restore Errors & Limitations](fundamentals/faq/vault-faqs/common-restore-errors-and-limitations.md)
+    * [Common Restore Errors & Limitations](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)
     * [Unsupported Metadata Types](fundamentals/faq/vault-faqs/page-1.md)
 
 ## Product Guides

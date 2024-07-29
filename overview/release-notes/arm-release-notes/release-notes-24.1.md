@@ -51,13 +51,19 @@ The following weekly fixes were implemented.
 3. A code fix was applied to the Admin module of version 24.1 to correct a use-case error in which test class mappings were missing. Support tickets #116984, #117737&#x20;
 4. A code fix was applied to the Admin module of version 24.1 to correct a use-case issue with log visibility in the branching baseline for admin users. Support ticket #117485&#x20;
 5. A code fix was applied to the Admin module of version 24.1 from an internal ticket identifying a use case in which the user was getting an 'unauthorized 401' error during a new account signup registration.&#x20;
-6. A code fix was applied to the Admin module of version 24.1 identified by internal ticket a use case in which the user was unable to log in via the default SSO login page; also, the build version and revsion information were not displaying.
-7. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which an issue was occurring with the system administrator lite. Support ticket #117297
-8. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to see the metadata through the single revision deployment. Support ticket #116919
-9. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to deploy the Einstein Prediction builder. Support ticket #116909
-10. A code fix was applied to the Admin module of versions 23.1 and 24.1 due to a use-case error with users losing access. Support ticket #111830
-11. A code fix was applied to the Version Control module of versions 23.1 and 24.1 due to a use-case error requiring multiple revisions on an ALM work item. Support ticket #117810
-12. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error with the new profile compare feature. Support ticket #117309
+6. A code fix was applied to the Admin module of version 24.1 identified by internal ticket a use case in which the user was unable to log in via the default SSO login page; also, the build version and revsion information were n
+7. ot displaying.
+8. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which an issue was occurring with the system administrator lite. Support ticket #117297
+9. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to see the metadata through the single revision deployment. Support ticket #116919
+10. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to deploy the Einstein Prediction builder. Support ticket #116909
+11. A code fix was applied to the Admin module of versions 23.1 and 24.1 due to a use-case error with users losing access. Support ticket #111830
+12. A code fix was applied to the Version Control module of versions 23.1 and 24.1 due to a use-case error requiring multiple revisions on an ALM work item. Support ticket #117810
+13. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error with the new profile compare feature. Support ticket #117309&#x20;
+14. A code fix was applied to the nCino module of version 24.1 due to a use-case error in which Data Loader jobs were being automatically deleted. Support ticket #117577&#x20;
+15. A code fix was applied to the CI Jobs and Deployment modules of version 24.1 due to a use-case error causing the rollback functionality to not work properly. Support tickets #117512, #118316&#x20;
+16. A code fix was applied to the CI Jobs module of version 24.1 due to a use-case error in which CI Jobs were experiencing a build issue, which is awaiting QA verification from the customer. Support ticket #118301&#x20;
+17. A code fix was applied to the CI Jobs module of version 24.1 due to a use-case error identified by internal ticket in which a CI Unlocked package installed CI build failing with Hub connection failure, even though Hub connection was successful. &#x20;
+18. An internal ticket identified an EBR change request required to the EBR module of version 24.1 to correct EBR plugins.
 
 #### 17 July 2024
 

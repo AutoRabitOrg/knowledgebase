@@ -13,5 +13,3 @@
 **3. Where is the result data (including exported data) physically stored, and can it be moved to a specific location (e.g., Another country)? Can we ensure this data is not stored in AutoRABIT?**
 
 **Answer:** AutoRABIT does not delete data in the Data Loader functionality until the customer deletes it.  For example, The ap5.autorabit.com instance is hosted in an AWS Singapore data centre, and the data is stored in EBS volumes with AWS KMS keys in the same region.
-
-For any further questions on this topic, please respond to this email. For new issues, kindly open a new ticket.

@@ -40,14 +40,10 @@ You must have a SonarQube™ server currently running in your environment. If no
 
 At [SonarSource.com](https://www.sonarsource.com/), scroll down to this graphic:
 
-<div align="center">
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
-
-</div>
+<figure><img src="../../../.gitbook/assets/image (1485).png" alt=""><figcaption><p>SonarQube 9.9.6 LTA</p></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** This [link](https://www.sonarsource.com/products/sonarqube/) will take you to the **SonarQube™ 9.9 LTS** download. _**SonarQube™ 10.0 is now supported as well.**_
+**Note:** This [link](https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.6.92038.zip?\_gl=1\*fhgchu\*\_gcl\_au\*MjA5Mjk3NjYzNi4xNzIyMjY5Nzg1\*\_ga\*NjMyNjYxNTE5LjE3MjIyNjk3ODQ.\*\_ga\_9JZ0GZ5TC6\*MTcyMjI2OTc4My4xLjEuMTcyMjI3MDE3OS4xNC4wLjA.) will take you to the **SonarQube™ 9.9 LTA** download. _**SonarQube™ 10.1 and 10.2 are now supported as well.**_
 {% endhint %}
 
 #### CodeScan Zip File Download <a href="#codescan-zip-file-download" id="codescan-zip-file-download"></a>

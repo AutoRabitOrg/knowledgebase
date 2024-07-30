@@ -42,6 +42,14 @@ This update improves the tool's efficiency and responsiveness and leverages new 
 
 The following weekly fixes were implemented.
 
+31 July 2024
+
+ARM 24.1.7
+
+1. A code fix was applied to the CI Jobs module of version 24.1 related to a data error that caused a CI Job to be unable to be built manually. Support ticket #117587&#x20;
+2. A code fix was applied to the Admin module of version 24.1 due to a data error that caused Salesforce orgs to not be displayed as mapped to the repository even after enabling them under the profile. Support ticket #117542&#x20;
+3. A code fix was applied to the nCino module of version 24.1 due to a use-case error identified internally in which rollback failed for inserted records.
+
 #### 24 July 2024
 
 **ARM 24.1.6**

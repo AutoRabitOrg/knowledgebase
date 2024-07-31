@@ -348,8 +348,8 @@ Salesforce Connect OData 4.0 license subscription.
     **Example 2:**&#x20;
 
     Say a field holds info on geolocation latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.
-8. **Field type "time" is not supposed in this version.**
-9. **Don’t add more than four external lookup fields to your page layout.** On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5).&#x20;
+8. Field type "time" is not supposed in this version.
+9. No more than four external lookup fields can be added to your page layout. On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5).&#x20;
 
 
 

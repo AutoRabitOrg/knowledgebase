@@ -86,6 +86,12 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+#### 31 July 2024
+
+**ARM 23.1.40**
+
+1. A code fix was applied to the CI Jobs module of versions 23.1 and 24.1 related to a use-case error causing the CI Jobs History report to not generate. Support ticket #116943&#x20;
+
 #### 24 July 2024
 
 **ARM 23.1.39**

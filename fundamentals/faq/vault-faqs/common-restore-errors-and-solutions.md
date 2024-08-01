@@ -15,6 +15,25 @@ To filter data based on specific dates from a backup using a CSV file and Excel,
 3. **Create Final CSV File**: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
 4. **Upload and Filter Backup**: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
 
+
+
+#### **Condition-Based Data Deletion from Existing BackUp**
+
+**Resolution**:&#x20;
+
+1. If the data is backed up in GCP and AWS, it is not possible to delete it with Vault.
+2. If you want to delete from the Org, it is not possible to delete just a field from Vault—you can archive the whole record but not the data for a single field.
+
+
+
+#### **Is it possible to mask the existing field/record that is already backed up in GCP?**
+
+**Resolution**:&#x20;
+
+It is impossible to mask existing data in a backup, as backups are kept immutable in compliance with General Data Protection Regulation (GDPR) requirements.
+
+
+
 #### **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY**
 
 This error is a result of an issue stemming from a trigger in the Org.

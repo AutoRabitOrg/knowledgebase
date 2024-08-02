@@ -15,13 +15,13 @@ It gives you a summary of your:
 * Groups
 * SCM accounts
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
 
 #### Security <a href="#security" id="security"></a>
 
 Manage your own authentication tokens in this section. You can create as many tokens as you want. Once a Token is created, you can use it to perform analysis on a project where you have **Execute Analysis** permission.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="500"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="500"><figcaption></figcaption></figure>
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
@@ -32,7 +32,7 @@ Email notifications are managed here. It is possible to define your overall noti
 * New quality gate status
 * My new issues
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="514"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**
@@ -46,7 +46,7 @@ Email notifications are managed here. It is possible to define your overall noti
 
 To receive CodeScan cloud new features notification, select the **`Activate`** checkbox. By default, email notifications are turned on to receive new features updates.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="509"><figcaption></figcaption></figure>
 
 **Adding Notifications to a Project**
 

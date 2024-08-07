@@ -157,6 +157,6 @@ When you face the error below when registering a Salesforce Org in ARM, please f
 2. Navigate to Setup.
 3. Open "**OAuth and OpenID Connect Settings**" in the quick find box.
 4. Disable the checkbox for "**Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows.**"&#x20;
-5. Now try registering the org In ARM.
+5. Now try registering the org in ARM.
 
 This is a limitation of Salesforce. See the article: URL: [![](https://trailhead.salesforce.com/community/favicon-16x16.png)Feed Item Detail | Salesforce Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/feed/0D54V00007T42fmSAB).

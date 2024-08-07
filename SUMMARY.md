@@ -714,6 +714,7 @@
       * [ARM Deployment Metrics](product-guides/flowcenter/flowcenter-insights/dashboard-types/arm-deployment-metrics.md)
       * [ARM Version Control Activity](product-guides/flowcenter/flowcenter-insights/dashboard-types/arm-version-control-activity.md)
     * [Setting Up Your Default Dashboard](product-guides/flowcenter/flowcenter-insights/setting-up-your-default-dashboard.md)
+    * [DORA Metrics](product-guides/flow-center/flowcenter-insights/dora-metrics.md)
 
 ## Use Cases + Resources
 

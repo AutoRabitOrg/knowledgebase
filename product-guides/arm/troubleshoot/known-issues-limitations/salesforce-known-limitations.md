@@ -146,3 +146,17 @@ AutoRABIT is committed to delivering an exceptional customer experience. We cont
 | ApexTestRunResult       | Stamp                 | OutgoingEmailRelation  | BatchApexErrorEvent  | ApexTestResultLimits     | StampAssignment                 | Audience                 |
 
 However, if the user wants to migrate data on the above objects, they can do so by using the Single Dataloader operation in AutoRABIT.
+
+### **Error While Registering a Salesforce Org**
+
+When you face the error below when registering a Salesforce Org in ARM, please follow the steps below.
+
+<figure><img src="https://desk.zoho.com/support/ImageDisplay?downloadType=uploadedFile&#x26;fileName=1722924639095.png&#x26;blockId=edbsn45bfc5c7c892feab813bb5f243cf86f6b984907ca5b63ed389e0b40f99624eac&#x26;zgId=edbsn317782ec0c00fdc0787a725c6c273926&#x26;mode=view" alt=""><figcaption></figcaption></figure>
+
+1. Log in to your Salesforce Org.
+2. Navigate to Setup.
+3. Open "**OAuth and OpenID Connect Settings**" in the quick find box.
+4. Disable the checkbox for "**Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows.**"&#x20;
+5. Now try registering the org In ARM.
+
+This is a limitation of Salesforce. See the article: URL: [![](https://trailhead.salesforce.com/community/favicon-16x16.png)Feed Item Detail | Salesforce Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/feed/0D54V00007T42fmSAB).

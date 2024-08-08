@@ -87,3 +87,13 @@ You can work around this by **updating the baseline** revision **CI job** and us
 #### 15. Why am I getting the 'License is not valid' error when trying to use CodeScan as the analysis tool while running a CI job in ARM? <a href="#id-15-why-am-i-getting-the-license-is-not-valid-error-when-trying-to-use-codescan-as-the-analysis-tool" id="id-15-why-am-i-getting-the-license-is-not-valid-error-when-trying-to-use-codescan-as-the-analysis-tool"></a>
 
 This could be due to using an older version of CodeScan. Refer to the [CodeScan License Errors](../../product-guides/codescan/frequently-asked-questions/codescan-self-hosted-issues/license-errors.md) article for further information.
+
+#### 16. **Why am I not getting a package for the CI Job?**
+
+Packages will only be displayed in CI jobs if created or imported through our application's SFDX -> Packages module. This ensures that we accurately track packages and their versions.
+
+To create or import the package, follow the articles below:
+
+Create a Package: [Create an Unlocked/Managed Package | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/create-an-unlocked-managed-package)
+
+Import a Package: [Import an Unlocked/Managed Package | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/import-an-unlocked-managed-package)

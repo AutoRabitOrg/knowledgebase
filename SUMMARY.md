@@ -607,6 +607,7 @@
       * [Background Tasks](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/background-tasks.md)
       * [Unit Test Timeout](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/unit-test-timeout.md)
       * [Issue "ip restricted"](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/issue-ip-restricted.md)
+      * [SonarScanner Error - Commit & Merge Request SCA Failing but Allowing Submission](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/sonarscanner-error-commit-and-merge-request-sca-failing-but-allowing-submission.md)
     * [Common Issues and Solutions](product-guides/codescan/frequently-asked-questions/common-issues-and-solutions.md)
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)

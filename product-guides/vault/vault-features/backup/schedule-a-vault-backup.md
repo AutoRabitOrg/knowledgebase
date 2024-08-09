@@ -14,7 +14,7 @@ When registering your Salesforce Org in Vault, you must configure the backup and
 
 When you are done with the metadata/data selection, you will be navigated to the **`Scheduling`** screen, where you are required to fill in the details as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Give a **`name`** for the scheduled backup configuration.
 2.  Select the **`Backup Type`** for both metadata and data members.
@@ -22,12 +22,12 @@ When you are done with the metadata/data selection, you will be navigated to the
     * **`Full-Backup`**: Full backup is a method of backup in which all the files and folders selected are backed up.
     * **`Incremental-Backup`**: An incremental backup operation will copy only the data/metadata that has been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the previous backup.
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the <img src="../../../../.gitbook/assets/image (70) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line"> icon to go to the **`Backup Settings`** page.
 
     * For **`Data`** objects, you can **`enable Bulk API`**. Bulk API is optimized to load or delete extensive records asynchronously due to parallel processing.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * For **`Metadata`** types, specify the batch size for both profile and remaining components to retrieve records. The max batch is **10,000** records. This option helps run large jobs that exceed normal processing limits. Per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of **40 MB**. You can process records in batches using the batch size to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
 

@@ -6,7 +6,7 @@ ERROR: Error during SonarScanner execution
 
 ERROR: Language of file force-app/main/default/permissionsets/BNZ\_Nc\_Lender.permissionset-metaxml' can not be decided as the file matches patterns of both sonar.lang.patterns.mule: \*\*/\*abcd,\*\*/\*xml and sonar.lanq.patterns.sfmeta: \*\*/\*profile-meta.xml.\*\*/\*permissionset-meta.xml.\*\*/\*settings-meta.xml.\*\*/\*abject-metaxml.z\*/\*field-meta.xmll\*s/\*fiow-meta.xml.\*\*/\*sharingrules-meta.xml.\*\*/\*workflow-meta.xml\*\*/\*profilesessionsetting-meta.xml \*\*/\*profilepasswordpolicy-meta.xml.\*\*/\*.profile，\*\*/\*.permissionset，\*\*/\*.settings.\*\*/\*.object.\*\*/\*.flow，\*\*/\*.sharingrules，\*\*/\*warkflow\*\*/\*.profilesessionsetting，\*\*/\*.profilepassvordpolicy
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Environment configuration checklist
 
@@ -14,6 +14,6 @@ Configured the Mule setting (Key: sonar.mule.file.suffixes) with values ".abcd" 
 
 Go to Project Settings > General Settings, and search for "mule" in the search box. Remove ".xml".
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 By adjusting these settings in CodeScan, the SCA will not fail

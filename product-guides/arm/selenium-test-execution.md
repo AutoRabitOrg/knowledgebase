@@ -4,7 +4,7 @@ To execute multiple data sets of a single test case to different Sandboxes, foll
 
 1. On the TAF page, click on the **Test Execution** tab.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. If the label is already added to a job, select the job from the **Test Job** drop-down, or else, click on **New Test Job** to select your newly created Label.
 3. On the next screen, enter the job name and description if any.&#x20;

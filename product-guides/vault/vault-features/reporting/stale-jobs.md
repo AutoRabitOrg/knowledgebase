@@ -24,8 +24,8 @@ Follow these step-by-step instructions to access the “Stale Jobs” module in 
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-2. On selecting the ORG, the user will be displayed with the list of jobs from the respective modules. Please find the following screenshots for reference.
-3. The user can traverse between different tabs to view the jobs from different modules.
+2. On selecting the ORG, the user will see displayed the list of jobs from the respective modules.&#x20;
+3. The user can toggle between different tabs to view jobs from different modules.
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Backup</p></figcaption></figure>
 
@@ -35,12 +35,11 @@ Follow these step-by-step instructions to access the “Stale Jobs” module in 
 
 <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Archive</p></figcaption></figure>
 
-4. The admin can select the jobs and terminate the required long running stale jobs from the respective modules.
-5. Once the job(s) are terminated, a notification will be sent to the admin and the respective user who has created the jobs.
+4. The admin can select the jobs and terminate the required long-running stale jobs from the respective modules.
+5. Once the jobs are terminated, a notification will be sent to the admin and the respective user who created the jobs.
    * **Single Job Termination:**
-     * The user will receive the standard notification related to that module with the addition of a new field to the existing notification.
-       * A new field, “Terminate Reason,” was added to the email templates for Backup, Restore, Replicate, and Archive.
-   * **Multiple Job Terminations:**
+     * The user will receive the standard notification related to that module with the addition of a new field, “Terminate Reason,” which was added to the email templates for Backup, Restore, Replicate, and Archive.
+   * **Multiple Jobs for Termination:**
      * As the user terminates a list of jobs, the user will receive a consolidated email listing the jobs terminated.
 
 <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

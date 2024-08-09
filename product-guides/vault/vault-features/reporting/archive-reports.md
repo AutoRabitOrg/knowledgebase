@@ -4,7 +4,7 @@
 
 ### **Introduction**
 
-This will help the user to draw data driven metrics from Vault, on the activities that are performed on the archived data in Vault.
+This will help the user to draw data-driven metrics from Vault on the activities that are performed on the archived data in Vault.
 
 ### **Report Creation**
 

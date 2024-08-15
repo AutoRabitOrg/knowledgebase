@@ -230,11 +230,11 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 23. To add the related lists to the page layout of the parent object, the user first has to set the field-level security by going to the field under the object. The permission should be set to 'visible.'
 24. The user can only view data to which they have access.
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 25. After setting the permissions to visible, the user should continue to edit the parent object(s) to add related lists to the page layouts.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 26. Click edit on the “**Page Layouts.**”\
 
 

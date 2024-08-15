@@ -22,14 +22,14 @@ Follow these step-by-step instructions to access the “Stale Jobs” module in 
 
 1\.      Select an Org from the available list of Orgs.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 2. On selecting the ORG, the user will see displayed the list of jobs from the respective modules.&#x20;
 3. The user can toggle between different tabs to view jobs from different modules.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Backup</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Backup</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Restore</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Restore</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Replicate</p></figcaption></figure>
 

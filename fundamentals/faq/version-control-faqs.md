@@ -257,3 +257,13 @@ Perform the following actions outside of ARM to determine whether the issue stem
    _git status_
 
 Compare the results with the changes in the ARM file. If the results match the changes in the ARM file, we can conclude that this is Git behavior. If the results do not match, contact the AutoRABIT support team at support@autorabit.com so we can assist you further.
+
+## Why am I getting an **Invalid Schema error during the Merge Prevalidation Process?**
+
+This issue will occur if there are any special characters like the one below and if the string (length=7) is considered a GIT conflict (it is a GIT behavior), it will not perform the Merge.
+
+Special Characters: '>' ; '<' ; '|' ; '=' &#x20;
+
+We recommend maintaining the above four special characters to less than 7 to avoid such problems.
+
+For example, in the Class file, if you observe this **">>>>>>>"** character string (length=7), then update it to less than 7 in the branch itself and rerun the Merge operation.

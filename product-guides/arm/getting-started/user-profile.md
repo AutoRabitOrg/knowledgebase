@@ -33,18 +33,6 @@ If users maintain an individual version control branch for every release, they m
 
 ### My Salesforce Orgs <a href="#my-salesforce-orgs" id="my-salesforce-orgs"></a>
 
-View the **`Salesforce Orgs`** assigned to you, or you have permission to view.
-
-<figure><img src="../../../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
-
-### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
-
-View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. Map the required repositories by choosing the correct **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.
-
-<figure><img src="../../../.gitbook/assets/image (22) (2).png" alt=""><figcaption></figcaption></figure>
-
-### My ALM Mappings <a href="#my-alm-mappings" id="my-alm-mappings"></a>
-
 {% hint style="info" %}
 NOTE:
 
@@ -56,6 +44,18 @@ NOTE:
     <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 2. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
 {% endhint %}
+
+View the **`Salesforce Orgs`** assigned to you, or you have permission to view.
+
+<figure><img src="../../../.gitbook/assets/image (21) (2).png" alt=""><figcaption></figcaption></figure>
+
+### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
+
+View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. Map the required repositories by choosing the correct **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.
+
+<figure><img src="../../../.gitbook/assets/image (22) (2).png" alt=""><figcaption></figcaption></figure>
+
+### My ALM Mappings <a href="#my-alm-mappings" id="my-alm-mappings"></a>
 
 Under **`My ALM Mappings`** section, you can map your ALM using your credentials or **`Re-Authenticate`** Jira ALMs configured with OAuth access.
 

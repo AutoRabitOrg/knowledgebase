@@ -2,7 +2,7 @@
 
 ## Release 24.2 <a href="#improved-reporting-features-and-enhancements" id="improved-reporting-features-and-enhancements"></a>
 
-**13 August 2024**
+**Release Date: 25 August 2024**
 
 **Improved Reporting Features and Enhancements**
 

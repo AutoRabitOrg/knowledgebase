@@ -86,6 +86,39 @@ To view the detailed object records that were successfully deployed or failed to
 
 <figure><img src="../../../../../.gitbook/assets/image (1382).png" alt=""><figcaption></figcaption></figure>
 
+***
+
+### Download Backup Snapshot
+
+#### Introduction
+
+Now it's easy to download the backup snapshot of the CI Jobs as required. You can go to the respective CI job and download the backups of the templates all at once or individually.
+
+#### Step-by-Step Guide
+
+1. Go to any CI Job.
+2. Click on any template available under the build.
+
+<figure><img src="../../../../../.gitbook/assets/image (1486).png" alt=""><figcaption></figcaption></figure>
+
+3. On the template page, you will see the download option available for each object.
+
+<figure><img src="../../../../../.gitbook/assets/image (1487).png" alt=""><figcaption></figcaption></figure>
+
+4. Open the CI Job, then hover over the three dots at the far right of the banner as shown below.
+
+<figure><img src="../../../../../.gitbook/assets/image (1488).png" alt=""><figcaption></figcaption></figure>
+
+5. Click on the “Build Changes” option.
+6. You will be redirected to a “Build Changes” page.
+
+<figure><img src="../../../../../.gitbook/assets/image (1489).png" alt=""><figcaption></figcaption></figure>
+
+7. On the “Build Changes” page, click on the “Download” button to download all the templates from that build.
+8. You can see the files downloaded.
+
+
+
 ### Commit and Deployment Workspace <a href="#commit-and-deployment-workspace" id="commit-and-deployment-workspace"></a>
 
 **Commit Workspace:** When various commits are deployed to a branch, the queue commits will be mentioned here. The main concept of introducing the commit workspace is to allow parallel commits to the same version control repository/branch.

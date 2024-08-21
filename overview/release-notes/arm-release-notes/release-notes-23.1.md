@@ -86,6 +86,10 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+21 August 2024
+
+
+
 #### 31 July 2024
 
 **ARM 23.1.40**

@@ -115,6 +115,12 @@ Observe the ‘**Rollback**’ option, both on the '**Deployment History**' page
 
 <figure><img src="../../../../.gitbook/assets/image (73) (2).png" alt=""><figcaption></figcaption></figure>
 
+### Rollback – Post Deployment Activities
+
+Rollback functionality is now supported for the Orgs selected for post-deployment activities. Please choose the selected Orgs in the highlighted section of the CI job creation flow.
+
+<figure><img src="../../../../.gitbook/assets/image (1490).png" alt=""><figcaption></figcaption></figure>
+
 #### Additional Resources
 
 **What happens during the rollback of the deployments on the destination Org?**

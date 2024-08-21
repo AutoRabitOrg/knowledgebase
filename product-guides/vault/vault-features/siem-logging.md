@@ -37,7 +37,7 @@ Use the API below to view or download event logs as a single file. Ensure you mi
 
 > `GET: {{url}}/ARVault/eventlogs?from=2023-10-09&to=2023-10-10`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * The `from` and `to` parameters are optional.
 * If the `to` parameter is not provided, it downloads the logs up to the current date. If the `from` parameter is not provided, it will download the logs from today up to the current time.
@@ -55,7 +55,7 @@ Two APIs are involved: one to prepare the zip file and the other to download the
 
 1. `GET: {{url}}/ARVault/eventlogs/prepare-zip?from=2023-10-09&to=2023-10-10`
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **Output:** A temporary token for the file, which is valid for a minute.
 
@@ -78,7 +78,7 @@ Two APIs are involved: one to prepare the consolidated file and the other to dow
 
 > 1. `GET: {{url}}/ARVault/eventlogs/prepare-log?from=2023-10-09&to=2023-10-10`
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Output:** A temporary token for the file, which is valid for a minute.
 

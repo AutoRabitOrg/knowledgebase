@@ -573,7 +573,7 @@
     * [Exporting Issues using CodeScan-Export Tool](product-guides/codescan/issues/exporting-issues-using-codescan-export-tool.md)
   * [Report and Analysis](product-guides/codescan/report-and-analysis/README.md)
     * [Scheduled Reports](product-guides/codescan/report-and-analysis/scheduled-reports.md)
-    * [Analysis Scope on Codescan Cloud](product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud.md)
+    * [Analysis Scope on CodeScan Cloud](product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud.md)
     * [Ignoring violations](product-guides/codescan/report-and-analysis/ignoring-violations.md)
   * [Frequently Asked Questions](product-guides/codescan/frequently-asked-questions/README.md)
     * [General](product-guides/codescan/frequently-asked-questions/general/README.md)

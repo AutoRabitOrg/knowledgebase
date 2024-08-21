@@ -14,6 +14,6 @@ Configured the Mule setting (Key: sonar.mule.file.suffixes) with values ".abcd" 
 
 Go to Project Settings > General Settings, and search for "mule" in the search box. Remove ".xml".
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 By adjusting these settings in CodeScan, the SCA will not fail

@@ -1,12 +1,12 @@
-# Analysis Scope on Codescan Cloud
+# Analysis Scope on CodeScan Cloud
 
-Analysis scope is something that helps you narrow down results to only the relevant issues. This in turn reduces the noise and the issues from the rules which may not be relevant for certain files.
+An analysis scope helps you narrow your results to only the relevant issues. This reduces the noise and issues from rules that may not be relevant to certain files.
 
-The key features of Analysis Scope include:
+The key features of an Analysis Scope are:
 
-* helps exclude certain files from detecting specific issues.
-* helps you completely ignore some files.
-* excludes files from duplication detection and coverage calculations.
+* Helps you exclude certain files from detecting specific issues.
+* Helps you completely ignore some files.
+* Helps you exclude files from duplication detection and coverage calculations.
 
 Follow the steps below to use the **Analysis Scope** feature on [CodeScan cloud](https://www.codescan.io/products/cloud/).
 
@@ -46,3 +46,15 @@ Here are a couple of implementation examples:
 <figure><img src="../../../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
+
+You can accomplish this by utilizing the "**Ignore Issues on Multiple Criteria**" feature in Project Settings under General Settings > Analysis Scope.
+
+To do this, simply provide the rule key and file path name.
+
+**Example:**
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

@@ -43,9 +43,9 @@ For each object displayed, the user can view the list of fields related to the c
 
 **A. Filters**
 
-You can extract records within a specified limit using specifying criteria in the **`Filters`** section. You can even filter the details via **`Date`** or **`Date Literals`**. A date literal is a fixed expression representing a relative range of time, such as last month, this week, or next year. (Refer [here](https://developer.salesforce.com/docs/atlas.en-us.soql\_sosl.meta/soql\_sosl/sforce\_api\_calls\_soql\_select\_dateformats.htm) for the list of data literals supported)
+You can extract records within a specified limit using specifying criteria in the **`Filters`** section. You can even filter the details via **`Date`** or **`Date Literals`**. A date literal is a fixed expression representing a relative range of time, such as last month, this week, or next year. (Refer [here](https://developer.salesforce.com/docs/atlas.en-us.soql\_sosl.meta/soql\_sosl/sforce\_api\_calls\_soql\_select\_dateformats.htm) for the list of data literals supported).
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
 
 Upload the **`CSV`** file (if required) if there is a large amount of data and requires the filter for those records. The max file size supported is **10 MB**. Once the CSV is uploaded, click **`Auto-Populate`**. The filters are auto-populated for the selected field and operator based on the values of the chosen field in the uploaded CSV file.
 
@@ -57,15 +57,11 @@ Format for CSV file to filter records:
 
 For more information, see [Preparing the CSV file for Data Loader](preparing-the-csv-file-for-arm-dataloader.md).
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 The **`Record Count Limit`** box limits the number of records extracted from the source, giving a value in this field.
 
 Click **`Validate`** to fetch the number of records transferred from the source sandbox to the destination sandbox. Finally, click **`Apply`**.
-
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 To skip migrating an object, click on the **`Skip Records`** icon and then click on **`Set Records to 0`**.
 

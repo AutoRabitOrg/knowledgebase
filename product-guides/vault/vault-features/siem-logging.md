@@ -55,7 +55,7 @@ Two APIs are involved: one to prepare the zip file and the other to download the
 
 1. `GET: {{url}}/ARVault/eventlogs/prepare-zip?from=2023-10-09&to=2023-10-10`
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Output:** A temporary token for the file, which is valid for a minute.
 

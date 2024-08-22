@@ -21,7 +21,7 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 2. Go to the nCino module.
 3. Rollbacks can either be performed through CI Jobs or Feature Deployment.
 
-#### CI Job Rollback
+### CI Job Rollback
 
 1. Once in the nCino module, click on the '**Create CI Job**' button.
 

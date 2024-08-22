@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 
     * **Label Name:** Enter the Label name in this field. Click the **Activate Label** checkbox to activate the label name.
     * &#x20;**Label Description:** Add the description as you required.
-    * To add more values in **Assign Users and Profiles** field, Click on![](<../../../../../../.gitbook/assets/image (7) (1).png>)icon.
+    * To add more values in **Assign Users and Profiles** field, Click on![](<../../../../../../.gitbook/assets/image (7) (1) (1).png>)icon.
     * Enter the search profile and add member name in the respective fields and select the checkbox **Add/Remove** to activate it.
     * You can even add multiple profile fields for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
     * Click **OK**. Once you are finished, click **Save** to save this page.

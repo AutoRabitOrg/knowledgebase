@@ -99,4 +99,4 @@ While triggering a build for Provar configured CI job, AutoRABIT application thr
 
 Typically this happens if you have built a CI Job with the provar configured in our application. However, for whatever reason, your org admin has disabled the Provar plugin for your account. Therefore, if you trigger a build for Provar configured CI job, our application will throw the previously described error, as your account is no longer configured with the Provar plug-in. Another scenario in which you would like to fetch the provar configured CI job with other test cases will promptly notify you that your CI job is already configured with the provar.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

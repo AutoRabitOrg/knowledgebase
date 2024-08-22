@@ -41,15 +41,15 @@ To set up the ADFS connection with AutoRABIT using a Relying Party Trust (RPT), 
 
 13. On the next screen, select: **Permit all users to access this relying party**.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 14. On the next screens, the wizard will display an overview of your settings. Click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="479"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="479"><figcaption></figcaption></figure>
 
 15. On the final screen use the **Close** button to exit and open the Claim Rules editor.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
 
 #### Step 2 – Creating Claim Rules <a href="#step-2-creating-claim-rules" id="step-2-creating-claim-rules"></a>
 
@@ -58,7 +58,7 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
 1. By default, the Claim Rules editor opens once you created the trust.
 2. To create a new rule, click on **Add Rule**.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="386"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="386"><figcaption></figcaption></figure>
 
 3. Select: **Send LDAP Attributes as Claims rule**.
 

@@ -38,4 +38,4 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 
 For data/reports displayed under the **WEEKLY REPORTS** screen, you can export the report to a Zip format.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

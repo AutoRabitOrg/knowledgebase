@@ -33,13 +33,13 @@ Data Loader plays an essential role in data migration from source sandbox to des
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filters and Mappings <a href="#filters-and-mappings" id="filters-and-mappings"></a>
 
 For each object displayed, the user can view the list of fields related to the corresponding object.
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 **A. Filters**
 
@@ -57,25 +57,63 @@ Format for CSV file to filter records:
 
 For more information, see [Preparing the CSV file for Data Loader](preparing-the-csv-file-for-arm-dataloader.md).
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 The **`Record Count Limit`** box limits the number of records extracted from the source, giving a value in this field.
 
 Click **`Validate`** to fetch the number of records transferred from the source sandbox to the destination sandbox. Finally, click **`Apply`**.
 
-To skip migrating an object, click on the **`Skip Records`** icon and then click on **`Set Records to 0`**.
+### Skip Records
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+The ‘Skip Records’ can be enabled by entering a ‘0’ on the record count section under the filters or by selecting the ‘checkbox’ under the ‘Skip Records’ section.
 
-Click **`Yes`** on the confirmation screen. If there is an existing record limit value, it will be overridden, and the new value will be set to **`0`**.
+To enable ‘Skip Records’ through the ‘Filters’, click on the filters. ‘Skip Records’ will omit migrating an object to the destination.
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+&#x20;![](../../../../.gitbook/assets/image.png)
+
+Enter ‘0’ on the ‘Record Count’ field of the ‘Apply Filters’ page pop-up and click on ‘Validate’ to validate the query.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+On completing the validation, click on the ‘Apply’ button to apply the inputs.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Select the checkbox to “Skip Records” from migrating to the destination.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;Upon selecting the checkbox, a pop-up will ask for confirmation.
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+On confirming, the checkbox will be selected to skip migrating those records to the destination with the following notification on filters applied.
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Click on the filters section of the object on which the “Skip Records” is applied to observe the query builder and the “Record Count.”
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+As the ‘Skip Records’ are applied, the record count would be set to ‘0’, the records from the selected object will not be migrated to the destination.
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+On unchecking the ‘checkbox’, the skip records will be disabled on the object. The following message will ask for confirmation.
+
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Upon clicking 'confirm,' the records from that particular object will be migrated to the destination. The following notification will be displayed when unchecking the checkbox.
+
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+As the ‘Skip Records’ is disabled, the record count which is set to ‘0’ in the filters and the query will be reset to blank. So, the records will be migrated to the destination.
 
 **B. Mappings**
 
 Map the object fields between the source and destination sandboxes.
 
-Using the **`Auto-map`** feature, you can map the fields automatically based on fetched object fields with destination fields. To set up manual mappings, the auto mapping needs to be disabled. Click on **`Clear Mappings`** to remove the automapping and set up the desired manual mappings.
+Using the **`Automap`** feature, you can map the fields automatically based on fetched object fields with destination fields. To set up manual mappings, automapping needs to be disabled. Click on **`Clear Mappings`** to remove the automapping and set up the desired manual mappings.
 
 <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 

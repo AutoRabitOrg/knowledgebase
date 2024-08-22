@@ -59,13 +59,13 @@ This new feature allows you to sort fields for nCino objects while committing. B
 
 For the objects with sorting fields opted, the sorting icon gets changed.
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Filters <a href="#applied-filters" id="applied-filters"></a>
 
 Such filters will be displayed here if any filter is applied to the objects.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: At the time of template creation, the filter is applied to your object, so it can't be edited.&#x20;
@@ -79,7 +79,7 @@ Based on your destination selection, you will have different deployment buttons 
 * **Commit:** Committing to the version control branch only
 * **Commit & Deploy:** Committing and deployment together.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.&#x20;
 
@@ -91,7 +91,7 @@ For deploying to the destination org, you will find the list of deployment crite
 4. **Insert/update with Null Values:** This will either insert or update record field values with null in the destination org (if the value is null in the source org).
 5. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt="" width="510"><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process.
 

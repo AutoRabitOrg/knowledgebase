@@ -63,18 +63,18 @@ In the **`Submit for Validation`** screen, select the **`Validate Deployment`** 
 
 In the **`New Merge`** screen and under the **`Prevalidate Merge`** section, select the **`Validate Deployment`** checkbox and choose an org to validate your merge. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="371"><figcaption></figcaption></figure>
 
 #### During Deployment <a href="#during-deployment" id="during-deployment"></a>
 
 In the **`Deployment Settings`** screen, you can choose the apex test level to validate the deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### During Continuous Integration (CI) Jobs <a href="#during-continuous-integration-ci-jobs" id="during-continuous-integration-ci-jobs"></a>
 
 You can set the apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For more information on Apex unit tests, Refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex\_testing/units/apex\_testing\_intro) module on Apex test level testing.

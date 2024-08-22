@@ -27,7 +27,7 @@ If you’re a repository owner, you can update your repositories using protected
 4. If adding a new rule, enter the desired branch name in the **Branch name pattern** field.
 5. Scroll down to the second box - **Require status checks to pass before merging**.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. From the build status checks in the last week of your repository, select one of them.
 7. Click **Create**.
@@ -40,7 +40,7 @@ The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on
 
 Enable the checkbox: **Status Check API** for your GitHub Repo under the **Build** section while creating a new CI job.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Whenever the job runs, AutoRABIT will automatically post the build status back to GitHub, referencing the relevant git commit and the outcome of the job (success or failure).
 

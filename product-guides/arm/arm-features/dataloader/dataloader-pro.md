@@ -2,13 +2,13 @@
 
 **Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Data Loader Pro** feature in ARM.&#x20;
 
-### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
+### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
 While performing **Data Loader Pro** on the objects for the first time, ensure you perform [Data Loader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Data Loader Pro job. This is a one-time operation.
 
 Data Loader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
 
-### How to perform a Data Loader Pro operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
+### How to Perform a Data Loader Pro Operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Data Loader`** module and select **`Data Loader Pro`**.
@@ -29,25 +29,23 @@ Data Loader plays an essential role in data migration from source sandbox to des
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-8. Change the grid view to a graph view by clicking the **`Switch to Graph View`** button. Click on the![](<../../../../.gitbook/assets/image (5) (1) (1).png>)icon to view the graphical representation on full screen.
+8. Change the grid view to a graph view by clicking the **`Switch to Graph View`** button. Click on the![](<../../../../.gitbook/assets/image (5) (1) (1).png>) icon to view the graphical representation on full screen.
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Filters and Mappings <a href="#filters-and-mappings" id="filters-and-mappings"></a>
+## Filters and Mappings <a href="#filters-and-mappings" id="filters-and-mappings"></a>
 
-For each object displayed, the user can view the list of fields related to the corresponding object.
+For each object displayed, users can view the list of fields related to the corresponding object.
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-**A. Filters**
+### **Filters**
 
 You can extract records within a specified limit using specifying criteria in the **`Filters`** section. You can even filter the details via **`Date`** or **`Date Literals`**. A date literal is a fixed expression representing a relative range of time, such as last month, this week, or next year. (Refer [here](https://developer.salesforce.com/docs/atlas.en-us.soql\_sosl.meta/soql\_sosl/sforce\_api\_calls\_soql\_select\_dateformats.htm) for the list of data literals supported).
 
-
-
-Upload the **`CSV`** file (if required) if there is a large amount of data and requires the filter for those records. The max file size supported is **10 MB**. Once the CSV is uploaded, click **`Auto-Populate`**. The filters are auto-populated for the selected field and operator based on the values of the chosen field in the uploaded CSV file.
+Upload the **`CSV`** file (if required) if there is a large amount of data and it requires the filter for those records. The max file size supported is **10 MB**. Once the CSV is uploaded, click **`Auto-Populate`**. The filters are autopopulated for the selected field and operator based on the values of the chosen field in the uploaded CSV file.
 
 Format for CSV file to filter records:
 
@@ -65,21 +63,21 @@ Click **`Validate`** to fetch the number of records transferred from the source 
 
 ### Skip Records
 
-The ‘Skip Records’ can be enabled by entering a ‘0’ on the record count section under the filters or by selecting the ‘checkbox’ under the ‘Skip Records’ section.
+‘Skip Records’ can be enabled by entering a ‘0’ on the record count section under the filters or by selecting the ‘checkbox’ under the ‘Skip Records’ section.
 
-To enable ‘Skip Records’ through the ‘Filters’, click on the filters. ‘Skip Records’ will omit migrating an object to the destination.
+To ‘Skip Records' using the filters, click on 'Filters.' ‘Skip Records’ will omit migrating an object to the destination.
 
-&#x20;![](../../../../.gitbook/assets/image.png)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Enter ‘0’ on the ‘Record Count’ field of the ‘Apply Filters’ page pop-up and click on ‘Validate’ to validate the query.
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-On completing the validation, click on the ‘Apply’ button to apply the inputs.
+Upon completing the validation, click on ‘Apply’ to apply the inputs.
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Select the checkbox to “Skip Records” from migrating to the destination.
+Select the checkbox to 'Skip Records' from migrating to the destination.
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -87,19 +85,19 @@ Select the checkbox to “Skip Records” from migrating to the destination.
 
 <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-On confirming, the checkbox will be selected to skip migrating those records to the destination with the following notification on filters applied.
+Upon confirming, the checkbox will be selected to skip migrating those records to the destination with the following notification on filters applied.
 
 <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-Click on the filters section of the object on which the “Skip Records” is applied to observe the query builder and the “Record Count.”
+Click on the filters section of the object on which the 'Skip Records' is applied to observe the query builder and the Record Count.
 
 <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-As the ‘Skip Records’ are applied, the record count would be set to ‘0’, the records from the selected object will not be migrated to the destination.
+When ‘Skip Records’ is selected, the record count is set to ‘0’ and the records from the selected object will not be migrated to the destination.
 
 <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-On unchecking the ‘checkbox’, the skip records will be disabled on the object. The following message will ask for confirmation.
+When unchecking the ‘checkbox’, skip records will be disabled on the object. The following message will ask for confirmation.
 
 <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -107,9 +105,9 @@ Upon clicking 'confirm,' the records from that particular object will be migrate
 
 <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-As the ‘Skip Records’ is disabled, the record count which is set to ‘0’ in the filters and the query will be reset to blank. So, the records will be migrated to the destination.
+When ‘Skip Records’ is disabled, the record count that was set to ‘0’ in the filters and the query will be reset to blank and the records will be migrated to the destination.
 
-**B. Mappings**
+### **Mappings**
 
 Map the object fields between the source and destination sandboxes.
 
@@ -117,7 +115,7 @@ Using the **`Automap`** feature, you can map the fields automatically based on f
 
 <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-**External ID Field Mapping**
+### **External ID Field Mapping**
 
 In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the Data Loader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
 
@@ -131,7 +129,7 @@ In the **`Destination`** field, select the required destination org whose values
 **Important Note:** ARM does not support the automatic creation of an ExternalUniqueID. The user has to create this manually on both the Source Org and Destination Org.
 {% endhint %}
 
-#### Process Details <a href="#process-details" id="process-details"></a>
+### Process Details <a href="#process-details" id="process-details"></a>
 
 Here in this section, fill in the process details listed below:&#x20;
 
@@ -164,7 +162,7 @@ Here in this section, fill in the process details listed below:&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-#### Masking Wizard <a href="#masking-wizard" id="masking-wizard"></a>
+### Masking Wizard <a href="#masking-wizard" id="masking-wizard"></a>
 
 Data masking refers to changing certain data elements within a data store so the structure remains similar while the information is altered to protect sensitive information. It ensures sensitive customer information is unavailable beyond the permitted production environment.
 
@@ -216,7 +214,7 @@ Finally, click on **`Save`** to complete the initial process. You will be redire
 4. Any changes made during the run of the job will only affect that individual job run.
 5. To permanently change the configured settings during the job creation, the user has to edit the created job and change the settings and save the job.
 
-### &#x20;Running the Data Loader Pro Job
+### Running the Data Loader Pro Job
 
 Select your job from the **`Data Loader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
 

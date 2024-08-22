@@ -14,7 +14,7 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 ### Step-by-Step Guide
 
-1. Login to your ARM account.
+1. Log in to your ARM account.
 
 <figure><img src="../../../../.gitbook/assets/image (54) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -27,8 +27,8 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 <figure><img src="../../../../.gitbook/assets/image (55) (3).png" alt=""><figcaption></figcaption></figure>
 
-2. Continue to provide the required inputs to create the configuration of the CI Job creation.
-3. In the **Preview and Save** section, the user can toggle the button to enable the rollback option.
+2. Enter the required information to configure the CI Job creation.
+3. In the **Preview and Save** section, users can toggle the button to enable the rollback option.
 
 <figure><img src="../../../../.gitbook/assets/image (56) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -38,7 +38,7 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 5. On enabling the '**Enable rollback**' option, users can continue to '**Save**' the job.
 6. While enabling the '**Enable rollback**' option, users can click on the question mark and read the message: “Please note that the data of this rollback will be retained for a period of 30 days and will be deleted as the retention period elapses.”
-7. On saving the job, users are directed to the '**Job List**' page as shown.
+7. Upon saving the job, users are directed to the '**Job List**' page as shown.
 
 <figure><img src="../../../../.gitbook/assets/image (58) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -74,7 +74,7 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 16. A new build will be added to the list of the build in the following format: '**Rollback**' **- < Build No >**
 17. Users can roll back the builds as often as needed.
 
-#### Feature Deployment
+### Feature Deployment
 
 1. Initiate a '**Feature Deployment**' by clicking on the '**Feature Deployment**' button.
 2. Continue to input the ‘**Source**’ and ‘**Destination’** configuration details.
@@ -121,7 +121,7 @@ Rollback functionality is now supported for the Orgs selected for post-deploymen
 
 <figure><img src="../../../../.gitbook/assets/image (1490).png" alt=""><figcaption></figcaption></figure>
 
-#### Additional Resources
+### Additional Resources
 
 **What happens during the rollback of the deployments on the destination Org?**
 

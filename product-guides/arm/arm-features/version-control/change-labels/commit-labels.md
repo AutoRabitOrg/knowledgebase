@@ -11,7 +11,7 @@ A Commit Label helps to label a commit. For example, changes related to a user s
 
 <figure><img src="../../../../../.gitbook/assets/image (90) (1) (1).png" alt="" width="225"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Next, click on **Create Commit Label** button.
 

@@ -721,6 +721,7 @@
     * [Setting Up Your Default Dashboard](product-guides/flowcenter/flowcenter-insights/setting-up-your-default-dashboard.md)
     * [DORA Metrics](product-guides/flow-center/flowcenter-insights/dora-metrics.md)
     * [Export your Insights data](product-guides/flow-center/flowcenter-insights/export-your-insights-data.md)
+    * [Invite your CSM to FlowCenter Insights](product-guides/flow-center/flowcenter-insights/invite-your-csm-to-flowcenter-insights.md)
 
 ## Use Cases + Resources
 

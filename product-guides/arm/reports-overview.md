@@ -50,3 +50,5 @@ For data/reports displayed under the **WEEKLY REPORTS** screen, you can export t
 | <img src="../../.gitbook/assets/49d5f87d-7bfe-4e1d-8a00-5f5cd46dab09.png" alt="" data-size="original">     | <p></p><ol start="4"><li>CI Build jobs</li></ol> |
 | <img src="../../.gitbook/assets/cb42631c-0af8-430b-9d77-a9e915c994ee (1).png" alt="" data-size="original"> | <ol start="5"><li>Dataloader</li></ol>           |
 | <img src="../../.gitbook/assets/0ab365c0-50b3-45b3-8788-7c3005f2c0a0.png" alt="" data-size="original">     | <ol start="6"><li>TAF</li></ol>                  |
+
+By clicking on the "Latest 6 Months Report" option.

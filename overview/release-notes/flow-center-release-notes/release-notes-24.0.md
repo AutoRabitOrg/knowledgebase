@@ -13,7 +13,7 @@ The latest Flow Center release introduces several new features designed to enhan
 
 **Export your Insights data**&#x20;
 
-Users can export all the data available for a given widget. The data exported is based on the timeframe of the dashboard, for example, if your dashboard is showing 1 year of data, you can export 1 year of data for a specific widget.&#x20;
+Users can export all the data available for a given widget. The data exported is based on the timeframe of the dashboard. For example, if your dashboard is showing 1 year of data, you can export 1 year of data for a specific widget.&#x20;
 
 <figure><img src="../../../.gitbook/assets/unknown (6).png" alt="" width="563"><figcaption></figcaption></figure>
 

@@ -48,8 +48,9 @@
     * [Release Notes 22.0](overview/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Release Notes 21.0](overview/release-notes/vault-release-notes/vault-release-notes-21.0.md)
   * [Flow Center Release Notes](overview/release-notes/flow-center-release-notes/README.md)
+    * [Release Notes 24.0.3](overview/release-notes/flow-center-release-notes/release-notes-24.0.3.md)
     * [Release Notes 24.0](overview/release-notes/flow-center-release-notes/release-notes-24.0.md)
-  * [Flow Center Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)
+    * [Flow Center Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)
 
 ## Fundamentals
 

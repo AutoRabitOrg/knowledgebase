@@ -6,17 +6,84 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
+## Release Notes 24.0.9
+
+**7 August 2024**
+
+The latest CodeScan release is comprised of the following components:
+
+* [Enhancements](release-notes-24.0.md#enhancements)&#x20;
+* [New Rule](release-notes-24.0.md#new-rule)
+* [Fix](release-notes-24.0.md#fix)
+* [Architecture Improvement](release-notes-24.0.md#architecture-improvement)
+
+### Enhancements&#x20;
+
+1. **Feature Enhances the “sf.testfile” parameter in project settings UI** \
+   Summary:  Previously, customers using our Git integration could store their test coverage in their repository branches by using a parameter called sf.testfile, which allows you to add coverage to your code with SFDX JSON outputs.\
+   \
+   With this enhancement, CodeScan allows the parameter to be configurable at a project level.  Adding this parameter will allow teams to view the coverage on the CodeScan dashboard. The addition of this parameter notably provides more value for SFDX workflows.\
+   \
+   Further details are available at the following link: [Importing Code Coverage from SFDX Projects](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/codescan-sfdx-plugin/importing-code-coverage-from-sfdx-projects).
+2. **UI Enhancements to the IDE Usage Page**\
+   Summary: The “IDE Usage” page has been updated with the following UI components:\
+   ![](<../../../../.gitbook/assets/image (2).png>)\
+   \
+   For the IDE Type, logos are now shown instead of text\
+   Added a date filter, including:\
+   Last 30 days\
+   Last 60 days\
+   Last 90 days\
+   Last 180 days\
+   \
+   Updated the Column title of “Use at” to “Time Stamp.“\
+   Added a filter toggle for Individual / All as shown.\
+   Upon toggling to “Individual,” the last connection for each unique user list is shown.\
+   Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown. \
+   ![](<../../../../.gitbook/assets/image (1).png>)\
+
+3. **New “Exception” status for Security Hotspots**\
+   Summary: For this release, the “Exception” status essentially mirrors the functionality of the “Acknowledged” status; but this is just temporary. We will be adding the ability to assign a “date time stamp” to this feature, which will then allow the issue to be flagged after the expiration of the date time stamp.
+
+### New Rule
+
+**New Rule for “Cognitive Complexity” in CodeScan**
+
+This is a new rule for assessing Cognitive Complexity. Note that we had a previous Cognitive Complexity rule. What’s different is that this rule aims to enhance the understanding of code readability and maintainability by identifying areas where the cognitive load on developers may be high.
+
+To introduce this new rule for assessing Cognitive Complexity, we pinpointed specific code structures and circumstances that contribute to increased cognitive load. This enables developers to refactor complex sections of code, leading to improved code quality, readability, and maintainability.
+
+Basic criteria and methodology: A Cognitive Complexity score is assessed according to three basic rules:
+
+* Ignore structures that allow multiple statements to be readably shorthanded into one.\
+  Increment (add one) for each break in the linear flow of the code.
+* Increment when flow-breaking structures are nested.&#x20;
+* Additionally, a complexity score is made up of four different types of increments:&#x20;
+  * Nesting – Assessed for nesting control flow structures inside each other
+  * Structural – Assessed on control flow structures that are subject to a nesting increment and that increase the nesting count.
+  * Fundamental – Assessed on statements not subject to a nesting increment.
+  * Hybrid – Assessed on control flow structures that are not subject to a nesting increment but increase the nesting count.
+
+### Fix
+
+* **Fixed intermittent “400 bad request error” experienced by some users after successfully logging in via SSO.**\
+  \
+  This issue is now resolved. We have verified that users who have been assigned to an organization and have since converted to SSO are able to log in to the application successfully.
+
+### **Architecture Improvement**
+
+* **Zoho Desk Integration Update (JWT)**\
+  \
+  Zoho has deprecated the remote authentication method and CodeScan Cloud has switched to \
+  JWT authentication for our Help Center integration.\
+  \
+  This has been updated automatically on our shared instances. Dedicated instances will receive a message when logging in to upgrade to the latest version. Please contact your account executive to organize your upgrade.
+
+***
+
 ## Release Notes 24.0.8
 
 **Release Date: 10 July 2024**
-
-The latest CodeScan release is comprised of the following:
-
-* [New Features](release-notes-24.0.md#new-features)&#x20;
-* [Enhancements](release-notes-24.0.md#enhancements)&#x20;
-* [Fixes](release-notes-24.0.md#fixes)&#x20;
-
-Component details are listed in their corresponding sections within this document.&#x20;
 
 ### New Features&#x20;
 

@@ -4,13 +4,9 @@
 
 You must have a SonarQube™ server currently running in your environment. If you do not, please visit [SonarQube.org](https://www.sonarqube.org/) to get set up.
 
-
-
-<table><thead><tr><th width="152">COMPATIBILITY MATRIX</th><th width="116">COMPATIBILITY MATRIX</th><th>10.0</th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td>SonarQube Version</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>CodeScan Plug-In</td><td>9.9 LTS</td><td>10.0</td><td>10.1</td><td>10.2</td><td>10.3</td><td>10.4</td><td>10.5</td><td>10.6</td></tr><tr><td>24.1.0 (Aug 2024)</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td></tr><tr><td>24.0.8 (Jul 2024)</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td></tr><tr><td>24.0.5 (Jun 2024)</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td></tr><tr><td>24.0.4 (Apr 2024)</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td></tr><tr><td>24.0.1 (Jan 2024)</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td></tr><tr><td>23.1.3 (Sep 2023)</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td><td>Picture</td></tr></tbody></table>
-
 ### Hardware Requirements <a href="#hardware-requirements" id="hardware-requirements"></a>
 
-1. Atleast **8GB of RAM** to run efficiently. If you are installing an instance for a large teams or Enterprise, do consider the additional recommendations of **16GB of RAM**.
+1. At least **8GB of RAM** to run efficiently. If you are installing an instance for a large teams or Enterprise, do consider the additional recommendations of **16GB of RAM**.
 2. **2 CPU cores** (equivalent to AWS t2.large)
 3. **100GB** of disk space.
 4. CodeScan must be installed on hard drives that have excellent read & write performance.

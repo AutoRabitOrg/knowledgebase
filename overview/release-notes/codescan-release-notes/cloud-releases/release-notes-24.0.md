@@ -25,24 +25,29 @@ The latest CodeScan release is comprised of the following components:
    With this enhancement, CodeScan allows the parameter to be configurable at a project level.  Adding this parameter will allow teams to view the coverage on the CodeScan dashboard. The addition of this parameter notably provides more value for SFDX workflows.\
    \
    Further details are available at the following link: [Importing Code Coverage from SFDX Projects](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/codescan-sfdx-plugin/importing-code-coverage-from-sfdx-projects).
-2. **UI Enhancements to the IDE Usage Page**\
-   Summary: The “IDE Usage” page has been updated with the following UI components:\
-   ![](<../../../../.gitbook/assets/image (2).png>)\
-   \
-   For the IDE Type, logos are now shown instead of text\
-   Added a date filter, including:\
-   Last 30 days\
-   Last 60 days\
-   Last 90 days\
-   Last 180 days\
-   \
-   Updated the Column title of “Use at” to “Time Stamp.“\
-   Added a filter toggle for Individual / All as shown.\
-   Upon toggling to “Individual,” the last connection for each unique user list is shown.\
-   Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown. \
-   ![](<../../../../.gitbook/assets/image (1).png>)\
+2.  **UI Enhancements to the IDE Usage Page**\
+    Summary: The “IDE Usage” page has been updated with the following UI components:\
+    \
+    \
 
-3. **New “Exception” status for Security Hotspots**\
+
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+For the IDE Type, logos are now shown instead of text\
+Added a date filter, including:\
+Last 30 days\
+Last 60 days\
+Last 90 days\
+Last 180 days\
+\
+Updated the Column title of “Use at” to “Time Stamp.“\
+Added a filter toggle for Individual / All as shown.\
+Upon toggling to “Individual,” the last connection for each unique user list is shown.\
+Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+1. **New “Exception” status for Security Hotspots**\
    Summary: For this release, the “Exception” status essentially mirrors the functionality of the “Acknowledged” status; but this is just temporary. We will be adding the ability to assign a “date time stamp” to this feature, which will then allow the issue to be flagged after the expiration of the date time stamp.
 
 ### New Rule

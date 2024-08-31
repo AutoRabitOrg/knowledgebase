@@ -20,7 +20,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
 
 3. From the Branching Baseline screen, click on New Branching Baseline.
 
-<figure><img src="../../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -29,7 +29,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
    2. Select your Salesforce Org as the source of the commit.&#x20;
    3. Select your Repository and Branch to which you like to commit code.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown (1).png" alt="" width="511"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (1) (1).png" alt="" width="511"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** For Version Control registered in the SFDX structure, specify the Source Folder from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the Package Directory under the sfdx-project.json file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/salesforce-dx-metadata-format)&#x20;

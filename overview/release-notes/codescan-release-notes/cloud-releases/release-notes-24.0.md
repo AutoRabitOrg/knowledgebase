@@ -144,7 +144,6 @@ The latest CodeScan release is comprised of the following components:
 * [Enhancements](release-notes-24.0.md#enhancements)&#x20;
 * [New Rule](release-notes-24.0.md#new-rule)
 * [Fix](release-notes-24.0.md#fix)
-* [Architecture Improvement](release-notes-24.0.md#architecture-improvement)
 
 ### Enhancements&#x20;
 
@@ -204,15 +203,6 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
   \
   This issue is now resolved. We have verified that users who have been assigned to an organization and have since converted to SSO are able to log in to the application successfully.
 
-### **Architecture Improvement**
-
-* **Zoho Desk Integration Update (JWT)**\
-  \
-  Zoho has deprecated the remote authentication method and CodeScan Cloud has switched to \
-  JWT authentication for our Help Center integration.\
-  \
-  This has been updated automatically on our shared instances. Dedicated instances will receive a message when logging in to upgrade to the latest version. Please contact your account executive to organize your upgrade.
-
 ***
 
 ## Release Notes 24.0.8
@@ -221,7 +211,7 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
 
 ### New Features&#x20;
 
-This update includes several New Features within CodeScan’s VS Code IDE Extension: &#x20;
+This update includes several New Features within CodeScan’s Visual Studio Code IDE Extension: &#x20;
 
 1. New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.&#x20;
 

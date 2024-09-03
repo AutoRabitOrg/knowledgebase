@@ -6,11 +6,13 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
-CodeScan Release 24.0.10 – August 28, 2024&#x20;
+## CodeScan Release 24.0.10
 
-Summary:&#x20;
+**Release Date: 28 August 2024**&#x20;
 
-**CodeScan 24.0.10 is comprised of the following 15 components:**&#x20;
+### **Summary**
+
+**CodeScan 24.0.10 is comprised of the following components:**&#x20;
 
 * **1 Enhancement**&#x20;
 * **2 New Rules**&#x20;
@@ -18,54 +20,52 @@ Summary:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### Enhancements:&#x20;
+### Enhancements
 
-1. **Enhancement to rule “Use the null coalescing operator instead of ternary”**&#x20;
+**1.     Enhancement to rule “Use the null coalescing operator instead of ternary”**&#x20;
 
 The original aim of this rule is to identify ternary statements and suggest potential use of "??" operator.  Previously, CodeScan was checking for ternary statements only.&#x20;
 
-&#x20;\
-This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary.  However, it can be applied in scenarios involving if-else and return statements.  As such, we have adjusted the rule to account for these use cases.  With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary then they are likely to be considering null coalescing operator as well).&#x20;
+This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary. However, it can be applied in scenarios involving if-else and return statements.  As such, we have adjusted the rule to account for these use cases. With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary, then they are likely considering null coalescing operator as well).&#x20;
 
-### New Rules:&#x20;
+### New Rules&#x20;
 
-1. **New Rule for APEX: “IsBlankForNullChecks”** &#x20;
+**1.     New Rule for APEX: “IsBlankForNullChecks”** &#x20;
 
-This is a new rule which leverages the built-in \{{isBlank\}} and \{{isNotBlank\}} methods instead of the \{{!=\}} and \{{==\}} operators to check for null or empty values.&#x20;
+This is a new rule that leverages the built-in \{{isBlank\}} and \{{isNotBlank\}} methods instead of the \{{!=\}} and \{{==\}} operators to check for null or empty values.&#x20;
 
-This approach is especially relevant in programming environments and languages where \{{IsBlank\}} or equivalent methods are provided for more readable, maintainable, and less error-prone code.  Using the \{{IsBlank\}} method for null checks improves code clarity, reduces the likelihood of bugs, and enhances maintainability compared to using the \{{!=\}} operator. Developers are less likely to encounter unexpected behavior due to differences in how null and empty values are handled.  Additionally, built-in methods like \{{IsBlank\}} are optimized and tested to handle various edge cases, reducing the potential for errors compared to using the \{{!=\}} operator. It also makes the code easier to read and understand.&#x20;
+This approach is especially relevant in programming environments and languages where \{{IsBlank\}} or equivalent methods are provided for more readable, maintainable, and less error-prone code. Using the \{{IsBlank\}} method for null checks improves code clarity, reduces the likelihood of bugs, and enhances maintainability compared to using the \{{!=\}} operator. Developers are less likely to encounter unexpected behavior due to differences in how null and empty values are handled. Additionally, built-in methods like \{{IsBlank\}} are optimized and tested to handle various edge cases, reducing the potential for errors compared to using the \{{!=\}} operator. It also makes the code easier to read and understand.&#x20;
 
-2. **New Rule for APEX: “Avoid Classes Without Explicit Sharing”** &#x20;
+**2.     New Rule for APEX: “Avoid Classes Without Explicit Sharing”** &#x20;
 
-New Rule to Enforce Sharing Rules in Classes&#x20;
+**New Rule to Enforce Sharing Rules in Classes**&#x20;
 
 Summary:  Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.&#x20;
 
 ### Fixes&#x20;
 
-1. &#x20;**Make fields of CustomObject Compatible with SFDX**&#x20;
+**1.     Make fields of CustomObject Compatible with SFDX**&#x20;
 
-CodeScan is in the process of updating all of our Salesforce Metadata rules to ensure that these rules support both the Salesforce metadata api as well as sfdx formats for the issues they were built to find.&#x20;
+CodeScan is in the process of updating all of our Salesforce metadata rules to ensure they support both the Salesforce metadata API as well as SFDX formats for the issues they were built to find.&#x20;
 
-We’ve architected this change because Metadata pulled with SFDX has a different structure than Metadata pulled with Salesforce’s Metadata API. CodeScan can scan these different structures with some additions to the sf-meta suffixes. For this release, we have ensured that the differences are covered within the types of metadata that have these differences (specifically, the Object metadata contains all field metadata when pulled from the metadata API; however, when this is pulled with SFDX, the object and field metadata are separate). &#x20;
+We’ve architected this change because metadata pulled with SFDX has a different structure than metadata pulled with Salesforce’s metadata API. CodeScan can scan these different structures with some additions to the sf-meta suffixes. For this release, we have ensured that the differences are covered within the types of metadata that have these differences (specifically, the Object metadata contains all field metadata when pulled from the metadata API; however, when this is pulled with SFDX, the object and field metadata are separate). &#x20;
 
-See the following SF article for details of these differences:&#x20;
+See the following SF article for details of these differences: [https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link) &#x20;
 
-[https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link)&#x20;
+**2.     Fixed issue in rule “sf:AvoidSoqlInLoops”** &#x20;
 
-&#x20;
+This CodeScan rule was found to have two issues:&#x20;
 
-2. **Fixed issue in rule “sf:AvoidSoqlInLoops”** &#x20;
-
-This CodeScan rule was found to have 2 issues:&#x20;
-
-* SOQL in the code does not appear to be in a loop, but CodeScan is flagging as a violation&#x20;
-* A violation message is displayed multiple times for the perceived detected violation&#x20;
+* SOQL in the code does not appear to be in a loop, but CodeScan is flagging as a violation.&#x20;
+* A violation message is displayed multiple times for the perceived detected violation.&#x20;
 
 The root causes of these issues were identified, and the following enhancements were added:&#x20;
 
-* Top of Form&#x20;
-* Added condition to check if the method call is matching to the Method name; if not, do not flag as a violationBottom of Form&#x20;
+Top of Form&#x20;
+
+* Added condition to check if the method call matches the Method name; if not, do not flag as a violation
+
+Bottom of Form&#x20;
 
 Top of Form&#x20;
 
@@ -74,11 +74,11 @@ Top of Form&#x20;
 
 Top of Form&#x20;
 
-* Avoid false positive when a recursive call happens without matching to the method name&#x20;
+* Avoid false positives when a recursive call happens without matching the method name&#x20;
 
 Bottom of Form&#x20;
 
-3. **Fixed issue when attaching a GIT project for a second time after initially canceling the request** &#x20;
+**3.     Fixed issue when attaching a GIT project for a second time after initially canceling the request** &#x20;
 
 CodeScan UI was inaccessible (page greys out) during scenarios where users were attaching Git analysis to a project in CodeScan where those projects previously had an unattached analysis.&#x20;
 
@@ -90,9 +90,9 @@ Detail:  When users would follow this navigation, they would encounter an error:
 4. cancel -> &#x20;
 5. select Git again -> &#x20;
 
-RESULT:  page greys out till page is refreshed&#x20;
+RESULT: Page is grayed out until the page is refreshed.&#x20;
 
-The root cause of the issue was identified and fixed.  Verification that the issue is now resolved included
+The root cause of the issue was identified and fixed. Verification the issue is now resolved included:
 
 1. Creating an empty project and subsequently attaching a Git analysis to the project&#x20;
 2. Deleting the project analysis and attaching a new Git analysis&#x20;
@@ -105,13 +105,13 @@ The root cause of the issue was identified and fixed.  Verification that the iss
 * GIT &#x20;
 * WEBHOOK &#x20;
 
-4. **Fixed issue in rule “sf:FixDuplicateMethods”, where Nested statements were being flagged (which was a false positive issue).**&#x20;
+**4.     Fixed issue in rule “sf:FixDuplicateMethods”, where Nested statements were being flagged (which was a false positive issue).**&#x20;
 
-Previously, the sf:FixDuplicateMethods rule was throwing violations for nested statements, which is not the intended behavior.  Root cause was identified and fixed, and now the rule is working as designed and expected&#x20;
+Previously, the sf:FixDuplicateMethods rule was throwing violations for nested statements, which is not the intended behavior. The root cause was identified and fixed, and now the rule is working as designed and expected.
 
-5. **Fixed issue with Date Filter on IDE Usage Page**&#x20;
+**5.     Fixed issue with Date Filter on IDE Usage Page**&#x20;
 
-In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page including the addition a date filter for:&#x20;
+In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a date filter for:&#x20;
 
 * Last 30 days&#x20;
 * Last 60 days &#x20;
@@ -122,14 +122,14 @@ However, the action “On click” wasn’t showing the filtered list as expecte
 
 <figure><img src="../../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
-6. **Fixed issue with Individual / All Filter on IDE Usage Page** &#x20;
+**6.     Fixed issue with Individual / All Filter on IDE Usage Page** &#x20;
 
-In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page including the addition of a filter toggle for Individual / All where:&#x20;
+In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a filter toggle for Individual / All where:&#x20;
 
-* On toggle to “Individual”, the last connection for each individual unique user list is shown&#x20;
-* On toggle to “All, the full list of activity should be shown (meaning every connection for selected duration is shown)&#x20;
+* Upon toggling to “Individual,” the last connection for each individual unique user list is shown.&#x20;
+* Upon toggling to “All," the full list of activity is shown (every connection for the selected duration).&#x20;
 
-However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified and the issue has been remediated.  The date filter now works as designed and expected.&#x20;
+However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
 

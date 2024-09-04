@@ -26,7 +26,7 @@ For our customers using a version of CodeScan not on the matrix (23.1.2 and olde
 ### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
 
 1. Java version 11
-2. SonarQube™ 8.9+
+2. SonarQube™ 9.9 LTS+
 3. SonarJS 6.2+
 4. **Operating System (OS)**: Windows, Mac and Linux
 5. Latest available **Node.js LTS** version (v16 as of today)

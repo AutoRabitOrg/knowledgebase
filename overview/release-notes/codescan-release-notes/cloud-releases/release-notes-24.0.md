@@ -12,11 +12,13 @@ description: Newest CodeScan Releases
 
 ### **Summary**
 
-**CodeScan 24.0.10 is comprised of the following components:**&#x20;
+CodeScan 24.0.10 is comprised of the following 15 components:&#x20;
 
-* **1 Enhancement**&#x20;
-* **2 New Rules**&#x20;
-* **6 Fixes**&#x20;
+* 1 [Enhancement ](release-notes-24.0.md#enhancements)
+* 2 [New Rules](release-notes-24.0.md#new-rules)&#x20;
+* 6 [Fixes](release-notes-24.0.md#fixes)&#x20;
+* 1 [RevOps Improvement](release-notes-24.0.md#revops-improvements)&#x20;
+* 5 [Architecture Improvements](release-notes-24.0.md#architecture-improvements)&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
@@ -28,6 +30,8 @@ The original aim of this rule is to identify ternary statements and suggest pote
 
 This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary. However, it can be applied in scenarios involving if-else and return statements.  As such, we have adjusted the rule to account for these use cases. With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary, then they are likely considering null coalescing operator as well).&#x20;
 
+(NOTE: This is an enhancement request / product suggestion from Sophos)
+
 ### New Rules&#x20;
 
 **1.     New Rule for APEX: “IsBlankForNullChecks”** &#x20;
@@ -36,11 +40,15 @@ This is a new rule that leverages the built-in \{{isBlank\}} and \{{isNotBlank\}
 
 This approach is especially relevant in programming environments and languages where \{{IsBlank\}} or equivalent methods are provided for more readable, maintainable, and less error-prone code. Using the \{{IsBlank\}} method for null checks improves code clarity, reduces the likelihood of bugs, and enhances maintainability compared to using the \{{!=\}} operator. Developers are less likely to encounter unexpected behavior due to differences in how null and empty values are handled. Additionally, built-in methods like \{{IsBlank\}} are optimized and tested to handle various edge cases, reducing the potential for errors compared to using the \{{!=\}} operator. It also makes the code easier to read and understand.&#x20;
 
+(NOTE: This is an enhancement request / product suggestion from AlignTech)
+
 **2.     New Rule for APEX: “Avoid Classes Without Explicit Sharing”** &#x20;
 
 **New Rule to Enforce Sharing Rules in Classes**&#x20;
 
 Summary:  Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.&#x20;
+
+(NOTE: This is an enhancement request / product suggestion from PenFed)
 
 ### Fixes&#x20;
 
@@ -76,6 +84,8 @@ Top of Form&#x20;
 
 * Avoid false positives when a recursive call happens without matching the method name&#x20;
 
+(NOTE: This is an enhancement request / product suggestion from BP)
+
 Bottom of Form&#x20;
 
 **3.     Fixed issue when attaching a GIT project for a second time after initially canceling the request** &#x20;
@@ -105,6 +115,8 @@ The root cause of the issue was identified and fixed. Verification the issue is 
 * GIT &#x20;
 * WEBHOOK &#x20;
 
+(NOTE: This is an enhancement request / product suggestion from The Standard Bank of South Africa)
+
 **4.     Fixed issue in rule “sf:FixDuplicateMethods”, where Nested statements were being flagged (which was a false positive issue).**&#x20;
 
 Previously, the sf:FixDuplicateMethods rule was throwing violations for nested statements, which is not the intended behavior. The root cause was identified and fixed, and now the rule is working as designed and expected.
@@ -132,6 +144,111 @@ In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” pa
 However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+
+### RevOps Improvements
+
+**1.     Modularization for Enhanced CodeScan Audit Logging Module (SPM), including billing**
+
+We previously had our audit logs currently running for all users in our SaaS instances, but we now can switch this off for organizations that are not paying for it.
+
+We have created a billing item in Chargebee as a recurring addon.  Further, we now show the item “Audit Logging” in the billing drop down menu with the options.
+
+When this addon is added to the organization’s license, the “Audit Logging” feature in the billing menu is set to “Yes” and the logs will be collected. If the item is not added to the organization’s license, the “Audit Logging” item in the billing menu will show “NO” and the logs will not be collected.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**NOTE 01:**  The CodeScan road map this year includes significant “modular” development. Part of this effort includes adding features that are deployed behind a paywall and integrate that with products on the Chargebee side.
+
+**NOTE 02:** This specific modularization is for the enhanced logging (originally built for AWS and deployed to AWS {client, not infrastructure}). With this modularization, CodeScan can now control and only allow for the use of the enhanced logging module when the appropriate flag is set in the Billing plugin.
+
+**NOTE 03:** This update will be the basis for charging for this feature to view logs in Flow Center.
+
+**NOTE 04:** Creating a switch for this logging will additionally help us internally manage the size of these logs moving forward.&#x20;
+
+### Architecture Improvements
+
+1. **Convert Billing AuthorizeAction to Spring Boot REST controller**
+
+This controller handles successful authorization from ALM services (Github, Gitlab, Bitbucket, Salesforce) from the Codescan Project Analysis Page[ (Add new project dialog box).](#user-content-fn-1)[^1]
+
+&#x20;**NOTE 01:** We have actively been converting components into Spring Boot REST controllers; this is another component that has been converted.
+
+&#x20;**NOTE 02:**&#x20;
+
+In 24.0.5, we converted StatusAction to Spring Boot REST controller (this controller is responsible for handling requests from our Cloud analysis jobs running inside job2 ECS tasks).
+
+In 24.0.6, we converted \{{ChargeBeeAction\}} to Spring Boot REST controller (this controller is responsible for handling request from ChargeBee license server to synchronize billing information)
+
+In 24.0.6, we converted GitHub \{{AuthorizerAction\}} to Spring Boot REST controller (this controller is responsible for starting GitHub authorization from Codescan UI)
+
+In 24.0.7, we converted Bitbucket ReposAction to Spring Boot REST controller (this controller is responsible for getting \{{Bitbucket\}} repositories while creating \{{Bitbucket\}} project)
+
+In 24.0.8, we converted Bitbucket AuthorizeAction to Spring Boot REST controller (this controller is responsible for starting Bitbucket authorization from Codescan UI)
+
+In 24.0.8, we converted Bitbucket ReposAction to Spring Boot REST controller (this controller is responsible for getting \{{Bitbucket\}} repositories while creating \{{Bitbucket\}} project)
+
+In 24.0.9, we converted Gitlab AuthorizeAction to Spring Boot REST controller (this controller is responsible for starting Gitlab authorization from Codescan UI)
+
+In 24.0.9. we converted Gitlab ReposAction to Spring Boot REST controller (this controller is responsible for getting Github repositories while creating Github project)
+
+In 24.0.9, we converted Gitlab WebhookAction to Spring Boot REST controller (this controller is responsible for handling requests from Github server: creating PRs, pushing new changes into PRs. The goal of the controller is to start the analysis when Github PR was created or updated)
+
+In 24.0.9, we converted Bitbucket WebhookAction to Spring Boot REST controller (this controller is responsible for handling requests from Bitbucket server: creating PRs, pushing new changes into PRs. The goal of the controller is to start the analysis when Bitbucket PR was created or updated)
+
+In 24.0.9, we converted Salesforce AuthorizeAction to Spring Boot REST controller (this controller is responsible for starting Salesforce authorization from Codescan UI&#x20;
+
+**2.     Convert Billing CheckAction to Spring Boot REST controller**
+
+This controller is responsible for two scenarios.  First, we use this API on the Billing screen to display certain information.  Second, this API is used in project creation flow (Note:  if the CodeScan organization doesn’t have billing attached, users won’t be able to create new projects).
+
+NOTE 01:  We have actively been converting components into Spring Boot REST controllers; this is the 2nd component that has been converted in 24.0.10
+
+&#x20;**3.     Create a trial billing entity while creating a new Org**
+
+This engineering work tests that the conversion of Billing CheckAction to Spring Boot REST controller allows for the creation of a billing entity when creating a new CodeScan Org
+
+Verified the Billing Check action which is converted to spring boot rest controller working as by:
+
+* Validated New Org creation and checked the Request URL
+* Verified the Response for the billing fetch action
+* Verified the Charge bee Subscriptions also for the Org on preview env working as expected
+
+&#x20;Capability worked as expected and no issues were reported.
+
+**4.     Secure and verify GitLab webhooks controller**
+
+Secured the GitLab webhook with the following verifications:
+
+* If X-Gitlab-Token is not presented, the webhook request should be rejected
+* If X-Gitlab-Token is presented but it doesn't match, the webhook should be rejected
+* If the tokens match, process the webhook&#x20;
+
+**5.    Added Security for Gitlab Webhook IP validation**
+
+Gitlab has an allowlist range of IP addresses. This is a CodeScan enhancement to use it to validate the incoming Gitlab webhook requests. Further, the IP validation was implemented in controller for Gitlab webhooks.&#x20;
+
+More detailed information can be found at: [https://docs.gitlab.com/ee/user/gitlab\_com/#ip-range|https://docs.gitlab.com/ee/user/gitlab\_com/#ip-range|smart-link](https://docs.gitlab.com/ee/user/gitlab\_com/#ip-range|https://docs.gitlab.com/ee/user/gitlab\_com/)
+
+Verified the GitLab response on postman after successful Gitlab project integration with Security Gitlab IP Webhook Validation.
+
+Verified below scenarios for the x-forwarded-for parameter on postman:
+
+1. Valid x-forwarded-for Header, Other Parameters Valid
+2. Valid x-forwarded-for Header, Missing Required Parameters
+3. Valid x-forwarded-for Header, Invalid Format of Other Parameters
+4. Invalid x-forwarded-for Header Format
+5. Missing x-forwarded-for Header
+6. Empty x-forwarded-for Header
+7. Multiple IP Addresses in x-forwarded-for Header
+8. Extra Whitespace in x-forwarded-for Header
+9. Valid x-forwarded-for Header, Invalid Authentication
+10. Valid x-forwarded-for Header, Testing with Different HTTP Methods
+
+### Adjustments / Features Hidden Behind Feature Flags
+
+There are no adjustments associated with this release.
+
+
 
 ***
 
@@ -173,7 +290,7 @@ Added a filter toggle for Individual / All as shown.\
 Upon toggling to “Individual,” the last connection for each unique user list is shown.\
 Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **New “Exception” status for Security Hotspots**\
    Summary: For this release, the “Exception” status essentially mirrors the functionality of the “Acknowledged” status; but this is just temporary. We will be adding the ability to assign a “date time stamp” to this feature, which will then allow the issue to be flagged after the expiration of the date time stamp.
@@ -670,3 +787,5 @@ The following items were implemented, fixed, or enhanced with this release:
 * We fixed the "Get help" action, which was not working when users clicked the plus (+) icon.
 * Security tokens are now sorted by creation date.
 * A fix was provided for the "Flows API Version Is Too Old" rule to prevent Null Pointer Exceptions.
+
+[^1]: 

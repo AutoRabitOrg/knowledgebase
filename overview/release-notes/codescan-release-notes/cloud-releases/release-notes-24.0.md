@@ -6,7 +6,7 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
-## CodeScan Release 24.0.10
+## Release Notes 24.0.10
 
 **Release Date: 28 August 2024**&#x20;
 

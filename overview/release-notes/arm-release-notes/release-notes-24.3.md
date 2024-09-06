@@ -45,24 +45,6 @@ Users can now more effectively manage profile metadata and permissions during co
 
 This enhancement provides greater control over what is included in profile commits, ensuring more precise and targeted updates.
 
-#### **Controlled Abort Functionality in Branching Baseline**
-
-The abort functionality in the Branching Baseline is now optimized to be clickable only when a process is actively in progress, preventing unnecessary abort actions when the process is inactive.
-
-**Key Scenarios:**
-
-1. **Abort During Retrieval:**
-   * If the Branching Baseline is in the retrieval process, clicking "Abort" will immediately stop the process.
-2. **Abort During Committing:**
-   * If the process has completed retrieval and is in the committing stage, clicking "Abort" will cancel the process.
-3. **Disabled Abort After Completion:**
-   * If the process has already been committed or a revision has been generated, the "Abort" option will be disabled, preventing any further action.
-
-**UI Enhancements:**
-
-* The **Actions** column now includes "Run," "Abort," and "Delete" options, with "Abort" only enabled when applicable.
-* The **Revision** and **Info** columns in the Branching Baseline Iterations section have been combined into a single "Revision Info" column. This column serves as a clickable hyperlink, allowing users to view detailed information about the specific revision.
-
 ### Improvements
 
 **UI Filter for InstalledEditable State in Deployments**

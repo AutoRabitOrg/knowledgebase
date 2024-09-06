@@ -1,7 +1,9 @@
 # On-Premises Releases
 
-## Current Release: 24.0.8
+## Current Releases: Review the following diagram for more information on new Editions: 24.0.9 (Tiger) and 24.1.0 (Eagle)
 
-### Release Date: July 2024
+<figure><img src="../../../../.gitbook/assets/image (1499).png" alt=""><figcaption></figcaption></figure>
+
+### Release Date: August/September 2024
 
 Visit the latest release notes page for up-to-date information on CodeScan Self-Hosted.

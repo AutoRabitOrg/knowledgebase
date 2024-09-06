@@ -6,6 +6,135 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
+## Release Notes 24.0.10
+
+**Release Date: 28 August 2024**&#x20;
+
+### **Summary**
+
+**CodeScan 24.0.10 is comprised of the following components:**&#x20;
+
+* **1 Enhancement**&#x20;
+* **2 New Rules**&#x20;
+* **6 Fixes**&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Enhancements
+
+**1.     Enhancement to rule “Use the null coalescing operator instead of ternary”**&#x20;
+
+The original aim of this rule is to identify ternary statements and suggest potential use of "??" operator.  Previously, CodeScan was checking for ternary statements only.&#x20;
+
+This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary. However, it can be applied in scenarios involving if-else and return statements.  As such, we have adjusted the rule to account for these use cases. With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary, then they are likely considering null coalescing operator as well).&#x20;
+
+### New Rules&#x20;
+
+**1.     New Rule for APEX: “IsBlankForNullChecks”** &#x20;
+
+This is a new rule that leverages the built-in \{{isBlank\}} and \{{isNotBlank\}} methods instead of the \{{!=\}} and \{{==\}} operators to check for null or empty values.&#x20;
+
+This approach is especially relevant in programming environments and languages where \{{IsBlank\}} or equivalent methods are provided for more readable, maintainable, and less error-prone code. Using the \{{IsBlank\}} method for null checks improves code clarity, reduces the likelihood of bugs, and enhances maintainability compared to using the \{{!=\}} operator. Developers are less likely to encounter unexpected behavior due to differences in how null and empty values are handled. Additionally, built-in methods like \{{IsBlank\}} are optimized and tested to handle various edge cases, reducing the potential for errors compared to using the \{{!=\}} operator. It also makes the code easier to read and understand.&#x20;
+
+**2.     New Rule for APEX: “Avoid Classes Without Explicit Sharing”** &#x20;
+
+**New Rule to Enforce Sharing Rules in Classes**&#x20;
+
+Summary:  Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.&#x20;
+
+### Fixes&#x20;
+
+**1.     Make fields of CustomObject Compatible with SFDX**&#x20;
+
+CodeScan is in the process of updating all of our Salesforce metadata rules to ensure they support both the Salesforce metadata API as well as SFDX formats for the issues they were built to find.&#x20;
+
+We’ve architected this change because metadata pulled with SFDX has a different structure than metadata pulled with Salesforce’s metadata API. CodeScan can scan these different structures with some additions to the sf-meta suffixes. For this release, we have ensured that the differences are covered within the types of metadata that have these differences (specifically, the Object metadata contains all field metadata when pulled from the metadata API; however, when this is pulled with SFDX, the object and field metadata are separate). &#x20;
+
+See the following SF article for details of these differences: [https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link) &#x20;
+
+**2.     Fixed issue in rule “sf:AvoidSoqlInLoops”** &#x20;
+
+This CodeScan rule was found to have two issues:&#x20;
+
+* SOQL in the code does not appear to be in a loop, but CodeScan is flagging as a violation.&#x20;
+* A violation message is displayed multiple times for the perceived detected violation.&#x20;
+
+The root causes of these issues were identified, and the following enhancements were added:&#x20;
+
+Top of Form&#x20;
+
+* Added condition to check if the method call matches the Method name; if not, do not flag as a violation
+
+Bottom of Form&#x20;
+
+Top of Form&#x20;
+
+* When checking the nested method call, if method name matches, only then it will throw violation.&#x20;
+* Bottom of Form&#x20;
+
+Top of Form&#x20;
+
+* Avoid false positives when a recursive call happens without matching the method name&#x20;
+
+Bottom of Form&#x20;
+
+**3.     Fixed issue when attaching a GIT project for a second time after initially canceling the request** &#x20;
+
+CodeScan UI was inaccessible (page greys out) during scenarios where users were attaching Git analysis to a project in CodeScan where those projects previously had an unattached analysis.&#x20;
+
+Detail:  When users would follow this navigation, they would encounter an error:&#x20;
+
+1. &#x20;Select a project with an unattached analysis -> &#x20;
+2. Attach analysis -> &#x20;
+3. select Git -> &#x20;
+4. cancel -> &#x20;
+5. select Git again -> &#x20;
+
+RESULT: Page is grayed out until the page is refreshed.&#x20;
+
+The root cause of the issue was identified and fixed. Verification the issue is now resolved included:
+
+1. Creating an empty project and subsequently attaching a Git analysis to the project&#x20;
+2. Deleting the project analysis and attaching a new Git analysis&#x20;
+3. Validating attaching analyses with no issues for:&#x20;
+
+* Salesforce &#x20;
+* GITHUB&#x20;
+* BITBUCKET&#x20;
+* GITLAB&#x20;
+* GIT &#x20;
+* WEBHOOK &#x20;
+
+**4.     Fixed issue in rule “sf:FixDuplicateMethods”, where Nested statements were being flagged (which was a false positive issue).**&#x20;
+
+Previously, the sf:FixDuplicateMethods rule was throwing violations for nested statements, which is not the intended behavior. The root cause was identified and fixed, and now the rule is working as designed and expected.
+
+**5.     Fixed issue with Date Filter on IDE Usage Page**&#x20;
+
+In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a date filter for:&#x20;
+
+* Last 30 days&#x20;
+* Last 60 days &#x20;
+* Last 90 days &#x20;
+* Last 180 days  &#x20;
+
+However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified and the issue has been remediated.  The date filter now works as designed and expected.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+
+**6.     Fixed issue with Individual / All Filter on IDE Usage Page** &#x20;
+
+In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a filter toggle for Individual / All where:&#x20;
+
+* Upon toggling to “Individual,” the last connection for each individual unique user list is shown.&#x20;
+* Upon toggling to “All," the full list of activity is shown (every connection for the selected duration).&#x20;
+
+However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## Release Notes 24.0.9
 
 **7 August 2024**
@@ -26,22 +155,23 @@ The latest CodeScan release is comprised of the following components:
    Further details are available at the following link: [Importing Code Coverage from SFDX Projects](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/codescan-sfdx-plugin/importing-code-coverage-from-sfdx-projects).
 2.  **UI Enhancements to the IDE Usage Page**\
     Summary: The “IDE Usage” page has been updated with the following UI components:\
+    \
+    \
 
 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-    \
-    For the IDE Type, logos are now shown instead of text\
-    Added a date filter, including:\
-    Last 30 days\
-    Last 60 days\
-    Last 90 days\
-    Last 180 days\
-    \
-    Updated the Column title of “Use at” to “Time Stamp.“\
-    Added a filter toggle for Individual / All as shown.\
-    Upon toggling to “Individual,” the last connection for each unique user list is shown.\
-    Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
+For the IDE Type, logos are now shown instead of text\
+Added a date filter, including:\
+Last 30 days\
+Last 60 days\
+Last 90 days\
+Last 180 days\
+\
+Updated the Column title of “Use at” to “Time Stamp.“\
+Added a filter toggle for Individual / All as shown.\
+Upon toggling to “Individual,” the last connection for each unique user list is shown.\
+Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,8 +203,6 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
   \
   This issue is now resolved. We have verified that users who have been assigned to an organization and have since converted to SSO are able to log in to the application successfully.
 
-
-
 ***
 
 ## Release Notes 24.0.8
@@ -83,7 +211,7 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
 
 ### New Features&#x20;
 
-This update includes several New Features within CodeScan’s VS Code IDE Extension: &#x20;
+This update includes several New Features within CodeScan’s Visual Studio Code IDE Extension: &#x20;
 
 1. New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.&#x20;
 

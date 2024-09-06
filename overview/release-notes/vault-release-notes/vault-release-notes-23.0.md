@@ -2,7 +2,7 @@
 
 This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions or details about additional improvements in this release over your current release.
 
-## Vault 23.2 Release Notes
+### Vault 23.2.13 Release Notes
 
 **August 2023**
 
@@ -38,7 +38,7 @@ Please reach out to your respective Customer Success Manager or Account Executiv
 
 For details on how to configure Vault Connect, please click here to access our [**Vault documentation**](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/vault-connect).
 
-## Vault 23.1 Release Notes <a href="#vault-231" id="vault-231"></a>
+## Vault 23.1.12 Release Notes <a href="#vault-231" id="vault-231"></a>
 
 **January 2023**
 
@@ -82,6 +82,14 @@ Users need to understand the details of the config created, and it is helpful fo
 ***
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
+
+_**3 Jan 2024**_
+
+_**Vault v23.2.14**_&#x20;
+
+1. Backup Delay: The backup is taking longer because FeedItem and EmailMessages are processing for over an hour.
+2. Suggested Workaround: A workaround was suggested to exclude Total Price and Unit Price to resolve the issue.
+3. Policy Level Verification: Verification revealed issues with multiple policies when selecting policy-level changes.
 
 #### 7 June 2023 <a href="#id-7-june-2023" id="id-7-june-2023"></a>
 

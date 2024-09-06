@@ -34,6 +34,8 @@
       * [Release Notes 4.3](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.3.md)
       * [Release Notes 4.2](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-4.2.md)
     * [On-Premises Releases](overview/release-notes/codescan-release-notes/on-premise-releases/README.md)
+      * [Release Notes 24.1.0 Eagle](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.1.0-eagle.md)
+      * [Release Notes 24.0.9 Tiger](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.9-tiger.md)
       * [Release Notes 24.0.8](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.8.md)
       * [Release Notes 24.0.5](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.5.md)
       * [Release Notes 24.0.4](overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.4.md)

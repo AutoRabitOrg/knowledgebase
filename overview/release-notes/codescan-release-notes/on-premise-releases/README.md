@@ -1,6 +1,8 @@
 # On-Premises Releases
 
-## Current Releases: Review the following diagram for more information on new Editions: 24.0.9 (Tiger) and 24.1.0 (Eagle)
+## Current Releases&#x20;
+
+Review the following diagram for more information on new versions being released: 24.0.9 (Tiger) and 24.1.0 (Eagle):
 
 <figure><img src="../../../../.gitbook/assets/image (1499).png" alt=""><figcaption></figcaption></figure>
 

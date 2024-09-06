@@ -26,7 +26,7 @@ Salesforce operates on a shared responsibility model, where users must take acti
 4. **Regular Customization Reviews**: Periodically review and assess the ongoing customizations in the Salesforce environment and their impact on the backup and recovery times. This practice helps identify changes that might complicate the 'restore' process, allowing for timely adjustments to recovery strategies and ensuring RTOs are met. For instance, a healthcare provider could regularly review custom patient data fields to ensure they are included in backup procedures and monitor for the inclusion of a rich text field in such objects, leading to increased time to recover.
 5. **Leverage Automated Solutions**: Utilize automated backup and recovery strategies to minimize manual intervention and reduce the risk of human error. For example, scheduling automated daily backups and performing regular automated recovery tests can help ensure that backups are up-to-date and reliable.
 
-## Best Practices for Salesforce backup and recovery using Vault
+## Best Practices for Salesforce Backup and Recovery Using Vault
 
 ### General Guidelines on Salesforce Limitations
 
@@ -36,11 +36,7 @@ See [Vault Archival Best Practices](vault-best-practices.md#archival-best-practi
 
 ### **Email Messages Attachment Limitation**
 
-**Issue**\
-Salesforce has a limitation where files can only be added to Email Messages in the draft state. This presents a challenge when replicating data between organizations (Orgs).
-
-**AutoRABIT Solution**\
-We address this issue by implementing the following steps during the replication process:
+Salesforce has a limitation where files can only be added to Email Messages in the draft state. This presents a challenge when replicating data between organizations (Orgs). We address this issue by implementing the following steps during the replication process:
 
 1. **Draft State Conversion**
    * All Email Messages are replicated in a draft state in the destination Org.
@@ -57,18 +53,26 @@ This structured approach ensures files are properly attached to Email Messages d
 ### Backup Best Practices
 
 1. Configure your full backup, which includes all the Objects (standard and custom) in Salesforce org. The recommended frequency is weekly, preferably on the weekend.
-2. Configure backup for Special objects like history, system, audit logs, and KAV objects on a weekly basis. Can be set to a daily basis, if needed.
-3. Configure incremental backups to include all the objects in Salesforce. THe recommended frequency for this backup is daily.
+2. Configure backup for Special objects like history, system, audit logs, and KAV objects every week. Can be set to a daily basis, if needed.
+3. Configure incremental backups to include all the objects in Salesforce. The recommended frequency for this backup is daily.
 4. Configure the scheduled time for full and incremental backups with enough of a time gap between them to avoid any bottlenecks in Salesforce, which may be caused due to queries being executed on the same objects in parallel.
 5. Create backup schedules that are in sync with your production deployment schedules. Backup your entire production instance or relevant instance data before deploying to a production instance.
 6. Identify a set of business-critical objects. Configure a backup specifically to include these objects to run at higher frequency levels (recommended frequency is multiple times a day) depending on RPO and RTO requirements.
 7. Use the option to exclude formula fields in case of objects with a large number of fields, without which Salesforce queries may be errored out or give results slowly.
 8. Configure email addresses of users who need to be notified upon completion or failure of backups. (By default, the user who configured the backup will be notified automatically).
-9. Go through logs and results of backups on a weekly basis to ensure that automated backups are happening as expected.
+9. Go through logs and results of backups every week to ensure that automated backups are happening as expected.
 10. Adjust frequency and scheduled time of backup configurations based on API call limit and API call consumption by other systems.
 11. A Salesforce user with which an org is registered on Vault should have admin-level permissions in the org. The recommendation is to create an admin user separately for Vault.
 
+### Configuration Best Practices
 
+In this segment, we will go over some important points to note while configuring in Vault.
+
+1. **First Incremental Backup:** It is crucial to note that the first incremental backup you perform will be a full backup. This means that during the initial incremental backup, the entire dataset will be backed up.
+2. **Avoid Deleting Configurations:** It is highly recommended not to delete any configurations that you have set up. Deleting a configuration will result in the corresponding backup or archival jobs associated with it becoming inaccessible from Vault.
+3. **Limit on Users and Salesforce Orgs:** By default, the total number of users and Salesforce Orgs that you can register in AutoRABIT Vault is set to 10.
+4. **Number of Configurations:** AutoRABIT Vault allows you to create a maximum of 20 configurations, including both backup and archival configurations.
+5. **Increasing Configuration Count:** If you require more than the default count of 20 configurations, you have the option to contact AutoRABIT. They can assist you in increasing the configuration count to accommodate your specific requirements.
 
 ### Restore/ Replicate Best Practices
 

@@ -6,9 +6,9 @@ The following release notes describe the enhancements featured in our next relea
 
 ### Enhancements
 
-#### **Version Information Display for Vlocity DataRaptor**
+#### **Version Information Display for Vlocity Metadata**
 
-Users can now view detailed version information, including the modification date, modified by, and creation date, for each DataRaptor version when selecting a DataRaptor for deployment. This enhancement helps users differentiate between active and inactive versions, ensuring they select the correct version for deployment.
+Users can now view detailed version information, including the modification date, modified by, and creation date, for metadata when selecting Vlocity Metadata for deployment. This enhancement gives users visibility into the most recent changes and helps ensure they select the correct version for deployment.
 
 #### **Exclude Metadata in Branching Baseline**
 

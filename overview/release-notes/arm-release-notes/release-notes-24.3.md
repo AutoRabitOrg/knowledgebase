@@ -61,11 +61,11 @@ The 'Auto Approve on Merge Validation Success' option will now only be displayed
 
 **Retention of SF Org Mappings During Sub-User Permission Updates**
 
-Previously, when an Admin updated permissions for a sub-user—such as granting additional SF Org or branch access or revoking consent—the SF Org mappings for that sub-user were being removed. Now, SF Org usernames are retained when saving these updates. This ensures that sub-user profiles maintain their correct mappings after permission changes. Supportcase #120346
+Previously, when an Admin updated permissions for a sub-user—such as granting additional SF Org or branch access or revoking consent—the SF Org mappings for that sub-user were being removed. Now, SF Org usernames are retained when saving these updates. This ensures that sub-user profiles maintain their correct mappings after permission changes. Support case #120346
 
 **Resolved Special Characters Issue with Re-Uploading Files After Merge Conflict**
 
-A fix has been implemented to address an issue where users experienced a problem after resolving and re-uploading a conflicted file during a merge. Although the upload was successful, the verification process would not complete. This was caused by special characters in the label name or file name. The frontend now uses an encoded URL for label names and file names containing special characters, ensuring that the verification process completes successfully. Support case #120393
+A fix has been implemented to address an issue where users experienced a problem after resolving and re-uploading a conflicted file during a merge. Although the upload was successful, the verification process would not complete. This was caused by special characters in the label name or file name. The front end now uses an encoded URL for label names and file names containing special characters, ensuring the verification process completes successfully. Support case #120393
 
 **Improved CI Job Build Stability**
 
@@ -73,7 +73,7 @@ An issue was identified where CI job builds were failing due to the use of ident
 
 **Improved Error Handling During Merge Conflicts**
 
-An undefined error was occurring when customers attempted to upload a merge-conflicted file. This issue has been addressed by making changes to the API payload and implementing minor UI adjustments. The impacted areas include the SCM Conflict Report and the SCM Merge Conflict and Review Artifact screen. Support case #120867
+An undefined error occurred when customers attempted to upload a merge-conflicted file. This issue has been addressed by making changes to the API payload and implementing minor UI adjustments. The impacted areas include the SCM Conflict Report and the SCM Merge Conflict and Review Artifact screen. Support case #120867
 
 **Improved Ticket Detection in ALM CI Jobs**
 

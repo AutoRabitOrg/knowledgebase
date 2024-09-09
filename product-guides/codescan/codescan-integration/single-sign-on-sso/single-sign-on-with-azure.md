@@ -90,7 +90,7 @@ Before configuring SSO in Azure AD, you must enable SSO in CodeScan.
 9.  On the **`Basic SAML Configuration`** section, perform the following steps:
 
     * In the **`Identifier (Entity ID)`** field, enter the **`connection_id`** in this field. **Example:** `AD-SAML`
-    * In the **`Reply URL`** field, enter the **`URL`** in the below format: _`{instanceurl}/codescan/login/saml2/sso/{connection_id}`_\
+    * In the **`Reply URL`** field, enter the **`URL`** in the below format: _`{instanceurl}/_codescan/login/saml2/sso/{connection_id}`_\
       **For example:** If your **instance URL** is `https://app.codescan.io` and the **connection\_id** is `AD-SAML,` your **Reply URL** would be _`https://app.codescan.io/_codescan/login/saml2/sso/OKTA-SAML`_\
 
 

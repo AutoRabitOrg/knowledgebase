@@ -1,10 +1,28 @@
 # Release Notes 24.0
 
+## Release Notes 24.0.4
+
+**09 September 2024**
+
+The latest FlowCenter release provides a new feature designed to enhance user productivity.
+
+### New Feature
+
+**Filter All Widgets by Deployment Type**
+
+A new global filter is available to help users remove validation deployments from the scope of a dashboard. This filter applies to all widgets.
+
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="332"><figcaption></figcaption></figure>
+
+</div>
+
 ## Release Notes 24.0.3
 
 **26 Aug 2024**
 
-The latest Flow Center release introduces several new features designed to enhance your user experience:
+The latest FlowCenter release introduces several new features designed to enhance your user experience:
 
 * **Export Your Insights Data**
 * **Invite Your CSM to FlowCenter Insights**
@@ -13,7 +31,7 @@ The latest Flow Center release introduces several new features designed to enhan
 
 **Export your Insights data**&#x20;
 
-Users can export all the data available for a given widget. The data exported is based on the timeframe of the dashboard. For example, if your dashboard is showing 1 year of data, you can export 1 year of data for a specific widget.&#x20;
+Users can export all the data available for a given widget. The data exported is based on the time frame of the dashboard. For example, if your dashboard is showing 1 year of data, you can export 1 year of data for a specific widget.&#x20;
 
 <figure><img src="../../../.gitbook/assets/unknown (6).png" alt="" width="563"><figcaption></figcaption></figure>
 

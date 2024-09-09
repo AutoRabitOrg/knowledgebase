@@ -6,10 +6,10 @@ Admin users can now create temporary users designed to allow your Customer Succe
 
 To create a temporary user, click on User Management > Create User and select AutoRABIT Employee Guest. Users with this role have the following limitations:&#x20;
 
-* They cannot edit or delete your dashboards, they can only create their own&#x20;
-* They cannot access the User Management area&#x20;
-* They do not see the Export button in any widgets&#x20;
-* They expire after a user-defined period of time&#x20;
+* They cannot edit or delete your dashboards; they can only create their own.
+* They cannot access the User Management area.&#x20;
+* They do not see the Export button in any widgets.&#x20;
+* They expire after a user-defined period of time.&#x20;
 
 <figure><img src="../../../.gitbook/assets/unknown (7).png" alt="" width="563"><figcaption></figcaption></figure>
 

@@ -16,7 +16,7 @@ Follow the steps below to use the **Analysis Scope** feature on [CodeScan cloud]
 
 2.  You will now be able to view the tab, under which you can select your required specification to enable this feature during the analysis.
 
-    * **Wildcards:** If you scroll the tab farther to the end, you can see a portion that says “wildcards,” under which there are rules and examples, which help you understand how to enter the specifications or part of the file name to enable this feature. To know more about wildcards, click on [Learn More](https://app.codescan.io/documentation/project-administration/narrowing-the-focus/).
+    * **Wildcards:** If you scroll the tab farther to the end, you can see a portion that says “wildcards,” under which there are rules and examples, which help you understand how to enter the specifications or part of the file name to enable this feature.&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (417).png" alt=""><figcaption></figcaption></figure>
 

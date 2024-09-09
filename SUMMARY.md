@@ -530,7 +530,6 @@
       * [Error: "Not Authorized to Merge"](product-guides/arm/troubleshoot/common-errors-and-resolutions/error-not-authorized-to-merge.md)
       * [Error: GIT Push remote update Result: pre-receive hook declined](product-guides/arm/troubleshoot/common-errors-and-resolutions/error-git-push-remote-update-result-pre-receive-hook-declined.md)
 * [CodeScan](product-guides/codescan/README.md)
-  * [CodeScan Release Notes](overview/release-notes/codescan-release-notes/README.md)
   * [CodeScan Overview](product-guides/codescan/codescan-overview.md)
   * [System Requirements and Installation](product-guides/codescan/system-requirements-and-installation/README.md)
     * [Installing CodeScan Self-Hosted](product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted.md)

@@ -2,7 +2,7 @@
 
 ## Current Releases&#x20;
 
-Review the following diagram for more information on new versions being released: 24.0.9 (Tiger) and 24.1.0 (Eagle):
+Review the following diagram for more information on the two new versions being released: [24.0.9 (Tiger)](https://knowledgebase.autorabit.com/overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.9-tiger) and [24.1.0 (Eagle)](https://knowledgebase.autorabit.com/overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.1.0-eagle):
 
 <figure><img src="../../../../.gitbook/assets/image (1499).png" alt=""><figcaption></figcaption></figure>
 

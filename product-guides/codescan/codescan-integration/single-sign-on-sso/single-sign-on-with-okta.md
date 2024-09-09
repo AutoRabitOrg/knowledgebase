@@ -71,7 +71,7 @@ Set up the CodeScan application to provide necessary configuration information f
 
 8.  In the **`Configure SAML`** tab, do the following:
 
-    * **`Single sign on URL`**: Enter the same **`URL`** in the below format: _`{instanceurl}/codescan/login/saml2/sso/{connection_id}`_\
+    * **`Single sign on URL`**: Enter the same **`URL`** in the below format: _`{instanceurl}/_codescan/login/saml2/sso/{connection_id}`_\
       **For example:** If your _instance URL_ is `https://app.codescan.io` and the _connection\_id_ is `OKTA-SAML`, your SSO URL would be _`https://app.codescan.io/_codescan/login/saml2/sso/OKTA-SAML`_
     * **`Audience URI (SP Entity ID)`**: Enter your _connection\_id_ in this field. **Example:** `OKTA-SAML`
 

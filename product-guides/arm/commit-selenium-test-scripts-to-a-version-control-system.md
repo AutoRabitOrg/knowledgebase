@@ -13,7 +13,7 @@ To playback the selenium recorded scripts smoothly as well as commit your Test s
 
 7. Find your **Test case** in the Label section.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. For each label, the following information is displayed:
    * **Label Name:** Label name assigned to the Test case

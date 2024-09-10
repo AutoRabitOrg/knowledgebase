@@ -723,7 +723,7 @@
       * [ARM Deployment Metrics](product-guides/flowcenter/flowcenter-insights/dashboard-types/arm-deployment-metrics.md)
       * [ARM Version Control Activity](product-guides/flowcenter/flowcenter-insights/dashboard-types/arm-version-control-activity.md)
     * [Setting Up Your Default Dashboard](product-guides/flowcenter/flowcenter-insights/setting-up-your-default-dashboard.md)
-    * [DORA Metrics](product-guides/flow-center/flowcenter-insights/dora-metrics.md)
+    * [Support for DORA Metrics](product-guides/flow-center/flowcenter-insights/support-for-dora-metrics.md)
     * [Export your Insights data](product-guides/flow-center/flowcenter-insights/export-your-insights-data.md)
     * [Invite your CSM to FlowCenter Insights](product-guides/flow-center/flowcenter-insights/invite-your-csm-to-flowcenter-insights.md)
 

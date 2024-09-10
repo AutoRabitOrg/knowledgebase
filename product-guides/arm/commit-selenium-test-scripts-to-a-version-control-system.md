@@ -13,7 +13,7 @@ To playback the selenium recorded scripts smoothly as well as commit your Test s
 
 7. Find your **Test case** in the Label section.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. For each label, the following information is displayed:
    * **Label Name:** Label name assigned to the Test case
@@ -28,7 +28,7 @@ To playback the selenium recorded scripts smoothly as well as commit your Test s
 **Important Note:** The Open option will be disabled for Labels that are in **transformation in progress** status.
 {% endhint %}
 
-10. Click on the **log (**![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)**)** icon to view the log details.
+10. Click on the **log (**![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>)**)** icon to view the log details.
 11. If you would like to add further test data to the current test case, do so using **Add Test Data** option.
 12. Or, click on the **Commit to Version Control** button to complete the test transformation process.
 
@@ -36,4 +36,4 @@ To playback the selenium recorded scripts smoothly as well as commit your Test s
 
 13. The next screen will allow selecting your Version Control repository and its mapped branch where you will commit.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" width="453"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="453"><figcaption></figcaption></figure>

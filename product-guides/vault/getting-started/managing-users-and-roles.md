@@ -20,7 +20,7 @@ To create or edit a role:
 2. Go to the **Manage Users** module.
 3. Go to the **Roles** tab and click **Add Role**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Enter a **Name** and **Description** for the role.
 5. On the **Permissions** section, select checkboxes for each permission you want users with this role to have.
@@ -33,7 +33,7 @@ To create or edit a role:
    * The permissions you select determine which dashboard controls are in the user's console and what settings the user can manage.
 8. You can also update or delete a role by clicking on the **Edit** and **Delete** icon on the **Manage Users** screen.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Creating Users <a href="#creating-users" id="creating-users"></a>
 

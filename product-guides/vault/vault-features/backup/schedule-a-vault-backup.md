@@ -22,7 +22,7 @@ When you are done with the metadata/data selection, you will be navigated to the
     * **`Full-Backup`**: Full backup is a method of backup in which all the files and folders selected are backed up.
     * **`Incremental-Backup`**: An incremental backup operation will copy only the data/metadata that has been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the previous backup.
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the <img src="../../../../.gitbook/assets/image (70) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line"> icon to go to the **`Backup Settings`** page.
 
     * For **`Data`** objects, you can **`enable Bulk API`**. Bulk API is optimized to load or delete extensive records asynchronously due to parallel processing.&#x20;

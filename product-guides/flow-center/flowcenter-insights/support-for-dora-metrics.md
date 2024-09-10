@@ -6,7 +6,7 @@ FlowCenter Insights can help you in your journey towards thinking about software
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 

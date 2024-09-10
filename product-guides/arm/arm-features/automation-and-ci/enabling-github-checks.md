@@ -10,7 +10,7 @@ GitHub status checks are an excellent way to track and control the [CI/CD](../..
 
 GitHub repositories registered in AutoRABIT should have the pull request feature enabled. \[[Learn More](../version-control/external-pull-request/)]
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Protected Branches <a href="#protected-branches" id="protected-branches"></a>
 

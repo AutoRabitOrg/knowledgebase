@@ -1,4 +1,4 @@
-# System Requirements and Installation
+# System Requirements and Installation (On - Prem)
 
 ### Prerequisite <a href="#prerequisite" id="prerequisite"></a>
 
@@ -14,14 +14,6 @@ You must have a SonarQube™ server currently running in your environment. If yo
 {% hint style="info" %}
 **Note:** Depending on your use-case, this may be way too much or too little. As SonarQube™ stores all snapshots for a long time, the data can build up for a large project. Additionally, heavy usage for users would cause more load.
 {% endhint %}
-
-### SonarQube Compatibility Matrix
-
-The following compatibility chart identifies the SonarQube version compatible with the CodeScan Cloud Plug-In version. For on-premises clients, please visit the [Installing CodeScan Self-Hosted](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted) page.
-
-<table><thead><tr><th width="189">CodeScan Cloud Plug-In</th><th width="115">SQ 9.9 LTS</th><th width="91">SQ 10.0</th><th width="81">SQ 10.1</th><th>SQ 10.2</th><th>SQ 10.3</th><th>SQ 10.4</th><th>SQ 10.5</th><th>SQ 10.6</th></tr></thead><tbody><tr><td>24.1.0 (Aug 2024)</td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td></tr><tr><td>24.0.8 (July 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td></tr><tr><td>24.0.5 (June 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td></tr><tr><td>24.0.4 (April 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td></tr><tr><td>24.0.1 (Jan 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td></tr><tr><td>23.1.3 (Sept 2023)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td></tr></tbody></table>
-
-For our customers using a version of CodeScan not on the matrix (23.1.2 and older), please contact your CSM regarding compatibility.
 
 ### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
 

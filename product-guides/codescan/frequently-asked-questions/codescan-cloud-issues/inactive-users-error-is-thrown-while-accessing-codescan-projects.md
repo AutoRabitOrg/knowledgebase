@@ -1,20 +1,20 @@
-# 'Inactive users' error is thrown while accessing CodeScan projects
+# 'Inactive users' error occurs when accessing CodeScan projects
 
-Sometimes, an "**Inactive user**" error may appear upon analysis start:
+Sometimes, an "**Inactive user**" error may appear at the start of an analysis:
 
 ![](../../../../.gitbook/assets/image.png)
 
 It could be caused by the following scenarios, in which the user who created the project and provided credentials for it:
 
-* is no longer a member of the team and was removed
-* had their permissions changed in CodeScan
-* had their permissions changed in repo/environment which is scanned
+* Is no longer a member of the team and was removed.
+* Had their permissions changed in CodeScan.
+* Had their permissions changed in repo/environment that is scanned.
 
-To resolve the “**Inactive user**“ issue, you would need to reattach the project (without deleting its history).
+To resolve the “**Inactive user**“ issue, you need to reattach the project—without deleting its history.
 
-Please follow these steps:
+Follow these steps:
 
-1. Delete project analysis:
+1. Delete the project analysis:
 
 ![](<../../../../.gitbook/assets/image (1).png>)
 
@@ -26,10 +26,10 @@ Please follow these steps:
 
 ![](<../../../../.gitbook/assets/image (3).png>)
 
-3. Provide repo/ environment credentials:
+3. Provide repo/environment credentials:
 
 ![](<../../../../.gitbook/assets/image (4).png>)
 
-4. Rerun SCA, it should succeed
+4. Rerun the SCA; it should succeed.
 
-If all the steps above were completed, but issue persists, please reach out to [support@autorabit.com](mailto:support@autorabit.com)
+If the steps above were completed, but the issue persists, contact [support@autorabit.com](mailto:support@autorabit.com).

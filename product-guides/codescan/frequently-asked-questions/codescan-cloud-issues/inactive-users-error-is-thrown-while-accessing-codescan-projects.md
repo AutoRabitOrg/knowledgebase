@@ -1,8 +1,12 @@
-# 'Inactive users' error occurs when accessing CodeScan projects
+# Inactive user error
+
+## Error Description
 
 Sometimes, an "**Inactive user**" error may appear at the start of an analysis:
 
-![](../../../../.gitbook/assets/image.png)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## Cause
 
 It could be caused by the following scenarios, in which the user who created the project and provided credentials for it:
 
@@ -10,25 +14,27 @@ It could be caused by the following scenarios, in which the user who created the
 * Had their permissions changed in CodeScan.
 * Had their permissions changed in repo/environment that is scanned.
 
+## Solution
+
 To resolve the “**Inactive user**“ issue, you need to reattach the project—without deleting its history.
 
 Follow these steps:
 
 1. Delete the project analysis:
 
-![](<../../../../.gitbook/assets/image (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Important!** Don’t select '**Delete Project also?'** if you want to keep the current project and its history:
 
-![](<../../../../.gitbook/assets/image (2).png>)
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 2. Reattach analysis:
 
-![](<../../../../.gitbook/assets/image (3).png>)
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 3. Provide repo/environment credentials:
 
-![](<../../../../.gitbook/assets/image (4).png>)
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 4. Rerun the SCA; it should succeed.
 

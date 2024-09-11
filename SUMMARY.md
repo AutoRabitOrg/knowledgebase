@@ -609,7 +609,7 @@
       * [Salesforce Enhanced Domains Issues](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/salesforce-enhanced-domains-issues.md)
       * [Project reports are not available for branches created outside the CodeScan Cloud](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/project-reports-are-not-available-for-branches-created-outside-the-codescan-cloud.md)
       * [Project Analysis "Expired" Errors](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/project-analysis-expired-errors.md)
-      * ['Inactive users' error occurs when accessing CodeScan projects](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/inactive-users-error-is-thrown-while-accessing-codescan-projects.md)
+      * [Inactive user error](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/inactive-users-error-is-thrown-while-accessing-codescan-projects.md)
       * [Background Tasks](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/background-tasks.md)
       * [Unit Test Timeout](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/unit-test-timeout.md)
       * [Issue "ip restricted"](product-guides/codescan/frequently-asked-questions/codescan-cloud-issues/issue-ip-restricted.md)

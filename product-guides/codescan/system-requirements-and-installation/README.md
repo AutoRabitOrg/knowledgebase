@@ -1,4 +1,4 @@
-# System Requirements and Installation (On - Prem)
+# System Requirements and Installation Self-Hosted
 
 ### Prerequisite <a href="#prerequisite" id="prerequisite"></a>
 
@@ -18,11 +18,11 @@ You must have a SonarQube™ server currently running in your environment. If yo
 ### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
 
 1. Java version 11
-2. SonarQube™ 9.9 LTS+
+2. SonarQube™ 9.9 LTA+
 3. SonarJS 6.2+
 4. **Operating System (OS)**: Windows, Mac and Linux
 5. Latest available **Node.js LTS** version (v16 as of today)
-6. **CodeScan custom rule designer**: This is a designer tool to help build XPath Rules for self-hosted CodeScan. You can download the tool from [HERE](https://license.code-scan.com/index.php/download/login?path=codescan-designer-22.3.jar)
+6. **CodeScan custom rule designer**: This is a designer tool to help build XPath Rules for self-hosted CodeScan. You can download the tool [here](https://license.code-scan.com/index.php/download/login?path=codescan-designer-22.3.jar).
 
 ### Web Browser <a href="#web-browser" id="web-browser"></a>
 

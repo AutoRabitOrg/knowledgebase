@@ -12,15 +12,15 @@ You must have a SonarQube™ server currently running in your environment. If yo
 4. CodeScan must be installed on hard drives that have excellent read & write performance.
 
 {% hint style="info" %}
-**Note:** Depending on your use-case, this may be way too much or too little. As SonarQube™ stores all snapshots for a long time, the data can build up for a large project. Additionally, heavy usage for users would cause more load.
+**Note:** Depending on your use case, this may be way too much or too little. As SonarQube™ stores all snapshots for a long time, the data can build up for a large project. Additionally, heavy usage for users would cause more load.
 {% endhint %}
 
 ### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
 
 1. Java version 11
-2. SonarQube™ 9.9 LTA+
+2. SonarQube™ 9.9 LTA+ (See [compatibility matrix](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1).)
 3. SonarJS 6.2+
-4. **Operating System (OS)**: Windows, Mac and Linux
+4. **Operating System (OS)**: Windows, Mac, and Linux
 5. Latest available **Node.js LTS** version (v16 as of today)
 6. **CodeScan custom rule designer**: This is a designer tool to help build XPath Rules for self-hosted CodeScan. You can download the tool [here](https://license.code-scan.com/index.php/download/login?path=codescan-designer-22.3.jar).
 

@@ -24,7 +24,7 @@ Follow these steps:
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-**Important!** Don’t select '**Delete Project also?'** if you want to keep the current project and its history:
+**Important!** Do **not** select the checkbox to '**Delete Project also?'** if you want to keep the current project and its history:
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 

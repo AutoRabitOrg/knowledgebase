@@ -10,7 +10,7 @@ CodeScan Self-Hosted now has two versions available to meet your operating syste
 
 **CodeScan version 24.0.9** _(now compatible with **SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
 
-[**Downloads & Compatibility Chart**](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-download-versions-and-compatibility-chart)
+[**Downloads & Compatibility Chart**](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-downloads-and-compatibility-chart)
 
 [**Release Notes**](https://knowledgebase.autorabit.com/overview/release-notes/codescan-release-notes/on-premise-releases)
 

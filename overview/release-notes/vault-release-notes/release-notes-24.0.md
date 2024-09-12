@@ -1,6 +1,30 @@
 # Release Notes 24.0
 
-## Vault Release Notes
+## Vault 24.2 Release Notes
+
+**Release Date: 24 Sep 2024**
+
+#### **Overview**
+
+AutoRABIT is thrilled to announce a series of significant enhancements to our platform. These updates are designed to elevate your experience, offering improved performance, enhanced security, and greater reliability. Below, you'll find detailed information on the key updates included in this release.
+
+#### **Key Updates**
+
+1. **Operating System Upgrade**
+   * **Upgrade Details**: The platform's underlying operating system has been upgraded to the latest version.
+   * **Benefits**:
+     * **Enhanced Security**: The latest OS version includes critical security patches and updates to protect against vulnerabilities.
+     * **Improved Performance**: Users will experience faster processing speeds and more efficient resource management.
+2. **Core Libraries Upgrade**
+   * **Upgrade Details**: We have upgraded the core libraries that support our platform's infrastructure.
+   * **Benefits**:
+     * **Boosted Security**: Updated libraries reduce the risk of security breaches by addressing known issues.
+     * **Optimized Performance**: These upgrades enhance the overall performance, resulting in a smoother user experience.
+3. **Database Version Upgrade**
+   * **Upgrade Details**: The database powering our platform has been upgraded to a newer version.
+   * **Benefits**:
+     * **Smoother Operations**: The upgraded database improves transaction handling and data retrieval, leading to more reliable operations.
+     * **Increased Reliability**: Users can expect reduced downtime and improved stability, ensuring a seamless experience.
 
 ### Vault v24.1.19
 

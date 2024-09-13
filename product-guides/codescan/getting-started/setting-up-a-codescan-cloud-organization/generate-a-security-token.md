@@ -9,7 +9,15 @@ To generate the security tokens, follow the steps below:
 
 <figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. Next, click on **`Security`** tab.
+3.  CodeScan supports two types of security tokens - **User** and **Project** tokens:\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+    Generally, user's **User** token gives you full rights to the instance. A **Project** token gives you only right to run an analysis on the specific project it was generated for.
+
+    Select the type according to your needs.
+4. Next, click on **`Security`** tab.
 
 <figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="494"><figcaption></figcaption></figure>
 

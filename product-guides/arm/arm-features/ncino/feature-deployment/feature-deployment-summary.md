@@ -84,13 +84,17 @@ For each template revision, you can find the list of all data nCino objects that
 
 **Retrieved:** This section will tell you the total records that are being retrieved. You can even download the records on your local machine. The file format is downloaded in CSV format.
 
-**Success:** Fetch the successful records for each data object.
+**Success**: Now, the selected records can be downloaded using the download option. Click on the success record count.
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1536).png" alt=""><figcaption></figcaption></figure>
 
-**Failed:** Displays the failed records for each object.
+Click on “Success Count” for the pop-up to appear. A download option will be available for you to select. Click on the download option for the records to be downloaded. You will see the ‘.csv’ file being downloaded.
 
-<figure><img src="../../../../../.gitbook/assets/image (61) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1537).png" alt=""><figcaption></figcaption></figure>
+
+**Failed**: The failed records can be downloaded using the download option available. Click on the failure count for the pop-up to open. Use the ‘Download’ button on the pop-up to download the failed records.
+
+<figure><img src="../../../../../.gitbook/assets/image (1538).png" alt=""><figcaption></figcaption></figure>
 
 **Deployment Log**
 

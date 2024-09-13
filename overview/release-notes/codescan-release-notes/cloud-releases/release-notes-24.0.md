@@ -6,6 +6,55 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
+## Release Notes 24.0.11&#x20;
+
+**Release Date: September 18, 2024**&#x20;
+
+### Summary:&#x20;
+
+CodeScan 24.0.11 is comprised of the following 2 components:&#x20;
+
+* 1 Enhancement&#x20;
+* 1 Fix&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Enhancements&#x20;
+
+1. Org Names are no longer restricted to a single word only.&#x20;
+
+**Summary:**  Previously, customers had a restriction around Org Names, where they were only allowed to use a single word.  With this enhancement, that restriction has been removed.&#x20;
+
+Valid strings now include names such as:&#x20;
+
+* "My Organization"&#x20;
+* "Organization-123"&#x20;
+* "My Organization-123"&#x20;
+* "Org 123"&#x20;
+
+However, there are some restrictions regarding leading spaces, trailing spaces, trailing hyphens, and invalid characters such as:&#x20;
+
+* " Organization" (leading space)&#x20;
+* "Organization " (trailing space)&#x20;
+* "Organization- " (trailing hyphen)&#x20;
+* "My Organization-" (trailing hyphen)&#x20;
+* "Org-!Name" (contains an invalid character !)&#x20;
+
+### Fixes&#x20;
+
+1. Fixed issue in rule “sf:AvoidPublicFields”, where issues being flagged on private classes(which are false positives).&#x20;
+
+The rule sf:AvoidPublicFields identifies when public fields are used, and flags them as issues. Two of the three reasons this rule is important are:&#x20;
+
+* The internal representation is exposed, and thus cannot be easily changed&#x20;
+* When the value is changed in an unexpected way (for example nulled), the implementation may not handle it correctly&#x20;
+
+But these are not concerns when those public fields are on a private class. &#x20;
+
+This enhancement adds a private class validation check first and will not flag the 2 aforementioned issues if the class is a private class.&#x20;
+
+***
+
 ## Release Notes 24.0.10
 
 **Release Date: 28 August 2024**&#x20;

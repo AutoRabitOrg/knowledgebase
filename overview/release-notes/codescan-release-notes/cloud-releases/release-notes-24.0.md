@@ -19,11 +19,11 @@ CodeScan 24.0.11 is comprised of the following 2 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### Enhancements&#x20;
+### Enhancement&#x20;
 
-1. Org Names are no longer restricted to a single word only.&#x20;
+1. Org names are no longer restricted to only a single word.&#x20;
 
-**Summary:**  Previously, customers had a restriction around Org Names, where they were only allowed to use a single word.  With this enhancement, that restriction has been removed.&#x20;
+**Summary:**  Previously, customers had a restriction around Org names, in that they were only allowed to use a single word.  With this enhancement, that restriction has been removed.&#x20;
 
 Valid strings now include names such as:&#x20;
 
@@ -40,7 +40,7 @@ However, there are some restrictions regarding leading spaces, trailing spaces, 
 * "My Organization-" (trailing hyphen)&#x20;
 * "Org-!Name" (contains an invalid character !)&#x20;
 
-### Fixes&#x20;
+### Fix&#x20;
 
 1. Fixed issue in rule “sf:AvoidPublicFields”, where issues being flagged on private classes(which are false positives).&#x20;
 

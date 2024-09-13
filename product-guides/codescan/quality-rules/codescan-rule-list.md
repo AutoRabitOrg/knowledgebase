@@ -4,9 +4,9 @@ The CodeScan rule list is always expanding. You can view the complete current li
 
 Our [Release Notes](../../../overview/release-notes/codescan-release-notes/) also have a record of when certain rules were added.
 
-You can download the list of CodeScan rules from here:
+You can download the list of CodeScan rules from here (Last Updated Sept 6th 2024):&#x20;
 
-{% file src="../../../.gitbook/assets/CodeScan Rules List-06-05-24.xlsx" %}
+{% file src="../../../.gitbook/assets/CodeScan Rules List 9624.xlsx" %}
 
 ### Rules not available for On-Premises Applications
 

@@ -87,7 +87,7 @@
       * [What is a Subscription Code?](fundamentals/faq/codescan-faqs/general/what-is-a-subscription-code.md)
       * [How are Metric Definitions Defined?](fundamentals/faq/codescan-faqs/general/how-are-metric-definitions-defined.md)
       * [Can I use CodeScan with a proxy?](fundamentals/faq/codescan-faqs/general/can-i-use-codescan-with-a-proxy.md)
-      * [What Is Cyclomatic Complexity?](fundamentals/faq/codescan-faqs/general/how-is-cyclomatic-complexity-calculated.md)
+      * [What Is Cyclomatic Complexity?](fundamentals/faq/codescan-faqs/general/what-is-cyclomatic-complexity.md)
       * [Can I export my test results?](fundamentals/faq/codescan-faqs/general/can-i-export-my-test-results.md)
       * [CodeScan requests read and update permissions while connecting to Bitbucket](fundamentals/faq/codescan-faqs/general/codescan-requests-read-and-update-permissions-while-connecting-to-bitbucket.md)
     * [CodeScan Self-Hosted Issues](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/README.md)

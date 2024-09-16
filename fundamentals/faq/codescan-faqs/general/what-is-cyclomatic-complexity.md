@@ -2,7 +2,7 @@
 
 ## What Is Cyclomatic Complexity?&#x20;
 
-Cyclomatic complexity in [CodeScan](https://www.codescan.io/) is calculated by the number of decision points in a method. (like if, while, for, and case statements), plus one for the method entry. A higher cyclomatic complexity indicates more decision points, making the code harder to read, maintain, and test.
+Cyclomatic complexity in [CodeScan](https://www.codescan.io/) is calculated by the number of decision points in a method (like if, while, for, and case statements), plus one for the method entry. A higher cyclomatic complexity indicates more decision points, making the code harder to read, maintain, and test.
 
 ## **Complexity Levels:**
 
@@ -46,7 +46,7 @@ This does not include:
 
 The cyclomatic complexity for a class will be the average complexity between all methods in that class.
 
-## **How do I reduce Cyclomatic Complexity?**
+## **How Do I Reduce Cyclomatic Complexity?**
 
 * **Break Down Methods:** Split complex methods into smaller, more focused functions.
 * **Use Helper Methods:** Extract repetitive logic into separate methods.

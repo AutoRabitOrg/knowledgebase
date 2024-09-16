@@ -15,7 +15,9 @@ Cyclomatic complexity in [CodeScan](https://www.codescan.io/) is calculated by t
 
 The report-level parameter in tools that analyze cyclomatic complexity flags methods with a complexity of 10 or higher for further inspection. This helps identify methods that might need refactoring due to their complexity.
 
-For example, the below method would have a cyclomatic complexity of **5**.
+## How Is Cyclomatic Complexity Calculated?
+
+For example, the method below would have a cyclomatic complexity of **5**.
 
 ```
 public void newMethod() {
@@ -44,7 +46,7 @@ This does not include:
 
 The cyclomatic complexity for a class will be the average complexity between all methods in that class.
 
-## **Guidelines to Reduce Cyclomatic Complexity**
+## **How do I reduce Cyclomatic Complexity?**
 
 * **Break Down Methods:** Split complex methods into smaller, more focused functions.
 * **Use Helper Methods:** Extract repetitive logic into separate methods.

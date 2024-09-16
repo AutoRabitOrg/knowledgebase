@@ -1,6 +1,19 @@
-# How is Cyclomatic Complexity calculated?
+# What Is Cyclomatic Complexity?
 
-Cyclomatic complexity in [CodeScan](https://www.codescan.io/) is calculated by the number of decision points in a method.
+## What Is Cyclomatic Complexity?&#x20;
+
+Cyclomatic complexity in [CodeScan](https://www.codescan.io/) is calculated by the number of decision points in a method. (like if, while, for, and case statements), plus one for the method entry. A higher cyclomatic complexity indicates more decision points, making the code harder to read, maintain, and test.
+
+## **Complexity Levels:**
+
+* **1-4 (Low Complexity):** Simple methods, easy to understand and maintain.
+* **5-7 (Moderate Complexity):** Acceptable but should be monitored.
+* **8-10 (High Complexity):** Consider refactoring to simplify.
+* **11+ (Very High Complexity):** Strongly recommended to refactor.
+
+## **Significance of Report Level (default 10):**
+
+The report-level parameter in tools that analyze cyclomatic complexity flags methods with a complexity of 10 or higher for further inspection. This helps identify methods that might need refactoring due to their complexity.
 
 For example, the below method would have a cyclomatic complexity of **5**.
 
@@ -30,3 +43,13 @@ This does not include:
 * _**when else**_ in switch statements
 
 The cyclomatic complexity for a class will be the average complexity between all methods in that class.
+
+## **Guidelines to Reduce Cyclomatic Complexity**
+
+* **Break Down Methods:** Split complex methods into smaller, more focused functions.
+* **Use Helper Methods:** Extract repetitive logic into separate methods.
+* **Simplify Conditionals:** Refactor nested if statements into simpler, sequential checks.
+* **Use Switch Statements:** For multiple conditions, switch statements can streamline the logic.
+
+Following these guidelines will help you write cleaner, more maintainable, and less error-prone Apex code.
+

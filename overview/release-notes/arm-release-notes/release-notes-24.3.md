@@ -108,7 +108,7 @@ An issue has been resolved where the "Include Custom Objects Child Profile Visib
 
 **Release Date: 22 September 2024**
 
-See the Release Notes for nCino 24.3.2 improvements published on the Knowledge Base at[https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-24.3#ncino-release-notes-24.3.2](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-24.3#ncino-release-notes-24.3.2)
+See the Release Notes for [nCino 24.3.2](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-24.3#ncino-release-notes-24.3.2) improvements published on the Knowledge Base.
 
 &#x20;
 

@@ -67,6 +67,22 @@ To integrate all the functionality in your CodeScan license with ARM, you must i
 6. Click on **`Test Connection`** to authenticate your details.
 7. Click **`Save`** on the **My Account** page to save the plugin configuration.
 
+#### **Excluding a File in ARM+CodeScan Integration**
+
+To exclude a file from the ARM side using CodeScan, follow these steps:
+
+1. Go to **Admin** → **My Account** → **Plugins** → **Static Code Analysis**.
+2. Click on **Edit** for the CodeScan settings.
+
+<figure><img src="../../../../.gitbook/assets/image (1539).png" alt=""><figcaption></figcaption></figure>
+
+3. In the CodeScan settings, use the **Source File Exclusion** feature to specify the file(s) to exclude.
+
+<figure><img src="../../../../.gitbook/assets/image (1540).png" alt=""><figcaption></figcaption></figure>
+
+4. Save the settings.
+5. Rerun the analysis. The specified files will be excluded from the analysis.
+
 #### 3.4 Integrate Salesforce Scanner <a href="#id-34-integrate-salesforce-scanner" id="id-34-integrate-salesforce-scanner"></a>
 
 The Salesforce Scanner plugin aggregates the results of static analyzers most relevant to Salesforce developers by employing a unified set of rules checked by their respective rule engines, making additional configuration rules optional.

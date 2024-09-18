@@ -100,8 +100,17 @@ An issue where the "Validate Only" option in CI jobs was not functioning correct
 
 **UI Display for "Include Custom Objects Child Profile Visibilities"**
 
-An issue has been resolved where the "Include Custom Objects Child Profile Visibilities" button was incorrectly displayed in the UI when neither profile nor custom objects were selected. Now, the button only appears when both profile and custom objects are selected, ensuring the UI functions as intended during the EZ-commit process. Support Case: #121998\
+An issue has been resolved where the "Include Custom Objects Child Profile Visibilities" button was incorrectly displayed in the UI when neither profile nor custom objects were selected. Now, the button only appears when both profile and custom objects are selected, ensuring the UI functions as intended during the EZ-commit process. Support Case: #121998
 
+
+
+## nCino Improvements
+
+**Release Date: 22 September 2024**
+
+See the Release Notes for nCino 24.3.2 improvements published on the Knowledge Base at[https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-24.3#ncino-release-notes-24.3.2](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-24.3#ncino-release-notes-24.3.2)
+
+&#x20;
 
 ## Release Notes 24.3.1
 

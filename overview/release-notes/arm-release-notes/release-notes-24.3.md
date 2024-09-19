@@ -1,15 +1,5 @@
 ---
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+layout: landing
 ---
 
 # Release Notes 24.3

@@ -1,6 +1,10 @@
 # 'Packfile is truncated' error
 
-**Error:** While analyzing the project, you may encounter a “Packfile is truncated” error.
+**Error:** While analyzing the project, you may encounter a “Packfile is truncated” error.&#x20;
+
+**Cause**: Initially, access to CodeScan was denied on GitHub.&#x20;
+
+Here is the reference #108597
 
 **Resolution:**
 
@@ -9,4 +13,4 @@
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3. **Retry Analysis:** After securing access, reattempt the project analysis. The error should no longer appear.
+3. **Retry Analysis:** After granting access to CodeScan in GitHub and integrating it with CodeScan, start the connection, then reattempt the project analysis. The error should no longer appear. The repositories should be synced. CodeScan should indicate the analysis was triggered, and the user should see the issues.

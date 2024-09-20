@@ -35,7 +35,7 @@ Project keys differ from project to project as the **organization** and **projec
 
 3. This will start the analysis directly on the [CodeScan cloud](https://www.codescan.io/products/cloud/).
 4. To learn how to generate a **Security Token**, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
-5. If you want to run the analysis in the [CodeScan Self-Hosted](https://www.codescan.io/products/self-hosted/), then make the following changes in the command:
+5. If you want to run the analysis in [CodeScan Self-Hosted](https://www.codescan.io/products/self-hosted/), [CodeScan Cloud EU](https://app-eu.codescan.io/), or [CodeScan Cloud AUS](https://app-aus.codescan.io/), then make the following changes in the command:
    * Add _**--server <**Server Name**>**_&#x20;
    * Replace **Project key**
    * Replace **Organization key**

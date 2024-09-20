@@ -12,9 +12,7 @@
 ### Before you begin <a href="#before-you-begin" id="before-you-begin"></a>
 
 * You will need an excellent working knowledge of XPath to get this operational.
-* [Download the **Apex-Custom Rule Designer**](https://license.codescan.io/index.php/download/login?path=codescan-designer-22.6.2.jar) .
-
-
+* [Download the **Apex-Custom Rule Designer**](https://license.codescan.io/index.php/download/login?path=codescan-designer-22.6.2.jar).
 
 {% hint style="info" %}
 Note: To download the Apex Rule Designer tool, you need a subscription code.

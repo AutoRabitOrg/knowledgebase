@@ -14,7 +14,7 @@ A new global filter is available to help users remove validation deployments fro
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="332"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="332"><figcaption></figcaption></figure>
 
 </div>
 

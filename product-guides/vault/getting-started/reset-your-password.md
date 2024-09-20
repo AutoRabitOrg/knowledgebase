@@ -14,7 +14,7 @@ If you have not requested to reset your password and receive an email asking you
 
 1. Anyone can reset their password by clicking the **Forgot Password?** link on the sign-in page.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Forgot Password"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Forgot Password"><figcaption></figcaption></figure>
 
 2. Check your inbox for a password reset email.
 3. Click on the **URL** provided in the email and enter a new password.

@@ -8,7 +8,7 @@ description: Newest CodeScan Releases
 
 ## Release Notes 24.0.11&#x20;
 
-**Release Date: September 18, 2024**&#x20;
+**Release Date: September 25, 2024**&#x20;
 
 ### Summary:&#x20;
 

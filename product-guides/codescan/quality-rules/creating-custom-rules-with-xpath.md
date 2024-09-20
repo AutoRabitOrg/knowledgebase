@@ -14,6 +14,12 @@
 * You will need an excellent working knowledge of XPath to get this operational.
 * [Download the **Apex-Custom Rule Designer**](https://license.codescan.io/index.php/download/login?path=codescan-designer-22.6.2.jar) .
 
+
+
+{% hint style="info" %}
+Note: To download the Apex Rule Designer tool, you need a subscription code.
+{% endhint %}
+
 Installing the Apex-Custom Rule Designer
 
 Run the following command to install the downloaded _Apex-Custom Rule Designer_:

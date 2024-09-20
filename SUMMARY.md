@@ -601,7 +601,7 @@
     * [Setting a Default Quality Profile](product-guides/codescan/quality-profiles/setting-a-default-quality-profile.md)
   * [Quality Gates](product-guides/codescan/quality-gates/README.md)
     * [Assigning Quality Gates to Specific Projects](product-guides/codescan/quality-gates/assigning-quality-gate-to-specific-projects.md)
-    * [Customizing Quality Gates](product-guides/codescan/quality-gates/customising-quality-gates.md)
+    * [Customizing Quality Gates](product-guides/codescan/quality-gates/customizing-quality-gates.md)
   * [CodeScan Rules](product-guides/codescan/quality-rules/README.md)
     * [CodeScan Rule List](product-guides/codescan/quality-rules/codescan-rule-list.md)
     * [Creating Custom Rules with XPath](product-guides/codescan/quality-rules/creating-custom-rules-with-xpath.md)

@@ -18,22 +18,12 @@ To fix the above errors, first you need to delete the **Analysis Project**, to d
 
 <figure><img src="../../../../.gitbook/assets/image (446).png" alt=""><figcaption></figcaption></figure>
 
-4. Now use the **Attach Analysis Project** button at the top right of the screen to re-add the link.
+4. Now use the **Attach Analysis Project** button at the top right of the screen to add the link.
 
 <figure><img src="../../../../.gitbook/assets/image (447).png" alt=""><figcaption></figcaption></figure>
 
-5.  You will now see a new popup window. Select the required option from the options given (e.g., Bitbucket).\
+5.  You will now see a new popup window. Select the required option from the options given.\
 
 
     <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-6.  Once you select **Bitbucket**, it will redirect you to the **Bitbucket login page**. Validate your credentials and click on **Login**.\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
-7.  Once you fill out all the details in the popup window, select **Add and Run Now**.\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-8. Choose the repository you want to add, followed by the **Project Branch** name.
-9. Make sure you select the checkbox under **Check Pull Requests**.
-10. This triggers the project analysis along with the project being added under your CodeScan organization.
+6. Run the request.&#x20;

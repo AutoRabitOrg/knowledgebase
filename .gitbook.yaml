@@ -444,6 +444,7 @@ redirects:
     codescan/docs/users-roles-and-permissions: product-guides/codescan/getting-started/users-roles-and-permissions.md
     codescan/docs/copado: product-guides/codescan/codescan-integration/copado.md
     codescan/docs/codescan-support: product-guides/codescan/codescan-support.md
+    product-guides/codescan/codescan-support/reattaching-bitbucket-projects: fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects.md
     codescan: product-guides/codescan/codescan-overview.md
     codescan/en: product-guides/codescan/codescan-overview.md
     codescan/docs/security-reports: product-guides/codescan/report-and-analysis/scheduled-reports.md

@@ -619,6 +619,7 @@
     * [Importing Salesforce CLI Code Coverage](product-guides/codescan/report-and-analysis/importing-salesforce-cli-code-coverage.md)
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)
+    * [Reattaching Bitbucket Projects](product-guides/codescan/codescan-support/reattaching-bitbucket-projects.md)
   * [CodeScan Integration](product-guides/codescan/codescan-integration/README.md)
     * [Single Sign-On (SSO)](product-guides/codescan/codescan-integration/single-sign-on-sso/README.md)
       * [Single Sign-On with OKTA](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-okta.md)

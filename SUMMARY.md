@@ -107,7 +107,7 @@
       * [Salesforce Enhanced Domains Issues](fundamentals/faq/codescan-faqs/codescan-cloud-issues/salesforce-enhanced-domains-issues.md)
       * [Project reports are not available for branches created outside the CodeScan Cloud](fundamentals/faq/codescan-faqs/codescan-cloud-issues/project-reports-are-not-available-for-branches-created-outside-the-codescan-cloud.md)
       * [Project Analysis "Expired" Errors](fundamentals/faq/codescan-faqs/codescan-cloud-issues/project-analysis-expired-errors.md)
-      * [Reattaching Bitbucket Projects](fundamentals/faq/codescan-faqs/codescan-cloud-issues/project-analysis-expired-errors-1.md)
+      * [Reattaching Bitbucket Projects](fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects.md)
       * [Inactive user error](fundamentals/faq/codescan-faqs/codescan-cloud-issues/inactive-users-error-is-thrown-while-accessing-codescan-projects.md)
       * [Background Tasks](fundamentals/faq/codescan-faqs/codescan-cloud-issues/background-tasks.md)
       * [Unit Test Timeout](fundamentals/faq/codescan-faqs/codescan-cloud-issues/unit-test-timeout.md)

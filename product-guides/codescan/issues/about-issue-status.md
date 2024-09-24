@@ -1,6 +1,6 @@
 # About Issue Status
 
-**About Issues Status:**
+## **Issue Status**
 
 An issue can have the following statuses:
 

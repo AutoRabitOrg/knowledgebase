@@ -1,19 +1,17 @@
 # Security Hotspots
 
-## **Security Hotspots**
-
-### **What is a Security Hotspot?**
+## **What is a Security Hotspot?**
 
 A security hotspot identifies a piece of code that is sensitive to security issues and requires developer review. Upon reviewing the hotspot, you will determine whether there is an actual threat or if a fix is needed to secure the code.
 
-### **Is it a Vulnerability or a Hotspot?**
+## **Is it a Vulnerability or a Hotspot?**
 
 The main difference between a hotspot and a vulnerability is the need for review before deciding on a fix:
 
 * **Hotspot:** A hotspot points out a security-sensitive piece of code. While it may not immediately impact the overall security of the application, it requires a developer's review to decide if a fix is necessary.
 * **Vulnerability:** A vulnerability directly identifies a security issue that affects the application's security and needs to be addressed immediately.
 
-### **Why are security hotspots important?**
+## **Why are security hotspots important?**
 
 While the need to address individual hotspots depends on the specific context, security hotspots are crucial for enhancing an application's robustness. Addressing more hotspots generally leads to more secure code, which better withstands potential attacks. Reviewing security hotspots allows you to:
 
@@ -21,7 +19,7 @@ While the need to address individual hotspots depends on the specific context, s
 2. **Identify Protections:** Reviewing hotspots helps you recognize how to avoid writing vulnerable code, assess which protections are already in place, and identify which fixes still need to be applied.
 3. **Assess Impacts:** Hotspots guide you in applying fixes to enhance your code's security based on its overall impact on the application's security. The hotspots page typically includes recommended secure coding practices to aid you during the review process.
 
-### **Status**
+## **Status**
 
 Throughout its lifecycle, a security hotspot can have one of the following statuses:
 

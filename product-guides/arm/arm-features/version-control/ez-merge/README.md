@@ -33,7 +33,7 @@ The merge process is generally performed when a feature is ready for user testin
 4. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 5. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6.  Select the **`Merge Type`** from the dropdown:
 

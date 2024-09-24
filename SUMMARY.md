@@ -614,6 +614,7 @@
     * [Filtering Issues in CodeScan](product-guides/codescan/issues/filtering-issues-in-codescan.md)
     * [Export issues to CSV in CodeScan Cloud](product-guides/codescan/issues/export-issues-to-csv-in-codescan-cloud.md)
     * [Exporting Issues using CodeScan-Export Tool](product-guides/codescan/issues/exporting-issues-using-codescan-export-tool.md)
+    * [About Issue Status](product-guides/codescan/issues/about-issue-status.md)
   * [Report and Analysis](product-guides/codescan/report-and-analysis/README.md)
     * [Scheduled Reports](product-guides/codescan/report-and-analysis/scheduled-reports.md)
     * [Analysis Scope on CodeScan Cloud](product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud.md)

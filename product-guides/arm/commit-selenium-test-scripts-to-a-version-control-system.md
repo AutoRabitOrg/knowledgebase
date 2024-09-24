@@ -13,7 +13,7 @@ To playback the selenium recorded scripts smoothly as well as commit your Test s
 
 7. Find your **Test case** in the Label section.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. For each label, the following information is displayed:
    * **Label Name:** Label name assigned to the Test case
@@ -22,7 +22,7 @@ To playback the selenium recorded scripts smoothly as well as commit your Test s
    * **Delete the Test Case:** Delete the Test case permanently
 9. Click on the **Open** icon to view the test case details on the right side of the screen.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** The Open option will be disabled for Labels that are in **transformation in progress** status.

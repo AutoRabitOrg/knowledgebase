@@ -1,6 +1,6 @@
 # CI Jobs
 
-#### 1. When "Quick Deploy" option will be available in CI job? <a href="#id-1-when-quick-deploy-option-will-be-available-in-ci-job" id="id-1-when-quick-deploy-option-will-be-available-in-ci-job"></a>
+#### 1. When will the "Quick Deploy" option be available in a CI Job? <a href="#id-1-when-quick-deploy-option-will-be-available-in-ci-job" id="id-1-when-quick-deploy-option-will-be-available-in-ci-job"></a>
 
 Quick deployments are available when the following requirements are met.
 
@@ -9,6 +9,7 @@ Quick deployments are available when the following requirements are met.
 * Code coverage requirements are met.
 * If all tests in the org or all local tests are run, overall code coverage is at least _75%_, and Apex triggers have some coverage.
 * If specific tests are run with the _Run specified tests_ test level, each class and trigger that was deployed is covered by at least 75% individually.
+* The 'Prevent Deployment' checkbox is NOT selected in the CI Job setting.
 
 #### 2. Why isn't the CI Job able to choose the changes for commits that have already been validated? <a href="#id-2-why-isnt-the-ci-job-able-to-choose-the-changes-for-commits-that-have-already-been-validated" id="id-2-why-isnt-the-ci-job-able-to-choose-the-changes-for-commits-that-have-already-been-validated"></a>
 
@@ -97,3 +98,11 @@ To create or import the package, follow the articles below:
 Create a Package: [Create an Unlocked/Managed Package | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/create-an-unlocked-managed-package)
 
 Import a Package: [Import an Unlocked/Managed Package | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/import-an-unlocked-managed-package)
+
+#### 17. What is causing the 'Not Eligible for Quick Deploy' popup after selecting 'Quick Deploy' in the CI Job?
+
+This error will occur when the 'Prevent Deployment' checkbox is enabled in the CI Job setting. Deselect the checkbox, then proceed with the Quick Deploy.
+
+#### 18. Why am I receiving the error message: Cannot invoke "String.startsWith(String)"?&#x20;
+
+This occurs when the return value of "com.autorabit.entity.admin.UserProject.getProjectType()" is null. A fix has been incorporated in the ARM 23.1.24 release. Reference support ticket # 109042.

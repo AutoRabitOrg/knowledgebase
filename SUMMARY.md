@@ -92,6 +92,7 @@
       * [What Is Cyclomatic Complexity?](fundamentals/faq/codescan-faqs/general/what-is-cyclomatic-complexity.md)
       * [Can I export my test results?](fundamentals/faq/codescan-faqs/general/can-i-export-my-test-results.md)
       * [CodeScan requests read and update permissions while connecting to Bitbucket](fundamentals/faq/codescan-faqs/general/codescan-requests-read-and-update-permissions-while-connecting-to-bitbucket.md)
+      * [Best Practices](fundamentals/faq/codescan-faqs/general/best-practices.md)
     * [CodeScan Self-Hosted Issues](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/README.md)
       * [PKIX Path Building Failed](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/pkix-path-building-failed.md)
       * [CodeScan Update Binding Failure](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-update-binding-failure.md)

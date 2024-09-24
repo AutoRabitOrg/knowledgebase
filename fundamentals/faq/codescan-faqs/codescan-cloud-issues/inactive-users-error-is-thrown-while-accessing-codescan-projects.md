@@ -22,7 +22,7 @@ Follow these steps:
 
 1. Delete the project analysis:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Important!** Do **not** select the checkbox to '**Delete Project also?'** if you want to keep the current project and its history:
 

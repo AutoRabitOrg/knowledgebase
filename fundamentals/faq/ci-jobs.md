@@ -102,3 +102,7 @@ Import a Package: [Import an Unlocked/Managed Package | AutoRABIT Knowledge Base
 #### 17. What is causing the 'Not Eligible for Quick Deploy' popup after selecting 'Quick Deploy' in the CI Job?
 
 This error will occur when the 'Prevent Deployment' checkbox is enabled in the CI Job setting. Deselect the checkbox, then proceed with the Quick Deploy.
+
+#### 18. Why am I receiving the error message: Cannot invoke "String.startsWith(String)"?&#x20;
+
+This occurs when the return value of "com.autorabit.entity.admin.UserProject.getProjectType()" is null. A fix has been incorporated in the ARM 23.1.24 release. Reference support ticket # 109042.

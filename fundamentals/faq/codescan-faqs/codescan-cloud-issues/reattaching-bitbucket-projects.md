@@ -37,11 +37,11 @@ Follow these steps to reattach your project analysis:
 5.  You will now see a new popup window. Select the required option from the options given (e.g., Bitbucket).\
 
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 6.  Once you select **Bitbucket**, it will redirect you to the **Bitbucket login page**. Validate your credentials and click on **Login**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 7.  Once you fill out all the details in the popup window, select **Add and Run Now**.\
 
 

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Best Practices
 
 ## CodeScan FAQs – Best Practices

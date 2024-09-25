@@ -2,7 +2,7 @@
 
 At AutoRABIT, we have made some changes to make our Bitbucket project webhooks more secure. To take advantage of this change, Bitbucket projects that were created in CodeScan need to be reattached.
 
-This will not erase the history of your project, it will only reconnect the CodeScan project with the Bitbucket repository.
+[CodeScan Cloud](https://www.codescan.io/products/cloud/) allows you to do this _without erasing_ the historical data present in your project. It will only reconnect the CodeScan project with the Bitbucket repository.
 
 {% hint style="info" %}
 This only affects projects created in CodeScan with our internal integration.
@@ -12,8 +12,6 @@ This **DOES NOT** include:
 * Projects created from Bitbucket pipelines
 * Projects being cloned from Bitbucket and scanned from a separate CI platform
 {% endhint %}
-
-[CodeScan Cloud](https://www.codescan.io/products/cloud/) allows you to do this _without erasing_ the historical data present in your project.
 
 Follow these steps to reattach your project analysis:
 
@@ -34,18 +32,19 @@ Follow these steps to reattach your project analysis:
 
 <figure><img src="../../../../.gitbook/assets/image (447).png" alt=""><figcaption></figcaption></figure>
 
-5.  You will now see a new popup window. Select the required option from the options given (e.g., Bitbucket).\\
+5.  You will now see a new popup window. Select the required option from the options given (e.g., Bitbucket).
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-6.  Once you select **Bitbucket**, it will redirect you to the **Bitbucket login page**. Validate your credentials and click on **Login**.\\
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+6.  Once you select **Bitbucket**, it will redirect you to the **Bitbucket login page**. Validate your credentials and click on **Login**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-7.  Once you fill out all the details in the popup window, select **Add and Run Now**.\\
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+7. Choose your **repository**.&#x20;
 8. Make sure you select the checkbox under **Check Pull Requests**.
-9.  This triggers the project analysis along with the project being added under your CodeScan organization.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
-10. Make sure you select the checkbox under **Check Pull Requests**.
-11. This triggers the project analysis and adds the project to your CodeScan organization.
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+8. Once you fill out all the details in the popup window, select **Add and Run Now**.
+9. This triggers the project analysis along with the project being added under your CodeScan organization.

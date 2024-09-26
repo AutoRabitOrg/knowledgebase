@@ -68,7 +68,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a commit label issue ([#38275](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063874030)).
 * Fixed an issue with SSO where users had to log in twice before being able to use the AutoRABIT application ([#36634](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000059319963)).
 * The issue with the SSO domain has been fixed ([#37232](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000061168477)).
-* Fixed data loader audit logs issue ([#37688](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062385762)).
+* Fixed dataloader audit logs issue ([#37688](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062385762)).
 * Fixed an issue where the users were unable to exclude _EmbeddedServiceLiveAgent_ from CI Job ([#38261](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063818321)).
 * Fixed an issue where the user couldn't delete a job with special characters in its name ([#38332](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064061141)).
 * Fixed an issue where users were unable to compare profiles using the _Profile Manager_ feature in the _Deployment_ module ([#36978](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000060367023)).

@@ -101,9 +101,9 @@ _**What is AutoRABIT doing to help customers?**_
 
 AutoRABIT is committed to delivering an exceptional customer experience. We continue to work closely with Salesforce to overcome limitations where they exist. While we jointly pursue a more elegant solution, please use the workaround cited above and continue providing the much-needed feedback that makes AutoRABIT the best choice for Salesforce DevOps. Stay tuned for our weekly updates where new information will be communicated.
 
-## Data Loader <a href="#dataloader" id="dataloader"></a>
+## Dataloader <a href="#dataloader" id="dataloader"></a>
 
-1. Execution Governors Limitations handled by AutoRABIT's Data Loader Pro
+1. Execution Governors Limitations handled by AutoRABIT's Dataloader Pro
    * A total number of records retrieved by SOQL queries if it is greater than 50,000 limits- Dataloader Pro uses the **"Querymore"** operator to retrieve all the records that are greater than 50,000 limits.
    * SOQL query runtime before Salesforce cancels the transaction is above 120 seconds- As per the Salesforce execution governors limitation, the maximum SOQL query runtime before Salesforce cancels the transaction is 120 seconds. If it is beyond 120 seconds, this cannot be handled by our Dataloader Pro.
    * SOQL characters length should be 20,000 characters- Dataloader Pro divides a single query into multiple queries and execute them. Getting proper estimation while saving a [Dataloader](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) job, is very difficult as the queries are randomly generated. This normally occurs in two different scenarios:

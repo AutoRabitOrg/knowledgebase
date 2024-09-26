@@ -1,8 +1,8 @@
-# Data Loader Encryption and Data Storage - FAQ
+# Dataloader Encryption and Data Storage - FAQ
 
 #### Frequently Asked Questions
 
-**1. Is there any encryption for Data Loader files? We don't want our data or upload files (e.g., CSV files) to be accessible by AutoRABIT or any other party.**
+**1. Is there any encryption for Dataloader files? We don't want our data or upload files (e.g., CSV files) to be accessible by AutoRABIT or any other party.**
 
 **Answer:** AutoRABIT does not encrypt CSV files. However, the EBS volumes are encrypted using AWS KMS keys.
 
@@ -12,4 +12,4 @@
 
 **3. Where is the result data (including exported data) physically stored, and can it be moved to a specific location (e.g., Another country)? Can we ensure this data is not stored in AutoRABIT?**
 
-**Answer:** AutoRABIT does not delete data in the Data Loader functionality until the customer deletes it.  For example, The ap5.autorabit.com instance is hosted in an AWS Singapore data centre, and the data is stored in EBS volumes with AWS KMS keys in the same region.
+**Answer:** AutoRABIT does not delete data in the Dataloader functionality until the customer deletes it.  For example, The ap5.autorabit.com instance is hosted in an AWS Singapore data centre, and the data is stored in EBS volumes with AWS KMS keys in the same region.

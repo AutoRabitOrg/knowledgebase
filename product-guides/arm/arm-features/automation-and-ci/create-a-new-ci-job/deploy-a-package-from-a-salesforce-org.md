@@ -152,7 +152,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 * **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
 * **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
 * **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
-* **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
+* **Run Dataloader Process or Group:** Trigger the dataloader process once the build is successful.
 * **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
 * **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
 * **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE ](../parallel-processor.md) .
@@ -163,7 +163,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 
 9.  However, **XYZ** would like to run the above activities in the following sequence:
 
-    * First, the DataLoader job
+    * First, the Dataloader job
     * Second, CI Job and
     * Environment Provisioning template at last.
 

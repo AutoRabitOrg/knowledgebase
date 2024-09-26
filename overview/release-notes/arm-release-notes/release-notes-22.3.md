@@ -102,7 +102,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 * The **Users** module now displays the last login date and time of the users instead of the phone number, and the first and last names appear under the single **Name** column for better monitoring and tracking.
 * **Super Admin** can now enter the desired thread pool count while registering an ARM agent.
 * Customers can now request for **Pendo** and **Full Story** to be enabled or disabled for their instance. Simple toggle buttons to do this are added under the **Product Analytics** section on the **Super User Accounts** page. Only **Super Admin** will have access to this section.
-* In **DataLoader**,
+* In **Dataloader**,
   * The number of records that are going to be impacted by the specific operation (Extract, Insert, Update, Upsert, or Delete) is displayed as a message before the operation begins and also on the **Summary** screen as **Records**.
   * **Filters** have been added to differentiate between the mapped and unmapped fields when auto-map is selected.
   * **Success** and **error count** of records is displayed while the job is still in progress.\
@@ -454,7 +454,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Custom field property** didn’t deploy in CI Jobs and Deployment.
 * Fixed an issue where **Diff report** is not generated in New Deployment Module.
 * Fixed an issue where **Unsupported metadata template** execution is failing in **Sandbox Refresh** in **Environment Provisioning** module.
-* Enhanced **DataLoader uber jar upgrade to 58.0.3**.
+* Enhanced **Dataloader uber jar upgrade to 58.0.3**.
 * Fixed an issue where we are facing **Record Configuration** Time Out in nCino.
 * Enhanced UI in **Post Deployment** activities result page in CI Job – nCino.
 * Enhanced the **View details page** not being visible unless post-deployment activities are completed – nCino.
@@ -469,13 +469,13 @@ This is a maintenance release. The following items were fixed and/or added:
 * Upgraded **Provar** to **version 2.10.1**.
 * Fixed an issue where the **Approval** option wasn't functional for **L1 Approvers**, and the **Org Admin** couldn't bypass the approval gate on EZ-Merge.
 * Fixed an issue with **nCino** where user created a **Feature** deployment task, but the jobs were stuck the queue.
-* Introduced a new feature in **DataLoader** called **Hard Delete** which can be used to delete the data completely and permanently instead of sending it to the **Recycle Bin** of the org.
+* Introduced a new feature in **Dataloader** called **Hard Delete** which can be used to delete the data completely and permanently instead of sending it to the **Recycle Bin** of the org.
 * Fixed an issue where **CI Job build** history was not displaying the results and throwing a blank page instead.
 * Fixed a UI bug where **Abort** option for CI job was displaying even after the build was successful.
 * Fixed an issue where duplicate ALM Commit entries were Displaying while performing ALM Commit with Vlocity repository.
 * Fixed an issue where the CI edit configuration screen was taking longer to load than expected before throwing `Page Unresponsive` alert.
-* Fixed an issue with **DataLoader Pro** where user created a new job and applied filter, but the source and destination orgs are taken from history page.
-* Fixed an issue with **DataLoader** where **Insert** operation bulk API selection was resulting in console error message `serializeToString`.
+* Fixed an issue with **Dataloader Pro** where user created a new job and applied filter, but the source and destination orgs are taken from history page.
+* Fixed an issue with **Dataloader** where **Insert** operation bulk API selection was resulting in console error message `serializeToString`.
 * Fixed an issue where **Vlocity** metadata components were getting expanded on the **Finish** page.
 
 #### 11 June 2023 <a href="#id-11-june-2023" id="id-11-june-2023"></a>
@@ -506,8 +506,8 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where while performing any commit, **Pull Request** enabled **CI Job** was triggering as expected; but its **Build** and **Deployment** status was not added in the **Comments** in **Bitbucket** ([#72811](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000112765004)).
 * Fixed an issue where **EZ-Commits** were stuck with **In-progress** status for a few hours before failing. But the commit revisions were generated at the repository level and updated in ARM database ([#72817](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000112807012)).
 * Fixed an issue where the **Git author** was overridden by ARM ([#71393](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111202442)).
-* Fixed an issue with **DataLoader** where user was unable to create an **Update** job because the functionality prompoted user to select the **Required field** within the **Mapping Fields** ([#73515](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113850003)).
-* Fixed an issue with DataLoader where user was getting a **script error** in the console while editing an existing old job (internal ticket).
+* Fixed an issue with **Dataloader** where user was unable to create an **Update** job because the functionality prompoted user to select the **Required field** within the **Mapping Fields** ([#73515](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000113850003)).
+* Fixed an issue with Dataloader where user was getting a **script error** in the console while editing an existing old job (internal ticket).
 * Fixed an issue where **Destructive** commit for DX was not working as expected for **Documents**, **Reports**, and **Dashboards** types (internal ticket).
 * Fixed an issue where the **Layout** file was not displayed in the **Review Artifact** screen after resolving the layout **duplicates** (internal ticket).
 * Fixed an issue where **4 CI jobs** were running parallelly even though the **parallel process limit** was **1** on the e**xternal agent** (internal ticket).
@@ -524,7 +524,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where CI job deployment was failing because the build was picking duplicate **Layout** values ([#71214](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000110698400)).
 * Fixed an issue where unwanted metadata changes were observed in the **package.xml** file while performing a commit ([#72089](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000112054140) and [#71820](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111655842)).
 * Fixed an issue where **Branching Baseline** was not picking all the components from production ([#70720](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000110077004)).
-* Enhanced **DataLoader** by adding related objects and the fields of those objects displayed, so you can select the required fields of the related objects in the filter criteria and edit the query through SOQL editor ([#58549](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095408144) and [#38339](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064118003)).
+* Enhanced **Dataloader** by adding related objects and the fields of those objects displayed, so you can select the required fields of the related objects in the filter criteria and edit the query through SOQL editor ([#58549](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095408144) and [#38339](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064118003)).
 * Fixed an issue with **nCino** where CI jobs that used a **Deployment** from **Version Control** were failing when the build was triggered ([#71914](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111840343)).
 * Improved the **New Merge** screen by adding **Layouts** text in the **Skip Flow /Profile/ Perm.Set Access-Setting Duplicity Check** option (internal ticket).
 * Fixed a UI bug where **SF Org Test Connection** notification message was displayed on an unrelated module (internal ticket).
@@ -541,8 +541,8 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where CI job build failed to show changes in the org after deployment ([#70791](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000110120443) and [#71956](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111861212)).
 * Fixed an issue where CI job to generate **Code Coverage Report** was not reflected in the org or in the e-mail notification ([#72042](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111983230)).
 * Fixed an issue where merge status is displayed as completed but no revision is generated, and the merge is not available in the UAT branch ([#71266](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000110960210)).
-* Enhanced **DataLoader** by adding the ability to **field mapping** through the lookup fields ([#58480](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095290579)).
-* Fixed an issue with **DataLoader** where while running an **Extract** job on the **PUBLISHER** object, the job was failing with the following error `Publisher: column id is not supported in ORDER BY clause` ([#71303](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111030174)).
+* Enhanced **Dataloader** by adding the ability to **field mapping** through the lookup fields ([#58480](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095290579)).
+* Fixed an issue with **Dataloader** where while running an **Extract** job on the **PUBLISHER** object, the job was failing with the following error `Publisher: column id is not supported in ORDER BY clause` ([#71303](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111030174)).
 * Enhanced the **nCino filter criteria** by adding the ability to search and filter labels using the whole or partial name ([#71826](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000111666181)).
 * Enhanced ARM by using known vulnerable components through the **DataTables 1.10.12** plugin for advanced data table functionalities such as sorting, filtering, pagination, and more. This allows users to easily display and manipulate large sets of data on their web pages in a user-friendly manner (internal ticket).
 * Fixed an issue with **Prevalidation Merge** where users were unable to deploy the **ApexClass Tests** related to ApexClasses and Apex Triggers (internal ticket).
@@ -599,7 +599,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where user was unable to commit the destructive **Email Template** files as part of commit in SFDX format and getting auto failure ([#70351](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000109465295)).
 * Fixed a UI issue where **OK** button to reject an EZ-Merge was not working ([#70041](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000108965683)).
 * Fixed an issue where a field was available in the package but still Validation was throwing error that the field was missing ([#69831](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000108972528)).
-* Fixed an issue with **DataLoader** where multiple jobs were not processing parallelly when user loaded a large number of jobs to the queue ([#62559](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000100372446)).
+* Fixed an issue with **Dataloader** where multiple jobs were not processing parallelly when user loaded a large number of jobs to the queue ([#62559](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000100372446)).
 * Fixed an issue with **nCino** where user created more than 100 jobs with sub-user but was still getting the following error: `No jobs exist to load` ([#69831](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000108972528)).
 * Fixed an issue where **Release Label artifact** was not displaying metadata types in the Destructive changes tab for DX repos, but was working as expected for non-DX repos (internal ticket).
 * Fixed an issue where new jobs are getting added to the queue but not getting triggered, and later throwing `NullPointer Exception` (internal ticket).
@@ -719,7 +719,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Prevalidation EZ-Commit** shows that **Diff** does not exist even when there are changes. If user tries multiple times, then Diff is displayed sometimes ([#64612](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000103417610)).
 * Fixed an issue where user was unable to merge the code from one branch to another branch. ([#65570](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000104676278)).
 * Fixed an issue where **Ignore Missing Visibility** settings not working on **EZ-Merge** validation ([#65162](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000104186080)).
-* Fixed an issue where user was loading multiple **DataLoader** jobs but it was not processing parallelly ([#62559](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000100372446)).
+* Fixed an issue where user was loading multiple **Dataloader** jobs but it was not processing parallelly ([#62559](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000100372446)).
 * Fixed a UI bug in **nCino** where the header in **template details** section was missing in **Feature Deployment** (internal ticket).
 * Fixed an issue with **nCino** where **Deployment Logs** were not displayed when the **CI Job** failed (internal ticket).
 
@@ -844,7 +844,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Org to Org Deployment** for **Profiles** including **Deploy Profile Access Settings for selected components only** was not working as expected ([#60559](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000097375154)).
 * Fixed an issue where **Post Destruct** fields were also added to **Pre Destruct** despite the user setting it to post ([#61162](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000098248005)).
 * Fixed an issue where user set the **Max depth** value as '0' under **Vlocity Configuration Settings** but it was retrieving all level dependancy components ([#57501](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000093212471)).
-* Fixed an issue with DataLoader where the **Credit Memo Template** migration was not deploying after user upgraded their instance ([#57676](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000093470003)).
+* Fixed an issue with Dataloader where the **Credit Memo Template** migration was not deploying after user upgraded their instance ([#57676](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000093470003)).
 * Fixed an issue where user selected **Custom Metadata** members (records), but **EZ-Commit** was failing to generate **File Diff** with `Null` error ([#59709](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000096706005)).
 * Fixed an issue where **Merge** was taking longer than usual, and then failing with `Null Exception` ([#60757](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000097574427)).
 * Fixed an issue where **EZ-Commits** and **EZ-Merges** were taking much longer than usual ([#58098](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000094302292)).
@@ -873,7 +873,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where user couldn't create a managed package with the selected ancestor ([#59044](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095985421)).
 * Fixed an issue where **CI Job** was occasionally failing with the error `BUILD FAILED` ([#57647](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000093370172)).
 * Fixed an issue where CI job was taking the last modified user name if trigger through API instated of taking API token user ([#55438](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000089958034)).
-* Salesforce **API version 57** (Beta support) is upgraded. The label is modified throughout ARM application including DataLoader and nCino (internal ticket).
+* Salesforce **API version 57** (Beta support) is upgraded. The label is modified throughout ARM application including Dataloader and nCino (internal ticket).
 * Fixed an issue where nCino CI job was stuck in **Build Success** status for more than a week ([#59040](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095982206)).
 * Fixed an issue where user was trying to deploy RBC (nCino Screens) and the deployment was failing for some of the objects, but there were no error messages shown on the UI ([#58044](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000094164003)).
 * Fixed an issue where user was using SSH credential in AutoRABIT but it was throwing the following error: `Invalid Private Key` ([#59244](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000096134293)).
@@ -956,7 +956,7 @@ This is a maintenance release. The following items were fixed and/or added:
 **(ARM v22.3.0)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an issue with **DataLoader Pro** where jobs executed in the last 6 months were not showing in the database process table and in the **Reports** module ([#53980](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087981132)).
+* Fixed an issue with **Dataloader Pro** where jobs executed in the last 6 months were not showing in the database process table and in the **Reports** module ([#53980](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087981132)).
 * Fixed an issue with **Deploy SFDX Source With ALM Mapping** where CI job with ALM Mapping was not working as expected for Team which is not default ([#55995](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000091129007)).
 * Fixed an issue where **Profile Diff** is working as expected for **Selective Deployment**, but not while using the same profile in the profile manager ([#52868](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087005140)).
 * Fixed an issue where **Environment provisioning** processes were failing to update when user was trying to change the email deliverability access level from **No access** to **All email** ([#55208](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000089591189), [#55754](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000090487029)).

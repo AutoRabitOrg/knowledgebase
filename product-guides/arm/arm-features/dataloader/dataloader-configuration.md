@@ -1,13 +1,13 @@
-# Data Loader Configuration
+# Dataloader Configuration
 
-### Data Loader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
+### Dataloader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
 
-Data Loader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing data between the org with the help of ARM external ID. Now, the user can use data synchronization to connect the source and destination on the objects for which data migration is required.
+Dataloader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing data between the org with the help of ARM external ID. Now, the user can use data synchronization to connect the source and destination on the objects for which data migration is required.
 
-### Creating a new Data Loader Configuration <a href="#creating-a-new-dataloader-configuration" id="creating-a-new-dataloader-configuration"></a>
+### Creating a new Dataloader Configuration <a href="#creating-a-new-dataloader-configuration" id="creating-a-new-dataloader-configuration"></a>
 
 1. Log in to your ARM account.
-2. Hover your mouse over the [**`Dataloader`**](dataloader-configuration.md#dataloader-configuration-overview) module and select **`Data Loader Configuration`**.
+2. Hover your mouse over the [**`Dataloader`**](dataloader-configuration.md#dataloader-configuration-overview) module and select **`Dataloader Configuration`**.
 
 <figure><img src="../../../../.gitbook/assets/image (1106).png" alt="" width="341"><figcaption></figcaption></figure>
 

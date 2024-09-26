@@ -8,8 +8,8 @@
    The sorting structure for "CI Jobs" has been updated. From now on, the **ExternalID** will be selected by default for sorting, replacing the previous selection of LookupKey.
 2. **CI Job Deletion**\
    When a CI job is deleted, the process now ensures that all associated resources are efficiently managed, helping to optimize storage usage.
-3. **ExternalID Populated in Single Data Loader**\
-   The **Single Data Loader** will automatically populate the **ExternalID** field, streamlining the data entry process and ensuring consistency.
+3. **ExternalID Populated in Single Dataloader**\
+   The **Single Dataloader** will automatically populate the **ExternalID** field, streamlining the data entry process and ensuring consistency.
 4. **Disable Delete Button for In-Progress Jobs**\
    The delete button will now be **grayed out** and disabled for any **In-Progress** CI jobs, preventing accidental deletions during the execution process.
 

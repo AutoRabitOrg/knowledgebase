@@ -72,7 +72,7 @@ The **Deployment** process allows you to quickly and safely transfer new develop
 
 #### [Dataloader](../arm-features/dataloader/) <a href="#dataloader" id="dataloader"></a>
 
-ARM Data Loader allows you to configure your data loading operations in convenient and user-friendly GUI wizards and even allows importing and exporting Salesforce data without typing a line of code. Its powerful and easy-to-understand scheduling settings will enable you to specify almost any schedule quickly. You may schedule any data-loading operation for automatic execution.
+ARM Dataloader allows you to configure your data loading operations in convenient and user-friendly GUI wizards and even allows importing and exporting Salesforce data without typing a line of code. Its powerful and easy-to-understand scheduling settings will enable you to specify almost any schedule quickly. You may schedule any data-loading operation for automatic execution.
 
 #### [Test Automation Factory (TAF)](../taf-workflow.md) <a href="#test-automation-factory-taf" id="test-automation-factory-taf"></a>
 

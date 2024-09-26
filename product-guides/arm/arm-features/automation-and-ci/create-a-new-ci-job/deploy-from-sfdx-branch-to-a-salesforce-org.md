@@ -178,7 +178,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
     1. **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
     2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
     3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
-    4. **Run DataLoader Process or Group:** Trigger the dataloader process once the build is successful.
+    4. **Run Dataloader Process or Group:** Trigger the dataloader process once the build is successful.
     5.  **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
 
         * **Add**: Click on the![](<../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1).png>)icon to add up to **5** destination branches.
@@ -196,7 +196,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
 
     However, **XYZ** would like to run the above activities in the following sequence:
 
-    * First, the DataLoader job
+    * First, the Dataloader job
     * Second, CI Job and
     * Environment Provisioning template at last.\
       Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\

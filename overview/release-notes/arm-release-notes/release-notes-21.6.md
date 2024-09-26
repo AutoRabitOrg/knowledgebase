@@ -70,7 +70,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users were unable to replace attachment records in the destination org.
 * Fixed an issue where the attachments were not completely deployed in the target environment ([#41208](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069667003)).
 * Fixed an issue where users were unable to deploy the nCino feature from org to org using the **nCino-Forms** **standard template** ([#38764](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065055277)).
-* Fixed an issue where the users were unable to **stop/delete** the data loader running jobs ([#39556](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066791149)).
+* Fixed an issue where the users were unable to **stop/delete** the dataloader running jobs ([#39556](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066791149)).
 * Fixed an issue where the users when attempting to initiate the deployment, were failing with the **"Failed to initiate deployment request"** error ([#40620](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068429999)).
 * Fixed an issue where the users were unable to perform the branching baseline operation ([#41622](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070417055)).
 * Fixed an issue where the users were not able to configure the approver's lists on the **New Merge Request** screen ([#41844](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070874003)).
@@ -134,7 +134,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the users were facing challenges while merging the entire branch changes to the target environment ([#39451](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066611145)).
 * Fixed an issue where the File Diff shows full component (especially Aura, LWC components) as a change instead of delta changes ([#39351](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066320276)).
 * Fixed a bug where the sub-users without admin privileges were able to export and download the org users' data from **Admin > Users** section.
-* Fixed an issue where the data loader pro throws the error **"Error creating output directory: configs"** while uploading data from one environment to another ([#40832](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068736307)).
+* Fixed an issue where the dataloader pro throws the error **"Error creating output directory: configs"** while uploading data from one environment to another ([#40832](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068736307)).
 * Fixed an issue where the external object-related lookups were unable to verify the relationship associated with the external objects in the destination org ([#41084](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069299165)).
 * Fixed a minor user-interface bug where the users were unable to find the **Resolve Conflict button** to resolve the merges conflict. This is now resolved.
 
@@ -150,7 +150,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * Although the field **"Timezone"** was mandatory upon signup, the users were able to proceed without picking a timezone.
 * Fixed an issue where the admin was unable to assign permissions to its sub-users. This is now working as expected ([#40017](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000067565003)).
 * Fixed an issue where the validation rule automation was not working for the **Environment Provisioning** module ([#41035](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069198519), ([#40991](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069108736)).
-* Fixed an issue where the data loader pro job is not able to load data for objects with fields exceeding limits([#38790](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065085228)).
+* Fixed an issue where the dataloader pro job is not able to load data for objects with fields exceeding limits([#38790](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065085228)).
 * Fixed an issue where the users were unable to register the existing branches to AutoRABIT ([#40894](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068809067)).
 * Fixed an issue where the EZ-Merge was showing status as failed in the AutoRABIT application however, in the Salesforce environment the status shows as success ([#40673](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068536502)).
 * Fixed a bug where the users were unable to register a dev hub on the **SDFX > Hub Management** page.
@@ -279,7 +279,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the external commits did not show up on the release label ([#38822](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065151262)).
 * Fixed a bug that displays the wrong statuses in the test reports ([#39008](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065572975), [#38986](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065564303)).
 * Fixed an issue where the code coverage percent is not available in the case of SFDX merge operation.
-* Fixed an issue where the data loader pro jobs were not able to load data for objects with fields exceeding 800 ([#38790](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065085228)).
+* Fixed an issue where the dataloader pro jobs were not able to load data for objects with fields exceeding 800 ([#38790](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065085228)).
 * Fixed an issue where the code coverage percentage shows as 0 in the UI logs even after deployment validation is passed.
 * Fixed a bug where the changes are being committed even after a failed validation.
 * Fixed an issue where the package directory filter in the release labels is not working as expected.
@@ -293,7 +293,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue in the SFDX module that prevented commits from being executed using scratch org ([#38789](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065076258)).
 * Fixed an issue where the external commits were not displayed when creating release labels or merging single revisions. This is now working as it should ([#38822](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065151262)).
 * Fixed an issue where users were unable to run SCA within the reports module due to an error stating **"Invalid mapping credentials."** In addition, the number of issues indicated in the Ez-commit process does not match the CodeScan analysis ([#38917](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065373386)).
-* Fixed a bug where single data loader jobs couldn't be edited and there was a mapped field cache issue ([#38753](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065026084)).
+* Fixed a bug where single dataloader jobs couldn't be edited and there was a mapped field cache issue ([#38753](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065026084)).
 * Fixed an issue where the alm mapping details for the scratch org with alm configuration could not be found.
 * While executing scratch org alm commit with skip mapping set to false, the current ALM work item status was reporting _"empty"_ results. This is now fixed.
 * Fixed a bug that allowed users to save multiple criteria rows with the same priorities for ApexPMD.
@@ -318,7 +318,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed EZ-Commit issue where the file diff was throwing an error due to credential scope issue ([#38950](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065446001), [38795](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065077341)).
 * Fixed an issue where duplicate entries were seen while creating release labels ([#37300](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000061440253)).
 * Fixed a bug where the user was unable to click on the **OK** button on the **Merge Request History** screen ([#38781](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065085003)).
-* Fixed an issue where the **"include delete records"** checkbox is de-selected automatically during editing the data loader extract job.
+* Fixed an issue where the **"include delete records"** checkbox is de-selected automatically during editing the dataloader extract job.
 * Fixed an issue where the scratch org permissions are not visible on **"hub level permissions"** and _"_**scratch org permissions"** screens.
 * Fixed Ez-commit issue where a sub user with only one repository registered with AutoRABIT, is not able to find/select his repository in the **EZ-Commit** screen.
 * Fixed an issue where the repository filter is reset to default during the conflict resolve flow.
@@ -326,7 +326,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the parent checkbox in the download zip for CI Job is not working as expected.
 * Fixed wave-dependent missing files from the package during the prevalidation merge operation.
 * Fixed an issue where the non-SFDX CI job for WaveTemplates is showing no modifications when triggered.
-* Fixed single data loader and data loader pro filter issues while carrying out the edit functionality.
+* Fixed single dataloader and dataloader pro filter issues while carrying out the edit functionality.
 
 #### 21 Nov 2021 <a href="#21-nov-2021" id="21-nov-2021"></a>
 
@@ -339,4 +339,4 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the pull request support for BitBucket was not working properly as expected ([#38644](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064828044)).
 * Fixed an issue where the deployment shows failed status although there are no failures and the items did get moved to the destination org. This is now working as expected ([#37774](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062644015), [#38363](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064201151)).
 * Fixed an issue where the user was not able to retrieve the metadata to deploy the changes using AutoRABIT's deployment feature.
-* Fixed data loader pro issue which was throwing unknown error while migrating the data objects ([#38566](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064649001)).
+* Fixed dataloader pro issue which was throwing unknown error while migrating the data objects ([#38566](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064649001)).

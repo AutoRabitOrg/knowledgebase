@@ -1,10 +1,10 @@
-# Preparing the CSV file for ARM Data Loader
+# Preparing the CSV file for ARM Dataloader
 
 When creating the CSV file, you will have to take into the following considerations:
 
 ### File format and general recommendations <a href="#file-format-and-general-recommendations" id="file-format-and-general-recommendations"></a>
 
-1. ARM Data Loader accepts CSV (comma separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
+1. ARM Dataloader accepts CSV (comma separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
 2. The file must be UTF-8 encoded
 3. Make sure you don't have any duplicated or empty headers.
 4. Ensure you do not have any empty columns or any columns with the same header names as this can cause field mapping issues.
@@ -13,7 +13,7 @@ When creating the CSV file, you will have to take into the following considerati
 7. In your Excel file, prior to saving it as a CSV, leverage conditional formatting functionality to highlight cells with duplicate values in columns that should not have duplicates
 8. Keep your files at a maximum size of 10MB.
 9. When dealing with files that are larger than **200 rows**, pick the **Use Bulk API** option in the **Run Configuration** dialog box. This will give you optimum performance for large files.
-10. Data Loader does not allow importing multiple columns into one field in Salesforce. You will need to concatenate these fields before uploading.
+10. Dataloader does not allow importing multiple columns into one field in Salesforce. You will need to concatenate these fields before uploading.
 
 ### Field type format supported <a href="#field-type-format-supported" id="field-type-format-supported"></a>
 
@@ -23,7 +23,7 @@ Case-sensitive 15-character alphanumeric string that uniquely identifies a parti
 
 #### Number <a href="#number" id="number"></a>
 
-Can only contain numbers and decimal spaces. ARM Data Loader will not accept text in number fields.
+Can only contain numbers and decimal spaces. ARM Dataloader will not accept text in number fields.
 
 #### Text <a href="#text" id="text"></a>
 
@@ -37,7 +37,7 @@ Remove all currency symbols and commas from the number and currency columns.
 
 #### Date <a href="#date" id="date"></a>
 
-Must be in the format: MM-DD-YYYY or YYYY-MM-DD. Please see the Salesforce Help Topic “[Data Loader Date Values](https://help.salesforce.com/s/articleView?language=en\_US\&mode=1\&type=1\&id=000325035)” for other options.
+Must be in the format: MM-DD-YYYY or YYYY-MM-DD. Please see the Salesforce Help Topic “[Dataloader Date Values](https://help.salesforce.com/s/articleView?language=en\_US\&mode=1\&type=1\&id=000325035)” for other options.
 
 #### Date/Time <a href="#datetime" id="datetime"></a>
 

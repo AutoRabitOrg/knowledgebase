@@ -142,7 +142,7 @@ List of actions to perform once the build is successfully deployed.
 1. **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another skuid page.
 2. **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
 3. **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in AutoRABIT to automate manual post-deployment tasks.
-4. **Run DataLoader Process or Group:** Trigger the [ dataloader ](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/) process once the build is successful.
+4. **Run Dataloader Process or Group:** Trigger the [ dataloader ](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/) process once the build is successful.
 5. **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and destination Version Control branch and other options that are necessary to perform Merge operation. (Do refer to the [Merge](https://knowledgebase.autorabit.com/arm/docs/ez-merge) section to know more about the fields and their uses.)
 6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
 7. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link  [ HERE ](https://knowledgebase.autorabit.com/arm/docs/parallel-processor) .
@@ -154,7 +154,7 @@ List of actions to perform once the build is successfully deployed.
 
 However, **XYZ** would like to run the above activities in the following sequence:
 
-1. First, the DataLoader job
+1. First, the Dataloader job
 2. Second, CI Job and
 3. Environment Provisioning template at last.\
    Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\

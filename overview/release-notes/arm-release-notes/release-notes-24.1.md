@@ -49,7 +49,7 @@ ARM 24.1.7
 1. A code fix was applied to the CI Jobs module of version 24.1 related to a data error that caused a CI Job to be unable to be built manually. Support ticket #117587&#x20;
 2. A code fix was applied to the Admin module of version 24.1 due to a data error that caused Salesforce orgs to not be displayed as mapped to the repository even after enabling them under the profile. Support ticket #117542&#x20;
 3. A code fix was applied to the nCino module of version 24.1 due to a use-case error identified internally in which rollback failed for inserted records.
-4. A code fix was applied to the nCino module of version 24.1 due to a use-case error in which Data Loader jobs were automatically being deleted. Support ticket #117577&#x20;
+4. A code fix was applied to the nCino module of version 24.1 due to a use-case error in which Dataloader jobs were automatically being deleted. Support ticket #117577&#x20;
 5. A code fix was applied to the CI Jobs module of versions 23.1 and 24.1 due to a use-case error causing the CI Job History report to not generate. #116943
 
 #### 24 July 2024
@@ -68,7 +68,7 @@ ARM 24.1.7
 10. A code fix was applied to the Admin module of versions 23.1 and 24.1 due to a use-case error with users losing access. Support ticket #111830
 11. A code fix was applied to the Version Control module of versions 23.1 and 24.1 due to a use-case error requiring multiple revisions on an ALM work item. Support ticket #117810
 12. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error with the new profile compare feature. Support ticket #117309&#x20;
-13. A code fix was applied to the nCino module of version 24.1 due to a use-case error in which Data Loader jobs were being automatically deleted. Support ticket #117577&#x20;
+13. A code fix was applied to the nCino module of version 24.1 due to a use-case error in which Dataloader jobs were being automatically deleted. Support ticket #117577&#x20;
 14. A code fix was applied to the CI Jobs and Deployment modules of version 24.1 due to a use-case error causing the rollback functionality to not work properly. Support tickets #117512, #118316&#x20;
 15. A code fix was applied to the CI Jobs module of version 24.1 due to a use-case error in which CI Jobs were experiencing a build issue, which is awaiting QA verification from the customer. Support ticket #118301&#x20;
 16. A code fix was applied to the CI Jobs module of version 24.1 due to a use-case error identified by internal ticket in which a CI Unlocked package installed CI build failing with Hub connection failure, even though Hub connection was successful. &#x20;
@@ -81,7 +81,7 @@ ARM 24.1.7
 1. A code fix was applied to version 24.1 as a result of a data error encountered in the CI Jobs module related to CI Jobs not triggering. Support ticket #116677
 2. A code fix was applied to the Version Control module in version 24.1 related to a data error causing the WebLink deletion feature to not work. Support ticket #115994
 3. A code fix was applied to the CI Jobs module in version 24.1 due to a data error identified internally with the CI Edit edit mode where the "Do you want us to update the test classes" feature is not saving.
-4. A code fix was applied to the nCino module in version 24.1 related to a use-case error in which Data Loader Pro was not fetching the child object. Support ticket #116928
+4. A code fix was applied to the nCino module in version 24.1 related to a use-case error in which Dataloader Pro was not fetching the child object. Support ticket #116928
 
 #### 10 July 2024
 
@@ -107,7 +107,7 @@ ARM 24.1.7
 9. A use-case scenario identified in version 24.1 required a code fix to the Version Control module in version 24.1 due to release labels not showing. Support ticket #116413
 10. A use-case error identified in version 24.1 required a code fix to the Version Control module in version 24.1 due to an issue with choosing the Level 1 approver when performing a merge. Support ticket #116417, #116692
 11. A use-case error was identified in version 24.1 that required a code fix to the nCino module due to the RBC filters not working on commits. Support ticket #116291
-12. A use-case scenario identified in version 24.1 via an internal ticket required a code fix to the nCino module to correct an error in which the Data Loader clone process is not identifying the new CSV file.&#x20;
+12. A use-case scenario identified in version 24.1 via an internal ticket required a code fix to the nCino module to correct an error in which the Dataloader clone process is not identifying the new CSV file.&#x20;
 13. A use-case error identified in version 24.1 required a code fix to the Version Control module to correct an error in which user is unable to create an EZ-Merge. Support ticket #116700
 14. A code fix was applied to the Deployment and Version Control modules to correct a use-case error identified in version 24.1 in which the org comparison is not showing diff results. Support ticket #116039
 15. A use-case scenario required a code fix to the version 24.1 Admin module to correct an error that caused the branching baseline to keep running for 24 hours. Support ticket #114734&#x20;
@@ -121,7 +121,7 @@ ARM 24.1.7
 
 1. A data error reported in version 23.1 with the Version Control module that resulted in version control being deleted was resolved in both 23.1 and 24.1 through adding loggers. Support ticket #114503
 2. A use-case error reported in version 23.1 with the Version Control module in which the user was unable to use an existing conflicted file, which resulted in reraising merge requests, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #115084
-3. &#x20;A use-case error reported in version 23.1, which resulted in an issue with the Data Loader module in which the software was not inserting the correct record type, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #114076
+3. &#x20;A use-case error reported in version 23.1, which resulted in an issue with the Dataloader module in which the software was not inserting the correct record type, was resolved in both 23.1 and 24.1 through a code fix. Support ticket #114076
 4. A use-case error reported in version 23.1 with the nCino module in which rollbacks were only partially being completed was resolved in both 23.1 and 24.1 through a code fix. Support ticket #115204
 5. A use-case error in version 24.1 with the Version Control module in which commits were remaining in progress was resolved through a code fix. Support ticket #115691
 6. A use-case error in version 24.1 with the Version Control module with commit CI Job deployment errors was resolved in 24.1 through a code fix. Support ticket #115817

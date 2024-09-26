@@ -3,7 +3,7 @@
 **AutoRABIT Terms:**
 
 1. **Metadata Mastery™:** AutoRABIT's proprietary technology for Salesforce metadata management.
-2. **Data Loader Pro™:** AutoRABIT's feature for complex data migrations, backups, and archiving.
+2. **Dataloader Pro™:** AutoRABIT's feature for complex data migrations, backups, and archiving.
 3. **ALM Masters™:** AutoRABIT's feature for end-to-end application lifecycle management.
 4. **Version Control System (VCS):** AutoRABIT's feature that allows you to track and manage changes to your code.
 5. **Deployment Automation:** AutoRABIT's feature that automates the deployment of code to different environments.

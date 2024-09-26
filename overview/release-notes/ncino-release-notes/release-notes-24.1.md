@@ -9,9 +9,9 @@
 nCino 24.1 is a major release that encompasses the following release items:&#x20;
 
 * **nCino Compare Functionality**
-* **Enhanced Data Loader Pro Job Configuration** &#x20;
+* **Enhanced Dataloader Pro Job Configuration** &#x20;
 * **Exclude the OwnerID from Automapping in nCino CI jobs**&#x20;
-* **Data Loader Pro Job Run Options in Configuration**
+* **Dataloader Pro Job Run Options in Configuration**
 * **Triggering nCino CI Jobs Using REST API**
 * **Select external unique identifier During nCino Feature Deployment**
 
@@ -24,10 +24,10 @@ nCino 24.1 is a major release that encompasses the following release items:&#x20
     **Benefit:** This tool addresses the need for a reliable method to ensure consistency and accuracy in RBC deployments, reducing the risk of configuration errors and streamlining the configuration management process.\
     **Further documentation:** For more detailed information, please refer to our [Knowledge Base.](../../../product-guides/arm/arm-features/ncino/ncino-compare.md)\
 
-2.  **Enhanced Data Loader Pro Job Configuration**\
+2.  **Enhanced Dataloader Pro Job Configuration**\
     **Overview:** To provide users with greater flexibility and control over the data loading process by allowing the users to enable and disable the validation rules, workflow rules, and triggers.
 
-    **Application:** Users can now enable or disable validation rules, workflow rules, and triggers as part of the Data Loader Pro job configuration. This feature allows users to leverage pre-configured selections during the scheduled execution of the job, ensuring that the data-loading process adheres to their specific requirements.
+    **Application:** Users can now enable or disable validation rules, workflow rules, and triggers as part of the Dataloader Pro job configuration. This feature allows users to leverage pre-configured selections during the scheduled execution of the job, ensuring that the data-loading process adheres to their specific requirements.
 
     **Benefit:** Enhances flexibility and control over the data loading process, enabling users to customize job configurations to meet their unique needs and reducing the risk of unintended rule or trigger executions.
 
@@ -54,13 +54,13 @@ nCino 24.1 is a major release that encompasses the following release items:&#x20
 
     **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/ncino/exclude-the-ownerid-from-automapping-in-ncino-ci-jobs.md). \
     &#x20;
-2.  **Data Loader Pro Job Run Options in Configuration**
+2.  **Dataloader Pro Job Run Options in Configuration**
 
-    **Overview:** All job run options can now be configured when creating a job in Data Loader Pro.
+    **Overview:** All job run options can now be configured when creating a job in Dataloader Pro.
 
-    **Application:** This enhancement allows users to set all desired job run options at the time of job creation, providing greater customization and control over Data Loader Pro job executions. These configurations are preserved for the scheduled execution of the jobs, ensuring that each job runs with the specified settings without the need for manual adjustments before each execution.
+    **Application:** This enhancement allows users to set all desired job run options at the time of job creation, providing greater customization and control over Dataloader Pro job executions. These configurations are preserved for the scheduled execution of the jobs, ensuring that each job runs with the specified settings without the need for manual adjustments before each execution.
 
-    **Benefit:** Enhances customization and control over Data Loader Pro job executions and ensures that job settings are consistently applied during scheduled runs, reducing the risk of errors and improving efficiency.
+    **Benefit:** Enhances customization and control over Dataloader Pro job executions and ensures that job settings are consistently applied during scheduled runs, reducing the risk of errors and improving efficiency.
 
     **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/dataloader/dataloader-configuration.md).\
 

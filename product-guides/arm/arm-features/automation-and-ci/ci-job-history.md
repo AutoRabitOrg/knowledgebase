@@ -145,7 +145,7 @@ You can download the deployment, quick deployment, or rollback reports for your 
 
 View the activities triggered post-deployment, log report, and post-activity status, i.e., success or failure.
 
-| Post Activity Status | CI Job                                | Environment Provisioning            | Data Loader                           | Merge                              | Jenkins Job                                     |
+| Post Activity Status | CI Job                                | Environment Provisioning            | Dataloader                           | Merge                              | Jenkins Job                                     |
 | -------------------- | ------------------------------------- | ----------------------------------- | ------------------------------------- | ---------------------------------- | ----------------------------------------------- |
 | **Success**          | Completed                             | Success                             | Completed                             | Merged                             | Success or unstable                             |
 | **Failed**           | Any other status except for completed | Any other status except for success | Any other status except for completed | Any other status except for merged | Any other status except for Success or unstable |

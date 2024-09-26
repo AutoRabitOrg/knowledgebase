@@ -1,17 +1,17 @@
-# Data Loader Pro
+# Dataloader Pro
 
-**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Data Loader Pro** feature in ARM.&#x20;
+**Dataloader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Dataloader Pro** feature in ARM.&#x20;
 
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
-While performing **Data Loader Pro** on the objects for the first time, ensure you perform [Data Loader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Data Loader Pro job. This is a one-time operation.
+While performing **Dataloader Pro** on the objects for the first time, ensure you perform [Dataloader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Dataloader Pro job. This is a one-time operation.
 
-Data Loader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
+Dataloader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
 
-### How to Perform a Data Loader Pro Operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
+### How to Perform a Dataloader Pro Operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Data Loader`** module and select **`Data Loader Pro`**.
+2. Hover your mouse over the **`Dataloader`** module and select **`Dataloader Pro`**.
 3. Click on **`Create New Job.`**
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -49,11 +49,11 @@ Upload the **`CSV`** file (if required) if there is a large amount of data and i
 
 Format for CSV file to filter records:
 
-* ARM Data Loader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
+* ARM Dataloader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
 * Ensure you have a column header and rows of data populated for all system-required fields, such as **`Account Name`** or **`Contact Last Name`**.
 * There can be only one column header.&#x20;
 
-For more information, see [Preparing the CSV file for Data Loader](preparing-the-csv-file-for-arm-dataloader.md).
+For more information, see [Preparing the CSV file for Dataloader](preparing-the-csv-file-for-arm-dataloader.md).
 
 <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
@@ -117,7 +117,7 @@ Using the **`Automap`** feature, you can map the fields automatically based on f
 
 ### **External ID Field Mapping**
 
-In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the Data Loader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
+In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the Dataloader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
 
 In the **`Source`** field, select the source whose values will be populated in the destination external ID field.
 
@@ -196,7 +196,7 @@ In the Scheduling procedure, the user can schedule the process it must run.
 
 <figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-Finally, click on **`Save`** to complete the initial process. You will be redirected to the **`Dataloader Pro Summary`** page, where the Data Loader process initiated can be seen at the top of the list.
+Finally, click on **`Save`** to complete the initial process. You will be redirected to the **`Dataloader Pro Summary`** page, where the Dataloader process initiated can be seen at the top of the list.
 
 <figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
@@ -214,9 +214,9 @@ Finally, click on **`Save`** to complete the initial process. You will be redire
 4. Any changes made during the run of the job will only affect that individual job run.
 5. To permanently change the configured settings during the job creation, the user has to edit the created job and change the settings and save the job.
 
-### Running the Data Loader Pro Job
+### Running the Dataloader Pro Job
 
-Select your job from the **`Data Loader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
+Select your job from the **`Dataloader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
 
 <figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
@@ -240,7 +240,7 @@ The table below lists the configurations to choose from, along with their descri
 1. **`Edit:`** Edits the processes in the selected category to rerun them.
 2. **`Abort:`** Aborts the process.
 3. **`Schedule:`** Schedules the data-loading process for the selected category.
-4. **`Clone:`** Clones the respective Data Loader Pro job.
+4. **`Clone:`** Clones the respective Dataloader Pro job.
 5. **`Log:`** Provides information about the process execution.
 
 <figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>

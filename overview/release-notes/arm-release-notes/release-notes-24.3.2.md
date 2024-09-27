@@ -2,7 +2,7 @@
 
 ## Release Notes 24.3.2
 
-**Anticipated release date: 22 September 2024**
+**22 September 2024**
 
 The following release notes describe the enhancements featured in our next release. These items are being published in anticipation of a release date of 22 September 2024.
 

@@ -1,8 +1,8 @@
 ---
 description: >-
   Welcome to AutoRABIT's Documentation Knowledge Base!  This is your go-to
-  resource for detailed user guides, how-to tutorials, FAQs, and troubleshooting
-  guides.
+  resource for release notes, detailed user guides, how-to tutorials, FAQs, and
+  troubleshooting guides.
 ---
 
 # 👋 Welcome to Knowledge Base

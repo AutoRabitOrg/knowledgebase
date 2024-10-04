@@ -1,5 +1,16 @@
 # Release Notes 24.0
 
+## Vault 24.2.1 Release Notes
+
+**Release Date: 4 October 2024**
+
+* **Improved Metadata Backups:** Enhancements have been made to metadata backups to better handle expected errors during retrieval from Salesforce.
+* **FeedComment Restore/Replication:** Improved error handling ensures better support for FeedComment replication and restoration.
+* **Improved Backup Performance**: Backup performance has been optimized for Salesforce environments with proxy settings enabled, resulting in faster backups.
+* **Enhanced Support for Object Relationships in Restore/Replicate:** Relational integrity is now better maintained during restores and replications, even when object relationships in Salesforce do not follow standard naming conventions.
+* **Improved Restore/Replicate Results**: The user experience for restore and replicate operations has been enhanced with an improved results presentation.
+* **Log Enhancements**: Job logs have been upgraded to provide more detailed information about where time is being spent during job execution, improving transparency and troubleshooting.
+
 ## Vault 24.2 Release Notes
 
 **Release Date: 24 Sep 2024**

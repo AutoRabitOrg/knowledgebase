@@ -6,6 +6,69 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
+### **Release Notes 24.0.12**&#x20;
+
+**Release Date: October 09, 2024**&#x20;
+
+### Summary:&#x20;
+
+CodeScan 24.0.12 is comprised of the following 2 components:&#x20;
+
+* 1 Rule Enhancement&#x20;
+* 1 Fix&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Enhancements:
+
+1. Enhanced the rule sf: \{{FieldLevelSecurity\}} to eliminate false positives&#x20;
+
+Summary:  Previously, this rule was flagging issues that are actually false positives.  This was occurring when a SOQL query has a inner query calling the related Object. &#x20;
+
+In this enhancement, the Object is checked by using isAccessible() before accessing its data.&#x20;
+
+As per the salesforce when checking the Access for the inner query object it allows to check by using \_\_c, but while making inner query on related Objects it must be in plural and ends with\_\_r. &#x20;
+
+Further, we also added SYSTEM\_MODE support to the rule enhancement via a rule parameter (where rules admins can choose true or false to include SYSTEM\_MODE). &#x20;
+
+For additional info on Object permission Checks and SYSTEM\_MODE refer to : [https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https:/developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link)&#x20;
+
+### Fixes:&#x20;
+
+1. &#x20;Fixed errors when re-attaching Bitbucket projects using new enhanced security&#x20;
+
+In the previous CodeScan release (24.0.11), we enhanced the security of our Bitbucket webhooks to stay current with the guidelines provided in Bitbucket’s documentation ([https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks))&#x20;
+
+We also implemented a process to make this update easier for existing customers using Bitbucket projects.&#x20;
+
+Some customers were experiencing errors with this process.  This fix has corrected those errors in full, and we have validated that the process works as expected.&#x20;
+
+&#x20;
+
+For more information of reattaching Bitbucket projects, please refer to our knowledge base:&#x20;
+
+[https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects](https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects)&#x20;
+
+For convenience, we are also including the documentation from CodeScan release 24.0.11 regarding the enhanced security for Bitbucket projects.&#x20;
+
+With this enhancement (in 24.0.11), when you create new Bitbucket project, you must generate “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
+
+{% hint style="info" %}
+NOTE:  We recognize that our customers may have existing Bitbucket projects running in their CodeScan org. These projects were created without this enhanced security feature. &#x20;
+
+To avoid having errors occur in these existing projects, we have intentionally added a deprecation/retention period, thereby allowing clients to migrate the projects (reattach them). &#x20;
+
+We have set the Dec 31, 2024 as a final date to make the migration before these projects will break (and at that point, customers must reattach their projects using the enhanced security webhook). &#x20;
+
+Further, to highlight this notification more visibly, customers with existing Bitbucket projects will receive a new type of Organization Notification directly within the CodeScan UI.  &#x20;
+
+To maximize effectiveness (and to deliver this notification only when relevant, CodeScan will check if your specific organization has any Bitbucket projects without enhanced these security settings &#x20;
+
+If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to re-attach the following Bitbucket projects by the end of 2024 to enhance the security: project\_key\_1, project\_key\_2, project\_key\_3, etc.&#x20;
+{% endhint %}
+
+***
+
 ## Release Notes 24.0.11&#x20;
 
 **Release Date: September 25, 2024**&#x20;
@@ -19,7 +82,7 @@ CodeScan 24.0.11 is comprised of the following 2 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### Enhancement&#x20;
+### Enhancement:&#x20;
 
 1. Org names are no longer restricted to only a single word.&#x20;
 
@@ -40,7 +103,7 @@ However, there are some restrictions regarding leading spaces, trailing spaces, 
 * "My Organization-" (trailing hyphen)&#x20;
 * "Org-!Name" (contains an invalid character !)&#x20;
 
-### Fix&#x20;
+### Fixes:
 
 1. Fixed issue in rule “sf:AvoidPublicFields”, where issues being flagged on private classes(which are false positives).&#x20;
 

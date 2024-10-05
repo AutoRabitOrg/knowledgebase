@@ -23,7 +23,7 @@ Component details are listed in their corresponding sections within this documen
 
 1. **Enhanced the rule sf: \{{FieldLevelSecurity\}} to eliminate false positives**&#x20;
 
-Summary:  Previously, this rule was flagging issues that were actually false positives.  This was occurring when an SOQL query has an inner query calling the related Object. &#x20;
+Summary:  Previously, this rule was flagging issues that were actually false positives. This was occurring when an SOQL query has an inner query calling the related Object. &#x20;
 
 In this enhancement, the Object is checked using isAccessible() before accessing its data.&#x20;
 
@@ -49,7 +49,7 @@ For more information on reattaching Bitbucket projects, please refer to our Know
 
 For your convenience, we are also including the documentation from CodeScan release 24.0.11 regarding the enhanced security for Bitbucket projects.&#x20;
 
-With this enhancement (in 24.0.11), when you create new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
+With this enhancement (in 24.0.11), when you create a new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
 
 {% hint style="info" %}
 NOTE:  We recognize our customers may have existing Bitbucket projects running in their CodeScan org that were created without this enhanced security feature. &#x20;
@@ -62,13 +62,13 @@ Further, to highlight this notification more visibly, customers with existing Bi
 
 To maximize effectiveness (and only deliver this notification when relevant), CodeScan will check if your organization has any Bitbucket projects without these enhanced security settings. &#x20;
 
-If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance the security: project\_key\_1, project\_key\_2, project\_key\_3, etc."&#x20;
+If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance security: project\_key\_1, project\_key\_2, project\_key\_3, etc."&#x20;
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-05 at 11.21.58 AM (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Starting 1 January 2025, you will not be allowed to trigger the analysis for Bitbucket if that project doesn’t have the secret key configured. Further, instead of the WARNING message, an _ERROR_ message will be displayed.
+Starting **1 January 2025**, you will not be allowed to trigger the analysis for Bitbucket if that project doesn’t have the secret key configured. Further, instead of the WARNING message, an _ERROR_ message will be displayed.
 {% endhint %}
 
 ***
@@ -109,14 +109,14 @@ However, there are some restrictions regarding leading spaces, trailing spaces, 
 
 2. **Enhancement of rule “sf:AvoidPublicFields” (reducing false positives on private classes).**&#x20;
 
-The rule sf:AvoidPublicFields identifies when public fields are used, and flags them as issues. Two of the three reasons this rule is important are:&#x20;
+The rule sf:AvoidPublicFields identifies when public fields are used and flags them as issues. Two of the three reasons this rule is important are:&#x20;
 
-* The internal representation is exposed, and thus cannot be easily changed&#x20;
-* When the value is changed in an unexpected way (for example nulled), the implementation may not handle it correctly&#x20;
+* The internal representation is exposed and, thus, cannot be easily changed.&#x20;
+* When the value is changed in an unexpected way (for example nulled), the implementation may not handle it correctly.&#x20;
 
 But these are not concerns when those public fields are on a private class. &#x20;
 
-This enhancement adds a private class validation check first and will not flag the 2 aforementioned issues if the class is a private class.&#x20;
+This enhancement adds a private class validation check first and will not flag the two previously mentioned issues if the class is a private class.&#x20;
 
 ### Security Enhancement&#x20;
 
@@ -124,7 +124,7 @@ This enhancement adds a private class validation check first and will not flag t
 
 We have enhanced the security of our Bitbucket webhooks to stay current with the guidelines provided in Bitbucket’s documentation ([https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks))&#x20;
 
-With this enhancement, when you create new Bitbucket project, you must generate “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
+With this enhancement, when you create a new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
 
 {% hint style="info" %}
 NOTE:  We recognize our customers may have existing Bitbucket projects running in their CodeScan org that were created without this enhanced security feature. &#x20;
@@ -137,13 +137,13 @@ Further, to highlight this notification more visibly, customers with existing Bi
 
 To maximize effectiveness (and only deliver this notification when relevant), CodeScan will check if your organization has any Bitbucket projects without these enhanced security settings. &#x20;
 
-If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance the security: project\_key\_1, project\_key\_2, project\_key\_3, etc."&#x20;
+If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance security: project\_key\_1, project\_key\_2, project\_key\_3, etc."&#x20;
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-05 at 11.21.58 AM (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Starting 1 January 2025, you will not be allowed to trigger the analysis for Bitbucket if that project doesn’t have the secret key configured. Further, instead of the WARNING message, an _ERROR_ message will be displayed.
+Starting **1 January 2025**, you will not be allowed to trigger the analysis for Bitbucket if that project doesn’t have the secret key configured. Further, instead of the WARNING message, an _ERROR_ message will be displayed.
 {% endhint %}
 
 ***

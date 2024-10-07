@@ -40,15 +40,8 @@ For data/reports displayed under the **WEEKLY REPORTS** screen, you can export t
 
 <figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Users can download reports for**
+Users can download reports for:
 
-| List of Columns Available in Each Report                                                                   | Report Type                                      |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| <img src="../../.gitbook/assets/b4a7e978-d7b0-4891-9b4d-314f4a6063ad.png" alt="" data-size="original">     | <p></p><ol><li>EZ Merge</li></ol>                |
-| <img src="../../.gitbook/assets/8e3383cb-e3f4-46be-b05b-eacad1874323.png" alt="" data-size="original">     | <p></p><ol start="2"><li>EZ Commits</li></ol>    |
-| <img src="../../.gitbook/assets/0661ab9e-ea99-4228-86da-dc5d82b8549e (1).png" alt="" data-size="original"> | <ol start="3"><li>Deployment</li></ol>           |
-| <img src="../../.gitbook/assets/49d5f87d-7bfe-4e1d-8a00-5f5cd46dab09.png" alt="" data-size="original">     | <p></p><ol start="4"><li>CI Build jobs</li></ol> |
-| <img src="../../.gitbook/assets/cb42631c-0af8-430b-9d77-a9e915c994ee (1).png" alt="" data-size="original"> | <ol start="5"><li>Dataloader</li></ol>           |
-| <img src="../../.gitbook/assets/0ab365c0-50b3-45b3-8788-7c3005f2c0a0.png" alt="" data-size="original">     | <ol start="6"><li>TAF</li></ol>                  |
+<table><thead><tr><th width="217">Report Type</th><th width="352">List of Columns Available in Each Report </th></tr></thead><tbody><tr><td><p></p><ol><li>EZ Merge</li></ol></td><td><img src="../../.gitbook/assets/b4a7e978-d7b0-4891-9b4d-314f4a6063ad.png" alt="" data-size="original"></td></tr><tr><td><p></p><ol start="2"><li>EZ Commits</li></ol></td><td><img src="../../.gitbook/assets/8e3383cb-e3f4-46be-b05b-eacad1874323.png" alt="" data-size="original"></td></tr><tr><td><ol start="3"><li>Deployment</li></ol></td><td><img src="../../.gitbook/assets/0661ab9e-ea99-4228-86da-dc5d82b8549e (1).png" alt="" data-size="original"></td></tr><tr><td><p></p><ol start="4"><li>CI Build jobs</li></ol></td><td><img src="../../.gitbook/assets/49d5f87d-7bfe-4e1d-8a00-5f5cd46dab09.png" alt="" data-size="original"></td></tr><tr><td><ol start="5"><li>Data Loader</li></ol></td><td><img src="../../.gitbook/assets/cb42631c-0af8-430b-9d77-a9e915c994ee (1).png" alt="" data-size="original"></td></tr><tr><td><ol start="6"><li>TAF</li></ol></td><td><img src="../../.gitbook/assets/0ab365c0-50b3-45b3-8788-7c3005f2c0a0.png" alt="" data-size="original"></td></tr></tbody></table>
 
 By clicking on the "Latest 6 Months Report" option.

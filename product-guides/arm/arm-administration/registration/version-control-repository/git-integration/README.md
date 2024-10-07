@@ -10,6 +10,10 @@
 
 GitHub is designed as a Git repository hosting service. It lets you track and share your Git version control projects outside your local computer/server. Unlike Git, GitHub is exclusively cloud-based.
 
+### **What Is AWS CodeCommit?**
+
+AWS CodeCommit is a fully managed source control service that hosts secure Git-based repositories. It seamlessly integrates with your existing Git tools.
+
 ### Prerequisites for registering GIT with ARM <a href="#prerequisites-for-registering-git-with-arm" id="prerequisites-for-registering-git-with-arm"></a>
 
 Before registering Git with ARM, you must check off some of the boxes on the prerequisites list.

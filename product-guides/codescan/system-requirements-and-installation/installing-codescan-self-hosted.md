@@ -1,7 +1,7 @@
 # Installing CodeScan Self-Hosted
 
 {% hint style="info" %}
-As part of our commitment to providing the best possible products and services, we periodically discontinue support for older software versions. We hereby announce that all **CodeScan self-hosted versions below 23.1.1** will reach their End of Life (EOL) on **December 31, 2023**.
+As part of our commitment to providing the best possible products and services, we periodically discontinue support for older software versions. We hereby announce that all **CodeScan self-hosted versions below 23.1.1** will reach their End of Life (EOL) on **December 31, 2024**.
 {% endhint %}
 
 ## CodeScan On-Premises Installation <a href="#codescan-onpremise-implementation" id="codescan-onpremise-implementation"></a>

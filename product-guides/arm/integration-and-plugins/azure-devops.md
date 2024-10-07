@@ -8,7 +8,7 @@ To learn more about Azure DevOps Services, see [Introduction to Azure DevOps](ht
 
 ### Setting Up Azure DevOps in AutoRABIT <a href="#setting-up-azure-devops-in-autorabit" id="setting-up-azure-devops-in-autorabit"></a>
 
-This article refers to the AutoRABIT and Azure DevOps integration. AutoRABIT provides a two-way integration with Azure DevOps that allows product teams to send their planned work from AutoRABIT to their development team working in Azure DevOps.
+This article refers to the AutoRABIT and Azure DevOps integration. AutoRABIT provides a two-way integration with Azure DevOps that allows product teams to send their planned work from AutoRABIT to their development team working in Azure DevOps. This integration works for Azure DevOps Services and Azure DevOps Server.
 
 To integrate Azure DevOps as a plugin in AutoRABIT, follow the below steps:
 

@@ -307,8 +307,6 @@
       * [How does TAF Accelerate Test Automation and Reduce Costs?](product-guides/arm/how-does-taf-accelerate-test-automation-and-reduce-costs.md)
       * [TAF Workflow](product-guides/arm/taf-workflow.md)
       * [Benefits Comparison of AutoRABIT Test Automation Factory](product-guides/arm/benefits-comparsiton-of-autorabit-test-automation-factory.md)
-      * [Commit Selenium Test scripts to a Version Control System](product-guides/arm/commit-selenium-test-scripts-to-a-version-control-system.md)
-      * [Selenium Test Execution](product-guides/arm/selenium-test-execution.md)
     * [Environment Provisioning](product-guides/arm/arm-features/environment-provisioning/README.md)
       * [Migration Template](product-guides/arm/arm-features/environment-provisioning/migration-template/README.md)
         * [Enable History Tracking on Objects](product-guides/arm/arm-features/environment-provisioning/migration-template/enable-history-tracking-on-objects.md)

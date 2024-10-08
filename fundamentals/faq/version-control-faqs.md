@@ -290,13 +290,11 @@ Here are the steps to reproduce the scenario:
 
 A code fix has resolved this issue. There is a fix available in the ARM 23.1.31 build version.
 
-## Why do I get the following error: "Cannot find the declaratino of element 'web:validateSalesforceOrgConnection'" when selecting an org in EZ-Merge?
+## Why do I get the following error: "Cannot find the declaration of element 'web:validateSalesforceOrgConnection'" when selecting an org in EZ-Merge?
 
-The error below pops up while selecting the org for merge validation.
+The error below pops up while selecting the org for merge validation: `cvc-elt.1.a: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'`
 
-`cvc-elt.1.a: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'`
-
-**Cause of the issue:** There might be some cache problem while selecting the Salesforce Org.
+**Cause of the issue:** This may be due to a cache problem while selecting the Salesforce Org.
 
 **Resolution:** Clearing the browser cache and refreshing the browser will resolve the issue.
 

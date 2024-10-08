@@ -267,3 +267,25 @@ Special Characters: '>' ; '<' ; '|' ; '=' &#x20;
 We recommend maintaining the above four special characters to less than 7 to avoid such problems.
 
 For example, in the Class file, if you observe this **">>>>>>>"** character string (length=7), then update it to less than 7 in the branch itself and rerun the Merge operation.
+
+## Why is my EZ-Commit revert failing with an "Invalid ID" error?
+
+Sometimes you need to undo or reverse a single commit while working with a version control system. This is helpful if you're trying to track down a bug and discover that a single commit caused it. You can use revert commit to do this for you instead of manually going in, correcting it, and committing a new snapshot. When a user tries to reverse the EZ-Commit, it fails with an exception. The expected behavior is to revert the EZ-Commit as per the design and create a new commit.
+
+In this scenario, the feature's proper operation requires a successful commit on the branch. Users should have the following privileges to revert commits in AutoRABIT:
+
+1. **Commit Author:** User who has created the commit
+2. **Org Administrator** and
+3. Users with **Revert Commits** permission
+
+### Step-by-Step Guide:
+
+Here are the steps to reproduce the scenario:
+
+1. Create a commit from the source to the destination branch.
+2. Commit some data.
+3. Once the commit is successful, go to commit history, and for the commit, click on three dots.
+4. Click on the revert commit option. It will create a new job for the revert.
+5. This will fail with the error/exception Invalid ID.
+
+A code fix has resolved this issue. There is a fix available in the ARM 23.1.31 build version.

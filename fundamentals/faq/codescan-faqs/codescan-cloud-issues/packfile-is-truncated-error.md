@@ -12,5 +12,3 @@
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 3. **Retry Analysis:** After granting access to CodeScan in GitHub and integrating it with CodeScan, start the connection, then reattempt the project analysis. The error should no longer appear. The repositories should be synced. CodeScan should indicate the analysis was triggered, and the user should see the issues.
-
-Reference support ticket #108597

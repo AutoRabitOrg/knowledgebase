@@ -4,7 +4,7 @@
 
 **22 September 2024**
 
-The following release notes describe the enhancements featured in our next release. These items are being published in anticipation of a release date of 22 September 2024.
+The following release notes describe the enhancements featured in our next release.&#x20;
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 

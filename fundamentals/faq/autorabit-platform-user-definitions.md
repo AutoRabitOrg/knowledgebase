@@ -18,7 +18,9 @@
 
 • If a service account is used to trigger automation or integrate with AutoRABIT, the person or team responsible for the actual code commit must still hold a Platform Integration License. This ensures that each individual whose actions contribute to triggering AutoRABIT processes is appropriately licensed.
 
-**Example:** In Git, a popular SCM system, multiple commits can be pushed simultaneously. Each commit is counted separately toward the user license. A Platform Integration User does not need to log in to the AutoRABIT Web UI to be counted as a user but will have view-only permissions included in their license.
+**Example:** In Git, a popular SCM system, multiple commits can be pushed simultaneously. Each commit is counted separately toward the user license. 
+
+A Platform Integration User does not need to log in to the AutoRABIT Web UI to be counted as a user but will have view-only permissions included in their license.
 
 **Additional Notes:**
 

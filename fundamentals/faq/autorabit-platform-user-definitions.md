@@ -1,24 +1,24 @@
 # AutoRABIT Platform User Definitions
 
-**Standard User:**
+**Standard User**
+A Standard User is an individual authorized by the Customer to log in to and directly use AutoRABIT’s subscribed products. 
 
-An individual authorized by the Customer to log in to and use the AutoRABIT subscribed Products directly. The licensed User quantity is the total number of unique Users of the Products calculated over the course of the entire Subscription Term.
+**Platform Integration User**
+A Platform Integration User is an individual authorized by the Customer to perform actions that trigger the execution of AutoRABIT products (directly or indirectly). 
+This may include, but is not limited to:
+•	Using AutoRABIT IDE plugins
+•	Triggering AutoRABIT APIs
+•	Directly changing Salesforce org configurations
+•	Committing changes to a source code repository
 
-**Platform Integration User:**
+**Key Points:**
+•	Any person who commits code to a Source Code Management (SCM) system, where the commit directly or indirectly triggers a job in AutoRABIT, requires a Platform Integration License.
+•	If a service account is used to trigger automation or integrate with AutoRABIT, the person or team responsible for the actual code commit must still hold a Platform Integration License. This ensures that each individual whose actions contribute to triggering AutoRABIT processes is appropriately licensed.
+**Example:** In Git, a popular SCM system, multiple commits can be pushed simultaneously. Each commit is counted separately toward the user license.
+A Platform Integration User does not need to log in to the AutoRABIT Web UI to be counted as a user but will have view-only permissions included in their license.
 
-An individual authorized by the customer to perform actions that trigger the execution of AutoRABIT products (e.g., using AutoRABIT IDE plugins, triggering AutoRABIT APIs, directly changing Salesforce org configuration, or committing changes to a source code repository).
+**Additional Notes**
+•	Platform Owners/Admins are included in the Standard User class, allowing customers to manage admin rights without affecting the licensing terms.
+•	The number of licensed users represents the total unique users of the products, calculated throughout the entire course of the Subscription Term.
 
-A Platform Integration User includes any person who commits code to a Source Code Management (SCM) system where that commit directly or indirectly results in triggering a job in AutoRABIT software.
-
-Even if the SCM repository uses a service account to trigger automation, the person who is responsible for the actual code commit must have a Platform Integration License.
-
-For instance, in Git, the most popular SCM system, a collection of commits can be submitted (pushed) to the SCM at one time. Each commit is counted separately.
-
-A Platform Integration User does not need to ever log in to the AutoRABIT Web UI to be counted as a user.
-
-However, they will have view-only permissions to the AutoRABIT Web UI included in their license.
-
-**Other Notes:**
-
-Platform Owner/Admin is part of the standard user class. This allows customers to grant and revoke admin rights without any implications on licensing.
 

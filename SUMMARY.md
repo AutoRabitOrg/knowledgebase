@@ -148,7 +148,7 @@
         * [Salesforce Authentication using OAuth](product-guides/arm/getting-started/registration/salesforce-org/salesforce-authentication-using-oauth.md)
         * [Salesforce Org Re-Authentication](product-guides/arm/getting-started/registration/salesforce-org/salesforce-org-re-authentication.md)
       * [Branching Baseline](product-guides/arm/getting-started/registration/branching-baseline.md)
-      * [Static Code Analysis in CI-CD](product-guides/arm/getting-started/registration/static-code-analysis-in-ci-cd.md)
+      * [Static Code Analysis in CI/CD](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/registration/static-code-analysis-in-ci-cd)
   * [ARM Administration](product-guides/arm/arm-administration/README.md)
     * [User Management](product-guides/arm/arm-administration/user-management/README.md)
       * [ARM User Roles](product-guides/arm/arm-administration/user-management/arm-user-roles.md)

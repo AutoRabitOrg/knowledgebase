@@ -116,16 +116,15 @@ See the Release Notes for [nCino 24.3.2](https://knowledgebase.autorabit.com/ove
 
 ### Changelogs
 
-#### 29 September 2024
+#### **ARM v. 24.3.4**
 
-**ARM v. 24.3.4**
+**29 September 2024**
 
 1. A code revision was applied to the Version Control module due to an error originally reported in version 24.3.1 related to a 'Standard Value' field missing. Support ticket #122092
 2. A code revision was applied to the Reports module due to an error identified in version 24.3.2 related to a CNRDev sandbox code coverage report error. Support ticket #122844
 3. A code revision was applied to the Environment Provisioning module to fix an error reported in version 24.3.2 concerning the inability to execute anonymous Apex code. Support ticket #122534
-4. A code revision was implemented in the Version Control module to resolve errors in several instances related to generating comparison change diffs in Version Control's EZ-Commit. Support tickets #122764, 123131, 122979, 122809, 122832, 122841\
+4. A code revision was implemented in the Version Control module to resolve errors in several instances related to generating comparison change diffs in Version Control's EZ-Commit. Support tickets #122764, 123131, 122979, 122809, 122832, 122841
 
-
-**ARM v. 24.3.3**
+#### **ARM v. 24.3.3**
 
 1. A security enhancement introduced with the 24.3.2 build to improve XSS schema validation across all APIs unintentionally caused Single Sign-On (SSO) requests using the application/x-www-form-urlencoded media type to be rejected. A fix implemented excluding this media type from the validation process for SSO successfully resolved the issue, and login functionality is fully restored.

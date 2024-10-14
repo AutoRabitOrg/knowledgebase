@@ -59,8 +59,6 @@ This error is due to the owner of the records about to be inserted into the dest
 3. Enable these permissions in the permission set corresponding to the dataloading user in the destination Org.
 4. To access details on how to do this in Salesforce, click on this link: [https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1](https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1)
 
-
-
 #### FIELD\_CUSTOM\_VALIDATION\_EXCEPTION
 
 This error is due to validation rules applied to certain fields.
@@ -147,7 +145,7 @@ This error is generated when the required user permissions are missing in Salesf
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Assign user to the desired permission set in Salesforce.
 
-#### INVALID\_CROSS\_REFERENCE\_KEY
+#### INVALID RECORD TYPE ID FOR THE USER
 
 * Typical error message - Record Type ID: this ID value isn't valid for the user: 012D0000000BfaLIAS:RecordTypeId --
 * This error is generated when the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).

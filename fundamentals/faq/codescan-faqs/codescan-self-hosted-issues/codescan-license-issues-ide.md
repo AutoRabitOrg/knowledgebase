@@ -32,4 +32,4 @@ In VSCode settings.json, add the following setting:\
 
 Under **Settings > Tools > CodeScan > Project Settings**, click the **Analysis Properties** tab. Add **sf.license.secured** with your license as the value.
 
-If you do not have your license available, please contact [support@codescan.io](mailto::support@codescan.io)
+If you do not have your license available, please contact [support@autorabit.com](mailto:support@autorabit.com).

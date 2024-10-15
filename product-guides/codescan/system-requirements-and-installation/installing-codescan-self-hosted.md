@@ -32,7 +32,7 @@ This section describes installing the CodeScan self-hosted server, allowing you 
 **Note:** If you already have a **License Key** or **Subscription Code**, proceed to step 2.
 {% endhint %}
 
-**AutoRABIT Access/License Key:** Before downloading the necessary files, email AutoRABIT’s support team at [support@codescan.io](https://support@codescan.io/) to request a **CodeScan License Key.**
+**AutoRABIT Access/License Key:** Before downloading the necessary files, email AutoRABIT’s support team at [support@autorabit.com](mailto:support@autorabit.com) to request a **CodeScan License Key.**
 
 Provide the following information in the email:\
 • Client Name (first and last – typically the admin)\
@@ -227,4 +227,4 @@ For more instructions on setting up the **SonarQube™ ant plugin**, see [https:
 
 * Read the tutorials
 * Check the troubleshooting section
-* Contact [Support](https://www.codescan.io/contact/)
+* Contact [Support@autorabit.com](mailto:support@autorabit.com).

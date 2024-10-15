@@ -4,4 +4,4 @@ A CodeScan license key is provided to you when signing up for a [CodeScan Self-H
 
 The key is provided as a string of characters used when [Installing CodeScan Self-Hosted](https://knowledgebase.autorabit.com/codescan/docs/codescan-self-hosted) or downloading CodeScan plugins in the absence of a [Subscription Key](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-subscription-code).
 
-If you do not know your **License Key** or have misplaced it, please contact [support@codescan.io](mailto:support@codescan.io).
+If you do not know your **License Key** or have misplaced it, please contact [support@autorabit.com](https://app.gitbook.com/u/U7KnccYpFWeXYvGf32TZthHRT3C3).

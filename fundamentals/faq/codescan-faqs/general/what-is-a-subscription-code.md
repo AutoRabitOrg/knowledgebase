@@ -13,4 +13,4 @@ When downloading [CodeScan plugins](https://www.codescan.io/products/editor-plug
 
 After completing these steps, click on **`Request License`** to begin with the plugin download.
 
-If you do not have your license key or subscription code, please contact [support@codescan.io](mailto:support@codescan.io).
+If you do not have your license key or subscription code, please contact [support@autorabit.com](mailto:support@autorabit.com).

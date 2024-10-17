@@ -2,9 +2,9 @@
 
 ### License Expired Errors <a href="#license-expired-errors" id="license-expired-errors"></a>
 
-You must renew your subscription by entering a new licence key if your subscription has expired and you can no longer access your CodeScan account. For your subscription extension and the proper licence key, reach out to our support team.
+You must renew your subscription by entering a new license key if your subscription has expired and you can no longer access your CodeScan account. For your subscription extension and the proper license key, reach out to our support team.
 
-However, if the system throws the below error message after you enter a new licence key, you need to identify where the expired licence key is being passed on and update it with the new licence key.
+However, if the system throws the following error message after you enter a new license key, you need to identify where the expired license key is being passed on and update it with the new license key.
 
 ```
 XXXXXXXXXXXXXXXXXXXXXX
@@ -19,10 +19,10 @@ XXXXXXXXXXXXXXXXXXXXX
 
 A CodeScan license key can be entered via the following ways:
 
-1. [**Sonarqube UI**](https://docs.sonarqube.org/9.6/instance-administration/license-administration/)
+1. **SonarQube UI**
 2. **Command Line parameter** \[-Dsf.license.secured]
 3. In the **sonar.properties**, **codescan.properties** or **sfdx-project.json** inside the **project** folder considered for analysis
-4. In the **Sonarqube-{version} installation** folder\
+4. In the **SonarQube-{version} installation** folder\
    **Example:** _sonarqube-1.0.12345/conf/sonar.properties_
 5. [**System environment variable**](https://knowledgebase.autorabit.com/codescan/docs/setting-the-system-environment-variable)**:** Add an environment variable called **codescanLicense** containing the license on the user's machine.
    * **Variable name:** _codescanLicense_

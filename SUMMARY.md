@@ -629,7 +629,7 @@
   * [CodeScan Integration](product-guides/codescan/codescan-integration/README.md)
     * [Single Sign-On (SSO)](product-guides/codescan/codescan-integration/single-sign-on-sso/README.md)
       * [Single Sign-On with OKTA](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-okta.md)
-      * [Single sign-On with Azure](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-azure.md)
+      * [Single Sign-On with Azure](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-azure.md)
       * [Single Sign-On with ADFS](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-adfs.md)
       * [Single Sign-On with PingOne](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-pingone.md)
     * [ARM](product-guides/codescan/codescan-integration/arm/README.md)

@@ -26,20 +26,7 @@ Run the following command to install the downloaded _Apex-Custom Rule Designer_:
 java -jar <jar-file-name>.jar
 ```
 
-### How to Validate an XPath Expression with CodeScan Rule Designer
-
-1. Enter the Source Code
-2. This will generate an Abstract Tree based on the code.
-3. In the XPath query section, enter the XPath and click 'Go' to Validate the Path.
-4. If the XPath is correct, it will highlight the source code lines for that XPath expression.
-
-<figure><img src="../../../.gitbook/assets/image (1541).png" alt=""><figcaption></figcaption></figure>
-
-Example:
-
-<figure><img src="../../../.gitbook/assets/image (1542).png" alt=""><figcaption></figcaption></figure>
-
-### Apex <a href="#apex" id="apex"></a>
+### Apex
 
 Here are some examples of XPath queries for Apex.
 
@@ -146,3 +133,22 @@ The type of component being visualized is flow. Decisions exist within that flow
 <figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Now you can add it to your Quality Profile as you would any built in-rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.
+
+### How to Validate an XPath Expression with CodeScan Rule Designer
+
+In the following screenshot, the CodeScan Rule Designer rule is not being used to validate the XPath expression.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### To download the Custom Rule designer:
+
+1. Enter the Source Code
+2. This will generate an Abstract Tree based on the code.
+3. In the XPath query section, enter the XPath and click 'Go' to Validate the Path.
+4. If the XPath is correct, it will highlight the source code lines for that XPath expression.
+
+<figure><img src="../../../.gitbook/assets/image (1541).png" alt=""><figcaption></figcaption></figure>
+
+Example:
+
+<figure><img src="../../../.gitbook/assets/image (1542).png" alt=""><figcaption></figcaption></figure>

@@ -4,14 +4,9 @@
 
 **Release Date: 18 October 2024**
 
-**UI Enhancements**\
-Improved UI for a smoother user experience in multiple areas.
-
-**Vault Connect Updates**\
-Now supports attachments with Salesforce External Objects, enabling a comprehensive view of archived data.
-
-**Organization Identification during Manual Backup Trigger**\
-Simplified identification of the Salesforce org initiating the backup, with clearer labels for a more streamlined and intuitive experience.
+* **UI Enhancements:** Improved UI for a smoother user experience in multiple areas.
+* **Vault Connect Updates:** Now supports attachments with Salesforce External Objects, enabling a comprehensive view of archived data.
+* **Organization Identification during Manual Backup Trigger:** Simplified identification of the Salesforce org initiating the backup, with clearer labels for a more streamlined and intuitive experience.
 
 ## Vault 24.2.1 Release Notes
 

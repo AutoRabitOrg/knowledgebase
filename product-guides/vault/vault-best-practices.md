@@ -18,6 +18,50 @@ Salesforce operates on a shared responsibility model, where users must take acti
 4. **Triggers and Other Process Automation**: Salesforce allows many kinds of process automation to occur when records are inserted, deleted, or updated in Salesforce. This process automation takes time to run. That time may be insignificant for individual record updates but can cause substantial delays when writing large volumes of data. It is critical for customers to architect their applications in such a way that this automation **does not execute** when doing large data loads such as restores or replications.
 5. **Constraints of Managed Packages**: Managed packages within Salesforce come with their own set of limitations, further complicating backup and recovery processes. Operations within these packages can be slow and cumbersome, adding another layer of complexity to data management. For example, attempting to back up data from a managed package that has stringent data access controls can lead to incomplete or failed backups.
 
+## Best Practices for Salesforce Disaster Recovery Using Vault <a href="#title-text" id="title-text"></a>
+
+Salesforce is a mission-critical system for many organizations, making disaster recovery a top priority. Establishing a clear Recovery Time Objective (RTO) and Recovery Point Objective (RPO) is essential to ensure business continuity in case of data corruption or system downtime. This guide outlines best practices for designing a disaster recovery strategy using AutoRABIT Vault, drawing on real-world experience with Salesforce environments.
+
+### Challenges in Salesforce Restores <a href="#challenges-in-salesforce-restores" id="challenges-in-salesforce-restores"></a>
+
+When organizations attempt a full restore of Salesforce data to assess RTO and RPO, they often face the following challenges:
+
+* **Salesforce Validations**: Standard Salesforce validations may trigger errors during the restore, causing the process to fail.
+* **Governor Limits**: Full restores can run into Salesforce’s governor limits or max API call restrictions, making it difficult to complete the operation.
+* **Data Complexity**: The variety of data types in Salesforce adds complexity, as not all types can be restored easily or in the expected format.
+* **Infrastructure Overload**: Excessive resource consumption on Vault’s infrastructure may slow down the process, causing jobs to stall or fail.
+
+These challenges can hinder the success of a comprehensive disaster recovery strategy. However, by following a few key best practices, organizations can mitigate these risks and run smooth recovery exercises.
+
+#### Best Practices for Salesforce Disaster Recovery <a href="#best-practices-for-salesforce-disaster-recovery" id="best-practices-for-salesforce-disaster-recovery"></a>
+
+1.  **Identify Critical Salesforce Objects**\
+    Start by identifying the Salesforce objects that are critical to maintaining business operations. Not all data needs to be restored immediately in a disaster scenario. Work with internal teams to prioritize objects based on their business impact.
+
+    **Recommendation**: Collaborate with stakeholders to define which objects are crucial for "business-as-usual" operations in case Salesforce is unavailable or the data is corrupted.
+2.  **Prioritize Data Within Objects**\
+    Within each critical object, not all data carries the same importance. You can improve recovery efficiency by restoring high-priority data first. For instance, you may prioritize records based on when they were created, the accounts they are related to, or other business-specific factors.
+
+    **Recommendation**: Establish a data hierarchy for each object, based on criteria like creation date or key relationships, to streamline the restore process.
+3.  **Adopt a Phased Recovery Approach**\
+    Rather than restoring all Salesforce data at once, which can lead to long-running jobs and infrastructure bottlenecks, consider a phased recovery approach. Begin by restoring essential data and then proceed with the rest, minimizing pressure on system resources.
+
+    **Recommendation**: Plan for a staggered restoration where the most critical data is restored first, reducing the likelihood of job failures and governor limits.
+4.  **Optimize Resource Usage**\
+    To prevent Vault’s infrastructure from becoming overloaded during a restore, monitor the resources used by the restore process and adjust accordingly. This will help ensure that jobs complete successfully without stalling.
+
+    **Recommendation**: Set resource usage thresholds and plan restores during off-peak hours when system load is lower.
+5.  **Test Recovery Processes Regularly**\
+    Regularly test your Salesforce recovery process to validate that RTO and RPO goals are being met. This ensures that your disaster recovery plan remains effective and that any new Salesforce changes are accounted for.
+
+    **Recommendation**: Schedule quarterly recovery tests to stay prepared for disaster scenarios and ensure the RTO and RPO align with organizational requirements.
+
+#### Conclusion <a href="#conclusion" id="conclusion"></a>
+
+By adopting a strategic, phased approach to Salesforce restores and focusing on critical objects and high-priority data, organizations can reduce the risk of restore failures and minimize downtime. Following these best practices will help ensure that your organization’s disaster recovery process is efficient, reliable, and meets RTO and RPO targets.
+
+AutoRABIT Vault, when paired with a thoughtful recovery strategy, can provide the confidence needed to handle Salesforce data recovery and ensure business continuity even during unexpected disruptions.
+
 ### **Techniques and Best Practices for Effective Backup and Recovery**
 
 1. **Identify Critical Data and Objects**: AutoRABIT works with customers to determine the critical objects and data essential for business continuity. Establish Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO) around these critical elements to ensure prioritized recovery in case of data loss. For example, a financial services company might prioritize backing up customer account data and transaction histories to ensure minimal disruption in case of data loss.

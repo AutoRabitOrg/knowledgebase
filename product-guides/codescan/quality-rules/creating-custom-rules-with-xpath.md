@@ -18,7 +18,7 @@
 Note: To download the Apex Rule Designer tool, you need a subscription code.
 {% endhint %}
 
-Installing the Apex-Custom Rule Designer
+### Installing the Apex-Custom Rule Designer
 
 Run the following command to install the downloaded _Apex-Custom Rule Designer_:
 
@@ -132,4 +132,4 @@ The type of component being visualized is flow. Decisions exist within that flow
 
 <figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-Now you can add it to your Quality Profile as you would any built in rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.
+Now you can add it to your Quality Profile as you would any built in-rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.

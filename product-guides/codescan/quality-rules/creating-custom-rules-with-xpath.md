@@ -26,6 +26,19 @@ Run the following command to install the downloaded _Apex-Custom Rule Designer_:
 java -jar <jar-file-name>.jar
 ```
 
+### How to Validate an XPath Expression with CodeScan Rule Designer
+
+1. Enter the Source Code
+2. This will generate an Abstract Tree based on the code.
+3. In the XPath query section, enter the XPath and click 'Go' to Validate the Path.
+4. If the XPath is correct, it will highlight the source code lines for that XPath expression.
+
+<figure><img src="../../../.gitbook/assets/image (1541).png" alt=""><figcaption></figcaption></figure>
+
+Example:
+
+<figure><img src="../../../.gitbook/assets/image (1542).png" alt=""><figcaption></figcaption></figure>
+
 ### Apex <a href="#apex" id="apex"></a>
 
 Here are some examples of XPath queries for Apex.

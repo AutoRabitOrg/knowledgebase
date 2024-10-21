@@ -7,7 +7,7 @@ After completing this unit, you'll be able to:
 * [Install the 'CodeScan for Visual Studio (VS) Code' extension](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#installing-the-codescan-for-vs-code-extension)
 * [Integrate VS Code with CodeScan](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#integrate-vs-code-with-codescan-extension)
 * [Run VS Code behind a proxy](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#visual-studio-code-behind-a-proxy)
-* [Troubleshooting steps if you ran with VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
+* [Troubleshooting steps if you experienced VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
 
 ### Installing the CodeScan IDE Plugin version 2.0.0
 
@@ -26,7 +26,7 @@ These step-by-step instructions will show you how to install the CodeScan plugin
 5. Click 'Allow Connection' to send the newly generated token back to your IDE.
 6. Add your organization key.
 7. Enter a Unique Connection Name.
-8. Click on 'Save Connection.' You will be able to see your connection appear in your connected mode window.
+8. Click on 'Save Connection.' You will see your connection appear in your connected mode window.
 
 <figure><img src="../../../../.gitbook/assets/image (479).png" alt="" width="293"><figcaption></figcaption></figure>
 
@@ -34,7 +34,7 @@ These step-by-step instructions will show you how to install the CodeScan plugin
 
 <figure><img src="../../../../.gitbook/assets/image (480).png" alt="" width="563"><figcaption></figcaption></figure>
 
-10. Click the + symbol that appears to the right. This will show you a list of projects from the Command palette.
+10. Click the + symbol to the right. This will show you a list of projects from the Command palette.
 11. Select the project you would like to connect to.
 12. The project you connect to determines the rules for scanning your open files.
 
@@ -51,14 +51,15 @@ The **CodeScan VS Code** extension provides immediate feedback to developers on 
 Make sure you:
 
 1. Install the latest VS Code version.
-2. Have a CodeScan cloud account (with valid enterprise or trial license).
+2. Have a CodeScan **cloud** account:&#x20;
+   * Have a valid enterprise license (or a **cloud** trial version—trial **not** available with self-hosted)
 3. For CodeScan **Self Hosted**:
    * Have a working **SonarQube™ (9.9+)** server
-   * Have a licensed, latest version of **CodeScan** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)).
+   * Have a licensed version (no trial available) of the latest **CodeScan** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)).
 4. Download the **CodeScan** extension from the marketplace
 5. Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.
-6. Install the **JDK version 17** or above.
-7. Install the **Java Runtime (JRE) 17** version or later.
+6. Install **JDK version 17** or above.
+7. Install **Java Runtime (JRE) 17** version or later.
 8. Install the latest available **Node.js LTS** version.
 9. Uninstall the **Apex PMD** and **SonarLint™** plugins. The CodeScan and VS Code plugin will not work with SonarLint™ or Apex PMD installed.
 
@@ -67,7 +68,7 @@ Version 2.0.0 requires Java Runtime (JRE) / JDK versions 17 or later. Prior CS v
 {% endhint %}
 
 {% hint style="info" %}
-**Note:** CodeScan plugin is designed to work with a single VS Code window at a time. Using CodeScan plugin with multiple VS Code windows open may give unexpected results.
+**Note:** CodeScan plugin is designed to work with a single VS Code window at a time. Using the CodeScan plugin while having multiple VS Code windows open may give unexpected results.
 {% endhint %}
 
 ### Installing the 'CodeScan for VS Code' extension <a href="#installing-the-codescan-for-vs-code-extension" id="installing-the-codescan-for-vs-code-extension"></a>
@@ -149,7 +150,7 @@ Select **-**\
 **Shift+Command+P** or **-**\
 **Shift+Command+P** (Mac) to open the Command Palette. Type in CodeScan to bring up the CodeScan commands and run **Update CodeScan binding to SonarQube/CodeScan Cloud**.
 
-An **All CodeScan bindings successfully updated** notification appears once the binding is successfully completed.
+An **All CodeScan bindings successfully updated** notification appears once the binding is completed successfully.
 
 **Step 8: Verifying**
 
@@ -256,7 +257,7 @@ If the proxy has a _username_ and _password_, you can add/update the following p
 
 ### Self Signed Certificates <a href="#self-signed-certificates" id="self-signed-certificates"></a>
 
-If you are connecting to a server with a self-signed certificates, you will need to specify them for your **Java** and **Node** installations.
+If you are connecting to a server with self-signed certificates, you will need to specify them for your **Java** and **Node** installations.
 
 For your **Java** installation, you can find the documentation [here](https://docs.oracle.com/en/java/javase/11/security/java-security-overview1.html#GUID-054AD71D-D449-47FF-B6F7-F416DA821D46).
 
@@ -382,7 +383,7 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 
 **v. 2.0.3**
 
-Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules. Support ticket #114684
+Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.&#x20;
 
 
 
@@ -404,22 +405,20 @@ The released plugin can be updated directly from VSCode and also can be found in
 
 Before raising a support ticket, perform the following checks in VS Code:
 
-* **Are Sonarlint or ApexPmd plugin installed alongside CodeScan?-** _If so, uninstall it._
-* **Is the Salesforce extension pack installed in VS Code ?-** _If not, install as this is mandatory._
-* **What version of Java is installed?**_-_ Version 2.0.0 onwards requires Java Runtime (JRE) / JDK versions 17 or later. Prior CS versions will still work with older JRE / JDK versions 11.
-* **Is the Java path passed to CodeScan (codescan.ls.javaHome)?**- Verify by going to **`VS Code Settings > Settings > Extensions > CodeScan`** and under **`Codescan › Ls: Java Home (Not synced),`** you should see the **`JAVA_HOME`** path mentioned. If not present, please enter the **`JAVA_HOME`** path.
-* You can also add the **`JAVA_HOME`** path in the **settings.json** file inside **`codescan.ls.javaHome`** property.
+* **Is the Sonarlint or ApexPMD plugin installed alongside CodeScan?** _If so, uninstall it._
+* **Is the Salesforce extension pack installed in VS Code?** _If not, install, as this is mandatory._
+* **What version of Java is installed?** Version 2.0.0 onward requires Java Runtime (JRE) / JDK versions 17 or later. Prior CS versions will still work with older JRE / JDK versions 11.
+* **Is the Java path passed to CodeScan (codescan.ls.javaHome)?** Verify by going to **`VS Code Settings > Settings > Extensions > CodeScan`** and under **`Codescan › Ls: Java Home (Not synced),`** you should see the **`JAVA_HOME`** path mentioned. If not present, please enter the **`JAVA_HOME`** path.
+* You can also add the **`JAVA_HOME`** path in the **settings.json** file inside the **`codescan.ls.javaHome`** property.
 
 <figure><img src="../../../../.gitbook/assets/image (501).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Perform the **CodeScan Update Binding** and check if the issue is resolved.
 
-
-
 ***
 
 **What's Next?**\
-If you're still having issue with VS Code, raise a support ticket on the [CodeScan Support Page](https://support.autorabit.com/portal/en/home) and share with us the following informations:
+If you're still having an issue with VS Code, raise a support ticket on the [CodeScan Support Page](https://support.autorabit.com/portal/en/home) and share with us the following information:
 
 *   In **settings.json** file, please add the below properties inside the curly braces ({ }) to get debug level logs:
 

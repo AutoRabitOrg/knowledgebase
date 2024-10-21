@@ -7,16 +7,16 @@ After completing this unit, you'll be able to:
 * [Install CodeScan IntelliJ plugin](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#install-the-codescan-intellij-plugin)
 * [Configure CodeScan Plugin in IntelliJ](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#configuration-of-codescan-plugin-in-intellij)
 * [Bind the project with CodeScan](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#bind-the-project-with-codescan)
-* [Find the troubleshooting steps if you ran with IntelliJ CodeScan plugin issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#intellij-troubleshooting).
+* [Find the troubleshooting steps if you encounter IntelliJ CodeScan plugin issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-intellij#intellij-troubleshooting).
 
 ### Get Started with CodeScan IntelliJ plugin <a href="#get-started-with-codescan-intellij-plugin" id="get-started-with-codescan-intellij-plugin"></a>
 
-The [CodeScan IntelliJ plugin](https://www.codescan.io/products/editor-plugins/) provides on-the-fly feedback to developers on bugs and quality issues, it is a fully-integrated user experience in the IntelliJ IDE.
+The [CodeScan IntelliJ plugin](https://www.codescan.io/products/editor-plugins/) provides on-the-fly feedback to developers on bugs and quality issues. It is a fully-integrated user experience in the IntelliJ IDE.
 
 The plugin is derived from [SonarLint™](https://www.sonarlint.org/).
 
 {% hint style="info" %}
-**Note:** CodeScan and IntelliJ plugin as of now will not work along with the SonarLint™ installation, so first you must uninstall SonarLint™.
+**Note:** As of now, CodeScan and IntelliJ plugins will not work alongside the SonarLint™ installation, so you must first uninstall SonarLint™.
 {% endhint %}
 
 #### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
@@ -24,10 +24,11 @@ The plugin is derived from [SonarLint™](https://www.sonarlint.org/).
 Make sure you have the following:
 
 1. **IntelliJ IDEA** **2022.2** version or above
-2. A CodeScan cloud account (with valid enterprise or trial license).
-3. For CodeScan **Self Hosted**:
+2. CodeScan for the **cloud**:
+   * Valid **enterprise** license or **trial** (cloud trial **only**—**not** available with self-hosted)
+3. For **Self-Hosted (On-Premises) CodeScan**:
    * A working **SonarQube™ (7.9+)** installation
-   * A licensed version of **CodeScan (4.4+)** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)).
+   * A licensed version of **CodeScan (4.4+)** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)) (no trial available with self-hosted/on-premises CodeScan).
 4. **JDK version 11** or above
 5. Latest available **Node.js LTS** version (v16 as of today)
 6. Uninstall **SonarLint™** Plugins. The CodeScan and IntelliJ plugin will not work alongside the SonarLint™ installation.

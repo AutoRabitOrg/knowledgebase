@@ -2,7 +2,7 @@
 
 ## ARM Release Notes 24.4.1
 
-**Issue Date: 27 October 2024**
+**Release Date: 27 October 2024**
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 

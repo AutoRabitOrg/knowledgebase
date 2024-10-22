@@ -7,6 +7,7 @@
 * [⚡ What we do](overview/what-we-do.md)
 * [🔁 Release Notes](overview/release-notes/README.md)
   * [ARM Release Notes](overview/release-notes/arm-release-notes/README.md)
+    * [Release Notes 24.4](overview/release-notes/arm-release-notes/release-notes-24.4.md)
     * [Release Notes 24.3](overview/release-notes/arm-release-notes/release-notes-24.3.md)
       * [Release Notes 24.3.4](overview/release-notes/arm-release-notes/release-notes-24.3/release-notes-24.3.4.md)
       * [Release Notes 24.3.3](overview/release-notes/arm-release-notes/release-notes-24.3/release-notes-24.3.3.md)

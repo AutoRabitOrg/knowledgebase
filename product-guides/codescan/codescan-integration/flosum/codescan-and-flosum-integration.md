@@ -4,18 +4,14 @@
 
 **Flosum** is a release management tool for the Salesforce platform. Flosum users can now integrate CodeScan in their deployments to achieve error-free and secure releases.
 
-### How to Integrate Flosum with CodeScan? <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
+### How to Integrate Flosum with CodeScan <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
 
-1. Install the **`CodeScan package`** in your **Flosum org**. Package URL to be provided by the **Flosum Customer Success Manager**.
-2. After installation, click on **`App launcher`** and open **`Flosum-Codescan`**.
+1. Install the CodeScan package in your Flosum organization. The Customer Success Manager must provide the package URL.
+2. After installation, click on app launcher and open Flosum-Codescan.
 
 <figure><img src="../../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
-3.  There are few settings which we need to enable in Flosum-CodeScan Package.
-
-    * **Activate CodeScan:** Click on **`Activation`** tab and select **`Enable Synchronization`** option for Flosum-CodeScan.
-
-    <figure><img src="../../../../.gitbook/assets/image (510).png" alt="" width="563"><figcaption></figcaption></figure>
+3.  There are few settings you need to enable.
 
     * **Authorize CodeScan:** To authenticate CodeScan account you need to have an **`Organization Key`** as well as **`Access Token`** from CodeScan Server.
 

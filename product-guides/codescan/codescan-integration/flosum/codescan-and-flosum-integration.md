@@ -41,7 +41,7 @@ In this use case we will create a new branch in Flosum and add all new metadata 
 
 <figure><img src="../../../../.gitbook/assets/image (515).png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Navigate to your instance's URL, for example, [_https://app.codescan.io/_](https://app.codescan.io/) for **US** region, [_https://app-eu.codescan.io/_](https://app.codescan.io/) for **EU** region or [_https://app-aus.codescan.io/_](https://app.codescan.io/) for **AUS** region.
+3. Navigate to your instance's URL, for example, [_https://app.codescan.io_](https://app.codescan.io) for **US** region, [_https://app-eu.codescan.io_](https://app-eu.codescan.io) for **EU** region or [_https://app-aus.codescan.io_](https://app-aus.codescan.io) for **AUS** region.
 4. Login to your CodeScan account, and you will notice that the branch is populated in the CodeScan Server with your project.
 
 <figure><img src="../../../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>

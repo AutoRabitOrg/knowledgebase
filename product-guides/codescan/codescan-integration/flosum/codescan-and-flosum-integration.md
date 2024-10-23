@@ -1,10 +1,10 @@
 # CodeScan and Flosum Integration
 
-### About Flosum <a href="#about-flosum" id="about-flosum"></a>
+## About Flosum <a href="#about-flosum" id="about-flosum"></a>
 
 **Flosum** is a release management tool for the Salesforce platform. Flosum users can now integrate CodeScan in their deployments to achieve secure, error-free releases.
 
-### How to Integrate Flosum with CodeScan <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
+## How to Integrate Flosum with CodeScan <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
 
 1. **Install CodeScan.**&#x20;
    1. Obtain the CodeScan package URL from your Customer Success Manager.&#x20;
@@ -72,13 +72,13 @@
 
 Your Flosum-CodeScan integration is complete!
 
-### How Does Flosum-CodeScan Work <a href="#how-does-flosumcodescan-work" id="how-does-flosumcodescan-work"></a>
+## How Does Flosum-CodeScan Work? <a href="#how-does-flosumcodescan-work" id="how-does-flosumcodescan-work"></a>
 
 #### Case 1: Create a new branch and add all metadata components <a href="#case-1-create-a-new-branch-and-add-all-metadata-components" id="case-1-create-a-new-branch-and-add-all-metadata-components"></a>
 
-In this use case we will create a new branch in Flosum and add all new metadata components and do a [static code analysis](https://www.codescan.io/) on a CodeScan server.
+In this use case, we will create a new branch in Flosum, add all new metadata components, and perform a [static code analysis](https://www.codescan.io/) on a CodeScan server.
 
-1. Go to **Flosum**, Create a **new branch** and attach it to existing repository and click on **`Save`**.
+1. Go to **Flosum**, create a **new branch** and attach it to existing repository and click on **`Save`**.
 
 <figure><img src="../../../../.gitbook/assets/image (514).png" alt="" width="563"><figcaption></figcaption></figure>
 

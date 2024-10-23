@@ -226,7 +226,7 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 22. After performing the “**Sync With Salesforce**”, the user has to go to the “External Objects” and select the required object.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 23. To add the related lists to the page layout of the parent object, the user first has to set the field-level security by going to the field under the object. The permission should be set to 'visible.'
 24. The user can only view data to which they have access.
 
@@ -241,7 +241,7 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 27. On opening the page layouts, the user can view the “Related Lists” on the left side pane as highlighted.
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 28. Click on the related lists and continue to add the required related lists to the layout to view under the related lists section.
 29. After completing the required configuration, the user can continue to open the object on which the configuration is done to view the related list items when the parent record is opened.
 

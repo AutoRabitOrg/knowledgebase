@@ -138,7 +138,7 @@ Now you can add it to your Quality Profile as you would any built in-rule.  Plea
 
 In the following screenshot, the CodeScan Rule Designer rule is not being used to validate the XPath expression.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### To download the Custom Rule designer:
 

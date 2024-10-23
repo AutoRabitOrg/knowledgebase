@@ -33,7 +33,7 @@ Follow these step-by-step instructions to access the “Stale Jobs” module in 
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption><p>Replicate</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Archive</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption><p>Archive</p></figcaption></figure>
 
 4. The admin can select the jobs and terminate the required long-running stale jobs from the respective modules.
 5. Once the jobs are terminated, a notification will be sent to the admin and the respective user who created the jobs.

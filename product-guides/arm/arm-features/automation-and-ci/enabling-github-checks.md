@@ -10,7 +10,7 @@ GitHub status checks are an excellent way to track and control the [CI/CD](../..
 
 GitHub repositories registered in AutoRABIT should have the pull request feature enabled. \[[Learn More](../version-control/external-pull-request/)]
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Protected Branches <a href="#protected-branches" id="protected-branches"></a>
 
@@ -22,7 +22,7 @@ If you’re a repository owner, you can update your repositories using protected
 2. In the left-hand menu, click **Branches**.&#x20;
 3. Under **Branch protection rules** either click **Edit** for a rule that you would like to change or click **Add rule** at the top to create a new rule.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. If adding a new rule, enter the desired branch name in the **Branch name pattern** field.
 5. Scroll down to the second box - **Require status checks to pass before merging**.&#x20;

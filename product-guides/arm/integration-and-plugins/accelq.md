@@ -22,7 +22,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 2. Go to the **Credentials** tab.
 3. Click on **Create Credential** button from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **credential name**.
 5. Choose the **Credential Type** as **"User name with Password."**

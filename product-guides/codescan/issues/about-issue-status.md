@@ -20,3 +20,13 @@ If users tend to mark many issues as False Positives, it means that some coding 
 The following diagram shows the Issue lifecycle:
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Issue Lifecycle</p></figcaption></figure>
+
+## **Tracking Issue History**
+
+1. Under the **Issues** tab, select the violation for which you want to check the history of changes.
+2.  In the upper right corner of the Issue page, click on the arrow next to the latest change timestamp:\
+    \
+
+
+    <figure><img src="../../../.gitbook/assets/image (1543).png" alt=""><figcaption></figcaption></figure>
+3. In the dropdown, you will see the history of all changes made to this issue, such as member assignment, severity, resolution changes, etc.

@@ -1,6 +1,6 @@
 # Customizing Quality Gates
 
-Quality Gates return a **Pass** or **Fail** rating for analysis, depending on the selected criteria.
+Quality Gates return a **Pass** or **Fail** (sometimes referred to as **Go/No-Go** rules) rating for analysis, depending on the selected criteria.
 
 To create a new Quality Gate, follow the steps below:
 

@@ -45,6 +45,8 @@ The enhanced abort functionality has been applied to the following areas:
 
 Thorough internal QA checks have been performed to ensure the stability of this new approach.
 
+**Enable the “Trigger Build On Commit” option when creating a CI Job**Users can now enable the “Trigger Build On Commit” option when creating a CI Job, allowing automated builds triggered directly by commits. Upon selecting this option, a webhook setup will become available, ensuring that every new change in the version control system triggers an update to the CI Job. Builds will only initiate for commits made in the feature templates folder.
+
 ### Support <a href="#support" id="support"></a>
 
 **Accurate Merge Status Display**

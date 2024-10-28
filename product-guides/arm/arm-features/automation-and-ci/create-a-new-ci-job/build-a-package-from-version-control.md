@@ -15,7 +15,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 
 <figure><img src="../../../../../.gitbook/assets/image (1229).png" alt=""><figcaption></figcaption></figure>
 
-3. Choose the tile: **Package from** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/)
+3. Choose the tile: **Package from** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/)**.**
 
 <figure><img src="../../../../../.gitbook/assets/image (1230).png" alt=""><figcaption></figcaption></figure>
 

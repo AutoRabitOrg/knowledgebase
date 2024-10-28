@@ -61,7 +61,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
      2. **Developer B** also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 am this morning.\
         So, when ARM builds get triggered by webhook, **Developer B** changes will be packaged and deployed, and the code gets updated with the latest revision. However, **Developer A** changes are ahead of **Developer B**, ARM will show no modifications for the build since the **Developer B** changes are in the **HEAD** position. To overcome this scenario, ARM has come with an option to **"Process commit revision via hook only."** This will prepare the build from the revision of **Developer A** to the HEAD revision of the branch, thereby ensuring no commits are skipped in the ARM cycle.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Note**: If you’re committing both _nCino Record-Based Config_ files and _Salesforce Metadata_ files to the same branch—even though they’re in separate folders—AutoRABIT may encounter an issue with certain Git-based version control systems. Specifically, AutoRABIT is unable to determine which folder's content has changed, leading to unnecessary build triggers that won't pick any changes if changes are in an irrelevant folder when the 'Build on commit' option is enabled.&#x20;
 {% endhint %}
 

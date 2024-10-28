@@ -21,12 +21,12 @@ For the above-mentioned repositories, if you select **“Trigger Build on Auto-C
 
 ## Configuring the CI Job for Trigger Build on Commit <a href="#manually-creating-records" id="manually-creating-records"></a>
 
-1. Enable the slider on the highlighted selection to enable trigger build on commit for the respective job.
+1. Toggle the slider on the highlighted selection to enable 'Trigger Build on Commit' for the respective job.
 
 <figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 2. Observe the copy symbol beside the URL. Use the highlighted URL as 'payload URL' in the configuration settings of the webhook. Refer to the following page for help configuring the [webhook](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks).
-3. Once a job is created with the “Trigger Build on Commit” setting enabled, then every commit into the respective repository and branch would auto-trigger a run in the application.
+3. Once a job is created with the 'Trigger Build on Commit' setting enabled, then every commit into the respective repository and branch would auto-trigger a run in the application.
 
 ## Manually Commit Templates <a href="#manually-creating-records" id="manually-creating-records"></a>
 

@@ -4,8 +4,8 @@
 
 Refer to [Webhooks](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks) for configuration details. Currently, nCino supports the following webhooks:
 
-1. Webhook for Git
-2. Webhook for Git Enterprise
+1. Webhook for GitHub
+2. Webhook for GitHub Enterprise
 3. Webhook for Microsoft Azure
 4. Webhook for GitLab
 5. Webhook for Bitbucket
@@ -13,19 +13,50 @@ Refer to [Webhooks](https://knowledgebase.autorabit.com/product-guides/arm/arm-f
 7. Webhook for Visual Studio GIT
 8. Webhook for Visual Studio GIT Enterprise
 
-For the above-mentioned repositories, if the user selects **“Trigger Build on Auto-Commit,”** the job will be triggered automatically for every new commit to the branch.
+For the above-mentioned repositories, if you select **“Trigger Build on Auto-Commit,”** the job will be triggered automatically for every new commit to the branch.
 
 {% hint style="warning" %}
 **Important Note**: Note: If you’re committing both _nCino Record-Based Config_ files and _Salesforce Metadata_ files to the same branch—even though they’re in separate folders—AutoRABIT may encounter an issue with certain Git-based version control systems. Specifically, AutoRABIT is unable to determine which folder's content has changed, leading to unnecessary build triggers that won't pick any changes if changes are in an irrelevant folder when the 'Build on commit' option is enabled.
 {% endhint %}
 
-### Manually Creating Records <a href="#manually-creating-records" id="manually-creating-records"></a>
+## Configuring the CI Job for Trigger Build on Commit <a href="#manually-creating-records" id="manually-creating-records"></a>
 
-1. Provide your custom HEXID.
-2. Reach out to AutoRABIT for the 'Feature Org ID.' AutoRABIT will provide the required “Org ID.”
-3. Make the above-mentioned changes in the following:
-   * manifest.yaml
-   * project-def.json
-   * dataset/\<HEXID>-Brands
-4. Download the attached WebhookKnowBase-Branch-1 3.zip for reference on the structure of the file to be prepared.
+1. Enable the slider on the highlighted selection to enable trigger build on commit for the respective job.
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+2. Observe the copy symbol beside the URL. Use the highlighted URL as 'payload URL' in the configuration settings of the webhook. Refer to the following page for help configuring the [webhook](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks).
+3. Once a job is created with the “Trigger Build on Commit” setting enabled, then every commit into the respective repository and branch would auto-trigger a run in the application.
+
+## Manually Commit Templates <a href="#manually-creating-records" id="manually-creating-records"></a>
+
+To manually commit the template data into your version control system (outside of AutoRABIT), follow the steps below:
+
+#### Information to collect before committing: <a href="#information-to-collect-before-committing" id="information-to-collect-before-committing"></a>
+
+* **HEXID**: A random 8-character alphanumeric string, for example: 10cPkE0E
+* **Feature-Org-Id**: Provided by AutoRABIT upon request, for example: rJA5XMqsT71C6AwhaA7jyHznMxXvpRSM
+
+#### Steps to Commit New Templates: <a href="#steps-to-commit-new-templates" id="steps-to-commit-new-templates"></a>
+
+1. Add the HEXID and Feature-Org-Id details in the following files (refer to the attached sample file for guidance):
+   * `feature-templates/nCino/config/manifest.yaml`
+   * `feature-templates/nCino/config/project-def.json`
+2. Create a feature folder named using the format `hexId-featureName`, and include all relevant details such as filters, data, object sets, buckets, object relationships, and user IDs.
+3. Ensure all information follows the folder structure of the reference folder.
+4. Add `ar-config/project-def.json` file at root folder as in the attached reference.
+
+#### Steps to Modify Existing Templates: <a href="#steps-to-modify-existing-templates" id="steps-to-modify-existing-templates"></a>
+
+1. For any record additions, deletions, or updates, make the necessary changes under:
+   * `feature-templates/nCino/dataset/hexId-FeatureName/data`
+2. To modify object filters, make adjustments under:
+   * `feature-templates/nCino/dataset/hexId-FeatureName/filters`
+
+{% hint style="info" %}
+Note:
+
+* In the case of GitHub and GitLab, the jobs would only trigger if the commit has any changes related to “feature-templates.”
+* For any version control types other than GitHub and GitLab, the CI Jobs will trigger for every commit regardless of data changes.
+{% endhint %}
 

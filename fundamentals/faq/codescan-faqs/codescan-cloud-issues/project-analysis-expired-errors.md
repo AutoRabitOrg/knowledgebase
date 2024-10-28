@@ -25,5 +25,5 @@ To fix the above errors, first you need to delete the **Analysis Project**, to d
 5.  You will now see a new popup window. Select the required option from the options given.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Run the request.&#x20;

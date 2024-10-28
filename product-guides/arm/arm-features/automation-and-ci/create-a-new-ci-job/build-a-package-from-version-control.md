@@ -66,6 +66,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 
 1. **Developer A** committed some changes to its local repository at 10 am this morning but did not push the changes to the remote repository.
 2. **Developer B** also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 am this morning.\
+   \
    So, when ARM builds get triggered by webhook, **Developer B's** changes will be packaged and deployed, and the code gets updated with the latest revision. However, **Developer A's** changes are ahead of **Developer B's**, so ARM will show no modifications for the build, since **Developer B's** changes are in the **HEAD** position. To overcome this scenario, ARM has an option to **"Process commit revision via hook only."** This will prepare the build from the revisions of **Developer A** to the HEAD revision of the branch, thereby ensuring no commits are skipped in the ARM cycle.
 
 {% hint style="warning" %}

@@ -49,20 +49,22 @@ Convert and package your version control files to [Salesforce Metadata](https://
 
 **Additional options in the 'Build' section**
 
-1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
+1. **Status Check API:** This allows you to check the status of the APIs being run for the CI job.
 2. [**Pull Request**](../../version-control/external-pull-request/)**:** Creates a pull request for the current CI job if opted.
 3. [**Merge Request**](../../version-control/ez-merge/merge-requests.md)**:** Creates a merge request for the current CI job if opted.
 4. **Map ALM Project (Ex: Jira):** Configure work item type status in ALM type to include in the build (under the ALM section).Important Note:**Build Using- Baseline Revision/Time Range** and **Trigger Build on Commit** will not be available for the users if the 'Map ALM Project' option is chosen.
 5. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
-   *   **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise BITBUCKET, BITBUCKET, VSGIT, GITLAB, GITHUB) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.\
-       Let’s take the below scenario:\
-       Two developers (**Developer A** and **Developer B**) both working on the same code base.
+   * **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise BITBUCKET, BITBUCKET, VSGIT, GITLAB, GITHUB) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.\
+     Let’s take the following scenario:\
+     Two developers (**Developer A** and **Developer B**) are both working on the same code base.
+     1. **Developer A** committed some changes to its local repository at 10 am this morning but did not push the changes to the remote repository.
+     2. **Developer B** also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 am this morning.\
+        So, when ARM builds get triggered by webhook, **Developer B** changes will be packaged and deployed, and the code gets updated with the latest revision. However, **Developer A** changes are ahead of **Developer B**, ARM will show no modifications for the build since the **Developer B** changes are in the **HEAD** position. To overcome this scenario, ARM has come with an option to **"Process commit revision via hook only."** This will prepare the build from the revision of **Developer A** to the HEAD revision of the branch, thereby ensuring no commits are skipped in the ARM cycle.
 
-       1. **Developer A** has committed some changes to its local repository at 10 AM this morning but did not push the changes to the remote repository.
-       2. **Developer B** has also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 AM this morning.\
-          So, when ARM builds get triggered by webhook, **Developer B** changes will be packaged and deployed and the codes get updated with the latest revision. However, **Developer A** changes are ahead of **Developer B**, ARM will show no modifications for the build since the **Developer B** changes are in the **HEAD** position. To overcome this scenario, ARM has come with an option to **"Process commit revision via hook only"**. This will prepare the build from the revision of **Developer A** to the HEAD revision of the branch, therefore no commits are skipped through the ARM cycle.
+{% hint style="info" %}
+**Note**: If you’re committing both _nCino Record-Based Config_ files and _Salesforce Metadata_ files to the same branch—even though they’re in separate folders—AutoRABIT may encounter an issue with certain Git-based version control systems. Specifically, AutoRABIT can't tell which folder's content has changed, leading to unnecessary build triggers that won't pick any changes if changes are in an irrelevant folder when the 'Build on commit' option is enabled.&#x20;
+{% endhint %}
 
-       <figure><img src="../../../../../.gitbook/assets/image (1235).png" alt="" width="425"><figcaption></figcaption></figure>
 6. **Incremental Build:** Incremental builds are important for managing continuous builds for [continuous delivery](https://www.autorabit.com/blog/what-you-need-to-know-about-salesforce-continuous-delivery/). Incremental Builds substantially decrease build times by avoiding the execution of previous metadata that is not needed. This will fetch all the metadata changes beyond the selected Baseline Revision till the successfully deployed revision to the destination org. On the next CI Job run, the previous Baseline Revision automatically gets changed to the successfully deployed revision. Hence, there will be a substantial increase in build time performance for large-project incremental builds when a change to a single file or a small number of files is performed.
 
 {% hint style="info" %}

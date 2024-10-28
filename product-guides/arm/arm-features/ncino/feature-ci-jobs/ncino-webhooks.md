@@ -9,15 +9,16 @@ Refer to [Webhooks](https://knowledgebase.autorabit.com/product-guides/arm/arm-f
 3. Webhook for Microsoft Azure
 4. Webhook for GitLab
 5. Webhook for Bitbucket
+
+{% hint style="warning" %}
+**Important Note**: Note: If you’re committing both _nCino Record-Based Config_ files and _Salesforce Metadata_ files to the same branch—even though they’re in separate folders—AutoRABIT may encounter an issue with certain Git-based version control systems. Specifically, AutoRABIT is unable to determine which folder's content has changed, leading to unnecessary build triggers that won't pick any changes if changes are in an irrelevant folder when the 'Build on commit' option is enabled.
+{% endhint %}
+
 6. Webhook for Bitbucket Enterprise
 7. Webhook for Visual Studio GIT
 8. Webhook for Visual Studio GIT Enterprise
 
 For the above-mentioned repositories, if the user selects **“Trigger Build on Auto-Commit,”** the job will be triggered automatically for every new commit to the branch.
-
-Refer to the following screenshot for making the selection:
-
-**<----------------Place a screenshot of the selection to be made------------------>**
 
 ### Manually Creating Records <a href="#manually-creating-records" id="manually-creating-records"></a>
 

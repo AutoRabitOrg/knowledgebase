@@ -10,6 +10,10 @@ The key features of an Analysis Scope are:
 
 Follow the steps below to use the **Analysis Scope** feature on [CodeScan cloud](https://www.codescan.io/products/cloud/).
 
+{% hint style="info" %}
+Codescan can scan 3rd party libraries only when the code is present in the file, and not when it's referenced.
+{% endhint %}
+
 1. Open the Project under the Organization for which you need to run the analysis and navigate to **Project Settings > General Settings > Analysis Scope**.
 
 <figure><img src="../../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>

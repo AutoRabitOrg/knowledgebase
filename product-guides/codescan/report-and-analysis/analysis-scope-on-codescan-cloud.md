@@ -58,3 +58,9 @@ To do this, simply provide the rule key and file path name.
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+{% hint style="info" %}
+**Note** that only parameters set through the UI are stored in the database. For example, if you override the sonar.exclusions parameter via the command line for a specific project, it will not be stored in the database. Subsequent analyses, or analyses in SonarLint with connected mode, would still be executed with the exclusions defined in the UI and, therefore stored in the DB.
+{% endhint %}

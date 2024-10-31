@@ -40,8 +40,9 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
     <figure><img src="../../../../.gitbook/assets/image (1192).png" alt=""><figcaption></figcaption></figure>
 
     * **Custom**: Authenticate the connection via **username: API Token**
+    * Please use the “token” keyword in the "Token" field followed by the token value.
 
-    <figure><img src="../../../../.gitbook/assets/image (1193).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-31 at 12.18.51 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
     * **OAuth**: ARM supports the **Client Credentials** as a grant type for OAuth 2.0 authentication. To add an OAuth 2.0 provider, fill in the below details:
       * **URL (required):** OAuth 2.0 provider URL
@@ -50,13 +51,14 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
       * **Access token URL (required):** The URL that the client uses to obtain an access token given an authorization code
       * **Scope (optional):** Specifies the level of access that the ARM application is requesting
       * **Grant Type (required)**: The **Grant Type** is selected as **Client Credentials** by default
-6.  The **Content-Type** header describes the format in which the body of your request is being sent. For example, the body of your requests can be sent as **JSON** or **XML**.
+6.
+7.  The **Content-Type** header describes the format in which the body of your request is being sent. For example, the body of your requests can be sent as **JSON** or **XML**.
 
     * To send JSON in a request, use **application/json** and add your content in the field provided.
     * To send XML in a request, use **application/xml** and add your content in the field provided.
 
     <figure><img src="../../../../.gitbook/assets/image (1194).png" alt=""><figcaption></figcaption></figure>
-7. To add a custom header, click on the **Add Header** button and enter the keys and their value. Multiple adding of keys and values are allowed.
+8. To add a custom header, click on the **Add Header** button and enter the keys and their value. Multiple adding of keys and values are allowed.
    * Default headers is set as _**"Accept" :"application/json", "Content-Type":"application/json"**_&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1195).png" alt=""><figcaption></figcaption></figure>

@@ -2,6 +2,17 @@
 
 This document provides a description about how to create a project in CodeScan.
 
+### Salesforce Permissions:
+
+The minimum permissions required in the Salesforce profile to add a Salesforce project in CodeScan are listed below:
+
+1. API Enabled (mandatory)
+2. Modify Metadata Through Metadata API Functions (mandatory)
+3. View All Data
+4. Author Apex (Needed when IncludeContentsOfPackages is enabled)
+
+You can find all these permissions under Profile > Administrative Permissions in Salesforce.
+
 ### Prerequisites <a href="#prerequisities" id="prerequisities"></a>
 
 You will need a CodeScan organization to add a project to it. When signing up with [CodeScan Cloud](https://www.codescan.io/products/cloud/), an organization is created automatically under your user name. New organizations can be created at any time using the '**+**' icon at the top right corner of the screen.

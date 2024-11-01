@@ -32,3 +32,7 @@ Click on the copy icon to copy the link for this screen. If there is an issue wh
 8. The webhook URL is displayed. Click on the copy icon and paste the URL in a Notepad as this will not be available to copy later. After you have saved the webhook URL, click **Done**.
 
 <figure><img src="../../../../../.gitbook/assets/image (1017).png" alt=""><figcaption></figcaption></figure>
+
+9. Next, integrate your Teams with ARM. For more information on this, click [HERE](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/notifications-mail-server-settings).
+
+\

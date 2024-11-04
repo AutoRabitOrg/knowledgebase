@@ -49,7 +49,7 @@ Git's handling of duplicate file change commits can be a different aspect of Ver
     **A:** To prevent unintended duplicate merges, users should follow version control best practices, such as reviewing changes before committing, resolving merge conflicts promptly, and educating themselves on Git's behavior regarding commit history.
 3.  **Q: Is the behavior of duplicate merges in Git a flaw in AutoRABIT's integration with Git?**
 
-    **A:** No, the behavior of duplicate merges in Git is not a flaw in AutoRABIT but rather a fundamental aspect of Git's functionality. AutoRABIT works within the framework of Git's design and behaviour when handling merge operations.
+    **A:** No, the behavior of duplicate merges in Git is a fundamental aspect of Git's functionality. AutoRABIT works within the framework of Git's design and behavior when handling merge operations.
 4.  **Q: How can AutoRABIT users effectively manage duplicate merges and maintain code integrity in their development processes?**
 
     **A:** Users can effectively manage duplicate merges by understanding Git's behavior, educating themselves on version control best practices, training on commit history management, and implementing enhanced error handling mechanisms to alert users of potential duplicate commits.

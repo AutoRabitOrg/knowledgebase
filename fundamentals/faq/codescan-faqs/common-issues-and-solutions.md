@@ -1,9 +1,27 @@
 # Common Issues and Solutions
 
-#### Error: _"**Salesforce\force-app\main\default\applications\Chatter\_Delete\_Blocker.app-meta.xml**"_ <a href="#error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml" id="error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml"></a>
+## Errors <a href="#error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml" id="error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml"></a>
 
-<table data-full-width="true"><thead><tr><th>Error Information</th><th>Steps for Resolution</th></tr></thead><tbody><tr><td><strong>Descriptions:</strong><br>Getting an error <code>“</code><strong><code>Salesforce\force-app\main\default\applications\Chatter_Delete_Blocker.app-meta.xml</code></strong><code>”</code> when writing a custom SonarQube rules using the Xpath Template rule for Salesforce Metadata (sfmeta:XPathRule).<br><br><strong>Causes:</strong><br>The analysis is looking for a match with a file name and the suffix entered in the field, but it cannot find any, which is why the above error is thrown.</td><td><ol><li><p>This is expected behavior because CodeScan cannot decide which rules to apply to the files. </p><ul><li>To remove file patterns listed for sonar.lang.patterns.xml, navigate to <strong><code>Project Settings > General Settings > Language</code></strong></li></ul></li></ol></td></tr></tbody></table>
+1. **Why am I getting the following error: **_**Salesforce\force-app\main\default\applications\Chatter\_Delete\_Blocker.app-meta.xml**_** when writing a custom SonarQube rules using the Xpath Template rule for Salesforce Metadata (sfmeta:XPathRule)?**\
+   The analysis is looking for a match with a file name and the suffix entered in the field, but it cannot find any, which is why the above error is thrown. This is expected behavior because CodeScan cannot decide which rules to apply to the files. To remove file patterns listed for sonar.lang.patterns.xml, navigate to **`Project Settings > General Settings > Language.`**
+2.  **Why is my CodeScan analysis failing with the error **_**`"Job took long. We will attempt to rerun with more memory."`**_**`?`**\
+    This error may occur for projects having huge metadata.
 
-#### Error: _CodeScan analysis is failing with the error "Job took long. We will attempt to rerun with more memory"_ <a href="#error-codescan-analysis-is-getting-failed-with-the-error-job-took-long-we-will-attempt-to-rerun-with" id="error-codescan-analysis-is-getting-failed-with-the-error-job-took-long-we-will-attempt-to-rerun-with"></a>
+    1. Increase the Project's Java heap memory size to analyze the project sources.&#x20;
+       * On the CodeScan's Project page, navigate to **`Project Settings > Project Analysis`**.
+       * Click on the **`Edit Project`** button.
+       * Update the **`Project Memory`** by selecting the required memory from the dropdown. _The memory size can be overridden and increased at the organization level._
+    2. Check for the rule **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`**in your default quality profile. If available, please deactivate it. Use the steps mentioned below:
+       * Create a new quality profile for Apex language.
+       * Deactivate the **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`** rule.
+       * Set the newly created profile as **default**.
 
-<table data-full-width="true"><thead><tr><th>Error Information</th><th>Steps for Resolution</th></tr></thead><tbody><tr><td><strong>Descriptions:</strong><br>CodeScan analysis is getting failed with the error <strong><code>"Job took long. We will attempt to rerun with more memory."</code></strong><br><br><strong>Causes:</strong><br>This error may occur for projects having huge metadata.</td><td><ol><li><p>Increase the Project's Java heap memory size to analyze the project sources. </p><ul><li>On the CodeScan's Project page, navigate to <strong><code>Project Settings > Project Analysis</code></strong>.</li><li>Click on the <strong><code>Edit Project</code></strong> button.</li><li>Update the <strong><code>Project Memory</code></strong> by selecting the required memory from the drop-down. <em>The memory size can be overridden and increased at the organization level.</em></li></ul></li><li><p> Check for the rule <strong><code>"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"</code></strong>in your default quality profile. If available, please deactivate it. Use the steps mentioned below:</p><ul><li>Create a new quality profile for Apex language.</li><li>Deactivate the <strong><code>"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"</code></strong> rule.</li><li>Set the newly created profile as <strong>default</strong>.</li></ul></li></ol><p>For detailed steps, please refer to the article: <a href="https://knowledgebase.autorabit.com/codescan/docs/customizing-quality-profiles">Customizing Quality Profiles</a></p></td></tr></tbody></table>
+    For detailed steps, please refer to [Customizing Quality Profiles](https://knowledgebase.autorabit.com/codescan/docs/customizing-quality-profiles)
+
+## Copado Integration <a href="#faqs" id="faqs"></a>
+
+1. **Should the user add a new analysis project after the CodeScan-Copado integration is complete? If the user creates one, how does CodeScan understand it's the same project as the Copado connection?**\
+   Not required. The project in CodeScan is automatically created in Copado Integration using the organization key and security token provided by CodeScan.
+2. **I am unable to see the results in CodeScan using the Copado integration.**\
+   Check if the specific user has permission to access the 'Result Record' in Copado.
+

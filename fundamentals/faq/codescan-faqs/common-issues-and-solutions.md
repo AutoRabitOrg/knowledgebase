@@ -16,7 +16,7 @@
        * Deactivate the **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`** rule.
        * Set the newly created profile as **default**.
 
-    For detailed steps, please refer to [Customizing Quality Profiles](https://knowledgebase.autorabit.com/codescan/docs/customizing-quality-profiles)
+    For detailed steps, please refer to [Customizing Quality Profiles](https://knowledgebase.autorabit.com/codescan/docs/customizing-quality-profiles).
 
 ## Copado Integration <a href="#faqs" id="faqs"></a>
 

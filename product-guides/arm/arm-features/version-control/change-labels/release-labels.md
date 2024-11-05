@@ -2,28 +2,46 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-A **Release Label** is a combination of multiple commit labels. Creating a release label will allow you to combine a group of single revisions, allowing all the revisions to be deployed in one go. This article will discuss creating a new release label in the ARM application.
+A **Release Label** is a combination of multiple commit labels. Creating a release label will allow you to combine a group of single revisions, allowing all the revisions to be deployed all at one time. This article will discuss creating a new release label in the ARM application.
 
 **Before you begin:**
 
 1. Confirm you have the **Manage Label** permissions to create a new release label.&#x20;
-2. Commit revisions were made to the version control branch to combine them under a single release label. For more information, refer to the article: [Commit Labels](commit-labels.md)
+2. Commit revisions were made to the version control branch to combine them under a single release label. For more information, refer to the article: [Commit Labels](commit-labels.md).
 
 ### Create a new Release Label <a href="#create-a-new-release-label" id="create-a-new-release-label"></a>
 
 1. Log in to your ARM account.
-2. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) module and click on the **`Change Labels > Release Labels`** or directly go to the **`Change Labels`** tab and select **`Release Labels`** from the dropdown.The **Release Label** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+2. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) module and click on the **`Change Labels > Release Labels`** or directly go to the **`Change Labels`** tab and select **`Release Labels`** from the dropdown. The **Release Label** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 3. Click on **`Create Release Label.`**
 
 <figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. On the next screen, give the release label creation process a **`Label Name`** and a short **`Description`**.
+4. On the next screen, give the release label creation process a **`Label Name`** and enter a short **`Description`**.
 
 <figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-5. Select the **`Repository`** and the **`Branch`** containing the commit labels.Note:For the version control repository registered in the SFDX structure, you must choose an additional option, i.e., Package Directory. To know more about Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md)
-6. Select the commit **`Label Type`**, i.e., **`Salesforce`** or **`Vlocity`**.Known LimitationsIf a branch-to-branch merge involves multiple commits that include data from Vlocity and Salesforce components, the ARM cannot classify those commits as **Vlocity** or **Salesforce** components.
-7. From the **`No of Days`** dropdown list, you can choose to retrieve the commit history for the previous **30**, **60**, **90**, **120**, **180**, or **365** days, or **ALL** the commits at once. Please note that selecting **ALL** may result in a slight delay in fetching the entire commit history.InfoWith the ARM 22.3 release, you can create a release label and start the artifact preparation immediately by selecting the **`Create package manifest for Deployment`** checkbox for Salesforce labels. If you do not select this checkbox on this screen, you can still click the **`Create Artifact`** button on the **`Release Label Summary`** screen to create and run a package manually.
+5. Select the **`Repository`** and **`Branch`** containing the commit labels.
+
+{% hint style="warning" %}
+**Note**: For the version control repository registered in the SFDX structure, you must choose an additional option—**Package Directory**—to specify the type. We have added a refresh button in both the _Create Release Label_ and _Release Label Filter_ sections, allowing users to refresh and select the appropriate Package Directory.&#x20;
+{% endhint %}
+
+To know more about Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md).
+
+<figure><img src="../../../../../.gitbook/assets/image (1544).png" alt=""><figcaption></figcaption></figure>
+
+6. Select the commit **`Label Type`**, i.e., **`Salesforce`** or **`Vlocity`**.&#x20;
+
+{% hint style="warning" %}
+**Known Limitations**: If a branch-to-branch merge involves multiple commits that include data from Vlocity and Salesforce components, ARM cannot classify those commits as **Vlocity** or **Salesforce** components.
+{% endhint %}
+
+7. From the **`No of Days`** dropdown list, you can choose to retrieve the commit history for the previous **30**, **60**, **90**, **120**, **180**, or **365** days, or **ALL** the commits at once. Please note that selecting **ALL** may result in a slight delay in fetching the entire commit history.
+
+{% hint style="info" %}
+Info: With the ARM 22.3 release, you can create a release label and start the artifact preparation immediately by selecting the **`Create package manifest for Deployment`** checkbox for Salesforce labels. If you do not select this checkbox on this screen, you can still click the **`Create Artifact`** button on the **`Release Label Summary`** screen to create and run a package manually.
+{% endhint %}
 
 <figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +64,7 @@ It's always a good idea to break data into multiple pages when dealing with mult
 
 With the **ARM 22.3** release, the **`Release Labels Summary`** screen has been redesigned to enhance user experience and displays the following detailed information for each release label that is created:
 
-1. At the top-left is where you can see the **`Repository`** drop-down. You can choose a different repository from the dropdown list.
+1. At the top left is where you can see the **`Repository`** dropdown. You can choose a different repository from the dropdown list.
 2. The **release label name**, the **date** and **time** it was last updated, and the **version control branch**.
 3. The release label **description**.
 4. The release label **package status**: **Completed**, **Failed**, **Package Not Prepared**, **In-progress**, or **Aborted**. Abort an ongoing package preparation using the![](<../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon, the![](<../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon indicates an aborted process, and the![](<../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon indicates the release label package creation is a success.

@@ -27,7 +27,7 @@ A **Release Label** is a combination of multiple commit labels. Creating a relea
 **Note**: For the version control repository registered in the SFDX structure, you must choose an additional option—**Package Directory**—to specify the type. We have added a refresh button in both the _Create Release Label_ and _Release Label Filter_ sections, allowing users to refresh and select the appropriate Package Directory.&#x20;
 {% endhint %}
 
-To know more about Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md).
+To learn more about a Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md).
 
 <figure><img src="../../../../../.gitbook/assets/image (1544).png" alt=""><figcaption></figcaption></figure>
 
@@ -49,7 +49,7 @@ Info: With the ARM 22.3 release, you can create a release label and start the ar
 9. Select two or more revisions from the left column to group them into a single release label. The **`Selected Revisions`** are displayed in a second column on the right side to make it easier to see. You can also unselect revisions from this section.
 
 {% hint style="info" %}
-**Important Note:** If you choose just one revision while creating a new Release Label, a notification message asks you to select at least **two revisions**. You can choose the **Single Revision** option directly from the dropdown on the **New Merge** screen to perform a merge using only one revision. This helps in avoiding the creation of needless release labels.
+**Important Note:** If you choose just one revision while creating a new release label, a notification message asks you to select at least **two revisions**. You can choose the **Single Revision** option directly from the dropdown on the **New Merge** screen to perform a merge using only one revision. This helps in avoiding the creation of needless release labels.
 
 ![](<../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
@@ -84,6 +84,6 @@ With the **ARM 22.3** release, the **`Release Labels Summary`** screen has been 
 {% hint style="info" %}
 **Important Note:**
 
-1. On the **New Deployment** page, for the **Release Label** dropdown, the new release labels for which the package has been successfully prepared will be shown. The dropdown menu will not show Release labels created before the ARM **22.3** release.&#x20;
+1. On the **New Deployment** page, for the **Release Label** dropdown, the new release labels for which the package has been successfully prepared will be shown. The dropdown menu will not show release labels created before the ARM **22.3** release.&#x20;
 2. To manually prepare the package, use the **Create Artifact** button. The release label will then be available for deployment.
 {% endhint %}

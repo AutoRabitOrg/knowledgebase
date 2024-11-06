@@ -1,5 +1,12 @@
 # Release Notes 24.0
 
+## Vault 24.2.3 Release Notes
+
+**Release Date: 6 November 2024**
+
+* **Addressed Vault Restore Issues**: Enhanced restore functionality to ensure seamless performance while restoring records.
+* **Addressed Issues in Archive Functionality**: Optimized archive functionality for enhanced performance and reliability.
+
 ## Vault 24.2.2 Release Notes
 
 **Release Date: 18 October 2024**

@@ -210,6 +210,7 @@
       * [Introduction to Version Control](product-guides/arm/arm-features/version-control/introduction-to-version-control/README.md)
         * [Version Control Repositories Summary](product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)
         * [Version Control Branch Workflow](product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md)
+      * [Version Control Repository](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/registration/version-control-repository)
       * [EZ-Commits](product-guides/arm/arm-features/version-control/ez-commits/README.md)
         * [How Do I Commit?](product-guides/arm/arm-features/version-control/ez-commits/how-do-i-commit.md)
         * [Commits Summary](product-guides/arm/arm-features/version-control/ez-commits/commits-summary.md)

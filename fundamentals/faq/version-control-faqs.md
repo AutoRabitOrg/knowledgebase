@@ -298,5 +298,7 @@ The error below pops up while selecting the org for merge validation: `cvc-elt.1
 
 **Resolution:** Clearing the browser cache and refreshing the browser will resolve the issue.
 
+## Can I deploy/commit system permission sets to ARM?
 
+By default, when we commit by selecting only Profile metadata, it retrieves User Permissions and IP ranges. However, it depends on what kind of system permissions you're looking for, and if it has metadata API retrieval support from Salesforce, then it is possible to commit via AutoRABIT.
 

@@ -151,3 +151,8 @@ Please follow the troubleshooting steps given by Salesforce to enable the **Exem
 
 **2. Deployment via Single Revision:** The delta change of the revision will be packaged.\
 **Example:** If file permissions are included in the revision, only the file permissions will be considered as part of the change.
+
+## Can I deploy standard fields throughout ARM?
+
+Often, users who are having issues deploying HTML reports in AutoRABIT are not aware of an SFDC limitation. Unfortunately, AutoRABIT cannot deploy standard fields because they cannot be edited in Salesforce. They are restricted from the SFDC side. You can commit standard fields but cannot deploy them. &#x20;
+

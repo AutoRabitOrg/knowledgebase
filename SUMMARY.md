@@ -78,7 +78,7 @@
   * [AutoRABIT Platform User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
   * [Connection & Authentication](fundamentals/faq/connection-and-authentication.md)
   * [Version Control-FAQs](fundamentals/faq/version-control-faqs.md)
-  * [DataLoader-FAQ](fundamentals/faq/data-loader-encryption-and-data-storage-faq.md)
+  * [Data Loader-FAQ](fundamentals/faq/data-loader-encryption-and-data-storage-faq.md)
   * [Deployment-FAQs](fundamentals/faq/deployment-faqs.md)
   * [CI Jobs](fundamentals/faq/ci-jobs.md)
   * [nCino](fundamentals/faq/ncino.md)

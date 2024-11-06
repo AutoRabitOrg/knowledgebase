@@ -17,7 +17,7 @@ Supported Version: ApexPMD upgraded to the latest 6.49 version.
 4. Click on the **ApexPMD** checkbox under **Static Code Analysis**.
 5. If you do have separate Apex PMD rules that you would like to carry out in AutoRABIT, you can upload the same. Click **Browse** to search for the file in your local machine. Usually, the file is in **XML** format. Once done, click **Upload**.
 6. If the user has not uploaded any rules file, AutoRABIT will use the default Apex PMD rules file. However, you can update some of the fields in it.&#x20;
-7. Download the default rule set in your local machine using the link as seen in the shared screenshot below.
+7. Download the default rule set in your local machine using the link as shown below.
 
 <figure><img src="../../../.gitbook/assets/image (1545).png" alt=""><figcaption></figcaption></figure>
 

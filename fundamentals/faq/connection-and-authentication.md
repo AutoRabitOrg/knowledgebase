@@ -1,6 +1,6 @@
 # Connection & Authentication
 
-### Register GitHub repositories with two-factor authentication <a href="#register-github-repositories-with-twofactor-authentication" id="register-github-repositories-with-twofactor-authentication"></a>
+### How do I register GitHub repositories with two-factor authentication? <a href="#register-github-repositories-with-twofactor-authentication" id="register-github-repositories-with-twofactor-authentication"></a>
 
 To use two-factor authentication in GitHub, you need to create a personal access token first.
 
@@ -43,7 +43,7 @@ Follow the below steps to register the repository:
 * Make sure the repo clone you see before https isn't included in the link you paste into ARM.
 * You will just need to input the URL that begins with https.
 
-### Why am I unable to register a GitHub repository using SSH keys and getting invalid private key error? <a href="#unable-to-register-github-repository-using-ssh-keys-and-getting-invalid-private-key-error" id="unable-to-register-github-repository-using-ssh-keys-and-getting-invalid-private-key-error"></a>
+### Why am I unable to register a GitHub repository using SSH keys and getting an 'invalid private key' error? <a href="#unable-to-register-github-repository-using-ssh-keys-and-getting-invalid-private-key-error" id="unable-to-register-github-repository-using-ssh-keys-and-getting-invalid-private-key-error"></a>
 
 This is because you used invalid SSH keys to register your repository. Please use the correct SSH keys and try again.
 
@@ -51,6 +51,6 @@ This is because you used invalid SSH keys to register your repository. Please us
 
 When you try to create a new branch you must validate the master branch's **'src'** folder path, then select the parent branch as master, and the **'src'** folder path will be automatically set to the newly created branch.
 
-### How does SSH Key differ from SSH Certificate? <a href="#how-does-ssh-key-differ-from-ssh-certificate" id="how-does-ssh-key-differ-from-ssh-certificate"></a>
+### How does an SSH Key differ from an SSH Certificate? <a href="#how-does-ssh-key-differ-from-ssh-certificate" id="how-does-ssh-key-differ-from-ssh-certificate"></a>
 
 While SSH Key-based authentication uses public key cryptography, SSH Certificate-based authentication attaches a signed certificate to each key to verify their identities. By using a certificate signed by a trusted Certificate Authority, users can do away with the passwords (which are not secure, given that passwords can either be stolen or cracked via brute force) and leverage a partially automated trust-based certificate authentication process to gain access to systems.

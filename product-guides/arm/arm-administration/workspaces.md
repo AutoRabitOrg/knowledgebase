@@ -30,7 +30,7 @@ To view the workspace:
    * Date/time stamp for workspace created
    * Workspace allocated author detail
    * Repo and Branch details
-   * Workspace status i.e., running or in idle state
+   * Workspace status, i.e., running or in idle state
    * The module on which the workspace has been allotted
    * Last used on along with the size consumed
 
@@ -78,3 +78,11 @@ The Super Admin needs to log in to ARM with super admin credentials and then nav
 Based on the user's org requirement/ subscription, the super admin will add additional workspace to the current org limit. The max size limit which can be increased is **1000 GB**.
 
 <figure><img src="../../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>
+
+### **Workspace Storage Management**
+
+* Once a feature flag is enabled, a new global workspace will be created for each repository in the "/workspaces/globalcheckouts" folder, and for commits/merges, new user workspaces will be created in "/workspaces/localcheckouts" and will be deleted after usage is completed. The existing user workspaces will remain unchanged for now; they will not be deleted immediately. Instead, they will be removed through scheduled jobs as previously done; no new migration has been added to delete workspaces. On the workspace sub-module, only the workspaces created after enabling the feature flag will be visible. Previous non-optimized workspaces will not be visible in the UI if the feature flag is active.
+
+### **Rollback Plan**
+
+* If the feature flag is turned off later, the existing non-optimized workspaces will be used since they were not removed. We will continue utilizing the previous workspaces stored in the base checkout and specific user directories **after sync with latest remote**. Even when the feature flag is enabled/disabled, the retention policy will remain unaffected and will continue to operate as usual.

@@ -4,9 +4,9 @@
 
 Data retention policies concerning what data should be stored or archived, where that should happen, and how long. Historical data that becomes irrelevant after a certain period will be cleared from the ARM database weekly. This way, the ARM application performs faster, primary storage remains uncluttered, and at the same time, the organization remains compliant.
 
-## How to change the data retention policy? <a href="#how-to-change-data-retention-policy" id="how-to-change-data-retention-policy"></a>
+## How can I change the data retention policy? <a href="#how-to-change-data-retention-policy" id="how-to-change-data-retention-policy"></a>
 
-Administrators can determine the age of the still relevant data for the company and then change the retention policy under the **Admin > My Account > Retention Policy** page.
+Administrators can determine the age of the still-relevant data for the company and then change the retention policy under the **Admin > My Account > Retention Policy** page.
 
 ## Can the data retention policy be disabled? <a href="#can-the-data-retention-policy-be-disabled" id="can-the-data-retention-policy-be-disabled"></a>
 
@@ -16,7 +16,7 @@ No, Administrators won't be able to disable the data retention policy. Data rete
 
 To access any historic data that has already been cleaned up, contact us at **support@autorabit.com**, and we will provide the data in a CSV file format.
 
-For **on-premise customers**, the historic data is moved to the alt path in the **.rabit** folder (_**.rabit/dataretention/{org-name}**_).
+For **on-premises customers**, the historic data is moved to the alt path in the **.rabit** folder (_**.rabit/dataretention/{org-name}**_).
 
 ## Can the cleared data be restored to the application? <a href="#can-the-cleared-data-be-restored-to-the-application" id="can-the-cleared-data-be-restored-to-the-application"></a>
 

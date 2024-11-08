@@ -22,7 +22,7 @@ Git is a version control system (VCS). GitHub is the platform where Git reposito
 
 ## What's the difference between git fetch and git pull? <a href="#whats-the-difference-between-git-fetch-and-git-pull" id="whats-the-difference-between-git-fetch-and-git-pull"></a>
 
-* **git fetch** really only downloads new data from a remote repository - but it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
+* **git fetch** really only downloads new data from a remote repository; it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
 * **git pull**, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly integrates it into your current working copy files.
 
 ## Why do Merge Conflicts happen? <a href="#why-merge-conflicts-happens" id="why-merge-conflicts-happens"></a>
@@ -302,3 +302,12 @@ The error below pops up while selecting the org for merge validation: `cvc-elt.1
 
 By default, when we commit by selecting only Profile metadata, it retrieves User Permissions and IP ranges. However, it depends on what kind of system permissions you're looking for, and if it has metadata API retrieval support from Salesforce, then it is possible to commit via AutoRABIT.
 
+## What is the Rollout Plan for the 'Optimized\_Workspaces' feature on the Na33 Instance?
+
+### Workspace Storage Management
+
+* Once a feature flag is enabled, a new global workspace will be created for each repository in the "/workspaces/globalcheckouts" folder, and for commits/merges, new user workspaces will be created in "/workspaces/localcheckouts" and will be deleted after usage is completed. The existing user workspaces will remain unchanged for now; they will not be deleted immediately. Instead, they will be removed through scheduled jobs as previously done; no new migration has been added to delete workspaces. On the workspace sub-module, only the workspaces created after enabling the feature flag will be visible. Previous non-optimized workspaces will not be visible in the UI if the feature flag is active.
+
+### Rollback Plan
+
+* If the feature flag is turned off later, the existing non-optimized workspaces will be used since they were not removed. We will continue utilizing the previous workspaces stored in the base checkout and specific user directories after syncing with the latest remote. Even when the feature flag is enabled/disabled, the retention policy will remain unaffected and will continue to operate as usual.

@@ -4,33 +4,34 @@
 
 To use two-factor authentication in GitHub, you need to create a personal access token first.
 
-1. Create a personal access token, and use it in place of a password when performing Git operations over HTTPS with GIT on the command line or the API. For detailed information, refer to [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
-2. Register GitHub Repository in ARM using the same token.
+1. Create a personal access token and use it in place of a password when performing Git operations over HTTPS with GIT on the command line or the API. For detailed information, refer to [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+2. Register your GitHub Repository in ARM using the same token.
 
 ### How do I rectify the GOLDENDOODLE vulnerability? <a href="#how-to-rectify-the-goldendoodle-vulnerability" id="how-to-rectify-the-goldendoodle-vulnerability"></a>
 
-1. **Short-term solution**: Disable support for CBC encryption ciphers. Follow the below procedure to disable weak ciphers:
-   * Run the following command to list the ciphers: **- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
-   * Edit the file **- /etc/ssh/sshd\_config** and add what all strong ciphers you want to have or place in this file as shown in the example below- **Ciphers aes128-ctr,aes192-ctr,aes256-ctr**
+1. **Short-term solution**: Disable support for CBC encryption ciphers. Follow the procedures below to disable weak ciphers:
+   * Run the following command to list the ciphers: \
+     **- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
+   * Edit the file **- /etc/ssh/sshd\_config** and add what strong ciphers you want to have or place in this file as shown in the example below- **Ciphers aes128-ctr,aes192-ctr,aes256-ctr**
    * Now, restart your sshd service using the command:  **service sshd restart**
 2. **Long-term solution:** Enable the **TLS 1.3** protocol.
 
 ### Why does AutoRABIT need to install GDM (Gnome Desktop Manager) on the virtual machine of the client? <a href="#why-does-autorabit-need-to-install-gdm-gnome-desktop-manager-on-the-virtual-machine-of-the-client" id="why-does-autorabit-need-to-install-gdm-gnome-desktop-manager-on-the-virtual-machine-of-the-client"></a>
 
-1. To run selenium scripts in the TAF module of the ARM application, GDM is necessary.
-2. It will not affect Version Control, however it may have an influence on the CI Job module.
+1. To run Selenium scripts in the TAF module of the ARM application, GDM is necessary.
+2. It will not affect Version Control; however, it may have an influence on the CI Job module.
 
 ### Why am I not able to authenticate JIRA with my account? <a href="#why-am-i-not-able-to-authenticate-jira-with-my-account" id="why-am-i-not-able-to-authenticate-jira-with-my-account"></a>
 
-Make sure you are entering the JIRA API token in the **Password** field while registering JIRA plugin for the first time in the ARM application.
+Make sure you are entering the JIRA API token in the **Password** field while registering your JIRA plugin for the first time in the ARM application.
 
-### Steps to generate API token for JIRA <a href="#steps-to-generate-api-token-for-jira" id="steps-to-generate-api-token-for-jira"></a>
+### How do I generate a new API token for JIRA? <a href="#steps-to-generate-api-token-for-jira" id="steps-to-generate-api-token-for-jira"></a>
 
 Follow the below steps to generate a new API token for JIRA:
 
-1. Go to the link: **https://id.atlassian.com/manage/api-tokens**
+1. Go to the link: [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens)**.**&#x20;
 2. Click on **Create API Token** and provide the label name and click on **Create**.
-3. Once the token got created, you will be able to see the **Your new API token** popup, click on the **Copy to Clipboard**.
+3. Once the token is created, you will be able to see the **Your new API token** popup. Click on the **Copy to Clipboard**.
 4. Use the copied token as a password for creating/updating the credential in AutoRABIT.
 5. Once updated please use the same credential to authenticate the JIRA.
 

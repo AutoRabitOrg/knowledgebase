@@ -1,7 +1,6 @@
 root: ./
 
 redirects:
-    overview/release-notes/arm-release-notes/release-notes-24.4.2: overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-24.4.2.md
     docs/create-and-deploy-changes-in-autorabit: product-guides/arm/create-and-deploy-changes-in-autorabit.md
     docs/git-reverts: product-guides/arm/arm-administration/registration/version-control-repository/git-integration/git-tag.md
     docs/update-salesforce-data: product-guides/arm/update-salesforce-data.md

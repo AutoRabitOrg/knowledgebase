@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # FlowCenter Release Notes
 
 The following Release Notes are available for FlowCenter:

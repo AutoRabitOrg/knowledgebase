@@ -2,7 +2,7 @@
 
 ## CodeScan On-Premises/Self-Hosted  <a href="#cs-on-prem-tiger-v.-2.0" id="cs-on-prem-tiger-v.-2.0"></a>
 
-## Release Notes 24.0.13 Tiger 2.0 Edition <a href="#cs-on-prem-tiger-v.-2.0" id="cs-on-prem-tiger-v.-2.0"></a>
+## Release Notes Tiger 2.0 (v. 24.0.13)  <a href="#cs-on-prem-tiger-v.-2.0" id="cs-on-prem-tiger-v.-2.0"></a>
 
 **Issue Date: 13 November 2024**
 

@@ -9,7 +9,7 @@ The code coverage report provides information about the apex tests that are run,
 
 1. Hover your mouse over the **Admin** module and select the option: **SF Org Mgmt.**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt="" width="237"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt="" width="237"><figcaption></figcaption></figure>
 
 2. Select the **Salesforce Org** and click on **Generate Code Coverage Report.**&#x20;
 

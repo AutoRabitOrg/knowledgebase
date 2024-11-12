@@ -647,6 +647,7 @@
       * [Installing CodeScan for VS Code](product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-vs-code.md)
       * [Installing CodeScan for IntelliJ](product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-intellij.md)
     * [Copado](product-guides/codescan/codescan-integration/copado/README.md)
+      * [Copado SFDX Integration](product-guides/codescan/codescan-integration/copado/copado-sfdx-integration.md)
       * [CodeScan and Copado Integration](product-guides/codescan/codescan-integration/copado/codescan-and-copado-integration.md)
     * [Flosum](product-guides/codescan/codescan-integration/flosum/README.md)
       * [CodeScan and Flosum Integration](product-guides/codescan/codescan-integration/flosum/codescan-and-flosum-integration.md)

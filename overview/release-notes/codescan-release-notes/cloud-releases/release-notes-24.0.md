@@ -39,7 +39,7 @@ There are no new rules associated with this release.
 
 ### Fixes
 
-1.  **Fixed issue with reference branch analyses:** Branch initially fails quality gate, then passes on subsequent scans without changes.
+1.  **Fixed issue with reference branch analyses:** Branch initially fails the quality gate, then passes on subsequent scans without changes.
 
     \
     Previously within CodeScan, branches with new code consistently failed the quality gate when they contained unresolved new issues (such as bugs, vulnerabilities, code smells, or security hotspots). This failure persisted until all new issues were addressed, ensuring only clean code passed the quality gate. \
@@ -58,16 +58,16 @@ There are no new rules associated with this release.
     * Verified the new code of a branch where user is able to see the issues exactly when compared with the reference branch.&#x20;
     * Verified that the quality gate failed status if the new branch has any new code compared to the reference branch.&#x20;
     * Verified that the quality gate passed status if the new branch has no new code compared to the reference branch.&#x20;
-    * Verified that we can change the reference branch in the UI and run the analysis locally, with or without specifying the reference branch in the command. (If we didn’t specify reference branch, it should take master as RB.)&#x20;
-    * Verified that renaming of the reference branch and using the new name for analysis working correctly.&#x20;
+    * Verified that we can change the reference branch in the UI and run the analysis locally, with or without specifying the reference branch in the command. (If we didn’t specify the reference branch, it should take master as RB.)&#x20;
+    * Verified that renaming of the reference branch and using the new name for analysis are working correctly.&#x20;
     * Verified that when a branch is deleted in the UI and then used as a reference branch in the SFDX command, a 404 error is returned.&#x20;
-    * Verified the version option on activity page by providing name and editing name&#x20;
-    * Verified the below options which are present under new code period for any branch under specific settings for a branch&#x20;
+    * Verified the version option on activity page by providing name and editing name.&#x20;
+    * Verified the following options that are present under new code period for any branch under specific settings for a branch.
       * Previous version&#x20;
       * Number of days&#x20;
       * Specific analysis&#x20;
       * Reference branch&#x20;
-    * Verified the functionality by added new code with vulnerabilities and fixed some issues which are as a marked as false positives in the UI.&#x20;
+    * Verified the functionality by adding new code with vulnerabilities and fixed some issues that were marked as false positives in the UI.&#x20;
     * Verified the sonar scanner command as well for the reference branch.\
 
 2.  **Fixed issue in rule “sf:OptimizeParallelUnitTests” (IsParallel)** \

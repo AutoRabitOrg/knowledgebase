@@ -43,13 +43,7 @@ Component details are listed in their corresponding sections within this documen
 2.  **New Rules for LWC: Added ESLint rules from @lwc/eslint-plugin-lwc**\
     \
     Expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components. This new set expands our list of LWC rules significantly. This library is comprised of Salesforce’s official ESLint plugin, allowing CodeScan to analyze LWC code more effectively.  Detailed documentation is available at [https://github.com/salesforce/eslint-plugin-lwc|https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc|https:/github.com/salesforce/eslint-plugin-lwc)\
-    \
-    Verified these new ESLint rules for the following scenarios:
 
-    * Verified the 21 rules from the [GitHub - salesforce/eslint-plugin-lwc: Official ESLint rules for LWC](https://github.com/salesforce/eslint-plugin-lwc) repository added to our LWC library
-    * Verified Description, Rule Details, Type of issue, Remediation function, Severity for all 21 rules.
-    * Verified that new rules are not included in the default Quality Profile.
-    * Verified that violations are thrown for all 21 rules.
 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 

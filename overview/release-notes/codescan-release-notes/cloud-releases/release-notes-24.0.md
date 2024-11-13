@@ -6,7 +6,105 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
-### **Release Notes 24.0.12**&#x20;
+## Release Notes 24.0.13
+
+**Release Date: 30 October 2024**
+
+### Summary
+
+CodeScan 24.0.13 is comprised of the following 4 components:&#x20;
+
+* [1 Enhancement](release-notes-24.0.md#enhancement)
+* [3 Fixes](release-notes-24.0.md#fixes)&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### New Features
+
+There are no new features associated with this release.
+
+### Enhancement
+
+1. **Enhancement to Rule for VF: “"vf:AvoidJavaScriptScriptlets”** \
+   \
+   We recognize that using direct \<script> tags in components or pages can pose a security risk by increasing the likelihood of cross-site scripting (XSS) attacks. \
+   \
+   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm). \
+   \
+   Considering both of these items together, we recognize that there was limitation on this rule where customers were getting violations flagged as false positives. This enhancement involves implementing Regex to detect the use of Lightning components within a \{{\<script>\}} tag in Visualforce pages. The rule \{{vf:AvoidJavaScriptScriptlets\}} should not trigger a violation if only Lightning components are found. However, if any additional lines of non-Lightning code are detected within the script, a violation will be raised. This ensures the proper use of Lightning components while avoiding insecure or outdated practices in scriptlets.
+
+### New Rules
+
+There are no new rules associated with this release.
+
+### Fixes
+
+1.  **Fixed issue with reference branch analyses:** Branch initially fails quality gate, then passes on subsequent scans without changes.
+
+    \
+    Previously within CodeScan, branches with new code consistently failed the quality gate when they contained unresolved new issues (such as bugs, vulnerabilities, code smells, or security hotspots). This failure persisted until all new issues were addressed, ensuring only clean code passed the quality gate. \
+
+
+    Recently it was reported that "New Code -> Reference Branch" functionality was no longer working as designed, which was impacting quality gate evaluations for new code on branches for some customers. Indeed, branches with new code were initially failing the quality gate if new issues are detected (as expected and desired). However, on subsequent analyses of the same branch—without addressing the new issues—the quality gate was incorrectly passing. &#x20;
+
+    &#x20;
+
+    We recognize that this behavior could result in code potentially being deployed to production despite unresolved issues, as the quality gate no longer blocks the release after the first analysis.  As such, a fix has been implemented to ensure the quality gate consistently fails whenever unresolved new issues exist in the code, preventing deployment until all issues are addressed.&#x20;
+
+    &#x20;
+
+    Verified the functionality of reference branch for the following scenarios:&#x20;
+
+    * Verified the new code of a branch where user is able to see the issues exactly when compared with the reference branch.&#x20;
+    * Verified that the quality gate failed status if the new branch has any new code compared to the reference branch.&#x20;
+    * Verified that the quality gate passed status if the new branch has no new code compared to the reference branch.&#x20;
+    * Verified that we can change the reference branch in the UI and run the analysis locally, with or without specifying the reference branch in the command. (If we didn’t specify reference branch, it should take master as RB.)&#x20;
+    * Verified that renaming of the reference branch and using the new name for analysis working correctly.&#x20;
+    * Verified that when a branch is deleted in the UI and then used as a reference branch in the SFDX command, a 404 error is returned.&#x20;
+    * Verified the version option on activity page by providing name and editing name&#x20;
+    * Verified the below options which are present under new code period for any branch under specific settings for a branch&#x20;
+      * Previous version&#x20;
+      * Number of days&#x20;
+      * Specific analysis&#x20;
+      * Reference branch&#x20;
+    * Verified the functionality by added new code with vulnerabilities and fixed some issues which are as a marked as false positives in the UI.&#x20;
+    * Verified the sonar scanner command as well for the reference branch.\
+
+2.  **Fixed issue in rule “sf:OptimizeParallelUnitTests” (IsParallel)** \
+    \
+    This rule is designed to ensure that isParallel is present, either True or False. Previously, when a second flag was added to a test, the rule threw a violation, e.g., @IsTest(SomeFlag=True IsParallel=False). This should not throw a violation since IsParallel is specified. Instead, something like @IsTest(SomeFlag=True) should throw a violation, as IsParallel is not specified. \
+    \
+    This issue was occurring because the rule detection logic was looking for “@isTest(isParallel=true/false)” annotation being defined/set individually on its own (only), but not when used in combination with other annotations. Not being able to detect combination annotations setting was thereby causing false positive violations. \
+    \
+    Various scenarios tested outcomes for the rule BEFORE the fix was added:
+
+    1. Not setting “@isTest(isParallel=false)” (or true) – Violation – Correct behavior.
+    2. Setting @isTest(isParallel=false) or @isTest(isParallel=true) – No violation – Correct behavior.
+    3. Setting @isTest(OnInstall=true isParallel=False) – Violation – Incorrect behavior as isParallel is set.
+    4. Setting @isTest(SeeAllData=False isParallel=True) – Violation – Incorrect behavior as isParallel is set.
+
+    \
+    Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true) \
+    \
+    _This fix corrects the issue._ \
+    \
+    We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252Fgk3EzOy7F9wH89TPNL5L%252Fimage.png%3Falt%3Dmedia%26token%3D7f2321b2-cea7-4f40-8092-18fd7a692d7f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82c548e2&#x26;sv=1" alt=""><figcaption></figcaption></figure>
+
+\
+![](https://knowledgebase.autorabit.com/\~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FDlYCkab1cVQk7Qig0moW%252Fimage.png%3Falt%3Dmedia%26token%3D9a1f95db-0724-4930-8b4a-4880b725efdf\&width=768\&dpr=4\&quality=100\&sign=86914d0b\&sv=1)\
+
+
+3. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives). \
+   \
+   Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations. \
+   \
+   This fix ensures that the check is limited to the **“value”** attribute only, to avoid false positives and ensure the rule functions as intended. As an example, the following will NOT be flagged as a violation:\
+   \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/> //Good: Uses a static resource.\
+
+
+## **Release Notes 24.0.12**&#x20;
 
 **Release Date: 9 October 2024**&#x20;
 

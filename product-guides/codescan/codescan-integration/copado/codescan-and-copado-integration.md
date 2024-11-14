@@ -1,6 +1,4 @@
-# CodeScan and Copado Integration
-
-We are happy to announce our partnership with Copado.
+# Copado MDAPI Integration
 
 **Copado** is a release management tool for the Salesforce platform. Copado users can now integrate [CodeScan](https://www.codescan.io/) in their deployments to achieve error-free and secure releases.
 

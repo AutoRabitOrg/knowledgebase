@@ -160,7 +160,7 @@
       * [Static Code Analysis in CI/CD](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/registration/static-code-analysis-in-ci-cd)
   * [ARM Administration](product-guides/arm/arm-administration/README.md)
     * [User Management](product-guides/arm/arm-administration/user-management/README.md)
-      * [ARM User Roles](product-guides/arm/arm-administration/user-management/arm-user-roles.md)
+      * [Assigning User Roles](product-guides/arm/arm-administration/user-management/arm-user-roles.md)
       * [Add New Users](product-guides/arm/arm-administration/user-management/add-new-users.md)
       * [Remove or Suspend a User](product-guides/arm/arm-administration/user-management/remove-or-suspend-a-user.md)
       * [Different Users in ARM](product-guides/arm/arm-administration/user-management/different-users-in-arm.md)

@@ -20,7 +20,7 @@
 
 **Downloads:** After identifying your version of SonarQube, refer to the Installing CodeScan Self-Hosted page to view the [**CodeScan Downloads & Compatibility Chart**](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-download-versions-and-compatibility-chart).
 
-**Future SonarQube Releases**: SonarQubeQ 10.7 was released in October 2024, and we plan to support it in January 2025. Starting with the 10.7 rollout, we intend to have support for the latest versions of SonarQube approximately 12 weeks after their release date. Each version will be supported for 12 months.
+**Future SonarQube Releases**: SonarQubeQ 10.7 was released in October 2024, and we plan to support 10.7 on Jan 29, 2025. Starting with the 10.7 rollout, we intend to have support for the latest versions of SonarQube approximately 12 weeks after their release date. Each version will be supported for 12 months.
 
 **Additional Support**: If you have any questions, comments, or concerns, please contact your Account Team directly.
 

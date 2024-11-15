@@ -18,9 +18,9 @@ Jira OAuth access type is currently supported for **Cloud versions** only.
 This section summarizes the deployment limits that ARM users should consider:
 
 1. **Unable to remove Field Level Security (FLS) in Profiles while performing destructive changes on fields**- As of now, ARM does not support the deletion of references from Profile on a branch level. But, it is on our roadmap, and the development team is already working on it.
-2. While performing deployment from one sandbox to sandbox, there are certain metadata types such as Email Template, Reports, Dashboards, Documents, etc for which the selected folder path metadata will not get retrieved in the **Compare Metadata and Deploy** screen.
+2. While performing deployment from one sandbox to sandbox, there are certain metadata types such as Email Template, Reports, Dashboards, Documents, etc. for which the selected folder path metadata will not get retrieved in the **Compare Metadata and Deploy** screen.
 3. The **Compare Metadata & Deploy** functionality for **Profile** metadata will not show the correct difference since the source side displayed delta changes while the destination side retrieved the entire profile from the destination org.
-4. AccelQ applies only to the deployment of [Salesforce Org](../../arm-administration/registration/salesforce-org/) and not Vlocity.
+4. **AccelQ** applies only to the deployment of [Salesforce Org](../../arm-administration/registration/salesforce-org/) and not Vlocity.
 5. Rollback initiated for a successful deployment shows **No Changes** status in the build.
 6. **Pre-destructive changes and deployment changes run in separate threads in ARM, but the status of the deployment changes is only seen:** Pre-destructive changes and deployment will be sent to Salesforce as part of the same request, and Salesforce will treat them as separate actions. To check the status of pre-destructive changes in ARM, click on your **Deployment Label** then go to **Deleted Components** tab.
 7. **Is it possible that my code deployment will continue if my pre-destructive changes fail for some reason?** No, because pre-destructive changes and deployment will be sent to Salesforce as part of the same request in ARM, and if one of your deployments fails, the entire process fails in ARM.
@@ -35,6 +35,28 @@ This section summarizes the deployment limits that ARM users should consider:
       * Maintain separate repositories for SFDX and Vlocity components.&#x20;
       * Use SFDX for Salesforce metadata and development, while managing Vlocity components through their own repository and tools.&#x20;
       * Follow the specific guidelines and best practices provided by Vlocity and Salesforce DX for managing and deploying each type of component.
+13. For **Release Label Deployments**, ARM generates **delta metadata only** for the components listed below:&#x20;
+
+    * For **DX Repo Release Labels**, the supported components are:
+      * autoResponseRules
+      * bot
+      * escalationRules
+      * matchingRule
+      * labels
+      * object
+      * sharingRules
+      * workflow
+    * For **Non-DX Repo Release Labels**, the supported components are:
+      * autoResponseRules
+      * bot
+      * matchingRule
+      * labels
+      * object
+      * translation
+      * sharingRules
+      * workflow
+
+    At this time, delta generation is limited to these components, and no other metadata is supported when utilizing Release Label Deployments.&#x20;
 
 ### Version Control Known Limitations <a href="#version-control-known-limitations" id="version-control-known-limitations"></a>
 

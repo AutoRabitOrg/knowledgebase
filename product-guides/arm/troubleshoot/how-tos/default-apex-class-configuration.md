@@ -4,7 +4,7 @@
 **Important Note:** This article is for **Org Administrators** in particular. The actions discussed in this article are not available to general users. &#x20;
 {% endhint %}
 
-### Configure Default Apex Text Class for your Salesforce Org <a href="#configure-default-apex-text-class-for-your-salesforce-org" id="configure-default-apex-text-class-for-your-salesforce-org"></a>
+### Configure Default Apex Test Class for your Salesforce Org <a href="#configure-default-apex-text-class-for-your-salesforce-org" id="configure-default-apex-text-class-for-your-salesforce-org"></a>
 
 To configure the default **Apex Test Class** for your Salesforce org, follow the below steps:&#x20;
 
@@ -21,7 +21,7 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 4. Different options to choose from:
 
-&#x20;    **`a. Fetch Current Set:`** This option fetches Apex and Test classes dependency. From the list     fetched, select the required Apex Text Class that you would like to configure and run into the Destination Org
+&#x20;    **`a. Fetch Current Set:`** This option fetches Apex and Test classes dependency. From the list     fetched, select the required Apex Test Class that you would like to configure and run into the Destination Org
 
 <figure><img src="../../../../.gitbook/assets/image (772).png" alt=""><figcaption></figcaption></figure>
 

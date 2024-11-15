@@ -9,17 +9,18 @@
 1. **Install CodeScan.**&#x20;
    1. Obtain the CodeScan package URL from your Customer Success Manager.&#x20;
    2. Install the CodeScan package in your Flosum organization.&#x20;
-   3. After installation, click on the app launcher and open Flosum-Codescan.
+   3. After installation, click on the app launcher and open Flosum-CodeScan.
 
 <figure><img src="../../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
 2.  **Authorize** CodeScan.
 
-    * Go to the **Authorization** tab in Flosum-Codescan.
+    *   Go to the **Authorization** tab in Flosum-CodeScan.\
 
 
+        <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (511).png" alt="" width="563"><figcaption></figcaption></figure>
+
 
     * Enter the following details to sync CodeScan with your Flosum organization.
       * **CodeScan URL**: Use the appropriate URL for your CodeScan instance:
@@ -30,7 +31,7 @@
       *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."\
 
 
-          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Flosum Branch Configuration**:
    1. On the **Branch Configuration** tab, choose the branch you want to scan.
       * Select all or specific component types from the six supported profiles:

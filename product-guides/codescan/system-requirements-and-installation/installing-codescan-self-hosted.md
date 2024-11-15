@@ -1,7 +1,7 @@
 # Installing CodeScan Self-Hosted
 
 {% hint style="info" %}
-As part of our commitment to providing the best possible products and services, we periodically discontinue support for older software versions. All **CodeScan self-hosted versions below 23.1.1** will reach their End of Life (EOL) on **December 31, 2024**.
+As part of our commitment to providing the best possible products and services, we periodically discontinue support for older software versions. All **CodeScan self-hosted versions below 23.1.1** will reach their **End of Life (EOL)** on **December 31, 2024**.
 {% endhint %}
 
 ## CodeScan On-Premises Installation <a href="#codescan-onpremise-implementation" id="codescan-onpremise-implementation"></a>
@@ -10,9 +10,9 @@ What's New:
 
 CodeScan Self-Hosted now has two versions available to meet your operating system needs:
 
-**CodeScan version 24.1.0** (now compatible with _**SonarQube™ versions 10.1 to 10.6)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
+**CodeScan version 24.1.1 Eagle Edition v2.0** (now compatible with _**SonarQube™ versions 10.1 to 10.6)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
-**CodeScan version 24.0.9** _(now compatible with **SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
+**CodeScan version 24.0.13 Tiger Edition v2.0** _(_now compatible with _**SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
 
 [**Downloads & Compatibility Chart**](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-downloads-and-compatibility-chart)
 

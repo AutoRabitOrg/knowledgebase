@@ -89,7 +89,7 @@ Let’s take a look at the changes when, for instance, an Apex class is selected
 
 #### Delta Metadata Generation for Release Label Deployments
 
-**NOTE**: For **Release Label Deployments**, we generate delta metadata only for the components listed below.
+**NOTE**: For **Release Label Deployments**, ARM generates delta metadata only for the components listed below.
 
 For **DX Repo Release Labels**, the supported components are:
 

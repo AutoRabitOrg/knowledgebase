@@ -41,7 +41,7 @@ This feature is currently available for the following CI Jobs:
     * To send **JSON** in a request, use **application/json** and add your content in the body provided
     * To send **XML** in a request, use **application/xml** and add your content in the body provided
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. **Dynamic URL Parameters:** AutoRABIT allows you to include the various variables from your AutoRABIT organization, for example, the name of the CI job, build number, etc
 
 **Dynamic Parameters:**

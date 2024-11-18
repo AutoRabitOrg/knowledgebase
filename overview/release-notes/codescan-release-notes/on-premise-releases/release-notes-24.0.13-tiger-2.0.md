@@ -30,13 +30,13 @@ Component details are listed in their corresponding sections within this documen
     *   Verified the rules: Name, Key, Description, Type, Severity, Message, Tags, and Remediation.\
 
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     *   Verified that a violation is thrown for **layout** and **.layout-meta.xml** files when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**\
 
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     * Verified that **NO** violation is thrown for **other file suffixes** (other than **layout** and **.layout-meta.xml** files) when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**
     * Verified that **NO** violation is thrown for **layout** and **.layout-meta.xml** files when file names **do not** include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**\
 

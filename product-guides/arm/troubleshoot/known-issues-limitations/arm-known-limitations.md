@@ -57,6 +57,7 @@ This section summarizes the deployment limits that ARM users should consider:
       * workflow
 
     At this time, delta generation is limited to these components, and no other metadata is supported when utilizing Release Label Deployments.&#x20;
+14. **Translations**: The API can’t perform **destructive changes** with the translation value. The API can **add** existing `<translation>` to custom object translation but not **delete** them.
 
 ### Version Control Known Limitations <a href="#version-control-known-limitations" id="version-control-known-limitations"></a>
 

@@ -92,3 +92,5 @@ There can also be two possible scenarios:
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **After:** Picklist Field 2 not being available, it gets added to the Record Type
+
+See our [FAQ](../../../../fundamentals/faq/ci-jobs.md) for more information on Picklist Values.

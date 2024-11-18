@@ -106,3 +106,13 @@ This error will occur when the 'Prevent Deployment' checkbox is enabled in the C
 #### 18. Why am I receiving the error message: Cannot invoke "String.startsWith(String)"?&#x20;
 
 This occurs when the return value of "com.autorabit.entity.admin.UserProject.getProjectType()" is null. A fix has been incorporated in the ARM 23.1.24 release. Reference support ticket # 109042.
+
+#### **19. Can I update or remove picklist values with CI Job?**
+
+Since Salesforce does not retrieve deleted/deactivated picklist values in a metadata API call, replacing the picklist values via BackUp to VersionControl CI Job is impossible. However, a best practice in replacing the Picklist values is using the EZ-Commit module.
+
+This configuration for RecordType PicklistValues option only works in the EZ-Commit module. If picklist values need to be replaced, use this approach.
+
+<figure><img src="../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
+
+Refer to [How to Configure Record Types Picklist Values](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) for more information.

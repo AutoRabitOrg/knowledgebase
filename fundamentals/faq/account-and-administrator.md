@@ -6,7 +6,7 @@ If your account is locked, the person who holds the AutoRABIT main account shoul
 
 #### I have admin access, so why can't I see some users' branches and commits that are listed under my organization? <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
 
-If your user account is associated to a different organisation, this can happen.
+If your user account is associated to a different organization, this can happen.
 
 #### How would I go about updating or changing the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
 
@@ -44,7 +44,7 @@ If you're having trouble logging into your AutoRABIT account, here are some thin
 1. **The account is not created**: Please check with AutoRABIT admin for creating a new account
 2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password
 3. **Check if your account subscription has expired or your account is disabled**: If your AutoRABIT account has been disabled, you'll see a message saying your account is disabled when you try to log in.
-4. If you get the following error **“getAttribute: Session already invalidated“**, try clearing your browser cache
+4. If you get the following error **“getAttribute: Session already invalidated"**, try clearing your browser cache
 5. **Restriction of your IP address**: Verify with your network team internally and verify if there are any issues or restrictions for your IP address from the network side.
 6. If nothing works out, please reach out to us by raising a [Support Ticket](https://support.autorabit.com/portal/en/home)
 
@@ -85,11 +85,9 @@ View all your support tickets via **Quick Links > Help Center** from the ARM app
 
 #### Which version of TLS does ARM run? <a href="#which-version-of-tls-does-arm-run" id="which-version-of-tls-does-arm-run"></a>
 
-ARM runs on **TLS 1.2**, therefore when Salesforce disables TLS 1.0, it has no effect on ARM.\
-\
+ARM runs on **TLS 1.2**, therefore when Salesforce disables TLS 1.0, it has no effect on ARM.
 
-
-#### What rules do I need to obey when naming identifiers for all of the labels in the ARM application? <a href="#what-rules-do-i-need-to-obey-when-naming-identifiers-for-all-of-the-labels-in-the-arm-application" id="what-rules-do-i-need-to-obey-when-naming-identifiers-for-all-of-the-labels-in-the-arm-application"></a>
+#### What rules do I need to obey when naming identifiers for all of the labels in the ARM application?
 
 There are some rules you have to follow for naming identifiers:
 
@@ -101,9 +99,7 @@ There are some rules you have to follow for naming identifiers:
 
 #### What is the primary reason for restricting special characters when naming identifiers? <a href="#what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers" id="what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers"></a>
 
-It is done to restrict XML injections and prevent XML file corruption.\
-\
-
+It is done to restrict XML injections and prevent XML file corruption.
 
 #### Where is the API token key used in the ARM application? <a href="#where-is-the-api-token-key-used-in-the-arm-application" id="where-is-the-api-token-key-used-in-the-arm-application"></a>
 
@@ -112,9 +108,7 @@ It is done to restrict XML injections and prevent XML file corruption.\
 
 #### Who all are authorized to access the API Token? <a href="#who-all-are-authorized-to-access-the-api-token" id="who-all-are-authorized-to-access-the-api-token"></a>
 
-Super Admins, Org Admins, and the users with admin level permissions are authorized to access the API token.\
-\
-
+Super Admins, Org Admins, and the users with admin level permissions are authorized to access the API token.
 
 #### What browsers does ARM support? <a href="#what-browsers-does-arm-support" id="what-browsers-does-arm-support"></a>
 

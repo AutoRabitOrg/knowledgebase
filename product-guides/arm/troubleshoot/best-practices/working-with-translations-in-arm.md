@@ -59,7 +59,7 @@ In order to commit and deploy field set translations with ARM, you need to commi
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploy the field sets along with the translations for the language selected.
+2. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploys the field sets along with the translations for the language selected.
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,7 +69,7 @@ In order to commit and deploy standard value set translations with [ARM](https:/
 
 1. Select the `StandardValueSet` metadata type and select the specific standard value sets that you want to move the translation.
 2. Select the `StandardValuesetTranslation` metadata type and select the respective metadata members from the list.
-3. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploy the standard value sets along with the translations for the language selected.
+3. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploys the standard value sets along with the translations for the language selected.
 
 ### F. Commit and Deploy 'Global Value Set' Translations with ARM <a href="#f-commit-and-deploy-global-value-set-translations-with-arm" id="f-commit-and-deploy-global-value-set-translations-with-arm"></a>
 
@@ -77,4 +77,13 @@ In order to commit and deploy global value set translations with ARM, you need t
 
 1. Select the `GlobalValueSet` metadata type and select the specific global value sets that you want to move the translation.
 2. Select the `GlobalValuesetTranslation` metadata type and select the global value set translations metadata members from the list.
-3. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploy the global value sets along with the translations for the language selected to the Version Control branch.
+3. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploys the global value sets along with the translations for the language selected to the Version Control branch.
+
+
+
+{% hint style="info" %}
+**NOTE**: The API can’t perform **destructive changes** with the translation value. The API can **add** existing `<translation>` to custom object translation but not **delete** them.
+{% endhint %}
+
+
+

@@ -10,7 +10,7 @@ Before a merge, there are several preparation steps you must take to ensure the 
 
 1. [**`Register your Version Control Repository in ARM`**](../introduction-to-version-control/version-control-repositories-summary.md)**`:`** Only an Admin can perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
 2. [**`Register your Salesforce Organization in ARM`**](../../../arm-administration/registration/salesforce-org/)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.&#x20;
-3. [**`Set Up a Branch`**](../../../getting-started/registration/branching-baseline.md#branching-baseline-overview)**`:`** Instead of making changes directly to the code base, you can branch off from the main line and work on a specific feature in an isolated branch. Only an Admin can perform this step.&#x20;
+3. [**`Set Up a Branch`**](https://knowledgebase.autorabit.com/product-guides/arm/getting-started/registration/version-control-branch/git-branch-creation#overview)**`:`** Instead of making changes directly to the code base, you can branch off from the main line and work on a specific feature in an isolated branch. Only an Admin can perform this step.&#x20;
 4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../../../arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
 5. **`Fetch the latest remote commits:`** Ensure the receiving branch and the merging branch are up-to-date with the latest remote changes.
 

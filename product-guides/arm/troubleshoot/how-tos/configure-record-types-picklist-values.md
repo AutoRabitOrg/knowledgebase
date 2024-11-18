@@ -93,4 +93,4 @@ There can also be two possible scenarios:
 
 **After:** Picklist Field 2 not being available, it gets added to the Record Type
 
-See our [FAQ](../../../../fundamentals/faq/ci-jobs.md) for more information on Picklist Values.
+See our FAQ: [Can I Update or Remove Picklist Values with CI Job?](https://knowledgebase.autorabit.com/fundamentals/faq/ci-jobs#id-19.-can-i-update-or-remove-picklist-values-with-ci-job)

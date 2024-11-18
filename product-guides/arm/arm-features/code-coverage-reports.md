@@ -19,6 +19,10 @@ The code coverage report provides information about the apex tests that are run,
 
 <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**NOTE**: If the test level is a **run-specific test**, ARM will check only **newly added code** against the specified test.
+{% endhint %}
+
 ### Viewing the code coverage report <a href="#viewing-the-code-coverage-report" id="viewing-the-code-coverage-report"></a>
 
 1. Go to the **Reports** module from the ARM home page.

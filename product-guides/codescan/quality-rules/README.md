@@ -15,6 +15,8 @@ For vulnerabilities, the goal is to have more than 80% of issues be true positiv
 
 Security hotspot rules draw attention to code that is security-sensitive. It is expected that more than 80% of the issues will be quickly resolved as "reviewed" after being evaluated by a developer.
 
+More information on Security-Related Rules can be found [here](https://knowledgebase.autorabit.com/product-guides/codescan/quality-rules/security-related-rules).
+
 {% hint style="warning" %}
 Please note that not all rules available on CodeScan Cloud are available in the Self-Hosted CodeScan version. The following rules will not function on CodeScan Self-Hosted:
 
@@ -27,8 +29,6 @@ Please note that not all rules available on CodeScan Cloud are available in the 
 
 These rules require a direct connection to the Salesforce environment to execute queries.&#x20;
 {% endhint %}
-
-More information on Security-Related Rules can be found [here](https://knowledgebase.autorabit.com/product-guides/codescan/quality-rules/security-related-rules).
 
 ### Access Quality Rules <a href="#access-quality-rules" id="access-quality-rules"></a>
 

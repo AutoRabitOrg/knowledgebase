@@ -17,11 +17,11 @@ Validation rule constitutes of:
 There are five types of rules in salesforce and the priority of each rule is according to their order.\
 Salesforce processes rules in the following order.
 
-1. Validation Rules.
-2. Assignment Rules.
-3. Auto-response Rules.
-4. Workflow Rules.
-5. Escalation Rules.
+1. Validation Rules
+2. Assignment Rules
+3. Auto-response Rules
+4. Workflow Rules
+5. Escalation Rules
 
 ### What are workflow rules? <a href="#what-are-workflow-rules" id="what-are-workflow-rules"></a>
 
@@ -33,7 +33,7 @@ Below is the basic structure of a workflow rule in Salesforce:
 
 <figure><img src="../../../.gitbook/assets/image (138).png" alt="" width="393"><figcaption></figcaption></figure>
 
-#### Workflows Components <a href="#workflows-components" id="workflows-components"></a>
+#### Workflow Components <a href="#workflows-components" id="workflows-components"></a>
 
 Workflow rules can be broken down into two main components:
 
@@ -46,15 +46,13 @@ When working with Vault, you may want to disable any automated processes or vali
 
 #### Validation Rules <a href="#validation-rules" id="validation-rules"></a>
 
-You can disable validation rules while working with [EZ-Restore](../vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md) and [EZ-Replicate](../vault-features/replicate/replicating-objects-between-two-salesforce-orgs.md) operation in Vault. During EZ- Restore or Replicate, you need to select the data and metadata that contains the rule you want to disable and then turn off the validation rules.
+You can disable validation rules while working with [EZ-Restore](../vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md) operation in Vault. During EZ-Restore, select the data and metadata that contains the rule you want to disable and then turn off the validation rules.
 
-During this operation, all the validation rules of the salesforce components will be deactivated, and the data would be transferred from the source to the destination sandbox. Once the restore / replicate is completed, validation rules will get activated automatically.
+During this operation, all the validation rules of the Salesforce components are deactivated, and the data gets transferred from the source to the destination sandbox. Once the restore is completed, validation rules will be activated automatically.
 
 #### Workflow Rules <a href="#workflow-rules" id="workflow-rules"></a>
 
-Similiar to validation rules, you can disable workflow rules while working with **EZ-Restore** and **EZ-Replicate** operation in Vault.
-
-During this operation, all the workflow rules of the salesforce components will be deactivated, and the data would be transferred from the source to the destination sandbox. Once the restore / replicate is completed, workflow rules will get activated automatically.
+Similar to validation rules, you can disable workflow rules while working with an **EZ-Restore** operation in Vault.
 
 {% hint style="info" %}
 **Important Note:** Workflow / Validation rules are not supported for **managed packages** at this time.

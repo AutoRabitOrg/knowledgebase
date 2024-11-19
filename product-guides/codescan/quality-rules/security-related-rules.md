@@ -29,8 +29,8 @@ These security issues are divided into two categories: vulnerabilities and hotsp
 
 Security hotspots represent code locations that should be reviewed but are not necessarily real vulnerabilities.
 
-For example, most injection rules are considered vulnerabilities. If a SQL injection is found, it is certain that a fix (input validation) is required, making it a vulnerability.
+For example, most injection rules are considered vulnerabilities. If an SQL injection is found, it is certain that a fix (input validation) is required, making it a vulnerability.
 
 On the other hand, the absence of an HttpOnly flag when creating a cookie could be problematic, but it might not always be. Since it is not always possible to implement the HttpOnly flag, determining the true level of risk requires review by a developer. Therefore, this is categorized as a hotspot.
 
-With hotspots, we aim to help developers understand information security risks, threats, impacts, root causes of security issues, and the selection of relevant software protections. In short, we want to educate developers and assist them in creating secure, ethical, and privacy-friendly applications.
+With hotspots, we aim to help you understand information security risks, threats, impacts, root causes of security issues, and the selection of relevant software protections. In short, we want to educate developers and assist you in creating secure, ethical, and privacy-friendly applications.

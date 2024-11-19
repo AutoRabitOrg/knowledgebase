@@ -623,6 +623,7 @@
     * [Configuration for Polyfill.io Vulnerability Rules](product-guides/codescan/quality-rules/configuration-for-polyfill.io-vulnerability-rules.md)
     * [Configuration for Salesforce Metadata Rules](product-guides/codescan/quality-rules/creating-custom-salesforce-metadata-rules.md)
     * [Metadata Rules on CodeScan Self-Hosted](product-guides/codescan/quality-rules/metadata-rules-on-codescan-self-hosted.md)
+    * [Security-Related Rules](product-guides/codescan/quality-rules/security-related-rules.md)
   * [Issues](product-guides/codescan/issues/README.md)
     * [Filtering Issues in CodeScan](product-guides/codescan/issues/filtering-issues-in-codescan.md)
     * [Export issues to CSV in CodeScan Cloud](product-guides/codescan/issues/export-issues-to-csv-in-codescan-cloud.md)

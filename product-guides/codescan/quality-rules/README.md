@@ -13,12 +13,10 @@ For code smells and bugs, zero false positives are expected.
 
 For vulnerabilities, the goal is to have more than 80% of issues be true positives.
 
-Security hotspot rules draw attention to code that is security-sensitive. It is expected that more than 80% of the issues will be quickly resolved as "reviewed" after being reviewed by a developer.
+Security hotspot rules draw attention to code that is security-sensitive. It is expected that more than 80% of the issues will be quickly resolved as "reviewed" after being evaluated by a developer.
 
-{% hint style="info" %}
-Please note that not all rules available on CodeScan Cloud are available in the Self Hosted CodeScan version.  The following rules will not function on CodeScan Self Hosted:
-
-
+{% hint style="warning" %}
+Please note that not all rules available on CodeScan Cloud are available in the Self-Hosted CodeScan version. The following rules will not function on CodeScan Self-Hosted:
 
 * Limit number of Custom Profiles with Modify All Data Permission (sfmeta:CustomProfilesPermission)
 * Limit number of Page Layouts per object (sfmeta:ExcessivePageLayout)
@@ -30,7 +28,7 @@ Please note that not all rules available on CodeScan Cloud are available in the 
 These rules require a direct connection to the Salesforce environment to execute queries.&#x20;
 {% endhint %}
 
-
+More information on Security-Related Rules can be found here.
 
 ### Access Quality Rules <a href="#access-quality-rules" id="access-quality-rules"></a>
 

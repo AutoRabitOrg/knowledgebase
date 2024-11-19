@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Replicating Objects between Two Salesforce Orgs
 
 ### Overview <a href="#overview" id="overview"></a>

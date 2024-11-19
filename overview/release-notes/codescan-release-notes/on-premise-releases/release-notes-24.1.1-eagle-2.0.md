@@ -27,12 +27,12 @@ Component details are listed in their corresponding sections within this documen
 
     *   Verified the rules: Name, Key, Description, Type, Severity, Message, Tags, and Remediation.
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     *   Verified that a violation is thrown for **layout** and **.layout-meta.xml** files when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     * Verified that **NO** violation is thrown for **other file suffixes** (other than **layout** and **.layout-meta.xml** files) when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**
     * Verified that **NO** violation is thrown for **layout** and **.layout-meta.xml** files when file names **do not** include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**\
 
@@ -43,7 +43,7 @@ Component details are listed in their corresponding sections within this documen
 
     <div align="center">
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     </div>
 
@@ -73,15 +73,15 @@ Component details are listed in their corresponding sections within this documen
    Verified the new LWC rule (API Version is Too Old) for these scenarios:
    *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule.
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
    * Verified that no violation is thrown when the API version is between the minimum and maximum versions allowed.
 
 ### Enhancements
@@ -147,12 +147,12 @@ Component details are listed in their corresponding sections within this documen
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives).\
     \
     Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations.\

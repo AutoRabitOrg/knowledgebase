@@ -1,16 +1,18 @@
 # Restoring the Metadata/Data to the Salesforce Org
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
 This article discusses the procedure for restoring metadata and data to your Salesforce organization and the menu options available for restoring information in Vault.
 
-### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
+## Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
+
+Ensure you have the following:
 
 * Salesforce Org registered with Vault.&#x20;
 * Backup configured for your Salesforce Org. \[[Learn More](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md)]
 * At least one backup operation is triggered for your Salesforce Org in Vault.
 
-### How to do it? <a href="#how-to-do-it" id="how-to-do-it"></a>
+## How do I restore data / metadata? <a href="#how-to-do-it" id="how-to-do-it"></a>
 
 1. Login to your Vault account.
 2. Click **`Restore`** from the Vault dashboard page and click on **`Restore Now`**.
@@ -21,10 +23,10 @@ This article discusses the procedure for restoring metadata and data to your Sal
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-4. Next, select the **`restore source`** and its **`configuration`** from the drop-down.
+4.  Next, select the **`restore source`** and its **`configuration`** from the drop-down.\
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1564).png" alt=""><figcaption></figcaption></figure>
 5. Click **`Get Details`**.
 6.  The configured list will be displayed based on the restore source and configuration selection.
 
@@ -39,20 +41,20 @@ This article discusses the procedure for restoring metadata and data to your Sal
     <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Click on either **`EZ Restore`** or **`Selective Restore`**.Important Note:Restore Source as **`nCino features`** will be displayed only for Salesforce Orgs configured with nCino objects. For detailed nCino restore features, refer to the article: [nCino Restore Features](../knowledge-articles/ncino/restoring-ncino-features.md).
 
-#### EZ-Restore <a href="#ezrestore" id="ezrestore"></a>
+### EZ-Restore <a href="#ezrestore" id="ezrestore"></a>
 
 EZ-Restore copies everything from the source to the destination, including new, updated, and existing data.
 
-**EZ-Restore Steps:**
+#### **EZ-Restore Steps:**
 
-1. Select the backup(s) from the list and click on the **`EZ Restore`** button.
+1.  Select the backup(s) from the list and click on the **`EZ Restore`** button.\
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button.&#x20;
+    <figure><img src="../../../../.gitbook/assets/image (1562).png" alt=""><figcaption></figcaption></figure>
+2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button. \
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1561).png" alt=""><figcaption></figcaption></figure>
 3. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
    * Specify the **`batch size`** for components to retrieve records. The max batch size that you can set per batch is **10K**. This option helps run large jobs exceeding normal processing limits. Per the Salesforce governor limit, you can deploy or retrieve up to **10,000 files** at once or a max size of **40 MB**. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
@@ -64,11 +66,12 @@ EZ-Restore copies everything from the source to the destination, including new, 
    * **`Disable Relationship Mapping:`** The child objects related to selected objects will not be fetched on selection.
    * **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may wish to disable any triggers you have set. _This feature disables Salesforce triggers only.  Any managed package triggers will not be disabled._
 5. The list of **metadata** and **data** objects replicated will be displayed for the last time before the restore process begins. You will not have options to select individual objects as it is an entire restore process.
-6. Click **`Restore Now`**.
+6.  Click **`Restore Now`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="547"><figcaption></figcaption></figure>
 
-#### Selective Restore <a href="#selective-restore" id="selective-restore"></a>
+    <figure><img src="../../../../.gitbook/assets/image (1563).png" alt=""><figcaption></figcaption></figure>
+
+### Selective Restore <a href="#selective-restore" id="selective-restore"></a>
 
 This option allows you to select specific metadata or data that gets restored only to the target organization.&#x20;
 
@@ -137,9 +140,10 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1644318580634.png" alt=""><figcaption></figcaption></figure>
 
-* The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup.&#x20;
+*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup. \
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -151,10 +155,10 @@ Based on your selection, the restore will happen only for selected fields. Post 
      3. **`Enable serial mode for Bulk API:`** Serial mode processes batch one at a time; however, it increases the processing time for a load.
      4. **`Disable Relationship Mapping:`** The child objects related to selected objects are not fetched on selection.
      5. **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may disable any triggers you have set. _This feature disables Salesforce triggers only. Any managed package triggers are not disabled._
-5. Click **`Restore Now`**.
+5.  Click **`Restore Now`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
 6. You'll be taken to the **`Restore Summary`** screen, which will display the status of the recently triggered restore activity.
 
 ### Restore Summary <a href="#restore-summary" id="restore-summary"></a>
@@ -163,15 +167,6 @@ For each restore activity triggered in Vault, you will find the details below:
 
 <figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-| Attribute        | Description                                                                                                                                                                                                                                                                                                                                                                                    |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Label`          | <p>The label name you assigned for your restore activity.<br>Click on the label to find the list of successful/failed metadata and data members that are part of the restore operation. Also, you can <strong>export</strong> to save the restored metadata/data info in CSV format locally. </p>                                                                                              |
-| `Backup Info`    | Get a snapshot of your restore operation                                                                                                                                                                                                                                                                                                                                                       |
-| `Date/Time`      | Date and time stamp for your restore operation                                                                                                                                                                                                                                                                                                                                                 |
-| `Duration`       | Total time to complete the restore operation                                                                                                                                                                                                                                                                                                                                                   |
-| `MetaSuccess`    | The total count of metadata objects successfully restored                                                                                                                                                                                                                                                                                                                                      |
-| `MetaFailure`    | Total count of metadata objects that failed to restore                                                                                                                                                                                                                                                                                                                                         |
-| `SuccessRecords` | The total count of data objects successfully restored                                                                                                                                                                                                                                                                                                                                          |
-| `FailedRecords`  | Total count of data objects that was unable to restore                                                                                                                                                                                                                                                                                                                                         |
-| `Status`         | Restore status (success or failure)                                                                                                                                                                                                                                                                                                                                                            |
-| `Actions`        | <p>Additional actions:</p><ul><li><strong><code>Restore summary:</code></strong> View the restore summary report</li><li><strong><code>Log:</code></strong> Find the log details for your restore operation</li><li><strong><code>Abort:</code></strong> For an ongoing replicate operation, you can abort the process in between using the <strong><code>Abort</code></strong> icon</li></ul> |
+<figure><img src="../../../../.gitbook/assets/image (1567).png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="210">Attribute</th><th>Description</th></tr></thead><tbody><tr><td><code>Label</code></td><td>The label name you assigned for your restore activity.<br>Click on the label to find the list of successful/failed metadata and data members that are part of the restore operation. Also, you can <strong>export</strong> to save the restored metadata/data info in CSV format locally. </td></tr><tr><td><code>Backup Info</code></td><td>Get a snapshot of your restore operation</td></tr><tr><td><code>Date/Time</code></td><td>Date and time stamp for your restore operation</td></tr><tr><td><code>Duration</code></td><td>Total time to complete the restore operation</td></tr><tr><td><code>MetaSuccess</code></td><td>The total count of metadata objects successfully restored</td></tr><tr><td><code>MetaFailure</code></td><td>Total count of metadata objects that failed to restore</td></tr><tr><td><code>SuccessRecords</code></td><td>The total count of data objects successfully restored</td></tr><tr><td><code>FailedRecords</code></td><td>Total count of data objects that was unable to restore</td></tr><tr><td><code>Status</code></td><td>Restore status (success or failure)</td></tr><tr><td><code>Actions</code></td><td><p>Additional actions:</p><ul><li><strong><code>Restore summary:</code></strong> View the restore summary report</li><li><strong><code>Log:</code></strong> Find the log details for your restore operation</li><li><strong><code>Abort:</code></strong> For an ongoing replicate operation, you can abort the process in between using the <strong><code>Abort</code></strong> icon</li></ul></td></tr></tbody></table>

@@ -28,7 +28,7 @@ Please note that not all rules available on CodeScan Cloud are available in the 
 These rules require a direct connection to the Salesforce environment to execute queries.&#x20;
 {% endhint %}
 
-More information on Security-Related Rules can be found here.
+More information on Security-Related Rules can be found [here](https://knowledgebase.autorabit.com/product-guides/codescan/quality-rules/security-related-rules).
 
 ### Access Quality Rules <a href="#access-quality-rules" id="access-quality-rules"></a>
 

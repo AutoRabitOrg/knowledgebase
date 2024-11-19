@@ -39,7 +39,11 @@ Ensure you have the following:
     <figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-7. Click on either **`EZ Restore`** or **`Selective Restore`**.Important Note:Restore Source as **`nCino features`** will be displayed only for Salesforce Orgs configured with nCino objects. For detailed nCino restore features, refer to the article: [nCino Restore Features](../knowledge-articles/ncino/restoring-ncino-features.md).
+7. Click on either **`EZ Restore`** or **`Selective Restore`**.
+
+{% hint style="info" %}
+**Important Note**: Restore Source as **`nCino features`** will be displayed only for Salesforce Orgs configured with nCino objects. For detailed nCino restore features, refer to the article: [nCino Restore Features](../knowledge-articles/ncino/restoring-ncino-features.md).
+{% endhint %}
 
 ### EZ-Restore <a href="#ezrestore" id="ezrestore"></a>
 

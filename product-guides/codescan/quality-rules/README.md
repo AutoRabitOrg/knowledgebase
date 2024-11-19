@@ -5,9 +5,9 @@ CodeScan has a set of metadata rules; these rules allow you to scan your setting
 CodeScan divides the rules into 4 categories:
 
 * Bug (reliability domain)
+* Code Smell (maintainability domain)
 * Vulnerability (security domain)
-* Code smell (maintainability domain)
-* Security hotspot (security domain)
+* Security Hotspot (security domain)
 
 For code smells and bugs, zero false positives are expected.
 

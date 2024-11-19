@@ -16,7 +16,7 @@ Note: Tags are a way to categorize rules and issues.
 
 ### Types of Security Rules
 
-CodeScan features four types of rules: **Bug** (reliability domain), **Code Smell** (maintainability), and **Vulnerability and Hotspot** (security) rules. Given the importance of security, let's explore key concepts and how security rules differ from others.
+CodeScan features four types of rules: **Bug** (reliability domain), **Code Smell** (maintainability), and **Vulnerability and Hotspot** (security domain). Given the importance of security, let's explore key concepts and how security rules differ from others.
 
 * **Security-injection rules:** These rules address vulnerabilities arising when user-controlled inputs are not validated or sanitized. This can lead to dangerous flows from sources (user inputs) to sinks (sensitive functions). CodeScan employs taint analysis technology to detect issues.
 * **Security-configuration rules:** These rules highlight security issues caused by incorrect parameters or the absence of essential checks when calling sensitive functions. Unlike injection rules, these problems are often encountered during execution without complex attacks.

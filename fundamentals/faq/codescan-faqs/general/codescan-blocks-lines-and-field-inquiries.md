@@ -19,3 +19,10 @@ When analyzing code containing queries with multiple fields, each field placed o
 ### **Are Empty Lines or Lines with Only Whitespace Included in the Line Count?**&#x20;
 
 No, lines that consist solely of whitespace or are part of comments are not included in the line count in CodeScan.&#x20;
+
+### What Blocks of Code are Billable?
+
+Only non-commented lines of code for Apex, Aura Lightning, and VisualForce languages are billable. JavaScript, HTML, CSS, and Salesforce Metadata languages are not considered.
+
+
+

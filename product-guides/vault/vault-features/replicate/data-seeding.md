@@ -84,10 +84,10 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 <figure><img src="../../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 16. On clicking “OK”, the rule will be published and available with the global list of rules associated with the ORG.
-17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.
+17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.\
 
-![](<../../../../.gitbook/assets/12 (2).png>)
 
+    <figure><img src="../../../../.gitbook/assets/image (1555).png" alt=""><figcaption></figcaption></figure>
 18. The user can fill in all required detail for the “Config Details”:
 
     * **Replicate Config Label**: The user can enter the name of the config to be created.
@@ -99,11 +99,11 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     * **Data:** The user can observe the objects that are selected during the config creation.
     * On completing all the required selections, the user can select either “Save” or “Save & Run”.
 
-    <figure><img src="../../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1556).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1557).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1558).png" alt=""><figcaption></figcaption></figure>
 19. **Save:** Will save the config created. It will not trigger the job automatically while saving the job.
     * The user will observe “Save” on the “Replication Config Info” page if “Save” is selected.
 20. &#x20;**Save & Run:** Will save the config created and will trigger the job created to run, and, redirect the user to the “Job History” page.
@@ -150,17 +150,17 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
 ### Job Configuration – Actions
 
-1. Every entry has the following actions: Run, Edit, Clone, Schedule, & Delete.
+1.  Every entry has the following actions: Run, Edit, Clone, Schedule, & Delete.\
 
-<figure><img src="../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1560).png" alt=""><figcaption></figcaption></figure>
 2.  **Run:** By clicking on the run icon, the following “Select Data to Replicate” screen will pop up.
 
     * Clicking “Replicate Now” will trigger the job and will create a new entry on the “Job History” page.
     * The user can verify and update any/all the details provided by the user during the “Job Config” creation.
     * Any changes or updates done to the “Config” created will only be applicable to the entry created in the “Job History” section. The Config will remain as it is created in its original state.
 
-    <figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1559).png" alt=""><figcaption></figcaption></figure>
 3. **Edit**: If the user clicks on the edit icon, the user will land on the edit flow of the Config, and, the user can perform modifications to the “Job Config” created.
    * The changes made to the config will affect the config entirely.
 4.  **Clone**: Clicking on the clone icon will pop the “Replicate Config” window to the user.

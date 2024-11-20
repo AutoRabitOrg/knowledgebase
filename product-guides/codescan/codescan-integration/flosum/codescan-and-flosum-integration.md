@@ -4,6 +4,10 @@
 
 **Flosum** is a release management tool for the Salesforce platform. Flosum users can now integrate CodeScan in their deployments to achieve secure, error-free releases.
 
+{% hint style="info" %}
+**Note**: Flosum cannot be integrated with On-Premises/Self-Hosted versions of CodeScan.
+{% endhint %}
+
 ## How to Integrate Flosum with CodeScan <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
 
 1. **Install CodeScan.**&#x20;

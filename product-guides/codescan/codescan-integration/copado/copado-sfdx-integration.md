@@ -10,13 +10,13 @@ Our Integration with Copado SFDX pipelines is currently a modification of their 
 * **The CodeScan project will be created automatically if it doesn't exist.**
 * **A single project will exist in CodeScan for each Copado Pipeline.**
 
-### Copado Extensions Setup
-
-As mentioned, this is an extension of Copado's SFDX integration with CodeScan. &#x20;
-
 {% hint style="info" %}
 **Note**: Copado cannot be integrated with On-Premises/Self-Hosted CodeScan.
 {% endhint %}
+
+### Copado Extensions Setup
+
+As mentioned, this is an extension of Copado's SFDX integration with CodeScan. &#x20;
 
 If you haven't already, please follow the instructions on their SFDX Pipelines documentation or use the PDF attached here.
 

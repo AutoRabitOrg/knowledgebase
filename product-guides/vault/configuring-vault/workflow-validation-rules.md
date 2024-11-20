@@ -6,7 +6,7 @@ Salesforce has a bunch of rules that can be defined on objects and fields. For e
 
 Validation rules verify that the data a user enters in a record meets the standards you specify before the user can save the record. These validation rules help ensure that any record being created or updated qualifies to defined business rules. If not, then developers/ administrators can display required error message.
 
-Validation rule constitutes of:
+Validation rules consist of:
 
 * **Formula** — formula to evaluate business rule. If formula evaluates to **TRUE**, validation error is thrown, else it’s considered as validation success
 * **Error message** — error message to be displayed on validation failure
@@ -54,10 +54,10 @@ During this operation, all the validation rules of the Salesforce components are
 
 Similar to validation rules, you can disable workflow rules while working with an **EZ-Restore** operation in Vault.
 
-{% hint style="info" %}
-**Important Note:** Workflow / Validation rules are not supported for **managed packages** at this time.
-{% endhint %}
-
 #### Triggers and Process Builder Flow <a href="#triggers-and-process-builder-flow" id="triggers-and-process-builder-flow"></a>
 
 Triggers and Process Builders Flows must be controlled directly from the Salesforce environment.
+
+{% hint style="info" %}
+**Note:** Workflow Rules, Validation Rules, and Triggers can't be disabled for the managed packages, neither automatically nor manually.&#x20;
+{% endhint %}

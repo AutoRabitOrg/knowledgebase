@@ -12,8 +12,6 @@ You can search for security-related rules using tags such as:
 
 <figure><img src="../../../.gitbook/assets/image (1572).png" alt=""><figcaption></figcaption></figure>
 
-\
-\
 Note: Tags are a way to categorize rules and issues.
 
 ### Types of Security Rules
@@ -25,8 +23,7 @@ CodeScan features four types of rules: **Bug** (reliability domain), **Code Smel
 
 ### **Viewing Security Categories in CodeScan**
 
-You can find the security category in the rules filter and related rules in the right-side panel, as shown in the images below.\
-
+You can find the security category in the rules filter and related rules in the right-side panel, as shown in the images below.
 
 <figure><img src="../../../.gitbook/assets/image (1573).png" alt=""><figcaption></figcaption></figure>
 

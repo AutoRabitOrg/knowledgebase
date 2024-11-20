@@ -1,43 +1,47 @@
 # Copado SFDX Integration
 
-Our Integration with Copado SFDX pipelines is currently a modification of their extension from their DevOps exchange.  These modifications to the function script and Static Code Analysis Violation object add the following functionality:
+Our Integration with Copado SFDX pipelines is currently a modification of their extension from their DevOps exchange. These modifications to the function script and Static Code Analysis Violation object add the following functionality:
 
-* User stories are scanned after Commit\
-  This adds a quality gate result to the User story and creates a branch on the CodeScan project.
-* The Production branch scans are updated on Promotion\
-  When a change is made in your main branch, CodeScan will scan to give you a view of the state of your production, and accurate delta scans for your User Stories.
-* All User Story results are added to the Static Anaysis Results object for review on the Copado platform.
-* The CodeScan project will be created automatically if it doesn't exist
-* A single project will exist in CodeScan for each Copado Pipeline
+* **User stories are scanned after Commit.**\
+  This adds a quality gate result to the User Story and creates a branch on the CodeScan project.
+* **The Production branch scans are updated on Promotion.**\
+  When a change is made in your main branch, CodeScan will scan it to give you a view of the state of your production and accurate delta scans for your User Stories.
+* **All User Story results are added to the Static Analysis Results object for review on the Copado platform.**
+* **The CodeScan project will be created automatically if it doesn't exist.**
+* **A single project will exist in CodeScan for each Copado Pipeline.**
 
 ### Copado Extensions Setup
 
-As mentioned, this is an extension of Copado's SFDX integration with CodeScan.  If you haven't already, please follow the instructions on their SFDX Pipelines documentation or use the PDF attached here.
+As mentioned, this is an extension of Copado's SFDX integration with CodeScan. &#x20;
+
+{% hint style="info" %}
+**Note**: Copado cannot be integrated with On-Premises/Self-Hosted CodeScan.
+{% endhint %}
+
+If you haven't already, please follow the instructions on their SFDX Pipelines documentation or use the PDF attached here.
 
 {% file src="../../../../.gitbook/assets/Copado Labs - CodeScan Integration.pdf" %}
 
-After installing the CodeScan Integration as Copado intended, we can make some improvement
+After installing the CodeScan Integration as Copado intended, you can make some improvements.
 
 ### CodeScan Object Modifications
 
-First, you will need to add 2 fields to the copado\_\_Static\_Code\_Analysis\_Violation\_\_c object in setup.
+First, you will need to add two fields to the copado\_\_Static\_Code\_Analysis\_Violation\_\_c object in setup.
 
-**Field Name**: CSExtKey\
-**API Name**: CSExtKey\_\_c\
-**Type**: text\
-**Length**: 255\
-**ExternalId**: true
-
-**Field Name**: CSProject\
-**API Name**: CSProject\_\_c\
-**Type**: text\
-**Length**: 255\
-**ExternalId**: false
+1. **Field Name**: CSExtKey\
+   **API Name**: CSExtKey\_\_c\
+   **Type**: text\
+   **Length**: 255\
+   **ExternalId**: true
+2. **Field Name**: CSProject\
+   **API Name**: CSProject\_\_c\
+   **Type**: text\
+   **Length**: 255\
+   **ExternalId**: false
 
 ### Function Modifications
 
-Then, navigate to the functions tab and find the **Run CodeScan QIF** function\
-
+Then, navigate to the functions tab and find the **Run CodeScan QIF** function.
 
 <figure><img src="../../../../.gitbook/assets/image (1546).png" alt=""><figcaption></figcaption></figure>
 
@@ -273,7 +277,7 @@ exit $exitCode
 
 </details>
 
-Click save.
+Click **save**.
 
 The configuration tab should show the callback type is **ApexClass** and the ApexClass is **EvaluateCodeScanResult.**
 
@@ -299,9 +303,9 @@ Click **Save.** &#x20;
 
 ### Quality Gate Rule
 
-In order to get the Quality Gate to run  the appropriate events the Quality Gate Rule needs one more trigger event.&#x20;
+In order to get the Quality Gate to run the appropriate events, the Quality Gate Rule needs one more trigger event.&#x20;
 
-Navigate the the **Quality Gate Rules** tab and open the CodeScan Quality Gate Rule.&#x20;
+Navigate to the **Quality Gate Rules** tab and open the CodeScan Quality Gate Rule.&#x20;
 
 **Deactivate** the rule and add **Promote** to the Copado Actions list under the Trigger heading.&#x20;
 
@@ -313,7 +317,7 @@ We recommend adding the Static Code Analysis results related list to the User St
 
 <figure><img src="../../../../.gitbook/assets/image (1550).png" alt=""><figcaption></figcaption></figure>
 
-Violations will be stored as Static Code Analysis Violations
+Violations will be stored as Static Code Analysis Violations.
 
 <figure><img src="../../../../.gitbook/assets/image (1551).png" alt=""><figcaption></figcaption></figure>
 

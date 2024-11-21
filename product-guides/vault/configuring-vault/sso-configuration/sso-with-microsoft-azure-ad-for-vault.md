@@ -1,55 +1,40 @@
-# SSO with Microsoft Azure AD for Vault
+# SSO with Microsoft Entra ID for Vault
 
 ### Overview <a href="#overview" id="overview"></a>
 
-This step-by-step guide explains how to set up **Single Sign-On** in Vault with [**Microsoft Azure**](https://knowledgebase.autorabit.com/vault/docs/microsoft-azure-blob-retention-policy) **Active Directory (AD)** as your **SAML 2.0 Identity Provider (IdP)**.
+This step-by-step guide explains how to set up **Single Sign-On** in Vault with **Microsoft Entra ID—**formerly Microsoft Azure Active Directory (AD)—as your **SAML 2.0 Identity Provider (IdP)**.
 
-When you integrate Vault with Azure AD, you can:
+When you integrate Vault with Entra ID, you can:
 
-1. Control in Azure AD who has access to Vault
-2. Enable your users to be automatically signed in to Vault with their Azure AD accounts
+1. Control in Entra ID who has access to Vault
+2. Enable your users to be automatically signed in to Vault with their Entra ID accounts
 3. Manage your accounts in one central location - the Azure portal.
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
 To get started, you need the following items:
 
-1. An **Azure AD** subscription.
-2. You will need to be an **Administrator** in Vault and in Azure AD to configure SSO.
+1. An **Entra ID** subscription.
+2. You will need to be an **Administrator** in Vault and in Entra ID to configure SSO.
 3. Add Vault as a **non-gallery** application.&#x20;
 
-### In Azure AD <a href="#in-azure-a-d" id="in-azure-a-d"></a>
+### In Entra ID <a href="#in-azure-a-d" id="in-azure-a-d"></a>
 
 1. Sign in to your Azure management portal.
-2. Select the **Azure Active Directory** service from the left sidebar. Click **Enterprise applications**.
 
-<figure><img src="../../../../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot_21-11-2024_12290_portal.azure.com.jpeg" alt=""><figcaption></figcaption></figure>
 
+2. Select the **Entra ID** service from the left sidebar. Click **Enterprise applications**.
 3. Click on **+** **New application.**
-
-<figure><img src="../../../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
-
 4. On the next screen, click on the **+ Create your own application** button.
-
-<figure><img src="../../../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
-
 5. Enter the name of the app as [VAULT ](https://www.autorabit.com/products/vault-data-backup-recovery/)and choose the third option i.e., **Integrate any other application you don't find in the gallery (Non-gallery).**
 6. Click **Create.**
 
 <figure><img src="../../../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 7. Once the **VAULT** application is created, click on **Set up single sign on.**
-
-<figure><img src="../../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
-
 8. On the **Select a Single sign-on method** dialog, select **SAML** mode to enable single sign-on.
-
-<figure><img src="../../../../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
-
 9. On the **Set up Single Sign-On with SAML** page, click the **Edit (pencil)** icon for **Basic SAML Configuration** to edit the settings.
-
-<figure><img src="../../../../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
-
 10. On the **Basic SAML Configuration** section, perform the following steps:
     * In the **Identifier (Entity ID)** field, enter the URL in the following format: **\<instanceURL>/ARVault/saml/metadata.** For example- If your instance is **https://xyz.com**, then the Identifier (Entity ID) would be: **https://xyz.com/ARVault/saml/metadata**
     * In the **Reply URL** field, enter the URL in the following format: **\<instanceURL>/ARVault/saml/SSO. For example-** If your instance is **https://xyz.com**, then the payload URL would be: **https://xyz.com/ARVault/saml/SSO**

@@ -697,7 +697,7 @@
     * [Licenses](product-guides/vault/configuring-vault/licenses.md)
     * [SSO Configuration](product-guides/vault/configuring-vault/sso-configuration/README.md)
       * [SSO for OKTA](product-guides/vault/configuring-vault/sso-configuration/sso-for-okta.md)
-      * [SSO with Microsoft Azure AD for Vault](product-guides/vault/configuring-vault/sso-configuration/sso-with-microsoft-azure-ad-for-vault.md)
+      * [SSO with Microsoft Entra ID for Vault](product-guides/vault/configuring-vault/sso-configuration/sso-with-microsoft-azure-ad-for-vault.md)
     * [Registering Salesforce Org](product-guides/vault/configuring-vault/registering-salesforce-org/README.md)
       * [Setup backup configuration for Salesforce Org](product-guides/vault/configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md)
       * [Archival Configuration](product-guides/vault/configuring-vault/registering-salesforce-org/archival-configuration.md)

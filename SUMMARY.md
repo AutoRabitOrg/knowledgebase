@@ -485,7 +485,7 @@
           * [Web To Lead](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/web-to-lead/webtolead.md)
   * [Integration and Plugins](product-guides/arm/integration-and-plugins/README.md)
     * [SSO](product-guides/arm/integration-and-plugins/sso/README.md)
-      * [SSO With Microsoft Azure AD](product-guides/arm/integration-and-plugins/sso/sso-with-microsoft-azure-ad.md)
+      * [SSO With Microsoft Entra ID](product-guides/arm/integration-and-plugins/sso/sso-with-microsoft-azure-ad.md)
       * [SSO for OKTA](product-guides/arm/integration-and-plugins/sso/sso-for-okta.md)
       * [SSO For PingFederate](product-guides/arm/integration-and-plugins/sso/sso-for-pingfederate.md)
       * [SSO For ADFS](product-guides/arm/integration-and-plugins/sso/sso-for-adfs.md)

@@ -1,27 +1,27 @@
-# SSO With Microsoft Azure AD
+# SSO With Microsoft Entra ID
 
 ### Overview <a href="#overview" id="overview"></a>
 
-This step-by-step guide explains how to set up **Single Sign-On** in AutoRABIT with **Microsoft Azure Active Directory (AD)** as your **SAML 2.0 Identity Provider (IdP)**.
+This step-by-step guide explains how to set up **Single Sign-On** in AutoRABIT with **Microsoft Entra ID** \[formerly Azure Active Directory (AD)] as your **SAML 2.0 Identity Provider (IdP)**.
 
-When you integrate AutoRABIT with Azure AD, you can:
+When you integrate AutoRABIT with Entra ID, you can:
 
-1. Control in Azure AD who has access to AutoRABIT
-2. Enable your users to be automatically signed in to AutoRABIT with their Azure AD accounts
+1. Control in Entra ID who has access to AutoRABIT
+2. Enable your users to be automatically signed in to AutoRABIT with their Entra ID accounts
 3. Manage your accounts in one central location - the Azure portal.
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
 To get started, you need the following items:
 
-1. An **Azure AD** subscription.
-2. You will need to be an **Administrator** in AutoRABIT and in Azure AD to configure SSO.
+1. An **Entra ID** subscription.
+2. You will need to be an **Administrator** in AutoRABIT and in Entra ID to configure SSO.
 3. Add AutoRABIT as a **non-gallery** application.
 
-### In Azure AD <a href="#in-azure-a-d" id="in-azure-a-d"></a>
+### In Entra ID <a href="#in-azure-a-d" id="in-azure-a-d"></a>
 
-1. Sign in to your Azure management portal.
-2. Select the **Azure Active Directory** service from the left sidebar. Click **Enterprise applications**.
+1. Sign in to your Entra management portal.
+2. Select the **Entra ID** service from the left sidebar. Click **Enterprise applications**.
 3. Select **All applications** from the **Application type** dropdown.
 4. Click **New application** and, on the **Add from the gallery section**, type _autorabit,_ and press **Enter**.
 5. From the results, select **AutoRABIT**, change the name if you wish, and click **Add**.
@@ -36,7 +36,7 @@ To get started, you need the following items:
 
 ### In AutoRABIT <a href="#in-autorabit" id="in-autorabit"></a>
 
-Now that your Azure SSO implementation is set up, you’ll need to follow just a few more steps to configure SSO in your AutoRABIT account.
+Now that your Entra SSO implementation is set up, you’ll need to follow just a few more steps to configure SSO in your AutoRABIT account.
 
 1. Login to your AutoRABIT account.
 2. Hover your mouse over the **Admin** module and select the option: **My Account**

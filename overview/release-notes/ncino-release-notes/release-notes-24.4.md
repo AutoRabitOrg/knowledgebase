@@ -1,5 +1,16 @@
 # Release Notes 24.4
 
+## nCino 24.4.3 Release Notes
+
+**Release Date: 24 November 2024**
+
+The following enhancements ensure compliance, improve flexibility, and streamline the user experience.&#x20;
+
+* **CI Job Backup:** CI job rollback backups have been further streamlined and organized to ensure compliance standards are met.
+* **nCino RBC Deployment Options:** Customers can now verify and configure the required `externalID` during RBC deployments, improving flexibility and control.
+* **Trigger Build on Commit:** Scheduling conflicts are now resolved when the "Trigger Build on Commit" option is enabled, ensuring seamless automation.
+* **nCino Step Logs**: nCino step logs have been enhanced to provide additional details, improving visibility and troubleshooting capabilities.
+
 ## nCino 24.4.2 Release Notes
 
 **Release Date: 10 November 2024**

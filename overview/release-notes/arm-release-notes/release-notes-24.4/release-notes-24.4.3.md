@@ -39,29 +39,9 @@ When deploying a profile via the CI Job build, only the selected profile is now 
 
 Users can now delete DigitalExperience metadata in the EZ-Commit module. Additionally, support for managing DigitalExperience metadata has been extended across all modules. Impacted Modules: EZ-Merge, Custom Deployment, CI Jobs, Prevalidation Deployments, and Release Labels. Support Case: #123845
 
-#### **Reliable Re-deployment Using Git Tags**
-
-Re-deployment operations using Git tags now function without errors. The issue has been resolved in which components failed during re-deployment with an error message related to missing objects in the package. Users can successfully re-deploy components for the same tag label as expected. Impacted Modules: Tag deployments in custom deployments. Support Case: #124672
-
 #### **Subscription Extension via Super Admin**
 
 Super Admin users can now successfully extend subscription counts for active accounts. The issue causing an empty notification pop-up when attempting to increase subscriptions has been resolved. Impacted Module: SuperAdmin - Extend Customer tab. Found in QA.
-
-#### **Improved CI Job Status Synchronization with AccelQ**
-
-The integration between ARM and AccelQ has been enhanced to provide accurate and timely updates for CI job statuses and results. Key improvements include:
-
-1. **Dynamic Polling Mechanism**:
-   * The system now dynamically adjusts polling intervals for monitoring CI jobs triggered in AccelQ.
-   * Once a job's status changes to "Scheduled," a scheduler will poll every 5 minutes to track the job's status.
-2. **Targeted Job Monitoring**:
-   * The polling mechanism focuses only on the specific AccelQ job related to the triggered CI build, ensuring efficient tracking and updates.
-3. **Status Updates**:
-   * CI job results in ARM now correctly reflect the actual job status and results from AccelQ upon completion.
-4. **Abort Functionality**:
-   * Aborting a CI job in ARM now terminates the execution in AccelQ, eliminating the need for manual intervention in AccelQ.
-
-These updates ensure improved synchronization and user experience for ARM-AccelQ integrations. Impacted Module: CI Jobs. Support Case: #124660
 
 #### **Vlocity Deployment Visibility in Deployment History**
 
@@ -84,10 +64,6 @@ The notification system for scheduled code coverage reports has been improved to
    * Modifications to parameters such as test classes or email lists also trigger accurate and relevant notifications.
 
 This enhancement eliminates misleading messages, ensuring that users receive correct feedback on configuration updates. Impacted Module: Admin-Code coverage report → Reports. Support Case: #125964
-
-#### **Stability Improvements for Commit and Merge Operations**
-
-The commit and merge processes have been enhanced to prevent failures caused by corrupted global workspaces. The issue occurring when the **OPTIMIZED\_WORKSPACES** feature flag was disabled has been resolved by updating the global workspace checkout mechanism to ensure stability, enabling seamless and error-free operations. Impacted Modules: EZ-Commit, EZ-Merge, Deployment & CI Jobs, Repo & branch registration. Support Case #126078
 
 #### **Automatic Mapping of JIRA Credentials**
 

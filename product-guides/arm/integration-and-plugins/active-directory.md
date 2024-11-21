@@ -19,7 +19,7 @@ Active Directory integration provides log-in to [Automated Release Management (A
     * **Port:** Enter the port here. By default, Port 389 will be taken. However, if the AD is configured over SSL, enter the port as 636.
     * **Domain Name:** Paste the domain name exactly as configured in the AD server.
     * **Group name:** Enter the group detail for which you would like to fetch the detail from the AD.
-    * **Host Type**: Select the host type i.e., cloud or on-premise.
+    * **Host Type**: Select the host type i.e., cloud or on-premises.
     * **Select Credential:** Choose the correct credentials from the drop-down field or, to create a new credential, click on the **+** icon.
 
     <figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="385"><figcaption></figcaption></figure>

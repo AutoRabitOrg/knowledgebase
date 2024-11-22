@@ -37,7 +37,7 @@ Before configuring SSO in Entra ID, you must enable SSO in CodeScan.
 
     * Enforcing SSO affects both login and signup. Existing _Auth0_ users won't be able to login.
     * Signup with email domain same as corporate domain won't be allowed.
-    * If the **`Enforce SSO`** checkbox is enabled prematurely, it will prohibit all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
+    * If the **`Enforce SSO`** checkbox is enabled prematurely, it will prohibit all **users in their organization** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 7. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 8. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to Entra ID.
 
@@ -61,7 +61,7 @@ Before configuring SSO in Entra ID, you must enable SSO in CodeScan.
 <figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. On the **`Basic SAML Configuration`** section, perform the following steps:
-   * In the **`Identifier (Entity ID)`** field, enter the **`connection_id`** in this field. **Example:** `AD-SAML`
+   * In the **`Identifier (Entity ID)`** field, enter the **`connection_id`** in this field.&#x20;
    * In the **`Reply URL`** field, enter the **`URL`** in the below format: _`{instanceurl}/_codescan/login/saml2/sso/{connection_id}`_
    * Click **`Save`** and close the dialog box.
 
@@ -69,9 +69,6 @@ Before configuring SSO in Entra ID, you must enable SSO in CodeScan.
 **Where can I find my `connection_id`?**
 
 Your _connection\_id_ will be available in the **`Metadata URL`** generated inside CodeScan.
-
-**For example:** _Metadata URL-_ `https://app.codescan.io/_codescan/saml2/metadata/AD-SAML`\
-_Connection\_Id-_ `AD-SAML`
 {% endhint %}
 
 10. Click the **`Edit (pencil)`** icon for **`Attributes & Claims`** to edit the attributes settings.
@@ -90,7 +87,7 @@ _Connection\_Id-_ `AD-SAML`
 | saml\_email | Attribute | user.mail        |
 
 14. Click **`Save`**.
-15. Follow similar steps to add two more claims as mentioned in the below table:
+15. Follow similar steps to add two more claims as mentioned in the following table:
 
 | Name           | Source    | Source Attribute |
 | -------------- | --------- | ---------------- |

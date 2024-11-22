@@ -11,7 +11,7 @@ SSO (Single sign-on) is a sign-in method that allows a user to log into one appl
 CodeScan can integrate with any Identity Provider that supports SAML 2.0. In the past, we have worked with:
 
 * ADFS
-* Microsoft Azure
+* Microsoft Entra ID (formerly Azure AD)
 * Okta
 * PingOne
 

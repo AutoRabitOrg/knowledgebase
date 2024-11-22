@@ -103,6 +103,7 @@
       * [What Is Cyclomatic Complexity?](fundamentals/faq/codescan-faqs/general/what-is-cyclomatic-complexity.md)
       * [Can I export my test results?](fundamentals/faq/codescan-faqs/general/can-i-export-my-test-results.md)
       * [CodeScan requests read and update permissions while connecting to Bitbucket](fundamentals/faq/codescan-faqs/general/codescan-requests-read-and-update-permissions-while-connecting-to-bitbucket.md)
+      * [SSL Certificates](fundamentals/faq/codescan-faqs/general/ssl-certificates.md)
     * [CodeScan Self-Hosted Issues](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/README.md)
       * [CodeScan License Issues (IDE)](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-license-issues-ide.md)
       * [CodeScan Update Binding Failure](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-update-binding-failure.md)

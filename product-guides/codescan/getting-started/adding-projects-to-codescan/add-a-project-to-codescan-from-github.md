@@ -43,3 +43,12 @@ This document guides how to add a **GitHub** project to your CodeScan cloud acco
 <figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Now that the webhooks have been created, every time there is a push to the tracked branch or a pull request made/updated against the tracked branch, an analysis will be triggered in CodeScan.
+
+{% hint style="info" %}
+NOTE: A known limitation exists. When an analysis is triggered, CodeScan requests a token to GitHub, and GitHub doesn't permit more than 10 tokens per hour per user per application.
+
+It's a limitation from GitHub. For more information, refer to [Token Expiration and Revocation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/token-expiration-and-revocation#token-revoked-due-to-excess-of-tokens-for-an-oauth-app-with-the-same-scope) from GitHub Docs.
+{% endhint %}
+
+
+

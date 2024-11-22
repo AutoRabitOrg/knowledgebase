@@ -2,45 +2,33 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Azure Blob retention policy management using WebAPI needs the below details to successfully hit an API endpoint and complete and retention policy update/create.&#x20;
+Azure Blob retention policy management using WebAPI needs to be created using the following details to successfully hit an API endpoint and complete a retention policy update/create.&#x20;
 
 1. **Tenant ID**
 2. **Client ID**
 3. **Client secret**
 4. **Access Token**
 
-<figure><img src="../../../../.gitbook/assets/image (119) (1).png" alt="" width="551"><figcaption></figcaption></figure>
+### **What Is a Tenant and How Do I Get a Tenant ID in Azure?** <a href="#what-is-tenant-and-how-to-get-a-tenant-id-in-azure" id="what-is-tenant-and-how-to-get-a-tenant-id-in-azure"></a>
 
-### **What is Tenant and how to get a Tenant ID in Azure?** <a href="#what-is-tenant-and-how-to-get-a-tenant-id-in-azure" id="what-is-tenant-and-how-to-get-a-tenant-id-in-azure"></a>
+A tenant represents your organization and helps you manage a specific instance of Microsoft cloud services for your internal and external users.
 
-Tenant represents your organization and helps you to manage a specific instance of Microsoft cloud services for your internal and external users.
+Log in to the Azure portal and navigate to Entra ID and choose the properties on the left side pane. On the right side pane, you will get your account-related information along with a field named **Directory ID**. Under that field, you will have a text box with an alphanumeric value that can be copied from the text box. This is your Tenant ID.  In this case, the **Tenant ID** is the **Directory ID**.
 
-Log in to the Azure portal and navigate to Azure Active Directory and choose the properties on the left side pane. On the right side pane, you will get your account-related information along with a field named **Directory ID**. Under that field, you will have a text box with an alphanumeric value that can be copied from the text box. This is your Tenant ID.  In this case, the **Tenant ID** is the **Directory ID**.
-
-<figure><img src="../../../../.gitbook/assets/image (120) (1).png" alt="" width="452"><figcaption></figcaption></figure>
-
-If you are doing a new setup and do not have any existing tenant, then follow the below steps to create a new tenant:
+If you are doing a new setup and do not have any existing tenant, then follow the steps below to create a new tenant:
 
 1. Login to Azure portal
 2. Select **Create a resource** from the portal.
 
 <figure><img src="../../../../.gitbook/assets/image (121) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. Search & choose **Azure Active Directory.**
-
-<figure><img src="../../../../.gitbook/assets/image (122) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-
+3. Search & choose **Entra ID.**
 4. Create a directory by providing a name.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/image (123) (1).png" alt="" width="227"><figcaption></figcaption></figure>
-
 5. A **Tenant ID** is automatically created.
 
-<figure><img src="../../../../.gitbook/assets/image (124) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+### **What is a client ID and how do I create one?** <a href="#what-is-client-id-and-how-to-create-it" id="what-is-client-id-and-how-to-create-it"></a>
 
-### **What is client ID and how to create it?** <a href="#what-is-client-id-and-how-to-create-it" id="what-is-client-id-and-how-to-create-it"></a>
-
-Client ID is nothing but Application ID that uses to associate our application with Azure AD at runtime. To delegate Identity and Access Management functions to Azure AD, an application must be registered with an Azure AD tenant. When we register our application with Azure AD, we are creating an identity configuration for our application that allows it to integrate with Azure AD.
+Client ID is nothing but Application ID that uses to associate our application with Azure AD at runtime. To delegate Identity and Access Management functions to Entra ID, an application must be registered with an Azure AD tenant. When you register your application with Entra ID, you are creating an identity configuration for your application that allows it to integrate with Entra ID.
 
 ### **App Registration process** <a href="#app-registration-process" id="app-registration-process"></a>
 
@@ -109,7 +97,6 @@ client\_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 #### Request for Access Token <a href="#request-for-access-token" id="request-for-access-token"></a>
 
-Once you acquired an authorization code and have been granted permission by the user, you can redeem the code for an access token to the desired resource. Do this by sending a POST request to the token endpoint.
+Once you acquire an authorization code and have been granted permission by the user, you can redeem the code for an access token to the desired resource. Do this by sending a POST request to the token endpoint.
 
-For more information please visit the below link and go through the documentation provided by Microsoft.\
-[https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
+For more information, please visit the following link and see the documentation provided by Microsoft at [https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id).

@@ -255,7 +255,7 @@ If the proxy has a _username_ and _password_, you can add/update the following p
 -Dhttps.proxyPassword=your_password
 ```
 
-### Self Signed Certificates <a href="#self-signed-certificates" id="self-signed-certificates"></a>
+### Self-Signed Certificates <a href="#self-signed-certificates" id="self-signed-certificates"></a>
 
 If you are connecting to a server with self-signed certificates, you will need to specify them for your **Java** and **Node** installations.
 
@@ -328,7 +328,7 @@ keytool -delete -noprompt **-alias** _{alias-name for the certificate}_ **-keyst
 
 **Example:** keytool -delete -noprompt **-alias** _codescan-certificate_ **-keystore** _“c:\Program Files\Java\jdk-11.0.13\lib\security\cacerts”_
 
-#### CodeScan Update Binding Failed <a href="#codescan-update-binding-failed" id="codescan-update-binding-failed"></a>
+### CodeScan Update Binding Failed <a href="#codescan-update-binding-failed" id="codescan-update-binding-failed"></a>
 
 If the CodeScan update binding is getting failed, try disabling the VPN and antivirus, then try updating the binding again.
 
@@ -350,17 +350,17 @@ If Apex PMD plugin is installed alongside the CodeScan plugin, one or more of th
 
 All these issues can be resolved by uninstalling Apex PMD plugin and restarting IDE, then updating the Binding to CodeScan Cloud.
 
-#### CodeScan and Java Runtime Environment (JRE) sync issue <a href="#codescan-and-java-runtime-environment-jre-sync-issue" id="codescan-and-java-runtime-environment-jre-sync-issue"></a>
+### CodeScan and Java Runtime Environment (JRE) sync issue <a href="#codescan-and-java-runtime-environment-jre-sync-issue" id="codescan-and-java-runtime-environment-jre-sync-issue"></a>
 
 CodeScan should automatically find the JRE installed on your computer. If you have trouble, then you can specify the JRE path on your VS Code's **Settings** page.
 
-**Navigation: **_**VS Code Settings > Settings > Extensions > CodeScan.**_
+**Navigation:&#x20;**_**VS Code Settings > Settings > Extensions > CodeScan.**_
 
 Under **CodeScan > Ls: Java Home** _(Not synced)_, enter the JRE path.
 
 <figure><img src="../../../../.gitbook/assets/image (500).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### How do I see warnings and errors in VS Code? <a href="#how-do-i-see-warnings-and-errors-in-vs-code" id="how-do-i-see-warnings-and-errors-in-vs-code"></a>
+### How do I see warnings and errors in VS Code? <a href="#how-do-i-see-warnings-and-errors-in-vs-code" id="how-do-i-see-warnings-and-errors-in-vs-code"></a>
 
 You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBLEMS`** panel with a list of all current errors. If you open a file that has errors or warnings, they will be rendered inline with the text and in the overview ruler.
 
@@ -414,6 +414,10 @@ Before raising a support ticket, perform the following checks in VS Code:
 <figure><img src="../../../../.gitbook/assets/image (501).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Perform the **CodeScan Update Binding** and check if the issue is resolved.
+
+{% hint style="info" %}
+NOTE: Duplicate lines of code and Security Hotspot issues do not show up in IDE.
+{% endhint %}
 
 ***
 

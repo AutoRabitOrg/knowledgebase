@@ -1,4 +1,4 @@
-# BitBucket
+# Bitbucket
 
 ### About Bitbucket <a href="#about-bitbucket" id="about-bitbucket"></a>
 
@@ -6,7 +6,7 @@
 
 ### GitHub and Bitbucket <a href="#github-and-bitbucket" id="github-and-bitbucket"></a>
 
-Github and Bitbucket are hosting platforms that offer developers access to both public and private repositories. The functionality of Bitbucket and GitHub is very similar, and both allow you to perform basic operations, such as:
+GitHub and Bitbucket are hosting platforms that offer developers access to both public and private repositories. The functionality of Bitbucket and GitHub is very similar, and both allow you to perform basic operations, such as:
 
 * Create and manage repositories
 * Utilizing **Two-Factor Authentication (2FA)**
@@ -46,13 +46,13 @@ To authenticate Bitbucket, you’ll have to use **App Password** instead of the 
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
 3. Next, click **`Create Credential`**.
 4. On the next pop-up screen, give a **`credential name`**.
-5. Choose the **`Credential Type`** as **`Username With Password`**.
-6. Enter your Bitbucket’s **`username`** and **`App Password`**.
+5. Choose the **`Credential Type`** as **`Username with Password`**.
+6. Enter your Bitbucket **`username`** and **`App Password`**.
 7. Click **`Save`**.
 
 #### Registering a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
 
-If you wish to set up a Bitbucket repository, ensure that you have an account created and configured at BitBucket. Next, follow the below steps:
+If you wish to set up a Bitbucket repository, ensure that you have an account created and configured at Bitbucket. Next, follow these steps:
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on **`VC Repos`**.

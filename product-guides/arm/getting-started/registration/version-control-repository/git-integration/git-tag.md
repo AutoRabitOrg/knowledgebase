@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-GIT tags are a simple and effective way to keep track of your code's different versions and the important quality of Git's version control. GIT Tag operation allows giving meaningful names to a specific version in the repository. Suppose Timon and Rumba decide to tag their project code so that they can later access it easily.
+GIT tags are a simple and effective way to keep track of your code's different versions and the important quality of Git's version control. GIT Tag operation allows giving meaningful names to a specific version in the repository. Suppose Timon and Rumba decide to tag their project code so they can easily access it later.
 
 ### Creating a new Git Tag <a href="#creating-a-new-git-tag" id="creating-a-new-git-tag"></a>
 
@@ -73,7 +73,7 @@ AutoRABIT will create the GIT tag while CI Job is triggered and is successfully 
 ### Deployment via GIT Tag <a href="#deployment-via-git-tag" id="deployment-via-git-tag"></a>
 
 1. In the New Deployment screen, choose **Tag** as a dropdown in the **Deployment From** field.
-2. Select the **Version Control Repository** and the **Tag** from the drop-down.
+2. Select the **Version Control Repository** and the **Tag** from the dropdown.
 3. Choose the **Destination org** for your deployment.
 4. The **Deployment Type** is auto-selected to **Full Deployment** by default. Full Deployment transfers all objects in the source org to the destination org.
 5. Once you are done with the selection, click on **Deploy**.

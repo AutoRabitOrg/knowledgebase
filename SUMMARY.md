@@ -149,7 +149,7 @@
           * [GIT Tag](product-guides/arm/getting-started/registration/version-control-repository/git-integration/git-tag.md)
         * [SVN](product-guides/arm/getting-started/registration/version-control-repository/svn.md)
         * [TFS](product-guides/arm/getting-started/registration/version-control-repository/tfs.md)
-        * [BitBucket](product-guides/arm/getting-started/registration/version-control-repository/bitbucket.md)
+        * [Bitbucket](product-guides/arm/getting-started/registration/version-control-repository/bitbucket.md)
       * [Version Control Branch](product-guides/arm/getting-started/registration/version-control-branch/README.md)
         * [GIT Branch Creation](product-guides/arm/getting-started/registration/version-control-branch/git-branch-creation.md)
         * [Creation of a TFS Branch](product-guides/arm/getting-started/registration/version-control-branch/creation-of-a-tfs-branch.md)

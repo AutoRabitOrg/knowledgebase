@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-This step-by-step guide explains how to set up **Single Sign-On** in Vault with **Microsoft Entra ID—**formerly Microsoft Azure Active Directory (AD)—as your **SAML 2.0 Identity Provider (IdP)**.
+This step-by-step guide explains how to set up **Single Sign-On** in Vault with **Microsoft Entra ID—**&#x66;ormerly Microsoft Azure Active Directory (AD)—as your **SAML 2.0 Identity Provider (IdP)**.
 
 When you integrate Vault with Entra ID, you can:
 
@@ -47,27 +47,19 @@ To get started, you need the following items:
 <figure><img src="../../../../.gitbook/assets/image (187).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. On the **User Attributes & Claims** section, delete the auto-generated claims available in the **Additional claims** section.
-
-<figure><img src="../../../../.gitbook/assets/image (188).png" alt="" width="563"><figcaption></figcaption></figure>
-
 14. Next, click on **+Add New Claim.**
-
-<figure><img src="../../../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
-
 15. In the **Manage Claim** page, fill in the below details:&#x20;
 
-| Name                 | Source    | Source Attribute          |
-| -------------------- | --------- | ------------------------- |
-| <p>firstname<br></p> | Attribute | <p>user.givenname<br></p> |
+| Name      | Source    | Source Attribute |
+| --------- | --------- | ---------------- |
+| firstname | Attribute | user.givenname   |
 
 16. Click **Save**.
 17. Follow similar steps to add two more claims as mentioned in the below table:
 
-    | Name                       | Source    | Source Attribute                                                                                                                                                                                                                                                                                                                                                                                            |
-    | -------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | <p>Lastname<br></p>        | Attribute | <p>user.surname<br></p>                                                                                                                                                                                                                                                                                                                                                                                     |
-    | customerid                 | Attribute | Enter your Vault's Customer Id. (You'll find your Customer ID under the **Profile** section in your Vault account.                                                                                                                                                                                                                                                                                          |
-    | restrictAutoCreationOfUser | Attribute | <p>For <strong>Yes</strong>, a new user account won't be created within Vault even if the user is already registered with the OKTA service provider. The user is not permitted access to Vault if the account is not created in Vault.<br><br>For <strong>No</strong>, the restriction is revoked, and a new user account gets created in Vault, and the user will be able to access the Vault feature.</p> |
+    <table><thead><tr><th width="254">Name</th><th width="112">Source</th><th>Source Attribute</th></tr></thead><tbody><tr><td>Lastname</td><td>Attribute</td><td>user.surname</td></tr><tr><td>customerid</td><td>Attribute</td><td>Enter your Vault's Customer Id. (You'll find your Customer ID under the <strong>Profile</strong> section in your Vault account.</td></tr><tr><td>restrictAutoCreationOfUser</td><td>Attribute</td><td>For <strong>Yes</strong>, a new user account won't be created within Vault even if the user is already registered with the OKTA service provider. The user is not permitted access to Vault if the account is not created in Vault.<br><br>For <strong>No</strong>, the restriction is revoked, and a new user account gets created in Vault, and the user will be able to access the Vault feature.</td></tr></tbody></table>
+
+
 
     <figure><img src="../../../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 18. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, find **Federation Metadata XML** and click **Download** to download the XML file and save it on your computer.
@@ -102,10 +94,10 @@ Now that your Azure SSO implementation is set up, you’ll need to follow just a
 {% hint style="info" %}
 **Troubleshooting**:
 
-Vault throws the following error when a user tries to log into Vault via SSO: _"Your user is not available in the account with provided customer id. Please contact the administrator to create a user for you in the account"_
+Vault throws the following error when a user tries to log into Vault via SSO: _"Your user is not available in the account with provided customer ID. Please contact the administrator to create a user for you in the account."_
 
 The error usually occurs if:
 
 1. The user details are not assigned inside Azure to login into the Vault application.
-2. The administrator has set the **restrictAutoCreationOfUser** to **Yes** inside **Attribute Statements** while configuring Azure AD SSO. If it is set to Yes, the user is not permitted access to Vault if the account is not created in Vault.&#x20;
+2. The administrator has set the **restrictAutoCreationOfUser** to **Yes** inside **Attribute Statements** while configuring Entra ID SSO. If it is set to Yes, the user is not permitted access to Vault if the account is not created in Vault.&#x20;
 {% endhint %}

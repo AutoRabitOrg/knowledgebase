@@ -689,7 +689,7 @@
         * [Bring your own Key (BYOK) with Vault](product-guides/vault/configuring-vault/configure-backup-environment/amazon-aws-s3-storage-environment/bring-your-own-key-byok-with-vault.md)
         * [IAM Role Support](product-guides/vault/configuring-vault/configure-backup-environment/amazon-aws-s3-storage-environment/iam-role-support.md)
       * [Google Cloud Platform](product-guides/vault/configuring-vault/configure-backup-environment/google-cloud-platform.md)
-      * [Create a Azure Storage Account](product-guides/vault/configuring-vault/configure-backup-environment/create-a-azure-storage-account.md)
+      * [Create an Azure Storage Account](product-guides/vault/configuring-vault/configure-backup-environment/create-a-azure-storage-account.md)
       * [Azure Blob Storage Environment](product-guides/vault/configuring-vault/configure-backup-environment/azure-blob-storage-environment.md)
       * [Microsoft Azure Blob Retention Policy](product-guides/vault/configuring-vault/configure-backup-environment/microsoft-azure-blob-retention-policy.md)
       * [NFS](product-guides/vault/configuring-vault/configure-backup-environment/nfs.md)

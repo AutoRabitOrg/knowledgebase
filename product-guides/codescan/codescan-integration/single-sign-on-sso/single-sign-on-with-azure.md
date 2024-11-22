@@ -1,4 +1,4 @@
-# Single Sign-On with Azure
+# Single Sign-On with Entra ID
 
 ## Overview <a href="#overview" id="overview"></a>
 
@@ -41,7 +41,7 @@ Before configuring SSO in Entra ID, you must enable SSO in CodeScan.
 7. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 8. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to Entra ID.
 
-### Step 2: Configuring Azure <a href="#step-2-configuring-azure" id="step-2-configuring-azure"></a>
+### Step 2: Configuring Azure Portal with Entra ID <a href="#step-2-configuring-azure" id="step-2-configuring-azure"></a>
 
 1. Log in to the Azure portal (https://portal.azure.com/). In the left-hand menu, click **`Entra ID > Enterprise applications`**.
 2. Select **`All applications`** under the **`Manage`** section.
@@ -111,9 +111,6 @@ Point to Note: Open the above downloaded certificate into your **Notepad++**, yo
 Now that your Azure SSO implementation is set up, you’ll need to follow just a few more steps to configure SSO in your CodeScan account.
 
 1. In **CodeScan**, on the **`SAML`** page, go to **`Actions`** and click on **`Edit`**.
-
-<figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 2. Open the **`Federation Metadata XML`** certificate that you have earlier downloaded from Azure in a new tab of your browser.
 3.  In the **`Edit SAML Connection`** dialog box on CodeScan, enter the following values:
 

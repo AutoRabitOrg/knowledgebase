@@ -31,7 +31,7 @@ If a user does not have approval/permission to run a scan, when they try to add 
 
 Adding a new analysis project is not required. The project in CodeScan is automatically created in Copado Integration using the organization key and security token provided by CodeScan.
 
-### **I am unable to see the results in CodeScan using the Copado integration.**
+### **Why am I unable to see the results in CodeScan using the Copado integration?**
 
 Check if the specific user has permission to access the 'Result Record' in Copado.
 

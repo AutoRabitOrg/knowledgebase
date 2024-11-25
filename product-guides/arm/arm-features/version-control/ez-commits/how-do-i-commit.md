@@ -171,19 +171,24 @@ ARM allows performing a validation deployment before actually committing the cha
        <figure><img src="../../../../../.gitbook/assets/image (1058).png" alt=""><figcaption></figcaption></figure>
 2. Under the **`Validation Settings`**, users are prompted to enter the commit label, commit message (if any), and reviewer email ID(s) to send an email notification of the commit process performed and the difference reports. Additionally, there are various options you can configure:
    1. **`Commit WaveXMD Components:`** Upon selection, this checkbox allows you to choose the respective Wave XMD files belonging to the Wave dashboard metadata. This checkbox is hidden if the 'WaveDashboard' metadata type or its corresponding members are not picked.
-   2. **`Commit Options for Profile:`**&#x54;his option lets you choose to commit settings for a full profile operation.
+   2. **`Commit Options for Profile:`** This option lets you choose to commit settings for a full profile operation.
       * **`Commit Access Settings for selected metadata (Profiles ONLY):`** This allows you to perform the commit operation based only on the profiles available for the selected metadata.
       * **`Commit Full Profiles:`** Commits the profiles irrespective of the selected Metadata.
-   3. **`Commit Options For PermissionSets:`**&#x54;his option allows you to choose to commit settings for permission set operation.
+   3. **`Commit Options for PermissionSets:`** This option allows you to choose to commit settings for permission set operation.
       * **`Commit Access Settings for selected metadata (PermissionSets ONLY):`** Commits the permission of the metadata members for permission set metadata you have worked on or modified.
    4. **`Remove IP Ranges:`** This removes the IP range from your profile/permissionsets when committing them.
-   5. **`Remove User Permissions:`**&#x54;his removes the user permissions from your profile or permissionsets when committing them. By default, it applies to profiles and not permissionsets.Important Point to Note:
+   5. **`Remove User Permissions:`** This removes the user permissions from your profile or permissionsets when committing them. By default, it applies to profiles and not permissionsets.\
+      \
+      **Important Points to Note:**
       * Only if both the profile and permissionsets files are selected for commit will the **`Remove User Permissions`** checkbox appear.
       * By default, **`Remove User Permissions`** only applies to profiles, not permissionsets.
       * If you choose the **`Commit Options for PermissionSet`** option, the **`Remove User Permissions`** checkbox is accessible.
       * If you check the **`Remove User Permissions`** checkbox without selecting the **`Commit Options for PermissionSets`** checkbox, the Remove User Permissions only applies to profiles, not permissionsets.
    6. **`Ignore Missing Visibility Settings:`** With this option, differences in visibility settings between the source and destination orgs will not cause the deployment to fail. ARM will compare the source and destination orgs and keep only the common settings between both orgs.\
-      Important Note**Standard fields** are not supported for **Ignore Missing Visible Settings**.
+      \
+      **Important Note:**\
+      **Standard fields** are not supported for **Ignore Missing Visible Settings**.\
+
    7. **`Ignore installed components:`** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files when the remaining components are deployed.
 3. **`Apply Search and Substitute Rules:`** If you created search and substitute rules to define custom find and replace rules which ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, that rule can be found here.
 
@@ -212,3 +217,24 @@ Directly commit to your Version Control System without extra validations. Differ
 8. Click **`Finish`**. View your recently created EZ-Commit in the [Commits](commits-summary.md) screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (1060).png" alt="" width="563"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** For Non-DX Branches, if you wish to commit only the minimal metadata structure of a custom object, you can use the following XML template. This can be achieved by enabling the review artifact feature in AutoRABIT EZ-Commit. An inline IDE editor will be available, allowing you to adjust the XML as needed (ensure that the XML remains deployable).
+
+**Sample Minimal XML Format for a Custom Object:**
+
+\<?xml version="1.0" encoding="UTF-8"?>\
+\<CustomObject xmlns="[http://soap.sforce.com/2006/04/metadata](http://soap.sforce.com/2006/04/metadata)">\
+\<deploymentStatus>Deployed\</deploymentStatus>\
+\<label>Book\</label>\
+\<nameField>\
+\<label>Book Name\</label>\
+\<type>Text\</type>\
+\</nameField>\
+\<pluralLabel>Books\</pluralLabel>\
+\<sharingModel>ReadWrite\</sharingModel>\
+\</CustomObject>
+
+If the same object already exists in the target branch or org and you attempt to edit it, you may encounter a "no modifications" popup. This approach is applicable only for creating brand-new objects.
+{% endhint %}
+

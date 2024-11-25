@@ -8,7 +8,7 @@
 
 ### New Rules
 
-1. **Rule Name: **_**“Comment All Hardcoded Values”**_\
+1. **Rule Name:&#x20;**_**“Comment All Hardcoded Values”**_\
    \
    **Category**: New APEX rule in CodeScan\
    \
@@ -25,7 +25,7 @@
    \
    **Detail**: In Salesforce's Spring '24 release, the null-coalescing operator has been introduced in Apex. This rule will identify where this operator could be used but isn’t being utilized.\
    \
-   For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon\_apex\_NullCoalescingOperator.htm). \
+   For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_NullCoalescingOperator.htm). \
    \
 
 3. **Rule Name: “**_**Use Accessibility Attributes”**_\
@@ -51,11 +51,7 @@
    \
    **Detail**: Removing inactive UNMANAGED workflow rules will streamline workflow processes, reduce confusion among users, and improve system performance. This action leads to a cleaner and more efficient Salesforce instance. Further, removing inactive UNMANAGED workflow rules helps declutter the Salesforce environment, making it easier for administrators and users to navigate and manage active workflows effectively.
 
-<div align="left" data-full-width="false">
-
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 

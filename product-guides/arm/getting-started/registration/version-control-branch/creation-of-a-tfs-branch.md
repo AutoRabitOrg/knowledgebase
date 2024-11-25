@@ -9,7 +9,7 @@
 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677743406990.png" alt=""><figcaption></figcaption></figure>
-5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`**field.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
+5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`**&#x66;ield.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
 6. Select your **`Credential`** from the drop-down field.
 7. Under the **`Target URL`** field, do the following:
    1. The **`Repository`** field is auto-filled.

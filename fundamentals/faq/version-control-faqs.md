@@ -220,7 +220,7 @@ To avoid this, contact your admin to select the **Skip Mappings** checkbox under
 
 ## How can I commit restricted 'Profile User Permissions'? <a href="#how-can-i-commit-restricted-profile-user-permissions" id="how-can-i-commit-restricted-profile-user-permissions"></a>
 
-Due to limitations from Salesforce, **User Permissions** set to **`False`** cannot be retrieved via **Metadata API** call. Hence, those changes are not displayed under the **File Diff** report in **EZ-Commit** for **Profiles**. This is an expected behavior. For more information on the Profile Metadata, click [here](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_profile.htm?q=profile).
+Due to limitations from Salesforce, **User Permissions** set to **`False`** cannot be retrieved via **Metadata API** call. Hence, those changes are not displayed under the **File Diff** report in **EZ-Commit** for **Profiles**. This is an expected behavior. For more information on the Profile Metadata, click [here](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm?q=profile).
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-AFEGV45F.png" alt=""><figcaption></figcaption></figure>
 
@@ -249,11 +249,11 @@ This is not an ARM issue but rather an expected behavior from Git.\
 Perform the following actions outside of ARM to determine whether the issue stems from ARM or Git:
 
 1. Take a local clone of the repository and then checkout of that branch using the command below:\
-   _**git checkout \<branchname>**_
+   &#xNAN;_**git checkout \<branchname>**_
 2. Cherry-pick merge the revision by executing the command in the applying merge log which is as shown below:\
-   _**git cherry-pick < revision > -n --strategy recursive --strategy-option ignore-cr-at-eol**_
+   &#xNAN;_**git cherry-pick < revision > -n --strategy recursive --strategy-option ignore-cr-at-eol**_
 3. Check the results for the modified files by running the command below:\
-   _**git status**_
+   &#xNAN;_**git status**_
 
 Compare the results with the changes in the ARM file. If the results match the changes in the ARM file, then we can conclude that this is Git behavior. If the results do not match, contact the AutoRABIT support team at support@autorabit.com so we can assist you further.
 

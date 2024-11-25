@@ -3,14 +3,14 @@
 ### API Specification <a href="#api-specification" id="api-specification"></a>
 
 * **Request Endpoint**: `https://<domain>auditlogs.autorabit.com/logs/audit_logs`\
-  _For example: https://testauditlogs.autorabit.com/logs/audit\_logs_
+  &#xNAN;_&#x46;or example: https://testauditlogs.autorabit.com/logs/audit\_logs_
 * **Request Type**: `GET`
 * **Request Query String Parameters**:
   * **startTime**=**YYYY-MM-DDThh:mm:ss** (this is optional; if not specified, the current day will be presumed)\
-    _For example: 2021-03-14T1000:00_
+    &#xNAN;_&#x46;or example: 2021-03-14T1000:00_
   * **maxResults**=**1000** (optional, default value is 1000)
   * **eventType**=**event1, event2** (this is optional, however, if not specified it will load all the events)\
-    _For example: eventType=DEPLOYMENT, DATALOADERPRO will load events for DEPLOYMENT and DATALOADERPRO respectively._
+    &#xNAN;_&#x46;or example: eventType=DEPLOYMENT, DATALOADERPRO will load events for DEPLOYMENT and DATALOADERPRO respectively._
 * **Request Headers**:
   * **Content-Type**: application/json
   * **Authorization**: Your Bearer token

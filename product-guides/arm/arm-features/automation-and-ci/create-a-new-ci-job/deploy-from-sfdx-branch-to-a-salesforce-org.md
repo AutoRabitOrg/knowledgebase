@@ -135,7 +135,7 @@ This section is about deploying or validating the above package onto a different
 
 6. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 7. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
-8. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.
+8. **Run Tests Based On Changes—**&#x54;his option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**&#x63;heckbox.
 
 {% hint style="info" %}
 **Important Notes:**

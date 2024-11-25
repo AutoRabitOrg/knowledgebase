@@ -83,7 +83,7 @@ To add the VAULT application to Okta:
 <figure><img src="../../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 18. Now, login into your **VAULT** account.
-19. Hover your mouse over the Setting, go to the **SSO Configuration** section**.**
+19. Hover your mouse over the Setting, go to the **SSO Configuration** sectio&#x6E;**.**
 20. &#x20;Give a name for the SSO configuration and select how you would like to configure the metadata
 
     * For **Metadata URL**, you need to enter the URL link that you captured earlier (Refer to _Step 17_)

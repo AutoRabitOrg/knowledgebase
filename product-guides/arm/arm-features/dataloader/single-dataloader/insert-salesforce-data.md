@@ -8,7 +8,7 @@ The following articles describe using the **Single Dataloader** to insert data i
 
 <figure><img src="../../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Choose your **`Salesforce Org`** and your org **Environment** (_Production_ or _Development e_dition, _Sandbox_, or _Pre-Release_).
+4. Choose your **`Salesforce Org`** and your org **Environment** (_Production_ or _Development &#x65;_&#x64;ition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch Objects`** to fetch all the objects from your Salesforce org.
 

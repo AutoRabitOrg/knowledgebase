@@ -6,7 +6,7 @@ This article will guide you through how to run the code analysis manually using 
 
 To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, first make sure you have:
 
-* **Salesforce CLI** installed. Click [HERE](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_setup.meta/sfdx\_setup/sfdx\_setup\_install\_cli.htm) to download the **Salesforce CLI** and its dependencies.
+* **Salesforce CLI** installed. Click [HERE](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm) to download the **Salesforce CLI** and its dependencies.
 * Java 17
 * NodeJS 18
 
@@ -36,7 +36,7 @@ Project keys differ from project to project as the **organization** and **projec
 3. This will start the analysis directly on the [CodeScan cloud](https://www.codescan.io/products/cloud/).
 4. To learn how to generate a **Security Token**, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
 5. If you want to run the analysis in [CodeScan Self-Hosted](https://www.codescan.io/products/self-hosted/), [CodeScan Cloud EU](https://app-eu.codescan.io/), or [CodeScan Cloud AUS](https://app-aus.codescan.io/), then make the following changes in the command:
-   * Add _**--server <**Server Name**>**_&#x20;
+   * Add _**--server <**&#x53;erver Nam&#x65;**>**_&#x20;
    * Replace **Project key**
    * Replace **Organization key**
    * Replace **Token**

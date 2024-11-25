@@ -29,7 +29,7 @@ The first step is to install and configure Consul on Ubuntu 18.04.
 
 1. Start by navigating to the [Consul webpage](https://www.consul.io/) and clicking on the **Download** icon.
 2. The browser then takes you to the Download page with all the available packages. Search for the Linux section and right-click on the 32 or 64-bit version. Copy the link location, as you will need it in the next step.
-3. Open the terminal (**Ctrl**+**Alt**+**T**) and use the **wget** command to download the Consul package: **wget** [https://releases.hashicorp.com/consul/1.6.1/consul\_1.6.1\_linux\_amd64.zip](https://releases.hashicorp.com/consul/1.6.1/consul\_1.6.1\_linux\_amd64.zip)
+3. Open the terminal (**Ctrl**+**Alt**+**T**) and use the **wget** command to download the Consul package: **wget** [https://releases.hashicorp.com/consul/1.6.1/consul\_1.6.1\_linux\_amd64.zip](https://releases.hashicorp.com/consul/1.6.1/consul_1.6.1_linux_amd64.zip)
 4. Next, unzip the package with the command: **unzip consul\_1.6.1\_linux\_amd64.zip**Note:To download unzip software, use the command: **sudo apt install unzip –y**.
 5. Then, move the installation package by typing the following command: **sudo mv consul /usr/bin**
 6. End by verifying the installation with the command: **consul**
@@ -104,7 +104,7 @@ With Consul in place, move on to installing Vault on your Ubuntu 18.04 system.
 
 <figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
 
-3. Using the wget command, download the package by pasting the link location copied in the previous step: **wget** [https://releases.hashicorp.com/vault/1.2.3/vault\_1.2.3\_linux\_amd64.zip](https://releases.hashicorp.com/vault/1.2.3/vault\_1.2.3\_linux\_amd64.zip)
+3. Using the wget command, download the package by pasting the link location copied in the previous step: **wget** [https://releases.hashicorp.com/vault/1.2.3/vault\_1.2.3\_linux\_amd64.zip](https://releases.hashicorp.com/vault/1.2.3/vault_1.2.3_linux_amd64.zip)
 4. Next, unzip the package using the following command: **unzip vault\_1.2.3\_linux\_amd64.zip**
 5. Then, move the package to the **/usr/bin** directory: **mv vault /usr/bin**
 6. Check the installation using the following command: **vault**
@@ -226,7 +226,7 @@ As you have already installed Consul to serve as the back-end storage, you’ll 
 3. To change its status, you need three (3) keys you can find by running the command: **vault operator init**
    * The terminal will return **five (5) Unseal Keys** as well as an **Initial Root Token**. Also, it explains that anytime the Vault package is re-sealed, restarted, or stopped, you will need to supply at least three (3) of these keys.
    * If you do not provide the specified keys, Vault will remain sealed. Therefore, copy all five keys and paste them into a separate file.
-4. Once you have at least 3 unseal keys, run the command**: vault operator unseal**
+4. Once you have at least 3 unseal keys, run the comman&#x64;**: vault operator unseal**
 5. Copy and paste the first key and hit **Enter**.
 6. Repeat the same procedure for Unseal Key 2 and 3.
 7. The last step to unseal Vault is to run the following command with the Initial Root Token (listed with the Unseal Keys): **vault login \[root\_token]**

@@ -38,4 +38,4 @@ To migrate custom setting data from one Salesforce Org to another, follow the st
 11. Click on the **Run** button to run the current template on your destination org.
 12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
 13. To use the current template as the post-deployment during [CI/CD](https://www.autorabit.com/blog/drive-your-business-faster-why-automated-ci-cd-matters/), select the **Migrate Custom Setting Data** checkbox under the **Post Deployment Steps** section. This is optional.
-14. Click **Run**. For a detailed summary report of the operation carried out, please check the **View History** page**.**
+14. Click **Run**. For a detailed summary report of the operation carried out, please check the **View History** pag&#x65;**.**

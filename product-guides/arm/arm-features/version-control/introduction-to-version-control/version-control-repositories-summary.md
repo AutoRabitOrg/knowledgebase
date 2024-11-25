@@ -76,7 +76,7 @@ For each branch, view the following details:
 <figure><img src="../../../../../.gitbook/assets/image (1037).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Branch Name:`** Name of the branch assigned.
-2.  **`Branch Settings:`**This option allows you to update your branch configuration, which means:
+2.  **`Branch Settings:`**&#x54;his option allows you to update your branch configuration, which means:
 
     * you can add your branch to one of the standard branch types _(development, integration, quality assurance, production, etc.)_
     * configure your parent branch

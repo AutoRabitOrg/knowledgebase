@@ -41,11 +41,7 @@ Component details are listed in their corresponding sections within this documen
     Expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components. This new set expands our list of LWC rules significantly. This library is comprised of Salesforce’s official ESLint plugin, allowing CodeScan to analyze LWC code more effectively.  Detailed documentation is available at [https://github.com/salesforce/eslint-plugin-lwc|https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc|https:/github.com/salesforce/eslint-plugin-lwc)\
 
 
-    <div align="center">
-
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-    </div>
+    <div align="center"><figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 **NOTE**: These following four rules were **not** added to the CodeScan library:
@@ -104,7 +100,7 @@ Component details are listed in their corresponding sections within this documen
    \
    We recognize that using direct \<script> tags in components or pages can pose a security risk by increasing the likelihood of cross-site scripting (XSS) attacks.\
    \
-   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm).\
+   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_visualforce.htm).\
    \
    Considering both of these items together, we recognize that there was limitation on this rule where customers were getting violations flagged as false positives. This enhancement involves implementing Regex to detect the use of Lightning components within a \{{\<script>\}} tag in Visualforce pages. The rule \{{vf:AvoidJavaScriptScriptlets\}} should not trigger a violation if only Lightning components are found. However, if any additional lines of non-Lightning code are detected within the script, a violation will be raised. This ensures the proper use of Lightning components while avoiding insecure or outdated practices in scriptlets.\
 
@@ -142,7 +138,7 @@ Component details are listed in their corresponding sections within this documen
     \
     Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true)\
     \
-    _This fix corrects the issue._\
+    &#xNAN;_&#x54;his fix corrects the issue._\
     \
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.\
 
@@ -184,7 +180,7 @@ Component details are listed in their corresponding sections within this documen
    \
    As per Salesforce documentation, when checking the Access for the inner query object, it allows to check by using \_\_c, but while making inner query on related Objects, it must be in plural and end with \_\_r.\
    \
-   _This fix corrects this issue._  In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
+   &#xNAN;_&#x54;his fix corrects this issue._  In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
    \
    We also added support for the SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
    \

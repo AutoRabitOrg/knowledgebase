@@ -7,7 +7,7 @@ To create this template, follow the below steps:
 3. Click on **Create New Template**.
 4. Go to the **Create** [**Unsupported Metadata Template**](./) tab.
 5. Give the template a **name** and a **short description** of it.
-6. Select the **Publish Communities** checkbox**.**
+6. Select the **Publish Communities** checkbo&#x78;**.**
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you'll need to add a site name for the auto-generated or your custom test case name. To add the site name, do the following:

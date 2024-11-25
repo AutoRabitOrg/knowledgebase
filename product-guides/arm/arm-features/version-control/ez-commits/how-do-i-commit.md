@@ -91,7 +91,7 @@ To view changes to Salesforce metadata, edit them, and see the impact to ensure 
 
 If you check the **Review Artifact** box and choose only commit options for Profile/PermissionSet, the artifacts option will be ignored. The flow will continue with only commit options for Profile/PermissionSet.
 
-*   Under the **`Perform`**section, you have different options:
+*   Under the **`Perform`**&#x73;ection, you have different options:
 
     1. **`Validation of Changes (Before Commit):`** ARM allows performing a validation deployment before committing the changes. This command creates the validation deployment without committing any changes to the repository. If the deployment is successful, the commit is executed.
     2. **`Commit (Without Validation):`** Directly commit to your Version Control System without extra validations.
@@ -115,7 +115,7 @@ If you check the **Review Artifact** box and choose only commit options for Prof
 The next screen will list the metadata types and their corresponding members. You will find 3-4 tabs as detailed below:
 
 1. **`All Metadata Components:`** All metadata components available for your source org are listed here. Select the components you want to commit to the Version Control Branch.
-2. **`Deleted:`**ARM compares the change with the Source Org and the Version Control Branch and lists all the available components. If you want to delete those components from the branch while committing, you can select those components in this tab.
+2. **`Deleted:`**&#x41;RM compares the change with the Source Org and the Version Control Branch and lists all the available components. If you want to delete those components from the branch while committing, you can select those components in this tab.
 
 {% hint style="info" %}
 **Important Consideration:** If you delete any metadata with permissions on any profile/permissionsets, then all the profiles and permissionsets associated with that metadata are also updated.
@@ -134,7 +134,7 @@ The next screen is displayed based on your commit process selection (prevalidate
 ARM allows performing a validation deployment before actually committing the changes.
 
 1. Under the **`Validation Report`** section, you can:
-   1. **`Generate Diff Report at current Head:`**Select this option to auto-generate a code difference report upon commit completion.Important Note:In some scenarios, this option is selected by default. This usually occurs if you set the criteria for the commit process globally, which enables you to generate a Diff Report by default. Your commit criteria are under the **`My Account > Commit Validation - Approval Settings`** section. However, remember that once the criteria is set, the commit is automatically rejected if you deselect the **`Generate Diff Report`** checkbox.
+   1. **`Generate Diff Report at current Head:`**&#x53;elect this option to auto-generate a code difference report upon commit completion.Important Note:In some scenarios, this option is selected by default. This usually occurs if you set the criteria for the commit process globally, which enables you to generate a Diff Report by default. Your commit criteria are under the **`My Account > Commit Validation - Approval Settings`** section. However, remember that once the criteria is set, the commit is automatically rejected if you deselect the **`Generate Diff Report`** checkbox.
    2. **`Run Static Code Analysis:`** You can initiate a [Static Code Analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Like **`Generate Diff Report at current HEAD`**, this option is auto-selected by default if the criteria are set globally (under the **`My Account > Commit Validation - Approval Settings`** section).
       *   For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
 
@@ -171,13 +171,13 @@ ARM allows performing a validation deployment before actually committing the cha
        <figure><img src="../../../../../.gitbook/assets/image (1058).png" alt=""><figcaption></figcaption></figure>
 2. Under the **`Validation Settings`**, users are prompted to enter the commit label, commit message (if any), and reviewer email ID(s) to send an email notification of the commit process performed and the difference reports. Additionally, there are various options you can configure:
    1. **`Commit WaveXMD Components:`** Upon selection, this checkbox allows you to choose the respective Wave XMD files belonging to the Wave dashboard metadata. This checkbox is hidden if the 'WaveDashboard' metadata type or its corresponding members are not picked.
-   2. **`Commit Options for Profile:`**This option lets you choose to commit settings for a full profile operation.
+   2. **`Commit Options for Profile:`**&#x54;his option lets you choose to commit settings for a full profile operation.
       * **`Commit Access Settings for selected metadata (Profiles ONLY):`** This allows you to perform the commit operation based only on the profiles available for the selected metadata.
       * **`Commit Full Profiles:`** Commits the profiles irrespective of the selected Metadata.
-   3. **`Commit Options For PermissionSets:`**This option allows you to choose to commit settings for permission set operation.
+   3. **`Commit Options For PermissionSets:`**&#x54;his option allows you to choose to commit settings for permission set operation.
       * **`Commit Access Settings for selected metadata (PermissionSets ONLY):`** Commits the permission of the metadata members for permission set metadata you have worked on or modified.
    4. **`Remove IP Ranges:`** This removes the IP range from your profile/permissionsets when committing them.
-   5. **`Remove User Permissions:`**This removes the user permissions from your profile or permissionsets when committing them. By default, it applies to profiles and not permissionsets.Important Point to Note:
+   5. **`Remove User Permissions:`**&#x54;his removes the user permissions from your profile or permissionsets when committing them. By default, it applies to profiles and not permissionsets.Important Point to Note:
       * Only if both the profile and permissionsets files are selected for commit will the **`Remove User Permissions`** checkbox appear.
       * By default, **`Remove User Permissions`** only applies to profiles, not permissionsets.
       * If you choose the **`Commit Options for PermissionSet`** option, the **`Remove User Permissions`** checkbox is accessible.
@@ -196,10 +196,10 @@ ARM allows performing a validation deployment before actually committing the cha
 Directly commit to your Version Control System without extra validations. Different options to choose from include:
 
 1. **`Commit WaveXMD Components:`** When selected, this checkbox allows you to choose the respective WaveXMD files belonging to the wave dashboard metadata type and commit them to the target branch. This checkbox is hidden if the **'WaveDashboard'** metadata type or its corresponding members are not picked.
-2. **`Commit Options for Profile:`**This option lets you choose to commit settings for a full profile operation.
+2. **`Commit Options for Profile:`**&#x54;his option lets you choose to commit settings for a full profile operation.
    * **`Commit Access Settings for selected metadata(Profiles Only): This allows`** you to perform the commit operation based on the profiles available only for the selected metadata.
    * **`Commit Full Profiles:`** Commit the profiles irrespective of the selected metadata.
-3. **`Commit Options For PermissionSets:`**This option allows you to choose to commit settings for a permission set operation.
+3. **`Commit Options For PermissionSets:`**&#x54;his option allows you to choose to commit settings for a permission set operation.
    * **`Commit Access Settings for selected metadata (PermissionSets Only):`** Commits the permissions of the metadata members for permission sets metadata you have worked on or modified.
 4. **`Remove IP Ranges:`** This removes the IP range from your profile/permissionsets when committing them.
 5. **`Remove User Permissions:`** This removes the user permissions from your profile or permissionsets when committing them. By default, it applies to profiles and not permissionsets.Important Point to Note:

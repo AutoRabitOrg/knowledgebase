@@ -140,7 +140,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 
 4. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 5. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
-6. **Run Tests Based On Changes—**This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**checkbox.
+6. **Run Tests Based On Changes—**&#x54;his option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"**&#x63;heckbox.
 
 {% hint style="info" %}
 **Important Notes:**
@@ -238,7 +238,7 @@ There are different ways to fetch the test cases:
 
 <figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt="" width="391"><figcaption></figcaption></figure>
 
-1.  **TAF Labels:**The test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
+1.  **TAF Labels:**&#x54;he test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
 
     * **Stop Deployment if Test cases fail to compile:** This prevents the deployment to proceed if any errors/warnings occur during running the test cases.
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
@@ -246,7 +246,7 @@ There are different ways to fetch the test cases:
 
 
     <figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
-2.  **Version Control:**The test cases committed to a branch in version control are displayed.
+2.  **Version Control:**&#x54;he test cases committed to a branch in version control are displayed.
 
     * Select the **Version Control Repository** type.
     * Select the **Repository** and the **Branch**.&#x20;

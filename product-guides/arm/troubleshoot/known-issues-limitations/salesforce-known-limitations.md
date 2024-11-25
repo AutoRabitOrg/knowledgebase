@@ -10,9 +10,9 @@ This article summarizes Salesforce's known issues and limitations that AutoRABIT
    **Ans:** This is a Salesforce limitation that creates duplicate list views while performing either Selective or Full Deployment. Salesforce's R\&D team is currently working on addressing this issue.
 4. While deploying controlled picklist fields with altered picklist values, I am getting an error: **"control field "XXXXXXXX" is not found"**\
    **Ans:** This is a known limitation from Salesforce.\
-   **Reference:** [https://trailblazer.salesforce.com/issues\_view?id=a1p3A0000003eAfQAI\&title=deploying-controlled-picklist-fields-with-altered-picklist-values-is-failing-with-error-control-field-xxxxxxxx-is-not-found](https://trailblazer.salesforce.com/issues\_view?id=a1p3A0000003eAfQAI\&title=deploying-controlled-picklist-fields-with-altered-picklist-values-is-failing-with-error-control-field-xxxxxxxx-is-not-found)
+   **Reference:** [https://trailblazer.salesforce.com/issues\_view?id=a1p3A0000003eAfQAI\&title=deploying-controlled-picklist-fields-with-altered-picklist-values-is-failing-with-error-control-field-xxxxxxxx-is-not-found](https://trailblazer.salesforce.com/issues_view?id=a1p3A0000003eAfQAI\&title=deploying-controlled-picklist-fields-with-altered-picklist-values-is-failing-with-error-control-field-xxxxxxxx-is-not-found)
 5. While deploying picklist fields with empty values in translations, the deployment is successful; but any blank values are ignored and not persisted in the destination org. This is a known issue from Salesforce, and the Salesforce team is working to resolve it.\
-   **Reference:** [https://trailblazer.salesforce.com/issues\_view?id=a1p3A000000KRWiQAO\&title=unable-to-update-translation-record-with-blank-null-value-via-metadata-api](https://trailblazer.salesforce.com/issues\_view?id=a1p3A000000KRWiQAO\&title=unable-to-update-translation-record-with-blank-null-value-via-metadata-api)
+   **Reference:** [https://trailblazer.salesforce.com/issues\_view?id=a1p3A000000KRWiQAO\&title=unable-to-update-translation-record-with-blank-null-value-via-metadata-api](https://trailblazer.salesforce.com/issues_view?id=a1p3A000000KRWiQAO\&title=unable-to-update-translation-record-with-blank-null-value-via-metadata-api)
 6. A report with multiple subfolders was created by the user in Salesforce, and this report was subsequently added to **Skip Members** in ARM. Next, a job was created and the **Do Not Include Skip Members** check box was selected. After the job was finished, it was discovered that the report had not been skipped as anticipated. Analysis revealed that Salesforce is not displaying information about the parent folder. So, ARM cannot retrieve the right file path for the reports contained in the sub-folders.
 
 {% hint style="info" %}
@@ -23,14 +23,14 @@ This article summarizes Salesforce's known issues and limitations that AutoRABIT
 {% endhint %}
 
 7. It is not possible to deploy the removal of **Field dependency** values from one org to another because **Field Dependencies** cannot be removed via **Metadata API**. This is expected behavior and a known limitation from Salesforce.\
-   **Reference:** [https://developer.salesforce.com/docs/atlas.enus.api\_meta.meta/api\_meta/meta\_field\_types.htm#meta\_type\_valueset](https://developer.salesforce.com/docs/atlas.enus.api\_meta.meta/api\_meta/meta\_field\_types.htm#meta\_type\_valueset)
+   **Reference:** [https://developer.salesforce.com/docs/atlas.enus.api\_meta.meta/api\_meta/meta\_field\_types.htm#meta\_type\_valueset](https://developer.salesforce.com/docs/atlas.enus.api_meta.meta/api_meta/meta_field_types.htm#meta_type_valueset)
 8. A deployment in ARM might fail with the following error: **\`UNKNOWN\_EXCEPTION: An unexpected error occurred. Please include this ErrorId if you contact support.\`** This API exception is thrown by Salesforce and not by AutoRABIT. We don't have any more information about these errors. Please get in touch with **Salesforce Customer Support** and provide them with the deployment **Async Request ID** and the error message for further assistance.
 9. If the **Flow Entry** criteria formulas are failing to **Commit/Deploy**, we recommend updating the **Salesforce API** **version** to **55.0** or later in ARM, then re-perform the commit/deployment, because the entry-related attributes for the **Flow** metadata were introduced in the **API version 55.0**.\
    Here's a list of the entry attributes only present in **API 55.0** from Flow metadata documentation:
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-10. **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm)
+10. **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm)
 
     To update the Salesforce API version, go to **Admin** > **My Account** > **Salesforce Settings**.
 
@@ -93,7 +93,7 @@ Sample command: sfdx force:source:deploy -m ApexClass -u xxx@xxx.xxx -l RunLocal
 
 Use the following links for reference:
 
-[https://issues.salesforce.com/issue/a028c00000gAzEZAA0/error-running-%20forcesourcedeploy-invalid\_operation-testlevel-of-notestrun-cannot-be-used-in-%20production-organizations-occurs](https://issues.salesforce.com/issue/a028c00000gAzEZAA0/error-running-%20forcesourcedeploy-invalid\_operation-testlevel-of-notestrun-cannot-be-used-in-%20production-organizations-occurs)
+[https://issues.salesforce.com/issue/a028c00000gAzEZAA0/error-running-%20forcesourcedeploy-invalid\_operation-testlevel-of-notestrun-cannot-be-used-in-%20production-organizations-occurs](https://issues.salesforce.com/issue/a028c00000gAzEZAA0/error-running-%20forcesourcedeploy-invalid_operation-testlevel-of-notestrun-cannot-be-used-in-%20production-organizations-occurs)
 
 [https://github.com/forcedotcom/cli/issues/2105](https://github.com/forcedotcom/cli/issues/2105)
 
@@ -110,7 +110,7 @@ AutoRABIT is committed to delivering an exceptional customer experience. We cont
      * When fetching parents and child records that are linked to the master objects and
      * When extracting data of a particular object with all the linked fields. Since there are millions of records, there are more chances of the query being timed out. Therefore, it is highly recommended to create two or more jobs rather than creating a single job; apply proper filters on the master objects and select a minimum multiple reference option during execution.
 2. Salesforce does not retrieve Validation rules from destination org for a particular object if the same object is duplicated and is available in **Deleted objects** list.
-3. Salesforce restricts access to create an **External Id** for the following objects in AutoRABIT. These listed objects are not supported in **Dataloader Pro **_**(**for more details, refer_ _to_ [_How to perform Dataloader Pro Operation_](../../arm-features/dataloader/dataloader-pro.md), step 6_**)**_ and **Test Environment Setup **_**(**for more details, refer to_ [_Create a New Test Environment Setup_](../../arm-features/dataloader/test-environment-setup.md)_, step 5**)**_.
+3. Salesforce restricts access to create an **External Id** for the following objects in AutoRABIT. These listed objects are not supported in **Dataloader Pro&#x20;**_**(**&#x66;or more details, refer_ _to_ [_How to perform Dataloader Pro Operation_](../../arm-features/dataloader/dataloader-pro.md), step &#x36;_**)**_ and **Test Environment Setup&#x20;**_**(**&#x66;or more details, refer to_ [_Create a New Test Environment Setup_](../../arm-features/dataloader/test-environment-setup.md)_, step &#x35;**)**_.
 
 | ActionLinkGroupTemplate | ActivityHistory       | AccountTeamMember      | AggregateResult      | EmailStatus              | DuplicateRecordItem             | DandBCompany             |
 | ----------------------- | --------------------- | ---------------------- | -------------------- | ------------------------ | ------------------------------- | ------------------------ |

@@ -39,13 +39,13 @@ Further details are within the following article: [https://knowledgebase.autorab
 3. **Enhancement to rule: “Validation Rule Must Reference Product”**\
    This existing CodeScan rule was enhanced to be compatible with SFDX.\
    \
-   _Please note that this rule update is part of a larger initiative where we are making “validationRules of CustomObject” Compatible with SFDX._\
+   &#xNAN;_&#x50;lease note that this rule update is part of a larger initiative where we are making “validationRules of CustomObject” Compatible with SFDX._\
    \
    All Metadata rules need to be checked that they support both metadata API and SFDX formats of the issue they were built to find.\
    \
    Metadata pulled with SFDX has a different structure than Metadata pulled with Salesforce’s Metadata API. CodeScan can scan this different structure with some additions to the sf-meta suffixes. However, we need to make sure that the differences are covered within the types of metadata that have these differences. For example, the Object metadata contains all field metadata when pulled from the metadata API. When this is pulled with SFDX, the object and field metadata are separate.\
    \
-   See the following SF article for details of these differences:[https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link)NOTE: This rule is only applicable to nCino customers.&#x20;
+   See the following SF article for details of these differences:[https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|smart-link)NOTE: This rule is only applicable to nCino customers.&#x20;
 4. **Enhancement to rule “Misuse of Assert Class”**\
    This CodeScan rule was introduced in Self-Hosted version 24.0.8.  It is comprised of several parameters. This enhancement ensures that a newly created instance is never null. \
    With the fix, a violation is now thrown at the line in bold. \

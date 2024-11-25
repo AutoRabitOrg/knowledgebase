@@ -31,7 +31,7 @@ We've added a new section called **`ALM Management`** to the **`Admin`** module 
 
        * **`ALM Name:`** Enter a name for your ALM connection.
        * **`ALM Type:`** Select **`JIRA`**.
-       * **`Access Type:`**Select one of the following:
+       * **`Access Type:`**&#x53;elect one of the following:
          * **`Standard:`** Add the **`ALM URL`** and specify your **`Credentials`**.
          * **`OAuth:`** Select the access type as **`OAuth`**, and click on **`Validate & Save`**. You will be redirected to the ALM's website to authenticate your credentials and grant permission.
 

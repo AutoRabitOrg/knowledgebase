@@ -9,7 +9,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (688).png" alt=""><figcaption></figcaption></figure>
 
-5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`**field.
+5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`**&#x66;ield.
 
 {% hint style="info" %}
 **Point to Note:** The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.

@@ -83,7 +83,7 @@ Set up the CodeScan application to provide necessary configuration information f
 Your connection id will be available in the **Metadata URL** generated inside CodeScan.
 
 **For example:** _Metadata URL_- https://app.codescan.io/\_codescan/saml2/metadata/OKTA-SAML\
-_Connection Id_: OKTA-SAML
+&#xNAN;_&#x43;onnection Id_: OKTA-SAML
 {% endhint %}
 
 9. On the same screen, in the **`Attribute Statements`** panel, add the following attributes (mandatory) and map to corresponding OKTA properties:

@@ -36,10 +36,10 @@ If users maintain an individual version control branch for every release, they m
 {% hint style="info" %}
 NOTE:
 
-1.  If a sub-user does not have access to the **"**SF ORG MGMT**"** page and the Skip Mapping option is not enabled for their profile, they will be unable to view the mapped Salesforce Orgs in EZ Commit, even if they have permission to access those Orgs.\
+1.  If a sub-user does not have access to the **"**&#x53;F ORG MGM&#x54;**"** page and the Skip Mapping option is not enabled for their profile, they will be unable to view the mapped Salesforce Orgs in EZ Commit, even if they have permission to access those Orgs.\
 
 
-    To resolve this issue, the admin must grant the sub-user access to the **"**SF ORG MGMT**"** page. This can be done by selecting the human icon in the screenshot below.
+    To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.

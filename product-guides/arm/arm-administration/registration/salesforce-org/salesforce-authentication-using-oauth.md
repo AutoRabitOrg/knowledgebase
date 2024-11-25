@@ -21,7 +21,7 @@ The **Salesforce** platform implements the **OAuth 2.0 Authorization Framework**
    * Enter meaningful names in the Connected App Name and API Name boxes.
    * Enter your email in the Contact Email box to receive messages from this application.
 6. Go to **`API (Enable OAuth Settings)`**, and select **`Enable OAuth Settings`**.
-   * In the **`Callback URL`** field, enter _https://\<ARM access URL>/oauth/\_callback_For example, _https://preview.autorabit.com/oauth/\_callback_\
+   * In the **`Callback URL`** field, enter _https://\<ARM access URL>/oauth/\_callbac&#x6B;_&#x46;or example, _https://preview.autorabit.com/oauth/\_callback_\
      Depending on which OAuth flow you use, this is typically the URL that a user’s browser is redirected to after successful authentication.
    * In the **Available OAuth Scopes** list, select the following items:
      * Access and manage your data (API)
@@ -33,7 +33,7 @@ The **Salesforce** platform implements the **OAuth 2.0 Authorization Framework**
    * On the page that opens, click the **`Edit`** button.
    * Under **`OAuth policies`**, select **`All users may self-authorize`** in the **`Permitted Users`** list, then click the **`Save`** button.
 9. Return to the **`Connected Apps`** list, and click the app you created.
-10. In the page that appears for your new connected app, in the **`API (Enable OAuth Settings)`**section:
+10. In the page that appears for your new connected app, in the **`API (Enable OAuth Settings)`**&#x73;ection:
     * Copy the **`Consumer Key`** value and paste it into a secure reference document of your choice. The Consumer Key is the _client\_id_.
     * Next to **`Consumer secret`**, click **`Click to reveal`**, copy the value that appears, and paste it into your secure reference document. The Consumer secret is the _client\_secret_.
 11. Open the _oauth.properties_ file in the _.rabit/org/oauth.properties_ directory and update the _client\_id_ and _client\_secret_ token during on-premise installation.

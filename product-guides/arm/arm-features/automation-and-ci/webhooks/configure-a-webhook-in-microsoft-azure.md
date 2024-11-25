@@ -11,7 +11,7 @@ One of the scenarios that you will be most familiar with is runbooks in [Azure A
 We can create a webhook in the Azure Portal or a runbook. This webhook generates a URI, a uniform resource identifier that looks like a URL. We can use this URI in any external system to start the runbook via HTTP POST action.
 
 For example:\
-_A developer writes an application that is running in Azure or anywhere with Internet access and when something happens, the URI is posted. Azure Automation will respond by executing the associated runbook._
+&#xNAN;_&#x41; developer writes an application that is running in Azure or anywhere with Internet access and when something happens, the URI is posted. Azure Automation will respond by executing the associated runbook._
 
 ## Create a Webhook API token from ARM&#x20;
 

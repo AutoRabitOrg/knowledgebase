@@ -7,18 +7,18 @@
 
 ### New Updates <a href="#new-updates" id="new-updates"></a>
 
-#### 1. User Registration Flow Enhanced for CodeScan Cloud <a href="#1-user-registration-flow-enhanced-for-codescan-cloud" id="1-user-registration-flow-enhanced-for-codescan-cloud"></a>
+#### 1. User Registration Flow Enhanced for CodeScan Cloud <a href="#id-1-user-registration-flow-enhanced-for-codescan-cloud" id="id-1-user-registration-flow-enhanced-for-codescan-cloud"></a>
 
 The user registration flow is now _enhanced_ for improved user experience in the CodeScan cloud by updating several options and removing others that no longer apply.
 
 * **Validate Email address-** The CodeScan team to allow users to register for a new CodeScan account using corporate email addresses only.
 * The users who attempt to sign up using an email domain not registered with us require approval from the CodeScan team. To simplify the approval process, it is recommended that you only invite persons whose email domains already exist with us.
 
-#### 2. SOQL/DML Rule Upgrade <a href="#2-soqldml-rule-upgrade" id="2-soqldml-rule-upgrade"></a>
+#### 2. SOQL/DML Rule Upgrade <a href="#id-2-soqldml-rule-upgrade" id="id-2-soqldml-rule-upgrade"></a>
 
 The existing CodeScan rule is now enhanced to verify if SOQL queries are in the loop. With this release, if a SOQL query is called in a loop in another method or class, the rule will now alert the users with information like _class name_, _method name_, and the _line number_ of the violation.
 
-#### 3. CodeScan IntelliJ plugin Upgrade <a href="#3-codescan-intellij-plugin-upgrade" id="3-codescan-intellij-plugin-upgrade"></a>
+#### 3. CodeScan IntelliJ plugin Upgrade <a href="#id-3-codescan-intellij-plugin-upgrade" id="id-3-codescan-intellij-plugin-upgrade"></a>
 
 The CodeScan IntelliJ plugin has been upgraded to the stable **6.1.4** version. This update improves the connection process with your server.
 
@@ -30,7 +30,7 @@ This release includes minor stability fixes and improvements for the CodeScan pl
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
-#### 19 April 2023 <a href="#19-april-2023" id="19-april-2023"></a>
+#### 19 April 2023 <a href="#id-19-april-2023" id="id-19-april-2023"></a>
 
 **(CodeScan v23.0.6)**
 
@@ -42,7 +42,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-#### 22 March 2023 <a href="#22-march-2023" id="22-march-2023"></a>
+#### 22 March 2023 <a href="#id-22-march-2023" id="id-22-march-2023"></a>
 
 **(CodeScan v23.0.5)**
 
@@ -51,13 +51,13 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the **`Custom Metadata components must have a description field`** rule. The user added the description field to their quality profile's metadata and implemented the aforementioned rule, yet the problem still persists (#[65227](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000104349078)).
 * Fixed an issue where the master scan was failing in the CodeScan application. The multiple scan running for the same environment caused the issue. (#[61134](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000098014584)).
 * Fixed an issue where the rule was missing the below case when permissions are checked through a local variable instance:\
-  **`{noformat}SObject objAcc;`**\
-  **`if (objAcc != null && objAcc.getSObjectType().getDescribe().isUpdateable()) {{noformat}`**\
+  &#xNAN;**`{noformat}SObject objAcc;`**\
+  &#xNAN;**`if (objAcc != null && objAcc.getSObjectType().getDescribe().isUpdateable()) {{noformat}`**\
   This case is now added to the rule.(#[58534](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095397001)).
 
 ***
 
-#### 15 March 2023 <a href="#15-march-2023" id="15-march-2023"></a>
+#### 15 March 2023 <a href="#id-15-march-2023" id="id-15-march-2023"></a>
 
 **(CodeScan v23.0.4)**
 
@@ -68,7 +68,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-#### 28 Feb 2023 <a href="#28-feb-2023" id="28-feb-2023"></a>
+#### 28 Feb 2023 <a href="#id-28-feb-2023" id="id-28-feb-2023"></a>
 
 **(CodeScan v23.0.3)**
 

@@ -11,4 +11,4 @@ To create this template, follow the below steps:
 5. Click the **Run** button to run the template on your destination org.
 6. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
 7. To use the current template as the post-deployment during [CI/CD](https://www.autorabit.com/blog/drive-your-business-faster-why-automated-ci-cd-matters/), select the **Enable Apex Triggers** checkbox under the **Post Deployment Steps** section. This is optional.
-8. Click **Run**. Please check the **View History** page for a detailed summary report of the operation carried out**.**
+8. Click **Run**. Please check the **View History** page for a detailed summary report of the operation carried ou&#x74;**.**

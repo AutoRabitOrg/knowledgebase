@@ -44,7 +44,7 @@ _Object Set 2: nFORCE\_\_Route\_Group\_\_c, nFORCE\_\_Group\_\_c_
     First, we pull data from Route based on the filter, and then as per the set-1, we will pull relations of Route Group with the help of the below queries.
 
     _Select Id from nFORCE\_\_Route\_Group\_\_c where nFORCE\_\_Parent\_Route\_\_c in (route id's based on filter applied)_\
-    _Select Id from nFORCE\_\_Route\_Group\_\_c where nFORCE\_\_Route\_\_c in (route id's based on filter applied)_\
+    &#xNAN;_&#x53;elect Id from nFORCE\_\_Route\_Group\_\_c where nFORCE\_\_Route\_\_c in (route id's based on filter applied)_\
     Next, if self-references exist on Route Group, we do retrieve those relations. In the same way, we do process set-2.
 
 In the second case, if Route Group has any other Route via the _nFORCE\_\_Parent\_Route\_\_c_ field other than the route that is picked as a part of the query applied, that will not be considered. But in case one, we do consider data from both _nFORCE\_\_Route\_\_c_ and _nFORCE\_\_Parent\_Route\_\_c_ fields.

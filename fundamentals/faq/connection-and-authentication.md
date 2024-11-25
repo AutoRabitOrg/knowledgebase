@@ -11,7 +11,7 @@ To use two-factor authentication in GitHub, you need to create a personal access
 
 1. **Short-term solution**: Disable support for CBC encryption ciphers. Follow the procedures below to disable weak ciphers:
    * Run the following command to list the ciphers: \
-     **- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
+     &#xNAN;**- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
    * Edit the file **- /etc/ssh/sshd\_config** and add what strong ciphers you want to have or place in this file as shown in the example below- **Ciphers aes128-ctr,aes192-ctr,aes256-ctr**
    * Now, restart your sshd service using the command:  **service sshd restart**
 2. **Long-term solution:** Enable the **TLS 1.3** protocol.

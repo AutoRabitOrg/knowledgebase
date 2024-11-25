@@ -82,8 +82,8 @@ You will need to replace the placeholder variables (in **bold**) in the env sect
 The branch names and comparisons are set by the following parameters:
 
 **`sonar.pullrequest.key`**: The pull request number\
-**`sonar.pullrequest.base`**: The comparison branch for pull request type branches\
-**`sonar.pullrequest.branch`**: The name of the branch
+&#xNAN;**`sonar.pullrequest.base`**: The comparison branch for pull request type branches\
+&#xNAN;**`sonar.pullrequest.branch`**: The name of the branch
 
 The conditionals in your script determine what triggered the build and by defining the branch type, name and target using [Bitbucket pipeline's built in variables](https://support.atlassian.com/bitbucket-cloud/docs/variables-and-secrets/), you can create a project that gives you visibility on your new code while allowing you to plan your refactoring effort.
 

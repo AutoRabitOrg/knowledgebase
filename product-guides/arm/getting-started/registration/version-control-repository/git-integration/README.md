@@ -60,7 +60,7 @@ To set up a GIT repository, ensure an account is created and configured at [GIT]
 5. Select the **AWS CodeCommit Repository** checkbox. ARM fetches data from the repository if the GIT gets hosted on **AWS (Amazon Web Services)**.
 6. Enter the name of the repository to display it locally.
 7. Paste the **`Repository URL`** that Git provides you.
-8. Choose the correct user's **`Credentials`** from the list. To create new credentials, click on the **`+`**icon.Note:Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
+8. Choose the correct user's **`Credentials`** from the list. To create new credentials, click on the **`+`**&#x69;con.Note:Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
 9. The **`Default Branch`** selection will be in disabled mode by default. Click the icon to fetch and list all the available branches on your remote repository.
 10. Select one of the default branches from the list.Note:Ensure the default branch is available in your remote repository with some files committed to it. If no file is available, create a README.txt file and add it to the repository.
 11. Once the registration is done, you can find the newly added repository on **`VC Repo's`** home page.

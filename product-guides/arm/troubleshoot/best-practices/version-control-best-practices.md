@@ -19,7 +19,7 @@
    * The chance of reaching governor limits with the full build is avoided
    * Skips the build initiation process if there are no metadata changes.
 5. Always select the **Prepare Destructive changes** in the **Build** section and **Run Destructive Changes** in the **Deploy** section to automatically delete metadata members from the destination based on the latest changes (to reflect deletion of metadata components) in a specific branch commit history.
-6. If you need to fetch only changes from a specific revision, then it is recommended to set the **Baseline revision** while creating a CI job or else all changes are fetched from base revision till head revision. **For ex-**If you set the **Baseline revision** to 9, then all changes from revision 10 till the head revision are fetched.
+6. If you need to fetch only changes from a specific revision, then it is recommended to set the **Baseline revision** while creating a CI job or else all changes are fetched from base revision till head revision. **For ex-**&#x49;f you set the **Baseline revision** to 9, then all changes from revision 10 till the head revision are fetched.
 
 ### Merge Functionality related <a href="#merge-functionality-related" id="merge-functionality-related"></a>
 

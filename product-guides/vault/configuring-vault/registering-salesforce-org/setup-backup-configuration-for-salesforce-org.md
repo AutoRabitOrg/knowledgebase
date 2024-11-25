@@ -84,7 +84,7 @@ Once you are done with selecting metadata types and objects (and their fields), 
 
 <figure><img src="../../../../.gitbook/assets/image (214).png" alt="" width="563"><figcaption></figcaption></figure>
 
-6. Keep the **`"Allow multiple backups to run in parallel"`** toggle to **`Yes`**. If you turn it off, the backup jobs will run sequentially, meaning that only the subsequent scheduled job will be initiated after one is finished. Additionally, deactivating this option will prevent the scheduled jobs from running concurrently with earlier scheduled backups that haven't finished. The backup status will indicate the **`"stopped"`**status of the recently scheduled jobs if the previously scheduled jobs are not completed.
+6. Keep the **`"Allow multiple backups to run in parallel"`** toggle to **`Yes`**. If you turn it off, the backup jobs will run sequentially, meaning that only the subsequent scheduled job will be initiated after one is finished. Additionally, deactivating this option will prevent the scheduled jobs from running concurrently with earlier scheduled backups that haven't finished. The backup status will indicate the **`"stopped"`**&#x73;tatus of the recently scheduled jobs if the previously scheduled jobs are not completed.
 
 <figure><img src="../../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 

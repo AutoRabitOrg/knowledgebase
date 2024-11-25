@@ -53,7 +53,7 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 6. Click **OK**, and return to ARM.
 {% endhint %}
 
-&#x20;    **`c. Add Manually:`**Manually configure your default Apex Test class.
+&#x20;    **`c. Add Manually:`**&#x4D;anually configure your default Apex Test class.
 
 5. On the next auto-populated screen, enter the **`Apex Test Class`** name and **`Apex Class/Trigger`** name in the respective fields. Mark the Apex class as default, and select the **`Default`** checkbox for such a test class.
 6. Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.

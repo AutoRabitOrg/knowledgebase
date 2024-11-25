@@ -98,7 +98,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. Repeat the steps for all other conflicted files in order to resolve them before you proceed to commit.
-12. You can find the conflicted files moved to the **Merged Files** section. Here **CR** indicates **Conflicted Resolved** files**, A** indicates **Added Files** to the destination branch and **M** denotes **Modified Files**.
+12. You can find the conflicted files moved to the **Merged Files** section. Here **CR** indicates **Conflicted Resolved** file&#x73;**, A** indicates **Added Files** to the destination branch and **M** denotes **Modified Files**.
 
 <figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="371"><figcaption></figcaption></figure>
 

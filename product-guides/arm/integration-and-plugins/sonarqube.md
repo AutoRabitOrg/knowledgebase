@@ -275,7 +275,7 @@ where:
 
 * CT = conditions that have been evaluated to 'true' at least once
 * CF = conditions that have been evaluated to 'false' at least once
-* LC = covered lines = lines_to_cover - uncovered\_lines
+* LC = covered lines = line&#x73;_&#x74;&#x6F;_&#x63;over - uncovered\_lines
 * B = total number of conditions
 * EL = total number of executable lines (`lines_to_cover`)
 

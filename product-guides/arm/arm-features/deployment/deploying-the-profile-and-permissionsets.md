@@ -11,7 +11,7 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 <figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. In the **`Profile/PermissionSet Manager`** screen, select the **`Salesforce orgs`** that need to be compared (max 3 Orgs).
-5.  Click on either the **`Get Profiles`** or the **`Get PermissionSets`**button.
+5.  Click on either the **`Get Profiles`** or the **`Get PermissionSets`**&#x62;utton.
 
     * **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
     * **`Get PermissionSets`** will list all available permission sets in Salesforce Orgs

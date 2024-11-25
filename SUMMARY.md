@@ -636,6 +636,7 @@
     * [Analysis Scope on CodeScan Cloud](product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud.md)
     * [Ignoring violations](product-guides/codescan/report-and-analysis/ignoring-violations.md)
     * [Importing Salesforce CLI Code Coverage](product-guides/codescan/report-and-analysis/importing-salesforce-cli-code-coverage.md)
+    * [Housekeeping](product-guides/codescan/report-and-analysis/housekeeping.md)
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)
   * [CodeScan Integration](product-guides/codescan/codescan-integration/README.md)

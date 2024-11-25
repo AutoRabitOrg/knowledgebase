@@ -12,7 +12,7 @@ CodeScan Self-Hosted now has two versions available to meet your operating syste
 
 **CodeScan version 24.1.1 Eagle Edition v2.0** (now compatible with _**SonarQube™ versions 10.1 to 10.6)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
-**CodeScan version 24.0.13 Tiger Edition v2.0** _(_now compatible with _**SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
+**CodeScan version 24.0.13 Tiger Edition v2.0** _(_&#x6E;ow compatible with _**SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
 
 [**Downloads & Compatibility Chart**](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-downloads-and-compatibility-chart)
 
@@ -55,7 +55,7 @@ The following matrix identifies the current versions of SonarQube™ supported f
 At [SonarSource.com](https://www.sonarsource.com/), find the latest compatible version with the CodeScan version you are using.
 
 {% hint style="info" %}
-**Note:** This [link](https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.6.92038.zip?\_gl=1\*fhgchu\*\_gcl\_au\*MjA5Mjk3NjYzNi4xNzIyMjY5Nzg1\*\_ga\*NjMyNjYxNTE5LjE3MjIyNjk3ODQ.\*\_ga\_9JZ0GZ5TC6\*MTcyMjI2OTc4My4xLjEuMTcyMjI3MDE3OS4xNC4wLjA.) will take you to the **SonarQube™ 9.9 LTA** download.&#x20;
+**Note:** This [link](https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.6.92038.zip?_gl=1*fhgchu*_gcl_au*MjA5Mjk3NjYzNi4xNzIyMjY5Nzg1*_ga*NjMyNjYxNTE5LjE3MjIyNjk3ODQ.*_ga_9JZ0GZ5TC6*MTcyMjI2OTc4My4xLjEuMTcyMjI3MDE3OS4xNC4wLjA.) will take you to the **SonarQube™ 9.9 LTA** download.&#x20;
 {% endhint %}
 
 #### CodeScan Zip File Download <a href="#codescan-zip-file-download" id="codescan-zip-file-download"></a>

@@ -44,7 +44,7 @@ _**For example,** you will need **Edit** and **Delete** permissions to edit or d
     * **`Deploment via Version Control:`** Select the template which is part of the version control branch. Such data is pulled from the version control and deployed to the destination.&#x20;
 
     <figure><img src="../../../../../.gitbook/assets/image (1352).png" alt=""><figcaption></figcaption></figure>
-6.  You can choose from _three additional deployment types_ when you select the **`Deployment From Version Control`**option.
+6.  You can choose from _three additional deployment types_ when you select the **`Deployment From Version Control`**&#x6F;ption.
 
     *   **`Entire Branch:`** All of the templates from the version control branch will be populated, and you can choose any of them or all.
 
@@ -57,7 +57,7 @@ _**For example,** you will need **Edit** and **Delete** permissions to edit or d
 
     <figure><img src="../../../../../.gitbook/assets/image (1355).png" alt=""><figcaption></figcaption></figure>
 
-    * **`Deployment via Version Control using Salesforce Org:`**The object configuration, such as _filters_, _applied mappings,_ and so on, will be picked up from the standard/community template chosen, which is part of version control. Based on the configurations, the data is pulled from the source org and later deployed to the destination environment.
+    * **`Deployment via Version Control using Salesforce Org:`**&#x54;he object configuration, such as _filters_, _applied mappings,_ and so on, will be picked up from the standard/community template chosen, which is part of version control. Based on the configurations, the data is pulled from the source org and later deployed to the destination environment.
 
     <figure><img src="../../../../../.gitbook/assets/image (1356).png" alt=""><figcaption></figcaption></figure>
 7. Select the template(s) from the populated templates list for the CI job process. Click on the **`template`**, select the **`template version`**. Repeat the step for more template selection. Use the **`Select All`** checkbox to select all the templates for deployment to be carried out. The template chosen will get listed under the **`Selected Versions`** tab.

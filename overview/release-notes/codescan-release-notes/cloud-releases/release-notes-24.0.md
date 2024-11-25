@@ -29,7 +29,7 @@ There are no new features associated with this release.
    \
    We recognize that using direct \<script> tags in components or pages can pose a security risk by increasing the likelihood of cross-site scripting (XSS) attacks. \
    \
-   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm). \
+   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_visualforce.htm). \
    \
    Considering both of these items together, we recognize that there was limitation on this rule where customers were getting violations flagged as false positives. This enhancement involves implementing Regex to detect the use of Lightning components within a \{{\<script>\}} tag in Visualforce pages. The rule \{{vf:AvoidJavaScriptScriptlets\}} should not trigger a violation if only Lightning components are found. However, if any additional lines of non-Lightning code are detected within the script, a violation will be raised. This ensures the proper use of Lightning components while avoiding insecure or outdated practices in scriptlets.
 
@@ -86,14 +86,14 @@ There are no new rules associated with this release.
     \
     Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true) \
     \
-    _This fix corrects the issue._ \
+    &#xNAN;_&#x54;his fix corrects the issue._ \
     \
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.
 
 <figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252Fgk3EzOy7F9wH89TPNL5L%252Fimage.png%3Falt%3Dmedia%26token%3D7f2321b2-cea7-4f40-8092-18fd7a692d7f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82c548e2&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 \
-![](https://knowledgebase.autorabit.com/\~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FDlYCkab1cVQk7Qig0moW%252Fimage.png%3Falt%3Dmedia%26token%3D9a1f95db-0724-4930-8b4a-4880b725efdf\&width=768\&dpr=4\&quality=100\&sign=86914d0b\&sv=1)\
+![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FDlYCkab1cVQk7Qig0moW%252Fimage.png%3Falt%3Dmedia%26token%3D9a1f95db-0724-4930-8b4a-4880b725efdf\&width=768\&dpr=4\&quality=100\&sign=86914d0b\&sv=1)\
 
 
 3. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives). \
@@ -129,7 +129,7 @@ Per Salesforce, when checking the Access for the inner query object, it allows y
 
 Further, we added SYSTEM\_MODE support to the rule enhancement via a rule parameter (where rules admins can choose true or false to include SYSTEM\_MODE). &#x20;
 
-For additional info on Object permission Checks and SYSTEM\_MODE, refer to: [https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https:/developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link) &#x20;
+For additional info on Object permission Checks and SYSTEM\_MODE, refer to: [https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|https:/developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|smart-link) &#x20;
 
 ### Fixes&#x20;
 
@@ -290,7 +290,7 @@ CodeScan is in the process of updating all of our Salesforce metadata rules to e
 
 We’ve architected this change because metadata pulled with SFDX has a different structure than metadata pulled with Salesforce’s metadata API. CodeScan can scan these different structures with some additions to the sf-meta suffixes. For this release, we have ensured that the differences are covered within the types of metadata that have these differences (specifically, the Object metadata contains all field metadata when pulled from the metadata API; however, when this is pulled with SFDX, the object and field metadata are separate). &#x20;
 
-See the following SF article for details of these differences: [https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link) &#x20;
+See the following SF article for details of these differences: [https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|smart-link) &#x20;
 
 **2.     Fixed issue in rule “sf:AvoidSoqlInLoops”** &#x20;
 
@@ -493,11 +493,7 @@ This update includes several New Features within CodeScan’s Visual Studio Code
 
 **Adjusted UI:**
 
-<div align="center" data-full-width="true">
-
-<figure><img src="../../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="center" data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure></div>
 
 2. **UI Improvement on Rule “Lightning channel Exposed”**\
    We completed an alignment adjustment within the CodeScan UI for this specific rule. \
@@ -656,7 +652,7 @@ The released plugin can be updated directly from VSCode and also can be found in
 
 ### New Rules
 
-1. **Rule Name: **_**“Comment All Hardcoded Values”**_\
+1. **Rule Name:&#x20;**_**“Comment All Hardcoded Values”**_\
    \
    **Category**: New APEX rule in CodeScan\
    \
@@ -673,7 +669,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Detail**: In Salesforce's Spring '24 release, the null-coalescing operator has been introduced in Apex. This rule will identify where this operator could be used but isn’t being utilized.\
    \
-   For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon\_apex\_NullCoalescingOperator.htm). \
+   For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_NullCoalescingOperator.htm). \
    \
 
 3. **Rule Name: “**_**Use Accessibility Attributes”**_\
@@ -699,11 +695,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Detail**: Removing inactive UNMANAGED workflow rules will streamline workflow processes, reduce confusion among users, and improve system performance. This action leads to a cleaner and more efficient Salesforce instance. Further, removing inactive UNMANAGED workflow rules helps declutter the Salesforce environment, making it easier for administrators and users to navigate and manage active workflows effectively.
 
-<div align="left" data-full-width="false">
-
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 

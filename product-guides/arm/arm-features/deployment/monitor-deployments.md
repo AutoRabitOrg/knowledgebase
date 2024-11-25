@@ -25,7 +25,7 @@ You’ll need the **`Deployment History`** access permission.
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.
-5. **`Deployment Iterations:`**Each new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.
+5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.
 
 {% hint style="info" %}
 **Important Notes:**
@@ -42,7 +42,7 @@ You’ll need the **`Deployment History`** access permission.
    * **`Rollback:`** Rollbacks revert a deployment to a previous revision.
    * **`Abort:`** To cancel a running or stuck deployment process.
    * **`View Graph:`** View Graph gives the graphical representation of the metadata members included in the deployment package.
-   * **`SCA Report:`**Static Code Analysis is usually performed as part of a Code Review and is carried out at the Implementation phase of a Security Development Lifecycle (SDL). Static Analysis tools such as PMD and Checkmarx continuously detect and report on dataflow problems, software defects, language implementation errors, inconsistencies, dangerous usage, coding standard violations, and security vulnerabilities.
+   * **`SCA Report:`**&#x53;tatic Code Analysis is usually performed as part of a Code Review and is carried out at the Implementation phase of a Security Development Lifecycle (SDL). Static Analysis tools such as PMD and Checkmarx continuously detect and report on dataflow problems, software defects, language implementation errors, inconsistencies, dangerous usage, coding standard violations, and security vulnerabilities.
    * **`Test Results:`** View the apex test result that you have configured during the deployment.
    * **`Deployed Issues:`** Any issues found during deployment can be seen here.
    * **`Quick Deploy:`** With Quick Deploy, the components validated successfully for the target environment within the last **96 hours** can be deployed quickly.

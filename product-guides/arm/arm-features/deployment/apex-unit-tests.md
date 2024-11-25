@@ -36,8 +36,8 @@ The following test options are available when you deploy or commit or use CI job
 2. With our current "Run Tests Based on Changes" functionality, we still expect a test class for a wrapper class with appropriate code coverage, even if the wrapper class doesn't contain any executable code. Otherwise, we will encounter a code coverage error:
 
 _Code Coverage Failures:_\
-_Class: TransactionHistoryActionParameters -- Test coverage of selected Apex Class is 0%, at least 75% test coverage is required_\
-_\*\*\*\*\*\*\*\*\*\*\* DEPLOYMENT FAILED \*\*\*\*\*\*\*\*\*\*\*_
+&#xNAN;_&#x43;lass: TransactionHistoryActionParameters -- Test coverage of selected Apex Class is 0%, at least 75% test coverage is required_\
+&#xNAN;_\*\*\*\*\*\*\*\*\*\*\* DEPLOYMENT FAILED \*\*\*\*\*\*\*\*\*\*\*_
 {% endhint %}
 
 * **`User Salesforce Defaults:`** Keeps the default behavior for all tests. In the sandbox, no tests are executed. All local tests are executed in the production if they contain Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If your package doesn’t contain Apex components, no tests are run.
@@ -77,4 +77,4 @@ You can set the apex test level when creating or editing a CI job in the **New/E
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-For more information on Apex unit tests, Refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex\_testing/units/apex\_testing\_intro) module on Apex test level testing.
+For more information on Apex unit tests, Refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex_testing/units/apex_testing_intro) module on Apex test level testing.

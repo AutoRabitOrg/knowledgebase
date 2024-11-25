@@ -62,12 +62,12 @@ Synchronization summary information such as label name, source org, destination 
 2. **`Delete:`** Click on the![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png>)icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
 3. **`Schedule:`** Click the![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png>)icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
 4. **`Run:`** Click the![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1).png>)icon to rerun the org synchronization process.
-5.  **`Status:`**Status of the synchronization process, i.e., successful or failed.
+5.  **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
 
     * **Log Report:** Click on the![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1).png>)icon under the **`Status`** column to view the log report for the sync process.
 
     <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-6.  **`Report:`**There are two options in this column.
+6.  **`Report:`**&#x54;here are two options in this column.
 
     * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1).png>)icon to view the metadata components difference report between the source and the target org.
     * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png>)icon to download the Diff report in your local system (in PDF or CSV format).

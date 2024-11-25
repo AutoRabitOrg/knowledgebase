@@ -25,6 +25,10 @@ For detailed steps, please refer to [Customizing Quality Profiles](https://knowl
 
 If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.
 
+### Why am I getting the following error message: "Not Able to Download Code from SF in the Project Analysis Page"?
+
+Check to see whether CodeScan is blocked in Salesforce (Setup > Connected Apps > CodeScan). If it's blocked, unblocked it. If it's already unblocked, yet you are still seeing the error, uninstall then reinstall, block it, and then unblock it.
+
 ## Copado Integration <a href="#faqs" id="faqs"></a>
 
 ### **Should the user add a new analysis project after the CodeScan-Copado integration is complete? If the user creates one, how does CodeScan understand it's the same project as the Copado connection?**

@@ -178,3 +178,23 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
     <figure><img src="../../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 6. **Delete**: Will delete the CONFIG from the list of configs available. If a config is deleted, the corresponding job in the history will not be deleted.
+
+### Excluding Feed Items
+
+Vault now automatically identifies and excludes system-generated FeedItems during the Replicate processes. This ensures these items do not cause any failures during the operation.
+
+#### Key Features
+
+1. **Automatic Identification**: System-generated FeedItems are detected and excluded without requiring manual intervention.
+2. **Error Prevention**: By excluding these FeedItems, potential errors during Replicate processes are avoided.
+3. **Logging for Transparency**: All excluded FeedItems are logged for tracking purposes, providing clear visibility into the process.
+
+#### Logs
+
+The following is a sample log for reference, showing the excluded system-generated Feeditems:
+
+<figure><img src="../../../../.gitbook/assets/image (1576).png" alt=""><figcaption></figcaption></figure>
+
+#### Replicate Log
+
+Refer to these logs to verify the exclusions and ensure smooth operations during Replicate processes.

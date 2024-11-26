@@ -1,9 +1,6 @@
 # User Definitions
 
-**Standard User**&#x20;
-
-\
-A Standard User is an individual authorized by the Customer to log in to and fully utilize AutoRABIT’s subscribed products. Standard Users have access to all product functionalities, including the Web UI, IDE plugins, APIs, and other interfaces.&#x20;
+**Standard User:** A Standard User is an individual authorized by the Customer to log in to and fully utilize AutoRABIT’s subscribed products. Standard Users have access to all product functionalities, including the Web UI, IDE plugins, APIs, and other interfaces.&#x20;
 
 Platform Owners/Admins are included in the Standard User class, ensuring administrative rights without affecting licensing terms.&#x20;
 
@@ -33,4 +30,3 @@ Platform Integration Users are included in licensing with view-only permissions.
 **Additional Notes:**&#x20;
 
 * The number of licensed users represents the total unique users of the products throughout the Subscription Term.
-* Platform Owners/Admins are included in the Standard User class, allowing customers to manage admin rights without affecting the licensing terms.

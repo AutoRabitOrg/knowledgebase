@@ -1,10 +1,13 @@
 # User Definitions
 
-**Standard User:** A Standard User is an individual authorized by the Customer to log in to and fully utilize AutoRABIT’s subscribed products. Standard Users have access to all product functionalities, including the Web UI, IDE plugins, APIs, and other interfaces.&#x20;
+**Standard User**
+
+A Standard User is an individual authorized by the Customer to log in to and fully utilize AutoRABIT’s subscribed products. Standard Users have access to all product functionalities, including the Web UI, IDE plugins, APIs, and other interfaces.&#x20;
 
 Platform Owners/Admins are included in the Standard User class, ensuring administrative rights without affecting licensing terms.&#x20;
 
-Platform Integration User \
+**Platform Integration User**&#x20;
+
 A Platform Integration User is an individual authorized by the Customer to perform actions that trigger the execution of AutoRABIT products (directly or indirectly). &#x20;
 
 This includes, but is not limited to:&#x20;

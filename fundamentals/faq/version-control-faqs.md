@@ -245,11 +245,10 @@ The potential causes of _Picklist not found_ error-related Merge/Commit Prevalid
 
 ## Why are unexpected files not part of a revision picked in the merge when the revision is cherry-picked? <a href="#why-are-unexpected-files-that-are-not-part-of-a-revision-picked-in-the-merge-when-the-revision-is-ch" id="why-are-unexpected-files-that-are-not-part-of-a-revision-picked-in-the-merge-when-the-revision-is-ch"></a>
 
-This is not an ARM issue but rather an expected behavior from Git.\
-Perform the following actions outside of ARM to determine whether the issue stems from ARM or Git:
+This is not an ARM issue but rather an expected behavior from Git. Perform the following actions outside of ARM to determine whether the issue stems from ARM or Git:
 
 1. Take a local clone of the repository and then checkout of that branch using the command below:\
-   &#xNAN;_**git checkout \<branchname>**_
+   &#xNAN;_**git checkout \<Targetbranchname>**_
 2. Cherry-pick merge the revision by executing the command in the applying merge log which is as shown below:\
    &#xNAN;_**git cherry-pick < revision > -n --strategy recursive --strategy-option ignore-cr-at-eol**_
 3. Check the results for the modified files by running the command below:\

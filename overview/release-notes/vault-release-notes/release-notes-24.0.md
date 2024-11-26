@@ -1,5 +1,21 @@
 # Release Notes 24.0
 
+## Vault 24.2.4 Release Notes
+
+**Release Date: 27 November 2024**
+
+* **Salesforce Spring '24 Upgrade:** Upgraded Salesforce to the latest Spring '24 release for improved features and functionality.
+* **Vault Connect – Seamless Access to Archived Files:** Customers now have seamless access to files added to records.
+* **FeedItem Failure Analysis:** Vault now automatically identifies system-generated FeedItems and excludes them from processing.
+* **Salesforce Summer '24 Upgrade:** Upgraded Salesforce to the latest Summer '24 release.&#x20;
+* **Provision to Exclude Flows:** Customers are now able to disable flows during the replicate and restore processes and auto-enable them upon completing the process.
+* **Enhanced Metadata Processing:** Improved the handling of child metadata for more efficient processing. Added detailed logging for better visibility into the reasons behind any record-processing failures.
+* **Upgraded Archive & Restore for Emails:** Enhanced the Archive & Restore functionality to ensure emails and their respective attachments are properly archived and restored to the email body.
+* **Salesforce Authentication Fix:** Resolved the reauthentication issue to ensure seamless and uninterrupted access.
+* **Improved Viewing of nCino Backup Records:** Enhanced functionality to ensure users can view nCino backup records without any disruptions.
+* **Optimized Restore/Replicate Functionality:** The common object operation has been upgraded from "insert" to "upsert" to improve the performance of restore and replicate processes.
+* **Kone Archival Issue Resolved:** We fixed an issue with deleted records being incorrectly picked up during archival in Kone.
+
 ## Vault 24.2.3 Release Notes
 
 **Release Date: 6 November 2024**

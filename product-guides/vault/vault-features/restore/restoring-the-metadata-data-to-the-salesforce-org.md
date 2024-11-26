@@ -165,7 +165,27 @@ Based on your selection, the restore will happen only for selected fields. Post 
     <figure><img src="../../../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
 6. You'll be taken to the **`Restore Summary`** screen, which will display the status of the recently triggered restore activity.
 
-### Restore Summary <a href="#restore-summary" id="restore-summary"></a>
+## Excluding System-Generated Feed Items – Restore
+
+The Vault application now automatically identifies and excludes system-generated FeedItems during the Restore processes. This ensures that, these items do not cause any failures during these operations.
+
+### **Key Features**
+
+1. **Automatic Identification**: System-generated FeedItems are detected and excluded without requiring manual intervention.
+2. **Error Prevention**: By excluding these FeedItems, potential errors during Restore processes are avoided.
+3. **Logging for Transparency**: All excluded FeedItems are logged for tracking purposes, providing clear visibility into the process.
+
+### Logs
+
+The following is a sample log for reference, showing the excluded system-generated Feeditems:
+
+<figure><img src="../../../../.gitbook/assets/image (1577).png" alt=""><figcaption></figcaption></figure>
+
+### Restore Log
+
+Refer to these logs to verify the exclusions and ensure smooth operations during the Restore process.
+
+## Restore Summary <a href="#restore-summary" id="restore-summary"></a>
 
 For each restore activity triggered in Vault, you will find the details below:
 

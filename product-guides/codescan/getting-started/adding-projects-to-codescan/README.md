@@ -15,13 +15,13 @@ You can find all these permissions under Profile > Administrative Permissions in
 
 ### Prerequisites <a href="#prerequisities" id="prerequisities"></a>
 
-You will need a CodeScan organization to add a project to it. When signing up with [CodeScan Cloud](https://www.codescan.io/products/cloud/), an organization is created automatically under your user name. New organizations can be created at any time using the '**+**' icon at the top right corner of the screen.
+You will need a CodeScan organization to add a project to it. When signing up with [CodeScan Cloud](https://www.codescan.io/products/cloud/), an organization is created automatically under your username. New organizations can be created at any time using the '**+**' icon at the top-right corner of the screen.
 
 <figure><img src="../../../../.gitbook/assets/image (90) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Adding a project into CodeScan <a href="#adding-a-project-into-codescan" id="adding-a-project-into-codescan"></a>
 
-To be able to analyse code in CodeScan you need to add a project first. This can easily be done by following the procedure below.
+To be able to analyze code in CodeScan, you need to add a project first. This can easily be done by following the procedures below.
 
 1. Log in to the CodeScan account.
 2. On the top right corner, click on the **`+`** icon and select **`Analyze new project`**.

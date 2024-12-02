@@ -2,7 +2,7 @@
 
 This document provides a description about how to create a project in CodeScan.
 
-### Salesforce Permissions:
+### Salesforce Permissions
 
 The minimum permissions required in the Salesforce profile to add a Salesforce project in CodeScan are listed below:
 
@@ -19,15 +19,15 @@ You will need a CodeScan organization to add a project to it. When signing up wi
 
 <figure><img src="../../../../.gitbook/assets/image (90) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Adding a project into CodeScan <a href="#adding-a-project-into-codescan" id="adding-a-project-into-codescan"></a>
+### Adding a Project into CodeScan <a href="#adding-a-project-into-codescan" id="adding-a-project-into-codescan"></a>
 
 To be able to analyze code in CodeScan, you need to add a project first. This can easily be done by following the procedures below.
 
 1. Log in to the CodeScan account.
-2. On the top right corner, click on the **`+`** icon and select **`Analyze new project`**.
+2. On the top-right corner, click on the **`+`** icon and select **`Analyze new project`**.
 3. Choose the **`Organization`** for which you'd like to create a project. Click **`Set Up`**.
 4. In the next window, click on **`Add Analysis Project`**.
-5. In the next screen, select from the applications displayed to add a new analysis project. You will be redirected to an authentication page to authorize CodeScan to access your source code.
+5. On the next screen, select from the applications displayed to add a new analysis project. You will be redirected to an authentication page to authorize CodeScan to access your source code.
 
 > CodeScan allows adding projects from:
 >

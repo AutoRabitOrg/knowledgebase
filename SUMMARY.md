@@ -115,7 +115,7 @@
       * [PKIX Path Building Failed](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/pkix-path-building-failed.md)
       * [Setting the System Environment Variable](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/setting-the-system-environment-variable.md)
       * [Setting up CodeScan for use with a Proxy](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/setting-up-codescan-for-use-with-a-proxy.md)
-      * [SonarQube instances was mistakenly deleted](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/sonarqube-instances-was-mistakenly-deleted.md)
+      * [SonarQube instance mistakenly deleted](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/sonarqube-instances-was-mistakenly-deleted.md)
     * [CodeScan Cloud Issues](fundamentals/faq/codescan-faqs/codescan-cloud-issues/README.md)
       * [Salesforce Enhanced Domains Issues](fundamentals/faq/codescan-faqs/codescan-cloud-issues/salesforce-enhanced-domains-issues.md)
       * [Project reports are not available for branches created outside the CodeScan Cloud](fundamentals/faq/codescan-faqs/codescan-cloud-issues/project-reports-are-not-available-for-branches-created-outside-the-codescan-cloud.md)

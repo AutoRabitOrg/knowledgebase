@@ -609,7 +609,7 @@
       * [Add a project to CodeScan from GitHub](product-guides/codescan/getting-started/adding-projects-to-codescan/add-a-project-to-codescan-from-github.md)
       * [Add a Project to CodeScan from Bitbucket](product-guides/codescan/getting-started/adding-projects-to-codescan/add-a-project-to-codescan-from-bitbucket.md)
       * [Add a Project to CodeScan from Git](product-guides/codescan/getting-started/adding-projects-to-codescan/add-a-project-to-codescan-from-git.md)
-      * [Adding a project to CodeScan from GitLab](product-guides/codescan/getting-started/adding-projects-to-codescan/adding-a-project-to-codescan-from-gitlab.md)
+      * [Add a project to CodeScan from GitLab](product-guides/codescan/getting-started/adding-projects-to-codescan/adding-a-project-to-codescan-from-gitlab.md)
   * [Quality Profiles](product-guides/codescan/quality-profiles/README.md)
     * [Customizing Quality Profiles](product-guides/codescan/quality-profiles/customizing-quality-profiles.md)
     * [Exporting CodeScan Quality Profiles](product-guides/codescan/quality-profiles/exporting-codescan-quality-profiles.md)

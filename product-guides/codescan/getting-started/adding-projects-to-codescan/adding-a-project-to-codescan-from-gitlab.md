@@ -1,17 +1,17 @@
-# Adding a project to CodeScan from GitLab
+# Add a project to CodeScan from GitLab
 
-This document guides how to add a GitLab project to your CodeScan Cloud account and run the analysis.
+This document guides you through how to add a GitLab project to your CodeScan Cloud account and run the analysis.
 
-1. Login to your CodeScan account.
-2. Once you login into your [CodeScan](https://www.codescan.io/) account, click on the (**+**) icon in the top right corner and select **Analyze new project**.
+1. Log in to your CodeScan account.
+2. Once you log in to your [CodeScan](https://www.codescan.io/) account, click on the (**+**) icon in the top-right corner and select **Analyze new project**.
 
 <figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. It takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click on **Set Up**.
+3. This takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click on **Set Up**.
 
 <figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. In the next screen, click on **Add Analysis Project** button.
+4. On the next screen, click on **Add Analysis Project** button.
 
 <figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -23,7 +23,7 @@ This document guides how to add a GitLab project to your CodeScan Cloud account 
    * Once you fill out all the details in the popup window, click on **Add and Run Now**.
 
 {% hint style="info" %}
-**Note:** To know where to find the project key, refer to our document on how to do it by clicking [HERE](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key).
+**Note:** To find the project key, refer to our document [HERE](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key).
 {% endhint %}
 
 7. This triggers the project analysis and the project being added under your CodeScan organization.

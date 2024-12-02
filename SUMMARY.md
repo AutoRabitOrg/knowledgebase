@@ -673,6 +673,7 @@
       * [Use Jenkins with CodeScan Salesforce project](product-guides/codescan/codescan-integration/jenkins/use-jenkins-with-codescan-salesforce-project.md)
     * [Webhooks](product-guides/codescan/codescan-integration/webhooks/README.md)
       * [Slack integration with Zapier](product-guides/codescan/codescan-integration/webhooks/slack-integration-with-zapier.md)
+    * [Project Naming Conventions](product-guides/codescan/codescan-integration/project-naming-conventions.md)
 * [Vault](product-guides/vault/README.md)
   * [Vault™ Overview](product-guides/vault/vault-tm-overview/README.md)
     * [Registering for an Account](product-guides/vault/vault-tm-overview/registering-for-an-account.md)

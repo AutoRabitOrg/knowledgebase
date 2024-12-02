@@ -328,13 +328,12 @@ Salesforce Connect OData 4.0 license subscription.
 
 ### Limitations <a href="#limitations" id="limitations"></a>
 
-1. Files are not supported for viewing through external objects in Salesforce.&#x20;
-2. Salesforce OData 4.0 adapter has a limitation on the number of callouts per hour. This will be addressed with the support for the Salesforce OData 4.01 adapter in subsequent versions of the capability.
-3. All the limitations of Salesforce external objects are applicable as mentioned in this article: [Help and Training Community](https://help.salesforce.com/s/articleView?language=en\_US\&id=sf.platform\_connect\_general\_limits.htm\&type=5)
-4. The solution only supports customers configured with AWS S3 as a storage option in Vault.
-5. There is a max limit of 5GB of archived data per customer supported for connecting to Salesforce external data source as part of the beta program. This can be extended to a higher limit by raising a request with [support@autorabit.com](mailto:support@autorabit.com).
-6. Fields of type XmlObjectWrapper are not supported.
-7.  Fields of the object that have soapType as double, values will be truncated according to the precision and scale, as defined in the metadata of the object’s field.
+1. Salesforce OData 4.0 adapter has a limitation on the number of callouts per hour. This will be addressed with the support for the Salesforce OData 4.01 adapter in subsequent versions of the capability.
+2. All the limitations of Salesforce external objects are applicable as mentioned in this article: [Help and Training Community](https://help.salesforce.com/s/articleView?language=en_US\&id=sf.platform_connect_general_limits.htm\&type=5)
+3. The solution only supports customers configured with AWS S3 as a storage option in Vault.
+4. There is a max limit of 5GB of archived data per customer supported for connecting to Salesforce external data source as part of the beta program. This can be extended to a higher limit by raising a request with [support@autorabit.com](mailto:support@autorabit.com).
+5. Fields of type XmlObjectWrapper are not supported.
+6.  Fields of the object that have soapType as double, values will be truncated according to the precision and scale, as defined in the metadata of the object’s field.
 
     **For example:** If a field holds decimal value information for that object, precision and scale values will be predefined.
 
@@ -348,8 +347,8 @@ Salesforce Connect OData 4.0 license subscription.
     **Example 2:**&#x20;
 
     Say a field holds info on geolocation latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.
-8. Field type "time" is not supported in this version.
-9. No more than four external lookup fields can be added to your page layout. On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5).&#x20;
+7. Field type "time" is not supported in this version.
+8. No more than four external lookup fields can be added to your page layout. On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts_limitations.htm\&type=5).&#x20;
 
 
 

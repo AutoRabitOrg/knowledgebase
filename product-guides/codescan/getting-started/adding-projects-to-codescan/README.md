@@ -39,3 +39,7 @@ To be able to analyze code in CodeScan, you need to add a project first. This ca
 > 6. [Webhooks](https://knowledgebase.autorabit.com/codescan/docs/codescan-webhooks)
 
 The detailed instructions to add a project from each of the above-mentioned applications are covered separately. [\[Learn More](https://knowledgebase.autorabit.com/codescan/docs/adding-projects)]
+
+{% hint style="info" %}
+**NOTE**: Issues across projects cannot be compared.
+{% endhint %}

@@ -90,6 +90,7 @@
   * [Retention Policy](fundamentals/faq/retention-policy.md)
   * [CodeScan-FAQs](fundamentals/faq/codescan-faqs/README.md)
     * [General](fundamentals/faq/codescan-faqs/general/README.md)
+      * [Does SonarQube support test execution reports for pull requests?](fundamentals/faq/codescan-faqs/general/does-sonarqube-support-test-execution-reports-for-pull-requests.md)
       * [Best Practices](fundamentals/faq/codescan-faqs/general/best-practices.md)
       * [Single sign-on (SSO) FAQs](fundamentals/faq/codescan-faqs/general/single-sign-on-sso-faqs.md)
       * [CodeScan Blocks, Lines, and Field Inquiries](fundamentals/faq/codescan-faqs/general/codescan-blocks-lines-and-field-inquiries.md)

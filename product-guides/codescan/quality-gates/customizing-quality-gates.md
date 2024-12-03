@@ -41,6 +41,10 @@ Then it will be assigned automatically to every new project, except those for wh
 **Important note:** BUILT-IN Quality Gates are standard and can’t be edited. But you can always **Copy** and customize as needed. (See step 2.)
 {% endhint %}
 
+{% hint style="info" %}
+NOTE: Changing the severity to '**Info**' will not block the Quality Gates.
+{% endhint %}
+
 
 
 

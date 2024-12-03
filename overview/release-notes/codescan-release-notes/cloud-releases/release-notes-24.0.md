@@ -89,17 +89,17 @@ There are no new features associated with this release.
         <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**NOTE**: This rule overlaps with the **ClassExplicitSharing** rule and will always overlap violations for outer classes. This rule has been created to:
+**NOTE**: This rule overlaps with the **ClassExplicitSharing** rule and will always overlap with violations for outer classes. This rule has been created to:
 
-* Allow for the reporting of this issue as a vulnerability instead of as a code smell
-* Only flag if sharing settings are missing for outer classes (inner classes that are missing sharing settings will not be flagged (which is opposite of how the ClassExplicitSharing rule works)
+* Allow for the reporting of this issue as a vulnerability instead of a code smell
+* Only flag if sharing settings are missing for outer classes (inner classes that are missing sharing settings will not be flagged—which is opposite of how the ClassExplicitSharing rule works)
 
 If both rules are active, check the violations that were reported and disable one of the rules as necessary.
 {% endhint %}
 
 ### Fixes
 
-1. **Fixed an issue in the CodeScan application in which flagged violations were not being displayed when using the "issues in new code" filter.**\
+1. **Fixed an issue in the CodeScan application in which flagged violations were not being displayed when using the "issues in new code" filter**\
    \
    **NOTE**: This issue only relates to a separate fix stemming from our last release (24.0.13), when we fixed an issue with reference branch analyses. After that fix, however, users were experiencing a new issue, in which flagged violations were not being displayed when using the "issues in new code" filter. The other parts of the CodeScan application were NOT impacted by the reference branch analyses fix in release 24.0.13. As such, all other parts of CodeScan continued to show the accurate new issue count.\
    \
@@ -144,13 +144,13 @@ If both rules are active, check the violations that were reported and disable on
 
     Verified the Retention Period fix for the following scenarios:
 
-    1.  In the UI, users are able to set **Delete inactive branches and PRs after** value
+    1.  In the UI, users are able to set **Delete inactive branches and PRs after** value:
 
         <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
-    2. User is able to see the same branch retention length value on **Branches & Pull Requests** page.\
+    2. Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.\
 
 4.  **Fixed issue with Group Synchronization for SAML connections**\
-    We uncovered an issue with the Group Synchronization during a recent customer implementation.  We identified the root cause, and a code change delivered in this release fixes the issue. Group synchronization is now working as designed. Further, we verified the Group synchronization option in SAML connection on a customer environment and have reported that this capability is working as expected.
+    We uncovered an issue with Group Synchronization during a recent customer implementation. We identified the root cause and a code change delivered in this release fixes the issue. Group synchronization is now working as designed. Further, we verified the Group synchronization option in SAML connection on a customer environment and have reported that this capability is working as expected.
 
     <figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 

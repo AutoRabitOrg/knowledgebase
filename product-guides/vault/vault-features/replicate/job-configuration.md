@@ -51,7 +51,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 *   **Records**: The user can select the records by clicking the icon under the “Records” column.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 * **Search Text:** The user can search the fields.
 * **Slider:** By enabling and disabling the slider, the user can make the search case sensitive or case-insensitive
 * **Choose File**: The user can input the file using this option..

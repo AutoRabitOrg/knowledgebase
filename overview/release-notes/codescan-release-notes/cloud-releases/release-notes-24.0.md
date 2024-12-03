@@ -6,6 +6,154 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
+## Release Notes 24.0.14
+
+**Release Date: 04 December 2024**
+
+### Summary
+
+CodeScan 24.0.14 is comprised of the following eight components:
+
+* [2 Enhancements](release-notes-24.0.md#enhancements)
+* [2 New Rules](release-notes-24.0.md#new-rules)
+* [4 Fixes](release-notes-24.0.md#fixes)
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+There are no new features associated with this release.
+
+### Enhancements
+
+1.  **Added “Project Search” in CSV Export**\
+    Customers with a large number of projects were experiencing a UI issue with the export feature: users who wanted to export issues in CSV format were only able to see the first 100 projects on the list.\
+    \
+    In this release, we have addressed this issue by adding a search function in the drop-down list to allow users to search for the name of the project they wish to export.
+
+    \
+    We verified the added “Project Search” on CSV Export page for multiple scenarios including:
+
+    1.  Verified search option functionality with the drop-down list of projects:
+
+        <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    2.  Verified the drop-down list shows 20 of the most recently scanned projects by default.
+
+        <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+2.  **Updated the message for Security Hotspot Status “Exception”**\
+    We recently added a new status type for Hotspots (status = “Exception”). Its intent is to serve as a more accurate status than 'Acknowledged' or 'Open' for issues being treated as exceptions. \
+    \
+    When we first delivered an “Exception” status, the associated message was: “The code has been reviewed and does not pose a risk currently. Further review is needed at a later date.” Based upon numerous client suggestions, we have enhanced the message to read: "The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.”
+
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### New Rules
+
+1. **New Rule for LWCs: “API Version Is Too Old”**\
+   This is a new rule to ensure that all Lightning Web Components (LWCs) are using an acceptable API version (including the most current API version).\
+   \
+   Using outdated API versions can lead to compatibility issues, missed opportunities to leverage new features, and potential security vulnerabilities. This rule aims to streamline the process of identifying and updating LWCs to the latest API version. We recognize that by identifying and updating LWCs to the latest API version, developers are able to maintain higher code quality, reduce the risk of deprecated features, and improve the overall performance and security of the application.\
+   \
+   Verified the new LWC rule (API Version Is Too Old) for these scenarios:
+   *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule:
+
+       <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+   *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed:
+
+       <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+   *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed:
+
+       <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+   * Verified that no violation is thrown when the API version is between the minimum and maximum versions allowed.
+2.  **New Rule for APEX: “OuterClassExplicitSharing”**\
+    Enforces security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.
+
+    * **Name**: Outer Class Explicit Sharing
+    * **Key**: OuterClassExplicitSharing
+    * **Type**: Vulnerability
+    * **Severity**: Major
+    * **Message**: Class '{className}' does not have an explicit sharing rule
+    * **Tags**: Convention
+    * **Remediation**: 5 minutes
+
+    Verified the rule: OuterClassExplicitSharing for the following scenarios:
+
+    *   Verified the rule’s description, type, severity, message, tag, remediation, key, and name:
+
+        <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    *   Verified the rule is not throwing a violation if used with sharing, without sharing, or inherited sharing:
+
+        <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    *   Verified that a violation is thrown if not used with sharing, without sharing, or inherited sharing.
+
+        <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**NOTE**: This rule overlaps with the **ClassExplicitSharing** rule and will always overlap violations for outer classes. This rule has been created to:
+
+* Allow for the reporting of this issue as a vulnerability instead of as a code smell
+* Only flag if sharing settings are missing for outer classes (inner classes that are missing sharing settings will not be flagged (which is opposite of how the ClassExplicitSharing rule works)
+
+If both rules are active, check the violations that were reported and disable one of the rules as necessary.
+{% endhint %}
+
+### Fixes
+
+1. **Fixed an issue in the CodeScan application in which flagged violations were not being displayed when using the "issues in new code" filter.**\
+   \
+   **NOTE**: This issue only relates to a separate fix stemming from our last release (24.0.13), when we fixed an issue with reference branch analyses. After that fix, however, users were experiencing a new issue, in which flagged violations were not being displayed when using the "issues in new code" filter. The other parts of the CodeScan application were NOT impacted by the reference branch analyses fix in release 24.0.13. As such, all other parts of CodeScan continued to show the accurate new issue count.\
+   \
+   Regarding this issue, users were unable to navigate to the issues page after running the project analysis. Further, users were not able to see the issues if the user selected any of the issue types (e.g., vulnerability) after running the project analysis.\
+   \
+   This fix corrects this issue. Users are now able to navigate to the issues page after running the project analysis. Further, users are now able to see the issues if they select any of the issue types (e.g., vulnerability) after running the project analysis.\
+
+2.  **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}}” {Permissions should be checked before accessing resource}.**\
+    Previously, this rule was throwing violations that were false positives. This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.\
+    \
+    &#xNAN;_&#x4E;OTE: We addressed a similar issue related to SOQL queries in a previous release. That update has been extended in this release to also include SOSL queries._\
+    \
+    As per Salesforce documentation, when checking the Access for the inner query object, it allows to check by using \_\_c, but while making inner query on related Objects, it must be in plural and end with \_\_r.\
+    \
+    &#xNAN;_&#x54;his fix corrects this issue._ In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
+    \
+    Verified the rule “Field Level Security Vulnerabilities” for the following scenarios:
+
+    1.  Rule is throwing a violation if isAccessible is not checked for the objects used in the inner query:
+
+        <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
+
+        <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+    **REMINDER**: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
+    \
+    We have verified the rule: FieldLevelSecurity for the following scenarios:
+
+    * Rule is throwing the violation if the object is NOT checked via isAccessible for the methods used in the inner query.
+    * Rule is not throwing the violation if the system mode value is set = “true” (and the object IS NOT checked via isAccessible for methods).
+    * Rule is not throwing the violation if the system mode value is set = “false” (and the object IS checked via isAccessible for the methods).\
+
+3.  **Fixed issue with Retention Period settings**\
+    The retention period for project branches in CodeScan was not functioning properly. The UI is able to be set, but it does not affect the cleanup of branches within the project.\
+    \
+    This setting can be found in Project Settings > General Settings > Housekeeping > Delete inactive branches and PRs after.\
+    \
+    Also, the text in the “Branches” menu did not reflect the branch retention length change:
+
+    <figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+    Verified the Retention Period fix for the following scenarios:
+
+    1.  In the UI, users are able to set **Delete inactive branches and PRs after** value
+
+        <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    2. User is able to see the same branch retention length value on **Branches & Pull Requests** page.\
+
+4.  **Fixed issue with Group Synchronization for SAML connections**\
+    We uncovered an issue with the Group Synchronization during a recent customer implementation.  We identified the root cause, and a code change delivered in this release fixes the issue. Group synchronization is now working as designed. Further, we verified the Group synchronization option in SAML connection on a customer environment and have reported that this capability is working as expected.
+
+    <figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
 ## Release Notes 24.0.13
 
 **Release Date: 30 October 2024**
@@ -399,7 +547,7 @@ The latest CodeScan release is comprised of the following components:
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For the IDE Type, logos are now shown instead of text\
 Added a date filter, including:\
@@ -413,7 +561,7 @@ Added a filter toggle for Individual / All as shown.\
 Upon toggling to “Individual,” the last connection for each unique user list is shown.\
 Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **New “Exception” status for Security Hotspots**\
    Summary: For this release, the “Exception” status essentially mirrors the functionality of the “Acknowledged” status; but this is just temporary. We will be adding the ability to assign a “date time stamp” to this feature, which will then allow the issue to be flagged after the expiration of the date time stamp.
@@ -489,7 +637,7 @@ This update includes several New Features within CodeScan’s Visual Studio Code
     **Previous UI:** \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Adjusted UI:**
 
@@ -744,7 +892,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Value**: The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch." This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, but in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

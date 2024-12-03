@@ -10,7 +10,7 @@ You can use the mail server settings in this article to manually set up your ema
 
 Begin the process by hovering your mouse over the **`Admin`** module and selecting the option: **`Notifications`**.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="235"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="235"><figcaption></figcaption></figure>
 
 You’ll then be presented with a screen divided into **`Mail Settings`**, **`Send a test email`**, **`Restricted Emails`**, and **`Teams/Slack Settings`** sections.&#x20;
 
@@ -18,7 +18,7 @@ You’ll then be presented with a screen divided into **`Mail Settings`**, **`Se
 
 To set up a mail client, it’s necessary to configure the server to take care of your email delivery. And here’s the standard procedure for mail configuration and adding the correct parameters in the **`Mail Settings`** section:
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="536"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="536"><figcaption></figcaption></figure>
 
 Fill in the required details as listed below (mandatory fields are marked with an asterisk (\*) mark.&#x20;
 
@@ -32,7 +32,7 @@ Fill in the required details as listed below (mandatory fields are marked with a
 8. **`Custom Email Template:`** ARM has its default email template styles, but you can also create your own. Enable the **`Custom Email Template`** field and add your logo at the top or bottom of the page. You can add footer text too. Once you're happy with your template, save it.
 9. You can use the **`Reset`** button to clear all the data in the **`Mail Settings`** section and again fill in the fields.
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 How to reset your Mail preferences?You won't be able to switch back to the default ARM mail preferences once you have configured your email template. If you want to switch back to the default email style, please email us at [support@autorabit.com](mailto:%20support@autorabit.com), and we can do it for you.
 

@@ -18,7 +18,7 @@ To run a static code tool on your [Salesforce Org](arm-administration/registrati
 
 1. Hover your mouse over the **REPORTS** module and choose the option: [**STATIC CODE ANALYSIS**](https://www.autorabit.com/products/codescan/)
 
-<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1).png" alt="" width="323"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt="" width="323"><figcaption></figcaption></figure>
 
 2. Click on the **NEW STATIC CODE ANALYSIS** button at the top right corner of the screen.
 

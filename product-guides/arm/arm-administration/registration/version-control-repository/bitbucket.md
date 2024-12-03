@@ -6,41 +6,42 @@
 
 ### GitHub and Bitbucket <a href="#github-and-bitbucket" id="github-and-bitbucket"></a>
 
-Github and Bitbucket are hosting platforms that offer developers access to both public and private repositories. The functionality of Bitbucket and GitHub is very similar, and both allow you to perform basic operations, such as:
+GitHub and Bitbucket are hosting platforms that offer developers access to both public and private repositories. The functionality of Bitbucket and GitHub is very similar, and both allow you to perform basic operations, such as:
 
 * Create and manage repositories
-* Utilizing **Two-Factor Authentication (2FA)**
+* Utilize **Two-Factor Authentication (2FA)**
 * Make pull requests
 * Perform code reviews
-* Enhances team collaboration and efficiency of the process.
+* Enhance team collaboration and efficiency of the process
 * Make use of inline editing and Markdown support
 * Keep track of issues, etc.
 
-### Configuring Your Bitbucket Repository <a href="#configuring-your-bitbucket-repository" id="configuring-your-bitbucket-repository"></a>
+### Configure Your Bitbucket Repository <a href="#configuring-your-bitbucket-repository" id="configuring-your-bitbucket-repository"></a>
 
 #### Prerequisites for registering Bitbucket with ARM <a href="#prerequisites-for-registering-bitbucket-with-arm" id="prerequisites-for-registering-bitbucket-with-arm"></a>
 
-* You must have a Bitbucket account. If you don’t already have a Bitbucket account, you can create one at [https://start.atlassian.com/](https://start.atlassian.com/) Once you have a Bitbucket account, you can create a new repository or use an existing one.
+* You must have a Bitbucket account. If you don’t already have a Bitbucket account, you can create one at [https://start.atlassian.com/](https://start.atlassian.com/). Once you have a Bitbucket account, you can create a new repository or use an existing one.
 * You must have permission to register a repository.
-* Store your Bitbucket’s credentials in ARM.
+* Store your Bitbucket credentials in ARM.
 
-#### Store your Bitbucket credential in ARM <a href="#store-your-bitbucket-credential-in-arm" id="store-your-bitbucket-credential-in-arm"></a>
+### Store your Bitbucket credential in ARM <a href="#store-your-bitbucket-credential-in-arm" id="store-your-bitbucket-credential-in-arm"></a>
 
-This is an initial step where you store your user's credential (usually a username, password, or token) in ARM.\
-To authenticate Bitbucket, you’ll have to use **App Password** instead of the regular password to login to your Bitbucket account.
+This is an initial step where you store your user's credential (usually a username, password, or token) in ARM.
 
-**Steps to generate a Bitbucket App Password**
+To authenticate Bitbucket, you’ll have to use the **App Password** instead of the regular password to log in to your Bitbucket account.
 
-1. Log into to your Bitbucket account.
-2. Click your account’s **`profile picture`** in the top right-corner of the Bitbucket webpage.
+### **Generate a Bitbucket App Password**
+
+1. Log in to your Bitbucket account.
+2. Click your account’s **`profile picture`** in the top right-corner of the Bitbucket web page.
 3. Click the **`Personal Settings`** link in the dropdown menu.
 4. Select the link on the left labeled **`App Passwords`**. It is under the **`Access Management`** heading.
-5. Click on **`Create App Password`** button.
-6. Give a **`label name`** and check all the necessary permissions that you’d want to provide. Typically, we will require **`repository`**, **`webhook`**, and **`pull request permissions`**.
+5. Click on the **`Create App Password`** button.
+6. Enter a **`label name`** and check all the necessary permissions you want to provide. Typically, required are **`repository`**, **`webhook`**, and **`pull request permissions`**.
 7. Click **`Create`** to generate the Bitbucket App Passwords and copy the access token’s value. You will not be able to view this password again once you close this window.
 8. Click **`Save`**.
 
-**Store your Bitbucket credential in ARM**
+### **Store your Bitbucket credential in ARM**
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
@@ -50,7 +51,7 @@ To authenticate Bitbucket, you’ll have to use **App Password** instead of the 
 6. Enter your Bitbucket’s **`username`** and **`App Password`**.
 7. Click **`Save`**.
 
-#### Registering a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
+### Register a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
 
 If you wish to set up a Bitbucket repository, ensure that you have an account created and configured at BitBucket. Next, follow the below steps:
 
@@ -70,4 +71,4 @@ If you wish to set up a Bitbucket repository, ensure that you have an account cr
 7. Choose the correct user's **`Credentials`** from the list that you saved earlier.
 8. The **`Default Branch`** selection will be in disabled mode by default. Click on the **`refresh`** button to fetch and list down all the available branches on your remote repository.
 9. Select one of the default branches from the list.
-10. Once the registration is successfully done, you can find the newly added repository on **`VC Repo's`** home page.
+10. Once the registration is successfully done, you can find the newly added repository on the **`VC Repo's`** home page.

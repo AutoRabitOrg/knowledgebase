@@ -23,10 +23,10 @@ For shared cloud customers, ARM has a preconfigured connected app via Salesforce
        Example: https://preview.autorabit.com/oauth/\_callback\
        Depending on which OAuth flow you use, this is typically the URL that a user's browser is redirected to after successful authentication.
    2. In the **Available OAuth Scopes** list, select the following items:&#x20;
-      1. Access and manage your data (API)&#x20;
-      2. Full access (full)&#x20;
-      3. Perform requests on your behalf at any time (refresh\_token, offline\_access)&#x20;
-      4. Click **Add** for each to appear in the Selected OAuth Scopes list.
+      * Access and manage your data (API)&#x20;
+      * Full access (full)&#x20;
+      * Perform requests on your behalf at any time (refresh\_token, offline\_access)&#x20;
+      * Click **Add** for each to appear in the Selected OAuth Scopes list.
 7. Click the **Save** button to save the new Connected App.
 8. In the Connected Apps list, find the App you just created and click **Manage**.&#x20;
    1. On the page that opens, click the **Edit** button.&#x20;

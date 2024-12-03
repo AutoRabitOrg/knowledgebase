@@ -158,7 +158,7 @@
         * [Creation of SVN Branch](product-guides/arm/getting-started/registration/version-control-branch/creation-of-svn-branch.md)
       * [Salesforce Org](product-guides/arm/getting-started/registration/salesforce-org/README.md)
         * [Salesforce Authentication using OAuth](product-guides/arm/getting-started/registration/salesforce-org/salesforce-authentication-using-oauth.md)
-        * [Salesforce Org Re-Authentication](product-guides/arm/getting-started/registration/salesforce-org/salesforce-org-re-authentication.md)
+        * [Salesforce Org Reauthentication](product-guides/arm/getting-started/registration/salesforce-org/salesforce-org-re-authentication.md)
       * [Branching Baseline](product-guides/arm/getting-started/registration/branching-baseline.md)
       * [Static Code Analysis in CI/CD](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/registration/static-code-analysis-in-ci-cd)
   * [ARM Administration](product-guides/arm/arm-administration/README.md)

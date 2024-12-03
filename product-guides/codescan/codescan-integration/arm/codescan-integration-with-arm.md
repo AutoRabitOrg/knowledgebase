@@ -73,7 +73,7 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
 
 5. Click **Save**.
 6. Next, go to section **Commit Validation - Approval Settings**. In this section, you can allow CodeScan tools to identify potential software quality issues before the code moves to production and abort the commit process if the Quality Gate set earlier matches the status in CodeScan.
-7. Select the checkbox: **Enable Criteria-Based Review Process**
+7. Select the checkbox to **Enable Criteria-Based Review Process.**
 8.  Enable the **Should pass validation criteria for Static Code Analysis** checkbox and then select the below checkboxes:
 
     * CodeScan
@@ -94,6 +94,10 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
 
 After integrating ARM with the CodeScan plugin, select **CodeScan** as your static code analysis tool to detect bugs, code smells, and security vulnerabilities before the code moves to production on ARM.
 
+{% hint style="info" %}
+With ARM integration, CodeScan only scans the components that are part of the commit, merge, or deployment. However, when the scan is triggered from SCA reports, it scans the entire org/repository.
+{% endhint %}
+
 ### During the Deployment Process <a href="#during-deployment-process" id="during-deployment-process"></a>
 
 1. On the Deployment Settings screen, choose **CodeScan/Lint** as an **SCA tool**.
@@ -109,13 +113,13 @@ After integrating ARM with the CodeScan plugin, select **CodeScan** as your stat
 
 <figure><img src="../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure>
 
-### During the EZ- Merge Process <a href="#during-ez-merge-process" id="during-ez-merge-process"></a>
+### During the EZ-Merge Process <a href="#during-ez-merge-process" id="during-ez-merge-process"></a>
 
 While merging Salesforce records between two Version Control branches, you can allow CodeScan to check for any bugs, code smells, and security vulnerabilities.
 
 1. In the **New EZ-Merge** screen, go to the **Prevalidate Merge** section.
-2. Select **CodeScan/Lint** as a **SCA tool**.
-3. To run CodeScan on all of the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles**, select the checkbox **All Supported Metadata Types**.
+2. Select **CodeScan/Lint** as an **SCA tool**.
+3. To run CodeScan on all the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles**, select the checkbox for **All Supported Metadata Types**.
 
 <figure><img src="../../../../.gitbook/assets/image (469).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,11 +131,11 @@ While merging Salesforce records between two Version Control branches, you can a
 While performing a validation deployment before actually committing the changes, you can allow CodeScan to check for any bugs, code smells and security vulnerabilities.
 
 1. In the Submit for Validation screen, go to the **Validation Reports** section.
-2. Select **CodeScan/Lint** as a **SCA tool**.
+2. Select **CodeScan/Lint** as an **SCA tool**.
 
 <figure><img src="../../../../.gitbook/assets/image (470).png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Here, you will have provision to set the condition for running CodeScan SCA tool, i.e, running for all the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles** components or stating the time period from where it will run.
+3. Here, you will have provision to set the condition for running the CodeScan SCA tool, i.e., running for all the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles** components or stating the time period for which it will run.
 
 <figure><img src="../../../../.gitbook/assets/image (471).png" alt="" width="563"><figcaption></figcaption></figure>
 

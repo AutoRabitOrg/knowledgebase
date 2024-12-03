@@ -24,6 +24,6 @@ If you are in the **AUS** region:
 
 
 
-{% hint style="warning" %}
-NOTE: The 'Forbidden Error' message appears on the Project Analysis page when there is a change in the Static IPs for CodeScan.
+{% hint style="info" %}
+**NOTE**: The 'Forbidden Error' message appears on the Project Analysis page when there is a change in the Static IPs for CodeScan.
 {% endhint %}

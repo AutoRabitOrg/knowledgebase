@@ -1,9 +1,5 @@
 # Add a project to CodeScan from GitHub
 
-{% hint style="info" %}
-**NOTE:** Admin permissions in GitHub are required or else the pull request will not be triggered, even though a user may be able to select the box to "check pull requests" during GitHub integration.
-{% endhint %}
-
 This document guides you how to add a **GitHub** project to your CodeScan cloud account and run the analysis.
 
 1. Log in to your **CodeScan** account.
@@ -31,7 +27,8 @@ This document guides you how to add a **GitHub** project to your CodeScan cloud 
 
     * Choose the **Repository** you want to add, followed by the **Project Branch** name.\
       **NOTE**: If you do not specify the Branch Name during GitHub integration, then it will take the main branch by default.
-    * Make sure you select the checkbox under **Check Pull Requests**.&#x20;
+    * Make sure you select the checkbox under **Check Pull Requests**. \
+      **NOTE:** Admin permissions in GitHub are **required,** or else the pull request will not be triggered, even though a user may be able to select the box to "check pull requests" during GitHub integration.
     * The **Project Key** and the **Project Name** are automatically assigned. You can edit the fields per your requirements.
     * Click on **Add and Run Now.**
 

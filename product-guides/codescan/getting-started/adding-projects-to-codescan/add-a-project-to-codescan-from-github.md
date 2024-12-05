@@ -50,5 +50,10 @@ Now that the webhooks have been created, every time there is a push to the track
 **Known limitation from GitHub**: When an analysis is triggered, CodeScan requests a token to GitHub, which has a limitation of 10 tokens per hour per user per application. For more information, refer to [Token Expiration and Revocation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/token-expiration-and-revocation#token-revoked-due-to-excess-of-tokens-for-an-oauth-app-with-the-same-scope) on GitHub Docs.
 {% endhint %}
 
+{% hint style="warning" %}
+**Error: Expected — Waiting for status to be reported**\
+This is a GitHub issue. To prevent recursive workflow, users are not able to trigger a subsequent workflow, leading it to The Eternal Pending State. If this occurs, you will need to reattach the project. For additional information, refer to an article on this issue: [![](https://miro.medium.com/v2/5d8de952517e8160e40ef9841c781cdc14a5db313057fa3c3de41c6f5b494b19)Github Actions: Bypassing Expected — Waiting for status to be reported](https://manumagalhaes.medium.com/github-actions-bypassing-expected-waiting-for-status-to-be-reported-4712032ef129)
+{% endhint %}
+
 
 

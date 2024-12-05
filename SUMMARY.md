@@ -725,7 +725,6 @@
       * [Job Configuration](product-guides/vault/vault-features/replicate/job-configuration.md)
       * [Job History](product-guides/vault/vault-features/replicate/job-history.md)
       * [Masking Rules](product-guides/vault/vault-features/replicate/masking-rules.md)
-      * [Replicating Objects between Two Salesforce Orgs](product-guides/vault/vault-features/replicate/replicating-objects-between-two-salesforce-orgs.md)
     * [Reporting](product-guides/vault/vault-features/reporting/README.md)
       * [Archive Reports](product-guides/vault/vault-features/reporting/archive-reports.md)
       * [Stale Jobs](product-guides/vault/vault-features/reporting/stale-jobs.md)

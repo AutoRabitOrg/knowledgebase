@@ -52,7 +52,7 @@ Now that the webhooks have been created, every time there is a push to the track
 
 {% hint style="warning" %}
 **Error: Expected — Waiting for status to be reported**\
-This is a GitHub issue. To prevent recursive workflow, users are not able to trigger a subsequent workflow, leading it to The Eternal Pending State. If this occurs, you will need to reattach the project. For additional information, refer to an article on this issue: [![](https://miro.medium.com/v2/5d8de952517e8160e40ef9841c781cdc14a5db313057fa3c3de41c6f5b494b19)Github Actions: Bypassing Expected — Waiting for status to be reported](https://manumagalhaes.medium.com/github-actions-bypassing-expected-waiting-for-status-to-be-reported-4712032ef129)
+This is a GitHub issue. To prevent recursive workflow, users are not able to trigger a subsequent workflow, leading it to The Eternal Pending State. If this occurs, you will need to reattach the project. For additional information, refer to the following article on this issue: [GitHub Actions: Bypassing Expected — Waiting for status to be reported](https://manumagalhaes.medium.com/github-actions-bypassing-expected-waiting-for-status-to-be-reported-4712032ef129)
 {% endhint %}
 
 

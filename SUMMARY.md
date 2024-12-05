@@ -533,6 +533,7 @@
       * [CI Job Configurations](product-guides/arm/troubleshoot/best-practices/ci-job-configurations.md)
       * [Vlocity](product-guides/arm/troubleshoot/best-practices/vlocity.md)
       * [IP Whitelist](product-guides/arm/troubleshoot/best-practices/ip-whitelist.md)
+      * [How to Include Network Settings in Commit or Deployment](product-guides/arm/troubleshoot/best-practices/how-to-include-network-settings-in-commit-or-deployment.md)
       * [Branching Strategy & CI/CD Pipeline](product-guides/arm/troubleshoot/best-practices/branching-strategy-and-ci-cd-pipeline.md)
       * [Metadata comparison between two Salesforce Orgs](product-guides/arm/troubleshoot/best-practices/metadata-comparison-between-two-salesforce-orgs.md)
       * [Working with Translations in ARM](product-guides/arm/troubleshoot/best-practices/working-with-translations-in-arm.md)

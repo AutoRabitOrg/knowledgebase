@@ -1,5 +1,9 @@
 # Add a project to CodeScan from GitHub
 
+{% hint style="info" %}
+**NOTE:** Admin permissions in GitHub are required or else the pull request will not be triggered, even though a user may be able to select the box to "check pull requests" during GitHub integration.
+{% endhint %}
+
 This document guides you how to add a **GitHub** project to your CodeScan cloud account and run the analysis.
 
 1. Log in to your **CodeScan** account.

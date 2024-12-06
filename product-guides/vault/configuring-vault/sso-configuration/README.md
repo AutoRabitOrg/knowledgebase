@@ -6,7 +6,11 @@ SSO is an authentication process that allows users to access multiple applicatio
 
 ### Permissions <a href="#permissions" id="permissions"></a>
 
-Only **System Admins** can configure SSO settings for your organization.
+Only **System Admins** can configure SSO settings for your organization.&#x20;
+
+To check your admin access in Vault, go to **Manage Users > Users** and verify if your "Type" is set to **Admin**.
+
+<figure><img src="../../../../.gitbook/assets/image (1584).png" alt=""><figcaption></figcaption></figure>
 
 ### How to enable SSO <a href="#how-to-enable-sso" id="how-to-enable-sso"></a>
 

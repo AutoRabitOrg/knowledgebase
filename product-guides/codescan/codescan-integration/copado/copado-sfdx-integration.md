@@ -55,11 +55,9 @@ Under the script tab, click the lower edit button and replace the script with th
 
 <summary>Expand to view script</summary>
 
-```
-
-echo $branchesAndFileIdJson
-echo $git_json
-originBranch=$(jq -r '.originBranch' <<< $branchesAndFileIdJson)
+<pre><code><strong>echo $branchesAndFileIdJson
+</strong>echo $git_json
+originBranch=$(jq -r '.originBranch' &#x3C;&#x3C;&#x3C; $branchesAndFileIdJson)
 BRANCH="$originBranch"
 echo "param branchesAndFileIdJson =  $branchesAndFileIdJson"
 echo "param originBranch = $originBranch"
@@ -71,7 +69,7 @@ echo "param BRANCH = $BRANCH"
 echo "DEST_BRANCH: $DEST_BRANCH"
 echo "param USER_STORY = $USER_STORY"   
 echo "param BASE_BRANCH = $BASE_BRANCH"
-echo "param COPADO_PROJECT= $COPADO_PROJECT"
+echo "param COPADO_PROJECT = $COPADO_PROJECT"
 OUTPUT_JSON="output.json"
 OUTPUT_CSV="violations.csv"
 CSV_STRING=""
@@ -80,9 +78,16 @@ NEW_PROJECT="true"
 
 # Check if the project has been scanned before
 curl -u $TOKEN: -s "$SERVER/api/ce/component?component=$PROJECT_ID" -o $OUTPUT_JSON || exitCode=$?
+# Check if the curl command was successful
+if [[ $? -ne 0 ]]
+then
+  echo "Failed to fetch data from the API"
+  exit 1
+fi
+
 
 # Set New Project based on response
-NEW_PROJECT=$(node <<EOF
+NEW_PROJECT=$(node &#x3C;&#x3C;EOF
   const fs = require('fs');
   try {
     // Read the JSON file and parse it
@@ -103,32 +108,35 @@ NEW_PROJECT=$(node <<EOF
 EOF
 )
 
+# Need to determine changed files in User Story
+
 # Check for branch type and scan
 if [[ "$BRANCH" =~ .+/US-[0-9]+ ]]
 then
-  API_URL="$SERVER/api/issues/search?componentKeys=$PROJECT_ID&pullRequest=$BRANCH&statuses=OPEN"
+  API_URL="$SERVER/api/issues/search?componentKeys=$PROJECT_ID&#x26;pullRequest=$BRANCH&#x26;statuses=OPEN"
   if [[ "$NEW_PROJECT" = true ]]
   then
     copado-git-get $BASE_BRANCH
     copado -p "Running codescan on Main Branch for first run..."
-    sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION --json 2>&1 | tee /tmp/result.json \
+    sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION --json 2>&#x26;1 | tee /tmp/result.json \
         || exitCode=$?
     echo "Codescan completed. exit code: $exitCode"
   fi
-  copado -p "cloning repo..."
+  copado -p "Cloning repo..."
   copado-git-get $BRANCH
+  ls -a
   copado -p "Running codescan on User Story..."
-  sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION -Dsonar.pullrequest.base=master -Dsonar.pullrequest.branch="$COPADO_PROJECT" -Dsonar.pullrequest.key=$BRANCH --json 2>&1 | tee /tmp/result.json \
+  sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION -Dsonar.pullrequest.base=master -Dsonar.pullrequest.branch="$COPADO_PROJECT" -Dsonar.pullrequest.key=$BRANCH --json 2>&#x26;1 | tee /tmp/result.json \
       || exitCode=$?
   echo "Codescan completed. exit code: $exitCode"
   copado -u /tmp/result.json
 else
-  API_URL="$SERVER/api/issues/search?componentKeys=$PROJECT_ID&statuses=OPEN"
+  API_URL="$SERVER/api/issues/search?componentKeys=$PROJECT_ID&#x26;statuses=OPEN"
   if [[ "$DEST_BRANCH" == "$BASE_BRANCH" ]]
   then
     copado-git-get $BASE_BRANCH
     copado -p "Running codescan on Main Branch..."
-    sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION  --json 2>&1 | tee /tmp/result.json \
+    sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION  --json 2>&#x26;1 | tee /tmp/result.json \
         || exitCode=$?
     echo "Codescan completed. exit code: $exitCode"
     copado -u /tmp/result.json
@@ -157,7 +165,7 @@ then
   copado -p "Creating CSV..."
 fi
 
-rows=$(node <<EOF
+rows=$(node &#x3C;&#x3C;EOF
 const fs = require('fs');
 
 // Read the JSON file
@@ -203,10 +211,10 @@ then
   exit 1
 fi
 
-if [[ "$rows" = '' ]]
+if [[ "$rows" != '' ]]
 then
   # Convert JSON rows to CSV string
-  CSV_STRING=$(jq -r 'join("#")' <<< "$rows")
+  CSV_STRING=$(jq -r 'join("#")' &#x3C;&#x3C;&#x3C; "$rows")
 
   # Escape special characters in CSV_STRING for Apex
   CSV_STRING=$(echo "$CSV_STRING" | sed 's/\\/\\\\/g; s/"/\\"/g')
@@ -226,44 +234,52 @@ then
 fi
 # Create and run Apex script
 echo "
-if('$USER_STORY' != ''){  // Maybe a new conditional??
+if('$USER_STORY' != ''){
   string recID='$USER_STORY';
-  id usid= id.valueOf(recID);
-  Id recTypeId = Schema.SObjectType.copado__Static_Code_Analysis_Result__c.getRecordTypeInfosByName().get('CodeScan').getRecordTypeId();
-  copado__Static_Code_Analysis_Result__c scar = new copado__Static_Code_Analysis_Result__c(recordtypeId=recTypeId,copado__User_Story__c=usid);
-  insert scar;
-  id scarid = scar.id;   
+  List&#x3C;copado__User_Story__c> userStories = [SELECT Id FROM copado__User_Story__c WHERE Name = :recID LIMIT 1];
+  Id usid = userStories.isEmpty() ? null : userStories[0].Id;
 
-  List<copado__Static_Code_Analysis_Violation__c> SCAV = new List<copado__Static_Code_Analysis_Violation__c>();
+  if (usid != null) {
+    // Proceed with creating Static Code Analysis Result
+    Id recTypeId = Schema.SObjectType.copado__Static_Code_Analysis_Result__c.getRecordTypeInfosByName().get('CodeScan').getRecordTypeId();
+    copado__Static_Code_Analysis_Result__c scar = new copado__Static_Code_Analysis_Result__c(recordtypeId=recTypeId,copado__User_Story__c=usid);
+    insert scar;
+    id scarid = scar.id;   
+
+    List&#x3C;copado__Static_Code_Analysis_Violation__c> SCAV = new List&#x3C;copado__Static_Code_Analysis_Violation__c>();
     
-  String csvAsString = '$CSV_STRING';
-  System.debug('CSV as string:'+csvAsString);
+    String csvAsString = '$CSV_STRING';
+    System.debug('CSV as string:'+csvAsString);
 
-  if(csvAsString != ''){
-    String[] csvFileLines = csvAsString.split('#');
-    System.debug(csvFileLines.size());
+    if(csvAsString != ''){
+        String[] csvFileLines = csvAsString.split('#');
+        System.debug(csvFileLines.size());
 
-    for(Integer i=0; i<csvFileLines.size(); i++){
-        String[] csvRecordData = csvFileLines[i].split(',');
-        String issueLink='$SERVER/project/issues?pullRequest=$BRANCH&issues='+csvRecordData[0]+'&open='+csvRecordData[0]+'&id=$PROJECT_ID';
-        
-        copado__Static_Code_Analysis_Violation__c viol= new copado__Static_Code_Analysis_Violation__c(
-            CSExtKey__c = csvRecordData[0],             
-            copado__Rule__c = csvRecordData[1],
-            copado__Type__c = csvRecordData[2],
-            copado__Severity__c = csvRecordData[3],   
-            copado__File__c = csvRecordData[4],                                                                            
-            CSProject__c = csvRecordData[5],
-            copado__Line__c = Integer.valueOf(csvRecordData[6].removeEnd('\n')), 
-            copado__Static_Code_Analysis_Result__c = scarid,
-            copado__Info_URL__c = issueLink
-        );
-        SCAV.add(viol);   
-    }
+        for(Integer i=0; i&#x3C;csvFileLines.size(); i++){
+            String[] csvRecordData = csvFileLines[i].split(',');
+            String issueLink='$SERVER/project/issues?pullRequest=$BRANCH&#x26;issues='+csvRecordData[0]+'&#x26;open='+csvRecordData[0]+'&#x26;id=$PROJECT_ID';
+            
+            copado__Static_Code_Analysis_Violation__c viol= new copado__Static_Code_Analysis_Violation__c(
+                CSExtKey__c = csvRecordData[0],             
+                copado__Rule__c = csvRecordData[1],
+                copado__Type__c = csvRecordData[2],
+                copado__Severity__c = csvRecordData[3],   
+                copado__File__c = csvRecordData[4],                                                                            
+                CSProject__c = csvRecordData[5],
+                copado__Line__c = Integer.valueOf(csvRecordData[6].removeEnd('\n')), 
+                copado__Static_Code_Analysis_Result__c = scarid,
+                copado__Info_URL__c = issueLink
+            );
+            SCAV.add(viol);   
+        }
     insert SCAV;
+    } else {
+        System.debug('No Issues in CSV');
+    }
   } else {
-    System.debug('No Issues in CSV');
+    System.debug('Could not find User Story with name: ' + recID);
   }
+
 } else {
   System.debug('Not a User Story, check issues in CodeScan'); 
 }
@@ -275,9 +291,14 @@ export CF_SF_ENDPOINT="https://$(echo $CF_SF_ENDPOINT | sed -e 's/[^/]*\/\/\([^@
 copado -p "Inserting parent..."
 SFDX_ACCESS_TOKEN="$CF_SF_SESSIONID" sf org login access-token --alias copadoOrg --instance-url "$CF_SF_ENDPOINT" --no-prompt
 sf apex run --file /tmp/run.apex --target-org copadoOrg --json
+if [[ $? -ne 0 ]]
+then
+  echo "The Apex Script failed to add violations."
+  exit 1
+fi
 
 exit $exitCode
-```
+</code></pre>
 
 </details>
 
@@ -326,6 +347,12 @@ Violations will be stored as Static Code Analysis Violations.
 <figure><img src="../../../../.gitbook/assets/image (1551).png" alt=""><figcaption></figcaption></figure>
 
 ### Using the "Run CodeScan" button on the User Story page
+
+{% hint style="info" %}
+The Run CodeScan button allows you to run the scan directly from a User Story without committing and will reflect the results in a Static Code Analysis Results object attached to the User Story. &#x20;
+
+I**t will not update the Test record Pass/Fail for the User Story** as it is not executing in Copado's Quality Integration Framework like the function above.
+{% endhint %}
 
 To add and use the Run CodeScan Action on the User Story page, some additions must be made to the Run CodeScan function.\
 \

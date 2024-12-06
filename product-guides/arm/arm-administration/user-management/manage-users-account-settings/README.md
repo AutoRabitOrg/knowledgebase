@@ -238,6 +238,19 @@ Create permission sets to grant access among logical groupings of users, regardl
 | modifyAllRecords | Indicates whether the object referenced by the object field can be read, edited, or deleted by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object. |
 | viewAllRecords   | Indicates whether the object referenced by the object field can be read by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object.                     |
 
+In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
+
+* **Unmanaged**: The component isn't part of a managed package, allowing full editing and deletion.
+* **Beta**: The component is in a managed package version marked as beta, suitable for testing but not for production use.
+* **Released**: The component is in a managed package version officially released for production use.
+* **Installed**: The component is part of a managed package installed in a subscriber's org, and it can't be edited or deleted by the subscriber.
+* **InstalledEditable**: The component is part of an installed managed package but can be edited by the subscriber.
+* **Deprecated**: The component is marked as deprecated, indicating it's outdated or should no longer be used.
+* **DeprecatedEditable**: The component is deprecated but remains editable.
+* **Deleted**: The component has been deleted from the package.
+
+<figure><img src="../../../../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
+
 #### 11. Vlocity Configuration Settings <a href="#id-11-vlocity-configuration-settings" id="id-11-vlocity-configuration-settings"></a>
 
 Vlocity integration with ARM allows you to retrieve and deploy Vlocity metadata in the same way as for the Salesforce metadata, and commit the changes either to the repository or to a Version control branch.

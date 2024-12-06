@@ -6,7 +6,7 @@ SSO is an authentication process that allows users to access multiple applicatio
 
 ### Permissions <a href="#permissions" id="permissions"></a>
 
-You must have **System Admins** privileges to configure SSO settings for your organization.&#x20;
+You must have **Admin** privileges to configure SSO settings for your organization.&#x20;
 
 To check your Admin access in Vault, go to **Manage Users > Users** and verify if your "Type" is set to **Admin**.
 

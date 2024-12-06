@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Copado SFDX Integration
 
 Our Integration with Copado SFDX pipelines is currently a modification of their extension from their DevOps exchange. These modifications to the function script and Static Code Analysis Violation object add the following functionality:

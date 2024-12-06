@@ -128,6 +128,7 @@
       * [Issue "ip restricted"](fundamentals/faq/codescan-faqs/codescan-cloud-issues/issue-ip-restricted.md)
       * [SonarScanner Error - Commit & Merge Request SCA Failing but Allowing Submission](fundamentals/faq/codescan-faqs/codescan-cloud-issues/sonarscanner-error-commit-and-merge-request-sca-failing-but-allowing-submission.md)
       * ['Packfile is truncated' error](fundamentals/faq/codescan-faqs/codescan-cloud-issues/packfile-is-truncated-error.md)
+      * [False Positives](fundamentals/faq/codescan-faqs/codescan-cloud-issues/false-positives.md)
     * [Common Issues and Solutions](fundamentals/faq/codescan-faqs/common-issues-and-solutions.md)
   * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
     * [Common Restore Errors & Limitations](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)

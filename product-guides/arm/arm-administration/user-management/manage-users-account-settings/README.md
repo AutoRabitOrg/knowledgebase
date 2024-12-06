@@ -161,15 +161,40 @@ Select the **`Enable criteria based Review Process`** checkbox to enable the mer
 
 ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **62.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 62 or earlier. The newly supported Salesforce objects for each API version can be found [here](../salesforce-api-version.md).
 
-Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.
+Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.\
 
-<figure><img src="../../../../../.gitbook/assets/image (599).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1579).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
-3. **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.
+3.  **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
 
-<figure><img src="../../../../../.gitbook/assets/image (600).png" alt="" width="563"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/image (1583).png" alt=""><figcaption></figcaption></figure>
+4.  **Packaging and Deployment Settings:** Several options can be configured in this section:&#x20;
+
+    1. **Manageable States**: In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
+       * **Beta**: The component is in a managed package version marked as beta, suitable for testing but not for production use.
+       * **Released**: The component is in a managed package version officially released for production use.
+       * **Deleted**: The component has been deleted from the package.
+       * **Deprecated**: The component is marked as deprecated, indicating it's outdated or should no longer be used.
+       * **Unmanaged**: The component isn't part of a managed package, allowing full editing and deletion.
+       * **Installed**: The component is part of a managed package installed in a subscriber's org, and it can't be edited or deleted by the subscriber.
+       * **InstalledEditable**: The component is part of an installed managed package but can be edited by the subscriber.
+       * **DeprecatedEditable**: The component is deprecated but remains editable.
+
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
+
+    &#x62;**. Include Default Apex Tests For Run Tests Based On Changes**: When selected, the default configured tests are added to the set, even if Test classes or Apex Class Apex Triggers are unavailable. Apex Test Level executes as _RunSpecifiedTests_. However, if the checkbox is unchecked, no default tests are added, and no Apex Test Level is set. Salesforce default behavior is expected in such cases.
+
+    c. **`Enable Delta on PermissionSets:`** Per the Salesforce behavior, for _Salesforce API 40 or later_, all PermissionSets are replaced with the latest changes. However, when the _Enable Delta on PermissionSets_ checkbox is selected, the PermissionSets are retrieved from the source org and will append with the latest changes in the deployment package.
+
+    d. **`Include/Exclude Metadata Types`**: Be sure to exclude them to avoid retrieving unwanted metadata types during the deployment or merge.
+
+<figure><img src="../../../../../.gitbook/assets/image (1580).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**&#x20;
@@ -177,18 +202,11 @@ Select the API version to see the supported metadata types and avoid errors whil
 Enabling the **`Configuration for running delta on RecordType Picklist values`** checkbox may lead to more time for the build. If you deselect it, your build cycles will be shorter.
 {% endhint %}
 
-**Packaging and Deployment Settings**
 
-Several options can be configured in this section:&#x20;
-
-1. **`Exclude Baseline Managed Package Changes:`** Upon selection, it considers only modified/changed metadata members and not base components of the managed packages.
-2. **`Include Default Apex Tests For Run Tests Based On Changes:`** When selected, the default configured tests are added to the set, even if Test classes or Apex Class Apex Triggers are unavailable. Apex Test Level executes as _RunSpecifiedTests_. However, if the checkbox is unchecked, no default tests are added, and no Apex Test Level is set. Salesforce default behavior is expected in such cases.
-3. **`Enable Delta on PermissionSets:`** Per the Salesforce behavior, for _Salesforce API 40 or later_, all PermissionSets are replaced with the latest changes. However, when the _Enable Delta on PermissionSets_ checkbox is selected, the PermissionSets are retrieved from the source org and will append with the latest changes in the deployment package.
-4. **`Include/Exclude Metadata Types`**: Be sure to exclude them to avoid retrieving unwanted metadata types during the deployment or merge.
 
 **Rollback Settings**
 
-Ensure you exclude them to avoid retrieving unwanted metadata types deployment or commits rollback.
+Ensure you exclude them to avoid retrieving unwanted metadata types during deployment or commits rollback.
 
 <figure><img src="../../../../../.gitbook/assets/image (601).png" alt="" width="540"><figcaption></figcaption></figure>
 
@@ -238,18 +256,7 @@ Create permission sets to grant access among logical groupings of users, regardl
 | modifyAllRecords | Indicates whether the object referenced by the object field can be read, edited, or deleted by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object. |
 | viewAllRecords   | Indicates whether the object referenced by the object field can be read by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object.                     |
 
-In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
 
-* **Beta**: The component is in a managed package version marked as beta, suitable for testing but not for production use.
-* **Released**: The component is in a managed package version officially released for production use.
-* **Deleted**: The component has been deleted from the package.
-* **Deprecated**: The component is marked as deprecated, indicating it's outdated or should no longer be used.
-* **Unmanaged**: The component isn't part of a managed package, allowing full editing and deletion.
-* **Installed**: The component is part of a managed package installed in a subscriber's org, and it can't be edited or deleted by the subscriber.
-* **InstalledEditable**: The component is part of an installed managed package but can be edited by the subscriber.
-* **DeprecatedEditable**: The component is deprecated but remains editable.
-
-<figure><img src="../../../../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
 
 #### 11. Vlocity Configuration Settings <a href="#id-11-vlocity-configuration-settings" id="id-11-vlocity-configuration-settings"></a>
 

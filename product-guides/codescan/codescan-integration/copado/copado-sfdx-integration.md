@@ -592,7 +592,7 @@ Navigate to the Parameters tab and click **Edit.**
 Click **Add New Parameter** and add the following parameters:
 
 **Name:** USER\_STORY\
-**Value:** {$Context.copado\_\_JobExecution\_\_r.copado\_\_UserStoryCommit\_\_r.copado\_\_User\_Story\_\_c}
+**Value:** {$Context}
 
 **Name**: BASE\_BRANCH\
 **Value**: {$Pipeline.copado\_\_Main\_Branch\_\_c}

@@ -159,7 +159,7 @@ Select the **`Enable criteria based Review Process`** checkbox to enable the mer
 
 #### 10. Salesforce Settings <a href="#id-10-salesforce-settings" id="id-10-salesforce-settings"></a>
 
-ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **57.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 57 or earlier. The newly supported Salesforce objects for each API version can be found [here](../salesforce-api-version.md).
+ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **62.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 62 or earlier. The newly supported Salesforce objects for each API version can be found [here](../salesforce-api-version.md).
 
 Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.
 
@@ -240,14 +240,14 @@ Create permission sets to grant access among logical groupings of users, regardl
 
 In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
 
-* **Unmanaged**: The component isn't part of a managed package, allowing full editing and deletion.
 * **Beta**: The component is in a managed package version marked as beta, suitable for testing but not for production use.
 * **Released**: The component is in a managed package version officially released for production use.
+* **Deleted**: The component has been deleted from the package.
+* **Deprecated**: The component is marked as deprecated, indicating it's outdated or should no longer be used.
+* **Unmanaged**: The component isn't part of a managed package, allowing full editing and deletion.
 * **Installed**: The component is part of a managed package installed in a subscriber's org, and it can't be edited or deleted by the subscriber.
 * **InstalledEditable**: The component is part of an installed managed package but can be edited by the subscriber.
-* **Deprecated**: The component is marked as deprecated, indicating it's outdated or should no longer be used.
 * **DeprecatedEditable**: The component is deprecated but remains editable.
-* **Deleted**: The component has been deleted from the package.
 
 <figure><img src="../../../../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
 

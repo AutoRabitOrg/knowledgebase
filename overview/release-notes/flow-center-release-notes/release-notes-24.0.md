@@ -12,7 +12,7 @@ The latest FlowCenter release provides a new feature designed to enhance user pr
 
 A new global filter is available to help users remove validation deployments from the scope of a dashboard. This filter applies to all widgets.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="332"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="332"><figcaption></figcaption></figure></div>
 
 ## Release Notes 24.0.3
 

@@ -8,19 +8,19 @@ When reviewing your violations inline, **SonarQube™** allows you to mark **Fal
 
 **Important Note:** False positives are not carried across projects. For example, if you mark an issue as a false positive in Project One and create Project Two from the same source code, the issue will still be present in Project Two until it is marked otherwise.
 
-### Using suppressUnitTestViolations parameter <a href="#using-suppressunittestviolations-parameter" id="using-suppressunittestviolations-parameter"></a>
+### Using `suppressUnitTestViolations` parameter <a href="#using-suppressunittestviolations-parameter" id="using-suppressunittestviolations-parameter"></a>
 
-Each rule includes the **suppressUnitTestViolations** parameter, which determines whether any violations of this rule are reported in test methods.
+Each rule includes the **`suppressUnitTestViolations`** parameter, which determines whether any violations of this rule are reported in test methods.
 
-There are three options for **suppressUnitTestViolations** in the rule configuration when adding a rule to your custom Quality Profile: **Display**, **Suppress** and **Default**. &#x20;
+There are three options for **`suppressUnitTestViolations`** in the rule configuration when adding a rule to your custom Quality Profile: **Display**, **Suppress** and **Default**. &#x20;
 
 * **Display** will always throw a violation in test classes (default)
 * **Suppress** will never throw a violation in test classes.&#x20;
 * **Default** will be either **Suppress** or **Display** based on whether the rule applies to test classes, with the default set to **Display** unless specified otherwise.\
   \
-  **For example**, setting **suppressUnitTestViolations** to **Suppress** for the rule **AvoidSoqlInLoops** would ignore the violation below:
+  **For example**, setting **`suppressUnitTestViolations`** to **Suppress** for the rule **`AvoidSoqlInLoops`** would ignore the violation below:
 
-```scss
+```
 @IsTest
 class newClass {
    void method1(){

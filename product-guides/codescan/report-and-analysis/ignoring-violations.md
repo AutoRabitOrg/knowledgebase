@@ -37,7 +37,7 @@ The `@suppresswarnings` annotation provides a way to block rule violations for s
 
 The following will ignore all rule violations for the **class Test1**:
 
-<pre class="language-html"><code class="lang-html"><strong>@SuppressWarnings(‘all’)
+<pre><code><strong>@SuppressWarnings(‘all’)
 </strong>class newClass {
    void method1(){
      for (int i = 0; i &#x3C; 10; i++){

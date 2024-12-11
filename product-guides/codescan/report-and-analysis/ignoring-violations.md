@@ -1,23 +1,26 @@
 # Ignoring violations
 
-There are multiple ways to ignore false positives or avoid unwanted violations in [CodeScan](https://www.codescan.io/).
+CodeScan offers multiple ways to manage false positives and avoid unwanted violations.
 
 ### Marking False Positives <a href="#marking-false-positives" id="marking-false-positives"></a>
 
-When viewing your violations inline, **SonarQube™** allows you to mark **False Positives** to prevent further alerts about certain issues in your code. This will block that violation from appearing until it is unblocked.
+When reviewing your violations inline, **SonarQube™** allows you to mark **False Positives** to prevent further alerts about certain issues in your code. This will block that violation from reappearing until it is unblocked.
 
-This feature will not carry the false positive between projects.\
-**For example**, if you mark an issue as a false positive in ProjectOne and create ProjectTwo from the same code source, the issue will still be present in ProjectTwo until it is marked otherwise.
+**Important Note:** False positives are not carried across projects. For example, if you mark an issue as a false positive in Project One and create Project Two from the same source code, the issue will still be present in Project Two until it is marked otherwise.
 
 ### Using suppressUnitTestViolations parameter <a href="#using-suppressunittestviolations-parameter" id="using-suppressunittestviolations-parameter"></a>
 
-For each rule we have provided the parameter **suppressUnitTestViolations**. This stops any violations of this rule being reported in test methods.
+Each rule includes the **suppressUnitTestViolations** parameter, which determines whether any violations of this rule are reported in test methods.
 
-There are three options for **suppressUnitTestViolations** in the rule configuration when adding a rule to your custom Quality Profile: **Display**, **Suppress** and **Default**.  **Display** will always throw a violation in test classes, **Suppress** will never throw a violation in test classes. **Default** will be either **Suppress** or **Display** based on if the rule applies to test classes. Default will always be set to **Display** unless shown otherwise.\
-\
-**For example**, setting **suppressUnitTestViolations** to **Suppress** for the rule **AvoidSoqlInLoops** would ignore the violation below:
+There are three options for **suppressUnitTestViolations** in the rule configuration when adding a rule to your custom Quality Profile: **Display**, **Suppress** and **Default**. &#x20;
 
-```
+* **Display** will always throw a violation in test classes (default)
+* **Suppress** will never throw a violation in test classes.&#x20;
+* **Default** will be either **Suppress** or **Display** based on whether the rule applies to test classes, with the default set to **Display** unless specified otherwise.\
+  \
+  **For example**, setting **suppressUnitTestViolations** to **Suppress** for the rule **AvoidSoqlInLoops** would ignore the violation below:
+
+```scss
 @IsTest
 class newClass {
    void method1(){
@@ -30,22 +33,19 @@ class newClass {
 
 ### Using @SuppressWarnings <a href="#using-suppresswarnings" id="using-suppresswarnings"></a>
 
-**SonarQube™** allows you to mark **False Positives** to prevent further alerts about certain issues in your code but these changes will not be remembered if you have multiple environments that aren’t linked together.
-
-Using the **@SuppressWarnings** annotation allows you to block rule violations for certain classes and methods.
+The `@suppresswarnings` annotation provides a way to block rule violations for specific classes, methods, and fields. Although **SonarQube™** allows you to mark **False Positives** to prevent further alerts about certain issues in your code, these changes are not remembered if you have multiple environments that aren’t linked together. Using the **`@SuppressWarnings`** annotation ensures consistency across multiple environments.
 
 The following will ignore all rule violations for the **class Test1**:
 
-```
-@SuppressWarnings(‘all’)
-class newClass {
+<pre class="language-html"><code class="lang-html"><strong>@SuppressWarnings(‘all’)
+</strong>class newClass {
    void method1(){
-     for (int i = 0; i < 10; i++){
+     for (int i = 0; i &#x3C; 10; i++){
        insert new Account(name = ‘Name ’ + i);
      }
    }
-}
-```
+<strong>}
+</strong></code></pre>
 
 Whereas this would ignore only the rules given to **@SuppressWarnings** as parameters within **method1**:
 
@@ -89,13 +89,15 @@ class newClass {
 
 ### Using //NOSONAR <a href="#using-nosonar" id="using-nosonar"></a>
 
-This can be used to ignore all rules on a single line:
+The //NOSONAR comment suppresses all rules for a single line of code:
+
+Example:
 
 ```
-class newClass {
-   void method1(){
-     for (int i = 0; i < 10; i++){
-       insert new Account(name = ‘Name ’ + i); //NOSONAR
+::: class newClass {
+   void method1() {
+     for (int i = 0; i < 10; i++) {
+       insert new Account(name = 'Name ' + i); //NOSONAR
      }
    }
 }

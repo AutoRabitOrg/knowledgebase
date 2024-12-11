@@ -94,7 +94,7 @@ The //NOSONAR comment suppresses all rules for a single line of code:
 Example:
 
 ```
-::: class newClass {
+class newClass {
    void method1() {
      for (int i = 0; i < 10; i++) {
        insert new Account(name = 'Name ' + i); //NOSONAR

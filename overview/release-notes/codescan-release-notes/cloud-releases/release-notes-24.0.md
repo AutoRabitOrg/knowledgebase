@@ -147,12 +147,12 @@ If both rules are active, check the violations that were reported and disable on
     1.  In the UI, users are able to set **Delete inactive branches and PRs after** value:
 
         <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
-    2. Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.\
+    2.  Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.\
 
-4.  **Fixed issue with Group Synchronization for SAML connections**\
-    We uncovered an issue with Group Synchronization during a recent customer implementation. We identified the root cause and a code change delivered in this release fixes the issue. Group synchronization is now working as designed. Further, we verified the Group synchronization option in SAML connection on a customer environment and have reported that this capability is working as expected.
 
-    <figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1585).png" alt=""><figcaption></figcaption></figure>
+4. **Fixed issue with Group Synchronization for SAML connections**\
+   We uncovered an issue with Group Synchronization during a recent customer implementation. We identified the root cause and a code change delivered in this release fixes the issue. Group synchronization is now working as designed. Further, we verified the Group synchronization option in SAML connection on a customer environment and have reported that this capability is working as expected.
 
 ## Release Notes 24.0.13
 

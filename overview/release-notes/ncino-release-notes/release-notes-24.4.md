@@ -1,6 +1,6 @@
 # Release Notes 24.4
 
-## nCino & Data Loader 24.4.4 Release Notes
+## nCino + Data Loader 24.4.4 Release Notes
 
 **Release Date: 13 December 2024**
 

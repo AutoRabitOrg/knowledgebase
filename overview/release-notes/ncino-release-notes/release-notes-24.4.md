@@ -1,5 +1,14 @@
 # Release Notes 24.4
 
+## nCino & Data Loader 24.4.4 Release Notes
+
+**Release Date: 13 December 2024**
+
+* **Revision Range:** Improved the checkout logic for the revision range to enhance performance.
+* **Fixed Query Logic:** Resolved an issue with adding conditions to queries.
+* **Template Failure:** Fixed the issue causing failures in the "nCino Template."
+* **Publish Icon:** Ensured the publish icon is visible for "nCino Customers" on the "Feature Template Manage" screen.
+
 ## nCino 24.4.3 Release Notes
 
 **Release Date: 24 November 2024**

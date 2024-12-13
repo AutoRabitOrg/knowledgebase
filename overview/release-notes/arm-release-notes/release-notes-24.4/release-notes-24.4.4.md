@@ -10,23 +10,23 @@ With this release, we have implemented the following enhancements and support fi
 
 #### **Protection Against CSV Injection**
 
-We have strengthened protection against the potential for a security vulnerability related to CSV injection, where malicious formulas embedded in CSV files could execute commands when opened in spreadsheet applications. User-generated data is now thoroughly sanitized, and special characters are omitted to prevent formula execution. This enhancement ensures that exported CSV files are safe to open, enhancing security against attempted cyberattacks. Impacted Modules: Org Sync History, Users, CI Job History, Reports, CI Job List
+We strengthened protection against the potential for a security vulnerability related to CSV injection, where malicious formulas embedded in CSV files could execute commands when opened in spreadsheet applications. User-generated data is now thoroughly sanitized, and special characters are omitted to prevent formula execution. This enhancement ensures that exported CSV files are safe to open, enhancing security against attempted cyberattacks. Impacted Modules: Org Sync History, Users, CI Job History, Reports, CI Job List
 
 #### **Unique Email Enforcement for User Registration**
 
-We have eliminated the possibility for users to register using multiple email accounts for the same email ID, preventing potential confusion and security risks. The registration process now includes strict validation checks to ensure each email address is linked to only one active account. Email verification has also been implemented to confirm ownership and prevent unauthorized registrations, improving data privacy and system integrity.
+We eliminated the possibility for users to register using multiple email accounts for the same email ID, preventing potential confusion and security risks. The registration process now includes strict validation checks to ensure each email address is linked to only one active account. Email verification has also been implemented to confirm ownership and prevent unauthorized registrations, improving data privacy and system integrity.
 
 #### **TAF Sunset Feature Flag**
 
-We have introduced a feature flag to support the gradual phase-out of TAF functionality in AutoRABIT. This flag allows controlled activation or deactivation of TAF at the customer account level, enabling a seamless transition without disrupting existing workflows. Automated testing and monitoring have been implemented to ensure functionality operates correctly and customer environments remain stable during the transition. Affected customers will be notified with detailed timelines, guidance, and alternative solutions to support their migration. Impacted Modules: TAF, CI Jobs, Reporting
+We introduced a feature flag to support the gradual phase-out of TAF functionality in AutoRABIT. This flag allows controlled activation or deactivation of TAF at the customer account level, enabling a seamless transition without disrupting existing workflows. Automated testing and monitoring have been implemented to ensure functionality operates correctly and customer environments remain stable during the transition. Affected customers will be notified with detailed timelines, guidance, and alternative solutions to support their migration. Impacted Modules: TAF, CI Jobs, Reporting
 
 #### **Asynchronous Deployment Processing**
 
-We have implemented an update to the deployMetadata SOAP service within the Deployment module, which now enables the process to run asynchronously in the background when initiating a Full Deployment. Previously, the service remained in a "pending" state until the deployment job completed. With this enhancement, the deployment process is more efficient, allowing the service to proceed without blocking user actions while the deployment completes in the background. Impacted Module: Deployments
+We implemented an update to the deployMetadata SOAP service within the Deployment module, which now enables the process to run asynchronously in the background when initiating a Full Deployment. Previously, the service remained in a "pending" state until the deployment job completed. With this enhancement, the deployment process is more efficient, allowing the service to proceed without blocking user actions while the deployment completes in the background. Impacted Module: Deployments
 
 #### **Enhanced Audit Log API for ELK Integration**
 
-AutoRABIT has introduced a new API endpoint in the audit logs service to provide structured access to CEF audit logs. The API allows querying audit events based on a specified time range and maximum results, returning a detailed JSON response that includes event metadata, such as timestamps, event types, user actions, and outcomes. This enhancement replaces the previous plain-text log format with a structured system with query capabilities, enabling easier integration and analysis of audit data. Impacted Module: API Audit Log Event
+AutoRABIT introduced a new API endpoint in the audit logs service to provide structured access to CEF audit logs. The API allows querying audit events based on a specified time range and maximum results, returning a detailed JSON response that includes event metadata, such as timestamps, event types, user actions, and outcomes. This enhancement replaces the previous plain-text log format with a structured system with query capabilities, enabling easier integration and analysis of audit data. Impacted Module: API Audit Log Event
 
 #### **Fixed Redirect for Unsupported Types in Org Sync Report**
 

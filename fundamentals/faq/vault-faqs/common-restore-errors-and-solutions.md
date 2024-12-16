@@ -185,11 +185,11 @@ This error is generated when the required user permissions are missing in Salesf
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Decrease the batch size or execute the job in serial mode instead of parallel mode to help prevent records in different batches having dependency with each other getting inserted into Salesforce in parallel and causing the error.
-3. For more information, go to this link  [![](file:///C:/Users/shannan.zerance/AppData/Local/Packages/oice\_16\_974fa576\_32c1d314\_278d/AC/Temp/msohtmlclip1/01/clip\_image001.png)Feed Item Detail | Salesforce Trailblazer Community](https://developer.salesforce.com/forums/?id=906F0000000D9CuIAK)&#x20;
+3. For more information, go to this link  [![](file:///C:/Users/shannan.zerance/AppData/Local/Packages/oice_16_974fa576_32c1d314_278d/AC/Temp/msohtmlclip1/01/clip_image001.png)Feed Item Detail | Salesforce Trailblazer Community](https://developer.salesforce.com/forums/?id=906F0000000D9CuIAK)&#x20;
 
 #### File Size Limitations
 
-If the metadata zip file exceeds the file size limit of 39MB, Vault cannot restore the file to the destination Org. Use the workbench to restore a file of larger size. The following error message will be logged in the UI logs: **“Metadata ZIP file exceeds the maximum allowed size of 39 MB. Please refer to the** [AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/) **for more details.”** Please refer to this [Salesforce article](https://developer.salesforce.com/docs/atlas.en-us.salesforce\_app\_limits\_cheatsheet.meta/salesforce\_app\_limits\_cheatsheet/salesforce\_app\_limits\_platform\_metadata.htm) for more information on the file size limitations.
+If the metadata zip file exceeds the file size limit of 39MB, Vault cannot restore the file to the destination Org. Use the workbench to restore a file of larger size. The following error message will be logged in the UI logs: **“Metadata ZIP file exceeds the maximum allowed size of 39 MB. Please refer to the** [AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/) **for more details.”** Please refer to this [Salesforce article](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_metadata.htm) for more information on the file size limitations.
 
 ***
 
@@ -222,3 +222,21 @@ Such failures occurs when such records are already present in the destination
 * **Installed Packages**
   * **MuleSoft** operates as an installed package component in Salesforce. Consequently, it cannot be backed up, restored, or replicated using API calls.&#x20;
   * Installed packages, which includes **MuleSoft** or anything related to Mule, cannot be backed up directly; they must be obtained from the Salesforce AppExchange platform and installed.
+
+### **DATA ENCRYPTION**
+
+#### **Does Vault encrypt data at rest by default?**
+
+Yes, by default, Vault encrypts data at rest in **Amazon S3 buckets** using **AES-256 encryption**, a highly secure encryption standard.
+
+#### **What is AES-256 encryption, and why is it used?**
+
+AES-256 (Advanced Encryption Standard) is a **powerful encryption algorithm** that ensures data is stored in an unreadable format unless decrypted with the proper key. It is widely recognized for its security and compliance with regulations like GDPR, HIPAA, and PCI-DSS.
+
+#### **Can I disable data encryption at rest?**
+
+No, encryption at rest is enforced by default in Vault and cannot be disabled. This ensures all stored data remains secure, even in the unlikely event of unauthorized access to storage.
+
+#### **Where is encrypted data stored?**
+
+Encrypted data is stored in **Amazon S3 buckets**, part of Amazon Web Services (AWS), which provides secure, scalable, and reliable cloud storage.

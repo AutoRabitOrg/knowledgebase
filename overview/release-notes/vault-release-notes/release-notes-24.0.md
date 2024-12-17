@@ -5,7 +5,7 @@
 **Release Date: 18 December 2024**
 
 * **Customer Session Expired:** Enhanced record processing to prevent user session timeouts.
-* **OData Backward Compatibility:** Fixed an issue to ensure old Archival jobs process files correctly in Vault-Connect.
+* **OData Backward Compatibility:** Fixed an issue to ensure old Archival jobs process files correctly in Vault Connect.
 * **OData Archive Query View:** Resolved an issue to ensure the complete query is visible in the view.
 * **Content Version Records Processing:** Implemented a check during archival to maintain the relationships of files linked to multiple records.
 

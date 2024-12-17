@@ -2,7 +2,7 @@
 
 ## Vault 24.2.5 Release Notes
 
-**Release Date: 17 December 2024**
+**Release Date: 18 December 2024**
 
 * **Customer Session Expired:** Enhanced record processing to prevent user session timeouts.
 * **OData Backward Compatibility:** Fixed an issue to ensure old Archival jobs process files correctly in Vault-Connect.

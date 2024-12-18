@@ -2,36 +2,9 @@
 
 ## Vault FAQs
 
-### Common Restore/Replicate Errors & Solutions
+## Common Restore/Replicate Errors & Solutions
 
 ### RESTORE/REPLICATE
-
-#### How can I filter backup data by specific dates and use it as the source to Restore/Replicate?
-
-To filter data based on specific dates from a backup using a CSV file and Excel, follow these steps:
-
-1. **Download CSV File**: Download the CSV file corresponding to the object on which the date needs to be filtered from the backup.
-2. **Filter Dates Using Excel**: Open the downloaded CSV file in Excel. Use Excel's filtering features to filter out the IDs for which the dates match the required criteria.
-3. **Create Final CSV File**: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
-4. **Upload and Filter Backup**: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
-
-#### **If a Salesforce org is decommissioned, will its backup still be available and can it be restored (replicated) to another org?**
-
-1. If the Backup snapshots are available in the storage, i.e., not expired, you can "**Replicate**" them to another org ("Restore" is for the same org, which is not possible if the org is decommissioned).
-2. If the configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The Backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend our customers not delete any configurations unless they are certain they won't need them in the future.
-
-#### **Condition-Based Data Deletion from Existing Backup**
-
-**Resolution**:&#x20;
-
-1. If the data is backed up in GCP and AWS, it is not possible to delete it with Vault.
-2. If you want to delete from the Org, it is not possible to delete just a field from Vault—you can archive the whole record but not the data for a single field.
-
-#### **Is it possible to mask the existing field/record that is already backed up in GCP?**
-
-**Resolution**:&#x20;
-
-It is impossible to mask existing data in a backup, as backups are kept immutable in compliance with General Data Protection Regulation (GDPR) requirements.
 
 #### **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY**
 
@@ -190,7 +163,7 @@ This error is generated when the required user permissions are missing in Salesf
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Decrease the batch size or execute the job in serial mode instead of parallel mode to help prevent records in different batches having dependency with each other getting inserted into Salesforce in parallel and causing the error.
-3. For more information, go to this link  [![](file:///C:/Users/shannan.zerance/AppData/Local/Packages/oice_16_974fa576_32c1d314_278d/AC/Temp/msohtmlclip1/01/clip_image001.png)Feed Item Detail | Salesforce Trailblazer Community](https://developer.salesforce.com/forums/?id=906F0000000D9CuIAK)&#x20;
+3. For more information, go to[![](file:///C:/Users/shannan.zerance/AppData/Local/Packages/oice_16_974fa576_32c1d314_278d/AC/Temp/msohtmlclip1/01/clip_image001.png)Feed Item Detail | Salesforce Trailblazer Community](https://developer.salesforce.com/forums/?id=906F0000000D9CuIAK)&#x20;
 
 #### File Size Limitations
 
@@ -227,21 +200,3 @@ Such failures occurs when such records are already present in the destination
 * **Installed Packages**
   * **MuleSoft** operates as an installed package component in Salesforce. Consequently, it cannot be backed up, restored, or replicated using API calls.&#x20;
   * Installed packages, which includes **MuleSoft** or anything related to Mule, cannot be backed up directly; they must be obtained from the Salesforce AppExchange platform and installed.
-
-### **DATA ENCRYPTION**
-
-#### **Does Vault encrypt data at rest by default?**
-
-Yes, by default, Vault encrypts data at rest in **Amazon S3 buckets** using **AES-256 encryption**, a highly secure encryption standard.
-
-#### **What is AES-256 encryption, and why is it used?**
-
-AES-256 (Advanced Encryption Standard) is a **powerful encryption algorithm** that ensures data is stored in an unreadable format unless decrypted with the proper key. It is widely recognized for its security and compliance with regulations like GDPR, HIPAA, and PCI-DSS.
-
-#### **Can I disable data encryption at rest?**
-
-No, encryption at rest is enforced by default in Vault and cannot be disabled. This ensures all stored data remains secure, even in the unlikely event of unauthorized access to storage.
-
-#### **Where is encrypted data stored?**
-
-Encrypted data is stored in **Amazon S3 buckets**, part of Amazon Web Services (AWS), which provides secure, scalable, and reliable cloud storage.

@@ -15,6 +15,11 @@ To filter data based on specific dates from a backup using a CSV file and Excel,
 3. **Create Final CSV File**: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
 4. **Upload and Filter Backup**: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
 
+#### **If a Salesforce org is decommissioned, will its backup still be available and can it be restored (replicated) to another org?**
+
+1. If the Backup snapshots are available in the storage, i.e., not expired, you can "**Replicate**" them to another org ("Restore" is for the same org, which is not possible if the org is decommissioned).
+2. If the configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The Backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend our customers not delete any configurations unless they are certain they won't need them in the future.
+
 #### **Condition-Based Data Deletion from Existing Backup**
 
 **Resolution**:&#x20;

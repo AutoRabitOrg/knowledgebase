@@ -190,12 +190,6 @@ The **Test Results** will not show any test scripts configured to run with the I
 
 <figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### TAF Known Limitations <a href="#taf-known-limitations" id="taf-known-limitations"></a>
-
-ARM is unable to load the log files for any job using the **View Log** option in the report. Instead, an error _No log file found_ appears where the logs should be.
-
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-
 ### Vlocity Known Limitations <a href="#vlocity-known-limitations" id="vlocity-known-limitations"></a>
 
 1. **Review Artifacts** option is disabled for vlocity components in the **EZ-Commit** screen.

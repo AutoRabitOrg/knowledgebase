@@ -1,10 +1,10 @@
 # Getting Started
 
-The following article demonstrates how to create a new CodeScan cloud account, log in to an existing CodeScan account, as well as how to set up your CodeScan account to get started.
+The following article demonstrates how to create a new CodeScan cloud account and log in to an existing CodeScan account, as well as how to set up your CodeScan account to get started.
 
 ### Signing Up with CodeScan <a href="#signing-up-with-codescan" id="signing-up-with-codescan"></a>
 
-Follow the steps below to Sign Up and Log In to CodeScan Cloud:
+Follow the steps below to sign up and log in to CodeScan Cloud:
 
 1. To sign up for CodeScan Cloud, navigate to [https://www.codescan.io/](https://www.codescan.io/).
 
@@ -35,12 +35,12 @@ Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/ses
 **And you're in! Enjoy!**
 
 {% hint style="info" %}
-**Note:** When enabling **Two-Factor Authentication** you will be required to download the **Auth0 Guardian** app to your mobile device. You will be prompted for this when you first log in. You cannot make changes to your two-factor authentication after sign up. Please contact [support@codescan.io](https://support@codescan.io/) to make changes to your two-factor authentication.
+**Note:** When enabling **Two-Factor Authentication**, you will be required to download the **Auth0 Guardian** app to your mobile device. You will be prompted for this when you first log in. You cannot make changes to your two-factor authentication after signup. Please contact [support@codescan.io](https://support@codescan.io/) to make changes to your two-factor authentication.
 {% endhint %}
 
 ### Two-Factor Authentication (MFA/2FA) <a href="#twofactor-authentication-mfa2fa" id="twofactor-authentication-mfa2fa"></a>
 
-CodeScan offers 2FA to further support account privacy and security. This document helps you understand how to set up and work with 2FA.
+CodeScan offers MFA/2FA to further support account privacy and security. This document helps you understand how to set up and work with 2FA.
 
 {% hint style="info" %}
 **Note:** Be sure to save the token generated at signup, as it allows you to reset the 2FA if you have trouble logging in or getting push notifications.
@@ -50,7 +50,7 @@ CodeScan offers 2FA to further support account privacy and security. This docume
 
 <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. Fill in all the details and click on **`Sign Up`** button.
+2. Fill in all the details and click on the **`Sign Up`** button.
 3. Download the authenticator app on your mobile phone. Once you have downloaded the app, select **`I’ve already downloaded it`** to continue.
 4.  Next, you will be prompted to scan the **QR code** with your Guardian (authenticator) app.
 
@@ -86,9 +86,10 @@ The CodeScan login screen allows you to log in to your instance.
 
 6. If you choose **`Application Security Testing`**, you will be taken to the **Projects** page, which will be your default homepage. As a result, the next time you log in to CodeScan, you will be instantly directed to the **Projects** page because it is set as the default page.
 7. Similarly, if you choose **`Policy Management`**, the **Policy Results** screen will be set as your default homepage.
-8. The **`Policy Results`** page is also accessible via the **`More`** menu.
+8.  The **`Policy Results`** page is also accessible via the **`More`** menu.\
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1586).png" alt=""><figcaption></figcaption></figure>
 
 ### Getting Started with CodeScan Cloud <a href="#getting-started-with-codescan-cloud" id="getting-started-with-codescan-cloud"></a>
 

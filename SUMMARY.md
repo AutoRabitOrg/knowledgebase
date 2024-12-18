@@ -179,7 +179,7 @@
       * [ARM User Permissions](product-guides/arm/arm-administration/user-management/arm-user-permissions.md)
       * [ARM Credential Manager](product-guides/arm/arm-administration/user-management/arm-credential-manager.md)
       * [Delegate Approvals to another User](product-guides/arm/arm-administration/user-management/delegate-approvals-to-another-user.md)
-      * [Enforce Single Sign On (SSO)](product-guides/arm/arm-administration/user-management/enforce-single-sign-on-sso.md)
+      * [Enforce Single Sign-On (SSO)](product-guides/arm/arm-administration/user-management/enforce-single-sign-on-sso.md)
       * [Salesforce API version](product-guides/arm/arm-administration/user-management/salesforce-api-version.md)
       * [Changing Super Admin in ARM](product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm.md)
     * [Registration](product-guides/arm/arm-administration/registration/README.md)

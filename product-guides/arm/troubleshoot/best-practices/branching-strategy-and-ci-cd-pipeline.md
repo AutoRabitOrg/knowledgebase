@@ -2,7 +2,7 @@
 
 There is no “one size fits all” solution when it comes to branching strategy. This page can only provide general best practices, which need to be adjusted based on specific requirements of the given project (environment landscape and other SDLC details).
 
-### Source Of Truth <a href="#source-of-truth" id="source-of-truth"></a>
+### Source of Truth <a href="#source-of-truth" id="source-of-truth"></a>
 
 The GIT repository is the sole Source of Truth for the project. Once established, changes can only go from GIT to Salesforce, with the CI Jobs being the only point of entry. Manual changes in the integrated environments, deployments from multiple branches, or other sources (ChangeSet, Workbench, etc.) will get the environment out of sync with the branch, defeating the purpose of [version control](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/).&#x20;
 

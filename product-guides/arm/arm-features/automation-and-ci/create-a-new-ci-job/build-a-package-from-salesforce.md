@@ -45,7 +45,7 @@ Under the **Build** section, fill in the below details:
 2. **Exclude Installed (Managed) components and changes:** This option will exclude any **Managed packages** that the user may have installed.
    * **Exclude all manually created components:** All manually added components in the installed (managed) package will also get excluded.
 3. **Include Picklist modifications:** Whenever a picklist value gets altered or deleted, SF will not update the picklist's last altered date. Whether the picklist value gets altered or not, it will pull all the picklist fields into the source org. This option is available only if the source is a [Salesforce Org](deploy-a-package-from-a-salesforce-org.md).
-4. **Generate Code Coverage Report:** This option generates a code overage report. This has info about the apex tests run, the classes covered, and the assertions that have failed.
+4. **Generate Code Coverage Report:** This option generates a code coverage report. This has info about the apex tests run, the classes covered, and the assertions that have failed.
 5. **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
 
 **For ApexPMD** and **Salesforce Scanner:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.

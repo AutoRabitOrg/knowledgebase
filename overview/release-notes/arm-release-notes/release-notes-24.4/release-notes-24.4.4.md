@@ -70,7 +70,11 @@ We corrected an issue during org-to-org deployments in which DigitalExperienceBu
 
 We resolved an issue where AutoRABIT failed to commit the latest package version to the `sfdx-project.json` file. When a new package version is created, it is now correctly updated and committed in the `sfdx-project.json` file, ensuring consistency between the project configuration and the deployed package versions. Impacted Module: CI Jobs. Support Case: #128347
 
-&#x20;
+## ARM Release Notes 24.4.4.1
+
+**Release Date: 22 December 2024**
+
+Patch to fix bugs in the nCino Query Validation module.&#x20;
 
 &#x20;
 

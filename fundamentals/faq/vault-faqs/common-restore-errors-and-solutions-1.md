@@ -31,6 +31,10 @@ It is impossible to mask existing data in a backup, as backups are kept immutabl
 
 If the backup configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend that our customers do not delete any configurations unless they are certain they'll not need them in the future.
 
+#### Does Vault support the Terafina managed packages?
+
+Currently, Vault does not support the Terafina managed package.
+
 ***
 
 ### Backup + Compare

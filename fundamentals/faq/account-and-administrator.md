@@ -135,7 +135,7 @@ Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/ar
 1. **The deleted user's credential exists in AutoRABIT**: Go to _**Admin > Credential Manager**_ and type in the username that exists. You should find a record if it is still there.
 2. [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **repository is registered with the existing user's credentials**: Get your existing user credentials updated with the new user details with the help of your admin. To do so, go to **Credential Manager** section and search for the existing user credential and get it updated with the new user details. Or, create a user credential for the new user and re-register the existing version control repository with it.
 
-#### Why my users do not have access to all of features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
+#### Why do my users not have access to all of features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
 
 1. Your users may not have the authority to access the modules that he is looking for; nevertheless, users with administrator privileges only will have access to certain features. To see the user's available roles in AutoRABIT, go to the **Admin > Roles** section.
 2. For the necessary permissions, contact your **Org Admin**.
@@ -158,13 +158,13 @@ If you're a sub-user and get an error message `Ceredential with name: "qa privat
 
 Depending on the error, the credentials may have expired. Check the repository credentials and then **Test Connection** in ARM. Then retrigger the branching baseline. Please contact our support team if the problem continues.
 
-#### Why is Test Connection in ARM failing even after re-authenticating the credentials? <a href="#why-is-test-connection-in-arm-failing-even-after-reauthenticating-the-credentials" id="why-is-test-connection-in-arm-failing-even-after-reauthenticating-the-credentials"></a>
+#### Why is my Test Connection in ARM failing even after re-authenticating the credentials? <a href="#why-is-test-connection-in-arm-failing-even-after-reauthenticating-the-credentials" id="why-is-test-connection-in-arm-failing-even-after-reauthenticating-the-credentials"></a>
 
 If you have already re-authenticated, but the issue is still unresolved, it may not be a credential issue. Please contact our support team so we can **whitelist the domain** from our end with the SRO team. Once this is whitelisted on our end, you must also whitelist the **Instance IPs** on your network side.
 
-#### How can I remove the previous Super Admin from ARM and assign access to myself? <a href="#how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself" id="how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself"></a>
+#### How can I remove the previous Admin from ARM and assign access to myself? <a href="#how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself" id="how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself"></a>
 
-Please contact the AutoRABIT support team; we will adjust the license to make you **Super Admin**. Once you have that access, you can log into ARM with your credentials and delete users without access.
+Please follow the guidance published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm). Once you have that access, you can log into ARM with your credentials and delete users without access.
 
 #### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but is there no Revision# created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 

@@ -45,7 +45,7 @@ Users can verify the expiry date by reviewing the backup history in Vault. In ou
 
 <figure><img src="../../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
 
-#### Can Vault migrate data from other Salesforce backup solutions?
+#### Can I migrate data from other Salesforce backup solutions?
 
 All backup solutions will ideally provide an option for users to download their data, which can be uploaded to our storage bucket and connected to our application to reinstate the backups/archives as if they were done through Vault. This is considered a professional service on our end, as there is significant effort involved from us to perform the migration.
 

@@ -8,7 +8,7 @@ If your account is locked, the person who holds the AutoRABIT main account shoul
 
 If your user account is associated to a different organization, this can happen.
 
-#### How would I go about updating or changing the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
+#### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
 
 To update the username on all registered orgs, re-authenticate the orgs in **Admin > SF Org Management** page.
 
@@ -37,7 +37,7 @@ To view your support ticket and its status, follow the steps below:
 
 Now you will be able to view your org-related tickets here.
 
-#### Unable to login into my ARM account. <a href="#unable-to-login-into-my-arm-account" id="unable-to-login-into-my-arm-account"></a>
+#### Why am I unable to login into my ARM account? <a href="#unable-to-login-into-my-arm-account" id="unable-to-login-into-my-arm-account"></a>
 
 If you're having trouble logging into your AutoRABIT account, here are some things you can try.
 
@@ -48,7 +48,7 @@ If you're having trouble logging into your AutoRABIT account, here are some thin
 5. **Restriction of your IP address**: Verify with your network team internally and verify if there are any issues or restrictions for your IP address from the network side.
 6. If nothing works out, please reach out to us by raising a [Support Ticket](https://support.autorabit.com/portal/en/home)
 
-#### Not receiving email to reset your account password <a href="#not-receiving-email-to-reset-your-account-password" id="not-receiving-email-to-reset-your-account-password"></a>
+#### Why did I not receive the email to reset my account password? <a href="#not-receiving-email-to-reset-your-account-password" id="not-receiving-email-to-reset-your-account-password"></a>
 
 If you requested a new password but didn't receive your password reset email, then:
 
@@ -162,7 +162,7 @@ Depending on the error, the credentials may have expired. Check the repository c
 
 If you have already re-authenticated, but the issue is still unresolved, it may not be a credential issue. Please contact our support team so we can **whitelist the domain** from our end with the SRO team. Once this is whitelisted on our end, you must also whitelist the **Instance IPs** on your network side.
 
-#### How can I remove the previous Admin from ARM and assign access to myself? <a href="#how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself" id="how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself"></a>
+#### How can I remove the previous Super Admin from ARM and assign access to myself? <a href="#how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself" id="how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself"></a>
 
 Please follow the guidance published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm). Once you have that access, you can log into ARM with your credentials and delete users without access.
 

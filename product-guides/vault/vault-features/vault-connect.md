@@ -115,6 +115,49 @@ This document provides complete information about the new feature Vault Connect,
 
 6. On completing the required selections, click on the Save button.&#x20;
 
+#### Configuring Connected Apps in Salesforce
+
+Connected Apps allow external applications to securely integrate with Salesforce, enabling seamless data sharing and advanced functionality. Proper configuration is critical to ensure secure and efficient integration. The following guide outlines the steps to configure a Connected App and set up authentication providers.
+
+#### Steps to Configure Connected Apps
+
+1. Go to **App Manager** from Quick Find and click on "**New Connected App" → "Create a Connected App.**"
+2. Provide a **Connected App Name**, set the **API Name** to default, and provide the User's email in the "**Contact Email**" field.
+3. Under "**API (Enable OAuth Settings),**" enable the following two options:
+   1. **Enable OAuth Settings**
+   2. **Enable for Device Flow**
+4. Let the "Callback URL" be the default value at this stage.
+5. From the "**Available OAuth Scopes**", select:
+   1. F**ull access (full)**
+   2. **Perform requests at any time (refresh\_token, offline\_access**).
+6. Ensure the following four checkboxes are checked:
+   1. **Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows**
+   2. **Require Secret for Web Server Flow**
+   3. **Require Secret for Refresh Token Flow**
+   4. **Enable Client Credentials Flow**
+7.  Please find the following screenshot for reference\
+
+
+    <figure><img src="../../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
+8. Click Save.
+
+#### Steps to Create Auth. Providers
+
+1. Go to "**Auth. Providers**" from Quick Find and click **New**.
+2. Select the "**Provider Type**" as "**Salesforce**".
+3. Provide a "**Name**" and set the "**URL Suffix**" to default.
+4. Provide the “Consumer Key” & “Consumer Secret”
+   1.  To get the "**Consumer Key**" and "**Consumer Secret**", navigate to the connected app and select "**Manage Consumer Details**" (refer to the following screenshot for guidance).&#x20;
+
+       <figure><img src="../../../.gitbook/assets/image (1589).png" alt=""><figcaption></figcaption></figure>
+
+       <figure><img src="../../../.gitbook/assets/image (1590).png" alt=""><figcaption></figcaption></figure>
+   2. Click the “**Copy**” button to copy the respective “**Consumer Key**” & “**Consumer Secret.**”
+5. Under "**Default Scopes**", enter "**refresh\_token full**" and click **Save**.
+6. After saving, you will see the "**Callback URL.**"
+7. Copy the Callback URL, edit the Connected App, paste it in the "**Callback URL**" field, and click **Save**.
+8. Go to "**External Data Sources**" from Quick Find, select the external data source created, and click "**Validate and Sync**."
+
 #### Create External Data Sources
 
 1. **Go to** → **External Data Sources** under setup.

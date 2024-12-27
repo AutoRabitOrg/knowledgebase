@@ -37,7 +37,7 @@ File attachments cannot be viewed from the Vault user interface or in CSV format
 
 ***
 
-### Restore / Replicate
+### Restore and Replicate
 
 #### Will the Restore operation create a duplicate if a record already exists in Salesforce?
 

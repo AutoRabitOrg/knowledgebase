@@ -4,7 +4,7 @@ CodeScan now provides a way to view your unit test coverage from your SFDX proje
 
 ### Requirements <a href="#requirements" id="requirements"></a>
 
-* A working **SonarQube™ LTA 9.9 or higher** installation
+* A working **SonarQube™ 9.9+ LTA** installation
 * A licensed [**CodeScan**](https://www.codescan.io/) **(4.1+) plugin**
 * An [**SFDX**](https://knowledgebase.autorabit.com/codescan/docs/codescan-sfdx-plugin) project linked to your Salesforce Org
 

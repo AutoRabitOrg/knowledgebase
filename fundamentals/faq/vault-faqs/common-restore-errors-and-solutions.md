@@ -1,8 +1,8 @@
-# Common Error Messages & Limitations
+# Common Error Messages + Limitations
 
 ## Vault FAQs
 
-## Common Error Messages & Resolutions
+## Common Error Messages + Resolutions
 
 ### Restore/Replicate
 
@@ -202,7 +202,7 @@ Such failures occurs when such records are already present in the destination
 * **MuleSoft** operates as an installed package component in Salesforce. Consequently, it cannot be backed up, restored, or replicated using API calls.&#x20;
 * Installed packages, which includes **MuleSoft** or anything related to Mule, cannot be backed up directly; they must be obtained from the Salesforce AppExchange platform and installed.
 
-**File Size**
+**File Size Limits**
 
 * **Issue:** If the metadata zip file exceeds the **file size limit of 39 MB**, then Vault cannot restore the file to the destination Org.&#x20;
 * **Details**: Use the workbench to restore larger files.&#x20;

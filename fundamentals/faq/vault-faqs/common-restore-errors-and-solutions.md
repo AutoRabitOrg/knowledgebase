@@ -1,210 +1,91 @@
-# Common Error Messages + Limitations
+# Frequently Asked Questions
 
 ## Vault FAQs
 
-## Common Error Messages + Resolutions
+### Backup and Compare
 
-### Restore/Replicate
+#### **Can I delete specific, condition-based data from an existing backup?**
 
-#### **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY**
+No, if the data is backed up in GCP and AWS, it is not possible to delete data from a field in Vault. If you want to delete it from the Org, you can archive the whole record but not the data for a single field.
 
-This error is a result of an issue stemming from a trigger in the Org.
+#### **Is it possible to mask the existing field/record that is already backed up in GCP?**
 
-**Resolution Steps:**
+It is impossible to mask existing data in a backup, as backups are kept immutable in compliance with General Data Protection Regulation (GDPR) requirements.
 
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
-2. Use the option to disable the triggers in the job configuration. For the triggers that cannot be disabled via metadata API, manually disable the triggers in Salesforce and re-run the job.
+#### **If a Salesforce org is decommissioned, will its backup still be available and can it be restored (replicated) to another org?**
 
-#### CANNOT\_EXECUTE\_FLOW\_TRIGGER
+1. If the Backup snapshots are available in the storage, i.e., not expired, you can "**Replicate**" them to another org ("Restore" is for the same org, which is not possible if the org is decommissioned).
+2. If the configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The Backup will be available in the storage, but it will be in Excel format. Restoring/Replicating, along with the relationships, will be a challenge and must be done manually, which is why we recommend users not delete any configurations unless they are certain they won't be needed in the future.
 
-* Typical error message - We can't save this record because the ‘Online Applicant Validation’ process failed. Give your Salesforce admin these details. An error occurred when executing a flow interview. Error ID: 1545064308-45750 (1670083917)
-* This error typically indicates that there is a Process Builder process / Flow in place which is causing the upsert operation to fail.
+#### If you delete the backup configuration, will the backup still exist in Vault?
 
-**Resolution steps:**
+If the backup configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend that our customers do not delete any configurations unless they are certain they'll not need them in the future.
 
-1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
-2. Locate the process builder process / flow that caused the error. Temporarily disable the automation and rerun the job to restore/replicate failed records.
-3. Alternatively, the job can be retried by specifying a lower batch size in the job config which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
+#### Where can I find my backup expiration date?
 
-#### INACTIVE\_OWNER\_OR\_USER
+Users can verify the expiry date by reviewing the backup history in Vault. In our application, a column will display the backup's expiration date.
 
-This error is due to the owner of the records about to be inserted into the destination Org is inactive in the destination Org.
+<figure><img src="../../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
 
-**Resolution Steps:**
+#### Can I migrate data from other Salesforce backup solutions?
 
-1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
-2. Enable "Set Audit Fields upon Record Creation" and "Update Records with Inactive Owners" permissions in Salesforce settings.
-3. Enable these permissions in the permission set corresponding to the dataloading user in the destination Org.
-4. To access details on how to do this in Salesforce, click on this link: [https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1](https://help.salesforce.com/articleView?id=000334870\&type=1\&mode=1)
+All backup solutions will ideally provide an option for users to download their data, which can be uploaded to our storage bucket and connected to our application to reinstate the backups/archives as if they were done through Vault. This is considered a professional service on our end, as there is significant effort involved from us to perform the migration.
 
-#### FIELD\_CUSTOM\_VALIDATION\_EXCEPTION
+#### Where in Vault can I view the attachments that were backed up?
 
-This error is due to validation rules applied to certain fields.
-
-**Resolution Steps:**
-
-1. Click on Restore/Replicate job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
-2. Disable validation rules in the restore modal in the final step of the restore process.
-
-#### INVALID\_OR\_NULL\_FOR\_RESTRICTED\_PICKLIST
-
-This error occurs when the destination Org doesn't have the value enabled that is selected in the source Org.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
-2. Sync the values in the restricted picklist between the source and destination.
-3. Alternatively, use the mappings for restricted picklist to cross-map a value in the restricted picklist from the source to another value in the destination Org as part of the replicate job configuration.
-
-#### REQUIRED\_FIELD\_MISSING
-
-This error occurs due to a failure of a required parent record (related through master-detail/required).
-
-**Resolution Steps:**
-
-1. Click on Replicate/Restore job summary-> Click on Failure records-> download details-> view error in the 'Error' column.
-2. Such errors occur when failure of a required parent record (related through master-detail/required  lookup) leads to the failure of its associated child records.
-3. Check the fields that failed. Review the error corresponding to the failure of the referencing parent record(s), rectify them, and restore the corresponding failed parent records first, then restore failed related child records.
-
-#### INVALID\_CROSS\_REFERENCE\_KEY
-
-This error is caused by the Parent record not being included in the job or permission issue(s) on the parent object or a lookup relationship is not included in the job.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Verify the parent object is included in the job.
-3. Review the authenticated user to ensure the user has access to the parent record that is referenced within the error.
-4. If it is a lookup relationship then ensure the parent object is included in the job.
-
-#### CANNOT\_UPDATE\_CONVERTED\_LEAD
-
-This error is due to a Lead record once converted (to a contact) becomes read only which prevents you from updating the lead.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. You can check to ensure that the lead is converted by checking the isConverted field.
-
-#### FIELD\_INTEGRITY\_EXCEPTION
-
-This error typically occurs when upsert tried to populate a lookup field with a wrong ID either because the parent failed or Vault is unable to recognize the parent record Id.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
-2. Need to pass the correct Id for a lookup field.
-
-#### INVALID\_OPERATION: Too many files in zip
-
-* Typical error message - Metadata deployment error...com.sforce.ws.SoapFaultException
-* This error is generated when there are more than 10,000 files in the .zip file which violates the governor limit.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on logs-> view error the 'Error' column.
-2. Reduce the number of metadata components restored/replicated in each job to less than 10,000 files
-
-**RECORD-TYPE ACCESS ISSUE**
-
-This error indicates that the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault
-
-#### UNKNOWN USER PERMISSION
-
-This error is generated when the required user permissions are missing in Salesforce.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
-2. Assign user to the desired permission set in Salesforce.
-
-#### INVALID RECORD TYPE ID FOR THE USER
-
-* Typical error message - Record Type ID: this ID value isn't valid for the user: 012D0000000BfaLIAS:RecordTypeId --
-* This error is generated when the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
-
-#### CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY
-
-* Typical error message - SFSSDupeCatcher.SSDupeCatcherContactTrigger: System.LimitException: Apex CPU time limit exceeded
-* Error is generated by Triggers preventing the records from getting loaded in the destination Org.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Disable the triggers on the destination Org either by using the option to disable triggers in Vault or by performing the same in the Salesforce Org.
-3. Alternately, try lowering the batch size of the operation to avoid more records from getting inserted/updated in parallel which may result in a CPU time limit exception.
-
-#### UNABLE\_TO\_LOCK\_ROW
-
-* Typical error message - unable to obtain exclusive access to this record or 126 records.
-* Error is caused by Dependent records causing the load of records from populating in the destination Org.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Execute the job in serial mode instead of parallel mode to help prevent records in different batches having dependency with each other getting inserted into Salesforce in parallel and causing the error.
-
-#### TooManyLockFailure
-
-* Typical error message - Too many lock failure 200 Trying again later.
-* Error is caused by Dependent records causing the load of records from populating in the destination Org.
-
-**Resolution Steps:**
-
-1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Decrease the batch size or execute the job in serial mode instead of parallel mode to help prevent records in different batches having dependency with each other getting inserted into Salesforce in parallel and causing the error.
-3. For more information, go to[![](file:///C:/Users/shannan.zerance/AppData/Local/Packages/oice_16_974fa576_32c1d314_278d/AC/Temp/msohtmlclip1/01/clip_image001.png)Feed Item Detail | Salesforce Trailblazer Community](https://developer.salesforce.com/forums/?id=906F0000000D9CuIAK)&#x20;
+File attachments cannot be viewed from the Vault user interface or in CSV format, as they are encrypted in our S3 storage. The customer must either restore those specific files in their Salesforce Org or Replicate them to another Salesforce Org.
 
 ***
 
-### Replicate
+### Restore and Replicate
 
-#### DUPLICATE\_VALUE
+#### Will the Restore operation create a duplicate if a record already exists in Salesforce?
 
-Such failures occurs when such records are already present in the destination
+A duplicate will not be created during a Restore operation because detection is achieved via Unique IDs. More details on Unique IDs can be found [here](https://knowledgebase.autorabit.com/product-guides/vault/configuring-vault/registering-salesforce-org/unique-identifier-uid).
 
-**Resolution Steps:**
+#### Can I specify the order in which objects are restored, e.g., users first, then other objects?&#x20;
 
-1. Click on Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. An existing automation is blocking the upsert operation. Try disabling the automation if necessary.
-3. If you would like Vault to recognize the existing records in the destination that are created/transferred outside of Vault, you can configure the unique identifier for the object and enable the option ‘Prevent duplicate record creation using unique identifiers in replicate job config to avoid Vault from attempting to recreate an existing record matching the value in the unique identifier specified.
-4. For steps on how to configure unique identifiers, go to this link:
+No, the order of a Restore operation is established by internal logic using data schema.&#x20;
 
-&#x20;[Unique Identifier (UID) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/configuring-vault/registering-salesforce-org/unique-identifier-uid)
+#### Can I determine the number of API calls made during the Restore process, similar to a Backup?
+
+API calls are not currently displayed on the user interface during the Restore process. &#x20;
+
+#### How can I filter backup data by specific dates and use it as the source to Restore/Replicate?
+
+To filter data based on specific dates from a backup using a CSV file and Excel, follow these steps:
+
+1. **Download CSV File**: Download the CSV file corresponding to the object on which the date needs to be filtered from the backup.
+2. **Filter Dates Using Excel**: Open the downloaded CSV file in Excel. Use Excel's filtering features to filter out the IDs for which the dates match the required criteria.
+3. **Create Final CSV File**: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
+4. **Upload and Filter Backup**: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
+
+### **Data Encryption**
+
+#### **Does Vault encrypt data at rest by default?**
+
+Yes, by default, Vault encrypts data at rest in **Amazon S3 buckets** using **AES-256 encryption**, a highly secure encryption standard.
+
+#### **What is AES-256 encryption, and why is it used?**
+
+AES-256 (Advanced Encryption Standard) is a **powerful encryption algorithm** that ensures data is stored in an unreadable format unless decrypted with the proper key. It is widely recognized for its security and compliance with regulations like GDPR, HIPAA, and PCI-DSS.
+
+#### **Can I disable data encryption at rest?**
+
+No, encryption at rest is enforced by default in Vault and cannot be disabled. This ensures all stored data remains secure, even in the unlikely event of unauthorized access to storage.
+
+#### **Where is encrypted data stored?**
+
+Encrypted data is stored in **Amazon S3 buckets**, part of Amazon Web Services (AWS), which provides secure, scalable, and reliable cloud storage.
 
 ***
 
-### Limitations
+### **Admin**
 
-#### **Restoration of System-Generated Chatter-Feed Items**
+#### Does Vault support the Terafina managed packages?
 
-* **Issue**: Salesforce does not allow the restoration of chatter-feed items generated by the system.
-* **Details**: Only feed items manually added by users to the chatter feed can be restored.
-* **Error Message**: Attempting to restore system-generated chatter-feed items will result in the error: "Required field missing: Body."
+Currently, Vault does not support the Terafina managed package.
 
-#### **Restoration of Shared Objects Data**
+#### Does Vault integrate with Salesforce Shield?
 
-* **Issue**: Salesforce does not permit the restoration of data in shared objects generated by sharing rules.
-* **Details**: Only manually added share-related records in the shared object can be restored.
-
-#### **Installed Packages**
-
-* **MuleSoft** operates as an installed package component in Salesforce. Consequently, it cannot be backed up, restored, or replicated using API calls.&#x20;
-* Installed packages, which includes **MuleSoft** or anything related to Mule, cannot be backed up directly; they must be obtained from the Salesforce AppExchange platform and installed.
-
-**File Size Limits**
-
-* **Issue:** If the metadata zip file exceeds the **file size limit of 39 MB**, then Vault cannot restore the file to the destination Org.&#x20;
-* **Details**: Use the workbench to restore larger files.&#x20;
-* **Error Message in the UI logs**: "Metadata ZIP file exceeds the maximum allowed size of 39 MB. Please refer to the  [AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/) for more details.”&#x20;
-* **Additional Info**: Refer to this [Salesforce article](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_metadata.htm) for more information on file size limitations.
+Salesforce Shield ensures that data is encrypted at rest within Salesforce. However, when data is queried through APIs, Salesforce returns it in a decrypted format. Since Vault leverages Salesforce APIs to retrieve data, our solution fully supports the backup and restoration of Salesforce orgs where Salesforce Shield is enabled.

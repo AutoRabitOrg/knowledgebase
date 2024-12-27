@@ -29,9 +29,9 @@ Make sure you have the following:
 3. For **Self-Hosted (On-Premises) CodeScan**:
    * A working **SonarQube™ LTA 9.9 or higher** installation
    * A licensed version of **CodeScan (4.4+)** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)) (no trial available with self-hosted/on-premises CodeScan).
-4. **JDK version 11** or above
+4. **JDK version 17** or above
 5. Latest available **Node.js LTS** version (v16 as of today)
-6. Uninstall **SonarLint™** Plugins. The CodeScan and IntelliJ plugin will not work alongside the SonarLint™ installation.
+6. Uninstall **SonarLint™** plug-ins. The CodeScan and IntelliJ plug-in will not work alongside the SonarLint™ installation.
 
 ### Install the CodeScan IntelliJ plugin <a href="#install-the-codescan-intellij-plugin" id="install-the-codescan-intellij-plugin"></a>
 

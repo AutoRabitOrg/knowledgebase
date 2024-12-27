@@ -54,7 +54,7 @@ Make sure you:
 2. Have a CodeScan **cloud** account:&#x20;
    * Have a valid enterprise license (or a **cloud** trial version—trial **not** available with self-hosted)
 3. For CodeScan **Self Hosted**:
-   * Have a working **SonarQube™ (9.9+)** server
+   * Have a working **SonarQube™ (LTA 9.9+)** server
    * Have a licensed version (no trial available) of the latest **CodeScan** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)).
 4. Download the **CodeScan** extension from the marketplace
 5. Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.

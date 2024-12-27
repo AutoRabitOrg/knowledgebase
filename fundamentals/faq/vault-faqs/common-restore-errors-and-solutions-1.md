@@ -80,7 +80,7 @@ Encrypted data is stored in **Amazon S3 buckets**, part of Amazon Web Services (
 
 ***
 
-### **Integrations**
+### **Admin**
 
 #### Does Vault support the Terafina managed packages?
 

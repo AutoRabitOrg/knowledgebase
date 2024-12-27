@@ -1,10 +1,10 @@
-# Common Restore Errors & Limitations
+# Common Error Messages & Limitations
 
 ## Vault FAQs
 
-## Common Restore/Replicate Errors & Solutions
+## Common Error Messages & Resolutions
 
-### RESTORE/REPLICATE
+### Restore/Replicate
 
 #### **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY**
 
@@ -167,7 +167,7 @@ This error is generated when the required user permissions are missing in Salesf
 
 ***
 
-### REPLICATE
+### Replicate
 
 #### DUPLICATE\_VALUE
 
@@ -184,7 +184,7 @@ Such failures occurs when such records are already present in the destination
 
 ***
 
-### LIMITATIONS
+### Limitations
 
 #### **Restoration of System-Generated Chatter-Feed Items**
 

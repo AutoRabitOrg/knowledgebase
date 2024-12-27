@@ -24,10 +24,10 @@ The plugin is derived from [SonarLint™](https://www.sonarlint.org/).
 Make sure you have the following:
 
 1. **IntelliJ IDEA** **2022.2** version or above
-2. CodeScan for the **cloud**:
+2. CodeScan for the **Cloud**:
    * Valid **enterprise** license or **trial** (cloud trial **only**—**not** available with self-hosted)
 3. For **Self-Hosted (On-Premises) CodeScan**:
-   * A working **SonarQube™ (7.9+)** installation
+   * A working **SonarQube™ LTA 9.9 or higher** installation
    * A licensed version of **CodeScan (4.4+)** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)) (no trial available with self-hosted/on-premises CodeScan).
 4. **JDK version 11** or above
 5. Latest available **Node.js LTS** version (v16 as of today)

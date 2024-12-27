@@ -2,7 +2,7 @@
 
 ## Vault FAQs
 
-### Backup
+### Backup and Compare
 
 #### **Can I delete specific, condition-based data from an existing backup?**
 

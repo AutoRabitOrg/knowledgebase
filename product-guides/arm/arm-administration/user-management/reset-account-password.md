@@ -1,5 +1,13 @@
 # Reset Account Password
 
+## Passwords
+
+### Expiration
+
+Passwords expire every **90 days**, after which users will be required to update their password.
+
+### Security
+
 In general, you’ll only need to reset your password if you’ve forgotten it, but there are some instances when resetting your password can help protect the security of your account.
 
 We recommend resetting your password in these cases:
@@ -9,6 +17,10 @@ We recommend resetting your password in these cases:
 * We ask you to change your password.
 
 If you have not requested to reset your password but receive an email asking you to change it, it could be a case of phishing. Instead of clicking on a suspicious link in an email, log in to your account to reset your password.
+
+{% hint style="warning" %}
+NOTE: After **three** unsuccessful login attempts, users are required to reset their password in order to log in.
+{% endhint %}
 
 ### Reset Account Password <a href="#reset-account-password" id="reset-account-password"></a>
 
@@ -21,7 +33,7 @@ Alternatively, users with administrator permissions can reset passwords for sub-
 To reset a user's password:
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** tab and click on the **`Users`**.
+2. Hover your mouse over the **`Admin`** tab and click on **`Users`**.
 3. Locate the user whose password you want to reset.
 4. Click on **`Reset`**.
 
@@ -51,7 +63,7 @@ No email received? If you don't see the email in your inbox:&#x20;
 * Try to **reset your password** again
 * If that still does not work, contact the ARM Support Team at [support@autorabit.com](mailto:support@autorabit.com).
 
-### Change your Password <a href="#change-your-password" id="change-your-password"></a>
+### Change Your Password <a href="#change-your-password" id="change-your-password"></a>
 
 Use the following steps to change your current password:&#x20;
 

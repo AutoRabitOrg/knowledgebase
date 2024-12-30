@@ -2,7 +2,7 @@
 
 ### Permissions <a href="#permissions" id="permissions"></a>
 
-Permissions can be set at the **Organisation level** or at a **Project level** to give you full control of what your members can view and create.
+Permissions can be set at the **Organization level** or at a **Project level** to give you full control over what your members can view and create.
 
 1. Permissions can be set at the **Organization** level: Navigate to **`Administration > Permissions`** menu and apply to individual users or multiple users using the Groups feature.\
 
@@ -29,11 +29,15 @@ Permissions can be set at the **Organisation level** or at a **Project level** t
 <figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** Just like the main Permissions menu this allows you to set permissions for users or Groups.
+**Note:** Just like the main Permissions menu, this allows you to set permissions for users or Groups.
 {% endhint %}
 
-3. Once you have a permissions template created, now you can apply it at a project level by clicking on your desired project. Then navigate to the **`Project Settings > Permissions`** menu, and click on **`Apply Permissions Template`**.
+3. Once you have a permissions template created, you can apply it at the project level by clicking on your desired project. Then navigate to the **`Project Settings > Permissions`** menu and click on **`Apply Permissions Template`**.
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="324"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**NOTE**: **Browse** and **Execute Analysis** permissions are required to run an analysis and view results.
+{% endhint %}

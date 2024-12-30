@@ -223,14 +223,6 @@ You can use Apex PMD and execute SCA without having to obtain a license for it. 
 
 Once the GitHub cloud account is created, you should be able to set it up with ARM as well. If you’re facing any issues, it is possible that the repository might still be migrating. If so, you are unable to register the repository during that time. But after migration is complete, you should be able to register the repository in ARM.
 
-#### How can I setup SSO in ARM? <a href="#how-can-i-setup-sso-in-arm" id="how-can-i-setup-sso-in-arm"></a>
-
-Please refer to this Knowledge Base [article](../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
-
-#### We’re switching from an on-premises GitHub account to the Cloud version of GitHub. I created the GitHub cloud account and tried setting up the cloud connection in ARM, but the system gave me an error. <a href="#were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github" id="were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github"></a>
-
-Once the GitHub cloud account is created, you should be able to set it up with ARM as well. If you’re facing any issues, it is possible that the repository might still be migrating. If so, you are unable to register the repository during that time. But after migration is complete, you should be able to register the repository in ARM.
-
 #### How can I setup SSO in ARM? <a href="#how-can-i-setup-sso-in-arm1" id="how-can-i-setup-sso-in-arm1"></a>
 
 Please refer to the [Knowledge Base article](../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
@@ -253,6 +245,6 @@ The **User Permissions** and **Roles** in your organization may have been rearra
 
 #### Why am I getting an error when trying to register a Bitbucket repo? <a href="#why-am-i-getting-an-error-when-trying-to-register-a-bitbucket-repo" id="why-am-i-getting-an-error-when-trying-to-register-a-bitbucket-repo"></a>
 
-Please check your credentials because your Bitbucket account username is different from your email address. Once you have confirmed your username, try to register the repository, and then test to see whether branch creation was successful.
+Please check your credentials because your Bitbucket account username is different than your email address. Once you have confirmed your username, try to register the repository, and then test to see whether branch creation was successful.
 
 \

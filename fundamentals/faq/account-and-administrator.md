@@ -4,17 +4,13 @@
 
 After three unsuccessful attempts, a user is locked out. To log in, the user must enter the correct username, password, and the OTP sent to their email.
 
-#### How often do passwords expire?
-
-Passwords expire and must be reset every 90 days. Refer to the instructions [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/reset-account-password).
-
 #### Who should I contact to reactivate my AutoRABIT account if it has been locked? <a href="#who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked" id="who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked"></a>
 
 If your account is locked, the person who holds the AutoRABIT main account should be your first point of contact because they will be able to reactivate it.
 
 #### I have admin access, so why can't I see some users' branches and commits that are listed under my organization? <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
 
-If your user account is associated to a different organization, this can happen.
+If your user account is associated with a different organization, this can happen.
 
 #### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
 
@@ -26,18 +22,18 @@ Once a user has been created, it cannot be changed; however, the user's email ad
 
 1. First, you must **delete** this user account: Request your administrator remove you from the user list.
 2. Make a **new account** with a different username and email address.
-3. Again, request your administrator to grants all required **permissions** exactly as they were with the previous user account.
+3. Again, request your administrator grant all required **permissions** exactly as they were for the previous user account.
 
 #### Can I change or switch the default branch repository in AutoRABIT, since I currently have two default branches? <a href="#can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default" id="can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default"></a>
 
-You can do this by first unregistering both branches and then re-registering your repository's default branch in AutoRABIT and set registered branch as default branch.
+You can do this by first unregistering both branches and then re-registering your repository's default branch in AutoRABIT and set the registered branch as the default branch.
 
 #### How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
 
 To view your support ticket and its status, follow the steps below:
 
-1. Login to your ARM instance.
-2. On top of the page, navigate to **Quick Links > Help Center**. You'll redirected to the ARM Support Dashboard page.
+1. Log in to your ARM instance.
+2. At the top of the page, navigate to **Quick Links > Help Center**. You'll be redirected to the ARM Support Dashboard page.
 3.  Navigate to **Teams Queue** under **Tickets**.\
 
 
@@ -45,14 +41,14 @@ To view your support ticket and its status, follow the steps below:
 
 Now you will be able to view your org-related tickets here.
 
-#### Why am I unable to login into my ARM account? <a href="#unable-to-login-into-my-arm-account" id="unable-to-login-into-my-arm-account"></a>
+#### Why am I unable to log in to my ARM account? <a href="#unable-to-login-into-my-arm-account" id="unable-to-login-into-my-arm-account"></a>
 
 If you're having trouble logging into your AutoRABIT account, here are some things you can try.
 
 1. **The account is not created**: Please check with AutoRABIT admin for creating a new account
-2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password
+2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password by following the instructions [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/reset-account-password).
 3. **Check if your account subscription has expired or your account is disabled**: If your AutoRABIT account has been disabled, you'll see a message saying your account is disabled when you try to log in.
-4. If you get the following error **“getAttribute: Session already invalidated"**, try clearing your browser cache
+4. If you get the following error **“getAttribute: Session already invalidated"**, try clearing your browser cache.
 5. **Restriction of your IP address**: Verify with your network team internally and verify if there are any issues or restrictions for your IP address from the network side.
 6. If nothing works out, please reach out to us by raising a [Support Ticket](https://support.autorabit.com/portal/en/home)
 

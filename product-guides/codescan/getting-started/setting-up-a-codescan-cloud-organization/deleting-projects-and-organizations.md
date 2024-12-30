@@ -6,7 +6,7 @@ CodeScan provides you with the option to delete the unwanted projects/Organizati
 **Note:** Once you delete your projects/organizations from CodeScan, they cannot be recalled (no undo).
 {% endhint %}
 
-#### Deleting a Project <a href="#deleting-a-project" id="deleting-a-project"></a>
+## Deleting a Project <a href="#deleting-a-project" id="deleting-a-project"></a>
 
 1. Go to the **Organization** and select **Project** which you want to delete.
 
@@ -26,7 +26,7 @@ CodeScan provides you with the option to delete the unwanted projects/Organizati
 
 5. Now, your desired Project is deleted from CodeScan.
 
-#### Deleting an Organization <a href="#deleting-an-organization" id="deleting-an-organization"></a>
+## Deleting an Organization <a href="#deleting-an-organization" id="deleting-an-organization"></a>
 
 1. Ensure you are on the correct organization and click on the **Organization name** on the top left to confirm that you are on the organization's main page, not in any project.
 2. Navigate to **Administration > Organization settings**.
@@ -42,3 +42,17 @@ CodeScan provides you with the option to delete the unwanted projects/Organizati
 <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="527"><figcaption></figcaption></figure>
 
 5. Now, your desired organization is deleted from [CodeScan](https://www.codescan.io/).
+
+## Deleting Multiple Projects
+
+Users can also delete several projects at once if a cleanup is needed.
+
+Navigate to **Organization** → **Projects Management** → select projects to be deleted → **Delete**:
+
+<figure><img src="../../../../.gitbook/assets/image (1592).png" alt=""><figcaption></figcaption></figure>
+
+
+
+{% hint style="danger" %}
+NOTE: This action is irreversible.
+{% endhint %}

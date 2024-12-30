@@ -38,6 +38,14 @@ Permissions can be set at the **Organization level** or at a **Project level** t
 
 <figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+### Assigning Permissions Templates to Multiple Projects
+
+You can also assign a Permissions template to multiple projects at once.
+
+Navigate to **Organization** → **Projects Management** → select projects from the list → **Bulk Apply Permission template**:
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 **NOTE**: **Browse** and **Execute Analysis** permissions are required to run an analysis and view results.
 {% endhint %}

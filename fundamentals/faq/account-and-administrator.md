@@ -123,7 +123,7 @@ ARM works best in the two most recent versions of these browsers:
 * Firefox
 * Safari
 
-#### Not able to login to ARM using Chrome browser <a href="#not-able-to-login-to-arm-using-chrome-browser" id="not-able-to-login-to-arm-using-chrome-browser"></a>
+#### Why am I unable to log in to ARM using the Chrome browser? <a href="#not-able-to-login-to-arm-using-chrome-browser" id="not-able-to-login-to-arm-using-chrome-browser"></a>
 
 1. Try logging in to your account using Chrome incognito mode.
 2. Clear the Chrome browser cache.
@@ -137,7 +137,7 @@ Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/ar
 #### Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
 
 1. **The deleted user's credential exists in AutoRABIT**: Go to _**Admin > Credential Manager**_ and type in the username that exists. You should find a record if it is still there.
-2. [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **repository is registered with the existing user's credentials**: Get your existing user credentials updated with the new user details with the help of your admin. To do so, go to **Credential Manager** section and search for the existing user credential and get it updated with the new user details. Or, create a user credential for the new user and re-register the existing version control repository with it.
+2. [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **repository is registered with the existing user's credentials**: Get your existing user credentials updated with the new user details with the help of your admin. To do so, go to **Credential Manager** section and search for the existing user credential and get it updated with the new user details. Or create a user credential for the new user and re-register the existing version control repository with it.
 
 #### Why do my users not have access to all the features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
 

@@ -61,14 +61,6 @@ To customize the Quality Profile, follow the steps below:
 >
 > ![](<../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-### Setting a Default Quality Profile <a href="#setting-a-default-quality-profile" id="setting-a-default-quality-profile"></a>
-
-By setting a default Quality Profile, you assign every project without a specific Quality Profile to use the default one. To assign Quality Profiles to specific Projects, use the **Project Settings > Quality Profiles** menu for your project and select the one you would like to use.
-
-<figure><img src="../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
-
 ### Updating Quality Profiles
 
 To make sure that Quality Profiles used on CodeScan projects are up to date, you can find information about recently added rules by navigating to Organization → Quality Profiles:

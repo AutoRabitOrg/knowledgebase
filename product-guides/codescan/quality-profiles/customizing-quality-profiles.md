@@ -7,9 +7,7 @@
 To make a custom Quality Profile, you can create a new profile or copy one of our default profiles from the list as a starting point.
 
 {% hint style="info" %}
-**Point to Note:**
-
-Changes **CAN NOT** be made to the default profiles, only to custom profiles. If you are using a default profile and would like to remove a rule, please make a copy of the default profile and make your changes to the copied profile.
+**Note:** Changes **CANNOT** be made to default profiles, only to custom profiles. If you are using a default profile and would like to remove a rule, please make a copy of the default profile and make your changes to the copied profile.
 {% endhint %}
 
 ### Creating a Quality Profile <a href="#creating-a-quality-profile" id="creating-a-quality-profile"></a>
@@ -63,10 +61,22 @@ To customize the Quality Profile, follow the steps below:
 >
 > ![](<../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
-### Setting a default Quality Profile <a href="#setting-a-default-quality-profile" id="setting-a-default-quality-profile"></a>
+### Setting a Default Quality Profile <a href="#setting-a-default-quality-profile" id="setting-a-default-quality-profile"></a>
 
 By setting a default Quality Profile, you assign every project without a specific Quality Profile to use the default one. To assign Quality Profiles to specific Projects, use the **Project Settings > Quality Profiles** menu for your project and select the one you would like to use.
 
 <figure><img src="../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="369"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
+
+### Updating Quality Profiles
+
+To make sure that Quality Profiles used on CodeScan projects are up to date, you can find information about recently added rules by navigating to Organization → Quality Profiles:
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You can review updates and assign new rules to your Quality Profiles to make sure your code is clean and secure.
+
+Also, on the right side, the list of recently deprecated rules is available. We recommended you remove these from the Quality Profiles used:
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

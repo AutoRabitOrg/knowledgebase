@@ -38,7 +38,7 @@ To prevent accidental data loss, it is crucial to be notified before any records
 5. Ensure the checkbox for the **“Notify before deleting records in Salesforce”** checkbox is checked.
 6. When enabled, this setting will send notifications to users before any records are permanently deleted, ensuring that you have full awareness before data is removed.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **Why This Matters:**
 

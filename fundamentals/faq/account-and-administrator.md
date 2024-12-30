@@ -73,13 +73,13 @@ If you requested a new password but didn't receive your password reset email, th
 
 #### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
 
-ARM has a 90-day rotational policy that requires you to change your password in every 90 days. Follow the instruction [HERE](../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
 #### Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
 
-1. Verify-in the user Salesforce Org if the AutoRABIT Connected App is **“Blocked”** then unblock it.
-2. Verify-in user Salesforce Org if there are any specific permissions set for the Connected App.
-3. Verify if the redirect URL, client ID, and the secret key in **oauth.properties** file (path: .rabit/org/oauth.properties) are valid or not.
+1. Verify in the user Salesforce Org if the AutoRABIT Connected App is **“Blocked”** and unblock it.
+2. Verify in user Salesforce Org if there are any specific permissions set for the Connected App.
+3. Verify whether the redirect URL, client ID, and the secret key in **oauth.properties** file (path: .rabit/org/oauth.properties) are valid.
 
 If the user is on a proxy-enabled server and receives an error such as **"Username may not be null"**, the proxy credentials must be validated. If the proxy username is set to **"null"**, the above error will occur.
 
@@ -110,7 +110,7 @@ It is done to restrict XML injections and prevent XML file corruption.
 1. The API Token generated via ARM will be used to authenticate within the application and provide access to get details of CI Job configured & its build details.
 2. To use the AutoRABIT capability, each user has their own API token, which should not be shared with anyone. If you come across something phishing, deactivate your current API token and create a new one.
 
-#### Who all are authorized to access the API Token? <a href="#who-all-are-authorized-to-access-the-api-token" id="who-all-are-authorized-to-access-the-api-token"></a>
+#### Who is authorized to access the API token? <a href="#who-all-are-authorized-to-access-the-api-token" id="who-all-are-authorized-to-access-the-api-token"></a>
 
 Super Admins, Org Admins, and the users with admin level permissions are authorized to access the API token.
 
@@ -130,25 +130,25 @@ ARM works best in the two most recent versions of these browsers:
 3. If cleaning the cache does not help, try a different browser (Firefox) and see if the problem persists.
 4. If the problem is solely with Chrome, reinstall it.
 
-#### Given the shift in IP ranges, is it possible to migrate from one AutoABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
+#### Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
 
 Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
 
-#### Why am I able to see some of the users that are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
+#### Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
 
 1. **The deleted user's credential exists in AutoRABIT**: Go to _**Admin > Credential Manager**_ and type in the username that exists. You should find a record if it is still there.
 2. [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **repository is registered with the existing user's credentials**: Get your existing user credentials updated with the new user details with the help of your admin. To do so, go to **Credential Manager** section and search for the existing user credential and get it updated with the new user details. Or, create a user credential for the new user and re-register the existing version control repository with it.
 
-#### Why do my users not have access to all of features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
+#### Why do my users not have access to all the features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
 
-1. Your users may not have the authority to access the modules that he is looking for; nevertheless, users with administrator privileges only will have access to certain features. To see the user's available roles in AutoRABIT, go to the **Admin > Roles** section.
+1. Your users may not have the authority to access the modules that they are looking for; nevertheless, users with administrator privileges only will have access to certain features. To see the user's available roles in AutoRABIT, go to the **Admin > Roles** section.
 2. For the necessary permissions, contact your **Org Admin**.
 
 #### Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
 
 The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
-#### What is the functionality of "Sync Branches" radio button in VC Repo's screen? <a href="#what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen" id="what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen"></a>
+#### What is the functionality of "Sync Branches" radio button in the VC Repo's screen? <a href="#what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen" id="what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen"></a>
 
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-64UAR2YT.png)
 
@@ -156,9 +156,9 @@ This radio button allows you to view branches that are no longer available in yo
 
 #### Why am I getting a Credential Name error while trying to Save Mappings? <a href="#why-am-i-getting-a-credential-name-error-while-trying-to-save-mappings" id="why-am-i-getting-a-credential-name-error-while-trying-to-save-mappings"></a>
 
-If you're a sub-user and get an error message `Ceredential with name: "qa private token cred" for this UserEmail does not have permission to save mapping` while saving **Org Mapping**, then the admin must **reregister** the repository **credentials** and make the credentials **Public**. The subuser must then use the newly registered credentials.
+If you're a sub-user and get an error message `Credential with name: "qa private token cred" for this UserEmail does not have permission to save mapping` while saving **Org Mapping**, then the admin must **re-register** the repository **credentials** and make the credentials **Public**. The sub-user must then use the newly registered credentials.
 
-#### Why am I unable to create branching baselines for UAT and new SIT and getting an error while trying to create a new branch from VC Repos? <a href="#why-am-i-unable-to-create-branching-baselines-for-uat-and-new-sit-and-getting-an-error-while-trying" id="why-am-i-unable-to-create-branching-baselines-for-uat-and-new-sit-and-getting-an-error-while-trying"></a>
+#### Why am I unable to create branching baselines for UAT and new SIT and getting an error while trying to create a new branch from VC Repo's? <a href="#why-am-i-unable-to-create-branching-baselines-for-uat-and-new-sit-and-getting-an-error-while-trying" id="why-am-i-unable-to-create-branching-baselines-for-uat-and-new-sit-and-getting-an-error-while-trying"></a>
 
 Depending on the error, the credentials may have expired. Check the repository credentials and then **Test Connection** in ARM. Then retrigger the branching baseline. Please contact our support team if the problem continues.
 
@@ -168,15 +168,15 @@ If you have already re-authenticated, but the issue is still unresolved, it may 
 
 #### How can I remove the previous Super Admin from ARM and assign access to myself? <a href="#how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself" id="how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself"></a>
 
-Please follow the guidance published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm). Once you have that access, you can log into ARM with your credentials and delete users without access.
+Please follow the guidance published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm). Once you have that access, you can log in to ARM with your credentials and delete users without access.
 
-#### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but is there no Revision# created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
+#### &#x20;How many Super Admins are allowed? Can I assign a backup Super Admin? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
+
+There can only be one Super Admin, but you can temporarily change the Super Admin. Refer to the documentation published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm).
+
+#### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but why is there no Revision# created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
 Before proceeding with the Branching Baseline operation, please ensure you have the Write permission on the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../product-guides/arm/getting-started/registration/branching-baseline.md)
-
-#### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application1" id="how-often-do-i-have-to-change-my-password-for-the-arm-application1"></a>
-
-ARM has a **90-day** rotational policy that requires you to change your password every 90 days. Follow the instructions here to reset your ARM password.
 
 #### How can I get access to the AutoRABIT Academy? <a href="#how-can-i-get-access-to-the-autorabit-academy" id="how-can-i-get-access-to-the-autorabit-academy"></a>
 

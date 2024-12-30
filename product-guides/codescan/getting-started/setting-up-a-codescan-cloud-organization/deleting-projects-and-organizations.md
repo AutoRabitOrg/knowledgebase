@@ -1,6 +1,6 @@
 # Deleting Projects and Organizations
 
-CodeScan provides you with the option to delete the unwanted projects/Organizations no longer in use for your convenience.
+CodeScan provides you with the option to delete unwanted projects/Organizations no longer in use.
 
 {% hint style="info" %}
 **Note:** Once you delete your projects/organizations from CodeScan, they cannot be recalled (no undo).
@@ -8,7 +8,7 @@ CodeScan provides you with the option to delete the unwanted projects/Organizati
 
 ## Deleting a Project <a href="#deleting-a-project" id="deleting-a-project"></a>
 
-1. Go to the **Organization** and select **Project** which you want to delete.
+1. Go to the **Organization** and select the **Project** you want to delete.
 
 <figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -16,7 +16,7 @@ CodeScan provides you with the option to delete the unwanted projects/Organizati
 
 <figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. Now click on the option **Delete**.
+3. Now click on the option to **Delete**.
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -49,7 +49,7 @@ NOTE: This action is irreversible.
 
 <figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-4. Another tab pops up, as in the below picture, requiring you to confirm the Organization Name and then click on **Delete**.
+4. Another tab pops up, as in the picture below, requiring you to confirm the Organization Name and then click **Delete**.
 
 <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="527"><figcaption></figcaption></figure>
 

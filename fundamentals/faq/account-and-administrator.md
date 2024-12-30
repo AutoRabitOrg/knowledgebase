@@ -4,6 +4,10 @@
 
 After three unsuccessful attempts, a user is locked out. To log in, the user must enter the correct username, password, and the OTP sent to their email.
 
+#### How often do passwords expire?
+
+Passwords expire and must be reset every 90 days. Refer to the instructions [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/reset-account-password).
+
 #### Who should I contact to reactivate my AutoRABIT account if it has been locked? <a href="#who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked" id="who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked"></a>
 
 If your account is locked, the person who holds the AutoRABIT main account should be your first point of contact because they will be able to reactivate it.

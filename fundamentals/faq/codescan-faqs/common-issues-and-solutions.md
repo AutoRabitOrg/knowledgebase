@@ -23,15 +23,15 @@ For detailed steps, please refer to [Customizing Quality Profiles](https://knowl
 
 #### Why am I getting the error message: 'Background Tasks Failing'?
 
-This error either occurs if it’s out of memory or when multiple analyses have been triggered at the same time. The one which was triggered last gets completed before the first triggered analysis
-
-#### **Why is the Add & Run Scan tab grayed out?**
-
-If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.
+This error either occurs if it’s out of memory or when multiple analyses have been triggered at the same time. The one triggered last gets completed first.
 
 #### Why am I getting the following error message: "Not Able to Download Code from SF in the Project Analysis Page"?
 
 Check to see whether CodeScan is blocked in Salesforce (Setup > Connected Apps > CodeScan). If it's blocked, unblocked it. If it's already unblocked, yet you are still seeing the error, uninstall then reinstall, block it, and then unblock it.
+
+#### **Why is the Add & Run Scan tab grayed out?**
+
+If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.
 
 ## Copado Integration <a href="#faqs" id="faqs"></a>
 

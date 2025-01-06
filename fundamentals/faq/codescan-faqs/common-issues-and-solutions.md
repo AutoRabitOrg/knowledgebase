@@ -29,6 +29,10 @@ This error either occurs if it’s out of memory or when multiple analyses have 
 
 Check to see whether CodeScan is blocked in Salesforce (Setup > Connected Apps > CodeScan). If it's blocked, unblocked it. If it's already unblocked, yet you are still seeing the error, uninstall then reinstall, block it, and then unblock it.
 
+#### Why am I getting the error: 'Background tasks failing'?
+
+This error either occurs if it’s out of memory or multiple analyses have been triggered at the same time. The analysis triggered last gets completed first.
+
 #### **Why is the Add & Run Scan tab grayed out?**
 
 If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.

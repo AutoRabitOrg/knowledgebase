@@ -23,7 +23,7 @@ For detailed steps, please refer to [Customizing Quality Profiles](https://knowl
 
 #### Why am I getting the error message: 'Background Tasks Failing'?
 
-This error occurs either if it’s out of memory, or whether multiple analyses have been triggered at the same time. The one which was triggered last gets completed before the first triggered analysis
+This error either occurs if it’s out of memory or when multiple analyses have been triggered at the same time. The one which was triggered last gets completed before the first triggered analysis
 
 #### **Why is the Add & Run Scan tab grayed out?**
 

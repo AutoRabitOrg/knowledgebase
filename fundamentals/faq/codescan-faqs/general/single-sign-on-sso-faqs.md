@@ -1,10 +1,10 @@
-# Single sign-on (SSO) FAQs
+# Single Sign-On (SSO) FAQs
 
 A selection of frequently asked questions about Single Sign On.
 
 ### What is SSO? <a href="#what-is-sso" id="what-is-sso"></a>
 
-SSO (Single sign-on) is a sign-in method that allows a user to log into one application and access all of their accounts from one place.
+SSO (Single Sign-On) is a sign-in method that allows a user to log into one application and access all of their accounts from one place.
 
 ### What Identity Providers does CodeScan integrate with? <a href="#what-identity-providers-does-codescan-integrate-with" id="what-identity-providers-does-codescan-integrate-with"></a>
 

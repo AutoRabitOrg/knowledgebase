@@ -94,7 +94,7 @@
       * [Best Practices](fundamentals/faq/codescan-faqs/general/best-practices.md)
       * [CodeScan Static IP Ranges](fundamentals/faq/codescan-faqs/general/codescan-static-ip-ranges.md)
       * [Difference b/w CodeScan Self-Hosted and CodeScan Cloud](fundamentals/faq/codescan-faqs/general/difference-b-w-codescan-self-hosted-and-codescan-cloud.md)
-      * [Single sign-on (SSO) FAQs](fundamentals/faq/codescan-faqs/general/single-sign-on-sso-faqs.md)
+      * [Single Sign-On (SSO) FAQs](fundamentals/faq/codescan-faqs/general/single-sign-on-sso-faqs.md)
       * [What is a Subscription Code?](fundamentals/faq/codescan-faqs/general/what-is-a-subscription-code.md)
       * [What is a CodeScan License Key?](fundamentals/faq/codescan-faqs/general/what-is-a-codescan-license-key.md)
       * [Can I use CodeScan with a proxy?](fundamentals/faq/codescan-faqs/general/can-i-use-codescan-with-a-proxy.md)

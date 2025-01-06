@@ -124,6 +124,34 @@ After this step, project reports will be accessible.
 
 <figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FMO1JR4tsfUSL7qumqUkH%252Fimage.png%3Falt%3Dmedia%26token%3Da564a6d6-3879-4873-b4d7-39817d99a064&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=83274c30&#x26;sv=2" alt=""><figcaption></figcaption></figure>
 
+#### Why am I getting the error: 'Salesforce returned an unexpected result'?
+
+The Salesforce Enhanced Domains feature was rolled out to Sandboxes on August 26, 2022, and available on September 9 for all environments.
+
+If your CodeScan Cloud Salesforce project was linked to a Sandbox or Org that this feature is enabled in, you will need to reattach your project analysis.
+
+[CodeScan Cloud](https://www.codescan.io/products/cloud/) allows you to do this _without erasing_ the historical data present in your project.
+
+To fix the above errors, first you need to delete the **Analysis Project**, to delete follow the steps below:
+
+1. Go to your **Project** and navigate to the **Project Settings > Project Analysis** page.
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252F9z5szRXVzz06mcunqfeo%252Fimage.png%3Falt%3Dmedia%26token%3Da96e3cb7-af1d-4ae9-a843-c94482c67474&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9a71d326&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+2. Click on **Delete Analysis**.
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FOYA7k37lrCMTNJrbDriH%252Fimage.png%3Falt%3Dmedia%26token%3D6fc4ce1b-d7e2-460a-8745-3879f26ca7cd&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=5c016941&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+3. Make sure you do not have the "**Delete this project also?**" box checked. This will delete your history and is not reversible. Click **Delete Analysis**.
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252F5xNukWwAWVbeaJfIH0uC%252Fimage.png%3Falt%3Dmedia%26token%3Dde98d291-38d7-4b45-872d-c9e9d1a3bc33&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6ece50ef&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+4. Now use the **Attach Analysis Project** button at the top right of the screen to re-add the link.
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FzjE3ULDdSHCl6RdnnkJq%252Fimage.png%3Falt%3Dmedia%26token%3D0092887f-780d-4796-b68e-2d10f2ac1b81&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=8263b3d7&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+5. Configure the project and run the analysis.
+
 #### Why am I getting a unit test timeout?&#x20;
 
 In CodeScan Cloud, the default setting for unit test timeouts is 1 hour (3,600 seconds). For Orgs and Sandboxes with a large number of tests, this can be insufficient. To increase the timeout, click on your project and then navigate to **Overview > Project Settings > General settings**.

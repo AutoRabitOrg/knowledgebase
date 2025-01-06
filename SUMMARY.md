@@ -128,7 +128,6 @@
       * [Unit Test Timeout](fundamentals/faq/codescan-faqs/codescan-cloud-issues/unit-test-timeout.md)
       * [Issue "ip restricted"](fundamentals/faq/codescan-faqs/codescan-cloud-issues/issue-ip-restricted.md)
       * [SonarScanner Error - Commit & Merge Request SCA Failing but Allowing Submission](fundamentals/faq/codescan-faqs/codescan-cloud-issues/sonarscanner-error-commit-and-merge-request-sca-failing-but-allowing-submission.md)
-      * ['Packfile is truncated' error](fundamentals/faq/codescan-faqs/codescan-cloud-issues/packfile-is-truncated-error.md)
       * [False Positives](fundamentals/faq/codescan-faqs/codescan-cloud-issues/false-positives.md)
       * [Cloud - Common Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-cloud-issues/cloud-common-errors-and-solutions.md)
     * [Common Issues and Solutions](fundamentals/faq/codescan-faqs/common-issues-and-solutions.md)

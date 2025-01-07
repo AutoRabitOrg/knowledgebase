@@ -107,6 +107,7 @@
       * [SSL Certificates](fundamentals/faq/codescan-faqs/general/ssl-certificates.md)
       * [Does SonarQube support test execution reports for pull requests?](fundamentals/faq/codescan-faqs/general/does-sonarqube-support-test-execution-reports-for-pull-requests.md)
     * [CodeScan Self-Hosted Issues](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/README.md)
+      * [Self-Hosted Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md)
       * [CodeScan License Issues (IDE)](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-license-issues-ide.md)
       * [CodeScan Update Binding Failure](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-update-binding-failure.md)
       * [Error occurred during initialization of VM Could not reserve enough space for xxxKB object heap](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/error-occurred-during-initialization-of-vm-could-not-reserve-enough-space-for-xxxkb-object-heap.md)

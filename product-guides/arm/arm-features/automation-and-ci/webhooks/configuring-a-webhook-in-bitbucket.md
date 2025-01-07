@@ -1,6 +1,6 @@
-# Configuring a Webhook in BitBucket
+# Configure a Webhook in Bitbucket
 
-## A. **Create a Webhook API token from ARM**
+## **Create a Webhook API token from ARM**
 
 1. Log in to ARM.
 2. Click on Admin Section -> API Token.
@@ -17,7 +17,7 @@
 
 8. Your New API Token is created.
 
-## B. Create a webhook with authentication in Bitbucket&#x20;
+## Create a webhook with authentication in Bitbucket&#x20;
 
 1. Log in to your Bitbucket account and select a Repository in which you want to configure a Webhook.
 

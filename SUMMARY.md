@@ -119,7 +119,7 @@
       * [Setting up CodeScan for use with a Proxy](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/setting-up-codescan-for-use-with-a-proxy.md)
       * [SonarQube instance mistakenly deleted](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/sonarqube-instances-was-mistakenly-deleted.md)
     * [CodeScan Cloud Issues](fundamentals/faq/codescan-faqs/codescan-cloud-issues/README.md)
-      * [Cloud - Common Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-cloud-issues/cloud-common-errors-and-solutions.md)
+      * [Cloud Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-cloud-issues/cloud-errors-and-solutions.md)
       * [Project reports are not available for branches created outside the CodeScan Cloud](fundamentals/faq/codescan-faqs/codescan-cloud-issues/project-reports-are-not-available-for-branches-created-outside-the-codescan-cloud.md)
       * [Reattaching Bitbucket Projects](fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects.md)
       * [Background Tasks](fundamentals/faq/codescan-faqs/codescan-cloud-issues/background-tasks.md)

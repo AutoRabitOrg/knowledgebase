@@ -2,15 +2,15 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-You must renew your subscription by entering a new licence key if your subscription has expired and you can no longer access your CodeScan account.
+You must renew your subscription by entering a new license key if your subscription has expired and you can no longer access your CodeScan account.
 
-A CodeScan license key can be passed on by setting the path and environment variables in user's machine.
+A CodeScan license key can be passed on by setting the path and environment variables in a user's machine.
 
 {% hint style="info" %}
 **Note:** Administrator privileges are required to set the system environment variables.
 {% endhint %}
 
-### Set the system environment variables in Windows machine <a href="#set-the-system-environment-variables-in-windows-machine" id="set-the-system-environment-variables-in-windows-machine"></a>
+### Setting the system environment variables for a Windows operating system <a href="#set-the-system-environment-variables-in-windows-machine" id="set-the-system-environment-variables-in-windows-machine"></a>
 
 #### For Windows 11 <a href="#for-windows-11" id="for-windows-11"></a>
 
@@ -39,27 +39,16 @@ A CodeScan license key can be passed on by setting the path and environment vari
 7. Click **`OK`.**
 8. Click **`OK`** again to close the **`Environment Variables`** screen.
 
-#### In MacOS <a href="#in-macos" id="in-macos"></a>
+### Setting the system environment variables for a Mac operating system <a href="#in-macos" id="in-macos"></a>
 
 System environment variables are added to the `.bash_profile` file:
 
-1. Find the path to **`.bash_profile`** by using:
-
-```
-~/.bash-profile
-```
-
+1. Find the path to **`.bash_profile`** by using:\
+   \~/.bash-profile
 2. Open the **`.bash_profile`** file with a text editor of your choice.
 3. Scroll down to the end of the **`.bash_profile`** file.
-4. Use the **`export`** command to add new environment variables:
-
-```
-export codescanLicense=[License_Key]
-```
-
+4. Use the **`export`** command to add new environment variables:\
+   export codescanLicense=\[License\_Key]
 5. Save any changes you made to the **`.bash_profile`** file.
-6. Execute the new **`.bash_profile`** by either restarting the terminal window or using:
-
-```
-source ~/.bash-profile
-```
+6. Execute the new **`.bash_profile`** by either restarting the terminal window or using:\
+   source \~/.bash-profile

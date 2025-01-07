@@ -188,7 +188,7 @@ This section allows users to query dependency relationships between the metadata
 
 <figure><img src="../../../../../.gitbook/assets/image (1249).png" alt="" width="470"><figcaption></figcaption></figure>
 
-To analyze failed components in case of a failed deployment, select the **Source Org for analysis** from the drop-down. Users can view the results of this analysis in the **Dependency Analyzer** tab of the **Deployment Report**, or download it in manifest (.json) or .xls format.
+To analyze failed components in case of a failed deployment, select the **Source Org for analysis** from the drop-down. Users can view the results of this analysis in the **Dependency Analyzer** tab of the **Deployment Report** or download it in manifest (.json) or .xls format.
 
 #### Tests <a href="#tests" id="tests"></a>
 
@@ -196,32 +196,25 @@ Before proceeding with the CI Job operation, you can run the functional test cas
 
 There are different ways to fetch the test cases:
 
-* TAF Labels
 * [Version Control](../../version-control/)
 * AccelQ (if AccelQ plugin is installed in ARM)
 * Provar (if Provar plugin is installed in ARM)
 
 <figure><img src="../../../../../.gitbook/assets/image (1250).png" alt=""><figcaption></figcaption></figure>
 
-1.  **TAF Labels:** The test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
+1. **Version Control:** The test cases committed to a branch in version control are displayed.
 
-    * **Stop Deployment if Test cases fail to compile:** This prevents the deployment to proceed if any errors/warnings occur during running the test cases.
+* Select the **Version Control Repository** type.
+* Select the **Repository** and the **Branch**.&#x20;
+*   Select the way you would like to run your test cases, i.e., TAF, Selenium Maven, or Selenium Non-Maven.
+
+    1. For the **Selenium Maven** test type, you need to enter the test case root path in the **Test Case Root Path** field. Also, specify the goals.
+    2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type**, and enter the test case root path in the **Test Case Root Path** field.
+
+    **Additional options**
+
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
-
-    <figure><img src="../../../../../.gitbook/assets/image (1251).png" alt="" width="379"><figcaption></figcaption></figure>
-2. **Version Control:** The test cases committed to a branch in version control are displayed.
-   * Select the **Version Control Repository** type.
-   * Select the **Repository** and the **Branch**.&#x20;
-   *   Select the way you would like to run your test cases, i.e., TAF, Selenium Maven, or Selenium Non-Maven.
-
-       1. For the **Selenium Maven** test type, you need to enter the test case root path in the **Test Case Root Path** field. Also, specify the goals.
-       2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type**, and enter the test case root path in the **Test Case Root Path** field.
-
-       **Additional options**
-
-       * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
-       * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
 <figure><img src="../../../../../.gitbook/assets/image (1252).png" alt="" width="547"><figcaption></figcaption></figure>
 

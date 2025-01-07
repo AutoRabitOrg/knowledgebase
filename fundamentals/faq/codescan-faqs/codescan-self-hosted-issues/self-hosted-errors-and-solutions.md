@@ -4,6 +4,20 @@
 
 ### Errors and Solutions
 
+#### Why did I get the following error during initialization of VM: Could not reserve enough space for xxxKB object heap?
+
+If you are experiencing this error when running a scan, the issue may be with your Java version. **32-bit Java versions** have a lower limit to their heap size. This limit can be as low as **1.6GB** on Windows operating systems.
+
+If you are running a **64-bit** operating system, you will need to upgrade to a **64-bit version of Java**.
+
+You can check whether your Java version is **32** or **64-bit** by using the command: _**java -d64 -version**_ in your command prompt or terminal. If you have a **32-bit version of Java** installed, you will get the message:
+
+```
+Error: This Java instance does not support a 64-bit JVM.
+```
+
+To correct this error, please install the proper Java version.
+
 #### Why am I getting the error: java.lang.OutOfMemoryError: GC overhead limit exceeded?
 
 This error can be solved by manually adding a parameter to your Ant environment path variable.

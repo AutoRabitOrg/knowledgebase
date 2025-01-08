@@ -517,3 +517,7 @@ redirects:
     arm/docs/arm-release-notes-231: overview/release-notes/arm-release-notes/release-notes-23.1.md
     overview/release-notes/arm-release-notes/release-notes-24.4.2: overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-24.4.2.md
     overview/release-notes/arm-release-notes/release-notes-24.4.1: overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-24.4.1.md
+    fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/java.lang.outofmemoryerror-gc-overhead-limit-exceeded: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
+    fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/jenkins-java.lang.outofmemoryerror-java-heap-space: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
+    fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/error-occurred-during-initialization-of-vm-could-not-reserve-enough-space-for-xxxkb-object-heap: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
+

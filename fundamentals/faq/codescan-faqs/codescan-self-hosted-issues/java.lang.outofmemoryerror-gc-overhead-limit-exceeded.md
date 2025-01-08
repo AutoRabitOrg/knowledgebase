@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # java.lang.OutOfMemoryError: GC overhead limit exceeded
 
 This error can be solved by manually adding a parameter to your Ant environment path variable.

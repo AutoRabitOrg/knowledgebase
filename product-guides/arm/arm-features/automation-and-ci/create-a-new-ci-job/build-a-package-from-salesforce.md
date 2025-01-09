@@ -6,11 +6,11 @@ The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](../../../arm-administration/registration/salesforce-org/). Configure the job to run functional test cases from the ARM TAF library or from version control.
+Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](../../../arm-administration/registration/salesforce-org/). Configure the job to run functional test cases from version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Login to your ARM account.
+1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
 <figure><img src="../../../../../.gitbook/assets/image (1208).png" alt=""><figcaption></figcaption></figure>

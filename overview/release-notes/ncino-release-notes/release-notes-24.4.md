@@ -1,5 +1,11 @@
 # Release Notes 24.4
 
+## nCino + Data Loader 24.4.5 Release Notes
+
+* **Group Jobs Stability:** Fixed an issue to ensure group jobs execute without failure.
+* **Import Process Stability:** Resolved an issue to prevent failures during the import process.
+* **Rollback Functionality:** Fixed the rollback functionality on the nCino UAT instance to ensure it works as expected.
+
 ## nCino + Data Loader 24.4.4 Release Notes
 
 **Release Date: 13 December 2024**

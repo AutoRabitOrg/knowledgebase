@@ -40,7 +40,7 @@ ARM now supports the GenAiPromptTemplate component, ensuring compatibility with 
 
 **Aligned Branching Baseline Behavior**
 
-Branching Baseline now matches Ez-commit behavior for Default manageable state metadata. Excluded Default metadata, such as Account.object-meta.xml, is no longer committed. _Impacted Modules: Branching Baseline. Support Case: #126634._
+Branching Baseline now matches EZ-commit behavior for Default manageable state metadata. Excluded Default metadata, such as Account.object-meta.xml, is no longer committed. _Impacted Modules: Branching Baseline. Support Case: #126634._
 
 **Faster CI Job Assignment**
 
@@ -56,4 +56,4 @@ Merge validation now properly handles metadata names shorter than 9 characters. 
 
 **Commit Label Preservation**
 
-Commit labels are now retained even when associated prevalidation labels are removed, ensuring labels remain accessible and visible. _Impacted Modules: EZ-Commit, Commit Label EZ-Merge, Commit Label Deployment. Support Case: #128102._
+Commit labels are now retained even when associated pre-validation labels are removed, ensuring labels remain accessible and visible. _Impacted Modules: EZ-Commit, Commit Label EZ-Merge, Commit Label Deployment. Support Case: #128102._

@@ -15,7 +15,7 @@ This article will guide you through the process of creating a new Release Label 
 **Before you begin:**&#x20;
 
 1. Confirm you have the Manage Label permissions to create a new release label. &#x20;
-2. Ensure commit revisions were made to the version control branch to combine them under a single Release Label. For more information, refer to the article: [Commit Labels](commit-labels.md)
+2. Ensure commit revisions were made to the version control branch to combine them under a single Release Label. For more information, refer to the article: [Commit Labels](../commit-labels.md)
 
 ## Create a new Release Label <a href="#create-a-new-release-label" id="create-a-new-release-label"></a>
 
@@ -24,13 +24,13 @@ This article will guide you through the process of creating a new Release Label 
 3. Click on **`Create Release Label.`**\
 
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 1. On the next screen, give the release label creation process a **`Label Name`** and a short **`Description`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-1. Select the **`Repository`** and the **`Branch`** containing the commit labels. Note: For the version control repository registered in the SFDX structure, you must choose an additional option, i.e., Package Directory. To know more about Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md)
+1. Select the **`Repository`** and the **`Branch`** containing the commit labels. Note: For the version control repository registered in the SFDX structure, you must choose an additional option, i.e., Package Directory. To know more about Package Directory, refer to the article: [Salesforce DX Metadata Format](../../../../salesforce-dx-metadata-format.md)
 
 **Supported Components for Delta Metadata Generation in Release Label Deployments**&#x20;
 
@@ -83,7 +83,7 @@ Important Note: If you choose just one revision while creating a new Release Lab
 \
 
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 It's always a good idea to break data into multiple pages when dealing with multiple-label records. You can browse **25**, **50**, **75**, or **100** records on a single page or navigate to the previous or next page using the **`Previous`** and **`Next`** buttons.
 
@@ -100,9 +100,9 @@ The **`Release Labels Summary`** screen has been designed to enhance user experi
 \
 
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 1. Click on the **Merge** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669113759125.png)) to merge the release label to a branch.
 2. Click on the **Edit** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669114041351.png)) to update the Release Label information if required. You can also use the **`Search`** box to filter the results based on the label name.

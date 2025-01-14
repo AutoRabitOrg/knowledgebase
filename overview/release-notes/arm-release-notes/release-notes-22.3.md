@@ -60,7 +60,7 @@ The revamp of the **Release Label** page is the feature of version 22.3 that sta
 * The **selected revisions** are also displayed on the same screen and updated dynamically as you select/unselect revisions.
 * Release labels are **color-coded** on the **Release Label Summary** screen for easier identification, and the search now provides leaner results.
 
-[**Read more →**](../../../product-guides/arm/arm-features/version-control/change-labels/release-labels.md)
+[**Read more →**](../../../product-guides/arm/arm-features/version-control/change-labels/release-labels/)
 
 #### 2. Additional Metadata Support in Search and Substitute <a href="#id-2-additional-metadata-support-in-search-and-substitute" id="id-2-additional-metadata-support-in-search-and-substitute"></a>
 

@@ -27,12 +27,12 @@ Component details are listed in their corresponding sections within this documen
 
     *   Verified the rules: Name, Key, Description, Type, Severity, Message, Tags, and Remediation.
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
     *   Verified that a violation is thrown for **layout** and **.layout-meta.xml** files when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     * Verified that **NO** violation is thrown for **other file suffixes** (other than **layout** and **.layout-meta.xml** files) when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**
     * Verified that **NO** violation is thrown for **layout** and **.layout-meta.xml** files when file names **do not** include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**\
 
@@ -41,7 +41,7 @@ Component details are listed in their corresponding sections within this documen
     Expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components. This new set expands our list of LWC rules significantly. This library is comprised of Salesforce’s official ESLint plugin, allowing CodeScan to analyze LWC code more effectively.  Detailed documentation is available at [https://github.com/salesforce/eslint-plugin-lwc|https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc|https:/github.com/salesforce/eslint-plugin-lwc)\
 
 
-    <div align="center"><figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="center"><figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 **NOTE**: These following four rules were **not** added to the CodeScan library:
@@ -69,15 +69,15 @@ Component details are listed in their corresponding sections within this documen
    Verified the new LWC rule (API Version is Too Old) for these scenarios:
    *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule.
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    * Verified that no violation is thrown when the API version is between the minimum and maximum versions allowed.
 
 ### Enhancements

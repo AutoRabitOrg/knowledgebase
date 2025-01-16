@@ -6,15 +6,11 @@
 
 With this release, we have implemented the following enhancements and support fixes to improve features and functionality and streamline the user experience.
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Security Improvements <a href="#enhancements" id="enhancements"></a>
 
 **Email and Username Validation**
 
 Registration processes now enforce unique email addresses and usernames, ensuring each email is linked to only one active account. Added email verification confirms ownership, enhancing security and preventing duplication. _Impacted Modules: Admin - User Registration, Subscription Management._
-
-**Optimized Merge File Processing**
-
-The VALIDATINGSALESFORCEXML performs a single file check during branch-to-branch merges. Merged file data is stored uniquely, improving performance by preventing duplicate validations. _Impacted Modules: EZ-Merge._
 
 **Enhanced XSS Protection**
 
@@ -57,3 +53,9 @@ Merge validation now properly handles metadata names shorter than 9 characters. 
 **Commit Label Preservation**
 
 Commit labels are now retained even when associated pre-validation labels are removed, ensuring labels remain accessible and visible. _Impacted Modules: EZ-Commit, Commit Label EZ-Merge, Commit Label Deployment. Support Case: #128102._
+
+### Issue Resolution
+
+**Optimized Merge File Processing**
+
+The VALIDATINGSALESFORCEXML performs a single file check during branch-to-branch merges. Merged file data is stored uniquely, improving performance by preventing duplicate validations. _Impacted Modules: EZ-Merge._

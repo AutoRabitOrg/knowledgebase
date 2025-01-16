@@ -2,7 +2,7 @@
 
 ### What is GDPR? <a href="#what-is-gdpr" id="what-is-gdpr"></a>
 
-The General Data Protection Regulation (GDPR) is a comprehensive data protection law that regulates the use of personal data of EU (European Union) residents and provides individuals the right to exercise control over their data. GDPR came into effect on 25 May 2018. Simply put, the GDPR gives every EU citizen the right to control the way their personal data is processed and places an obligation on every organization to manage data fairly and transparently and to demonstrate their compliance. For more detailed information, visit the [European Commission](https://ec.europa.eu/info/law/law-topic/data-protection/eu-data-protection-rules\_en) website.
+The General Data Protection Regulation (GDPR) is a comprehensive data protection law that regulates the use of personal data of EU (European Union) residents and provides individuals the right to exercise control over their data. GDPR came into effect on 25 May 2018. Simply put, the GDPR gives every EU citizen the right to control the way their personal data is processed and places an obligation on every organization to manage data fairly and transparently and to demonstrate their compliance. For more detailed information, visit the [European Commission](https://ec.europa.eu/info/law/law-topic/data-protection/eu-data-protection-rules_en) website.
 
 ### What does GDPR cover? <a href="#what-does-gdpr-cover" id="what-does-gdpr-cover"></a>
 

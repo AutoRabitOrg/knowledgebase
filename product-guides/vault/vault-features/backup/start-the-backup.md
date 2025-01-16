@@ -16,7 +16,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
 ### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
 1. A **Salesforce Org** registered inside Vault. To register a new org, navigate to **`Setup > Register New Org`**. \[[Learn More](../../configuring-vault/registering-salesforce-org/)]
-2. A **backup configured** for your Salesforce Org. The backup configuration job creates a snapshot of the data/metadata from your Salesforce org and is also helpful in retrieving the data required to restore successfully. \[[Learn More](../knowledge-articles/ncino/backup-configuration-for-your-salesforce-org.md)]
+2. A **backup configured** for your Salesforce Org. The backup configuration job creates a snapshot of the data/metadata from your Salesforce org and is also helpful in retrieving the data required to restore successfully. \[[Learn More](../../knowledge-articles/ncino/backup-configuration-for-your-salesforce-org.md)]
 3. You have **permission** to create a backup job.
 
 ### Backing up your Data and Metadata <a href="#backing-up-your-data-and-metadata" id="backing-up-your-data-and-metadata"></a>

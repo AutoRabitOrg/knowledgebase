@@ -6,7 +6,13 @@
 
 #### Does Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?
 
-Yes, Vault is fully compliant with PCI DSS requirements. For more information, refer to our page on [PCI Compliance](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/compliance/pci-dss).&#x20;
+**PCI DSS** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of private cardholder data is kept private, safe, and secure.
+
+#### How does Vault ensure PCI compliance? <a href="#how-does-vault-ensure-pci-compliance" id="how-does-vault-ensure-pci-compliance"></a>
+
+Vault firewalls, software, data encryption, secure passwords, transmission, and physical access to data storage all serve to protect data security. AutoRABIT performs continual software and security updates, testing to verify compliance. Data access logs are monitored regularly monitored to identify outliers.&#x20;
+
+For more information, refer to our page on [PCI Compliance](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/compliance/pci-dss).&#x20;
 
 ***
 

@@ -2,6 +2,12 @@
 
 ## Vault FAQs
 
+### PCI Compliance
+
+#### Does Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?
+
+Yes, Vault is fully PCI Compliant.
+
 ### Backup and Compare
 
 #### **Can I delete specific, condition-based data from an existing backup?**

@@ -33,7 +33,7 @@ Note: To customize a Quality Gate that is already in use, click on **Unlock edit
 
 7. A default **Quality Gate** can be set at the org level. Select **Set as Default.**
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then it will be assigned automatically to every new project, except those for which you specify a different gate. (See step 6.)
 

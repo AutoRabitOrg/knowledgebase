@@ -1,5 +1,58 @@
 # Release Labels
 
+1. Log in to your ARM account.
+2. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) module and click on the **`Change Labels > Release Labels`** or directly go to the **`Change Labels`** tab and select **`Release Labels`** from the dropdown. The **Release Label** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+3. Click on **`Create Release Label.`**
+
+{% hint style="info" %}
+**NOTE**: The **Release Label** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+{% endhint %}
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+3.  Click on **`Change Labels.`**\
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+4.  Click on **`Release Labels`**.\
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+5.  Click on **`Create Release Label.`**\
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+6.  On the next screen, give the release label creation process a **`Label Name`** and enter a short **`Description`**.\
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+7.  Select the **`Repository`** and **`Branch`** containing the **`Commit Labels`**.\
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+8. Select the commit **`Label Type`**, i.e., **`Salesforce`** or **`Vlocity`**.&#x20;
+
+{% hint style="info" %}
+**Important Note:** If you choose just one revision while creating a new release label, a notification message asks you to select at least **two revisions**. You can choose the **Single Revision** option directly from the dropdown on the **New Merge** screen to perform a merge using only one revision. This helps avoid the creation of unnecessary release labels.
+
+![](<../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+{% endhint %}
+
+#### Release Labels Summary
+
+6. Click on the **Merge** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669113759125.png)) to merge the release label to a branch.
+7. Click on the **Edit** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669114041351.png)) to update the Release Label information if required. You can also use the **`Search`** box to filter the results based on the label name.
+8. Click on the **Delete** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669114143063.png)) to delete a Release Label. This process cannot be undone.
+9. Click **`Create Artifact`** to manually create a package that failed or was not prepared. This option will not be clickable if the package creation has been completed or is in progress. This option will be available for **`orange`** and **`red`** release labels but not for green.
+
+{% hint style="warning" %}
+**NOTE:** On the **New Deployment** page, for the **Release Label** dropdown, the new release labels for which the package has been successfully prepared is shown. The **dropdown menu does not show release labels** created before the **ARM 22.3 release**.&#x20;
+{% endhint %}
+
 ## Overview <a href="#overview" id="overview"></a>
 
 A Release Label in the ARM application serves as a powerful tool for managing and deploying changes efficiently. By combining multiple commit labels into a single Release Label, teams can bundle together various revisions or code updates into a cohesive package. This approach allows for the seamless deployment of several related updates at one time, reducing the risk of partial deployments and ensuring that all interdependent changes are introduced simultaneously.&#x20;
@@ -15,7 +68,7 @@ This article will guide you through the process of creating a new Release Label 
 **Before you begin:**&#x20;
 
 1. Confirm you have the Manage Label permissions to create a new release label. &#x20;
-2. Ensure commit revisions were made to the version control branch to combine them under a single Release Label. For more information, refer to the article: [Commit Labels](../commit-labels.md)
+2. Ensure commit revisions were made to the version control branch to combine them under a single Release Label. For more information, refer to the article: [Commit Labels](commit-labels.md)
 
 ## Create a new Release Label <a href="#create-a-new-release-label" id="create-a-new-release-label"></a>
 
@@ -29,15 +82,15 @@ This article will guide you through the process of creating a new Release Label 
 3. Click on **`Create Release Label.`**\
 
 
-<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1597).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, give the release label creation process a **`Label Name`** and a short **`Description`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 5. Select the **`Repository`** and the **`Branch`**&#x63;ontaining the commit labels. \
    \
-   Note: For the version control repository registered in the SFDX structure, you must choose an additional option: Package Directory. To learn more about Package Directory, refer to: [Salesforce DX Metadata Format](../../../../salesforce-dx-metadata-format.md).
+   Note: For the version control repository registered in the SFDX structure, you must choose an additional option: Package Directory. To learn more about Package Directory, refer to: [Salesforce DX Metadata Format](../../../salesforce-dx-metadata-format.md).
 
 **Supported Components for Delta Metadata Generation in Release Label Deployments**&#x20;
 
@@ -95,7 +148,7 @@ Important Note: If you choose just one revision while creating a new Release Lab
 \
 
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
 
 It's always a good idea to break data into multiple pages when dealing with multiple-label records. You can browse **25**, **50**, **75**, or **100** records on a single page or navigate to the previous or next page using the **`Previous`** and **`Next`** buttons.
 
@@ -109,9 +162,9 @@ The **`Release Labels Summary`** screen has been designed to enhance user experi
    * Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669707355377.png) icon to download the package.xml file in a .zip format.
 5. Click on **`View Dataset`** to view the components in that release label package. You can view the components in **`JSON View`** or **`Tree View`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (5).png" alt=""><figcaption></figcaption></figure>
 
 6. Click on the **Merge** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669113759125.png)) to merge the release label to a branch.
 7. Click on the **Edit** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669114041351.png)) to update the Release Label information if required. You can also use the **`Search`** box to filter the results based on the label name.
@@ -123,4 +176,22 @@ On the **New Deployment** page, for the **Release Label** dropdown, the new rele
 
 To manually prepare the package, use the **Create Artifact** button. The release label will then be available for deployment.
 {% endhint %}
+
+
+
+
+
+### Embed a Release Label
+
+#### Overview
+
+A Release Label in the ARM application serves as a powerful tool for managing and deploying changes efficiently. By combining multiple Commit Labels into a single Release Label, teams can bundle together various revisions or code updates into a cohesive package.
+
+
+
+
+
+
+
+
 

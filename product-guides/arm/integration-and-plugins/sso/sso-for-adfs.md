@@ -31,17 +31,17 @@ To set up the ADFS connection with AutoRABIT using a Relying Party Trust (RPT), 
 8. On the next screen, check the box labeled: **Enable support for the SAML 2.0 WebSSO protocol**.
 9. Enter the service URL. **For ex-** _pg.autorabit.com/saml/SSO_
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. Click **Next**.
 11. On the next screen, add a Relying party trust identifier named **https://pg.autorabit.com/saml/metadata** and click **Add**.
 12. On the next screen, leave the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="489"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="489"><figcaption></figcaption></figure>
 
 13. On the next screen, select: **Permit all users to access this relying party**.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 14. On the next screens, the wizard will display an overview of your settings. Click **Next**.
 

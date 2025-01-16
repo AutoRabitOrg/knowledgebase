@@ -227,7 +227,7 @@
         * [Squash and Merge](product-guides/arm/arm-features/version-control/ez-merge/squash-and-merge.md)
       * [Change Labels](product-guides/arm/arm-features/version-control/change-labels/README.md)
         * [Commit Labels](product-guides/arm/arm-features/version-control/change-labels/commit-labels.md)
-        * [Release Labels](product-guides/arm/arm-features/version-control/change-labels/release-labels/README.md)
+        * [Release Labels](product-guides/arm/arm-features/version-control/change-labels/release-labels.md)
           * [Selective Deployments Using Pre-Prepared Artifacts](product-guides/arm/arm-features/version-control/change-labels/release-labels/selective-deployments-using-pre-prepared-artifacts.md)
           * [Artifact Preparation and Deployment Process](product-guides/arm/arm-features/version-control/change-labels/release-labels/artifact-preparation-and-deployment-process.md)
         * [ALM Labels](product-guides/arm/arm-features/version-control/change-labels/alm-labels.md)

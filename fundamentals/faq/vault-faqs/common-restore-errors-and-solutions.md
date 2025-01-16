@@ -6,7 +6,27 @@
 
 #### Does Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?
 
-Yes, Vault is fully PCI Compliant.
+Yes, Vault is fully compliant with PCI DSS requirements. For more information, refer to our page on [PCI Compliance](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/compliance/pci-dss).&#x20;
+
+***
+
+### Sandbox Refresh vs. Backup and Restore Timing
+
+#### How long does it take to perform a sandbox refresh versus a backup and restore?&#x20;
+
+**Sandbox Refresh:** A sandbox refresh creates a full replica of a Salesforce org, including data and metadata, in another sandbox environment. It can take **hours or days**, depending on the org's data and metadata size and complexity. Salesforce limits full-copy sandbox refreshes to once every 29 days.
+
+**Backup and Restore:** Backup and restore processes involve creating backups and restoring specific or full data sets as needed. AutoRABIT Vault uses backups from AWS S3 or Azure Blob Storage for selective or full restoration. The time to perform a backup and restore is typically faster than a sandbox refresh. It also has no Salesforce-imposed frequency limits.
+
+**Replicate RTO (Recovery Time Objective)** estimates depend on:
+
+* Data volume
+* Schema complexity
+* API availability&#x20;
+
+For specific estimates, contact the product team.
+
+***
 
 ### Backup and Compare
 

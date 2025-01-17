@@ -1,5 +1,17 @@
 # Release Notes 24.0
 
+## Vault 24.2.6 Release Notes
+
+**Release Date: 19 January 2025**
+
+* **Rich Text Field Data:** Enhanced Vault Connect to support display of images and HTML content seamlessly in rich text fields and in emailMessage body.
+* **Objects Backup:** Resolved issues to ensure proper backup of "Big Objects," "Special Objects," and "Entity Definition."
+* **Query Limit:** Set a limit on the number of records fetched by queries to prevent excessive data retrieval.
+* **Optimized Query Performance:** Queries now automatically add a `WHERE` condition if one is not explicitly specified, improving backup performance.
+* **BigObjects Availability During Backup:** Ensured "BigObjects" are available under special objects during backup configuration creation.
+* **Excluded Child Objects from Deletion:** Fixed an issue to prevent task and email message data from being included in deletion processes.
+* **OwnerID Exclusion for ContentVersion:** Excluded the `OwnerID` field from upsert operations to improve data handling.
+
 ## Vault 24.2.5 Release Notes
 
 **Release Date: 18 December 2024**

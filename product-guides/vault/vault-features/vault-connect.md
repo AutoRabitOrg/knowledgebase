@@ -12,7 +12,7 @@ This document provides complete information about the new feature Vault Connect,
 
 ## Step-by-Step Guide
 
-**Create Connect Config**
+### **Create Connect Config**
 
 1. Log in to the **Vault** application.
 
@@ -88,7 +88,7 @@ This document provides complete information about the new feature Vault Connect,
 
 19. On the Connect Config Summary, you can view all the configurations created.
 
-#### **View the Archived Data In Salesforce**
+### **View Archived Data in Salesforce**
 
 1. &#x20;Log in to the Salesforce org for which you want to view the data.
 2.  **Create Auth. Providers**
@@ -115,7 +115,7 @@ This document provides complete information about the new feature Vault Connect,
 
 6. On completing the required selections, click on the Save button.&#x20;
 
-#### Configuring Connected Apps in Salesforce
+### Configure Connected Apps in Salesforce
 
 Connected Apps allow external applications to securely integrate with Salesforce, enabling seamless data sharing and advanced functionality. Proper configuration is critical to ensure secure and efficient integration. The following guide outlines the steps to configure a Connected App and set up authentication providers.
 
@@ -141,7 +141,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
     <figure><img src="../../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
 8. Click Save.
 
-#### Steps to Create Auth. Providers
+### Steps to Create Auth. Providers
 
 1. Go to "**Auth. Providers**" from Quick Find and click **New**.
 2. Select the "**Provider Type**" as "**Salesforce**".
@@ -158,7 +158,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
 7. Copy the Callback URL, edit the Connected App, paste it in the "**Callback URL**" field, and click **Save**.
 8. Go to "**External Data Sources**" from Quick Find, select the external data source created, and click "**Validate and Sync**."
 
-#### Create External Data Sources
+### Create External Data Sources
 
 1. **Go to** → **External Data Sources** under setup.
 
@@ -184,7 +184,57 @@ Connected Apps allow external applications to securely integrate with Salesforce
    * Click on the **New** button.
 5. Under **Objects**, you can see the objects that are part of the Config created with the naming convention **“Object\_\_X”.**
 
+***
 
+### View Archived Rich Text Email Content
+
+To streamline the process and enhance functionality, the Vault Connect integration has been updated to support viewing of rich text fields (unsupported by external objects) through Visualforce pages in Salesforce, enabling the seamless viewing of images and other HTML content in rich text fields.
+
+&#x20;**Steps to Implement the Fix:**
+
+1.  **Create a Visualforce Page**:
+
+    In Salesforce Setup, create a Visualforce page for the object where the rich text data needs to be displayed.
+2. Example: To display emailmessage body field in the emailMessage\_x object layout, follow these steps:
+3.  Open the Developer Console by going to: Setup → Developer Console\
+
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+4.  After Landing on the developer console, create a new Visualforce page and save it to continue with the script creation.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+5.  Enter the script and save it.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+6. Example script:`<apex:page standardController="CustomX_c_x__x" >`\
+   `<apex:outputText style="text-align:left" value="{!CustomX_c_x__x.RicheRich_c__c}" escape="false" />`\
+   `</apex:page>`
+7. Add the Visualforce page to the object layout and continue to view the email messages in external objects:
+   1. Go to the external object through: Setup → External Objects
+   2.  Select any external object as required. Here, email message is considered for illustration.\
+
+
+       <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+   3. **Add the Visualforce page to the object layout**
+      1.  Go to the ‘Page Layout’ in the external object and observe the Visualforce page.\
+
+
+          <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+      2.  Observe the Visualforce pages highlighted.\
+
+
+          <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+      3.  Add the Visualforce page to the layout. Observe the ‘EmsgVFPage’ added to the page layout.\
+
+
+          <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+8. **Verify the Update**: Open a record within the object to ensure the rich text/html body, including images, is displayed correctly.
+
+This enhancement ensures that archived email body content with rich text and images is rendered seamlessly in Salesforce.
+
+***
 
 ## Sync with Salesforce
 

@@ -2,7 +2,7 @@
 
 ## Vault 24.2.6 Release Notes
 
-**Release Date: 22 January 2025**
+**Release Date: 29 January 2025**
 
 * **Rich Text Field Data:** Enhanced Vault Connect to support display of images and HTML content seamlessly in rich text fields and in emailMessage body.
 * **Objects Backup:** Resolved issues to ensure proper backup of "Big Objects," "Special Objects," and "Entity Definition."

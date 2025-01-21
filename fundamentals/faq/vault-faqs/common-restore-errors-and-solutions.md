@@ -6,7 +6,7 @@
 
 #### Does Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?
 
-**PCI DSS** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of private cardholder data is kept private, safe, and secure.
+**PCI DSS** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of cardholder data is kept private, safe, and secure.
 
 #### How does Vault ensure PCI compliance? <a href="#how-does-vault-ensure-pci-compliance" id="how-does-vault-ensure-pci-compliance"></a>
 

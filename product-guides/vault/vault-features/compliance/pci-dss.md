@@ -2,7 +2,7 @@
 
 ### What is PCI compliance?&#x20;
 
-**Payment Card Industry (PCI) Data Security Standards (DSS)** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of private cardholder data is kept private, safe, and secure.
+**Payment Card Industry (PCI) Data Security Standards (DSS)** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of cardholder data is kept private, safe, and secure.
 
 ### How does Vault ensure PCI compliance?
 

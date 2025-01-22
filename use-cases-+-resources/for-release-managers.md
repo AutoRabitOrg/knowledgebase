@@ -16,24 +16,16 @@ _On_ [_LearningHub_](https://learninghub.autorabit.com/s/)_, you'll find a dynam
 
 ## LearningHub Courses
 
+**\*Note: Must be enrolled to the learninghub first**
+
 _We've curated specific courses tailored to help you navigate common use cases and challenges with AutoRABIT._
 
-### ARM Release Manager Onboarding Course
+### 1. [ARM Release Manager Onboarding Course](https://learninghub.autorabit.com/course/view.php?id=48)
 
-{% embed url="https://learninghub.my.trailhead.com/content/learninghub/trails/arm-onboarding-course-for-release-managers" %}
+### 2. [ARM Core Certification](https://learninghub.autorabit.com/course/view.php?id=51)
 
-### ARM Core Certification
+### 3. [ARM Professional Certification](https://learninghub.autorabit.com/course/view.php?id=52)
 
-{% embed url="https://learninghub.my.trailhead.com/content/learninghub/trails/arm-core-track-course" %}
+### 4. [CodeScan Onboarding Course](https://learninghub.autorabit.com/course/view.php?id=42)
 
-### ARM Professional Certification
-
-{% embed url="https://learninghub.my.trailhead.com/content/learninghub/trails/autorabit-arm-professional-certification-course" %}
-
-### CodeScan Onboarding Course
-
-{% embed url="https://learninghub.my.trailhead.com/content/learninghub/trails/codescan-onboarding-course" %}
-
-### Vault Certification
-
-{% embed url="https://learninghub.my.trailhead.com/content/learninghub/trails/vault-certification-course" %}
+### 5. [Vault Certification](https://learninghub.autorabit.com/course/view.php?id=43)

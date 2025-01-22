@@ -91,11 +91,13 @@ Release labels currently do not support delta logic for metadata, which may lead
 **Example:**\
 Adding a new **CustomLabel** results in the artifact containing all CustomLabels because they are stored in a single `CustomLabels.labels` file.
 
-### **Repository Type Exceptions**:
+### **Repository Type Exceptions**
 
 1. **Non-DX Repositories**:\
    Example: Adding a **CustomField** includes the entire `CustomObject` file, encompassing all child metadata (e.g., CustomField, RecordType).
 2. **DX Repositories**:\
    Example: Adding a **CustomField** includes only the specific `CustomField` file because metadata is stored separately.
 
-#### **Summary:** These behaviors are inherent to the system’s current file-level change tracking and directory structure. Significant architectural changes would be required to enable delta preparation or refine checkout logic.
+#### **Summary**
+
+These behaviors are inherent to the system’s current file-level change tracking and directory structure. Significant architectural changes would be required to enable delta preparation or refine checkout logic.

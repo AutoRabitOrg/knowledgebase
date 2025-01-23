@@ -24,7 +24,7 @@ This includes, but is not limited to:&#x20;
 * Automation (e.g., bots, agents) utilizing AutoRABIT for testing, deployment, or monitoring must be licensed appropriately.&#x20;
 * Any person who commits code to a Source Code Management (SCM) system, where the commit directly or indirectly triggers a job in AutoRABIT, requires a Platform Integration License.&#x20;
 * If a service account is used to trigger automation or integrate with AutoRABIT, the person or team responsible for the actual code commit must still hold a Platform Integration License. This ensures that each individual whose actions contribute to triggering AutoRABIT processes is appropriately licensed.&#x20;
-* Any code commits triggering AutoRABIT jobs, directly or indirectly, count toward Platform Integration Licenses.&#x20;
+* Any code commits triggering AutoRABIT jobs, directly or indirectly, manual or automate&#x64;**,** count toward Platform Integration Licenses.&#x20;
 
 Example: In Git, multiple commits pushed simultaneously are counted individually toward user licensing.&#x20;
 

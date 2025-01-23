@@ -24,7 +24,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 6. To group your CI job for easier identification, choose the group from the dropdown. You can create a new group using the **"+"** symbol and assign your current and further CI jobs to such a group.
 7. Here, the user interface is separated into different sections, we will cover each one of them separately.
 
-#### Build <a href="#build" id="build"></a>
+### Build <a href="#build" id="build"></a>
 
 1. The first step is to choose your **Version Control Systems**. Currently, ARM supports Version Control Systems like GIT, SVN, and TFS.
 2. Select the **Repository** and the **Branch**.
@@ -48,7 +48,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1665055683758.png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Additional options in the 'Build' section**
+#### **Additional options in the 'Build' section**
 
 1. **Status Check API:** This allows you to check the statuses of the APIs being run for the CI job.
 2.  [**Vlocity Build**](../../../integration-and-plugins/vlocity/)**:** This option allows you to deploy the velocity components from the metadata folder path to the sandbox.
@@ -118,7 +118,7 @@ For more information on running **Static Code Analysis in CI Jobs**, refer [HERE
 **Important Note:** To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
 {% endhint %}
 
-#### Deploy <a href="#deploy" id="deploy"></a>
+### Deploy <a href="#deploy" id="deploy"></a>
 
 This section is all about either deploying or validating the above package onto a different Salesforce Org.
 
@@ -217,7 +217,7 @@ Specify the **Apex test level** you would like to run for the CI job.
    * Environment Provisioning will run in parallel to the Dataloader Job.&#x20;
 {% endhint %}
 
-#### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
+### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
 
 This section allows users to query dependency relationships between the metadata components in a Salesforce org to view and manage dependent metadata components so that your commits do not break any existing functionalities in your org. Dependency Analyzer offers a dependency check, which allows users to see what they are missing due to Salesforce specificity.
 
@@ -225,34 +225,25 @@ This section allows users to query dependency relationships between the metadata
 
 To analyze failed components in case of a failed deployment, select the **Source Org for analysis** from the drop-down. Users can view the results of this analysis in the **Dependency Analyzer** tab of the **Deployment Report**, or download it in manifest (.json) or .xls format.
 
-#### Tests <a href="#tests" id="tests"></a>
+### Tests <a href="#tests" id="tests"></a>
 
 Before proceeding with the CI Job operation, you can run the functional test cases to evaluate the functionality of the code being deployed to the Destination environment. Select the manner in which you want to fetch the test cases.
 
 There are different ways to fetch the test cases:
 
-* TAF Labels
 * Version Control
 * AccelQ (if AccelQ plugin is installed in ARM)
 * Provar (if Provar plugin is installed in ARM)
 
 <figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt="" width="391"><figcaption></figcaption></figure>
 
-1.  **TAF Labels:**&#x54;he test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
-
-    * **Stop Deployment if Test cases fail to compile:** This prevents the deployment to proceed if any errors/warnings occur during running the test cases.
-    * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
-    * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.\
-
-
-    <figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
-2.  **Version Control:**&#x54;he test cases committed to a branch in version control are displayed.
+1.  **Version Control:** The test cases committed to a branch in version control are displayed.
 
     * Select the **Version Control Repository** type.
     * Select the **Repository** and the **Branch**.&#x20;
-    * Select the way you would like to run your test cases, i.e., TAF, Selenium Maven, or Selenium Non-Maven.
+    * Select the way you would like to run your test cases, i.e., Selenium Maven or Selenium Non-Maven.
       1. For the **Selenium Maven** test type, you need to enter the test case root path in the **Test Case Root Path** field. Also, specify the goals.
-      2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type**, and enter the test case root path in the **Test Case Root Path** field.
+      2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type** and enter the test case root path in the **Test Case Root Path** field.
 
     **Additional options:**
 
@@ -260,13 +251,13 @@ There are different ways to fetch the test cases:
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
     <figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt="" width="547"><figcaption></figcaption></figure>
-3. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
+2. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
 <figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 4.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
 
-    * Select your **Version Control Repository** and the **Branch** and provide the **provar test cases path**.
+    * Select your **Version Control Repository** and the **Branch** and provide the **Provar test cases path**.
     * **Test Cases Root Path**: Enter the test case root path till the **.testproject** file
     * **Test Cases Execution Path:** Enter the test cases execution path here. **Ex:** tests/sample and if not specified, all the test cases from the **'tests'** folder will get executed.
 
@@ -278,11 +269,11 @@ There are different ways to fetch the test cases:
 
     <figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1).png" alt="" width="542"><figcaption></figcaption></figure>
 
-#### Callout URL <a href="#callout-url" id="callout-url"></a>
+### Callout URL <a href="#callout-url" id="callout-url"></a>
 
 The Callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly. ([LEARN MORE](../configure-callout-url.md))
 
-#### Notifications <a href="#notifications" id="notifications"></a>
+### Notifications <a href="#notifications" id="notifications"></a>
 
 Send email notifications to selected users' emails on the success or failure of a build.
 
@@ -294,7 +285,7 @@ Upon selection, the respective developer/ checkin users for whom the deployment 
 
 **For ex-** Let say, **Developer A** and **Developer B** have committed some changes to a particular branch but due to some reason, **Developer B** commits wrong data for which the deployment gets failed. In such a case, **Developer B** will get notified about the failed deployment operation. A sample email notification for deployment getting failed is shared below, this will also have information for the revision history for which the deployment got failed. If the revision lists are more than 20, the report in CSV format will be attached to your mail which will have the complete list of failed revision lists.
 
-#### Schedule  <a href="#schedule" id="schedule"></a>
+### Schedule  <a href="#schedule" id="schedule"></a>
 
 Allows you to schedule the process at which it must run.
 
@@ -302,7 +293,7 @@ Allows you to schedule the process at which it must run.
 2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
 3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
 
-#### Save <a href="#save" id="save"></a>
+### Save <a href="#save" id="save"></a>
 
 Finally, click **Save** to save the new CI job details.
 

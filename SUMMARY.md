@@ -139,7 +139,7 @@
   * [Getting Started](product-guides/arm/getting-started/README.md)
     * [Signing Up with ARM](product-guides/arm/getting-started/signing-up-with-arm.md)
     * [What is ARM](product-guides/arm/getting-started/what-is-arm.md)
-    * [What can I do with ARM?](product-guides/arm/getting-started/what-can-i-do-with-arm/README.md)
+    * [What can I do with ARM?](product-guides/arm/getting-started/what-can-i-do-with-arm.md)
       * [ARM Supported Metadata Types](product-guides/arm/getting-started/what-can-i-do-with-arm/arm-supported-metadata-types.md)
     * [Who can use ARM?](product-guides/arm/getting-started/who-can-use-arm.md)
     * [Salesforce Org Management](product-guides/arm/getting-started/salesforce-org-management.md)

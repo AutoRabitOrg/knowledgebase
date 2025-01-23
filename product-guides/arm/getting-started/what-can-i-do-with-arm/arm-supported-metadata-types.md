@@ -1,5 +1,9 @@
 # ARM Supported Metadata Types
 
+
+
+ARM supports a wide range of Salesforce metadata types, including Apex Classes, Visualforce Pages, Lightning Components, Custom Objects, Profiles, Permission Sets, Workflows, Validation Rules, and more, ensuring comprehensive coverage for your deployment and version control needs. View the full list.
+
 | #   | Supported Metadata in ARM            |
 | --- | ------------------------------------ |
 | 2   | ActionPlanTemplate                   |
@@ -398,3 +402,5 @@
 | 395 | DigitalExperience                    |
 | 396 | `GenAiPromptTemplate`                |
 | 397 | `GenAiPromptTemplateActv`            |
+
+##

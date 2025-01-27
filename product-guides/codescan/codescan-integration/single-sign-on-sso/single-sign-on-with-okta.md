@@ -86,7 +86,7 @@ Your connection id will be available in the **Metadata URL** generated inside Co
 &#xNAN;_&#x43;onnection Id_: OKTA-SAML
 {% endhint %}
 
-9. On the same screen, in the **`Attribute Statements`** panel, add the following attributes (mandatory) and map to corresponding OKTA properties:
+9. *On the same screen, in the **`Attribute Statements`** panel, add the following attributes (mandatory) and map to corresponding OKTA properties:
 
 | Name            | Name format   | Value            |
 | --------------- | ------------- | ---------------- |

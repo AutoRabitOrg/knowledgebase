@@ -49,7 +49,7 @@ Platform Integration Users are sold in blocks of 10. This means any user meeting
 
 The average of the two highest quarters (15 and 17) is 16. Since licenses are sold in blocks of 10, ACME oversubscribed by 6 users and would need to purchase an additional 10 licenses.
 
-**Notes:**
+#### **Notes:**
 
 * The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q2 2025, Q3 2025, Q4 2025, Q1 2026. A partial quarter is not prorated - it would simply be less likely to be one of the highest use quarters used in the average.&#x20;
 * **Licenses are sold in blocks of 10 and always round up.** If oversubscribed by 6 licenses, purchase an additional 10. If oversubscribed by 11, purchase an additional 20.

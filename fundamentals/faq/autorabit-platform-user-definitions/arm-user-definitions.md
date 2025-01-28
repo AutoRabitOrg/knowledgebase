@@ -1,6 +1,6 @@
 # ARM User Definitions
 
-### Standard User
+## Standard User
 
 A Standard User is an individual authorized by the Customer to log in to and directly use AutoRABIT’s subscribed products.
 
@@ -11,11 +11,11 @@ A Standard User is an individual authorized by the Customer to log in to and dir
 
 ***
 
-### Platform Integration User
+## Platform Integration User
 
 A Platform Integration User is an individual authorized by the Customer to perform actions that trigger the execution of ARM. This is primarily intended represent users who interact with ARM through Git and do not have a Standard User license.&#x20;
 
-#### Tracking Platform Integration Users in ARM:
+### Tracking Platform Integration Users in ARM:
 
 AutoRABIT tracks the usage of ARM as an orchestration engine through version control systems. The unique identifier used is the associated email address. Therefore, it is important that activity be linked to official customer email addresses to avoid double-counting users who may use personal email addresses.
 

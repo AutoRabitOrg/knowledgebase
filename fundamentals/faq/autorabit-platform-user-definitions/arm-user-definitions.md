@@ -1,7 +1,5 @@
 # ARM User Definitions
 
-## **ARM User Definitions**
-
 ### Standard User
 
 A Standard User is an individual authorized by the Customer to log in to and directly use AutoRABIT’s subscribed products.

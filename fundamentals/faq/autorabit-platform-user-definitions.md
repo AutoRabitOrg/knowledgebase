@@ -1,5 +1,11 @@
 # User Definitions
 
+
+
+{% hint style="info" %}
+**ARM-Specific User Definitions**: The information below is generalized across the entire AutoRABIT suite of products. For information specific to ARM, please refer to the ARM User Definitions page [here](https://knowledgebase.autorabit.com/fundamentals/faq/autorabit-platform-user-definitions/arm-user-definitions).&#x20;
+{% endhint %}
+
 **Standard User**
 
 A Standard User is an individual authorized by the Customer to log in to and fully utilize AutoRABIT’s subscribed products. Standard Users have access to all product functionalities, including the Web UI, IDE plugins, APIs, and other interfaces.&#x20;

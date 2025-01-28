@@ -8,7 +8,7 @@ Depending on permissions in your SonarQube™ instance, the following issue can 
 
 \[Warn  - 12:10:58] XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-\[Error - 12:10:58] CodeScan is NOT licensed. Please contact [support@code-scan.com](mailto:support@code-scan.com) to purchase or renew your license
+\[Error - 12:10:58] CodeScan is NOT licensed. Please [contact our support team](../../../../product-guides/codescan/codescan-support/raise-a-service-request.md) to purchase or renew your license
 
 The issue is that the license is a variable that needs to be checked by [CodeScan](https://www.codescan.io/) when it runs and the user that created the token needs certain permissions for the plugin to access the license variable.\
 So this can be solved by allowing access to the variable or providing the license early.&#x20;

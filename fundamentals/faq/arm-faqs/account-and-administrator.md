@@ -73,7 +73,7 @@ If you requested a new password but didn't receive your password reset email, th
 
 #### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
 
-ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
 #### Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
 
@@ -132,7 +132,7 @@ ARM works best in the two most recent versions of these browsers:
 
 #### Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
 
-Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
+Yes, this is achievable; however, your [Salesforce Orgs](../../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
 
 #### Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
 
@@ -146,7 +146,7 @@ Yes, this is achievable; however, your [Salesforce Orgs](../../product-guides/ar
 
 #### Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
 
-The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
+The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../../product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 #### What is the functionality of "Sync Branches" radio button in the VC Repo's screen? <a href="#what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen" id="what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen"></a>
 
@@ -176,7 +176,7 @@ There can only be one Super Admin, but you can temporarily change the Super Admi
 
 #### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but why is there no Revision# created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
-Before proceeding with the Branching Baseline operation, please ensure you have the Write permission on the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../product-guides/arm/getting-started/registration/branching-baseline.md)
+Before proceeding with the Branching Baseline operation, please ensure you have the Write permission on the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../../product-guides/arm/getting-started/registration/branching-baseline.md)
 
 #### How can I get access to the AutoRABIT Academy? <a href="#how-can-i-get-access-to-the-autorabit-academy" id="how-can-i-get-access-to-the-autorabit-academy"></a>
 
@@ -214,10 +214,10 @@ Please edit the role assigned to the user and ensure that the below-mentioned sp
 
 You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
 
-* [SCA for CodeScan](../../product-guides/codescan/)
-* [SCA for Checkmarx](../../product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
-* [SCA for Apex PMD](../../product-guides/arm/integration-and-plugins/apex-pmd.md)
-* [SCA for SonarQube](../../product-guides/arm/integration-and-plugins/sonarqube.md)
+* [SCA for CodeScan](../../../product-guides/codescan/)
+* [SCA for Checkmarx](../../../product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
+* [SCA for Apex PMD](../../../product-guides/arm/integration-and-plugins/apex-pmd.md)
+* [SCA for SonarQube](../../../product-guides/arm/integration-and-plugins/sonarqube.md)
 
 #### We’re switching from an on-premises GitHub account to the Cloud version of GitHub. I created the GitHub cloud account and tried setting up the cloud connection in ARM, but the system gave me an error. <a href="#were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github" id="were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github"></a>
 
@@ -225,7 +225,7 @@ Once the GitHub cloud account is created, you should be able to set it up with A
 
 #### How can I setup SSO in ARM? <a href="#how-can-i-setup-sso-in-arm1" id="how-can-i-setup-sso-in-arm1"></a>
 
-Please refer to the [Knowledge Base article](../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
+Please refer to the [Knowledge Base article](../../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
 
 #### We can see the Diff when a Commit is created, but can we see a Diff during the process of Commit? <a href="#we-can-see-the-diff-when-a-commit-is-created-but-can-we-see-a-diff-during-the-process-of-commit" id="we-can-see-the-diff-when-a-commit-is-created-but-can-we-see-a-diff-during-the-process-of-commit"></a>
 

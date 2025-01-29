@@ -86,7 +86,7 @@ Allows you to schedule the process at which it must run.
 2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
 3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 

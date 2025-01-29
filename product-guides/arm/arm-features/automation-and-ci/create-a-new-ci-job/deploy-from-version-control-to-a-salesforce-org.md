@@ -306,7 +306,7 @@ If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vl
    * The following message will be displayed in the log if you do not select this option: **`Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository.`**
    * The following message will be displayed in the log if you select this option but enter the wrong key: **`Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository.`**
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/ci-jobs.md).
+For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 

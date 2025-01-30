@@ -130,7 +130,7 @@
       * [False Positives](fundamentals/faq/codescan-faqs/codescan-cloud-issues/false-positives.md)
     * [Common Issues and Solutions](fundamentals/faq/codescan-faqs/common-issues-and-solutions.md)
   * [Vault-FAQs](fundamentals/faq/vault-faqs.md)
-    * [Frequently Asked Questions](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)
+    * [Vault-FAQs](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions.md)
     * [Common Error Messages](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions-1.md)
     * [Limitations](fundamentals/faq/vault-faqs/limitations.md)
     * [Unsupported Metadata Types](fundamentals/faq/vault-faqs/page-1.md)

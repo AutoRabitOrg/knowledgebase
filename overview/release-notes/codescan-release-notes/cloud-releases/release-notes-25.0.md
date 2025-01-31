@@ -10,8 +10,6 @@ description: Newest CodeScan Releases
 
 #### Release Date: February 05, 2024&#x20;
 
-&#x20;
-
 ### Summary:&#x20;
 
 CodeScan 25.0.2 is comprised of the following 4 components:&#x20;

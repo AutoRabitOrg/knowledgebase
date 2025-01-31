@@ -29,6 +29,7 @@
     * [Release Notes 21.5](overview/release-notes/arm-release-notes/release-notes-21.5.md)
   * [CodeScan Release Notes](overview/release-notes/codescan-release-notes/README.md)
     * [Cloud Releases](overview/release-notes/codescan-release-notes/cloud-releases/README.md)
+      * [Release Notes 25.0](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-25.0.md)
       * [Release Notes 24.0](overview/release-notes/codescan-release-notes/cloud-releases/release-notes-24.0.md)
       * [Release Notes 23.2](overview/release-notes/codescan-release-notes/cloud-releases/release-note-23.2.md)
       * [Release Notes 23.1](overview/release-notes/codescan-release-notes/release-note-23.1.0.md)

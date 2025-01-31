@@ -1,7 +1,3 @@
----
-description: Newest CodeScan Releases
----
-
 # Release Notes 24.0
 
 ## CodeScan Cloud

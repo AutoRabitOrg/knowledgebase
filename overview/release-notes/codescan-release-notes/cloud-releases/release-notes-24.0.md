@@ -15,6 +15,7 @@ description: Newest CodeScan Releases
 CodeScan 24.0.15 is comprised of the following components:
 
 * [1 New Module](release-notes-24.0.md#new-module-ncino)
+* [1 New Rule](release-notes-24.0.md#rule)
 * [1 Fix](release-notes-24.0.md#fix)
 
 ### New Module: nCino&#x20;
@@ -86,6 +87,11 @@ System bypass logic is required for custom triggers. Checking for the Exclude Tr
 
 **System Bypass Logic - Validation Rules**\
 System bypass logic is required for Validation Rules.Checking for the Exclude Validation Permission Set allows the system to cease further processing of the rule if it is found at the outset. This improves the efficiency of Validation Rule execution and reduces unnecessary processing steps.
+
+### Rule
+
+**Remote Site Settings Description**\
+Remote Site Settings should have a description of their functionality making it easy for others to understand the purpose and functionality of the component as it may not always be understandable from the name.
 
 ### Fix
 

@@ -4,6 +4,48 @@ hidden: true
 
 # AutoRABIT SPM
 
+[SPM Overview ](autorabit-spm.md#spm-overview)
+
+[Getting Started > Connect a Salesforce Org ](autorabit-spm.md#getting-started-greater-than-connect-a-salesforce-org)
+
+[SPM Features > Risk Assessment ](autorabit-spm.md#spm-features-greater-than-risk-assessment)
+
+[Key Features of Risk Assessment ](autorabit-spm.md#key-features-of-risk-assessment)
+
+[How It Works ](autorabit-spm.md#how-it-works)
+
+[Why It Matters](autorabit-spm.md#why-it-matters-1)
+
+[SPM Features > Permissions Explorer](autorabit-spm.md#spm-features-greater-than-permissions-explorer)
+
+[Key Features ](autorabit-spm.md#key-features-1)
+
+[Why Use Permissions Explorer?](autorabit-spm.md#why-use-permissions-explorer)
+
+[How It Works](autorabit-spm.md#how-it-works-1)
+
+[SPM Features > Change Monitoring](autorabit-spm.md#spm-features-greater-than-change-monitoring)&#x20;
+
+[Key Features ](autorabit-spm.md#key-features-2)
+
+[Benefits of Change Monitoring ](autorabit-spm.md#benefits-of-change-monitoring)
+
+[SPM Features > Change Monitoring Alerts](autorabit-spm.md#spm-features-greater-than-change-monitoring-alerts)
+
+[Key Features ](autorabit-spm.md#key-features-2)
+
+[Benefits of Change Monitoring Alerts](autorabit-spm.md#benefits-of-change-monitoring-alerts)
+
+[Policies](autorabit-spm.md#policies)
+
+[Key Features ](autorabit-spm.md#key-features-3)
+
+[Why Policies Matter ](autorabit-spm.md#why-policies-matter)
+
+[How It Works](autorabit-spm.md#how-it-works-2)
+
+
+
 ### SPM Overview&#x20;
 
 AutoRABIT SPM is the ultimate solution for enterprises to secure their Salesforce environments, ensure compliance, and unlock their full potential. By automating critical processes like monitoring, policy enforcement, and remediation, SPM eliminates manual work, reduces risk, and allows teams to focus on strategic initiatives.&#x20;

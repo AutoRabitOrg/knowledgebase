@@ -751,6 +751,7 @@
     * [Support for DORA Metrics](product-guides/flow-center/flowcenter-insights/support-for-dora-metrics.md)
     * [Export your Insights data](product-guides/flow-center/flowcenter-insights/export-your-insights-data.md)
     * [Invite your CSM to FlowCenter Insights](product-guides/flow-center/flowcenter-insights/invite-your-csm-to-flowcenter-insights.md)
+* [AutoRABIT SPM](product-guides/autorabit-spm.md)
 
 ## Use Cases + Resources
 

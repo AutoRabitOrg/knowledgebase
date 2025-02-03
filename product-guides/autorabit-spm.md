@@ -255,3 +255,62 @@ Overview&#x20;
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-03 at 8.45.27 AM.png" alt=""><figcaption><p>Permission Set Policy</p></figcaption></figure>
 
+### Key Features&#x20;
+
+1. Permission Set Allow List Policies&#x20;
+   1. Define policies specifying which users are allowed to have access to selected permission sets.&#x20;
+   2. Prevent unauthorized access to sensitive permissions, such as those exposing financial or patient information.&#x20;
+2. Real-Time Monitoring and Enforcement&#x20;
+   1. SPM scans your org every five minutes to detect violations.&#x20;
+   2. Violations trigger one of two configurable actions: &#x20;
+      1. Revert Changes Immediately: Automatically remove unauthorized permission sets.&#x20;
+      2. Notify Admins: Send an email alert to admins for manual review and remediation.&#x20;
+3. Flexible Policy Configuration&#x20;
+   1. Policy Details: &#x20;
+      1. Name your policy to identify its purpose.&#x20;
+      2. Select the Salesforce org where the policy applies.&#x20;
+   2. Policy Criteria: &#x20;
+      1. Choose the permission sets and users that fall under the policy’s scope.&#x20;
+   3. Remediation: &#x20;
+      1. Define the enforcement action (auto-revert or notify).&#x20;
+      2. Specify email recipients for alerts.&#x20;
+4. Detailed Violation Notifications&#x20;
+   1. Receive detailed alerts when a violation occurs, including: &#x20;
+      1. The permission set involved.&#x20;
+      2. The user assigned the permission.&#x20;
+      3. The action taken (e.g., permission reverted or admin notified).&#x20;
+5. Scalable Governance Framework&#x20;
+   1. Policies are the foundation of SPM’s governance features and will soon support additional capabilities, including password policies and governance rules.&#x20;
+
+### Why Policies Matter&#x20;
+
+* Enforce Governance with Automation&#x20;
+
+&#x20;Automate the enforcement of access rules to eliminate manual oversight and reduce the risk of human error.&#x20;
+
+* Protect Sensitive Data&#x20;
+
+&#x20;Prevent unauthorized users from accessing permissions that expose critical business data.&#x20;
+
+* Maintain Compliance&#x20;
+
+&#x20;Meet internal governance standards and external regulatory requirements with real-time enforcement.&#x20;
+
+* Boost Efficiency&#x20;
+
+&#x20;Save time and effort by automatically remediating violations or receiving actionable alerts for manual intervention.&#x20;
+
+### How It Works&#x20;
+
+1. Create a Policy&#x20;
+   1. Go to the Policies section in AutoRABIT SPM and click Add Policy.&#x20;
+   2. Provide a descriptive name for the policy, such as "Policy for Gmail Permissions."&#x20;
+2. Configure Policy Criteria&#x20;
+   1. Select the Salesforce org where the policy will apply.&#x20;
+   2. Choose the permission sets and the allowed users.&#x20;
+3. Define Remediation Actions&#x20;
+   1. Choose whether to auto-revert unauthorized permission assignments or notify admins for manual action.&#x20;
+   2. Specify the email address for receiving violation alerts.&#x20;
+4. Activate and Monitor&#x20;
+   1. Save and activate the policy.&#x20;
+   2. SPM will monitor your Salesforce org every five minutes and enforce the policy as configured.

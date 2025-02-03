@@ -579,6 +579,7 @@
       * [Default Apex Class Configuration](product-guides/arm/troubleshoot/how-tos/default-apex-class-configuration.md)
       * [Enable Enhanced Domains](product-guides/arm/troubleshoot/how-tos/enable-enhanced-domains.md)
       * [Provide branch access to users](product-guides/arm/troubleshoot/how-tos/provide-branch-access-to-users.md)
+    * [FAQs](product-guides/arm/troubleshoot/faqs.md)
 * [CodeScan](product-guides/codescan/README.md)
   * [CodeScan Overview](product-guides/codescan/codescan-overview.md)
   * [System Requirements and Installation Self-Hosted](product-guides/codescan/system-requirements-and-installation/README.md)

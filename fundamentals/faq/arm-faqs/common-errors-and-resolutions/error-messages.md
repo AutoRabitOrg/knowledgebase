@@ -12,6 +12,19 @@ To correct this issue:
 1. On the **My Account** screen, look for the ALM configuration. To reauthenticate your ALM configuration, click the **Test Connection** icon to verify your credentials.
 2. If the steps above do not work, create a new credential and link it to your ALM account.
 
+### **Cannot Open Git-Upload-Pack**&#x20;
+
+Users may encounter this error message when trying to register the Bitbucket repository. This occurs when:
+
+* The Bitbucket account is locked.
+* When registering the Bitbucket repository, the wrong credentials were used.
+* The IT/Network team has whitelisted ARM's IP address.
+
+To resolve this issue:
+
+* Try recreating a new credential and updating the credentials under the **Admin > Credential** section.
+* Re-register your bitbucket repository in ARM.
+
 ### OAuth Authentication Failed
 
 Users may encounter this error when trying to register a Salesforce environment in ARM. This occurs when users do not use the My Domain URL when adding the Salesforce org to ARM. To correct this error, use **My Domain URL** while registering a Salesforce org in ARM.

@@ -1,12 +1,24 @@
 # Common Issues and Solutions
 
+## Common Issues
+
+#### **Why is the Add & Run Scan tab grayed out?**
+
+If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.
+
 ## Errors <a href="#error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml" id="error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml"></a>
 
-#### **Why am I getting the following error:&#x20;**_**Salesforce\force-app\main\default\applications\Chatter\_Delete\_Blocker.app-meta.xml**_**&#x20;when writing a custom SonarQube rules using the Xpath Template rule for Salesforce Metadata (sfmeta:XPathRule)?** <a href="#error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml" id="error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml"></a>
+#### Error: Project reports are not available for branches created outside the CodeScan Cloud.
+
+For branches created outside the CodeScan Cloud, such as ARM, Flosum, or Copado, project reports are not yet accessible. Only the branch chosen during the initial integration setup with CodeScan Cloud can have reports fetched in CodeScan.&#x20;
+
+Solution: In the Edit Project section, select “Attach Analysis Project,” and choose project type as “Webhook.” After this step, project reports will be accessible.
+
+#### **Error: `Salesforce\force-app\main\default\applications\Chatter_Delete_Blocker.app-meta.xml` when writing a custom SonarQube rules using the Xpath Template rule for Salesforce Metadata (sfmeta:XPathRule)** <a href="#error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml" id="error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml"></a>
 
 The analysis is looking for a match with a file name and the suffix entered in the field, but it cannot find any, which is why the above error is thrown. This is expected behavior because CodeScan cannot decide which rules to apply to the files. To remove file patterns listed for sonar.lang.patterns.xml, navigate to **`Project Settings > General Settings > Language.`**
 
-#### **Why is my CodeScan analysis failing with the error&#x20;**_**`"Job took long. We will attempt to rerun with more memory."`**_?
+#### **Error: `"Job took long. We will attempt to rerun with more memory."`**?
 
 This error may occur for projects having huge metadata.
 
@@ -21,21 +33,13 @@ This error may occur for projects having huge metadata.
 
 For detailed steps, please refer to [Customizing Quality Profiles](https://knowledgebase.autorabit.com/codescan/docs/customizing-quality-profiles).
 
-#### Why am I getting the error message: 'Background Tasks Failing'?
+#### Error: Background Tasks Failing
 
 This error either occurs if it’s out of memory or when multiple analyses have been triggered at the same time. The one triggered last gets completed first.
 
-#### Why am I getting the following error message: "Not Able to Download Code from SF in the Project Analysis Page"?
+#### Error: Not Able to Download Code from SF in the Project Analysis Page
 
 Check to see whether CodeScan is blocked in Salesforce (Setup > Connected Apps > CodeScan). If it's blocked, unblocked it. If it's already unblocked, yet you are still seeing the error, uninstall then reinstall, block it, and then unblock it.
-
-#### Why am I getting the error: 'Background tasks failing'?
-
-This error either occurs if it’s out of memory or multiple analyses have been triggered at the same time. The analysis triggered last gets completed first.
-
-#### **Why is the Add & Run Scan tab grayed out?**
-
-If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.
 
 ## Copado Integration <a href="#faqs" id="faqs"></a>
 

@@ -13,7 +13,7 @@ A Standard User is an individual authorized by the Customer to log in to and dir
 
 ## Platform Integration User
 
-A Platform Integration User is an individual authorized by the Customer to perform actions that trigger the execution of ARM. This is primarily intended represent users who interact with ARM through Git and do not have a Standard User license.&#x20;
+A Platform Integration User is an individual authorized by the Customer to commit to an SCM where that external commit is then used in any ARM process. This is primarily intended represent users who interact with ARM through Git and do not have a Standard User license.&#x20;
 
 ### Tracking Platform Integration Users in ARM:
 

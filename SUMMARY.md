@@ -73,7 +73,7 @@
 
 ## Fundamentals
 
-* [🛠️ Getting set up](fundamentals/getting-set-up/README.md)
+* [🛠️ Getting Set Up](fundamentals/getting-set-up/README.md)
   * [General](fundamentals/getting-set-up/general.md)
   * [Salesforce - The Tools You Need to Be Successful](fundamentals/getting-set-up/salesforce-the-tools-you-need-to-be-successful.md)
 * [📙 Glossary](fundamentals/glossary.md)

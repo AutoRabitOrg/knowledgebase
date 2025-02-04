@@ -24,21 +24,20 @@ description: The following documentation is specific to Bitbucket Enterprise cus
 ## B. Create a Webhook with authentication in Bitbucket&#x20;
 
 1. Log in to your Bitbucket account and select a Repository in which you want to configure a Webhook.
+2. Click **Settings** and select [Webhooks](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
 
-<figure><img src="../../../../../.gitbook/assets/image (987).png" alt=""><figcaption></figcaption></figure>
 
-2. Click Settings and select [Webhooks](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
-3. In the webhook configuration section, enter the following URL format: \
-   `<instance_url>/api/webhook/v2/<orgname>/enterprise/trigger-scm-push-request` \
-   \
-   For example, if the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
 
 <figure><img src="../../../../../.gitbook/assets/image (988).png" alt=""><figcaption></figcaption></figure>
 
-For ALM commits, use the following format: \
-`<instance_url>/api/webhook/v2/<orgname>/enterprise/sync-alm-commits`
-
-4. Now fill in the details and click Save.
+3. In the webhook configuration section, enter the following URL format: \
+   `<instance_url>/api/webhook/v2/<orgname>/enterprise/trigger-scm-push-request` \
+   \
+   For example, if the instance is https://login.autorabit.com, then the payload URL would be: https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/trigger-scm-push-request\
+   \
+   For ALM commits, use the following format: \
+   `<instance_url>/api/webhook/v2/<orgname>/enterprise/sync-alm-commits`
+4. Fill in the details and click Save.
 
 ## **Smart Commits**
 

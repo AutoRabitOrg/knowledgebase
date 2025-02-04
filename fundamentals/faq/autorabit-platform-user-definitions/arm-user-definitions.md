@@ -13,7 +13,7 @@ A Standard User is an individual authorized by the Customer to log in to and dir
 
 ## Platform Integration User
 
-A Platform Integration User is an individual authorized by the Customer to commit to an SCM where that external commit is then used in any ARM process. This is primarily intended represent users who interact with ARM through Git and do not have a Standard User license.&#x20;
+A Platform Integration User is an individual authorized by the Customer to commit to a Source Code Management (SCM) system, where that external commit is then used in any ARM process. This is primarily intended to represent users who interact with ARM through Git and do not have a Standard User license.&#x20;
 
 ### Tracking Platform Integration Users in ARM:
 
@@ -21,7 +21,7 @@ AutoRABIT tracks the usage of ARM as an orchestration engine through version con
 
 #### Key Points:
 
-* **Code Commits and Licensing:** Any person who commits code to a Source Code Management (SCM) system, where the commit triggers a job in AutoRABIT, requires a Platform Integration License.
+* **Code Commits and Licensing:** Any person who commits code to an SCM system, where the commit triggers a job in AutoRABIT, requires a Platform Integration License.
 * **Service Accounts:** If a service account triggers automation or integrates with AutoRABIT, the individual or team responsible for the actual code commit must still hold a Platform Integration License. This ensures that all contributors whose actions trigger AutoRABIT processes are appropriately licensed.
 * **Commit Count in SCM Systems:** For SCM systems such as Git, multiple commits pushed simultaneously are counted separately toward the user license.
 * **No Web UI Login Required:** A Platform Integration User does not need to log in to the AutoRABIT Web UI to be counted as a user.
@@ -51,6 +51,6 @@ The average of the two highest quarters (15 and 17) is 16. Since licenses are so
 
 #### **Notes:**
 
-* The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q2 2025, Q3 2025, Q4 2025, Q1 2026. A partial quarter is not prorated - it would simply be less likely to be one of the highest use quarters used in the average.&#x20;
+* The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q2 2025, Q3 2025, Q4 2025, Q1 2026. A partial quarter is not prorated—it is simply less likely to be one of the highest quarters used in the average.&#x20;
 * **Licenses are sold in blocks of 10 and always round up.** If oversubscribed by 6 licenses, purchase an additional 10. If oversubscribed by 11, purchase an additional 20.
 * **Unique Email IDs:** ARM counts users via unique email IDs retrieved from Git. If an individual uses multiple email addresses for commits, they will be counted as separate users. To prevent this, ensure best practices when using Git.

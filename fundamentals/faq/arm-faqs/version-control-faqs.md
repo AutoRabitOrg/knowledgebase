@@ -2,9 +2,9 @@
 
 ## What is a Version Control System (VCS)? <a href="#what-is-a-version-control-system-vcs" id="what-is-a-version-control-system-vcs"></a>
 
-Version Control Systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done to the code.
+Version Control Systems are a category of software tools that helps with recording changes made to files by keeping track of modifications made to the code.
 
-## What are the version control tools supported by ARM? <a href="#what-are-the-version-control-tools-supported-by-arm" id="what-are-the-version-control-tools-supported-by-arm"></a>
+## What version control tools are supported by ARM? <a href="#what-are-the-version-control-tools-supported-by-arm" id="what-are-the-version-control-tools-supported-by-arm"></a>
 
 The following version controls are supported:
 
@@ -14,7 +14,7 @@ The following version controls are supported:
 
 ## What is GitHub and how does it work? <a href="#what-is-github-and-how-does-it-work" id="what-is-github-and-how-does-it-work"></a>
 
-GitHub is the home for all developers—a platform where you can share code, contribute to open source projects, or even automate your workflow with tools like GitHub Actions and Packages. If you’re just getting started with GitHub, you may know us best as a place for version control and collaboration.
+GitHub is the home for all developers—a platform where you can share code, contribute to open-source projects, or even automate your workflow with tools like GitHub Actions and Packages. If you’re just getting started with GitHub, you may know it best as a place for version control and collaboration.
 
 ## Are Git and GitHub the same? <a href="#are-git-and-github-the-same" id="are-git-and-github-the-same"></a>
 
@@ -23,21 +23,21 @@ Git is a version control system (VCS). GitHub is the platform where Git reposito
 ## What's the difference between git fetch and git pull? <a href="#whats-the-difference-between-git-fetch-and-git-pull" id="whats-the-difference-between-git-fetch-and-git-pull"></a>
 
 * **git fetch** really only downloads new data from a remote repository; it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
-* **git pull**, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly integrates it into your current working copy files.
+* **git pull**, by contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data, but also directly integrates it into your current working copy files.
 
 ## What is a Commit in AutoRABIT? <a href="#what-is-commit-in-autorabit" id="what-is-commit-in-autorabit"></a>
 
-As you work with your files that are under version control, each change is tracked automatically. This can include modifying a file, deleting a directory, adding a new file, moving files or just about anything else that might alter the state of the file. Instead of recording each change individually, the version control system will wait for you to submit your changes as a single collection of actions. In version control, this collection of actions is known as a commit. When it is submitted, you "commit" the "commit."&#x20;
+As you work with files that have version control, each change is tracked automatically. This can include modifying a file, deleting a directory, adding a new file, moving files, or just about anything else that might alter the state of the file. Instead of recording each change individually, the version control system will wait for you to submit your changes as a single collection of actions. In version control, this collection of actions is known as a **commit**. When it is submitted, you "commit" the "commit."&#x20;
 
-## Why do Merge Conflicts happen? <a href="#why-merge-conflicts-happens" id="why-merge-conflicts-happens"></a>
+## Why do merge conflicts happen? <a href="#why-merge-conflicts-happens" id="why-merge-conflicts-happens"></a>
 
-When working in Version Control System such as GIT, users can combine commits from two different branches through an action known as merging. Files are automatically merged unless there are conflicting sets of changes (i.e. the commits update the same line of code differently).
+When working in a Version Control System such as GIT, users can combine commits from two different branches through an action known as merging. Files are automatically merged unless there are conflicting sets of changes (i.e., the commits update the same line of code differently).
 
 A merge conflict is an event that occurs when your version control is unable to automatically resolve differences in code between two commits.
 
 When there are conflicting changes on the same lines, a “merge conflict” occurs because the version control doesn’t know which code to keep and which to discard.
 
-## **How does Git handle Duplicate File Change Commits?**
+## **How does Git handle duplicate file change commits?**
 
 Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.
 
@@ -47,7 +47,7 @@ Git's behavior of creating new commits for each merge, even if the changes are m
 
 ### **How can users prevent unintended duplicate merges in AutoRABIT when encountering duplicate commit scenarios?**
 
-To prevent unintended duplicate merges, users should follow version control best practices, such as reviewing changes before committing, resolving merge conflicts promptly, and educating themselves on Git's behavior regarding commit history.
+To prevent unintended duplicate merges, users should follow version control best practices, such as reviewing changes before committing, resolving merge conflicts promptly, and becoming educated on Git's behavior regarding commit history.
 
 ### **Is the behavior of duplicate merges in Git a flaw in AutoRABIT's integration with Git?**
 
@@ -55,7 +55,7 @@ No, the behavior of duplicate merges in Git is a fundamental aspect of Git's fun
 
 ### **How can AutoRABIT users effectively manage duplicate merges and maintain code integrity in their development processes?**
 
-Users can effectively manage duplicate merges by understanding Git's behavior, educating themselves on version control best practices, training on commit history management, and implementing enhanced error handling mechanisms to alert users of potential duplicate commits.
+Users can effectively manage duplicate merges by understanding Git's behavior, becoming educated on version control best practices, training on commit history management, and implementing enhanced error-handling mechanisms to alert users of potential duplicate commits.
 
 ## Branching and Merging: What's the Difference? <a href="#branching-and-merging-whats-the-difference" id="branching-and-merging-whats-the-difference"></a>
 

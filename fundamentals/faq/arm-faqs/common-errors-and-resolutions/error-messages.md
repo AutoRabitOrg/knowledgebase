@@ -25,6 +25,55 @@ To resolve this issue:
 * Try recreating a new credential and updating the credentials under the **Admin > Credential** section.
 * Re-register your bitbucket repository in ARM.
 
+### Failed to initiate deployment. Unexpected end of JSON input.
+
+When running a CI job, if any of the folders in the remote repository has an empty **JSON** file, that will cause SFDX commands to fail with an incorrect JSON error. Delete the **empty JSON file(s)** from the remote repository to resolve this issue and re-run the CI job.
+
+### GIT Push Result: RemoteRefUpdate\[remoteName=refs/heads/release/CI\_UAT2\_Refresh, REJECTED\_OTHER\_REASON, 3235de0aa8e9edd83ab68d4d723c0301847caf78...9b4c80cea9e7217aa7d16486f1f30b609406c2f1, fastForward, srcRef=refs/heads/release/CI\_UAT2\_Refresh, message="pre-receive hook declined"] Status of the GIT Push process: REJECTED\_OTHER\_REASON
+
+Multiple Branching Baseline jobs show no local modifications to commit. As a result the following error message is thrown. This occurs when one of your commit messages is missing a valid issue key:
+
+&#x20; 9b4c80c: Commit From AutoRABIT \[Branch Baseline] \[LabelName:UAT2 Baseline]
+
+Cross-verify the following things:
+
+Create a new repository link where the key should include part of the commit comment from AutoRABIT.
+
+(or)
+
+Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment.
+
+(or)
+
+Disable the Repository Link.
+
+For more content, go through![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
+
+### **Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml**
+
+When a deployment fails, this error usually occurs due to behavior in the Salesforce CLI 7.83 version. When retrieving the LWC components, it retrieves .css-meta.xml rather than .js-meta.xml file, which results in the deployment failing. Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again.
+
+### Job too long after 1 hour of analysis
+
+In CodeScan Cloud, the default setting for unit test timeouts is **1 hour (3600 seconds)** for limited Metadata analysis. These timeouts might not be enough if your project has a lot of metadata. This is the reason behind the error message.
+
+Increase the timeouts to avoid this problem:
+
+1. Click **Project Settings > General Settings** in your Project Overview.
+2. Click the **CodeScan** tab on the left and modify the timeout under the **Unit Test Timeout** once you're in **General Settings**.
+
+For detailed information on how to change the timeouts, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/unit-test-timeout).
+
+### Not Authorized (to Merge)
+
+This error message occurs when performing a merge when credentials are not properly mapped in ARM. Follow the steps below to resolve this issue.
+
+1. In Azure, create a new token.
+2. In ARM, go to **Admin > Credential** and create a new credential.
+3. Re-test the connection after mapping the credential to your version control branch (in the _**Profile**_ section).
+
+If the test connection for the mapped repository and branch fails, we recommend upgrading your password and altering the credential in the credential section, then retrying the connection.
+
 ### OAuth Authentication Failed
 
 Users may encounter this error when trying to register a Salesforce environment in ARM. This occurs when users do not use the My Domain URL when adding the Salesforce org to ARM. To correct this error, use **My Domain URL** while registering a Salesforce org in ARM.
@@ -43,6 +92,20 @@ For example, if you observe ">>>>>>>" character string(length =7) in any of the 
 
 Users may encounter this error when trying to perform a merge due to invalid characters like (>>>, <<<) symbols used in the file. To resolve, download the merge conflict files and validate the characters present in those XML files.
 
+### SCM Authentication Failed
+
+When a commit returns this error, it is either because:&#x20;
+
+* Version control mapped to your Salesforce org user is incorrect.
+* Your user credentials are incorrectly configured in ARM.
+
+1. Ensure your account is correctly mapped with the version control branch to reflect the commits under your name.
+2. Verify your credentials in the **Admin > Credential Manager** section and authenticate the connection again.
+
+### **This test is already in the execution queue**
+
+When generating a code coverage report for a registered Salesforce org, the test fails with this error if the Apex test execution takes a long time. Go to **TAF > Apex Test Execution** and clear all of the tests in the queue, then run the code coverage report through ARM again.
+
 ### Unable to fetch Salesforce Org Users
 
 This error may be encountered when a user tries to access the Salesforce Org in the ARM Version Control, CI Jobs, Deployment, and SFDX Modules. This may occur due to an invalid username, password, or security token, if the user is locked out, or if the Salesforce API version is incorrectly configured.&#x20;
@@ -59,6 +122,23 @@ Users may encounter this error message when a Merge is failed. This occurs when 
 
 1. Navigate to **Admin > VC repos**, select your repository, and perform a test connection. Please verify your repository credentials are not expired or modified.
 2. Re-run the CI job after you confirm that the repository connection is successful.
+
+### **You are not authorized to push changes to the remote repository**
+
+This error occurs during the branching baseline operation when version control credentials are insufficient for pushing changes to a branch. This indicates that you have read permissions but not write permissions. After updating your permissions, re-run a new branching baseline operation.
+
+### Your connection is private.
+
+If you are unable to connect to the ARM instance and get this error, it is due to cache and cookies in your system. To resolve this issue, follow the steps below.
+
+1. On your computer, open **Chrome**.
+2. At the top right, click **More**.
+3. Click **More tools**.
+4. Clear **browsing data**.
+5. At the top, choose a **time range**. To delete everything, select **All time**.
+6. Next to **Cookies and other site data** and **Cached images and files,** check the boxes.
+7. Click **Clear data**.
+8. Now, log in to your instances using the new browser tab.
 
 
 

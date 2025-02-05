@@ -4,7 +4,7 @@ description: Use Cases + Resources for Developers
 
 # 👩‍💻 For Developers
 
-_This part of our documentation is designed to guide you towards extensive resources available on our_ [_LearningHub_](https://learninghub.autorabit.com/)_._
+_This part of our documentation is designed to guide you toward the extensive resources available on our_ [_LearningHub_](https://learninghub.autorabit.com/)_._
 
 Explore these resources to deepen your understanding and maximize your productivity with AutoRABIT. Happy developing!
 

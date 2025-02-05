@@ -10,11 +10,11 @@ Explore these resources to deepen your understanding and maximize your productiv
 
 ## AutoRABIT Community Forum
 
-_On_ [_LearningHub_](https://learninghub.autorabit.com/mod/forum/view.php?id=463)_, you'll find a dynamic Community Forum where you can engage with fellow release managers and share insights._
+_On_ [_LearningHub_](https://learninghub.autorabit.com/mod/forum/view.php?id=463)_, you'll find a dynamic Community Forum where you can engage with fellow developers and share insights._
 
 ## LearningHub Courses
 
-**\*Note: Must be enrolled to the learninghub first**
+**\*Note: Must be enrolled in the** [**LearningHub**](https://learninghub.autorabit.com/mod/forum/view.php?id=463) **first**
 
 _We've curated specific courses tailored to help you navigate common use cases and challenges with AutoRABIT._
 

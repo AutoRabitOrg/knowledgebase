@@ -51,6 +51,6 @@ The average of the two highest quarters (15 and 17) is 16. Since licenses are so
 
 #### **Notes:**
 
-* The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q2 2025, Q3 2025, Q4 2025, Q1 2026. A partial quarter is not prorated—it is simply less likely to be one of the highest quarters used in the average.&#x20;
+* The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q1 (May, June, July)2025, Q2 (August, September, October) 2025, Q3 (November, December 2025, January 2026) and Q4 (February, March, April) 2026.
 * **Licenses are sold in blocks of 10 and always round up.** If oversubscribed by 6 licenses, purchase an additional 10. If oversubscribed by 11, purchase an additional 20.
 * **Unique Email IDs:** ARM counts users via unique email IDs retrieved from Git. If an individual uses multiple email addresses for commits, they will be counted as separate users. To prevent this, ensure best practices when using Git.

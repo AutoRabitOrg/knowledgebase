@@ -2,9 +2,17 @@
 
 ## CodeScan Self-Hosted (On-Premises)
 
-### Errors and Solutions
+## Errors and Solutions
 
-#### Why did I get the following error during initialization of VM: Could not reserve enough space for xxxKB object heap?
+### Why is my CodeScan update binding getting failed?
+
+If the CodeScan update binding is getting failed, try disabling the VPN and antivirus, then try updating the binding again.
+
+**If the binding successfully updates,** the error occurred due to antivirus blocking CodeScan. Add CodeScan to the list of allowed sites for the antivirus in use.
+
+**If the binding still fails**, raise a [Support Ticket](https://support.autorabit.com/portal/en/home), including the **analyzer logs** and **verbose logs** in the attachment.
+
+### Why did I get the following error during initialization of VM: Could not reserve enough space for xxxKB object heap?
 
 If you are experiencing this error when running a scan, the issue may be with your Java version. **32-bit Java versions** have a lower limit to their heap size. This limit can be as low as **1.6GB** on Windows operating systems.
 
@@ -18,7 +26,7 @@ Error: This Java instance does not support a 64-bit JVM.
 
 To correct this error, please install the proper Java version.
 
-#### Why am I getting the error: java.lang.OutOfMemoryError: GC overhead limit exceeded?
+### Why am I getting the error: java.lang.OutOfMemoryError: GC overhead limit exceeded?
 
 This error can be solved by manually adding a parameter to your Ant environment path variable.
 
@@ -36,7 +44,7 @@ export ANT_OPTS=$ANT_OPTS -Xmx2048M
 
 If the problem persists, please contact [support@autorabit.com](mailto:itservice@autorabit.com).
 
-#### Why am I getting the error: Jenkins: java.lang.OutOfMemoryError: Java heap space?
+### Why am I getting the error: Jenkins: java.lang.OutOfMemoryError: Java heap space?
 
 This error can be solved by manually adding a parameter to dedicate memory to the build process.
 
@@ -57,7 +65,7 @@ Error occurred during initialization of VM Could not reserve enough space for xx
 
 The problem may be that you are using a **32-bit version of Java**. Please refer to the following [article](https://knowledgebase.autorabit.com/codescan/docs/error-occurred-during-initialization-of-vm-could-not-reserve) for more details.
 
-#### Why am I getting a PKIX Path Building failed error?
+### Why am I getting a PKIX Path Building failed error?
 
 **Error Code:**
 

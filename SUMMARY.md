@@ -128,6 +128,7 @@
       * [Setting the System Environment Variable](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/setting-the-system-environment-variable.md)
       * [Setting up CodeScan for use with a Proxy](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/setting-up-codescan-for-use-with-a-proxy.md)
       * [SonarQube instance mistakenly deleted](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/sonarqube-instances-was-mistakenly-deleted.md)
+      * [Self-Hosted FAQs](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-faqs.md)
     * [CodeScan Cloud Issues](fundamentals/faq/codescan-faqs/codescan-cloud-issues/README.md)
       * [Cloud Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-cloud-issues/cloud-errors-and-solutions.md)
       * [Project reports are not available for branches created outside the CodeScan Cloud](fundamentals/faq/codescan-faqs/codescan-cloud-issues/project-reports-are-not-available-for-branches-created-outside-the-codescan-cloud.md)

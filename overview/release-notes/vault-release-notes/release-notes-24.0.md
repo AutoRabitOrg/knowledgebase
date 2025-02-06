@@ -1,5 +1,22 @@
 # Release Notes 24.0
 
+## Vault 24.2.7 Release Notes
+
+**Release Date: 12 February 2025**
+
+### **New Features**
+
+* **Download Files from Backups and Archives:** Users can now download files directly from backups and archives within the Vault UI, improving accessibility and efficiency.
+
+### **Enhancements & Fixes**
+
+* **Backup Stability Improvements:** Fixed an issue where backups could get stuck when multiple backup jobs were run in parallel on the same Salesforce org.
+* **Schema Representation Fixes:** Resolved a minor UI issue in archive job schema representation where _EmailMessage_ was incorrectly displayed as a required child object for all Salesforce objects.
+* **Archival Job Enhancements:** Corrected the handling of Salesforce API’s cascade delete and restricted delete checks to ensure accurate interpretation by Vault.
+* **Restore Automation Fixes:** Addressed an issue where automation rules (such as workflows, validation rules, and triggers) were not being properly disabled when a restore was initiated from the compare screen.
+* **Vault Connect Compatibility:** Added backward compatibility for viewing files through Vault Connect that were archived before Vault version **24.2.6**.
+* **Salesforce Session Stability:** Fixed an issue causing Salesforce session timeouts when archiving files in Vault.
+
 ## Vault 24.2.6 Release Notes
 
 **Release Date: 29 January 2025**

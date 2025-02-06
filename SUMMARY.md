@@ -119,7 +119,6 @@
       * [Self-Hosted Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md)
       * [Self-Hosted FAQs](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-faqs.md)
       * [CodeScan License Issues (IDE)](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-license-issues-ide.md)
-      * [CodeScan Update Binding Failure](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/codescan-update-binding-failure.md)
       * [How do I upgrade an instance?](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/how-do-i-upgrade-an-instance.md)
       * [java.lang.OutOfMemoryError: GC overhead limit exceeded](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/java.lang.outofmemoryerror-gc-overhead-limit-exceeded.md)
       * [License Errors](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/license-errors.md)

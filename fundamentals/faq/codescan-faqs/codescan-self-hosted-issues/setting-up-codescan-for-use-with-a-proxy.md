@@ -1,6 +1,6 @@
-# Setting up CodeScan for use with a Proxy
+# Setting Up CodeScan for Use with a Proxy
 
-To configure CodeScan for use in a network with a proxy you will need to set the following settings in your **antbuild.properties** file (version **3.6-RC3+**) or as parameters of your Jenkins job.
+To configure CodeScan for use in a network with a proxy, you will need to set the following settings in your **antbuild.properties** file (version **3.6-RC3+**) or as parameters of your Jenkins job.
 
 **http.proxyHost, http.proxyPort** and optionally **http.proxyUser** and **http.proxyPassword**
 

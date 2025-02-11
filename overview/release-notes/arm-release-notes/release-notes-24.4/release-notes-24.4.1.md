@@ -136,22 +136,8 @@ Lazy loading has also been implemented in the Package Manifest and Commit Templa
 A visual indicator has been added during the loading process, ensuring users are informed while additional data loads, without any noticeable delays or interruptions to the user experience.
 
 **Third-Party Library Upgrades** \
-Third-party libraries have been upgraded in the following repositories to ensure compatibility, security, and performance improvements:
-
-1. Rabit Dependencies
-
-{% file src="../../../../.gitbook/assets/Rabit_Dependencies_24.10.22.txt" %}
-
-2. AutoRABIT Dependencies
-
-{% file src="../../../../.gitbook/assets/AutoRABIT_Dependencies_24.10.22.txt" %}
-
-3. AR Agent Dependencies
-
-{% file src="../../../../.gitbook/assets/AR_Agent_Dependencies_24.10.22.txt" %}
+Third-party libraries have been upgraded to ensure the latest enhancements and fixes from external libraries, improving overall stability across the platform.
 
 By streamlining the selective deployment process, this improvement enhances efficiency and contributes to a more reliable release management workflow.
-
-These updates bring the latest enhancements and fixes from external libraries, improving overall stability across the platform.
 
 &#x20;

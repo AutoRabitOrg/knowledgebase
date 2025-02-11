@@ -7,11 +7,9 @@
 ### **New Features**
 
 * **Download Files from Backups and Archives:** Users can now download files directly from backups and archives within the Vault UI, improving accessibility and efficiency.
-
-**Limitations**
-
-* **Inconsistent File Download During GDPR Requests**: When a GDPR request is initiated within an organization, file downloads may behave inconsistently. This issue will be resolved in the upcoming release.
-* **File Download Issues with Special Characters in File Names**: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release
+* **Limitations**
+  * **Inconsistent File Download During GDPR Requests**: When a GDPR request is initiated within an organization, file downloads may behave inconsistently. This issue will be resolved in the upcoming release.
+  * **File Download Issues with Special Characters in File Names**: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release
 
 ### **Enhancements & Fixes**
 

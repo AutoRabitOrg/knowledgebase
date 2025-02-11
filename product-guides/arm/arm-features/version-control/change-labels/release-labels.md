@@ -8,7 +8,7 @@
 **NOTE**: The **Release Label** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (5).png" alt=""><figcaption></figcaption></figure>
 
 3.  Click on **`Change Labels.`**\
 
@@ -33,7 +33,7 @@
 
     <figure><img src="../../../../../.gitbook/assets/image (6) (6).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (7) (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (7) (5) (1).png" alt=""><figcaption></figcaption></figure>
 8. Select the commit **`Label Type`**, i.e., **`Salesforce`** or **`Vlocity`**.&#x20;
 
 {% hint style="info" %}

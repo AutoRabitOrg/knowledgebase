@@ -21,7 +21,7 @@ Follow these steps to reset your password:
 
 3. Enter the **`email address`** you used to create your CodeScan account.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
 
 4. Click **`Send Email`**, and an email will be sent to your address with recovery instructions.
 5. Check your inbox for a password reset email.

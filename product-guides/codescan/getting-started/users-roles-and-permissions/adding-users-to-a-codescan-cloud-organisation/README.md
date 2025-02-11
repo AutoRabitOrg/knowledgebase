@@ -10,7 +10,7 @@ User invitations to join the CodeScan organization are sent out by the org admin
 2. Go to your **`Organization`** in CodeScan.
 3. Click on the **`Members`** menu of your Organization's home page, and then click on **`Invite Member`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. In the **`Invite Users`** screen, enter the **`email`** (or emails) of the users you would like to add.
 

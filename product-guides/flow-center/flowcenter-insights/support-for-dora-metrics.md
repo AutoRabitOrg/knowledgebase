@@ -4,7 +4,7 @@
 
 FlowCenter Insights can help you in your journey towards thinking about software delivery performance by showing how your deployment data correlates or influences the key DORA metrics.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 For each widget, you will see two pills showing how it is related to the DORA metrics. This helps you connect the dots between “simple” metrics and more complex metrics related to company and team performance.
 

@@ -49,7 +49,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
 
 For each backup performed inside Vault, you will find the details below on the **`Backup Summary`** screen.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -79,20 +79,59 @@ Steps to download files:
 
 2\.     Click on the “Download” option to initiate the download of the files
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 3. A pop-up will be displayed with two options to choose from:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 a.     Download CSV:
 
-&#x20;                                     i.     The following “Selecting this option will download the records without the actual files” can be observed in the info icon.
+&#x20;               i.     The following “Selecting this option will download the records without the actual files” can    be observed in the info icon.
 
-&#x20;                                   ii.     On selecting this option, the CSV with records file will be downloaded
+&#x20;               ii.     On selecting this option, the CSV with records file will be downloaded
 
 b.     Download Files:
 
-i.     The following “Selecting this option will download the actual files from the storage” can be observed in the info icon.
+&#x20;                i.     The following “Selecting this option will download the actual files from the storage” can be observed in the info icon.
 
-ii.     On selecting “Download Files”, based on the size of the file, the progress icon will be displayed in the place of download option.
+&#x20;                ii.     On selecting “Download Files”, based on the size of the file, the progress icon will be  displayed in the place of download option.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;                iii.     Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
+
+4. Click on the “Records” icon to open the records window and download the individual files as well as the consolidated files.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+5. Click on the “Download” button to initiate the download of either the “CSV” or the “Files” from the Vault backup environment. Following is the screenshot for reference
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+6. Click the download to observe the following:
+
+&#x20;        a. Download CSV
+
+&#x20;        b. Download Files
+
+&#x20;        Note:- Refer the third point for “Download CSV” & “Download Files” functionality
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+7. Once “Download Files” is initiated, the progress of the files download is depicted through the progress icon. Following screenshot is for reference.
+8. On hovering over the in-progress download, the count(downloaded files/total files count) of files can be observed.
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+9. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
+10. Using the “Download Files” column. The individual files related to the respective records can be downloaded.
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+## Limitations
+
+* Inconsistent File Download During GDPR Requests: When a GDPR request is initiated within an organization, file downloads may behave inconsistently. This issue will be resolved in the upcoming release.
+* File Download Issues with Special Characters in File Names: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release

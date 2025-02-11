@@ -67,4 +67,4 @@ Default headers is set as _**"Accept" :"application/json", "Content-Type":"appli
 9. **Poll Interval (Mins):** Time-bound between two consecutive API calls, for example, 1minute, 5minute. This field is mandatory.&#x20;
 10. Click on **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

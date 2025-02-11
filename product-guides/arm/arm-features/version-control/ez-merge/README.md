@@ -28,7 +28,7 @@ The merge process is generally performed when a feature is ready for user testin
 
     * The **`New EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption></figcaption></figure>
 3. You can also reach the **`New Merge`** screen directly by selecting **`Create New > New EZ-Merge`** from the top navigation bar.
 4. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 5. Select your **`source (base) branch`** and the **`target (destination) branch`**.
@@ -43,7 +43,7 @@ The merge process is generally performed when a feature is ready for user testin
     * `Release Label`
     * `ALM Label`
 
-    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 
@@ -55,15 +55,15 @@ This option will merge the entire change from one branch to another branch.&#x20
 
 * **`Delete Source Branch:`** Once you have successfully merged the changes from the source branch to another, you can permanently delete the source branch. Select the **`Delete Source Branch`** checkbox to delete the source branch, which auto-populates whenever 'Entire Branch' as a merge type is selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **B. Single Revision**
 
-Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
+Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
 
 <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="440"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **`Get Latest HEAD`** points out the last commit in the current checkout branch.
 
@@ -71,7 +71,7 @@ There could be a situation where you have entered an incorrect revision number a
 
 You can also use the **`'Get All Revisions'`** button to get all the revisions and check for your revision from the list.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **C. Commit Label**
 

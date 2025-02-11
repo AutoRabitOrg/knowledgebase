@@ -145,13 +145,13 @@ There are no new features associated with this release.
    Verified the new LWC rule (API Version Is Too Old) for these scenarios:
    *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule:
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed:
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed:
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    * Verified that no violation is thrown when the API version is between the minimum and maximum versions allowed.
 2.  **New Rule for APEX: “OuterClassExplicitSharing”**\
     Enforces security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.
@@ -168,13 +168,13 @@ There are no new features associated with this release.
 
     *   Verified the rule’s description, type, severity, message, tag, remediation, key, and name:
 
-        <figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
     *   Verified the rule is not throwing a violation if used with sharing, without sharing, or inherited sharing:
 
         <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
     *   Verified that a violation is thrown if not used with sharing, without sharing, or inherited sharing.
 
-        <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE**: This rule overlaps with the **ClassExplicitSharing** rule and will always overlap with violations for outer classes. This rule has been created to:
@@ -208,7 +208,7 @@ If both rules are active, check the violations that were reported and disable on
 
     1.  Rule is throwing a violation if isAccessible is not checked for the objects used in the inner query:
 
-        <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
 
         <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>

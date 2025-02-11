@@ -22,7 +22,7 @@
     *   Go to the **Authorization** tab in Flosum-CodeScan.\
 
 
-        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -53,13 +53,13 @@
    *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server. \
 
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Initiating a Scan on the Flosum Branch
 
@@ -68,7 +68,7 @@
    *   Click the **Branch Sync** button to trigger the static code analysis.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **View Project Analysis**:
    *   Go to the **Project Analysis** page to see the analysis in progress.\
 

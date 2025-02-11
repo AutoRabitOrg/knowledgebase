@@ -21,7 +21,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
 8. Choose your **destination environment**. It can be your target salesforce org or commit to your version control branch.
 9. To deploy into a Salesforce Org, select the **Deploy To** checkbox and choose your **Destination Org**. To commit to a branch, select the **Commit To** box, enter your **Repository/Branch** details, and **comment** (if any).
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: For commits, the features will get committed to the default location in your version control branch. By default, the location is set to the dataset.
@@ -33,7 +33,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
     * Sorting (only if the 'commit' checkbox is selected)
     * Applied Filters
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mappings <a href="#applied-mappings" id="applied-mappings"></a>
 
@@ -42,7 +42,7 @@ In this section, you can use an external ID in place of a related record's Sales
 * In the **Source** field: Select your source field whose values will be populated in the destination External Id field.
 * In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings)**:
@@ -55,7 +55,7 @@ In this section, you can use an external ID in place of a related record's Sales
 
 This new feature allows you to sort fields for nCino objects while committing. Based on the sorting order set, the record order in the JSON files will get fetched. The users will be provided a default sorting order that can be changed. **XXXXX\_lookupkey\_\_c** is the most preferred field for sorting, and that would be the default field. If this field is not present, the **Name** for _custom settings_ and **Id** for _non-custom settings_ would be selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For the objects with sorting fields opted, the sorting icon gets changed.
 
@@ -65,7 +65,7 @@ For the objects with sorting fields opted, the sorting icon gets changed.
 
 Such filters will be displayed here if any filter is applied to the objects.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: At the time of template creation, the filter is applied to your object, so it can't be edited.&#x20;
@@ -79,7 +79,7 @@ Based on your destination selection, you will have different deployment buttons 
 * **Commit:** Committing to the version control branch only
 * **Commit & Deploy:** Committing and deployment together.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.&#x20;
 

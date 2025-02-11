@@ -39,11 +39,11 @@ Vault suits the Salesforce environment and is built for our customers to protect
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="491"><figcaption></figcaption></figure>
 
 8. You'll be taken to the **`Backup Summary`** screen to display the status of the recently triggered backup activity.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Backup Summary  <a href="#backup-summary" id="backup-summary"></a>
 
@@ -66,3 +66,33 @@ For each backup performed inside Vault, you will find the details below on the *
 | `Data Backup`        | The backup type you selected for data records                                                                                                                                                                                                                                                                                                                                   |
 | `Status`             | Backup status (success, failure, or in progress)                                                                                                                                                                                                                                                                                                                                |
 | `Actions`            | <p>Additional actions:</p><ul><li><strong><code>Backup summary</code></strong>: View the backup summary report</li><li><strong><code>Log</code></strong>: Find the log details for your backup operation</li><li><strong><code>Abort</code></strong>: For an ongoing backup, you can abort the process in between using the <strong><code>Abort</code></strong> icon.</li></ul> |
+
+
+
+### Downloading Files
+
+Having this feature to download the files from the backup will enable the user to download the files directly from the Vault backup of the actual Salesforce data.
+
+Steps to download files:
+
+1\.     Open the backup summary and navigate to the ‘files’ tab to download the files from the backup
+
+2\.     Click on the “Download” option to initiate the download of the files
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+3. A pop-up will be displayed with two options to choose from:
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+a.     Download CSV:
+
+&#x20;                                     i.     The following “Selecting this option will download the records without the actual files” can be observed in the info icon.
+
+&#x20;                                   ii.     On selecting this option, the CSV with records file will be downloaded
+
+b.     Download Files:
+
+i.     The following “Selecting this option will download the actual files from the storage” can be observed in the info icon.
+
+ii.     On selecting “Download Files”, based on the size of the file, the progress icon will be displayed in the place of download option.

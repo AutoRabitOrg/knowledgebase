@@ -424,7 +424,7 @@ then
   copado-git-get $BRANCH
   ls -a
   copado -p "Running codescan on User Story..."
-  sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION -Dsonar.pullrequest.base=master -Dsonar.pullrequest.branch="$COPADO_PROJECT" -Dsonar.pullrequest.key="$BRANCH" --json 2>&1 | tee /tmp/result.json \
+  sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION -Dsonar.pullrequest.base=$BASE_BRANCH -Dsonar.pullrequest.branch="$COPADO_PROJECT" -Dsonar.pullrequest.key="$BRANCH" --json 2>&1 | tee /tmp/result.json \
       || exitCode=$?
   echo "Codescan completed. exit code: $exitCode"
   copado -u /tmp/result.json

@@ -21,7 +21,7 @@ AutoRABIT tracks the usage of ARM as an orchestration engine through version con
 
 #### Key Points:
 
-* **Code Commits and Licensing:** Any person who commits code to an SCM system, where the commit triggers a job in AutoRABIT, requires a Platform Integration License.
+* **Code Commits and Licensing:** Any person who commits code to an SCM system, where that commit is later used in an AutoRABIT function, requires a Platform Integration License (unless the person committing has a active AutoRABIT ARM License). This would include external commits to the SCM System.
 * **Service Accounts:** If a service account triggers automation or integrates with AutoRABIT, the individual or team responsible for the actual code commit must still hold a Platform Integration License. This ensures that all contributors whose actions trigger AutoRABIT processes are appropriately licensed.
 * **Commit Count in SCM Systems:** For SCM systems such as Git, multiple commits pushed simultaneously are counted separately toward the user license.
 * **No Web UI Login Required:** A Platform Integration User does not need to log in to the AutoRABIT Web UI to be counted as a user.

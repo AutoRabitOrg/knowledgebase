@@ -55,7 +55,7 @@
 * **Salesforce Authentication Fix:** Resolved the reauthentication issue to ensure seamless and uninterrupted access.
 * **Improved Viewing of nCino Backup Records:** Enhanced functionality to ensure users can view nCino backup records without any disruptions.
 * **Optimized Restore/Replicate Functionality:** The common object operation has been upgraded from "insert" to "upsert" to improve the performance of restore and replicate processes.
-* **Kone Archival Issue Resolved:** We fixed an issue with deleted records being incorrectly picked up during archival in Kone.
+* **Archival Issue Resolved:** We fixed an issue with deleted records being incorrectly picked up during archival.
 
 ## Vault 24.2.3 Release Notes
 

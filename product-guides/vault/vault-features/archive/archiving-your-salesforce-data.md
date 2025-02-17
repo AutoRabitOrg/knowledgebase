@@ -1,20 +1,20 @@
-# Archiving your Salesforce Data
+# Archiving Your Salesforce Data
 
-1. Login to your Vault account.
-2.  Go to the **SETUP** module.\
+1. Log in to your Vault account.
+2.  Go to the **Setup** module.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1611).png" alt=""><figcaption><p>Setup</p></figcaption></figure>
 3.  Look for your Salesforce Org from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
 
     <figure><img src="../../../../.gitbook/assets/image (1610).png" alt=""><figcaption><p>Search for Salesforce Org</p></figcaption></figure>
-4. Navigate to the **CONFIGS** tab.
-5.  Click on **ADD ARCHIVE CONFIG**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy
+4. Navigate to the **Configs** tab.
+5.  Click on **Add Archive Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
 6.  Select the components that you need to archive on the next screen.
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Select components</p></figcaption></figure>
 7. Using **Filters** you can define the criteria on which the records will get fetched.\
    For example, if you can define criteria to fetch **AccountBrand** records that are older than _1000 days_ and are _field Id_ are not empty.
 
@@ -27,7 +27,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 8.  The **Hierarchy** option will allow you to view all the corresponding child objects for your selected object. These child objects will also get archived once you archive their parent object. Such a hierarchy schema view can be seen using the **Hierarchy** option.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Hierarchy</p></figcaption></figure>
 
     You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object which will be deleted for sure if its parent object is selected for archive policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archive.\
 
@@ -35,11 +35,11 @@ Validate your query to see whether the criteria set is correct and view the numb
     <figure><img src="../../../../.gitbook/assets/image (1612).png" alt=""><figcaption><p>Schema</p></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (1613).png" alt=""><figcaption><p>Child Schema</p></figcaption></figure>
-9.  Once done, click **SAVE** to close the hierarchy-schema screen. Similar to **filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.\
+9.  Once done, click **Save** to close the hierarchy-schema screen. Similar to **filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-10. Click **NEXT.** On the next screen, do the following:
+10. Click **Next.** On the next screen, do the following:
     * Give the process a **name**.
     * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.
     * Select the date and time interval for the archive process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, monthly, or input any duration manually.
@@ -49,22 +49,22 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 
         <figure><img src="../../../../.gitbook/assets/image (1614).png" alt=""><figcaption><p>Enable serial mode for bulk API</p></figcaption></figure>
-11. Click **SAVE CONFIG**.
-12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **SAVE**.\
+11. Click **Save Config**.
+12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1615).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
-13. Now go to the **ARCHIVE** tab.
+    <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
+13. Now go to the **Archive** tab.
 14. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
 15. Select the **Environment**.
 16. Select the archive configured recently under **Configurations** drop-down field.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
-17. Click on **GET DETAILS** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
-18. To run on-demand archive before the scheduled archive set, use **ARCHIVE NOW** button.
+17. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
+18. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
 19. On the **Start Archive** screen, the label name gets auto-populated, however, you have the option to edit the label name and enter the label you desire.
-20. &#x20;Select your configuration and click **ARCHIVE**.\
+20. &#x20;Select your configuration and click **Archive**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
@@ -72,24 +72,12 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 
     <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
-22. &#x20;For each archive job, the following information will get displayed:\
+22. &#x20;For each archive job, the following information will be displayed:\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
-| Parameters                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>Label<br></p>              | <p>An identification name for each archive performed in Vault<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <p>Configuration Name<br></p> | <p>Archive configuration name<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <p>Date/Time<br></p>          | <p>The date and time stamp for the archive process took place<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| <p>Expiry Date<br></p>        | <p>Till which date the archive job will remain with Vault<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <p>Duration<br></p>           | <p>Time-taken to complete the archive operation<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| <p>Records<br></p>            | <p>Total numbers of records archived<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <p>API Calls<br></p>          | <p>API call duration (in seconds)<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <p>Query<br></p>              | <p>Filter or query that have been used to fetch the records<br></p>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| <p>Data Backup<br></p>        | <p>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></p>                                                                                                                                                                                                                                                                                                                                                                                                      |
-| <p>Status<br></p>             | <p>Status of the archive i.e., <em>completed, in progress, or failed</em><br></p>                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <p>Actions<br></p>            | <ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol> |
+<table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
 
 ## Downloading Files
 
@@ -101,14 +89,13 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 <figure><img src="../../../../.gitbook/assets/image (1604).png" alt=""><figcaption><p>Records Icon</p></figcaption></figure>
 
-3. The records window will have the “Download” and “Download Files” options to initiate the download of files.
-
-<figure><img src="../../../../.gitbook/assets/image (1605).png" alt=""><figcaption><p>Download button and column icons</p></figcaption></figure>
-
-4.  On clicking download, the following pop-up will be displayed with two options to download.\
+3.  The records window will have the “Download” and “Download Files” options to initiate the download of files.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1621).png" alt=""><figcaption><p>Downloads</p></figcaption></figure>
+4.  On clicking download, the following pop-up will be displayed with two options to download.
+
+    <figure><img src="../../../../.gitbook/assets/image (1623).png" alt=""><figcaption></figcaption></figure>
 
     1. Selecting "Download CSV" will download a CSV file with all the records.
     2. Selecting "Download Files" allows you to download the file from the Vault backup.

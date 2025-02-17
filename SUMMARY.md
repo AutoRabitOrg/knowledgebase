@@ -692,7 +692,7 @@
     * [Creating and Configuring Proxy Servers](product-guides/vault/configuring-vault/creating-and-configuring-proxy-servers.md)
   * [Vault Features](product-guides/vault/vault-features/README.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)
-      * [Archiving your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
+      * [Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
     * [Backup](product-guides/vault/vault-features/backup/README.md)
       * [Start the Backup](product-guides/vault/vault-features/backup/start-the-backup.md)
       * [Schedule a Vault Backup](product-guides/vault/vault-features/backup/schedule-a-vault-backup.md)

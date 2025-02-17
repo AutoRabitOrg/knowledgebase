@@ -141,9 +141,9 @@ Component details are listed in their corresponding sections within this documen
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    ![](<../../../../.gitbook/assets/image (7) (1) (1) (1).png>)\
+    ![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png>)\
 
 2. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives).\
    \

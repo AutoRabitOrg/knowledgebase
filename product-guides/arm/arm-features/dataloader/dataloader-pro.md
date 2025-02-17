@@ -31,15 +31,15 @@ Data Loader plays an essential role in data migration from source sandbox to des
 
 8. Change the grid view to a graph view by clicking the **`Switch to Graph View`** button. Click on the![](<../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) icon to view the graphical representation on full screen.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Filters and Mappings <a href="#filters-and-mappings" id="filters-and-mappings"></a>
 
 For each object displayed, users can view the list of fields related to the corresponding object.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Filters**
 
@@ -91,19 +91,19 @@ Upon confirming, the checkbox will be selected to skip migrating those records t
 
 Click on the filters section of the object on which the 'Skip Records' is applied to observe the query builder and the Record Count.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When ‘Skip Records’ is selected, the record count is set to ‘0’ and the records from the selected object will not be migrated to the destination.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When unchecking the ‘checkbox’, skip records will be disabled on the object. The following message will ask for confirmation.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Upon clicking 'confirm,' the records from that particular object will be migrated to the destination. The following notification will be displayed when unchecking the checkbox.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When ‘Skip Records’ is disabled, the record count that was set to ‘0’ in the filters and the query will be reset to blank and the records will be migrated to the destination.
 

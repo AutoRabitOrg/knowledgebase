@@ -59,15 +59,15 @@ Set up the CodeScan application to provide necessary configuration information f
 
 5. Click on **`Create App Integration`**.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="471"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="471"><figcaption></figcaption></figure>
 
 6. In the next auto-populated dialog box, select the second option, i.e., **`SAML 2.0`**, and click on **`Next`**.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. In the **`General Settings`**, enter **`CodeScan`** in the App name field, upload the **`CodeScan logo`** and click on the **`Next`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8.  In the **`Configure SAML`** tab, do the following:
 
@@ -75,7 +75,7 @@ Set up the CodeScan application to provide necessary configuration information f
       **For example:** If your _instance URL_ is `https://app.codescan.io` and the _connection\_id_ is `OKTA-SAML`, your SSO URL would be _`https://app.codescan.io/_codescan/login/saml2/sso/OKTA-SAML`_
     * **`Audience URI (SP Entity ID)`**: Enter your _connection\_id_ in this field. **Example:** `OKTA-SAML`
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Where can I find my Connection ID?**

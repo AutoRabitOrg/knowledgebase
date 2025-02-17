@@ -15,7 +15,7 @@ The **Run Merge process on successful deployment** feature keeps track of builds
 
 You will find the **`On Successful Deployment > Run Merge Process`** checkbox under the **`Deploy`** section when you create a CI job in ARM and fill out all required details in the **`Build`** section (such as _version control repository, branch, and revisions_).
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

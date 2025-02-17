@@ -55,17 +55,17 @@ In this section, you can use an external ID in place of a related record's Sales
 
 This new feature allows you to sort fields for nCino objects while committing. Based on the sorting order set, the record order in the JSON files will get fetched. The users will be provided a default sorting order that can be changed. **XXXXX\_lookupkey\_\_c** is the most preferred field for sorting, and that would be the default field. If this field is not present, the **Name** for _custom settings_ and **Id** for _non-custom settings_ would be selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For the objects with sorting fields opted, the sorting icon gets changed.
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Filters <a href="#applied-filters" id="applied-filters"></a>
 
 Such filters will be displayed here if any filter is applied to the objects.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: At the time of template creation, the filter is applied to your object, so it can't be edited.&#x20;
@@ -79,7 +79,7 @@ Based on your destination selection, you will have different deployment buttons 
 * **Commit:** Committing to the version control branch only
 * **Commit & Deploy:** Committing and deployment together.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.&#x20;
 

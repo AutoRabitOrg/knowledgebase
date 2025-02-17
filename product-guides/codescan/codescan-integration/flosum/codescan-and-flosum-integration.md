@@ -68,12 +68,12 @@
    *   Click the **Branch Sync** button to trigger the static code analysis.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **View Project Analysis**:
    *   Go to the **Project Analysis** page to see the analysis in progress.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Your Flosum-CodeScan integration is complete!
 

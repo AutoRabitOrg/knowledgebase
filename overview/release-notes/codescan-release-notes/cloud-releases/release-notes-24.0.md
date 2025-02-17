@@ -168,13 +168,13 @@ There are no new features associated with this release.
 
     *   Verified the rule’s description, type, severity, message, tag, remediation, key, and name:
 
-        <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     *   Verified the rule is not throwing a violation if used with sharing, without sharing, or inherited sharing:
 
-        <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
     *   Verified that a violation is thrown if not used with sharing, without sharing, or inherited sharing.
 
-        <figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE**: This rule overlaps with the **ClassExplicitSharing** rule and will always overlap with violations for outer classes. This rule has been created to:
@@ -208,7 +208,7 @@ If both rules are active, check the violations that were reported and disable on
 
     1.  Rule is throwing a violation if isAccessible is not checked for the objects used in the inner query:
 
-        <figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
 
         <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>

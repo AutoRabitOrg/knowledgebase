@@ -37,19 +37,19 @@ To set up the ADFS connection with AutoRABIT using a Relying Party Trust (RPT), 
 11. On the next screen, add a Relying party trust identifier named **https://pg.autorabit.com/saml/metadata** and click **Add**.
 12. On the next screen, leave the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="489"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="489"><figcaption></figcaption></figure>
 
 13. On the next screen, select: **Permit all users to access this relying party**.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 14. On the next screens, the wizard will display an overview of your settings. Click **Next**.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="479"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="479"><figcaption></figcaption></figure>
 
 15. On the final screen use the **Close** button to exit and open the Claim Rules editor.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
 
 #### Step 2 – Creating Claim Rules <a href="#step-2-creating-claim-rules" id="step-2-creating-claim-rules"></a>
 

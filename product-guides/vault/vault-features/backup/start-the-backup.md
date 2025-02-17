@@ -79,11 +79,11 @@ Steps to download files:
 
 2\.     Click on the “Download” option to initiate the download of the files
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. A pop-up will be displayed with two options to choose from:
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 a.     Download CSV:
 
@@ -97,7 +97,7 @@ b.     Download Files:
 
 &#x20;                ii.     On selecting “Download Files”, based on the size of the file, the progress icon will be  displayed in the place of download option.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                iii.     Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
 
@@ -129,7 +129,7 @@ b.     Download Files:
 9. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
 10. Using the “Download Files” column. The individual files related to the respective records can be downloaded.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 

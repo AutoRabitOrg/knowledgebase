@@ -35,7 +35,7 @@ To automate testing from AutoRABIT, in a CI Job you can add a Callout URL that c
 
 1. Obtain an API key (this is only available on Pro accounts). _Immediately copy this key, it is only visible when it is generated._&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>API Keys Library</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>API Keys Library</p></figcaption></figure>
 
 2. Go to the [Testim.io Public API](https://editor.swagger.io/?url=https://raw.githubusercontent.com/testimio/public-openapi/main/api.yaml) in Swagger and choose the type of remote execution API call for test execution; Test, Test Plan, Test Suite, or Test Label. Copy the JSON payload.&#x20;
 

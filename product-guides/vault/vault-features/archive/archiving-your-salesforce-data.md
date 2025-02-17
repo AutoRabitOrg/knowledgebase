@@ -1,21 +1,18 @@
 # Archiving your Salesforce Data
 
 1. Login to your Vault account.
-2. Go to the **SETUP** module.
+2.  Go to the **SETUP** module.\
 
-<figure><img src="../../../../.gitbook/assets/image (228).png" alt="" width="563"><figcaption><p>Orgs list Vault</p></figcaption></figure>
 
-3. Look for your Salesforce Org from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
+    <figure><img src="../../../../.gitbook/assets/image (1611).png" alt=""><figcaption><p>Setup</p></figcaption></figure>
+3.  Look for your Salesforce Org from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
 
-<figure><img src="../../../../.gitbook/assets/image (229).png" alt=""><figcaption><p>Setup</p></figcaption></figure>
-
+    <figure><img src="../../../../.gitbook/assets/image (1610).png" alt=""><figcaption><p>Search for Salesforce Org</p></figcaption></figure>
 4. Navigate to the **CONFIGS** tab.
-5.  Click on **ADD ARCHIVE CONFIG**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy.\
-
+5.  Click on **ADD ARCHIVE CONFIG**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy
 
     <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-6.  Select the components that you need to archive on the next screen.\
-
+6.  Select the components that you need to archive on the next screen.
 
     <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 7. Using **Filters** you can define the criteria on which the records will get fetched.\
@@ -32,54 +29,53 @@ Validate your query to see whether the criteria set is correct and view the numb
 
     <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object which will be deleted for sure if its parent object is selected for archive policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archive.
+    You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object which will be deleted for sure if its parent object is selected for archive policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archive.\
 
-<figure><img src="../../../../.gitbook/assets/image (235).png" alt="" width="563"><figcaption><p>Schema</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (236).png" alt="" width="563"><figcaption><p>Child Schema</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1612).png" alt=""><figcaption><p>Schema</p></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1613).png" alt=""><figcaption><p>Child Schema</p></figcaption></figure>
 9.  Once done, click **SAVE** to close the hierarchy-schema screen. Similar to **filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 10. Click **NEXT.** On the next screen, do the following:
-
     * Give the process a **name**.
     * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.
     * Select the date and time interval for the archive process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, monthly, or input any duration manually.
     * You can specify till what time period you want to retain the archived data under the **Archive retention period** section.
     * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
-    * **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.
+    *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.\
 
 
-
-    <figure><img src="../../../../.gitbook/assets/image (238).png" alt=""><figcaption><p>Salesforce Org Configurations</p></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1614).png" alt=""><figcaption><p>Enable serial mode for bulk API</p></figcaption></figure>
 11. Click **SAVE CONFIG**.
-12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **SAVE**.
+12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **SAVE**.\
 
-<figure><img src="../../../../.gitbook/assets/image (239).png" alt="" width="563"><figcaption><p>Archive Config Summary</p></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1615).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
 13. Now go to the **ARCHIVE** tab.
 14. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
 15. Select the **Environment**.
-16. Select the archive configured recently under **Configurations** drop-down field.
+16. Select the archive configured recently under **Configurations** drop-down field.\
 
-<figure><img src="../../../../.gitbook/assets/image (240).png" alt=""><figcaption><p>Select Archive Settings</p></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
 17. Click on **GET DETAILS** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
 18. To run on-demand archive before the scheduled archive set, use **ARCHIVE NOW** button.
 19. On the **Start Archive** screen, the label name gets auto-populated, however, you have the option to edit the label name and enter the label you desire.
-20. &#x20;Select your configuration and click **ARCHIVE**.
+20. &#x20;Select your configuration and click **ARCHIVE**.\
 
-<figure><img src="../../../../.gitbook/assets/image (241).png" alt="" width="527"><figcaption><p>Start Archive</p></figcaption></figure>
 
-21. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
+    <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
+21. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.\
 
-<figure><img src="../../../../.gitbook/assets/image (242).png" alt="" width="544"><figcaption><p>Archive Page</p></figcaption></figure>
 
-22. &#x20;For each archive job, the following information will get displayed:
+    <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
+22. &#x20;For each archive job, the following information will get displayed:\
 
-<figure><img src="../../../../.gitbook/assets/image (243).png" alt=""><figcaption><p>Archive Summary</p></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
 | Parameters                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

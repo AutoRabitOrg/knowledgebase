@@ -29,7 +29,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 8. The **Hierarchy** option will allow you to view all the corresponding child objects for your selected object. These child objects will also get archived once you archive their parent object. Such a hierarchy schema view can be seen using the **Hierarchy** option.
 
-<figure><img src="../../../../.gitbook/assets/image (234).png" alt=""><figcaption><p>Heirarchy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (234).png" alt=""><figcaption><p>Hierarchy</p></figcaption></figure>
 
 You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object which will be deleted for sure if its parent object is selected for archive policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archive.
 
@@ -39,7 +39,7 @@ You may notice in the schema view that some of the objects are auto-selected by 
 
 9. Once done, click **SAVE** to close the hierarchy-schema screen. Similar to **filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.
 
-<figure><img src="../../../../.gitbook/assets/image (237).png" alt=""><figcaption><p>Select Heirarchy</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (237).png" alt=""><figcaption><p>Select Hierarchy</p></figcaption></figure>
 
 10. Click **NEXT.** On the next screen, do the following:
 
@@ -52,33 +52,33 @@ You may notice in the schema view that some of the objects are auto-selected by 
 
 
 
-    <figure><img src="../../../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (238).png" alt=""><figcaption><p>Salesforce Org Configurations</p></figcaption></figure>
 11. Click **SAVE CONFIG**.
 12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **SAVE**.
 
-<figure><img src="../../../../.gitbook/assets/image (239).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (239).png" alt="" width="563"><figcaption><p>Archive Config Summary</p></figcaption></figure>
 
 13. Now go to the **ARCHIVE** tab.
 14. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
 15. Select the **Environment**.
 16. Select the archive configured recently under **Configurations** drop-down field.
 
-<figure><img src="../../../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (240).png" alt=""><figcaption><p>Select Archive Settings</p></figcaption></figure>
 
 17. Click on **GET DETAILS** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
 18. To run on-demand archive before the scheduled archive set, use **ARCHIVE NOW** button.
 19. On the **Start Archive** screen, the label name gets auto-populated, however, you have the option to edit the label name and enter the label you desire.
 20. &#x20;Select your configuration and click **ARCHIVE**.
 
-<figure><img src="../../../../.gitbook/assets/image (241).png" alt="" width="527"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (241).png" alt="" width="527"><figcaption><p>Start Archive</p></figcaption></figure>
 
 21. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
 
-<figure><img src="../../../../.gitbook/assets/image (242).png" alt="" width="544"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (242).png" alt="" width="544"><figcaption><p>Archive Page</p></figcaption></figure>
 
 22. &#x20;For each archive job, the following information will get displayed:
 
-<figure><img src="../../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (243).png" alt=""><figcaption><p>Archive Summary</p></figcaption></figure>
 
 | Parameters                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -94,34 +94,40 @@ You may notice in the schema view that some of the objects are auto-selected by 
 | <p>Status<br></p>             | <p>Status of the archive i.e., <em>completed, in progress, or failed</em><br></p>                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | <p>Actions<br></p>            | <ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol> |
 
-### Steps to download files:
+## Downloading Files
 
-1\.     Go to the “Files” tab of any archive summary
+**Steps to download files:**
 
-2\.     Click open the “Records” icon on the files tab to download the files
+1\.     Go to the “Files” tab of any archive summary.
 
-<figure><img src="../../../../.gitbook/assets/image (1604).png" alt=""><figcaption></figcaption></figure>
+2\.     Click to open the “Records” icon on the files tab to download the files.
+
+<figure><img src="../../../../.gitbook/assets/image (1604).png" alt=""><figcaption><p>Records Icon</p></figcaption></figure>
 
 3. The records window will have the “Download” and “Download Files” options to initiate the download of files.
 
-<figure><img src="../../../../.gitbook/assets/image (1605).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1605).png" alt=""><figcaption><p>Download button and column icons</p></figcaption></figure>
 
-4. On clicking download button the following pop-up will be displayed with two options to downloads from.
+4.  On clicking download, the following pop-up will be displayed with two options to download.\
 
-<figure><img src="../../../../.gitbook/assets/image (1606).png" alt=""><figcaption></figcaption></figure>
 
-5. &#x20;As soon as the download is initiated:
-   1. &#x20;A message will be displayed to the user. Click ‘Ok’ to continue.
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1607).png" alt=""><figcaption></figcaption></figure>
+    1. Selecting "Download CSV" will download a CSV file with all the records.
+    2. Selecting "Download Files" allows you to download the file from the Vault backup.
+5. &#x20;As soon as the "Download Files" is initiated:
+   1.  A message will be displayed. Click "Ok" to continue.\
 
-&#x20;   b. The download progress can be observed with the progress bar that replaces the “Download”   button
 
-<figure><img src="../../../../.gitbook/assets/image (1608).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
+   2.  The download progress can be observed with the progress bar that replaces the “Download” button.\
 
-6. Once the download is completed, an email will be triggered to the
+
+       <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
+   3. Once the download is completed, an email based on the actual state of the download will be triggered to the registered emails in Vault.
+   4. For downloading individual files, click on the download icon under the "Download Files" column.
 
 ## Limitations
 
 * Inconsistent File Download During GDPR Requests: When a GDPR request is initiated within an organization, file downloads may behave inconsistently. This issue will be resolved in the upcoming release.
-* File Download Issues with Special Characters in File Names: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release
+* File Download Issues with Special Characters in File Names: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release.

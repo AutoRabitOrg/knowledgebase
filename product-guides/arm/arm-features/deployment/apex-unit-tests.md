@@ -18,7 +18,7 @@ Salesforce recommends the following components that need to be tested:
 
 The following test options are available when you deploy or commit or use CI jobs:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="418"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="418"><figcaption></figcaption></figure>
 
 * **`No Test Run:`** No tests are run. This test level applies only to deployments to development environments like Sandbox, Developer Edition, or trial organizations. This test level is the default for development environments.
 * **`Run Specified Tests:`** Only the tests that you specify are run. Provide the names of test classes in a comma-separated list.Make sure for the runTests parameter, and you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to **`Run Specified Tests`**.\
@@ -27,7 +27,7 @@ The following test options are available when you deploy or commit or use CI job
 * **`Run All Tests In Org:`** All tests are run. The tests include all tests in your organization, including tests of managed packages.
 * **`Run Tests Based On Changes:`** This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified apex classes from the packages in your [default apex test class configuration](https://knowledgebase.autorabit.com/arm/docs/default-apex-class-configuration) list, please check the "**`Do you want us to update the test classes`**" checkbox.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="413"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="413"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Points to Note**:&#x20;

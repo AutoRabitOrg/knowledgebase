@@ -17,7 +17,12 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 <figure><img src="../../../../.gitbook/assets/image (770).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (771).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1609).png" alt=""><figcaption></figcaption></figure>
+
+* Delete: You can delete the Apex Test Class from the Default Apex Test Class Configuration.
+* Edit: You can add or delete Apex Class/Trigger for the Apex Test Class.
+* Checkbox: This for selecting the Apex Test Class as part of the Default Apex Test Class, and you can click on save.
+* Clear: This will clear your Default Apex Test Class Configuration for your Salesforce Org.
 
 4. Different options to choose from:
 

@@ -107,6 +107,11 @@ This structured approach ensures files are properly attached to Email Messages d
 9. Go through logs and results of backups every week to ensure that automated backups are happening as expected.
 10. Adjust frequency and scheduled time of backup configurations based on API call limit and API call consumption by other systems.
 11. A Salesforce user with which an org is registered on Vault should have admin-level permissions in the org. The recommendation is to create an admin user separately for Vault.
+12. For handling Blob objects (such as attachments and content versions), note that:
+    * These objects are typically backed up only once during the first full backup and linked to subsequent backups without requiring actual backup operations
+    * Each Blob object requires one API call per file in worst case and five files in best case
+    * Schedule the initial full backup over weekends to avoid business disruptions from API call spikes
+    * This spike in API calls is expected only for the first full backup of a new org in Vault
 
 ### Configuration Best Practices
 

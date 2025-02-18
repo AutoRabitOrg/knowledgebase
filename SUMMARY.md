@@ -6,9 +6,9 @@
 
 * [⚡ What we do](overview/what-we-do.md)
 * [🔁 Release Notes](overview/release-notes/README.md)
-  * [Release Notes 25.1](overview/release-notes/arm-release-notes/release-notes-24.4/README.md)
-    * [Release Notes 25.1.0](overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-25.1.0.md)
   * [ARM Release Notes](overview/release-notes/arm-release-notes/README.md)
+    * [Release Notes 25.1](overview/release-notes/arm-release-notes/release-notes-24.4/README.md)
+      * [Release Notes 25.1.0](overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-25.1.0.md)
     * [Release Notes 24.4](overview/release-notes/arm-release-notes/release-notes-24.4-1/README.md)
       * [Release Notes 24.4.5](overview/release-notes/arm-release-notes/release-notes-24.4-1/release-notes-24.4.5.md)
       * [Release Notes 24.4.4](overview/release-notes/arm-release-notes/release-notes-24.4-1/release-notes-24.4.4.md)

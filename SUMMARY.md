@@ -72,6 +72,7 @@
   * [FlowCenter Release Notes](overview/release-notes/flow-center-release-notes/README.md)
     * [Release Notes 24.0](overview/release-notes/flow-center-release-notes/release-notes-24.0.md)
     * [FlowCenter Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)
+  * [Release Notes 25.1](overview/release-notes/release-notes-25.1.md)
 
 ## Fundamentals
 

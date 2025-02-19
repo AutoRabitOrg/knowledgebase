@@ -64,6 +64,7 @@
     * [Release Notes 24.1](overview/release-notes/ncino-release-notes/release-notes-24.1.md)
     * [Release Notes 23.1](overview/release-notes/ncino-release-notes/release-notes-23.1.md)
     * [Release Notes 22.3](overview/release-notes/ncino-release-notes/release-notes-22.3.md)
+    * [Release Notes 25.1](overview/release-notes/ncino-release-notes/release-notes-25.1.md)
   * [Vault Release Notes](overview/release-notes/vault-release-notes.md)
     * [Release Notes 24.0](overview/release-notes/vault-release-notes/release-notes-24.0.md)
     * [Release Notes 23.0](overview/release-notes/vault-release-notes/vault-release-notes-23.0.md)

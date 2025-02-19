@@ -145,7 +145,6 @@
       * [ARM Supported Metadata Types](product-guides/arm/getting-started/what-can-i-do-with-arm/arm-supported-metadata-types.md)
     * [Who can use ARM?](product-guides/arm/getting-started/who-can-use-arm.md)
     * [Salesforce Org Management](product-guides/arm/getting-started/salesforce-org-management.md)
-    * [ARM-supported license models](product-guides/arm/getting-started/arm-supported-license-models.md)
     * [User Profile](product-guides/arm/getting-started/user-profile.md)
     * [Navigating ARM](product-guides/arm/getting-started/navigating-arm.md)
     * [Getting Set Up](product-guides/arm/getting-started/registration/README.md)

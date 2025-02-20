@@ -31,3 +31,9 @@ The ARM Release 25.1.0 introduces key upgrades, new features, and critical fixes
 
 * **Third-Party Library Updates:** OpenJDK, Tomcat, Salesforce CLI, Sonar Scanner, and Local DynamoDB have been updated to their latest versions for improved performance, security, and compatibility.
 * **Linux Upgrade:** The underlying Linux environment has been upgraded, strengthening security and optimizing system performance.
+
+## nCino Improvements
+
+**Release Date 23 February 2025**
+
+See the [Release Notes](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.0-release-notes) for nCino + Data Loader improvements.&#x20;

@@ -4,11 +4,11 @@ The CodeScan rule list is always expanding. You can view the complete current li
 
 Our [Release Notes](../../../overview/release-notes/codescan-release-notes/) also have a record of when certain rules were added.
 
-You can download the list of CodeScan rules from here (last updated 10 December 2024):&#x20;
+You can download the list of CodeScan rules from here (last updated 20 February 2025):&#x20;
 
-{% file src="../../../.gitbook/assets/CodeScan Rules List 24-12-10.xlsx" %}
+{% file src="../../../.gitbook/assets/CodeScan Rules List 25-02-20.xlsx" %}
 
-### Rules not available for On-Premises Applications
+### Rules Not Available for On-Premises Applications
 
 Please note that not all rules available on CodeScan Cloud are available in the Self-Hosted CodeScan version. For example, the following rules will not function on CodeScan Self-Hosted:
 

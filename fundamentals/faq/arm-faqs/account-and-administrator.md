@@ -162,24 +162,19 @@ If you have already re-authenticated, but the issue is still unresolved, it may 
 
 ### How can I remove the previous Super Admin from ARM and assign access to myself? <a href="#how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself" id="how-can-i-remove-the-previous-super-admin-from-arm-and-assign-access-to-myself"></a>
 
-### Please follow the guidance published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm). Once you have that access, you can log in to ARM with your credentials and delete users without access.
+Please follow the guidance published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm). Once you have that access, you can log in to ARM with your credentials and delete users without access.
 
 ### How many Super Admins are allowed? Can I assign a backup Super Admin? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
 There can only be one Super Admin, but you can temporarily change the Super Admin. Refer to the documentation published [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/changing-super-admin-in-arm).
 
-### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but why is there no Revision# created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
+### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but why is there no Revision Number created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
-Before proceeding with the Branching Baseline operation, please ensure you have the Write permission on the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../../product-guides/arm/getting-started/registration/branching-baseline.md)
+Before proceeding with the Branching Baseline operation, please ensure you have Write permissions for the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../../product-guides/arm/getting-started/registration/branching-baseline.md)
 
-### How can I get access to the AutoRABIT Academy? <a href="#how-can-i-get-access-to-the-autorabit-academy" id="how-can-i-get-access-to-the-autorabit-academy"></a>
+### How can I get access to the AutoRABIT LearningHub? <a href="#how-can-i-get-access-to-the-autorabit-academy" id="how-can-i-get-access-to-the-autorabit-academy"></a>
 
-To register for the AutoRABIT Academy:
-
-1. Go to [https://academy.autorabit.com/](https://academy.autorabit.com/)
-2. Click on **Account** -> **Enroll**.
-3. Fill in all required details.
-4. Click **Register**.
+To register for the AutoRABIT LearningHub, go to [https://learninghub.autorabit.com](https://learninghub.autorabit.com/).
 
 ### Is there a way to change an existing user’s email address without deleting the user? <a href="#is-there-a-way-to-change-an-existing-users-email-address-without-deleting-the-user" id="is-there-a-way-to-change-an-existing-users-email-address-without-deleting-the-user"></a>
 
@@ -189,7 +184,7 @@ As of now, you cannot simply change the email address of an existing user, eithe
 
 If there is a problem with the **Test Server** instance, we do suggest you restart it. However, please restart the services first and then restart the server. This should resolve the issue.
 
-#### AutoRABIT displays unwanted changes and removes picklist options from branches when deploying changes to RecordTypes picklistValues. <a href="#autorabit-displays-unwanted-changes-and-removes-picklist-options-from-branches-when-deploying-change" id="autorabit-displays-unwanted-changes-and-removes-picklist-options-from-branches-when-deploying-change"></a>
+### AutoRABIT displays unwanted changes and removes picklist options from branches when deploying changes to RecordTypes picklistValues. <a href="#autorabit-displays-unwanted-changes-and-removes-picklist-options-from-branches-when-deploying-change" id="autorabit-displays-unwanted-changes-and-removes-picklist-options-from-branches-when-deploying-change"></a>
 
 If you have selected the below configuration for recordTypes picklistValues under **Admin > Salesforce settings > Configuration for recordTypes picklistValues**, then it will replace all picklist values with new picklist values.
 
@@ -197,21 +192,12 @@ _**replaceall**_
 
 **Solution:** Select the **Append** button so that instead of overriding the entire record type picklist values, it adds to the existing picklist values.
 
-#### Why can’t my colleague with Deployment Manager, Developer, and Pull Request Reviewer roles Approve/Reject Merge and EZ-Commits? <a href="#why-cant-my-colleague-with-deployment-manager-developer-and-pull-request-reviewer-roles-approverejec" id="why-cant-my-colleague-with-deployment-manager-developer-and-pull-request-reviewer-roles-approverejec"></a>
+### Why can’t my colleague with Deployment Manager, Developer, and Pull Request Reviewer roles Approve/Reject Merge and EZ-Commits? <a href="#why-cant-my-colleague-with-deployment-manager-developer-and-pull-request-reviewer-roles-approverejec" id="why-cant-my-colleague-with-deployment-manager-developer-and-pull-request-reviewer-roles-approverejec"></a>
 
 Please edit the role assigned to the user and ensure that the below-mentioned special permissions are enabled for that role:
 
 1. Gated check-ins approver
 2. EZ-Merge approver.
-
-### I see from the instructions that these plugins require some keys. Is it a license issue or can we get these keys and use the Static Code Analysis feature? <a href="#i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get" id="i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get"></a>
-
-You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
-
-* [SCA for CodeScan](../../../product-guides/codescan/)
-* [SCA for Checkmarx](../../../product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
-* [SCA for Apex PMD](../../../product-guides/arm/integration-and-plugins/apex-pmd.md)
-* [SCA for SonarQube](../../../product-guides/arm/integration-and-plugins/sonarqube.md)
 
 ### We’re switching from an on-premises GitHub account to the Cloud version of GitHub. I created the GitHub cloud account and tried setting up the cloud connection in ARM, but the system gave me an error. <a href="#were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github" id="were-switching-from-an-onpremises-github-account-to-the-cloud-version-of-github-i-created-the-github"></a>
 

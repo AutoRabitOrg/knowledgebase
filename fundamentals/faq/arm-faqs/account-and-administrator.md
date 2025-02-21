@@ -148,12 +148,6 @@ Yes, this is achievable; however, your [Salesforce Orgs](../../../product-guides
 
 The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../../product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
-### What is the functionality of "Sync Branches" radio button in the VC Repo's screen? <a href="#what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen" id="what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen"></a>
-
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-64UAR2YT.png)
-
-This radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.
-
 ### Why am I getting a Credential Name error while trying to Save Mappings? <a href="#why-am-i-getting-a-credential-name-error-while-trying-to-save-mappings" id="why-am-i-getting-a-credential-name-error-while-trying-to-save-mappings"></a>
 
 If you're a sub-user and get an error message `Credential with name: "qa private token cred" for this UserEmail does not have permission to save mapping` while saving **Org Mapping**, then the admin must **re-register** the repository **credentials** and make the credentials **Public**. The sub-user must then use the newly registered credentials.

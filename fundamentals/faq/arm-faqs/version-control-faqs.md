@@ -309,3 +309,9 @@ By default, when we commit by selecting only Profile metadata, it retrieves User
 ### Rollback Plan
 
 * If the feature flag is turned off later, the existing non-optimized workspaces will be used since they were not removed. We will continue utilizing the previous workspaces stored in the base checkout and specific user directories after syncing with the latest remote. Even when the feature flag is enabled/disabled, the retention policy will remain unaffected and will continue to operate as usual.
+
+### What does the Sync Branches button in the VC Repo's screen do? <a href="#what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen" id="what-is-the-functionality-of-sync-branches-radio-button-in-vc-repos-screen"></a>
+
+![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-64UAR2YT.png)
+
+This radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.

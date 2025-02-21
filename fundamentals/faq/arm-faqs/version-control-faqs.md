@@ -306,7 +306,7 @@ By default, when we commit by selecting only Profile metadata, it retrieves User
 
 * Once a feature flag is enabled, a new global workspace will be created for each repository in the "/workspaces/globalcheckouts" folder, and for commits/merges, new user workspaces will be created in "/workspaces/localcheckouts" and will be deleted after usage is completed. The existing user workspaces will remain unchanged for now; they will not be deleted immediately. Instead, they will be removed through scheduled jobs as previously done; no new migration has been added to delete workspaces. On the workspace sub-module, only the workspaces created after enabling the feature flag will be visible. Previous non-optimized workspaces will not be visible in the UI if the feature flag is active.
 
-### Rollback Plan
+**Rollback Plan**
 
 * If the feature flag is turned off later, the existing non-optimized workspaces will be used since they were not removed. We will continue utilizing the previous workspaces stored in the base checkout and specific user directories after syncing with the latest remote. Even when the feature flag is enabled/disabled, the retention policy will remain unaffected and will continue to operate as usual.
 
@@ -315,3 +315,7 @@ By default, when we commit by selecting only Profile metadata, it retrieves User
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-64UAR2YT.png)
 
 This radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.
+
+### Can I change or switch the default branch repository in AutoRABIT, since I currently have two default branches? <a href="#can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default" id="can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default"></a>
+
+You can do this by first unregistering both branches and then re-registering your repository's default branch in AutoRABIT and setting the registered branch as the default branch.

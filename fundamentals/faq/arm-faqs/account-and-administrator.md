@@ -18,15 +18,11 @@ To update the username on all registered orgs, re-authenticate the orgs in **Adm
 
 ### Is it possible to change the username for the AutoRABIT login after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
 
-Once a user has been created, it cannot be changed; however, the user's email address can be changed. But, if it is mandatory to change the username, follow the steps below:
+Once a user has been created, it cannot be changed. This can only be done by deleting the account. Follow the steps below:
 
-1. First, you must **delete** this user account: Request your administrator remove you from the user list.
+1. To **delete** the user account: Ask your administrator remove you from the user list.
 2. Make a **new account** with a different username and email address.
-3. Again, request your administrator grant all required **permissions** exactly as they were for the previous user account.
-
-### Can I change or switch the default branch repository in AutoRABIT, since I currently have two default branches? <a href="#can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default" id="can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default"></a>
-
-You can do this by first unregistering both branches and then re-registering your repository's default branch in AutoRABIT and set the registered branch as the default branch.
+3. Ask your administrator to grant you all required **permissions** exactly as they were for the previous username and account.
 
 ### How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
 

@@ -22,7 +22,7 @@ Make sure you are entering the JIRA API token in the **Password** field while re
 
 ### How do I generate a new API token for JIRA? <a href="#steps-to-generate-api-token-for-jira" id="steps-to-generate-api-token-for-jira"></a>
 
-Follow the below steps to generate a new API token for JIRA:
+Follow the steps below to generate a new API token for JIRA:
 
 1. Go to the link: [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens)**.**&#x20;
 2. Click on **Create API Token** and provide the label name and click on **Create**.

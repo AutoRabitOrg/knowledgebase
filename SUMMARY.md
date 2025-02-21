@@ -137,7 +137,6 @@
 
 ## Product Guides
 
-* [Guard](product-guides/guard.md)
 * [ARM](product-guides/arm/README.md)
   * [Getting Started](product-guides/arm/getting-started/README.md)
     * [Signing Up with ARM](product-guides/arm/getting-started/signing-up-with-arm.md)
@@ -734,7 +733,7 @@
     * [Support for DORA Metrics](product-guides/flow-center/flowcenter-insights/support-for-dora-metrics.md)
     * [Export your Insights data](product-guides/flow-center/flowcenter-insights/export-your-insights-data.md)
     * [Invite your CSM to FlowCenter Insights](product-guides/flow-center/flowcenter-insights/invite-your-csm-to-flowcenter-insights.md)
-* [AutoRABIT Guard](product-guides/autorabit-spm.md)
+* [Guard](product-guides/guard.md)
 
 ## Use Cases + Resources
 

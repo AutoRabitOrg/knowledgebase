@@ -22,8 +22,8 @@ Git is a version control system (VCS). GitHub is the platform where Git reposito
 
 ## What's the difference between git fetch and git pull? <a href="#whats-the-difference-between-git-fetch-and-git-pull" id="whats-the-difference-between-git-fetch-and-git-pull"></a>
 
-* **git fetch** really only downloads new data from a remote repository; it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
-* **git pull**, by contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data, but also directly integrates it into your current working copy files.
+* **Git fetch** really only downloads new data from a remote repository; it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
+* **Git pull**, by contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data, but also directly integrates it into your current working copy files.
 
 ## What is a Commit in AutoRABIT? <a href="#what-is-commit-in-autorabit" id="what-is-commit-in-autorabit"></a>
 

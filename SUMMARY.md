@@ -137,6 +137,7 @@
 
 ## Product Guides
 
+* [Guard](product-guides/guard.md)
 * [ARM](product-guides/arm/README.md)
   * [Getting Started](product-guides/arm/getting-started/README.md)
     * [Signing Up with ARM](product-guides/arm/getting-started/signing-up-with-arm.md)

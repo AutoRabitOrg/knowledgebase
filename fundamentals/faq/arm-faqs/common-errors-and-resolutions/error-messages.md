@@ -140,5 +140,9 @@ If you are unable to connect to the ARM instance and get this error, it is due t
 7. Click **Clear data**.
 8. Now, log in to your instances using the new browser tab.
 
+### Why am I getting an error when I try to install CodeScan Sonar as a plugin in ARM? <a href="#why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm" id="why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm"></a>
+
+You're getting an error because you're using an old version of CodeScan. Install the most recent version of CodeScan to avoid any installation errors.
+
 
 

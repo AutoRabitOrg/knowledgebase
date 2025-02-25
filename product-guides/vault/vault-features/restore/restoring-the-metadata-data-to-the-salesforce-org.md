@@ -14,7 +14,7 @@ Ensure you have the following:
 
 ## How do I restore data / metadata? <a href="#how-to-do-it" id="how-to-do-it"></a>
 
-1. Login to your Vault account.
+1. Log in to your Vault account.
 2. Click **`Restore`** from the Vault dashboard page and click on **`Restore Now`**.
 
 <figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -23,7 +23,7 @@ Ensure you have the following:
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-4.  Next, select the **`restore source`** and its **`configuration`** from the drop-down.\
+4.  Next, select the **`restore source`** and its **`configuration`** from the dropdown.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1564).png" alt=""><figcaption></figcaption></figure>
@@ -62,7 +62,7 @@ EZ-Restore copies everything from the source to the destination, including new, 
 3. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
    * Specify the **`batch size`** for components to retrieve records. The max batch size that you can set per batch is **10K**. This option helps run large jobs exceeding normal processing limits. Per the Salesforce governor limit, you can deploy or retrieve up to **10,000 files** at once or a max size of **40 MB**. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
-   * Choose the **recipients** from the **`Email notification`** dropdown who should receive notifications whenever the action is performed. The currently logged-in recipient will automatically be checked by default.
+   * Choose from the **`Email notification`** dropdown which **recipients** should receive notifications whenever the action is performed. The currently logged-in recipient will automatically be checked by default.
 4. Next, you can select the **criteria** for the restore to be performed:
    * **`Disable Workflows:`** On selection, all the workflows of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the restore is completed, workflows are reactivated.
    * **`Disable Validation Rules:`** Validation rules verify that the data a user enters in a record meets your specified criteria before the user can save the record. On selection, all the validation rules of the Salesforce objects are deactivated, and the data will be transferred from the source to the destination sandbox. Once the restore is done, validation rules are reactivated.
@@ -97,7 +97,7 @@ The next screen displays the metadata and data objects that will be replicated. 
 
 <figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **`Schema:`** The schema will allow you to view your selected object's corresponding child objects. With the most recent **Vault 23.1** release, we improved the schema representation by showing one level of the child/parent objects at a time. The tree can now be expanded based on your selection rather than the entire tree, which speeds up the download of the schema data and improves the UI.
+* **`Schema:`** The schema will allow you to view your selected object's corresponding child objects. With the **Vault 23.1** release, we improved the schema representation by showing one level of the child/parent objects at a time. The tree can now be expanded based on your selection rather than the entire tree, which speeds up the download of the schema data and improves the UI.
 
 <figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -112,7 +112,7 @@ The next screen displays the metadata and data objects that will be replicated. 
 <img src="../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 {% endhint %}
 
-* **`Selected Records:`** By default, all the records available in the objects will be auto-selected. To choose specific records, click **`All`** under **`Selected Records,`** which will lead you to a popup box where you can select the record. Post-selection, the summary table should show the number of records set.
+* **`Selected Records:`** By default, all the records available in the objects will be auto-selected. To choose specific records, click **`All`** under **`Selected Records,`** which will lead you to a pop-up box where you can select the record. Post selection, the summary table should show the number of records set.
 
 <figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -124,7 +124,7 @@ You also have the option of importing records from a CSV file. To upload the CSV
 
 <figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* **`Selected Fields:`** By default, all the fields will be chosen for the objects selected. Clicking **`“All”`** under the **`Selected Fields`** column will open a popup window with all the fields listed for the selected objects. You can also use the **search** filter to search for a specific field faster. Here, you can map your source field with the destination field. The destination field should default be mapped based on the source field name.
+* **`Selected Fields:`** By default, all the fields will be chosen for the objects selected. Clicking **`“All”`** under the **`Selected Fields`** column will open a pop-up window with all the fields listed for the selected objects. You can also use the **search** filter to search for a specific field faster. Here, you can map your source field with the destination field. The destination field should default to be mapped based on the source field name.
 
 <figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

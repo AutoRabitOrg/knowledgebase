@@ -110,11 +110,11 @@ This structured approach ensures files are properly attached to Email Messages d
 
 ## Blob Data Backup Best Practices
 
-AutoRABIT Vault provides a reliable backup solution for Blob data (Files and Attachments) in Salesforce. Customers may observe a spike in API call consumption during the initial full backup of blob objects. To optimize backup efficiency and minimize business disruptions, follow these best practices:
+AutoRABIT Vault provides a reliable backup solution for Blob data (files and attachments) in Salesforce. Customers may observe a spike in API call consumption during the initial full backup of blob objects. To optimize backup efficiency and minimize business disruptions, follow these best practices:
 
 #### 1. Understanding Blob Data Backup <a href="#id-1.-understanding-blob-data-backup" id="id-1.-understanding-blob-data-backup"></a>
 
-* Blob objects (Attachments and Content Versions) are typically backed up only once during the first full backup.
+* Blob objects (attachments and content versions) are typically backed up only once during the first full backup.
 * Subsequent backups will reference these objects without requiring additional API calls.
 * A spike in API call consumption is expected when performing a full backup for a newly added Salesforce org, but this occurs only once.
 

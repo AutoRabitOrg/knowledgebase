@@ -321,7 +321,6 @@
       * [Deployment Reports](product-guides/arm/arm-features/reports/deployment-reports.md)
       * [Static Code Analysis](product-guides/arm/static-code-analysis.md)
       * [Audit Report](product-guides/arm/audit-report.md)
-    * [TAF](product-guides/arm/arm-features/taf.md)
     * [Environment Provisioning](product-guides/arm/arm-features/environment-provisioning/README.md)
       * [Migration Template](product-guides/arm/arm-features/environment-provisioning/migration-template/README.md)
         * [Enable History Tracking on Objects](product-guides/arm/arm-features/environment-provisioning/migration-template/enable-history-tracking-on-objects.md)

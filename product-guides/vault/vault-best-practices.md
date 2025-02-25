@@ -10,7 +10,7 @@ Salesforce, a highly customizable and dynamic CRM platform, presents unique chal
 
 Salesforce operates on a shared responsibility model, where users must take active steps to ensure data safety. The platform provides minimal tools to prevent data loss and facilitate restoration, requiring users to leverage external solutions and strategies to manage backups effectively.
 
-### **Challenges in Salesforce Data Backup and Recovery**
+## **Challenges in Salesforce Data Backup and Recovery**
 
 1. **Governor Limits**: Salesforce imposes strict governor limits, including maximum API callouts and batch processing constraints. These limits significantly impact the ability to perform comprehensive backups and restores, often requiring careful planning and execution to avoid hitting these thresholds. For example, an enterprise attempting to back up or restore a large volume of data may find that they quickly exhaust their daily API call limits, leading to incomplete backups.
 2. **Lack of Full Data Export Options**: Unlike traditional databases, Salesforce does not allow users to easily export and re-import entire datasets. This limitation complicates full data recovery, as incremental and selective backups become necessary. Organizations often need to develop custom scripts or use third-party tools to extract data, which can be both time-consuming and error-prone.
@@ -33,7 +33,7 @@ When organizations attempt a full restore of Salesforce data to assess RTO and R
 
 These challenges can hinder the success of a comprehensive disaster recovery strategy. However, by following a few key best practices, organizations can mitigate these risks and run smooth recovery exercises.
 
-#### Best Practices for Salesforce Disaster Recovery <a href="#best-practices-for-salesforce-disaster-recovery" id="best-practices-for-salesforce-disaster-recovery"></a>
+### Best Practices for Salesforce Disaster Recovery <a href="#best-practices-for-salesforce-disaster-recovery" id="best-practices-for-salesforce-disaster-recovery"></a>
 
 1.  **Identify Critical Salesforce Objects**\
     Start by identifying the Salesforce objects that are critical to maintaining business operations. Not all data needs to be restored immediately in a disaster scenario. Work with internal teams to prioritize objects based on their business impact.
@@ -62,7 +62,7 @@ By adopting a strategic, phased approach to Salesforce restores and focusing on 
 
 AutoRABIT Vault, when paired with a thoughtful recovery strategy, can provide the confidence needed to handle Salesforce data recovery and ensure business continuity even during unexpected disruptions.
 
-### **Techniques and Best Practices for Effective Backup and Recovery**
+## **Techniques and Best Practices for Effective Backup and Recovery**
 
 1. **Identify Critical Data and Objects**: AutoRABIT works with customers to determine the critical objects and data essential for business continuity. Establish Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO) around these critical elements to ensure prioritized recovery in case of data loss. For example, a financial services company might prioritize backing up customer account data and transaction histories to ensure minimal disruption in case of data loss.
 2. **Using Trigger Handlers or Other Means to Disable Automation**: It is important to prevent automated jobs from executing when you are performing restore and replication jobs. While Vault has the ability to disable Triggers and Workflow rules, this is not an efficient way to disable automation since it requires a deployment to the org, which can require test execution, and will disable this automation for ALL users. By contrast, Trigger handlers allow this automation to be disabled only for the user performing the restore jobs. See [this article](https://knowledgebase.autorabit.com/product-guides/vault/vault-best-practices#restore-replicate-best-practices) for more information.
@@ -72,7 +72,7 @@ AutoRABIT Vault, when paired with a thoughtful recovery strategy, can provide th
 
 ## Best Practices for Salesforce Backup and Recovery Using Vault
 
-### General Guidelines on Salesforce Limitations
+### Salesforce Limitations
 
 Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail.
 
@@ -89,7 +89,7 @@ Salesforce has a limitation where files can only be added to Email Messages in t
    * All existing Email Messages with attachments in the destination Org must be deleted if they are already available in the destination without attachments.
    * Email Messages from the source Org or backup are then replicated to the destination Org.
 3. **File Attachment**
-   * During the replication process, while the Email Messages are in the draft state, any available files are attached to the Email Messages.  &#x20;
+   * During the replication process, while the Email Messages are in the draft state, any available files are attached to the Email Messages.
    * Email Messages are changed to the same state as in the backup or source Org, ensuring the data replication is completed successfully.
 
 This structured approach ensures files are properly attached to Email Messages during the data replication process between Orgs using AutoRABIT.
@@ -107,13 +107,44 @@ This structured approach ensures files are properly attached to Email Messages d
 9. Go through logs and results of backups every week to ensure that automated backups are happening as expected.
 10. Adjust frequency and scheduled time of backup configurations based on API call limit and API call consumption by other systems.
 11. A Salesforce user with which an org is registered on Vault should have admin-level permissions in the org. The recommendation is to create an admin user separately for Vault.
-12. For handling Blob objects (such as attachments and content versions), note that:
-    * These objects are typically backed up only once during the first full backup and linked to subsequent backups without requiring actual backup operations
-    * Each Blob object requires one API call per file in worst case and five files in best case
-    * Schedule the initial full backup over weekends to avoid business disruptions from API call spikes
-    * This spike in API calls is expected only for the first full backup of a new org in Vault
 
-### Configuration Best Practices
+## Blob Data Backup Best Practices
+
+AutoRABIT Vault provides a reliable backup solution for Blob data (Files and Attachments) in Salesforce. Customers may observe a spike in API call consumption during the initial full backup of blob objects. To optimize backup efficiency and minimize business disruptions, follow these best practices:
+
+#### 1. Understanding Blob Data Backup <a href="#id-1.-understanding-blob-data-backup" id="id-1.-understanding-blob-data-backup"></a>
+
+* Blob objects (Attachments and Content Versions) are typically backed up only once during the first full backup.
+* Subsequent backups will reference these objects without requiring additional API calls.
+* A spike in API call consumption is expected when performing a full backup for a newly added Salesforce org, but this occurs only once.
+
+#### 2. API Call Consumption <a href="#id-2.-api-call-consumption" id="id-2.-api-call-consumption"></a>
+
+* Blob objects consume API calls as follows:
+  * **Worst Case:** One API call per file.
+  * **Best Case:** One API call for every five files.
+* The total API call usage depends on the number of blob files being backed up for the first time.
+
+#### 3. Optimizing Backup Strategy <a href="#id-3.-optimizing-backup-strategy" id="id-3.-optimizing-backup-strategy"></a>
+
+* Since blob data is backed up only once in the first full backup, subsequent backups will not cause a similar spike in API calls.
+* Plan for the initial backup to handle the expected API load efficiently.
+
+#### 4. Scheduling the Initial Full Backup <a href="#id-4.-scheduling-the-initial-full-backup" id="id-4.-scheduling-the-initial-full-backup"></a>
+
+* **Recommended Timing:** Run the first full backup over the weekend or during non-peak business hours.
+* This approach helps avoid potential business disruptions due to increased API call consumption.
+* Monitor API call usage to ensure Salesforce API limits are not exceeded.
+
+#### 5. Monitoring and Adjustments <a href="#id-5.-monitoring-and-adjustments" id="id-5.-monitoring-and-adjustments"></a>
+
+* Regularly review API consumption trends during and after the initial backup.
+* Ensure that backup schedules align with Salesforce API limits to prevent disruptions.
+* Consider breaking down large backups into smaller batches if necessary.
+
+By following these best practices, organizations can efficiently back up blob data while optimizing API call usage and minimizing the impact on business operations.
+
+## Configuration Best Practices
 
 In this segment, we will go over some important points to note while configuring in Vault.
 
@@ -123,7 +154,7 @@ In this segment, we will go over some important points to note while configuring
 4. **Number of Configurations:** AutoRABIT Vault allows you to create a maximum of 20 configurations, including both backup and archival configurations.
 5. **Increasing Configuration Count:** If you require more than the default count of 20 configurations, you have the option to contact AutoRABIT. They can assist you in increasing the configuration count to accommodate your specific requirements.
 
-### Restore/ Replicate Best Practices
+## Restore/ Replicate Best Practices
 
 1. Active validation rules, triggers, process builder, and workflow may lead to restore/replicate failures of certain data or metadata. Make sure to disable these before performing restore/replicate operations.
 2. We strongly urge everyone to implement frameworks such as Trigger Handlers that allow you to disable automation (Triggers, Flows, Workflow Rules, etc.) for certain users or at certain times. Salesforce offers brief [guidance on this on Trailhead](https://trailhead.salesforce.com/content/learn/modules/success-cloud-coding-conventions/implement-frameworks-sc), and there are multiple Trigger Handler patterns available such as the [Apex Trigger Actions Framework](https://github.com/mitchspano/apex-trigger-actions-framework). Data restore jobs generally do not need to re-process that business automation. By bypassing this automation you can reduce time to write data to Salesforce by 10x or more.
@@ -131,9 +162,7 @@ In this segment, we will go over some important points to note while configuring
 4. Define batch size based on the size of metadata or data you want to perform jobs on.
 5. Make sure record owners are active on Salesforce, as Restore/Replicate will fail for inactive owners. If activating owners is not an option, you can enable [‘Set Audit](https://help.salesforce.com/articleView?id=000227663\&type=1) [Fields and Update Records with Inactive Owners’](https://help.salesforce.com/articleView?id=000227663\&type=1) on Salesforce.
 
-
-
-### Archival Best Practices
+## Archival Best Practices
 
 * Archiving parent objects will result in the deletion of all the child objects related through mandatory lookups and master-detail relationships recursively as it is an expected behavior of Salesforce. For the children related through a lookup (which is not mandatory), the reference to the parent will be removed from the child object before performing deletion of the parent.
 * Ensure that only one object is chosen for archival at a time in an org to avoid issues with row locks and interdependencies during the deletion of the records from Salesforce.
@@ -143,7 +172,7 @@ In this segment, we will go over some important points to note while configuring
 * Run the archival job in serial mode to avoid errors like row locks or any other issues arising out of parallel processing in Salesforce. This is recommended only if you experience errors due to parallel mode as running the job in serial mode will impact the time it takes to execute the job.
 * Ensure that options to disable workflows, validation rules, and triggers are enabled during the initiation of the archive job to ensure the deletion of records won’t result in reaching Salesforce processing limitations and allocations.
 
-### Unsupported Components with Metadata API
+## Unsupported Components with Metadata API
 
 The following components cannot be retrieved or deployed with Metadata API, and changes to them must be made manually in each of your organizations:
 
@@ -187,9 +216,7 @@ The following components cannot be retrieved or deployed with Metadata API, and 
 * Web Links on Person Account Page Layouts
 * Web-to-Lead
 
-Reference: [https://developer.salesforce.com/docs/atlas.en-](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#:\~:text=Some%20things%20yo](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [u%20can%20customize,Account%20Teams](https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#%3A\~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams)
-
-
+Reference: [https://developer.salesforce.com/docs/atlas.en-](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm#%3A~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [us.api\_meta.meta/api\_meta/meta\_unsupported\_types.htm#:\~:text=Some%20things%20yo](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm#%3A~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams) [u%20can%20customize,Account%20Teams](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_unsupported_types.htm#%3A~%3Atext%3DSome%20things%20you%20can%20customize%2CAccount%20Teams)
 
 ### Managed Package Limitations
 

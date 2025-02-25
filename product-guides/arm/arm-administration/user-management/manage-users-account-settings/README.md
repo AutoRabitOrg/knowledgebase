@@ -159,7 +159,7 @@ Select the **`Enable criteria based Review Process`** checkbox to enable the mer
 
 #### 10. Salesforce Settings <a href="#id-10-salesforce-settings" id="id-10-salesforce-settings"></a>
 
-ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **62.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 62 or earlier. The newly supported Salesforce objects for each API version can be found [here](../salesforce-api-version.md).
+ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **63.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 63. The newly supported Salesforce objects for each API version can be found [here](../salesforce-api-version.md).
 
 Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.\
 

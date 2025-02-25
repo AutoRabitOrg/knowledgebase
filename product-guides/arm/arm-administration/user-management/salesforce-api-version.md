@@ -1,10 +1,6 @@
 # Salesforce API version
 
-ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API version 61**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 61 or earlier.
-
-{% hint style="info" %}
-**Important Note:** Only users on an ARM shared instance will see the changes since the Salesforce API version is being updated to **61** as part of weekly hotfixes to shared instances only.
-{% endhint %}
+ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API version 63**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 63.
 
 **Troubleshooting:**
 
@@ -12,8 +8,8 @@ Ensure your Salesforce API version in ARM matches the API version of the Salesfo
 
 Use case:
 
-* **API version set in ARM: 61.0**
-* **Salesforce Org API version: 61.0**
+* **API version set in ARM: 63.0**
+* **Salesforce Org API version: 63.0**
 
 To identify which Salesforce API version you are using, please refer to [Find Salesforce Edition and API version](https://help.salesforce.com/s/articleView?id=000334996\&type=1).
 
@@ -94,7 +90,7 @@ Below is a list of the Metadata types supported, which were added as part of **A
 
 **API 55.0 newly Supported Metadata Types**
 
-The newly supported metadata types are available on the Salesforce website, link: [https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages\_intro\_whats\_new.htm](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages\_intro\_whats\_new.htm)
+The newly supported metadata types are available on the Salesforce website, link: [https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages\_intro\_whats\_new.htm](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_intro_whats_new.htm)
 
 Troubleshooting:Below is the list of the metadata types in the _API 55.0 version_ that are not picked up during deployment or CI job operation:
 
@@ -112,7 +108,7 @@ Troubleshooting:Below is the list of the metadata types in the _API 55.0 version
 
 **API 53.0 Supported Metadata Types**
 
-Please refer [here](https://help.salesforce.com/s/articleView?id=release-notes.rn\_api\_objects.htm\&type=5\&release=234) to find the list of supported Salesforce objects supported on Salesforce API 53.0 version.
+Please refer [here](https://help.salesforce.com/s/articleView?id=release-notes.rn_api_objects.htm\&type=5\&release=234) to find the list of supported Salesforce objects supported on Salesforce API 53.0 version.
 
 **API 52.0 newly Supported Metadata Types**
 
@@ -140,4 +136,4 @@ Below is the list of **API 49.0** metadata types supported for both **Salesforce
 
 <figure><img src="../../../../.gitbook/assets/image (638).png" alt=""><figcaption></figcaption></figure>
 
-For versions **48.0 and earlier**, please refer [here](https://developer.salesforce.com/docs/atlas.en-us.object\_reference.meta/object\_reference/sforce\_api\_objects\_list.htm) to find the list of Salesforce objects and their supported API versions.
+For versions **48.0 and earlier**, please refer [here](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm) to find the list of Salesforce objects and their supported API versions.

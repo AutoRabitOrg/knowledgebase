@@ -1,4 +1,4 @@
-# 💻 AutoRABIT Support
+# 🖥️ AutoRABIT Support
 
 ## **Ways to get in touch with us:**
 

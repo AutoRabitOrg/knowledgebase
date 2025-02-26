@@ -70,6 +70,7 @@
     * [Release Notes 23.0](overview/release-notes/vault-release-notes/vault-release-notes-23.0.md)
     * [Release Notes 22.0](overview/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Release Notes 21.0](overview/release-notes/vault-release-notes/vault-release-notes-21.0.md)
+  * [AR Gov Cloud Release Notes](overview/release-notes/ar-gov-cloud-release-notes.md)
   * [FlowCenter Release Notes](overview/release-notes/flow-center-release-notes/README.md)
     * [Release Notes 24.0](overview/release-notes/flow-center-release-notes/release-notes-24.0.md)
     * [FlowCenter Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)

@@ -1,4 +1,4 @@
-# Mandatory Child Archival
+# Parent-Child Record Archival
 
 ### **Overview** <a href="#id-1.-overview" id="id-1.-overview"></a>
 

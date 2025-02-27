@@ -1,6 +1,6 @@
-# CodeScan GovCloud Release Notes
+# CodeScan Release Notes (GovCloud)
 
-CodeScan Changelog for Release GOV 25.0.2&#x20;
+**CodeScan Changelog for Release GOV 25.0.2**&#x20;
 
 February 2025&#x20;
 

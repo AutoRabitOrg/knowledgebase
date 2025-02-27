@@ -72,7 +72,7 @@
     * [Release Notes 21.0](overview/release-notes/vault-release-notes/vault-release-notes-21.0.md)
   * [AR GovCloud Documentation](overview/release-notes/ar-govcloud-documentation/README.md)
     * [AR GovCloud Release Notes](overview/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/README.md)
-      * [CodeScan GovCloud Release Notes](overview/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/codescan-govcloud-release-notes.md)
+      * [CodeScan Release Notes (GovCloud)](overview/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/codescan-release-notes-govcloud.md)
   * [FlowCenter Release Notes](overview/release-notes/flow-center-release-notes/README.md)
     * [Release Notes 24.0](overview/release-notes/flow-center-release-notes/release-notes-24.0.md)
     * [FlowCenter Insights](https://knowledgebase.autorabit.com/product-guides/flow-center/flow-center-insights)

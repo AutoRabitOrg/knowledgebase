@@ -1,10 +1,10 @@
 # PCI DSS
 
-### What is PCI compliance?&#x20;
+### PCI Compliance&#x20;
 
 **Payment Card Industry (PCI) Data Security Standards (DSS)** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of cardholder data is kept private, safe, and secure.
 
-### How does Vault ensure PCI compliance?
+### How Vault Ensures PCI Compliance
 
 1. Ensure firewalls protect data
 2. Protect password security, e.g., multifactor authentication (MFA)
@@ -19,9 +19,9 @@
 11. Runs tests on security systems regularly
 12. Implement documented policies to follow
 
-### Is Vault PCI compliant?
+### Vault Is PCI Compliant
 
-Yes, AutoRABIT Vault is fully compliant with PCI DSS. By adhering to the rigorous standards set forth by the Payment Card Industry Security Standards Council, Vault ensures the secure handling, storage, and transmission of payment card data.
+AutoRABIT Vault is fully compliant with PCI DSS. By adhering to the rigorous standards set forth by the Payment Card Industry Security Standards Council, Vault ensures the secure handling, storage, and transmission of payment card data.
 
 Vault’s compliance with PCI DSS includes implementing robust security measures, such as:
 

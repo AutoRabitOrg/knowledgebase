@@ -20,7 +20,7 @@ Implemented robust measures to prevent XSS risks, including validation of untrus
 
 **Improved Remote Site Settings Updates**
 
-URL updates now run seamlessly in the destination org, regardless of sorting preferences. A new mechanism ensures tests proceed smoothly, even if individual cases fail. _Impacted Modules: Environment Provisioning. Support Case: #123971._
+URL updates now run seamlessly in the destination org. A new mechanism ensures tests proceed smoothly, even if individual cases fail. _Impacted Modules: Environment Provisioning. Support Case: #123971._
 
 **Consistent Merge Validation**
 

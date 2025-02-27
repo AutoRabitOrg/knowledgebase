@@ -5,23 +5,22 @@
 
 
     <figure><img src="../../../../.gitbook/assets/image (1624).png" alt=""><figcaption><p>Records</p></figcaption></figure>
-3.  Look for your Salesforce Org from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
+3.  Locate the Salesforce Org for which the data has to be archived. You can use the **Search** filter to easily find the required Salesforce Org.
 
     <figure><img src="../../../../.gitbook/assets/image (1610).png" alt=""><figcaption><p>Search for Salesforce Org</p></figcaption></figure>
 4. Navigate to the **Configs** tab.
-5.  Click on **Add Archive Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy
+5.  Click on **Add Archive Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy.
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
 6.  Select the components that you need to archive on the next screen.
 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
-7.  Using **Filters** you can define the criteria on which the records will get fetched.\
-    For example, if you can define criteria to fetch **AccountBrand** records that are older than _1,000 days_ and _field Id_ is not empty.\
+7.  Using **Filters,** you can define the criteria for which the records will get fetched. For example, you can define criteria to fetch **AccountBrand** records that are older than _1,000 days_ and _field Id_ is not empty.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
 
-Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. For easy identification of objects on which filter is applied, the filter icon is highlighted.
+Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. To easily identify the objects for which the filter is applied, the filter icon is highlighted.
 
 <figure><img src="../../../../.gitbook/assets/image (232).png" alt="" width="563"><figcaption><p>Filter</p></figcaption></figure>
 
@@ -31,7 +30,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
     <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Hierarchy</p></figcaption></figure>
 
-    You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object which will be deleted for sure if its parent object is selected for archive policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archive.
+    You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object, which will be deleted if the parent object is selected for archival per policy. However, for other objects that are related to the selected object in some other way, you may have the option to choose them manually for archival. Visit the Mandatory Child Archival page for more information.
 
     <figure><img src="../../../../.gitbook/assets/image (1612).png" alt=""><figcaption><p>Schema</p></figcaption></figure>
 

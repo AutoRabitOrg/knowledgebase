@@ -1,4 +1,4 @@
-# Deployment-FAQs
+# Deployment
 
 #### If you are getting the following errors during the deployment in ARM, refer to the corresponding Salesforce article to resolve the issue: <a href="#if-you-are-getting-the-below-errors-during-the-deployment-in-arm-follow-the-respective-salesforce-ar" id="if-you-are-getting-the-below-errors-during-the-deployment-in-arm-follow-the-respective-salesforce-ar"></a>
 
@@ -8,9 +8,9 @@
 
 ### Is it possible to transfer Analytics Dataset Metadata, Dashboards, and Dataflows from one Salesforce Org to another using AutoRABIT? <a href="#is-it-possible-to-transfer-analytics-dataset-metadata-dashboards-and-dataflows-from-one-salesforce-o" id="is-it-possible-to-transfer-analytics-dataset-metadata-dashboards-and-dataflows-from-one-salesforce-o"></a>
 
-Yes, AutoRABIT can move Analytics Components Metadata, Dashboards, and Dataflows from one Salesforce Org to another Org and these data will be available under the **Wave Components** list.
+Yes, AutoRABIT can move Analytics Components Metadata, Dashboards, and Dataflows from one Salesforce Org to another Org and the data will be available under the **Wave Components** list.
 
-When you want to deploy the Analytics data, make sure you have enabled **Tableau CRM** in your Source Org and should have assigned permissions to your user record page through the permission set.
+When you want to deploy the Analytics data, make sure you have enabled **Tableau CRM** in your Source Org and assigned permissions to your user record page through the permission set.
 
 To enable the Tableau CRM in your Salesforce Org, follow these steps:
 

@@ -1,5 +1,15 @@
 # Vault-FAQs
 
+## Archival
+
+### Are email messages mandatory child records for objects they have a direct relationship with?
+
+Yes, email messages are mandatory child records for those objects with which the email messages have a direct relationship through the fields 'RelatedTold' and 'ParentId'. Refer to the [Email Messages Relationships](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#email-messages-relationships) section for a full list of objects with which email messages have a direct relationship.&#x20;
+
+### How are backup and archival handled for objects with both parent and child references?
+
+If an object has a reference from another object as both parent and a child record, then the parent will only be considered for a backup but not for archival. The child record will only be considered for archival.&#x20;
+
 ## PCI Compliance
 
 ### Does Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?

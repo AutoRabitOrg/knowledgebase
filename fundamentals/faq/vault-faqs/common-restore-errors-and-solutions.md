@@ -6,12 +6,14 @@
 
 AutoRABIT Vault considers a child record mandatory for archival if it meets any of the following criteria:
 
-* It is related to the parent via a **Master-Detail Relationship**.
-* It is linked through a **Lookup Relationship** that is marked as required.
-* It is configured for **Cascade Delete**, meaning it is deleted when the parent is deleted.
-* The **parent record cannot be deleted** unless the child is removed, necessitating their joint archival.
+* It is related to the parent via a [**Master-Detail Relationship**](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#q2-how-does-a-master-detail-relationship-affect-archival).
+* It is linked through a [**Lookup Relationship**](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#q3-what-happens-in-a-lookup-relationship-where-the-field-is-required) that is marked as required.
+* It is configured for [**Cascade Delete**](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#q4-what-is-cascade-delete-and-how-does-it-impact-archival), meaning it is deleted when the parent is deleted.
+* The [**parent record cannot be deleted**](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#q5-what-does-it-mean-when-a-parent-record-is-restricted-from-deletion-due-to-a-child-record) unless the child is removed, necessitating their joint archival.
 
-More information, visit the page on [Parent-Child Archival](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival).
+A Lookup Relationship can also be [configured like](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#q7-can-a-lookup-relationship-be-configured-to-act-like-a-master-detail-relationship) a Master-Detail Relationship.&#x20;
+
+For more information, visit the page on [Parent-Child Archival](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival).
 
 ### Are email messages mandatory child records for objects they have a direct relationship with?
 

@@ -2,6 +2,17 @@
 
 ## Archival
 
+### What determines whether a child record is mandatory for archival?
+
+AutoRABIT Vault considers a child record mandatory for archival if it meets any of the following criteria:
+
+* It is related to the parent via a **Master-Detail Relationship**.
+* It is linked through a **Lookup Relationship** that is marked as required.
+* It is configured for **Cascade Delete**, meaning it is deleted when the parent is deleted.
+* The **parent record cannot be deleted** unless the child is removed, necessitating their joint archival.
+
+More information, visit the page on [Parent-Child Archival](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival).
+
 ### Are email messages mandatory child records for objects they have a direct relationship with?
 
 Yes, email messages are mandatory child records for those objects with which the email messages have a direct relationship through the fields 'RelatedTold' and 'ParentId'. Refer to the [Email Messages Relationships](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/archive/parent-child-record-archival#email-messages-relationships) section for a full list of objects with which email messages have a direct relationship.&#x20;

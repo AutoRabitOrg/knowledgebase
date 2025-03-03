@@ -64,7 +64,10 @@ By adding the following lines to the script, you can generate a comma-separated 
 
 `git fetch origin ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} --quiet`&#x20;
 
-`CHANGED_FILES=$(git diff --name-only origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} HEAD | tr '\n' ',' | sed 's/,$//') echo "CHANGED_FILES=$CHANGED_FILES"`
+`CHANGED_FILES=$(git diff --name-only`\
+`origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} HEAD | tr '\n' ',' | sed 's/,$//')` \
+\
+`echo "CHANGED_FILES=$CHANGED_FILES"`
 
 Then, the **$CHANGED\_FILES** variable can be passed to the merge request scan command. Like this:
 

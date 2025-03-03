@@ -47,9 +47,29 @@ The pull request details are being set by the following parameters:
 * **`sonar.pullrequest.key:`** The pull request _key_ or _number_ or _id_.
 
 {% hint style="info" %}
-**Note:** The above is a great way to get started scanning with this plugin, however this script will install the [CodeScan plugin](https://www.codescan.io/products/editor-plugins/) with each run. A better implementation would include this installation in the docker image used.
+**Note:** The above is a great way to get started scanning with this plugin; however, this script will install the [CodeScan plugin](https://www.codescan.io/products/editor-plugins/) with each run. A better implementation would include this installation in the docker image used.
 {% endhint %}
 
 > By default, the **CodeScan SFDX plugin** will fail if the Quality Gate fails. If you would prefer that the build passes despite the quality gate, use the **`--nofail`** tag when calling **`sfdx codescan:run`**.
 
 You can find a complete list of flags and examples on our [npm plugin page](https://www.npmjs.com/package/sfdx-codescan-plugin).
+
+### Scanning Only Pull Request Changes
+
+The script above scans the full branch of the Merge request that triggers the pipeline.
+
+If you want to narrow down results to scanning only files that were changed in this Merge request, there are a couple of additional steps to take.
+
+By adding the following lines to the script, you can generate a comma-separated string of changed files in the Merge request:
+
+`git fetch origin ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} --quiet`&#x20;
+
+`CHANGED_FILES=$(git diff --name-only origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} HEAD | tr '\n' ',' | sed 's/,$//') echo "CHANGED_FILES=$CHANGED_FILES"`
+
+Then, the **$CHANGED\_FILES** variable can be passed to the merge request scan command. Like this:
+
+**-Dsonar.inclusions=$CHANGED\_FILES**
+
+{% hint style="info" %}
+**Note:** The Merge request scan is the one using the **sonar.pullrequest parameters.**
+{% endhint %}

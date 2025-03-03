@@ -1,5 +1,14 @@
 # Release Notes 24.0
 
+## Vault 24.2.8 Release Notes
+
+**Release Date: 5 March 2025**
+
+* **Inline Images in Rich Text Fields**: Resolved an issue preventing the display of inline images in Rich Text fields through Vault Connect.
+* **Processing of Common Child Objects**: Improved the handling of common child objects (e.g., Task, Event) during restore/replicate operations to eliminate redundant actions.
+* **Disabling Salesforce Automation Rules**: Resolved an issue where restore/replicate jobs did not properly disable Salesforce automation rules (e.g., Validations, Workflows, Flows, Triggers) for common child objects such as Task, Event, Attachment, and ContentVersion.
+* **User ID Mapping in Owner ID Field**: Resolved an issue with user ID mapping in the Owner ID field when the original user no longer exists in the sandbox after a refresh.
+
 ## Vault 24.2.7 Release Notes
 
 **Release Date: 12 February 2025**

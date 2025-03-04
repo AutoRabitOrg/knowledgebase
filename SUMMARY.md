@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome to Knowledge Base](README.md)
+* [👋 Welcome to the Knowledge Base](README.md)
 
 ## Overview
 

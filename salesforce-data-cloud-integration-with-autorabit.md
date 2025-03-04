@@ -19,7 +19,7 @@ AutoRABIT supports deployment of the following Data Cloud metadata types through
 
 <table><thead><tr><th width="220">Category</th><th>Supported Types</th></tr></thead><tbody><tr><td>Activation </td><td>ActivationPlatform, ActivationPlatformField, ActvPfrmDataConnectorS3, ActvPlatformAdncIdentifier, ActvPlatformFieldValue </td></tr><tr><td>Data Connectors </td><td>DataConnectorIngestApi, DataConnectorS3, ExternalDataConnector </td></tr><tr><td>Data Sources </td><td>DataSource, DataSourceField, DataSourceObject, DataSourceBundleDefinition </td></tr><tr><td>Data Streams </td><td>DataStreamDefinition, DataStreamTemplate </td></tr><tr><td>Mapping &#x26; Relations </td><td>DataSrcDataModelFieldMap, FieldSrcTrgtRelationship, ObjectSourceTargetMap </td></tr><tr><td>External Data </td><td>ExternalDataSource, ExternalDataTranObject </td></tr><tr><td>Marketing </td><td>MktCalcInsightObjectDef, MktDataTranObject </td></tr><tr><td>Other </td><td>SharingAppDefinition, DataPackageKitObject </td></tr></tbody></table>
 
-### Currently Unsupported Types&#x20;
+#### Currently Unsupported Types&#x20;
 
 * MarketSegmentDefinition&#x20;
 * DataPackageKitDefinition&#x20;

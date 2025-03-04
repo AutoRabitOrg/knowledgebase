@@ -17,15 +17,15 @@ First, we'll need to add your CodeScan token as a variable we can access in our 
 3. You'll be now be able to access this variable by using **$CODESCAN\_TOKEN** in your **.YML file**.
 4. Add the following into your **.YML file**:
 
-<pre data-overflow="wrap" data-full-width="true"><code>image: salesforce/salesforcedx:latest-full
-
+<pre data-overflow="wrap" data-full-width="true"><code><strong>image: salesforce/salesforcedx:latest-full
+</strong>
 CodeScan:
   rules:
 - if: $CI_COMMIT_REF_NAME =~ /^[&#x3C;branch>]/ &#x26;&#x26; $CI_PIPELINE_SOURCE =~ /^[push|schedule]/
   variables:
     CODESCAN_CMD: "sfdx codescan:run --token=$CODESCAN_TOKEN --server=&#x3C;server_url> --projectkey=&#x3C;project>--organization=&#x3C;organization> -Dsonar.branch.name=$CI_COMMIT_REF_NAME"
-- if: $CI_PIPELINE_SOURCE == "merge_request_event" &#x26;&#x26; $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^[&#x3C;branch>]/
-  variables:
+<strong>- if: $CI_PIPELINE_SOURCE == "merge_request_event" &#x26;&#x26; $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^[&#x3C;branch>]/
+</strong>  variables:
     CODESCAN_CMD: "sfdx codescan:run --token=$CODESCAN_TOKEN --server=&#x3C;server_url> --projectkey=&#x3C;project> --organization=&#x3C;organization> -Dsonar.pullrequest.branch=$CI_COMMIT_REF_NAME -Dsonar.pullrequest.base=$CI_MERGE_REQUEST_TARGET_BRANCH_NAME -Dsonar.pullrequest.key=$CI_MERGE_REQUEST_IID"
   script:
 - echo y|sfdx plugins:install sfdx-codescan-plugin
@@ -62,12 +62,15 @@ If you want to narrow down results to scanning only files that were changed in t
 
 By adding the following lines to the script, you can generate a comma-separated string of changed files in the Merge request:
 
-`git fetch origin ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} --quiet`&#x20;
+{% code overflow="wrap" %}
+```
+git fetch origin ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} --quiet
 
-`CHANGED_FILES=$(git diff --name-only`\
-`origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} HEAD | tr '\n' ',' | sed 's/,$//')` \
-\
-`echo "CHANGED_FILES=$CHANGED_FILES"`
+CHANGED_FILES=$(git diff --name-only origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-$CI_DEFAULT_BRANCH} HEAD | tr '\n' ',' | sed 's/,$//')
+
+echo "CHANGED_FILES=$CHANGED_FILES"
+```
+{% endcode %}
 
 Then, the **$CHANGED\_FILES** variable can be passed to the merge request scan command. Like this:
 

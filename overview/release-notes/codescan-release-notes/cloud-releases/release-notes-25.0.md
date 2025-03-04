@@ -6,6 +6,72 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
+## Release Notes 25.0.3
+
+**Release Date: 5 March 2025**
+
+### Summary
+
+CodeScan 25.0.3 is comprised of the following 1 component:
+
+* [1 Enhancement](release-notes-25.0.md#enhancements)
+
+Component details are listed in their corresponding sections within this document.
+
+### Enhancements
+
+1.  Enhanced rule “Use System.runAs to test user permissions” to ensure that a violation should not be thrown if the variable used is within the class scope. \
+    \
+    Historically, the CodeScan rule “Use System.runAs to test user permissions” checks for the presence of System.runAs in the test methods and that a local User variable is passed.\
+    \
+    This enhancement provides an alternative for the rule by adding a parameter to ignore checks for the variable passed to the RunAs method. \
+    \
+    The implantation of this enhancement is via a parameter which defines an execution:
+
+    * \*Parameter name\*: checkRunAsOnly
+    * \*Parameter desc\*: When true, this parameter tests only if RunAs is used in the method, not the arguments passed to it.\
+
+
+    Note that the parameter default is false.
+
+We have verified that users are now able to see the violation for the following scenarios.
+
+`@IsTest`
+
+`public void noRunAs(){`
+
+&#x20; `// No RunAs will always violate`
+
+`}`
+
+`@IsTest`
+
+`public void standardRunAs(){`
+
+&#x20; `User newUser = new User();`
+
+&#x20; `System.runAs(newUser){`
+
+&#x20;   `// RunAs User will never violate`
+
+&#x20; `}`
+
+`}`
+
+&#x20;
+
+`@IsTest`
+
+`public void otherRunAs(){`
+
+&#x20; `System.runAs(userFactory.createTestUser()){`
+
+&#x20; `// RunAs given a method will violate when checkRunAsOnly parameter is false`
+
+&#x20; `}`
+
+`}`&#x20;
+
 ## Release Notes 25.0.2&#x20;
 
 **Release Date: 5 February 2025**&#x20;

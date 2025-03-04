@@ -738,6 +738,10 @@
     * [Invite your CSM to FlowCenter Insights](product-guides/flow-center/flowcenter-insights/invite-your-csm-to-flowcenter-insights.md)
 * [Guard](product-guides/guard.md)
 
+***
+
+* [Salesforce Data Cloud Integration with AutoRABIT](salesforce-data-cloud-integration-with-autorabit.md)
+
 ## Use Cases + Resources
 
 * [👩‍💻 For Developers](use-cases-+-resources/for-developers.md)

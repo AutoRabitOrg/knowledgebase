@@ -16,6 +16,20 @@ CodeScan is based on SonarQube™, an open-source reporting platform for coding 
 
 To learn more about background tasks, please see the [SonarQube Documentation - Background Tasks](https://docs.sonarqube.org/latest/analysis/background-tasks/).
 
+### Why am I getting the following error: 'Error during SonarScanner execution.'
+
+Why is my Commit and Merge failing with the following SonarScanner error but still allowing submission: '**Language of file force-app/main/default/permissionsets/abc\_filename.permissionset-metaxml**' cannot be decided as the file matches patterns of both sonar.lang.patterns.mule: \*\*/\*abcd,\*\*/\*xml and sonar.lanq.patterns.sfmeta: \*\*/\*profile-meta.xml.\*\*/\*permissionset-meta.xml.\*\*/\*settings-meta.xml.\*\*/\*abject-metaxml.z\*/\*field-meta.xmll\*s/\*flow-meta.xml.\*\*/\*sharingrules-meta.xml.\*\*/\*workflow-meta.xml\*\*/\*profilesessionsetting-meta.xml \*\*/\*profilepasswordpolicy-meta.xml.\*\*/\*.profile，\*\*/\*.permissionset，\*\*/\*.settings.\*\*/\*.object.\*\*/\*.flow，\*\*/\*.sharingrules，\*\*/\*workflow\*\*/\*.profilesessionsetting，\*\*/\*.profilepasswordpolicy'?
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FgBRBEhfLgCocTQGUbyJT%252Fimage.png%3Falt%3Dmedia%26token%3D43e5fbe8-4e8d-4201-a4ea-a43a944d77c6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=394d5661&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+**Environment configuration checklist**
+
+Configure the Mule setting (Key: sonar.mule.file.suffixes) with values ".abcd" and ".xml," which are causing errors. Navigate to the project where this error occurs in CodeScan. Go to **Project Settings > General Settings**, and search for "mule" in the search box. Remove ".xml".
+
+<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FuE01vFHzeO7wnUDt0FF2%252Fimage.png%3Falt%3Dmedia%26token%3Df91eb0c2-fa66-448b-92f8-f5eb97908453&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e9105416&#x26;sv=2" alt=""><figcaption></figcaption></figure>
+
+By adjusting these settings in CodeScan, the SCA will not fail.
+
 ### Why am I getting an 'Expired Token' error on my project analysis?
 
 Errors such as **Expired Token** on your **Project Analysis** page can sometimes be fixed by resetting the link to your code repository. CodeScan Cloud allows you to do this _without erasing_ the historical data present in your project.
@@ -94,18 +108,6 @@ To do this follow the below steps:
 4. Click **Manage App Policies** and then **Edit Policies**.
 5. Under **IP Relaxation** select **Relax IP Restrictions**.
 6. Rerun the scan.
-
-### Why is my Commit and Merge failing with the following SonarScanner error but still allowing submission: 'Language of file force-app/main/default/permissionsets/abc\_filename.permissionset-metaxml' can not be decided as the file matches patterns of both sonar.lang.patterns.mule: \*\*/\*abcd,\*\*/\*xml and sonar.lanq.patterns.sfmeta: \*\*/\*profile-meta.xml.\*\*/\*permissionset-meta.xml.\*\*/\*settings-meta.xml.\*\*/\*abject-metaxml.z\*/\*field-meta.xmll\*s/\*fiow-meta.xml.\*\*/\*sharingrules-meta.xml.\*\*/\*workflow-meta.xml\*\*/\*profilesessionsetting-meta.xml \*\*/\*profilepasswordpolicy-meta.xml.\*\*/\*.profile，\*\*/\*.permissionset，\*\*/\*.settings.\*\*/\*.object.\*\*/\*.flow，\*\*/\*.sharingrules，\*\*/\*warkflow\*\*/\*.profilesessionsetting，\*\*/\*.profilepassvordpolicy'?
-
-<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FgBRBEhfLgCocTQGUbyJT%252Fimage.png%3Falt%3Dmedia%26token%3D43e5fbe8-4e8d-4201-a4ea-a43a944d77c6&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=394d5661&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-**Environment configuration checklist**
-
-Configure the Mule setting (Key: sonar.mule.file.suffixes) with values ".abcd" and ".xml," which are causing errors. Navigate to the project where this error occurs in CodeScan. Go to **Project Settings > General Settings**, and search for "mule" in the search box. Remove ".xml".
-
-<figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FuE01vFHzeO7wnUDt0FF2%252Fimage.png%3Falt%3Dmedia%26token%3Df91eb0c2-fa66-448b-92f8-f5eb97908453&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e9105416&#x26;sv=2" alt=""><figcaption></figcaption></figure>
-
-By adjusting these settings in CodeScan, the SCA will not fail.
 
 ### Why am I getting a 'Packfile is truncated' error?
 

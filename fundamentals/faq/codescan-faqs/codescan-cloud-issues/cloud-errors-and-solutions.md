@@ -16,7 +16,7 @@ CodeScan is based on SonarQube™, an open-source reporting platform for coding 
 
 To learn more about background tasks, please see the [SonarQube Documentation - Background Tasks](https://docs.sonarqube.org/latest/analysis/background-tasks/).
 
-### Why am I getting the following error: 'Error during SonarScanner execution.'
+### Why am I getting the following error: 'Error during SonarScanner execution'?
 
 Why is my Commit and Merge failing with the following SonarScanner error but still allowing submission: '**Language of file force-app/main/default/permissionsets/abc\_filename.permissionset-metaxml**' cannot be decided as the file matches patterns of both sonar.lang.patterns.mule: \*\*/\*abcd,\*\*/\*xml and sonar.lanq.patterns.sfmeta: \*\*/\*profile-meta.xml.\*\*/\*permissionset-meta.xml.\*\*/\*settings-meta.xml.\*\*/\*object-metaxml.z\*/\*field-meta.xmll\*s/\*flow-meta.xml.\*\*/\*sharingrules-meta.xml.\*\*/\*workflow-meta.xml\*\*/\*profilesessionsetting-meta.xml \*\*/\*profilepasswordpolicy-meta.xml.\*\*/\*.profile，\*\*/\*.permissionset，\*\*/\*.settings.\*\*/\*.object.\*\*/\*.flow，\*\*/\*.sharingrules，\*\*/\*workflow\*\*/\*.profilesessionsetting，\*\*/\*.profilepasswordpolicy'?
 

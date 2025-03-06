@@ -737,7 +737,11 @@
     * [Support for DORA Metrics](product-guides/flow-center/flowcenter-insights/support-for-dora-metrics.md)
     * [Export your Insights data](product-guides/flow-center/flowcenter-insights/export-your-insights-data.md)
     * [Invite your CSM to FlowCenter Insights](product-guides/flow-center/flowcenter-insights/invite-your-csm-to-flowcenter-insights.md)
-* [Guard](product-guides/guard.md)
+* [Guard](product-guides/guard/README.md)
+  * [Risk Assessment](product-guides/guard/risk-assessment.md)
+  * [Permissions Explorer](product-guides/guard/permissions-explorer.md)
+  * [Change Monitoring](product-guides/guard/change-monitoring.md)
+  * [Policies](product-guides/guard/policies.md)
 
 ***
 

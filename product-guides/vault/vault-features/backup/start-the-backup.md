@@ -2,15 +2,15 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Vault for Salesforce data security automatically performs backups for two kinds of structures:&#x20;
+Vault for Salesforce data security automatically performs backups for two kinds of structures:
 
-* **Data:** Backup data in Salesforce is for records such as accounts, opportunities, contracts, leads, and cases. It also backs up Chatter, files, custom object records, and content.&#x20;
-* **Metadata:** Salesforce metadata backup refers to custom code like Apex and Visualforce and configuration settings like dashboards, reports, page layouts, and custom fields.&#x20;
+* **Data:** Backup data in Salesforce is for records such as accounts, opportunities, contracts, leads, and cases. It also backs up Chatter, files, custom object records, and content.
+* **Metadata:** Salesforce metadata backup refers to custom code like Apex and Visualforce and configuration settings like dashboards, reports, page layouts, and custom fields.
 
-Vault suits the Salesforce environment and is built for our customers to protect their valuable data. Some features of our Salesforce backup tool include:&#x20;
+Vault suits the Salesforce environment and is built for our customers to protect their valuable data. Some features of our Salesforce backup tool include:
 
-* **Dependable backups:** You can use Vault to back up your important content and recover it if the original file is compromised. Salesforce backup and recovery allows you to maintain the complete experience of Salesforce by preserving file attachments, knowledge feeds, and more.&#x20;
-* **Built-in archival:** Vault’s archival capabilities reduce storage costs for a more cost-effective solution. The archive tool is based on our scalable enterprise cloud infrastructure.&#x20;
+* **Dependable backups:** You can use Vault to back up your important content and recover it if the original file is compromised. Salesforce backup and recovery allows you to maintain the complete experience of Salesforce by preserving file attachments, knowledge feeds, and more.
+* **Built-in archival:** Vault’s archival capabilities reduce storage costs for a more cost-effective solution. The archive tool is based on our scalable enterprise cloud infrastructure.
 * **Metadata Mastery™:** Using Metadata Mastery™ with the AutoRABIT platform allows your company to back up and recover your Salesforce environment completely. This tool prevents Salesforce data loss by including metadata in its backups.
 
 ### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
@@ -24,7 +24,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
 1. Login to your Vault account.
 2. Go to the **`Backup`** module.
 3. Select your **`Salesforce Org`**, **`Environment (Salesforce/nCino),`** and backup **`Configurations`** from the drop-down.Note:
-   * A list of all scheduled and manual backups triggered to date will get displayed under the **`Backup Summary`** section.&#x20;
+   * A list of all scheduled and manual backups triggered to date will get displayed under the **`Backup Summary`** section.
    * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (69) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) icon under the **`Actions`** tab.
 4. To initiate a new backup, click on **`Backup Now`**.
 
@@ -39,13 +39,13 @@ Vault suits the Salesforce environment and is built for our customers to protect
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt="" width="491"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt="" width="491"><figcaption></figcaption></figure>
 
 8. You'll be taken to the **`Backup Summary`** screen to display the status of the recently triggered backup activity.
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Backup Summary  <a href="#backup-summary" id="backup-summary"></a>
+### Backup Summary <a href="#backup-summary" id="backup-summary"></a>
 
 For each backup performed inside Vault, you will find the details below on the **`Backup Summary`** screen.
 
@@ -67,17 +67,15 @@ For each backup performed inside Vault, you will find the details below on the *
 | `Status`             | Backup status (success, failure, or in progress)                                                                                                                                                                                                                                                                                                                                |
 | `Actions`            | <p>Additional actions:</p><ul><li><strong><code>Backup summary</code></strong>: View the backup summary report</li><li><strong><code>Log</code></strong>: Find the log details for your backup operation</li><li><strong><code>Abort</code></strong>: For an ongoing backup, you can abort the process in between using the <strong><code>Abort</code></strong> icon.</li></ul> |
 
-
-
 ### Downloading Files
 
 Having this feature to download the files from the backup will enable the user to download the files directly from the Vault backup of the actual Salesforce data.
 
 Steps to download files:
 
-1\.     Open the backup summary and navigate to the ‘files’ tab to download the files from the backup
+1\. Open the backup summary and navigate to the ‘files’ tab to download the files from the backup
 
-2\.     Click on the “Download” option to initiate the download of the files
+2\. Click on the “Download” option to initiate the download of the files
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -85,25 +83,25 @@ Steps to download files:
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
-a.     Download CSV:
+a. Download CSV:
 
-&#x20;               i.     The following “Selecting this option will download the records without the actual files” can    be observed in the info icon.
+i. The following “Selecting this option will download the records without the actual files” can be observed in the info icon.
 
-&#x20;               ii.     On selecting this option, the CSV with records file will be downloaded
+ii. On selecting this option, the CSV with records file will be downloaded
 
-b.     Download Files:
+b. Download Files:
 
-&#x20;                i.     The following “Selecting this option will download the actual files from the storage” can be observed in the info icon.
+i. The following “Selecting this option will download the actual files from the storage” can be observed in the info icon.
 
-&#x20;                ii.     On selecting “Download Files”, based on the size of the file, the progress icon will be  displayed in the place of download option.
+ii. On selecting “Download Files”, based on the size of the file, the progress icon will be displayed in the place of download option.
 
 <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                iii.     Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
+iii. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
 
 4. Click on the “Records” icon to open the records window and download the individual files as well as the consolidated files.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on the “Download” button to initiate the download of either the “CSV” or the “Files” from the Vault backup environment. Following is the screenshot for reference
 
@@ -111,11 +109,11 @@ b.     Download Files:
 
 6. Click the download to observe the following:
 
-&#x20;        a. Download CSV
+a. Download CSV
 
-&#x20;        b. Download Files
+b. Download Files
 
-&#x20;        Note:- Refer the third point for “Download CSV” & “Download Files” functionality
+Note:- Refer the third point for “Download CSV” & “Download Files” functionality
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 

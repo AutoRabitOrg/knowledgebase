@@ -35,7 +35,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
    * You'll be prompted to select your backup **configuration** again.
    * Select the **`Backup type`** for both metadata and data members. Vault recommends using the **Full-Backup** for metadata/data when performing a backup for the first time.
      1. **`Full-Backup`**: Full backup is a method of backup in which all the files and folders selected are backed up.
-     2. **`Incremental-Backup`**: An incremental backup operation will copy only the data/metadata that has been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the previous backup.
+     2. **`Incremental-Backup`**: This method backs up only the data or metadata that has changed since the last backup operation. Vault allows incremental backups at intervals as short as every 5 minutes. Incremental backups identify changes by comparing file modification timestamps against the timestamp of the previous backup.
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 

@@ -33,10 +33,9 @@ Additionally, we have addressed multiple bug fixes and enhancements, including i
     ARM ensures that CodeScan projects are correctly linked to the scanned Salesforce org in CI jobs. The mapping issue causing a null project name has been resolved, ensuring accurate project creation and association. _Impacted Module: CI Job Build Logs. Support Case: #132391_
 *   **Improved Commit Label Deployment for Permission Sets**
 
-    ARM ensures consistent and accurate deployment of permission sets during Commit Label deployments. The **Ignore Missing Visibility** setting behaves as expected, and redeployments correctly generate a new deployment package instead of reusing the initial one. _Impacted Module: Commit Label. Support Case: #131711_\
+    ARM ensures consistent and accurate deployment of permission sets during Commit Label deployments. The **Ignore Missing Visibility** setting behaves as expected, and redeployments correctly generate a new deployment package instead of reusing the initial one. _Impacted Module: Commit Label. Support Case: #131711_
 
-
-### nCino + Data Loader Improvements
+## nCino + Data Loader Improvements
 
 **Release Date: 9 March 2025**
 

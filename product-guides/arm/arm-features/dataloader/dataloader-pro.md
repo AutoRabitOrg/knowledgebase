@@ -113,7 +113,19 @@ Map the object fields between the source and destination sandboxes.
 
 Using the **`Automap`** feature, you can map the fields automatically based on fetched object fields with destination fields. To set up manual mappings, automapping needs to be disabled. Click on **`Clear Mappings`** to remove the automapping and set up the desired manual mappings.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Edit Mappings - Auto-Map</p></figcaption></figure>
+
+### **Field Extraction**
+
+nCino introduced an enhancement that optimizes the field extraction process during data retrieval. Previously, Data Loader Pro fetched all available fields from an object during extraction, which could lead to unnecessary data processing and performance inefficiencies. DL PRO now retrieves only the fields explicitly mapped by the user.
+
+**Key Benefits:**
+
+* **Improved Performance** – Reduces processing time by extracting only the necessary fields.
+* **Optimized Data Handling** – Prevents retrieval of unneeded data, leading to a more streamlined extraction process.
+* **Greater Control** – Users can now ensure that only relevant fields are included in the extraction, enhancing data accuracy and efficiency.
+
+This enhancement ensures a more efficient and user-centric data extraction experience in DL PRO.
 
 ### **External ID Field Mapping**
 

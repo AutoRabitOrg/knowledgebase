@@ -15,8 +15,6 @@
 * If an exception occurs, the status should be marked as "Failed" instead of "No Records."
 * When checking for the existence of `AutorabitExtId__c`, if it exists, verify whether it is marked as "External Id" and "Unique." If not, set it to `true` as required.
 
-Let me know if you need any further refinements!
-
 ## nCino + Data Loader 25.1.0 Release Notes
 
 **Release Date: 23 February 2025**

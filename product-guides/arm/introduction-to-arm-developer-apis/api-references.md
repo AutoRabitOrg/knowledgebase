@@ -1,6 +1,8 @@
-# API References
+---
+description: Comprehensive reference for integrating with AutoRABIT API endpoints
+---
 
-Comprehensive reference for integrating with AutoRABIT API endpoints
+# API References
 
 ### Endpoint Overview <a href="#endpoint-overview" id="endpoint-overview"></a>
 

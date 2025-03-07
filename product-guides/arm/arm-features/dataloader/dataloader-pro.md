@@ -117,15 +117,12 @@ Using the **`Automap`** feature, you can map the fields automatically based on f
 
 ### **Field Extraction**
 
-nCino introduced an enhancement that optimizes the field extraction process during data retrieval. Previously, Data Loader Pro fetched all available fields from an object during extraction, which could lead to unnecessary data processing and performance inefficiencies. DL PRO now retrieves only the fields explicitly mapped by the user.
+Data Loader Pro retrieves only the fields explicitly mapped by the user.&#x20;
 
-**Key Benefits:**
-
-* **Improved Performance** – Reduces processing time by extracting only the necessary fields.
-* **Optimized Data Handling** – Prevents retrieval of unneeded data, leading to a more streamlined extraction process.
-* **Greater Control** – Users can now ensure that only relevant fields are included in the extraction, enhancing data accuracy and efficiency.
-
-This enhancement ensures a more efficient and user-centric data extraction experience in DL PRO.
+* Any new object identified during job execution should be included in the job only if the selected child objects have Master-Detail relationships with the parent, apart from the master object. However, lookup relationship parents are also being included in the job.
+* Any such new objects should be saved to the database.
+* If an exception occurs, the status should be marked as "Failed" instead of "No Records."
+* When checking for the existence of `AutorabitExtId__c`, if it exists, verify whether it is marked as "External Id" and "Unique." If not, set it to `true` as required.
 
 ### **External ID Field Mapping**
 

@@ -1,6 +1,6 @@
 # API Access
 
-To interact with API, you need to have a unique, personal access token. This will be used to authenticate yourself within the API.
+To interact with the API, you need to have a unique, personal access token. This will be used to authenticate yourself within the API.
 
 The token is the equivalent of the user name & password pair. Once generated, it identifies your own account. So you should be careful with it and not disclose it to any un-trusted party (application).
 

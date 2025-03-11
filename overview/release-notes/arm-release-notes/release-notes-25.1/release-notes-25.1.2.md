@@ -39,4 +39,4 @@ Additionally, we have addressed multiple bug fixes and enhancements, including i
 
 **Release Date: 9 March 2025**
 
-See the Release Notes for [nCino + Data Loader](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.2-release-notes) improvements.
+See the [Release Notes](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.2-release-notes) for nCino + Data Loader improvements.

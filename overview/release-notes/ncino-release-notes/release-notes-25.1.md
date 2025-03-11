@@ -4,17 +4,12 @@
 
 **Release Date: 9 March 2025**
 
-#### **Data Loader Performance Improvement**
-
-**Optimized Field Extraction:** nCino introduced an enhancement that optimizes the field extraction process during data retrieval. Previously, Data Loader Pro fetched all available fields from an object during extraction, which could lead to unnecessary data processing and performance inefficiencies. Data Loader Pro now retrieves only the fields explicitly mapped by the user.
-
-**Key Benefits:**
-
-* **Improved Performance** – Reduces processing time by extracting only the necessary fields.
-* **Optimized Data Handling** – Prevents retrieval of unneeded data, leading to a more streamlined extraction process.
-* **Greater Control** – Users can now ensure that only relevant fields are included in the extraction, enhancing data accuracy and efficiency.
-
-This enhancement ensures a more efficient and user-centric data extraction experience in [Data Loader Pro](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-pro).
+* **Optimized Field Extraction:** nCino introduced an enhancement that optimizes the field extraction process during data retrieval. Previously, Data Loader Pro fetched all available fields from an object during extraction, which could lead to unnecessary data processing and performance inefficiencies. Data Loader Pro now retrieves only the fields explicitly mapped by the user.
+* **Data Loader Performance Improvement**
+  * **Enhanced Object Selection**: Newly identified objects during job execution are now included only if the selected child objects have Master-Detail parents apart from the master object, preventing unintended inclusion of lookup relation parents.
+  * **Database Persistence**: Any newly identified objects during job execution are now saved to the database for future reference.
+  * **Improved Error Handling**: If an exception occurs, the job status is now set to "Failed" instead of "No Records," ensuring accurate job execution tracking.
+  * **AutorabitExtId\_\_c Validation**: The system now verifies whether `AutorabitExtId__c` exists and ensures it is marked as "External Id" and "Unique," automatically setting it to true if necessary.
 
 ## nCino + Data Loader 25.1.0 Release Notes
 

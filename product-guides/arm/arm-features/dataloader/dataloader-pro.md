@@ -117,12 +117,12 @@ Using the **`Automap`** feature, you can map the fields automatically based on f
 
 ### **Field Extraction**
 
-Data Loader Pro retrieves only the fields explicitly mapped by the user.&#x20;
+Data Loader Pro allows users to fetch only the fields explicitly mapped by the user, rather than retrieving all available fields in an object.&#x20;
 
-* Any new object identified during job execution should be included in the job only if the selected child objects have Master-Detail relationships with the parent, apart from the master object. However, lookup relationship parents are also being included in the job.
-* Any such new objects should be saved to the database.
+* Any new object identified during job execution are included in the job only if the selected child objects have Master-Detail relationships with the parent, apart from the master object. However, lookup relationship parents are also being included in the job.
+* Any such new objects are saved to the database, reducing processing time.
 * If an exception occurs, the status should be marked as "Failed" instead of "No Records."
-* When checking for the existence of `AutorabitExtId__c`, if it exists, verify whether it is marked as "External Id" and "Unique." If not, set it to `true` as required.
+* When checking for the existence of `AutorabitExtId__c`, if it exists, verify whether it is marked as "External Id" and "Unique." If not, it is set to `true` as required.
 
 ### **External ID Field Mapping**
 

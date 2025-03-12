@@ -136,13 +136,23 @@ ARM allows performing a validation deployment before actually committing the cha
 1. Under the **`Validation Report`** section, you can:
    1. **`Generate Diff Report at current Head:`**&#x53;elect this option to auto-generate a code difference report upon commit completion.Important Note:In some scenarios, this option is selected by default. This usually occurs if you set the criteria for the commit process globally, which enables you to generate a Diff Report by default. Your commit criteria are under the **`My Account > Commit Validation - Approval Settings`** section. However, remember that once the criteria is set, the commit is automatically rejected if you deselect the **`Generate Diff Report`** checkbox.
    2. **`Run Static Code Analysis:`** You can initiate a [Static Code Analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Like **`Generate Diff Report at current HEAD`**, this option is auto-selected by default if the criteria are set globally (under the **`My Account > Commit Validation - Approval Settings`** section).
-      *   For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
+      *   For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components:
+
+          * **All Supported Metadata Types:** This option executes a comprehensive security analysis across all selected metadata components, irrespective of their creation or modification timestamps. This approach is recommended for complete security audits.
+          * **Only Newly Added Supported Metadata Types:** This option performs a targeted analysis, focusing solely on metadata components created on a specific date. It is designed to evaluate recent additions efficiently.
+
+
 
           * Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.
 
           <figure><img src="../../../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
 
           <figure><img src="../../../../../.gitbook/assets/image (1057).png" alt="" width="375"><figcaption></figcaption></figure>
+      *
+
+
+
+          *
    3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. \
 
 

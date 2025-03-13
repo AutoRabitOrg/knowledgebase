@@ -42,7 +42,7 @@ These step-by-step instructions will show you how to install the CodeScan plugin
 **Note:** If the project you have open in VS Code matches the project you connect to in CodeScan Cloud, your IDE scans will ignore any Won’t Fix or False Positive issues.
 {% endhint %}
 
-### Get Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
+### Getting Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
 
 The **CodeScan VS Code** extension provides immediate feedback to developers on bugs and quality issues; it is a fully integrated user experience in Visual Studio Code (we'll refer to it as VS Code).
 
@@ -165,7 +165,7 @@ You can verify this by opening a file that has problems. They will now be highli
 
 <figure><img src="../../../../.gitbook/assets/image (487).png" alt=""><figcaption></figcaption></figure>
 
-### Integrate VS Code with CodeScan extension <a href="#integrate-vs-code-with-codescan-extension" id="integrate-vs-code-with-codescan-extension"></a>
+### Integrating VS Code with the CodeScan extension <a href="#integrate-vs-code-with-codescan-extension" id="integrate-vs-code-with-codescan-extension"></a>
 
 Once you're done installing the CodeScan extension from the marketplace,
 
@@ -223,7 +223,7 @@ Plain text Copy
 
 <figure><img src="../../../../.gitbook/assets/image (493).png" alt=""><figcaption></figcaption></figure>
 
-### Visual Studio Code behind a proxy <a href="#visual-studio-code-behind-a-proxy" id="visual-studio-code-behind-a-proxy"></a>
+### Visual Studio Code Behind a Proxy <a href="#visual-studio-code-behind-a-proxy" id="visual-studio-code-behind-a-proxy"></a>
 
 VS Code extensions can be difficult to use behind a proxy. To point CodeScan at the correct proxy, all it takes is a single environment variable for your system.
 
@@ -329,7 +329,7 @@ keytool -delete -noprompt **-alias** _{alias-name for the certificate}_ **-keyst
 
 **Example:** keytool -delete -noprompt **-alias** _codescan-certificate_ **-keystore** _“c:\Program Files\Java\jdk-11.0.13\lib\security\cacerts”_
 
-### CodeScan Update Binding Failed <a href="#codescan-update-binding-failed" id="codescan-update-binding-failed"></a>
+#### CodeScan Update Binding Failed <a href="#codescan-update-binding-failed" id="codescan-update-binding-failed"></a>
 
 If the CodeScan update binding is getting failed, try disabling the VPN and antivirus, then try updating the binding again.
 
@@ -351,7 +351,7 @@ If Apex PMD plugin is installed alongside the CodeScan plugin, one or more of th
 
 All these issues can be resolved by uninstalling Apex PMD plugin and restarting IDE, then updating the Binding to CodeScan Cloud.
 
-### CodeScan and Java Runtime Environment (JRE) sync issue <a href="#codescan-and-java-runtime-environment-jre-sync-issue" id="codescan-and-java-runtime-environment-jre-sync-issue"></a>
+#### CodeScan and Java Runtime Environment (JRE) sync issue <a href="#codescan-and-java-runtime-environment-jre-sync-issue" id="codescan-and-java-runtime-environment-jre-sync-issue"></a>
 
 CodeScan should automatically find the JRE installed on your computer. If you have trouble, then you can specify the JRE path on your VS Code's **Settings** page.
 
@@ -361,7 +361,7 @@ Under **CodeScan > Ls: Java Home** _(Not synced)_, enter the JRE path.
 
 <figure><img src="../../../../.gitbook/assets/image (500).png" alt="" width="563"><figcaption></figcaption></figure>
 
-### How do I see warnings and errors in VS Code? <a href="#how-do-i-see-warnings-and-errors-in-vs-code" id="how-do-i-see-warnings-and-errors-in-vs-code"></a>
+#### How do I see warnings and errors in VS Code? <a href="#how-do-i-see-warnings-and-errors-in-vs-code" id="how-do-i-see-warnings-and-errors-in-vs-code"></a>
 
 You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBLEMS`** panel with a list of all current errors. If you open a file that has errors or warnings, they will be rendered inline with the text and in the overview ruler.
 

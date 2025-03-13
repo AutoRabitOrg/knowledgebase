@@ -742,12 +742,12 @@
 
 * [Salesforce Data Cloud Integration with AutoRABIT](salesforce-data-cloud-integration-with-autorabit.md)
 
-## Use Cases + Resources
+## Resources
 
-* [👩‍💻 For Developers](use-cases-+-resources/for-developers.md)
-* [🖥️ For Admins](use-cases-+-resources/for-admins.md)
-* [📋 For Release Managers](use-cases-+-resources/for-release-managers.md)
-* [🖥️ AutoRABIT Support](use-cases-+-resources/technical-support-services.md)
+* [👩‍💻 For Developers](resources/for-developers.md)
+* [🖥️ For Admins](resources/for-admins.md)
+* [📋 For Release Managers](resources/for-release-managers.md)
+* [🖥️ AutoRABIT Support](resources/technical-support-services.md)
 * [LearningHub](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
-* [📙 Glossary](use-cases-+-resources/glossary.md)
+* [📙 Glossary](resources/glossary.md)

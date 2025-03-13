@@ -1,6 +1,6 @@
 # Compare
 
-Compare instance snapshots, data, and metadata in the same view. Following a data loss, [Vault](../../../../overview/release-notes/vault-release-notes.md) compares various snapshots to determine the timing and root cause indicators. Vault’s compare feature delivers powerful capabilities that allow admins to quickly figure out what happened and estimate the impact.&#x20;
+Compare instance snapshots, data, and metadata in the same view. Following a data loss, [Vault](../../../../release-notes/release-notes/vault-release-notes/) compares various snapshots to determine the timing and root cause indicators. Vault’s compare feature delivers powerful capabilities that allow admins to quickly figure out what happened and estimate the impact.&#x20;
 
 Benefits to Vault include:
 

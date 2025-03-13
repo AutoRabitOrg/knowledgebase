@@ -21,11 +21,11 @@ Our mission is to simplify Salesforce DevOps and enhance productivity, letting b
 
 Join us at AutoRABIT, and let's redefine Salesforce DevOps together.
 
-{% embed url="https://youtu.be/TjkNENdW7Pg" %}
+***
 
 **In our Knowledge Base, you will find:**
 
-* Detailed user guides: Step-by-step instructions to help you understand our product suite and navigate it with ease.
-* How-to tutorials: Practical guides to resolve common issues, configure settings, and maximize your productivity.
-* Frequently asked questions (FAQs): Quick solutions and information on common queries about our products and services.
-* Troubleshooting guides: Handy resources to identify and resolve technical issues.
+* Detailed User Guides: Step-by-step instructions to help you understand our product suite and navigate it with ease.
+* How-To Tutorials: Practical guides to resolve common issues, configure settings, and maximize your productivity.
+* Frequently Asked Questions (FAQs): Quick solutions and information on common queries about our products and services.
+* Troubleshooting Guides: Handy resources to identify and resolve technical issues.

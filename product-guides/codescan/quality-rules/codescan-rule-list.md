@@ -2,7 +2,7 @@
 
 The CodeScan rule list is always expanding. You can view the complete current list in the latest file below.
 
-Our [Release Notes](../../../overview/release-notes/codescan-release-notes/) also have a record of when certain rules were added.
+Our [Release Notes](../../../release-notes/release-notes/codescan-release-notes/) also have a record of when certain rules were added.
 
 You can download the list of CodeScan rules from here (last updated 20 February 2025):&#x20;
 

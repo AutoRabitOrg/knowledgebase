@@ -2,7 +2,7 @@
 
 ### Summary:
 
-CodeScan Self-Hosted (versions 25.0.1 (Tiger v3) and 25.1.0 (Eagle v3) are comprised of the following 8 components:
+CodeScan Self-Hosted (versions 25.0.1 (Tiger v3) and 25.1.0 (Eagle v3)) are comprised of the following 8 components:
 
 [·       3 Enhancements](release-notes-25.0.1-tiger-3.0.md#enhancements)
 

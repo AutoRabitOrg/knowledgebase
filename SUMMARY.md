@@ -127,7 +127,7 @@
     * [Release Notes 23.0](release-notes/release-notes/vault-release-notes/vault-release-notes-23.0.md)
     * [Release Notes 22.0](release-notes/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Release Notes 21.0](release-notes/release-notes/vault-release-notes/vault-release-notes-21.0.md)
-  * [AR GovCloud Documentation](release-notes/release-notes/ar-govcloud-documentation/README.md)
+  * [CodeScan for Government](release-notes/release-notes/ar-govcloud-documentation/README.md)
     * [AR GovCloud Release Notes](release-notes/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/README.md)
       * [CodeScan Release Notes (GovCloud)](release-notes/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/codescan-release-notes-govcloud.md)
   * [FlowCenter Release Notes](release-notes/release-notes/flow-center-release-notes/README.md)

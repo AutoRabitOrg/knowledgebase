@@ -56,12 +56,13 @@ Make sure you:
 3. For CodeScan **Self Hosted**:
    * Have a working **SonarQube™ 9.9+ LTA** server
    * Have a licensed version (no trial available) of the latest **CodeScan** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)).
-4. Download the **CodeScan** extension from the marketplace
-5. Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.
-6. Install **JDK version 17** or above.
-7. Install **Java Runtime (JRE) 17** version or later.
-8. Install the latest available **Node.js LTS** version.
-9. Uninstall the **Apex PMD** and **SonarLint™** plugins. The CodeScan and VS Code plugin will not work with SonarLint™ or Apex PMD installed.
+4. In the **CodeScan UI**, ensure the user has permissions to execute the analysis; otherwise, a 'license not set' error will occur.
+5. Download the **CodeScan** extension from the marketplace
+6. Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.
+7. Install **JDK version 17** or above.
+8. Install **Java Runtime (JRE) 17** version or later.
+9. Install the latest available **Node.js LTS** version.
+10. Uninstall the **Apex PMD** and **SonarLint™** plugins. The CodeScan and VS Code plugin will not work with SonarLint™ or Apex PMD installed.
 
 {% hint style="warning" %}
 Version 2.0.0 requires Java Runtime (JRE) / JDK versions 17 or later. Prior CS versions will still work with older JRE / JDK versions 11.

@@ -18,7 +18,7 @@ You must have a SonarQube™ server currently running in your environment. If yo
 ### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
 
 1. Java version 11
-2. SonarQube™ Versions 9.9 LTA, 2025.1 LTA and SonarQube Versions 10.0 - 10.8 Please refer to our [compatibility matrix](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1) for more detailed information
+2. SonarQube™ Versions 9.9 LTA, 2025.1 LTA and SonarQube Versions 10.0 - 10.8 - Please refer to our [compatibility matrix](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1) for more detailed information.
 3. SonarJS 6.2+
 4. **Operating System (OS)**: Windows, Mac, and Linux
 5. Latest available **Node.js LTS** version (v16 as of today)

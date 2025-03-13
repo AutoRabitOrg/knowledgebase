@@ -104,7 +104,7 @@
       * [Release Notes 4.4](release-notes/release-notes/codescan-release-notes/cloud-releases/release-notes-4.4.md)
       * [Release Notes 4.3](release-notes/release-notes/codescan-release-notes/cloud-releases/release-notes-4.3.md)
       * [Release Notes 4.2](release-notes/release-notes/codescan-release-notes/cloud-releases/release-notes-4.2.md)
-    * [On-Premises Releases](release-notes/release-notes/codescan-release-notes/on-premise-releases/README.md)
+    * [Self Hosted Releases](release-notes/release-notes/codescan-release-notes/on-premise-releases/README.md)
       * [Release Notes 24.1.1 Eagle 2.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.1.1-eagle-2.0.md)
       * [Release Notes 24.1.0 Eagle](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.1.0-eagle.md)
       * [Release Notes 24.0.13 Tiger 2.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.13-tiger-2.0.md)

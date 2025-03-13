@@ -1,4 +1,4 @@
-# On-Premises Releases
+# Self Hosted Releases
 
 ## Current Releases&#x20;
 
@@ -8,7 +8,7 @@
 **SonarQube Compatibility**: We recognize that self-hosted customers have different requirements for SonarQube (SQ) versions. As such, CodeScan is committed to supporting a wide spectrum of versions to accommodate this variance.
 {% endhint %}
 
-**CodeScan On-Premises Versions:** As SonarQube continues to release new versions consistently every 2–3 months, we decided to offer **two versions of CodeScan self-hosted** to ensure ongoing compatibility. We intend to keep as much feature parity with the editions as possible; however, there will be slight variances. Review the following diagram for more information.&#x20;
+**CodeScan Self Hosted Versions:** As SonarQube continues to release new versions consistently every 2–3 months, we decided to offer **two versions of CodeScan self-hosted** to ensure ongoing compatibility. We intend to keep as much feature parity with the editions as possible; however, there will be slight variances. Review the following diagram for more information.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1553).png" alt=""><figcaption><p>CodeScan Self-Hosted Versions</p></figcaption></figure>
 

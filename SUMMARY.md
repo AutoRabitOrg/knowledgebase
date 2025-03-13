@@ -750,3 +750,4 @@
 * [🖥️ AutoRABIT Support](use-cases-+-resources/technical-support-services.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [📙 Glossary](use-cases-+-resources/glossary.md)
+* [LearningHub](https://learninghub.autorabit.com/mod/forum/view.php?id=463)

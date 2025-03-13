@@ -4,13 +4,13 @@
 
 GitHub status checks are an excellent way to track and control the [CI/CD](../../troubleshoot/best-practices/branching-strategy-and-ci-cd-pipeline.md) status of your projects. AutoRABIT will send status checks for the pull requests to your GitHub repo and allows you to control when pull requests can be merged based on the results of the CI job. AutoRABIT reports the status of workflows and all corresponding jobs under the **Checks** tab on GitHub.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Requirement <a href="#requirement" id="requirement"></a>
 
 GitHub repositories registered in AutoRABIT should have the pull request feature enabled. \[[Learn More](../version-control/external-pull-request/)]
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Protected Branches <a href="#protected-branches" id="protected-branches"></a>
 
@@ -22,12 +22,12 @@ If you’re a repository owner, you can update your repositories using protected
 2. In the left-hand menu, click **Branches**.&#x20;
 3. Under **Branch protection rules** either click **Edit** for a rule that you would like to change or click **Add rule** at the top to create a new rule.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. If adding a new rule, enter the desired branch name in the **Branch name pattern** field.
 5. Scroll down to the second box - **Require status checks to pass before merging**.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. From the build status checks in the last week of your repository, select one of them.
 7. Click **Create**.

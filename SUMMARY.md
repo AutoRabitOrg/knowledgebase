@@ -114,6 +114,7 @@
       * [Release Notes 24.0.4](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.4.md)
       * [Release Notes 24.0.1](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.1.md)
       * [Release Notes 23.1](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-note-23.1.0.md)
+      * [Release Notes 25.0.1 Tiger 3.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-25.0.1-tiger-3.0.md)
     * [CodeScan for Government](release-notes/release-notes/ar-govcloud-documentation/README.md)
       * [AR GovCloud Release Notes](release-notes/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/README.md)
         * [CodeScan Release Notes (GovCloud)](release-notes/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/codescan-release-notes-govcloud.md)

@@ -17,7 +17,7 @@ Follow these steps to reset your password:
 1. Navigate to your instance's URL, for example, [_https://app.codescan.io/_](https://app.codescan.io/) for **US** region, [_https://app-eu.codescan.io/_](https://app-eu.codescan.io/) for **EU** region or [_https://app-aus.codescan.io/_](https://app-aus.codescan.io/) for **AUS** region.
 2. From the login screen, click the **`Don't remember your password?`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
 
 3. Enter the **`email address`** you used to create your CodeScan account.
 

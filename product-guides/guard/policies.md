@@ -101,7 +101,7 @@ To create a policy, go to the Policies section in AutoRABIT Guard and click "Add
 
 Guard’s policy detection relies heavily on the Change Monitoring capability, which tracks changes in your Salesforce org. When a policy is violated, Guard parses these changes to determine if they violate the defined rules.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1629).png" alt=""><figcaption></figcaption></figure>
 
 ## **Parsing Events: How Changes Are Monitored**
 

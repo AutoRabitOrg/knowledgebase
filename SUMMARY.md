@@ -748,6 +748,6 @@
 * [🖥️ For Admins](use-cases-+-resources/for-admins.md)
 * [📋 For Release Managers](use-cases-+-resources/for-release-managers.md)
 * [🖥️ AutoRABIT Support](use-cases-+-resources/technical-support-services.md)
+* [LearningHub](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [📙 Glossary](use-cases-+-resources/glossary.md)
-* [LearningHub](https://learninghub.autorabit.com/mod/forum/view.php?id=463)

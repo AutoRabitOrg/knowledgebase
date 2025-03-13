@@ -8,7 +8,7 @@ CodeScan Self-Hosted (versions 25.0.1 (Tiger v3) and 25.1.0 (Eagle v3) are compr
 
 [·       1 New Rule](release-notes-25.0.1-tiger-3.0.md#new-rules)
 
-·       4 Fixes
+·     [  4 Fixes](release-notes-25.0.1-tiger-3.0.md#fixes)
 
 Component details are listed in their corresponding sections within this document.
 
@@ -95,7 +95,7 @@ _**NOTE 02:**_ If both are active, check the violations that have been reported 
 
 ### Fixes
 
-1\.     Fixed rule “Require CSRF protection on GET requests” to distinguish Visualforce Page settings from Aura components
+1. **Fixed rule “Require CSRF protection on GET requests” to distinguish Visualforce Page settings from Aura components**
 
 Previously, this rule was flagging violations on .cmp files that are aura:component files. The guidance in the rule suggested to change the Visualforce page setting, but this is not possible on Aura components because they are not Visualforce components.
 
@@ -103,7 +103,7 @@ This fix for the rule “Require CSRF protection on GET requests” now enables 
 
 &#x20;
 
-2\.     Fixed issue with rule “Flow DML Should Not Be Called In Loops"
+2. **Fixed issue with rule “Flow DML Should Not Be Called In Loops"**
 
 Recently, we observed that the rule “Flow DML Should Not Be Called In Loops" throws null pointer exception because of access of parent node without null check.
 
@@ -113,15 +113,15 @@ Verified the fix by testing and confirming that the rule now throws a violation 
 
 &#x20;
 
-3\.     Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}} ” {Permissions should be checked before accessing resource }.
+3. **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}} ” {Permissions should be checked before accessing resource }.**
 
 Previously, this rule was throwing violations that were false positives.  This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.
 
 &#x20;
 
-_NOTE 01: We addressed a similar issue related to SOQL queries in a previous release.  That update has been extended in this release to also include SOSL queries._
+_**NOTE 01:** We addressed a similar issue related to SOQL queries in a previous release.  That update has been extended in this release to also include SOSL queries._
 
-&#x20;
+
 
 As per Salesforce documentation, when checking the Access for the inner query object it allows to check by using \_\_c, but while making inner query on related Objects it must be in plural and end with\_\_r.
 
@@ -139,3 +139,24 @@ Verified the rule “Field Level Security Vulnerabilities” for the below scena
 
 <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+_REMINDER_: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.
+{% endhint %}
+
+We have verified the rule:FieldLevelSecurity for the below scenarios:
+
+* Rule is throwing the violation if the object is NOT checked via isAccessible for the methods used in inner query
+* Rule is not throwing violation if system mode value is set = “true” (and the object IS NOT checked via isAccessible for methods)
+* Rule is not throwing violation if system mode value is set = “false” (and the object IS checked via isAccessible for the methods)
+
+
+
+&#x20;**4. Fixed issue with CodeScan rule to check for special characters in Page Layout Name (for example: : , ( ) ' " - & )**
+
+Recently, added a new rule that checks for special characters used in a Page Layout name (note: Metadata API name: “Layout”). This rule will enforce naming conventions for Page Layouts, which are in line with Salesforce best practices as well as several existing customers’ standards. The aim of this new rule will help identify components for refactoring of current Page Layouts that are incorrectly named. The rule checks layout and layout-meta.xml files for file names that include: - ! @ # $ % ^ & \* ? ' : ; ” + =
+
+However, we recognize that we inadvertently included hyphen (-) in this special character list.  Hyphen should NOT be included because Salesforce automatically adds this special character.&#x20;
+
+&#x20;
+
+This fix removes hyphen in the check for special characters in Page Layout Name.

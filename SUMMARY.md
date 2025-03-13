@@ -4,9 +4,7 @@
 
 ## Fundamentals
 
-* [🛠️ Getting Set Up](fundamentals/getting-set-up/README.md)
-  * [General](fundamentals/getting-set-up/general.md)
-  * [Salesforce - The Tools You Need to Be Successful](fundamentals/getting-set-up/salesforce-the-tools-you-need-to-be-successful.md)
+* [🛠️ Getting Set Up](fundamentals/getting-set-up.md)
 * [⚡ What we do](fundamentals/what-we-do.md)
 * [ℹ️ FAQ](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)

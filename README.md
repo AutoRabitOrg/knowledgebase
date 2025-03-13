@@ -39,6 +39,6 @@ Quick Link to the AutoRABIT Learning Hub
 
 We've put together some helpful guides for you to get set up with our products quickly and easily.
 
-{% content-ref url="fundamentals/getting-set-up/" %}
-[getting-set-up](fundamentals/getting-set-up/)
+{% content-ref url="fundamentals/getting-set-up.md" %}
+[getting-set-up.md](fundamentals/getting-set-up.md)
 {% endcontent-ref %}

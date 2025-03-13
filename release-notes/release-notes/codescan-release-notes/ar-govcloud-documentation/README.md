@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # CodeScan for Government
 
 **CodeScan for Government**

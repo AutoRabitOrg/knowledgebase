@@ -31,7 +31,7 @@ Refer to the following Salesforce screens to update the details under **Deploy >
 9. To refresh a sandbox, select **Production Org** in the **Source Sandbox** field or, to clone an existing sandbox, select the name of the sandbox as selected in the **Create From** dropdown in the **Sandbox Information** section.&#x20;
 10. Click **Save** to save this page.&#x20;
 11. Next, click **Save** to save the template.&#x20;
-12. Once the template is created successfully, you'll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
+12. Once the template is created successfully, you'll be redirected to the [**Environment Provisioning**](../) **History** screen.
 13. Click on the **Run** button to run the current template on your destination org.
 
 <figure><img src="../../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>

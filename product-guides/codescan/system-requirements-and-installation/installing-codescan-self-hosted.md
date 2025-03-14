@@ -46,7 +46,7 @@ Provide the following information in the email:\
 
 You must have a SonarQube™ server currently running in your environment. If not, please visit [SonarQube.org](https://www.sonarqube.org/) to download the latest Community version.
 
-The following matrix identifies the current versions of SonarQube™ supported for CodeScan Self-Hosted/On-Premises clients:
+The following matrix identifies the current versions of SonarQube™ supported for CodeScan Self-Hosted clients:
 
 ## SonarQube™ Compatibility Matrix <a href="#sonarqube-tm-download" id="sonarqube-tm-download"></a>
 
@@ -163,7 +163,7 @@ The default System Admin credentials are _**admin/admin**_:
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Save**.
-4. You have successfully completed the **CodeScan on-premises integration**. See the instructions below on how to integrate this to ARM.
+4. You have successfully completed the **CodeScan self-hosted integration**. See the instructions below on how to integrate this to ARM.
 
 ## CodeScan Self-Hosted + ARM Integration <a href="#codescan-onpremise-arm-integration" id="codescan-onpremise-arm-integration"></a>
 

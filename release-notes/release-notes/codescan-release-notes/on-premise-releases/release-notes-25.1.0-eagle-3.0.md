@@ -23,7 +23,7 @@ Database.queryWithBinds(query, bindVariablesMap, accessLevel)
 
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Verified that after the rule enhancement was engineered, users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected
 
@@ -80,7 +80,7 @@ Verified the rule:OuterClassExplicitSharing for the below scenarios:
 
 2. Verified that rule is not throwing violation if with sharing, without sharing, inherited sharing is used
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Verified that violation is thrown if with sharing, without sharing, inherited sharing is not used.
 

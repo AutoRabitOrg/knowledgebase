@@ -24,7 +24,7 @@ A Commit Label helps to label a commit. For example, changes related to a user s
 
 6. The commit label will be displayed under the **Commit Label** tabs along with other commit labels.
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Now, whenever you perform a merge or commit using the previously created commit label, a revision number generates. These revision details are available on the right side of your commit label.
 

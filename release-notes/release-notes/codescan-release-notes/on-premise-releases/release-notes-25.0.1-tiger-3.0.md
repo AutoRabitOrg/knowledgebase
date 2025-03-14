@@ -1,5 +1,26 @@
 # Release Notes 25.0.1 Tiger 3.0
 
+1. **Enhanced rule “Avoid Untrusted/Unescaped Variables in DML Query" to account for potential SOQL injections when “queryWithBinds” is used.**\
+   \
+   Historically, CodeScan has offered our “Avoid Untrusted/Unescaped Variables in DML Query” rule to inspect customer’s code and flag where there are SOQL Injection possibilities.  Recently, one of our customers had performed a test and expected this rule to flag an issue in their code, but it did not.  We determined that the rule should be enhanced for when “queryWithBinds” is used.\
+   \
+   Our engineering team utilized specifications within Salesforce documentation (specifically,  [Help and Training Community](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_bind_var_soql.htm\&release=242\&type=5)) in order to consider only the query for executed with queryWithBinds() for vulnerability check and violation, avoiding the other parameters such as: (Map, accessLevel) .\
+   Database.queryWithBinds(query, bindVariablesMap, accessLevel)
+2. **Enhancement to our disconnected license type for self-hosted customers requiring a license with a project key embedded**\
+   \
+   CodeScan has a disconnected license type option for self-hosted license where the project key is embedded.\
+   \
+   This feature ensures that when the license check is performed, if the project being scanned has a key that is embedded in the license, then the check will pass without needing to reach out to the license server.  This is very useful for customers who are not allowed any connection to sites outside their organization, as it allows the project analysis to complete without connecting to the license server.\
+   \
+   Recently, some customers were reporting that while the scans were completing but also throwing a timeout error.  We have enhanced this feature by changing this notification to occur as a warning log instead of as an error log.
+3.  **Enhanced rule “Field Level Security Vulnerabilities”:  Violation message now displays the correct object instead of '{0}'.**\
+    \
+    The existing violation message was neither clear nor accurate.  Instead, when the violation is flagged, the message should display the correct object instead of '{0}'.\
+    \
+    This fix includes a more clear and accurate message associated with the violation.
+
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## Release Notes 25.0.1 (Tiger v.3) and 25.1.0 (Eagle v.3) <a href="#release-notes-25.0.1-tiger-v.3-and-25.1.0-eagle-v.3" id="release-notes-25.0.1-tiger-v.3-and-25.1.0-eagle-v.3"></a>
 
 **Release Date: 26 February 2025**

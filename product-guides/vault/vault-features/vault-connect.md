@@ -199,7 +199,7 @@ To streamline the process and enhance functionality, the Vault Connect integrati
 3.  Open the Developer Console by going to: Setup → Developer Console\
 
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  After Landing on the developer console, create a new Visualforce page and save it to continue with the script creation.\
 
 
@@ -221,7 +221,7 @@ To streamline the process and enhance functionality, the Vault Connect integrati
       1.  Go to the ‘Page Layout’ in the external object and observe the Visualforce page.\
 
 
-          <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
       2.  Observe the Visualforce pages highlighted.\
 
 

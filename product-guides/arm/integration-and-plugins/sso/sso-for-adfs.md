@@ -26,7 +26,7 @@ To set up the ADFS connection with AutoRABIT using a Relying Party Trust (RPT), 
 
 7. On the next screen, leave the defaults.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 8. On the next screen, check the box labeled: **Enable support for the SAML 2.0 WebSSO protocol**.
 9. Enter the service URL. **For ex-** _pg.autorabit.com/saml/SSO_

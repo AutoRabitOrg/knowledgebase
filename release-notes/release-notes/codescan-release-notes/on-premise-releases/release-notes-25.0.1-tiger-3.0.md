@@ -23,11 +23,11 @@ Database.queryWithBinds(query, bindVariablesMap, accessLevel)
 
 Example:
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Verified that after the rule enhancement was engineered, users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Enhancement to our disconnected license type for self-hosted customers requiring a license with a project key embedded**
 
@@ -45,7 +45,7 @@ The existing violation message was neither clear nor accurate.  Instead, when th
 
 This fix includes a more clear and accurate message associated with the violation.
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rules:
 
@@ -76,15 +76,15 @@ Verified the rule:OuterClassExplicitSharing for the below scenarios:
 \
 1\. Verified the Rule’s description, type, severity, message, tag, Remediation, Key, Name
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 2. Verified that rule is not throwing violation if with sharing, without sharing, inherited sharing is used
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 3. Verified that violation is thrown if with sharing, without sharing, inherited sharing is not used.
 
-<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 _**NOTE 01:**_ This rule overlaps with the ClassExplicitSharing rule and will always overlap violations for outer classes.  This rule has been created to:
 
@@ -133,11 +133,11 @@ Verified the rule “Field Level Security Vulnerabilities” for the below scena
 
 1. Rule is throwing the violation if we didn’t check isAccessible for the objects used in inner query
 
-<figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 2. Rule is not throwing the violation if we checked isAccessible for the objects used in inner query.
 
-<figure><img src="../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 _REMINDER_: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.

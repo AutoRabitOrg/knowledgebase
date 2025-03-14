@@ -25,7 +25,7 @@ Component details are listed in their corresponding sections within this documen
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1498).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1498).png" alt=""><figcaption></figcaption></figure>
 
 Adding this parameter will allow teams that work like this to view the coverage on the CodeScan dashboard. The addition of this parameter notably provides more value for SFDX workflows.
 
@@ -115,8 +115,8 @@ They are:
 These properties have the same defaults as those of the existing ones. These properties offer more control than the previous ones as they support wildcards.\
 To learn more about wildcards, refer to the Wildcards section in [https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud](https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/analysis-scope-on-codescan-cloud)
 
-<figure><img src="../../../../.gitbook/assets/image (1496).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1496).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1497).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1497).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1493).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1493).png" alt=""><figcaption></figcaption></figure>

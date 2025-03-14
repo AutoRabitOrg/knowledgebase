@@ -40,7 +40,7 @@ All Metadata rules need to be checked that they support both metadata api and sf
 
 Metadata pulled with SFDX has a different structure than Metadata pulled with Salesforce’s Metadata API. CodeScan can scan this different structure with some additions to the sf-meta suffixes. However, we need to make sure that the differences are covered within the types of metadata that have these differences. For example, the Object metadata contains all field metadata when pulled from the metadata API. When this is pulled with SFDX, the object and field metadata is separate.
 
-See the following SF article for details of these differences:[https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link)
+See the following SF article for details of these differences:[https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|smart-link)
 
 &#x20;NOTE:  This rule is only applicable to nCino customers
 

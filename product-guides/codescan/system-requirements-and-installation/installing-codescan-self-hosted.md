@@ -94,7 +94,7 @@ At [SonarSource.com](https://www.sonarsource.com/), find the latest compatible v
 
 ### CodeScan Zip File Download <a href="#codescan-zip-file-download" id="codescan-zip-file-download"></a>
 
-1. Download the latest compatible CodeScan version from the chart below.
+1. Find the latest compatible CodeScan version and download it from the chart below. Release notes are also provided for your convenience.
 
 <details>
 

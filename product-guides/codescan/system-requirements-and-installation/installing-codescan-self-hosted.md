@@ -8,7 +8,7 @@ What's New:
 
 CodeScan Self-Hosted now has two versions available to meet your operating system needs:
 
-**CodeScan version 25.1.0 Eagle Edition v3.0** (now compatible with _**SonarQube™ versions 10.1 to 10.7)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
+**CodeScan version 25.1.0 Eagle Edition v3.0** (now compatible with _**SonarQube™ versions 10.1 to 2025.1 LTA)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
 **CodeScan version 25.0.1 Tiger Edition v3.0** _(_&#x6E;ow compatible with _**SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
 
@@ -95,7 +95,7 @@ At [SonarSource.com](https://www.sonarsource.com/), find the latest compatible v
 **Step 1: Log in to the SonarQube™ self-hosted instance at** [**http://localhost:9000/**](https://localhost:9000/).\
 The default System Admin credentials are _**admin/admin**_:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Step 2. Once you've gained access, go to** **`Administrator > Configuration > General Settings`**.
 

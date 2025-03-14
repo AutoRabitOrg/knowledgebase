@@ -29,7 +29,7 @@ The first step in integrating Provar is adding the same configurations in AutoRA
        * **licenseKey=XXXXX-XXXXX-XXXXXX-XXXXX-XXXXX**
        * **lastOnlineAvailabilityCheckUtc=153078614616**
 
-       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. Click on **OK** once you're done filling in the Provar information.
 6. Ensure the above configurations are saved in AutoRABIT by clicking on the **Save** button. It is an important step, otherwise, all modifications will be lost and you will have to configure Provar from the beginning.
 
@@ -41,7 +41,7 @@ To integrate previous Provar versions with AutoRABIT, refer to the below steps:
 
 1. Set the Web Browser to **Desktop: Full Screen.**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the **Provider Name** to **Desktop** and the **Browser Configurations** to **Full Screen**.
 

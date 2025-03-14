@@ -203,11 +203,11 @@ To streamline the process and enhance functionality, the Vault Connect integrati
 4.  After Landing on the developer console, create a new Visualforce page and save it to continue with the script creation.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  Enter the script and save it.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Example script:`<apex:page standardController="CustomX_c_x__x" >`\
    `<apex:outputText style="text-align:left" value="{!CustomX_c_x__x.RicheRich_c__c}" escape="false" />`\
    `</apex:page>`
@@ -216,7 +216,7 @@ To streamline the process and enhance functionality, the Vault Connect integrati
    2.  Select any external object as required. Here, email message is considered for illustration.\
 
 
-       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    3. **Add the Visualforce page to the object layout**
       1.  Go to the ‘Page Layout’ in the external object and observe the Visualforce page.\
 

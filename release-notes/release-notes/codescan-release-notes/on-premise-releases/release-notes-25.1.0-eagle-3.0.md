@@ -23,11 +23,11 @@ Database.queryWithBinds(query, bindVariablesMap, accessLevel)
 
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Verified that after the rule enhancement was engineered, users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Enhancement to our disconnected license type for self-hosted customers requiring a license with a project key embedded**
 
@@ -45,7 +45,7 @@ The existing violation message was neither clear nor accurate.  Instead, when th
 
 This fix includes a more clear and accurate message associated with the violation.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rules:
 
@@ -76,7 +76,7 @@ Verified the rule:OuterClassExplicitSharing for the below scenarios:
 \
 1\. Verified the Rule’s description, type, severity, message, tag, Remediation, Key, Name
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Verified that rule is not throwing violation if with sharing, without sharing, inherited sharing is used
 

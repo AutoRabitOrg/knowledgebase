@@ -38,7 +38,7 @@
 #### &#x20;Enhancements <a href="#enhancements" id="enhancements"></a>
 
 * Improved documentation on vulnerabilities including links to OWASP and CERT explanations.
-* Support for Inherited Sharing Keywords in Apex - [Salesforce Documentation](https://help.salesforce.com/s/articleView?id=release-notes.rn\_apex\_inherited\_sharing.htm\&type=5\&release=216)
+* Support for Inherited Sharing Keywords in Apex - [Salesforce Documentation](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_inherited_sharing.htm\&type=5\&release=216)
 
 \
 

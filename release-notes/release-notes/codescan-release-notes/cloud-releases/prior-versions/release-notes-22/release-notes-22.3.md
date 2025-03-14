@@ -2,7 +2,7 @@
 
 ### New Features <a href="#new-features" id="new-features"></a>
 
-#### 1. Comparison branches for Salesforce projects <a href="#1-comparison-branches-for-salesforce-projects" id="1-comparison-branches-for-salesforce-projects"></a>
+#### 1. Comparison branches for Salesforce projects <a href="#id-1-comparison-branches-for-salesforce-projects" id="id-1-comparison-branches-for-salesforce-projects"></a>
 
 Added the ability to add comparison branches to a Salesforce project in this release.
 
@@ -13,7 +13,7 @@ Key characteristics to look for:
 
 For more information, see [Understanding branches for Salesforce project](https://knowledgebase.autorabit.com/codescan/docs/understanding-branches-for-salesforce-project).
 
-#### 2. New nCino rules <a href="#2-new-ncino-rules" id="2-new-ncino-rules"></a>
+#### 2. New nCino rules <a href="#id-2-new-ncino-rules" id="id-2-new-ncino-rules"></a>
 
 Below are the nCino related rules added to the existing **Apex/Salesforce Metadata** rule sets and are tagged as **“ncino-goldstandard.”**
 
@@ -23,7 +23,7 @@ Below are the nCino related rules added to the existing **Apex/Salesforce Metada
 * **System Bypass Logic - Workflow Rules:** This rule is required in custom workflow rules for integration users
 * **System Bypass Logic - Validation Rules:** This rule is required in custom validation rules for integration users.
 
-#### 3. Compute Engine parallel processing <a href="#3-compute-engine-parallel-processing" id="3-compute-engine-parallel-processing"></a>
+#### 3. Compute Engine parallel processing <a href="#id-3-compute-engine-parallel-processing" id="id-3-compute-engine-parallel-processing"></a>
 
 This April's CodeScan cloud release includes the Compute Engine parallel processing capability. The key benefit is that it allows multiple analysis jobs to run in parallel in a fluid manner, reducing analysis job duration during peak usage and thereby improving user experience.
 
@@ -33,11 +33,11 @@ CodeScan self-hosted is now compatible with **SonarQube™ 8.9** and **SonarJS 6
 
 ### Enhancements <a href="#enhancements" id="enhancements"></a>
 
-#### 1. Enhanced log report <a href="#1-enhanced-log-report" id="1-enhanced-log-report"></a>
+#### 1. Enhanced log report <a href="#id-1-enhanced-log-report" id="id-1-enhanced-log-report"></a>
 
 The log report is now better than before. View your project analysis job's detailed log report, which includes the reasons for failed jobs.
 
-#### 2. CodeScan integration with Github <a href="#2-codescan-integration-with-github" id="2-codescan-integration-with-github"></a>
+#### 2. CodeScan integration with Github <a href="#id-2-codescan-integration-with-github" id="id-2-codescan-integration-with-github"></a>
 
 In this release, the CodeScan integration with GitHub actions has been improved. When working on Github actions, the report generation feature has been included, which displays accurate findings based on analysis.
 

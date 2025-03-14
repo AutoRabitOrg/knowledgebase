@@ -1,82 +1,68 @@
 # Release Notes 25.0.1 Tiger 3.0
 
-1. **Enhanced rule “Avoid Untrusted/Unescaped Variables in DML Query" to account for potential SOQL injections when “queryWithBinds” is used.**\
-   \
-   Historically, CodeScan has offered our “Avoid Untrusted/Unescaped Variables in DML Query” rule to inspect customer’s code and flag where there are SOQL Injection possibilities.  Recently, one of our customers had performed a test and expected this rule to flag an issue in their code, but it did not.  We determined that the rule should be enhanced for when “queryWithBinds” is used.\
-   \
-   Our engineering team utilized specifications within Salesforce documentation (specifically,  [Help and Training Community](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_bind_var_soql.htm\&release=242\&type=5)) in order to consider only the query for executed with queryWithBinds() for vulnerability check and violation, avoiding the other parameters such as: (Map, accessLevel) .\
-   Database.queryWithBinds(query, bindVariablesMap, accessLevel)
-2. **Enhancement to our disconnected license type for self-hosted customers requiring a license with a project key embedded**\
-   \
-   CodeScan has a disconnected license type option for self-hosted license where the project key is embedded.\
-   \
-   This feature ensures that when the license check is performed, if the project being scanned has a key that is embedded in the license, then the check will pass without needing to reach out to the license server.  This is very useful for customers who are not allowed any connection to sites outside their organization, as it allows the project analysis to complete without connecting to the license server.\
-   \
-   Recently, some customers were reporting that while the scans were completing but also throwing a timeout error.  We have enhanced this feature by changing this notification to occur as a warning log instead of as an error log.
-3.  **Enhanced rule “Field Level Security Vulnerabilities”:  Violation message now displays the correct object instead of '{0}'.**\
-    \
-    The existing violation message was neither clear nor accurate.  Instead, when the violation is flagged, the message should display the correct object instead of '{0}'.\
-    \
-    This fix includes a more clear and accurate message associated with the violation.
-
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-## Release Notes 25.0.1 (Tiger v.3) and 25.1.0 (Eagle v.3) <a href="#release-notes-25.0.1-tiger-v.3-and-25.1.0-eagle-v.3" id="release-notes-25.0.1-tiger-v.3-and-25.1.0-eagle-v.3"></a>
+## Release Notes 25.0.1 (Tiger v.3)
 
 **Release Date: 26 February 2025**
 
-### Summary <a href="#summary" id="summary"></a>
+### Summary
 
 CodeScan Self-Hosted—versions 25.0.1 (Tiger v3) and 25.1.0 (Eagle v3)—are comprised of the following eight components:
 
-* [3 Enhancements](https://internal-kb.autorabit.com/codescan-resources/codescan-releases/codescan-self-hosted#enhancements)
-* [1 New Rule](https://internal-kb.autorabit.com/codescan-resources/codescan-releases/codescan-self-hosted#new-rules)
-* [4 Fixes](https://internal-kb.autorabit.com/codescan-resources/codescan-releases/codescan-self-hosted#fixes)
+* [3 Enhancements](release-notes-25.0.1-tiger-3.0.md#enhancements)
+* [1 New Rule](release-notes-25.0.1-tiger-3.0.md#new-rules)
+* [4 Fixes](release-notes-25.0.1-tiger-3.0.md#fixes)
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features <a href="#new-features" id="new-features"></a>
+### New Features
 
 There are no new features associated with this release.
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-1.  **Enhanced rule “Avoid Untrusted/Unescaped Variables in DML Query" to account for potential SOQL injections when “queryWithBinds” is used.** \
+1.  **Enhanced rule “Avoid Untrusted/Unescaped Variables in DML Query" to account for potential SOQL injections when “queryWithBinds” is used.**\
     \
-    Historically, CodeScan has offered our “Avoid Untrusted/Unescaped Variables in DML Query” rule to inspect customer’s code and flag where there are SOQL Injection possibilities. Recently, one of our customers performed a test and expected this rule to flag an issue in their code, but it did not. We determined the rule should be enhanced for when “queryWithBinds” is used. Our engineering team utilized specifications within Salesforce documentation (specifically, [Help and Training Community](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_bind_var_soql.htm\&release=242\&type=5)) in order to consider only the query for executed with queryWithBinds() for vulnerability check and violation, avoiding the other parameters such as: (Map, accessLevel) . Database.queryWithBinds(query, bindVariablesMap, accessLevel) \
+    Historically, CodeScan has offered our “Avoid Untrusted/Unescaped Variables in DML Query” rule to inspect customer’s code and flag where there are SOQL Injection possibilities. Recently, one of our customers performed a test and expected this rule to flag an issue in their code, but it did not. We determined the rule should be enhanced for when “queryWithBinds” is used.\
+    \
+    Our engineering team utilized specifications within Salesforce documentation (specifically,  [Help and Training Community](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_bind_var_soql.htm\&release=242\&type=5)) in order to consider only the query for executed with queryWithBinds() for vulnerability check and violation, avoiding the other parameters such as: (Map, accessLevel) .\
+    Database.queryWithBinds(query, bindVariablesMap, accessLevel)\
     \
     Example:
 
-    <img src="https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FisqrycsZKfGKUWwXyiDj%252Fimage.png%3Falt%3Dmedia%26token%3D9977718a-2944-48a1-8491-c8cb2a0c385e&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=4c76f50&#x26;sv=2" alt="" data-size="original">\
+    <figure><img src="../../../../.gitbook/assets/image (1630).png" alt=""><figcaption><p>Code</p></figcaption></figure>
+
+    Verified after the rule enhancement was engineered that users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected.\
 
 
-    Verified after the rule enhancement was engineered that users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected.
+    <figure><img src="../../../../.gitbook/assets/image (1631).png" alt=""><figcaption><p>Violation for error thrown</p></figcaption></figure>
 
-    <figure><img src="https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FfiTMOrI8ZOVkjbN9zql6%252Fimage.png%3Falt%3Dmedia%26token%3D033ec005-d89c-4711-8a2b-2b41cb80531b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=f7a5fbc9&#x26;sv=2" alt=""><figcaption><p>Violation for error thrown</p></figcaption></figure>
-2.  **Enhancement to our disconnected license type for self-hosted customers requiring a license with a project key embedded.** \
+
+2.  **Enhancement to our disconnected license type for self-hosted customers requiring a license with a project key embedded.**\
     \
     CodeScan has a disconnected license type option for self-hosted license where the project key is embedded.
 
     \
-    This feature ensures that when the license check is performed, if the project being scanned has a key that is embedded in the license, then the check will pass without needing to reach out to the license server. This is very useful for customers who are not allowed any connection to sites outside their organization, as it allows the project analysis to complete without connecting to the license server.
+    This feature ensures that when the license check is performed, if the project being scanned has a key that is embedded in the license, then the check will pass without needing to reach out to the license server.  This is very useful for customers who are not allowed any connection to sites outside their organization, as it allows the project analysis to complete without connecting to the license server.
 
     \
-    Recently, some customers were reporting that while the scans were completing but also throwing a timeout error. We have enhanced this feature by changing this notification to occur as a warning log instead of as an error log.
+    Recently, some customers were reporting that while the scans were completing but also throwing a timeout error.  We have enhanced this feature by changing this notification to occur as a warning log instead of as an error log.\
 
+3.  **Enhanced rule “Field Level Security Vulnerabilities”:  Violation message now displays the correct object instead of '{0}'.**
 
-3.  **Enhanced rule “Field Level Security Vulnerabilities”: Violation message now displays the correct object instead of '{0}'.**
+    &#x20;
 
-    The existing violation message was neither clear nor accurate. Instead, when the violation is flagged, the message should display the correct object instead of '{0}'.
+    The existing violation message was neither clear nor accurate.  Instead, when the violation is flagged, the message should display the correct object instead of '{0}'.\
+
 
     This fix includes a more clear and accurate message associated with the violation.
 
-    ![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FUV1cQmQyNhEuHhavvUYz%252Fimage.png%3Falt%3Dmedia%26token%3D87a21a9f-adca-4c72-9898-1985cec1947a\&width=768\&dpr=4\&quality=100\&sign=9c0f861d\&sv=2)Clear, accurate error message
+    <figure><img src="../../../../.gitbook/assets/image (1632).png" alt=""><figcaption><p>Clear, accurate error message</p></figcaption></figure>
 
+### New Rules
 
-
-#### New Rules <a href="#new-rules" id="new-rules"></a>
-
-1. New Rule for Apex: “OuterClassExplicitSharing” Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.
+1. **New Rule for Apex: “OuterClassExplicitSharing”**\
+   \
+   Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.
    * Name: Outer Class Explicit Sharing
    * Key: OuterClassExplicitSharing
    * Type: Vulnerability
@@ -89,39 +75,59 @@ Verified the rule: OuterClassExplicitSharing for the following scenarios:
 
 1.  Verified the Rule’s description, type, severity, message, tag, Remediation, Key, Name
 
-    ![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FiLcGLFbFKOt8qwoKaD2F%252Fimage.png%3Falt%3Dmedia%26token%3D33b2a433-8b83-4408-974a-be35e9e3f5a4\&width=768\&dpr=4\&quality=100\&sign=93eca429\&sv=2)Outer Class Explicit Sharing screenshot
+    <figure><img src="../../../../.gitbook/assets/image (1633).png" alt=""><figcaption><p>Outer Class Explicit Sharing screenshot</p></figcaption></figure>
+
+
 2.  Verified the rule is not throwing a violation if with sharing, without sharing, or inherited sharing are used.
 
-    ![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252Fk1yigcAQjObCuQ57k0it%252Fimage.png%3Falt%3Dmedia%26token%3D3c66b6ad-df2c-4859-b486-52f48392972f\&width=768\&dpr=4\&quality=100\&sign=9d9b46be\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/image (1634).png" alt=""><figcaption><p>Verified violation not thrown</p></figcaption></figure>
 3.  Verified the violation is thrown if with sharing, without sharing, or inherited sharing are not used.
 
-    ![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FKtqyqY7otOSeYEr6cN1Z%252Fimage.png%3Falt%3Dmedia%26token%3D303bd3d1-3878-4c7c-9692-a81401162937\&width=768\&dpr=4\&quality=100\&sign=ea85844b\&sv=2)Example: Explicit sharing rule
+    <figure><img src="../../../../.gitbook/assets/image (1635).png" alt=""><figcaption><p>Example: Explicit sharing rule</p></figcaption></figure>
 
-NOTE: This rule overlaps with the ClassExplicitSharing rule and will always overlap violations for outer classes. This rule has been created to:
+{% hint style="info" %}
+NOTE: This rule overlaps with the ClassExplicitSharing rule and will always overlap violations for outer classes.  This rule has been created to:
 
 * Allow for the reporting of this issue as a Vulnerability instead of as a code smell
 * Only flag if sharing settings are missing for outer classes (inner classes that are missing sharing settings will not be flagged (which is the opposite of how the ClassExplicitSharing rule works)
 
 If both are active, check the violations that have been reported and disable one of the rules as necessary.
+{% endhint %}
 
-#### Fixes <a href="#fixes" id="fixes"></a>
+### Fixes
 
-1. Fixed rule “Require CSRF protection on GET requests” to distinguish Visualforce Page settings from Aura components. Previously, this rule was flagging violations on .cmp files that are aura:component files. The guidance in the rule suggested to change the Visualforce page setting, but this is not possible on Aura components because they are not Visualforce components. This fix for the rule “Require CSRF protection on GET requests” now enables CodeScan to distinguish Visualforce Page settings from Aura components.
-2. Fixed issue with rule “Flow DML Should Not Be Called in Loops" Recently, we observed that the rule “Flow DML Should Not Be Called in Loops" throws null pointer exception because of access of parent node without null check. This fix corrects this issue. Verified the fix by testing and confirming that the rule now throws a violation as expected, and, additionally, we are no longer getting the null pointer exception.
-3. Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}} ” {Permissions should be checked before accessing resource }. Previously, this rule was throwing violations that were false positives. This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data. As per Salesforce documentation, when checking the Access for the inner query object it allows to check by using \_\_c, but while making inner query on related Objects it must be in plural and end with\_\_r. This fix corrects this issue. In this enhancement, the Object is checked by using isAccessible() before accessing its data.
+1. **Fixed rule “Require CSRF protection on GET requests” to distinguish Visualforce Page settings from Aura components.**\
+   \
+   Previously, this rule was flagging violations on .cmp files that are aura:component files. The guidance in the rule suggested to change the Visualforce page setting, but this is not possible on Aura components because they are not Visualforce components. This fix for the rule “Require CSRF protection on GET requests” now enables CodeScan to distinguish Visualforce Page settings from Aura components.
+2. **Fixed issue with rule “Flow DML Should Not Be Called in Loops"**\
+   \
+   Recently, we observed that the rule “Flow DML Should Not Be Called in Loops" throws null pointer exception because of access of parent node without null check. This fix corrects this issue. Verified the fix by testing and confirming that the rule now throws a violation as expected, and, additionally, we are no longer getting the null pointer exception.
+3. **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}} ” {Permissions should be checked before accessing resource }.**\
+   \
+   Previously, this rule was throwing violations that were false positives.  This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.\
+   \
+   As per Salesforce documentation, when checking the Access for the inner query object it allows to check by using \_\_c, but while making inner query on related Objects it must be in plural and end with\_\_r.\
+   \
+   This fix corrects this issue.  In this enhancement, the Object is checked by using isAccessible() before accessing its data.
 
-NOTE: We addressed a similar issue related to SOQL queries in a previous release. That update has been extended in this release to also include SOSL queries.
+{% hint style="info" %}
+NOTE: We addressed a similar issue related to SOQL queries in a previous release.  That update has been extended in this release to also include SOSL queries.
+{% endhint %}
 
 Verified the rule “Field Level Security Vulnerabilities” for the following scenarios:
 
 *   Rule is throwing the violation if we didn’t check isAccessible for the objects used in inner query.
 
-    ![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FWu2p9nUEVerOahorMjLC%252Fimage.png%3Falt%3Dmedia%26token%3Dac39023c-d031-4de5-b3ea-7ddb7dc453d1\&width=768\&dpr=4\&quality=100\&sign=1ceb2dd\&sv=2)Violation thrown if IsAccessible not checked
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Violation thrown if IsAccessible not checked</p></figcaption></figure>
+
+
 *   Rule is not throwing the violation if we checked isAccessible for the objects used in inner query.
 
-    ![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FqesH68S03oudcjtagM9o%252Fimage.png%3Falt%3Dmedia%26token%3Da69b5a08-7097-4b6a-bae6-e7de0066790f\&width=768\&dpr=4\&quality=100\&sign=e30e6497\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
     _REMINDER_: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.
+
+    &#x20;
 
     We have verified the rule:FieldLevelSecurity for the following Sscenarios:
 
@@ -129,4 +135,10 @@ Verified the rule “Field Level Security Vulnerabilities” for the following s
     * Rule is not throwing violation if system mode value is set = “true” (and the object IS NOT checked via isAccessible for methods)
     * Rule is not throwing violation if system mode value is set = “false” (and the object IS checked via isAccessible for the methods)
 
-1. **Fixed issue with CodeScan rule to check for special characters in Page Layout Name (for example: : , ( ) ' " - & )** Recently, we added a new rule that checks for special characters used in a Page Layout name (note: Metadata API name: “Layout”). This rule will enforce naming conventions for Page Layouts, which are in line with Salesforce best practices as well as several existing customers’ standards. The aim of this new rule will help identify components for refactoring of current Page Layouts that are incorrectly named. The rule checks layout and layout-meta.xml files for file names that include: - ! @ # $ % ^ & \* ? ' : ; ” + = However, we recognize that we inadvertently included hyphen (-) in this special character list. Hyphen should NOT be included because Salesforce automatically adds this special character. This fix removes hyphen in the check for special characters in Page Layout Name.
+4. **Fixed issue with CodeScan rule to check for special characters in Page Layout Name (for example: : , ( ) ' " - & )** \
+   \
+   Recently, we added a new rule that checks for special characters used in a Page Layout name (note: Metadata API name: “Layout”). This rule will enforce naming conventions for Page Layouts, which are in line with Salesforce best practices as well as several existing customers’ standards. The aim of this new rule will help identify components for refactoring of current Page Layouts that are incorrectly named. The rule checks layout and layout-meta.xml files for file names that include: - ! @ # $ % ^ & \* ? ' : ; ” + = \
+   \
+   However, we recognize that we inadvertently included hyphen (-) in this special character list. Hyphen should NOT be included because Salesforce automatically adds this special character. \
+   \
+   This fix removes hyphen in the check for special characters in Page Layout Name.

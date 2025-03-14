@@ -1,6 +1,6 @@
 # Release Notes 24.0.8
 
-## CodeScan On-Premises&#x20;
+## CodeScan Self-Hosted
 
 ### Release 24.0.8
 

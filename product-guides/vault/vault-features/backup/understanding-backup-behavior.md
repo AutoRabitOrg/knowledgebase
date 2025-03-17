@@ -1,7 +1,3 @@
----
-description: Understanding Backup Behavior
----
-
 # Understanding Backup Behavior
 
 ## Understanding **Backup Behavior** for Polymorphic Fields, Special Objects, and Ignored Objects

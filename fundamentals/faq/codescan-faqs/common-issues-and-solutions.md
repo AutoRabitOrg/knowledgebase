@@ -41,6 +41,43 @@ This error either occurs if it’s out of memory or when multiple analyses have 
 
 Check to see whether CodeScan is blocked in Salesforce (Setup > Connected Apps > CodeScan). If it's blocked, unblocked it. If it's already unblocked, yet you are still seeing the error, uninstall then reinstall, block it, and then unblock it.
 
+#### Error(s): Expired Access/Refresh Token or Authentication Failure
+
+Following a sandbox refresh, you may encounter issues scanning your environment. In most cases, an “expired access/refresh token” or “authentication failure” error shows under the Project Analysis tab.
+
+To resolve these issues, simply reauthenticate your environment. Follow these steps:
+
+1. Select Project -> Project Analysis tab
+2.  Click Delete Analysis\
+
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Delete Project Analysis</p></figcaption></figure>
+3.  Make sure you DO NOT select the checkbox to Delete the Project Also (as you just want to reattach it while maintaining the same project and its history).
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>DO NOT select the checkbox to Delete the Project Also</p></figcaption></figure>
+
+
+
+{% hint style="danger" %}
+Selecting the checkbox and deleting the entire project is irreversible and leads to the complete loss of historical analysis data.
+{% endhint %}
+
+4.  Then select the Attach Analysis Project.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Attach Analysis Project</p></figcaption></figure>
+5.  Select Salesforce.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Choose Salesforce Analysis Project</p></figcaption></figure>
+6.  It will redirect you to the authorization page. Enter your credentials.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Salesforce Credentials Authorization</p></figcaption></figure>
+
+
+7. After successful authentication, you will be redirected to CodeScan, and a new analysis will kick off.
+
 ## Copado Integration <a href="#faqs" id="faqs"></a>
 
 #### **Should the user add a new analysis project after the CodeScan-Copado integration is complete? If the user creates one, how does CodeScan understand it's the same project as the Copado connection?**

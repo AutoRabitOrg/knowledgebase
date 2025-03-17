@@ -1,7 +1,5 @@
 # Installing CodeScan Self-Hosted
 
-As part of our commitment to providing the best possible products and services, we periodically discontinue support for older software versions. All **CodeScan self-hosted versions below 23.1.1** will reached their **End of Life (EOL)** on **December 31, 2024**.
-
 ## CodeScan Self-Hosted Installation <a href="#codescan-onpremise-implementation" id="codescan-onpremise-implementation"></a>
 
 **What's New:**
@@ -10,7 +8,7 @@ CodeScan Self-Hosted now has two versions available to meet your operating syste
 
 **CodeScan version 25.1.0 Eagle Edition v3.0** (now compatible with _**SonarQube™ versions 10.1 to 2025.1 LTA)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
-**CodeScan version 25.0.1 Tiger Edition v3.0** _(_&#x6E;ow compatible with _**SonarQube™ version 10.3 or earlier)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
+**CodeScan version 25.0.1 Tiger Edition v3.0** (now compatible with _**SonarQube™ version 9.9 LTA and 10.0 to 10.3)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
 
 [**SonarQube Compatibility Matrix**](installing-codescan-self-hosted.md#sonarqube-tm-download-1)
 
@@ -121,6 +119,10 @@ At [SonarSource.com](https://www.sonarsource.com/), find the latest compatible v
 <table data-full-width="false"><thead><tr><th width="115">CodeScan Version</th><th width="125">Platform Compatible</th><th width="103">Release Date</th><th width="104">Support End Date</th><th width="107">Link</th><th width="126">Release Note</th></tr></thead><tbody><tr><td>24.0.8</td><td>SonarQube™ <br>10.2<br>10.1 <br>9.9 LTA</td><td>July 2024</td><td>July 2025</td><td><a href="https://license.code-scan.com/index.php/download/sonar-salesforce-plugin-24.0.8.zip">Download</a></td><td><a href="../../../release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/release-notes-24/release-notes-24.0.8.md">Release Note</a></td></tr><tr><td>24.0.5</td><td>SonarQube™ <br>10.2<br>10.1 <br>9.9 LTA</td><td>June 2024</td><td>June 2025</td><td><a href="https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-24.0.5.zip">Download</a></td><td><a href="../../../release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/release-notes-24/release-notes-24.0.5.md">Release Note</a></td></tr><tr><td>24.0.4</td><td><p>SonarQube™ <br>10.2</p><p>10.1<br>9.9 LTA</p></td><td>April 2024</td><td>April 2025</td><td><a href="https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-24.0.4.zip">Download</a></td><td><a href="../../../release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/release-notes-24/release-notes-24.0.4.md#release-notes-24.0.4">Release Note</a></td></tr><tr><td>24.0.1</td><td><p>SonarQube™ <br>10.2</p><p>10.1 </p><p>9.9 LTA</p></td><td>January 2024</td><td>30 January 2025</td><td><a href="https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-24.0.1.zip">Download</a></td><td><a href="https://knowledgebase.autorabit.com/overview/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.1">Release Note</a></td></tr><tr><td>22.8</td><td>SonarQube™<br>9.9 LTA<br>8.9 (Previous LTA)</td><td>25 December 2022</td><td>30 April 2025</td><td><a href="https://license.code-scan.com/index.php/download/login?path=sonar-salesforce-plugin-22.8.zip">Download</a></td><td><a href="https://knowledgebase.autorabit.com/codescan/docs/release-note-228">Release Note</a></td></tr></tbody></table>
 
 </details>
+
+{% hint style="info" %}
+NOTE: As part of our commitment to providing the best possible products and services, we periodically discontinue support for older software versions. All **CodeScan self-hosted versions below 23.1.1** will reach their **End of Life (EOL)** on **December 31, 2024**.
+{% endhint %}
 
 {% hint style="info" %}
 **Note:** Keep in mind you need to download a version compatible with your **SonarJS plugin** version. Refer to the [requirement](https://knowledgebase.autorabit.com/codescan/docs/codescan-self-hosted) section for more information.
@@ -279,7 +281,7 @@ For more instructions on setting up the **SonarQube™ ant plugin**, see [https:
 * If your network has a proxy, you must pass some more parameters to avoid license errors.
 * A guide for this is available [HERE](https://knowledgebase.autorabit.com/codescan/docs/setting-up-codescan-for-use-with-a-proxy).
 
-### Having trouble? <a href="#having-trouble" id="having-trouble"></a>
+## Having trouble? <a href="#having-trouble" id="having-trouble"></a>
 
 * Read the tutorials
 * Check the troubleshooting section

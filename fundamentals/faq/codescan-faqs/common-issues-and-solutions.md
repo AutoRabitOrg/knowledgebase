@@ -62,7 +62,7 @@ To resolve these issues, simply reauthenticate your environment. Follow these st
 Selecting the checkbox and deleting the entire project is irreversible and leads to the complete loss of historical analysis data.
 {% endhint %}
 
-4.  Then select the Attach Analysis Project.\
+4.  Then select Attach Analysis Project.\
 
 
     <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Attach Analysis Project</p></figcaption></figure>

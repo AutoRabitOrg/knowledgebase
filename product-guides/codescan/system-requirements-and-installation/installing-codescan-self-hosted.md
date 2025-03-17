@@ -52,7 +52,7 @@ Check your SonarQube compatibility in the matrices below based on your CodeScan 
 
 <details>
 
-<summary>Eagle + SonarQube Compatibility Matrix</summary>
+<summary>CodeScan Eagle + SonarQube Compatibility Matrix</summary>
 
 
 
@@ -64,7 +64,7 @@ NOTE: All Eagle editions are compatible with SonarQube 10.1-10.7 and 2025.1 LTA.
 
 <details>
 
-<summary>Tiger + SonarQube Compatibility Matrix</summary>
+<summary>CodeScan Tiger + SonarQube Compatibility Matrix</summary>
 
 
 
@@ -76,7 +76,7 @@ NOTE: All Tiger editions are compatible with SonarQube 9.9 LTA and 10.1-10.3. So
 
 <details>
 
-<summary>Prior Versions + SonarQube Compatibility Matrix</summary>
+<summary>CodeScan Prior Versions + SonarQube Compatibility Matrix</summary>
 
 <table data-full-width="true"><thead><tr><th width="169">CodeScan Self-Hosted Plug-In</th><th width="107">SQ 9.9 LTA</th><th width="102">SQ 10.0</th><th width="106">SQ 10.1</th><th width="105">SQ 10.2</th></tr></thead><tbody><tr><td>24.0.8 (July 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td></tr><tr><td>24.0.5 (June 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td></tr><tr><td>24.0.4 (April 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td></tr><tr><td>24.0.1 (Jan 2024)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td></tr><tr><td>23.1.3 (Sept 2023)</td><td><mark style="color:green;">✓</mark></td><td><mark style="color:green;">✓</mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td><td><mark style="color:red;"><strong>⮾</strong></mark></td></tr></tbody></table>
 

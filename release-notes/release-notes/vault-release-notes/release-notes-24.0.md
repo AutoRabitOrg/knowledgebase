@@ -1,5 +1,16 @@
 # Release Notes 24.0
 
+## Vault 24.2.9 Release Notes
+
+**Release Date: 26 March 2025**
+
+**Bug Fixes:**
+
+* **Audit Fields Preservation:** Fixed an issue in which here audit fields were not retained for files and attachments, even when the _Set Audit Fields Upon Record Creation_ option was enabled.
+* **Child Object Deletion Restriction:** Resolved an issue in archival that prevented child objects from being deleted when parent record deletion was restricted due to existing child records in the Salesforce org.
+* **Retention Policy Date Update:** Fixed an issue where the retention policy date in the UI was incorrectly updated each time archival reports were executed in Vault.
+* **Success & Error Count Display:** Resolved an issue where the success and error count for common child objects like _Task_ and _Event_ were not displayed correctly.
+
 ## Vault 24.2.8 Release Notes
 
 **Release Date: 5 March 2025**

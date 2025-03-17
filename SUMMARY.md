@@ -703,6 +703,7 @@
     * [Backup](product-guides/vault/vault-features/backup/README.md)
       * [Start the Backup](product-guides/vault/vault-features/backup/start-the-backup.md)
       * [Schedule a Vault Backup](product-guides/vault/vault-features/backup/schedule-a-vault-backup.md)
+      * [Understanding Backup Behavior](product-guides/vault/vault-features/backup/understanding-backup-behavior.md)
     * [Compare](product-guides/vault/vault-features/compare/README.md)
       * [Comparing Two Backups](product-guides/vault/vault-features/compare/comparing-two-backups.md)
     * [Compliance](product-guides/vault/vault-features/compliance/README.md)

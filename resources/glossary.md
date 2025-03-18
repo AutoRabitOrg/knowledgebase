@@ -76,8 +76,8 @@ Visit the [Salesforce Glossary ](https://help.salesforce.com/s/articleView?id=sf
 * **Force.com:** A Platform-as-a-Service (PaaS) product designed to simplify the development and deployment of cloud-based applications and websites.
 * **Lightning Component:** A reusable unit of an app. A building block for Salesforce apps and experiences.
 * **Salesforce DX:** A Salesforce product in the App cloud that allows users to develop and manage Salesforce apps throughout the entire platform.
-* **Salesforce Object Query Language (SOQL):** A language to query your organization’s Salesforce data for specific information.
-* **Salesforce Object Search Language (SOSL):** A Salesforce search language used to perform text searches in records.
+* **Salesforce Object Query Language (SOQL):** A language to query your organization’s Salesforce data for specific information from the Lightning Platform database.
+* **Salesforce Object Search Language (SOSL):** A Salesforce search language used to perform text searches in records using the Lightning Platform API.
 * **Sandbox:** A copy of your production environment used for testing, training, and development.
 * **Visualforce:** A framework that allows developers to build sophisticated, custom user interfaces that can be hosted natively on the Lightning platform.
 

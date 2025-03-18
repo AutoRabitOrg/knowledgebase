@@ -8,24 +8,37 @@ hidden: true
 
 # ⚡ What we do
 
-Some of the things we specialize in at AutoRABIT:
+AutoRABIT delivers comprehensive **Salesforce DevSecOps solutions** tailored for regulated industries, ensuring **security, quality, and productivity** in Salesforce development. Since Salesforce was built as a Customer Resource Module (CRM) rather than a development platform, AutoRABIT simplifies complex processes through automation—enabling teams to achieve more with fewer resources.
 
-1. **Version Control**: We provide seamless integration with popular version control systems, enabling efficient tracking and management of changes to your codebase.
-2. **Automated Metadata Deployment**: Our platform automates the deployment process, ensuring quick, reliable, and error-free releases.
-3. **Data Deployment and Backup**: AutoRABIT ensures the integrity and security of your data through automated data deployment, backup, and recovery solutions.
-4. **Test Automation**: We enable teams to automate their testing processes, ensuring high-quality output and faster release cycles.
-5. **CodeScan Integration**: We integrate with CodeScan for enhanced static code analysis. This allows us to conduct thorough code quality checks, detect vulnerabilities early, and ensure your code adheres to the highest standards of performance and security.
-6. **Governance and Compliance**: Our platform facilitates adherence to regulatory standards and corporate policies, ensuring smooth audits and compliance checks.
+## **Who We Are**
+
+Founded in 2015, AutoRABIT is a global company dedicated to helping organizations **regain control of their Salesforce development** and implement **continuous delivery** of value to customers and employees.
+
+## **What We Offer**
+
+AutoRABIT provides an integrated suite of DevSecOps tools to **automate, secure, and optimize** Salesforce development:
+
+* **Automated Release Management (ARM):** Reducing the complexity of Salesforce development, deployment, and management enables teams to meet quality, security, and compliance standards with strategic automation.
+* **CodeScan:** Performing static code analysis and applying policy management tools gives you total visibility into the health of your Salesforce environment, reduces costs, finds vulnerabilities, and decreases time to market.
+* **Vault:** Implementing automated backup and recovery of Salesforce data, sophisticated data comparison tools, easy sandbox seeding, archiving, and comprehensive data management features ensures IT security, risk, and compliance needs are met.
+* **FlowCenter:** Simplifying the DevOps process with easy-to-use, drag-and-drop pipelines and illuminating progress and issues with comprehensive metrics creates value, clarity, and flow where there once was an unintelligible mess.
+
+## Why It Matters
+
+* **Version Control**: We provide seamless integration with popular version control systems, enabling efficient tracking and management of changes to your codebase.
+* **Automated Metadata Deployment**: Our platform automates the deployment process, ensuring quick, reliable, and error-free releases.
+* **Data Deployment and Backup**: AutoRABIT ensures the integrity and security of your data through automated data deployment, backup, and recovery solutions.
+* **Test Automation**: We enable teams to automate their testing processes, ensuring high-quality output and faster release cycles.
+* **CodeScan Integration**: We integrate with CodeScan for enhanced static code analysis. This allows us to conduct thorough code quality checks, detect vulnerabilities early, and ensure your code adheres to the highest standards of performance and security.
+* **Governance and Compliance**: Our platform facilitates adherence to regulatory standards and corporate policies, ensuring smooth audits and compliance checks.
 
 Our mission is to simplify Salesforce DevOps and enhance productivity, letting businesses focus on what they do best: deliver value to their customers. By taking the complexities out of the DevOps process, AutoRABIT helps teams accelerate their development cycles, improve quality, and drive business growth.
 
-Join us at AutoRABIT, and let's redefine Salesforce DevOps together.
+## What You'll Find
 
-***
+In our Knowledge Base, you will find:
 
-**In our Knowledge Base, you will find:**
-
-* Detailed User Guides: Step-by-step instructions to help you understand our product suite and navigate it with ease.
-* How-To Tutorials: Practical guides to resolve common issues, configure settings, and maximize your productivity.
-* Frequently Asked Questions (FAQs): Quick solutions and information on common queries about our products and services.
-* Troubleshooting Guides: Handy resources to identify and resolve technical issues.
+* **Detailed User Guides**: Step-by-step instructions to help you understand our product suite and navigate it with ease.
+* **How-To Tutorials**: Practical guides to resolve common issues, configure settings, and maximize your productivity.
+* **Frequently Asked Questions (FAQs)**: Quick solutions and information on common queries about our products and services.
+* **Troubleshooting Guides**: Handy resources to identify and resolve technical issues.

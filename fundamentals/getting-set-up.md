@@ -1,32 +1,5 @@
 # 🛠️ Getting Set Up
 
-AutoRABIT delivers comprehensive **Salesforce DevSecOps solutions** tailored for regulated industries, ensuring **security, quality, and productivity** in Salesforce development. Since Salesforce was built as a Customer Resource Module (CRM) rather than a development platform, AutoRABIT simplifies complex processes through automation—enabling teams to achieve more with fewer resources.
-
-## **Who We Are**
-
-Founded in 2015, AutoRABIT is a global company dedicated to helping organizations **regain control of their Salesforce development** and implement **continuous delivery** of value to customers and employees.
-
-## **What We Do**
-
-AutoRABIT provides an integrated suite of DevSecOps tools to **automate, secure, and optimize** Salesforce development:
-
-* **ARM (AutoRABIT Release Management):** Streamlines and automates Salesforce DevOps.
-* **CodeScan:** Ensures high-quality, compliant code for developers and administrators.
-* **Vault (Data Backup & Recovery):** Protects and recovers Salesforce data while meeting compliance requirements.
-* **FlowCenter:** Centralizes the entire DevSecOps platform, improving efficiency and risk mitigation.
-
-## **Why It Matters**
-
-AutoRABIT helps businesses **protect sensitive customer data, enhance productivity, and reduce security and compliance risks**. Our platform provides:
-
-* **Guardrails for innovation**—allowing organizations to scale safely.
-* **Executive-level dashboards**—enabling CIOs and CISOs to **monitor, control, and mitigate** Salesforce risk.
-* **A culture of continuous improvement**—supporting **faster, higher quality applications** at lower costs.
-
-With AutoRABIT, organizations gain **visibility, security, and efficiency**, filling Salesforce’s development gaps and enabling teams to innovate with confidence.
-
-Learn more at [www.autorabit.com](http://www.autorabit.com/).
-
 ## What do I need to get started?
 
 ### Salesforce

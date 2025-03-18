@@ -1,18 +1,37 @@
 # 🛠️ Getting Set Up
 
-## What is AutoRABIT? <a href="#what-is-autorabit" id="what-is-autorabit"></a>
+AutoRABIT delivers comprehensive **Salesforce DevSecOps solutions** tailored for regulated industries, ensuring **security, quality, and productivity** in Salesforce development. Since Salesforce was built as a Customer Resource Module (CRM) rather than a development platform, AutoRABIT simplifies complex processes through automation—enabling teams to achieve more with fewer resources.
 
-AutoRABIT is a cloud-based CI/CD and release automation suite specifically designed for Salesforce.com. AutoRABIT helps Salesforce developers, admins, analysts, and release managers automate version control, deployment, testing, data loading, and sandbox management across multiple Salesforce orgs.
+## **Who We Are**
 
-## What does AutoRABIT do? <a href="#what-does-autorabit-do" id="what-does-autorabit-do"></a>
+Founded in 2015, AutoRABIT is a global company dedicated to helping organizations **regain control of their Salesforce development** and implement **continuous delivery** of value to customers and employees.
 
-AutoRABIT delivers a unified CI/CD solution purpose-built for Salesforce. The ease of use provided by AutoRABIT makes it much easier for Salesforce administrators and developers to leverage an enterprise-class DevOps process to accelerate their journey from defining requirements to deploying code.
+## **What We Do**
+
+AutoRABIT provides an integrated suite of DevSecOps tools to **automate, secure, and optimize** Salesforce development:
+
+* **ARM (AutoRABIT Release Management):** Streamlines and automates Salesforce DevOps.
+* **CodeScan:** Ensures high-quality, compliant code for developers and administrators.
+* **Vault (Data Backup & Recovery):** Protects and recovers Salesforce data while meeting compliance requirements.
+* **FlowCenter:** Centralizes the entire DevSecOps platform, improving efficiency and risk mitigation.
+
+## **Why It Matters**
+
+AutoRABIT helps businesses **protect sensitive customer data, enhance productivity, and reduce security and compliance risks**. Our platform provides:
+
+* **Guardrails for innovation**—allowing organizations to scale safely.
+* **Executive-level dashboards**—enabling CIOs and CISOs to **monitor, control, and mitigate** Salesforce risk.
+* **A culture of continuous improvement**—supporting **faster, higher quality applications** at lower costs.
+
+With AutoRABIT, organizations gain **visibility, security, and efficiency**, filling Salesforce’s development gaps and enabling teams to innovate with confidence.
+
+Learn more at [www.autorabit.com](http://www.autorabit.com/).
 
 ## What do I need to get started?
 
 ### Salesforce
 
-Salesforce is a web-based Customer Relationship Management (CRM), which is an essential cloud application that the ARM tool works with to build a successful **CI/CD pipeline**. Therefore, whether you are in support, engineering, enterprise services, product, or customer success, it is essential to have a Salesforce environment to replicate bugs, train, or verify bug fixes.&#x20;
+Salesforce is a web-based CRM, which is an essential cloud application that ARM works with to build a successful **CI/CD pipeline**. Therefore, whether you are in support, engineering, enterprise services, product, or customer success, it is essential to have a Salesforce environment to replicate bugs, train, or verify bug fixes.&#x20;
 
 Salesforce provides a full copy of the **Lightning Platform** for free. This means you can get your own Developer Edition to integrate with ARM for free by signing up at: https://developer.salesforce.com/signup.&#x20;
 

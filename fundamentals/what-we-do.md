@@ -20,7 +20,6 @@ AutoRABIT provides an integrated suite of DevSecOps tools to **automate, secure,
 * **Automated Release Management (ARM):** Reducing the complexity of Salesforce development, deployment, and management enables teams to meet quality, security, and compliance standards with strategic automation.
 * **CodeScan:** Performing static code analysis and applying policy management tools gives you total visibility into the health of your Salesforce environment, reduces costs, finds vulnerabilities, and decreases time to market.
 * **Vault:** Implementing automated backup and recovery of Salesforce data, sophisticated data comparison tools, easy sandbox seeding, archiving, and comprehensive data management features ensures IT security, risk, and compliance needs are met.
-* **FlowCenter:** Simplifying the DevOps process with easy-to-use, drag-and-drop pipelines and illuminating progress and issues with comprehensive metrics creates value, clarity, and flow where there once was an unintelligible mess.
 
 ## Why It Matters
 

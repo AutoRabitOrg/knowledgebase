@@ -8,7 +8,7 @@
 * [🛠️ Getting Set Up](fundamentals/getting-set-up.md)
 * [ℹ️ FAQs](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)
-  * [User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
+  * [General User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
     * [ARM User Definitions](fundamentals/faq/autorabit-platform-user-definitions/arm-user-definitions.md)
   * [ARM-FAQs](fundamentals/faq/arm-faqs/README.md)
     * [Account & Administrator](fundamentals/faq/arm-faqs/account-and-administrator.md)

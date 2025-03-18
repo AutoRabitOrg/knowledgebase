@@ -4,9 +4,9 @@
 
 ## Fundamentals
 
+* [⚡ AutoRABIT Solutions](fundamentals/what-we-do.md)
 * [🛠️ Getting Set Up](fundamentals/getting-set-up.md)
-* [⚡ What we do](fundamentals/what-we-do.md)
-* [ℹ️ FAQ](fundamentals/faq/README.md)
+* [ℹ️ FAQs](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)
   * [User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
     * [ARM User Definitions](fundamentals/faq/autorabit-platform-user-definitions/arm-user-definitions.md)

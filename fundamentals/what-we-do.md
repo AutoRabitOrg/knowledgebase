@@ -3,10 +3,9 @@ description: >-
   At AutoRABIT, we're at the forefront of Salesforce DevOps solutions. Our
   advanced platform streamlines your development, testing, and release cycles,
   promoting continuous integration and delivery.
-hidden: true
 ---
 
-# ⚡ What we do
+# ⚡ AutoRABIT Solutions
 
 AutoRABIT delivers comprehensive **Salesforce DevSecOps solutions** tailored for regulated industries, ensuring **security, quality, and productivity** in Salesforce development. Since Salesforce was built as a Customer Resource Module (CRM) rather than a development platform, AutoRABIT simplifies complex processes through automation—enabling teams to achieve more with fewer resources.
 
@@ -33,12 +32,3 @@ AutoRABIT provides an integrated suite of DevSecOps tools to **automate, secure,
 * **Governance and Compliance**: Our platform facilitates adherence to regulatory standards and corporate policies, ensuring smooth audits and compliance checks.
 
 Our mission is to simplify Salesforce DevOps and enhance productivity, letting businesses focus on what they do best: deliver value to their customers. By taking the complexities out of the DevOps process, AutoRABIT helps teams accelerate their development cycles, improve quality, and drive business growth.
-
-## What You'll Find
-
-In our Knowledge Base, you will find:
-
-* **Detailed User Guides**: Step-by-step instructions to help you understand our product suite and navigate it with ease.
-* **How-To Tutorials**: Practical guides to resolve common issues, configure settings, and maximize your productivity.
-* **Frequently Asked Questions (FAQs)**: Quick solutions and information on common queries about our products and services.
-* **Troubleshooting Guides**: Handy resources to identify and resolve technical issues.

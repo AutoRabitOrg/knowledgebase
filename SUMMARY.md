@@ -754,10 +754,7 @@
 
 ## Resources
 
-* [👩‍💻 For Developers](resources/for-developers.md)
-* [🖥️ For Admins](resources/for-admins.md)
-* [📋 For Release Managers](resources/for-release-managers.md)
 * [🖥️ AutoRABIT Support](resources/technical-support-services.md)
-* [LearningHub](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
+* [LearningHub](https://learninghub.autorabit.com/)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [📙 Glossary](resources/glossary.md)

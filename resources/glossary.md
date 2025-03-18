@@ -68,13 +68,16 @@
 
 ## **Salesforce Terms**
 
-* **Apex:** A strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on the Lightning platform server in conjunction with calls to the API.
-* **Chatter:** Salesforce's collaboration tool that connects employees with each other and the records and files they need.
+Visit the [Salesforce Glossary ](https://help.salesforce.com/s/articleView?id=sf.glossary.htm\&type=5)to gain a better understanding of Salesforce-specific terms.
+
+* **Apex:** Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on the Lightning Platform server in conjunction with calls to the Lightning Platform API.&#x20;
+* **Chatter:** Salesforce collaboration tools that facilitate communication and record- or file-sharing.&#x20;
 * **Einstein Analytics:** A product that provides advanced analytics capabilities powered by artificial intelligence (AI) and machine learning.
-* **Force.com:** A Platform as a Service (PaaS) product designed to simplify the development and deployment of cloud-based applications and websites.
+* **Force.com:** A Platform-as-a-Service (PaaS) product designed to simplify the development and deployment of cloud-based applications and websites.
 * **Lightning Component:** A reusable unit of an app. A building block for Salesforce apps and experiences.
 * **Salesforce DX:** A Salesforce product in the App cloud that allows users to develop and manage Salesforce apps throughout the entire platform.
 * **Salesforce Object Query Language (SOQL):** A language to query your organization’s Salesforce data for specific information.
 * **Salesforce Object Search Language (SOSL):** A Salesforce search language used to perform text searches in records.
-* **Sandbox:** A copy of your production environment used for testing and development.
+* **Sandbox:** A copy of your production environment used for testing, training, and development.
 * **Visualforce:** A framework that allows developers to build sophisticated, custom user interfaces that can be hosted natively on the Lightning platform.
+

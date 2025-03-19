@@ -747,6 +747,7 @@
   * [Permissions Explorer](product-guides/guard/permissions-explorer.md)
   * [Change Monitoring](product-guides/guard/change-monitoring.md)
   * [Policies](product-guides/guard/policies.md)
+  * [Integration User License](product-guides/guard/integration-user-license.md)
 
 ***
 

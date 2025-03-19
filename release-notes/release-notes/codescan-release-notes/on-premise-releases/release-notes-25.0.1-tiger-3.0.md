@@ -118,12 +118,12 @@ Verified the rule “Field Level Security Vulnerabilities” for the following s
 
 *   Rule is throwing the violation if we didn’t check isAccessible for the objects used in inner query.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Violation thrown if IsAccessible not checked</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Violation thrown if IsAccessible not checked</p></figcaption></figure>
 
 
 *   Rule is not throwing the violation if we checked isAccessible for the objects used in inner query.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     _REMINDER_: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.
 

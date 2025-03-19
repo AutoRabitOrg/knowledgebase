@@ -1,13 +1,5 @@
 # Account & Administrator
 
-### How many times can I attempt to log in before being locked out of my account?
-
-After three unsuccessful attempts, a user is locked out. To log in, the user must enter the correct username, password, and the OTP sent to their email.
-
-### Who should I contact to reactivate my AutoRABIT account if it has been locked? <a href="#who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked" id="who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked"></a>
-
-If your account is locked, the person who holds the AutoRABIT main account should be your first point of contact because they will be able to reactivate it.
-
 ### I have admin access, so why can't I see some users' branches and commits that are listed under my organization? <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
 
 If your user account is associated with a different organization, this can happen.

@@ -122,3 +122,7 @@ This section is about configuring the default Apex Class for your Salesforce Org
 The list of users allowed to work with your Salesforce Org is available in this section. The administrator may assign permission to its users on various modules of ARM that are feasible with the Salesforce Org.
 
 <figure><img src="../../../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
+
+### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
+
+To update the username on all registered orgs, re-authenticate the orgs in **Admin > SF Org Management** page.

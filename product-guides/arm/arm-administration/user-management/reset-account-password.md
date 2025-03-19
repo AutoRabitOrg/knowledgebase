@@ -77,3 +77,13 @@ Use the following steps to change your current password:&#x20;
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Your new password takes effect immediately.
+
+FAQ:&#x20;
+
+### How many times can I attempt to log in before being locked out of my account?
+
+After three unsuccessful attempts, a user is locked out. To log in, the user must enter the correct username, password, and the OTP sent to their email.
+
+### Who should I contact to reactivate my AutoRABIT account if it has been locked? <a href="#who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked" id="who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked"></a>
+
+If your account is locked, the person who holds the AutoRABIT main account should be your first point of contact because they will be able to reactivate it.

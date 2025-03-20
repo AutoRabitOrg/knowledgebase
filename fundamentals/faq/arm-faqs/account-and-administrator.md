@@ -1,16 +1,10 @@
 # Account & Administrator
 
+{% hint style="info" %}
+Use the AI search feature to find answers to your AutoRABIT questions. In the future, FAQs will no longer be updated on these pages; instead, they will be integrated into the Product Guide pages by associated topic.
+{% endhint %}
 
-
-### Is it possible to change the username for the AutoRABIT login after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
-
-Once a user has been created, it cannot be changed. This can only be done by deleting the account. Follow the steps below:
-
-1. To **delete** the user account: Ask your administrator remove you from the user list.
-2. Make a **new account** with a different username and email address.
-3. Ask your administrator to grant you all required **permissions** exactly as they were for the previous username and account.
-
-### How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
+## How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
 
 To view your support ticket and its status, follow the steps below:
 

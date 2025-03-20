@@ -28,7 +28,7 @@ If you have **`Admin`** permissions, you can export a CSV file of all the users 
 **Important Note**: When a user logs in to ARM, the browser pop-up message will ask permission to access the location details. If you **allow** permission, the location details will be retrieved through your browser, but if you **deny** permission, the location details will be retrieved through your IP Address.
 {% endhint %}
 
-**To export all user's details in CSV:**
+**To export all users' details in CSV:**
 
 1. On the **`Users`** screen, in the upper right, click **`Export All Users`**.
 

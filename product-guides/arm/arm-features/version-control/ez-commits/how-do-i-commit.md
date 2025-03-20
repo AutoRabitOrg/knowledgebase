@@ -148,11 +148,6 @@ ARM allows performing a validation deployment before actually committing the cha
           <figure><img src="../../../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
 
           <figure><img src="../../../../../.gitbook/assets/image (1057).png" alt="" width="375"><figcaption></figcaption></figure>
-      *
-
-
-
-          *
    3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. \
 
 
@@ -229,7 +224,7 @@ Directly commit to your Version Control System without extra validations. Differ
 <figure><img src="../../../../../.gitbook/assets/image (1060).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** For Non-DX Branches, if you wish to commit only the minimal metadata structure of a custom object, you can use the following XML template. This can be achieved by enabling the review artifact feature in AutoRABIT EZ-Commit. An inline IDE editor will be available, allowing you to adjust the XML as needed (ensure that the XML remains deployable).
+**Note:** For Non-DX Branches, if you wish to commit only the minimal metadata structure of a custom object, you can use the following XML template. This can be achieved by enabling the review artifact feature in AutoRABIT EZ-Commit. Use the inline IDE editor to adjust the XML as needed (ensure the XML is valid and remains deployable before committing).
 
 **Sample Minimal XML Format for a Custom Object:**
 

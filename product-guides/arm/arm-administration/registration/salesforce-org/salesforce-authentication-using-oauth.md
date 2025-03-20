@@ -44,3 +44,13 @@ The **Salesforce** platform implements the **OAuth 2.0 Authorization Framework**
     redirecturl=<AutoRABIT application access URL>/oauth/_callback
     hosturl==<AutoRABIT application access URL>
     ```
+
+### FAQ:
+
+### Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
+
+1. Verify in the user Salesforce Org if the AutoRABIT Connected App is **“Blocked”** and unblock it.
+2. Verify in user Salesforce Org if there are any specific permissions set for the Connected App.
+3. Verify whether the redirect URL, client ID, and the secret key in **oauth.properties** file (path: .rabit/org/oauth.properties) are valid.
+
+If the user is on a proxy-enabled server and receives an error such as **"Username may not be null"**, the proxy credentials must be validated. If the proxy username is set to **"null"**, the above error will occur.

@@ -191,6 +191,8 @@ To assign users to a role and permission, use the following steps:
 
 <figure><img src="../../../../../.gitbook/assets/image (621).png" alt="" width="563"><figcaption></figcaption></figure>
 
+### FAQ <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
+
 ### I have admin access, so why can't I see some users' branches and commits that are listed under my organization? <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
 
 If your user account is associated with a different organization, this can happen.

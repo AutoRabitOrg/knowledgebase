@@ -87,3 +87,26 @@ After three unsuccessful attempts, a user is locked out. To log in, the user mus
 ### Who should I contact to reactivate my AutoRABIT account if it has been locked? <a href="#who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked" id="who-should-i-contact-to-reactivate-my-autorabit-account-if-it-has-been-locked"></a>
 
 If your account is locked, the person who holds the AutoRABIT main account should be your first point of contact because they will be able to reactivate it.
+
+### Why did I not receive the email to reset my account password? <a href="#not-receiving-email-to-reset-your-account-password" id="not-receiving-email-to-reset-your-account-password"></a>
+
+If you requested a new password but didn't receive your password reset email, then:
+
+1. Check the **spam** or **junk** email folder in your email accounts linked to your AutoRABIT account.
+2. Try to **reset your password** again.
+
+### What factors should I consider when modifying or resetting my account password? <a href="#what-are-the-factors-i-should-consider-when-modifying-or-resetting-my-account-password" id="what-are-the-factors-i-should-consider-when-modifying-or-resetting-my-account-password"></a>
+
+#### **Password Requirements:**
+
+1. MUST contain at least **10 characters** (12+ recommended)
+2. MUST contain at least **one uppercase** letter (A-Z)
+3. MUST contain at least **one lowercase** letter (a-z)
+4. MUST contain at least **one number** (0-9)
+5. MUST contain at least **one special** character (such as !, %, @, <, >, # and so on)
+6. MUST NOT contain an email address, first, middle or last name, or commonly used passwords
+7. MUST NOT be one of the **5 previously used** passwords
+
+### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
+
+ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](reset-account-password.md) to reset your ARM password.

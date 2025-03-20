@@ -1,29 +1,8 @@
-# Version Control-FAQs
+# Version Control
 
-## What is a Version Control System (VCS)? <a href="#what-is-a-version-control-system-vcs" id="what-is-a-version-control-system-vcs"></a>
-
-Version Control Systems are a category of software tools that helps with recording changes made to files by keeping track of modifications made to the code.
-
-## What version control tools are supported by ARM? <a href="#what-are-the-version-control-tools-supported-by-arm" id="what-are-the-version-control-tools-supported-by-arm"></a>
-
-The following version controls are supported:
-
-* GIT
-* TFS
-* SVN
-
-## What is GitHub and how does it work? <a href="#what-is-github-and-how-does-it-work" id="what-is-github-and-how-does-it-work"></a>
-
-GitHub is the home for all developers—a platform where you can share code, contribute to open-source projects, or even automate your workflow with tools like GitHub Actions and Packages. If you’re just getting started with GitHub, you may know it best as a place for version control and collaboration.
-
-## Are Git and GitHub the same? <a href="#are-git-and-github-the-same" id="are-git-and-github-the-same"></a>
-
-Git is a version control system (VCS). GitHub is the platform where Git repositories can be hosted and teams can work on them together.
-
-## What's the difference between git fetch and git pull? <a href="#whats-the-difference-between-git-fetch-and-git-pull" id="whats-the-difference-between-git-fetch-and-git-pull"></a>
-
-* **Git fetch** really only downloads new data from a remote repository; it doesn't integrate any of this new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
-* **Git pull**, by contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data, but also directly integrates it into your current working copy files.
+{% hint style="info" %}
+Use the AI search feature to find answers to your AutoRABIT questions. In the future, FAQs will no longer be updated on these pages; instead, they will be integrated into the Product Guide pages by associated topic.
+{% endhint %}
 
 ## What is a Commit in AutoRABIT? <a href="#what-is-commit-in-autorabit" id="what-is-commit-in-autorabit"></a>
 

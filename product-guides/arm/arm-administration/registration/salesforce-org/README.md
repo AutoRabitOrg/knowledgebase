@@ -98,3 +98,9 @@ You can change the **`Environment`** type, the **`Access Type`**, or both.
 
     <figure><img src="../../../../../.gitbook/assets/image (703).png" alt="" width="563"><figcaption></figcaption></figure>
 4. Click **`Yes`** to complete the request. Click **`No`** to close the confirmation message without changing the details.
+
+### **FAQ**
+
+### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
+
+To update the username on all registered orgs, re-authenticate the orgs in **Admin > SF Org Management** page.

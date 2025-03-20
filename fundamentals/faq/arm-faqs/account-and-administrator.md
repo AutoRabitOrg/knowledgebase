@@ -1,12 +1,6 @@
 # Account & Administrator
 
-### I have admin access, so why can't I see some users' branches and commits that are listed under my organization? <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
 
-If your user account is associated with a different organization, this can happen.
-
-### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
-
-To update the username on all registered orgs, re-authenticate the orgs in **Admin > SF Org Management** page.
 
 ### Is it possible to change the username for the AutoRABIT login after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
 
@@ -63,7 +57,7 @@ If you requested a new password but didn't receive your password reset email, th
 
 ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
-### Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
+### \*\*Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
 
 1. Verify in the user Salesforce Org if the AutoRABIT Connected App is **“Blocked”** and unblock it.
 2. Verify in user Salesforce Org if there are any specific permissions set for the Connected App.
@@ -71,15 +65,15 @@ ARM has a 90-day rotational policy that requires you to change your password eve
 
 If the user is on a proxy-enabled server and receives an error such as **"Username may not be null"**, the proxy credentials must be validated. If the proxy username is set to **"null"**, the above error will occur.
 
-### How will I track all the support tickets that I have created in ARM? <a href="#how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm" id="how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm"></a>
+### \*\*How will I track all the support tickets that I have created in ARM? <a href="#how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm" id="how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm"></a>
 
 View all your support tickets via **Quick Links > Help Center** from the ARM application which redirects to the Support portal page where you can see the list of open cases created by you or by your team.
 
-### Which version of TLS does ARM run? <a href="#which-version-of-tls-does-arm-run" id="which-version-of-tls-does-arm-run"></a>
+### \*\*Which version of TLS does ARM run? <a href="#which-version-of-tls-does-arm-run" id="which-version-of-tls-does-arm-run"></a>
 
 ARM runs on **TLS 1.2**, therefore when Salesforce disables TLS 1.0, it has no effect on ARM.
 
-### What rules do I need to obey when naming identifiers for all of the labels in the ARM application?
+### \*\*What rules do I need to obey when naming identifiers for all of the labels in the ARM application?
 
 There are some rules you have to follow for naming identifiers:
 
@@ -89,7 +83,7 @@ There are some rules you have to follow for naming identifiers:
 * Number (0-9) is allowed
 * Special characters (- and ,) are allowed.
 
-### What is the primary reason for restricting special characters when naming identifiers? <a href="#what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers" id="what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers"></a>
+### \*\*What is the primary reason for restricting special characters when naming identifiers? <a href="#what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers" id="what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers"></a>
 
 It is done to restrict XML injections and prevent XML file corruption.
 
@@ -118,7 +112,7 @@ ARM works best in the two most recent versions of these browsers:
 3. If cleaning the cache does not help, try a different browser (Firefox) and see if the problem persists.
 4. If the problem is solely with Chrome, reinstall it.
 
-### Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
+### \*\*Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
 
 Yes, this is achievable; however, your [Salesforce Orgs](../../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
 

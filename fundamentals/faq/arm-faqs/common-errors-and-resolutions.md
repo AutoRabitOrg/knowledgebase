@@ -1,5 +1,18 @@
 # Common Errors and Resolutions
 
+### 413: Status Error
+
+Users may encounter a 413-status error in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.
+
+### Authentication Failed
+
+This error may occur when users are selecting an ALM on the EZ-Commit screen. VPN connectivity appears to be the source of intermittent ALM connectivity issues; the ALM is incorrectly configured. To correct this issue:&#x20;
+
+* On the My Account screen, look for the ALM configuration.&#x20;
+* To reauthenticate your ALM configuration, click the Test Connection icon to verify your credentials.
+
+If the steps above do not work, create a new credential and link it to your ALM account.
+
 ### **Cannot Open Git-Upload-Pack**&#x20;
 
 Users may encounter this error message when trying to register the Bitbucket repository. This occurs when:

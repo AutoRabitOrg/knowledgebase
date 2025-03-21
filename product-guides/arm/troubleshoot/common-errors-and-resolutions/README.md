@@ -54,7 +54,7 @@ Cross-verify the following things:
 * Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment or
 * &#x20;Disable the Repository Link.
 
-For more content, go through![](<../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
+For more content, go through![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
 
 ### **Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml**
 

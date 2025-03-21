@@ -78,6 +78,14 @@ If the test connection for the mapped repository and branch fails, we recommend 
 
 Users may encounter this error when trying to register a Salesforce environment in ARM. This occurs when users do not use the My Domain URL when adding the Salesforce org to ARM. To correct this error, use **My Domain URL** while registering a Salesforce org in ARM.
 
+### **Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact**
+
+Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI)​Comment
+
+### **Permissions Read All ServiceTerritory depends on permission(s): Read All OperatingHours**
+
+Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC](https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC)
+
 ### Please check credentials for 'xxx' branch of 'abc' repository
 
 Users may encounter this error when trying to connect to the Bitbucket repo, which typically relates to user permissions.  If you are using the wrong file format for the **package.xml,** then the above error occurs. Check the permissions you have on your Bitbucket repository with the repository owner/administrator. Request permissions other users have if you don't have the needed permissions.

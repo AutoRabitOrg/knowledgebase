@@ -16,7 +16,6 @@
     * [Connection & Authentication](fundamentals/faq/arm-faqs/connection-and-authentication.md)
     * [Common Errors and Resolutions](product-guides/arm/troubleshoot/common-errors-and-resolutions/README.md)
       * [Error Messages](fundamentals/faq/arm-faqs/common-errors-and-resolutions/error-messages.md)
-      * [GIT Errors](product-guides/arm/troubleshoot/common-errors-and-resolutions/git-errors.md)
     * [Deployment](fundamentals/faq/arm-faqs/deployment-faqs.md)
     * [Version Control](fundamentals/faq/arm-faqs/version-control-faqs.md)
     * [Data Loader](fundamentals/faq/arm-faqs/data-loader-encryption-and-data-storage-faq.md)

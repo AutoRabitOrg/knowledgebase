@@ -33,6 +33,14 @@ To resolve this issue:
 
 When running a CI job, if any of the folders in the remote repository has an empty **JSON** file, that will cause SFDX commands to fail with an incorrect JSON error. Delete the **empty JSON file(s)** from the remote repository to resolve this issue and re-run the CI job.
 
+### **Failed to push some refs to \[remote]**
+
+This error typically happens when you try to push to a remote repository, but your local branch is behind the remote branch. You need to pull the latest changes from the remote repository before you can push your changes.
+
+### **Failed to push some refs to \[remote]. Updates were rejected**
+
+This error usually occurs when you try to push to a branch that has been updated by someone else. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again.
+
 ### **GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.**
 
 This error may be encountered while attempting to commit changes for a production organization to the GitHub master branch. This occurred because protected branches are not allow force pushes. Get in touch with your Administrator to turn off the protection on that branch.
@@ -45,15 +53,9 @@ Multiple Branching Baseline jobs show no local modifications to commit. As a res
 
 Cross-verify the following things:
 
-Create a new repository link where the key should include part of the commit comment from AutoRABIT.
-
-(or)
-
-Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment.
-
-(or)
-
-Disable the Repository Link.
+* Create a new repository link where the key should include part of the commit comment from AutoRABIT or
+* Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment or
+* &#x20;Disable the Repository Link.
 
 For more content, go through![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
 
@@ -98,6 +100,18 @@ Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0
 
 Users may encounter this error when trying to connect to the Bitbucket repo, which typically relates to user permissions.  If you are using the wrong file format for the **package.xml,** then the above error occurs. Check the permissions you have on your Bitbucket repository with the repository owner/administrator. Request permissions other users have if you don't have the needed permissions.
 
+### **Pre-receive-hook declined**
+
+This error is usually returned when you have some branch restrictions set up in your repository and the commit you are trying to push does not meet the requirements of that branch restriction.
+
+### **Refusing to update checked out branch: \[branch\_name]**
+
+This error occurs when you try to push to the branch you currently have checked out. To resolve this, you can either switch to a different branch or create a new branch to work on.
+
+### **RPC failed; result=XXX, HTTP code = XXX**
+
+This error is often related to network issues or server misconfigurations. It can occur when pushing large files or when the Git server is experiencing problems. Checking your network connection and trying again later may resolve this error.
+
 ### Schema is invalid
 
 Users may encounter this error when a merge is failing for metadata members. This is due to an invalid structure. If there are any **special characters** like '**>**', '**<**', '**|**', '**=**', and the **string(length =7)**, this is considered a GIT conflict (a GIT behavior), which will cause the merge to fail. To prevent this, we recommend that you limit the previously mentioned unique characters to less than seven (7).&#x20;
@@ -117,6 +131,10 @@ When a commit returns this error, it is either because:&#x20;
 
 1. Ensure your account is correctly mapped with the version control branch to reflect the commits under your name.
 2. Verify your credentials in the **Admin > Credential Manager** section and authenticate the connection again.
+
+### **src refspec \[branch] does not match any**
+
+This error occurs when you try to push a branch that doesn't exist locally or has a different name. Ensure that the branch exists and that you have the correct name.
 
 ### **TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.**
 
@@ -150,6 +168,10 @@ Users may encounter this error message when a Merge is failed. This occurs when 
 ### **You are not authorized to push changes to the remote repository**
 
 This error occurs during the branching baseline operation when version control credentials are insufficient for pushing changes to a branch. This indicates that you have read permissions but not write permissions. After updating your permissions, re-run a new branching baseline operation.
+
+### **Your branch is ahead of \[remote]/\[branch] by X commits**
+
+This error message indicates that your local branch has commits that haven't been pushed to the remote branch. To resolve this, you can either push your local commits using **git push** or discard your local commits using **git reset** or **git stash**.
 
 ### Your connection is private.
 

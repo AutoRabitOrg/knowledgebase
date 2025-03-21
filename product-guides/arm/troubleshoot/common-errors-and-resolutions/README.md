@@ -162,6 +162,10 @@ Users may encounter this error message when a Merge is failed. This occurs when 
 1. Navigate to **Admin > VC repos**, select your repository, and perform a test connection. Please verify your repository credentials are not expired or modified.
 2. Re-run the CI job after you confirm that the repository connection is successful.
 
+### Why am I getting an error when I try to install CodeScan Sonar as a plugin in ARM? <a href="#why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm" id="why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm"></a>
+
+This occurs when using an old version of CodeScan. Install the most recent version of CodeScan to avoid any installation errors.
+
 ### **You are not authorized to push changes to the remote repository**
 
 This error occurs during the branching baseline operation when version control credentials are insufficient for pushing changes to a branch. This indicates that you have read permissions but not write permissions. After updating your permissions, re-run a new branching baseline operation.
@@ -182,7 +186,3 @@ If you are unable to connect to the ARM instance and get this error, it is due t
 6. Next to **Cookies and other site data** and **Cached images and files,** check the boxes.
 7. Click **Clear data**.
 8. Now, log in to your instances using the new browser tab.
-
-### Why am I getting an error when I try to install CodeScan Sonar as a plugin in ARM? <a href="#why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm" id="why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm"></a>
-
-You're getting an error because you're using an old version of CodeScan. Install the most recent version of CodeScan to avoid any installation errors.

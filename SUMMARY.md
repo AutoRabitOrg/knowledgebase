@@ -15,8 +15,6 @@
     * [Licensing and Subscription](fundamentals/faq/arm-faqs/licensing-and-subscription.md)
     * [Connection & Authentication](fundamentals/faq/arm-faqs/connection-and-authentication.md)
     * [Common Errors and Resolutions](product-guides/arm/troubleshoot/common-errors-and-resolutions/README.md)
-      * [Deployment Errors](product-guides/arm/troubleshoot/common-errors-and-resolutions/deployment-errors.md)
-      * [Error Codes](fundamentals/faq/arm-faqs/common-errors-and-resolutions/error-codes.md)
       * [Error Messages](fundamentals/faq/arm-faqs/common-errors-and-resolutions/error-messages.md)
       * [GIT Errors](product-guides/arm/troubleshoot/common-errors-and-resolutions/git-errors.md)
     * [Deployment](fundamentals/faq/arm-faqs/deployment-faqs.md)

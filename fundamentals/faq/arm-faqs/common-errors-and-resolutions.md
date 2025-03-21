@@ -1,20 +1,4 @@
-# Error Messages
-
-### 413: Status Error
-
-Users may encounter a **413-status error** in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.
-
-### Authentication Failed
-
-This error may occur when users are selecting an ALM on the EZ-Commit screen. This occurs due to:
-
-* VPN connectivity appears to be the source of intermittent ALM connectivity issues.
-* ALM is incorrectly configured.
-
-To correct this issue:
-
-1. On the **My Account** screen, look for the ALM configuration. To reauthenticate your ALM configuration, click the **Test Connection** icon to verify your credentials.
-2. If the steps above do not work, create a new credential and link it to your ALM account.
+# Common Errors and Resolutions
 
 ### **Cannot Open Git-Upload-Pack**&#x20;
 
@@ -57,7 +41,7 @@ Cross-verify the following things:
 * Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment or
 * &#x20;Disable the Repository Link.
 
-For more content, go through![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
+For more content, go through![](<../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
 
 ### **Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml**
 
@@ -189,6 +173,3 @@ If you are unable to connect to the ARM instance and get this error, it is due t
 ### Why am I getting an error when I try to install CodeScan Sonar as a plugin in ARM? <a href="#why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm" id="why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm"></a>
 
 You're getting an error because you're using an old version of CodeScan. Install the most recent version of CodeScan to avoid any installation errors.
-
-
-

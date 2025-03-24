@@ -1,11 +1,5 @@
 # Deployment
 
-#### If you are getting the following errors during the deployment in ARM, refer to the corresponding Salesforce article to resolve the issue: <a href="#if-you-are-getting-the-below-errors-during-the-deployment-in-arm-follow-the-respective-salesforce-ar" id="if-you-are-getting-the-below-errors-during-the-deployment-in-arm-follow-the-respective-salesforce-ar"></a>
-
-* For error: **The layout Must Contain an item for the required layout field: IsnonStandard,** please refer to this article: [https://developer.salesforce.com/forums/?id=906F00000008sDkIAI](https://developer.salesforce.com/forums/?id=906F00000008sDkIAI)
-* For error: **Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact,** please refer to this article: [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI)
-* For error: **Permissions Read All ServiceTerritory depends on permission(s): Read All OperatingHours,** please refer to this article: [https://developer.salesforce.com/forums/?id=906F0000000AkbzIA](https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC)
-
 ### Is it possible to transfer Analytics Dataset Metadata, Dashboards, and Dataflows from one Salesforce Org to another using AutoRABIT? <a href="#is-it-possible-to-transfer-analytics-dataset-metadata-dashboards-and-dataflows-from-one-salesforce-o" id="is-it-possible-to-transfer-analytics-dataset-metadata-dashboards-and-dataflows-from-one-salesforce-o"></a>
 
 Yes, AutoRABIT can move Analytics Components Metadata, Dashboards, and Dataflows from one Salesforce Org to another Org and the data will be available under the **Wave Components** list.

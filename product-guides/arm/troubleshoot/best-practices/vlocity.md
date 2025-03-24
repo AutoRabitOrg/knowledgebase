@@ -1,6 +1,6 @@
 # Vlocity
 
-Vlocity, as of June 1, 2020, is now a Salesforce company. Vlocity is a set of applications built solely on the Salesforce platform and caters to a number of industries including healthcare, energy, government, entertainment, and insurance. Vlocity is popular among many of our healthcare clients including Anthem.
+Vlocity, as of June 1, 2020, is now a Salesforce company. Vlocity is a set of applications built solely on the Salesforce platform and caters to a number of industries including healthcare, energy, government, entertainment, and insurance. Vlocity is popular among many of our healthcare clients.
 
 For best tracking and visibility, it’s recommended to set a metadata folder path for a repository. This can be completed through the use of the branch settings column in the Repository details. This will enable the metadata to be placed in the specified directory rather than the root directory. This should be completed before any baseline and commits as part of your VC Repo’s registration.
 

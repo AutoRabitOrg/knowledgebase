@@ -12,7 +12,7 @@ AutoRABIT provides **`24/7`** support.
 
 AutoRABIT offers various methods for requesting assistance or reporting issues:
 
-1. **Customer Support:** Click [here](https://support.autorabit.com/) to log a ticket with us. Our response is based on the priority of your request, as identified when submitted. When we receive the request, our team may contact you if our support agents require additional information.
+1. **Customer Support:** Click [here](https://support.autorabit.com/portal/en/newticket) to log a ticket with us. Our response is based on the priority of your request, as identified when submitted. When we receive the request, our team may contact you if our support agents require additional information.
 2. **Email Support:**
    * **Email us:** [support@autorabit.com](mailto:support@autorabit.com)
    * **General comments and feedback**: Please contact your Customer Success Manager (CSM) or email [csg@autorabit.com](mailto:csg@autorabit.com) if you’re unsure who your CSM is.

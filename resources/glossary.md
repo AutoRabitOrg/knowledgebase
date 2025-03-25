@@ -1,5 +1,7 @@
 # 📙 Glossary
 
+##
+
 ## **AutoRABIT Terms**
 
 * **ALM Masters™:** AutoRABIT's feature for end-to-end application lifecycle management.

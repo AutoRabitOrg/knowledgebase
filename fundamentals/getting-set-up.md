@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 🛠️ Getting Set Up
 
 ## What do I need to get started?

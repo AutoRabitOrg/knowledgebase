@@ -35,10 +35,4 @@ Want to see additional content or features on this site? Reach out to our [Docum
 Quick Link to the AutoRABIT Learning Hub
 {% endembed %}
 
-## Get Started
-
-We've put together some helpful guides for you to get set up with our products quickly and easily.
-
-{% content-ref url="fundamentals/getting-set-up.md" %}
-[getting-set-up.md](fundamentals/getting-set-up.md)
-{% endcontent-ref %}
+##

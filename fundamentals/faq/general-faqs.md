@@ -55,4 +55,4 @@ Governor Limits in Salesforce are the run time limits enforced by the apex runti
 
 ## Is AutoRABIT compatible with the deployment of CPQ data? <a href="#is-autorabit-compatible-with-the-deployment-of-cpq-data" id="is-autorabit-compatible-with-the-deployment-of-cpq-data"></a>
 
-Currently, we are supporting CPQ data deployment through the dataloader pro feature only. We'll release a beta version exclusively for CPQ deployments in the coming month.
+Currently, we are supporting CPQ data deployment through Data Loader Pro only. We'll release a beta version exclusively for CPQ deployments in the coming months.

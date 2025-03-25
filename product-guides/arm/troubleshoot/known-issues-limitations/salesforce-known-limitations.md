@@ -99,7 +99,7 @@ Use the following links for reference:
 
 _**What is AutoRABIT doing to help customers?**_
 
-AutoRABIT is committed to delivering an exceptional customer experience. We continue to work closely with Salesforce to overcome limitations where they exist. While we jointly pursue a more elegant solution, please use the workaround cited above and continue providing the much-needed feedback that makes AutoRABIT the best choice for Salesforce DevOps. Stay tuned for our weekly updates where new information will be communicated.
+AutoRABIT is committed to delivering an exceptional customer experience. Please continue providing the much-needed feedback that makes AutoRABIT the best choice for Salesforce DevOps.&#x20;
 
 ## Data Loader <a href="#dataloader" id="dataloader"></a>
 

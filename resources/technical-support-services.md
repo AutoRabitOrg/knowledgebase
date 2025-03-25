@@ -1,86 +1,48 @@
 # 🖥️ AutoRABIT Support
 
-## **Ways to get in touch with us:**
+If you need help, the first step is to look for information here in the AutoRABIT Knowledge Base. You’ll find wide-ranging documentation of AutoRABIT's entire suite of products, including existing and updated features, step-by-step guides, best practices, and frequently asked questions (FAQs).
 
-If you need further assistance beyond our Knowledge Base, AutoRABIT Support is at your service 24/7 through multiple contact options:
+## Hours of Operation <a href="#hours-of-operation-and-communication-channels" id="hours-of-operation-and-communication-channels"></a>
 
-## Support Portal
+AutoRABIT provides support 24 hours a day, 7 days a week. No matter where you live or work, we have you covered.
 
-The best way to contact us is to log in and submit a ticket via our support portal. You can do so by logging in to your instance and opening a ticket using the following steps.&#x20;
+## Contacting Support <a href="#contacting-the-arm-support-team" id="contacting-the-arm-support-team"></a>
 
-_However, if you are **unable to log in to your instance**, please access our portal at_ [_https://support.autorabit.com/portal/en/home_](https://support.autorabit.com/portal/en/home)_. Here, you can view and search for Knowledge Base articles and FAQs, access existing support tickets, visit the Learning Hub, and watch relevant videos. If you still need further assistance, scroll to the bottom of the_ [_Support Portal_](https://support.autorabit.com/portal/en/home) _page to submit a Help Desk ticket._&#x20;
+AutoRABIT offers various methods for requesting assistance or reporting issues:
 
-### ARM Product Support
+1. **Portal:** Log in to your instance and submit a support ticket.
+   * **ARM**: Select Quick Links > Help Desk & Feedback.
+   * **CodeScan**: Click on the question mark (?) in the upper right corner and select "Get Help."
+   * **Vault**: Click on the question mark (?) in the upper right corner and select "Get Help."
+2. **Customer Support:** If you can't access your portal, click [here](https://support.autorabit.com/portal/en/newticket) to log a ticket with us. Our response is based on the priority of your request, as identified when submitted.&#x20;
+   * **Low Priority**: 24 hours
+   * **Medium Priority**: 3 hours
+   * **High Priority**: 2 hours
+   * **Critical Priority**: 1 hour
+3. **Email Support:**
+   * **Email us:** [support@autorabit.com](mailto:support@autorabit.com)
+   * **General comments and feedback**: Please contact your Customer Success Manager (CSM) or email [csg@autorabit.com](mailto:csg@autorabit.com) if you’re unsure who your CSM is.
+   * **Sales**: [sales@autorabit.com](mailto:sales@autorabit.com)
+4. **Call Support:** **`+ 1 925 500 1004 (24/7)`**
 
-1. **Log in to the instance:** After logging in, proceed to the next step.
-2. **Navigate to Quick Links**: Click on the “Quick Links” section.
-3. **Access the Support Portal:** Locate and select the “Help Desk & Feedback” button. This will redirect you to our Support Portal.
+## Using the Support Portal
 
-<figure><img src="../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-4. **Existing Tickets:** On the [_Support Portal_](https://support.autorabit.com/portal/en/home) page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
+1. **Existing Tickets:** On the [_Support Portal_](https://support.autorabit.com/portal/en/home) page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
 
 <figure><img src="../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.&#x20;
+2. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.&#x20;
 
-<figure><img src="../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## **Viewing Organization Tickets** <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
 
-***
+To view organization-related support tickets, go to the Help Desk ticketing system, then navigate to **Teams Queue** under **Tickets**.
 
-### Vault Product Support
+<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VT7TJLCO.png" alt=""><figcaption></figcaption></figure>
 
-1. **Log in to the instance.** After logging in, proceed to the next step.
-2. **Access the Help Center:** Click on the question mark (?) icon (usually located in the top-right corner) and select “Get Help.”
+## **Submitting Multiple Tickets**
 
-<figure><img src="../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Generally, we prefer separate issues to be reported via separate conversations. This allows different team members to work on these issues simultaneously to resolve them sooner. If you find you are working on a larger project with multiple issues, let us know — we'll do our best to route these to the same Support Engineer to help address your concerns.
 
-3. **Existing Tickets:** On the _Support Portal_ page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
-4. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.
+## **Seeking Additional Training**
 
-<figure><img src="../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-### CodeScan Product Support
-
-1. Log in to the instance.
-2. Click on the question mark icon (?) > then click on “**Get Help**.”
-
-<figure><img src="../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-3. It will redirect you to the Support Portal page where existing tickets can be accessed. You can also create a new ticket by clicking on the “**Add Ticket**” button.
-
-<figure><img src="../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## Email Support
-
-* If you are unable to use the methods above, you can email us at support@autorabit.com; however, the portal is the preferred and recommended method.
-* If you need to contact your Customer Success Manager but don’t know how to reach them, you can email csg@autorabit.com.
-* If your questions are sales-related, contact your Account Executive or email sales@autorabit.com. They will help your message get to the right people.&#x20;
-
-## Additional Information
-
-Additional information about our Technical Support Services is available at [https://www.autorabit.com/technical-support-services/](https://www.autorabit.com/technical-support-services/).&#x20;
-
-### FAQ
-
-### **How can I view my organization-related support tickets in AutoRABIT?** <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
-
-To view your support ticket and its status, follow the steps below:
-
-1. Log in to your ARM instance.
-2. At the top of the page, navigate to **Quick Links > Help Center**. You'll be redirected to the ARM Support Dashboard page.
-3.  Navigate to **Teams Queue** under **Tickets**.\
-
-
-    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VT7TJLCO.png" alt=""><figcaption></figcaption></figure>
-
-Now you will be able to view your org-related tickets here.
-
+We encourage each of our customers to access the [AutoRABIT LearningHub](https://learninghub.autorabit.com/s/) regularly as we continually refine and expand the training and help materials available there. If you need additional training on parts of the platform, you can arrange it through your Customer Success Manager. We are happy to help you identify how to utilize the platform better.

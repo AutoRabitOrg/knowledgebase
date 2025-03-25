@@ -53,6 +53,4 @@ Governor Limits in Salesforce are the run time limits enforced by the apex runti
 * **Workflow -** Workflow is an automated process, a point-and-click that doesn't need coding. You can use Workflow rules when you want to take action (email, task, field update, or outbound message) for the same object or from Child to parent object. You cannot perform DML operations on workflow. Workflows work only after some actions.
 * **Trigger -** Trigger is a programmatic code approach that fires before or after a record is inserted, updated, or deleted. Using triggers, you can work on multiple objects. You can query, and you can perform any DML operation. The trigger works before and after some actions.
 
-## Is AutoRABIT compatible with the deployment of CPQ data? <a href="#is-autorabit-compatible-with-the-deployment-of-cpq-data" id="is-autorabit-compatible-with-the-deployment-of-cpq-data"></a>
-
-Currently, we are supporting CPQ data deployment through Data Loader Pro only. We'll release a beta version exclusively for CPQ deployments in the coming months.
+## &#x20;<a href="#is-autorabit-compatible-with-the-deployment-of-cpq-data" id="is-autorabit-compatible-with-the-deployment-of-cpq-data"></a>

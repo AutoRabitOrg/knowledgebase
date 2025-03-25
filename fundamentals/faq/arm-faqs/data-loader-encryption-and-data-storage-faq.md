@@ -1,4 +1,4 @@
-# Data Loader-FAQ
+# Data Loader
 
 ## Encryption
 
@@ -42,3 +42,7 @@ _There are instances when you do not want to include ancestor records that haven
 ### Why does the current Data Loader setup require parent objects to be included without the Limit 0 option?
 
 The current Data Loader setup in AutoRABIT requires parent objects to be included without the Limit 0 option for the records, causing some records to fail. A code fix has resolved this issue, available in the ARM 23.1.28 build version.&#x20;
+
+## Is AutoRABIT compatible with the deployment of CPQ data? <a href="#is-autorabit-compatible-with-the-deployment-of-cpq-data" id="is-autorabit-compatible-with-the-deployment-of-cpq-data"></a>
+
+Currently, we are supporting CPQ data deployment through Data Loader Pro only. We plan to release a beta version exclusively for CPQ deployments in the coming months.

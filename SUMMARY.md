@@ -231,6 +231,7 @@
         * [Merge Conflicts](product-guides/arm/arm-features/version-control/ez-merge/merge-conflicts.md)
         * [Merge Requests](product-guides/arm/arm-features/version-control/ez-merge/merge-requests.md)
         * [Squash and Merge](product-guides/arm/arm-features/version-control/ez-merge/squash-and-merge.md)
+        * [Git Commit History and Merge Operations Basics](product-guides/arm/arm-features/version-control/ez-merge/git-commit-history-and-merge-operations-basics.md)
       * [Change Labels](product-guides/arm/arm-features/version-control/change-labels/README.md)
         * [Commit Labels](product-guides/arm/arm-features/version-control/change-labels/commit-labels.md)
         * [Release Labels](product-guides/arm/arm-features/version-control/change-labels/release-labels.md)

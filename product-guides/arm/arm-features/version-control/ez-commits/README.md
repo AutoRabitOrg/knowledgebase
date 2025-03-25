@@ -1,18 +1,29 @@
 # EZ-Commits
 
-### About EZ-Commit <a href="#about-ez-commit" id="about-ez-commit"></a>
+## About EZ-Commit <a href="#about-ez-commit" id="about-ez-commit"></a>
 
-Commit, in Salesforce terminology, is the process of adding/migrating the changes by developers to a Version Control Branch to record their development progress. As a developer works, the version control system automatically tracks changes they make to files. When a portion of the feature is complete, the developers commit their changes to their branch, accompanied by an informative description.
+In DevOps, a **commit** is a bundled snapshot of changes made to files under version control. These can include adding, modifying, or deleting code and metadata. Rather than logging every change individually, version control systems group them into a single action—a commit—that marks a specific point in development.
 
-### Why is it important? <a href="#why-is-it-important" id="why-is-it-important"></a>
+In **AutoRABIT**, a commit is the process of adding or migrating a Salesforce developer’s changes to a version control branch. This records development progress and integrates with CI/CD pipelines for traceability, quality checks, and automation.
 
-If I’ve heard anything from my software development community, it’s “Commit Early and Often!”. But why?
+As developers build features or fix bugs, their changes are tracked in real time. When a logical unit of work—like an updated Apex class or new Lightning component—is complete, it’s committed to a branch with a descriptive message. These commits often trigger automated testing and deployments, forming the foundation of consistent, high-quality releases.
 
-* Periodic Checkpoints in your workflow will give you less time and space between the code you wrote and the thing you broke.
-* You can better understand how things in your code were broken.
-* Let people see what really happened — unless it’s a public repo or perhaps it isn’t needed, having a version history is important to understand the code.
-* If you make a small change in your code and something goes horribly wrong and you lose your work, you’re only losing a small change.
-* There can never be TOO many commits. If by some act of God, something needs to be rewritten, it’d be a lot easier to not have to rewrite a huge chunk.
+### **Why Is Committing Important?**
+
+Frequent commits are a best practice in modern software development. They offer several key benefits:
+
+1. **Incremental Progress Tracking**\
+   Committing regularly creates checkpoints, making it easier to trace and isolate issues when bugs occur.
+2. **Easier Debugging**\
+   Smaller commits help identify the exact changes that introduced a problem, streamlining the debugging process.
+3. **Clear Version History**\
+   A detailed commit history documents how code has evolved, aiding both collaboration and future maintenance.
+4. **Reduced Risk of Data Loss**\
+   Committing often ensures that only minimal work is lost in the event of an error or system failure.
+5. **Simplified Rework and Rollbacks**\
+   With more granular commits, reverting or modifying specific changes becomes more manageable.
+
+Regular, meaningful commits contribute to more reliable, traceable, and maintainable code across teams and projects.
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
@@ -22,3 +33,13 @@ Below are the prerequisites to be performed before proceeding with the commit to
 2. **Register your Salesforce Organization in AutoRABIT:** AutoRABIT connects to your Salesforce Org using either secure OAuth method or using username/password connections. This step can only be performed by an Admin.
 3. **Setup a Branch:** Instead of making changes to the code base directly, you can branch off from the mainline and work on a specific feature in an isolated branch. This step can only be performed by an Admin.
 4. **Mapping the users with the Version Control and Salesforce Orgs in the 'My Profile' section:** Set up the permission to create a project in AutoRABIT.
+
+### FAQs on Commits
+
+#### **How does Git handle duplicate file change commits?**
+
+Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.\
+\
+**Why does Git allow duplicate commits when performing duplicate merges in AutoRABIT?**
+
+Git's behavior of creating new commits for each merge, even if the changes are merged multiple times, is intrinsic to its design. This allows Git to maintain a detailed commit history and track changes accurately.

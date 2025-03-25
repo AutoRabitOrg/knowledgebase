@@ -4,9 +4,7 @@
 Use the AI search feature to find answers to your AutoRABIT questions. In the future, FAQs will no longer be updated on these pages; instead, they will be integrated into the Product Guide pages by associated topic.
 {% endhint %}
 
-## What is a Commit in AutoRABIT? <a href="#what-is-commit-in-autorabit" id="what-is-commit-in-autorabit"></a>
 
-As you work with files that have version control, each change is tracked automatically. This can include modifying a file, deleting a directory, adding a new file, moving files, or just about anything else that might alter the state of the file. Instead of recording each change individually, the version control system will wait for you to submit your changes as a single collection of actions. In version control, this collection of actions is known as a **commit**. When it is submitted, you "commit" the "commit."&#x20;
 
 ## Why do merge conflicts happen? <a href="#why-merge-conflicts-happens" id="why-merge-conflicts-happens"></a>
 
@@ -16,13 +14,7 @@ A merge conflict is an event that occurs when your version control is unable to 
 
 When there are conflicting changes on the same lines, a “merge conflict” occurs because the version control doesn’t know which code to keep and which to discard.
 
-## **How does Git handle duplicate file change commits?**
 
-Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.
-
-### **Why does Git allow duplicate commits when performing duplicate merges in AutoRABIT?**
-
-Git's behavior of creating new commits for each merge, even if the changes are merged multiple times, is intrinsic to its design. This allows Git to maintain a detailed commit history and track changes accurately.
 
 ### **How can users prevent unintended duplicate merges in AutoRABIT when encountering duplicate commit scenarios?**
 

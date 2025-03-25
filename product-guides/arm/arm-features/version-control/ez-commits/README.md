@@ -34,12 +34,3 @@ Below are the prerequisites to be performed before proceeding with the commit to
 3. **Setup a Branch:** Instead of making changes to the code base directly, you can branch off from the mainline and work on a specific feature in an isolated branch. This step can only be performed by an Admin.
 4. **Mapping the users with the Version Control and Salesforce Orgs in the 'My Profile' section:** Set up the permission to create a project in AutoRABIT.
 
-### FAQs on Commits
-
-#### **How does Git handle duplicate file change commits?**
-
-Git's handling of duplicate file change commits can be a different aspect of Version Control management, particularly when merging branches with identical changes.\
-\
-**Why does Git allow duplicate commits when performing duplicate merges in AutoRABIT?**
-
-Git's behavior of creating new commits for each merge, even if the changes are merged multiple times, is intrinsic to its design. This allows Git to maintain a detailed commit history and track changes accurately.

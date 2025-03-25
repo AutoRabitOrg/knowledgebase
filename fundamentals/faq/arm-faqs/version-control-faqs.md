@@ -6,13 +6,7 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 
 
 
-## Why do merge conflicts happen? <a href="#why-merge-conflicts-happens" id="why-merge-conflicts-happens"></a>
 
-When working in a Version Control System such as GIT, users can combine commits from two different branches through an action known as merging. Files are automatically merged unless there are conflicting sets of changes (i.e., the commits update the same line of code differently).
-
-A merge conflict is an event that occurs when your version control is unable to automatically resolve differences in code between two commits.
-
-When there are conflicting changes on the same lines, a “merge conflict” occurs because the version control doesn’t know which code to keep and which to discard.
 
 
 

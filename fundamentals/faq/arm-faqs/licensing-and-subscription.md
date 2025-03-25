@@ -24,6 +24,6 @@ The below-highlighted Subscription button will appear only if the customer procu
 You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
 
 * [SCA for CodeScan](../../../product-guides/codescan/)
-* [SCA for Checkmarx](../../../product-guides/arm/integration-and-plugins/sca-for-checkmarx/)
+* [SCA for Checkmarx](../../../product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
 * [SCA for Apex PMD](../../../product-guides/arm/integration-and-plugins/apex-pmd.md)
 * [SCA for SonarQube](../../../product-guides/arm/integration-and-plugins/sonarqube.md)

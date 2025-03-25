@@ -505,7 +505,7 @@
     * [AccelQ](product-guides/arm/integration-and-plugins/accelq.md)
     * [HashiCorp Vault](product-guides/arm/integration-and-plugins/hashicorp-vault.md)
     * [Provar](product-guides/arm/integration-and-plugins/provar.md)
-    * [SCA for Checkmarx](product-guides/arm/integration-and-plugins/sca-for-checkmarx/README.md)
+    * [SCA for Checkmarx](product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
       * [Checkmarx One Integration](product-guides/arm/integration-and-plugins/sca-for-checkmarx/checkmarx-one-integration.md)
     * [Apex PMD](product-guides/arm/integration-and-plugins/apex-pmd.md)
     * [CodeScan Overview](product-guides/arm/integration-and-plugins/codescan-overview.md)

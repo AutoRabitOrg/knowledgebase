@@ -2,7 +2,9 @@
 
 ### About Merge Conflicts <a href="#about-merge-conflicts" id="about-merge-conflicts"></a>
 
-When you work in a team, you may come across a situation when somebody commits changes to a file you are currently working on. If these changes do not overlap (i.e. changes were made to different lines of code), the conflicting files are merged automatically. However, if the same lines were affected, your [version control](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) system cannot randomly pick one side over the other and asks you to resolve the conflict.
+When working in a [Version Control System](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) like Git—especially in Salesforce development where multiple team members may be working on Apex classes, Lightning Web Components, or metadata files—merge conflicts can occur during the process of combining changes from different branches. This typically happens when two developers modify the same lines in a file, such as an Apex trigger or a custom object’s metadata.
+
+If the changes are on separate lines or in different sections of the file, Git merges them automatically. But when conflicting changes are made to the same lines—like different updates to a validation rule or conflicting field-level security settings—Git can’t decide which version to keep, and a _merge conflict_ is triggered. Resolving the conflict manually ensures that only the correct, intended changes are preserved in your Salesforce org.
 
 ### Resolving Merge Conflicts <a href="#resolving-merge-conflicts" id="resolving-merge-conflicts"></a>
 

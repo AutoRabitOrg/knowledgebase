@@ -1,4 +1,4 @@
-# SCA For Checkmarx
+# SCA for Checkmarx
 
 ### Checkmarx: Overview <a href="#checkmarx-overview" id="checkmarx-overview"></a>
 
@@ -17,5 +17,5 @@ Checkmarx Supported Version8.8 version or above
     * **Team Name:** Enter the relevant team name for the project.
     * **Select Credential:** Choose the correct user's credential from the list. To create a new credential, click on the + icon.
 
-    <figure><img src="../../../.gitbook/assets/image (864).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (864).png" alt=""><figcaption></figcaption></figure>
 5. &#x20;Click on **Test Connection**. Wait until the credentials are validated and the Success status is indicated. Once, the connection is successful, click on **OK**. &#x20;

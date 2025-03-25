@@ -23,8 +23,9 @@ If you do not have a workflow setup on your GitHub repository, go to **`Actions 
 
 Add the following into your **.YML file** in the workflow:
 
-<pre class="language-none"><code class="lang-none"><strong>name: CI 
-</strong>on: 
+```none
+name: CI 
+on: 
   push: 
     branches: [main] 
   pull_request: 
@@ -66,15 +67,15 @@ jobs:
             sonar.pullrequest.base=${{github.base_ref}} 
             sonar.pullrequest.key=${{github.event.number}} 
       - name: Upload SARIF file 
-          uses: github/codeql-action/upload-sarif@v3 
-          with: 
-            sarif_file: codescan.sarif 
-             - name: Archive code coverage results
-          uses: actions/upload-artifact@v4
-          with:
-            name: codescan.sarif
-            path: codescan.sarif  
-</code></pre>
+        uses: github/codeql-action/upload-sarif@v3 
+        with: 
+          sarif_file: codescan.sarif 
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v4
+        with:
+          name: codescan.sarif
+          path: codescan.sarif  
+```
 
 You will need to replace the placeholder variables (in single quotes) in the env section of the script with your [**Project Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key) and [**Organization Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys).
 

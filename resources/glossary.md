@@ -9,8 +9,8 @@ Listed below are some commonly used terms you may encounter in the AutoRABIT doc
 ## **A**
 
 * **ALM:** Application Lifecycle Management covers the entire process of a software application from planning and deployment to maintenance and retirement.
-* **ARM:** AutoRABIT's Automated Release Management software that streamlines the release process and allows teams to manage version control, automate deployments, and enforce governance across development environments.
 * **Apex:** Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on the Lightning Platform server in conjunction with calls to the Lightning Platform API.&#x20;
+* **ARM:** AutoRABIT's Automated Release Management software that streamlines the release process and allows teams to manage version control, automate deployments, and enforce governance across development environments.
 * **Audit Trail:** A record showing permissions, access, and actions taken.
 
 ## B

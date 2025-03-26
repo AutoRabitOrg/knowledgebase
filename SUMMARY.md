@@ -6,6 +6,7 @@
 
 * [⚡ AutoRABIT Solutions](fundamentals/what-we-do.md)
 * [🛠️ Getting Set Up](fundamentals/getting-set-up.md)
+* [LearningHub](https://learninghub.autorabit.com/)
 * [ℹ️ FAQs](fundamentals/faq/README.md)
   * [General-FAQs](fundamentals/faq/general-faqs.md)
   * [General User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
@@ -751,6 +752,5 @@
 ## Resources
 
 * [🖥️ AutoRABIT Support](resources/technical-support-services.md)
-* [LearningHub](https://learninghub.autorabit.com/)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [📙 Glossary](resources/glossary.md)

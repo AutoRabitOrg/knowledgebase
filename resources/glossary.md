@@ -30,7 +30,7 @@ Listed below are some commonly used terms you may encounter in the AutoRABIT doc
 * **CodeScan:** AutoRABIT's static code analysis tool built for Salesforce that performs automated code reviews, identifies coding errors prior to deployment, and enforces best practices in CI/CD pipelines.&#x20;
 * **Compliance as Code:** An approach where compliance, audit, and security standards are treated as code and integrated into the DevOps pipeline.
 * **Configuration Management:** The process of systematically handling changes to a system in a way that allows the system to maintain integrity over time.
-* **Continuous Delivery (CD):** The ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way.
+* **Continuous Delivery (CD):** The ability to get changes of all types—including new features, configuration changes, bug fixes, and experiments—into production or into the hands of users safely and quickly in a sustainable way.
 * **Continuous Integration (CI):** The practice of merging all developers' working copies to a shared mainline several times a day.
 * **CRM Analytics:** A Salesforce-native product that provides advanced analytics capabilities powered by artificial intelligence (AI) and machine learning.
 *  **Custom Fields:** Information stored for custom objects, such as unique data or information about an organization.

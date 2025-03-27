@@ -8,7 +8,13 @@ The GIT repository is the sole Source of Truth for the project. Once established
 
 The default main branch in every GIT repository is master and all other branches should be created from it.
 
-### Branching Baseline <a href="#branching-baseline" id="branching-baseline"></a>
+### Branching and Merging: What's the Difference? <a href="#branching-baseline" id="branching-baseline"></a>
+
+A **branch** allows you to create a copy (or snapshot) of the repository that you can modify in parallel without altering the main set. You can continue to commit new changes to the branch as you work, while others commit to the trunk or master without the changes affecting each other.
+
+Once you’re comfortable with the experimental code, you will want to make it part of the trunk or master again. This is where **merging** comes in. Since the version control system has recorded every change so far, it knows how each file has been altered. By merging the branch with the trunk or master (or even another branch), your version control tool will attempt to seamlessly merge each file and line of code automatically. Once a branch is merged it then updates the trunk or master with the latest files.
+
+### Branching Baseline
 
 The first step of establishing a [CI/CD Pipeline](https://www.autorabit.com/blog/essential-aspects-of-a-salesforce-ci-cd-suite/) is seeding the repository using the Branching Baseline feature of AutoRABIT. It’s a single commit into the master branch, containing all metadata from Production org.
 

@@ -92,7 +92,7 @@ This section is all about choosing the right deployment source; it can be from y
    * **Remove Login IP Ranges:** This option will remove IP ranges from your profile while deploying.
    * **Remove System and User Permissions:** Remove the user's permission from your profile while deploying.
    * **Do not include Destructive members:** Select this checkbox if you have configured certain metadata types to skip while deploying. You can configure such metadata types under the **Admin > Salesforce Org Management** page.
-   * **Do not include Skip members:** Select this checkbox if you have configured certain metadata types to skip while deploying under the [My Account](arm-administration/user-management/manage-users-account-settings/) page.
+   * **Do not include Skip members:** Select this checkbox if you have configured certain metadata types to skip while deploying under the [My Account](arm-administration/user-management/manage-users-account-settings.md) page.
    * **Ignore installed components:** When selected, AutoRABIT will scan for the components that are deployed, and if there are any managed package components located in the target org, these components will be excluded from the metadata.zip files while the remaining components will get deployed.
    * **Fetch Wavexmd components (applicable only if WaveDashboard's metadata type is chosen for deployment):** Upon selection, this checkbox will allow you to select the respective wavexmd files belonging to the wave dashboard metadata type and deploy them via selective deployment to another Salesforce Org. This checkbox will be hidden if the 'WaveDashboard' metadata type or its corresponding members are not picked.
 

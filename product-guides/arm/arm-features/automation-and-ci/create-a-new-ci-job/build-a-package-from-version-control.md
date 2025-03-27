@@ -105,7 +105,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 10. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will be chosen. That globally excluded metadata will be auto populated if you select this option.
 
 {% hint style="info" %}
-**Important Note:** To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings/) page. Next, select the metadata types to exclude. This is reflected in all CI jobs created from this point forward and across other modules as well.
+**Important Note:** To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings.md) page. Next, select the metadata types to exclude. This is reflected in all CI jobs created from this point forward and across other modules as well.
 {% endhint %}
 
 ### Notifications <a href="#notifications" id="notifications"></a>

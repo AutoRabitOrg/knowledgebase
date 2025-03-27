@@ -39,7 +39,7 @@ We've added a new section called **`ALM Management`** to the **`Admin`** module 
 **Important Notes:**
 
 * Jira OAuth access type is currently supported for **Cloud versions** only.
-* OAuth access type will only be available while registering ALM if the credentials have been successfully registered in the **ALM Settings** section. For more information on registering Jira OAuth credentials, click [here](user-management/manage-users-account-settings/).
+* OAuth access type will only be available while registering ALM if the credentials have been successfully registered in the **ALM Settings** section. For more information on registering Jira OAuth credentials, click [here](user-management/manage-users-account-settings.md).
 
 ![](<../../../.gitbook/assets/image (744).png>)
 

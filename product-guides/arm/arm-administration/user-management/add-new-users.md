@@ -1,6 +1,6 @@
-# Add New Users
+# Adding New Users
 
-To add a new user in ARM:
+### Adding a New User
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** tab and click on the **`Users`**.
@@ -16,7 +16,7 @@ To add a new user in ARM:
 6. Your colleague will receive an email inviting them to set their password and log in.
 7. Newly created users are updated in the **`Users`** tab under the **`Admin`** module.
 
-### Edit a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
+### Editing a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
 
 After you’ve created a user, you can change most of their information and permissions. While you can't edit the **Username** and **Email** associated with a user, you can change the remaining fields.
 
@@ -30,9 +30,9 @@ After you’ve created a user, you can change most of their information and perm
 
 ### **FAQ**
 
-### Is it possible to change the username for the AutoRABIT login after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
+#### Can an AutoRABIT login username be changed after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
 
-Once a user has been created, it cannot be changed. This can only be done by deleting the account. Follow the steps below:
+Once a user has been created, it cannot be changed. The account must be deleted; follow the steps below:
 
 1. To **delete** the user account: Ask your administrator remove you from the user list.
 2. Make a **new account** with a different username and email address.

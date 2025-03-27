@@ -102,3 +102,64 @@ When you open the Validation Checks you will see that the criteria that we confi
 To see more information about the Validation, click into the Code Analysis File available in the horizontal menu.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-24 at 5.03.16 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Using Checkmarx One in CI Jobs
+
+From CI Jobs go to Create New in the upper right corner.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 11.31.24 AM.png" alt=""><figcaption></figcaption></figure>
+
+Checkmarx One is available for the following CI Job Types: Package from Salesforce, Backup to Version Control, Package from Version Control, Deploy SFDX Source from Version Control, Deploy from Salesforce Org, Deploy from Salesforce Org with a Version Control Backup and Deploy from Version Control.&#x20;
+
+Once you've selected the job type, navigate to the build section and select "Run Static Analysis Report". In the SCA Tool dropdown menu, select Checkmarx One.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 11.40.55 AM.png" alt=""><figcaption></figcaption></figure>
+
+Once Checkmarx One is selected. Click the checkbox for Criteria rules for stable build. Once checked, ARM will automatically populate the criteria rules that were set in the Admin module. You have the flexibility to add or delete criteria here (which will not change the global setting in Admin). Be sure to Click Save in the upper right corner if you make any changes to the criteria.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 11.44.12 AM.png" alt=""><figcaption></figcaption></figure>
+
+To see the results once a CI Job has run, navigate to the CI Job History. Click the Job Name for the job you want to explore.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 11.48.40 AM.png" alt=""><figcaption></figcaption></figure>
+
+You will then see Build Details for all the builds associated to the CI Jobs. Here you can see that this Build Status is "Build Unstable".&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 11.52.33 AM.png" alt=""><figcaption></figcaption></figure>
+
+When you click into the status details you will see the Build Log. In the Build Log you can see which criteria were unmet. This has effectively stopped the deployment.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 11.55.45 AM.png" alt=""><figcaption></figcaption></figure>
+
+## Using Checkmarx One in Deployments
+
+From Deployment, click New Deployment. Fill out the Deployment Details and click Deploy.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 12.42.22 PM.png" alt=""><figcaption></figcaption></figure>
+
+The Deployment Settings will open automatically. Under Run Static Code Analysis select Checkmarx One from the drop-down.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 12.42.54 PM (1).png" alt=""><figcaption></figcaption></figure>
+
+You can check the box for "Stop deployment is build does not meet global criteria." This will prevent the deployment if the Static Code Analysis fails. Entering an email address in this section will send a PDF report of the Static Code Analysis. Click OK and Deploy to proceed with the deployment.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 12.46.40 PM.png" alt=""><figcaption></figcaption></figure>
+
+As in EZ-Commit, for Merge operations ARM allow you to download the .CSV file for the SCA results. Navigate to the Version Control Module.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 12.53.12 PM.png" alt=""><figcaption></figcaption></figure>
+
+Select the desired repository and you will see the list of available commits.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 12.56.18 PM.png" alt=""><figcaption></figcaption></figure>
+
+Click into the Commit Name and Select Code Analysis File from the horizontal menu. You will then see an option on the right side of the screen to "Download Checkmarx One Report".&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 12.58.20 PM.png" alt=""><figcaption></figcaption></figure>
+
+The .CSV download will show you all the vulnerabilities and associated detailed information.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-27 at 1.00.37 PM.png" alt=""><figcaption></figcaption></figure>
+
+Note: There are some structural differences in the file download when compared to the Checkmarx classic reports.&#x20;
+

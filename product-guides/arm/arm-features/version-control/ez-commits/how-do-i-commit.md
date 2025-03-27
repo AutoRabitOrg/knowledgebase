@@ -243,3 +243,8 @@ Directly commit to your Version Control System without extra validations. Differ
 If the same object already exists in the target branch or org and you attempt to edit it, you may encounter a "no modifications" popup. This approach is applicable only for creating brand-new objects.
 {% endhint %}
 
+## Frequently Asked Questions
+
+### Why can I only see the Production org and none of the development instances when I try to do a new EZ commit? <a href="#i-can-only-see-the-production-org-and-none-of-the-development-instances-when-i-try-to-do-a-new-ez-co" id="i-can-only-see-the-production-org-and-none-of-the-development-instances-when-i-try-to-do-a-new-ez-co"></a>
+
+This is happening because the skip mapping feature isn't switched on. Select **"Skip Mappings"** from the dropdown menu in **My Profile > My Roles**.

@@ -8,39 +8,7 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 
 
 
-## Why is a merge getting auto rejected during deployment? <a href="#why-merge-is-getting-auto-rejected-during-deployment" id="why-merge-is-getting-auto-rejected-during-deployment"></a>
 
-Below are the reasons why ARM rejects your merge request:
-
-* It will be auto rejected if the proper **merge criteria** are not enabled. The merge criteria must be enabled before you are performing the jobs.
-  * Navigate to **Admin > My Account > Merge Setting** to select the proper merge criteria. Click [Here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/manage-users-account-settings#id-9-merge-settings) for a more detailed explanation.
-* **Workspaces** is wrongly configured
-  * Search for the workspace id which has the name of the source & target branch and reset that workspace. Once the workspace reset is complete, trigger a new merge.
-* Failed to meet the actual code coverage criteria
-  * Please update the merge criteria as needed by disabling code coverage under **Admin > My Account > Merge Settings**.
-
-## Why does ARM say, **"Local and remote repositories are not on the same revision"?** <a href="#autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean" id="autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean"></a>
-
-There are several possible explanations for AutoRABIT to throw an error **"local and remote repo is not on same revision"**:
-
-1. The local repository is out of date.
-2. The branch that contains the commit was deleted, so the commit is no longer referenced.
-3. Someone force-pushed the commit.
-
-## How long does it take to register a version control branch in ARM? <a href="#how-long-does-it-take-to-register-a-version-control-branch-in-arm" id="how-long-does-it-take-to-register-a-version-control-branch-in-arm"></a>
-
-The actual registration of a branch depends on the data available in your version control repository. Mostly, the registration can be accomplished in a matter of **1-2 minutes**, however, in some rare cases, it can take anywhere from **30 minutes** to **an hour**.
-
-## Is it possible with ARM to limit merge approval to only one specific branch and not to others? <a href="#is-it-possible-with-arm-tool-to-have-merge-approval-only-for-one-specific-branch-and-not-for-others" id="is-it-possible-with-arm-tool-to-have-merge-approval-only-for-one-specific-branch-and-not-for-others"></a>
-
-We don't have a feature to limit approvals to specific branches right now. However, there are a few options that can assist you in obtaining merge approval for a specific branch:
-
-* When performing a merge, make sure none of the options under **New EZ Merge > Prevalidation Merge** are selected; this allows you to merge without approval.
-* Under **Admin > MyAccount > Merge Settings**, make sure the '**disable merge self-approval'** checkbox is not selected.
-
-## Why can I only see the Production org and none of the development instances when I try to do a new EZ commit? <a href="#i-can-only-see-the-production-org-and-none-of-the-development-instances-when-i-try-to-do-a-new-ez-co" id="i-can-only-see-the-production-org-and-none-of-the-development-instances-when-i-try-to-do-a-new-ez-co"></a>
-
-This is happening because the skip mapping feature isn't switched on. Select **"Skip Mappings"** from the dropdown menu in **My Profile > My Roles**.
 
 ## What is ARM unable to initiate the auto build on commit and the GitHub pull request is failing? <a href="#what-is-the-cause-of-arm-inability-to-initiate-the-auto-build-on-commit-as-well-as-the-failure-of-a" id="what-is-the-cause-of-arm-inability-to-initiate-the-auto-build-on-commit-as-well-as-the-failure-of-a"></a>
 

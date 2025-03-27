@@ -53,3 +53,7 @@ Creating a new branch for each task is a common practice because it allows other
 4. Click the **`Register`** button to complete the branch registration.
 
 <figure><img src="../../../../../.gitbook/assets/image (687).png" alt="" width="563"><figcaption></figcaption></figure>
+
+## How long does it take to register a version control branch in ARM? <a href="#how-long-does-it-take-to-register-a-version-control-branch-in-arm" id="how-long-does-it-take-to-register-a-version-control-branch-in-arm"></a>
+
+The actual registration of a branch depends on the data available in your version control repository. Mostly, the registration can be accomplished in a matter of **1-2 minutes**, however, in some rare cases, it can take anywhere from **30 minutes** to **an hour**.

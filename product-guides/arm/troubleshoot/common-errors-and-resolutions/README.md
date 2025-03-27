@@ -186,3 +186,11 @@ If you are unable to connect to the ARM instance and get this error, it is due t
 6. Next to **Cookies and other site data** and **Cached images and files,** check the boxes.
 7. Click **Clear data**.
 8. Now, log in to your instances using the new browser tab.
+
+### **Local and remote repositories are not on the same revision** <a href="#autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean" id="autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean"></a>
+
+There are several possible explanations for AutoRABIT to throw an error **"local and remote repo is not on same revision"**:
+
+1. The local repository is out of date.
+2. The branch that contains the commit was deleted, so the commit is no longer referenced.
+3. Someone force-pushed the commit.

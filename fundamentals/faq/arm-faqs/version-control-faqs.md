@@ -8,18 +8,6 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 
 
 
-
-
-## Branching and Merging: What's the Difference? <a href="#branching-and-merging-whats-the-difference" id="branching-and-merging-whats-the-difference"></a>
-
-A **branch** allows you to create a copy (or snapshot) of the repository that you can modify in parallel without altering the main set. You can continue to commit new changes to the branch as you work, while others commit to the trunk or master without the changes affecting each other.
-
-Once you’re comfortable with the experimental code, you will want to make it part of the trunk or master again. This is where **merging** comes in. Since the version control system has recorded every change so far, it knows how each file has been altered. By merging the branch with the trunk or master (or even another branch), your version control tool will attempt to seamlessly merge each file and line of code automatically. Once a branch is merged it then updates the trunk or master with the latest files.
-
-## What are Remote Repositories? <a href="#what-are-remote-repositories" id="what-are-remote-repositories"></a>
-
-Remote repositories allow us to share our changes with other members of the team. They can be on a private server, on a different computer than yours, or hosted on a different service. Wherever yours is hosted, you'll need to be able to sync your local repository with the remote repository frequently. To start sharing changes with others, you have to push them to a remote repository. This will cause the remote repository to update and synchronize with your local repository.
-
 ## Why is a merge getting auto rejected during deployment? <a href="#why-merge-is-getting-auto-rejected-during-deployment" id="why-merge-is-getting-auto-rejected-during-deployment"></a>
 
 Below are the reasons why ARM rejects your merge request:

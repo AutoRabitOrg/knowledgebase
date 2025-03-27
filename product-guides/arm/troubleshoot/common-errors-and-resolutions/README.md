@@ -40,7 +40,7 @@ This error usually occurs when you try to push to a branch that has been updated
 
 ### **GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.**
 
-This error may be encountered while attempting to commit changes for a production organization to the GitHub master branch. This occurred because protected branches are not allow force pushes. Get in touch with your Administrator to turn off the protection on that branch.
+This error may be encountered while attempting to commit changes for a production organization to the GitHub master branch. This occurred because protected branches do not allow force-pushes. Get in touch with your Administrator to turn off the protection on that branch.
 
 ### GIT Push Result: RemoteRefUpdate\[remoteName=refs/heads/release/CI\_UAT2\_Refresh, REJECTED\_OTHER\_REASON, 3235de0aa8e9edd83ab68d4d723c0301847caf78...9b4c80cea9e7217aa7d16486f1f30b609406c2f1, fastForward, srcRef=refs/heads/release/CI\_UAT2\_Refresh, message="pre-receive hook declined"] Status of the GIT Push process: REJECTED\_OTHER\_REASON
 

@@ -75,7 +75,7 @@ According to the filter set, only specific work items will get fetched. When the
 
 <figure><img src="../../../.gitbook/assets/image (26) (2).png" alt=""><figcaption></figcaption></figure>
 
-### Mapping Your Profile with Version Control and Salesforce Org <a href="#mapping-your-profile-with-version-control-and-salesforce-org" id="mapping-your-profile-with-version-control-and-salesforce-org"></a>
+## Mapping Your Profile with Version Control and Salesforce Org <a href="#mapping-your-profile-with-version-control-and-salesforce-org" id="mapping-your-profile-with-version-control-and-salesforce-org"></a>
 
 The next step is to map your profile with the Version Control system you will be working with and the associated Salesforce Org.
 
@@ -106,3 +106,7 @@ If users maintain an individual Version Control branch for every release, then t
 <figure><img src="../../../.gitbook/assets/image (30) (2).png" alt=""><figcaption></figcaption></figure>
 
 9. Click on **`Save Mappings`**.
+
+## Uploading Multiple Profile Files
+
+**413: Status Error**: Users may encounter a 413-status error in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.

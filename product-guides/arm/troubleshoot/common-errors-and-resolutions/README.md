@@ -87,7 +87,7 @@ Users may encounter this error when trying to register a Salesforce environment 
 
 ### **Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact**
 
-Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI)​Comment
+Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI)​
 
 ### **Permissions Read All ServiceTerritory depends on permission(s): Read All OperatingHours**
 

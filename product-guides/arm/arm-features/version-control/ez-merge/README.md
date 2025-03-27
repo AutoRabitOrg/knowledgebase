@@ -323,7 +323,7 @@ For merge labels that are either in progress or have some conflicts, in such a s
 
 ### Common Issues with EZ-Merge
 
-While performing an EZ-Merge, inaccurate file changes are being merged into the destination branch.
+#### While performing an EZ-Merge, inaccurate file changes are being merged into the destination branch.
 
 **Issue references in stackoverflow link:** [https://stackoverflow.com/questions/63365836/git-is-showing-a-file-as-moved-on-bitbucket-i-want-it-as-a-new-file-for-pull-r](https://stackoverflow.com/questions/63365836/git-is-showing-a-file-as-moved-on-bitbucket-i-want-it-as-a-new-file-for-pull-r)
 
@@ -333,3 +333,14 @@ While performing an EZ-Merge, inaccurate file changes are being merged into the 
 2. Merge the branch by executing the command shown in the ‘applying merge’ log.
 3. Check the results for the modified files.
 4. If the result matches the ARM file changes, then this is a Git behavior.
+
+#### Why is a merge getting auto rejected during deployment? <a href="#why-merge-is-getting-auto-rejected-during-deployment" id="why-merge-is-getting-auto-rejected-during-deployment"></a>
+
+Below are the reasons why ARM rejects your merge request:
+
+* It will be auto rejected if the proper **merge criteria** are not enabled. The merge criteria must be enabled before you are performing the jobs.
+  * Navigate to **Admin > My Account > Merge Setting** to select the proper merge criteria. Click [Here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/manage-users-account-settings#id-9-merge-settings) for a more detailed explanation.
+* **Workspaces** is wrongly configured
+  * Search for the workspace id which has the name of the source & target branch and reset that workspace. Once the workspace reset is complete, trigger a new merge.
+* Failed to meet the actual code coverage criteria
+  * Please update the merge criteria as needed by disabling code coverage under **Admin > My Account > Merge Settings**.

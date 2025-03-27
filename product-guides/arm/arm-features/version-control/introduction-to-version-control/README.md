@@ -47,3 +47,7 @@ With version control, there are many benefits including:&#x20;
 * Complete Code Reviews&#x20;
 * At one point in time, [Salesforce development](https://knowledgebase.autorabit.com/docs/salesforce-deployment-best-practices) will not just be declarative&#x20;
 * Improve the quality of work.
+
+### What are Remote Repositories? <a href="#what-are-remote-repositories" id="what-are-remote-repositories"></a>
+
+Remote repositories allow us to share our changes with other members of the team. They can be on a private server, on a different computer than yours, or hosted on a different service. Wherever yours is hosted, you'll need to be able to sync your local repository with the remote repository frequently. To start sharing changes with others, you have to push them to a remote repository. This will cause the remote repository to update and synchronize with your local repository.

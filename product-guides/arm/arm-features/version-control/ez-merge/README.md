@@ -344,3 +344,10 @@ Below are the reasons why ARM rejects your merge request:
   * Search for the workspace id which has the name of the source & target branch and reset that workspace. Once the workspace reset is complete, trigger a new merge.
 * Failed to meet the actual code coverage criteria
   * Please update the merge criteria as needed by disabling code coverage under **Admin > My Account > Merge Settings**.
+
+### Is it possible with ARM to limit merge approval to only one specific branch and not to others? <a href="#is-it-possible-with-arm-tool-to-have-merge-approval-only-for-one-specific-branch-and-not-for-others" id="is-it-possible-with-arm-tool-to-have-merge-approval-only-for-one-specific-branch-and-not-for-others"></a>
+
+We don't have a feature to limit approvals to specific branches right now. However, there are a few options that can assist you in obtaining merge approval for a specific branch:
+
+* When performing a merge, make sure none of the options under **New EZ Merge > Prevalidation Merge** are selected; this allows you to merge without approval.
+* Under **Admin > MyAccount > Merge Settings**, make sure the '**disable merge self-approval'** checkbox is not selected.

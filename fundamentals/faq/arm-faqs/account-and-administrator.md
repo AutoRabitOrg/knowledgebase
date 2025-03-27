@@ -179,10 +179,6 @@ Please edit the role assigned to the user and ensure that the below-mentioned sp
 
 Once the GitHub cloud account is created, you should be able to set it up with ARM as well. If you’re facing any issues, it is possible that the repository might still be migrating. If so, you are unable to register the repository during that time. But after migration is complete, you should be able to register the repository in ARM.
 
-### How can I setup SSO in ARM? <a href="#how-can-i-setup-sso-in-arm1" id="how-can-i-setup-sso-in-arm1"></a>
-
-Please refer to the [Knowledge Base article](../../../product-guides/arm/integration-and-plugins/sso/) to set up SSO for your instance.
-
 ### Why can't we see the Diff when a Commit is created, but we can see a Diff during the process of Commit? <a href="#we-can-see-the-diff-when-a-commit-is-created-but-can-we-see-a-diff-during-the-process-of-commit" id="we-can-see-the-diff-when-a-commit-is-created-but-can-we-see-a-diff-during-the-process-of-commit"></a>
 
 Using the **Compare Changes** option, you can file the **Diff** before performing a Commit.

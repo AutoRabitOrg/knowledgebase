@@ -4,7 +4,7 @@
 Use the AI search feature to find answers to your AutoRABIT questions. In the future, FAQs will no longer be updated on these pages; instead, they will be integrated into the Product Guide pages by associated topic.
 {% endhint %}
 
-## How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
+## ()How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
 
 To view your support ticket and its status, follow the steps below:
 
@@ -28,14 +28,14 @@ If you're having trouble logging into your AutoRABIT account, here are some thin
 5. **Restriction of your IP address**: Verify with your network team internally and verify if there are any issues or restrictions for your IP address from the network side.
 6. If nothing works out, please reach out to us by raising a [Support Ticket](https://support.autorabit.com/portal/en/home)
 
-### Why did I not receive the email to reset my account password? <a href="#not-receiving-email-to-reset-your-account-password" id="not-receiving-email-to-reset-your-account-password"></a>
+### ()Why did I not receive the email to reset my account password? <a href="#not-receiving-email-to-reset-your-account-password" id="not-receiving-email-to-reset-your-account-password"></a>
 
 If you requested a new password but didn't receive your password reset email, then:
 
 1. Check the **spam** or **junk** email folder in your email accounts linked to your AutoRABIT account.
 2. Try to **reset your password** again.
 
-### What factors should I consider when modifying or resetting my account password? <a href="#what-are-the-factors-i-should-consider-when-modifying-or-resetting-my-account-password" id="what-are-the-factors-i-should-consider-when-modifying-or-resetting-my-account-password"></a>
+### ()What factors should I consider when modifying or resetting my account password? <a href="#what-are-the-factors-i-should-consider-when-modifying-or-resetting-my-account-password" id="what-are-the-factors-i-should-consider-when-modifying-or-resetting-my-account-password"></a>
 
 #### **Password Requirements:**
 
@@ -47,11 +47,11 @@ If you requested a new password but didn't receive your password reset email, th
 6. MUST NOT contain an email address, first, middle or last name, or commonly used passwords
 7. MUST NOT be one of the **5 previously used** passwords
 
-### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
+### ()How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
 
 ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
-### \*\*Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
+### ()Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
 
 1. Verify in the user Salesforce Org if the AutoRABIT Connected App is **“Blocked”** and unblock it.
 2. Verify in user Salesforce Org if there are any specific permissions set for the Connected App.
@@ -59,7 +59,7 @@ ARM has a 90-day rotational policy that requires you to change your password eve
 
 If the user is on a proxy-enabled server and receives an error such as **"Username may not be null"**, the proxy credentials must be validated. If the proxy username is set to **"null"**, the above error will occur.
 
-### How will I track all the support tickets that I have created in ARM? <a href="#how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm" id="how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm"></a>
+### ()How will I track all the support tickets that I have created in ARM? <a href="#how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm" id="how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm"></a>
 
 View all your support tickets via **Quick Links > Help Center** from the ARM application which redirects to the Support portal page where you can see the list of open cases created by you or by your team.
 

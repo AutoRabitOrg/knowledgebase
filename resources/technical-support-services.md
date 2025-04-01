@@ -46,3 +46,23 @@ Generally, we prefer separate issues to be reported via separate conversations. 
 ## **Seeking Additional Training**
 
 We encourage each of our customers to access the [AutoRABIT LearningHub](https://learninghub.autorabit.com/s/) regularly as we continually refine and expand the training and help materials available there. If you need additional training on parts of the platform, you can arrange it through your Customer Success Manager. We are happy to help you identify how to utilize the platform better.
+
+### FAQ
+
+### How will I track all the support tickets that I have created in ARM? <a href="#how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm" id="how-will-i-track-all-the-support-tickets-that-i-have-created-in-arm"></a>
+
+View all your support tickets via **Quick Links > Help Center** from the ARM application which redirects to the Support portal page where you can see the list of open cases created by you or by your team.
+
+## How can I view my organization-related support tickets in AutoRABIT? <a href="#how-can-i-view-my-organizationrelated-support-tickets-in-autorabit" id="how-can-i-view-my-organizationrelated-support-tickets-in-autorabit"></a>
+
+To view your support ticket and its status, follow the steps below:
+
+1. Log in to your ARM instance.
+2. At the top of the page, navigate to **Quick Links > Help Center**. You'll be redirected to the ARM Support Dashboard page.
+3.  Navigate to **Teams Queue** under **Tickets**.\
+
+
+    <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VT7TJLCO.png" alt=""><figcaption></figcaption></figure>
+
+Now you will be able to view your org-related tickets here.
+

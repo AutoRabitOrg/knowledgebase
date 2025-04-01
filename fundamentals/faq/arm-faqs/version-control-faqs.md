@@ -15,62 +15,9 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 1. Allow pull requests and build on commit in your VC repository.
 2. To see the external pull request, switch on ARM's **auto-sync** option.
 
-## Why is ARM rejecting my merge request at the final step? <a href="#why-is-arm-rejecting-my-merge-request-at-the-final-step" id="why-is-arm-rejecting-my-merge-request-at-the-final-step"></a>
 
-This occurs when merge criteria do not match the ARM settings. Before submitting the merge request, configure it in ARM to match your needs. Make the appropriate modifications under **Admin > Merge Settings**.
 
-## Why are all merge deployments in ARM failing when I try to deploy code from one sandbox to another? <a href="#all-merge-deployments-in-arm-fail-when-i-try-to-deploy-code-from-one-sandbox-to-another-could-you-as" id="all-merge-deployments-in-arm-fail-when-i-try-to-deploy-code-from-one-sandbox-to-another-could-you-as"></a>
 
-You won't be able to deploy the code to the target org if all of the profile objects in the package have access permissions set to **"false."** _It's not an ARM issue; it's a Salesforce behavior_.
-
-Change the access permission to **"True"** in all profile objects and deploy to fix the problem; it should now work.
-
-## Why is my branch creation failing due to a Workspace size issue, and my development team is unable to commit changes?  <a href="#i-am-getting-space-issue-with-my-development-team-and-they-are-not-able-to-commit-the-changes-throug" id="i-am-getting-space-issue-with-my-development-team-and-they-are-not-able-to-commit-the-changes-throug"></a>
-
-* Branch creation seems to fail due to the huge Workspace checkout. I would recommend unregistering the unused branches that are already registered in AutoRABIT so that the base checkout will get deleted and the workspace size will be increased.
-* Under **Workspaces**, there are some workspace IDs where there is a Delete button greyed out, and those are the base checkouts that will be deleted only if you unregister those branches. So, ensure if there are any unused branches that you proceed with unregistering them in AutoRABIT.
-
-## Why am I unable to find the updated profile data, even though I have access to the Apex class for the profiles? <a href="#i-have-access-to-the-apex-class-for-the-profiles-but-i-am-not-able-to-find-the-updated-profile-data" id="i-have-access-to-the-apex-class-for-the-profiles-but-i-am-not-able-to-find-the-updated-profile-data"></a>
-
-The Apex class permissions for the profiles can be committed only when you select both Apex classes and profile metadata members while performing EZ-Commit. Also, you need to select the checkbox **"Commit Only Profiles for selected metadata members"** on the **Commits Summary** page to commit only profile changes that contain apex class permissions.
-
-## Why does a Git branch not display in the "My version control Mapping list" under "My Profile" after being registered in AutoRABIT? <a href="#why-does-a-git-branch-not-display-in-the-my-version-control-mapping-list-under-my-profile-after-bein" id="why-does-a-git-branch-not-display-in-the-my-version-control-mapping-list-under-my-profile-after-bein"></a>
-
-This is because you haven't given permission to that branch in AutoRABIT yet. Re-register the branch in AutoRABIT by checking the checkboxes next to the GIT lists to whom you want to access in the **My Profile** section.
-
-## Why are Profiles/Permission sets not getting committed to my development branch during an EZ-Commit? <a href="#why-the-profilespermissionsets-are-not-getting-committed-to-my-development-branch-during-ezcommit" id="why-the-profilespermissionsets-are-not-getting-committed-to-my-development-branch-during-ezcommit"></a>
-
-For such a case, there can be three possibilities:
-
-* There are **no changes** in metadata components between the sandbox and the branch.
-* **Salesforce** is not allowing it
-  * Retrieve the permission sets using the workbench. If still the permission sets are not retrieved, then it is a limitation from Salesforce. Request you contact Salesforce Support Team for further assistance.
-* Components (StandardField, Report, Dashboard, etc.) related to the **Profile/Permission sets** are not selected during the commit.
-  * Select the appropriate components related to the Profiles/ Permissions object under **"Select metadata members"** in the **New EZ-Commit** screen and commit once again.
-
-## How do I deploy the Field-Level Security (FLS) permission from version control to a target org? <a href="#how-to-deploy-the-field-level-security-fls-permission-from-version-control-to-your-target-org" id="how-to-deploy-the-field-level-security-fls-permission-from-version-control-to-your-target-org"></a>
-
-Field Level Security (FLS) settings will allow you to restrict the users’ access to view and edit specific fields. In order to deploy the FLS settings from a branch to a sandbox in AutoRABIT, you need to perform the below steps:
-
-* **During "EZ-Commit"**
-  * While committing the changes from a sandbox to a destination branch, commit the custom fields and profiles in a single commit.
-* **During "Deployment"**
-  * While deploying the Field Level Security (FLS) permissions from the version control branch to the target org, ensure the custom fields and profiles are a part of the same revision.
-
-## What is the functional difference between Release Label Merge and Release Label Deployment? <a href="#what-is-the-functional-difference-between-release-label-merge-and-release-label-deployment" id="what-is-the-functional-difference-between-release-label-merge-and-release-label-deployment"></a>
-
-Release Label is a set of commit revisions.
-
-* When you **merge** using a release label, ARM will cherry-pick all the revisions and labels in that release label and consolidate all the changes made to that branch. These delta changes are pushed to the destination branch after the conflicts (if any) have been resolved.
-* Whereas, when you deploy a release label, ARM identifies and uses the latest revision in that Release Label as **HEAD**. The latest revision is identified based on the commit date. Any files in that revision that may have been modified, added, or deleted are consolidated, including any changes made to those files in other revisions besides the **HEAD** revision. When the deployment is performed, this consolidated metadata file is retrieved.
-
-## While creating a new Release Label, I did not select the 'Create package manifest for Deployment' check box. Can I still create a package? <a href="#while-creating-a-new-release-label-i-did-not-select-the-create-package-manifest-for-deployment-check" id="while-creating-a-new-release-label-i-did-not-select-the-create-package-manifest-for-deployment-check"></a>
-
-Yes. If you did not select the check box while creating the release label, you can click on the **Create Artifact** button on the **Release Label Summary Screen** to manually create and run the package.
-
-## Why can't I click the 'Create Artifact' button on the Release Label Summary screen? <a href="#why-cant-i-click-on-the-create-artifact-button-on-the-release-label-summary-screen" id="why-cant-i-click-on-the-create-artifact-button-on-the-release-label-summary-screen"></a>
-
-If the **Create Artifact** button is unavailable to click, the package has been created successfully and can be used for Deployment. It will also be unavailable if package preparation is **In-Progress** and will be available shortly. You can view the status on the **Release Label Summary** screen. **Create Artifact** button will only be available if the package has not been prepared or has failed during preparation.
 
 ## Why am I getting an error while registering the GitHub repository with SSH? <a href="#why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh" id="why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh"></a>
 

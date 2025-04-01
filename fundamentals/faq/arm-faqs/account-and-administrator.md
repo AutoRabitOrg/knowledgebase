@@ -81,15 +81,6 @@ There are some rules you have to follow for naming identifiers:
 
 It is done to restrict XML injections and prevent XML file corruption.
 
-### Where is the API token key used in the ARM application? <a href="#where-is-the-api-token-key-used-in-the-arm-application" id="where-is-the-api-token-key-used-in-the-arm-application"></a>
-
-1. The API Token generated via ARM will be used to authenticate within the application and provide access to get details of CI Job configured & its build details.
-2. To use the AutoRABIT capability, each user has their own API token, which should not be shared with anyone. If you come across something phishing, deactivate your current API token and create a new one.
-
-### Who is authorized to access the API token? <a href="#who-all-are-authorized-to-access-the-api-token" id="who-all-are-authorized-to-access-the-api-token"></a>
-
-Super Admins, Org Admins, and the users with admin level permissions are authorized to access the API token.
-
 ### What browsers does ARM support? <a href="#what-browsers-does-arm-support" id="what-browsers-does-arm-support"></a>
 
 ARM works best in the two most recent versions of these browsers:
@@ -108,7 +99,7 @@ ARM works best in the two most recent versions of these browsers:
 
 ### \*\*Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
 
-Yes, this is achievable; however, your [Salesforce Orgs](../../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
+Yes, this is achievable with assistance from AutoRABIT; however, your [Salesforce Orgs](../../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
 
 ### Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
 

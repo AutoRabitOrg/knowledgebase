@@ -56,7 +56,7 @@ We've added a new section called **`ALM Management`** to the **`Admin`** module 
 **Limitation:** Jira OAuth access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please contact our experts at [support@autorabit.com](mailto:support@autorabit.com).
 {% endhint %}
 
-#### Integration Settings <a href="#integration-settings" id="integration-settings"></a>
+### Integration Settings <a href="#integration-settings" id="integration-settings"></a>
 
 By default, we do not display the work items from the inactive sprints; however, if you want to view the hidden items, you can do so from this section.
 
@@ -72,7 +72,7 @@ By default, we do not display the work items from the inactive sprints; however,
 **Note:** To remove a field's filter criteria, click on the ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QT6MJ131.png) icon to the right of the rule.
 {% endhint %}
 
-#### Smart Commits <a href="#smart-commits" id="smart-commits"></a>
+### Smart Commits <a href="#smart-commits" id="smart-commits"></a>
 
 In this section, you can select the pattern used to read the comment in a revision associated with your ALM story. For example, _'git commit m **\[project123]** # add README file into the project'_
 
@@ -80,7 +80,7 @@ In this section, you can select the pattern used to read the comment in a revisi
 
 If you want to configure a webhook in your repository, select the **Enable auto update on webhook** checkbox to reveal the URL required for the webhook settings. For more information on how to configure a webhook in different repositories, refer [HERE](../arm-features/automation-and-ci/webhooks/). You can also choose to [sync external smart commits](../arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
-#### Repository Mappings <a href="#repository-mappings" id="repository-mappings"></a>
+### Repository Mappings <a href="#repository-mappings" id="repository-mappings"></a>
 
 A global setting that lets you manage work items effectively for Merge requests. You can have your work items automatically updated in your ALM system based on the chosen criteria (Source Branch, ALM Status, etc.). Whenever a new merge request is initiated with this global setting enabled, the work items are automatically moved to a different status in ALM post-successful merge.
 

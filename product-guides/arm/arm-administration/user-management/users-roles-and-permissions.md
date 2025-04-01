@@ -196,3 +196,8 @@ To assign users to a role and permission, use the following steps:
 ### I have admin access, so why can't I see some users' branches and commits that are listed under my organization? <a href="#i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ" id="i-have-admin-access-so-why-cant-i-see-some-users-branches-and-commits-that-are-listed-under-my-organ"></a>
 
 If your user account is associated with a different organization, this can happen.
+
+### Why can’t I see the User Management section anymore to add a user like I could before? <a href="#i-want-to-add-a-user-like-i-could-before-why-cant-i-see-the-user-management-section-anymore" id="i-want-to-add-a-user-like-i-could-before-why-cant-i-see-the-user-management-section-anymore"></a>
+
+The **User Permissions** and **Roles** in your organization may have been rearranged. Please contact your Admin and they should be able to grant you the necessary permissions again.
+

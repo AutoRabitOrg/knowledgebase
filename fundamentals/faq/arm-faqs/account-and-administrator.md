@@ -191,7 +191,7 @@ Usually, the metadata retrieval would fail due to timeout. Please rerun the base
 
 **Pull requests** are currently not supported for repositories authenticated via **SSH** protocol. However, an **HTTPS-based** connection via username and personal access token is supported.
 
-### Why can’t I see the User Management section anymore to add a user like I could before? <a href="#i-want-to-add-a-user-like-i-could-before-why-cant-i-see-the-user-management-section-anymore" id="i-want-to-add-a-user-like-i-could-before-why-cant-i-see-the-user-management-section-anymore"></a>
+### ()Why can’t I see the User Management section anymore to add a user like I could before? <a href="#i-want-to-add-a-user-like-i-could-before-why-cant-i-see-the-user-management-section-anymore" id="i-want-to-add-a-user-like-i-could-before-why-cant-i-see-the-user-management-section-anymore"></a>
 
 The **User Permissions** and **Roles** in your organization may have been rearranged. Please contact your Admin and they should be able to grant you the necessary permissions again.
 

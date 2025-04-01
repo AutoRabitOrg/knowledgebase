@@ -48,6 +48,16 @@ We've added a new section called **`ALM Management`** to the **`Admin`** module 
 
 5. Click on **`Test Connection`** to authenticate your credentials.
 6. Click **`Save`**.
+
+{% hint style="info" %}
+NOTE: An "Authentication Failed" error may occur when selecting an ALM on the EZ-Commit screen. VPN connectivity appears to be the source of intermittent ALM connectivity issues; the ALM is incorrectly configured. To correct this issue:
+
+* On the My Account screen, look for the ALM configuration.
+* To reauthenticate your ALM configuration, click the Test Connection icon to verify your credentials.
+
+If the steps above do not work, create a new credential and link it to your ALM account.
+{% endhint %}
+
 7. Once your [ALM](../arm-features/version-control/change-labels/alm-labels.md) is registered successfully, you can view it in the **`ALM List`** menu.
 8. Use the **`AR Comments`** toggle button to turn off the Jira comments from AR. By default, the Jira comments are ON for newly registered and existing ALMs.
 9. Use the **`Access Type`** drop-down list to switch between **`Standard`** and **`OAuth`**. Click on **`Re-Authenticate`** if your credentials have expired. This is only applicable to Jira ALMs.

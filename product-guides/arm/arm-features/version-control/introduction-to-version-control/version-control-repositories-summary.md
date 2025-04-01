@@ -101,3 +101,10 @@ For each branch, view the following details:
 
 6. **`Clear AutorabitExtId:`** Deletes the **`AutorabitExtId__c`** field from your branch.
 7. **`Migrate:`** Migrates custom object field **`Picklist`** to **`Value Set`** in your branch.
+
+### FAQ
+
+### Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
+
+The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](version-control-repositories-summary.md).
+

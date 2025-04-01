@@ -1,4 +1,4 @@
-# Create and Deploy Changes in AutoRABIT
+# Creating and Deploying Changes
 
 ### Deployment in ARM <a href="#deployment-in-arm" id="deployment-in-arm"></a>
 
@@ -145,3 +145,11 @@ The next screen is the **`Deployment Summary`** page, where you can view the com
 <figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1).png" alt="" width="440"><figcaption></figcaption></figure>
 
 Click on **`Validate Deployment.`** You will be redirected to the [Deployment Summary](monitor-deployments.md) screen, showing the deployment progress.
+
+## Frequently Asked Questions
+
+### Why are all merge deployments in ARM failing when I try to deploy code from one sandbox to another? <a href="#all-merge-deployments-in-arm-fail-when-i-try-to-deploy-code-from-one-sandbox-to-another-could-you-as" id="all-merge-deployments-in-arm-fail-when-i-try-to-deploy-code-from-one-sandbox-to-another-could-you-as"></a>
+
+You won't be able to deploy the code to the target org if all of the profile objects in the package have access permissions set to **"false."** _It's not an ARM issue; it's a Salesforce behavior_.
+
+Change the access permission to **"True"** in all profile objects and deploy to fix the problem; it should now work.

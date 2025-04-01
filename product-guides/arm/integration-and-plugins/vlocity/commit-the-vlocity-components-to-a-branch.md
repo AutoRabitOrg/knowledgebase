@@ -1,10 +1,10 @@
-# Commit the Vlocity Components to a Branch
+# Committing OmniStudio Components to a Branch
 
-This section deals with exporting of vlocity data packs from a Salesforce Org through a YAML manifest describing your project and committing the same to a Version Control System. The primary goal is to enable Continuous Integration for vlocity metadata through source control.
+This section deals with exporting of OmniStudio data packs from a Salesforce Org through a YAML manifest describing your project and committing the same to a Version Control System. The primary goal is to enable Continuous Integration for OmniStudio metadata through source control.
 
-### Commit Vlocity Components <a href="#commit-vlocity-components" id="commit-vlocity-components"></a>
+### Commit OmniStudio Components <a href="#commit-vlocity-components" id="commit-vlocity-components"></a>
 
-1. Go to the **New EZ-Commit** screen,
+1. Go to the **New EZ-Commit** screen.
 
 <figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="479"><figcaption></figcaption></figure>
 
@@ -15,14 +15,14 @@ This section deals with exporting of vlocity data packs from a Salesforce Org th
 <figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section.  Else, the branch will automatically be selected based on the org mappings and it is not editable.
+**Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section.  Otherwise, the branch will automatically be selected based on the org mappings and it is not editable.
 {% endhint %}
 
-5. Under **Fetch Changes**, select the components as **'Vlocity Components'**.
+5. Under **Fetch Changes**, select the components as **OmniStudio Components**.
 
 <figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption></figcaption></figure>
 
-#### Different options for Vlocity Components <a href="#different-options-for-vlocity-components" id="different-options-for-vlocity-components"></a>
+#### Different options for OmniStudio Components <a href="#different-options-for-vlocity-components" id="different-options-for-vlocity-components"></a>
 
 **1. Auto Draft**
 
@@ -30,11 +30,11 @@ This will bring all the changes which the Author has done in the Salesforce Org 
 
 **2. Select Manually**
 
-This will export vlocity components from a Salesforce Org through a YAML manifest describing your project and committing the same to a Version Control System. The primary goal is to enable continuous integration for vlocity metadata through source control.
+This will export OmniStudio components from a Salesforce Org through a YAML manifest describing your project and committing the same to a Version Control System. The primary goal is to enable continuous integration for OmniStudio metadata through source control.
 
 **3. Max Depth**
 
-Max Depth decides the level of dependencies that will be executed while fetching and committing vlocity components. The value of Max Depth that was set while configuring vlocity will be used globally
+Max Depth decides the level of dependencies that will be executed while fetching and committing vlocity components. The value of Max Depth that was set while configuring OmniStudio will be used globally
 
 However, the user can modify the value based on his requirement.
 
@@ -48,7 +48,7 @@ The user also has an option to upload a custom **YAML file** (Project path and m
 
 **5. Compile on Build**
 
-When checked, it compiles the data you are attempting to deploy in your branch. **However, AutoRABIT recommends that you keep this checkbox unselected.** This is because the AR tool can throw a compilation error when you're trying to commit data that doesn't have dependent components keeping the '**Compile On Build'** checkbox selected.
+When checked, it compiles the data you are attempting to deploy in your branch. **However, AutoRABIT recommends that you keep this checkbox unselected.** This is because the tool can throw a compilation error when you're trying to commit data that doesn't have dependent components keeping the '**Compile On Build'** checkbox selected.
 
 **6. Auto Update Settings**
 
@@ -58,37 +58,37 @@ This option ensures you have the latest DataPack settings before each export and
 
 Add Ability to Export Matrix Versions separately.
 
-Fill in the remaining fields as per your requirements, and proceed to the next screen. The vlocity components will get retrieved based on the difference between the Salesforce org and below mentioned retrieval path. Select the components that you would like to commit to the branch.
+Fill in the remaining fields as per your requirements, and proceed to the next screen. The OmniStudio components will get retrieved based on the difference between the Salesforce org and below-mentioned retrieval path. Select the components you would like to commit to the branch.
 
 ### Possible Retrieval Path <a href="#possible-retrieval-path" id="possible-retrieval-path"></a>
 
 #### A. For Custom YAML file <a href="#a-for-custom-yaml-file" id="a-for-custom-yaml-file"></a>
 
-**Scenario 1:** If the metadata folder path is not available. For such a case, the vlocity components will fetch from the _**\<repoURL>/\<yaml project path>**_ path by default.
+**Scenario 1:** If the metadata folder path is not available. For such a case, the OmniStudio components will fetch from the _**\<repoURL>/\<yaml project path>**_ path by default.
 
 **Example:**
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="452"><figcaption></figcaption></figure>
 
-**Retrieval Path:**_**"\<repoURL>/\<yaml project path>"**_**Scenario 2:** The metadata folder path is available.In such case, the vlocity components will get retrieved from _r**epoURL>/\<metadata folder path>/\<yaml project path>**_.
+**Retrieval Path:**_**"\<repoURL>/\<yaml project path>"**_**Scenario 2:** The metadata folder path is available. In such case, the OmniStudio components will get retrieved from _**repoURL>/\<metadata folder path>/\<yaml project path>**_.
 
 **Example:**
 
 <figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="452"><figcaption></figcaption></figure>
 
-**Retrieval Path:**_**"\<repoURL>/\<Vlocity Component>/\<yaml project path>"**_
+**Retrieval Path:**_**"\<repoURL>/\<OmniStudio Component>/\<yaml project path>"**_
 
 #### B. For Default YAML file <a href="#b-for-default-yaml-file" id="b-for-default-yaml-file"></a>
 
-**Scenario 1:** The metadata folder path is not available. For such a case, the vlocity components will fetch from _**\<repoURL>/autorabit\_alldefault\_vlocity\_build**_ path by default.
+**Scenario 1:** The metadata folder path is not available. For such a case, the OmniStudio components will fetch from _**\<repoURL>/autorabit\_alldefault\_OmniStudio\_build**_ path by default.
 
 **Example:**
 
 <figure><img src="../../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1).png" alt="" width="452"><figcaption></figcaption></figure>
 
-**Retrieval Path**: _**"\<repoURL>/\<autorabit\_alldefault\_vlocity\_build>"**_
+**Retrieval Path**: _**"\<repoURL>/\<autorabit\_alldefault\_OmniStudio\_build>"**_
 
-**Scenario 2:** The metadata folder path is available.In such case, the vlocity components will get retrieved from _**\<repoURL>/\<metadata folder path>**_.
+**Scenario 2:** The metadata folder path is available. In such case, the OmniStudio components will get retrieved from _**\<repoURL>/\<metadata folder path>**_.
 
 **Example:**
 

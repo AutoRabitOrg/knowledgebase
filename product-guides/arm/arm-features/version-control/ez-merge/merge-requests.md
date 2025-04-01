@@ -135,3 +135,9 @@ After you create a merge request, you can ask a specific person to review your p
     <figure><img src="../../../../../.gitbook/assets/image (77) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/image (78) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+## Frequently Asked Questions <a href="#why-is-arm-rejecting-my-merge-request-at-the-final-step" id="why-is-arm-rejecting-my-merge-request-at-the-final-step"></a>
+
+### Why is ARM rejecting my merge request at the final step? <a href="#why-is-arm-rejecting-my-merge-request-at-the-final-step" id="why-is-arm-rejecting-my-merge-request-at-the-final-step"></a>
+
+This occurs when merge criteria do not match the ARM settings. Before submitting the merge request, configure it in ARM to match your needs. Make the appropriate modifications under **Admin > Merge Settings**.

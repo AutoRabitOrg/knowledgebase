@@ -81,7 +81,7 @@ There are some rules you have to follow for naming identifiers:
 
 It is done to restrict XML injections and prevent XML file corruption.
 
-### What browsers does ARM support? <a href="#what-browsers-does-arm-support" id="what-browsers-does-arm-support"></a>
+### ()What browsers does ARM support? <a href="#what-browsers-does-arm-support" id="what-browsers-does-arm-support"></a>
 
 ARM works best in the two most recent versions of these browsers:
 
@@ -90,23 +90,23 @@ ARM works best in the two most recent versions of these browsers:
 * Firefox
 * Safari
 
-### Why am I unable to log in to ARM using the Chrome browser? <a href="#not-able-to-login-to-arm-using-chrome-browser" id="not-able-to-login-to-arm-using-chrome-browser"></a>
+### ()Why am I unable to log in to ARM using the Chrome browser? <a href="#not-able-to-login-to-arm-using-chrome-browser" id="not-able-to-login-to-arm-using-chrome-browser"></a>
 
 1. Try logging in to your account using Chrome incognito mode.
 2. Clear the Chrome browser cache.
 3. If cleaning the cache does not help, try a different browser (Firefox) and see if the problem persists.
 4. If the problem is solely with Chrome, reinstall it.
 
-### \*\*Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
+### ()Given the shift in IP ranges, is it possible to migrate from one AutoRABIT instance to another? <a href="#given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another" id="given-the-shift-in-ip-ranges-is-it-possible-to-migrate-from-one-autoabit-instance-to-another"></a>
 
 Yes, this is achievable with assistance from AutoRABIT; however, your [Salesforce Orgs](../../../product-guides/arm/arm-administration/registration/salesforce-org/) must be re-registered in AutoRABIT, and permissions provided to the relevant AutoRABIT users must be re-granted.
 
-### Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
+### ()Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
 
 1. **The deleted user's credential exists in AutoRABIT**: Go to _**Admin > Credential Manager**_ and type in the username that exists. You should find a record if it is still there.
 2. [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **repository is registered with the existing user's credentials**: Get your existing user credentials updated with the new user details with the help of your admin. To do so, go to **Credential Manager** section and search for the existing user credential and get it updated with the new user details. Or create a user credential for the new user and re-register the existing version control repository with it.
 
-### Why do my users not have access to all the features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
+### ()Why do my users not have access to all the features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
 
 1. Your users may not have the authority to access the modules that they are looking for; nevertheless, users with administrator privileges only will have access to certain features. To see the user's available roles in AutoRABIT, go to the **Admin > Roles** section.
 2. For the necessary permissions, contact your **Org Admin**.

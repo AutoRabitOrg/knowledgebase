@@ -201,3 +201,15 @@ If your user account is associated with a different organization, this can happe
 
 The **User Permissions** and **Roles** in your organization may have been rearranged. Please contact your Admin and they should be able to grant you the necessary permissions again.
 
+### Why am I able to see some users who are deleted in AutoRABIT? <a href="#why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit" id="why-am-i-able-to-see-some-of-the-users-that-are-deleted-in-autorabit"></a>
+
+1. **The deleted user's credential exists in AutoRABIT**: Go to _**Admin > Credential Manager**_ and type in the username that exists. You should find a record if it is still there.
+2. [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **repository is registered with the existing user's credentials**: Get your existing user credentials updated with the new user details with the help of your admin. To do so, go to **Credential Manager** section and search for the existing user credential and get it updated with the new user details. Or create a user credential for the new user and re-register the existing version control repository with it.
+
+### Why do my users not have access to all the features available in ARM? <a href="#why-my-users-do-not-have-access-to-all-of-features-available-in-arm" id="why-my-users-do-not-have-access-to-all-of-features-available-in-arm"></a>
+
+1. Your users may not have the authority to access the modules that they are looking for; nevertheless, users with administrator privileges only will have access to certain features. To see the user's available roles in AutoRABIT, go to the **Admin > Roles** section.
+2. For the necessary permissions, contact your **Org Admin**.
+
+
+

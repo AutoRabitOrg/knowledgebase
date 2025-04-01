@@ -1,8 +1,12 @@
 # Common Errors and Resolutions
 
+### [A](./#a) | [C](./#c) | [F](./#f) | [G](./#g) | [I](./#i) | [J](./#j) | [L](./#l) | [N](./#n) | [O](./#o) | [P](./#p) | [R](./#r) | [S](./#s) | [T](./#t) | [U](./#u) | [V](./#v) | [W](./#w) | [Y](./#y)
+
 ### 413: Status Error
 
 Users may encounter a 413-status error in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.
+
+### A
 
 ### Authentication Failed
 
@@ -12,6 +16,8 @@ This error may occur when users are selecting an ALM on the EZ-Commit screen. VP
 * To reauthenticate your ALM configuration, click the Test Connection icon to verify your credentials.
 
 If the steps above do not work, create a new credential and link it to your ALM account.
+
+## C
 
 ### **Cannot Open Git-Upload-Pack**&#x20;
 
@@ -26,6 +32,8 @@ To resolve this issue:
 * Try recreating a new credential and updating the credentials under the **Admin > Credential** section.
 * Re-register your bitbucket repository in ARM.
 
+## F
+
 ### Failed to initiate deployment. Unexpected end of JSON input.
 
 When running a CI job, if any of the folders in the remote repository has an empty **JSON** file, that will cause SFDX commands to fail with an incorrect JSON error. Delete the **empty JSON file(s)** from the remote repository to resolve this issue and re-run the CI job.
@@ -37,6 +45,8 @@ This error typically happens when you try to push to a remote repository, but yo
 ### **Failed to push some refs to \[remote]. Updates were rejected**
 
 This error usually occurs when you try to push to a branch that has been updated by someone else. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again.
+
+## G
 
 ### **GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.**
 
@@ -56,9 +66,13 @@ Cross-verify the following things:
 
 For more content, go through![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/)
 
+## I
+
 ### **Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml**
 
 When a deployment fails, this error usually occurs due to behavior in the Salesforce CLI 7.83 version. When retrieving the LWC components, it retrieves .css-meta.xml rather than .js-meta.xml file, which results in the deployment failing. Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again.
+
+## J
 
 ### Job too long after 1 hour of analysis
 
@@ -71,6 +85,8 @@ Increase the timeouts to avoid this problem:
 
 For detailed information on how to change the timeouts, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/unit-test-timeout).
 
+## L
+
 ### **Local and remote repositories are not on the same revision** <a href="#autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean" id="autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean"></a>
 
 There are several possible explanations for AutoRABIT to throw an error **"local and remote repo is not on same revision"**:
@@ -78,6 +94,8 @@ There are several possible explanations for AutoRABIT to throw an error **"local
 1. The local repository is out of date.
 2. The branch that contains the commit was deleted, so the commit is no longer referenced.
 3. Someone force-pushed the commit.
+
+## N
 
 ### Not Authorized (to Merge)
 
@@ -89,9 +107,13 @@ This error message occurs when performing a merge when credentials are not prope
 
 If the test connection for the mapped repository and branch fails, we recommend upgrading your password and altering the credential in the credential section, then retrying the connection.
 
+## O
+
 ### OAuth Authentication Failed
 
 Users may encounter this error when trying to register a Salesforce environment in ARM. This occurs when users do not use the My Domain URL when adding the Salesforce org to ARM. To correct this error, use **My Domain URL** while registering a Salesforce org in ARM.
+
+## P
 
 ### **Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact**
 
@@ -109,6 +131,8 @@ Users may encounter this error when trying to connect to the Bitbucket repo, whi
 
 This error is usually returned when you have some branch restrictions set up in your repository and the commit you are trying to push does not meet the requirements of that branch restriction.
 
+## R
+
 ### **Refusing to update checked out branch: \[branch\_name]**
 
 This error occurs when you try to push to the branch you currently have checked out. To resolve this, you can either switch to a different branch or create a new branch to work on.
@@ -116,6 +140,8 @@ This error occurs when you try to push to the branch you currently have checked 
 ### **RPC failed; result=XXX, HTTP code = XXX**
 
 This error is often related to network issues or server misconfigurations. It can occur when pushing large files or when the Git server is experiencing problems. Checking your network connection and trying again later may resolve this error.
+
+## S&#x20;
 
 ### Schema is invalid
 
@@ -141,6 +167,8 @@ When a commit returns this error, it is either because:&#x20;
 
 This error occurs when you try to push a branch that doesn't exist locally or has a different name. Ensure that the branch exists and that you have the correct name.
 
+## T
+
 ### **TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.**
 
 This error may be encountered while attempting to commit changes for the production organization to the GitHub master branch.  This is expected. When the branch is set with the branch policy, you cannot push it directly and need to create a pull request to update it. Once you remove the branch policy, you should have the ability to push changes to the master branch. Please contact the GitHub Administrator to request push permissions.
@@ -153,6 +181,8 @@ Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0
 
 When generating a code coverage report for a registered Salesforce org, the test fails with this error if the Apex test execution takes a long time. Go to **TAF > Apex Test Execution** and clear all of the tests in the queue, then run the code coverage report through ARM again.
 
+## U
+
 ### Unable to fetch Salesforce Org Users
 
 This error may be encountered when a user tries to access the Salesforce Org in the ARM Version Control, CI Jobs, Deployment, and SFDX Modules. This may occur due to an invalid username, password, or security token, if the user is locked out, or if the Salesforce API version is incorrectly configured.&#x20;
@@ -163,6 +193,8 @@ Upgrade the API source flow in your Salesforce org to the most recent version an
 
 This occur may occur when environment provisioning jobs are failing due to using the wrong file format for the **package.xml** file. Upload the correct package.xml file during the creation of environment provisioning jobs.
 
+## V
+
 ### Validation checking fails for your repository
 
 Users may encounter this error message when a Merge is failed. This occurs when repository credentials are expired or have been modified and not updated in ARM.&#x20;
@@ -170,9 +202,13 @@ Users may encounter this error message when a Merge is failed. This occurs when 
 1. Navigate to **Admin > VC repos**, select your repository, and perform a test connection. Please verify your repository credentials are not expired or modified.
 2. Re-run the CI job after you confirm that the repository connection is successful.
 
+## W
+
 ### Why am I getting an error when I try to install CodeScan Sonar as a plugin in ARM? <a href="#why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm" id="why-am-i-getting-an-error-when-i-try-to-install-codescan-sonar-as-a-plugin-in-arm"></a>
 
 This occurs when using an old version of CodeScan. Install the most recent version of CodeScan to avoid any installation errors.
+
+## Y
 
 ### **You are not authorized to push changes to the remote repository**
 

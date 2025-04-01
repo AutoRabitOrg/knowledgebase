@@ -17,7 +17,7 @@ To view your support ticket and its status, follow the steps below:
 
 Now you will be able to view your org-related tickets here.
 
-### Why am I unable to log in to my ARM account? <a href="#unable-to-login-into-my-arm-account" id="unable-to-login-into-my-arm-account"></a>
+### ()Why am I unable to log in to my ARM account? <a href="#unable-to-login-into-my-arm-account" id="unable-to-login-into-my-arm-account"></a>
 
 If you're having trouble logging into your AutoRABIT account, here are some things you can try.
 

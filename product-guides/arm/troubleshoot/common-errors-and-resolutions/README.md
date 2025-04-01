@@ -54,7 +54,7 @@ This error may be encountered while attempting to commit changes for a productio
 
 ### GIT Push Result: RemoteRefUpdate\[remoteName=refs/heads/release/CI\_UAT2\_Refresh, REJECTED\_OTHER\_REASON, 3235de0aa8e9edd83ab68d4d723c0301847caf78...9b4c80cea9e7217aa7d16486f1f30b609406c2f1, fastForward, srcRef=refs/heads/release/CI\_UAT2\_Refresh, message="pre-receive hook declined"] Status of the GIT Push process: REJECTED\_OTHER\_REASON
 
-Multiple Branching Baseline jobs show no local modifications to commit. As a result the following error message is thrown. This occurs when one of your commit messages is missing a valid issue key:
+Multiple Branching Baseline jobs show no local modifications to commit. As a result the following error message is thrown. This occurs when one of your commit messages is missing a valid issue key:&#x20;
 
 &#x20; 9b4c80c: Commit From AutoRABIT \[Branch Baseline] \[LabelName:UAT2 Baseline]
 
@@ -121,7 +121,7 @@ Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0
 
 ### **Permissions Read All ServiceTerritory depends on permission(s): Read All OperatingHours**
 
-Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC](https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC)
+Please refer to this article: [https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC](https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC)
 
 ### Please check credentials for 'xxx' branch of 'abc' repository
 

@@ -128,7 +128,7 @@ While merging Salesforce records between two Version Control branches, you can a
 
 ### During the Commit Process <a href="#during-commit-process" id="during-commit-process"></a>
 
-While performing a validation deployment before actually committing the changes, you can allow CodeScan to check for any bugs, code smells and security vulnerabilities.
+While performing a validation deployment before actually committing the changes, you can allow CodeScan to check for any bugs, code smells, and security vulnerabilities.
 
 1. In the Submit for Validation screen, go to the **Validation Reports** section.
 2. Select **CodeScan/Lint** as an **SCA tool**.

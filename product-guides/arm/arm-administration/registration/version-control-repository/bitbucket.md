@@ -1,4 +1,4 @@
-# BitBucket
+# Bitbucket
 
 ### About Bitbucket <a href="#about-bitbucket" id="about-bitbucket"></a>
 
@@ -53,14 +53,14 @@ To authenticate Bitbucket, you’ll have to use the **App Password** instead of 
 
 ### Register a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
 
-If you wish to set up a Bitbucket repository, ensure that you have an account created and configured at BitBucket. Next, follow the below steps:
+If you wish to set up a Bitbucket repository, ensure that you have an account created and configured at Bitbucket. Next, follow the below steps:
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on **`VC Repos`**.
 3. Click on the **`Register Repository`** available on the right corner of the screen.
 4. On the **`Register Repository`** page, select the **`Version Control System`** as **`GIT`**.
 5. Enter the **`name`** of the repository to display it locally.
-6. Paste the **`Clone URL`** that BitBucket provides you.
+6. Paste the **`Clone URL`** that Bitbucket provides you.
 
 > Follow the steps to copy the URL from the Bitbucket account:\
 > a. Select your registered Bitbucket repository.\
@@ -72,3 +72,16 @@ If you wish to set up a Bitbucket repository, ensure that you have an account cr
 8. The **`Default Branch`** selection will be in disabled mode by default. Click on the **`refresh`** button to fetch and list down all the available branches on your remote repository.
 9. Select one of the default branches from the list.
 10. Once the registration is successfully done, you can find the newly added repository on the **`VC Repo's`** home page.
+
+{% hint style="info" %}
+NOTE: Users may encounter an Error: **Cannot Open Git-Upload-Pack** when trying to register the Bitbucket repository. This occurs when:
+
+* The Bitbucket account is locked.
+* When registering the Bitbucket repository, the wrong credentials were used.
+* The IT/Network team has whitelisted ARM's IP address.
+
+To resolve this issue:
+
+* Try recreating a new credential and updating the credentials under the **Admin > Credential** section.
+* Re-register your bitbucket repository in ARM.
+{% endhint %}

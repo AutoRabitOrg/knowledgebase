@@ -63,11 +63,11 @@ If the user is on a proxy-enabled server and receives an error such as **"Userna
 
 View all your support tickets via **Quick Links > Help Center** from the ARM application which redirects to the Support portal page where you can see the list of open cases created by you or by your team.
 
-### \*\*Which version of TLS does ARM run? <a href="#which-version-of-tls-does-arm-run" id="which-version-of-tls-does-arm-run"></a>
+### ()Which version of TLS does ARM run? <a href="#which-version-of-tls-does-arm-run" id="which-version-of-tls-does-arm-run"></a>
 
 ARM runs on **TLS 1.2**, therefore when Salesforce disables TLS 1.0, it has no effect on ARM.
 
-### \*\*What rules do I need to obey when naming identifiers for all of the labels in the ARM application?
+### ()What rules do I need to obey when naming identifiers for all of the labels in the ARM application?
 
 There are some rules you have to follow for naming identifiers:
 
@@ -77,7 +77,7 @@ There are some rules you have to follow for naming identifiers:
 * Number (0-9) is allowed
 * Special characters (- and ,) are allowed.
 
-### \*\*What is the primary reason for restricting special characters when naming identifiers? <a href="#what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers" id="what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers"></a>
+### ()What is the primary reason for restricting special characters when naming identifiers? <a href="#what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers" id="what-is-the-primary-reason-for-restricting-special-characters-when-naming-identifiers"></a>
 
 It is done to restrict XML injections and prevent XML file corruption.
 

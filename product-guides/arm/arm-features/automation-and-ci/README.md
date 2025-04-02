@@ -11,3 +11,16 @@ Continuous integration allows for extremely fast and flexible development and re
 For a robust quality assurance process, use a continuous integration system, such as AutoRABIT, to run test deployments for each addition of customization to the source control repository. You can perform these deployments in a dedicated sandbox for continuous integrations. Apex tests are executed as part of each deployment.
 
 You can use a continuous integration system to automate deployments. For example, using AutoRABIT to automate deployments to the user acceptance testing (UAT) sandbox.
+
+## Frequently Asked Questions
+
+### **Why does the CI job deploy all files in a Static Resource folder instead of just the changed ones?**
+
+When deploying Static Resources using a CI job, the system deploys the **entire folder**, not just the delta (changed) files. This is **expected behavior**.
+
+For example, even if only a `.csv` file is committed, the CI job includes all files from the Static Resource folder in the branch. This can cause deployment failures if outdated or unintended files are present.
+
+> **Note:** EZ-Commit appends retrieved metadata to the repository and does **not remove** stale files. Removing unwanted metadata requires a **destructive commit**, which operates at the metadata level—not on individual files within Static Resources.
+
+**Recommended Approach:**\
+Before committing changes, **manually clean the Static Resource folder** in the branch to ensure only intended files are present. Use **destructive changes** if you need to remove obsolete metadata components.

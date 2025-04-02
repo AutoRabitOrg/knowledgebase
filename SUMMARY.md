@@ -498,6 +498,7 @@
       * [SSO for OKTA](product-guides/arm/integration-and-plugins/sso/sso-for-okta.md)
       * [SSO For PingFederate](product-guides/arm/integration-and-plugins/sso/sso-for-pingfederate.md)
       * [SSO For ADFS](product-guides/arm/integration-and-plugins/sso/sso-for-adfs.md)
+      * [SAML SSO (Generic IdP)](product-guides/arm/integration-and-plugins/sso/saml-sso-generic-idp.md)
     * [Active Directory](product-guides/arm/integration-and-plugins/active-directory.md)
     * [JIRA](product-guides/arm/integration-and-plugins/jira.md)
     * [Azure DevOps](product-guides/arm/integration-and-plugins/azure-devops.md)

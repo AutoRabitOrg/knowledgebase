@@ -24,12 +24,14 @@ If you do not have a workflow setup on your GitHub repository, go to **`Actions 
 Add the following into your **.YML file** in the workflow:
 
 ```none
-name: CI 
+name: CI
 on: 
   push: 
     branches: [main] 
   pull_request: 
-    branches: [main] 
+    branches: [main]
+env: 
+  SONAR_SCANNER_VERSION: 5.0.1.3006
 jobs: 
   build: 
     runs-on: ubuntu-latest 

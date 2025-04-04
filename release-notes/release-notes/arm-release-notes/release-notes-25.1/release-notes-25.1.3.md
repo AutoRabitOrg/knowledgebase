@@ -9,7 +9,9 @@ This release introduces significant new capabilities and key enhancements across
 #### **1. New Feature** <a href="#id-1.-new-feature" id="id-1.-new-feature"></a>
 
 * **Multi-Level Deployment Approval by Org**\
-  A two-level deployment approval process has been introduced to provide better control over releases. Each approval level supports group-based approval, allowing any member within the group to approve the deployment. Email notifications are sent to approvers with a link to ARM for approval actions. This approval process can be configured based on Org name. Admins can select applicable orgs and assign separate approvers or approver groups for each.
+  A two-level deployment approval process has been introduced to provide better control over releases. Each approval level supports group-based approval, allowing any member within the group to approve the deployment. Email notifications are sent to approvers with a link to ARM for approval actions. This approval process can be configured based on Org name. Admins can select applicable orgs and assign separate approvers or approver groups for each.\
+  \
+  **Note:** Approval Process support is now limited to **Direct Custom Deployment** only. It is **not supported** via **Org Sync** or **Profile Management**.
 
 #### **2. Feature Enhancements** <a href="#id-2.-feature-enhancements" id="id-2.-feature-enhancements"></a>
 
@@ -20,6 +22,8 @@ This release introduces significant new capabilities and key enhancements across
 
 #### 3. Architecture Improvements <a href="#id-3.-architecture-improvements" id="id-3.-architecture-improvements"></a>
 
+* **3-Tier Architecture for ARM – Separate and Load the UI and Backend Services Individually**\
+  The ARM UI can now be compiled and run independently from the backend. Based on configurable endpoints, the UI communicates with any designated backend server, defaulting to localhost. All UI components load locally, and API calls are routed according to the configured backend endpoint.
 *   **Resilience in Global Workspace Management for Optimized Workspaces**\
     A backend fix has been implemented to ensure stability in global workspace creation when the default branch is missing or deleted in the repository. When the default branch no longer exists in AutoRABIT or the remote repository, the system will now automatically update the global workspace and repository configuration to use the last valid branch. This prevents version control operations—such as commit, merge, or revision listing—from being blocked due to a broken global workspace.
 

@@ -7,6 +7,7 @@ After completing this unit, you'll be able to:
 * [Install the 'CodeScan for Visual Studio (VS) Code' extension](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#installing-the-codescan-for-vs-code-extension)
 * [Integrate VS Code with CodeScan](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#integrate-vs-code-with-codescan-extension)
 * [Run VS Code behind a proxy](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#visual-studio-code-behind-a-proxy)
+* Compatibility with Agentforce
 * [Troubleshooting steps if you experienced VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
 
 ### Installing the CodeScan IDE Plugin version 2.0.0
@@ -263,6 +264,26 @@ If you are connecting to a server with self-signed certificates, you will need t
 For your **Java** installation, you can find the documentation [here](https://docs.oracle.com/en/java/javase/11/security/java-security-overview1.html#GUID-054AD71D-D449-47FF-B6F7-F416DA821D46).
 
 For **Node** installation, add the environment variable _**`NODEEXTRACA_CERTS`**_ with the path to your certificate file as a value, e.g., **`/usr/local/share/ca-certificates/YOUR_CERT.crt.`**
+
+### Compatibility with Agentforce
+
+This plugin is compatible with **Agentforce version 2.2.0 and up**.
+
+To allow CodeScan to run correctly there are 2 steps:
+
+1.  Turn off **Retrieval Augmented Generation** in the settings for Agentforce\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1636).png" alt=""><figcaption></figcaption></figure>
+2. Add the following lines to your settings.json file:
+
+```
+  "salesforce.einsteinForDevelopers.advanced": {
+    "workspaceStatistics": false
+  }
+```
+
+After these changes have been made, restart Visual Studio Code.
 
 ### VS Code Troubleshooting <a href="#vs-code-troubleshooting" id="vs-code-troubleshooting"></a>
 

@@ -2,7 +2,7 @@
 
 ### ALM Labels: Overview <a href="#alm-labels-overview" id="alm-labels-overview"></a>
 
-With **AR 19.3.1** release, AutoRABIT has introduced a section called ALM labels under the **Change Labels** tab. This page will display all the ALM labels which you have created either from merge or commits, and show details of the ALM commits and the link between work items and commits. In this way, the user will be able to view the user stories info linked to its commits.&#x20;
+AutoRABIT has introduced a section called ALM labels under the **Change Labels** tab. This page will display all the ALM labels which you have created either from merge or commits, and show details of the ALM commits and the link between work items and commits. In this way, the user will be able to view the user stories info linked to its commits.&#x20;
 
 ### To view ALM Labels <a href="#to-view-alm-labels" id="to-view-alm-labels"></a>
 

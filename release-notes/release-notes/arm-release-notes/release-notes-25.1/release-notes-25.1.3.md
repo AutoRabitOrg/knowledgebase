@@ -52,4 +52,9 @@ This release introduces significant new capabilities and key enhancements across
 * **Provar Plugin Name Edit Handling**\
   Editing the Provar name in the Admin module no longer triggers an invalid notification pop-up when a key file is already uploaded. A response check ensures smoother and more accurate user feedback. _Impacted Modules: My Account plugins (Provar)._
 
-\
+## **nCino + Data Loader 25.1.3 Release Notes**
+
+**Release Date: 6 April 2025**\
+
+
+See the [Release Notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.3-release-notes) for nCino + Data Loader improvements.&#x20;

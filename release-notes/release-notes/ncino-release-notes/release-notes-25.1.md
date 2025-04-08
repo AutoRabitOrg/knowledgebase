@@ -1,5 +1,17 @@
 # Release Notes 25.1
 
+## **nCino + Data Loader 25.1.3 Release Notes**
+
+**Release Date: 6 April 2025**
+
+**Enhanced Job Prioritization in Queue:** The queue functionality has been enhanced to allow users to **prioritize jobs** effectively. Users can now **rearrange jobs based on priority**, and the updated job order will be **saved persistently in the queue**, ensuring execution follows the defined priority.
+
+**VC Code Performance Optimization:** Refactored the **VC code** to enhance **performance and efficiency**, ensuring smoother execution and improved system responsiveness.
+
+**Improved Circular Reference Handling:** Fixed an issue to ensure **circular references are correctly identified and not ignored** during processing, improving data integrity and system stability.
+
+**Source ID Column Visibility Fix:** Resolved an issue where the **"Source ID" column was not visible** on the results screen. The column is now correctly displayed to ensure complete data visibility.
+
 ## nCino + Data Loader 25.1.2 Release Notes
 
 **Release Date: 9 March 2025**

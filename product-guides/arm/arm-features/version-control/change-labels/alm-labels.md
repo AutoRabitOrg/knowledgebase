@@ -6,7 +6,7 @@ AutoRABIT has introduced a section called ALM labels under the **Change Labels**
 
 ### To view ALM Labels <a href="#to-view-alm-labels" id="to-view-alm-labels"></a>
 
-1. Hover your mouse over the [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) module and click on the **Change Labels > ALM Labels** or directly go to the **Change Labels** tab and select **ALM Labels** from the dropdown.The **ALM Labels** screen is best viewed when the zoom setting is set to **75%** on your chrome/firefox browser.
+1. Hover your mouse over the [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) module and click on the **Change Labels > ALM Labels** or directly go to the **Change Labels** tab and select **ALM Labels** from the dropdown.The **ALM Labels** screen is best viewed when the zoom setting is set to **80%** on your chrome/firefox browser.
 
 <figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

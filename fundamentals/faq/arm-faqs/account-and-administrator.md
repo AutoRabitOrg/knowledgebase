@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Account & Administrator
 
 {% hint style="info" %}

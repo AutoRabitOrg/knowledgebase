@@ -36,41 +36,28 @@ Component details are listed in their corresponding sections within this documen
 
 We have verified that users are now able to see the violation for the following scenarios.
 
-`@IsTest`
+```@IsTest
+public void noRunAs(){
+    // No RunAs will always violate
+}
+```
 
-`public void noRunAs(){`
+```@IsTest
+public void standardRunAs(){
+    User newUser = new User();
+    System.runAs(newUser){
+        // RunAs User will never violate
+    }
+}
+```
 
-&#x20; `// No RunAs will always violate`
-
-`}`
-
-`@IsTest`
-
-`public void standardRunAs(){`
-
-&#x20; `User newUser = new User();`
-
-&#x20; `System.runAs(newUser){`
-
-&#x20;   `// RunAs User will never violate`
-
-&#x20; `}`
-
-`}`
-
-&#x20;
-
-`@IsTest`
-
-`public void otherRunAs(){`
-
-&#x20; `System.runAs(userFactory.createTestUser()){`
-
-&#x20; `// RunAs given a method will violate when checkRunAsOnly parameter is false`
-
-&#x20; `}`
-
-`}`&#x20;
+```@IsTest
+public void otherRunAs(){
+    System.runAs(userFactory.createTestUser()){
+        // RunAs given a method will violate when checkRunAsOnly parameter is false
+    }
+}
+```
 
 ## Release Notes 25.0.2&#x20;
 

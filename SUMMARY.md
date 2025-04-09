@@ -292,6 +292,7 @@
     * [nCino](product-guides/arm/arm-features/ncino/README.md)
       * [Feature Migration](product-guides/arm/arm-features/ncino/feature-migration/README.md)
         * [Create a Feature Migration Template](product-guides/arm/arm-features/ncino/feature-migration/create-a-feature-migration-template.md)
+        * [\[DRAFT - Project - X\] Create a Feature Migration Template](product-guides/arm/arm-features/ncino/feature-migration/create-a-feature-migration-template-1.md)
         * [Create a Feature Migration Template with Predefined nCino Objects](product-guides/arm/arm-features/ncino/feature-migration/create-a-feature-migration-template-with-predefined-ncino-objects.md)
         * [Feature Migration Summary Page](product-guides/arm/arm-features/ncino/feature-migration/feature-migration-summary-page.md)
       * [Feature Deployment](product-guides/arm/arm-features/ncino/feature-deployment/README.md)

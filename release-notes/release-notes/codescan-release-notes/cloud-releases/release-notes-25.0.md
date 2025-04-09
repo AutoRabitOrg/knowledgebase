@@ -20,29 +20,28 @@ Component details are listed in their corresponding sections within this documen
 
 ### Enhancements
 
-1.  Enhanced rule “Use System.runAs to test user permissions” to ensure that a violation should not be thrown if the variable used is within the class scope. \
+1.  Enhanced rule “Use System.runAs to test user permissions” to ensure that a violation should not be thrown if the variable used is within the class scope.\
     \
     Historically, the CodeScan rule “Use System.runAs to test user permissions” checks for the presence of System.runAs in the test methods and that a local User variable is passed.\
     \
-    This enhancement provides an alternative for the rule by adding a parameter to ignore checks for the variable passed to the RunAs method. \
+    This enhancement provides an alternative for the rule by adding a parameter to ignore checks for the variable passed to the RunAs method.\
     \
     The implantation of this enhancement is via a parameter which defines an execution:
 
     * \*Parameter name\*: checkRunAsOnly
-    * \*Parameter desc\*: When true, this parameter tests only if RunAs is used in the method, not the arguments passed to it.\
-
+    * \*Parameter desc\*: When true, this parameter tests only if RunAs is used in the method, not the arguments passed to it.\\
 
     Note that the parameter default is false.
 
 We have verified that users are now able to see the violation for the following scenarios.
 
-```@IsTest
+```apex
 public void noRunAs(){
     // No RunAs will always violate
 }
 ```
 
-```@IsTest
+```apex
 public void standardRunAs(){
     User newUser = new User();
     System.runAs(newUser){
@@ -51,7 +50,7 @@ public void standardRunAs(){
 }
 ```
 
-```@IsTest
+```apex
 public void otherRunAs(){
     System.runAs(userFactory.createTestUser()){
         // RunAs given a method will violate when checkRunAsOnly parameter is false
@@ -59,27 +58,27 @@ public void otherRunAs(){
 }
 ```
 
-## Release Notes 25.0.2&#x20;
+## Release Notes 25.0.2
 
-**Release Date: 5 February 2025**&#x20;
+**Release Date: 5 February 2025**
 
-### Summary&#x20;
+### Summary
 
-CodeScan 25.0.2 is comprised of the following 4 components:&#x20;
+CodeScan 25.0.2 is comprised of the following 4 components:
 
-* [1 New Feature](release-notes-25.0.md#new-feature)&#x20;
-* [1 Enhancement](release-notes-25.0.md#enhancement)&#x20;
-* [2 Fixes ](release-notes-25.0.md#fixes)
+* [1 New Feature](release-notes-25.0.md#new-feature)
+* [1 Enhancement](release-notes-25.0.md#enhancement)
+* [2 Fixes](release-notes-25.0.md#fixes)
 
-Component details are listed in their corresponding sections within this document.&#x20;
+Component details are listed in their corresponding sections within this document.
 
-### New Feature&#x20;
+### New Feature
 
-1. **Added “Security Hotspots” in CSV Export** \
+1. **Added “Security Hotspots” in CSV Export**\
    \
-   We have had a long-standing capability to export issues directly from the CodeScan user interface. However, there was not the ability to export Hotspots. \
+   We have had a long-standing capability to export issues directly from the CodeScan user interface. However, there was not the ability to export Hotspots.\
    \
-   With this new feature, we have added a new page in the CodeScan UI that allows users to directly export Hotspots.  And, similar to exporting issues, this can be done at the branch or PR level.&#x20;
+   With this new feature, we have added a new page in the CodeScan UI that allows users to directly export Hotspots. And, similar to exporting issues, this can be done at the branch or PR level.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-31 at 3.40.53 PM.png" alt="" width="563"><figcaption><p>Hotspots Export</p></figcaption></figure>
 
@@ -91,59 +90,57 @@ Please note that if the Status selected is **Reviewed**, then the Resolution fie
 
 Further, to make navigation clearer and easier for users, we have renamed the existing CSV export page to “CSV Issues Export”, which is separate from the new “CSV Security Hotspots Export” page. Both pages can be opened under the “More” tab (as long as the user has the proper permissions).
 
-
-
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-31 at 3.44.29 PM.png" alt="" width="563"><figcaption><p>More Dropdown</p></figcaption></figure>
 
-Finally, we verified the following scenarios:&#x20;
+Finally, we verified the following scenarios:
 
-* Verified that we are able to export security hotspot issues of a selected project. &#x20;
+* Verified that we are able to export security hotspot issues of a selected project.
 * Verified that all the required fields were included in the exported CSV with correct data.
-* Verified that the resolutions are visible only when the status **Reviewed** is selected.&#x20;
+* Verified that the resolutions are visible only when the status **Reviewed** is selected.
 
-### Enhancement&#x20;
+### Enhancement
 
-1. **Enhanced rule “Avoid Classes Without Explicit Sharing" to account for interfaces**  \
+1. **Enhanced rule “Avoid Classes Without Explicit Sharing" to account for interfaces**\
    \
-   Previously, CodeScan did not consider interfaces when flagging violations.  As such, the rule "sf:ClassExplicitSharing" was generating a false positive when applied to interfaces, as the Sharing keyword is not allowed on interfaces in Salesforce.  \
+   Previously, CodeScan did not consider interfaces when flagging violations. As such, the rule "sf:ClassExplicitSharing" was generating a false positive when applied to interfaces, as the Sharing keyword is not allowed on interfaces in Salesforce.\
    \
-   This issue has been remediated. We have updated the rule to exclude interfaces from its check for the Sharing keyword, ensuring accurate validation and preventing incorrect flags.  \
+   This issue has been remediated. We have updated the rule to exclude interfaces from its check for the Sharing keyword, ensuring accurate validation and preventing incorrect flags.\
    \
-   We have verified the rule: "sf:ClassExplicitSharing" for the following scenarios:&#x20;
-   * Violation is not thrown if we use with/without sharing for classes.&#x20;
-   * Violation is thrown if we don’t use with/without sharing for classes.&#x20;
-   * Violation is not thrown for an interface class, not even when used with/without sharing. &#x20;
-   * Violation is thrown if we only use sharing for classes.&#x20;
+   We have verified the rule: "sf:ClassExplicitSharing" for the following scenarios:
+   * Violation is not thrown if we use with/without sharing for classes.
+   * Violation is thrown if we don’t use with/without sharing for classes.
+   * Violation is not thrown for an interface class, not even when used with/without sharing.
+   * Violation is thrown if we only use sharing for classes.
 
 ### New Rules
 
 There are no new rules associated with this release.
 
-### Fixes&#x20;
+### Fixes
 
-1. **Fixed issue with “Project Search” in CSV Export (within the CodeScan UI)**  \
+1. **Fixed issue with “Project Search” in CSV Export (within the CodeScan UI)**\
    \
-   Recently, we added a search function to the dropdown on the CSV export page to allow users to search for the name of the project they wish to export.&#x20;
+   Recently, we added a search function to the dropdown on the CSV export page to allow users to search for the name of the project they wish to export.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-31 at 3.44.43 PM.png" alt=""><figcaption><p>CSV Export</p></figcaption></figure>
 
-Several customers reported an issue when selecting a project in the new Project Search Window.&#x20;
+Several customers reported an issue when selecting a project in the new Project Search Window.
 
-This updated fully remediates this reported issue.   &#x20;
+This updated fully remediates this reported issue.
 
-Further, we have validated the CodeScan export issue is resolved via the following scenario:&#x20;
+Further, we have validated the CodeScan export issue is resolved via the following scenario:
 
-* Users are able to select the projects in the Project Search Window (on the CSV export page) as expected. &#x20;
+* Users are able to select the projects in the Project Search Window (on the CSV export page) as expected.
 
-2. **Fixed an issue with some users being unable to be converted to SAML when not assigned to a SAML org.** \
+2. **Fixed an issue with some users being unable to be converted to SAML when not assigned to a SAML org.**\
    \
-   Some users were receiving the following error:&#x20;
+   Some users were receiving the following error:
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-31 at 3.44.50 PM.png" alt="" width="563"><figcaption><p>Error Msg</p></figcaption></figure>
 
-This was occurring when a user who had previously been either an Auth0 user or an SQ native user was attempting to log in via SAML, but the user is not part of the SAML org. This was occurring because CodeScan had been operating under the assumption that the user had previously logged in to CodeScan at least one time previously.&#x20;
+This was occurring when a user who had previously been either an Auth0 user or an SQ native user was attempting to log in via SAML, but the user is not part of the SAML org. This was occurring because CodeScan had been operating under the assumption that the user had previously logged in to CodeScan at least one time previously.
 
-This assumption, which triggered the issue, has been fully corrected with this fix.&#x20;
+This assumption, which triggered the issue, has been fully corrected with this fix.
 
 ## Release Notes 25.0.1
 
@@ -219,7 +216,7 @@ Verified after the rule enhancement was engineered that users are able to see th
    \
    Previously, this rule was flagging violations on .cmp files that are aura:component files. The guidance in the rule suggested to change the Visualforce page setting, but this is not possible on Aura components because they are not Visualforce components. This fix for the rule “Require CSRF protection on GET requests” now enables CodeScan to distinguish Visualforce page settings from Aura components.
 
-### &#x20;New Rule
+### New Rule
 
 1. **Remote Site Settings Description**\
    \
@@ -236,5 +233,3 @@ Verified after the rule enhancement was engineered that users are able to see th
 3. **Fixed issue with tracking IDE usage in CodeScan UI**\
    \
    Over the last few months, we have made several enhancements that allow admins to track IDE adoption and usage. However, we recently learned that the tokens associated with AutoRABIT ARM users were also being logged in the same report. This fix removes ARM users from the IDE user reports.
-
-&#x20;

@@ -34,5 +34,3 @@ Want to see additional content or features on this site? Reach out to our [Docum
 {% embed url="https://learninghub.autorabit.com/" %}
 Quick Link to the AutoRABIT Learning Hub
 {% endembed %}
-
-##

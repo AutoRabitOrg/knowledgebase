@@ -961,7 +961,7 @@ This release has several new features that support enhanced user capabilities.
 8. **Null Pointer Exception for IfElseDefaultCase Rule**: This fixes a null pointer exception thrown for triggers.
 9.  **False Positives**: This fixes false positive errors for the sf:FixDuplicateConditions rule. The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch". This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, while in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior. Addressing false positives for cases such as:
 
-    <pre><code>public class sample{
+    <pre class="language-java"><code class="lang-java">public class sample{
     public static void main(){
         if(a==true){}
         else if(a == null){}
@@ -971,7 +971,7 @@ This release has several new features that support enhanced user capabilities.
 
         if(this.a){}
         else if(this.b){}
-    }
+        }
     }
     <strong>
     </strong></code></pre>

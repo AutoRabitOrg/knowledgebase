@@ -1,6 +1,6 @@
 # Release Notes 25.1.4
 
-## ARM Release Notes 25.1.3
+## ARM Release Notes 25.1.4
 
 **Release Date: 13 April 2025**
 

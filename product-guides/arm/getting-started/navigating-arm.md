@@ -88,8 +88,8 @@ Environment Provisioning is a unique interface ARM provides to quickly facilitat
 
 #### [Admin](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration) <a href="#admin" id="admin"></a>
 
-Admin-related items are displayed here, such as registering of Salesforce Org, Version Control, adding team members, etc.
+Admin-related items are displayed here, such as registering a Salesforce Org, Version Control, adding team members, etc.
 
 #### [nCino](../arm-features/ncino/) <a href="#ncino" id="ncino"></a>
 
-nCino - related operations will be displayed in this section, for ex- creating a feature migration template, automating nCino deployments, etc.
+nCino-related operations will be displayed in this section, for example, creating a feature migration template, automating nCino deployments, etc.

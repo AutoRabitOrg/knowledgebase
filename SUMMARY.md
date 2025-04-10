@@ -752,10 +752,6 @@
   * [Policies](product-guides/guard/policies.md)
   * [Integration User License](product-guides/guard/integration-user-license.md)
 
-***
-
-* [Salesforce Data Cloud Integration with AutoRABIT](salesforce-data-cloud-integration-with-autorabit.md)
-
 ## Resources
 
 * [🖥️ AutoRABIT Support](resources/technical-support-services.md)

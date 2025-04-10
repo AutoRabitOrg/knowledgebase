@@ -525,6 +525,7 @@
       * [Working with VS Code Extension](product-guides/arm/integration-and-plugins/visual-code-extension/working-with-vscode-extension.md)
     * [Integrate ServiceNow with ARM](product-guides/arm/integration-and-plugins/integrate-servicenow-with-arm.md)
     * [URL Callout Integration with Tricentis](product-guides/arm/integration-and-plugins/url-callout-integration-with-tricentis.md)
+    * [ARM for SalesforcData Cloud](product-guides/arm/integration-and-plugins/arm-for-salesforcdata-cloud.md)
   * [Security Information and Event Management](product-guides/arm/security-information-and-event-management/README.md)
     * [Common Event Format (CEF) Data](product-guides/arm/security-information-and-event-management/common-event-format-cef-data.md)
     * [ARM Event Type](product-guides/arm/security-information-and-event-management/arm-event-type.md)

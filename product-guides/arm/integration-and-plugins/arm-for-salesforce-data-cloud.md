@@ -1,4 +1,4 @@
-# ARM for SalesforcData Cloud
+# ARM for Salesforce Data Cloud
 
 AutoRABIT provides CI/CD support for Salesforce Data Cloud, enabling organizations to manage and deploy supported Data Cloud metadata through automated pipelines. This document outlines the integration capabilities, supported metadata types, and deployment considerations based on what is available through Salesforce's Metadata API.&#x20;
 

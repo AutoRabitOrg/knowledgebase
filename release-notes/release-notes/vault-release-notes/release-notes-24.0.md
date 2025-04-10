@@ -4,11 +4,15 @@
 
 **Release Date: 16 April 2025**
 
-* #### **Automate Vault Connect Config:** Added support for **“Automatically Include New Jobs”**—new jobs created under the archive config will now be auto-included in the Connect config. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
-* #### **Respect Restricted Delete:** When enabled, **child records with restricted delete** settings will be skipped during the archive process. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
-* #### **Cascade Delete Handling in Archival Process:** Child records associated with cascade delete relationships will no longer be explicitly deleted during the archival process. Instead, they will be deleted as part of the parent record’s archival. This ensures that child records are preserved in the Recycle Bin if the archival is performed mistakenly. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
-* #### **Case Data Not Visible:** Fixed an issue where **Case object data** was not visible post-restore. Data now displays correctly after restoration. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
-* #### **Adding Job ID to Threads:** Each processing thread now includes a **Job ID** for better traceability and easier handling of stuck threads <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
+**Automate Vault Connect Config:** Added support for **“Automatically Include New Jobs”**—new jobs created under the archive config will now be auto-included in the Connect config.
+
+**Respect Restricted Delete:** When enabled, **child records with restricted delete** settings will be skipped during the archive process.
+
+**Cascade Delete Handling in Archival Process:** Child records associated with cascade delete relationships will no longer be explicitly deleted during the archival process. Instead, they will be deleted as part of the parent record’s archival. This ensures that child records are preserved in the Recycle Bin if the archival is performed mistakenly.
+
+**Case Data Not Visible:** Fixed an issue where **Case object data** was not visible post-restore. Data now displays correctly after restoration.
+
+**Adding Job ID to Threads:** Each processing thread now includes a **Job ID** for better traceability and easier handling of stuck threads.
 
 ## Vault 24.2.10 Release Notes <a href="#title-text" id="title-text"></a>
 

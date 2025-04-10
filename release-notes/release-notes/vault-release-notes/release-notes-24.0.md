@@ -1,8 +1,25 @@
 # Release Notes 24.0
 
+## Vault 24.2.11 Release Notes <a href="#title-text" id="title-text"></a>
+
+**Release Date: 16 April 2025**
+
+* #### **Automate Vault Connect Config:** Added support for **“Automatically Include New Jobs”**—new jobs created under the archive config will now be auto-included in the Connect config. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
+* #### **Respect Restricted Delete:** When enabled, **child records with restricted delete** settings will be skipped during the archive process. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
+* #### **Cascade Delete Handling in Archival Process:** Child records associated with cascade delete relationships will no longer be explicitly deleted during the archival process. Instead, they will be deleted as part of the parent record’s archival. This ensures that child records are preserved in the Recycle Bin if the archival is performed mistakenly. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
+* #### **Case Data Not Visible:** Fixed an issue where **Case object data** was not visible post-restore. Data now displays correctly after restoration. <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
+* #### **Adding Job ID to Threads:** Each processing thread now includes a **Job ID** for better traceability and easier handling of stuck threads <a href="#automate-vault-connect-config" id="automate-vault-connect-config"></a>
+
+## Vault 24.2.10 Release Notes <a href="#title-text" id="title-text"></a>
+
+**Release Date: 16 April 2025**
+
+* **Common Child objects Selections:** Users can now select common child records like Files, attachments, Tasks, events, etc. shared across multiple parents during data operations without having to select them from the complex schema.
+* **Updating Parent Records in Destination:** Parent records already present in the destination will no longer be updated during Restore/Replicate operations.
+
 ## Vault 24.2.9 Release Notes
 
-**Release Date: 26 March 2025**
+**Release Date: 16 March 2025**
 
 **Bug Fixes:**
 

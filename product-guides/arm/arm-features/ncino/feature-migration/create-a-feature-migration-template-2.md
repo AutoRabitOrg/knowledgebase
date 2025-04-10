@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# \[DRAFT - Project - X] Create a Feature Migration Template
+# \[DRAFT - Project - X] Create a Feature Migration Template with Predefined nCino Objects
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -32,7 +32,7 @@ This details the step-by-step process to create a standard/community nCino migra
 
 The following screen should be visible on clicking the "Feature" or the "Create Feature" option.
 
-<figure><img src="../../../../../.gitbook/assets/image (1643).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Feature Migration Template Predef Objects - 2.png" alt=""><figcaption></figcaption></figure>
 
 Under **Feature Details**, enter the items below:
 
@@ -49,10 +49,6 @@ Under the **Salesforce Org** **Details** section, do the following:
 <figure><img src="../../../../../.gitbook/assets/image (1641).png" alt=""><figcaption></figcaption></figure>
 
 4. Click on **Next** to go to the **Record Configuration** Tab.
-
-{% hint style="info" %}
-**Important Note:** Only those objects will be considered nCino objects if their related prefix is included in the **Plugins** section under the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings.md) page.
-{% endhint %}
 
 #### &#x20;Record Configuration <a href="#record-configuration" id="record-configuration"></a>
 
@@ -91,7 +87,7 @@ The filter criteria can be entered and the query can be built under this tab.
 <figure><img src="../../../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
 
 6. Once the query is been added to the query editor, the query can be validated by clicking on the ‘Validate’ button.
-7. An SOQL query can also be added to the query editor. After adding the query, the query can be validated
+7. An SOQL query can also be added to the query editor. After adding the query, the query can be validated using the validate option available.
 
 <figure><img src="../../../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
 

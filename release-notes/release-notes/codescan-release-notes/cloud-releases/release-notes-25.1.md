@@ -34,7 +34,7 @@ Please note: CodeScan documentation pages will have new images to reflect the la
 
 ### Technical Architecture Improvements&#x20;
 
-* CodeScan 25.1.0 contains various technical architecture improvements and upgrades including upgrades of CodescanNG, Sprint Boot, and Non-Spring Java Libraries.  We have also included several enhancements to CodeScan’s security architecture.&#x20;
+* The CodeScan 25.1.0 contains various technical architecture improvements and upgrades to various Libraries. We have also included several enhancements to CodeScan’s security architecture.
 
 &#x20;&#x20;
 

@@ -2,7 +2,7 @@
 description: CodeScan Cloud Release Notes
 ---
 
-# Release Notes 25.1.0
+# Release Notes 25.1
 
 ## Release Notes 25.1.0&#x20;
 
@@ -12,8 +12,8 @@ description: CodeScan Cloud Release Notes
 
 CodeScan 25.1.0 is comprised of 2 main components / features&#x20;
 
-* [New User Interface ](release-notes-25.1.0.md#new-user-interface)
-* [Technical Architecture Improvements ](release-notes-25.1.0.md#technical-architecture-improvements)
+* [New User Interface ](release-notes-25.1.md#new-user-interface)
+* [Technical Architecture Improvements ](release-notes-25.1.md#technical-architecture-improvements)
 
 Component details are listed in their corresponding sections within this document.&#x20;
 

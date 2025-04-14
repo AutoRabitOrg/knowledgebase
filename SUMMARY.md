@@ -140,7 +140,7 @@
     * [Release Notes 23.0](release-notes/release-notes/vault-release-notes/vault-release-notes-23.0.md)
     * [Release Notes 22.0](release-notes/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Release Notes 21.0](release-notes/release-notes/vault-release-notes/vault-release-notes-21.0.md)
-  * [Guard](release-notes/release-notes/guard.md)
+  * [Guard Release Notes](release-notes/release-notes/guard.md)
 
 ## Product Guides
 

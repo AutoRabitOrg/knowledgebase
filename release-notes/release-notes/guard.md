@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# Guard
+# Guard Release Notes
 
 ## Release Notes 25.1.1
 

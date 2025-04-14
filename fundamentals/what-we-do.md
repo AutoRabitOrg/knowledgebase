@@ -20,6 +20,7 @@ AutoRABIT provides an integrated suite of DevSecOps tools to **automate, secure,
 * **Automated Release Management (ARM):** Reducing the complexity of Salesforce development, deployment, and management enables teams to meet quality, security, and compliance standards with strategic automation.
 * **CodeScan:** Performing static code analysis and applying policy management tools gives you total visibility into the health of your Salesforce environment, reduces costs, finds vulnerabilities, and decreases time to market.
 * **Vault:** Implementing automated backup and recovery of Salesforce data, sophisticated data comparison tools, easy sandbox seeding, archiving, and comprehensive data management features ensures IT security, risk, and compliance needs are met.
+* Guard: Automated security and compliance solution for Salesforce, designed to help enterprises protect their critical operations by continuously monitoring, enforcing policies, and remediating security risks. It eliminates the manual oversight typically required to manage Salesforce’s complexity, addressing security gaps, misconfigurations, and compliance risks in real time.&#x20;
 
 ## Why It Matters
 

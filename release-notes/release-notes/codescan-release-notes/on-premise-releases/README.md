@@ -11,13 +11,13 @@ Note regarding the 2 different CodeScan Self-Hosted Editions:&#x20;
 We recognize that our self-hosted customers have different requirements regarding the SonarQube (SQ) versions that are supported/allowed by their organizations. As such, CodeScan is committed to supporting a wide spectrum of versions to accommodate this variance.&#x20;
 {% endhint %}
 
-Currently, the most recent Long Term Active version of SonarQube is 2025.1 LTA.  The previous version of SonarQube Long Term Active was 9.9 LTA.  In between, SonarQube released 9 other versions (10.0 – 10.8)&#x20;
+Currently, the most recent Long Term Active version of SonarQube is 2025.1 LTA.  The previous version of SonarQube Long Term Active (LTA) was 9.9 LTA. In between, SonarQube released 9 other versions (10.0 – 10.8).
 
 In order to support all these SonarQube versions, we decided to provide two versions of CodeScan self-hosted editions to the market to ensure ongoing SonarQube compatibility. &#x20;
 
 Our Eagle Edition is designed for those customers who run on SonarQube 10.4 – 2025.1 LTA.&#x20;
 
-Conversely, our Tiger Edition is designed for those customers who run on SonarQube 9.9 LTA – 10.3. &#x20;
+Our Tiger Edition is designed for those customers who run on SonarQube 9.9 LTA – 10.3. &#x20;
 
 Please see our corresponding [SonarQube Compatibility Matrix ](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1)for detailed guidance.&#x20;
 

@@ -8,7 +8,7 @@
 * **Email Triggers:** Resolved an issue where alerts were sent for deactivated schedules.
 * **Special Characters in Email:** Email addresses can now include special characters (+ . - \_ %).
 * **Addressed Vulnerability:** Patched a security vulnerability to enhance overall system security.
-* **Proxy Error on ORG Registration:** Fixed a proxy-related issue during ORG registration.
+* **Proxy Error on Org Registration:** Fixed a proxy-related issue during Org registration.
 
 ## Vault 24.2.11 Release Notes <a href="#title-text" id="title-text"></a>
 

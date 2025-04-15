@@ -78,6 +78,6 @@ Explore: **Version Control > Merge Request History > New Merge Request**.
 
 <figure><img src="../../../../../.gitbook/assets/image (79) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-### When to delete source branch in squash merge? <a href="#when-to-delete-source-branch-in-squash-merge" id="when-to-delete-source-branch-in-squash-merge"></a>
+### When to delete the source branch in squash merge? <a href="#when-to-delete-source-branch-in-squash-merge" id="when-to-delete-source-branch-in-squash-merge"></a>
 
 Squash merging condenses the history of changes in your default branch, so it is important to work with your team to decide when you should squash merge and when you want to keep the full commit history of a topic branch. When squash merging, it’s a good practice to delete the source branch.

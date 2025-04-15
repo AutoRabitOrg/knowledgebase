@@ -44,7 +44,12 @@ This error typically happens when you try to push to a remote repository, but yo
 
 ### **Failed to push some refs to \[remote]. Updates were rejected**
 
-This error usually occurs when you try to push to a branch that has been updated by someone else. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again.
+This error usually occurs when you try to push a commit to a target branch, but the `HEAD` has been updated by someone else after you started your merge. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again. You **can’t re-push** because:
+
+* Your merge commit references an **older state** of the target branch.
+* Re-pushing would **skip** newer commits, which could cause lost work or conflicts.
+
+You need to **re-perform the merge** using the latest version of the target branch.
 
 ## G
 
@@ -71,8 +76,6 @@ For more content, refer to![](<../../../../.gitbook/assets/image (783).png>)[Lin
 ### **Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml**
 
 When a deployment fails, this error usually occurs due to behavior in the Salesforce CLI 7.83 version. When retrieving the LWC components, it retrieves .css-meta.xml rather than .js-meta.xml file, which results in the deployment failing. Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again. Salesforce stopped maintaining SFDX v7 in April 2023 and no longer provides updates, bug fixes, or technical support.&#x20;
-
-&#x20;
 
 ## J
 
@@ -186,6 +189,12 @@ Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0
 ### **This test is already in the execution queue**
 
 When generating a code coverage report for a registered Salesforce org, the test fails with this error if the Apex test execution takes a long time. Go to **TAF > Apex Test Execution** and clear all of the tests in the queue, then run the code coverage report through ARM again.
+
+### Tip of your current branch is behind.
+
+This error mirrors the "[Failed to push refs](https://knowledgebase.autorabit.com/fundamentals/faq/arm-faqs/common-errors-and-resolutions#failed-to-push-some-refs-to-remote-.-updates-were-rejected)" error noted above. Please refer to the steps above for resolution.
+
+
 
 ## U
 

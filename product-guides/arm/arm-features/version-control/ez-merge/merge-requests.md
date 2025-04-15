@@ -1,6 +1,6 @@
 # Merge Requests
 
-### Merge Request- Overview <a href="#merge-request-overview" id="merge-request-overview"></a>
+## Overview <a href="#merge-request-overview" id="merge-request-overview"></a>
 
 A merge request is essentially a request to merge one branch into another.
 
@@ -14,7 +14,7 @@ As a Salesforce developer, you can collaborate on proposed changes to source cod
 4. Add follow-up commits before your changes are merged to the base branch.
 5. In case of a conflict, you can use our IDE-powered conflict editor to resolve them and merge your changes.
 
-### How to create a merge request  <a href="#how-to-create-a-merge-request" id="how-to-create-a-merge-request"></a>
+## How to create a merge request  <a href="#how-to-create-a-merge-request" id="how-to-create-a-merge-request"></a>
 
 To initiate a new merge request, go to the [**Version Control**](https://www.autorabit.com/8-benefits-of-version-control-in-salesforce-development/) module and click on the **New Merge Requests** call-to-action button.
 
@@ -41,7 +41,7 @@ The **Merge Request History** screen is best viewed when the zoom setting is set
 
 9. Click on **Create Merge Request.**
 
-### Running a merge request during CI Job <a href="#running-a-merge-request-during-ci-job" id="running-a-merge-request-during-ci-job"></a>
+### Running a Merge Request During a CI Job <a href="#running-a-merge-request-during-ci-job" id="running-a-merge-request-during-ci-job"></a>
 
 While triggering a new CI job, you can run a merge request on your GitHub version control repository. To do so, select the **Merge Request** checkbox for your repo under the **Build** section.&#x20;
 
@@ -141,3 +141,4 @@ After you create a merge request, you can ask a specific person to review your p
 ### Why is ARM rejecting my merge request at the final step? <a href="#why-is-arm-rejecting-my-merge-request-at-the-final-step" id="why-is-arm-rejecting-my-merge-request-at-the-final-step"></a>
 
 This occurs when merge criteria do not match the ARM settings. Before submitting the merge request, configure it in ARM to match your needs. Make the appropriate modifications under **Admin > Merge Settings**.
+

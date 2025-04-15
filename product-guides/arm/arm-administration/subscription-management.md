@@ -125,3 +125,9 @@ After uploading the license key, the administrator can allot the available subsc
 <figure><img src="../../../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
 
 All fields on the **Subscription Management** page will get updated.
+
+### FAQ's
+
+### Why does my account show the outdated subscription list rather than the amended count list? <a href="#my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list" id="my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list"></a>
+
+Update the total subscription allotted on your account. To do so, go to the **Admin > Subscriptions Management** section and update the **Subs. Allotted** and **Sub. Consumed** count.

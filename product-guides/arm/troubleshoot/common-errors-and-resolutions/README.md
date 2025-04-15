@@ -143,7 +143,7 @@ This error occurs when you try to push to the branch you currently have checked 
 
 This error is often related to network issues or server misconfigurations. It can occur when pushing large files or when the Git server is experiencing problems. Checking your network connection and trying again later may resolve this error.
 
-## 'REJECTED\_NONFASTFORWARD' <a href="#im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward" id="im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward"></a>
+### 'REJECTED\_NONFASTFORWARD' <a href="#im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward" id="im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward"></a>
 
 Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that case, the issue is specific to your repository, and the error occurs at the GIT version control level when multiple developers try to modify a file simultaneously. If you reencounter this issue, please wait a few minutes and reattempt the commit.
 

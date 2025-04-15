@@ -252,3 +252,11 @@ This is happening because the skip mapping feature isn't switched on. Select **"
 ### Why does my delta fail with the error 'REJECTED\_NONFASTFORWARD' when trying to create a commit? <a href="#im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward" id="im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward"></a>
 
 Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that case, the issue is specific to your repository, and the error occurs at the GIT version control level when multiple developers try to modify a file simultaneously. If you reencounter this issue, please wait a few minutes and reattempt the commit.
+
+### Why is the API name change showing under Deleted Components in Commit? <a href="#why-is-api-name-change-showing-under-deleted-components-in-commit" id="why-is-api-name-change-showing-under-deleted-components-in-commit"></a>
+
+When there is an **API name change**, Salesforce considers it a **new metadata API** while the retrieved call occurs.&#x20;
+
+When committing such API name change components, please select the new API name, and the older one can be deleted as a destructive commit.
+
+Now, while deploying these changes, we recommend using the **Pre-destructive** option to deploy the deleted one first, and then the actual API name change components get deployed.

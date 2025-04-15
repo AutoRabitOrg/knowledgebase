@@ -1,5 +1,9 @@
 # Licensing and Subscription
 
+{% hint style="info" %}
+Use the AI search feature to find answers to your AutoRABIT questions. In the future, FAQs will no longer be updated on these pages; instead, they will be integrated into the Product Guide pages by associated topic.
+{% endhint %}
+
 ### ()Why does my account show the outdated subscription list rather than the amended count list? <a href="#my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list" id="my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list"></a>
 
 Update the total subscription allotted on your account. To do so, go to the **Admin > Subscriptions Management** section and update the **Subs. Allotted** and **Sub. Consumed** count.

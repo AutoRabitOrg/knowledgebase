@@ -1,19 +1,19 @@
 # Merge Conflicts
 
-### About Merge Conflicts <a href="#about-merge-conflicts" id="about-merge-conflicts"></a>
+## About Merge Conflicts <a href="#about-merge-conflicts" id="about-merge-conflicts"></a>
 
 When working in a [Version Control System](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) like Git—especially in Salesforce development where multiple team members may be working on Apex classes, Lightning Web Components, or metadata files—merge conflicts can occur during the process of combining changes from different branches. This typically happens when two developers modify the same lines in a file, such as an Apex trigger or a custom object’s metadata.
 
 If the changes are on separate lines or in different sections of the file, Git merges them automatically. But when conflicting changes are made to the same lines—like different updates to a validation rule or conflicting field-level security settings—Git can’t decide which version to keep, and a _merge conflict_ is triggered. Resolving the conflict manually ensures that only the correct, intended changes are preserved in your Salesforce org.
 
-### Resolving Merge Conflicts <a href="#resolving-merge-conflicts" id="resolving-merge-conflicts"></a>
+## Resolving Merge Conflicts <a href="#resolving-merge-conflicts" id="resolving-merge-conflicts"></a>
 
 There are 2 ways to resolve the conflicted files:
 
 1. Download conflicted files locally or
 2. Using merge conflict Inline editor.
 
-#### Download Conflicted Files Locally <a href="#download-conflicted-files-locally" id="download-conflicted-files-locally"></a>
+### Download Conflicted Files Locally <a href="#download-conflicted-files-locally" id="download-conflicted-files-locally"></a>
 
 ARM has given a provision to the user to download the conflicted files in their local machine, resolve them locally and upload the same.
 
@@ -57,7 +57,7 @@ To do so,
 10. Click on the **Upload** (![](<../../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon and upload the resolved files. Make sure the file uploaded is in **zipped** format.
 11. Finally, click on **Commit** to commit the changes in the destination branch.
 
-#### Merge Conflict Inline Editor <a href="#merge-conflict-inline-editor" id="merge-conflict-inline-editor"></a>
+### Merge Conflict Inline Editor <a href="#merge-conflict-inline-editor" id="merge-conflict-inline-editor"></a>
 
 The Merge inline editor helps users to resolve more complex merging conflicts directly from the ARM merge interface.
 
@@ -91,7 +91,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
     <figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. **Troubleshooting:** Do I have a provision to edit the inline code if the above merge criteria fail to resolve the merge conflicts?
    * In rare circumstances, your merge conflict may not be resolved by the merge criteria that ARM offers. Additionally, inline editing of the code is not supported by ARM. In such a case, we advise initiating the merge operation while keeping the checkbox for **Review Artifacts** enabled on the **EZ-Merge** screen.
-   * Choose any of the merging criteria that ARM offers on the **Resolve Conflicts** screen. You will next be redirected to the **Review Artifacts** tab where you can see a list of the changed files staged for commit. Here, you have the ability to preview the changes, review them or edit the files before pushing them into your version control.
+   * Choose any of the merging criteria that ARM offers on the **Resolve Conflicts** screen. You will next be redirected to the **Review Artifacts** tab, where you can see a list of the changed files staged for commit. Here, you have the ability to preview the changes, review them, or edit the files before pushing them into your version control.
    * When starting a merge process in ARM, we recommend always enabling the **Review Artifacts** checkbox. It not only offers a workaround for manual code editing, but it also allows you to compare the code from the source branch and the destination branch before merging them.
 8. Click on **Next Conflict** and repeat the steps until all the conflicts are resolved. The data for each conflict gets auto-saved once the user proceeds to either the **Prev** or **Next** conflict.
 9. **Scenarios when the conflict blocks may not be saved:** The user is working on a conflict block and chooses the appropriate option to resolve it, but before clicking on either **Prev** or **Next Conflict** to autosave the data, the user selects another option, let's say the option to show 100/200/300/400/500 lines before and after the conflict. In such a case, the conflict block data will be automatically erased and the user will need to resolve such conflict block once again.
@@ -106,7 +106,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 13. You will be directed to the next tab, **Profile Duplicates**.
 
-#### Profile Duplicates <a href="#profile-duplicates" id="profile-duplicates"></a>
+### Profile Duplicates <a href="#profile-duplicates" id="profile-duplicates"></a>
 
 This tab will list all duplicate entries for your profile/permission sets and you want to resolve them before resolving the conflict. For multiple entries, you have a provision to delete the entry that you no longer require (using the **X** icon) or to keep all entries as they are by default.
 
@@ -117,14 +117,16 @@ This tab will list all duplicate entries for your profile/permission sets and yo
 
 1. If you receive the following error as highlighted below for duplicate entry, we suggest you download the file locally in such a case and search for any duplicity. Or, you can continue to commit directly by resolving the conflicting files (using the **Resolve Duplicates** button).
 
-![](<../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+
+
+<img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 
 2. There can also be a situation where the files are improperly solved while resolving the conflicted files. This can lead to the malformation of the conflicted files. To resolve those, you need to download the file locally, work on the conflicted files using your merge tool, and make necessary changes to it. Then upload the same.
-
-![](<../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
 
-#### Review Artifacts <a href="#review-artifacts" id="review-artifacts"></a>
+<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Review Artifacts <a href="#review-artifacts" id="review-artifacts"></a>
 
 The **Review Artifacts** tab will appear in the merge conflict screen only if you enabled the **Review Artifacts** checkbox while creating the merge operation.
 

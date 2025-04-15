@@ -15,28 +15,6 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 1. Allow pull requests and build on commit in your VC repository.
 2. To see the external pull request, switch on ARM's **auto-sync** option.
 
-
-
-
-
-## Why am I getting an error while registering the GitHub repository with SSH? <a href="#why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh" id="why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh"></a>
-
-**GitHub** no longer allows new **RSA** keys with **SHA-1** signatures. Execute the `ssh-keygen -t ed25519 -C “sampath.c@autorabit.com”` command in the terminal to create a new key, or contact **support@autorabit.com** for further assistance. Please note that you must create the new key in **Linux** or **Unix**, not in Windows. For more information, visit [https://github.blog/2021-09-01-improving-git-protocol-security-github/](https://github.blog/2021-09-01-improving-git-protocol-security-github/)
-
-## Why did my commit fail with errors like 'Tip of your current branch is behind' and '\[rejected] Partial -> Partial (non-fast-forward)'?  <a href="#my-commit-failed-with-errors-like-tip-of-your-current-branch-is-behind-and-rejected-partial-partial" id="my-commit-failed-with-errors-like-tip-of-your-current-branch-is-behind-and-rejected-partial-partial"></a>
-
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-OION20SF.png)
-
-To put it simply, this was caused by an expected **Git** behavior.
-
-If the commit is rejected with the error message **"Tip of your current branch is behind,"** it means that there is another commit that has already been done on top of the target branch.
-
-Let's assume you initiated a merge, and while it is processing, someone else (another developer) performs a commit onto the target branch. This will modify the **HEAD revision**, and the merge that had set a HEAD revision will no longer be the latest HEAD on the target branch. After resolving the conflicts and while committing the merge, this error is displayed.
-
-This merge process will fail, and it is not possible to **Re-Push** because, when compared to the latest HEAD revision, it should bring up the conflicts again, which is not possible.
-
-You must **re-perform** the merge so the commit will set up the **latest HEAD revision** on the **destination branch** and process further.
-
 ## How can I get rid of a malformed duplicate file in the merge? <a href="#how-can-i-get-rid-of-a-malformed-duplicate-file-in-the-merge" id="how-can-i-get-rid-of-a-malformed-duplicate-file-in-the-merge"></a>
 
 If the **Permissionset** file you're trying to upload has some malformed structure, please contact our support team so we can validate using **XML validator**. After resolving it, you can upload the Permissionset file successfully and proceed with the merge.

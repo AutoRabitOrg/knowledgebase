@@ -351,3 +351,7 @@ We don't have a feature to limit approvals to specific branches right now. Howev
 
 * When performing a merge, make sure none of the options under **New EZ Merge > Prevalidation Merge** are selected; this allows you to merge without approval.
 * Under **Admin > MyAccount > Merge Settings**, make sure the '**disable merge self-approval'** checkbox is not selected.
+
+### How can I get rid of a malformed duplicate file in the merge? <a href="#how-can-i-get-rid-of-a-malformed-duplicate-file-in-the-merge" id="how-can-i-get-rid-of-a-malformed-duplicate-file-in-the-merge"></a>
+
+If the **Permissionset** file you're trying to upload has some malformed structure, please contact our support team so we can validate using **XML validator**. After resolving it, you can upload the Permissionset file successfully and proceed with the merge.

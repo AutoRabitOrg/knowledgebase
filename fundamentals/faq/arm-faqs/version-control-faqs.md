@@ -15,42 +15,7 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 1. Allow pull requests and build on commit in your VC repository.
 2. To see the external pull request, switch on ARM's **auto-sync** option.
 
-## How can I get rid of a malformed duplicate file in the merge? <a href="#how-can-i-get-rid-of-a-malformed-duplicate-file-in-the-merge" id="how-can-i-get-rid-of-a-malformed-duplicate-file-in-the-merge"></a>
 
-If the **Permissionset** file you're trying to upload has some malformed structure, please contact our support team so we can validate using **XML validator**. After resolving it, you can upload the Permissionset file successfully and proceed with the merge.
-
-## I performed a commit using two fields and used that same commit to perform a merge. Why is the second field showing differently and picked up by another object? <a href="#i-performed-a-commit-using-two-fields-and-used-that-same-commit-to-perform-a-merge-why-is-the-second" id="i-performed-a-commit-using-two-fields-and-used-that-same-commit-to-perform-a-merge-why-is-the-second"></a>
-
-The merge with the **cherry-pick command** by GIT gives you results of such **Custom Fields** while merging to the target branch. The same thing happened when there was a new commit. The merge process followed even before reverting the actual commit and got the same result from GIT. There is no issue with the workspaces here.
-
-## Why does my delta fail with the error 'REJECTED\_NONFASTFORWARD' when trying to create a commit? <a href="#im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward" id="im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward"></a>
-
-Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that case, the issue is specific to your repository, and the error occurs at the GIT version control level when multiple developers try to modify a file simultaneously. If you reencounter this issue, please wait a few minutes and reattempt the commit.
-
-## Why can’t I select the Report Type for deployment? <a href="#why-cant-i-select-the-report-type-for-deployment" id="why-cant-i-select-the-report-type-for-deployment"></a>
-
-Please go to Admin->My account-> Salesforce Settings->Included Metadata Types, and check if the Report and Report Type are included in the Salesforce Settings. If these are not included, please include them to see them during the metadata selection for deployment.
-
-## Why is the API name change showing under Deleted Components in Commit? <a href="#why-is-api-name-change-showing-under-deleted-components-in-commit" id="why-is-api-name-change-showing-under-deleted-components-in-commit"></a>
-
-When there is an **API name change**, Salesforce considers it a **new metadata API** while the retrieved call occurs.&#x20;
-
-When committing such API name change components, please select the new API name, and the older one can be deleted as a destructive commit.
-
-Now, while deploying these changes, we recommend using the **Pre-destructive** option to deploy the deleted one first, and then the actual API name change components get deployed.
-
-## Why can't I see any Salesforce Orgs or Version Control repositories while performing an EZ-Commit? <a href="#why-cant-i-see-any-salesforce-orgs-or-version-control-repositories-while-performing-ezcommit" id="why-cant-i-see-any-salesforce-orgs-or-version-control-repositories-while-performing-ezcommit"></a>
-
-Salesforce Orgs are displayed on the EZ-Commit screen if an admin selects the **Skip Mappings** checkbox on the **Profile** page.\
-**Profile > My Roles > Skip Mappings**
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-RWBAABG4.png" alt=""><figcaption></figcaption></figure>
-
-If the admin does not enable **Skip Mappings**, users must map their respective **Version Control repository** branch to their **Salesforce Org:** Go to **Admin > Salesforce Org Mgmt > Selected Salesforce Org > Salesforce Org- Mapping**, then map the respective branches individually.
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-NQZR70NU.png" alt=""><figcaption></figcaption></figure>
-
-To avoid this, contact your admin to select the **Skip Mappings** checkbox under the **My Roles** section on the **Profile** page. More information on how to map a branch to a Salesforce org is available [here](https://knowledgebase.autorabit.com/docs/salesforce-org-management#salesforce-org-mappings).
 
 ## How can I commit restricted 'Profile User Permissions'? <a href="#how-can-i-commit-restricted-profile-user-permissions" id="how-can-i-commit-restricted-profile-user-permissions"></a>
 

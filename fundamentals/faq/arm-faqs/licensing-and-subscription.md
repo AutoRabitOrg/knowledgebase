@@ -4,11 +4,6 @@
 
 Update the total subscription allotted on your account. To do so, go to the **Admin > Subscriptions Management** section and update the **Subs. Allotted** and **Sub. Consumed** count.
 
-### Why am I not able to assign licenses to my team member? <a href="#why-am-i-not-able-to-assign-licenses-to-my-team-member" id="why-am-i-not-able-to-assign-licenses-to-my-team-member"></a>
-
-1. Check if your team members have additional administrator permissions. If more than one user has admin permission, this problem is more likely to occur.
-2. Remove additional administrator permissions from your user's account.
-
 ### Why am I not able to add more users to my account? <a href="#why-am-i-not-able-to-add-more-users-to-my-account" id="why-am-i-not-able-to-add-more-users-to-my-account"></a>
 
 You're getting this because you've used up all of your membership licenses, and you won't be able to add any more users. For any discrepancies or additional licenses, please contact to your account manager or reach out to us via support.

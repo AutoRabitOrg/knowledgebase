@@ -37,3 +37,7 @@ Once a user has been created, it cannot be changed. The account must be deleted;
 1. To **delete** the user account: Ask your administrator remove you from the user list.
 2. Make a **new account** with a different username and email address.
 3. Ask your administrator to grant you all required **permissions** exactly as they were for the previous username and account.
+
+### Why am I not able to add more users to my account? <a href="#why-am-i-not-able-to-add-more-users-to-my-account" id="why-am-i-not-able-to-add-more-users-to-my-account"></a>
+
+You're getting this because you've used up all of your membership licenses, and you won't be able to add any more users. For any discrepancies or additional licenses, please contact to your account manager or reach out to us via support.

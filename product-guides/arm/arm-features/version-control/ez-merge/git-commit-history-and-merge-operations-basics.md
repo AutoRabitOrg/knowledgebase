@@ -47,3 +47,18 @@ Effective strategies to manage duplicate merges and maintain code integrity incl
 ***
 
 By understanding how Git handles merges and commits, AutoRABIT users can build more reliable CI/CD pipelines and maintain a clean, traceable development history.
+
+## Frequently Asked Questions
+
+### Why are unexpected files not part of a revision picked in the merge when the revision is cherry-picked? <a href="#why-are-unexpected-files-that-are-not-part-of-a-revision-picked-in-the-merge-when-the-revision-is-ch" id="why-are-unexpected-files-that-are-not-part-of-a-revision-picked-in-the-merge-when-the-revision-is-ch"></a>
+
+This is not an ARM issue but rather an expected behavior from Git. Perform the following actions outside of ARM to determine whether the issue stems from ARM or Git:
+
+1. Take a local clone of the repository and then checkout of that branch using the command below:\
+   &#xNAN;_**git checkout \<Targetbranchname>**_
+2. Cherry-pick merge the revision by executing the command in the applying merge log which is as shown below:\
+   &#xNAN;_**git cherry-pick < revision > -n --strategy recursive --strategy-option ignore-cr-at-eol**_
+3. Check the results for the modified files by running the command below:\
+   &#xNAN;_**git status**_
+
+Compare the results with the changes in the ARM file. If the results match the changes in the ARM file, then we can conclude that this is Git behavior. If the results do not match, contact the AutoRABIT support team at support@autorabit.com so we can assist you further.

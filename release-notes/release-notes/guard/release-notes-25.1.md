@@ -1,18 +1,18 @@
 # Release Notes 25.1
 
-## Guard 25.1.2 Release&#x20;
+## Guard 25.1.2 Release Notes
 
-**Release Date: April 16, 2025**
+**Release Date: 16 April 16 2025**
 
 ### **New Features**&#x20;
 
-When users add their first Salesforce org, we automatically create 2 policies to be used as templates. This can help you understand policies a lot faster and use them as a starting point &#x20;
+When users add their first Salesforce org, we automatically create two policies to be used as templates. This can help you understand policies a lot faster and use them as a starting point. &#x20;
 
 {% embed url="https://www.loom.com/share/23f7e11276804cfb95e0f106a819e61c?sid=67f8cb82-7224-454e-8d6c-44339fc358e4" %}
 
 ### Enhancements
 
-**Additional Filters in Permissions Explorer:** Users can now add additional filters to the permissions explorer to better understand if there are overprivileged users&#x20;
+**Additional Filters in Permissions Explorer:** Users can now add additional filters to the permissions explorer to better understand if there are overprivileged users.
 
 {% embed url="https://www.loom.com/share/7a965014d3d44499997cef8efaa5e318?sid=feed1b0a-698e-47a8-9f3a-e73cc526fa5c" %}
 
@@ -24,11 +24,9 @@ When users add their first Salesforce org, we automatically create 2 policies to
 
 {% embed url="https://www.loom.com/share/99cefe3aed634cddadb38d92a996c4c7?sid=f76bd1ef-5fe3-40c7-bc2d-26edf4b1582b" %}
 
-**Search in Permission Explorer:** It’s now easier to find permissions in the Permissions Explorer, using free-text search&#x20;
+**Search in Permission Explorer:** It’s now easier to find permissions in the Permissions Explorer, using free-text search.
 
 {% embed url="https://www.loom.com/share/fb0b0f7a1e3d4a1e88be8adbf07228fd?sid=598bfcdb-463d-4da5-898c-e9b89c3515a4" %}
-
-
 
 ***
 

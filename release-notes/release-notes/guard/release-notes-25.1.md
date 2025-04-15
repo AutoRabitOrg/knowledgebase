@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Release Notes 25.1
 
 ## Guard 25.1.2 Release&#x20;

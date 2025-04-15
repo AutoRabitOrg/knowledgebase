@@ -57,3 +57,14 @@ Supported Version: ApexPMD upgraded to the latest 6.49 version.
 #### **PMD Report with Violations**
 
 <figure><img src="../../../.gitbook/assets/image (872).png" alt=""><figcaption></figcaption></figure>
+
+### FAQs
+
+#### I see some plugins require keys. Is this a license issue or can we get these keys and use the Static Code Analysis feature? <a href="#i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get" id="i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get"></a>
+
+You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
+
+* [SCA for CodeScan](https://knowledgebase.autorabit.com/product-guides/codescan)
+* [SCA for Checkmarx](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sca-for-checkmarx)
+* [SCA for Apex PMD](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/apex-pmd)
+* [SCA for SonarQube](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sonarqube)

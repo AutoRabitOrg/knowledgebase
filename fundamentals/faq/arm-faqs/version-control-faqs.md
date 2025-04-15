@@ -17,15 +17,6 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 
 
 
-## Why are metadata members added to or removed from the package.xml during a commit, even if they are not part of the commit? <a href="#why-are-metadata-members-added-to-or-removed-from-the-packagexml-during-a-commit-even-if-they-are-no" id="why-are-metadata-members-added-to-or-removed-from-the-packagexml-during-a-commit-even-if-they-are-no"></a>
-
-The metadata members present in the **target branch** are added to the **package.xml**, and those absent from the **target branch** are removed. Verify that the deleted members no longer exist and the added members are listed in the target branch of your version control repository.\
-If the added/deleted metadata members do not match those in the target branch, contact the AutoRABIT support team at support@autorabit.com for further assistance and troubleshooting.
-
-## Why are Wave Components missing from the component list during EZ-Commit despite being listed as 'Included Metadata Types' in the Salesforce settings? <a href="#why-are-wave-components-missing-from-the-component-list-during-ezcommit-despite-being-listed-as-incl" id="why-are-wave-components-missing-from-the-component-list-during-ezcommit-despite-being-listed-as-incl"></a>
-
-If the user who registered the SF Org in ARM has no **Einstein Analytics license**, Wave Components do not appear under metadata members in EZ-Commit.
-
 ## Why did the Merge/Commit Prevalidation deployment fail due to the error 'Picklist not found'? <a href="#why-did-the-mergecommit-prevalidation-deployment-fail-due-to-the-error-picklist-not-found" id="why-did-the-mergecommit-prevalidation-deployment-fail-due-to-the-error-picklist-not-found"></a>
 
 The potential causes of _Picklist not found_ error-related Merge/Commit Prevalidation deployment failures are listed below, along with the procedures you need to follow to fix them:

@@ -248,3 +248,7 @@ If the same object already exists in the target branch or org and you attempt to
 ### Why can I only see the Production org and none of the development instances when I try to do a new EZ commit? <a href="#i-can-only-see-the-production-org-and-none-of-the-development-instances-when-i-try-to-do-a-new-ez-co" id="i-can-only-see-the-production-org-and-none-of-the-development-instances-when-i-try-to-do-a-new-ez-co"></a>
 
 This is happening because the skip mapping feature isn't switched on. Select **"Skip Mappings"** from the dropdown menu in **My Profile > My Roles**.
+
+### Why does my delta fail with the error 'REJECTED\_NONFASTFORWARD' when trying to create a commit? <a href="#im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward" id="im-trying-to-create-a-commit-why-is-delta-failing-with-the-error-rejectednonfastforward"></a>
+
+Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that case, the issue is specific to your repository, and the error occurs at the GIT version control level when multiple developers try to modify a file simultaneously. If you reencounter this issue, please wait a few minutes and reattempt the commit.

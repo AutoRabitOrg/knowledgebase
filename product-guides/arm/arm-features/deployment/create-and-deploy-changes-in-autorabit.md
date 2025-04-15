@@ -153,3 +153,7 @@ Click on **`Validate Deployment.`** You will be redirected to the [Deployment Su
 You won't be able to deploy the code to the target org if all of the profile objects in the package have access permissions set to **"false."** _It's not an ARM issue; it's a Salesforce behavior_.
 
 Change the access permission to **"True"** in all profile objects and deploy to fix the problem; it should now work.
+
+### Why can’t I select the Report Type for deployment? <a href="#why-cant-i-select-the-report-type-for-deployment" id="why-cant-i-select-the-report-type-for-deployment"></a>
+
+Please go to Admin->My account-> Salesforce Settings->Included Metadata Types, and check if the Report and Report Type are included in the Salesforce Settings. If these are not included, please include them to see them during the metadata selection for deployment.

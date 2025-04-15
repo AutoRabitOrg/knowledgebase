@@ -3,7 +3,6 @@ description: >-
   Welcome to AutoRABIT's documentation hub—the Knowledge Base!  This is your
   go-to resource for release notes, detailed user guides, how-to tutorials,
   FAQs, and troubleshooting guides.
-hidden: true
 ---
 
 # 👋 Welcome to the Knowledge Base

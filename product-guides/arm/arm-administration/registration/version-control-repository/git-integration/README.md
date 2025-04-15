@@ -78,6 +78,11 @@ To set up a Git repository, follow the steps below:
 9. The **`Default Branch`** selection will be in disabled mode by default. Click the icon to fetch and list all the available branches on your remote repository.
 10. Select one of the default branches from the list. Note:Ensure the default branch is available in your remote repository with some files committed to it. If no file is available, create a README.txt file and add it to the repository.
 11. Once the registration is done, you can find the newly added repository on **`VC Repo's`** home page.
+12. The Sync Branches radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.
+
+![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-64UAR2YT.png)
+
+
 
 {% hint style="info" %}
 **Points to Remember:**

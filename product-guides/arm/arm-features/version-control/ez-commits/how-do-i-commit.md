@@ -306,4 +306,6 @@ Here are the steps to reproduce the scenario:
 4. Click on the revert commit option. It will create a new job for the revert.
 5. This will fail with the error/exception Invalid ID.
 
-A code fix has resolved this issue. There is a fix available in the ARM 23.1.31 build version.
+### Can I deploy/commit system permission sets to ARM?
+
+By default, when we commit by selecting only Profile metadata, it retrieves User Permissions and IP ranges. However, it depends on what kind of system permissions you're looking for, and if it has metadata API retrieval support from Salesforce, then it is possible to commit via AutoRABIT.

@@ -64,7 +64,6 @@ Supported Version: ApexPMD upgraded to the latest 6.49 version.
 
 You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
 
-* [SCA for CodeScan](https://knowledgebase.autorabit.com/product-guides/codescan)
 * [SCA for Checkmarx](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sca-for-checkmarx)
 * [SCA for Apex PMD](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/apex-pmd)
 * [SCA for SonarQube](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sonarqube)

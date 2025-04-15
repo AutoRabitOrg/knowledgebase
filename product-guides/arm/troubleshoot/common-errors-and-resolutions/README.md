@@ -77,6 +77,16 @@ For more content, refer to![](<../../../../.gitbook/assets/image (783).png>)[Lin
 
 When a deployment fails, this error usually occurs due to behavior in the Salesforce CLI 7.83 version. When retrieving the LWC components, it retrieves .css-meta.xml rather than .js-meta.xml file, which results in the deployment failing. Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again. Salesforce stopped maintaining SFDX v7 in April 2023 and no longer provides updates, bug fixes, or technical support.&#x20;
 
+### **Invalid Schema error during the Merge Prevalidation Process**
+
+This issue will occur if there are any special characters like the one below and if the string (length=7) is considered a GIT conflict (it is a GIT behavior), it will not perform the Merge.
+
+Special Characters: '>' ; '<' ; '|' ; '=' &#x20;
+
+We recommend limiting the above four special characters to fewer than 7 to avoid such problems.
+
+For example, in the Class file, if you observe this **">>>>>>>"** character string (length=7), then update it to less than 7 in the branch itself and rerun the Merge operation.
+
 ## J
 
 ### Job too long after 1 hour of analysis

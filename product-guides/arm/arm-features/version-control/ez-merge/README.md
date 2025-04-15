@@ -359,3 +359,11 @@ If the **Permissionset** file you're trying to upload has some malformed structu
 ### I performed a commit using two fields and used that same commit to perform a merge. Why is the second field showing differently and picked up by another object? <a href="#i-performed-a-commit-using-two-fields-and-used-that-same-commit-to-perform-a-merge-why-is-the-second" id="i-performed-a-commit-using-two-fields-and-used-that-same-commit-to-perform-a-merge-why-is-the-second"></a>
 
 The merge with the **cherry-pick command** by GIT gives you results of such **Custom Fields** while merging to the target branch. The same thing happened when there was a new commit. The merge process followed even before reverting the actual commit and got the same result from GIT. There is no issue with the workspaces here.
+
+### Why do I get the following error: "Cannot find the declaration of element 'web:validateSalesforceOrgConnection'" when selecting an org in EZ-Merge?
+
+The error below pops up while selecting the org for merge validation: `cvc-elt.1.a: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'`
+
+**Cause of the issue:** This may be due to a cache problem while selecting the Salesforce Org.
+
+**Resolution:** Clearing the browser cache and refreshing the browser will resolve the issue.

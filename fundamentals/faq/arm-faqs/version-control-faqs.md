@@ -17,12 +17,6 @@ Use the AI search feature to find answers to your AutoRABIT questions. In the fu
 
 
 
-## How can I commit restricted 'Profile User Permissions'? <a href="#how-can-i-commit-restricted-profile-user-permissions" id="how-can-i-commit-restricted-profile-user-permissions"></a>
-
-Due to limitations from Salesforce, **User Permissions** set to **`False`** cannot be retrieved via **Metadata API** call. Hence, those changes are not displayed under the **File Diff** report in **EZ-Commit** for **Profiles**. This is an expected behavior. For more information on the Profile Metadata, click [here](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm?q=profile).
-
-<figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-AFEGV45F.png" alt=""><figcaption></figcaption></figure>
-
 ## Why are metadata members added to or removed from the package.xml during a commit, even if they are not part of the commit? <a href="#why-are-metadata-members-added-to-or-removed-from-the-packagexml-during-a-commit-even-if-they-are-no" id="why-are-metadata-members-added-to-or-removed-from-the-packagexml-during-a-commit-even-if-they-are-no"></a>
 
 The metadata members present in the **target branch** are added to the **package.xml**, and those absent from the **target branch** are removed. Verify that the deleted members no longer exist and the added members are listed in the target branch of your version control repository.\

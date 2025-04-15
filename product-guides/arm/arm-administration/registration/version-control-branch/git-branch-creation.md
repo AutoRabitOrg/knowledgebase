@@ -54,6 +54,12 @@ Creating a new branch for each task is a common practice because it allows other
 
 <figure><img src="../../../../../.gitbook/assets/image (687).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## How long does it take to register a version control branch in ARM? <a href="#how-long-does-it-take-to-register-a-version-control-branch-in-arm" id="how-long-does-it-take-to-register-a-version-control-branch-in-arm"></a>
+## Frequently Asked Questions <a href="#how-long-does-it-take-to-register-a-version-control-branch-in-arm" id="how-long-does-it-take-to-register-a-version-control-branch-in-arm"></a>
+
+### How long does it take to register a version control branch in ARM? <a href="#how-long-does-it-take-to-register-a-version-control-branch-in-arm" id="how-long-does-it-take-to-register-a-version-control-branch-in-arm"></a>
 
 The actual registration of a branch depends on the data available in your version control repository. Mostly, the registration can be accomplished in a matter of **1-2 minutes**, however, in some rare cases, it can take anywhere from **30 minutes** to **an hour**.
+
+### Can I change or switch the default branch repository in AutoRABIT, since I currently have two default branches? <a href="#can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default" id="can-i-change-or-switch-the-default-branch-repository-in-autorabit-since-i-currently-have-two-default"></a>
+
+You can do this by first unregistering both branches and then re-registering your repository's default branch in AutoRABIT and setting the registered branch as the default branch.

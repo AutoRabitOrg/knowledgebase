@@ -4,6 +4,12 @@
 
 **Release Date: 20 April 2025**
 
+### **Overview**
+
+This release brings meaningful enhancements that improve reliability, accuracy, and visibility across ARM workflows. Backup CI jobs now consistently capture StandardValueSet changes, ensuring more complete metadata tracking. Improved metadata classification prevents deployment errors, while CustomObjectTranslation handling in EZ-Commit for DX repos is now more precise. Custom settings deploy smoothly through Environment Provisioning, reducing manual effort. File comparisons are clearer with restored full diff visibility, aiding better change reviews. Updates to Search and Substitute and managed package exclusions streamline CI deployments. Audit trails now display correct timestamps, enhancing reporting accuracy.
+
+### **Bug Fixes and Improvements**
+
 **StandardValueSet Metadata in Backup Jobs**\
 Backup CI jobs now correctly detect and retrieve changes made to StandardValueSet metadata. Previously, these changes were not captured automatically, although manual commits through EZ-Commit functioned as expected. This enhancement ensures StandardValueSet changes are included in automated daily backups. _Impacted Modules: CI jobs back up to VC. Support Case: #132829._
 
@@ -27,8 +33,6 @@ Fixed an issue where managed components were not properly excluded during SFDX C
 
 **Date and Time Accuracy in Audit Trails**\
 Corrected the logic used for date and time conversion in the UI of the Reports Audit Trail. Previously, the created and modified dates were displayed inaccurately. This enhancement ensures that audit timestamps now reflect the correct values. _Impacted Modules: Audit Report._&#x20;
-
-
 
 
 

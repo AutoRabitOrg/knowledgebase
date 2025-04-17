@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Version Control
 
 {% hint style="info" %}

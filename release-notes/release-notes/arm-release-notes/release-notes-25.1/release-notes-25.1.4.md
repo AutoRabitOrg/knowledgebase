@@ -2,7 +2,7 @@
 
 ## ARM Release Notes 25.1.4
 
-**Release Date: 13 April 2025**
+**Release Date: 17 April 2025**
 
 ## Overview <a href="#overview" id="overview"></a>
 

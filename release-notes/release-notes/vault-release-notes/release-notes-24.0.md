@@ -9,6 +9,7 @@
 * **Special Characters in Email:** Email addresses can now include special characters (+ . - \_ %).
 * **Addressed Vulnerability:** Patched a security vulnerability to enhance overall system security.
 * **Proxy Error on Org Registration:** Fixed a proxy-related issue during Org registration.
+* **Applying Clause in Filter:** The filter logic has been improved to support queries where the clause is part of the statement—no separate `WHERE` condition is required.
 
 ## Vault 24.2.11 Release Notes <a href="#title-text" id="title-text"></a>
 

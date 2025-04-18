@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Licensing and Subscription
 
 {% hint style="info" %}

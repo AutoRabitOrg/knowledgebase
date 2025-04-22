@@ -234,6 +234,7 @@
       * [EZ-Commits](product-guides/arm/arm-features/version-control/ez-commits/README.md)
         * [How Do I Commit?](product-guides/arm/arm-features/version-control/ez-commits/how-do-i-commit.md)
         * [Commits Summary](product-guides/arm/arm-features/version-control/ez-commits/commits-summary.md)
+        * [Committing Individual Forms from Form Manager (RBC Metadata) in ARM](product-guides/arm/arm-features/version-control/ez-commits/committing-individual-forms-from-form-manager-rbc-metadata-in-arm.md)
       * [EZ-Merge](product-guides/arm/arm-features/version-control/ez-merge/README.md)
         * [Merge Conflicts](product-guides/arm/arm-features/version-control/ez-merge/merge-conflicts.md)
         * [Merge Requests](product-guides/arm/arm-features/version-control/ez-merge/merge-requests.md)

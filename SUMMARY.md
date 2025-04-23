@@ -177,7 +177,7 @@
     * [Browser Support](product-guides/arm/registration/browser-support.md)
   * [ARM Administration](product-guides/arm/arm-administration/README.md)
     * [User Management](product-guides/arm/arm-administration/user-management/README.md)
-      * [Users](product-guides/arm/arm-administration/user-management/different-users-in-arm.md)
+      * [User Types](product-guides/arm/arm-administration/user-management/different-users-in-arm.md)
       * [Predefined Roles](product-guides/arm/arm-administration/user-management/arm-predefined-roles.md)
       * [Users, Roles & Permissions](product-guides/arm/arm-administration/user-management/users-roles-and-permissions.md)
       * [Adding New Users](product-guides/arm/arm-administration/user-management/add-new-users.md)

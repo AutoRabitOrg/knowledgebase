@@ -141,7 +141,7 @@ There can only be one Super Admin, but you can temporarily change the Super Admi
 
 ### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but why is there no Revision Number created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
-Before proceeding with the Branching Baseline operation, please ensure you have Write permissions for the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../../product-guides/arm/getting-started/registration/branching-baseline.md)
+Before proceeding with the Branching Baseline operation, please ensure you have Write permissions for the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../../product-guides/arm/registration/branching-baseline.md)
 
 ### How can I get access to the AutoRABIT LearningHub? <a href="#how-can-i-get-access-to-the-autorabit-academy" id="how-can-i-get-access-to-the-autorabit-academy"></a>
 

@@ -5,11 +5,11 @@ The ARM signup and activation process has several steps — some on our end and 
 1. Go to [https://www.autorabit.com/](https://www.autorabit.com/) and log in or go directly to [https://login.autorabit.com/](https://login.autorabit.com/).
 2. Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.
 
-<figure><img src="../../../.gitbook/assets/image (37) (2).png" alt="" width="563"><figcaption><p>Login Screen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (2).png" alt="" width="563"><figcaption><p>Login Screen</p></figcaption></figure>
 
 3. Fill in the registration details, and then click **`Register.`**
 
-<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt="" width="563"><figcaption><p>New Registration Screen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt="" width="563"><figcaption><p>New Registration Screen</p></figcaption></figure>
 
 4. **Wait for an email from us.** Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process and your account is activated, you will get a confirmation sent to your email address.&#x20;
 
@@ -26,7 +26,7 @@ The ARM login screen allows you to log in to your instance.
 3. Enter your login credentials (username and password), and then click on **`Login.`**
 4. Contact your org administrator if you do not know your instance's URL or login credentials.
 
-<figure><img src="../../../.gitbook/assets/image (2) (3).png" alt="" width="368"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt="" width="368"><figcaption></figcaption></figure>
 
 ## Password Requirements
 
@@ -42,7 +42,7 @@ The ARM login screen allows you to log in to your instance.
 
 When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.
 
-<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt="" width="252"><figcaption></figcaption></figure>
 
 ## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 
@@ -78,7 +78,7 @@ ARM requires you to change your password every 90 days.&#x20;
 
 ### How do I reset my password?&#x20;
 
-Follow the instructions [here](../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+Follow the instructions [here](../../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
 
 

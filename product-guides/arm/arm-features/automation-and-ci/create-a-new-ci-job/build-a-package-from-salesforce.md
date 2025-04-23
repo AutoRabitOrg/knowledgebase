@@ -28,7 +28,7 @@ Create a package from a Salesforce org based on a **"Start Date"** and deploy or
 
 Under the **Build** section, fill in the below details:
 
-1. Select the source [**Salesforce org**](../../../getting-started/salesforce-org-management.md).
+1. Select the source [**Salesforce org**](../../../registration/salesforce-org/salesforce-org-management.md).
 2.  Select the **Package type** to retrieve and bundle the changes from a source sandbox.
 
     * **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.

@@ -28,7 +28,7 @@ In this section, you would be filling your scratch org details.
 **Note:** When configuring your Scratch Org, be aware that certain objects may require associated profiles and dependency data. This requirement isn't always explicit, so it's important to review your objects and their dependencies thoroughly to ensure a seamless setup.
 {% endhint %}
 
-Select the **Dev HUB** name. This is the main [Salesforce org](getting-started/salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
+Select the **Dev HUB** name. This is the main [Salesforce org](registration/salesforce-org/salesforce-org-management.md) that you and your team use to create and manage your scratch org. Also, give a name to the **Scratch Org**.
 
 <figure><img src="../../.gitbook/assets/image (1419).png" alt=""><figcaption></figcaption></figure>
 

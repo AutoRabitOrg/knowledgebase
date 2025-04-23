@@ -65,7 +65,7 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 <figure><img src="../../../../.gitbook/assets/image (778).png" alt="" width="563"><figcaption></figcaption></figure>
 
-7. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../getting-started/salesforce-org-management.md) page.
+7. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../registration/salesforce-org/salesforce-org-management.md) page.
 
 ### Manage Apex Class <a href="#manage-apex-class" id="manage-apex-class"></a>
 
@@ -77,5 +77,5 @@ Once you have added an Apex test class or classes, you can perform various actio
 <figure><img src="../../../../.gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:** For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh its Salesforce org from the [**`Salesforce Org Management`**](../../getting-started/salesforce-org-management.md) section.
+**Important Note:** For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh its Salesforce org from the [**`Salesforce Org Management`**](../../registration/salesforce-org/salesforce-org-management.md) section.
 {% endhint %}

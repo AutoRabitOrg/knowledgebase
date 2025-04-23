@@ -79,7 +79,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 **Important Note:** Incremental Build also works to validate **Deployment Jobs**.
 {% endhint %}
 
-7. **Prepare Destructive Changes:** The pre-destructive changes option allows users to delete unwanted fields or metadata components from their destination [Salesforce org](../../../getting-started/salesforce-org-management.md) before the deployments begin.
+7. **Prepare Destructive Changes:** The pre-destructive changes option allows users to delete unwanted fields or metadata components from their destination [Salesforce org](../../../registration/salesforce-org/salesforce-org-management.md) before the deployments begin.
 8.  **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
 
     <figure><img src="../../../../../.gitbook/assets/image (1228).png" alt=""><figcaption></figcaption></figure>

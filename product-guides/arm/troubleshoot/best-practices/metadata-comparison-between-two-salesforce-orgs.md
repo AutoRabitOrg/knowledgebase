@@ -2,7 +2,7 @@
 
 Org Synchronization feature in AutoRABIT does a **component-level metadata comparison** between two Salesforce orgs. With this feature, you can either add or delete an object or metadata member, making sure that both the orgs are in sync. However, you won't be able to see the content level differences.
 
-For **content-related comparison** between two [Salesforce Orgs](../../getting-started/salesforce-org-management.md), please refer to the following steps:
+For **content-related comparison** between two [Salesforce Orgs](../../registration/salesforce-org/salesforce-org-management.md), please refer to the following steps:
 
 1. Go to **Menu > Deployment > New Deployment**
 2. Give a Label name.

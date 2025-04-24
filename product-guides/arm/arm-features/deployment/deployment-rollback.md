@@ -74,7 +74,7 @@ In AutoRABIT, selective rollback can be performed using the following steps:
 
     <figure><img src="../../../../.gitbook/assets/image (1670).png" alt=""><figcaption><p>Rollback Selection</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1665).png" alt=""><figcaption><p>Deployment History</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1665).png" alt=""><figcaption><p>Component Selection Screen</p></figcaption></figure>
 
 3. Select only the components you want to revert (instead of choosing the entire deployment). Instead of rolling back all three components, only A1V was selected for rollback.
 

@@ -1,5 +1,11 @@
 # Release Notes 25.1
 
+## nCino + Data Loader 25.1.4 Release Notes
+
+**Release Notes: 27 April 2025**
+
+* **Enhanced Special Character Handling:** The logic has been improved to ensure all required special characters are properly supported during processing.
+
 ## **nCino + Data Loader 25.1.3 Release Notes**
 
 **Release Date: 6 April 2025**

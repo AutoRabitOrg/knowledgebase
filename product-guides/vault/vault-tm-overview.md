@@ -7,7 +7,7 @@ Vault™ streamlines and automates Salesforce data, simplifies data backup chall
 ### Feature List <a href="#feature-list" id="feature-list"></a>
 
 1. **Highly reliable** data center architecture for unlimited data backup, scalability, availability, and responsiveness.
-2. Automated **daily backups** of [Salesforce data](../../arm/arm-features/dataloader/single-dataloader/update-salesforce-data.md) in a secure, centralized data center with unlimited storage.
+2. Automated **daily backups** of [Salesforce data](../arm/arm-features/dataloader/single-dataloader/update-salesforce-data.md) in a secure, centralized data center with unlimited storage.
 3. **Archived data** from any date in the past can be restored by a single click, maintaining relational integrity whenever needed.
 4. Extensive **summary reports** based on your search/queries.
 5. Business continuity is ensured with **secure** [data recovery ](https://www.autorabit.com/blog/5-tips-to-get-the-most-from-salesforce-data-recovery/)and replication in no time while abiding by the Salesforce API governor limits.

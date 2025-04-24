@@ -34,3 +34,12 @@ Fixed missing object permissions (Documents, Push Topics) and tab visibilities (
 Corrected behavior where `ExpressionSetDefinitionVersion` metadata was included in deployments even when excluded. This enhancement enables precise control over metadata exclusions, particularly for workflows that require separate deployment flows (e.g., OmniStudio jobs).\
 **Impacted Modules:** CI Jobs, Deployment\
 **Support Case:** #137299
+
+***
+
+## nCino + Data Loader Release 25.1.4
+
+Release Date: 27 April 2025
+
+Refer to the latest release notes published for nCino + Data Loader at [https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.4-release-notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.4-release-notes).&#x20;
+

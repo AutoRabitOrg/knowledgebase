@@ -12,28 +12,23 @@ This release introduces significant enhancements to AutoRABIT’s ARM platform, 
 
 **Support for New Metadata Types in DX Repo CI Deployments**\
 Previously unsupported metadata types are now included in deployments created through DX repo-based branching. These include: `ApplicationSubtypeDefinition`, `BusinessProcessTypeDefinition`, `ConvIntelligenceSignalRule`, `ExplainabilityActionDefinition`, `ExpressionSetDefinitionVersion`, `ForecastingGroup`, and `PathAssistant`.\
-**Impacted Modules:** CI Jobs (DX Branching & Deployments)\
-**Support Case:** #132305
+**Impacted Modules:** CI Jobs (DX Branching & Deployments)
 
 **Code Coverage Report Duplication Fixed**\
 Resolved an issue where multiple code coverage reports were generated for the same sandbox. The back-end logic has been updated to ensure that only one report is created per sandbox.\
-**Impacted Modules:** Code Coverage Reports\
-**Support Case:** #137624
+**Impacted Modules:** Code Coverage Reports
 
 **Improved ALM Item Load Time in Commit/Merge Modules**\
 Addressed severe performance lag when loading Azure ALM items after sprint selection. Switched to batch API calls for fetching work item data and states, reducing calls from thousands to single digits. Load time dropped from \~6 minutes to \~4 seconds for large sprints.\
-**Impacted Modules:** Commit/Merge (ALM Integration with Azure)\
-**Support Case:** #137299
+**Impacted Modules:** Commit/Merge (ALM Integration with Azure)
 
 **Full Profile Commit – Object Permissions & Tab Visibility Fixes**\
 Fixed missing object permissions (Documents, Push Topics) and tab visibilities (Reports, Dashboards) in full profile commits during EZ-Commit. The package.xml generation logic now correctly includes all necessary metadata members.\
-**Impacted Modules:** EZ-Commit, Profiles\
-**Support Case:** #135704
+**Impacted Modules:** EZ-Commit, Profiles
 
 **Metadata Exclusion Logic Improved – ExpressionSetDefinitionVersion**\
 Corrected behavior where `ExpressionSetDefinitionVersion` metadata was included in deployments even when excluded. This enhancement enables precise control over metadata exclusions, particularly for workflows that require separate deployment flows (e.g., OmniStudio jobs).\
-**Impacted Modules:** CI Jobs, Deployment\
-**Support Case:** #137299
+**Impacted Modules:** CI Jobs, Deployment
 
 ***
 

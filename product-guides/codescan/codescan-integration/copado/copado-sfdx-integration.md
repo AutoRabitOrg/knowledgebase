@@ -232,7 +232,7 @@ fi
 echo "
 if('$USER_STORY' != ''){
   string recID='$USER_STORY';
-  List&#x3C;copado__User_Story__c> userStories = [SELECT Id FROM copado__User_Story__c WHERE Name = :recID LIMIT 1];
+  List&#x3C;copado__User_Story__c> userStories = [SELECT Id FROM copado__User_Story__c WHERE Id = :recID LIMIT 1];
   Id usid = userStories.isEmpty() ? null : userStories[0].Id;
 
   if (usid != null) {

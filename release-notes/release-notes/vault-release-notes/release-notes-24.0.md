@@ -10,15 +10,7 @@
 * **Reliable Archival Job Execution:** Enhancements have been made to ensure smoother and more consistent archival job processing.
 * **Retention Policy in Backup:** The backup process now correctly applies the defined retention policy to all backed-up files, ensuring compliance and data lifecycle integrity.
 
-## Vault 24.2.13 Release Notes <a href="#title-text" id="title-text"></a>
-
-**Release Date: 30 April 2025**
-
-* **Improved Person Account Contact Handling:** Processing Person Account records is now streamlined when their related contacts are selected as parent records.
-* **Optimized Query Execution:** A code fix ensures accurate record retrieval based on the value specified in the LIMIT clause.
-* **Support for Common Object Retrieval:** Added support to fetch common child objects associated with the selected parent object, improving data selection flexibility.
-* **Reliable Archival Job Execution:** Enhancements have been made to ensure smoother and more consistent archival job processing.
-* **Proxy Error on Org Registration:** The backup process now correctly applies the defined retention policy to all backed-up files, ensuring compliance and data lifecycle integrity.
+***
 
 ## Vault 24.2.12 Release Notes <a href="#title-text" id="title-text"></a>
 
@@ -30,6 +22,8 @@
 * **Addressed Vulnerability:** Patched a security vulnerability to enhance overall system security.
 * **Proxy Error on Org Registration:** Fixed a proxy-related issue during Org registration.
 * **Applying Clause in Filter:** The filter logic has been improved to support queries where the clause is part of the statement—no separate `WHERE` condition is required.
+
+***
 
 ## Vault 24.2.11 Release Notes <a href="#title-text" id="title-text"></a>
 
@@ -45,12 +39,16 @@
 
 **Adding Job ID to Threads:** Each processing thread now includes a **Job ID** for better traceability and easier handling of stuck threads.
 
+***
+
 ## Vault 24.2.10 Release Notes <a href="#title-text" id="title-text"></a>
 
 **Release Date: 16 April 2025**
 
 * **Common Child objects Selections:** Users can now select common child records like Files, attachments, Tasks, events, etc. shared across multiple parents during data operations without having to select them from the complex schema.
 * **Updating Parent Records in Destination:** Parent records already present in the destination will no longer be updated during Restore/Replicate operations.
+
+***
 
 ## Vault 24.2.9 Release Notes
 
@@ -63,6 +61,8 @@
 * **Retention Policy Date Update:** Fixed an issue in which the retention policy date in the UI was incorrectly updated each time archival reports were executed in Vault.
 * **Success & Error Count Display:** Resolved an issue in which the success and error counts for common child objects like _Task_ and _Event_ were not displayed correctly.
 
+***
+
 ## Vault 24.2.8 Release Notes
 
 **Release Date: 5 March 2025**
@@ -71,6 +71,8 @@
 * **Processing of Common Child Objects**: Improved the handling of common child objects (e.g., Task, Event) during restore/replicate operations to eliminate redundant actions.
 * **Disabling Salesforce Automation Rules**: Resolved an issue where restore/replicate jobs did not properly disable Salesforce automation rules (e.g., Validations, Workflows, Flows, Triggers) for common child objects such as Task, Event, Attachment, and ContentVersion.
 * **User ID Mapping in Owner ID Field**: Resolved an issue with user ID mapping in the Owner ID field when the original user no longer exists in the sandbox after a refresh.
+
+***
 
 ## Vault 24.2.7 Release Notes
 
@@ -92,6 +94,8 @@
 * **Vault Connect Compatibility:** Added backward compatibility for viewing files through Vault Connect that were archived before Vault version **24.2.6**.
 * **Salesforce Session Stability:** Fixed an issue causing Salesforce session timeouts when archiving files in Vault.
 
+***
+
 ## Vault 24.2.6 Release Notes
 
 **Release Date: 29 January 2025**
@@ -104,6 +108,8 @@
 * **Excluded Child Objects from Deletion:** Fixed an issue to prevent task and email message data from being included in deletion processes.
 * **OwnerID Exclusion for ContentVersion:** Excluded the `OwnerID` field from upsert operations to improve data handling.
 
+***
+
 ## Vault 24.2.5 Release Notes
 
 **Release Date: 18 December 2024**
@@ -113,6 +119,8 @@
 * **OData Archive Query View:** Resolved an issue to ensure the complete query is visible in the view.
 * **Content Version Records Processing:** Implemented a check during archival to maintain the relationships of files linked to multiple records.
 
+***
+
 ## Vault 24.2.4 Release Notes
 
 **Release Date: 27 November 2024**
@@ -120,7 +128,7 @@
 * **Salesforce Spring '24 Upgrade:** Upgraded Salesforce to the latest Spring '24 release for improved features and functionality.
 * **Vault Connect – Seamless Access to Archived Files:** Customers now have seamless access to files added to records.
 * **FeedItem Failure Analysis:** Vault now automatically identifies system-generated FeedItems and excludes them from processing.
-* **Salesforce Summer '24 Upgrade:** Upgraded Salesforce to the latest Summer '24 release.&#x20;
+* **Salesforce Summer '24 Upgrade:** Upgraded Salesforce to the latest Summer '24 release.
 * **Provision to Exclude Flows:** Customers are now able to disable flows during the replicate and restore processes and auto-enable them upon completing the process.
 * **Enhanced Metadata Processing:** Improved the handling of child metadata for more efficient processing. Added detailed logging for better visibility into the reasons behind any record-processing failures.
 * **Upgraded Archive & Restore for Emails:** Enhanced the Archive & Restore functionality to ensure emails and their respective attachments are properly archived and restored to the email body.
@@ -129,12 +137,16 @@
 * **Optimized Restore/Replicate Functionality:** The common object operation has been upgraded from "insert" to "upsert" to improve the performance of restore and replicate processes.
 * **Archival Issue Resolved:** We fixed an issue with deleted records being incorrectly picked up during archival.
 
+***
+
 ## Vault 24.2.3 Release Notes
 
 **Release Date: 6 November 2024**
 
 * **Addressed Vault Restore Issues**: Enhanced restore functionality to ensure seamless performance while restoring records.
 * **Addressed Issues in Archive Functionality**: Optimized archive functionality for enhanced performance and reliability.
+
+***
 
 ## Vault 24.2.2 Release Notes
 
@@ -143,6 +155,8 @@
 * **UI Enhancements:** Improved UI for a smoother user experience in multiple areas.
 * **Vault Connect Updates:** Now supports attachments with Salesforce External Objects, enabling a comprehensive view of archived data.
 * **Organization Identification during Manual Backup Trigger:** Simplified identification of the Salesforce org initiating the backup, with clearer labels for a more streamlined and intuitive experience.
+
+***
 
 ## Vault 24.2.1 Release Notes
 
@@ -154,6 +168,8 @@
 * **Enhanced Support for Object Relationships in Restore/Replicate:** Relational integrity is now better maintained during restores and replications, even when object relationships in Salesforce do not follow standard naming conventions.
 * **Improved Restore/Replicate Results**: The user experience for restore and replicate operations has been enhanced with an improved results presentation.
 * **Log Enhancements**: Job logs have been upgraded to provide more detailed information about where time is being spent during job execution, improving transparency and troubleshooting.
+
+***
 
 ## Vault 24.2 Release Notes
 
@@ -180,6 +196,8 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
    * **Benefits**:
      * **Smoother Operations**: The upgraded database improves transaction handling and data retrieval, leading to more reliable operations.
      * **Increased Reliability**: Users can expect reduced downtime and improved stability, ensuring a seamless experience.
+
+***
 
 ### Vault v24.1.19
 
@@ -244,7 +262,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 6. **Typographic Error in Column Name**: A typographic error in a column name was identified and corrected.
 7. **Field Mapping for Target Environment:** The customer selected an object and set individual mappings for fields to be moved to the target environment.
 
-### Vault v24.1.13&#x20;
+### Vault v24.1.13
 
 **08 May 2024**
 
@@ -262,7 +280,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 12. **Lookup-Related Parent Processing:** When a lookup was selected, related parent objects were not being processed. The fix now ensures that related objects are automatically picked up and processed accordingly.
 13. **Replicate Label Display Issue:** The label "Replicate Label" was not being displayed in the configuration details. A code fix has corrected this, and the label now appears correctly in the configuration details pop-up.
 
-### Vault v24.1.12&#x20;
+### Vault v24.1.12
 
 **24 Apr 2024**
 
@@ -324,7 +342,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 7. **Connect Config Deletion:** A fix has been provided to ensure that the connect configuration is properly deleted when required.
 8. **Delete Flow Corrections:** Necessary corrections have been made to ensure that the delete flow operates correctly and as intended.
 
-### Vault 24.1.7&#x20;
+### Vault 24.1.7
 
 **28 Feb 2024**
 
@@ -388,7 +406,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 
 **Anticipated Release Date: 17 April 2024**
 
-These release notes contain important information about **Vault® 24.1**.&#x20;
+These release notes contain important information about **Vault® 24.1**.
 
 This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions or details about additional improvements in this release over your current release.
 

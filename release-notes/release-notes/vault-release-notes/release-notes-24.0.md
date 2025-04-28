@@ -10,6 +10,16 @@
 * **Reliable Archival Job Execution:** Enhancements have been made to ensure smoother and more consistent archival job processing.
 * **Retention Policy in Backup:** The backup process now correctly applies the defined retention policy to all backed-up files, ensuring compliance and data lifecycle integrity.
 
+## Vault 24.2.13 Release Notes <a href="#title-text" id="title-text"></a>
+
+**Release Date: 30 April 2025**
+
+* **Improved Person Account Contact Handling:** Processing Person Account records is now streamlined when their related contacts are selected as parent records.
+* **Optimized Query Execution:** A code fix ensures accurate record retrieval based on the value specified in the LIMIT clause.
+* **Support for Common Object Retrieval:** Added support to fetch common child objects associated with the selected parent object, improving data selection flexibility.
+* **Reliable Archival Job Execution:** Enhancements have been made to ensure smoother and more consistent archival job processing.
+* **Proxy Error on Org Registration:** The backup process now correctly applies the defined retention policy to all backed-up files, ensuring compliance and data lifecycle integrity.
+
 ## Vault 24.2.12 Release Notes <a href="#title-text" id="title-text"></a>
 
 **Release Date: 16 April 2025**

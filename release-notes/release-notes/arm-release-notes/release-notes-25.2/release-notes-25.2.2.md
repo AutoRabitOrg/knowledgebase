@@ -27,7 +27,7 @@ Fixed missing object permissions (Documents, Push Topics) and tab visibilities (
 **Impacted Modules:** EZ-Commit, Profiles
 
 **Metadata Exclusion Logic Improved – ExpressionSetDefinitionVersion**\
-Corrected behavior where `ExpressionSetDefinitionVersion` metadata was included in deployments even when excluded. This enhancement enables precise control over metadata exclusions, particularly for workflows that require separate deployment flows (e.g., OmniStudio jobs).\
+Corrected behavior in which `ExpressionSetDefinitionVersion` metadata was included in deployments, even when excluded. This enhancement enables precise control over metadata exclusions, particularly for workflows that require separate deployment flows (e.g., OmniStudio jobs).\
 **Impacted Modules:** CI Jobs, Deployment
 
 ***

@@ -1,5 +1,13 @@
 # Setting up Payment
 
+{% hint style="info" %}
+**PLEASE NOTE: CREDIT CARD BILLING HAS BEEN DEPRECATED**
+
+**This page will be removed soon**
+
+For billing enquiries, please contact [sales@autorabit.com](mailto:sales@autorabit.com)
+{% endhint %}
+
 Setting up payment for CodeScan Cloud is very easy. First, log in to your Cloud account and switch to the Organization for which you would like to set up payment.\
 For payment options besides credit card, please contact our sales team at [sales@codescan.io](https://sales@codescan.io/)
 

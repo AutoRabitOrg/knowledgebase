@@ -18,9 +18,13 @@
 ## Setup <a href="#setup" id="setup"></a>
 
 1. On your **`Project`** dashboard screen, select **`Pipeline > Pipelines`** and create a **new Pipeline**.
-2. Once you are in the "**Where is your code?**" page, click **Use the classic editor to create a pipeline without YAML**.
+2. Once you are in the "**Where is your code?**" page, click **Use the classic editor to create a pipeline without YAML**. However, this setting may not be available available until after the following steps are taken.
+3.  Navigate to your Organization / Project settings. Then under the Pipelines section, choose "Settings." In the General section, toggle off the "Disable creation of classic build pipelines" and "Disable creation of classic release pipelines" settings.\
 
-Follow the instructions below for your source code location.
+
+    <figure><img src="../../../../.gitbook/assets/image (1671).png" alt=""><figcaption></figcaption></figure>
+
+Then follow the instructions below for your source code location.
 
 ### Azure DevOps Repo <a href="#azure-devops-repo" id="azure-devops-repo"></a>
 

@@ -59,9 +59,7 @@
 
 * [🔁 Release Notes](release-notes/release-notes/README.md)
   * [ARM Release Notes](release-notes/release-notes/arm-release-notes/README.md)
-    * [Release Notes 25.2](release-notes/release-notes/arm-release-notes/release-notes-25.2/README.md)
-      * [Release Notes 25.2.2](release-notes/release-notes/arm-release-notes/release-notes-25.2/release-notes-25.2.2.md)
-      * [Release Notes 25.2.1](release-notes/release-notes/arm-release-notes/release-notes-25.2/release-notes-25.2.1.md)
+    * [Release Notes 25.2](release-notes/release-notes/arm-release-notes/release-notes-25.2.md)
     * [Release Notes 25.1](release-notes/release-notes/arm-release-notes/release-notes-25.1/README.md)
       * [Release Notes 25.1.4](release-notes/release-notes/arm-release-notes/release-notes-25.1/release-notes-25.1.4.md)
       * [Release Notes 25.1.3](release-notes/release-notes/arm-release-notes/release-notes-25.1/release-notes-25.1.3.md)

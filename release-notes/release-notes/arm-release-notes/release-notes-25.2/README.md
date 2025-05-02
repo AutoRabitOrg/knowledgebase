@@ -45,11 +45,11 @@ An issue was reported where creating or editing users with countries that do not
 
 **Release Date:** **27 April 2025**
 
-### **Overview** <a href="#overview" id="overview"></a>
+#### **Overview** <a href="#overview" id="overview"></a>
 
 This release introduces significant enhancements to AutoRABIT’s ARM platform, focusing on enhanced metadata support, improved deployment accuracy, and optimized performance across CI workflows. Previously unsupported metadata types are now fully recognized in DX-based branching and deployment. Issues with redundant code coverage reports and performance bottlenecks in ALM item loading have been resolved. Significant improvements also include full profile permission coverage in EZ-Commit and enhanced metadata exclusion logic.
 
-### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+#### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
 
 **Support for New Metadata Types in DX Repo CI Deployments**\
 Previously unsupported metadata types are now included in deployments created through DX repo-based branching. These include: `ApplicationSubtypeDefinition`, `BusinessProcessTypeDefinition`, `ConvIntelligenceSignalRule`, `ExplainabilityActionDefinition`, `ExpressionSetDefinitionVersion`, `ForecastingGroup`, and `PathAssistant`.\
@@ -73,7 +73,7 @@ Corrected behavior in which `ExpressionSetDefinitionVersion` metadata was includ
 
 ***
 
-## nCino + Data Loader Release Notes 25.1.4
+### nCino + Data Loader Release Notes 25.1.4
 
 **Release Date: 27 April 2025**
 

@@ -753,3 +753,8 @@
 * [🖥️ AutoRABIT Support](resources/technical-support-services.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [📙 Glossary](resources/glossary.md)
+
+***
+
+* [Best Practices](best-practices/README.md)
+  * [Measuring Security & Response Performance (Guard)](best-practices/measuring-security-and-response-performance-guard.md)

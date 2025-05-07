@@ -636,6 +636,7 @@
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)
   * [CodeScan Integration](product-guides/codescan/codescan-integration/README.md)
+    * [Integration Requirements](product-guides/codescan/codescan-integration/integration-requirements.md)
     * [Project Naming Conventions](product-guides/codescan/codescan-integration/project-naming-conventions.md)
     * [Single Sign-On (SSO)](product-guides/codescan/codescan-integration/single-sign-on-sso/README.md)
       * [Single Sign-On with OKTA](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-okta.md)

@@ -25,7 +25,7 @@ CodeScan has two ways of counting the "Lines" in a project.
 
 The Lines of Code may not increase in a project, but the number of Lines may increase due to the addition of the Profiles and Permission Sets to the Salesforce project.
 
-XML settings count as lines but not as Code.  To see this, you can use a custom view in the activity graph: [https://app.codescan.io/project/activity?custom\_metrics=duplicated\_lines\_density%2Clines%2Cncloc\&graph=custom\&id=NDR-Main](https://app.codescan.io/project/activity?custom\_metrics=duplicated\_lines\_density%2Clines%2Cncloc\&graph=custom\&id=NDR-Main)
+XML settings count as lines but not as Code.  To see this, you can use a custom view in the activity graph: [https://app.codescan.io/project/activity?custom\_metrics=duplicated\_lines\_density%2Clines%2Cncloc\&graph=custom\&id=NDR-Main](https://app.codescan.io/project/activity?custom_metrics=duplicated_lines_density%2Clines%2Cncloc\&graph=custom\&id=NDR-Main)
 
 ### **Are Empty Lines or Lines with Only Whitespace Included in the Line Count?**&#x20;
 
@@ -33,7 +33,9 @@ No, lines that consist solely of whitespace or are part of comments are not incl
 
 ### What Blocks of Code are Billable?
 
-Only non-commented lines of code for Apex, Aura Lightning, and VisualForce languages are billable. JavaScript, HTML, CSS, and Salesforce Metadata languages are not considered.
+Only non-commented lines of code for Apex, Aura Lightning, and Visual Force languages are billable. JavaScript, HTML, CSS, and Salesforce Metadata languages are not considered.
 
+### Where can I find the current Lines of Code Consumed?
 
+When adding or removing lines of code, the count of Lines of Code Consumed immediately updates in the billing section of the CodeScan UI.
 

@@ -4,7 +4,7 @@ description: CodeScan Cloud Release Notes
 
 # Release Notes 25.1
 
-## Integration Requirements for Codescan v25.1.0
+## Integration Requirements for CodeScan v25.1.0
 
 Please note that there are updated requirements for customers who are using one or more of the following to integrate with CodeScan:
 

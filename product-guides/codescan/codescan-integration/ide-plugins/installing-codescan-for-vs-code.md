@@ -7,7 +7,7 @@ After completing this unit, you'll be able to:
 * [Install the 'CodeScan for Visual Studio (VS) Code' extension](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#installing-the-codescan-for-vs-code-extension)
 * [Integrate VS Code with CodeScan](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#integrate-vs-code-with-codescan-extension)
 * [Run VS Code behind a proxy](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#visual-studio-code-behind-a-proxy)
-* Compatibility with Agentforce
+* [Compatibility with Agentforce](installing-codescan-for-vs-code.md#compatibility-with-agentforce)
 * [Troubleshooting steps if you experienced VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
 
 ### Installing the CodeScan IDE Plugin version 2.0.0

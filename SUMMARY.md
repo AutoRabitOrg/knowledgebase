@@ -589,6 +589,7 @@
         * [Accepting invitations to add a user to a CodeScan Organization](product-guides/codescan/getting-started/users-roles-and-permissions/adding-users-to-a-codescan-cloud-organisation/accepting-invitations-to-add-a-user-to-a-codescan-organization.md)
       * [Deleting User from a CodeScan Organization](product-guides/codescan/getting-started/users-roles-and-permissions/deleting-user-from-a-codescan-organization.md)
       * [Member Permissions](product-guides/codescan/getting-started/users-roles-and-permissions/member-permissions.md)
+      * [IDP Group Mapping](product-guides/codescan/getting-started/users-roles-and-permissions/idp-group-mapping.md)
     * [Setting up a CodeScan Cloud Organization](product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/README.md)
       * [About CodeScan Cloud Organizations](product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/about-codescan-cloud-organizations.md)
       * [Deleting Projects and Organizations](product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/deleting-projects-and-organizations.md)

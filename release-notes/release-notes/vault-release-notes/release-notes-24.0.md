@@ -2,7 +2,7 @@
 
 ## Vault 24.2.14 Release Notes
 
-**Release Date: 14 May 2025**
+**Release Date: 07 May 2025**
 
 * **Security Enhancement:** A security-related update has been implemented to strengthen the overall protection and integrity of the application.
 

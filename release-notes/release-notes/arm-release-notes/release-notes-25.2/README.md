@@ -1,18 +1,74 @@
 # Release Notes 25.2
 
-## Release Notes 25.2.3
+## Release Notes 25.2.4
 
-### Release Notes 25.2.3
+**Release Date: 11 May 2025**
 
-**Release Date:** 04 May 2025
+### **Overview**
+
+This release introduces feature enhancements and key bug fixes to improve deployment flexibility, metadata handling, CI job stability, and user experience. The update includes enhanced error handling for CI and Apex jobs, metadata recognition updates, and refined UI behavior in merge and licensing workflows.
+
+### **Bug Fixes & Improvements**
+
+**CI Job Includes Unsupported Metadata Despite Exclusion Configuration**\
+A customer reported that certain metadata types (`CallCenterRoutingMap`, `CallCtrAgentFavTrfrDest`) were deployed despite being explicitly excluded in the deployment configuration.
+
+Upon investigation, the data related to `CallCenterRoutingMap` was retrieved and verified successfully. However, data for `CallCtrAgentFavTrfrDest` could not be validated.
+
+These metadata types are associated with Salesforce Service Voice features, which require full integration with a compatible telephone system. Currently, such an integration is unavailable in our environment, limiting our ability to validate the issue fully.
+
+* **Fix:** Few metadata types are officially supported and recognized correctly in deployments.
+* **Impacted Module:** CI Jobs
+
+**Repository URL Migration**\
+A customer-requested repository URL migration has been completed.
+
+* **Fix:** Migration was successful, and no further issues were reported.
+* **Impacted Module:** Repo Management
+
+**Profile Comparison Error: “Salesforce Org Doesn’t Exist”**\
+An error occurred when comparing profiles across 2 or 3 environments.
+
+* **Fix:** UI logic for diff loading has been refined to handle multi-org comparisons.
+* **Impacted Module:** Metadata Comparison
+
+**CI Job Fails When All Standard Value Sets Are Excluded**\
+CI Jobs failed to run if standard value sets were excluded from selection.
+
+* **Fix:** Job logic updated to handle scenarios where standard value sets are excluded.
+* **Impacted Module:** CI Jobs
+
+**Failure in Scheduled Apex Test Runs for Production Orgs**\
+Daily scheduled Apex test executions failed due to an issue handling multiple concurrent jobs.
+
+* **Fix:** Logic in `ApexTestClassesSchedulerJob` refined to support multiple scheduled jobs.
+* **Impacted Module:** Apex Test Scheduling
+
+**Text Change in Merge Screen UI**\
+The label was changed from “Skip all three prevalidation criteria” to “Skip all prevalidation criteria” for better clarity.
+
+* **Impacted Module:** Merge UI
+
+### **Known Issues** <a href="#known-issues" id="known-issues"></a>
+
+**License Upload Not Visible for Expired On-Premise Servers**\
+When the license expired, the option to upload a new key was not visible before login.
+
+* **Fix:** The pop-up visibility issue was resolved; users can now upload the license before logging in.
+* **Impacted Module:** Licensing (On-Prem)
+* **Issue Type:** UI Bug
 
 ***
+
+## Release Notes 25.2.3
+
+**Release Date:** **4 May 2025**
 
 #### Overview
 
 This release of **AutoRABIT ARM** introduces key bug fixes and stability improvements to deployment label handling, CI job webhook executions, and user management across regions. Notably, a critical internal issue affecting metadata filtering during full deployments has been addressed. Additionally, issues related to saving users for countries without state-level details and CI job webhook failures have been resolved.
 
-#### Bug Fixes and Improvements
+### Bug Fixes and Improvements
 
 **Issue with Full Deployment - Previous Deployment Label Type**
 
@@ -41,7 +97,7 @@ An issue was reported where creating or editing users with countries that do not
 
 ***
 
-### Release Notes 25.2.2
+## Release Notes 25.2.2
 
 **Release Date:** **27 April 2025**
 

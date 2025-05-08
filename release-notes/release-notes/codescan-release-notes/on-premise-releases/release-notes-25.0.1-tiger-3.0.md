@@ -118,7 +118,7 @@ Verified the rule “Field Level Security Vulnerabilities” for the following s
 
 *   Rule is throwing the violation if we didn’t check isAccessible for the objects used in inner query.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Violation thrown if IsAccessible not checked</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Violation thrown if IsAccessible not checked</p></figcaption></figure>
 
 
 *   Rule is not throwing the violation if we checked isAccessible for the objects used in inner query.

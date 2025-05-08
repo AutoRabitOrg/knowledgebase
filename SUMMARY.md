@@ -643,6 +643,7 @@
       * [Single Sign-On with Entra ID](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-azure.md)
       * [Single Sign-On with ADFS](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-adfs.md)
       * [Single Sign-On with PingOne](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-pingone.md)
+      * [IdP Group Mapping \[WIP\]](product-guides/codescan/codescan-integration/single-sign-on-sso/idp-group-mapping-wip.md)
     * [ARM](product-guides/codescan/codescan-integration/arm/README.md)
       * [CodeScan Integration with ARM](product-guides/codescan/codescan-integration/arm/codescan-integration-with-arm.md)
     * [CodeScan SFDX Plugin](product-guides/codescan/codescan-integration/codescan-sfdx-plugin/README.md)

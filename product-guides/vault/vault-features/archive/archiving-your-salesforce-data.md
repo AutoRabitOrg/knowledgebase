@@ -11,14 +11,14 @@
 4. Navigate to the **Configs** tab.
 5.  Click on **Add Archive Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
 6.  Select the components that you need to archive on the next screen.
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
 7.  Using **Filters,** you can define the criteria for which the records will get fetched. For example, you can define criteria to fetch **AccountBrand** records that are older than _1,000 days_ and _field Id_ is not empty.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
 
 Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. To easily identify the objects for which the filter is applied, the filter icon is highlighted.
 

@@ -1,5 +1,9 @@
 # Integrating CodeScan with GitHub Actions
 
+{% hint style="info" %}
+The **SONAR\_SCANNER\_VERSION** environment parameter has been added to the YML file below and is needed for all pipelines with a CodeScan Cloud endpoint as of CodeScan Cloud version 25.1.0 (May 2025).
+{% endhint %}
+
 The creation of a project in CodeScan creates a webhook in GitHub. This webhook triggers on pushes to your tracked branch and certain pull request actions. These are: _**pull request opened, reopened, synchronized**_.
 
 The pull request triggers allow your comparisons in CodeScan to be kept up to date if the pull request is updated.

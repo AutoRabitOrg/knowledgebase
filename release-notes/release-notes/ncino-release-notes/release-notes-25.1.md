@@ -1,5 +1,13 @@
 # Release Notes 25.1
 
+## nCino + DataLoader 25.2.4 Release Notes
+
+**Release Date:** 10 May, 2025
+
+**Rollback Behavior Improved**
+
+* Rollback now excludes any **undeployed changes** made after deployment edits, ensuring only successfully deployed components are available for rollback.
+
 ## nCino + Data Loader 25.1.4 Release Notes
 
 **Release Notes: 27 April 2025**

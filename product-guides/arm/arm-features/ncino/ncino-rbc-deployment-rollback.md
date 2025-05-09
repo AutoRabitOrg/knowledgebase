@@ -6,7 +6,7 @@ Rollbacks are an indispensable pillar in the realm of systems that undergo conti
 
 ### Feature Overview
 
-This feature allows users to perform a rollback of the deployments—if rollbacks were enabled when creating the deployments.
+This feature enables users to roll back deployments—provided rollback was enabled during deployment creation. Depending on the requirement, users can perform either a full rollback or a selective rollback. Selective rollback is especially useful when only a specific portion of the deployment needs to be reverted (e.g., a Template, a Feature Template, or a specific ORG from a group of deployed ORGs).
 
 ### Feature Considerations
 
@@ -59,11 +59,21 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 <figure><img src="../../../../.gitbook/assets/image (62) (3).png" alt=""><figcaption></figcaption></figure>
 
-13. Upon clicking the ‘**Rollback**’ button, users are prompted to decide whether to go ahead with the '**Rollback**’ operation as shown in the image below.
+13. On triggering the “RollBack” button either on the “Job Results” window or the “Job Details” page, the RollBack window will be displayed. Observe the following screenshot for reference.
 
-<figure><img src="../../../../.gitbook/assets/image (63) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-14. As the '**Rollback**' build is in progress, the page looks like the following:
+14. Click on the “Salesforce Orgs” to expand and observe the ORGs available. The list of ORGs include both the direct deployment and the post-deployment ORGs.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+15. Click on the “Feature(s)” to observe the list of available features.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+16. Any combination of ORGs and the respective features can be selected to perform the rollback.
+17. On completing the required selections, continue with the ‘RollBack’ by clicking on the “RollBack” button.
+18. As the '**Rollback**' build is in progress, the page looks like the following:
 
 <figure><img src="../../../../.gitbook/assets/image (64) (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -105,9 +115,13 @@ Observe the ‘**Rollback**’ option, both on the '**Deployment History**' page
 
 <figure><img src="../../../../.gitbook/assets/image (71) (2).png" alt=""><figcaption></figcaption></figure>
 
-11. Click on the '**Rollback**' button to roll back the deployment.
-12. Once the '**Rollback**' is completed, then the iteration number will be updated.
+11. &#x20;On clicking the Rollback, a window will be displayed with the option to select the feature(s) intended to be rolledback.
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+12. After doing the required selections continue with the “ROLLBACK”, by clicking on the rollback button.
 13. While the '**Rollback**' is in progress, the '**Re-Deploy**' and '**Rollback**' buttons are grayed out until its completion.
+14. Once the '**Rollback**' is completed, then the iteration number will be updated.
 
 <figure><img src="../../../../.gitbook/assets/image (72) (2).png" alt=""><figcaption></figcaption></figure>
 

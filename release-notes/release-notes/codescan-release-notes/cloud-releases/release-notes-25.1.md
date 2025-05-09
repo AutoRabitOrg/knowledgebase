@@ -18,13 +18,13 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
-## CodeScan Release 25.1.0.1&#x20;
+## CodeScan Release 25.1.1&#x20;
 
 **Release Date: May 11, 2025**&#x20;
 
 ### Summary:&#x20;
 
-**CodeScan 25.1.0.1 is comprised of the following 3 components:**&#x20;
+**CodeScan 25.1.1 is comprised of the following 3 components:**&#x20;
 
 * 3 Fixes&#x20;
 

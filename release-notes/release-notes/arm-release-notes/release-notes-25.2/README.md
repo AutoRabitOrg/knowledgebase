@@ -1,5 +1,62 @@
 # Release Notes 25.2
 
+## ARM 25.2.5 Release Notes <a href="#title-text" id="title-text"></a>
+
+**Release Date: 18th May 2025**\
+\
+**Overview**
+
+This release includes key bug fixes and improvements focused on enhancing CI Job stability, deployment reliability, and metadata diff accuracy. It addresses critical issues encountered in Salesforce-to-Salesforce deployments, destructive change logic, permission set handling, and package creation workflows. Additionally, customer-requested upgrades such as Provar support enhancements have been implemented.
+
+### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+
+#### **1. CI Job: Destructive Changes Handling** <a href="#id-1.-ci-job-destructive-changes-handling" id="id-1.-ci-job-destructive-changes-handling"></a>
+
+**Issue:**\
+The **“Prepare Destructive Changes”** option was not selected during initial CI Job creation but was unexpectedly selected during re-runs.
+
+**Impacted Modules:**
+
+* Deploy a package from Salesforce to Salesforce
+* Deploy a package from Salesforce to Salesforce and back up to Version Control
+
+**Fix:**\
+Resolved inconsistencies in destructive change logic. The system now retains the correct state of the “Prepare Destructive Changes” flag across CI Job executions.
+
+#### **2. Permission Set FLS Diff Missing** <a href="#id-2.-permission-set-fls-diff-missing" id="id-2.-permission-set-fls-diff-missing"></a>
+
+**Issue:**\
+When attempting to commit FLS changes for a new field within a permission set, the changes were not captured in the diff report, resulting in missing commits.
+
+**Fix:**\
+Enhanced logic to correctly capture FLS changes by appending `Task` and `Event` objects for the `Activity` object when the **Global Permissions** option is selected in EZ-Commit.
+
+#### **3. Deployment Abort Functionality** <a href="#id-3.-deployment-abort-functionality" id="id-3.-deployment-abort-functionality"></a>
+
+**Issue:**\
+When performing a **Single Revision Deployment**, even after aborting it (a confirmation popup showing a successful cancellation), the deployment continued and was marked as successful.
+
+**Fix:**\
+Fixed the abort logic within the deployment module to correctly halt execution and reflect the accurate status post-abortion.
+
+#### **4. Unlocked Managed Package CI Job Failure** <a href="#id-4.-unlocked-managed-package-ci-job-failure" id="id-4.-unlocked-managed-package-ci-job-failure"></a>
+
+**Issue:**\
+Customer experienced failures when triggering a CI Job to **create and install an unlocked managed package** from a version control branch.
+
+**Fix:**\
+Improved JSON handling during CI Job execution, ensuring compatibility with both internal and customer-specific JSON structures. Now, even in case of exceptions during package creation, the system attempts fallback version creation instead of complete failure, similar to the existing SFDX module behavior.
+
+#### **5. Provar Upgrade Request** <a href="#id-5.-provar-upgrade-request" id="id-5.-provar-upgrade-request"></a>
+
+**Request:**\
+Customer requested support for **Provar v25.2.1**
+
+**Update:**\
+Support for Provar version 25.2.1 has been added to ensure compatibility with automated test execution workflows. This version will be available on a demand basis.
+
+***
+
 ## Release Notes 25.2.4
 
 **Release Date: 11 May 2025**

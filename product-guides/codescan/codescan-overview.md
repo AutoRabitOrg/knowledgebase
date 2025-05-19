@@ -2,7 +2,7 @@
 
 ### Market Overview <a href="#market-overview" id="market-overview"></a>
 
-Salesforce code quality and security are mission-critical factors. Salesforce is a key driver of digital transformation, and at risk from the development supply chain. Sensitive data pervades the platform, which is complicated by Salesforce metadata used to encode security roles, access controls, permissions, and other platform customizations. The risk of introducing errors via metadata is high, and directly affected by code quality. Poor code quality slows feature velocity and creates additional challenges for compliance and security .
+Salesforce code quality and security are mission-critical factors. Salesforce is a key driver of digital transformation, and at risk from the development supply chain. Sensitive data pervades the platform, which is complicated by Salesforce metadata used to encode security roles, access controls, permissions, and other platform customizations. The risk of introducing errors via metadata is high, and directly affected by code quality. Poor code quality slows feature velocity and creates additional challenges for compliance and security.
 
 ### What is Codescan? <a href="#what-is-codescan" id="what-is-codescan"></a>
 

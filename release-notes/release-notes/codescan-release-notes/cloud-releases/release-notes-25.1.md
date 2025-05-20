@@ -98,10 +98,11 @@ Verified the IDP Group Mapping flag by Enabling and Disabling the instance is no
 
 ### Summary:&#x20;
 
-CodeScan 25.1.0 is comprised of two main components / features:&#x20;
+CodeScan 25.1.0 is comprised of three main components / features:&#x20;
 
 * [New User Interface ](release-notes-25.1.md#new-user-interface)
 * [Technical Architecture Improvements ](release-notes-25.1.md#technical-architecture-improvements)
+* [Fixes](release-notes-25.1.md#fixes-1)
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
@@ -123,6 +124,12 @@ Please note: CodeScan documentation pages will have new images to reflect the la
 ### Technical Architecture Improvements&#x20;
 
 * The CodeScan 25.1.0 contains various technical architecture improvements and upgrades to various libraries. We have also included several enhancements to CodeScan’s security architecture.
+
+### **Fixes**:
+
+* Fixed a false positive in the 'sf:AvoidGlobalModifier' rule. The violation is now ignored for global classes used as return types in any global static method.
+
+
 
 &#x20;&#x20;
 

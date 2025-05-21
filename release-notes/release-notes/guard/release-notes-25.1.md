@@ -38,7 +38,7 @@ Email Notification
 
 &#x20;
 
-## Guard 25.1.2 Release Notes
+## Guard Release Notes 25.1.2
 
 **Release Date: 16 April 16 2025**
 
@@ -78,7 +78,7 @@ Finding permissions in Permissions Explorer
 
 ***
 
-## Guard 25.1.1 Release Notes
+## Guard Release Notes 25.1.1
 
 **Release Date: 21 March 2025**
 

@@ -13,11 +13,7 @@
 * **Performance Enhancements**: Optimized data retrieval logic to improve performance across backup and archival operations.
 * **Replicate & Restore Performance**: Optimized the data loading process, significantly improving replicate and restore performance.
 * **Restore Logic Update:** Refined logic to more effectively prevent duplicate record creation, ensuring more reliable and consistent restore operations.
-
-### Salesforce Winter ’25 Upgrade <a href="#salesforce-winter-25-upgrade" id="salesforce-winter-25-upgrade"></a>
-
-Upgraded the Salesforce integration to support the latest Winter ’25 API version.
-
+* Salesforce Winter ’25 Upgrade: Upgraded the Salesforce integration to support the latest Winter ’25 API version.
 * **S3 Policy Management**: Improved S3 configuration checks to surface errors early during Vault account setup.
 * **Tomcat Upgrade**: Upgraded Tomcat version 10 to 11 for improved security, performance, and standards compliance.
 * **Vault Data Masking**: Improved pattern recognition in specific data types to ensure accurate masking while preserving the original format required for valid data representation.

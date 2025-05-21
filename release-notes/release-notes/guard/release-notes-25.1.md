@@ -1,5 +1,43 @@
 # Release Notes 25.1
 
+## Guard Release Notes 25.1.3
+
+**Release Date: 21 May 2025**
+
+AutoRABIT Guard's Automated Data Classification scans and classifies data based on major regulatory standards—PCI, HIPAA, GDPR, COPPA, and more. It provides visibility into sensitive data within your Salesforce environments and helps understand where and how it is used.
+
+{% embed url="https://www.loom.com/share/d138a8ed553048bba934ef443012c18b?sid=bd90c408-8777-4a16-b168-f6f64328b1a0" %}
+Automated Data Classification
+{% endembed %}
+
+Quick Explorer allows users to select one of the pre-built queries to get immediate security and access control insights.
+
+{% embed url="https://www.loom.com/share/077b748c9ed44604bc7c51718506724f?sid=552fff8f-8ecd-464a-8260-fe41361eed83" %}
+Permissions - Quick Explorer
+{% endembed %}
+
+Policy drafts can be created directly from Permissions Explorer now.
+
+{% embed url="https://www.loom.com/share/9070ade3e393415f9096f3f7abfac3ed?sid=5f3e9b48-4ef3-42ea-a968-66b14d54a491" %}
+Policy draft creation
+{% endembed %}
+
+Users can now filter risk assessment settings in relation to each of the compliance regulations: GDPR, HIPAA, PCI, PII, etc.&#x20;
+
+For each risk, the user can see which categories are assigned to it and why.
+
+{% embed url="https://www.loom.com/share/9ba90669b4464c06a5781629cafd2527?sid=2877e6e1-6341-4498-b52d-f3a59628f86b" %}
+Compliance Information
+{% endembed %}
+
+We have added important information to the email received when a change happens in the monitored Salesforce org.&#x20;
+
+{% embed url="https://www.loom.com/share/8bdb1d2868b5411eb8d5a52979c6d05b?sid=7bc9a234-1602-4f7d-b877-02b1909202be" %}
+Email Notification
+{% endembed %}
+
+&#x20;
+
 ## Guard 25.1.2 Release Notes
 
 **Release Date: 16 April 16 2025**

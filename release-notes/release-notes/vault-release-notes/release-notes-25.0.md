@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.1
 
-**Release Date: 11 June 2025**
+**Release Date: 04 June 2025**
 
 * **Vault Compare Enhancements**: Enhanced the user experience with easier navigation to specific fields and more intuitive change review capabilities.&#x20;
 * **Enhanced Scheduler Architecture**: Improved tracking and queuing of jobs for more efficient and reliable execution.

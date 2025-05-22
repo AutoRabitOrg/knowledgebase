@@ -19,7 +19,7 @@ AutoRABIT Guard’s Data Classification enhances your organization's ability to 
   Use the **Relevant Regulations** filter to quickly identify which fields align with specific compliance standards.
 * **Object-Based Filtering**\
   Select to review fields based on specific Objects.
-* **Field-Level Insights**\
+* **Field Insights: Know What's Really Happening**\
   For each classified field, Guard provides detailed context on how it matches a specific regulation—going beyond static definitions.\
   \
   Why It Matters? It's not enough to know a field is sensitive—you need to know how widely it's used and in what contexts. Guard tells you:&#x20;

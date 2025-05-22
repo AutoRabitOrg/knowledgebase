@@ -8,39 +8,38 @@ AutoRABIT Guard’s Data Classification enhances your organization's ability to 
 
 * **Automated Data Classification**\
   Instantly scans your Salesforce org—including all custom fields across all objects—and classifies them against key regulations:
-  * PCI
-  * HIPAA
-  * GDPR
-  * COPPA
-  * CCPA
-  * PersonalInfo
-  * PII
+  * **PCI**
+  * **HIPAA**
+  * **GDPR**
+  * **COPPA**
+  * **CCPA**
+  * **PersonalInfo**
+  * **PII**
 * **Regulation-Based Filtering**\
-  Use the Relevant Regulations filter to quickly identify which fields align with specific compliance standards.
+  Use the **Relevant Regulations** filter to quickly identify which fields align with specific compliance standards.
 * **Object-Based Filtering**\
   Select to review fields based on specific Objects.
 * **Field-Level Insights**\
-  For each classified field, Guard provides detailed context on how it matches a specific regulation—going beyond static definitions.
-*   **Field Usage**\
-    Understand how fields are used:\
+  For each classified field, Guard provides detailed context on how it matches a specific regulation—going beyond static definitions.\
+  \
+  Why It Matters? It's not enough to know a field is sensitive—you need to know how widely it's used and in what contexts. Guard tells you:&#x20;
+  * **Where the field lives**: See where the field appears across your org in Page Layouts, Apex Classes, Flows, Validation Rules, etc.&#x20;
 
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Field Usage</p></figcaption></figure></div>
 
-    <figure><img src="../../.gitbook/assets/image.png" alt="" width="393"><figcaption><p>Field Usage</p></figcaption></figure>
+* **How often it's populated**: Understand if the field is frequently used, rarely touched, or unused—critical for prioritizing cleanup or lockdowns.
 
-    * Where the field appears (Layouts, Apex, Flows, etc.)
-    * How often it's populated
-    * Who has created the most recent record
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Records by Type</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Records by Type</p></figcaption></figure>
-*   **Access Visibility**\
-    View which Profiles, Permission Sets, and Permission Set Groups have access to sensitive fields—and see the users linked to those roles.\
+*   **Access Visibility: See Who Has Keys**\
+    Even well-protected data becomes a risk if too many people have access to it. With Guard, you can instantly view which Profiles, Permission Sets, and Permission Set Groups have access to a sensitive field.\
 
 
     <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Access Visibility</p></figcaption></figure>
 
 ### Getting Started
 
-To use the Data Classification in Guard:
+To use Data Classification in Guard:
 
 1. **Navigate** to the Data Classification module within the Compliance section.
 2. **Salesforce Org**: Select one of your orgs registered in Guard

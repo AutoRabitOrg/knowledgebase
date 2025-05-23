@@ -10,7 +10,7 @@ With its Bank Operating System, built on the Salesforce platform, financial inst
 
 AutoRABIT is designed around the industry’s only CI/CD (Continuous Integration / Continuous Delivery) server purposely built for Salesforce to handle metadata and data. AutoRABIT delivers an integrated suite of tools including version control, deployment automation, sandbox management, data migration, and test automation. This streamlines processes and automates activities at each stage of the DevOps lifecycle, simplifying deployment from development to production.
 
-With AutoRABIT's strong expertise with Salesforce technology, working together with nCino extends CRM clients directly into a streamlined processing system. AR collaboration with [nCino](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) helps lending institutions stay ahead of today's complex deployment challenges and retool their business to succeed in the next era of banking.
+nCino chose AutoRABIT as its DevSecOps partner because of our ability to support the unique needs of financial institutions working on Salesforce. AutoRABIT helps nCino deliver secure, compliant, and high-quality solutions at scale by automating key parts of the development lifecycle—from version control and CI/CD to code quality and data backup. What makes this partnership stand out is AutoRABIT’s strong grasp of Salesforce metadata—especially the custom components used by nCino—and our shared focus on meeting the ever-changing needs of the financial services world. We're helping banks and credit unions move faster, stay compliant, and reduce risk along the way.
 
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 

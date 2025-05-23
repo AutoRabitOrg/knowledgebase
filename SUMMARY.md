@@ -697,8 +697,6 @@
       * [Create an Azure Storage Account](product-guides/vault/configuring-vault/configure-backup-environment/create-a-azure-storage-account.md)
       * [Azure Blob Storage Environment](product-guides/vault/configuring-vault/configure-backup-environment/azure-blob-storage-environment.md)
       * [Microsoft Azure Blob Retention Policy](product-guides/vault/configuring-vault/configure-backup-environment/microsoft-azure-blob-retention-policy.md)
-      * [NFS](product-guides/vault/configuring-vault/configure-backup-environment/nfs.md)
-      * [SAN (Storage Area Network) Environment](product-guides/vault/configuring-vault/configure-backup-environment/san-storage-area-network-environment.md)
     * [Licenses](product-guides/vault/configuring-vault/licenses.md)
     * [SSO Configuration](product-guides/vault/configuring-vault/sso-configuration/README.md)
       * [SSO for OKTA](product-guides/vault/configuring-vault/sso-configuration/sso-for-okta.md)

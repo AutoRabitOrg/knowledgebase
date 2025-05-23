@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # SAN (Storage Area Network) Environment
 
 #### SAN (Storage Area Network) Environment <a href="#san-storage-area-network-environment" id="san-storage-area-network-environment"></a>

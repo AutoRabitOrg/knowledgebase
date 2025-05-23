@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # NFS
 
 #### NFS **Environment** <a href="#nfs-environment" id="nfs-environment"></a>

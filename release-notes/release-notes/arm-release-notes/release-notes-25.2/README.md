@@ -1,5 +1,105 @@
 # Release Notes 25.2
 
+## Release Notes 25.2.6 <a href="#title-text" id="title-text"></a>
+
+**Release Date: 25th May 2025**
+
+**Overview**
+
+This release focuses on stability, reliability, and enhanced usability across core modules like CI Jobs, EZ-Commit, and Release Management. Key improvements address long-standing issues such as CI job queue blocks, premature status transitions during aborts, metadata filtering inconsistencies, and usability fixes in user management.
+
+We’ve also added support for Provar v25.2.1, improved error handling and logging, and ensured a smoother experience for EZ-Commit users leveraging custom metadata and commit labels.
+
+### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+
+#### **1. Release label Abort Stuck Status** <a href="#id-1.-release-abort-stuck-status" id="id-1.-release-abort-stuck-status"></a>
+
+**Issue:**
+When a user aborts a release label, the system prematurely sets the release status to **"Failed"** while the abort request to the agent is still pending. If the abort request isn’t successfully sent, the status gets stuck, causing confusion in monitoring and troubleshooting.
+
+**Fix:**
+The system now updates the release status to **“Failed”** only after the agent successfully triggers and acknowledges the abort request. Extra logging has been added to help trace abort scenarios and ensure proper state transitions.
+
+**Impacted Module:** Release label Management
+
+#### **2. EZ-Commit Metadata Filter with Reused Labels** <a href="#id-2.-ez-commit-metadata-filter-with-reused-labels" id="id-2.-ez-commit-metadata-filter-with-reused-labels"></a>
+
+**Issue:**
+When performing an EZ-Commit using the **SCA > CodeScan** option and enabling **“Only newly added supported metadata types,”** the commit wasn’t functioning properly if the user reused a previously used commit label.
+
+**Fix:**
+Metadata filtering logic has been updated to support commit label reuse, ensuring seamless functionality with **Auto Draft**.
+
+**Impacted Module:** EZ-Commit
+
+#### **3. CI Jobs Stuck in Queue** <a href="#id-3.-ci-jobs-stuck-in-queue" id="id-3.-ci-jobs-stuck-in-queue"></a>
+
+**Issue:**
+Some CI jobs were getting stuck in the queue due to:
+
+* Unhandled exceptions
+* Git commit failures where no revision was generated
+
+**Fixes:**
+
+* Prevented downstream processes when Git fails to generate a revision
+* Improved handling for null messages and unexpected errors
+* Added enhanced logging to support better troubleshooting
+
+**Impacted Module:** CI Jobs
+
+#### **4. Admin User Creation Validation** <a href="#id-4.-admin-user-creation-validation" id="id-4.-admin-user-creation-validation"></a>
+
+**Issue:**
+Fields like **Phone Number**, **Zip Code**, and **State** were mandatory during user creation, restricting onboarding in certain cases.
+
+**Fix:**
+These fields are now optional in the Admin module, streamlining user creation.
+
+**Impacted Module:** Admin (User Management)
+
+#### **5. Fieldset Translation Removal During Commit** <a href="#id-5.-fieldset-translation-removal-during-commit" id="id-5.-fieldset-translation-removal-during-commit"></a>
+
+**Issue:**
+When committing **CustomField** and **CustomObjectTranslations**, valid **Fieldset translation nodes** were unintentionally removed.
+
+**Fix:**
+Translation node handling has been refined to preserve valid entries and prevent data loss in multilingual configurations.
+
+**Impacted Module:** EZ-Commit
+
+#### **6. Credential-Based CI Job Failures** <a href="#id-6.-credential-based-ci-job-failures" id="id-6.-credential-based-ci-job-failures"></a>
+
+**Issue:**
+CI Jobs were failing inconsistently when using existing credentials, with causes difficult to trace.
+
+**Fix:**
+Improved logging at credential validation points to isolate issues and aid future debugging.
+
+**Impacted Module:** CI Jobs
+
+#### **7. Provar v25.2.1 Compatibility Support** <a href="#id-7.-provar-v2521-compatibility-support" id="id-7.-provar-v2521-compatibility-support"></a>
+
+**Request:**
+Compatibility needed for **Provar version 25.2.1** to support automated test execution.
+
+**Update:**
+Provar v25.2.1 is now supported and available on demand for integration with ARM workflows.
+
+
+#### **8. Branch Name Case Sensitivity in Release Labels** <a href="#id-8.-branch-name-case-sensitivity-in-release-labels" id="id-8.-branch-name-case-sensitivity-in-release-labels"></a>
+
+**Issue:**
+Sub-users could not view their own release labels due to a mismatch in branch name casing logic.
+
+**Fix:**
+The filtering logic now respects case sensitivity, ensuring correct visibility of release labels.
+
+**Impacted Module:** Release Label Management
+
+
+******
+
 ## ARM 25.2.5 Release Notes <a href="#title-text" id="title-text"></a>
 
 **Release Date: 18th May 2025**\

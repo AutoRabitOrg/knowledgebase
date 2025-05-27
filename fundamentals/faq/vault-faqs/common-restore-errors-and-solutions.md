@@ -148,3 +148,49 @@ Currently, Vault does not support the Terafina managed package.
 ### Does Vault integrate with Salesforce Shield?
 
 Salesforce Shield ensures that data is encrypted at rest within Salesforce. However, when data is queried through APIs, Salesforce returns it in a decrypted format. Since Vault leverages Salesforce APIs to retrieve data, our solution fully supports the backup and restoration of Salesforce orgs where Salesforce Shield is enabled.
+
+***
+
+## **Data Migration to Vault**
+
+#### **1. Should I retain existing backup snapshots after moving to Vault?**
+
+Yes. It is strongly recommended to retain your existing backup snapshots for at least **3 months**. This buffer allows for coverage in the event of immediate Salesforce failures or restoration needs.
+
+#### **2. Why is the 3-month retention period suggested?**
+
+The 3-month period provides sufficient time to:
+
+* Capture multiple snapshots of both full and incremental changes in Vault.
+* Ensure data reliability in Vault moving forward.
+* Account for variations in data and file size across orgs.
+
+#### **3. What happens if we were using an archival feature with our previous provider?**
+
+If you previously used an **archival feature**, check whether you utilized any **"unarchive" functionality within Salesforce**:
+
+* **If you did use unarchiving**: Vault currently does **not** support this functionality. A ticketing system or custom implementation may be necessary if unarchiving is a critical requirement.
+* **If unarchiving wasn’t used**: You can rely on Vault's archival features and proceed to delete your old archival history after ensuring everything you need is archived properly in Vault.
+
+#### **4. How long should I keep archival history with the previous provider?**
+
+A **90-day period** is typically adequate. During this time:
+
+* Vault can archive the required data.
+* You can verify the completeness of archived information before decommissioning the older archive history.
+
+#### **5. What precautions should I take before deleting old archives?**
+
+Before removing archived data from your previous solution:
+
+* Conduct a **thorough analysis** of your existing archive.
+* Confirm whether any data within the legacy archive might require restoration.
+* Any restoration needs during the 90-day transition must be handled via the legacy system.
+
+#### **6. Is this a full migration of backups and snapshots into Vault?**
+
+No. This process does **not** involve migrating historical snapshots into Vault. Instead:
+
+* The focus is on setting up Vault to capture ongoing backups and archives.
+* This reduces engineering effort and complexity while ensuring data continuity.
+

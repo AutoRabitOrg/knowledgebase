@@ -16,7 +16,7 @@ There are only a few lines to add to your **.YML file** for CodeScan to be trigg
 
 First, you'll need to add your CodeScan token as a variable you can access in your **.YML file**.
 
-* Open your project and navigate to **`Repository Settings > Secrets > Add new secret`**.
+* Open your project and navigate to **`Settings > Secrets and variables > Actions > New repostory secret`**.
 * Add your token with the name **`codescan_token`** and check the **`Secured`** box. To learn how to generate a token, refer [HERE](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token).
 
 Now you'll be able to access this variable by using **`$codescan_token`** in your **.YML file**.

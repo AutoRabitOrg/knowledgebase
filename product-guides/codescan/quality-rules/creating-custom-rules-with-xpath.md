@@ -5,7 +5,7 @@
 {% hint style="info" %}
 **Note:**
 
-1. The custom XPath Visualforce rule template uses **XPath version 2** whereas the custom XPath Apex rule template uses **XPath version 1**.
+1. The custom XPath Visualforce and Salesforce Metadata rule templates use **XPath version 2** whereas the custom XPath Apex rule template uses **XPath version 1**.
 2. This needs to be changed in the design as the rules are being developed or could introduce bugs.
 {% endhint %}
 

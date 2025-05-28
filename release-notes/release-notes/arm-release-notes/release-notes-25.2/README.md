@@ -98,7 +98,7 @@ The filtering logic now respects case sensitivity, ensuring correct visibility o
 
 ***
 
-## ARM 25.2.5 Release Notes <a href="#title-text" id="title-text"></a>
+## Release Notes 25.2.5  <a href="#title-text" id="title-text"></a>
 
 **Release Date: 18 May 2025**\
 \

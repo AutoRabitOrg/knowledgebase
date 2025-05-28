@@ -1,11 +1,8 @@
-# Release Notes 21.6
+# Release Notes 21
 
-**November 2021 - Version 21.6 - New Features, Enhancements, Improvements, and Changelogs**
+## ARM Release Notes **21.6**
 
-**Date of Release:** _21 November 2021_
-
-\
-
+**Date of Release:** _**21 November 2021**_
 
 **On this page:**
 
@@ -55,7 +52,7 @@ Across the CI Job module, **"Load More"** buttons have been replaced with **"Pre
 
 ### Changelogs <a href="#changelogs" id="changelogs"></a>
 
-#### 11 Mar 2022 <a href="#11-mar-2022" id="11-mar-2022"></a>
+#### 11 Mar 2022 <a href="#id-11-mar-2022" id="id-11-mar-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -76,7 +73,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users were not able to configure the approver's lists on the **New Merge Request** screen ([#41844](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070874003)).
 * Fixed an issue where the users trying to revert a commit for a commit label was getting failed ([#39613](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066805855)).
 
-#### 06 Mar 2022 <a href="#06-mar-2022" id="06-mar-2022"></a>
+#### 06 Mar 2022 <a href="#id-06-mar-2022" id="id-06-mar-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -88,7 +85,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the non-licensed users were receiving the deployment email failure notification for the unsuccessful deployment ([#41705](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070543145)).
 * Fixed an issue where the users were unable to use the nCino feature after the ARM was upgraded to v21.6 ([#41108](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069360251)).
 
-#### 27 Feb 2022 <a href="#27-feb-2022" id="27-feb-2022"></a>
+#### 27 Feb 2022 <a href="#id-27-feb-2022" id="id-27-feb-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -108,7 +105,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users were unable to attach the CSV file while carrying out the CI deployment.
 * Fixed an issue that caused users to receive an invalid session error when changing their password.
 
-#### 20 Feb 2022 <a href="#20-feb-2022" id="20-feb-2022"></a>
+#### 20 Feb 2022 <a href="#id-20-feb-2022" id="id-20-feb-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -123,7 +120,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * AutoRABIT instances were not supporting the Salesforce API 54 version. It has now been fixed. ([#40921](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068957023)).
 * When a user performs a pre-validation commit on the Azure repository branches, it creates a duplicate external commit with the same revision ID. This issue has now been fixed ([#39287](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066141740)).
 
-#### 13 Feb 2022 <a href="#13-feb-2022" id="13-feb-2022"></a>
+#### 13 Feb 2022 <a href="#id-13-feb-2022" id="id-13-feb-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -140,7 +137,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 Limitations identified in this release:**RestrictionRule** metadata type is not supported for the SFDX deployment.
 
-#### 06 Feb 2022 <a href="#06-feb-2022" id="06-feb-2022"></a>
+#### 06 Feb 2022 <a href="#id-06-feb-2022" id="id-06-feb-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -155,7 +152,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the EZ-Merge was showing status as failed in the AutoRABIT application however, in the Salesforce environment the status shows as success ([#40673](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000068536502)).
 * Fixed a bug where the users were unable to register a dev hub on the **SDFX > Hub Management** page.
 
-#### 30 Jan 2022 <a href="#30-jan-2022" id="30-jan-2022"></a>
+#### 30 Jan 2022 <a href="#id-30-jan-2022" id="id-30-jan-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -168,7 +165,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the lookup field values were not picked up while creating the nCino feature migrating template ([#38868](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065239462)).
 * Fixed a bug that displays the nCino-related CI Jobs on the ARM **CI Jobs Results** page.
 
-#### 29 Jan 2022 <a href="#29-jan-2022" id="29-jan-2022"></a>
+#### 29 Jan 2022 <a href="#id-29-jan-2022" id="id-29-jan-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -181,7 +178,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the search box doesn't work well with uppercase and lowercase in the commit label unlike the search in the dropdowns on the **Commit History** page ([#39286](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066141525)).
 * Fixed an issue where the metadata types **"NavigationMenu"** and **"IframeWhiteListUrlSettings"** were included in the build view changes for both DX and non-DX CI Jobs, despite being excluded.
 
-#### 23 Jan 2022 <a href="#23-jan-2022" id="23-jan-2022"></a>
+#### 23 Jan 2022 <a href="#id-23-jan-2022" id="id-23-jan-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -203,7 +200,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * Ability to keep the work item status without a change or update it during EZ-Commit.
   * You may now configure the job to pick up revisions based on your work item status while deploying from version control to a Salesforce org, allowing you to adjust the status even after a successful rollback.
 
-#### 16 Jan 2022 <a href="#16-jan-2022" id="16-jan-2022"></a>
+#### 16 Jan 2022 <a href="#id-16-jan-2022" id="id-16-jan-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -216,7 +213,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the search box doesn't work well with uppercase and lowercase in the commit label unlike the search in the dropdowns on the **Commit History** page ([#39286](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066141525)).
 * Fixed an issue where the metadata types **"NavigationMenu"** and **"IframeWhiteListUrlSettings"** were included in the build view changes for both DX and non-DX CI Jobs, despite being excluded.
 
-#### 09 Jan 2022 <a href="#09-jan-2022" id="09-jan-2022"></a>
+#### 09 Jan 2022 <a href="#id-09-jan-2022" id="id-09-jan-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -229,7 +226,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the lookup field values were not picked up while creating the nCino feature migrating template ([#38868](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065239462)).
 * Fixed a bug that displays the nCino-related CI Jobs on the ARM **CI Jobs Results** page.
 
-#### 02 Jan 2022 <a href="#02-jan-2022" id="02-jan-2022"></a>
+#### 02 Jan 2022 <a href="#id-02-jan-2022" id="id-02-jan-2022"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -240,7 +237,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the super administrator was getting an empty popup screen when navigating to the **Process Summary** page.
 * Fixed an issue where the users were able to find the **Abort** option even when the CI Job had been completed successfully ([#38177](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063673463)).
 
-#### 26 Dec 2021 <a href="#26-dec-2021" id="26-dec-2021"></a>
+#### 26 Dec 2021 <a href="#id-26-dec-2021" id="id-26-dec-2021"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -253,7 +250,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the lookup field values were not picked up while creating the nCino feature migrating template ([#38868](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000065239462)).
 * Fixed a bug that displays the nCino-related CI Jobs on the ARM **CI Jobs Results** page.
 
-#### 19 Dec 2021 <a href="#19-dec-2021" id="19-dec-2021"></a>
+#### 19 Dec 2021 <a href="#id-19-dec-2021" id="id-19-dec-2021"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -266,7 +263,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the search box doesn't work well with uppercase and lowercase in the commit label unlike the search in the dropdowns on the **Commit History** page ([#39286](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066141525)).
 * Fixed an issue where the metadata types **"NavigationMenu"** and **"IframeWhiteListUrlSettings"** were included in the build view changes for both DX and non-DX CI Jobs, despite being excluded.
 
-#### 12 Dec 2021 <a href="#12-dec-2021" id="12-dec-2021"></a>
+#### 12 Dec 2021 <a href="#id-12-dec-2021" id="id-12-dec-2021"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -284,7 +281,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the changes are being committed even after a failed validation.
 * Fixed an issue where the package directory filter in the release labels is not working as expected.
 
-#### 05 Dec 2021 <a href="#05-dec-2021" id="05-dec-2021"></a>
+#### 05 Dec 2021 <a href="#id-05-dec-2021" id="id-05-dec-2021"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -300,7 +297,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the repository filter on the _Commit History_ screen was reset to default after resolving a conflict.
 * Fixed a bug where the failed component count position is wrong when the window is scrolled.
 
-#### 28 Nov 2021 <a href="#28-nov-2021" id="28-nov-2021"></a>
+#### 28 Nov 2021 <a href="#id-28-nov-2021" id="id-28-nov-2021"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -328,7 +325,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the non-SFDX CI job for WaveTemplates is showing no modifications when triggered.
 * Fixed single data loader and data loader pro filter issues while carrying out the edit functionality.
 
-#### 21 Nov 2021 <a href="#21-nov-2021" id="21-nov-2021"></a>
+#### 21 Nov 2021 <a href="#id-21-nov-2021" id="id-21-nov-2021"></a>
 
 This is a maintenance release. The following items were fixed and/or added:
 
@@ -340,3 +337,76 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the deployment shows failed status although there are no failures and the items did get moved to the destination org. This is now working as expected ([#37774](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062644015), [#38363](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064201151)).
 * Fixed an issue where the user was not able to retrieve the metadata to deploy the changes using AutoRABIT's deployment feature.
 * Fixed data loader pro issue which was throwing unknown error while migrating the data objects ([#38566](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064649001)).
+
+***
+
+## **ARM Release Notes 21.5**
+
+**Date of Release:&#x20;**_**29 August 2021**_
+
+**On this page:**
+
+1. [Enhancements](https://knowledgebase.autorabit.com/arm/docs/arm-release-notes-215#enhancements)
+2. [Changelogs](https://knowledgebase.autorabit.com/arm/docs/arm-release-notes-215#changelogs)
+
+In keeping with our dedication to continual improvement, the **August-21 (AR 21.5)** release delivers a plethora of exciting upgrades and improvements to our AutoRABIT application.
+
+### Enhancements <a href="#enhancements" id="enhancements"></a>
+
+* **UI/UX Improvements:** Focused on application performance and user experience. Try it out for yourself and let us know how to feel:
+  * **Page Navigation:** When working with several records, breaking data into multiple pages is always a good idea. You can now view 25, 50, 75, or 100 records on a single page, and use the **Previous** and **Next** buttons to switch to the previous or next page. This feature is now only available in the Version Control module, but it will be expanded to other modules in future releases.
+  * **Never miss a required field:** You will be prompted to fill in all the required fields before you proceed. Follow the UI highlights to minimize rework.
+* **Customize CI jobs for desired Salesforce API versions:** To support different Salesforce API versions for distinct Salesforce orgs instead of a global setup, we've added a new checkbox named **Salesforce API version** across the CI Job module. This will offer a granular facility in a CI job to select the required Salesforce API version.
+* **Improved Audit Trail Report:** Additional data was added to the reports to support improved report analysis.
+* **Performance Improvement:** Waiting is always boring- we have reduced that wait for you.
+* **Salesforce CLI Upgrade-** Salesforce CLI upgraded to the latest stable **7.112** version.
+
+### Changelogs <a href="#changelogs" id="changelogs"></a>
+
+#### 14 November 2021 <a href="#id-14-november-2021" id="id-14-november-2021"></a>
+
+This is a maintenance release. The following items were fixed and/or added:
+
+* Fixed deployment issues
+  * Fixed an issue where no metadata was found while validating the components from the master branch to the production environment ([#38612](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064709627), [#38587](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064645657), [#38571](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064639413), [#38537](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064517581), [#38552](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064584042), [#38549](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064544537))
+  * Fixed revision based deployment issue ([#38386](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064283007))
+  * Fixed an issue where the commit labels changes are not reflected in the release label ([#38569](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064646158))
+  * Fixed an issue where the salesforce deployment from GIT to SFDC was not working ([#38558](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064639001))
+  * Fixed deployment issue where no components were being retrieved via _Single Revision_ or _Revision Range_ ([#38550](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064581003), [#38546](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064558188))
+* Fixed a bug where the deployment CI Job occurs multiple times ([#37454](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000061960003)).
+* Fixed the search and substitute deletion rule issue ([#38410](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064291165)).
+* Fixed SFDX parent and child job triggered the issue.
+* Fixed an issue where the review artifact with AutoDraft functionality was not working properly in the EZ-commit screen.
+
+#### 07 November 2021 <a href="#id-07-november-2021" id="id-07-november-2021"></a>
+
+This is a maintenance release. The following items were fixed and/or added:
+
+* Fixed an issue where the user couldn't delete a job with special characters in its name ([#38332](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064061141))
+* Fixed SFDX deployment and rollback mismatches issue ([#35947](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000057045040)).
+* Fixed a bug where when attempting to commit the deletion of 19 profiles, a Diff Report listing of 20 profiles was generated. ([#38303](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063932311)).
+* Fixed code coverage report discrepancy issue ([#36282](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000058168335)).
+* Fixed an issue where the wave template related dependent files were missing from the package \[CI, Deployment, VC].
+* Fixed an issue where all existing credentials for version control mappings that were created using the **Profile** screen were reset.
+
+#### 31 October 2021 <a href="#id-31-october-2021" id="id-31-october-2021"></a>
+
+This is a maintenance release. The following items were fixed and/or added:
+
+* The deleted sharing rules were not showing up in the EZ-Commit Deleted tab, which was fixed ([#37747](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062586019))
+* Fixed a bug where the older commits were not accessible for merge ([#38242](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063785008)).
+* Fixed an issue where when deploying a new custom object, an error _"Profile Search Layout: - System Administrator - not appropriate for object XXXXXX"_ was thrown ([#37897](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062972201)).
+* Fixed a merge conflict issue([#37950](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063128003)).
+* Fixed a commit label issue ([#38275](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063874030)).
+* Fixed an issue with SSO where users had to log in twice before being able to use the AutoRABIT application ([#36634](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000059319963)).
+* The issue with the SSO domain has been fixed ([#37232](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000061168477)).
+* Fixed data loader audit logs issue ([#37688](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000062385762)).
+* Fixed an issue where the users were unable to exclude _EmbeddedServiceLiveAgent_ from CI Job ([#38261](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063818321)).
+* Fixed an issue where the user couldn't delete a job with special characters in its name ([#38332](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000064061141)).
+* Fixed an issue where users were unable to compare profiles using the _Profile Manager_ feature in the _Deployment_ module ([#36978](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000060367023)).
+* In CI Jobs, a bug with the _"Group By"_ filter was fixed ([#38132](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063522197)).
+* Fixed an issue where the community site was not getting deployed ([#38226](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000063775199)).
+* Fixed a bug that caused metadata retrieval to fail with a **Null** error during revision range deployment.
+* \[Profile Manager] Fixed an issue where the org compare feature would not work when three orgs were configured, resulting in a "Empty screen" error.
+* \[Profile manager] Fixed an issue where after comparison, duplicate metadata entries and empty popups were displayed.
+* \[nCino CI Jobs] Fixed an issue where the unwanted objects are displayed on editing the cloned CI Job.

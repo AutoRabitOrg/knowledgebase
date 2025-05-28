@@ -632,4 +632,4 @@ ARM 24.1.1
 
 ### nCino Improvements
 
-See the recent updates to [nCino release 24.1](../ncino-release-notes/release-notes-24.1.md) notes as well.&#x20;
+See the recent updates to [nCino release 24.1](../../ncino-release-notes/release-notes-24.1.md) notes as well.&#x20;

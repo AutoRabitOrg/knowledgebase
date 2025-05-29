@@ -1,7 +1,7 @@
 # ALM Management
 
 {% hint style="info" %}
-**Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users.
+**Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users. 
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>

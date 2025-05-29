@@ -12,6 +12,29 @@ AutoRABIT is designed around the industry’s only CI/CD (Continuous Integration
 
 nCino chose AutoRABIT as its DevSecOps partner because of our ability to support the unique needs of financial institutions working on Salesforce. AutoRABIT helps nCino deliver secure, compliant, and high-quality solutions at scale by automating key parts of the development lifecycle—from version control and CI/CD to code quality and data backup. What makes this partnership stand out is AutoRABIT’s strong grasp of Salesforce metadata—especially the custom components used by nCino—and our shared focus on meeting the ever-changing needs of the financial services world. We're helping banks and credit unions move faster, stay compliant, and reduce risk along the way.
 
+### Understanding Record-Based Configuration (RBC)&#x20;
+
+With RBC, nCino gives admins the flexibility to shape how the platform behaves depending on the kind of record in use — whether it's a specific loan type, region, or product line. The best part? It doesn’t require any coding. This approach makes it easier for financial institutions to handle complex processes, ensuring users only interact with the fields, workflows, and rules that actually apply to the record they're working on.&#x20;
+
+### Why Record-Based Configuration Makes a Difference &#x20;
+
+1. Keeps things simple for users by showing only the information that pertains to the type of record they’re working with.
+2. Reduces mistakes by applying the right validations and making the right fields required based on the record type.
+3. Speeds up processes by using workflows built specifically for each loan or product category.&#x20;
+4. Makes it easy to adjust as business needs evolve—no code needed, just a few clicks.&#x20;
+
+### Key Benefits User-Specific Relevance &#x20;
+
+1. Keeps the interface clean by showing users only what’s relevant to their task—nothing more, nothing less.&#x20;
+2. Easy to manage: Admins can quickly make updates using clicks instead of code.&#x20;
+3. Built to scale: Whether you're dealing with different products, regions, or business lines, RBC can handle it all smoothly.&#x20;
+
+### Best Practices&#x20;
+
+1. Setup by record type or business line, so it’s easier to manage and understand.&#x20;
+2. Take full advantage of RBC by combining it with tools like conditional visibility, validation rules, and flows to make your configurations even smarter.
+3. Maintain good documentation for each configuration to help with transparency, governance, and staying audit-ready.
+
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
 Before you start working with the nCino features in AutoRABIT, you need to configure certain things in AutoRABIT to proceed:

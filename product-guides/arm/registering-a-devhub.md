@@ -1,4 +1,4 @@
-# Registering a DevHub
+# Registering a DevHub 
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 

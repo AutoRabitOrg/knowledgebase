@@ -1,104 +1,111 @@
 # Search and Substitute
 
-This article is for **Org Administrators** in particular. The actions discussed in the article are not available to general users.
+> **Audience:** Org Administrators only – general users don’t see these controls.
 
-### Overview <a href="#overview" id="overview"></a>
+---
 
-The Search and Substitute rules feature allows you to define custom find and substitute rules that ARM applies when you commit and deploy files from one sandbox to another sandbox, one sandbox to Version Control, or vice-versa.
+## Why Use Search & Substitute? <a href="#overview" id="overview"></a>
 
-### Procedure <a href="#procedure" id="procedure"></a>
+When you move metadata between environments, small but critical differences can break deployments:
 
-1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** module and click on the **`Search and Substitute`** option.
+* Hard-coded URLs that point to Production instead of Sandbox.  
+* Object-level permissions that should exist only in lower tiers.  
+* Label values that need slight tweaks per org.
 
-<figure><img src="../../../.gitbook/assets/image (729).png" alt="" width="283"><figcaption></figcaption></figure>
+**Search & Substitute** lets you define _rules_ that automatically find and replace text inside selected metadata _before_ the deployment or commit occurs. The rules run when you:
 
-3. Click on **`Create Rule`**. A rule consists of a rule label and several rule parameters.
+* Deploy sandbox → sandbox  
+* Deploy sandbox → Version Control  
+* Commit Version Control → sandbox (CI jobs)
 
-<figure><img src="../../../.gitbook/assets/image (730).png" alt=""><figcaption></figcaption></figure>
+That means fewer manual edits, fewer post-deployment fixes, and more predictable pipelines.
 
-#### Rule Parameters <a href="#rule-parameters" id="rule-parameters"></a>
+---
 
-<figure><img src="../../../.gitbook/assets/image (731).png" alt="" width="563"><figcaption></figcaption></figure>
+## Creating a Rule <a href="#procedure" id="procedure"></a>
 
-**1. Metadata Type**
+1. Log in to ARM.  
+2. Go to **Admin › Search and Substitute**.
 
-Until now, Search and Substitute could only be used to select a metadata type and then perform the search for substrings across all members in that type. Now, however, you can choose specific metadata members in a type and substitute values for the member(s).
+   <figure><img src="../../../.gitbook/assets/image (729).png" alt="Admin menu showing the Search and Substitute option" width="283"></figure>
 
-**Use Cases:**
+3. Click **Create Rule**.
 
-* If you have a **custom label** in one of your orgs with identical values across multiple labels, but you only want to change one of those values, then having the ability to search for a specific label and apply substitution rules will help.
-* Suppose you need to add a few object permissions, but only to the Production environment and not the lower sandboxes. In that case, you can now do so instead of manually commenting out some metadata in the **Permission Set** file during **sandbox deployments** and then uncommenting them before a Production deployment.
-* The rules can be created and used in **CI Jobs** to make the replacements automatically, depending on the **deployment settings** in the CI Job.
+   <figure><img src="../../../.gitbook/assets/image (730).png" alt="Create Rule button on the Search and Substitute page"></figure>
 
-Supported Metadata TypesBelow is an updated list of all the metadata types compatible with the enhanced Search and Substitute functionality.
+Each rule has a **label** plus one or more **parameters**.
 
-* AutoResponseRule
-* CustomLabel
-* CustomMetadata
-* CustomObject
-* CustomSite
-* Dashboard
-* DashboardFolderShare
-* Network
-* NamedCredential
-* PermissionSet
-* Portal
-* Queue
-* RemoteSiteSettings
-* Report
-* ReportFolderShare
-* SamlSsoConfig
-* SharingCriteriaRule
-* SharingOwnerRule
-* Workflow
+---
 
-**2. Sub Element**
+### Rule Parameters Explained <a href="#rule-parameters" id="rule-parameters"></a>
 
-The element for which you want to substitute the character.
+<figure><img src="../../../.gitbook/assets/image (731).png" alt="Rule parameter fields: Metadata Type, Sub Element, Criteria, Substitute" width="563"></figure>
 
-**3. Criteria**
+| # | Field | Purpose |
+| - | ----- | ------- |
+| **1** | **Metadata Type** | Choose a metadata type – _or an individual member_ – where the replacement should occur. |
+| **2** | **Sub Element** | The XML path / JSON key holding the text you want to change. |
+| **3** | **Criteria** | The exact string (or pattern) to search for. |
+| **4** | **Substitute** | The replacement value. |
 
-The text you want to replace.
+Click **+** to add up to **5** parameter sets per rule. Duplicate rows are not allowed.
 
-**4. Substitute**
+#### Supported Metadata Types
 
-The value that will replace the text.
+`AutoResponseRule`, `CustomLabel`, `CustomMetadata`, `CustomObject`, `CustomSite`, `Dashboard`, `DashboardFolderShare`, `Network`, `NamedCredential`, `PermissionSet`, `Portal`, `Queue`, `RemoteSiteSettings`, `Report`, `ReportFolderShare`, `SamlSsoConfig`, `SharingCriteriaRule`, `SharingOwnerRule`, `Workflow`
 
-To substitute multiple values, click on the '+' icon to add more field parameters. Note that you can only add up to **5 parameters** for a rule; anything beyond that, the application won’t allow you. Also, ensure the parameters are not duplicated, which may fail in search and substitute functionality.
+> **Tip:** Combining Search & Substitute with **CI Job** deployment settings lets you adjust the same package differently for each target org.
 
-**Example:**
+---
 
-The **'Formatchange'** rule will be applied to the **'CustomObject'** metadata type in the following example. The sub-element is **'Fields.displayFormat',** and the value to be replaced is **'a-{000}'**. The value to replace this with is **'a-{001}'**.
+### Example <a href="#example" id="example"></a>
 
-<figure><img src="../../../.gitbook/assets/image (732).png" alt=""><figcaption></figcaption></figure>
+Need to change an invoice number format in one org only? Create a rule like this:
 
-Once you're done creating the rule, click on the **`Save`** button.
+* **Metadata Type:** `CustomObject › Invoice__c`  
+* **Sub Element:** `Fields.displayFormat`  
+* **Criteria:** `a-{000}`  
+* **Substitute:** `a-{001}`
 
-The rule will be displayed on the Search and Substitute home screen with an option to edit, delete, or create a new rule to add to the existing rules using the **`clone`** icon.
+<figure><img src="../../../.gitbook/assets/image (732).png" alt="Example rule that changes displayFormat from a-{000} to a-{001} for a CustomObject"></figure>
 
-<figure><img src="../../../.gitbook/assets/image (733).png" alt=""><figcaption></figcaption></figure>
+Click **Save** to store the rule. It appears in the list with **Edit**, **Delete**, and **Clone** icons.
 
-### What's Next? <a href="#whats-next" id="whats-next"></a>
+<figure><img src="../../../.gitbook/assets/image (733).png" alt="Rule list with edit, delete, and clone actions"></figure>
 
-You have successfully created a new rule. The next step is to specify the newly created rule whenever you perform a CI, deployment, or commit operation in ARM.
+---
 
-#### Deploying the changes to a Sandbox with a new rule assigned <a href="#deploying-the-changes-to-a-sandbox-with-a-new-rule-assigned" id="deploying-the-changes-to-a-sandbox-with-a-new-rule-assigned"></a>
+## Using a Rule in Deployments & Commits <a href="#whats-next" id="whats-next"></a>
 
-While deploying the changes from one sandbox to another sandbox, you can apply the Search and Substitute rule on the **`Deployment Settings`** screen.
+### Sandbox → Sandbox Deployment <a href="#deploying-the-changes-to-a-sandbox-with-a-new-rule-assigned" id="deploying-the-changes-to-a-sandbox-with-a-new-rule-assigned"></a>
 
-From the **`Apply Search and Substitute Rules`** list, select the rule that will be associated with the current deployment process. Use the ![](<../../../.gitbook/assets/image (734).png>)/![](<../../../.gitbook/assets/image (735).png>) button to add or remove the rule and use the ![](<../../../.gitbook/assets/image (734).png>)/![](<../../../.gitbook/assets/image (735).png>) button to move the rules list up and down. Based on the selection, the top rule is deployed initially, and the process continues for the remaining rules.
+On the **Deployment Settings** screen:
 
-<figure><img src="../../../.gitbook/assets/image (736).png" alt=""><figcaption></figcaption></figure>
+1. Open **Apply Search and Substitute Rules**.  
+2. Move rules to **Selected** with ![](../../../.gitbook/assets/image%20(734).png) / ![](../../../.gitbook/assets/image%20(735).png).  
+3. Use the arrows to order execution (top rule runs first).
 
-#### Committing the changes from one Salesforce org to a Version Control branch with new rules assigned <a href="#committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned" id="committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned"></a>
+<figure><img src="../../../.gitbook/assets/image (736).png" alt="Deployment Settings with Search and Substitute rules selected"></figure>
 
-While committing the metadata component changes to a Version Control Branch, you can apply the Search and Substitute rule on the **Commit** or **Submit for Validation** screen. Refer to the Commit topic for the detailed commit process.
+### Commit to Version Control <a href="#committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned" id="committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned"></a>
 
-<figure><img src="../../../.gitbook/assets/image (737).png" alt=""><figcaption></figcaption></figure>
+During **Commit** or **Submit for Validation**, pick your rule under **Search and Substitute**.
 
-#### Performing CI Job with new rule assigned <a href="#performing-ci-job-with-new-rule-assigned" id="performing-ci-job-with-new-rule-assigned"></a>
+<figure><img src="../../../.gitbook/assets/image (737).png" alt="Commit screen showing Search and Substitute rule selection"></figure>
 
-While committing the metadata component changes from a Salesforce org to a Version Control branch using CI job, you can apply the Search and Substitute rule in the **`Create CI Job`** screen under the **`Deploy`** section.
+### CI Job <a href="#performing-ci-job-with-new-rule-assigned" id="performing-ci-job-with-new-rule-assigned"></a>
 
-<figure><img src="../../../.gitbook/assets/image (738).png" alt=""><figcaption></figcaption></figure>
+When creating a **CI Job**, expand the **Deploy** section and choose the rule.
+
+<figure><img src="../../../.gitbook/assets/image (738).png" alt="CI Job creation with Search and Substitute rule dropdown"></figure>
+
+---
+
+## Best Practices
+
+* **Granularity first** – target specific metadata members when possible to avoid false replacements.  
+* **Limit to five** – ARM enforces a max of 5 parameters; combine similar changes into one rule.  
+* **Test in Sandbox** – run a dry-run deployment to validate your substitutions before Production.  
+* **Clone, don’t copy-paste** – use the **Clone** icon to reuse rule logic with small tweaks.
+
+With Search & Substitute configured, your deployments self-adjust to each environment—no manual XML edits required.

@@ -6,7 +6,7 @@ Also, users have the option to produce reports either weekly, monthly, yearly, o
 
 ### Viewing Audit Reports <a href="#viewing-audit-reports" id="viewing-audit-reports"></a>
 
-The **Report** screen is best viewed when the zoom setting is 80% on your Chrome/Firefox browser.
+The **Report** screen is best viewed when the zoom setting is 80% on your Chrome/Firefox browser. 
 
 1. Hover your mouse over the **REPORTS** module and click on the **WEEKLY REPORTS**.
 

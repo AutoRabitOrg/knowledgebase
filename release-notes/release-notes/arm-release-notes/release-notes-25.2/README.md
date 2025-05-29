@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Release Notes 25
 
 ## Release Notes 25.2.6 <a href="#title-text" id="title-text"></a>

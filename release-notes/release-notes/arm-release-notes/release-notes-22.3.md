@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Release Notes 22
 
 ## ARM Release Notes 22.3

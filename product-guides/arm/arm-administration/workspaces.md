@@ -1,81 +1,112 @@
 # Workspaces
 
-## What is a Workspace?  <a href="#what-is-workspace" id="what-is-workspace"></a>
+A **workspace** is your isolated “build room” inside AutoRABIT (ARM).  
+Whenever you run an operation that needs local disk—such as **EZ-Commit**, a **merge** or a **CI job**—ARM spins up (or re-uses) a workspace linked to the repo/branch in question. That keeps files, temporary build artifacts, and logs separated per operation, so one task never overwrites another.
 
-A workspace is a container in which you code. For example, say you're trying to commit the code changes through EZ-Commit to a version control repository branch. In such case, a workspace gets created dynamically and it gets assigned to your repository/branch. Multiple workspaces get created for each commit/merge operation in ARM. If the workspace is already available, then the operation will get invoked in the existing one.
+---
 
-## Workspace Storage  <a href="#workspace-storage" id="workspace-storage"></a>
+## What Is a Workspace? <a href="#what-is-workspace" id="what-is-workspace"></a>
 
-Each workspace has a total storage limit of **500 GB** allocated per tenant. An email notification will be sent to users once the workspace limit is about to be reached. On the limit being reached, users will not be able to run any further operations in ARM unless the workspace size is either increased or idle workspaces are deleted.&#x20;
+Think of a workspace as a **containerized file system**:
+
+* It’s created (or re-attached) automatically when you start a commit, merge, or CI task.  
+* Multiple workspaces can exist side-by-side—one per concurrent job.  
+* If a matching workspace already exists, the new job re-uses it to save spin-up time.
+
+---
+
+## Workspace Storage <a href="#workspace-storage" id="workspace-storage"></a>
+
+* Every tenant receives **500 GB** of workspace capacity.  
+* ARM emails admins when usage approaches the limit.  
+* Once the cap is hit, no new jobs can start until you **increase the limit** or **delete idle workspaces**.
+
+---
 
 ## Managing a Workspace <a href="#managing-workspace" id="managing-workspace"></a>
 
-This section describes how Org Administrators can manage existing workspaces within an ARM instance.
+Only **Org Administrators** can view, reset, or delete workspaces.
 
-### Viewing the Workspace <a href="#viewing-the-workspace" id="viewing-the-workspace"></a>
+### Viewing the Workspace List <a href="#viewing-the-workspace" id="viewing-the-workspace"></a>
 
-To view the workspace:
+1. Log in to ARM.  
+2. Go to **Admin › Workspaces**.
 
-1. Log in to your ARM account.
-2. Hover your mouse over the **Admin** tab and click on **Workspaces**.
+   <figure><img src="../../../.gitbook/assets/image (721).png" alt="Admin menu highlighting Workspaces option" width="170"></figure>
 
-<figure><img src="../../../.gitbook/assets/image (721).png" alt="" width="170"><figcaption></figcaption></figure>
+3. The list shows every workspace ever created:
 
-3. The list of workspaces created/available to date will be listed on this page.
+   <figure><img src="../../../.gitbook/assets/image (722).png" alt="Workspace list with labels, authors, sizes"></figure>
 
-<figure><img src="../../../.gitbook/assets/image (722).png" alt=""><figcaption></figcaption></figure>
+   | Field | Description |
+   | ----- | ----------- |
+   | **Label** | Workspace name (auto-generated) |
+   | **Created On** | Timestamp of first creation |
+   | **Author** | User who owns the workspace |
+   | **Repo / Branch** | Git location tied to the workspace |
+   | **Status** | *Running* or *Idle* |
+   | **Module** | ARM feature that created it (EZ-Commit, CI Job, etc.) |
+   | **Last Used / Size** | Date of last activity and storage consumed |
 
-4. Each workspace will have:
-   * Workspace label
-   * Date/time stamp for workspace created
-   * Workspace allocated author detail
-   * Repo and Branch details
-   * Workspace status, i.e., running or in idle state
-   * The module on which the workspace has been allotted
-   * Last used on along with the size consumed
+---
 
 ### Resetting a Workspace <a href="#reset-a-workspace" id="reset-a-workspace"></a>
 
-You can reset your workspace to revert to the default workspace settings for your user account.
+Reset wipes the folder contents but keeps the workspace record.
 
-1. In the **Workspaces** tab, check for your workspace label and click on **Reset**.
-2. Upon confirmation, the workspace is reset to the default workspace for your user account.
+1. Find the workspace and click **Reset**.  
+2. Confirm to restore default state.
 
-<figure><img src="../../../.gitbook/assets/image (723).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/image (723).png" alt="Reset confirmation dialog"></figure>
+
+---
 
 ### Deleting a Workspace <a href="#deleting-a-workspace" id="deleting-a-workspace"></a>
 
-You can delete a workspace if it is no longer required. Deleting a workspace is permanent and unrecoverable, and it may have an impact on the jobs running on the workspace. However, deleting a workspace will not delete the repository or branches within it. Repositories/branches that belong to other workspaces will not be affected.
+Delete removes the workspace permanently (repositories remain intact).
 
-An **Org Administrative** user can delete the workspaces of another user.
+1. Click the trash-can icon next to the workspace.  
+2. Confirm twice—you cannot undo this.
+
+   <figure><img src="../../../.gitbook/assets/image (724).png" alt="Delete workspace button"></figure>
+
+   <figure><img src="../../../.gitbook/assets/image (725).png" alt="Final delete confirmation modal"></figure>
 
 {% hint style="info" %}
-**Important Note**: If you are unable to delete a workspace, it is because you lack the required permissions. The **Delete** option will not be available.
+If the **Delete** button is missing, your role lacks the required permission.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (724).png" alt=""><figcaption></figcaption></figure>
+---
 
-<figure><img src="../../../.gitbook/assets/image (725).png" alt=""><figcaption></figcaption></figure>
+### Bulk-Deleting Inactive Workspaces <a href="#deleting-inactive-workspaces" id="deleting-inactive-workspaces"></a>
 
-Once confirmed, the workspace gets deleted.
+Free up space by purging all workspaces idle since a given date.
 
-### Deleting Inactive Workspaces <a href="#deleting-inactive-workspaces" id="deleting-inactive-workspaces"></a>
+1. Click **Settings**.
 
-Deleting inactive workspaces can free up resources for other users. Workspace **Settings** allow you to delete multiple workspaces at one time that are in an idle state for a longer period of time.
+   <figure><img src="../../../.gitbook/assets/image (726).png" alt="Workspace Settings gear icon"></figure>
 
-Click on the **Settings** button and specify the final date when all workspaces are cleared.
+2. Choose the cutoff date and confirm.
 
-<figure><img src="../../../.gitbook/assets/image (726).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/image (727).png" alt="Delete inactive workspaces dialog" width="418"></figure>
 
-<figure><img src="../../../.gitbook/assets/image (727).png" alt="" width="418"><figcaption></figcaption></figure>
+---
 
 ## Workspace Configurations <a href="#workspace-configurations" id="workspace-configurations"></a>
 
-If the workspace limit is reached, the user may submit a request to increase the size of their workspace. Our super administrator will confirm the same with the user, and the workspace limit is extended based on the user subscriptions.&#x20;
+Need more space? An Org Admin can request an increase.
 
-The Super Admin needs to log in to ARM with super admin credentials and then navigate to **Workspace Mgmt.** page.
+* Super Admin logs in and opens **Workspace Mgmt**.  
+* Raise the tenant limit—maximum **1 TB** (1000 GB)—based on subscription.
 
-Based on the user's org requirement/subscription, the super admin will add additional workspace to the current org limit. The max size limit which can be increased is **1,000 GB**.
+<figure><img src="../../../.gitbook/assets/image (728).png" alt="Super Admin screen showing workspace size adjustment"></figure>
 
-<figure><img src="../../../.gitbook/assets/image (728).png" alt=""><figcaption></figcaption></figure>
+Once approved, the new cap takes effect instantly and users can resume jobs without deleting old workspaces.
 
+---
+
+### Best Practices
+
+* **Clean up idle workspaces weekly** to avoid hitting the limit.  
+* **Reset** instead of **Delete** if you just want a fresh working directory.  
+* Monitor the **Last Used / Size** column to spot abandoned, space-hogging workspaces early.

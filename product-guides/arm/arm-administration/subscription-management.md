@@ -7,7 +7,7 @@ This article is for the **registered user** in particular. **General users** do 
 
 * Only the **Registered User** can view the **Subscription Management** page.
 * The **Team Administrator** cannot view the **Subscription Management** page.
-* **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page.
+* **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page. 
 {% endhint %}
 
 ## Feature Availability

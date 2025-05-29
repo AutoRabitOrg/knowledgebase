@@ -4,7 +4,7 @@ Comprehensive reference for integrating with AutoRABIT API endpoints
 
 ## Endpoint Overview <a href="#endpoint-overview" id="endpoint-overview"></a>
 
-AutoRABIT API endpoints are listed below.
+This document includes all the API endpoints that can be leveraged by nCino users to perform deployment actions.
 
 ### **Continuous (CI) Jobs**
 

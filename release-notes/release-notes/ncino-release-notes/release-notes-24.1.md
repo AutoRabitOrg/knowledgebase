@@ -52,7 +52,7 @@ nCino 24.1 is a major release that encompasses the following release items:&#x20
 
     **Benefit:** Helps avoid issues encountered during record-based configuration migration due to limited access to record owners in higher environments. This enhancement ensures that migrations do not fail or cause access-related issues, improving the reliability and consistency of deployments across different environments.
 
-    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/ncino/exclude-the-ownerid-from-automapping-in-ncino-ci-jobs.md). \
+    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job/exclude-the-ownerid-from-automapping-in-ncino-ci-jobs.md). \
     &#x20;
 2.  **Data Loader Pro Job Run Options in Configuration**
 
@@ -72,4 +72,4 @@ nCino 24.1 is a major release that encompasses the following release items:&#x20
 
     **Benefit:** Addresses the potential for record duplication when transferring data outside of AutoRABIT or deploying default data in refreshed sandboxes. By enabling users to select an external unique identifier, this enhancement mitigates the risk of duplication and ensures data integrity during deployments.
 
-    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/ncino/select-external-unique-id.md).
+    **Further documentation:** For more detailed information, please refer to our [Knowledge Base](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job/select-external-unique-id.md).

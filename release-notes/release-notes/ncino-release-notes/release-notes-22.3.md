@@ -17,7 +17,7 @@ With this nCino release, we've added a new option called **Version Control** to 
 * The user will be able to select baseline revisions as a starting point for CI jobs.
 * The user will be able to group all commit revisions together to run dataloader operations at once.
 
-[**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job.md)
+[**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job/)
 
 #### 2. Reuse the package from the build and deploy in multiple Salesforce environments as post-deployment success activity <a href="#id-2-reuse-the-package-from-the-build-and-deploy-in-multiple-salesforce-environments-as-postdeployment" id="id-2-reuse-the-package-from-the-build-and-deploy-in-multiple-salesforce-environments-as-postdeployment"></a>
 
@@ -31,7 +31,7 @@ The key features are:
 * Reduced effort in redefining the CI jobs with the same source multiple times.
 * Reduced time to deploy to multiple environments from the same source.
 
-[**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job.md)
+[**Read more →**](../../../product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job/)
 
 #### 3. New 'Spreads Schedule Template' tile in _Feature Creation_ screen <a href="#id-3-new-spreads-schedule-template-tile-in-feature-creation-screen" id="id-3-new-spreads-schedule-template-tile-in-feature-creation-screen"></a>
 

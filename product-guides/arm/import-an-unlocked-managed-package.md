@@ -1,58 +1,67 @@
 # Import an Unlocked/Managed Package
 
-In this article, we would be discussing about how to import a packages (unlocked/managed) into the ARM application. For more information related to packages, refer to the article: [Create an Unlocked/Managed Package](create-an-unlocked-managed-package.md)
+Learn how to bring an existing unlocked or managed package into AutoRABIT for further management.  
+(Need a refresher on packages? See [Create an Unlocked/Managed Package](create-an-unlocked-managed-package.md).)
 
-### Step 1: Importing a Package <a href="#step-1-importing-a-package" id="step-1-importing-a-package"></a>
+---
 
-1. Hover your mouse over the **Salesforce DX** module and select the option: **Packages**
-2. Click **Import Package**.
+### Step 1: Import a Package <a href="#step-1-importing-a-package" id="step-1-importing-a-package"></a>
 
-<figure><img src="../../.gitbook/assets/image (1467).png" alt=""><figcaption></figcaption></figure>
+1. **Open Packages**  
+   Hover over **Salesforce DX** and select **Packages**.
 
-3. Select your version control **Repository** and **Branch**.
-4. This list down all the **packages** and **package versions** (if any) available in your branch.
-5. Select the **packages** to import.
+2. **Click Import Package**
 
-<figure><img src="../../.gitbook/assets/image (1468).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/image (1467).png" alt="Import Package button"></figure>
 
-6. To view the dependent packages for the selected packages, click on **View Dependency Packages**.
+3. Choose the **Repository** and **Branch** that contain the package manifest.  
+4. All available **packages** and **package versions** in that branch appear.  
+5. Select the packages you want to import.
 
-<figure><img src="../../.gitbook/assets/image (1469).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/image (1468).png" alt="List of packages and versions"></figure>
 
-7. To validate the selected package with your devhub, select the devhub from the drop down list and click on **Validate Package** button. The _green_ tick beside **Validate Package** denotes the packages and devhub are rightly matched.
-8. Click **Save**. A confirmation window appears with the details of the package.
+6. **View dependencies** – click **View Dependency Packages** to see related packages.
 
-<figure><img src="../../.gitbook/assets/image (1470).png" alt="" width="559"><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/image (1469).png" alt="Dependency Packages dialog"></figure>
 
-9. Click **IMPORT**. The **Import Packages Log** window appears.
+7. **Validate** – pick the **Dev Hub** and click **Validate Package**. A green tick confirms a match.  
+8. Click **Save** to review the summary.
 
-<figure><img src="../../.gitbook/assets/image (1471).png" alt="" width="496"><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/image (1470).png" alt="Save confirmation window" width="559"></figure>
 
-10. Click **CLOSE**, and you'll be redirected to the **Packages** homepage where you can find your package recently imported.
+9. Click **IMPORT** to begin. The **Import Packages Log** opens.
 
-<figure><img src="../../.gitbook/assets/image (1472).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/image (1471).png" alt="Import Packages Log dialog" width="496"></figure>
+
+10. Click **CLOSE**. You return to the **Packages** home page, where the newly imported package appears.
+
+    <figure><img src="../../.gitbook/assets/image (1472).png" alt="Packages home showing imported package"></figure>
 
 {% hint style="info" %}
-**Important Note:** You can import multiple packages with the same name as long as they are from different repositories or different branches.
+**Note:** You can import multiple packages with the same name if they come from different repositories or branches.
 {% endhint %}
+
+---
 
 ### Step 2: Create a Package Version <a href="#step-2-create-a-package-version" id="step-2-create-a-package-version"></a>
 
-#### What is a Package Version? <a href="#what-is-a-package-version" id="what-is-a-package-version"></a>
+#### What Is a Package Version? <a href="#what-is-a-package-version" id="what-is-a-package-version"></a>
 
-A package is a container for Salesforce metadata. It represents a distinct deployable unit of functionality that is iterated over time. You can add metadata to a package and take a snapshot of it, anytime. This snapshot is called a package version. You can create package versions any number of times. Each package version, once created, is immutable and is associated with a single package. You can install a package version in any Salesforce environment - scratch orgs, sandbox orgs, or production orgs. Installing a package version deploys the metadata that was specified when the package version was created.
+A **package version** is an immutable snapshot of metadata. You can install it in any org (scratch, sandbox, production) to deploy that exact set of components.
 
-1. Click on the **+** icon under the **Actions** tab to create a version for your package.
+1. Click the **+** icon in the **Actions** column to add a version.
 
-<figure><img src="../../.gitbook/assets/image (1473).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/image (1473).png" alt="Create Package Version plus icon"></figure>
 
-2. Next, fill in the below details:
-   * **Version Name**: Version name gets auto-generated based on the package name. However, you can edit the name and enter your desired name. It is really up to you.
-   * **Version Number**: Version numbers are formatted as "major.minor.patch.build". _**For ex-**_ _1.2.1.8_.
-   * **Installation Key**: Enter the installation key that protects your package from being installed by unauthorized individuals.
-   * **Tag**: Enter the tag that is required to release the package. _**For ex-** Release 1.0.0_
-   * **Version Description**: Brief description of your package version.
-3. Click **Create**.
-4. Verify the log status in the **Package Log** screen.
+2. Fill in the details:
 
-<figure><img src="../../.gitbook/assets/image (1474).png" alt=""><figcaption></figcaption></figure>
+   * **Version Name** – auto-filled from the package name; editable.  
+   * **Version Number** – format `major.minor.patch.build` (e.g., `1.2.1.8`).  
+   * **Installation Key** – optional password to restrict installs.  
+   * **Tag** – release label (e.g., `Release 1.0.0`).  
+   * **Version Description** – brief notes.
+
+3. Click **Create**.  
+4. Watch progress on the **Package Log** screen.
+
+   <figure><img src="../../.gitbook/assets/image (1474).png" alt="Package Log showing version creation"></figure>

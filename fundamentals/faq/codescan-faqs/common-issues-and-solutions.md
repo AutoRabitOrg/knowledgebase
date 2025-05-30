@@ -54,7 +54,7 @@ To resolve these issues, simply reauthenticate your environment. Follow these st
     <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Delete Project Analysis</p></figcaption></figure>
 3.  Make sure you DO NOT select the checkbox to Delete the Project Also (as you just want to reattach it while maintaining the same project and its history).
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>DO NOT select the checkbox to Delete the Project Also</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>DO NOT select the checkbox to Delete the Project Also</p></figcaption></figure>
 
 
 
@@ -65,11 +65,11 @@ Selecting the checkbox and deleting the entire project is irreversible and leads
 4.  Then select Attach Analysis Project.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis Project</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis Project</p></figcaption></figure>
 5.  Select Salesforce.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Choose Salesforce Analysis Project</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Choose Salesforce Analysis Project</p></figcaption></figure>
 6.  It will redirect you to the authorization page. Enter your credentials.\
 
 

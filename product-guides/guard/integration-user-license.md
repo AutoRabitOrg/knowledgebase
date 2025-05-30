@@ -16,7 +16,7 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     By default, the Salesforce Integration Profile (which comes with this license) only includes basic API access. It does not grant access to standard or custom objects in your org. That’s where the next step comes in.\
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Integration User License</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Integration User License</p></figcaption></figure>
 
 
 2.  #### Assign the Salesforce API Integration Permission Set License (PSL)
@@ -24,7 +24,7 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     Since the Integration User License alone does not provide access to objects and permissions needed by Guard, you must assign the Salesforce API Integration Permission Set License (PSL).\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Assign the Salesforce API Integration Permission Set License</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Assign the Salesforce API Integration Permission Set License</p></figcaption></figure>
 
     \
     The Salesforce API Integration PSL includes administrative permissions that were originally part of the System Administrator profile but are now assigned separately. This license enables the integration user to be assigned additional permissions via permission sets.
@@ -45,7 +45,7 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     To assign needed permissions, open Permission Set created for integration users and proceed to System Permissions:\
 
 
-    <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Permission Set Overview</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Permission Set Overview</p></figcaption></figure>
 
     \
     Click Edit to update permissions:\

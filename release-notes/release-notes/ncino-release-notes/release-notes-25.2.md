@@ -1,6 +1,6 @@
 # Release Notes 25.2
 
-🚀 nCino + DataLoader 25.2.7 Release Notes
+### nCino + DataLoader 25.2.7 Release Notes
 
 **Release Date**: 01 June, 2025
 

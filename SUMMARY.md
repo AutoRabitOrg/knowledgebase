@@ -291,6 +291,7 @@
         * [\[DRAFT - Project - X\] Deployment via Template using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-template-using-salesforce-org-1.md)
         * [Deployment Using Version Control](product-guides/arm/arm-features/ncino/feature-deployment/deployment-using-version-control.md)
         * [Deployment via Version Control using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org.md)
+        * [Copy of Deployment via Version Control using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org-1.md)
         * [Feature Deployment Summary](product-guides/arm/arm-features/ncino/feature-deployment/feature-deployment-summary.md)
       * [Feature Commits](product-guides/arm/arm-features/ncino/feature-commits.md)
       * [Feature CI Jobs](product-guides/arm/arm-features/ncino/feature-ci-jobs/README.md)

@@ -8,16 +8,12 @@ This article describes the process of deploying the nCino data via the Salesforc
 
 1. Feature Deployment can be triggered in the following ways:
    1. Click on the "Create" button to observe the options to select the "Feature Deployment" as option
-
-
-
-
-
-1. Click on the "Deployment History" under the nCino tab to access the "Create feature deployment"
+2. Click on the "Deployment History" under the nCino tab to access the "Create feature deployment"
 
 <figure><img src="../../../../../.gitbook/assets/1.1 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
 1. Upon selecting **"Create Feature Deployment" or "Feature Deployment,"** a Source Type screen will appear—choose from the available options to proceed.
+2.
 
 
 

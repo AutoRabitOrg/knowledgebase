@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Release Notes 25.2
 
 ## nCino + DataLoader 25.2.4 Release Notes

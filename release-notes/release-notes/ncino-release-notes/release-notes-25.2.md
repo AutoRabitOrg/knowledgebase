@@ -1,5 +1,18 @@
 # Release Notes 25.2
 
+### **nCino + DataLoader 25.2.8 Release Notes**
+
+**Release Date:** 08 June 2025
+
+* **Validation Rules Activation**\
+  Resolved an issue where enabling validation rules was not functioning consistently.
+* **Rollback Object Configuration**\
+  Fixed a bug to ensure object configuration data is loaded without discrepancies during rollback.
+* **Job Group Cloning**\
+  Addressed issues to ensure job group cloning now completes reliably.
+* **CI Job Baseline Revision**\
+  Corrected an error encountered during CI Job baseline revision selection.
+
 ### nCino + DataLoader 25.2.7 Release Notes
 
 **Release Date**: 01 June, 2025

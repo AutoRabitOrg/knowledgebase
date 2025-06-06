@@ -705,6 +705,7 @@
       * [Synthetic Backup](product-guides/vault/vault-features/backup/synthetic-backup.md)
     * [Compare](product-guides/vault/vault-features/compare/README.md)
       * [Comparing Two Backups](product-guides/vault/vault-features/compare/comparing-two-backups.md)
+      * [New Compare Feature Enhancements in Vault:](product-guides/vault/vault-features/compare/new-compare-feature-enhancements-in-vault.md)
     * [Compliance](product-guides/vault/vault-features/compliance/README.md)
       * [GDPR - Secure and Comply](product-guides/vault/vault-features/gdpr-secure-and-comply/README.md)
         * [Right to Be Forgotten Request](product-guides/vault/vault-features/gdpr-secure-and-comply/right-to-be-forgotten-request.md)

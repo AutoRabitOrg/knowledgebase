@@ -38,7 +38,8 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-11. Select the **Report** you want to compare, then click on **TRIGGER RESTORE.**
+11.
+12. Select the **Report** you want to compare, then click on **TRIGGER RESTORE.**
 
 <figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

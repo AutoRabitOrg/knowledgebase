@@ -45,7 +45,7 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     To assign needed permissions, open Permission Set created for integration users and proceed to System Permissions:\
 
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Permission Set Overview</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Permission Set Overview</p></figcaption></figure>
 
     \
     Click Edit to update permissions:\

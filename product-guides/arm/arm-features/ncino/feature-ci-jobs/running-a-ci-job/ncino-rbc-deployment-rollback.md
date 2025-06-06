@@ -117,7 +117,7 @@ Observe the ‘**Rollback**’ option, both on the '**Deployment History**' page
 
 11. &#x20;On clicking the Rollback, a window will be displayed with the option to select the feature(s) intended to be rolledback.
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 12. After doing the required selections continue with the “ROLLBACK”, by clicking on the rollback button.
 13. While the '**Rollback**' is in progress, the '**Re-Deploy**' and '**Rollback**' buttons are grayed out until its completion.

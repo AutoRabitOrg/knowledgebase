@@ -5,7 +5,7 @@
 As a CodeScan user, you have your own space where you can see the things that are relevant to you. View your personal space under the **`My Account`** page.\
 
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>My Account</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1609).png" alt=""><figcaption><p>My Account</p></figcaption></figure>
 
 ### Profile <a href="#profile" id="profile"></a>
 
@@ -16,7 +16,7 @@ It gives you a summary of your:
 * Groups
 * SCM accounts
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (7).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
 
 ### Security <a href="#security" id="security"></a>
 
@@ -34,7 +34,7 @@ Email notifications are managed here. It is possible to define your overall noti
 * New quality gate status
 * My new issues
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Notifications</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (7).png" alt=""><figcaption><p>Notifications</p></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**
@@ -63,4 +63,4 @@ To add notifications for a specific project, select **`Add a Project`** and **`S
 
 The **`Projects`** tab lists all of the projects you are administering. You can select a project from this tab for full access.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Projects</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (6).png" alt=""><figcaption><p>Projects</p></figcaption></figure>

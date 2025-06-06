@@ -69,7 +69,7 @@ Selecting the checkbox and deleting the entire project is irreversible and leads
 5.  Select Salesforce.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Choose Salesforce Analysis Project</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Choose Salesforce Analysis Project</p></figcaption></figure>
 6.  It will redirect you to the authorization page. Enter your credentials.\
 
 

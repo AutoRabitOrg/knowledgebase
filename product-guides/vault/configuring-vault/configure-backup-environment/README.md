@@ -12,7 +12,12 @@ You can configure the storage environment under the **Settings > Backup Environm
 
 1. Log in to your **Vault** account.
 2. Go to the **Settings** module and click on the **Backup Environment** tab.
-3. Under **Storage Environment**, select the **Storage Type** from the drop-down. As of now, Vault supports the following storage types:
+3.  Every time a new user is registered with Vault. While setting up the account, during the initial configuration of the storage the following checks will be done to make sure everything on the storage end is setup and in-place. This ensures that the Vault application will be utilized by the user seamlessly.
+
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1684).png" alt=""><figcaption></figcaption></figure>
+4. Under **Storage Environment**, select the **Storage Type** from the drop-down. As of now, Vault supports the following storage types:
    * [Amazon AWS S3 Storage](amazon-aws-s3-storage-environment/)
    * [Azure Blob](azure-blob-storage-environment.md)
-   * [GCP (Google Cloud Platform)](google-cloud-platform.md), and&#x20;
+   * [GCP (Google Cloud Platform)](google-cloud-platform.md), and

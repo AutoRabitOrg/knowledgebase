@@ -170,14 +170,33 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     * On clicking 'Clone', an entry will be created on the “Job History” page.
 
     <figure><img src="../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
-5.  **Schedule**: Will set a schedule for the config to automatically run periodically.
+
+
+5.  **Additional Cloning Validations:**
+
+    1.  ### Feature Details
+
+        When the cloning of a job is initiated, the following notification will be displayed upon identifying any differences between environments.
+
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+    1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values”.
+
+        1. A warning can be observed on the top of the pop-up, which states that the target environment is missing the respective metadata.
+
+        <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+        1.  Please verify the following information displayed on the pop-up and may continue to clone by clicking on “CONFIRM”.
+
+            Only on user confirmation by clicking on “CONFIRM” button the replication will be initiated.
+6.  **Schedule**: Will set a schedule for the config to automatically run periodically.
 
     * On clicking the “Schedule” icon, the “Replication Config Schedule” will be displayed to the user.
     * The user can select all the required entries to set the schedule.
     * On completing the required selection, the user can click on the “Save Schedule” button to save/set the schedule to the config being edited.
 
     <figure><img src="../../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
-6. **Delete**: Will delete the CONFIG from the list of configs available. If a config is deleted, the corresponding job in the history will not be deleted.
+7. **Delete**: Will delete the CONFIG from the list of configs available. If a config is deleted, the corresponding job in the history will not be deleted.
 
 ### Excluding Feed Items
 

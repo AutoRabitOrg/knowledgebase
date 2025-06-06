@@ -1,4 +1,4 @@
-# New Compare Feature Enhancements in Vault:
+# Enhanced Compare Capabilities: View, Change View, and Export Results
 
 Vault's Compare feature now includes three powerful options to enhance data review and usability:
 

@@ -5,7 +5,7 @@
 As a CodeScan user, you have your own space where you can see the things that are relevant to you. View your personal space under the **`My Account`** page.\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1609).png" alt="" width="278"><figcaption><p>My Account</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1609).png" alt="" width="139"><figcaption><p>My Account</p></figcaption></figure>
 
 ### Profile <a href="#profile" id="profile"></a>
 

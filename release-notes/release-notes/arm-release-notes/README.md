@@ -69,15 +69,7 @@ AutoResponseRule, CustomLabel, CustomMetadata, CustomObject, CustomSite, Dashboa
 
 **Module:** Deployment / CI Jobs
 
-#### **8. Fix / Improvement (Only available to a Specific Customer on a basis of Feature Flag)** <a href="#support-ticket-141999-only-available-to-a-specific-customer-on-a-basis-of-feature-flag" id="support-ticket-141999-only-available-to-a-specific-customer-on-a-basis-of-feature-flag"></a>
-
-**Issue:** ARM previously allowed the same repository to be registered using a feature flag more than once. This stopped functioning, preventing customers from using multiple configurations for the same repo.
-
-**Fix:** Reinstated support for duplicate repository registration via the feature flag:\
-`SKIP_DUPLICATE_REPOSITORY_REGISTRATION_CHECK`\
-When enabled, this flag allows users to register the same repository multiple times.
-
-**Module:** Admin
+***
 
 ## Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
 

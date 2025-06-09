@@ -1,5 +1,84 @@
 # ARM Release Notes
 
+## ARM 25.2.8 Release Notes <a href="#title-text" id="title-text"></a>
+
+#### Release Date: 8 June 2025 <a href="#release-date-08th-june-2025" id="release-date-08th-june-2025"></a>
+
+### **Overview** <a href="#overview" id="overview"></a>
+
+This release brings critical improvements and feature enhancements across multiple modules, including Environment Provisioning, CI Jobs, Admin, EZ-Merge, and Metadata handling. The updates aim to improve system flexibility, performance, and metadata deployment consistency.
+
+### Bug Fixes and Improvements
+
+#### **1. Fix / Improvement** <a href="#support-ticket-123971" id="support-ticket-123971"></a>
+
+**Issue:** In Environment Provisioning, the Remote Site Settings template was failing to update the URL in the destination org when the user applied alphabetical sorting. This caused deployment inconsistencies.
+
+**Fix:** Now, the template can update remote site settings correctly regardless of alphabetical sorting. Sorting by Remote Site Name or Remote Site URL no longer blocks the update process. Validation has been completed in the integration branch.
+
+**Module:** Environment Provisioning
+
+#### **2. Fix / Improvement** <a href="#support-ticket-139461" id="support-ticket-139461"></a>
+
+#### **Issue:** Customers could not edit SSO domain changes directly from the platform, leading to manual intervention. <a href="#support-ticket-139461" id="support-ticket-139461"></a>
+
+**Fix:** Users can now update their SSO domain name via the **SSO Configuration** page. Once the domain name is changed, an automated email informing all users of the update is triggered.
+
+**Module:** Admin → My Account → SSO Configuration
+
+#### **3. Fix / Improvement** <a href="#support-ticket-140173" id="support-ticket-140173"></a>
+
+**Issue:** While attempting to delete static resources and their `.meta` files through EZ-Merge, no destructive changes package was being generated, even when the "Run Destructive Changes" checkbox was selected. This caused validation failure during merge.
+
+**Fix:** Destructive logic has been implemented in EZ-Merge for both DX and non-DX formats, ensuring static resource deletions are correctly handled and packaged.
+
+**Module:** EZ-Merge
+
+#### **4. Fix / Improvement** <a href="#support-ticket-141127" id="support-ticket-141127"></a>
+
+**Issue:** CI Job deployments were failing with a **504 Gateway Timeout** error, blocking staging environment activities and causing delays in deployment pipelines.
+
+**Fix:** Optimized the CI Job execution logic by improving how API timeouts are handled. This ensures better performance and avoids timeout-related failures during large or slow deployments.
+
+**Module:** CI Jobs
+
+#### **5. Fix / Improvement** <a href="#support-ticket-140243" id="support-ticket-140243"></a>
+
+**Issue:** While running test classes in the Admin section, unrelated Apex test classes were being auto-populated.
+
+**Fix:** The auto-population logic was revised to ensure only relevant Apex classes are retrieved and saved. Unrelated classes are now excluded from test jobs.
+
+**Module:** Admin → My SF Org Management
+
+#### **6. Fix / Improvement** <a href="#support-ticket-140384" id="support-ticket-140384"></a>
+
+**Issue:** During CI Job deployments involving Search and Substitute rules, changes were not being applied to the destination org, even though the deployment was marked successful.
+
+**Fix:** Provided Fix and also Extended support to apply substitution logic to the following metadata types:\
+AutoResponseRule, CustomLabel, CustomMetadata, CustomObject, CustomSite, Dashboard, DashboardFolderShare, Network, NamedCredential, PermissionSet, Portal, Queue, RemoteSiteSetting, Report, ReportFolderShare, SamlSsoConfig, SharingCriteriaRule, SharingOwnerRule, and Workflow.
+
+**Module:** Search and Substitute
+
+#### **7. Fix / Improvement** <a href="#support-ticket-141464" id="support-ticket-141464"></a>
+
+**Issue:** When performing a destructive change (e.g., deleting a ProfileSearchLayout) and deploying via Single Revision, the system failed to identify the change correctly, expecting the metadata to be present instead.
+
+**Fix:** The Retrieve Metadata screen now correctly classifies added/modified ProfileSearchLayout changes under "ALL ITEMS" and does not falsely tag them as missing. For Non-DX Deployments and CI Jobs, ProfileSearchLayout changes now appear as constructive updates and deploy successfully.
+
+**Behavior Limitation:** If a Custom Object contains only a single ProfileSearchLayout node and that node is deleted, the change will not be picked up during deployment, as ProfileSearchLayout is not a standalone metadata type.
+
+**Module:** Deployment / CI Jobs
+
+#### **8. Fix / Improvement (Only available to a Specific Customer on a basis of Feature Flag)** <a href="#support-ticket-141999-only-available-to-a-specific-customer-on-a-basis-of-feature-flag" id="support-ticket-141999-only-available-to-a-specific-customer-on-a-basis-of-feature-flag"></a>
+
+**Issue:** ARM previously allowed the same repository to be registered using a feature flag more than once. This stopped functioning, preventing customers from using multiple configurations for the same repo.
+
+**Fix:** Reinstated support for duplicate repository registration via the feature flag:\
+`SKIP_DUPLICATE_REPOSITORY_REGISTRATION_CHECK`\
+When enabled, this flag allows users to register the same repository multiple times.
+
+**Module:** Admin
+
 ## Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
 
 **Release date: 1 June 2025**

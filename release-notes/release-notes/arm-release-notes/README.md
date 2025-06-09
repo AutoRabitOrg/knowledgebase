@@ -2,69 +2,56 @@
 
 ## Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
 
-**Release date: 1st June 2025**
+**Release date: 1 June 2025**
 
-#### **Overview** <a href="#overview" id="overview"></a>
+### **Overview** <a href="#overview" id="overview"></a>
 
-This release improves metadata handling, deployment type consistency, and enhances support for Vlocity and Permission Set delta deployments. Several critical fixes have been addressed across the Deployment, CI Jobs, and EZ-Commit modules to improve reliability and reduce deployment anomalies.
+This release improves metadata handling and deployment type consistency and enhances support for Vlocity and Permission Set delta deployments. Several critical fixes have been addressed across the Deployment, CI Jobs, and EZ-Commit modules to improve reliability and reduce deployment anomalies.
 
-#### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
 
-### **Fix/Improvement 1**
+#### **Fix/Improvement 1**
 
-* **Issue:**\
-  When deploying a new profile search layout for the **Case object**, the deployment unintentionally removed all other existing profile search layouts in the org, causing a loss of metadata settings for other profiles.
-* **Fix:**\
-  The logic in the deployment backend (`CustomObjectController.java`) has been **refactored**. It now compares layout differences in an **additive** manner ensuring that new layouts are added without deleting existing ones.
+* **Issue:** When deploying a new profile search layout for the **Case object**, the deployment unintentionally removed all other existing profile search layouts in the org, causing a loss of metadata settings for other profiles.
+* **Fix:** The logic in the deployment backend (`CustomObjectController.java`) has been **refactored**. It now compares layout differences in an **additive** manner, ensuring that new layouts are added without deleting existing ones.
 * **Impacted Module:** Deployment
 
-### **Fix/Improvement 2**
+#### **Fix/Improvement 2**
 
-* **Issue:**\
-  The “**Enable Delta on Permission Sets**” checkbox is designed to ensure only changed permissions are committed or deployed. While it did not work correctly for **CI Jobs**, object permissions were still getting removed even when the checkbox was enabled.
-* **Fix:**\
-  The delta behavior is now **standardized** across both CI Jobs and Deployments. A backend code fix ensures that object permissions are preserved in deployments sourced from version control (SCM), and delta logic is honored properly.
+* **Issue:** The “**Enable Delta on Permission Sets**” checkbox is designed to ensure only changed permissions are committed or deployed. While it did not work correctly for **CI Jobs**, object permissions were still getting removed even when the checkbox was enabled.
+* **Fix:** The delta behavior is now **standardized** across both CI Jobs and Deployments. A back-end code fix ensures that object permissions are preserved in deployments sourced from version control (SCM) and delta logic is honored properly.
 * **Impacted Modules:** CI Jobs, Deployment
 
-### **Fix/Improvement 3**
+#### **Fix/Improvement 3**
 
-* **Issue:**\
-  During **Vlocity SF Org-to-Org** deployments, YAML files failed to handle **Calculation Matrix fields** with comma-separated values that included spaces. This broke deployments and made the downloaded DataPacks unusable.
-* **Fix:**\
-  The YAML generation process was enhanced to support such field values. Now, comma-separated **Calculation Matrix components** are parsed and deployed correctly to the target org. YAML downloads are also displayed properly.
-* **Note:**\
-  This fix currently applies **only to Org-to-Org Vlocity deployments**. Support for Vlocity deployments via **Version Control** is under R\&D.
+* **Issue:** During **Vlocity SF Org-to-Org** deployments, YAML files failed to handle **Calculation Matrix fields** with comma-separated values that included spaces. This broke deployments and made the downloaded DataPacks unusable.
+* **Fix:** The YAML generation process was enhanced to support such field values. Now, comma-separated **Calculation Matrix components** are parsed and deployed correctly to the target org. YAML downloads are also displayed properly.
+* **Note:** This fix currently applies **only to Org-to-Org Vlocity deployments**. Support for Vlocity deployments via **Version Control** is under R\&D.
 * **Impacted Module:** Deployment (Vlocity SF Org-to-Org)
 
-### **Fix/Improvement 4**
+#### **Fix/Improvement 4**
 
-* **Issue:**\
-  While configuring **ScheduleApexClassesMonthly** templates in the **Environment Provisioning** module, all default user fields were incorrectly set to **Analytics Cloud Integration User**, regardless of what the template intended.
-* **Fix:**\
-  The backend logic for template value assignment was fixed. It now correctly pulls in the **actual default values** specified in the template configuration.
+* **Issue:** While configuring **ScheduleApexClassesMonthly** templates in the **Environment Provisioning** module, all default user fields were incorrectly set to **Analytics Cloud Integration User**, regardless of what the template intended.
+* **Fix:** The back-end logic for template value assignment was fixed. It now correctly pulls in the **actual default values** specified in the template configuration.
 * **Impacted Module:** Environment Provisioning
 
-### **Fix/Improvement 5**
+#### **Fix/Improvement 5**
 
-* **Issue:**\
-  A customer was performing a merge using a commit that contained **only destructive changes**. Even though the **"Destructive Changes"** checkbox was enabled, the merge failed during **Validate Deploy** stage.
-* **Fix:**\
-  Salesforce expects both a `postdestructivechanges.xml` and an empty `package.xml` file for validation to pass. The fix ensures that an **empty** `package.xml` **file** is now automatically added to the package folder along with destructive changes, making the validation step successful.
+* **Issue:** A customer was performing a merge using a commit that contained **only destructive changes**. Even though the **"Destructive Changes"** checkbox was enabled, the merge failed during the **Validate Deploy** stage.
+* **Fix:** Salesforce expects both a `postdestructivechanges.xml` and an empty `package.xml` file for validation to pass. The fix ensures that an **empty** `package.xml` **file** is now automatically added to the package folder, along with destructive changes, making the validation step successful.
 * **Impacted Module:** EZ-Merge with Validate Deploy
 
-### **Fix/Improvement 6**
+#### **Fix/Improvement 6**
 
-* **Issue:**\
-  While using a previously validated commit label to perform a new **EZ-Commit**, customers were unable to see the **RecordType** component under the “All Metadata Components” tab.
-* **Fix:**\
-  The component filtering logic was corrected to ensure that **RecordType** and similar metadata types are displayed when using commit templates, improving usability and completeness of the commit UI.
+* **Issue:** While using a previously validated commit label to perform a new **EZ-Commit**, customers were unable to see the **RecordType** component under the “All Metadata Components” tab.
+* **Fix:** The component filtering logic was corrected to ensure that **RecordType** and similar metadata types are displayed when using commit templates, improving usability and completeness of the commit UI.
 * **Impacted Module:** EZ-Commit
 
 ## Release Notes 25.2.6 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 25 May 2025**
 
-**Overview**
+### **Overview**
 
 This release focuses on stability, reliability, and enhanced usability across core modules like CI Jobs, EZ-Commit, and Release Management. Key improvements address long-standing issues such as CI job queue blocks, premature status transitions during aborts, metadata filtering inconsistencies, and usability fixes in user management.
 

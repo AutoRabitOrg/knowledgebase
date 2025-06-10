@@ -7,8 +7,8 @@ This article will guide you through how to run the code analysis manually using 
 To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, first make sure you have:
 
 * **Salesforce CLI** installed. Click [HERE](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm) to download the **Salesforce CLI** and its dependencies.
-* Java 17
-* Node.js 20
+* **Java 17**
+* **Node.js 20**
 
 1. To install the **CodeScan SFDX plugin, follow these steps**:
    * Use **`sfdx plugins:install sfdx-codescan-plugin`**.
@@ -49,8 +49,8 @@ Project keys differ from project to project as the **organization** and **projec
        {% endcode %}
 6.  To view a list of **parameters** and **flags** which you can use, run the following command: **`sfdx help codescan:run`**
 
-    {% code fullWidth="false" %}
-    ```actionscript
+    {% code overflow="wrap" fullWidth="false" %}
+    ```javascript
     USAGE:
 
     $ sfdx codescan:run [name=value...] [-s <string>] [-o <string>] [-k <string>] [-t <string>] [-u <string>] [-p

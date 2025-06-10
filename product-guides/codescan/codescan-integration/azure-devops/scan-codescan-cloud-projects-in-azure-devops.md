@@ -83,8 +83,8 @@ To break the builds based on the Quality Gate once this analysis has run, you ca
     >
     > **`{codescan_instance_url}:`** Your instance's URL, for example, [_https://app.codescan.io/_](https://app.codescan.io/) for **US** region, [_https://app-eu.codescan.io/_](https://app-eu.codescan.io/) for **EU** region or [_https://app-aus.codescan.io/_](https://app-aus.codescan.io/) for **AUS** region.
 
-{% code fullWidth="true" %}
-```
+{% code overflow="wrap" fullWidth="true" %}
+```javascript
  $token = [System.Text.Encoding]::UTF8.GetBytes($env:CODESCAN_TOKEN + ":")
  $base64 = [System.Convert]::ToBase64String($token)
  $basicAuth = [string]::Format("Basic {0}", $base64)

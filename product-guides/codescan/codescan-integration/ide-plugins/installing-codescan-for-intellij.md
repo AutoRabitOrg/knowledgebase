@@ -30,7 +30,7 @@ Make sure you have the following:
    * A working **SonarQube™ 9.9+ LTA** installation
    * A licensed version of **CodeScan 4.4+** plugin to get started ([more info](https://knowledgebase.autorabit.com/codescan/docs/what-is-a-codescan-license-key)) (no trial available with self-hosted/on-premises CodeScan).
 4. **JDK version 17** or above
-5. Latest available **Node.js LTS** version (v16 as of today)
+5. Latest available **Node.js 20 LTS** version
 6. Uninstall **SonarLint™** plug-ins. The CodeScan and IntelliJ plug-in will not work alongside the SonarLint™ installation.
 
 ### Install the CodeScan IntelliJ plugin <a href="#install-the-codescan-intellij-plugin" id="install-the-codescan-intellij-plugin"></a>
@@ -55,7 +55,7 @@ After successfully restarting the IntelliJ platform, you will require to configu
 <figure><img src="../../../../.gitbook/assets/image (503).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** Make sure you select the checkbox which says **"`Automatically trigger analysis`"**.
+**Note:** Make sure you select the checkbox which says **"`Automatically trigger analysis`."**
 {% endhint %}
 
 4. A new popup window opens where you need to give the **`Configuration Name`** and choose the **`Connection Type`** of your preference. Choose the first option if you are using CodeScan cloud default (_**`https://app.codescan.io`**_) instance, and second option if you are on a different CodeScan instance (other than _**`https://app.codescan.io`**_) or server. For example, if you're using the _CodeScan European_ instance with the CodeScan IntelliJ plugin, select the second option i.e., **`Connect to other CodeScan instances or server`** and enter _**https://app-eu.codescan.io**_ in the **`CodeScan URL`** section.

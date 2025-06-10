@@ -144,7 +144,7 @@ While performing a validation deployment before actually committing the changes,
 
 ### During a CI Job <a href="#during-ci-job" id="during-ci-job"></a>
 
-While carrying out the CI Job process, you can configure CodeScan to check for any bugs, code smells and security vulnerabilities.
+While carrying out the CI Job process, you can configure CodeScan to check for any bugs, code smells, and security vulnerabilities.
 
 1.  In the **Create CI Job** screen, search for the **Run Code Analysis Report** checkbox under the **Build** section.
 

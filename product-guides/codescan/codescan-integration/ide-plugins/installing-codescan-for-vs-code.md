@@ -62,7 +62,7 @@ Make sure you:
 6. Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.
 7. Install **JDK version 17** or above.
 8. Install **Java Runtime (JRE) 17** version or later.
-9. Install the latest available **Node.js LTS** version.
+9. Install the **Node.js 20 LTS** version.
 10. Uninstall the **Apex PMD** and **SonarLint™** plugins. The CodeScan and VS Code plugin will not work with SonarLint™ or Apex PMD installed.
 
 {% hint style="warning" %}
@@ -88,7 +88,7 @@ Follow the installation instructions for the CodeScan extension and bind the ext
 2. Search for **CodeScan** and click on **Install** to install the CodeScan latest extension, preferably **version 1.6.8** or above.
 3. Once installed, restart or reload VS Code to ensure it's taken effect.
 
-**Step 2: Java Runtime (JRE) 11 Installation**
+**Step 2: Java Runtime (JRE) 17 Installation**
 
 CodeScan should automatically find the JRE installed on your computer. Or you can specify the JRE path on your VS Code's **Settings** page by navigating to **VS Code Settings > Settings > Extensions > CodeScan**.
 
@@ -387,7 +387,7 @@ Under **CodeScan > Ls: Java Home** _(Not synced)_, enter the JRE path.
 You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBLEMS`** panel with a list of all current errors. If you open a file that has errors or warnings, they will be rendered inline with the text and in the overview ruler.
 
 {% hint style="info" %}
-**Note:** The VS Code displays the code issues related to bugs, vulnerabilities and code smells inside the **`PROBLEMS`** tab. No code-duplications are shown in the IDE.
+**Note:** The VS Code displays the code issues related to bugs, vulnerabilities and code smells inside the **`PROBLEMS`** tab. No code duplications are shown in the IDE.
 {% endhint %}
 
 #### Other useful debugging information <a href="#other-useful-debugging-information" id="other-useful-debugging-information"></a>

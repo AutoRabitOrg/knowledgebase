@@ -10,7 +10,7 @@ After completing this unit, you'll be able to:
 * [Compatibility with Agentforce](installing-codescan-for-vs-code.md#compatibility-with-agentforce)
 * [Troubleshooting steps if you experienced VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
 
-### Installing the CodeScan IDE Plugin version 2.0.0
+### Installing the CodeScan IDE Plugin version 2.1.0
 
 These step-by-step instructions will show you how to install the CodeScan plugin.&#x20;
 
@@ -387,7 +387,7 @@ Under **CodeScan > Ls: Java Home** _(Not synced)_, enter the JRE path.
 You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBLEMS`** panel with a list of all current errors. If you open a file that has errors or warnings, they will be rendered inline with the text and in the overview ruler.
 
 {% hint style="info" %}
-**Note:** The VS Code displays the code issues related to bugs, vulnerabilities and code smells inside the **`PROBLEMS`** tab. No code duplications are shown in the IDE.
+**Note:** The VS Code displays the code issues related to bugs, vulnerabilities, and code smells inside the **`PROBLEMS`** tab. No code duplications are shown in the IDE.
 {% endhint %}
 
 #### Other useful debugging information <a href="#other-useful-debugging-information" id="other-useful-debugging-information"></a>

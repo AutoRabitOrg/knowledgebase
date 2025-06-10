@@ -44,7 +44,7 @@ Follow these steps to reattach your project analysis:
 8. Choose your **repository**.&#x20;
 9. Make sure you select the checkbox under **Check Pull Requests**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
 
 10. Once you fill out all the details in the popup window, select **Add and Run Now**.
 11. This triggers the project analysis along with the project being added under your CodeScan organization.

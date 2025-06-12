@@ -4,6 +4,96 @@ hidden: true
 
 # Copy of Deployment Using Version Control
 
+This article describes the process of deploying the nCino data via the Salesforce ORG dataset
+
+1. Feature Deployment can be triggered in the following ways:
+   1. Click on the "Create" button to observe the options to select the "Feature Deployment" as option
+2.  Click on the "Deployment History" under the nCino tab to access the "Create feature deployment"
+
+
+
+    <figure><img src="../../../../../.gitbook/assets/1.1 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
+3.  Upon clicking on the **"Create Feature Deployment" or** selecting the **"Feature Deployment,"** a Source Type screen will appear—choose from the available options to proceed.
+
+    <figure><img src="../../../../../.gitbook/assets/2 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
+4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This section is all about deploying the nCino data using [Version Control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.

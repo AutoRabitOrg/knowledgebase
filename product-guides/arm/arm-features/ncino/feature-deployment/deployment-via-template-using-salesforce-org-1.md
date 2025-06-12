@@ -12,7 +12,7 @@ This article describes the process of deploying the nCino data via the Salesforc
 
 <figure><img src="../../../../../.gitbook/assets/1.1 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
-1. Upon clicking on the **"Create Feature Deployment" or** selecting the **"Feature Deployment,"** a Source Type screen will appear—choose from the available options to proceed.
+1. Upon clicking on the **"Create Feature Deployment" or** selecting the **"Feature Deployment,"** a Source Type screen will appear—choose "Deploy using Salesforce template" to proceed.
 
 <figure><img src="../../../../../.gitbook/assets/2 - Feature Deployment (4).png" alt=""><figcaption></figcaption></figure>
 

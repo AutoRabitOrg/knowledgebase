@@ -1,6 +1,6 @@
 # Salesforce Org Re-Authentication
 
-Once you reset your security token for your Salesforce org, you will need to reauthenticate your Salesforce org in ARM. To do so,
+Once you reset your security token for your Salesforce org, you will need to reauthenticate your Salesforce org in ARM. In order to do so,
 
 1. Go to **`Admin > SF Org Mgmt.`** page.
 2. Find your Salesforce org in the list and click **`Re-Authenticate`**.

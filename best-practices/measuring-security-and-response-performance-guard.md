@@ -64,9 +64,7 @@ By adopting these "Metrics that Matter," customers can quantify Guard’s impact
 * **Definition**: The percentage of Salesforce configurations (e.g., metadata, Apex code, sharing settings) that deviate from a secure baseline or compliance standard over a given period, as identified by Guard. &#x20;
 * **Purpose**: Measures the stability of the Salesforce environment against the constant changes from low-code development and release cycles, highlighting risks like misconfigurations that create attack vectors. &#x20;
 * **Target**: Elite performers keep CDR below 5%, while higher rates (e.g., 20%+) indicate uncontrolled drift and potential regulatory exposure. &#x20;
-* **Improvement using Guard**: Leverage Guard’s Salesforce-aware scanning to establish and enforce a secure baseline, alerting teams to unauthorized or risky changes in real time.  \
-  \
-
+* **Improvement using Guard**: Leverage Guard’s Salesforce-aware scanning to establish and enforce a secure baseline, alerting teams to unauthorized or risky changes in real time. 
 
 3. **Threat Detection Coverage (TDC)** &#x20;
 
@@ -94,9 +92,7 @@ Beyond the original eight, here are two other potential Metrics that Matter to e
 * **Definition**: The percentage of Salesforce configurations and processes that align with relevant regulatory standards (e.g., GDPR, HIPAA) as monitored by Guard. &#x20;
 * **Purpose**: Tracks the reduction of regulatory exposure, a key risk highlighted in the product info, ensuring the environment meets external requirements. &#x20;
 * **Target**: Aim for 95%+ adherence, with deviations flagged for immediate correction. &#x20;
-* **Why It Matters**: Persistent compliance control failures can lead to fines or reputational damage, and Guard’s Salesforce-specific capabilities can address this gap.  \
-  \
-
+* **Why It Matters**: Persistent compliance control failures can lead to fines or reputational damage, and Guard’s Salesforce-specific capabilities can address this gap. 
 
 2. **Security Incident Avoidance Rate (SIAR)** &#x20;
 
@@ -105,7 +101,6 @@ Beyond the original eight, here are two other potential Metrics that Matter to e
 * **Target**: High performers might achieve 80%+ avoidance, reflecting strong preemptive security. &#x20;
 * **Why It Matters**: Preventing incidents like data exfiltration is a primary goal for Salesforce security, and this metric ties directly to business outcomes. &#x20;
 
-\
 **Why These Metrics Are Unique** &#x20;
 
 Unlike DORA’s focus on software delivery speed and stability, these metrics prioritize security-specific outcomes in Salesforce: &#x20;
@@ -114,7 +109,6 @@ Unlike DORA’s focus on software delivery speed and stability, these metrics pr
 * **TDC** and **MEI** emphasize Guard’s ability to cover and resolve Salesforce-specific threats, shifting from DORA’s throughput/stability lens to a security efficacy lens. &#x20;
 * **CAR** and **SIAR** connect security performance to compliance and incident prevention, critical for Salesforce environments handling sensitive data. &#x20;
 
-\
 **Are There Others We Should Be Concerned With?** &#x20;
 
 Yes, depending on the customer’s priorities, additional metrics could include: &#x20;
@@ -125,4 +119,3 @@ Yes, depending on the customer’s priorities, additional metrics could include:
 
 These metrics collectively provide a robust framework for evaluating Guard’s performance in securing Salesforce environments, focusing on visibility, risk mitigation, and compliance—key areas where it outshines generic tools. Customers can tailor these based on their specific security goals, such as regulatory focus or incident prevention.&#x20;
 
-\

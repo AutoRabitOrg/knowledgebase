@@ -34,7 +34,6 @@ To establish "Metrics that Matter" for assessing a customer's performance using 
 * **Target**: Elite performers maintain a failure rate of 0-15%, while lower performers could see rates exceeding 30%, reflecting inadequate monitoring of Salesforce-specific risks. &#x20;
 * **Improvement using Guard**: Lower the rate by using Guard to enforce pre-deployment checks, monitor low-code development, and validate metadata-driven customizations against security best practices. &#x20;
 
-\
 **Why These Metrics Matter** &#x20;
 
 * **Throughput**: How quickly and frequently Guard detects vulnerabilities (Vulnerability Detection Frequency and MTTD), ensuring proactive security management in a dynamic, metadata-driven platform. &#x20;

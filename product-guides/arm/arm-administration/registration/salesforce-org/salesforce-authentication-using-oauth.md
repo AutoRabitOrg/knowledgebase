@@ -1,58 +1,57 @@
-# Salesforce Authentication using OAuth
+# Salesforce Authentication Using OAuth
 
-The **Salesforce** platform supports the **OAuth 2.0 Authorization Framework**, allowing ARM to request access to Force.com resources on your behalf. To connect ARM to a Salesforce organization, you need the organization’s **Client ID** and **Client Secret**.
+Connecting AutoRABIT (ARM) to Salesforce requires a secure handshake based on the **OAuth 2.0 Authorization Framework**.  
+By creating a **connected app** in Salesforce and supplying its **Client ID** and **Client Secret** to ARM, you grant the platform scoped access—no passwords stored, and you can revoke tokens anytime from Salesforce.
 
-{% hint style="info" %}
-**Important points**
+> **Applies to**: *self-hosted* and *dedicated-hosted* ARM deployments  
+> **Not needed for**: *shared-cloud* customers (a pre-configured connected app is already in place).
 
-* **Applies to:** self-hosted and dedicated-hosted ARM deployments  
-* **Does not apply to:** shared-cloud deployments  
-  * Shared-cloud customers use a pre-configured Salesforce connected app, so **client\_id** and **client\_secret** fields are hidden. For those environments, follow: [Adding a Salesforce Org connection via OAuth](./)
-{% endhint %}
+If you’re on shared cloud, skip the steps below and follow **Adding a Salesforce Org connection via OAuth** in the shared-cloud guide.
 
 ---
 
-#### To get the Salesforce Client\_ID and Client\_Secret values <a href="#to-get-the-salesforce-clientid-and-clientsecret-values" id="to-get-the-salesforce-clientid-and-clientsecret-values"></a>
+## Generate Client ID and Client Secret <a href="#to-get-the-salesforce-clientid-and-clientsecret-values" id="to-get-the-salesforce-clientid-and-clientsecret-values"></a>
 
-1. Log in to Salesforce as an **administrator**.  
-2. In the user menu (upper-right), select **`Setup`**.  
-3. In the left sidebar, expand **`App Setup > Create`**, then click **`Apps`**.  
-4. Under **`Connected Apps`**, click **`New`**.  
-5. In **`Basic Information`**, provide:  
-   * **Connected App Name** and **API Name** – descriptive, unique names.  
-   * **Contact Email** – your address for app notifications.  
-6. In **`API (Enable OAuth Settings)`**, select **`Enable OAuth Settings`** and enter:  
-   * **Callback URL** – `https://<ARM access URL>/oauth/_callback`  
+1. **Log in to Salesforce** with an **administrator** account.  
+2. Click **Setup** (gear icon, upper-right).  
+3. In the sidebar: **App Setup › Create › Apps**.  
+4. Under **Connected Apps**, click **New**.  
+5. In **Basic Information** fill:  
+   * **Connected App Name** / **API Name** – something like `AutoRABIT OAuth`.  
+   * **Contact Email** – your admin address.  
+6. In **API (Enable OAuth Settings)**:  
+   * Check **Enable OAuth Settings**.  
+   * **Callback URL** – `https://<ARM_URL>/oauth/_callback`  
      *Example: `https://preview.autorabit.com/oauth/_callback`*  
-   * **Available OAuth Scopes** – add these to **Selected OAuth Scopes**:  
-     * *Access and manage your data (api)*  
-     * *Full access (full)*  
-     * *Perform requests on your behalf at any time (refresh_token, offline_access)*  
-7. Click **`Save`**.  
-8. In the **`Connected Apps`** list, find the app you just created and click **`Manage`**.  
-   * Click **`Edit`**.  
-   * Under **`OAuth Policies`**, set **`Permitted Users`** to **All users may self-authorize**, then click **`Save`**.  
-9. Return to **`Connected Apps`** and click the app name again.  
-10. In **`API (Enable OAuth Settings)`**:  
-    * Copy **`Consumer Key`** – this is your **client\_id**.  
-    * Click **`Click to reveal`** next to **Consumer Secret**, copy the value – this is your **client\_secret**.  
-11. During an on-premises ARM installation, open the file `rabit/org/oauth.properties` and update the values:  
+   * **Selected OAuth Scopes** – move these from *Available* to *Selected*:  
+     * **Access and manage your data (api)**  
+     * **Full access (full)**  
+     * **Perform requests on your behalf at any time (refresh_token, offline_access)**  
+7. Click **Save**.  
+8. Back in **Connected Apps**, click **Manage** next to the app, then **Edit**.  
+   * Under **OAuth Policies**, set **Permitted Users** to **All users may self-authorize**.  
+   * Click **Save**.  
+9. Open the app again; under **API (Enable OAuth Settings)** copy:  
+   * **Consumer Key** → **clientId**  
+   * Click **Click to reveal** next to **Consumer Secret** → **clientSecret**  
+10. Edit `rabit/org/oauth.properties` (on-prem ARM only) and insert:  
 
-    ```actionscript
+    ```properties
     clientId=<Consumer Key>
     clientSecret=<Consumer Secret>
-    redirecturl=<AutoRABIT application access URL>/oauth/_callback
-    hosturl=<AutoRABIT application access URL>
+    redirecturl=<ARM_URL>/oauth/_callback
+    hosturl=<ARM_URL>
     ```
 
 ---
 
-### FAQ
+## FAQ
 
-#### Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
+### Why can’t I register my Salesforce org with OAuth? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
 
-1. **Connected app blocked** – In Salesforce, ensure the *AutoRABIT* connected app is **not** marked **Blocked**.  
-2. **Missing permissions** – Check that the connected app has the required OAuth scopes and that the user profile can access it.  
-3. **Invalid configuration** – Confirm the redirect URL, client ID, and secret in `oauth.properties` match the values in Salesforce.  
-
-If you run ARM behind a proxy and see **“Username may not be null”**, verify the proxy credentials. A null proxy username causes this error.
+| Issue | How to Fix |
+| ----- | ---------- |
+| **Connected app is blocked** | In Salesforce Setup › *Connected Apps OAuth Usage*, ensure the AutoRABIT app status is **Not Blocked**. |
+| **Missing scopes or profile access** | Verify the three scopes listed above are still selected and the user profile has **Connected App Access**. |
+| **Mismatched credentials** | Double-check `clientId`, `clientSecret`, and `redirecturl` in `oauth.properties`. |
+| **Proxy error: “Username may not be null”** | If ARM sits behind a proxy, ensure the proxy username/password are set; null values trigger this error. |

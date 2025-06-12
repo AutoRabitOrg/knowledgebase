@@ -1,6 +1,6 @@
-# Salesforce API version
+# Salesforce API Version
 
-ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API version 63**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 63.
+ARM's ability to support Salesforce standard and custom objects is determined by the Salesforce API version used. ARM now supports **Salesforce API version 64**, which means it can support any Salesforce standard or custom object that requires Salesforce API version 64.
 
 **Troubleshooting:**
 
@@ -8,14 +8,26 @@ Ensure your Salesforce API version in ARM matches the API version of the Salesfo
 
 Use case:
 
-* **API version set in ARM: 63.0**
-* **Salesforce Org API version: 63.0**
+* **API version set in ARM: 64.0**
+* **Salesforce Org API version: 64.0**
 
 To identify which Salesforce API version you are using, please refer to [Find Salesforce Edition and API version](https://help.salesforce.com/s/articleView?id=000334996\&type=1).
 
-#### Salesforce API Supported Metadata Types
+### Salesforce API Supported Metadata Types
 
 The following sections highlight the newly supported metadata types for each API version.
+
+#### **Salesforce API 64 Support**
+
+* Added support for the following new metadata types:
+  * `LightningTypeBundle` (supported for **Non-DX** only)
+  * `ExtlClntAppMobileSettings`
+  * `ExtlClntAppMobileConfigurablePolicies`
+  * `ExtlClntAppNotificationSettings`
+  * `ExtlClntAppPushSettings`
+  * `ExtlClntAppPushConfigurablePolicies`
+
+
 
 Metadata types added as part of the **API 61** upgrade:
 

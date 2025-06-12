@@ -1,6 +1,6 @@
 # Static Code Analysis in CI-CD
 
-Static code analysis (SCA) lets you catch bugs, security risks, and “code smells” before code is compiled or deployed. This guide shows how to configure and run SCA tools in ARM so every build, commit, and deployment meets your organization’s quality standards. 
+Static code analysis (SCA) lets you catch bugs, security risks, and “code smells” before code is compiled or deployed. This guide shows how to configure and run SCA tools in ARM so every build, commit, and deployment meets your organization’s quality standards.
 
 ### 1. What is a Static Code Analysis (SCA)? <a href="#id-1-what-is-a-static-code-analysis-sca" id="id-1-what-is-a-static-code-analysis-sca"></a>
 

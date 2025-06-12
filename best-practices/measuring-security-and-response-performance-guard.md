@@ -1,6 +1,6 @@
 # Measuring Security & Response Performance (Guard)
 
-<mark style="color:red;">Red metrics</mark> indicate the more important metrics to measure if speed and efficiency is the goal.
+<mark style="color:red;">Red metrics</mark> indicate the more important metrics to measure whether speed and efficiency are the goals.
 
 To establish "Metrics that Matter" for assessing a customer's performance using AutoRabit Guard in securing their Salesforce environment, we can draw inspiration from Google's DORA Metrics. For Guard, the goal shifts from software delivery to security performance, emphasizing the detection, prevention, and resolution of Salesforce-specific vulnerabilities and risks. I propose a set of key metrics tailored to Guard's purpose, mirroring DORA's focus on actionable, measurable outcomes that reflect both efficiency and effectiveness in securing Salesforce environments.&#x20;
 

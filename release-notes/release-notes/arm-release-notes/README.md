@@ -1,5 +1,60 @@
 # ARM Release Notes
 
+## ARM 25.2.9 Release Notes
+
+**Release Date: 15 June 2025**
+
+#### **Overview** <a href="#overview" id="overview"></a>
+
+This release introduces support for **Salesforce API 64 (Summer ‘24)** and adds compatibility for new metadata types. Key improvements include bug fixes for CI Job execution, Profile Compare deployments, permission retrieval, and DX-based destructive changes in EZ-Merge.
+
+#### **Salesforce API 64 Support** <a href="#salesforce-api-64-support" id="salesforce-api-64-support"></a>
+
+**Module:** Metadata Compatibility
+
+* Added support for the following new metadata types:
+  * `LightningTypeBundle` (supported for **Non-DX** only)
+  * `ExtlClntAppMobileSettings`
+  * `ExtlClntAppMobileConfigurablePolicies`
+  * `ExtlClntAppNotificationSettings`
+  * `ExtlClntAppPushSettings`
+  * `ExtlClntAppPushConfigurablePolicies`
+* Also validated existing metadata types (e.g., Objects, Fields, Profiles, Permission Sets) with API 64, and confirmed that they work as expected.
+
+
+
+**Issue:** Newly created **CI Jobs** were not getting triggered upon pull request creation in a specific branch. CI jobs for other branches in the same repository were functioning correctly.
+
+**Fix:** The logic was updated to properly retrieve the base branch name when fetching credentials from the database. This now ensures the correct CI job is triggered for all branches.
+
+**Module:** CI Jobs
+
+
+
+**Issue:** When updating object permissions using the Profile Compare feature, the changes appeared to reflect correctly in the UI but were not applied during deployment. The mismatch was due to inconsistent node names in the backend.
+
+**Fix:** Standardized object permission node names across the UI and backend to align with Salesforce's profile XML structure, ensuring accurate deployment of user selections.
+
+**Module:** Profile Compare
+
+
+
+**Issue:** Profiles with special characters in their names were not being retrieved properly. This was due to URL decoding and formatting that altered the original profile name, preventing matching and retrieval.
+
+**Fix:** Removed unnecessary decoding and now presents the profile name in the exact format received from Salesforce, ensuring such profiles are correctly processed.
+
+**Module:** Admin → Salesforce Settings → Profiles and Permissions
+
+#### **Internal Enhancement** <a href="#internal-enhancement" id="internal-enhancement"></a>
+
+**Issue:** Destructive changes related to static resources were not working properly for DX-format deployments in EZ-Merge.
+
+**Fix:** Destructive change logic for static resource metadata was implemented for **DX format**, making it consistent with non-DX behavior and ensuring successful validation and deployment.
+
+**Module:** EZ-Merge
+
+***
+
 ## ARM 25.2.8 Release Notes <a href="#title-text" id="title-text"></a>
 
 #### Release Date: 8 June 2025 <a href="#release-date-08th-june-2025" id="release-date-08th-june-2025"></a>

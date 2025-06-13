@@ -1,7 +1,7 @@
 # Build a Package from Salesforce
 
 {% hint style="info" %}
-The **CI JOBS** screen is best viewed at **80 %** zoom in Chrome or Firefox.
+The **CI JOBS** screen is best viewed at **80%** zoom in Chrome or Firefox.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>

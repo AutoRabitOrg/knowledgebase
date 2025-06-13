@@ -13,10 +13,10 @@ Use ARM to back up changes from your Salesforce org to your [version-control](ht
 1. Log in to ARM.
 2.  From the top navigation bar, select **`Create New > New CI Job`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1216).png" alt="Create New > New CI Job menu option"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1216).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New CI Job</p></figcaption></figure>
 3.  Click the **Backup to Version Control** tile.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
 4. Enter a descriptive **Job name**.
 5. Add a short **Description**.
 6. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.
@@ -33,7 +33,7 @@ Under **Build**, provide:
     * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.
     * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1218).png" alt="Package type selection list"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1218).png" alt="Package type selection list"><figcaption><p>Build</p></figcaption></figure>
 
 **Additional build options**
 

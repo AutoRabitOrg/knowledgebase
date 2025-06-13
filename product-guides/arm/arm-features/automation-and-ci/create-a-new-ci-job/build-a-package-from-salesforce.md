@@ -28,12 +28,12 @@ Create a package from a Salesforce org based on a **Start date** and deploy or v
 
 Under **Build**, provide:
 
-1. **Source Salesforce org** – the org to package.  
-2. **Package type** – how ARM gathers metadata:
+1. **Source Salesforce org** – The org to package.  
+2. **Package type** – How ARM gathers metadata:
 
-   * **Unpackaged mode** – retrieves metadata changed since the last ARM cycle (or since **Start date**, if set).  
-   * **Unmanaged package** – retrieves components from an unmanaged package so you can edit them.  
-   * **Managed package** – retrieves components from a managed package created in a partner dev org.
+   * **Unpackaged mode** – Retrieves metadata changed since the last ARM cycle (or since **Start date**, if set).  
+   * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.  
+   * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
    <figure><img src="../../../../../.gitbook/assets/image (1210).png" alt="Package type selection list"><figcaption>Select the package type for metadata retrieval</figcaption></figure>
 
@@ -41,32 +41,32 @@ Under **Build**, provide:
 
    <figure><img src="../../../../../.gitbook/assets/image (1211).png" alt="Additional build options panel"><figcaption>Additional build options</figcaption></figure>
 
-1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – automatically uses batch retrieval when a job approaches Salesforce limits. Specify **Batch size** (up to 10 000 items).  
-2. **Exclude installed (managed) components and changes** – skip all managed-package components.  
-   * **Exclude all manually created components** – also skip custom components in managed packages.  
-3. **Include picklist modifications** – always include picklist fields, even if Salesforce did not update the “last modified” date (source = Salesforce org only).  
-4. **Generate code coverage report** – include Apex test-coverage details.  
-5. **Run static analysis report** – run an SCA tool before the build proceeds.
+1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – Automatically uses batch retrieval when a job approaches Salesforce limits. Specify **Batch size** (up to 10 000 items).  
+2. **Exclude installed (managed) components and changes** – Skip all managed-package components.  
+   * **Exclude all manually created components** – Also skip custom components in managed packages.  
+3. **Include picklist modifications** – Always include picklist fields, even if Salesforce did not update the “last modified” date (source = Salesforce org only).  
+4. **Generate code coverage report** – Include Apex test-coverage details.  
+5. **Run static analysis report** – Run an SCA tool before the build proceeds.
 
-   * **Apex PMD / Salesforce Scanner** – choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold.
+   * **Apex PMD / Salesforce Scanner** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold.
 
      <figure><img src="../../../../../.gitbook/assets/image (1212).png" alt="Criteria configuration for Apex PMD and Salesforce Scanner"><figcaption>Criteria configuration for Apex PMD and Salesforce Scanner</figcaption></figure>
 
-   * **CodeScan / SonarQube** – choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
+   * **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
      <figure><img src="../../../../../.gitbook/assets/image (1213).png" alt="Criteria configuration for CodeScan and SonarQube"><figcaption>Criteria configuration for CodeScan and SonarQube</figcaption></figure>
 
-     * **Run on all supported metadata types** – scan every retrieved component.  
-     * **Run on newly added supported metadata types** – scan only components added in the current retrieval.
+     * **Run on all supported metadata types** – Scan every retrieved component.  
+     * **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
        <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption>Scope options for supported metadata types</figcaption></figure>
 
    For details on running **static code analysis in CI jobs**, see [this guide](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 
 6. **Additional profile packaging options**  
-   * **Remove login IP ranges** – omit IP-range settings from profiles.  
-   * **Remove system and user permissions** – omit profile permissions from deployment.  
-7. **Exclude metadata types** – globally omit specific metadata types from all CI jobs.
+   * **Remove login IP ranges** – Omit IP-range settings from profiles.  
+   * **Remove system and user permissions** – Omit profile permissions from deployment.  
+7. **Exclude metadata types** – Globally omit specific metadata types from all CI jobs.
 
 {% hint style="info" %}
 To set global exclusions, open **My Account > My Salesforce Settings**, select **Exclude metadata types**, and choose the types to skip. These settings apply to all future CI jobs.
@@ -82,11 +82,16 @@ Send success or failure emails to selected recipients.
 
 Run the job automatically:
 
-* **Daily** – run every day at the chosen time or interval.  
-* **Weekly** – run on selected day(s) and time.  
-* **No schedule** – save the job and run it manually when needed.
+* **Daily** – Run every day at the chosen time or interval.  
+* **Weekly** – Run on selected day(s) and time.  
+* **No schedule** – Save the job and run it manually when needed.
 
 For credential-usage details across CI job types, see the [FAQ](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
+
+### What next? <a href="#what-next" id="what-next"></a>
+
+After saving the job, ARM redirects you to the [CI job results](../ci-job-history.md) page, where you can start the first build.
+
 
 ### What next? <a href="#what-next" id="what-next"></a>
 

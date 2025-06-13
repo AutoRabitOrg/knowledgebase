@@ -1,7 +1,7 @@
 # Build a package from Version Control
 
 {% hint style="info" %}
-The **CI JOBS** screen is best viewed when the zoom is set to **80 %** on your Chrome/Firefox browser.
+The **CI JOBS** screen is best viewed when the zoom is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
 ## Overview <a href="#overview" id="overview"></a>

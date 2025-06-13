@@ -5,28 +5,28 @@ When you create an analysis project from Salesforce, the org or sandbox you auth
 1. Select your Salesforce project from the **My Projects** screen.
 2. Go to the **More** tab and select **Project Analysis** from the dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **Edit Project**.
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Click on![](<../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)button to add a new branch.
 
-<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
 
 5.  Assign a name to your branch and choose the branch type:
 
     * **Comparison Branch**- This branch determines only the recent issues in a project branch based on comparing with the standard branch in your project.
     * **Standard Branch**- This branch will have your project's entire history and dashboards.
 
-    <figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="482"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="482"><figcaption></figcaption></figure>
 6. Select your Salesforce environment.
 7. Once you click on **Authorize**, it will redirect you to the Salesforce login page to validate your credentials.
 8. This triggers the project analysis and the project being added under your CodeScan organization.
 9. You'll be redirected to the **Project Analysis** screen, where you can view the status of your triggered analysis.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Features of a comparison branch <a href="#features-of-a-comparison-branch" id="features-of-a-comparison-branch"></a>
 
@@ -49,8 +49,8 @@ The comparison branches feature is enabled automatically when you:
 * create new comparison branch via CodeScan user interface inside project with Salesforce as the integration type or,
 * run sonar-scanner or CodeScan SFDX utility with these two new scanner properties:
 
-> \-Dsonar.comparison.branch=...\
-> \-Dsonar.comparison.base=...
+> -Dsonar.comparison.branch=...\
+> -Dsonar.comparison.base=...
 
 Another way is via _Autorabit-CodeScan_ integration.
 

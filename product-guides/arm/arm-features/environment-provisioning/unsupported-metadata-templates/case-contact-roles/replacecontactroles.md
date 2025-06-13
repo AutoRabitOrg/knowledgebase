@@ -13,14 +13,14 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8.  On the next screen, you will find a **Test case name** appear automatically by default. To add the custom test data, click on **Add** button. You will have the following options to check:
 
-    * Click on![](<../../../../../../.gitbook/assets/image (42) (1).png>)icon.
+    * Click on![](<../../../../../../.gitbook/assets/image (42) (1) (1).png>)icon.
     * **Exact Value**: Enter the existing picklist value to be fetched
     * **Select Value:** Enter the new picklist value to be changed
     * **Blank Values:** If selected, it will replace all the blank values from the ‘**Exact Value**’ field. Make sure to keep the ‘Exact Value’ field blank when using this option.
     * You can even add multiple values for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
     * Click **OK**. Once you are finished, click on **Save** to save this page.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (43) (1) (1).png" alt=""><figcaption></figcaption></figure>
 9. Next, Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](../../) **History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

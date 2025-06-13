@@ -28,7 +28,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
    * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (69) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) icon under the **`Actions`** tab.
 4. To initiate a new backup, click on **`Backup Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -49,7 +49,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
 
 For each backup performed inside Vault, you will find the details below on the **`Backup Summary`** screen.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ i. The following “Selecting this option will download the actual files from th
 
 ii. On selecting “Download Files”, based on the size of the file, the progress icon will be displayed in the place of download option.
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 iii. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
 
@@ -115,9 +115,9 @@ b. Download Files
 
 Note:- Refer the third point for “Download CSV” & “Download Files” functionality
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Once “Download Files” is initiated, the progress of the files download is depicted through the progress icon. Following screenshot is for reference.
 8. On hovering over the in-progress download, the count(downloaded files/total files count) of files can be observed.

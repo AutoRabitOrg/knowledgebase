@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
 
-<figure><img src="../../../../../../.gitbook/assets/image (54) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (54) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/image (55) (1).png" alt=""><figcaption></figcaption></figure>
 

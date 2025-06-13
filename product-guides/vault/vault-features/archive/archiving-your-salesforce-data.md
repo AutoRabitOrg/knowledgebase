@@ -11,14 +11,14 @@
 4. Navigate to the **Configs** tab.
 5.  Click on **Add Archive Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
 6.  Select the components that you need to archive on the next screen.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
 7.  Using **Filters,** you can define the criteria for which the records will get fetched. For example, you can define criteria to fetch **AccountBrand** records that are older than _1,000 days_ and _field Id_ is not empty.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
 
 Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. To easily identify the objects for which the filter is applied, the filter icon is highlighted.
 
@@ -38,7 +38,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 9.  Once done, click **Save** to close the hierarchy-schema screen. Similar to **filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 10. Click **Next.** On the next screen, do the following:
     * Give the process a **name**.
     * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.
@@ -94,10 +94,10 @@ Validate your query to see whether the criteria set is correct and view the numb
 5. &#x20;As soon as "Download Files" is initiated:
    1.  A message will be displayed. Click "Ok" to continue.
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (2).png" alt=""><figcaption><p>User Message</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>User Message</p></figcaption></figure>
    2.  The download progress can be observed with the progress bar that replaces the “Download” button.
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>Download</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (2).png" alt=""><figcaption><p>Download</p></figcaption></figure>
    3. Once the download is completed, an email based on the actual state of the download will be triggered to the registered emails in Vault.
    4. For downloading individual files, click on the download icon under the "Download Files" column.
 

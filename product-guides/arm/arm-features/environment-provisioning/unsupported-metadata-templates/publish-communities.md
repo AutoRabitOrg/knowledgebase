@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you'll need to add a site name for the auto-generated or your custom test case name. To add the site name, do the following:
-   * Click on![](<../../../../../.gitbook/assets/image (32).png>)icon.
+   * Click on![](<../../../../../.gitbook/assets/image (32) (1).png>)icon.
    * Enter the name of site in the **Site Name** field.&#x20;
    * You can even add multiple sites for the above-generated test case name. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
    * Click **OK**. Once you are finished, click **Save** to save this page.

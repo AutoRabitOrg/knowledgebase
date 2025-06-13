@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. A **Test case name** and **Values** appear automatically on the next screen by default. To add the custom test data, click on **Add** button.&#x20;
 9. If you want to create a new recorder list for the auto-generated or custom test case, you can do so. Do the following to create a new recorder list:
-   * Click on![](<../../../../../../.gitbook/assets/image (31) (1).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (31) (1) (1).png>)icon.
    * Enter the name of the new recorder in the **Reorder List** field.&#x20;
    * You can even add multiple reorder lists for the above-generated test case. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
    * Click **OK**. Once done, click **Save** to save this page.

@@ -34,14 +34,14 @@ Email notifications are triggered for each revert commit along with the summary 
 
 **Revert Commits Conflicts**
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Conflicts in Revert Commit <a href="#conflicts-in-revert-commit" id="conflicts-in-revert-commit"></a>
 
 The revert feature will revert the changes of a given commit, and it will compare your current state with the PARENT of that commit whose changes you are reverting. If the current state and that parent conflict, you will get a revert commit status as **Merge Conflict**. In this case, you must first resolve the conflict (using the **Resolve Conflict** button) before proceeding with the reverting of your commits.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The next screen is the **Resolve Conflicts** screen, where you can see the files that are in conflict on the left side under the Conflicted Files section. Either you can download the conflict files in your local system, resolve them and upload them again and proceed with the commit or you can use the AutoRABIT inline editor to resolve the conflicted files. [Merge Conflicts](ez-merge/merge-conflicts.md).
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

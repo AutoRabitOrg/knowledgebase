@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you must add a footer name for the auto-generated or custom test case name. To add the footer name, do the following:
-   * Click on![](<../../../../../../.gitbook/assets/image (50) (1).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (50) (1) (1).png>)icon.
    * Enter the footer name you wish to delete in the **Delete Footers** field.
    * To add multiple footer details for the above-generated test case, click the **+** symbol and fill in the appropriate fields.
    * Click **OK**. Once you are finished, click **Save** to save this page.

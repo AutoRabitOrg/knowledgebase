@@ -50,15 +50,15 @@ Before configuring SSO in Entra ID, you must enable SSO in CodeScan.
 5. Enter the name of the app as **`CODESCAN`** and choose the third option i.e., **`Integrate any other application you don't find in the gallery (Non-gallery)`**. Click **`Create`**.
 6. Once the CodeScan application is created, click on **`Single Sign-On`** under the **`Manage`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="285"><figcaption></figcaption></figure>
 
 7. On the **`Select a Single Sign-On method`** dialog, select **`SAML`** mode to enable single sign-on.
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. On the **`Set up Single Sign-On with SAML`** page, click the **`Edit (pencil)`** icon for **`Basic SAML Configuration`** to edit the settings.
 
-<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 9. On the **`Basic SAML Configuration`** section, perform the following steps:
    * In the **`Identifier (Entity ID)`** field, enter the **`connection_id`** in this field.&#x20;
@@ -74,11 +74,11 @@ Your _connection\_id_ will be available in the **`Metadata URL`** generated insi
 10. Click the **`Edit (pencil)`** icon for **`Attributes & Claims`** to edit the attributes settings.
 11. On the **`Attributes & Claims`** section, delete the auto-generated claims available in the **`Additional claims`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 12. Next, click on **`+ Add New Claim`**.
 
-<figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 13. In the **`Manage Claim`** page, fill in the below details:
 
@@ -94,7 +94,7 @@ Your _connection\_id_ will be available in the **`Metadata URL`** generated insi
 | saml\_username | Attribute | user.mail        |
 | saml\_name     | Attribute | user.displayname |
 
-<figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 16. Close the dialog box and navigate to **`Users and groups`** section. Click on **`+ Add user/group`** button to assign users and groups to app-roles for the CodeScan application.
 17. Click on **`Single sign-on`** to navigate back to the **`Set up Single Sign-On with SAML`** page.
@@ -116,15 +116,15 @@ Now that your Azure SSO implementation is set up, you’ll need to follow just a
 
     * **`Provider Entity Id`**: Copy the **entityID** value from the _Federation Metadata XML certificate_ and paste it into **`Provider Entity Id`** inside CodeScan.
 
-    <figure><img src="../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **`Sign In URL`**: Copy the **SingleSignOnService Location** value and paste it into the **`Sign In URL`** inside CodeScan.
 
-    <figure><img src="../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Open the **Certificate (Base64)** that you have downloaded from Azure in your Notepad++, copy the entire content and paste into the **`X509 Signing Certificate`** field of the CodeScan SAML connection.
 
-    <figure><img src="../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
 4. Click **`Update`** on the CodeScan page.
 5. The next step is to confirm your corporate domain to get the SSO working. You can confirm your domain by submitting a request to [CodeScan Support](https://mailto:support@autorabit.com/).
 

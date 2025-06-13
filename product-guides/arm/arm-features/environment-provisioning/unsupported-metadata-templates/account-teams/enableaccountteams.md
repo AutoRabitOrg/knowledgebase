@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following:
-   * Click on![](<../../../../../../.gitbook/assets/image (27) (1) (1).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (27) (1) (1) (1).png>)icon.
    * Enter the page layout name in the **Page Layout** field.&#x20;
    * Activate the page layout by selecting the **Active** checkbox.&#x20;
    * You can even add multiple page layout for the above-generated test case name. Click on the **+** symbol beside **Active** and fill in the fields as mentioned in the steps earlier.&#x20;

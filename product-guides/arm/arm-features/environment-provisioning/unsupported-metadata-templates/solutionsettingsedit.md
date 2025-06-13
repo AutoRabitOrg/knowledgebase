@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** that appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you must add a **Solution Settings** field for the auto-generated or your custom test case. To add, do the following:
-   * Click on![](<../../../../../.gitbook/assets/image (53).png>)icon.
+   * Click on![](<../../../../../.gitbook/assets/image (53) (1).png>)icon.
    * Enter the setting name in the **Solution Setting Name** field.&#x20;
    * Activate the page layout by selecting the **Active** checkbox.&#x20;
    * You can even add multiple page layouts for the above-generated test case name. Click on the **+** symbol beside **Active** and fill in the fields mentioned in the earlier steps.&#x20;

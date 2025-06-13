@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, You'll need to add values to the auto-generated or custom test cases. To add the new values which you want to replace, follow these steps:
-   * Click on![](<../../../../../../.gitbook/assets/image (32) (1).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (32) (1) (1).png>)icon.
    * **Value Changing From:** Enter the existing picklist value to be fetched.
    * **Value Changing To:** Enter the new picklist value to be changed.
    * **All Blank Values:** If selected, it will replace all the blank values from the ‘**Value Changing From**’ field. When using this option, make sure the ‘**Value Changing From**' field is left blank.

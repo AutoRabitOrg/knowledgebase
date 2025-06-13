@@ -65,7 +65,7 @@ Branching Baseline is one of the first steps in seeding the master branch. ARM h
 
 Seeding a master repository within ARM is possible for both Salesforce and Vlocity metadata as displayed below:
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="507"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="507"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="511"><figcaption></figcaption></figure>
 

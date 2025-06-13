@@ -35,7 +35,7 @@ To automate testing from AutoRABIT, in a CI Job you can add a Callout URL that c
 
 1. Obtain an API key (this is only available on Pro accounts). _Immediately copy this key, it is only visible when it is generated._&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>API Keys Library</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>API Keys Library</p></figcaption></figure>
 
 2. Go to the [Testim.io Public API](https://editor.swagger.io/?url=https://raw.githubusercontent.com/testimio/public-openapi/main/api.yaml) in Swagger and choose the type of remote execution API call for test execution; Test, Test Plan, Test Suite, or Test Label. Copy the JSON payload.&#x20;
 
@@ -58,7 +58,7 @@ To automate testing from AutoRABIT, in a CI Job you can add a Callout URL that c
     1. “grid” : “string” replace “string” with the name of one of your grids, found in the Grids section of your profile in the top right of Testim Salesforce.
     2. “branch” : “master” replace “master” with the name of the branch that points to the Salesforce environment that the tests will be executed against.
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
 6. &#x20;Save the CI Job. Whenever the CI Job runs, the Callout URL will trigger the execution of tests in Testim Salesforce. Log in to Testim Salesforce to view the results.&#x20;
 
 ### Conclusion&#x20;

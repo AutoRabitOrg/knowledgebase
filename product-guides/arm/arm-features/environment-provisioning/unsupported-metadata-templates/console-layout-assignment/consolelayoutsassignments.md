@@ -10,7 +10,7 @@ To create this template, follow the below steps:
 6. Select the **ConsoleLayoutsAssignments** checkbox available under **Console Layouts assignment.**
 7. Click **Add**.
 8. On the next screen, you will find a **Test case name** that appears automatically by default. To add the custom test data, click on **Add** button. You will have the following options to check:
-9. Click on![](<../../../../../../.gitbook/assets/image (49) (1).png>)icon to add the below details:
+9. Click on![](<../../../../../../.gitbook/assets/image (49) (1) (1).png>)icon to add the below details:
    * **Profile Name**: In this field, enter the Profile Name.
    * **Active:** If you want the profile name visible, check the **Active** checkbox.
    * **Case Access:** Enter the case access and if it is required.

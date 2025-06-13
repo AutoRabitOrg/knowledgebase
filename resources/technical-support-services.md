@@ -29,7 +29,7 @@ AutoRABIT offers various methods for requesting assistance or reporting issues:
 
 1. **Existing Tickets:** On the [_Support Portal_](https://support.autorabit.com/portal/en/home) page, you’ll find access to existing tickets. If you have an open ticket, you can view its status here.
 
-<figure><img src="../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Create a New Ticket:** To create a new ticket, click on the “Add Ticket” button. Provide relevant details about your issue, and our team will assist you promptly.&#x20;
 

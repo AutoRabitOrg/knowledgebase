@@ -12,15 +12,15 @@ The **Feature Deployment History** lists every deployment you have previously ru
 
 You can visit **ncino > Deployment History** to view the Feature Deployment summary page or you'll be auto-redirected to this page whenever you trigger a deployment (using Feature Deployment).
 
-<figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 By default, the jobs are listed in reverse chronological order; that is, the most recent job shows up first. Deployment history is shared amongst team members in AutoRABIT, so you may see deployments performed by other members of your team.&#x20;
 
 **My Deployments** tab lists all of the deployment operations you have performed. The **Others** tab will list all other deployments made in AutoRABIT by your team.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Navigating Feature Deployment History <a href="#navigating-feature-deployment-history" id="navigating-feature-deployment-history"></a>
 
@@ -41,15 +41,15 @@ For each deployment, the following information is displayed:
 
 You can search for items in your history using the search box in the top right of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
 
 You can view all deployments (default), or only successful, failed, partially failed, in-progress or timeout deployments, or filter results by deployment label, feature name, the owner who carried out the deployment, or between to/fro dates.
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1).png" alt="" width="381"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1).png" alt="" width="381"><figcaption></figcaption></figure>
 
 To filter the deployment via **Feature Name**, you will have the versions list auto-populated to fetch the exact result.
 
-<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
 
 ### Data Retrieval Workspace <a href="#data-retrieval-workspace" id="data-retrieval-workspace"></a>
 
@@ -60,7 +60,7 @@ Applicable only if the deployment is carried via:
 1. Template using [Version Control](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/)
 2. Version Control using Salesforce Org
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -53,10 +53,10 @@ There are no new features associated with this release.
    Verified the new LWC rule (API Version Is Too Old) for these scenarios:
    *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule:
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed:
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed:
 
        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -116,10 +116,10 @@ If both rules are active, check the violations that were reported and disable on
 
     1.  Rule is throwing a violation if isAccessible is not checked for the objects used in the inner query:
 
-        <figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
 
-        <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
     **REMINDER**: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
     \
@@ -136,13 +136,13 @@ If both rules are active, check the violations that were reported and disable on
     \
     Also, the text in the “Branches” menu did not reflect the branch retention length change:
 
-    <figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
     Verified the Retention Period fix for the following scenarios:
 
     1.  In the UI, users are able to set **Delete inactive branches and PRs after** value:
 
-        <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.\
 
 
@@ -839,7 +839,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Detail**: Removing inactive UNMANAGED workflow rules will streamline workflow processes, reduce confusion among users, and improve system performance. This action leads to a cleaner and more efficient Salesforce instance. Further, removing inactive UNMANAGED workflow rules helps declutter the Salesforce environment, making it easier for administrators and users to navigate and manage active workflows effectively.
 
-<div align="left" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 

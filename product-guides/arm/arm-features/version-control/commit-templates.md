@@ -12,7 +12,7 @@ To create a fresh commit template:
 2. Click **Create New > New Commit Template** from the top navigation bar or hover your mouse over the **Version Control** tab and select **Commit Templates**.&#x20;
 3. Click on **New Commit Template**. The **Commit Templates** screen is best viewed when the zoom setting is set to **75%** on your chrome/firefox browser.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Give the template a **Label Name**.&#x20;
 5. Choose the **Source Org**. All available metadata will be fetched based on the source org selection.
@@ -36,7 +36,7 @@ To create a fresh commit template:
 12. Finally, click on **Save Template**.&#x20;
 13. You'll be redirected to the **Commit Templates Summary** page after confirmation, where you'll see your freshly created commit template at the top of the list.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For each commit template, you can find the below details:
 
@@ -56,7 +56,7 @@ You can search for commit templates within a particular **salesforce organizatio
 
 It is also possible to search for templates based on the **content**. To filter the exact result, you need to enter the commit template label or title in the search field.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's always a good idea to break data into multiple pages when dealing with multiple templates records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
 

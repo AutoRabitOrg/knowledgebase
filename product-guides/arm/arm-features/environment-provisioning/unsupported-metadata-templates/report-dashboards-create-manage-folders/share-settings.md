@@ -12,7 +12,7 @@ To create this template, follow the below steps:
 8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button and give a name to them.&#x20;
 9. Enter the required details in the below fields. To save this page, click the **Save** button.
 
-<figure><img src="../../../../../../.gitbook/assets/image (33).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (33) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. Next, Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.

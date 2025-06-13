@@ -89,7 +89,7 @@ The CodeScan login screen allows you to log in to your instance.
 8.  The **`Policy Results`** page is also accessible via the **`More`** menu.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1586).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Policy DC1.0.png" alt=""><figcaption></figcaption></figure>
 
 ### Getting Started with CodeScan Cloud <a href="#getting-started-with-codescan-cloud" id="getting-started-with-codescan-cloud"></a>
 

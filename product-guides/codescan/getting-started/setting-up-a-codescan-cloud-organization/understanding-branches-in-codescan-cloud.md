@@ -25,7 +25,7 @@ When a pull request is created in a VSTS repository or a repository tracked by y
 
 On your **Project Analysis** page, go to **Project Setting > Branches and Pull requests**. This page allows users to delete any new branches and also change the branch that the Analysis Project is checking.
 
-<figure><img src="../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/P Branch 4.4.png" alt=""><figcaption></figcaption></figure>
 
 * **Delete Branch**: To delete a branch, click the (![](<../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
 

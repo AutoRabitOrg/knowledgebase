@@ -1,5 +1,29 @@
 # Release Notes 25.0
 
+## Vault Release Notes 25.1.1
+
+**Release Date: 18 June 2025**
+
+#### **Backup Optimization** <a href="#backup-optimization" id="backup-optimization"></a>
+
+Streamlined the object processing logic within the backup module to improve performance and reliability.
+
+#### **Dynamic Pagination for Replication Config** <a href="#dynamic-pagination-for-replication-config" id="dynamic-pagination-for-replication-config"></a>
+
+Introduced dynamic pagination during replication config creation, ensuring better scalability and responsiveness.
+
+#### **Improved Alert Search** <a href="#improved-alert-search" id="improved-alert-search"></a>
+
+Optimized the search functionality in the Alerts section for quicker results and enhanced user experience.
+
+#### **Accurate Backup Duration Calculation** <a href="#accurate-backup-duration-calculation" id="accurate-backup-duration-calculation"></a>
+
+Fixed an issue to ensure backup durations are now calculated and displayed correctly across all jobs.
+
+#### **Enhanced Replication Logging** <a href="#enhanced-replication-logging" id="enhanced-replication-logging"></a>
+
+Deployed additional logging to capture detailed insights into delays caused by Salesforce response times.
+
 ## Vault Release Notes 25.1
 
 **Release Date: 04 June 2025**

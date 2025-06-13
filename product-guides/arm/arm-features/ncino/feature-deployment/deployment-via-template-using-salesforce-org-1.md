@@ -20,11 +20,11 @@ This article describes the process of deploying the nCino data via the Salesforc
 
 <figure><img src="../../../../../.gitbook/assets/3 - Feature Deployment (1).png" alt=""><figcaption></figcaption></figure>
 
-3. The following fields are available on the screen to from:
+3. The following fields are available on the screen to input the data:
    1. **Label name:** Input label name of the deployment here
    2. **Description:** Enter a description that suits the deployment
    3. **Source ORG:** Select the source ORG
-   4. **Feature Type:** Select the feature type from the available list. Following are the available values
+   4. **Feature Type:** Select the feature type from the available list. The following are the available values
       1. Standard
       2. Community
    5. **Feature:** Select the required feature&#x20;

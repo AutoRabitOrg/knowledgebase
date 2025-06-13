@@ -16,9 +16,18 @@ This article describes the process of deploying the nCino data via the Salesforc
 3.  Upon clicking on the **"Create Feature Deployment" or** selecting the **"Feature Deployment,"** a Source Type screen will appear—choose from the available options to proceed.
 
     <figure><img src="../../../../../.gitbook/assets/2 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
-4.
+4.  Continue to input the fields on the screen with the required inputs
 
-
+    <figure><img src="../../../../../.gitbook/assets/3 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
+5. The following fields are available on the screen to from:
+   1. **Label name:** Input label name of the deployment here
+   2. **Description:** Enter a description that suits the deployment
+   3. **Source ORG:** Select the source ORG
+   4. **Feature Type:** Select the feature type from the available list. Following are the available values
+      1. Standard
+      2. Community
+   5. **Feature:** Select the required feature&#x20;
+   6. Version: Select the version based on the feature selection.
 
 
 

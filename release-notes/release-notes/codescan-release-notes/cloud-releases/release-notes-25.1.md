@@ -161,9 +161,7 @@ We validated the fix by:
 
 Historically, CodeScan has deprecated rules over time.  However, we recognize that we can be clearer about why the rule is being deprecated.  In this release, we have initiated this practice (and plan to adhere to this practice in the future).
 
-&#x20;
 
-Top of Form
 
 **1.Update the description of deprecated Apex Rule “Use System.assertEquals instead of System.assert“ and key”sf:UseAssertEqualsInsteadOfAssertEquality” with the following:**
 
@@ -272,8 +270,6 @@ _NOTE: The implementation currently addresses the most common scenarios related 
 
 &#x20;
 
-Top of Form
-
 Prior to this new rule, CodeScan did not catch resource injection in Apex.
 
 This is very similar to [our new rule  “Server Side Request Forgery”](https://autorabit.atlassian.net/browse/CD-6437) (also included in this release)
@@ -342,8 +338,6 @@ Name: sanitizationMethod\
 Description: A comma separated list of custom methods that provide input sanitization.
 
 CWE: 99
-
-Bottom of Form
 
 Verified the below scenarios are all working as expected
 

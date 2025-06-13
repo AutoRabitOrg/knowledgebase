@@ -1,6 +1,6 @@
 # Release Notes 25.2
 
-## nCino + DL - Release 25.2.9 <a href="#title-text" id="title-text"></a>
+### nCino + DL - Release 25.2.9 Release Notes <a href="#title-text" id="title-text"></a>
 
 **Release Date:** 15 June 2025
 

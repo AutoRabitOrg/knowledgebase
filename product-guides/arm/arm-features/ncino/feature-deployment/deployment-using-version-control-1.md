@@ -106,7 +106,7 @@ Change hint typeCommentShare feedback on the editor**Important Note**: The datas
 14. **Preview**: All the configurations made during the deployment creation can be observed here, with different deployment options
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-05-09 at 8.52.09 PM.png" alt=""><figcaption></figcaption></figure>
-15. Based on your destination selection, you will have different deployment buttons to choose from:
+15. Based on your destination selection, you will have different deployment options to choose from:
     1. **Create Dataset:** Create a dataset from your Salesforce Org
     2. **Create Dataset Commit & Deploy:** Create a dataset and proceed for both commit and deployment.
 16. Clicking on ether of the deployment options available above, you will be redirected to the "Deployment History" page.

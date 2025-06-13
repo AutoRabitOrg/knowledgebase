@@ -1,93 +1,93 @@
 # Build a Package from Salesforce
 
 {% hint style="info" %}
-The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on your chrome/firefox browser.
+The **CI JOBS** screen is best viewed at **80 %** zoom in Chrome or Firefox.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Create a package from a Salesforce org based on a **"Start Date"** and deploy or validate the same package onto a different [Salesforce org](../../../arm-administration/registration/salesforce-org/). Configure the job to run functional test cases from version control.
+Create a package from a Salesforce org based on a **Start date** and deploy or validate that package in a different [Salesforce org](../../../arm-administration/registration/salesforce-org/). You can also configure the job to run functional test cases stored in version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Log in to your ARM account.
-2. From the top navigation pane, navigate to **Create New > New CI Job**.
+1. Log in to ARM.  
+2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1208).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1208).png" alt="Create New > New CI Job menu option"><figcaption>Create New ➜ New CI Job menu option</figcaption></figure>
 
-3. Choose the tile: **Package from Salesforce**
+3. Click the **Package from Salesforce** tile.
 
-<figure><img src="../../../../../.gitbook/assets/image (1209).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1209).png" alt="Package from Salesforce job tile"><figcaption>Package from Salesforce job tile</figcaption></figure>
 
-4. On the next screen, give the job a descriptive name in the **Job Name** field.
-5. Add a brief **description** of the current CI job.
-6. To group your CI job for easier identification, choose the group from the dropdown. You can create a new group using the **"+"** symbol and assign your current and further CI jobs to such a group.
-7. Here, the user interface is separated into different sections, we will cover each one of them separately.
+4. Enter a descriptive **Job name**.  
+5. Add a brief **Description**.  
+6. (Optional) Choose a **Group** to organize the job, or click **`+`** to create a new group.  
+7. The configuration page has several sections explained below.
 
 #### Build <a href="#build" id="build"></a>
 
-Under the **Build** section, fill in the below details:
+Under **Build**, provide:
 
-1. Select the source [**Salesforce org**](../../../registration/salesforce-org/salesforce-org-management.md).
-2.  Select the **Package type** to retrieve and bundle the changes from a source sandbox.
+1. **Source Salesforce org** – the org to package.  
+2. **Package type** – how ARM gathers metadata:
 
-    * **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
-    * **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a [Salesforce Org](../../../troubleshoot/best-practices/metadata-comparison-between-two-salesforce-orgs.md).
-    * **Managed packages:** Salesforce partners use these packages to distribute and sell applications to their users. These packages get created from a Developer Edition organization. For more information, refer to the link below:
+   * **Unpackaged mode** – retrieves metadata changed since the last ARM cycle (or since **Start date**, if set).  
+   * **Unmanaged package** – retrieves components from an unmanaged package so you can edit them.  
+   * **Managed package** – retrieves components from a managed package created in a partner dev org.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1210).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1210).png" alt="Package type selection list"><figcaption>Select the package type for metadata retrieval</figcaption></figure>
 
-**Additional Build options**
+##### Additional build options
 
-<figure><img src="../../../../../.gitbook/assets/image (1211).png" alt="" width="423"><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1211).png" alt="Additional build options panel"><figcaption>Additional build options</figcaption></figure>
 
-1. **Auto switch to bulk retrieve service, if job is hitting metadata retrieving governor limit:** This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 39 MB. Using Batch Size, you can process metadata in batches to stay within platform limits. If you do not have a lot of metadata, processing records through batches are your best solution. Specify the batch size for both profile and remaining components to retrieve metadata types. 10 K is the max batch size that you can set per batch.
-2. **Exclude Installed (Managed) components and changes:** This option will exclude any **Managed packages** that the user may have installed.
-   * **Exclude all manually created components:** All manually added components in the installed (managed) package will also get excluded.
-3. **Include Picklist modifications:** Whenever a picklist value gets altered or deleted, SF will not update the picklist's last altered date. Whether the picklist value gets altered or not, it will pull all the picklist fields into the source org. This option is available only if the source is a [Salesforce Org](deploy-a-package-from-a-salesforce-org.md).
-4. **Generate Code Coverage Report:** This option generates a code coverage report. This has info about the apex tests run, the classes covered, and the assertions that have failed.
-5. **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
+1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – automatically uses batch retrieval when a job approaches Salesforce limits. Specify **Batch size** (up to 10 000 items).  
+2. **Exclude installed (managed) components and changes** – skip all managed-package components.  
+   * **Exclude all manually created components** – also skip custom components in managed packages.  
+3. **Include picklist modifications** – always include picklist fields, even if Salesforce did not update the “last modified” date (source = Salesforce org only).  
+4. **Generate code coverage report** – include Apex test-coverage details.  
+5. **Run static analysis report** – run an SCA tool before the build proceeds.
 
-**For ApexPMD** and **Salesforce Scanner:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+   * **Apex PMD / Salesforce Scanner** – choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (1212).png" alt=""><figcaption></figcaption></figure>
+     <figure><img src="../../../../../.gitbook/assets/image (1212).png" alt="Criteria configuration for Apex PMD and Salesforce Scanner"><figcaption>Criteria configuration for Apex PMD and Salesforce Scanner</figcaption></figure>
 
-**For** [**CodeScan**](https://www.codescan.io/) and **SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+   * **CodeScan / SonarQube** – choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (1213).png" alt=""><figcaption></figcaption></figure>
+     <figure><img src="../../../../../.gitbook/assets/image (1213).png" alt="Criteria configuration for CodeScan and SonarQube"><figcaption>Criteria configuration for CodeScan and SonarQube</figcaption></figure>
 
-* **Run on all supported Metadata types:** Analysis is performed on all the supported metadata types. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
-* **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components.
+     * **Run on all supported metadata types** – scan every retrieved component.  
+     * **Run on newly added supported metadata types** – scan only components added in the current retrieval.
 
-<figure><img src="../../../../../.gitbook/assets/image (1214).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption>Scope options for supported metadata types</figcaption></figure>
 
-For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
+   For details on running **static code analysis in CI jobs**, see [this guide](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
 
-6. **Additional Profile Packaging Options:**
-   * **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
-   * **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
-7. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the **'Exclude Metadata Types'** checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.
+6. **Additional profile packaging options**  
+   * **Remove login IP ranges** – omit IP-range settings from profiles.  
+   * **Remove system and user permissions** – omit profile permissions from deployment.  
+7. **Exclude metadata types** – globally omit specific metadata types from all CI jobs.
 
 {% hint style="info" %}
-**Important Note**: To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account**](../../../arm-administration/user-management/manage-users-account-settings.md) page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+To set global exclusions, open **My Account > My Salesforce Settings**, select **Exclude metadata types**, and choose the types to skip. These settings apply to all future CI jobs.
 {% endhint %}
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
-Send email notifications to selected users email on the success or failure of a build.
+Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1215).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1215).png" alt="Notification recipient list"><figcaption>Select notification recipients for build status</figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 
-Allows you to schedule the process at which it must run.
+Run the job automatically:
 
-1. **Daily:** The process will run every day at the scheduled time or time interval set.
-2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
-3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
+* **Daily** – run every day at the chosen time or interval.  
+* **Weekly** – run on selected day(s) and time.  
+* **No schedule** – save the job and run it manually when needed.
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
+For credential-usage details across CI job types, see the [FAQ](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
 
-### What Next? <a href="#what-next" id="what-next"></a>
+### What next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../ci-job-history.md) page where you can trigger a build for your CI job.
+After saving the job, ARM redirects you to the [CI job results](../ci-job-history.md) page, where you can start the first build.

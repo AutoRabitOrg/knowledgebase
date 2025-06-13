@@ -1,5 +1,25 @@
 # Release Notes 25.2
 
+## nCino + DL - Release 25.2.9 <a href="#title-text" id="title-text"></a>
+
+**Release Date:** 15 June 2025
+
+**DL Job Execution Stability**
+
+A fix has been implemented to ensure that DL job executions complete without errors, improving overall job reliability and system stability.
+
+#### Post-Deployment Status Tracking <a href="#post-deployment-status-tracking" id="post-deployment-status-tracking"></a>
+
+Enhanced the tracking mechanism to accurately reflect both **cumulative** and **individual statuses** of deployment jobs, including those targeting **post-deployment ORGs**.
+
+#### Salesforce API Upgrade <a href="#salesforce-api-upgrade" id="salesforce-api-upgrade"></a>
+
+Upgraded the Salesforce integration to use the **latest API version 64**, ensuring continued compatibility and access to the newest platform features.
+
+#### Trigger Build on Commit <a href="#trigger-build-on-commit" id="trigger-build-on-commit"></a>
+
+Resolved an issue where builds were not reliably triggered upon commit. The trigger-build-on-commit functionality now operates **seamlessly and consistently**.
+
 ### **nCino + DataLoader 25.2.8 Release Notes**
 
 **Release Date:** 08 June 2025

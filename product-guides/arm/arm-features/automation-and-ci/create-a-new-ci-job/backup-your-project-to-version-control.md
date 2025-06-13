@@ -1,104 +1,104 @@
 # Backup your project to Version Control
 
 {% hint style="info" %}
-The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on your chrome/firefox browser.
+The **CI JOBS** screen is easiest to read at **80 %** zoom in Chrome or Firefox.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Use ARM integration to back up your Salesforce org changes to your [Version Control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) System. You can further configure your job to commit changes based on your mapped Salesforce users.
+Use ARM to back up changes from your Salesforce org to your [version-control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) system. You can also map commits to specific Salesforce users.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Login to your ARM account.
-2. From the top navigation pane, navigate to **Create New > New CI Job**.
+1. Log in to ARM.  
+2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1216).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1216).png" alt="Create New > New CI Job menu option"></figure>
 
-3. Choose the tile: **Backup to Version Control**
+3. Click the **Backup to Version Control** tile.
 
-<figure><img src="../../../../../.gitbook/assets/image (1217).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"></figure>
 
-4. On the next screen, give the job a descriptive name in the **Job Name** field.
-5. Add a brief **description** of the current CI job.
-6. To group your CI job for easier identification, choose the group from the dropdown. You can create a new group using the **"+"** symbol and assign your current and further CI jobs to such a group.
-7. Here, the user interface is separated into different sections, we will cover each one of them separately.
+4. Enter a descriptive **Job name**.  
+5. Add a short **Description**.  
+6. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.  
+7. The configuration page is divided into several sections. The key sections are explained below.
 
 #### Build <a href="#build" id="build"></a>
 
-Under the **Build** section, fill in the below details:
+Under **Build**, provide:
 
-1. Select the source **Salesforce org**.
-2.  Select the **Package type** to retrieve and bundle the changes from a source sandbox.
+1. **Source Salesforce org** – the org to back up.  
+2. **Package type** – how ARM collects metadata:
 
-    * **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
-    * **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a Salesforce Org.
-    * **Managed packages:** Salesforce partners use these packages to distribute and sell applications to their users. These packages get created from a Developer Edition organization. For more information, refer to the link below:
+   * **Unpackaged mode** – retrieves metadata changed since the last ARM cycle (or since **Start date**, if specified).  
+   * **Unmanaged package** – retrieves components from an unmanaged package so you can edit them.  
+   * **Managed package** – retrieves components from a managed package created in a partner dev org.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1218).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1218).png" alt="Package type selection list"></figure>
 
-**Additional options in the Build section**
+##### Additional build options
 
-1. **Auto switch to bulk retrieve service, if job is hitting metadata retrieving governor limit:** This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 39 MB. Using Batch Size, you can process metadata in batches to stay within platform limits. If you do not have a lot of metadata, processing records through batches are your best solution. Specify the batch size for both profile and remaining components to retrieve metadata types. 10 K is the max batch size that you can set per batch.
-2. **Exclude Installed (Managed) components and changes:** This option will exclude any **Managed packages** that the user may have installed.
-   * **Exclude all manually created components:** All manually added components in the installed (managed) package will also get excluded.
-3. **Incremental Build:** Incremental builds are important for managing continuous builds for continuous delivery. Incremental Builds substantially decrease build times by avoiding the execution of previous metadata that is not needed. This will fetch all the metadata changes beyond the selected Baseline Revision till the successfully deployed revision to the destination org. On the next CI Job run, the previous Baseline Revision automatically gets changed to the successfully deployed revision. Hence, there will be a substantial increase in build time performance for large-project incremental builds when a change to a single file or a small number of files is performed.
-4. **Include Picklist modifications:** Whenever a picklist value gets altered or deleted, SF will not update the picklist's last altered date. Whether the picklist value gets altered or not, it will pull all the picklist fields into the source org. This option is available only if the source is a Salesforce Org.
-5. **Generate Code Coverage Report:** This option generates a code overage report. This has info about the apex tests run, the classes covered, and the failed assertions.
-6. **Run Static Analysis Report:** This will identify potential software quality issues before the code moves to production.
+1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – automatically switches to batch retrieval if the job exceeds Salesforce limits. Specify **Batch size** (up to 10 000 items).  
+2. **Exclude installed (managed) components and changes** – skip all managed-package components.  
+   * **Exclude all manually created components** – also skip custom components inside managed packages.  
+3. **Incremental build** – fetch only the metadata changed since the last successful deployment, greatly reducing build time.  
+4. **Include picklist modifications** – always include picklist fields, even if Salesforce did not update their “last modified” date. (Source = Salesforce org only.)  
+5. **Generate code coverage report** – include Apex test coverage details.  
+6. **Run static analysis report** – run an SCA tool before committing.
 
-**For ApexPMD** and **Checkmarx:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+   * **Apex PMD / Checkmarx** – choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-<figure><img src="../../../../../.gitbook/assets/image (1219).png" alt=""><figcaption></figcaption></figure>
+     <figure><img src="../../../../../.gitbook/assets/image (1219).png" alt="Apex PMD and Checkmarx criteria configuration"></figure>
 
-**For CodeScan** and **SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+   * **CodeScan / SonarQube** – choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (1220).png" alt=""><figcaption></figcaption></figure>
+     <figure><img src="../../../../../.gitbook/assets/image (1220).png" alt="CodeScan and SonarQube criteria configuration"></figure>
 
-* **Run on all supported Metadata types:** Analysis is performed on all the supported metadata types. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
-* **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components.
+     * **Run on all supported metadata types** – scan every retrieved component.  
+     * **Run on newly added supported metadata types** – scan only components added in the current retrieval.
 
-<figure><img src="../../../../../.gitbook/assets/image (1221).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"></figure>
 
-7. **Additional Profile Packaging Options:**
-   * **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.
-   * **Remove System and User Permissions:** System permissions control a user’s ability to perform tasks that apply to their VCS or Org. To not deploy this permission, select this option.
-8. **Exclude Metadata Types:** These exclude the metadata no longer required for build/deployment. To avoid fetching unwanted metadata types during a CI job, ensure that you have excluded them. If the 'Exclude Metadata Types' checkbox is not checked, all metadata types will get chosen. That globally excluded metadata will be auto-populated if you select this option.
+7. **Additional profile packaging options**  
+   * **Remove login IP ranges** – omit IP range settings from profiles.  
+   * **Remove system and user permissions** – omit profile permissions from deployment.  
+8. **Exclude metadata types** – globally omit specific metadata types from all CI jobs.
 
 {% hint style="info" %}
-**Important Note:** To set this option at a global level, go to the **'My Salesforce Settings'** section on the [**My Account** ](../../../arm-administration/user-management/manage-users-account-settings.md)page. Next, select the metadata types to exclude. This reflects in all CI jobs that get created henceforth and across other modules as well.
+To set global exclusions in advance, open **My Account > My Salesforce Settings**, choose **Exclude metadata types**, and select the types to skip. These settings apply to all future CI jobs.
 {% endhint %}
 
-#### Backup to Version Control (Auto Commit) <a href="#backup-to-version-control-auto-commit" id="backup-to-version-control-auto-commit"></a>
+#### Backup to Version Control (auto-commit) <a href="#backup-to-version-control-auto-commit" id="backup-to-version-control-auto-commit"></a>
 
-Auto Commit option allows you to automatically commit the required changes from your Salesforce Org to the required Version Control System.
+Enable **Auto commit** to push changes directly to your VCS:
 
-1. Choose the Version Control type (GIT, TFS, or SVN).
-2. Select your version control repository, branch, and your credential. For the repository, registered in the SFDX structure, you need to select your package directory. For more information related to the package directory, refer to the article: [SDFX metadata format](../../../salesforce-dx-metadata-format.md)
-3.  **Additional option**:
+1. Select the **Version control type** (Git, TFS, or SVN).  
+2. Choose the **Repository**, **Branch**, and **Credential**.  
+   * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../salesforce-dx-metadata-format.md).  
+3. Optional settings:  
+   * **Check out and commit with user’s credentials** – commit all changes as the selected user.  
+   * **Check out with user credentials and commit with actual modified user credentials** – preserve original authors.  
+   * **Configuration for recordTypes picklistValues** – choose *Replace*, *Replace all*, or *Append*. ([Learn more](../../../troubleshoot/how-tos/configure-record-types-picklist-values.md))
 
-    * **Check out and commit the changes with user's credentials:** If your commits are being linked to different users, however, you wish to commit the whole changes with the selected user above, select this option
-    * **Check-out with the user credentials and commit the changes with actual modified user credentials:** This option fetches all the changes from the Salesforce org and commits the changes with the actually modified user credential
-    * **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](../../../troubleshoot/how-tos/configure-record-types-picklist-values.md))
-
-    <figure><img src="../../../../../.gitbook/assets/image (1222).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../../.gitbook/assets/image (1222).png" alt="Auto-commit and credential options"></figure>
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
-Send email notifications to selected users email on the success or failure of a build.
+Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1223).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1223).png" alt="Notification recipient list"></figure>
 
-#### Schedule  <a href="#schedule" id="schedule"></a>
+#### Schedule <a href="#schedule" id="schedule"></a>
 
-Allows you to schedule the process at which it must run.
+Run the job automatically:
 
-1. **Daily:** The process will run every day at the scheduled time or time interval set.
-2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
-3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
+* **Daily** – run every day at the chosen time or interval.  
+* **Weekly** – run on selected day(s) and time.  
+* **No schedule** – save the job and run it manually when needed.
 
-For more information on **Credential Usage** for different types of CI jobs, refer [HERE](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
+For credential-usage details across CI job types, see the [FAQ](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
 
-### What Next? <a href="#what-next" id="what-next"></a>
+### What’s next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../ci-job-history.md) page where you can trigger a build for your CI job.
+After saving the job, ARM redirects you to the [CI job results](../ci-job-history.md) page, where you can start the first build.

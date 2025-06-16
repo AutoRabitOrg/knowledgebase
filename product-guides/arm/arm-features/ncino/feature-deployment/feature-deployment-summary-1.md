@@ -2,176 +2,275 @@
 hidden: true
 ---
 
-# Copy of Feature Deployment Summary
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Feature Deployment History
 
 ### Feature Deployment <a href="#feature-deployment" id="feature-deployment"></a>
 
-Feature Deployment is a deployment process that will allow you to easily deploy both metadata and data components using the feature migration template or using the dataset configured either from your Salesforce Org or Version Control.
+**Feature Deployment** is a streamlined process that enables the deployment of both **metadata** and **data components** by leveraging a **Feature Migration Template** or a **pre-configured dataset** sourced either from your **Salesforce Org** or **Version Control** system.
 
-### Feature Deployment History <a href="#feature-deployment-history" id="feature-deployment-history"></a>
+### Step-By-Step Guide:
 
-The **Feature Deployment History** lists every deployment you have previously run using [AutoRABIT](https://www.autorabit.com/). It is also where you can view detailed deployment reports or re-deploy the nCino objects to your Salesforce Org/ Version Control.
+The following flow provides detailed information about the "Feature Deployment History" page layout.&#x20;
 
-### Accessing Feature Deployment History Page <a href="#accessing-feature-deployment-history-page" id="accessing-feature-deployment-history-page"></a>
+1. The **Feature Deployment History** provides a comprehensive log of all deployments previously executed through **AutoRABIT**
+2.  Click on the **"Deployment History"** option under the "nCino" module
 
-You can visit **ncino > Deployment History** to view the Feature Deployment summary page or you'll be auto-redirected to this page whenever you trigger a deployment (using Feature Deployment).
+    <figure><img src="../../../../../.gitbook/assets/1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+3. Observe the following options available on the "Deployment History" page:
+   1. The following are the filters through which the required deployments can be searched by.
+      1.  **Deployed By**: Allows you to filter the deployment history by the user who executed the deployment.
 
-<figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          * **All** – Shows deployments by all users.
+          * **My Deployments** – Shows deployments initiated by the currently logged-in user.
+          * **Others** – Displays deployments performed by other users.
 
-By default, the jobs are listed in reverse chronological order; that is, the most recent job shows up first. Deployment history is shared amongst team members in AutoRABIT, so you may see deployments performed by other members of your team.&#x20;
+          <figure><img src="../../../../../.gitbook/assets/2 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+   2. **Label Name**: Input the lable name to search the deployments through the label names
+   3. **Status**: A dropdown to filter deployments by their execution status (e.g., Success, Failure, In Progress).
+   4.  **Filters**: The **Filters** panel allows you to refine and narrow down the list of feature deployments based on specific criteria.
 
-**My Deployments** tab lists all of the deployment operations you have performed. The **Others** tab will list all other deployments made in AutoRABIT by your team.&#x20;
+       <figure><img src="../../../../../.gitbook/assets/2.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       1.  &#x20;This is helpful in quickly locating the relevant deployments without manually scrolling through large records.
 
-<figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+           **Available Filter Options:**
 
-### Navigating Feature Deployment History <a href="#navigating-feature-deployment-history" id="navigating-feature-deployment-history"></a>
+           * **Feature Name**\
+             Enter or select the specific nCino feature (e.g., Forms, Rules Engine, User Interface) you want to filter the deployments by.
+           * **Version**\
+             Use this to filter deployments by the associated feature version (e.g., "Fall 2023 Rel - v1").
+           * **Deployed By**\
+             Specify the user who executed the deployment. This is especially useful in multi-user environments to isolate individual contributions.
+           * **Date Range**\
+             Filter deployments based on when they were executed. You can define a custom date range to focus on a specific time window (e.g., deployments completed in the last month).
 
-For each deployment, the following information is displayed:
+           **Additional Options:**
 
-1. **Deployment label**: The deployment label name. You can search for deployments by label name using the search filter in the top right of the page
-2. **Feature Name**: Feature name assigned to the deployment
-3. **Status**: Successful, Failed, Partially Failed, or In progress
-4. **Deployment Version**: Version number for the deployment
-5. **Source**: The source Salesforce Org&#x20;
-6. **Date**: The date and time of the deployment
-7. **Owner**: Which user performed the deployment
-8. **Iteration**: The number of revisions for your deployment; for dataset deployments, the iteration number will appear as _"dataset"_
-9. **Destination**: Target [salesforce org](https://knowledgebase.autorabit.com/docs/salesforce-org)
-10. **Redeploy**: Redeploy will allow you to re-trigger the deployment process again \[Refer to _**"Re-trigger the Deployment"**_ section on this page]
+           * **Reset**\
+             Clears all selected filter criteria and restores the full deployment list.
+           * **Apply**\
+             Applies the selected filters to the deployment history list and displays the results instantly.
+   5.  **Column Headers Overview**
 
-### Filtering Deployment History <a href="#filtering-deployment-history" id="filtering-deployment-history"></a>
+       The highlighted section displays the key columns in the **Deployment History** table, which provides a comprehensive view of all the feature deployments.&#x20;
 
-You can search for items in your history using the search box in the top right of the page.
+       <figure><img src="../../../../../.gitbook/assets/3 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
 
-You can view all deployments (default), or only successful, failed, partially failed, in-progress or timeout deployments, or filter results by deployment label, feature name, the owner who carried out the deployment, or between to/fro dates.
+   6. Here's what each column represents:
+      1.  **Deployment Label**
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1).png" alt="" width="381"><figcaption></figcaption></figure>
+          This is the name or label assigned to each deployment, either manually by the user or system-generated. It helps in easily identifying and referencing specific deployments.
+      2.  **Feature**
 
-To filter the deployment via **Feature Name**, you will have the versions list auto-populated to fetch the exact result.
+          Indicates the specific **nCino feature** that was deployed (e.g., User Interface, Forms, Rules Engine). This allows users to track deployments by functional component.
+      3.  **Version**
 
-<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1).png" alt="" width="379"><figcaption></figcaption></figure>
+          Displays the version of the deployed feature or template (e.g., _Fall 2023 Rel - v1_). Helps maintain traceability across different release versions.
+      4.  **Iteration**
 
-### Data Retrieval Workspace <a href="#data-retrieval-workspace" id="data-retrieval-workspace"></a>
+          Specifies the deployment iteration for that feature. This is particularly useful when the same feature is deployed multiple times with different configurations or updates.
+      5.  **Deployed Date**
 
-Deployments will be in the queue for dataset refresh jobs and will be displayed under **Data Retrieval Workspace**.
+          Shows the exact **timestamp** when the deployment was executed. This is important for tracking deployment timelines and auditing activity.
+      6.  **Status**
 
-Applicable only if the deployment is carried via:
+          Indicates the result of the deployment with visual markers:
 
-1. Template using [Version Control](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/)
-2. Version Control using Salesforce Org
+          * Green Check – Success
+          * Red Cross – Failed deployment
+          * Yellow Exclamation – Partially Successful
+          * Dash – Status pending or staging
+      7.  **Action Buttons**
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          Provides quick-access options for each deployment:
 
-<figure><img src="../../../../../.gitbook/assets/image (55) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          *   **Deployment Queue**: View all deployments currently in progress or waiting to be executed.
 
-### Viewing the Deployment Summary <a href="#viewing-the-deployment-summary" id="viewing-the-deployment-summary"></a>
+              <figure><img src="../../../../../.gitbook/assets/4 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
-Click on one of the **Labels** to view the detailed deployment summary info.
+              <figure><img src="../../../../../.gitbook/assets/4.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+          *   **Commit Queue**: Track metadata or data commits queued or being processed.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1).png" alt=""><figcaption></figcaption></figure>
+              <figure><img src="../../../../../.gitbook/assets/5 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption></figcaption></figure>
+              <figure><img src="../../../../../.gitbook/assets/5.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+          * **Create Feature Deployment**: Start a new deployment by selecting components and configuring the deployment settings.
+4. **Actions Menu:** The **Actions menu** provides contextual options for each deployment entry:
+   1.  **Deploy**\
+       Initiates the deployment process for the selected configuration again. This option is visible when the deployment can be re-executed.
 
-**Feature Template- Revision Details**
+       <figure><img src="../../../../../.gitbook/assets/6 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+   2.  **Deploy Configuration Panel**
 
-For each template revision, you can find the list of all data nCino objects that were either deployed or failed. View the individual object deployment details by clicking on the object or view the success or failed count directly.
+       After selecting **Deploy** from the Actions menu, this screen allows you to configure deployment options and choose the **destination org** where your metadata and data will be deployed.
 
-<figure><img src="../../../../../.gitbook/assets/image (58) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/6.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+   3.  **Destination Org**
 
-**Object Information:** Click on the **object** to view their detailed information on the right side of the page.
+       Use the dropdown to select the Salesforce org to which the deployment should be executed.
 
-<figure><img src="../../../../../.gitbook/assets/image (59) (1).png" alt="" width="346"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/6.2 - Feature Deployment History Page (1).png" alt=""><figcaption></figcaption></figure>
+   4.  **Deployment Options**
 
-**Retrieved:** This section will tell you the total records that are being retrieved. You can even download the records on your local machine. The file format is downloaded in CSV format.
+       Toggle the following settings as needed for the deployment:
 
-**Success**: Now, the selected records can be downloaded using the download option. Click on the success record count.
+       * **Disable Workflow Rules** – Temporarily disables workflow rules during deployment.
+       * **Disable Validation Rules** – Prevents validation rules from interfering with the deployment process.
+       * **Use Bulk API** – Enables deployment via Salesforce Bulk API for better performance with large datasets.
+       * **Use UTF-8 File Encoding** – Ensures proper encoding, especially when handling multilingual or special characters.
+       * **Insert/Update With Null Values** – Allows null values from the source to overwrite values in the target org.
+       * **Automap User/Owner Data** – Automatically maps user and owner fields during deployment.
+       * **Enable Rollback** – Allows rollback of components marked for rollback post-deployment if needed.
+   5.  **External Field Mappings**
 
-<figure><img src="../../../../../.gitbook/assets/image (1536).png" alt=""><figcaption></figcaption></figure>
+       Use this to map **External ID fields** for each object between source and destination orgs:
 
-Click on “Success Count” for the pop-up to appear. A download option will be available for you to select. Click on the download option for the records to be downloaded. You will see the ‘.csv’ file being downloaded.
+       * **Source** – Select the field from the source dataset (typically a CSV or metadata).
+       * **Destination** – Select the corresponding External ID field from the destination org.
+   6.  **Deploy / Cancel**
 
-<figure><img src="../../../../../.gitbook/assets/image (1537).png" alt=""><figcaption></figcaption></figure>
+       Once all configurations are in place:
 
-**Failed**: The failed records can be downloaded using the download option available. Click on the failure count for the pop-up to open. Use the ‘Download’ button on the pop-up to download the failed records.
+       * Click **Deploy** to initiate the deployment.
+       * Click **Cancel** to exit without making changes.
+5.  **Re-Deploy Configuration Panel**
 
-<figure><img src="../../../../../.gitbook/assets/image (1538).png" alt=""><figcaption></figcaption></figure>
+    Selecting **Re-Deploy** from the Actions menu in the Deployment History opens the configuration screen, which mirrors the initial deployment setup.
 
-**Deployment Log**
+    <figure><img src="../../../../../.gitbook/assets/7 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+6.  #### **Editable External Field Mappings**
 
-View individual deployment steps that are carried out under the **Deployment Log** section. Each deployment has a number of "steps", which contain a subset of logs, such logs can be seen here. You can either view compete log information in the user interface or save it to your local machine using ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-297.png)icon. The file usually gets downloaded in **ZIP** format.&#x20;
+    The **External Field Mappings** section displays object-level mappings between source and destination environments. Each row in the mapping table includes:
 
-<figure><img src="../../../../../.gitbook/assets/image (62) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Re-triggering the Deployment <a href="#retriggering-the-deployment" id="retriggering-the-deployment"></a>
 
-Once you have fixed the deployment error or you like to re-trigger the deployment once again, you can click on the **Re-Deploy** button to quickly restart your deployment.
+    <figure><img src="../../../../../.gitbook/assets/7.0 - Feature Deployment History Page (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
+    *   **Object Name**: Identifies the object included in the deployment.
 
-Choose the **'Destination Org'** and the deployment criteria you want to set for the deployment process.
+        * **Source**: Dropdown menu to select the external ID field from the source dataset.
+        * **Destination**: Dropdown menu to assign the corresponding external ID field in the destination org.
+        * **Actions**:
+          * ✏️ Modify the selected mapping fields if needed.
+          * ✅ Confirm the mapping.
+          * ❌ Remove the mapping.
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1).png" alt="" width="512"><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/7.1 - Feature Deployment History Page (3).png" alt=""><figcaption></figcaption></figure>
+7.  #### **Deployment History – Summary and Iterations**
 
-Once the deployment is re-triggered, a new iteration gets auto-generated with new deployment log details. If the deployment gets failed due to any metadata or data objects, such a report can be found on this page.&#x20;
+    The **Actions** menu for each entry in the Deployment History includes two key options: **Summary** and **Iterations**. These provide detailed insights into individual deployments and their versioned executions.
+
+    <figure><img src="../../../../../.gitbook/assets/8 - Feature Deployment History Page (1).png" alt=""><figcaption></figcaption></figure>
+8.  #### **Deployment Summary**
+
+    Selecting **Summary** opens a side panel displaying key information related to the selected deployment:
+
+    * **Label**: Name of the deployment execution.
+    * **Feature**: The nCino feature associated with the deployment.
+    * **Status**: Execution status (e.g., Success).
+    * **Version**: Version of the feature being deployed.
+    * **Created By**: The identity of the initiator of the deployment.
+    * **Created Date**: Timestamp when the deployment was executed.
+    * **Duration**: Time taken to complete the deployment.
+    * **Source Branch**: Git branch from which the deployment was triggered.
+    * **Source Repository**: The Git repository associated with the deployment.
+    * **Description**: Any notes or context added for the deployment (if available).
+
+
+
+    <figure><img src="../../../../../.gitbook/assets/8.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+9. This view provides a quick snapshot of the deployment details for auditing and traceability.
+10. #### **Deployment Iterations**
+
+    Selecting **Iterations** opens a full-page view showing all versioned executions for a given deployment label. Each iteration represents a separate execution attempt for the same deployment configuration.
+
+    <figure><img src="../../../../../.gitbook/assets/9 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+11. The **Deployment Iterations** table includes the following columns:
+
+    * **Iteration No**: Numeric order of each execution.
+    * **Destination SF Org Name**: Target Salesforce org used for deployment.
+    * **Created Date**: Timestamp when the iteration was initiated.
+    * **Duration**: Total time taken for the iteration to complete.
+    * **Status**: Indicates whether the iteration succeeded, failed, or is in progress.
+    * **Actions**: Options to re-deploy or view further details for each iteration.
+
+    This screen allows tracking of multiple deployment attempts for a single feature, ensuring version control and deployment consistency.
+
+    <figure><img src="../../../../../.gitbook/assets/9.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+12. #### Re-Deploy Panel:  When selecting “Re-Deploy,” a side panel opens with redeployment options.
+
+    1. **Destination Org**: Dropdown to select the target Salesforce org.
+    2. **Deployment Settings**:
+       * Disable Workflow Rules
+       * Disable Validation Rules
+       * Use Bulk API
+       * Insert/Update With Null Values
+       * Use UTF-8 Encoding
+       * Automap User/Owner Data
+       * Enable Rollback
+       * **External Field Mappings**:
+         * **Object name**: Lists each object participating in the deployment.
+         * **Source & Destination**: Defines field-level mappings used to match source and target data.
+         * **Actions**: Edit or delete mapping rows.
+
+    <figure><img src="../../../../../.gitbook/assets/9.2 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/9.3 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+13. **Iteration Actions**
+
+    From the **Actions** menu on the Iteration list:
+
+    * **Deploy:** Clicking on this will open the "Deployment" window where the deployments can be performed.
+    * **Iteration Details**: Opens a breakdown of objects deployed in that iteration.
+    * [**Compare**](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/ncino/ncino-compare): Triggers a differential view between iterations.
+
+    <figure><img src="../../../../../.gitbook/assets/9.4 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+14. #### Feature Details View
+
+    Presents deployment statistics for each object in the selected iteration.
+
+    * **Name**: API name of the deployed object.
+    * **Retrieved count**: Total records fetched from the source.
+    * **Status**: Success icon if the object deployed without errors.
+    * **Success count**: Number of records successfully deployed.
+    * **Failed count**: Number of records that failed during deployment.
+
+    Icons beside each count enable download of corresponding data.
+
+    <figure><img src="../../../../../.gitbook/assets/9.5 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+15. #### Download & Log Access
+
+    Two options available in the top-right corner:
+
+    *   **Download**: Exports object deployment data.
+
+        <figure><img src="../../../../../.gitbook/assets/9.6 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+    *   **View Logs**: Opens detailed deployment logs.
+
+        <figure><img src="../../../../../.gitbook/assets/9.7 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/9.7.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+16. #### Retrieved Count Drill-Down: Clicking on a number under "Retrieved count" opens a list of deployed records.
+
+    *   **Destination Id**: Salesforce record IDs in the destination org.
+
+        <figure><img src="../../../../../.gitbook/assets/9.8 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/9.8.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+    * **Status**: Indicates action taken on each record (e.g., "Item Updated").
+
+    #### Success Count Drill-Down: Similarly, selecting a number under "Success count" shows the same list as retrieved count.
+
+    *   Confirms that all retrieved records were processed successfully.
+
+        <figure><img src="../../../../../.gitbook/assets/9.9 - Feature Deployment History Page (1).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/9.9.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: AutoRABIT recommends fixing the errors generated and redeploying the process once again until the status changes to **Success**.
 {% endhint %}
+
+
+

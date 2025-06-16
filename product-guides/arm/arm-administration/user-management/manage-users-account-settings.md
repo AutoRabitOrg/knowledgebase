@@ -164,7 +164,7 @@ ARM supports all the metadata types based on the **`Salesforce API Version`**. A
 Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1579).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1687).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.

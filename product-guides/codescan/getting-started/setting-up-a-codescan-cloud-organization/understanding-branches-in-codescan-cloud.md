@@ -29,11 +29,11 @@ On your **Project Analysis** page, go to **Project Setting > Branches and Pull r
 
 * **Delete Branch**: To delete a branch, click the (![](<../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
 
-<figure><img src="../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Delete 4.5.png" alt=""><figcaption></figcaption></figure>
 
 * **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
 
-<figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Rename 4.6.png" alt=""><figcaption></figcaption></figure>
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 

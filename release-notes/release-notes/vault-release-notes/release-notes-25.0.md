@@ -5,10 +5,10 @@
 **Release Date: 18 June 2025**
 
 * **Backup Optimization:** Streamlined the object processing logic within the backup module to improve performance and reliability.
-* **Dynamic Pagination for Replication Config:** Introduced dynamic pagination during replication config creation, ensuring better scalability and responsiveness.
-* #### **Improved Alert Search:** Optimized the search functionality in the Alerts section for quicker results and enhanced user experience. <a href="#improved-alert-search" id="improved-alert-search"></a>
-* #### **Accurate Backup Duration Calculation:** Fixed an issue to ensure backup durations are now calculated and displayed correctly across all jobs. <a href="#accurate-backup-duration-calculation" id="accurate-backup-duration-calculation"></a>
-* #### **Performance Improvement – Replicate Job Optimization:** Resolved a performance bottleneck in the replicate job process by identifying and addressing a delay issue. This enhancement improves execution speed and overall system efficiency. <a href="#performance-improvement-replicate-job-optimization" id="performance-improvement-replicate-job-optimization"></a>
+* **Dynamic Pagination for Replication Config**: Introduced dynamic pagination during replication config creation, ensuring better scalability and responsiveness.
+* **Improved Alert Search**: Optimized the search functionality in the Alerts section for quicker results and enhanced user experience.
+* **Accurate Backup Duration Calculation**: Fixed an issue to ensure backup durations are now calculated and displayed correctly across all jobs.
+* **Performance Improvement – Replicate Job Optimization**: Resolved a performance bottleneck in the replicate job process by identifying and addressing a delay issue. This enhancement improves execution speed and overall system efficiency.
 
 ## Vault Release Notes 25.1
 

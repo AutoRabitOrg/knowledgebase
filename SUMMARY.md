@@ -295,6 +295,7 @@
         * [Deployment via Version Control using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org.md)
         * [Copy of Deployment via Version Control using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org-1.md)
         * [Feature Deployment Summary](product-guides/arm/arm-features/ncino/feature-deployment/feature-deployment-summary.md)
+        * [Copy of Feature Deployment Summary](product-guides/arm/arm-features/ncino/feature-deployment/feature-deployment-summary-1.md)
       * [Feature Commits](product-guides/arm/arm-features/ncino/feature-commits.md)
       * [Feature CI Jobs](product-guides/arm/arm-features/ncino/feature-ci-jobs/README.md)
         * [Running a CI Job](product-guides/arm/arm-features/ncino/feature-ci-jobs/running-a-ci-job/README.md)

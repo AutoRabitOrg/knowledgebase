@@ -5,28 +5,29 @@ When you create an analysis project from Salesforce, the org or sandbox you auth
 1. Select your Salesforce project from the **My Projects** screen.
 2. Go to the **More** tab and select **Project Analysis** from the dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PA 4.6.png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Click on **Edit Project**.
+2. Click on **Edit Project**.
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/PA Edit 4.7.png" alt="" width="563"><figcaption></figcaption></figure>
 
-4. Click on![](<../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)button to add a new branch.
+3. Click on![](<../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)button to add a new branch.
 
-<figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/SFAddBranch 4.8.png" alt=""><figcaption></figcaption></figure>
 
-5.  Assign a name to your branch and choose the branch type:
+4. Assign a name to your branch and choose the branch type:
 
-    * **Comparison Branch**- This branch determines only the recent issues in a project branch based on comparing with the standard branch in your project.
-    * **Standard Branch**- This branch will have your project's entire history and dashboards.
+* **Comparison Branch**- This branch determines only the recent issues in a project branch based on comparing with the standard branch in your project.
+* **Standard Branch**- This branch will have your project's entire history and dashboards.
 
-    <figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="482"><figcaption></figcaption></figure>
-6. Select your Salesforce environment.
-7. Once you click on **Authorize**, it will redirect you to the Salesforce login page to validate your credentials.
-8. This triggers the project analysis and the project being added under your CodeScan organization.
-9. You'll be redirected to the **Project Analysis** screen, where you can view the status of your triggered analysis.
+<figure><img src="../../../../.gitbook/assets/SFNewBranch 4.9.png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+5. Select your Salesforce environment.
+6. Once you click on **Authorize**, it will redirect you to the Salesforce login page to validate your credentials.
+7. This triggers the project analysis and the project being added under your CodeScan organization.
+8. You'll be redirected to the **Project Analysis** screen, where you can view the status of your triggered analysis.
+
+<figure><img src="../../../../.gitbook/assets/NBAnalyisi 5.0.png" alt=""><figcaption></figcaption></figure>
 
 ### Features of a comparison branch <a href="#features-of-a-comparison-branch" id="features-of-a-comparison-branch"></a>
 
@@ -42,7 +43,7 @@ codescan.comparison.branches
 **Note:** The `codescan.comparison.branches` property is in OFF state by default.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/SettingBranch 5.1.png" alt=""><figcaption></figcaption></figure>
 
 The comparison branches feature is enabled automatically when you:
 

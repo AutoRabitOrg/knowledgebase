@@ -83,7 +83,7 @@ sonar-scanner -Dsonar.host.url=https://app.codescan.io -Dsonar.comparison.branc
 
 On your **Project Analysis** page, go to **Project Setting > Branches**.
 
-<figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="323"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Branches 5.2.png" alt="" width="375"><figcaption></figcaption></figure>
 
 On this page, you can:
 
@@ -93,22 +93,22 @@ On this page, you can:
 
 #### Delete a branch <a href="#delete-a-branch" id="delete-a-branch"></a>
 
-For example, to delete a comparison branch, navigate to the **Comparisons Branches** tab, click on ![](<../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon and click on **Delete Comparison Branch**. Note that this process cannot be undone.
+For example, to delete a comparison branch, navigate to the **Comparisons Branches** tab, click on <img src="../../../../.gitbook/assets/image (1689).png" alt="" data-size="line">icon and click on **Delete Comparison Branch**. Note that this process cannot be undone.
 
 <figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Rename the main branch <a href="#rename-the-main-branch" id="rename-the-main-branch"></a>
 
 To update the name of the main branch, navigate to the **Branches** tab, and look for the main branch.\
-Click on![](<../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon under the **Actions** tab and click on **Rename branch**.
+Click on <img src="../../../../.gitbook/assets/image (1688).png" alt="" data-size="line">icon under the **Actions** tab and click on **Rename branch**.
 
-<figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Rename Main.png" alt=""><figcaption></figcaption></figure>
 
 Give the main branch a new name and click on **Rename**.
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Comparision.png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Select your Salesforce project from the **My Projects** page.
 2. When you click on the main branch dropdown for your project, you can see the list of all branches that you have created or added.

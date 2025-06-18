@@ -20,6 +20,12 @@ CSV Format Export&#x20;
 
 ***
 
+## Guard Release Notes 25.1.4
+
+**Release Date: 28 May 2025**
+
+This release included several bug fixes as well as back-end enhancements designed to optimize processing efficiency and support future feature development.
+
 ## Guard Release Notes 25.1.3
 
 **Release Date: 21 May 2025**

@@ -66,25 +66,25 @@ We have remediated this issue with this release by updating the status in the UI
 
 _Verified that the 4 scenarios below are working as expected_
 
-1. "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
+3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
 <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-2. "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
+3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-3. "Verified: The updated message after disabling project reports in the CodeScan UI."
+3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-4. Able to receive the project reports via email for all the above three case
+3.4 - Able to receive the project reports via email for all the above three case
 
 &#x20;
 

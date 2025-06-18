@@ -10,4 +10,4 @@ Users can create and manage a knowledge base with your company information and s
 
 1. [Backup support for Knowledge Articles](https://knowledgebase.autorabit.com/vault/docs/backup-support-for-knowledge-articles)
 2. [Restore or Replicate Knowledge Articles](https://knowledgebase.autorabit.com/vault/docs/restoring-knowledge-articles-with-vault)
-3. Indexes
+3. [Indexes](https://knowledgebase.autorabit.com/product-guides/vault/knowledge-articles/indexes)

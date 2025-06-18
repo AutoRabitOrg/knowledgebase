@@ -1,6 +1,6 @@
 # Access Controls
 
-## Overview and How It Works
+## Overview and How They Work
 
 The Access Controls feature in AutoRABIT Guard offers a powerful, automated mechanism to enforce governance and security in your Salesforce org. Unlike Salesforce’s native functionality, Guard Access Controls allow you to define strict rules, such as permission set allow lists, to ensure only authorized users can access sensitive permissions.
 

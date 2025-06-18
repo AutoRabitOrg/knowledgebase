@@ -138,6 +138,23 @@ Once the reviewer has approved the changes, or if you have opted to auto-approve
 
 <figure><img src="../../../../.gitbook/assets/image (597).png" alt=""><figcaption></figcaption></figure>
 
+#### Deployment - Approval Settings
+
+Admins are now able to configure the approvals process for the custom deployment module.&#x20;
+
+1. By Admin → My Profile -> Deployment Approval Settings.
+2.  Select the Salesforce Org from the drop-down menu, which requires approval before deployment. (This menu provides a list of Orgs that you have already configured in SF Org MGMT.)\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1696).png" alt=""><figcaption><p>Deployment - Approval Settings</p></figcaption></figure>
+
+    You can also configure the approval process for multiple Orgs.
+3. Click on the drop-down menu to select the approvers for Level 1 and Level 2. The list will contain only users who can access the deployment module.\
+   \
+   Note : The App doesn't allow you to select the same approvers for Level 1 and Level 2.\
+
+4. Click on Save to enable the approval process for deployments.
+
 #### 9. Merge Settings <a href="#id-9-merge-settings" id="id-9-merge-settings"></a>
 
 Here the administrator can specify specific evaluation criteria on which the merge will be reviewed before committing to the version control branch. The New Merge screen reflects the same option based on the criteria selected.

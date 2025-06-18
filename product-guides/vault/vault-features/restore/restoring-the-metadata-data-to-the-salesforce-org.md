@@ -42,7 +42,7 @@ Ensure you have the following:
 7. Click on either **`EZ Restore`** or **`Selective Restore`**.
 
 {% hint style="info" %}
-**Important Note**: Restore Source as **`nCino features`** will be displayed only for Salesforce Orgs configured with nCino objects. For detailed nCino restore features, refer to the article: [nCino Restore Features](../knowledge-articles/ncino/restoring-ncino-features.md).
+**Important Note**: Restore Source as **`nCino features`** will be displayed only for Salesforce Orgs configured with nCino objects. For detailed nCino restore features, refer to the article: [nCino Restore Features](../../../ncino/restoring-ncino-features.md).
 {% endhint %}
 
 ### EZ-Restore <a href="#ezrestore" id="ezrestore"></a>

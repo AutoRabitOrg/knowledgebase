@@ -29,3 +29,6 @@ AutoRABIT Guard is an automated security and compliance solution for Salesforce,
 [integration-user-license.md](guard/integration-user-license.md)
 {% endcontent-ref %}
 
+{% content-ref url="guard/data-classification.md" %}
+[data-classification.md](guard/data-classification.md)
+{% endcontent-ref %}

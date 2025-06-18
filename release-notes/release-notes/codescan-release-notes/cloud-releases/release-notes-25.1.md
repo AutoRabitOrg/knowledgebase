@@ -24,7 +24,7 @@ Please note that there are updated requirements for customers who are using one 
 
 Summary:
 
-CodeScan 25.1.3 is comprised of the following 8 components:
+CodeScan 25.1.3 is comprised of the following 5 components:
 
 ·       3 Enhancements
 

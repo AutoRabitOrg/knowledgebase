@@ -18,6 +18,115 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.3
+
+**Release Date: June 22, 2025**&#x20;
+
+Summary:
+
+CodeScan 25.1.3 is comprised of the following 8 components:
+
+·       3 Enhancements
+
+·       2 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Enhancements:
+
+**1.     New Banner in billing when license entitlements exceeded**
+
+In this release, we created a new banner to inform admins when their licenses entitlements have been exceeded.  It advises the admins to contact their account team to get their entitlements amended.
+
+Separately, the AutoRABIT account team will be notified directly as well.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
+
+Additionally, this new banner is coupled with additional billing logic (detailed in the next note) aimed to ensure that user operations are not disrupted when license entitlements are exceeded, providing a better user experience for our customers.
+
+
+
+**2.     New logic in billing allows users continued operations**
+
+In this release, we made an update so that users are not blocked when an organization exceeds their license entitlements.   Instead, a new banner will appear on the billing page advising the admins that their license entitlements have been exceeded (see previous note above).
+
+This feature also ensures that user operations are not disrupted when license entitlements are exceeded, providing a better user experience for our customers.
+
+
+
+**3.   Project Report Status update in UI**
+
+Several customers had previously reported that on the Project Report page, the UI displays the Project Report as “stuck” in the queue.  This status persists even after users receive the corresponding email notification in Outlook.
+
+We have remediated this issue with this release by updating the status in the UI to "Your project report is currently being processed.  You will receive it via email shortly."
+
+
+
+_Verified that the 4 scenarios below are working as expected_
+
+1. "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+2. "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+3. "Verified: The updated message after disabling project reports in the CodeScan UI."
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+4. Able to receive the project reports via email for all the above three case
+
+&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+**1. Fixed issue with certain menus where users were unable to easily scroll down and choose a value from the menu**
+
+Some users were reporting that they were unable to scroll down in the quality profiles section in project settings.
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+This issue has been remediated in this release.
+
+The dialog box was resized, and a searchable drop down was added (similar to the one in CVSS export.)
+
+We have verified that with this fix, users are able to scroll down in the Quality Profiles section within the Project Settings.  We also verified that the dialog box is resized.
+
+&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+**2. Fixed Deprecation Warning associated with sonar.login**
+
+Some customers were reporting that they were
+
+receiving deprecation warnings in their scans indicating that the use of sonar.login is deprecated, and that instead, going forward, authentication should be done using sonar.token.
+
+This issue has been remediated in this release.  CodeScan now supports both sonar.login and sonar.token for authentication during Codescan analyses.
+
+Verified the below plugins by using sonar.token and sonar.login parameters in the sonar command and sfdx; both scenarios are working as expected.
+
+SFDX -@salesforce/cli/2.61.8
+
+Sonar-scanner - 5.0.1.3006V
+
+1. Validate Project analysis through above plugins
+2. Validate branch analysis.
+
+***
+
 ## CodeScan Release 25.1.2
 
 **Release Date: June 11, 2025**&#x20;
@@ -46,7 +155,7 @@ We have added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80
 
 Verified the CWE number on the rule Unescaped Value Could Cause XSS by confirming that user is able to see the added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80.html) (along with additional CWE numbers 95 and 470)
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (8).png" alt=""><figcaption></figcaption></figure>
 
 Please note, these rules are only available for projects created with CodeScan's direct Salesforce integration due to being based on a direct query to a Salesforce Org.
 
@@ -66,23 +175,23 @@ Verified below scenarios, all are working as expected\
 \
 1\. An option/toggle called "Disable Invite Members" should be available in Administration > Organization Settings of CodeScan.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (8).png" alt=""><figcaption></figcaption></figure>
 
 2. The default behavior of the invite member option should be active or visible.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (7).png" alt=""><figcaption></figcaption></figure>
 
 3. When the toggle is enabled, the "Invite Member" button is hidden in administration module and members page
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (7).png" alt=""><figcaption></figcaption></figure>
 
 4. When the toggle is disabled, the "Invite Member" button remains visible and functional as usual in administration module and members page
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (7).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (6).png" alt=""><figcaption></figcaption></figure>
 
 5. Other functionalities related to member management (e.g., viewing members, editing permissions) should remain unaffected.
 

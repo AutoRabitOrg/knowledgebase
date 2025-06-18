@@ -37,8 +37,8 @@ On your **Project Analysis** page, go to **Project Setting > Branches and Pull r
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Comparision status.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Here you can see the branch has four new violations. If the branch is selected, the details of the violation(s) can be seen. All new branches added in this way will be deleted in **30 days** if they are not analyzed.
+Here you can view the branch and its Quality Gate status. Any new branch added this way will be automatically deleted after 30 days if not analyzed..
 
 If you have any further questions about CodeScan Cloud, please [contact us](https://www.codescan.io/contact/).

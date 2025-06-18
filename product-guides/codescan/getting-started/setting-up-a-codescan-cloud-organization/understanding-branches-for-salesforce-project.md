@@ -60,7 +60,7 @@ The new properties `sonar.comparison.branch` and `sonar.comparison.base` are equ
 So, because they are equivalents - the logic will be the same. If you mark any issue as `False Positive` or `Resolve as Won't fix` in your Comparison Branch, then this issue will not re-appear in the project's main branch after changes are merged.\
 Similarly, the new comparison branches reflect the changes on issues made by the user on the project’s main branch.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Issues Main Page.png" alt=""><figcaption></figcaption></figure>
 
 To test the new feature using sonar-scanner:
 
@@ -108,7 +108,7 @@ Give the main branch a new name and click on **Rename**.
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../.gitbook/assets/Comparision.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Comparision (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Select your Salesforce project from the **My Projects** page.
 2. When you click on the main branch dropdown for your project, you can see the list of all branches that you have created or added.

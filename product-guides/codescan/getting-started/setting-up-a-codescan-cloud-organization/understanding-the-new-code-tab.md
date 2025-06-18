@@ -6,7 +6,7 @@ How the **New Code** is set determines what issues are displayed as new issues. 
 
 <figure><img src="../../../../.gitbook/assets/NewCode 5.4.png" alt=""><figcaption></figcaption></figure>
 
-The **New Code** settings can be configured for the project or each branch by clicking on the settings wheel (<img src="../../../../.gitbook/assets/image (1690).png" alt="" data-size="line">) at the bottom of this page.
+The **New Code** settings can be configured for the project or each branch by clicking on the actions  (<img src="../../../../.gitbook/assets/image (1690).png" alt="" data-size="line">) at the bottom of this page.
 
 <figure><img src="../../../../.gitbook/assets/SpecificCode 5.5.png" alt=""><figcaption></figcaption></figure>
 

@@ -4,21 +4,13 @@
 
 Here, you'll find detailed release notes that provide insights into new features, enhancements, and bug fixes for each product update. Our goal is to keep you informed and equipped with the knowledge to make the most of our products.
 
-{% content-ref url="arm-release-notes/" %}
-[arm-release-notes](arm-release-notes/)
-{% endcontent-ref %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/arm-release-notes" %}
 
-{% content-ref url="codescan-release-notes/" %}
-[codescan-release-notes](codescan-release-notes/)
-{% endcontent-ref %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes" %}
 
-{% content-ref url="ncino-release-notes/" %}
-[ncino-release-notes](ncino-release-notes/)
-{% endcontent-ref %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes" %}
 
-{% content-ref url="vault-release-notes/" %}
-[vault-release-notes](vault-release-notes/)
-{% endcontent-ref %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/vault-release-notes" %}
 
 {% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/guard" %}
 

@@ -1037,7 +1037,7 @@ This update introduces several new rules and bug fixes for current rules. This i
 
 ***
 
-### Release Notes 24.0.1 **Feb 2024**
+## Release Notes 24.0.1 **Feb 2024**
 
 The following items were implemented, fixed, or enhanced with this release:
 

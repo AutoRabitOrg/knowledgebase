@@ -36,7 +36,70 @@ You’ll need the **`Deployment History`** access permission.
 
 6. **`Async ID:`** A unique identifier ID assigned to each deployment that helps track the deployment process.
 7. **`Deployment Status:`** A visual representation of the overall deployment progress. The first chart shows how many components have already been deployed and includes the number of components with errors. After all components have been deployed without errors, Apex tests start executing, if required or enabled. A second chart shows how many Apex tests have run out of the total number of tests and the number of errors returned. In addition, the chart shows the name of the currently running test.
-8. **Deployment Add-ons:**
+8. List of Options available under Deployment History screen.
+   1. As a User:
+      1.  The user who initiated the deployment can see the history screen and the deployment with details like who the approvers are and the status of the deployment. Also, they could see the list of components part of the deployment with any comments from the approvers. If it is a Salesforce deployment, they would able to view the SCA report as well.
+
+          User can also add any comments if required, e.g., "Deployment is waiting for approval."\
+
+
+          <figure><img src="../../../../.gitbook/assets/image (1697).png" alt=""><figcaption><p>Deployment History</p></figcaption></figure>
+
+          <figure><img src="../../../../.gitbook/assets/image (1698).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
+
+          <figure><img src="../../../../.gitbook/assets/image (1699).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
+
+
+   2.  #### As an Approver <a href="#as-an-approver" id="as-an-approver"></a>
+
+       As soon as the approver comes to the Deployment history screen, the approver clicks on Deployment, which is pending approval
+
+       1. What do we show the approver?\
+          \- Basic information on the deployment.\
+          \- Metadata selected for deployment, which has been changed or added\
+          \- Level 1 and Level 2 Approvers list.\
+          \- Comment history of Approvers & Users.\
+          \- If the user enables SCA (Only available for Salesforce not for Vlocity Deployments)\
+          SCA will run before it goes to the Approver. If it fails, the deployment gets automatically rejected.\
+          If SCA passes, the deployment will go for approval. An email will be sent to Approvar.
+       2.  Once the Approver clicks on Approve → It should get Auto-deployed. Users and approvers should be notified via email.\
+           Pending L1 Approval\
+
+
+           <figure><img src="../../../../.gitbook/assets/image (1700).png" alt=""><figcaption><p>Pending L1 Approval</p></figcaption></figure>
+
+           Email sent to Approver.\
+
+
+           <figure><img src="../../../../.gitbook/assets/image (1701).png" alt=""><figcaption><p>Deployment Email</p></figcaption></figure>
+
+           Pending L2 Approval\
+
+
+           <figure><img src="../../../../.gitbook/assets/image (1702).png" alt=""><figcaption><p>Pending L2 Approval</p></figcaption></figure>
+
+           Approver can drop a comment, either Approve or Reject, so the user can review the comments in the comments screen.\
+
+
+           <figure><img src="../../../../.gitbook/assets/image (1703).png" alt=""><figcaption><p>Confirmation</p></figcaption></figure>
+
+
+   3. Once the Approver clicks on Reject, the → Approver should reject with comments. Users and approvers should be notified via email.
+   4. The user should be able to go to the rejected deployment and see the approver’s comments.
+   5. The user will only have the option to select/reselect from the redeploy/promote screen, not the metadata changes.&#x20;
+   6. Once that is done, the User can reinitiate the deployment.
+   7.  Deployment would again follow the L1 and L2 approval process.
+
+       \
+       **Assumptions/Conditions**
+
+       * The approval process for the deployment feature is activated based on a feature flag.
+       * This process applies only to custom deployments. For Salesforce deployments, the user and the approver can view the SCA report and access the **Redeploy** option. However, these options are unavailable for Vlocity deployments, as Vlocity does not support them.
+       * Approvers must have access to both the Deployments and CI Jobs modules. To approve any deployment.
+       * If a deployment is awaiting approval and the Admin deletes the Salesforce Org associated with the approval setup, any pending deployment approvals will be automatically rejected.
+       * Additionally, if a deployment remains in a pending approval state for more than three days, it will be automatically rejected.
+       * Self-approval won't be possible even if you are an admin.
+9. **Deployment Add-ons:**
    * **`Promotion:`** Downloads the metadata components in your local system. The file format is in ZIP format.
    * **`Redeploy/Promote:`** This option allows you to redeploy the components into the same destination environment with the changes made or promote the same label into a different destination environment. This feature enables users to either redeploy the components to the same destination environment with the applied changes or promote the same label to a different destination environment. Notably, users will now have visibility into all previously selected checkboxes and dropdowns from the previous iteration. This enhancement aims to streamline the process by eliminating the need for users to reselect options, enabling them to directly click on the redeploy option. Additionally, users have the flexibility to edit the checkboxes as needed.
    * **`Rollback:`** Rollbacks revert a deployment to a previous revision.

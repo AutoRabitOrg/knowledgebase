@@ -2,9 +2,9 @@
 
 ## ARM 25.2.10 Release Notes
 
-### **Release date: 22 June 2025**
+**Release date: 22 June 2025**
 
-#### **Overview**
+### **Overview**
 
 This release delivers targeted improvements to Vlocity deployments, CI job processing, sandbox provisioning, permission settings, and EZ-Commit behavior. Key internal issues have been resolved to enhance reliability, reduce metadata deployment anomalies, and streamline configuration workflows.
 

@@ -1,5 +1,66 @@
 # ARM Release Notes
 
+## ARM 25.2.10 Release Notes
+
+### **Release date: 22 June 2025**
+
+#### **Overview**
+
+This release delivers targeted improvements to Vlocity deployments, CI job processing, sandbox provisioning, permission settings, and EZ-Commit behavior. Key internal issues have been resolved to enhance reliability, reduce metadata deployment anomalies, and streamline configuration workflows.
+
+#### **Internal – Vlocity Calculation Matrix Fix**
+
+&#x20;**1. Issue: After a commit, comma-separated Calculation Matrix Components were not being correctly committed to the branch. Only the YAML file was pushed, and that too in an incorrect format.**
+
+**Fix:** Introduced logic to backup the Calculation Matrix member name, fetch the correct member, and update the YAML file accordingly. Now, the Calculation Matrix Components are committed as expected, supporting direct commits, commit labels, and release labels.
+
+* Vlocity Version Control Deployments (including release, commit label, and AutoRABIT build) now retrieve and deploy comma-separated Calculation Matrix Components accurately.
+* Vlocity Org-to-Org Deployments are verified and working correctly.
+* CI Jobs now correctly retrieve and deploy comma-separated Calculation Matrix Components from source to target Salesforce org.
+
+**Module:** Vlocity Commit, Deployments, and CI Jobs
+
+
+
+&#x20;**2. Issue: Managed package components that were intended to be excluded were still being included during deployments.**
+
+**Fix:** Implemented proper filtering logic to ignore installed (managed) components during deployments and CI job executions, ensuring expected exclusion behavior.
+
+**Module:** CI Jobs and Deployments
+
+
+
+&#x20;**3. Issue: During a sandbox refresh, the template failed because the Sandbox Access field was missing for the production. Salesforce updates now require explicit configuration of access levels during the refresh process.**
+
+**Fix:** Introduced a new Sandbox Access field to the environment provisioning template. Users can now define the appropriate access level, enabling complete control during sandbox refresh.
+
+**Module:** Environment Provisioning\
+
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;**4. Issue: During an EZ-Commit, the Diff view did not correctly reflect profile permission changes (field/object permissions), despite being configured under My Account > Salesforce Settings.**
+
+**Fix:** Applied backend logic to ensure that global profile and permission set rules apply only to the configured profiles/permissions. The Diff screen now accurately displays modifications relevant to the EZ-Commit context.
+
+**Module:** EZ-Commit (Profile & Permission Set)
+
+
+
+&#x20;**5. Issue: In the "Apply Global Profile / PermissionSets Settings" screen under My Account, unnecessary permission selections were displayed. This contradicted the help text stating that all field/object permissions would be universally set to true (grant) or false (revoke), making the checkbox list appear redundant.**
+
+**Fix:** Now, only explicitly granted or revoked object/field permissions are selected or deselected in the UI, making the configuration clearer and more accurate.
+
+**Module:** Admin → My Account → Profile / Permission Set Configuration
+
+
+
+&#x20;**6. Issue: An internal CI Job history API call was failing. Customers were unable to retrieve data via Postman due to an invalid filter applied to the DB query.**
+
+**Fix:** Corrected the filter logic in the DB query that powers the API. The API is now functioning as expected and can return CI job history details without failure.
+
+**Module:** CI Job History API (Postman & DB Filter)
+
 ## ARM 25.2.9 Release Notes
 
 **Release Date: 15 June 2025**

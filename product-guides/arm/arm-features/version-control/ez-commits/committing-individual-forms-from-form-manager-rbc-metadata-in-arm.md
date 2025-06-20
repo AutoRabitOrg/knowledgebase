@@ -18,7 +18,7 @@ To safely commit a single form **without losing the others**, follow these guide
 
 * When committing changes from an org to Git using ARM, configure the commit mode to **merge** or **append**, not replace.
 * This ensures new records are being **added to** the existing set in Git rather than **replacing** the folder contents.
-* **Source:** [AutoRABIT Docs – Commit Changes from Org to Version Control](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-commits/committing-individual-forms-from-form-manager-rbc-metadata-in-arm#id-1.-use-merge-or-append-mode-when-supported)
+* **Source:** [AutoRABIT Docs – Commit Changes from Org to Version Control](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-commits/how-do-i-commit)
 
 #### 2. Avoid Committing a Partial Folder
 

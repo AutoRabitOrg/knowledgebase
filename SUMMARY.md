@@ -313,6 +313,7 @@
       * [Copy of Feature CI Jobs](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/README.md)
         * [Run a CI Job](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/README.md)
           * [Deploy From Template Config & Deploy Using Salesforce Template](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/deploy-from-template-config-and-deploy-using-salesforce-template.md)
+          * [Deploy from version control & Deploy using salesforce and version control](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/deploy-from-version-control-and-deploy-using-salesforce-and-version-control.md)
           * [Selecting a Range of Revisions](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/selecting-a-range-of-revisions.md)
           * [Specify Baseline Revision in Continuous Integration for Version Control](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/specify-baseline-revision-in-continuous-integration-for-version-control.md)
           * [Post Deployment Activities](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/post-deployment-activities.md)

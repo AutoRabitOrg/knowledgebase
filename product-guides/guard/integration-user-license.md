@@ -51,13 +51,13 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     Click Edit to update permissions:\
 
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Edit System Permissions</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Edit System Permissions</p></figcaption></figure>
 
     \
     Make sure to enable all the permissions lived above. They are located under both **System** and **Users** groups:\
 
 
-    <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Permission Sets - Modify All Data</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Permission Sets - Modify All Data</p></figcaption></figure>
 
 
 

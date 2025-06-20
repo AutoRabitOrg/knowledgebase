@@ -15,18 +15,14 @@ When SSO is enabled, users and groups logging into CodeScan are redirected to th
 
 Before configuring SSO in OKTA, you must enable SSO in CodeScan.
 
-1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).
+1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).\
+   ![](../../../../.gitbook/assets/image.png)
+2. Go to **`Administration > SAML Connections`**.\
+   ![](<../../../../.gitbook/assets/image (1).png>)
+3.  Click on **`Create Connection`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
 
-2. Go to **`Administration > SAML Connections`**.
-
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
-
-3. Click on **`Create Connection`**.
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 4. In the **`Connection name`** field, enter the identity provider name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `OKTA-SAML`
 5. Enter a valid domain name of the organization in the **`Corporate domain`** field that can be authenticated in the Identity Provider. _**This property cannot be updated after SAML Connection creation.**_\
@@ -38,13 +34,14 @@ Before configuring SSO in OKTA, you must enable SSO in CodeScan.
     * Enforcing SSO affects both login and signup. Existing _Auth0_ users won't be able to login.
     * Signup with email domain same as corporate domain won't be allowed.
     * If the **`Enforce SSO`** is enabled prematurely, it will prevent all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
-7. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
+7.  Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.\
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="394"><figcaption></figcaption></figure>
 
-8. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to OKTA.
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+8.  You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to OKTA.\
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: Adding CodeScan as an App in OKTA <a href="#step-2-adding-codescan-as-an-app-in-okta" id="step-2-adding-codescan-as-an-app-in-okta"></a>
 
@@ -130,10 +127,10 @@ Once the application is created, you will need to enter the identity provider da
 <figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. A new tab will open, which displays the IdP metadata file in XML format.
-6. In **CodeScan**, on the **`SAML`** page, go to **`Actions`** and click on **`Edit`**.
+6.  In **CodeScan**, on the **`SAML`** page, go to **`Actions`** and click on **`Edit`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 7.  Enter the following values:
 
     * **`Provider Entity Id`**: Copy the **entityID** value and paste it into **`Provider Entity Id`** inside CodeScan.
@@ -141,18 +138,16 @@ Once the application is created, you will need to enter the identity provider da
 
     <figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * Copy the content of the downloaded certificate \[_refer to **Step 2** above to download the certificate_] into the **`X509 Signing Certificate`** field of Codescan SAML connection.\
+    *   Copy the content of the downloaded certificate \[_refer to **Step 2** above to download the certificate_] into the **`X509 Signing Certificate`** field of Codescan SAML connection.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 8. Click **`Update`** on the CodeScan page.
 9. The next step is to confirm your corporate domain to get the SSO working. You can confirm domain by raising a request via [Codescan Support](https://mailto:support@autorabit.com/).
 
 ### Step 4: Testing the Single Sign-On Configuration <a href="#step-4-testing-the-single-signon-configuration" id="step-4-testing-the-single-signon-configuration"></a>
 
-1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.
-
-<figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.\
+   ![](<../../../../.gitbook/assets/image (1706).png>)
 2. Enter the corporate domain name you have configured when enabling SSO inside CodeScan in the **`Your Company email`** field. **For example**- _`autorabit.com`_
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.

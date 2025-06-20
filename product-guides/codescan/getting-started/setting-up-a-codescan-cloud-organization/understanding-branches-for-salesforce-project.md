@@ -1,6 +1,6 @@
 # Understanding branches for Salesforce project
 
-When you create an analysis project from Salesforce, the org or sandbox you authorize, will become your main branch. You can add your sandboxes as analysis project branches by editing your project (from the **Project Analysis** page). This allows for easy comparison between the production orgs or sandboxes and is especially good for checking features before production.
+When you create an analysis project from Salesforce, the org or sandbox you authorize will become your main branch. You can add your sandboxes as analysis project branches by editing your project (from the **Project Analysis** page). This allows for easy comparison between the production orgs or sandboxes and is especially good for checking features before production.
 
 1. Select your Salesforce project from the **My Projects** screen.
 2. Go to the **More** tab and select **Project Analysis** from the dropdown.
@@ -17,8 +17,8 @@ When you create an analysis project from Salesforce, the org or sandbox you auth
 
 4. Assign a name to your branch and choose the branch type:
 
-* **Comparison Branch**- This branch determines only the recent issues in a project branch based on comparing with the standard branch in your project.
-* **Standard Branch**- This branch will have your project's entire history and dashboards.
+* **Comparison Branch:** This branch determines only the recent issues in a project branch based on comparing with the standard branch in your project.
+* **Standard Branch:** This branch will have your project's entire history and dashboards.
 
 <figure><img src="../../../../.gitbook/assets/SFNewBranch 4.9.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -53,7 +53,7 @@ The comparison branches feature is enabled automatically when you:
 > -Dsonar.comparison.branch=...\
 > -Dsonar.comparison.base=...
 
-Another way is via _Autorabit-CodeScan_ integration.
+Another way is via **AutoRABIT-CodeScan** integration.
 
 The new properties `sonar.comparison.branch` and `sonar.comparison.base` are equivalents/aliases of these existing two: `sonar.pullrequest.branch` and `sonar.pullrequest.base`.
 
@@ -106,7 +106,7 @@ Click on <img src="../../../../.gitbook/assets/image (1688).png" alt="" data-siz
 
 Give the main branch a new name and click on **Rename**.
 
-#### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
+### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
 <figure><img src="../../../../.gitbook/assets/Comparision (2).png" alt="" width="563"><figcaption></figcaption></figure>
 

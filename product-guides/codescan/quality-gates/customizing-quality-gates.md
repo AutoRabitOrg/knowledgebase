@@ -15,7 +15,7 @@ To create a new Quality Gate, follow the steps below:
 
 4.  To add desired conditions with their Warning and Error thresholds, click on **Add Condition**.&#x20;
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: To customize a Quality Gate that is already in use, click on **Unlock editing** first, as shown below.

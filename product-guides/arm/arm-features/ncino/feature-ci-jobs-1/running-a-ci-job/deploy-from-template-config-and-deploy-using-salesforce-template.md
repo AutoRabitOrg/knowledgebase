@@ -46,10 +46,7 @@ The following provides a detailed flow on creating the **"Feature CI Jobs"**:
 ### **Deploy from template configuration**:&#x20;
 
 1. Initiating the **"Feature CI Job"** creation will open the following **"Source Type"** page.
-
-<figure><img src="../../../../../../.gitbook/assets/1 - Feature CI Jobs (3).png" alt=""><figcaption></figcaption></figure>
-
-2. Source Type: Select the required "Source Type" in the following screen
+2. **Source Type:** Select the required **"Source Type"** in the following screen.
 
 <figure><img src="../../../../../../.gitbook/assets/4 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 

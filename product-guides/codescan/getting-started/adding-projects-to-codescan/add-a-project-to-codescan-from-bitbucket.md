@@ -9,7 +9,7 @@ This document is a guide on how to add a Bitbucket project to your CodeScan clou
 
 3. It takes you to a different window. Choose the **Organization** for which you'd like to create a project.
 
-<figure><img src="../../../../.gitbook/assets/Analyze 6.0 (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ProjectSetup 7.7 (3).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. In the next window, click on **Add Analysis Project** option.
 

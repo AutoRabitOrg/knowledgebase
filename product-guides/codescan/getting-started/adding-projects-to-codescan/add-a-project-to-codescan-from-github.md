@@ -9,7 +9,7 @@ This document guides you how to add a **GitHub** project to your CodeScan cloud 
 
 3. This takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click **Set Up**.
 
-<figure><img src="../../../../.gitbook/assets/Analyze 6.0 (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ProjectSetup 7.7 (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the next window, click on **Add Analysis Project**.
 

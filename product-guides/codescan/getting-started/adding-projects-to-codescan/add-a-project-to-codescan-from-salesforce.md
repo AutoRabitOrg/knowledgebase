@@ -9,7 +9,7 @@ This document guides how to add a Salesforce project to your [CodeScan cloud](ht
 
 3. It takes you to a different window. Choose the **`Organization`** for which you'd like to create a project. Click **`Set Up`**.
 
-<figure><img src="../../../../.gitbook/assets/Analyze 6.0.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ProjectSetup 7.7 (5).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. In the next window, click on **`Add Analysis Project`** option.
 

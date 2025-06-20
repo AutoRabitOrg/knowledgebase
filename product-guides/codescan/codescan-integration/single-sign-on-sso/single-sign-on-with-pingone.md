@@ -16,18 +16,18 @@ This procedure involves the following steps:
 
 Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 
-1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).
+1.  In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).\
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. Go to **`Administration > SAML Connections`**.
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Profile</p></figcaption></figure>
+2.  Go to **`Administration > SAML Connections`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1).png" alt="" width="284"><figcaption></figcaption></figure>
 
-3. Click on **`Create Connection`**.
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>SAML Connections</p></figcaption></figure>
+3.  Click on **`Create Connection`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (71) (1) (1) (1) (1).png" alt="" width="492"><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `PingOne-SAML`
 5. Enter a valid domain name of the organization in the **`Corporate domain`** field that can be authenticated in the Identity Provider. _**This property cannot be updated after SAML Connection creation.**_\
@@ -137,9 +137,7 @@ It’s necessary to sync attributes of IDP users with properties of CodeScan use
 
 ### Step 5: Testing the Single Sign-On Configuration <a href="#step-5-testing-the-single-signon-configuration" id="step-5-testing-the-single-signon-configuration"></a>
 
-1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.
-
-<figure><img src="../../../../.gitbook/assets/image (89) (1) (1) (1).png" alt="" width="317"><figcaption></figcaption></figure>
-
+1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.\
+   ![](<../../../../.gitbook/assets/image (3).png>)
 2. Enter the domain name of your organization in the **`Your Company email`** field. **For example**- _autorabit.com_.
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.

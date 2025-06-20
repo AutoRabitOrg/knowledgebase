@@ -19,12 +19,12 @@ Permission Set Allow List Access Controls allow you to limit who can be assigned
 
 Guard continuously scans your Salesforce org every five minutes to detect violations in real time.
 
-* Continuous Monitoring: Guard scans your org every five minutes, identifying and responding to policy violations quickly.
-* Violation Actions: When a policy violation is detected, Guard can:
+* Continuous Monitoring: Guard scans your org every five minutes, identifying and responding to access control violations quickly.
+* Violation Actions: When an access control violation is detected, Guard can:
   * Revert Changes Immediately: Automatically remove unauthorized permission sets, reverting the change to a compliant state.
   * Notify Admins: Alert admins via email to manually review and resolve the violation.
 
-### Flexible Policy Configuration
+### Flexible Access Control Configuration
 
 Guard allows you to easily configure access controls that fit your specific needs.
 
@@ -43,7 +43,7 @@ When Guard detects an access control violation, you receive detailed alerts that
 
 ### Scalable Governance Framework
 
-Guard’s access controls are just the beginning. The platform is designed to scale with your organization’s needs and will soon include other capabilities, such as password policies and governance rules.
+Guard’s access controls are just the beginning. The platform is designed to scale with your organization’s needs and will soon include other capabilities, such as password and governance rules.
 
 * Future releases will expand the types of access controls available, offering even more granular control over your org’s security and compliance.
 
@@ -51,7 +51,7 @@ Guard’s access controls are just the beginning. The platform is designed to sc
 
 ### Enforce Governance with Automation
 
-Guard automates the enforcement of access rules, ensuring that your org remains compliant without manual oversight. This eliminates the risk of human error and guarantees consistent application of security policies.
+Guard automates the enforcement of access rules, ensuring that your org remains compliant without manual oversight. This eliminates the risk of human error and guarantees consistent application of security access controls.
 
 * Automation means fewer missed violations, less time spent managing security, and more time spent focusing on other business-critical tasks.
 
@@ -65,7 +65,7 @@ By controlling who has access to what permissions, Guard ensures that unauthoriz
 
 Guard helps your organization meet both internal governance standards and external regulatory requirements by ensuring real-time enforcement of your access controls.
 
-* Guard ensures compliance with both industry standards (e.g., HIPAA, SOX) and your organization’s internal security policies.
+* Guard ensures compliance with both industry standards (e.g., HIPAA, SOX) and your organization’s internal security access controls.
 
 ### Boost Efficiency
 
@@ -79,7 +79,7 @@ Guard’s access controls can automatically revert violations or send actionable
 
 To create an Access Control, go to the access controls section in AutoRABIT Guard and click "Add Access Control."
 
-* Provide a descriptive name for the access control, such as "Policy for Admin Permissions."
+* Provide a descriptive name for the access control, such as "Access Control for Admin Permissions."
 * Configure access controls criteria by selecting the Salesforce org, permission sets, and users who fall under the rule.
 
 ### Configure Access Control Criteria
@@ -106,7 +106,7 @@ Guard’s access control detection relies heavily on the Change Monitoring capab
 Guard is built on top of Change Monitoring, which uses Salesforce’s SetupAuditTrail to track changes. When a change occurs that might violate an access control, Guard parses the event details to determine whether the violation is valid. Let’s look at an example of how this works:
 
 1. Change Event Detection: A change occurs, such as the assignment of a permission set to a user:
-   1. Event: "Permission set Nebula Logger: Admin assigned to user policy user (UserID: \[005Wy000000uRLh])"
+   1. Event: "Permission set Nebula Logger: Admin assigned to user access control user (UserID: \[005Wy000000uRLh])"
 2. Before and After Values: Guard detects and extracts the before and after values from the event. In this case:
    1. Before Value: The user did not have the permission set assigned.
    2. After Value: The permission set is now assigned to the user.

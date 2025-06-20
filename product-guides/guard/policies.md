@@ -13,7 +13,7 @@ Guard monitors your org in real time, detects violations, and can immediately ac
 Permission Set Allow List Access Controls allow you to limit who can be assigned specific permission sets. For example, you can define an access control that ensures only certain users are allowed to have a permission set that provides access to critical data.
 
 * Prevent Unauthorized Access: Prevent unauthorized users from being granted permissions that expose sensitive data.
-* Ensure Compliance: Enforce strict policies for who can access certain permissions, ensuring compliance with both internal and external regulatory standards.
+* Ensure Compliance: Enforce strict access controls for who can access certain permissions, ensuring compliance with both internal and external regulatory standards.
 
 ### Real-Time Monitoring and Enforcement
 
@@ -75,14 +75,14 @@ Guard’s access controls can automatically revert violations or send actionable
 
 ## How It Works
 
-### Create a Policy
+### Create an Access Control
 
-To create a policy, go to the access controls section in AutoRABIT Guard and click "Add Access Control."
+To create an Access Control, go to the access controls section in AutoRABIT Guard and click "Add Access Control."
 
-* Provide a descriptive name for the policy, such as "Policy for Admin Permissions."
-* Configure access controls criteria by selecting the Salesforce org, permission sets, and users who fall under the policy.
+* Provide a descriptive name for the access control, such as "Policy for Admin Permissions."
+* Configure access controls criteria by selecting the Salesforce org, permission sets, and users who fall under the rule.
 
-### Configure Policy Criteria
+### Configure Access Control Criteria
 
 * Salesforce Org: Choose the Salesforce org where the access controls will apply.
 * Permission Sets and Users: Select the permission sets you wish to monitor and the users allowed to access them. This ensures that only authorized users have access to critical permissions.
@@ -99,9 +99,7 @@ To create a policy, go to the access controls section in AutoRABIT Guard and cli
 
 ## How Access Control Violations Are Detected and Handled
 
-Guard’s policy detection relies heavily on the Change Monitoring capability, which tracks changes in your Salesforce org. When an access control is violated, Guard parses these changes to determine if they violate the defined rules.
-
-<figure><img src="../../.gitbook/assets/image (1629).png" alt=""><figcaption><p>Access Controls</p></figcaption></figure>
+Guard’s access control detection relies heavily on the Change Monitoring capability, which tracks changes in your Salesforce org. When an access control is violated, Guard parses these changes to determine if they violate the defined rules.
 
 ## **Parsing Events: How Changes Are Monitored**
 
@@ -113,15 +111,15 @@ Guard is built on top of Change Monitoring, which uses Salesforce’s SetupAudit
    1. Before Value: The user did not have the permission set assigned.
    2. After Value: The permission set is now assigned to the user.
 3. Event Parsing: Guard uses this information to determine the permission set involved ("Nebula Logger: Admin") and the user assigned to it (\[005Wy000000uRLh]).
-4. Access Control Comparison: Guard then checks whether this event violates any existing policies:
-   1. If there is a Permission Set Allow List Policy for "Nebula Logger: Admin," Guard checks whether the user is on the allow list.
+4. Access Control Comparison: Guard then checks whether this event violates any existing access controls:
+   1. If there is a Permission Set Allow List Access Control for "Nebula Logger: Admin," Guard checks whether the user is on the allow list.
    2. If the user is not on the allow list, the event is flagged as a violation.
 5. Reverting the Offending Change: If the violation is detected, Guard automatically reverts the change (i.e., removes the unauthorized permission set from the user), ensuring compliance.
-6. Email Alerts: If the policy is configured to notify admins instead of automatically reverting the change, an email alert is triggered, providing admins with all relevant details.
+6. Email Alerts: If the access control is configured to notify admins instead of automatically reverting the change, an email alert is triggered, providing admins with all relevant details.
 
 ## Handling Special Cases
 
-Some policies, such as those based on specific permissions (e.g., only user A, B, and C can have the "Modify All Data" permission), require additional logic to determine whether a violation has occurred.
+Some access controls, such as those based on specific permissions (e.g., only user A, B, and C can have the "Modify All Data" permission), require additional logic to determine whether a violation has occurred.
 
 For example:
 

@@ -60,7 +60,13 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
 
 8. Click on **Save** again and your CodeScan integration is all set.
 
-<figure><img src="../../../../.gitbook/assets/image (462).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (462).png" alt=""><figcaption><p>Click Save</p></figcaption></figure>
+
+### CodeScan ARM Integration for baseline folder in a non-SFDX structure
+
+When the baseline folder is in a non-SFDX structure and you perform an EZ-Commit with the All Supported Metadata option, it scans the entire Apex Class. This happens because the process generates a new SFDX-formatted structure under force-app/main/default, causing the system to treat it as a new file, which leads to a full scan.
+
+To avoid this, we recommend aligning the baseline structure to the SFDX format to ensure accurate file comparisons and prevent unnecessary full metadata scans.
 
 ### Configuring CodeScan's Global Criteria in ARM <a href="#configuring-codescans-global-criteria-in-arm" id="configuring-codescans-global-criteria-in-arm"></a>
 

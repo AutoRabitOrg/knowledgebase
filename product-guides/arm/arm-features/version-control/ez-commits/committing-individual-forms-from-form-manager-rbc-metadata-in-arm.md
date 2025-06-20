@@ -18,20 +18,20 @@ To safely commit a single form **without losing the others**, follow these guide
 
 * When committing changes from an org to Git using ARM, configure the commit mode to **merge** or **append**, not replace.
 * This ensures new records are being **added to** the existing set in Git rather than **replacing** the folder contents.
-* **Source:** [AutoRABIT Docs – Commit Changes from Org to Version Control](https://docs.autorabit.com/docs/commit-changes-from-org-to-version-control)
+* **Source:** [AutoRABIT Docs – Commit Changes from Org to Version Control](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-commits/committing-individual-forms-from-form-manager-rbc-metadata-in-arm#id-1.-use-merge-or-append-mode-when-supported)
 
 #### 2. Avoid Committing a Partial Folder
 
 * If ARM pulls and prepares a folder (like `FormManager`) with only one record, it treats that as the _entire_ state.
 * **Workaround:** Use the **EZ-Merge** or **file-level commit view** to cherry-pick the new or modified record and keep the others intact.
-* **Source:** [AutoRABIT Docs – EZ-Merge](https://docs.autorabit.com/docs/ez-merge)
+* **Source:** [AutoRABIT Docs – EZ-Merge](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-merge)
 
 #### 3. Use Full Pulls + Selective Commits When Possible
 
 * Pull the full set of RBC records from the org.
 * Use version control diffs to **selectively commit** the record you want to update.
 * This ensures the rest of the records stay untouched in Git.
-* **Source:** [AutoRABIT Docs – Managing Commits](https://docs.autorabit.com/docs/manage-commits)
+* **Source:** [AutoRABIT Docs – Managing Commits](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-commits)
 
 ### Important Notes
 

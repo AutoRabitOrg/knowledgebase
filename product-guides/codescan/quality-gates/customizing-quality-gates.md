@@ -21,7 +21,7 @@ To create a new Quality Gate, follow the steps below:
 Note: To customize a Quality Gate that is already in use, click on **Unlock editing** first, as shown below.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5.  Conditions on **New Code** and **Old Code** must be added separately.\
 

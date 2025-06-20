@@ -73,7 +73,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 

@@ -59,7 +59,7 @@ This feature is currently available for the following CI Jobs:
 6. **Request API Version (required):** Enter the API versions
 7. To add a custom header, click on the **Add Header** button and enter the keys and the value to it. Multiple adding of keys and values are allowed.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Default headers is set as _**"Accept" :"application/json", "Content-Type":"application/json"**_&#x20;
 

@@ -52,7 +52,7 @@ To automate testing from AutoRABIT, in a CI Job you can add a Callout URL that c
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot</p></figcaption></figure>
 5.  Content. In the JSON payload for the key:value pair:
 
     1. “grid” : “string” replace “string” with the name of one of your grids, found in the Grids section of your profile in the top right of Testim Salesforce.

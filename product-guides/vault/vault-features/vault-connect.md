@@ -207,7 +207,7 @@ To streamline the process and enhance functionality, the Vault Connect integrati
 5.  Enter the script and save it.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Example script:`<apex:page standardController="CustomX_c_x__x" >`\
    `<apex:outputText style="text-align:left" value="{!CustomX_c_x__x.RicheRich_c__c}" escape="false" />`\
    `</apex:page>`

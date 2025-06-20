@@ -65,7 +65,7 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 14. Click on the “Salesforce Orgs” to expand and observe the ORGs available. The list of ORGs include both the direct deployment and the post-deployment ORGs.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 15. Click on the “Feature(s)” to observe the list of available features.
 

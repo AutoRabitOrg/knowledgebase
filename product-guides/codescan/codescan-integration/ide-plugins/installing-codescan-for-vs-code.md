@@ -111,7 +111,7 @@ Log in to CodeScan, click on the **Projects** tab, and find the project you need
 You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.\
 
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1704).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6: Add CodeScan Configuration**
 

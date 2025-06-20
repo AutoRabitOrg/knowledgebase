@@ -18,7 +18,7 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 
 3. Click on the dropdown button beside **Weekly** **Report** and select the appropriate option to filter the data based on the chosen date range. The users can view the reports either **weekly**, **monthly,** or **yearly**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="328"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="328"><figcaption></figcaption></figure>
 
 4. View the reports for the selected dates using the **date range** icons.
 

@@ -35,7 +35,7 @@ AutoRABIT Guard’s Data Classification enhances your organization's ability to 
     Even well-protected data becomes a risk if too many people have access to it. With Guard, you can instantly view which Profiles, Permission Sets, and Permission Set Groups have access to a sensitive field.\
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Access Visibility</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Access Visibility</p></figcaption></figure>
 
 ### Getting Started
 

@@ -41,7 +41,7 @@ Component details are listed in their corresponding sections within this documen
     Expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components. This new set expands our list of LWC rules significantly. This library is comprised of Salesforce’s official ESLint plugin, allowing CodeScan to analyze LWC code more effectively.  Detailed documentation is available at [https://github.com/salesforce/eslint-plugin-lwc|https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc|https:/github.com/salesforce/eslint-plugin-lwc)\
 
 
-    <div align="center"><figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="center"><figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 **NOTE**: These following four rules were **not** added to the CodeScan library:

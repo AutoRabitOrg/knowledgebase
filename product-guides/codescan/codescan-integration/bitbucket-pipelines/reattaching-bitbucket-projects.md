@@ -26,7 +26,7 @@ Follow these steps to reattach your project analysis:
 3.  Make sure you do not have the "**Delete this project also?**" box checked. This will delete your history and is not reversible. Click **Delete Analysis**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Delete Analysis</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Delete Analysis</p></figcaption></figure>
 4.  Now use the **Attach Analysis Project** button at the top right of the screen to re-add the link.\
 
 

@@ -22,7 +22,7 @@ You’ll need the **`Deployment History`** access permission.
 2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
 3. **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.
 5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.

@@ -41,7 +41,7 @@ External IDs cause an index to be created on that field. The query optimizer the
 
 To view if a Field is Indexed/Searchable: Home -> Search Manager -> Index Management -> Select an Object to view the Indexed Fields:
 
-<figure><img src="../../../.gitbook/assets/image (1691).png" alt=""><figcaption><p>Searchability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1691) (1).png" alt=""><figcaption><p>Searchability</p></figcaption></figure>
 
 For creating Indexes manually on Big Objects in Salesforce, create custom fields (Mandatory Checkbox – Always requires a value in this field in order to save the record).
 

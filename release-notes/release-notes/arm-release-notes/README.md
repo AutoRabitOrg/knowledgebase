@@ -37,7 +37,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 **Module:** Environment Provisioning\
 
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1691).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**4. Issue: During an EZ-Commit, the Diff view did not correctly reflect profile permission changes (field/object permissions), despite being configured under My Account > Salesforce Settings.**
 

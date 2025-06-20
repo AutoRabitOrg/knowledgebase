@@ -78,13 +78,13 @@ The Feature CI Job can be created through the following options:
 1.  Initiating the **"Feature CI Job"** creation will navigate to the **"Source Type"** section of the deployment
 
     <figure><img src="../../../../../../.gitbook/assets/1 - Deploy From Version Control (1).png" alt=""><figcaption></figcaption></figure>
-2.  Select the **"Deploy using SAlesforce and version control"** option.
+2.  Select the **"Deploy using Salesforce and version control"** option.
 
     <figure><img src="../../../../../../.gitbook/assets/1 - Deploy using SF and VC (1).png" alt=""><figcaption></figcaption></figure>
 3.  Selecting this option will land on the "Source" section of the flow.
 
     <figure><img src="../../../../../../.gitbook/assets/1.1 - Deploy using SF and VC (1).png" alt=""><figcaption></figcaption></figure>
-4. Observe the following fields on the layout and provide the required inputs:
+4. **Observe the following fields on the layout and provide the required inputs:**
    * **Label Name**: Enter a name for the deployment.
    * **Description**: Add a relevant description (optional).
    * **Repository**: Select the repository from the available list.
@@ -115,7 +115,7 @@ The deployment settings for both **"Deploy From Version Control"** and **"Deploy
     <figure><img src="../../../../../../.gitbook/assets/9 - Deploy From Version Control.png" alt=""><figcaption></figcaption></figure>
 2.  **Object Configuration(s)**
 
-    Once the deployment targets defined, the interface displays configuration parameters for each object in the selected templates.
+    Once the deployment target is defined, the interface displays configuration parameters for each object in the selected templates.
 
     1. **Parameters Include:**
        1. **Object Name**\
@@ -140,13 +140,15 @@ The deployment settings for both **"Deploy From Version Control"** and **"Deploy
 
     The **Deployment Options** section defines key behaviors that control how the CI Job executes in the Salesforce environment. These toggles enable or disable specific mechanisms that influence data handling, automation, and commit actions during deployment.
 
-    The available deployment toggles include:
+    <figure><img src="../../../../../../.gitbook/assets/12.1 - Deploy From Version Control.png" alt=""><figcaption></figcaption></figure>
+
+    The available deployment options include:
 
     * **Disable Workflow Rules:** This option will deactivate the workflow rules associated with objects part of the deployment
     * **Use Bulk API (Batch API will be used if the option is not enabled):** You can transfer bulk records in a go from the source and destination org.
     * **Use UTF-8 file encoding for file read and write operations:** Use **UTF-8** as the internal representation for all string data. Text is automatically transcoded between the local encoding and UTF-8 when reading from or writing to files.
-      * **Enable UTF-8** if your data contains **only English alphabets**.
-      * **Disable UTF-8** if your data includes **non-English characters** to avoid encoding issues.
+    * **Enable UTF-8** if your data contains **only English alphabets**.
+    * **Disable UTF-8** if your data includes **non-English characters** to avoid encoding issues.
       * UTF-8 should be **enabled by default**, aligning with Salesforce’s recommended encoding standards.
     * **Automap User/Owner Data:**&#x20;
     * **Disable Validation Rules:** Select this option to temporarily deactivate validation rules on objects included in the deployment. This helps ensure smoother deployments without interruptions caused by rule enforcement.
@@ -165,7 +167,7 @@ The deployment settings for both **"Deploy From Version Control"** and **"Deploy
 
         1. **Enable Dataset Propagation**:
            * Check the option labeled **Deploy the same dataset to**.
-           * A dropdown field will appear next to the label.
+           * A drop-down field will appear next to the label.
         2. **Choose Target Orgs**:
            * Click on the dropdown to view the list of available organizations.
            * Select one or more target orgs by checking the boxes.

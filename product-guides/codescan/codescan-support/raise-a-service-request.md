@@ -4,10 +4,10 @@ CodeScan enables you to create and manage support requests, also known as suppor
 
 If you're already logged in to CodeScan and want to submit a support ticket, follow these steps:
 
-1. Select the **?** in the global header, then select **Get Help**.
+1.  Select the **?** in the global header, then select **Get Help**.\
 
-<figure><img src="../../../.gitbook/assets/image (451).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/image (1705).png" alt=""><figcaption><p>Get Help</p></figcaption></figure>
 2. When you click **Get Help**, you'll be taken to the [AutoRABIT support portal](https://support.autorabit.com/portal/en/home), where you can submit a request.
 3. Select the option: **Tickets**
 

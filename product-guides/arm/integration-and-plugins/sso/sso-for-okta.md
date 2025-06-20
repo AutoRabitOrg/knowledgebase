@@ -77,10 +77,10 @@ To add the AutoRABIT application to Okta:
 
 <figure><img src="../../../../.gitbook/assets/image (799).png" alt="" width="563"><figcaption></figcaption></figure>
 
-18. Now, login into your AutoRABIT account.
+18. Now, log in into your AutoRABIT account.
 19. Hover your mouse over the **Admin** module and select the option: **My Account**
 20. On the **My Account** page, go to the 3rd section: **SSO Configuration**
-21. Browse for the metadata XML file that you have downloaded previously in your local machine and upload them.
+21. Browse for the metadata XML file that you have downloaded previously to your local machine and upload them.
 
 <figure><img src="../../../../.gitbook/assets/image (800).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -93,6 +93,6 @@ To add the AutoRABIT application to Okta:
 
 <figure><img src="../../../../.gitbook/assets/image (802).png" alt="" width="563"><figcaption></figcaption></figure>
 
-25. This concludes SSO configuration with the AutoRABIT. You can now log in to the AutoRABIT from your Okta dashboard page directly.
+25. This concludes SSO configuration with AutoRABIT. You can now log in to AutoRABIT from your Okta dashboard page directly.
 
 <figure><img src="../../../../.gitbook/assets/image (803).png" alt="" width="488"><figcaption></figcaption></figure>

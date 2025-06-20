@@ -77,7 +77,7 @@ All backup solutions will ideally provide an option for users to download their 
 
 ### Where in Vault can I view the attachments that were backed up?
 
-File attachments cannot be viewed from the Vault user interface or in CSV format, as they are encrypted in our S3 storage. The customer must either restore those specific files in their Salesforce Org or Replicate them to another Salesforce Org.
+File attachments can be downloaded from the Vault user interface or in CSV format. Refer to [https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/start-the-backup#downloading-files](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/start-the-backup#downloading-files) for further details on download options.
 
 ### How can I filter backup data by specific dates and use it as the source to Restore/Replicate?
 

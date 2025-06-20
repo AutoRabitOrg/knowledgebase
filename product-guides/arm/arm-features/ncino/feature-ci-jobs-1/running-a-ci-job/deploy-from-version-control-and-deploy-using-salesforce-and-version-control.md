@@ -47,7 +47,7 @@ The Feature CI Job can be created through the following options:
 3.  The screen will navigate to the **"Source"** step of the deployment flow
 
     <figure><img src="../../../../../../.gitbook/assets/1.2 - Deploy From Version Control.png" alt=""><figcaption></figcaption></figure>
-4. Observe the following fields on the layout and provide the required inputs:
+4. **Observe the following fields on the layout and provide the required inputs:**
    * **Label Name**: Enter a name for the deployment.
    * **Description**: Add a relevant description (optional).
    * **Repository**: Select the repository from the available list.

@@ -99,7 +99,7 @@ Some users were reporting that they were unable to scroll down in the quality pr
 
 This issue has been remediated in this release.
 
-The dialog box was resized, and a searchable drop down was added (similar to the one in CVSS export.)
+The dialog box was resized.
 
 We have verified that with this fix, users are able to scroll down in the Quality Profiles section within the Project Settings.  We also verified that the dialog box is resized.
 

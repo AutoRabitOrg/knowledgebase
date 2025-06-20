@@ -2,14 +2,14 @@
 
 Branches allow you to keep track of changes that may affect the branch to which your project is linked. There are two types of branches:
 
-1. **Long lived branches** allow you to see the entire dashboard and history of your project.
-2. **Short lived branches** allow you to see the delta in issues between your branch and your master/production/target.
+1. **Long-lived branches** allow you to see the entire dashboard and history of your project.
+2. **Short-lived branches** allow you to see the delta in issues between your branch and your master/production/target.
 
-#### GitHub and Bitbucket <a href="#github-and-bitbucket" id="github-and-bitbucket"></a>
+### GitHub and Bitbucket <a href="#github-and-bitbucket" id="github-and-bitbucket"></a>
 
 When creating an analysis project from GitHub or Bitbucket repository in [CodeScanCloud](https://www.codescan.io/products/cloud/), you will be asked to choose the branch to which the project is linked. This branch will become your main branch. If you also select **Check Pull requests**, any changes that affect this main branch will be reflected in the project with the branch functionality.
 
-#### Pull Requests <a href="#pull-requests" id="pull-requests"></a>
+### Pull Requests <a href="#pull-requests" id="pull-requests"></a>
 
 If you have set your main branch to master, any relevant pull request will be analyzed when it is created and updated every time. The results will be displayed on the same page as your main branch analysis under the branches’ dropdown menu.
 
@@ -21,23 +21,23 @@ This topic is covered in a separate article. Click [here](https://knowledgebase.
 
 When a pull request is created in a VSTS repository or a repository tracked by your VSTS Build Definition, a new branch will be created on your CodeScan Cloud project. Please note that any remote repositories must have _Continuous Integration_ and _Pull Request Validation_ checked for the appropriate branches in the **Build Definition’s Triggers** menu.
 
-#### Managing branches <a href="#managing-branches" id="managing-branches"></a>
+### Managing branches <a href="#managing-branches" id="managing-branches"></a>
 
 On your **Project Analysis** page, go to **Project Setting > Branches and Pull requests**. This page allows users to delete any new branches and also change the branch that the Analysis Project is checking.
 
-<figure><img src="../../../../.gitbook/assets/P Branch 4.4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/P Branch 4.4.png" alt=""><figcaption></figcaption></figure>
 
-* **Delete Branch**: To delete a branch, click the (![](<../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
+* **Delete Branch**: To delete a branch, click the (![](<../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
 
-<figure><img src="../../../../.gitbook/assets/Delete 4.5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Delete 4.5.png" alt=""><figcaption></figcaption></figure>
 
-* **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
+* **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
 
-<figure><img src="../../../../.gitbook/assets/Rename 4.6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Rename 4.6.png" alt=""><figcaption></figcaption></figure>
 
 #### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../.gitbook/assets/Comparision status.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Comparision status.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Here you can view the branch and its Quality Gate status. Any new branch added this way will be automatically deleted after 30 days if not analyzed..
 

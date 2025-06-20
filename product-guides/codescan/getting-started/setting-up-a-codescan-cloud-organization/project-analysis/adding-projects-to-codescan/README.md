@@ -17,7 +17,7 @@ You can find all these permissions under Profile > Administrative Permissions in
 
 You will need a CodeScan organization to add a project to it. When signing up with [CodeScan Cloud](https://www.codescan.io/products/cloud/), an organization is created automatically under your username. New organizations can be created at any time using the '**+**' icon at the top-right corner of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/Create Organization 5.8.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Create Organization 5.8.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Adding a Project into CodeScan <a href="#adding-a-project-into-codescan" id="adding-a-project-into-codescan"></a>
 

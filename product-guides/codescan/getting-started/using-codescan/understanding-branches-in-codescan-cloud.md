@@ -17,27 +17,27 @@ If you have set your main branch to master, any relevant pull request will be an
 
 This topic is covered in a separate article. Click [here](https://knowledgebase.autorabit.com/codescan/docs/understanding-branches-for-salesforce-project) to go to the related article.
 
-#### Visual Studio Team Services (VSTS) <a href="#visual-studio-team-services-vsts" id="visual-studio-team-services-vsts"></a>
+### Visual Studio Team Services (VSTS) <a href="#visual-studio-team-services-vsts" id="visual-studio-team-services-vsts"></a>
 
 When a pull request is created in a VSTS repository or a repository tracked by your VSTS Build Definition, a new branch will be created on your CodeScan Cloud project. Please note that any remote repositories must have _Continuous Integration_ and _Pull Request Validation_ checked for the appropriate branches in the **Build Definition’s Triggers** menu.
 
-### Managing branches <a href="#managing-branches" id="managing-branches"></a>
+### Managing Branches <a href="#managing-branches" id="managing-branches"></a>
 
 On your **Project Analysis** page, go to **Project Setting > Branches and Pull requests**. This page allows users to delete any new branches and also change the branch that the Analysis Project is checking.
 
-<figure><img src="../../../../../.gitbook/assets/P Branch 4.4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/P Branch 4.4.png" alt=""><figcaption></figcaption></figure>
 
-* **Delete Branch**: To delete a branch, click the (![](<../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
+* **Delete Branch**: To delete a branch, click the (![](<../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the branch and click **Delete Branch**.
 
-<figure><img src="../../../../../.gitbook/assets/Delete 4.5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Delete 4.5.png" alt=""><figcaption></figcaption></figure>
 
-* **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
+* **Rename Branch**: To change the branch that the Analysis Project is tracking, click the (![](<../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon next to the main branch and click **Rename Branch**. Enter the name of the branch you would like to begin tracking. Changes will only be reflected on the project’s Overview page once the analysis has been performed.
 
-<figure><img src="../../../../../.gitbook/assets/Rename 4.6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Rename 4.6.png" alt=""><figcaption></figcaption></figure>
 
-#### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
+### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../../.gitbook/assets/Comparision status.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Comparision status.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Here you can view the branch and its Quality Gate status. Any new branch added this way will be automatically deleted after 30 days if not analyzed..
 

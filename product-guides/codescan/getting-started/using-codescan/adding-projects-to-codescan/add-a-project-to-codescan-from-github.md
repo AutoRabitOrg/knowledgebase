@@ -5,23 +5,23 @@ This document guides you how to add a **GitHub** project to your CodeScan cloud 
 1. Log in to your **CodeScan** account.
 2. On the top right corner, click on the **'+'** icon and select **Analyze new project**.
 
-<figure><img src="../../../../../../.gitbook/assets/AnalyzeProzect 5.9 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9 (1).png" alt=""><figcaption></figcaption></figure>
 
 3. This takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click **Set Up**.
 
-<figure><img src="../../../../../../.gitbook/assets/ProjectSetup 7.7 (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7 (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the next window, click on **Add Analysis Project**.
 
-<figure><img src="../../../../../../.gitbook/assets/Analysis Project 6.1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1 (1).png" alt=""><figcaption></figcaption></figure>
 
 5. You will now see a new pop-up window; select [**GitHub**](https://knowledgebase.autorabit.com/codescan/docs/integrating-codescan-with-github-actions) from the given option.
 
-<figure><img src="../../../../../../.gitbook/assets/GitProject.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/GitProject.png" alt=""><figcaption></figcaption></figure>
 
 6. Once you select [GitHub](https://knowledgebase.autorabit.com/codescan/docs/github-actions), it will redirect you to the **GitHub login** page. Validate your credentials and click on **Sign In**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="267"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="267"><figcaption></figcaption></figure>
 
 7.  On the next screen, fill in the details below:
 
@@ -32,17 +32,17 @@ This document guides you how to add a **GitHub** project to your CodeScan cloud 
     * The **Project Key** and the **Project Name** are automatically assigned. You can edit the fields per your requirements.
     * Click on **Add and Run Now.**
 
-    <figure><img src="../../../../../../.gitbook/assets/GitHubRun 6.0 (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/GitHubRun 6.0 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
     * About **Project Key**: To find the project key, refer to our documentation [HERE](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key).
 8. This triggers the project analysis and the project being added under your CodeScan organization.
 9. &#x20;You can view the project analysis report by clicking on **Details** from your VC repository.
 
-<figure><img src="../../../../../../.gitbook/assets/PR Check 6.1.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/PR Check 6.1.png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. When you click the link, it will take you to the **CodeScan Project** page, where you can view your project analysis report.
 
-<figure><img src="../../../../../../.gitbook/assets/Git Analysis 7.4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Git Analysis 7.4.png" alt=""><figcaption></figcaption></figure>
 
 Now that the webhooks have been created, every time there is a push to the tracked branch or a pull request made/updated against the tracked branch, an analysis will be triggered in CodeScan.
 

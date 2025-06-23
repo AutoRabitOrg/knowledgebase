@@ -627,7 +627,7 @@
     * [Metadata Rules on CodeScan Self-Hosted](product-guides/codescan/quality-rules/metadata-rules-on-codescan-self-hosted.md)
   * [Issues](product-guides/codescan/issues/README.md)
     * [Filtering Issues in CodeScan](product-guides/codescan/issues/filtering-issues-in-codescan.md)
-    * [Export issues to CSV in CodeScan Cloud](product-guides/codescan/issues/export-issues-to-csv-in-codescan-cloud.md)
+    * [Exporting Issues to CSV in CodeScan Cloud](product-guides/codescan/issues/export-issues-to-csv-in-codescan-cloud.md)
     * [Exporting Issues using CodeScan-Export Tool](product-guides/codescan/issues/exporting-issues-using-codescan-export-tool.md)
     * [About Issue Status](product-guides/codescan/issues/about-issue-status.md)
     * [Security Hotspots](product-guides/codescan/issues/security-hotspots.md)

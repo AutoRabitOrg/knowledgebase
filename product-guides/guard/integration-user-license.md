@@ -57,11 +57,11 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     Make sure to enable all the permissions lived above. They are located under both **System** and **Users** groups:\
 
 
-    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>Permission Sets - Modify All Data</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (2).png" alt=""><figcaption><p>Permission Sets - Modify All Data</p></figcaption></figure>
 
 
 
-    <figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Permissions - Users</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (7) (1) (1) (2).png" alt=""><figcaption><p>Permissions - Users</p></figcaption></figure>
 
     \
     After all the needed permissions are enabled, save the changes and assign the permission set to the Integration user.

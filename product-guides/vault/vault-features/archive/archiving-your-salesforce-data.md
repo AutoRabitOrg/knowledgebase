@@ -97,7 +97,7 @@ Validate your query to see whether the criteria set is correct and view the numb
        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption><p>User Message</p></figcaption></figure>
    2.  The download progress can be observed with the progress bar that replaces the “Download” button.
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption><p>Download</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption><p>Download</p></figcaption></figure>
    3. Once the download is completed, an email based on the actual state of the download will be triggered to the registered emails in Vault.
    4. For downloading individual files, click on the download icon under the "Download Files" column.
 

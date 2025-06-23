@@ -1,54 +1,47 @@
 # Specify Baseline Revision in Continuous Integration for Version Control
 
-### Introduction
+Introduction
 
 Now users can seamlessly specify the baseline revision from a set of revisions available from the repository.
 
 ### Feature Overview
 
-1. Users can select the baseline revision from which the system can select all the revisions available until that date as part of the deployment.
-2. Once a user specifies a the baseline revision, the system will automatically pick up all the commits available from that point forward, every time a deployment is triggered on that job.
+1.  The **Baseline Revision** serves as a reference point in version-controlled deployments. When configuring a CI Job, selecting a baseline revision instructs the system to automatically include all templates committed **after** that specific revision for every subsequent deployment execution.
+
+    Once the baseline revision is set:
+
+    * The system continuously monitors the repository.
+    * At runtime, it picks up **all new commits made above the baseline**, ensuring that only incremental changes are deployed.
+    * This behavior persists across multiple deployments, allowing the job to stay up to date with the latest committed templates without manual revision selection each time.
+2. This mechanism streamlines continuous integration workflows by reducing manual intervention and ensuring deployments always reflect the most recent changes since the defined baseline
 
 ### Step-by-Step Guide
 
-1. Select the ‘Version Control’ in the ‘Deployment From’ field of the ‘CI Job’ creation screen.
+1.  Select the "Deploy From Version Control", option at the "Source Type".
 
-<figure><img src="../../../../../../.gitbook/assets/image (31) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/1 - Baseline Revision.png" alt=""><figcaption></figcaption></figure>
+2. **On this page, select the following required fields and input the necessary values:**
+   1. **Label Name**: Enter the preferred label to identify the CI job.
+   2. **Description**: Provide a relevant description outlining the purpose of the deployment.
+   3. **Repository**: Select the appropriate repository from the available list.
+   4. **Branch**: Choose the required branch associated with the selected repository.
+   5. **VC Fetch Type**: Select the required "Fetch Type" from the available list.
+   6. **From Revision**: Select the starting revision to define the lower boundary of the revision range.
+   7. **To Revision**: Select the ending revision to define the upper boundary of the revision range.
+3.  **VC Fetch Type:** Select the "Baseline Revision" from the available list.
 
-2. Select ‘Baseline Revision’ in the ‘Deployment Type’ field as shown in the following screenshot.
+    <figure><img src="../../../../../../.gitbook/assets/2 - Baseline Revision (1).png" alt=""><figcaption></figcaption></figure>
+4.  Select the "Baseline Revision" from the available list of versions.
 
-<figure><img src="../../../../../../.gitbook/assets/image (32) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/3 - Baseline Revision.png" alt=""><figcaption></figcaption></figure>
 
-3. Select ‘Git’ in the ‘Version Control’ field as shown in the following screenshot.
+    <figure><img src="../../../../../../.gitbook/assets/4 - Baseline Revision.png" alt=""><figcaption></figcaption></figure>
+5.  **Destination**: Select the target org where the deployment should be executed.
 
-<figure><img src="../../../../../../.gitbook/assets/image (33) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/5 - Baseline Revision.png" alt=""><figcaption></figcaption></figure>
+6.  **Job Settings**: The "Job Settings" screen allows configuration of deployment behaviors, scheduling options, user notifications, and post-deployment dataset propagation in a CI Job.
 
-4. Select the required repository from the list in the ‘Repository’ field, as shown in the following screenshot.
+    <figure><img src="../../../../../../.gitbook/assets/6 - Baseline Revision.png" alt=""><figcaption></figcaption></figure>
+7.  **Preview**: The final preview screen summarizes source, destination, and job settings, confirming that all commits after the selected baseline revision will be included in the CI job deployment.
 
-<figure><img src="../../../../../../.gitbook/assets/image (34) (4).png" alt=""><figcaption></figcaption></figure>
-
-5. Select the ‘Branch’ to which users can deploy through the ‘Branch’ field available.
-
-<figure><img src="../../../../../../.gitbook/assets/image (35) (4).png" alt=""><figcaption></figcaption></figure>
-
-6. Select the required revision from the list available in the ‘Revision’ field, as shown in the following screenshot.
-
-<figure><img src="../../../../../../.gitbook/assets/image (36) (4).png" alt=""><figcaption></figcaption></figure>
-
-7. Open the ‘Revision’ field by clicking on the search icon. Upon clicking the search icon, a popup opens up, as shown in the following screenshot.
-
-<figure><img src="../../../../../../.gitbook/assets/image (37) (3).png" alt=""><figcaption></figcaption></figure>
-
-8. Select the required commit as a baseline revision and click ‘ok’ to confirm. When you complete the selection, the selected commit is displayed on the field.
-
-<figure><img src="../../../../../../.gitbook/assets/image (38) (3).png" alt=""><figcaption></figcaption></figure>
-
-9. Upon clicking ‘Save’ on the ‘CI Jobs’ configuration, users will be redirected to the ‘Job List’ section of the ‘CI Jobs’ page, as shown below.
-
-<figure><img src="../../../../../../.gitbook/assets/image (39) (3).png" alt=""><figcaption></figcaption></figure>
-
-10. Upon clicking the ‘Play’ button, users are taken to the ‘New Build’ page, where users can ‘Trigger Build’ using the button.
-
-    * On the ‘New Build’ screen, users can view the ‘Baseline Revision’ selected, under the ‘Baseline Revision’, as shown below.
-
-    <figure><img src="../../../../../../.gitbook/assets/image (41) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/7 - Baseline Revision.png" alt=""><figcaption></figcaption></figure>

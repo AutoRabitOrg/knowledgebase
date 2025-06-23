@@ -118,10 +118,10 @@ The type of component being visualized is flow. Decisions exist within that flow
 
 1. Login to your CodeScan Cloud account or SonarQube™
 2. Click on the Rules menu
-3. In the Filters pane, search for Xpath rule template.
+3.  In the Filters pane, search for XPath rule template.\
 
-<figure><img src="../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/image (1725).png" alt=""><figcaption><p>XPath Rule Template</p></figcaption></figure>
 4. Select the XPath rule template of the language of your choice.&#x20;
 5. Under Custom Rules click on Create.
 

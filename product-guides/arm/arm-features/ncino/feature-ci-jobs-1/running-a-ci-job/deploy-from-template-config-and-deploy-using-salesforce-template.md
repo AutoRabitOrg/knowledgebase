@@ -20,7 +20,7 @@
 
 The Feature CI Job can be created through the following options:
 
-1.  Click on the "Feature CI Job" option on the create drop-down
+1.  Click on the "Feature CI Job" option on the create drop-down.
 
     <figure><img src="../../../../../../.gitbook/assets/3 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 2.  Click on the "Create feature CI Job" button on the CI Jobs List page to initiate the job creation
@@ -49,7 +49,7 @@ The Feature CI Job can be created through the following options:
 
 <figure><img src="../../../../../../.gitbook/assets/5 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 
-4. The following fields must be completed as part of the initial CI Job setup:
+4. **The following fields must be completed as part of the initial CI Job setup:**
    * **Label Name**\
      A custom name must be provided in this field. It is mandatory and is indicated by the asterisk symbol next to the input box.
    * **Description**\
@@ -62,7 +62,7 @@ The Feature CI Job can be created through the following options:
 
 <figure><img src="../../../../../../.gitbook/assets/5.1 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 
-5. Feature Selection
+5. **Feature Selection:**
 
 In the CI Job creation workflow, the **Feature Type** must be selected first. Once the feature type (e.g., _Community_) is selected, the **Features** section becomes active.
 

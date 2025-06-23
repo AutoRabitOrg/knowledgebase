@@ -736,7 +736,7 @@
       * [Archive Reports](product-guides/vault/vault-features/reporting/archive-reports.md)
       * [Stale Jobs](product-guides/vault/vault-features/reporting/stale-jobs.md)
     * [Restore](product-guides/vault/vault-features/restore/README.md)
-      * [Restoring the Metadata/Data to the Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
+      * [Restoring Metadata/Data to a Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
     * [SIEM Logs](product-guides/vault/vault-features/siem-logging.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect.md)
   * [Vault Best Practices](product-guides/vault/vault-best-practices.md)

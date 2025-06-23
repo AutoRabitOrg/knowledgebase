@@ -11,7 +11,7 @@ If you have a Git project created in CodeScan Cloud:
 * Scroll down to the **Testing** section
 * Add the JSON code coverage file name and re-run the analysis
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 When you are generating your coverage file with the Salesforce CLI, the JSON file name will be generated dynamically.  Rename this file after it is created to make sure it can be referenced consistently.

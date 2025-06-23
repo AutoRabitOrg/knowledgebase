@@ -18,11 +18,11 @@ Before configuring SSO in OKTA, you must enable SSO in CodeScan.
 1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).\
    ![](<../../../../.gitbook/assets/image (9).png>)
 2. Go to **`Administration > SAML Connections`**.\
-   ![](<../../../../.gitbook/assets/image (1) (1).png>)
+   ![](<../../../../.gitbook/assets/image (1) (1) (1).png>)
 3.  Click on **`Create Connection`**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. In the **`Connection name`** field, enter the identity provider name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `OKTA-SAML`
 5. Enter a valid domain name of the organization in the **`Corporate domain`** field that can be authenticated in the Identity Provider. _**This property cannot be updated after SAML Connection creation.**_\
@@ -37,7 +37,7 @@ Before configuring SSO in OKTA, you must enable SSO in CodeScan.
 7.  Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 8.  You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to OKTA.\
 
 

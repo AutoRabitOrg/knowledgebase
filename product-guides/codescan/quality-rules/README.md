@@ -63,13 +63,15 @@ To make changes to the Quality Rules, users must be granted the _**Administer Qu
 ### Create Custom Rules <a href="#create-custom-rules" id="create-custom-rules"></a>
 
 Custom rules are considered like any other rule, except that you can edit or delete them. You can define your own custom rules in CodeScan using Rule templates.\
-To find templates, select the **Show Templates Only** option from the **Template** dropdown menu.
+To find templates, select the **Show Templates Only** option from the **Template** dropdown menu.\
 
-<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-To create a custom rule from a template, select **Create** next to the **Custom rules** heading and enter the following information:
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Show Templates Only</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+To create a custom rule from a template, select **Create** next to the **Custom rules** heading and enter the following information:\
+
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Name
 * Key (auto-suggested)
@@ -83,6 +85,7 @@ To create a custom rule from a template, select **Create** next to the **Custom 
 
 Unlike other rules, you can edit or delete custom rules. When a custom rule is deleted, it is not removed from the CodeScan Cloud instance. Instead, its status is set to "REMOVED", allowing relevant issues to continue to be displayed properly.
 
-Click on the custom rules to view its details. Under the **Parameter** section, you have the option to edit the custom rule information or delete them.
+Click on the custom rules to view its details. Under the **Parameter** section, you have the option to edit the custom rule information or delete them.\
 
-<figure><img src="../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Custom Test Rule</p></figcaption></figure>

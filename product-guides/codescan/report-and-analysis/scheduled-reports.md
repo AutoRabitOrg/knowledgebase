@@ -11,10 +11,10 @@ Previously, the project reports were available for download for the main branche
 To configure scheduled reports,
 
 1. Select the CodeScan organization and choose your project.
-2. Navigate to the **More** tab and choose **Project Reports** from the dropdown.
+2.  Navigate to the **More** tab and choose **Project Reports** from the dropdown.\
 
-<figure><img src="../../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Project Reports</p></figcaption></figure>
 3. Choose **Scheduling** option as **Cron**, if not automatically selected.
 4. The **Cron expression** is a string consisting five subexpressions (fields) that describe individual details of the schedule.
 
@@ -27,6 +27,7 @@ To configure scheduled reports,
 | Day of week  | 1-7 or SUN-SAT  | , - \* ? / L C #           |
 
 5. Choose **Receive Scheduled Reports** as **Enabled**.
-6. Click **Run now**.
+6.  Click **Run now**.\
 
-<figure><img src="../../../.gitbook/assets/image (415).png" alt="" width="486"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption><p>Run Now</p></figcaption></figure>

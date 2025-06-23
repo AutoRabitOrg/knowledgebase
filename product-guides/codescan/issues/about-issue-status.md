@@ -4,29 +4,32 @@
 
 An issue can have the following statuses:
 
-* **Open**: The initial status after the first analysis. A user can reopen an issue that has been marked as Accepted or False positive. 
-* **Confirmed**: Set by an authorized user to confirm they have reviewed it and decided to address the issue.
+* **Open**: This is the initial status assigned by CodeScan when a new issue is detected during an analysis. (**Reopened:** A user can reopen a False positive, Accept Issues. If a fixed issue still exists after the next analysis, CodeScan automatically reopens it, indicating that the fix was unsuccessful.)
+* **Accept (Won’t Fix)**: Select if the user decides not to fix the issue and thinks the rule is irrelevant in this context.
+* **False Positive (Analysis is mistaken):** Set by an authorized user if the analysis is mistaken. (This issue can be suppressed if it was not raised accurately.). CodeScan ignores false-positive issues in the quality reports and code ratings.
+* **Confirmed (deprecated)**: An issue is moved to Confirmed when a user manually validates it as a valid issue that needs to be addressed.
 
-CodeScan ignores confirmed issues in the code ratings but displays the number of confirmed issues in various analysis snapshots in the UI.
+Note: CodeScan ignores confirmed issues in the code ratings but displays the number of confirmed issues in various analysis snapshots in the UI.
 
-* **Resolve as False Positive:** Set by an authorized user if the analysis is mistaken. (This issue can be suppressed if it was not raised accurately.). CodeScan ignores False Positive issues in the quality reports and code ratings.
-* **Resolve as Fixed**: Set by an authorized user if the confirmed issue has been resolved in the code (i.e., it is no longer detected) and is waiting for the subsequence analysis to close it—or reopen it if it was not actually fixed.
-* **Resolve as Won’t Fix**: Select if the user decides not to fix the issue and thinks the rule is irrelevant in this context.
+*   **Fixed (deprecated)**: Set by an authorized user if the confirmed issue has been resolved in the code (i.e., it is no longer detected) and is waiting for the subsequent analysis to close it, or reopen it if it was not actually fixed.\
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-If users tend to mark many issues as False Positives, it means that some coding rules are not appropriate for the project. In that case, rules can be deactivated in the quality profile, or the project's analysis scope can be adjusted to exclude files.
+    <figure><img src="../../../.gitbook/assets/image (1719).png" alt=""><figcaption><p>Fixed</p></figcaption></figure>
 
-The following diagram shows the Issue lifecycle:
+If users mark many issues as False Positives, it means that some coding rules are inappropriate for the project. In that case, rules can be deactivated in the quality profile, or the project's analysis scope can be adjusted to exclude files.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Issue Lifecycle</p></figcaption></figure>
+The following diagram shows the Issue life cycle:
 
-## **Tracking Issue History**
+<figure><img src="../../../.gitbook/assets/image (1720).png" alt=""><figcaption><p>Issue Life Cycle</p></figcaption></figure>
+
+### &#x20;**Tracking Issue History**
 
 1. Under the **Issues** tab, select the violation for which you want to check the history of changes.
-2.  In the upper right corner of the Issue page, click on the arrow next to the latest change timestamp:\
-    \
+2.  You should be able to see when the Issue was introduced in the upper corner of the issue page.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1543).png" alt=""><figcaption></figcaption></figure>
-3. In the dropdown, you will see the history of all changes made to this issue, such as member assignment, severity, resolution changes, etc.
+    <figure><img src="../../../.gitbook/assets/image (1721).png" alt=""><figcaption><p>Issue Activity</p></figcaption></figure>
+3.  In the Activity tab, you should see the history and every activity on the Issue, such as the creation date, member assignment, severity, comments, etc.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (1722).png" alt=""><figcaption><p>Activity Tab</p></figcaption></figure>

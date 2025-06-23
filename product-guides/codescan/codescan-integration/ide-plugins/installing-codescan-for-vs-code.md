@@ -229,17 +229,63 @@ Plain text Copy
 
 VS Code extensions can be difficult to use behind a proxy. To point CodeScan at the correct proxy, all it takes is a single environment variable for your system.
 
+Follow these steps to set your environment variables:
+
+#### Windows GUI:
+
+1. Press Windows + R to open the Windows Run prompt.
+2. Type in `sysdm.cpl` and click OK.\
+   ![](<../../../../.gitbook/assets/1 Run (1).png>)
+3. Open the Advanced tab and click on the Environment Variables button in the System Properties window.\
+   ![](<../../../../.gitbook/assets/2 System_properties (2).png>)
+4. The Environment Variables window is divided into two sections. Click the New… button on the top section.\
+   ![](<../../../../.gitbook/assets/3 Variables.png>)
+5. In the New User Variable prompt, enter the Variable Name as JAVA\_TOOL\_OPTIONS, enter the following Variable Value, and click OK.\
+   ![](<../../../../.gitbook/assets/4 New_variable.png>)\
+   \
+   ![](<../../../../.gitbook/assets/5 Output.png>)
+
+#### Linux or macOS:
+
+**Temporary Setup (for current session):**
+
+In your terminal, type the following line:\
+`export JAVA_TOOL_OPTIONS="-Dhttp.proxyHost= [YOUR_PROXY_HOST] -`\
+`Dhttp.proxyPort=[YOUR_PROXY_PORT] ..."`\
+\
+All options for these variables are listed below.
+
+PLEASE NOTE:  This setting only lasts until the terminal session is closed.
+
+**Permanent Setup (for all future sessions):**
+
+Open your shell configuration file from your terminal:
+
+For Bash:\
+`nano ~/.bashrc`
+
+For Zsh (default for mac since macOS Catalina):\
+`nano ~/.zshrc`&#x20;
+
+1. Add the following line:\
+   `export JAVA_TOOL_OPTIONS="-Dhttp.proxyHost= [YOUR_PROXY_HOST] -`\
+   `Dhttp.proxyPort=[YOUR_PROXY_PORT] ..."`\
+   \
+   All options for these variables are listed below.
+2. Save the file and apply the changes:\
+   `source ~/.bashrc` or `source ~/.zshrc`
+
 The environment variable is: **`JAVA_TOOL_OPTIONS`**
 
 Follow the steps to set environment variables using the Windows GUI:
 
 1. Press **`Windows + R`** to open the Windows Run prompt.
-2. Type in **`sysdm.cpl`** and click **`OK`**.
-3. Open the **`Advanced`** tab and click on the **`Environment Variables`** button in the **System Properties** window.
-4. The **Environment Variables** window is divided into two sections. Click the **`New…`** button on the top section.
-5. In the **New User Variable** prompt, enter the **`Variable Name`** as **`JAVA_TOOL_OPTIONS,`** enter the following **`Variable Value`**, and click **`OK`**.
+2. Type in **`sysdm.cpl`** and click **OK**.
+3. Open the **Advanced** tab and click on the **`Environment Variables`** button in the **System Properties** window.
+4. The **Environment Variables** window is divided into two sections. Click the **New…** button on the top section.
+5. In the **New User Variable** prompt, enter the Variable Name as **`JAVA_TOOL_OPTIONS,`** enter the following Variable Values, and click **OK**.
 
-**Variable Value:**
+#### **Variable Values:**
 
 ```
 -Dhttp.proxyHost=[YOUR_PROXY_HOST] 

@@ -6,96 +6,113 @@ The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on
 
 ### Overview <a href="#overview" id="overview"></a>
 
-The following articles talk about how to trigger a new build for your CI Job that you've created in AutoRABIT.
+The following articles describe how to trigger a new build for your CI Job created in AutoRABIT.
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-* The users must have permission to access the **CI Job Results** page in order to trigger a build.&#x20;
-* The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and create a role with the above-mentioned permission enabled.
+- Users must have permission to access the **CI Job Results** page.
+- The account owner or admin can assign this permission under **Admin > Roles** by enabling the required permission in the role configuration.
+
+---
 
 ### Trigger a new Build <a href="#trigger-a-new-build" id="trigger-a-new-build"></a>
 
-1. Go to the **CI Job Results** screen.
-2. This screen will list all the CI Jobs for which the builds have already been triggered.
+1. Navigate to the **CI Job Results** screen.
+2. This screen lists all CI Jobs for which builds have been triggered.
 
-<figure><img src="../../../../.gitbook/assets/image (1140).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1140).png" alt="CI Job Results screen with build history"></figure>
 
-3. The CI Jobs deployed will have![](<../../../../.gitbook/assets/image (1141).png>)symbols next to them and the one with only validated CI Jobs will have![](<../../../../.gitbook/assets/image (1142).png>)symbols next to it.
-4. Select your **CI job** in the **Select Job** dropdown. The dropdown here allows switching between the CI Jobs available.
+3. Jobs with deployments display the icon: ![](<../../../../.gitbook/assets/image (1141).png>), while validated-only jobs show: ![](<../../../../.gitbook/assets/image (1142).png>)
+4. Use the **Select Job** dropdown to choose your CI job.
 
-<figure><img src="../../../../.gitbook/assets/image (1143).png" alt="" width="427"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1143).png" alt="Select CI Job from dropdown list" width="427"></figure>
 
-5. If there are no builds triggered yet, you get the notification as, **"No builds found for this job. Please trigger a new build for results."** Click on **Build Now**.
+5. If no builds exist yet, you'll see:  
+   **"No builds found for this job. Please trigger a new build for results."**  
+   Click **Build Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (1144).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1144).png" alt="Build Now button for first-time build trigger"></figure>
 
-6. If the builds already exist and you wish to trigger another one, you can do so using the **Build Now** button.
+6. If previous builds exist, click **Build Now** to trigger a new build.
 
-<figure><img src="../../../../.gitbook/assets/image (1145).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1145).png" alt="Build Now button to trigger additional builds"></figure>
 
-7. The new build screen differs based on how your CI job is configured (with or without ALM configuration).
+7. The build initiation screen will differ depending on whether your CI Job is configured with ALM.
 
-**ALM configured CI Job**
+---
 
-For CI jobs configured with ALM details, the following screens are displayed and you can find the ALM work item details configured to the source Version control branch here.
+**ALM-configured CI Job**
 
-<figure><img src="../../../../.gitbook/assets/image (1146).png" alt=""><figcaption></figcaption></figure>
+ALM-integrated CI Jobs display ALM work item information from the source version control branch.
 
-* **Commit:** The ALM work items that are configured while committing to the selected source branch and meet the CI Job configuration will get fetched. All the available work item types, their status, and ALM data are displayed as per the workflow defined in the ALM system.
+<figure><img src="../../../../.gitbook/assets/image (1146).png" alt="ALM integration panel showing work items"></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1147).png" alt="" width="513"><figcaption></figcaption></figure>
+- **Commit**: Displays work items committed to the source branch.
 
-* **Merge:** The ALM work items configured while merging to the selected source branch and meet the CI Job configuration will get fetched will get displayed.
+<figure><img src="../../../../.gitbook/assets/image (1147).png" alt="ALM work items from commits" width="513"></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1148).png" alt="" width="563"><figcaption></figcaption></figure>
+- **Merge**: Displays work items merged into the source branch.
+
+<figure><img src="../../../../.gitbook/assets/image (1148).png" alt="ALM work items from merges" width="563"></figure>
 
 {% hint style="info" %}
 **Important Note:**
 
-1. **For ALM Label Type as Commit**: When you pick a work item in the dropdown, the result will show all commits regardless of the status configured.
-2. If the user does not specify any label, all the **committed** and **merged work item** revisions will be packaged based on the CI job configuration. This scenario applies to scheduled CI jobs too.
+1. **ALM Label Type: Commit** — If a label is selected, results show all commits regardless of status.
+2. If no label is selected, all committed and merged revisions matching the CI Job configuration will be packaged. This applies to scheduled CI Jobs as well.
 {% endhint %}
 
-**Without ALM configured CI Job**
+---
 
-For the CI jobs configured without ALM, the below screen will be displayed.
+**Without ALM-configured CI Job**
 
-<figure><img src="../../../../.gitbook/assets/image (1149).png" alt=""><figcaption></figcaption></figure>
+CI Jobs without ALM integration show the following build input screen:
 
-* Under the **Build** inputs, enter the **title** of the build and add **comments** if any
-* Choose the **Deployment Type** i.e., **Deploy** (deploy the changes to the destination org/branch) or **Validate only** (validating before deploying the changes to the destination org).
-* Additional options:
-  1. **Run Code Coverage On Destination:** This option is visible only if the user has been enabled to run the apex text class when configuring their CI Job. This option generates the code coverage report which provides information about the apex tests that are run, the classes that are covered, and the assertions that have failed and provide a percentage of the code that is covered by the test execution.
-  2. **Enable Rollback For Deployment:** This option will enable the rollback function when running the deployment. This option will also be visible if the user has selected the **Rollback** option in the **Deploy** section while configuring their CI Job.
-  3. **Ignore Warnings:** This checkbox allows the metadata members to deploy even if warnings are encountered.
-* Add any additional information in the **Notes** section. However, this is optional.
-* Click on **Trigger Build**. It validates the user credentials and upon successful validations, the build gets triggered.
+<figure><img src="../../../../.gitbook/assets/image (1149).png" alt="Trigger build screen for non-ALM jobs"></figure>
+
+- Enter a **Title** and optional **Comments**
+- Choose **Deployment Type**:
+  - **Deploy**: Executes a full deployment to destination org or branch
+  - **Validate only**: Runs validations without deployment
+
+**Additional Options:**
+
+1. **Run Code Coverage On Destination**  
+   - Enabled if test execution is configured in the CI Job  
+   - Generates Apex test coverage reports
+
+2. **Enable Rollback For Deployment**  
+   - Enabled if **Rollback** was selected in the CI Job's **Deploy** section
+
+3. **Ignore Warnings**  
+   - Allows deployment to continue despite warnings
+
+- Use the **Notes** field to enter optional information
+- Click **Trigger Build** to validate and execute the build
 
 {% hint style="info" %}
 **Important Notes:**
 
-* **Trigger Build** does not run the test cases for **Validate only** deployment type.
-* It's best not to edit the CI jobs while the build progresses, which may lead to the failure of the job. Abort the build process if required to edit the CI jobs.
+- The **Validate only** deployment type does not run test cases.
+- Avoid editing CI Jobs while a build is in progress to prevent job failure. Abort the build if edits are necessary.
 {% endhint %}
 
-8. You'll be redirected to the [CI Job Results](ci-job-history.md) page where you can view the detailed report for your build triggered.
+8. Upon triggering, you will be redirected to the [CI Job Results](ci-job-history.md) page, where build reports are available.
 
-### For the following events in Pull request, AutoRABIT will initiate the build:
+---
 
-```
-GITHUB_ACTIONS_TOPROCEED = "opened,edited,synchronize"
-```
+### For the following Pull Request events, AutoRABIT triggers a build:
 
-**Here is the validation detail:**
 
-When you edit the pull request and commit the change, the CI job is triggered as expected.
+**Validation Details:**
 
-When you edit the pull request, it's marked as edited. Upon committing the pull request, it synchronizes and pushes as expected.
+- Editing and committing a pull request triggers the CI job as expected.
+- When a pull request is edited, GitHub marks it accordingly, and AutoRABIT builds are triggered upon commit synchronization.
 
-**Refer to the screenshot below for webhook delivery:**
+**Webhook Delivery Screenshot:**
 
-<figure><img src="../../../../.gitbook/assets/image (1150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1150).png" alt="Webhook event delivery log from GitHub"></figure>
 
-**The screenshot below refers to webhook configuration settings:**
+**Webhook Configuration Screenshot:**
 
-<figure><img src="../../../../.gitbook/assets/image (1151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1151).png" alt="Webhook settings for GitHub repository integration"></figure>

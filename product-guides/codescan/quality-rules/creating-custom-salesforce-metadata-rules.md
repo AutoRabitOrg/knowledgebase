@@ -16,19 +16,19 @@ This article explains how to enable the Salesforce Metadata rules in the CodeSca
 2.  Click on the **`Quality Profiles`** on your main organization page and then click on **`Create`** button.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Create Quality Profiles</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Create Quality Profiles</p></figcaption></figure>
 3.  Create a new rule by selecting the language as **`Salesforce Metadata`** and name your new profile. You can choose the **`Parent rule`** as an optional.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Create New Quality Profile</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Create New Quality Profile</p></figcaption></figure>
 4.  Once you create the new quality profile, you will be navigated to a new page where you need to click on **`Activate More`** button on the left.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Activate More</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Activate More</p></figcaption></figure>
 5.  Now, make sure on your left side of the page where you see the name of the rule you created; it is marked as **inactive**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Inactive</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Inactive</p></figcaption></figure>
 6. Make sure that you activate the four rules referenced below by clicking on the **`Activate`** button beside the rule.
    * _Record Type ID is Missing_
    * _Object Permissions should not be permissive_

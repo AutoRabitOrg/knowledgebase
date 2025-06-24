@@ -16,40 +16,44 @@ To customize the Quality Profile, follow the steps below:
 
 1. Access the Quality Profile menu from the Organization’s home page.
 
-<figure><img src="../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/QP Org 8.5.png" alt=""><figcaption></figcaption></figure>
 
 2. Use the **Create** button at the top right of the page to create a new Quality Profile.
-3. Enter the **Name** and choose a **Language** for the profile. Additionally, you can give your new profile a **Parent** profile.
+
+<figure><img src="../../../.gitbook/assets/QP Create 8.6.png" alt=""><figcaption></figcaption></figure>
+
+3. Enter the N**ame** and choose a **Language** for the profile. Additionally, you can either extend/copy an existing Quality Profile or create a blank Quality Profile..
+
+<figure><img src="../../../.gitbook/assets/New QP Select 8.7.png" alt="" width="375"><figcaption></figcaption></figure>
+
 4. Click **Create**.
 
-<figure><img src="../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/QP Name 8.8.png" alt="" width="375"><figcaption></figcaption></figure>
 
-5. Click on the (![](<../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon and then click on **Copy** to copy a default profile.
+4. Click on the more icon and then click on **Copy** to copy a default profile.
 
-<figure><img src="../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/QP Copy 8.9.png" alt=""><figcaption></figcaption></figure>
 
-6. Once you have chosen a name for your profile, click the **Activate More** button to begin your customization.
+5. Once you have chosen a name for your profile, click the **Activate More** button to begin your customization.
 
-<figure><img src="../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="344"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/QP Activate more 9.0.png" alt=""><figcaption></figcaption></figure>
 
-7. Use the filters on the left to determine the rules you want to see, and click the **active/inactive** button to add/remove them from your quality profile.
+6. Use the filters on the left to determine the rules you want to see, and click the **Activate/Deactivate** button to add/remove them from your quality profile.
 
-<figure><img src="../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Rule Active 9.1.png" alt=""><figcaption></figcaption></figure>
 
-8. You can bulk activate/deactivate rules for your profile using the **Bulk Change** button.
+7. You can bulk activate/deactivate rules for your profile using the **Bulk Change** button.
 
-<figure><img src="../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/BulkChange 9.3.png" alt=""><figcaption></figcaption></figure>
 
-9. When activating a rule, you will be given the option to change its **severity** and any other parameters the rule may have.
+8. When activating a rule, you will be given the option to change its **severity** and any other parameters the rule may have.
 
-<figure><img src="../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Seveirty 9.2.png" alt="" width="375"><figcaption></figcaption></figure>
 
 > **Example**:\
 > You can update the severity of the rule to `Major/Critical/Minor/Blocker/Info`
 >
-> ![](<../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+> ![](<../../../.gitbook/assets/Severity List 9.3.png>)
 >
 > To use the rule mentioned above, the parameter `minimumCommentDensity` needs to be set to a value. The minimum value is 25. If you use the value of 35 as an example, the density of comment lines of 35 will be considered.
 >
@@ -59,16 +63,16 @@ To customize the Quality Profile, follow the steps below:
 > `Suppress`: _Unit test violations will be suppressed._\
 >
 >
-> ![](<../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+> ![](<../../../.gitbook/assets/TestList 9.4.png>)
 
 ### Updating Quality Profiles
 
 To make sure that Quality Profiles used on CodeScan projects are up to date, you can find information about recently added rules by navigating to Organization → Quality Profiles:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Recently Added Rules 9.5.png" alt=""><figcaption></figcaption></figure>
 
 You can review updates and assign new rules to your Quality Profiles to make sure your code is clean and secure.
 
 Also, on the right side, the list of recently deprecated rules is available. We recommended you remove these from the Quality Profiles used:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Deprecated Rules 9.6.png" alt=""><figcaption></figcaption></figure>

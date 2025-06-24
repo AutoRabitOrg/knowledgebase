@@ -1,6 +1,6 @@
 # Post Deployment Activities
 
-### Introduction
+Introduction
 
 Using this feature, users can perform the deployments to the Orgs selected on the post-deployment activities.
 
@@ -25,66 +25,25 @@ While configuring the CI Job, users can designate up to five target orgs for pos
 
 <figure><img src="../../../../../../.gitbook/assets/8.1 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 
-4.
+4. Continue to the preview screen after completing the selections on the "Post Deployment" activities
+5.  **Preview**: The preview screen provides a holistic view of the configurations selected for the deployment.
+
+    <figure><img src="../../../../../../.gitbook/assets/5- Post Deployment (1).png" alt=""><figcaption></figcaption></figure>
+6. Click **Save** to create a CI Job. On clicking "Save", the interface will navigate to the "CI Job List" page.
+7. Initiate the job build by clicking on the "Play" icon available at the job level.
+8.  After verifying all the details of the build, the post-deployment selected can be observed here, click on the "Trigger build" to initiate the job build.
 
 
 
+    <figure><img src="../../../../../../.gitbook/assets/6.1- Post Deployment.png" alt=""><figcaption></figcaption></figure>
+9.  Once the job run is completed, the post-deployment details and logs can be observed here.
 
+    <figure><img src="../../../../../../.gitbook/assets/7- Post Deployment.png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../../.gitbook/assets/8- Post Deployment.png" alt=""><figcaption></figcaption></figure>
+10. The post-deploymnt logs can be downloaded using the logs icon.
 
+    <figure><img src="../../../../../../.gitbook/assets/9- Post Deployment.png" alt=""><figcaption></figcaption></figure>
+11. Clicking on "View Logs" will redirect the user to the "Feature Logs" section.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Users can select multiple Orgs, as shown on the screenshot below, to deploy to while creating the config for CI Jobs.
-
-<figure><img src="../../../../../../.gitbook/assets/image (23) (4).png" alt=""><figcaption></figcaption></figure>
-
-2. Once the Job is created, users can open the job created.
-
-<figure><img src="../../../../../../.gitbook/assets/image (24) (4).png" alt=""><figcaption></figcaption></figure>
-
-3. Click on the ‘Build Now’ button to trigger the build.
-
-<figure><img src="../../../../../../.gitbook/assets/image (25) (4).png" alt=""><figcaption></figcaption></figure>
-
-4. Upon completion of the CI Job deployment, the post-deployment activities will be triggered, as shown in the following figure.
-
-<figure><img src="../../../../../../.gitbook/assets/image (26) (4).png" alt=""><figcaption></figcaption></figure>
-
-5. While the post-deployment activities are being deployed, the post-deployment activities will be shown in progress, as seen in the prior screenshot.
-6. Upon successful deployment, the relevant status is shown under the ‘Post Deploy Details’ section.
-7. As shown in the following screenshot, users can click on the ‘View Details’ section to further verify post-deployment activities.
-
-<figure><img src="../../../../../../.gitbook/assets/image (27) (4).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (28) (4).png" alt=""><figcaption></figcaption></figure>
-
-8. The post-deployment Org details can also be verified by clicking open the build, as shown below.
-
-<figure><img src="../../../../../../.gitbook/assets/image (29) (4).png" alt=""><figcaption></figcaption></figure>
-
-9.  Upon opening the deployed build, the post-deployment Org details can be observed as listed below:
-
-    * Click on the ‘Post Deployment Activities’ tab.
-    * Click on the ‘Salesforce Org’ dropdown to see details for the Org deployed to.
-    * Click on the ‘Notes’ icon to see the logs of ‘Post Deployment Activities.’
-
-    <figure><img src="../../../../../../.gitbook/assets/image (30) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/10- Post Deployment.png" alt=""><figcaption></figcaption></figure>

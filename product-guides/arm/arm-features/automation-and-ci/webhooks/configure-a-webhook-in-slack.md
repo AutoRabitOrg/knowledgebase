@@ -1,36 +1,40 @@
 # Configure a Webhook in Slack
 
-1. Login to your **Slack** account.
-2. Go to [https://api.slack.com/](https://api.slack.com/)
-3. Click on **Create an app**.
+1. Log in to your **Slack** account.
+2. Navigate to [https://api.slack.com/](https://api.slack.com/)
+3. Click **Create an app**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1018).png" alt="" width="527"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1018).png" alt="Slack API homepage with Create an app button highlighted" width="527"></figure>
 
-4. Next, on the **Create an app** screen, click **From scratch**.
+4. On the **Create an app** screen, click **From scratch**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1019).png" alt="" width="443"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1019).png" alt="Slack app creation screen with From scratch option selected" width="443"></figure>
 
-5. Enter the **App Name**, pick a workspace from the dropdown list, and click on **Create App**.
+5. Enter an **App Name**, choose a **Workspace** from the dropdown, and click **Create App**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1020).png" alt="" width="441"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1020).png" alt="Slack app naming and workspace selection screen" width="441"></figure>
 
-6. Next, click on **Incoming Webhooks** under **Features** or **Add features and functionality**.
+6. In the app settings, click **Incoming Webhooks** under **Features** or **Add features and functionality**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1021).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1021).png" alt="Slack app features page with Incoming Webhooks highlighted" width="563"></figure>
 
-7. To **Activate Incoming Webhooks**, switch the button from![](<../../../../../.gitbook/assets/image (1022).png>)to ![](<../../../../../.gitbook/assets/image (1023).png>).
-8. Scroll down, and click on **Add New Webhook to Workspace**.
+7. Activate **Incoming Webhooks** by toggling the switch from disabled to enabled.
 
-<figure><img src="../../../../../.gitbook/assets/image (1024).png" alt="" width="458"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1022).png" alt="Toggle switch in disabled state">
+<img src="../../../../../.gitbook/assets/image (1023).png" alt="Toggle switch in enabled state"></figure>
 
-9. From the dropdown list select the channel for which you want to configure the webhook, and then click **Allow**.
+8. Scroll down and click **Add New Webhook to Workspace**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1025).png" alt="" width="352"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1024).png" alt="Add new webhook to workspace button in Slack app configuration" width="458"></figure>
 
-10. You'll be redirected to the previous screen. Scroll down and click on **Copy**.
+9. Choose the **channel** where notifications should be sent and click **Allow**.
 
-This webhook URL will be available in your Slack account. It can be copied again or deleted from the same section.
+<figure><img src="../../../../../.gitbook/assets/image (1025).png" alt="Slack channel selection screen for webhook integration" width="352"></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1026).png" alt="" width="461"><figcaption></figcaption></figure>
+10. After authorization, you'll return to the previous screen. Scroll down and click **Copy** to get the webhook URL.
 
-11. Next, integrate your Slack with ARM. For more information on this, click [HERE](../../../troubleshoot/how-tos/configure-mail-server-settings.md).
+<figure><img src="../../../../../.gitbook/assets/image (1026).png" alt="Slack webhook URL section with Copy button" width="461"></figure>
+
+The webhook URL can be reused or deleted from this section in Slack.
+
+11. Finally, integrate your Slack webhook URL with ARM. For more guidance, refer to [this configuration guide](../../../troubleshoot/how-tos/configure-mail-server-settings.md).

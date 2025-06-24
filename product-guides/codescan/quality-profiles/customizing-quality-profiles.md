@@ -22,7 +22,7 @@ To customize the Quality Profile, follow the steps below:
 
 
     <figure><img src="../../../.gitbook/assets/image (1727).png" alt=""><figcaption><p>Create Quality Profile</p></figcaption></figure>
-3. Enter the N**ame** and choose a **Language** for the profile. Additionally, you can either extend/copy an existing Quality Profile or create a blank Quality Profile..
+3. Enter the **Name** and choose a **Language** for the profile. Additionally, you can either extend/copy an existing Quality Profile or create a blank Quality Profile..
 
 <figure><img src="../../../.gitbook/assets/New QP Select 8.7.png" alt="" width="375"><figcaption><p>New Quality Profile</p></figcaption></figure>
 

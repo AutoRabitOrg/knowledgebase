@@ -114,9 +114,9 @@ If you want to create a rule for a new metadata type, spend time looking at the 
 
 The type of component being visualized is flow. Decisions exist within that flow; they are a direct child of the flow within the XML. Finally, the count () method can determine if there are too many flows.
 
-### Adding your Custom Rule
+### Adding Your Custom Rule
 
-1. Login to your CodeScan Cloud account or SonarQube™
+1. Log in to your CodeScan Cloud account or SonarQube™
 2. Click on the Rules menu
 3.  In the Filters pane, search for XPath rule template.\
 

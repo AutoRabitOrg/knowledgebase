@@ -1,70 +1,65 @@
-# Preparing the CSV file for ARM Data Loader
+# Preparing the CSV File for ARM Data Loader
 
-When creating the CSV file, you will have to take into the following considerations:
+When creating the CSV file, follow the considerations below to ensure compatibility and efficiency with ARM Data Loader.
 
-### File format and general recommendations <a href="#file-format-and-general-recommendations" id="file-format-and-general-recommendations"></a>
+---
 
-1. ARM Data Loader accepts CSV (comma separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
-2. The file must be UTF-8 encoded
-3. Make sure you don't have any duplicated or empty headers.
-4. Ensure you do not have any empty columns or any columns with the same header names as this can cause field mapping issues.
-5. Ensure you have a column header and rows of data populated for all system required fields such as Account Name or Contact Last Name
-6. Try to name your column headers with the same names as your Salesforce ID fields to make mapping easier.
-7. In your Excel file, prior to saving it as a CSV, leverage conditional formatting functionality to highlight cells with duplicate values in columns that should not have duplicates
-8. Keep your files at a maximum size of 10MB.
-9. When dealing with files that are larger than **200 rows**, pick the **Use Bulk API** option in the **Run Configuration** dialog box. This will give you optimum performance for large files.
-10. Data Loader does not allow importing multiple columns into one field in Salesforce. You will need to concatenate these fields before uploading.
+### File Format and General Recommendations <a href="#file-format-and-general-recommendations" id="file-format-and-general-recommendations"></a>
 
-### Field type format supported <a href="#field-type-format-supported" id="field-type-format-supported"></a>
+1. Files must be in **CSV (Comma-Separated Values)** format. Use Microsoft Excel or a similar spreadsheet program to create your file.
+2. Ensure the file is **UTF-8 encoded**.
+3. Do **not include duplicated or empty headers**.
+4. Remove **empty columns** and **duplicate header names**, as these can disrupt field mapping.
+5. Include **column headers and data rows** for all **required system fields** (e.g., *Account Name*, *Contact Last Name*).
+6. **Match column headers to Salesforce API field names** for easier mapping.
+7. Use Excel’s **conditional formatting** to highlight duplicate values in fields that must be unique before saving.
+8. File size must not exceed **10MB**.
+9. For files with **more than 200 rows**, enable **"Use Bulk API"** during **Run Configuration** for better performance.
+10. **Concatenate fields** before upload—Data Loader does not merge multiple columns into one Salesforce field.
 
-#### ID Field <a href="#id-field" id="id-field"></a>
+---
 
-Case-sensitive 15-character alphanumeric string that uniquely identifies a particular record (ex. 003D000000yUbCD)
+### Field Type Format Supported <a href="#field-type-format-supported" id="field-type-format-supported"></a>
 
-#### Number <a href="#number" id="number"></a>
+#### ID Field
+- **Format:** 15-character alphanumeric, case-sensitive (e.g., `003D000000yUbCD`)
 
-Can only contain numbers and decimal spaces. ARM Data Loader will not accept text in number fields.
+#### Number
+- Accepts **only numbers and decimal points**. Text values are not allowed.
 
-#### Text <a href="#text" id="text"></a>
+#### Text
+- Accepts **all characters**, including letters, numbers, and symbols.
 
-Can support all characters.
+#### Currency
+- Accepts **numbers and decimal points only**.
+- **Remove** currency symbols and commas.
 
-#### Currency <a href="#currency" id="currency"></a>
+#### Date
+- Format: `MM-DD-YYYY` or `YYYY-MM-DD`  
+  Refer to [Salesforce Date Formatting](https://help.salesforce.com/s/articleView?language=en_US&mode=1&type=1&id=000325035) for alternatives.
 
-Can only contain numbers and decimal spaces.
+#### Date/Time
+- Format: `MM-DD-YYYYThh:mm:ss-hh:mm` or `YYYY-MM-DDThh:mm:ss-hh:mm`
 
-Remove all currency symbols and commas from the number and currency columns.
+#### Email
+- Must include `@` and a valid domain suffix (e.g., `.com`, `.org`, `.uk`)
 
-#### Date <a href="#date" id="date"></a>
+#### Checkbox
+- Use **TRUE/FALSE** or **1/0**
 
-Must be in the format: MM-DD-YYYY or YYYY-MM-DD. Please see the Salesforce Help Topic “[Data Loader Date Values](https://help.salesforce.com/s/articleView?language=en\_US\&mode=1\&type=1\&id=000325035)” for other options.
+#### Zip Code
+- Excel may strip **leading zeros**. Format cells as *text* and reapply after conversion to CSV.
 
-#### Date/Time <a href="#datetime" id="datetime"></a>
+#### RecordTypeID
+- Provide the **record type ID** for each relevant entry.
 
-Must be in the format: MM-DD-YYYYThh:mm:ss-hh:mm or YYYY-MM-DDThh:mm:ss-hh:mm.
+#### Lookup Fields
+- Must contain a **valid record ID** from an existing ARM record.
 
-#### Email <a href="#email" id="email"></a>
+---
 
-Must contain @ sign and dot some type of text at the end (.com, .uk, .org, etc.).
+### Sample CSV File <a href="#sample-csv-file" id="sample-csv-file"></a>
 
-#### Checkbox <a href="#checkbox" id="checkbox"></a>
+Below is a sample CSV containing 11 records for the **Account** object. Each row includes six fields. You may include additional fields based on your data needs. Fields omitted from the CSV will not be updated.
 
-Must contain TRUE or FALSE / 1 or 0 values.
-
-#### Zip Code <a href="#zip-code" id="zip-code"></a>
-
-If you’re working with Zip Code data that has leading zeros, Excel will remove these zeros. Leverage the Zip Code cell format to put them back. Remember, you will need to do this formatting again if you convert from Excel to CSV.
-
-#### RecordTypeID <a href="#recordtypeid" id="recordtypeid"></a>
-
-ID used to designate the record type.
-
-#### Lookup Fields <a href="#lookup-fields" id="lookup-fields"></a>
-
-Must contain record ID from an existing record in ARM.
-
-### Sample CSV file <a href="#sample-csv-file" id="sample-csv-file"></a>
-
-The following CSV sample includes 11 records for the Account object. Each record contains six fields. You can include any field for an object that you're processing. If you use this file to update existing accounts, any fields that aren't defined in the CSV file are ignored during the update.
-
-<figure><img src="../../../../.gitbook/assets/image (1139).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1139).png" alt="Sample CSV file with 11 account records and corresponding field headers"></figure>

@@ -32,4 +32,65 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
      <figure><img src="../../../../.gitbook/assets/image (1191).png" alt=""></figure>
 
 3. The callout method defaults to **POST**.
-4. Enter the endpoint i
+4. Enter the endpoint in the **URL** field.
+5. Select an **Authorization** type:
+   - **Basic**: Standard username and password.
+
+     <figure><img src="../../../../.gitbook/assets/image (1192).png" alt=""></figure>
+
+   - **Custom**: Uses `username: API Token`. Prefix the token with the keyword `token`.
+
+     <figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-31 at 12.18.51 PM.png" alt="" width="563"></figure>
+
+   - **OAuth**: Supports **Client Credentials** grant type. Required fields:
+     - **URL** (OAuth 2.0 provider)
+     - **Client ID**
+     - **Client Secret** (hidden when editing an existing CI job)
+     - **Access Token URL**
+     - **Scope** (optional)
+     - **Grant Type**: Defaults to **Client Credentials**
+
+6. The **Content-Type** header defines the request body format (e.g., JSON or XML):
+   - Use `application/json` for JSON requests.
+   - Use `application/xml` for XML requests.
+
+   <figure><img src="../../../../.gitbook/assets/image (1194).png" alt=""></figure>
+
+7. To add custom headers, click **Add Header** and define key-value pairs. You can add multiple.
+
+   - Default headers include:  
+     `"Accept": "application/json", "Content-Type": "application/json"`
+
+   <figure><img src="../../../../.gitbook/assets/image (1195).png" alt=""></figure>
+
+8. Click **Save**.
+
+### Dynamic Parameters <a href="#dynamic-parameters" id="dynamic-parameters"></a>
+
+| Parameter     | Description                 |
+| ------------- | --------------------------- |
+| `{projectName}` | Name of your CI Job         |
+| `{buildNumber}` | Build Number of your CI Job |
+| `{sforgName}`   | Name of your Salesforce Org |
+
+{% hint style="info" %}
+**Note:** You must specify values for dynamic parameters before executing the query, and their types must match expected formats.
+{% endhint %}
+
+### Viewing the Log Report <a href="#viewing-the-log-report" id="viewing-the-log-report"></a>
+
+#### Callout Type: Pre-Deployment <a href="#callout-type-predeployment" id="callout-type-predeployment"></a>
+
+View detailed logs under the **Build Log** section.
+
+<figure><img src="../../../../.gitbook/assets/image (1196).png" alt=""></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (1197).png" alt=""></figure>
+
+#### Callout Type: Post-Deployment <a href="#callout-type-postdeployment" id="callout-type-postdeployment"></a>
+
+Logs are available under the **Deployment Log** section.
+
+<figure><img src="../../../../.gitbook/assets/image (1198).png" alt=""></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (1199).png" alt=""></figure>

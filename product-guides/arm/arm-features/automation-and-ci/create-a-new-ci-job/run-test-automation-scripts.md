@@ -23,19 +23,9 @@ The interface is split into sections, detailed below.
 
 Choose how to fetch the test cases:
 
-- **TAF Labels**
 - **Version Control**
 - **AccelQ** (requires plugin)
 - **Provar** (requires plugin)
-
-#### TAF Labels
-
-Select from available TAF module labels.
-
-Options:
-- **Stop Deployment if Test Cases Fail to Compile**
-- **Run Test Even When Deployment Fails**
-- **Test Browsers**: Choose browser(s) for cross-browser testing
 
 #### Version Control
 

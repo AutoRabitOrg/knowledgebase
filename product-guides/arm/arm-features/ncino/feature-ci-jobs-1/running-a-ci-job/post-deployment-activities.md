@@ -6,10 +6,52 @@ Using this feature, users can perform the deployments to the Orgs selected on th
 
 ### Feature Overview
 
-1. When creating the configuration, users can select multiple Orgs (max 5 allowed) for post-deployment activities.
-2. This feature eliminates the necessity for performing multiple deployments to each individual Org if the same template(s) is required to be deployed to multiple Orgs.
+While configuring the CI Job, users can designate up to five target orgs for post-deployment activities. This capability streamlines the deployment process by enabling simultaneous distribution of identical templates across multiple orgs, thereby eliminating the need for separate deployments to each environment.
 
 ### Step-by-Step Guide
+
+1. **Locate the Section**:\
+   Navigate to the **Post Deployment Activities** section at the bottom of the **Job Settings** screen.
+
+<figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+
+2. **Enable Dataset Propagation**:
+   1. Check the option labeled **Deploy the same dataset to**.
+   2. A drop-down field will appear next to the label.
+3. **Choose Target Orgs**:
+   1. Click on the dropdown to view the list of available organizations.
+   2. Select one or more target orgs by checking the boxes.
+   3. The selected orgs will be listed below the dropdown, and the count of selected orgs will be shown.
+
+<figure><img src="../../../../../../.gitbook/assets/8.1 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+
+4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 1. Users can select multiple Orgs, as shown on the screenshot below, to deploy to while creating the config for CI Jobs.
 

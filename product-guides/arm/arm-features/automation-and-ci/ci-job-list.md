@@ -1,70 +1,98 @@
-# CI Job List
-
+CI Job List
 {% hint style="info" %}
-The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your chrome/firefox browser.
+For optimal viewing, set your browser zoom level to 80% in Chrome or Firefox.
 {% endhint %}
 
-The **CI Job List** screen displays the CI jobs you created to date inside ARM. The list is displayed in chronological order, meaning the most recent jobs will be displayed at the top.
+The CI Job List screen displays all CI jobs created in ARM, listed in reverse chronological order — the most recent jobs appear at the top.
 
-<figure><img src="../../../../.gitbook/assets/image (1179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1179).png" alt="CI Job List UI"></figure>
+Jobs that have been deployed display the icon
+, while jobs that have only been validated display
+.
 
-The CI jobs deployed will have![](<../../../../.gitbook/assets/image (1180).png>)symbols next to them, and the ones with only validated CI Jobs will have![](<../../../../.gitbook/assets/image (1181).png>)symbols next to it.
+Filtering Options
+Use the filters to refine your search for specific CI jobs.
 
-#### Filtering Options: <a href="#filtering-options" id="filtering-options"></a>
+<figure><img src="../../../../.gitbook/assets/image (1182).png" alt="Filtering Options UI"></figure>
+Group By: Select a specific job group from the dropdown or type the group name. Choose All Groups to view jobs from all groups.
 
-You can use the filtering options on this page to narrow your search for a CI job.
+Job Name: Search by typing or selecting a job name from the dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (1182).png" alt=""><figcaption></figcaption></figure>
+Last Modified Date Range: Filter jobs by modification date. Defaults to the last 7 days. Additional options include:
 
-1. **Group By:** Limit your search to jobs from a particular group by typing the group name in this field or scrolling down through the dropdown list. To display jobs from all groups, select **All Groups**.
-2. **Job Name:** Search for a job by typing the job name in this field or scrolling down through the dropdown list.
-3. **Last Modified Date Range:** By using this filter, you may narrow down the jobs based on when they were created or modified. By default, the **last seven days'** jobs are displayed. The jobs created/modified within the previous 14 days, 30 days, or 24 hours can be filtered. Use the **custom range** filter to specify more criteria. Then, choose the date and time range for when you wish to view the jobs.
+Last 14 days
 
-<figure><img src="../../../../.gitbook/assets/image (1183).png" alt="" width="563"><figcaption></figcaption></figure>
+Last 30 days
 
-4. **Filter options (**![](<../../../../.gitbook/assets/image (1184).png>)**):**
+Last 24 hours
 
-<figure><img src="../../../../.gitbook/assets/image (1185).png" alt="" width="401"><figcaption></figcaption></figure>
+Custom Range: Specify your own date and time range.
 
-5.  **Job Source Type:** Choose the source type as **Sandbox** or **Version Control**. To include jobs from both source types, select **All**.
+<figure><img src="../../../../.gitbook/assets/image (1183).png" alt="Date Range Filter" width="563"></figure>
+Advanced Filter Options
+:
 
-    * **Sandbox:** Select the **Source Org** from the dropdown list for the sandbox as the **source type**. To include jobs from all source orgs, select **All**.
-    * **Version Control:** Select the **Source Repository** from the dropdown list for the version control source type. To include jobs from all repositories, select **All**. Also, select the **Source Branch** from the dropdown list.
+<figure><img src="../../../../.gitbook/assets/image (1185).png" alt="Filter Panel" width="401"></figure>
+Job Source Type:
 
-    <figure><img src="../../../../.gitbook/assets/image (1186).png" alt="" width="563"><figcaption></figcaption></figure>
-6. **Destination Org:** Select the **Destination Org** from the dropdown list. To include jobs from all destination orgs, select **All**.
+Sandbox: Choose the Source Org. Select All to include all orgs.
 
-**More options on this page:**
+Version Control: Choose the Source Repository and Source Branch. Select All to include all repos and branches.
 
-<figure><img src="../../../../.gitbook/assets/image (1187).png" alt="" width="550"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1186).png" alt="Source Type Filters" width="563"></figure>
+Destination Org: Select a specific org or choose All to include jobs targeting any destination org.
 
-1. **Info:** The info icon gives you detailed information for your CI job, such as source/destination org, version control repo/branch, date and time stamp for the job created, etc.
-2. **Clone:** Create a new job using information from the existing job.
-3.  **Edit:** Update or modify the details for your CI jobs. If the job is already in progress, a popup screen appears when you click **Save**.
+Additional Options
+<figure><img src="../../../../.gitbook/assets/image (1187).png" alt="CI Job Actions" width="550"></figure>
+Info: View job metadata including source/destination orgs, repositories, branches, timestamps, etc.
 
-    <figure><img src="../../../../.gitbook/assets/image (1188).png" alt="" width="332"><figcaption></figcaption></figure>
+Clone: Create a new job using details from an existing job.
 
-    * If you click **YES**, the job in progress will be aborted, the job details will be saved, the screen will be redirected to the **CI jobs Result** page, and queued jobs will start running.&#x20;
-    * If you click **NO**, the job details will not be saved and remain on the same screen.
-    * If you want to deploy compiled objects of **FlexCard** and **OmniScript** for Vlocity, you must verify 2 things:
+Edit: Modify job details. If a job is in progress:
 
-    <figure><img src="../../../../.gitbook/assets/image (1189).png" alt="" width="452"><figcaption></figcaption></figure>
+A prompt appears on saving.
 
-    * The destination org must be registered with **OAuth**. If it is registered with **Standard**, you must register it with OAuth first and then proceed with the deployment. If the org is registered with Standard, the deployment will fail and the following message will display in the log: **`To deploy compiled versions of OmniScript and FlexCards, Please re-register your destination org with OAuth and update the Local Compilation key in the My Account section`**.
-    * You must select the **Local Compilation** checkbox in the **My Account** section and enter the **Access Key**.&#x20;
-      * The following message will be displayed in the log if you do not select this option: **`Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository`**.&#x20;
-      * The following message will be displayed in the log if you select this option but enter the wrong key: **`Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository`**.
-4. **Activate/De-Activate:** This allows you to deactivate the CI jobs for a brief session. Earlier, this provision was not there, and the users used to delete the CI jobs, which they did not want to trigger a new build. Now, you can deactivate them and re-activate them later whenever you wish to trigger a build.
-5. **Delete:** Deletes the job from the list. This cannot be undone.
+Selecting YES aborts the current job, saves changes, and redirects to the CI Jobs Result page.
+
+Selecting NO discards changes.
+
+<figure><img src="../../../../.gitbook/assets/image (1188).png" alt="Edit Job Prompt" width="332"></figure>
+For Vlocity (FlexCard/OmniScript) deployments:
+
+The destination org must be registered with OAuth. If it's registered with Standard, re-register with OAuth or deployment will fail. The following log message appears:
+
+To deploy compiled versions of OmniScript and FlexCards, Please re-register your destination org with OAuth and update the Local Compilation key in the My Account section
+
+Enable Local Compilation and enter a valid Access Key under My Account:
+
+Missing key:
+
+Deployment will be performed without local compilation due to the absence of Access Key of Vlocity's Private NPM Repository
+
+Invalid key:
+
+Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository
+
+<figure><img src="../../../../.gitbook/assets/image (1189).png" alt="Local Compilation Config" width="452"></figure>
+Activate/Deactivate: Temporarily disable jobs without deleting them. Reactivate when needed. This prevents unintended builds without loss of job data.
+
+Delete: Permanently remove the job. This action is irreversible.
 
 {% hint style="info" %}
-**Important Note about the deactivated CI jobs**:
+Important Notes on Deactivated CI Jobs:
 
-* No schedules will run post deactivation
-* Any hook configured for deactivation of the CI job post will not get processed
-* The Builds and Deploys queues will get removed
-* CI job won't trigger using the API
-* The **Edit** and **Clone** features are inaccessible for deactivated CI jobs
-* When selected during the post-deployment sequence, deactivated CI work will affect the configuration of the parent CI job
-* Trigger a new build for deactivated CI jobs is not allowed.
+Scheduled builds will not run.
+
+Configured hooks will not be processed.
+
+Build and deploy queues will be cleared.
+
+API-triggered builds are disabled.
+
+Edit and Clone options are disabled.
+
+If selected during post-deployment, deactivated jobs can affect parent CI job configuration.
+
+Triggering new builds for deactivated jobs is not allowed.
 {% endhint %}
+

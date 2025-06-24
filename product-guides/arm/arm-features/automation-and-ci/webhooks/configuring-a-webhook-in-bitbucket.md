@@ -1,47 +1,62 @@
 # Configure a Webhook in Bitbucket
 
-## **Create a Webhook API token from ARM**
+## Create a Webhook API Token from ARM
 
 1. Log in to ARM.
-2. Click on Admin Section -> API Token.
-3. Click on Create API Token.
+2. Navigate to **Admin Section > API Token**.
+3. Click **Create API Token**.
 
-<figure><img src="../../../../../.gitbook/assets/image (980).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (980).png" alt="API Token creation screen in ARM"></figure>
 
-4. Enter the token name.
-5. Select Type as “webhook.”
-6. Enter Description if required.
-7. Click on Create Option.
+4. Enter a **Token Name**.
+5. Select **Type** as **webhook**.
+6. (Optional) Add a **Description**.
+7. Click **Create Option**.
 
-<figure><img src="../../../../../.gitbook/assets/image (981).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (981).png" alt="Webhook token configuration form in ARM"></figure>
 
-8. Your New API Token is created.
+8. Your webhook API token is now created.
 
-## Create a webhook with authentication in Bitbucket&#x20;
+---
 
-1. Log in to your Bitbucket account and select a Repository in which you want to configure a Webhook.
+## Create a Webhook with Authentication in Bitbucket
 
-<figure><img src="../../../../../.gitbook/assets/image (982).png" alt="" width="563"><figcaption></figcaption></figure>
+1. Log in to your **Bitbucket** account and open the repository where you want to configure the webhook.
 
-2. Click Settings and select [Webhooks](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
-3. Next, enter the URL in the given format: \
-   \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request \
-   For example, if the instance is https://login.autorabit.com, then the payload URL would be: [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
+<figure><img src="../../../../../.gitbook/assets/image (982).png" alt="Bitbucket repository interface with Webhook option" width="563"></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (983).png" alt="" width="563"><figcaption></figcaption></figure>
+2. Go to **Settings** and select [**Webhooks**](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
+3. Enter the **Webhook URL** in the following format:
 
-4. Now fill in the details and click Save.
+Example:  
+[https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
 
-## **Smart Commits**
+<figure><img src="../../../../../.gitbook/assets/image (983).png" alt="Webhook URL configuration in Bitbucket settings" width="563"></figure>
 
-In this section, you can select the pattern used to read the comment in a revision associated with your ALM story. For example, _'git commit m \[project123] # add README file into the project'_
+4. Complete the form and click **Save**.
 
-<figure><img src="../../../../../.gitbook/assets/image (984).png" alt="" width="563"><figcaption></figcaption></figure>
+---
 
-If you want to configure a webhook in your repository, select the 'Enable auto update on webhook' checkbox to reveal the URL required for the webhook settings. For more information on how to configure a webhook in different repositories, refer [HERE](file://product-guides/arm/arm-features/webhooks). You can also choose to [sync external smart commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+## Smart Commits
 
-## For Enterprise customers
+Define patterns to associate Git commits with ALM stories.  
+Example:
 
-/api/webhook/v2/\<orgname>/`enterprise`/trigger-scm-push-request
+<figure><img src="../../../../../.gitbook/assets/image (984).png" alt="Smart commit example and configuration interface" width="563"></figure>
 
-/api/webhook/v2/\<orgname>/`enterprise`/sync-alm-commits
+To enable automatic webhook URL retrieval:
+
+- Check the **Enable auto update on webhook** box.
+- For guidance on other repositories, see the [Webhook Setup Guide](file://product-guides/arm/arm-features/webhooks).
+- To sync with external ALM tools, refer to the [Smart Commit Integration Guide](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+
+---
+
+## For Enterprise Customers
+
+Use these endpoint URLs for enterprise configurations:
+
+/api/webhook/v2/<orgname>/enterprise/trigger-scm-push-request
+
+/api/webhook/v2/<orgname>/enterprise/sync-alm-commits
+

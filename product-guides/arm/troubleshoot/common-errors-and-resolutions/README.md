@@ -106,8 +106,6 @@ Increase the timeouts to avoid this problem:
 1. Click **Project Settings > General Settings** in your Project Overview.
 2. Click the **CodeScan** tab on the left and modify the timeout under the **Unit Test Timeout** once you're in **General Settings**.
 
-For detailed information on how to change the timeouts, click [HERE](https://knowledgebase.autorabit.com/codescan/docs/unit-test-timeout).
-
 ## L
 
 ### **Local and remote repositories are not on the same revision** <a href="#autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean" id="autorabit-says-local-and-remote-repositories-is-not-on-same-revision-what-does-it-mean"></a>

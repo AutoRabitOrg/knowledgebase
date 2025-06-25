@@ -1,24 +1,30 @@
 # Update Email to Case
 
-To create this template, follow the below steps:
+The **UpdateEmailToCaseRoutingaddresses** template allows you to modify routing address configurations in the Email-to-Case setup.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **UpdateEmailToCaseRoutingaddresses** checkbox available under **Email to Case Setting.**
+## Steps to Create the UpdateEmailToCaseRoutingaddresses Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Select the **Create Unsupported Metadata Template** tab.
+5. Provide a **template name** and a **short description**.
+6. Check the **UpdateEmailToCaseRoutingaddresses** option under **Email to Case Setting**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
-9. However, you'll need to add routing address details for the auto-generated or your custom test case name. To add routing detail, do the following:
-   * Click on![](<../../../../../../.gitbook/assets/image (68).png>)icon.
-   * Enter the routing address in the **Routing Address** field.&#x20;
-   * Enter the email id in the **New Email** field.&#x20;
-   * You can even add multiple routing addresses for the above-generated test case name. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
-   * Click **OK**. Once you are finished, click **Save** to save this page.
-10. Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click on the **Run** button to run the current template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. A **Test Case Name** will automatically appear. To add custom test data, click the **Add** button.
+
+9. Add routing address details to the generated or custom test case name:
+   - Click the ![Routing Address Icon](../../../../../../.gitbook/assets/image%20(68).png) icon.
+   - Enter the **Routing Address**.
+   - Enter the **New Email** address.
+   - To add multiple routing addresses for the same test case, click the **+** symbol and repeat the steps above.
+   - Click **OK**.
+   - When done, click **Save** to confirm the configuration.
+
+10. Click **Save** again to save the entire template.
+11. After successful creation, you will be redirected to the **Environment Provisioning History** screen.
+12. Click **Run** to execute the template on your destination org.
+13. Select the **destination org** and provide **email address(es)** for notification purposes.
+14. Under **Post Deployment Steps**, select the test cases recently created.
+15. For a full summary of the operation, visit the **View History** page.

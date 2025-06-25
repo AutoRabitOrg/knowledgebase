@@ -1,47 +1,65 @@
 # Different Users in ARM
 
-### Registered Admin <a href="#registered-admin" id="registered-admin"></a>
+AutoRABIT (ARM) separates users into three distinct categories—each with its own set of privileges and responsibilities. Understanding these roles helps administrators grant the right level of access and manage the platform efficiently.
 
-The first person from an organization to sign up on AutoRABIT and purchase the subscription is automatically assigned as the Registered Admin. This user serves as the liaison between the organization and AutoRABIT.
+---
 
-Deciding who signs up from an organization as a registered admin requires significant consideration because the registered admin will have access to the **Subscription Management** page, which is not available to other admins or sub-users. From this page, a registered admin can:
+## Registered Admin <a href="#registered-admin" id="registered-admin"></a>
 
-* Create and configure teams
-* Upload the license key
-* Manage allotted subscriptions
+The **Registered Admin** is automatically created when someone in your organization purchases an ARM subscription and signs up for the first time. Acting as the primary liaison with AutoRABIT, this user has privileges that no one else—including Org Administrators—can match.
 
-The registered admin can create other admins and has access to all the modules on their dashboard as the admins, but they must contact the AutoRABIT support team for the following requests:
+### Special capabilities
 
-* Installing and configuring agents
-* Reassigning the Registered Admin
-* Increasing the licenses and extending the validity
-
-Once a request is received, the ARM support team will be able to help you further.
-
-{% hint style="info" %}
-**Important Note:**
-
-**Registered Admin** and the **user currently logged in** are disabled for ALL actions. They cannot be added, deleted, suspended, activated, deactivated, edited, or their roles delegated to other users.
-{% endhint %}
-
-### Org Administrators <a href="#org-administrators" id="org-administrators"></a>
-
-**Org Administrators** _(or **Admins**)_ are users with permission to access the ARM administration dashboard. The Admin can assign multiple roles to an individual admin if their job requires them to perform actions spanning multiple roles. You can share the responsibility of managing your ARM account by assigning administrator roles to other users.
-
-As an administrator for your organization, you can see a list of all the roles and privileges assigned to your users. This information can help you quickly determine a user's level of access to your organization's account.
+* **Subscription Management** – upload license keys, configure seats, and view subscription details.  
+* **Team Management** – create and configure teams/company settings.  
+* **Exclusive communication channel** with AutoRABIT for requests such as:
+  * Installing or configuring agents  
+  * Reassigning the Registered Admin role  
+  * Increasing license counts or extending subscription validity
 
 {% hint style="info" %}
-**Important Note:**
-
-The **Registered Admin** and all **Org Administrators** can perform all the following actions in ARM.
-
-* Add a new user
-* Edit or delete a user
-* Export user details in CSV
-* Enforce SSO
-* Add and edit user's roles and permissions
+**Important Note:**  
+The **Registered Admin** account and the **currently logged-in user** cannot be added, deleted, suspended, reactivated, or delegated. Their roles are fixed and immutable.
 {% endhint %}
 
-### General Users <a href="#general-users" id="general-users"></a>
+---
 
-General users have access to the ARM application based on the permission assigned by their Org Admin. They do not have access to the administration dashboard.
+## Org Administrators <a href="#org-administrators" id="org-administrators"></a>
+
+**Org Administrators**—often just called **Admins**—manage the day-to-day configuration of ARM. They can:
+
+* Create, edit, or delete users  
+* Assign or revoke roles and permissions  
+* Enforce SSO requirements  
+* Export user lists to CSV  
+* Perform nearly every task the Registered Admin can, except those reserved for subscription management
+
+Admins can hold **multiple roles**. When more than one role is assigned, ARM applies the **most permissive** set of rights.
+
+{% hint style="info" %}
+The **Registered Admin** and **all Org Administrators** can perform every action listed above.  
+{% endhint %}
+
+---
+
+## General Users <a href="#general-users" id="general-users"></a>
+
+General users operate ARM based on the permissions granted by their Org Admins. They:
+
+* Cannot access the **Admin** dashboard  
+* See only the modules and controls assigned through roles  
+* Focus on development tasks like EZ-Commit, CI jobs, deployments, or data loading—without administrative overhead
+
+Assigning the appropriate role ensures General Users have just enough access to do their work while protecting sensitive settings and data.
+
+---
+
+### Quick Reference
+
+| Category | Typical Responsibilities | Access to Admin Dashboard? |
+| -------- | ------------------------ | --------------------------- |
+| **Registered Admin** | Subscription, license, team, and agent management; escalation point for AutoRABIT support. | **Yes** (full) |
+| **Org Administrator** | User/role management, SSO enforcement, environment setup, CI/CD configuration. | **Yes** (full, except subscription page) |
+| **General User** | Day-to-day dev tasks: commits, merges, deployments, reports, etc. | No |
+
+Use these roles to delegate responsibilities appropriately and maintain a secure, well-governed ARM instance.

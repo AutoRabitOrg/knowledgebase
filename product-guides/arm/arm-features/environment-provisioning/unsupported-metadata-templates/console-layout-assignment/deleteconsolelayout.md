@@ -1,18 +1,26 @@
 # DeleteConsoleLayout
 
-To create this template, follow the below steps:
+The **DeleteConsoleLayout** template allows you to delete Console Layout Assignments from your Salesforce environment.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](https://knowledgebase.autorabit.com/docs/unsupported-metadata-templates) tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **DeleteConsoleLayout** checkbox available under [**Console Layout Assignment**](https://knowledgebase.autorabit.com/docs/consolelayoutsassignments)**.**
+## Steps to Create the DeleteConsoleLayout Template
+
+1. Log in to your AutoRABIT account.
+2. Click on the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Navigate to the [**Create Unsupported Metadata Template**](https://knowledgebase.autorabit.com/docs/unsupported-metadata-templates) tab.
+5. Provide a **template name** and a **short description**.
+6. Select the **DeleteConsoleLayout** checkbox under [**Console Layout Assignment**](https://knowledgebase.autorabit.com/docs/consolelayoutsassignments).
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** and the **Console Layout Name** appear automatically by default. To add the custom test data, click on **Add** button. Once done click on **Save** to save this page.&#x20;
-9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** and the **Console Layout Name** will appear automatically.
+   - Click **Add** to input custom test data.
+   - Click **Save** once data entry is complete.
+
+9. Click **Save** again to finalize the template creation.
+
+10. You will be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** from the dropdown and provide **email address(es)** to receive notifications.
+13. In **Post Deployment Steps**, choose the recently created test cases.
+14. For a detailed report of the operation, check the **View History** page.

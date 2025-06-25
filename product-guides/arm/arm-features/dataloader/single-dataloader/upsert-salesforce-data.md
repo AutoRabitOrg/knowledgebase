@@ -5,7 +5,7 @@
 The following articles describe using **Single Dataloader** to upsert data into Salesforce via a CSV file.
 
 1. Log in to your ARM account.
-2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/wp-content/uploads/2020/12/Salesforce-Data-Loader-1.pdf) module and select **`Dataloader`**.
+2. Hover your mouse over the **`Dataloader`** module and select **`Dataloader`**.
 3. Click **`Upsert`** on the right side of the screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1).png" alt="Upsert option in Dataloader UI"><figcaption></figcaption></figure>
@@ -40,13 +40,13 @@ The following articles describe using **Single Dataloader** to upsert data into 
 
 ### Process Summary Options
 
-- **Name:** Assign a name to the job.
-- **Category:** Organize processes by categories (create new or use existing).
-- **External ID Field:** Specify unique identifier other than Salesforce ID (e.g., ERP ID).
-- **Object:** Displays the object being upserted.
-- **Operation Type:** Displays **Upsert**.
-- **Impacted Records:** Shows record count.
-- **Use Bulk API:** Enable for large datasets for improved throughput.
+* **Name:** Assign a name to the job.
+* **Category:** Organize processes by categories (create new or use existing).
+* **External ID Field:** Specify unique identifier other than Salesforce ID (e.g., ERP ID).
+* **Object:** Displays the object being upserted.
+* **Operation Type:** Displays **Upsert**.
+* **Impacted Records:** Shows record count.
+* **Use Bulk API:** Enable for large datasets for improved throughput.
 
 You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **`Save`** to store and run later.
 
@@ -57,14 +57,14 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 
 ### Dataloader Configuration Options
 
-| Configuration                              | Description |
-|--------------------------------------------|-------------|
-| **Use Bulk API** | Optimized for large datasets; supports serial or parallel processing. Recommended to use **Serial Mode** if other jobs are in progress. |
-| **Batch Size** | Applies if Bulk API is disabled. Based on SOAP and better for smaller datasets. |
-| **Disable workflow rules** | Deactivates workflows during operation and reactivates post-process. |
-| **Disable Validation Rules** | Deactivates validation rules during the process and re-enables afterward. |
-| **Insert/Update with null values** | Allows null value updates in destination org. |
-| **Use UTF-8 file encoding** | Required for data containing English alphabets. Disable for non-English content. |
+| Configuration                      | Description                                                                                                                             |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Use Bulk API**                   | Optimized for large datasets; supports serial or parallel processing. Recommended to use **Serial Mode** if other jobs are in progress. |
+| **Batch Size**                     | Applies if Bulk API is disabled. Based on SOAP and better for smaller datasets.                                                         |
+| **Disable workflow rules**         | Deactivates workflows during operation and reactivates post-process.                                                                    |
+| **Disable Validation Rules**       | Deactivates validation rules during the process and re-enables afterward.                                                               |
+| **Insert/Update with null values** | Allows null value updates in destination org.                                                                                           |
+| **Use UTF-8 file encoding**        | Required for data containing English alphabets. Disable for non-English content.                                                        |
 
 22. Click **`Run`** to begin.
 
@@ -72,8 +72,8 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 
 ### Results Monitoring
 
-- **Results of Last Run:** Shows success/failure record count dynamically.
-- **Records:** Displays the total records affected.
+* **Results of Last Run:** Shows success/failure record count dynamically.
+* **Records:** Displays the total records affected.
 
 <figure><img src="../../../../../.gitbook/assets/image (72) (1) (1).png" alt="Results of last run" width="563"><figcaption></figcaption></figure>
 
@@ -86,7 +86,7 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 3. **Schedule:** Set periodic execution.
 4. **Delete:** Remove the job.
 5. **Log:** View execution logs.
-6. **VR/WFR:** View validation/workflow rules. See [Validation/ Workflow Rules](https://knowledgebase.autorabit.com/arm/docs/validation-workflow-rules).
+6. **VR/WFR:** View validation/workflow rules. See [Validation/ Workflow Rules](../validation-workflow-rules.md).
 7. **Clone:** Create a copy of the process with an option to choose a different data file.
 
 <figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1).png" alt="Clone a dataloader job" width="398"><figcaption></figcaption></figure>

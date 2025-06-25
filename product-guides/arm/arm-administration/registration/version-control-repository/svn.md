@@ -1,27 +1,31 @@
 # SVN
 
-### Registering SVN repository in ARM <a href="#registering-svn-repository-in-arm" id="registering-svn-repository-in-arm"></a>
+Connecting an SVN (Subversion) repository to AutoRABIT (ARM) lets you automate commits, merges, and CI pipelines against code stored in that repo.  
+The steps below walk an Org Admin through **registering** an SVN repository so ARM can authenticate, cache metadata, and trigger jobs.
 
-This section guides you to register the SVN repository in ARM.
+---
 
-1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** module and select the option: **`VC Repos`**.
+## Registering SVN Repository in ARM <a href="#registering-svn-repository-in-arm" id="registering-svn-repository-in-arm"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (676).png" alt="" width="285"><figcaption></figcaption></figure>
+1. Log in to **ARM**.  
+2. Hover over **`Admin`** and choose **`VC Repos`**.
 
-3. Click on **`Register Repository`**.
-4. Select the **`Version Control System`** as **`SVN`** on the **`Register Repository`** page.
-5. Enter the name of the repository to display it locally.
-6. Paste the **`Repository URL`** that SVN provides you.
-7. Choose the correct user's **`Credentials`** from the list. To create a new credential, click on the **`+`** icon.
-8. Click **`Test Connection`** to check if the connection has been authenticated. A success message is displayed after the authentication is completed.
+   <figure><img src="../../../../../.gitbook/assets/image (676).png" alt="VC Repos menu item highlighted in the Admin module" width="285"></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (677).png" alt="" width="413"><figcaption></figcaption></figure>
+3. Click **Register Repository**.  
+4. On the **Register Repository** page:  
+   * Set **Version Control System** to **SVN**.  
+   * **Repository Label** – a friendly name that appears in ARM.  
+   * **Repository URL** – the full SVN URL (e.g., `https://svn.mycorp.com/repos/project`).  
+   * **Credentials** – select stored credentials or click **+** to add new ones.  
 
-9. Finally, click **`Save`** to complete the SVN repository registration process and to close the **`Register Repository`** screen.
+5. Click **Test Connection**. A success message confirms ARM can authenticate.
+
+   <figure><img src="../../../../../.gitbook/assets/image (677).png" alt="Register Repository form for SVN with Test Connection button" width="413"></figure>
+
+6. Click **Save** to finish. The repository now appears in the VC Repos list.
 
 {% hint style="info" %}
-**Point to Remember:**&#x20;
-
-Select the **`Enable nCino`** checkbox to register the SVN repository with nCino objects included. To quickly identify nCino registered Version Control Repositories among all other repositories, nCino logos are marked in front of the Repository Label.
+**nCino projects**  
+If your repository contains nCino objects, tick **Enable nCino** while registering. ARM marks such repos with the nCino logo so you can spot them quickly.
 {% endhint %}

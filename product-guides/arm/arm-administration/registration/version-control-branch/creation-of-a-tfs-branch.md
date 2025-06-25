@@ -4,7 +4,7 @@
 
 1. Log in to your ARM account.
 2. Go to the **`VC Repo's`**` ``tab.`
-3. Select a TFS repository for which the branch needs to be created.
+3. Select the TFS repository for which the branch needs to be created.
 4. Click on **`Create`** button.
 
 <figure><img src="../../../../../.gitbook/assets/image (688).png" alt=""><figcaption></figcaption></figure>

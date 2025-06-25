@@ -284,7 +284,7 @@ redirects:
     docs/arm-support: product-guides/arm/troubleshoot/contact-arm-support.md
     docs/dataloader: product-guides/arm/dataloader.md
     docs/validation-workflow-rules: product-guides/arm/validation-workflow-rules.md
-    docs/environment-provisioning: product-guides/arm/environment-provisioning.md
+    docs/environment-provisioning: product-guides/arm/arm-features/environment-provisioning.md
     docs/troubleshoot: product-guides/arm/troubleshoot.md
     docs/release-notes: overview/release-notes/README.md
     docs/known-issues-limitations: product-guides/arm/arm-known-issues.md

@@ -71,7 +71,7 @@ To find templates, select the **Show Templates Only** option from the **Template
 To create a custom rule from a template, select **Create** next to the **Custom rules** heading and enter the following information:\
 
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Name
 * Key (auto-suggested)

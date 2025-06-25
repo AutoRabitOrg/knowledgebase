@@ -23,7 +23,7 @@ CodeScan can scan 3rd party libraries only when the code is present in the file,
     *   **Wildcards:** If you scroll the tab farther to the end, you can see a portion that says “wildcards,” under which there are rules and examples, which help you understand how to enter the specifications or part of the file name to enable this feature. \
 
 
-        <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3).png" alt=""><figcaption><p>Wildcards</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3) (1).png" alt=""><figcaption><p>Wildcards</p></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 3.  If we go under **files**, you will be able to view two options as follows:\

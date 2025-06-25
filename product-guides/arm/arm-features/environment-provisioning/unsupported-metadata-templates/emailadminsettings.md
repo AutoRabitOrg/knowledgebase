@@ -18,7 +18,7 @@ To create this template, follow the below steps:
       ii. **Preserve Lead Status:** Prevent the lead status from changing to the new lead owner's default value during lead conversion.\
       iii. **Enable Conversions for Salesforce Mobile:** Let users convert leads on the mobile app.
 
-    <figure><img src="../../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (73).png" alt=""><figcaption><p>Add Test Data</p></figcaption></figure>
 9. Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click the **Run** button to run the template on your destination org.

@@ -93,7 +93,7 @@ When you have determined which metadata members to include in the deployment, cl
 
 #### Deployment Settings and Filters <a href="#id-6-deployment-settings-and-filters" id="id-6-deployment-settings-and-filters"></a>
 
-On the **`Deployment Settings`** page, you will be presented with a list of filters to use in the [deployment](https://www.autorabit.com/blog/autorabit-tames-complex-software-deployments/):
+On the **`Deployment Settings`** page, you will be presented with a list of filters to use in the deployment:
 
 <figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

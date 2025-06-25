@@ -88,3 +88,85 @@ This section is a guide to configuring the channels to the notification types. Y
    The image below is an example of what these notifications look like on Teams.
 
 <figure><img src="../../../../.gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
+
+## Email Admin Settings
+
+### Purpose
+
+This guide walks AutoRABIT administrators through configuring outbound **email** notifications and managing restricted recipient lists. Use it when onboarding a new org or revisiting your notification strategy.
+
+***
+
+### 1  Accessing the Page
+
+1. Sign in with an account that has **Admin** privileges.
+2. In the global navigation bar choose **Admin › Notifications**.
+3. The page opens with **three** stacked configuration sections:
+   * **Mail Settings** (SMTP)
+   * **Send a Test Email**
+   * **Restricted Emails**
+
+***
+
+### 2  Mail Settings (SMTP)
+
+| Field                     | Description                                                | Typical Examples               |
+| ------------------------- | ---------------------------------------------------------- | ------------------------------ |
+| **Host Name**             | FQDN or IP address of your SMTP server.                    | `smtp.company.com`             |
+| **Port**                  | Network port the server listens on.                        | `25`, `465` (SSL), `587` (TLS) |
+| **User Name**             | Service account allowed to relay mail.                     | `notifications@company.com`    |
+| **Password**              | Password or app‑specific token for the above user.         | _••••••_                       |
+| **Protocol**              | Transport security: `SMTP`, `SMTP (SSL)`, or `SMTP (TLS)`. | `SMTP (TLS)`                   |
+| **Email From**            | The **From:** address recipients will see.                 | `noreply@company.com`          |
+| **Email Notifications**   | Toggle **Enabled / Disabled** globally.                    | _Enabled_                      |
+| **Custom Email Template** | Toggle to enable org‑specific templates.                   | _Enabled_                      |
+
+> **Remember:** Click **Save** (upper right) after any change. Settings apply immediately to future emails.
+
+#### 2.1  Send a Test Email
+
+1. Enter one or more addresses (comma‑separated) in **Recipient**.
+2. Click **Test**.
+3. Confirm delivery in the inbox; if nothing arrives, re‑check credentials, firewall rules, or SPF/DKIM settings.
+
+***
+
+### 3  Restricted Emails
+
+Block specific addresses from ever receiving system mail (e.g., DLs, test accounts, ex‑employees).
+
+* Type/paste an address and press **Enter** to add it.
+* Click the **×** in a pill to remove.
+* **Delete All** wipes the list.
+* Click **Save** afterward.
+
+***
+
+### 4  Notification Configuration Matrix
+
+Map **system events** to **delivery channels**.
+
+| Column                | Purpose                                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Notification Type** | Event emitted by AutoRABIT (e.g., _EZ‑Commit Gated Check‑in_, _Merge Request_, _PRD Deploy – Custom_). |
+| **Select Channel**    | Dropdown containing **Email** or _None_.                                                               |
+
+**Steps**
+
+1. Tick the checkbox beside each event.
+2. Choose **Email** or _None_ in the same row.
+3. Scroll and click the main **Save** button.
+
+> **Tip:** Keep noise low by selecting only critical events.
+
+***
+
+### 5  Best Practices & Troubleshooting
+
+| Issue                      | Resolution                                                                                          |
+| -------------------------- | --------------------------------------------------------------------------------------------------- |
+| Test email fails           | Verify SMTP host/port, credentials, firewall, and that the **From** address is authorized.          |
+| Emails marked as spam      | Use a real domain and configure SPF/DKIM/DMARC.                                                     |
+| No notifications delivered | Ensure **Email Notifications** toggle is _Enabled_, event checkboxes are ticked, and page is saved. |
+
+&#x20;

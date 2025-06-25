@@ -1,4 +1,4 @@
-# CodeScan License Issues (IDE)
+# License Issues (IDE)
 
 Depending on permissions in your SonarQube™ instance, the following issue can occur when running the analysis:
 
@@ -15,7 +15,7 @@ So this can be solved by allowing access to the variable or providing the licens
 
 **Here are the options:**
 
-Enable the Execute Analysis permission on the Global level to read the CodeScan license key configured on the organization level for each member/group that is using [VS Code](https://www.autorabit.com/ide-extension/).
+Enable the Execute Analysis permission on the Global level to read the CodeScan license key configured on the organization level for each member/group that is using VS Code.
 
 #### OR <a href="#or" id="or"></a>
 

@@ -1,50 +1,55 @@
-# Delegate Approvals to another User
+# Delegate Approvals to Another User
 
 {% hint style="info" %}
-**Important Note:** This article is for the **'Org Administrator'** in particular. The actions discussed in the article will not be available to the General Users. &#x20;
+**Important Note:** The steps below can be performed only by an **Org Administrator**. General users do not have access to the delegation feature.  
 {% endhint %}
 
-If a user is out of the office, the admin can delegate his/her responsibilities to another user.
+When a teammate is on vacation or otherwise unavailable, an administrator can **delegate** that user’s approvals, scheduled tasks, and repository access to an active colleague. The original account is deactivated, and the delegate steps in with identical permissions.
 
-To delegate user permissions and tasks to another user:
+---
 
-1. Login to your AutoRABIT account.
-2. Hover your mouse over the **`Admin`** tab and click on the **`Users`** option.
+## Delegate a User’s Responsibilities
 
-<figure><img src="../../../../.gitbook/assets/image (639).png" alt=""><figcaption></figcaption></figure>
+1. Log in to **AutoRABIT**.  
+2. Hover over **`Admin`** and click **`Users`**.
 
-3. Locate the **user** you'd like to delegate his permission and tasks to another user.&#x20;
-4. Click **`Delegate`**.
+   <figure><img src="../../../../.gitbook/assets/image (639).png" alt="Admin › Users option in the navigation menu"></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
+3. Locate the **user** whose responsibilities you need to delegate and click **Delegate**.
 
-5. The next screen gets divided into multiple sections where each section contains roles and permissions exercised by the current user and such roles/permissions will get delegated to a different user. **For example-** the **`Salesforce Orgs`** tab contains all the Salesforce Orgs that are registered on his name, the **`Version Control Repositories`** section will contain the list of repositories and branches for each VCS (Version Control System) that the user had registered in AutoRABIT and the repositories permission allotted to him/her.
+   <figure><img src="../../../../.gitbook/assets/image (640).png" alt="Delegate button in the Users list"></figure>
+
+4. The delegation wizard opens and lists everything tied to the departing user:
+
+   * **Salesforce Orgs** registered in their name.  
+   * **Version Control Repositories** and branch permissions.  
+   * Any **scheduled tasks** or **approval queues**.
+
+   {% hint style="info" %}
+   * To ensure the delegate can reach private repos, choose a **default global credential** from the drop-down.  
+   * Alternatively, click **+** to create a new credential and assign it immediately (see **Create New Credential** for details).  
+   * **Super Admin** and the **currently logged-in user** cannot be delegated.
+   {% endhint %}
+
+   <figure><img src="../../../../.gitbook/assets/image (641).png" alt="Delegation wizard showing tabs for Salesforce Orgs and Version Control Repositories"></figure>
+
+5. At the bottom of the wizard, pick the **delegate user** from the drop-down list of active users.  
+6. Click **Release User** to finalize the transfer.
+
+   <figure><img src="../../../../.gitbook/assets/image (642).png" alt="Release User confirmation dialog" width="408"></figure>
 
 {% hint style="info" %}
-**Important Note:**
-
-1. In order to make sure the delegated user can access the repositories, the admin needs to set a default global credential from the drop-down list. Also, once the credential is allotted to the delegated user, he/she needs to update the credentials when logged into AutoRABIT for the first time.
-2. The admin also has a provision to create a new credential and allot the same to the user. This will ensure the delegated user can access the user's repositories using the credential allotted to him. To know more about  how to create a new credential, refer to the article: [Create New Credential](https://knowledgebase.autorabit.com/arm/docs/create-users-credentials)
-3. **Super Admin** and the **user currently logged in** are disabled for ALL actions. Their roles cannot be delegated to other users.
+* The delegate **must be active**.  
+* The original user is **deactivated** automatically once delegation is complete.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
+---
 
-6. Finally, choose the user to whom you want to delegate your task and approvals.
-7. Click **`Release User`**.
+## View Delegation Logs and Reports
 
-<figure><img src="../../../../.gitbook/assets/image (642).png" alt="" width="408"><figcaption></figcaption></figure>
+After delegation, you’ll find two helpful links next to the user record in **Admin › Users**:
 
-{% hint style="info" %}
-**Important Note:**
+* **Log Details** – a detailed audit trail of the delegation process (successes, warnings, errors).  
+* **User Delegation Report** – a summary of all tasks, approvals, and schedules now owned by the delegate.
 
-1. You must select an active user as a delegate.
-2. The user who delegates his tasks/approvals will be deactivated.
-{% endhint %}
-
-8.  For delegated users, you can find the delegation report and the log details on the **`Users`** screen.
-
-    * **`Log Details:`** The log contains information about events and activities that have occurred during the user delegation process. It may contain errors, informational events or warnings, or our application problem.
-    * **`User delegation report:`** View the summary list of approvals/ scheduled tasks that are delegated to the user.
-
-    <figure><img src="../../../../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (643).png" alt="Users list with Log Details and User Delegation Report icons"></figure>

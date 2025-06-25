@@ -1,21 +1,27 @@
-# EditEmailServices
+# Edit Email Services
 
-To create this template, follow the below steps:
+The **EditEmailServices** template allows you to modify existing Email Service configurations in your Salesforce org.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+## Steps to Create the EditEmailServices Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EditEmailServices** checkbox available under **Manage Email Services.**
-7. Click **Add.**
-8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
+5. Provide a **template name** and a **short description**.
+6. Select the **EditEmailServices** checkbox under **Manage Email Services**.
+7. Click **Add**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+8. On the next screen, a **Test Case Name** appears by default.
+   - Click the **Add** button to include custom test data.
+   - Complete the required fields with appropriate values.
+   - Click **Save** to finalize the test case.
 
-9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+   ![Edit Email Services Test Case](../../../../../../.gitbook/assets/image%20(76).png)
+
+9. Click **Save** again to save the full template.
+10. Once created, you will be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to apply the template to your destination org.
+12. From the dropdown, select your **destination org**, and provide **email address(es)** for notification.
+13. In the **Post Deployment Steps**, choose the test cases you created earlier.
+14. Review the **View History** page for a detailed summary of the operation performed.

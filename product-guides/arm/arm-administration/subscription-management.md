@@ -22,7 +22,7 @@ This article is for the **registered user** in particular. **General users** do 
 
 ## Subscription Management: Overview <a href="#subscription-management-overview" id="subscription-management-overview"></a>
 
-ARM offers an easy and centralized solution for a **Registered User** of your organization to manage team subscriptions and accounts. This ensures tracking of all subscription activity, ensuring everything is logged, and nothing is lost. You use the **Subscription Management (SM)** interface to review and manage how purchased subscriptions are used on your production instance.
+ARM offers an easy and centralized solution for a **Registered User** of your organization to manage team subscriptions and accounts. This ensures tracking of all subscription activity, making sure everything is logged. You use the **Subscription Management (SM)** interface to review and manage how purchased subscriptions are used on your production instance.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

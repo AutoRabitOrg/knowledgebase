@@ -1,13 +1,13 @@
 # Table of contents
 
-* [👋 Welcome to the Knowledge Base](README.md)
+* [Welcome to the Knowledge Base](README.md)
 
 ## Fundamentals
 
-* [⚡ AutoRABIT Solutions](fundamentals/what-we-do.md)
-* [🛠️ Getting Set Up](fundamentals/getting-set-up.md)
+* [AutoRABIT Solutions](fundamentals/what-we-do.md)
+* [Getting Set Up](fundamentals/getting-set-up.md)
 * [LearningHub](https://learninghub.autorabit.com/)
-* [ℹ️ FAQs](fundamentals/faq/README.md)
+* [FAQs](fundamentals/faq/README.md)
   * [General User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
     * [ARM User Definitions](fundamentals/faq/autorabit-platform-user-definitions/arm-user-definitions.md)
   * [ARM-FAQs](fundamentals/faq/arm-faqs/README.md)
@@ -57,7 +57,7 @@
 
 ## Release Notes
 
-* [🔁 Release Notes](release-notes/release-notes/README.md)
+* [Release Notes](release-notes/release-notes/README.md)
   * [ARM Release Notes](release-notes/release-notes/arm-release-notes/README.md)
     * [Release Notes 25](release-notes/release-notes/arm-release-notes/release-notes-25.2/README.md)
     * [Release Notes 24](release-notes/release-notes/arm-release-notes/release-notes-24.4-1/release-notes-24.4.5.md)
@@ -760,9 +760,9 @@
 
 ## Resources
 
-* [🖥️ AutoRABIT Support](resources/technical-support-services.md)
+* [AutoRABIT Support](resources/technical-support-services.md)
 * [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
-* [📙 Glossary](resources/glossary.md)
+* [Glossary](resources/glossary.md)
 
 ***
 

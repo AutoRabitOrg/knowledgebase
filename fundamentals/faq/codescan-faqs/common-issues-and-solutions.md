@@ -31,7 +31,7 @@ This error may occur for projects having huge metadata.
    * Deactivate the **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`** rule.
    * Set the newly created profile as **default**.
 
-For detailed steps, please refer to [Customizing Quality Profiles](https://knowledgebase.autorabit.com/codescan/docs/customizing-quality-profiles).
+For detailed steps, please refer to [Customizing Quality Profiles](../../../product-guides/codescan/quality-profiles/customizing-quality-profiles.md).
 
 #### Error: Background Tasks Failing
 

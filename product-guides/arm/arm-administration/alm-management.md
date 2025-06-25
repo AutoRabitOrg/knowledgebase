@@ -1,7 +1,7 @@
 # ALM Management
 
 {% hint style="info" %}
-**Important Note:** The actions described here are available **only to Org Administrators**. General users cannot access ALM Management.
+**Important Note:** The actions described here are available **only to Org Administrators**. General ARM users cannot access ALM Management.
 {% endhint %}
 
 ## Why Integrate an ALM? <a href="#overview" id="overview"></a>

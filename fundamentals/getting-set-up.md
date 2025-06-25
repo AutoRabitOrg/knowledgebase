@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# 🛠️ Getting Set Up
+# Getting Set Up
 
 ## What do I need to get started?
 

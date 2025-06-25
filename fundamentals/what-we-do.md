@@ -5,7 +5,7 @@ description: >-
   promoting continuous integration and delivery.
 ---
 
-# ⚡ AutoRABIT Solutions
+# AutoRABIT Solutions
 
 AutoRABIT delivers comprehensive **Salesforce DevSecOps solutions** tailored for regulated industries, ensuring **security, quality, and productivity** in Salesforce development. Since Salesforce was built as a Customer Resource Module (CRM) rather than a development platform, AutoRABIT simplifies complex processes through automation—enabling teams to achieve more with fewer resources.
 

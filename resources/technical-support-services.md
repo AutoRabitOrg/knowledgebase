@@ -1,4 +1,4 @@
-# 🖥️ AutoRABIT Support
+# AutoRABIT Support
 
 If you need help, the first step is to look for information here in the AutoRABIT Knowledge Base. You’ll find wide-ranging documentation of AutoRABIT's entire suite of products, including existing and updated features, step-by-step guides, best practices, and frequently asked questions (FAQs).
 

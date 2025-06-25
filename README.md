@@ -5,7 +5,7 @@ description: >-
   FAQs, and troubleshooting guides.
 ---
 
-# 👋 Welcome to the Knowledge Base
+# Welcome to the Knowledge Base
 
 ## What is AutoRABIT?  <a href="#what-is-autorabit" id="what-is-autorabit"></a>
 

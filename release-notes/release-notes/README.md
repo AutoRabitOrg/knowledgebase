@@ -1,4 +1,4 @@
-# 🔁 Release Notes
+# Release Notes
 
 **Welcome to the AutoRABIT Release Notes page! This is your go-to resource for the latest updates and changes to all of our key products, including ARM, CodeScan, Vault, and nCino Integration.**
 

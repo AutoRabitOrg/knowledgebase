@@ -1,44 +1,53 @@
 # ARM User Permissions
 
-This section summarizes the permissions assigned to the user. It allows them to view the type of access and actions they can perform in ARM. For example, users with the **View Setup and Configuration** permission can view **Setup** pages, and users with the **API Enabled** permission can access any **Salesforce API**.
+Assigning the right **permissions** determines what each user can see and do inside AutoRABIT (ARM).  
+This page shows Org Administrators how to grant roles, module access, and branch access so teammates have just the access they need—nothing more, nothing less.
 
-#### To assign permissions to users: <a href="#to-assign-permissions-to-users" id="to-assign-permissions-to-users"></a>
+*Users with the **Admin** role manage their own permissions under that role and therefore do **not** appear in the Permissions list.*
 
-1. From the **`Admin`** module, go to the **`Permissions`** tab.
+---
 
-<figure><img src="../../../../.gitbook/assets/image (623).png" alt="" width="251"><figcaption></figcaption></figure>
+## Assign Permissions to Users <a href="#to-assign-permissions-to-users" id="to-assign-permissions-to-users"></a>
 
-2.  You can select one or more users:
+1. From the **`Admin`** module, open the **`Permissions`** tab.
 
-    * For **one** user, click on the user's first name.
-    * For **`Bulk Assignment`**, select the checkboxes for at least **two users**.
+   <figure><img src="../../../../.gitbook/assets/image (623).png" alt="Admin menu with Permissions tab selected" width="251"></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (625).png" alt=""><figcaption></figcaption></figure>
+2. Select one or more users:  
+   * **Single user** – click the person’s first name.  
+   * **Bulk assignment** – tick the checkboxes for at least **two** users.
 
-{% hint style="info" %}
-**Important Note:**
+   <figure><img src="../../../../.gitbook/assets/image (625).png" alt="Permissions list with checkboxes for bulk assignment"></figure>
 
-Users with the **Admin** role are not displayed on the **Permissions** page.
-{% endhint %}
+3. In the user-permission screen, choose the **Roles** and check the modules those users should access.  
+4. Click **Save**. The changes take effect on the users’ next login.  
+5. You can always click a name later to revisit that user’s detail view.
 
-3. On the next screen, select the **`Roles`** to be assigned and select the module(s) you would like to add to these users.
-4. Click **`Save`**.
-5. You can click the user's name to open the user's record in detail view from the **`User Permission`** page.
+   <figure><img src="../../../../.gitbook/assets/image (626).png" alt="User detail view showing role and module assignments"></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (626).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../.gitbook/assets/image (627).png" alt="Save button for user permissions" width="563"></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (627).png" alt="" width="563"><figcaption></figcaption></figure>
+---
 
-#### To provide branch access to a user: <a href="#to-provide-branch-access-to-a-user" id="to-provide-branch-access-to-a-user"></a>
+## Provide Branch Access to a User <a href="#to-provide-branch-access-to-a-user" id="to-provide-branch-access-to-a-user"></a>
 
-1. From the **`Admin`** module, go to the **`Permissions`** tab.
-2. Click on the user's first name.
+Need to restrict or expand Git access? Grant repository or branch permissions here.
 
-<figure><img src="../../../../.gitbook/assets/image (628).png" alt="" width="561"><figcaption></figcaption></figure>
+1. In **`Admin › Permissions`**, click the user’s name.
 
-3. On the next screen, go to the **`Version Control`** section, and select the branch(es) to which the user needs access.
+   <figure><img src="../../../../.gitbook/assets/image (628).png" alt="Selecting a user to edit branch permissions" width="561"></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (629).png" alt=""><figcaption></figcaption></figure>
+2. Scroll to the **`Version Control`** section. Check the branches the user should see.
 
-4. Select the **`Repository`** checkbox to provide access to all branches in that repository.
-5. Click **`Save`**.
+   <figure><img src="../../../../.gitbook/assets/image (629).png" alt="Version Control section with branch checkboxes"></figure>
+
+3. To grant access to **every** branch inside a repo, tick the **Repository** checkbox.  
+4. Click **Save**.
+
+---
+
+### Tips & Notes
+
+* **Bulk Assignment** is perfect for onboarding large teams—select everyone and apply the standard role set once.  
+* If a user needs temporary access to a sensitive branch, grant it, set a calendar reminder, and remove it later.  
+* Remember that Admin-role users manage their own permissions and are hidden from the Permissions tab.

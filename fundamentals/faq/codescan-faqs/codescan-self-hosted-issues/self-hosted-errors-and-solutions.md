@@ -63,7 +63,7 @@ Error occurred during initialization of VM Could not reserve enough space for xx
 ```
 {% endcode %}
 
-The problem may be that you are using a **32-bit version of Java**. Please refer to the following [article](https://knowledgebase.autorabit.com/codescan/docs/error-occurred-during-initialization-of-vm-could-not-reserve) for more details.
+This usually happens because the JVM you’re running is 32-bit, which can’t allocate very large contiguous memory blocks; install and run a 64-bit Java version (or lower the `-Xmx` value) to resolve the issue.
 
 ### Why am I getting a PKIX Path Building failed error?
 

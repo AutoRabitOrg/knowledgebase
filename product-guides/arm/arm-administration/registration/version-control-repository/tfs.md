@@ -1,27 +1,29 @@
 # TFS
 
-### Registering TFS repository in ARM <a href="#registering-tfs-repository-in-arm" id="registering-tfs-repository-in-arm"></a>
+Integrating a **Team Foundation Server (TFS)** repository with AutoRABIT (ARM) lets you automate commits, merges, and CI/CD pipelines against code stored in your on-premises or Azure DevOps–hosted TFS project.  
+The steps below show an Org Admin how to register a TFS repo so ARM can authenticate, index metadata, and launch jobs.
 
-This section guides you to register the TFS repository in ARM.
+---
 
-1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** module and select the option: **`VC Repos`**.
+## Registering TFS Repository in ARM <a href="#registering-tfs-repository-in-arm" id="registering-tfs-repository-in-arm"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (678).png" alt="" width="285"><figcaption></figcaption></figure>
+1. Log in to **ARM**.  
+2. Hover over **`Admin`** and choose **`VC Repos`**.
 
-3. Click on **`Register Repository`**.
-4. Select the **`Version Control System`** as TFS on the **`Register Repository`** page.
-5. Enter the name of the repository to display it locally.
-6. Paste the **`Repository URL`** that TFS provides you.
-7. Choose the correct user's **`Credentials`** from the list. To create a new credential, click on the **`+`** icon.
-8. Click **`Test Connection`** to check if the connection has been authenticated. A success message is displayed after the authentication is completed.
+   <figure><img src="../../../../../.gitbook/assets/image (678).png" alt="Admin module with VC Repos option highlighted" width="285"></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (679).png" alt="" width="375"><figcaption></figcaption></figure>
+3. Click **Register Repository**.  
+4. On the **Register Repository** page, select **TFS** as the **Version Control System**.  
+5. **Repository Label** – enter a friendly name that will appear in ARM.  
+6. **Repository URL** – paste the full TFS URL (e.g., `https://tfs.mycorp.com/tfs/Collection/Project`).  
+7. **Credentials** – choose stored credentials or click **+** to add new ones.  
+8. Click **Test Connection**. A success message confirms ARM can authenticate.
 
-9. Finally, click **`Save`** to complete the TFS repository registration process and to close the **`Register Repository`** screen.
+   <figure><img src="../../../../../.gitbook/assets/image (679).png" alt="Register Repository form for TFS with Test Connection button" width="375"></figure>
+
+9. Click **Save** to finish. The repository now appears in the VC Repos list.
 
 {% hint style="info" %}
-**Point to Remember**:&#x20;
-
-Select the **`Enable nCino`** checkbox to register the TFS repository with nCino objects included. To easily identify nCino registered Version Control Repositories among all other repositories, nCino logos are marked in front of the Repository Label.
+**nCino projects**  
+Tick **Enable nCino** if the repo contains nCino objects. ARM marks such repositories with the nCino logo so you can spot them quickly.
 {% endhint %}

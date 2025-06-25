@@ -1,43 +1,55 @@
 # Adding New Users
 
-### Adding a New User
+Inviting colleagues to AutoRABIT (ARM) lets them run commits, deployments, and CI jobs under their own accounts—so actions are tracked to the right person, and permissions stay aligned with their role.  
+Only **Org Administrators** can create or modify users.
 
-1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** tab and click on the **`Users`**.
-3. Click the **`Add User`** button.
+---
 
-<figure><img src="../../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
+## Adding a New User
 
-4. Fill in the **`User Details`** and configure the **`Role Permissions`**.
-5. Click **`Save & Activate`** to activate the users or **`Save Now & Activate Later`** to save the user details. They can be activated later from this page.
+1. Log in to **ARM**.  
+2. Hover over **`Admin`** and click **`Users`**.  
+3. Click **Add User**.
 
-<figure><img src="../../../../.gitbook/assets/image (573).png" alt=""><figcaption></figcaption></figure>
+   <figure><img src="../../../../.gitbook/assets/image (572).png" alt="Add User button on the Users page"></figure>
 
-6. Your colleague will receive an email inviting them to set their password and log in.
-7. Newly created users are updated in the **`Users`** tab under the **`Admin`** module.
+4. Complete **User Details** and assign a **Role Permission Set** that matches the person’s responsibilities.  
+5. Choose one of the activation options:  
+   * **Save & Activate** – sends the invitation email immediately.  
+   * **Save Now & Activate Later** – save the profile and activate at a future time.
 
-### Editing a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
+   <figure><img src="../../../../.gitbook/assets/image (573).png" alt="User Details and Role Permissions form"></figure>
 
-After you’ve created a user, you can change most of their information and permissions. While you can't edit the **Username** and **Email** associated with a user, you can change the remaining fields.
+6. The new user receives an email to set their password and log in.  
+7. Newly created users appear in **Admin › Users**.
 
-1. Log in to your ARM account.
-2. Go to the **`Users`** tab. Locate the user to whom you would like to make changes.
-3. Click on the **`Edit`** icon.
+---
 
-<figure><img src="../../../../.gitbook/assets/image (574).png" alt=""><figcaption></figcaption></figure>
+## Editing a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
 
-4. Make any desired changes and click on **`Save`**.
+You can edit most profile fields and permissions after creation—except **Username** and **Email** (they are immutable).
 
-### **FAQ**
+1. Go to **Admin › Users** and locate the user.  
+2. Click the **Edit** icon.
 
-#### Can an AutoRABIT login username be changed after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
+   <figure><img src="../../../../.gitbook/assets/image (574).png" alt="Edit icon on Users list row"></figure>
 
-Once a user has been created, it cannot be changed. The account must be deleted; follow the steps below:
+3. Update fields as needed and click **Save**.
 
-1. To **delete** the user account: Ask your administrator remove you from the user list.
-2. Make a **new account** with a different username and email address.
-3. Ask your administrator to grant you all required **permissions** exactly as they were for the previous username and account.
+---
 
-### Why am I not able to add more users to my account? <a href="#why-am-i-not-able-to-add-more-users-to-my-account" id="why-am-i-not-able-to-add-more-users-to-my-account"></a>
+## FAQ
 
-You're getting this because you've used up all of your membership licenses, and you won't be able to add any more users. For any discrepancies or additional licenses, please contact to your account manager or reach out to us via support.
+### Can an AutoRABIT login username be changed after it has been created? <a href="#is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created" id="is-it-possible-to-change-the-username-for-the-autorabit-login-after-it-has-been-created"></a>
+
+No. Usernames and emails are locked once the account is created. To correct either field:
+
+1. **Delete** the old account (Admins: remove the user from the list).  
+2. **Create** a new account with the correct username/email.  
+3. Reassign the same **roles and permissions**.
+
+---
+
+### Why am I unable to add more users to my account? <a href="#why-am-i-not-able-to-add-more-users-to-my-account" id="why-am-i-not-able-to-add-more-users-to-my-account"></a>
+
+You’ve reached your organization’s license limit. Contact your account manager or AutoRABIT **support** to purchase additional seats or review discrepancies.

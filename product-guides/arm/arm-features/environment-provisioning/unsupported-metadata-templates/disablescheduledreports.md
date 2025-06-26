@@ -1,25 +1,31 @@
 # Disable Scheduled Reports
 
-The user can delete the scheduled report using the **DisableScheduledReports** template.
+The **DisableScheduledReports** template allows users to delete scheduled report jobs from Salesforce using AutoRABIT.
 
-To create this template, follow the below steps:
+## Steps to Create the Disable Scheduled Reports Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **DisableScheduledReports** checkbox available under **Disable Scheduled Reports.**
+5. Provide a **template name** and a **short description**.
+6. Select the **DisableScheduledReports** checkbox under **Disable Scheduled Reports**.
 7. Click **Add**.
-8. On the next screen, a Test Case Name appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
-9. However, you must add a deleting schedule for the auto-generated or your custom test case name. To add a schedule name, do the following:
-   * Click on![](<../../../../../.gitbook/assets/image (64).png>)icon.
-   * Enter the report in Deleting Schedule you wish to delete under the **Job Name** field.
-   * You can even add multiple schedule reports for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-   * Click **OK**. Once you are finished, click **Save** to save this page.
-10. Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click the **Run** button to run the template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. Please check the **View History** page for a detailed summary report of the operation carried out.
+
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to insert custom test data.
+   - To define the scheduled report(s) for deletion:
+     - Click the add icon (![Add Icon](../../../../../.gitbook/assets/image%20(64).png)).
+     - Enter the report job in the **Job Name** field under **Deleting Schedule**.
+     - To add multiple schedules, click the **+** symbol and repeat the steps above.
+     - Click **OK**.
+     - Click **Save** to save this page.
+
+9. Click **Save** again to finalize the template.
+
+10. Once saved, you’ll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** and enter **email address(es)** to receive execution notifications.
+13. Under **Post Deployment Steps**, select the test cases you recently created.
+14. Visit the **View History** page for a detailed summary report of the operation.

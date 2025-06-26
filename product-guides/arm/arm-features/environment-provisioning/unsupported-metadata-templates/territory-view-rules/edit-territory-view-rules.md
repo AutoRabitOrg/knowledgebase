@@ -1,21 +1,29 @@
 # Edit Territory View Rules
 
-To create this template, follow the below steps:
+The **EditTerritoryViewRules** template allows modification of existing Territory View Rules using AutoRABIT’s Environment Provisioning module.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](../) tab.
-5. Give the template a **name** and a **short description** of it.
+## Steps to Create the EditTerritoryViewRules Template
+
+1. Log in to your AutoRABIT account.
+2. Go to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Navigate to the **Create** [**Unsupported Metadata Template**](../) tab.
+5. Enter a **template name** and a **short description**.
 6. Select the **EditTerritoryViewRules** checkbox under **Territory View Rules**.
-7. Click **Add.**
-8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill the required information in the fields below and click **Save** to save this page.
+7. Click **Add**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1476).png" alt=""><figcaption></figcaption></figure>
+8. On the next screen:
+   - A **Test Case Name** appears automatically.
+   - Click **Add** to include custom test data.
+   - Fill in the required fields.
+   - Click **Save** to store the test case data.
 
-9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+   ![Edit Territory View Rules - Example](../../../../../../.gitbook/assets/image%20(1476).png)
+
+9. Click **Save** to finalize the template.
+
+10. Once created, you will be redirected to the **Environment Provisioning History** screen.
+11. Click the **Run** button to execute the template in your target org.
+12. Select the **destination org** from the dropdown and specify **email address(es)** for notifications.
+13. In the **Post Deployment Steps**, select the test cases you created.
+14. Refer to the **View History** page for a detailed summary of the operation.

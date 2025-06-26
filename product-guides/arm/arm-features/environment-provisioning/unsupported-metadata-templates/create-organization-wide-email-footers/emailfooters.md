@@ -1,26 +1,32 @@
 # EmailFooters
 
-**EmailFooters** template creates a footer email sent from Salesforce.com.
+The **EmailFooters** template allows you to create organization-wide email footers used in messages sent from Salesforce.
 
-To create this template, follow the below steps:
+## Steps to Create the EmailFooters Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EmailFooters** checkbox available under **Create Organization-Wide Email Footers.**
+1. Log in to your AutoRABIT account.
+2. Go to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Navigate to the **Create Unsupported Metadata Template** tab.
+5. Provide a **template name** and a **short description**.
+6. Select the **EmailFooters** checkbox under **Create Organization-Wide Email Footers**.
 7. Click **Add**.
-8. On the next screen, a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button. Enter the required details in the below fields:
-   * **Name:** Enter the name of the email footer you'd like to add.
-   * **Active for Single Email:** If you click here, it will activate a single email.
-   * **Active for Mass Email:** If you click here, it will activate many emails.
-   * **Email Encoding:** Enter the encoding email detail in this field.
-   * **Text:** Add any extra comments if required
-   * Once you are finished, click **Save** to save this page.
-9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click the **Run** button to run the template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. Please check the **View History** page for a detailed summary report of the operation carried out.
+
+8. On the next screen:
+   - A **Test Case Name** will be generated automatically.
+   - Click **Add** to input custom test data.
+   - Fill in the following fields:
+     - **Name:** Enter the name for the email footer.
+     - **Active for Single Email:** Check to activate for single email messages.
+     - **Active for Mass Email:** Check to activate for bulk/mass emails.
+     - **Email Encoding:** Specify the encoding (e.g., UTF-8).
+     - **Text:** Add any footer message or custom note.
+   - Click **Save** when complete.
+
+9. Click **Save** again to finalize the template.
+
+10. Once the template is created, you will be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** from the dropdown and provide **email address(es)** for notifications.
+13. Under **Post Deployment Steps**, select the recently created test cases.
+14. For a detailed report of the deployment, visit the **View History** page.

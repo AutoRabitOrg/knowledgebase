@@ -1,75 +1,102 @@
 # External Pull Request Summary Page
 
-The **External Pull Request Summary** screen displays the list of pull requests created to date. Also, you have a provision to create a new pull request on this page.
+The **External Pull Request Summary** screen displays all pull requests created to date. You can also create a new pull request from this page.
 
 ## Viewing the External Pull Request Summary Page <a href="#viewing-the-external-pull-request-summary-page" id="viewing-the-external-pull-request-summary-page"></a>
 
-The **External Pull Request** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
+> For optimal viewing, set your Chrome or Firefox browser zoom to **75%**.
 
-1. Hover your mouse over the **Version Control** module and choose **External Pull Requests.**
-2. On the **External Pull Requests** screen, choose your **repository** and the **branch** on which the pull request was initiated.
-3. Your new pull request initiated will be displayed on the top with **Open** state, including the list of added/ depreciated objects detail under the **Commits** tab.
+1. Navigate to the **Version Control** module and select **External Pull Requests**.
+2. On the **External Pull Requests** screen, choose your **repository** and the **branch** where the pull request was created.
+3. The most recent pull request (in **Open** state) will appear at the top, showing added/deprecated objects under the **Commits** tab.
 
-It's always a good idea to break data into multiple pages when dealing with multiple pull request records. You can browse 25, 50, 75, or 100 records on a single page or navigate to the previous or next page using the **Previous** and **Next** buttons.
+You can choose to display 25, 50, 75, or 100 records per page or use **Previous** and **Next** to browse through records.
 
-## Create a new Pull Request. <a href="#create-a-new-pull-request" id="create-a-new-pull-request"></a>
+## Create a New Pull Request <a href="#create-a-new-pull-request" id="create-a-new-pull-request"></a>
 
-To create a new pull request, use the **Create Pull Request** button on the right side of the screen.
+Click the **Create Pull Request** button on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1).png" alt="Create Pull Request button">
+    <figcaption>Create Pull Request button</figcaption>
+</figure>
 
-On the next pop-up screen, furnish the below details:
+Complete the form on the pop-up screen:
 
-<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1).png" alt="" width="406"><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1).png" alt="Pull Request creation form" width="406">
+    <figcaption>Pull Request creation form</figcaption>
+</figure>
 
-1. Select your version control repository. Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
-2. Choose the **Source Branch** and the **Target Branch** from the respective dropdowns.
-3. Give the pull request operation a **Title** and a brief **Description**.
-4. **Add Reviewers** that will accept your pull request. The **Optional Reviewer** field will be displayed for repositories with Azure Cloud PRs supports.
-5. Select the **Delete source branch after Pull Request closure** to delete the branch once the pull request has been approved.
-6. Click **OK** to create a new pull request. The newly created pull request will get displayed on top of the list on the **External Pull Request Summary** page.
+1. Select a **repository** (only enabled ones are listed).
+2. Choose the **Source Branch** and **Target Branch**.
+3. Enter a **Title** and a **Description**.
+4. Add **Reviewers** (Optional Reviewers field appears for Azure-supported PRs).
+5. Enable **Delete source branch after Pull Request closure** if needed.
+6. Click **OK** to create the pull request. It will appear at the top of the list.
 
-## View the Pull Request difference. <a href="#view-the-pull-request-difference" id="view-the-pull-request-difference"></a>
+## View Pull Request Differences <a href="#view-the-pull-request-difference" id="view-the-pull-request-difference"></a>
 
-ARM compares the metadata between the **Source and Target branches** and generates a metadata difference report. Such information can be viewed on the **Diff** screen. This screen will display the number of insertions and deletions to each metadata file. The lines highlighted in **RED** color indicate those that are deleted in the **Source Branch,** and for **GREEN** color indicates those that are newly added in the **Target Branch**.
+ARM compares metadata between source and target branches and generates a difference report. This is viewable on the **Diff** screen:
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+- **Red** lines = deletions in the **Source Branch**
+- **Green** lines = additions in the **Target Branch**
 
-<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1).png" alt="Metadata diff view showing additions and deletions">
+    <figcaption>Metadata diff view showing additions and deletions</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1).png" alt="Insertions and deletions summary in diff view">
+    <figcaption>Insertions and deletions summary in diff view</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png" alt="Inline code diff highlighting removed lines">
+    <figcaption>Inline code diff highlighting removed lines</figcaption>
+</figure>
 
-Similarly, you can **view/add/edit comments** on the revision level (revisions under **Commit** sections).
+<figure>
+    <img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1).png" alt="Code diff showing added lines">
+    <figcaption>Code diff showing added lines</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+You can also **view/add/edit comments** at the revision level in the **Commits** section.
 
-{% hint style="info" %}
-**Important Note:**
+<figure>
+    <img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1).png" alt="Comment section for pull request revisions">
+    <figcaption>Comment section for pull request revisions</figcaption>
+</figure>
 
-1. AutoRABIT supports inline add, edit, and reply comments for **Bitbucket-enabled pull requests** only. This feature is currently not supported by **GitHub**.
-2. AutoRABIT synchronizes the pull requests to access the latest updates from the repository when clicked. Therefore, to show the latest changes, comments, or any updates, it is recommended to click on the individual pull request.
-3. The response includes a maximum of **300** files.
-{% endhint %}
+> **Important Notes:**
+> - Inline commenting is supported only for **Bitbucket**-enabled pull requests.
+> - Click on individual pull requests to synchronize and fetch the latest updates.
+> - A maximum of **300 files** are included in the response.
 
 ## Additional Actions on the Pull Request Page <a href="#additional-actions-on-pull-request-page" id="additional-actions-on-pull-request-page"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1).png" alt="Action menu on pull request list">
+    <figcaption>Action menu on pull request list</figcaption>
+</figure>
 
 ### More Operations <a href="#id-1-more-operations" id="id-1-more-operations"></a>
 
-1. **Navigate to Pull Request Page:** Clicking on the Pull Request label will take you to your _GitHub/Bitbucket_ Pull Request page.
+1. **Navigate to Pull Request Page** – Click on the pull request label to open it on GitHub or Bitbucket.
 
-<figure><img src="../../../../../.gitbook/assets/image (66) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (66) (1) (1) (1) (1).png" alt="Pull request link to GitHub/Bitbucket" width="563">
+    <figcaption>Pull request link to GitHub/Bitbucket</figcaption>
+</figure>
 
-2. **Edit Pull Request:** Modify the pull request information using the **Edit** (![](<../../../../../.gitbook/assets/image (67) (1) (1) (1) (1).png>)) button.
+2. **Edit Pull Request** – Click the edit icon (![Edit icon](../../../../../.gitbook/assets/image (67) (1) (1) (1) (1).png)) to update PR details.
 
-### Actions for the Pull request <a href="#id-2-actions-for-the-pull-request" id="id-2-actions-for-the-pull-request"></a>
+### Actions for the Pull Request <a href="#id-2-actions-for-the-pull-request" id="id-2-actions-for-the-pull-request"></a>
 
-After you create a pull request, you can ask a specific person to review your proposed changes. A reviewer has four possible statuses:
+Reviewers can take the following actions:
 
-1. **Approve:** Submit feedback and approve merging the changes proposed in the pull request. Once the pull request is approved, the status changes to **"Approved"**.
-2. **Decline:** Reject the pull request
-3. **Merge:** Merge the changes proposed in the pull request. Once the pull request is approved, the status changes to **"Merged"**.
-4. **Reopen:** Reopen the closed pull request again.
+1. **Approve** – Submit feedback and approve the PR. Status updates to **Approved**.
+2. **Decline** – Reject the PR.
+3. **Merge** – Accept and merge the PR. Status changes to **Merged**.
+4. **Reopen** – Reopen a closed PR if needed.

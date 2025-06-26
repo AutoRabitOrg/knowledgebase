@@ -1,21 +1,32 @@
-# CI Job List screen
+# CI Job List Screen
 
-The **CI Job List** screen displays all the jobs created to date, and the lists are in order of the last created/modified date.
+The **CI Job List** screen displays all CI jobs created to date, listed in descending order of their last created or modified date.
 
-<figure><img src="../../../../../.gitbook/assets/image (1388).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1388).png" alt="CI Job List screen displaying created jobs">
+    <figcaption>CI Job List screen displaying created jobs</figcaption>
+</figure>
 
-Various options on the **'Job List'** screen:
+### Available Options on the CI Job List Screen
 
-1. **Info** **(**![](<../../../../../.gitbook/assets/image (1389).png>)**):** View the detailed report for your CI job.
-2. **Clone (**![](<../../../../../.gitbook/assets/image (1390).png>)**):** Quickly create a new job using information from the existing job.
-3. **Edit/Delete CI Job**: To modify/update or delete a CI Job from your history, click either the **Edit** (![](<../../../../../.gitbook/assets/image (1391).png>)) or **Delete (**![](<../../../../../.gitbook/assets/image (1392).png>)**)** icon.
+1. **Info** (![Info icon](../../../../../.gitbook/assets/image (1389).png)) – View the detailed report for your CI job.
+2. **Clone** (![Clone icon](../../../../../.gitbook/assets/image (1390).png)) – Quickly create a new job using details from an existing one.
+3. **Edit/Delete CI Job** – To modify or remove a CI job:
+   * Click **Edit** (![Edit icon](../../../../../.gitbook/assets/image (1391).png)) to update job details.
+   * Click **Delete** (![Delete icon](../../../../../.gitbook/assets/image (1392).png)) to remove the job from the list.
 
-<figure><img src="../../../../../.gitbook/assets/image (1387).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1387).png" alt="CI Job List action icons for edit, delete, clone, and info">
+    <figcaption>CI Job List action icons for edit, delete, clone, and info</figcaption>
+</figure>
 
-## **CI Job List Advanced Search Filter**
+## CI Job List Advanced Search Filter
 
-<figure><img src="../../../../../.gitbook/assets/image (1386).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1386).png" alt="Advanced search filters on CI Job List screen">
+    <figcaption>Advanced search filters on CI Job List screen</figcaption>
+</figure>
 
-1. **Filter by Job Name:** Filter the job list by [CI](https://www.autorabit.com/blog/8-advantages-of-using-salesforce-ci-tools/) job label name.
-2. **Filter by Created/ Modified By:** Filter the job list by an author who created or modified the CI job.
-3. **Filter by Created/ Modified Date:** If you want to view job lists that get authored between any two dates, use the **'From Date'** and **'To Date'** to narrow down the list of the job lists.
+1. **Filter by Job Name** – Filter the list by the [CI](https://www.autorabit.com/blog/8-advantages-of-using-salesforce-ci-tools/) job label name.
+2. **Filter by Created/Modified By** – Filter jobs based on the user who created or modified them.
+3. **Filter by Created/Modified Date** – Use **From Date** and **To Date** fields to narrow results to a specific date range.

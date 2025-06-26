@@ -1,18 +1,25 @@
-# Provide branch access to users
+# Provide Branch Access to Users
 
-**To provide branch access to a user:**
+To assign branch-level access to a user within AutoRABIT, follow the steps below:
 
-1. From the **Admin** module, go to the **Permissions** tab.
+---
 
-<figure><img src="../../../../.gitbook/assets/image (780).png" alt="" width="299"><figcaption></figcaption></figure>
+## Steps:
 
-2. Click on the user's **First Name**.
+1. Navigate to the **Admin** module and click on the **Permissions** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (781).png" alt="" width="427"><figcaption></figcaption></figure>
+   ![Admin Permissions](../../../../.gitbook/assets/image%20(780).png)
 
-3. On the next screen, go to the **Version Control** section and select the _branch(es)_ the user needs access.
+2. Locate and click on the user’s **First Name**.
 
-<figure><img src="../../../../.gitbook/assets/image (782).png" alt="" width="563"><figcaption></figcaption></figure>
+   ![User List](../../../../.gitbook/assets/image%20(781).png)
 
-4. Select the **Repository** checkbox to provide access to all branches in that repository.
-5. Click **Save**.
+3. In the user details page, scroll to the **Version Control** section and select the specific _branch(es)_ the user should access.
+
+   ![Branch Access](../../../../.gitbook/assets/image%20(782).png)
+
+4. To grant access to **all branches** under a specific repository, check the corresponding **Repository** checkbox.
+
+5. Click **Save** to apply the changes.
+
+---

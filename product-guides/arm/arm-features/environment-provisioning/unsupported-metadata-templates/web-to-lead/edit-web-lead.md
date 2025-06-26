@@ -1,27 +1,32 @@
 # Edit Web Lead
 
-Easily manage a web lead page using **EditWebLead** template.
+The **EditWebLead** template allows you to configure or update Web-to-Lead settings in your Salesforce org via AutoRABIT's Environment Provisioning module.
 
-To create this template, follow the below steps:
+## Steps to Create the EditWebLead Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EditWebLead** checkbox available under **Web to Lead**.
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Open the **Create Unsupported Metadata Template** tab.
+5. Enter a **template name** and a **short description**.
+6. Select the **EditWebLead** checkbox under **Web to Lead**.
 7. Click **Add**.
-8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
 
-    * **Enabled:** Enable your organization to receive online leads.
-    * **Default Lead Creator:** Here, enter the user name who will be listed as Creator when a Lead is created online.&#x20;
-    * **Default Response Template:** Use Lead Auto-Response Rules to select different email response templates based on attributes of the leads submitted online. Leads not matching any of the rules will be sent the default response template entered in this field.
-    * Once you are finished, click **Save** to save this page.
+8. On the next screen:
+   - A **Test Case Name** will be displayed by default.
+   - Click **Add** to input custom test data.
+   - Fill in the following fields:
+     - **Enabled:** Enable Web-to-Lead functionality for your organization.
+     - **Default Lead Creator:** Specify the username that will be assigned as the creator of online leads.
+     - **Default Response Template:** Provide a default email template to be used if no auto-response rule is matched.
+   - Click **Save** to save the configuration.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (1481).png" alt=""><figcaption></figcaption></figure>
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+   ![Edit Web Lead Settings](../../../../../../.gitbook/assets/image%20(1481).png)
+
+9. Click **Save** again to finalize the template.
+
+10. You will be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** and enter the **email address(es)** to receive run notifications.
+13. In the **Post Deployment Steps**, select the test cases you created.
+14. Visit the **View History** page to review a detailed summary of the operation.

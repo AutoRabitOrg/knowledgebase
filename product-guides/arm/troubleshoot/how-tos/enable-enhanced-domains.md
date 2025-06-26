@@ -2,7 +2,7 @@
 
 ## Introduction <a href="#introduction" id="introduction"></a>
 
-Enhanced domains are the next iteration of My Domain in Salesforce. They replace the default Salesforce subdomain with a company-specific one across all URLs, including Experience Cloud sites, Salesforce Sites, Visualforce pages, and content files.
+Enhanced domains are the next iteration of My Domain in Salesforce. They replace the default Salesforce subdomain with a company-specific one across all URLs, including Experience Cloud sites, Salesforce sites, Visualforce pages, and content files.
 
 ## Do I Need Enhanced Domains? <a href="#do-i-need-enhanced-domains" id="do-i-need-enhanced-domains"></a>
 

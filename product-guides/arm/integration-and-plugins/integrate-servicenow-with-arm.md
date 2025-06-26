@@ -1,98 +1,102 @@
 # Integrate ServiceNow with ARM
 
-**Integrate ServiceNow with ARM**
-
-**Step 1: Store your user's ServiceNow credential in ARM**
-
-This is an initial step where the user's ServiceNow credentials, such as username and password, are stored in ARM.
+## Step 1: Store Your ServiceNow Credentials in ARM
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **Admin** module and click on the **Credentials** tab.
+2. Navigate to the **Admin** module and click the **Credentials** tab.
 
-<figure><img src="../../../.gitbook/assets/image (900).png" alt="" width="353"><figcaption></figcaption></figure>
+   ![Credential Tab](../../../.gitbook/assets/image%20(900).png)
 
-3. Next, click on **Create Credential** from the right navigation bar.
+3. Click **Create Credential** from the right navigation.
 
-<figure><img src="../../../.gitbook/assets/image (901).png" alt=""><figcaption></figcaption></figure>
+   ![Create Credential](../../../.gitbook/assets/image%20(901).png)
 
-4. On the next pop-up screen, enter a **Credential name**.
-5. Choose the **Credential Type** as '**User name with Password.'**
-6. Enter your ServiceNow **username** and **password;** we will store this encrypted.
-7. Please double-check that you are using your ServiceNow username instead of the email address that you use to log in to ServiceNow.
-8. Click **Save**.
+4. In the popup:
+   - Enter a **Credential Name**
+   - Set **Credential Type** to _User name with Password_
+   - Input your **ServiceNow username** and **password**
+   - Ensure you're using your **username**, not your login email
+5. Click **Save**
 
-<figure><img src="../../../.gitbook/assets/image (902).png" alt="" width="416"><figcaption></figcaption></figure>
+   ![Credential Entry](../../../.gitbook/assets/image%20(902).png)
 
-**Step 2: Integrate ServiceNow with ARM**
+---
 
-1. If you're logged out from your account, log in again into ARM with your credentials.
-2. Go to **Admin > My Account** section.
-3. Click on **New ALM System** under the **ALM Management** section.
+## Step 2: Integrate ServiceNow with ARM
 
-<figure><img src="../../../.gitbook/assets/image (903).png" alt=""><figcaption></figcaption></figure>
+1. Log in to ARM (if not already logged in).
+2. Go to **Admin > My Account**
+3. Click **New ALM System** under the **ALM Management** section
 
-4. Select **ALM type** as '**SERVICENOW'** from the dropdown.
+   ![New ALM System](../../../.gitbook/assets/image%20(903).png)
 
-<figure><img src="../../../.gitbook/assets/image (904).png" alt=""><figcaption></figcaption></figure>
+4. Set **ALM Type** as _SERVICENOW_
 
-5. Enter the **label name** of your own choice.
-6. Enter your ServiceNow subdomain (e.g., _https://\[subdomain].atlassian.net_) in the **URL** field.
-7. Select the same **user's credential** created in **Step 1**.
-8. Click **Test Connection** to check whether the connection has been authenticated. If so, a ‘success’ message is displayed after the authentication is completed.
-9. Click **Save** and your ServiceNow integration is ready.
-10. Once you log in, ServiceNow is integrated with your ARM account, and you can start logging bugs and issues with just one click directly to ServiceNow.
+   ![ALM Type](../../../.gitbook/assets/image%20(904).png)
+
+5. Enter:
+   - A **Label Name**
+   - Your ServiceNow **subdomain URL** (e.g., `https://[subdomain].service-now.com`)
+   - The **credentials** stored in Step 1
+6. Click **Test Connection** to validate
+7. Click **Save** to complete the integration
+
+> Once integrated, you can log bugs/issues to ServiceNow directly from ARM.
 
 {% hint style="danger" %}
-**Limitation: ServiceNow OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you want to make it available for your organization, please get in touch with our experts at **support@autorabit.com**.
+**Note:** ServiceNow OAuth integration is supported only for **Cloud versions**. Contact **support@autorabit.com** to enable this feature.
 {% endhint %}
 
-**Configuring ServiceNow Work Items in ARM**
+---
 
-You and your team members have a provision to perform actions on ServiceNow issues or update the ServiceNow work items while running a commit or during a CI job.
+## Configuring ServiceNow Work Items in ARM
 
-**In EZ-Commit**
+### EZ-Commit Integration
 
-In the **EZ-Commit** screen and under the **Post Commit** section, you should:
+1. In the **EZ-Commit** screen under **Post Commit**:
+   - Check **Update ALM Workitem Status**
+   - Select:
+     - **ALM Type:** SERVICENOW
+     - **ALM Label, Project, Sprint,** and **Work Item**
+     - **Status** to be updated
 
-1. Select the checkbox: **Update ALM Workitem Status**
-2. Select the **ALM type** as **SERVICENOW.**
-3. Select the **ALM Label, project,** **sprint** and ALM work item for which the commit is planned.
-4. Select the **work item** and the **status**.
+   ![EZ Commit Config](../../../.gitbook/assets/image%20(905).png)
 
-<figure><img src="../../../.gitbook/assets/image (905).png" alt=""><figcaption></figcaption></figure>
+2. Upon commit, work item status will be reflected in ServiceNow.
 
-5. Once the changes are committed to the version control system, the status of the ALM work item is updated and reflected in your ALM system.
+---
 
-**In CI Job**
+### CI Job Integration
 
-**Important Notes:**
+#### Applicable to:
 
-Configuring the ServiceNow work items is applicable to the following CI jobs:
+- Package from Version Control
+- Deploy from Version Control
+- Deploy from SFDX branch to Salesforce Org
+- Install Unlocked Package from VCS
 
-* Package from Version Control
-* Deploy from Version Control
-* Deploy from the SFDX branch to a Salesforce Org
-* Install an Unlocked Package from a Version Control Branch
+1. In **Build** section of CI Job creation:
+   - Check **Map ALM Project (Ex: ServiceNow)**
 
-1. Go to the **Build** section under the **New Create CI Job** screen.
-2. Select the **Map ALM Project (Ex: ServiceNow)** checkbox.
+   ![CI Job Build](../../../.gitbook/assets/image%20(906).png)
 
-<figure><img src="../../../.gitbook/assets/image (906).png" alt="" width="441"><figcaption></figcaption></figure>
+2. Go to **ALM** section:
+   - Set:
+     - **ALM Type:** SERVICENOW
+     - **Label** and **Projects**
 
-3. Go to the **ALM** section. Here you can configure the work item type status in ServiceNow ALM to include in the build.
-4. Select the **ALM type** as **SERVICENOW.**
-5. Select the **ALM Label** and its related **Projects**.
+   ![ALM Projects](../../../.gitbook/assets/image%20(907).png)
 
-<figure><img src="../../../.gitbook/assets/image (907).png" alt=""><figcaption></figcaption></figure>
+3. Choose:
+   - One or all **Active Sprints**
 
-6. The active sprint(s) for the above-selected Project will be available in the **Sprint** dropdown. ARM has given provisions for you to update multiple sprints related to tasks or bugs and update the status on the go when running the CI Job. You can select either one of the sprints or, if you wish to update the status for all the sprints, leave it as default, i.e., keep **'All Active Sprints'** in the selected mode.
+   ![Sprint Selection](../../../.gitbook/assets/image%20(908).png)
 
-<figure><img src="../../../.gitbook/assets/image (908).png" alt=""><figcaption></figcaption></figure>
+4. Select:
+   - **Work Item Type** (or all)
 
-7. Select the **Work Item** type. Here you can select multiple work items to update the status for in your ALM. To use all the work item types, keep the **'All Work Item Type'** option selected by default.
+   ![Work Item Type](../../../.gitbook/assets/image%20(909).png)
 
-<figure><img src="../../../.gitbook/assets/image (909).png" alt=""><figcaption></figcaption></figure>
+5. Update the **Status** for selected work item types
 
-Based on the above work item selected, you need to update the status for each work item type. See the screenshot below.
-
-<figure><img src="../../../.gitbook/assets/image (910).png" alt=""><figcaption></figcaption></figure>
+   ![Status Update](../../../.gitbook/assets/image%20(910).png)

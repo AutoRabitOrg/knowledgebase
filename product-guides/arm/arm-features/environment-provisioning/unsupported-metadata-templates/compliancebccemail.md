@@ -1,21 +1,28 @@
 # ComplianceBCCEmail
 
-**ComplianceBCCEmail** template automatically copies each outgoing email to a compliance email address.
+The **ComplianceBCCEmail** template enables automatic copying of all outgoing emails to a designated compliance email address in Salesforce using AutoRABIT.
 
-To create this template, follow the below steps:
+## Steps to Create the ComplianceBCCEmail Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **ComplianceBCCEmail** checkbox available under **Add Compliance BCC Email**.
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Select the **Create Unsupported Metadata Template** tab.
+5. Provide a **template name** and a **short description**.
+6. Check the **ComplianceBCCEmail** option under **Add Compliance BCC Email**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.
-9. Enter the email address in the **Compliance BCC Email** field and select the **Enable Email** checkbox to activate the test case. Once done, click **Save** to save this page
-10. Next, Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click on the **Run** button to run the current template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to insert custom test data.
+   - Fill in the **Compliance BCC Email** field with the desired email address.
+   - Select the **Enable Email** checkbox to activate the BCC functionality.
+   - Click **Save** to finalize this page.
+
+9. Click **Save** again to complete the template creation.
+
+10. After saving, you’ll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Choose your **destination org** and specify **email address(es)** to receive notifications upon completion.
+13. Under **Post Deployment Steps**, select the test cases that you recently created.
+14. Visit the **View History** page for a comprehensive summary of the execution.

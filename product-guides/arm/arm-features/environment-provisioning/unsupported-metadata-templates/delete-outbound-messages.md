@@ -1,25 +1,31 @@
 # Delete Outbound Messages
 
-The user can delete the existing outbound message using the **OutboundMessages** template.
+The **OutboundMessages** template enables users to delete existing outbound messages in Salesforce using AutoRABIT.
 
-To create this template, follow the below steps:
+## Steps to Create the OutboundMessages Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata**](./) **Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **OutboundMessages** checkbox available under **Delete Outbound Messages.**
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Go to the **Create Unsupported Metadata Template** tab.
+5. Provide a **template name** and a **short description**.
+6. Select the **OutboundMessages** checkbox under **Delete Outbound Messages**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
-9. If you want to add more outbound messages to your auto-generated or custom test cases, you can do so. Do the following to add more outbound messages:
-   * Click on![](<../../../../../.gitbook/assets/image (58).png>)icon.
-   * In the **Delete Outbound Messaged** field, type the message you want to delete.
-   * You can even add multiple messages for the above-generated test case name. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
-   * Click **OK**. Once you are finished, click **Save** to save this page
-10. Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click on the **Run** button to run the current template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to insert custom test data.
+
+9. To add more outbound messages to your test case:
+   - Click the ![Add Icon](../../../../../.gitbook/assets/image%20(58).png) icon.
+   - In the **Delete Outbound Message** field, enter the name of the message you want to delete.
+   - To add multiple messages for the same test case, click the **+** symbol and complete the additional fields.
+   - Click **OK** and then **Save** to complete this step.
+
+10. Click **Save** to finalize the template creation.
+
+11. After saving, you’ll be redirected to the **Environment Provisioning History** screen.
+12. Click **Run** to execute the template on your destination org.
+13. Choose your **destination org** and provide **email address(es)** to receive execution notifications.
+14. In the **Post Deployment Steps**, select the test cases that were recently created.
+15. Visit the **View History** page for a detailed summary report of the operation.

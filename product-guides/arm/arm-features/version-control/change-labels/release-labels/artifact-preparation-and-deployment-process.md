@@ -1,103 +1,112 @@
 ---
-description: >-
-  This document outlines the process of preparing an artifact zip based on
+description: >
+  This document outlines the process of preparing an artifact ZIP based on
   selected revisions, along with an example for better understanding.
 ---
 
 # Artifact Preparation and Deployment Process
 
-### Example Scenario
+## Example Scenario
 
-**Git Logs**: (_A is the latest revision_)\
-`A → B → C → D → E → F → G → H → I → J`
-
+**Git Logs**: (_A is the latest revision_)  
+`A → B → C → D → E → F → G → H → I → J`  
 **Selected Revisions**: `B, C, F, G, J`
 
-***
+---
 
-### Artifact Creation Process
+## Artifact Creation Process
 
-1. **Ensure Revision XML Files**\
-   For each selected revision, ensure the existence of a corresponding revision XML file containing:
-   * Commit details
-   * List of added, modified, or deleted files\
-     If any XML file is missing, it is dynamically created.
-2. **Gather Changed Files**\
-   Collect all files added, modified, or deleted across the selected revisions (`B, C, F, G, J`) using the prepared revision XML files.
-3. **Checkout the Latest Revision**\
-   Switch to the latest revision among the selected ones (e.g., `B`).
-4. **Copy Files to Package Directory**\
-   Copy all gathered files into a package directory from the latest revision's (`B`) checkout.
-5. **Prepare Deployment Files**\
-   Create the **package.xml** and **destructiveChanges.xml** files in the package directory.
-6. **Create the Artifact Zip**\
-   Zip the package directory, which includes the modified files from selected revisions. This zip file is then used for custom deployments.
+1. **Ensure Revision XML Files**  
+   For each selected revision, ensure the presence of a corresponding revision XML file containing:
+   - Commit details
+   - List of added, modified, or deleted files  
+   _If any XML file is missing, it is dynamically generated._
 
-***
+2. **Gather Changed Files**  
+   Collect all added, modified, or deleted files from the selected revisions (`B, C, F, G, J`) using the XML files.
 
-### Deployment Process
+3. **Checkout the Latest Revision**  
+   Switch to the latest selected revision (e.g., `B`).
 
-#### 1. Full Deployment
+4. **Copy Files to Package Directory**  
+   Copy all gathered files into a package directory from the checkout of the latest selected revision.
 
-For a full deployment, the artifact zip is retrieved from:\
-`.rabit->scm->changelabel->{repoid}->{releaselabel_Id}.zip`\
-It is deployed as-is.
+5. **Prepare Deployment Files**  
+   Generate `package.xml` and `destructiveChanges.xml` within the package directory.
 
-#### 2. Selective Deployment
+6. **Create the Artifact ZIP**  
+   Archive the package directory, which includes the selected files and metadata files. This ZIP file is used for custom deployments.
 
-For selective deployment:
+---
 
-* Retrieve the **package.xml** from:\
-  `{scm->scmcommithistory->{repo_id}->{branch_name}->{release_label_name}}->package.xml/destructive.xml`.
-* Display components on the UI for user selection after metadata retrieval.
-* Use the selected components to extract the corresponding files from the zip for deployment.
+## Deployment Process
 
-In case of deployment issues, the paths above serve as the **source of truth** to verify components.
+### 1. Full Deployment
 
-### Implementation Considerations
+Retrieve the artifact ZIP from:  
+`.rabit → scm → changelabel → {repo_id} → {release_label_id}.zip`  
+Deploy the ZIP as-is.
 
-#### **Consideration 1: Potential Missing Files in the Artifact Zip**
+### 2. Selective Deployment
 
-**Scenario:**\
-Certain files may not appear in the artifact zip even if their revisions are selected.
+For selective deployments:
 
-**Example:**
+- Retrieve `package.xml` and `destructiveChanges.xml` from:  
+  `scm → scmcommithistory → {repo_id} → {branch_name} → {release_label_name}`
+- Display metadata components in the UI for user selection.
+- Based on selection, extract corresponding files from the artifact ZIP for deployment.
 
-**Git Logs**: `A → B → C → D`\
-**Changes in Revisions**:
+> If deployment issues occur, these paths serve as the source of truth for verification.
 
-* `A`: `A.cls` modified
-* `B`: `C.cls` deleted
-* `C`: `C.cls` modified
-* `D`: `D.cls` modified
+---
 
-**Selected Revisions**: `A, C, D`\
-**Result**:\
-The artifact zip contains only `A.cls` and `D.cls`, while `C.cls` is missing.
+## Implementation Considerations
 
-**Reason:**\
-The process involves checking out the latest selected revision (`A`). Since `C.cls` was deleted in revision `B`, it does not exist in the checkout directory and is therefore not included in the artifact zip.
+### Consideration 1: Potential Missing Files in the Artifact ZIP
 
-***
+**Scenario:**  
+Files may be missing from the ZIP even if their revisions were selected.
 
-#### **Consideration 2: No Delta Support for Release Labels**
+**Example:**  
+**Git Log**: `A → B → C → D`  
+**Changes:**
+- `A`: `A.cls` modified
+- `B`: `C.cls` deleted
+- `C`: `C.cls` modified
+- `D`: `D.cls` modified  
 
-**Scenario:**\
-Release labels currently do not support delta logic for metadata, which may lead to:
+**Selected Revisions**: `A, C, D`  
+**Result**:  
+The ZIP contains `A.cls` and `D.cls`, but not `C.cls`.
 
-* Inclusion of additional metadata beyond the intended changes
-* Missing specific modifications
+**Reason:**  
+The latest selected revision is `A`. Since `C.cls` was deleted in `B`, it doesn’t exist in the checkout of `A`, and thus is excluded.
 
-**Example:**\
-Adding a new **CustomLabel** results in the artifact containing all CustomLabels because they are stored in a single `CustomLabels.labels` file.
+---
 
-### **Repository Type Exceptions**
+### Consideration 2: No Delta Support for Release Labels
 
-1. **Non-DX Repositories**:\
-   Example: Adding a **CustomField** includes the entire `CustomObject` file, encompassing all child metadata (e.g., CustomField, RecordType).
-2. **DX Repositories**:\
-   Example: Adding a **CustomField** includes only the specific `CustomField` file because metadata is stored separately.
+**Scenario:**  
+Release labels do not currently support delta metadata logic, which may result in:
 
-#### **Summary**
+- Unintended inclusion of extra metadata
+- Missing specific modifications
 
-These behaviors are inherent to the system’s current file-level change tracking and directory structure. Significant architectural changes would be required to enable delta preparation or refine checkout logic.
+**Example:**  
+Adding a `CustomLabel` results in the entire `CustomLabels.labels` file being included, even if only one label was changed.
+
+---
+
+## Repository Type Exceptions
+
+### 1. Non-DX Repositories  
+Modifying a `CustomField` includes the entire `CustomObject` file, which contains all child metadata (e.g., `CustomField`, `RecordType`).
+
+### 2. DX Repositories  
+Only the specific `CustomField` file is included, as metadata is stored modularly.
+
+---
+
+## Summary
+
+These behaviors are a result of the system's current file-level change tracking and repository structure. Supporting delta-level preparation would require significant architectural changes, particularly in how the system identifies and retrieves file differences.

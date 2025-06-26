@@ -1,8 +1,19 @@
-# Prerequisite while performing a commit using AutoRABIT
+# Prerequisites for Performing a Commit Using AutoRABIT
 
-Complete the steps below before starting the AutoRABIT commit operation:
+Complete the following steps before starting a commit operation in AutoRABIT:
 
-1. **Register your Version Control Repository in AutoRABIT**: An admin can perform this step only. Register your Version Control Repositories such as GIT, SVN, or TFS in AutoRABIT.
-2. **Register your Salesforce organization in AutoRABIT**: AutoRABIT connects to your Salesforce Org using the secure OAuth method or **username/password** connections. This step can be performed by an admin only.&#x20;
-3. **Set Up a Branch**: Instead of making changes to the code base directly, you can branch off from the main line and work on a specific feature in an isolated branch. This step can only be performed by an admin.
-4. **Mapping the users with the Version control and Salesforce Orgs in the "My Profile" section**: Set up the permission to create a project in AutoRABIT.
+1. **Register Your Version Control Repository**
+   - Only an administrator can perform this step.
+   - Register your version control system (e.g., **Git**, **SVN**, or **TFS**) in AutoRABIT.
+
+2. **Register Your Salesforce Organization**
+   - Connect AutoRABIT to your Salesforce Org using **OAuth** or **username/password** authentication.
+   - This step requires admin-level access.
+
+3. **Set Up a Branch**
+   - Create a feature branch to isolate changes instead of editing the main code base directly.
+   - This operation must be performed by an administrator.
+
+4. **Map Users to Version Control and Salesforce Orgs**
+   - In the **My Profile** section, map users to the registered Salesforce Orgs and version control repositories.
+   - Assign necessary permissions to allow project creation in AutoRABIT.

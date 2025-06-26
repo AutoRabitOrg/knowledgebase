@@ -1,9 +1,16 @@
 # Authentication
 
-AutoRABIT API uses API keys to authenticate requests. Authentication to the API is performed via HTTP Basic Auth. Provide your API key as the basic auth username value. You do not need to provide a password.
+AutoRABIT APIs use API keys for secure authentication. All authentication is handled through **HTTP Basic Auth**, where the API key is provided as the username. No password is required.
 
-Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as [GitHub](../arm-features/automation-and-ci/enabling-github-checks.md), client-side code, and so forth.
+Your API key grants significant access—treat it like a password. **Do not expose your API key** in public code repositories, client-side applications, or other insecure locations such as [GitHub](../arm-features/automation-and-ci/enabling-github-checks.md).
 
-{% hint style="info" %}
-Generate an API Key from the AutoRABIT platform and provide it in the header such as **header -- "token: api-key"** for cURL for all the requests requiring this authentication.
-{% endhint %}
+> **ℹ️ API Token Header Usage**
+>
+> Generate your API key from the AutoRABIT platform. For cURL or other HTTP clients, include it in the header as:
+>
+> ```
+> header -- "token: api-key"
+> ```
+>
+> This header is required for all authenticated API requests.
+

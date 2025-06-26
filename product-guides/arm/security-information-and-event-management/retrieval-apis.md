@@ -15,7 +15,7 @@
   * **Content-Type**: application/json
   * **Authorization**: Your Bearer token
 
-### Obtaining your Access Token <a href="#obtaining-your-access-token" id="obtaining-your-access-token"></a>
+### Obtaining Your Access Token <a href="#obtaining-your-access-token" id="obtaining-your-access-token"></a>
 
 To interact with API, you need to have a unique, personal access token. This will be used to authenticate yourself within the API. Please contact the AutoRABIT Team to update the following properties in the **config** file once the API token gets generated:
 

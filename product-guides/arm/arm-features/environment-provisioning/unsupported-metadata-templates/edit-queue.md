@@ -1,23 +1,32 @@
 # Edit Queue
 
-To create this template, follow the below steps:
+The **Queue** template allows users to edit queue configurations in Salesforce using AutoRABIT.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+## Steps to Create the Edit Queue Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **Queue** checkbox available under **Edit Queue**.
+5. Provide a **template name** and a **short description**.
+6. Select the **Queue** checkbox under **Edit Queue**.
 7. Click **Add**.
-8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to enter custom test data.
+   - Fill in the required fields shown below:
 
-<figure><img src="../../../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+     ![Queue Configuration](../../../../../.gitbook/assets/image%20(65).png)
+     
+     ![Additional Settings](../../../../../.gitbook/assets/image%20(66).png)
 
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+   - Click **Save** to finalize the data entry.
+
+9. Click **Save** again to complete the template creation.
+
+10. You’ll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** from the dropdown and provide **email address(es)** to receive execution notifications.
+13. In the **Post Deployment Steps**, select the test cases you recently created.
+14. Visit the **View History** page for a comprehensive summary of the operation.

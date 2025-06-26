@@ -1,27 +1,33 @@
 # EditEmailFooters
 
-**EditEmailFooters** template automatically deletes the existing case contact role value from the picklist.
+The **EditEmailFooters** template is used to modify existing organization-wide email footers within your Salesforce environment.
 
-To create this template, follow the below steps:
+## Steps to Create the EditEmailFooters Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
 3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](https://knowledgebase.autorabit.com/docs/unsupported-metadata-templates) tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EditEmailFooters** checkbox available under **Create Organization-Wide Email Footers.**
+4. Open the [**Create Unsupported Metadata Template**](https://knowledgebase.autorabit.com/docs/unsupported-metadata-templates) tab.
+5. Provide a **template name** and a **short description**.
+6. Select the **EditEmailFooters** checkbox under **Create Organization-Wide Email Footers**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button. Enter the required details in the below fields:
-   * **Edit Footer:** Add the footer details that you'll be editing.
-   * **Name:** Enter the name of the footer you'd like to change.
-   * **Active for Single Email:** If you click here, it will activate a single email.
-   * **Active for Mass Email:** If you click here, it will activate a mass number of the emails.
-   * **Email Encoding:** Enter the encoding email detail in this field.
-   * **Text:** Add any extra comments if required
-   * Once you are finished, click **Save** to save this page.
-9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** will appear by default.
+   - Click **Add** to input custom test data.
+   - Fill in the following fields:
+     - **Edit Footer:** Enter the footer details you wish to edit.
+     - **Name:** Specify the name of the footer.
+     - **Active for Single Email:** Enable this option to activate the footer for single emails.
+     - **Active for Mass Email:** Enable this option to activate the footer for mass emails.
+     - **Email Encoding:** Provide the desired email encoding format.
+     - **Text:** Add any additional footer content or comments.
+   - Click **Save** once complete.
+
+9. Click **Save** again to finalize the template.
+
+10. Upon successful creation, you will be redirected to the [**Environment Provisioning History**](https://knowledgebase.autorabit.com/docs/environment-provisioning) screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** from the dropdown and provide **email address(es)** for notification.
+13. In **Post Deployment Steps**, select the test cases you recently created.
+14. For a complete summary of the operation, visit the **View History** page.

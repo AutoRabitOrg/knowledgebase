@@ -1,21 +1,31 @@
 # Fiscal Year
 
-To create this template, follow the below steps:
+The **FiscalYear** template allows the configuration of fiscal year settings in Salesforce using AutoRABIT.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+## Steps to Create the Fiscal Year Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **FiscalYear** checkbox available under **Fiscal Year.**
+5. Provide a **template name** and a **short description**.
+6. Select the **FiscalYear** checkbox under **Fiscal Year**.
 7. Click **Add**.
-8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
-   * **Standard Fiscal Year:** Check this checkbox.
-   * **Fiscal Year Start Month Type:** Enter the start month of the selected fiscal year.
-   * Check the **Based on Ending Month** and **Based on Starting Month** checkboxes as per your requirements.
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** will appear automatically.
+   - Click **Add** to input custom test data.
+   - Enter the following details:
+     - **Standard Fiscal Year:** Enable this checkbox to use the standard fiscal year.
+     - **Fiscal Year Start Month Type:** Specify the starting month of the fiscal year.
+     - **Based on Ending Month:** Check this box if applicable.
+     - **Based on Starting Month:** Check this box if applicable.
+   - Click **Save** to finalize the test data entry.
+
+9. Click **Save** again to save the template.
+
+10. After saving, you'll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** and enter the **email address(es)** to receive notification upon execution.
+13. Under **Post Deployment Steps**, select the test cases you recently created.
+14. Refer to the **View History** page for a comprehensive summary of the execution.

@@ -1,31 +1,37 @@
 # Version Control Best Practices
 
-### Registering a Version Control Repository <a href="#registering-a-version-control-repository" id="registering-a-version-control-repository"></a>
+## Registering a Version Control Repository
 
-1. Before getting a repository registered in AutoRABIT, make sure the user’s credentials are saved in the **Credential Manager** section in AutoRABIT and set the Credential Scope as private. This will help identify the individual users for code check-in.
-2. While registering the **Bitbucket** repository, ensure the username is not part of the URL. **For example:** _https://John@bitbucket.org/Repos/bitbucket-testcases-repo.git_
-3. Ensure users of the branch have their user credential mapping for a branch done in the **My Profile** section prior to using that branch.
-4. Creation of Branch Types (e.g., Dev, QA, Pre-Prod, Production) helps you to attach a branch type at the time of branch creation. This helps in easily identifying **From** and **To** branches during Merge, EZ-commit process.
+1. Ensure user credentials are stored in the **Credential Manager** section of AutoRABIT with the Credential Scope set to **Private**. This enables the identification of individual users during code check-in.
+2. When registering a **Bitbucket** repository, do **not** include the username in the repository URL.  
+   **Incorrect Example:** `https://John@bitbucket.org/Repos/bitbucket-testcases-repo.git`
+3. Verify that all users have mapped their credentials for the target branch via the **My Profile** section before using it.
+4. Create Branch Types (e.g., Dev, QA, Pre-Prod, Production) during branch creation. This helps to clearly identify **From** and **To** branches for Merge and EZ-Commit processes.
 
-### CI Jobs related <a href="#ci-jobs-related" id="ci-jobs-related"></a>
+## CI Jobs Related
 
-1. Ensure that your scheduled CI jobs are evenly spread in a day to avoid delays. This helps in reducing the time to run a CI job and it is also especially useful in a SAAS environment as it reduces the load on the application as well.
-2. To avoid unnecessary fetching of metadata types while executing a CI job, ensure that you have excluded them.
-   * To set this option at a global level, go to the My Salesforce Settings section in the My Account page under the Admin module and select the metadata types to exclude. This reflects in all CI jobs that are created henceforth and globally across other modules as well.
-   * To restrict this to a specific CI job select the Exclude Metadata Types under the BUILD section and choose the metadata types exclusively.
-3. Ensure that **Remove Login IP Ranges** under the **Additional Profile Packaging Options** are selected in the **Build** section while creating new CI Jobs. This will help to avoid overriding whitelisted IP ranges to access Salesforce orgs.
-4. Incremental Build is always recommended over Full Build
-   * As it deploys only delta changes (avoids redundant deployments on unchanged metadata components)
-   * The chance of reaching governor limits with the full build is avoided
-   * Skips the build initiation process if there are no metadata changes.
-5. Always select the **Prepare Destructive changes** in the **Build** section and **Run Destructive Changes** in the **Deploy** section to automatically delete metadata members from the destination based on the latest changes (to reflect deletion of metadata components) in a specific branch commit history.
-6. If you need to fetch only changes from a specific revision, then it is recommended to set the **Baseline revision** while creating a CI job or else all changes are fetched from base revision till head revision. **For ex-**&#x49;f you set the **Baseline revision** to 9, then all changes from revision 10 till the head revision are fetched.
+1. **Distribute CI Jobs Evenly:** Schedule jobs across different times to avoid delays and reduce load, especially in SaaS environments.
+2. **Exclude Unnecessary Metadata Types:**
+   - **Globally:** Navigate to *My Salesforce Settings* in the *My Account* page under *Admin* and select metadata types to exclude. This applies to all future CI jobs.
+   - **Job-specific:** In the *BUILD* section of the CI job, use **Exclude Metadata Types** to define exclusions for that job only.
+3. **Remove Login IP Ranges:** Enable this in the *Additional Profile Packaging Options* under the *Build* section to avoid overriding whitelisted IP ranges in Salesforce.
+4. **Use Incremental Builds** instead of Full Builds:
+   - Only deploys delta changes (avoids redundant deployments)
+   - Prevents governor limits from being exceeded
+   - Skips execution if no changes are detected
+5. **Manage Destructive Changes:**
+   - Select **Prepare Destructive Changes** in the *Build* section
+   - Select **Run Destructive Changes** in the *Deploy* section
+   - Ensures deleted metadata components in the branch are also removed from the destination
+6. **Set Baseline Revision:** To fetch changes from a specific revision onward, configure the **Baseline Revision** during CI job setup.  
+   **Example:** If the baseline is set to 9, changes from revisions 10 onward will be fetched.
 
-### Merge Functionality related <a href="#merge-functionality-related" id="merge-functionality-related"></a>
+## Merge Functionality Related
 
-1. Resolve conflicts immediately before any other commits are performed (on the same set of files) on the same branch by other users to avoid fresh conflicts. In case you would like to resolve the conflicts later, please ensure that you submit a new merge request before resolving the conflicts to get the latest conflict list.
-2. We strongly recommend **Entire Branch Merge** over Single Revision, Release Labels, and Commit Labels to avoid manual mistakes of missing revisions during the merge. This will also help us to have a trace and log of merges performed.
+1. **Resolve Merge Conflicts Immediately:** Do this before any other commits are pushed on the same files to avoid cascading conflicts. If resolution is delayed, create a new merge request first to retrieve the latest conflict set.
+2. **Prefer Entire Branch Merge:** This avoids missing revisions during merge and maintains a full trace/log of merge actions compared to Single Revision, Release Labels, or Commit Labels.
 
-### External Commit related <a href="#external-commit-related" id="external-commit-related"></a>
+## External Commit Related
 
-Following a standard pattern for commit messages will aid in the easy identification of commits performed, e.g., \<ProjectName#SPRINT#Userstory#Module#Devname#>.
+- Adopt a **standard commit message format** for easier tracking and traceability.  
+  **Recommended Format:** `<ProjectName#SPRINT#UserStory#Module#DevName#>`

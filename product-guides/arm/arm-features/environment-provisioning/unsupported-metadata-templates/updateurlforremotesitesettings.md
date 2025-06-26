@@ -1,8 +1,8 @@
-# Update Url for Remote Site Settings
+# Update URL for Remote Site Settings
 
 To create this template, follow the below steps:
 
-1. Login to your AutoRABIT account.
+1. Log in to your AutoRABIT account.
 2. Click on **Env. Pro.** module.
 3. Click on **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.

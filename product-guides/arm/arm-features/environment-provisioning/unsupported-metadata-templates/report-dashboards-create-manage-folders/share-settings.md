@@ -1,22 +1,29 @@
 # Share Settings
 
-To create this template, follow the below steps:
+The **ShareSettings** template allows you to configure sharing settings for report and dashboard folders in Salesforce via AutoRABIT's Environment Provisioning module.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
+## Steps to Create the ShareSettings Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
 3. Click on **Create New Template**.
 4. Go to the **Create** [**Unsupported Metadata Template**](../) tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **ShareSettings** checkbox available under **Report Dashboards Create Manage Folders**.
+5. Provide a **name** and a **short description** for the template.
+6. Select the **ShareSettings** checkbox under **Report Dashboards Create Manage Folders**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button and give a name to them.&#x20;
-9. Enter the required details in the below fields. To save this page, click the **Save** button.
 
-<figure><img src="../../../../../../.gitbook/assets/image (33) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+8. On the next screen:
+   - A **Test Case Name** appears automatically by default.
+   - Click **Add** to input custom test data.
+   - Enter the required values in the fields displayed.
+   - Click **Save** to confirm the data.
 
-10. Next, Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click on the **Run** button to run the current template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. For a detailed summary report of the operation carried out, please check the **View History** page.
+   ![Share Settings Configuration](../../../../../../.gitbook/assets/image%20(33)%20(1).png)
+
+9. Click **Save** to save the template.
+
+10. After the template is successfully created, you’ll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to deploy the template to the selected destination org.
+12. Select your **destination org** from the dropdown menu and enter the **email address(es)** to receive notifications.
+13. Under **Post Deployment Steps**, select the recently created test cases.
+14. Visit the **View History** page to review the detailed operation summary.

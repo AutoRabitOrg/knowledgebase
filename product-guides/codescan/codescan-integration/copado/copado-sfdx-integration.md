@@ -7,12 +7,21 @@ Our Integration with Copado SFDX pipelines is currently a modification of their 
 * **The Production branch scans are updated on Promotion.**\
   When a change is made in your main branch, CodeScan will scan it to give you a view of the state of your production and accurate delta scans for your User Stories.
 * **All User Story results are added to the Static Analysis Results object for review on the Copado platform.**
-* **The CodeScan project will be created automatically if it doesn't exist.**
 * **A single project will exist in CodeScan for each Copado Pipeline.**
 
 {% hint style="info" %}
 **Note**: Copado cannot be integrated with On-Premises/Self-Hosted CodeScan.
 {% endhint %}
+
+### CodeScan Project Setup
+
+First create a GitHub, BitBucket, or GitLab project in CodeScan.  This will serve as the project for your Copado Pipeline and will run the analysis in CodeScan for all Production deployments automatically.  Make sure to create the project on the main/master branch of your repository.
+
+See below for our articles on creating these projects:
+
+* [Creating a GitHub Project](../../getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github.md)
+* [Creating a Bitbucket Project](../../getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-bitbucket.md)
+* [Creating a GitLab Project](../../getting-started/using-codescan/adding-projects-to-codescan/adding-a-project-to-codescan-from-gitlab.md)
 
 ### Copado Extensions Setup
 
@@ -51,9 +60,10 @@ Under the script tab, click the lower edit button and replace the script with th
 
 <summary>Expand to view script</summary>
 
-<pre><code><strong>echo $branchesAndFileIdJson
-</strong>echo $git_json
-originBranch=$(jq -r '.originBranch' &#x3C;&#x3C;&#x3C; $branchesAndFileIdJson)
+```
+echo $branchesAndFileIdJson
+echo $git_json
+originBranch=$(jq -r '.originBranch' <<< $branchesAndFileIdJson)
 BRANCH="$originBranch"
 echo "param branchesAndFileIdJson =  $branchesAndFileIdJson"
 echo "param originBranch = $originBranch"
@@ -62,85 +72,112 @@ echo "param SERVER = $SERVER"
 echo "param PROJECT_ID = $PROJECT_ID"
 echo "param ORGANIZATION = $ORGANIZATION"
 echo "param BRANCH = $BRANCH"
-echo "DEST_BRANCH: $DEST_BRANCH"
-echo "param USER_STORY = $USER_STORY"   
-echo "param BASE_BRANCH = $BASE_BRANCH"
+echo "param USER_STORY = $USER_STORY"
+echo "param PARENT_ID = $PARENT_ID"
 echo "param COPADO_PROJECT = $COPADO_PROJECT"
+CS_MAIN_BRANCH="main"
 OUTPUT_JSON="output.json"
 OUTPUT_CSV="violations.csv"
 CSV_STRING=""
 exitCode=0
-NEW_PROJECT="true"
+SFDX_ACCESS_TOKEN="$CF_SF_SESSIONID" sf org login access-token --alias copadoOrg --instance-url "$CF_SF_ENDPOINT" --no-prompt
 
-# Check if the project has been scanned before
-curl -u $TOKEN: -s "$SERVER/api/ce/component?component=$PROJECT_ID" -o $OUTPUT_JSON || exitCode=$?
-# Check if the curl command was successful
-if [[ $? -ne 0 ]]
-then
-  echo "Failed to fetch data from the API"
-  exit 1
+# Now pulls the Test ID from the job execution and queries for the user story
+# if run from the Run Tests button 
+echo "
+if('$PARENT_ID' != ''){
+  string recId='$PARENT_ID';
+
+  copado__Test__c test = [
+      SELECT copado__User_Story__c FROM copado__Test__c WHERE Id = :recId LIMIT 1
+  ];
+
+  System.debug('OUTPUT_VAR'+':'+test.copado__User_Story__c);
+}
+" > /tmp/userstory-run.apex
+
+
+if [[ -z "$USER_STORY" && -n "$PARENT_ID" ]]
+then  
+  USER_STORY=$(sf apex run --file /tmp/userstory-run.apex --target-org copadoOrg --json | sed -n 's/.*OUTPUT_VAR:\(.*\)\\n.*/\1/p' | sed 's/\\n.*//')
+fi
+
+# Find the Project Name (if not present) based on the User Story Id
+echo "
+if('$PARENT_ID' != ''){
+  string recId='$USER_STORY';
+
+  copado__User_Story__c userStory = [
+      SELECT copado__Project__r.Name FROM copado__User_Story__c WHERE Id = :recId LIMIT 1
+  ];
+
+  System.debug('OUTPUT_VAR'+':'+userStory.copado__Project__r.Name);
+}
+" > /tmp/project-run.apex
+
+
+if  [[ -z "$COPADO_PROJECT" ]]
+then  
+  COPADO_PROJECT=$(sf apex run --file /tmp/project-run.apex --target-org copadoOrg --json | sed -n 's/.*OUTPUT_VAR:\(.*\)\\n.*/\1/p' | sed 's/\\n.*//')
 fi
 
 
-# Set New Project based on response
-NEW_PROJECT=$(node &#x3C;&#x3C;EOF
-  const fs = require('fs');
-  try {
-    // Read the JSON file and parse it
-    const data = JSON.parse(fs.readFileSync('$OUTPUT_JSON', 'utf8'));
-    // Check if there is an "errors" field indicating an error
-    if (data.errors) {
-      console.error("Project does not exist or there is an error in the response:" + JSON.stringify(data));
-      console.log("true");
-    } else if ('current' in data) {
-      console.log("false");  // Project has been scanned before
-    } else {
-      console.log("true");   // New project, not scanned before
-    }
-  } catch (error) {
-    console.error("ERROR: ", error);
-    process.exit(1);
+echo "****************************"
+echo "****************************"
+echo "User Story is: $USER_STORY"
+echo "****************************"
+echo "****************************"
+echo "Copado Project is: $COPADO_PROJECT"
+echo "****************************"
+echo "****************************"
+
+# Determine changed files in User Story
+copado -p "finding changed files...."
+
+echo "
+if('$USER_STORY' != ''){
+  string recID='$USER_STORY';
+  List<String> filePaths = new List<String>();
+
+  List<copado__User_Story_Metadata__c> components = [
+      SELECT Name,copado__Metadata_API_Name__c,copado__Unique_ID__c,copado__Type__c
+      FROM copado__User_Story_Metadata__c
+      WHERE Copado__User_Story__c = :recId
+  ];
+
+  for (copado__User_Story_Metadata__c component : components) {
+      if (component.copado__Unique_ID__c != null) {
+          System.debug(component.copado__Metadata_API_Name__c);
+          System.debug(component.copado__Type__c);
+
+          filePaths.add('**/'+component.copado__Metadata_API_Name__c+'*');
+      }
   }
-EOF
-)
 
-# Need to determine changed files in User Story
+  // Convert list to a comma-separated string
+  string exclusions = String.join(filePaths, '*,');
+  System.debug('OUTPUT_VAR'+':'+exclusions);
+}
+" > /tmp/files-run.apex
 
-# Check for branch type and scan
-if [[ "$BRANCH" =~ .+/US-[0-9]+ ]]
-then
-  API_URL="$SERVER/api/issues/search?componentKeys=$PROJECT_ID&#x26;pullRequest=$BRANCH&#x26;statuses=OPEN"
-  if [[ "$NEW_PROJECT" = true ]]
-  then
-    copado-git-get $BASE_BRANCH
-    copado -p "Running codescan on Main Branch for first run..."
-    sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION --json 2>&#x26;1 | tee /tmp/result.json \
-        || exitCode=$?
-    echo "Codescan completed. exit code: $exitCode"
-  fi
-  copado -p "Cloning repo..."
-  copado-git-get $BRANCH
-  ls -a
-  copado -p "Running codescan on User Story..."
-  sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION -Dsonar.pullrequest.base=master -Dsonar.pullrequest.branch="$COPADO_PROJECT" -Dsonar.pullrequest.key=$BRANCH --json 2>&#x26;1 | tee /tmp/result.json \
-      || exitCode=$?
-  echo "Codescan completed. exit code: $exitCode"
-  copado -u /tmp/result.json
-else
-  API_URL="$SERVER/api/issues/search?componentKeys=$PROJECT_ID&#x26;statuses=OPEN"
-  if [[ "$DEST_BRANCH" == "$BASE_BRANCH" ]]
-  then
-    copado-git-get $BASE_BRANCH
-    copado -p "Running codescan on Main Branch..."
-    sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION  --json 2>&#x26;1 | tee /tmp/result.json \
-        || exitCode=$?
-    echo "Codescan completed. exit code: $exitCode"
-    copado -u /tmp/result.json
-  else
-    echo "No scan needed."
-    exit 0
-  fi
-fi
+OUTPUT=$(sf apex run --file /tmp/files-run.apex --target-org copadoOrg --json)
+
+CHANGED_FILES=$(echo "$OUTPUT" | sed -n 's/.*OUTPUT_VAR:\(.*\)\\n.*/\1/p' | sed 's/\\n.*//')
+
+echo "****************************"
+echo "****************************"
+echo "Changed files include: $CHANGED_FILES"
+echo "****************************"
+echo "****************************"
+
+copado -p "Cloning repo..."
+copado-git-get $BRANCH
+
+copado -p "Running codescan on User Story..."
+sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --organization=$ORGANIZATION -Dsonar.pullrequest.base=$CS_MAIN_BRANCH -Dsonar.pullrequest.branch="$COPADO_PROJECT" -Dsonar.pullrequest.key=$BRANCH -Dsonar.inclusions="$CHANGED_FILES" --json 2>&1 | tee /tmp/result.json \
+    || exitCode=$?
+echo "Codescan completed. exit code: $exitCode"
+copado -u /tmp/result.json
 
 if [ -f /tmp/result.json ]
 then
@@ -148,7 +185,7 @@ then
   copado -p "Fetching issues..."
 
   # Fetch JSON data from the API
-  echo $(curl -u $TOKEN: -s $API_URL -o $OUTPUT_JSON)
+  echo $(curl -u $TOKEN: -s "$SERVER/api/issues/search?componentKeys=$PROJECT_ID&pullRequest=$BRANCH&statuses=OPEN" -o $OUTPUT_JSON)
 
   # Check if the curl command was successful
   if [[ $? -ne 0 ]]
@@ -161,7 +198,7 @@ then
   copado -p "Creating CSV..."
 fi
 
-rows=$(node &#x3C;&#x3C;EOF
+rows=$(node <<EOF
 const fs = require('fs');
 
 // Read the JSON file
@@ -210,7 +247,7 @@ fi
 if [[ "$rows" != '' ]]
 then
   # Convert JSON rows to CSV string
-  CSV_STRING=$(jq -r 'join("#")' &#x3C;&#x3C;&#x3C; "$rows")
+  CSV_STRING=$(jq -r 'join("#")' <<< "$rows")
 
   # Escape special characters in CSV_STRING for Apex
   CSV_STRING=$(echo "$CSV_STRING" | sed 's/\\/\\\\/g; s/"/\\"/g')
@@ -232,17 +269,41 @@ fi
 echo "
 if('$USER_STORY' != ''){
   string recID='$USER_STORY';
-  List&#x3C;copado__User_Story__c> userStories = [SELECT Id FROM copado__User_Story__c WHERE Id = :recID LIMIT 1];
+  List<copado__User_Story__c> userStories = [SELECT Id FROM copado__User_Story__c WHERE Id = :recID LIMIT 1];
   Id usid = userStories.isEmpty() ? null : userStories[0].Id;
 
   if (usid != null) {
+    //***************************
+    // Get the Result record ID from the parent record
+    string parentId = '$PARENT_ID';
+    Id resultId;
+    if(parentId != '') {
+      List<copado__Result__c> results = [SELECT Id FROM copado__Result__c WHERE Id = :parentId LIMIT 1];
+      if(!results.isEmpty()) {
+        resultId = results[0].Id;
+      }
+    }
+    //*************************^^^
+
     // Proceed with creating Static Code Analysis Result
     Id recTypeId = Schema.SObjectType.copado__Static_Code_Analysis_Result__c.getRecordTypeInfosByName().get('CodeScan').getRecordTypeId();
-    copado__Static_Code_Analysis_Result__c scar = new copado__Static_Code_Analysis_Result__c(recordtypeId=recTypeId,copado__User_Story__c=usid);
+    copado__Static_Code_Analysis_Result__c scar = new copado__Static_Code_Analysis_Result__c(recordtypeId=recTypeId,copado__User_Story__c=usid,copado__Details__c='$SERVER/dashboard?id=$PROJECT_ID&pullRequest=$BRANCH');
     insert scar;
     id scarid = scar.id;   
 
-    List&#x3C;copado__Static_Code_Analysis_Violation__c> SCAV = new List&#x3C;copado__Static_Code_Analysis_Violation__c>();
+    //***************************
+    // Update the Result record with error message and external result link if it exists
+    if(resultId != null) {
+      copado__Result__c result = new copado__Result__c(
+        Id = resultId,
+        copado__Error_Message__c = 'CodeScan analysis completed. See details in Static Code Analysis Result.',
+        copado__Link__c = '$SERVER/dashboard?id=$PROJECT_ID&pullRequest=$BRANCH'
+      );
+      update result;
+    }
+    //*************************^^^
+
+    List<copado__Static_Code_Analysis_Violation__c> SCAV = new List<copado__Static_Code_Analysis_Violation__c>();
     
     String csvAsString = '$CSV_STRING';
     System.debug('CSV as string:'+csvAsString);
@@ -251,9 +312,9 @@ if('$USER_STORY' != ''){
         String[] csvFileLines = csvAsString.split('#');
         System.debug(csvFileLines.size());
 
-        for(Integer i=0; i&#x3C;csvFileLines.size(); i++){
+        for(Integer i=0; i<csvFileLines.size(); i++){
             String[] csvRecordData = csvFileLines[i].split(',');
-            String issueLink='$SERVER/project/issues?pullRequest=$BRANCH&#x26;issues='+csvRecordData[0]+'&#x26;open='+csvRecordData[0]+'&#x26;id=$PROJECT_ID';
+            String issueLink='$SERVER/project/issues?pullRequest=$BRANCH&issues='+csvRecordData[0]+'&open='+csvRecordData[0]+'&id=$PROJECT_ID';
             
             copado__Static_Code_Analysis_Violation__c viol= new copado__Static_Code_Analysis_Violation__c(
                 CSExtKey__c = csvRecordData[0],             
@@ -285,7 +346,6 @@ if('$USER_STORY' != ''){
 export CF_SF_ENDPOINT="https://$(echo $CF_SF_ENDPOINT | sed -e 's/[^/]*\/\/\([^@]*@\)\?\([^:/]*\).*/\2/')"
 
 copado -p "Inserting parent..."
-SFDX_ACCESS_TOKEN="$CF_SF_SESSIONID" sf org login access-token --alias copadoOrg --instance-url "$CF_SF_ENDPOINT" --no-prompt
 sf apex run --file /tmp/run.apex --target-org copadoOrg --json
 if [[ $? -ne 0 ]]
 then
@@ -294,9 +354,11 @@ then
 fi
 
 exit $exitCode
-</code></pre>
+```
 
 </details>
+
+If the main branch of your repository is not **main**, please change the **CS\_MAIN\_BRANCH** variable on line 15.  This should match the branch name as it is shown in CodeScan.
 
 Click **save**.
 
@@ -320,17 +382,14 @@ Click **Add New Parameter** and add the following parameters:
 **Name**: DEST\_BRANCH\
 **Value**: {$Destination.Branch}
 
+**Name:** PARENT\_ID\
+**Value:** {$Context.copado\_\_JobExecution\_\_r.copado\_\_ParentRecord\_Id\_\_c}
+
 Click **Save.** &#x20;
 
 ### Quality Gate Rule
 
-In order to get the Quality Gate to run the appropriate events, the Quality Gate Rule needs one more trigger event.&#x20;
-
-Navigate to the **Quality Gate Rules** tab and open the CodeScan Quality Gate Rule.&#x20;
-
-**Deactivate** the rule and add **Promote** to the Copado Actions list under the Trigger heading.&#x20;
-
-**Activate** the rule again.
+The Quality Gate rule should show **After Commit** as a Trigger.  This is the default setup as described in the Copado documentation.
 
 ### User Story Page
 

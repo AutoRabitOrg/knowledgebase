@@ -1,23 +1,31 @@
 # Update Custom Label
 
-To create this template, follow the below steps:
+The **UpdateCustomLabel** template enables you to update existing custom label values within your Salesforce org via AutoRABIT.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+## Steps to Create the Update Custom Label Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **UpdateCustomLabel** checkbox available under **Update Custom Label.**
+5. Provide a **template name** and a **short description**.
+6. Select the **UpdateCustomLabel** checkbox under **Update Custom Label**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** and **Custom Label Name** that appear automatically by default. To add the custom test data, click on **Add** button.&#x20;
-9. However, you'll need to add more custom labels for the auto-generated or your custom test case name. To add, do the following:
-   * Click on![](<../../../../../.gitbook/assets/image (1479).png>)icon.
-   * Enter the required details in the **Custom Label Name** and **New Value** fields.&#x20;
-   * You can even add multiple settings for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-   * Click **OK**. Once you are finished, click **Save** to save this page.
-10. Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click the **Run** button to run the template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. Please check the **View History** page for a detailed summary report of the operation carried out.
+
+8. On the next screen:
+   - A **Test Case Name** and **Custom Label Name** are auto-generated.
+   - Click **Add** to insert custom test data.
+
+9. To define additional custom label updates:
+   - Click the edit icon ![Edit](../../../../../.gitbook/assets/image%20(1479).png).
+   - Input values in the **Custom Label Name** and **New Value** fields.
+   - To add multiple entries for the same test case, click the **+** symbol and repeat the process.
+   - Click **OK**, then click **Save** to preserve the test case.
+
+10. Click **Save** again to complete the template creation.
+
+11. Upon successful save, you will be redirected to the **Environment Provisioning History** screen.
+12. Click **Run** to execute the template in your destination org.
+13. From the dropdown, select your **destination org** and enter the **email address(es)** for notifications.
+14. In the **Post Deployment Steps**, choose the test cases you've created.
+15. For a comprehensive report of the deployment, visit the **View History** page.

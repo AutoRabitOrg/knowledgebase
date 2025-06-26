@@ -2,140 +2,198 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-The **CI Job Results** screen will display the list of builds triggered for your CI Jobs to date. In addition, you can even trigger a new build or find detailed build info for your existing jobs, such as build status, log reports, author details, etc.
+The **CI Job Results** screen displays the list of builds triggered for your CI Jobs to date. You can trigger new builds and access detailed build information including status, logs, author, and more.
 
 ### Navigating to CI Job Result Screen <a href="#navigating-to-ci-job-result-screen" id="navigating-to-ci-job-result-screen"></a>
 
-1. Hover your mouse over the **nCino** module and click on [**CI Jobs**](https://knowledgebase.autorabit.com/docs/ci-job-list-screen).&#x20;
-2. By default, you will be redirected to the **Job Results** tab; if not, click on the **Job Results** tab. The list of CI job builds will display in reverse chronological order; the newest will display on the top of the list.
+1. Hover over the **nCino** module and click [**CI Jobs**](https://knowledgebase.autorabit.com/docs/ci-job-list-screen).
+2. By default, you'll be directed to the **Job Results** tab. If not, click on it. Builds are listed in reverse chronological order.
 
-<figure><img src="../../../../../.gitbook/assets/image (1367).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1367).png" alt="CI Job Results default view">
+    <figcaption>CI Job Results default view</figcaption>
+</figure>
 
 ### Trigger a Build <a href="#trigger-a-build" id="trigger-a-build"></a>
 
-To trigger a new build for your CI Job, follow the below steps:&#x20;
+3. In the **CI Job Results** screen, select your job from the **All Jobs** dropdown.
 
-3. From the **CI Job Results** screen, select your job from the **All Jobs** dropdown field. The dropdown here allows switching between the [CI Jobs](https://knowledgebase.autorabit.com/docs/ci-job-list-screen) created.
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1368).png" alt="All Jobs dropdown menu to select CI jobs">
+    <figcaption>All Jobs dropdown menu to select CI jobs</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1368).png" alt=""><figcaption></figcaption></figure>
+4. If no build exists, “No builds exist” will be displayed. To create a new build, click **Build Now**.
 
-4. If no build is created yet,  **'No builds exist'** gets displayed, or if the build is already triggered for the job and you wish to trigger another build, click on **Build Now** besides your selected job.
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1369).png" alt="Option to trigger a new build">
+    <figcaption>Option to trigger a new build</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1369).png" alt=""><figcaption></figcaption></figure>
+5. On the next screen, the left pane shows job summary details (label, source/destination org, deployment method, etc.).
 
-5. The left side on the next screen will have summary details of your CI job configured, i,e.,  _job label, source/destination org, deployment method chosen,_ etc.
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1370).png" alt="CI Job summary before triggering build">
+    <figcaption>CI Job summary before triggering build</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1370).png" alt="" width="563"><figcaption></figcaption></figure>
+6. Under **Build Inputs**, enter the **title** and any **comments**.
+7. Choose a **Deployment Type**:
+   - **Commit and Deploy** – Commits and deploys to destination org.
+   - **Deploy only** – Deploys only.
+   - **Commit only** – Commits only.
+8. Optionally, add notes in the **Notes** section.
+9. Click **Trigger Build**. If credentials are validated, the build will start.
 
-6. Under the **Build inputs** section, enter the **title** of the build and add **comments,** if any.&#x20;
-7. Choose the **Deployment Type:**
-   * **Commit and Deploy:** Both commit and deployment will undergo if chosen&#x20;
-   * **Deploy only:** Deployment happens to the selected destination org only.
-   * **Commit only:** Committing the changes to the version control branch only.
-8. Add any additional information in the **Notes** section. However, this is optional.
-9. Click on **Trigger Build**. It will validate the user credentials, and the build will get triggered upon successful validation.
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1371).png" alt="Trigger Build interface with inputs">
+    <figcaption>Trigger Build interface with inputs</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1371).png" alt=""><figcaption></figcaption></figure>
+10. You’ll return to the **Job Results** screen where build status is displayed.
 
-10. You'll be redirected to the **Job Results** main screen, where you can find your recently triggered build status.
+### Build Log and Object Detail <a href="#build-log-and-object-detail" id="build-log-and-object-detail"></a>
 
-### Build Log and Object detail <a href="#build-log-and-object-detail" id="build-log-and-object-detail"></a>
+11. Click a job in the list or select via **All Jobs** dropdown.
 
-11. From the **CI Job Results** screen, click on the CI Job from the list to view the build details or use the **All Jobs** drop-down to look for your job.
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1372).png" alt="Selecting a CI Job to view details">
+    <figcaption>Selecting a CI Job to view details</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1372).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1373).png" alt="Alternate job selection via dropdown">
+    <figcaption>Alternate job selection via dropdown</figcaption>
+</figure>
 
-or,
+12. From the build list, select a build to view logs and object data.
 
-<figure><img src="../../../../../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1374).png" alt="CI build list with selectable builds">
+    <figcaption>CI build list with selectable builds</figcaption>
+</figure>
 
-12. From the list of build lists triggered, look for the build for which you want to see the log and object details. Click on the build once you found it.
+13. Under the **Data** tab, view [nCino](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) objects with success/fail counts.
 
-<figure><img src="../../../../../.gitbook/assets/image (1374).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1375).png" alt="Data tab with deployment success/failure counts">
+    <figcaption>Data tab with deployment success/failure counts</figcaption>
+</figure>
 
-13. For each template deployed, the **Data** tab will list all the [nCino](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) objects committed or deployed, along with the _success/fail_ count.
+14. Click an object to view detailed information.
 
-<figure><img src="../../../../../.gitbook/assets/image (1375).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1376).png" alt="Object detail panel showing deployment info">
+    <figcaption>Object detail panel showing deployment info</figcaption>
+</figure>
 
-14. Click on the **object** to view its detailed object information displayed on the right side of the screen.
+15. The **Success/Failed** tab shows deployment outcomes by record count.
 
-<figure><img src="../../../../../.gitbook/assets/image (1376).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1377).png" alt="Success and Failed tabs with record counts">
+    <figcaption>Success and Failed tabs with record counts</figcaption>
+</figure>
 
-15. The number of records successfully deployed or failed to deploy can be seen under the **Success/ Failed** tab.
+Click a count link for full details:
 
-<figure><img src="../../../../../.gitbook/assets/image (1377).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1378).png" alt="Detailed record results by success/failure">
+    <figcaption>Detailed record results by success/failure</figcaption>
+</figure>
 
-To view the detailed object records that were successfully deployed or failed to deploy, click on the **number link** (under _Success_ or _Failed_).
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1379).png" alt="Record breakdown per status">
+    <figcaption>Record breakdown per status</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1378).png" alt=""><figcaption></figcaption></figure>
+16. The **Log** tab contains commit/deployment logs. Use the download icon (![Download log icon](../../../../../.gitbook/assets/image (1380).png)) to save the ZIP file.
 
-<figure><img src="../../../../../.gitbook/assets/image (1379).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1381).png" alt="Build log tab with export option">
+    <figcaption>Build log tab with export option</figcaption>
+</figure>
 
-16. The **Log** tab contains the detailed report of the commit/deployment performed. Each commit/deployment has several "steps," which contain a subset of logs; such logs can be seen here. You can view complete log information in the user interface or save it to your local machine using![](<../../../../../.gitbook/assets/image (1380).png>)icon. The file usually gets downloaded in ZIP format.
+17. **Post-Deployment Activities**: Shows results per Salesforce org. Use the dropdown to toggle between orgs.
 
-<figure><img src="../../../../../.gitbook/assets/image (1381).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1382).png" alt="Post-deployment activities with success/failure summary">
+    <figcaption>Post-deployment activities with success/failure summary</figcaption>
+</figure>
 
-17. **Post-Deployment Activities:** The post-deployment activities information is displayed on this tab. If you have selected more than one Salesforce org as your destination, select the respective org from the **Salesforce Org** drop-down to view the detailed success/failure objects count.
+> **Note:**
+> 1. A maximum of 5 Salesforce Orgs are supported.
+> 2. Activities are sequential. Success/failure details are visible only after all post-deployment steps complete.
 
-{% hint style="info" %}
-**Point to Note:**
-
-1. A maximum of 5 Salesforce Orgs will be considered for post-deployment activities. For multiple Salesforce Orgs opted, the post-deployment activities will be carried out sequentially, meaning the next post-deployment activities will be carried out only if the current post-deployment activities are done.&#x20;
-2. The success or failure detailed object records can be seen only if the post-deployment activities are successfully carried out for all of the Salesforce Orgs.
-{% endhint %}
-
-<figure><img src="../../../../../.gitbook/assets/image (1382).png" alt=""><figcaption></figcaption></figure>
-
-***
+---
 
 ### Download Backup Snapshot
 
 #### Introduction
 
-Now it's easy to download the backup snapshot of the CI Jobs as required. You can go to the respective CI job and download the backups of the templates all at once or individually.
+You can download backup snapshots of CI jobs, either per template or in bulk.
 
-#### Step-by-Step Guide
+#### Steps
 
 1. Go to any CI Job.
-2. Click on any template available under the build.
+2. Click a template under the build.
 
-<figure><img src="../../../../../.gitbook/assets/image (1486).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1486).png" alt="CI job build view with template links">
+    <figcaption>CI job build view with template links</figcaption>
+</figure>
 
-3. On the template page, you will see the download option available for each object.
+3. Click the download icon beside each object.
 
-<figure><img src="../../../../../.gitbook/assets/image (1487).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1487).png" alt="Download icons for individual objects">
+    <figcaption>Download icons for individual objects</figcaption>
+</figure>
 
-4. Open the CI Job, then hover over the three dots at the far right of the banner as shown below.
+4. Hover over the three-dot menu in the top banner.
 
-<figure><img src="../../../../../.gitbook/assets/image (1488).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1488).png" alt="Three-dot menu to access build changes">
+    <figcaption>Three-dot menu to access build changes</figcaption>
+</figure>
 
-5. Click on the “Build Changes” option.
-6. You will be redirected to a “Build Changes” page.
+5. Click **Build Changes** to access the download page.
 
-<figure><img src="../../../../../.gitbook/assets/image (1489).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1489).png" alt="Build Changes page with Download button">
+    <figcaption>Build Changes page with Download button</figcaption>
+</figure>
 
-7. On the “Build Changes” page, click on the “Download” button to download all the templates from that build.
-8. You can see the files downloaded.
+6. Click **Download** to save all templates in that build.
 
-
+---
 
 ### Commit and Deployment Workspace <a href="#commit-and-deployment-workspace" id="commit-and-deployment-workspace"></a>
 
-**Commit Workspace:** When various commits are deployed to a branch, the queue commits will be mentioned here. The main concept of introducing the commit workspace is to allow parallel commits to the same version control repository/branch.
+- **Commit Workspace** – Displays queued commits for the same repository/branch, enabling parallel commit operations.
+- **Deployment Workspace** – Shows ongoing deployment progress. Click the icon at the right side of the page.
 
-**Deployment Workspace:** View the ongoing deployment process by clicking on the **Deployment Workspace** icon on the right side of the page.
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1383).png" alt="Commit Workspace panel">
+    <figcaption>Commit Workspace panel</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1383).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1384).png" alt="Deployment Workspace view">
+    <figcaption>Deployment Workspace view</figcaption>
+</figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1384).png" alt="" width="554"><figcaption></figcaption></figure>
+---
 
 ### CI Job Results 'Advanced Search' Filter <a href="#ci-job-results-advanced-search-filter" id="ci-job-results-advanced-search-filter"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (1385).png" alt=""><figcaption></figcaption></figure>
+<figure>
+    <img src="../../../../../.gitbook/assets/image (1385).png" alt="Advanced Search filter options for CI Job Results">
+    <figcaption>Advanced Search filter options for CI Job Results</figcaption>
+</figure>
 
-1. **Filter by Job Name/ Build Number:** Filter the builds by CI job label name and the build number.&#x20;
-2. **Triggered By**: Filter the builds by the author.
-3. **Filter by Created/ Modified Date:** If you want to view job lists that get authored between any two dates, use the **'From Date'** and **'To Date'** to narrow down the list of build lists.
-4. **Filter by Build Label Name**: Filter the builds by build label name.
-5. **Filter by Build Status**: Filter the list based on build status, i.e., success or failed.
-6. **Filter by Deploy Status**: Filter the build via deployment type, i.e., commit and deploy or deploy or commit.
+1. **Filter by Job Name/Build Number** – Filter builds by job label or build number.
+2. **Triggered By** – Filter by the user who initiated the build.
+3. **Filter by Created/Modified Date** – Use **From Date** and **To Date** fields.
+4. **Filter by Build Label Name** – Filter by build label.
+5. **Filter by Build Status** – Filter by build success/failure.
+6. **Filter by Deploy Status** – Filter by deployment type (commit, deploy, or both).

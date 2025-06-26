@@ -1,25 +1,32 @@
 # Search Settings
 
-The user can schedule an Apex class that implements the 'Schedulable' interface to be automatically executed on a weekly interval using this template.
+The **SearchSetting** template enables users to configure and schedule search interface settings in Salesforce using AutoRABIT. It allows setting up enhanced lookups, auto-completion, and customizing search result limits.
 
-To create this template, follow the below steps:
+## Steps to Create the Search Settings Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create** [**Unsupported Metadata Template**](./) tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **SearchSetting** checkbox available under **Search Settings**.
+5. Provide a **template name** and a **short description**.
+6. Select the **SearchSetting** checkbox under **Search Settings**.
 7. Click **Add**.
-8. On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill the required information in the fields below, then click the **Save** button.
-   * **Search Setting field:** Enter the desired search interface settings in this fields, mark it active by selecting the Active box.
-   * **Search Results:** Specify the number of records to display for each object on the Search Results page. To make changes, select one or more objects, enter the new number of results per page, and click Save. The new value must be between 5 and 50.
-   * **Lookup Settings:** Select the objects for which you want to enable the following features and click Save:
-   * Enhanced lookups provide an updated lookup dialog interface that gives users the ability to filter, sort, and page through results as well as customize columns.
-   * Lookup auto-completion displays suggestions from the Recent Items list as you type.
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](../) **History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** will appear by default.
+   - Click **Add** to enter custom test data.
+   - Fill in the required fields:
+     - **Search Setting:** Enter the desired search interface configuration and check the **Active** box.
+     - **Search Results:** Specify the number of records to display per object on the search results page (value must be between 5 and 50).
+     - **Lookup Settings:** Select the relevant objects and enable:
+       - **Enhanced Lookups** for advanced filtering, sorting, paging, and customizable columns.
+       - **Lookup Auto-completion** for predictive suggestions from the Recent Items list.
+   - Click **Save** to finalize the test case.
+
+9. Click **Save** again to save the overall template.
+
+10. Once saved, you’ll be redirected to the [**Environment Provisioning History**](../) screen.
+11. Click **Run** to execute the template on your destination org.
+12. Select your **destination org** and enter **email address(es)** to receive notifications.
+13. In the **Post Deployment Steps**, select the test cases you have recently created.
+14. Visit the **View History** page for a detailed summary of the operation.

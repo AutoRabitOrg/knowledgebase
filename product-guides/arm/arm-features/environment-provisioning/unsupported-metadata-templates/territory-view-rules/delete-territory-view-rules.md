@@ -1,23 +1,31 @@
 # Delete Territory View Rules
 
-To create this template, follow the below steps:
+The **DeleteTerritoryViewRules** template enables deletion of specific Territory View Rules from Salesforce using AutoRABIT’s Environment Provisioning feature.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](../) tab.
-5. Give the template a **name** and a **short description** of it.
+## Steps to Create the DeleteTerritoryViewRules Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Open the **Create** [**Unsupported Metadata Template**](../) tab.
+5. Provide a **name** and a **short description** for the template.
 6. Select the **DeleteTerritoryViewRules** checkbox under **Territory View Rules**.
-7. Click **Add.**
-8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill the required information in the fields below.
+7. Click **Add**.
 
-    * Enter the details in **Territory Name** and **Rule Name** fields.
-    * Once you are finished, click **Save** to save this page.
+8. On the next screen:
+   - A **Test Case Name** appears automatically.
+   - Click **Add** to input custom test data.
+   - Complete the following fields:
+     - **Territory Name**: Specify the territory associated with the rule.
+     - **Rule Name**: Provide the name of the rule to delete.
+   - Click **Save** to store the test data.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (1475).png" alt="" width="563"><figcaption></figcaption></figure>
-9. Next, Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+   ![Delete Territory View Rules - Example](../../../../../../.gitbook/assets/image%20(1475).png)
+
+9. Click **Save** again to save the template.
+
+10. After the template is successfully created, you’ll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
+11. Click the **Run** button to execute the template on your destination org.
+12. Choose your **destination org** from the dropdown and enter the **email address(es)** to receive notifications.
+13. In the **Post Deployment Steps**, select the test cases you have recently created.
+14. Visit the **View History** page for a detailed summary of the operation.

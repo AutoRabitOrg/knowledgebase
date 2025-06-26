@@ -1,6 +1,6 @@
 # File Upload and Download Security
 
-The **FileUploadAndDownloadSecurity** template allows configuration of file upload and download security settings in Salesforce using AutoRABIT.
+The **FileUploadAndDownloadSecurity** template allows the configuration of file upload and download security settings in Salesforce using AutoRABIT.
 
 ## Steps to Create the FileUploadAndDownloadSecurity Template
 

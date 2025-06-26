@@ -1,19 +1,26 @@
 # EnableSalesforcetoSalesforce
 
-To create this template, follow the below steps:
+The **EnableSalesforcetoSalesforce** template activates the Salesforce to Salesforce integration feature using AutoRABIT.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EnableSalesforcetoSalesforce** checkbox available under **Enable Salesforce to Salesforce**.
+## Steps to Create the EnableSalesforcetoSalesforce Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
+4. Select the **Create Unsupported Metadata Template** tab.
+5. Provide a **template name** and a **short description**.
+6. Check the **EnableSalesforcetoSalesforce** option under **Enable Salesforce to Salesforce**.
 7. Click **Add**.
-8. On the next screen, a **Test Case Name** appears automatically by default.&#x20;
-9. To add the custom test data, click on **Add** button and give a name to them. Click on the **Save** button to save this page.
-10. Next, Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click the **Run** button to run the template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. Please check the **View History** page for a detailed summary report of the operation carried out.
+
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to create a custom test case and assign a name to it.
+   - Click **Save** to store the test case.
+
+9. Click **Save** again to complete the template creation.
+
+10. You will be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Choose your **destination org** from the dropdown and enter **email address(es)** to receive notifications.
+13. In the **Post Deployment Steps**, select the test cases you recently created.
+14. Refer to the **View History** page for a detailed execution summary.

@@ -1,27 +1,39 @@
 # Edit Lead
 
-To create this template, follow the below steps:
+The **EditLead** template allows users to modify lead ownership and conversion settings in Salesforce using AutoRABIT.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+## Steps to Create the Edit Lead Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EditLead** checkbox available under **Lead Settings.**
+5. Enter a **template name** and a **short description**.
+6. Select the **EditLead** checkbox under **Lead Settings**.
 7. Click **Add**.
-8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
 
-    * **Lead Type:** Enter either queue or a user that will own a lead when assignment rules fail to locate an owner.
-    * **Lead Owner:** Enter the owner's name in this field.
-    * **Lead Conversion Setting:** Click on![](<../../../../../.gitbook/assets/image (71).png>)icon to add the required setting details here. Activate the settings by selecting the **Active** checkbox.\
-      i. **Require Validation for Converted Leads:** When users convert leads, enforce required field settings, field validation rules, workflow actions, and Apex triggers.\
-      ii. **Preserve Lead Status:** Prevent the lead status from changing to the new lead owner's default value during lead conversion.\
-      iii. **Enable Conversions for Salesforce Mobile:** Let users convert leads on the mobile app.
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to insert custom test data.
+   - Fill in the following fields:
 
-    <figure><img src="../../../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click the **Run** button to run the template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. Please check the **View History** page for a detailed summary report of the operation carried out.
+     - **Lead Type:** Specify a queue or user to assign the lead if assignment rules fail.
+     - **Lead Owner:** Enter the designated lead owner.
+     - **Lead Conversion Setting:** Click the configuration icon ![icon](../../../../../.gitbook/assets/image%20(71).png) to open the settings panel and configure:
+
+       - **Require Validation for Converted Leads:** Enforces field-level validations, workflow actions, and triggers on conversion.
+       - **Preserve Lead Status:** Retains the lead's original status instead of using the new owner’s default.
+       - **Enable Conversions for Salesforce Mobile:** Allows lead conversion from the Salesforce mobile app.
+
+     ![Lead Conversion Settings](../../../../../.gitbook/assets/image%20(70).png)
+
+   - Activate the settings using the **Active** checkbox.
+   - Click **Save** to finalize the data entry.
+
+9. Click **Save** again to create the template.
+
+10. You’ll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on your destination org.
+12. Choose your **destination org** and enter **email address(es)** for execution notifications.
+13. In the **Post Deployment Steps**, select the test cases you created.
+14. Visit the **View History** page for a comprehensive execution summary.

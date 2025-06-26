@@ -1,19 +1,27 @@
 # Create New Report Folder
 
-To create this template, follow the below steps:
+The **CreateNewReportFolder** template is used to create new report folders within Salesforce through the Environment Provisioning module.
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
+## Steps to Create the CreateNewReportFolder Template
+
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
 3. Click on **Create New Template**.
-4. Go to the **Create** [**Unsupported Metadata Template**](../) tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **CreateNewReportFolder** checkbox available under **Report Dashboards Create Manage Folders**.
+4. Go to the **Create Unsupported Metadata Template** tab.
+5. Provide a **name** and a **short description** for the template.
+6. Select the **CreateNewReportFolder** checkbox under **Report Dashboards Create Manage Folders**.
 7. Click **Add**.
-8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button and give a name to them.&#x20;
-9. Enter the necessary details in the **Report Folder Label** and **Folder Unique Name** fields. Click on **Save** button to save this page.
-10. Next, Click **Save** to save the template.
-11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-12. Click on the **Run** button to run the current template on your destination org.
-13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-15. For a detailed summary report of the operation carried out, please check the **View History** page.
+
+8. On the next screen:
+   - A **Test Case Name** will appear by default.
+   - Click **Add** to input custom test data.
+   - Provide values for the **Report Folder Label** and **Folder Unique Name** fields.
+   - Click **Save** to store the test case.
+
+9. Click **Save** again to finalize and save the template.
+
+10. After successful creation, you'll be redirected to the **Environment Provisioning History** screen.
+11. Click **Run** to execute the template on the target org.
+12. Select your **destination org** from the dropdown and provide the **email address(es)** to receive status notifications.
+13. Under **Post Deployment Steps**, choose the recently created test cases.
+14. Visit the **View History** page for a detailed deployment summary.

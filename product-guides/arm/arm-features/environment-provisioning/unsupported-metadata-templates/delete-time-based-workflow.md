@@ -1,28 +1,33 @@
-# Delete Time Based Workflow
+# Delete Time-Based Workflow
 
-The user can delete time-based workflow using this template.
+The **TimeBasedWorkflow** template enables users to delete time-based workflow actions in Salesforce using AutoRABIT.
 
-To create this template, follow the below steps:
+## Steps to Create the Delete Time-Based Workflow Template
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
+1. Log in to your AutoRABIT account.
+2. Navigate to the **Env. Pro.** module.
+3. Click **Create New Template**.
 4. Go to the **Create** [**Unsupported Metadata Template**](./) tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **TimeBasedWorkflow** checkbox available under **Delete Time based Workflow**.
+5. Provide a **template name** and a **short description**.
+6. Select the **TimeBasedWorkflow** checkbox under **Delete Time Based Workflow**.
 7. Click **Add**.
-8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
 
-    * Under **Monitoring Queue**, enter the Field name, Operator name, and monitoring value. Then, click on OK button.
+8. On the next screen:
+   - A **Test Case Name** is auto-generated.
+   - Click **Add** to insert custom test data.
+   - Under the **Monitoring Queue**, enter the **Field Name**, **Operator Name**, and **Monitoring Value**, then click **OK**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+     ![Monitoring Queue](../../../../../.gitbook/assets/image%20(62).png)
 
-    * Under **Record To Delete section**, enter the desired records that’s need to be deleted. Then, click on OK button.
+   - Under the **Record To Delete** section, enter the specific records to be deleted, then click **OK**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
-11. Click on the **Run** button to run the current template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. For a detailed summary report of the operation carried out, please check the **View History** page.
+     ![Record To Delete](../../../../../.gitbook/assets/image%20(63).png)
+
+9. Click **Save** to save the test case.
+10. Click **Save** again to finalize the template.
+
+11. Once saved, you'll be redirected to the [**Environment Provisioning History**](https://knowledgebase.autorabit.com/docs/environment-provisioning) screen.
+12. Click **Run** to execute the template on your destination org.
+13. Choose your **destination org** and specify **email address(es)** to receive execution notifications.
+14. Under **Post Deployment Steps**, select the test cases you recently created.
+15. Visit the **View History** page for a detailed summary report of the execution.

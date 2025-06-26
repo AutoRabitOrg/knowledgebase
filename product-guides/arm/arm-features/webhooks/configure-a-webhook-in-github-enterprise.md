@@ -2,81 +2,121 @@
 
 ## A. Create a Webhook API Token from ARM
 
-Follow the instructions below to create a webhook API token from ARM.
+Follow these steps to create a webhook API token in ARM:
 
 1. Log in to ARM.
-2. Click on the Admin section, then select '**API Token**.'
-3. Click on '**Create API Token**.'
+2. Navigate to the **Admin** section and select **API Token**.
+3. Click on **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (953).png" alt=""><figcaption></figcaption></figure>
+   ![API Token Creation](../../../../.gitbook/assets/image%20(953).png)
 
-4. Enter the token **name**.
-5. Select Type as "**webhook**."
-6. Enter a **description** if required.
-7. Click on '**Create Option**.'
+4. Enter a **Token Name**.
+5. Set **Type** to **webhook**.
+6. (Optional) Provide a **Description**.
+7. Click on **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (954).png" alt=""><figcaption></figcaption></figure>
+   ![Webhook Token Configuration](../../../../.gitbook/assets/image%20(954).png)
 
-8. Your new API token is created.
+8. Your new API token is now created.
 
 ## B. Create Webhook with Authentication on GitHub
 
-Webhooks allow external services to be notified when certain events happen. When the specified events happen, we’ll send a POST request to each of the URLs you provide.
+Webhooks notify external services when specific events occur. To configure a webhook in GitHub:
 
-1. Go to [https://github.com/login](https://github.com/login) and sign in to GitHub with your username and password.
+1. Sign in to [GitHub](https://github.com/login).
+2. Navigate to the desired repository.
+3. Click on **Settings** in the repository's menu.
 
-<figure><img src="../../../../.gitbook/assets/image (955).png" alt="" width="272"><figcaption></figcaption></figure>
+   ![Repository Settings](../../../../.gitbook/assets/image%20(957).png)
 
-2. Select the related repository you own.
+4. In the left sidebar, click on **Webhooks**.
+5. Click on **Add webhook**.
 
-<figure><img src="../../../../.gitbook/assets/image (956).png" alt=""><figcaption></figcaption></figure>
+   ![Add Webhook](../../../../.gitbook/assets/image%20(958).png)
 
-3. Click on **'Settings'** on the right panel.
+6. In the **Payload URL** field, enter:
 
-<figure><img src="../../../../.gitbook/assets/image (957).png" alt=""><figcaption></figcaption></figure>
+# Configure a Webhook in GitHub Enterprise
 
-4. Then click on **'Webhooks & Services'** on the left panel. Click on the '**Add WebHook'** Button.
+## A. Create a Webhook API Token from ARM
 
-<figure><img src="../../../../.gitbook/assets/image (958).png" alt=""><figcaption></figcaption></figure>
+Follow these steps to create a webhook API token in ARM:
 
-5. In the URL form field, paste the copied URL or enter the payload URL manually. The payload URL is the URL of the server that will receive the webhook POST requests. \
-   **Payload URL:** \<instance\_url>/api/webhook/v2/\<orgname>/trigger-scm-push-request\
-   **For example, using instance:** https://login.autorabit.com\
-   **Payload URL:** [https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
+1. Log in to ARM.
+2. Navigate to the **Admin** section and select **API Token**.
+3. Click on **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (959).png" alt=""><figcaption></figcaption></figure>
+   ![API Token Creation](../../../../.gitbook/assets/image%20(953).png)
 
-6. Enter the Secret Key generated in ARM as an API token.
+4. Enter a **Token Name**.
+5. Set **Type** to **webhook**.
+6. (Optional) Provide a **Description**.
+7. Click on **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (960).png" alt=""><figcaption></figcaption></figure>
+   ![Webhook Token Configuration](../../../../.gitbook/assets/image%20(954).png)
 
-7. Select **'application/json'** as the content type. The **application/json** content type will deliver the JSON payload directly as the body of the POST request.
+8. Your new API token is now created.
 
-<figure><img src="../../../../.gitbook/assets/image (961).png" alt=""><figcaption></figcaption></figure>
+## B. Create Webhook with Authentication on GitHub
 
-8. Select **'Just the push events.'** Events are at the core of webhooks. These webhooks fire whenever a certain action is taken on the repository, which your server's payload URL intercepts and acts upon.
-9. Click **Add Webhook**.
+Webhooks notify external services when specific events occur. To configure a webhook in GitHub:
 
-<figure><img src="../../../../.gitbook/assets/image (962).png" alt="" width="563"><figcaption></figcaption></figure>
+1. Sign in to [GitHub](https://github.com/login).
+2. Navigate to the desired repository.
+3. Click on **Settings** in the repository's menu.
 
-10. However, to trigger the webhook using pull request, you need to select **'Let me select individual events'** and select the **Pull requests** checkbox.
+   ![Repository Settings](../../../../.gitbook/assets/image%20(957).png)
 
-<figure><img src="../../../../.gitbook/assets/image (963).png" alt="" width="563"><figcaption></figcaption></figure>
+4. In the left sidebar, click on **Webhooks**.
+5. Click on **Add webhook**.
 
-11. Click on **Add webhook** to save the webhook.
+   ![Add Webhook](../../../../.gitbook/assets/image%20(958).png)
+
+6. In the **Payload URL** field, enter:
+
+For example, if your instance is `https://login.autorabit.com` and your organization name is `autorabit.com`, the payload URL would be:
+
+![Payload URL Configuration](../../../../.gitbook/assets/image%20(959).png)
+
+7. In the **Secret** field, enter the API token generated from ARM.
+
+![Secret Key Entry](../../../../.gitbook/assets/image%20(960).png)
+
+8. Set **Content type** to **application/json**.
+
+![Content Type Selection](../../../../.gitbook/assets/image%20(961).png)
+
+9. Under **Which events would you like to trigger this webhook?**, select **Just the push event**.
+10. Click **Add webhook**.
+
+ ![Add Webhook Confirmation](../../../../.gitbook/assets/image%20(962).png)
+
+11. To trigger the webhook on pull requests, select **Let me select individual events** and check **Pull requests**.
+
+ ![Pull Request Event Selection](../../../../.gitbook/assets/image%20(963).png)
+
+12. Click **Add webhook** to save the configuration.
 
 ## Smart Commits
 
-In this section, you can select the pattern used to read the comment in a revision associated with your ALM story. For example, _'**git commit m \[project123] # add README file into the project**.'_
+Smart Commits allow you to associate Git commits with ALM stories using specific patterns. For example:
 
-<figure><img src="../../../../.gitbook/assets/image (964).png" alt="" width="563"><figcaption></figcaption></figure>
 
-If you want to configure a webhook in your repository, select the ‘**Enable auto update on webhook**’ checkbox to reveal the URL required for the webhook settings. For more information on how to configure a webhook in different repositories, refer [HERE](file://product-guides/arm/arm-features/webhooks). You can also choose to [sync external smart commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+To configure Smart Commits:
+
+- Select the **Enable auto update on webhook** checkbox to reveal the required webhook URL.
+- For more information on configuring webhooks in different repositories, refer to the [Webhook Setup Guide](file://product-guides/arm/arm-features/webhooks).
+- You can also choose to [sync external smart commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+
+![Smart Commit Configuration](../../../../.gitbook/assets/image%20(964).png)
 
 ## For Enterprise Customers
 
-Also, as a one-time configuration, GitHub **enterprise** users should raise a support ticket to [support@autorabit.com](mailto:support@autorabit.com) to get their repo URL added to the “**webhookurls.properties”** file.
+GitHub Enterprise users should raise a support ticket to [support@autorabit.com](mailto:support@autorabit.com) to have their repository URL added to the `webhookurls.properties` file.
 
-&#x20;/api/webhook/v2/\<orgname>/`enterprise`/trigger-scm-push-request
+Use the following endpoints for enterprise configurations:
 
-/api/webhook/v2/\<orgname>/`enterprise`/sync-alm-commits
+/api/webhook/v2/<orgname>/enterprise/trigger-scm-push-request
+
+/api/webhook/v2/<orgname>/enterprise/sync-alm-commits
+

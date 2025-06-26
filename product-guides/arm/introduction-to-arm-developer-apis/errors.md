@@ -1,21 +1,21 @@
 # Errors
 
-AutoRABIT uses conventional HTTP response codes to indicate the success or failure of an API request. In general:
+AutoRABIT APIs follow standard HTTP response codes to signal the outcome of API requests. Understanding these codes helps in diagnosing issues and improving the stability of your integrations.
 
-* Codes in the **2xx** range indicate success.
-* Codes in the **4xx** range indicate an error that failed given the information provided (e.g., a required parameter was omitted, etc.).
-* Codes in the **5xx** range indicate an error with AutoRABIT servers (these are rare).
+- **2xx** — Successful operations
+- **4xx** — Client-side errors (e.g., invalid inputs, missing data)
+- **5xx** — Server-side errors (typically rare)
 
-### HTTP Status Code Summary <a href="#http-status-code-summary" id="http-status-code-summary"></a>
+## HTTP Status Code Summary <a href="#http-status-code-summary" id="http-status-code-summary"></a>
 
-| Error                              | Summary                                                                                          |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 200 - OK                           | Everything worked as expected.                                                                   |
-| 400 - Bad Request                  | The request was unacceptable, often due to missing a required parameter.                         |
-| 401 - Unauthorized                 | No valid API key provided.                                                                       |
-| 402 - Request Failed               | The parameters were valid but the request failed.                                                |
-| 403 - Forbidden                    | The API key doesn't have permissions to perform the request.                                     |
-| 404 - Not Found                    | The requested resource doesn't exist.                                                            |
-| 409 - Conflict                     | The request conflicts with another request (perhaps due to using the same idempotent key).       |
-| 429 - Too Many Requests            | Too many requests hit the API too quickly. We recommend an exponential backoff of your requests. |
-| 500, 502, 503, 504 - Server Errors | Something went wrong on AutoRABIT's end. (These are rare.)                                       |
+| Error Code                        | Description                                                                                      |
+| -------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **200 - OK**                     | The request succeeded as expected.                                                               |
+| **400 - Bad Request**            | The request was invalid—commonly due to missing or malformed parameters.                         |
+| **401 - Unauthorized**           | No valid API key was provided.                                                                  |
+| **402 - Request Failed**         | The request was well-formed, but the operation failed.                                           |
+| **403 - Forbidden**              | The API key lacks permissions to perform the action.                                             |
+| **404 - Not Found**              | The requested resource could not be found.                                                       |
+| **409 - Conflict**               | The request conflicts with another operation (e.g., duplicate submission using the same token).  |
+| **429 - Too Many Requests**      | The rate limit has been exceeded. Implement exponential backoff.                                 |
+| **500, 502, 503, 504 - Server Errors** | Internal AutoRABIT server issues. These errors are rare and usually temporary.               |

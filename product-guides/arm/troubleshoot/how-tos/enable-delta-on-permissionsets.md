@@ -1,22 +1,29 @@
 # Enable Delta on PermissionSets
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview
 
-As per the Salesforce behavior, for Salesforce **API 40 or later**, the entire PermissionSets will be replaced with the latest changes. However, when the **Enable Delta on PermissionSets** checkbox is selected, the PermissionSets will get retrieved from the Source org or the Source branch and will append with the latest changes in the deployment package.
+Starting with Salesforce **API version 40**, deploying PermissionSets by default replaces the entire set in the destination org with the incoming metadata. This can result in the loss of existing permissions if not managed carefully.
 
-<figure><img src="../../../../.gitbook/assets/image (766).png" alt=""><figcaption></figcaption></figure>
+By selecting the **Enable Delta on PermissionSets** option, AutoRABIT retrieves the existing PermissionSets from the Source Org or Source Branch and **appends only the new changes** to the deployment package—preserving existing permissions in the destination org.
+
+![Enable Delta on PermissionSets UI](../../../../.gitbook/assets/image%20(766).png)
 
 {% hint style="info" %}
-**Important Note:** The "Enable Delta on PermissionSets" option is functional only in the CI Job module. It is not functional in EZ-Commit, EZ-Merge, or Deployment modules.
+**Important Note:**  
+The **Enable Delta on PermissionSets** feature is available **only** in the **CI Job module**. It is **not supported** in EZ-Commit, EZ-Merge, or standalone Deployment modules.
 {% endhint %}
 
-#### Scenario 1 <a href="#scenario-1" id="scenario-1"></a>
+---
 
-* In **Source Org**: Deploying Permission sets with one Apex class permission
-* In **Destination Org**: Same permission sets with different apex classes permission already exists
+## Scenario 1
 
-As per the Salesforce behavior, the destination org permission sets will be overridden with the newly deployed permission set. However, if the user selects the **"Enable Delta on PermissionSets"** checkbox, the destination org permission set permissions will be appended with new class permission as shown below.
+- **Source Org:** A PermissionSet contains a permission to an **Apex class A**.
+- **Destination Org:** The same PermissionSet already includes **Apex class B**.
 
-<figure><img src="../../../../.gitbook/assets/image (767).png" alt=""><figcaption></figcaption></figure>
+### Behavior:
 
-<figure><img src="../../../../.gitbook/assets/image (768).png" alt=""><figcaption></figcaption></figure>
+- **Without Delta Enabled:** The PermissionSet in the destination org is **replaced**, and only **Apex class A** remains.
+- **With Delta Enabled:** The PermissionSet in the destination org is **appended**, so both **Apex class A** and **Apex class B** permissions exist post-deployment.
+
+![Permission Set Behavior with Delta](../../../../.gitbook/assets/image%20(767).png)
+![Resulting Permission Set with Delta Enabled](../../../../.gitbook/assets/image%20(768).png)

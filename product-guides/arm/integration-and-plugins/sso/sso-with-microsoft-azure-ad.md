@@ -1,47 +1,59 @@
+---
+description: How to configure Single Sign-On between AutoRABIT and Microsoft Entra ID
+---
+
 # SSO With Microsoft Entra ID
 
 ### Overview <a href="#overview" id="overview"></a>
 
-This step-by-step guide explains how to set up **Single Sign-On** in AutoRABIT with **Microsoft Entra ID** \[formerly Azure Active Directory (AD)] as your **SAML 2.0 Identity Provider (IdP)**.
+This step-by-step guide shows you how to configure **Single Sign-On (SSO)** in AutoRABIT using **Microsoft Entra ID**—formerly Azure Active Directory (Azure AD)—as your **SAML 2.0 identity provider (IdP)**.
 
-When you integrate AutoRABIT with Entra ID, you can:
+When you connect AutoRABIT to Entra ID, you can:
 
-1. Control in Entra ID who has access to AutoRABIT
-2. Enable your users to be automatically signed in to AutoRABIT with their Entra ID accounts
-3. Manage your accounts in one central location - the Azure portal.
+1. Control in Entra ID which users can access AutoRABIT.  
+2. Let users sign in to AutoRABIT automatically with their Entra ID credentials.  
+3. Manage all accounts centrally from the Azure portal.
 
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-To get started, you need the following items:
+Before you begin, make sure you have:
 
-1. An **Entra ID** subscription.
-2. You will need to be an **Administrator** in AutoRABIT and in Entra ID to configure SSO.
-3. Add AutoRABIT as a **non-gallery** application.
+1. An active **Microsoft Entra ID** subscription.  
+2. **Administrator** permissions in both AutoRABIT and Entra ID.  
+3. AutoRABIT added to Entra ID as a **non-gallery application**.
 
-### In Entra ID <a href="#in-azure-a-d" id="in-azure-a-d"></a>
+---
 
-1. Sign in to your Entra management portal.
-2. Select the **Entra ID** service from the left sidebar. Click **Enterprise applications**.
-3. Select **All applications** from the **Application type** dropdown.
-4. Click **New application** and, on the **Add from the gallery section**, type _autorabit,_ and press **Enter**.
-5. From the results, select **AutoRABIT**, change the name if you wish, and click **Add**.
-6. Go to the AutoRABIT app page and click on **Single sign-on**.
-7. On the **Select a Single sign-on method** dialog, select **SAML** mode to enable single sign-on.
-8. On the **Set up Single Sign-On with SAML** page, click the **Edit (pencil)** icon for Basic SAML Configuration to edit the settings.
-9. On the **Basic SAML Configuration** section, perform the following steps:
-   * In the **Identifier (Entity ID)** field, enter the URL in the following format: **\<instanceURL>/saml/metadata**. _For example-_ If your instance is **https://xyz.com**, then the Identifier (Entity ID) would be: _**https://xyz.com/saml/metadata**_
-   * In the **Reply URL** field, enter the URL in the following format: **\<instanceURL>/saml/SSO.** _For example-_ If your instance is **https://xyz.com**, then the payload URL would be: _**https://xyz.com/saml/SSO**_
-   * In the **Sign on URL** field type the secure URL of your domain (i.e. starting with https://). For example- _**https://xyz.com**_
-10. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, find **Federation Metadata XML** and select **Download** to download the certificate and save it on your computer.
+## Configure SSO in Entra ID <a href="#in-azure-a-d" id="in-azure-a-d"></a>
 
-### In AutoRABIT <a href="#in-autorabit" id="in-autorabit"></a>
+1. Sign in to the **Microsoft Entra** admin center.  
+2. In the left pane, select **Entra ID ▸ Enterprise applications**.  
+3. Choose **All applications** from the **Application type** filter.  
+4. Click **New application**. In **Add from the gallery**, search for *autorabit* and press **Enter**.  
+5. Select **AutoRABIT**, rename it if desired, then click **Add**.  
+6. Open the **AutoRABIT** app page and select **Single sign-on**.  
+7. In **Select a single sign-on method**, choose **SAML**.  
+8. On **Set up single sign-on with SAML**, click the **Edit** (pencil) icon in **Basic SAML Configuration**.  
+9. Enter the following values and click **Save**:  
 
-Now that your Entra SSO implementation is set up, you’ll need to follow just a few more steps to configure SSO in your AutoRABIT account.
+   | Field | Value format | Example |
+   |-------|--------------|---------|
+   | **Identifier (Entity ID)** | `https://<instanceURL>/saml/metadata` | `https://xyz.com/saml/metadata` |
+   | **Reply URL** | `https://<instanceURL>/saml/SSO` | `https://xyz.com/saml/SSO` |
+   | **Sign-on URL** | `https://<instanceURL>` | `https://xyz.com` |
 
-1. Login to your AutoRABIT account.
-2. Hover your mouse over the **Admin** module and select the option: **My Account**
-3. On the **My Account** page, go to the 3rd section: **SSO Configuration**
-4. Browse for the metadata **XML** file you downloaded in your local machine and upload them.
-5. Sign out from your **AutoRABIT** account.
-6. Go to the AutoRABIT login page. This time you need to log in via SSO, so, therefore, click on the option: **Single Sign On**
-7. Enter the domain name and click on **Go**.
+10. Under **SAML Signing Certificate**, click **Download** next to **Federation Metadata XML** and save the file locally.
+
+---
+
+## Complete the setup in AutoRABIT <a href="#in-autorabit" id="in-autorabit"></a>
+
+1. Sign in to **AutoRABIT**.  
+2. From the navigation bar, hover over **Admin** and select **My Account**.  
+3. In **My Account**, scroll to **SSO Configuration**.  
+4. Upload the **metadata XML** file you downloaded from Entra ID.  
+5. Sign out of AutoRABIT.  
+6. Go to the AutoRABIT login page and click **Single Sign On**.  
+7. Enter your AutoRABIT domain, click **Go**, and sign in with your Entra ID credentials.
+
+After completing these steps, users assigned to the AutoRABIT application in Entra ID can access AutoRABIT with seamless single sign-on.

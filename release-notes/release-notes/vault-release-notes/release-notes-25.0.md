@@ -1,6 +1,6 @@
 # Release Notes 25.0
 
-Vault Release Notes 25.1.2
+## Vault Release Notes 25.1.2
 
 Release Date: July 02 2025
 

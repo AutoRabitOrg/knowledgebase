@@ -8,10 +8,6 @@ A Quality Gate consists of measure-based, Boolean conditions that allow you to q
 
 CodeScan will provide standard values for each metric in the default (built-in) quality gate (sonar way). However, the quality gate can be customized to align with your organization’s standards.
 
-<div data-full-width="false">
-
-<figure><img src="../../../.gitbook/assets/image (1552).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<figure><img src="../../../.gitbook/assets/Q gate 9.7.png" alt=""><figcaption></figcaption></figure>
 
 **Important Note:** Built-in quality gates are standard and cannot be edited.

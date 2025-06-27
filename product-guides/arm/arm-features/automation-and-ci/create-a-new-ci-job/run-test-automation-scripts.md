@@ -23,28 +23,31 @@ The interface is split into sections, detailed below.
 
 Choose how to fetch the test cases:
 
-- **Version Control**
-- **AccelQ** (requires plugin)
-- **Provar** (requires plugin)
+* **Version Control**
+* **AccelQ** (requires plugin)
+* **Provar** (requires plugin)
 
 #### Version Control
 
 Configure tests committed to a VCS branch.
 
 Steps:
+
 1. Choose **Repository Type**, **Repository**, and **Branch**.
 2. Select test execution mode:
-   - **TAF**
-   - **Selenium Maven**: Provide **Test Case Root Path** and **Goals**
-   - **Selenium Non-Maven**: Specify **Execution Type** and **Test Case Root Path**
+   * **TAF**
+   * **Selenium Maven**: Provide **Test Case Root Path** and **Goals**
+   * **Selenium Non-Maven**: Specify **Execution Type** and **Test Case Root Path**
 
 Options:
-- **Run Test Even When Deployment Fails**
-- **Test Browsers**
+
+* **Run Test Even When Deployment Fails**
+* **Test Browsers**
 
 #### AccelQ
 
 Steps:
+
 1. Choose **AccelQ** as the fetch type.
 2. Provide your **Project Name** and **Test Job Name**
 3. Set any required **parameters**
@@ -54,15 +57,17 @@ Steps:
 #### Provar
 
 Steps:
+
 1. Select **Repository** and **Branch**
 2. Enter:
-   - **Test Cases Root Path** (up to `.testproject`)
-   - **Test Cases Execution Path** (e.g., `tests/sample`)
+   * **Test Cases Root Path** (up to `.testproject`)
+   * **Test Cases Execution Path** (e.g., `tests/sample`)
 
 Options:
-- **Stop Deployment if Test Cases Fail to Compile**
-- **Run Test Even When Deployment Fails**
-- **Test Browsers**
+
+* **Stop Deployment if Test Cases Fail to Compile**
+* **Run Test Even When Deployment Fails**
+* **Test Browsers**
 
 ### Choose Target <a href="#choose-target" id="choose-target"></a>
 
@@ -72,12 +77,12 @@ Select the Salesforce Org where test cases will run. This org will be pre-authen
 
 Configure when the job should run:
 
-- **Daily**: Runs daily at set time
-- **Weekly**: Runs weekly on selected days
-- **No Schedule**: Save job to run manually
+* **Daily**: Runs daily at set time
+* **Weekly**: Runs weekly on selected days
+* **No Schedule**: Save job to run manually
 
 > For credential usage info in CI jobs, refer to [this FAQ](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once setup is complete, you'll be redirected to the [CI Job Results](../../ncino/feature-ci-jobs/ci-job-results.md) page where you can trigger a build for this CI job.
+Once setup is complete, you'll be redirected to the [CI Job Results](../../ncino/feature-ci-jobs-1/ci-job-results.md) page where you can trigger a build for this CI job.

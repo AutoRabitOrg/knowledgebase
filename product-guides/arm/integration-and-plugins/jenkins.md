@@ -1,15 +1,15 @@
-# Jenkins Integration with AutoRABIT
+# Jenkins
 
 ## What is Jenkins?
 
 Jenkins is an open-source Continuous Integration server developed in Java that helps automate parts of the software development process. It supports the full development lifecycle, including:
 
-- Building
-- Testing
-- Documenting
-- Deploying
+* Building
+* Testing
+* Documenting
+* Deploying
 
----
+***
 
 ## How to Trigger a Jenkins Job in CI/CD
 
@@ -17,61 +17,51 @@ You can configure Jenkins to trigger jobs automatically after a successful deplo
 
 ### Steps:
 
-1. Go to the **New CI Job** screen.
+1.  Go to the **New CI Job** screen.
 
-   ![New CI Job](../../../.gitbook/assets/image%20(879).png)
-
+    ![New CI Job](<../../../.gitbook/assets/image (879).png>)
 2. Choose a CI Job type from:
-   - _Deploy SFDX source from Version Control_
-   - _Deploy from Salesforce Org_
-   - _Deploy from Salesforce Org with a Version Control backup_
-   - _Deploy from Version Control_
-   - _Install an Unlocked Package from a Version Control Branch_
-
+   * _Deploy SFDX source from Version Control_
+   * _Deploy from Salesforce Org_
+   * _Deploy from Salesforce Org with a Version Control backup_
+   * _Deploy from Version Control_
+   * _Install an Unlocked Package from a Version Control Branch_
 3. Navigate to the **Deploy** section.
-
 4. Check **On Successful Deployment** to enable post-deployment actions.
+5.  Check **Trigger Jenkins Job** to enable Jenkins job execution upon success.
 
-5. Check **Trigger Jenkins Job** to enable Jenkins job execution upon success.
-
-   ![Trigger Jenkins](../../../.gitbook/assets/image%20(880).png)
-
+    ![Trigger Jenkins](<../../../.gitbook/assets/image (880).png>)
 6. Fill in the required fields:
+   *   **URL:** Full Jenkins server URL\
+       &#xNAN;_&#x45;xample:_ `http://localhost:8080` or `http://<hostname>:8080`
 
-   - **URL:** Full Jenkins server URL  
-     _Example:_ `http://localhost:8080` or `http://<hostname>:8080`
+       ![Jenkins URL](<../../../.gitbook/assets/image (881).png>)
+   *   **Job Name:** Name of the Jenkins project (e.g., `HelloWorld`)
 
-     ![Jenkins URL](../../../.gitbook/assets/image%20(881).png)
+       ![Job Name](<../../../.gitbook/assets/image (882).png>)
+   *   **Job URL:** Relative job path\
+       &#xNAN;_&#x45;xample:_ `job/HelloWorld`
 
-   - **Job Name:** Name of the Jenkins project (e.g., `HelloWorld`)
+       ![Job URL](<../../../.gitbook/assets/image (883).png>)
+   *   **User ID:** Jenkins user triggering the job
 
-     ![Job Name](../../../.gitbook/assets/image%20(882).png)
+       ![User ID](<../../../.gitbook/assets/image (884).png>)
+   *   **API Token:** Found under **Profile > Configure** in Jenkins
 
-   - **Job URL:** Relative job path  
-     _Example:_ `job/HelloWorld`
+       ![API Token](<../../../.gitbook/assets/image (885).png>)
+   *   **Build Parameters (Optional):** Define build parameters and values. To add multiple parameters, click the plus `+` icon.
 
-     ![Job URL](../../../.gitbook/assets/image%20(883).png)
+       ![Parameters](<../../../.gitbook/assets/image (878).png>)
 
-   - **User ID:** Jenkins user triggering the job
-
-     ![User ID](../../../.gitbook/assets/image%20(884).png)
-
-   - **API Token:** Found under **Profile > Configure** in Jenkins
-
-     ![API Token](../../../.gitbook/assets/image%20(885).png)
-
-   - **Build Parameters (Optional):** Define build parameters and values. To add multiple parameters, click the plus `+` icon.
-
-     ![Parameters](../../../.gitbook/assets/image%20(878).png)
-
----
+***
 
 {% hint style="info" %}
-### Important Note:
+#### Important Note:
 
 Ensure Jenkins allows URL parameter injection.
 
 Steps:
+
 1. Go to your Jenkins project configuration.
 2. In the **General** section, enable **This project is parameterized**.
 3. Click **Add Parameter** and choose your parameter type.

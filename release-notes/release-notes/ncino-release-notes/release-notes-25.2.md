@@ -1,6 +1,16 @@
 # Release Notes 25.2
 
-### nCino + DL - Release 25.2.9 Release Notes <a href="#title-text" id="title-text"></a>
+### nCino + DL - 25.2.11 Release Notes
+
+**Release Date:** 29 June 2025
+
+**CI Job Failure**\
+Resolved an issue causing CI job failures due to improperly rendered template objects. The fix ensures templates are now rendered correctly, allowing jobs to execute successfully.
+
+**CI Job Baseline Revision**\
+Implemented a fix to ensure the rollback mechanism for CI job baseline revisions functions as expected, maintaining consistency and stability during version changes.
+
+### nCino + DL - 25.2.9 Release Notes <a href="#title-text" id="title-text"></a>
 
 **Release Date:** 15 June 2025
 

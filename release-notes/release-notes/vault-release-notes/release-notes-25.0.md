@@ -1,5 +1,31 @@
 # Release Notes 25.0
 
+Vault Release Notes 25.1.2
+
+Release Date: July 02 2025
+
+*   **New Archive Enhancement: Disable Automation Rules**
+
+    Vault now allows users to **disable Salesforce automation rules during the archiving process**. This improvement helps ensure a smoother and more reliable archival experience by preventing interference from active automation rules. As a result, users can expect **fewer errors** and **increased stability** during archival operations.
+
+#### **Selective Record Download for Backups and Archives** <a href="#selective-record-download-for-backups-and-archives" id="selective-record-download-for-backups-and-archives"></a>
+
+Users can now **filter and download specific records** from a backup or archive, enabling targeted data access without the need to browse through the entire dataset. The downloaded files are easily compatible with common tools like **Excel**, allowing for **quick and convenient analysis** of only the required information.
+
+#### **Improved Export Stability for Large Datasets in Compare Module** <a href="#improved-export-stability-for-large-datasets-in-compare-module" id="improved-export-stability-for-large-datasets-in-compare-module"></a>
+
+A fix has been deployed to enhance the **reliability and performance** of the **export functionality** in the Compare module. Users can now expect a **smoother experience** when exporting large datasets, especially during **bulk compare operations**.
+
+#### **Enhanced Event Logging for Improved Traceability and Integration** <a href="#enhanced-event-logging-for-improved-traceability-and-integration" id="enhanced-event-logging-for-improved-traceability-and-integration"></a>
+
+The event logging system has been upgraded to provide **greater detail and reliability**, enabling **seamless analysis and traceability** of system activities. Logs are now more easily **integrated with tools like Splunk**, streamlining monitoring and audit workflows.
+
+#### **Schema View Usability Fix: Easy Copying of Object Names** <a href="#schema-view-usability-fix-easy-copying-of-object-names" id="schema-view-usability-fix-easy-copying-of-object-names"></a>
+
+A fix has been implemented to allow users to **easily copy object names** while viewing the schema. This enhancement improves **usability and efficiency**, making it more convenient to reference or reuse object names during configuration or documentation tasks.
+
+##
+
 ## Vault Release Notes 25.1.1
 
 **Release Date: 18 June 2025**

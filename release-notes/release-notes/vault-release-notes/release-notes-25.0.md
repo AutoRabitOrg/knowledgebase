@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.1.2
 
-Release Date: July 02 2025
+**Release Date: July 02 2025**
 
 *   **New Archive Enhancement: Disable Automation Rules**
 

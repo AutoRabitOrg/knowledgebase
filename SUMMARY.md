@@ -738,6 +738,7 @@
     * [Restore](product-guides/vault/vault-features/restore/README.md)
       * [Restoring Metadata/Data to a Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
     * [SIEM Logs](product-guides/vault/vault-features/siem-logging.md)
+    * [Copy of SIEM Logs - Copied on Fri 27, 2025](product-guides/vault/vault-features/siem-logging-1.md)
     * [Vault Connect](product-guides/vault/vault-features/vault-connect.md)
   * [Vault Best Practices](product-guides/vault/vault-best-practices.md)
   * [Vault-FAQs](product-guides/vault/vault-faqs.md)

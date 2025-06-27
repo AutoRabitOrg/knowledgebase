@@ -1,4 +1,8 @@
-# SIEM Logs
+---
+hidden: true
+---
+
+# Copy of SIEM Logs - Copied on Fri 27, 2025
 
 ## SIEM Logging – Event Logs <a href="#introduction" id="introduction"></a>
 
@@ -100,22 +104,14 @@ Two APIs are involved: one to prepare the consolidated file and the other to dow
 
 Date (ISO Format) SIEM:Version|Device Vendor|Device Product|Device Version|Thread Id|Name|Severity|Extension
 
-1.  <mark style="background-color:yellow;">**Extension**</mark><mark style="background-color:yellow;">: The extension encapsulates the following details</mark>
-
-    **session\_id**='\<session\_id>' username='\<username>' user\_id='\<user\_id>' customer\_id=‘\<customer\_id>’ action=‘\<event message >’ status=‘\<event status(success/failure)>’ src\_ip=‘\<source ip>' server\_ip='\<server ip>' user\_agent=‘\<useragent>’
-
 **Example:**\
-2025-06-24T05:06:19.333Z CEF:0|AutoRABIT|Vault|25.1.2-RELEASE|http-nio-8080-exec-10|LOGON|Low|session\_id='20fc6d469e47457d958f9f9e632335ed' username='ct@mailinator.com' user\_id='82e43155-236f-488c-9ec7-d0ef2fe1964d' customer\_id='Coachtopia-1' action='Login by password' status='success' src\_ip='49.37.150.251' server\_ip='192.168.29.167' user\_agent='Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_15\_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+2024-06-17T06:37:44.145Z CEF:0|AutoRabit|Vault|23.2|http-nio-8081-exec-1|ArchivalReport|Low|sessionId=\<sessionid> username=example@example.com customerId=\<customer id> action=\<user loggedin> ip=0:0:0:0:0:0:0:1 userAgent=Chrome
 
 The following table describes the fields of the SIEM log structure.
 
 <table><thead><tr><th width="97">SL.No</th><th width="120">Field</th><th width="110">Data Type</th><th width="86" data-type="number">Length</th><th>Description</th></tr></thead><tbody><tr><td><strong>1</strong></td><td><strong>Date (ISO Format) SIEM</strong></td><td>Date Time</td><td>24</td><td>This field describes the date on which the log is created.</td></tr><tr><td><strong>2</strong></td><td><strong>CEF Version</strong></td><td>Number</td><td>2</td><td>This defines the version of the SIEM log.</td></tr><tr><td><strong>3</strong></td><td><strong>Device Vendor</strong></td><td>Text</td><td>9</td><td>This field denotes the vendor providing the device.</td></tr><tr><td><strong>4</strong></td><td><strong>Device Product</strong></td><td>Text</td><td>5</td><td>This denotes which product of the SIEM logs.</td></tr><tr><td><strong>5</strong></td><td><strong>Device Version</strong></td><td>Number</td><td>10</td><td>This denotes the product version.</td></tr><tr><td><strong>6</strong></td><td><strong>Thread Id</strong></td><td>Text</td><td>32</td><td>This is the ID from the server for a request.</td></tr><tr><td><strong>7</strong></td><td><strong>Name</strong></td><td>Text</td><td>256</td><td>This denotes the module of the product being accessed.</td></tr><tr><td><strong>8</strong></td><td><strong>Severity</strong></td><td>Text</td><td>10</td><td>This denotes the severity of the event logged.</td></tr><tr><td><strong>9</strong></td><td><strong>Extension</strong></td><td>Text</td><td>5120</td><td>This provides additional information on the event logged.</td></tr></tbody></table>
 
-**Extension:** The following table provides a detailed explanation of the log extension section
-
-<table><thead><tr><th width="86.806396484375">Number</th><th width="121.84375">Text</th><th width="95.4166259765625">Data Type</th><th width="73.43316650390625">Length</th><th width="472">Description</th></tr></thead><tbody><tr><td>1</td><td><strong>Session_id</strong></td><td>String</td><td>36</td><td>Unique identifier for the user session (UUID format).</td></tr><tr><td>2</td><td><strong>Username</strong></td><td>String</td><td>50</td><td>Email or login identifier of the user.</td></tr><tr><td>3</td><td><strong>User_id</strong></td><td>String</td><td>36</td><td>Unique identifier for the user (UUID format).</td></tr><tr><td>4</td><td><strong>Customer_id</strong></td><td>String</td><td>50</td><td>Identifier for the customer or tenant using the system.</td></tr><tr><td>5</td><td><strong>Action</strong></td><td>String</td><td>100</td><td>Description of the user action performed.</td></tr><tr><td>6</td><td><strong>Status</strong></td><td>String</td><td>10</td><td>Outcome status of the action (e.g., success, failure).</td></tr><tr><td>7</td><td><strong>Failure_Reason</strong></td><td>String</td><td>100</td><td>Failure Reason will be printed in the event of a failure event</td></tr><tr><td>8</td><td><strong>Src_ip</strong></td><td>IP Address</td><td>15</td><td>IP address from which the request originated.</td></tr><tr><td>9</td><td><strong>Server_ip</strong></td><td>IP Address</td><td>15</td><td>IP address of the server that handled the request.</td></tr><tr><td>10</td><td><strong>User_agent</strong></td><td>String</td><td>255</td><td>User agent string describing the client environment (browser, OS, etc.).</td></tr></tbody></table>
-
-### Custom Keys
+### &#x20;Custom Keys
 
 The custom keys or extensions will have the following tracked in the event logs.
 

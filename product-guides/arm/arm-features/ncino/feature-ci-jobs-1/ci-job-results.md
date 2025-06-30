@@ -1,4 +1,97 @@
-# CI Job Results
+# CI Job History
+
+The **CI Job History** page offers a consolidated overview of all CI jobs executed to date. In addition to listing previously triggered jobs, it provides various job-level actions and insights. Once a build is completed, jobs can be re-triggered directly from this interface. Users can monitor job statuses, review detailed deployment outcomes, and access build logs, all from a single, centralized location.
+
+**Step-By-Step Guide:**
+
+1.  Click on the "CI Job History" option on the left side navigation pane to access the "CI Job History" page
+
+    <figure><img src="../../../../../.gitbook/assets/1 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+2. Use the **search fields**—_Job name_, _Build number_, and _Build label_—to quickly locate specific CI Jobs within the CI Job History page.
+3.  Use the **Filters** option to narrow down job history results by date, build status, deploy status, commit status, and triggered user.
+
+    <figure><img src="../../../../../.gitbook/assets/2 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+4.  The **Columns** option enables customization of the CI Job History table view by selecting or deselecting specific fields for display.
+
+    <figure><img src="../../../../../.gitbook/assets/3 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+5.  Clicking the **Deployment Queue** button displays a prioritized list of CI jobs lined up for deployment. Jobs are executed sequentially from top to bottom based on this order.
+
+    <figure><img src="../../../../../.gitbook/assets/4 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/5 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+6.  **Commit Queue**\
+    The **Commit Queue** allows users to view and manage jobs awaiting commit execution. Jobs are processed top to bottom based on their order of priority.
+
+    <figure><img src="../../../../../.gitbook/assets/6 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/7 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+7. **The CI Job History table displays key details such as:**
+   1. **Job name**: Displays the name assigned to each CI Job for identification.
+   2. **Time of build**: Shows the exact date and time when the build was executed.
+   3. **Build number**: Indicates the sequential number assigned to each build of a CI Job.\\
+   4. **Build label**: Represents a custom label or identifier associated with the build.
+   5. **Build status**: Reflects whether the build was successful or failed using visual indicators.
+   6. **Deploy status**: Displays the result of the deployment process for the job.
+   7. **Commit status**: Shows the success or failure of any commit operations tied to the job.
+   8. **Post-deploy status**: Indicates the outcome of post-deployment activities, if configured.
+   9. **Actions**: Offers options to re-trigger the job or access additional actions via the menu.
+8.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### &#x20;<a href="#overview" id="overview"></a>
+
+### &#x20;<a href="#overview" id="overview"></a>
+
+### &#x20;<a href="#overview" id="overview"></a>
+
+### &#x20;<a href="#overview" id="overview"></a>
 
 ### Overview <a href="#overview" id="overview"></a>
 

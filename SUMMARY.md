@@ -321,7 +321,7 @@
           * [Exclude the OwnerID from Automapping in nCino CI jobs](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/exclude-the-ownerid-from-automapping-in-ncino-ci-jobs.md)
           * [External Unique ID Validation](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/external-unique-id-validation.md)
           * [Select External Unique ID](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/running-a-ci-job/select-external-unique-id.md)
-        * [CI Job Results](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/ci-job-results.md)
+        * [CI Job History](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/ci-job-results.md)
         * [CI Job List screen](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/ci-job-list-screen.md)
         * [nCino Webhooks](product-guides/arm/arm-features/ncino/feature-ci-jobs-1/ncino-webhooks.md)
       * [nCino Developer APIs](product-guides/arm/arm-features/ncino/developer-apis/README.md)

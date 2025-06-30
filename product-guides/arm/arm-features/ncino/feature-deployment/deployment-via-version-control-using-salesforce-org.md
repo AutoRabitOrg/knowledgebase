@@ -24,6 +24,11 @@ This section is about deploying the nCino metadata and data via version control 
     <figure><img src="../../../../../.gitbook/assets/image (41) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+After deploying a job, modifying the deployment type during subsequent edits may affect the integrity or effectiveness of any rollbacks performed thereafter.
+{% endhint %}
+
 7. Select your **Source Salesforce Org**.
 8. Based on your template selection, the object configuration section will render the selected objects and apply filters and mappings.
 

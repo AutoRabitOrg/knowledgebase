@@ -24,11 +24,18 @@ This section is all about deploying the nCino data using [Version Control](https
 
     <figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1).png" alt="" width="454"><figcaption></figcaption></figure>
 
+
+
     <figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
 
     <figure><img src="../../../../../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt="" width="434"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+After deploying a job, modifying the deployment type during subsequent edits may affect the integrity or effectiveness of any rollbacks performed thereafter.
+{% endhint %}
+
 8. The object configuration section will render the selected objects and apply filters and mappings based on your selection.
 
 <figure><img src="../../../../../.gitbook/assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

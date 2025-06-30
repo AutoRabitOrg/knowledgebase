@@ -2,7 +2,7 @@
 
 ## ARM 25.2.11 Release Notes
 
-**Release Date: June 29th, 2025**
+**Release Date: 29 June 2025**
 
 **Highlights**: Git Performance Optimization, Accurate CI Deployments, and Enhanced Reporting Visibility
 
@@ -18,17 +18,14 @@
 * **Installed Components Now Properly Excluded in CI Jobs**\
   The **“Ignore Installed Components”** option in CI jobs was previously not functioning as expected—installed components were still being deployed.\
   This has been corrected. The selected option now effectively excludes these components from deployment.\
-  \
 
 * **Resolved Validation Error During Permission Set Commit**\
   Users encountered commit validation errors when working with permission sets and specific metadata selections.\
   We've refined commit logic to ensure permission set files are filtered correctly based on selected options.\
-  \
 
 * **Permissionset Deployments No Longer Drop Object Permissions**\
   Deploying a new permission set with **“Ignore Missing Visibility”** enabled previously removed `DataStreamDefinition` object permissions.\
   This issue is now resolved. Both `DataStream` and `DataStreamDefinition` object permissions are preserved regardless of the setting.\
-  \
 
 * **Deployment Reports Display Accurate Results for All Years**\
   Reports for years like 2023 and 2024 were previously showing incorrect data due to a mismatch in attribute formatting.\

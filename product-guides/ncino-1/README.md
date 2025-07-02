@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Copy of nCino
+# nCino 2.0
 
 ### About nCino <a href="#about-ncino" id="about-ncino"></a>
 

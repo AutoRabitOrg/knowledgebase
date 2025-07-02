@@ -1,5 +1,46 @@
 # CI Job List screen
 
+The **CI Job List** screen displays all created jobs, sorted by their **most recently created or modified date**.
+
+<figure><img src="../../../../../.gitbook/assets/1 - Feature CI Jobs (4).png" alt=""><figcaption></figcaption></figure>
+
+**Step-By-Step Guide:**
+
+1.  The **CI Jobs List** screen provides filters to narrow down the jobs by **Modified by**, **Created date range**, or **Modified date range**, along with an option to reset or apply the selected criteria.
+
+    <figure><img src="../../../../../.gitbook/assets/2 - Feature CI Jobs (2).png" alt=""><figcaption></figcaption></figure>
+2.  The **Columns** dropdown in the CI Jobs List view allows users to selectively display relevant columns such as Job name, Job type, Modified by, Modified on, Source Org, and Source Repo Name, offering a customizable tabular layout for job visibility.
+
+    <figure><img src="../../../../../.gitbook/assets/3 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The **CI Job List** screen displays all the jobs created to date, and the lists are in order of the last created/modified date.
 
 <figure><img src="../../../../../.gitbook/assets/image (1388).png" alt=""><figcaption></figcaption></figure>

@@ -92,13 +92,41 @@ The **CI Job History** page offers a consolidated overview of all CI jobs execut
 
         <figure><img src="../../../../../.gitbook/assets/8.6 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+        <figure><img src="../../../../../.gitbook/assets/8.7 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
+    *   **Build Changes**: Lists all the changes included in the selected build.
 
-    * **Build Changes**: Lists all the changes included in the selected build.
-    * **Commit Log**: Displays the sequence of commits associated with the build.
-    * **Commit Revision Log**: Shows a list of modified files and their actions in the commit.
-    * **Commit File Diff**: Presents a visual comparison of changes between file versions.
-    * **Rollback**: Initiates a rollback of the build deployment from the target org.
-    * **Download Build Backup Snapshot**: Allows downloading a backup archive of the build snapshot.
+        <figure><img src="../../../../../.gitbook/assets/8.7.1 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.7.2 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+    *   **Commit Log**: Displays the sequence of commits associated with the build.
+
+        <figure><img src="../../../../../.gitbook/assets/8.8 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.9 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
+    *   **Commit Revision Log**: Shows a list of modified files and their actions in the commit.
+
+        <figure><img src="../../../../../.gitbook/assets/8.10 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.11 - CI Job History (3).png" alt=""><figcaption></figcaption></figure>
+    *   **Commit File Diff**: Presents a visual comparison of changes between file versions.
+
+        <figure><img src="../../../../../.gitbook/assets/8.12 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.13 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.14 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.15 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
+    *   **Rollback**: Initiates a rollback of the build deployment from the target org.
+
+        <figure><img src="../../../../../.gitbook/assets/8.16 - CI Job History (3).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.17 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+
+        <figure><img src="../../../../../.gitbook/assets/8.18 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+    *   **Download Build Backup Snapshot**: Allows you to download a backup archive of the build snapshot.
+
+        <figure><img src="../../../../../.gitbook/assets/8.19 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
 10. **Viewing Build Results**:\
     Within the **CI Job History** screen, click the ellipsis icon corresponding to a specific job entry. Select **Build Results** from the dropdown to view the execution details of that build, including logs, errors (if any), and success metrics.
 

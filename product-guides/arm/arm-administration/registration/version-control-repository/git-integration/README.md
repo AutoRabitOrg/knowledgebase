@@ -26,7 +26,7 @@ Before registering Git with ARM, there are some prerequisites.
 3. You must have credentials for the repository you want to access.
 4. You must store these Git credentials in ARM.
 
-### Store your Git credential in ARM <a href="#store-your-git-credential-in-arm" id="store-your-git-credential-in-arm"></a>
+### Store Your Git Credentials in ARM <a href="#store-your-git-credential-in-arm" id="store-your-git-credential-in-arm"></a>
 
 This is an initial step in storing your user's credentials (usually a username, password, or token) in ARM. Some Git hosts like GitHub no longer support basic authentication using a username and password. You must now authenticate using an **API token**, such as an **OAuth** access token, GitHub App installation access token, or personal access token.
 
@@ -50,7 +50,7 @@ This is an initial step in storing your user's credentials (usually a username, 
 
 7. Click **`Save`**.
 
-### Registering a Git repository in ARM <a href="#registering-a-git-repository-in-arm" id="registering-a-git-repository-in-arm"></a>
+### Registering a Git Repository in ARM <a href="#registering-a-git-repository-in-arm" id="registering-a-git-repository-in-arm"></a>
 
 To set up a Git repository, follow the steps below:
 

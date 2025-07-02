@@ -158,7 +158,7 @@ The deployment settings for both **"Deploy From Version Control"** and **"Deploy
 
     This functionality allows for seamless replication of the deployed dataset across multiple orgs, ensuring data consistency and reducing manual effort.
 
-    <figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
     **Steps to Configure:**
 
@@ -182,7 +182,7 @@ The deployment settings for both **"Deploy From Version Control"** and **"Deploy
 
         1. By default, the “No Schedule” option is selected. In this mode, the CI Job is not bound to any automated time-based execution. The job must be manually triggered whenever deployment is required.
 
-        <figure><img src="../../../../../../.gitbook/assets/9 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../../.gitbook/assets/9 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
     2.  **Daily Schedule Configuration**
 
         When the “Daily” option is selected, additional configuration fields appear under the **Repeats** section:

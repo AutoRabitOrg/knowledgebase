@@ -13,7 +13,7 @@ While configuring the CI Job, users can designate up to five target orgs for pos
 1. **Locate the Section**:\
    Navigate to the **Post Deployment Activities** section at the bottom of the **Job Settings** screen.
 
-<figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Enable Dataset Propagation**:
    1. Check the option labeled **Deploy the same dataset to**.

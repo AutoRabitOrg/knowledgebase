@@ -43,11 +43,11 @@ The Feature CI Job can be created through the following options:
 1. Initiating the **"Feature CI Job"** creation will open the following **"Source Type"** page.
 2. **Source Type:** Select the required **"Source Type"** in the following screen.
 
-<figure><img src="../../../../../../.gitbook/assets/4 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/4 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Fill in all the required details in the "Source" screen.
 
-<figure><img src="../../../../../../.gitbook/assets/5 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/5 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
 4. **The following fields must be completed as part of the initial CI Job setup:**
    * **Label Name**\
@@ -132,7 +132,7 @@ The deployment settings for both **"Deploy From Template"** and **"Deploy Using 
    3. **Enter Commit Comment**
       * Input a brief description of the commit in the **Commit Comment** field.
 
-<figure><img src="../../../../../../.gitbook/assets/6 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/6 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  **Object Configuration(s)**
 
@@ -162,7 +162,7 @@ The deployment settings for both **"Deploy From Template"** and **"Deploy Using 
     1. Within the **'Destination'** section, locate the **Sorting Criteria** column corresponding to each object listed.
     2. Click the **pencil icon** adjacent to the sorting field to launch the **Field Sorting** configuration pane.
 
-    <figure><img src="../../../../../../.gitbook/assets/7 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/7 - Feature CI Jobs (2).png" alt=""><figcaption></figcaption></figure>
 4.  **Selecting a Field for Sorting:** In the **Field Sorting** window
 
     * A complete list of fields for the selected object is displayed.
@@ -177,7 +177,7 @@ The deployment settings for both **"Deploy From Template"** and **"Deploy Using 
 
 
 
-    <figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
     **Steps to Configure:**
 
@@ -201,7 +201,7 @@ The deployment settings for both **"Deploy From Template"** and **"Deploy Using 
 
         1. By default, the “No Schedule” option is selected. In this mode, the CI Job is not bound to any automated time-based execution. The job must be manually triggered whenever deployment is required.
 
-        <figure><img src="../../../../../../.gitbook/assets/9 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../../.gitbook/assets/9 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
     2.  **Daily Schedule Configuration**
 
         When the “Daily” option is selected, additional configuration fields appear under the **Repeats** section:
@@ -221,20 +221,5 @@ The deployment settings for both **"Deploy From Template"** and **"Deploy Using 
         <figure><img src="../../../../../../.gitbook/assets/9.2 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 7.  **Preview**: The preview screen provides a holistic view of the configurations selected for the deployment
 
-    <figure><img src="../../../../../../.gitbook/assets/10 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
-8.  Click **Save** to create a CI Job configuration. Clickin on save will land the user on the "CI Job List" page.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <figure><img src="../../../../../../.gitbook/assets/10 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
+8. Click **Save** to create a CI Job configuration. Clickin on save will land the user on the "CI Job List" page.

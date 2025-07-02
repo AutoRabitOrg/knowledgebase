@@ -51,10 +51,10 @@ Clicking the "Feature CI Job"/"Create featue CI Job" will open the following "So
 
 1.  Post-DeploymentSource Type: Select the required "Source Type" in the following screen
 
-    <figure><img src="../../../../../../.gitbook/assets/4 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/4 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 2.  Fill in all the required details in the "Source" screen.
 
-    <figure><img src="../../../../../../.gitbook/assets/5 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/5 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 3.  The following fields are required to be input in the screen:
 
     1. **Label Name**: Enter a custom name in the field provided. This is a mandatory field, as indicated by the asterisk symbol displayed alongside it..
@@ -94,7 +94,7 @@ Clicking the "Feature CI Job"/"Create featue CI Job" will open the following "So
        3. **Enter Commit Comment**
           * Input a brief description of the commit in the **Commit Comment** field.
 
-    <figure><img src="../../../../../../.gitbook/assets/6 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/6 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 8.  **Object Configuration(s)**
 
     Once features are selected and deployment targets defined, the interface displays configuration parameters for each object in the selected templates.
@@ -124,7 +124,7 @@ Clicking the "Feature CI Job"/"Create featue CI Job" will open the following "So
     2. Within the data template section (e.g., `sitncino-BrandTemplate1194`), locate the **Sorting Criteria** column corresponding to each object listed.
     3. Click the **pencil icon** adjacent to the sorting field to launch the **Field Sorting** configuration pane.
 
-    <figure><img src="../../../../../../.gitbook/assets/7 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/7 - Feature CI Jobs (2).png" alt=""><figcaption></figcaption></figure>
 11. **Selecting a Field for Sorting**
 
     In the **Field Sorting** dialog:
@@ -141,7 +141,7 @@ Clicking the "Feature CI Job"/"Create featue CI Job" will open the following "So
 
 
 
-    <figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/8 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 
     **Steps to Configure:**
 
@@ -165,7 +165,7 @@ Clicking the "Feature CI Job"/"Create featue CI Job" will open the following "So
 
         1. By default, the “No Schedule” option is selected. In this mode, the CI Job is not bound to any automated time-based execution. The job must be manually triggered whenever deployment is required.
 
-        <figure><img src="../../../../../../.gitbook/assets/9 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../../.gitbook/assets/9 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
     2.  **Daily Schedule Configuration**
 
         When the “Daily” option is selected, additional configuration fields appear under the **Repeats** section:
@@ -185,7 +185,7 @@ Clicking the "Feature CI Job"/"Create featue CI Job" will open the following "So
         <figure><img src="../../../../../../.gitbook/assets/9.2 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
 14. **Preview**: The preview screen provides a holistic view of the configurations selected for the deployment
 
-    <figure><img src="../../../../../../.gitbook/assets/10 - Feature CI Jobs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/10 - Feature CI Jobs (1).png" alt=""><figcaption></figcaption></figure>
 15. Click **Save** to create a CI Job configuration. Clickin on save will land the user on the "CI Job List" page.
 
 

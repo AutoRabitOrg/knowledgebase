@@ -28,207 +28,186 @@ The **CI Job History** page offers a consolidated overview of all CI jobs execut
 7. **The CI Job History table displays key details such as:**
    1. **Job name**: Displays the name assigned to each CI Job for identification.
    2. **Time of build**: Shows the exact date and time when the build was executed.
-   3. **Build number**: Indicates the sequential number assigned to each build of a CI Job.\\
-   4. **Build label**: Represents a custom label or identifier associated with the build.
+   3. **Build number**: Indicates the sequential number assigned to each build of a CI Job.
+   4. **Build label**: Represents a custom label associated with the build.
    5. **Build status**: Reflects whether the build was successful or failed using visual indicators.
-   6. **Deploy status**: Displays the result of the deployment process for the job.
+   6. **Deploy status**: Displays the status of the deployment for the job.
    7. **Commit status**: Shows the success or failure of any commit operations tied to the job.
    8. **Post-deploy status**: Indicates the outcome of post-deployment activities, if configured.
    9. **Actions**: Offers options to re-trigger the job or access additional actions via the menu.
-8.
+8.  **Triggering a CI Job Build from History**
 
+    * **Build Job (Play icon)**: Click the play icon under the **Actions** column to initiate a build for the selected CI job directly from the history list.
 
+    <figure><img src="../../../../../.gitbook/assets/7.2 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+    #### **Build Inputs Panel**
 
+    <figure><img src="../../../../../.gitbook/assets/7.3 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+    * **Build Label**: Enter a unique identifier to label the new build for tracking purposes.
+    * **Build Comment**: Provide optional context or notes describing the intent or changes in this build.
+    * **Deployment Type**: Choose from "Commit and deploy", "Deploy only", or "Commit only" based on the action needed.
+    * **Enable Rollback for this Build**: If this option is selected during the job creation, the same state will reflect while job gets triggered.
+    * **Build Notes**: Add additional information or annotations relevant to the build; this field is optional.
+    * **Trigger Build Button**: Click this button to finalize and initiate the CI job build with the provided inputs
+9.  **Accessing the Build List from CI Job History**
 
+    In the **CI Job History** interface, each row represents an individual CI Job entry with various associated actions. To access detailed build information for any CI Job:
 
+    1. **Build List Navigation**:\
+       Click the **ellipsis icon (⋮)** under the **Actions** column for the desired CI Job. From the context menu that appears, select **Build List**. This action navigates to the CI Job Builds screen specific to that CI Job.
 
+    <figure><img src="../../../../../.gitbook/assets/8 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+    1. **CI Job Builds Overview**:\
+       The **CI Job Builds** screen presents a tabular list of all builds triggered for the selected job. The following attributes are displayed for each build:
+       * **Build Number**: Sequential identifier for each build.
+       * **Build Name**: Descriptive label assigned to the build.
+       * **Triggered Date** and **Triggered By**: Timestamp and initiator of the build.
+       * **Commit ID**: The unique identifier of the commit associated with the build.
+       * **Build Status**, **Deploy Status**, **Commit Status**, and **Post Deploy Status**: Visual indicators reflecting the outcome of each stage.
 
+    <figure><img src="../../../../../.gitbook/assets/8.1 - CI Job History 2.png" alt=""><figcaption></figcaption></figure>
 
+    The following explains the options available under the actions of the "CI Job Builds" section:
 
+    *   **Build Results**: Displays the overall outcome and statistics of the build process.
 
+        <figure><img src="../../../../../.gitbook/assets/8.1 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+        <figure><img src="../../../../../.gitbook/assets/8.2 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+        <figure><img src="../../../../../.gitbook/assets/8.2 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
 
+        <figure><img src="../../../../../.gitbook/assets/8.2.1 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+    *   **Post Deploy Results**: Shows results of deployment validation post-build.
 
+        <figure><img src="../../../../../.gitbook/assets/8.3 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+        <figure><img src="../../../../../.gitbook/assets/8.4 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
+        <figure><img src="../../../../../.gitbook/assets/8.5 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+    *   **Build Info**: Provides basic metadata and configuration details of the build.
 
+        <figure><img src="../../../../../.gitbook/assets/8.6 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
 
+    * **Build Changes**: Lists all the changes included in the selected build.
+    * **Commit Log**: Displays the sequence of commits associated with the build.
+    * **Commit Revision Log**: Shows a list of modified files and their actions in the commit.
+    * **Commit File Diff**: Presents a visual comparison of changes between file versions.
+    * **Rollback**: Initiates a rollback of the build deployment from the target org.
+    * **Download Build Backup Snapshot**: Allows downloading a backup archive of the build snapshot.
+10. **Viewing Build Results**:\
+    Within the **CI Job History** screen, click the ellipsis icon corresponding to a specific job entry. Select **Build Results** from the dropdown to view the execution details of that build, including logs, errors (if any), and success metrics.
 
+    <figure><img src="../../../../../.gitbook/assets/9 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/10 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
 
+    1. The features that are part of the build can be downloaded using the download option
+    2. The "logs" of the feature deployment can be observed by clicking on the "View Logs" option available
 
+    <figure><img src="../../../../../.gitbook/assets/11 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+11. **Accessing Post-Deployment Details from the CI Job History Page**
 
+    To review the logs of post-deployment activities for completed CI jobs:
 
+    1. Navigate to the **CI Job History** page and locate the job of interest.
+    2. Open the **Actions** menu (represented by the vertical ellipsis ⋮) corresponding to the selected build.
+    3. Choose the **Post Deploy Results** option from the dropdown.
 
+    <figure><img src="../../../../../.gitbook/assets/8.3 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
 
+    1.  This action opens the **Feature Details** panel that provides build and deployment status specific to each post-deploy Org configured in the CI Job.
 
+        #### Viewing Deployment Logs of Post-Deploy Orgs Within the **Feature Details** panel:
 
+        * Select the desired **Post Deploy Org** from the dropdown at the top-left to filter logs specific to that target Org.
+        * Click the **View Logs** icon adjacent to the desired feature to open detailed deployment logs.
 
+        <figure><img src="../../../../../.gitbook/assets/8.4 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
 
+        The **Feature Logs** panel then displays the **Deploy Log**, outlining each deployment step executed on the selected post-deploy Org, including:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### &#x20;<a href="#overview" id="overview"></a>
-
-### &#x20;<a href="#overview" id="overview"></a>
-
-### &#x20;<a href="#overview" id="overview"></a>
-
-### &#x20;<a href="#overview" id="overview"></a>
-
-### Overview <a href="#overview" id="overview"></a>
-
-The **CI Job Results** screen will display the list of builds triggered for your CI Jobs to date. In addition, you can even trigger a new build or find detailed build info for your existing jobs, such as build status, log reports, author details, etc.
-
-### Navigating to CI Job Result Screen <a href="#navigating-to-ci-job-result-screen" id="navigating-to-ci-job-result-screen"></a>
-
-1. Hover your mouse over the **nCino** module and click on [**CI Jobs**](https://knowledgebase.autorabit.com/docs/ci-job-list-screen).&#x20;
-2. By default, you will be redirected to the **Job Results** tab; if not, click on the **Job Results** tab. The list of CI job builds will display in reverse chronological order; the newest will display on the top of the list.
-
-<figure><img src="../../../../../.gitbook/assets/image (1367).png" alt=""><figcaption></figcaption></figure>
-
-### Trigger a Build <a href="#trigger-a-build" id="trigger-a-build"></a>
-
-To trigger a new build for your CI Job, follow the below steps:&#x20;
-
-3. From the **CI Job Results** screen, select your job from the **All Jobs** dropdown field. The dropdown here allows switching between the [CI Jobs](https://knowledgebase.autorabit.com/docs/ci-job-list-screen) created.
-
-<figure><img src="../../../../../.gitbook/assets/image (1368).png" alt=""><figcaption></figcaption></figure>
-
-4. If no build is created yet,  **'No builds exist'** gets displayed, or if the build is already triggered for the job and you wish to trigger another build, click on **Build Now** besides your selected job.
-
-<figure><img src="../../../../../.gitbook/assets/image (1369).png" alt=""><figcaption></figcaption></figure>
-
-5. The left side on the next screen will have summary details of your CI job configured, i,e.,  _job label, source/destination org, deployment method chosen,_ etc.
-
-<figure><img src="../../../../../.gitbook/assets/image (1370).png" alt="" width="563"><figcaption></figcaption></figure>
-
-6. Under the **Build inputs** section, enter the **title** of the build and add **comments,** if any.&#x20;
-7. Choose the **Deployment Type:**
-   * **Commit and Deploy:** Both commit and deployment will undergo if chosen&#x20;
-   * **Deploy only:** Deployment happens to the selected destination org only.
-   * **Commit only:** Committing the changes to the version control branch only.
-8. Add any additional information in the **Notes** section. However, this is optional.
-9. Click on **Trigger Build**. It will validate the user credentials, and the build will get triggered upon successful validation.
-
-<figure><img src="../../../../../.gitbook/assets/image (1371).png" alt=""><figcaption></figcaption></figure>
-
-10. You'll be redirected to the **Job Results** main screen, where you can find your recently triggered build status.
-
-### Build Log and Object detail <a href="#build-log-and-object-detail" id="build-log-and-object-detail"></a>
-
-11. From the **CI Job Results** screen, click on the CI Job from the list to view the build details or use the **All Jobs** drop-down to look for your job.
-
-<figure><img src="../../../../../.gitbook/assets/image (1372).png" alt=""><figcaption></figcaption></figure>
-
-or,
-
-<figure><img src="../../../../../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
-
-12. From the list of build lists triggered, look for the build for which you want to see the log and object details. Click on the build once you found it.
-
-<figure><img src="../../../../../.gitbook/assets/image (1374).png" alt=""><figcaption></figcaption></figure>
-
-13. For each template deployed, the **Data** tab will list all the [nCino](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) objects committed or deployed, along with the _success/fail_ count.
-
-<figure><img src="../../../../../.gitbook/assets/image (1375).png" alt=""><figcaption></figcaption></figure>
-
-14. Click on the **object** to view its detailed object information displayed on the right side of the screen.
-
-<figure><img src="../../../../../.gitbook/assets/image (1376).png" alt=""><figcaption></figcaption></figure>
-
-15. The number of records successfully deployed or failed to deploy can be seen under the **Success/ Failed** tab.
-
-<figure><img src="../../../../../.gitbook/assets/image (1377).png" alt=""><figcaption></figcaption></figure>
-
-To view the detailed object records that were successfully deployed or failed to deploy, click on the **number link** (under _Success_ or _Failed_).
-
-<figure><img src="../../../../../.gitbook/assets/image (1378).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (1379).png" alt="" width="563"><figcaption></figcaption></figure>
-
-16. The **Log** tab contains the detailed report of the commit/deployment performed. Each commit/deployment has several "steps," which contain a subset of logs; such logs can be seen here. You can view complete log information in the user interface or save it to your local machine using![](<../../../../../.gitbook/assets/image (1380).png>)icon. The file usually gets downloaded in ZIP format.
-
-<figure><img src="../../../../../.gitbook/assets/image (1381).png" alt=""><figcaption></figcaption></figure>
-
-17. **Post-Deployment Activities:** The post-deployment activities information is displayed on this tab. If you have selected more than one Salesforce org as your destination, select the respective org from the **Salesforce Org** drop-down to view the detailed success/failure objects count.
+        <figure><img src="../../../../../.gitbook/assets/8.5 - CI Job History (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**
 
-1. A maximum of 5 Salesforce Orgs will be considered for post-deployment activities. For multiple Salesforce Orgs opted, the post-deployment activities will be carried out sequentially, meaning the next post-deployment activities will be carried out only if the current post-deployment activities are done.&#x20;
-2. The success or failure detailed object records can be seen only if the post-deployment activities are successfully carried out for all of the Salesforce Orgs.
+1. Post-deployment activities support up to a maximum of **five Salesforce Orgs**. When multiple Orgs are selected, these activities are executed **sequentially**—the process moves to the next Org only after the current one completes.
+2. **Detailed success or failure records** for individual objects are available **only if post-deployment activities are completed successfully across all selected Orgs**.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (1382).png" alt=""><figcaption></figcaption></figure>
+12. **Build Info**
 
-***
-
-### Download Backup Snapshot
-
-#### Introduction
-
-Now it's easy to download the backup snapshot of the CI Jobs as required. You can go to the respective CI job and download the backups of the templates all at once or individually.
-
-#### Step-by-Step Guide
-
-1. Go to any CI Job.
-2. Click on any template available under the build.
-
-<figure><img src="../../../../../.gitbook/assets/image (1486).png" alt=""><figcaption></figcaption></figure>
-
-3. On the template page, you will see the download option available for each object.
-
-<figure><img src="../../../../../.gitbook/assets/image (1487).png" alt=""><figcaption></figcaption></figure>
-
-4. Open the CI Job, then hover over the three dots at the far right of the banner as shown below.
-
-<figure><img src="../../../../../.gitbook/assets/image (1488).png" alt=""><figcaption></figcaption></figure>
-
-5. Click on the “Build Changes” option.
-6. You will be redirected to a “Build Changes” page.
-
-<figure><img src="../../../../../.gitbook/assets/image (1489).png" alt=""><figcaption></figcaption></figure>
-
-7. On the “Build Changes” page, click on the “Download” button to download all the templates from that build.
-8. You can see the files downloaded.
+    The **Build Info** option from the CI Job History menu opens a panel displaying metadata for the selected build, including job name, build number, status details, deployment target, and initiator. This summary provides a consolidated view of critical build-level attributes.
 
 
 
-### Commit and Deployment Workspace <a href="#commit-and-deployment-workspace" id="commit-and-deployment-workspace"></a>
+    <figure><img src="../../../../../.gitbook/assets/15 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
-**Commit Workspace:** When various commits are deployed to a branch, the queue commits will be mentioned here. The main concept of introducing the commit workspace is to allow parallel commits to the same version control repository/branch.
 
-**Deployment Workspace:** View the ongoing deployment process by clicking on the **Deployment Workspace** icon on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (1383).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/16 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+13. #### Build Changes – CI Jobs History
 
-<figure><img src="../../../../../.gitbook/assets/image (1384).png" alt="" width="554"><figcaption></figcaption></figure>
+    The **Build Changes** view, accessible from the contextual menu in the **CI Jobs History** screen, provides a breakdown of metadata components included in a specific CI job build.
 
-### CI Job Results 'Advanced Search' Filter <a href="#ci-job-results-advanced-search-filter" id="ci-job-results-advanced-search-filter"></a>
+    <figure><img src="../../../../../.gitbook/assets/17 - CI Job History.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1385).png" alt=""><figcaption></figcaption></figure>
+    Upon selecting **Build Changes**, a categorized list of changes is displayed, grouped by metadata categories. Within each category, individual metadata components are listed.
 
-1. **Filter by Job Name/ Build Number:** Filter the builds by CI job label name and the build number.&#x20;
-2. **Triggered By**: Filter the builds by the author.
-3. **Filter by Created/ Modified Date:** If you want to view job lists that get authored between any two dates, use the **'From Date'** and **'To Date'** to narrow down the list of build lists.
-4. **Filter by Build Label Name**: Filter the builds by build label name.
-5. **Filter by Build Status**: Filter the list based on build status, i.e., success or failed.
-6. **Filter by Deploy Status**: Filter the build via deployment type, i.e., commit and deploy or deploy or commit.
+    This helps track the exact metadata items that were part of a specific build, aiding in review, troubleshooting, and audit purposes. A download icon is also available to export this information.
+
+    <figure><img src="../../../../../.gitbook/assets/18 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+14. #### Commit Log – Step-wise Execution Breakdown
+
+    Accessing the **Commit Log** from the contextual menu on the CI Jobs History screen opens a detailed breakdown of the step-wise execution performed during the commit process. The log provides a vertical list of steps such as _Checkout_, _Sorting Structure_, _Diff_, _Converting Structure_, _Commit_, and _Delta_.
+
+    <figure><img src="../../../../../.gitbook/assets/19 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    Each step is expandable and includes messages logged in real time, offering complete transparency into how the commit execution was handled.
+
+    <figure><img src="../../../../../.gitbook/assets/20 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+15. **Commit Revision Log**
+
+    The **Commit Revision Log** from the CI Jobs History contextual menu opens a panel listing all the files included in the commit, along with their actions—Modified (M) or Deleted (D). Each entry in the log provides the full file path, aiding traceability and audit for changes made in the build.
+
+    <figure><img src="../../../../../.gitbook/assets/21 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/22 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+16. #### Commit File Diff – CI Job History
+
+    From the **CI Jobs History** page, selecting the **Commit File Diff** option from a job’s action menu displays the detailed file-level changes grouped under categories like Data and Filters.
+
+    <figure><img src="../../../../../.gitbook/assets/23 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    1. In the Data tab, files are listed with summary stats for additions and deletions, and expanding a file reveals a side-by-side JSON diff view with highlighted insertions and removals.
+
+    <figure><img src="../../../../../.gitbook/assets/24 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/25 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    1. The Filters tab shows query-based changes in JSON format, such as added filter logic or metadata.
+
+    <figure><img src="../../../../../.gitbook/assets/26 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+17. **Rollback**
+
+    On the CI Jobs History page, the rollback operation is accessed via the contextual menu in the Actions column by selecting the **Rollback** option.&#x20;
+
+    <figure><img src="../../../../../.gitbook/assets/27 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    This opens the Feature Deployment Rollback dialog, where the user first chooses the org(s) to roll back from under the **Rollback From** dropdown.&#x20;
+
+    <figure><img src="../../../../../.gitbook/assets/28 - CI Job History.png" alt=""><figcaption></figcaption></figure>
+
+    Following this, one or more deployed templates can be selected using the **Rollback Deployed Template(s)** dropdown. After the necessary selections are made, the rollback is initiated by clicking the **Rollback** button.
+
+    <figure><img src="../../../../../.gitbook/assets/29 - CI Job History (1).png" alt=""><figcaption></figcaption></figure>
+18. **Download Build Backup Snapshot**
+
+    The **Download Build Backup Snapshot** option in the CI Jobs History page allows downloading a backup of the selected build for archival or restoration purposes.
+
+    <figure><img src="../../../../../.gitbook/assets/30 - CI Job History.png" alt=""><figcaption></figcaption></figure>

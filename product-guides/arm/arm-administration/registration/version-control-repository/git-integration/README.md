@@ -48,7 +48,12 @@ This is an initial step in storing your user's credentials (usually a username, 
 
 <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-7. Click **`Save`**.
+7. Authorize the personal access token to allow external systems like AutoRABIT to connect to SAML-connected software, e.g., GitHub.&#x20;
+8.  Following creation of the personal access token, configure and authorize SSO. \
+
+
+    <figure><img src="../../../../../../.gitbook/assets/image (1736).png" alt=""><figcaption></figcaption></figure>
+9. Click **`Save`**.
 
 ### Registering a Git Repository in ARM <a href="#registering-a-git-repository-in-arm" id="registering-a-git-repository-in-arm"></a>
 

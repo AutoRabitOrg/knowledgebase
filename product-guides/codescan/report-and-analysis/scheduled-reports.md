@@ -30,4 +30,4 @@ To configure scheduled reports,
 6.  Click **Run now**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption><p>Run Now</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Run Now</p></figcaption></figure>

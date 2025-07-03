@@ -32,7 +32,7 @@ Each has its own use case and default behavior.\
 \
 
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-07-03 at 3.19.21 PM.png" alt=""><figcaption><p>Sarif flow diagram</p></figcaption></figure>
 
 
 

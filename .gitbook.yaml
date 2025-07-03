@@ -284,7 +284,6 @@ redirects:
     docs/arm-support: product-guides/arm/troubleshoot/contact-arm-support.md
     docs/dataloader: product-guides/arm/dataloader.md
     docs/validation-workflow-rules: product-guides/arm/validation-workflow-rules.md
-    docs/environment-provisioning: product-guides/arm/arm-features/environment-provisioning.md
     docs/troubleshoot: product-guides/arm/troubleshoot.md
     docs/release-notes: overview/release-notes/README.md
     docs/known-issues-limitations: product-guides/arm/arm-known-issues.md
@@ -520,4 +519,6 @@ redirects:
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/java.lang.outofmemoryerror-gc-overhead-limit-exceeded: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/jenkins-java.lang.outofmemoryerror-java-heap-space: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/error-occurred-during-initialization-of-vm-could-not-reserve-enough-space-for-xxxkb-object-heap: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
+    docs/environment-provisioning: product-guides/arm/arm-features/environment-provisioning.md
+
 

@@ -1,5 +1,33 @@
 # Release Notes 25.2
 
+### nCino + DL - 25.2.12 Release Notes
+
+**Release Date: 06 July, 2025**
+
+**Job Comment Retention**
+
+An issue where the _Job Label_ would overwrite the existing _Job Comment_ during job edits has been resolved. The comment field will now retain its original value unless explicitly modified by the user.
+
+**RBC Deployment Templates Accuracy**
+
+The logic for handling RBC Deployment Templates has been refined. The system now correctly accounts for omitted templates and accurately calculates the count of selected templates, ensuring consistent and reliable template tracking.
+
+**Rollback Execution Stability**
+
+Enhancements have been made to ensure that rollback operations, even when triggered on the _nth_ iteration, execute seamlessly without disruptions.
+
+**Version Control CI Jobs Ordering**
+
+The display order of CI Jobs under Version Control has been improved. Jobs are now consistently sorted by their _Modified Date_, ensuring that the most recently updated jobs appear at the top of the list.
+
+**Selected Templates Preservation**
+
+In the CI Job configuration, the order of templates within the _Selected Templates_ section is now preserved as per the user’s arrangement. This ensures better clarity and user-defined control over template sequences.
+
+**Triggered Date Population**
+
+A fix has been applied to ensure that the _Triggered Date_ field is correctly populated whenever a job is initiated. This resolves earlier inconsistencies and supports accurate build history tracking.
+
 ### nCino + DL - 25.2.11 Release Notes
 
 **Release Date:** 29 June 2025

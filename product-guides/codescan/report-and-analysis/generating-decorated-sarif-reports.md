@@ -98,9 +98,63 @@ We can also generate codescan reports using sfdx and sonarcanner cli by passing 
 **Example:**\
 **Rules sample format:**
 
-`"rules": [ { "id": "sf:LeftBracesLinePositions", "name": "Left Braces Positioning Should Be Consistent", "shortDescription": { "text": "Left Braces Positioning Should Be Consistent" }, "fullDescription": { "text": "Left Braces Positioning Should Be Consistent" }, "defaultConfiguration": { "enabled": true, "level": "warning" }, "help": { "text": "Left Braces Positioning Should Be Consistent [Type: Code Smell, Severity: Minor]" }, "properties": { "tags": [ "dummy", "convention", "hello" ] } } ]`
+```
+"rules": [
+{
+"id": "sf:LeftBracesLinePositions",
+"name": "Left Braces Positioning Should Be Consistent",
+"shortDescription": {
+"text": "Left Braces Positioning Should Be Consistent"
+},
+"fullDescription": {
+"text": "Left Braces Positioning Should Be Consistent"
+},
+"defaultConfiguration": {
+"enabled": true,
+"level": "warning"
+},
+"help": {
+"text": "Left Braces Positioning Should Be Consistent [Type: Code Smell, Severity: Minor]"
+},
+"properties": {
+"tags": [
+"dummy",
+"convention",
+"hello"
+]
+}
+}
+]
+```
 
 \
 **Results sample format:**
 
-`"results": [ { "ruleId": "sf:CommentRequired", "message": { "text": "Header comments are Required [Type: Code Smell, Severity: Minor]" }, "locations": [ { "physicalLocation": { "artifactLocation": { "uri": "classes/Bbbbbb.cls" }, "region": { "startLine": 1, "startColumn": 1, "endLine": 1, "endColumn": 1 } } } ] } ]`Add label
+```
+"rules": [
+{
+"id": "sf:LeftBracesLinePositions",
+"name": "Left Braces Positioning Should Be Consistent",
+"shortDescription": {
+"text": "Left Braces Positioning Should Be Consistent"
+},
+"fullDescription": {
+"text": "Left Braces Positioning Should Be Consistent"
+},
+"defaultConfiguration": {
+"enabled": true,
+"level": "warning"
+},
+"help": {
+"text": "Left Braces Positioning Should Be Consistent [Type: Code Smell, Severity: Minor]"
+},
+"properties": {
+"tags": [
+"dummy",
+"convention",
+"hello"
+]
+}
+}
+]
+```

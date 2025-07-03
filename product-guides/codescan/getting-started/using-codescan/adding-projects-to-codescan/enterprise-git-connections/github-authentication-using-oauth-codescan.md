@@ -1,10 +1,10 @@
 # GitHub Authentication using OAuth (CodeScan)
 
-Connecting AutoRABIT (Codescan) to GitHub Enterprise requires a secure handshake based on the OAuth 2.0 Authorization Framework.
+Connecting AutoRABIT (CodeScan) to GitHub Enterprise requires a secure handshake based on the OAuth 2.0 Authorization Framework.
 
 **Applies To**
 
-* Self-hosted and dedicated-hosted Codescan deployments.
+* GitHub Enterprise Server (self-managed) deployments; not applicable to [GitHub](http://github.com/).
 
 **Generate Client ID and Client Secret**
 
@@ -13,7 +13,7 @@ Connecting AutoRABIT (Codescan) to GitHub Enterprise requires a secure handshake
 3. In the left sidebar, click **OAuth Apps**.
 4. Click **New OAuth App** (or **Register a new application**).
 5. Fill in:
-   * **Application name**: e.g., Codescan GitHub OAuth
+   * **Application name**: e.g., CodeScan GitHub OAuth
    * **Homepage URL**: e.g., \<https://git.enterprise.local.com>
    * **Application description** (optional)
    * **Authorization callback URL**: \<https://\<Codescan\_URL>>/\_codescan/oauth2/authorize

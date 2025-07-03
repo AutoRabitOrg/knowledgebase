@@ -23,16 +23,16 @@
 
 **Domain / ALM URL**
 
-2. Enter the unique URL for your organization’s ALM server.
-3. Each organization may have only one URL per provider.
+2. Enter the URL for your ALM server.
+3. Each ALM URL must be unique for each ALM connection within an organization.
 
 **Allowed IP Ranges**
 
-3. Specify the CIDR blocks or IP ranges that are permitted to access your Enterprise server.
+4. Specify the CIDR blocks or IP ranges that are permitted to access your Enterprise server.
 
 **OAuth Credentials**
 
-4. Paste the **Client ID** and **Client Secret** generated when you created your connected app in the provider’s system.
+5. Paste the **Client ID** and **Client Secret** generated when you created your connected app in the provider’s system.
 
 <figure><img src="../../../../../../.gitbook/assets/image-20250701-153944.png" alt=""><figcaption></figcaption></figure>
 

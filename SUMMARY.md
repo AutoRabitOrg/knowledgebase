@@ -1133,6 +1133,7 @@
       * [Use Jenkins with CodeScan Salesforce project](product-guides/codescan/codescan-integration/jenkins/use-jenkins-with-codescan-salesforce-project.md)
     * [Webhooks](product-guides/codescan/codescan-integration/webhooks/README.md)
       * [Slack integration with Zapier](product-guides/codescan/codescan-integration/webhooks/slack-integration-with-zapier.md)
+    * [ALM/Enterprise Git](product-guides/codescan/codescan-integration/alm-enterprise-git.md)
 * [Vault](product-guides/vault/README.md)
   * [Vault™ Overview](product-guides/vault/vault-tm-overview.md)
   * [Getting Started](product-guides/vault/getting-started/README.md)

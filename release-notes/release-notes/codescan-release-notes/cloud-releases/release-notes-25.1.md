@@ -36,11 +36,11 @@ Component details are listed in their corresponding sections within this documen
 
 1\.     Support for Enterprise Git Connections / Configuring & Managing ALM Integrations
 
-&#x20;In CodeScan, Enterprise Git Connections enable organizations to securely integrate with self-hosted or enterprise instances of GitHub, GitLab, and Bitbucket. Admins can configure these connections at the organization level using OAuth credentials and define allowed IP ranges for secure access. Once connected, these integrations streamline project onboarding by allowing users to directly link Git repositories during project setup for automated analysis and CI/CD workflows.
+In CodeScan, Enterprise Git Connections enable organizations to securely integrate with self-hosted or enterprise instances of GitHub, GitLab, and Bitbucket. Admins can configure these connections at the organization level using OAuth credentials and define allowed IP ranges for secure access. Once connected, these integrations streamline project onboarding by allowing users to directly link Git repositories during project setup for automated analysis and CI/CD workflows.
 
 <figure><img src="../../../../.gitbook/assets/image (1737).png" alt=""><figcaption><p>ALM Connections</p></figcaption></figure>
 
-More detailed info can be found in our knowledge base here:&#x20;
+More detailed info can be found in our Knowledge Base here:&#x20;
 
 [https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections)
 
@@ -48,7 +48,7 @@ More detailed info can be found in our knowledge base here:&#x20;
 
 1\.     Enhancement to CodeScan Rule “URL Redirection to Untrusted Site” {sf:OpenRedirect}
 
-CodeScan has traditionally used this rule to check against redirects to user-controlled locations. This is important because untrusted input could cause an attacker to redirect the user to a malicious site thereby allowing the attacker to launch a phishing scam and steal user credentials.
+CodeScan has traditionally used this rule to check against redirects to user-controlled locations. This is important because untrusted input could cause an attacker to redirect the user to a malicious site, thereby allowing the attacker to launch a phishing scam and steal user credentials.
 
 <figure><img src="../../../../.gitbook/assets/image (1738).png" alt=""><figcaption></figcaption></figure>
 

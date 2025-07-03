@@ -520,5 +520,6 @@ redirects:
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/jenkins-java.lang.outofmemoryerror-java-heap-space: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/error-occurred-during-initialization-of-vm-could-not-reserve-enough-space-for-xxxkb-object-heap: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
     docs/environment-provisioning: product-guides/arm/arm-features/environment-provisioning/README.md
+    vault/docs/registering-salesforce-org: product-guides/vault/configuring-vault/registering-salesforce-org.md
 
 

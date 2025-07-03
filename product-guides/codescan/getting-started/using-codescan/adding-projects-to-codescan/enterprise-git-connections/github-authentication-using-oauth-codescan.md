@@ -4,7 +4,7 @@ Connecting AutoRABIT (CodeScan) to GitHub Enterprise requires a secure handshake
 
 **Applies To**
 
-* GitHub Enterprise Server (self-managed) deployments; not applicable to [GitHub](http://github.com/).
+* GitHub Enterprise Server (self-managed) deployments; not applicable to [GitHub](https://www.github.com/).
 
 **Generate Client ID and Client Secret**
 

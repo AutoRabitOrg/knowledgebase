@@ -4,7 +4,7 @@ Connecting AutoRABIT (Codescan) to GitLab Enterprise requires a secure handshake
 
 **Applies To**
 
-* GitLab Enterprise Server (self-managed); not applicable to [![](https://about.gitlab.com/images/ico/favicon-32x32.png)The most-comprehensive AI-powered DevSecOps platform](http://gitlab.com/) .
+* GitLab Enterprise Server (self-managed); not applicable to [GitLab](http://gitlab.com/) .
 
 **Generate Client ID and Client Secret**
 

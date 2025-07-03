@@ -58,6 +58,99 @@ However, our existing rule did not specifically check for the use of Network.for
 
 This rule has now been enhanced with this logic, and we have verified that users are now able to see the violation for the use of both Network.forwardToAuthPage and PageReference.
 
+<figure><img src="../../../../.gitbook/assets/image (1740).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (1741).png" alt=""><figcaption></figcaption></figure>
+
+More details regarding the Network class can be found here: [Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_network.htm#apex_System_Network_forwardToAuthPage).
+
+1\.     Enhancement to CodeScan decorations of SARIF Reports
+
+Since the 24.0.6 release (June 2024), CodeScan was enhanced to decorate standard SARIF output.  While CodeScan had been able to generate SARIF output before the 24.0.6 release, it’s noteworthy to mention that the SARIF output in GitHub does not contain the severity. As such, we added severity to our SARIF output, thereby allowing CodeScan to provide a more verbose presentation of the issues in GitHub. This change has been providing a better experience for our customers working in GitHub Actions.
+
+The way this feature was originally designed was:
+
+* When generateSarifFile: true, the generated SARIF file includes all issues, both open and resolved. Additionally, the report contains detailed metadata such as Type and Severity for each issue.
+* When generateSarifFile: false, the generated SARIF file includes only open issues, and it does not include the Type and Severity information for the issues.
+
+This means that when generateSarifFile is set to false, the generated SARIF file includes only open issues, but omits important metadata such as Type and Severity for each issue.
+
+However, to maintain consistency and support downstream analysis tools, the SARIF file should always include detailed metadata for each issue, regardless of the generateSarifFile setting.
+
+Thus, this enhancement expands upon the existing capability and introduces much more robust functionality.
+
+With this release, when generateSarifFile: false or generateReportFile: true, the SARIF file:
+
+* Contains only open issues respective to the baranch and PR
+* Includes full metadata for each issue, including Type and Severity for rules and results
+
+
+
+More detailed information can be found here:  [https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/generating-decorated-sarif-reports](https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/generating-decorated-sarif-reports)
+
+Verified the below types of analyses with SARIF report all are working as expected:
+
+* Commit request analysis
+* PR analysis
+* Merge analysis
+* SARIF reports
+
+Verified the SARIF report with the parameter generateSarifFile: false/true in the YML file user is able to see the open issues of the specific branch or pr and also able to see the issue TYPE and SEVERITY in the SARIF report.
+
+2\.     On the Billing Page, a banner was added that details the level of access users have within the CodeScan UI based on user license type
+
+Customers who are using a user-based license model will now have a banner on their Billing Page that provides additional clarity regarding the CodeScan features available to users based upon their license type.  Standard users will have access to all CodeScan features (although access can be restricted by admin based on user privileges).  Platform Integration Users will only have access to their Profile, along with access to the Security Tab and the Notifications Tab.  Additionally, both types of users can fully use the CodeScan extension for VS Code and IntelliJ.
+
+<figure><img src="../../../../.gitbook/assets/image (1742).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+1\.      Fixed issue where after a user is deactivated, the user is still displayed on Members page
+
+Some users were reporting that after a user is deactivated, the user is still displayed on the Members page.
+
+Detailed Solution
+
+1. Made changes in the codebase to remove the user from members table when the user is deactivated.
+2. Ensured that using “search” on the Members page, only active users are retrieved.
+3. The user is no longer able to login via SAML
+
+Verified the below scenarios regarding users being displayed in Members page, and all scenarios are working as expected.
+
+1. Create and Activate New User: User appears under the Members list of the active organization
+2. Add User to Inactive Organization: User is visible under the Members list of the inactive organization
+3. Deactivate User from Instance: User no longer appears in the Members list. Behavior confirms that deactivated users are excluded from the UI display
+4. Verify SAML Login for New User: Authentication via SAML was successful
+5. Billing Page User Count Verification: User count reflects the new user addition appropriately. Billing data is updated as per user assignments
+
+2\.     Fixed issue with codescan-scanner-action (occurring after CodeScan upgrade)
+
+Some users were reporting that when their CodeScan project was upgraded to CodeScan 24.12.0.100206, it was incompatible with our codescan-io/codescan-scanner-action (and thus breaks customers’ GitHub Actions pipelines for pull request scanning).
+
+This issue is remediated with this fix.
+
+Validated that all below scenarios are working as expected.
+
+1. Verified the GitHub Actions runner when using runs-on: ubuntu-latest
+2. Verified the GitHub Actions runner when using runs-on: macos-latest
+3. Verified the GitHub Actions runner when using runs-on: windows-latest
+4. Verified the GitHub Actions if JRE and Sonar Scanner is not present in cache and also Verified the logs if JRE and Sonar Scanner are present in the cache.
+5. Verified the below type of analysis (with SARIF report) are all working as expected.
+   * Commit request analysis.
+   * PR analysis.
+   * Merge analysis.
+   * SARIF reports.
+6. Verified the SFDX analysis (with SARIF report) the analysis is successful and  able to generate the SARIF file locally where user is able to see the tags, rule text, results, type of the Bug and type of the Severity.
+7. Verified the S3 integration the analysis is successful.
+8. Verified the CodeScan extension in the Azure DEVOPS plugin on the TEST instance working as expected.
+   * Verified the main/default analysis which is successful.
+   * Verified the branch analysis which is successful.
+9. Verified the below sonar scanner versions
+   * sonar-scanner-5.0.1.3006 - Analysis is successful
+   * sonar-scanner-6.0.0.4432 - Analysis is successful
+   * sonar-scanner-6.2.1.4610 - Analysis is successful
+   * sonar-scanner-7.1.0.4889 - Analysis is not successful (threw exception; nested exception is org.bouncycastle.crypto.fips.FipsOperationError: org.bouncycastle.crypto.fips.FipsOperationError: Module checksum failed: expected)
+
 ***
 
 ## CodeScan Release 25.1.3

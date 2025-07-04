@@ -513,6 +513,7 @@ redirects:
     vault/docs/replicate: product-guides/vault/vault-features/replicate.md
     vault/docs/configuring-vault: product-guides/vault/configuring-vault.md
     vault/docs/vault-connect-user-guide: product-guides/vault/vault-features/vault-connect/README.md
+    vault/docs/registering-salesforce-org: product-guides/vault/configuring-vault/registering-salesforce-org/README.md
     arm/docs/arm-release-notes-231: overview/release-notes/arm-release-notes/release-notes-23.1.md
     overview/release-notes/arm-release-notes/release-notes-24.4.2: overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-24.4.2.md
     overview/release-notes/arm-release-notes/release-notes-24.4.1: overview/release-notes/arm-release-notes/release-notes-24.4/release-notes-24.4.1.md
@@ -520,6 +521,3 @@ redirects:
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/jenkins-java.lang.outofmemoryerror-java-heap-space: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
     fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/error-occurred-during-initialization-of-vm-could-not-reserve-enough-space-for-xxxkb-object-heap: fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md
     docs/environment-provisioning: product-guides/arm/arm-features/environment-provisioning/README.md
-    vault/docs/registering-salesforce-org: product-guides/vault/configuring-vault/registering-salesforce-org/README.md
-
-

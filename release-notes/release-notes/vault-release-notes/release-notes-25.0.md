@@ -1,5 +1,21 @@
 # Release Notes 25.0
 
+## Vault Release Notes 25.1.3
+
+**Release Notes:** July 09, 2025
+
+*   **Archival Job Enhancement**
+
+    Previously, the archival job retained additional information even after the configured data retention period had expired. This behavior has now been updated: expired data is fully cleared, ensuring more efficient resource utilization and improved system performance.
+*   **Backup Job Reliability Improvement**
+
+    Resolved an issue where backup jobs processing millions of records would experience timeouts, leading to excessive and unproductive retries without successfully retrieving data. The underlying cause has been addressed to ensure more stable and efficient backup operations at scale.
+*   **Optimized Metadata Handling in Restore**
+
+    The system's capability to process metadata has been improved by increasing the number of files it can handle concurrently. This ensures smoother and more efficient metadata restore operations.
+
+##
+
 ## Vault Release Notes 25.1.2
 
 **Release Date: July 02 2025**

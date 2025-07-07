@@ -1,10 +1,7 @@
 # Archiving Your Salesforce Data
 
 1. Log in to your Vault account.
-2.  Go to the **Setup** module.\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (1624).png" alt=""><figcaption><p>Records</p></figcaption></figure>
+2. Go to the **Setup** module.
 3.  Locate the Salesforce Org for which the data has to be archived. You can use the **Search** filter to easily find the required Salesforce Org.
 
     <figure><img src="../../../../.gitbook/assets/image (1610).png" alt=""><figcaption><p>Search for Salesforce Org</p></figcaption></figure>

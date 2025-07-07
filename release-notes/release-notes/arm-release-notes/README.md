@@ -19,7 +19,7 @@
 
 * **VS Code Plugin – File Diff Undefined Error**\
   Fixed an undefined error in EZ Commit via VS Code when accessing file diffs post-commit. The file diff generation model is now available.\
-  &#xNAN;_(Support Case: 141748)_
+
 * **Destructive Changes – Entitlement Process Commit Fail**\
   Addressed commit failures during the Entitlement Process, destructive changes by updating the logic for DX Repositories.\
 

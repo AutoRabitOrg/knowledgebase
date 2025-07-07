@@ -99,26 +99,6 @@ ii. On selecting “Download Files”, based on the size of the file, the progre
 
 iii. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
 
-4. Click on the “Records” icon to open the records window and download the individual files as well as the consolidated files.
-
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Records</p></figcaption></figure>
-
-5. Click on the “Download” button to initiate the download of either the “CSV” or the “Files” from the Vault backup environment. Following is the screenshot for reference
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Download</p></figcaption></figure>
-
-6. Click the download to observe the following:
-
-a. Download CSV
-
-b. Download Files
-
-Note:- Refer the third point for “Download CSV” & “Download Files” functionality
-
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Download Files</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Successful Notification</p></figcaption></figure>
-
 7. Once “Download Files” is initiated, the progress of the files download is depicted through the progress icon. Following screenshot is for reference.
 8. On hovering over the in-progress download, the count(downloaded files/total files count) of files can be observed.
 
@@ -128,6 +108,37 @@ Note:- Refer the third point for “Download CSV” & “Download Files” funct
 10. Using the “Download Files” column. The individual files related to the respective records can be downloaded.
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption><p>Download Files</p></figcaption></figure>
+
+## Filter & Download Records
+
+The new provision is useful in filtering the “backed up” and archived records. The available records can be filtered through various options provisioned on the application.
+
+**Step-By-Step Guide:**
+
+Follow the following flow for the backup records download:
+
+1. Go to the backup module of the Vault application
+2. Click on the “Label Name” to open the backup details
+3.  On landing on the backup details section, click on the “Records”
+
+    <figure><img src="../../../../.gitbook/assets/image (1744).png" alt=""><figcaption></figcaption></figure>
+4. On opening the backup “Records”, observe the “Downloads” option.
+5.  The download has three values in the drop-down
+
+    a.    Download All Records
+
+    b.    Download Records On Screen
+
+    c.     Download Filtered Results
+
+    <figure><img src="../../../../.gitbook/assets/image (1745).png" alt=""><figcaption></figcaption></figure>
+6. **Download All Records**: Selecting this option will download all the backed up records
+7.  **Download Record On Screen**: Selecting this option will download all the records available on that current page
+
+    <figure><img src="../../../../.gitbook/assets/image (1746).png" alt=""><figcaption></figcaption></figure>
+8.  **Download Filtered Records**: Selecting this option will download the records filtered
+
+    <figure><img src="../../../../.gitbook/assets/image (1747).png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 

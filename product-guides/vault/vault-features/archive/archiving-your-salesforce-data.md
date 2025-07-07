@@ -55,22 +55,22 @@ Validate your query to see whether the criteria set is correct and view the numb
 
         1.  Set up the configuration for the automation rules at **“Scheduling”** while creating the “Archive Config”.
 
-            <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
         2. On selecting the required automation configurations, continue to **“Save Config”**.
         3.  Once saved, the set job configurations can be observed under the **“Archive Config Details”**.
 
-            <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
         4.  Clicking the information icon under the **"Archive Config Details"** column opens a pop-up displaying the configuration details associated with the respective archive job. This provides a quick view of the selected archive parameters without navigating away from the main screen.
 
-            <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
         5.  Run a job for the created configuration and observe the configuration details reflected on the job
 
-            <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
         6. The automation configurations selected during the creation of the _**Archive Config**_ will appear on the _**Start Archive**_ screen in the same state as they were initially defined.
         7. For archive configurations where the **"Notify before deleting records in Salesforce"** option is not selected, the automation settings will still appear on the **Start Archive** page..
         8.  On clicking the **“ARCHIVE NOW”** button, observe the automations to make sure they reflect in the same state of selection during the archive config creation.
 
-            <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
         9.  For "**Archive Configs"** with **"Notify before deleting records in Salesforce"** enabled, the automation rule settings will **not** be displayed on the **Start Archive** screen when the **ARCHIVE NOW** button is clicked.
 
             <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
@@ -106,33 +106,35 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 <table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
 
-## Downloading Files
+## Filter & Download Records
 
-**Steps to download files:**
+This provision is useful in filtering the “backed up” and archived records. The available records can be filtered through various options provisioned on the application.
 
-1. Go to the “Files” tab of any archive summary.
-2.  Click to open the “Records” icon on the files tab to download the files.\
+**Step-By-Step Guide:**
 
+1. Follow the following flow for the backup records download:
+2. Go to the backup module of the Vault application
+3. Click on the “Label Name” to open the backup details
+4.  On landing on the backup details section, click on the “Records”
 
-    <figure><img src="../../../../.gitbook/assets/image (1625).png" alt=""><figcaption><p>Records</p></figcaption></figure>
-3.  The records window will have the “Download” and “Download Files” options to initiate the download of files.
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+5. On opening the backup “Records”, observe the “Downloads” option.
+6.  The download has three values in the drop-down
 
-    <figure><img src="../../../../.gitbook/assets/image (1621).png" alt=""><figcaption><p>Downloads</p></figcaption></figure>
-4.  On clicking download, the following pop-up will be displayed with two options to download.
+    1. Download All Records
+    2. Download Records On Screen
+    3. Download Filtered Results
 
-    <figure><img src="../../../../.gitbook/assets/image (1623).png" alt=""><figcaption><p>Download Options</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+7. 6\.    Download All Records: Selecting this option will download all the backed up records
+8.  7\.    Download Record On Screen: Selecting this option will download all the records available on that current page
 
-    * Selecting "Download CSV" will download a CSV file with all the records.
-    * Selecting "Download Files" allows you to download the file from the Vault backup.
-5. &#x20;As soon as "Download Files" is initiated:
-   1.  A message will be displayed. Click "Ok" to continue.
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+9.  Download Filtered Records: Selecting this option will download the records filtered
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption><p>User Message</p></figcaption></figure>
-   2.  The download progress can be observed with the progress bar that replaces the “Download” button.
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption><p>Download</p></figcaption></figure>
-   3. Once the download is completed, an email based on the actual state of the download will be triggered to the registered emails in Vault.
-   4. For downloading individual files, click on the download icon under the "Download Files" column.
+    <figure><img src="../../../../.gitbook/assets/image (1743).png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 

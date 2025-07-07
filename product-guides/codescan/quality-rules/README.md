@@ -88,4 +88,4 @@ Unlike other rules, you can edit or delete custom rules. When a custom rule is d
 Click on the custom rules to view its details. Under the **Parameter** section, you have the option to edit the custom rule information or delete them.\
 
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption><p>Custom Test Rule</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3) (1).png" alt=""><figcaption><p>Custom Test Rule</p></figcaption></figure>

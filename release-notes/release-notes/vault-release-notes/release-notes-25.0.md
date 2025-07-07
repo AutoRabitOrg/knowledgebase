@@ -14,8 +14,6 @@
 
     The system's capability to process metadata has been improved by increasing the number of files it can handle concurrently. This ensures smoother and more efficient metadata restore operations.
 
-##
-
 ## Vault Release Notes 25.1.2
 
 **Release Date: July 02 2025**

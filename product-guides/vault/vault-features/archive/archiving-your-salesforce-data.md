@@ -47,27 +47,60 @@ Validate your query to see whether the criteria set is correct and view the numb
     * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
     *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.
 
-        <figure><img src="../../../../.gitbook/assets/image (1614).png" alt=""><figcaption><p>Enable serial mode for bulk API</p></figcaption></figure>
-11. Click **Save Config**.
-12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
+        <figure><img src="../../../../.gitbook/assets/1.1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
+11. **Disable Automation Rules**
+    1.  This provision to disable the automation rules is useful in making sure the automation rules created on various fields in Salesforce will not impact the Archival process midway.
+
+        **Step-By-Step Guide:**
+
+        1.  Set up the configuration for the automation rules at **“Scheduling”** while creating the “Archive Config”.
+
+            <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+        2. On selecting the required automation configurations, continue to **“Save Config”**.
+        3.  Once saved, the set job configurations can be observed under the **“Archive Config Details”**.
+
+            <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+        4.  Clicking the information icon under the **"Archive Config Details"** column opens a pop-up displaying the configuration details associated with the respective archive job. This provides a quick view of the selected archive parameters without navigating away from the main screen.
+
+            <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+        5.  Run a job for the created configuration and observe the configuration details reflected on the job
+
+            <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+        6. The automation configurations selected during the creation of the _**Archive Config**_ will appear on the _**Start Archive**_ screen in the same state as they were initially defined.
+        7. For archive configurations where the **"Notify before deleting records in Salesforce"** option is not selected, the automation settings will still appear on the **Start Archive** page..
+        8.  On clicking the **“ARCHIVE NOW”** button, observe the automations to make sure they reflect in the same state of selection during the archive config creation.
+
+            <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+        9.  For "**Archive Configs"** with **"Notify before deleting records in Salesforce"** enabled, the automation rule settings will **not** be displayed on the **Start Archive** screen when the **ARCHIVE NOW** button is clicked.
+
+            <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+        10. Once the archive job is completed, observe the automation rules details on the _“Job Info”_ section.
+
+            <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+        11. Click on the information icon under the “Job Info” section to observe the job automation details configured.
+
+            <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+        12. Once the archive job is completed, any automations that were temporarily disabled during job creation will be restored to their original state as they were before the job was triggered.
+12. Click **Save Config**.
+13. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
-13. Now go to the **Archive** tab.
-14. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
-15. Select the **Environment**.
-16. Select the archive configured recently under **Configurations** drop-down field.
+14. Now go to the **Archive** tab.
+15. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
+16. Select the **Environment**.
+17. Select the archive configured recently under **Configurations** drop-down field.
 
     <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
-17. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
-18. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
-19. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
-20. &#x20;Select your configuration and click **Archive**.
+18. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
+19. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
+20. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
+21. &#x20;Select your configuration and click **Archive**.
 
     <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
-21. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
+22. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
 
     <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
-22. &#x20;For each archive job, the following information will be displayed:
+23. &#x20;For each archive job, the following information will be displayed:
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 

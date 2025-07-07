@@ -1,5 +1,39 @@
 # ARM Release Notes
 
+## ARM 25.2.12 Release Notes
+
+**Release Date**: **July 6th, 2025**\
+\
+**Highlights**: Key enhancements and fixes to CI jobs, VS Code integration, deployment modules, audit reports, and environment provisioning.
+
+#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **Audit Reports – Deployment Label & Metadata Fixes**\
+  Added the Deployment Label column in the Audit Reports section. Fixed issues with Invalid Date in the created/modified date columns and removed special characters from downloaded CSV headers.\
+
+* **Env Provisioning – Apex Test Level Execution Support**\
+  Improved the Enable/Disable Apex Trigger Migration Template by reintroducing the Test Level dropdown in the execution window. Now the execution status updates correctly based on test result outcomes.\
+
+* **CI Jobs – Sharing Rules Not Deployed**\
+  Resolved an issue where Sharing Rules were skipped during deployment when linked to custom objects from installed packages.\
+
+* **VS Code Plugin – File Diff Undefined Error**\
+  Fixed an undefined error in EZ Commit via VS Code when accessing file diffs post-commit. The file diff generation model is now available.\
+  &#xNAN;_(Support Case: 141748)_
+* **Destructive Changes – Entitlement Process Commit Fail**\
+  Addressed commit failures during the Entitlement Process, destructive changes by updating the logic for DX Repositories.\
+
+* **Deployment – Missing Permissions in Profile Deployments**\
+  Corrected permission deployment for profiles with “Ignore Missing Visibility” enabled. This included handling for PushTopic permissions.\
+
+* **Audit Reports – Triggered Date Incorrect**\
+  Fixed the mismatch in deployment-triggered date display under the Audit tab.\
+
+* **CI Jobs – Abort Doesn’t Terminate Background Process**\
+  Improved CI job abort handling to ensure background processes are completely stopped. Now, aborted jobs no longer get stuck, and subsequent jobs queue and execute as expected.
+
+***
+
 ## ARM 25.2.11 Release Notes
 
 **Release Date: 29 June 2025**

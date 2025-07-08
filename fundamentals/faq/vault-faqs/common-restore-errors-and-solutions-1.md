@@ -112,7 +112,7 @@ This error indicates that the Salesforce user authenticated on Vault doesn’t h
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault
+2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
 
 #### UNKNOWN USER PERMISSION
 

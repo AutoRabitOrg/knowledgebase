@@ -1,5 +1,13 @@
 # Release Notes 25.1
 
+## Guard Release Notes 25.1.7
+
+**Release Date: 9 July 2025**
+
+This release includes a few bug fixes, including improvements to information displayed under Field Usage of unsupported types.
+
+***
+
 ## Guard Release Notes 25.1.6
 
 **Release Date: 25 June 2025**

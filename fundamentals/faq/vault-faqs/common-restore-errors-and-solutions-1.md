@@ -58,7 +58,7 @@ This error occurs when the destination Org doesn't have the value enabled that i
 
 #### REQUIRED\_FIELD\_MISSING
 
-This error occurs due to a failure of a required parent record (related through master-detail/required).
+This error occurs when the failure of a required parent record (related through master-detail/required lookup) leads to the failure of its associated child records.
 
 **Resolution Steps:**
 

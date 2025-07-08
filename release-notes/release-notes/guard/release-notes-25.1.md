@@ -1,5 +1,17 @@
 # Release Notes 25.1
 
+## Guard Release Notes 25.1.6
+
+Release Date: 8 July 2025
+
+New Access Controls can now be created from a home page directly.
+
+<figure><img src="../../../.gitbook/assets/image (1748).png" alt=""><figcaption><p>Create Access Control</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1749).png" alt=""><figcaption><p>Access Details</p></figcaption></figure>
+
+***
+
 ## Guard Release Notes 25.1.5
 
 **Release Date: 11 June 2025**

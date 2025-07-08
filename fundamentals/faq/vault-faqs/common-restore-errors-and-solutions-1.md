@@ -88,12 +88,12 @@ This error is due to a Lead record once converted (to a contact) becomes read on
 
 #### FIELD\_INTEGRITY\_EXCEPTION
 
-This error typically occurs when upsert tried to populate a lookup field with a wrong ID either because the parent failed or Vault is unable to recognize the parent record Id.
+This error typically occurs when upsert tried to populate a lookup field with a wrong ID either because the parent failed or Vault is unable to recognize the parent record ID.
 
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
-2. Need to pass the correct Id for a lookup field.
+2. Need to pass the correct ID for a lookup field.
 
 #### INVALID\_OPERATION: Too many files in zip
 

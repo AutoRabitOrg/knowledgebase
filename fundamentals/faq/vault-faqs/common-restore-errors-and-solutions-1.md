@@ -98,7 +98,7 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 #### INVALID\_OPERATION: Too many files in zip
 
 * Typical error message - Metadata deployment error...com.sforce.ws.SoapFaultException
-* This error is generated when there are more than 10,000 files in the .zip file which violates the governor limit.
+* This error is generated when there are more than 10,000 files in the .zip file, which violates the governor limit.
 
 **Resolution Steps:**
 

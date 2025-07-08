@@ -1,9 +1,8 @@
 # Table of contents
 
-* [Welcome to the Knowledge Base](README.md)
-
 ## Fundamentals
 
+* [Welcome to the Knowledge Base](README.md)
 * [AutoRABIT Solutions](fundamentals/what-we-do.md)
 * [Getting Set Up](fundamentals/getting-set-up.md)
 * [LearningHub](https://learninghub.autorabit.com/)

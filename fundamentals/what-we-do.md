@@ -3,6 +3,7 @@ description: >-
   At AutoRABIT, we're at the forefront of Salesforce DevOps solutions. Our
   advanced platform streamlines your development, testing, and release cycles,
   promoting continuous integration and delivery.
+hidden: true
 ---
 
 # AutoRABIT Solutions

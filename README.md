@@ -36,7 +36,7 @@ Together, these products form the industry’s most complete DevSecOps solution 
 
 #### Can’t Find What You’re Looking For?
 
-#### [_Suggest an Update via GitHub_](https://github.com/AutoRabitOrg/knowledgebase) _(Recommended)_
+[_**Suggest an Update via GitHub**_](https://github.com/AutoRabitOrg/knowledgebase) _**(Recommended)**_
 
 Have a clarification, correction, or improvement in mind? Every page in this Knowledge Base includes a **“Edit on GitHub”** button in the right-hand sidebar. This opens a GitHub Pull Request pre-linked to the exact page, so you can propose updates directly—whether it’s adding missing context, flagging outdated content, or refining explanations.
 

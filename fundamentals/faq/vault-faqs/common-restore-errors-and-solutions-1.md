@@ -75,7 +75,7 @@ This error is caused by the Parent record not being included in the job or permi
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Verify the parent object is included in the job.
 3. Review the authenticated user to ensure the user has access to the parent record that is referenced within the error.
-4. If it is a lookup relationship then ensure the parent object is included in the job.
+4. If it is a lookup relationship, then ensure the parent object is included in the job.
 
 #### CANNOT\_UPDATE\_CONVERTED\_LEAD
 

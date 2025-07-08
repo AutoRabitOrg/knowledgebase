@@ -1220,7 +1220,7 @@
 ## Resources
 
 * [AutoRABIT Support](resources/technical-support-services.md)
-* [💬 Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
+* [Community Forum](https://learninghub.autorabit.com/mod/forum/view.php?id=463)
 * [Glossary](resources/glossary.md)
 
 ***

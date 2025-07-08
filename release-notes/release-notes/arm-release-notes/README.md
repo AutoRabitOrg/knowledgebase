@@ -2,7 +2,7 @@
 
 ## ARM 25.2.12 Release Notes
 
-**Release Date**: **July 6th, 2025**\
+**Release Date**: **6 July 2025**\
 \
 **Highlights**: Key enhancements and fixes to CI jobs, VS Code integration, deployment modules, audit reports, and environment provisioning.
 

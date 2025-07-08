@@ -21,22 +21,22 @@ Together, these products form the industry’s most complete DevSecOps solution 
 
 #### What You’ll Find Here
 
-* **AI-Powered Search**\
+* [**AI-Powered Search**](https://knowledgebase.autorabit.com/?q=)\
   Precision answers, fast. Use our embedded AI assistant to extract exact steps, explanations, and insights from our full documentation library.
-* **Step-by-Step Product Guides**\
+* [**Release Notes**](release-notes/release-notes/)\
+  Stay informed. Track feature updates, patch releases, and roadmap-aligned improvements—built for enterprise-readiness.
+* [**Step-by-Step Product Guides**](broken-reference)\
   From initial configuration to advanced workflows—our user guides provide structured clarity for every role and function.
+* [**Troubleshooting & FAQs**](fundamentals/faq/)\
+  Self-serve solutions to unblock your team and reduce downtime.
 * **How-To Tutorials**\
   Get practical. Resolve common challenges, optimize configurations, and apply best practices confidently.
-* **Troubleshooting & FAQs**\
-  Self-serve solutions to unblock your team and reduce downtime.
-* **Release Notes**\
-  Stay informed. Track feature updates, patch releases, and roadmap-aligned improvements—built for enterprise-readiness.
 
 ***
 
 #### Can’t Find What You’re Looking For?
 
-#### _Suggest an Update via GitHub (Recommended)_
+#### [_Suggest an Update via GitHub_](https://github.com/AutoRabitOrg/knowledgebase) _(Recommended)_
 
 Have a clarification, correction, or improvement in mind? Every page in this Knowledge Base includes a **“Edit on GitHub”** button in the right-hand sidebar. This opens a GitHub Pull Request pre-linked to the exact page, so you can propose updates directly—whether it’s adding missing context, flagging outdated content, or refining explanations.
 

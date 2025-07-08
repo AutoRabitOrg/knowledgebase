@@ -2,7 +2,7 @@
 
 ## Guard Release Notes 25.1.6
 
-Release Date: 8 July 2025
+**Release Date: 25 June 2025**
 
 New Access Controls can now be created from a home page directly.
 

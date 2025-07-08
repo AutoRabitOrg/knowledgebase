@@ -1,4 +1,4 @@
-# Common Error Messages + Limitations
+# Common Error Messages
 
 ## Vault FAQs
 
@@ -177,7 +177,7 @@ Such failures occurs when such records are already present in the destination
 
 1. Click on Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. An existing automation is blocking the upsert operation. Try disabling the automation if necessary.
-3. If you would like Vault to recognize the existing records in the destination that are created/transferred outside of Vault, you can configure the unique identifier for the object and enable the option ‘Prevent duplicate record creation using unique identifiers in replicate job config to avoid Vault from attempting to recreate an existing record matching the value in the unique identifier specified.
+3. If you would like Vault to recognize the existing records in the destination that are created/transferred outside of Vault, you can configure the unique identifier for the object and enable the option ‘Prevent duplicate record creation using unique identifiers' in replicate job config to avoid Vault from attempting to recreate an existing record matching the value in the unique identifier specified.
 4. For steps on how to configure unique identifiers, go to this link:
 
 &#x20;[Unique Identifier (UID) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/configuring-vault/registering-salesforce-org/unique-identifier-uid)

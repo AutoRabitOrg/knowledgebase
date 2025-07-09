@@ -105,7 +105,7 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 1. Click on Replicate/restore job summary-> Click on logs-> view error the 'Error' column.
 2. Reduce the number of metadata components restored/replicated in each job to less than 10,000 files
 
-**RECORD-TYPE ACCESS ISSUE**
+#### **RECORD-TYPE ACCESS ISSUE**
 
 This error indicates that the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).
 

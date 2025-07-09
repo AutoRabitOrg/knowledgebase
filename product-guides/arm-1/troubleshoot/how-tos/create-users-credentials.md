@@ -56,7 +56,7 @@ Credential Scope lets you specify exactly what type of access you need.&#x20;
 
 #### HashiCorp Vault <a href="#hashicorp-vault" id="hashicorp-vault"></a>
 
-You can now choose the **`AWS Authentication`** method while adding HashiCorp credentials to ARM to generate the **`Vault Token`** automatically whenever the existing token expires. Now the user does not have to update the token manually from the application when it expires. Click [here](https://knowledgebase.autorabit.com/docs/hashicorp-vault#5-adding-hashicorp-credential-into-autorabit) for a more detailed article on this topic.
+You can now choose the **`AWS Authentication`** method while adding HashiCorp credentials to ARM to generate the **`Vault Token`** automatically whenever the existing token expires. Now the user does not have to update the token manually from the application when it expires. Click [here](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/hashicorp-vault#adding-hashicorp-credential-into-autorabit) for a more detailed article on this topic.
 
 <figure><img src="../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 

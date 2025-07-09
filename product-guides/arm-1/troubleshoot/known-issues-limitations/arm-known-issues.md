@@ -14,7 +14,7 @@ If a process is added to Salesforce's queue for more than 30 minutes during the 
 These are the known issues for vlocity in this release.
 
 **"Autodraft" or "Select Manaully" feature in EZ-Commit screen timed out**\
-For massive retrieval of [Vlocity](https://www.autorabit.com/industry-solution/healthcare-vlocity/) data packs, Auto-draft or Select Manually functionality has more chances to get timed out.
+For massive retrieval of **Vlocity** data packs, Auto-draft or Select Manually functionality has more chances to get timed out.
 
 **Logs contain "undefined message" for vlocity commits**\
 This known issue can be considered from the vlocity build tool rather than from ARM because for the log report that contains 'undefined message', such log error messages are being returned from the vlocity build tool only. Currently, [ARM](https://www.autorabit.com/products/automated-release-management/) is working with the vlocity tool to fix the issue as soon as possible. Stay tuned for more updates.

@@ -20,12 +20,15 @@ The analysis is looking for a match with a file name and the suffix entered in t
 
 #### **Error: `"Job took long. We will attempt to rerun with more memory."`**?
 
-This error may occur for projects having huge metadata.
+This error may occur when analyzing projects with very large amounts of metadata. It means the analysis job ran out of available memory.
 
-1. Increase the Project's Java heap memory size to analyze the project sources.&#x20;
-   * On the CodeScan Project page, navigate to **`Project Settings > Project Analysis`**.
-   * Click on the **`Edit Project`** button.
-   * Update the **`Project Memory`** by selecting the required memory from the dropdown. _The memory size can be overridden and increased at the organization level._
+1.  To resolve this issue:
+
+    * Action Required: Please file a support ticket with the CodeScan support team.
+    * Provide details about the project, including the project name and any relevant context about the size or complexity.
+    * The support team will assist in increasing the memory allocation at the organization level to ensure your project can be analyzed successfully.
+
+    If you continue to encounter this error after the memory has been increased, contact support for further troubleshooting.
 2. Check for the rule **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`** in your default quality profile. If available, please deactivate it. Use the steps below:
    * Create a new quality profile for Apex language.
    * Deactivate the **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`** rule.

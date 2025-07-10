@@ -2,64 +2,66 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-You can configure alerts to notify you or your team members of events that require attention based on criteria configured in an alert. They are email-based alert notifications that are sent out for records that have been added, modified, or deleted and that meet the alert conditions. The notification will include a copy of the records. When you create a notification, you set the conditions for who should receive it.
+You can configure alerts to notify you or your team members of events that require attention based on criteria configured in an alert. They are email-based alert notifications sent for records that have been added, modified, or deleted and meet the alert conditions. The notification includes a copy of the records. When you create a notification, you define who should receive it and under what conditions.
 
-### How to set up Alerts? <a href="#how-to-set-up-alerts" id="how-to-set-up-alerts"></a>
+### How to Set Up Alerts? <a href="#how-to-set-up-alerts" id="how-to-set-up-alerts"></a>
 
-Use the following steps to generate an email alert once the conditions configured is met for records in your Salesforce Org:
+Follow these steps to generate an email alert when configured conditions are met for records in your Salesforce Org:
 
 1. Login to your Vault account.
 2. From the dashboard, click **Setup** and then click on your **Salesforce Org**.
 
-<figure><img src="../../../.gitbook/assets/image (141).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (141).png" alt="Setup page for selecting Salesforce Org in Vault" width="563"><figcaption>Selecting Salesforce Org from Setup</figcaption></figure>
 
-3. Go to the **Alerts** tab, and click on **Add Alert Rules**.
+3. Navigate to the **Alerts** tab and click **Add Alert Rules**.
 
-<figure><img src="../../../.gitbook/assets/image (142).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (142).png" alt="Add Alert Rules button under Alerts tab" width="563"><figcaption>Adding alert rules</figcaption></figure>
 
-4. On the **Add Alert** page, in the **Rule Name** field, type the name of the alert.
+4. On the **Add Alert** page, enter a **Rule Name**.
 
-<figure><img src="../../../.gitbook/assets/image (143).png" alt="" width="560"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (143).png" alt="Entering rule name for alert" width="560"><figcaption>Rule name entry</figcaption></figure>
 
-5. Next, select the category that you want to associate with this alert i.e., **metadata** or **data**.
-   * **Data:** For data, select the **object(s)** (max of 10 objects) from your [Salesforce Org](https://knowledgebase.autorabit.com/vault/docs/registering-salesforce-org) and enter the **alert values**. Once the alert threshold value reaches, an email notification triggers.
+5. Choose the category: **metadata** or **data**.
+   * **Data:** Select up to 10 **object(s)** from your [Salesforce Org](https://knowledgebase.autorabit.com/vault/docs/registering-salesforce-org) and define the **alert threshold value**. Email notification triggers when this value is met.
 
-<figure><img src="../../../.gitbook/assets/image (144).png" alt="" width="554"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (144).png" alt="Data alert configuration in Vault" width="554"><figcaption>Configuring data-based alerts</figcaption></figure>
 
-* **Metadata:** For [metadata](https://www.autorabit.com/blog/the-role-of-metadata-in-devops-for-salesforce/), select the metadata members (max 10 members) from the list and enter the **alert value**.
+   * **Metadata:** Choose up to 10 [metadata members](https://www.autorabit.com/blog/the-role-of-metadata-in-devops-for-salesforce/) and define the **alert value**.
 
-<figure><img src="../../../.gitbook/assets/image (145).png" alt="" width="559"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (145).png" alt="Metadata alert configuration in Vault" width="559"><figcaption>Configuring metadata-based alerts</figcaption></figure>
 
-* Select the alert criteria, whether the records were either added, modified or deleted, or all together.
-* Vault has a preconfigured alert that is triggered daily at **01:30 AM** **UTC** to evaluate the alert rule.
-* Select the recipients for the alert. By default, the author who configured the Salesforce Org in Vault will get auto-selected, however, you can add further teammates to notify about the alert. To do so, click on **Edit** and select the recipients who all be notified after the alert criteria are met, and then click **Apply**.
+* Choose alert criteria — added, modified, deleted, or all.
+* Vault evaluates alert rules daily at **01:30 AM UTC**.
+* Select alert recipients. The default is the Salesforce Org author in Vault. You can add more teammates:
+   - Click **Edit** to choose additional recipients.
+   - Click **Apply** after selection.
 
-<figure><img src="../../../.gitbook/assets/image (146).png" alt="" width="559"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (146).png" alt="Selecting alert recipients in Vault" width="559"><figcaption>Selecting recipients</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (147).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (147).png" alt="Apply button to confirm recipient selection" width="563"><figcaption>Applying recipient selections</figcaption></figure>
 
-6. On the **Add Alert** page, review your selections, and then click **Submit**.
+6. On the **Add Alert** page, review your configuration and click **Submit**.
 
-<figure><img src="../../../.gitbook/assets/image (148).png" alt="" width="558"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (148).png" alt="Submit alert configuration in Vault" width="558"><figcaption>Submit the alert</figcaption></figure>
 
-7. The new alert appears under **Alert Rules** on the **Alert** tab.
-8. For all alert conditions that are met, that information will get displayed in the **Alert history** tab.
+7. The new alert appears under **Alert Rules** in the **Alerts** tab.
+8. Triggered alerts display under the **Alert History** tab.
 
 ### Editing Alerts <a href="#editing-alerts" id="editing-alerts"></a>
 
-You can modify the options of an alert using the **Edit Alert** wizard.
+To modify an existing alert:
 
-1. From the **Setup** Console, select your **Salesforce Org** and click **Alerts**.
-2. In the **Alert Rules** section, search for the alert that you want to modify and then click the **Edit** icon.
-3. In the **Edit Alert** window, make the necessary changes and click **Submit**.
+1. From the **Setup** Console, choose your **Salesforce Org** and click **Alerts**.
+2. In **Alert Rules**, locate the alert and click the **Edit** icon.
+3. In the **Edit Alert** window, apply necessary changes and click **Submit**.
 
-<figure><img src="../../../.gitbook/assets/image (149).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (149).png" alt="Editing an alert rule in Vault" width="563"><figcaption>Editing an alert</figcaption></figure>
 
 ### Deleting Alerts <a href="#deleting-alerts" id="deleting-alerts"></a>
 
-You can delete alerts.
+To delete an alert:
 
-1. From the **Setup** Console, select your **Salesforce Org** and click **Alerts**.
-2. In the **Alert Rules** section, search for the alert that you want to delete and then click the **Delete** icon.
+1. From the **Setup** Console, choose your **Salesforce Org** and click **Alerts**.
+2. In **Alert Rules**, locate the alert and click the **Delete** icon.
 
-<figure><img src="../../../.gitbook/assets/image (150).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (150).png" alt="Deleting an alert rule in Vault" width="563"><figcaption>Deleting an alert</figcaption></figure>

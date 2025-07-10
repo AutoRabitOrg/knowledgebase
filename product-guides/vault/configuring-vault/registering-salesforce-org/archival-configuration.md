@@ -1,50 +1,85 @@
 # Archival Configuration
 
-### Step 4: Archive Configuration <a href="#step-4-archive-configuration" id="step-4-archive-configuration"></a>
+## Step 4: Archive Configuration <a href="#step-4-archive-configuration" id="step-4-archive-configuration"></a>
 
-The archive configuring is all about viewing the components that are available in your Salesforce org and choosing the components for which you want to define the archival policy.
+This step allows you to view available components in your Salesforce Org and define an archival policy for selected components.
 
-1. In the **Salesforce Registration** summary screen, look for your Salesforce Org and click on **Add Archival Config**.
+1. In the **Salesforce Registration** summary screen, find your Salesforce Org and click **Add Archival Config**.
 
-<figure><img src="../../../../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (219).png" alt="Add Archival Configuration button in Salesforce Registration summary screen">
+  <figcaption>Launching archival configuration</figcaption>
+</figure>
 
-2. Select the components that you need to archive on the next screen.
+2. Select the components you want to archive.
 
-<figure><img src="../../../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (220).png" alt="Component selection screen for archival">
+  <figcaption>Selecting components for archival</figcaption>
+</figure>
 
-3. You can define the criteria for which the records will be fetched using **Filter**.\
-   **For example**, if you can define criteria to fetch case records that are older than 1,000 days and are in a closed state.Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. The filter icon is highlighted for easy identification of objects on which the filter is applied.
+3. Use **Filter** to define criteria for fetching records.  
+   _Example_: Fetch case records older than 1,000 days and in a closed state.  
+   - Validate the query to ensure accuracy.  
+   - Set a record count limit if needed.  
+   - Click **Apply** to confirm filter settings.
 
-<figure><img src="../../../../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (221).png" alt="Filter configuration modal showing criteria">
+  <figcaption>Define and apply filter criteria</figcaption>
+</figure>
 
-<figure><img src="../../../../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (222).png" alt="Validation of filter results">
+  <figcaption>Filter validation results</figcaption>
+</figure>
 
-4. The **Hierarchy** option will allow you to view your selected object's corresponding child objects. These child objects will also be archived once you archive their parent object. Such a hierarchy schema view can be seen using the **Hierarchy** option.\
-   You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object that will be deleted for sure if its parent object is selected for archival policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archival.
+4. Use the **Hierarchy** option to view child objects of selected parent objects.  
+   - Auto-selected child objects cannot be unchecked.  
+   - Manually choose other related objects if needed.
 
-<figure><img src="../../../../.gitbook/assets/image (223).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (223).png" alt="Hierarchy schema view of objects">
+  <figcaption>Hierarchy view of parent and child objects</figcaption>
+</figure>
 
-<figure><img src="../../../../.gitbook/assets/image (224).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (224).png" alt="Example of hierarchy dependencies">
+  <figcaption>Object dependencies displayed in schema view</figcaption>
+</figure>
 
-5. Once done, click **Save** to close the hierarchy-schema screen. Similar to **Filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which the hierarchy is selected.
+5. Click **Save** to close the hierarchy view. The icon is highlighted for objects where hierarchy is set.
 
-<figure><img src="../../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (225).png" alt="Hierarchy icon highlighted">
+  <figcaption>Hierarchy enabled indicator</figcaption>
+</figure>
 
-6. Click on **Next** which will take you to the schedule archival screen to plan the archive operation.&#x20;
+6. Click **Next** to proceed to the archival schedule screen.
 
-### **Schedule Archive** <a href="#schedule-archive" id="schedule-archive"></a>
+---
 
-1.  On the schedule archive screen, do the following:
+## Schedule Archive <a href="#schedule-archive" id="schedule-archive"></a>
 
-    * Give the process a **name**.
-    * Select the **email notification** checkbox to receive an email notification whenever objects are being deleted from your Salesforce Org. If unchecked, data will automatically be deleted without any prior notification.
-    * Select the date and time interval for the archival process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, or monthly or input any duration manually.
-    * You can specify how long you want to retain the archived data under the **Archive Retention period** section.
-    * Specify the **batch size** for components to retrieve records. The max batch size you can set per batch is **10,000** records. This option is useful for running large jobs exceeding normal processing limits. Per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records in batches is your best solution.
-    * **Enable serial mode for Bulk API:** Serial mode processes batch one at a time; however, it increases the processing time for a load.
+1. On the schedule archive screen, complete the following:
 
-    <figure><img src="../../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+- **Process Name**: Enter a name.
+- **Email Notification**: Enable this to receive notifications before deletions.
+- **Schedule**: Define the archival frequency (daily, weekly, monthly, or custom).
+- **Archive Retention Period**: Set the duration for which data is retained.
+- **Batch Size**: Maximum batch size is **10,000 records** per batch.
+- **Enable Serial Mode for Bulk API**: Activates single-batch processing (slower but reliable).
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (226).png" alt="Archive scheduling options screen">
+  <figcaption>Define schedule and performance settings</figcaption>
+</figure>
+
 2. Click **Save Config**.
-3. A summary of all the objects, filters, and criteria selected or applied will be displayed before your archive policy is configured. Click **Save**.
+3. Review the summary of your selected objects, filters, and policies.
+4. Click **Save** to complete archival configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (227).png" alt="Summary screen of archival configuration">
+  <figcaption>Final summary before saving archival settings</figcaption>
+</figure>

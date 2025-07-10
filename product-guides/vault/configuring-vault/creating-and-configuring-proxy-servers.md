@@ -1,7 +1,7 @@
 # Creating and Configuring Proxy Servers
 
 {% hint style="info" %}
-**Note:** The proxy configuration settings apply to **on-premise users** only. This feature is currently **not supported for shared instance users**.
+**Note:** The proxy configuration settings apply to **on-premises users** only. This feature is currently **not supported for shared instance users**.
 {% endhint %}
 
 ### Introduction <a href="#introduction" id="introduction"></a>
@@ -12,7 +12,7 @@ Vault includes proxy details in the request headers when connecting to external 
 
 ### Permissions <a href="#permissions" id="permissions"></a>
 
-- Applicable **only for on-premise users**. Not supported for shared instance users.
+- Applicable **only for on-premises users**. Not supported for shared instance users.
 - Only **System Admins** can configure proxy settings.
 - Proxy can be set up **only for AWS storage environments**.
 

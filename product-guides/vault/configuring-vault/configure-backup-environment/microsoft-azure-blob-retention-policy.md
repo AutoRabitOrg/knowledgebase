@@ -1,102 +1,248 @@
 # Microsoft Azure Blob Retention Policy
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
-Azure Blob retention policy management using WebAPI needs to be created using the following details to successfully hit an API endpoint and complete a retention policy update/create.&#x20;
+To manage Azure Blob retention policies via WebAPI, you must obtain the following credentials:
 
 1. **Tenant ID**
 2. **Client ID**
-3. **Client secret**
+3. **Client Secret**
 4. **Access Token**
 
-### **What Is a Tenant and How Do I Get a Tenant ID in Azure?** <a href="#what-is-tenant-and-how-to-get-a-tenant-id-in-azure" id="what-is-tenant-and-how-to-get-a-tenant-id-in-azure"></a>
+These values are required to authenticate and interact with Azure endpoints for retention policy operations.
 
-A tenant represents your organization and helps you manage a specific instance of Microsoft cloud services for your internal and external users.
+---
 
-Log in to the Azure portal and navigate to Entra ID and choose the properties on the left side pane. On the right side pane, you will get your account-related information along with a field named **Directory ID**. Under that field, you will have a text box with an alphanumeric value that can be copied from the text box. This is your Tenant ID.  In this case, the **Tenant ID** is the **Directory ID**.
+## What Is a Tenant and How to Get a Tenant ID in Azure? <a href="#what-is-tenant-and-how-to-get-a-tenant-id-in-azure" id="what-is-tenant-and-how-to-get-a-tenant-id-in-azure"></a>
 
-If you are doing a new setup and do not have any existing tenant, then follow the steps below to create a new tenant:
+A tenant represents your organization in Microsoft cloud services.
 
-1. Login to Azure portal
-2. Select **Create a resource** from the portal.
+To get your **Tenant ID**:
+1. Log in to the [Azure portal](https://portal.azure.com/).
+2. Go to **Entra ID > Properties**.
+3. Copy the value from the **Directory ID** field — this is your Tenant ID.
 
-<figure><img src="../../../../.gitbook/assets/image (121) (1).png" alt=""><figcaption></figcaption></figure>
+To create a new tenant:
+1. Select **Create a resource**.
+2. Search for and select **Entra ID**.
+3. Provide a name for your new directory.
+4. A **Tenant ID** will be auto-generated.
 
-3. Search & choose **Entra ID.**
-4. Create a directory by providing a name.&#x20;
-5. A **Tenant ID** is automatically created.
+<figure>
+  <img src="../../../../.gitbook/assets/image (121) (1).png" alt="Azure portal - create a new Entra ID tenant">
+  <figcaption>Create New Tenant</figcaption>
+</figure>
 
-### **What is a client ID and how do I create one?** <a href="#what-is-client-id-and-how-to-create-it" id="what-is-client-id-and-how-to-create-it"></a>
+---
 
-Client ID is nothing but Application ID that uses to associate our application with Azure AD at runtime. To delegate Identity and Access Management functions to Entra ID, an application must be registered with an Azure AD tenant. When you register your application with Entra ID, you are creating an identity configuration for your application that allows it to integrate with Entra ID.
+## What Is a Client ID and How to Create It? <a href="#what-is-client-id-and-how-to-create-it" id="what-is-client-id-and-how-to-create-it"></a>
 
-### **App Registration process** <a href="#app-registration-process" id="app-registration-process"></a>
+A **Client ID** (or Application ID) identifies your app to Azure AD.
 
-1. Go to your directory and choose **App registrations** on the left pane and select **New registration** in the right pane.
+To generate it:
+1. Go to your Azure directory.
+2. Click **App registrations > New registration**.
 
-<figure><img src="../../../../.gitbook/assets/image (125) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (125) (1).png" alt="New App Registration" width="563">
+  <figcaption>App Registration</figcaption>
+</figure>
 
-2. Register an application by choosing the **single-tenant** option.
+3. Select the **Single-tenant** option and click **Register**.
 
-<figure><img src="../../../../.gitbook/assets/image (126) (1).png" alt="" width="544"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (126) (1).png" alt="Single tenant registration" width="544">
+  <figcaption>Choose Single-Tenant</figcaption>
+</figure>
 
-3. Click **Register**.&#x20;
-4. Once the app is registered, choose **Authentication** on the left side pane and feed in-app type as a web app and configure the details in the right pane.
+4. Go to **Authentication**, select app type as **Web**, and configure redirect URI.
 
-<figure><img src="../../../../.gitbook/assets/image (127).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (127).png" alt="Authentication tab configuration" width="563">
+  <figcaption>Configure Authentication</figcaption>
+</figure>
 
-<figure><img src="../../../../.gitbook/assets/image (128).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (128).png" alt="Add redirect URI" width="563">
+  <figcaption>Web Redirect URI</figcaption>
+</figure>
 
-5. **“MyTestAPP”** Application ID from the Azure portal is successfully created.
+5. The app will now show an **Application ID** — this is your **Client ID**.
 
-<figure><img src="../../../../.gitbook/assets/image (129).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (129).png" alt="Application ID shown in portal" width="563">
+  <figcaption>Client ID (Application ID)</figcaption>
+</figure>
 
-### **Add a Client Secret** <a href="#add-a-client-secret" id="add-a-client-secret"></a>
+---
 
-The client secret, known also as an _application password_, is a string value your app can use in place of a certificate to identify itself.
+## Add a Client Secret <a href="#add-a-client-secret" id="add-a-client-secret"></a>
 
-1. Select your application in **App registrations** in the Azure portal.
-2. Select **Certificates & secrets > New client secret**.
+To create a **Client Secret**:
+1. Open your app under **App registrations**.
+2. Go to **Certificates & secrets > New client secret**.
 
-<figure><img src="../../../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (130).png" alt="New Client Secret">
+  <figcaption>Create Client Secret</figcaption>
+</figure>
 
-3. Add a description for your client secret.
-4. Select a duration.
-5. Select **Add**.
-6. Copy the Client Secret ID and Value- it's _never displayed again_ after you leave this page. The Key-Value along with the Secret ID is required for sign-in the application.
+3. Enter a description, select a duration, and click **Add**.
+4. Copy the **Client Secret ID** and **Value** — they are shown only once.
 
-<figure><img src="../../../../.gitbook/assets/image (131).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (131).png" alt="Secret ID and Value" width="563">
+  <figcaption>Client Secret Values</figcaption>
+</figure>
 
-7. Next, grant storage container access to the app. To do so, go to **IAM** and **“Add role assignment”** for the app.
+5. Go to **IAM** settings and assign roles to your app via **Add role assignment**.
 
-<figure><img src="../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="../../../../.gitbook/assets/image (132).png" alt="Add IAM Role">
+  <figcaption>Role Assignment</figcaption>
+</figure>
 
-### Generate Access Token <a href="#generate-access-token" id="generate-access-token"></a>
+---
 
-To generate the access token, first, you need to get an authorization code. You need to provide all the above-acquired IDs and hit the API endpoint for generating the authorization code.
+## Generate Access Token <a href="#generate-access-token" id="generate-access-token"></a>
 
-**Example:**
+To generate an **Access Token**, follow these steps:
 
-https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
+### Step 1: Request Authorization Code
 
-client\_id=6731de76-14a6-49ae-97bc-6eba6914391e
+Send a GET request:
 
-\&response\_type=code
+```http
+GET https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
+client_id=YOUR_CLIENT_ID
+&response_type=code
+&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+&response_mode=query
+&scope=openid%20offline_access%20https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
+&state=12345
+&code_challenge=YOUR_CODE_CHALLENGE
+&code_challenge_method=S256
+# Microsoft Azure Blob Retention Policy
 
-\&redirect\_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+## Overview <a href="#overview" id="overview"></a>
 
-\&response\_mode=query
+To manage Azure Blob retention policies via WebAPI, you must obtain the following credentials:
 
-\&scope=openid%20offline\_access%20https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
+1. **Tenant ID**
+2. **Client ID**
+3. **Client Secret**
+4. **Access Token**
 
-\&state=12345
+These values are required to authenticate and interact with Azure endpoints for retention policy operations.
 
-\&code\_challenge=YTFjNjI1OWYzMzA3MTI4ZDY2Njg5M2RkNmVjNDE5YmEyZGRhOGYyM2IzNjdmZWFhMTQ1ODg3NDcxY2Nl
+---
 
-\&code\_challenge\_method=S256
+## What Is a Tenant and How to Get a Tenant ID in Azure? <a href="#what-is-tenant-and-how-to-get-a-tenant-id-in-azure" id="what-is-tenant-and-how-to-get-a-tenant-id-in-azure"></a>
 
-#### Request for Access Token <a href="#request-for-access-token" id="request-for-access-token"></a>
+A tenant represents your organization in Microsoft cloud services.
 
-Once you acquire an authorization code and have been granted permission by the user, you can redeem the code for an access token to the desired resource. Do this by sending a POST request to the token endpoint.
+To get your **Tenant ID**:
+1. Log in to the [Azure portal](https://portal.azure.com/).
+2. Go to **Entra ID > Properties**.
+3. Copy the value from the **Directory ID** field — this is your Tenant ID.
 
-For more information, please visit the following link and see the documentation provided by Microsoft at [https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id).
+To create a new tenant:
+1. Select **Create a resource**.
+2. Search for and select **Entra ID**.
+3. Provide a name for your new directory.
+4. A **Tenant ID** will be auto-generated.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (121) (1).png" alt="Azure portal - create a new Entra ID tenant">
+  <figcaption>Create New Tenant</figcaption>
+</figure>
+
+---
+
+## What Is a Client ID and How to Create It? <a href="#what-is-client-id-and-how-to-create-it" id="what-is-client-id-and-how-to-create-it"></a>
+
+A **Client ID** (or Application ID) identifies your app to Azure AD.
+
+To generate it:
+1. Go to your Azure directory.
+2. Click **App registrations > New registration**.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (125) (1).png" alt="New App Registration" width="563">
+  <figcaption>App Registration</figcaption>
+</figure>
+
+3. Select the **Single-tenant** option and click **Register**.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (126) (1).png" alt="Single tenant registration" width="544">
+  <figcaption>Choose Single-Tenant</figcaption>
+</figure>
+
+4. Go to **Authentication**, select app type as **Web**, and configure redirect URI.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (127).png" alt="Authentication tab configuration" width="563">
+  <figcaption>Configure Authentication</figcaption>
+</figure>
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (128).png" alt="Add redirect URI" width="563">
+  <figcaption>Web Redirect URI</figcaption>
+</figure>
+
+5. The app will now show an **Application ID** — this is your **Client ID**.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (129).png" alt="Application ID shown in portal" width="563">
+  <figcaption>Client ID (Application ID)</figcaption>
+</figure>
+
+---
+
+## Add a Client Secret <a href="#add-a-client-secret" id="add-a-client-secret"></a>
+
+To create a **Client Secret**:
+1. Open your app under **App registrations**.
+2. Go to **Certificates & secrets > New client secret**.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (130).png" alt="New Client Secret">
+  <figcaption>Create Client Secret</figcaption>
+</figure>
+
+3. Enter a description, select a duration, and click **Add**.
+4. Copy the **Client Secret ID** and **Value** — they are shown only once.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (131).png" alt="Secret ID and Value" width="563">
+  <figcaption>Client Secret Values</figcaption>
+</figure>
+
+5. Go to **IAM** settings and assign roles to your app via **Add role assignment**.
+
+<figure>
+  <img src="../../../../.gitbook/assets/image (132).png" alt="Add IAM Role">
+  <figcaption>Role Assignment</figcaption>
+</figure>
+
+---
+
+## Generate Access Token <a href="#generate-access-token" id="generate-access-token"></a>
+
+To generate an **Access Token**, follow these steps:
+
+### Step 1: Request Authorization Code
+
+Send a GET request:
+
+```http
+GET https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
+client_id=YOUR_CLIENT_ID
+&response_type=code
+&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
+&response_mode=query
+&scope=openid%20offline_access%20https%3A%2F%2Fgraph.microsoft.com%2Fmail.read
+&state=12345
+&code_challenge=YOUR_CODE_CHALLENGE
+&code_challenge_method=S256

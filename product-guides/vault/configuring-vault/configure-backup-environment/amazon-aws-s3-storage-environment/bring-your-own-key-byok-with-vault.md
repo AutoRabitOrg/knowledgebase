@@ -1,30 +1,336 @@
-# Bring your own Key (BYOK) with Vault
+# Bring Your Own Key (BYOK) with Vault
 
-### **Overview** <a href="#overview" id="overview"></a>
+## **Overview** <a href="#overview" id="overview"></a>
 
-When you create a key, you might want to "bring your own key" (BYOK) if you need more control over the source of the key material or if you want to use the same keys that you already use for encryption purposes. Using [Vault](https://www.autorabit.com/products/vault-data-backup-recovery/), you can bring your own encrypted keys from Amazon Web Services Key Management Services (AWS KMS).
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
 
-You will be able to further protect your data by securely creating and managing your own encryption keys, separated from the AWS KMS provider where your sensitive data are being hosted.
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
 
-### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
 
-To bring your own key, you must first create an AWS KMS customer master key (CMK) from your AWS account. To do so,
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
 
-1. Login to your AWS account.
-2. Go to the **Key Management Service (KMS)**.
-3. Click on **Create a Key** to create your own key.
-4. For more information, refer to the article: [https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
 
-### Using Key to configure AWS-KMS in Vault <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+---
 
-1. Log in to your Vault account.
-2. Go to the **Settings** module and click on the **Backup Environment** tab.
-3. Under **Storage Environment**, select the Storage Type as **AWS S3**.
-4. Select the **Region**. Make sure the region in Vault matched the region selected in AWS KMS while creating the key.
-5. Select the checkbox: **Automatically Encrypt data stored in Vault**.
-6. Choose the second option i.e., **AWS-KMS**.
-7. Enter the **Master Key** detail that you have created earlier.
-8. Select the **AR Vault hosted backup environment** checkbox.
-9. Click **Save** **Settings**.
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (97) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>
+# Bring Your Own Key (BYOK) with Vault
+
+## **Overview** <a href="#overview" id="overview"></a>
+
+Using Vault, you can implement **Bring Your Own Key (BYOK)** by importing encryption keys from **Amazon Web Services Key Management Service (AWS KMS)**. This feature is ideal for customers who want enhanced control over their encryption process — particularly for meeting internal security policies and regulatory requirements.
+
+BYOK allows you to:
+- Maintain ownership and lifecycle control over encryption keys.
+- Leverage AWS KMS for encryption but retain exclusive control over key material.
+- Enforce data sovereignty by managing keys independently of data storage.
+
+## **Before You Begin** <a href="#before-you-begin" id="before-you-begin"></a>
+
+Before configuring BYOK in Vault, you must create a **Customer Master Key (CMK)** in your AWS account.
+
+### Steps to create an AWS KMS CMK:
+1. Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+2. Navigate to **Key Management Service (KMS)**.
+3. Click **Create a Key** and follow the wizard to generate your CMK.
+4. For detailed guidance, refer to the AWS documentation:  
+   [Getting Started with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html)
+
+---
+
+## **Using Key to Configure AWS-KMS in Vault** <a href="#using-key-to-configure-awskms-in-vault" id="using-key-to-configure-awskms-in-vault"></a>
+
+To use the key within Vault:
+
+1. Log in to your **Vault** account.
+2. Go to **Settings > Backup Environment**.
+3. Under **Storage Environment**, select **AWS S3** as the storage type.
+4. Choose the **Region** — this must match the region used during key creation in AWS KMS.
+5. Enable the checkbox: **Automatically Encrypt data stored in Vault**.
+6. Select **AWS-KMS** as the encryption method.
+7. Enter your **Master Key** (CMK ARN) from AWS KMS.
+8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
+9. Click **Save Settings**.
+
+<figure>
+  <img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563">
+  <figcaption>Vault configuration for AWS-KMS BYOK setup</figcaption>
+</figure>

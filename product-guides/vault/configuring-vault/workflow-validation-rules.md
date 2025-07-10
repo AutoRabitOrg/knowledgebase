@@ -12,7 +12,7 @@ A validation rule consists of:
 - **Error Message** — Displayed to users when the validation rule fails.
 - **Location** — Defines where the error message appears (either at the top of the page or below the relevant field).
 
-### How Salesforce processes validation rules? <a href="#how-salesforce-processes-validation-rules" id="how-salesforce-processes-validation-rules"></a>
+### How Salesforce processes validation rules <a href="#how-salesforce-processes-validation-rules" id="how-salesforce-processes-validation-rules"></a>
 
 Salesforce processes rules in the following order:
 

@@ -1,35 +1,40 @@
 # Unique Identifier (UID)
 
-### What is a Unique Identifier (UID) in Vault? <a href="#what-is-a-unique-identifier-uid-in-vault" id="what-is-a-unique-identifier-uid-in-vault"></a>
+## What is a Unique Identifier (UID) in Vault? <a href="#what-is-a-unique-identifier-uid-in-vault" id="what-is-a-unique-identifier-uid-in-vault"></a>
 
-A unique identifier (UID) is an identifier that marks that particular record as unique from every other record. It allows the record to be referenced in Vault without confusion or unintentional overwriting from other records.
+A Unique Identifier (UID) is a field that distinguishes one record from all others in Vault. It enables Vault to accurately reference, map, and synchronize individual records between Salesforce Orgs—preventing confusion or accidental duplication during operations.
 
-### Why UID is necessary for each record? <a href="#why-uid-is-necessary-for-each-record" id="why-uid-is-necessary-for-each-record"></a>
+## Why UID is Necessary for Each Record <a href="#why-uid-is-necessary-for-each-record" id="why-uid-is-necessary-for-each-record"></a>
 
-With the current implementation of Vault, when records are already available in a sandbox after the refresh, Vault doesn't have a way to identify the records in the destination since the mapping between source and destination records won't be available with Vault to uniquely identify the records in the destination.
+Vault cannot inherently track records between source and destination orgs—especially post-sandbox refresh—since the internal record mapping is not preserved. A UID allows Vault to identify and match records between environments, ensuring continuity and preventing record duplication during replication or restoration.
 
-### What problem we are solving here? <a href="#what-problem-we-are-solving-here" id="what-problem-we-are-solving-here"></a>
+## What Problem Are We Solving? <a href="#what-problem-we-are-solving-here" id="what-problem-we-are-solving-here"></a>
 
-With this feature, the user can configure a unique identifier for each object in the Salesforce org. We will be able to replicate the data between orgs by uniquely identifying similar records between the orgs, thereby avoiding the recreation of duplicate records in the destination.
+This feature enables configuration of unique identifiers per object in Salesforce, facilitating:
 
-### Configuring Unique Identifier <a href="#configuring-unique-identifier" id="configuring-unique-identifier"></a>
+- Accurate data replication across Orgs.
+- Avoidance of duplicate record creation.
+- Preservation of object relationships across environments.
 
-#### Mapping unique id for a specific object <a href="#mapping-unique-id-for-a-specific-object" id="mapping-unique-id-for-a-specific-object"></a>
+## Configuring Unique Identifier <a href="#configuring-unique-identifier" id="configuring-unique-identifier"></a>
 
-1. In the **Vault** application, go to **Setup** and choose your Salesforce Org.
-2. Go to the **Unique Identifiers** tab. This will show all the objects and their unique identifiers on the screen.
-3. Click on the **Map** button beside the object to show all the fields of the object in your Salesforce Org along with their type, and the unique fields.
-4. Select the fields required and click on **Save**. You will redirect to the previous screen to show the fields selected by the user mapped and populated beside the corresponding object.
+### Mapping Unique ID for a Specific Object <a href="#mapping-unique-id-for-a-specific-object" id="mapping-unique-id-for-a-specific-object"></a>
 
-#### Auto-Mapping unique ids for a specific object <a href="#automapping-unique-ids-for-a-specific-object" id="automapping-unique-ids-for-a-specific-object"></a>
+1. In **Vault**, navigate to **Setup**, then select your **Salesforce Org**.
+2. Go to the **Unique Identifiers** tab to view all objects and existing UID mappings.
+3. Click **Map** next to the desired object. This will display all fields available in that object, including field types and UID eligibility.
+4. Select the appropriate field(s) as the unique identifier(s).
+5. Click **Save**. The screen will update with your selection mapped next to the corresponding object.
 
-1. In the **Unique Identifiers** screen, click on the **Auto-Map** button.
-2. Vault will fetch the info of the fields that are unique in Salesforce but not auto-increment to map automatically with all the objects in the org.
-3. This is time-taking process, the user will be notified once the auto-map process is done.
+### Auto-Mapping Unique IDs for Specific Objects <a href="#automapping-unique-ids-for-a-specific-object" id="automapping-unique-ids-for-a-specific-object"></a>
 
-#### Cloning same config to multiple orgs <a href="#cloning-same-config-to-multiple-orgs" id="cloning-same-config-to-multiple-orgs"></a>
+1. From the **Unique Identifiers** tab, click **Auto-Map**.
+2. Vault will scan and auto-select non-auto-increment unique fields across all objects.
+3. This may take some time; Vault notifies the user upon completion.
 
-1. In the **Unique Identifiers** screen, click on the **Clone to another Org** button.
-2. This will show a popup with the Salesforce Org registered in Vault in dropdown with at least one object mapped.
-3. Click on **Clone**.
-4. This will check for the availability of the same objects and fields in the new org and perform the same mappings as the source.
+### Cloning the Same UID Config to Multiple Orgs <a href="#cloning-same-config-to-multiple-orgs" id="cloning-same-config-to-multiple-orgs"></a>
+
+1. In the **Unique Identifiers** tab, click **Clone to Another Org**.
+2. A dropdown will display all Salesforce Orgs registered in Vault that have at least one UID mapping configured.
+3. Select the destination Org and click **Clone**.
+4. Vault will check for the presence of identical objects and fields in the target Org and replicate the UID mappings.

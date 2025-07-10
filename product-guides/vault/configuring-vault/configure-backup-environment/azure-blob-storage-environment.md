@@ -1,6 +1,6 @@
 # Azure Blob Storage Environment
 
-### Customer Hosted Storage Environment <a href="#customer-hosted-storage-environment" id="customer-hosted-storage-environment"></a>
+### Customer-Hosted Storage Environment <a href="#customer-hosted-storage-environment" id="customer-hosted-storage-environment"></a>
 
 To utilize Azure Blob as your storage medium for backing up metadata and data objects, follow these steps to configure it within the Vault application:
 

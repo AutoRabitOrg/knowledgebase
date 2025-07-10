@@ -1,5 +1,21 @@
 # ARM Release Notes
 
+## ARM 25.3.1 Release Notes
+
+**Release Date: 13 July 2025**
+
+Highlights: Stability and accuracy improvements across EZ Commit, Branching Baseline, and CI Jobs.
+
+* **EZ Commit** – Deployment-validation reports older than 30 days were missing in EZ Commit. It's now available.\
+
+* **EZ Commit** – Malformed XML errors when committing permission-set files are resolved by refining the copy logic.\
+
+* **Branching Baseline** – UNKNOWN\_EXCEPTION errors during batch processing eliminated by removing the parent Workflow entry and explicitly adding the child Workflow metadata types (WorkflowTask, WorkflowFieldUpdate, WorkflowAlert, WorkflowFlowAutomation, WorkflowKnowledgePublish, WorkflowOutboundMessage, WorkflowRule, WorkflowSend) to metadatatypes.json.\
+
+* **CI Jobs** – Object-level permissions in permission sets were unintentionally wiped during CI Job deployments. Back-end logic now preserves object permissions while propagating FLS changes.
+
+***
+
 ## ARM 25.2.12 Release Notes
 
 **Release Date**: **6 July 2025**\

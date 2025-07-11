@@ -4,64 +4,58 @@
 
 ### Overview
 
-This feature empowers users in tracking and terminating stale jobs in Vault. A long-running job that does not have any updates in its respective files in the back end for a period of 4 days is considered a ‘Stale Job.’
+The **Stale Jobs** feature in Vault enables administrators to monitor and manage jobs that have stalled during execution. Any job that remains inactive—i.e., without backend file updates—for **four consecutive days** is flagged as a *Stale Job*.
+
+---
 
 ### Introduction
 
-Vault handles stale jobs through a combination of Cron Job and a Stale Jobs report.
+Vault manages stale jobs using a two-pronged approach:
 
-1. A cron job is scheduled to run once every week to identify and kill long-running stale jobs.
-2. The Admin can select the required jobs from among the list of jobs displayed under the stale jobs module.
-3. Once the Admin selects the required jobs, the admin can continue to terminate the selected jobs using the “Terminate” button on the page.
-4. If the Admin terminates a single job, then a notification email from the respective module will be triggered to the admin and the user who created the job.
-5. If the Admin terminates a group of jobs, then a consolidated job termination email will be sent to the admin and the user who created the job.
+1. **Automated Cron Job**: Scheduled weekly to identify and terminate long-running inactive jobs.
+2. **Stale Jobs Interface**: Allows admins to manually view, select, and terminate stale jobs.
 
-### Detailed Instructions
+Key behaviors:
+- Admins can manually terminate one or more stale jobs.
+- For a single job, a **termination notification** is sent to both the admin and the job creator.
+- For multiple jobs, a **consolidated notification** is delivered.
 
-Follow these step-by-step instructions to access the “Stale Jobs” module in the Vault application.
+---
 
-1\.      Select an Org from the available list of Orgs.
+### How to Access the Stale Jobs Module
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+1. **Select the target Org** from the list of available organizations.
 
-2. On selecting the ORG, the user will see displayed the list of jobs from the respective modules.&#x20;
-3. The user can toggle between different tabs to view jobs from different modules.
+   ![Select Org](../../../../.gitbook/assets/image%20(2)%20(1)%20(1)%20(1)%20(2).png)
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Backup</p></figcaption></figure>
+2. A list of jobs from various modules (Backup, Restore, Replicate, Archive) will be displayed for the selected Org.
+3. Navigate between module tabs to review stale jobs in each category:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Restore</p></figcaption></figure>
+   - **Backup Jobs**  
+     ![Backup Tab](../../../../.gitbook/assets/image%20(1)%20(1)%20(1)%20(1)%20(2).png)
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption><p>Replicate</p></figcaption></figure>
+   - **Restore Jobs**  
+     ![Restore Tab](../../../../.gitbook/assets/image%20(2)%20(1)%20(1)%20(1)%20(2)%20(1).png)
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption><p>Archive</p></figcaption></figure>
+   - **Replicate Jobs**  
+     ![Replicate Tab](../../../../.gitbook/assets/image%20(3)%20(1)%20(1)%20(2).png)
 
-4. The admin can select the jobs and terminate the required long-running stale jobs from the respective modules.
-5. Once the jobs are terminated, a notification will be sent to the admin and the respective user who created the jobs.
-   * **Single Job Termination:**
-     * The user will receive the standard notification related to that module with the addition of a new field, “Terminate Reason,” which was added to the email templates for Backup, Restore, Replicate, and Archive.
-   * **Multiple Jobs for Termination:**
-     * As the user terminates a list of jobs, the user will receive a consolidated email listing the jobs terminated.
+   - **Archive Jobs**  
+     ![Archive Tab](../../../../.gitbook/assets/image%20(4)%20(1)%20(1)%20(2).png)
 
-<figure><img src="../../../../.gitbook/assets/image (5) (5).png" alt=""><figcaption></figcaption></figure>
+---
 
-&#x20;
+### Terminating Stale Jobs
 
-&#x20;
+4. Select the jobs you wish to terminate and click **Terminate**.
 
-&#x20;
+5. **Notifications:**
+   - **Single Job Termination**:  
+     - An email is sent from the relevant module.
+     - The message includes a new field: `Terminate Reason`.
+   - **Multiple Job Termination**:  
+     - A consolidated email lists all terminated jobs.
 
-&#x20;
+   ![Termination Notification](../../../../.gitbook/assets/image%20(5)%20(5).png)
 
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
-
-&#x20;
+This feature ensures system hygiene and prevents inactive jobs from consuming unnecessary system resources.

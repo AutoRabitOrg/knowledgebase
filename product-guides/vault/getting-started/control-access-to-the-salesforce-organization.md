@@ -1,19 +1,28 @@
 # Control Access to the Salesforce Organization
 
-The org administrator can restrict their users to access only those Salesforce orgs which has been authorized to them. Users will be able to perform Vault operations in their Salesforce org based on their org access, such as backup, restore, replicate, comparison, and archival.
+Vault allows administrators to restrict user access to specific Salesforce orgs registered within the account. Based on access permissions, users can perform Vault operations such as **backup**, **restore**, **replication**, **comparison**, and **archival** on authorized Salesforce orgs only.
 
-The **Enable org. access control** toggle in the **Manage Users** page is switched on by default. This indicates that the admin has the org access control permission and can specify which users have access to which Salesforce org(s) in the Vault account. If the toggle is turned off, all users in the Vault account will have access to all registered orgs.
+## Org Access Control Overview
 
-<figure><img src="../../../.gitbook/assets/image (86) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **Enable Org. Access Control** toggle on the **Manage Users** page is **enabled by default**. This setting grants the administrator the ability to define which users can access specific Salesforce orgs.
 
-#### Enable org. access control is turned 'On' <a href="#enable-org-access-control-is-turned-on" id="enable-org-access-control-is-turned-on"></a>
+If this toggle is **disabled**, all users in the Vault account will have **unrestricted access** to all registered Salesforce orgs.
 
-1. On the **Add User** screen, the **Salesforce Orgs** field is enabled; the org admin must select Salesforce orgs when registering a new user with the Vault account.
-2. Users will have access to the Salesforce orgs that the org admin has enabled.
-3. Users can only perform Vault operations in Salesforce orgs to which they have been granted access.
+<figure><img src="../../../.gitbook/assets/image (86) (1) (1) (1) (1) (1).png" alt="Enable Org Access Control Toggle" /></figure>
 
-#### Enable org. access control is turned 'Off' <a href="#enable-org-access-control-is-turned-off" id="enable-org-access-control-is-turned-off"></a>
+---
 
-1. All users in the Vault account will have access to all registered Salesforce orgs.
-2. User will have privilege to choose orgs whether or not registered by him to carry out the Vault operation.
-3. The **Salesforce Orgs List** shows all of the registered orgs that have been added to the Vault account to date.
+## When "Enable Org. Access Control" Is Turned **On** <a href="#enable-org-access-control-is-turned-on" id="enable-org-access-control-is-turned-on"></a>
+
+1. On the **Add User** screen, the **Salesforce Orgs** field becomes active.
+2. The administrator must select one or more Salesforce orgs for the new user.
+3. Users will have **access only to the Salesforce orgs explicitly granted** by the administrator.
+4. Users are limited to performing Vault operations within those assigned orgs.
+
+---
+
+## When "Enable Org. Access Control" Is Turned **Off** <a href="#enable-org-access-control-is-turned-off" id="enable-org-access-control-is-turned-off"></a>
+
+1. All users in the Vault account can access **all registered Salesforce orgs**.
+2. Users can perform Vault operations on **any org**, regardless of who registered it.
+3. The **Salesforce Orgs List** will display **every org** currently registered in Vault for all users.

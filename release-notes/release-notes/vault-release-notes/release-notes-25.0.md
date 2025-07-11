@@ -1,5 +1,16 @@
 # Release Notes 25.0
 
+## Vault Release Notes 25.1.4
+
+*   **Flexible Scheduling Enhancements**
+
+    The scheduling functionality has been enhanced to support a wider range of intervals, providing greater flexibility in configuring backup and automation schedules.
+*   **Deleted Records Handling**
+
+    A new option has been introduced to **exclude records in the Recycle Bin** from processing. This helps streamline operations and focus only on active data.
+* **GDPR Compliance for Deleted Records**
+* A fix has been implemented to ensure that **opted-out deleted records** are no longer visible in Vault, aligning with GDPR compliance and privacy expectations.
+
 ## Vault Release Notes 25.1.3
 
 **Release Notes:** July 09, 2025

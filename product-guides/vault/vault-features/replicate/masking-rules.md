@@ -1,28 +1,39 @@
 # Masking Rules
 
-## Masking Rules
+Vault allows users to define data masking rules at the organization level, enabling secure data anonymization during operations such as backup or replication.
 
-1. The user can create the ‘Masking Rules’ through the “New Masking Rules” option.
-2. The user has to select the ORG for which the rule is being created, as shown below.
+---
 
-<figure><img src="../../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+## Creating Masking Rules
 
-3. On clicking the “Select Orgs” option, the user can look at the list of ORGs available.
-4. By clicking the “New Masking Rules” button, the user can open the “Masking Rule” window.
+To create a new masking rule:
 
-<figure><img src="../../../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to the **Masking Rules** section and click **New Masking Rules**.
+2. Select the **Salesforce Org** for which the masking rule will be created.
 
-5. The user has to input all the required details and click **save** to create the rules.
-6. The rules created here will be globally available at the ORG level for users to select during the creation of config(s).
+![Select Org](../../../../.gitbook/assets/image%20(121).png)
 
-<figure><img src="../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+3. Click **Select Orgs** to view and choose from the available orgs.
+4. Click **New Masking Rules** to open the **Masking Rule** creation dialog.
 
-7. On inputting the required details, the user can click on save to save the rule, and the user will receive the following notification.
+![New Rule Window](../../../../.gitbook/assets/image%20(122).png)
 
-<figure><img src="../../../../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
+5. Fill in all required details in the rule creation form and click **Save**.
 
-8. On clicking “OK,” the rule created will be available in the Masking Rules section.
+![Rule Creation Form](../../../../.gitbook/assets/image%20(123).png)
 
-<figure><img src="../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
+6. Upon successful creation, a confirmation notification will appear.
 
-9. The user can clone the rules created. This will help them avoid future redundant effort.
+![Save Notification](../../../../.gitbook/assets/image%20(124).png)
+
+7. Click **OK**. The newly created rule will now appear in the **Masking Rules** list.
+
+![Rules List](../../../../.gitbook/assets/image%20(125).png)
+
+8. Created rules are globally accessible at the org level and can be selected during config creation.
+
+---
+
+## Cloning Masking Rules
+
+- Users can clone existing masking rules to streamline future configurations and reduce repetitive effort.

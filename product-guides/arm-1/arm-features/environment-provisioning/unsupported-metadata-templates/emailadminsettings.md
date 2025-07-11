@@ -1,27 +1,49 @@
 # Email Admin Settings
 
-To create this template, follow the below steps:
+**Email Administration in Salesforce r**epresents an organization’s email administration settings, including email deliverability, security compliance, relay configurations, and system notifications.&#x20;
 
-1. Login to your AutoRABIT account.
-2. Click on **Env. Pro.** module.
-3. Click on **Create New Template**.
-4. Go to the **Create Unsupported Metadata Template** tab.
-5. Give the template a **name** and a **short description** of it.
-6. Select the **EditLead** checkbox available under **Lead Settings.**
-7. Click **Add**.
-8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below, then click the **Save** button.
+This governs how outbound emails are handled across your org. These include default behaviors like:&#x20;
 
-    * **Lead Type:** Enter either queue or a user that will own a lead when assignment rules fail to locate an owner.
-    * **Lead Owner:** Enter the owner's name in this field.
-    * **Lead Conversion Setting:** Click on![](<../../../../../.gitbook/assets/image (72).png>)icon to add the required setting details here. Activate the settings by selecting the **Active** checkbox.\
-      i. **Require Validation for Converted Leads:** When users convert leads, enforce required field settings, field validation rules, workflow actions, and Apex triggers.\
-      ii. **Preserve Lead Status:** Prevent the lead status from changing to the new lead owner's default value during lead conversion.\
-      iii. **Enable Conversions for Salesforce Mobile:** Let users convert leads on the mobile app.
+* Compliance features (like bounce management and logging)&#x20;
+* TLS settings&#x20;
+* Mail Server Management&#x20;
+* Footers, headers, and more&#x20;
 
-    <figure><img src="../../../../../.gitbook/assets/image (73).png" alt=""><figcaption><p>Add Test Data</p></figcaption></figure>
-9. Click **Save** to save the template.
-10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
-11. Click the **Run** button to run the template on your destination org.
-12. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-13. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
-14. Please check the **View History** page for a detailed summary report of the operation carried out.
+With Salesforce, you will not be able to deploy this setting as part of your package.xml. It will have to be a manual deployment. To avoid this, AutoRABIT has an ‘EmailAdminSettings’ option under ‘Manage Email Administration Deliverability’ – this allows users to manage email administration settings as follows:&#x20;
+
+**Access to Send Email** - This setting applies to production and sandboxes. The values can be one of:&#x20;
+
+* No access—Allows only password reset emails. Prevents all other outbound email to and from users.&#x20;
+* System email only—Allows only automatically generated emails, such as new user and password reset emails.&#x20;
+* All email—Allows all types of outbound email. Default for new orgs that aren’t sandboxes.&#x20;
+
+**TLS Setting** – This setting configures your TLS for outbound emails. The values include:&#x20;
+
+* **Preferred**—If the message transfer agent (MTA) advertises TLS and a common cipher can be negotiated, TLS is used. If TLS can’t be negotiated, the email is delivered unencrypted. This setting is the default.&#x20;
+* **Required**—If TLS can’t be negotiated or a common cipher can’t be agreed on, the email bounces back to the originator.&#x20;
+* **Preferred Verify**—If the MTA advertises TLS, a common cipher can be negotiated, and Salesforce can verify the receiver, TLS is used. Verification means that a valid certificate authority has signed the receiver’s certificate and the hostname in the certificate matches the host to which we connected. If TLS can’t be negotiated or the verification fails, the email is delivered unencrypted.&#x20;
+* **Required Verify**—If TLS can’t be negotiated, a common cipher can’t be agreed on, or the sender can’t be verified, the email bounces back to the originator. Verification means that a valid certificate authority has signed the receiver’s certificate and the hostname in the certificate matches the host to which we connected.&#x20;
+
+&#x20;
+
+**Restrict TLS To These Domains** - To enable this preference, you must specify a TLS Setting other than ‘Preferred’ and provide the comma-separated list of domains through Domains Name in ARM. When this field is set to true, any domains not in the list use the system default TLS Setting of ‘Preferred’.&#x20;
+
+**Note** – With ‘TLS Setting’ set to ‘Preferred’, the option of ‘Restrict TLS to these domains’ should not be selected in ARM. If it is, ARM will throw an error during the deployment.&#x20;
+
+&#x20;
+
+**Domains Name** – With TLS Setting set to anything other than ‘Preferred’, you can provide a list of domains that should adhere to the TLS Setting configured from earlier.&#x20;
+
+&#x20;
+
+&#x20;
+
+&#x20;
+
+&#x20;
+
+&#x20;
+
+&#x20;
+
+&#x20;

@@ -1,80 +1,78 @@
 # Archive Reports
 
-## **Vault Reporting**
+## Vault Reporting
 
-### **Introduction**
+### Introduction
 
-This will help the user to draw data-driven metrics from Vault on the activities that are performed on the archived data in Vault.
+Vault's Archive Reporting feature allows users to generate data-driven insights on actions performed on archived data. These reports help in auditing, compliance, and operational analysis.
 
-### **Report Creation**
+---
 
-Users can follow the depicted flow for the creation of reports.
+### Report Creation Workflow
 
-1. The user clicks on the “Generate Report” button.
+1. Click **Generate Report**.
 
-<figure><img src="../../../../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+![Generate Report Button](../../../../.gitbook/assets/image%20(244).png)
 
-2. In 'Search By,' the following options will be available for the user to select.
+2. In the **Search By** dropdown, select the appropriate option.
 
-<figure><img src="../../../../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+![Search By Options](../../../../.gitbook/assets/image%20(245).png)
 
-3. On clicking the “Generate Report” button, the user will see the following popup.
+3. A popup will appear prompting for input parameters.
 
-<figure><img src="../../../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+![Report Configuration Popup](../../../../.gitbook/assets/image%20(246).png)
 
-4. The user can input/select all the required fields:
-   * **Salesforce Org:** The ORG on which the intended report is being generated.
-   * **Report Label:** The user has to input the label they want to use. The report label should not have special characters.
-   * **Report Date Range:** The user has to input the date range. This data range will be the input for fetching the data.
+4. Fill in the required fields:
 
-{% hint style="info" %}
-**Note:** Only the six months date range is allowed.
-{% endhint %}
+   - **Salesforce Org**: Select the target Org for which the report is generated.
+   - **Report Label**: Enter a custom label (no special characters).
+   - **Report Date Range**: Choose a date range (maximum of 6 months).
 
-* **Object:** The Object for whose data will be considered for data retrieval.
-* **Fields:** This will be the list of fields from the object selected above.
-* **Query:** The fields selected above will form the query, using which the report will be formed. The user can form a custom query as well.
-* **Generate:** Clicking this button will initiate the report creation.
+     > ⚠️ **Note:** Only a 6-month date range is allowed.
 
-{% hint style="info" %}
-**Note:** The report created will **expire after 7 days** from the day of creation of the report.
-{% endhint %}
+   - **Object**: Select the Salesforce object to report on.
+   - **Fields**: Choose the relevant fields from the selected object.
+   - **Query**: A query will be auto-generated based on selected fields. You can also define a custom SOQL query.
+   - Click **Generate** to initiate the report creation.
 
-5. Please observe the following screenshot for reference.
+     > ⚠️ **Note:** Reports expire 7 days after creation.
 
-<figure><img src="../../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+![Form Example](../../../../.gitbook/assets/image%20(247).png)
 
-6. Based on the data within the time range selected, the report may take some time to run and generate the report.
-7. If multiple reports were created: Five reports will run simultaneously, and the rest will be queued.
-8. Once the report is created, the report will be available under the **“Archive Reports”** as shown below.
+5. Reports may take time to process depending on data volume. A maximum of 5 reports run simultaneously; additional reports are queued.
 
-<figure><img src="../../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+6. Once ready, reports are listed under **Archive Reports**.
 
-9. The user can click open the report created by clicking on **“Report Label.”**
-10. On clicking the report, the contents of the report can be viewed as shown.
+![Reports List](../../../../.gitbook/assets/image%20(248).png)
 
-<figure><img src="../../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+7. Click on the **Report Label** to view the report.
 
-11. The contents of the report are searchable, the search is “case insensitive” by default. The case sensitivity can be turned on as shown below.
+![Report Preview](../../../../.gitbook/assets/image%20(250).png)
 
-<figure><img src="../../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+8. Use the search bar to find records (default is case-insensitive). Enable case-sensitivity if needed.
 
-12. The generated report can be "Exported to CSV” with the options shown below:
+![Case Sensitivity Option](../../../../.gitbook/assets/image%20(251).png)
 
-<figure><img src="../../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+---
 
-13. **Consolidated Report:** By clicking on this button, the user can view the consolidated report.
+### Additional Features
 
-<figure><img src="../../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+- **Export to CSV**: Export report data using this feature.
 
-14. **Change View:** The user can adjust the columns visible on the report by adding or removing the columns from the list of columns available as shown below.
+  ![Export Options](../../../../.gitbook/assets/image%20(252).png)
 
-<figure><img src="../../../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
+- **Consolidated Report**: View a combined report across related data sets.
 
-15. The user can search through the columns of the selected object as shown below:
+  ![Consolidated View](../../../../.gitbook/assets/image%20(253).png)
 
-<figure><img src="../../../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+- **Change View**: Customize visible columns by selecting from the available list.
 
-16. Based on the columns selected, the operators may vary in the “operator” column:
+  ![Column Selection](../../../../.gitbook/assets/image%20(254).png)
 
-<figure><img src="../../../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
+- **Column Search**: Locate specific fields using the column search.
+
+  ![Search Columns](../../../../.gitbook/assets/image%20(255).png)
+
+- **Dynamic Operators**: Based on selected columns, applicable operators (e.g., equals, contains) are shown.
+
+  ![Operator Selection](../../../../.gitbook/assets/image%20(256).png)

@@ -1,25 +1,31 @@
-# Sign In
+# Signing In
 
-This section describes a daily login procedure using the username and password you chose for yourself at the time of registration with Vault™.
+This section outlines the standard procedure for signing into Vault™ using your username and password credentials.
 
-### Sign-In Procedure <a href="#signin-procedure" id="signin-procedure"></a>
+## Sign-In Procedure <a href="#signin-procedure" id="signin-procedure"></a>
 
-1. Navigate to the Vault™ sign-in page. **For example,** [https://na101.autorabit.com](https://na101.autorabit.com/)
+1. Open a web browser and navigate to your Vault™ sign-in page.  
+   **Example:** [https://na101.autorabit.com](https://na101.autorabit.com)
 
-<figure><img src="../../../.gitbook/assets/image (126).png" alt="Vault Sign In Page"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (126).png" alt="Vault Sign In Page" /></figure>
 
-2. Next, enter the **username** and **password** associated with your Vault™ account.
+2. Enter your **username** and **password** associated with your Vault™ account.
 
-### **Password Requirements**
+3. Click **Login**. Upon successful authentication, you will be redirected to the Vault™ dashboard where you can access its features.
 
-New passwords must meet the following criteria:
+---
 
-* **MUST** contain at least **8 characters (10+ recommended)**
-* **MUST** contain at least **one uppercase letter (A-Z)**
-* **MUST** contain at least **one lowercase letter (a-z)**
-* **MUST** contain at least **one number (0-9)**
-* **MUST** contain at least **one special character (!, %, @, <, >, #)**
-* **MUST NOT** contain: an **email** address; **first, middle,** or **last name**; or **commonly used** passwords
-* **MUST NOT** be one of the **13 previously used passwords**
+## Password Requirements
 
-3. Click **Login**. When the password is accepted, you are ready to access the [Vault™](https://www.autorabit.com/products/vault-data-backup-recovery/) user functions.
+To maintain high security standards, your Vault™ password must comply with the following rules:
+
+- **Minimum Length**: Must contain at least **8 characters** (10+ recommended)
+- **Character Requirements**:
+  - At least **one uppercase letter** (A–Z)
+  - At least **one lowercase letter** (a–z)
+  - At least **one number** (0–9)
+  - At least **one special character**: `! % @ < > #`
+- **Restrictions**:
+  - Must **not** contain your **email address**, **first name**, **middle name**, or **last name**
+  - Must **not** include commonly used or easily guessed passwords
+  - Must **not** match any of your **13 previously used passwords**

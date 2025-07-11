@@ -1,94 +1,83 @@
 # User Profile and Permission Access for Salesforce Users
 
-### Enable API access for users in Salesforce <a href="#enable-api-access-for-users-in-salesforce" id="enable-api-access-for-users-in-salesforce"></a>
+## Enable API Access for Users in Salesforce <a href="#enable-api-access-for-users-in-salesforce" id="enable-api-access-for-users-in-salesforce"></a>
 
-API access needs to be enabled in Salesforce for all users for you to be able to connect [Vault](https://www.autorabit.com/products/vault-data-backup-recovery/) to your Salesforce account. This requires Salesforce Administrator credentials. Your Salesforce Administrator controls your Profile and Permission Sets.
+To connect [Vault](https://www.autorabit.com/products/vault-data-backup-recovery/) with Salesforce, API access must be enabled for all users. This requires Salesforce Administrator privileges. Follow the steps below based on whether you're managing access via Profile or Permission Set.
 
-Follow the steps below to:
+---
 
-* [Enable API access in Salesforce by Profile](https://knowledgebase.autorabit.com/vault/docs/user-permissions-and-access#enable-api-access-in-salesforce-by-profile)
-* [Enable API access in Salesforce by Permission Set](https://knowledgebase.autorabit.com/vault/docs/user-permissions-and-access#enable-api-access-in-salesforce-by-permission-set)
+### Enable API Access by Profile <a href="#enable-api-access-in-salesforce-by-profile" id="enable-api-access-in-salesforce-by-profile"></a>
 
-#### Enable API access in Salesforce by Profile <a href="#enable-api-access-in-salesforce-by-profile" id="enable-api-access-in-salesforce-by-profile"></a>
+1. Click the **Gear** icon and choose **Setup**.
 
-1. Click the Gear icon and click **Setup**.
+   ![Setup Gear Icon](../../../.gitbook/assets/image%20(73)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-<figure><img src="../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+2. In the Quick Find box, type **Profiles** and select it.
 
-2. Type **profiles** into the Quick Find box and select **Profiles**.
+   ![Profiles Search](../../../.gitbook/assets/image%20(74)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-<figure><img src="../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3. Click **Edit** beside the target Profile.
 
-3. Click **Edit** against the Profile you wish to enable API access for.
+   ![Edit Profile](../../../.gitbook/assets/image%20(75)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-<figure><img src="../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+4. Scroll to **Administrative Permissions**, enable **API Enabled**, and click **Save**.
 
-4. Scroll down to **Administrative Permissions** and check the **API Enabled** box and click **Save**.
+   ![API Enabled Checkbox](../../../.gitbook/assets/image%20(76)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-<figure><img src="../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+---
 
-#### Enable API Access in Salesforce by Permission Set <a href="#enable-api-access-in-salesforce-by-permission-set" id="enable-api-access-in-salesforce-by-permission-set"></a>
+### Enable API Access by Permission Set <a href="#enable-api-access-in-salesforce-by-permission-set" id="enable-api-access-in-salesforce-by-permission-set"></a>
 
-1.  Click the Gear icon and click **Setup**.\
+1. Click the **Gear** icon and select **Setup**.
 
+   ![Setup Gear](../../../.gitbook/assets/image%20(80)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-    <figure><img src="../../../.gitbook/assets/image (80) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-2. Type **permission** into the Quick Find box and select Permission Sets.
+2. In the Quick Find box, type **Permission Sets** and select it.
 
-<figure><img src="../../../.gitbook/assets/image (81) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+   ![Permission Sets](../../../.gitbook/assets/image%20(81)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-3. Select the Permission Set you wish to enable API access for.
+3. Choose the desired **Permission Set**.
 
-<figure><img src="../../../.gitbook/assets/image (82) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+   ![Select Permission Set](../../../.gitbook/assets/image%20(82)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-4. Scroll down to **System** and click **System Permissions**.
+4. Scroll to **System**, click **System Permissions**.
 
-<figure><img src="../../../.gitbook/assets/image (83) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+   ![System Permissions](../../../.gitbook/assets/image%20(83)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-5. Click **Edit**.
+5. Click **Edit**, check **API Enabled**, and **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (84) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+   ![Enable API in Permissions](../../../.gitbook/assets/image%20(84)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-6. Check the **API Enabled** box and click **Save**.
+---
 
-<figure><img src="../../../.gitbook/assets/image (85) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+## Object and Field Permissions <a href="#object-and-field-permissions" id="object-and-field-permissions"></a>
 
-### Object and Field Permissions <a href="#object-and-field-permissions" id="object-and-field-permissions"></a>
-
-Object permissions specify the base-level access users have to create, read, edit, and delete records for each object. The Salesforce Administrator can manage object permissions in permission sets and profiles.
-
-Field permissions specify the access level for each field in an object.
-
-The following permissions specify the access that users have to objects.
+Salesforce object permissions define what actions users can perform on object records, while field permissions control visibility and editability of fields.
 
 | PERMISSION | DESCRIPTION                               |
 | ---------- | ----------------------------------------- |
-| Read       | Users can only view records of this type. |
-| Create     | Users can read and create records.        |
-| Edit       | Users can read and update records.        |
-| Delete     | Users can read, edit, and delete records. |
+| Read       | View records only                         |
+| Create     | Create new records                        |
+| Edit       | Update existing records                   |
+| Delete     | Remove records                            |
 
-**Backup operation in Vault:** The registered users should have **read** access to all objects, fields, files, and metadata for which the backup is needed.
+- **For Vault Backups:** Users need **read** access to relevant objects, fields, files, and metadata.
+- **For Restore, Replicate, Archive:** Users need **create**, **edit**, and **delete** permissions.
+- Ensure integration users have access to **Metadata**, **SOAP**, **Bulk**, and **Tooling APIs**.
 
-**Restore/Replicate/Archive operation in Vault:** The user should have **create**, **edit**, and **delete** access to all the objects, fields, and metadata for which the restore operation must be performed.
+---
 
-Also, the integration user must have access to the Metadata, Soap, Bulk, and Tooling APIs.
+## Assign Custom Object Permissions to Standard User <a href="#assign-custom-object-permissions-to-standard-user-in-salesforce" id="assign-custom-object-permissions-to-standard-user-in-salesforce"></a>
 
-#### Assign custom object permissions to Standard User in Salesforce <a href="#assign-custom-object-permissions-to-standard-user-in-salesforce" id="assign-custom-object-permissions-to-standard-user-in-salesforce"></a>
+1. In Salesforce, go to **Setup > Manage Users > Profiles**.
+2. Click **Edit** next to the profile to modify.
 
-One of the key tasks of Salesforce administrator is to assign the privileges to the appropriate users.
+   ![Edit Profile](../../../.gitbook/assets/image%20(79)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-1. Within Salesforce, click on **Setup** and then click on **Manage Users**.
-2. Under the **Manage Users** tree click on **Profiles**
-3. Once the Profiles appear on the right, select which Profile you want to edit and click on the **Edit** link next to the corresponding profile.
+3. Scroll to **Custom Object Permissions** and configure as needed.
 
-<figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+   ![Custom Object Permissions](../../../.gitbook/assets/image%20(77)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
+   
+   ![Permission Table](../../../.gitbook/assets/image%20(78)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1)%20(1).png)
 
-4. Scroll down to the section labeled **Custom Object Permissions**
-5. Specify the object permissions.
-
-<figure><img src="../../../.gitbook/assets/image (77) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="261"><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (78) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-6. Click **Save**.
+4. Click **Save**.

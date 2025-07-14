@@ -11,45 +11,41 @@ This article explains how to configure Single Sign-On (SSO) in Vault using Okta 
 3. Click **Create App Integration**.
 4. Choose **SAML 2.0** and click **Next**.
 5. In **General Settings**:
-   - Name: **Vault**
-   - Upload Vault logo
-   - Click **Next**
-
+   * Name: **Vault**
+   * Upload Vault logo
+   * Click **Next**
 6. In the **Configure SAML** tab:
-   - **Single sign on URL:** `<instanceURL>/ARVault/saml/SSO`  
-     _e.g._: `https://vault-qa.autorabit.com/ARVault/saml/SSO`
-   - **Audience URI (SP Entity ID):** `<instanceURL>/ARVault/saml/metadata`
-
+   * **Single sign on URL:** `<instanceURL>/ARVault/saml/SSO`\
+     &#xNAN;_&#x65;.g._: `https://vault-qa.autorabit.com/ARVault/saml/SSO`
+   * **Audience URI (SP Entity ID):** `<instanceURL>/ARVault/saml/metadata`
 7. Under **Attribute Statements**:
 
-| Name                       | Value                      |
-|----------------------------|----------------------------|
-| firstname                  | `user.firstName`           |
-| lastname                   | `user.lastName`            |
-| customerid                 | Vault customer ID          |
-| restrictAutoCreationOfUser| `Yes` or `No`              |
+| Name                       | Value             |
+| -------------------------- | ----------------- |
+| firstname                  | `user.firstName`  |
+| lastname                   | `user.lastName`   |
+| customerid                 | Vault customer ID |
+| restrictAutoCreationOfUser | `Yes` or `No`     |
 
 > **Note**: Customer ID is available under the **Profile** section in your Vault account.
 
 8. Click **Next**, then choose:
-   - **"I'm an Okta customer adding an internal app"**
-   - **"This is an internal application that we created"**
-   - Click **Finish**
-
+   * **"I'm an Okta customer adding an internal app"**
+   * **"This is an internal application that we created"**
+   * Click **Finish**
 9. Go to the **Assignments** tab:
-   - Click **Assign > Assign to People**
-   - Assign users, click **Save and Go Back**, then **Done**
-
+   * Click **Assign > Assign to People**
+   * Assign users, click **Save and Go Back**, then **Done**
 10. Go to the **Sign On** tab and click **Identity Provider Metadata**.
-    - Save the file as XML or copy the metadata URL.
+    * Save the file as XML or copy the metadata URL.
 
 ## Configure SSO in Vault <a href="#configure-sso-in-vault" id="configure-sso-in-vault"></a>
 
 1. Log in to Vault
 2. Navigate to **Settings > SSO Configuration**
 3. Enter a name for the config and select:
-   - **Metadata URL** (paste the copied link), or
-   - **Metadata File** (upload the XML file)
+   * **Metadata URL** (paste the copied link), or
+   * **Metadata File** (upload the XML file)
 4. Click **Activate**
 
 > You may disable login with Vault credentials by toggling off that option.
@@ -64,10 +60,10 @@ This article explains how to configure Single Sign-On (SSO) in Vault using Okta 
 
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
-**Error**:  
-_"Your user is not available in the account with provided customer id. Please contact the administrator to create a user for you in the account."_
+**Error**:\
+&#xNAN;_"Your user is not available in the account with provided customer id. Please contact the administrator to create a user for you in the account."_
 
 **Causes**:
+
 1. The user is not assigned to the Vault app in Okta.
 2. `restrictAutoCreationOfUser` is set to **Yes** and the user has not been pre-created in Vault.
-

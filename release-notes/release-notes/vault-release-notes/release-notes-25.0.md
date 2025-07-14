@@ -2,6 +2,8 @@
 
 ## Vault Release Notes 25.1.4
 
+**Release Notes:** July 16, 2025
+
 *   **Flexible Scheduling Enhancements**
 
     The scheduling functionality has been enhanced to support a wider range of intervals, providing greater flexibility in configuring backup and automation schedules.

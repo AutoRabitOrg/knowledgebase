@@ -1,6 +1,7 @@
 # User Profile
 
-Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc.&#x20;
+Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc. \
+
 
 To access user preferences, click your user name in the upper right corner and select **`Profile`**.
 

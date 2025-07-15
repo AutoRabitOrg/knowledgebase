@@ -17,6 +17,16 @@ This error may occur when users are selecting an ALM on the EZ-Commit screen. VP
 
 If the steps above do not work, create a new credential and link it to your ALM account.
 
+## B
+
+### Base Workspaces
+
+Despite having admin privileges in your instance, you are unable to delete certain workspaces, as the Delete button appears grayed out, as shown in the screenshot below.
+
+<figure><img src="../../../../.gitbook/assets/image (1751).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
+
+The reason the Delete button is grayed out is that these workspaces are classified as Base Workspaces. Base workspaces are directly linked to a branch in your instance, and they cannot be deleted unless the associated branch is unregistered from AutoRABIT. When you register a new branch, a workspace is created, and they are tightly connected.
+
 ## C
 
 ### **Cannot Open Git-Upload-Pack**&#x20;

@@ -9,7 +9,7 @@ You can initiate an RTBF request for your backed-up [Salesforce data](https://ww
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Login to [Vault ](https://www.autorabit.com/products/vault-data-backup-recovery/)using your username and password.
-2. Go to the **GDPR** module and select your [Salesforce Org](https://knowledgebase.autorabit.com/docs/salesforce-org-managements).
+2. Go to the **GDPR** module and select your Salesforce Org.
 3. Click on **Create GDPR Request**.
 
 <figure><img src="../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>

@@ -121,6 +121,6 @@ We're exploring a solution to support Release Label delta components, and it’s
 
 Note: If you skip some in-between revisions while creating a Release Label and include a later revision, AutoRABIT will still pick up changes from the skipped revisions in the Release Label Deployments, but only if those changes are related to the same metadata component as the selected revisions.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Release Labels</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Release Labels</p></figcaption></figure>
 
 For example, if we create a **Release Label** by including **Commits 1, 2, and 4** as shown in the screenshot above, and then deploy using that Release Label to a target Salesforce org, the deployment will **still include the changes from Commit 3**, even though it was skipped in the Release Label.&#x20;

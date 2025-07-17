@@ -4,7 +4,7 @@ Registering the nCino-installed Salesforce organization enables you to perform n
 
 By default, [Vault](https://www.autorabit.com/products/vault-data-backup-recovery/) connects to orgs using the secure 'OAuth' method (our recommended approach). You can also connect to orgs using username/password connections if required.&#x20;
 
-To register a [Salesforce org](https://knowledgebase.autorabit.com/vault/docs/registering-salesforce-org) configured with nCino objects, follow the steps below in order:
+To register a Salesforce org configured with nCino objects, follow the steps below in order:
 
 1. Log in to **Vault** using your credentials.
 2. Visit **Setup > Register New Org** from the Vault homepage.

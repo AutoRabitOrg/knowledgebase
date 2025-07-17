@@ -8,7 +8,7 @@
 
 You can easily log in to CodeScan Cloud by setting up a Single Sign-On (SSO) through SAML-based third-party identity providers such as Okta, PingOne, and Microsoft Azure.
 
-For more information, see [Single Sign-On](https://knowledgebase.autorabit.com/codescan/docs/single-sign-on-sso).
+For more information, see [Single Sign-On](../../../../product-guides/codescan/codescan-integration/single-sign-on-sso/).
 
 #### 2. CSV Export tool for CodeScan Cloud <a href="#id-2-csv-export-tool-for-codescan-cloud" id="id-2-csv-export-tool-for-codescan-cloud"></a>
 

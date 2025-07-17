@@ -7,7 +7,7 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Login to your Vault account.
-2. Go to **Setup** and search for the [Salesforce Org](https://knowledgebase.autorabit.com/docs/salesforce-org-managements) from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
+2. Go to **Setup** and search for the Salesforce Org from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
 
 <figure><img src="../../../../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 

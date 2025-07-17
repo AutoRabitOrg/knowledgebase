@@ -53,4 +53,4 @@ This document guides how to add a Salesforce project to your [CodeScan cloud](ht
 
 #### Troubleshooting
 
-**"ip restricted" error:** If your scan fails with the IP restricted error, please refer to the [Troubleshooting article](https://knowledgebase.autorabit.com/codescan/docs/ip-restricted-issue).
+**"ip restricted" error:** If your scan fails with the IP restricted error, please refer to the [Troubleshooting article](https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/cloud-errors-and-solutions#why-am-i-getting-an-ip-restricted-message).

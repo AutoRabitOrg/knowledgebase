@@ -1,6 +1,6 @@
 # Managing Users and Roles
 
-Creating users and roles allows you to manage who can access a [**Vault™**](https://www.autorabit.com/products/vault-data-backup-recovery/). You can also create different roles that restrict or allow access to certain functionalities. For example, you might have a member of your team who only needs to look at scheduling [**Backup**](https://www.autorabit.com/blog/salesforce-essentials-backup-and-restore/) operations for a sandbox but should never be able to perform a **Restore** operation.
+Creating users and roles allows you to manage who can access a [**Vault™**](https://www.autorabit.com/products/vault-data-backup-recovery/). You can also create different roles that restrict or allow access to certain functionalities. For example, you might have a member of your team who only needs to look at scheduling backup operations for a sandbox but should never be able to perform a **Restore** operation.
 
 {% hint style="info" %}
 **Note:** You need **Administrator privileges** to manage a user account.

@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Data archives can be thought of as a data repository for infrequently accessed, but still readily available data. In Vault, data archival is all about moving the unwanted data components from your Salesforce Org and freeing the space for new data. This data is safely stored for future use. In a nutshell, [Vault](https://www.autorabit.com/products/vault-enterprise-backup-and-recovery/) makes Salesforce data archiving and backup simple, productive, and a joy to use.&#x20;
+Data archives can be thought of as a data repository for infrequently accessed, but still readily available data. In Vault, data archival is all about moving the unwanted data components from your Salesforce Org and freeing the space for new data. This data is safely stored for future use. In a nutshell, Vault makes Salesforce data archiving and backup simple, productive, and a joy to use.&#x20;
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

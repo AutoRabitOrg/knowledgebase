@@ -24,7 +24,7 @@ You will need:
 
 ### Setup Jenkins <a href="#setup-jenkins" id="setup-jenkins"></a>
 
-1. In [Jenkins](https://knowledgebase.autorabit.com/codescan/docs/jenkins), create a [credential](https://docs.cloudbees.com/docs/cloudbees-ci/latest/cloud-secure-guide/injecting-secrets) containing your CodeScan token ([learn how to find this here](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token)).
+1. In [Jenkins](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/jenkins), create a [credential](https://docs.cloudbees.com/docs/cloudbees-ci/latest/cloud-secure-guide/injecting-secrets) containing your CodeScan token ([learn how to find this here](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token)).
 2. Create a **new Pipeline**.
 3. In the **Pipeline script** section you will need to paste in the code with the highlighted variables changed, these are:
    * Your _**credential\_name**_ should be the name of the credential you created.

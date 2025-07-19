@@ -2,8 +2,8 @@
 
 ### CodeScan Self-Hosted Editions: Latest Release Dates&#x20;
 
-* Tiger Edition v3 was released on Feb 26, 2025.&#x20;
-* Eagle Edition v3 was also released on Feb 26, 2025.&#x20;
+* Tiger Edition v4 was released on 18 July 2025.&#x20;
+* Eagle Edition v4 was also released on 18 July 2025.&#x20;
 
 {% hint style="info" %}
 Note regarding the 2 different CodeScan Self-Hosted Editions:&#x20;

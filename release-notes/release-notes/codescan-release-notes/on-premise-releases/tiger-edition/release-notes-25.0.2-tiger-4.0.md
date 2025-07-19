@@ -1,6 +1,6 @@
 # Release Notes 25.0.2 Tiger 4.0
 
-## CodeScan Release Notes 25.0.2 Eagle 4.0
+## CodeScan Release Notes 25.0.2 Tiger 4.0
 
 Release Date: 18 July 2025
 

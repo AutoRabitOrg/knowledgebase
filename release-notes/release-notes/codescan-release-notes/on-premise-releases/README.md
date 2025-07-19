@@ -31,9 +31,9 @@ Additionally, the following diagram provides more detailed information regarding
 
 ### Recommendations on Editions&#x20;
 
-_For customers running earlier versions of SonarQube_, we welcome you to upgrade to our new CodeScan Self-Hosted Tiger Edition v3.0 (25.0.1). This release is generally available as of Feb 26, 2025, and is compatible with SQ 9.9 LTA and SQ 10.0–10.3. Please refer to the release notes for the [Tiger Edition v3](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.13-tiger-2.0) for complete documentation of features. &#x20;
+_For customers running earlier versions of SonarQube_, we welcome you to upgrade to our new CodeScan Self-Hosted Tiger Edition v4.0 (25.0.2). This release is generally available as of July 18, 2025, and is compatible with SQ 9.9 LTA and SQ 10.0–10.3. Please refer to the release notes for the [Tiger Edition v4](../../ncino-release-notes/release-notes-25.2.md) for complete documentation of features. &#x20;
 
-_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v3.0 (25.1.0). This release is generally available as of Feb 26, 2025, and is compatible with SQ 2025.1 LTA and SQ 10.1–10.8. Please refer to the release notes for the [Eagle Edition v3](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.13-tiger-2.0) for complete documentation of features.&#x20;
+_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v4.0 (25.1.1). This release is generally available as of July 18, 2025, and is compatible with SQ 2025.1 LTA and SQ 10.1–10.8. Please refer to the release notes for the [Eagle Edition v4](../../ncino-release-notes/release-notes-25.2.md) for complete documentation of features.&#x20;
 
 **Downloads:** After identifying your version of SonarQube, refer to the Installing CodeScan Self-Hosted page to view the [CodeScan Downloads & Compatibility Chart](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-download-versions-and-compatibility-chart).&#x20;
 

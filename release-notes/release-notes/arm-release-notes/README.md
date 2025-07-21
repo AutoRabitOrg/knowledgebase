@@ -1,5 +1,22 @@
 # ARM Release Notes
 
+## **ARM 25.3.2 Release Notes**
+
+**Release Date**: **20 July 2025**\
+\
+**Highlights**: UI fixes in conflict resolution, improved destructive change handling in DX/Non-DX, and artifact preparation reliability enhancements.
+
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **Merge Conflict Resolution – UI Handling:** Improved the reliability of conflict resolution in the Merge Conflict screen. Resolved a UI issue where repeated lines were unintentionally removed after resolving conflicts using "Block from Source/Destination", leading to incorrect merges.\
+
+* **Destructive Changes in Commit (Non-DX):** Enhanced support for Report, Dashboard, Document, and EmailTemplate components in the Deleted tab under EZ-Commit for Non-DX repositories. These were previously not triggering the proper validation and error messaging during component selection.\
+
+* **CI Job Deployment – Classic Manifest Support in DX:** Fixed a bug where CI Jobs using DX repositories and Classic Package Manifest settings only packaged destructive changes, ignoring constructive ones. Validations and deployments now correctly handle all combinations of destructive and constructive changes.\
+
+* **Release Label Creation – Git SSH Response Handling:** Addressed an issue where release label creation failed due to invalid credentials. The system now properly handles Git responses when fetching branches via SSH, ensuring artifact preparation continues smoothly.\
+
+
 ## ARM 25.3.1 Release Notes
 
 **Release Date: 13 July 2025**

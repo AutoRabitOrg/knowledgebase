@@ -1,5 +1,43 @@
 # Release Notes 25.0
 
+## Vault Release Notes 25.1.5
+
+**Release Notes:** July 21, 2025
+
+#### Live Data Masking <a href="#live-data-masking" id="live-data-masking"></a>
+
+**New Feature:** Live Data Masking enables Salesforce administrators to protect sensitive information (such as PII) within a live production org without the need to replicate the full dataset. This targeted masking approach allows admins to:
+
+<figure><img src="../../../.gitbook/assets/1 - Live Masking.png" alt=""><figcaption></figcaption></figure>
+
+* Selectively mask specific fields across chosen objects
+
+<figure><img src="../../../.gitbook/assets/2 - Live Masking.png" alt=""><figcaption></figcaption></figure>
+
+* Minimize operational overhead by avoiding bulk data processing
+
+<figure><img src="../../../.gitbook/assets/12 - Live Masking copy.png" alt=""><figcaption></figcaption></figure>
+
+* Ensure only necessary data is altered, maintaining data integrity elsewhere
+
+This enhancement provides a more efficient and secure way to manage data privacy in real-time environments.
+
+**Editable Org Configuration**
+
+A new provision allows seamless editing of Salesforce org configurations within Vault. This feature simplifies compliance-driven credential updates by enabling users to re-authenticate Salesforce orgs with updated login credentials directly from the Vault interface.
+
+**Selected Object Processing**
+
+The fix ensures that only the explicitly selected child objects are processed during archival/hierarchical backup operations, providing more control and reducing unintended data processing.
+
+**Consistent Verbiage Across UI**
+
+Column labels and field names across the application interface have been standardized. This update ensures improved clarity and a more consistent user experience throughout Vault.
+
+**Email Message Field Handling**
+
+A fix is implemented to prevent special fields—such as audit fields—from being inadvertently updated during email data operations, preserving the integrity of email-related metadata.
+
 ## Vault Release Notes 25.1.4
 
 **Release Notes:** July 16, 2025

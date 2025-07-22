@@ -125,6 +125,7 @@
     * [Release Notes 22.0](release-notes/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Release Notes 21.0](release-notes/release-notes/vault-release-notes/vault-release-notes-21.0.md)
   * [Guard Release Notes](release-notes/release-notes/guard.md)
+    * [Release Notes 25.2](release-notes/release-notes/guard/release-notes-25.2.md)
     * [Release Notes 25.1](release-notes/release-notes/guard/release-notes-25.1.md)
 
 ## Product Guides

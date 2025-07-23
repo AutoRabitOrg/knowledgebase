@@ -28,7 +28,7 @@ Before registering Git with ARM, there are some prerequisites.
 
 ### Store Your Git Credentials in ARM <a href="#store-your-git-credential-in-arm" id="store-your-git-credential-in-arm"></a>
 
-This is an initial step in storing your user's credentials (usually a username, password, or token) in ARM. Some Git hosts like GitHub no longer support basic authentication using a username and password. You must now authenticate using an **API token**, such as an **OAuth** access token, GitHub App installation access token, or personal access token.
+This is an initial step in storing your user's credentials (usually a username, password, or token) in ARM. Some Git hosts like GitHub no longer support basic authentication using a username and password. You must now authenticate using an **API token**, such as a personal access token.
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.

@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.1.5
 
-**Release Notes:** July 21, 2025
+**Release Notes:** 21 July 2025
 
 #### Live Data Masking <a href="#live-data-masking" id="live-data-masking"></a>
 

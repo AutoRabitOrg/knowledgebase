@@ -40,7 +40,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ## Vault Release Notes 25.1.4
 
-**Release Notes:** July 16, 2025
+**Release Notes:** 16 July 2025
 
 *   **Flexible Scheduling Enhancements**
 
@@ -53,7 +53,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ## Vault Release Notes 25.1.3
 
-**Release Notes:** July 09, 2025
+**Release Notes:** 9 July 2025
 
 *   **Archival Job Enhancement**
 

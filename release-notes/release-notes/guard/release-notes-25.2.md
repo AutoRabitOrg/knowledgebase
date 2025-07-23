@@ -6,7 +6,7 @@
 
 1. Risk Assessment is goal-oriented now!
 
-<figure><img src="../../../.gitbook/assets/image (1816).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1816).png" alt="" width="563"><figcaption></figcaption></figure>
 
 We have grouped risks under four key Security Goals:
 

@@ -52,8 +52,7 @@ To improve application navigation, in this release we have added a new menu:
 
 <figure><img src="../../../.gitbook/assets/image (1821).png" alt=""><figcaption></figcaption></figure>
 
-6. As part of the ongoing cleanup, Deployments tab under Change Monitoring, Insights and FlowCenter references were removed from the UI
-7. Due to ongoing performance issues and bugs, Field usage (data) tab was hidden from Data Classification UI:
+6. While we enhance its performance and functionality, we have temporarily removed the Field usage (data) tab from Data Classification UI:
 
 <figure><img src="../../../.gitbook/assets/image (1822).png" alt=""><figcaption></figcaption></figure>
 

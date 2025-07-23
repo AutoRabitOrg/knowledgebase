@@ -56,7 +56,7 @@ To improve application navigation, in this release we have added a new menu:
 
 <figure><img src="../../../.gitbook/assets/image (1822).png" alt=""><figcaption></figcaption></figure>
 
-### Bug fixes:
+### Bug Fixes
 
 1\.      Zoho desk link now works as expected.
 

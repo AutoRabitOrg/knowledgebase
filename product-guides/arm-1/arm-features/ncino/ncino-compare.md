@@ -1,5 +1,36 @@
 # nCino Compare
 
+#### **Introduction**
+
+The Compare and Selective Deployment functionality in nCino enables users to perform detailed comparisons between datasets and object records across Salesforce environments or between a Salesforce Org and a version control repository. This process helps identify changes and selectively promote only the required records to the intended target environment.
+
+**Overview**
+
+* **Flexible Comparison Options**\
+  Perform comparisons between two Salesforce Orgs (_Org-to-Org_) or between a Salesforce Org and a version control repository (_Org-to-Version Control_).
+* **Relational Comparison Support**\
+  Execute relational comparisons that take into account object relationships, ensuring accuracy in identifying relevant data changes.
+* **Granular Record Selection**\
+  View and select individual records at any level of the comparison hierarchy, providing full control over what is promoted.
+* **Save and Reuse Selections**\
+  Save selected records during comparison to revisit or finalize at a later stage, supporting iterative workflows.
+* **Deployment Execution**\
+  Proceed with deployment using the **Save and Deploy** option, which finalizes the selection and initiates the deployment process.
+* **Object Summary and RBC Integration**\
+  Access a consolidated _Object Summary_ screen to review selected records before deployment. From here, initiate RBC-based deployments directly.
+
+## Step-by-Step Guide
+
+### Initiating Compare Operation
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,5 +1,20 @@
 # ARM Release Notes
 
+## ARM 25.3.3 Release Notes
+
+**Release Date: 27 July 2025**
+
+#### Enhancements <a href="#enhancements" id="enhancements"></a>
+
+* **New ALM Support**: ARM now links to the SaaS Tool Kit so EZ-Commit can update Salesforce ALM records automatically. After a simple one-time setup, developers select the User Story or Defect during an EZ-Commit, add notes or effort, and ARM pushes the commit details to Salesforce while advancing the record’s status from Unit Complete → Ready For SIT and SIT Complete → Ready For UAT—no manual edits needed.
+
+**Bug Fixes**
+
+* **QuickAction metadata deployments fail due to package.xml exclusion**: Fixed the package-preparation logic so QuickAction files are included, allowing validation and deployment to succeed.\
+
+* **Environment-provisioning flow errors not displayed**: Corrected run-time array handling so success and failure details are now shown when enabling flows via an environment-provisioning template.\
+
+
 ## **ARM 25.3.2 Release Notes**
 
 **Release Date**: **20 July 2025**\

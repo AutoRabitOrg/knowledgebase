@@ -15,7 +15,7 @@ Currently, the most recent Long Term Active version of SonarQube is 2025.1 LTA. 
 
 In order to support all these SonarQube versions, we decided to provide two versions of CodeScan self-hosted editions to the market to ensure ongoing SonarQube compatibility. &#x20;
 
-Our Eagle Edition is designed for those customers who run on SonarQube 10.4 – 2025.1 LTA.&#x20;
+Our Eagle Edition is designed for those customers who run on SonarQube 10.6 – 2025.1 LTA - 2025.2 and 2025.3.&#x20;
 
 Our Tiger Edition is designed for those customers who run on SonarQube 9.9 LTA – 10.3. &#x20;
 

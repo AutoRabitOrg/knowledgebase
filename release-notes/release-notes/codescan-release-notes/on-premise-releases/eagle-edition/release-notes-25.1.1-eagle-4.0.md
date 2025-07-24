@@ -6,7 +6,7 @@ Release Date: 18 July 2025
 
 ### Summary
 
-CodeScan Self-Hosted (versions 25.0.2 (Tiger v4) and 25.1.1 (Eagle v4) are comprised of the following 19 components:
+CodeScan Self-Hosted (versions 25.0.2 \[Tiger v4] and 25.1.1 \[Eagle v4]) are comprised of the following 19 components:
 
 * 5 Enhancements
 * 2 New Rules

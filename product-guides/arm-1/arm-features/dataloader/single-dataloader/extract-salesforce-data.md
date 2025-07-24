@@ -48,7 +48,9 @@ Basic DL offers a convenient feature to extract data from Salesforce by defining
 16. Fields can be added from the leftside "Fields" section at any point of the query building.
 
     <figure><img src="../../../../../.gitbook/assets/9 - Extract (1).png" alt=""><figcaption></figcaption></figure>
-17. Use the **Order By** section to define how the queried data should be sorted by selecting the desired field and sort direction.
+17. IIn the **Order By** section, specify whether the extracted records should be sorted in ascending or descending order based on the selected field, enabling structured and meaningful data output.
+    * Select a **`field`** to be your sorting criteria.
+    * Select your sorting order: **`Ascending`** or **`Descending`**.
 18. Click on the "Enable Text Editor" button to make the query editor window editable.
 
     <figure><img src="../../../../../.gitbook/assets/10 - Extract.png" alt=""><figcaption></figcaption></figure>
@@ -101,23 +103,32 @@ Basic DL offers a convenient feature to extract data from Salesforce by defining
 
     <figure><img src="../../../../../.gitbook/assets/25 - Extract (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/26 - Extract.png" alt=""><figcaption></figcaption></figure>
+37. To delete the job, click on the "Delete" option.
 
+    <figure><img src="../../../../../.gitbook/assets/27 - Extract.png" alt=""><figcaption></figcaption></figure>
+38. A confirmation prompt is displayed to ensure the deletion action is intentional and acknowledged, helping prevent accidental removal of the process.
 
+    <figure><img src="../../../../../.gitbook/assets/28 - Extract.png" alt=""><figcaption></figcaption></figure>
+39. Click on the "Clone" option to initiate the clone operation of the job.
 
+    <figure><img src="../../../../../.gitbook/assets/29 - Extract.png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/30 - Extract.png" alt=""><figcaption></figcaption></figure>
+40. Once the clone operation is completed, a cloned job can be observed on the job list page.
 
+    <figure><img src="../../../../../.gitbook/assets/31 - Extract.png" alt=""><figcaption></figcaption></figure>
+41. Click on the "Log" option to observe the job details of the job.
 
+    <figure><img src="../../../../../.gitbook/assets/32 - Extract.png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/33 - Extract.png" alt=""><figcaption></figcaption></figure>
+42. The success and the failure of the records can be observed under the "Result of Last Run".
 
+    <figure><img src="../../../../../.gitbook/assets/34 - Extract.png" alt=""><figcaption></figcaption></figure>
+43. Click on the "Success" icon to observe the success records
 
-
-
-
-
-
-
-
-
+    <figure><img src="../../../../../.gitbook/assets/35 - Extract.png" alt=""><figcaption></figcaption></figure>
 
 
 

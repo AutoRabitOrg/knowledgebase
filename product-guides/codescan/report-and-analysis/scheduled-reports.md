@@ -14,7 +14,7 @@ To configure scheduled reports,
 2.  Navigate to the **More** tab and choose **Project Reports** from the dropdown.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Project Reports</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3).png" alt=""><figcaption><p>Project Reports</p></figcaption></figure>
 3. Choose **Scheduling** option as **Cron**, if not automatically selected.
 4. The **Cron expression** is a string consisting five subexpressions (fields) that describe individual details of the schedule.
 

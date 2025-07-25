@@ -17,7 +17,7 @@ CodeScan can scan 3rd party libraries only when the code is present in the file,
 1.  Open the Project under the Organization for which you need to run the analysis and navigate to **Project Settings > General Settings > Analysis Scope**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1).png" alt=""><figcaption><p>Project Settings</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1) (1).png" alt=""><figcaption><p>Project Settings</p></figcaption></figure>
 2.  You will now be able to view the tab, under which you can select your required specification to enable this feature during the analysis.
 
     *   **Wildcards:** If you scroll the tab farther to the end, you can see a portion that says “wildcards,” under which there are rules and examples, which help you understand how to enter the specifications or part of the file name to enable this feature. \
@@ -36,7 +36,7 @@ CodeScan can scan 3rd party libraries only when the code is present in the file,
 4.  Once the analysis is completed, go to the **Code** tab to view the files as per your specified settings.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1) (1).png" alt=""><figcaption><p>Code Tab</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>Code Tab</p></figcaption></figure>
 
 Here are a couple of implementation examples:
 

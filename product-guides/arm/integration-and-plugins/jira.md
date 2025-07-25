@@ -83,6 +83,8 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
    * You’ll be redirected to JIRA to log in and approve access.
    * Once authorized, the connection is complete.
 
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+
 ### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 
 Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org/ Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your Jira projects and teams.&#x20;

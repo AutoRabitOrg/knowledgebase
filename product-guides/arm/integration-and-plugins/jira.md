@@ -6,7 +6,7 @@ ARM-JIRA integration automatically posts updates to Jira tickets when you run va
 
 **To put it simply:** JIRA allows you to track any kind of unit of work (be it an issue, bug, story, project task, etc.) through a predefined workflow. However, in order to integrate JIRA as a plugin with ARM, it does require some steps in ARM to get it configured. The below section will help you out to get JIRA configured in ARM in easy steps.
 
-Point to Note:**Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
+Point to Note: **Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
 
 ### Integrate JIRA with ARM <a href="#integrate-jira-with-arm" id="integrate-jira-with-arm"></a>
 
@@ -67,6 +67,21 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 
 **Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
 {% endhint %}
+
+### Steps to Configure OAuth in ARM
+
+1. **Create an OAuth App in Atlassian**
+   * Go to the Atlassian Developer Console and create a new **OAuth 2.0 (3LO)** app.
+   * Enter the **callback URL** provided in ARM.
+   * Copy the **Client ID** and **Client Secret**.
+2. **Configure in AutoRABIT**
+   * In ARM, go to **Admin > My Account**.
+   * Scroll to **ALM Settings** and expand the **JIRA** section.
+   * Enter the **Client ID**, **Client Secret**, and the **callback URL**.
+   * Click **Test Credentials**, then **Save**.
+3. **Authorize the Connection**
+   * You’ll be redirected to JIRA to log in and approve access.
+   * Once authorized, the connection is complete.
 
 ### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 

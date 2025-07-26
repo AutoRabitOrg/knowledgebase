@@ -18,9 +18,11 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
-<p align="center">CodeScan Release 25.1.5 – July 20, 2025</p>
+## CodeScan Release 25.1.5
 
-Summary:
+**Release Date: July 20, 2025**
+
+### Summary:
 
 CodeScan 25.1.5 is comprised of the following 17 components:
 

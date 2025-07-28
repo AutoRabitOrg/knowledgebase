@@ -44,3 +44,38 @@ To register a Salesforce org with Vault, follow the steps below in sequence:
 Once you register your Salesforce Org with  Vault, you will automatically navigate to the **`Configs`** tab. The next step is to set up a [backup configuration for your Salesforce Org](setup-backup-configuration-for-salesforce-org.md). The configuration backup job creates a snapshot of the data/metadata from your Salesforce org and retrieves the data required for a successful restore. If you're not redirected in the first place, you can always do so by navigating to **`Setup > Selecting your Salesforce Org >`** **`Configs > Add Backup Config`**. Proceed with the backup or archival configurations when you register your Salesforce org. [**Read More---->**](setup-backup-configuration-for-salesforce-org.md)
 
 Similarly, you can set up an [archive configuration](archival-configuration.md) using  **`Add Archive Config`** on the **`Configs`** screen. Data Archive is about moving unwanted data components from your Salesforce Org and freeing up space for new data. With Vault, this data is safely stored for future use. In a nutshell, Vault makes Salesforce data archiving and backup a simple, productive, and effective process. [**Read More---->**](archival-configuration.md)
+
+### Manage ORG Details
+
+Managing ORG login details is now more streamlined with the new capability to edit and authenticate registered ORGs. The newly introduced **“EDIT”** option allows updating outdated or incorrect login credentials, ensuring that stale user details are removed from the Vault application and replaced with active, verified credentials.
+
+About The Feature
+
+This feature enables the secure update of login credentials for an existing ORG without affecting any associated configurations or jobs. Once the new credentials are authenticated, they are seamlessly bound to the existing ORG, ensuring uninterrupted access to configurations and scheduled jobs. This enhances operational continuity and supports compliance requirements where regular credential updates are necessary.
+
+Step-By-Step Guide:
+
+1.  Open any ORG through the “Setup” of the Vault application.
+
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+2. On opening the ORG click on the EDIT button to initiate editing the ORG details.
+3.  Upon clicking the **EDIT** button, the fields **Org Type**, **Org Title**, and **User Name** become editable, allowing the user to make the intended updates.
+
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+4. Based on the requirement update the fields “Org Type” and “Org Title” as required.
+5. For updating the “User Name” authentication is required, as the login is tied to the ORG, changing the username requires authentication.
+6.  Enter the required “User Name” and click on “AUTHENTICATE” to initiate the authentication.
+
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+7. On clicking the “AUTHENTICATE” the flow will navigate to the Salesforce login page.
+8.  Observe the username and continue to enter the password.
+
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+9. On clicking “ALLOW” the flow will navigate to the Vault application where a message will be displayed referring to the change in the user details.
+10. Read through the message and click on “OK” or “CANCEL”, to continue with the message.
+11. On clicking “OK”, the login details will be updated and a message inferring the same will be displayed on the application.
+
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+12. With this the user details are updated successfully on the existing ORG

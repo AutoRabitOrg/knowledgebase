@@ -54,7 +54,7 @@ To resolve these issues, simply reauthenticate your environment. Follow these st
 2.  Click Delete Analysis\
 
 
-    <figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Delete Project Analysis</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption><p>Delete Project Analysis</p></figcaption></figure>
 3.  Make sure you DO NOT select the checkbox to Delete the Project Also (as you just want to reattach it while maintaining the same project and its history).
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>DO NOT select the checkbox to Delete the Project Also</p></figcaption></figure>

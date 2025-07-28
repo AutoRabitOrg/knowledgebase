@@ -14,7 +14,7 @@ When registering your Salesforce Org in Vault, you must configure the backup and
 
 When you are done with the metadata/data selection, you will be navigated to the **`Scheduling`** screen, where you are required to fill in the details as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Give a **`name`** for the scheduled backup configuration.
 2.  Select the **`Backup Type`** for both metadata and data members.
@@ -38,7 +38,7 @@ When you are done with the metadata/data selection, you will be navigated to the
 
 5. Select the **`email notification`** icon to receive an email notification whenever the objects are backed up from your Salesforce Org.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Next, choose the **`frequency`** for backup, i.e., daily, weekly, monthly, or at any specific interval. If you want the schedule of the backup process to run every 4 hours, select the **`Specific interval`** option and indicate the time frame as 4 hours.
 

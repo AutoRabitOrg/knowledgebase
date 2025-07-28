@@ -138,6 +138,6 @@ It’s necessary to sync attributes of IDP users with properties of CodeScan use
 ### Step 5: Testing the Single Sign-On Configuration <a href="#step-5-testing-the-single-signon-configuration" id="step-5-testing-the-single-signon-configuration"></a>
 
 1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.\
-   ![](<../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png>)
+   ![](<../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png>)
 2. Enter the domain name of your organization in the **`Your Company email`** field. **For example**- _autorabit.com_.
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.

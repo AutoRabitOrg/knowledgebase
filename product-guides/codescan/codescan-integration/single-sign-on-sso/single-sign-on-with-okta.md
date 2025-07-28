@@ -16,7 +16,7 @@ When SSO is enabled, users and groups logging into CodeScan are redirected to th
 Before configuring SSO in OKTA, you must enable SSO in CodeScan.
 
 1. In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).\
-   ![](<../../../../.gitbook/assets/image (9).png>)
+   ![](<../../../../.gitbook/assets/image (9) (1).png>)
 2. Go to **`Administration > SAML Connections`**.\
    ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png>)
 3.  Click on **`Create Connection`**.\
@@ -37,11 +37,11 @@ Before configuring SSO in OKTA, you must enable SSO in CodeScan.
 7.  Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 8.  You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to OKTA.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: Adding CodeScan as an App in OKTA <a href="#step-2-adding-codescan-as-an-app-in-okta" id="step-2-adding-codescan-as-an-app-in-okta"></a>
 
@@ -72,7 +72,7 @@ Set up the CodeScan application to provide necessary configuration information f
       **For example:** If your _instance URL_ is `https://app.codescan.io` and the _connection\_id_ is `OKTA-SAML`, your SSO URL would be _`https://app.codescan.io/_codescan/login/saml2/sso/OKTA-SAML`_
     * **`Audience URI (SP Entity ID)`**: Enter your _connection\_id_ in this field. **Example:** `OKTA-SAML`
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Where can I find my Connection ID?**

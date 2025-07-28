@@ -53,7 +53,7 @@
    *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server. \
 
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
    *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.\
 
 

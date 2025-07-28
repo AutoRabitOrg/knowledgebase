@@ -34,7 +34,7 @@ Email notifications are triggered for each revert commit along with the summary 
 
 **Revert Commits Conflicts**
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Conflicts in Revert Commit <a href="#conflicts-in-revert-commit" id="conflicts-in-revert-commit"></a>
 

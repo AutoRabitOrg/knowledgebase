@@ -30,7 +30,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 7. Please double-check that you use your AccelQ username instead of the email address that you use to log in to AccelQ.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
 
 #### Step 2: Integrate AccelQ with AutoRABIT
 

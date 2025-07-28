@@ -25,7 +25,7 @@ AutoRABIT Guard’s Data Classification enhances your organization's ability to 
   Why It Matters? It's not enough to know a field is sensitive—you need to know how widely it's used and in what contexts. Guard tells you:&#x20;
   * **Where the field lives**: See where the field appears across your org in Page Layouts, Apex Classes, Flows, Validation Rules, etc.&#x20;
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Field Usage</p></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Field Usage</p></figcaption></figure></div>
 
 * **How often it's populated**: Understand if the field is frequently used, rarely touched, or unused—critical for prioritizing cleanup or lockdowns.
 

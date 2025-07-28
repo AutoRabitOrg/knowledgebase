@@ -13,7 +13,7 @@ The code coverage report provides information about the apex tests that are run,
 
 2. Select the **Salesforce Org** and click on **Generate Code Coverage Report.**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Next, fill in the details to run the apex test class for the selected Salesforce Org. Click **Update & Run**.
 

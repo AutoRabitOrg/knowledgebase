@@ -18,7 +18,7 @@ Salesforce recommends the following components that need to be tested:
 
 The following test options are available when you deploy or commit or use CI jobs:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="418"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="418"><figcaption></figcaption></figure>
 
 * **`No Test Run:`** No tests are run. This test level applies only to deployments to development environments like Sandbox, Developer Edition, or trial organizations. This test level is the default for development environments.
 * **`Run Specified Tests:`** Only the tests that you specify are run. Provide the names of test classes in a comma-separated list.Make sure for the runTests parameter, and you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to **`Run Specified Tests`**.\
@@ -75,6 +75,6 @@ In the **`Deployment Settings`** screen, you can choose the apex test level to v
 
 You can set the apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For more information on Apex unit tests, Refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex_testing/units/apex_testing_intro) module on Apex test level testing.

@@ -33,7 +33,7 @@ You can create a URL callout inside a **CI Job** to trigger any Tricentis (Testi
 
 Obtain an API key from Testim Salesforce (available on _Pro_ accounts). Copy the key immediately; it is shown only once.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt="API Keys Library page"><figcaption><p>API Keys Library</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="API Keys Library page"><figcaption><p>API Keys Library</p></figcaption></figure>
 
 ### 2 — Copy the execution payload
 

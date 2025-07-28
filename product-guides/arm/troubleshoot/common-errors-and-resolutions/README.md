@@ -144,7 +144,7 @@ If the test connection for the mapped repository and branch fails, we recommend 
 
 Getting the ''Not Available for deploy for this organization'' error message while deploying the Apex class to the target org can occur when your Salesforce user has an Integration license assigned.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1750).png" alt=""><figcaption></figcaption></figure>
 
 While this license generally allows users to validate and deploy standard or custom objects and fields, it is usually insufficient for deploying most other metadata types. For example, if you are trying to deploy new or updated permissions or custom items like Flows or Apex, the Integration license is likely to result in one of the following two errors:
 

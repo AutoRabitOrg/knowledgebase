@@ -13,5 +13,5 @@ By setting a default Quality Profile, you assign every project without a specifi
 3.  Under the specific Quality Profile selection dropdown, choose the Quality Profile you want to use for the scans.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Choose Quality Profile</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Choose Quality Profile</p></figcaption></figure>
 

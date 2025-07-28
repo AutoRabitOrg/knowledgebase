@@ -21,7 +21,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
 8. Choose your **destination environment**. It can be your target salesforce org or commit to your version control branch.
 9. To deploy into a Salesforce Org, select the **Deploy To** checkbox and choose your **Destination Org**. To commit to a branch, select the **Commit To** box, enter your **Repository/Branch** details, and **comment** (if any).
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: For commits, the features will get committed to the default location in your version control branch. By default, the location is set to the dataset.
@@ -33,7 +33,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
     * Sorting (only if the 'commit' checkbox is selected)
     * Applied Filters
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mappings <a href="#applied-mappings" id="applied-mappings"></a>
 
@@ -79,7 +79,7 @@ Based on your destination selection, you will have different deployment buttons 
 * **Commit:** Committing to the version control branch only
 * **Commit & Deploy:** Committing and deployment together.
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.&#x20;
 

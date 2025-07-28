@@ -48,7 +48,7 @@ CodeScan offers MFA/2FA to further support account privacy and security. This do
 
 1. When you [sign up to CodeScan cloud](https://knowledgebase.autorabit.com/codescan/docs/codescan-getting-started#signing-up-with-codescan), you can enable two-factor authentication by selecting the **`Require Two-Factor Authentication`** checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fill in all the details and click on the **`Sign Up`** button.
 3. Download the authenticator app on your mobile phone. Once you have downloaded the app, select **`I’ve already downloaded it`** to continue.

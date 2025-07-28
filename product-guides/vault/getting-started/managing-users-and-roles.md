@@ -20,13 +20,13 @@ To create or edit a role:
 2. Go to the **Manage Users** module.
 3. Go to the **Roles** tab and click **Add Role**.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Enter a **Name** and **Description** for the role.
 5. On the **Permissions** section, select checkboxes for each permission you want users with this role to have.
 6. Click **Add Role**.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. The newly created role will be displayed on the **Manage Users'** home page. Note:
    * The account with the **Admin** role has the maximum permissions possible and cannot be edited or renamed.
@@ -37,10 +37,10 @@ To create or edit a role:
 
 ### Creating Users <a href="#creating-users" id="creating-users"></a>
 
-You can create a new user with just a few clicks. It’s as simple as entering the first name, middle and last name, an email, and selecting a role, Salesforce Orgs (if required), and designation. After you invite users, they receive a confirmation email with a link to create their login password.&#x20;
+You can create a new user with just a few clicks. It’s as simple as entering the first name, middle and last name, an email, and selecting a role, Salesforce Orgs (if required), and designation. After you invite users, they receive a confirmation email with a link to create their login password.
 
 {% hint style="info" %}
-**Note:** You need **Administrator Privileges** to add user accounts.&#x20;
+**Note:** You need **Administrator Privileges** to add user accounts.
 {% endhint %}
 
 1. Go to the **Manage Users** module and click on the **Users** tab.
@@ -49,9 +49,9 @@ You can create a new user with just a few clicks. It’s as simple as entering t
 <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. On the **Add User** wizard:
-   * Enter the user's **First**, **Middle**, and **Last Name** and **Email Address**.&#x20;
-   * Select the appropriate **role** from the drop-down list.&#x20;
-     * The **Salesforce Orgs** field will be displayed only if the **Enable Org Access Control** toggle is turned on (in the **Manage Users** screen). In this dropdown, you must choose the Salesforce Orgs you want your user to access. The user will then be allowed to access only those Salesforce Orgs authorized for them. Based on the Salesforce Org access, users can carry out Vault™ operations in their Salesforce Org such as backup, restore, replicate, compare, archival, etc.&#x20;
+   * Enter the user's **First**, **Middle**, and **Last Name** and **Email Address**.
+   * Select the appropriate **role** from the drop-down list.
+     * The **Salesforce Orgs** field will be displayed only if the **Enable Org Access Control** toggle is turned on (in the **Manage Users** screen). In this dropdown, you must choose the Salesforce Orgs you want your user to access. The user will then be allowed to access only those Salesforce Orgs authorized for them. Based on the Salesforce Org access, users can carry out Vault™ operations in their Salesforce Org such as backup, restore, replicate, compare, archival, etc.
      * Enter the user's **designation** and add a short **description** to the user account. These fields are optional.
 4. Click **Add User.**
 
@@ -61,7 +61,7 @@ You can create a new user with just a few clicks. It’s as simple as entering t
    * The account with **the Admin** role has the maximum roles and permissions possible and cannot be edited or renamed. By default, the roles will be displayed as **All**, means, the admin has all of the privileges inside Vault.
    * The logged in administrator details are non-editable and therefore will be in disabled mode.
    * The permissions you select determine which dashboard controls are in the user's console and what settings the user can manage.
-   * The account verification link emailed to new users expires after **7 days.** Users who do not click the account verification link need an Admin to resend the account verification link to their email address.&#x20;
+   * The account verification link emailed to new users expires after **7 days.** Users who do not click the account verification link need an Admin to resend the account verification link to their email address.
    * Users must change their password the first time they log in.
    * The newly added users will be able to view their authorized Salesforce Orgs on the **Salesforce Org List (Setup)** and in the **Manage Users** section.
    * The Org Administrator will have access to all existing orgs or newly added orgs in Vault™.
@@ -81,7 +81,7 @@ After you’ve created a user, you can change most of their information and perm
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Make any desired changes and click **Save**.
 4. View the user's details when you click on the **User Information** (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1653039022101.png)) icon.

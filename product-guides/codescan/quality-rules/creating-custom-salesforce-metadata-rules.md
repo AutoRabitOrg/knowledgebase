@@ -16,7 +16,7 @@ This article explains how to enable the Salesforce Metadata rules in the CodeSca
 2.  Click on the **`Quality Profiles`** on your main organization page and then click on **`Create`** button.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Create Quality Profiles</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption><p>Create Quality Profiles</p></figcaption></figure>
 3.  Create a new rule by selecting the language as **`Salesforce Metadata`** and name your new profile. You can choose the **`Parent rule`** as an optional.\
 
 
@@ -24,7 +24,7 @@ This article explains how to enable the Salesforce Metadata rules in the CodeSca
 4.  Once you create the new quality profile, you will be navigated to a new page where you need to click on **`Activate More`** button on the left.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption><p>Activate More</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3) (1).png" alt=""><figcaption><p>Activate More</p></figcaption></figure>
 5.  Now, make sure on your left side of the page where you see the name of the rule you created; it is marked as **inactive**.\
 
 
@@ -48,7 +48,7 @@ If you are using a git repository or any other method of scanning, please skip t
 1.  Once you are done with the activation of the custom rule, go to the project with the rules you wish to run the analysis, and click on **`Project Settings > General settings`**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>General Settings</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (3).png" alt=""><figcaption><p>General Settings</p></figcaption></figure>
 2. Click the **`CodeScan`** tab on the left to open the [CodeScan](https://www.codescan.io/) specific settings and access the **`CodeScan Cloud Download Types`**.
 
 <figure><img src="../../../.gitbook/assets/image (389).png" alt=""><figcaption><p>Download Types</p></figcaption></figure>
@@ -78,7 +78,7 @@ Refer to the [**Salesforce Developer API**](https://developer.salesforce.com/doc
 4.  Run the analysis again by navigating to the **`Project Settings > Project Analysis`** menu and selecting the **`Run Manual Analysis`** button. If your metadata files contain issues, you will see that reflected in the issues list.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Run Manual Analysis</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption><p>Run Manual Analysis</p></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Make sure the line count will not show up on the line count breakdown as it is not a **language**. However, the issues will show up in the issues list as seen in the above figure.

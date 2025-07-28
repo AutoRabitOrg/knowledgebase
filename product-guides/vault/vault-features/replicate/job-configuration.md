@@ -63,7 +63,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 12. The user clicks on the “New Masking Rule” button to create the rule.
     * The rules that are created in a ‘Job Config’ will be specific to that unless it is published.
 
-![](<../../../../.gitbook/assets/8 (1).png>)
+![](<../../../../.gitbook/assets/8 (1) (1).png>)
 
 13. The following page will be displayed to the user on clicking the “New Masking Rule” button.
 

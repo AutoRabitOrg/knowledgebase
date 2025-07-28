@@ -1187,6 +1187,8 @@
       * [Job Configuration](product-guides/vault/vault-features/replicate/job-configuration.md)
       * [Job History](product-guides/vault/vault-features/replicate/job-history.md)
       * [Masking Rules](product-guides/vault/vault-features/replicate/masking-rules.md)
+    * [Live Data Masking](product-guides/vault/vault-features/live-data-masking/README.md)
+      * [Live Data Masking](product-guides/vault/vault-features/live-data-masking/live-data-masking.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)
       * [Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
       * [Parent-Child Record Archival](product-guides/vault/vault-features/archive/parent-child-record-archival.md)

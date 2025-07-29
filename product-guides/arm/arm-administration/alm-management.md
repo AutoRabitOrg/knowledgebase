@@ -16,7 +16,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 
 ***
 
-### Registering an ALM <a href="#registering-an-alm" id="registering-an-alm"></a>
+## Registering an ALM <a href="#registering-an-alm" id="registering-an-alm"></a>
 
 1. Log in to ARM as an admin.
 2. Navigate to **`Admin > ALM Mgmt`**.
@@ -74,7 +74,7 @@ If the steps above do not work, create a new credential and link it to your ALM 
 **Limitation:** Jira OAuth access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please contact our experts at [support@autorabit.com](mailto:support@autorabit.com).
 {% endhint %}
 
-### Integration Settings <a href="#integration-settings" id="integration-settings"></a>
+## Integration Settings <a href="#integration-settings" id="integration-settings"></a>
 
 By default, we do not display the work items from the inactive sprints; however, if you want to view the hidden items, you can do so from this section.
 
@@ -92,7 +92,7 @@ By default, we do not display the work items from the inactive sprints; however,
 
 ***
 
-## Register an ALM - Saas Toolkit <a href="#registering-an-alm" id="registering-an-alm"></a>
+## Registering an ALM - Saas Toolkit <a href="#registering-an-alm" id="registering-an-alm"></a>
 
 1. Log in to ARM as an administrator.
 2. Navigate to **Admin › ALM Mgmt**.

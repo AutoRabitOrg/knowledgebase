@@ -32,16 +32,16 @@ We will be providing a new login URL for the new instance; the following will ne
 * Re-Authenticate your Salesforce Org ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/salesforce-org-re-authentication))&#x20;
 * Share the new instance URL with your team&#x20;
 
-After the migration they will need to use the new link to access your account&#x20;
+After the migration, they will need to use the new link to access their accounts.
 
 **What you need to know:**&#x20;
 
 * There is no change to the application, nor will your data/configurations be impacted.
-* During and post the migration activity, all data will stay in the UAE &#x20;
+* During and post the migration activity, all data will stay in the UAE.
 * We will set up a meeting, closer to the migration date, to review and coordinate the activities we identified.&#x20;
 * If you need any help with preparing for this change: &#x20;
-  * Technical assistance with completing any of the above activities -please submit a ticket via the support portal &#x20;
-* Questions or concerns about the migration – please contact your Account Manager &#x20;
+  * Technical assistance with completing any of the above activities, please submit a ticket via the support portal.
+* Questions or concerns about the migration, please contact your Account Manager. &#x20;
 
 ### How do I register GitHub repositories with two-factor authentication? <a href="#register-github-repositories-with-twofactor-authentication" id="register-github-repositories-with-twofactor-authentication"></a>
 

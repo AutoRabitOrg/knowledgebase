@@ -1,5 +1,117 @@
 # Insert Salesforce Data
 
+**The "Basic DL" feature offers a user-friendly and efficient way to insert data into Salesforce using a CSV file.** It simplifies the data load process while maintaining accuracy and speed, making it ideal for quick and straightforward data uploads.
+
+**Step-By-Step Guide:**
+
+1. Navigate to the Basic DL application by loging into the nCino application
+2.  Click on the Create button to observe the **"Insert"** option to initiate the creation of the **"Basic DL"** job.
+
+    <figure><img src="../../../../../.gitbook/assets/1 - Insert.png" alt=""><figcaption></figcaption></figure>
+3.  Clicking on "Insert" will navigate the flow to the "Login and select object" section.
+
+    <figure><img src="../../../../../.gitbook/assets/2 - Insert (3).png" alt=""><figcaption></figcaption></figure>
+4.  Click on login to fetch the object details
+
+    <figure><img src="../../../../../.gitbook/assets/3 - Insert.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/4 - Insert.png" alt=""><figcaption></figcaption></figure>
+5.  Choose an object anb move to the next screen to choose the file to inset the data.
+
+    <figure><img src="../../../../../.gitbook/assets/5 - Insert.png" alt=""><figcaption></figcaption></figure>
+6.  After uploading the file, click on the "Upload File" option to upload the file into the system.
+
+    <figure><img src="../../../../../.gitbook/assets/6 - Insert.png" alt=""><figcaption></figcaption></figure>
+7.  On successful upload of a file, the success message will be displayed
+
+    <figure><img src="../../../../../.gitbook/assets/7 - Insert.png" alt=""><figcaption></figcaption></figure>
+8.  The application will read the header of the uploaded file and populates the same information on the screen in the section below.
+
+    <figure><img src="../../../../../.gitbook/assets/8 - Insert.png" alt=""><figcaption></figcaption></figure>
+9.  An "Automap" option will appear as the field details get populated on the screen. Enabling this option maps the fields from the source against the fields on the destination ORG.
+
+    <figure><img src="../../../../../.gitbook/assets/9 - Insert (1).png" alt=""><figcaption></figcaption></figure>
+10. Specify the criteria for matching fields to fetch records from the source system. This setting determines how the data should be identified and retrieved during processing.
+11. Click on the drop-down beside the object name and select the required field from the list.
+
+    <figure><img src="../../../../../.gitbook/assets/10 - Insert (1).png" alt=""><figcaption></figcaption></figure>
+12. Observe the <img src="../../../../../.gitbook/assets/image (1868).png" alt="" data-size="line"> icon beside the "Automap" option, clicking that will provide the options:
+
+    1. All: Will display all of the fields existing from the mapping
+    2. Mapped: will display the fields mapped through the "Automap" option
+    3. Unmapped: will display the fields that remain unmapped after enabling the "Automap" option.
+
+    <figure><img src="../../../../../.gitbook/assets/10.1 - Insert.png" alt=""><figcaption></figcaption></figure>
+13. Click "Next" to continue to the "Schedule" section of the flow.
+14. Observe the various scheduling options available under "Schedule" section.
+
+    <figure><img src="../../../../../.gitbook/assets/11 - Insert.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/12 - Insert.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/13 - Insert.png" alt=""><figcaption></figcaption></figure>
+15. On completing the scheduling, click on "Next"  to continue to "Process Details".
+
+    <figure><img src="../../../../../.gitbook/assets/14 - Insert.png" alt=""><figcaption></figcaption></figure>
+16. Input a name for the job and click on  "Save" to save the job.
+
+    <figure><img src="../../../../../.gitbook/assets/15 - Insert.png" alt=""><figcaption></figcaption></figure>
+17. **Use Bulk API**\
+    The Bulk API, built on REST principles, is designed for high-volume operations such as inserting, updating, or deleting large data sets. It supports both serial and parallel processing modes:
+
+    * **Serial Mode:** Processes batches one after another in sequence.
+    * **Parallel Mode:** Processes multiple batches simultaneously to increase throughput.
+
+    Enabling this option allows the system to execute the job more efficiently by leveraging concurrent batch processing where possible, thereby improving overall performance for large-scale data operations.
+18. On saving the job, the flow will navigate to the job list page.
+19. Observe and click on the "Run" button to initiate the job run
+
+    <figure><img src="../../../../../.gitbook/assets/16 - Insert.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The following articles describe using the **Single Dataloader** to insert data into Salesforce. The data is inserted via a CSV file.
 
 1. Log in to your ARM account.

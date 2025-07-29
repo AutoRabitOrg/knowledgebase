@@ -20,72 +20,102 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 
 1. Log in to ARM as an administrator.
 2. Navigate to **Admin › ALM Mgmt**.
-3.  Click **Register ALM**.
+3.  Click **Register ALM**.\
 
-    <figure><img src="../../../.gitbook/assets/image (739).png" alt="Register ALM button on the ALM Mgmt screen"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1869).png" alt=""><figcaption></figcaption></figure>
 4.  Fill the form:
 
-    #### IBM RTC, CA Agile Central, VersionOne, or Azure DevOps
+    1. **ALM Name** – friendly label.
+    2. **ALM Type** – choose the platform.\
+       ![](<../../../.gitbook/assets/image (1870).png>)
 
-    <figure><img src="../../../.gitbook/assets/image (740).png" alt="ALM registration form for Azure DevOps" width="414"><figcaption></figcaption></figure>
 
-    * **ALM Name** – friendly label.
-    * **ALM Type** – choose the platform.
-    * **ALM URL** – base server URL.
-    * **Credentials** – select stored credentials (see [Credential Manager](../troubleshoot/how-tos/create-users-credentials.md)).
 
-    #### Jira
+## Field Mapping for Work Item Updates in Salesforce
 
-    <figure><img src="../../../.gitbook/assets/image (742).png" alt="Jira registration with Standard and OAuth access types" width="414"><figcaption></figcaption></figure>
+To enable AutoRABIT to update your Work Items (e.g., User Stories or Bugs) based on commit actions, please configure the following fields from your registered Salesforce Org:\
+![](<../../../.gitbook/assets/image (1872).png>)\
 
-    * **ALM Name** – friendly label.
-    * **ALM Type** – _Jira_.
-    * **Access Type** –
-      * **Standard** – enter **ALM URL** and credentials.
-      * **OAuth** – pick **OAuth**, click **Validate & Save**, and grant access in the Jira pop-up.
 
-{% hint style="info" %}
-* Jira **OAuth** is supported for **Cloud** editions only.
-* OAuth appears only after you register Jira OAuth credentials in **ALM Settings**. Learn how [here](user-management/manage-users-account-settings.md).
-* **Access Token** expires after 1 hour; **Refresh Token** after 90 days.
+c. Salesforce Org\
+Select the Salesforce Org from your list of registered orgs where the work item updates should be applied.
 
-<img src="../../../.gitbook/assets/image (744).png" alt="" data-size="original">
-{% endhint %}
+d. Custom Object / Work Item Type\
+Choose the Custom Object that represents your Work Items (e.g., User\_Story\_\_c, Bug\_\_c). This is where the Work Item ID will be updated.
 
-5. Click **Test Connection** to verify access, then **Save**.
+e. Title Field\
+Map the field that represents the project or feature to which the Work Item belongs. This is usually a custom text field like Project\_\_c.
 
-{% hint style="info" %}
-**Troubleshooting Authentication**\
-An _Authentication Failed_ error on the EZ-Commit screen often stems from VPN issues or outdated credentials.
+f. Assignee Field\
+Select the custom field that stores the user assigned to the Work Item. This allows AutoRABIT to track ownership of the User Story or Bug.
 
-1. Go to **My Account › ALM Configuration**.
-2. Click **Test Connection** to re-authenticate.
-3. If it still fails, create a new credential and relink the ALM.
-{% endhint %}
+g. Status Field\
+Choose the custom field that reflects the current status of the Work Item (e.g., New, In Progress, Ready for QA, Closed). This field can be updated automatically based on the commit action.
 
-6. The new ALM appears in the **ALM List**.
-   * Toggle **AR Comments** to disable AutoRABIT-generated comments in Jira.
-   * For Jira, you can switch **Access Type** between _Standard_ and _OAuth_ and click **Re-Authenticate** when tokens expire.
+h. Comment Field\
+Select the custom field where commit-related comments should be posted. The system will populate this with detailed commit information after the action is performed.\
+\
+**1. Select Post Commit Action**\
+\
+Under the Post Commit section, select:
 
-{% hint style="info" %}
-**Limitation:** Jira OAuth is Cloud-only and enabled on request. Contact **support@autorabit.com** if you need it.
-{% endhint %}
+**2. Update ALM Work Item Status**
 
-***
+**Configure ALM Fields**\
+Fill in the required fields to ensure the correct ALM Work Item is updated post-commit:
 
-## Integration Settings <a href="#integration-settings" id="integration-settings"></a>
+**ALM Type**: Choose the integrated ALM tool (e.g., Salesforce).
 
-Configure how work items are shown and filtered:
+* ALM Label: Select the applicable label for this commit operation.
+* ALM Project: Pick the project or module name (e.g., User Story, Bug).
+* ALM Work item: Select the Work Item ID you wish to update.
+* ALM Work Item Status: Choose the new status you want to set (e.g., To Do, In Progress, Done).
+*   Current Status: Shows the status of the item (e.g., In Testing).\
 
-1. **Display work items from inactive sprints** – include backlog items.
-2. **Enable global filter criteria on work items** – add column filters as needed.
-3. Click **Save Settings**.
 
-<figure><img src="../../../.gitbook/assets/image (745).png" alt="Integration Settings panel"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1873).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-To remove a field’s filter, click the trash-can icon next to the rule.
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image (1874).png" alt=""><figcaption></figcaption></figure>
+
+**Complete the Commit**\
+Click Commit after configuring all required fields. The system will:
+
+* Perform the commit action.
+* Post-commit, automatically update the ALM Work Item to the new selected status.
+* Add relevant commit information to the comment field (if configured), including metadata, user, and validation results.
+
+&#x20;
+
+**Sample Outcome Post Commit Comment Format:**\
+\
+The selected Work Item will reflect the updated status in your ALM tool and include commit metadata like:
+
+\[Message] \[a00dL00001DYPnCQAX]# Saas tool Integration-2&#x20;
+
+\[Repository] bhanu-github-cloud&#x20;
+
+\[Branch] 18235\_test&#x20;
+
+\[Revision] 3637289&#x20;
+
+\[Committed by] bhanuprakash.yempati@autorabit.com&#x20;
+
+\[Committed metadata members] {Apex Class=\[A000, A0000]}&#x20;
+
+\[Pre-validation Results]&#x20;
+
+&#x20; Label Name = a00dl00001dypncqax.20250702204545047&#x20;
+
+&#x20; Apex Test Results = NA&#x20;
+
+&#x20; Static Analysis = NA&#x20;
+
+&#x20; Deployment Org = NA&#x20;
+
+&#x20; Overall Validate Deployment Status = NA&#x20;
+
+&#x20; Approved By = bhanuprakash.yempati@autorabit.com&#x20;
 
 ***
 

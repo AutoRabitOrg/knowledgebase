@@ -1,4 +1,4 @@
-# Release Notes 25.2
+# Guard Release Notes 25.2
 
 ## Guard 25.2.2 Release Notes
 

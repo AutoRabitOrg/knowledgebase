@@ -67,22 +67,36 @@
 19. Observe and click on the "Run" button to initiate the job run
 
     <figure><img src="../../../../../.gitbook/assets/16 - Insert.png" alt=""><figcaption></figcaption></figure>
+20. Observe the "Automations" available on the "Run Configuration" screen.
 
+    <figure><img src="../../../../../.gitbook/assets/16.1 - Insert.png" alt=""><figcaption></figcaption></figure>
+21. Click on "Run" to initiate the job run
+22. Observe the in-progress and the abort options available during the job run
 
+    <figure><img src="../../../../../.gitbook/assets/17 - Insert.png" alt=""><figcaption></figcaption></figure>
+23. Click on the ellipsis icon to view the options available for the job.
+24. Click on "Schedule" to observe the set schedule options.
+25. Click on the "Delete" option to delete the job.
 
+    <figure><img src="../../../../../.gitbook/assets/18 - Insert.png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/19 - Insert.png" alt=""><figcaption></figcaption></figure>
+26. Click on the "Clone" to clone the job.
 
+    <figure><img src="../../../../../.gitbook/assets/20 - Insert.png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/21 - Insert.png" alt=""><figcaption></figcaption></figure>
+27. On completing the job run observe the success and "Failure" records
 
+    <figure><img src="../../../../../.gitbook/assets/24 - Insert (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../.gitbook/assets/25 - Insert.png" alt=""><figcaption></figcaption></figure>
+28. Click on the "Log" to view the details of the job.
 
+    <figure><img src="../../../../../.gitbook/assets/22 - Insert.png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
-
-
+    <figure><img src="../../../../../.gitbook/assets/23 - Insert.png" alt=""><figcaption></figcaption></figure>
+29.
 
 
 

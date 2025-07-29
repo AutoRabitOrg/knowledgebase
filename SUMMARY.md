@@ -98,7 +98,7 @@
         * [Release Notes 25.0.1 Tiger 3.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-25.0.1-tiger-3.0.md)
         * [Release Notes 24.0.13 Tiger 2.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.13-tiger-2.0.md)
         * [Release Notes 24.0.9 Tiger](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.9-tiger.md)
-      * [Prior Editions](release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/README.md)
+      * [Self-Hosted Prior Editions](release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/README.md)
         * [Release Notes 24](release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/release-notes-24/README.md)
           * [Release Notes 24.0.8](release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/release-notes-24/release-notes-24.0.8.md)
           * [Release Notes 24.0.5](release-notes/release-notes/codescan-release-notes/on-premise-releases/prior-editions/release-notes-24/release-notes-24.0.5.md)
@@ -125,8 +125,8 @@
     * [Vault Release Notes 22.0](release-notes/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Vault Release Notes 21.0](release-notes/release-notes/vault-release-notes/vault-release-notes-21.0.md)
   * [Guard Release Notes](release-notes/release-notes/guard.md)
-    * [Release Notes 25.2](release-notes/release-notes/guard/release-notes-25.2.md)
-    * [Release Notes 25.1](release-notes/release-notes/guard/release-notes-25.1.md)
+    * [Guard Release Notes 25.2](release-notes/release-notes/guard/guard-release-notes-25.2.md)
+    * [Guard Release Notes 25.1](release-notes/release-notes/guard/release-notes-25.1.md)
 
 ## Product Guides
 

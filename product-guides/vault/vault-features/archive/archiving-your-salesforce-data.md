@@ -83,7 +83,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
     <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
 14. Now go to the **Archive** tab.
-15. Select your [**Salesforce Org**](../../../arm/arm-administration/registration/salesforce-org/) for which you configured the archive recently.&#x20;
+15. Select your [**Salesforce Org**](broken-reference) for which you configured the archive recently.&#x20;
 16. Select the **Environment**.
 17. Select the archive configured recently under **Configurations** drop-down field.
 

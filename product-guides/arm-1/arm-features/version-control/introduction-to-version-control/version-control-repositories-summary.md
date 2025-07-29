@@ -41,7 +41,7 @@ Pull requests can only be opened between two branches that are different. More d
 
 #### Branches/Tags <a href="#branchestags" id="branchestags"></a>
 
-The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](../../../../arm/arm-administration/registration/version-control-repository/git-integration/git-tag.md).
+The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](broken-reference).
 
 **Additional details under Branch**
 

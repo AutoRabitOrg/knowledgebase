@@ -44,7 +44,7 @@ Follow these steps to create a module in AutoRABIT:
 
     <figure><img src="../../.gitbook/assets/image (1442).png" alt="Validate and Push"><figcaption></figcaption></figure>
 7.  **Validate dependencies**\
-    Compare the Source Org with another [Salesforce Org](arm-administration/registration/salesforce-org/) to ensure no dependent components are omitted.
+    Compare the Source Org with another [Salesforce Org](broken-reference) to ensure no dependent components are omitted.
 
     <figure><img src="../../.gitbook/assets/image (1443).png" alt="Validation options"><figcaption></figcaption></figure>
 8. **Additional options**

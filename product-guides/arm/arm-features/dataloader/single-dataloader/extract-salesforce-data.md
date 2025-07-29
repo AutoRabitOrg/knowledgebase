@@ -8,7 +8,7 @@ The following articles describe using **Single Dataloader** to extract data from
 
 <figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Choose your [**`Salesforce org`**](../../../arm-administration/registration/salesforce-org/) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
+4. Choose your [**`Salesforce org`**](broken-reference) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch objects`** to fetch all the objects from your Salesforce org.
 7. Select the object from which you wish to extract the data. For example, **Account**, **Contact**, **Lead**, etc. You can use the **`Search`** function to search through your objects and  **`filter`** to filter your standard/custom objects quickly.

@@ -2,7 +2,7 @@
 
 ### What’s a Package? <a href="#whats-a-package" id="whats-a-package"></a>
 
-A **package** is a container of related metadata—features, customizations, and schema—that you move from one [Salesforce org](arm-administration/registration/salesforce-org/) to another.
+A **package** is a container of related metadata—features, customizations, and schema—that you move from one [Salesforce org](broken-reference) to another.
 
 There are two kinds:
 

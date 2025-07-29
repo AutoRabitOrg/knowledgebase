@@ -8,7 +8,7 @@ The following articles describe using **Single Dataloader** to delete data from 
 
 <figure><img src="../../../../../.gitbook/assets/image (79) (1) (1).png" alt="Delete option on Dataloader page"><figcaption></figcaption></figure>
 
-4. Choose your [**`Salesforce Org`**](../../../../arm/arm-administration/registration/salesforce-org/) and select your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
+4. Choose your [**`Salesforce Org`**](broken-reference) and select your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
 5. The corresponding **`URL`** and **`Username`** are auto-generated based on the selection.
 6. Click **`Login and Fetch Objects`** to load all objects from your Salesforce Org.
 

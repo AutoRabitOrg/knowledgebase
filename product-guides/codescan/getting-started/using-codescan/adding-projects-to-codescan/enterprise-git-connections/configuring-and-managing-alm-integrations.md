@@ -28,7 +28,7 @@
 
 **Allowed IP Ranges**
 
-4. Specify the CIDR blocks or IP ranges that are permitted to access your Enterprise server.
+4. Please provide the CIDR ranges or IP addresses from which your Enterprise server operates.
 
 **OAuth Credentials**
 

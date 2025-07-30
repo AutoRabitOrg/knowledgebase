@@ -1,8 +1,6 @@
 # Common Error Messages
 
-## Vault FAQs
-
-## Common Error Messages + Resolutions
+## Vault FAQs - Common Error Messages + Resolutions
 
 ### Restore/Replicate
 

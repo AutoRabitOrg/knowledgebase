@@ -1,5 +1,44 @@
 # Update Salesforce Data
 
+The basic DL provides a potent yet easy-to-use application to update data into Salesforce seamlessly.&#x20;
+
+**Step-By-Step Guide:**
+
+1.  On logging into the nCIno application, navigate to the Dataloader to initiate the creation of the "Update" job.
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 1.png" alt=""><figcaption></figcaption></figure>
+2.  On the "Login and select object" section of the flow login to the ORGs and select the required objects.
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 2.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 3.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 4 (1).png" alt=""><figcaption></figcaption></figure>
+
+    1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The following article describes using **Single Dataloader** to update data in Salesforce. The data is updated via a CSV file.
 
 1. Log in to your ARM account.

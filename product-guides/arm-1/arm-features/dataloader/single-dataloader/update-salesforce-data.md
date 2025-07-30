@@ -99,6 +99,25 @@ The basic DL provides a potent yet easy-to-use application to update data into S
 28. Click on the ellipses icon to observe the job optoins.
 
     <figure><img src="../../../../../.gitbook/assets/Update - 25.png" alt=""><figcaption></figcaption></figure>
+29. Click on the "Edit" option to edit the job created
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 26.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 27.png" alt=""><figcaption></figcaption></figure>
+30. Click on "Schedule" to observe the set schedule and create any schedules
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 28.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 29.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Update - 30.png" alt=""><figcaption></figcaption></figure>
+
+
+31.
+
+
+
+
 
 
 

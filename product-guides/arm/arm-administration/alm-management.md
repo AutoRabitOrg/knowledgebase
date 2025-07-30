@@ -44,6 +44,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
          * **`OAuth:`** Select the access type as **`OAuth`**, and click on **`Validate & Save`**. You will be redirected to the ALM's website to authenticate your credentials and grant permission.
 
 {% hint style="info" %}
+
 **Important Notes:**
 
 * Jira OAuth access type is currently supported for **Cloud versions** only.
@@ -74,25 +75,7 @@ If the steps above do not work, create a new credential and link it to your ALM 
 **Limitation:** Jira OAuth access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please contact our experts at [support@autorabit.com](mailto:support@autorabit.com).
 {% endhint %}
 
-## Integration Settings <a href="#integration-settings" id="integration-settings"></a>
-
-By default, we do not display the work items from the inactive sprints; however, if you want to view the hidden items, you can do so from this section.
-
-1. Select the following checkbox to view the work items from the inactive sprints: **`Display work items from inactive sprints (we recommend setting up global filter criteria if are enabling this)`**
-2. **`Enable global filter criteria on work items`**: This checkbox allows you to specify filter criteria.
-   * You can select which fields are displayed by selecting the necessary column/field. However, you can refine the list of work items displayed by configuring a worklist filter.
-   * Repeat these steps for each field if you want to set filter criteria.
-3. Click **`Save Settings`**.
-
-<figure><img src="../../../.gitbook/assets/image (745).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-**Note:** To remove a field's filter criteria, click on the ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QT6MJ131.png) icon to the right of the rule.
-{% endhint %}
-
-***
-
-## Registering an ALM - Saas Toolkit <a href="#registering-an-alm" id="registering-an-alm"></a>
+## For Salesforce as ALM <a href="#registering-an-alm" id="registering-an-alm"></a>
 
 1. Log in to ARM as an administrator.
 2. Navigate to **Admin › ALM Mgmt**.
@@ -167,21 +150,21 @@ Click Commit after configuring all required fields. The system will:
 \
 The selected Work Item will reflect the updated status in your ALM tool and include commit metadata like:
 
-\[Message] \[a00dL00001DYPnCQAX]# Saas tool Integration-2&#x20;
+\[Message] \[************]# Saas tool Integration-2&#x20;
 
-\[Repository] bhanu-github-cloud&#x20;
+\[Repository] **********;
 
 \[Branch] 18235\_test&#x20;
 
 \[Revision] 3637289&#x20;
 
-\[Committed by] bhanuprakash.yempati@autorabit.com&#x20;
+\[Committed by] ************@******.com&#x20;
 
 \[Committed metadata members] {Apex Class=\[A000, A0000]}&#x20;
 
 \[Pre-validation Results]&#x20;
 
-&#x20; Label Name = a00dl00001dypncqax.20250702204545047&#x20;
+&#x20; Label Name = **************.******&#x20;
 
 &#x20; Apex Test Results = NA&#x20;
 
@@ -191,7 +174,25 @@ The selected Work Item will reflect the updated status in your ALM tool and incl
 
 &#x20; Overall Validate Deployment Status = NA&#x20;
 
-&#x20; Approved By = bhanuprakash.yempati@autorabit.com&#x20;
+&#x20; Approved By = *********.******@******.com&#x20;
+
+***
+
+## Integration Settings <a href="#integration-settings" id="integration-settings"></a>
+
+By default, we do not display the work items from the inactive sprints; however, if you want to view the hidden items, you can do so from this section.
+
+1. Select the following checkbox to view the work items from the inactive sprints: **`Display work items from inactive sprints (we recommend setting up global filter criteria if are enabling this)`**
+2. **`Enable global filter criteria on work items`**: This checkbox allows you to specify filter criteria.
+   * You can select which fields are displayed by selecting the necessary column/field. However, you can refine the list of work items displayed by configuring a worklist filter.
+   * Repeat these steps for each field if you want to set filter criteria.
+3. Click **`Save Settings`**.
+
+<figure><img src="../../../.gitbook/assets/image (745).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:** To remove a field's filter criteria, click on the ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-QT6MJ131.png) icon to the right of the rule.
+{% endhint %}
 
 ***
 

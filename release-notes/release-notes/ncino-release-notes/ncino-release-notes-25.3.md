@@ -1,28 +1,22 @@
----
-hidden: true
----
-
 # nCino Release Notes 25.3
-
-
-
-
-
-
-
-
-
-
 
 ## nCino + DL - Release 25.3.4 <a href="#title-text" id="title-text"></a>
 
-**Release Date:** July 27, 2025
+**Release Date:** August 03, 2025
 
+**Commit Jobs**
 
+The processing of the commit jobs through the commit workspace has been streamlined.
 
+**Dataloader Pro – Stability Improvement**\
+An issue affecting the reliability of Dataloader Pro job execution has been resolved, ensuring smoother performance under high-load conditions.
 
+**DL PRO - Clone Issue**
 
+An issue that is occurring during the clone operation is rectified
 
+**Dataloader Pro – Clone Operation Fix**\
+Resolved an issue where the clone functionality did not behave as expected, ensuring cloned jobs retain original configurations accurately.
 
 ### nCino + DL - Release 25.3.3
 

@@ -6,7 +6,7 @@ This error is encountered if you do not have the "AutoRABITOAuth2" installed in 
 
 <figure><img src="../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
 
-### Troubleshooting: <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
+**Solution:**
 
 1. Log in to the PROD org.
 2. Search for the connected app.

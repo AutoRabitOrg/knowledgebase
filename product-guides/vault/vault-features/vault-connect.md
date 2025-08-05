@@ -1,5 +1,7 @@
 # Vault Connect
 
+## Vault Connect - Archive As Source
+
 ## Introduction
 
 This document provides complete information about the new feature Vault Connect, which will enhance the user’s capability to better utilize Vault in viewing archived Salesforce data from an external data source.
@@ -87,6 +89,74 @@ This document provides complete information about the new feature Vault Connect,
 <figure><img src="../../../.gitbook/assets/image (364).png" alt="" width="563"><figcaption></figcaption></figure>
 
 19. On the Connect Config Summary, you can view all the configurations created.
+
+## Vault Connect - Backup As Source
+
+#### **Overview**
+
+Vault-Connect now supports backups as a source, significantly expanding its flexibility and utility. This enhancement enables multiple data sources—including both archives and backups—to be accessed seamlessly within Salesforce through external objects. By making historical and operational data available directly in Salesforce, Vault-Connect strengthens support for business continuity planning (BCP), compliance audits, and contingency operations, all without the need for manual data retrieval
+
+#### Step-By-Step Guide:
+
+1. Login to the Vault application
+2.  Click on any ORG and navigate to the Connect module under the ORG.
+
+    <figure><img src="../../../.gitbook/assets/image (1875).png" alt=""><figcaption></figcaption></figure>
+3. After landing on the “Connect” module, click on th “ADD CONNECT CONFIG” button to initiate the connect config.
+4.  A pop-up will be displayed, with the following information:
+
+    1. How or where to configure the external data source.
+    2. OData URL for configuring the external data source, and
+    3. What to select when selecting Auth providers
+
+    <figure><img src="../../../.gitbook/assets/image (1876).png" alt=""><figcaption></figcaption></figure>
+5. Follow the suggested links to configure as suggested or click “OK” to continue.
+6.  Clicking “OK” will provide the user with two options to select from.
+
+    <figure><img src="../../../.gitbook/assets/image (1877).png" alt=""><figcaption></figcaption></figure>
+7. Select “Backup” as a source and click ‘ok’.
+8.  Clicking on ‘ok’ will redirect to the “Backup Config” section of the flow.
+
+    <figure><img src="../../../.gitbook/assets/image (1878).png" alt=""><figcaption></figcaption></figure>
+9. Select any of the backup from the list of backups available
+10. Click on the “info” icon available under the “Backup Config Details” to observe the configuration details of the selected config.
+
+    <figure><img src="../../../.gitbook/assets/image (1879).png" alt=""><figcaption></figcaption></figure>
+11. On selecting the required config, click on the “NEXT” to continue to the “Jobs” section.
+
+    <figure><img src="../../../.gitbook/assets/image (1880).png" alt=""><figcaption></figcaption></figure>
+12. Select the required job(s) from the available list of jobs and click ‘NEXT’ to continue.
+13. **Enable the “Automatically Include New Backup Jobs” option** to ensure that any newly created jobs associated with the selected backup configuration are automatically included in future Vault Connect runs.
+
+    <figure><img src="../../../.gitbook/assets/image (1881).png" alt=""><figcaption></figcaption></figure>
+14. Now, the flow will navigate to the “Objects” section.
+15. Objects selection and the field selection can be made under this section of the flow.
+
+    <figure><img src="../../../.gitbook/assets/image (1882).png" alt=""><figcaption></figcaption></figure>
+16. Click on the fields icon to observe the list of fields available under that object.
+
+    <figure><img src="../../../.gitbook/assets/image (1883).png" alt=""><figcaption></figcaption></figure>
+17. Observe the list of fields available and make sure, only the required fields are only selected.
+
+    <figure><img src="../../../.gitbook/assets/image (1884).png" alt=""><figcaption></figcaption></figure>
+18. After making the necessary selections, click “Apply” to successfully update the object list with the changes.
+19. Once all the required modifications are done, click on the “SAVE” to save the configuration created
+20. Clicking on save will prompt for entering a label for the created config.
+21. Enter the name and click on “SAVE” to save the config.
+
+    <figure><img src="../../../.gitbook/assets/image (1885).png" alt=""><figcaption></figcaption></figure>
+22. On clicking the **“SAVE”** a pop-up with a success message will be displayed.
+
+    <figure><img src="../../../.gitbook/assets/image (1886).png" alt=""><figcaption></figcaption></figure>
+23. Clicking **“OK”** will create a new config.
+
+    <figure><img src="../../../.gitbook/assets/image (1887).png" alt=""><figcaption></figcaption></figure>
+24. Click on the **“Excluded Fields”** icon to observe the excluded fields.
+
+    <figure><img src="../../../.gitbook/assets/image (1888).png" alt=""><figcaption></figcaption></figure>
+25. Hover over the icon under the **“Auto Pick New Jobs”** column to observe the **“Include New Backup Jobs”**.
+    1. The icon in green color indicates that the “Include New Backup Jobs” option is enabled for this config.
+    2. The icon in red color indicates that the “Include New Backup Jobs” option is not enabled for this config.
 
 ### **View Archived Data in Salesforce**
 

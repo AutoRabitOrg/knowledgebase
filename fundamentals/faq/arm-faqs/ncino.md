@@ -2,10 +2,20 @@
 
 ## Error: "This session is not valid for use with the API"
 
-This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.\
-
+This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.
 
 <figure><img src="../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
+
+### Troubleshooting: <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
+
+1. Log in to the PROD org.
+2. Search for the connected app.
+3. Select "Connected App OAuth Usage."
+4. Install "AutoRABITOAuth2."
+5.  Re-run the job.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
 
 ### Record-Based Migration error use case <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
 

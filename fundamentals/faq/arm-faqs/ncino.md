@@ -1,4 +1,11 @@
-# nCino
+# nCino FAQs
+
+## Error: "This session is not valid for use with the API"
+
+This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.\
+
+
+<figure><img src="../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
 
 ### Record-Based Migration error use case <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
 

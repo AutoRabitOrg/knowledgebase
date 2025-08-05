@@ -1,5 +1,22 @@
 # ARM Release Notes
 
+## ARM 25.3.4 Release Notes
+
+**Release Date: 3 August 2025**\
+\
+**Highlights**: Reliability and accuracy improvements across CI jobs, release labels, and EZ-Commit workflows.
+
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **CI job cleanup for Provar executions**: Unused test-result folders in Provar job paths were not deleted after runs, slowly consuming disk space. A cleanup mechanism now removes temporary directories and report data immediately after each job completes.\
+  (Module: CI Job)
+* **Destructive change detection in remote branches**: CI jobs missed destructive updates performed directly in GitHub, causing build failures. Backend logic has been corrected so that remote destructive changes are reliably detected and processed.\
+  (Module: CI Job)
+* **Release label revision count displayed inaccurately**: When modifying an existing release label, the UI showed an incorrect number of selected revisions. Increment logic has been fixed so the description now reflects the true revision count.\
+  (Module: Release Labels)
+* **Static resources misidentified during destructive EZ-Commit**: Deleting one static resource while another with a similar name remained caused the diff view to include both files. Selection logic has been refined so only the intended destructive file is picked up, even when naming conventions overlap.\
+  (Module: EZ Commit)
+
 ## ARM 25.3.3 Release Notes
 
 **Release Date: 27 July 2025**

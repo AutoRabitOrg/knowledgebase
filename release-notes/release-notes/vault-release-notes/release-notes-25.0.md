@@ -1,4 +1,46 @@
-# Release Notes 25.0
+# Vault Release Notes 25.0
+
+## Vault Release Notes 25.1.6
+
+#### Improvised Naming Convention <a href="#improvised-naming-convention" id="improvised-naming-convention"></a>
+
+The column headers in the **Archive Summary** screen have been updated to improve readability and ensure better understanding of the data presented.
+
+#### Vault Connect – Backup as a Source <a href="#vault-connect-backup-as-a-source" id="vault-connect-backup-as-a-source"></a>
+
+1.  A new capability has been added to **Vault Connect**, enabling backups to be selected as a source in the configuration.
+
+    <figure><img src="../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
+2.  This enhancement empowers customers to strengthen their business continuity strategies by seamlessly leveraging backup data during critical scenarios.
+
+    <figure><img src="../../../.gitbook/assets/image (1893).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption></figcaption></figure>
+
+#### Improved Email Message Handling <a href="#improved-email-message-handling" id="improved-email-message-handling"></a>
+
+During **email message restoration**, the system now ensures that audit fields are preserved accurately, avoiding unintended updates and maintaining metadata integrity.
+
+The **GDPR masking functionality** in the Archive module has been refined to ensure consistent and accurate handling of the fields marked for anonymization or redaction.
+
+#### Event Logs Enhancements <a href="#event-logs-enhancements" id="event-logs-enhancements"></a>
+
+Improvements have been made to the **event logging mechanism**, including:
+
+* Consolidation of daily logs
+* Enhanced tracking of activities performed by anonymous users for improved auditability and compliance.
+
+#### GDPR Deleted Records Tracking <a href="#gdpr-deleted-records-tracking" id="gdpr-deleted-records-tracking"></a>
+
+The end-to-end process for **handling GDPR delete record requests** has been enhanced. The system now reliably updates the status of deleted records to **'Success'**, reflecting accurate processing completion.
+
+#### Vault Compare Performance Optimization <a href="#vault-compare-performance-optimization" id="vault-compare-performance-optimization"></a>
+
+The **Vault Compare** operation has been optimized to provide a faster and more seamless user experience during large-scale data comparisons.
+
+#### Improved Salesforce Org Identification <a href="#improved-salesforce-org-identification" id="improved-salesforce-org-identification"></a>
+
+Enhancements have been made to the logic that fetches **Salesforce Org details**, ensuring more accurate identification of the Salesforce environment connected to Vault.
 
 ## Vault Release Notes 25.1.5
 

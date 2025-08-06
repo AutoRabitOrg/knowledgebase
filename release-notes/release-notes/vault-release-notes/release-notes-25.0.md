@@ -21,18 +21,12 @@ The column headers in the **Archive Summary** screen have been updated to improv
 
 During **email message restoration**, the system now ensures that audit fields are preserved accurately, avoiding unintended updates and maintaining metadata integrity.
 
-The **GDPR masking functionality** in the Archive module has been refined to ensure consistent and accurate handling of the fields marked for anonymization or redaction.
-
 #### Event Logs Enhancements <a href="#event-logs-enhancements" id="event-logs-enhancements"></a>
 
 Improvements have been made to the **event logging mechanism**, including:
 
 * Consolidation of daily logs
 * Enhanced tracking of activities performed by anonymous users for improved auditability and compliance.
-
-#### GDPR Deleted Records Tracking <a href="#gdpr-deleted-records-tracking" id="gdpr-deleted-records-tracking"></a>
-
-The end-to-end process for **handling GDPR delete record requests** has been enhanced. The system now reliably updates the status of deleted records to **'Success'**, reflecting accurate processing completion.
 
 #### Vault Compare Performance Optimization <a href="#vault-compare-performance-optimization" id="vault-compare-performance-optimization"></a>
 

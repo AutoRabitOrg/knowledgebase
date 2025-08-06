@@ -2,11 +2,13 @@
 
 ## Vault Release Notes 25.1.6
 
-#### Improvised Naming Convention <a href="#improvised-naming-convention" id="improvised-naming-convention"></a>
+**Release Date:** Aug 13, 2025
+
+**Improvised Naming Convention**
 
 The column headers in the **Archive Summary** screen have been updated to improve readability and ensure better understanding of the data presented.
 
-#### Vault Connect – Backup as a Source <a href="#vault-connect-backup-as-a-source" id="vault-connect-backup-as-a-source"></a>
+**Vault Connect – Backup as a Source**
 
 1.  A new capability has been added to **Vault Connect**, enabling backups to be selected as a source in the configuration.
 
@@ -17,22 +19,22 @@ The column headers in the **Archive Summary** screen have been updated to improv
 
     <figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption></figcaption></figure>
 
-#### Improved Email Message Handling <a href="#improved-email-message-handling" id="improved-email-message-handling"></a>
+**Improved Email Message Handling**
 
 During **email message restoration**, the system now ensures that audit fields are preserved accurately, avoiding unintended updates and maintaining metadata integrity.
 
-#### Event Logs Enhancements <a href="#event-logs-enhancements" id="event-logs-enhancements"></a>
+**Event Logs Enhancements**
 
 Improvements have been made to the **event logging mechanism**, including:
 
 * Consolidation of daily logs
 * Enhanced tracking of activities performed by anonymous users for improved auditability and compliance.
 
-#### Vault Compare Performance Optimization <a href="#vault-compare-performance-optimization" id="vault-compare-performance-optimization"></a>
+**Vault Compare Performance Optimization**
 
 The **Vault Compare** operation has been optimized to provide a faster and more seamless user experience during large-scale data comparisons.
 
-#### Improved Salesforce Org Identification <a href="#improved-salesforce-org-identification" id="improved-salesforce-org-identification"></a>
+**Improved Salesforce Org Identification**
 
 Enhancements have been made to the logic that fetches **Salesforce Org details**, ensuring more accurate identification of the Salesforce environment connected to Vault.
 

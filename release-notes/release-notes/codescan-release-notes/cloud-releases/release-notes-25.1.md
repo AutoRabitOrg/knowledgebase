@@ -18,6 +18,246 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.6
+
+**Release Date: 3 August 2025**
+
+### Summary
+
+CodeScan 25.1.6 is comprised of the following 6 components:
+
+* 1 New Feature
+* 3 Enhancements
+* 2 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+&#x20;
+
+### New Features
+
+1. **Categories for Project Types**
+
+<mark style="color:blue;">(https://autorabit.atlassian.net/browse/CD-6397)</mark>
+
+Often, customers will have a lot of projects in CodeScan.  Several customers have requested the ability to filter their projects by the type of integration including:
+
+GitHub: github\
+Bitbucket: bitbucket\
+GitLab: gitlab\
+Git: git\
+Salesforce: salesforce
+
+To deliver this feature, we created custom tags with the ability to add these tags when new projects are created.  Further, we wanted to provide a mechanism to retroactively add these tags to existing projects.
+
+Unlike most tags, we designed integration type tags to remain once assigned. If the user tries to remove it the following error will occur: “Integration type tags cannot be removed from projects.”
+
+NOTE:  Due to the change in permissions needed in the API for these tags to be added, we also adjusted the text in the API doc as well. For the endpoint api/project\_tags/set the text now states:
+
+“Requires the ‘Administer’ or ‘Create Project’ permissions on the specified project.”
+
+Here are the tag API references: [CodeScanCloud](https://app.codescan.io/web_api/api/project_tags)
+
+Verified Categories for Project Types in the following scenarios, and have verified that all are working as expected:
+
+1. **Verify that the user is able to see the correct tag for the project on the Project Information page after completing the analysis.**\
+   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
+
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
+   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
+    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+### Enhancements
+
+**1.     Users getting error when trying to restore quality profiles.**
+
+Currently, when a Quality Profile import fails, CodeScan displays the following error: _"An error occurred. Please contact your admin."_
+
+We recognize that it would be a better experience (and more helpful) to make this error more verbose to allow the customer to remediate the issue themselves.  Mostly these errors are thrown because of a rule present in their Quality Profile which is not present in their organization. In these cases, the error message is now “An error occurred. A rule in your Quality Profile is not available in this organization.”
+
+The second most common error occurs when the QP is corrupted or malformed.  In these cases, the error message now states “An error occurred. The Quality Profile backup is malformed. Please export your Quality Profile again.”
+
+We believe that these more verbose error messages will help our customers remediate their issue much more easily.  However, if they require assistance, they can create a support ticket.
+
+Verified this enhancement via validating the below scenarios
+
+1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
+3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+4.  If the QP has no profile name, the error message says: "Profile name should be set."\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+5.  If no file is selected during import, an error occurs.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+6. If the repository key is missing, an import error is triggered.
+7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2.     Pagination in Projects and Previous Analysis**
+
+To provide a better experience, we have added separate pagination controls, allowing users to navigate Projects Analysis and Previous Analysis sections more easily.   This enhancement includes Projects Analysis displaying 10 entries per page and Previous Analysis displaying 15 entries per page.  This allows the user interface to remain responsive and readable even when there are many entries.
+
+Verified the Pagination enhancement via validating the following scenarios:
+
+1.  The _Projects Analysis_ section displays a maximum of 10 entries per page.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+2.  The _Previous Analysis_ section displays a maximum of 15 entries per page.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+3. Pagination controls (e.g., next, previous, specific result numbers) are present and functional in both sections independently.
+
+**3.     Email Limit & Validation for Multi-User Invites**
+
+To improve the user experience for admins inviting users to their CodeScan org, we have implemented the ability to invite multiple users at once (up to 50) using the same user type (Standard User or Platform Integration User).  Additionally, this enhancement ensures that only valid email addresses are accepted in the batch.  This ensures that the invite experience remains consistent and controlled; additionally, user onboarding will be faster and more efficient.  Further, Admins are still able to maintain control over user type classification, email validation, and system performance.
+
+The main components of this enhancement are:
+
+1. Added each email on a new line.
+   * Text was added in UI beside Email option for multiple users invite option.
+2. Add the following error during limit exceeded scenario: “Invite limit exceeded. Max 50 emails allowed.”
+
+Value / Purpose:
+
+* Streamlines onboarding by allowing multiple users to be invited in one action.
+* Maintains role clarity by restricting each batch to a single user type (Standard or Platform Integration).
+* Improves system integrity and reliability by validating email format and capping batch size.
+* Prevents errors and abuse by limiting the invite size to a maximum of 50 and checking for valid emails only.
+
+We have verified the enhancement for Email Limit & Validation for Multi-User Invites by validating the following scenarios:
+
+1.  Verified that if invite is sent to more than 50 members, then the following is thrown:\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+2.  Invite sent successfully if invite is sent to less than or equal to 50 users.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+3.  Verified, if mail address is more than 100 characters, then an error is thrown; if it is less than 100 characters, then the invite is sent successfully.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+4.  If invite sent to non-corporate domains, the following error is thrown:\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+1\.     Align CSV Export filter status with Latest SQ Issue status
+
+This enhancement implements issue status values in the CSV export filters to reflect the latest status terminology introduced after CodeScan 25.1.0 release (which occurred in April 2025).  Prior to this enhancement, the filters in CSV Issue Export were showing outdated statuses such as Opened, Confirmed, ReOpened, Resolved, and Closed.  This was in contrast to the updated statuses including Open, Accepted, False Positive, Confirmed, and Fixed.  This inconsistency was reported by several users who cited confusion and data integrity issues when analyzing or reporting exported results.
+
+Value / Purpose:
+
+* Ensures consistency between issues UI and CSV exported data.
+* Improves user trust and understanding of exported scan results.
+
+Acceptance Criteria
+
+* Status Values in Export:
+* Legacy Status Replacement:
+* Filter Cleanup:
+* UI-CSV Consistency:
+* Backward Compatibility:
+*
+  * Existing historical issues should reflect the new status names in the export, even if their status was stored using legacy labels.
+
+Verified this enhancement by validating the following scenarios:\
+
+
+1. Status Values in Export:
+
+The issue statuses in the exported CSV must match the latest values of Open, Accepted, Confirmed, False Positive, and Fixed\
+Legacy Status Replacement:
+
+* Legacy status values such as Opened, Confirmed, ReOpened, Resolved, and Closed must no longer appear in the exported CSV.
+* These must be correctly mapped to the corresponding updated status where applicable.
+
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+2. Filter Cleanup:
+
+The Resolutions filter should be completely removed from the CSV Export page.
+
+The Is Resolved filter should be completely removed from the CSV Export page.
+
+Only the Status filter should be visible and functional.
+
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+3. UI-CSV Consistency: The status shown in the exported CSV for each issue must exactly match what is shown for the same issue in the UI.
+4.  The type, statuses and severity shown in the exported CSV is exactly matching what is shown in the issues page and CSV export page.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+
+2. Fixed an unclear error message displayed when invite is sent only to non-corporate email addresses
+
+This fix addresses an unclear message that occurs when:
+
+* Admin clicks on "Invite user"
+* Admin enters only non-corporate email addresses (e.g., Gmail, Yahoo)
+* Admin clicks "Send Invitation"
+
+After these steps, Admin receives the following unclear error message:
+
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+
+However, this issue does not occur when multiple users are invited, including at least one corporate email:
+
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+This issue has been fully remediated.  We have verified the fix via the following scenario:\
+\
+Validated that the proper error message is displayed when invite is sent only to non-corporate email addresses.
+
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+***
+
 ## CodeScan Release 25.1.5
 
 **Release Date: July 20, 2025**
@@ -613,7 +853,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -641,19 +881,19 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -661,7 +901,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -669,7 +909,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 Some users were reporting that they were unable to scroll down in the quality profiles section in project settings.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been remediated in this release.
 
@@ -679,7 +919,7 @@ We have verified that with this fix, users are able to scroll down in the Qualit
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Fixed Deprecation Warning associated with sonar.login**
 
@@ -774,7 +1014,7 @@ Verified below scenarios, all are working as expected\
 
 <figure><img src="../../../../.gitbook/assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (5).png" alt=""><figcaption></figcaption></figure>
 
 3. **Restricting Platform Integration User Access for Standard Users**
 
@@ -788,15 +1028,15 @@ On the Members page, the following alert "You are a System Admin. You are requir
 \
 1\. Verified admins are able to see the alert “You are a System Admin. You are required to have a Standard User License.“ if Standard users with System Admin Permission try switching to a Platform Integration User.
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (5).png" alt=""><figcaption></figcaption></figure>
 
 2. Verified admins are able to change users from standard to platform if standard user is without System Admin Permission
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (5).png" alt=""><figcaption></figcaption></figure>
 
 3. Verified admins are able to see the alert “You are a System Admin. You are required to have a Standard User License.“ if user is owner and trying to switch from standard to platform user
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -820,7 +1060,7 @@ Verified the below scenarios for rule vf:AvoidJavaScriptScriptlets and report th
 3. Validated the rule without LightningFunctions then user is able to see the violation which is expected.
 4. Validated the rule by setting the parameter ignoreSupportingCode as false/true working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (5).png" alt=""><figcaption></figcaption></figure>
 
 1\.     Enhanced rule “Controller Naming Convention” for Apex and Visualforce
 
@@ -896,37 +1136,37 @@ CWE: 918
 \
 **1.Validated direct embedding of user input into a URL without sanitization, resulting in a violation (SSRF) as expected**
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (5).png" alt=""><figcaption></figcaption></figure>
 
 2.Validated unescaped dynamic input into URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (5).png" alt=""><figcaption></figcaption></figure>
 
 3.Validated that one parameter is sanitised but the other is not sanitised, still resulting in a violation (SSRF) as expected
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (5).png" alt=""><figcaption></figcaption></figure>
 
 4.Validated concatenated unsafe dynamic parameters in a URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (5).png" alt=""><figcaption></figcaption></figure>
 
 5.Validated the presence of a malicious SSRF-style payload embedded in the URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (5).png" alt=""><figcaption></figcaption></figure>
 
 6.Validated the attempt at "sanitization" using regex, which is not an approved method, resulting in a violation (Improper sanitization) as expected
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (5).png" alt=""><figcaption></figcaption></figure>
 
 Test Cases with No Violations
 
 1\.     Validated input sanitized using Id.valueOf, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (5).png" alt=""><figcaption></figcaption></figure>
 
 2. Validated input escaped using String.escapeSingleQuotes, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (5).png" alt=""><figcaption></figcaption></figure>
 
 3. Validated that the URL starts with "/" ensuring an internal redirect, resulting in no violation as expected.
 
@@ -1333,7 +1573,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

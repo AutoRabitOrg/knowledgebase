@@ -38,8 +38,6 @@ Component details are listed in their corresponding sections within this documen
 
 1. **Categories for Project Types**
 
-<mark style="color:blue;">(https://autorabit.atlassian.net/browse/CD-6397)</mark>
-
 Often, customers will have a lot of projects in CodeScan.  Several customers have requested the ability to filter their projects by the type of integration including:
 
 GitHub: github\

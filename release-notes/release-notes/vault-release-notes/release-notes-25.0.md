@@ -4,7 +4,7 @@
 
 **Release Date:** Aug 13, 2025
 
-**Improvised Naming Convention**
+**Improved Naming Convention**
 
 The column headers in the **Archive Summary** screen have been updated to improve readability and ensure better understanding of the data presented.
 

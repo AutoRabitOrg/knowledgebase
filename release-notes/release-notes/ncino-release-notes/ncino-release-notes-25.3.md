@@ -1,5 +1,19 @@
 # nCino Release Notes 25.3
 
+## nCino + DL - Release 25.3.5 <a href="#title-text" id="title-text"></a>
+
+**Logs Enhancements**\
+Improved logging capabilities for enhanced tracking and traceability.
+
+**Cloning DL PRO Jobs**\
+Enhanced DL PRO job cloning to ensure accurate replication with all settings retained.
+
+**DataLoader Clone Functionality**\
+Improved cloning process for DataLoader jobs to maintain configuration integrity.
+
+**DL File Handling**\
+Resolved issues to ensure reliable upload, insert, and delete operations for files.
+
 ## nCino + DL - Release 25.3.4 <a href="#title-text" id="title-text"></a>
 
 **Release Date:** August 03, 2025

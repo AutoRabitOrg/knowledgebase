@@ -40,9 +40,11 @@ The ARM login screen allows you to log in to your instance.
 
 ## Logging Out <a href="#logging-out" id="logging-out"></a>
 
-When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.
+When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.\
+\
 
-<figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt="" width="252"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 

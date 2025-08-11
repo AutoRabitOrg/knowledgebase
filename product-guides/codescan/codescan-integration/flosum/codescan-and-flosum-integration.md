@@ -35,7 +35,7 @@
       *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."\
 
 
-          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Flosum Branch Configuration**:
    1. On the **Branch Configuration** tab, choose the branch you want to scan.
       * Select all or specific component types from the six supported profiles:
@@ -57,7 +57,7 @@
    *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.\
 
 
-       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
 
        <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Webhook</p></figcaption></figure>
 

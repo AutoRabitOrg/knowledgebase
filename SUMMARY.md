@@ -37,6 +37,7 @@
       * [CodeScan requests read and update permissions while connecting to Bitbucket](fundamentals/faq/codescan-faqs/general/codescan-requests-read-and-update-permissions-while-connecting-to-bitbucket.md)
       * [SSL Certificates](fundamentals/faq/codescan-faqs/general/ssl-certificates.md)
       * [Does SonarQube support test execution reports for pull requests?](fundamentals/faq/codescan-faqs/general/does-sonarqube-support-test-execution-reports-for-pull-requests.md)
+      * [License Definitions](fundamentals/faq/codescan-faqs/general/license-definitions.md)
     * [CodeScan Self-Hosted Issues](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/README.md)
       * [Self-Hosted Errors and Solutions](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-errors-and-solutions.md)
       * [Self-Hosted FAQs](fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/self-hosted-faqs.md)

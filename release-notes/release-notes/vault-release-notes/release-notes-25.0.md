@@ -1,5 +1,19 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Enhanced Job Timeout Handling**\
+Improved the job termination logic to ensure jobs end gracefully when timeouts occur, preventing partial processing and maintaining system stability.
+
+**Synthetic Backups Stability**\
+Implemented a fix to prevent timeouts during data processing in synthetic backups, ensuring uninterrupted and reliable execution.
+
+**Archive Records Processing Fix**\
+Resolved an error in archive record processing to guarantee that all records are handled accurately without failures.
+
+**Replication Jobs Diagnostics**\
+Added additional logging to replication jobs, enabling more precise identification of root causes for quicker resolution of issues.
+
 ## Vault Release Notes 25.1.6
 
 **Release Date:** Aug 13, 2025

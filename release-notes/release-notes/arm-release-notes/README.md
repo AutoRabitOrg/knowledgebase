@@ -1,5 +1,27 @@
 # ARM Release Notes
 
+## ARM 25.3.6 Release Notes
+
+**Release Date: 17 August 2025**
+
+**Highlights**: Stability improvements and fixes for CI Jobs and Admin functionalities.
+
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **CI Jobs – Baseline Revision Update Issue**: Resolved an issue where CI jobs were stuck and queued after a specific build. The problem was traced to a scenario where the baseline revision was not updating. The back end has been updated to address this case and additional logging has been added for better diagnostics.\
+
+* **Admin – Adding Released Users to Teams**: Fixed an issue where adding a delegated or released user to a team displayed a success message but did not actually add the user. The root cause was an error in fetching released user details. Logic has been corrected to ensure the released user is properly added to the team.\
+
+* **CI Jobs – Rollback Failure for Selective Components**: Addressed a rollback failure during CI job deployments when rolling back selective components, resulting in a “Not in Package.xml” error. Back-end logic has been updated to handle the workflow metadata type correctly.
+
+## ARM 25.3.5 Release Notes
+
+**Release date: 10 August 2025**
+
+### Bug Fixes
+
+* **Branching baseline now supports committing child metadata components for Sharing Rules, Workflow, and Managed Topics**: This enhancement ensures these metadata types are correctly captured and pushed to the remote repository, addressing gaps identified in earlier releases.
+
 ## ARM 25.3.4 Release Notes
 
 **Release Date: 3 August 2025**\

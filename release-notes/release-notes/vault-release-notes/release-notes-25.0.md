@@ -2,6 +2,8 @@
 
 ## Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
+**Release Date:** August 20, 2025
+
 **Enhanced Job Timeout Handling**\
 Improved the job termination logic to ensure jobs end gracefully when timeouts occur, preventing partial processing and maintaining system stability.
 

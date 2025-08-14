@@ -12,7 +12,7 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 
 <figure><img src="../../.gitbook/assets/image (91).png" alt="" width="258"><figcaption></figcaption></figure>
 
-2. A screen displays the weekly summary report of EZ-Commits, deployments,[ dataloader](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/), TAF, and continuous integration.
+2. A screen displays the weekly summary report of EZ-Commits, deployments,[ dataloader](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/), and continuous integration.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -42,6 +42,6 @@ For data/reports displayed under the **WEEKLY REPORTS** screen, you can export t
 
 Users can download reports for:
 
-<table><thead><tr><th width="217">Report Type</th><th width="352">List of Columns Available in Each Report</th></tr></thead><tbody><tr><td><ol><li>EZ Merge</li></ol></td><td><img src="../../.gitbook/assets/b4a7e978-d7b0-4891-9b4d-314f4a6063ad.png" alt="" data-size="original"></td></tr><tr><td><ol start="2"><li>EZ Commits</li></ol></td><td><img src="../../.gitbook/assets/8e3383cb-e3f4-46be-b05b-eacad1874323.png" alt="" data-size="original"></td></tr><tr><td><ol start="3"><li>Deployment</li></ol></td><td><img src="../../.gitbook/assets/0661ab9e-ea99-4228-86da-dc5d82b8549e (1).png" alt="" data-size="original"></td></tr><tr><td><ol start="4"><li>CI Build jobs</li></ol></td><td><img src="../../.gitbook/assets/49d5f87d-7bfe-4e1d-8a00-5f5cd46dab09.png" alt="" data-size="original"></td></tr><tr><td><ol start="5"><li>Data Loader</li></ol></td><td><img src="../../.gitbook/assets/cb42631c-0af8-430b-9d77-a9e915c994ee (1).png" alt="" data-size="original"></td></tr><tr><td><ol start="6"><li>TAF</li></ol></td><td><img src="../../.gitbook/assets/0ab365c0-50b3-45b3-8788-7c3005f2c0a0.png" alt="" data-size="original"></td></tr></tbody></table>
+<table><thead><tr><th width="217">Report Type</th><th width="352">List of Columns Available in Each Report</th></tr></thead><tbody><tr><td><ol><li>EZ Merge</li></ol></td><td><img src="../../.gitbook/assets/b4a7e978-d7b0-4891-9b4d-314f4a6063ad.png" alt="" data-size="original"></td></tr><tr><td><ol start="2"><li>EZ Commits</li></ol></td><td><img src="../../.gitbook/assets/8e3383cb-e3f4-46be-b05b-eacad1874323.png" alt="" data-size="original"></td></tr><tr><td><ol start="3"><li>Deployment</li></ol></td><td><img src="../../.gitbook/assets/0661ab9e-ea99-4228-86da-dc5d82b8549e (1).png" alt="" data-size="original"></td></tr><tr><td><ol start="4"><li>CI Build jobs</li></ol></td><td><img src="../../.gitbook/assets/49d5f87d-7bfe-4e1d-8a00-5f5cd46dab09.png" alt="" data-size="original"></td></tr><tr><td><ol start="5"><li>Data Loader</li></ol></td><td><img src="../../.gitbook/assets/cb42631c-0af8-430b-9d77-a9e915c994ee (1).png" alt="" data-size="original"></td></tr></tbody></table>
 
 By clicking on the "Latest 6 Months Report" option.

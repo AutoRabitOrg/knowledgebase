@@ -178,13 +178,13 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
         When the cloning of a job is initiated, the following notification will be displayed upon identifying any differences between environments.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values”.
 
         1. A warning can be observed on the top of the pop-up, which states that the target environment is missing the respective metadata.
 
-        <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
         1.  Please verify the following information displayed on the pop-up and may continue to clone by clicking on “CONFIRM”.
 

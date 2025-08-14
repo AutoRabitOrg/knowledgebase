@@ -8,7 +8,7 @@ Why Does Salesforce Recommend Moving From SFDX to SFCLI? Click [here](../../../t
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Back up your Salesforce metadata to version control and trigger a deployment to a Salesforce org based on a **Start Date**. This job can be further customized to run functional test cases from the ARM TAF library or from version control.
+Back up your Salesforce metadata to version control and trigger a deployment to a Salesforce org based on a **Start Date**. This job can be further customized to run functional test cases from version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
@@ -135,9 +135,9 @@ Analyze metadata dependencies to avoid breaking changes:
 
 Run functional tests before deployment:
 
-<figure><img src="../../../../../.gitbook/assets/image (1250).png" alt="Test-case source options"><figcaption><p>Test-Case Source Options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1896).png" alt="" width="375"><figcaption></figcaption></figure>
 
-*   **Version Control:** Choose repository, branch, and test type (TAF, Selenium Maven, Selenium Non-Maven).
+*   **Version Control:** Choose repository, branch, and test type (Selenium Maven, Selenium Non-Maven).
 
     <figure><img src="../../../../../.gitbook/assets/image (1252).png" alt="Version-control test options"><figcaption><p>Version-Control Test Options</p></figcaption></figure>
 *   **AccelQ:** Enter **Project Name**, **Test Job Name**, and parameters.

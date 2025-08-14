@@ -85,8 +85,7 @@ Query and analyze metadata dependencies to prevent deployment issues. Results ca
 
 Run functional test cases pre-deployment. Fetch options include:
 
-* **TAF Labels**: From AutoRABIT TAF module.
-* **Version Control**: Select test framework (TAF, Selenium Maven/Non-Maven).
+* **Version Control**: Select test framework (Selenium Maven/Non-Maven).
 * **AccelQ**: Provide project/test job and parameters.
 * **Provar**: Configure path to `.testproject` and execution path.
 

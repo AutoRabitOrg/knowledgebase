@@ -6,7 +6,7 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-Run your automated test cases independently of the build or deployment outcome, targeting any Salesforce Org. Tests may include Selenium scripts (Maven/non-Maven) stored in ARM’s Test Automation Framework (TAF) or your Version Control System. You can also integrate external test automation tools like Provar and AccelQ.
+Run your automated test cases independently of the build or deployment outcome, targeting any Salesforce Org. Tests may include Selenium scripts (Maven/non-Maven) stored in your Version Control System. You can also integrate external test automation tools like Provar and AccelQ.
 
 ## Procedure <a href="#procedure" id="procedure"></a>
 
@@ -35,7 +35,6 @@ Steps:
 
 1. Choose **Repository Type**, **Repository**, and **Branch**.
 2. Select test execution mode:
-   * **TAF**
    * **Selenium Maven**: Provide **Test Case Root Path** and **Goals**
    * **Selenium Non-Maven**: Specify **Execution Type** and **Test Case Root Path**
 

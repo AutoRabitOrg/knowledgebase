@@ -368,25 +368,40 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
 62. **Set Scheduling Type (Screen 64)**
 
     * In the **Schedule** panel, choose **No Schedule**, **Daily**, or **Weekly**.
+    * Follow the [scheduling process](dataloader-pro.md#:~:text=Open%20the%20Schedule%20step) to set up a schedule.
     * Configure any timing options shown, then click **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/64 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 63. **Delete a Job (Screen 65)**
+
     * From **Dataloader Pro**, open the job’s **⋮** menu.
     * Click **Delete**.
+
+    <figure><img src="../../../../.gitbook/assets/65 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 64. **Confirm Deletion (Screen 66)**
+
     * Review the job name in the confirmation dialog.
     * Click **Delete** to remove, or **Cancel** to keep the job.
+
+    <figure><img src="../../../../.gitbook/assets/66 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 65. **Clone a Job (Screen 67)**
+
     * From **Dataloader Pro**, open the job’s **⋮** menu.
     * Click **Clone**.
+
+    <figure><img src="../../../../.gitbook/assets/67 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 66. **Configure Clone (Screen 68)**
+
     * In the **Clone** panel, update **Name**, **Job Group**, **Source Sandbox**, **Destination Sandbox**, and any **User Suffixes**.
     * Click **Clone**.
+
+    <figure><img src="../../../../.gitbook/assets/68 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 67. **Verify Cloned Job (Screen 69)**
+
     * Back on **Dataloader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
 
-
+    <figure><img src="../../../../.gitbook/assets/69 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+68.
 
 
 

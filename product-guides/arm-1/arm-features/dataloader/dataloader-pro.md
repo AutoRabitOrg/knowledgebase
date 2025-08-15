@@ -185,7 +185,7 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     * Under **Scheduling Ends**, choose **Never**, **X Occurrences from creation**, or a specific end date.
 
     <figure><img src="../../../../.gitbook/assets/36 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-35. Set a Weekly schedule _(37)_
+35. Set a Weekly schedule
 
     * Click **Weekly**.
     * Choose **Scheduling Starts From** (start date).
@@ -233,35 +233,133 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     <figure><img src="../../../../.gitbook/assets/42 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/43 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-41. Open Job Results (Screen 44)
+41. Open Job Results
 
     * Go to **Dataloader Pro**.
     * For your job (e.g., _Brands Migration \* Masking_), click the **⋮** menu under **Actions** and choose **Job Results**.
 
     <figure><img src="../../../../.gitbook/assets/44 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-42. Review the Job Summary (Screen 45)
+42. Review the Job Summary
 
     * You’ll land on **Summary** → **Master Object**.
     * The row shows quick actions: **VR/WFR** (validation/workflow), **Filters**, **Mappings**, plus **last run results**.
 
     <figure><img src="../../../../.gitbook/assets/45 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-43. Open Validation/Workflow controls (Screen 46)
+43. Open Validation/Workflow controls
+
     * Click the **VR/WFR** icon (stacked lines) beside the object.
-44. Check Validation Rules (Screen 47)
-    * In the **Validation Rules** tab, review listed rules (Previous State, Current State).
+
+    <figure><img src="../../../../.gitbook/assets/46 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+44. Check Validation Rules:
+
+    * In the **Validation Rules** tab, review the listed rules (Previous State, Current State).
     * Use **Enable** where applicable; click **Ok** when done (or continue to the next tab).
-45. Check Workflow Rules (Screen 48)
+
+    <figure><img src="../../../../.gitbook/assets/47 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+45. Check Workflow Rules
+
     * Switch to the **Workflow Rules** tab and review similarly (enable/disable as needed).
     * Click **Ok** to close.
-46. Open and Review Filters (Screen 49)
+
+    <figure><img src="../../../../.gitbook/assets/48 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+46. Open and Review Filters
+
     * Back on **Summary**, click the **Filter** icon.
-47. Configure Filter criteria (Screen 50)
-    * Choose **Input Options** (e.g., **Upload CSV File**).
+
+    <figure><img src="../../../../.gitbook/assets/49 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+47. Configure Filter criteria
+
+    * Choose **Input Options: Upload CSV File**.
     * Set **Select Field** and **Operator** (e.g., _Id_ + _Equals_).
     * Paste or **Auto Populate** your SOQL/values (example shows a SELECT … IN (…) list).
     * Optional: click **Record Count**, **Validate**, then **Apply**.
-48. Review Field Mappings (Screen 51)
+
+    <figure><img src="../../../../.gitbook/assets/50 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+48. Review Field Mappings
+
     * From **Summary**, click **Mappings** to open the mapping dialog and verify/adjust source→destination field mappings.
+
+    <figure><img src="../../../../.gitbook/assets/51 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/52 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+49. View Success Results – Master Object (Screen 52.1)
+
+    1. From **Summary → Master Object**, locate **Results of last run**.
+    2. Click the **Success:** 🔍 icon (**Click to View**) for the master object.
+
+    <figure><img src="../../../../.gitbook/assets/52.1 - DL PRO (2).png" alt=""><figcaption></figcaption></figure>
+50. See Success Details (CSV) (Screen 52.2)
+
+    1. Review the **Destination Id** and **Status** for each processed record.
+    2. Use **Search** and pagination as needed, then close the dialog.
+
+    <figure><img src="../../../../.gitbook/assets/52.2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+51. Review Ancestor Object Results (Screen 53)
+
+    1. Open **Summary → Ancestor Objects**.
+    2. For each ancestor object, click the **Success** 🔍 or **Failure** 🔍 icons to view details.
+    3. Use the **download** icon to export results if required.
+    4. The toggle **Skip Records** is in "inactive" state as the records are not choosen to be skipped while creating the job.
+
+    <figure><img src="../../../../.gitbook/assets/53 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+52. Review Child Object Results (Screen 54)
+
+    1. Open **Summary → Child Objects**.
+    2. Click the **Success** 🔍 or **Failure** 🔍 icons to view child-object run results.
+    3. Use the **download** icon to export results if needed.
+
+    <figure><img src="../../../../.gitbook/assets/54 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+53. Open Masking Rule Actions (Screen 55)
+
+    1. Go to **Summary → Masking Rules**.
+    2. Click the **⋮** menu for a rule and choose **View Rule** (or **Edit Rule**).
+
+    <figure><img src="../../../../.gitbook/assets/55 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+54. View Masking Rule Details (Screen 56)
+
+    1. In **Masking Object Info**, verify **Rule**, **Object**, **Type**, **Masking style/value**, and the **Fields** impacted.
+    2. Use **Search** if the field list is long; click **Close** when done.
+
+    <figure><img src="../../../../.gitbook/assets/56 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+55. Start Editing a Masking Rule (Screen 57)
+
+    1. From **Masking Rules**, open the **⋮** menu and select **Edit Rule**.
+
+    <figure><img src="../../../../.gitbook/assets/57 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+56. Edit Masking Rule (Screen 58)
+
+    1. In **Edit Masking Rule**, confirm **Select Object**, **Field Type**, **Masking Style**, and **Masking value**.
+    2. Check the **Fields** to apply the masking to.
+    3. Click **Save** to apply changes.
+
+    <figure><img src="../../../../.gitbook/assets/58 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+57. Confirm Rule List (Screen 59)
+
+    1. You return to **Masking Rules**.
+    2. Verify the rule appears as expected (use **Modified date** to confirm updates).
+
+    <figure><img src="../../../../.gitbook/assets/59 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+58. Create a New Masking Rule (Screen 60)
+
+    1. From **Masking Rules**, click **New** to open **Create Masking Rule**.
+    2. Set **Select Object**, **Field Type**, **Masking Style**, **Masking value**, and select the **Fields**.
+    3. Click **Save** to add the rule.
+
+    <figure><img src="../../../../.gitbook/assets/60 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

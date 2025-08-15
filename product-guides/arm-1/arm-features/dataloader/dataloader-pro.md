@@ -146,11 +146,11 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
 
     <figure><img src="../../../../.gitbook/assets/27 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 26. **Select target fields & save**\
-    Select the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**. _(img 28)_
+    Select the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/28 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 27. **Review rule in list**\
-    The rule appears in the **Masking** grid with its value and style. Click the actions menu to **View Rule** or **Edit Rule**. _(img 29)_
+    The rule appears in the **Masking** grid with its value and style. Click the actions menu to **View Rule** or **Edit Rule**.
 
     <figure><img src="../../../../.gitbook/assets/29 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 28. **View rule details**\
@@ -158,7 +158,7 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
 
     <figure><img src="../../../../.gitbook/assets/30 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 29. **Edit if needed**\
-    Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**. _(img 31)_
+    Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**.
 
     <figure><img src="../../../../.gitbook/assets/30.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 30. Observe the rule created for masking.
@@ -172,10 +172,10 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     <figure><img src="../../../../.gitbook/assets/33 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 33. Open the Schedule step
 
-    * The page defaults to **No Schedule**. This runs the job only when triggered manually. Click **Next** to continue without a schedule. _(35)_
+    * The page defaults to **No Schedule**. This runs the job only when triggered manually. Click **Next** to continue without a schedule.
 
     <figure><img src="../../../../.gitbook/assets/35 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-34. Set a Daily schedule _(36)_
+34. Set a Daily schedule
 
     * Click **Daily**.
     * Choose **Scheduling Starts From** (start date).
@@ -210,11 +210,58 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     | 6 | **`Automatically apply master object filter on other dependency objects`** | All objects in the hierarchy are calculated based on the Master Object filters; this option avoids extra records addition due to self-references and multiple references.                                                                                                                                                                                                                                                                                                                                                  |
     | 7 | **`Data encryption for data files`**                                       | Data encryption for data files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
     | 8 | **`Incremental data migration`**                                           | After a data-loading process is done, only the newly added records are transferred into the destination sandbox.                                                                                                                                                                                                                                                                                                                                                                                                           |
-37.
+37. Save the job (Process Details)
 
+    1. **Fill in process details**
+       * **Name**: Enter a clear job name (e.g., _Brands Migration Masking_).
+       * **Job group**: Pick an existing group or click **+** to create one.
+       * **User Name Suffix (Source Org)** and **(Destination Org)**: Enter the suffixes to avoid username conflicts.
+       * (Optional) **Ignore Community Users**: Check if you don’t want to migrate community users.
+       * Review the **Master Object** shown on the right.
 
+    <figure><img src="../../../../.gitbook/assets/40 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+38. **Save**
+    * Click **Save** (bottom-right).
+39. **Confirmation**
 
+    * You’ll return to the **Dataloader Pro** list and see a green **Success** toast: **“Job saved successfully.”**
+    * Your new job now appears in the list.
 
+    <figure><img src="../../../../.gitbook/assets/41 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+40. Click on the "Summary" to view the job summary
+
+    <figure><img src="../../../../.gitbook/assets/42 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/43 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+41. Open Job Results (Screen 44)
+
+    * Go to **Dataloader Pro**.
+    * For your job (e.g., _Brands Migration \* Masking_), click the **⋮** menu under **Actions** and choose **Job Results**.
+
+    <figure><img src="../../../../.gitbook/assets/44 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+42. Review the Job Summary (Screen 45)
+
+    * You’ll land on **Summary** → **Master Object**.
+    * The row shows quick actions: **VR/WFR** (validation/workflow), **Filters**, **Mappings**, plus **last run results**.
+
+    <figure><img src="../../../../.gitbook/assets/45 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+43. Open Validation/Workflow controls (Screen 46)
+    * Click the **VR/WFR** icon (stacked lines) beside the object.
+44. Check Validation Rules (Screen 47)
+    * In the **Validation Rules** tab, review listed rules (Previous State, Current State).
+    * Use **Enable** where applicable; click **Ok** when done (or continue to the next tab).
+45. Check Workflow Rules (Screen 48)
+    * Switch to the **Workflow Rules** tab and review similarly (enable/disable as needed).
+    * Click **Ok** to close.
+46. Open and Review Filters (Screen 49)
+    * Back on **Summary**, click the **Filter** icon.
+47. Configure Filter criteria (Screen 50)
+    * Choose **Input Options** (e.g., **Upload CSV File**).
+    * Set **Select Field** and **Operator** (e.g., _Id_ + _Equals_).
+    * Paste or **Auto Populate** your SOQL/values (example shows a SELECT … IN (…) list).
+    * Optional: click **Record Count**, **Validate**, then **Apply**.
+48. Review Field Mappings (Screen 51)
+    * From **Summary**, click **Mappings** to open the mapping dialog and verify/adjust source→destination field mappings.
 
 
 

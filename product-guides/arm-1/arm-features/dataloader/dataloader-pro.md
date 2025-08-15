@@ -138,25 +138,66 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
 
     <figure><img src="../../../../.gitbook/assets/25 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 24. **Choose object & field type**\
-    In **Create Masking Rule**, pick the **Object** (e.g., `nFORCE__Brand__c`) and **Field Type** (Text/Textarea). Provide a **Masking value** when required. _(img 26)_
+    In **Create Masking Rule**, pick the **Object** (e.g., `nFORCE__Brand__c`) and **Field Type** (Text/Textarea). Provide a **Masking value** when required.
 
-
+    <figure><img src="../../../../.gitbook/assets/26 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 25. **Select masking style**\
-    Choose a **Masking style**: **Prefix**, **Suffix**, **Replace**, **Shuffle**, or **Generate Random**. _(img 27)_
-    3. **Select target fields & save**\
-       Check the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**. _(img 28)_
-    4. **Review rule in list**\
-       The rule appears in the **Masking** grid with its value and style. Click the **…** actions menu to **View Rule** or **Edit Rule**. _(img 29)_
-    5. **View rule details**\
-       Use **View Rule** to see the full configuration: rule name, object, type, masking value/style, timestamps, and the fields impacted. _(img 30)_
-    6. **Edit if needed**\
-       Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**. _(img 31)_
+    Choose a **Masking style**: **Prefix**, **Suffix**, **Replace**, **Shuffle**, or **Generate Random**.
 
+    <figure><img src="../../../../.gitbook/assets/27 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+26. **Select target fields & save**\
+    Select the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**. _(img 28)_
 
+    <figure><img src="../../../../.gitbook/assets/28 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+27. **Review rule in list**\
+    The rule appears in the **Masking** grid with its value and style. Click the actions menu to **View Rule** or **Edit Rule**. _(img 29)_
 
+    <figure><img src="../../../../.gitbook/assets/29 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+28. **View rule details**\
+    Use **View Rule** to see the full configuration: rule name, object, type, masking value/style, timestamps, and the fields impacted.
 
+    <figure><img src="../../../../.gitbook/assets/30 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+29. **Edit if needed**\
+    Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**. _(img 31)_
 
+    <figure><img src="../../../../.gitbook/assets/30.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+30. Observe the rule created for masking.
 
+    <figure><img src="../../../../.gitbook/assets/31 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+31. Click "Delete" to delete the rule created
+
+    <figure><img src="../../../../.gitbook/assets/32 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+32. Observe the rule deleted
+
+    <figure><img src="../../../../.gitbook/assets/33 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+33. Open the Schedule step
+
+    * The page defaults to **No Schedule**. This runs the job only when triggered manually. Click **Next** to continue without a schedule. _(35)_
+
+    <figure><img src="../../../../.gitbook/assets/35 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+34. Set a Daily schedule _(36)_
+
+    * Click **Daily**.
+    * Choose **Scheduling Starts From** (start date).
+    * Under **Repeats**, pick one:
+      * **On specific time** and set the time, or
+      * **At fixed interval of every** _N_ hours and select the starting hour.
+    * Under **Scheduling Ends**, choose **Never**, **X Occurrences from creation**, or a specific end date.
+
+    <figure><img src="../../../../.gitbook/assets/36 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+35. Set a Weekly schedule _(37)_
+
+    * Click **Weekly**.
+    * Choose **Scheduling Starts From** (start date).
+    * Select one or more days (Sun–Sat).
+    * Set **On Specific Time**.
+    * Choose when the schedule ends: **Never**, **X Occurrences from creation**, or a specific end date.
+
+    <figure><img src="../../../../.gitbook/assets/37 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+36. Continue
+    * Review the summary banner at the top (it describes the schedule in plain text).
+    * Click **Next** to move to **Job Configuration**.
+37.
 
 
 

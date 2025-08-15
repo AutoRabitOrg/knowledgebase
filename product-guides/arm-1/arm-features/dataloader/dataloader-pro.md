@@ -401,7 +401,58 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     * Back on **Dataloader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
 
     <figure><img src="../../../../.gitbook/assets/69 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-68.
+68. Run Job (Screen 70)
+
+    * From Dataloader Pro, locate your job.
+    * In **Actions**, click the **▶ Run** icon.
+
+    <figure><img src="../../../../.gitbook/assets/70 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+69. Run Configuration (Screen 70.1)
+
+    * In **Run Configuration**, review/adjust options (e.g., Disable workflow rules, Use Bulk API, Parallel/Serial mode, Batch size, UTF-8, Encrypt data files).
+    * Click **Run**.
+
+    <figure><img src="../../../../.gitbook/assets/70.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+70. Monitor Run Status (Screen 71)
+
+    * A toast confirms **Run Process Initiated Successfully**.
+    * The **Status** shows **In Progress** until the job completes.
+
+    <figure><img src="../../../../.gitbook/assets/71 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+71. Abort a Running Job (Screen 72)
+
+    * While the job is running, click the **⏹ Abort** icon in **Actions** to stop execution.
+
+    <figure><img src="../../../../.gitbook/assets/72 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+72. Confirm Completion (Screen 73)
+
+    * When finished, verify the **Status** shows **Success** (or review failures if shown).
+
+    <figure><img src="../../../../.gitbook/assets/73 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+73. Open Job Log (Screen 74)
+
+    * From Dataloader Pro, open the job’s **⋮** menu.
+    * Select **Log**.
+
+    <figure><img src="../../../../.gitbook/assets/74 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+74. Review Log Details (Screen 75)
+
+    * In **Log Details**, review each step, object counts, and success/error messages.
+    * Use search as needed; close when done.
+
+    <figure><img src="../../../../.gitbook/assets/75 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+75. Delete Data Encrypt Files (Screen 76)
+
+    * From the job’s **⋮** menu, choose **Delete Data Encrypt Files** to remove protected artifacts created during runs.
+
+    <figure><img src="../../../../.gitbook/assets/76 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+76. Confirm Deletion (Screen 77)
+
+    * In the confirmation dialog, click **Delete** to permanently remove the encrypted files, or **Cancel** to keep them.
+
+    <figure><img src="../../../../.gitbook/assets/77 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 

@@ -309,19 +309,19 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     <figure><img src="../../../../.gitbook/assets/51 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/52 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-53. View Success Results – Master Object (Screen 52.1)
+53. View Success Results – Master Object
 
     1. From **Summary → Master Object**, locate **Results of last run**.
     2. Click the **Success:** 🔍 icon (**Click to View**) for the master object.
 
     <figure><img src="../../../../.gitbook/assets/52.1 - DL PRO (2).png" alt=""><figcaption></figcaption></figure>
-54. See Success Details (CSV) (Screen 52.2)
+54. See Success Details (CSV)
 
     1. Review the **Destination Id** and **Status** for each processed record.
     2. Use **Search** and pagination as needed, then close the dialog.
 
     <figure><img src="../../../../.gitbook/assets/52.2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
-55. Review Ancestor Object Results (Screen 53)
+55. Review Ancestor Object Results
 
     1. Open **Summary → Ancestor Objects**.
     2. For each ancestor object, click the **Success** 🔍 or **Failure** 🔍 icons to view details.
@@ -336,144 +336,144 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     3. Use the **download** icon to export results if needed.
 
     <figure><img src="../../../../.gitbook/assets/54 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
-57. Open Masking Rule Actions (Screen 55)
+57. Open Masking Rule Actions
 
     1. Go to **Summary → Masking Rules**.
     2. Click the **⋮** menu for a rule and choose **View Rule** (or **Edit Rule**).
 
     <figure><img src="../../../../.gitbook/assets/55 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-58. View Masking Rule Details (Screen 56)
+58. View Masking Rule Details
 
     1. In **Masking Object Info**, verify **Rule**, **Object**, **Type**, **Masking style/value**, and the **Fields** impacted.
     2. Use **Search** if the field list is long; click **Close** when done.
 
     <figure><img src="../../../../.gitbook/assets/56 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-59. Start Editing a Masking Rule (Screen 57)
+59. Start Editing a Masking Rule
 
     1. From **Masking Rules**, open the **⋮** menu and select **Edit Rule**.
 
     <figure><img src="../../../../.gitbook/assets/57 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-60. Edit Masking Rule (Screen 58)
+60. Edit Masking Rule
 
     1. In **Edit Masking Rule**, confirm **Select Object**, **Field Type**, **Masking Style**, and **Masking value**.
     2. Check the **Fields** to apply the masking to.
     3. Click **Save** to apply changes.
 
     <figure><img src="../../../../.gitbook/assets/58 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-61. Confirm Rule List (Screen 59)
+61. Confirm Rule List
 
     1. You return to **Masking Rules**.
     2. Verify the rule appears as expected (use **Modified date** to confirm updates).
 
     <figure><img src="../../../../.gitbook/assets/59 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-62. Create a New Masking Rule (Screen 60)
+62. Create a New Masking Rule
 
     1. From **Masking Rules**, click **New** to open **Create Masking Rule**.
     2. Set **Select Object**, **Field Type**, **Masking Style**, **Masking value**, and select the **Fields**.
     3. Click **Save** to add the rule.
 
     <figure><img src="../../../../.gitbook/assets/60 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-63. **Open Edit (Screen 61)**
+63. **Open Edit**
 
     * From **Dataloader Pro**, find your job.
     * In **Actions**, click the **⋮** menu and choose **Edit**.
 
     <figure><img src="../../../../.gitbook/assets/61 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-64. **Edit Job – Login & Select Object (Screen 62)**
+64. **Edit Job – Login & Select Object**
 
     * On **Edit Dataloader Job**, choose **Source Org** and **Destination Org**.
     * Click **Login and fetch objects** to load metadata.
     * Click **Next** to continue through the setup steps as needed.
 
     <figure><img src="../../../../.gitbook/assets/62 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-65. **Open Schedule (Screen 63)**
+65. **Open Schedule**
 
     * From **Dataloader Pro**, open the **⋮** menu for the job.
     * Select **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/63 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-66. **Set Scheduling Type (Screen 64)**
+66. **Set Scheduling Type**
 
     * In the **Schedule** panel, choose **No Schedule**, **Daily**, or **Weekly**.
     * Follow the [scheduling process](dataloader-pro.md#:~:text=Open%20the%20Schedule%20step) to set up a schedule.
     * Configure any timing options shown, then click **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/64 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-67. **Delete a Job (Screen 65)**
+67. **Delete a Job**
 
     * From **Dataloader Pro**, open the job’s **⋮** menu.
     * Click **Delete**.
 
     <figure><img src="../../../../.gitbook/assets/65 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-68. **Confirm Deletion (Screen 66)**
+68. **Confirm Deletion**
 
     * Review the job name in the confirmation dialog.
     * Click **Delete** to remove, or **Cancel** to keep the job.
 
     <figure><img src="../../../../.gitbook/assets/66 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-69. **Clone a Job (Screen 67)**
+69. **Clone a Job**
 
     * From **Dataloader Pro**, open the job’s **⋮** menu.
     * Click **Clone**.
 
     <figure><img src="../../../../.gitbook/assets/67 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-70. **Configure Clone (Screen 68)**
+70. **Configure Clone**
 
     * In the **Clone** panel, update **Name**, **Job Group**, **Source Sandbox**, **Destination Sandbox**, and any **User Suffixes**.
     * Click **Clone**.
 
     <figure><img src="../../../../.gitbook/assets/68 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-71. **Verify Cloned Job (Screen 69)**
+71. **Verify Cloned Job**
 
     * Back on **Dataloader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
 
     <figure><img src="../../../../.gitbook/assets/69 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-72. Run Job (Screen 70)
+72. Run Job
 
     * From Dataloader Pro, locate your job.
     * In **Actions**, click the **▶ Run** icon.
 
     <figure><img src="../../../../.gitbook/assets/70 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-73. Run Configuration (Screen 70.1)
+73. Run Configuration
 
     * In **Run Configuration**, review/adjust options (e.g., Disable workflow rules, Use Bulk API, Parallel/Serial mode, Batch size, UTF-8, Encrypt data files).
     * Click **Run**.
 
     <figure><img src="../../../../.gitbook/assets/70.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-74. Monitor Run Status (Screen 71)
+74. Monitor Run Status
 
     * A toast confirms **Run Process Initiated Successfully**.
     * The **Status** shows **In Progress** until the job completes.
 
     <figure><img src="../../../../.gitbook/assets/71 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-75. Abort a Running Job (Screen 72)
+75. Abort a Running Job
 
     * While the job is running, click the **⏹ Abort** icon in **Actions** to stop execution.
 
     <figure><img src="../../../../.gitbook/assets/72 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-76. Confirm Completion (Screen 73)
+76. Confirm Completion
 
     * When finished, verify the **Status** shows **Success** (or review failures if shown).
 
     <figure><img src="../../../../.gitbook/assets/73 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-77. Open Job Log (Screen 74)
+77. Open Job Log
 
     * From Dataloader Pro, open the job’s **⋮** menu.
     * Select **Log**.
 
     <figure><img src="../../../../.gitbook/assets/74 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-78. Review Log Details (Screen 75)
+78. Review Log Details
 
     * In **Log Details**, review each step, object counts, and success/error messages.
     * Use search as needed; close when done.
 
     <figure><img src="../../../../.gitbook/assets/75 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-79. Delete Data Encrypt Files (Screen 76)
+79. Delete Data Encrypt Files
 
     * From the job’s **⋮** menu, choose **Delete Data Encrypt Files** to remove protected artifacts created during runs.
 
     <figure><img src="../../../../.gitbook/assets/76 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-80. Confirm Deletion (Screen 77)
+80. Confirm Deletion
 
     * In the confirmation dialog, click **Delete** to permanently remove the encrypted files, or **Cancel** to keep them.
 

@@ -329,7 +329,7 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     4. The toggle **Skip Records** is in "inactive" state as the records are not choosen to be skipped while creating the job.
 
     <figure><img src="../../../../.gitbook/assets/53 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
-56. Review Child Object Results (Screen 54)
+56. Review Child Object Results
 
     1. Open **Summary → Child Objects**.
     2. Click the **Success** 🔍 or **Failure** 🔍 icons to view child-object run results.

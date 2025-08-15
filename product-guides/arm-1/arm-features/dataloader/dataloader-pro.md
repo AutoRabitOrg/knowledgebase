@@ -1,6 +1,198 @@
 # Data Loader Pro
 
-**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Data Loader Pro** feature in ARM.&#x20;
+**Data Loader Pro** is an advanced ARM capability that enables seamless transfer of data from a source sandbox to a destination sandbox. It automatically manages parent-child relationships, ensuring data integrity across related Salesforce objects. With support for multi-object hierarchies, Data Loader Pro simplifies the migration of complex Salesforce datasets, making the process faster, more reliable, and less prone to manual errors.
+
+### Prerequisites for Data Loader Pro
+
+When running **Data Loader Pro** on objects for the first time, ensure that **Data Loader Configuration** is completed between the same orgs for all objects included in the job. This configuration is a one-time requirement.
+
+Data Loader Pro plays a crucial role in migrating data from a source sandbox to a destination sandbox. However, during this migration process, there is always a risk of creating duplicate records. To address this, ARM provides a synchronization feature that leverages the **ARM External ID** field (`AutorabitExtid__c`) to match and align records between orgs, helping prevent duplication.
+
+#### &#x20;Step-By-Step Guide:
+
+1. Log in to ARM application
+2. Click on the PRO option in the left side navigation
+3.  Open **Dataloader ▸ Pro** and click **Create new job**.
+
+    <figure><img src="../../../../.gitbook/assets/1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+4.  In **Create Dataloader Job – Login and select object**, choose the **Source Org** and **Destination Org** from the dropdowns.\
+
+
+    <figure><img src="../../../../.gitbook/assets/2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+5.  Click **Login and fetch objects** to authenticate and load available objects from the source org.
+
+    <figure><img src="../../../../.gitbook/assets/3 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+6.  Use the search box to filter objects, select the required object (radio button), then click **Next** to proceed.
+
+    <figure><img src="../../../../.gitbook/assets/4 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+7. Open **Schema** and click the **Filters** icon
+8.  In the **Master Object** tab, locate your object and select the funnel icon in the **Filters** column.
+
+    <figure><img src="../../../../.gitbook/assets/5 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+9.  Configure the filter rule
+
+    -In **Filter**, keep **Insert Value** (or switch as needed).
+
+    <figure><img src="../../../../.gitbook/assets/6 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    Pick the field in **Select Field** (e.g., `nFORCE__Look_Up_Key__c`).
+
+    <figure><img src="../../../../.gitbook/assets/7 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    Choose the **Operator** (e.g., **Is not empty**) and enter a **Value** if the operator requires one.
+10. (Optional) Build complex logic\
+    – Use **+** to add more conditions, the **OR** button for alternate clauses, and the refresh icon to reset.
+
+    <figure><img src="../../../../.gitbook/assets/7.1 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+
+    – Click **Validate** to check the rule and see an estimated record count. _(Success toast confirms the count.)_
+
+    <figure><img src="../../../../.gitbook/assets/8 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+11. Apply the filter\
+    – Click **Apply** to save the rule to the object.
+
+    <figure><img src="../../../../.gitbook/assets/9 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+
+    – A success message will be displayed on the screen, on clicking the "Apply" button.
+
+    <figure><img src="../../../../.gitbook/assets/10 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+12. **Open Filters and choose CSV input**
+
+    – In **Schema → Master Object**, click the **Filters** icon for the object.
+
+    <figure><img src="../../../../.gitbook/assets/11 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    – Pick the **Select Field** (e.g., `Id`) and **Select Operator** (e.g., **Equals**).
+
+    <figure><img src="../../../../.gitbook/assets/12 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    – In the **Filter** dialog, select **Upload CSV File** (Input Options).
+
+    1. From **Select Field**, choose a field (e.g., `nFORCE__Look_Up_Key__c`). Select an operator.
+
+    <figure><img src="../../../../.gitbook/assets/13 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    – Click **Upload File**.
+13. **Confirm the upload**
+
+    1. After the CSV uploads, a success message will be displayed.
+
+    <figure><img src="../../../../.gitbook/assets/13 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+14. **Auto-generate the filter**
+
+    1. Click **Auto Populate** to build the SOQL filter from the uploaded CSV values.
+
+    <figure><img src="../../../../.gitbook/assets/14 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+15. &#x20;**Validate and apply**
+
+    1. Review the generated query in the editor (e.g., `… WHERE nFORCE__Look_Up_Key__c IN ('…')`).
+
+    <figure><img src="../../../../.gitbook/assets/15 - DL PRO (3).png" alt=""><figcaption></figcaption></figure>
+16. Click **Validate** to preview the fetch count, then click **Apply**.
+
+    <figure><img src="../../../../.gitbook/assets/16 - DL PRO (3).png" alt=""><figcaption></figcaption></figure>
+17. Back on **Schema**, verify the green **Success** toast and the active **Filters** icon.
+
+    <figure><img src="../../../../.gitbook/assets/17 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+18. **Configure field mappings**
+
+    1. Click the **Mappings** icon for the same object.
+
+    <figure><img src="../../../../.gitbook/assets/18 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    1. In **Create Mapping**, use **Auto Map** to map identical field names or **Clear Mapping** to reset.
+
+    <figure><img src="../../../../.gitbook/assets/18 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+
+    1. Click "Clear" to clear the mappings
+
+    <figure><img src="../../../../.gitbook/assets/19.1 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+
+    1. Click on "Automap" to map the similar fields
+
+    <figure><img src="../../../../.gitbook/assets/20 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+    1. Review and adjust any mappings as needed, then click **Save**.
+
+    <figure><img src="../../../../.gitbook/assets/20 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+19. Click on the "Filters" and "Mappings" icons to open the respective windows on the "Ancestor Objects" section.
+
+    <figure><img src="../../../../.gitbook/assets/21 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+20. Click on "Skip Records" to make sure the records from these objects were skipped from processing.
+
+    <figure><img src="../../../../.gitbook/assets/22 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+21. **Select child object & open mappings**\
+    In **Schema → Child Objects**, search and select the required child object (e.g., **ContentVersion**), then click the **Mappings** icon.
+
+    <figure><img src="../../../../.gitbook/assets/23 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+22. **Map fields**\
+    In **Create Mapping**, review source ↔ destination pairs.
+
+    * Click **Auto Map** to map identical field names automatically.
+    * Click **Clear Mapping** to reset if needed.\
+      Finish by clicking **Save**.
+
+    <figure><img src="../../../../.gitbook/assets/24 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
+23. **Open Masking**\
+    Go to the **Masking** step and click **New** to add a masking rule.
+
+    <figure><img src="../../../../.gitbook/assets/25 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+24. **Choose object & field type**\
+    In **Create Masking Rule**, pick the **Object** (e.g., `nFORCE__Brand__c`) and **Field Type** (Text/Textarea). Provide a **Masking value** when required. _(img 26)_
+
+
+25. **Select masking style**\
+    Choose a **Masking style**: **Prefix**, **Suffix**, **Replace**, **Shuffle**, or **Generate Random**. _(img 27)_
+    3. **Select target fields & save**\
+       Check the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**. _(img 28)_
+    4. **Review rule in list**\
+       The rule appears in the **Masking** grid with its value and style. Click the **…** actions menu to **View Rule** or **Edit Rule**. _(img 29)_
+    5. **View rule details**\
+       Use **View Rule** to see the full configuration: rule name, object, type, masking value/style, timestamps, and the fields impacted. _(img 30)_
+    6. **Edit if needed**\
+       Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**. _(img 31)_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 

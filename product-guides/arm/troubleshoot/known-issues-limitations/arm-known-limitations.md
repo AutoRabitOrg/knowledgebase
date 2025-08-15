@@ -15,7 +15,7 @@ Jira OAuth access type is currently supported for **Cloud versions** only.
 
 
 
-## Understanding Why Selected Files May Not Appear in the Artifact ZIP
+### Understanding Why Selected Files May Not Appear in the Artifact ZIP
 
 **Plain Language Summary** Think of creating an artifact ZIP like packing a suitcase from your laundry. You pick items from three different laundry days, but when you actually pack, you only grab clothes from your **most recent laundry pile**.If a shirt you wanted was already thrown away before that last laundry day, it won’t make it into your suitcase — even if it was in an earlier pile you selected. That’s how the artifact ZIP works: it only includes files that still exist in the latest revision you checked out.
 

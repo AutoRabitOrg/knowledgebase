@@ -346,8 +346,45 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
     3. Click **Save** to add the rule.
 
     <figure><img src="../../../../.gitbook/assets/60 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+59. **Open Edit (Screen 61)**
 
+    * From **Dataloader Pro**, find your job.
+    * In **Actions**, click the **⋮** menu and choose **Edit**.
 
+    <figure><img src="../../../../.gitbook/assets/61 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+60. **Edit Job – Login & Select Object (Screen 62)**
+
+    * On **Edit Dataloader Job**, choose **Source Org** and **Destination Org**.
+    * Click **Login and fetch objects** to load metadata.
+    * Click **Next** to continue through the setup steps as needed.
+
+    <figure><img src="../../../../.gitbook/assets/62 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+61. **Open Schedule (Screen 63)**
+
+    * From **Dataloader Pro**, open the **⋮** menu for the job.
+    * Select **Schedule**.
+
+    <figure><img src="../../../../.gitbook/assets/63 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+62. **Set Scheduling Type (Screen 64)**
+
+    * In the **Schedule** panel, choose **No Schedule**, **Daily**, or **Weekly**.
+    * Configure any timing options shown, then click **Schedule**.
+
+    <figure><img src="../../../../.gitbook/assets/64 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+63. **Delete a Job (Screen 65)**
+    * From **Dataloader Pro**, open the job’s **⋮** menu.
+    * Click **Delete**.
+64. **Confirm Deletion (Screen 66)**
+    * Review the job name in the confirmation dialog.
+    * Click **Delete** to remove, or **Cancel** to keep the job.
+65. **Clone a Job (Screen 67)**
+    * From **Dataloader Pro**, open the job’s **⋮** menu.
+    * Click **Clone**.
+66. **Configure Clone (Screen 68)**
+    * In the **Clone** panel, update **Name**, **Job Group**, **Source Sandbox**, **Destination Sandbox**, and any **User Suffixes**.
+    * Click **Clone**.
+67. **Verify Cloned Job (Screen 69)**
+    * Back on **Dataloader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
 
 
 

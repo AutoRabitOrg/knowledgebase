@@ -228,7 +228,6 @@
       * [Commit Templates](product-guides/arm/arm-features/version-control/commit-templates.md)
       * [GIT Revert](product-guides/arm/arm-features/version-control/git-revert.md)
       * [Understanding Duplicate File Change Commits in Git](product-guides/arm/arm-features/version-control/understanding-duplicate-file-change-commits-in-git.md)
-      * [Page 1](product-guides/arm/arm-features/version-control/page-1.md)
       * [Merge Approvals](product-guides/arm/arm-features/version-control/merge-approvals.md)
     * [Data Loader](product-guides/arm/arm-features/dataloader/README.md)
       * [Single Data Loader](product-guides/arm/arm-features/dataloader/single-dataloader/README.md)

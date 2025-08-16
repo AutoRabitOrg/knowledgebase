@@ -19,24 +19,26 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 ## Register an ALM <a href="#registering-an-alm" id="registering-an-alm"></a>
 
 1. Log in to ARM as an administrator.
-2. Navigate to **Admin › ALM Mgmt**.
-3.  Click **Register ALM**.
+2. Navigate to **Settings › ALM Mgmt**.
+3.  Click **Register ALM**.\
 
-    <figure><img src="../../../.gitbook/assets/image (739).png" alt="Register ALM button on the ALM Mgmt screen"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1959).png" alt=""><figcaption></figcaption></figure>
 4.  Fill the form:
 
-    **IBM RTC, CA Agile Central, VersionOne, or Azure DevOps**
+    **IBM RTC, CA Agile Central, Salesforce, ServiceNow VersionOne, or Azure DevOps**\
+    \
+    ![](<../../../.gitbook/assets/image (1961).png>)\
 
-    <figure><img src="../../../.gitbook/assets/image (740).png" alt="ALM registration form for Azure DevOps" width="414"><figcaption></figcaption></figure>
 
     * **ALM Name** – friendly label.
     * **ALM Type** – choose the platform.
     * **ALM URL** – base server URL.
     * **Credentials** – select stored credentials (see [Credential Manager](../../arm/troubleshoot/how-tos/create-users-credentials.md)).
 
-    **Jira**
-
-    <figure><img src="../../../.gitbook/assets/image (742).png" alt="Jira registration with Standard and OAuth access types" width="414"><figcaption></figcaption></figure>
+    **Jira**\
+    \
+    ![](<../../../.gitbook/assets/image (1962).png>)
 
     * **ALM Name** – friendly label.
     * **ALM Type** – _Jira_.
@@ -49,7 +51,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 * OAuth appears only after you register Jira OAuth credentials in **ALM Settings**. Learn how [here](../../arm/arm-administration/user-management/manage-users-account-settings.md).
 * **Access Token** expires after 1 hour; **Refresh Token** after 90 days.
 
-<img src="../../../.gitbook/assets/image (744).png" alt="" data-size="original">
+
 {% endhint %}
 
 5. Click **Test Connection** to verify access, then **Save**.
@@ -79,9 +81,11 @@ Configure how work items are shown and filtered:
 
 1. **Display work items from inactive sprints** – include backlog items.
 2. **Enable global filter criteria on work items** – add column filters as needed.
-3. Click **Save Settings**.
+3.  Click **Save Settings**.\
+    \
 
-<figure><img src="../../../.gitbook/assets/image (745).png" alt="Integration Settings panel"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1963).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 To remove a field’s filter, click the trash-can icon next to the rule.
@@ -114,25 +118,29 @@ Repository mappings let AutoRABIT update ALM work-item status after a successful
 * A mapping is **required** for smart-commit syncing.
 * Status changes apply **only** to merges performed through merge requests.
 
-<img src="../../../.gitbook/assets/image (747).png" alt="" data-size="original">
+
 {% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (1964).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Choose the version-control **Repository**.
 2. Select the **Source Branch** (click _Register here_ if it’s missing).
 3. Pick the **ALM Project**.
-4.  In **ALM Work Item Status**, define:
+4. In **ALM Work Item Status**, define:
+   * **Work Item Type**
+   * Current status
+   *   Target status after merge\
 
-    * **Work Item Type**
-    * Current status
-    * Target status after merge
 
-    <figure><img src="../../../.gitbook/assets/image (748).png" alt="ALM status mapping dialog" width="379"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (1965).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Click **Save**.
 
 {% hint style="info" %}
 Branches and repos you **can’t** access won’t appear in the dropdowns.
 {% endhint %}
 
-6. Suppress ALM email noise by listing addresses in **Notify exception status updates to**.
+6.  Suppress ALM email noise by listing addresses in **Notify exception status updates to**.\
+    \
 
-<figure><img src="../../../.gitbook/assets/image (749).png" alt="Notify exception status updates field"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 10.01.11 PM.png" alt="" width="563"><figcaption></figcaption></figure>

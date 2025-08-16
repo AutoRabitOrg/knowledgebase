@@ -10,16 +10,6 @@ This article is for the **registered user** in particular. **General users** do 
 * **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page.
 {% endhint %}
 
-## Feature Availability
-
-### Subscription Tab Feature Availability
-
-{% hint style="info" %}
-**Note:** The below-highlighted Subscription button will only appear if a customer procures more than 20+ licenses to manage different Teams.
-{% endhint %}
-
-<figure><img src="../../../.gitbook/assets/image (708).png" alt=""><figcaption></figcaption></figure>
-
 ## Subscription Management: Overview <a href="#subscription-management-overview" id="subscription-management-overview"></a>
 
 ARM offers an easy and centralized solution for a **Registered User** of your organization to manage team subscriptions and accounts. This ensures tracking of all subscription activity, making sure everything is logged. You use the **Subscription Management (SM)** interface to review and manage how purchased subscriptions are used on your production instance.
@@ -27,17 +17,18 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Log in to your ARM account using the **Registered User** credentials.
-2. Hover your mouse over the **`Admin`** tab and click on **`Subscriptions`**.
+2.  Hover your mouse over the **`Settings`** tab and click on **`Subscriptions`**.\
 
-<figure><img src="../../../.gitbook/assets/image (709).png" alt="" width="189"><figcaption></figcaption></figure>
 
-3.  Your active plan details will be shown on the dashboard with details like:
+    <figure><img src="../../../.gitbook/assets/image (1947).png" alt="" width="229"><figcaption></figcaption></figure>
+3. Your active plan details will be shown on the dashboard with details like:
+   * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.
+   * **`Total Subscription Allotted:`** Number of licenses utilized to date.
+   *   **`Total Subscription Available:`** Total number of licenses available.\
+       \
 
-    * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.
-    * **`Total Subscription Allotted:`** Number of licenses utilized to date.
-    * **`Total Subscription Available:`** Total number of licenses available.
 
-    <figure><img src="../../../.gitbook/assets/image (710).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.32.42 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: By default, ARM considers you as part of a team, and if the subscription available denotes 'zero', it means you completely utilize the entire team subscription for your team only.
@@ -48,10 +39,10 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.
 
 1. Log in to the **`Subscription Management`** dashboard using the Registered User credential.
-2. On the right side of the screen, click **`Create Team`**.
+2.  On the right side of the screen, click **`Create Team`**.\
 
-<figure><img src="../../../.gitbook/assets/image (711).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.34.19 PM.png" alt=""><figcaption></figcaption></figure>
 3. Enter a **name** for your team.
 4. Choose a **`Team Administrator`** or click on the![](<../../../.gitbook/assets/image (712).png>)icon to create a user account and assign them permission as a Team Administrator. Fill in the required details; the newly created user will be assigned as a Team Administrator.
 
@@ -69,10 +60,10 @@ This section is about creating the teams and assigning members to those teams. T
 **Important Note**: The granted user will not be counted as a part of the subscribed licenses on the team.
 {% endhint %}
 
-7. Click **`Save`**.
+7.  Click **`Save`**.\
 
-<figure><img src="../../../.gitbook/assets/image (713).png" alt="" width="563"><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/image (1948).png" alt="" width="375"><figcaption></figcaption></figure>
 8. The newly created team will be displayed on the **`Subscription Management`** home page.
 9. For each team created, the following information is displayed:
    * **`Team Name:`** Name of the Team
@@ -115,14 +106,16 @@ ErrorIf an incorrect file is selected, a notification popup stating that the fil
 After uploading the license key, the administrator can allot the available subscriptions to the desired team.
 
 1. Look for the desired team on the **Subscription Management** page.
-2. Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (718).png>)**)** icon to update the subscription count for a team.
+2.  Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (718).png>)**)** icon to update the subscription count for a team.\
 
-<figure><img src="../../../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../.gitbook/assets/image (1949).png" alt="" width="563"><figcaption></figcaption></figure>
 3. The number of user licenses available for your account is displayed in the **`Subscriptions Available`** field.
-4. In the **`Team Subscriptions`** section, click on the **`-`** or **`+`** buttons to update the license count, then click **`Save`**.
+4.  In the **`Team Subscriptions`** section, click on the **`-`** or **`+`** buttons to update the license count, then click **`Update`**.\
+    \
 
-<figure><img src="../../../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.36.39 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 All fields on the **Subscription Management** page will get updated.
 

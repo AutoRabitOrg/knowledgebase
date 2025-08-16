@@ -25,12 +25,14 @@ That means fewer manual edits, fewer post-deployment fixes, and more predictable
 ## Creating a Rule <a href="#procedure" id="procedure"></a>
 
 1. Log in to ARM.
-2.  Go to **Admin › Search and Substitute**.
+2.  Go to **Settings › Search and Substitute**.\
 
-    <figure><img src="../../../.gitbook/assets/image (729).png" alt="Admin menu showing the Search and Substitute option" width="283"><figcaption></figcaption></figure>
-3.  Click **Create Rule**.
 
-    <figure><img src="../../../.gitbook/assets/image (730).png" alt="Create Rule button on the Search and Substitute page"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1956).png" alt="" width="231"><figcaption></figcaption></figure>
+3.  Click **Create Rule**.\
+
+
+    <figure><img src="../../../.gitbook/assets/image (1957).png" alt=""><figcaption></figcaption></figure>
 
 Each rule has a **label** plus one or more **parameters**.
 
@@ -38,7 +40,7 @@ Each rule has a **label** plus one or more **parameters**.
 
 ### Rule Parameters Explained <a href="#rule-parameters" id="rule-parameters"></a>
 
-<figure><img src="../../../.gitbook/assets/image (731).png" alt="Rule parameter fields: Metadata Type, Sub Element, Criteria, Substitute" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1958).png" alt="" width="563"><figcaption></figcaption></figure>
 
 | #     | Field             | Purpose                                                                                  |
 | ----- | ----------------- | ---------------------------------------------------------------------------------------- |
@@ -68,9 +70,11 @@ Need to change an invoice number format in one org only? Create a rule like this
 
 <figure><img src="../../../.gitbook/assets/image (732).png" alt="Example rule that changes displayFormat from a-{000} to a-{001} for a CustomObject"><figcaption></figcaption></figure>
 
-Click **Save** to store the rule. It appears in the list with **Edit**, **Delete**, and **Clone** icons.
+Click **Save** to store the rule. It appears in the list with **Edit**, **Delete**, and **Clone** icons.\
+\
 
-<figure><img src="../../../.gitbook/assets/image (733).png" alt="Rule list with edit, delete, and clone actions"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.48.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -88,15 +92,18 @@ On the **Deployment Settings** screen:
 
 ### Commit to Version Control <a href="#committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned" id="committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned"></a>
 
-During **Commit** or **Submit for Validation**, pick your rule under **Search and Substitute**.
+During **Commit** or **Submit for Validation**, pick your rule under **Search and Substitute**.\
+\
 
-<figure><img src="../../../.gitbook/assets/image (737).png" alt="Commit screen showing Search and Substitute rule selection"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.52.53 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### CI Job <a href="#performing-ci-job-with-new-rule-assigned" id="performing-ci-job-with-new-rule-assigned"></a>
 
-When creating a **CI Job**, expand the **Deploy** section and choose the rule.
+When creating a **CI Job**, expand the **Deploy** section and choose the rule\
 
-<figure><img src="../../../.gitbook/assets/image (738).png" alt="CI Job creation with Search and Substitute rule dropdown"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.50.42 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

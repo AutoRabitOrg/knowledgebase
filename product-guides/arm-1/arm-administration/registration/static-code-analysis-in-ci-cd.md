@@ -29,7 +29,7 @@ ARM supports the following SCA tools:
 Add an SCA tool to any build or continuous integration (CI) job:
 
 1. Log in to ARM.
-2. Navigate to **`Admin > Plugins`**.
+2. Navigate to **`Settings > My Account > Plugins`**.
 3. In **`Static Code Analysis`**, select the tool you want to enable for builds or CI jobs.
 
 #### 3.1 Integrate Apex PMD <a href="#id-31-integrate-apex-pmd" id="id-31-integrate-apex-pmd"></a>
@@ -73,15 +73,15 @@ Apex PMD ships with a comprehensive default rule set, but you can supply your ow
 
 **Excluding a file in ARM + CodeScan**
 
-1. Go to **`Admin > My Account > Plugins > Static Code Analysis`**.
-2. Click **Edit** for CodeScan.
+1. Go to **`Settings > My Account > Plugins > Static Code Analysis`**.
+2.  Click **Edit** for CodeScan.\
 
-<figure><img src="../../../../.gitbook/assets/image (1539).png" alt="CodeScan plugin settings in ARM"><figcaption></figcaption></figure>
 
-3. Use **Source File Exclusion** to list files you want to skip.
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.23.19 PM (1).png" alt="" width="563"><figcaption></figcaption></figure>
+3.  Use **Source File Exclusion** to list files you want to skip.\
 
-<figure><img src="../../../../.gitbook/assets/image (1540).png" alt="Source File Exclusion field in CodeScan settings"><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (1946).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Click **Save**, then rerun the analysis.
 
 #### 3.4 Integrate Salesforce Scanner <a href="#id-34-integrate-salesforce-scanner" id="id-34-integrate-salesforce-scanner"></a>
@@ -134,11 +134,13 @@ If no Master (baseline) analysis exists, ARM shows a prompt recommending you run
 
 You can enforce pass/fail thresholds for SCA across CI jobs, deployments, and gated commits.
 
-1. Go to **`Admin > My Account > Validation Criteria – Static Code Analysis`**.
+1. Go to **`Settings > My Account > Validation Criteria – Static Code Analysis`**.
 2. Select **`Enable Validation Criteria – SCA`**.
-3. For each tool, define priority/severity thresholds (e.g., Apex PMD priorities 1–5). Use **`+`** to add multiple thresholds.
+3.  For each tool, define priority/severity thresholds (e.g., Apex PMD priorities 1–5). Use **`+`** to add multiple thresholds.\
+    \
 
-<figure><img src="../../../../.gitbook/assets/image (704).png" alt="Validation criteria for static code analysis screen" width="557"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.25.58 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Running SCA in a CI job <a href="#id-5-running-sca-in-ci-job" id="id-5-running-sca-in-ci-job"></a>
 
@@ -178,11 +180,13 @@ To include SCA in a CI job:
 
 ### 6. Running SCA in CI job <a href="#id-6-running-sca-in-ci-job" id="id-6-running-sca-in-ci-job"></a>
 
-ARM also enforces SCA during EZ-Commits.
+ARM also enforces SCA during EZ-Commits.\
+\
 
-<figure><img src="../../../../.gitbook/assets/image (705).png" alt="Commit validation approval settings for static code analysis" width="450"><figcaption></figcaption></figure>
 
-1. Go to **`Admin > My Account > Commit Validation – Approval Settings`**.
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.27.17 PM (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+1. Go to **`Settings > My Account > Commit Validation – Approval Settings`**.
 2. Select **`Enable criteria-based review process`**.
 3. Check **`Should pass validation criteria for Static Code Analysis`** and choose one or more tools.
 4. Optional:
@@ -207,9 +211,10 @@ Select **`Stop deployment if build doesn't meet global criteria`** to block depl
 
 ### 8. Running an SCA during an EZ-Merge <a href="#id-8-running-an-sca-during-an-ezmerge" id="id-8-running-an-sca-during-an-ezmerge"></a>
 
-Choose an SCA tool during a pre-validation merge.
+Choose an SCA tool during a pre-validation merge.\
 
-<figure><img src="../../../../.gitbook/assets/image (707).png" alt="New EZ-Merge page with static code analysis options" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.29.00 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 * **Run Static Code Analysis** – enabled by default if SCA criteria are set globally.
 * **All supported metadata** – scans the whole target branch during an EZ-Merge, or only commit files during an EZ-Commit.

@@ -30,22 +30,25 @@ Only **Org Administrators** can view, reset, or delete workspaces.
 ### Viewing the Workspace List <a href="#viewing-the-workspace" id="viewing-the-workspace"></a>
 
 1. Log in to ARM.
-2.  Go to **Admin › Workspaces**.
+2.  Go to **Settings › Workspaces**.\
 
-    <figure><img src="../../../.gitbook/assets/image (721).png" alt="Admin menu highlighting Workspaces option" width="170"><figcaption></figcaption></figure>
-3.  The list shows every workspace ever created:
 
-    <figure><img src="../../../.gitbook/assets/image (722).png" alt="Workspace list with labels, authors, sizes"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1950).png" alt="" width="234"><figcaption></figcaption></figure>
+3.  The list shows every workspace ever created:\
+    \
 
-    | Field                | Description                                           |
-    | -------------------- | ----------------------------------------------------- |
-    | **Label**            | Workspace name (auto-generated)                       |
-    | **Created On**       | Timestamp of first creation                           |
-    | **Author**           | User who owns the workspace                           |
-    | **Repo / Branch**    | Git location tied to the workspace                    |
-    | **Status**           | _Running_ or _Idle_                                   |
-    | **Module**           | ARM feature that created it (EZ-Commit, CI Job, etc.) |
-    | **Last Used / Size** | Date of last activity and storage consumed            |
+
+    <figure><img src="../../../.gitbook/assets/image (1953).png" alt=""><figcaption></figcaption></figure>
+
+| Field                | Description                                           |
+| -------------------- | ----------------------------------------------------- |
+| **Label**            | Workspace name (auto-generated)                       |
+| **Created On**       | Timestamp of first creation                           |
+| **Author**           | User who owns the workspace                           |
+| **Repo / Branch**    | Git location tied to the workspace                    |
+| **Status**           | _Running_ or _Idle_                                   |
+| **Module**           | ARM feature that created it (EZ-Commit, CI Job, etc.) |
+| **Last Used / Size** | Date of last activity and storage consumed            |
 
 ***
 
@@ -54,9 +57,11 @@ Only **Org Administrators** can view, reset, or delete workspaces.
 Reset wipes the folder contents but keeps the workspace record.
 
 1. Find the workspace and click **Reset**.
-2.  Confirm to restore default state.
+2.  Confirm to restore default state.\
+    \
 
-    <figure><img src="../../../.gitbook/assets/image (723).png" alt="Reset confirmation dialog"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.40.11 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -65,11 +70,12 @@ Reset wipes the folder contents but keeps the workspace record.
 Delete removes the workspace permanently (repositories remain intact).
 
 1. Click the trash-can icon next to the workspace.
-2.  Confirm twice—you cannot undo this.
+2.  Confirm twice—you cannot undo this.\
 
-    <figure><img src="../../../.gitbook/assets/image (724).png" alt="Delete workspace button"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (725).png" alt="Final delete confirmation modal"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1954).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/image (1955).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If the **Delete** button is missing, your role lacks the required permission.

@@ -48,7 +48,7 @@ This article will guide you through the process of creating a new Release Label 
 {% hint style="info" %}
 **Important Note:** If you choose just one revision while creating a new release label, a notification message asks you to select at least **two revisions**. You can choose the **Single Revision** option directly from the dropdown on the **New Merge** screen to perform a merge using only one revision. This helps avoid the creation of unnecessary release labels.
 
-<img src="../../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 {% endhint %}
 
 **Supported Components for Delta Metadata Generation in Release Label Deployments**

@@ -62,26 +62,26 @@ Verified Categories for Project Types in the following scenarios, and have verif
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
     &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -100,27 +100,27 @@ Verified this enhancement via validating the below scenarios
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  If no file is selected during import, an error occurs.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. If the repository key is missing, an import error is triggered.
 7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -133,11 +133,11 @@ Verified the Pagination enhancement via validating the following scenarios:
 1.  The _Projects Analysis_ section displays a maximum of 10 entries per page.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  The _Previous Analysis_ section displays a maximum of 15 entries per page.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Pagination controls (e.g., next, previous, specific result numbers) are present and functional in both sections independently.
 
 **3.     Email Limit & Validation for Multi-User Invites**
@@ -162,19 +162,19 @@ We have verified the enhancement for Email Limit & Validation for Multi-User Inv
 1.  Verified that if invite is sent to more than 50 members, then the following is thrown:\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Invite sent successfully if invite is sent to less than or equal to 50 users.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Verified, if mail address is more than 100 characters, then an error is thrown; if it is less than 100 characters, then the invite is sent successfully.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 4.  If invite sent to non-corporate domains, the following error is thrown:\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -208,7 +208,7 @@ Legacy Status Replacement:
 * Legacy status values such as Opened, Confirmed, ReOpened, Resolved, and Closed must no longer appear in the exported CSV.
 * These must be correctly mapped to the corresponding updated status where applicable.
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Filter Cleanup:
 
@@ -218,17 +218,17 @@ The Is Resolved filter should be completely removed from the CSV Export page.
 
 Only the Status filter should be visible and functional.
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. UI-CSV Consistency: The status shown in the exported CSV for each issue must exactly match what is shown for the same issue in the UI.
 4.  The type, statuses and severity shown in the exported CSV is exactly matching what is shown in the issues page and CSV export page.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Fixed an unclear error message displayed when invite is sent only to non-corporate email addresses
 
@@ -240,17 +240,17 @@ This fix addresses an unclear message that occurs when:
 
 After these steps, Admin receives the following unclear error message:
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 However, this issue does not occur when multiple users are invited, including at least one corporate email:
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been fully remediated.  We have verified the fix via the following scenario:\
 \
 Validated that the proper error message is displayed when invite is sent only to non-corporate email addresses.
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -851,7 +851,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -879,19 +879,19 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -899,7 +899,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -907,7 +907,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 Some users were reporting that they were unable to scroll down in the quality profiles section in project settings.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been remediated in this release.
 
@@ -917,7 +917,7 @@ We have verified that with this fix, users are able to scroll down in the Qualit
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Fixed Deprecation Warning associated with sonar.login**
 
@@ -1571,7 +1571,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

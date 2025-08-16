@@ -10,11 +10,11 @@ If a user has multiple roles, the role that grants **more** permissions always o
 1.  Hover over **Settings** and click **Users >** **Roles**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Click **Create Role**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 3. Provide a **Role Name** and **Description**.
 4.  In the **Permissions** tab, tick the checkboxes for every capability this role should grant.\
 

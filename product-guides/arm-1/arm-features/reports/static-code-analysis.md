@@ -18,26 +18,26 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
 
 1. Hover your mouse over the **REPORTS** module and choose the option: [**STATIC CODE ANALYSIS**](https://www.autorabit.com/products/codescan/)
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt="" width="323"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1).png" alt="" width="323"><figcaption></figcaption></figure>
 
 2. Click on the **NEW STATIC CODE ANALYSIS** button at the top right corner of the screen.
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, enter a **Label Name**.
 4.  Choose **Source** as **Salesforce Org** or **Version Control**.
 
     * For **Salesforce Org** selection, choose the Salesforce Org for which the SCA will be performed.
 
-    <figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt="" width="535"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1).png" alt="" width="535"><figcaption></figcaption></figure>
 
     * For [**Version Control**](../../../arm/arm-features/version-control/) selection, choose your source **Repository** and **Branch**.
 
-    <figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt="" width="532"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt="" width="532"><figcaption></figcaption></figure>
 
     * Select **Source** as **Salesforce org**, then new options become available:
 
-    <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * When performing a prevalidation commit with SCA analysis in DX format on the respective SF Org and package directory, consistency with previously executed analyses for this SF Org and related directory is crucial. Choosing the appropriate comparison branch is essential for accurate evaluations.
 * Existing analyses lack branch tracking, limiting the effectiveness of the fix to new analyses if transitioning from a base scan in mdapi to DX, project deletion, and rerun become necessary for recreation in the DX source structure.
@@ -46,7 +46,7 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
 
 5. Select the SCA tool from the drop-down list. For example, [_CodeScan_](https://www.codescan.io/), _ApexPMD, Checkmarx, Salesforce Scanner, or SonarQube_.
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** Before running the **Static Code Analysis** tool, you must enable them under the **My Account > Plugins** section.
@@ -59,7 +59,7 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
 7. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.\
 
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt="" width="432"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt="" width="432"><figcaption></figcaption></figure>
 
 8. Select the recipients for the alert under the **Notifications** field. Multiple recipients can be added here.
 9. Next, choose the frequency for SCA to run, i.e., daily, weekly, or at any specific interval. For example, if you want the SCA tool to run daily at **10 AM**, select the **Daily** option and set the fixed time to 10.

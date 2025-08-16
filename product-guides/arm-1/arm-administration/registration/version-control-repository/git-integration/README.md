@@ -18,10 +18,10 @@ A Git host is a service provider who hosts Git repositories. Git hosts may be on
 
 Before registering Git with ARM, there are some prerequisites.
 
-1. Ensure you enable the **`Git`** plugin under **`Plugins`** in the **`My Account`** section to use Git for version control.
+1.  Ensure you enable the **`Git`** plugin under **`Plugins`** in the **`My Account`** section to use Git for version control.\
 
-<figure><img src="../../../../../../.gitbook/assets/image (647).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../../.gitbook/assets/image.png" alt="" width="289"><figcaption></figcaption></figure>
 2. You must have permission in ARM to register a repository.
 3. You must have credentials for the repository you want to access.
 4. You must store these Git credentials in ARM.
@@ -31,22 +31,24 @@ Before registering Git with ARM, there are some prerequisites.
 This is an initial step in storing your user's credentials (usually a username, password, or token) in ARM. Some Git hosts like GitHub no longer support basic authentication using a username and password. You must now authenticate using an **API token**, such as an **OAuth** access token, GitHub App installation access token, or personal access token.
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
-3. Next, click on **`Create Credential`** from the right navigation bar.
+2. Hover your mouse over the **`Settings`** module and click on the **`Credentials`** tab.
+3.  Next, click on **`Create Credential`** from the right navigation bar.\
 
-<figure><img src="../../../../../../.gitbook/assets/image (648).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 4. On the next pop-up screen, give a **`Credential name`**.
 5. Choose the **`Credential Type`** as **`Username With Password.`**
-6. Enter your **`Username`** for the Git host and **API Token** (in the **`Password`** field), and we will store this encrypted. For more information on how to create an API token, see the **Troubleshooting** section on this page.
+6.  Enter your **`Username`** for the Git host and **API Token** (in the **`Password`** field), and we will store this encrypted. For more information on how to create an API token, see the **Troubleshooting** section on this page.\
+    \
 
-<figure><img src="../../../../../../.gitbook/assets/image (649).png" alt="" width="416"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE**: If you are using SSO to log in to your Git Repository, you must Authorize the **Generate API** token. Click on the '**Configure SSO**' dropdown to authorize the generated token.
 {% endhint %}
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Click **`Save`**.
 
@@ -55,18 +57,20 @@ This is an initial step in storing your user's credentials (usually a username, 
 To set up a Git repository, follow the steps below:
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** module and click on **`VC Repo's`**.
+2.  Hover your mouse over the **`Settings`** module and click on **`Repositories`**.\
 
-<figure><img src="../../../../../../.gitbook/assets/image (650).png" alt="" width="285"><figcaption></figcaption></figure>
 
-3. Click on **`Register Repository`**.
+    <figure><img src="../../../../../../.gitbook/assets/image (3).png" alt="" width="232"><figcaption></figcaption></figure>
+3.  Click on **`Register Repository`**.\
+    \
 
-<figure><img src="../../../../../../.gitbook/assets/image (651).png" alt="" width="563"><figcaption></figcaption></figure>
 
-4. Select the **`Version Control System`** as **`Git`** on the **`Register Repository`** page.
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.27.44 PM.png" alt="" width="375"><figcaption></figcaption></figure>
+4.  Select the **`Version Control System`** as **`Git`** on the **`Register Repository`** page.\
+    \
 
-<figure><img src="../../../../../../.gitbook/assets/image (652).png" alt="" width="412"><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Enter the name of the repository to display it locally.
 6. Paste the **`Repository URL`** from your Git host.
 7. Choose the correct user's **`Credentials`** from the list. To create new credentials, click on the \*\*`+`\*\*icon.
@@ -77,10 +81,12 @@ To set up a Git repository, follow the steps below:
 
 9. The **`Default Branch`** selection will be in disabled mode by default. Click the icon to fetch and list all the available branches on your remote repository.
 10. Select one of the default branches from the list. Note:Ensure the default branch is available in your remote repository with some files committed to it. If no file is available, create a README.txt file and add it to the repository.
-11. Once the registration is done, you can find the newly added repository on **`VC Repo's`** home page.
-12. The Sync Branches radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.
+11. Once the registration is done, you can find the newly added repository on **`Repositories`** home page.
+12. The Sync Branches radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.\
+    \
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-64UAR2YT.png)
+
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.31.34 PM.png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -17,11 +17,11 @@ This is an initial step where the user's JIRA credential, such as username and p
 1. Log in to your ARM account.
 2. Hover your mouse over the **Admin** module and click on the **Credentials** tab.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 3. Next, click on **Create Credential** from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **Credential name**.
 5. Choose the **Credential Type** as '**User name with Password.'**
@@ -83,7 +83,7 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
    * You’ll be redirected to JIRA to log in and approve access.
    * Once authorized, the connection is complete.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 

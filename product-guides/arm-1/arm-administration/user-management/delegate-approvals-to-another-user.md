@@ -14,7 +14,7 @@ When a teammate is on vacation or otherwise unavailable, an administrator can **
 2.  Hover over **`Admin`** and click **`Users`**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 3.  Locate the **user** whose responsibilities you need to delegate and click on **Actions** drop down and then click on **Delegate**.\
 
 

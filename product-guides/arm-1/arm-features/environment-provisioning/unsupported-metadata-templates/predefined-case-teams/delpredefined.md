@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you must add a **Delete Case for** the auto-generated or custom test case. To do a page layout, do the following:
-   * Click on![](<../../../../../../.gitbook/assets/image (18) (1) (1) (1).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (18) (1) (1) (1) (1).png>)icon.
    * Enter the case name in the **Deleted Predefined Case** field.&#x20;
    * You can even add multiple Case pages for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
    * Click **OK**. Once you are finished, click **Save** to save this page.

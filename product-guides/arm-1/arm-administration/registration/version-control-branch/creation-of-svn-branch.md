@@ -9,9 +9,10 @@ Creating or registering a Subversion (SVN) branch in AutoRABIT (ARM) lets you is
 1. Log in to **ARM**.
 2. Open the **`VC Repo's`** tab.
 3. Select the SVN repository where the new branch should live.
-4.  Click **Create**.
+4.  Click **Create**.\
 
-    <figure><img src="../../../../../.gitbook/assets/image (692).png" alt="Create button in VC Repos tab"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 5.  In the **Create Branch** dialog, enter a **Display Name**.
 
     {% hint style="info" %}
@@ -30,9 +31,10 @@ Creating or registering a Subversion (SVN) branch in AutoRABIT (ARM) lets you is
 
 Already created a branch directly in SVN? Register it so ARM can use it in EZ-Commit and CI.
 
-1.  In **`VC Repo's`**, select the SVN repository from **Repository List**.
+1.  In **`Repositories`**, select the SVN repository from the **List**.\
 
-    <figure><img src="../../../../../.gitbook/assets/image (694).png" alt="SVN Repository List in VC Repos tab"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.00.25 PM (4).png" alt="" width="563"><figcaption></figcaption></figure>
 2. Click **Register**.
 3. Enter a **Display Name** for the branch.
 

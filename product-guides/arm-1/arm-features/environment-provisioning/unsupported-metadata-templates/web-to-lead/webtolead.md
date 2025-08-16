@@ -13,7 +13,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
 
-    * Click on![](<../../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
+    * Click on![](<../../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
     * **Add Members:** Enter the required details in this field and select **Add** checkbox to activate.
     * **Record Selected Members:** Fill in member details, such as company name, email id, and city, in the **Order** fields.
     * Once you are finished, click **Save** to save this page.

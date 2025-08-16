@@ -30,7 +30,7 @@ The basic DL provides a potent yet easy-to-use application to update data into S
 
     <figure><img src="../../../../../.gitbook/assets/Update - 9.png" alt=""><figcaption></figcaption></figure>
 8. Click on "AutoMap" option to map the fields from the source against the destination.
-9.  Click on the <img src="../../../../../.gitbook/assets/image (24).png" alt="" data-size="line"> icon to observe the options
+9.  Click on the <img src="../../../../../.gitbook/assets/image (24) (1).png" alt="" data-size="line"> icon to observe the options
 
     <figure><img src="../../../../../.gitbook/assets/Update - 9.1.png" alt=""><figcaption></figcaption></figure>
 10. The lookup field will have the "Look up" option against it at the "Salesforce field" column. This mapping is useful for mapping different fields.

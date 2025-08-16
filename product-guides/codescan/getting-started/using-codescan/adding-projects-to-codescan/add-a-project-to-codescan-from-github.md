@@ -21,7 +21,7 @@ This document guides you how to add a **GitHub** project to your CodeScan cloud 
 
 6. Once you select [GitHub](https://knowledgebase.autorabit.com/codescan/docs/github-actions), it will redirect you to the **GitHub login** page. Validate your credentials and click on **Sign In**.
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="267"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="267"><figcaption></figcaption></figure>
 
 7.  On the next screen, fill in the details below:
 

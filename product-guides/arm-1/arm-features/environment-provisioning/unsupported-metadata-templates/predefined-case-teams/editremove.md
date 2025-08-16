@@ -13,12 +13,12 @@ To create this template, follow the below steps:
 7. Click **Add.**
 8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
 
-    * Click on![](<../../../../../../.gitbook/assets/image (23) (1) (1).png>)icon.
+    * Click on![](<../../../../../../.gitbook/assets/image (23) (1) (1) (1).png>)icon.
     * **Remove Row:** Choose the Team Name for which the member needs to be deleted or removed. Enter the desired Team name in the Remove Row field.
     * You can even add multiple member row page for the above-generated test case name. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
     * Click **OK**. Once you are finished, click **Save** to save this page.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 9. Next, Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

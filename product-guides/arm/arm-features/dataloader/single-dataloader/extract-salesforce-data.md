@@ -6,7 +6,7 @@ The following articles describe using **Single Dataloader** to extract data from
 2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`Dataloader`**.The **Dataloader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
 3. Click **`Extract`** on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Choose your [**`Salesforce org`**](broken-reference) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
@@ -14,15 +14,15 @@ The following articles describe using **Single Dataloader** to extract data from
 7. Select the object from which you wish to extract the data. For example, **Account**, **Contact**, **Lead**, etc. You can use the **`Search`** function to search through your objects and  **`filter`** to filter your standard/custom objects quickly.
 8. Click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. On the left, you will be provided with an option to select related objects and their fields. Each object will be displayed as a collapsible unit, under which you can select either all of the fields or required fields. Use the **`Quick Find`** search function to search through your fields quickly.
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="319"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="319"><figcaption></figcaption></figure>
 
 10. Select the checkbox before each field to include for the extraction process.
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="320"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="320"><figcaption></figcaption></figure>
 
 11. On the right, you can add **`Filters`** to your query. Specifying the filter criteria will extract records within a specified limit. To add filters to your query:
 
@@ -32,18 +32,18 @@ The following articles describe using **Single Dataloader** to extract data from
     * Click on the **+** icon to add the filter.&#x20;
     * To delete a filter, click on the **x** icon.
 
-    <figure><img src="../../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 12. In the **`Order By`** section, you can assign the order in which the record is generated, i.e., ascending or descending order.
 
     * Select a **`field`** to be your sorting criteria.
     * Select your sorting order: **`Ascending`** or **`Descending`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 13. You can verify your query using the **`Validate Query`** button to ensure it will work properly before running your task. The number of records being extracted is shown as a notification pop-up.
 
-<figure><img src="../../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 14. On the **`Process Summary`** screen, you can:
     * Give the process/job a **`Name`**.
@@ -56,12 +56,12 @@ The following articles describe using **Single Dataloader** to extract data from
 15. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 16. Finally, click **`Save`** to save your task and run it later.
 
-<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 17. Your task is shown on top of the lists on the **`Dataloader Summary`** screen.
 18. Click **`Run`** to start the dataloader immediately before the scheduled time.
 
-<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 19. Select the configurations here:
     * **Use Batch Size** whenever the Bulk API checkbox is left unchecked, the Batch API is used.

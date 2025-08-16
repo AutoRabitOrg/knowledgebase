@@ -1,20 +1,20 @@
 # Profiles
 
-## User Profiles
+Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc. \
 
-### Viewing Your User Profile
 
-Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc.&#x20;
+To access user preferences, click your user name in the upper right corner and select **`Profile`**.\
 
-To access user preferences, click your user name on the upper right corner and select **`Profile`**.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-11 at 1.56.20 PM.png" alt=""><figcaption></figcaption></figure>
 
-#### Personal Details <a href="#personal-details" id="personal-details"></a>
+### Personal Details <a href="#personal-details" id="personal-details"></a>
 
-The **`Personal Details`** section displays your full name, ARM user name, email address, phone number, etc. Your personal details will be populated, as the system administrator must enter this information when creating a new user account. In this section, you can update your name, phone number, address, etc., accordingly.
+The **`Personal Details`** section displays your full name, ARM user name, email address, phone number, etc. Your personal details will be populated, as the system administrator must enter this information when creating a new user account. In this section, you can update your name, phone number, address, etc., accordingly.\
+\
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -23,74 +23,95 @@ The **`Personal Details`** section displays your full name, ARM user name, email
 2. To avoid conflicts and get correct data while conducting any activity in ARM, ensure the **Time Zone** you set here matches the time zone you defined in Salesforce.
 {% endhint %}
 
-#### My Projects <a href="#my-projects" id="my-projects"></a>
+### My Projects <a href="#my-projects" id="my-projects"></a>
 
 The **`My Projects`** section will list all the projects that you have created or have permission to view. Users with admin-level permissions will have access to all projects.
 
-#### My Roles <a href="#my-roles" id="my-roles"></a>
+### My Roles <a href="#my-roles" id="my-roles"></a>
 
 The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.&#x20;
 
-About Skip MappingsIf users maintain an individual version control branch for every release, they must map every branch to Salesforce Org and Version Control branches to keep synchronizing with Salesforce Org. To overcome this daily routine, ARM provides the option to skip the Org Mappings part and directly perform commits.
+### About Skip Mappings
 
-#### My Salesforce Orgs <a href="#my-salesforce-orgs" id="my-salesforce-orgs"></a>
+If users maintain an individual version control branch for every release, they must map every branch to Salesforce Org and Version Control branches to keep synchronizing with Salesforce Org. To overcome this daily routine, ARM provides the option to skip the Org Mappings part and directly perform commits.
 
-View the **`Salesforce Orgs`** assigned to you, or you have permission to view.
+### My Salesforce Orgs <a href="#my-salesforce-orgs" id="my-salesforce-orgs"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+NOTE:
 
-#### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
+1.  If a sub-user does not have access to the **"**&#x53;F ORG MGM&#x54;**"** page and the Skip Mapping option is not enabled for their profile, they will be unable to view the mapped Salesforce Orgs in EZ Commit, even if they have permission to access those Orgs.\
 
-View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. Map the required repositories by choosing the correct **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
-#### My ALM Mappings <a href="#my-alm-mappings" id="my-alm-mappings"></a>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+2. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
+{% endhint %}
 
-Under **`My ALM Mappings`** section, you can map your ALM using your credentials or **`Re-Authenticate`** Jira ALMs configured with OAuth access.
+View the **`Salesforce Orgs`** assigned to you, or you have permission to view.\
+\
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have added the filter to fetch specific work items according to the filter applied.
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. \
+You can view the list of all repositories configured under each version control system (VC). Select a repository to display its branches. From there, map the required branches by choosing the appropriate **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.\
+
+
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+
+### My ALM Mappings <a href="#my-alm-mappings" id="my-alm-mappings"></a>
+
+Under **`My ALM Mappings`** section, you can map your ALM using your credentials or **`Re-Authenticate`** Jira ALMs configured with OAuth access.\
+\
+
+
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+
+For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have added the filter to fetch specific work items according to the filter applied.\
+
+
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.18.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 According to the filter set, only specific work items will get fetched. When the developers progress (via EZ-Commit or merge operation in ARM) on updating the ALM status, they are reflected on the corresponding work items. If the user wishes to discard the filter selected, uncheck the **`Apply My Filter`** option, and all work items will get fetched.
 
-#### My Default Page <a href="#my-default-page" id="my-default-page"></a>
+### My Default Page <a href="#my-default-page" id="my-default-page"></a>
 
 **`My Default Page`** is the first page that appears when you log in to ARM. You can customize ARM to open any page as the default page.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt=""><figcaption></figcaption></figure>
 
-## Mapping Your Profile to Your VCS and Salesforce Org <a href="#mapping-your-profile-with-version-control-and-salesforce-org" id="mapping-your-profile-with-version-control-and-salesforce-org"></a>
+## Mapping Your Profile with Version Control and Salesforce Org <a href="#mapping-your-profile-with-version-control-and-salesforce-org" id="mapping-your-profile-with-version-control-and-salesforce-org"></a>
 
-The next step is to map your profile with the Version Control System and Salesforce Org you are using.
+1. Go to the **Profile** section.
+2. In **My Salesforce Orgs**:
+   * Select the Salesforce Org.
+   * Assign the Salesforce Org user.
+3. In **My Version Control Mappings**:
+   * Select the repository.
+   * Assign the user.
+4. Click **Save**.
+5. Go to **Admin > SF Org Mgmt**:
+   * Select your org.
+   * Open **Salesforce Org – Mappings**.
+   * Choose the mapping for the version control you set up.
+   * Click **Save Mappings**.
 
-1. Go to the **`Profile`** section.
+Screenshots for each section are attached above to guide you through these steps.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="252"><figcaption></figcaption></figure>
+If you maintain a separate Version Control branch for each release, you must map every branch to the Salesforce Org to keep them in sync.
 
-2. Scroll down to **`My Salesforce Orgs`**.
-3. Select the **`Salesforce Org`** and assign the **`Salesforce Org User`** to them.
+To simplify this, use the **Skip Mapping** option under **Profile > My Roles**. This allows you to bypass org mappings and commit directly when appropriate.
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Uploading Multiple Profile Files
 
-4. Next, Scroll down to **`My Version Control Mappings`**.
-5. Select the **`Repository`** and assign the user.
-
-{% hint style="info" %}
-**Important Note:** If users maintain an individual Version Control branch for every release, then to keep synchronizing with Salesforce Org and the version control branch, they need to map every branch to Salesforce Org. ARM provides a **Skip Mapping** option under **Profile>My Roles** to skip the org mappings part and directly perform commits to overcome this daily routine.
-{% endhint %}
-
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-6. Click **`Save`**.
-7. Go to **`Admin > SF Org Mgmt,`** select your org, and scroll down to **`Salesforce Org - Mappings`**.
-8. Select the mapping against the version control that you have set up.
-
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-9. Click on **`Save Mappings`**.
+**413: Status Error**: Users may encounter a 413-status error in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.

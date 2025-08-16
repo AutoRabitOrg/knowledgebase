@@ -11,16 +11,22 @@ When a teammate is on vacation or otherwise unavailable, an administrator can **
 ## Delegate a User’s Responsibilities
 
 1. Log in to **AutoRABIT**.
-2.  Hover over **`Admin`** and click **`Users`**.
+2.  Hover over **`Admin`** and click **`Users`**.\
 
-    <figure><img src="../../../../.gitbook/assets/image (639).png" alt="Admin › Users option in the navigation menu"><figcaption></figcaption></figure>
-3.  Locate the **user** whose responsibilities you need to delegate and click **Delegate**.
 
-    <figure><img src="../../../../.gitbook/assets/image (640).png" alt="Delegate button in the Users list"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11).png" alt="" width="375"><figcaption></figcaption></figure>
+3.  Locate the **user** whose responsibilities you need to delegate and click on **Actions** drop down and then click on **Delegate**.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1939).png" alt="" width="269"><figcaption></figcaption></figure>
 4. The delegation wizard opens and lists everything tied to the departing user:
    * **Salesforce Orgs** registered in their name.
    * **Version Control Repositories** and branch permissions.
-   * Any **scheduled tasks** or **approval queues**.
+   *   Any **scheduled tasks** or **approval queues**.\
+       \
+
+
+       <figure><img src="../../../../.gitbook/assets/image (1940).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 * To ensure the delegate can reach private repos, choose a **default global credential** from the drop-down.
@@ -28,12 +34,12 @@ When a teammate is on vacation or otherwise unavailable, an administrator can **
 * **Super Admin** and the **currently logged-in user** cannot be delegated.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (641).png" alt="Delegation wizard showing tabs for Salesforce Orgs and Version Control Repositories"><figcaption></figcaption></figure>
+5. At the bottom of the wizard, Click on drop down and choose the **delegate user** from the drop-down list of active users.
+6.  Click **Release User** to finalize the transfer.\
+    \
 
-5. At the bottom of the wizard, pick the **delegate user** from the drop-down list of active users.
-6.  Click **Release User** to finalize the transfer.
 
-    <figure><img src="../../../../.gitbook/assets/image (642).png" alt="Release User confirmation dialog" width="408"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1941).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 * The delegate **must be active**.

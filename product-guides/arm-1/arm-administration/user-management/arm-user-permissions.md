@@ -7,24 +7,26 @@ _Users with the **Admin** role manage their own permissions under that role and 
 
 ***
 
-## Assign Permissions to Users <a href="#to-assign-permissions-to-users" id="to-assign-permissions-to-users"></a>
+**Assign Permissions to Users**
 
-1.  From the **`Admin`** module, open the **`Permissions`** tab.
+1.  Open **Settings › Permissions**.\
 
-    <figure><img src="../../../../.gitbook/assets/image (623).png" alt="Admin menu with Permissions tab selected" width="251"><figcaption></figcaption></figure>
-2.  Select one or more users:
 
-    * **Single user** – click the person’s first name.
-    * **Bulk assignment** – tick the checkboxes for at least **two** users.
+    <figure><img src="../../../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+2.  Select two or more users and click **Bulk Assignment**.\
+    \
 
-    <figure><img src="../../../../.gitbook/assets/image (625).png" alt="Permissions list with checkboxes for bulk assignment"><figcaption></figcaption></figure>
-3. In the user-permission screen, choose the **Roles** and check the modules those users should access.
-4. Click **Save**. The changes take effect on the users’ next login.
-5.  You can always click a name later to revisit that user’s detail view.
 
-    <figure><img src="../../../../.gitbook/assets/image (626).png" alt="User detail view showing role and module assignments"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+3. Go to **Roles** and select the required role\
+   \- Repeat the same process for **Salesforce Orgs**, **CI Jobs**, and **Version Control**.\
+   \- Once all selections are made, click **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/image (627).png" alt="Save button for user permissions" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 3.14.41 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+
+Admins are hidden on this screen because they already hold full access.
+
+
 
 ***
 
@@ -32,12 +34,15 @@ _Users with the **Admin** role manage their own permissions under that role and 
 
 Need to restrict or expand Git access? Grant repository or branch permissions here.
 
-1.  In **`Admin › Permissions`**, click the user’s name.
+1.  In **`Settings › Permissions`**, click the user’s name.\
 
-    <figure><img src="../../../../.gitbook/assets/image (628).png" alt="Selecting a user to edit branch permissions" width="561"><figcaption></figcaption></figure>
-2.  Scroll to the **`Version Control`** section. Check the branches the user should see.
 
-    <figure><img src="../../../../.gitbook/assets/image (629).png" alt="Version Control section with branch checkboxes"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.39.55 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+2.  Scroll to the **`Version Control`** section. Check the branches the user should see.\
+    \
+
+
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.38.10 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 3. To grant access to **every** branch inside a repo, tick the **Repository** checkbox.
 4. Click **Save**.
 

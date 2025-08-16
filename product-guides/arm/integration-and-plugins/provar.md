@@ -29,7 +29,7 @@ The first step in integrating Provar is adding the same configurations in AutoRA
        * **licenseKey=XXXXX-XXXXX-XXXXXX-XXXXX-XXXXX**
        * **lastOnlineAvailabilityCheckUtc=153078614616**
 
-       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
 5. Click on **OK** once you're done filling in the Provar information.
 6. Ensure the above configurations are saved in AutoRABIT by clicking on the **Save** button. It is an important step, otherwise, all modifications will be lost and you will have to configure Provar from the beginning.
 
@@ -41,11 +41,11 @@ To integrate previous Provar versions with AutoRABIT, refer to the below steps:
 
 1. Set the Web Browser to **Desktop: Full Screen.**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the **Provider Name** to **Desktop** and the **Browser Configurations** to **Full Screen**.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. If test cases are running under ant, make sure that the build file consists of the following run test case configurations.
    * **webBrowserConfiguration="Desktop Full Screen"**
@@ -84,7 +84,7 @@ Now, you're done with the integration of Provar as a plugin with AutoRABIT, let'
     * **Test Cases Root path**: Enter the test case root path till the **.testproject** file
     * **Test Cases Execution Path**: Enter the test cases execution path here. For example- tests/sample. If not specified, all the test cases from the **'tests'** folder will get executed.
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="556"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="556"><figcaption></figcaption></figure>
 8. Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the **browser** in which you would like to run the test cases.
 9. Fill in other section details as required and click on **Save**.
 10. So, once the configured CI job is run and the build is triggered, Provar will review the code changes and functional review information can be found in the **CI Job Result** under the **Functional Tests** section. Here, you can find the status of the functional test done along with other details such as the number of components that successfully got reviewed, the number of components failed to review, components that are about to get reviewed or are in the queue.
@@ -93,10 +93,10 @@ Now, you're done with the integration of Provar as a plugin with AutoRABIT, let'
 
 While triggering a build for Provar configured CI job, AutoRABIT application throws the error: **'Provar Plugin is not enabled. Please contact your Administrator and try again.'**
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="311"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="311"><figcaption></figcaption></figure>
 
 **Reason:**
 
 Typically this happens if you have built a CI Job with the provar configured in our application. However, for whatever reason, your org admin has disabled the Provar plugin for your account. Therefore, if you trigger a build for Provar configured CI job, our application will throw the previously described error, as your account is no longer configured with the Provar plug-in. Another scenario in which you would like to fetch the provar configured CI job with other test cases will promptly notify you that your CI job is already configured with the provar.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -9,16 +9,17 @@ Only **Org Administrators** can create or modify users.
 
 1. Log in to **ARM**.
 2. Hover over **`Admin`** and click **`Users`**.
-3.  Click **Add User**.
+3.  Click **Add User**.\
 
-    <figure><img src="../../../../.gitbook/assets/image (572).png" alt="Add User button on the Users page"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 4. Complete **User Details** and assign a **Role Permission Set** that matches the person’s responsibilities.
-5.  Choose one of the activation options:
+5. Choose one of the activation options:
+   * **Save & Activate** – sends the invitation email immediately.
+   *   **Save Now & Activate Later** – save the profile and activate at a future time.\
 
-    * **Save & Activate** – sends the invitation email immediately.
-    * **Save Now & Activate Later** – save the profile and activate at a future time.
 
-    <figure><img src="../../../../.gitbook/assets/image (573).png" alt="User Details and Role Permissions form"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.48.52 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 6. The new user receives an email to set their password and log in.
 7. Newly created users appear in **Admin › Users**.
 
@@ -29,9 +30,10 @@ Only **Org Administrators** can create or modify users.
 You can edit most profile fields and permissions after creation—except **Username** and **Email** (they are immutable).
 
 1. Go to **Admin › Users** and locate the user.
-2.  Click the **Edit** icon.
+2.  Click on Actions and then **Edit** icon.\
 
-    <figure><img src="../../../../.gitbook/assets/image (574).png" alt="Edit icon on Users list row"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 3. Update fields as needed and click **Save**.
 
 ***

@@ -9,15 +9,15 @@ The code coverage report provides information about the apex tests that are run,
 
 1. Hover your mouse over the **Admin** module and select the option: **SF Org Mgmt.**
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="237"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="237"><figcaption></figcaption></figure>
 
 2. Select the **Salesforce Org** and click on **Generate Code Coverage Report.**&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Next, fill in the details to run the apex test class for the selected Salesforce Org. Click **Update & Run**.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE**: If the test level is a **run-specific test**, ARM will check only **newly added code** against the specified test.
@@ -29,7 +29,7 @@ The code coverage report provides information about the apex tests that are run,
 2. Click on the **Code Coverage Reports** tab.&#x20;
 3. Choose your **Salesforce Org** from the dropdown to view the detailed code coverage report.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Each code coverage report generated reflects the details listed below:
 
@@ -49,9 +49,9 @@ Each code coverage report generated reflects the details listed below:
 
 View the apex test results log information by clicking on the **Log** icon.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt="" width="239"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt="" width="239"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### Apex Test Results <a href="#apex-test-results" id="apex-test-results"></a>
 

@@ -17,7 +17,7 @@ To perform org synchronization, follow the below steps:
 3. Go to the **`Org Synchronization History`** tab.
 4. Click on the **`Get Org Differences`** call-to-action button.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5.  In the **`Org Differences`** dialog box, you will need to:
 
@@ -29,7 +29,7 @@ To perform org synchronization, follow the below steps:
 
     To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="436"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="436"><figcaption></figcaption></figure>
 
 6.  On the next screen, you can:
 
@@ -37,9 +37,9 @@ To perform org synchronization, follow the below steps:
     * add or delete metadata components to/from the target org
     * view the metadata member's difference report (if any)
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Once done with your selection, click on **`Synchronize Orgs`**.
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
 9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each apex test level, refer to the article: [Apex Unit Tests](apex-unit-tests.md)

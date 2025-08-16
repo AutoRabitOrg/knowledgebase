@@ -20,7 +20,7 @@ You're getting this because you've used up all of your membership licenses, and 
 
 The below-highlighted Subscription button will appear only if the customer procures more than 20+ licenses to manage different Teams.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Team</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Team</p></figcaption></figure>
 
 ### ()I see some plugins require keys. Is this a license issue or can we get these keys and use the Static Code Analysis feature? <a href="#i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get" id="i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get"></a>
 

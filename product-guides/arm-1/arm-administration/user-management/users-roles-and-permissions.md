@@ -19,7 +19,7 @@ The **Super Administrator** (Super Admin) has the highest privileges in ARM.
 
 ### Org Administrators <a href="#org-administrators" id="org-administrators"></a>
 
-**Org Administrators** (Admins) access the **Admin Dashboard** to manage users, roles, and modules. An admin can hold multiple roles; ARM always applies the most permissive combination.
+**Org Administrators** (Admins) access the **Settings Dashboard** to manage users, roles, and modules. An admin can hold multiple roles; ARM always applies the most permissive combination.
 
 Admin-level capabilities include:
 
@@ -37,7 +37,7 @@ General users work in ARM modules according to permissions their Admin assigns. 
 ## Create a New User Account <a href="#create-a-new-user-account" id="create-a-new-user-account"></a>
 
 1. Log in to ARM.
-2.  Go to **Admin › Users** and click **Add User**.\
+2.  Go to **Settings › Users** and click **Add User**.\
 
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.46.31 PM.png" alt=""><figcaption></figcaption></figure>
@@ -53,7 +53,7 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 ## Edit a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
 
-1.  In **Admin › Users**, Locate the user and Click on **Actions** and click **Edit**.\
+1.  In **Settings › Users**, Locate the user and Click on **Actions** and click **Edit**.\
 
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.50.01 PM.png" alt=""><figcaption></figcaption></figure>
@@ -98,7 +98,7 @@ To override SSO for select users, uncheck **Enforce SSO** next to their names.\
 
 Admins can download all user data as CSV.
 
-1.  In **Admin › Users**, click **Export All Users**.\
+1.  In **Settings › Users**, click **Export All Users**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
@@ -114,7 +114,7 @@ Admins can download all user data as CSV.
 
 ## Creating and Editing Roles <a href="#creating-and-editing-roles" id="creating-and-editing-roles"></a>
 
-1.  Go to **Admin › Users › Roles**.\
+1.  Go to **Settings › Users › Roles**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -135,7 +135,7 @@ Admins can download all user data as CSV.
 
 ## User Permissions <a href="#user-permission" id="user-permission"></a>
 
-1.  Open **Admin › Permissions**.\
+1.  Open **Settings › Permissions**.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -166,9 +166,9 @@ Your roles/permissions were changed. Contact another Org Administrator.
 
 ### Deleted users still appear in lists.
 
-* Their **credentials** may still exist in **Admin › Credential Manager**.
+* Their **credentials** may still exist in **Settings › Credential Manager**.
 * Repositories may reference those credentials—update or re-register.
 
 ### Why do some users lack access to certain ARM features?
 
-Check their roles in **Admin › Roles**; only Admins have unrestricted access.
+Check their roles in **Settings › Roles**; only Admins have unrestricted access.

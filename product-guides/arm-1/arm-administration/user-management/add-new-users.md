@@ -8,7 +8,7 @@ Only **Org Administrators** can create or modify users.
 ## Adding a New User
 
 1. Log in to **ARM**.
-2. Hover over **`Admin`** and click **`Users`**.
+2. Hover over **`Settings`** and click **`Users`**.
 3.  Click **Add User**.\
 
 
@@ -29,7 +29,7 @@ Only **Org Administrators** can create or modify users.
 
 You can edit most profile fields and permissions after creation—except **Username** and **Email** (they are immutable).
 
-1. Go to **Admin › Users** and locate the user.
+1. Go to **Settings › Users** and locate the user.
 2.  Click on Actions and then **Edit** icon.\
 
 

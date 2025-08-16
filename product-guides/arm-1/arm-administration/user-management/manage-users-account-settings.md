@@ -8,19 +8,23 @@ You can create, edit, and view user account details as an Org administrator. Adm
 
 ### View User Account <a href="#view-user-account" id="view-user-account"></a>
 
-* Hover your mouse over the **`Admin`** tile and select **`My Account`**.
+*   Hover your mouse over the **Settings** tile and select **`My Account`**.\
 
-<figure><img src="../../../../.gitbook/assets/image (579).png" alt="" width="243"><figcaption></figcaption></figure>
 
-* The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:
+    <figure><img src="../../../../.gitbook/assets/image (1905).png" alt="" width="236"><figcaption></figcaption></figure>
+*   The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:\
+    \
 
-<figure><img src="../../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 3.38.22 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Account Contact Details (Read only) <a href="#id-1-account-contact-details-read-only" id="id-1-account-contact-details-read-only"></a>
 
-**`The Account Contact Details`** section contains your account's primary information and your subscription period with ARM.
+**`The Account Contact Details`** section contains your account's primary information and your subscription period with ARM.\
+\
 
-<figure><img src="../../../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 3.39.38 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Subscription Type (Read only) <a href="#id-2-subscription-type-read-only" id="id-2-subscription-type-read-only"></a>
 
@@ -44,7 +48,7 @@ Using the information you gathered from your IdP (the Identity Provider), fill i
 
 <figure><img src="../../../../.gitbook/assets/image (584).png" alt="" width="563"><figcaption></figcaption></figure>
 
-* How to override single sign-on (SSO)?Sub-users registered to that organization cannot log in to the ARM application using the standard (username + password) approach if the **`Disable login with AutoRABIT credentials`** checkbox is selected. If the org admin wants to override the **`SSO configuration`** for an individual user or group of users, he can do so under the **`Admin > Users`** section. Uncheck the **`Enforce SSO`** boxes after selecting the users from the list. Save the **`SSO Configuration`** by clicking **`Save`**.
+* How to override single sign-on (SSO)?Sub-users registered to that organization cannot log in to the ARM application using the standard (username + password) approach if the **`Disable login with AutoRABIT credentials`** checkbox is selected. If the org admin wants to override the **`SSO configuration`** for an individual user or group of users, he can do so under the **Settings > Users** section. Uncheck the **`Enforce SSO`** boxes after selecting the users from the list. Save the **`SSO Configuration`** by clicking **`Save`**.
 
 <figure><img src="../../../../.gitbook/assets/image (585).png" alt="" width="563"><figcaption></figcaption></figure>
 

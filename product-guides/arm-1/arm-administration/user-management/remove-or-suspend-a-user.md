@@ -10,14 +10,16 @@ Suspension preserves the account record so you can reactivate it later; deletion
 ## Suspend or Delete a User
 
 1. Sign in with an **administrator** account.
-2. Navigate to **Admin › Users**.
-3.  Locate the user you want to modify.
+2. Navigate to **Settings › Users**.
+3.  Locate the user you want to modify.\
 
-    <figure><img src="../../../../.gitbook/assets/image (575).png" alt="Users list with Delete User icon"><figcaption></figcaption></figure>
-4. **Delete User** – click the trash-can icon to erase the account permanently.
-5.  **Suspend / Activate** – click **Activate/De-activate** to toggle the account’s status.
 
-    <figure><img src="../../../../.gitbook/assets/image (576).png" alt="Activate/De-activate button for suspending or reactivating a user"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 3.31.55 PM.png" alt=""><figcaption></figcaption></figure>
+4. **Delete User** – Select the User and click on **Delete Selected** and Confirm the pop up icon to erase the account permanently.
+5.  **Suspend / Activate** – click **Activate/De-activate** to toggle the account’s status.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1903).png" alt=""><figcaption></figcaption></figure>
 6. Confirm the action by clicking **OK** in the dialog.
 
 ***
@@ -35,4 +37,4 @@ Suspension preserves the account record so you can reactivate it later; deletion
 
 * **Suspend first** if unsure—reactivation is easier than re-creating roles, labels, and permissions.
 * **Reassign approvals** or scheduled tasks before deleting a user to avoid orphaned work.
-* Periodically review **Admin › Users** for suspended accounts you can delete to stay within license limits.
+* Periodically review **Settings › Users** for suspended accounts you can delete to stay within license limits.

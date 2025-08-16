@@ -2,38 +2,46 @@
 
 ## Welcome to ARM!! <a href="#welcome-to-arm" id="welcome-to-arm"></a>
 
-You'll see this when you log in to your ARM account.
+You'll see this when you log in to your ARM account.\
 
-<figure><img src="../../../.gitbook/assets/image (31) (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1899).png" alt=""><figcaption></figcaption></figure>
 
 Let's get to know the main areas of the ARM application.
 
 ## The Menu <a href="#the-menu" id="the-menu"></a>
 
-You see a list of icons with the context in the top-right corner.
+You see a list of icons with the context in the top-right corner.\
 
-<figure><img src="../../../.gitbook/assets/image (32) (2).png" alt=""><figcaption></figcaption></figure>
 
-Let's examine each of these links in detail:
+<figure><img src="../../../.gitbook/assets/image (1897).png" alt="" width="375"><figcaption></figcaption></figure>
 
-### **Create New** <a href="#create-new" id="create-new"></a>
+**Let's examine each of these links in detail:**\
+\
+**New Experience**\
+\
+The **Experience Toggle** allows users to switch between the classic interface and the new, enhanced experience. The new experience is built on **Angular** and follows a **reactive design**, providing faster performance, smoother navigation, and a more intuitive user interface. This option ensures users can explore the modernized layout while retaining access to the classic view when needed.\
+\
+**Create New**
 
 A **`Create New`** drop-down is available, which allows users to perform the primary and most used features in ARM, such as creating a CI job or a merge operation, etc., The users can also find the listed **`Create New`** operations within the ARM sub-module.
 
-Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.
+Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.\
+\
 
-<figure><img src="../../../.gitbook/assets/image (33) (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1898).png" alt="" width="195"><figcaption></figcaption></figure>
 
 ### **Quick Links** <a href="#quick-links" id="quick-links"></a>
 
 Here you can:
 
-1. Find links to [**ARM `Help Center`**](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/)
+1. Find links to [**ARM** ](https://knowledgebase.autorabit.com/product-guides/arm)**Documentation**
 2. Know about the ARM version on which you're logged in
-3. ARM **`Feedback`** page
-4. **`Feature Management`** _(visible only for Administrator for both SAAS and On-Premise instances)_
+3. Reach out to **Support Team**\
 
-<figure><img src="../../../.gitbook/assets/image (34) (2).png" alt="" width="452"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1900).png" alt="" width="255"><figcaption></figcaption></figure>
 
 ### **User Details** <a href="#user-details" id="user-details"></a>
 
@@ -41,17 +49,21 @@ Here you can:
 
 1. View your profile or update your basic information, personal email settings, etc.
 2. Change your current password
-3. Logout from your ARM account
+3.  Logout from your ARM account\
+    \
 
-<figure><img src="../../../.gitbook/assets/image (35) (2).png" alt="" width="336"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-11 at 1.56.20 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Left Navigation Bar <a href="#left-navigation-bar" id="left-navigation-bar"></a>
 
 On the left-hand side of the application, you see a list of icons with the context in it. These icons are nothing but the modules or features of ARM. The sub-modules which are part of it will be listed by hovering your mouse over each module.
 
-<figure><img src="../../../.gitbook/assets/image (36) (2).png" alt="" width="201"><figcaption></figcaption></figure>
+Let's examine each of these links in detail:\
+\
 
-Let's examine each of these links in detail:
+
+<figure><img src="../../../.gitbook/assets/image (1901).png" alt="" width="246"><figcaption></figcaption></figure>
 
 ### [Dashboard](../../arm/arm-features/dashboard-and-pipelines/dashboards-and-widgets.md) <a href="#dashboard" id="dashboard"></a>
 
@@ -66,7 +78,7 @@ A list of action items related to the Version Control system will get displayed,
 
 ARM's Continuous Integration (CI) is designed to help customers rapidly release code confidently by automating the build, test, and deployment process to accomplish Continuous Delivery for Salesforce. CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository upon completing every task. You can release code faster as it allows you to track application development and metadata modifications.
 
-### [Deployment](../../arm/arm-features/deployment/) <a href="#deployment" id="deployment"></a>
+### [Deployment](../../arm/arm-features/deployment/)  <a href="#deployment" id="deployment"></a>
 
 The **Deployment** process allows you to quickly and safely transfer new developments from your sandbox instance to a production instance. You can transfer validation rules, custom objects, new fields, apex codes, and many other components from your development environment to a live production environment using the deployment process.
 

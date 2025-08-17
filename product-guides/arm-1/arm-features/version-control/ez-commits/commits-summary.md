@@ -11,11 +11,13 @@ In AutoRABIT ARM, the **Commits Summary** screen provides detailed information a
 
 ## Viewing Commits
 
-* To view all commits (including those by teammates), toggle the **Created By Me** switch to the left.
-* To filter commits pending reviewer approval, toggle the **Pending Approvals** switch to the right.
-* Use the search field to filter commits by label, revision number, or comment. _Note: Search is case-sensitive._
+* To view all commits (including those by teammates), Click the **Created By Me** switch to the left.
+* To filter commits pending reviewer approval, Click the **Pending Approvals** switch to the right.
+*   Use the search field to filter commits by Commit Type, Board, Created by and Created Range, revision number, or comment. _Note: Search is case-sensitive._\
+    \
 
-<figure><img src="../../../../../.gitbook/assets/image (1061).png" alt="Commits screen showing filter and search options"><figcaption><p>Commits screen with search and filter toggles</p></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.40.55 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Commit Details
 
@@ -46,9 +48,10 @@ Quick Merge allows direct merging from the Commits screen without navigating to 
 
 1. Hover over the three dots beside the desired commit.
 2. Click **Quick Merge**.
-3. Confirm the action in the pop-up.
+3.  Confirm the action in the pop-up.\
 
-<figure><img src="../../../../../.gitbook/assets/image (1062).png" alt="Quick Merge menu option on Commits screen"><figcaption><p>Quick Merge action in the menu</p></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.43.45 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Note:** Quick Merge is not available for:
 
@@ -57,13 +60,11 @@ Quick Merge allows direct merging from the Commits screen without navigating to 
 
 ## Detailed View
 
-1. Hover over the three dots beside a commit and click **Detailed View**.
+1.  Hover over the three dots beside a commit and click **Detailed View**.\
+    \
 
-<figure><img src="../../../../../.gitbook/assets/image (1064).png" alt="Accessing detailed commit view"><figcaption><p>Accessing detailed view from commit menu</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1065).png" alt="Three-dot menu beside a prevalidated commit"><figcaption><p>Detailed view access for prevalidated commits</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (1066).png" alt="Red dot indicating failed prevalidation"><figcaption><p>Indicator for failed prevalidation</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1989).png" alt="" width="276"><figcaption></figcaption></figure>
 
 The detailed view includes:
 
@@ -74,33 +75,40 @@ The detailed view includes:
 * Metadata diffs
 * Deployment validation
 * Code Analysis
-* Logs and ALM integration
+*   Logs and ALM integration\
+    \
 
-<figure><img src="../../../../../.gitbook/assets/image (1067).png" alt="Commit details summary panel"><figcaption><p>Commit summary details</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1068).png" alt="Dropdown showing in-depth configuration"><figcaption><p>Expanded view of selected features</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1990).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1069).png" alt="EZ-Commit pull request details"><figcaption><p>Pull request details in EZ-Commit</p></figcaption></figure>
+    \
 
-<figure><img src="../../../../../.gitbook/assets/image (1070).png" alt="Step-by-step commit process view"><figcaption><p>Visual display of commit steps</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1071).png" alt="Reviewer comments section"><figcaption><p>Comments by reviewers</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1991).png" alt=""><figcaption><p>Visual display of Commit steps</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1072).png" alt="Commit reports and code analysis section"><figcaption><p>Commit details report panel</p></figcaption></figure>
+    \
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (1992).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.55.45 PM.png" alt=""><figcaption><p>Commit details Report panel</p></figcaption></figure>
 
 ## Code Analysis File
 
-Static Code Analysis (SCA) is part of the security development lifecycle. Tools include ApexPMD, Checkmarx, Salesforce Scanner, and CodeScan. Violations are displayed by file and line.
+Static Code Analysis (SCA) is part of the security development lifecycle. Tools include ApexPMD, Checkmarx, Salesforce Scanner, and CodeScan. Violations are displayed by file and line\
 
-<figure><img src="../../../../../.gitbook/assets/image (1079).png" alt="Static code analysis report example"><figcaption><p>Sample Static Code Analysis output</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1993).png" alt=""><figcaption><p>Sample Static Code Analysis Report in EZ Commit details</p></figcaption></figure>
 
 ## Files Changed
 
-ARM compares metadata changes between branches/orgs. RED indicates deletions or changes from the source; GREEN indicates changes in the destination.
+ARM compares metadata changes between branches/orgs. RED indicates deletions or changes from the source; GREEN indicates changes in the destination.\
+\
 
-<figure><img src="../../../../../.gitbook/assets/image (1080).png" alt="Metadata diff showing insertions and deletions"><figcaption><p>Metadata diff view</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1082).png" alt="Expanded inline diff with download option"><figcaption><p>Inline diff and download options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1995).png" alt=""><figcaption><p>Metadata Diff view</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1996).png" alt=""><figcaption><p>Inline diff and download options</p></figcaption></figure>
 
 ## Commit Status Types
 
@@ -109,29 +117,34 @@ ARM compares metadata changes between branches/orgs. RED indicates deletions or 
 * **Merge Conflicts**: Conflicting files during merge.
 * **Auto Rejected**: Review not completed in time.
 * **Review Pending**: Awaiting reviewer action.
-* **No Modifications**: No differences found.
+*   **No Modifications**: No differences found.\
+    \
 
-<figure><img src="../../../../../.gitbook/assets/image (1085).png" alt="Completed commit status"><figcaption><p>Completed status</p></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/image (1997).png" alt=""><figcaption></figcaption></figure>
 
 ## Filtering Commits
 
 Filter options include:
 
 * Repository and Branch
-* Content (label, revision, comments)
+* Created by me
+* All or Pending Approvals
 * Pending Approvals
 * Date Range
 * Commit Type
-* Author
-* Board (Salesforce or Vlocity)
+* Created by
+*   Board (Salesforce or Vlocity)\
+    \
 
-<figure><img src="../../../../../.gitbook/assets/image (1092).png" alt="Filter by repository and branch"><figcaption><p>Repository and branch filters</p></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/image (1998).png" alt=""><figcaption></figcaption></figure>
 
 ## Delete Commits/Merges
 
 Only users who created the commit or org admins can delete commits (unmerged only).
 
-<figure><img src="../../../../../.gitbook/assets/image (1100).png" alt="Delete commit option in menu"><figcaption><p>Delete Commit option</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1999).png" alt=""><figcaption></figcaption></figure>
 
 **Note:**
 

@@ -6,13 +6,15 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-The lists of repositories you have added yourself and any other repositories your team members have shared can be seen on the **`VC Repo's`**` ``(`**`Version Control Repository)`** page.
+The lists of repositories you have added yourself and any other repositories your team members have shared can be seen on the **`Repositories`** page.
 
-Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitbook/assets/image (1027).png>)icon displayed, and nCino objects configured will have![](<../../../../../.gitbook/assets/image (1028).png>)icon beside their repository under **`Repositories List`** for easier identification.
+Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitbook/assets/image (1027).png>)icon displayed, and nCino objects configured will have![](<../../../../../.gitbook/assets/image (1028).png>)icon beside their repository under **`Repositories List`** for easier identification.\
+\
 
-<figure><img src="../../../../../.gitbook/assets/image (1029).png" alt="" width="231"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1030).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1966).png" alt="" width="341"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1967).png" alt="" width="353"><figcaption></figcaption></figure>
 
 For each version control repository registered in ARM, the following information or fields are displayed:
 
@@ -29,13 +31,14 @@ Create a pull request to propose and collaborate on changes to a repository. Thi
 | `Enable nCino app`     | On selection, the nCino objects will get registered with the current repository.                                                                  |
 | `Pull Request Support` | Create a pull request to propose and collaborate on changes to a repository. This is discussed later.                                             |
 
-<figure><img src="../../../../../.gitbook/assets/image (1031).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.55.16 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
 
-Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.
+Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.\
 
-<figure><img src="../../../../../.gitbook/assets/image (1032).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1968).png" alt=""><figcaption></figcaption></figure>
 
 Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../../../../arm/arm-features/version-control/external-pull-request/).
 
@@ -47,23 +50,25 @@ The Git tags created or branches registered for the version control repository w
 
 **A. Create a Branch**
 
-Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md))
+Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md))\
+\
 
-<figure><img src="../../../../../.gitbook/assets/image (1033).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.56.48 PM.png" alt=""><figcaption></figcaption></figure>
 
 **B. Register a Branch**
 
-Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/))
+Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/)). Click on Register under Branches Tab.\
 
-<figure><img src="../../../../../.gitbook/assets/image (1034).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1035).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1969).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **C. Unregister a Branch**
 
-Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.
+Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.\
 
-<figure><img src="../../../../../.gitbook/assets/image (1036).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1970).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **D. Sync Branches**
 
@@ -73,10 +78,10 @@ The **`Sync Branches`** option will allow you to view the branches that are no l
 
 For each branch, view the following details:
 
-<figure><img src="../../../../../.gitbook/assets/image (1037).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.01.41 PM.png" alt=""><figcaption></figcaption></figure>
 
-1. **`Branch Name:`** Name of the branch assigned.
-2.  **`Branch Settings:`**&#x54;his option allows you to update your branch configuration, which means:
+1. **`Name:`** Name of the branch assigned.
+2.  **`Settings:`**&#x54;his option allows you to update your branch configuration, which means:
 
     * you can add your branch to one of the standard branch types _(development, integration, quality assurance, production, etc.)_
     * configure your parent branch
@@ -87,18 +92,16 @@ For each branch, view the following details:
 
     **Pieces of information related to 'Metadata Folder Path'**
 
-    * When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.
+    *   When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.\
 
-    <figure><img src="../../../../../.gitbook/assets/image (1038).png" alt="" width="511"><figcaption></figcaption></figure>
-3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../../arm/arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../../arm/arm-administration/alm-management.md).
+
+        <figure><img src="../../../../../.gitbook/assets/image (1971).png" alt="" width="563"><figcaption></figcaption></figure>
+3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../../arm/arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Settings > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../../arm/arm-administration/alm-management.md).
 
 <figure><img src="../../../../../.gitbook/assets/image (1039).png" alt=""><figcaption></figcaption></figure>
 
 4. **`Status:`** View the branch status along with the branch log report.
-5. **`Info:`** Hover your mouse over the icon to view the branch details, such as the branch created date, parent branch, and author details.
-
-<figure><img src="../../../../../.gitbook/assets/image (1040).png" alt=""><figcaption></figcaption></figure>
-
+5. **`Info:`** The display UI now shows key details — such as **Created By**, **Created Date**, **Type**, and **Parent.**
 6. **`Clear AutorabitExtId:`** Deletes the **`AutorabitExtId__c`** field from your branch.
 7. **`Migrate:`** Migrates custom object field **`Picklist`** to **`Value Set`** in your branch.
 
@@ -110,5 +113,5 @@ The repository URL cannot be changed; you must use the new repository URL and re
 
 ### Why am I getting an error while registering the GitHub repository with SSH? <a href="#why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh" id="why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh"></a>
 
-**GitHub** no longer allows new **RSA** keys with **SHA-1** signatures. Execute the `ssh-keygen -t ed25519 -C “sampath.c@autorabit.com”` command in the terminal to create a new key, or contact **support@autorabit.com** for further assistance. Please note that you must create the new key in **Linux** or **Unix**, not in Windows. For more information, visit [https://github.blog/2021-09-01-improving-git-protocol-security-github/](https://github.blog/2021-09-01-improving-git-protocol-security-github/)
+**GitHub** no longer allows new **RSA** keys with **SHA-1** signatures. Execute the `ssh-keygen -t ed25519 -C “XXXXXXX@autorabit.com”` command in the terminal to create a new key, or contact **support@autorabit.com** for further assistance. Please note that you must create the new key in **Linux** or **Unix**, not in Windows. For more information, visit [https://github.blog/2021-09-01-improving-git-protocol-security-github/](https://github.blog/2021-09-01-improving-git-protocol-security-github/)
 

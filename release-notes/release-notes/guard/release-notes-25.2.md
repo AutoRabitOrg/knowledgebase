@@ -40,23 +40,23 @@ We’ve introduced new safeguards to reduce the risk of privilege loss or escala
 
 ### Single Sign-On (SSO) with Enhanced Security
 
-Guard now supports Single Sign-On (SSO) using encrypted SAML assertions.\
+Guard now supports **Single Sign-On (SSO)** using **encrypted SAML assertions**.\
 &#x20;This ensures:
 
 * Sensitive authentication data is securely transmitted.
 * Reduced risk of data interception or tampering.
-* Compliance with federal security standards.
+* Compliance with **federal security standards**.
 
 &#x20;
 
 ### Bug Fixes
 
-* User Unlocking: Resolved an issue with locked accounts that couldn’t be unlocked from the Settings page. Admins can now restore users' access without any errors.
+* **User Unlocking**: Resolved an issue with locked accounts that couldn’t be unlocked from the Settings page. Admins can now restore users' access without any errors.
 
 ### Other enhancements
 
-* Security & Compliance: we have strengthened our platform’s security by implementing targeted improvements that meet stringent federal standards. These updates reduce potential attack surfaces and further enhance data protection.
-* Implemented a few backend optimizations to enhance system stability and ensure long-term maintainability, supporting a smoother and more reliable User Experience.
+* **Security & Compliance**: We have strengthened our platform’s security by implementing targeted improvements that meet stringent federal standards. These updates reduce potential attack surfaces and further enhance data protection.
+* Implemented a few back-end optimizations to enhance system stability and ensure long-term maintainability, supporting a smoother and more reliable user experience.
 
 &#x20;
 

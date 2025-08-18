@@ -74,3 +74,109 @@ Note:
 * For any version control types other than GitHub and GitLab, the CI Jobs will trigger for every commit regardless of data changes.
 {% endhint %}
 
+## Understand the Folder Structure:
+
+Follow the defined folder structure when creating new branches in Git to maintain consistency and standardization across repositories. The following is the standard folder structure.
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-18 at 5.36.26 PM.png" alt=""><figcaption></figcaption></figure>
+
+Refer to the attached ZIP file for the above recommended folder structure.
+
+{% file src="../../../../../.gitbook/assets/CommitStructure.zip" %}
+
+### Individual File Structures
+
+The configuration files—`manifest.yaml`, `project-def`, the corresponding data file `1_nFORCE__Brand__c`, and the filter file `nFORCE__Brand__c`—must adhere to the following folder structure.
+
+1.  manifest,yaml
+
+    ```yaml
+    !!com.rabit.featuremigration.beans.vcstructure.ConfigManifest
+    packageDirectories:
+      packagePaths:
+        dataset:
+          features:
+            <HEXID>-<Template Name>:
+              path: dataset/<HEXIA>-<Template Name>
+              prefix: <UserPrefix>
+              standardFeature: True/False
+              versions:
+                '4.0':
+                  modifiedDate: '2025-08-18 09:06:55'
+    ```
+2.  project-def
+
+    ```json
+    {
+      "name": "<REPO NAME>",
+      "defaultPath": "dataset",
+      "featurePrefixes": {
+        "<HEXID>": "<FEATUREORGID>"
+      }
+    }
+    ```
+3.  1\_nFORCE\_\_Brand\_\_c.json
+
+
+
+    ```json
+    {
+      "name": "1_nFORCE__Brand__c",
+      "attributes": [
+        "Id",
+        "OwnerId",
+        "IsDeleted",
+        "Name",
+        "CreatedDate",
+        "CreatedById",
+        "LastModifiedDate",
+        "LastModifiedById",
+        "SystemModstamp",
+        "LastViewedDate",
+        "LastReferencedDate",
+        "nFORCE__Brand_Custom_CSS__c",
+        "nFORCE__Brand_JSON__c",
+        "nFORCE__Description__c",
+        "nFORCE__Is_Applied__c",
+        "nFORCE__Look_Up_Key__c",
+        "nFORCE__LookupKey__c",
+        "AutorabitExtId__c",
+        "Description__c"
+      ],
+      "records": {
+        "1": {
+          "AutorabitExtId__c": "",
+          "CreatedById": "0058c00000BxeO9AAJ",
+          "CreatedDate": "2025-08-18T09:04:38.000Z",
+          "Description__c": "",
+          "Id": "a1uKa000000NwxxIAC",
+          "IsDeleted": "false",
+          "LastModifiedById": "0058c00000BxeO9AAJ",
+          "LastModifiedDate": "2025-08-18T09:04:38.000Z",
+          "LastReferencedDate": "2025-08-18T09:04:41.000Z",
+          "LastViewedDate": "2025-08-18T09:04:41.000Z",
+          "Name": "Record-01",
+          "OwnerId": "0058c00000BxeO9AAJ",
+          "SystemModstamp": "2025-08-18T09:04:38.000Z",
+          "nFORCE__Brand_Custom_CSS__c": "",
+          "nFORCE__Brand_JSON__c": "",
+          "nFORCE__Description__c": "",
+          "nFORCE__Is_Applied__c": "false",
+          "nFORCE__Look_Up_Key__c": "42406995856406363",
+          "nFORCE__LookupKey__c": ""
+        },
+        "2": {
+          
+        }
+      }
+    }
+    ```
+4.  nFORCE\_\_Brand\_\_c.json
+
+    ```json
+    {
+      "name": "nFORCE__Brand__c",
+      "query": "Select Id From nFORCE__Brand__c Where Id \u003d \u0027a1uKa000000NwxxIAC\u0027"
+    }
+    ```
+

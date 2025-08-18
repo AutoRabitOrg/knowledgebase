@@ -1,5 +1,67 @@
 # Guard Release Notes 25.2
 
+## Guard 25.2.3 Release Notes
+
+**Release Date: 20 August 2025**
+
+### New User Creation Simplified
+
+Creating new users is now faster and more flexible. Admins can set up accounts with just an **email address** and **role**. Other details (username, first name, and last name) are optional and hidden by default but can be filled out as needed.
+
+* The system now **automatically handles username conflicts** by suggesting available alternatives.
+*   The **user list view** and **user icons** have been updated to reflect these enhancements.\
+
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Improved Account Protection
+
+To enhance security and prevent accidental or malicious account removals:
+
+* **Admins** can no longer delete or deactivate their own accounts but still can manage Standard User accounts.
+* **Standard Users** cannot delete or deactivate their own or any other accounts.
+
+This change helps maintain system stability and protects privileged accounts.
+
+&#x20;
+
+### Stronger Role Management Controls
+
+We’ve introduced new safeguards to reduce the risk of privilege loss or escalation:
+
+* Admins can no longer **downgrade themselves** to Standard User.
+* Admins can still **promote Standard Users** to Admin.
+* Standard Users cannot change anyone’s role.
+* All role changes are now logged for better auditing and compliance.
+
+&#x20;
+
+### Single Sign-On (SSO) with Enhanced Security
+
+Guard now supports Single Sign-On (SSO) using encrypted SAML assertions.\
+&#x20;This ensures:
+
+* Sensitive authentication data is securely transmitted.
+* Reduced risk of data interception or tampering.
+* Compliance with federal security standards.
+
+&#x20;
+
+### Bug Fixes
+
+* User Unlocking: Resolved an issue with locked accounts that couldn’t be unlocked from the Settings page. Admins can now restore users' access without any errors.
+
+### Other enhancements
+
+* Security & Compliance: we have strengthened our platform’s security by implementing targeted improvements that meet stringent federal standards. These updates reduce potential attack surfaces and further enhance data protection.
+* Implemented a few backend optimizations to enhance system stability and ensure long-term maintainability, supporting a smoother and more reliable User Experience.
+
+&#x20;
+
+***
+
 ## Guard 25.2.2 Release Notes
 
 **Release Date: 23 July 2025**

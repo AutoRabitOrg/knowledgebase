@@ -14,7 +14,7 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 
 2. A screen displays the weekly summary report of EZ-Commits, deployments,[ dataloader](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/), TAF, and continuous integration.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on the dropdown button beside **Weekly** **Report** and select the appropriate option to filter the data based on the chosen date range. The users can view the reports either **weekly**, **monthly,** or **yearly**.
 

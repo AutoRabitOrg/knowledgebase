@@ -26,7 +26,7 @@ A summary of the Salesforce org registered with ARM is displayed in this area.\
 \
 
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The fields displayed in this section are described in the table below:&#x20;
 
@@ -55,7 +55,7 @@ About nCino Package Enabled: Selecting the **Enable nCino package** previously r
 3.  **`Generate Code Coverage Report:`** This function allows you to run all available Apex Test Classes in the Salesforce org and generate a code coverage report. The code coverage report will be emailed to your registered email id with the CSV file attached. The CSV file will contain the failed test classes that require the user's attention to resolve. Select **`Do you want us to update the test classes?`** checkbox to avoid classes from getting overwritten after deployment.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Attached is the sample email that will be notified to the user whenever the code coverage is run.
 
     * Code Coverage with a success rate of more than 75%

@@ -29,7 +29,7 @@ AutoRABIT Guard’s Data Classification enhances your organization's ability to 
 
 * **How often it's populated**: Understand if the field is frequently used, rarely touched, or unused—critical for prioritizing cleanup or lockdowns.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Records by Type</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Records by Type</p></figcaption></figure>
 
 *   **Access Visibility: See Who Has Keys**\
     Even well-protected data becomes a risk if too many people have access to it. With Guard, you can instantly view which Profiles, Permission Sets, and Permission Set Groups have access to a sensitive field.\

@@ -25,8 +25,6 @@ To enhance security and prevent accidental or malicious account removals:
 
 This change helps maintain system stability and protects privileged accounts.
 
-&#x20;
-
 ### Stronger Role Management Controls
 
 We’ve introduced new safeguards to reduce the risk of privilege loss or escalation:
@@ -35,8 +33,6 @@ We’ve introduced new safeguards to reduce the risk of privilege loss or escala
 * Admins can still **promote Standard Users** to Admin.
 * Standard Users cannot change anyone’s role.
 * All role changes are now logged for better auditing and compliance.
-
-&#x20;
 
 ### Single Sign-On (SSO) with Enhanced Security
 
@@ -47,18 +43,14 @@ Guard now supports **Single Sign-On (SSO)** using **encrypted SAML assertions**.
 * Reduced risk of data interception or tampering.
 * Compliance with **federal security standards**.
 
-&#x20;
-
 ### Bug Fixes
 
 * **User Unlocking**: Resolved an issue with locked accounts that couldn’t be unlocked from the Settings page. Admins can now restore users' access without any errors.
 
-### Other enhancements
+### Other Enhancements
 
 * **Security & Compliance**: We have strengthened our platform’s security by implementing targeted improvements that meet stringent federal standards. These updates reduce potential attack surfaces and further enhance data protection.
 * Implemented a few back-end optimizations to enhance system stability and ensure long-term maintainability, supporting a smoother and more reliable user experience.
-
-&#x20;
 
 ***
 

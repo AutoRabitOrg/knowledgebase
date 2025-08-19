@@ -6,7 +6,7 @@
 
 AutoRABIT will rotate its internal SSL certificate as part of routine maintenance. This impacts certain Single Sign-On (SSO) and Salesforce DX (SFDX) configurations in AutoRABIT.
 
-* **Date:** Saturday, August 23rd
+* **Date:** Saturday, August 23, 2025
 * **Time:** 12:00 AM PST
 * **Expected Duration:** \~1 hour
 * **When to Take Action:** After the maintenance window (from \~1:00 AM PST onward)

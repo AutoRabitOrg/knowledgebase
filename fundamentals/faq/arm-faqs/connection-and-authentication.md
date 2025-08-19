@@ -1,5 +1,77 @@
 # Connection & Authentication
 
+## ARM SSO Certificate Rotation
+
+### Overview
+
+AutoRABIT will rotate its internal SSL certificate as part of routine maintenance. This impacts certain Single Sign-On (SSO) and Salesforce DX (SFDX) configurations in AutoRABIT.
+
+* **Date:** Saturday, August 23rd
+* **Time:** 12:00 AM PST
+* **Expected Duration:** \~1 hour
+* **When to Take Action:** After the maintenance window (from \~1:00 AM PST onward)
+
+***
+
+### Who Needs to Take Action?
+
+There are **two scenarios** where action is required:
+
+#### 1. Using SSO with SAML Encryption Enabled in Your Identity Provider (IDP)
+
+* **Steps to Take:**
+  1. Navigate to **Admin > My Account > SSO Configuration** in AutoRABIT.
+  2. Download the **AutoRABIT SSO Metadata File**.
+  3. Upload this metadata file to your **IDP**.
+* **Impact if No Action Taken:**
+  * Users will be unable to log in to AutoRABIT via SSO.
+* **How to Verify:**
+  * Contact your **IDP administrator** to confirm if SAML encryption is enabled.
+
+***
+
+#### 2. Using the SFDX Module (DevHub Orgs)
+
+* **Steps to Take:**
+  1. Go to **SFDX Module > Hub Management** in AutoRABIT.
+  2. Select all registered **DevHub Orgs**.
+  3. Re-authenticate each org.
+* **Impact if No Action Taken:**
+  * Automated **CI jobs** depending on DevHubs will fail to execute.
+
+***
+
+### Who Does _Not_ Need to Take Action?
+
+* If you use **SSO without SAML encryption enabled**, and
+* You do **not** use the SFDX module or have DevHub orgs registered.
+
+***
+
+### Additional Information
+
+* **SFDX-enabled repositories** are **not impacted** by this certificate rotation.
+* AutoRABIT will **not issue a new SSO/SAML signing certificate**.
+* The existing respective IDP generated **certificate** will continue to be used for SSO authentication.
+* This change only impacts AutoRABIT’s **internal SSL certificates**.
+
+***
+
+### Support
+
+If you have questions or face login issues after the rotation:
+
+* Contact **AutoRABIT Support**: \[support@autorabit.com]
+* Or reach out to your **Customer Success Manager (CSM)**
+
+***
+
+**In Summary:**
+
+* Action required **only if** you use **SSO with SAML encryption** or **SFDX DevHub Orgs**.
+* Perform the steps **after August 23rd, 1:00 AM PST**.
+* Not taking action will result in **login failures (SSO)** or **failed CI jobs (SFDX)**.
+
 ## Azure Hosting Migration
 
 To our valued Customer,&#x20;

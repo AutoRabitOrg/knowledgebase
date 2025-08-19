@@ -69,7 +69,7 @@ If you have questions or face login issues after the rotation:
 **In Summary:**
 
 * Action required **only if** you use **SSO with SAML encryption** or **SFDX DevHub Orgs**.
-* Perform the steps **after August 23rd, 1:00 AM PST**.
+* Perform the steps **after August 23, 2025, 1:00 AM PST**.
 * Not taking action will result in **login failures (SSO)** or **failed CI jobs (SFDX)**.
 
 ## Azure Hosting Migration

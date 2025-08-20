@@ -1,12 +1,24 @@
 # nCino Release Notes 25.3
 
+## nCino + DL - Release 25.3.6 <a href="#title-text" id="title-text"></a>
+
+**Release Date:** Aug 17, 2025
+
+#### Handling Record Types <a href="#handling-record-types" id="handling-record-types"></a>
+
+A fix has been implemented to ensure that **Record Types are now correctly assigned to records** during processing. This resolves issues where records were previously created or updated without the appropriate Record Type association.
+
+#### DL Pro <a href="#dl-pro" id="dl-pro"></a>
+
+A fix has been rolled out to ensure that, during data deployment, the **deployment status is fetched accurately**, resulting in a more reliable and successful deployment process.
+
 ## nCino + DL - Release 25.3.5 <a href="#title-text" id="title-text"></a>
 
-**Logs Enhancements**\
-Improved logging capabilities for enhanced tracking and traceability.
+**Release Date:** Aug 10, 2025
 
-**Cloning DL PRO Jobs**\
-Enhanced DL PRO job cloning to ensure accurate replication with all settings retained.
+#### **Logs Enhancements** Improved logging capabilities for enhanced tracking and traceability.
+
+#### **Cloning DL PRO Jobs** Enhanced DL PRO job cloning to ensure accurate replication with all settings retained.
 
 **DataLoader Clone Functionality**\
 Improved cloning process for DataLoader jobs to maintain configuration integrity.

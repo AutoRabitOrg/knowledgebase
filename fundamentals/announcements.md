@@ -1,8 +1,6 @@
 # Preparing for Salesforce Connected App Usage Restrictions
 
-### Guidance for AutoRABIT Customers
-
-**Overview**
+### **Overview**
 
 Salesforce has announced changes to how uninstalled connected apps function in customer orgs,
 

@@ -43,7 +43,7 @@ There are **two scenarios** where action is required:
 
 
 
-* The SSO metadata file can be downloaded without access to the UI
+* The SSO metadata file can be downloaded without access to the UI:
   * Enter the following format in your browser: \<instanceURL>/saml/metadata. For example, if your instance is [https://pilot.autorabit.com/](https://pilot.autorabit.com/), then the payload URL would be [_https://pilot.autorabit.com/saml/_](https://pilot.autorabit.com/saml/)_metadata_
 * If SSO is enforced, use the URL below.
   * Enter the following format in your browser: \<instanceURL>/[?basic-auth=true](https://aligntech.autorabit.com/?basic-auth=true/saml/metadata). For example, if your instance is [https://pilot.autorabit.com/](https://pilot.autorabit.com/), the payload URL would be [_https://pilot.autorabit.com/_](https://pilot.autorabit.com/)[?basic-auth=true](https://aligntech.autorabit.com/?basic-auth=true/saml/metadata)&#x20;

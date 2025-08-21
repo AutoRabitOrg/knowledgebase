@@ -41,7 +41,7 @@ There are **two scenarios** where action is required:
 
 
 
-
+### How do I download the SSO metadata file without access to the UI?
 
 * The SSO metadata file can be downloaded without access to the UI:
   * Enter the following format in your browser: \<instanceURL>/saml/metadata. For example, if your instance is [https://pilot.autorabit.com/](https://pilot.autorabit.com/), then the payload URL would be [_https://pilot.autorabit.com/saml/_](https://pilot.autorabit.com/saml/)_metadata_
@@ -108,9 +108,9 @@ We will be providing a new login URL for the new instance; the following will ne
 
 **Your Actions in the new instance**&#x20;
 
-* Re-set up SSO if you are currently using it to access your account ([KB article](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sso))&#x20;
-* Re-set up your webhooks for the new URL ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks))&#x20;
-* Re-Authenticate your Salesforce Org ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/salesforce-org-re-authentication))&#x20;
+* Re-setup SSO if you are currently using it to access your account ([KB article](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sso))&#x20;
+* Re-setup your webhooks for the new URL ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks))&#x20;
+* Reauthenticate your Salesforce Org ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/salesforce-org-re-authentication))&#x20;
 * Share the new instance URL with your team&#x20;
 
 After the migration, they will need to use the new link to access their accounts.

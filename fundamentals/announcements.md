@@ -37,7 +37,7 @@ environments using the OAuth 2.0 Client Credentials Flow.
    1. If API Access Control is enabled: Assign “Use Any API Client.”
    2. If API Access Control is not enabled: Assign either “Approve Uninstalled Connected Apps” or “Use Any API Client.”
 
-> ■■ Grant these permissions only to trusted integration users.
+> Grant these permissions only to trusted integration users.
 
 3. Plan for Future Stability:
    1. AutoRABIT is preparing enhancements to support installed connected apps for long-term compliance.

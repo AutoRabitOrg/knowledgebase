@@ -131,23 +131,23 @@ Step-By-Step Guide:
     * A confirmation displays to cancel the run.
 
     <figure><img src="../../../../.gitbook/assets/29 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-24. #### Run Job Completion (Screen 30)
+24. #### Run Job Completion
 
     * Once completed, the job reflects a **final execution status** (e.g., Success/Failed).
     * Review status before proceeding with further validation or data checks.
 
     <figure><img src="../../../../.gitbook/assets/30 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-25. **Access Job Results (Screen 30.1)**
+25. **Access Job Results**
 
     * Under Actions for a job, select **Job Results**.
 
     <figure><img src="../../../../.gitbook/assets/30.1 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-26. **Open Validation / Workflow Rules (Screen 33)**
+26. **Open Validation / Workflow Rules**
 
     * Click on the **VR/WFR** icon beside the object.
 
     <figure><img src="../../../../.gitbook/assets/33 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-27. **View Workflow/Validation Rules (Screen 34)**
+27. **View Workflow/Validation Rules**
 
     * The **Validation / Workflow Rules** panel opens.
     * Review Validation Rules under **Name, Previous State, Current State, Enable, Error (if any)**.
@@ -155,7 +155,7 @@ Step-By-Step Guide:
     * Validate existing Workflow Rules or confirm that none are displayed.
 
     <figure><img src="../../../../.gitbook/assets/34 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-28. **Edit Object Mapping (Screen 36)**
+28. **Edit Object Mapping**
 
     * Select the **Mappings** icon to open **Edit Mapping**.
     * Review source and destination fields.
@@ -163,7 +163,7 @@ Step-By-Step Guide:
     * Click **Save** to update mappings.
 
     <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
-29. **View Job Run Results – Success (Screen 37)**
+29. **View Job Run Results – Success**
 
     * Under **Results of Last Run**, click the **Success count** icon.
     * A list of records with **Destination IDs** and **Status: Item Created** is displayed.
@@ -171,7 +171,7 @@ Step-By-Step Guide:
     <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/36 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
-30. **View Job Run Results – Failure (Screen 38)**
+30. **View Job Run Results – Failure**
 
     * Under **Results of Last Run**, click the **Failure count** icon.
     * A list of failed records with **Source IDs** and corresponding **Error Messages** is displayed.
@@ -179,19 +179,19 @@ Step-By-Step Guide:
     <figure><img src="../../../../.gitbook/assets/38 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/39 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-31. #### Search by Job Name (Screen 40)
+31. #### Search by Job Name
 
     * Use the **Job name** field to locate specific jobs quickly.
     * Begin typing the job name to see filtered results update automatically.
 
     <figure><img src="../../../../.gitbook/assets/40 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-32. #### Filter by Status (Screen 41)
+32. #### Filter by Status
 
     * Open the **Status** dropdown to refine job listings.
     * Observe the available options to set the right filter criteria.
 
     <figure><img src="../../../../.gitbook/assets/41 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-33. #### Apply Advanced Filters (Screen 42)
+33. #### Apply Advanced Filters
 
     * Click **Filters** to apply additional criteria.
     * Choose filters such as:
@@ -207,7 +207,7 @@ Step-By-Step Guide:
     * Additional columns can be included in the view by selecting the desired options from the **Columns** menu. Columns that are not relevant can be deselected to keep the view focused on essential information.
 
     <figure><img src="../../../../.gitbook/assets/43 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-35. #### Job Actions – Menu Options (Screen 44)
+35. #### Job Actions – Menu Options
 
     * Open the **⋮ (More)** menu next to any job to perform actions.
     * Available options include:
@@ -258,12 +258,12 @@ Step-By-Step Guide:
     * The cloned job appears in the job list.
 
     <figure><img src="../../../../.gitbook/assets/49 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-39. Open Bulk Actions (Screen 49.1)
+39. Open Bulk Actions
 
     * Click the **Bulk Actions** (three-line) icon at the top-right of the **Test Environment** list.
 
     <figure><img src="../../../../.gitbook/assets/49.1 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-40. Bulk Actions Menu (Screen 49.2)
+40. Bulk Actions Menu
 
     * Review available actions:
       * **Run** (disabled for bulk in this view)
@@ -272,29 +272,42 @@ Step-By-Step Guide:
       * **Delete** – remove multiple jobs
 
     <figure><img src="../../../../.gitbook/assets/49.1.11 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-41. Start Bulk Edit (Screen 50)
+41. Start Bulk Edit
 
     * From **Bulk Actions**, click **Edit** to open the bulk group editor.
 
     <figure><img src="../../../../.gitbook/assets/49.2 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../.gitbook/assets/49.3 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
 42. Bulk Edit Job Groups (Screen 49.3)
+
     * Use the **Edit Job Group – All** dialog to update the **Category** (group) for many jobs at once.
     * Optional: use **Search** to filter the list; navigate with **Previous/Next** or the page size selector.
     * Click **Save** to apply group changes, or **Cancel** to discard.
-43. Start Bulk Clone (Screen 51)
+
+    <figure><img src="../../../../.gitbook/assets/49.3 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+43. Start Bulk Clone
+
     * From **Bulk Actions**, click **Clone** to open the bulk clone setup.
-44. Configure Bulk Clone (Screen 52)
+
+    <figure><img src="../../../../.gitbook/assets/51 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+44. Configure Bulk Clone
+
     * In **Clone – All**:
       * **Group name** (required) – Enter the target group for the new copies.
       * **Destination Sandbox** (required) – Choose where all selected jobs will be cloned.
     * Click **Clone** to create the copies, or **Cancel** to exit.
-45. Start Bulk Delete (Screen 53)
+
+    <figure><img src="../../../../.gitbook/assets/52 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+45. Start Bulk Delete
+
     * From **Bulk Actions**, click **Delete** to open the selection panel.
-46. Select Jobs to Delete (Screen 54)
+
+    <figure><img src="../../../../.gitbook/assets/53 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+46. Select Jobs to Delete
+
     * In **Category: All**, select individual jobs or use the header checkbox to select all.
     * Click **Delete** to permanently remove the selected jobs, or **Cancel** to keep them.
+
+    <figure><img src="../../../../.gitbook/assets/54 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -54,7 +54,8 @@
     * [Common Error Messages](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions-1.md)
     * [Limitations](fundamentals/faq/vault-faqs/limitations.md)
     * [Unsupported Metadata Types](fundamentals/faq/vault-faqs/page-1.md)
-* [Announcements](fundamentals/announcements.md)
+* [Announcements](fundamentals/announcements/README.md)
+  * [Preparing for Salesforce Connected App Usage Restrictions](fundamentals/announcements/preparing-for-salesforce-connected-app-usage-restrictions.md)
 
 ## Release Notes
 

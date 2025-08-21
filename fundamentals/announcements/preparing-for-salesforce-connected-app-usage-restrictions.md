@@ -1,8 +1,4 @@
-# Announcements
-
-Preparing for Salesforce Connected App Usage
-
-## Preparing for Salesforce Connected App Usage Restrictions
+# Preparing for Salesforce Connected App Usage Restrictions
 
 ### Guidance for AutoRABIT Customers
 

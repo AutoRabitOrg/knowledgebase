@@ -119,35 +119,41 @@ Step-By-Step Guide:
     * Action buttons become available: **View**, **Stop**.
 
     <figure><img src="../../../../.gitbook/assets/27 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-22. #### Job Status – In Progress
+22. #### Run Configurations
+
+    | **Disable Workflows**        | Temporarily deactivates Salesforce workflows during migration to prevent unintended triggers. Workflows are automatically re-enabled after migration completes.                                                                        |
+    | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | **Disable Validation Rules** | Suspends validation rules to allow uninterrupted data migration. Rules are automatically restored once the migration is complete.                                                                                                      |
+    | **Use Bulk API**             | Leverages Salesforce Bulk API for handling large data volumes efficiently. Jobs can be executed in **serial** (sequentially, one after another) or **parallel** (simultaneously). For higher throughput, parallel mode is recommended. |
+23. #### Job Status – In Progress
 
     * The job displays an **In Progress** status in the list.
     * Monitor the status until completion.
 
     <figure><img src="../../../../.gitbook/assets/28 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-23. #### Abort Job Execution
+24. #### Abort Job Execution
 
     * If needed, click **Stop (Abort)** under Actions.
     * A confirmation displays to cancel the run.
 
     <figure><img src="../../../../.gitbook/assets/29 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-24. #### Run Job Completion
+25. #### Run Job Completion
 
     * Once completed, the job reflects a **final execution status** (e.g., Success/Failed).
     * Review status before proceeding with further validation or data checks.
 
     <figure><img src="../../../../.gitbook/assets/30 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-25. **Access Job Results**
+26. **Access Job Results**
 
     * Under Actions for a job, select **Job Results**.
 
     <figure><img src="../../../../.gitbook/assets/30.1 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-26. **Open Validation / Workflow Rules**
+27. **Open Validation / Workflow Rules**
 
     * Click on the **VR/WFR** icon beside the object.
 
     <figure><img src="../../../../.gitbook/assets/33 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-27. **View Workflow/Validation Rules**
+28. **View Workflow/Validation Rules**
 
     * The **Validation / Workflow Rules** panel opens.
     * Review Validation Rules under **Name, Previous State, Current State, Enable, Error (if any)**.
@@ -155,7 +161,7 @@ Step-By-Step Guide:
     * Validate existing Workflow Rules or confirm that none are displayed.
 
     <figure><img src="../../../../.gitbook/assets/34 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-28. **Edit Object Mapping**
+29. **Edit Object Mapping**
 
     * Select the **Mappings** icon to open **Edit Mapping**.
     * Review source and destination fields.
@@ -163,7 +169,7 @@ Step-By-Step Guide:
     * Click **Save** to update mappings.
 
     <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
-29. **View Job Run Results – Success**
+30. **View Job Run Results – Success**
 
     * Under **Results of Last Run**, click the **Success count** icon.
     * A list of records with **Destination IDs** and **Status: Item Created** is displayed.
@@ -171,7 +177,7 @@ Step-By-Step Guide:
     <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/36 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
-30. **View Job Run Results – Failure**
+31. **View Job Run Results – Failure**
 
     * Under **Results of Last Run**, click the **Failure count** icon.
     * A list of failed records with **Source IDs** and corresponding **Error Messages** is displayed.
@@ -179,19 +185,19 @@ Step-By-Step Guide:
     <figure><img src="../../../../.gitbook/assets/38 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/39 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-31. #### Search by Job Name
+32. #### Search by Job Name
 
     * Use the **Job name** field to locate specific jobs quickly.
     * Begin typing the job name to see filtered results update automatically.
 
     <figure><img src="../../../../.gitbook/assets/40 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-32. #### Filter by Status
+33. #### Filter by Status
 
     * Open the **Status** dropdown to refine job listings.
     * Observe the available options to set the right filter criteria.
 
     <figure><img src="../../../../.gitbook/assets/41 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-33. #### Apply Advanced Filters
+34. #### Apply Advanced Filters
 
     * Click **Filters** to apply additional criteria.
     * Choose filters such as:
@@ -201,13 +207,13 @@ Step-By-Step Guide:
     * Click **Apply** to filter or **Reset** to clear all selections.
 
     <figure><img src="../../../../.gitbook/assets/42 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-34. #### Manage Columns (Screen 43)
+35. #### Manage Columns (Screen 43)
 
     * Click **Columns** to customize the table view.
     * Additional columns can be included in the view by selecting the desired options from the **Columns** menu. Columns that are not relevant can be deselected to keep the view focused on essential information.
 
     <figure><img src="../../../../.gitbook/assets/43 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-35. #### Job Actions – Menu Options
+36. #### Job Actions – Menu Options
 
     * Open the **⋮ (More)** menu next to any job to perform actions.
     * Available options include:
@@ -217,7 +223,7 @@ Step-By-Step Guide:
       * **Delete**
 
     <figure><img src="../../../../.gitbook/assets/44 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-36. #### Running a Job
+37. #### Running a Job
     *   Identify the desired job in the job list.
 
 
@@ -234,7 +240,7 @@ Step-By-Step Guide:
         <figure><img src="../../../../.gitbook/assets/46 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
     * A confirmation message _“Run Process Initiated Successfully”_ appears.
     * The job status updates to indicate that the process has started.
-37. #### Monitoring Job Execution
+38. #### Monitoring Job Execution
 
     * During execution, the job’s _Status_ column updates to show the current progress.
     * Options available while the job is running:
@@ -243,7 +249,7 @@ Step-By-Step Guide:
     * Once completed, the status reflects success, failure, or warnings.
 
     <figure><img src="../../../../.gitbook/assets/47 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-38. #### Cloning a Job
+39. #### Cloning a Job
 
     * From the job list, open the **Actions** menu (**⋮ -** three dots).
     * Select **Clone**.
@@ -258,12 +264,12 @@ Step-By-Step Guide:
     * The cloned job appears in the job list.
 
     <figure><img src="../../../../.gitbook/assets/49 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-39. Open Bulk Actions
+40. Open Bulk Actions
 
     * Click the **Bulk Actions** (three-line) icon at the top-right of the **Test Environment** list.
 
     <figure><img src="../../../../.gitbook/assets/49.1 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-40. Bulk Actions Menu
+41. Bulk Actions Menu
 
     * Review available actions:
       * **Run** (disabled for bulk in this view)
@@ -272,24 +278,24 @@ Step-By-Step Guide:
       * **Delete** – remove multiple jobs
 
     <figure><img src="../../../../.gitbook/assets/49.1.11 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-41. Start Bulk Edit
+42. Start Bulk Edit
 
     * From **Bulk Actions**, click **Edit** to open the bulk group editor.
 
     <figure><img src="../../../../.gitbook/assets/49.2 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-42. Bulk Edit Job Groups (Screen 49.3)
+43. Bulk Edit Job Groups (Screen 49.3)
 
     * Use the **Edit Job Group – All** dialog to update the **Category** (group) for many jobs at once.
     * Optional: use **Search** to filter the list; navigate with **Previous/Next** or the page size selector.
     * Click **Save** to apply group changes, or **Cancel** to discard.
 
     <figure><img src="../../../../.gitbook/assets/49.3 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-43. Start Bulk Clone
+44. Start Bulk Clone
 
     * From **Bulk Actions**, click **Clone** to open the bulk clone setup.
 
     <figure><img src="../../../../.gitbook/assets/51 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-44. Configure Bulk Clone
+45. Configure Bulk Clone
 
     * In **Clone – All**:
       * **Group name** (required) – Enter the target group for the new copies.
@@ -297,12 +303,12 @@ Step-By-Step Guide:
     * Click **Clone** to create the copies, or **Cancel** to exit.
 
     <figure><img src="../../../../.gitbook/assets/52 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-45. Start Bulk Delete
+46. Start Bulk Delete
 
     * From **Bulk Actions**, click **Delete** to open the selection panel.
 
     <figure><img src="../../../../.gitbook/assets/53 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-46. Select Jobs to Delete
+47. Select Jobs to Delete
 
     * In **Category: All**, select individual jobs or use the header checkbox to select all.
     * Click **Delete** to permanently remove the selected jobs, or **Cancel** to keep them.
@@ -401,27 +407,11 @@ The test environment in ARM supports convenient data transfer from CSV files to 
 | **Disable Validation Rules** | Turns off validation rules to allow data migration. Rules are restored once the migration is complete.                                                                                                                     |
 | **Use Bulk API**             | Uses Salesforce Bulk API to increase performance for large data volumes. Jobs can be processed in **serial** (one after another) or **parallel** (simultaneously). For faster data throughput, parallel mode is preferred. |
 
-<figure><img src="../../../../.gitbook/assets/image (1127).png" alt="UI for selecting workflow, validation, and Bulk API options" width="473"><figcaption></figcaption></figure>
 
-14. Click **Run** to execute the job.
 
 ***
 
-### More Options <a href="#more-options" id="more-options"></a>
+### &#x20;<a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (1128).png" alt="Action menu with edit, delete, clone, and log options"><figcaption></figcaption></figure>
 
-1. **Edit:** Modify job settings.
-2. **Delete:** Remove a job setup.
-3. **Clone:** Create a duplicate of the configuration.
-4. **Log:** View execution history and status.
 
-***
-
-### Schema (Grid View) <a href="#schema-grid-view" id="schema-grid-view"></a>
-
-This section visualizes the master object schema and its dependencies. When validation or workflow rules are disabled, ARM displays these rules under the **VR/WFR** section. You can review and re-enable them manually if necessary.
-
-<figure><img src="../../../../.gitbook/assets/image (1129).png" alt="Grid view showing object schema and relationship"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (1130).png" alt="Section listing validation and workflow rules for review"><figcaption></figcaption></figure>

@@ -54,6 +54,7 @@
     * [Common Error Messages](fundamentals/faq/vault-faqs/common-restore-errors-and-solutions-1.md)
     * [Limitations](fundamentals/faq/vault-faqs/limitations.md)
     * [Unsupported Metadata Types](fundamentals/faq/vault-faqs/page-1.md)
+* [Announcements](fundamentals/announcements.md)
 
 ## Release Notes
 

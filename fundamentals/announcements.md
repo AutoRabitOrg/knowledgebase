@@ -2,11 +2,7 @@
 
 ### **Overview**
 
-Salesforce has announced changes to how uninstalled connected apps function in customer orgs,
-
-effective September 2025. These changes impact AutoRABIT products that connect to your Salesforce
-
-environments using the OAuth 2.0 Client Credentials Flow.
+Salesforce has announced changes to how uninstalled connected apps function in customer orgs, effective September 2025. These changes impact AutoRABIT products that connect to your Salesforce environments using the OAuth 2.0 Client Credentials Flow.
 
 ### What’s Changing in Salesforce
 

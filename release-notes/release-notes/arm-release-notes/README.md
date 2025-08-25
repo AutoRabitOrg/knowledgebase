@@ -8,12 +8,9 @@
 
 ### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
-1. EZ Commit – Case Values Removed from CustomObjectTranslation\
-   Resolved an issue where case values were being removed from the CustomObjectTranslation file when performing multiple EZ-Commits under Japanese language. The problem was caused by unmarshalling and marshalling logic comparing values incorrectly. The comparison logic has been updated to rely on additional fields to properly support translations for different languages.
-2. Webhooks – API Token Last Access Not Updating\
-   Fixed an issue where webhook API tokens continued to display “Never Accessed” even after recent runs triggered by CI jobs. The backend logic has been corrected to update and display the last access time accurately.
-3. Rollback – Iteration and Components Not Available After Revert\
-   Addressed an issue where rolling back a previously deployed iteration caused both the iteration and its components to disappear. A change event has been added to ensure iterations and components are available after a revert rollback.
+1. **EZ Commit – Case Values Removed from CustomObjectTranslation:** Resolved an issue where case values were being removed from the CustomObjectTranslation file when performing multiple EZ-Commits under Japanese language. The problem was caused by unmarshalling and marshalling logic comparing values incorrectly. The comparison logic has been updated to rely on additional fields to properly support translations for different languages.
+2. **Webhooks – API Token Last Access Not Updating:** Fixed an issue where webhook API tokens continued to display “Never Accessed” even after recent runs triggered by CI jobs. The backend logic has been corrected to update and display the last access time accurately.
+3. **Rollback – Iteration and Components Not Available After Revert:** Addressed an issue where rolling back a previously deployed iteration caused both the iteration and its components to disappear. A change event has been added to ensure iterations and components are available after a revert rollback.
 
 ## ARM 25.3.6 Release Notes
 

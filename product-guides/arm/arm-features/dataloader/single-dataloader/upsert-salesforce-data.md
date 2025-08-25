@@ -2,6 +2,9 @@
 
 **Upsert** is a combination of Updating and Inserting. If a record in a file matches an existing record, the existing record is updated with the values in your file. The record is created as a new entity if no match is found.
 
+**Limitation on Record ID Availability**\
+Except for the **Upsert** operation in a single Dataloader job, when errors occur during data operations, Salesforce imposes a limitation where **record ID information is not available** in the error details.
+
 The following articles describe using **Single Dataloader** to upsert data into Salesforce via a CSV file.
 
 1. Log in to your ARM account.

@@ -20,11 +20,9 @@ Please note that there are updated requirements for customers who are using one 
 
 ## CodeScan Release 25.1.7&#x20;
 
-#### Release Date Aug 24, 2025&#x20;
+#### Release Date: 24 August 2025&#x20;
 
-&#x20;
-
-### Summary:&#x20;
+### Summary&#x20;
 
 CodeScan 25.1.7 is comprised of the following 5 components:&#x20;
 
@@ -33,27 +31,25 @@ CodeScan 25.1.7 is comprised of the following 5 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-&#x20;
+### New Features&#x20;
 
-### New Features:&#x20;
-
-1. Enable/Disable feature of Mapping to multiple orgs from one SAML Connection at instance level&#x20;
+1. Enable/Disable feature of Mapping to multiple orgs from one SAML Connection at instance level.&#x20;
 
 {% hint style="info" %}
-_NOTE:  This feature is only available to customers who have a dedicated Instance.  It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
+_NOTE:  This feature is only available to customers who have a dedicated instance. It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
 {% endhint %}
 
-This new feature enables customers to map to multiple orgs from one SAML Connection at their instance level&#x20;
+This new feature enables customers to map to multiple orgs from one SAML Connection at their instance level.
 
-Verified the below scenarios for  SAML users, and all scenarios are working as expected.&#x20;
+Verified the following scenarios for SAML users, and all scenarios are working as expected.&#x20;
 
-1. Verified the User when Codescan idp-group-mapping is disabled user is able to login through SSO when the Group synchronisation and IDP mapping is not used.&#x20;
-2. Verified the User when Codescan idp-group-mapping is disabled user is able to login through SSO when the Group synchronisation and IDP mapping is used.&#x20;
-3. Verified the User when Codescan idp-group-mapping is enabled user is able to login through SSO when the Group synchronisation and IDP mapping is used.&#x20;
-4. Verified the User when Codescan idp-group-mapping is enabled user is able to login through SSO when the Group synchronisation and IDP mapping is not used.&#x20;
-5. Validated the SAML connection creation and login through SSO in the created Org&#x20;
-6. Validated the SAML connection creation and login through SSO with the other Org&#x20;
-7. Create a new user and check the login through SSO with the same above SAML config&#x20;
+1. Verified the User when CodeScan idp-group-mapping is disabled, user is able to log in through SSO when the Group synchronization and IDP mapping is not used.&#x20;
+2. Verified the User when CodeScan idp-group-mapping is disabled, user is able to log in through SSO when the Group synchronization and IDP mapping are used.&#x20;
+3. Verified the User when CodeScan idp-group-mapping is enabled, user is able to log in through SSO when the Group synchronization and IDP mapping are used.&#x20;
+4. Verified the User when CodeScan idp-group-mapping is enabled, user is able to log in through SSO when the Group synchronization and IDP mapping are not used.&#x20;
+5. Validated the SAML connection creation and login through SSO in the created Org.&#x20;
+6. Validated the SAML connection creation and login through SSO with the other Org.&#x20;
+7. Created a new user and checked the login through SSO with the same above SAML config.&#x20;
 8. Verified the IDP group mapping where the user is mapped to the organization where SAML connection is created.&#x20;
 
 {% hint style="info" %}
@@ -64,8 +60,6 @@ _NOTE:  This feature needs to be enabled in customers’ organizations.  It is N
 _NOTE:  This feature is only available to customers who have a dedicated Instance.  It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
 {% endhint %}
 
-&#x20;
-
 ### Fixes&#x20;
 
 1. **Fixed Broken Documentation Link in Status Module**&#x20;
@@ -73,11 +67,10 @@ _NOTE:  This feature is only available to customers who have a dedicated Instanc
 It has been reported that the "Status" module in all CodeScan application contains a broken documentation link: \
 [https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle](https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle)&#x20;
 
-&#x20;\
-This link provides users with detailed information on the lifecycle of issue statuses but currently leads to a non-existent page. The correct, working link should be: \
+This link provides users with detailed information on the lifecycle of issue statuses but currently leads to a nonexistent page. The correct, working link should be: \
 [https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status)&#x20;
 
-This fix remediates this issue in full&#x20;
+This fix remediates this issue in full.&#x20;
 
 Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page. \
 The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status) &#x20;
@@ -88,21 +81,21 @@ The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://k
 
 2. **URIs are not Valid in decorated SARIF output**
 
-It has been reported that the URIs are not valid in the SARIF file due to spaces.  To remediate, we added logic to make certain that they are escaped.
+It has been reported that the URLs are not valid in the SARIF file due to spaces.  To remediate, we added logic to make certain that they are escaped.
 
-Verified that users are now able to see valid URIs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
+Verified that users are now able to see valid URLs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
 
 <figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="305"><figcaption></figcaption></figure>
 
-3. **Fixed issue where Scheduled analyses are not running for Sf projects and its comparison branches**
+3. **Fixed issue where scheduled analyses are not running for SF projects and its comparison branches**
 
 Several customers have reported that their daily scheduled analyses were not running for Salesforce integration projects and their corresponding comparison branches within the same project.  We determined that the Scheduled Jobs were getting stuck, even though they were consuming memory and CPU.  Further, we identified that the root cause of the issue stemmed from changes made in the previous release (25.1.6), and that scheduled jobs on our AWS infrastructure were running into “out-of-memory” issues.
 
 This fix remediates this issue in full.
 
-Verified the fix and validated that the scheduled jobs are now running without issue (as expected)
+Verified the fix and validated that the scheduled jobs are now running without issue (as expected).
 
 <figure><img src="../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -112,10 +105,10 @@ Verified the fix and validated that the scheduled jobs are now running without i
 
 We uncovered that if the following steps were performed…
 
-1\. Launch and login to the codescan application and be on any org\
-2\. Create salesforce project\
-3\. Create comparison and standard branch analysis\
-4\. Try deleting comparison branch
+1\. Launch and log in to the CodeScan application and be on any org.\
+2\. Create Salesforce project.\
+3\. Create comparison and standard branch analysis.\
+4\. Try deleting comparison branch.
 
 …then users receive an error message indicating that an “unknown error occurred.”
 
@@ -126,8 +119,8 @@ This issue has been fully remediated in this release.
 We have verified the fix and have validated that the following scenarios are all working as expected:\
 \
 1\. Verified salesforce comparison branch deletion.\
-2\. Verified creation of project with user having (create and analyize project permission)\
-3\. renaming of project branch\
+2\. Verified creation of project with user having (create and analyze project permissions).\
+3\. Renaming of project branch.\
 4\. ALM project tags working as expected.
 
 ***

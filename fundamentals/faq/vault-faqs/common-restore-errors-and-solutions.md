@@ -55,6 +55,31 @@ For specific estimates, contact the product team.
 
 ***
 
+## Access and Refresh Token Handling
+
+Salesforce automatically manages the life cycle of both **Access Tokens** and **Refresh Tokens**, ensuring secure and uninterrupted connectivity for Vault. Below are the scenarios you may encounter:
+
+#### **Scenario 1: Access Token Expiry**
+
+* The **Access Token** expires based on the duration configured in Salesforce.
+* When this happens, Salesforce automatically refreshes the Access Token using the associated **Refresh Token**.
+* This process is seamless and requires no user action. Vault operations continue without interruption.
+
+#### **Scenario 2: Refresh Token Expiry**
+
+A **Refresh Token** may expire in the following cases:
+
+1. When the configured expiry period in Salesforce is reached.
+2. When the Salesforce Org itself is refreshed.
+
+**What happens next:**
+
+* Once the Refresh Token expires, automatic renewal of Access Tokens is no longer possible.
+* Vault prompts the user to **re-authenticate the connected org**.
+* After successful re-authentication, Salesforce issues new tokens, and operations resume normally.
+
+***
+
 ## Backup and Compare
 
 ### **Can I delete specific, condition-based data from an existing backup?**

@@ -1,12 +1,12 @@
 # ARM Release Notes
 
-## Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 24th Aug 2025**
 
 **Highlights:** Fixes to EZ-Commit translations, webhook API token status, and rollback iterations.
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
 1. EZ Commit – Case Values Removed from CustomObjectTranslation\
    Resolved an issue where case values were being removed from the CustomObjectTranslation file when performing multiple EZ-Commits under Japanese language. The problem was caused by unmarshalling and marshalling logic comparing values incorrectly. The comparison logic has been updated to rely on additional fields to properly support translations for different languages.

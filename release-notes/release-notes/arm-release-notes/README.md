@@ -1,6 +1,6 @@
 # ARM Release Notes
 
-## ARM Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 24th Aug 2025**
 

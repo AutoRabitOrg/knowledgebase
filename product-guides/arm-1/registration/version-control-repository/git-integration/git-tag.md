@@ -14,12 +14,12 @@ GIT tags are a simple and effective way to keep track of your code's different v
     \
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Go to the **Tags** tab and click on the **Create** button.\
     \
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. In the **Create Tag** screen, select the **VC branch** from the drop-down. The branch that was registered with AutoRABIT for your Version Control repository will be populated here.
 6.  Use the **Search** (![](<../../../../../.gitbook/assets/image (665).png>)) button next to the Revision field to pull a list of revisions from which you can choose which revision to use in the deployment.\
     \

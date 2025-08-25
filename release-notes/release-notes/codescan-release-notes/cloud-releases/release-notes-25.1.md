@@ -18,6 +18,120 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.7&#x20;
+
+#### Release Date Aug 24, 2025&#x20;
+
+&#x20;
+
+### Summary:&#x20;
+
+CodeScan 25.1.7 is comprised of the following 5 components:&#x20;
+
+* 1 New Feature&#x20;
+* 4 Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+&#x20;
+
+### New Features:&#x20;
+
+1. Enable/Disable feature of Mapping to multiple orgs from one SAML Connection at instance level&#x20;
+
+{% hint style="info" %}
+_NOTE:  This feature is only available to customers who have a dedicated Instance.  It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
+{% endhint %}
+
+This new feature enables customers to map to multiple orgs from one SAML Connection at their instance level&#x20;
+
+Verified the below scenarios for  SAML users, and all scenarios are working as expected.&#x20;
+
+1. Verified the User when Codescan idp-group-mapping is disabled user is able to login through SSO when the Group synchronisation and IDP mapping is not used.&#x20;
+2. Verified the User when Codescan idp-group-mapping is disabled user is able to login through SSO when the Group synchronisation and IDP mapping is used.&#x20;
+3. Verified the User when Codescan idp-group-mapping is enabled user is able to login through SSO when the Group synchronisation and IDP mapping is used.&#x20;
+4. Verified the User when Codescan idp-group-mapping is enabled user is able to login through SSO when the Group synchronisation and IDP mapping is not used.&#x20;
+5. Validated the SAML connection creation and login through SSO in the created Org&#x20;
+6. Validated the SAML connection creation and login through SSO with the other Org&#x20;
+7. Create a new user and check the login through SSO with the same above SAML config&#x20;
+8. Verified the IDP group mapping where the user is mapped to the organization where SAML connection is created.&#x20;
+
+{% hint style="info" %}
+_NOTE:  This feature needs to be enabled in customers’ organizations.  It is NOT available by default_&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+_NOTE:  This feature is only available to customers who have a dedicated Instance.  It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
+{% endhint %}
+
+&#x20;
+
+### Fixes&#x20;
+
+1. **Fixed Broken Documentation Link in Status Module**&#x20;
+
+It has been reported that the "Status" module in all CodeScan application contains a broken documentation link: \
+[https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle](https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle)&#x20;
+
+&#x20;\
+This link provides users with detailed information on the lifecycle of issue statuses but currently leads to a non-existent page. The correct, working link should be: \
+[https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status)&#x20;
+
+This fix remediates this issue in full&#x20;
+
+Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page. \
+The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status) &#x20;
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="483"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="486"><figcaption></figcaption></figure>
+
+2. **URIs are not Valid in decorated SARIF output**
+
+It has been reported that the URIs are not valid in the SARIF file due to spaces.  To remediate, we added logic to make certain that they are escaped.
+
+Verified that users are now able to see valid URIs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="305"><figcaption></figcaption></figure>
+
+3. **Fixed issue where Scheduled analyses are not running for Sf projects and its comparison branches**
+
+Several customers have reported that their daily scheduled analyses were not running for Salesforce integration projects and their corresponding comparison branches within the same project.  We determined that the Scheduled Jobs were getting stuck, even though they were consuming memory and CPU.  Further, we identified that the root cause of the issue stemmed from changes made in the previous release (25.1.6), and that scheduled jobs on our AWS infrastructure were running into “out-of-memory” issues.
+
+This fix remediates this issue in full.
+
+Verified the fix and validated that the scheduled jobs are now running without issue (as expected)
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+
+4. **Fixed issue with deleting branches in projects using Salesforce Integration**
+
+We uncovered that if the following steps were performed…
+
+1\. Launch and login to the codescan application and be on any org\
+2\. Create salesforce project\
+3\. Create comparison and standard branch analysis\
+4\. Try deleting comparison branch
+
+…then users receive an error message indicating that an “unknown error occurred.”
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt="" width="353"><figcaption></figcaption></figure>
+
+This issue has been fully remediated in this release.
+
+We have verified the fix and have validated that the following scenarios are all working as expected:\
+\
+1\. Verified salesforce comparison branch deletion.\
+2\. Verified creation of project with user having (create and analyize project permission)\
+3\. renaming of project branch\
+4\. ALM project tags working as expected.
+
+***
+
 ## CodeScan Release 25.1.6
 
 **Release Date: 3 August 2025**
@@ -62,26 +176,26 @@ Verified Categories for Project Types in the following scenarios, and have verif
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
     &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -100,18 +214,18 @@ Verified this enhancement via validating the below scenarios
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  If no file is selected during import, an error occurs.\
 
 
@@ -851,7 +965,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -879,19 +993,19 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -899,7 +1013,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -907,7 +1021,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 Some users were reporting that they were unable to scroll down in the quality profiles section in project settings.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been remediated in this release.
 
@@ -917,7 +1031,7 @@ We have verified that with this fix, users are able to scroll down in the Qualit
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Fixed Deprecation Warning associated with sonar.login**
 
@@ -1571,7 +1685,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

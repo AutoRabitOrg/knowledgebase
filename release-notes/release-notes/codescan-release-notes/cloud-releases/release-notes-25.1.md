@@ -20,7 +20,7 @@ Please note that there are updated requirements for customers who are using one 
 
 ## CodeScan Release 25.1.7.1
 
-**Release Date: Aug 27, 2025**&#x20;
+**Release Date: 27 August 2025**&#x20;
 
 ### Summary:&#x20;
 
@@ -36,10 +36,10 @@ Component details are listed in their corresponding sections within this documen
 
 Previously, users were able to register and log in without verifying their email.  We recognize that this could potentially lead to the creation of fake or fraudulent accounts.&#x20;
 
-In this release, we have implemented an email verification via unique links to a one-time password (OTP).  Additionally, we have added logic which restricts access to functionalities for unverified accounts.&#x20;
+In this release, we have implemented an email verification via unique links to a one-time password (OTP).  Additionally, we have added logic that restricts access to functionalities for unverified accounts.&#x20;
 
 {% hint style="info" %}
-NOTE:  This maintenance release is only being deployed to customers on our AU SaaS Cloud instance.  All other customers will receive this update as part of the 25.1.8 release, which is scheduled for Sunday September 7th.&#x20;
+NOTE:  This maintenance release is only being deployed to customers on our AU SaaS Cloud instance.  All other customers will receive this update as part of the 25.1.8 release, which is scheduled for Sunday, September 7, 2025.&#x20;
 {% endhint %}
 
 

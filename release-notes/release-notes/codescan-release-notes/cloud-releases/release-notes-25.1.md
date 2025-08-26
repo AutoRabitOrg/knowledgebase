@@ -97,8 +97,6 @@ This fix remediates this issue in full.
 
 Verified the fix and validated that the scheduled jobs are now running without issue (as expected).
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
-
 <figure><img src="../../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **Fixed issue with deleting branches in projects using Salesforce Integration**

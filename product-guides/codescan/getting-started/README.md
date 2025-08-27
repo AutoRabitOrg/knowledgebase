@@ -17,7 +17,7 @@ Follow the steps below to sign up and log in to CodeScan Cloud:
 Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/sessions/new?return to=/%2F**](https://app-eu.codescan.io/sessions/new?returnto=/%2F).
 {% endhint %}
 
-3. Click on **`Log in with AuthO`**.
+3. Click on **`Log in with AuthO or an Authenticator app`**.
 4. Go to the **`Sign Up`** tab.
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="279"><figcaption></figcaption></figure>
@@ -35,7 +35,7 @@ Similarly, edit the URL for the _EU_ region to [**https://app-eu.codescan.io/ses
 **And you're in! Enjoy!**
 
 {% hint style="info" %}
-**Note:** When enabling **Two-Factor Authentication**, you will be required to download the **Auth0 Guardian** app to your mobile device. You will be prompted for this when you first log in. You cannot make changes to your two-factor authentication after signup. Please contact [support@codescan.io](https://support@codescan.io/) to make changes to your two-factor authentication.
+**Note:** When enabling **Two-Factor Authentication**, you will be required to download the **Auth0 Guardian** or another authenticator app to your mobile device. You will be prompted for this when you first log in. You cannot make changes to your two-factor authentication after signup. Please contact [support@codescan.io](https://support@codescan.io/) to make changes to your two-factor authentication.
 {% endhint %}
 
 ### Two-Factor Authentication (MFA/2FA) <a href="#twofactor-authentication-mfa2fa" id="twofactor-authentication-mfa2fa"></a>

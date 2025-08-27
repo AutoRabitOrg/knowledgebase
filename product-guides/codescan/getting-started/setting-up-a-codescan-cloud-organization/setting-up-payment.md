@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Setting up Payment
 
 {% hint style="info" %}

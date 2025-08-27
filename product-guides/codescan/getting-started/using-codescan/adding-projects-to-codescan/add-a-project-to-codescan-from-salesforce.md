@@ -1,5 +1,9 @@
 # Add a project to CodeScan from Salesforce
 
+{% hint style="info" %}
+**PLEASE NOTE:**  As of September 2025, Salesforce has started to enforce restrictions on the use of Connected Apps.  These changes impact AutoRABIT products that connect to your Salesforce environments using the OAuth 2.0 Client Credentials Flow (including CodeScan).  [Please see here about how to adjust to these changes.](https://knowledgebase.autorabit.com/fundamentals/announcements/preparing-for-salesforce-connected-app-usage-restrictions)
+{% endhint %}
+
 This document guides how to add a Salesforce project to your [CodeScan cloud](https://www.codescan.io/products/cloud/) account and run the analysis.
 
 1. Login into your CodeScan account.

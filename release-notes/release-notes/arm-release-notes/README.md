@@ -1,5 +1,26 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
+
+**Release Date**: Aug 31, 2025
+
+**Highlights**: Fixes and improvements across permission sets, profile comparison, reports accuracy, and SSO configuration.
+
+#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **Permission Set – Deleted Tags Displayed**\
+  Resolved an issue where deleted tags appeared under Permission Sets when committing with ServicePresenceStatus. Support for ServicePresenceStatusAccess has been added to Permission Sets, and necessary code changes were made to ensure correct behavior.\
+
+* **Profile Compare – Custom Permissions Not Visible**\
+  Fixed an issue where the Profile Compare feature in the Deployment module did not show custom permissions for orgs. Updated UI logic ensures that deltas for custom permissions now display correctly.\
+
+* **Reports – Discrepancy in Deployment Counts**\
+  Addressed a mismatch where reports displayed an incorrect deployment count when using custom range filters. Deployment counts are now consistent with actual values.\
+
+* **SSO Configuration – Empty Metadata File**\
+  Corrected an issue where downloading the AutoRABIT SSO Metadata XML returned an empty file. The file now downloads with the correct default content.\
+
+
 ## ARM Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 24 August 2025**

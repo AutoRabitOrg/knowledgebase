@@ -1,5 +1,29 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.1.8 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** Sept 3, 2025
+
+**Alerts**
+
+Fixed an issue that occasionally prevented some alerts from appearing. The Alerts section now consistently displays the full list of alerts.
+
+**Backup Schedule**
+
+Resolved an issue that impacted backup scheduling. Backup schedules now display accurately and run as expected.
+
+**Archive Processing**
+
+Addressed an issue related to a legacy dependency. Archive processing is now fully reliable and unaffected by this component.
+
+**Archive Job Processing – ContentVersion Handling**
+
+Fixed an issue that caused inconsistencies when handling ContentVersion records during deletion. Archive job processing now works correctly and without discrepancies.
+
+**Archive Job Processing – Memory Handling**
+
+Improved memory management during archive job execution. Archive jobs now run reliably without failures related to memory usage.
+
 ## Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** August 20, 2025

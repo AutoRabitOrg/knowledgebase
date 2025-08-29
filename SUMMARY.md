@@ -20,6 +20,7 @@
     * [Version Control FAQs](fundamentals/faq/arm-faqs/version-control-faqs.md)
     * [nCino FAQs](fundamentals/faq/arm-faqs/ncino.md)
     * [Retention Policy](fundamentals/faq/arm-faqs/retention-policy.md)
+    * [Salesforce Connected App Restrictions & AutoRABIT](fundamentals/faq/arm-faqs/salesforce-connected-app-restrictions-and-autorabit.md)
   * [CodeScan-FAQs](fundamentals/faq/codescan-faqs/README.md)
     * [General](fundamentals/faq/codescan-faqs/general/README.md)
       * [Best Practices](fundamentals/faq/codescan-faqs/general/best-practices.md)

@@ -18,13 +18,13 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
-## CodeScan Release 25.1.7.1
+## CodeScan Release 25.1.8
 
-**Release Date: 27 August 2025**&#x20;
+**Release Date: 31 August 2025**&#x20;
 
 ### Summary:&#x20;
 
-CodeScan 25.1.7.1 is comprised of the following 1 component:&#x20;
+CodeScan 25.1.8 is comprised of the following 1 component:&#x20;
 
 * 1 Fix&#x20;
 
@@ -32,17 +32,36 @@ Component details are listed in their corresponding sections within this documen
 
 ### Fixes&#x20;
 
-1. Fixed issue where CodeScan did not impose Verification logic on email signup&#x20;
+1. Fixed issue where CodeScan Project Analysis jobs getting stuck at "finalizing" stage.&#x20;
 
-Previously, users were able to register and log in without verifying their email.  We recognize that this could potentially lead to the creation of fake or fraudulent accounts.&#x20;
+Previously, CodeScan project analysis jobs were getting stuck at "finalizing" stage, and not returning the result to GitHub PR, thus blocking all PRs.&#x20;
 
-In this release, we have implemented an email verification via unique links to a one-time password (OTP).  Additionally, we have added logic that restricts access to functionalities for unverified accounts.&#x20;
+The root cause of the issue was that db-pool-limit-reached was occurring.  This fix remediates this issue.
 
-{% hint style="info" %}
-NOTE:  This maintenance release is only being deployed to customers on our AU SaaS Cloud instance.  All other customers will receive this update as part of the 25.1.8 release, which is scheduled for Sunday, September 7, 2025.&#x20;
-{% endhint %}
+After applying the fix, we validated the fix by creating jobs with alternating pass/fail quality gate statuses. Once the fix had been applied, we observed all jobs completing successfully (without getting stuck)\
+\
+We also verified the below Audit log cases:
 
+Verified the category "PROJECT\_ANALYSIS" and checked the below details that are stored in the logs all are appearing as expected.
 
+* Project Names
+* Project Keys
+* Lines of code count - split by ncloc languages
+* Created date
+* First analysis date
+
+Also, Verified the category Quality Gates and checked the below details which are stored in the logs all are appearing as expected.
+
+* operation": "UPDATE",
+* propertyValue": "Failed/Passed”
+* createdAt": “\*\*\*\*\*”
+* componentKey
+* componentName\
+  componentUuid
+
+<figure><img src="../../../../.gitbook/assets/image (2001).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2002).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 

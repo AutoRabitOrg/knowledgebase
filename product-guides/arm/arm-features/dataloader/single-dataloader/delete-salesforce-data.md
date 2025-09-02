@@ -40,12 +40,11 @@ The following articles describe using **Single Dataloader** to delete data from 
 15. Ensure all required fields are mapped, then click **`Next`**.
 16. On the **`Process Summary`** screen:
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1) (1).png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2.png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
 
 * Name the process/job.
 * Select or create a **Category**.
 * Review the Object, Type (**Delete**), and impacted Records.
-* Enable **Use Bulk API** for large datasets. This uses REST principles and parallelism for better performance.
 
 17. Schedule tasks as **Daily**, **Weekly**, or **On-demand**.
 18. Click **`Save`** to save and run later.
@@ -56,15 +55,14 @@ The following articles describe using **Single Dataloader** to delete data from 
 
 21. Choose criteria for running the Dataloader job:
 
-| Configurations   | Descriptions                                                                                                                                         |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Use Bulk API** | Optimized for high-volume operations. Supports parallel and serial execution. For delete operations on the same org, **Serial Mode** is recommended. |
-| **Batch Size**   | Used when Bulk API is not selected. Ideal for small-volume real-time processing.                                                                     |
-| **Use UTF-8**    | Use UTF-8 encoding unless data contains non-English alphabets.                                                                                       |
+| Configurations | Descriptions                                                                     |
+| -------------- | -------------------------------------------------------------------------------- |
+| **Batch Size** | Used when Bulk API is not selected. Ideal for small-volume real-time processing. |
+| **Use UTF-8**  | Use UTF-8 encoding unless data contains non-English alphabets.                   |
 
 22. Click **`Run`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (87) (1) (1).png" alt="Run confirmation screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/3.png" alt="Run confirmation screen" width="563"><figcaption></figcaption></figure>
 
 23. The **`Results of Last Run`** section shows live updates of successful and failed record deletions. You can view/download records in CSV format.
 

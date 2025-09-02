@@ -1,5 +1,32 @@
 # nCino Release Notes 25.3
 
+## nCino + DL - Release 25.3.8
+
+**Release Date:** August 31, 2025
+
+#### Data Migration Flow Fix <a href="#data-migration-flow-fix" id="data-migration-flow-fix"></a>
+
+Resolved an issue caused by an unwanted forward slash that disrupted the complete data migration flow in both nCino and DataLoader. Customers must re-run the affected jobs to process data successfully.
+
+## nCino + DL - Release 25.3.7
+
+**Release Date:** August 24, 2025
+
+#### Uber Jar Dependency <a href="#uber-jar-dependency" id="uber-jar-dependency"></a>
+
+The dependency on the **uber jar** has been removed. Bulk data operations are now handled programmatically in the backend, improving efficiency, stability, and maintainability of the system.
+
+#### Handling Source ID <a href="#handling-source-id" id="handling-source-id"></a>
+
+A **Salesforce discrepancy** previously prevented source IDs from being fetched correctly. This issue has been resolved with a code fix, ensuring accurate retrieval and consistency of source IDs.
+
+#### ORG-Level Permissions <a href="#org-level-permissions" id="org-level-permissions"></a>
+
+A code fix has been applied to enforce correct permission requirements:
+
+* **Source ORGs** now only require **read access**.
+* **Destination ORGs** require **write access**.
+
 ## nCino + DL - Release 25.3.6 <a href="#title-text" id="title-text"></a>
 
 **Release Date:** Aug 17, 2025

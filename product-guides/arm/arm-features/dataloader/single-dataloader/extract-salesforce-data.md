@@ -52,7 +52,6 @@ The following articles describe using **Single Dataloader** to extract data from
     * View the operation **`Type`** (**`Extract`**).
     * View the number of extracted **`Records`**.
     * **`Limit`** the export row count. Use this option to retrieve some rows from your export results.&#x20;
-    * **`Use Bulk API`**.About Bulk APIThe **Bulk API** is based on REST principles and is optimized for inserting, updating, and deleting large data sets. You can use the **Bulk API** to process jobs in **serial** or **parallel** mode. Processing batches serially means running them one after another, while processing batches in parallel means running multiple batches simultaneously. When you run a bulk API job, processing more batches in parallel means giving that job a higher degree of parallelism, providing better overall data throughput.
 15. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 16. Finally, click **`Save`** to save your task and run it later.
 

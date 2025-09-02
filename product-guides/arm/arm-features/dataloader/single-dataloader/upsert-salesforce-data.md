@@ -39,7 +39,7 @@ The following articles describe using **Single Dataloader** to upsert data into 
 
 13. Confirm all required fields are mapped, then click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (69) (1) (1).png" alt="Process summary screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/6 (4).png" alt="Process summary screen"><figcaption></figcaption></figure>
 
 ### Process Summary Options
 
@@ -49,7 +49,6 @@ The following articles describe using **Single Dataloader** to upsert data into 
 * **Object:** Displays the object being upserted.
 * **Operation Type:** Displays **Upsert**.
 * **Impacted Records:** Shows record count.
-* **Use Bulk API:** Enable for large datasets for improved throughput.
 
 You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **`Save`** to store and run later.
 
@@ -60,18 +59,16 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 
 ### Dataloader Configuration Options
 
-| Configuration                      | Description                                                                                                                             |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Use Bulk API**                   | Optimized for large datasets; supports serial or parallel processing. Recommended to use **Serial Mode** if other jobs are in progress. |
-| **Batch Size**                     | Applies if Bulk API is disabled. Based on SOAP and better for smaller datasets.                                                         |
-| **Disable workflow rules**         | Deactivates workflows during operation and reactivates post-process.                                                                    |
-| **Disable Validation Rules**       | Deactivates validation rules during the process and re-enables afterward.                                                               |
-| **Insert/Update with null values** | Allows null value updates in destination org.                                                                                           |
-| **Use UTF-8 file encoding**        | Required for data containing English alphabets. Disable for non-English content.                                                        |
+| Configuration                      | Description                                                                      |
+| ---------------------------------- | -------------------------------------------------------------------------------- |
+| **Disable workflow rules**         | Deactivates workflows during operation and reactivates post-process.             |
+| **Disable Validation Rules**       | Deactivates validation rules during the process and re-enables afterward.        |
+| **Insert/Update with null values** | Allows null value updates in destination org.                                    |
+| **Use UTF-8 file encoding**        | Required for data containing English alphabets. Disable for non-English content. |
 
 22. Click **`Run`** to begin.
 
-<figure><img src="../../../../../.gitbook/assets/image (71) (1) (1).png" alt="Click Run to initiate upsert job" width="494"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/7 (3).png" alt="Click Run to initiate upsert job" width="375"><figcaption></figcaption></figure>
 
 ### Results Monitoring
 

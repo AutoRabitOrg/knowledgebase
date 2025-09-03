@@ -39,7 +39,7 @@ The following articles describe using **Single Dataloader** to upsert data into 
 
 13. Confirm all required fields are mapped, then click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/6 (4).png" alt="Process summary screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/6 (4) (1).png" alt="Process summary screen"><figcaption></figcaption></figure>
 
 ### Process Summary Options
 

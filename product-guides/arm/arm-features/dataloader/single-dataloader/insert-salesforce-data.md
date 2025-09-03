@@ -65,7 +65,7 @@ The following articles describe using the **Single Dataloader** to insert data i
 
 23. Click **`Run`**.
 
-<figure><img src="../../../../../.gitbook/assets/1.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/1 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 24. The **`Results of Last Run`** section shows the number of successful or failed records. The values in this field are updated dynamically while the job is still running. You can view the records or download them to your local system. The records are generated in CSV format.
 

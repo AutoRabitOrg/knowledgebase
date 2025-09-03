@@ -17,18 +17,18 @@
 
 
 
-    ![](<../../../.gitbook/assets/1 (1).png>)
+    ![](<../../../.gitbook/assets/1 (1) (2).png>)
 7. Click on the “NEW CONFIG” button to initiate the config creation.
 8.  Now, the flow will navigate to the “Object Info” section of the config creation.
 
 
 
-    ![](<../../../.gitbook/assets/2 (1).png>)
+    ![](<../../../.gitbook/assets/2 (1) (2).png>)
 9.  Select the required objects to continue with the rules creation.
 
 
 
-    ![](<../../../.gitbook/assets/3 (1).png>)
+    ![](<../../../.gitbook/assets/3 (1) (2).png>)
 10. If there any rules available created under that object, all the available rules will come selected as depicted in the above screen.
 11. If any object doesn’t hold the rules, the following “No masking rule” will be displayed under the “Selected Masking Rules” column.
     1. **Note: -** All the available selected rules will be displayed in a coma separated fashion under the “Selected Masking Rules”.
@@ -36,18 +36,18 @@
 
 
 
-    ![](../../../.gitbook/assets/4.png)
+    ![](<../../../.gitbook/assets/4 (1).png>)
 13. Click on the View icon to view the masking rules.
 
 
 
-    ![](../../../.gitbook/assets/5.png)
+    ![](<../../../.gitbook/assets/5 (1).png>)
 14. Observe the rule and click cancel or anywhere outside the “Masking Rule” window to close the window.
 15. Every selected object should have at least one rule associated to it. Observe the following screen flows.
 
 
 
-    ![](../../../.gitbook/assets/6.png)
+    ![](<../../../.gitbook/assets/6 (4).png>)
 16. Clicking on ”Next” would show the following message prompting to create at least one rule for the selected object.
 
 

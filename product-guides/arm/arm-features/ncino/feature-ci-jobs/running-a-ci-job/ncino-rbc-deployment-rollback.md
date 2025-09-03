@@ -28,13 +28,13 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 <figure><img src="../../../../../../.gitbook/assets/image (55) (3).png" alt=""><figcaption></figcaption></figure>
 
 2. Enter the required information to configure the CI Job creation.
-3. In the **Preview and Save** section, users can toggle the button to enable the rollback option.
+3. In the **Job Settings** section, users can toggle the button to enable the rollback option.
 
-<figure><img src="../../../../../../.gitbook/assets/image (56) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
 
 4. Initially, the slider is disabled. Users must toggle the button to turn on the '**Enable rollback**' option, as shown in the following picture.
 
-<figure><img src="../../../../../../.gitbook/assets/image (57) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
 
 5. On enabling the '**Enable rollback**' option, users can continue to '**Save**' the job.
 6. While enabling the '**Enable rollback**' option, users can click on the question mark and read the message: “Please note that the data of this rollback will be retained for a period of 30 days and will be deleted as the retention period elapses.”

@@ -17,14 +17,14 @@ Lookups can be applied during **Insert**, **Update**, or **Upsert** operations i
 When performing an **Insert** task and you’ve uploaded your CSV file, proceed to the **Fields Mapping** step. There, you'll find a **"Lookup via"** checkbox.
 
 **Example:**\
-To map **Account Name** to **Account ID** in Salesforce:
+To map **First Name** to **Account ID** in Salesforce:
 
 * Click the **"Lookup via"** checkbox.
-* Select **'Account Name'** as the field to search by.
+* Select **'First Name'** as the field to search by.
 
 ARM Data Loader will search for the **Account ID** using the provided **Account Name** and populate the correct IDs expected by Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/image (89) (1) (1).png" alt="Lookup via field mapping in Data Loader"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Using DL With Lookups.png" alt=""><figcaption></figcaption></figure>
 
 ### More Lookup Options <a href="#more-lookup-options" id="more-lookup-options"></a>
 

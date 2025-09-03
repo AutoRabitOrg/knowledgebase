@@ -55,7 +55,7 @@ The following articles describe using **Single Dataloader** to extract data from
 15. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 16. Finally, click **`Save`** to save your task and run it later.
 
-<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/8 (4).png" alt=""><figcaption></figcaption></figure>
 
 17. Your task is shown on top of the lists on the **`Dataloader Summary`** screen.
 18. Click **`Run`** to start the dataloader immediately before the scheduled time.

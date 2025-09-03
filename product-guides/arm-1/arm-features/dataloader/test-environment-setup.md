@@ -53,7 +53,7 @@ Step-By-Step Guide:
     * For each object (e.g., **Opportunity**), click the **Mappings** icon.
 
     <figure><img src="../../../../.gitbook/assets/18 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-13. Auto-Map Fields – Ancestor Object (Screen 19)
+13. Auto-Map Fields – Ancestor Object
 
     * In **Create Mapping: Opportunity**, click **Auto Map**.
     * Verify mappings and manually adjust where required.
@@ -96,7 +96,7 @@ Step-By-Step Guide:
     * Review details and close the summary.
 
     <figure><img src="../../../../.gitbook/assets/24 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
-19. #### Run the Test Environment Job (Screen 25)
+19. #### Run the Test Environment Job
 
     * From the job list, click the **Run icon** under **Actions** for the created job.
 
@@ -207,7 +207,7 @@ Step-By-Step Guide:
     * Click **Apply** to filter or **Reset** to clear all selections.
 
     <figure><img src="../../../../.gitbook/assets/42 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-35. #### Manage Columns (Screen 43)
+35. #### Manage Columns
 
     * Click **Columns** to customize the table view.
     * Additional columns can be included in the view by selecting the desired options from the **Columns** menu. Columns that are not relevant can be deselected to keep the view focused on essential information.
@@ -283,7 +283,7 @@ Step-By-Step Guide:
     * From **Bulk Actions**, click **Edit** to open the bulk group editor.
 
     <figure><img src="../../../../.gitbook/assets/49.2 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-43. Bulk Edit Job Groups (Screen 49.3)
+43. Bulk Edit Job Groups
 
     * Use the **Edit Job Group – All** dialog to update the **Category** (group) for many jobs at once.
     * Optional: use **Search** to filter the list; navigate with **Previous/Next** or the page size selector.

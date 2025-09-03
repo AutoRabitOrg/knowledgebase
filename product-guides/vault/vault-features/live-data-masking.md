@@ -36,7 +36,7 @@
 
 
 
-    ![](<../../../.gitbook/assets/4 (1).png>)
+    ![](<../../../.gitbook/assets/4 (1) (2).png>)
 13. Click on the View icon to view the masking rules.
 
 

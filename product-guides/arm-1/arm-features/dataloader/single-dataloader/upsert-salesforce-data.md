@@ -2,6 +2,142 @@
 
 **Upsert** is a combination of Updating and Inserting. If a record in a file matches an existing record, the existing record is updated with the values in your file. The record is created as a new entity if no match is found.
 
+Step-By-Step Guide:
+
+1. **Create Upsert Job**
+   * From the **Dataloader – Basic** page, select **Create new job**.
+   *   Choose **Upsert** as the operation type.
+
+       <figure><img src="../../../../../.gitbook/assets/1 - Upsert.png" alt=""><figcaption></figcaption></figure>
+2. #### Choose Sandbox
+   * In the **Create upsert process** window, select a **Salesforce Org**.
+   *   Provide details such as **Environment, Login URL, and Username**.
+
+       <figure><img src="../../../../../.gitbook/assets/2 - Upsert.png" alt=""><figcaption></figcaption></figure>
+3. #### Fetch Objects
+   * After entering the sandbox details, click **Login and Fetch Objects**.
+   *   This retrieves the list of objects available for the upsert operation.
+
+       <figure><img src="../../../../../.gitbook/assets/3 - Upsert.png" alt=""><figcaption></figcaption></figure>
+4. #### Select Object&#x20;
+   * From the fetched list, choose the required object (e.g., **Contact**).
+   *   Click **Next** to proceed with field mapping.
+
+       <figure><img src="../../../../../.gitbook/assets/4 - Upsert (1).png" alt=""><figcaption></figcaption></figure>
+5. **Upload File for Upsert**
+   *   In the **Create upsert process** screen, select **Choose File** or drag and drop to upload a CSV file.
+
+       <figure><img src="../../../../../.gitbook/assets/5 - Upsert.png" alt=""><figcaption></figcaption></figure>
+   * The file will be used for field mapping against Salesforce objects.
+6. #### Upload in Progress
+   *   The uploaded CSV file appears with a **Pending** status.
+
+       <figure><img src="../../../../../.gitbook/assets/6 - Upsert.png" alt=""><figcaption></figcaption></figure>
+   * Additional files can be uploaded, or existing ones removed if required.
+7. #### Upload Completed
+   *   Once processed, the file shows a **Completed** status.
+
+       <figure><img src="../../../../../.gitbook/assets/7 - Upsert.png" alt=""><figcaption></figcaption></figure>
+   * A confirmation message indicates the number of impacted records.
+8. #### Field Mapping with AutoMap
+   *   Uploaded file fields appear under **Source header** with sample data.
+
+       <figure><img src="../../../../../.gitbook/assets/8 - Upsert.png" alt=""><figcaption></figcaption></figure>
+   * Enable **AutoMap** to automatically align fields with Salesforce.
+   * Manually select fields if AutoMap does not resolve all mappings.
+9. #### Field Mapping Filters
+   *   Use the filter option to view **All**, **Mapped**, or **Unmapped** fields.
+
+       <figure><img src="../../../../../.gitbook/assets/9 - Upsert.png" alt=""><figcaption></figcaption></figure>
+   * This helps quickly validate field mappings before proceeding.
+10. **Lookup Mapping Initiation**
+    *   In **Fields Mapping**, select **Lookup via** for fields such as `AccountId`.
+
+        <figure><img src="../../../../../.gitbook/assets/10 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This enables referencing related Salesforce records using specific field values.
+11. **Configure Lookup Options**
+    *   After enabling **Lookup via**, select the Salesforce object and field to be used for matching records (e.g., Account → LastName).
+
+        <figure><img src="../../../../../.gitbook/assets/11 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Additional conditions can be set:
+      * **Use first match if multiple results** – prioritizes the first match when more than one record is found.
+      * **Insert if not found** – creates a new record if no matching record exists.
+    * These options provide flexibility in handling relationships and data consistency during the upsert process.
+12. #### Select Lookup Field
+    *   A dropdown displays available Salesforce fields for the selected object.
+
+        <figure><img src="../../../../../.gitbook/assets/12 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Pick the desired field (e.g., `LastName`, `FirstName`) to complete the lookup mapping.
+13. #### Completed Lookup Mapping
+    *   The field is now mapped with **Lookup via** enabled.
+
+        <figure><img src="../../../../../.gitbook/assets/13 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * The selected Salesforce field is shown, along with the applied lookup conditions.
+14. **Schedule Configuration – No Schedule**
+    *   In the **Schedule** step, select **No Schedule** to run the upsert job manually.
+
+
+
+        <figure><img src="../../../../../.gitbook/assets/15 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * The job will only execute when triggered directly.
+15. #### Schedule Configuration – Daily
+    *   Select **Daily** to schedule the job for execution every day.
+
+        <figure><img src="../../../../../.gitbook/assets/16 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Configure the **start date** and choose to run at a **specific time** or at a **fixed interval**.
+    * Set the **end condition**: Never, a fixed number of occurrences, or a specific end date.
+16. #### Schedule Configuration – Weekly
+    *   Select **Weekly** to schedule the job on specific days of the week.
+
+        <figure><img src="../../../../../.gitbook/assets/17 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Configure the **start date** and define the execution time.
+    * Set the **end condition** similar to daily scheduling.
+17. **Process Details**
+    *   Review the object, type of operation, and number of records to be processed.
+
+        <figure><img src="../../../../../.gitbook/assets/18 - Upsert (1).png" alt=""><figcaption></figcaption></figure>
+    * Confirm the Salesforce connection and enter a process name
+    * Optionally, assign the process to a **Job Group** for better organization.
+18.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Upsert** is a combination of Updating and Inserting. If a record in a file matches an existing record, the existing record is updated with the values in your file. The record is created as a new entity if no match is found.
+
 The following articles describe using **Single Dataloader** to upsert data into Salesforce via a CSV file.
 
 1. Log in to your ARM account.

@@ -98,7 +98,96 @@ Step-By-Step Guide:
         <figure><img src="../../../../../.gitbook/assets/18 - Upsert (1).png" alt=""><figcaption></figcaption></figure>
     * Confirm the Salesforce connection and enter a process name
     * Optionally, assign the process to a **Job Group** for better organization.
-18.
+18. **Run Job**
+    * From the Dataloader **Basic** page, select the **Run** (play) icon under **Actions** for the required job.
+    *   The **Run Configuration** window opens to adjust run options before execution.
+
+        <figure><img src="../../../../../.gitbook/assets/20 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Click **Run** to start the job or **Cancel** to exit without running.
+19. **Run Configuration**
+
+    *   The **Run Configuration** window allows toggling options such as:
+
+        * **Disable workflow rules**
+        * **Disable validation rules**
+        * **Insert/update with null values**
+        * **Use UTF-8 encoding for file operations**
+
+        <figure><img src="../../../../../.gitbook/assets/21 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Optionally, choose a different data CSV file if required.
+    * Confirm with **Run** to execute the job.
+    * Dataloader Configuration Options
+
+    | Configuration                      | Description                                                                      |
+    | ---------------------------------- | -------------------------------------------------------------------------------- |
+    | **Batch Size**                     | Applies if Bulk API is disabled. Based on SOAP and better for smaller datasets.  |
+    | **Disable workflow rules**         | Deactivates workflows during operation and reactivates post-process.             |
+    | **Disable Validation Rules**       | Deactivates validation rules during the process and re-enables afterward.        |
+    | **Insert/Update with null values** | Allows null value updates in destination org.                                    |
+    | **Use UTF-8 file encoding**        | Required for data containing English alphabets. Disable for non-English content. |
+20. **Upload New Data File**
+    * Select **Choose Different Data CSV File** to upload an alternate dataset.
+    *   The file upload section allows drag-and-drop or file selection.
+
+        <figure><img src="../../../../../.gitbook/assets/22 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Upon successful upload, a confirmation message displays the number of records impacted.
+21. **Job In Progress**
+    *   After execution begins, the job status updates to **In Progress** on the Dataloader Basic page.
+
+
+
+        <figure><img src="../../../../../.gitbook/assets/23 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This indicates that processing has started but is not yet complete.
+22. **Abort Job**
+    *   While a job is **In Progress**, select the **Abort** button under **Actions**.
+
+        <figure><img src="../../../../../.gitbook/assets/24 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This immediately halts the job execution.
+    * Aborting should only be used if the run was triggered incorrectly or requires stopping due to issues.
+23. **Validation / Workflow Rules Access**
+    *   From the **Dataloader Basic** page, select the **Validation Rules / Workflow Rules** icon under the _VR/WFR_ column for a specific job.
+
+        <figure><img src="../../../../../.gitbook/assets/26 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This opens a detailed view of validation and workflow rules configured for the selected Salesforce object.
+    * Use this option to verify if any rules may impact the execution of the job.
+24. **Validation Rules**
+    *   The **Validation Rules** tab lists all validation rules for the selected object.
+
+        <figure><img src="../../../../../.gitbook/assets/27 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Each rule displays its _name, previous state, current state, enable status,_ and any associated _errors_.
+    * This view ensures data consistency by confirming whether validation rules are active or disabled during job execution.
+25. **Workflow Rules**
+    *   The **Workflow Rules** tab provides details of all workflow rules for the selected object.
+
+        <figure><img src="../../../../../.gitbook/assets/28 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Each workflow rule displays its _name, previous state, current state,_ and _enable status_.
+    * Reviewing these rules allows proper alignment with business automation before running or scheduling jobs.
+26. **View Job Results**
+    *   From the **Dataloader Basic** page, select the **magnifying glass icon** under _Results of Last Run_ for the required job.
+
+        <figure><img src="../../../../../.gitbook/assets/29 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This opens the results view for the most recent execution.
+    * Use this option to quickly validate both success and failure counts before downloading detailed logs.
+27. **CSV Result View**
+    *   The **CSV Result** window displays record-level details from the last job execution.
+
+
+
+        <figure><img src="../../../../../.gitbook/assets/30 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Each row shows Salesforce fields such as _ID, AccountId, FirstName, LastName,_ and other mapped fields.
+    * This view helps confirm which records were processed successfully and identify any errors or mismatches.
+28. **View Failed Records**
+    *   From the **Dataloader Basic** page, select the **magnifying glass icon** under the _Failure_ column for the required job.
+
+        <figure><img src="../../../../../.gitbook/assets/31 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This opens the result view specifically for failed records in the last run.
+    * Use it to investigate why certain records failed while others succeeded.
+29. **CSV Failed Records**
+    *   The **CSV Result** window displays detailed information for failed records.
+
+        <figure><img src="../../../../../.gitbook/assets/32 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Fields such as _Id, AccountId, LastName, FirstName,_ and others are shown with their corresponding values.
+    * This view helps identify the root cause of failures by examining data values and constraints against validation or workflow rules.
 
 
 
@@ -191,16 +280,7 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 
 <figure><img src="../../../../../.gitbook/assets/image (70) (1) (1).png" alt="Run Dataloader job" width="563"><figcaption></figcaption></figure>
 
-### Dataloader Configuration Options
-
-| Configuration                      | Description                                                                                                                             |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Use Bulk API**                   | Optimized for large datasets; supports serial or parallel processing. Recommended to use **Serial Mode** if other jobs are in progress. |
-| **Batch Size**                     | Applies if Bulk API is disabled. Based on SOAP and better for smaller datasets.                                                         |
-| **Disable workflow rules**         | Deactivates workflows during operation and reactivates post-process.                                                                    |
-| **Disable Validation Rules**       | Deactivates validation rules during the process and re-enables afterward.                                                               |
-| **Insert/Update with null values** | Allows null value updates in destination org.                                                                                           |
-| **Use UTF-8 file encoding**        | Required for data containing English alphabets. Disable for non-English content.                                                        |
+###
 
 22. Click **`Run`** to begin.
 

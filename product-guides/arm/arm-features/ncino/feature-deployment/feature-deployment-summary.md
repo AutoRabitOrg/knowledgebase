@@ -110,7 +110,7 @@ Once you have fixed the deployment error or you like to re-trigger the deploymen
 
 Choose the **'Destination Org'** and the deployment criteria you want to set for the deployment process.
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1).png" alt="" width="512"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Feature Deployment - FD Summary.png" alt=""><figcaption></figcaption></figure>
 
 Once the deployment is re-triggered, a new iteration gets auto-generated with new deployment log details. If the deployment gets failed due to any metadata or data objects, such a report can be found on this page.&#x20;
 

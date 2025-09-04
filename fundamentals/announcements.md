@@ -7,6 +7,9 @@ Salesforce has announced changes to how uninstalled connected apps function in c
 ### What’s Changing in Salesforce
 
 1. Uninstalled connected apps restricted — New authorizations will be blocked unless specific permissions are granted.
+
+> **Note:** The existing connections between AutoRABIT and Salesforce are not going to be impacted by this change
+
 2. OAuth 2.0 Device Flow blocked — Not used by AutoRABIT.
 3. New permissions introduced:
    1. Approve Uninstalled Connected Apps
@@ -23,6 +26,7 @@ Salesforce has announced changes to how uninstalled connected apps function in c
 1. Identify AutoRABIT Connected Apps:
    1. Go to Setup → Connected Apps OAuth Usage in Salesforce.
    2. Locate entries linked to AutoRABIT.
+   3. If it’s not installed, there will be an Install button next to it. Click **Install**, then confirm on the subsequent page.
 2. Update User Permissions:
    1. If API Access Control is enabled: Assign “Use Any API Client.”
    2. If API Access Control is not enabled: Assign either “Approve Uninstalled Connected Apps” or “Use Any API Client.”

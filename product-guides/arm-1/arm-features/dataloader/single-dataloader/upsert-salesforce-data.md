@@ -144,31 +144,78 @@ Step-By-Step Guide:
         <figure><img src="../../../../../.gitbook/assets/24 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * This immediately halts the job execution.
     * Aborting should only be used if the run was triggered incorrectly or requires stopping due to issues.
-23. **Validation / Workflow Rules Access**
+23. **Edit Configuration**
+    *   From the Dataloader Basic page, select the ellipsis (three dots) next to the desired job.
+
+        <figure><img src="../../../../../.gitbook/assets/33 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Choose **Edit** to modify the existing configuration.
+    * Update object selections, field mappings, or process details as required.
+24. **Edit Process – Select Object**
+    *   In the Edit upsert process page, log in to the Salesforce Org and fetch available objects.
+
+        <figure><img src="../../../../../.gitbook/assets/34 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Select the object to be used for the process.
+    * Proceed to update field mappings or schedule settings.
+25. **Schedule Configuration (Screen 35)**
+    *   From the Dataloader Basic page, select the ellipsis (three dots) next to a job.
+
+        <figure><img src="../../../../../.gitbook/assets/35 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Choose **Schedule** to define when the process should run automatically.
+26. **Schedule Process (Screen 36)**
+    *   In the scheduling window, select the preferred type: **No Schedule, Daily, or Weekly**.
+
+        <figure><img src="../../../../../.gitbook/assets/36 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Confirm the schedule by clicking **Schedule**.
+27. **Delete Configuration (Screen 37)**
+    * From the Dataloader Basic page, select the ellipsis (three dots) for a specific job.
+    *   Choose **Delete** to remove the selected configuration permanently.
+
+        <figure><img src="../../../../../.gitbook/assets/37 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * This action cannot be undone and should only be used when the process is no longer required.
+28. **Delete Process Confirmation (Screen 38)**
+    *   A confirmation dialog appears before deleting the process.
+
+        <figure><img src="../../../../../.gitbook/assets/38 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Click **Delete** to proceed or **Cancel** to stop the action.
+29. **Clone Configuration (Screen 39)**
+    * From the Dataloader Basic page, select the ellipsis (three dots) next to the desired job.
+    *   Choose **Clone** to duplicate the selected configuration.
+
+        <figure><img src="../../../../../.gitbook/assets/39 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Review the process details and optionally choose a different data CSV file.
+    * Click **Clone** to create the duplicate job.
+30. **Clone Process (Screen 40)**
+    *   The Clone window displays process details including operation type, object name, and source sandbox.
+
+        <figure><img src="../../../../../.gitbook/assets/40 - Upsert.png" alt=""><figcaption></figcaption></figure>
+    * Enter or update the process name if needed.
+    * Select an alternate data CSV file if applicable.
+    * Confirm the duplication by clicking **Clone**.
+31. **Validation / Workflow Rules Access**
     *   From the **Dataloader Basic** page, select the **Validation Rules / Workflow Rules** icon under the _VR/WFR_ column for a specific job.
 
         <figure><img src="../../../../../.gitbook/assets/26 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * This opens a detailed view of validation and workflow rules configured for the selected Salesforce object.
     * Use this option to verify if any rules may impact the execution of the job.
-24. **Validation Rules**
+32. **Validation Rules**
     *   The **Validation Rules** tab lists all validation rules for the selected object.
 
         <figure><img src="../../../../../.gitbook/assets/27 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * Each rule displays its _name, previous state, current state, enable status,_ and any associated _errors_.
     * This view ensures data consistency by confirming whether validation rules are active or disabled during job execution.
-25. **Workflow Rules**
+33. **Workflow Rules**
     *   The **Workflow Rules** tab provides details of all workflow rules for the selected object.
 
         <figure><img src="../../../../../.gitbook/assets/28 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * Each workflow rule displays its _name, previous state, current state,_ and _enable status_.
     * Reviewing these rules allows proper alignment with business automation before running or scheduling jobs.
-26. **View Job Results**
+34. **View Job Results**
     *   From the **Dataloader Basic** page, select the **magnifying glass icon** under _Results of Last Run_ for the required job.
 
         <figure><img src="../../../../../.gitbook/assets/29 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * This opens the results view for the most recent execution.
     * Use this option to quickly validate both success and failure counts before downloading detailed logs.
-27. **CSV Result View**
+35. **CSV Result View**
     *   The **CSV Result** window displays record-level details from the last job execution.
 
 
@@ -176,13 +223,13 @@ Step-By-Step Guide:
         <figure><img src="../../../../../.gitbook/assets/30 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * Each row shows Salesforce fields such as _ID, AccountId, FirstName, LastName,_ and other mapped fields.
     * This view helps confirm which records were processed successfully and identify any errors or mismatches.
-28. **View Failed Records**
+36. **View Failed Records**
     *   From the **Dataloader Basic** page, select the **magnifying glass icon** under the _Failure_ column for the required job.
 
         <figure><img src="../../../../../.gitbook/assets/31 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * This opens the result view specifically for failed records in the last run.
     * Use it to investigate why certain records failed while others succeeded.
-29. **CSV Failed Records**
+37. **CSV Failed Records**
     *   The **CSV Result** window displays detailed information for failed records.
 
         <figure><img src="../../../../../.gitbook/assets/32 - Upsert.png" alt=""><figcaption></figcaption></figure>

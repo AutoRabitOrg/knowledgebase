@@ -13,6 +13,6 @@ Now users no longer have to worry about the possibility of '**External Unique ID
 ### Step-by-Step Guide
 
 1. Select the required values from the dropdown available on the ‘**Feature Deployment**’ section.
-2. If the ‘**external ID**’ is not available, then the following notification as highlighted will be displayed in the popup, when users click on ‘**Create Dataset & Deploy**’, as displayed in the following screenshot.
+2.  If the ‘**external ID**’ is not available, then the following notification as highlighted will be displayed in the popup, when users click on ‘**Create Dataset & Deploy**’, as displayed in the following screenshot.
 
-<figure><img src="../../../../../../.gitbook/assets/image (22) (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Feature Deployment - External Unique ID.png" alt=""><figcaption></figcaption></figure>

@@ -89,125 +89,107 @@ Step-By-Step Guide
       * If enabled, records will not be moved to the Recycle Bin and cannot be restored.
       * This action should only be used when permanent deletion is necessary.
     * Once all details are confirmed, select **Save** to finalize the delete process configuration.
-12.
+12. Clicking on "Save" will redirect the flow to the "DL Job List" page.
 
+    <figure><img src="../../../../../.gitbook/assets/14 - Delete.png" alt=""><figcaption></figcaption></figure>
+13. The job list can be refined by applying the available filter options, allowing quick access to specific jobs based on defined criteria.
+14. Job Management (Screen 14.1)
+    * From the **Dataloader – Basic** page, locate the list of available jobs.
+    *   Use the **Job name** search field to quickly filter and locate a specific job.
 
+        <figure><img src="../../../../../.gitbook/assets/14.1 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Enter the job name or partial keywords to narrow down the list of displayed results.
+15. Job Management (Screen 14.2)
+    * From the **Dataloader – Basic** page, filter jobs by selecting a **Job type**.
+    *   Available job types include **Extract, Insert, Update, Upsert, and Delete**.
 
+        <figure><img src="../../../../../.gitbook/assets/14.2 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Choosing a job type narrows the displayed list to only jobs of the selected category.
+16. #### Job Management (Screen 14.3)
+    *   Use the **Status** filter to view jobs by their execution state.
 
+        <figure><img src="../../../../../.gitbook/assets/14.3 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * This filter helps track job progress and identify jobs requiring further attention.
+17. #### Job Management (Screen 14.4)
+    *   Select the **Filters** option to apply advanced job filtering.
 
+        <figure><img src="../../../../../.gitbook/assets/14.4 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Filters can be applied by:
+      * **Category**
+      * **Salesforce Org**
+      * **Created Date Range**
+      * **Schedule** (On or Off)
+    * After choosing the filter criteria, select **Apply** to refine the job list.
+    * Select **Reset** to clear all filters and return to the full job list.
+18. #### Job Management (Screen 14.5)
+    *   Use the **Columns** option to customize the fields displayed in the job list screen.
 
+        <figure><img src="../../../../../.gitbook/assets/14.5 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Select or deselect checkboxes to adjust the visible columns as per requirements.
+19. Run Delete Job (Screen 15)
+    *   From the **Dataloader – Basic** page, select **Run** under the Actions column for the required job.
 
+        <figure><img src="../../../../../.gitbook/assets/15 - Delete.png" alt=""><figcaption></figcaption></figure>
+20. #### Run Configuration (Screen 16)
+    *   In the configuration panel, review job settings before execution.
 
+        <figure><img src="../../../../../.gitbook/assets/16 - Delete (1).png" alt=""><figcaption></figcaption></figure>
+    * Enable **Hard Delete Records** for permanent deletion.
+    * Optionally choose a different CSV file if needed.
+    * Select **Run** to start the job.
+21. #### Job Execution Status (Screen 19)
+    *   Once triggered, the job status changes to **In Progress**.
 
+        <figure><img src="../../../../../.gitbook/assets/19 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Monitor progress from the job list until execution completes.
+22. **Edit Delete Job (Screen 21)**
+    *   From the **Dataloader – Basic** page, select the ellipsis (**⋮**) for a job.
 
+        <figure><img src="../../../../../.gitbook/assets/21 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Choose **Edit** to modify the job configuration.
+23. #### Edit Delete Process (Screen 22)
+    *   In the **Edit delete process** window, log in to the required Salesforce Org.
 
+        <figure><img src="../../../../../.gitbook/assets/22 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Select the object to update the job configuration.
+    * Click **Next** to continue editing field mappings, schedule, or process details.
+24. **Schedule Job (Screen 23)**
+    *   From the **Dataloader – Basic** page, select the ellipsis (**⋮**) for a job.
 
+        <figure><img src="../../../../../.gitbook/assets/23 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Choose **Schedule** to configure or modify the job schedule.
+25. #### Schedule Configuration (Screen 24)
+    *   In the **Schedule** panel, select the scheduling type (**No Schedule, Daily, Weekly**).
 
+        <figure><img src="../../../../../.gitbook/assets/24 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Confirm and click **Schedule** to apply the configuration.
+26. **Delete Job (Screen 25)**
+    *   From the **Dataloader – Basic** page, select the ellipsis (**⋮**) for a job.
 
+        <figure><img src="../../../../../.gitbook/assets/25 - Delete (1).png" alt=""><figcaption></figcaption></figure>
+    * Choose **Delete** to remove the selected job.
+27. #### Delete Confirmation (Screen 26)
+    *   A confirmation prompt appears asking to confirm deletion.
 
+        <figure><img src="../../../../../.gitbook/assets/26 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Click **Delete** to permanently remove the job or **Cancel** to stop.
+28. #### Clone Job (Screen 27)
+    *   From the **Dataloader – Basic** page, select the ellipsis (**⋮**) for a job.
 
+        <figure><img src="../../../../../.gitbook/assets/27 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Choose **Clone** to create a duplicate job configuration.
+29. #### Clone Configuration (Screen 28)
+    *   The **Clone Job** panel displays the job details.
 
+        <figure><img src="../../../../../.gitbook/assets/28 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Review or update configuration and click **Clone** to duplicate the job.
+30. #### View Job Log (Screen 29)
+    *   From the **Dataloader – Basic** page, select the ellipsis (**⋮**) for a job.
 
+        <figure><img src="../../../../../.gitbook/assets/29 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Choose **Log** to view job execution details.
+31. #### Job Log Details (Screen 30)
+    *   The **Log Details** panel displays execution logs for the selected job.
 
-
-
-
-
-
-
-
-
-
-
-The following articles describe using **Single Dataloader** to delete data from Salesforce. To delete data, you need a CSV file containing the IDs of the objects to delete. Follow the steps below:
-
-1. Log in to your ARM account.
-2. Hover your mouse over the **`Dataloader`** module and choose the **`Dataloader`** option.
-3. Click **`Delete`** on the right side of the screen.
-
-<figure><img src="../../../../../.gitbook/assets/image (79) (1) (1).png" alt="Delete option on Dataloader page"><figcaption></figcaption></figure>
-
-4. Choose your [**`Salesforce Org`**](broken-reference) and select your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
-5. The corresponding **`URL`** and **`Username`** are auto-generated based on the selection.
-6. Click **`Login and Fetch Objects`** to load all objects from your Salesforce Org.
-
-<figure><img src="../../../../../.gitbook/assets/image (80) (1) (1).png" alt="Login and Fetch Objects screen"><figcaption></figcaption></figure>
-
-7. Select the object (e.g., **`Account`**, **`Contact`**, **`Lead`**). Use **`search`** and **`filter`** options to find standard/custom objects.
-8. Click **`Next`**.
-
-<figure><img src="../../../../../.gitbook/assets/image (81) (1) (1).png" alt="Object selection screen in Dataloader"><figcaption></figcaption></figure>
-
-9. Upload your **CSV** file by clicking **`Upload`**.
-
-<figure><img src="../../../../../.gitbook/assets/image (82) (1) (1).png" alt="CSV upload screen"><figcaption></figcaption></figure>
-
-10. Confirm the number of impacted records in the popup. Click **`OK`**.
-
-<figure><img src="../../../../../.gitbook/assets/image (83) (1) (1).png" alt="Notification showing impacted records"><figcaption></figcaption></figure>
-
-11. Prepare field mappings to match your CSV fields with Salesforce fields.
-12. Use **`Automap`** to auto-match fields by name.
-
-<figure><img src="../../../../../.gitbook/assets/image (84) (1) (1).png" alt="Automap field mapping UI"><figcaption></figcaption></figure>
-
-13. View the number of mapped vs. total fields below the Automap checkbox.
-14. Use **`search`** to locate fields and **`Filter`** to narrow down:
-    * **All** – Displays all fields.
-    * **Mapped** – Only mapped fields.
-    * **Unmapped** – Only unmapped fields.
-15. Ensure all required fields are mapped, then click **`Next`**.
-16. On the **`Process Summary`** screen:
-
-<figure><img src="../../../../../.gitbook/assets/image (85) (1) (1).png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
-
-* Name the process/job.
-* Select or create a **Category**.
-* Review the Object, Type (**Delete**), and impacted Records.
-* Enable **Use Bulk API** for large datasets. This uses REST principles and parallelism for better performance.
-
-17. Schedule tasks as **Daily**, **Weekly**, or **On-demand**.
-18. Click **`Save`** to save and run later.
-19. Your job appears at the top in the **`Dataloader Summary`** screen.
-20. Click **`Run`** to execute the job manually.
-
-<figure><img src="../../../../../.gitbook/assets/image (86) (1) (1).png" alt="Run button in Dataloader Summary"><figcaption></figcaption></figure>
-
-21. Choose criteria for running the Dataloader job:
-
-| Configurations   | Descriptions                                                                                                                                         |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Use Bulk API** | Optimized for high-volume operations. Supports parallel and serial execution. For delete operations on the same org, **Serial Mode** is recommended. |
-| **Batch Size**   | Used when Bulk API is not selected. Ideal for small-volume real-time processing.                                                                     |
-| **Use UTF-8**    | Use UTF-8 encoding unless data contains non-English alphabets.                                                                                       |
-
-22. Click **`Run`**.
-
-<figure><img src="../../../../../.gitbook/assets/image (87) (1) (1).png" alt="Run confirmation screen"><figcaption></figcaption></figure>
-
-23. The **`Results of Last Run`** section shows live updates of successful and failed record deletions. You can view/download records in CSV format.
-
-<figure><img src="../../../../../.gitbook/assets/image (88) (1) (1).png" alt="Run results summary showing deleted records"><figcaption></figcaption></figure>
-
-24. The number of impacted records is updated dynamically in the **Records** section.
-
-***
-
-### More Options <a href="#more-options" id="more-options"></a>
-
-<figure><img src="../../../../../.gitbook/assets/image (78) (1) (1).png" alt="More options menu"><figcaption></figcaption></figure>
-
-1. **Edit** – Modify job details.
-2. **Abort** – Stop a running process.
-3. **Schedule** – Set job run schedule.
-4. **Delete** – Delete the configured job.
-5. **Log** – View execution logs.
-6. **VR/WFR** – Review and re-enable validation/workflow rules. See [Validation/ Workflow Rules](../../../../arm/arm-features/dataloader/validation-workflow-rules.md).
-
-<figure><img src="../../../../../.gitbook/assets/image (76) (1) (1).png" alt="Validation/Workflow Rules list UI"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (77) (1) (1).png" alt="Sample validation rule execution log"><figcaption></figcaption></figure>
-
-7. **Clone** – Duplicate a process. You can upload a new CSV and select another Salesforce Org.
-
-<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1) (1).png" alt="Cloning an existing dataloader process"><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/30 - Delete.png" alt=""><figcaption></figcaption></figure>
+    * Options are available to **Download** or **Refresh** the logs.

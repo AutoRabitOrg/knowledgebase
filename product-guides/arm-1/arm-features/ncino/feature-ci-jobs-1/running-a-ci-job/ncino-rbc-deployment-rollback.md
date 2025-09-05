@@ -23,66 +23,64 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 ### CI Job Rollback
 
-1. Once in the nCino module, click on the '**Create CI Job**' button.
+1.  Once in the nCino module, click on the '**Create Feature CI Job**' button.
 
-<figure><img src="../../../../../../.gitbook/assets/image (55) (3).png" alt=""><figcaption></figcaption></figure>
 
+
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 1.png" alt=""><figcaption></figcaption></figure>
 2. Enter the required information to configure the CI Job creation.
-3. In the **Preview and Save** section, users can toggle the button to enable the rollback option.
+3.  In the **JOb Settings** section, toggle the button to enable the rollback option.
 
-<figure><img src="../../../../../../.gitbook/assets/image (56) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 4.png" alt=""><figcaption></figcaption></figure>
+4. By default, the slider will remain disabled. It should be enabled to make sure the rollback is enabled
+5.  If the "Postdeployment" ORGs are seleted during the deployment and the "Rollback" is enabled for that deployment. Then the "Postdeployment" ORGs will be available during the rollback.
 
-4. Initially, the slider is disabled. Users must toggle the button to turn on the '**Enable rollback**' option, as shown in the following picture.
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 5.png" alt=""><figcaption></figcaption></figure>
+6.  On enabling the '**Enable rollback**' option, continue to '**Save**' the job.
 
-<figure><img src="../../../../../../.gitbook/assets/image (57) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 6.png" alt=""><figcaption></figcaption></figure>
+7. While enabling the '**Enable rollback**' option, observe the info icon with the message: “Please note that the data of this rollback will be retained for a period of 30 days and will be deleted as the retention period elapses.”
+8. Upon saving the job, the flow will be redirected to the 'CI **Job List**' screen.
+9.  On landing on the '**Job List**' page, continue to run the job created by clicking on the ‘**play**’ icon.
 
-5. On enabling the '**Enable rollback**' option, users can continue to '**Save**' the job.
-6. While enabling the '**Enable rollback**' option, users can click on the question mark and read the message: “Please note that the data of this rollback will be retained for a period of 30 days and will be deleted as the retention period elapses.”
-7. Upon saving the job, users are directed to the '**Job List**' page as shown.
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 7.png" alt=""><figcaption></figcaption></figure>
+10. Once the play icon is clicked, the "Trigger Build" page will be opened
 
-<figure><img src="../../../../../../.gitbook/assets/image (58) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 8.png" alt=""><figcaption></figcaption></figure>
+11. Once the build run is completed, the '**rollback**' button will be available at the '**job results**' page.
 
-8. On landing on the '**Job List**' page, users can continue and run the job they created by clicking on the ‘**play**’ icon.
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 11.png" alt=""><figcaption></figcaption></figure>
+12. When the build is completed successfully, the snapshot of the backed-up data can be downloaded by clicking the "Download Backup Snapshot" option in the job menu.
+13. The "Rollback" can be initiated either from the '**CI Job History - Job Results**' page directly or from the '**CI Job Builds'** page.
+14. Click "Build List" to access the '**CI Job Builds'** page.
+15. Observe the "Rollback" option in the job menu at the "CI Job Builds" page.
 
-<figure><img src="../../../../../../.gitbook/assets/image (59) (3).png" alt=""><figcaption></figcaption></figure>
 
-9. Once the build run is completed, users can see that the '**rollback**' button is available on the '**job results**' page.
 
-<figure><img src="../../../../../../.gitbook/assets/image (60) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 12.png" alt=""><figcaption></figcaption></figure>
+16. On triggering the “RollBack” button either on the **“CI Job History - Job Results”** window or the “**CI Job Builds**” page, the RollBack window will be displayed. Observe the following screenshot for reference.
 
-10. When the build is completed successfully, users can download the snapshot of the backed-up data by hovering on the list icon beside the '**Rollback**' button in the '**Job Details**' page, as highlighted in the following screenshot.
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 13.png" alt=""><figcaption></figcaption></figure>
+17. Click on the “Salesforce Orgs” to expand and observe the ORGs available. The list of ORGs include both the direct deployment and the post-deployment ORGs.
 
-<figure><img src="../../../../../../.gitbook/assets/image (61) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 13 (1).png" alt=""><figcaption></figcaption></figure>
+18. Observe the details under tje "Rollback From" & "Rollback Deployed Templates"
+    1.  Rollback From
 
-11. Users can initiate the rollback from the '**Job Results**' page directly or the '**Details'** page.
-12. Users can see the '**Rollback**' button in the following screenshot on the '**Job Details**' page.
+        <figure><img src="../../../../../../.gitbook/assets/Rollback - 14.png" alt=""><figcaption></figcaption></figure>
+    2.  Rollback Deployed Templates
 
-<figure><img src="../../../../../../.gitbook/assets/image (62) (3).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../../.gitbook/assets/Rollback - 15.png" alt=""><figcaption></figcaption></figure>
+19. Any combination of ORGs and the respective features can be selected to perform the rollback.
+20. On completing the required selections, continue with the ‘RollBack’ by clicking on the “RollBack” button.
+21. As the '**Rollback**' build is in progress, the page looks like the following:
 
-13. On triggering the “RollBack” button either on the “Job Results” window or the “Job Details” page, the RollBack window will be displayed. Observe the following screenshot for reference.
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 16.png" alt=""><figcaption></figcaption></figure>
+22. Once the '**Rollback**' is completed successfully, the '**CI Job Builds**' page looks like the following:
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-14. Click on the “Salesforce Orgs” to expand and observe the ORGs available. The list of ORGs include both the direct deployment and the post-deployment ORGs.
-
-<figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-15. Click on the “Feature(s)” to observe the list of available features.
-
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-16. Any combination of ORGs and the respective features can be selected to perform the rollback.
-17. On completing the required selections, continue with the ‘RollBack’ by clicking on the “RollBack” button.
-18. As the '**Rollback**' build is in progress, the page looks like the following:
-
-<figure><img src="../../../../../../.gitbook/assets/image (64) (3).png" alt=""><figcaption></figcaption></figure>
-
-15. Once the '**Rollback**' is completed successfully, the '**Job Details**' page looks like the following:
-
-<figure><img src="../../../../../../.gitbook/assets/image (65) (3).png" alt=""><figcaption></figcaption></figure>
-
-16. A new build will be added to the list of the build in the following format: '**Rollback**' **- < Build No >**
-17. Users can roll back the builds as often as needed.
+    <figure><img src="../../../../../../.gitbook/assets/Rollback - 19 (1).png" alt=""><figcaption></figcaption></figure>
+23. A new build will be added to the list of builds in the following format: '**Rollback**' **- < Build No >**
+24. The rollback can be done on the builds as required.
 
 ### Feature Deployment
 

@@ -19,15 +19,11 @@ The Compare and Selective Deployment functionality in nCino enables users to per
 * **Object Summary and RBC Integration**\
   Access a consolidated _Object Summary_ screen to review selected records before deployment. From here, initiate RBC-based deployments directly.
 
-## Step-by-Step Guide
+## Step-by-Step Guide - Initiating Compare Operation
 
 ### Initiating Compare Operation
 
-
-
-## Step-by-Step Guide - Initiating Compare Operation
-
-#### Feature Deployment – Template & Version Control
+#### Feature Deployment – Template & Version Control&#x20;
 
 1.  Click on "Create Feature Dployment" to initate the featre deployment creation
 
@@ -244,7 +240,54 @@ Note:- Records with differences were&#x20;
         <figure><img src="../../../../.gitbook/assets/Compare - 31.png" alt=""><figcaption></figcaption></figure>
     * Use the checkboxes to select specific child records for further processing.
     * Finalize the process by clicking **Save and continue** or **Save and deploy** to apply changes.
-24.
+
+{% hint style="info" %}
+#### Relational Compare (Multi-Level)
+
+* The relational compare feature supports performing comparisons across multiple hierarchical levels.
+* Parent–child relationships can be expanded iteratively, enabling analysis down to the nth level.
+* Each level of comparison preserves the context of the higher level, ensuring consistent and accurate evaluation across linked records.
+* This functionality is essential when working with complex datasets where dependencies exist between multiple related objects.
+{% endhint %}
+
+24. **Preserve Child Record Selection (Screen Compare – 32)**
+    * From the Relational Compare Results page, navigate to the Relational Child section.
+    *   Select the desired child records using the checkboxes.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 32.png" alt=""><figcaption></figcaption></figure>
+    * Click **Save and continue** to preserve your record selections.
+    * This action ensures selections are stored before proceeding further in the deployment flow.
+25. **Confirmation of Record Selection (Screen Compare – 33)**
+    *   After saving, a success message appears at the top right of the screen.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 33.png" alt=""><figcaption></figcaption></figure>
+    * The message confirms that your record selections have been preserved.
+    * Continue with the next steps to choose records for deployment.
+26. **Deploy Selected Records (Screen Compare – 34)**
+    * From the Relational Compare Results page, review the preserved records.
+    *   Click **Save and deploy** at the bottom right to initiate deployment.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 34.png" alt=""><figcaption></figcaption></figure>
+    * This action begins the process of pushing the selected data to the destination environment.
+27. **Review Object Summary (Screen Compare – 35)**
+    *   The **Object Summary** window displays the list of objects included in the deployment.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 35.png" alt=""><figcaption></figcaption></figure>
+    * Each object name is listed along with the count of selected records.
+    * This provides a consolidated overview of deployment scope before committing.
+28. **Confirm Object Summary (Screen Compare – 36)**
+    * Review the listed objects and selected records in the Object Summary window.
+    *   Click **OK** to confirm and proceed with deployment.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 36.png" alt=""><figcaption></figcaption></figure>
+    * The system redirects you back to the results page, with data now prepared for commit.
+29. #### Deployment Staging (Screen Compare – 37)
+    *   From the Deployment Iterations page, observe that the deployment is marked as **Staging** immediately after clicking **Save & Deploy**.
+
+
+    * At this stage, the deployment is prepared but not yet executed to the destination org.
+    * To proceed with the actual deployment, click the **Deploy** or **Re-deploy** button (rocket icon) under the Actions column.
+    * This ensures deployment is only executed once explicitly triggered.
 
 
 

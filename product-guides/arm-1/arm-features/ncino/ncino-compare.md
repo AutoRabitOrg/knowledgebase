@@ -116,38 +116,135 @@ Note:- Records with differences were&#x20;
    * Selecting **Added** shows only new records introduced in the source compared to the destination.
    * Selecting **Modified** highlights only the records with changes between the two environments.
 3. **Filter – Added Records (Screen Compare – 10)**
-   * From the **Compare Results** page, select **Added** from the Filter dropdown.
+   *   From the **Compare Results** page, select **Added** from the Filter dropdown.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 10.png" alt=""><figcaption></figcaption></figure>
    * This option displays only the records that exist in the source but are not present in the destination.
    * If no new records are detected, the system will display **No records found**.
 4. **Filter – Modified Records (Screen Compare – 11)**
-   * Select **Modified** from the Filter dropdown.
+   *   Select **Modified** from the Filter dropdown.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 11.png" alt=""><figcaption></figcaption></figure>
    * This option highlights only the records that have differences between the source and destination environments.
-   * Modified records are displayed with changes highlighted for quick identification.
+   *   Modified records are displayed with changes highlighted for quick identification.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 12.png" alt=""><figcaption></figcaption></figure>
 5. **Field Selection (Screen Compare – 12)**
-   * Use the **Fields** dropdown to choose a specific field for comparison.
+   *   Use the **Fields** dropdown to choose a specific field for comparison.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 13.png" alt=""><figcaption></figcaption></figure>
    * Available options include system fields (e.g., Id, IsDeleted, CreatedDate) and business fields (e.g., Name, Description).
    * Selecting a field enables targeted filtering and analysis of record-level changes.
 6. **Search Records (Screen Compare – 13)**
-   * Enter a specific **Search Value** in combination with the selected field to locate records quickly.
+   *   Enter a specific **Search Value** in combination with the selected field to locate records quickly.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 14.png" alt=""><figcaption></figcaption></figure>
    * For example, searching by **Name** with value `RGC-000025111` will return the corresponding record.
    * This feature ensures faster navigation when working with large datasets.
 7. **Show Only Modified Columns (Screen Compare – 14)**
-   * Toggle the **Show only modified columns** option to simplify the comparison view.
+   *   Toggle the **Show only modified columns** option to simplify the comparison view.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 15.png" alt=""><figcaption></figcaption></figure>
    * When enabled, the display is restricted to columns that contain differences.
    * This helps reduce noise and focus on changes between environments.
 8. **Column Selection (Screen Compare – 15)**
-   * Use the **Columns** dropdown to customize which fields are displayed in the comparison results.
+   *   Use the **Columns** dropdown to customize which fields are displayed in the comparison results.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 16.png" alt=""><figcaption></figcaption></figure>
    * Specific fields can be checked or unchecked to include or exclude them from the grid.
    * This provides flexibility to tailor the view according to analysis needs.
 9. **Download Compare Results (Screen Compare – 16)**
-   * Select the **Download** icon to export comparison results.
+   *   Select the **Download** icon to export comparison results.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 17.png" alt=""><figcaption></figcaption></figure>
    * Options include downloading either **Records displayed on the page** or **All Records**.
    * Exported results allow further review or archival outside the system.
-10. **Save Actions (Screen Compare – 17)**
-    * After reviewing comparison results, choose one of the available save actions:
-      * **Save and continue**: Retains progress and allows further configuration before deployment.
-      * **Save and deploy**: Finalizes and directly deploys the compared records to the target environment.
-      * These options provide flexibility between staged review and immediate deployment.
+10. **View Record (Screen Compare – 18)**
+    * From the Compare Results page, locate the row you want to inspect.
+    *   Click the **View record** (document) icon to open field-level details.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 18.png" alt=""><figcaption></figcaption></figure>
+    * Use this option when you need to drill into a single record before taking further action.
+11. **Record Details (Screen Compare – 19)**
+    *   When the record is opened, a detailed comparison window displays the record values from both the **Source** and **Destination**.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 19.png" alt=""><figcaption></figcaption></figure>
+    * Each field is listed side by side, with differences highlighted for quick identification.
+    * This view allows you to precisely verify changes between the two environments.
+12. **Open Related Records (Screen Compare – 20)**
+    *   From the Compare Results grid, select the **Related records** icon to include parent–child relational data in the comparison.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 20.png" alt=""><figcaption></figcaption></figure>
+    * This feature helps in validating complex datasets where related objects must also be compared.
+13. **Configure Related Records (Screen Compare – 21)**
+    * In the Related Records setup window, provide details for both the **Parent** and **Child** objects.
+    *   Each section requires selecting the **Object**, **Unique Id**, and optional **Exclude from compare** fields.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 21.png" alt=""><figcaption></figcaption></figure>
+    * Once configured, relational comparisons can be executed across linked datasets.
+14. **Parent Object Selection (Screen Compare – 22)**
+    *   Under the Parent section, select the Salesforce object that will serve as the parent in the comparison.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 22.png" alt=""><figcaption></figcaption></figure>
+    * For example, you may choose **LLC\_BI\_\_Risk\_Grade\_Template\_\_c**.
+    * Exclude fields that are not relevant, such as system fields, to avoid unnecessary mismatches.
+15. **Parent Configuration (Screen Compare – 23)**
+    *   The Parent section is completed by configuring the **Object**, **Unique Id**, and **Excluded fields**.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 23.png" alt=""><figcaption></figcaption></figure>
+    * This ensures that parent records are correctly matched and compared during the execution.
+16. **Child Object Selection (Screen Compare – 24)**
+    *   Under the Child section, select the Salesforce object related to the parent.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 24.png" alt=""><figcaption></figcaption></figure>
+    * For example, you may choose **LLC\_BI\_\_Risk\_Grade\_Factor\_\_c**.
+    * This establishes the parent–child link for the relational comparison.
+17. **Child Configuration and Run (Screen Compare – 25)**
+    *   The Child section is completed by configuring the **Object**, **Unique Id**, and **Excluded fields**.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 25.png" alt=""><figcaption></figcaption></figure>
+    * With both Parent and Child sections set, click **Compare** to execute the relational comparison.
+    * The system then evaluates parent and child records together to provide accurate results.
+18. **Pagination Controls (Screen Compare – 26)**
+    * From the **Compare Results** page, scroll to the bottom of the results table.
+    *   Use the **Previous**, **Next**, and page number controls to navigate through record sets.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 26.png" alt=""><figcaption></figcaption></figure>
+    * This allows reviewing large datasets when records exceed the page display limit.
+19. **Save and Continue / Save and Deploy (Screen Compare – 27)**
+    *   From the **Compare Results** page, select the records you want to apply actions on.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 27.png" alt=""><figcaption></figcaption></figure>
+    * Click **Save and continue** to save progress without deploying changes.
+    * Click **Save and deploy** to save and deploy the compared records to the target org.
+    * This ensures flexibility depending on whether deployment is needed immediately.
+20. **Access Related Records (Screen Compare – 28)**
+    *   From the **Compare Results** page, select the **Related records** (linked arrows) icon for a row.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 28.png" alt=""><figcaption></figcaption></figure>
+    * This opens options to configure parent or child objects for relational comparison.
+    * Use this to validate hierarchical or dependent data between the source and destination orgs.
+21. #### Run Relational Compare (Screen Compare – 29)
+    * From the **Related Records** window, verify that both the parent and child objects are configured.
+    *   Click the **Compare** button at the bottom right to execute the relational comparison.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 29.png" alt=""><figcaption></figcaption></figure>
+    * This initiates the process of analyzing parent–child relationships between the source and destination environments.
+22. #### Relational Compare Results – Parent (Screen Compare – 30)
+    * The **Compare Results** page displays relational results after the comparison runs.
+    *   The selected **Source** and **Destination** records are shown with details such as _Id, Name, SystemModstamp, and Group Number_.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 30.png" alt=""><figcaption></figcaption></figure>
+    * The **Relational Parent** section expands, showing parent object comparisons for validation.
+    * This ensures parent records are aligned before reviewing related child data.
+23. #### Relational Compare Results – Child (Screen Compare – 31)
+    * Scroll within the **Compare Results** page to access the **Relational Child** section.
+    *   All related child records appear under the parent comparison, with fields like _Id, Name, and SystemModstamp_.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 31.png" alt=""><figcaption></figcaption></figure>
+    * Use the checkboxes to select specific child records for further processing.
+    * Finalize the process by clicking **Save and continue** or **Save and deploy** to apply changes.
+24.
 
 
 

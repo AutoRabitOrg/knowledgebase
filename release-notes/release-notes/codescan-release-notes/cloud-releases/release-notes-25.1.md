@@ -18,6 +18,116 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.9
+
+**Release Date: 07 September 2025**
+
+Summary:
+
+CodeScan 25.1.9 is comprised of the following 4 components:
+
+* 2 Enhancements
+* 2 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Enhancements
+
+1. Enhancement to Suppress Warnings Rule
+
+Our rule TrackSuppressWarnings had logic to find @SuppressWarnings, but the logic didn’t include find @suppresswarnings.
+
+This suppression tag works in any case and we recognized that our TrackSuppressWarnings rule needs to do the same (meaning the rule needs to be case insensitive.)
+
+This logic was added to this rule in this enhancement.
+
+Verified the  SuppressWarnings Rule enhancement and validated that the suppression tag is working in all case-insensitive instances and our TrackSuppressWarnings rule is throwing violation for all cases.
+
+<figure><img src="../../../../.gitbook/assets/image (2003).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+2. Rule Enhancement for sf:UnusedFormalParameter
+
+In this rule enhancement, we introduce a configuration flag (ignoreUnusedParametersInInterfaceOverrides) in the sf:UnusedFormalParameter rule so that unused parameters in valid interface implementations and method overrides can be conditionally suppressed. By default, violations will continue to be reported unless this flag is explicitly set to true.
+
+**How to Identify These Parameters for Suppression**
+
+When designing your rule improvement, the logic should:
+
+1\. Check if the method is implementing a known Salesforce interface method:
+
+* Use method signature matching (name, parameters, visibility).
+* Confirm the containing class uses implements keyword for one of the known Salesforce interfaces.
+* Ensure parameter types match exactly, e.g., SchedulableContext, Database.BatchableContext.
+
+<figure><img src="../../../../.gitbook/assets/image (2004).png" alt=""><figcaption></figcaption></figure>
+
+2. Visibility Enforcement
+
+* Only suppress violations if the method visibility is public or global, as required by the platform.
+* Private or protected methods should never be eligible for suppression under this rule.
+* This ensures that suppression only applies to methods actually callable by the platform or conforming to Apex interface rules.
+
+3\. Override Detection
+
+* If a method in a class overrides a method from a superclass or an abstract class:
+  * Signature match is mandatory (same name, return type, and parameters).
+  * Use of the override keyword confirms the intent, but even without it, structural matching should be enough.
+  * In such cases, the parameter should not be flagged if unused, since it’s required by the parent contract.
+
+Value / Purpose
+
+* Prevent misleading or incorrect violations in valid interface and override implementations (e.g., execute \[SchedulableContext]).
+* Preserve backward compatibility by keeping the rule strict by default.
+* Additionally, we updated the Rule Description to “Avoid passing parameters to methods or constructors without actually referencing them in the method body. Use the ignoreUnusedParametersInInterfaceOverrides parameter to suppress violations for unused parameters in valid interface implementations and method overrides.”
+
+Verified the rule sf:UnusedFormalParameter and validated the following conditions:
+
+* The method implements a known Salesforce interface method.
+* Method signature matches exactly in terms of:
+  * Name
+  * Parameters
+  * Visibility
+* The containing class uses the implements keyword with one of the known Salesforce interfaces (e.g., Schedulable, Database.Batchable).
+* Parameter types match exactly, including types such as:
+  * SchedulableContext
+  * Database.BatchableContext
+
+<figure><img src="../../../../.gitbook/assets/image (2005).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2006).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes&#x20;
+
+1. Fixed issue with CodeScan rule detecting SOQL Injections, which was causing analyses to break.
+
+Previously, while analyzing for SOQL Injection, if a local variable is declared using a class-level variable of same name, then CodeScan analyses were erroring with StackOverflowError as it was stuck in a loop while resolving the reference.
+
+Example:
+
+class Foo { private static String QUERY = 'Select '; public static List\<Opportunity> getData(String stage) { String query = QUERY + 'Id FROM Opportunity WHERE StageName = :stage'; return Database.query(query); } }
+
+With this fix, we added validation to detect and prevent such recursive reference resolution.
+
+Verified the SOQL injection rule fix (which was causing stack overflow error) by validating that now users are not encountering the error, and their project analyses are working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2007).png" alt=""><figcaption></figcaption></figure>
+
+2. Fixed an Error that was occurring when Deleting CodeScan Projects
+
+Some customers have reported that when attempting to do a project deletion, the task sometimes fails.  We have determined that the root cause is that the system is trying to fetch project details after the project has already been removed, which leads to missing information and, subsequently, unexpected errors.
+
+This fix includes logic to delete projects properly.
+
+We have verified the fix for Error When Deleting CodeScan Projects  and validated that users are able to delete their projects without any errors.
+
+<figure><img src="../../../../.gitbook/assets/image (2008).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2009).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## CodeScan Release 25.1.8
 
 **Release Date: 31 August 2025**&#x20;

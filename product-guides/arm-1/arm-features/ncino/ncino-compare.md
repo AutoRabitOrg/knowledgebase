@@ -25,73 +25,171 @@ The Compare and Selective Deployment functionality in nCino enables users to per
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Introduction
-
-The compare and selective deployment functionality allows you to perform comparisons across datasets and objects between different Salesforce orgs or version control repositories. You can then promote selected records to target environments.
-
-## Overview
-
-1. Perform Org-to-Org or Org-to-Version Control (VC) comparisons.
-2. Run relational comparisons on initial datasets.
-3. Select individual records at any comparison level.
-4. Save selections and continue comparing or proceed to deployment.
-5. Finalize deployment using the **Save and Deploy** option.
-6. Review selected records on the Object Summary screen and initiate RBC deployments.
-
-## Step-by-Step Guide
-
-### Initiating Compare Operation
+## Step-by-Step Guide - Initiating Compare Operation
 
 #### Feature Deployment – Template & Version Control
 
-<figure><img src="../../../../.gitbook/assets/image (1503).png" alt="Retrieve Dataset option from Template or Version Control"><figcaption><p>Retrieve Dataset option from Template or Version Control</p></figcaption></figure>
+1.  Click on "Create Feature Dployment" to initate the featre deployment creation
 
-1. Select “Template” or “Version Control” to reveal the **Retrieve Dataset** option.
-2. Clicking it redirects to the **Deployment History** page.
-3. On that page, use **View Dataset** to open the dataset.
+
+
+    <figure><img src="../../../../.gitbook/assets/Compare - 1.png" alt=""><figcaption></figcaption></figure>
+2.  Select **“Template”** or **“Version Control”** to reveal the **Retrieve Dataset** option.
+
+    <figure><img src="../../../../.gitbook/assets/Compare - 1.1 (1).png" alt=""><figcaption></figcaption></figure>
+3. Clicking it redirects to the **Deployment History** page.
+4. On that page, use **View Dataset** to open the dataset.
 
 #### Feature Deployment – Using Salesforce Org
 
 1. Select **Template Using Salesforce Org** or **VC Using Salesforce Org** to see **Create Dataset**.
-2. Click **Create Dataset** to start a comparison.
+2.  Refer the "[Feature Deployment](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/ncino/feature-deployment)" section for the creation of a feature deployment.
 
-<figure><img src="../../../../.gitbook/assets/image (1504).png" alt="Create Dataset option using Salesforce Org" width="375"><figcaption><p>Create Dataset option using Salesforce Org</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Compare - 1.2.png" alt=""><figcaption></figcaption></figure>
+3. Click **Retrieve Dataset** to start a comparison.
+4. This would redirect the flow to the Deployment History.
 
-### Perform Compare
+#### Perform Compare
+
+1. **Access Compare Option (Screen Compare - 2)**
+   *   From the **Deployment Iterations** page, select the ellipsis (three dots) for a specific iteration.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 2.png" alt=""><figcaption></figcaption></figure>
+   *   Choose **Compare** to analyze dataset differences between environments.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 2.1.png" alt=""><figcaption></figcaption></figure>
+   * This helps validate consistency of deployed records.
+2. **Select Comparison Destination (Screen Compare - 3)**
+   * In the **Compare** window, select between the destination type:
+     *   **Salesforce Org**: Compares records with another Salesforce environment.
+
+         <figure><img src="../../../../.gitbook/assets/Compare - 3.png" alt=""><figcaption></figcaption></figure>
+     *   **Version Control**: Compares records with version-controlled data.
+
+         <figure><img src="../../../../.gitbook/assets/Compare - 3.1.png" alt=""><figcaption></figcaption></figure>
+   * Choose the destination org or repository to proceed.
+3. **Configure Comparison Parameters (Screens Compare - 4 & 4.1)**
+   *   Provide details such as:
+
+       * **Feature Name**
+       * **Object**
+       * **Unique Id** (used to uniquely identify records)
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 4.png" alt=""><figcaption></figcaption></figure>
+   *   Optionally, select fields to **exclude from comparison** (e.g., system fields like CreatedDate).
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 4.1.png" alt=""><figcaption></figcaption></figure>
+   * Excluding non-essential fields avoids unnecessary mismatches.
+4. **Run Comparison (Screen Compare - 5)**
+   *   After configuring all parameters, click **Compare**.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 5.png" alt=""><figcaption></figcaption></figure>
+   * The system validates data consistency between the chosen dataset and the destination.
+   * This step ensures records are aligned across environments or with version control.
+
+{% hint style="info" %}
+Note:- Records with differences were&#x20;
+{% endhint %}
+
+5. **Compare Results – Relational Compare Results (Screen Compare - 7)**
+
+*   From the **Compare Results** page, the _Relational Compare Results_ section provides an overview of the comparison context.
+
+    <figure><img src="../../../../.gitbook/assets/Compare - 7.png" alt=""><figcaption></figcaption></figure>
+* The **Source** area displays the **org, label name, feature name, and version details** for the dataset being compared.
+* The **Destination** area indicates the Salesforce org used for the comparison.
+* The **Selected data** section lists the object and unique ID that serve as the basis of the comparison.
+
+1. **Compare Results – Filters and Search Options (Screen Compare - 8)**
+   *   The **comparison filters** allow refinement of records during comparison.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 8.png" alt=""><figcaption></figcaption></figure>
+   * Available options include **Object**, **Unique ID**, and **Exclude from compare**, which can be customized to focus only on relevant records.
+   * Additional filters such as **Field selection** and **Search value** enable precise comparisons.
+   * The option **Show only modified columns** highlights changes between source and destination.
+   * A **Columns menu** is available to adjust the visible fields in the results grid.
+2. **Filter Records (Screen Compare – 9)**
+   * From the Compare Results page, expand the **Filter** dropdown to refine comparison records.
+   *   Options available include **All**, **Added**, and **Modified**.
+
+       <figure><img src="../../../../.gitbook/assets/Compare - 9.png" alt=""><figcaption></figcaption></figure>
+   * Selecting **Added** shows only new records introduced in the source compared to the destination.
+   * Selecting **Modified** highlights only the records with changes between the two environments.
+3. **Filter – Added Records (Screen Compare – 10)**
+   * From the **Compare Results** page, select **Added** from the Filter dropdown.
+   * This option displays only the records that exist in the source but are not present in the destination.
+   * If no new records are detected, the system will display **No records found**.
+4. **Filter – Modified Records (Screen Compare – 11)**
+   * Select **Modified** from the Filter dropdown.
+   * This option highlights only the records that have differences between the source and destination environments.
+   * Modified records are displayed with changes highlighted for quick identification.
+5. **Field Selection (Screen Compare – 12)**
+   * Use the **Fields** dropdown to choose a specific field for comparison.
+   * Available options include system fields (e.g., Id, IsDeleted, CreatedDate) and business fields (e.g., Name, Description).
+   * Selecting a field enables targeted filtering and analysis of record-level changes.
+6. **Search Records (Screen Compare – 13)**
+   * Enter a specific **Search Value** in combination with the selected field to locate records quickly.
+   * For example, searching by **Name** with value `RGC-000025111` will return the corresponding record.
+   * This feature ensures faster navigation when working with large datasets.
+7. **Show Only Modified Columns (Screen Compare – 14)**
+   * Toggle the **Show only modified columns** option to simplify the comparison view.
+   * When enabled, the display is restricted to columns that contain differences.
+   * This helps reduce noise and focus on changes between environments.
+8. **Column Selection (Screen Compare – 15)**
+   * Use the **Columns** dropdown to customize which fields are displayed in the comparison results.
+   * Specific fields can be checked or unchecked to include or exclude them from the grid.
+   * This provides flexibility to tailor the view according to analysis needs.
+9. **Download Compare Results (Screen Compare – 16)**
+   * Select the **Download** icon to export comparison results.
+   * Options include downloading either **Records displayed on the page** or **All Records**.
+   * Exported results allow further review or archival outside the system.
+10. **Save Actions (Screen Compare – 17)**
+    * After reviewing comparison results, choose one of the available save actions:
+      * **Save and continue**: Retains progress and allows further configuration before deployment.
+      * **Save and deploy**: Finalizes and directly deploys the compared records to the target environment.
+      * These options provide flexibility between staged review and immediate deployment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 1. Open the deployment and click **Compare**.
 

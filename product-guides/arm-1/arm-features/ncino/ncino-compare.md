@@ -282,12 +282,48 @@ Note:- Records with differences were&#x20;
         <figure><img src="../../../../.gitbook/assets/Compare - 36.png" alt=""><figcaption></figcaption></figure>
     * The system redirects you back to the results page, with data now prepared for commit.
 29. #### Deployment Staging (Screen Compare – 37)
-    *   From the Deployment Iterations page, observe that the deployment is marked as **Staging** immediately after clicking **Save & Deploy**.
+    * From the Deployment Iterations page, observe that the deployment is marked as **Staging** immediately after clicking **Save & Deploy**.
+    *   At this stage, the deployment is prepared but not yet executed to the destination org.
 
-
-    * At this stage, the deployment is prepared but not yet executed to the destination org.
+        <figure><img src="../../../../.gitbook/assets/Compare - 37 (2).png" alt=""><figcaption></figcaption></figure>
     * To proceed with the actual deployment, click the **Deploy** or **Re-deploy** button (rocket icon) under the Actions column.
     * This ensures deployment is only executed once explicitly triggered.
+    *   To observe the details of the compare operation, click on the "Iteration Details" option.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 37.1.1.png" alt=""><figcaption></figcaption></figure>
+30. **Deployment Iteration Details (Screen Compare – 37.2)**
+    * From the Deployment Iterations page, click the **iteration label** to expand feature details.
+    *   The panel on the right displays the **feature package name** associated with the deployment.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 37.2.png" alt=""><figcaption></figcaption></figure>
+    * Use this to review which feature package is linked before proceeding further.
+31. **Feature Object Overview (Screen Compare – 37.3)**
+    *   Expanding the feature package displays the **objects included** in the deployment.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 37.3.png" alt=""><figcaption></figcaption></figure>
+    * Each object shows its **name**, **available count**, and **selected count** of records.
+    * This allows validation of the exact objects and record counts being deployed.
+32. **Object Deployment Details & Validation Summary (Screens Compare – 37.4 & 37.5)**
+    *   From the Feature Details panel, click an object (e.g., _Eligibility\_\_c_) to open its deployment details.
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 37.4.png" alt=""><figcaption></figcaption></figure>
+    * The object view shows applied filters, external ID mappings, and configuration elements like **validation rules** and **workflow rules**.
+    *   Summaries are provided for both failed and successful records:
+
+        * **Failed Records Summary** highlights issues such as storage limits, bad picklists, trigger errors, or other causes.
+        * **Successful Records Summary** displays DML operations with record counts for **updates** and **creates**.
+
+
+
+        <figure><img src="../../../../.gitbook/assets/Compare - 37.5.png" alt=""><figcaption></figcaption></figure>
+    * Use this information to validate that object-level deployments are configured correctly and no unexpected errors occurred.
+33. **View Object Records (Screens Compare – 37.6 & 37.7)**
+    *   From the **Feature Details** panel, locate the object (e.g., _Eligibility\_\_c_) and check the **Selected count** column to see how many records were included in the deployment.
+
+
+    * Click the selected count value to expand and view the **Object Records** list.
+    * The records table displays detailed fields such as **Id, OwnerId, IsDeleted, Name, RecordTypeId, CreatedDate, and CreatedById**.
+    * Use this view to validate which records were specifically chosen for deployment and confirm their metadata details before execution.
 
 
 

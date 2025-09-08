@@ -1,25 +1,45 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date**: 7 September 2025
+
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **Revision Retrieval Error During Deployment:** Fixed an error where retrieving revisions with a single revision or while creating a release label caused runtime exceptions from Git. Updated logic now ensures stable fetch during revision retrieval.
+* **Intermittent Workspace Not Found Error in EZ-Merge:** Resolved an issue where merges intermittently failed with “Workspace not found with id….” Logic was updated to handle the scenario reliably.&#x20;
+* **Sub-User Branch Visibility in Admin VC Repos:** Addressed a problem where sub-users couldn’t see newly created branches unless permissions were manually updated. Sub-user visibility is now automatically enabled when a new branch is created.
+* **CI Job Stuck Issue in Abort Functionality:** Fixed a corner case where a CI job could get stuck, preventing new builds from being triggered. The abort functionality has been refined to avoid such blocking scenarios.
+* **Deployment Trigger Date Accuracy:** The deployment date recorded in the Reports module and Audit Tab now reflects the exact trigger time instead of relying on package creation time. This ensures more accurate tracking for all new deployments.
+
+### **Enhancements** <a href="#enhancements" id="enhancements"></a>
+
+* **Webhook Security Update**\
+  As part of our ongoing security improvements, webhook security has been strengthened in this release.
+  * Support for old webhook URLs was retired earlier in ARM v23.1.15.
+  * With this release, it is now **mandatory to use an API token** with all webhook endpoints.
+  * This change ensures stronger protection and prevents unauthorized access to your integrations.\
+    [https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks).
+
+***
+
 ## ARM Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
 
-**Release Date**: Aug 31, 2025
+**Release Date**: 31 August 2025
 
 **Highlights**: Fixes and improvements across permission sets, profile comparison, reports accuracy, and SSO configuration.
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
-* **Permission Set – Deleted Tags Displayed**\
-  Resolved an issue where deleted tags appeared under Permission Sets when committing with ServicePresenceStatus. Support for ServicePresenceStatusAccess has been added to Permission Sets, and necessary code changes were made to ensure correct behavior.\
+* **Permission Set – Deleted Tags Displayed:** Resolved an issue where deleted tags appeared under Permission Sets when committing with ServicePresenceStatus. Support for ServicePresenceStatusAccess has been added to Permission Sets, and necessary code changes were made to ensure correct behavior.\
 
-* **Profile Compare – Custom Permissions Not Visible**\
-  Fixed an issue where the Profile Compare feature in the Deployment module did not show custom permissions for orgs. Updated UI logic ensures that deltas for custom permissions now display correctly.\
+* **Profile Compare – Custom Permissions Not Visible:** Fixed an issue where the Profile Compare feature in the Deployment module did not show custom permissions for orgs. Updated UI logic ensures that deltas for custom permissions now display correctly.\
 
-* **Reports – Discrepancy in Deployment Counts**\
-  Addressed a mismatch where reports displayed an incorrect deployment count when using custom range filters. Deployment counts are now consistent with actual values.\
+* **Reports – Discrepancy in Deployment Counts:** Addressed a mismatch where reports displayed an incorrect deployment count when using custom range filters. Deployment counts are now consistent with actual values.\
 
-* **SSO Configuration – Empty Metadata File**\
-  Corrected an issue where downloading the AutoRABIT SSO Metadata XML returned an empty file. The file now downloads with the correct default content.\
+* **SSO Configuration – Empty Metadata File:** Corrected an issue where downloading the AutoRABIT SSO Metadata XML returned an empty file. The file now downloads with the correct default content.
 
+***
 
 ## ARM Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
 

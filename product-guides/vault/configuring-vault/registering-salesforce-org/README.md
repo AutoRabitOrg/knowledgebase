@@ -57,11 +57,11 @@ Step-By-Step Guide:
 
 1.  Open any ORG through the “Setup” of the Vault application.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. On opening the ORG click on the EDIT button to initiate editing the ORG details.
 3.  Upon clicking the **EDIT** button, the fields **Org Type**, **Org Title**, and **User Name** become editable, allowing the user to make the intended updates.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Based on the requirement update the fields “Org Type” and “Org Title” as required.
 5. For updating the “User Name” authentication is required, as the login is tied to the ORG, changing the username requires authentication.
 6.  Enter the required “User Name” and click on “AUTHENTICATE” to initiate the authentication.

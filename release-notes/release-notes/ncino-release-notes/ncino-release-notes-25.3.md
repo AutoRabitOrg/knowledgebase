@@ -1,5 +1,12 @@
 # nCino Release Notes 25.3
 
+## nCino + DL - Release 25.3.9.1
+
+**Release Date:** August 10, 2025
+
+**AuditLog – Null Pointer Exception Fix**\
+A fix has been provided to address a null pointer exception occurring in instances with AuditLog enabled, ensuring stable and consistent execution.
+
 ## nCino + DL - Release 25.3.8
 
 **Release Date:** August 31, 2025

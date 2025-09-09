@@ -11,3 +11,5 @@ CodeScan will provide standard values for each metric in the default (built-in) 
 <figure><img src="../../../.gitbook/assets/Q gate 9.7.png" alt=""><figcaption></figcaption></figure>
 
 **Important Note:** Built-in quality gates are standard and cannot be edited.
+
+See more information on [Sonar Way](https://docs.sonarsource.com/sonarqube-cloud/standards/managing-quality-gates/introduction-to-quality-gates/), the recommended quality gate. We consider these conditions for our default quality gate.

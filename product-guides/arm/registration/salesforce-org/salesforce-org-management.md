@@ -129,7 +129,7 @@ To update the username on all registered orgs, re-authenticate the orgs in **Adm
 
 ### How does AutoRABIT handle Salesforce Org Mapping?
 
-1. Security Concern Raised: It was highlighted that users can edit the Salesforce Org mapping in their AutoRABIT profile and change the mapped username. This could potentially allow someone to associate a deployment with another user, raising a security concern around accountability if a deployment introduces issues.
+1. It was highlighted that users can edit the Salesforce Org mapping in their AutoRABIT profile and change the mapped username. This could potentially allow someone to associate a deployment with another user, raising a security concern around accountability if a deployment introduces issues.
 
 2\. How AutoRABIT Handles Salesforce Org Mapping
 

@@ -126,3 +126,37 @@ The list of users allowed to work with your Salesforce Org is available in this 
 ### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
 
 To update the username on all registered orgs, re-authenticate the orgs in **Admin > SF Org Management** page.
+
+### How does AutoRABIT handle Salesforce Org Mapping?
+
+1. Security Concern Raised: It was highlighted that users can edit the Salesforce Org mapping in their AutoRABIT profile and change the mapped username. This could potentially allow someone to associate a deployment with another user, raising a security concern around accountability if a deployment introduces issues.
+
+2\. How AutoRABIT Handles Salesforce Org Mapping
+
+* Integration (Non-Human) User:\
+  The best practice is that all deployments are executed using the integration (system) user that registered the Salesforce org with AutoRABIT. This username is what will appear in Salesforce deployment audit logs.
+* Triggered By User:\
+  AutoRABIT additionally records the _actual user_ in AutoRABIT who initiated the deployment. This “Triggered By” information is available in AutoRABIT audit logs and reports, providing visibility into who performed the action, regardless of the Salesforce username mapping.
+* Org Mapping in Profiles:\
+  Changes to Salesforce Org mappings in a user’s profile only impact retrieval during EZ-Commit (e.g., fetching metadata by a specific developer or “all users”). For deployments, the integration user always takes precedence.
+
+3\. Expected Behavior
+
+* Deployment Logs in Salesforce: Will always show the integration user that registered the org.
+* Audit Logs in AutoRABIT: Will show both the integration user (deployed by) and the specific AutoRABIT user (triggered by).
+* Org Mapping Flexibility: Developers can adjust mappings to fetch metadata changes made by specific users or by all users, but this does not alter deployment accountability.
+
+4\. Steps in Case of Incident\
+If an incident occurs and you need to review who executed a deployment:
+
+1. Check AutoRABIT Reports Module:
+   1. Navigate to _Reports_.
+   2. Download deployment reports (e.g., last 7 days).
+   3. Review the columns “Deployment User” (integration user) and “Triggered By” (AutoRABIT user).
+2. Cross-Reference with Salesforce Audit Logs:
+   1. In Salesforce, the deployment record will list the integration user.
+   2. Use AutoRABIT’s “Triggered By” information to identify the specific individual who performed the deployment.
+3. Document Findings:
+   1. Keep both sets of logs (Salesforce and AutoRABIT) for any postmortem or compliance reporting.
+
+This ensures clarity on responsibility and traceability during audits, while maintaining security controls.&#x20;

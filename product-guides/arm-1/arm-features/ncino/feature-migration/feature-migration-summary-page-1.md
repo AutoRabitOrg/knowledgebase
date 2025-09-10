@@ -17,7 +17,7 @@ The **Feature Migration** page lists all the standard or community templates tha
    * Filter (drop down)
    * Columns (drop down)
 2. Source Type has the following two values
-   * Comunity
+   * Community
    * Standard
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 0.png" alt=""><figcaption></figcaption></figure>

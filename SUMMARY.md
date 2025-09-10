@@ -56,6 +56,7 @@
     * [Unsupported Metadata Types](fundamentals/faq/vault-faqs/page-1.md)
 * [Announcements](fundamentals/announcements/README.md)
   * [Preparing for Salesforce Connected App Usage Restrictions](fundamentals/announcements.md)
+  * [Preparing for Salesforce Connected App Usage Restrictions](fundamentals/announcements/preparing-for-salesforce-connected-app-usage-restrictions.md)
 
 ## Release Notes
 

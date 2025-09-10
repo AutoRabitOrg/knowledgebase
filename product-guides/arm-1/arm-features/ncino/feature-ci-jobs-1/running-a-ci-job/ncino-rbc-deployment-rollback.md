@@ -86,44 +86,41 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 1. Initiate a '**Feature Deployment**' by clicking on the '**Feature Deployment**' button.
 2. Continue to input the ‘**Source**’ and ‘**Destination’** configuration details.
-3. On entering all the required details, click on the '**Create Dataset & Deploy**' button.
-4. On clicking the '**Create Dataset & Deploy**' button, a popup with the '**Enable Rollback**' option is displayed.
-5. Select the checkbox to enable the rollback of this deployment.
+3. On entering all the details, click on the '**Create Dataset & Deploy**' button.
+4.  On the "Job Settings" section of the flow enable the "Rollback" option to opt for the Rollback.
 
-<figure><img src="../../../../../../.gitbook/assets/image (66) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-05 at 9.13.50 PM (1).png" alt=""><figcaption></figcaption></figure>
+5.  Observe the information icon beside the '**Enable Rollback**' button that says, “Please note that the data of this rollback will be retained for a period of 30 days and will be deleted as the retention period elapses.”
 
-6. Users can see an information icon beside the '**Enable Rollback**' button that says, “Please note that the data of this rollback will be retained for a period of 30 days and will be deleted as the retention period elapses.”
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-05 at 9.13.50 PM (2).png" alt=""><figcaption></figcaption></figure>
+6. Until the deployment is completed, it is not possible to perform a '**Rollback**' on the deployment.
+7.  Click the '**Deploy**' button to deploy the build.
 
-<figure><img src="../../../../../../.gitbook/assets/image (67) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-05 at 9.14.13 PM.png" alt=""><figcaption></figcaption></figure>
+8. Once the "Deployment" is completed, the "Rollback" option will be available.
+9.  Observe the ‘**Rollback**’ option, both on the '**Deployment History**' page and on the '**Job Details**' page.
 
-7. Until the deployment is completed, it is not possible to perform a '**Rollback**' on the deployment.
-8. Click the '**Deploy**' button to deploy the build.
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.42.20 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (68) (3).png" alt=""><figcaption></figcaption></figure>
 
-9. Only upon completion of the deployment is the '**Rollback**' option available.
+10. Once the deployment is finished, the backup snapshot marked for deployment can be dowbloaded.
 
-Observe the ‘**Rollback**’ option, both on the '**Deployment History**' page and on the '**Job Details**' page.
-
-<figure><img src="../../../../../../.gitbook/assets/image (69) (2).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/image (70) (2).png" alt=""><figcaption></figcaption></figure>
-
-10. Once the deployment is finished, users can download the backup snapshot of the deployment marked for ‘**Rollback**.’
-
-<figure><img src="../../../../../../.gitbook/assets/image (71) (2).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.44.13 PM.png" alt=""><figcaption></figcaption></figure>
 11. &#x20;On clicking the Rollback, a window will be displayed with the option to select the feature(s) intended to be rolledback.
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.46.14 PM.png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.46.30 PM.png" alt=""><figcaption></figcaption></figure>
 12. After doing the required selections continue with the “ROLLBACK”, by clicking on the rollback button.
+
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.49.00 PM.png" alt=""><figcaption></figcaption></figure>
 13. While the '**Rollback**' is in progress, the '**Re-Deploy**' and '**Rollback**' buttons are grayed out until its completion.
 14. Once the '**Rollback**' is completed, then the iteration number will be updated.
 
-<figure><img src="../../../../../../.gitbook/assets/image (72) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.49.41 PM.png" alt=""><figcaption></figcaption></figure>
 
-14. Observe the ‘**Rollback**’ iteration in the logs by expanding the deployed build, as shown below.
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-09-08 at 4.50.39 PM.png" alt=""><figcaption></figcaption></figure>
+15. Observe the ‘**Rollback**’ iteration in the logs by expanding the deployed build, as shown below.
 
 <figure><img src="../../../../../../.gitbook/assets/image (73) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -139,3 +136,4 @@ Rollback functionality is now supported for the Orgs selected for post-deploymen
 
 1. **Insert:** The inserted records in the destination Org are deleted.
 2. **Update:** Updates to the destination Org are reverted to their original state.
+

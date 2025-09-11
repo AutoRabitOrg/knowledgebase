@@ -23,18 +23,31 @@ Salesforce has announced changes to how uninstalled connected apps function in c
 
 ### Actions Required
 
+_For existing customers with an already connected Org/s to AutoRABIT_\
+No action is required.
+
+Recommended configuration:\
+&#xNAN;_&#x46;or existing customers, adding net new Salesforce Sandbox Orgs_
+
+**Install Connected App**
+
+1. In your Salesforce Org, Navigate to Setup → type Connected Apps OAuth Usage in the Quick Find box.
+2. Find the AutoRABIT connected app in the list. If it’s not installed, there will be an Install button next to it.
+3. Click Install, then confirm on the subsequent page.
+
+**Optional Configuration:**\
+&#xNAN;_&#x41;pplies to initial authentications with AutoRABIT made after the connected apps security change made by Salesforce, or net new production orgs (this will be updated, as more information becomes available from Salesforce)_
+
+Actions Required
+
 1. Identify AutoRABIT Connected Apps:
    1. Go to Setup → Connected Apps OAuth Usage in Salesforce.
    2. Locate entries linked to AutoRABIT.
-   3. If it’s not installed, there will be an Install button next to it. Click **Install**, then confirm on the subsequent page.
 2. Update User Permissions:
    1. If API Access Control is enabled: Assign “Use Any API Client.”
    2. If API Access Control is not enabled: Assign either “Approve Uninstalled Connected Apps” or “Use Any API Client.”
 
-> Grant these permissions only to trusted integration users.
-
-3. Plan for Future Stability:
-   1. AutoRABIT is preparing enhancements to support installed connected apps for long-term compliance.
+Grant these permissions only to trusted integration users.
 
 ### Best Practices
 

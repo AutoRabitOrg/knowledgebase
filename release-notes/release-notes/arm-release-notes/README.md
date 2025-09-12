@@ -1,5 +1,24 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.3.10
+
+**Release Date**: 14 September 2025
+
+**Highlights**: Stability improvements across Custom Deployment, Release Labels, EZ-Commit, CI Jobs, and Salesforce ALM integration.
+
+### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+
+* **Custom Deployment – Full Profile Deployment Failure:** Fixed an issue where Full Profile Deployment using Version Control failed with a size limit error because the `.git` folder was unintentionally included in the build preparation. Now, hidden folders (starting with ".") are excluded from the build process.
+* **Custom Deployment – Deployment Fails with Ignore Installed Components:** Resolved an issue where deployments failed silently on the UI when the **Ignore Installed Components** option was selected. The deployment now completes as expected.
+* **Deployment Logs – UI Visibility Issue:** Customers reported deployment logs not consistently showing in the UI. While the root cause is still under review, additional logging has been added to capture scenarios when logs fail to display.
+* **Release Label – Deployment with Apex Meta Files:** Fixed an issue where Release Label deployments failed when changes existed only in the Apex `-meta.xml` file and not in the corresponding `.cls` file. Such changes are now correctly included in the manifest.\
+  &#xNAN;_&#x43;ommunication_: For existing Release Labels, customers must re-run artifact preparation to apply this fix. New Release Labels will work as expected.
+* **EZ Commit – Pre-Validation Error:** Addressed a parsing error ("XML document structures must start and end within the same entity") that caused pre-validation EZ-Commits to fail. A new file copy library has been implemented to resolve this in **EZ-Commit (Validate Deploy)**, **CI Jobs**, and **Deployments**.
+* **Salesforce ALM Integration – Status Updates:** Fixed an issue where ALM work items failed to update if the **status field’s API name** differed from the picklist label. Updates now correctly use the API name for mapping.
+* **CI Jobs – Missing Debug Information in Failed Builds:** Fixed an issue where failed builds did not display detailed error logs. The UI now shows schema validation errors with file and line details, helping users quickly identify and resolve issues.
+
+***
+
 ## ARM Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date**: 7 September 2025

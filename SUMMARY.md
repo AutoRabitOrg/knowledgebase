@@ -1211,6 +1211,7 @@
   * [Access Controls](product-guides/guard/policies.md)
   * [Integration User License](product-guides/guard/integration-user-license.md)
   * [Data Classification](product-guides/guard/data-classification.md)
+  * [API Security](product-guides/guard/api-security.md)
 
 ## Resources
 

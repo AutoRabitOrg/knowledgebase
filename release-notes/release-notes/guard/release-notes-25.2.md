@@ -10,7 +10,7 @@ We’re launching API Security in Guard to help customers identify and mitigate 
 
 AutoRABIT Guard introduces a new API Security tab under the Risk section. From here, users can inspect API activity for a specific Salesforce org in real time.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2010).png" alt=""><figcaption></figcaption></figure>
 
 **Value to Users:**
 

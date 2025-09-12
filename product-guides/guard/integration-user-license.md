@@ -38,6 +38,7 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     * Manage Password Policies
     * Assign Permission Sets
     * Manage Users
+    * Approve Uninstalled Connected Apps
 
     \
     If a permission set is assigned **without** the required PSL, you’ll receive an assignment error.\

@@ -32,8 +32,8 @@ To authenticate Bitbucket, you’ll have to use **App Password** instead of the 
 **Steps to generate a Bitbucket App Password**
 
 1. Log into to your Bitbucket account.
-2. Click your account’s **`profile picture`** in the top right-corner of the Bitbucket webpage.
-3. Click the **`Personal Settings`** link in the dropdown menu.
+2. Locate your account’s **`profile picture`** in the top right-corner of the Bitbucket webpage.
+3. Click the **`Personal Settings`** link to the left of the profile picture in the dropdown menu.
 4. Select the link on the left labeled **`App Passwords`**. It is under the **`Access Management`** heading.
 5. Click on **`Create App Password`** button.
 6. Give a **`label name`** and check all the necessary permissions that you’d want to provide. Typically, we will require **`repository`**, **`webhook`**, and **`pull request permissions`**.

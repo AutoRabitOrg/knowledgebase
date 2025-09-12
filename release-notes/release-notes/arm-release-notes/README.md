@@ -16,6 +16,8 @@
 * **EZ Commit – Pre-Validation Error:** Addressed a parsing error ("XML document structures must start and end within the same entity") that caused pre-validation EZ-Commits to fail. A new file copy library has been implemented to resolve this in **EZ-Commit (Validate Deploy)**, **CI Jobs**, and **Deployments**.
 * **Salesforce ALM Integration – Status Updates:** Fixed an issue where ALM work items failed to update if the **status field’s API name** differed from the picklist label. Updates now correctly use the API name for mapping.
 * **CI Jobs – Missing Debug Information in Failed Builds:** Fixed an issue where failed builds did not display detailed error logs. The UI now shows schema validation errors with file and line details, helping users quickly identify and resolve issues.
+* **File Upload Error in EZ-Merge Conflict Resolution**: Customers reported being unable to re-upload modified files after downloading the conflict resolution zip in EZ-Merge. The issue was caused by restrictive file size limits.  \
+  Fix: Increased the maximum supported file upload size to 100MB, ensuring smoother conflict resolution workflows.
 
 ***
 

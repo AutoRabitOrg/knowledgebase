@@ -2,7 +2,7 @@
 
 ## nCino + DL - Release 25.3.10
 
-**Release Date:** September 11, 2025
+**Release Date:** September 14, 2025
 
 **Fix for Field Order in DL Module Results**\
 Resolved an issue where the ID and Status/Error fields were displayed in an incorrect order when viewing success or failure results in the Data Loader modules.

@@ -1,5 +1,37 @@
 # Guard Release Notes 25.2
 
+## Guard 25.2.4.3 Release Notes
+
+**Release Date**: 15 September 2025
+
+### Enhanced Export Capabilities
+
+* **Change Monitoring Export**
+  * Users can now export the **Change Monitoring** Changes table into CSV file.
+  * Export includes all columns available in the UI, as well as _detail_ and _modifiedProperty_ fields for improved auditing and analysis.
+* **Data Classification Export Enhancement**
+  * The **Data Classification Export** now includes a new **rationale** column for each field in the CSV output.
+  * Provides better context and justification for field classifications, improving clarity and audit readiness.
+* **Risk Assessment Export**
+  * A new **“Export Assessment”** button is now available in Risk Assessment.
+  * Users can export the **entire assessment** as a CSV file.
+* **API Security Export**
+  * Customers can now export all data from the **API Security** page into a CSV file.
+  * This export provides a complete view of connected applications and their security posture.
+
+### Other Enhancements
+
+* Copy as JSON
+  * A new **“Copy as JSON”** button has been added to the Permissions Explorer.
+
+This feature allows users to copy the **entire JSON response**, which simplifies troubleshooting, data sharing, and downstream analysis.
+
+### Bug Fixes
+
+* Implemented additional APIs and added extended logs for deeper insights during troubleshooting, improving visibility into system operations.
+
+***
+
 ## Guard 25.2.4 Release Notes
 
 **Release Date: 10 September 2025**

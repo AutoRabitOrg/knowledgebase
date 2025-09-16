@@ -31,7 +31,7 @@ Additionally, the following diagram provides more detailed information regarding
 
 ### Recommendations on Editions&#x20;
 
-_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v4.0 (25.1.1). This release is generally available as of July 18, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3 and SQ 10.6–10.8. Please refer to the release notes for the [Eagle Edition v4](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.2) for complete documentation of features.
+_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v4.0 (25.1.1). This release is generally available as of July 18, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3 and SQ 10.6–10.8. Please refer to the release notes for the [Eagle Edition v4](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.1-eagle-4.0#codescan-release-notes-25.1.1-eagle-4.0) for complete documentation of features.
 
 **Downloads:** After identifying your version of SonarQube, refer to the Installing CodeScan Self-Hosted page to view the [CodeScan Downloads & Compatibility Chart](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-download-versions-and-compatibility-chart).&#x20;
 

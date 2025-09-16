@@ -4,26 +4,26 @@ AutoRABIT Guard is an automated security and compliance solution for Salesforce,
 
 
 
-{% content-ref url="guard/risk-assessment.md" %}
-[risk-assessment.md](guard/risk-assessment.md)
+{% content-ref url="guard/features/risk/risk-assessment.md" %}
+[risk-assessment.md](guard/features/risk/risk-assessment.md)
 {% endcontent-ref %}
 
-{% content-ref url="guard/permissions-explorer.md" %}
-[permissions-explorer.md](guard/permissions-explorer.md)
+{% content-ref url="guard/features/risk/permissions-explorer.md" %}
+[permissions-explorer.md](guard/features/risk/permissions-explorer.md)
 {% endcontent-ref %}
 
-{% content-ref url="guard/change-monitoring.md" %}
-[change-monitoring.md](guard/change-monitoring.md)
+{% content-ref url="guard/features/compliance/change-monitoring.md" %}
+[change-monitoring.md](guard/features/compliance/change-monitoring.md)
 {% endcontent-ref %}
 
-{% content-ref url="guard/policies.md" %}
-[policies.md](guard/policies.md)
+{% content-ref url="guard/features/compliance/policies.md" %}
+[policies.md](guard/features/compliance/policies.md)
 {% endcontent-ref %}
 
-{% content-ref url="guard/integration-user-license.md" %}
-[integration-user-license.md](guard/integration-user-license.md)
+{% content-ref url="guard/getting-started-with-guard/integration-user-license.md" %}
+[integration-user-license.md](guard/getting-started-with-guard/integration-user-license.md)
 {% endcontent-ref %}
 
-{% content-ref url="guard/data-classification.md" %}
-[data-classification.md](guard/data-classification.md)
+{% content-ref url="guard/features/governance/data-classification.md" %}
+[data-classification.md](guard/features/governance/data-classification.md)
 {% endcontent-ref %}

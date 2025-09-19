@@ -1,5 +1,24 @@
 # nCino Release Notes 25.3
 
+## nCino + DL - Release 25.3.11
+
+**Release Date:** September 21, 2025
+
+**Multibucket Rollback**\
+Enhanced rollback functionality to ensure that inserted records are deleted and updated records are accurately reverted to their previous state.
+
+**Multi-Bucket – Duplicate Objects**\
+Resolved an issue where duplicate objects were displayed when working with multiple buckets..
+
+**Single DataLoader – Attachments Processing**\
+Fixed an issue where optional fields were incorrectly considered during delete operations — now only record IDs are considered for deleting the records.
+
+**Feature Deployment – Object Duplication**\
+Addressed duplication issues when using the same branch with the VC Revision Range option including both commits. Objects are no longer duplicated.
+
+**Multibucket Support**\
+Introduced support for multi-bucket functionality in templates, enabling better CI/CD data migration deployments and commits..
+
 ## nCino + DL - Release 25.3.10
 
 **Release Date:** September 14, 2025

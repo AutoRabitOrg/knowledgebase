@@ -1,5 +1,33 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.3.11
+
+**Release Date**: 21st September 2025
+
+**Highlights**: Fixes for EZ-Commit folder retrieval, branch registration, SCA validation, and webhook API token updates.\
+
+
+* **EZ-Commit – Report and Dashboard Folder Retrieval**\
+  Fixed an issue where report and dashboard folders were not being retrieved when using a package.xml. Now, folders and their members are correctly retrieved during EZ-Commit, covering scenarios for both DX and non-DX repos, with and without Autodraft.\
+  &#xNAN;_(Support Case: 150181)_
+* **Branch Registration – Default Branch Change**\
+  Resolved an issue where the main default branch was unintentionally updated when registering a new branch for the first time. The default branch is now updated only if the current default branch does not exist in the remote repository.\
+  &#xNAN;_(Support Case: 149845)_
+* **SCA Validation with Special Characters**\
+  Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
+  &#xNAN;_(Support Case: 152825)_
+* **Webhook API Token Status**\
+  Corrected an issue where the webhook API token’s last status always showed as "Never Accessed," even after being used in CI Job triggers. The last access status now updates correctly when tokens are used.\
+  &#xNAN;_(Support Case: 153909)_
+
+## ARM Release Notes 25.3.10.1&#x20;
+
+**Release Date:** 20th September 2025
+
+* **SCA Validation with Special Characters**\
+  Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
+  &#xNAN;_(Support Case: 152825)_
+
 ## ARM Release Notes 25.3.10
 
 **Release Date**: 14 September 2025

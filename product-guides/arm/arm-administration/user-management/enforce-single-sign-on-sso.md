@@ -35,3 +35,7 @@ An Org Admin can exempt individuals (e.g., contractors) from SSO without disabli
 ### Does AutoRABIT support login IP restrictions?
 
 Yes! Login IPs can be restricted via SSO. Previously, this was only possible with a dedicated, hosted instance. However, restrictions can be enforced via SSO using various providers.
+
+h[ttps://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm](https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm) - Here is a sample doc link from Okta on how to setup network zones that restrict access to apps registered in Okta.
+
+[https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network) - Likewise, here's one from Microsoft Entra SSO.

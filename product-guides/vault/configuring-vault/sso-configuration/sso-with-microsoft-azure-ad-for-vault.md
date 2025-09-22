@@ -2,7 +2,7 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-This guide details how to configure **Single Sign-On (SSO)** in Vault using **Microsoft Entra ID** (formerly Azure AD) as a **SAML 2.0 Identity Provider**.
+This guide details how to configure **Single Sign-On (SSO)** in Vault using **Microsoft Entra ID** (formerly Azure AD) as a **SAML 2.0 Identity Provider**. This enables orgs to restrict login IPs via SSO.
 
 Benefits:
 
@@ -78,5 +78,9 @@ Benefits:
 
 **Causes**:
 
-1. User not assigned in Azure to the Vault app
-2. `restrictAutoCreationOfUser` claim is set to `Yes` and user not pre-created in Vault
+1. User not assigned in Azure to the Vault app.
+2. `restrictAutoCreationOfUser` claim is set to `Yes` and user not pre-created in Vault.
+
+
+
+Here is a sample document from Microsoft Entra on how to set up network zones that restrict access to apps registered in Microsoft Entra: [https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network).

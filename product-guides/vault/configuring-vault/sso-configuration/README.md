@@ -2,7 +2,7 @@
 
 ### Configuring Single Sign-On (SSO) <a href="#configuring-single-signon-sso" id="configuring-single-signon-sso"></a>
 
-SSO is an authentication process that allows users to access multiple applications after only signing in once. Vault supports SSO integration for any identity provider that adheres to the OASIS SAML 2.0 protocol.
+SSO is an authentication process that allows users to access multiple applications after only signing in once. Vault supports SSO integration for any identity provider that adheres to the OASIS SAML 2.0 protocol. This enables orgs to restrict access to IPs via SSO.
 
 ### Permissions <a href="#permissions" id="permissions"></a>
 

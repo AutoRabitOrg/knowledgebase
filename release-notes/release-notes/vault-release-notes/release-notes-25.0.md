@@ -1,5 +1,17 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.1.9 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** Sept 24, 2025
+
+#### **Metadata Backup** <a href="#metadata-backup" id="metadata-backup"></a>
+
+A fix has been implemented to ensure that certain metadata types are processed correctly. Previously, additional prefixes in metadata items during retrieval caused processing failures, which have now been resolved.
+
+#### **Accurate Alerts Information** <a href="#accurate-alerts-information" id="accurate-alerts-information"></a>
+
+Additional information has been added to ensure that email alerts include relevant information that helps users with easier understanding of the source of alert.
+
 ## Vault Release Notes 25.1.8 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** Sept 3, 2025

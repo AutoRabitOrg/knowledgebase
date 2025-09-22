@@ -148,10 +148,7 @@ This section summarizes the Version control limits that ARM users should conside
    Before Commit: \<label><--AC211-->\</label>\
    After Commit: \<label/>\
    This occurs because translation XML files are temporarily converted into Java objects to detect changes during an EZ-Commit.\
-   If a \<label> tag contains only a comment (e.g., \<!--AC211-->) and no actual translation text, the comment is ignored during this conversion, as XML comments are not treated as data. When the XML is regenerated, these tags are output as empty tags (\<label/>), which may look like a value was removed. This is only a format update - the label had no translation value. This change is purely cosmetic and does not affect functionality or deployments. The conversion occurs only once for tags that haven’t been updated. After this initial change, future commits will no longer show this as a difference, resulting in more consistent file comparisons.
-
-Key Point\
-This behaviour is expected and safe. It simply reflects how empty labels are handled during processing and does not impact your deployed translations in any way.
+   If a \<label> tag contains only a comment (e.g., \<!--AC211-->) and no actual translation text, the comment is ignored during this conversion, as XML comments are not treated as data. When the XML is regenerated, these tags are output as empty tags (\<label/>), which may look like a value was removed. This is only a format update - the label had no translation value. This change is purely cosmetic and does not affect functionality or deployments. The conversion occurs only once for tags that haven’t been updated. After this initial change, future commits will no longer show this as a difference, resulting in more consistent file comparisons. This behavior is expected and safe. It simply reflects how empty labels are handled during processing and does not impact your deployed translations in any way.
 
 #### During EZ-Merge <a href="#during-ezmerge" id="during-ezmerge"></a>
 

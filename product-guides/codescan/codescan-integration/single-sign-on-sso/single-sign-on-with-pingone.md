@@ -2,7 +2,7 @@
 
 **PingOne** is a service providing single sign-on (SSO) for web and mobile applications.
 
-As a CodeScan administrator, you can implement **Security Assertion Markup Language (SAML) 2.0 SSO** when your company uses PingOne. Users can then log in to CodeScan without providing their authentication credentials since their identity was previously validated when logging in to their PingOne session.
+As a CodeScan administrator, you can implement **Security Assertion Markup Language (SAML) 2.0 SSO** when your company uses PingOne. Users can then log in to CodeScan without providing their authentication credentials since their identity was previously validated when logging in to their PingOne session. This enables orgs to restrict login IPs via SSO.
 
 This procedure involves the following steps:
 

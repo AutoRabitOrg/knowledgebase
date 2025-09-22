@@ -1,6 +1,23 @@
 # nCino FAQs
 
-## Error: "This session is not valid for use with the API"
+### Can users query other objects without creating a custom community template?
+
+Standard, published nCino templates are locked by design and **cannot be edited** directly. This is to ensure the integrity of the baseline templates provided out-of-the-box. To add custom logic, filters, or query different objects, a user must create a new, editable template. The most efficient way to do this is by cloning an existing standard template.
+
+While you cannot edit a standard template, you can achieve your goal by cloning it and then customizing the clone.
+
+**Action Steps**
+
+1. **Clone the Standard Template:** Navigate to the nCino templates in the module. Select the standard template that most closely matches your requirements (e.g., `nCino-Product Hierarchy Template`) and use the **Clone** function.
+2. **Customise the Cloned Template:** The new, cloned template is fully editable. Open it and add your desired custom filter (e.g., add a filter on the `Product Type` field on the appropriate object).
+3. **Save and Deploy:** Save your customised template. You can now select and use this new template to perform your nCino data deployments with the custom filter applied.
+
+**Best Practice Recommendation for Applying Filters**
+
+* **Standard Scenarios:** The general best practice for standard nCino migrations is to apply filters on the main **"Entry"** object to pull the required data.
+* **Custom Scenarios:** However, when adding a custom filter as described above, it is often more effective and reliable to apply the filter directly on the **child object** that contains the specific field, rather than filtering from the parent object.
+
+### Error: "This session is not valid for use with the API"
 
 This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.
 

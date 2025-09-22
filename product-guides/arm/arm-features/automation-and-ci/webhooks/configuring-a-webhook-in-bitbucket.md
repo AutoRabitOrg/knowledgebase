@@ -1,5 +1,9 @@
 # Configure a Webhook in Bitbucket
 
+{% hint style="info" %}
+As of 9 September 2025, app username and passwords have been deprecated as a type of authentication method. However, as of 9 June 2026, all existing app passwords will be disabled. Users are required to create API tokens and migrate this function prior to the deadline to avoid disruptions: [https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/](https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/).
+{% endhint %}
+
 ## Create a Webhook API Token from ARM
 
 1. Log in to ARM.

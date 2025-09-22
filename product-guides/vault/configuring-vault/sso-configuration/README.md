@@ -33,3 +33,5 @@ To enable SSO for Vault, you need to perform the below steps:
 When SSO is enabled, you can sign in by going to the Vault log-in page, click on **Login with SSO**, and providing your custom domain.
 
 <figure><img src="../../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+
+Here is a sample doc from OKTA on how to setup network zones that restrict access to apps registered in OKTA: [https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm](https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm).

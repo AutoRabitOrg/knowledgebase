@@ -628,6 +628,7 @@
       * [SVN](product-guides/arm-1/registration/version-control-repository/svn.md)
       * [TFS](product-guides/arm-1/registration/version-control-repository/tfs.md)
       * [Bitbucket](product-guides/arm-1/registration/version-control-repository/bitbucket.md)
+      * [Azure](product-guides/arm-1/registration/version-control-repository/azure.md)
     * [Version Control Branch](product-guides/arm-1/registration/version-control-branch/README.md)
       * [GIT Branch Creation](product-guides/arm-1/registration/version-control-branch/git-branch-creation.md)
       * [Creation of a TFS Branch](product-guides/arm-1/registration/version-control-branch/creation-of-a-tfs-branch.md)

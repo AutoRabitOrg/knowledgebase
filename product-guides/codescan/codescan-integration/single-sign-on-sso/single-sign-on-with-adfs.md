@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-This article describes configuring a self-hosted Active Directory Federation Services (ADFS) server to act as a SAML 2.0 identity provider (IDP) in your CodeScan account.
+This article describes configuring a self-hosted Active Directory Federation Services (ADFS) server to act as a SAML 2.0 identity provider (IDP) in your CodeScan account. This enables orgs to restrict login IPs using SSO.
 
 ## **Prerequisites**
 

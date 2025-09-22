@@ -2,15 +2,13 @@
 
 ### Can users query other objects without creating a custom community template?
 
-Standard, published nCino templates are locked by design and **cannot be edited** directly. This is to ensure the integrity of the baseline templates provided out-of-the-box. To add custom logic, filters, or query different objects, a user must create a new, editable template. The most efficient way to do this is by cloning an existing standard template.
-
-While you cannot edit a standard template, you can achieve your goal by cloning it and then customizing the clone.
+Standard, published nCino templates are locked by design and **cannot be edited** directly. This is to ensure the integrity of the baseline templates provided out-of-the-box. To add custom logic, filters, or query different objects, a user must create a new, editable template. The most efficient way to do this is by cloning an existing standard template. While you cannot edit a standard template, you can achieve your goal by cloning it and then customizing the clone.
 
 **Action Steps**
 
 1. **Clone the Standard Template:** Navigate to the nCino templates in the module. Select the standard template that most closely matches your requirements (e.g., `nCino-Product Hierarchy Template`) and use the **Clone** function.
-2. **Customise the Cloned Template:** The new, cloned template is fully editable. Open it and add your desired custom filter (e.g., add a filter on the `Product Type` field on the appropriate object).
-3. **Save and Deploy:** Save your customised template. You can now select and use this new template to perform your nCino data deployments with the custom filter applied.
+2. **Customize the Cloned Template:** The new, cloned template is fully editable. Open it and add your desired custom filter (e.g., add a filter on the `Product Type` field on the appropriate object).
+3. **Save and Deploy:** Save your customized template. You can now select and use this new template to perform your nCino data deployments with the custom filter applied.
 
 **Best Practice Recommendation for Applying Filters**
 

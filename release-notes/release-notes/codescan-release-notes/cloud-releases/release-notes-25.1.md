@@ -20,29 +20,23 @@ Please note that there are updated requirements for customers who are using one 
 
 ## CodeScan Release 25.1.10&#x20;
 
-**Release Date: Sep 21, 2025**
+**Release Date: 21 September 2025**
 
-### Summary:
+### Summary
 
 CodeScan 25.1.10 is comprised of the following 9 components:
 
-·       1 New Feature
-
-·       8 Rule Enhancements
+* 1 New Feature
+* 8 Rule Enhancements
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features:
+### New Features
 
-1\.     CodeScan now imposes verification logic on email signup to enhance secuirty
-
-Previously, users were able to register and log in without verifying their email.  We recognize that this could potentially lead to the creation of fake or fraudulent accounts.
-
-In this release, we have implemented an email verification via unique links to a one-time verification link.  Additionally, we have added logic which restricts access to functionalities for unverified accounts.
-
-Verified the Migrate email verification Rule to Action in Auth0 via the following scenarios:
-
-After signing up, the user receives a verification email. Only after successfully verifying the account, the user is able to log in to the instance as expected.
+1. CodeScan now imposes verification logic on email signup to enhance security. Previously, users were able to register and log in without verifying their email.  We recognize that this could potentially lead to the creation of fake or fraudulent accounts. In this release, we have implemented an email verification via unique links to a one-time verification link.  Additionally, we have added logic that restricts access to functionalities for unverified accounts.\
+   \
+   Verified the Migrate email verification Rule to Action in Auth0 via the following scenarios:\
+   After signing up, the user receives a verification email. Only after successfully verifying the account, the user is able to log in to the instance as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (2021).png" alt="" width="359"><figcaption></figcaption></figure>
 
@@ -54,41 +48,36 @@ After signing up, the user receives a verification email. Only after successfull
 
 ### Rule Enhancements
 
-**1.     Enhancement to sf:ServerSideRequestForgery Rule**
+1. **Enhancement to sf:ServerSideRequestForgery Rule**\
+   As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.\
+   \
+   As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.\
+   \
+   This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding):
 
-As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.
-
-As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.
-
-This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding)\
-\
-Http.send(HttpRequest)\
-HttpRequest.setEndpoint(String)\
-Continuation.addHttpRequest(HttpRequest)\
-PageReference.getContent()
-
-Verified that the rule ServerSideRequestForgery is throwing violations when the following methods are used in the code:
-
+* Http.send(HttpRequest)
 * HttpRequest.setEndpoint(String)
-* PageReference.getContent()
+* Continuation.addHttpRequest(HttpRequest)
+* PageReference.getContent()\
+  \
+  Verified that the rule ServerSideRequestForgery is throwing violations when the following methods are used in the code:
+* HttpRequest.setEndpoint(String)
+* PageReference.getContent()\
 
 
+2. **Enhancement to Resource Injection Rule**\
+   As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection). We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.\
+   \
+   As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.\
+   \
+   This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding):
 
-2. **Enhancement to Resource Injection Rule**
-
-As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.
-
-As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.
-
-This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding)\
-\
-Http.send(HttpRequest)\
-HttpRequest.setEndpoint(String)\
-Continuation.addHttpRequest(HttpRequest)\
-PageReference.getContent()
-
-Verified that the rule Resource Injection is throwing violations when the following methods are used in the code:
-
+* Http.send(HttpRequest)
+* HttpRequest.setEndpoint(String)
+* Continuation.addHttpRequest(HttpRequest)
+* PageReference.getContent()\
+  \
+  Verified that the rule Resource Injection is throwing violations when the following methods are used in the code:
 * HttpRequest.setEndpoint(String)
 * PageReference.getContent()
 
@@ -96,44 +85,38 @@ Verified that the rule Resource Injection is throwing violations when the follow
 
 <figure><img src="../../../../.gitbook/assets/image (2026).png" alt=""><figcaption></figcaption></figure>
 
-3. **Enhancement to “Switch Statements Should Have a When Else Case” Rule**
-
-Currently, the rule is not working as expected, as it does not raise violations when a switch statement lacks a when else block. We have modified that logic to correctly identify switch statements that are missing a when else case so that user can ensure the code is more robust, future-proof, and does not miss handling unexpected cases.
-
-Example:
+3. **Enhancement to “Switch Statements Should Have a When Else Case” Rule**\
+   Currently, the rule is not working as expected, as it does not raise violations when a switch statement lacks a when-else block. We have modified that logic to correctly identify switch statements that are missing a when-else case so that users can ensure the code is more robust, future-proof, and does not miss handling unexpected cases.\
+   \
+   Example:
 
 <figure><img src="../../../../.gitbook/assets/image (2027).png" alt="" width="254"><figcaption></figcaption></figure>
 
-Verified that the updated rule now correctly flags switch statements without a when else block, ensuring violations are raised consistently for missing default cases
+Verified that the updated rule now correctly flags switch statements without a when-else block, ensuring violations are raised consistently for missing default cases.
 
 <figure><img src="../../../../.gitbook/assets/image (2028).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (2029).png" alt=""><figcaption></figcaption></figure>
 
-4. **Enhancement to “Avoid Reversed Operators” Rule**
+4. **Enhancement to “Avoid Reversed Operators” Rule**\
+   Modified the rule logic to correctly detect and report improper usage of reversed operators (=-, =+) in Apex code, so that users can avoid mistakes where variables are unexpectedly reassigned rather than incremented/decremented.\
+   \
+   **Current Behavior:**
 
-Modified the rule logic to correctly detect and report improper usage of reversed operators (=-, =+) in Apex code, so that user can avoid mistakes where variables are unexpectedly reassigned rather than incremented/decremented.
+* Violations are not raised when using reversed operators like target =- num; or target =+ num;.\
+  \
+  **Expected Behavior:**
+* The rule should detect and flag cases of reversed operators (=-, =+) and provide a clear violation message.
+*   The violation message should explain the confusion:
 
-**Current Behavior:**
+    * x =- y; assigns -y instead of subtracting.
+    * x =+ y; assigns +y instead of adding.
 
-·       Violations are not raised when using reversed operators like target =- num; or target =+ num;.
-
-**Expected Behavior:**
-
-·       The rule should detect and flag cases of reversed operators (=-, =+) and provide a clear violation message.
-
-·       The violation message should explain the confusion:
-
-o   x =- y; assigns -y instead of subtracting.
-
-o   x =+ y; assigns +y instead of adding.
-
-This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse.  Further, we updated the rule example with the following:
+    This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse.  Further, we updated the rule example with the following:
 
 <figure><img src="../../../../.gitbook/assets/image (2030).png" alt=""><figcaption></figcaption></figure>
 
 Verified the new logic via the following scenarios:\
-\
 1\.  Rule sf:AvoidReversedOperators raises violations for reversed operator cases (=-, =+).
 
 2\.  Rule does not raise false positives on valid operator usage (+=, -=).
@@ -142,29 +125,26 @@ Verified the new logic via the following scenarios:\
 
 <figure><img src="../../../../.gitbook/assets/image (2032).png" alt="" width="372"><figcaption></figcaption></figure>
 
-5. **Enhancement to “CouplingBetweenObjects” Rule**
-
-Modified the rule logic to correctly detect and report violations so that users can identify classes with excessive dependencies and reduce code complexity for better maintainability and testability.
-
-Verified that the violation is triggered when the number of classes used exceeds the defined threshold value in the rule parameter (for example, if the threshold is set to 4 and 5 classes are used, a violation will be raised).
+5. **Enhancement to “CouplingBetweenObjects” Rule**\
+   Modified the rule logic to correctly detect and report violations so that users can identify classes with excessive dependencies and reduce code complexity for better maintainability and testability.\
+   \
+   Verified that the violation is triggered when the number of classes used exceeds the defined threshold value in the rule parameter (for example, if the threshold is set to 4 and 5 classes are used, a violation will be raised).
 
 <figure><img src="../../../../.gitbook/assets/image (2033).png" alt="" width="359"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (2034).png" alt="" width="359"><figcaption></figcaption></figure>
 
-6. **Enhancement to “Avoid Insecure Digest Algorithms” Rule**
+6. **Enhancement to “Avoid Insecure Digest Algorithms” Rule**\
+   Enhanced the current rule logic to correctly raise violations when MD5 or SHA-1 algorithms are used. Since these algorithms are cryptographically broken and vulnerable to hash collision attacks, their continued use poses a security risk.\
+   \
+   The rule should:
 
-Enhanced the current rule logic to correctly raise violations when MD5 or SHA-1 algorithms are used. Since these algorithms are cryptographically broken and vulnerable to hash collision attacks, their continued use poses a security risk.
-
-The rule should:
-
-* Detect any instantiation or usage of MD5 or SHA-1 for hashing/digesting.
+* Detect any instance or usage of MD5 or SHA-1 for hashing/digesting.
 * Report violations with clear remediation guidance.
-* Suggest secure alternatives such as SHA-256 or SHA-512.&#x20;
-
-Verified the new logic via the following scenario:\
-\
-Validated that users are able to see a violation for the rule _AvoidInsecureMessageDigests_. This violation indicates the use of insecure message digest algorithms such as MD5 or SHA-1.
+* Suggest secure alternatives such as SHA-256 or SHA-512. \
+  \
+  Verified the new logic via the following scenario:\
+  Validated that users are able to see a violation for the rule _AvoidInsecureMessageDigests_. This violation indicates the use of insecure message digest algorithms such as MD5 or SHA-1.
 
 <figure><img src="../../../../.gitbook/assets/image (2035).png" alt="" width="423"><figcaption></figcaption></figure>
 
@@ -172,44 +152,36 @@ Validated that users are able to see a violation for the rule _AvoidInsecureMess
 
 
 
-7. **Enhancement to “Add Empty String” Rule**
-
-Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + "").  Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.
-
-Verified the below scenarios all are working as expected.\
-\
-1\. Empty string with numeric or boolean literals
-
-Examples:\
-'' + 123, 123 + '', '' + -42, '' + 3.14, false + '', '' + true
-
-2\. Empty string with string/char literals or inside chains
-
-Examples:\
-'' + 'abc', 'abc' + '', 'A' + '' + 'B', 1 + '' + 2
-
-3\. Empty string literals inside parentheses
-
-Examples:\
-('' + 1) + 2, 1 + ('' + 2)
-
-4\. Empty string at start of long chain with literals and variables
-
-Example:\
-'' + 123 + 987 + var1 + var2
-
-5\. Empty string used with - operator and literals
-
-Examples:\
-'' - 123, 123 - '', '' - -42
+7. **Enhancement to “Add Empty String” Rule**\
+   Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + "").  Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.\
+   \
+   Verified the below scenarios all are working as expected.\
+   1\. Empty string with numeric or Boolean literals\
+   Examples:\
+   '' + 123, 123 + '', '' + -42, '' + 3.14, false + '', '' + true\
+   \
+   2\. Empty string with string/char literals or inside chains\
+   Examples:\
+   '' + 'abc', 'abc' + '', 'A' + '' + 'B', 1 + '' + 2\
+   \
+   3\. Empty string literals inside parentheses\
+   Examples:\
+   ('' + 1) + 2, 1 + ('' + 2)\
+   \
+   4\. Empty string at start of long chain with literals and variables\
+   Example:\
+   '' + 123 + 987 + var1 + var2\
+   \
+   5\. Empty string used with - operator and literals\
+   Examples:\
+   '' - 123, 123 - '', '' - -42
 
 <figure><img src="../../../../.gitbook/assets/image (2037).png" alt="" width="401"><figcaption></figcaption></figure>
 
-8. **Enhancement to “Avoid Hard Coded Resource References” Rule**
-
-Enhanced the rule logic to identify hard-coded file path references and raise violations with a clear issue message.
-
-Validated the logic by verifying that users are able to see the violations for the use of the attribute value that starts with '/resource/'
+8. **Enhancement to “Avoid Hard-Coded Resource References” Rule**\
+   Enhanced the rule logic to identify hard-coded file path references and raise violations with a clear issue message.\
+   \
+   Validated the logic by verifying that users are able to see the violations for the use of the attribute value that starts with '/resource/'.
 
 <figure><img src="../../../../.gitbook/assets/image (2038).png" alt="" width="545"><figcaption></figcaption></figure>
 

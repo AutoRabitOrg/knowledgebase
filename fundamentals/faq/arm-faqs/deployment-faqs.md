@@ -167,5 +167,5 @@ The special **'Vlocity components'** selection within ARM is a legacy feature de
    * OmniDataTransform (for DataRaptors)
    * OmniIntegrationProcedure
 
-By including these components as standard metadata, your Vlocity/OmniStudio changes will be correctly retrieved and deployed to your target branch or org using your standard ARM workflow
+By including these components as standard metadata, your Vlocity/OmniStudio changes will be correctly retrieved and deployed to your target branch or org using your standard ARM workflow.
 

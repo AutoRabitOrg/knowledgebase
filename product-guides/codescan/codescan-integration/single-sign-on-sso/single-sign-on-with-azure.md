@@ -2,7 +2,7 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-This step-by-step guide explains how to set up Single Sign-On in CodeScan with **Microsoft Entra ID** \[**formerly Azure Active Directory (AD)**] as your SAML 2.0 Identity Provider (IdP).
+This step-by-step guide explains how to set up Single Sign-On in CodeScan with **Microsoft Entra ID** \[**formerly Azure Active Directory (AD)**] as your SAML 2.0 Identity Provider (IdP). This enables users to restrict login IPs via SSO.
 
 When you integrate CodeScan with Entra ID, you can:
 
@@ -133,3 +133,7 @@ Now that your Azure SSO implementation is set up, you’ll need to follow just a
 1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.
 2. Enter the corporate domain name you have configured when enabling SSO inside CodeScan in the **`Your Company email`** field. **For example:** _autorabit.com_
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.
+
+
+
+Here is a sample document from Microsoft Entra SSO on how to setup network zones that restrict access to apps registered in Microsoft Entra: [https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network).

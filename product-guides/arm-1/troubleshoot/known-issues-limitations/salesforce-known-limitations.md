@@ -2,6 +2,55 @@
 
 This article summarizes Salesforce's known issues and limitations that AutoRABIT users should consider:
 
+## Custom Field Translation Retrieval with Source Tracking Enabled
+
+**Issue Summary**\
+When retrieving metadata via Metadata API, if only a single CustomField is included in the package, Salesforce retrieves all Custom Field Translations. This occurs specifically in orgs where Source Tracking is enabled.\
+Reference: [Salesforce Known Issue - Custom Field Translation Retrieval](https://help.salesforce.com/s/issue?id=a028c00000gAwUSAA0)
+
+**Root Cause**\
+This is a Salesforce platform issue affecting orgs with Source Tracking enabled. When Source Tracking is active, all translated values are retrieved, regardless of whether the translation metadata type is explicitly included in the changeset or package.
+
+Source Tracking Settings Overview\
+Types of Source Tracking Settings\
+1\. Dev Hub - Enable Source Tracking (preference):\
+2\. Set in the production org (Dev Hub).\
+3\. Sandbox SourceTracking (permission):\
+4\. Inherits from the Dev Hub setting.\
+5\. Sandbox SourceTrackingDirectlyEnabled (preference):\
+6\. Standalone setting, available since February 2025, can be enabled directly in sandboxes.
+
+Orgs Supporting Source Tracking\
+Supported:
+
+* Developer and Developer Pro sandboxes (if enabled in production)
+  * Scratch orgs (always supported)
+* UnSupported:
+  * Production orgs
+  * Developer Edition orgs
+  * Partial Copy sandboxes
+  * Full sandboxes
+
+How to Enable Source Tracking
+
+*   Method 1: Via Dev Hub (Traditional)
+
+    * Enable "Source Tracking" in Dev Hub settings (Production).
+    * Refresh sandbox; new/refreshed Dev/Dev Pro sandboxes inherit this setting.
+
+
+* Method 2: Direct Enable in Sandbox (Since Feb 2025)
+  * Enable "Source Tracking" directly in the sandbox via Setup > Dev Hub.
+  * This uses the SourceTrackingDirectlyEnabled preference and is independent of the Dev Hub setting.
+
+Note: Once enabled, Source Tracking cannot be disabled by customers; a request to Salesforce Product Team is required.
+
+**Conclusion**\
+This issue is not related to the Winter '25 release. It is directly tied to the known Salesforce issue regarding translation retrieval when Source Tracking is enabled.
+
+**Action**\
+Track this issue for impacted environments and monitor Salesforce updates for a resolution. For further troubleshooting or disabling Source Tracking, escalate to Salesforce Product Support.
+
 ## Deployment <a href="#deployment" id="deployment"></a>
 
 1. For Salesforce API version **45.0**, Salesforce does not allow deployment or retrieval of the **"PlatformEventChannel"** component in any environment. Therefore, AutoRABIT will not be able to retrieve the **"PlatformEventChannel"** component into the destination org even though the deployment is successful.

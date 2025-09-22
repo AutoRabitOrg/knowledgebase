@@ -1,6 +1,6 @@
 # Single Sign-On with OKTA
 
-This article explains configuring Single Sign-On (SSO) in CodeScan with Okta as your SAML 2.0 Identity Provider.
+This article explains configuring Single Sign-On (SSO) in CodeScan with Okta as your SAML 2.0 Identity Provider. This enables users to restrict login IPs via SSO.
 
 To allow users to log in via SAML SSO, CodeScan must be able to trust and rely on Okta to authenticate users wanting to log in. To establish this trust relationship, you must configure Okta and CodeScan so both parties can exchange authentication information.
 
@@ -151,3 +151,7 @@ Once the application is created, you will need to enter the identity provider da
    ![](<../../../../.gitbook/assets/image (1706).png>)
 2. Enter the corporate domain name you have configured when enabling SSO inside CodeScan in the **`Your Company email`** field. **For example**- _`autorabit.com`_
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.
+
+
+
+Here is a sample document from OKTA on how to set up network zones that restrict access to apps registered in OKTA: [https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm](https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm).

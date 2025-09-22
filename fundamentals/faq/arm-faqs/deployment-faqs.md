@@ -1,4 +1,4 @@
-# Deployment
+# Deployment FAQs
 
 ### Is it possible to transfer Analytics Dataset Metadata, Dashboards, and Dataflows from one Salesforce Org to another using AutoRABIT? <a href="#is-it-possible-to-transfer-analytics-dataset-metadata-dashboards-and-dataflows-from-one-salesforce-o" id="is-it-possible-to-transfer-analytics-dataset-metadata-dashboards-and-dataflows-from-one-salesforce-o"></a>
 
@@ -148,4 +148,24 @@ Please follow the troubleshooting steps given by Salesforce to enable the **Exem
 ### Can I deploy standard fields throughout ARM?
 
 Often, users who are having issues deploying HTML reports in AutoRABIT are not aware of an SFDC limitation. Unfortunately, AutoRABIT cannot deploy standard fields because they cannot be edited in Salesforce. They are restricted from the SFDC side. You can commit standard fields but cannot deploy them. &#x20;
+
+### Why are deployments failing when using the legacy Vlocity Components options?
+
+The root cause of this issue is a change in how Salesforce handles Vlocity components. Vlocity has been fully integrated into the Salesforce platform under the name **OmniStudio**, and its components are now treated as **standard Salesforce metadata types** (e.g., OmniScript, OmniUiCard).
+
+The special **'Vlocity components'** selection within ARM is a legacy feature designed for the older, pre-integration version of Vlocity. Attempting to use this deprecated feature for a modern OmniStudio-enabled org will cause the deployment to fail silently, as the underlying APIs and metadata structure have changed.
+
+**Resolution:** To successfully commit and deploy Vlocity/OmniStudio components, you must treat them as standard Salesforce metadata and not use the legacy 'Vlocity components' option.
+
+**Correct Procedure:**
+
+1. **Do Not Use the 'Vlocity Components' Option:** In your commit or deployment process, ignore and do not select the specific 'Vlocity components' checkbox or deployment type.
+2. **Select Standard Salesforce Metadata:** Instead, use the standard metadata selection process (e.g., in an EZ-Commit or during CI Job setup).
+3. **Include OmniStudio Metadata Types:** Select the appropriate standard Salesforce metadata types that correspond to your OmniStudio changes. Common examples include:
+   * OmniScript
+   * OmniUiCard (for FlexCards)
+   * OmniDataTransform (for DataRaptors)
+   * OmniIntegrationProcedure
+
+By including these components as standard metadata, your Vlocity/OmniStudio changes will be correctly retrieved and deployed to your target branch or org using your standard ARM workflow
 

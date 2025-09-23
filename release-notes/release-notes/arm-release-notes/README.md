@@ -1,5 +1,16 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.3.11.1
+
+**Release Date**: 24th September 2025
+
+**Jira Work Items Not Retrieved from Sprints**\
+Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
+
+* Jira had deprecated the API (v2) used by ARM to fetch work items, causing sprint data retrieval failures.
+* ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
+  &#xNAN;_(Support Case: #150934 & #151385)_
+
 ## ARM Release Notes 25.3.11
 
 **Release Date**: 21st September 2025

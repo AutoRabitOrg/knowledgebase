@@ -1,5 +1,74 @@
 # Guard Release Notes 25.2
 
+## Guard 25.2.5 Release Notes&#x20;
+
+**Release Date**: 24 September 2025
+
+### User Activity Monitoring&#x20;
+
+A new User Activity Monitoring section is now available under Compliance, giving admins real-time visibility into Salesforce users' activity.&#x20;
+
+**Highlights**&#x20;
+
+* Real-time monitoring&#x20;
+* Accessible via the standard org switcher&#x20;
+* Data sourced from Salesforce&#x20;
+
+**Why it matters**: Strengthens compliance visibility and enables proactive security monitoring of user behavior.&#x20;
+
+### Change Monitoring Notifications&#x20;
+
+We’ve introduced a dedicated Real-time Change Notifications section with pre-built notification templates, making it easier to detect and respond to critical security-related changes.&#x20;
+
+**Highlights**&#x20;
+
+* Pre-built templates for key events, including:&#x20;
+* Profile created&#x20;
+* Password policy modified&#x20;
+* User assigned to new profile&#x20;
+* Sharing rules updated&#x20;
+* Login IP ranges created/modified or deleted&#x20;
+* External credentials modified&#x20;
+* Remote site settings updated&#x20;
+* Multi-org support for applying templates across environments&#x20;
+* Enhanced detail pages&#x20;
+
+**Why it matters**: Helps enforce Compliance requirements and ensures visibility into high-impact configuration changes.
+
+### Tenant Data Expiration & Deletion&#x20;
+
+Tenant data now has a mandatory expiration time to enforce lifecycle management.&#x20;
+
+**Highlights**&#x20;
+
+* Mandatory expiration is set at tenant creation.&#x20;
+* Automated tenant deletion is triggered on the expiration date.&#x20;
+* Advance notice: Tenant managers receive an email 5 days before deletion.&#x20;
+
+**Why it matters**: Ensures consistent data lifecycle management and enforces retention limits.&#x20;
+
+### Event Logging & Audit Records&#x20;
+
+The platform now provides comprehensive event logging to strengthen accountability and monitoring.&#x20;
+
+**Highlights**&#x20;
+
+* Audit records for key events&#x20;
+* Logs safeguarded against unauthorized modification or deletion&#x20;
+* Supports audit reduction, correlation, and reporting for easier compliance review&#x20;
+
+**Why it matters**: Provides robust traceability and supports effective security investigations.&#x20;
+
+### Bug Fixes&#x20;
+
+* Salesforce Org Registration OAuth Error – Fixed an issue preventing new Salesforce Orgs from being registered due to OAuth flow failures. &#x20;
+* Password Reset Flow – Password policy error messages now clearly display complete requirements&#x20;
+* Permission Explorer – User Metadata – “User Created By” displays details properly&#x20;
+* Permission Explorer – Custom Objects – Object access results are displayed correctly for custom objects.&#x20;
+* Access Controls – User Dropdown Limit – Fixed limitation where only 2,000 users were displayed in the “Define Allowed Users” dropdown; now supports all users in large Salesforce Orgs.&#x20;
+
+***
+
 ## Guard 25.2.4.3 Release Notes
 
 **Release Date**: 15 September 2025

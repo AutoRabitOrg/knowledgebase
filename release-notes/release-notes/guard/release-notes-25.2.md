@@ -23,13 +23,21 @@ We’ve introduced a dedicated Real-time Change Notifications section with pre-b
 **Highlights**&#x20;
 
 * Pre-built templates for key events, including:&#x20;
-* Profile created&#x20;
-* Password policy modified&#x20;
-* User assigned to new profile&#x20;
-* Sharing rules updated&#x20;
-* Login IP ranges created/modified or deleted&#x20;
-* External credentials modified&#x20;
-* Remote site settings updated&#x20;
+
+Profile created&#x20;
+
+Password policy modified&#x20;
+
+User assigned to new profile&#x20;
+
+Sharing rules updated&#x20;
+
+Login IP ranges created/modified, or deleted&#x20;
+
+External credentials modified&#x20;
+
+Remote site settings updated&#x20;
+
 * Multi-org support for applying templates across environments&#x20;
 * Enhanced detail pages&#x20;
 

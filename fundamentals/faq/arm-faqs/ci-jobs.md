@@ -2,15 +2,13 @@
 
 ### What is the webhook payload URL?
 
-After the 25.3.9 release, the structure of the webhook payload URL was updated. Users need to update the webhook URL in the repository settings of their remote repo. Customers who are still using the old webhook URL containing **autorabitrest** should replace them with an API.
+After the 25.3.9 release, the structure of the webhook payload URL was updated. Users need to update the webhook URL in the repository settings of their remote repo. Customers who are still using the old webhook URL containing **autorabitrest** should replace them with API.
 
-Old URL: [https://na25.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest](https://na25.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
+Old URL: [https://na25.autorabit.com/**autorabitrest**/webhook/triggerSCMPushrequest](https://na25.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
 
-Updated URL: https://na25.autorabit.com/api/webhook/triggerSCMPushrequest
+Updated URL: [https://na25.autorabit.com/api/webhook/triggerSCMPushrequest](https://na25.autorabit.com/api/webhook/triggerSCMPushrequest)
 
 Unless you update the payload URL, you may face pull request/trigger build-on-commit jobs triggering.
-
-
 
 ### What are the benefits of using Quick Deploy?&#x20;
 

@@ -85,6 +85,37 @@ Track this issue for impacted environments and monitor Salesforce updates for a 
 
 <figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
+### CI Job Deployment Error: Required Field is Missing: activateRSS
+
+During a CI Job deployment involving Salesforce `InstalledPackage` metadata, the job fails. The error log contains the following specific message: `Error: Required field is missing: activateRSS (line 0, column 0)`&#x20;
+
+This is a known Salesforce behavior introduced with the Summer '18 release. In that release, Salesforce made the `activateRSS` property a required field for the `InstalledPackage` metadata type. However, the Metadata API sometimes retrieves this property as null (`<activateRSS xsi:nil="true"/>`). When this null value is included in a deployment to an org using API v43.0 or later, the system interprets it as a missing required field and throws an error.
+
+There are two primary workarounds to resolve this deployment failure.
+
+**Option 1: Manually Adjust the Metadata**
+
+This is the recommended approach as it maintains API version consistency.
+
+1. In your version control repository, navigate to the metadata for the affected installed package (e.g., `1.installedPackages/appomni.installedPackage`).
+2. Open the XML file for editing.
+3. Locate the `<activateRSS>` tag. It will likely appear as `<activateRSS xsi:nil="true"/>`.
+4. Change this line to explicitly set a value, for example: `<activateRSS>false</activateRSS>`.
+5. Commit the corrected file to your repository and re-run the CI job.
+
+**Option 2: Restrict the API Version**
+
+This is an alternative if you cannot modify the source metadata.
+
+1. In your CI Job configuration, identify the deployment step.
+2. Set the Salesforce Metadata API version for this specific step to **v42.0 or below**.
+3. This bypasses the error because API versions prior to Summer '18 did not require the `activateRSS` field.
+4. **Note:** Be aware that using an older API version may impact other metadata types in your deployment that rely on newer features.
+
+**Reference:**
+
+* [Salesforce Packaging API Documentation](https://developer.salesforce.com/docs/atlas.en-us.pkg1_dev.meta/pkg1_dev/packaging_api_introduction.htm)
+
 ## Version Control <a href="#version-control" id="version-control"></a>
 
 1. While performing an **EZ-Commit**, Salesforce Org is unable to retrieve the complete information on whether some members of the **WaveDataflow** metadata type are available or not in the package.xml file; and if it is available then whether it is **Added, Modified,** and **Deleted.** If the metadata type is available in the package.xml file, it will be listed in both **Added/Modified** and **Deleted** tabs. Select the metadata type in the correct tab, and it will become unavailable in the other tab immediately.

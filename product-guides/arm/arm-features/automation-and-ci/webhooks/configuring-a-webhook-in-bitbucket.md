@@ -4,6 +4,18 @@
 As of 9 September 2025, app username and passwords have been deprecated as a type of authentication method. However, as of 9 June 2026, all existing app passwords will be disabled. Users are required to create API tokens and migrate this function prior to the deadline to avoid disruptions: [https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/](https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/).
 {% endhint %}
 
+{% hint style="info" %}
+After the 25.3.9 release, the structure of the webhook payload URL was updated. Customers need to update the webhook URL in the repository settings of their remote repo. Some customers are still using the old webhook URL containing **autorabitrest**, which should now be replaced with api.
+
+Example:
+
+Old URL: [https://na25.autorabit.com/**autorabitrest/**&#x77;ebhook/triggerSCMPushrequest](https://na25.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
+
+Updated URL: [https://na25.autorabit.com/**api**/webhook/triggerSCMPushrequest](https://na25.autorabit.com/api/webhook/triggerSCMPushrequest)
+
+Unless you update the Payload URL, you might face pull request/trigger build-on-commit jobs triggering.
+{% endhint %}
+
 ## Create a Webhook API Token from ARM
 
 1. Log in to ARM.

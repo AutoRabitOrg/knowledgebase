@@ -1,5 +1,7 @@
 # CI Jobs
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### What are the benefits of using Quick Deploy?&#x20;
 
 When you run a validation deployment through ARM, it will pre-run all unit tests. The Quick Deploy option then allows you to skip those tests in the final production release, knowing they passed previously. Using the Quick Deploy option reduces the amount of time the Production org is locked.&#x20;

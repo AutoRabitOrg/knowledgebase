@@ -1,6 +1,21 @@
-# ARM Release Notes
+# ARM
 
-## ARM Release Notes 25.3.11.1
+## Release Notes 25.3.12
+
+**Release Date** : 28th September 2025
+
+* **Wavedashboard deployment failure due to xmd conversion**\
+  When customers uploaded a package.xml containing wavedashboard type and members, ARM converted them to wavexmd and the deployment failed because the wavexmd files were missing from the zip. Implemented backend logic to prune xmd metadata entries when corresponding xmd files are not retrieved from the source org, preventing missing-file deployment errors.\
+  (Support Case: 151073)
+* **Email approvals bypassing branch access**\
+  Users who had branch access removed could still approve merge requests via the merge validation email notification. Added an enforcement check for email-based approvals that validates destination branch permissions against the merge approval role; users without permission on the destination branch will no longer be shown as eligible approvers or be able to approve via email.\
+  (Support Case: 153126)
+* **Jira Work Items Not Retrieved from Sprints**\
+  Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.” Jira had deprecated the API (v2) used by ARM to fetch work items, causing sprint data retrieval failures.\
+  ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
+  &#xNAN;_(Support Case: #150934 & #151385)_
+
+## Release Notes 25.3.11.1
 
 **Release Date**: 24th September 2025
 
@@ -11,7 +26,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 * ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
   &#xNAN;_(Support Case: #150934 & #151385)_
 
-## ARM Release Notes 25.3.11
+## Release Notes 25.3.11
 
 **Release Date**: 21st September 2025
 
@@ -31,7 +46,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
   Corrected an issue where the webhook API token’s last status always showed as "Never Accessed," even after being used in CI Job triggers. The last access status now updates correctly when tokens are used.\
   &#xNAN;_(Support Case: 153909)_
 
-## ARM Release Notes 25.3.10.1&#x20;
+## Release Notes 25.3.10.1&#x20;
 
 **Release Date:** 20th September 2025
 
@@ -39,7 +54,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
   Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
   &#xNAN;_(Support Case: 152825)_
 
-## ARM Release Notes 25.3.10
+## Release Notes 25.3.10
 
 **Release Date**: 14 September 2025
 
@@ -58,9 +73,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 * **File Upload Error in EZ-Merge Conflict Resolution**: Customers reported being unable to re-upload modified files after downloading the conflict resolution zip in EZ-Merge. The issue was caused by restrictive file size limits.  \
   Fix: Increased the maximum supported file upload size to 100MB, ensuring smoother conflict resolution workflows.
 
-***
-
-## ARM Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
+## Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date**: 7 September 2025
 
@@ -83,7 +96,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 
 ***
 
-## ARM Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
+## Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
 
 **Release Date**: 31 August 2025
 
@@ -101,7 +114,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 
 ***
 
-## ARM Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
+## Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 24 August 2025**
 
@@ -113,7 +126,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 2. **Webhooks – API Token Last Access Not Updating:** Fixed an issue where webhook API tokens continued to display “Never Accessed” even after recent runs triggered by CI jobs. The back-end logic has been corrected to update and display the last access time accurately.
 3. **Rollback – Iteration and Components Not Available After Revert:** Addressed an issue where rolling back a previously deployed iteration caused both the iteration and its components to disappear. A change event has been added to ensure iterations and components are available after a revert rollback.
 
-## ARM 25.3.6 Release Notes
+## 25.3.6 Release Notes
 
 **Release Date: 17 August 2025**
 
@@ -127,7 +140,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 
 * **CI Jobs – Rollback Failure for Selective Components**: Addressed a rollback failure during CI job deployments when rolling back selective components, resulting in a “Not in Package.xml” error. Back-end logic has been updated to handle the workflow metadata type correctly.
 
-## ARM 25.3.5 Release Notes
+## 25.3.5 Release Notes
 
 **Release date: 10 August 2025**
 
@@ -135,7 +148,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 
 * **Branching baseline now supports committing child metadata components for Sharing Rules, Workflow, and Managed Topics**: This enhancement ensures these metadata types are correctly captured and pushed to the remote repository, addressing gaps identified in earlier releases.
 
-## ARM 25.3.4 Release Notes
+## 25.3.4 Release Notes
 
 **Release Date: 3 August 2025**\
 \
@@ -152,7 +165,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 * **Static resources misidentified during destructive EZ-Commit**: Deleting one static resource while another with a similar name remained caused the diff view to include both files. Selection logic has been refined so only the intended destructive file is picked up, even when naming conventions overlap.\
 
 
-## ARM 25.3.3 Release Notes
+## 25.3.3 Release Notes
 
 **Release Date: 27 July 2025**
 
@@ -167,7 +180,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 * **Environment-provisioning flow errors not displayed**: Corrected run-time array handling so success and failure details are now shown when enabling flows via an environment-provisioning template.\
 
 
-## **ARM 25.3.2 Release Notes**
+## **25.3.2 Release Notes**
 
 **Release Date**: **20 July 2025**\
 \
@@ -184,7 +197,7 @@ Fixed an issue where customers were unable to select Jira work items during ALM 
 * **Release Label Creation – Git SSH Response Handling:** Addressed an issue where release label creation failed due to invalid credentials. The system now properly handles Git responses when fetching branches via SSH, ensuring artifact preparation continues smoothly.\
 
 
-## ARM 25.3.1 Release Notes
+## 25.3.1 Release Notes
 
 **Release Date: 13 July 2025**
 
@@ -200,7 +213,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## ARM 25.2.12 Release Notes
+## 25.2.12 Release Notes
 
 **Release Date**: **6 July 2025**\
 \
@@ -234,7 +247,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## ARM 25.2.11 Release Notes
+## 25.2.11 Release Notes
 
 **Release Date: 29 June 2025**
 
@@ -267,7 +280,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## ARM 25.2.10 Release Notes
+## 25.2.10 Release Notes
 
 **Release date: 22 June 2025**
 
@@ -328,7 +341,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 **Module:** CI Job History API (Postman & DB Filter)
 
-## ARM 25.2.9 Release Notes
+## 25.2.9 Release Notes
 
 **Release Date: 15 June 2025**
 
@@ -383,7 +396,7 @@ This release introduces support for **Salesforce API 64 (Summer ‘24)** and add
 
 ***
 
-## ARM 25.2.8 Release Notes <a href="#title-text" id="title-text"></a>
+## 25.2.8 Release Notes <a href="#title-text" id="title-text"></a>
 
 #### Release Date: 8 June 2025 <a href="#release-date-08th-june-2025" id="release-date-08th-june-2025"></a>
 

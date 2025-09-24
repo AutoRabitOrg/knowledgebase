@@ -1207,6 +1207,7 @@
     * [Archival Configuration for your Salesforce Org](product-guides/vault/ncino/archival-configuration-for-your-salesforce-org.md)
     * [Restoring nCino Features](product-guides/vault/ncino/restoring-ncino-features.md)
 * [Guard](product-guides/guard.md)
+  * [How to Set Up Guard](product-guides/guard/how-to-set-up-guard.md)
   * [Getting Started with Guard](product-guides/guard/getting-started-with-guard/README.md)
     * [User Management](product-guides/guard/getting-started-with-guard/user-management.md)
     * [Integration User](product-guides/guard/integration-user-license.md)

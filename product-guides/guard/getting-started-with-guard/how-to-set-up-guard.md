@@ -14,17 +14,17 @@ Sign in to your Guard account.&#x20;
 
 In the right-hand menu, go to Settings.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2042).png" alt="" width="531"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2042).png" alt="" width="531"><figcaption></figcaption></figure>
 
 ### Step 3: Add Your Salesforce Org
 
 Click Add New Org.
 
-<figure><img src="../../.gitbook/assets/image (2044).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2044).png" alt="" width="563"><figcaption></figcaption></figure>
 
 You’ll be prompted to log in with your Salesforce org credentials through a standard OAuth flow.
 
-<figure><img src="../../.gitbook/assets/image (2045).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2045).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: AutoRABIT never sees or stores your Salesforce credentials.
@@ -44,4 +44,4 @@ That’s it! Guard will automatically:
 
 _**You’re now ready to start using Guard!**_
 
-Additionally, we recommend connecting with an Integration User License. Details on how to do this can be found here: [Integration User License](integration-user-license.md)
+Additionally, we recommend connecting with an Integration User License. Details on how to do this can be found here: [Integration User License](../integration-user-license.md)

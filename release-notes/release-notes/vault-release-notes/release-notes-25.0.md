@@ -7,7 +7,7 @@
 **Retry Failed Records**\
 You can now retry only the records that failed during processing, without reprocessing the entire job. This feature streamlines error handling and saves time by allowing exclusive focus on failed records.
 
-<figure><img src="../../../.gitbook/assets/Retry - Failed Records - 0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Retry - Failed Records - 0 (1).png" alt=""><figcaption></figcaption></figure>
 
 **License and Usage Tracking**\
 Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.

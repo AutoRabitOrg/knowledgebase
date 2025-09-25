@@ -1,33 +1,71 @@
 # Risk Assessment
 
-## Overview and How It Works&#x20;
+## Overview
 
-The Risk Assessment feature in AutoRABIT Guard provides a comprehensive, real-time scan of your Salesforce org's security posture, enabling you to quickly identify and address vulnerabilities. &#x20;
+The **Risk Assessment** feature provides a comprehensive overview of your Salesforce organization’s security posture. It analyzes your orgs, checks security settings, and identifies areas of risk—helping you stay compliant and mitigate potential vulnerabilities.
 
-## Features of Risk Assessment&#x20;
+With this tool, you can quickly see where improvements are needed, prioritize critical risks, and maintain a strong security baseline across all environments.
 
-### Security Score&#x20;
+### Getting Started
 
-* Get a clear, overall compliance score that reflects how well your org aligns with the security baseline. This score is based on the number of noncompliant settings, calculated using a simple formula in which each setting is treated equally.&#x20;
+#### Home Page
 
-### Immediate Insights&#x20;
+On the Risk Assessment home page, you’ll see:
 
-* Once you connect your Salesforce org, the Risk Assessment runs automatically, evaluating settings to ensure they align with the baseline and identifying those that need attention. This process requires no manual configuration by you.&#x20;
+* **Overall Compliance Score**: A summary of your security status across all orgs.
+* **Filters for Focus Areas**:
+  * **Critical Orgs**: Environments with a high number of severe risks requiring immediate action.
+  * **Quick Wins**: Risk factors that can be auto-resolved quickly.
+  * **Compliant Orgs**: Salesforce orgs already performing at a high compliance level.
 
-### Categorized Risks&#x20;
+**Tip:** You can toggle between **Card View** and **Table View** for flexible navigation and filtering.
 
-* Risks You Can Resolve Automatically: Items that can be fixed directly within AutoRABIT Guard by clicking the Auto Fix button.&#x20;
-* Risks You Can Resolve Manually: Items requiring manual changes in your Salesforce org, with clear guidance provided for resolution.&#x20;
+#### Org-Level Health Evaluation
+
+When you select a specific Salesforce org, you can access:
+
+* **Filtered Views**: Narrow results by **Relevant Regulations**
+* **Compliance Goals**: Track progress toward key objectives:
+  * Establish secure access and identity
+  * Harden applications and safeguard data
+  * Control exposure
+  * Ensure platform integrity
+
+Scrolling further reveals a detailed list of all detected risks for that org.
+
+<figure><img src="../../.gitbook/assets/image (2047).png" alt="Security Goals"><figcaption><p>Security Goals</p></figcaption></figure>
+
+#### Risk Details
+
+Each identified risk is categorized as either:
+
+* **Unresolved**: Requires your action
+* **Resolved**: Setting is compliant
+
+Risks are also categorized by two severity levels:
+
+* **Critical**
+* **Warning**
+
+For each risk, you can:
+
+* Navigate through risks using the **carousel view**.
+* Open the **detail page** for in-depth information and remediation guidance.
+* View a detailed **summary** including the description, business impact, and how to fix it.
+
+<figure><img src="../../.gitbook/assets/image (2048).png" alt=""><figcaption><p>Security Setting Details</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (2049).png" alt=""><figcaption><p>Risk Details</p></figcaption></figure>
+
+### Acting on Risks
+
+With Risk Assessment insights, you can take recommended steps to remediate issues, strengthen security, and ensure compliance across your Salesforce environments. The tool’s structured breakdown makes it easy to prioritize critical concerns while resolving smaller issues efficiently.
+
+## How the Risk Assessment Works&#x20;
 
 ### Baseline Comparison&#x20;
 
 * AutoRABIT Guard compares your Salesforce org’s security settings against a predefined baseline (Salesforce's Health Check or a custom XML, if configured). Any misaligned settings are highlighted as risks.&#x20;
-
-### Centralized View&#x20;
-
-* The Risk Assessment is a one-stop shop for monitoring your org’s alignment with security best practices.&#x20;
-
-## How the Risk Assessment Works&#x20;
 
 ### Triggering the Scan&#x20;
 
@@ -55,27 +93,22 @@ The baseline (or recommended values) for security settings comes from Salesforce
 &#x20;   `<mediumRiskSecuritySettings>` \
 &#x20;       `<booleanSetting name="PasswordPolicies.minOneDayPasswordLifetime" compliant="true" nonCompliant="critical"/>` \
 &#x20;   `</mediumRiskSecuritySettings>` \
-`</baseline>` \
-&#x20;
+`</baseline>`&#x20;
 
 ## Customizing the Risk Assessment&#x20;
 
-Customers can configure the Risk Assessment by uploading a custom XML to Salesforce. For example, if a customer wishes to treat certain settings (like PasswordPolicies.minPasswordLength) as a warning rather than critical, they can modify the custom XML.&#x20;
+Customers can configure the Risk Assessment by uploading a custom XML to Salesforce. For example, if a customer wishes to treat certain settings (like _PasswordPolicies.minPasswordLength_) as a warning rather than critical, they can modify the custom XML.&#x20;
 
 ## Auto-Resolve Functionality&#x20;
 
-Certain issues, like PasswordPolicies and SessionSettings, can be automatically resolved with a single click. These settings are updated via the Tooling API, not the SecurityHealthCheckRisks API.&#x20;
+Certain risks, such as _PasswordPolicies_ and _SessionSettings_, can be automatically resolved with a single click. These settings are updated via the Tooling API, not the SecurityHealthCheckRisks API.&#x20;
 
-Settings that can be auto resolved:&#x20;
+Settings that can be auto-resolved:&#x20;
 
 * Password Policies (e.g., min password length, max login attempts)&#x20;
 * Session Settings (e.g., session timeout)&#x20;
 
-Other settings, like sharing settings or file upload configurations, require manual intervention because they involve more customer-specific decision-making.&#x20;
-
-### Adding Custom Settings to the Risk Assessment&#x20;
-
-While customers cannot add their own custom settings, AutoRABIT has included two additional settings beyond the Salesforce Health Check. More settings may be added in future releases based on customer feedback and evolving use cases.&#x20;
+Other settings, like sharing settings or file upload configurations, require manual review as they involve additional decision-making.&#x20;
 
 ## Understanding the Risk Assessment Score&#x20;
 
@@ -92,13 +125,13 @@ While the Risk Assessment is based on Salesforce Health Check, there are a few r
 * We don’t use weighted scores, so each setting is treated equally.&#x20;
 * The Risk Assessment includes additional settings that are not part of the Salesforce Health Check, which can affect the score.&#x20;
 
-## How to Use the Risk Assessment&#x20;
+## Example Scenario
 
-#### Connect Your Salesforce Org&#x20;
+#### 1. Connect Your Salesforce Org&#x20;
 
 Once your Salesforce org is connected to AutoRABIT Guard, the Risk Assessment will automatically perform a scan.&#x20;
 
-#### Review the Results&#x20;
+#### 2. Review the Results&#x20;
 
 The results are presented in an easy-to-read table with the following columns:&#x20;
 
@@ -106,14 +139,15 @@ The results are presented in an easy-to-read table with the following columns:&#
 * **Category**: The category the setting belongs to (e.g., password policies, session settings).&#x20;
 * **Recommended Value**: The value that aligns with the security baseline.&#x20;
 * **Current Value in Org**: The actual value currently set in your Salesforce org.&#x20;
+* **Severity:** Critical/Warning
 * **Status**: Whether the setting meets the baseline or requires action.&#x20;
 
-#### Take Action&#x20;
+#### 3. Take Action&#x20;
 
-* **Auto-Fix Issues**: Click the “Auto Fix” button to automatically resolve the issue.&#x20;
+* **Auto-Fix**: Click the “Auto-Fix” button to resolve the issue automatically (where it's applicable).&#x20;
 * **Manual Fixes**: Follow the provided guidance to make manual updates to your Salesforce org.&#x20;
 
-#### Reassess Anytime&#x20;
+#### 4. Reassess Anytime&#x20;
 
 You can re-run the Risk Assessment at any time to ensure your org remains aligned with the security baseline.&#x20;
 

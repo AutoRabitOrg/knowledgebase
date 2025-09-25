@@ -4,14 +4,14 @@
 
 The **Real-Time Change Notifications** feature allows you to stay ahead of sensitive changes in your Salesforce environments. By setting up notification rules, you can ensure that the right stakeholders are instantly alerted whenever critical events occur, helping you maintain compliance and strengthen governance.
 
-### Key Benefits
+## Key Benefits
 
 * **Proactive Monitoring**: Receive immediate alerts when sensitive changes are made.
 * **Customizable Rules**: Create notifications for any metadata type or specific actions.
 * **Predefined Templates**: Quickly set up notifications for common compliance-related scenarios.
 * **Audit & Compliance Support**: Map notifications to regulatory requirements and ensure accountability.
 
-### Getting Started
+## Getting Started
 
 #### Home Page
 

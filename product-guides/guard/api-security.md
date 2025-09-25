@@ -4,7 +4,7 @@ New **API Security** feature has been introduced in Guard to help customers iden
 
 **API Security** tab is located under the **Risk** section. From here, users can inspect API activity for all Salesforce orgs registered in Guard:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2051).png" alt=""><figcaption><p>API Security Dashboard</p></figcaption></figure>
 
 **Value to Users:**
 

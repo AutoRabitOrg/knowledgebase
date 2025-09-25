@@ -1211,7 +1211,7 @@
     * [How to Set Up Guard](product-guides/guard/getting-started-with-guard/how-to-set-up-guard.md)
     * [User Management](product-guides/guard/getting-started-with-guard/user-management.md)
     * [Integration User](product-guides/guard/integration-user-license.md)
-    * [SSO](product-guides/guard/getting-started-with-guard/sso.md)
+    * [Single Sign-On (SSO)](product-guides/guard/getting-started-with-guard/single-sign-on-sso.md)
   * [Features](product-guides/guard/features/README.md)
     * [Governance](product-guides/guard/features/governance/README.md)
       * [Data Classification](product-guides/guard/data-classification.md)

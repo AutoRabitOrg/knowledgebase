@@ -1222,6 +1222,8 @@
     * [Compliance](product-guides/guard/features/compliance/README.md)
       * [Change Monitoring](product-guides/guard/change-monitoring.md)
       * [Access Controls](product-guides/guard/policies.md)
+      * [User Activity Monitoring](product-guides/guard/features/compliance/user-activity-monitoring.md)
+      * [Real-time Change Notifications](product-guides/guard/features/compliance/real-time-change-notifications.md)
 
 ## Resources
 

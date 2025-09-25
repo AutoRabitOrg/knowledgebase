@@ -14,7 +14,7 @@ Sign in to your Guard account.&#x20;
 
 In the right-hand menu, go to Settings.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2042).png" alt="" width="531"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2042) (1).png" alt="" width="531"><figcaption></figcaption></figure>
 
 ### Step 3: Add Your Salesforce Org
 

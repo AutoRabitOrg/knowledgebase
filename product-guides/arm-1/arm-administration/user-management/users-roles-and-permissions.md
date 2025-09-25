@@ -121,12 +121,12 @@ Admins can download all user data as CSV.
 2.  Click **Create Role**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 3.  Provide a **Role Name**, **Description**, and tick permissions.\
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Click **Save**.
 
 > _The default **Admin** role has full permissions and cannot be edited or renamed._

@@ -1,53 +1,85 @@
 # Permissions Explorer
 
-## Overview and How It Works
+## Overview
 
-The Permissions Explorer feature in AutoRABIT Guard is designed to simplify Salesforce permissions analysis by categorizing permissions into familiar IT security categories. This enables security professionals to easily evaluate Salesforce-specific permissions in the context of their organization’s security policies and better understand “who can do what” within the Salesforce org.
+The **Permission Explorer** feature provides deep visibility into Salesforce user access. It helps administrators quickly identify sensitive or overprivileged permissions and understand exactly how those permissions are granted. With two modes—**User Permissions** and **Object Access**—Permission Explorer makes it easier to strengthen security, maintain compliance, and prevent unauthorized access.
 
-## Features of Permissions Explorer
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Permissions Explorer Home Page</p></figcaption></figure>
 
-### Category-Based Permissions Classification
+### Key Benefits
 
-* Permissions are grouped into traditional IT security categories, such as data access, privilege escalation, and system modification. This categorization bridges the gap between Salesforce’s unique permissions structure and traditional security practices, making it easier to understand the implications of each permission.
+* **Identify Risky Access**: Detect users with sensitive or overly broad permissions.
+* **Trace Permissions**: See where access comes from.
+* **Explore Object Access**: Understand who can read, edit, create, or delete specific objects.
+* **Predefined Templates**: Start quickly with built-in queries for common risk scenarios.
+* **Compliance & Audit Support**: Demonstrate clear oversight of access control during audits.
 
-### Org-Level Permissions Insights
+## Modes of Permission Explorer
 
-* Select any Salesforce org and a specific set of permissions to analyze. The tool will immediately identify all users who have access to those permissions, helping you locate overprivileged accounts that might pose a security risk.
+### 1. Explore User Permissions
 
-### Permissions Path Visualization
 
-* For each permission, the Permissions Explorer displays a complete path of access, including:
-  * Direct assignments through profiles and permission sets.
-  * Indirect assignments through permission set groups.
 
-### Interactive and Intuitive Interface
+*   **Quick Explorer**\
+    Use predefined templates to answer critical questions such as:&#x20;
 
-* The tool offers two viewing modes:
-  * **Diagram View**: Provides a visual representation of permissions.
-  * **Tree View**: Presents a more structured and organized layout.
+    * Who can access everything without restriction?
+    * Who can deploy code directly to production?
+    * Who can take over user accounts?
+    * Who can grant elevated access to themselves or others?
+    * Who can move large volumes of data in and out?
+    * Who can weaken password policies?
 
-Both formats provide clear, actionable insights into how permissions are assigned and who has access.
+    These templates accelerate common security investigations and reduce manual query building.
 
-## How the Permissions Explorer Works
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Quick Explorer</p></figcaption></figure>
 
-#### Step 1: Choose Your Salesforce Org
+* **Saved Queries**\
+  Any custom queries you’ve created are saved and easily accessible from the Permission Explorer homepage.
+*   **Custom Explorer**\
+    For deeper analysis, create your own queries by selecting permissions grouped into categories such as:
 
-* From the dropdown menu, select the Salesforce org you want to analyze.
+    * Access Control
+    * Custom Code
+    * Data Export / Data Input
+    * Integration
+    * Password Management
+    * Super Admin Permissions (full permissions reserved for only a few trusted users)
+    * User Management
 
-#### Step 2: Select Permissions to Inspect
+    Once permissions are selected, the tool shows:
 
-* Choose one or more permissions from the predefined list to investigate. This list currently includes the most common Salesforce user permissions. If you need to inspect permissions not listed, please log a support ticket.
+    * Which users hold the permissions
+    * The **source of access** (profile or permission set)
+    * A **User Detail Page** with account status, creator, and activity insights
 
-#### Step 3: View the Results
+### 2. Explore Object Access
 
-* The Permissions Explorer will display a list of users who match the selected permissions.
-* Use Diagram View or Tree View to explore how each user gained access to the permissions, including any intermediate assignments (e.g., profiles, permission sets).
+This mode helps you evaluate **Object-level permissions** across your Salesforce orgs.
 
-#### Step 4: Take Action
+Steps:
 
-* Use the insights provided to adjust profiles and permission sets directly in Salesforce to reduce overprivileged access and enforce the principle of least privilege.
+1. Select a Salesforce org.
+2. Choose **Standard** or **Custom** objects.
+3. Select the type of access to check: **Read, Create, Edit,** and/or **Delete**.
+4. Submit the query.
 
-### How We Determine Which Users Have Selected Permissions
+Results show:
+
+* Which users have the selected access level.
+* Why they have access (via profile or permission set).
+
+This mode is especially useful for compliance checks and ensuring the proper protection of sensitive objects (such as customer data).
+
+### Best Practices
+
+* **Start with Quick Explorer**: Use templates to spot the most common and risky scenarios.
+* **Audit Super Admins**: Regularly review who has full permissions and validate their necessity.
+* **Save Custom Queries**: Build queries that align with your internal policies or compliance frameworks and revisit them regularly.
+* **Review Object Access Quarterly**: Ensure sensitive custom objects aren’t unintentionally exposed.
+* **Combine with User Activity Monitoring**: Use insights from Permission Explorer alongside activity data for a complete security picture.
+
+## How We Determine Which Users Have Selected Permissions
 
 To find users with specific permissions, we run complex SOQL queries (Salesforce Object Query Language) to the Salesforce org.
 
@@ -58,19 +90,19 @@ The queries retrieve users who are active and not frozen. The results will only 
 * The list of permissions available for analysis is predefined and includes the most common permissions. Some examples might include permissions like Modify All Data, Export Reports, and Author Apex.
 * **Permissions not on the list**: Currently, customers cannot inspect permissions outside the predefined list. However, if there’s demand for a specific permission, AutoRABIT’s product team can consider adding it in future releases.
 
-### Does Guard Support Permissions Granted via Profiles or Permission Sets?
-
-* Yes! The Permissions Explorer displays permissions granted through the following mechanisms:
-  * **Profiles**: Direct assignment of permissions to users via their profile.
-  * **Permission Sets**: Additional permissions granted to users via permission sets.
-  * **Permission Set Groups**: Permissions granted via group permission sets.
-
 ### Why Use the Permissions Explorer?
 
 * **Identify Overprivileged Users**: Quickly locate users who have excessive or unnecessary permissions, helping to enforce the principle of least privilege.
 * **Simplify Permission Audits**: Gain a clear understanding of who has access to critical permissions and how they were granted, making compliance audits more efficient.
 * **Enhance Security Posture**: By classifying permissions into familiar security categories, security teams can more easily identify and mitigate potential risks, aligning Salesforce permissions with traditional security policies.
 
-&#x20;
+### Example scenarios
+
+1. **Security Audits**: Verify that only approved users have high-level permissions.
+2. **Compliance Reviews**: Map permissions to regulatory requirements and flag risky access.
+3. **Troubleshooting**: Investigate unexpected user activity by tracing their assigned permissions.
+4. **Access Optimization**: Identify and reduce overprivileged accounts.
+
+
 
 &#x20;

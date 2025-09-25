@@ -1,8 +1,8 @@
 # Change Monitoring
 
-## Overview and How It Works
+## Overview
 
-Change Monitoring in AutoRABIT Guard provides an enhanced, comprehensive audit trail for your Salesforce org. Built on top of Salesforce’s native Setup Audit Trail, Change Monitoring significantly improves visibility and accountability for changes made in the production environment. Whether changes occur directly in Salesforce, through AutoRABIT deployments, or via other methods, Change Monitoring captures them, organizes them, and presents them in an accessible and actionable way.
+Change Monitoring in AutoRABIT Guard provides an enhanced, comprehensive Audit trail for your Salesforce org. Built on top of Salesforce’s native Setup Audit Trail, Change Monitoring significantly improves visibility and accountability for changes made in the production environment. Whether changes occur directly in Salesforce, through AutoRABIT deployments, or via other methods, Change Monitoring captures them, organizes them, and presents them in an accessible and actionable way.
 
 With Change Monitoring, you can ensure complete visibility into every change made in your Salesforce org, making it an invaluable tool for security, governance, and compliance.
 
@@ -100,7 +100,6 @@ Change Monitoring enhances this raw event into a detailed object like this:
 &#x20; `"isMetadata": true,`\
 &#x20; `"riskLevel": "High Risk"`\
 `}`\
-\
 
 
 This enriched event provides:
@@ -225,19 +224,5 @@ This detailed parsing and categorization process allows teams to perform a deep 
 
 * **Data Retention**: Change Monitoring can store up to one year of historical data, far more than the six-month limit imposed by Salesforce's native audit trail.
 * **Refresh Rate**: The audit trail is refreshed every five minutes, meaning changes made in Salesforce are captured in near real time. Users can also manually trigger a refresh.
-
-### Email Notifications
-
-Change Monitoring includes customizable email notifications to ensure you stay informed when significant changes occur. You can define specific criteria for notifications, such as:
-
-* **Profile Creation**: Get notified when a new profile is created.
-* **Apex Class Modification**: Stay informed about changes to code or components that could impact your org’s security posture.
-
-When a change matches your defined criteria, Change Monitoring sends an email alert, summarizing:
-
-* **What Changed**: Metadata type and record name.
-* **When**: The timestamp of the change.
-* **Who**: The user who made the change.
-* **Category**: The category of the change (e.g., profile changes, Apex class modifications).
 
 &#x20;

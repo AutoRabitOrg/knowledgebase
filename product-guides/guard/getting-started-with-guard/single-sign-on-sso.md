@@ -4,16 +4,12 @@
 
 Single Sign-On (SSO) allows your organization to streamline and secure access to Guard by integrating with your corporate identity provider (IdP), such as Microsoft Entra ID. With SSO, users log in using their existing corporate credentials, reducing the need for multiple passwords and centralizing access control.
 
-
-
 ### Benefits of Using SSO
 
 * Enhanced Security: Centralized authentication through your IdP ensures strong password policies, MFA, and compliance with your security standards.
 * Simplified User Experience: Users log in once with their corporate account and gain access without needing separate Guard credentials.
 * Centralized User Management: Control user access through your IdP groups instead of managing accounts manually in Guard.
 * Improved Compliance & Auditing: Authentication and authorization are handled through a single, auditable system.
-
-
 
 ### How SSO Works with Guard
 
@@ -34,16 +30,12 @@ Guard supports a tenant setting called Only SSO Authentication. When this option
 
 This mode ensures Guard access is exclusively controlled through your IdP, providing maximum security and centralized account lifecycle management.
 
-
-
 ### Best Practices
 
 * Coordinate with your IT/IdP administrators when enabling SSO.
 * Assign Guard access through IdP groups instead of creating users manually.
-* Enable Only SSO Authentication once you’re confident your IdP is fully managing user access.
+* Enable SSO-only Authentication once you’re confident your IdP is fully managing user access.
 * Maintain at least two Admins in Guard during the transition to prevent lockouts.
-
-&#x20;
 
 SSO in Guard provides a secure and scalable way to manage authentication, while shifting User Management to your organization’s IdP.
 

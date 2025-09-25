@@ -83,7 +83,7 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
    * You’ll be redirected to JIRA to log in and approve access.
    * Once authorized, the connection is complete.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 

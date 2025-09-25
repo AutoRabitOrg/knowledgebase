@@ -32,7 +32,7 @@ Available templates include:
 
 Each template card also explains why the change is sensitive and which regulations it may affect.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Notification templates</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Notification templates</p></figcaption></figure>
 
 #### Managing Rules
 

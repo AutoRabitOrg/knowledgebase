@@ -95,11 +95,11 @@ The baseline (or recommended values) for security settings comes from Salesforce
 &#x20;   `</mediumRiskSecuritySettings>` \
 `</baseline>`&#x20;
 
-## Customizing the Risk Assessment&#x20;
+### Customizing the Risk Assessment&#x20;
 
 Customers can configure the Risk Assessment by uploading a custom XML to Salesforce. For example, if a customer wishes to treat certain settings (like _PasswordPolicies.minPasswordLength_) as a warning rather than critical, they can modify the custom XML.&#x20;
 
-## Auto-Resolve Functionality&#x20;
+### Auto-Resolve Functionality&#x20;
 
 Certain risks, such as _PasswordPolicies_ and _SessionSettings_, can be automatically resolved with a single click. These settings are updated via the Tooling API, not the SecurityHealthCheckRisks API.&#x20;
 
@@ -110,7 +110,7 @@ Settings that can be auto-resolved:&#x20;
 
 Other settings, like sharing settings or file upload configurations, require manual review as they involve additional decision-making.&#x20;
 
-## Understanding the Risk Assessment Score&#x20;
+### Understanding the Risk Assessment Score&#x20;
 
 The Risk Assessment feature calculates an overall score based on the number of settings that are noncompliant. The score is determined by the following formula:&#x20;
 

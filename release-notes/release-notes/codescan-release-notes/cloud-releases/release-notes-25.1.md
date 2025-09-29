@@ -883,7 +883,7 @@ Verified the ability to define User Type While Inviting or Adding Member by vali
 
 <figure><img src="../../../../.gitbook/assets/image (1841).png" alt="" width="563"><figcaption></figcaption></figure>
 
-8. Able to see the standard and platform user type while adding a member to the organisation
+8. Able to see the standard and platform user type while adding a member to the organization
 
 <figure><img src="../../../../.gitbook/assets/image (1842).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -929,7 +929,7 @@ Verified the Add Eslint rules from @lwc/eslint-plugin-lwc for the below scenario
 
 CodeScan has offered this rule since Dec 2017.  Recently a customer reported that Unused Formal parameter doesn’t find when variables used in SOQL.  We replicated this issue where CodeScan flagged a variable as an unused variable even though it is used in the SOQL string.
 
-We have enhanced this rule to detect additional cases where string parameters are part of SOQL.  Bottom of FormThe  Top of FormThe rule now detects cases where string params are used as part of building soql query.
+We have enhanced this rule to detect additional cases where string parameters are part of SOQL.  The rule now detects cases where string params are used as part of building soql query.
 
 Verified the enhanced logic of rule “UnusedFormalParameter” via the following scenarios.\
 \
@@ -1193,7 +1193,7 @@ Thus, this enhancement expands upon the existing capability and introduces much 
 
 With this release, when generateSarifFile: false or generateReportFile: true, the SARIF file:
 
-* Contains only open issues respective to the baranch and PR
+* Contains only open issues respective to the branch and PR
 * Includes full metadata for each issue, including Type and Severity for rules and results
 
 

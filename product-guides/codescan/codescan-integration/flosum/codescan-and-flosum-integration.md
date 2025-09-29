@@ -11,7 +11,7 @@
 ## How to Integrate Flosum with CodeScan <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
 
 1. **Install CodeScan.**&#x20;
-   1. Obtain the CodeScan package URL from your Customer Success Manager.&#x20;
+   1. Obtain the CodeScan package URL from your Flosum Customer Success Manager.&#x20;
    2. Install the CodeScan package in your Flosum organization.&#x20;
    3. After installation, click on the app launcher and open Flosum-CodeScan.
 

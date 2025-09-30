@@ -2,6 +2,8 @@
 
 ## nCino + DL - Release 25.3.12
 
+**Release Date:** September 28, 2025
+
 **Multi-Bucket Support**
 
 Enhanced multi-bucket handling to ensure records are processed without creating duplicate entries.

@@ -1,5 +1,31 @@
 # nCino Release Notes 25.3
 
+## nCino + DL - Release 25.3.12
+
+**Multi-Bucket Support**
+
+Enhanced multi-bucket handling to ensure records are processed without creating duplicate entries.
+
+**Viewing Diff Count**
+
+Fixed an issue preventing users from viewing record differences when multiple templates were committed to the repository. Diff counts now display accurately.
+
+**Templates with Multi-Buckets**
+
+Resolved a deployment failure scenario where templates containing multiple buckets caused object deployment errors.
+
+**Build Failure Due to Null Entry**
+
+Fixed a defect where builds failed because of null entry objects. Builds now complete successfully.
+
+**Error Uploading to S3**
+
+Improved stability of data uploads to S3 to ensure seamless and reliable transfers.
+
+**Multi-Object Set Template**
+
+Implemented safeguards to prevent failures in multi-object set templates during execution.
+
 ## nCino + DL - Release 25.3.11
 
 **Release Date:** September 21, 2025

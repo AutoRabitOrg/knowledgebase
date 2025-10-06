@@ -18,6 +18,187 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.11
+
+**Release Date: Oct 05, 2025**
+
+### Summary:
+
+CodeScan 25.1.11 is comprised of the following 5 components:
+
+* 2 Application Enhancements
+* 2 Rule Enhancements
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### Application Enhancements
+
+1. **Update Project Analysis Subtitle Dynamically**
+
+Several customers have reported that, regardless of project analysis, each time a user attaches ANY analysis project to CodeScan, there’s this message that says “Connects to your Salesforce instance.”
+
+We recognize that when using \*Project > Project Analysis\*, the subtitle should dynamically update to display the text:
+
+* When the user selects \*Salesforce\* as ALM, the label updates to show: \_“Connects to your Salesforce instance to execute a CodeScan analysis.”
+* When the user selects \*Repository (GitHub, BitBucket, GitLab)\* as ALM for Project Analysis, the label updates to show: “Connects to your \[ALM name] Repository to execute a CodeScan analysis.”
+* Further, the label must update in real time upon ALM selection, without requiring a page refresh
+
+This ensures the user clearly understands the connection purpose based on the selected ALM.
+
+{% hint style="info" %}
+NOTE:  if we cannot update dynamically, CodeScan will use the following generic text: “Connects to your Salesforce instance or Repository to execute a CodeScan analysis.”
+{% endhint %}
+
+Verified the **Update Project Analysis Subtitle Dynamically** via the following scenarios:
+
+\
+Verified for the existing projects and newly created projects (all project integrations). The user is able to see the updated static description on the project analysis page as expected:
+
+**“Connects to your Salesforce instance or repository to execute a CodeScan analysis.”**
+
+<figure><img src="../../../../.gitbook/assets/image (2052).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2053).png" alt=""><figcaption></figcaption></figure>
+
+2. **New Version of CodeScan VS Code Extension (v 2.1.2)**
+
+**Description**
+
+In the previous version of VS Code (2.1.1 and earlier), we had a reported bug: issues that have been resolved in the UI are still showing in VS Code.  In the past, these issues have been ignored and would be updated with a refresh of the connection.
+
+In this updated extension, we have implemented improved synchronization of resolved issues from CodeScan server, which addresses the reported issue.
+
+* Verified the VS Code plugin for the following file types: .cls, .page, .java, .js, .trigger, .css, .ts, .cmp.
+* Violations are appearing as expected in both the CodeScan environment and the VS Code plugin.
+* The resolution actions — Accept, False Positive, Confirm, and Fixed — are functioning correctly.
+* Verified the same functionality in the US PROD environment, which is working as expected and consistent with the TEST environments.
+* Verified the VS Code plugin on the self-hosted environment. After the user refreshes the connection, the resolutions are displaying as expected.
+* Also verified on the **Self-hosted** environments (SQ versions 25.1 and 25.2):
+  * When the user sets an issue as False Positive or chooses to Accept the issue, the issue count is reduced on the UI as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2054).png" alt="" width="510"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2055).png" alt="" width="498"><figcaption></figcaption></figure>
+
+### Rule Enhancements
+
+1. **Enhancement to “sf:AvoidLogicInTrigger” Rule**
+
+Historically, this rule finds any blocks of code in a trigger and throws a violation.
+
+In this enhancement, we added a parameter to the rule allowing users to add a comma separated list of trigger frameworks that are allowed.
+
+The new parameter is “allowedTriggerFrameworks”
+
+Description: A comma separated list of Trigger frameworks to allow. Violations will still be reported if complex logic is present within the allowed parameters.
+
+For more information, please review an overview of triggerframeworks: [https://www.saasguru.co/salesforce-trigger-frameworks-guide/?srsltid=AfmBOopNA\_BxSsI\_tjZ1EGP3n59fi-\_TW5Q-TQaoFFv1tIIYKZEyDJ5f](https://www.saasguru.co/salesforce-trigger-frameworks-guide/?srsltid=AfmBOopNA_BxSsI_tjZ1EGP3n59fi-_TW5Q-TQaoFFv1tIIYKZEyDJ5f)
+
+\
+Details of the new parameter:
+
+* Allow:
+  * Trigger.is\* checks
+  * Direct calls to whitelisted methods/properties (including inside conditions or assignments).
+* Flag:
+  * Any iteration (for, while, do) in a trigger is a violation, regardless of whitelist.
+  * Any non-whitelisted method calls.
+  * Any direct DML, SOQL, or field logic.
+  * Variables assigned from whitelisted methods used later in invalid contexts (like while(var)).
+
+Verified the new parameter on the sf:AvoidLogicInTrigger rule to ensure compatibility with trigger frameworks via the following scenarios:
+
+1. Any control statement with {} (e.g., if, for, switch) in trigger body → Violation.
+2. Exception: if that uses Trigger.is… → No Violation.\
+   However, if Trigger.is… appears inside a for loop, it’s still a Violation.
+3. If a method is added to the rule parameter (allow-list) (e.g., checkPermission), then an if using it → No Violation.
+
+**But**: for, while, do-while, SOQL, DML → always Violation (allow-list does not suppress these).
+
+**But**: for, while, do-while, SOQL, DML → always Violation (allow-list does not suppress these).
+
+<figure><img src="../../../../.gitbook/assets/image (2056).png" alt="" width="398"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2057).png" alt="" width="338"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2058).png" alt="" width="474"><figcaption></figcaption></figure>
+
+2. Enhancement to “Use Annotation on Test Class” Rule
+
+During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword.  It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
+
+**Fix**:\
+Updated the rule logic to support detection of @IsTest annotation on test classes, ensuring compliance with current Apex best practices
+
+Verified the enhanced rule logic in “Use Annotation on Test Class” via on the the below scenarios
+
+1. A non-test class or Utility class without test methods → Verified: No violation raised.
+2. @IsTest annotated class with test methods (@IsTest and/or testMethod) → Verified: No violation raised.
+3. Class containing only testMethod methods without @IsTest → Verified: Violation raised.
+4. Class containing only @IsTest methods without class-level @IsTest → Verified: Violation raised.
+
+<figure><img src="../../../../.gitbook/assets/image (2059).png" alt="" width="419"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2060).png" alt="" width="536"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2061).png" alt="" width="536"><figcaption></figcaption></figure>
+
+### Fixes
+
+1. Fixed Application Issue where the “Issues Filter” was not working as expected with CWE tags
+
+Several customers have reported that the Issues Filter does not work with CWE tags. Although individual issues correctly display their associated CWE ID, searching or filtering by a specific CWE ID in the Issues view will sometimes return no results.
+
+We have identified that the root cause of the issue was that the CWE filter for Issues and Rules was limited to display and filter through only 10 items in the filter dropdown.  Ergo, we expanded the filter limit to display up to 100 items and enabled input-based search across all options for enhanced usability and consistency.
+
+**After extensive research, we concluded:**
+
+_**Rules page – CWE search**_
+
+* In the Rules page, only the first \~10 CWE entries show up under the search. Beyond those, no additional rules appear when searching by CWE.
+
+_**Issues page – CWE filter**_
+
+* Issues do show up for certain CWEs, but not consistently.\
+  Example: an issue mapped to CWE-470 appears, yet the same issue also mapped to CWE-80 does not appear when searching for 80.
+* When a rule/issue has multiple CWE values, the CWE filter on the Issues page sometimes returns results for only one of those CWE values, not all.
+
+_**Filter/search behavior**_
+
+* The CWE filter search bar does not call an API while you type. It only searches within the already-fetched list from the backend.
+* An API request is made only after you click/select a specific CWE from that list to load rules/issues for that CWE.
+
+_**Technical details (implementation)**_
+
+* standardfacet.tsx renders the CWE filter component; handleSearch manages the in-filter search behavior.
+* Standards.json lists CWE values and descriptions. Even after adding additional CWE entries into this file, those new values still don’t appear in the filter list.
+  * Conclusion: the filter list is not driven solely by Standards.json, or it’s being constrained elsewhere.
+
+**Data/API status**
+
+* Database: contains all rules with their full set of CWE values.
+* API: works as expected when calling with cwe=\<value>; results return correctly.\
+  The inconsistency happens only in the filter UI, so we should inspect the UI-side response and check for any server or client-imposed limits on the number of CWE results returned.
+
+We have remediated these issues with this fix.
+
+Verified the fix for “Issues Filter is not working with CWE tags” via the following scenarios.
+
+1. Searching or filtering by a specific CWE ID in the Issues page under Security Category is working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2062).png" alt="" width="563"><figcaption></figcaption></figure>
+
+2. Verified that the Show More button under the CWE filter works correctly, with the default filter count set to 15.
+
+<figure><img src="../../../../.gitbook/assets/image (2063).png" alt="" width="338"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2064).png" alt="" width="339"><figcaption></figcaption></figure>
+
+3. Even when the CWE filter is limited to the default 15 entries, searching for an ID like CWE-16 still returns the correct result for the user.
+
+***
+
 ## CodeScan Release 25.1.10&#x20;
 
 **Release Date: 21 September 2025**

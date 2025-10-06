@@ -1,5 +1,21 @@
 # ARM
 
+## Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date**: Oct 5th 2025\
+\
+**Highlights:** Fixes for Quick Deploy iteration visibility, CI post-deploy log accuracy with Dataloader Pro, and complete Jira sprint retrieval across ALM flows.
+
+* **Quick Deploy iteration visibility**\
+  A validated deployment could be quick-deployed from a later iteration while the Quick Deploy button remained visible and usable on earlier iterations, which diverged from Salesforce behavior; this affected deployment iteration handling in the Deployments UI. Quick Deploy is now correctly disabled for the current iteration and all previous iterations once an actual deployment is performed, matching Salesforce semantics and preventing accidental re-deploys of validated iterations.\
+  (Support Case: 150463)
+* **CI job post-deploy logs and Dataloader Pro status accuracy**\
+  CI jobs that triggered a post-deploy Dataloader Pro process sometimes showed a null error or incorrect "not yet run" status in post-activity logs even though the Dataloader Pro job executed and made changes in the org. We handled the null pointer and corrected status mapping between the DL module and CI logs; CI jobs now complete without the null error and post-activity logs reflect accurate in-progress and final statuses. The system also ensures the Dataloader Pro job is triggered and its final status is shown correctly.\
+  (Support Case: 153953)
+* **Jira sprint pagination and ALM updates**\
+  Fetching sprints in new ez-commit, ez-merge and CI job flows was stopping after the first page because Jira API maxResults was 50, so not all sprints were returned. We now page through all results and surface every sprint across the UI, restoring full sprint visibility. Additionally, Jira ALM integration updates for status and comments have been improved so status updates and comments propagate correctly from ARM flows.\
+  (Support Case: 154690)
+
 ## Release Notes 25.3.12
 
 **Release Date** : 28th September 2025

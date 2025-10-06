@@ -20,9 +20,9 @@ Please note that there are updated requirements for customers who are using one 
 
 ## CodeScan Release 25.1.11
 
-**Release Date: Oct 05, 2025**
+**Release Date: 5 October 2025**
 
-### Summary:
+### Summary
 
 CodeScan 25.1.11 is comprised of the following 5 components:
 
@@ -36,23 +36,22 @@ Component details are listed in their corresponding sections within this documen
 
 1. **Update Project Analysis Subtitle Dynamically**
 
-Several customers have reported that, regardless of project analysis, each time a user attaches ANY analysis project to CodeScan, there’s this message that says “Connects to your Salesforce instance.”
+Several customers have reported that, regardless of project analysis, each time a user attaches ANY analysis project to CodeScan, there’s a message that says, “Connects to your Salesforce instance.”
 
 We recognize that when using \*Project > Project Analysis\*, the subtitle should dynamically update to display the text:
 
 * When the user selects \*Salesforce\* as ALM, the label updates to show: \_“Connects to your Salesforce instance to execute a CodeScan analysis.”
-* When the user selects \*Repository (GitHub, BitBucket, GitLab)\* as ALM for Project Analysis, the label updates to show: “Connects to your \[ALM name] Repository to execute a CodeScan analysis.”
-* Further, the label must update in real time upon ALM selection, without requiring a page refresh
+* When the user selects \*Repository (GitHub, Bitbucket, GitLab)\* as ALM for Project Analysis, the label updates to show: “Connects to your \[ALM name] Repository to execute a CodeScan analysis.”
+* Further, the label must update in real time upon ALM selection, without requiring a page refresh.
 
 This ensures the user clearly understands the connection purpose based on the selected ALM.
 
 {% hint style="info" %}
-NOTE:  if we cannot update dynamically, CodeScan will use the following generic text: “Connects to your Salesforce instance or Repository to execute a CodeScan analysis.”
+NOTE: If we cannot update dynamically, CodeScan will use the following generic text: “Connects to your Salesforce instance or Repository to execute a CodeScan analysis.”
 {% endhint %}
 
 Verified the **Update Project Analysis Subtitle Dynamically** via the following scenarios:
 
-\
 Verified for the existing projects and newly created projects (all project integrations). The user is able to see the updated static description on the project analysis page as expected:
 
 **“Connects to your Salesforce instance or repository to execute a CodeScan analysis.”**
@@ -65,16 +64,16 @@ Verified for the existing projects and newly created projects (all project integ
 
 **Description**
 
-In the previous version of VS Code (2.1.1 and earlier), we had a reported bug: issues that have been resolved in the UI are still showing in VS Code.  In the past, these issues have been ignored and would be updated with a refresh of the connection.
+In the previous version of VS Code (2.1.1 and earlier), we had a reported bug: Issues that have been resolved in the UI are still showing in VS Code. In the past, these issues have been ignored and would be updated with a refresh of the connection.
 
-In this updated extension, we have implemented improved synchronization of resolved issues from CodeScan server, which addresses the reported issue.
+In this updated extension, we have implemented improved synchronization of resolved issues from the CodeScan server, which addresses the reported issue.
 
 * Verified the VS Code plugin for the following file types: .cls, .page, .java, .js, .trigger, .css, .ts, .cmp.
 * Violations are appearing as expected in both the CodeScan environment and the VS Code plugin.
-* The resolution actions — Accept, False Positive, Confirm, and Fixed — are functioning correctly.
+* The resolution actions—Accept, False Positive, Confirm, and Fixed—are functioning correctly.
 * Verified the same functionality in the US PROD environment, which is working as expected and consistent with the TEST environments.
 * Verified the VS Code plugin on the self-hosted environment. After the user refreshes the connection, the resolutions are displaying as expected.
-* Also verified on the **Self-hosted** environments (SQ versions 25.1 and 25.2):
+* Also verified on the **Self-Hosted** environments (SQ versions 25.1 and 25.2):
   * When the user sets an issue as False Positive or chooses to Accept the issue, the issue count is reduced on the UI as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (2054).png" alt="" width="510"><figcaption></figcaption></figure>
@@ -89,13 +88,12 @@ Historically, this rule finds any blocks of code in a trigger and throws a viola
 
 In this enhancement, we added a parameter to the rule allowing users to add a comma separated list of trigger frameworks that are allowed.
 
-The new parameter is “allowedTriggerFrameworks”
+The new parameter is “allowedTriggerFrameworks.”
 
 Description: A comma separated list of Trigger frameworks to allow. Violations will still be reported if complex logic is present within the allowed parameters.
 
 For more information, please review an overview of triggerframeworks: [https://www.saasguru.co/salesforce-trigger-frameworks-guide/?srsltid=AfmBOopNA\_BxSsI\_tjZ1EGP3n59fi-\_TW5Q-TQaoFFv1tIIYKZEyDJ5f](https://www.saasguru.co/salesforce-trigger-frameworks-guide/?srsltid=AfmBOopNA_BxSsI_tjZ1EGP3n59fi-_TW5Q-TQaoFFv1tIIYKZEyDJ5f)
 
-\
 Details of the new parameter:
 
 * Allow:
@@ -116,22 +114,20 @@ Verified the new parameter on the sf:AvoidLogicInTrigger rule to ensure compatib
 
 **But**: for, while, do-while, SOQL, DML → always Violation (allow-list does not suppress these).
 
-**But**: for, while, do-while, SOQL, DML → always Violation (allow-list does not suppress these).
-
 <figure><img src="../../../../.gitbook/assets/image (2056).png" alt="" width="398"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (2057).png" alt="" width="338"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (2058).png" alt="" width="474"><figcaption></figcaption></figure>
 
-2. Enhancement to “Use Annotation on Test Class” Rule
+2. **Enhancement to “Use Annotation on Test Class” Rule**
 
 During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword.  It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
 
-**Fix**:\
-Updated the rule logic to support detection of @IsTest annotation on test classes, ensuring compliance with current Apex best practices
+**Fix**\
+Updated the rule logic to support detection of @IsTest annotation on test classes, ensuring compliance with current Apex best practices.
 
-Verified the enhanced rule logic in “Use Annotation on Test Class” via on the the below scenarios
+Verified the enhanced rule logic in “Use Annotation on Test Class” in the following scenarios:
 
 1. A non-test class or Utility class without test methods → Verified: No violation raised.
 2. @IsTest annotated class with test methods (@IsTest and/or testMethod) → Verified: No violation raised.
@@ -146,11 +142,11 @@ Verified the enhanced rule logic in “Use Annotation on Test Class” via on th
 
 ### Fixes
 
-1. Fixed Application Issue where the “Issues Filter” was not working as expected with CWE tags
+1. Fixed Application Issue where the “Issues Filter” was not working as expected with CWE tags.
 
 Several customers have reported that the Issues Filter does not work with CWE tags. Although individual issues correctly display their associated CWE ID, searching or filtering by a specific CWE ID in the Issues view will sometimes return no results.
 
-We have identified that the root cause of the issue was that the CWE filter for Issues and Rules was limited to display and filter through only 10 items in the filter dropdown.  Ergo, we expanded the filter limit to display up to 100 items and enabled input-based search across all options for enhanced usability and consistency.
+We have identified that the root cause of the issue was that the CWE filter for Issues and Rules was limited to display and filter through only 10 items in the filter dropdown. Therefore, we expanded the filter limit to display up to 100 items and enabled input-based search across all options for enhanced usability and consistency.
 
 **After extensive research, we concluded:**
 
@@ -173,12 +169,12 @@ _**Technical details (implementation)**_
 
 * standardfacet.tsx renders the CWE filter component; handleSearch manages the in-filter search behavior.
 * Standards.json lists CWE values and descriptions. Even after adding additional CWE entries into this file, those new values still don’t appear in the filter list.
-  * Conclusion: the filter list is not driven solely by Standards.json, or it’s being constrained elsewhere.
+  * Conclusion: The filter list is not driven solely by Standards.json, or it’s being constrained elsewhere.
 
 **Data/API status**
 
-* Database: contains all rules with their full set of CWE values.
-* API: works as expected when calling with cwe=\<value>; results return correctly.\
+* Database: Contains all rules with their full set of CWE values.
+* API: Works as expected when calling with cwe=\<value>; results return correctly.\
   The inconsistency happens only in the filter UI, so we should inspect the UI-side response and check for any server or client-imposed limits on the number of CWE results returned.
 
 We have remediated these issues with this fix.
@@ -376,7 +372,7 @@ Verified the new logic via the following scenarios:\
 
 **Release Date: 07 September 2025**
 
-### Summary:
+### Summary
 
 CodeScan 25.1.9 is comprised of the following 4 components:
 
@@ -876,7 +872,7 @@ Validated that the proper error message is displayed when invite is sent only to
 
 **Release Date: July 20, 2025**
 
-### Summary:
+### Summary
 
 CodeScan 25.1.5 is comprised of the following 17 components:
 
@@ -894,7 +890,7 @@ Component details are listed in their corresponding sections within this documen
 
 &#x20;
 
-### New Features:
+### New Features
 
 1. **Support Intelligent Prompts for A.I. LLMs**
 
@@ -1459,7 +1455,7 @@ CodeScan 25.1.3 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Enhancements:
+### Enhancements
 
 **1.     New Banner in billing when license entitlements exceeded**
 
@@ -1558,7 +1554,7 @@ Sonar-scanner - 5.0.1.3006V
 
 **Release Date: June 11, 2025**&#x20;
 
-Summary:
+### Summary
 
 CodeScan 25.1.2 is comprised of the following 19 components:
 
@@ -1574,7 +1570,7 @@ Component details are listed in their corresponding sections within this documen
 
 &#x20;
 
-### New Features:
+### New Features
 
 #### 1. CWE Numbers Added to Vulnerability Rule “Unescaped Value Could Cause XSS”
 
@@ -1723,7 +1719,7 @@ Sometimes expressions are wrapped in unnecessary parentheses, making them look l
 
 This rule has been deprecated. Please remove it from your custom Quality Profile and instead add the rule sf:UselessParentheses as a best practice for code styling.
 
-### New Rules:
+### New Rules
 
 **1.     Server Side Request Forgery**
 
@@ -2094,7 +2090,7 @@ We have verified the Organization image is now restricted in size, and users are
 
 **Release Date: May 11, 2025**&#x20;
 
-### Summary:&#x20;
+### Summary
 
 **CodeScan 25.1.1 is comprised of the following 3 components:**&#x20;
 
@@ -2102,19 +2098,19 @@ We have verified the Organization image is now restricted in size, and users are
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-#### **New Features:**&#x20;
+### **New Features**
 
 There are no New Features associated with this release&#x20;
 
-#### **Enhancements:**&#x20;
+### **Enhancements**&#x20;
 
 There are no Enhancements associated with this release&#x20;
 
-**New Rules:**&#x20;
+### **New Rules**
 
 There are no New Rules associated with this release&#x20;
 
-### **Fixes**:
+### **Fixes**
 
 1. **Fixed an issue with rule tags blocking analyses**&#x20;
 
@@ -2168,7 +2164,7 @@ Verified the IDP Group Mapping flag by Enabling and Disabling the instance is no
 
 **Release Date: 20 April 2025**&#x20;
 
-### Summary:&#x20;
+### Summary
 
 CodeScan 25.1.0 is comprised of three main components / features:&#x20;
 
@@ -2197,7 +2193,7 @@ Please note: CodeScan documentation pages will have new images to reflect the la
 
 * The CodeScan 25.1.0 contains various technical architecture improvements and upgrades to various libraries. We have also included several enhancements to CodeScan’s security architecture.
 
-### **Fixes**:
+### **Fixes**
 
 * Fixed a false positive in the 'sf:AvoidGlobalModifier' rule. The violation is now ignored for global classes used as return types in any global static method.
 

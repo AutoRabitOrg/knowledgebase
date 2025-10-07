@@ -251,7 +251,7 @@ jobs:\
 * Always fetch full history for PR analysis (fetch-depth: 0).
 * SONAR\_SOURCES: force-app Incase folder structure is other than DX
 * SONAR\_SOURCES: src (or) .(. here represents the ROOT FOLDER)
-* Specifying Root Folder, Codescan always scans the Root folder mentioned and files within it.
+* Specifying Root Folder, CodeScan always scans the Root folder mentioned and files within it.
 * In scenarios where the customer has multiple root folders, using (.) will make sure every root folder in the repo is scanned.&#x20;
 
 ***

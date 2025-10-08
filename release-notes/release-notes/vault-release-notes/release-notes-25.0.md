@@ -4,12 +4,14 @@
 
 **Release Date: 8 October 2025**
 
-**Retry Failed Records**\
+**Retry Failed Records**
+
 You can now retry only the records that failed during processing, without reprocessing the entire job. This feature streamlines error handling and saves time by allowing exclusive focus on failed records.
 
 <figure><img src="../../../.gitbook/assets/Retry - Failed Records - 0 (1).png" alt=""><figcaption></figcaption></figure>
 
-**License and Usage Tracking**\
+**License and Usage Tracking**
+
 Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.
 
 <figure><img src="../../../.gitbook/assets/image (2042).png" alt=""><figcaption></figcaption></figure>
@@ -18,11 +20,15 @@ Vault now provides visibility into actual license usage, storage consumption, an
 
 Resolved an issue where list view restoration could fail. The restore process now includes all required dependencies to ensure successful recovery.
 
-**Automated Encryption and Security Keys Rotation**\
+**Automated Encryption and Security Keys Rotation**
+
 Introduced automation to handle Key-rotation activities, ensuring smoother key transitions and uninterrupted system operations. This enhancement strengthens security, reduces downtime, and minimizes the risk of errors.
 
-**Platform Upgrades**\
+**Platform Upgrades**
+
 Upgraded underlying platform components to enhance security, improve performance, and ensure compatibility with the latest standards.
+
+***
 
 ## Vault Release Notes 25.1.9 <a href="#heading-title-text" id="heading-title-text"></a>
 

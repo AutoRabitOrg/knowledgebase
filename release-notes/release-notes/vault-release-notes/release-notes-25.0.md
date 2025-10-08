@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.2.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:** Oct 08, 2025
+**Release Date: 8 October 2025**
 
 **Retry Failed Records**\
 You can now retry only the records that failed during processing, without reprocessing the entire job. This feature streamlines error handling and saves time by allowing exclusive focus on failed records.

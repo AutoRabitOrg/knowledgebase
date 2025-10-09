@@ -189,7 +189,7 @@ Creating new users is now faster and more flexible. Admins can set up accounts w
 *   The **user list view** and **user icons** have been updated to reflect these enhancements.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

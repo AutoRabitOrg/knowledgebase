@@ -604,7 +604,7 @@ This fix remediates this issue in full.
 
 Verified the fix and validated that the scheduled jobs are now running without issue (as expected).
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **Fixed issue with deleting branches in projects using Salesforce Integration**
 
@@ -617,7 +617,7 @@ We uncovered that if the following steps were performed…
 
 …then users receive an error message indicating that an “unknown error occurred.”
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 This issue has been fully remediated in this release.
 
@@ -712,22 +712,22 @@ Verified this enhancement via validating the below scenarios
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  If no file is selected during import, an error occurs.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. If the repository key is missing, an import error is triggered.
 7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.\
 

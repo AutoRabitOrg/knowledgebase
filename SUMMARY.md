@@ -1180,6 +1180,7 @@
       * [Enhanced Compare Capabilities: View, Change View, and Export Results](product-guides/vault/vault-features/compare/enhanced-compare-capabilities-view-change-view-and-export-results.md)
     * [Restore](product-guides/vault/vault-features/restore/README.md)
       * [Restoring Metadata/Data to a Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
+      * [Retry Failed Records](product-guides/vault/vault-features/restore/retry-failed-records.md)
     * [Replicate](product-guides/vault/vault-features/replicate/README.md)
       * [Job Configuration](product-guides/vault/vault-features/replicate/job-configuration.md)
       * [Job History](product-guides/vault/vault-features/replicate/job-history.md)

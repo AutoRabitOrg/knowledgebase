@@ -12,12 +12,12 @@ _Users with the **Admin** role manage their own permissions under that role and 
 1.  Open **Settings › Permissions**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Select two or more users and click **Bulk Assignment**.\
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Go to **Roles** and select the required role\
    \- Repeat the same process for **Salesforce Orgs**, **CI Jobs**, and **Version Control**.\
    \- Once all selections are made, click **Save**.

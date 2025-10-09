@@ -121,12 +121,12 @@ Admins can download all user data as CSV.
 2.  Click **Create Role**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 3.  Provide a **Role Name**, **Description**, and tick permissions.\
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Click **Save**.
 
 > _The default **Admin** role has full permissions and cannot be edited or renamed._
@@ -138,12 +138,12 @@ Admins can download all user data as CSV.
 1.  Open **Settings › Permissions**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Select two or more users and click **Bulk Assignment**.\
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Go to **Roles** and select the required role\
    \- Repeat the same process for **Salesforce Orgs**, **CI Jobs**, and **Version Control**.\
    \- Once all selections are made, click **Save**.

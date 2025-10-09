@@ -1183,6 +1183,7 @@
     * [Replicate](product-guides/vault/vault-features/replicate/README.md)
       * [Job Configuration](product-guides/vault/vault-features/replicate/job-configuration.md)
       * [Job History](product-guides/vault/vault-features/replicate/job-history.md)
+      * [Retry Failed Records](product-guides/vault/vault-features/replicate/retry-failed-records.md)
       * [Masking Rules](product-guides/vault/vault-features/replicate/masking-rules.md)
     * [Live Data Masking](product-guides/vault/vault-features/live-data-masking.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)

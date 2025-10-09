@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Retry Failed Records
 
 ## Overview

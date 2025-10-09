@@ -101,11 +101,11 @@ Admins can download all user data as CSV.
 1.  In **Settings › Users**, click **Export All Users**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Select fields and click **Export**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 3. A CSV downloads to your computer.
 
 > **Location privacy** – If a user blocks location sharing, ARM uses IP-based location.
@@ -117,7 +117,7 @@ Admins can download all user data as CSV.
 1.  Go to **Settings › Users › Roles**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Click **Create Role**.\
 
 

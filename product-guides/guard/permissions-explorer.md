@@ -4,7 +4,7 @@
 
 The **Permission Explorer** feature provides deep visibility into Salesforce user access. It helps administrators quickly identify sensitive or overprivileged permissions and understand exactly how those permissions are granted. With two modes—**User Permissions** and **Object Access**—Permission Explorer makes it easier to strengthen security, maintain compliance, and prevent unauthorized access.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Permissions Explorer Home Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>Permissions Explorer Home Page</p></figcaption></figure>
 
 ### Key Benefits
 
@@ -32,7 +32,7 @@ The **Permission Explorer** feature provides deep visibility into Salesforce use
 
     These templates accelerate common security investigations and reduce manual query building.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Quick Explorer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Quick Explorer</p></figcaption></figure>
 
 * **Saved Queries**\
   Any custom queries you’ve created are saved and easily accessible from the Permission Explorer homepage.

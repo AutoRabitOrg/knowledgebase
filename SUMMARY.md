@@ -1189,6 +1189,7 @@
     * [Archive](product-guides/vault/vault-features/archive/README.md)
       * [Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
       * [Parent-Child Record Archival](product-guides/vault/vault-features/archive/parent-child-record-archival.md)
+      * [Retry Failed Records](product-guides/vault/vault-features/archive/retry-failed-records.md)
     * [Compliance](product-guides/vault/vault-features/compliance/README.md)
       * [GDPR - Secure and Comply](product-guides/vault/vault-features/gdpr-secure-and-comply/README.md)
         * [Right to Be Forgotten Request](product-guides/vault/vault-features/gdpr-secure-and-comply/right-to-be-forgotten-request.md)

@@ -23,21 +23,13 @@ We’ve introduced a dedicated Real-time Change Notifications section with pre-b
 **Highlights**&#x20;
 
 * Pre-built templates for key events, including:&#x20;
-
-Profile created&#x20;
-
-Password policy modified&#x20;
-
-User assigned to new profile&#x20;
-
-Sharing rules updated&#x20;
-
-Login IP ranges created/modified, or deleted&#x20;
-
-External credentials modified&#x20;
-
-Remote site settings updated&#x20;
-
+  * Profile created&#x20;
+  * Password policy modified&#x20;
+  * User assigned to new profile&#x20;
+  * Sharing rules updated&#x20;
+  * Login IP ranges created/modified, or deleted&#x20;
+  * External credentials modified&#x20;
+  * Remote site settings updated&#x20;
 * Multi-org support for applying templates across environments&#x20;
 * Enhanced detail pages&#x20;
 
@@ -61,19 +53,19 @@ The platform now provides comprehensive event logging to strengthen accountabili
 
 **Highlights**&#x20;
 
-* Audit records for key events&#x20;
-* Logs safeguarded against unauthorized modification or deletion&#x20;
-* Supports audit reduction, correlation, and reporting for easier compliance review&#x20;
+* Audit records for key events.
+* Logs safeguarded against unauthorized modification or deletion.&#x20;
+* Supports audit reduction, correlation, and reporting for easier compliance review.&#x20;
 
 **Why it matters**: Provides robust traceability and supports effective security investigations.&#x20;
 
 ### Bug Fixes&#x20;
 
-* Salesforce Org Registration OAuth Error – Fixed an issue preventing new Salesforce Orgs from being registered due to OAuth flow failures. &#x20;
-* Password Reset Flow – Password policy error messages now clearly display complete requirements&#x20;
-* Permission Explorer – User Metadata – “User Created By” displays details properly&#x20;
-* Permission Explorer – Custom Objects – Object access results are displayed correctly for custom objects.&#x20;
-* Access Controls – User Dropdown Limit – Fixed limitation where only 2,000 users were displayed in the “Define Allowed Users” dropdown; now supports all users in large Salesforce Orgs.&#x20;
+* Salesforce Org Registration OAuth Error: Fixed an issue preventing new Salesforce Orgs from being registered due to OAuth flow failures. &#x20;
+* Password Reset Flow: Password policy error messages now clearly display complete requirements&#x20;
+* Permission Explorer – User Metadata: “User Created By” displays details properly&#x20;
+* Permission Explorer – Custom Objects: Object access results are displayed correctly for custom objects.&#x20;
+* Access Controls – User Dropdown Limit: Fixed limitation where only 2,000 users were displayed in the “Define Allowed Users” dropdown; now supports all users in large Salesforce Orgs.&#x20;
 
 ***
 

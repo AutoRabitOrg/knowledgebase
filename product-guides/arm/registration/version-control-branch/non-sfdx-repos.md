@@ -1,4 +1,4 @@
-# non-SFDX Repos
+# Configuring Metadata Folder Paths
 
 ## Overview
 

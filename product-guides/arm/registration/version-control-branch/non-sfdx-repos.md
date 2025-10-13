@@ -22,8 +22,7 @@ If the metadata folder path is not correctly set for non-default folder structur
 
 **When Using the Default SFDX Structure**
 
-For non-SFDX repositories that follow the default SFDX folder structure (i.e., force-app/main/default)\
-The system automatically detects the metadata folder. There is no need to manually configure the Metadata Folder Path under Branch Settings.
+For SFDX repositories that follow the default SFDX folder structure (i.e., force-app/main/default), the system automatically detects the metadata folder. There is no need to manually configure the Metadata Folder Path under Branch Settings.
 
 {% hint style="warning" %}
 Important: Manually adding the Metadata Folder Path in this case can interfere with automatic detection, resulting in CI job builds not picking up changes correctly and gives build status as “No Modifications.”

@@ -20,7 +20,7 @@ To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, 
 
        {% code overflow="wrap" fullWidth="false" %}
        ```
-       sfdx codescan:run --token <token> --projectkey <project key>> --organization <organization key>
+       sfdx codescan:run --token <token> --projectkey <projectkey>> --organization <organization key>
        ```
        {% endcode %}
 
@@ -44,7 +44,7 @@ Project keys differ from project to project as the **organization** and **projec
 
        {% code overflow="wrap" fullWidth="true" %}
        ```
-       sfdx codescan:run --token <token> --project key <project key>> --organization <organization key> --server <Server Name>
+       sfdx codescan:run --token <token> --project key <projectkey>> --organization <organization key> --server <Server Name>
        ```
        {% endcode %}
 6.  To view a list of **parameters** and **flags** which you can use, run the following command: **`sfdx help codescan:run`**

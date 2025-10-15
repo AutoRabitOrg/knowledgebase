@@ -1,5 +1,26 @@
 # ARM
 
+## Release Notes 25.4.2 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date**: Oct 15th 2025\
+\
+**Highlights**: Stability improvements across CI Jobs, Commit handling, and Scratch Org creation.
+
+**CI Job Email Notifications – Missing Error Details**\
+Fixed an issue where CI job email reports did not display deployment failure details for Apex Classes. The notification logic now correctly includes all error and failed test details in the email report.\
+(Support Case: 154005)
+
+**Backup CI Jobs – Git Push Pre-Receive Hook Error**\
+Addressed a problem causing Backup CI Jobs to fail with the error “GIT Push remote update Result: pre-receive hook declined.” The exception is now taken care and the UI displays a simplified message: “No modifications exist.”\
+(Support Case: 154837)
+
+**EZ-Commit Validation – File Copy Failure**\
+Resolved a FileNotFoundException that occurred during EZ-Commit validation when a metadata file was missing from the source folder. The updated logic now skips missing files and continues copying remaining files, allowing the commit process to complete successfully.\
+(Support Case: 154753)\
+\
+**Scratch Org Creation – Salesforce Org Validation**\
+Resolved an issue where users received a “Salesforce Org Doesn’t Exist” error while attempting to retrieve data for Scratch Org creation. The system now correctly validates the selected Salesforce org and proceeds with successful data retrieval.
+
 ## Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date**: Oct 5th 2025\

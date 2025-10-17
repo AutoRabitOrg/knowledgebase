@@ -231,7 +231,7 @@ There are different ways to fetch the test cases:
     \
 
 
-    <div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure></div>
 
 1.  **Version Control:** The test cases committed to a branch in version control are displayed.
 

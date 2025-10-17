@@ -18,6 +18,110 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.12
+
+**Release Date: 19 October 2025**
+
+### Summary
+
+CodeScan 25.1.12 is comprised of the following 3 components:
+
+* 1 New Feature
+* 2 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+**1.  Better Management of CodeScan Orgs via Soft Deletion**
+
+**Description**
+
+With this release, when an admin performs organization deletion, the org is maintained for an additional 30 days to allow for restoration (if needed).
+
+However, please note that the org will immediately become inaccessible to all members, owners, and IDE users, and any tokens associated with it must be expired. The deleted organization will remain in a disabled state for 30 days and can only be restored by an Instance-level Admin during this period.
+
+{% hint style="info" %}
+Note: This soft deletion is triggered (and subsequently put into this disabled state) whether deleted by an org admin OR platform-level admin.
+{% endhint %}
+
+We recognize that we can improve organization lifecycle management and data governance for our customers, while also reducing accidental data loss, by allowing Admins to restore orgs within 30 days.
+
+Once an organization is deleted:
+
+* It will become immediately inaccessible to all non-admin users (members, owners, IDE users).
+* All API tokens and access credentials associated with the organization will be expired.
+* The deleted organization will be listed under a new "Deleted Orgs" section visible only to Instance-level Admins.
+* The deleted org should be in a disabled state and cannot be accessed, modified, or used in any IDE integrations.
+* Instance-level Admins can restore the organization within 30 days of deletion.
+* After 30 days, the organization should be permanently deleted unless restored.
+* Customers can notify us in writing to forego the 30 days and have the instance deleted immediately, which we will perform at their request
+
+**Value / Purpose**
+
+* Ensures security and compliance by revoking access and expiring tokens immediately upon deletion.
+* Provides control and flexibility to Instance-level Admins with a grace period for restoration.
+* Prevents data loss from accidental deletions.
+* Improves auditability and accountability in organization management.
+* Aligns with standard enterprise-grade administrative controls.
+
+{% hint style="info" %}
+Note: Instance-level Admins and Org admins (customers) are able to manage deleted organizations in a dedicated “Deleted Orgs” section so that they can view and restore them within a 30-day grace period.
+{% endhint %}
+
+### Fixes
+
+**1.     Fixed issue where the IDE usage was not being captured properly**
+
+Several customers have reported that admins are not able to see any details in the IDE usage screen in their Org, while others reported that while they see the records, they do not see the records in the Order.
+
+We have determined the root cause to be a JDBC exception and have fully remediated both of these issues with this fix.
+
+We have verified the fix via the following scenarios and confirm that admins are able to see the correct records without any errors.
+
+1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+2.  They can also view the records displayed in the correct order under the All tab.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2.     Fix to AvoidAbsoluteURL Rule**
+
+We have witnessed that, periodically, this rule does not seem to pick up new Salesforce URLs.  As such, we updated the rule logic to detect and violate URLs matching the following patterns \{{\*.salesforce.com\}} \{{\*.force.com\}} \{{\*.site.com\}} \{{\*.documentforce.com\}} \{{\*.marketingcloudapis.com\}}
+
+We have verified the fix of the AvoidAbsoluteURL Rule via the following:
+
+1. Updated the rule to detect and flag violations for URLs matching the following patterns:
+   * \*.salesforce.com
+   * \*.force.com
+   * \*.site.com
+   * \*.documentforce.com
+   * \*.marketingcloudapis.com
+2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.\
+
+
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+    \
+
+
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## CodeScan Release 25.1.11
 
 **Release Date: 5 October 2025**
@@ -582,9 +686,9 @@ This fix remediates this issue in full.&#x20;
 Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page. \
 The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status) &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="483"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="483"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="486"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="486"><figcaption></figcaption></figure>
 
 2. **URIs are not Valid in decorated SARIF output**
 
@@ -592,9 +696,9 @@ It has been reported that the URLs are not valid in the SARIF file due to spaces
 
 Verified that users are now able to see valid URLs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
 
 3. **Fixed issue where scheduled analyses are not running for SF projects and its comparison branches**
 
@@ -604,7 +708,7 @@ This fix remediates this issue in full.
 
 Verified the fix and validated that the scheduled jobs are now running without issue (as expected).
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **Fixed issue with deleting branches in projects using Salesforce Integration**
 
@@ -617,7 +721,7 @@ We uncovered that if the following steps were performed…
 
 …then users receive an error message indicating that an “unknown error occurred.”
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 This issue has been fully remediated in this release.
 
@@ -674,26 +778,26 @@ Verified Categories for Project Types in the following scenarios, and have verif
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
     &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -712,14 +816,14 @@ Verified this enhancement via validating the below scenarios
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."\
 
 

@@ -17,12 +17,12 @@ Components are retrieved and committed from a Salesforce org to a version contro
 2.  Hover your mouse over the **`Settings`** module and click on **`Branching Baseline`**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="233"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt="" width="233"><figcaption></figcaption></figure>
 3.  From the Branching Baseline screen, click on New Branching Baseline.\
     \
 
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 

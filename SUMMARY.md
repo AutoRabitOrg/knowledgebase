@@ -60,7 +60,7 @@
 ## Release Notes
 
 * [Release Notes](release-notes/release-notes/README.md)
-  * [ARM](release-notes/release-notes/arm-release-notes/README.md)
+  * [ARM Release Notes](release-notes/release-notes/arm-release-notes/README.md)
     * [Release Notes 25](release-notes/release-notes/arm-release-notes/release-notes-25.2/README.md)
     * [Release Notes 24](release-notes/release-notes/arm-release-notes/release-notes-24.4-1/release-notes-24.4.5.md)
     * [Release Notes 23](release-notes/release-notes/arm-release-notes/release-notes-23.1.md)

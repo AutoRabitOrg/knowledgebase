@@ -37,12 +37,12 @@ Component details are listed in their corresponding sections within this documen
 
 **Description**
 
-With this release, when an admin performs organization deletion, the org is maintained for an additional 30 days to allow for restoration (if needed).
+With this release, when an Admin performs an organization deletion, the org is maintained for an additional 30 days to allow for restoration (if needed).
 
-However, please note that the org will immediately become inaccessible to all members, owners, and IDE users, and any tokens associated with it must be expired. The deleted organization will remain in a disabled state for 30 days and can only be restored by an Instance-level Admin during this period.
+However, please note that the org will immediately become inaccessible to all members, owners, and IDE users, and any tokens associated with it become expired. The deleted organization will remain in a disabled state for 30 days and can only be restored by an Instance-level Admin during this period.
 
 {% hint style="info" %}
-Note: This soft deletion is triggered (and subsequently put into this disabled state) whether deleted by an org admin OR platform-level admin.
+Note: This soft deletion is triggered (and subsequently put into this disabled state) whether deleted by an org Admin OR platform-level Admin.
 {% endhint %}
 
 We recognize that we can improve organization lifecycle management and data governance for our customers, while also reducing accidental data loss, by allowing Admins to restore orgs within 30 days.
@@ -52,10 +52,10 @@ Once an organization is deleted:
 * It will become immediately inaccessible to all non-admin users (members, owners, IDE users).
 * All API tokens and access credentials associated with the organization will be expired.
 * The deleted organization will be listed under a new "Deleted Orgs" section visible only to Instance-level Admins.
-* The deleted org should be in a disabled state and cannot be accessed, modified, or used in any IDE integrations.
+* The deleted org is in a disabled state and cannot be accessed, modified, or used in any IDE integrations.
 * Instance-level Admins can restore the organization within 30 days of deletion.
-* After 30 days, the organization should be permanently deleted unless restored.
-* Customers can notify us in writing to forego the 30 days and have the instance deleted immediately, which we will perform at their request
+* After 30 days, the organization is permanently deleted unless restored.
+* Customers can notify us in writing to forgo the 30 days and have the instance deleted immediately, which we will perform at their request
 
 **Value / Purpose**
 
@@ -66,24 +66,24 @@ Once an organization is deleted:
 * Aligns with standard enterprise-grade administrative controls.
 
 {% hint style="info" %}
-Note: Instance-level Admins and Org admins (customers) are able to manage deleted organizations in a dedicated “Deleted Orgs” section so that they can view and restore them within a 30-day grace period.
+Note: Instance-level Admins and Org Admins (customers) are able to manage deleted organizations in a dedicated “Deleted Orgs” section, so they can view and restore them within a 30-day grace period.
 {% endhint %}
 
 ### Fixes
 
 **1.     Fixed issue where the IDE usage was not being captured properly**
 
-Several customers have reported that admins are not able to see any details in the IDE usage screen in their Org, while others reported that while they see the records, they do not see the records in the Order.
+Several customers have reported that Admins are not able to see any details in the IDE Usage screen in their Org, while others reported that while they see the records, they do not see the records in Order.
 
 We have determined the root cause to be a JDBC exception and have fully remediated both of these issues with this fix.
 
-We have verified the fix via the following scenarios and confirm that admins are able to see the correct records without any errors.
+We have verified the fix via the following scenarios and confirm that Admins are able to see the correct records without any errors.
 
 1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  They can also view the records displayed in the correct order under the All tab.\
+2.  Admins can also view the records displayed in the correct order under the All tab.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -100,9 +100,9 @@ We have verified the fix via the following scenarios and confirm that admins are
 
 **2.     Fix to AvoidAbsoluteURL Rule**
 
-We have witnessed that, periodically, this rule does not seem to pick up new Salesforce URLs.  As such, we updated the rule logic to detect and violate URLs matching the following patterns \{{\*.salesforce.com\}} \{{\*.force.com\}} \{{\*.site.com\}} \{{\*.documentforce.com\}} \{{\*.marketingcloudapis.com\}}
+We have witnessed that, periodically, this rule does not seem to pick up new Salesforce URLs. As such, we updated the rule logic to detect and violate URLs matching the following patterns: \{{\*.salesforce.com\}} \{{\*.force.com\}} \{{\*.site.com\}} \{{\*.documentforce.com\}} \{{\*.marketingcloudapis.com\}}.
 
-We have verified the fix of the AvoidAbsoluteURL Rule via the following:
+We have verified the fix of the AvoidAbsoluteURL rule via the following:
 
 1. Updated the rule to detect and flag violations for URLs matching the following patterns:
    * \*.salesforce.com

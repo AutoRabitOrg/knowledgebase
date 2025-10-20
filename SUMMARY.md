@@ -98,7 +98,6 @@
         * [Release Notes 24.1.1 Eagle 2.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.1.1-eagle-2.0.md)
         * [Release Notes 24.1.0 Eagle](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.1.0-eagle.md)
       * [Tiger Edition](release-notes/release-notes/codescan-release-notes/on-premise-releases/tiger-edition/README.md)
-        * [Release Notes 25.0.2 Tiger 4.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/tiger-edition/release-notes-25.0.2-tiger-4.0.md)
         * [Release Notes 25.0.1 Tiger 3.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-25.0.1-tiger-3.0.md)
         * [Release Notes 24.0.13 Tiger 2.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.13-tiger-2.0.md)
         * [Release Notes 24.0.9 Tiger](release-notes/release-notes/codescan-release-notes/on-premise-releases/release-notes-24.0.9-tiger.md)

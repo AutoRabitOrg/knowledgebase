@@ -15,13 +15,13 @@ Currently, the most recent Long-Term Active version of SonarQube is 2025.1 LTA. 
 
 <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-The previous versions of SonarQube Long-Term Active was 9.9 LTA. In between, SonarQube released 9 other versions (10.0–10.8).
+The previous version of SonarQube Long-Term Active was 9.9 LTA. In between, SonarQube released 9 other versions (10.0–10.8).
 
-In order to support a wide range of these SonarQube versions, AutoRABIT decided to provide two versions of CodeScan self-hosted editions to the market to ensure ongoing SonarQube compatibility. Please note that currently we only certify CodeScan on the Community Build. We are working closely with SonarQube to extend our verifications on their other editions as well.&#x20;
+In order to support a wide range of these SonarQube versions, AutoRABIT decided to provide two versions of CodeScan self-hosted editions to the market to ensure ongoing SonarQube compatibility. Please note that we currently only certify CodeScan on the Community Build. We are working closely with SonarQube to extend our verifications on their other editions as well.&#x20;
 
 Our Eagle Edition is designed for those customers who run on SonarQube 10.6, 2025.1 LTA, 25.2, 25.3, and 25.4.&#x20;
 
-Our Tiger Edition is designed for those customers who run SonarQube 9.9 LTA–10.3. &#x20;
+Our Tiger Edition is designed for those customers who run on SonarQube 9.9 LTA–10.3. &#x20;
 
 Please see our corresponding [SonarQube Compatibility Matrix ](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1)for detailed guidance.&#x20;
 
@@ -35,7 +35,7 @@ Additionally, the following diagram provides more detailed information regarding
 
 ### Recommendations on Editions&#x20;
 
-_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v5.0 (25.1.2). This release is generally available as of October 17, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3, 25.4 and SQ 10.6–10.8. Please refer to the release notes for [Eagle Edition v5](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.
+_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v5.0 (25.1.2). This release is generally available as of October 17, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3, 25.4, and SQ 10.6–10.8. Please refer to the release notes for [Eagle Edition v5](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.
 
 _For customers running older versions of SonarQube,_ we encourage you to upgrade to our CodeScan Self-Hosted Tiger Edition v3.0 (25.0.1). This allows customers to have a newer version of the CodeScan plug-in while utilizing older versions of SonarQube™.
 

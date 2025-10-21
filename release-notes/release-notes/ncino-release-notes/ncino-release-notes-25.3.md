@@ -4,27 +4,27 @@
 
 **Release Date:** September 28, 2025
 
-**Multi-Bucket Support**
+#### **Multi-Bucket Support** <a href="#multi-bucket-support" id="multi-bucket-support"></a>
 
 Enhanced multi-bucket handling to ensure records are processed without creating duplicate entries.
 
-**Viewing Diff Count**
+#### **Viewing Diff Count** <a href="#viewing-diff-count" id="viewing-diff-count"></a>
 
 Fixed an issue preventing users from viewing record differences when multiple templates were committed to the repository. Diff counts now display accurately.
 
-**Templates with Multi-Buckets**
+#### **Templates with Multi-Buckets** <a href="#templates-with-multi-buckets" id="templates-with-multi-buckets"></a>
 
 Resolved a deployment failure scenario where templates containing multiple buckets caused object deployment errors.
 
-**Build Failure Due to Null Entry**
+#### **Build Failure Due to Null Entry** <a href="#build-failure-due-to-null-entry" id="build-failure-due-to-null-entry"></a>
 
 Fixed a defect where builds failed because of null entry objects. Builds now complete successfully.
 
-**Error Uploading to S3**
+#### **Error Uploading to S3** <a href="#error-uploading-to-s3" id="error-uploading-to-s3"></a>
 
 Improved stability of data uploads to S3 to ensure seamless and reliable transfers.
 
-**Multi-Object Set Template**
+#### **Multi-Object Set Template** <a href="#multi-object-set-template" id="multi-object-set-template"></a>
 
 Implemented safeguards to prevent failures in multi-object set templates during execution.
 
@@ -32,36 +32,44 @@ Implemented safeguards to prevent failures in multi-object set templates during 
 
 **Release Date:** September 21, 2025
 
-**Multibucket Rollback**\
+#### **Multi-bucket Rollback**
+
 Enhanced rollback functionality to ensure that inserted records are deleted and updated records are accurately reverted to their previous state.
 
-**Multi-Bucket – Duplicate Objects**\
+#### **Multi-bucket – Duplicate Objects**
+
 Resolved an issue where duplicate objects were displayed when working with multiple buckets..
 
-**Single Data Loader – Attachments Processing**\
+#### **Single Data Loader – Attachments Processing**
+
 Fixed an issue where optional fields were incorrectly considered during delete operations — now only record IDs are considered for deleting the records.
 
-**Feature Deployment – Object Duplication**\
+#### **Feature Deployment – Object Duplication**
+
 Addressed duplication issues when using the same branch with the VC Revision Range option including both commits. Objects are no longer duplicated.
 
-**Multibucket Support**\
+#### **Multi-bucket Support**
+
 Introduced support for multi-bucket functionality in templates, enabling better CI/CD data migration deployments and commits..
 
 ## nCino + **Data Loader** - Release 25.3.10
 
 **Release Date:** September 14, 2025
 
-**Fix for Field Order in DL Module Results**\
+#### **Fix for Field Order in DL Module Results**
+
 Resolved an issue where the ID and Status/Error fields were displayed in an incorrect order when viewing success or failure results in the Data Loader modules.
 
-**Optimized Log Display for Bulk Operations**\
+#### **Optimized Log Display for Bulk Operations**
+
 Enhanced the log display for bulk operations to present users with optimized, clear, and relevant information for better troubleshooting and analysis.
 
 ## nCino + **Data Loader** - Release 25.3.9.1
 
 **Release Date:** September 10, 2025
 
-**AuditLog – Null Pointer Exception Fix**\
+#### **AuditLog – Null Pointer Exception Fix**
+
 A fix has been provided to address a null pointer exception occurring in instances with AuditLog enabled, ensuring stable and consistent execution.
 
 ## nCino + **Data Loader** - Release 25.3.8
@@ -127,44 +135,50 @@ Resolved issues to ensure reliable upload, insert, and delete operations for fil
 
 **Release Date:** August 03, 2025
 
-**Commit Jobs**
+#### **Commit Jobs**
 
 The processing of the commit jobs through the commit workspace has been streamlined.
 
-**Dataloader Pro – Stability Improvement**\
+#### **Dataloader Pro – Stability Improvement**
+
 An issue affecting the reliability of Data Loader Pro job execution has been resolved, ensuring smoother performance under high-load conditions.
 
-**Data Loader Pro  - Clone Issue**
+#### **Data Loader Pro – Clone Issue**
 
 An issue that is occurring during the clone operation is rectified
 
-**Data Loader Pro – Clone Operation Fix**\
+#### **Data Loader Pro – Clone Operation Fix**
+
 Resolved an issue where the clone functionality did not behave as expected, ensuring cloned jobs retain original configurations accurately.
 
 ## nCino + **Data Loader** - Release 25.3.3
 
 **Release Date:** July 27, 2025
 
-**CI Job Execution**\
+#### **CI Job Execution**
+
 CI Job execution via the queue has been streamlined to ensure consistent and reliable processing.
 
-**nCino & Data Loader – Leading and Trailing Spaces**\
+#### **nCino & Data Loader – Leading and Trailing Spaces**
+
 A fix has been implemented to ensure leading and trailing spaces are correctly handled during nCino and Data Loader job executions, improving data accuracy and consistency.
 
 ## nCino + **Data Loader** - Release 25.3.2
 
-**Release Date:** July20, 2025
+**Release Date:** July 20, 2025
 
-**Feature Template**\
+#### **Feature Template**
+
 Resolved an issue impacting feature template functionality to ensure seamless loading, selection, and execution across workflows.
 
-**Data Deployment via Migration Template**\
+#### **Data Deployment via Migration Template**
+
 Implemented a fix to ensure reliable data deployment using migration templates, addressing inconsistencies during dataset migration.
 
 ## nCino + **Data Loader** - 25.3.1 Release Notes
 
 **Release Date:** July 13, 2025
 
-### Pagination <a href="#pagination" id="pagination"></a>
+#### Pagination <a href="#pagination" id="pagination"></a>
 
 A fix has been implemented to ensure that pagination functions reliably and transitions between pages occur seamlessly without disruptions.

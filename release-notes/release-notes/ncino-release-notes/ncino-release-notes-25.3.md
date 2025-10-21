@@ -107,14 +107,20 @@ A fix has been rolled out to ensure that, during data deployment, the **deployme
 
 **Release Date:** Aug 10, 2025
 
-#### **Logs Enhancements** Improved logging capabilities for enhanced tracking and traceability.
+#### **Logs Enhancements**
 
-#### **Cloning Data Loader Pro Jobs** Enhanced **Data Loader** Pro job cloning to ensure accurate replication with all settings retained.
+Improved logging capabilities for enhanced tracking and traceability.
 
-**Data Loader Clone Functionality**\
+#### **Cloning Data Loader Pro Jobs**
+
+Enhanced **Data Loader** Pro job cloning to ensure accurate replication with all settings retained.
+
+#### **Data Loader Clone Functionality**
+
 Improved cloning process for Data Loader jobs to maintain configuration integrity.
 
-**DL File Handling**\
+#### **DL File Handling**
+
 Resolved issues to ensure reliable upload, insert, and delete operations for files.
 
 ## nCino + **Data Loader** - Release 25.3.4 <a href="#title-text" id="title-text"></a>
@@ -126,7 +132,7 @@ Resolved issues to ensure reliable upload, insert, and delete operations for fil
 The processing of the commit jobs through the commit workspace has been streamlined.
 
 **Dataloader Pro – Stability Improvement**\
-An issue affecting the reliability of Dataloader Pro job execution has been resolved, ensuring smoother performance under high-load conditions.
+An issue affecting the reliability of Data Loader Pro job execution has been resolved, ensuring smoother performance under high-load conditions.
 
 **Data Loader Pro  - Clone Issue**
 
@@ -135,17 +141,17 @@ An issue that is occurring during the clone operation is rectified
 **Data Loader Pro – Clone Operation Fix**\
 Resolved an issue where the clone functionality did not behave as expected, ensuring cloned jobs retain original configurations accurately.
 
-### nCino + **Data Loader** - Release 25.3.3
+## nCino + **Data Loader** - Release 25.3.3
 
 **Release Date:** July 27, 2025
 
 **CI Job Execution**\
 CI Job execution via the queue has been streamlined to ensure consistent and reliable processing.
 
-**nCino & Dataloader – Leading and Trailing Spaces**\
-A fix has been implemented to ensure leading and trailing spaces are correctly handled during nCino and Dataloader job executions, improving data accuracy and consistency.
+**nCino & Data Loader – Leading and Trailing Spaces**\
+A fix has been implemented to ensure leading and trailing spaces are correctly handled during nCino and Data Loader job executions, improving data accuracy and consistency.
 
-### nCino + **Data Loader** - Release 25.3.2
+## nCino + **Data Loader** - Release 25.3.2
 
 **Release Date:** July20, 2025
 
@@ -155,7 +161,7 @@ Resolved an issue impacting feature template functionality to ensure seamless lo
 **Data Deployment via Migration Template**\
 Implemented a fix to ensure reliable data deployment using migration templates, addressing inconsistencies during dataset migration.
 
-### nCino + **Data Loader** - 25.3.1 Release Notes
+## nCino + **Data Loader** - 25.3.1 Release Notes
 
 **Release Date:** July 13, 2025
 

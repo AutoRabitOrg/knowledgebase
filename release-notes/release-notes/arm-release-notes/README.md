@@ -4,22 +4,21 @@
 
 **Release Date**: October 19, 2025\
 \
-**Highlights**: Enhancements to metadata handling for destructive commits, standard value set retrieval, CI Job status accuracy, and Quick Deploy validation behavior.\
+**Highlights**: Enhancements to metadata handling for destructive commits, standard value set retrieval, CI Job status accuracy, and Quick Deploy validation behavior.
 
-
-* UserAccessPolicy deletion in destructive commits\
+* **UserAccessPolicy Deletion in Destructive Commits**\
   Destructive commits containing the 'useraccesspolicy' metadata type failed during execution. The metadata type has now been added to the SfdxMetadataFolder to ensure it is recognized for deletion.\
   (Support Case: 153113)
-* ContactPointUsageType standard value set retrieval\
+* **ContactPointUsageType Standard Value Set Retrieval**\
   ARM was unable to retrieve the "ContactPointUsageType" standard value set, which is associated with the "Contact Point Email" object. Since standard value sets cannot be fetched using describe calls, the metadata was added to the internal static list to ensure successful retrieval.\
   (Support Case: 154150)
-* Quick Deploy criteria validation for PR-triggered CI Jobs\
+* **Quick Deploy Criteria Validation for PR-Triggered CI Jobs**\
   Quick Deploy was unavailable after a successful Pull Request–triggered validation due to incorrect variable binding of the "preventDeploy" setting. The logic has been corrected, ensuring Quick Deploy remains unavailable when "Prevent Deployment" is selected under "Validate Deployment," matching expected behavior.\
   (Support Case: 153792)
-* ManagedContentType destructive commit failure\
+* **ManagedContentType Destructive Commit Failure**\
   Destructive commits for MANAGEDCONTENTTYPE metadata were failing due to unrecognized metadata classification. This metadata type has now been added to the SfdxMetadataFolder, ensuring it is properly recognized and deletable.\
   (Support Case: 154888)
-* CI Job status stuck in progress after completion\
+* **CI Job Status Stuck in Progress After Completion**\
   Some CI Jobs continued showing as “In Progress” even after build and validation completion, blocking new runs on the same target org. A blocking wait mechanism was implemented to continuously check CIJobInfo until the deploy status updates to “Completed.”\
   (Support Case: 154818)
 
@@ -29,20 +28,17 @@
 \
 **Highlights**: Stability improvements across CI Jobs, Commit handling, and Scratch Org creation.
 
-**CI Job Email Notifications – Missing Error Details**\
-Fixed an issue where CI job email reports did not display deployment failure details for Apex Classes. The notification logic now correctly includes all error and failed test details in the email report.\
-(Support Case: 154005)
-
-**Backup CI Jobs – Git Push Pre-Receive Hook Error**\
-Addressed a problem causing Backup CI Jobs to fail with the error “GIT Push remote update Result: pre-receive hook declined.” The exception is now taken care and the UI displays a simplified message: “No modifications exist.”\
-(Support Case: 154837)
-
-**EZ-Commit Validation – File Copy Failure**\
-Resolved a FileNotFoundException that occurred during EZ-Commit validation when a metadata file was missing from the source folder. The updated logic now skips missing files and continues copying remaining files, allowing the commit process to complete successfully.\
-(Support Case: 154753)\
-\
-**Scratch Org Creation – Salesforce Org Validation**\
-Resolved an issue where users received a “Salesforce Org Doesn’t Exist” error while attempting to retrieve data for Scratch Org creation. The system now correctly validates the selected Salesforce org and proceeds with successful data retrieval.
+* **CI Job Email Notifications – Missing Error Details**\
+  Fixed an issue where CI job email reports did not display deployment failure details for Apex Classes. The notification logic now correctly includes all error and failed test details in the email report.\
+  (Support Case: 154005)
+* **Backup CI Jobs – Git Push Pre-Receive Hook Error**\
+  Addressed a problem causing Backup CI Jobs to fail with the error “GIT Push remote update Result: pre-receive hook declined.” The exception is now taken care and the UI displays a simplified message: “No modifications exist.”\
+  (Support Case: 154837)
+* **EZ-Commit Validation – File Copy Failure**\
+  Resolved a FileNotFoundException that occurred during EZ-Commit validation when a metadata file was missing from the source folder. The updated logic now skips missing files and continues copying remaining files, allowing the commit process to complete successfully.\
+  (Support Case: 154753)
+* **Scratch Org Creation – Salesforce Org Validation**\
+  Resolved an issue where users received a “Salesforce Org Doesn’t Exist” error while attempting to retrieve data for Scratch Org creation. The system now correctly validates the selected Salesforce org and proceeds with successful data retrieval.
 
 ## Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
@@ -79,12 +75,11 @@ Resolved an issue where users received a “Salesforce Org Doesn’t Exist” er
 
 **Release Date**: 24th September 2025
 
-**Jira Work Items Not Retrieved from Sprints**\
-Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
-
-* Jira had deprecated the API (v2) used by ARM to fetch work items, causing sprint data retrieval failures.
-* ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
-  &#xNAN;_(Support Case: #150934 & #151385)_
+* **Jira Work Items Not Retrieved from Sprints**\
+  Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
+  * Jira had deprecated the API (v2) used by ARM to fetch work items, causing sprint data retrieval failures.
+  * ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
+    &#xNAN;_(Support Case: #150934 & #151385)_
 
 ## Release Notes 25.3.11
 

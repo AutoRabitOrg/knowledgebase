@@ -1,6 +1,6 @@
-# Release Notes 25.2
+# nCino Release Notes 25.2
 
-### nCino + DL - 25.2.12 Release Notes
+### nCino + **DataLoader** - 25.2.12 Release Notes
 
 **Release Date: 06 July, 2025**
 
@@ -28,7 +28,7 @@ In the CI Job configuration, the order of templates within the _Selected Templat
 
 A fix has been applied to ensure that the _Triggered Date_ field is correctly populated whenever a job is initiated. This resolves earlier inconsistencies and supports accurate build history tracking.
 
-### nCino + DL - 25.2.11 Release Notes
+### nCino + **DataLoader** - 25.2.11 Release Notes
 
 **Release Date:** 29 June 2025
 
@@ -38,7 +38,7 @@ Resolved an issue causing CI job failures due to improperly rendered template ob
 **CI Job Baseline Revision**\
 Implemented a fix to ensure the rollback mechanism for CI job baseline revisions functions as expected, maintaining consistency and stability during version changes.
 
-### nCino + DL - 25.2.9 Release Notes <a href="#title-text" id="title-text"></a>
+### nCino + **DataLoader** - 25.2.9 Release Notes <a href="#title-text" id="title-text"></a>
 
 **Release Date:** 15 June 2025
 

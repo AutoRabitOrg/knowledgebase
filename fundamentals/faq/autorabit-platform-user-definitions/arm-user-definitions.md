@@ -4,7 +4,7 @@
 
 A Standard User is an individual authorized by the Customer to log in to and directly use AutoRABIT’s subscribed products.
 
-#### Additional Notes:
+#### Additional Notes
 
 * Platform Owners/Admins are included in the Standard User class, allowing customers to manage admin rights without affecting licensing terms.
 * The number of licensed users represents the total unique users of the products, calculated throughout the entire course of the Subscription Term.
@@ -15,7 +15,7 @@ A Standard User is an individual authorized by the Customer to log in to and dir
 
 A Platform Integration User is an individual authorized by the Customer to commit to a Source Code Management (SCM) system, where that external commit is then used in any ARM process. This is primarily intended to represent users who interact with ARM through Git and do not have a Standard User license.&#x20;
 
-### Tracking Platform Integration Users in ARM:
+### Tracking Platform Integration Users in ARM
 
 AutoRABIT tracks the usage of ARM as an orchestration engine through version control systems. The unique identifier used is the associated email address. Therefore, it is important that activity be linked to official customer email addresses to avoid double-counting users who may use personal email addresses.
 
@@ -51,6 +51,6 @@ The average of the two highest quarters (15 and 17) is 16. Since licenses are so
 
 #### **Notes:**
 
-* The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q1 (May, June, July)2025, Q2 (August, September, October) 2025, Q3 (November, December 2025, January 2026) and Q4 (February, March, April) 2026.
+* The subscription model aligns with the **contract start date**, not the fiscal year. For example, if the contract starts in May 2025, the quarterly data points would include: Q1 (May, June, July 2025), Q2 (August, September, October 2025), Q3 (November and December 2025, January 2026) and Q4 (February, March, April 2026).
 * **Licenses are sold in blocks of 10 and always round up.** If oversubscribed by 6 licenses, purchase an additional 10. If oversubscribed by 11, purchase an additional 20.
 * **Unique Email IDs:** ARM counts users via unique email IDs retrieved from Git. If an individual uses multiple email addresses for commits, they will be counted as separate users. To prevent this, ensure best practices when using Git.

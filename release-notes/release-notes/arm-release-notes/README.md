@@ -1,4 +1,27 @@
-# ARM
+# ARM Release Notes
+
+## **Release Notes 25.4.3**
+
+**Release Date**: October 19, 2025\
+\
+**Highlights**: Enhancements to metadata handling for destructive commits, standard value set retrieval, CI Job status accuracy, and Quick Deploy validation behavior.\
+
+
+* UserAccessPolicy deletion in destructive commits\
+  Destructive commits containing the 'useraccesspolicy' metadata type failed during execution. The metadata type has now been added to the SfdxMetadataFolder to ensure it is recognized for deletion.\
+  (Support Case: 153113)
+* ContactPointUsageType standard value set retrieval\
+  ARM was unable to retrieve the "ContactPointUsageType" standard value set, which is associated with the "Contact Point Email" object. Since standard value sets cannot be fetched using describe calls, the metadata was added to the internal static list to ensure successful retrieval.\
+  (Support Case: 154150)
+* Quick Deploy criteria validation for PR-triggered CI Jobs\
+  Quick Deploy was unavailable after a successful Pull Request–triggered validation due to incorrect variable binding of the "preventDeploy" setting. The logic has been corrected, ensuring Quick Deploy remains unavailable when "Prevent Deployment" is selected under "Validate Deployment," matching expected behavior.\
+  (Support Case: 153792)
+* ManagedContentType destructive commit failure\
+  Destructive commits for MANAGEDCONTENTTYPE metadata were failing due to unrecognized metadata classification. This metadata type has now been added to the SfdxMetadataFolder, ensuring it is properly recognized and deletable.\
+  (Support Case: 154888)
+* CI Job status stuck in progress after completion\
+  Some CI Jobs continued showing as “In Progress” even after build and validation completion, blocking new runs on the same target org. A blocking wait mechanism was implemented to continuously check CIJobInfo until the deploy status updates to “Completed.”\
+  (Support Case: 154818)
 
 ## Release Notes 25.4.2 <a href="#heading-title-text" id="heading-title-text"></a>
 

@@ -4,13 +4,13 @@
 
 **Release Date: 8 October 2025**
 
-**Retry Failed Records**
+#### **Retry Failed Records**
 
 You can now retry only the records that failed during processing, without reprocessing the entire job. This feature streamlines error handling and saves time by allowing exclusive focus on failed records.
 
 <figure><img src="../../../.gitbook/assets/Retry - Failed Records - 0 (1).png" alt=""><figcaption></figcaption></figure>
 
-**License and Usage Tracking**
+#### **License and Usage Tracking**
 
 Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.
 
@@ -22,11 +22,11 @@ Vault now provides visibility into actual license usage, storage consumption, an
 
 Resolved an issue where list view restoration could fail. The restore process now includes all required dependencies to ensure successful recovery.
 
-**Automated Encryption and Security Keys Rotation**
+#### **Automated Encryption and Security Keys Rotation**
 
 Introduced automation to handle Key-rotation activities, ensuring smoother key transitions and uninterrupted system operations. This enhancement strengthens security, reduces downtime, and minimizes the risk of errors.
 
-**Platform Upgrades**
+#### **Platform Upgrades**
 
 Upgraded underlying platform components to enhance security, improve performance, and ensure compatibility with the latest standards.
 
@@ -48,51 +48,59 @@ Additional information has been added to ensure that email alerts include releva
 
 **Release Date:** Sept 3, 2025
 
-**Alerts**
+#### **Alerts** <a href="#alerts" id="alerts"></a>
 
 Fixed an issue that occasionally prevented some alerts from appearing. The Alerts section now consistently displays the full list of alerts.
 
-**Backup Schedule**
+#### **Backup Schedule** <a href="#backup-schedule" id="backup-schedule"></a>
 
 Resolved an issue that impacted backup scheduling. Backup schedules now display accurately and run as expected.
 
-**Archive Processing**
+#### **Archive Processing** <a href="#archive-processing" id="archive-processing"></a>
 
 Addressed an issue related to a legacy dependency. Archive processing is now fully reliable and unaffected by this component.
 
-**Archive Job Processing – ContentVersion Handling**
+#### **Archive Job Processing – ContentVersion Handling** <a href="#archive-job-processing-contentversion-handling" id="archive-job-processing-contentversion-handling"></a>
 
 Fixed an issue that caused inconsistencies when handling ContentVersion records during deletion. Archive job processing now works correctly and without discrepancies.
 
-**Archive Job Processing – Memory Handling**
+#### **Archive Job Processing – Memory Handling** <a href="#archive-job-processing-memory-handling" id="archive-job-processing-memory-handling"></a>
 
 Improved memory management during archive job execution. Archive jobs now run reliably without failures related to memory usage.
+
+***
 
 ## Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** August 20, 2025
 
-**Enhanced Job Timeout Handling**\
+#### **Enhanced Job Timeout Handling**
+
 Improved the job termination logic to ensure jobs end gracefully when timeouts occur, preventing partial processing and maintaining system stability.
 
-**Synthetic Backups Stability**\
+#### **Synthetic Backups Stability**
+
 Implemented a fix to prevent timeouts during data processing in synthetic backups, ensuring uninterrupted and reliable execution.
 
-**Archive Records Processing Fix**\
+#### **Archive Records Processing Fix**
+
 Resolved an error in archive record processing to guarantee that all records are handled accurately without failures.
 
-**Replication Jobs Diagnostics**\
+#### **Replication Jobs Diagnostics**
+
 Added additional logging to replication jobs, enabling more precise identification of root causes for quicker resolution of issues.
+
+***
 
 ## Vault Release Notes 25.1.6
 
 **Release Date:** Aug 13, 2025
 
-**Improved Naming Convention**
+#### **Improved Naming Convention** <a href="#improvised-naming-convention" id="improvised-naming-convention"></a>
 
 The column headers in the **Archive Summary** screen have been updated to improve readability and ensure better understanding of the data presented.
 
-**Vault Connect – Backup as a Source**
+#### **Vault Connect – Backup as a Source** <a href="#vault-connect-backup-as-a-source" id="vault-connect-backup-as-a-source"></a>
 
 1.  A new capability has been added to **Vault Connect**, enabling backups to be selected as a source in the configuration.
 
@@ -103,24 +111,26 @@ The column headers in the **Archive Summary** screen have been updated to improv
 
     <figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption></figcaption></figure>
 
-**Improved Email Message Handling**
+#### **Improved Email Message Handling** <a href="#improved-email-message-handling" id="improved-email-message-handling"></a>
 
 During **email message restoration**, the system now ensures that audit fields are preserved accurately, avoiding unintended updates and maintaining metadata integrity.
 
-**Event Logs Enhancements**
+#### **Event Logs Enhancements** <a href="#event-logs-enhancements" id="event-logs-enhancements"></a>
 
 Improvements have been made to the **event logging mechanism**, including:
 
 * Consolidation of daily logs
 * Enhanced tracking of activities performed by anonymous users for improved auditability and compliance.
 
-**Vault Compare Performance Optimization**
+#### **Vault Compare Performance Optimization** <a href="#vault-compare-performance-optimization" id="vault-compare-performance-optimization"></a>
 
 The **Vault Compare** operation has been optimized to provide a faster and more seamless user experience during large-scale data comparisons.
 
-**Improved Salesforce Org Identification**
+#### **Improved Salesforce Org Identification** <a href="#improved-salesforce-org-identification" id="improved-salesforce-org-identification"></a>
 
 Enhancements have been made to the logic that fetches **Salesforce Org details**, ensuring more accurate identification of the Salesforce environment connected to Vault.
+
+***
 
 ## Vault Release Notes 25.1.5
 
@@ -144,19 +154,19 @@ Enhancements have been made to the logic that fetches **Salesforce Org details**
 
 This enhancement provides a more efficient and secure way to manage data privacy in real-time environments.
 
-**Editable Org Configuration**
+#### **Editable Org Configuration**
 
 A new provision allows seamless editing of Salesforce org configurations within Vault. This feature simplifies compliance-driven credential updates by enabling users to re-authenticate Salesforce orgs with updated login credentials directly from the Vault interface.
 
-**Selected Object Processing**
+#### **Selected Object Processing**
 
 The fix ensures that only the explicitly selected child objects are processed during archival/hierarchical backup operations, providing more control and reducing unintended data processing.
 
-**Consistent Verbiage Across UI**
+#### **Consistent Verbiage Across UI**
 
 Column labels and field names across the application interface have been standardized. This update ensures improved clarity and a more consistent user experience throughout Vault.
 
-**Email Message Field Handling**
+#### **Email Message Field Handling**
 
 A fix is implemented to prevent special fields—such as audit fields—from being inadvertently updated during email data operations, preserving the integrity of email-related metadata.
 

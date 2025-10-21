@@ -2,7 +2,7 @@
 
 ## **Release Notes 25.4.3**
 
-**Release Date**: October 19, 2025\
+**Release Date**: 19 October 2025\
 \
 **Highlights**: Enhancements to metadata handling for destructive commits, standard value set retrieval, CI Job status accuracy, and Quick Deploy validation behavior.
 
@@ -24,7 +24,7 @@
 
 ## Release Notes 25.4.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date**: Oct 15th 2025\
+**Release Date**: 15 October 2025\
 \
 **Highlights**: Stability improvements across CI Jobs, Commit handling, and Scratch Org creation.
 
@@ -42,7 +42,7 @@
 
 ## Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date**: Oct 5th 2025\
+**Release Date**: 5 October 2025\
 \
 **Highlights:** Fixes for Quick Deploy iteration visibility, CI post-deploy log accuracy with Dataloader Pro, and complete Jira sprint retrieval across ALM flows.
 
@@ -58,7 +58,7 @@
 
 ## Release Notes 25.3.12
 
-**Release Date** : 28th September 2025
+**Release Date**: 28 September 2025
 
 * **Wavedashboard deployment failure due to xmd conversion**\
   When customers uploaded a package.xml containing wavedashboard type and members, ARM converted them to wavexmd and the deployment failed because the wavexmd files were missing from the zip. Implemented backend logic to prune xmd metadata entries when corresponding xmd files are not retrieved from the source org, preventing missing-file deployment errors.\
@@ -73,7 +73,7 @@
 
 ## Release Notes 25.3.11.1
 
-**Release Date**: 24th September 2025
+**Release Date**: 24 September 2025
 
 * **Jira Work Items Not Retrieved from Sprints**\
   Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
@@ -83,7 +83,7 @@
 
 ## Release Notes 25.3.11
 
-**Release Date**: 21st September 2025
+**Release Date**: 21 September 2025
 
 **Highlights**: Fixes for EZ-Commit folder retrieval, branch registration, SCA validation, and webhook API token updates.\
 
@@ -103,7 +103,7 @@
 
 ## Release Notes 25.3.10.1&#x20;
 
-**Release Date:** 20th September 2025
+**Release Date:** 20 September 2025
 
 * **SCA Validation with Special Characters**\
   Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\

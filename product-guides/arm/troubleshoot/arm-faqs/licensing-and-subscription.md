@@ -20,14 +20,14 @@ You're getting this because you've used up all of your membership licenses, and 
 
 The below-highlighted Subscription button will appear only if the customer procures more than 20+ licenses to manage different Teams.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Team</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Team</p></figcaption></figure>
 
 ### ()I see some plugins require keys. Is this a license issue or can we get these keys and use the Static Code Analysis feature? <a href="#i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get" id="i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get"></a>
 
 You can use Apex PMD and execute SCA without having to obtain a license for it. The other plugins are third-party tools and they require the license.
 
-* [SCA for CodeScan](../../../product-guides/codescan/)
-* [SCA for Checkmarx](../../../product-guides/arm/integration-and-plugins/sca-for-checkmarx.md)
-* [SCA for Apex PMD](../../../product-guides/arm/integration-and-plugins/apex-pmd.md)
-* [SCA for SonarQube](../../../product-guides/arm/integration-and-plugins/sonarqube.md)
+* [SCA for CodeScan](../../../codescan/)
+* [SCA for Checkmarx](../../integration-and-plugins/sca-for-checkmarx.md)
+* [SCA for Apex PMD](../../integration-and-plugins/apex-pmd.md)
+* [SCA for SonarQube](../../integration-and-plugins/sonarqube.md)
 

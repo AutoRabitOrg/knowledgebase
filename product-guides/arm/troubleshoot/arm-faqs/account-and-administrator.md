@@ -53,7 +53,7 @@ If you requested a new password but didn't receive your password reset email, th
 
 ### ()How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
 
-ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../../product-guides/arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
 ### ()Why am I unable to register my Salesforce Org using an OAuth connection? <a href="#why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection" id="why-am-i-unable-to-register-my-salesforce-org-using-an-oauth-connection"></a>
 
@@ -117,7 +117,7 @@ Yes, this is achievable with assistance from AutoRABIT; however, your [Salesforc
 
 ### ()Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
 
-The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../../product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
+The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 ### Why am I getting a Credential Name error while trying to Save Mappings? <a href="#why-am-i-getting-a-credential-name-error-while-trying-to-save-mappings" id="why-am-i-getting-a-credential-name-error-while-trying-to-save-mappings"></a>
 
@@ -141,7 +141,7 @@ There can only be one Super Admin, but you can temporarily change the Super Admi
 
 ### I have refreshed one of our branches by using the Branching Baseline option. The process was successful, but why is there no Revision Number created? <a href="#i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf" id="i-have-refreshed-one-of-our-branches-by-using-the-branching-baseline-option-the-process-was-successf"></a>
 
-Before proceeding with the Branching Baseline operation, please ensure you have Write permissions for the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../../product-guides/arm/registration/branching-baseline.md)
+Before proceeding with the Branching Baseline operation, please ensure you have Write permissions for the selected branch. Please refer to the knowledge base article below for more information: [Branching Baseline](../../registration/branching-baseline.md)
 
 ### How can I get access to the AutoRABIT LearningHub? <a href="#how-can-i-get-access-to-the-autorabit-academy" id="how-can-i-get-access-to-the-autorabit-academy"></a>
 

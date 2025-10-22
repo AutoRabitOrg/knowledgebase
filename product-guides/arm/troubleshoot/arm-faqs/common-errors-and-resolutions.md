@@ -1,6 +1,6 @@
 # Common Errors and Resolutions
 
-### [A](./#a) | [B](./#b) | [C](./#c) | D | E | [F](./#f) | [G](./#g) | H | [I](./#i) | [J](./#j) | K | [L](./#l) | M | [N](./#n) | [O](./#o) | [P](./#p) | Q | [R](./#r) | [S](./#s) | [T](./#t) | [U](./#u) | [V](./#v) | [W](./#w) | X | [Y](./#y) | Z
+### [A](common-errors-and-resolutions.md#a) | [B](common-errors-and-resolutions.md#b) | [C](common-errors-and-resolutions.md#c) | D | E | [F](common-errors-and-resolutions.md#f) | [G](common-errors-and-resolutions.md#g) | H | [I](common-errors-and-resolutions.md#i) | [J](common-errors-and-resolutions.md#j) | K | [L](common-errors-and-resolutions.md#l) | M | [N](common-errors-and-resolutions.md#n) | [O](common-errors-and-resolutions.md#o) | [P](common-errors-and-resolutions.md#p) | Q | [R](common-errors-and-resolutions.md#r) | [S](common-errors-and-resolutions.md#s) | [T](common-errors-and-resolutions.md#t) | [U](common-errors-and-resolutions.md#u) | [V](common-errors-and-resolutions.md#v) | [W](common-errors-and-resolutions.md#w) | X | [Y](common-errors-and-resolutions.md#y) | Z
 
 ### 413: Status Error
 

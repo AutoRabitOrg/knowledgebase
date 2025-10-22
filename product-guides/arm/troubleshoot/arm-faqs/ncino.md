@@ -19,7 +19,7 @@ Standard, published nCino templates are locked by design and **cannot be edited*
 
 This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.
 
-<figure><img src="../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
 
 **Solution:**
 
@@ -30,7 +30,7 @@ This error is encountered if you do not have the "AutoRABITOAuth2" installed in 
 5.  Re-run the job.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
 
 ### Record-Based Migration error use case <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
 
@@ -95,7 +95,7 @@ To select the language translations and for you to view them in the list, they n
 * Once enabled, go to ARM and try to retrieve the components under **Translations**. You will observe the languages populated.
 * Create a new deployment by selecting the **custom object translations**, its relevant languages under translations, and the custom object. Your target environment should have custom label translations now.
 
-Please refer to the article: [Working with Translation in ARM](../../../product-guides/arm/troubleshoot/best-practices/working-with-translations-in-arm.md) for more detailed information.
+Please refer to the article: [Working with Translation in ARM](../best-practices/working-with-translations-in-arm.md) for more detailed information.
 
 ### Conditional rendering references in the 'Screen' sections are not included when using the nCino standard UI template <a href="#conditional-rendering-references-in-the-screen-sections-are-not-included-when-using-the-ncino-standa" id="conditional-rendering-references-in-the-screen-sections-are-not-included-when-using-the-ncino-standa"></a>
 

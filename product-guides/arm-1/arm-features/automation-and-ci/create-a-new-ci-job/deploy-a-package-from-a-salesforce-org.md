@@ -174,4 +174,4 @@ If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.
 
-For credential-usage details across CI job types, see the [FAQ](../../../../../fundamentals/faq/arm-faqs/ci-jobs.md).
+For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).

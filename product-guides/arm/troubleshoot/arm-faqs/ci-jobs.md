@@ -101,7 +101,7 @@ You can then perform a Merge Request to trigger the CI job and validate the depl
 
 ### How do I include destructive changes in a CI job? <a href="#id-13-how-do-i-include-destructive-changes-in-a-ci-job" id="id-13-how-do-i-include-destructive-changes-in-a-ci-job"></a>
 
-Review this [Knowledge Base article](../../../product-guides/arm/arm-features/deployment/destructive-changes.md), which covers performing destructive changes through CI jobs.
+Review this [Knowledge Base article](../../arm-features/deployment/destructive-changes.md), which covers performing destructive changes through CI jobs.
 
 ### The "File Changes" tab shows that the Quick Actions metadata type is deleted. Why isn’t this reflected in the Destructive Changes tab or the package xml? <a href="#id-14-the-file-changes-tab-shows-that-the-quick-actions-metadata-type-is-deleted-why-isnt-this-reflecte" id="id-14-the-file-changes-tab-shows-that-the-quick-actions-metadata-type-is-deleted-why-isnt-this-reflecte"></a>
 
@@ -113,7 +113,7 @@ You can work around this by **updating the baseline** revision **CI job** and us
 
 ### Why am I getting the "License is not valid" error when trying to use CodeScan as the analysis tool while running a CI job in ARM? <a href="#id-15-why-am-i-getting-the-license-is-not-valid-error-when-trying-to-use-codescan-as-the-analysis-tool" id="id-15-why-am-i-getting-the-license-is-not-valid-error-when-trying-to-use-codescan-as-the-analysis-tool"></a>
 
-This could be due to using an older version of CodeScan. Refer to the [CodeScan License Errors](../codescan-faqs/codescan-self-hosted-issues/license-errors.md) article for further information.
+This could be due to using an older version of CodeScan. Refer to the [CodeScan License Errors](../../../../fundamentals/faq/codescan-faqs/codescan-self-hosted-issues/license-errors.md) article for further information.
 
 ### **Why am I not getting a package for the CI Job?**
 
@@ -134,6 +134,6 @@ Since Salesforce does not retrieve deleted/deactivated picklist values in a meta
 
 This configuration for RecordType PicklistValues option only works in the EZ-Commit module. If picklist values need to be replaced, use this approach.
 
-<figure><img src="../../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
 
 Refer to [How to Configure Record Types Picklist Values](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) for more information.

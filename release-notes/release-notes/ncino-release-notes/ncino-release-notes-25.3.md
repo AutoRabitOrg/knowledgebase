@@ -1,5 +1,61 @@
 # nCino Release Notes 25.3
 
+## nCino + **Data Loader** - Release 25.4.3
+
+**Release Date:** Oct 19, 2025
+
+#### **Connection Pool Shutdown Issue** <a href="#connection-pool-shutdown-issue" id="connection-pool-shutdown-issue"></a>
+
+Optimized redundant database calls to prevent connection pool shutdown errors. This enhancement ensures stable and consistent connections during data processing, eliminating the “Connection Pool Issue” encountered by users.
+
+## nCino + **Data Loader** - Release 25.4.2
+
+**Release Date:** October 15, 2025
+
+#### **Person Account ORG** <a href="#person-account-org" id="person-account-org"></a>
+
+A fix has been implemented to ensure records are processed correctly in environments with Person Account–enabled orgs, preventing migration failures.
+
+#### **Skipping Migration for Selected Parent Records** <a href="#skipping-migration-for-selected-parent-records" id="skipping-migration-for-selected-parent-records"></a>
+
+Resolved an issue where parent records were incorrectly migrated even when the _Automatic Apply Filter_ option was selected. The system now skips parent records as intended.
+
+#### **Cloning Single Data Loader Job** <a href="#cloning-single-data-loader-job" id="cloning-single-data-loader-job"></a>
+
+Addressed an issue that prevented cloned Data Loader jobs from updating records properly. Cloned jobs now retain and update data accurately.
+
+#### **Feature Management Versioning** <a href="#feature-management-versioning" id="feature-management-versioning"></a>
+
+Implemented a UI enhancement to ensure versioning information displays correctly within the _Feature Management_ section.
+
+#### **DL PRO – Invalid Query Error** <a href="#dl-pro-invalid-query-error" id="dl-pro-invalid-query-error"></a>
+
+Fixed an issue that occurred during job execution when no mappings were provided. The system now handles empty or null mapping values gracefully during job editing and saving.
+
+#### **DL PRO – Circular Reference Error** <a href="#dl-pro-circular-reference-error" id="dl-pro-circular-reference-error"></a>
+
+Introduced a safeguard to handle empty source and destination external ID conditions, preventing circular reference errors during data processing.
+
+## nCino + **Data Loader** - Release 25.4.1
+
+Release Date: October 5, 2025
+
+#### **Person Account ORG Handling** <a href="#person-account-org-handling" id="person-account-org-handling"></a>
+
+Resolved an issue that caused record failures in environments with Person Account–enabled orgs. The process now supports these orgs seamlessly.
+
+#### **Data Loader Extraction – Custom Query Handling** <a href="#data-loader-extraction-custom-query-handling" id="data-loader-extraction-custom-query-handling"></a>
+
+Implemented a fix to ensure that custom queries in Data Loader extractions are parsed and executed correctly, preventing query-related failures.
+
+#### **Attachment Processing** <a href="#attachment-processing" id="attachment-processing"></a>
+
+Addressed an issue with attachment handling in form templates to ensure smooth and reliable processing during uploads and migrations.
+
+#### **DL Status Auto-Update** <a href="#dl-status-auto-update" id="dl-status-auto-update"></a>
+
+Introduced an automatic refresh mechanism to keep job status updates in sync, ensuring that the latest execution status is always displayed in real time.
+
 ## nCino + **Data Loader** - Release 25.3.12
 
 **Release Date:** September 28, 2025

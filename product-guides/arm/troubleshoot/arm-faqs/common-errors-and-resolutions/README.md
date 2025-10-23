@@ -29,7 +29,7 @@ If the steps above do not work, create a new credential and link it to your ALM 
 
 Despite having admin privileges in your instance, you are unable to delete certain workspaces, as the Delete button appears grayed out, as shown in the screenshot below.
 
-<figure><img src="../../../../.gitbook/assets/image (1751).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1751).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
 
 The reason the Delete button is grayed out is that these workspaces are classified as Base Workspaces. Base workspaces are directly linked to a branch in your instance, and they cannot be deleted unless the associated branch is unregistered from AutoRABIT. When you register a new branch, a workspace is created, and they are tightly connected.
 
@@ -117,7 +117,7 @@ Cross-verify the following things:
 * Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment or
 * &#x20;Disable the Repository Link.
 
-For more content, refer to![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/).
+For more content, refer to![](<../../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/).
 
 </details>
 
@@ -196,7 +196,7 @@ If the test connection for the mapped repository and branch fails, we recommend 
 
 Getting the ''Not Available for deploy for this organization'' error message while deploying the Apex class to the target org can occur when your Salesforce user has an Integration license assigned.
 
-<figure><img src="../../../../.gitbook/assets/image (1750).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1750).png" alt=""><figcaption></figcaption></figure>
 
 While this license generally allows users to validate and deploy standard or custom objects and fields, it is usually insufficient for deploying most other metadata types. For example, if you are trying to deploy new or updated permissions or custom items like Flows or Apex, the Integration license is likely to result in one of the following two errors:
 

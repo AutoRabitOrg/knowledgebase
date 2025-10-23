@@ -4,11 +4,13 @@ The following errors are provided to troubleshoot issues that arise. Please refe
 
 [Error message: 413: Status Error - Downloading duplicate profile files simultaneously](https://knowledgebase.autorabit.com/~/revisions/3VI0zaSEEP3zDMr0Tue8/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously)
 
+Error message: Authentication Failed - ALM connectivity due to incorrect configuration
+
 <details>
 
-<summary><a href="https://knowledgebase.autorabit.com/~/revisions/3VI0zaSEEP3zDMr0Tue8/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously">Error message: 413: Status Error - Downloading duplicate profile files simultaneously</a></summary>
+<summary>Error message: 413: Status Error - Downloading duplicate profile files simultaneously</summary>
 
-
+Users may encounter a 413-status error in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.
 
 </details>
 
@@ -78,7 +80,7 @@ When running a CI job, if any of the folders in the remote repository has an emp
 
 <details>
 
-<summary>Error message: <strong>Failed to push some refs to [remote]</strong></summary>
+<summary>Error message: Failed to push some refs to [remote<strong>]</strong></summary>
 
 This error typically happens when you try to push to a remote repository, but your local branch is behind the remote branch. You need to pull the latest changes from the remote repository before you can push your changes.
 
@@ -86,7 +88,7 @@ This error typically happens when you try to push to a remote repository, but yo
 
 <details>
 
-<summary>Error message: <strong>Failed to push some refs to [remote]. Updates were rejected</strong></summary>
+<summary>Error message: Failed to push some refs to [remote]. Updates were rejected</summary>
 
 This error usually occurs when you try to push a commit to a target branch, but the `HEAD` has been updated by someone else after you started your merge. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again. You **can’t re-push** because:
 
@@ -133,7 +135,7 @@ This occurs when using an old version of CodeScan. Install the most recent versi
 
 <details>
 
-<summary>Error message: <strong>Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml</strong></summary>
+<summary>Error message: Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml</summary>
 
 When a deployment fails, this error usually occurs due to behavior in the Salesforce CLI 7.83 version. When retrieving the LWC components, it retrieves .css-meta.xml rather than .js-meta.xml file, which results in the deployment failing. Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again. Salesforce stopped maintaining SFDX v7 in April 2023 and no longer provides updates, bug fixes, or technical support.&#x20;
 
@@ -168,7 +170,7 @@ Increase the timeouts to avoid this problem:
 
 <details>
 
-<summary>Error message: <strong>Local and remote repositories are not on the same revision</strong></summary>
+<summary>Error message: Local and remote repositories are not on the same revision</summary>
 
 There are several possible explanations for AutoRABIT to throw an error **"local and remote repo is not on same revision"**:
 
@@ -227,7 +229,7 @@ Users may encounter this error when trying to register a Salesforce environment 
 
 <details>
 
-<summary>Error message: <strong>Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact</strong></summary>
+<summary>Error message: Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact</summary>
 
 Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI)
 
@@ -273,7 +275,7 @@ The potential causes of _Picklist not found_ error-related Merge/Commit Prevalid
 
 <details>
 
-<summary>Error message: <strong>Refusing to update checked out branch: [branch_name]</strong></summary>
+<summary>Error message: Refusing to update checked out branch: [branch_name]</summary>
 
 This error occurs when you try to push to the branch you currently have checked out. To resolve this, you can either switch to a different branch or create a new branch to work on.
 
@@ -281,7 +283,7 @@ This error occurs when you try to push to the branch you currently have checked 
 
 <details>
 
-<summary>Error message: <strong>RPC failed; result=XXX, HTTP code = XXX</strong></summary>
+<summary>Error message: RPC failed; result=XXX, HTTP code = XXX</summary>
 
 This error is often related to network issues or server misconfigurations. It can occur when pushing large files or when the Git server is experiencing problems. Checking your network connection and trying again later may resolve this error.
 
@@ -307,7 +309,7 @@ For example, if you observe ">>>>>>>" character string(length =7) in any of the 
 
 <details>
 
-<summary>Error message: <strong>Schema is invalid for the file</strong></summary>
+<summary>Error message: Schema is invalid for the file</summary>
 
 Users may encounter this error when trying to perform a merge due to invalid characters like (>>>, <<<) symbols used in the file. To resolve, download the merge conflict files and validate the characters present in those XML files.
 
@@ -329,7 +331,7 @@ When a commit returns this error, it is either because:&#x20;
 
 <details>
 
-<summary>Error message: <strong>src refspec [branch] does not match any</strong></summary>
+<summary>Error message: src refspec [branch] does not match any</summary>
 
 This error occurs when you try to push a branch that doesn't exist locally or has a different name. Ensure that the branch exists and that you have the correct name.
 
@@ -337,7 +339,7 @@ This error occurs when you try to push a branch that doesn't exist locally or ha
 
 <details>
 
-<summary>Error message: <strong>TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch</strong></summary>
+<summary>Error message: TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch</summary>
 
 This error may be encountered while attempting to commit changes for the production organization to the GitHub master branch.  This is expected. When the branch is set with the branch policy, you cannot push it directly and need to create a pull request to update it. Once you remove the branch policy, you should have the ability to push changes to the master branch. Please contact the GitHub Administrator to request push permissions.
 
@@ -345,7 +347,7 @@ This error may be encountered while attempting to commit changes for the product
 
 <details>
 
-<summary>Error message: <strong>The layout Must Contain an item for the required layout field: IsnonStandard</strong></summary>
+<summary>Error message: The layout Must Contain an item for the required layout field: IsnonStandard</summary>
 
 Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008sDkIAI](https://developer.salesforce.com/forums/?id=906F00000008sDkIAI)
 
@@ -353,7 +355,7 @@ Please refer to this article, [https://developer.salesforce.com/forums/?id=906F0
 
 <details>
 
-<summary>Error message: <strong>This test is already in the execution queue</strong></summary>
+<summary>Error message: This test is already in the execution queu<strong>e</strong></summary>
 
 When generating a code coverage report for a registered Salesforce org, the test fails with this error if the Apex test execution takes a long time. Go to **TAF > Apex Test Execution** and clear all of the tests in the queue, then run the code coverage report through ARM again.
 
@@ -403,7 +405,7 @@ Users may encounter this error message when a Merge is failed. This occurs when 
 
 <details>
 
-<summary>Error message: <strong>You are not authorized to push changes to the remote repository</strong></summary>
+<summary>Error message: You are not authorized to push changes to the remote repository</summary>
 
 This error occurs during the branching baseline operation when version control credentials are insufficient for pushing changes to a branch. This indicates that you have read permissions but not write permissions. After updating your permissions, re-run a new branching baseline operation.
 
@@ -411,7 +413,7 @@ This error occurs during the branching baseline operation when version control c
 
 <details>
 
-<summary>Error message: <strong>Your branch is ahead of [remote]/[branch] by X commits</strong></summary>
+<summary>Error message: Your branch is ahead of [remote]/[branch] by X commits</summary>
 
 This error message indicates that your local branch has commits that haven't been pushed to the remote branch. To resolve this, you can either push your local commits using **git push** or discard your local commits using **git reset** or **git stash**.
 

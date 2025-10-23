@@ -114,7 +114,7 @@ Send email notifications on build success or failure.
 * **Weekly** – Run on selected day(s) and time.
 * **No schedule** – Save the job and trigger it manually.
 
-For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs/).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 

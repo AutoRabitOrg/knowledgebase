@@ -81,7 +81,7 @@ Configure when the job should run:
 * **Weekly**: Runs weekly on selected days
 * **No Schedule**: Save job to run manually
 
-> For credential usage info in CI jobs, refer to [this FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+> For credential usage info in CI jobs, refer to [this FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs/).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 

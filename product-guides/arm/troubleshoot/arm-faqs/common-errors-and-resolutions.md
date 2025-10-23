@@ -1,84 +1,18 @@
 # Common Errors and Resolutions
 
-The following errors are provided to troubleshoot issues that arise. Please refer to the solutions and resources below for answers to some commonly encountered errors.
+he following errors are provided to troubleshoot issues that arise. Please refer to the solutions and resources below for answers to some commonly encountered errors.
 
 [Error message: 413: Status Error - Downloading duplicate profile files simultaneously](https://knowledgebase.autorabit.com/~/revisions/3VI0zaSEEP3zDMr0Tue8/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously)
 
 [Error message: Authentication Failed - ALM connectivity due to incorrect configuration](https://knowledgebase.autorabit.com/~/revisions/ukRudv9dGRUL2q4Awg7g/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/authentication-failed)
 
+[Error message: Cannot Open Git-Upload-Pack](https://knowledgebase.autorabit.com/~/revisions/PhrMlDs4KPpBVZk801ve/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-open-git-upload-pack)
 
+[Error: Unable to delete workspaces](https://knowledgebase.autorabit.com/~/revisions/qGbi2kzSAblsa7qu1e7D/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/unable-to-delete-workspaces)
 
-<details>
+[Error message: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'](https://knowledgebase.autorabit.com/~/revisions/EdObJurOGkDws2azAf5L/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-find-the-declaration-of-element-web-validatesalesforceorgconnection)
 
-<summary>Error message: 413: Status Error - Downloading duplicate profile files simultaneously</summary>
-
-Users may encounter a 413-status error in the browser console when trying to upload duplicate profile files that have been resolved after downloading from version control. This occurs when users try to download numerous files at one time. Download one profile file at a time to resolve the error.
-
-</details>
-
-<details>
-
-<summary>Error message: Authentication Failed - ALM connectivity due to incorrect configuration</summary>
-
-This error may occur when users are selecting an ALM on the EZ-Commit screen. VPN connectivity appears to be the source of intermittent ALM connectivity issues; the ALM is incorrectly configured. To correct this issue:&#x20;
-
-* On the My Account screen, look for the ALM configuration.&#x20;
-* To reauthenticate your ALM configuration, click the Test Connection icon to verify your credentials.
-
-If the steps above do not work, create a new credential and link it to your ALM account.
-
-</details>
-
-<details>
-
-<summary>Base Workspaces: Unable to delete certain workspaces</summary>
-
-Despite having admin privileges in your instance, you are unable to delete certain workspaces, as the Delete button appears grayed out, as shown in the screenshot below.
-
-<figure><img src="../../../../.gitbook/assets/image (1751).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
-
-The reason the Delete button is grayed out is that these workspaces are classified as Base Workspaces. Base workspaces are directly linked to a branch in your instance, and they cannot be deleted unless the associated branch is unregistered from AutoRABIT. When you register a new branch, a workspace is created, and they are tightly connected.
-
-If you still wish to remove any workspace where the delete option is grayed out, please ensure that the related branch is no longer needed, and proceed to unregister the branch. Once the branch is unregistered, you will be able to delete the associated workspace.
-
-</details>
-
-<details>
-
-<summary>Error message: Cannot Open Git-Upload-Pack</summary>
-
-Users may encounter this error message when trying to register the Bitbucket repository. This occurs when:
-
-* The Bitbucket account is locked.
-* When registering the Bitbucket repository, the wrong credentials were used.
-* The IT/Network team has whitelisted ARM's IP address.
-
-To resolve this issue:
-
-* Try recreating a new credential and updating the credentials under the **Admin > Credential** section.
-* Re-register your bitbucket repository in ARM.
-
-</details>
-
-<details>
-
-<summary>Error message: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'" when selecting an org in EZ-Merge</summary>
-
-The error below pops up while selecting the org for merge validation: `cvc-elt.1.a: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'`
-
-**Cause of the issue:** This may be due to a cache problem while selecting the Salesforce Org.
-
-**Resolution:** Clearing the browser cache and refreshing the browser will resolve the issue.
-
-</details>
-
-<details>
-
-<summary>Error message: Failed to initiate deployment. Unexpected end of JSON input.</summary>
-
-When running a CI job, if any of the folders in the remote repository has an empty **JSON** file, that will cause SFDX commands to fail with an incorrect JSON error. Delete the **empty JSON file(s)** from the remote repository to resolve this issue and re-run the CI job.
-
-</details>
+[Error message: Failed to initiate deployment. Unexpected end of JSON input.](https://knowledgebase.autorabit.com/~/revisions/1MpGiDGwK1B2XQ6cGqOG/product-guides/arm/troubleshoot/arm-faqs/ci-jobs/failed-to-initiate-deployment.-unexpected-end-of-json-input.)
 
 <details>
 

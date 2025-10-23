@@ -82,7 +82,7 @@ Run the job automatically:
 * **Weekly** – Run on selected day(s) and time.
 * **No schedule** – Save the job and run it manually when needed.
 
-For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs/).
 
 ### What next? <a href="#what-next" id="what-next"></a>
 

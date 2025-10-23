@@ -6,7 +6,7 @@ After the 25.3.9 release, the structure of the webhook payload URL was updated. 
 
 Old URL: [https://na25.autorabit.com/**autorabitrest**/webhook/triggerSCMPushrequest](https://na25.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
 
-Updated URL: [https://na25.autorabit.com/api/webhook/triggerSCMPushrequest](https://na25.autorabit.com/api/webhook/triggerSCMPushrequest)
+Updated URL: [https://na25.autorabit.com/**api**/webhook/triggerSCMPushrequest](https://na25.autorabit.com/api/webhook/triggerSCMPushrequest)
 
 Unless you update the payload URL, you may face pull request/trigger build-on-commit jobs triggering.
 

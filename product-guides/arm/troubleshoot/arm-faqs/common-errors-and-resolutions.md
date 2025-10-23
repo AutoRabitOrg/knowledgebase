@@ -4,7 +4,9 @@ The following errors are provided to troubleshoot issues that arise. Please refe
 
 [Error message: 413: Status Error - Downloading duplicate profile files simultaneously](https://knowledgebase.autorabit.com/~/revisions/3VI0zaSEEP3zDMr0Tue8/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously)
 
-Error message: Authentication Failed - ALM connectivity due to incorrect configuration
+[Error message: Authentication Failed - ALM connectivity due to incorrect configuration](https://knowledgebase.autorabit.com/~/revisions/ukRudv9dGRUL2q4Awg7g/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/authentication-failed)
+
+
 
 <details>
 

@@ -567,7 +567,7 @@
       * [Account & Administrator](product-guides/arm/troubleshoot/arm-faqs/account-and-administrator.md)
       * [Licensing and Subscription](product-guides/arm/troubleshoot/arm-faqs/licensing-and-subscription.md)
       * [CI Jobs](product-guides/arm/troubleshoot/arm-faqs/ci-jobs.md)
-      * [Common Errors and Resolutions](product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/README.md)
+      * [Common Errors and Resolutions](product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions.md)
         * [Error message: 413: Status Error - Downloading duplicate profile files simultaneously](product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously.md)
       * [Connection & Authentication](product-guides/arm/troubleshoot/arm-faqs/connection-and-authentication.md)
       * [DataLoader FAQs](product-guides/arm/troubleshoot/arm-faqs/data-loader-encryption-and-data-storage-faq.md)

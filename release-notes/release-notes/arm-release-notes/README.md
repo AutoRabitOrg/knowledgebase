@@ -6,17 +6,15 @@
 \
 **Highlights**: Improvements in EZ-Commit author handling, EZ-Merge responsiveness, and CI Job error reporting.
 
-EZ-Commit Author-Specific Retrieval\
-Resolved an issue where EZ-Commit was not correctly filtering metadata changes by the selected Salesforce org Author. The process now accurately fetches only author-related changes when a specific Author is chosen in both “Select Manually” and “Re-Use Previously Validated Commit Labels” modes.\
-(Support Case: 151097)
-
-EZ-Merge Screen Freeze After Target Branch Selection\
-Fixed a delay where the EZ-Merge screen froze for 14–17 seconds after selecting the target branch (“To” branch). The merge approver validation API (`/mergerevieweremail`) has been optimized with asynchronous handling to improve responsiveness during branch selection.\
-(Support Case: 155279)
-
-CI Job Failure with No Error Displayed\
-Addressed an issue where CI Jobs failed silently when component names contained dots and were misclassified under different component types (e.g., Profiles) in DX environments. The fix ensures accurate component handling and consistent error reporting for both DX and Non-DX CI Jobs initiated from Version Control to Deploy Org.\
-(Support Case: 155649)
+* EZ-Commit Author-Specific Retrieval\
+  Resolved an issue where EZ-Commit was not correctly filtering metadata changes by the selected Salesforce org Author. The process now accurately fetches only author-related changes when a specific Author is chosen in both “Select Manually” and “Re-Use Previously Validated Commit Labels” modes.\
+  (Support Case: 151097)
+* EZ-Merge Screen Freeze After Target Branch Selection\
+  Fixed a delay where the EZ-Merge screen froze for 14–17 seconds after selecting the target branch (“To” branch). The merge approver validation API (`/mergerevieweremail`) has been optimized with asynchronous handling to improve responsiveness during branch selection.\
+  (Support Case: 155279)
+* CI Job Failure with No Error Displayed\
+  Addressed an issue where CI Jobs failed silently when component names contained dots and were misclassified under different component types (e.g., Profiles) in DX environments. The fix ensures accurate component handling and consistent error reporting for both DX and Non-DX CI Jobs initiated from Version Control to Deploy Org.\
+  (Support Case: 155649)
 
 ## **Release Notes 25.4.3**
 

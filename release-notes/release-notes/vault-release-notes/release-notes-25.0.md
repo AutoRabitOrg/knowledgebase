@@ -1,5 +1,25 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.2.1 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** October 29, 2025
+
+#### **Replication Failure**
+
+Fixed an issue that prevented replication jobs from executing successfully. Filters are now correctly copied to the new edit configuration folder during each configuration update.
+
+#### **Live Data Masking Results Download**
+
+Addressed a problem where Live Data Masking results could not be downloaded. Improved file transfer handling ensures large files are now processed and downloaded efficiently.
+
+#### **Backup Failure Alerts**
+
+Resolved an issue where alerts were not generated for failed backups. The system now correctly sends email notifications for scheduled job failures caused by invalid Salesforce credentials.
+
+#### **Backup Job Execution**
+
+Fixed an issue causing intermittent backup job failures. Code enhancements now ensure backup jobs run reliably without interruptions.
+
 ## Vault Release Notes 25.2.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 8 October 2025**

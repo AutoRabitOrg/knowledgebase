@@ -2,7 +2,7 @@
 
 This article summarizes Salesforce's known issues and limitations that AutoRABIT users should consider:
 
-## Custom Field Translation Retrieval with Source Tracking Enabled
+### Custom Field Translation Retrieval with Source Tracking Enabled
 
 **Issue Summary**\
 When retrieving metadata via Metadata API, if only a single CustomField is included in the package, Salesforce retrieves all Custom Field Translations. This occurs specifically in orgs where Source Tracking is enabled.\
@@ -227,6 +227,8 @@ AutoRABIT is committed to delivering an exceptional customer experience. Please 
 
 However, if the user wants to migrate data on the above objects, they can do so by using the Single Dataloader operation in AutoRABIT.
 
+## Errors
+
 ### **Error While Registering a Salesforce Org**
 
 When you face the error below when registering a Salesforce Org in ARM, please follow the steps below.
@@ -240,3 +242,15 @@ When you face the error below when registering a Salesforce Org in ARM, please f
 5. Now try registering the org in ARM.
 
 This is a limitation of Salesforce. See the article: URL: [![](https://trailhead.salesforce.com/community/favicon-16x16.png)Feed Item Detail | Salesforce Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/feed/0D54V00007T42fmSAB).
+
+### Error message: Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact
+
+Please refer to this article: [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI).
+
+### Error message: Permissions Read All ServiceTerritory depends on permission(s): Read All OperatingHours
+
+Please refer to this article: [https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC](https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC).
+
+### Error message: The layout Must Contain an item for the required layout field: IsnonStandard
+
+Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008sDkIAI](https://developer.salesforce.com/forums/?id=906F00000008sDkIAI)

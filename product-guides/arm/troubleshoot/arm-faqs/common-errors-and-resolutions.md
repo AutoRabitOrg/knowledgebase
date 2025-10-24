@@ -1,6 +1,6 @@
 # Common Errors and Resolutions
 
-he following errors are provided to troubleshoot issues that arise. Please refer to the solutions and resources below for answers to some commonly encountered errors.
+The following error messages are provided to troubleshoot issues as they arise. Please refer to the solutions and resources below for answers to some commonly encountered errors and error messages.
 
 [Error message: 413: Status Error - Downloading duplicate profile files simultaneously](https://knowledgebase.autorabit.com/~/revisions/3VI0zaSEEP3zDMr0Tue8/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously)
 
@@ -8,367 +8,65 @@ he following errors are provided to troubleshoot issues that arise. Please refer
 
 [Error message: Cannot Open Git-Upload-Pack](https://knowledgebase.autorabit.com/~/revisions/PhrMlDs4KPpBVZk801ve/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-open-git-upload-pack)
 
-[Error: Unable to delete workspaces](https://knowledgebase.autorabit.com/~/revisions/qGbi2kzSAblsa7qu1e7D/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/unable-to-delete-workspaces)
-
 [Error message: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'](https://knowledgebase.autorabit.com/~/revisions/EdObJurOGkDws2azAf5L/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-find-the-declaration-of-element-web-validatesalesforceorgconnection)
 
 [Error message: Failed to initiate deployment. Unexpected end of JSON input.](https://knowledgebase.autorabit.com/~/revisions/1MpGiDGwK1B2XQ6cGqOG/product-guides/arm/troubleshoot/arm-faqs/ci-jobs/failed-to-initiate-deployment.-unexpected-end-of-json-input.)
 
-<details>
+[Error message: Failed to push some refs to \[remote\]](https://knowledgebase.autorabit.com/~/revisions/IrtuchPWTlattwGEM6OD/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/failed-to-push-some-refs-to-remote)
 
-<summary>Error message: Failed to push some refs to [remote<strong>]</strong></summary>
+[Error message: GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.](https://knowledgebase.autorabit.com/~/revisions/b1ho43JCpidl0YWBC8yF/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-gh006-protected-branch-update-failed-for-refs-heads-master.)
 
-This error typically happens when you try to push to a remote repository, but your local branch is behind the remote branch. You need to pull the latest changes from the remote repository before you can push your changes.
+[Error message: GIT Push Result: RemoteRefUpdate](https://knowledgebase.autorabit.com/~/revisions/lwFT8sv76u9JoeNkeAnx/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-git-push-result-remoterefupdate)
 
-</details>
+[Error: Installing CodeScan Sonar as a plugin in ARM](https://knowledgebase.autorabit.com/~/revisions/TrXw66IblXlo15giGnBb/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/installing-codescan-sonar-as-a-plugin-in-arm)
 
-<details>
+[Error message: Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml](https://knowledgebase.autorabit.com/~/revisions/MpxNH6lUh6Wr71fvOfA2/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/invalid-meta-xml-name-lwc-xxx-xxx.css-meta.xml-should-end-with-js-meta.xml)
 
-<summary>Error message: Failed to push some refs to [remote]. Updates were rejected</summary>
+[Error message: Invalid Schema during the Merge Prevalidation Process](https://knowledgebase.autorabit.com/~/revisions/MpxNH6lUh6Wr71fvOfA2/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/invalid-schema-during-the-merge-prevalidation-process)
 
-This error usually occurs when you try to push a commit to a target branch, but the `HEAD` has been updated by someone else after you started your merge. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again. You **can’t re-push** because:
+[Error message: Local and remote repositories are not on the same revision](https://knowledgebase.autorabit.com/~/revisions/9GkIkeaALdJ5Y23XA672/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/local-and-remote-repositories-are-not-on-the-same-revision)
 
-* Your merge commit references an **older state** of the target branch.
-* Re-pushing would **skip** newer commits, which could cause lost work or conflicts.
+[Error message: Not Authorized (to Merge)](https://knowledgebase.autorabit.com/~/revisions/joyFHqtVP2clP8Y8umxN/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/not-authorized-to-merge)
 
-You need to **re-perform the merge** using the latest version of the target branch.
+[Error message: Not Available for deploy for this organization](https://knowledgebase.autorabit.com/~/revisions/woSPqiPyMz4Dlkp8971h/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/not-available-for-deploy-for-this-organization)
 
-</details>
+[Error message: OAuth Authentication Failed](https://knowledgebase.autorabit.com/~/revisions/woSPqiPyMz4Dlkp8971h/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/oauth-authentication-failed)
 
-<details>
+[Error message: Please check credentials for 'xxx' branch of 'abc' repository](https://knowledgebase.autorabit.com/~/revisions/rYz8WTsiX4uOj026xeRC/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/please-check-credentials-for-xxx-branch-of-abc-repository)
 
-<summary>Error message: GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.</summary>
+[Error message: Pre-receive-hook declined](https://knowledgebase.autorabit.com/~/revisions/Xzn0zbN9NIm96AjmX6Bu/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/pre-receive-hook-declined)
 
-This error may be encountered while attempting to commit changes for a production organization to the GitHub master branch. This occurred because protected branches do not allow force-pushes. Get in touch with your Administrator to turn off the protection on that branch.
+[Error message: Picklist not found](https://knowledgebase.autorabit.com/~/revisions/eVHiGs1GS5ibsZILu3Nf/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/picklist-not-found)
 
-</details>
+[Error message: Refusing to update checked out branch: \[branch\_name\]](https://knowledgebase.autorabit.com/~/revisions/3V2gW4eCq06phfVxFPgc/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/refusing-to-update-checked-out-branch-branch_name)
 
-<details>
+[Error message: RPC failed; result=XXX, HTTP code = XXX](https://knowledgebase.autorabit.com/~/revisions/pfTNbBNW4wCntdKKMoiW/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/rpc-failed-result-xxx-http-code-xxx)
 
-<summary>Error message: GIT Push Result: RemoteRefUpdate[remoteName=refs/heads/release/CI_UAT2_Refresh, REJECTED_OTHER_REASON, 3235de0aa8e9edd83ab68d4d723c0301847caf78...9b4c80cea9e7217aa7d16486f1f30b609406c2f1, fastForward, srcRef=refs/heads/release/CI_UAT2_Refresh, message="pre-receive hook declined"] Status of the GIT Push process: REJECTED_OTHER_REASON</summary>
+[Error message: REJECTED\_NONFASTFORWARD](https://knowledgebase.autorabit.com/~/revisions/7Zz9TodeIJRQNq5Pr8lx/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/rejected_nonfastforward)
 
-Multiple Branching Baseline jobs show no local modifications to commit. As a result, the following error message is thrown. This occurs when one of your commit messages is missing a valid issue key:&#x20;
+[Error message: Schema is invalid for the file](https://knowledgebase.autorabit.com/~/revisions/f8OnFpeVdNFYaMfPGLXb/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/schema-is-invalid-for-the-file)
 
-9b4c80c: Commit From AutoRABIT \[Branch Baseline] \[LabelName:UAT2 Baseline]
+[Error message: SCM Authentication Failed](https://knowledgebase.autorabit.com/~/revisions/EW2kcecjfPnI2ffIX25g/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/scm-authentication-failed)
 
-Cross-verify the following things:
+[Error message: src refspec \[branch\] does not match any](https://knowledgebase.autorabit.com/~/revisions/LVWCtf0OrhAsGkpIB2Am/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/src-refspec-branch-does-not-match-any)
 
-* Create a new repository link where the key should include part of the commit comment from AutoRABIT or
-* Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment or
-* &#x20;Disable the Repository Link.
+[Error message: TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch](https://knowledgebase.autorabit.com/~/revisions/klh6Zdcuw9GtAWSChIhu/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/tf402455-pushes-to-this-branch-are-not-permitted)
 
-For more content, refer to![](<../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/).
+[Error message: This test is already in the execution queue](https://knowledgebase.autorabit.com/~/revisions/XTYRHJ8jlyYdmaPCQtQF/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/this-test-is-already-in-the-execution-queue)
 
-</details>
+[Error message: Tip of your current branch is behind](https://knowledgebase.autorabit.com/~/revisions/XTYRHJ8jlyYdmaPCQtQF/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/tip-of-your-current-branch-is-behind)
 
-<details>
+[Error: Unable to delete workspaces](https://knowledgebase.autorabit.com/~/revisions/qGbi2kzSAblsa7qu1e7D/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/unable-to-delete-workspaces)
 
-<summary>Error: Installing CodeScan Sonar as a plugin in ARM</summary>
+[Error message: Unable to fetch Salesforce Org Users](https://knowledgebase.autorabit.com/~/revisions/wuUlzEWeHZVb5t8Q53Kr/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/unable-to-fetch-salesforce-org-users)
 
-This occurs when using an old version of CodeScan. Install the most recent version of CodeScan to avoid any installation errors.
+[Error message: Uploaded file is not having Workflow Rules](https://knowledgebase.autorabit.com/~/revisions/wuUlzEWeHZVb5t8Q53Kr/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/uploaded-file-is-not-having-workflow-rules)
 
-</details>
+[Error message: Validation checking fails for your repository](https://knowledgebase.autorabit.com/~/revisions/LReuDb5RBqS8n1iMy2Hx/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/validation-checking-fails-for-your-repository)
 
-<details>
+[Error message: You are not authorized to push changes to the remote repository](https://knowledgebase.autorabit.com/~/revisions/J3rCsC4nIpwKEVArn9Ao/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/you-are-not-authorized-to-push-changes-to-the-remote-repository)
 
-<summary>Error message: Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml</summary>
+[Error message: Your branch is ahead of \[remote\]/\[branch\] by X commits](https://knowledgebase.autorabit.com/~/revisions/5i7h8NIcre0OWYnW2Zgj/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/your-branch-is-ahead-of-remote-branch-by-x-commits)
 
-When a deployment fails, this error usually occurs due to behavior in the Salesforce CLI 7.83 version. When retrieving the LWC components, it retrieves .css-meta.xml rather than .js-meta.xml file, which results in the deployment failing. Try renaming the .css-meta.xml file to .js-meta.xml and running the deployment again. Salesforce stopped maintaining SFDX v7 in April 2023 and no longer provides updates, bug fixes, or technical support.&#x20;
-
-</details>
-
-<details>
-
-<summary>Error message: Invalid Schema during the Merge Prevalidation Process</summary>
-
-This issue will occur if there are any special characters like the one below and if the string (length=7) is considered a GIT conflict (it is a GIT behavior), it will not perform the Merge.
-
-Special Characters: '>' ; '<' ; '|' ; '=' &#x20;
-
-We recommend limiting the above four special characters to fewer than 7 to avoid such problems.
-
-For example, in the Class file, if you observe this **">>>>>>>"** character string (length=7), then update it to less than 7 in the branch itself and rerun the Merge operation.
-
-</details>
-
-<details>
-
-<summary>Error message: Job too long after 1 hour of analysis</summary>
-
-In CodeScan Cloud, the default setting for unit test timeouts is **1 hour (3600 seconds)** for limited Metadata analysis. These timeouts might not be enough if your project has a lot of metadata. This is the reason behind the error message.
-
-Increase the timeouts to avoid this problem:
-
-1. Click **Project Settings > General Settings** in your Project Overview.
-2. Click the **CodeScan** tab on the left and modify the timeout under the **Unit Test Timeout** once you're in **General Settings**.
-
-</details>
-
-<details>
-
-<summary>Error message: Local and remote repositories are not on the same revision</summary>
-
-There are several possible explanations for AutoRABIT to throw an error **"local and remote repo is not on same revision"**:
-
-1. The local repository is out of date.
-2. The branch that contains the commit was deleted, so the commit is no longer referenced.
-3. Someone force-pushed the commit.
-
-</details>
-
-<details>
-
-<summary>Error message: Not Authorized (to Merge)</summary>
-
-This error message occurs when performing a merge when credentials are not properly mapped in ARM. Follow the steps below to resolve this issue.
-
-1. In Azure, create a new token.
-2. In ARM, go to **Admin > Credential** and create a new credential.
-3. Re-test the connection after mapping the credential to your version control branch (in the _**Profile**_ section).
-
-If the test connection for the mapped repository and branch fails, we recommend upgrading your password and altering the credential in the credential section, then retrying the connection.
-
-</details>
-
-<details>
-
-<summary>Error message: Not Available for deploy for this organization</summary>
-
-Getting the ''Not Available for deploy for this organization'' error message while deploying the Apex class to the target org can occur when your Salesforce user has an Integration license assigned.
-
-<figure><img src="../../../../.gitbook/assets/image (1750).png" alt=""><figcaption></figcaption></figure>
-
-While this license generally allows users to validate and deploy standard or custom objects and fields, it is usually insufficient for deploying most other metadata types. For example, if you are trying to deploy new or updated permissions or custom items like Flows or Apex, the Integration license is likely to result in one of the following two errors:
-
-* &#x20;"&#x49;_&#x6E;sufficient access rights on cross-reference id"_
-* &#x20;_"not available for deploy for this organization_''
-
-**Troubleshooting Steps**
-
-1. Ensure your Salesforce deployment user has all the necessary permissions to deploy the metadata item to the target organization.
-2. If you're unsure about which user permission(s) are required for the deployment, we recommend consulting with the administrators who manage the organization’s permissions. They are the best resources to assist you.
-3. Check whether both environments being compared are using the same API version. Differences in metadata API versions between the source and target organizations may lead to validation errors.
-
-{% hint style="info" %}
-**Note**: _Please note that this error originates from Salesforce rather than AutoRABIT. Nevertheless, we are committed to offering support based on our collective experience with the Metadata API. Our goal is to assist you in navigating this issue and, when possible, help you find a solution. If a resolution is not achievable, we may recommend reaching out to Salesforce support for additional assistance. Thank you for your understanding._
-{% endhint %}
-
-</details>
-
-<details>
-
-<summary>Error message: OAuth Authentication Failed</summary>
-
-Users may encounter this error when trying to register a Salesforce environment in ARM. This occurs when users do not use the My Domain URL when adding the Salesforce org to ARM. To correct this error, use **My Domain URL** while registering a Salesforce org in ARM.
-
-</details>
-
-<details>
-
-<summary>Error message: Permission Import Personal Contacts depends on permission(s): create account, Create Contact, Edit Account, Edit Contact</summary>
-
-Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008lFkIAI](https://developer.salesforce.com/forums/?id=906F00000008lFkIAI)
-
-</details>
-
-<details>
-
-<summary>Error message: Permissions Read All ServiceTerritory depends on permission(s): Read All OperatingHours</summary>
-
-Please refer to this article: [https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC](https://developer.salesforce.com/forums/?id=906F0000000AkbzIAC).
-
-</details>
-
-<details>
-
-<summary>Error message: Please check credentials for 'xxx' branch of 'abc' repository</summary>
-
-Users may encounter this error when trying to connect to the Bitbucket repo, which typically relates to user permissions.  If you are using the wrong file format for the **package.xml,** then the above error occurs. Check the permissions you have on your Bitbucket repository with the repository owner/administrator. Request permissions other users have if you don't have the needed permissions.
-
-</details>
-
-<details>
-
-<summary>Error message: Pre-receive-hook declined</summary>
-
-This error is usually returned when you have some branch restrictions set up in your repository and the commit you are trying to push does not meet the requirements of that branch restriction.
-
-</details>
-
-<details>
-
-<summary>Error message: 'Picklist not found'</summary>
-
-The potential causes of _Picklist not found_ error-related Merge/Commit Prevalidation deployment failures are listed below, along with the procedures you need to follow to fix them:
-
-* **Verify the field name:** Verify the API name or the label of the picklist field you're trying to reference and the spelling and capitalization of your source.
-* **Check the object:** Verify the object you're working with has the picklist field you're looking for. Locate the proper object by going to the **Object Manager** in **Salesforce Setup**. Look for the disputed field in the **Fields & Relationships** section in the target org.
-* **Validate field-level security:** Make sure the user or profile you're using can see and access the picklist field. Ensure the user has the appropriate permissions to see and update the field by checking the field-level security settings for their profile. Check the **field-level security settings** to ensure the user's profile has appropriate permissions to view and edit the field.
-* **Consider record types:** If your Salesforce org utilizes record types, check to see if the picklist field is specific to a particular record type. If it is, ensure that the user or profile you're using has access to the relevant record type.
-* **Consider field dependencies:** If the picklist field has any field dependencies or controlling fields, ensure that the controlling field values are set correctly. If the controlling field values are incorrect or incompatible, it can lead to the "picklist field not found" error.
-
-</details>
-
-<details>
-
-<summary>Error message: Refusing to update checked out branch: [branch_name]</summary>
-
-This error occurs when you try to push to the branch you currently have checked out. To resolve this, you can either switch to a different branch or create a new branch to work on.
-
-</details>
-
-<details>
-
-<summary>Error message: RPC failed; result=XXX, HTTP code = XXX</summary>
-
-This error is often related to network issues or server misconfigurations. It can occur when pushing large files or when the Git server is experiencing problems. Checking your network connection and trying again later may resolve this error.
-
-</details>
-
-<details>
-
-<summary>Error message: 'REJECTED_NONFASTFORWARD'</summary>
-
-Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that case, the issue is specific to your repository, and the error occurs at the GIT version control level when multiple developers try to modify a file simultaneously. If you reencounter this issue, please wait a few minutes and reattempt the commit.
-
-</details>
-
-<details>
-
-<summary>Error message: Schema is invalid</summary>
-
-Users may encounter this error when a merge is failing for metadata members. This is due to an invalid structure. If there are any **special characters** like '**>**', '**<**', '**|**', '**=**', and the **string(length =7)**, this is considered a GIT conflict (a GIT behavior), which will cause the merge to fail. To prevent this, we recommend that you limit the previously mentioned unique characters to less than seven (7).&#x20;
-
-For example, if you observe ">>>>>>>" character string(length =7) in any of the Apex Class files or any metadata member files, then update it to less than 7 in the branch itself and re-run the Merge.
-
-</details>
-
-<details>
-
-<summary>Error message: Schema is invalid for the file</summary>
-
-Users may encounter this error when trying to perform a merge due to invalid characters like (>>>, <<<) symbols used in the file. To resolve, download the merge conflict files and validate the characters present in those XML files.
-
-</details>
-
-<details>
-
-<summary>Error message: SCM Authentication Failed</summary>
-
-When a commit returns this error, it is either because:&#x20;
-
-* Version control mapped to your Salesforce org user is incorrect.
-* Your user credentials are incorrectly configured in ARM.
-
-1. Ensure your account is correctly mapped with the version control branch to reflect the commits under your name.
-2. Verify your credentials in the **Admin > Credential Manager** section and authenticate the connection again.
-
-</details>
-
-<details>
-
-<summary>Error message: src refspec [branch] does not match any</summary>
-
-This error occurs when you try to push a branch that doesn't exist locally or has a different name. Ensure that the branch exists and that you have the correct name.
-
-</details>
-
-<details>
-
-<summary>Error message: TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch</summary>
-
-This error may be encountered while attempting to commit changes for the production organization to the GitHub master branch.  This is expected. When the branch is set with the branch policy, you cannot push it directly and need to create a pull request to update it. Once you remove the branch policy, you should have the ability to push changes to the master branch. Please contact the GitHub Administrator to request push permissions.
-
-</details>
-
-<details>
-
-<summary>Error message: The layout Must Contain an item for the required layout field: IsnonStandard</summary>
-
-Please refer to this article, [https://developer.salesforce.com/forums/?id=906F00000008sDkIAI](https://developer.salesforce.com/forums/?id=906F00000008sDkIAI)
-
-</details>
-
-<details>
-
-<summary>Error message: This test is already in the execution queu<strong>e</strong></summary>
-
-When generating a code coverage report for a registered Salesforce org, the test fails with this error if the Apex test execution takes a long time. Go to **TAF > Apex Test Execution** and clear all of the tests in the queue, then run the code coverage report through ARM again.
-
-</details>
-
-<details>
-
-<summary>Error message: Tip of your current branch is behind.</summary>
-
-This error usually occurs when you try to push a commit to a target branch, but the `HEAD` has been updated by someone else after you started your merge. You need to fetch the latest changes from the remote repository using **git fetch** and then merge them into your local branch using **git merge** before attempting to push again. You **can’t re-push** because:
-
-* Your merge commit references an **older state** of the target branch.
-* Re-pushing would **skip** newer commits, which could cause lost work or conflicts.
-
-You need to **re-perform the merge** using the latest version of the target branch.
-
-</details>
-
-<details>
-
-<summary>Error message: Unable to fetch Salesforce Org Users</summary>
-
-This error may be encountered when a user tries to access the Salesforce Org in the ARM Version Control, CI Jobs, Deployment, and SFDX Modules. This may occur due to an invalid username, password, or security token, if the user is locked out, or if the Salesforce API version is incorrectly configured.&#x20;
-
-Upgrade the API source flow in your Salesforce org to the most recent version and maintain the same Salesforce version in ARM by going to **Admin > My Account > My Salesforce Settings** and updating the API version.
-
-</details>
-
-<details>
-
-<summary>Error message: Uploaded file is not having Workflow Rules</summary>
-
-This occur may occur when environment provisioning jobs are failing due to using the wrong file format for the **package.xml** file. Upload the correct package.xml file during the creation of environment provisioning jobs.
-
-</details>
-
-<details>
-
-<summary>Error message: Validation checking fails for your repository</summary>
-
-Users may encounter this error message when a Merge is failed. This occurs when repository credentials are expired or have been modified and not updated in ARM.&#x20;
-
-1. Navigate to **Admin > VC repos**, select your repository, and perform a test connection. Please verify your repository credentials are not expired or modified.
-2. Re-run the CI job after you confirm that the repository connection is successful.
-
-</details>
-
-<details>
-
-<summary>Error message: You are not authorized to push changes to the remote repository</summary>
-
-This error occurs during the branching baseline operation when version control credentials are insufficient for pushing changes to a branch. This indicates that you have read permissions but not write permissions. After updating your permissions, re-run a new branching baseline operation.
-
-</details>
-
-<details>
-
-<summary>Error message: Your branch is ahead of [remote]/[branch] by X commits</summary>
-
-This error message indicates that your local branch has commits that haven't been pushed to the remote branch. To resolve this, you can either push your local commits using **git push** or discard your local commits using **git reset** or **git stash**.
-
-</details>
-
-<details>
-
-<summary>Error message: Your connection is private</summary>
-
-If you are unable to connect to the ARM instance and get this error, it is due to cache and cookies in your system. To resolve this issue, follow the steps below.
-
-1. On your computer, open **Chrome**.
-2. At the top right, click **More**.
-3. Click **More tools**.
-4. Clear **browsing data**.
-5. At the top, choose a **time range**. To delete everything, select **All time**.
-6. Next to **Cookies and other site data** and **Cached images and files,** check the boxes.
-7. Click **Clear data**.
-8. Now, log in to your instances using the new browser tab.
-
-</details>
+[Error message: Your connection is private](https://knowledgebase.autorabit.com/~/revisions/2pZloeAS2TMhsiKyUhoF/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/your-connection-is-private)
 

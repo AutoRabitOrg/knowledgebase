@@ -109,6 +109,15 @@ To do this follow the below steps:
 5. Under **IP Relaxation** select **Relax IP Restrictions**.
 6. Rerun the scan.
 
+### Why am I getting an error message: 'Job took too long after 1 hour of analysis'?
+
+In CodeScan Cloud, the default setting for unit test timeouts is **1 hour (3600 seconds)** for limited Metadata analysis. These timeouts might not be enough if your project has a lot of metadata. This is the reason behind the error message.
+
+Increase the timeouts to avoid this problem:
+
+1. Click **Project Settings > General Settings** in your Project Overview.
+2. Click the **CodeScan** tab on the left and modify the timeout under the **Unit Test Timeout** once you're in **General Settings**.
+
 ### Why am I getting a 'Packfile is truncated' error?
 
 While analyzing the project, you may encounter a “Packfile is truncated” error. Initially, access to CodeScan was denied on GitHub.&#x20;

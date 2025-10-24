@@ -1,9 +1,7 @@
-# User Definitions
-
-
+# General User Definitions
 
 {% hint style="info" %}
-**ARM-Specific User Definitions**: The information below is generalized across the entire AutoRABIT suite of products. For information specific to ARM, please refer to the ARM User Definitions page [here](https://knowledgebase.autorabit.com/fundamentals/faq/autorabit-platform-user-definitions/arm-user-definitions).&#x20;
+**ARM-Specific User Definitions**: The information below is generalized across the entire AutoRABIT suite of products. For information specific to ARM, please refer to the ARM User Definitions page [here](https://knowledgebase.autorabit.com/~/revisions/r1tfuUId2G5l58MjsNr3/product-guides/arm/arm-administration/user-management/arm-user-definitions).&#x20;
 {% endhint %}
 
 **Standard User**

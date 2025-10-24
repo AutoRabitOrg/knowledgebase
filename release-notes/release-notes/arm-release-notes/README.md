@@ -1,5 +1,23 @@
 # ARM Release Notes
 
+## **Release Notes 25.4.4**
+
+**Release Date:** 26th October 2025\
+\
+**Highlights**: Improvements in EZ-Commit author handling, EZ-Merge responsiveness, and CI Job error reporting.
+
+EZ-Commit Author-Specific Retrieval\
+Resolved an issue where EZ-Commit was not correctly filtering metadata changes by the selected Salesforce org Author. The process now accurately fetches only author-related changes when a specific Author is chosen in both “Select Manually” and “Re-Use Previously Validated Commit Labels” modes.\
+(Support Case: 151097)
+
+EZ-Merge Screen Freeze After Target Branch Selection\
+Fixed a delay where the EZ-Merge screen froze for 14–17 seconds after selecting the target branch (“To” branch). The merge approver validation API (`/mergerevieweremail`) has been optimized with asynchronous handling to improve responsiveness during branch selection.\
+(Support Case: 155279)
+
+CI Job Failure with No Error Displayed\
+Addressed an issue where CI Jobs failed silently when component names contained dots and were misclassified under different component types (e.g., Profiles) in DX environments. The fix ensures accurate component handling and consistent error reporting for both DX and Non-DX CI Jobs initiated from Version Control to Deploy Org.\
+(Support Case: 155649)
+
 ## **Release Notes 25.4.3**
 
 **Release Date**: 19 October 2025\
@@ -181,7 +199,7 @@
 2. **Webhooks – API Token Last Access Not Updating:** Fixed an issue where webhook API tokens continued to display “Never Accessed” even after recent runs triggered by CI jobs. The back-end logic has been corrected to update and display the last access time accurately.
 3. **Rollback – Iteration and Components Not Available After Revert:** Addressed an issue where rolling back a previously deployed iteration caused both the iteration and its components to disappear. A change event has been added to ensure iterations and components are available after a revert rollback.
 
-## 25.3.6 Release Notes
+## Release Notes 25.3.6
 
 **Release Date: 17 August 2025**
 
@@ -195,7 +213,7 @@
 
 * **CI Jobs – Rollback Failure for Selective Components**: Addressed a rollback failure during CI job deployments when rolling back selective components, resulting in a “Not in Package.xml” error. Back-end logic has been updated to handle the workflow metadata type correctly.
 
-## 25.3.5 Release Notes
+## Release Notes 25.3.5
 
 **Release date: 10 August 2025**
 
@@ -203,7 +221,7 @@
 
 * **Branching baseline now supports committing child metadata components for Sharing Rules, Workflow, and Managed Topics**: This enhancement ensures these metadata types are correctly captured and pushed to the remote repository, addressing gaps identified in earlier releases.
 
-## 25.3.4 Release Notes
+## Release Notes 25.3.4
 
 **Release Date: 3 August 2025**\
 \
@@ -220,7 +238,7 @@
 * **Static resources misidentified during destructive EZ-Commit**: Deleting one static resource while another with a similar name remained caused the diff view to include both files. Selection logic has been refined so only the intended destructive file is picked up, even when naming conventions overlap.\
 
 
-## 25.3.3 Release Notes
+## Release Notes 25.3.3
 
 **Release Date: 27 July 2025**
 
@@ -235,7 +253,7 @@
 * **Environment-provisioning flow errors not displayed**: Corrected run-time array handling so success and failure details are now shown when enabling flows via an environment-provisioning template.\
 
 
-## **25.3.2 Release Notes**
+## Release Notes **25.3.2**
 
 **Release Date**: **20 July 2025**\
 \
@@ -252,7 +270,7 @@
 * **Release Label Creation – Git SSH Response Handling:** Addressed an issue where release label creation failed due to invalid credentials. The system now properly handles Git responses when fetching branches via SSH, ensuring artifact preparation continues smoothly.\
 
 
-## 25.3.1 Release Notes
+## Release Notes 25.3.1
 
 **Release Date: 13 July 2025**
 
@@ -268,7 +286,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## 25.2.12 Release Notes
+## Release Notes 25.2.12
 
 **Release Date**: **6 July 2025**\
 \
@@ -300,9 +318,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 * **CI Jobs – Abort Doesn’t Terminate Background Process**\
   Improved CI job abort handling to ensure background processes are completely stopped. Now, aborted jobs no longer get stuck, and subsequent jobs queue and execute as expected.
 
-***
-
-## 25.2.11 Release Notes
+## Release Notes 25.2.11
 
 **Release Date: 29 June 2025**
 
@@ -335,7 +351,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## 25.2.10 Release Notes
+## Release Notes 25.2.10
 
 **Release date: 22 June 2025**
 
@@ -396,7 +412,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 **Module:** CI Job History API (Postman & DB Filter)
 
-## 25.2.9 Release Notes
+## Release Notes 25.2.9
 
 **Release Date: 15 June 2025**
 
@@ -451,7 +467,7 @@ This release introduces support for **Salesforce API 64 (Summer ‘24)** and add
 
 ***
 
-## 25.2.8 Release Notes <a href="#title-text" id="title-text"></a>
+## Release Notes 25.2.8 <a href="#title-text" id="title-text"></a>
 
 #### Release Date: 8 June 2025 <a href="#release-date-08th-june-2025" id="release-date-08th-june-2025"></a>
 

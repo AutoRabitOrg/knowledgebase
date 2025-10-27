@@ -762,7 +762,7 @@ GitLab: gitlab\
 Git: git\
 Salesforce: salesforce
 
-To deliver this feature, we created custom tags with the ability to add these tags when new projects are created.  Further, we wanted to provide a mechanism to retroactively add these tags to existing projects.
+To deliver this feature, we created custom tags with the ability to add these tags when new projects are created.
 
 Unlike most tags, we designed integration type tags to remain once assigned. If the user tries to remove it the following error will occur: “Integration type tags cannot be removed from projects.”
 

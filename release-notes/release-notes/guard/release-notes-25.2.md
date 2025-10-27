@@ -1,5 +1,47 @@
 # Guard Release Notes 25.2
 
+## Guard 25.2.7 Release Notes&#x20;
+
+**Release Date:** 29 October 2025&#x20;
+
+### New Features & Enhancements&#x20;
+
+#### API Security Dashboard&#x20;
+
+Gain deeper insight into your connected apps and organizational exposure with the enhanced API Security Dashboard. &#x20;
+
+View key risk metrics, filter results by org, explore detailed app information, and export data for further analysis — all from a responsive, easy-to-use interface.&#x20;
+
+#### Permissions Explorer – Support All Permissions&#x20;
+
+The Permissions Explorer now automatically supports all available Salesforce permissions, giving you a complete view of your org’s access setup. &#x20;
+
+A new “Other” category dynamically lists uncategorized permissions, ensuring nothing is missed and reducing manual effort.&#x20;
+
+#### Permissions Explorer – Object Permissions Saved Queries&#x20;
+
+You can now save custom Object Permission queries with names and descriptions, making it easy to revisit important configurations without rebuilding them each time.&#x20;
+
+#### Help Section Improvements&#x20;
+
+Access to support resources is now simpler. The Help menu has been redesigned to include quick links to the Support Portal, Guard Product Guide, and Support Login Access.&#x20;
+
+#### Guard Home Page Update&#x20;
+
+The Guard home page now features interactive cards that highlight recently added features. Each card links directly to its feature page for quick navigation, and the updated Change Monitoring card reflects the latest functionality for easier discovery.&#x20;
+
+### Bug Fixes&#x20;
+
+#### Permissions Explorer Field Error&#x20;
+
+Fixed an issue where the “Approve Uninstalled Connected Apps” permission caused an error indicating that the field PermissionsCanApproveUninstalledApps did not exist in the PermissionSet entity. &#x20;
+
+#### Permissions Explorer Not Displaying Permissions&#x20;
+
+Resolved an issue where some permissions were not displaying correctly in the Custom Explorer view for some environments. Permissions now load correctly under their respective categories.
+
+***
+
 ## Guard 25.2.6 Release Notes&#x20;
 
 **Release Date:** 15 October 2025&#x20;

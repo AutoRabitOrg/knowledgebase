@@ -6,6 +6,8 @@ The following error messages are provided to troubleshoot issues as they arise. 
 
 [Error message: Authentication Failed - ALM connectivity due to incorrect configuration](https://knowledgebase.autorabit.com/~/revisions/ukRudv9dGRUL2q4Awg7g/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/authentication-failed)
 
+[Error message: Cannot invoke "String.startsWith(String)](https://knowledgebase.autorabit.com/~/revisions/0K2jY2XSwb6jRDAMxR9o/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-invoke-string.startswith-string)
+
 [Error message: Cannot Open Git-Upload-Pack](https://knowledgebase.autorabit.com/~/revisions/PhrMlDs4KPpBVZk801ve/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-open-git-upload-pack)
 
 [Error message: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'](https://knowledgebase.autorabit.com/~/revisions/EdObJurOGkDws2azAf5L/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-find-the-declaration-of-element-web-validatesalesforceorgconnection)
@@ -18,13 +20,19 @@ The following error messages are provided to troubleshoot issues as they arise. 
 
 [Error message: GIT Push Result: RemoteRefUpdate](https://knowledgebase.autorabit.com/~/revisions/lwFT8sv76u9JoeNkeAnx/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-git-push-result-remoterefupdate)
 
+[Error message: HTTP ERROR 405 Problem accessing /services/Soap/m/55.0. Reason: Only POST allowed](https://knowledgebase.autorabit.com/~/revisions/WH7bJAieEWhdvUJZBmDB/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/http-error-405-problem-accessing-services-soap-m-55.0.-reason-only-post-allowed)
+
 [Error: Installing CodeScan Sonar as a plugin in ARM](https://knowledgebase.autorabit.com/~/revisions/TrXw66IblXlo15giGnBb/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/installing-codescan-sonar-as-a-plugin-in-arm)
 
 [Error message: Invalid meta-xml name: lwc/xxx/xxx.css-meta.xml, should end with js-meta.xml](https://knowledgebase.autorabit.com/~/revisions/MpxNH6lUh6Wr71fvOfA2/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/invalid-meta-xml-name-lwc-xxx-xxx.css-meta.xml-should-end-with-js-meta.xml)
 
 [Error message: Invalid Schema during the Merge Prevalidation Process](https://knowledgebase.autorabit.com/~/revisions/MpxNH6lUh6Wr71fvOfA2/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/invalid-schema-during-the-merge-prevalidation-process)
 
+[Error message: License is not valid](https://knowledgebase.autorabit.com/~/revisions/us18AsQBYok2aZ4WENZv/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/license-is-not-valid)
+
 [Error message: Local and remote repositories are not on the same revision](https://knowledgebase.autorabit.com/~/revisions/9GkIkeaALdJ5Y23XA672/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/local-and-remote-repositories-are-not-on-the-same-revision)
+
+[Error message: Maximum size of request reached](https://knowledgebase.autorabit.com/~/revisions/5BDcZmM90bhOydWP4Jji/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/maximum-size-of-request-reached)
 
 [Error message: Not Authorized (to Merge)](https://knowledgebase.autorabit.com/~/revisions/joyFHqtVP2clP8Y8umxN/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/not-authorized-to-merge)
 

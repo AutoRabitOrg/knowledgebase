@@ -14,7 +14,7 @@ Unless you update the payload URL, you may face pull request/trigger build-on-co
 
 When you run a validation deployment through ARM, it will pre-run all unit tests. The Quick Deploy option then allows you to skip those tests in the final production release, knowing they passed previously. Using the Quick Deploy option reduces the amount of time the Production org is locked.&#x20;
 
-### When Is the Quick Deploy option available in a CI Job? <a href="#id-1-when-quick-deploy-option-will-be-available-in-ci-job" id="id-1-when-quick-deploy-option-will-be-available-in-ci-job"></a>
+### When is the Quick Deploy option available in a CI Job? <a href="#id-1-when-quick-deploy-option-will-be-available-in-ci-job" id="id-1-when-quick-deploy-option-will-be-available-in-ci-job"></a>
 
 Quick deployments are available when the following requirements are met:
 
@@ -39,17 +39,13 @@ You might have exceeded the maximum number of recipients; the maximum number of 
 
 **Build on PR Submission:** When a CI job is created on the base branch, for example, _Integration_, if the developer works on the **Feature 1** branch and creates the **Pull Request (PR)** on the **Integration** branch, then the job gets triggered in ARM. The branch will switch to the **Feature 1** branch, take the clone of the entire branch, prepare the changes between the two branches, and then switch back to the master branch when the job is completed. This is why the build time is longer for PR jobs.
 
-### Why is my CI job failing with the error ‘HTTP ERROR 405 Problem accessing /services/Soap/m/55.0. Reason: Only POST allowed’? <a href="#id-5-why-is-a-ci-job-failing-with-the-error-http-error-405-problem-accessing-servicessoapm550-reason-on" id="id-5-why-is-a-ci-job-failing-with-the-error-http-error-405-problem-accessing-servicessoapm550-reason-on"></a>
-
-The authentication for your destination org may have expired. Please **Re-authenticate** your target Salesforce org. Once this is done successfully, please Edit and resave the CI job, then retrigger it.
-
 ### Why are the FLS changes in the CI job reflected in the diff file but not in the sandbox? <a href="#id-6-why-are-the-fls-changes-in-the-ci-job-reflected-in-the-diff-file-but-not-in-the-sandbox" id="id-6-why-are-the-fls-changes-in-the-ci-job-reflected-in-the-diff-file-but-not-in-the-sandbox"></a>
 
 This usually happens if the **Ignore missing visibility** checkbox is selected in CI Jobs. Another possibility is that the field in question is unavailable in the destination org where the FLS was deployed. Please contact our support team to determine the root cause and assist you further.
 
 ### Why am I unable to push components from a branch to an org in a CI Job? What is the ‘Maximum size of request reached’ error? <a href="#id-7-i-am-unable-to-push-components-from-branch-to-org-in-ci-job-what-is-the-maximum-size-of-request-re" id="id-7-i-am-unable-to-push-components-from-branch-to-org-in-ci-job-what-is-the-maximum-size-of-request-re"></a>
 
-This error may be due to a file size limitation. We suggest you break deployments down into smaller chunks to be successful. Please refer to the Salesforce article below about the file size limits for deployments: [Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_metadata.htm)
+This error may be due to a file size limitation. We suggest you break deployments down into smaller chunks to be successful. Please refer to the Salesforce article below about the file size limits for deployments: [Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_metadata.htm).
 
 ### How do User Credentials impact different types of CI Jobs? <a href="#id-8-how-does-the-user-credentials-impact-different-types-of-ci-jobs" id="id-8-how-does-the-user-credentials-impact-different-types-of-ci-jobs"></a>
 
@@ -101,7 +97,7 @@ You can then perform a Merge Request to trigger the CI job and validate the depl
 
 ### How do I include destructive changes in a CI job? <a href="#id-13-how-do-i-include-destructive-changes-in-a-ci-job" id="id-13-how-do-i-include-destructive-changes-in-a-ci-job"></a>
 
-Review this [Knowledge Base article](../../../arm-features/deployment/destructive-changes.md), which covers performing destructive changes through CI jobs.
+Review this [Knowledge Base article](../../arm-features/deployment/destructive-changes.md), which covers performing destructive changes through CI jobs.
 
 ### The "File Changes" tab shows that the Quick Actions metadata type is deleted. Why isn’t this reflected in the Destructive Changes tab or the package xml? <a href="#id-14-the-file-changes-tab-shows-that-the-quick-actions-metadata-type-is-deleted-why-isnt-this-reflecte" id="id-14-the-file-changes-tab-shows-that-the-quick-actions-metadata-type-is-deleted-why-isnt-this-reflecte"></a>
 
@@ -110,10 +106,6 @@ This may be a **GIT** behavior where the **QuickAction** metadata members are ad
 There is no Git logic under **File Diff** because it simply displays what was **added/modified/deleted** for better UI visibility to understand the changes and be reviewed.&#x20;
 
 You can work around this by **updating the baseline** revision **CI job** and using **Single Revision** in the **Deployment** module.
-
-### Why am I getting the "License is not valid" error when trying to use CodeScan as the analysis tool while running a CI job in ARM? <a href="#id-15-why-am-i-getting-the-license-is-not-valid-error-when-trying-to-use-codescan-as-the-analysis-tool" id="id-15-why-am-i-getting-the-license-is-not-valid-error-when-trying-to-use-codescan-as-the-analysis-tool"></a>
-
-This could be due to using an older version of CodeScan. Refer to the [CodeScan License Errors](../../../../codescan/codescan-faqs/codescan-self-hosted-issues/license-errors.md) article for further information.
 
 ### **Why am I not getting a package for the CI Job?**
 
@@ -124,16 +116,12 @@ To create or import the package, refer to the following articles:
 * Create a Package: [Create an Unlocked/Managed Package | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/create-an-unlocked-managed-package)
 * Import a Package: [Import an Unlocked/Managed Package | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/import-an-unlocked-managed-package)
 
-### Why am I receiving the error message: Cannot invoke "String.startsWith(String)"?&#x20;
-
-This occurs when the return value of "com.autorabit.entity.admin.UserProject.getProjectType()" is null. A fix has been incorporated in the ARM 23.1.24 release. Reference support ticket # 109042.
-
 ### **Can I update or remove picklist values with my CI Job?**
 
 Since Salesforce does not retrieve deleted/deactivated picklist values in a metadata API call, replacing the picklist values via BackUp to VersionControl CI Job is impossible. However, a best practice in replacing the Picklist values is using the EZ-Commit module.
 
 This configuration for RecordType PicklistValues option only works in the EZ-Commit module. If picklist values need to be replaced, use this approach.
 
-<figure><img src="../../../../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
 
 Refer to [How to Configure Record Types Picklist Values](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) for more information.

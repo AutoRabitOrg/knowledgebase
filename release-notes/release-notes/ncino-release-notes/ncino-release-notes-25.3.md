@@ -1,6 +1,6 @@
 # nCino Release Notes 25.3
 
-## nCino + **Data Loader** - Release 25.4.3
+## nCino + **DataLoader** - Release 25.4.3
 
 **Release Date:** October 19, 2025
 
@@ -8,11 +8,11 @@
 
 Optimized redundant database calls to prevent connection pool shutdown errors. This enhancement ensures stable and consistent connections during data processing, eliminating the “Connection Pool Issue” encountered by users.
 
-## nCino + **Data Loader** - Release 25.4.2
+## nCino + **DataLoader** - Release 25.4.2
 
 **Release Date:** October 15, 2025
 
-#### **Person Account ORG** <a href="#person-account-org" id="person-account-org"></a>
+#### **Person Account Org** <a href="#person-account-org" id="person-account-org"></a>
 
 A fix has been implemented to ensure records are processed correctly in environments with Person Account–enabled orgs, preventing migration failures.
 
@@ -20,43 +20,43 @@ A fix has been implemented to ensure records are processed correctly in environm
 
 Resolved an issue where parent records were incorrectly migrated even when the _Automatic Apply Filter_ option was selected. The system now skips parent records as intended.
 
-#### **Cloning Single Data Loader Job** <a href="#cloning-single-data-loader-job" id="cloning-single-data-loader-job"></a>
+#### **Cloning Single DataLoader Job** <a href="#cloning-single-data-loader-job" id="cloning-single-data-loader-job"></a>
 
-Addressed an issue that prevented cloned Data Loader jobs from updating records properly. Cloned jobs now retain and update data accurately.
+Addressed an issue that prevented cloned DataLoader jobs from updating records properly. Cloned jobs now retain and update data accurately.
 
 #### **Feature Management Versioning** <a href="#feature-management-versioning" id="feature-management-versioning"></a>
 
 Implemented a UI enhancement to ensure versioning information displays correctly within the _Feature Management_ section.
 
-#### **DL PRO – Invalid Query Error** <a href="#dl-pro-invalid-query-error" id="dl-pro-invalid-query-error"></a>
+#### **DataLoader Pro – Invalid Query Error** <a href="#dl-pro-invalid-query-error" id="dl-pro-invalid-query-error"></a>
 
 Fixed an issue that occurred during job execution when no mappings were provided. The system now handles empty or null mapping values gracefully during job editing and saving.
 
-#### **DL PRO – Circular Reference Error** <a href="#dl-pro-circular-reference-error" id="dl-pro-circular-reference-error"></a>
+#### **DataLoader Pro – Circular Reference Error** <a href="#dl-pro-circular-reference-error" id="dl-pro-circular-reference-error"></a>
 
 Introduced a safeguard to handle empty source and destination external ID conditions, preventing circular reference errors during data processing.
 
-## nCino + **Data Loader** - Release 25.4.1
+## nCino + **DataLoader** - Release 25.4.1
 
 **Release Date**: October 5, 2025
 
-#### **Person Account ORG Handling** <a href="#person-account-org-handling" id="person-account-org-handling"></a>
+#### **Person Account Org Handling** <a href="#person-account-org-handling" id="person-account-org-handling"></a>
 
 Resolved an issue that caused record failures in environments with Person Account–enabled orgs. The process now supports these orgs seamlessly.
 
-#### **Data Loader Extraction – Custom Query Handling** <a href="#data-loader-extraction-custom-query-handling" id="data-loader-extraction-custom-query-handling"></a>
+#### **DataLoader Extraction – Custom Query Handling** <a href="#data-loader-extraction-custom-query-handling" id="data-loader-extraction-custom-query-handling"></a>
 
-Implemented a fix to ensure that custom queries in Data Loader extractions are parsed and executed correctly, preventing query-related failures.
+Implemented a fix to ensure that custom queries in DataLoader extractions are parsed and executed correctly, preventing query-related failures.
 
 #### **Attachment Processing** <a href="#attachment-processing" id="attachment-processing"></a>
 
 Addressed an issue with attachment handling in form templates to ensure smooth and reliable processing during uploads and migrations.
 
-#### **DL Status Auto-Update** <a href="#dl-status-auto-update" id="dl-status-auto-update"></a>
+#### **DataLoader Status Auto-Update** <a href="#dl-status-auto-update" id="dl-status-auto-update"></a>
 
 Introduced an automatic refresh mechanism to keep job status updates in sync, ensuring that the latest execution status is always displayed in real time.
 
-## nCino + **Data Loader** - Release 25.3.12
+## nCino + **DataLoader** - Release 25.3.12
 
 **Release Date:** September 28, 2025
 
@@ -86,7 +86,7 @@ Implemented safeguards to prevent failures in multi-object set templates during 
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.11
+## nCino + **DataLoader** - Release 25.3.11
 
 **Release Date:** September 21, 2025
 
@@ -98,7 +98,7 @@ Enhanced rollback functionality to ensure that inserted records are deleted and 
 
 Resolved an issue where duplicate objects were displayed when working with multiple buckets..
 
-#### **Single Data Loader – Attachments Processing**
+#### **Single DataLoader – Attachments Processing**
 
 Fixed an issue where optional fields were incorrectly considered during delete operations — now only record IDs are considered for deleting the records.
 
@@ -112,11 +112,11 @@ Introduced support for multi-bucket functionality in templates, enabling better 
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.10
+## nCino + **DataLoader** - Release 25.3.10
 
 **Release Date:** September 14, 2025
 
-#### **Fix for Field Order in DL Module Results**
+#### **Fix for Field Order in DataLoader Module Results**
 
 Resolved an issue where the ID and Status/Error fields were displayed in an incorrect order when viewing success or failure results in the Data Loader modules.
 
@@ -126,7 +126,7 @@ Enhanced the log display for bulk operations to present users with optimized, cl
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.9.1
+## nCino + **DataLoader** - Release 25.3.9.1
 
 **Release Date:** September 10, 2025
 
@@ -136,7 +136,7 @@ A fix has been provided to address a null pointer exception occurring in instanc
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.8
+## nCino + **DataLoader** - Release 25.3.8
 
 **Release Date:** August 31, 2025
 
@@ -146,7 +146,7 @@ Resolved an issue caused by an unwanted forward slash that disrupted the complet
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.7
+## nCino + **DataLoader** - Release 25.3.7
 
 **Release Date:** August 24, 2025
 
@@ -158,7 +158,7 @@ The dependency on the **uber jar** has been removed. Bulk data operations are no
 
 A **Salesforce discrepancy** previously prevented source IDs from being fetched correctly. This issue has been resolved with a code fix, ensuring accurate retrieval and consistency of source IDs.
 
-#### ORG-Level Permissions <a href="#org-level-permissions" id="org-level-permissions"></a>
+#### Org-Level Permissions <a href="#org-level-permissions" id="org-level-permissions"></a>
 
 A code fix has been applied to enforce correct permission requirements:
 
@@ -167,21 +167,21 @@ A code fix has been applied to enforce correct permission requirements:
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.6 <a href="#title-text" id="title-text"></a>
+## nCino + **DataLoader** - Release 25.3.6 <a href="#title-text" id="title-text"></a>
 
-**Release Date:** Aug 17, 2025
+**Release Date:** August 17, 2025
 
 #### Handling Record Types <a href="#handling-record-types" id="handling-record-types"></a>
 
 A fix has been implemented to ensure that **Record Types are now correctly assigned to records** during processing. This resolves issues where records were previously created or updated without the appropriate Record Type association.
 
-#### **Data Loader Pro**
+#### **DataLoader Pro**
 
 A fix has been rolled out to ensure that, during data deployment, the **deployment status is fetched accurately**, resulting in a more reliable and successful deployment process.
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.5 <a href="#title-text" id="title-text"></a>
+## nCino + **DataLoader** - Release 25.3.5 <a href="#title-text" id="title-text"></a>
 
 **Release Date:** Aug 10, 2025
 
@@ -203,7 +203,7 @@ Resolved issues to ensure reliable upload, insert, and delete operations for fil
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.4 <a href="#title-text" id="title-text"></a>
+## nCino + **DataLoader** - Release 25.3.4 <a href="#title-text" id="title-text"></a>
 
 **Release Date:** August 03, 2025
 
@@ -211,21 +211,21 @@ Resolved issues to ensure reliable upload, insert, and delete operations for fil
 
 The processing of the commit jobs through the commit workspace has been streamlined.
 
-#### **Dataloader Pro – Stability Improvement**
+#### **DataLoader Pro – Stability Improvement**
 
 An issue affecting the reliability of Data Loader Pro job execution has been resolved, ensuring smoother performance under high-load conditions.
 
-#### **Data Loader Pro – Clone Issue**
+#### **DataLoader Pro – Clone Issue**
 
 An issue that is occurring during the clone operation is rectified
 
-#### **Data Loader Pro – Clone Operation Fix**
+#### **DataLoader Pro – Clone Operation Fix**
 
 Resolved an issue where the clone functionality did not behave as expected, ensuring cloned jobs retain original configurations accurately.
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.3
+## nCino + **DataLoader** - Release 25.3.3
 
 **Release Date:** July 27, 2025
 
@@ -233,13 +233,13 @@ Resolved an issue where the clone functionality did not behave as expected, ensu
 
 CI Job execution via the queue has been streamlined to ensure consistent and reliable processing.
 
-#### **nCino & Data Loader – Leading and Trailing Spaces**
+#### **nCino & DataLoader – Leading and Trailing Spaces**
 
-A fix has been implemented to ensure leading and trailing spaces are correctly handled during nCino and Data Loader job executions, improving data accuracy and consistency.
+A fix has been implemented to ensure leading and trailing spaces are correctly handled during nCino and DataLoader job executions, improving data accuracy and consistency.
 
 ***
 
-## nCino + **Data Loader** - Release 25.3.2
+## nCino + **DataLoader** - Release 25.3.2
 
 **Release Date:** July 20, 2025
 
@@ -253,7 +253,7 @@ Implemented a fix to ensure reliable data deployment using migration templates, 
 
 ***
 
-## nCino + **Data Loader** - 25.3.1 Release Notes
+## nCino + **DataLoader** - 25.3.1 Release Notes
 
 **Release Date:** July 13, 2025
 

@@ -2,7 +2,7 @@
 
 ## nCino + **Data Loader** - Release 25.4.3
 
-**Release Date:** Oct 19, 2025
+**Release Date:** October 19, 2025
 
 #### **Connection Pool Shutdown Issue** <a href="#connection-pool-shutdown-issue" id="connection-pool-shutdown-issue"></a>
 
@@ -38,7 +38,7 @@ Introduced a safeguard to handle empty source and destination external ID condit
 
 ## nCino + **Data Loader** - Release 25.4.1
 
-Release Date: October 5, 2025
+**Release Date**: October 5, 2025
 
 #### **Person Account ORG Handling** <a href="#person-account-org-handling" id="person-account-org-handling"></a>
 

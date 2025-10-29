@@ -56,7 +56,7 @@ Upgraded underlying platform components to enhance security, improve performance
 
 ## Vault Release Notes 25.1.9 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:** Sept 24, 2025
+**Release Date: 24 September 2025**
 
 #### **Metadata Backup** <a href="#metadata-backup" id="metadata-backup"></a>
 
@@ -70,7 +70,7 @@ Additional information has been added to ensure that email alerts include releva
 
 ## Vault Release Notes 25.1.8 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:** Sept 3, 2025
+**Release Date: 3 September 2025**
 
 #### **Alerts** <a href="#alerts" id="alerts"></a>
 
@@ -96,7 +96,7 @@ Improved memory management during archive job execution. Archive jobs now run re
 
 ## Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:** August 20, 2025
+**Release Date: 20 August 2025**
 
 #### **Enhanced Job Timeout Handling**
 
@@ -118,7 +118,7 @@ Added additional logging to replication jobs, enabling more precise identificati
 
 ## Vault Release Notes 25.1.6
 
-**Release Date:** Aug 13, 2025
+**Release Date: 13 August 2025**
 
 #### **Improved Naming Convention** <a href="#improvised-naming-convention" id="improvised-naming-convention"></a>
 
@@ -158,7 +158,7 @@ Enhancements have been made to the logic that fetches **Salesforce Org details**
 
 ## Vault Release Notes 25.1.5
 
-**Release Notes:** 21 July 2025
+**Release Notes: 21 July 2025**
 
 #### Live Data Masking <a href="#live-data-masking" id="live-data-masking"></a>
 
@@ -198,7 +198,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ## Vault Release Notes 25.1.4
 
-**Release Notes:** 16 July 2025
+**Release Notes:** **16 July 2025**
 
 *   **Flexible Scheduling Enhancements**
 
@@ -213,7 +213,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ## Vault Release Notes 25.1.3
 
-**Release Notes:** 9 July 2025
+**Release Notes: 9 July 2025**
 
 *   **Archival Job Enhancement**
 
@@ -229,7 +229,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ## Vault Release Notes 25.1.2
 
-**Release Date: July 02 2025**
+**Release Date: 02 July 2025**
 
 *   **New Archive Enhancement: Disable Automation Rules**
 

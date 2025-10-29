@@ -1,13 +1,13 @@
 # ARM Release Notes
 
-## **Release Notes 25.4.4**
+## ARM **Release Notes 25.4.4**
 
-**Release Date:** 26 October 2025\
+**Release Date: 26 October 2025**\
 \
 **Highlights**: Improvements in EZ-Commit author handling, EZ-Merge responsiveness, and CI Job error reporting.
 
 * **EZ-Commit Author-Specific Retrieval**\
-  Resolved an issue where EZ-Commit was not correctly filtering metadata changes by the selected Salesforce org Author. The process now accurately fetches only author-related changes when a specific Author is chosen in both “Select Manually” and “Re-Use Previously Validated Commit Labels” modes.\
+  Resolved an issue where EZ-Commit was not correctly filtering metadata changes by the selected Salesforce Org Author. The process now accurately fetches only Author-related changes when a specific Author is chosen in both “Select Manually” and “Re-Use Previously Validated Commit Labels” modes.\
   (Support Case: 151097)
 * **EZ-Merge Screen Freeze After Target Branch Selection**\
   Fixed a delay where the EZ-Merge screen froze for 14–17 seconds after selecting the target branch (“To” branch). The merge approver validation API (`/mergerevieweremail`) has been optimized with asynchronous handling to improve responsiveness during branch selection.\
@@ -16,9 +16,11 @@
   Addressed an issue where CI Jobs failed silently when component names contained dots and were misclassified under different component types (e.g., Profiles) in DX environments. The fix ensures accurate component handling and consistent error reporting for both DX and Non-DX CI Jobs initiated from Version Control to Deploy Org.\
   (Support Case: 155649)
 
-## **Release Notes 25.4.3**
+***
 
-**Release Date**: 19 October 2025\
+## ARM **Release Notes 25.4.3**
+
+**Release Date**: **19 October 2025**\
 \
 **Highlights**: Enhancements to metadata handling for destructive commits, standard value set retrieval, CI Job status accuracy, and Quick Deploy validation behavior.
 
@@ -38,9 +40,11 @@
   Some CI Jobs continued showing as “In Progress” even after build and validation completion, blocking new runs on the same target org. A blocking wait mechanism was implemented to continuously check CIJobInfo until the deploy status updates to “Completed.”\
   (Support Case: 154818)
 
-## Release Notes 25.4.2 <a href="#heading-title-text" id="heading-title-text"></a>
+***
 
-**Release Date**: 15 October 2025\
+## ARM Release Notes 25.4.2 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date**: **15 October 2025**\
 \
 **Highlights**: Stability improvements across CI Jobs, Commit handling, and Scratch Org creation.
 
@@ -56,25 +60,29 @@
 * **Scratch Org Creation – Salesforce Org Validation**\
   Resolved an issue where users received a “Salesforce Org Doesn’t Exist” error while attempting to retrieve data for Scratch Org creation. The system now correctly validates the selected Salesforce org and proceeds with successful data retrieval.
 
-## Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
+***
 
-**Release Date**: 5 October 2025\
+## ARM Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date**: **5 October 2025**\
 \
-**Highlights:** Fixes for Quick Deploy iteration visibility, CI post-deploy log accuracy with Dataloader Pro, and complete Jira sprint retrieval across ALM flows.
+**Highlights:** Fixes for Quick Deploy iteration visibility, CI post-deploy log accuracy with DataLoader Pro, and complete Jira sprint retrieval across ALM flows.
 
 * **Quick Deploy iteration visibility**\
   A validated deployment could be quick-deployed from a later iteration while the Quick Deploy button remained visible and usable on earlier iterations, which diverged from Salesforce behavior; this affected deployment iteration handling in the Deployments UI. Quick Deploy is now correctly disabled for the current iteration and all previous iterations once an actual deployment is performed, matching Salesforce semantics and preventing accidental re-deploys of validated iterations.\
   (Support Case: 150463)
-* **CI job post-deploy logs and Dataloader Pro status accuracy**\
-  CI jobs that triggered a post-deploy Dataloader Pro process sometimes showed a null error or incorrect "not yet run" status in post-activity logs even though the Dataloader Pro job executed and made changes in the org. We handled the null pointer and corrected status mapping between the DL module and CI logs; CI jobs now complete without the null error and post-activity logs reflect accurate in-progress and final statuses. The system also ensures the Dataloader Pro job is triggered and its final status is shown correctly.\
+* **CI job post-deploy logs and DataLoader Pro status accuracy**\
+  CI jobs that triggered a post-deploy DataLoader Pro process sometimes showed a null error or incorrect "not yet run" status in post-activity logs even though the DataLoader Pro job executed and made changes in the org. We handled the null pointer and corrected status mapping between the DL module and CI logs; CI jobs now complete without the null error and post-activity logs reflect accurate in-progress and final statuses. The system also ensures the DataLoader Pro job is triggered and its final status is shown correctly.\
   (Support Case: 153953)
 * **Jira sprint pagination and ALM updates**\
-  Fetching sprints in new ez-commit, ez-merge and CI job flows was stopping after the first page because Jira API maxResults was 50, so not all sprints were returned. We now page through all results and surface every sprint across the UI, restoring full sprint visibility. Additionally, Jira ALM integration updates for status and comments have been improved so status updates and comments propagate correctly from ARM flows.\
+  Fetching sprints in new EZ-Commit, EZ-Merge, and CI Job flows was stopping after the first page because Jira API maxResults was 50, so not all sprints were returned. We now page through all results and surface every sprint across the UI, restoring full sprint visibility. Additionally, Jira ALM integration updates for status and comments have been improved so status updates and comments propagate correctly from ARM flows.\
   (Support Case: 154690)
 
-## Release Notes 25.3.12
+***
 
-**Release Date**: 28 September 2025
+## ARM Release Notes 25.3.12
+
+**Release Date**: **28 September 2025**
 
 * **Wavedashboard deployment failure due to xmd conversion**\
   When customers uploaded a package.xml containing wavedashboard type and members, ARM converted them to wavexmd and the deployment failed because the wavexmd files were missing from the zip. Implemented backend logic to prune xmd metadata entries when corresponding xmd files are not retrieved from the source org, preventing missing-file deployment errors.\
@@ -87,9 +95,11 @@
   ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
   &#xNAN;_(Support Case: #150934 & #151385)_
 
-## Release Notes 25.3.11.1
+***
 
-**Release Date**: 24 September 2025
+## ARM Release Notes 25.3.11.1
+
+**Release Date**: **24 September 2025**
 
 * **Jira Work Items Not Retrieved from Sprints**\
   Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
@@ -97,9 +107,11 @@
   * ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
     &#xNAN;_(Support Case: #150934 & #151385)_
 
-## Release Notes 25.3.11
+***
 
-**Release Date**: 21 September 2025
+## ARM Release Notes 25.3.11
+
+**Release Date**: **21 September 2025**
 
 **Highlights**: Fixes for EZ-Commit folder retrieval, branch registration, SCA validation, and webhook API token updates.\
 
@@ -117,17 +129,21 @@
   Corrected an issue where the webhook API token’s last status always showed as "Never Accessed," even after being used in CI Job triggers. The last access status now updates correctly when tokens are used.\
   &#xNAN;_(Support Case: 153909)_
 
-## Release Notes 25.3.10.1&#x20;
+***
 
-**Release Date:** 20 September 2025
+## ARM Release Notes 25.3.10.1&#x20;
+
+**Release Date:** **20 September 2025**
 
 * **SCA Validation with Special Characters**\
   Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
   &#xNAN;_(Support Case: 152825)_
 
-## Release Notes 25.3.10
+***
 
-**Release Date**: 14 September 2025
+## ARM Release Notes 25.3.10
+
+**Release Date**: **14 September 2025**
 
 **Highlights**: Stability improvements across Custom Deployment, Release Labels, EZ-Commit, CI Jobs, and Salesforce ALM integration.
 
@@ -144,9 +160,11 @@
 * **File Upload Error in EZ-Merge Conflict Resolution**: Customers reported being unable to re-upload modified files after downloading the conflict resolution zip in EZ-Merge. The issue was caused by restrictive file size limits.  \
   Fix: Increased the maximum supported file upload size to 100MB, ensuring smoother conflict resolution workflows.
 
-## Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
+***
 
-**Release Date**: 7 September 2025
+## ARM Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date**: **7 September 2025**
 
 ### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
@@ -167,9 +185,9 @@
 
 ***
 
-## Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
 
-**Release Date**: 31 August 2025
+**Release Date**: **31 August 2025**
 
 **Highlights**: Fixes and improvements across permission sets, profile comparison, reports accuracy, and SSO configuration.
 
@@ -185,7 +203,7 @@
 
 ***
 
-## Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 24 August 2025**
 
@@ -197,7 +215,9 @@
 2. **Webhooks – API Token Last Access Not Updating:** Fixed an issue where webhook API tokens continued to display “Never Accessed” even after recent runs triggered by CI jobs. The back-end logic has been corrected to update and display the last access time accurately.
 3. **Rollback – Iteration and Components Not Available After Revert:** Addressed an issue where rolling back a previously deployed iteration caused both the iteration and its components to disappear. A change event has been added to ensure iterations and components are available after a revert rollback.
 
-## Release Notes 25.3.6
+***
+
+## ARM Release Notes 25.3.6
 
 **Release Date: 17 August 2025**
 
@@ -211,7 +231,9 @@
 
 * **CI Jobs – Rollback Failure for Selective Components**: Addressed a rollback failure during CI job deployments when rolling back selective components, resulting in a “Not in Package.xml” error. Back-end logic has been updated to handle the workflow metadata type correctly.
 
-## Release Notes 25.3.5
+***
+
+## ARM Release Notes 25.3.5
 
 **Release date: 10 August 2025**
 
@@ -219,7 +241,9 @@
 
 * **Branching baseline now supports committing child metadata components for Sharing Rules, Workflow, and Managed Topics**: This enhancement ensures these metadata types are correctly captured and pushed to the remote repository, addressing gaps identified in earlier releases.
 
-## Release Notes 25.3.4
+***
+
+## ARM Release Notes 25.3.4
 
 **Release Date: 3 August 2025**\
 \
@@ -233,10 +257,11 @@
 
 * **Release label revision count displayed inaccurately**: When modifying an existing release label, the UI showed an incorrect number of selected revisions. Increment logic has been fixed so the description now reflects the true revision count.\
 
-* **Static resources misidentified during destructive EZ-Commit**: Deleting one static resource while another with a similar name remained caused the diff view to include both files. Selection logic has been refined so only the intended destructive file is picked up, even when naming conventions overlap.\
+* **Static resources misidentified during destructive EZ-Commit**: Deleting one static resource while another with a similar name remained caused the diff view to include both files. Selection logic has been refined so only the intended destructive file is picked up, even when naming conventions overlap.
 
+***
 
-## Release Notes 25.3.3
+## ARM Release Notes 25.3.3
 
 **Release Date: 27 July 2025**
 
@@ -248,10 +273,11 @@
 
 * **QuickAction metadata deployments fail due to package.xml exclusion**: Fixed the package-preparation logic so QuickAction files are included, allowing validation and deployment to succeed.\
 
-* **Environment-provisioning flow errors not displayed**: Corrected run-time array handling so success and failure details are now shown when enabling flows via an environment-provisioning template.\
+* **Environment-provisioning flow errors not displayed**: Corrected run-time array handling so success and failure details are now shown when enabling flows via an environment-provisioning template.
 
+***
 
-## Release Notes **25.3.2**
+## ARM Release Notes **25.3.2**
 
 **Release Date**: **20 July 2025**\
 \
@@ -265,8 +291,9 @@
 
 * **CI Job Deployment – Classic Manifest Support in DX:** Fixed a bug where CI Jobs using DX repositories and Classic Package Manifest settings only packaged destructive changes, ignoring constructive ones. Validations and deployments now correctly handle all combinations of destructive and constructive changes.\
 
-* **Release Label Creation – Git SSH Response Handling:** Addressed an issue where release label creation failed due to invalid credentials. The system now properly handles Git responses when fetching branches via SSH, ensuring artifact preparation continues smoothly.\
+* **Release Label Creation – Git SSH Response Handling:** Addressed an issue where release label creation failed due to invalid credentials. The system now properly handles Git responses when fetching branches via SSH, ensuring artifact preparation continues smoothly.
 
+***
 
 ## Release Notes 25.3.1
 
@@ -284,7 +311,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## Release Notes 25.2.12
+## ARM Release Notes 25.2.12
 
 **Release Date**: **6 July 2025**\
 \
@@ -316,7 +343,9 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 * **CI Jobs – Abort Doesn’t Terminate Background Process**\
   Improved CI job abort handling to ensure background processes are completely stopped. Now, aborted jobs no longer get stuck, and subsequent jobs queue and execute as expected.
 
-## Release Notes 25.2.11
+***
+
+## ARM Release Notes 25.2.11
 
 **Release Date: 29 June 2025**
 
@@ -349,7 +378,7 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## Release Notes 25.2.10
+## ARM Release Notes 25.2.10
 
 **Release date: 22 June 2025**
 
@@ -359,7 +388,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 #### **Internal – Vlocity Calculation Matrix Fix**
 
-&#x20;**1. Issue: After a commit, comma-separated Calculation Matrix Components were not being correctly committed to the branch. Only the YAML file was pushed, and that too in an incorrect format.**
+**1. Issue: After a commit, comma-separated Calculation Matrix Components were not being correctly committed to the branch. Only the YAML file was pushed, and that too in an incorrect format.**
 
 **Fix:** Introduced logic to backup the Calculation Matrix member name, fetch the correct member, and update the YAML file accordingly. Now, the Calculation Matrix Components are committed as expected, supporting direct commits, commit labels, and release labels.
 
@@ -371,7 +400,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 
 
-&#x20;**2. Issue: Managed package components that were intended to be excluded were still being included during deployments.**
+**2. Issue: Managed package components that were intended to be excluded were still being included during deployments.**
 
 **Fix:** Implemented proper filtering logic to ignore installed (managed) components during deployments and CI job executions, ensuring expected exclusion behavior.
 
@@ -379,7 +408,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 
 
-&#x20;**3. Issue: During a sandbox refresh, the template failed because the Sandbox Access field was missing for the production. Salesforce updates now require explicit configuration of access levels during the refresh process.**
+**3. Issue: During a sandbox refresh, the template failed because the Sandbox Access field was missing for the production. Salesforce updates now require explicit configuration of access levels during the refresh process.**
 
 **Fix:** Introduced a new Sandbox Access field to the environment provisioning template. Users can now define the appropriate access level, enabling complete control during sandbox refresh.
 
@@ -388,7 +417,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 <figure><img src="../../../.gitbook/assets/image (1691).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;**4. Issue: During an EZ-Commit, the Diff view did not correctly reflect profile permission changes (field/object permissions), despite being configured under My Account > Salesforce Settings.**
+**4. Issue: During an EZ-Commit, the Diff view did not correctly reflect profile permission changes (field/object permissions), despite being configured under My Account > Salesforce Settings.**
 
 **Fix:** Applied backend logic to ensure that global profile and permission set rules apply only to the configured profiles/permissions. The Diff screen now accurately displays modifications relevant to the EZ-Commit context.
 
@@ -396,7 +425,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 
 
-&#x20;**5. Issue: In the "Apply Global Profile / PermissionSets Settings" screen under My Account, unnecessary permission selections were displayed. This contradicted the help text stating that all field/object permissions would be universally set to true (grant) or false (revoke), making the checkbox list appear redundant.**
+**5. Issue: In the "Apply Global Profile / PermissionSets Settings" screen under My Account, unnecessary permission selections were displayed. This contradicted the help text stating that all field/object permissions would be universally set to true (grant) or false (revoke), making the checkbox list appear redundant.**
 
 **Fix:** Now, only explicitly granted or revoked object/field permissions are selected or deselected in the UI, making the configuration clearer and more accurate.
 
@@ -404,13 +433,15 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 
 
-&#x20;**6. Issue: An internal CI Job history API call was failing. Customers were unable to retrieve data via Postman due to an invalid filter applied to the DB query.**
+**6. Issue: An internal CI Job history API call was failing. Customers were unable to retrieve data via Postman due to an invalid filter applied to the DB query.**
 
 **Fix:** Corrected the filter logic in the DB query that powers the API. The API is now functioning as expected and can return CI job history details without failure.
 
 **Module:** CI Job History API (Postman & DB Filter)
 
-## Release Notes 25.2.9
+***
+
+## ARM Release Notes 25.2.9
 
 **Release Date: 15 June 2025**
 
@@ -465,9 +496,9 @@ This release introduces support for **Salesforce API 64 (Summer ‘24)** and add
 
 ***
 
-## Release Notes 25.2.8 <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.2.8 <a href="#title-text" id="title-text"></a>
 
-#### Release Date: 8 June 2025 <a href="#release-date-08th-june-2025" id="release-date-08th-june-2025"></a>
+**Release Date: 8 June 2025**
 
 ### **Overview** <a href="#overview" id="overview"></a>
 
@@ -536,7 +567,7 @@ AutoResponseRule, CustomLabel, CustomMetadata, CustomObject, CustomSite, Dashboa
 
 ***
 
-## Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
 
 **Release date: 1 June 2025**
 
@@ -583,7 +614,9 @@ This release improves metadata handling and deployment type consistency and enha
 * **Fix:** The component filtering logic was corrected to ensure that **RecordType** and similar metadata types are displayed when using commit templates, improving usability and completeness of the commit UI.
 * **Impacted Module:** EZ-Commit
 
-## Release Notes 25.2.6 <a href="#title-text" id="title-text"></a>
+***
+
+## ARM Release Notes 25.2.6 <a href="#title-text" id="title-text"></a>
 
 **Release Date: 25 May 2025**
 
@@ -681,7 +714,7 @@ The filtering logic now respects case sensitivity, ensuring correct visibility o
 
 ***
 
-## Release Notes 25.2.5  <a href="#title-text" id="title-text"></a>
+## ARM Release Notes 25.2.5  <a href="#title-text" id="title-text"></a>
 
 **Release Date: 18 May 2025**\
 \
@@ -738,7 +771,7 @@ Support for Provar version 25.2.1 has been added to ensure compatibility with au
 
 ***
 
-## Release Notes 25.2.4
+## ARM Release Notes 25.2.4
 
 **Release Date: 11 May 2025**
 
@@ -798,7 +831,7 @@ When the license expired, the option to upload a new key was not visible before 
 
 ***
 
-## Release Notes 25.2.3
+## ARM Release Notes 25.2.3
 
 **Release Date:** **4 May 2025**
 
@@ -831,7 +864,7 @@ An issue was reported where creating or editing users with countries that do not
 
 ***
 
-## Release Notes 25.2.2
+## ARM Release Notes 25.2.2
 
 **Release Date:** **27 April 2025**
 
@@ -863,7 +896,7 @@ Corrected behavior in which `ExpressionSetDefinitionVersion` metadata was includ
 
 ***
 
-### nCino + Data Loader Release Notes 25.1.4
+## nCino + Data Loader Release Notes 25.1.4
 
 **Release Date: 27 April 2025**
 
@@ -871,7 +904,7 @@ Refer to the latest release notes published for nCino + Data Loader at [https://
 
 ***
 
-### ARM Release Notes 25.2.1 <a href="#arm-release-notes-25.2.1" id="arm-release-notes-25.2.1"></a>
+## ARM Release Notes 25.2.1 <a href="#arm-release-notes-25.2.1" id="arm-release-notes-25.2.1"></a>
 
 **Release Date: 20 April 2025**
 
@@ -980,10 +1013,11 @@ This release introduces significant new capabilities and key enhancements across
 * **Provar Plugin Name Edit Handling**\
   Editing the Provar name in the Admin module no longer triggers an invalid notification pop-up when a key file is already uploaded. A response check ensures smoother and more accurate user feedback. _Impacted Modules: My Account plugins (Provar)._
 
+***
+
 ## **nCino + Data Loader 25.1.3 Release Notes**
 
-**Release Date: 6 April 2025**\
-
+**Release Date: 6 April 2025**
 
 See the [Release Notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.3-release-notes) for nCino + Data Loader improvements.&#x20;
 
@@ -1024,6 +1058,8 @@ Additionally, we have addressed multiple bug fixes and enhancements, including i
 
     ARM ensures consistent and accurate deployment of permission sets during Commit Label deployments. The **Ignore Missing Visibility** setting behaves as expected, and redeployments correctly generate a new deployment package instead of reusing the initial one. _Impacted Module: Commit Label._&#x20;
 
+***
+
 ## nCino + Data Loader Improvements
 
 **Release Date: 9 March 2025**
@@ -1063,6 +1099,8 @@ The ARM Release 25.1.0 introduces key upgrades, new features, and critical fixes
 
 * **Third-Party Library Updates:** OpenJDK, Tomcat, Salesforce CLI, Sonar Scanner, and Local DynamoDB have been updated to their latest versions for improved performance, security, and compatibility.
 * **Linux Upgrade:** The underlying Linux environment has been upgraded, strengthening security and optimizing system performance.
+
+***
 
 ## nCino Improvements
 
@@ -1204,6 +1242,8 @@ We corrected an issue during org-to-org deployments in which DigitalExperienceBu
 
 We resolved an issue where AutoRABIT failed to commit the latest package version to the `sfdx-project.json` file. When a new package version is created, it is now correctly updated and committed in the `sfdx-project.json` file, ensuring consistency between the project configuration and the deployed package versions. Impacted Module: CI Jobs.&#x20;
 
+***
+
 ## ARM Release Notes 24.4.4.1
 
 **Release Date: 22 December 2024**
@@ -1288,6 +1328,8 @@ The release label deployment process has been enhanced to prevent failures cause
 #### **Notification Emails for New User Creation**
 
 The issue in which notification emails were not being sent to new users upon creation in ARM has been resolved. New users now receive a notification email in their mailbox immediately after being created by an admin, ensuring consistent communication and a smoother onboarding process.&#x20;
+
+***
 
 ## ARM Release Notes 24.4.2
 
@@ -1565,7 +1607,7 @@ By streamlining the selective deployment process, this improvement enhances effi
 
 ## ARM Release Notes 24.1 <a href="#arm-release-notes-23-1" id="arm-release-notes-23-1"></a>
 
-**June 2024**
+**Release Date: June 2024**
 
 **Version 24.1 – Enhancements and Improvements**
 
@@ -1624,7 +1666,7 @@ ARM 24.1.7
 3. A code fix was applied to the Admin module of version 24.1 to correct a use-case error in which test class mappings were missing. Support tickets #116984, #117737&#x20;
 4. A code fix was applied to the Admin module of version 24.1 to correct a use-case issue with log visibility in the branching baseline for admin users. Support ticket #117485&#x20;
 5. A code fix was applied to the Admin module of version 24.1 from an internal ticket identifying a use case in which the user was getting an 'unauthorized 401' error during a new account signup registration.&#x20;
-6. A code fix was applied to the Admin module of version 24.1 identified by internal ticket a use case in which the user was unable to log in via the default SSO login page; also, the build version and revsion information were not displaying.
+6. A code fix was applied to the Admin module of version 24.1 identified by internal ticket a use case in which the user was unable to log in via the default SSO login page; also, the build version and revision information were not displaying.
 7. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which an issue was occurring with the system administrator lite. Support ticket #117297
 8. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to see the metadata through the single revision deployment. Support ticket #116919
 9. A code fix was applied to the Deployments module of versions 23.1 and 24.1 due to a use-case error in which the user was not able to deploy the Einstein Prediction builder. Support ticket #116909
@@ -1644,7 +1686,7 @@ ARM 24.1.7
 1. A code fix was applied to version 24.1 as a result of a data error encountered in the CI Jobs module related to CI Jobs not triggering. Support ticket #116677
 2. A code fix was applied to the Version Control module in version 24.1 related to a data error causing the WebLink deletion feature to not work. Support ticket #115994
 3. A code fix was applied to the CI Jobs module in version 24.1 due to a data error identified internally with the CI Edit edit mode where the "Do you want us to update the test classes" feature is not saving.
-4. A code fix was applied to the nCino module in version 24.1 related to a use-case error in which Data Loader Pro was not fetching the child object. Support ticket #116928
+4. A code fix was applied to the nCino module in version 24.1 related to a use-case error in which DataLoader Pro was not fetching the child object. Support ticket #116928
 
 #### 10 July 2024
 
@@ -1701,6 +1743,8 @@ ARM 24.1.1
 5. A code fix was applied to the Reports module for a use-case error related to an alignment issue in the weekly reports filter for no deployments.&#x20;
 6. A code fix was applied to the Admin module for a use-case error in which the user is unable to create a search and substitute rule.&#x20;
 7. A code fix was applied to the Admin module for a use-case error related to being unable to register a branch.&#x20;
+
+***
 
 ### nCino Improvements
 
@@ -1794,6 +1838,8 @@ ServiceNow will make information more easily accessible and workflows more strea
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
+### Changelogs
+
 #### 31 July 2024
 
 **ARM 23.1.40**
@@ -1877,8 +1923,6 @@ This update has implemented significant performance upgrades to enhance the tool
 5. A code fix was applied to the Admin module related to a data error in which the branching baseline was not updating the LWCs in the branch. Support ticket #113174
 6. A code fix was applied to the Data Loader module related to a configuration error causing Data Loader to not work as expected. Support ticket #113575&#x20;
 7. A code fix was applied to the ARM module related to a use-case audit logging API error with start time and end time issues occurring when fetching logs. #113739
-
-
 
 #### 29 May 2024
 
@@ -5014,7 +5058,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ## **ARM Release Notes 21.5**
 
-**Date of Release:&#x20;**_**29 August 2021**_
+**Date of Release: 29 August 2021**
 
 **On this page:**
 

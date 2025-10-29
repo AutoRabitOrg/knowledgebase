@@ -2,7 +2,7 @@
 
 ## Guard 25.2.7 Release Notes&#x20;
 
-**Release Date:** 29 October 2025&#x20;
+**Release Date: 29 October 2025**&#x20;
 
 ### New Features & Enhancements&#x20;
 
@@ -44,9 +44,11 @@ Resolved an issue where some permissions were not displaying correctly in the Cu
 
 ## Guard 25.2.6 Release Notes&#x20;
 
-**Release Date:** 15 October 2025&#x20;
+**Release Date: 15 October 2025**&#x20;
 
-### Sync Data Classification Results to Salesforce&#x20;
+### New Features
+
+#### Sync Data Classification Results to Salesforce&#x20;
 
 We’re thrilled to announce that users can now sync Data Classification results directly back to their Salesforce org. This closes the loop between AutoRABIT Guard and Salesforce, keeping compliance data consistent and up to date.&#x20;
 
@@ -57,10 +59,9 @@ We’re thrilled to announce that users can now sync Data Classification results
 * “Sync to Salesforce” button for bulk or individual field syncs.
 * Field detail view enhanced with Compliance and Sync options.&#x20;
 
-**Impact:** \
-Automates alignment between Guard and Salesforce for compliance data — reducing manual effort, errors, and audit risk.&#x20;
+**Impact:** Automates alignment between Guard and Salesforce for compliance data — reducing manual effort, errors, and audit risk.&#x20;
 
-### Salesforce Org Summary Dashboard&#x20;
+#### Salesforce Org Summary Dashboard&#x20;
 
 A brand-new Org Summary Dashboard provides a unified overview of an org’s health, compliance, and risk posture.&#x20;
 
@@ -73,10 +74,9 @@ A brand-new Org Summary Dashboard provides a unified overview of an org’s heal
 * “Export Executive Report” is available for easy reporting&#x20;
 * Onboarding flow updated to include a dashboard overview.&#x20;
 
-**Impact:** \
-Gives customers an executive-level view of org performance and compliance in one place.&#x20;
+**Impact:** Gives customers an executive-level view of org performance and compliance in one place.&#x20;
 
-### Support Login Access for Secure, Audited Troubleshooting&#x20;
+#### Support Login Access for Secure, Audited Troubleshooting&#x20;
 
 We’re introducing Support Login Access—a secure, auditable way for AutoRABIT Support Engineers to access Guard instances with customer approval and full transparency.&#x20;
 
@@ -87,8 +87,7 @@ We’re introducing Support Login Access—a secure, auditable way for AutoRABIT
 * Support users are created as read-only accounts; activity is fully logged and auditable.&#x20;
 * Customers can revoke access at any time.&#x20;
 
-**Impact:** \
-Faster issue resolution with complete transparency, security, and customer control.&#x20;
+**Impact:** Faster issue resolution with complete transparency, security, and customer control.&#x20;
 
 ### Enhancements&#x20;
 
@@ -96,30 +95,26 @@ Faster issue resolution with complete transparency, security, and customer contr
 
 We’ve added a “Reauthenticate” button to simplify reconnecting Salesforce orgs without deleting them.&#x20;
 
-**Impact:** \
-No more data loss when tokens expire—orgs, access controls, and rules stay intact.&#x20;
+**Impact:** No more data loss when tokens expire—orgs, access controls, and rules stay intact.&#x20;
 
 #### Display Risk Level of Changes in Change Monitoring&#x20;
 
 **Module:** Change Monitoring \
 Risk levels (Low, Medium, High) are now visually displayed for each change.&#x20;
 
-**Impact:** \
-Greater visibility into risky activities and faster prioritization of security review.&#x20;
+**Impact:** Greater visibility into risky activities and faster prioritization of security review.&#x20;
 
 #### Capture Detailed Profile Permission Changes in Change Monitoring&#x20;
 
 Change Monitoring now records granular details when user permissions change on Profiles, aligning with existing tracking for Permission Sets.&#x20;
 
-**Impact:** \
-Improved traceability and audit accuracy, enabling downstream features.&#x20;
+**Impact:** Improved traceability and audit accuracy, enabling downstream features.&#x20;
 
 #### Tabular View in Risk Assessment&#x20;
 
 Introduced an alternative table view for displaying risks, complete with sorting and filtering by name or properties.&#x20;
 
-**Impact:** \
-Simplifies navigation and analysis, especially for large number of orgs.&#x20;
+**Impact:** Simplifies navigation and analysis, especially for large number of orgs.&#x20;
 
 #### Separated Status and Severity in Risk Assessment&#x20;
 
@@ -128,8 +123,7 @@ The previous single “Status” field was split into two:&#x20;
 * Status: Unresolved, Resolved&#x20;
 * Severity: Warning, Critical&#x20;
 
-**Impact:** \
-Improves clarity, ensuring severity and progress are tracked distinctly.&#x20;
+**Impact:** Improves clarity, ensuring severity and progress are tracked distinctly.&#x20;
 
 #### Org Selection from Main Detail Page in Permissions Explorer&#x20;
 

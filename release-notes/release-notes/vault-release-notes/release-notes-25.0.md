@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.2.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:** October 29, 2025
+**Release Date: 29 October 2025**
 
 #### **Replication Failure**
 
@@ -19,6 +19,8 @@ Resolved an issue where alerts were not generated for failed backups. The system
 #### **Backup Job Execution**
 
 Fixed an issue causing intermittent backup job failures. Code enhancements now ensure backup jobs run reliably without interruptions.
+
+***
 
 ## Vault Release Notes 25.2.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
@@ -63,6 +65,8 @@ A fix has been implemented to ensure that certain metadata types are processed c
 #### **Accurate Alerts Information** <a href="#accurate-alerts-information" id="accurate-alerts-information"></a>
 
 Additional information has been added to ensure that email alerts include relevant information that helps users with easier understanding of the source of alert.
+
+***
 
 ## Vault Release Notes 25.1.8 <a href="#heading-title-text" id="heading-title-text"></a>
 
@@ -190,6 +194,8 @@ Column labels and field names across the application interface have been standar
 
 A fix is implemented to prevent special fields—such as audit fields—from being inadvertently updated during email data operations, preserving the integrity of email-related metadata.
 
+***
+
 ## Vault Release Notes 25.1.4
 
 **Release Notes:** 16 July 2025
@@ -202,6 +208,8 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
     A new option has been introduced to **exclude records in the Recycle Bin** from processing. This helps streamline operations and focus only on active data.
 * **GDPR Compliance for Deleted Records**
 * A fix has been implemented to ensure that **opted-out deleted records** are no longer visible in Vault, aligning with GDPR compliance and privacy expectations.
+
+***
 
 ## Vault Release Notes 25.1.3
 
@@ -216,6 +224,8 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 *   **Optimized Metadata Handling in Restore**
 
     The system's capability to process metadata has been improved by increasing the number of files it can handle concurrently. This ensures smoother and more efficient metadata restore operations.
+
+***
 
 ## Vault Release Notes 25.1.2
 
@@ -237,6 +247,8 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
     A fix has been implemented to allow users to **easily copy object names** while viewing the schema. This enhancement improves **usability and efficiency**, making it more convenient to reference or reuse object names during configuration or documentation tasks.
 
+***
+
 ## Vault Release Notes 25.1.1
 
 **Release Date: 18 June 2025**
@@ -246,6 +258,8 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 * **Improved Alert Search**: Optimized the search functionality in the Alerts section for quicker results and enhanced user experience.
 * **Accurate Backup Duration Calculation**: Fixed an issue to ensure backup durations are now calculated and displayed correctly across all jobs.
 * **Performance Improvement – Replicate Job Optimization**: Resolved a performance bottleneck in the replicate job process by identifying and addressing a delay issue. This enhancement improves execution speed and overall system efficiency.
+
+***
 
 ## Vault Release Notes 25.1
 

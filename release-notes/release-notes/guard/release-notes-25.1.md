@@ -1,4 +1,4 @@
-# Release Notes 25.1
+# Guard Release Notes 25.1
 
 ## Guard Release Notes 25.1.7
 
@@ -46,6 +46,8 @@ CSV Format Export&#x20;
 
 This release included several bug fixes as well as back-end enhancements designed to optimize processing efficiency and support future feature development.
 
+***
+
 ## Guard Release Notes 25.1.3
 
 **Release Date: 21 May 2025**
@@ -82,7 +84,7 @@ We have added important information to the email received when a change happens 
 Email Notification
 {% endembed %}
 
-&#x20;
+***
 
 ## Guard Release Notes 25.1.2
 

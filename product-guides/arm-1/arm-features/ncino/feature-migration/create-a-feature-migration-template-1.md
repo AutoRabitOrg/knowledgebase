@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# \[DRAFT - Project - X] Create a Feature Migration Template
+# Create a Feature Migration Template
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -23,10 +23,10 @@ This details the step-by-step process to create a standard/community nCino migra
 <figure><img src="../../../../../.gitbook/assets/image (1638).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the selection is made, the creation of the “Feature Migration Template” will be initiated by landing on the Feature page.
-6. You'll be taken to the record-based configuration section, where you will find three tabs that need completed to proceed ahead:
-   * **Metadata Configuration**
-   * **Record Configuration and**
-   * **Preview and Save**
+6. You'll be taken to the record-based configuration section, where you will find three tabs that need completed to proceed:
+   * Metadata Configuration
+   * Record Configuration and
+   * Preview and Save
 
 #### Metadata Configuration <a href="#metadata-configuration" id="metadata-configuration"></a>
 
@@ -70,15 +70,15 @@ Under the **Salesforce Org** **Details** section, do the following:
 
 The filter criteria can be entered and the query can be built under this tab.
 
-1. Click on the pencil icon beside the query
+1. Click on the pencil icon beside the query.
 
 <figure><img src="../../../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
 
-2. On clicking the pencil icon, the ‘query builder’ will be opened
+2. On clicking the pencil icon, the ‘query builder’ will be opened.
 
 <figure><img src="../../../../../.gitbook/assets/image (1648).png" alt=""><figcaption></figcaption></figure>
 
-3. Clicking on the ‘field’ drop-down will provide the list of fields from the ORG
+3. Clicking on the ‘field’ drop-down will provide the list of fields from the ORG.
 
 <figure><img src="../../../../../.gitbook/assets/image (1649).png" alt=""><figcaption></figcaption></figure>
 
@@ -86,40 +86,40 @@ The filter criteria can be entered and the query can be built under this tab.
 
 <figure><img src="../../../../../.gitbook/assets/image (1651).png" alt=""><figcaption></figcaption></figure>
 
-5. On completing the field selection, click on the ‘ADD’ icon to add the query to the ‘query editor’ below
+5. On completing the field selection, click on the ‘ADD’ icon to add the query to the ‘query editor’ below.
 
 <figure><img src="../../../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
 
-6. Once the query is been added to the query editor, the query can be validated by clicking on the ‘Validate’ button.
-7. An SOQL query can also be added to the query editor. After adding the query, the query can be validated
+6. Once the query is added to the query editor, the query can be validated by clicking on the ‘Validate’ button.
+7. An SOQL query can also be added to the query editor. After adding the query, the query can be validated.
 
 <figure><img src="../../../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
 
-8. On validating the query, the application will display a success message
+8. On validating the query, the application will display a success message.
 
 <figure><img src="../../../../../.gitbook/assets/image (1654).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Important Note:
 
-1. All records that get fetched will be in order by "ASC nFORCE\_\_lookupKey\_\_c." Nevertheless, if "nFORCE\_\_lookupKey\_\_c" is unavailable, then using order by "ASC Id," the records will be fetched.
+1. All records that get fetched will be in order by "ASC nFORCE\_\_lookupKey\_\_c." If the "nFORCE\_\_lookupKey\_\_c" is unavailable, then the records will be fetched in order by "ASC Id."
 2. For the Attachment object, the filter cannot be applied.
 {% endhint %}
 
-9. As the query has been validated, the same query can be saved by clicking on the ‘Save’ button on the ‘Query Builder’.
+9. As the query has been validated, the same query can be saved by clicking on the ‘Save’ button on the ‘Query Builder.’
 
 {% hint style="info" %}
 **Important Note:**
 
 1. &#x20;If your nCino objects include an Attachment object, users must confirm whether they want to fetch the Attachment dataset.
-2. Check the number of attachments pulled for the job once the attachment object is selected for the data deployment. For each API call, Salesforce returns at least one and a maximum of five attachments based on the size of the attachments. More APIs calls will get triggered for more attachments, which may result in the APIs limit being exceeded and the application reporting an error.
+2. Check the number of attachments pulled for the job once the attachment object is selected for the data deployment. For each API call, Salesforce returns at least one and a maximum of five attachments based on the size of the attachments. More APIs calls will get triggered for more attachments, which may result in the API limit being exceeded and the application reporting an error.
 {% endhint %}
 
-11. The query should be added to all the buckets. Click on the Next to continue to the “Preview and Save” step of the “Feature Migration Creation”
+11. The query should be added to all the buckets. Click on 'Next' to continue to the “Preview and Save” step of the “Feature Migration Creation.”
 
 #### Preview and Save <a href="#preview-and-save" id="preview-and-save"></a>
 
-This is the summary of the “Feature Migration Template” that is being created. All of the feature details can be observed on the ‘preview and save’ page. On the ‘change log’, any change log information required can be added.
+This is the summary of the “Feature Migration Template” that is being created. All of the feature details can be observed on the ‘Preview and Save’ page. On the ‘change log,’ any change log information required can be added.
 
 <figure><img src="../../../../../.gitbook/assets/image (1655).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,8 +127,8 @@ This is the summary of the “Feature Migration Template” that is being create
 **Important Note:** **Related List** section will display only if the **Attachment** object is part of the Feature Migration Template.&#x20;
 {% endhint %}
 
-1. On verifying all the details on the ‘preview and save’ page, save the template by clicking on the save button.
-2. On clicking the save, you will be re-directed to the “Feature Management” page.
+1. On verifying all the details on the ‘Preview and Save’ page, save the template by clicking on the 'Save' button.
+2. On clicking 'Save,' you will be redirected to the “Feature Management” page.
 
 <figure><img src="../../../../../.gitbook/assets/image (1656).png" alt=""><figcaption></figcaption></figure>
 

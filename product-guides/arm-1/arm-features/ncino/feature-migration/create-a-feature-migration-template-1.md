@@ -8,7 +8,7 @@ hidden: true
 
 This details the step-by-step process to create a standard/community nCino migration template.
 
-### Step-By-Step Guide <a href="#procedure" id="procedure"></a>
+### Step-by-Step Guide <a href="#procedure" id="procedure"></a>
 
 1. The **“New Feature Migration”** template can be created through either of the highlighted options
    * Feature

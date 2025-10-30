@@ -1,5 +1,25 @@
 # nCino Release Notes 25.3
 
+## nCino + **DataLoader** - Release 25.4.5
+
+**Release Date:** Nov2, 2025
+
+#### Parent–Child Object Reference Handling
+
+Implemented code changes to ensure parent object references in child records are correctly migrated when both parent and child objects are selected as child objects in a Data Loader Pro job.
+
+#### Lookup Key Sorting Fix in Feature Commit
+
+A fix was implemented to ensure the sorting field defaults to the lookup key during feature commit creation. The sorting field now switches to “Name” only when a lookup key field does not exist, preventing duplicate lookup keys in pull request file changes.
+
+#### Dataset Loading Issue with Special Characters
+
+Resolved an issue where datasets failed to load and got stuck at “Retrieving Iterations...” when the deployment label contained a “#” character. The label handling logic was updated to prevent URL truncation during dataset retrieval.
+
+#### RBC Deployment – Invalid Field Error with Attachment Names
+
+A fix was implemented to handle attachment names containing commas (`,`). Previously, deployments failed with an “Invalid Field” error when processing attachments with commas in their filenames.
+
 ## nCino + **DataLoader** - Release 25.4.3
 
 **Release Date:** October 19, 2025

@@ -115,7 +115,7 @@ Important Note:
 2. Check the number of attachments pulled for the job once the attachment object is selected for the data deployment. For each API call, Salesforce returns at least one and a maximum of five attachments based on the size of the attachments. More APIs calls will get triggered for more attachments, which may result in the API limit being exceeded and the application reporting an error.
 {% endhint %}
 
-11. The query should be added to all the buckets. Click on 'Next' to continue to the “Preview and Save” step of the “Feature Migration Creation.”
+10. The query should be added to all the buckets. Click on 'Next' to continue to the “Preview and Save” step of the “Feature Migration Creation.”
 
 #### Preview and Save <a href="#preview-and-save" id="preview-and-save"></a>
 

@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Feature Migration Summary
+# Feature Migration Summary Page
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -24,7 +24,7 @@ From this page, you can:
 
 ### **Step-By-Step Guide**
 
-1. The following data can be observed under the "Feature Management" page:
+1. The following data is shown on the "Feature Management" page:
    * Source Type (dropdown)
    * Feature name
    * Version
@@ -75,7 +75,7 @@ From this page, you can:
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 4.1 (1).png" alt=""><figcaption></figcaption></figure>
 
-12. The following actions can be performed on this page
+12. The following actions can be performed on this page:
     * Create new version
     * Publish&#x20;
     * View dataset

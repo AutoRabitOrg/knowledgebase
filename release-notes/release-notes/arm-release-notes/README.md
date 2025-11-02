@@ -20,7 +20,7 @@ Key highlights include:
 * Support for both constructive and destructive changes across DX and non-DX repositories.
 * Validated Merge, Release Label, and Branching Baseline flows for all Data Cloud metadata types.\
   \
-  &#xNAN;_(Full documentation on_[_https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud_](https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud)_)_
+  &#xNAN;_&#x4C;earn more_ [_https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud_](https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud)
 
 ### Bugs <a href="#bugs" id="bugs"></a>
 

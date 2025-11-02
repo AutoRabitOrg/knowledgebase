@@ -1,5 +1,44 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.4.5
+
+**Release Date:** Nov 2nd, 2025\
+\
+**Highlights:** Improved validation visibility, enhanced deployment reliability, and Data Cloud DevOps support introduced.
+
+### Enhancements <a href="#enhancements" id="enhancements"></a>
+
+**Data Cloud DevOps Support**\
+Introduced full support for Salesforce Data Cloud metadata deployment using DevOps Data Kits. Users can now commit, validate, and deploy Data Cloud components such as Data Streams, Data Model Objects, Calculated Insights, and Data Packages through EZ-Commit, Deployments, and CI Jobs.
+
+Key highlights include:
+
+* Deployment support for **DataPackageKitDefinition**, **DataSourceBundleDefinition**, **DataStreamTemplate**, and **DataKitObjectDependency**.
+* Strict separation between Data Cloud and standard Salesforce metadata for packaging.
+* Prerequisite checks for permissions and Data Cloud-specific access.
+* Recommended DX repository usage and manifest-based commit flow for Package.xml-dependent metadata.
+* Support for both constructive and destructive changes across DX and non-DX repositories.
+* Validated Merge, Release Label, and Branching Baseline flows for all Data Cloud metadata types.\
+  \
+  &#xNAN;_(Full documentation on_[_https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud_](https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud)_)_
+
+### Bugs <a href="#bugs" id="bugs"></a>
+
+**Partial FlexiPage Commit Handling**\
+Fixed an issue where FlexiPage metadata was partially committed during Prevalidation Commits, resulting in missing content during CI Job deployment. Added schema validation checks to ensure full FlexiPage integrity and introduced detailed logging for file uploads on the Review Artifact screen.\
+(Support Case: 155665)
+
+**App Deployment Failure in Profile Manager**\
+Addressed a “Malformed request detected” error encountered during “Apps” deployment using the Profile Manager process. Deployments now complete successfully, and changes are accurately reflected in the target Salesforce org.\
+(Internal)
+
+**Validation Circle Color Accuracy During Code Coverage Failure**\
+Resolved an issue in EZ-Commit where both validation circles appeared green even when Salesforce validation failed due to insufficient code coverage. The circles now correctly turn red when code coverage fails, ensuring accurate validation feedback.\
+(Support Case: 154962)\
+\
+**Caching Issue in EZ-Commit AutoDraft Flow**\
+In version 25.4.4, a cache-related issue caused errors when expanding metadata components in the AutoDraft step of the EZ-Commit flow. Users encountered the message “Cannot invoke 'java.lang.Comparable.compareTo(Object)' because 'k1' is null.”This issue has been resolved in the current release. Metadata components now expand and display their contents correctly without any errors.
+
 ## ARM **Release Notes 25.4.4**
 
 **Release Date: 26 October 2025**\

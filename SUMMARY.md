@@ -743,7 +743,7 @@
       * [Feature Deployment](product-guides/arm-1/arm-features/ncino/feature-deployment/README.md)
         * [Deployment Using Feature Migration Template](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-using-feature-migration-template-1.md)
         * [Deployment via Template using Salesforce Org](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-via-template-using-salesforce-org.md)
-        * [\[DRAFT - Project - X\] Deployment via Template using Salesforce Org](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-via-template-using-salesforce-org-1.md)
+        * [Deployment via Template using Salesforce Org](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-via-template-using-salesforce-org-1.md)
         * [Deployment Using Version Control](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-using-version-control.md)
         * [Copy of Deployment Using Version Control](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-using-version-control-1.md)
         * [Deployment via Version Control using Salesforce Org](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org.md)

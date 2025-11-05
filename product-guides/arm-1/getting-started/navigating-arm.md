@@ -2,7 +2,7 @@
 
 ## Welcome to ARM!! <a href="#welcome-to-arm" id="welcome-to-arm"></a>
 
-You'll see this when you log in to your ARM account.\
+You'll see this when you log in to your ARM account. \
 
 
 <figure><img src="../../../.gitbook/assets/image (1899).png" alt=""><figcaption></figcaption></figure>

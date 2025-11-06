@@ -1,5 +1,25 @@
 # nCino Release Notes 25.4
 
+## nCino + D - Release 25.4.6 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** Nov 09, 2025
+
+#### **Delta Preparation Enhancement** <a href="#delta-preparation-enhancement" id="delta-preparation-enhancement"></a>
+
+Enhanced delta preparation logic to ensure only relevant changes from the selected revisions are included when the source is Version Control (VC). This fix resolves migration failures caused by missing `.csv` files during deployment.
+
+#### **CI Job – Validation Rules Handling** <a href="#ci-job-validation-rules-handling" id="ci-job-validation-rules-handling"></a>
+
+Resolved an issue where the “Disable Validation Rules” setting was not honored during nCino CI job execution. The fix ensures that destination org details are correctly passed from the Agent to Rabbit, allowing validation rules to be accurately identified and disabled during deployment.
+
+#### **Audit Fields Handling in Data Migration** <a href="#audit-fields-handling-in-data-migration" id="audit-fields-handling-in-data-migration"></a>
+
+Resolved an issue where audit fields were incorrectly included during data migration, causing deployment failures for specific templates. The fix ensures audit fields are now processed only for objects that support them, preventing similar errors during deployment.
+
+#### **RBC Feature Deployment – Authentication Error** <a href="#rbc-feature-deployment-authentication-error" id="rbc-feature-deployment-authentication-error"></a>
+
+Resolved an issue where nCino RBC feature deployments intermittently failed with authentication errors despite valid credentials. The fix ensures record type data is properly saved during deployment, and additional loggers have been added to help trace any future occurrences.
+
 ## nCino + **DataLoader** - Release 25.4.5
 
 **Release Date:** Nov2, 2025

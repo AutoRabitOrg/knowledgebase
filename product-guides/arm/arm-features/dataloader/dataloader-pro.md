@@ -1,17 +1,17 @@
-# Data Loader Pro
+# DataLoader Pro
 
-**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **Data Loader Pro** feature in ARM.&#x20;
+**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **DataLoader Pro** feature in ARM.&#x20;
 
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
-While performing **Data Loader Pro** on the objects for the first time, ensure you perform [Data Loader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your Data Loader Pro job. This is a one-time operation.
+While performing **DataLoader Pro** on objects for the first time, ensure you perform [DataLoader Configuration](dataloader-configuration.md) among the same orgs on all the objects included in your DataLoader Pro job. This is a one-time operation.
 
-Data Loader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
+DataLoader plays an essential role in data migration from source sandbox to destination sandbox. However, in this data migration process, the chances of duplicate records being created always exist. To avoid this, ARM has developed a new feature that allows synchronizing between the orgs with the help of the ARM external ID **AutorabitExtid\_\_c** field.
 
-### How to Perform a Data Loader Pro Operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
+### How to Perform a DataLoader Pro Operation <a href="#how-to-perform-a-dataloader-pro-operation" id="how-to-perform-a-dataloader-pro-operation"></a>
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Data Loader`** module and select **`Data Loader Pro`**.
+2. Hover your mouse over the **`DataLoader`** module and select **`DataLoader Pro`**.
 3. Click on **`Create New Job.`**
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
@@ -45,15 +45,15 @@ For each object displayed, users can view the list of fields related to the corr
 
 You can extract records within a specified limit using specifying criteria in the **`Filters`** section. You can even filter the details via **`Date`** or **`Date Literals`**. A date literal is a fixed expression representing a relative range of time, such as last month, this week, or next year. (Refer [here](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql_select_dateformats.htm) for the list of data literals supported).
 
-Upload the **`CSV`** file (if required) if there is a large amount of data and it requires the filter for those records. The max file size supported is **10 MB**. Once the CSV is uploaded, click **`Auto-Populate`**. The filters are autopopulated for the selected field and operator based on the values of the chosen field in the uploaded CSV file.
+Upload the **`CSV`** file (if required) if there is a large amount of data and it requires the filter for those records. The max file size supported is **10 MB**. Once the CSV is uploaded, click **`Auto-Populate`**. The filters are auto-populated for the selected field and operator based on the values of the chosen field in the uploaded CSV file.
 
-Format for CSV file to filter records:
+Format the CSV file to filter records:
 
-* ARM Data Loader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
+* ARM DataLoader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
 * Ensure you have a column header and rows of data populated for all system-required fields, such as **`Account Name`** or **`Contact Last Name`**.
 * There can be only one column header.&#x20;
 
-For more information, see [Preparing the CSV file for Data Loader](preparing-the-csv-file-for-arm-dataloader.md).
+For more information, see [Preparing the CSV file for DataLoader](preparing-the-csv-file-for-arm-dataloader.md).
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -117,14 +117,14 @@ Using the **`Automap`** feature, you can map the fields automatically based on f
 
 ### **Field Extraction**
 
-Data Loader Pro allows users to fetch only the fields explicitly mapped by the user, rather than retrieving all available fields in an object.&#x20;
+DataLoader Pro allows users to fetch only the fields explicitly mapped by the user, rather than retrieving all available fields in an object.&#x20;
 
 * When checking for the existence of `AutorabitExtId__c`, if it exists, the system verifies whether it is marked as "External Id" and "Unique." If not, it is set to `true` as required.
 * Any new objects are saved to the database, reducing processing time.
 
 ### **External ID Field Mapping**
 
-In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the Data Loader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
+In this section, you can use an external ID instead of a related record's Salesforce record ID to relate or associate records to each other as you process the DataLoader Pro operation. For example, if Object B has a lookup field to another Object A, you can use the values in a field marked as an **`External ID`** on Object A to relate the two (Object B to Object A records).
 
 In the **`Source`** field, select the source whose values will be populated in the destination external ID field.
 
@@ -203,27 +203,27 @@ In the Scheduling procedure, the user can schedule the process it must run.
 
 <figure><img src="../../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Finally, click on **`Save`** to complete the initial process. You will be redirected to the **`Dataloader Pro Summary`** page, where the Data Loader process initiated can be seen at the top of the list.
+Finally, click on **`Save`** to complete the initial process. You will be redirected to the **`DataLoader Pro Summary`** page, where the DataLoader process initiated can be seen at the top of the list.
 
 <figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Job Configuration Settings
 
-1. This feature will allow the user to select the required job settings to disable workflow rules, disable validation rules etc., as required during the job creation.
+1. This feature will allow the user to select the required job settings to disable workflow rules, disable validation rules, etc., as required during the job creation.
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. Once the job is saved the selected job configuration settings will be saved.
-3. On running the job, the retained job settings will be displayed on the pop-up, “Run Configuration”.
+2. Once the job is saved, the selected job configuration settings will be saved.
+3. On running the job, the retained job settings will be displayed on the pop-up, “Run Configuration.”
 
 <figure><img src="../../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-4. Any changes made during the run of the job will only affect that individual job run.
+4. Any changes made while running the job will only affect that individual job run.
 5. To permanently change the configured settings during the job creation, the user has to edit the created job and change the settings and save the job.
 
-### Running the Data Loader Pro Job
+### Running the DataLoader Pro Job
 
-Select your job from the **`Data Loader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
+Select your job from the **`DataLoader Pro Summary`** screen and click on **`Run`**. This option allows you to run the processes created in the selected category.
 
 <figure><img src="../../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -246,8 +246,8 @@ The table below lists the configurations to choose from, along with their descri
 
 1. **`Edit:`** Edits the processes in the selected category to rerun them.
 2. **`Abort:`** Aborts the process.
-3. **`Schedule:`** Schedules the data-loading process for the selected category.
-4. **`Clone:`** Clones the respective Data Loader Pro job.
+3. **`Schedule:`** Schedules the dataloading process for the selected category.
+4. **`Clone:`** Clones the respective DataLoader Pro job.
 5. **`Log:`** Provides information about the process execution.
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>

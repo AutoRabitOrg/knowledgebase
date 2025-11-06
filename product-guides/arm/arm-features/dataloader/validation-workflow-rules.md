@@ -8,7 +8,7 @@ Validation rules ensure that data entered into a Salesforce record meets specifi
 
 #### Disable Validation Rules <a href="#disable-validation-rules" id="disable-validation-rules"></a>
 
-When the **Disable validation rules** checkbox is selected during a Data Loader job, all validation rules associated with the relevant Salesforce objects are temporarily deactivated. Data is then migrated to the destination sandbox. Once migration is complete, the validation rules are reactivated automatically.
+When the **Disable validation rules** checkbox is selected during a DataLoader job, all validation rules associated with the relevant Salesforce objects are temporarily deactivated. Data is then migrated to the destination sandbox. Once migration is complete, the validation rules are reactivated automatically.
 
 <figure><img src="../../../../.gitbook/assets/image (1131).png" alt="Checkbox UI to disable validation rules in Data Loader"><figcaption></figcaption></figure>
 
@@ -34,7 +34,7 @@ Workflow rules automate standard processes and procedures. They typically follow
 
 #### Disable Workflow Rules <a href="#disable-workflow-rules" id="disable-workflow-rules"></a>
 
-Selecting the **Disable workflow rules** checkbox during the Data Loader job will deactivate all applicable Salesforce workflow rules during data migration. After the migration is complete, ARM reactivates the workflows.
+Selecting the **Disable workflow rules** checkbox during the DataLoader job will deactivate all applicable Salesforce workflow rules during data migration. After the migration is complete, ARM reactivates the workflows.
 
 <figure><img src="../../../../.gitbook/assets/image (1135).png" alt="UI showing workflow rules disable checkbox"><figcaption></figcaption></figure>
 

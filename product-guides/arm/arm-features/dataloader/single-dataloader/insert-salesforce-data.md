@@ -1,9 +1,9 @@
 # Insert Salesforce Data
 
-The following articles describe using the **Single Dataloader** to insert data into Salesforce. The data is inserted via a CSV file.
+The following articles describe using the **Single DataLoader** to insert data into Salesforce. The data is inserted via a CSV file.
 
 1. Log in to your ARM account.
-2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`Dataloader`**. The **Dataloader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
+2. Hover your mouse over the [**`DataLoader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`DataLoader`**. The **DataLoader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
 3. Click **`Insert`** on the right side of the screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -33,34 +33,34 @@ The following articles describe using the **Single Dataloader** to insert data i
 14. Use the **`search`** option to look up a field by name from the long list to map it.
 15. Use the **`Filter`** dropdown to choose which fields to display:
     * **`All:`** Displays all fields, whether they have been mapped or not.
-    * **`Mapped:`** Displays only the fields which have been mapped yet.
-    * **`Unmapped:`** Displays only the fields which haven't been mapped yet.\
+    * **`Mapped:`** Displays only the fields that have been mapped yet.
+    * **`Unmapped:`** Displays only the fields that haven't been mapped yet.\
       After selecting the filter, the list updates automatically as you map or unmap each field.
-16. Make sure you have mapped all the required fields. Otherwise, you can't move forward. Click **`Next`**.Lookup Reference ObjectsIf you need an object ID but don't have it, you can use the lookup function to retrieve it dynamically. For example, if you're importing Contacts with the **"Account name"** but not the **"ID,"** you can use the [lookup feature](using-data-loader-with-lookups.md) to find it.
+16. Make sure you have mapped all the required fields. Otherwise, you can't move forward. Click **`Next`**. Lookup Reference Objects. If you need an object ID but don't have it, you can use the lookup function to retrieve it dynamically. For example, if you're importing Contacts with the **"Account name"** but not the **"ID,"** you can use the [lookup feature](using-data-loader-with-lookups.md) to find it.
 
 <figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="448"><figcaption></figcaption></figure>
 
 17. On the **`Process Summary`** screen, you can:
     * Give the process/job a **name**.
-    * Select the **`Category`**. Categories are used to classify and group similar processes having similar functionality. In simple terms, you are assigning similar processes to a category. You can select an existing category or create a new one by clicking the **`+`** icon.
+    * Select the **`Category`**. Categories are used to classify and group processes having similar functionality. In simple terms, you are assigning similar processes to a category. You can select an existing category or create a new one by clicking the **`+`** icon.
     * View the main object.
     * View the operation **`Type`** _(Insert)_.
     * View the number of impacted **records**.
 18. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 19. Finally, click **`Save`** to save your task and run it later.
-20. Your task is listed at the top of the list on the **`Dataloader Summary`** screen.
-21. Click **`Run`** to start Dataloader immediately before the scheduled time.
+20. Your task is listed at the top of the list on the **`DataLoader Summary`** screen.
+21. Click **`Run`** to start DataLoader immediately before the scheduled time.
 
 <figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-22. Select the criteria you can set for the data loader process to continue:
+22. Select the criteria you can set for the DataLoader process to continue:
 
 | Configurations                                             | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Batch Size                                                 | <p>Whenever the Bulk API checkbox is left unchecked, the Batch API is used.<br><br>Salesforce Batch API is based on SOAP principles and is optimized for real-time client applications that update small numbers of records at a time. Although SOAP API can also process large numbers of records, it becomes less practical when the data sets contain hundreds of thousands of records. In those cases, Bulk API is the best option. Batch API processes data in smaller batches than Bulk API, resulting in a higher API call usage per operation on large volumes of data.<br><br><strong>Note:</strong> <em>When you run a Bulk API job, processing more batches in parallel means giving that job a higher degree of parallelism, giving your overall run better data throughput.</em></p> |
-| Disable workflow rules                                     | All the workflows of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, workflows are reactivated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Disable workflow rules                                     | All workflows of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, workflows are reactivated.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Disable Validation Rules                                   | Validation rules verify that the data a user enters in a record meets the specified criteria before the user can save the record. On selection, all the validation rules of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, validation rules are reactivated.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Insert/Update with null values.                            | This will either insert or update record field values with null (if the value is null in source org) in destination org.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Insert/Update with null values                             | This will either insert or update record field values with null (if the value is null in source org) in destination org.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Use UTF-8 file encoding for file read and write operations | Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled in your data exclusively containing English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default as per Salesforce.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 23. Click **`Run`**.
@@ -80,7 +80,7 @@ The following articles describe using the **Single Dataloader** to insert data i
 1. **`Edit:`** Modifies or updates the process details.&#x20;
 2. **`Abort:`** Aborts the process while it is still running.
 3. **`Schedule:`** Sets the schedule at which the process must run.
-4. **`Delete:`** Deletes the insert process
+4. **`Delete:`** Deletes the insert process.
 5. **`Log:`** Provides information about the execution of the inserted task.
 6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../validation-workflow-rules.md). Sample VR/WFR attached:
 

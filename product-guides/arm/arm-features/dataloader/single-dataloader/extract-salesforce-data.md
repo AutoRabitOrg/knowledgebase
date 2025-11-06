@@ -1,9 +1,9 @@
 # Extract Salesforce Data
 
-The following articles describe using **Single Dataloader** to extract data from Salesforce. The information is stored in CSV format.
+The following articles describe using **Single DataLoader** to extract data from Salesforce. The information is stored in CSV format.
 
 1. Log in to your ARM account.
-2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`Dataloader`**.The **Dataloader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
+2. Hover your mouse over the [**`DataLoader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`DataLoader`**.The **DataLoader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
 3. Click **`Extract`** on the right side of the screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -20,7 +20,7 @@ The following articles describe using **Single Dataloader** to extract data from
 
 <figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="319"><figcaption></figcaption></figure>
 
-10. Select the checkbox before each field to include for the extraction process.
+10. Select the checkbox before each field to include in the extraction process.
 
 <figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="320"><figcaption></figcaption></figure>
 
@@ -47,7 +47,7 @@ The following articles describe using **Single Dataloader** to extract data from
 
 14. On the **`Process Summary`** screen, you can:
     * Give the process/job a **`Name`**.
-    * Select the **`Category`**. Categories are used to classify and group similar processes having similar functionality. In simple terms, you are assigning similar processes to a category. You can select an existing category or create a new one by clicking the **`+`** icon.
+    * Select the **`Category`**. Categories are used to classify and group processes having similar functionality. In simple terms, you are assigning similar processes to a category. You can select an existing category or create a new one by clicking the **`+`** icon.
     * View the main **`Object`**.
     * View the operation **`Type`** (**`Extract`**).
     * View the number of extracted **`Records`**.
@@ -57,8 +57,8 @@ The following articles describe using **Single Dataloader** to extract data from
 
 <figure><img src="../../../../../.gitbook/assets/8 (4).png" alt=""><figcaption></figcaption></figure>
 
-17. Your task is shown on top of the lists on the **`Dataloader Summary`** screen.
-18. Click **`Run`** to start the dataloader immediately before the scheduled time.
+17. Your task is shown on top of the lists on the **`DataLoader Summary`** screen.
+18. Click **`Run`** to start the DataLoader immediately before the scheduled time.
 
 <figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 

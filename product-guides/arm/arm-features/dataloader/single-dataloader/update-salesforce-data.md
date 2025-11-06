@@ -1,9 +1,9 @@
 # Update Salesforce Data
 
-The following article describes using **Single Dataloader** to update data in Salesforce. The data is updated via a CSV file.
+The following article describes using **Single DataLoader** to update data in Salesforce. The data is updated via a CSV file.
 
 1. Log in to your ARM account.
-2. Hover your mouse over the [**`Dataloader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`Dataloader`**.
+2. Hover your mouse over the [**`DataLoader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`DataLoader`**.
 3. Click **`Update`** on the right side of the screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -36,8 +36,8 @@ The following article describes using **Single Dataloader** to update data in Sa
 14. Use the **`search`** option to look up a field by name from the long list to map it.
 15. Use the **`Filter`** dropdown to choose which fields to display:
     * **`All:`** Displays all fields, whether they have been mapped or not.
-    * **`Mapped:`** Displays only the fields which have been mapped yet.
-    * **`Unmapped:`** Displays only the fields which haven't been mapped yet.\
+    * **`Mapped:`** Displays only the fields that have been mapped yet.
+    * **`Unmapped:`** Displays only the fields that haven't been mapped yet.\
       After selecting the filter, the list updates automatically as you map or unmap each field.
 16. Make sure you have mapped all the required fields. Otherwise, you can't move forward. Click **`Next`**.
 17. On the **`Process Summary`** screen, you can:\
@@ -52,12 +52,12 @@ The following article describes using **Single Dataloader** to update data in Sa
     * View the number of impacted **`Records`**.
 18. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 19. Finally, click **`Save`** to save your task and run it later.
-20. Your task is listed on top of the lists in the **`Dataloader Summary`** screen.
-21. Click **`Run`** to run the Dataloader immediately before the scheduled time.
+20. Your task is listed on top of the lists in the **`DataLoader Summary`** screen.
+21. Click **`Run`** to run the DataLoader immediately before the scheduled time.
 
 <figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-22. Select the criteria you can set for the dataloader process to continue:
+22. Select the criteria you can set for the DataLoader process to continue:
 
 | Configurations                                                   | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

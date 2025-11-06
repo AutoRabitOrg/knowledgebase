@@ -3,12 +3,12 @@
 **Upsert** is a combination of Updating and Inserting. If a record in a file matches an existing record, the existing record is updated with the values in your file. The record is created as a new entity if no match is found.
 
 **Limitation on Record ID Availability**\
-Except for the **Upsert** operation in a single Dataloader job, when errors occur during data operations, Salesforce imposes a limitation where **record ID information is not available** in the error details.
+Except for the **Upsert** operation in a single DataLoader job, when errors occur during data operations, Salesforce imposes a limitation where **record ID information is not available** in the error details.
 
-The following articles describe using **Single Dataloader** to upsert data into Salesforce via a CSV file.
+The following articles describe using **Single DataLoader** to upsert data into Salesforce via a CSV file.
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Dataloader`** module and select **`Dataloader`**.
+2. Hover your mouse over the **`DataLoader`** module and select **`DataLoader`**.
 3. Click **`Upsert`** on the right side of the screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1).png" alt="Upsert option in Dataloader UI"><figcaption></figcaption></figure>
@@ -32,7 +32,7 @@ The following articles describe using **Single Dataloader** to upsert data into 
 
 <figure><img src="../../../../../.gitbook/assets/image (67) (1) (1) (1).png" alt="Notification on number of records affected"><figcaption></figcaption></figure>
 
-11. Prepare field mappings: match CSV columns to Salesforce fields.
+11. Prepare field mappings: Match CSV columns to Salesforce fields.
 12. Use **`Automap`** to match fields automatically if names align.
 
 <figure><img src="../../../../../.gitbook/assets/image (68) (1) (1) (1).png" alt="Field mapping with Automap"><figcaption></figcaption></figure>
@@ -52,12 +52,12 @@ The following articles describe using **Single Dataloader** to upsert data into 
 
 You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **`Save`** to store and run later.
 
-20. The task appears in the **Dataloader Summary** list.
-21. Click **`Run`** to execute the task immediately.
+14. The task appears in the **DataLoader Summary** list.
+15. Click **`Run`** to execute the task immediately.
 
 <figure><img src="../../../../../.gitbook/assets/image (70) (1) (1).png" alt="Run Dataloader job" width="563"><figcaption></figcaption></figure>
 
-### Dataloader Configuration Options
+### DataLoader Configuration Options
 
 | Configuration                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

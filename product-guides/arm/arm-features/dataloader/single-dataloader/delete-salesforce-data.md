@@ -1,9 +1,9 @@
 # Delete Salesforce Data
 
-The following articles describe using **Single Dataloader** to delete data from Salesforce. To delete data, you need a CSV file containing the IDs of the objects to delete. Follow the steps below:
+The following articles describe using **Single DataLoader** to delete data from Salesforce. To delete data, you need a CSV file containing the IDs of the objects to delete. Follow the steps below:
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Dataloader`** module and choose the **`Dataloader`** option.
+2. Hover your mouse over the **`DataLoader`** module and choose the **`DataLoader`** option.
 3. Click **`Delete`** on the right side of the screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (79) (1) (1).png" alt="Delete option on Dataloader page"><figcaption></figcaption></figure>
@@ -48,12 +48,12 @@ The following articles describe using **Single Dataloader** to delete data from 
 
 17. Schedule tasks as **Daily**, **Weekly**, or **On-demand**.
 18. Click **`Save`** to save and run later.
-19. Your job appears at the top in the **`Dataloader Summary`** screen.
+19. Your job appears at the top in the **`DataLoader Summary`** screen.
 20. Click **`Run`** to execute the job manually.
 
 <figure><img src="../../../../../.gitbook/assets/image (86) (1) (1).png" alt="Run button in Dataloader Summary"><figcaption></figcaption></figure>
 
-21. Choose criteria for running the Dataloader job:
+21. Choose criteria for running the DataLoader job:
 
 | Configurations | Descriptions                                                                     |
 | -------------- | -------------------------------------------------------------------------------- |

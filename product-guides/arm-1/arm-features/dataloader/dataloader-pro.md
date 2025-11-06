@@ -1,12 +1,12 @@
-# Data Loader Pro
+# DataLoader Pro
 
-**Data Loader Pro** is an advanced ARM capability that enables seamless transfer of data from a source sandbox to a destination sandbox. It automatically manages parent-child relationships, ensuring data integrity across related Salesforce objects. With support for multi-object hierarchies, Data Loader Pro simplifies the migration of complex Salesforce datasets, making the process faster, more reliable, and less prone to manual errors.
+**DataLoader Pro** is an advanced ARM capability that enables seamless transfer of data from a source sandbox to a destination sandbox. It automatically manages parent-child relationships, ensuring data integrity across related Salesforce objects. With support for multi-object hierarchies, DataLoader Pro simplifies the migration of complex Salesforce datasets, making the process faster, more reliable, and less prone to manual errors.
 
 ### Prerequisites for Data Loader Pro
 
-When running **Data Loader Pro** on objects for the first time, ensure that **Data Loader Configuration** is completed between the same orgs for all objects included in the job. This configuration is a one-time requirement.
+When running **DataLoader Pro** on objects for the first time, ensure that **DataLoader Configuration** is completed between the same orgs for all objects included in the job. This configuration is a one-time requirement.
 
-Data Loader Pro plays a crucial role in migrating data from a source sandbox to a destination sandbox. However, during this migration process, there is always a risk of creating duplicate records. To address this, ARM provides a synchronization feature that leverages the **ARM External ID** field (`AutorabitExtid__c`) to match and align records between orgs, helping prevent duplication.
+DataLoader Pro plays a crucial role in migrating data from a source sandbox to a destination sandbox. However, during this migration process, there is always a risk of creating duplicate records. To address this, ARM provides a synchronization feature that leverages the **ARM External ID** field (`AutorabitExtid__c`) to match and align records between orgs, helping prevent duplication.
 
 #### &#x20;Step-By-Step Guide:
 
@@ -29,9 +29,9 @@ Data Loader Pro plays a crucial role in migrating data from a source sandbox to 
 8.  In the **Master Object** tab, locate your object and select the funnel icon in the **Filters** column.
 
     <figure><img src="../../../../.gitbook/assets/5 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-9.  Configure the filter rule
+9.  Configure the filter rule:
 
-    -In **Filter**, keep **Insert Value** (or switch as needed).
+    In **Filter**, keep **Insert Value** (or switch as needed).
 
     <figure><img src="../../../../.gitbook/assets/6 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 

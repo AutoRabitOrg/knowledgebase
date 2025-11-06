@@ -2,7 +2,7 @@
 
 #### **Data Extraction Overview**
 
-Basic DL offers a convenient feature to extract data from Salesforce by defining filter criteria using queries during job creation. The query specified at this stage determines which records are retrieved when the job is executed. This ensures that only the relevant dataset is fetched based on the configured query conditions, enabling targeted and efficient data extraction.
+Basic DataLoader offers a convenient feature to extract data from Salesforce by defining filter criteria using queries during job creation. The query specified at this stage determines which records are retrieved when the job is executed. This ensures that only the relevant dataset is fetched based on the configured query conditions, enabling targeted and efficient data extraction.
 
 **Step-By-Step Guide:**
 

@@ -1,28 +1,28 @@
 # Insert Salesforce Data
 
-**The "Basic DL" feature offers a user-friendly and efficient way to insert data into Salesforce using a CSV file.** It simplifies the data load process while maintaining accuracy and speed, making it ideal for quick and straightforward data uploads.
+**The "Basic DataLoader" feature offers a user-friendly and efficient way to insert data into Salesforce using a CSV file.** It simplifies the data load process while maintaining accuracy and speed, making it ideal for quick and straightforward data uploads.
 
 **Step-By-Step Guide:**
 
-1. Navigate to the Basic DL application by loging into the nCino application
+1. Navigate to the Basic DataLoader application by logging in to the nCino application.
 2.  Click on the Create button to observe the **"Insert"** option to initiate the creation of the **"Basic DL"** job.
 
     <figure><img src="../../../../../.gitbook/assets/1 - Insert.png" alt=""><figcaption></figcaption></figure>
 3.  Clicking on "Insert" will navigate the flow to the "Login and select object" section.
 
     <figure><img src="../../../../../.gitbook/assets/2 - Insert (3).png" alt=""><figcaption></figcaption></figure>
-4.  Click on login to fetch the object details
+4.  Click on login to fetch the object details.
 
     <figure><img src="../../../../../.gitbook/assets/3 - Insert.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/4 - Insert.png" alt=""><figcaption></figcaption></figure>
-5.  Choose an object anb move to the next screen to choose the file to inset the data.
+5.  Choose an object and move to the next screen to choose the file to insert the data.
 
     <figure><img src="../../../../../.gitbook/assets/5 - Insert.png" alt=""><figcaption></figcaption></figure>
 6.  After uploading the file, click on the "Upload File" option to upload the file into the system.
 
     <figure><img src="../../../../../.gitbook/assets/6 - Insert.png" alt=""><figcaption></figcaption></figure>
-7.  On successful upload of a file, the success message will be displayed
+7.  On successful upload of a file, the success message will be displayed.
 
     <figure><img src="../../../../../.gitbook/assets/7 - Insert.png" alt=""><figcaption></figcaption></figure>
 8.  The application will read the header of the uploaded file and populates the same information on the screen in the section below.

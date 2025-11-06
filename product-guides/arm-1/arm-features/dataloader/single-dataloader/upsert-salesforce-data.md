@@ -5,7 +5,7 @@
 Step-By-Step Guide:
 
 1. **Create Upsert Job**
-   * From the **Dataloader – Basic** page, select **Create new job**.
+   * From the **DataLoader – Basic** page, select **Create new job**.
    *   Choose **Upsert** as the operation type.
 
        <figure><img src="../../../../../.gitbook/assets/1 - Upsert.png" alt=""><figcaption></figcaption></figure>
@@ -33,7 +33,7 @@ Step-By-Step Guide:
    *   The uploaded CSV file appears with a **Pending** status.
 
        <figure><img src="../../../../../.gitbook/assets/6 - Upsert.png" alt=""><figcaption></figcaption></figure>
-   * Additional files can be uploaded, or existing ones removed if required.
+   * Additional files can be uploaded or existing ones removed, if required.
 7. #### Upload Completed
    *   Once processed, the file shows a **Completed** status.
 

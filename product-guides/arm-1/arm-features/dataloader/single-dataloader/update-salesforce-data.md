@@ -1,13 +1,13 @@
 # Update Salesforce Data
 
-The basic DL provides a potent yet easy-to-use application to update data into Salesforce seamlessly.&#x20;
+The basic DataLoader provides a potent yet easy-to-use application to update data into Salesforce seamlessly.&#x20;
 
 **Step-By-Step Guide:**
 
-1.  On logging into the nCIno application, navigate to the Dataloader to initiate the creation of the "Update" job.
+1.  On logging into the nCino application, navigate to the DataLoader to initiate the creation of the "Update" job.
 
     <figure><img src="../../../../../.gitbook/assets/Update - 1.png" alt=""><figcaption></figcaption></figure>
-2.  On the "Login and select object" section of the flow login to the ORGs and select the required objects.
+2.  On the "Login and select object" section of the flow, login to the Orgs and select the required objects.
 
     <figure><img src="../../../../../.gitbook/assets/Update - 2.png" alt=""><figcaption></figcaption></figure>
 
@@ -17,7 +17,7 @@ The basic DL provides a potent yet easy-to-use application to update data into S
 
     <figure><img src="../../../../../.gitbook/assets/Update - 5.png" alt=""><figcaption></figcaption></figure>
 3. After selecting the required object, click **Next** to proceed to the **Field Mapping** section.
-4. Upload the appropriate CSV file at this step to update data into Salesforce seamlessly
+4. Upload the appropriate CSV file at this step to update data into Salesforce seamlessly.
 5.  Either click on "Choose File" or "Drop the file" to upload the CSV.
 
     <figure><img src="../../../../../.gitbook/assets/Update - 6.png" alt=""><figcaption></figcaption></figure>

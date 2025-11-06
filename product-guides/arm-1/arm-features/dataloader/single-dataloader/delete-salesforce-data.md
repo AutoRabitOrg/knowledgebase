@@ -1,14 +1,14 @@
 # Delete Salesforce Data
 
-The following articles provide guidance on using **Single Dataloader** to delete data from Salesforce. Deletion requires a **CSV file** that contains the record IDs of the objects targeted for removal. Once the CSV file is prepared, the Single Dataloader can process the file and perform the deletions in bulk, ensuring accuracy and efficiency.
+The following articles provide guidance on using **Single DataLoader** to delete data from Salesforce. Deletion requires a **CSV file** that contains the record IDs of the objects targeted for removal. Once the CSV file is prepared, the Single DataLoader can process the file and perform the deletions in bulk, ensuring accuracy and efficiency.
 
 Step-By-Step Guide
 
 1. **Delete Job – Login and Select Object**
-   *   From the **Basic** tab in Dataloader, select **Create new job** and choose **Delete**.
+   *   From the **Basic** tab in DataLoader, select **Create new job** and choose **Delete**.
 
        <figure><img src="../../../../../.gitbook/assets/1 - Delete.png" alt=""><figcaption></figcaption></figure>
-   *   The **Create delete process** window opens, prompting to log in and select the Salesforce Org.
+   *   The **Create delete process** window opens, prompting users to log in and select the Salesforce Org.
 
        <figure><img src="../../../../../.gitbook/assets/2 - Delete.png" alt=""><figcaption></figcaption></figure>
 2. **Delete Job – Provide Salesforce Org Details**

@@ -1,16 +1,16 @@
-# Data Loader Configuration
+# DataLoader Configuration
 
-### Data Loader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
+### DataLoader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
 
-The Data Loader module in ARM is key to migrating data between Salesforce orgs. To prevent duplicate record creation during migration, ARM supports data synchronization using an **external ID**. This ensures consistent, reliable data movement between source and destination environments.
+The DataLoader module in ARM is key to migrating data between Salesforce orgs. To prevent duplicate record creation during migration, ARM supports data synchronization using an **external ID**. This ensures consistent, reliable data movement between source and destination environments.
 
 ### Step-By-Step Guide
 
 1. **Create New Configuration**
-   *   From the **Dataloader Configuration** page, click **New Configuration** to initiate a new setup.
+   *   From the **DataLoader Configuration** page, click **New Configuration** to initiate a new setup.
 
        <figure><img src="../../../../.gitbook/assets/1 - Configuring Dataloader (1).png" alt=""><figcaption></figcaption></figure>
-   * This action opens the **New Configuration** page where Salesforce Org details must be defined.
+   * This action opens the **New Configuration** page, where Salesforce Org details must be defined.
    * Configuration creation allows establishing connections between source and destination orgs for data migration.
 2. **Enter Salesforce Org Details**
    *   On the **New Configuration** page, enter a **Name** for the configuration.

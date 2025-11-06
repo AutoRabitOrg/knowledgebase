@@ -8,7 +8,7 @@ Validation rules ensure that data entered into a Salesforce record meets specifi
 
 #### Disable Validation Rules & Workflow Rules
 
-When running a Data Loader job, both the validation rules and workflow rules can be disabled.
+When running a DataLoader job, both the validation rules and workflow rules can be disabled.
 
 * **Validation Rules** – All validation rules associated with the relevant Salesforce objects are temporarily deactivated, allowing data migration without validation errors. Once migration completes, the rules are automatically reactivated.
 * **Workflow Rules** – Similarly, all workflow rules are temporarily disabled to ensure smooth data transfer without unintended triggers. After migration, ARM restores these workflows to their active state.

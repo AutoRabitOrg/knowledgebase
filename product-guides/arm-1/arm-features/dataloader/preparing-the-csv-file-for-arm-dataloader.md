@@ -1,6 +1,6 @@
-# Preparing the CSV file for ARM Data Loader
+# Preparing the CSV file for ARM DataLoader
 
-When creating the CSV file, follow the considerations below to ensure compatibility and efficiency with ARM Data Loader.
+When creating the CSV file, follow the considerations below to ensure compatibility and efficiency with ARM DataLoader.
 
 ***
 
@@ -15,7 +15,7 @@ When creating the CSV file, follow the considerations below to ensure compatibil
 7. Use Excel’s **conditional formatting** to highlight duplicate values in fields that must be unique before saving.
 8. File size must not exceed **10MB**.
 9. For files with **more than 200 rows**, enable **"Use Bulk API"** during **Run Configuration** for better performance.
-10. **Concatenate fields** before upload—Data Loader does not merge multiple columns into one Salesforce field.
+10. **Concatenate fields** before upload—DataLoader does not merge multiple columns into one Salesforce field.
 
 ***
 

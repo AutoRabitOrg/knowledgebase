@@ -2,7 +2,7 @@
 
 **DataLoader Pro** is an advanced ARM capability that enables seamless transfer of data from a source sandbox to a destination sandbox. It automatically manages parent-child relationships, ensuring data integrity across related Salesforce objects. With support for multi-object hierarchies, DataLoader Pro simplifies the migration of complex Salesforce datasets, making the process faster, more reliable, and less prone to manual errors.
 
-### Prerequisites for Data Loader Pro
+### Prerequisites for DataLoader Pro
 
 When running **DataLoader Pro** on objects for the first time, ensure that **DataLoader Configuration** is completed between the same orgs for all objects included in the job. This configuration is a one-time requirement.
 
@@ -12,10 +12,10 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
 1. Log in to ARM application
 2. Click on the PRO option in the left side navigation
-3.  Open **Dataloader ▸ Pro** and click **Create new job**.
+3.  Open **DataLoader ▸ Pro** and click **Create new job**.
 
     <figure><img src="../../../../.gitbook/assets/1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-4.  In **Create Dataloader Job – Login and select object**, choose the **Source Org** and **Destination Org** from the dropdowns.\
+4.  In **Create DataLoader Job – Login and select object**, choose the **Source Org** and **Destination Org** from the dropdowns.\
 
 
     <figure><img src="../../../../.gitbook/assets/2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>

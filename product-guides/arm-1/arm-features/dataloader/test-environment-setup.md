@@ -5,22 +5,22 @@ The ARM test environment enables efficient data transfer from CSV files into des
 
 Step-By-Step Guide:
 
-1.  Navigate to the "Dataloader - Test Environment" by logging into ARM application
+1.  Navigate to the "DataLoader - Test Environment" by logging into ARM application.
 
     <figure><img src="../../../../.gitbook/assets/6 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-2.  Click on the "Create new job" button to initiate the job creation
+2.  Click on the "Create new job" button to initiate the job creation.
 
     <figure><img src="../../../../.gitbook/assets/7 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-3.  Select the required  ORG and click on the "log and fetch objects" button to fetch the objects
+3.  Select the required Org and click on the "Log and fetch objects" button to fetch the objects.
 
     <figure><img src="../../../../.gitbook/assets/8 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/9 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-4.  Observe the object list fetched and select the required object
+4.  Observe the object list fetched and select the required object.
 
     <figure><img src="../../../../.gitbook/assets/10 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-5. Click "NExt" to continue to the "Source Data" section
-6.  Either select the required file or drop the file onto the box, to continue with the data import
+5. Click "Next" to continue to the "Source Data" section.
+6.  Either select the required file or drop the file onto the box to continue with the data import.
 
     <figure><img src="../../../../.gitbook/assets/11 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
 
@@ -314,34 +314,3 @@ Step-By-Step Guide:
     * Click **Delete** to permanently remove the selected jobs, or **Cancel** to keep them.
 
     <figure><img src="../../../../.gitbook/assets/54 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

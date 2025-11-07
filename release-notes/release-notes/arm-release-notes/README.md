@@ -1,5 +1,41 @@
 # ARM Release Notes
 
+## ARM Release notes 25.4.6&#x20;
+
+#### **Release Date**: November 9, 2025  Highlights <a href="#release-date-november-9-2025-highlights" id="release-date-november-9-2025-highlights"></a>
+
+**Salesforce is deprecating the “username + password + security token” login method for SOAP AP**I integrations, and ARM now supports OAuth (JWT) authentication to ensure uninterrupted connectivity from API 65. This release also adds support for Salesforce Metadata API version 65, introduces a CodeScan configuration wizard for easier setup, enhances audit visibility with CEF login logs, and fixes CaseTeamRole handling for multi-word names in environment templates.\
+\
+**Salesforce SOAP Login Deprecation Notice**\
+Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth (JWT Bearer) authentication to ensure uninterrupted connectivity. The migration can be done through Connections → \{{ConnectionName\}} → Migrate to OAuth, followed by the on-screen steps to confirm the connection status as “OAuth (JWT)”.\
+\
+**Salesforce Metadata API Version 65 Support**\
+ARM now supports Salesforce Metadata API version 65, ensuring full compatibility with the latest metadata structures introduced by Salesforce. As part of this release, ARM has validated several metadata types across both DX and Non-DX environments, enabling consistent retrieval, validation, deployment, and CI/CD operations.
+
+| Metadata Type            | Supported | Verified |
+| ------------------------ | --------- | -------- |
+| LightningOutApp          | Yes       | Yes      |
+| InvocableActionExtension | Yes       | Yes      |
+| PresenceDeclineReason    | Yes       | Yes      |
+| PresenceUserConfig       | Yes       | Yes      |
+| QueueRoutingConfig       | Yes       | Yes      |
+| DuplicateRule            | Yes       | Yes      |
+| AnalyticsVisualization   | Yes       | No       |
+| SrvcMgmtObjCollabAppCnfg | Yes       | No       |
+| DgtAssetMgmtProvider     | Yes       | No       |
+| DgtAssetMgmtPrvdLghtCpnt | Yes       | No       |
+
+**CodeScan Configuration Wizard for Repository and Org Mapping**\
+Introduced a guided configuration wizard for CodeScan integration to simplify project and branch mappings across ARM repositories and Salesforce orgs. The system now intelligently pre-matches existing CodeScan projects and branches, allows users to persist mappings, and ensures consistent baseline comparisons across Commit, Merge, CI Jobs, Custom Deployment, and SCA modules. This minimizes redundant project creation and improves scan relevance.\
+\
+**CEF Logger Added for Login Events**\
+ARM now logs both successful and failed user login attempts through the Common Event Format (CEF) logger, improving traceability and compliance visibility for system administrators.\
+(Support Case: 156220)
+
+**Environment Provisioning Template – Multi-Word Case Team Role Names**\
+ARM now handles the creation and execution of environment provisioning templates containing multi-word CaseTeamRole names (e.g., “VMI Specialist”, “Supply Chain Finance”). The template execution correctly supports full role names and ensures accurate reflection in the target Salesforce org.\
+(Support Case: 154640, 152188)
+
 ## ARM Release Notes 25.4.5
 
 **Release Date:** Nov 2nd, 2025\

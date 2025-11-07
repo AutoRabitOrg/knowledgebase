@@ -4,7 +4,7 @@
 
 #### **Release Date**: November 9, 2025  Highlights <a href="#release-date-november-9-2025-highlights" id="release-date-november-9-2025-highlights"></a>
 
-**Salesforce is deprecating the “username + password + security token” login method for SOAP AP**I integrations, and ARM now supports OAuth (JWT) authentication to ensure uninterrupted connectivity from API 65. This release also adds support for Salesforce Metadata API version 65, introduces a CodeScan configuration wizard for easier setup, enhances audit visibility with CEF login logs, and fixes CaseTeamRole handling for multi-word names in environment templates.\
+Salesforce is deprecating the “username + password + security token” login method for SOAP API integrations, and ARM now supports OAuth (JWT) authentication to ensure uninterrupted connectivity from API 65. This release also adds support for Salesforce Metadata API version 65, introduces a CodeScan configuration wizard for easier setup, enhances audit visibility with CEF login logs, and fixes CaseTeamRole handling for multi-word names in environment templates.\
 \
 **Salesforce SOAP Login Deprecation Notice**\
 Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth (JWT Bearer) authentication to ensure uninterrupted connectivity. The migration can be done through Connections → \{{ConnectionName\}} → Migrate to OAuth, followed by the on-screen steps to confirm the connection status as “OAuth (JWT)”.\

@@ -145,3 +145,37 @@ After you create a merge request, you can ask a specific person to review your p
 ### Why is ARM rejecting my merge request at the final step? <a href="#why-is-arm-rejecting-my-merge-request-at-the-final-step" id="why-is-arm-rejecting-my-merge-request-at-the-final-step"></a>
 
 This occurs when merge criteria do not match the ARM settings. Before submitting the merge request, configure it in ARM to match your needs. Make the appropriate modifications under **Admin > Merge Settings**.
+
+### Why is my Merge Request not updating with recent Commits?
+
+#### Overview
+
+When a Merge Request remains in an Open state, pushing new commits to the source branch should automatically update that same Merge Request with the latest revisions. If you notice new commits are not appearing under the “Commits” tab or the MR status stays unchanged, the underlying issue frequently lies with how the repository’s webhook has been configured.
+
+#### Key Point
+
+For the Merge Request to receive updates:
+
+* The remote repository must have a webhook configured.
+* The webhook must be set up to listen for Push Events.
+* This configuration is found under Repository → Webhooks in your version‐control system (e.g., GitHub, Bitbucket, GitLab).
+* Only when the “Push Event” trigger is active will ARM receive notifications and update the open Merge Request accordingly.
+
+#### Symptoms You May See
+
+* The Merge Request shows “Open” but does not list newly added commits in the Commits tab.
+* No new file changes or revision history are reflected, even though developers have pushed updates to the source branch.
+* The status remains stagnant — no automatic update occurs, requiring manual action to refresh or recreate the Merge Request.
+
+#### What to Check
+
+1. Navigate to the repository settings for the repository linked with your Merge Request.
+2. Go to Webhooks and verify:
+   * A webhook exists and is active.
+   * The webhook’s event selection includes Push Events.
+   * The URL is correctly configured to target ARM (or the integrated tool).
+3. Once confirmed, push another commit to the source branch and observe whether it now appears in the existing open Merge Request.
+
+#### Why This Matters
+
+Without the correct webhook configuration, the system lacks visibility of the push event, so the Merge Request remains outdated. Ensuring the webhook is active for push events ensures continuous synchronization between your repository and ARM’s Merge Request view.

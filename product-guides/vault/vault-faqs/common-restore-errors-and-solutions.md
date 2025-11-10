@@ -122,6 +122,13 @@ If the backup configuration is deleted, all its related backup snapshots are als
 1. If the Backup snapshots are available in the storage, i.e., not expired, you can **Replicate** them to another org (Restore is for the same org, which is not possible if the org is decommissioned).
 2. If the configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The Backup will be available in the storage, but it will be in Excel format. Restoring/Replicating, along with the relationships, will be a challenge and must be done manually, which is why we recommend users not delete any configurations unless they are certain they won't be needed in the future.
 
+### How do I download backups?
+
+1. Select the Backup mode and choose your Salesforce Org.&#x20;
+2. Locate the backup you want.&#x20;
+3. Upon clicking the “Download” icon, you will receive a confirmation email containing a download link.
+4. By following this link, you can conveniently view the backup's data size in your browser and proceed to download it to your computer.
+
 ### Where can I find the backup after it expires in Vault?
 
 Once a backup has reached its expiration, it will move to lower tier storage, such as Glacier. The backup will stay there for a month after this, and then it will be permanently deleted. During the time it stays in Glacier, we can retrieve it with the help of SRO and share to customer if required.

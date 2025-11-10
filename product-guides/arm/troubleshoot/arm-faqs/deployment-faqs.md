@@ -188,7 +188,7 @@ For the Merge Request to receive updates:
 
 * The Merge Request shows “Open” but does not list newly added commits in the Commits tab.
 * No new file changes or revision history are reflected, even though developers have pushed updates to the source branch.
-* The status remains stagnant — no automatic update occurs, requiring manual action to refresh or recreate the Merge Request.
+* The status remains stagnant—no automatic update occurs, requiring manual action to refresh or recreate the Merge Request.
 
 #### What to Check
 

@@ -10,9 +10,11 @@ The lists of repositories you have added yourself and any other repositories you
 
 Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitbook/assets/image (1027).png>)icon displayed, and nCino objects configured will have![](<../../../../../.gitbook/assets/image (1028).png>)icon beside their repository under **`Repositories List`** for easier identification.
 
-<figure><img src="../../../../../.gitbook/assets/image (1029).png" alt="" width="231"><figcaption></figcaption></figure>
+<div align="center"><figure><img src="../../../../../.gitbook/assets/image.png" alt="" width="132"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../../../.gitbook/assets/image (1030).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
 
 For each version control repository registered in ARM, the following information or fields are displayed:
 

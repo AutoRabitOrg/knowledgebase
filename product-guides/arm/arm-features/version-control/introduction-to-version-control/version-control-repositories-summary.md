@@ -12,7 +12,7 @@ Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitboo
 
 <div align="center"><figure><img src="../../../../../.gitbook/assets/image (6).png" alt="" width="264"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
@@ -37,7 +37,7 @@ Create a pull request to propose and collaborate on changes to a repository. Thi
 
 Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../external-pull-request/).
 
@@ -51,21 +51,21 @@ The Git tags created or branches registered for the version control repository w
 
 Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](version-control-branch-workflow.md))
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **B. Register a Branch**
 
 Register an existing branch to the current repository. ([LEARN MORE](../))
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 **C. Unregister a Branch**
 
 Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 **D. Sync Branches**
 

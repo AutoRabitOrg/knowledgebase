@@ -18,6 +18,117 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.13
+
+**Release Date: 02 November 2025**
+
+### Summary
+
+CodeScan 25.1.13 is comprised of the following 5 components:
+
+* 4 Rule Enhancements
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### Rule Enhancements
+
+&#x20;**1.  Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
+
+Previously, CodeScan did not raise violations if a method matched the condition:\
+![](../../../../.gitbook/assets/unknown.png)
+
+This exception was originally introduced to reduce noise and was added to our rule logic before Salesforce introduced USER\_MODE. However, with Salesforce’s updated guidance requiring all database operations to consistently enforce permissions, the exemption is no longer valid. Getters can still expose data through bindings, so excluding them would not align with best practices.
+
+Now, DML operations in getter methods that do not enforce permissions (e.g., without USER\_MODE) will correctly raise violations.
+
+{% hint style="info" %}
+Note: The update has been refined to cover all scenarios—we’ve implemented logic to trigger violations for all getter method cases where there is no permission check, SOQL, or DML operation and removed the previous conditional checks. As a result, violations will now be raised for every return type except void (since it doesn’t return any value). Please note that, due to these rule changes, there may be a slight increase/decrease in reported issues for the FLS rule.
+{% endhint %}
+
+We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2. Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
+
+Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case-sensitive. This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase).  However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
+
+Verified the below scenarios and validated that both are working as expected:
+
+* ControllerSuffix = "Controller"
+* ControllerSuffix = "controller"
+
+Further verified the sf:AuraControllerNaming rule by setting ControllerSuffix = “Controller” in first run of Project and then changed ControllerSuffix to “controller.” Both projects triggered the same number of violations based on the provided data.
+
+&#x20;
+
+**3. Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}**
+
+Description:
+
+The God Class rule detects the God Class design flaw using metrics. God classes do too many things and are very big and overly complex. They should be split apart to be more object-oriented.\
+The rule uses the detection strategy described in "Object-Oriented Metrics in Practice".
+
+The God Class rule evaluates classes using the following three key metrics to determine size, dependency, and cohesion:
+
+1. WMC (Weighted Methods Count): Measures the number and complexity of methods in a class. A high WMC indicates that a class has too many methods or overly complex behavior.
+2. ATFD (Access to Foreign Data): Counts how many times a class accesses data from other classes. A high ATFD means the class is overly dependent on external data, reducing modularity.
+3. TCC (Tight Class Cohesion): Represents how closely the methods of a class are related to each other. A low TCC suggests poor internal cohesion, meaning the class handles unrelated responsibilities.
+
+Every violation will include three metrics: (configurable):
+
+* WMC: default > 47
+* ATFD: default > 5
+* TCC: default < 1/3 (33%)
+
+The violations are reported against the entire class.
+
+{% hint style="info" %}
+Note: For more information, please refer to Michele Lanza and Radu Marinescu. _Object-Oriented Metrics in Practice: Using Software Metrics to Characterize, Evaluate, and Improve the Design_\
+_of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80}.
+{% endhint %}
+
+Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**4. Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
+
+We have updated the rule description for the rule "CodeScan Other Rules" rule key.
+
+Updated Description:
+
+This rule detects ESLint rule references written in code comments that are not currently recognized by the plugin. It helps identify placeholder or upcoming rules that may be added in future updates.
+
+We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+**1.  Fixed issue where issue page was not properly loading (under specific condition)**
+
+Several customers have reported that under the specific circumstance of:
+
+Pull request > select any branch/pr > code > open any file and click on any issue message
+
+Users are presented with a blank page instead of being redirected to the issue page.
+
+This issue has been fully remediated with this fix.
+
+Verified that users are now able to navigate to the Rule description page. Also verified that the “Why is this an issue link”  (as well as other associated pages) are all working as expected.
+
+***
+
 ## CodeScan Release 25.1.12
 
 **Release Date: 19 October 2025**
@@ -82,19 +193,19 @@ We have verified the fix via the following scenarios and confirm that Admins are
 1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Admins can also view the records displayed in the correct order under the All tab.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -113,7 +224,7 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
 2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     \
 
@@ -686,9 +797,9 @@ This fix remediates this issue in full.&#x20;
 Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page. \
 The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status) &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="483"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="483"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="486"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="486"><figcaption></figcaption></figure>
 
 2. **URIs are not Valid in decorated SARIF output**
 
@@ -696,9 +807,9 @@ It has been reported that the URLs are not valid in the SARIF file due to spaces
 
 Verified that users are now able to see valid URLs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
 
 3. **Fixed issue where scheduled analyses are not running for SF projects and its comparison branches**
 
@@ -778,26 +889,26 @@ Verified Categories for Project Types in the following scenarios, and have verif
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
     &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 

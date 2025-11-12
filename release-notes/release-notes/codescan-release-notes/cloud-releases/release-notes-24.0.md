@@ -504,7 +504,7 @@ In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” pa
 
 However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified and the issue has been remediated.  The date filter now works as designed and expected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
 
 **6.     Fixed issue with Individual / All Filter on IDE Usage Page** &#x20;
 
@@ -515,7 +515,7 @@ In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” pa
 
 However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

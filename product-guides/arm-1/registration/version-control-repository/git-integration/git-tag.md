@@ -14,7 +14,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
     \
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Go to the **Tags** tab and click on the **Create** button.\
     \
 

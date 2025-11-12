@@ -31,7 +31,7 @@ Create a pull request to propose and collaborate on changes to a repository. Thi
 | `Enable nCino app`     | On selection, the nCino objects will get registered with the current repository.                                                                  |
 | `Pull Request Support` | Create a pull request to propose and collaborate on changes to a repository. This is discussed later.                                             |
 
-<figure><img src="../../../../../.gitbook/assets/image (1031).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2091).png" alt=""><figcaption></figcaption></figure>
 
 #### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
 

@@ -127,6 +127,8 @@ This issue has been fully remediated with this fix.
 
 Verified that users are now able to navigate to the Rule description page. Also verified that the “Why is this an issue link”  (as well as other associated pages) are all working as expected.
 
+<figure><img src="../../../../.gitbook/assets/image (2092).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## CodeScan Release 25.1.12

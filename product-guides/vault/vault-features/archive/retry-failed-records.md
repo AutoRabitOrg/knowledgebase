@@ -8,10 +8,10 @@ The retry failed records feature provides a streamlined way to reprocess only th
 
 1.  After a job completes, the retry option becomes available to reprocess failed records.
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Click the Circular play icon to initiate the retry process.
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. In Retry Summary, selecting ‘Yes' will only attempt to retry “archiving” failed records.

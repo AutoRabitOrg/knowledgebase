@@ -35,14 +35,14 @@ This is an initial step in storing your user's credentials (usually a username, 
 3.  Next, click on **`Create Credential`** from the right navigation bar.\
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. On the next pop-up screen, give a **`Credential name`**.
 5. Choose the **`Credential Type`** as **`Username With Password.`**
 6.  Enter your **`Username`** for the Git host and **API Token** (in the **`Password`** field), and we will store this encrypted. For more information on how to create an API token, see the **Troubleshooting** section on this page.\
     \
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE**: If you are using SSO to log in to your Git Repository, you must Authorize the **Generate API** token. Click on the '**Configure SSO**' dropdown to authorize the generated token.
@@ -60,7 +60,7 @@ To set up a Git repository, follow the steps below:
 2.  Hover your mouse over the **`Settings`** module and click on **`Repositories`**.\
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="232"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="232"><figcaption></figcaption></figure>
 3.  Click on **`Register Repository`**.\
     \
 
@@ -70,7 +70,7 @@ To set up a Git repository, follow the steps below:
     \
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Enter the name of the repository to display it locally.
 6. Paste the **`Repository URL`** from your Git host.
 7. Choose the correct user's **`Credentials`** from the list. To create new credentials, click on the \*\*`+`\*\*icon.

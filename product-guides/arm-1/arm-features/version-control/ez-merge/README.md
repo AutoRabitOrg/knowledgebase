@@ -225,11 +225,12 @@ Use these options to customize and control your pre-validation merge operations,
 3. **Merge Success Criteria**:
    * **All Orgs Success**: The merge will be successful only if all selected Salesforce Orgs pass the validation. This option ensures that changes are consistently valid across all environments.
    * **Any One Org Success**: The merge will be successful if at least one of the selected Salesforce Orgs passes the validation. This option provides flexibility, allowing the merge to proceed even if some orgs do not validate successfully.
-4.  **Skip Members Option**:
+4. **Skip Members Option**:
+   * The skip members option will only be visible if it has been configured. Ensure that this configuration is in place if you intend to use this feature.
 
-    * The skip members option will only be visible if it has been configured. Ensure that this configuration is in place if you intend to use this feature.
+<figure><img src="../../../../../.gitbook/assets/image (2115).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Skip Members Option</p></figcaption></figure>
+
 
 **Different Prevalidate Merge Criteria:**
 

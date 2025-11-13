@@ -101,7 +101,7 @@ Admins can download all user data as CSV.
 1.  In **Settings › Users**, click **Export All Users**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Select fields and click **Export**.\
 
 

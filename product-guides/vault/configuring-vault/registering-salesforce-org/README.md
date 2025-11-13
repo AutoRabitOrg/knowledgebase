@@ -66,7 +66,7 @@ Step-By-Step Guide:
 5. For updating the “User Name” authentication is required, as the login is tied to the ORG, changing the username requires authentication.
 6.  Enter the required “User Name” and click on “AUTHENTICATE” to initiate the authentication.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. On clicking the “AUTHENTICATE” the flow will navigate to the Salesforce login page.
 8.  Observe the username and continue to enter the password.
 

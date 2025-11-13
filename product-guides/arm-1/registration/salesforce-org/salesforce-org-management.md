@@ -85,7 +85,7 @@ Suppose you want to connect your Salesforce Org with Version Control as a **`GIT
 3.  Click **`Test Connection`** to authenticate your connection.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 4. Remember to click on **`Save Mappings`** to save the details, or else you need to repeat the above steps.
 
 In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.&#x20;

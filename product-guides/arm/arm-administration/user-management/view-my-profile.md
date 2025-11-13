@@ -73,28 +73,27 @@ According to the filter set, only specific work items will get fetched. When the
 
 The next step is to map your profile with the Version Control System and Salesforce Org you are using.
 
+<figure><img src="../../../../.gitbook/assets/image (2103).png" alt="" width="214"><figcaption></figcaption></figure>
+
 1. Go to the **`Profile`** section.
-
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="252"><figcaption></figcaption></figure>
-
 2. Scroll down to **`My Salesforce Orgs`**.
 3. Select the **`Salesforce Org`** and assign the **`Salesforce Org User`** to them.
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2104).png" alt=""><figcaption></figcaption></figure>
 
-4. Next, Scroll down to **`My Version Control Mappings`**.
-5. Select the **`Repository`** and assign the user.
+1. Next, Scroll down to **`My Version Control Mappings`**.
+2. Select the **`Repository`** and assign the user.
 
 {% hint style="info" %}
 **Important Note:** If users maintain an individual Version Control branch for every release, then to keep synchronizing with Salesforce Org and the version control branch, they need to map every branch to Salesforce Org. ARM provides a **Skip Mapping** option under **Profile>My Roles** to skip the org mappings part and directly perform commits to overcome this daily routine.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2105).png" alt=""><figcaption></figcaption></figure>
 
 6. Click **`Save`**.
 7. Go to **`Admin > SF Org Mgmt,`** select your org, and scroll down to **`Salesforce Org - Mappings`**.
 8. Select the mapping against the version control that you have set up.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2106).png" alt=""><figcaption></figcaption></figure>
 
-9. Click on **`Save Mappings`**.
+6. Click on **`Save Mappings`**.

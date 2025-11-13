@@ -48,7 +48,7 @@ Note: The update has been refined to cover all scenarios—we’ve implemented l
 
 We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -834,7 +834,7 @@ We uncovered that if the following steps were performed…
 
 …then users receive an error message indicating that an “unknown error occurred.”
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 This issue has been fully remediated in this release.
 
@@ -936,15 +936,15 @@ Verified this enhancement via validating the below scenarios
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 5.  If no file is selected during import, an error occurs.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 6. If the repository key is missing, an import error is triggered.
 7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.\
 

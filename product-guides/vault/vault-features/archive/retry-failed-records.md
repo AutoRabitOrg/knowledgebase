@@ -13,9 +13,9 @@ The retry failed records feature provides a streamlined way to reprocess only th
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. In Retry Summary, selecting ‘Yes' will only attempt to retry “archiving” failed records.
 4. The retry option remains available for 30 days from the time the job is initiated.
 5.  After the retention period elapses, the retry button is disabled (grayed out).
 
-    <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>

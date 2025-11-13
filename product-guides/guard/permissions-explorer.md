@@ -32,7 +32,7 @@ The **Permission Explorer** feature provides deep visibility into Salesforce use
 
     These templates accelerate common security investigations and reduce manual query building.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Quick Explorer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Quick Explorer</p></figcaption></figure>
 
 * **Saved Queries**\
   Any custom queries you’ve created are saved and easily accessible from the Permission Explorer homepage.

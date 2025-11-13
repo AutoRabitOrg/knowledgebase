@@ -91,8 +91,11 @@ For each branch, view the following details:
 
     * When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1038).png" alt="" width="511"><figcaption></figcaption></figure>
-3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../arm-administration/alm-management.md).
+<figure><img src="../../../../../.gitbook/assets/image (2093).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+1. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Admin > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../arm-administration/alm-management.md).
 
 <figure><img src="../../../../../.gitbook/assets/image (1039).png" alt=""><figcaption></figcaption></figure>
 

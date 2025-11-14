@@ -1,5 +1,53 @@
 # ARM Release Notes
 
+## ARM Release notes 25.4.7
+
+Release Date: Nov 16, 2025\
+\
+Highlights: Improved downstream CI chaining, expanded Agentforce support, optimized EZ-Commit performance, and key platform upgrades.
+
+\
+**Downstream CI job chaining enhancement**\
+AutoRABIT now allows downstream CI jobs to trigger even when a parent job completes without identifying artifacts during the delta build process. This removes unnecessary pipeline breaks, eliminates manual intervention, and ensures uninterrupted job chaining, especially for Vlocity and other metadata patterns where no-change builds are common. (This would be available basis only on feature flag).\
+\
+**Expanded Agentforce metadata support**\
+ARM now supports a wider set of Agentforce metadata types across CI, Deployments, and Version Control flows.
+
+| **Agentforce Metadata Type**                         | **Supported** | **Verified** |
+| ---------------------------------------------------- | ------------- | ------------ |
+| GenAiPromptTemplate                                  | Yes           | No           |
+| GenAiPromptTemplateActv                              | Yes           | No           |
+| GenAiPlugin                                          | Yes           | Yes          |
+| GenAiFunction                                        | Yes           | Yes          |
+| GenAiPlanner (API 60 to 63)                          | Yes           | Yes          |
+| ​GenAiPlannerBundle (API 64 and Above)               | Yes           | Yes          |
+| Bot                                                  | Yes           | Yes          |
+| BotVersion                                           | Yes           | Yes          |
+| Custom Apex invoked by agents (ApexClass)            | Yes           | Yes          |
+| Flows used by agents (Flow)                          | Yes           | Yes          |
+| Permission Sets assigned to the Agent User           | Yes           | No           |
+| CustomSite                                           | Yes           | Yes          |
+| Network                                              | Yes           | Yes          |
+| DigitalExperienceBundle                              | Yes           | Yes          |
+| EmbeddedServiceConfig                                | Yes           | Yes          |
+| MessagingChannel                                     | Yes           | Yes          |
+| Flow (specifically the Omnichannel flow for routing) | Yes           | Yes          |
+| Queue                                                | Yes           | Yes          |
+| QueueRoutingConfig                                   | Yes           | Yes          |
+
+\
+**Rollback failure fix for DX CI Jobs involving consecutive RecordTypes and StandardValueSets**\
+A rollback issue caused DX CI Jobs to fail when only RecordTypes and StandardValueSets were selected but CustomLabels were excluded, resulting in a “not found in package.xml” error. The rollback logic has been updated to respect user-selected members, ensuring successful rollback operations even when other components are omitted. Destructive rollback continues to exclude RecordTypes due to Salesforce API limitations.\
+(Support Case: 155931)
+
+**EZ-Commit in-flight fetch optimization**\
+Introduced an in-flight check to prevent repeated fetch calls during EZ-Commit table data loading. The update adds a fetch-state tracker, improves the loading indicator, stabilizes table rendering to occur only after a successful fetch, and resets state cleanly on errors resulting in faster UI responsiveness and reduced redundant API calls.\
+(Support Case: 155994)
+
+**Tomcat upgrade to version 11.0.13**\
+ARM’s application runtime has been upgraded to Tomcat 11.0.13, delivering improved security, better performance, and alignment with the latest Java ecosystem standards.\
+(Support Case: 158573)
+
 ## ARM Release notes 25.4.6&#x20;
 
 #### **Release Date**: November 9, 2025  Highlights <a href="#release-date-november-9-2025-highlights" id="release-date-november-9-2025-highlights"></a>

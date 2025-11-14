@@ -276,4 +276,4 @@ For more information on **Credential Usage** for different types of CI jobs, ref
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](../../ncino/feature-ci-jobs-1/ci-job-results.md) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](broken-reference) page where you can trigger a build for your CI job.

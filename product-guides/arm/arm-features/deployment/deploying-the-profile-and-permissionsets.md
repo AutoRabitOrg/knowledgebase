@@ -60,7 +60,7 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
     <figure><img src="../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
 15. Click **`OK`**.
-16. You will be redirected to the [**`Deployment History`**](../ncino/feature-deployment/feature-deployment-summary-1.md) screen, where you can find the deployment process.
+16. You will be redirected to the [**`Deployment History`**](broken-reference) screen, where you can find the deployment process.
 
 {% hint style="info" %}
 **Important Note:** You can list the previous profile manager labels from the [**`Profile Manager`**](deploying-the-profile-and-permissionsets.md) screen.

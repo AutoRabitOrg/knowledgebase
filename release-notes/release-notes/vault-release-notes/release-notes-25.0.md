@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.2.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date: 19 October 2025**
+**Release Date: 19 November 2025**
 
 #### **Field-Level Comparison Filtering** <a href="#field-level-comparison-filtering" id="field-level-comparison-filtering"></a>
 

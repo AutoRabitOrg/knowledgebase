@@ -1,5 +1,41 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.2.2 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date: 19 October 2025**
+
+#### **Field-Level Comparison Filtering** <a href="#field-level-comparison-filtering" id="field-level-comparison-filtering"></a>
+
+A new enhancement allows users to filter comparison results to include only specific fields during a Compare operation. This improvement helps isolate changes in critical fields while ignoring updates to non-essential system-generated fields, such as _Last\_Login_ timestamps in the User object.\
+This enhancement provides faster, more accurate comparisons by reducing false positives and improving focus on relevant data changes.
+
+#### **Azure Key Vault Integration for Secure Credential Handling** <a href="#azure-key-vault-integration-for-secure-credential-handling" id="azure-key-vault-integration-for-secure-credential-handling"></a>
+
+Vault now integrates with Azure Key Vault to securely store and manage sensitive credentials such as Salesforce tokens, database passwords, and encryption keys.\
+Secrets are no longer stored in application configs and can now be centrally controlled, rotated, and audited, ensuring stronger security and compliance.
+
+#### **Salesforce API Upgrade for Upcoming Platform Releases** <a href="#salesforce-api-upgrade-for-upcoming-platform-releases" id="salesforce-api-upgrade-for-upcoming-platform-releases"></a>
+
+Vault has been upgraded to use the latest Salesforce API versions (v63 & v64) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations—SOAP, REST, Bulk, and Tooling APIs—are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
+
+#### **Enhanced MFA Security for JWT Authentication** <a href="#enhanced-mfa-security-for-jwt-authentication" id="enhanced-mfa-security-for-jwt-authentication"></a>
+
+A fix has been implemented to enforce proper MFA validation during JWT-based login.\
+Previously, users could authenticate without providing the required OTP when MFA was enabled.\
+The updated flow now ensures OTP verification is mandatory, restoring full MFA security compliance.
+
+#### **Stateless Session Management Enforcement** <a href="#stateless-session-management-enforcement" id="stateless-session-management-enforcement"></a>
+
+Spring Security is now explicitly configured to use stateless session management, preventing unnecessary HTTP session creation in our JWT-based REST architecture.
+
+#### **Fix for Backup Schedule Update Failure** <a href="#fix-for-backup-schedule-update-failure" id="fix-for-backup-schedule-update-failure"></a>
+
+Resolved a _502 Bad Gateway_ error that occurred when updating scheduled backup configurations for the **GS Prod** org by optimizing the request payload during save operations.
+
+#### **Security Vulnerability Patch Updates** <a href="#security-vulnerability-patch-updates" id="security-vulnerability-patch-updates"></a>
+
+Addressed and upgraded identified vulnerability patches in the ARVault 25.2 release to ensure strengthened security and compliance.
+
 ## Vault Release Notes 25.2.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 29 October 2025**

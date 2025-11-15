@@ -18,6 +18,295 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.14
+
+**Release Date: 16 November 2025**
+
+### Summary
+
+CodeScan 25.1.14 is comprised of the following 10 components:
+
+* 1 New Feature
+* 3 Rule Enhancements
+* 2 Rule Deprecations
+* 4 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+**1.     New rules to Identify Potential Sensitive Data /PII Fields**
+
+**Description**
+
+These rules identify potential sensitive data and Personally Identifiable Information (PII) fields within the Salesforce Apex code. This helps organizations ensure these fields are handled securely and comply with data privacy regulations.
+
+**Hypothesis:**
+
+By implementing these rules to identify potential sensitive PII fields, CodeScan can identify and address security risks associated with handling sensitive PII data in Salesforce.
+
+CodeScan Sensitive Data Scanning uses regular expression patterns to search for potential sensitive PII field names. It looks for common identifiers listed below and some custom objects/fields such as "name," "social\_security\_number," "credit\_card," or "passport" and determines if they are being assigned string literals or used in an insecure way (exposed in debug).
+
+<table data-header-hidden><thead><tr><th width="225" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Object</td><td valign="top">Fields Likely to Contain PII</td></tr><tr><td valign="top">Contact</td><td valign="top">Birthdate, Department, Email, Fax, FirstName, HomePhone, LastName, MailingAddress, MiddleName, MobilePhone, Name, OtherAddress, OtherPhone, Phone, PhotoUrl, Title</td></tr><tr><td valign="top">Lead</td><td valign="top">Address, Company, Email, Fax, FirstName, Industry, LastName, MiddleName, MobilePhone, Name, Phone, PhotoUrl, Title, Website</td></tr><tr><td valign="top">User</td><td valign="top">Address, CompanyName, Department, Email, Fax, FederationIdentifier, FirstName, FullPhotoUrl, LastName, MiddleName, MobilePhone, Name, Phone, Title, Username</td></tr><tr><td valign="top">Account (Business)</td><td valign="top">BillingAddress, Fax, Name, Phone, PhotoUrl, ShippingAddress</td></tr><tr><td valign="top">Account (Person Account Fields)</td><td valign="top">FirstName, LastName, MiddleName, PersonBirthDate, PersonEmail, PersonHomePhone, PersonMailingAddress, PersonMobilePhone, PersonOtherPhone, PersonTitle</td></tr></tbody></table>
+
+&#x20;
+
+_NOTE: We implemented advanced logic to Ignore Violations on Dummy/Masked data as shown below:_
+
+<table data-header-hidden><thead><tr><th width="172" valign="top"></th><th width="256" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Data Type</td><td valign="top">Original/Real PII (Violation)</td><td valign="top">Dummy/Masked Data (Compliant)</td></tr><tr><td valign="top">Email</td><td valign="top">john.doe@company.com</td><td valign="top">test.user@example.test</td></tr><tr><td valign="top">Phone</td><td valign="top">9876543210</td><td valign="top">5551234567 or 0000000000</td></tr><tr><td valign="top">SSN</td><td valign="top">123-45-6789</td><td valign="top">000-00-0000 or null</td></tr><tr><td valign="top">Credit Card</td><td valign="top">4111111111111234</td><td valign="top">4111111111111111 (Visa test number)</td></tr><tr><td valign="top">Address</td><td valign="top">123 Main Street, New York</td><td valign="top">123 Test Street, Test City</td></tr><tr><td valign="top">Logs</td><td valign="top">System.debug('Email: jane@corp.com')</td><td valign="top">System.debug('Email: [REDACTED]')</td></tr></tbody></table>
+
+**Value/Purpose:**
+
+The purpose of this user story is to enhance data privacy and security within our Salesforce organization. By identifying potential sensitive PII fields, we can Improve data governance and minimize the chances of data breaches.
+
+**Acceptance Criteria**
+
+**Name**: Identify Potential Sensitive PII Fields\
+**Key**: SecurePIIFields\
+**Description**: Certain standard Salesforce objects (such as Contact, Lead, User, Account, Person Account, and Opportunity) contain fields that may hold PII, including names, addresses, phone numbers, emails, birthdates, and other identifiers. These fields must be treated as sensitive data and protected in compliance with privacy and security regulations (e.g., GDPR, CCPA, HIPAA).
+
+{% hint style="info" %}
+NOTE: To fully maximize the value of these rules, you can also configure them to include custom fields as parameters (e.g., SSN, Social\_Security\_Number, Credit\_Card, Passport).
+{% endhint %}
+
+Ensure these fields are handled securely through encryption, masking, and strict access controls to minimize the risk of data exposure or breaches.\
+**Type**: Vulnerability\
+**Severity**: Major\
+**Message**: Potential sensitive PII field detected. Ensure that this field is handled securely.\
+**Tags**: Security\
+**Parameters**:\
+**Name**: sensitiveFields\
+**Description**: A comma-separated list of sensitive custom fields. Add any custom fields you would like to monitor with this rule.
+
+Verified that **sf:SecurePIIFields** rules are being triggered in following scenarios:
+
+* Verified the **sf:SecurePIIFields** rules by activating these rules in a specified Quality Profile. The Project analysis should trigger the violation (Security Hotspot).
+* Verified by giving custom parameters (ssn, credit\_card, passport) and validated that they are working as expected.
+* Verified by sending both string and integer value for credit\_card.
+
+<figure><img src="../../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+### Rule Enhancements
+
+&#x20;**1.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}**
+
+The sf:GodClass rule currently uses fixed threshold values to identify “God Class” design flaws:
+
+* WMC (Weighted Methods Count): > 47
+* ATFD (Access to Foreign Data): > 5
+* TCC (Tight Class Cohesion): < 1/3 (33%)
+
+These thresholds are hard-coded and not configurable. We decided to introduce parameters to allow users to customize these values based on their project requirements. By making these thresholds configurable, users can fine-tune the rule according to their project’s code complexity and quality standards, reducing false positives and improving detection accuracy.
+
+Value / Purpose:
+
+* Enables users to adjust thresholds to better match their codebase.
+* Improves usability and flexibility of the rule.
+* Increases adoption by making the rule adaptable to various team standards.Bottom of Form
+
+<figure><img src="../../../../.gitbook/assets/image (2118).png" alt=""><figcaption></figcaption></figure>
+
+Verified the sf:GodClass by validating that users are able to see the violations as expected for the below scenarios
+
+When users provide the below Threshold values:
+
+* wmc=47, atfd=5, tcc=0.33             Result: Violation
+* wmc=10, atfd=5, tcc=0.50             Result: Violation
+* wmc=60, atfd=10, tcc=0.90          Result: Violation
+* wmc=30, atfd=2, tcc=0.8               Result: Violation
+* wmc=100, atfd=10, tcc=0.2            Result: No violation
+* wmc=9999, atfd=9999, tcc=0      Result: No violation
+* wmc=0, atfd=0, tcc=0                     Result: No violation
+* wmc=0, atfd=0, tcc=1                      Result: Everything violates
+
+<figure><img src="../../../../.gitbook/assets/image (2119).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2120).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2.     Updated the Rule Description and Example for rule “Check for Lightning Migration Issues for Salesforce.com and Force.com Links” {Rule ID: vf:LightningAvoidHardcodedSalesforceDomain}**
+
+This rule was updated with this new description and example:
+
+“URL references may not work as expected in Lightning Experience or if you decide to swap to My Domain. If you decide to use My Domain, you have to replace hard-coded references to your original URL with references to your new domain. Using something like {!Site.BaseUrl} will avoid this hassle.
+
+See: [Considerations Before Transitioning to Lightning Experience](https://resources.docs.salesforce.com/198/latest/en-us/sfdc/pdf/lex_considerations.pdf)”
+
+Example:
+
+<figure><img src="../../../../.gitbook/assets/image (2122).png" alt=""><figcaption></figcaption></figure>
+
+Verified these rule updated by confirming that users are able to see the updated description and the example.
+
+<figure><img src="../../../../.gitbook/assets/image (2123).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**3.     Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**
+
+We recognized that this description was out of date and determined it needed to change to: \
+“The \<strong>/\<b> and \<em>/\<i> tags have exactly the same effect in most web browsers, but there is a fundamental difference between them: \<strong> and \<em> have a semantic meaning, whereas \<b> and \<i> only convey styling information like CSS.
+
+When \<b> can have simply no effect on a device with limited display or when a screen reader software is used by a visually impaired person, \<strong> will:
+
+* Underline the characters on a phone or tablet
+* Speak with lower tone when using a screen reader
+* Display the text as bold in normal browsers
+
+Consequently:
+
+* In order to convey semantics, the \<b> and \<i> tags shall never be used,
+* In order to convey styling information, the \<b> and \<i> should be avoided and CSS should be used instead.
+
+Verified the rule description and confirmed that the updated description which is displayed as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2124).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+### Rule Deprecations
+
+**1.     Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}**
+
+The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of irregular white space are no longer even seen as parsing JavaScript.
+
+Further, we have updated the descriptions for these rules to include: \
+“This rule has been deprecated due to these types of white space being caught by the JavaScript parser before a rule can be fired. Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
+
+Verified the Rule Deprecations of cs-vf:no-irregular-whitespace and cs-js:no-irregular-whitespace and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
+
+<figure><img src="../../../../.gitbook/assets/image (2125).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (2126).png" alt=""><figcaption></figcaption></figure>
+
+
+
+&#x20;**2.   Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
+
+The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of octal escapes are no longer even seen as parsing JavaScript.
+
+Further, we have updated the descriptions for these rules to include:&#x20;
+
+“This rule has been deprecated due to these types of octal escapes being caught by the JavaScript parser before a rule can be fired.  Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
+
+Verified the Rule Deprecation for cs-vf:no-octal-escape and cs-js:no-octal-escape and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
+
+<figure><img src="../../../../.gitbook/assets/image (2127).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2128).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Fixes
+
+**1.     Fixed project deletion issues occurring on WEBHOOK type projects with SFDX/Sonar-Scanner**
+
+Several customers have reported unexpected issue under the specific circumstance of:
+
+1\.      Create a WEBHOOK type empty project.
+
+2\.      Run the analysis for the created empty type project using SFDX/Sonar-Scanner
+
+3\.      The Analysis will be successful (as expected).
+
+4\.      Then create a branch analysis for the same project type.
+
+5\.      Switch the branch analysis to main branch analysis.
+
+6\.      Then delete the project from Project settings.&#x20;
+
+**Outcome:**
+
+Users are able to see that the project has been deleted successfully (expected behavior).
+
+However, if users then search for projects, these users are able to see the project which was deleted previously.  This is not expected behavior.&#x20;
+
+&#x20;We have identified that the root cause of this issue is that the Project is not actually getting deleted when the default branch for a project is changed. This issue has been fully remediated with this fix.
+
+Verified the fix via the following scenarios
+
+* Ran sonar-scanner analysis twice (one with branch) >> switch to other branch >> try deleting project >> user able to view successful message for deletion >> project deleted.
+* Verified with empty webhook project analysis as well.
+
+Verified the below scenarios via the CodeScan APIs:
+
+* Verified Single project deletion and bulk project deletion
+* Verified Postman response - by giving security token and without security token
+* Verified deleting projects without having access
+* Verified deleting old projects.
+
+&#x20;
+
+**2.     Fixed issue where the bulk deletion of analyzed projects fails, while single project deletion works successfully**
+
+We have detected this issue under the following circumstance:
+
+From the Project Management page, deleting a single project after a completed analysis works correctly. However, when multiple analyzed projects are selected and deleted in bulk, the deletion operation fails and throws error as "error": "org.hibernate.TransientPropertyValueException: object references an unsaved transient instance."
+
+This issue has been remediated fully, so that all selected projects (analyzed) are deleted successfully (and the system shows proper confirmation messages (if required).
+
+Verified the Bulk delete option for all project integrations, including comparison branches and regular branches. Confirmed via the following scenarios that users are now able to successfully delete multiple projects at once.
+
+<figure><img src="../../../../.gitbook/assets/image (2129).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (2130).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**3.     Fixed an issue in the rule “Immutable Field,” which was causing false positives {Rule ID: sf:ImmutableField}**
+
+Several customers have reported that the current rule logic incorrectly flags propertyVal as a candidate for final, even though its value can be modified indirectly through a property getter/setter. In the following example, the field propertyVal is updated within the getter of anotherPropertyVal via this.propertyVal = 'test' and subsequently returned:
+
+Example code:
+
+<figure><img src="../../../../.gitbook/assets/image (2131).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**Expected Behavior:**\
+The rule should **not** raise a violation when the private field’s value can be modified through class property accessors (get/set methods) or other internal logic. Such fields are **not immutable** and marking them as final would cause compilation errors.
+
+Verified that the “sf:ImmutableField” is getting triggered only when the private field’s value cannot be modified. Further, we verified the rule behavior using both mutable and immutable field patterns.
+
+<figure><img src="../../../../.gitbook/assets/image (2132).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2133).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**4.     Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
+
+During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
+
+Verified the sf:HotspotTypeReflection rule by activating the rule in a specified Quality Profile. Then, in a subsequent project analysis, validated that the rule is now working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2134).png" alt=""><figcaption></figcaption></figure>
+
+
+
+***
+
 ## CodeScan Release 25.1.13
 
 **Release Date: 02 November 2025**

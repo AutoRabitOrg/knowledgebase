@@ -20,6 +20,10 @@ Resolved an issue where audit fields were incorrectly included during data migra
 
 Resolved an issue where nCino RBC feature deployments intermittently failed with authentication errors despite valid credentials. The fix ensures record type data is properly saved during deployment, and additional loggers have been added to help trace any future occurrences.
 
+#### **Salesforce SOAP Login Deprecation Notice**
+
+Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth (JWT Bearer) authentication to ensure uninterrupted connectivity. The migration can be done through Connections → \{{ConnectionName\}} → Migrate to OAuth, followed by the on-screen steps to confirm the connection status as “OAuth (JWT)”.
+
 ## nCino + **DataLoader** - Release 25.4.5
 
 **Release Date:** Nov2, 2025

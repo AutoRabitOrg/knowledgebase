@@ -1,6 +1,8 @@
 # nCino Release Notes 25.4
 
-## nCino + DL - Release 25.2.7 <a href="#heading-title-text" id="heading-title-text"></a>
+## nCino + DL - Release 25.4.7 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** Nov 16, 2025
 
 **Handling User Data**
 

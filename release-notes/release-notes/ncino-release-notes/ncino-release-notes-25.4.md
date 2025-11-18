@@ -1,5 +1,15 @@
 # nCino Release Notes 25.4
 
+## nCino + DL - Release 25.2.7 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Handling User Data**
+
+A fix was rolled out to make sure the user data such as jobs are handled properly once the user account is deleted from the Super Admin.
+
+**Handling Object Relations**
+
+A fix is provided to make sure the circular relations of objects in the buckets with multiple objects will be handled properly.
+
 ## nCino + D - Release 25.4.6 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** Nov 09, 2025

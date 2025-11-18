@@ -45,7 +45,8 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 3. Enter the **Webhook URL** in the following format:
 
 Example:\
-[https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
+\
+[https://na25.autorabit.com/api/webhook/v2/\<OrgName>/trigger-scm-push-request](https://na25.autorabit.com/api/webhook/v2/%3COrgName%3E/trigger-scm-push-request)
 
 <figure><img src="../../../../.gitbook/assets/image (983).png" alt="Webhook URL configuration in Bitbucket settings" width="563"><figcaption></figcaption></figure>
 

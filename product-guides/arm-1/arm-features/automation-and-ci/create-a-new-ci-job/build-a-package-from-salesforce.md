@@ -6,7 +6,7 @@ The **CI JOBS** screen is best viewed at **80%** zoom in Chrome or Firefox.
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Create a package from a Salesforce org based on a **Start date** and deploy or validate that package in a different [Salesforce org](broken-reference). You can also configure the job to run functional test cases stored in version control.
+Create a package from a Salesforce org based on a **Start date** and deploy or validate that package in a different Salesforce org. You can also configure the job to run functional test cases stored in version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

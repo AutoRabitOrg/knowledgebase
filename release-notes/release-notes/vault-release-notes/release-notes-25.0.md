@@ -36,6 +36,8 @@ Resolved a _502 Bad Gateway_ error that occurred when updating scheduled backup 
 
 Addressed and upgraded identified vulnerability patches in the ARVault 25.2 release to ensure strengthened security and compliance.
 
+***
+
 ## Vault Release Notes 25.2.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 29 October 2025**

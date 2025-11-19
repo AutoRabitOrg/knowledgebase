@@ -1,10 +1,10 @@
 # ARM Release Notes
 
-## ARM Release notes 25.4.7
+## ARM Release Notes 25.4.7
 
-Release Date: Nov 16, 2025\
+**Release Date: 16 November 2025**\
 \
-Highlights: Improved downstream CI chaining, expanded Agentforce support, optimized EZ-Commit performance, and key platform upgrades.
+**Highlights**: Improved downstream CI chaining, expanded Agentforce support, optimized EZ-Commit performance, and key platform upgrades.
 
 \
 **Downstream CI job chaining enhancement**\
@@ -48,9 +48,13 @@ Introduced an in-flight check to prevent repeated fetch calls during EZ-Commit t
 ARM’s application runtime has been upgraded to Tomcat 11.0.13, delivering improved security, better performance, and alignment with the latest Java ecosystem standards.\
 (Support Case: 158573)
 
+***
+
 ## ARM Release notes 25.4.6&#x20;
 
-#### **Release Date**: November 9, 2025  Highlights <a href="#release-date-november-9-2025-highlights" id="release-date-november-9-2025-highlights"></a>
+**Release Date: 9 November 2025**\
+\
+**Highlights**
 
 Salesforce is deprecating the “username + password + security token” login method for SOAP API integrations, and ARM now supports OAuth (JWT) authentication to ensure uninterrupted connectivity from API 65. This release also adds support for Salesforce Metadata API version 65, introduces a CodeScan configuration wizard for easier setup, enhances audit visibility with CEF login logs, and fixes CaseTeamRole handling for multi-word names in environment templates.\
 \
@@ -84,9 +88,11 @@ ARM now logs both successful and failed user login attempts through the Common E
 ARM now handles the creation and execution of environment provisioning templates containing multi-word CaseTeamRole names (e.g., “VMI Specialist”, “Supply Chain Finance”). The template execution correctly supports full role names and ensures accurate reflection in the target Salesforce org.\
 (Support Case: 154640, 152188)
 
+***
+
 ## ARM Release Notes 25.4.5
 
-**Release Date:** Nov 2nd, 2025\
+**Release Date: 2 November 2025**\
 \
 **Highlights:** Improved validation visibility, enhanced deployment reliability, and Data Cloud DevOps support introduced.
 
@@ -122,6 +128,8 @@ Resolved an issue in EZ-Commit where both validation circles appeared green even
 \
 **Caching Issue in EZ-Commit AutoDraft Flow**\
 In version 25.4.4, a cache-related issue caused errors when expanding metadata components in the AutoDraft step of the EZ-Commit flow. Users encountered the message “Cannot invoke 'java.lang.Comparable.compareTo(Object)' because 'k1' is null.”This issue has been resolved in the current release. Metadata components now expand and display their contents correctly without any errors.
+
+***
 
 ## ARM **Release Notes 25.4.4**
 

@@ -1,4 +1,4 @@
-# Configure a webhook in Visual Studio GIT Enterprise
+# Configure a Webhook in Visual Studio GIT Enterprise
 
 {% hint style="info" %}
 After the 25.3.9 release, the structure of the webhook payload URL was updated. Customers need to update the webhook URL in the repository settings of their remote repo. Some customers are still using the old webhook URL containing **autorabitrest**, which should now be replaced with api.
@@ -7,7 +7,7 @@ Example:
 
 Old URL: [https://na25.autorabit.com/**autorabitrest/**&#x77;ebhook/triggerSCMPushrequest](https://na25.autorabit.com/autorabitrest/webhook/triggerSCMPushrequest)
 
-Updated URL: [https://na25.autorabit.com/**api**/webhook/triggerSCMPushrequest](https://na25.autorabit.com/api/webhook/triggerSCMPushrequest)
+Updated URL: [https://na25.autorabit.com/api/webhook/v2/\<OrgName>/trigger-scm-push-request](https://na25.autorabit.com/api/webhook/v2/%3COrgName%3E/trigger-scm-push-request)[st](https://na25.autorabit.com/api/webhook/triggerSCMPushrequest)
 
 Unless you update the Payload URL, you might face pull request/trigger build-on-commit jobs triggering.
 {% endhint %}

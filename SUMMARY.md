@@ -641,7 +641,7 @@
       * [Configure a Webhook in Slack](product-guides/arm-1/arm-features/webhooks/configure-a-webhook-in-slack.md)
       * [Configure a Webhook in Teams](product-guides/arm-1/arm-features/webhooks/configure-a-webhook-in-teams.md)
       * [Configure a Webhook in Visual Studio GIT](product-guides/arm-1/arm-features/webhooks/configure-a-webhook-in-visual-studio-git..md)
-      * [Configure a webhook in Visual Studio GIT Enterprise](product-guides/arm-1/arm-features/webhooks/configure-a-webhook-in-visual-studio-git-enterprise.md)
+      * [Configure a Webhook in Visual Studio GIT Enterprise](product-guides/arm-1/arm-features/webhooks/configure-a-webhook-in-visual-studio-git-enterprise.md)
     * [Version Control](product-guides/arm-1/arm-features/version-control/README.md)
       * [Introduction to Version Control](product-guides/arm-1/arm-features/version-control/introduction-to-version-control/README.md)
         * [Version Control Repositories Summary](product-guides/arm-1/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)

@@ -44,11 +44,11 @@ The **View History** screen will display the detailed summary report of the temp
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (12).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more. \

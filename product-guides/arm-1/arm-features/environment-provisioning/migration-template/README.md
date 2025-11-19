@@ -40,17 +40,22 @@ To create a new migration template, please follow the below steps:
 
 The **View History** screen will display the detailed summary report of the template operation being carried out.
 
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.&#x20;
-
+\
+**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more. \
+\
 **Re-Run** option allows you to run the template once again.&#x20;
+
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.
 
@@ -58,7 +63,7 @@ Click on the **Log** icon to view the log report on the right side of the page.
 
 The following information will be displayed for each template created on the Environment Provisioning History screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 1. **Template Name:** Name of the template along with the template created date/time
 2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template
@@ -72,7 +77,3 @@ The following information will be displayed for each template created on the Env
 10. **Share:** Click on the share button; if you want to share the template with others, users in the org will be able to access it.
 11. **Revoke**: Click on the revoke button; if you don't want to share the template with others, users in the org will not be able to access it.
 12. **View History:** Detailed info on the template, such as the last modified date/time of the template, log details, etc.
-
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -21,7 +21,7 @@ Before registering Git with ARM, there are some prerequisites.
 1.  Ensure you enable the **`Git`** plugin under **`Plugins`** in the **`My Account`** section to use Git for version control.\
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (9).png" alt="" width="289"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (9) (1).png" alt="" width="289"><figcaption></figcaption></figure>
 2. You must have permission in ARM to register a repository.
 3. You must have credentials for the repository you want to access.
 4. You must store these Git credentials in ARM.
@@ -48,7 +48,7 @@ This is an initial step in storing your user's credentials (usually a username, 
 **NOTE**: If you are using SSO to log in to your Git Repository, you must Authorize the **Generate API** token. Click on the '**Configure SSO**' dropdown to authorize the generated token.
 {% endhint %}
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Click **`Save`**.
 
@@ -60,7 +60,7 @@ To set up a Git repository, follow the steps below:
 2.  Hover your mouse over the **`Settings`** module and click on **`Repositories`**.\
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="232"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="232"><figcaption></figcaption></figure>
 3.  Click on **`Register Repository`**.\
     \
 
@@ -70,7 +70,7 @@ To set up a Git repository, follow the steps below:
     \
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Enter the name of the repository to display it locally.
 6. Paste the **`Repository URL`** from your Git host.
 7. Choose the correct user's **`Credentials`** from the list. To create new credentials, click on the \*\*`+`\*\*icon.

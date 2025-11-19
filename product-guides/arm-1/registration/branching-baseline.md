@@ -17,12 +17,12 @@ Components are retrieved and committed from a Salesforce org to a version contro
 2.  Hover your mouse over the **`Settings`** module and click on **`Branching Baseline`**.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt="" width="233"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="233"><figcaption></figcaption></figure>
 3.  From the Branching Baseline screen, click on New Branching Baseline.\
     \
 
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -33,7 +33,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
        \
 
 
-       <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** For Version Control registered in the SFDX structure, specify the Source Folder from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the Package Directory under the sfdx-project.json file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/salesforce-dx-metadata-format).
@@ -58,7 +58,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
 
 **More Options**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Info: This will give information about the Salesforce Org and the Version Control Repository/ Branch selected for the Branching Baseline operation.&#x20;
 2. Revision #: View the revision generated at the Version Control along with the filename status. You can even download the report if required.&#x20;

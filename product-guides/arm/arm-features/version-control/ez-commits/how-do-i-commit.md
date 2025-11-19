@@ -72,7 +72,7 @@ Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto
 * You can create a review of selected artifacts or a module or collection.&#x20;
 * You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
 * When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below: \
-  ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+  ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 {% endhint %}
 
 To view changes to Salesforce metadata, edit them, and see the impact to ensure that your changes are correct, follow these steps:

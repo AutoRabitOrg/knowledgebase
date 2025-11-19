@@ -39,7 +39,7 @@ Obtain an API key from Testim Salesforce (available on _Pro_ accounts). Copy the
 
 Open the [**Testim.io Public API**](https://editor.swagger.io/?url=https://raw.githubusercontent.com/testimio/public-openapi/main/api.yaml) in Swagger. Select the remote-execution endpoint that matches what you want to run—Test, Test Plan, Test Suite, or Test Label—and copy the sample JSON payload.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tricentis Swagger execution endpoint"><figcaption><p>Execution endpoint in Swagger</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tricentis Swagger execution endpoint"><figcaption><p>Execution endpoint in Swagger</p></figcaption></figure>
 
 ### 3 — Configure the callout in AutoRABIT
 

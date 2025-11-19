@@ -220,11 +220,8 @@ There are a few ways to run your scan. The first is using our **SFDX plugin** (t
     ```
 3.  Run the following command:
 
-    {% code overflow="wrap" %}
-    ```
-    sfdx codescan:run --token <token> --projectkey my-project-key --organization default-organization --server https://your.server.url
-    ```
-    {% endcode %}
+    <pre data-overflow="wrap"><code>sfdx codescan:run --token &#x3C;token> --projectkey my-project-key --organization default-organization --server https://your.server.url
+    </code></pre>
 
 The [Organization Key](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys) above will work for the Community edition of SonarQube™ but may need to be edited depending on your setup using a paid edition.
 
@@ -266,11 +263,8 @@ For more instructions on setting up the **SonarQube™ ant plugin**, see [https:
 6. Open a command prompt and navigate into _**`/runner/my-project`**_
 7.  Run the following command:
 
-    {% code overflow="wrap" %}
-    ```
-    ant -f ../antbuild.xml analyse
-    ```
-    {% endcode %}
+    <pre data-overflow="wrap"><code>ant -f ../antbuild.xml analyse
+    </code></pre>
 
 {% hint style="info" %}
 **Note:** If the Anyone group is not granted **Execute Analysis** permission, or if the SonarQube™ instance is secured (**`sonar.forceAuthentication property`** is set to **`true`**), a user whose credentials have **`Execute Analysis`** permission has to be provided through the **`sonar.login`** and **`sonar.password properties`**.

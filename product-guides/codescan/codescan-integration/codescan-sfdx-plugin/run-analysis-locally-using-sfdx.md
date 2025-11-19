@@ -18,11 +18,8 @@ To run the code analysis manually using our CodeScan Plugin and Salesforce CLI, 
    * Open **Bash CLI** like **Git Bash**, etc.
    *   Now, go to the folder with the project sources you want to run a scan on and enter the command as shown below:
 
-       {% code overflow="wrap" fullWidth="false" %}
-       ```
-       sfdx codescan:run --token <token> --projectkey <project key>> --organization <organization key>
-       ```
-       {% endcode %}
+       <pre data-overflow="wrap" data-full-width="false"><code>sfdx codescan:run --token &#x3C;token> --projectkey &#x3C;project key>> --organization &#x3C;organization key>
+       </code></pre>
 
 {% hint style="info" %}
 **Note:** To find your **Project Key** and the **Organization Key**, click on the respective links below:
@@ -42,19 +39,14 @@ Project keys differ from project to project as the **organization** and **projec
    * Replace **Token**
    *   Replace your **server name** (if applicable).
 
-       {% code overflow="wrap" fullWidth="true" %}
-       ```
-       sfdx codescan:run --token <token> --projectkey <project key>> --organization <organization key> --server <Server Name>
-       ```
-       {% endcode %}
+       <pre data-overflow="wrap" data-full-width="true"><code>sfdx codescan:run --token &#x3C;token> --projectkey &#x3C;project key>> --organization &#x3C;organization key> --server &#x3C;Server Name>
+       </code></pre>
 6.  To view a list of **parameters** and **flags** which you can use, run the following command: **`sfdx help codescan:run`**
 
-    {% code overflow="wrap" fullWidth="false" %}
-    ```javascript
-    USAGE:
+    <pre class="language-javascript" data-overflow="wrap" data-full-width="false"><code class="lang-javascript">USAGE:
 
-    $ sfdx codescan:run [name=value...] [-s <string>] [-o <string>] [-k <string>] [-t <string>] [-u <string>] [-p
-      <string>] [--noqualitygate] [--javahome <string>] [--nofail] [--qgtimeout <integer>] [--json] [--loglevel
+    $ sfdx codescan:run [name=value...] [-s &#x3C;string>] [-o &#x3C;string>] [-k &#x3C;string>] [-t &#x3C;string>] [-u &#x3C;string>] [-p
+      &#x3C;string>] [--noqualitygate] [--javahome &#x3C;string>] [--nofail] [--qgtimeout &#x3C;integer>] [--json] [--loglevel
       trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
     OPTIONS
@@ -89,5 +81,4 @@ Project keys differ from project to project as the **organization** and **projec
 
     --qgtimeout=qgtimeout              Timeout in seconds to wait for
                                        Quality Gate to complete (default 300)
-    ```
-    {% endcode %}
+    </code></pre>

@@ -33,9 +33,7 @@ Follow these steps to create a module in AutoRABIT:
 
     <figure><img src="../../.gitbook/assets/image (1440).png" alt="Select metadata"><figcaption></figcaption></figure>
 
-    {% hint style="info" %}
-    **Important:** Avoid adding metadata types that already belong to another module in the same branch.
-    {% endhint %}
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Important:</strong> Avoid adding metadata types that already belong to another module in the same branch.</p></div>
 5.  **Review selection**\
     Click **Selected Members** to view a summary of chosen metadata, then click **OK**.
 

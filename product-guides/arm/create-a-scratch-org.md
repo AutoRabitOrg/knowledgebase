@@ -88,9 +88,7 @@ Choose your deployment source—**Salesforce Org**, **Version Control**, or an e
     <figure><img src="../../.gitbook/assets/image (1426).png" alt="Deployment filter screen 2"><figcaption></figcaption></figure>
 7.  **Deployment Filters** include Ignore Warnings, Validate Only, Take Backup, etc.
 
-    {% hint style="info" %}
-    **Note:** _Standard fields_ are **not** supported for **Ignore Missing Visibility Settings**.
-    {% endhint %}
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong> <em>Standard fields</em> are <strong>not</strong> supported for <strong>Ignore Missing Visibility Settings</strong>.</p></div>
 8. Optionally enable **Static Code Analysis**.
 9. Apply **SEARCH / SUBSTITUTE** rules if configured.
 10. Add **Deployment Notes**.

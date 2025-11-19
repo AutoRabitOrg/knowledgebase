@@ -44,9 +44,7 @@ Fill in the **Package Version** section:
 2. **Version Description** – brief summary.
 3.  **Version Number** – format **major.minor.patch.build** (e.g., `1.2.3.4`).
 
-    {% hint style="info" %}
-    The version must contain **four** dot-separated numbers. Any other format causes an error.
-    {% endhint %}
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>The version must contain <strong>four</strong> dot-separated numbers. Any other format causes an error.</p></div>
 4. **Installation Key** – optional password to protect the package.
 5. **Tag** – release label such as `Release 1.0.0`.
 

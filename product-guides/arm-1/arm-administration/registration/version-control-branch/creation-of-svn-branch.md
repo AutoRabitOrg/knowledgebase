@@ -15,9 +15,7 @@ Creating or registering a Subversion (SVN) branch in AutoRABIT (ARM) lets you is
     <figure><img src="../../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 5.  In the **Create Branch** dialog, enter a **Display Name**.
 
-    {% hint style="info" %}
-    **Allowed characters** – avoid **"//" \ , \* ? & ' " < > | \` \~ ( )** and **spaces** in the **Display Name**.
-    {% endhint %}
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Allowed characters</strong> – avoid <strong>"//" \ , * ? &#x26; ' " &#x3C; > | ` ~ ( )</strong> and <strong>spaces</strong> in the <strong>Display Name</strong>.</p></div>
 6. Choose the appropriate **Credential** from the drop-down.
 7. In **Branch URL**, append the new branch path to the parent branch (e.g., `branches/Development`).
 8. **Parent URL** auto-populates from the repo; edit only if necessary.

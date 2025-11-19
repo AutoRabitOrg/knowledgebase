@@ -235,11 +235,10 @@ Use these options to customize and control your pre-validation merge operations,
 **Different Prevalidate Merge Criteria:**
 
 1. **Generate Diff Report:** Select this option to auto-generate a code difference report on completion of the commit.
-2.  **Run Static code Analysis:** Select this option if you want to run a [static code analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Similar to "**Generate Diff Report,"** this option will also be auto-selected by default if the criteria are set globally (under the **My Account > Commit Validation - Approval Settings** section).
+2. **Run Static code Analysis:** Select this option if you want to run a [static code analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Similar to "**Generate Diff Report,"** this option will also be auto-selected by default if the criteria are set globally (under the **My Account > Commit Validation - Approval Settings** section).
+   * For _ApexPMD, Checkmarx, CodeScan,_ and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
 
-    * For _ApexPMD, Checkmarx, CodeScan,_ and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components.
-
-    <figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Prevalidate Merge</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2135).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: Whenever a code analysis is triggered, ARM will wait up to **5** hours for a response. If the code analysis is not completed within 5 hours, ARM will throw a timeout exception error. This applies to all SCA tools.
@@ -263,17 +262,17 @@ Use these options to customize and control your pre-validation merge operations,
 * **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.&#x20;
 * **Apex Test Level:** Choose your [Apex Test Level](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/deployment/apex-unit-tests) to validate your merge.
 
-<figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Apex Test Level</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2136).png" alt=""><figcaption></figcaption></figure>
 
 * **Apex Test Class selection:**&#x20;
 
 Select Org 1 by clicking on the drop-down of destination:
 
-<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Org 1 selection</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2137).png" alt=""><figcaption></figcaption></figure>
 
 Select Org 2 by clicking on the drop-down of destination:
 
-<figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Org 2 selection</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2138).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** If your validate deployment fails on an org, it shows an (<mark style="color:red;">**X**</mark>). If it passes, it shows a (<mark style="color:green;">**✓**</mark>).
@@ -295,16 +294,17 @@ You can update the status of the ALM work item through the **ALM Integration** s
 1. Select the **ALM label**.
 2. Select the **Project** and the **sprint** for which the commit is planned.
 3. Select the **Work Item,** and the **Current Status** for the work item gets auto-populated. This allows you to update the ALM for the Merge operation with or without changing the current work item status. Click on the **+** icon to add another work item and update its status.
-
-<figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add another work item</p></figcaption></figure>
-
 4. Click on either **Dry Run** or **Validate & Merge**.
+
+<figure><img src="../../../../../.gitbook/assets/image (2139).png" alt=""><figcaption></figcaption></figure>
 
 | Dry Run                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Validate & Merge                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <ul><li>The dry run option will show the user how the merge will execute without making any changes.</li><li>Don’t merge anything; show what would be done.</li><li>Lists what will be pushed to the Integration branch from the Dev branch.</li><li>The status shows as <strong>"MERGE NOT COMMITTED."</strong></li><li>View the conflicts if there are any during the dry run merge. Later, it will ask to initiate a merge in the <strong>View Conflict</strong> screen, which gets converted to a standard validation merge.</li></ul> | <ul><li>Changes are validated and later merged from the Dev branch to the Integration branch without committing to the remote repository.</li><li>The difference report and the static code analysis report are published based on the delta and shared with the user.</li><li>The admin/reviewer can approve or reject the changes.</li><li>The user can merge the changes to the remote repository if approved.</li></ul> |
 
-<figure><img src="../../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Pre-validate Merge</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2140).png" alt=""><figcaption></figcaption></figure>
+
+
 
 5. A notification appears that the merge request has been submitted for Entire Branch and Single Revision merge types. Click **OK**, and you will be auto-redirected to the **Commits** screen, where you can find the status of the initiated merge.
 

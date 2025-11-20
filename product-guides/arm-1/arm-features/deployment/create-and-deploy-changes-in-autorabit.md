@@ -7,16 +7,18 @@ The deployment process allows you to quickly and safely transfer new development
 #### Configuring Deployment Details <a href="#id-1-configuring-deployment-details" id="id-1-configuring-deployment-details"></a>
 
 1. Log in to your ARM account.
-2. Click on the **`Deployment`** module.
-3. Click on **`New Deployment`**.
+2. Click on the **Create**.
+3.  Click on **`Deployment`**.\
+    \
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (2171).png" alt="" width="136"><figcaption></figcaption></figure>
 4. On the **`New Deployment`** page, choose the basic parameters of your deployment, including the source org from which you'll be retrieving output and the destination org from which you'll be deploying the retrieved components.
 5. Give your deployment a name.
-6. Choose the deployment method from the **`Deployment From`** dropdown to carry out the deployment. There are approx. 10-14 different deployment ways to carry out your deployment in the ARM application.
+6.  Choose the deployment method from the **`Deployment From`** dropdown to carry out the deployment. There are approx. 10-14 different deployment ways to carry out your deployment in the ARM application.\
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1).png" alt="" width="315"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (2172).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** Only the new release labels for which the package has been successfully prepared will be visible in the **Release Label** dropdown if you choose **Deployment From:** **Release Label**. Release labels created before the **22.3** release will not be visible under this dropdown yet. Please go to the **Release Label Summary** screen and click **Create Artifact** to prepare the package. Then, the release label will be available to use for deployment.
@@ -28,11 +30,8 @@ The deployment process allows you to quickly and safely transfer new development
 8. Select your **`Source Org/`**[**`Version Control`**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/).
 9. Select your **`Destination Org`**.
 10. Choose the **`Deployment Type:`**
-
     * **`Selective Deployment`** is a deployment in which only the metadata types you’ve selected are deployed from the source org to the destination org.
     * **`Full Deployment`** transfers all metadata types in the source org to the destination org. However, a few metadata types, such as dynamic package XML files, can’t be retrieved in this process. In this case, the irretrievable data types will generate warnings during deployment, but ARM will continue the deployment and transfer the retrievable metadata types.
-
-    <figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1).png" alt="" width="444"><figcaption></figcaption></figure>
 
 #### Metadata Filter (optional) <a href="#id-2-metadata-filter-optional" id="id-2-metadata-filter-optional"></a>
 
@@ -42,28 +41,33 @@ The **`Metadata Filter`** section allows you to specify filters limiting the [me
 
 This section lets you control how the profile settings and permissions are passed on from the source org during the deployment. Remember that in **API version 40.0 and later**, when the user deploys retrieved permission set output from one org to another, the metadata in the deployment replaces the target org metadata. In **API version 39.0 and earlier**, the deployment contents are merged with the current org data.
 
-* **`Deploy Profile Access Settings for selected components only:`** Select this check box to refactor the profile settings based on the selected components. Refactored profiles are deployed along with the selected components.
+*   **`Deploy Profile Access Settings for selected components only:`** Select this check box to refactor the profile settings based on the selected components. Refactored profiles are deployed along with the selected components.\
+    \
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (2173).png" alt=""><figcaption></figcaption></figure>
 
 #### Selection of Metadata <a href="#id-4-selection-of-metadata" id="id-4-selection-of-metadata"></a>
 
-Once you're done with the initial setup for your deployment, click on **`Retrieve Metadata`**. You'll be redirected to the metadata selection screen, which allows you to select the metadata components for deployment. You can also use the search filter to find particular metadata types quickly.
+Once you're done with the initial setup for your deployment, click on **`Retrieve Metadata`**. You'll be redirected to the metadata selection screen, which allows you to select the metadata components for deployment. You can also use the search filter to find particular metadata types quickly.\
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-The selected components will be listed under the **`Selected Items`** tab.
+<figure><img src="../../../../.gitbook/assets/image (2174).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1).png" alt="" width="423"><figcaption></figcaption></figure>
+The selected components will be listed under the **`Selected Items`** tab.\
+\
+![](<../../../../.gitbook/assets/image (2175).png>)
 
 **Note:** Salesforce does not display inactive custom metadata components so they will not be displayed in the deployment list of metadata components. If inactive metadata components are required for the deployment, please refer to the following steps:
 
 1. **Activate Inactive Components:** If certain components are required for deployment but are currently inactive, consider activating them in the latest Salesforce account if the option is still available, before initiating the deployment process. This can ensure that all necessary components are included in the deployment.
 2. **Consult Salesforce Documentation:** For more specific guidance and troubleshooting, refer to the Salesforce documentation on metadata deployment. The documentation provides detailed information on deployment settings, component visibility, and best practices for deploying metadata. However, it is important to note that the specific behavior of inactive custom metadata not being visible may be consistent with Salesforce's intended design, even though it is not explicitly mentioned in the documentation. **Please note** that the specific steps and solutions may vary depending on your Salesforce setup and configuration. It is recommended to consult your Salesforce administrator or support team for assistance tailored to your specific scenario.
 
-You’ll see the list of metadata components in your target org but not in your source under the **`Destructive Items`** tab. Check the box next to a component you want to delete, and it will be deleted when you deploy. For a detailed explanation of destructive changes, refer to the article: [Destructive Changes](../../../arm/arm-features/deployment/destructive-changes.md).
+You’ll see the list of metadata components in your target org but not in your source under the **`Destructive Items`** tab. Check the box next to a component you want to delete, and it will be deleted when you deploy. For a detailed explanation of destructive changes, refer to the article: [Destructive Changes](../../../arm/arm-features/deployment/destructive-changes.md).\
+\
 
-<figure><img src="../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2177).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Once you’ve chosen the metadata members to include in the deployment, select one of the two options at the bottom of the page:
 

@@ -100,7 +100,7 @@ In another scenario, let us assume you also like to configure JIRA (ALM tool) wi
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Salesforce Org - Skip Members <a href="#salesforce-org-skip-members" id="salesforce-org-skip-members"></a>
 
@@ -126,7 +126,7 @@ This section is about configuring the default Apex Class for your Salesforce Org
 \
 
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Salesforce Org - User Permissions <a href="#salesforce-org-user-permissions" id="salesforce-org-user-permissions"></a>
 

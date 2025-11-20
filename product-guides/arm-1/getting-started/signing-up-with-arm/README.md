@@ -44,7 +44,7 @@ When you are done working in ARM and wish to log out of the system, click your u
 \
 
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 

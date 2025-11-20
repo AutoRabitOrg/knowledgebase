@@ -23,7 +23,7 @@ The merge process is generally performed when a feature is ready for user testin
 1. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) module and select **`Commits.`**
 2. Click on the **`New EZ-Merge`** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **`New EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
 
@@ -33,7 +33,7 @@ The merge process is generally performed when a feature is ready for user testin
 2. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 3. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **`Merge Type`** from the dropdown:
    * `Entire Branch`&#x20;
@@ -42,7 +42,7 @@ The merge process is generally performed when a feature is ready for user testin
    * `Release Label`
    * `ALM Label`
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 
@@ -54,15 +54,15 @@ This option will merge the entire change from one branch to another branch.&#x20
 
 * **`Delete Source Branch:`** Once you have successfully merged the changes from the source branch to another, you can permanently delete the source branch. Select the **`Delete Source Branch`** checkbox to delete the source branch, which auto-populates whenever 'Entire Branch' as a merge type is selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **B. Single Revision**
 
 Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../../../.gitbook/assets/image (7) (1) (1).png>)
 
 **`Get Latest HEAD`** points out the last commit in the current checkout branch.
 
@@ -70,7 +70,7 @@ There could be a situation where you have entered an incorrect revision number a
 
 You can also use the **`'Get All Revisions'`** button to get all the revisions and check for your revision from the list.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **C. Commit Label**
 
@@ -78,11 +78,11 @@ Select the commit labels created while committing to the Version Control System.
 
 For example, **DXTES-19\_EZ-Commit:** here, **DXTES-19** indicates the _commit label_ _name_, and **EZ-Commit** denotes the label created during the **EZ-Commit** process.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2107).png" alt=""><figcaption></figcaption></figure>
 
@@ -208,7 +208,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 1. **Back Merge Indicator**:
    * After performing the merge, you will see an indicator confirming that the validation is being skipped automatically as it is a back merge.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Prevalidate Merge <a href="#prevalidate-merge" id="prevalidate-merge"></a>
 

@@ -12,7 +12,7 @@ Only **Org Administrators** can create or modify users.
 3.  Click **Add User**.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Complete **User Details** and assign a **Role Permission Set** that matches the person’s responsibilities.
 5. Choose one of the activation options:
    * **Save & Activate** – sends the invitation email immediately.

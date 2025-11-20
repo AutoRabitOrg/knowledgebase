@@ -337,7 +337,7 @@ Note: The update has been refined to cover all scenarios—we’ve implemented l
 
 We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -382,7 +382,7 @@ _of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80
 
 Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -396,11 +396,11 @@ This rule detects ESLint rule references written in code comments that are not c
 
 We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -484,19 +484,19 @@ We have verified the fix via the following scenarios and confirm that Admins are
 1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Admins can also view the records displayed in the correct order under the All tab.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -515,12 +515,12 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
 2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     \
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1100,7 +1100,7 @@ Verified that users are now able to see valid URLs in the SARIF report even when
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
 
 3. **Fixed issue where scheduled analyses are not running for SF projects and its comparison branches**
 
@@ -1110,7 +1110,7 @@ This fix remediates this issue in full.
 
 Verified the fix and validated that the scheduled jobs are now running without issue (as expected).
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **Fixed issue with deleting branches in projects using Salesforce Integration**
 
@@ -1123,7 +1123,7 @@ We uncovered that if the following steps were performed…
 
 …then users receive an error message indicating that an “unknown error occurred.”
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
 
 This issue has been fully remediated in this release.
 
@@ -1195,11 +1195,11 @@ Verified Categories for Project Types in the following scenarios, and have verif
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -1218,27 +1218,27 @@ Verified this enhancement via validating the below scenarios
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  If no file is selected during import, an error occurs.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. If the repository key is missing, an import error is triggered.
 7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1969,7 +1969,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -1997,13 +1997,13 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -2689,7 +2689,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

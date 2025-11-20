@@ -17,12 +17,12 @@ Use ARM CI intelligence to extract and package from a [Version Control](https://
 
 1. Choose the tile: **Deploy SFDX source from** [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)
 
-<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2251).png" alt=""><figcaption></figcaption></figure>
 
-4. On the next screen, give the job a descriptive name in the **Job Name** field.
-5. Add a brief **description** of the current CI job.
-6. To group your CI job for easier identification, choose the group from the dropdown. You can create a new group using the **"+"** symbol and assign your current and further CI jobs to such a group.
-7. Here, the user interface is separated into different sections, we will cover each one of them separately.
+1. On the next screen, give the job a descriptive name in the **Job Name** field.
+2. Add a brief **description** of the current CI job.
+3. To group your CI job for easier identification, choose the group from the dropdown. You can create a new group using the **"+"** symbol and assign your current and further CI jobs to such a group.
+4. Here, the user interface is separated into different sections, we will cover each one of them separately.
 
 ### Build <a href="#build" id="build"></a>
 
@@ -86,7 +86,7 @@ Under the **Build** section, fill in the below details:
 7. **Prepare Destructive Changes:** Pre-destructive changes option will allow the users to delete unwanted fields or metadata components from their destination Salesforce org before the deployments begin.
 8. **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
 
-<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2252).png" alt=""><figcaption></figcaption></figure>
 
 **For ApexPMD and Checkmarx:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
@@ -94,7 +94,7 @@ Under the **Build** section, fill in the below details:
 
 **For CodeScan and SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1).png" alt="" width="345"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2253).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported Metadata types:** Analysis is performed on all the metadata types that are supported. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
 * **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components&#x20;
@@ -192,7 +192,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
 
 To have a better understanding of the post-activity sequence, let's take the below scenario: User **'XYZ'** would like to trigger one of the CI Job through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, dataloader job and triggering another CI Job as well. Therefore, **XYZ** user navigate to the **Deploy > On Successful Deployment** section and select the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.
 
-<figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2244).png" alt=""><figcaption></figcaption></figure>
 
 However, **XYZ** would like to run the above activities in the following sequence:
 
@@ -202,7 +202,7 @@ However, **XYZ** would like to run the above activities in the following sequenc
   Therefore, a workflow sequence is required to run the activities based on his requirement. This can be achieved using **Set Sequence For Post Activities- On Success** option. So, **XYZ** will select Dataloader as a first activity, so this will be the initial task that will get carried out. If the Dataloader operation is successfully performed, the next task will be to trigger another CI Job process. Therefore, **XYZ** will select the CI Job checkbox as the next activity. However, if the Dataloader task failed due to any reason, the post activities stop there itself and no further actions will be carried out.\
   Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will get executed.
 
-<figure><img src="../../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2245).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -230,7 +230,7 @@ There are different ways to fetch the test cases:
 * AccelQ (if AccelQ plugin is installed in ARM)
 * Provar (if Provar plugin is installed in ARM)
 
-<figure><img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1).png" alt="" width="391"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2246).png" alt=""><figcaption></figcaption></figure>
 
 1.  **TAF Labels:** The test labels that are present in the ARM TAF module get displayed. Select the test cases as per your requirement.
 
@@ -252,12 +252,13 @@ There are different ways to fetch the test cases:
     * **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment gets failed.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
+<figure><img src="../../../../../.gitbook/assets/image (2247).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
+1. **AccelQ:** Select the Fetch Test Cases as **'AccelQ'**.  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
-4.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
+<figure><img src="../../../../../.gitbook/assets/image (2248).png" alt=""><figcaption></figcaption></figure>
+
+1.  **Provar:** Select Fetch Test Cases From as **'Provar'**.
 
     * Select your **Version Control Repository** and the **Branch** and provide the **provar test cases path**.
     * **Test Cases Root Path**: Enter the test case root path till the **.testproject** file
@@ -269,7 +270,7 @@ There are different ways to fetch the test cases:
     2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage is successful. This leads to failure of the deployment of the test cases fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment gets failed.
     3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2249).png" alt=""><figcaption></figcaption></figure>
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
@@ -279,7 +280,7 @@ The Callout URL lets you call another service from the ARM application via an HT
 
 Send email notifications to selected users' emails on the success or failure of a build. However, if the number of CheckIn users is more than 50, then the notification is not sent.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2250).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule  <a href="#schedule" id="schedule"></a>
 

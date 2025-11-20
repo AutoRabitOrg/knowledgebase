@@ -11,29 +11,29 @@ Use ARM to back up changes from your Salesforce org to your [version-control](ht
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Log in to ARM.
-2.  From the top navigation bar, select **`Create New > New CI Job`**.
+2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1216).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New CI Job</p></figcaption></figure>
-3.  Click the **Backup to Version Control** tile.
+<figure><img src="../../../../../.gitbook/assets/image (2185).png" alt=""><figcaption></figcaption></figure>
+
+1.  Click the **Backup to Version Control** tile.
 
     <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
-4. Enter a descriptive **Job name**.
-5. Add a short **Description**.
-6. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.
-7. The configuration page is divided into several sections. The key sections are explained below.
+2. Enter a descriptive **Job name**.
+3. Add a short **Description**.
+4. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.
+5. The configuration page is divided into several sections. The key sections are explained below.
 
 #### Build <a href="#build" id="build"></a>
 
 Under **Build**, provide:
 
 1. **Source Salesforce org** – The org to back up.
-2.  **Package type** – How ARM collects metadata:
+2. **Package type** – How ARM collects metadata:
+   * **Unpackaged mode** – Retrieves metadata changed since the last ARM cycle (or since **Start date**, if specified).
+   * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.
+   * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
-    * **Unpackaged mode** – Retrieves metadata changed since the last ARM cycle (or since **Start date**, if specified).
-    * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.
-    * **Managed package** – Retrieves components from a managed package created in a partner dev org.
-
-    <figure><img src="../../../../../.gitbook/assets/image (1218).png" alt="Package type selection list"><figcaption><p>Build</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2186).png" alt=""><figcaption></figcaption></figure>
 
 **Additional build options**
 
@@ -44,21 +44,25 @@ Under **Build**, provide:
 4. **Include picklist modifications** – Always include picklist fields, even if Salesforce did not update their “last modified” date. (Source = Salesforce org only.)
 5. **Generate code coverage report** – Include Apex test coverage details.
 6. **Run static analysis report** – Run an SCA tool before committing.
-   *   **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
+   * **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-       <figure><img src="../../../../../.gitbook/assets/image (1219).png" alt="Apex PMD and Checkmarx criteria configuration"><figcaption><p>Apex PMD / Checkmarx</p></figcaption></figure>
-   *   **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
+<figure><img src="../../../../../.gitbook/assets/image (2188).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../../../.gitbook/assets/image (1220).png" alt="CodeScan and SonarQube criteria configuration"><figcaption><p>CodeScan / SonarQube</p></figcaption></figure>
 
-       * **Run on all supported metadata types** – Scan every retrieved component.
-       *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-           <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
-7. **Additional profile packaging options**
+* **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
+
+<figure><img src="../../../../../.gitbook/assets/image (2189).png" alt=""><figcaption></figcaption></figure>
+
+* **Run on all supported metadata types** – Scan every retrieved component.
+*   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
+
+    <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+
+1. **Additional profile packaging options**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
    * **Remove system and user permissions** – Omit profile permissions from deployment.
-8. **Exclude metadata types** – Globally omit specific metadata types from all CI jobs.
+2. **Exclude metadata types** – Globally omit specific metadata types from all CI jobs.
 
 {% hint style="info" %}
 To set global exclusions in advance, open **My Account > My Salesforce Settings**, choose **Exclude metadata types**, and select the types to skip. These settings apply to all future CI jobs.
@@ -71,19 +75,18 @@ Enable **Auto commit** to push changes directly to your VCS:
 1. Select the **Version control type** (Git, TFS, or SVN).
 2. Choose the **Repository**, **Branch**, and **Credential**.
    * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../../arm/salesforce-dx-metadata-format.md).
-3.  Optional settings:
+3. Optional settings:
+   * **Check out and commit with user’s credentials** – Commit all changes as the selected user.
+   * **Check out with user credentials and commit with actual modified user credentials** – Preserve original authors.
+   * **Configuration for recordTypes picklistValues** – Choose _Replace_, _Replace all_, or _Append_. ([Learn more](../../../../arm/troubleshoot/how-tos/configure-record-types-picklist-values.md))
 
-    * **Check out and commit with user’s credentials** – Commit all changes as the selected user.
-    * **Check out with user credentials and commit with actual modified user credentials** – Preserve original authors.
-    * **Configuration for recordTypes picklistValues** – Choose _Replace_, _Replace all_, or _Append_. ([Learn more](../../../../arm/troubleshoot/how-tos/configure-record-types-picklist-values.md))
-
-    <figure><img src="../../../../../.gitbook/assets/image (1222).png" alt="Auto-commit and credential options"><figcaption><p>Backup to Version Control (Auto Commit)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2190).png" alt=""><figcaption></figcaption></figure>
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1223).png" alt="Notification recipient list"><figcaption><p>Notifications</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2191).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

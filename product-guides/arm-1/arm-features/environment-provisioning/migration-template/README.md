@@ -40,22 +40,22 @@ To create a new migration template, please follow the below steps:
 
 The **View History** screen will display the detailed summary report of the template operation being carried out.
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (10).png" alt=""><figcaption></figcaption></figure>
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (12).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 **Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more. \
 \
 **Re-Run** option allows you to run the template once again.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (8).png" alt=""><figcaption></figcaption></figure>
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.
 
@@ -63,7 +63,7 @@ Click on the **Log** icon to view the log report on the right side of the page.
 
 The following information will be displayed for each template created on the Environment Provisioning History screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (7).png" alt=""><figcaption></figcaption></figure>
 
 1. **Template Name:** Name of the template along with the template created date/time
 2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template

@@ -201,7 +201,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 2. **Automatic Skipping of Prevalidation Criteria**:
    * The pre-validation criteria will be automatically skipped during the back-merge process.
 
-<figure><img src="../../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

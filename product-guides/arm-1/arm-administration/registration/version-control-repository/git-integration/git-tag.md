@@ -43,7 +43,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
     \
 
 
-    <figure><img src="../../../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### B. Create GIT Tag during Merge <a href="#b-create-git-tag-during-merge" id="b-create-git-tag-during-merge"></a>
 

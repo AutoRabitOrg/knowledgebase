@@ -9,9 +9,9 @@ To migrate custom setting data from one Salesforce Org to another, follow the st
 3.  On the next screen, choose the required objects fields from the list of objects available in the source org. Use the quick search option to further filter the options.\
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (5) (8).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (6) (8).png" alt=""><figcaption></figcaption></figure>
 4. Next, click on the **Fetch Fields** button.
 5. The next screen will fetch the fields available in the selected objects. The non-customizable objects will remain un-highlighted and you won’t be able to select that object.
 6. Click on the **Show Fields** to display the list of fields available in the object.

@@ -1255,7 +1255,7 @@ Verified the Pagination enhancement via validating the following scenarios:
 2.  The _Previous Analysis_ section displays a maximum of 15 entries per page.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 3. Pagination controls (e.g., next, previous, specific result numbers) are present and functional in both sections independently.
 
 **3.     Email Limit & Validation for Multi-User Invites**

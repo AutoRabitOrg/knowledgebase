@@ -15,10 +15,10 @@ To perform org synchronization, follow the below steps:
 1. Log in to your ARM account.
 2. Click on the **`Deployment`** tile on the left side of the screen.
 3. Go to the **`Org Synchronization History`** tab.
-4. Click on the **`Get Org Differences`** call-to-action button.
+4.  Click on the **`Get Org Differences`** call-to-action button.\
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 5.  In the **`Org Differences`** dialog box, you will need to:
 
     * Give the process a **`Name`**.
@@ -27,10 +27,11 @@ To perform org synchronization, follow the below steps:
     * Select the **`Generate Member Differences`** checkbox to view the metadata member's differences between two Salesforce orgs based on file/data level comparison.
     * Specify the **`Batch size for Profile Components`** and the **`Batch size for other Components`** to retrieve records. So, the default size for the profile is **500**, and for other components is **2000**. You can modify it as per your requirement. The bulk retrieve option helps run large jobs that exceed normal processing limits – you can deploy up to **10000 files** at once or a maximum size of **14Mb**. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is the best option.
 
-    To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.
+    To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.\
+    \
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="436"><figcaption></figcaption></figure>
 
+    <figure><img src="../../../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 6.  On the next screen, you can:
 
     * view the metadata list included in both source and target org
@@ -51,25 +52,26 @@ To perform org synchronization, follow the below steps:
 
 #### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
 
-Synchronization summary information such as label name, source org, destination org, and so on.. can be seen on the **`Org Synchronization History`** page.
+Synchronization summary information such as label name, source org, destination org, and so on.. can be seen on the **`Org Synchronization History`** page.\
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. **`Info:`** Click the![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the detailed synchronization report.
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="503"><figcaption></figcaption></figure>
+1.  **`Info:`** Click the![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the detailed synchronization report.\
+    \
 
+
+    <figure><img src="../../../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
 2. **`Delete:`** Click on the![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
 3. **`Schedule:`** Click the![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>)icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
 4. **`Run:`** Click the![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>)icon to rerun the org synchronization process.
-5.  **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
+5. **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
+   *   **Log Report:** Click on the![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>)icon under the **`Status`** column to view the log report for the sync process.\
 
-    * **Log Report:** Click on the![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>)icon under the **`Status`** column to view the log report for the sync process.
 
-    <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-6.  **`Report:`**&#x54;here are two options in this column.
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-20 at 12.00.15 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+6. **`Report:`**&#x54;here are two options in this column.
+   * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the metadata components difference report between the source and the target org.
+   * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png>)icon to download the Diff report in your local system (in PDF or CSV format).
 
-    * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the metadata components difference report between the source and the target org.
-    * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png>)icon to download the Diff report in your local system (in PDF or CSV format).
-
-    <figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>

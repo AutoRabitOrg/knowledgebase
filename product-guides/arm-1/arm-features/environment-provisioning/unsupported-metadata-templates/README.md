@@ -83,7 +83,7 @@ To create a new unsupported metadata template, please follow the below steps:
 8.  On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button.\
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (7) (7).png" alt="" width="563"><figcaption></figcaption></figure>
 9. However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
    * Click on![](<../../../../../.gitbook/assets/image (23) (1) (1) (1) (1).png>)icon.
    * Enter the page layout name in the **Page Layout** field.&#x20;
@@ -93,7 +93,7 @@ To create a new unsupported metadata template, please follow the below steps:
        \
 
 
-       <figure><img src="../../../../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (8) (7).png" alt="" width="563"><figcaption></figcaption></figure>
 10. Click **Save** to save the template.
 11. You can find your recently created template on the **Environment Provisioning History** page.
 12. The next step is to run the template on your destination Salesforce org.
@@ -109,11 +109,11 @@ The left side screen will display the template name, the template creation date/
 \
 
 
-<figure><img src="../../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (6).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 

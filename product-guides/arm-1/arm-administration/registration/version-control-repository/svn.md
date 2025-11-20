@@ -22,7 +22,7 @@ The steps below walk an Org Admin through **registering** an SVN repository so A
 5.  Click **Test Connection**. A success message confirms ARM can authenticate.\
 
 
-    <figure><img src="../../../../../.gitbook/assets/image (17).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (17) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 6. Click **Save** to finish. The repository now appears in the VC Repos list.
 
 {% hint style="info" %}

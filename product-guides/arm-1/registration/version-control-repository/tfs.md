@@ -20,7 +20,7 @@ The steps below show an Org Admin how to register a TFS repo so ARM can authenti
 8.  Click **Test Connection**. A success message confirms ARM can authenticate.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (18).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 9. Click **Save** to finish. The repository now appears in the VC Repos list.
 
 {% hint style="info" %}

@@ -20,24 +20,24 @@ The following articles describe how to trigger a new build for your CI Job creat
 1. Navigate to the **CI Job Results** screen.
 2. This screen lists all CI Jobs for which builds have been triggered.
 
-<figure><img src="../../../../.gitbook/assets/image (1140).png" alt="CI Job Results screen with build history"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3. Jobs with deployments display the icon: ![](<../../../../.gitbook/assets/image (1141).png>), while validated-only jobs show: ![](<../../../../.gitbook/assets/image (1142).png>)
-4. Use the **Select Job** dropdown to choose your CI job.
+1. Jobs with deployments display the icon: ![](<../../../../.gitbook/assets/image (1141).png>), while validated-only jobs show: ![](<../../../../.gitbook/assets/image (1142).png>)
+2. Use the **Select Job** dropdown to choose your CI job.
 
-<figure><img src="../../../../.gitbook/assets/image (1143).png" alt="Select CI Job from dropdown list" width="427"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-5. If no builds exist yet, you'll see:\
+1. If no builds exist yet, you'll see:\
    &#xNAN;**"No builds found for this job. Please trigger a new build for results."**\
    Click **Build Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (1144).png" alt="Build Now button for first-time build trigger"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-6. If previous builds exist, click **Build Now** to trigger a new build.
+1. If previous builds exist, click **Build Now** to trigger a new build.
 
-<figure><img src="../../../../.gitbook/assets/image (1145).png" alt="Build Now button to trigger additional builds"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-7. The build initiation screen will differ depending on whether your CI Job is configured with ALM.
+1. The build initiation screen will differ depending on whether your CI Job is configured with ALM.
 
 ***
 
@@ -68,7 +68,7 @@ ALM-integrated CI Jobs display ALM work item information from the source version
 
 CI Jobs without ALM integration show the following build input screen:
 
-<figure><img src="../../../../.gitbook/assets/image (1149).png" alt="Trigger build screen for non-ALM jobs"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a **Title** and optional **Comments**
 * Choose **Deployment Type**:

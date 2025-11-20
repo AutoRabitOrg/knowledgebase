@@ -14,7 +14,7 @@ When IdP Connection is configured to send the user groups, then **SAML Response*
 
 To configure the mapping between IdP Groups and Codescan Orgs and Groups, navigate to **Administration > SAML Connections** and edit the connection of your choice.  There is a **IdP Group Mapping** section on the SAML Configuration screen:
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can add multiple rows for the mapping. In each row you define:
 

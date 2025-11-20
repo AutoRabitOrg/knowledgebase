@@ -18,7 +18,7 @@ To revert a commit, simply click on three dots at the end of any commit from the
 
 The **New EZ-Commit** screen is best viewed when the zoom setting is set to **75%** on your chrome/firefox browser.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A revert introduces a new commit to the commit history whose sole purpose is to undo the changes of a targeted commit. Importantly, this means that the existing commit history prior to the newly added "undo" commit, including the original error commit, is preserved. A revert will create a new commit with a new revision number to track the changes. The reverted commits will have the identification initials as **RC** with a different label name starting with **Revert commit - {label name used earlier}**. You can view the list of committed files for the reverted commit in the **Detailed View** under the **Committed Files** tab.
 

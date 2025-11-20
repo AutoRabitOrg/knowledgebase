@@ -18,7 +18,7 @@ To perform org synchronization, follow the below steps:
 4.  Click on the **`Get Org Differences`** call-to-action button.\
 
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  In the **`Org Differences`** dialog box, you will need to:
 
     * Give the process a **`Name`**.

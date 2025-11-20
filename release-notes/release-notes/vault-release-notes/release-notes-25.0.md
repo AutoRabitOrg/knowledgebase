@@ -18,6 +18,10 @@ Secrets are no longer stored in application configs and can now be centrally con
 
 Vault has been upgraded to use the latest Salesforce API versions (v63,v64 & v65) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations—SOAP, REST, Bulk, and Tooling APIs—are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
 
+#### **Salesforce SOAP Login Deprecation Notice**
+
+Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth (JWT Bearer) authentication to ensure uninterrupted connectivity. The migration can be done through Connections → \{{ConnectionName\}} → Migrate to OAuth, followed by the on-screen steps to confirm the connection status as “OAuth (JWT)”.
+
 #### **Enhanced MFA Security for JWT Authentication** <a href="#enhanced-mfa-security-for-jwt-authentication" id="enhanced-mfa-security-for-jwt-authentication"></a>
 
 A fix has been implemented to enforce proper MFA validation during JWT-based login.\

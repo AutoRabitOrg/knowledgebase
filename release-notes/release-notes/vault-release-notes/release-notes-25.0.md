@@ -16,7 +16,7 @@ Secrets are no longer stored in application configs and can now be centrally con
 
 #### **Salesforce API Upgrade for Upcoming Platform Releases** <a href="#salesforce-api-upgrade-for-upcoming-platform-releases" id="salesforce-api-upgrade-for-upcoming-platform-releases"></a>
 
-Vault has been upgraded to use the latest Salesforce API versions (v63 & v64) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations—SOAP, REST, Bulk, and Tooling APIs—are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
+Vault has been upgraded to use the latest Salesforce API versions (v63,v64 & v65) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations—SOAP, REST, Bulk, and Tooling APIs—are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
 
 #### **Enhanced MFA Security for JWT Authentication** <a href="#enhanced-mfa-security-for-jwt-authentication" id="enhanced-mfa-security-for-jwt-authentication"></a>
 

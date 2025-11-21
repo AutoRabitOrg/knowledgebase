@@ -4,11 +4,13 @@
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
-Why Does Salesforce Recommend Moving From SFDX to SFCLI? Click [here](../../../../arm/troubleshoot/known-issues-limitations/salesforce-known-limitations.md#why-does-salesforce-recommend-moving-from-sfdx-to-sfcli) for more info.
+### Why Does Salesforce Recommend Moving From SFDX to SFCLI?
+
+Click [here](../../../../arm/troubleshoot/known-issues-limitations/salesforce-known-limitations.md#why-does-salesforce-recommend-moving-from-sfdx-to-sfcli) for more info.
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Back up your Salesforce metadata to version control and trigger a deployment to a Salesforce org based on a **Start Date**. This job can be further customized to run functional test cases from the ARM TAF library or from version control.
+Backup your Salesforce metadata to version control and trigger a deployment to a Salesforce org based on a **Start Date**. This job can be further customized to run functional test cases from version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
@@ -43,14 +45,14 @@ Under **Build**, provide:
 
 <figure><img src="../../../../../.gitbook/assets/image (2195).png" alt=""><figcaption></figcaption></figure>
 
-1. **Auto Switch to Bulk Retrieve Service if Job Hits Metadata Governor Limit:** Use batch retrieval when a job approaches the 10,000-file or 39-MB limit. Specify **Batch Size** (up to 10,000).
-2. **Exclude Installed (Managed) Components and Changes:** Skip all managed-package components.
+1. **Auto Switch to Bulk Retrieve Service if Job Hits Metadata Governor Limit:** Use batch retrieval when a job approaches the 10,000 file or 39MB limit. Specify **Batch Size** (up to 10,000).
+2. **Exclude Installed (Managed) Components and Changes:** Skip all managed package components.
    * **Exclude All Manually Created Components:** Also skip custom components in managed packages.
 3. **Incremental Build:** Fetch only metadata changed since the previous successful deployment, improving build time.
 4. **Include Picklist Modifications:** Always include picklist fields, even if the “last modified” date is unchanged (source = Salesforce org only).
 5. **Prepare Destructive Changes:** Delete unwanted metadata in the destination org before deployment.
-6. **Generate Code Coverage Report:** Include Apex test-coverage details.
-7. **Run Static Analysis Report:** Identify code-quality issues before production.
+6. **Generate Code Coverage Report:** Include Apex test coverage details.
+7. **Run Static Analysis Report:** Identify code quality issues before production.
 
 <figure><img src="../../../../../.gitbook/assets/image (2196).png" alt=""><figcaption></figcaption></figure>
 
@@ -113,8 +115,8 @@ Deploy or validate the package in a destination org:
 
 2. **Rollback:** Save a backup to allow rollback.
 3. **Ignore Missing Visibility Settings if Package Contains Profiles or Permission Sets:** Deploy profiles/permission sets even if visibility settings differ.
-4. **Ignore Installed (Managed) Components:** Skip managed-package components.
-   * **Ignore All Manually Created Components:** Also skip custom managed-package components.
+4. **Ignore Installed (Managed) Components:** Skip managed package components.
+   * **Ignore All Manually Created Components:** Also skip custom managed package components.
 5. **Ignore Warnings:** Deploy even if warnings occur.
 6. **Do Not Include 'Skip Members' During Deployment:** Override global skip settings for this deployment.
 7. **Run Destructive Changes:** Choose pre- or post-destructive changes.
@@ -180,4 +182,4 @@ If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.
 
-For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+For credential usage details across CI job types, see the [FAQs](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).

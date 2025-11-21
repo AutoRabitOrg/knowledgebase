@@ -6,7 +6,7 @@ The **CI JOBS** screen is best viewed when the zoom is set to **80%** on your Ch
 
 ## Overview <a href="#overview" id="overview"></a>
 
-Convert and package your version-control files to [Salesforce Metadata](https://www.autorabit.com/blog/how-salesforce-metadata-affects-compliance/) components based on a **Start Revision.** You can also configure an ALM project and sprint to include only revisions tied to a user story and its status.
+Convert and package your version control files to [Salesforce Metadata](https://www.autorabit.com/blog/how-salesforce-metadata-affects-compliance/) components based on a **Start Revision.** You can also configure an ALM project and sprint to include only revisions tied to a user story and its status.
 
 ## Procedure <a href="#procedure" id="procedure"></a>
 
@@ -52,7 +52,7 @@ Important Notes:
 1. **Status Check API** – Check the status of APIs running for the CI job.
 2. [**Pull Request**](../../../../arm/arm-features/version-control/external-pull-request/) – Create a pull request for this job.
 3. [**Merge Request**](../../../../arm/arm-features/version-control/ez-merge/merge-requests.md) – Create a merge request for this job.
-4. **Map ALM Project** – Configure ALM (e.g., Jira) work-item statuses to include in the build.
+4. **Map ALM Project** – Configure ALM (e.g., Jira) work item statuses to include in the build.
 
 {% hint style="warning" %}
 **Important note**: **Build Using – Baseline Revision/Time Range** and **Trigger Build on Commit** are unavailable when **Map ALM Project** is selected.
@@ -74,7 +74,7 @@ Important Notes:
 {% endhint %}
 
 7. **Prepare Destructive Changes** – Delete unwanted metadata from the destination org before deployment.
-8. **Run Static Analysis Report** – Identify code-quality issues before production.
+8. **Run Static Analysis Report** – Identify code quality issues before production.
 
 <figure><img src="../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -119,7 +119,7 @@ Send email notifications on build success or failure.
 * **Weekly** – Run on selected day(s) and time.
 * **No schedule** – Save the job and trigger it manually.
 
-For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+For credential usage details across CI job types, see the [FAQs](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 

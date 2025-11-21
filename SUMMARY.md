@@ -1169,7 +1169,7 @@
       * [Schedule a Vault Backup](product-guides/vault/vault-features/backup/schedule-a-vault-backup.md)
       * [Understanding Backup Behavior](product-guides/vault/vault-features/backup/understanding-backup-behavior.md)
       * [Synthetic Backup](product-guides/vault/vault-features/backup/synthetic-backup.md)
-    * [Compare](product-guides/vault/vault-features/compare/README.md)
+    * [Vault Compare](product-guides/vault/vault-features/compare/README.md)
       * [Comparing Two Backups](product-guides/vault/vault-features/compare/comparing-two-backups.md)
       * [Enhanced Compare Capabilities: View, Change View, and Export Results](product-guides/vault/vault-features/compare/enhanced-compare-capabilities-view-change-view-and-export-results.md)
     * [Restore](product-guides/vault/vault-features/restore/README.md)

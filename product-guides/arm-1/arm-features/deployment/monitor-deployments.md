@@ -20,13 +20,11 @@ You’ll need the **`Deployment History`** access permission.
 
 1. **`Deployment Label:`** Deployment label along with the name of the user performing the deployment, the date and time when the deployment started, and the deployment status.
 2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
-3.  **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.\
-
+3.  **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2142).png" alt="" width="563"><figcaption></figcaption></figure>
 4.  **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (2144).png" alt=""><figcaption></figcaption></figure>
 5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.
@@ -42,12 +40,11 @@ You’ll need the **`Deployment History`** access permission.
 7. **`Deployment Status:`** A visual representation of the overall deployment progress. The first chart shows how many components have already been deployed and includes the number of components with errors. After all components have been deployed without errors, Apex tests start executing, if required or enabled. A second chart shows how many Apex tests have run out of the total number of tests and the number of errors returned. In addition, the chart shows the name of the currently running test.
 8. List of Options available under Deployment History screen.
    1. As a User:
-      1.  The user who initiated the deployment can see the history screen and the deployment with details like who the approvers are and the status of the deployment. Also, they could see the list of components part of the deployment with any comments from the approvers. If it is a Salesforce deployment, they would able to view the SCA report as well.
+      1.  The user who initiated the deployment can see the history screen and the deployment with details like who the approvers are and the status of the deployment. Also, they can see the list of components part of the deployment with any comments from the approvers. If it is a Salesforce deployment, they are able to view the SCA report as well.
 
-          User can also add any comments if required, e.g., "Deployment is waiting for approval. "\
+          Users can also add any comments if required, e.g., "Deployment is waiting for approval. "\
           \
-          \
-
+          <br>
 
           <figure><img src="../../../../.gitbook/assets/image (1698).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
 
@@ -67,31 +64,27 @@ You’ll need the **`Deployment History`** access permission.
           \- Comment history of Approvers & Users.\
           \- If the user enables SCA (Only available for Salesforce not for Vlocity Deployments)\
           SCA will run before it goes to the Approver. If it fails, the deployment gets automatically rejected.\
-          If SCA passes, the deployment will go for approval. An email will be sent to Approvar.
-       2.  Once the Approver clicks on Approve → It should get Auto-deployed. Users and approvers should be notified via email.\
-           Pending L1 Approval\
-
+          If SCA passes, the deployment will go for approval. An email will be sent to the Approver.
+       2.  Once the Approver clicks on Approve → It is Auto-deployed. Users and approvers are notified via email.\
+           Pending L1 Approval<br>
 
            <figure><img src="../../../../.gitbook/assets/image (1700).png" alt=""><figcaption><p>Pending L1 Approval</p></figcaption></figure>
 
-           Email sent to Approver.\
-
+           Email sent to Approver.<br>
 
            <figure><img src="../../../../.gitbook/assets/image (1701).png" alt=""><figcaption><p>Deployment Email</p></figcaption></figure>
 
-           Pending L2 Approval\
-
+           Pending L2 Approval<br>
 
            <figure><img src="../../../../.gitbook/assets/image (1702).png" alt=""><figcaption><p>Pending L2 Approval</p></figcaption></figure>
 
-           Approver can drop a comment, either Approve or Reject, so the user can review the comments in the comments screen.\
-
+           Approver can drop a comment, either Approve or Reject, so the user can review the comments in the comments screen.<br>
 
            <figure><img src="../../../../.gitbook/assets/image (1703).png" alt=""><figcaption><p>Confirmation</p></figcaption></figure>
 
 
-   3. Once the Approver clicks on Reject, the → Approver should reject with comments. Users and approvers should be notified via email.
-   4. The user should be able to go to the rejected deployment and see the approver’s comments.
+   3. Once the Approver clicks on Reject, the → Approver should reject with comments. Users and approvers are notified via email.
+   4. The user can go to the rejected deployment and see the approver’s comments.
    5. The user will only have the option to select/reselect from the redeploy/promote screen, not the metadata changes.&#x20;
    6. Once that is done, the User can reinitiate the deployment.
    7.  Deployment would again follow the L1 and L2 approval process.
@@ -101,29 +94,29 @@ You’ll need the **`Deployment History`** access permission.
 
        * The approval process for the deployment feature is activated based on a feature flag.
        * This process applies only to custom deployments. For Salesforce deployments, the user and the approver can view the SCA report and access the **Redeploy** option. However, these options are unavailable for Vlocity deployments, as Vlocity does not support them.
-       * Approvers must have access to both the Deployments and CI Jobs modules. To approve any deployment.
+       * Approvers must have access to both the Deployments and CI Jobs modules to approve any deployment.
        * If a deployment is awaiting approval and the Admin deletes the Salesforce Org associated with the approval setup, any pending deployment approvals will be automatically rejected.
        * Additionally, if a deployment remains in a pending approval state for more than three days, it will be automatically rejected.
        * Self-approval won't be possible even if you are an admin.
 9. **Deployment Add-ons:**
-   * **`Promotion:`** Downloads the metadata components in your local system. The file format is in ZIP format.
-   * **`Redeploy/Promote:`** This option allows you to redeploy the components into the same destination environment with the changes made or promote the same label into a different destination environment. This feature enables users to either redeploy the components to the same destination environment with the applied changes or promote the same label to a different destination environment. Notably, users will now have visibility into all previously selected checkboxes and dropdowns from the previous iteration. This enhancement aims to streamline the process by eliminating the need for users to reselect options, enabling them to directly click on the redeploy option. Additionally, users have the flexibility to edit the checkboxes as needed.
+   * **`Promotion:`** Downloads the metadata components in your local system. The file is in ZIP format.
+   * **`Redeploy/Promote:`** This option allows you to redeploy the components into the same destination environment with the changes made or promote the same label into a different destination environment. This feature enables users to either redeploy the components to the same destination environment with the applied changes or promote the same label to a different destination environment. Notably, users now have visibility into all previously selected checkboxes and dropdowns from the previous iteration. This enhancement aims to streamline the process by eliminating the need for users to reselect options, enabling them to directly click on the redeploy option. Additionally, users have the flexibility to edit the checkboxes as needed.
    * **`Rollback:`** Rollbacks revert a deployment to a previous revision.
-   * **`Abort:`** To cancel a running or stuck deployment process.
+   * **`Abort:`** Cancels a running or stuck deployment process.
    * **`View Graph:`** View Graph gives the graphical representation of the metadata members included in the deployment package.
    * **`SCA Report:`**&#x53;tatic Code Analysis is usually performed as part of a Code Review and is carried out at the Implementation phase of a Security Development Lifecycle (SDL). Static Analysis tools such as PMD and Checkmarx continuously detect and report on dataflow problems, software defects, language implementation errors, inconsistencies, dangerous usage, coding standard violations, and security vulnerabilities.
-   * **`Test Results:`** View the apex test result that you have configured during the deployment.
+   * **`Test Results:`** View the Apex test result that you have configured during the deployment.
    * **`Deployed Issues:`** Any issues found during deployment can be seen here.
    * **`Quick Deploy:`** With Quick Deploy, the components validated successfully for the target environment within the last **96 hours** can be deployed quickly.
 
 {% hint style="info" %}
 **Important Note:**
 
-1. AutoRABIT stores the Static Code Analysis source content for 90 days. Post 90 days, the report will auto-deleted.
+1. AutoRABIT stores the Static Code Analysis source content for 90 days. Post 90 days, the report will be auto-deleted.
 2. For those PMD reports generated before 90 days, those source content files will not be seen in the Static Analysis Report.
 {% endhint %}
 
-**Note:** If the Quick Deploy button is grayed out after successful validation the issue is that there are invalid characters in the metadata file. To fix this issue please follow these steps:
+**Note:** If the Quick Deploy button is grayed out after successful validation, the issue is that there are invalid characters in the metadata file. To fix this issue, please follow these steps:
 
 * **Access Deployment Logs** by navigating to the Deployment History section. Select the specific deployment label where the Quick Deploy button is missing. Review the deployment logs for any errors or warnings related to special characters.&#x20;
 * **Check Deployment Metadata** to identify the files or metadata containing special characters. The common special characters include: +, &, <, >, ", ', etc. Note the specific characters and their locations in the metadata.
@@ -131,11 +124,11 @@ You’ll need the **`Deployment History`** access permission.
 * **Escalate if Unresolved**, if the issue persists, escalate to AutoRABIT support for further assistance and provide detailed logs and steps taken to resolve the issue.
 
 9. **Metadata Components Details:**
-   * **`Components:`** This report displays the components successfully deployed into the target sandbox. Here you can download the deployed/ deployable components in XML format. To do so, click on the **`Download`** button.
+   * **`Components:`** This report displays the components successfully deployed into the target sandbox. Here you can download the deployed/deployable components in XML format. To do so, click on the **`Download`** button.
    * **`Failed Components:`** This report displays the components that have not been deployed into the target sandbox.
    * **`Deleted Components:`** When pre-destructive or post-destructive changes are selected during deployment initiation, the deleted components are displayed here.
-   * **`Apex Test Success:`** This report displays the apex test components that have successfully passed unit testing.
-   * **`Apex Test Failures:`** This report displays the apex test components that have failed.
+   * **`Apex Test Success:`** This report displays the Apex test components that have successfully passed unit testing.
+   * **`Apex Test Failures:`** This report displays the Apex test components that have failed.
    * **`Code Coverage Warning:`** This report shows the components in which the minimum code coverage has not been achieved (Salesforce recommends 75% of code coverage).
    * **`Deployment Notes:`** Specify the reason for the deployment and what has changed across your Salesforce Org.
    * **`Audit Log`**: The **`Audit Log`** lists the user's changes made during the deployment timestamp (based on the start time and end time of Deployment). Refer to the **`Audit Log`** section.
@@ -148,7 +141,7 @@ A new section called the **`Audit Log`** has been added under the **`Deployment 
 
 The audit log lists the user's changes made during the deployment timestamp (based on the start time and end time of deployment).
 
-Here is the list of changes that Audit Trail tracks-&#x20;
+Here is the list of changes that Audit Trail tracks:&#x20;
 
 **Administration**
 
@@ -182,8 +175,8 @@ Here is the list of changes that Audit Trail tracks-&#x20;
 * Profile description changed&#x20;
 * Standard or custom profile cloned&#x20;
 * Console setting or layout changed&#x20;
-* View, or modify, all data-enabled for this profile&#x20;
-* Login hours for the profile modified.&#x20;
+* View, or modify all data enabled for this profile&#x20;
+* Login hours for the profile modified
 * Client settings for the profile modified&#x20;
 * Record type added to or removed from the profile&#x20;
 * Default record type modified&#x20;
@@ -204,7 +197,7 @@ Here is the list of changes that Audit Trail tracks-&#x20;
 * Permission set group assigned or removed for a user&#x20;
 * Permission set group re-calculated&#x20;
 
-**Customization**
+**Customizations**
 
 * User interface settings like collapsible sections, Quick Create, hover details, or related list hover links&#x20;
 * Page layout, action layout, and search layouts&#x20;
@@ -213,7 +206,8 @@ Here is the list of changes that Audit Trail tracks-&#x20;
 * Inline edits&#x20;
 * Custom fields and field-level security, including formulas, picklist values, and field attributes like the auto-number field format, field manageability, or masking of encrypted fields&#x20;
 * Lead settings, lead assignment rules, and lead queues&#x20;
-* Activity settings Support settings, business hours, case assignment and escalation rules, and case queues&#x20;
+* Activity settings&#x20;
+* Support settings, business hours, case assignment and escalation rules, and case queues&#x20;
 * Requests to Salesforce Customer Support&#x20;
 * Tab names, including tabs that you reset to the original tab name&#x20;
 * Custom apps (including Salesforce console apps), custom objects, and custom tabs&#x20;
@@ -241,7 +235,7 @@ Here is the list of changes that Audit Trail tracks-&#x20;
 * Public groups, sharing rules, and org-wide sharing, including the Grant Access Using Hierarchies option&#x20;
 * Password policies&#x20;
 * Password resets&#x20;
-* Session settings, like session timeout (excluding Session times out after and Session security level required at login profile settings)&#x20;
+* Session settings, like session timeout (excluding Session time-out after and Session security level required at login profile settings)&#x20;
 * Delegated administration groups and the items delegated admins can manage (setup changes made by delegated administrators are also tracked)&#x20;
 * Lightning Login, enabling or disabling, enrollments, and cancellations&#x20;
 * How many records a user permanently delete from their recycle bin and from the org recycle bin&#x20;

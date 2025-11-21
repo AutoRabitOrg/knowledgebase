@@ -5,10 +5,9 @@
 1. Log in to your ARM account.
 2. Go to the **`Repositories`**`tab.`
 3. Select the TFS repository for which the branch needs to be created.
-4.  Click on **`Create`** button.\
+4.  Click on **`Create`** button.<br>
 
-
-    <figure><img src="../../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`**&#x66;ield.
 
 {% hint style="info" %}
@@ -31,8 +30,7 @@
 ### Registration of an existing TFS branch <a href="#registration-of-an-existing-tfs-branch" id="registration-of-an-existing-tfs-branch"></a>
 
 1. On the **`Repositories`** page, select a TFS repository from the list.
-2.  Click on **`Register`**.\
-
+2.  Click on **`Register`**.<br>
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.00.25 PM (3).png" alt="" width="563"><figcaption></figcaption></figure>
 3. On the next screen, enter the **`Display Name`** of the branch that you want to register in ARM.

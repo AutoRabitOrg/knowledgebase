@@ -108,8 +108,7 @@ Log in to CodeScan, click on the **Projects** tab, and find the project you need
 
 **Step 5: Obtain the Organization Key**
 
-You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.\
-
+You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1704).png" alt=""><figcaption></figcaption></figure>
 
@@ -318,8 +317,7 @@ This plugin is compatible with **Agentforce version 2.2.0 and up**.
 
 To allow CodeScan to run correctly there are 2 steps:
 
-1.  Turn off **Retrieval Augmented Generation** in the settings for Agentforce\
-
+1.  Turn off **Retrieval Augmented Generation** in the settings for Agentforce<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1636).png" alt=""><figcaption></figcaption></figure>
 2. Add the following lines to your settings.json file:

@@ -52,8 +52,7 @@ Under the **Build** section, fill in the below details:
 
 <figure><img src="../../../../../.gitbook/assets/image (1260).png" alt=""><figcaption></figcaption></figure>
 
-**For ApexPMD** and **Checkmarx**: ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.\
-
+**For ApexPMD** and **Checkmarx**: ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1261).png" alt="" width="506"><figcaption></figcaption></figure>
 
@@ -205,8 +204,7 @@ There are different ways to fetch the test cases:
 * AccelQ (if AccelQ plugin is installed in ARM)
 * Provar (if Provar plugin is installed in ARM)\
   \
-  ![](<../../../../../.gitbook/assets/image (1895).png>)\
-
+  ![](<../../../../../.gitbook/assets/image (1895).png>)<br>
 
 1. **Version Control:** The test cases committed to a branch in version control are displayed.
    * Select the **Version Control Repository** type.

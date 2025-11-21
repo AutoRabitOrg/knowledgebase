@@ -325,7 +325,7 @@ Component details are listed in their corresponding sections within this documen
 &#x20;**1.  Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:\
-![](../../../../.gitbook/assets/unknown.png)
+![](<../../../../.gitbook/assets/unknown (1).png>)
 
 This exception was originally introduced to reduce noise and was added to our rule logic before Salesforce introduced USER\_MODE. However, with Salesforce’s updated guidance requiring all database operations to consistently enforce permissions, the exemption is no longer valid. Getters can still expose data through bindings, so excluding them would not align with best practices.
 
@@ -337,7 +337,7 @@ Note: The update has been refined to cover all scenarios—we’ve implemented l
 
 We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -382,7 +382,7 @@ _of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80
 
 Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -396,11 +396,11 @@ This rule detects ESLint rule references written in code comments that are not c
 
 We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -481,22 +481,19 @@ We have determined the root cause to be a JDBC exception and have fully remediat
 
 We have verified the fix via the following scenarios and confirm that Admins are able to see the correct records without any errors.
 
-1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  Admins can also view the records displayed in the correct order under the All tab.\
-
+1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.\
+2.  Admins can also view the records displayed in the correct order under the All tab.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -512,15 +509,13 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
    * \*.site.com
    * \*.documentforce.com
    * \*.marketingcloudapis.com
-2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.\
+2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.<br>
 
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <br>
 
-    \
-
-
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -745,8 +740,7 @@ Component details are listed in their corresponding sections within this documen
   \
   Verified that the rule ServerSideRequestForgery is throwing violations when the following methods are used in the code:
 * HttpRequest.setEndpoint(String)
-* PageReference.getContent()\
-
+* PageReference.getContent()<br>
 
 2. **Enhancement to Resource Injection Rule**\
    As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection). We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.\
@@ -1177,8 +1171,7 @@ Here are the tag API references: [CodeScanCloud](https://app.codescan.io/web_api
 Verified Categories for Project Types in the following scenarios, and have verified that all are working as expected:
 
 1. **Verify that the user is able to see the correct tag for the project on the Project Information page after completing the analysis.**\
-   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
-
+   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -1188,16 +1181,13 @@ Verified Categories for Project Types in the following scenarios, and have verif
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
-    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_\
-
+    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**\
-
+4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**<br>
 
     <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**\
-
+5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**<br>
 
     <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -1215,30 +1205,25 @@ We believe that these more verbose error messages will help our customers remedi
 
 Verified this enhancement via validating the below scenarios
 
-1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.\
-
+1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
-3.  If the imported QP has no profile language, the error message says: "Profile language should be set."\
-
+3.  If the imported QP has no profile language, the error message says: "Profile language should be set."<br>
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  If the QP has no profile name, the error message says: "Profile name should be set."\
+4.  If the QP has no profile name, the error message says: "Profile name should be set."<br>
 
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+5.  If no file is selected during import, an error occurs.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5.  If no file is selected during import, an error occurs.\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. If the repository key is missing, an import error is triggered.
-7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.\
+7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1248,12 +1233,10 @@ To provide a better experience, we have added separate pagination controls, allo
 
 Verified the Pagination enhancement via validating the following scenarios:
 
-1.  The _Projects Analysis_ section displays a maximum of 10 entries per page.\
+1.  The _Projects Analysis_ section displays a maximum of 10 entries per page.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-2.  The _Previous Analysis_ section displays a maximum of 15 entries per page.\
-
+    <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+2.  The _Previous Analysis_ section displays a maximum of 15 entries per page.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Pagination controls (e.g., next, previous, specific result numbers) are present and functional in both sections independently.
@@ -1277,22 +1260,18 @@ Value / Purpose:
 
 We have verified the enhancement for Email Limit & Validation for Multi-User Invites by validating the following scenarios:
 
-1.  Verified that if invite is sent to more than 50 members, then the following is thrown:\
+1.  Verified that if invite is sent to more than 50 members, then the following is thrown:<br>
 
+    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+2.  Invite sent successfully if invite is sent to less than or equal to 50 users.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
-2.  Invite sent successfully if invite is sent to less than or equal to 50 users.\
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+3.  Verified, if mail address is more than 100 characters, then an error is thrown; if it is less than 100 characters, then the invite is sent successfully.<br>
 
+    <figure><img src="../../../../.gitbook/assets/image (14) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+4.  If invite sent to non-corporate domains, the following error is thrown:<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
-3.  Verified, if mail address is more than 100 characters, then an error is thrown; if it is less than 100 characters, then the invite is sent successfully.\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (14) (1) (3).png" alt=""><figcaption></figcaption></figure>
-4.  If invite sent to non-corporate domains, the following error is thrown:\
-
-
-    <figure><img src="../../../../.gitbook/assets/image (15) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -1315,8 +1294,7 @@ Acceptance Criteria
 *
   * Existing historical issues should reflect the new status names in the export, even if their status was stored using legacy labels.
 
-Verified this enhancement by validating the following scenarios:\
-
+Verified this enhancement by validating the following scenarios:<br>
 
 1. Status Values in Export:
 
@@ -1326,7 +1304,7 @@ Legacy Status Replacement:
 * Legacy status values such as Opened, Confirmed, ReOpened, Resolved, and Closed must no longer appear in the exported CSV.
 * These must be correctly mapped to the corresponding updated status where applicable.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Filter Cleanup:
 
@@ -1336,17 +1314,16 @@ The Is Resolved filter should be completely removed from the CSV Export page.
 
 Only the Status filter should be visible and functional.
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. UI-CSV Consistency: The status shown in the exported CSV for each issue must exactly match what is shown for the same issue in the UI.
-4.  The type, statuses and severity shown in the exported CSV is exactly matching what is shown in the issues page and CSV export page.\
+4.  The type, statuses and severity shown in the exported CSV is exactly matching what is shown in the issues page and CSV export page.<br>
 
+    <figure><img src="../../../../.gitbook/assets/image (18) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (18) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. Fixed an unclear error message displayed when invite is sent only to non-corporate email addresses
 
@@ -1358,17 +1335,17 @@ This fix addresses an unclear message that occurs when:
 
 After these steps, Admin receives the following unclear error message:
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 However, this issue does not occur when multiple users are invited, including at least one corporate email:
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been fully remediated.  We have verified the fix via the following scenario:\
 \
 Validated that the proper error message is displayed when invite is sent only to non-corporate email addresses.
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -1969,7 +1946,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -1997,19 +1974,19 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -2017,7 +1994,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -2025,7 +2002,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 Some users were reporting that they were unable to scroll down in the quality profiles section in project settings.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been remediated in this release.
 
@@ -2035,7 +2012,7 @@ We have verified that with this fix, users are able to scroll down in the Qualit
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2. Fixed Deprecation Warning associated with sonar.login**
 
@@ -2286,19 +2263,19 @@ Test Cases with No Violations
 
 3. Validated that the URL starts with "/" ensuring an internal redirect, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (5).png" alt=""><figcaption></figcaption></figure>
 
 4. Validated date validated using Date.valueOf, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (5).png" alt=""><figcaption></figcaption></figure>
 
 5. Validated a static URL with no dynamic input, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (5).png" alt=""><figcaption></figcaption></figure>
 
 6. Validated fully escaped input and use of safe methods, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (5).png" alt=""><figcaption></figcaption></figure>
 
 _NOTE: The implementation currently addresses the most common scenarios related to resource injection and SSRF vulnerabilities. However, due to the dynamic and context-dependent nature of these issues—especially when influenced by external inputs, indirect references, or complex backend behaviors—there may be edge cases that are not readily identifiable or testable. These may only surface under specific configurations or data conditions._
 
@@ -2348,7 +2325,7 @@ Here, we are looking at resource injection because the URL is internal (starts w
 
 This rule should find any external variables that are used to create dynamic internal URLs.
 
-<figure><img src="../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (5).png" alt=""><figcaption></figcaption></figure>
 
 **Acceptance Criteria**
 
@@ -2381,35 +2358,35 @@ Verified the below scenarios are all working as expected
 
 1. **Verified that sanitizing both BaseObjId and AccListString before URL building prevents violations.**
 
-<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30) (5).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verified that validating BaseObjId using Id.valueOf() ensures the ID is valid and safe to use in URLs.**
 
-<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (5).png" alt=""><figcaption></figcaption></figure>
 
 3. **Verified that input AccListString validated with regex and sanitized prevents violation.**
 
-<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (5).png" alt=""><figcaption></figcaption></figure>
 
 4. **Verified that using AccListString directly in URL without any sanitization or validation causes violations.**
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (5).png" alt=""><figcaption></figcaption></figure>
 
 5. **Verified that sanitizing only BaseObjId but not AccListString leads to a violation.**
 
-<figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (34) (5).png" alt=""><figcaption></figcaption></figure>
 
 6. **Verified that sanitizing the URL string after using variables has no effect, resulting in a violation.**
 
-<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35) (5).png" alt=""><figcaption></figcaption></figure>
 
 7. **Verified that URL encoding AccListString without further format validation leads to violation**
 
-<figure><img src="../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (5).png" alt=""><figcaption></figcaption></figure>
 
 8. **Verified that replacing characters rather than proper sanitization leads to security violations.**
 
-<figure><img src="../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (4).png" alt=""><figcaption></figcaption></figure>
 
 _NOTE: This implementation currently addresses the most common scenarios related to resource injection and SSRF vulnerabilities. However, due to the dynamic and context-dependent nature of these issues, specially when influenced by external inputs, indirect references, or complex backend behaviors—there may be edge cases that are not readily identifiable or testable. These may only surface under specific configurations or data conditions._
 
@@ -2439,7 +2416,7 @@ CodeScan suggests the remediation for this issue is to use JSENCODE() to escape 
 
 * Verified the updated description and example under rule: vf:UnescapedAttributes vulnerability
 
-<figure><img src="../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38) (4).png" alt=""><figcaption></figcaption></figure>
 
 • Verified that Rule is throwing violation as expected
 
@@ -2689,7 +2666,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

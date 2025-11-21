@@ -17,16 +17,14 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 ### Procedure <a href="#procedure" id="procedure"></a>
 
 1. Log in to your ARM account using the **Registered User** credentials.
-2.  Hover your mouse over the **`Settings`** tab and click on **`Subscriptions`**.\
-
+2.  Hover your mouse over the **`Settings`** tab and click on **`Subscriptions`**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1947).png" alt="" width="229"><figcaption></figcaption></figure>
 3. Your active plan details will be shown on the dashboard with details like:
    * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.
    * **`Total Subscription Allotted:`** Number of licenses utilized to date.
    *   **`Total Subscription Available:`** Total number of licenses available.\
-       \
-
+       <br>
 
        <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.32.42 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -39,8 +37,7 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.
 
 1. Log in to the **`Subscription Management`** dashboard using the Registered User credential.
-2.  On the right side of the screen, click **`Create Team`**.\
-
+2.  On the right side of the screen, click **`Create Team`**.<br>
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.34.19 PM.png" alt=""><figcaption></figcaption></figure>
 3. Enter a **name** for your team.
@@ -60,8 +57,7 @@ This section is about creating the teams and assigning members to those teams. T
 **Important Note**: The granted user will not be counted as a part of the subscribed licenses on the team.
 {% endhint %}
 
-7.  Click **`Save`**.\
-
+7.  Click **`Save`**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1948).png" alt="" width="375"><figcaption></figcaption></figure>
 8. The newly created team will be displayed on the **`Subscription Management`** home page.
@@ -106,14 +102,12 @@ ErrorIf an incorrect file is selected, a notification popup stating that the fil
 After uploading the license key, the administrator can allot the available subscriptions to the desired team.
 
 1. Look for the desired team on the **Subscription Management** page.
-2.  Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (718).png>)**)** icon to update the subscription count for a team.\
-
+2.  Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (718).png>)**)** icon to update the subscription count for a team.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1949).png" alt="" width="563"><figcaption></figcaption></figure>
 3. The number of user licenses available for your account is displayed in the **`Subscriptions Available`** field.
 4.  In the **`Team Subscriptions`** section, click on the **`-`** or **`+`** buttons to update the license count, then click **`Update`**.\
-    \
-
+    <br>
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.36.39 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 

@@ -7,12 +7,10 @@ By default, ARM connects to orgs using the secure OAuth method (our recommended 
 ### Adding a Salesforce Org connection via OAuth <a href="#adding-a-salesforce-org-connection-via-oauth" id="adding-a-salesforce-org-connection-via-oauth"></a>
 
 1. Log in to your ARM account.&#x20;
-2.  Go to the **`Settings > SF Org Mgmt.`** page.\
-
+2.  Go to the **`Settings > SF Org Mgmt.`** page.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1942).png" alt="" width="231"><figcaption></figcaption></figure>
-3.  From the **`SF Org Mgmt.`** screen, click on the **`Register Salesforce Org`** button.\
-
+3.  From the **`SF Org Mgmt.`** screen, click on the **`Register Salesforce Org`** button.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.13.41 PM.png" alt=""><figcaption></figcaption></figure>
 4. Enter the **`Salesforce Org Name`**.
@@ -20,8 +18,7 @@ By default, ARM connects to orgs using the secure OAuth method (our recommended 
 6. Select the **`Environment`** from the drop-down (_Production or Development Edition_, _Sandbox_, _Pre-Release_, _Custom URL_).
 7. **`Salesforce Org URL`** is predefined based on the Environment selected.
 8. Select **`Access type`** as **`OAuth`** as the authentication method.
-9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.\
-
+9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1943).png" alt="" width="375"><figcaption></figcaption></figure>
 10. Click **`Allow`** when prompted to grant ARM access to the Salesforce Org.
@@ -42,8 +39,7 @@ By default, ARM connects to orgs using the secure OAuth method (our recommended 
 7. Enter the **`User Name`** and **`Password`**.
 8. Enter the **`Security Token`**&#x20;
 9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1944).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -87,8 +83,7 @@ You can change the **`Environment`** type, the **`Access Type`**, or both.
    * If you change the **`Environment type`**  or **`Access Type`**
    * If you change the **`Environment`** type and also the **`Access Type`**\
      \
-     \
-
+     <br>
 
 <figure><img src="../../../../.gitbook/assets/image (1945).png" alt="" width="375"><figcaption></figcaption></figure>
 

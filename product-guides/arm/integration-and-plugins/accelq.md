@@ -44,7 +44,7 @@ This is an initial step where the user's AccelQ credential such as username and 
     * **URL:** Enter the AccelQ registered endpoint URL. For ex- poc.accelq.io
     * **Tenant Code:** Enter the Tenant code received from AccelQ. If you're not aware of this, you can retrieve your Tenant code from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ.
 
-    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
     * **Select Credential:** Select the user's credential registered as mentioned in Step 1.
 

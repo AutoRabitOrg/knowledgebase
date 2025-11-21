@@ -11,37 +11,31 @@ GIT tags are a simple and effective way to keep track of your code's different v
 1. Log in to your AutoRABIT account.
 2. From the AutoRABIT home page, click ![](<../../../../../.gitbook/assets/image (662).png>) and go to the **VC Repo's** tab.
 3.  Select your [Version Control ](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)Repository under **Repository List.**\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Go to the **Tags** tab and click on the **Create** button.\
-    \
+    <br>
 
-
-    <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 5. In the **Create Tag** screen, select the **VC branch** from the drop-down. The branch that was registered with AutoRABIT for your Version Control repository will be populated here.
 6.  Use the **Search** (![](<../../../../../.gitbook/assets/image (665).png>)) button next to the Revision field to pull a list of revisions from which you can choose which revision to use in the deployment.\
-    \
+    <br>
 
-
-    <figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 \
 **Get Latest HEAD** points out the last commit in the current checkout branch.\
-\
+<br>
 
-
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7.  Give a name for the tag and any additional info in the **Message** section. Click **Create**.\
-    \
+    <br>
 
-
-    <figure><img src="../../../../../.gitbook/assets/image (10) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 8.  A newly created tag will be displayed under the **Tags** section.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -49,18 +43,15 @@ GIT tags are a simple and effective way to keep track of your code's different v
 
 Once the merge process is completed and pushed to the remote branch, AutoRABIT will create the GIT tag based on your configuration. To do so,
 
-1.  From the top navigation pane, navigate to **Create New > New EZ-Merge.**\
+1.  From the top navigation pane, navigate to **Create New > New EZ-Merge.**<br>
 
+    <figure><img src="../../../../../.gitbook/assets/image (12) (1) (1).png" alt="" width="310"><figcaption></figcaption></figure>
+2.  On the New Merge screen, select your **GIT Version Control Repository, Base Branch,** and the **Target Branch**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (12) (1).png" alt="" width="310"><figcaption></figcaption></figure>
-2.  On the New Merge screen, select your **GIT Version Control Repository, Base Branch,** and the **Target Branch**.\
-
-
-    <figure><img src="../../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (14) (1) (3).png" alt=""><figcaption></figcaption></figure>
 3. Scroll a bit below and you can see the option: **Create Git Tag**. Select this checkbox.&#x20;
 4.  Give a name for the tag and any additional info in the message box.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.42.03 PM.png" alt=""><figcaption></figcaption></figure>
 5. Fill in the remaining fields as per your convenience and click on **Merge/ Validate & Merge**. Once the merge process is completed, the GIT tag gets auto-created.
@@ -69,10 +60,9 @@ Once the merge process is completed and pushed to the remote branch, AutoRABIT w
 
 AutoRABIT will create the GIT tag while CI Job is triggered and is successfully build.
 
-1.  Go to the **New CI Job** screen.\
+1.  Go to the **New CI Job** screen.<br>
 
-
-    <figure><img src="../../../../../.gitbook/assets/image (15) (1).png" alt="" width="216"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (15) (1) (3).png" alt="" width="216"><figcaption></figcaption></figure>
 2. The new CI Job screen gives the job a descriptive name in the **CI Job Name** field.
 3. Under **Build**, select your **Version Control Systems,** your **Repository,** and the **Branch**.
 4. Go to the **Deploy** section.

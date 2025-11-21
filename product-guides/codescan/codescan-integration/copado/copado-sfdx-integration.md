@@ -657,4 +657,4 @@ Click **Add New Parameter** and add the following parameters:
 **Value**: {$Pipeline.copado\_\_Main\_Branch\_\_c}
 
 **Name**: COPADO\_PROJECT\
-**Value**: {$Job.ExecutionParent.copado\_\_Project\_\_r.Name}\
+**Value**: {$Job.ExecutionParent.copado\_\_Project\_\_r.Name}<br>

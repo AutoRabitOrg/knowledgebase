@@ -15,8 +15,7 @@ SARIF (Static Analysis Results Interchange Format) is a standardized file format
 &#x20;
 
 * You cannot enable both `generateSarifFile` and `generateReportFile` as `true` within a single configuration.\
-  \
-
+  <br>
 * The `generateSarifFile` flag controls the generation of reports on both the server and client sides:
   * When `generateSarifFile` is set to `true`, server-side reports are generated.
   * When `generateSarifFile` is set to `false`, client-side reports are generated. In this case, it is not necessary to explicitly set `generateReportFile: true`, as it is enabled by default in the configuration.
@@ -29,8 +28,7 @@ There are **two types of report generation** in the system:
 
 Each has its own use case and default behavior.\
 \
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-07-03 at 3.19.21 PM.png" alt=""><figcaption><p>Sarif flow diagram</p></figcaption></figure>
 
@@ -78,8 +76,7 @@ We can also generate codescan reports using sfdx and sonarcanner cli by passing 
 * **Client-side SARIF (**`generateReportFile: true or generateSarifFile: false`**)**\
   This is useful for developers during early analysis or CI runs where only open issues are needed. It creates a basic report with just open issues, but with **metadata** like **Type** and **Severity** for rules and results. Ideal for quick checks.\
   \
-  \
-
+  <br>
 
 We can also generate codescan reports using sfdx and sonarcanner cli by passing the correct parameters in the command\
 `-Dcodescan.reports.enabled=true` `-Dcodescan.reports.type=sarif or sast`

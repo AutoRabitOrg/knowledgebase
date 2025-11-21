@@ -15,8 +15,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 3.  Open **DataLoader ▸ Pro** and click **Create new job**.
 
     <figure><img src="../../../../.gitbook/assets/1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-4.  In **Create DataLoader Job – Login and select object**, choose the **Source Org** and **Destination Org** from the dropdowns.\
-
+4.  In **Create DataLoader Job – Login and select object**, choose the **Source Org** and **Destination Org** from the dropdowns.<br>
 
     <figure><img src="../../../../.gitbook/assets/2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 5.  Click **Login and fetch objects** to authenticate and load available objects from the source org.

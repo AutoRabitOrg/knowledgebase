@@ -74,12 +74,10 @@ Apex PMD ships with a comprehensive default rule set, but you can supply your ow
 **Excluding a file in ARM + CodeScan**
 
 1. Go to **`Settings > My Account > Plugins > Static Code Analysis`**.
-2.  Click **Edit** for CodeScan.\
-
+2.  Click **Edit** for CodeScan.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.23.19 PM (1).png" alt="" width="563"><figcaption></figcaption></figure>
-3.  Use **Source File Exclusion** to list files you want to skip.\
-
+3.  Use **Source File Exclusion** to list files you want to skip.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1946).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Click **Save**, then rerun the analysis.
@@ -137,8 +135,7 @@ You can enforce pass/fail thresholds for SCA across CI jobs, deployments, and ga
 1. Go to **`Settings > My Account > Validation Criteria – Static Code Analysis`**.
 2. Select **`Enable Validation Criteria – SCA`**.
 3.  For each tool, define priority/severity thresholds (e.g., Apex PMD priorities 1–5). Use **`+`** to add multiple thresholds.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.25.58 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -181,8 +178,7 @@ To include SCA in a CI job:
 ### 6. Running SCA in CI job <a href="#id-6-running-sca-in-ci-job" id="id-6-running-sca-in-ci-job"></a>
 
 ARM also enforces SCA during EZ-Commits.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.27.17 PM (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -211,8 +207,7 @@ Select **`Stop deployment if build doesn't meet global criteria`** to block depl
 
 ### 8. Running an SCA during an EZ-Merge <a href="#id-8-running-an-sca-during-an-ezmerge" id="id-8-running-an-sca-during-an-ezmerge"></a>
 
-Choose an SCA tool during a pre-validation merge.\
-
+Choose an SCA tool during a pre-validation merge.<br>
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.29.00 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 

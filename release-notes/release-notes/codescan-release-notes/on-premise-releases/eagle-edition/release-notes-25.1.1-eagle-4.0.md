@@ -32,8 +32,7 @@ Verified the below scenarios for rule vf:AvoidJavaScriptScriptlets and report th
 1. Validated the rule with LightningFunctions and set the default value false then user is able to see the violations.
 2. Validated the rule with LightningFunctions and set the value true then user is not able to see the violations which is expected.
 3. Validated the rule without LightningFunctions then user is able to see the violation which is expected.
-4.  Validated the rule by setting the parameter ignoreSupportingCode as false/true working as expected.\
-
+4.  Validated the rule by setting the parameter ignoreSupportingCode as false/true working as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1752).png" alt=""><figcaption></figcaption></figure>
 
@@ -142,24 +141,19 @@ Test Cases with Violations\
 
 <figure><img src="../../../../../.gitbook/assets/image (1759).png" alt=""><figcaption></figcaption></figure>
 
-2.  Validated unescaped dynamic input into URL, resulting in a violation (SSRF) as expected.\
-
+2.  Validated unescaped dynamic input into URL, resulting in a violation (SSRF) as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1760).png" alt=""><figcaption></figcaption></figure>
-3.  Validated that one parameter is sanitised but the other is not sanitised, still resulting in a violation (SSRF) as expected.\
-
+3.  Validated that one parameter is sanitised but the other is not sanitised, still resulting in a violation (SSRF) as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1761).png" alt=""><figcaption></figcaption></figure>
-4.  Validated concatenated unsafe dynamic parameters in a URL, resulting in a violation (SSRF) as expected.\
-
+4.  Validated concatenated unsafe dynamic parameters in a URL, resulting in a violation (SSRF) as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1762).png" alt=""><figcaption></figcaption></figure>
-5.  Validated the presence of a malicious SSRF-style payload embedded in the URL, resulting in a violation (SSRF) as expected.\
-
+5.  Validated the presence of a malicious SSRF-style payload embedded in the URL, resulting in a violation (SSRF) as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1763).png" alt=""><figcaption></figcaption></figure>
-6.  Validated the attempt at "sanitization" using regex, which is not an approved method, resulting in a violation (Improper sanitization) as expected.\
-
+6.  Validated the attempt at "sanitization" using regex, which is not an approved method, resulting in a violation (Improper sanitization) as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1764).png" alt=""><figcaption></figcaption></figure>
 
@@ -169,25 +163,20 @@ Test Cases with No Violations
 
 <figure><img src="../../../../../.gitbook/assets/image (1765).png" alt=""><figcaption></figcaption></figure>
 
-2.  Validated input escaped using String.escapeSingleQuotes, resulting in no violation as expected.\
-
+2.  Validated input escaped using String.escapeSingleQuotes, resulting in no violation as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1766).png" alt=""><figcaption></figcaption></figure>
-3.  Validated that the URL starts with "/" ensuring an internal redirect, resulting in no violation as expected.\
-
+3.  Validated that the URL starts with "/" ensuring an internal redirect, resulting in no violation as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1767).png" alt=""><figcaption></figcaption></figure>
-4.  Validated date validated using Date.valueOf, resulting in no violation as expected.\
-
+4.  Validated date validated using Date.valueOf, resulting in no violation as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1768).png" alt=""><figcaption></figcaption></figure>
-5.  Validated a static URL with no dynamic input, resulting in no violation as expected.\
-
+5.  Validated a static URL with no dynamic input, resulting in no violation as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1769).png" alt=""><figcaption></figcaption></figure>
 
-    6.Validated fully escaped input and use of safe methods, resulting in no violation as expected.\
-
+    6.Validated fully escaped input and use of safe methods, resulting in no violation as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1770).png" alt=""><figcaption></figcaption></figure>
 
@@ -236,36 +225,28 @@ CWE: 99
 
 Verified the following scenarios are all working as expected
 
-1.  Verified that sanitizing both BaseObjId and AccListString before URL building prevents violations.\
-
+1.  Verified that sanitizing both BaseObjId and AccListString before URL building prevents violations.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1772).png" alt=""><figcaption></figcaption></figure>
-2.  Verified that validating BaseObjId using Id.valueOf() ensures the ID is valid and safe to use in URLs.\
-
+2.  Verified that validating BaseObjId using Id.valueOf() ensures the ID is valid and safe to use in URLs.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1773).png" alt=""><figcaption></figcaption></figure>
-3.  Verified that input AccListString validated with regex and sanitized prevents violation.\
-
+3.  Verified that input AccListString validated with regex and sanitized prevents violation.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1775).png" alt=""><figcaption></figcaption></figure>
-4.  Verified that using AccListString directly in URL without any sanitization or validation causes violations.\
-
+4.  Verified that using AccListString directly in URL without any sanitization or validation causes violations.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1776).png" alt=""><figcaption></figcaption></figure>
-5.  Verified that sanitizing only BaseObjId but not AccListString leads to a violation.\
-
+5.  Verified that sanitizing only BaseObjId but not AccListString leads to a violation.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1777).png" alt=""><figcaption></figcaption></figure>
-6.  Verified that sanitizing the URL string after using variables has no effect, resulting in a violation.\
-
+6.  Verified that sanitizing the URL string after using variables has no effect, resulting in a violation.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1778).png" alt=""><figcaption></figcaption></figure>
-7.  Verified that URL encoding AccListString without further format validation leads to violation.\
-
+7.  Verified that URL encoding AccListString without further format validation leads to violation.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1779).png" alt=""><figcaption></figcaption></figure>
-8.  Verified that replacing characters rather than proper sanitization leads to security violations.\
-
+8.  Verified that replacing characters rather than proper sanitization leads to security violations.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1780).png" alt=""><figcaption></figcaption></figure>
 
@@ -377,8 +358,7 @@ Below are the scenarios for which violations should be throw as per the rule\
 
 <figure><img src="../../../../../.gitbook/assets/image (1787).png" alt=""><figcaption></figcaption></figure>
 
-2.  Missing constructor with a mix of static and non-static methods\
-
+2.  Missing constructor with a mix of static and non-static methods<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1788).png" alt=""><figcaption></figcaption></figure>
 
@@ -390,12 +370,10 @@ Below are the scenarios which should be ignored as per the rule
 
 Below are the scenarios for which violations should not throw
 
-1.  Missing constructor, but all methods and fields are static (utility class)\
-
+1.  Missing constructor, but all methods and fields are static (utility class)<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1790).png" alt=""><figcaption></figcaption></figure>
-2.  Class with an explicit constructor\
-
+2.  Class with an explicit constructor<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1791).png" alt=""><figcaption></figcaption></figure>
 

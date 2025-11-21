@@ -59,8 +59,7 @@ To view your support ticket and its status, follow the steps below:
 
 1. Log in to your ARM instance.
 2. At the top of the page, navigate to **Quick Links > Help Center**. You'll be redirected to the ARM Support Dashboard page.
-3.  Navigate to **Teams Queue** under **Tickets**.\
-
+3.  Navigate to **Teams Queue** under **Tickets**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-VT7TJLCO.png" alt=""><figcaption></figcaption></figure>
 

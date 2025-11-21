@@ -18,10 +18,9 @@ A Git host is a service provider who hosts Git repositories. Git hosts may be on
 
 Before registering Git with ARM, there are some prerequisites.
 
-1.  Ensure you enable the **`Git`** plugin under **`Plugins`** in the **`My Account`** section to use Git for version control.\
+1.  Ensure you enable the **`Git`** plugin under **`Plugins`** in the **`My Account`** section to use Git for version control.<br>
 
-
-    <figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="" width="289"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt="" width="289"><figcaption></figcaption></figure>
 2. You must have permission in ARM to register a repository.
 3. You must have credentials for the repository you want to access.
 4. You must store these Git credentials in ARM.
@@ -32,15 +31,13 @@ This is an initial step in storing your user's credentials (usually a username, 
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Settings`** module and click on the **`Credentials`** tab.
-3.  Next, click on **`Create Credential`** from the right navigation bar.\
-
+3.  Next, click on **`Create Credential`** from the right navigation bar.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. On the next pop-up screen, give a **`Credential name`**.
 5. Choose the **`Credential Type`** as **`Username With Password.`**
 6.  Enter your **`Username`** for the Git host and **API Token** (in the **`Password`** field), and we will store this encrypted. For more information on how to create an API token, see the **Troubleshooting** section on this page.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -48,7 +45,7 @@ This is an initial step in storing your user's credentials (usually a username, 
 **NOTE**: If you are using SSO to log in to your Git Repository, you must Authorize the **Generate API** token. Click on the '**Configure SSO**' dropdown to authorize the generated token.
 {% endhint %}
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Click **`Save`**.
 
@@ -57,18 +54,15 @@ This is an initial step in storing your user's credentials (usually a username, 
 To set up a Git repository, follow the steps below:
 
 1. Log in to your ARM account.
-2.  Hover your mouse over the **`Settings`** module and click on **`Repositories`**.\
-
+2.  Hover your mouse over the **`Settings`** module and click on **`Repositories`**.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="" width="232"><figcaption></figcaption></figure>
 3.  Click on **`Register Repository`**.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.27.44 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 4.  Select the **`Version Control System`** as **`Git`** on the **`Register Repository`** page.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Enter the name of the repository to display it locally.
@@ -83,8 +77,7 @@ To set up a Git repository, follow the steps below:
 10. Select one of the default branches from the list. Note:Ensure the default branch is available in your remote repository with some files committed to it. If no file is available, create a README.txt file and add it to the repository.
 11. Once the registration is done, you can find the newly added repository on **`Repositories`** home page.
 12. The Sync Branches radio button allows you to view branches that are no longer available in your version control repositories but are still visible in the ARM application, and you can delete them from the ARM application as well.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.31.34 PM.png" alt=""><figcaption></figcaption></figure>
 

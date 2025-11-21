@@ -48,8 +48,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
     <figure><img src="../../../../.gitbook/assets/image (92) (1).png" alt=""><figcaption></figcaption></figure>
 
-*   **Records**: The user can select the records by clicking the icon under the “Records” column.\
-
+*   **Records**: The user can select the records by clicking the icon under the “Records” column.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Search Text:** The user can search the fields.
@@ -84,8 +83,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 <figure><img src="../../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 16. On clicking “OK”, the rule will be published and available with the global list of rules associated with the ORG.
-17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.\
-
+17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1555).png" alt=""><figcaption></figcaption></figure>
 18. The user can fill in all required detail for the “Config Details”:
@@ -150,8 +148,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
 ### Job Configuration – Actions
 
-1.  Every entry has the following actions: Run, Edit, Clone, Schedule, & Delete.\
-
+1.  Every entry has the following actions: Run, Edit, Clone, Schedule, & Delete.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1560).png" alt=""><figcaption></figcaption></figure>
 2.  **Run:** By clicking on the run icon, the following “Select Data to Replicate” screen will pop up.
@@ -178,13 +175,13 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
         When the cloning of a job is initiated, the following notification will be displayed upon identifying any differences between environments.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values”.
 
         1. A warning can be observed on the top of the pop-up, which states that the target environment is missing the respective metadata.
 
-        <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
         1.  Please verify the following information displayed on the pop-up and may continue to clone by clicking on “CONFIRM”.
 

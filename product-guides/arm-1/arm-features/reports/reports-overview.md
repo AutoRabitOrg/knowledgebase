@@ -10,10 +10,8 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 
 1. Hover your mouse over the **Reports** module and click on the Analytics.\
    \
-   ![](<../../../../.gitbook/assets/image (2146).png>)\
-
-2.  A screen displays the weekly summary report of EZ-Commits, deployments,[ dataloader](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/), TAF, and continuous integration.\
-
+   ![](<../../../../.gitbook/assets/image (2146).png>)<br>
+2.  A screen displays the weekly summary report of EZ-Commits, deployments,[ dataloader](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/), TAF, and continuous integration.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2147).png" alt=""><figcaption></figcaption></figure>
 
@@ -23,21 +21,18 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 
 \
 3\. Click on the option to filter the data based on the chosen date range. The users can view the reports either **weekly**, **monthly,** or **yearly**.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (2149).png" alt=""><figcaption></figcaption></figure>
 
 
 
 4. View the reports for the selected dates using the **date range** icons
-5.  For CI Jobs triggered in ARM, you have a provision to view detailed reports for each project or all the projects at once.\
-
+5.  For CI Jobs triggered in ARM, you have a provision to view detailed reports for each project or all the projects at once.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2150).png" alt="" width="431"><figcaption></figcaption></figure>
 6.  You can also expand the audit report of each module for better visualisation.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-19 at 1.52.56 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -46,8 +41,7 @@ The **Report** screen is best viewed when the zoom setting is 80% on your Chrome
 Select the required data range to download under the Analytics screen, Click on **Fetch Latest reports**. \
 \
 &#x20;Click on **Download** you can export the report to a Zip format.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (2151).png" alt=""><figcaption></figcaption></figure>
 

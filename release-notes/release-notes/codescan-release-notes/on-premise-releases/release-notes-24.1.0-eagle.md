@@ -22,8 +22,7 @@ Component details are listed in their corresponding sections within this documen
     Summary:  Previously, customers using our Git integration could store their test coverage in their repo branches by using a parameter called sf.testfile (which allows people to add coverage to their code with SFDX JSON outputs)\
     \
     With this enhancement, CodeScan now allows for the parameter to be configured (at the project or instance level) within the UI (in General Settings ->CodeScan section).\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1498).png" alt=""><figcaption></figcaption></figure>
 

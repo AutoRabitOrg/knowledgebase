@@ -21,12 +21,10 @@ Key benefits:
 
 ## Create a New Credential <a href="#create-a-new-credential" id="create-a-new-credential"></a>
 
-1.  Hover over **`Admin`** and click **`Credentials`**.\
-
+1.  Hover over **`Admin`** and click **`Credentials`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1933).png" alt="" width="236"><figcaption></figcaption></figure>
-2.  Click **Create Credential**.\
-
+2.  Click **Create Credential**.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.43.44 PM.png" alt=""><figcaption></figcaption></figure>
 3. In the pop-up, enter a **Credential name** and choose a **Credential Type**:
@@ -44,8 +42,7 @@ Provide the service **username** and **password**. Choose a **Credential Scope**
 
 * **Global** – share with the team.
 *   **Private** – visible only to you.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1934).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -54,8 +51,7 @@ Provide the service **username** and **password**. Choose a **Credential Scope**
 ### SSH <a href="#ssh" id="ssh"></a>
 
 Upload or paste your **private key** (optionally protected by a passphrase). ARM stores the key and uses it for Git operations over SSH.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1935).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -70,8 +66,7 @@ Upload or paste your **private key** (optionally protected by a passphrase). ARM
 ### HashiCorp Vault <a href="#hashicorp-vault" id="hashicorp-vault"></a>
 
 Add HashiCorp Vault credentials once; ARM can now generate a new **Vault Token** automatically via **AWS authentication** whenever the old token expires.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1936).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -85,8 +80,7 @@ _For details, see the dedicated_ [_HashiCorp Vault guide_](arm-credential-manage
 
 * Upload the **certificate-signed key** while creating the credential.
 *   Supported for **GitHub Enterprise Cloud** orgs.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1937).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -101,8 +95,7 @@ Connect ARM to Jira via **Personal Access Token (PAT)** to meet enterprise compl
 1. Select **Application Token** as **Credential Type**.
 2. Paste the **PAT** generated in Jira.
 3.  Click **Save**.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1938).png" alt="" width="375"><figcaption></figcaption></figure>
 

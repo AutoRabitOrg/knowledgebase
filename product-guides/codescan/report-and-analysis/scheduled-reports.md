@@ -11,8 +11,7 @@ Previously, the project reports were available for download for the main branche
 To configure scheduled reports,
 
 1. Select the CodeScan organization and choose your project.
-2.  Navigate to the **More** tab and choose **Project Reports** from the dropdown.\
-
+2.  Navigate to the **More** tab and choose **Project Reports** from the dropdown.<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3).png" alt=""><figcaption><p>Project Reports</p></figcaption></figure>
 3. Choose **Scheduling** option as **Cron**, if not automatically selected.
@@ -27,7 +26,6 @@ To configure scheduled reports,
 | Day of week  | 1-7 or SUN-SAT  | , - \* ? / L C #           |
 
 5. Choose **Receive Scheduled Reports** as **Enabled**.
-6.  Click **Run now**.\
-
+6.  Click **Run now**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3).png" alt="" width="563"><figcaption><p>Run Now</p></figcaption></figure>

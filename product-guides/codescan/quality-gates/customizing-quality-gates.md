@@ -4,13 +4,11 @@ Quality Gates return a **Pass** or **Fail** (sometimes referred to as **Go/No-Go
 
 To create a new Quality Gate, follow the steps below:
 
-1.  Navigate to your organization's page and select the **Quality Gates** tab.\
-
+1.  Navigate to your organization's page and select the **Quality Gates** tab.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1712).png" alt=""><figcaption><p>Quality Gates tab</p></figcaption></figure>
 2. **Copy** an existing Quality Gate to use as a template or select **Create** to design it from scratch.&#x20;
-3.  Give it a unique name and select **Save**.\
-
+3.  Give it a unique name and select **Save**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1713).png" alt="" width="375"><figcaption><p>Create Quality Gate</p></figcaption></figure>
 4. To add desired conditions with their Warning and Error thresholds, click on **Add Condition**.&#x20;
@@ -23,8 +21,7 @@ Note: To customize a Quality Gate that is already in use, click on **Unlock edit
 
 <figure><img src="../../../.gitbook/assets/QG Unlock edit 10.0.png" alt=""><figcaption></figcaption></figure>
 
-5.  Conditions on **New Code** and **Old Code** must be added separately.\
-
+5.  Conditions on **New Code** and **Old Code** must be added separately.<br>
 
     <figure><img src="../../../.gitbook/assets/QG Condition 10.1.png" alt="" width="375"><figcaption></figcaption></figure>
 6. To assign Quality Gates to specific projects, use the **Project Settings > Quality Gates** menu for your project and select the one you would like to use.

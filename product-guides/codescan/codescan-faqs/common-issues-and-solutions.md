@@ -34,7 +34,7 @@ This error may occur when analyzing projects with very large amounts of metadata
    * Deactivate the **`"Avoid Cleartext Transmission of Sensitive Information in the default quality profile"`** rule.
    * Set the newly created profile as **default**.
 
-For detailed steps, please refer to [Customizing Quality Profiles](../../../product-guides/codescan/quality-profiles/customizing-quality-profiles.md).
+For detailed steps, please refer to [Customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md).
 
 #### Error: Background Tasks Failing
 
@@ -51,8 +51,7 @@ Following a sandbox refresh, you may encounter issues scanning your environment.
 To resolve these issues, simply reauthenticate your environment. Follow these steps:
 
 1. Select Project -> Project Analysis tab
-2.  Click Delete Analysis\
-
+2.  Click Delete Analysis<br>
 
     <figure><img src="../../../.gitbook/assets/image (8) (1) (3).png" alt=""><figcaption><p>Delete Project Analysis</p></figcaption></figure>
 3.  Make sure you DO NOT select the checkbox to Delete the Project Also (as you just want to reattach it while maintaining the same project and its history).
@@ -65,16 +64,13 @@ To resolve these issues, simply reauthenticate your environment. Follow these st
 Selecting the checkbox and deleting the entire project is irreversible and leads to the complete loss of historical analysis data.
 {% endhint %}
 
-4.  Then select Attach Analysis Project.\
-
+4.  Then select Attach Analysis Project.<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Attach Analysis Project</p></figcaption></figure>
-5.  Select Salesforce.\
-
+5.  Select Salesforce.<br>
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Choose Salesforce Analysis Project</p></figcaption></figure>
-6.  It will redirect you to the authorization page. Enter your credentials.\
-
+6.  It will redirect you to the authorization page. Enter your credentials.<br>
 
     <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (2) (1).png" alt=""><figcaption><p>Salesforce Credentials Authorization</p></figcaption></figure>
 

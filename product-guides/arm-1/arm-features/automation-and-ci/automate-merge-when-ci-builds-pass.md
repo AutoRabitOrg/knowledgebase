@@ -34,7 +34,7 @@ The following fields must be configured to start a merge when the build succeeds
 | Merge Type              | Type of merges supported in ARM, i.e., _entire branch, single revision, commit label, release label, alm label_.                                                                                                                                                    |
 | Create GIT Tag          | Create a GIT tag. GIT tags are a simple and effective way to ensure you can keep track of the different versions of your code and the critical quality of Git's version control. GIT Tag operation allows meaningful names to a specific version in the repository. |
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Users will be notified via email of the success or failure of the automated merge process.
 

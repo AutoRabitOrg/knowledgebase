@@ -30,7 +30,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 2. Select the **Repository** and the **Branch**.
 3. Under the **'Build Using'** dropdown, there are two different options to choose from:
 
-**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon to select the baseline revision. A new pop-up window appears; from the list displayed choose the required baseline revision number.
+**Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon to select the baseline revision. A new pop-up window appears; from the list displayed choose the required baseline revision number.
 
 <figure><img src="../../../../../.gitbook/assets/image (2213).png" alt=""><figcaption></figcaption></figure>
 

@@ -31,8 +31,7 @@ There are no new features associated with this release.
 
     <figure><img src="../../../../.gitbook/assets/image (1630).png" alt=""><figcaption><p>Code</p></figcaption></figure>
 
-    Verified after the rule enhancement was engineered that users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected.\
-
+    Verified after the rule enhancement was engineered that users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1631).png" alt=""><figcaption><p>Violation for error thrown</p></figcaption></figure>
 
@@ -45,14 +44,12 @@ There are no new features associated with this release.
     This feature ensures that when the license check is performed, if the project being scanned has a key that is embedded in the license, then the check will pass without needing to reach out to the license server.  This is very useful for customers who are not allowed any connection to sites outside their organization, as it allows the project analysis to complete without connecting to the license server.
 
     \
-    Recently, some customers were reporting that while the scans were completing but also throwing a timeout error.  We have enhanced this feature by changing this notification to occur as a warning log instead of as an error log.\
-
+    Recently, some customers were reporting that while the scans were completing but also throwing a timeout error.  We have enhanced this feature by changing this notification to occur as a warning log instead of as an error log.<br>
 3.  **Enhanced rule “Field Level Security Vulnerabilities”:  Violation message now displays the correct object instead of '{0}'.**
 
     &#x20;
 
-    The existing violation message was neither clear nor accurate.  Instead, when the violation is flagged, the message should display the correct object instead of '{0}'.\
-
+    The existing violation message was neither clear nor accurate.  Instead, when the violation is flagged, the message should display the correct object instead of '{0}'.<br>
 
     This fix includes a more clear and accurate message associated with the violation.
 

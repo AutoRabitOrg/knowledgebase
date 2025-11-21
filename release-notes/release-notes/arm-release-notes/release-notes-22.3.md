@@ -1573,8 +1573,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 #### 1. Squash and merge <a href="#id-1-squash-and-merge" id="id-1-squash-and-merge"></a>
 
-We have added the **Squash and Merge** feature in this release. Sometimes, when merging a long list of changes from a development branch into the master, it's helpful to squash those commits into one change for ease of review and declutter the repo's commit history. AutoRABIT offers an option to squash all commits in a merge request into one commit after the merge is approved and completed.\
-
+We have added the **Squash and Merge** feature in this release. Sometimes, when merging a long list of changes from a development branch into the master, it's helpful to squash those commits into one change for ease of review and declutter the repo's commit history. AutoRABIT offers an option to squash all commits in a merge request into one commit after the merge is approved and completed.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/squash%20and%20merge.gif" alt=""><figcaption></figcaption></figure>
 
@@ -1584,8 +1583,7 @@ We have added the **Squash and Merge** feature in this release. Sometimes, when 
 
 **Packages**
 
-The users could previously build a new package (unlocked or managed) and update the package's version in Salesforce DX. With this release, you may now import packages and update the version of packages created outside of AutoRABIT.\
-
+The users could previously build a new package (unlocked or managed) and update the package's version in Salesforce DX. With this release, you may now import packages and update the version of packages created outside of AutoRABIT.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/import%20packages.gif" alt=""><figcaption></figcaption></figure>
 
@@ -1603,8 +1601,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 The option to list the API-supported and unsupported API components is added to the CI job/deployment rollback. If such components may be deployed to the target environment but do not have API support to delete them, ARM will display them individually as unsupported API types. Take, for example, **RecordType**.
 
-The **RecordType** component may be deployed to the target environment, but it cannot be removed; instead, we need to connect to the target Salesforce environment to deactivate the component.\
-
+The **RecordType** component may be deployed to the target environment, but it cannot be removed; instead, we need to connect to the target Salesforce environment to deactivate the component.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/step%20based%20rollback.gif" alt=""><figcaption></figcaption></figure>
 
@@ -1628,8 +1625,7 @@ The **Export All Users** feature allows the org admins to export a CSV file of a
 * LastLoginDate
 * DeactivatedByName
 * LastModifiedDate
-*   LastModifiedByName.\
-
+*   LastModifiedByName.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/export%20all%20users.gif" alt=""><figcaption></figcaption></figure>
 
@@ -1643,8 +1639,7 @@ We have extended the support of having the pull request support in the CI Job fo
 
 If you want to make sure one or more people approve every commit or merge, you can enforce this workflow by using merge/commit approvals. These approvals allow you to set the number of necessary approvals to approve every commit/ merge in a project.
 
-The org admins' eligibility level has been enhanced with the ARM 22.1 version. If you're an administrator, you will have the privilege to approve self-merge even if the criteria to self-approve a merge is set to FALSE. This permission will be denied to all members of your team except the org admin. To put it another way, no criteria can restrict an org administrator from approving any EZ-commit/ EZ-Merge.\
-
+The org admins' eligibility level has been enhanced with the ARM 22.1 version. If you're an administrator, you will have the privilege to approve self-merge even if the criteria to self-approve a merge is set to FALSE. This permission will be denied to all members of your team except the org admin. To put it another way, no criteria can restrict an org administrator from approving any EZ-commit/ EZ-Merge.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/commit-merge%20approval.gif" alt=""><figcaption></figcaption></figure>
 

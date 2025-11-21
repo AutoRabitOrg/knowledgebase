@@ -4,14 +4,12 @@
 
 Permissions can be set at the **Organization level** or at a **Project level** to give you full control over what your members can view and create.
 
-1.  Permissions can be set at the **Organization** level: Navigate to **`Administration > Permissions`** menu and apply to individual users or multiple users using the Groups feature.\
-
+1.  Permissions can be set at the **Organization** level: Navigate to **`Administration > Permissions`** menu and apply to individual users or multiple users using the Groups feature.<br>
 
     <figure><img src="../../../../.gitbook/assets/Permissions 2.1.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/Permissions 2.2.png" alt=""><figcaption></figcaption></figure>
-2.  Permissions can be set by **Project level**: Navigate to the **`Project Settings > Permissions`** menu and apply to individual users or multiple users using the Groups feature.\
-
+2.  Permissions can be set by **Project level**: Navigate to the **`Project Settings > Permissions`** menu and apply to individual users or multiple users using the Groups feature.<br>
 
     <figure><img src="../../../../.gitbook/assets/P Permission 2.3.png" alt=""><figcaption></figcaption></figure>
 

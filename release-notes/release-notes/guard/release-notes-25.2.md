@@ -331,10 +331,9 @@ These changes make Risk Assessment more accessible for both technical and non-te
 Creating new users is now faster and more flexible. Admins can set up accounts with just an **email address** and **role**. Other details (username, first name, and last name) are optional and hidden by default but can be filled out as needed.
 
 * The system now **automatically handles username conflicts** by suggesting available alternatives.
-*   The **user list view** and **user icons** have been updated to reflect these enhancements.\
+*   The **user list view** and **user icons** have been updated to reflect these enhancements.<br>
 
-
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

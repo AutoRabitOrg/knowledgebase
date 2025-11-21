@@ -45,8 +45,7 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 1. Log in to your Salesforce org through the browser.
 2. Go to **Setup**.
-3. Use the **Quick Find/Search** box to open the **Apex Test Execution** page.\
-
+3. Use the **Quick Find/Search** box to open the **Apex Test Execution** page.<br>
 
 ![](<../../../../.gitbook/assets/image (776).png>)
 

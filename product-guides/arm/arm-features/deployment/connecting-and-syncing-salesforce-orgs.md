@@ -29,7 +29,7 @@ To perform org synchronization, follow the below steps:
 
     To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="436"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="436"><figcaption></figcaption></figure>
 
 6.  On the next screen, you can:
 

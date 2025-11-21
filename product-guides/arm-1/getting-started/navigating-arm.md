@@ -2,8 +2,7 @@
 
 ## Welcome to ARM!! <a href="#welcome-to-arm" id="welcome-to-arm"></a>
 
-You'll see this when you log in to your ARM account. \
-
+You'll see this when you log in to your ARM account. <br>
 
 <figure><img src="../../../.gitbook/assets/image (1899).png" alt=""><figcaption></figcaption></figure>
 
@@ -11,8 +10,7 @@ Let's get to know the main areas of the ARM application.
 
 ## The Menu <a href="#the-menu" id="the-menu"></a>
 
-You see a list of icons with the context in the top-right corner.\
-
+You see a list of icons with the context in the top-right corner.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1897).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -27,8 +25,7 @@ The **Experience Toggle** allows users to switch between the classic interface a
 A **`Create New`** drop-down is available, which allows users to perform the primary and most used features in ARM, such as creating a CI job or a merge operation, etc., The users can also find the listed **`Create New`** operations within the ARM sub-module.
 
 Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.\
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/image (1898).png" alt="" width="195"><figcaption></figcaption></figure>
 
@@ -38,8 +35,7 @@ Here you can:
 
 1. Find links to [**ARM** ](https://knowledgebase.autorabit.com/product-guides/arm)**Documentation**
 2. Know about the ARM version on which you're logged in
-3. Reach out to **Support Team**\
-
+3. Reach out to **Support Team**<br>
 
 <figure><img src="../../../.gitbook/assets/image (1900).png" alt="" width="255"><figcaption></figcaption></figure>
 
@@ -50,8 +46,7 @@ Here you can:
 1. View your profile or update your basic information, personal email settings, etc.
 2. Change your current password
 3.  Logout from your ARM account\
-    \
-
+    <br>
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-11 at 1.56.20 PM (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,8 +55,7 @@ Here you can:
 On the left-hand side of the application, you see a list of icons with the context in it. These icons are nothing but the modules or features of ARM. The sub-modules which are part of it will be listed by hovering your mouse over each module.
 
 Let's examine each of these links in detail:\
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/image (1901).png" alt="" width="246"><figcaption></figcaption></figure>
 

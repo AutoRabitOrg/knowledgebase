@@ -17,8 +17,7 @@ Before rolling back your deployment, ensure the rollback feature is turned on fo
 Next,
 
 1. Go to the **`Deployment History`** screen and choose the deployment label from the list for which you would like to trigger the rollback.
-2.  Click **`Rollback`**.\
-
+2.  Click **`Rollback`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1669).png" alt=""><figcaption><p>Rollback Screen</p></figcaption></figure>
 3. Find the metadata components that will be rolled back (under the **`Constructive Changes`** section).
@@ -55,8 +54,7 @@ Next,
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!\
-
+10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
 ### Selective Rollback
 
@@ -69,8 +67,7 @@ In AutoRABIT, selective rollback can be performed using the following steps:
 
 * **Apex Class:** A1V
 * **Apex Class:** AccountAnalyzer
-*   **Custom Object:** AA\_Parts\_\_c\
-
+*   **Custom Object:** AA\_Parts\_\_c<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1670).png" alt=""><figcaption><p>Rollback Selection</p></figcaption></figure>
 

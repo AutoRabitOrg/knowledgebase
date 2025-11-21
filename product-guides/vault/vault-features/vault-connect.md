@@ -205,8 +205,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
    2. **Require Secret for Web Server Flow**
    3. **Require Secret for Refresh Token Flow**
    4. **Enable Client Credentials Flow**
-7.  Please find the following screenshot for reference\
-
+7.  Please find the following screenshot for reference<br>
 
     <figure><img src="../../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
 8. Click Save.
@@ -266,40 +265,33 @@ To streamline the process and enhance functionality, the Vault Connect integrati
 
     In Salesforce Setup, create a Visualforce page for the object where the rich text data needs to be displayed.
 2. Example: To display emailmessage body field in the emailMessage\_x object layout, follow these steps:
-3.  Open the Developer Console by going to: Setup → Developer Console\
+3.  Open the Developer Console by going to: Setup → Developer Console<br>
 
+    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+4.  After Landing on the developer console, create a new Visualforce page and save it to continue with the script creation.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  After Landing on the developer console, create a new Visualforce page and save it to continue with the script creation.\
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+5.  Enter the script and save it.<br>
 
-
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-5.  Enter the script and save it.\
-
-
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 6. Example script:`<apex:page standardController="CustomX_c_x__x" >`\
    `<apex:outputText style="text-align:left" value="{!CustomX_c_x__x.RicheRich_c__c}" escape="false" />`\
    `</apex:page>`
 7. Add the Visualforce page to the object layout and continue to view the email messages in external objects:
    1. Go to the external object through: Setup → External Objects
-   2.  Select any external object as required. Here, email message is considered for illustration.\
+   2.  Select any external object as required. Here, email message is considered for illustration.<br>
 
-
-       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    3. **Add the Visualforce page to the object layout**
-      1.  Go to the ‘Page Layout’ in the external object and observe the Visualforce page.\
+      1.  Go to the ‘Page Layout’ in the external object and observe the Visualforce page.<br>
 
+          <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      2.  Observe the Visualforce pages highlighted.<br>
 
-          <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-      2.  Observe the Visualforce pages highlighted.\
+          <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      3.  Add the Visualforce page to the layout. Observe the ‘EmsgVFPage’ added to the page layout.<br>
 
-
-          <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-      3.  Add the Visualforce page to the layout. Observe the ‘EmsgVFPage’ added to the page layout.\
-
-
-          <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 8. **Verify the Update**: Open a record within the object to ensure the rich text/html body, including images, is displayed correctly.
 
 This enhancement ensures that archived email body content with rich text and images is rendered seamlessly in Salesforce.
@@ -315,36 +307,29 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 **Step-by-Step Guide:**
 
 1. Log in to the Vault application.
-2.  Click on any Org to navigate to Vault – Connect.\
-
+2.  Click on any Org to navigate to Vault – Connect.<br>
 
     <figure><img src="../../../.gitbook/assets/image (68) (2).png" alt=""><figcaption></figcaption></figure>
-3.  Click on the “Connect” tab to go to the Connect application.\
-
+3.  Click on the “Connect” tab to go to the Connect application.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 4. Click on the “**Sync with Salesforce**” button to initiate the sync procedure
    * Please observe the information icon for informational purposes.
-5.  On initiating “**Sync with Salesforce,**” the user will go to the “Sync history” page.\
-
+5.  On initiating “**Sync with Salesforce,**” the user will go to the “Sync history” page.<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 6. This page will provide information on how many times the sync has happened to date.
-7.  On clicking “**Sync with Salesforce,**” the following pop-up will be displayed.\
-
+7.  On clicking “**Sync with Salesforce,**” the following pop-up will be displayed.<br>
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
-8.  Clicking on “**Confirm**” will redirect the user to the object list page, where the list of objects is shown.\
-
+8.  Clicking on “**Confirm**” will redirect the user to the object list page, where the list of objects is shown.<br>
 
     <figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
-9.  Click on “View Logs” to display the related logs.\
-
+9.  Click on “View Logs” to display the related logs.<br>
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
 10. Logs can be downloaded using the "Download" button.
-11. Click on any of the objects to open the related pop-up and make the required selections.\
-
+11. Click on any of the objects to open the related pop-up and make the required selections.<br>
 
     <figure><img src="../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 12. Field Label Name: The field label can be updated to a custom name by clicking on the pencil icon provided.
@@ -354,52 +339,42 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
     * For polymorphic fields, a pencil icon will be displayed beside the fields under the “Reference to” column.
 
     <figure><img src="../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
-15. An error will be displayed under the ‘error’ column if no references were selected under the “Reference to” column.\
-
+15. An error will be displayed under the ‘error’ column if no references were selected under the “Reference to” column.<br>
 
     <figure><img src="../../../.gitbook/assets/image (9) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (10) (1) (2).png" alt=""><figcaption></figcaption></figure>
-16. On completing the selection(s), click on the “**Sync with Salesforce**” button to continue with the sync procedure.\
-
+16. On completing the selection(s), click on the “**Sync with Salesforce**” button to continue with the sync procedure.<br>
 
     <figure><img src="../../../.gitbook/assets/image (11) (1) (2).png" alt=""><figcaption></figcaption></figure>
-17. An information pop-up will be displayed on clicking the “**Sync with Salesforce**” button.\
-
+17. An information pop-up will be displayed on clicking the “**Sync with Salesforce**” button.<br>
 
     <figure><img src="../../../.gitbook/assets/image (12) (1) (2).png" alt=""><figcaption></figcaption></figure>
-18. Clicking on “CONFIRM” will display a success message pop-up.\
-
+18. Clicking on “CONFIRM” will display a success message pop-up.<br>
 
     <figure><img src="../../../.gitbook/assets/image (13) (1) (2).png" alt=""><figcaption></figcaption></figure>
-19. The latest job can be observed as the top entry on the “Sync history” page.\
-
+19. The latest job can be observed as the top entry on the “Sync history” page.<br>
 
     <figure><img src="../../../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>
-20. Clicking on the latest job will provide the list of objects from the job.\
-
+20. Clicking on the latest job will provide the list of objects from the job.<br>
 
     <figure><img src="../../../.gitbook/assets/image (15) (1) (2).png" alt=""><figcaption></figcaption></figure>
-21. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.\
-
+21. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.<br>
 
     <figure><img src="../../../.gitbook/assets/image (16) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 
-22. After performing the “**Sync With Salesforce**”, the user has to go to the “External Objects” and select the required object.\
-
+22. After performing the “**Sync With Salesforce**”, the user has to go to the “External Objects” and select the required object.<br>
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 23. To add the related lists to the page layout of the parent object, the user first has to set the field-level security by going to the field under the object. The permission should be set to 'visible.'
 24. The user can only view data to which they have access.
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-25. After setting the permissions to visible, the user should continue to edit the parent object(s) to add related lists to the page layouts.\
-
+25. After setting the permissions to visible, the user should continue to edit the parent object(s) to add related lists to the page layouts.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-26. Click edit on the “**Page Layouts.**”\
-
+26. Click edit on the “**Page Layouts.**”<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 27. On opening the page layouts, the user can view the “Related Lists” on the left side pane as highlighted.

@@ -30,13 +30,11 @@ Only **Org Administrators** can view, reset, or delete workspaces.
 ### Viewing the Workspace List <a href="#viewing-the-workspace" id="viewing-the-workspace"></a>
 
 1. Log in to ARM.
-2.  Go to **Settings › Workspaces**.\
-
+2.  Go to **Settings › Workspaces**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1950).png" alt="" width="234"><figcaption></figcaption></figure>
 3.  The list shows every workspace ever created:\
-    \
-
+    <br>
 
     <figure><img src="../../../.gitbook/assets/image (1953).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,8 +56,7 @@ Reset wipes the folder contents but keeps the workspace record.
 
 1. Find the workspace and click **Reset**.
 2.  Confirm to restore default state.\
-    \
-
+    <br>
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.40.11 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -70,8 +67,7 @@ Reset wipes the folder contents but keeps the workspace record.
 Delete removes the workspace permanently (repositories remain intact).
 
 1. Click the trash-can icon next to the workspace.
-2.  Confirm twice—you cannot undo this.\
-
+2.  Confirm twice—you cannot undo this.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1954).png" alt=""><figcaption></figcaption></figure>
 

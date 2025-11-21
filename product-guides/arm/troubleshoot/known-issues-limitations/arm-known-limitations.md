@@ -239,8 +239,7 @@ Below are the limitations of ARM related to salesforce dx:
     * For all post activities that were triggered while configuring the CI Job, their status report can be seen in the **CI Job Result > Post Activities** section. However, in order to view the detailed information of the activities, you need to view their respective History/ Summary page. For example, for a merge process triggered as a post-activity, its detailed information such as merge label name, source and destination branch, merge conflict files (if any) and other information can be seen only on the Merge Summary page.
     * While the post activities are running for **"Cycle 1"**, and if the **"Cycle 2"** deployment post activities are initiated before the **"Cycle 1"** is complete, in such case **"Cycle 1"** changes will be overridden.
     * With ARM 19.2 release onwards, the users will have another option to choose i.e., **"Process commit revision via hook only"** for Version Control as GIT (Enterprise BITBUCKET v, BITBUCKET, VSGIT, GITLAB, GITHUB) type.
-5.  In case of a failed CI Job deployment, AutoRABIT sends an email notification to the users informing about the revision from which the deployment got failed. But if the number of recipients is more than 50, this notification is not sent.\
-
+5.  In case of a failed CI Job deployment, AutoRABIT sends an email notification to the users informing about the revision from which the deployment got failed. But if the number of recipients is more than 50, this notification is not sent.<br>
 
     However, for the SFDX and vlocity jobs, users will not get notified of any failed revisions.
 

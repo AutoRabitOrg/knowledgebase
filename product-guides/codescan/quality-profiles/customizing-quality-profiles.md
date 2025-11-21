@@ -14,36 +14,29 @@ To make a custom Quality Profile, you can create a new profile or copy one of ou
 
 To customize the Quality Profile, follow the steps below:
 
-1.  Access the Quality Profile menu from the Organization’s home page.\
-
+1.  Access the Quality Profile menu from the Organization’s home page.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1726).png" alt="" width="339"><figcaption><p>Quality Profile menu</p></figcaption></figure>
-2.  Use the **Create** button at the top right of the page to create a new Quality Profile.\
-
+2.  Use the **Create** button at the top right of the page to create a new Quality Profile.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1727).png" alt=""><figcaption><p>Create Quality Profile</p></figcaption></figure>
 3. Enter the **Name** and choose a **Language** for the profile. Additionally, you can either extend/copy an existing Quality Profile or create a blank Quality Profile..
 
 <figure><img src="../../../.gitbook/assets/New QP Select 8.7.png" alt="" width="375"><figcaption><p>New Quality Profile</p></figcaption></figure>
 
-4.  Click **Create**.\
-
+4.  Click **Create**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1728).png" alt=""><figcaption><p>Create New Quality Profile</p></figcaption></figure>
-5.  Click on the more icon and then click on **Copy** to copy a default profile.\
-
+5.  Click on the more icon and then click on **Copy** to copy a default profile.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1729).png" alt=""><figcaption><p>Copy a Default Profile</p></figcaption></figure>
-6.  Once you have chosen a name for your profile, click the **Activate More** button to begin your customization.\
-
+6.  Once you have chosen a name for your profile, click the **Activate More** button to begin your customization.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1730).png" alt="" width="375"><figcaption><p>Activate More</p></figcaption></figure>
-7.  Use the filters on the left to determine the rules you want to see, and click the **Activate/Deactivate** button to add/remove them from your quality profile.\
-
+7.  Use the filters on the left to determine the rules you want to see, and click the **Activate/Deactivate** button to add/remove them from your quality profile.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1731).png" alt=""><figcaption><p>Activate/Deactivate</p></figcaption></figure>
-8.  You can bulk activate/deactivate rules for your profile using the **Bulk Change** button.\
-
+8.  You can bulk activate/deactivate rules for your profile using the **Bulk Change** button.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1732).png" alt=""><figcaption><p>Bulk Change option</p></figcaption></figure>
 9. When activating a rule, you will be given the option to change its **severity** and any other parameters the rule may have.
@@ -60,8 +53,7 @@ To customize the Quality Profile, follow the steps below:
 > Set the value for `suppressUnitTestViolations`.\
 > `Default`: _The Default is actually 'Display' and it will display the unit test violations suppression, means, the issues will get displayed in Test Classes for the parameters._\
 > `Display`: _Displays the unit test violations suppression._\
-> `Suppress`: _Unit test violations will be suppressed._\
->
+> `Suppress`: _Unit test violations will be suppressed._<br>
 >
 > ![](<../../../.gitbook/assets/TestList 9.4.png>)
 

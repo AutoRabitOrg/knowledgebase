@@ -14,40 +14,34 @@ Follow the steps below to use the **Analysis Scope** feature on [CodeScan cloud]
 CodeScan can scan 3rd party libraries only when the code is present in the file, and not when it's referenced.
 {% endhint %}
 
-1.  Open the Project under the Organization for which you need to run the analysis and navigate to **Project Settings > General Settings > Analysis Scope**.\
-
+1.  Open the Project under the Organization for which you need to run the analysis and navigate to **Project Settings > General Settings > Analysis Scope**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1) (1).png" alt=""><figcaption><p>Project Settings</p></figcaption></figure>
 2.  You will now be able to view the tab, under which you can select your required specification to enable this feature during the analysis.
 
-    *   **Wildcards:** If you scroll the tab farther to the end, you can see a portion that says “wildcards,” under which there are rules and examples, which help you understand how to enter the specifications or part of the file name to enable this feature. \
-
+    *   **Wildcards:** If you scroll the tab farther to the end, you can see a portion that says “wildcards,” under which there are rules and examples, which help you understand how to enter the specifications or part of the file name to enable this feature. <br>
 
         <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>Wildcards</p></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
-3.  If we go under **files**, you will be able to view two options as follows:\
-
+3.  If we go under **files**, you will be able to view two options as follows:<br>
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>File Exclusions</p></figcaption></figure>
 
     * **Source File Exclusions**: to exclude source code files. Specifying an exclusion means that everything under your directory will be included in analysis except the files with paths that match your exclusion pattern.
     * **Source File Inclusions**: Helps include only the specific source code files in the analysis. In a few corner cases, it is necessary to be explicit about what's included in analysis and leave out everything else, but that is not the normal case, and setting inclusions should not be the first thing you try when configuring a new project.
-4.  Once the analysis is completed, go to the **Code** tab to view the files as per your specified settings.\
-
+4.  Once the analysis is completed, go to the **Code** tab to view the files as per your specified settings.<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>Code Tab</p></figcaption></figure>
 
 Here are a couple of implementation examples:
 
-*   **For Source File Exclusions**:\
-
+*   **For Source File Exclusions**:<br>
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (3) (1).png" alt=""><figcaption><p>Source File Exclusions</p></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (5) (1) (3) (1).png" alt=""><figcaption><p>Classes</p></figcaption></figure>
-*   **For Source File Inclusions**:\
-
+*   **For Source File Inclusions**:<br>
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (3) (1).png" alt=""><figcaption><p>Source File Inclusions</p></figcaption></figure>
 
@@ -57,14 +51,13 @@ You can accomplish this by utilizing the "**Ignore Issues on Multiple Criteria**
 
 To do this, simply provide the rule key and file path name.
 
-**Example:**\
-
+**Example:**<br>
 
 <figure><img src="../../../.gitbook/assets/image (8) (6).png" alt=""><figcaption><p>Field-Level Security Vulnerabilities</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (6).png" alt=""><figcaption><p>Ignore Issues on Multiple Criteria</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt=""><figcaption><p>Ignore Issues on Multiple Criteria</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Rule Key Pattern</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Rule Key Pattern</p></figcaption></figure>
 
 
 

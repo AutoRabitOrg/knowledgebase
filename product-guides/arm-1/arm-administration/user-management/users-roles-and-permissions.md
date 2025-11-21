@@ -37,14 +37,12 @@ General users work in ARM modules according to permissions their Admin assigns. 
 ## Create a New User Account <a href="#create-a-new-user-account" id="create-a-new-user-account"></a>
 
 1. Log in to ARM.
-2.  Go to **Settings › Users** and click **Add User**.\
-
+2.  Go to **Settings › Users** and click **Add User**.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.46.31 PM.png" alt=""><figcaption></figcaption></figure>
-3.  Fill **User Details** and assign **Role Permissions**.\
+3.  Fill **User Details** and assign **Role Permissions**.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (24).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (24) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Choose **Save & Activate** (immediate) or **Save Now & Activate Later**.
 5. The new user receives an email to set a password.
 6. The user appears in **Admin › Users**.
@@ -53,8 +51,7 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 ## Edit a User Account <a href="#edit-a-user-account" id="edit-a-user-account"></a>
 
-1.  In **Settings › Users**, Locate the user and Click on **Actions** and click **Edit**.\
-
+1.  In **Settings › Users**, Locate the user and Click on **Actions** and click **Edit**.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.50.01 PM.png" alt=""><figcaption></figcaption></figure>
 2. Update fields (Username and Email are immutable).
@@ -64,13 +61,11 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 ## Delete or Suspend a User <a href="#delete-or-suspend-a-users-account" id="delete-or-suspend-a-users-account"></a>
 
-*   **Delete User** – permanently remove the account.\
-
+*   **Delete User** – permanently remove the account.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.52.36 PM.png" alt=""><figcaption></figcaption></figure>
 *   **Activate / De-activate** – toggle suspension.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.53.42 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -85,8 +80,7 @@ Confirm the action to proceed.
 
 Admins can still log in with username/password.\
 To override SSO for select users, uncheck **Enforce SSO** next to their names.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.57.01 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -98,12 +92,10 @@ To override SSO for select users, uncheck **Enforce SSO** next to their names.\
 
 Admins can download all user data as CSV.
 
-1.  In **Settings › Users**, click **Export All Users**.\
-
+1.  In **Settings › Users**, click **Export All Users**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  Select fields and click **Export**.\
-
+2.  Select fields and click **Export**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 3. A CSV downloads to your computer.
@@ -114,17 +106,14 @@ Admins can download all user data as CSV.
 
 ## Creating and Editing Roles <a href="#creating-and-editing-roles" id="creating-and-editing-roles"></a>
 
-1.  Go to **Settings › Users › Roles**.\
-
+1.  Go to **Settings › Users › Roles**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-2.  Click **Create Role**.\
-
+2.  Click **Create Role**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 3.  Provide a **Role Name**, **Description**, and tick permissions.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Click **Save**.
@@ -135,15 +124,13 @@ Admins can download all user data as CSV.
 
 ## User Permissions <a href="#user-permission" id="user-permission"></a>
 
-1.  Open **Settings › Permissions**.\
+1.  Open **Settings › Permissions**.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Select two or more users and click **Bulk Assignment**.\
-    \
+    <br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Go to **Roles** and select the required role\
    \- Repeat the same process for **Salesforce Orgs**, **CI Jobs**, and **Version Control**.\
    \- Once all selections are made, click **Save**.

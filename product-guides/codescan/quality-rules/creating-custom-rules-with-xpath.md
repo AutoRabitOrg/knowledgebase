@@ -118,8 +118,7 @@ The type of component being visualized is flow. Decisions exist within that flow
 
 1. Log in to your CodeScan Cloud account or SonarQube™
 2. Click on the Rules menu
-3.  In the Filters pane, search for XPath rule template.\
-
+3.  In the Filters pane, search for XPath rule template.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1725).png" alt=""><figcaption><p>XPath Rule Template</p></figcaption></figure>
 4. Select the XPath rule template of the language of your choice.&#x20;
@@ -138,7 +137,7 @@ Now you can add it to your Quality Profile as you would any built in-rule.  Plea
 
 In the following screenshot, the CodeScan Rule Designer rule is not being used to validate the XPath expression.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### To download the Custom Rule designer:
 

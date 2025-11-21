@@ -23,8 +23,7 @@ Ensure you have the following:
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-4.  Next, select the **`restore source`** and its **`configuration`** from the dropdown.\
-
+4.  Next, select the **`restore source`** and its **`configuration`** from the dropdown.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1564).png" alt=""><figcaption></figcaption></figure>
 5. Click **`Get Details`**.
@@ -51,12 +50,10 @@ EZ-Restore copies everything from the source to the destination, including new, 
 
 #### **EZ-Restore Steps:**
 
-1.  Select the backup(s) from the list and click on the **`EZ Restore`** button.\
-
+1.  Select the backup(s) from the list and click on the **`EZ Restore`** button.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1562).png" alt=""><figcaption></figcaption></figure>
-2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button. \
-
+2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button. <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1561).png" alt=""><figcaption></figcaption></figure>
 3. On the next screen:
@@ -70,8 +67,7 @@ EZ-Restore copies everything from the source to the destination, including new, 
    * **`Disable Relationship Mapping:`** The child objects related to selected objects will not be fetched on selection.
    * **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may wish to disable any triggers you have set. _This feature disables Salesforce triggers only.  Any managed package triggers will not be disabled._
 5. The list of **metadata** and **data** objects replicated will be displayed for the last time before the restore process begins. You will not have options to select individual objects as it is an entire restore process.
-6.  Click **`Restore Now`**.\
-
+6.  Click **`Restore Now`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1563).png" alt=""><figcaption></figcaption></figure>
 
@@ -144,8 +140,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1644318580634.png" alt=""><figcaption></figcaption></figure>
 
-*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup. \
-
+*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup. <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
 
@@ -159,8 +154,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
      3. **`Enable serial mode for Bulk API:`** Serial mode processes batch one at a time; however, it increases the processing time for a load.
      4. **`Disable Relationship Mapping:`** The child objects related to selected objects are not fetched on selection.
      5. **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may disable any triggers you have set. _This feature disables Salesforce triggers only. Any managed package triggers are not disabled._
-5.  Click **`Restore Now`**.\
-
+5.  Click **`Restore Now`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
 6. You'll be taken to the **`Restore Summary`** screen, which will display the status of the recently triggered restore activity.
@@ -195,4 +189,4 @@ For each restore activity triggered in Vault, you will find the details below:
 
 <table><thead><tr><th width="210">Attribute</th><th>Description</th></tr></thead><tbody><tr><td><code>Label</code></td><td>The label name you assigned for your restore activity.<br>Click on the label to find the list of successful/failed metadata and data members that are part of the restore operation. Also, you can <strong>export</strong> to save the restored metadata/data info in CSV format locally. </td></tr><tr><td><code>Backup Info</code></td><td>Get a snapshot of your restore operation</td></tr><tr><td><code>Date/Time</code></td><td>Date and time stamp for your restore operation</td></tr><tr><td><code>Duration</code></td><td>Total time to complete the restore operation</td></tr><tr><td><code>MetaSuccess</code></td><td>The total count of metadata objects successfully restored</td></tr><tr><td><code>MetaFailure</code></td><td>Total count of metadata objects that failed to restore</td></tr><tr><td><code>SuccessRecords</code></td><td>The total count of data objects successfully restored</td></tr><tr><td><code>FailedRecords</code></td><td>Total count of data objects that was unable to restore</td></tr><tr><td><code>Status</code></td><td>Restore status (success or failure)</td></tr><tr><td><code>Actions</code></td><td><p>Additional actions:</p><ul><li><strong><code>Restore summary:</code></strong> View the restore summary report</li><li><strong><code>Log:</code></strong> Find the log details for your restore operation</li><li><strong><code>Abort:</code></strong> For an ongoing replicate operation, you can abort the process in between using the <strong><code>Abort</code></strong> icon</li></ul></td></tr></tbody></table>
 
-\
+<br>

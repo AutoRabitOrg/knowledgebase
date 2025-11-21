@@ -28,8 +28,7 @@ For priority, you can choose from the following severity criteria: critical, hig
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-24 at 3.38.08 PM.png" alt=""><figcaption></figcaption></figure>
 
-Multiple criteria can be configured based on your business requirements. \
-
+Multiple criteria can be configured based on your business requirements. <br>
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-24 at 3.43.13 PM (1).png" alt="" width="563"><figcaption></figcaption></figure>
 

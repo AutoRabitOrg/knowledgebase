@@ -36,13 +36,11 @@ For more information, see [Scheduled Reports](https://knowledgebase.autorabit.co
 
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-Z50YWBQ7.png)
 
-Fig 1: Old Screen\
-
+Fig 1: Old Screen<br>
 
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-GQ2NQX2R.png)
 
-Fig 2: New Screen\
-
+Fig 2: New Screen<br>
 
 2. With this update, the **Add Member** button on the **Members** page for all CodeScan versions is deleted.
 

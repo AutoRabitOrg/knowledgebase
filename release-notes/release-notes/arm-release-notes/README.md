@@ -244,8 +244,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 **Release Date**: **21 September 2025**
 
-**Highlights**: Fixes for EZ-Commit folder retrieval, branch registration, SCA validation, and webhook API token updates.\
-
+**Highlights**: Fixes for EZ-Commit folder retrieval, branch registration, SCA validation, and webhook API token updates.<br>
 
 * **EZ-Commit – Report and Dashboard Folder Retrieval**\
   Fixed an issue where report and dashboard folders were not being retrieved when using a package.xml. Now, folders and their members are correctly retrieved during EZ-Commit, covering scenarios for both DX and non-DX repos, with and without Autodraft.\
@@ -324,12 +323,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
-* **Permission Set – Deleted Tags Displayed:** Resolved an issue where deleted tags appeared under Permission Sets when committing with ServicePresenceStatus. Support for ServicePresenceStatusAccess has been added to Permission Sets, and necessary code changes were made to ensure correct behavior.\
-
-* **Profile Compare – Custom Permissions Not Visible:** Fixed an issue where the Profile Compare feature in the Deployment module did not show custom permissions for orgs. Updated UI logic ensures that deltas for custom permissions now display correctly.\
-
-* **Reports – Discrepancy in Deployment Counts:** Addressed a mismatch where reports displayed an incorrect deployment count when using custom range filters. Deployment counts are now consistent with actual values.\
-
+* **Permission Set – Deleted Tags Displayed:** Resolved an issue where deleted tags appeared under Permission Sets when committing with ServicePresenceStatus. Support for ServicePresenceStatusAccess has been added to Permission Sets, and necessary code changes were made to ensure correct behavior.<br>
+* **Profile Compare – Custom Permissions Not Visible:** Fixed an issue where the Profile Compare feature in the Deployment module did not show custom permissions for orgs. Updated UI logic ensures that deltas for custom permissions now display correctly.<br>
+* **Reports – Discrepancy in Deployment Counts:** Addressed a mismatch where reports displayed an incorrect deployment count when using custom range filters. Deployment counts are now consistent with actual values.<br>
 * **SSO Configuration – Empty Metadata File:** Corrected an issue where downloading the AutoRABIT SSO Metadata XML returned an empty file. The file now downloads with the correct default content.
 
 ***
@@ -356,10 +352,8 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
-* **CI Jobs – Baseline Revision Update Issue**: Resolved an issue where CI jobs were stuck and queued after a specific build. The problem was traced to a scenario where the baseline revision was not updating. The back end has been updated to address this case and additional logging has been added for better diagnostics.\
-
-* **Admin – Adding Released Users to Teams**: Fixed an issue where adding a delegated or released user to a team displayed a success message but did not actually add the user. The root cause was an error in fetching released user details. Logic has been corrected to ensure the released user is properly added to the team.\
-
+* **CI Jobs – Baseline Revision Update Issue**: Resolved an issue where CI jobs were stuck and queued after a specific build. The problem was traced to a scenario where the baseline revision was not updating. The back end has been updated to address this case and additional logging has been added for better diagnostics.<br>
+* **Admin – Adding Released Users to Teams**: Fixed an issue where adding a delegated or released user to a team displayed a success message but did not actually add the user. The root cause was an error in fetching released user details. Logic has been corrected to ensure the released user is properly added to the team.<br>
 * **CI Jobs – Rollback Failure for Selective Components**: Addressed a rollback failure during CI job deployments when rolling back selective components, resulting in a “Not in Package.xml” error. Back-end logic has been updated to handle the workflow metadata type correctly.
 
 ***
@@ -382,12 +376,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
-* **CI job cleanup for Provar executions**: Unused test-result folders in Provar job paths were not deleted after runs, slowly consuming disk space. A cleanup mechanism now removes temporary directories and report data immediately after each job completes.\
-
-* **Destructive change detection in remote branches**: CI jobs missed destructive updates performed directly in GitHub, causing build failures. Backend logic has been corrected so that remote destructive changes are reliably detected and processed.\
-
-* **Release label revision count displayed inaccurately**: When modifying an existing release label, the UI showed an incorrect number of selected revisions. Increment logic has been fixed so the description now reflects the true revision count.\
-
+* **CI job cleanup for Provar executions**: Unused test-result folders in Provar job paths were not deleted after runs, slowly consuming disk space. A cleanup mechanism now removes temporary directories and report data immediately after each job completes.<br>
+* **Destructive change detection in remote branches**: CI jobs missed destructive updates performed directly in GitHub, causing build failures. Backend logic has been corrected so that remote destructive changes are reliably detected and processed.<br>
+* **Release label revision count displayed inaccurately**: When modifying an existing release label, the UI showed an incorrect number of selected revisions. Increment logic has been fixed so the description now reflects the true revision count.<br>
 * **Static resources misidentified during destructive EZ-Commit**: Deleting one static resource while another with a similar name remained caused the diff view to include both files. Selection logic has been refined so only the intended destructive file is picked up, even when naming conventions overlap.
 
 ***
@@ -402,8 +393,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 **Bug Fixes**
 
-* **QuickAction metadata deployments fail due to package.xml exclusion**: Fixed the package-preparation logic so QuickAction files are included, allowing validation and deployment to succeed.\
-
+* **QuickAction metadata deployments fail due to package.xml exclusion**: Fixed the package-preparation logic so QuickAction files are included, allowing validation and deployment to succeed.<br>
 * **Environment-provisioning flow errors not displayed**: Corrected run-time array handling so success and failure details are now shown when enabling flows via an environment-provisioning template.
 
 ***
@@ -416,12 +406,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
-* **Merge Conflict Resolution – UI Handling:** Improved the reliability of conflict resolution in the Merge Conflict screen. Resolved a UI issue where repeated lines were unintentionally removed after resolving conflicts using "Block from Source/Destination", leading to incorrect merges.\
-
-* **Destructive Changes in Commit (Non-DX):** Enhanced support for Report, Dashboard, Document, and EmailTemplate components in the Deleted tab under EZ-Commit for Non-DX repositories. These were previously not triggering the proper validation and error messaging during component selection.\
-
-* **CI Job Deployment – Classic Manifest Support in DX:** Fixed a bug where CI Jobs using DX repositories and Classic Package Manifest settings only packaged destructive changes, ignoring constructive ones. Validations and deployments now correctly handle all combinations of destructive and constructive changes.\
-
+* **Merge Conflict Resolution – UI Handling:** Improved the reliability of conflict resolution in the Merge Conflict screen. Resolved a UI issue where repeated lines were unintentionally removed after resolving conflicts using "Block from Source/Destination", leading to incorrect merges.<br>
+* **Destructive Changes in Commit (Non-DX):** Enhanced support for Report, Dashboard, Document, and EmailTemplate components in the Deleted tab under EZ-Commit for Non-DX repositories. These were previously not triggering the proper validation and error messaging during component selection.<br>
+* **CI Job Deployment – Classic Manifest Support in DX:** Fixed a bug where CI Jobs using DX repositories and Classic Package Manifest settings only packaged destructive changes, ignoring constructive ones. Validations and deployments now correctly handle all combinations of destructive and constructive changes.<br>
 * **Release Label Creation – Git SSH Response Handling:** Addressed an issue where release label creation failed due to invalid credentials. The system now properly handles Git responses when fetching branches via SSH, ensuring artifact preparation continues smoothly.
 
 ***
@@ -432,12 +419,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 Highlights: Stability and accuracy improvements across EZ Commit, Branching Baseline, and CI Jobs.
 
-* **EZ Commit** – Deployment-validation reports older than 30 days were missing in EZ Commit. It's now available.\
-
-* **EZ Commit** – Malformed XML errors when committing permission-set files are resolved by refining the copy logic.\
-
-* **Branching Baseline** – UNKNOWN\_EXCEPTION errors during batch processing eliminated by removing the parent Workflow entry and explicitly adding the child Workflow metadata types (WorkflowTask, WorkflowFieldUpdate, WorkflowAlert, WorkflowFlowAutomation, WorkflowKnowledgePublish, WorkflowOutboundMessage, WorkflowRule, WorkflowSend) to metadatatypes.json.\
-
+* **EZ Commit** – Deployment-validation reports older than 30 days were missing in EZ Commit. It's now available.<br>
+* **EZ Commit** – Malformed XML errors when committing permission-set files are resolved by refining the copy logic.<br>
+* **Branching Baseline** – UNKNOWN\_EXCEPTION errors during batch processing eliminated by removing the parent Workflow entry and explicitly adding the child Workflow metadata types (WorkflowTask, WorkflowFieldUpdate, WorkflowAlert, WorkflowFlowAutomation, WorkflowKnowledgePublish, WorkflowOutboundMessage, WorkflowRule, WorkflowSend) to metadatatypes.json.<br>
 * **CI Jobs** – Object-level permissions in permission sets were unintentionally wiped during CI Job deployments. Back-end logic now preserves object permissions while propagating FLS changes.
 
 ***
@@ -451,26 +435,19 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 #### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
 * **Audit Reports – Deployment Label & Metadata Fixes**\
-  Added the Deployment Label column in the Audit Reports section. Fixed issues with Invalid Date in the created/modified date columns and removed special characters from downloaded CSV headers.\
-
+  Added the Deployment Label column in the Audit Reports section. Fixed issues with Invalid Date in the created/modified date columns and removed special characters from downloaded CSV headers.<br>
 * **Env Provisioning – Apex Test Level Execution Support**\
-  Improved the Enable/Disable Apex Trigger Migration Template by reintroducing the Test Level dropdown in the execution window. Now the execution status updates correctly based on test result outcomes.\
-
+  Improved the Enable/Disable Apex Trigger Migration Template by reintroducing the Test Level dropdown in the execution window. Now the execution status updates correctly based on test result outcomes.<br>
 * **CI Jobs – Sharing Rules Not Deployed**\
-  Resolved an issue where Sharing Rules were skipped during deployment when linked to custom objects from installed packages.\
-
+  Resolved an issue where Sharing Rules were skipped during deployment when linked to custom objects from installed packages.<br>
 * **VS Code Plugin – File Diff Undefined Error**\
-  Fixed an undefined error in EZ Commit via VS Code when accessing file diffs post-commit. The file diff generation model is now available.\
-
+  Fixed an undefined error in EZ Commit via VS Code when accessing file diffs post-commit. The file diff generation model is now available.<br>
 * **Destructive Changes – Entitlement Process Commit Fail**\
-  Addressed commit failures during the Entitlement Process, destructive changes by updating the logic for DX Repositories.\
-
+  Addressed commit failures during the Entitlement Process, destructive changes by updating the logic for DX Repositories.<br>
 * **Deployment – Missing Permissions in Profile Deployments**\
-  Corrected permission deployment for profiles with “Ignore Missing Visibility” enabled. This included handling for PushTopic permissions.\
-
+  Corrected permission deployment for profiles with “Ignore Missing Visibility” enabled. This included handling for PushTopic permissions.<br>
 * **Audit Reports – Triggered Date Incorrect**\
-  Fixed the mismatch in deployment-triggered date display under the Audit tab.\
-
+  Fixed the mismatch in deployment-triggered date display under the Audit tab.<br>
 * **CI Jobs – Abort Doesn’t Terminate Background Process**\
   Improved CI job abort handling to ensure background processes are completely stopped. Now, aborted jobs no longer get stuck, and subsequent jobs queue and execute as expected.
 
@@ -493,16 +470,13 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 * **Installed Components Now Properly Excluded in CI Jobs**\
   The **“Ignore Installed Components”** option in CI jobs was previously not functioning as expected—installed components were still being deployed.\
-  This has been corrected. The selected option now effectively excludes these components from deployment.\
-
+  This has been corrected. The selected option now effectively excludes these components from deployment.<br>
 * **Resolved Validation Error During Permission Set Commit**\
   Users encountered commit validation errors when working with permission sets and specific metadata selections.\
-  We've refined commit logic to ensure permission set files are filtered correctly based on selected options.\
-
+  We've refined commit logic to ensure permission set files are filtered correctly based on selected options.<br>
 * **Permissionset Deployments No Longer Drop Object Permissions**\
   Deploying a new permission set with **“Ignore Missing Visibility”** enabled previously removed `DataStreamDefinition` object permissions.\
-  This issue is now resolved. Both `DataStream` and `DataStreamDefinition` object permissions are preserved regardless of the setting.\
-
+  This issue is now resolved. Both `DataStream` and `DataStreamDefinition` object permissions are preserved regardless of the setting.<br>
 * **Deployment Reports Display Accurate Results for All Years**\
   Reports for years like 2023 and 2024 were previously showing incorrect data due to a mismatch in attribute formatting.\
   We’ve added compatibility for both older and newer report formats, ensuring accurate data display on the dashboard.
@@ -543,8 +517,7 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 **Fix:** Introduced a new Sandbox Access field to the environment provisioning template. Users can now define the appropriate access level, enabling complete control during sandbox refresh.
 
-**Module:** Environment Provisioning\
-
+**Module:** Environment Provisioning<br>
 
 <figure><img src="../../../.gitbook/assets/image (1691).png" alt=""><figcaption></figcaption></figure>
 
@@ -1745,20 +1718,15 @@ By streamlining the selective deployment process, this improvement enhances effi
 ### Enhancements
 
 1. **Perform Validation Deployment for Multiple Orgs**\
-   In this release, we're thrilled to introduce an enhanced **Validate Deployment** feature, responding to a key user request. Users can now choose multiple orgs simultaneously, enabling a forward-looking validation process as they promote from one sandbox to the next and eventually to production. This time-saving enhancement allows users to select up to three organizations from a convenient multi-picklist, and the subsequent summary screen provides a consolidated view of the deployment results for each selected organization. The implementation ensures a seamless experience by allowing users to toggle between different org validations. The introduction of this feature in the EZ-Merge and EZ-Commit options streamlines deployment validations, contributing to a more efficient and informed deployment workflow.\
-
+   In this release, we're thrilled to introduce an enhanced **Validate Deployment** feature, responding to a key user request. Users can now choose multiple orgs simultaneously, enabling a forward-looking validation process as they promote from one sandbox to the next and eventually to production. This time-saving enhancement allows users to select up to three organizations from a convenient multi-picklist, and the subsequent summary screen provides a consolidated view of the deployment results for each selected organization. The implementation ensures a seamless experience by allowing users to toggle between different org validations. The introduction of this feature in the EZ-Merge and EZ-Commit options streamlines deployment validations, contributing to a more efficient and informed deployment workflow.<br>
 2. **Incorporated Checkbox to Skip Prevalidation Criteria**\
-   In this release, we're excited to introduce the ability for developers to **skip all prevalidation criteria** specifically for **back merges from designated branches**. This enhancement offers a streamlined approach to the back merge process, empowering developers to improve efficiency and simplify code migration upstream. To leverage this feature, developers can configure the branch type in VC Repos → Branch settings, where a new checkbox option allows you to enable skipping prevalidation criteria for a particular branch during back merges. This capability enhances flexibility and productivity, reducing unnecessary steps in the code migration workflow. With the skip option, developers have greater control over the back merge process, ensuring a smoother and more agile development experience.\
-
+   In this release, we're excited to introduce the ability for developers to **skip all prevalidation criteria** specifically for **back merges from designated branches**. This enhancement offers a streamlined approach to the back merge process, empowering developers to improve efficiency and simplify code migration upstream. To leverage this feature, developers can configure the branch type in VC Repos → Branch settings, where a new checkbox option allows you to enable skipping prevalidation criteria for a particular branch during back merges. This capability enhances flexibility and productivity, reducing unnecessary steps in the code migration workflow. With the skip option, developers have greater control over the back merge process, ensuring a smoother and more agile development experience.<br>
 3. **Revamped Static Code Analysis View**\
-   We’ve revamped our static code analysis UI to enhance the user experience. Now, errors are conveniently displayed under selected files, streamlining issue identification and resolution across various tools.\
-
+   We’ve revamped our static code analysis UI to enhance the user experience. Now, errors are conveniently displayed under selected files, streamlining issue identification and resolution across various tools.<br>
 4. **Streamlined EZ-Commit Editing**\
-   This release significantly enhanced the EZ-Commit workflow to empower developers. The introduction of an integrated **Compare Changes** option in the **Review Artifact** screen allows for seamless viewing, editing, and visualizing of Salesforce metadata changes in a single, user-friendly interface. Developers can now effortlessly navigate and understand their code edits with color-coded differences, eliminating the need to toggle between multiple screens. This streamlined process enhances the user experience and addresses a crucial blocker in the journey towards CI/CD, providing a more efficient and intuitive path for developers.\
-
+   This release significantly enhanced the EZ-Commit workflow to empower developers. The introduction of an integrated **Compare Changes** option in the **Review Artifact** screen allows for seamless viewing, editing, and visualizing of Salesforce metadata changes in a single, user-friendly interface. Developers can now effortlessly navigate and understand their code edits with color-coded differences, eliminating the need to toggle between multiple screens. This streamlined process enhances the user experience and addresses a crucial blocker in the journey towards CI/CD, providing a more efficient and intuitive path for developers.<br>
 5. **Enhanced SCA Label Scheduling**\
-   In this release, users can now enjoy enhanced control over SCA label scheduling with the introduction of the ability to edit/update schedules. This feature provides greater flexibility, allowing users to modify scheduled times for SCA labels, contributing to a more seamless and user-friendly experience in managing job schedules.\
-
+   In this release, users can now enjoy enhanced control over SCA label scheduling with the introduction of the ability to edit/update schedules. This feature provides greater flexibility, allowing users to modify scheduled times for SCA labels, contributing to a more seamless and user-friendly experience in managing job schedules.<br>
 6. **New Email Templates Implementation**\
    In this release, a significant enhancement has been made by implementing new email templates that align with current visualization standards. This update reflects our commitment to maintaining high standards in user interface design and enhancing overall user engagement.
 
@@ -3997,8 +3965,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 #### 1. Squash and merge <a href="#id-1-squash-and-merge" id="id-1-squash-and-merge"></a>
 
-We have added the **Squash and Merge** feature in this release. Sometimes, when merging a long list of changes from a development branch into the master, it's helpful to squash those commits into one change for ease of review and declutter the repo's commit history. AutoRABIT offers an option to squash all commits in a merge request into one commit after the merge is approved and completed.\
-
+We have added the **Squash and Merge** feature in this release. Sometimes, when merging a long list of changes from a development branch into the master, it's helpful to squash those commits into one change for ease of review and declutter the repo's commit history. AutoRABIT offers an option to squash all commits in a merge request into one commit after the merge is approved and completed.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/squash%20and%20merge.gif" alt=""><figcaption></figcaption></figure>
 
@@ -4008,8 +3975,7 @@ We have added the **Squash and Merge** feature in this release. Sometimes, when 
 
 **Packages**
 
-The users could previously build a new package (unlocked or managed) and update the package's version in Salesforce DX. With this release, you may now import packages and update the version of packages created outside of AutoRABIT.\
-
+The users could previously build a new package (unlocked or managed) and update the package's version in Salesforce DX. With this release, you may now import packages and update the version of packages created outside of AutoRABIT.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/import%20packages.gif" alt=""><figcaption></figcaption></figure>
 
@@ -4027,8 +3993,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 The option to list the API-supported and unsupported API components is added to the CI job/deployment rollback. If such components may be deployed to the target environment but do not have API support to delete them, ARM will display them individually as unsupported API types. Take, for example, **RecordType**.
 
-The **RecordType** component may be deployed to the target environment, but it cannot be removed; instead, we need to connect to the target Salesforce environment to deactivate the component.\
-
+The **RecordType** component may be deployed to the target environment, but it cannot be removed; instead, we need to connect to the target Salesforce environment to deactivate the component.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/step%20based%20rollback.gif" alt=""><figcaption></figcaption></figure>
 
@@ -4052,8 +4017,7 @@ The **Export All Users** feature allows the org admins to export a CSV file of a
 * LastLoginDate
 * DeactivatedByName
 * LastModifiedDate
-*   LastModifiedByName.\
-
+*   LastModifiedByName.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/export%20all%20users.gif" alt=""><figcaption></figcaption></figure>
 
@@ -4067,8 +4031,7 @@ We have extended the support of having the pull request support in the CI Job fo
 
 If you want to make sure one or more people approve every commit or merge, you can enforce this workflow by using merge/commit approvals. These approvals allow you to set the number of necessary approvals to approve every commit/ merge in a project.
 
-The org admins' eligibility level has been enhanced with the ARM 22.1 version. If you're an administrator, you will have the privilege to approve self-merge even if the criteria to self-approve a merge is set to FALSE. This permission will be denied to all members of your team except the org admin. To put it another way, no criteria can restrict an org administrator from approving any EZ-commit/ EZ-Merge.\
-
+The org admins' eligibility level has been enhanced with the ARM 22.1 version. If you're an administrator, you will have the privilege to approve self-merge even if the criteria to self-approve a merge is set to FALSE. This permission will be denied to all members of your team except the org admin. To put it another way, no criteria can restrict an org administrator from approving any EZ-commit/ EZ-Merge.<br>
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/commit-merge%20approval.gif" alt=""><figcaption></figcaption></figure>
 

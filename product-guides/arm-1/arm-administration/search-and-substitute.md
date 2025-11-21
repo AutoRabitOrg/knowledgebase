@@ -25,12 +25,10 @@ That means fewer manual edits, fewer post-deployment fixes, and more predictable
 ## Creating a Rule <a href="#procedure" id="procedure"></a>
 
 1. Log in to ARM.
-2.  Go to **Settings › Search and Substitute**.\
-
+2.  Go to **Settings › Search and Substitute**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1956).png" alt="" width="231"><figcaption></figcaption></figure>
-3.  Click **Create Rule**.\
-
+3.  Click **Create Rule**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1957).png" alt=""><figcaption></figcaption></figure>
 
@@ -71,8 +69,7 @@ Need to change an invoice number format in one org only? Create a rule like this
 <figure><img src="../../../.gitbook/assets/image (732).png" alt="Example rule that changes displayFormat from a-{000} to a-{001} for a CustomObject"><figcaption></figcaption></figure>
 
 Click **Save** to store the rule. It appears in the list with **Edit**, **Delete**, and **Clone** icons.\
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.48.02 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -93,15 +90,13 @@ On the **Deployment Settings** screen:
 ### Commit to Version Control <a href="#committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned" id="committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned"></a>
 
 During **Commit** or **Submit for Validation**, pick your rule under **Search and Substitute**.\
-\
-
+<br>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.52.53 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### CI Job <a href="#performing-ci-job-with-new-rule-assigned" id="performing-ci-job-with-new-rule-assigned"></a>
 
-When creating a **CI Job**, expand the **Deploy** section and choose the rule\
-
+When creating a **CI Job**, expand the **Deploy** section and choose the rule<br>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.50.42 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 

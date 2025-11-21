@@ -6,8 +6,7 @@
 
 Before registering AzureDevOps Repository with ARM, you must check off some of the boxes on the prerequisites list.
 
-1.  Ensure you enable the GIT plugin under Plugins in the My Account section to use GIT for version control.\
-
+1.  Ensure you enable the GIT plugin under Plugins in the My Account section to use GIT for version control.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2013).png" alt=""><figcaption></figcaption></figure>
 2. You must have an Azure account. Once you have an Azure account, you can create a new repository or use an existing one.
@@ -17,14 +16,12 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 ### #2 Store your Azure credential in ARM
 
 1. Log in to your ARM account.
-2.  Hover your mouse over the Admin module and click on the Credentials tab.\
-
+2.  Hover your mouse over the Admin module and click on the Credentials tab.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2014).png" alt=""><figcaption></figcaption></figure>
 3. Next, click on Create Credential from the right navigation bar.
 4. On the next pop-up screen, give a Credential name.
-5.  Choose the Credential Type as Username with Password.\
-
+5.  Choose the Credential Type as Username with Password.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2015).png" alt="" width="563"><figcaption></figcaption></figure>
 6. Enter your Azure Username and API Token (in the Password field), and we will store this encrypted.
@@ -33,16 +30,13 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 ### #3 Registering a GIT repository in ARM
 
 1. Log in to your ARM account.
-2.  Hover your mouse over the Admin module and click on VC Repo's.\
-
+2.  Hover your mouse over the Admin module and click on VC Repo's.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2016).png" alt="" width="563"><figcaption></figcaption></figure>
-3.  Click on Register Repository.\
-
+3.  Click on Register Repository.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2017).png" alt=""><figcaption></figcaption></figure>
-4.  Select the Version Control System as GIT on the Register Repository page.\
-
+4.  Select the Version Control System as GIT on the Register Repository page.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2018).png" alt=""><figcaption></figcaption></figure>
 5. Enter the name of the repository to display it locally.
@@ -68,8 +62,7 @@ Note: Click Test Connection to check if the connection has been authenticated or
 This section guides you through creating your personal access token directly on Azure.
 
 1. Log in to your Azure account.
-2.  In the upper-right corner of any page, click on the user settings beside profile photo, then click on Personal Access tokens.\
-
+2.  In the upper-right corner of any page, click on the user settings beside profile photo, then click on Personal Access tokens.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2019).png" alt=""><figcaption></figcaption></figure>
 

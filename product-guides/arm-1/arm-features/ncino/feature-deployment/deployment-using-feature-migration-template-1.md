@@ -39,8 +39,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
 
 <figure><img src="../../../../../.gitbook/assets/5 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
-4.  Before deploying to the destination, review and select from the available deployment criteria to proceed.\
-
+4.  Before deploying to the destination, review and select from the available deployment criteria to proceed.<br>
 
     **Deployment Filters**
 

@@ -27,8 +27,7 @@ This error is encountered if you do not have the "AutoRABITOAuth2" installed in 
 2. Search for the connected app.
 3. Select "Connected App OAuth Usage."
 4. Install "AutoRABITOAuth2."
-5.  Re-run the job.\
-
+5.  Re-run the job.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
 

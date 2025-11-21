@@ -4,8 +4,7 @@ You can download the deployment, quick deployment, or rollback reports for your 
 
 1. **Deployment Reports**: Displays the detailed deployment report. A sample screenshot is attached below.
    *   **Dependency Analyzer:** For failed deployments, download the analysis results of failed components in the source org selected while creating the CI job. You can download it in **Manifest (JSON)** or in **XLS** format.\
-       \
-
+       <br>
 
        <figure><img src="../../../../.gitbook/assets/image (2155).png" alt=""><figcaption></figcaption></figure>
 

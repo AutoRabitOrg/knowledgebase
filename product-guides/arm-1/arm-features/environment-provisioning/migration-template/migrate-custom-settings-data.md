@@ -6,8 +6,7 @@ To migrate custom setting data from one Salesforce Org to another, follow the st
 
 1. In the **Create Migration Template** screen, select the checkbox: **Migrate Custom Setting Data.**
 2. Give a Name to the **template** and as well as add a **short description**. Choose the **source Salesforce Org** from the drop-down menu and then click on **Select Objects**.
-3.  On the next screen, choose the required objects fields from the list of objects available in the source org. Use the quick search option to further filter the options.\
-
+3.  On the next screen, choose the required objects fields from the list of objects available in the source org. Use the quick search option to further filter the options.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (5) (8).png" alt=""><figcaption></figcaption></figure>
 

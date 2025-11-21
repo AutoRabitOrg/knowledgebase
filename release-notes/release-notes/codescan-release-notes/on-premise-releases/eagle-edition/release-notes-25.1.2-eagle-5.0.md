@@ -73,8 +73,7 @@ Verified that the violation is triggered when the number of classes used exceeds
 
 Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + "").  Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.
 
-Verified the following scenarios are all working as expected:\
-
+Verified the following scenarios are all working as expected:<br>
 
 1. Empty string with numeric or Boolean literals\
    Examples: '' + 123, 123 + '', '' + -42, '' + 3.14, false + '', '' + true
@@ -121,16 +120,14 @@ We have enhanced this rule to detect additional cases where string parameters ar
 
 Verified the enhanced logic of rule “UnusedFormalParameter” via the following scenarios.
 
-1.  Previously, a parameter (e.g., encounterIds) used in a SOQL string (e.g., WHERE Id IN :encounterIds) was wrongly reported as unused. Now, this is correctly detected as usage — no violation.\
-
+1.  Previously, a parameter (e.g., encounterIds) used in a SOQL string (e.g., WHERE Id IN :encounterIds) was wrongly reported as unused. Now, this is correctly detected as usage — no violation.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2085).png" alt=""><figcaption></figcaption></figure>
 2.  Also verified the following cases are all working as expected: \
     Verified: Parameter used in SOQL with bind variable (:encounterIds) — no violation \
     Verified: Parameter used via clause string assembly — no violation \
     Verified: Parameter incorrectly concatenated into SOQL string — violation \
-    Verified: Parameter declared but not used anywhere — violation\
-
+    Verified: Parameter declared but not used anywhere — violation<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2086).png" alt=""><figcaption></figcaption></figure>
 
@@ -184,8 +181,7 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
 
     <figure><img src="../../../../../.gitbook/assets/image (2088).png" alt=""><figcaption></figcaption></figure>
 
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2089).png" alt=""><figcaption></figcaption></figure>
 
@@ -199,8 +195,7 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
     \
     With this fix, we added validation to detect and prevent such recursive reference resolution.\
     \
-    Verified the SOQL Injection rule fix (which was causing stack overflow error). Validated that now users are not encountering the error and project analyses are working as expected.\
-
+    Verified the SOQL Injection rule fix (which was causing stack overflow error). Validated that now users are not encountering the error and project analyses are working as expected.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2090).png" alt=""><figcaption></figcaption></figure>
 

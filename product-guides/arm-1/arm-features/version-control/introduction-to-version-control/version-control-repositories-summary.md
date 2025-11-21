@@ -9,8 +9,7 @@
 The lists of repositories you have added yourself and any other repositories your team members have shared can be seen on the **`Repositories`** page.
 
 Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitbook/assets/image (1027).png>)icon displayed, and nCino objects configured will have![](<../../../../../.gitbook/assets/image (1028).png>)icon beside their repository under **`Repositories List`** for easier identification.\
-\
-
+<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1966).png" alt="" width="341"><figcaption></figcaption></figure>
 
@@ -35,8 +34,7 @@ Create a pull request to propose and collaborate on changes to a repository. Thi
 
 #### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
 
-Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.\
-
+Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1968).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,22 +49,19 @@ The Git tags created or branches registered for the version control repository w
 **A. Create a Branch**
 
 Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md))\
-\
-
+<br>
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.56.48 PM.png" alt=""><figcaption></figcaption></figure>
 
 **B. Register a Branch**
 
-Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/)). Click on Register under Branches Tab.\
-
+Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/)). Click on Register under Branches Tab.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1969).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **C. Unregister a Branch**
 
-Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.\
-
+Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1970).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -92,8 +87,7 @@ For each branch, view the following details:
 
     **Pieces of information related to 'Metadata Folder Path'**
 
-    *   When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.\
-
+    *   When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.<br>
 
         <figure><img src="../../../../../.gitbook/assets/image (1971).png" alt="" width="563"><figcaption></figcaption></figure>
 3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../../arm/arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Settings > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../../arm/arm-administration/alm-management.md).

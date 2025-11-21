@@ -40,8 +40,7 @@ The following article describes using **Single DataLoader** to update data in Sa
     * **`Unmapped:`** Displays only the fields that haven't been mapped yet.\
       After selecting the filter, the list updates automatically as you map or unmap each field.
 16. Make sure you have mapped all the required fields. Otherwise, you can't move forward. Click **`Next`**.
-17. On the **`Process Summary`** screen, you can:\
-
+17. On the **`Process Summary`** screen, you can:<br>
 
     <figure><img src="../../../../../.gitbook/assets/4 (4).png" alt=""><figcaption></figcaption></figure>
 

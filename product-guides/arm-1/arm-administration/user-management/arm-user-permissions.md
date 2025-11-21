@@ -9,15 +9,13 @@ _Users with the **Admin** role manage their own permissions under that role and 
 
 **Assign Permissions to Users**
 
-1.  Open **Settings › Permissions**.\
+1.  Open **Settings › Permissions**.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Select two or more users and click **Bulk Assignment**.\
-    \
+    <br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Go to **Roles** and select the required role\
    \- Repeat the same process for **Salesforce Orgs**, **CI Jobs**, and **Version Control**.\
    \- Once all selections are made, click **Save**.
@@ -34,13 +32,11 @@ Admins are hidden on this screen because they already hold full access.
 
 Need to restrict or expand Git access? Grant repository or branch permissions here.
 
-1.  In **`Settings › Permissions`**, click the user’s name.\
-
+1.  In **`Settings › Permissions`**, click the user’s name.<br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.39.55 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 2.  Scroll to the **`Version Control`** section. Check the branches the user should see.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.38.10 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 3. To grant access to **every** branch inside a repo, tick the **Repository** checkbox.

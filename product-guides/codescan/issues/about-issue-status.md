@@ -11,8 +11,7 @@ An issue can have the following statuses:
 
 Note: CodeScan ignores confirmed issues in the code ratings but displays the number of confirmed issues in various analysis snapshots in the UI.
 
-*   **Fixed (deprecated)**: Set by an authorized user if the confirmed issue has been resolved in the code (i.e., it is no longer detected) and is waiting for the subsequent analysis to close it, or reopen it if it was not actually fixed.\
-
+*   **Fixed (deprecated)**: Set by an authorized user if the confirmed issue has been resolved in the code (i.e., it is no longer detected) and is waiting for the subsequent analysis to close it, or reopen it if it was not actually fixed.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1719).png" alt=""><figcaption><p>Fixed</p></figcaption></figure>
 
@@ -25,11 +24,9 @@ The following diagram shows the Issue life cycle:
 ### &#x20;**Tracking Issue History**
 
 1. Under the **Issues** tab, select the violation for which you want to check the history of changes.
-2.  You should be able to see when the Issue was introduced in the upper corner of the issue page.\
-
+2.  You should be able to see when the Issue was introduced in the upper corner of the issue page.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1721).png" alt=""><figcaption><p>Issue Activity</p></figcaption></figure>
-3.  In the Activity tab, you should see the history and every activity on the Issue, such as the creation date, member assignment, severity, comments, etc.\
-
+3.  In the Activity tab, you should see the history and every activity on the Issue, such as the creation date, member assignment, severity, comments, etc.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1722).png" alt=""><figcaption><p>Activity Tab</p></figcaption></figure>

@@ -4,7 +4,7 @@ This section is all about deploying the [nCino](https://www.autorabit.com/indust
 
 1. Hover your mouse over the **nCino** module and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 

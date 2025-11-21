@@ -16,27 +16,22 @@ Static analysis is generally good at finding coding issues, such as:
 
 To run a static code tool on your [Salesforce Org](broken-reference) or Version Control Branch, follow the below steps:
 
-1.  Hover your mouse over the **REPORTS** module and choose the option: [**STATIC CODE ANALYSIS**](https://www.autorabit.com/products/codescan/)\
-
+1.  Hover your mouse over the **REPORTS** module and choose the option: [**STATIC CODE ANALYSIS**](https://www.autorabit.com/products/codescan/)<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2156).png" alt=""><figcaption></figcaption></figure>
-2.  Click on the **NEW STATIC CODE ANALYSIS** button at the top right corner of the screen.\
-
+2.  Click on the **NEW STATIC CODE ANALYSIS** button at the top right corner of the screen.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2157).png" alt="" width="206"><figcaption></figcaption></figure>
 3. On the next screen, enter a **Label Name**.
 4. Choose **Source** as **Salesforce Org** or **Version Control**.
-   *   For **Salesforce Org** selection, choose the Salesforce Org for which the SCA will be performed.\
-
+   *   For **Salesforce Org** selection, choose the Salesforce Org for which the SCA will be performed.<br>
 
        <figure><img src="../../../../.gitbook/assets/image (2158).png" alt=""><figcaption></figcaption></figure>
-   *   For [**Version Control**](../../../arm/arm-features/version-control/) selection, choose your source **Repository** and **Branch**.\
-
+   *   For [**Version Control**](../../../arm/arm-features/version-control/) selection, choose your source **Repository** and **Branch**.<br>
 
        <figure><img src="../../../../.gitbook/assets/image (2159).png" alt=""><figcaption></figcaption></figure>
    *   Select **Source** as **Salesforce org**, then new options become available:\
-       \
-
+       <br>
 
        <figure><img src="../../../../.gitbook/assets/image (2160).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,8 +40,7 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
 * Building on point #1, achieving the described outcome is unattainable with different structures but aligns seamlessly within a single structure per project.
 * Depending on the need, a Salesforce or a repository must be bonded with either mdapi or DX source structure but not with both.
 
-5.  Select the SCA tool from the drop-down list. For example, [_CodeScan_](https://www.codescan.io/), _ApexPMD, Checkmarx, Salesforce Scanner, or SonarQube_.\
-
+5.  Select the SCA tool from the drop-down list. For example, [_CodeScan_](https://www.codescan.io/), _ApexPMD, Checkmarx, Salesforce Scanner, or SonarQube_.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2161).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,19 +52,16 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
    Supported Metadata Types:
    * For **ApexPMD, Checkmarx, SonarQube**: _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
    * For **Codescan, Salesforce Scanner**: _ApexClasses, ApexPages, ApexTriggers, AuraDefinitionBundle, CustomObjects, Flow, LightningComponentBundle, PermissionSets, Profiles, Settings, SharingRules, Workflows, StaticResource._
-7. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.\
-
+7. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt="" width="432"><figcaption></figcaption></figure>
 
 8. Select the recipients for the alert under the **Notifications** field. Multiple recipients can be added here
-9.  Next, choose the frequency for SCA to run, i.e., daily, weekly, or at any specific interval. For example, if you want the SCA tool to run daily at **10 AM**, select the **Daily** option and set the fixed time to 10.\
-
+9.  Next, choose the frequency for SCA to run, i.e., daily, weekly, or at any specific interval. For example, if you want the SCA tool to run daily at **10 AM**, select the **Daily** option and set the fixed time to 10.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2162).png" alt=""><figcaption></figcaption></figure>
 10. Click on **SAVE**.
-11. Upon confirmation, you'll be redirected to the home page, where you can find your recently configured SCA.\
-
+11. Upon confirmation, you'll be redirected to the home page, where you can find your recently configured SCA.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2163).png" alt=""><figcaption></figcaption></figure>
 
@@ -86,16 +77,13 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
 2. Choose the desired report frequency (daily, weekly, monthly, etc.).
 3. Specify the exact times for reports to run.
 4. Please add/remove an email If you want to send/not send the notification.
-5.  Click on **UPDATE** to save and confirm the changes made to the schedule.\
-
+5.  Click on **UPDATE** to save and confirm the changes made to the schedule.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2165).png" alt=""><figcaption></figcaption></figure>
 6. **Running On-demand SCA**: To run the SCA tool before the scheduled time frame, click on the     **Run (**![](<../../../../.gitbook/assets/image (34) (1) (1) (1).png>)**)** button.\
    \
-   ![](<../../../../.gitbook/assets/image (2166).png>)\
-
-7.  **Log**: Click on the **Log** (![](<../../../../.gitbook/assets/image (39) (1) (1) (1).png>)) icon to find the detailed log report.\
-
+   ![](<../../../../.gitbook/assets/image (2166).png>)<br>
+7.  **Log**: Click on the **Log** (![](<../../../../.gitbook/assets/image (39) (1) (1) (1).png>)) icon to find the detailed log report.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2167).png" alt=""><figcaption></figcaption></figure>
 
@@ -105,15 +93,13 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
 
 
 
-1.  **SCA Result**: ARM generates a detailed SCA report whenever you run static code analysis. This report will have info about the reviewed files and the related violations. Click on each file to view its related violations at the bottom right side of the page. If you click on any violation, it will take you to the respective line (in the black screen on the right side) where the violation occurred.\
-
+1.  **SCA Result**: ARM generates a detailed SCA report whenever you run static code analysis. This report will have info about the reviewed files and the related violations. Click on each file to view its related violations at the bottom right side of the page. If you click on any violation, it will take you to the respective line (in the black screen on the right side) where the violation occurred.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2169).png" alt=""><figcaption></figcaption></figure>
 2. **Download SCA Report**: Click on the **Download** (![](<../../../../.gitbook/assets/image (44) (1) (1) (1).png>)) icon to download the report in CSV format on your local device.
 3. **Delete SCA process**: Click on the **Delete (**![](<../../../../.gitbook/assets/image (45) (1) (1) (1).png>)**)** icon to delete the SCA process configured for your org/anch. This cannot be undone.
 4.  **View the SCA run details**: To view the list of SCA runs to date along with individual SCA results, click on the **Label Name**. The main screen shows the last details of the SCA run.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (2170).png" alt=""><figcaption></figcaption></figure>
 

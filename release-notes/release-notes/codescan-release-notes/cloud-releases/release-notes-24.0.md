@@ -32,16 +32,16 @@ There are no new features associated with this release.
 
     1.  Verified search option functionality with the drop-down list of projects:
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Verified the drop-down list shows 20 of the most recently scanned projects by default.
 
-        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Updated the message for Security Hotspot Status “Exception”**\
     We recently added a new status type for Hotspots (status = “Exception”). Its intent is to serve as a more accurate status than 'Acknowledged' or 'Open' for issues being treated as exceptions. \
     \
     When we first delivered an “Exception” status, the associated message was: “The code has been reviewed and does not pose a risk currently. Further review is needed at a later date.” Based upon numerous client suggestions, we have enhanced the message to read: "The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.”
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rules
 
@@ -53,13 +53,13 @@ There are no new features associated with this release.
    Verified the new LWC rule (API Version Is Too Old) for these scenarios:
    *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule:
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed:
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed:
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    * Verified that no violation is thrown when the API version is between the minimum and maximum versions allowed.
 2.  **New Rule for APEX: “OuterClassExplicitSharing”**\
     Enforces security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.
@@ -76,7 +76,7 @@ There are no new features associated with this release.
 
     *   Verified the rule’s description, type, severity, message, tag, remediation, key, and name:
 
-        <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     *   Verified the rule is not throwing a violation if used with sharing, without sharing, or inherited sharing:
 
         <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -101,8 +101,7 @@ If both rules are active, check the violations that were reported and disable on
    \
    Regarding this issue, users were unable to navigate to the issues page after running the project analysis. Further, users were not able to see the issues if the user selected any of the issue types (e.g., vulnerability) after running the project analysis.\
    \
-   This fix corrects this issue. Users are now able to navigate to the issues page after running the project analysis. Further, users are now able to see the issues if they select any of the issue types (e.g., vulnerability) after running the project analysis.\
-
+   This fix corrects this issue. Users are now able to navigate to the issues page after running the project analysis. Further, users are now able to see the issues if they select any of the issue types (e.g., vulnerability) after running the project analysis.<br>
 2.  **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}}” {Permissions should be checked before accessing resource}.**\
     Previously, this rule was throwing violations that were false positives. This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.\
     \
@@ -119,7 +118,7 @@ If both rules are active, check the violations that were reported and disable on
         <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
 
-        <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     **REMINDER**: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
     \
@@ -127,8 +126,7 @@ If both rules are active, check the violations that were reported and disable on
 
     * Rule is throwing the violation if the object is NOT checked via isAccessible for the methods used in the inner query.
     * Rule is not throwing the violation if the system mode value is set = “true” (and the object IS NOT checked via isAccessible for methods).
-    * Rule is not throwing the violation if the system mode value is set = “false” (and the object IS checked via isAccessible for the methods).\
-
+    * Rule is not throwing the violation if the system mode value is set = “false” (and the object IS checked via isAccessible for the methods).<br>
 3.  **Fixed issue with Retention Period settings**\
     The retention period for project branches in CodeScan was not functioning properly. The UI is able to be set, but it does not affect the cleanup of branches within the project.\
     \
@@ -143,8 +141,7 @@ If both rules are active, check the violations that were reported and disable on
     1.  In the UI, users are able to set **Delete inactive branches and PRs after** value:
 
         <figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
-    2.  Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.\
-
+    2.  Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.<br>
 
         <figure><img src="../../../../.gitbook/assets/image (1585).png" alt=""><figcaption></figcaption></figure>
 4. **Fixed issue with Group Synchronization for SAML connections**\
@@ -186,8 +183,7 @@ There are no new rules associated with this release.
 1.  **Fixed issue with reference branch analyses:** Branch initially fails the quality gate, then passes on subsequent scans without changes.
 
     \
-    Previously within CodeScan, branches with new code consistently failed the quality gate when they contained unresolved new issues (such as bugs, vulnerabilities, code smells, or security hotspots). This failure persisted until all new issues were addressed, ensuring only clean code passed the quality gate. \
-
+    Previously within CodeScan, branches with new code consistently failed the quality gate when they contained unresolved new issues (such as bugs, vulnerabilities, code smells, or security hotspots). This failure persisted until all new issues were addressed, ensuring only clean code passed the quality gate. <br>
 
     Recently it was reported that "New Code -> Reference Branch" functionality was no longer working as designed, which was impacting quality gate evaluations for new code on branches for some customers. Indeed, branches with new code were initially failing the quality gate if new issues are detected (as expected and desired). However, on subsequent analyses of the same branch—without addressing the new issues—the quality gate was incorrectly passing. &#x20;
 
@@ -212,8 +208,7 @@ There are no new rules associated with this release.
       * Specific analysis&#x20;
       * Reference branch&#x20;
     * Verified the functionality by adding new code with vulnerabilities and fixed some issues that were marked as false positives in the UI.&#x20;
-    * Verified the sonar scanner command as well for the reference branch.\
-
+    * Verified the sonar scanner command as well for the reference branch.<br>
 2.  **Fixed issue in rule “sf:OptimizeParallelUnitTests” (IsParallel)** \
     \
     This rule is designed to ensure that isParallel is present, either True or False. Previously, when a second flag was added to a test, the rule threw a violation, e.g., @IsTest(SomeFlag=True IsParallel=False). This should not throw a violation since IsParallel is specified. Instead, something like @IsTest(SomeFlag=True) should throw a violation, as IsParallel is not specified. \
@@ -237,16 +232,14 @@ There are no new rules associated with this release.
 <figure><img src="https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252Fgk3EzOy7F9wH89TPNL5L%252Fimage.png%3Falt%3Dmedia%26token%3D7f2321b2-cea7-4f40-8092-18fd7a692d7f&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82c548e2&#x26;sv=1" alt=""><figcaption></figcaption></figure>
 
 \
-![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FDlYCkab1cVQk7Qig0moW%252Fimage.png%3Falt%3Dmedia%26token%3D9a1f95db-0724-4930-8b4a-4880b725efdf\&width=768\&dpr=4\&quality=100\&sign=86914d0b\&sv=1)\
-
+![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FDlYCkab1cVQk7Qig0moW%252Fimage.png%3Falt%3Dmedia%26token%3D9a1f95db-0724-4930-8b4a-4880b725efdf\&width=768\&dpr=4\&quality=100\&sign=86914d0b\&sv=1)<br>
 
 3. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives). \
    \
    Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations. \
    \
    This fix ensures that the check is limited to the **“value”** attribute only, to avoid false positives and ensure the rule functions as intended. As an example, the following will NOT be flagged as a violation:\
-   \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/> //Good: Uses a static resource.\
-
+   \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/> //Good: Uses a static resource.<br>
 
 ## **Release Notes 24.0.12**&#x20;
 
@@ -504,7 +497,7 @@ In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” pa
 
 However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified and the issue has been remediated.  The date filter now works as designed and expected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 **6.     Fixed issue with Individual / All Filter on IDE Usage Page** &#x20;
 
@@ -515,7 +508,7 @@ In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” pa
 
 However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -540,10 +533,9 @@ The latest CodeScan release is comprised of the following components:
 2.  **UI Enhancements to the IDE Usage Page**\
     Summary: The “IDE Usage” page has been updated with the following UI components:\
     \
-    \
+    <br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For the IDE Type, logos are now shown instead of text\
 Added a date filter, including:\
@@ -557,7 +549,7 @@ Added a filter toggle for Individual / All as shown.\
 Upon toggling to “Individual,” the last connection for each unique user list is shown.\
 Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (3).png" alt=""><figcaption></figcaption></figure>
 
 1. **New “Exception” status for Security Hotspots**\
    Summary: For this release, the “Exception” status essentially mirrors the functionality of the “Acknowledged” status; but this is just temporary. We will be adding the ability to assign a “date time stamp” to this feature, which will then allow the issue to be flagged after the expiration of the date time stamp.
@@ -609,18 +601,14 @@ This update includes several New Features within CodeScan’s Visual Studio Code
 ### Enhancements
 
 1. **Rule Enhancement for “Avoid Using Test.isRunningTest()” {APEX Rule}:** \
-   **Summary**: Previously, this rule was flagging violations when finding methods written as  Test.isRunningTest(). This rule has been enhanced to also flag violations when finding methods written as System.Test.isRunningTest(). \
-
+   **Summary**: Previously, this rule was flagging violations when finding methods written as  Test.isRunningTest(). This rule has been enhanced to also flag violations when finding methods written as System.Test.isRunningTest(). <br>
 2. **Decrease False Positives reported for Rule “sf:FixDuplicateMethods”** \
    **Summary**: CodeScan recognizes that methods should not share the same implementations. As such, the scope of the rule will be limited to methods with actual implementations, rather than including interface method declarations. This means the rule will now focus solely on detecting and addressing duplicate implementations within concrete classes, ensuring that only methods containing executable code are evaluated.  Violations reported by this rule will now include details of all duplicate methods affected. This means each violation will list every instance of a method that shares the same implementation, making it easier to identify and resolve duplicated code.  \
-   These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness. \
-
+   These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness. <br>
 3. **Enhancement to Rule: "Field-Level Security" (FLS)**\
-   CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan and an enhancement to the rule was applied, which corrected the syntax detection. \
-
+   CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan and an enhancement to the rule was applied, which corrected the syntax detection. <br>
 4. **Enhancement to Rule: "Cyclomatic Complexity"** \
-   **Summary**: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'. \
-
+   **Summary**: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'. <br>
 5. **Added dashboard Url to Job status API** \
    **Summary**: On the Project Analysis page, we have added dashboard Url to Job status API on success/failure of analysis:
 
@@ -630,10 +618,9 @@ This update includes several New Features within CodeScan’s Visual Studio Code
 
 1.  **UI Improvement on Rule “NullCoalescing operator”** \
     We completed an alignment adjustment within the CodeScan UI for this specific rule. \
-    **Previous UI:** \
+    **Previous UI:** <br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Adjusted UI:**
 
@@ -803,8 +790,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    **Purpose**: Ensure comments are included when using hardcoded values in Apex classes\
    \
    **Detail:** Ensures any hard-coded values or strings in the code are accompanied by descriptive comments or, alternatively, use constants. This practice enhances code readability, maintainability, and will make it easier for other developers to understand the purpose of these values.\
-   \
-
+   <br>
 2. **Rule Name: “**_**Use the null coalescing operator instead of the ternary operator”**_\
    \
    **Category**: New APEX rule in CodeScan\
@@ -814,8 +800,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    **Detail**: In Salesforce's Spring '24 release, the null-coalescing operator has been introduced in Apex. This rule will identify where this operator could be used but isn’t being utilized.\
    \
    For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_NullCoalescingOperator.htm). \
-   \
-
+   <br>
 3. **Rule Name: “**_**Use Accessibility Attributes”**_\
    \
    **Category**: New Lightning Web Component Rule in CodeScan\
@@ -829,8 +814,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    For further information, please refer to: \
    [Component Accessibility Attributes](https://developer.salesforce.com/docs/platform/lwc/guide/create-components-accessibility-attributes.html)\
    [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/)\
-   \
-
+   <br>
 4. **Rule Name: “**_**nCino Inactive Workflow Rules”**_\
    \
    **Category**: New nCino Gold Standard Rule in CodeScan\
@@ -852,8 +836,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    For further information, please refer to: [https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review) - \
    [The Top 20 Vulnerabilities Found in the AppExchange Security Review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review)\
    [MITRE, CWE-79](https://cwe.mitre.org/data/definitions/79.html) - Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\
-   \
-
+   <br>
 6. **Rule Name: “**_**Exposed Lightning Message Channel”**_\
    \
    **Category**: New LWC / Aura / Visualforce rule in CodeScan\
@@ -863,8 +846,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    **Detail**: This term specifically refers to cases where you have not configured the 'isExposed' flag in Lightning Message Channel to false. Since this provides access to the Lightning Message Service (LMS) API, which lets you publish and subscribe to messages across the DOM and between Aura, Visualforce, and Lightning Web Components, it should be set to false.\
    \
    For further information, please refer to: [https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review)\
-   \
-
+   <br>
 7. **Rule Name: “**_**Utilizing Apex Unit Tests with @IsTest(IsParallel)”**_\
    \
    **Category**: New APEX rule in CodeScan\
@@ -877,8 +859,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    Additionally, it's important to note that this setting does not affect change set deployment or package upload processes. \
    \
-   By understanding these drawbacks, developers can effectively manage test execution and deployment processes, minimizing errors, and ensuring the reliability of test results.\
-
+   By understanding these drawbacks, developers can effectively manage test execution and deployment processes, minimizing errors, and ensuring the reliability of test results.<br>
 
 ### Fixes
 
@@ -888,15 +869,14 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Value**: The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch." This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, but in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (10).png" alt=""><figcaption></figcaption></figure>
 
 
 
 2. **Updated the documentation and example on rule “API Version is Too Old” to:** “This rule identifies visual force pages which are using older versions of the API. Change the API Version of this visual force page.”\
    \
    **Reason for change**: The description and example needed to be updated for the rule.\
-   \
-
+   <br>
 
 ***
 

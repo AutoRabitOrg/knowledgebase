@@ -115,8 +115,7 @@ For more information on running **Static Code Analysis in CI Jobs**, refer [HERE
 
 ### Deploy <a href="#deploy" id="deploy"></a>
 
-This section is about deploying or validating the above package onto a different Salesforce Org.\
-
+This section is about deploying or validating the above package onto a different Salesforce Org.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1).png" alt="" width="434"><figcaption></figcaption></figure>
 
@@ -182,8 +181,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
     5.  **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Do refer to the [Merge](../../version-control/ez-merge/) section to know more about the fields and their uses.)
 
         * **Add**: Click on the![](<../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1).png>)icon to add up to **5** destination branches.
-        * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1).png>)icon to delete a destination branch row.\
-
+        * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1).png>)icon to delete a destination branch row.<br>
 
         <figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     6. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
@@ -228,8 +226,7 @@ There are different ways to fetch the test cases:
 * Version Control
 * AccelQ (if AccelQ plugin is installed in ARM)
 *   Provar (if Provar plugin is installed in ARM)\
-    \
-
+    <br>
 
     <div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 

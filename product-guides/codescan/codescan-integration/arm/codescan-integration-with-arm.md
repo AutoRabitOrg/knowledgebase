@@ -48,8 +48,7 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
 4. Fill in the following details:
    * Enter the CodeScan hosted URL.
    * For CodeScan cloud version use [https://app.codescan.io](https://app.codescan.io/).
-   *   Choose the **Host Type** i.e., Cloud or On-premises. For CodeScan hosted on the Cloud, you need to add the [**Organization Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys).\
-
+   *   Choose the **Host Type** i.e., Cloud or On-premises. For CodeScan hosted on the Cloud, you need to add the [**Organization Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys).<br>
 
        <figure><img src="../../../../.gitbook/assets/image (1) (9).png" alt=""><figcaption></figcaption></figure>
 5. Select your **Credential** from the dropdown.

@@ -56,8 +56,7 @@ To run a static code tool on your [Salesforce Org](broken-reference) or Version 
    Supported Metadata Types:
    * For **ApexPMD, Checkmarx, SonarQube**: _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
    * For **Codescan, Salesforce Scanner**: _ApexClasses, ApexPages, ApexTriggers, AuraDefinitionBundle, CustomObjects, Flow, LightningComponentBundle, PermissionSets, Profiles, Settings, SharingRules, Workflows, StaticResource._
-7. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.\
-
+7. For **CodeScan** or **SonarQube**, choose the **Baseline Branch** if you want to run comparisons between reports.<br>
 
 <figure><img src="../../.gitbook/assets/image (24) (1) (1) (1) (1) (1).png" alt="" width="432"><figcaption></figcaption></figure>
 

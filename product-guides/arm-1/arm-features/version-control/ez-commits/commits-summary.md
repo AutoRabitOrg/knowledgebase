@@ -14,8 +14,7 @@ In AutoRABIT ARM, the **Commits Summary** screen provides detailed information a
 * To view all commits (including those by teammates), Click the **Created By Me** switch to the left.
 * To filter commits pending reviewer approval, Click the **Pending Approvals** switch to the right.
 *   Use the search field to filter commits by Commit Type, Board, Created by and Created Range, revision number, or comment. _Note: Search is case-sensitive._\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.40.55 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -48,8 +47,7 @@ Quick Merge allows direct merging from the Commits screen without navigating to 
 
 1. Hover over the three dots beside the desired commit.
 2. Click **Quick Merge**.
-3.  Confirm the action in the pop-up.\
-
+3.  Confirm the action in the pop-up.<br>
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.43.45 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -61,8 +59,7 @@ Quick Merge allows direct merging from the Commits screen without navigating to 
 ## Detailed View
 
 1.  Hover over the three dots beside a commit and click **Detailed View**.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1989).png" alt="" width="276"><figcaption></figcaption></figure>
 
@@ -76,18 +73,15 @@ The detailed view includes:
 * Deployment validation
 * Code Analysis
 *   Logs and ALM integration\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1990).png" alt=""><figcaption></figcaption></figure>
 
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1991).png" alt=""><figcaption><p>Visual display of Commit steps</p></figcaption></figure>
 
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1992).png" alt=""><figcaption></figcaption></figure>
 
@@ -95,16 +89,14 @@ The detailed view includes:
 
 ## Code Analysis File
 
-Static Code Analysis (SCA) is part of the security development lifecycle. Tools include ApexPMD, Checkmarx, Salesforce Scanner, and CodeScan. Violations are displayed by file and line\
-
+Static Code Analysis (SCA) is part of the security development lifecycle. Tools include ApexPMD, Checkmarx, Salesforce Scanner, and CodeScan. Violations are displayed by file and line<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1993).png" alt=""><figcaption><p>Sample Static Code Analysis Report in EZ Commit details</p></figcaption></figure>
 
 ## Files Changed
 
 ARM compares metadata changes between branches/orgs. RED indicates deletions or changes from the source; GREEN indicates changes in the destination.\
-\
-
+<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1995).png" alt=""><figcaption><p>Metadata Diff view</p></figcaption></figure>
 
@@ -118,8 +110,7 @@ ARM compares metadata changes between branches/orgs. RED indicates deletions or 
 * **Auto Rejected**: Review not completed in time.
 * **Review Pending**: Awaiting reviewer action.
 *   **No Modifications**: No differences found.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1997).png" alt=""><figcaption></figcaption></figure>
 
@@ -135,8 +126,7 @@ Filter options include:
 * Commit Type
 * Created by
 *   Board (Salesforce or Vlocity)\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1998).png" alt=""><figcaption></figcaption></figure>
 

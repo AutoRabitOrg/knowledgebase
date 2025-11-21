@@ -9,15 +9,13 @@ Only **Org Administrators** can create or modify users.
 
 1. Log in to **ARM**.
 2. Hover over **`Settings`** and click **`Users`**.
-3.  Click **Add User**.\
+3.  Click **Add User**.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 4. Complete **User Details** and assign a **Role Permission Set** that matches the person’s responsibilities.
 5. Choose one of the activation options:
    * **Save & Activate** – sends the invitation email immediately.
-   *   **Save Now & Activate Later** – save the profile and activate at a future time.\
-
+   *   **Save Now & Activate Later** – save the profile and activate at a future time.<br>
 
        <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.48.52 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 6. The new user receives an email to set their password and log in.
@@ -30,10 +28,9 @@ Only **Org Administrators** can create or modify users.
 You can edit most profile fields and permissions after creation—except **Username** and **Email** (they are immutable).
 
 1. Go to **Settings › Users** and locate the user.
-2.  Click on Actions and then **Edit** icon.\
+2.  Click on Actions and then **Edit** icon.<br>
 
-
-    <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 3. Update fields as needed and click **Save**.
 
 ***

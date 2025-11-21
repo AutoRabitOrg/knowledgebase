@@ -1,11 +1,10 @@
-# Release Notes 22.3
+# nCino Release Notes 22.3
 
 **March 2023 - Version 22.3 (nCino)**- **Key Features and Enhancements**
 
 **Date of release:** _05 March 2023_\
 **Article last updated:** _05 March 2023_\
-\
-
+<br>
 
 ### Key Features <a href="#key-features" id="key-features"></a>
 

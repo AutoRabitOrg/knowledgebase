@@ -9,8 +9,7 @@ The steps below walk an Org Admin through **registering** an SVN repository so A
 
 1. Log in to **ARM**.
 2.  Hover over **`Admin`** and choose **`VC Repos`**.\
-    \
-
+    <br>
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.27.09 PM.png" alt="" width="232"><figcaption></figcaption></figure>
 3. Click **Register Repository**.
@@ -19,10 +18,9 @@ The steps below walk an Org Admin through **registering** an SVN repository so A
    * **Repository Label** – a friendly name that appears in ARM.
    * **Repository URL** – the full SVN URL (e.g., `https://svn.mycorp.com/repos/project`).
    * **Credentials** – select stored credentials or click **+** to add new ones.
-5.  Click **Test Connection**. A success message confirms ARM can authenticate.\
+5.  Click **Test Connection**. A success message confirms ARM can authenticate.<br>
 
-
-    <figure><img src="../../../../../.gitbook/assets/image (17) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (17) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 6. Click **Save** to finish. The repository now appears in the VC Repos list.
 
 {% hint style="info" %}

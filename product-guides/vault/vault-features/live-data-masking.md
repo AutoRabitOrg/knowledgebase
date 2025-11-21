@@ -179,13 +179,13 @@
     <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 48. Select the required objects to rollback the masking’s. On selecting at least one object the “Rollback” button will become enabled.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 49. On clicking the rollback option, the following window will be displayed for confirming the rollback
 
-    <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 50. For every rollback operation performed, a new entry will be created at the “JOB HISTORY” page. This job can be identified with the “Job Type – Rollback”.
 
-    <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 51. Click on the “info” icon under the “Job Info” to open the “Live Masking Config Info”.
 
 

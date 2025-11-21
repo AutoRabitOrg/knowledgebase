@@ -40,8 +40,7 @@
 * Improved documentation on vulnerabilities including links to OWASP and CERT explanations.
 * Support for Inherited Sharing Keywords in Apex - [Salesforce Documentation](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_inherited_sharing.htm\&type=5\&release=216)
 
-\
-
+<br>
 
 #### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
 
@@ -56,8 +55,7 @@
 * Fixed bug that caused certain code coverage data to be displayed incorrectly (**v4.2.5**)
 * Fixed bug in the Class Without Test Class rule (**v4.2.6**)
 
-\
-
+<br>
 
 #### Other Changes <a href="#other-changes" id="other-changes"></a>
 

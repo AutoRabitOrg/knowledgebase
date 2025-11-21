@@ -423,8 +423,7 @@ This release introduces significant new capabilities and key enhancements across
 
 ## **nCino + Data Loader 25.1.3 Release Notes**
 
-**Release Date: 6 April 2025**\
-
+**Release Date: 6 April 2025**<br>
 
 See the [Release Notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.3-release-notes) for nCino + Data Loader improvements.&#x20;
 

@@ -19,10 +19,9 @@
 
 2.  **Authorize** CodeScan.
 
-    *   Go to the **Authorization** tab in Flosum-CodeScan.\
+    *   Go to the **Authorization** tab in Flosum-CodeScan.<br>
 
-
-        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -32,10 +31,9 @@
         * **EU** region: [_https://app-eu.codescan.io_](https://app-eu.codescan.io)
         * **AUS** region: [_https://app-aus.codescan.io_](https://app-aus.codescan.io)
       * **Organization Key**: Obtain this key from your hosted CodeScan instance.
-      *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."\
+      *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."<br>
 
-
-          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Flosum Branch Configuration**:
    1. On the **Branch Configuration** tab, choose the branch you want to scan.
       * Select all or specific component types from the six supported profiles:
@@ -45,33 +43,28 @@
         * Apex Triggers
         * Apex Page
         * Component
-      *   Check the boxes for the components you want to scan and click **Save**.\
+      *   Check the boxes for the components you want to scan and click **Save**.<br>
 
-
-          <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. **Finalize Setup**:&#x20;
-   *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server. \
+   *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server. <br>
 
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
+   *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
-   *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.\
+       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
 
-
-       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
-
-       <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Webhook</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Webhook</p></figcaption></figure>
 
 ## Initiating a Scan on the Flosum Branch
 
 1. **Branch Sync**:
    * Add the **Branch Sync** lightning component to your branch's Lightning record page.
-   *   Click the **Branch Sync** button to trigger the static code analysis.\
+   *   Click the **Branch Sync** button to trigger the static code analysis.<br>
 
-
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **View Project Analysis**:
-   *   Go to the **Project Analysis** page to see the analysis in progress.\
-
+   *   Go to the **Project Analysis** page to see the analysis in progress.<br>
 
        <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -3,8 +3,7 @@
 ## &#x20;<a href="#deploying-salesforce-data-cloud-metadata-using-autorabit-arm" id="deploying-salesforce-data-cloud-metadata-using-autorabit-arm"></a>
 
 **Last Updated:** Oct 31st 2025\
-**Applies to:** AutoRABIT ARM 25.4.5 and later\
-
+**Applies to:** AutoRABIT ARM 25.4.5 and later<br>
 
 ### Overview <a href="#overview" id="overview"></a>
 

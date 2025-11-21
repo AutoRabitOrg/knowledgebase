@@ -7,12 +7,10 @@ By default, ARM connects to orgs using the secure OAuth method (our recommended 
 ### Adding a Salesforce Org connection via OAuth <a href="#adding-a-salesforce-org-connection-via-oauth" id="adding-a-salesforce-org-connection-via-oauth"></a>
 
 1. Log in to your ARM account.&#x20;
-2.  Go to the **`Admin > SF Org Mgmt.`** page.\
-
+2.  Go to the **`Admin > SF Org Mgmt.`** page.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751299595.png" alt="" width="563"><figcaption></figcaption></figure>
-3.  From the **`SF Org Mgmt.`** screen, click on the **`Add`** button.\
-
+3.  From the **`SF Org Mgmt.`** screen, click on the **`Add`** button.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751368396.png" alt=""><figcaption></figcaption></figure>
 4. Enter the **`Salesforce Org Name`**.
@@ -20,8 +18,7 @@ By default, ARM connects to orgs using the secure OAuth method (our recommended 
 6. Select the **`Environment`** from the drop-down (_Production or Development Edition_, _Sandbox_, _Pre-Release_, _Custom URL_).
 7. **`Salesforce Org URL`** is predefined based on the Environment selected.
 8. Select **`Access type`** as **`OAuth`** as the authentication method.
-9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.\
-
+9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751402589.png" alt="" width="563"><figcaption></figcaption></figure>
 10. Click **`Allow`** when prompted to grant ARM access to the Salesforce Org.
@@ -32,8 +29,7 @@ Important Note:If your Salesforce Org is configured with nCino objects, you can 
 ### Connecting to a Salesforce Org using username/password <a href="#connecting-to-a-salesforce-org-using-usernamepassword" id="connecting-to-a-salesforce-org-using-usernamepassword"></a>
 
 1. Go to the **`Admin > SF Org Mgmt.`** page.
-2.  From the **`SF Org Mgmt.`** screen, click on the **`Add`** button.\
-
+2.  From the **`SF Org Mgmt.`** screen, click on the **`Add`** button.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751380093.png" alt=""><figcaption></figcaption></figure>
 3. Enter the **`Salesforce Org Name`**.
@@ -42,8 +38,7 @@ Important Note:If your Salesforce Org is configured with nCino objects, you can 
 6. Select **`Access Type`** as **`Standard`** as the authentication method.
 7. Enter the **`User Name`** and **`Password`**.
 8. Enter the **`Security Token`**&#x20;
-9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.\
-
+9.  Click **`Validate & Save`** to proceed through the OAuth flow and allow ARM to connect to your Salesforce Org.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751417003.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -80,16 +75,13 @@ You can change the **`Environment`** type, the **`Access Type`**, or both.
 1. From the screen, choose the desired environment and access types from the respective dropdown fields.
 2. To edit the **`User Name`**, ensure that the **`Access type`** is set as **`Standard`**.
 3. Click **`Save Details`** or **`Test Connection`**, and you will see one of the following confirmation messages:
-   *   If you change the **`Environment`** type:\
-
+   *   If you change the **`Environment`** type:<br>
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751499400.png" alt="" width="563"><figcaption></figcaption></figure>
-   *   If you change the **`Access Type`**:\
-
+   *   If you change the **`Access Type`**:<br>
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751540329.png" alt="" width="563"><figcaption></figcaption></figure>
-   *   If you change the **`Environment`** type and also the **`Access Type`**:\
-
+   *   If you change the **`Environment`** type and also the **`Access Type`**:<br>
 
        <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751604352.png" alt="" width="563"><figcaption></figcaption></figure>
 4. Click **`Yes`** to complete the request. Click **`No`** to close the confirmation message without changing the details.

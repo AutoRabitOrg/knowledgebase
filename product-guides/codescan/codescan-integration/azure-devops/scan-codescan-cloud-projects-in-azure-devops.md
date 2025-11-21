@@ -19,8 +19,7 @@
 
 1. On your **`Project`** dashboard screen, select **`Pipeline > Pipelines`** and create a **new Pipeline**.
 2. Once you are in the "**Where is your code?**" page, click **Use the classic editor to create a pipeline without YAML**. However, this setting may not be available available until after the following steps are taken.
-3.  Navigate to your Organization / Project settings. Then under the Pipelines section, choose "Settings." In the General section, toggle off the "Disable creation of classic build pipelines" and "Disable creation of classic release pipelines" settings.\
-
+3.  Navigate to your Organization / Project settings. Then under the Pipelines section, choose "Settings." In the General section, toggle off the "Disable creation of classic build pipelines" and "Disable creation of classic release pipelines" settings.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1671).png" alt=""><figcaption></figcaption></figure>
 

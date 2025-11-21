@@ -117,8 +117,7 @@ For more information on running **Static Code Analysis in CI Jobs**, refer [HERE
 
 This section is about deploying or validating the above package onto a different Salesforce Org.
 
-![](<../../../../../.gitbook/assets/image (2239).png>)\
-
+![](<../../../../../.gitbook/assets/image (2239).png>)<br>
 
 1. Select the **Deployment org**.
 2. Specify the **Apex test level** you would like to run for the CI job.
@@ -184,8 +183,7 @@ Note: **Standard fields** are not supported for **Ignore Missing Visible Setting
     * **Add**: Click on the![](<../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1).png>)icon to add up to **5** destination branches.
     * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1).png>)icon to delete a destination branch row.
 
-    ![](<../../../../../.gitbook/assets/image (2243).png>)\
-
+    ![](<../../../../../.gitbook/assets/image (2243).png>)<br>
 9. **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
 10. **Configure Parallel Processor:** This is covered in a separate topic, do check out the link [ HERE](../../../../arm/arm-features/automation-and-ci/parallel-processor.md).
 11. **Set Sequence For Post Activities- On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a dataloader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.

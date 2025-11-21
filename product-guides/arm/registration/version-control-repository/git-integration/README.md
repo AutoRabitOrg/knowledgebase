@@ -14,8 +14,7 @@ GitHub is designed as a Git repository hosting service. It lets you track and sh
 
 Before registering Git with ARM, you must check off some of the boxes on the prerequisites list.
 
-1.  Ensure you enable the **`GIT`** plugin under **`Plugins`** in the **`My Account`** section to use GIT for version control.\
-
+1.  Ensure you enable the **`GIT`** plugin under **`Plugins`** in the **`My Account`** section to use GIT for version control.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667468658459.png" alt="" width="563"><figcaption></figcaption></figure>
 2. You must have a GitHub account. If you don’t already have a GitHub account, you can create one at [github.com](https://github.com/). Once you have a GitHub account, you can create a new repository or use an existing one.
@@ -28,14 +27,12 @@ This is an initial step in storing your user's credentials (usually a username, 
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
-3.  Next, click on **`Create Credential`** from the right navigation bar.\
-
+3.  Next, click on **`Create Credential`** from the right navigation bar.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667468735012.png" alt="" width="563"><figcaption></figcaption></figure>
 4. On the next pop-up screen, give a **`Credential name`**.
 5. Choose the **`Credential Type`** as **`Username With Password.`**
-6.  Enter your GitHub **`Username`** and **API Token** (in the **`Password`** field), and we will store this encrypted. GitHub no longer supports basic authentication using passwords. You must now authenticate to GitHub with an API token instead. For more information on how to create an API token, see the **Troubleshooting** section on this page.\
-
+6.  Enter your GitHub **`Username`** and **API Token** (in the **`Password`** field), and we will store this encrypted. GitHub no longer supports basic authentication using passwords. You must now authenticate to GitHub with an API token instead. For more information on how to create an API token, see the **Troubleshooting** section on this page.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667468804666.png" alt="" width="375"><figcaption></figcaption></figure>
 7. Click **`Save`**.
@@ -45,16 +42,13 @@ This is an initial step in storing your user's credentials (usually a username, 
 To set up a GIT repository, ensure an account is created and configured at [GIT](https://github.com/). Next, follow the below steps:
 
 1. Log in to your ARM account.
-2.  Hover your mouse over the **`Admin`** module and click on **`VC Repo's`**.\
-
+2.  Hover your mouse over the **`Admin`** module and click on **`VC Repo's`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667469343490.png" alt="" width="375"><figcaption></figcaption></figure>
-3.  Click on **`Register Repository`**.\
-
+3.  Click on **`Register Repository`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667469387799.png" alt="" width="563"><figcaption></figcaption></figure>
-4.  Select the **`Version Control System`** as **`GIT`** on the **`Register Repository`** page.\
-
+4.  Select the **`Version Control System`** as **`GIT`** on the **`Register Repository`** page.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1667469498995.png" alt="" width="375"><figcaption></figcaption></figure>
 5. Select the **AWS CodeCommit Repository** checkbox. ARM fetches data from the repository if the GIT gets hosted on **AWS (Amazon Web Services)**.
@@ -80,36 +74,28 @@ While registering GIT with ARM, GIT fails to connect, resulting in _Authenticate
 This section guides you through creating your personal access token directly on GitHub.
 
 1. Log in to your GitHub account.
-2.  In the upper-right corner of any page, click your profile photo, then click **`Settings`**.\
-
+2.  In the upper-right corner of any page, click your profile photo, then click **`Settings`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677573644442.png" alt="" width="188"><figcaption></figcaption></figure>
-3.  In the left sidebar, click **`Developer settings`**.\
-
+3.  In the left sidebar, click **`Developer settings`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677573747686.png" alt="" width="188"><figcaption></figcaption></figure>
-4.  In the left sidebar, click **`Personal access tokens`**.\
-
+4.  In the left sidebar, click **`Personal access tokens`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677573815455.png" alt="" width="188"><figcaption></figcaption></figure>
-5.  Click **`Generate new token`**.\
-
+5.  Click **`Generate new token`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677573866680.png" alt=""><figcaption></figcaption></figure>
-6.  Give your token a descriptive name.\
-
+6.  Give your token a descriptive name.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677573923768.png" alt=""><figcaption></figcaption></figure>
-7.  Select the scopes or permissions you want to grant this token. Select **`repo`** to use your token to access repositories from the command line.\
-
+7.  Select the scopes or permissions you want to grant this token. Select **`repo`** to use your token to access repositories from the command line.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677573994564.png" alt="" width="563"><figcaption></figcaption></figure>
-8.  Click **`Generate token`**.\
-
+8.  Click **`Generate token`**.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677574050356.png" alt="" width="563"><figcaption></figcaption></figure>
-9.  Click ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606156266000.png) to copy the token to your clipboard. You cannot see the token again after navigating off the page for security reasons.\
-
+9.  Click ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1606156266000.png) to copy the token to your clipboard. You cannot see the token again after navigating off the page for security reasons.<br>
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677577004671.png" alt=""><figcaption></figcaption></figure>
 10. Use the copied token as a password for creating/updating the credential in ARM.

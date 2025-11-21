@@ -11,20 +11,17 @@ When a teammate is on vacation or otherwise unavailable, an administrator can **
 ## Delegate a User’s Responsibilities
 
 1. Log in to **AutoRABIT**.
-2.  Hover over **`Admin`** and click **`Users`**.\
-
+2.  Hover over **`Admin`** and click **`Users`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-3.  Locate the **user** whose responsibilities you need to delegate and click on **Actions** drop down and then click on **Delegate**.\
-
+3.  Locate the **user** whose responsibilities you need to delegate and click on **Actions** drop down and then click on **Delegate**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1939).png" alt="" width="269"><figcaption></figcaption></figure>
 4. The delegation wizard opens and lists everything tied to the departing user:
    * **Salesforce Orgs** registered in their name.
    * **Version Control Repositories** and branch permissions.
    *   Any **scheduled tasks** or **approval queues**.\
-       \
-
+       <br>
 
        <figure><img src="../../../../.gitbook/assets/image (1940).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,8 +33,7 @@ When a teammate is on vacation or otherwise unavailable, an administrator can **
 
 5. At the bottom of the wizard, Click on drop down and choose the **delegate user** from the drop-down list of active users.
 6.  Click **Release User** to finalize the transfer.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1941).png" alt="" width="375"><figcaption></figcaption></figure>
 

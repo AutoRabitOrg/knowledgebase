@@ -13,16 +13,14 @@ To ensure Guard can properly access and manage security policies in your Salesfo
 1.  **Assign the Salesforce Integration User License**\
     The Integration User License is a special Salesforce license designed for automated processes, like Guard. By using this license, all actions performed by Guard are attributed to a dedicated integration user, keeping audit logs clean and ensuring proper access control.\
     \
-    By default, the Salesforce Integration Profile (which comes with this license) only includes basic API access. It does not grant access to standard or custom objects in your org. That’s where the next step comes in.\
-
+    By default, the Salesforce Integration Profile (which comes with this license) only includes basic API access. It does not grant access to standard or custom objects in your org. That’s where the next step comes in.<br>
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Integration User License</p></figcaption></figure>
 
 
 2.  #### Assign the Salesforce API Integration Permission Set License (PSL)
 
-    Since the Integration User License alone does not provide access to objects and permissions needed by Guard, you must assign the Salesforce API Integration Permission Set License (PSL).\
-
+    Since the Integration User License alone does not provide access to objects and permissions needed by Guard, you must assign the Salesforce API Integration Permission Set License (PSL).<br>
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Assign the Salesforce API Integration Permission Set License</p></figcaption></figure>
 
@@ -43,20 +41,17 @@ To ensure Guard can properly access and manage security policies in your Salesfo
     \
     If a permission set is assigned **without** the required PSL, you’ll receive an assignment error.\
     \
-    To assign needed permissions, open Permission Set created for integration users and proceed to System Permissions:\
-
+    To assign needed permissions, open Permission Set created for integration users and proceed to System Permissions:<br>
 
     <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (2).png" alt=""><figcaption><p>Permission Set Overview</p></figcaption></figure>
 
     \
-    Click Edit to update permissions:\
-
+    Click Edit to update permissions:<br>
 
     <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (2).png" alt=""><figcaption><p>Edit System Permissions</p></figcaption></figure>
 
     \
-    Make sure to enable all the permissions lived above. They are located under both **System** and **Users** groups:\
-
+    Make sure to enable all the permissions lived above. They are located under both **System** and **Users** groups:<br>
 
     <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (2).png" alt=""><figcaption><p>Permission Sets - Modify All Data</p></figcaption></figure>
 

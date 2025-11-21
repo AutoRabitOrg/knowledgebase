@@ -143,16 +143,14 @@ Once the reviewer has approved the changes, or if you have opted to auto-approve
 Admins are now able to configure the approvals process for the custom deployment module.&#x20;
 
 1. By Admin → My Profile -> Deployment Approval Settings.
-2.  Select the Salesforce Org from the drop-down menu, which requires approval before deployment. (This menu provides a list of Orgs that you have already configured in SF Org MGMT.)\
-
+2.  Select the Salesforce Org from the drop-down menu, which requires approval before deployment. (This menu provides a list of Orgs that you have already configured in SF Org MGMT.)<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1696).png" alt=""><figcaption><p>Deployment - Approval Settings</p></figcaption></figure>
 
     You can also configure the approval process for multiple Orgs.
 3. Click on the drop-down menu to select the approvers for Level 1 and Level 2. The list will contain only users who can access the deployment module.\
    \
-   Note : The App doesn't allow you to select the same approvers for Level 1 and Level 2.\
-
+   Note : The App doesn't allow you to select the same approvers for Level 1 and Level 2.<br>
 4. Click on Save to enable the approval process for deployments.
 
 #### 9. Merge Settings <a href="#id-9-merge-settings" id="id-9-merge-settings"></a>
@@ -178,15 +176,13 @@ Select the **`Enable criteria based Review Process`** checkbox to enable the mer
 
 ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **64.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 64. The newly supported Salesforce objects for each API version can be found [here](salesforce-api-version.md).
 
-Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.\
-
+Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1687).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
-3.  **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
-
+3.  **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1583).png" alt=""><figcaption></figcaption></figure>
 4.  **Packaging and Deployment Settings:** Several options can be configured in this section:&#x20;

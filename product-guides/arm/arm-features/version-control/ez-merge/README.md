@@ -28,12 +28,12 @@ The merge process is generally performed when a feature is ready for user testin
 
     * The **`New EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
 3. You can also reach the **`New Merge`** screen directly by selecting **`Create New > New EZ-Merge`** from the top navigation bar.
 4. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 5. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Source &#x26; Target Branches</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Source &#x26; Target Branches</p></figcaption></figure>
 
 6.  Select the **`Merge Type`** from the dropdown:
 
@@ -43,7 +43,7 @@ The merge process is generally performed when a feature is ready for user testin
     * `Release Label`
     * `ALM Label`
 
-    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption><p>Merge Type</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption><p>Merge Type</p></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 
@@ -55,11 +55,11 @@ This option will merge the entire change from one branch to another branch.&#x20
 
 * **`Delete Source Branch:`** Once you have successfully merged the changes from the source branch to another, you can permanently delete the source branch. Select the **`Delete Source Branch`** checkbox to delete the source branch, which auto-populates whenever 'Entire Branch' as a merge type is selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Delete Source Branch</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Delete Source Branch</p></figcaption></figure>
 
 **B. Single Revision**
 
-Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
+Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
 
 <figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="440"><figcaption><p>New Merge</p></figcaption></figure>
 
@@ -83,7 +83,7 @@ For example, **DXTES-19\_EZ-Commit:** here, **DXTES-19** indicates the _commit l
 
 Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>View Revisions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>View Revisions</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Commit Label</p></figcaption></figure>
 
@@ -257,8 +257,7 @@ Use these options to customize and control your pre-validation merge operations,
 * **Run Destructive Changes:** Here, you can specify whether to run pre- or post-destructive changes while carrying out the merge process.
 * **Ignore Missing Visibility:** With this option, differences in visibility settings between the source and destination branches will not cause the merge to fail. ARM will compare the source and destination branches and keep only the common settings between both branches.\
   \
-  **Important Note**: **Standard fields** are not supported for **Ignore Missing Visible Settings**.\
-
+  **Important Note**: **Standard fields** are not supported for **Ignore Missing Visible Settings**.<br>
 * **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.&#x20;
 * **Apex Test Level:** Choose your [Apex Test Level](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/deployment/apex-unit-tests) to validate your merge.
 

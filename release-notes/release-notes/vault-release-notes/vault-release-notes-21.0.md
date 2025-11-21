@@ -1,4 +1,4 @@
-# Release Notes 21.0
+# Vault Release Notes 21.0
 
 ## Vault 21.4 Release Notes <a href="#vault-214" id="vault-214"></a>
 
@@ -92,13 +92,13 @@ Here’s a quick look at the product's updated UI and branding changes. Again �
 * Application fonts&#x20;
 * Application colors
 
-![Vault Data Backup Enhancements](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig\_1\_loginpage.gif)
+![Vault Data Backup Enhancements](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_1_loginpage.gif)
 
 **Restore/Replicate parents with relationship lookups**
 
 We’ve now added the capability to restore or replicate any non-required parents. To do this, select them from the schema before running a restore/replicate job.
 
-![Vault Data Restore/Replicate](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig\_2\_Schema.gif)
+![Vault Data Restore/Replicate](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_2_Schema.gif)
 
 **Retention policy enhancements for Azure** &#x20;
 
@@ -106,6 +106,6 @@ With our January release, we added the capability to configure the Azure Blob Re
 
 We’ve now enhanced this feature with the capability to define retention periods in previously existing Azure Blob-hosted backups or archives to start using retention periods.  Keep in mind that once you’ve applied a retention policy, your backups will no longer be available after the retention period has expired.
 
-![Rentention Policy Enhancements for Azure](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig\_4\_Retention%20Policy.gif)
+![Rentention Policy Enhancements for Azure](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_4_Retention%20Policy.gif)
 
-\
+<br>

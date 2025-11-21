@@ -32,8 +32,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 4. When **Skip Mapping** is set to false, users cannot choose associated child branches of a mapped branch. In the recent release, ARM reads the mapped branch for your version control repository and displays the related child branches during commit, even if skip mapping is disabled.
 {% endhint %}
 
-7. Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.\
-
+7. Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.<br>
 8.  Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.
 
     <figure><img src="../../../../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
@@ -72,7 +71,7 @@ Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto
 * You can create a review of selected artifacts or a module or collection.&#x20;
 * You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
 * When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below: \
-  ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+  ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (1).png>)
 {% endhint %}
 
 To view changes to Salesforce metadata, edit them, and see the impact to ensure that your changes are correct, follow these steps:
@@ -148,8 +147,7 @@ ARM allows performing a validation deployment before actually committing the cha
           <figure><img src="../../../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
 
           <figure><img src="../../../../../.gitbook/assets/image (1057).png" alt="" width="375"><figcaption></figcaption></figure>
-   3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. \
-
+   3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. <br>
 
        #### Selecting Salesforce Orgs for Validation
 
@@ -192,8 +190,7 @@ ARM allows performing a validation deployment before actually committing the cha
    6. **`Ignore Missing Visibility Settings:`** With this option, differences in visibility settings between the source and destination orgs will not cause the deployment to fail. ARM will compare the source and destination orgs and keep only the common settings between both orgs.\
       \
       **Important Note:**\
-      **Standard fields** are not supported for **Ignore Missing Visible Settings**.\
-
+      **Standard fields** are not supported for **Ignore Missing Visible Settings**.<br>
    7. **`Ignore installed components:`** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files when the remaining components are deployed.
 3. **`Apply Search and Substitute Rules:`** If you created search and substitute rules to define custom find and replace rules which ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, that rule can be found here.
 

@@ -86,8 +86,7 @@ The CodeScan login screen allows you to log in to your instance.
 
 6. If you choose **`Application Security Testing`**, you will be taken to the **Projects** page, which will be your default homepage. As a result, the next time you log in to CodeScan, you will be instantly directed to the **Projects** page because it is set as the default page.
 7. Similarly, if you choose **`Policy Management`**, the **Policy Results** screen will be set as your default homepage.
-8.  The **`Policy Results`** page is also accessible via the **`More`** menu.\
-
+8.  The **`Policy Results`** page is also accessible via the **`More`** menu.<br>
 
     <figure><img src="../../../.gitbook/assets/Policy DC1.0.png" alt=""><figcaption></figcaption></figure>
 

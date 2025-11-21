@@ -1,18 +1,15 @@
 # User Profile
 
-Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc. \
+Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc. <br>
 
-
-To access user preferences, click your user name in the upper right corner and select **`Profile`**.\
-
+To access user preferences, click your user name in the upper right corner and select **`Profile`**.<br>
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-11 at 1.56.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Personal Details <a href="#personal-details" id="personal-details"></a>
 
 The **`Personal Details`** section displays your full name, ARM user name, email address, phone number, etc. Your personal details will be populated, as the system administrator must enter this information when creating a new user account. In this section, you can update your name, phone number, address, etc., accordingly.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -40,26 +37,23 @@ If users maintain an individual version control branch for every release, they m
 {% hint style="info" %}
 NOTE:
 
-1.  If a sub-user does not have access to the **"**&#x53;F ORG MGM&#x54;**"** page and the Skip Mapping option is not enabled for their profile, they will be unable to view the mapped Salesforce Orgs in EZ Commit, even if they have permission to access those Orgs.\
-
+1.  If a sub-user does not have access to the **"**&#x53;F ORG MGM&#x54;**"** page and the Skip Mapping option is not enabled for their profile, they will be unable to view the mapped Salesforce Orgs in EZ Commit, even if they have permission to access those Orgs.<br>
 
     To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (8).png" alt=""><figcaption></figcaption></figure>
 2. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
 {% endhint %}
 
 View the **`Salesforce Orgs`** assigned to you, or you have permission to view.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
 
 View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. \
-You can view the list of all repositories configured under each version control system (VC). Select a repository to display its branches. From there, map the required branches by choosing the appropriate **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.\
-
+You can view the list of all repositories configured under each version control system (VC). Select a repository to display its branches. From there, map the required branches by choosing the appropriate **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -68,15 +62,13 @@ You can view the list of all repositories configured under each version control 
 ### My ALM Mappings <a href="#my-alm-mappings" id="my-alm-mappings"></a>
 
 Under **`My ALM Mappings`** section, you can map your ALM using your credentials or **`Re-Authenticate`** Jira ALMs configured with OAuth access.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have added the filter to fetch specific work items according to the filter applied.\
+For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have added the filter to fetch specific work items according to the filter applied.<br>
 
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

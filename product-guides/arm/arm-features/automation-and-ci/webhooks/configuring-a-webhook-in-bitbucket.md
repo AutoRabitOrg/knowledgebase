@@ -37,14 +37,12 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 
 ## Create a Webhook with Authentication in Bitbucket
 
-1. Log in to your **Bitbucket** account and open the repository where you want to configure the webhook.\
-
+1. Log in to your **Bitbucket** account and open the repository where you want to configure the webhook.<br>
 2. Go to **Settings** and select [**Webhooks**](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
 3. Enter the **Webhook URL** in the following format:
 
 Example:\
-[https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)\
-
+[https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (2011).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -55,8 +53,7 @@ Example:\
 ## Smart Commits
 
 Define patterns to associate Git commits with ALM stories.\
-Example:\
-
+Example:<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (2012).png" alt=""><figcaption></figcaption></figure>
 

@@ -99,8 +99,7 @@ Change Monitoring enhances this raw event into a detailed object like this:
 &#x20; `"operationType": "MODIFIED",`\
 &#x20; `"isMetadata": true,`\
 &#x20; `"riskLevel": "High Risk"`\
-`}`\
-
+`}`<br>
 
 This enriched event provides:
 

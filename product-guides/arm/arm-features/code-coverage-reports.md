@@ -29,7 +29,7 @@ The code coverage report provides information about the apex tests that are run,
 2. Click on the **Code Coverage Reports** tab.&#x20;
 3. Choose your **Salesforce Org** from the dropdown to view the detailed code coverage report.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Each code coverage report generated reflects the details listed below:
 

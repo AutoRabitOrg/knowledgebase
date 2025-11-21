@@ -7,7 +7,7 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
 3. On the **Compare** screen, select the desired **Salesforce org** and the **Configurations** of your choice and click on **GET DETAILS**.&#x20;
 4. The list of backups performed to date will display. **Hierarchica**l and **archival backups** are not supported for **Compare** functionality.
 
-#### Step-By-Step Guide: Backup Compare
+#### Step-By-Step Guide:
 
 1. Click on the “Job Configs” section under the “Compare” module to observer the list of backups available for compare operations.
 2.  Select the required backup(s) from the list of backups available to perform a “Backup-to-Backup” compare operation.

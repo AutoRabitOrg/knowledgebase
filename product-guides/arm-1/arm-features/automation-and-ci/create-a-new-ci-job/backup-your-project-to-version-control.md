@@ -6,7 +6,7 @@ The **CI JOBS** screen is easiest to read at **80 %** zoom in Chrome or Firefox.
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Use ARM to back up changes from your Salesforce org to your [version-control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) system. You can also map commits to specific Salesforce users.
+Use ARM to back up changes from your Salesforce org to your [version control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) system. You can also map commits to specific Salesforce users.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
@@ -30,7 +30,7 @@ Under **Build**, provide:
 1. **Source Salesforce org** – The org to back up.
 2. **Package type** – How ARM collects metadata:
    * **Unpackaged mode** – Retrieves metadata changed since the last ARM cycle (or since **Start date**, if specified).
-   * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.
+   * **Unmanaged package** – Retrieves components from an unmanaged package, so you can edit them.
    * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
 <figure><img src="../../../../../.gitbook/assets/image (2186).png" alt=""><figcaption></figcaption></figure>
@@ -38,10 +38,10 @@ Under **Build**, provide:
 **Additional build options**
 
 1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – Automatically switches to batch retrieval if the job exceeds Salesforce limits. Specify **Batch size** (up to 10,000 items).
-2. **Exclude installed (managed) components and changes** – Skip all managed-package components.
+2. **Exclude installed (managed) components and changes** – Skip all managed package components.
    * **Exclude all manually created components** – Also skip custom components inside managed packages.
 3. **Incremental build** – Fetch only the metadata changed since the last successful deployment, greatly reducing build time.
-4. **Include picklist modifications** – Always include picklist fields, even if Salesforce did not update their “last modified” date. (Source = Salesforce org only.)
+4. **Include picklist modifications** – Always include picklist fields, even if Salesforce did not update their “last modified” date. (Source = Salesforce org only)
 5. **Generate code coverage report** – Include Apex test coverage details.
 6. **Run static analysis report** – Run an SCA tool before committing.
    * **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
@@ -59,7 +59,7 @@ Under **Build**, provide:
 
     <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
 
-1. **Additional profile packaging options**
+1. **Additional profile packaging options:**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
    * **Remove system and user permissions** – Omit profile permissions from deployment.
 2. **Exclude metadata types** – Globally omit specific metadata types from all CI jobs.
@@ -68,11 +68,11 @@ Under **Build**, provide:
 To set global exclusions in advance, open **My Account > My Salesforce Settings**, choose **Exclude metadata types**, and select the types to skip. These settings apply to all future CI jobs.
 {% endhint %}
 
-#### Backup to Version Control (auto-commit) <a href="#backup-to-version-control-auto-commit" id="backup-to-version-control-auto-commit"></a>
+#### Backup to Version Control (Auto-Commit) <a href="#backup-to-version-control-auto-commit" id="backup-to-version-control-auto-commit"></a>
 
 Enable **Auto commit** to push changes directly to your VCS:
 
-1. Select the **Version control type** (Git, TFS, or SVN).
+1. Select the **version control type** (Git, TFS, or SVN).
 2. Choose the **Repository**, **Branch**, and **Credential**.
    * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../../arm/salesforce-dx-metadata-format.md).
 3. Optional settings:
@@ -96,7 +96,7 @@ Run the job automatically:
 * **Weekly** – Run on selected day(s) and time.
 * **No schedule** – Save the job and run it manually when needed.
 
-For credential-usage details across CI job types, see the [FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+For credential usage details across CI job types, see the [FAQs](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
 
 ### What’s next? <a href="#what-next" id="what-next"></a>
 

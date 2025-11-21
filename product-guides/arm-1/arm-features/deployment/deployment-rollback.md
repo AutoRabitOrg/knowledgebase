@@ -17,8 +17,7 @@ Before rolling back your deployment, ensure the rollback feature is turned on fo
 Next,
 
 1. Go to the **`Deployment History`** screen and choose the deployment label from the list for which you would like to trigger the rollback.
-2.  Click **`Rollback`**.\
-
+2.  Click **`Rollback`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1669).png" alt=""><figcaption><p>Rollback Screen</p></figcaption></figure>
 3. Find the metadata components that will be rolled back (under the **`Constructive Changes`** section).
@@ -26,14 +25,14 @@ Next,
 <figure><img src="../../../../.gitbook/assets/image (60) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** In previous releases, ARM didn't have the option to exclude the members while doing the rollback. However, in the recent release, you will now have the feasibility to exclude/deselect the metadata members from the **`Constructive Changes`** section.
+**Note:** In previous releases, ARM didn't have the option to exclude the members while doing the rollback. However, in the recent release, you will now have the ability to exclude/deselect the metadata members from the **`Constructive Changes`** section.
 {% endhint %}
 
 4. In the "**`Choose your Pre/ Post Destructive Changes`**" screen, you’ll see the list of metadata components present in your target org but not in your source org. Select the checkbox next to a component you want to delete, which is deleted when you deploy. The excluded components' details are logged and can be found in **Rollback Iteration Log**.
 5.  You can choose the destructive changes method to delete your components from your target org to sync up the orgs.
 
-    * **`Post Destructive Changes:`** The post destructive changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
-    * **`Pre Destructive Changes:`** Pre-destructive changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
+    * **`Post-Destructive Changes:`** The post-destructive changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
+    * **`Pre-Destructive Changes:`** Pre-destructive changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
 
     <figure><img src="../../../../.gitbook/assets/image (61) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,7 +42,7 @@ Next,
 **Point to Remember:** You must add the version number before continuing with destructive changes for active flow metadata. See the [FlowDefinition guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_flowdefinition.htm) for more detail.
 {% endhint %}
 
-6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md)
+6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md).
 
 <figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -55,8 +54,7 @@ Next,
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](../../../arm/arm-features/deployment/monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!\
-
+10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](../../../arm/arm-features/deployment/monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
 ### Selective Rollback
 
@@ -65,12 +63,11 @@ Selective rollback allows you to revert only specific components from a deployme
 In AutoRABIT, selective rollback can be performed using the following steps:
 
 1. Navigate to the deployment history.
-2. Choose the specific deployment you want to roll back from. For example, a deployment was made with the following components:
+2. Choose the specific deployment you want to roll back. For example, a deployment was made with the following components:
 
 * **Apex Class:** A1V
 * **Apex Class:** AccountAnalyzer
-*   **Custom Object:** AA\_Parts\_\_c\
-
+*   **Custom Object:** AA\_Parts\_\_c<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1670).png" alt=""><figcaption><p>Rollback Selection</p></figcaption></figure>
 

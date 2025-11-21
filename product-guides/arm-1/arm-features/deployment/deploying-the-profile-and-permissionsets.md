@@ -25,7 +25,7 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
 <figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-8. About Object Permissions in Profiles, Editing standard objects on standard profiles is not supported by Salesforce. Hence, these changes won't show up in your destination environment.
+8. About Object Permissions in Profiles, editing standard objects on standard profiles is not supported by Salesforce. Hence, these changes won't show up in your destination environment.
 
 <figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,8 +43,8 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
 11. On the next page, you can see a list of permissions available for each metadata component. Here, you can update the permissions for each component for all the orgs at once.
 
-    * Permissions/ Components that are not available will be denoted by **`X`** in the org.
-    * For the fields that are left blank. For example, in **`Apps`** and **`Datasources`**, no related record type is assigned; hence, nothing shows up or will display '**`No Data Found`**'.
+    * Permissions/Components that are not available will be denoted by **`X`** in the org.
+    * For the fields that are left blank. For example, in **`Apps`** and **`Datasources`**, no related record type is assigned; hence, nothing shows up or will display '**`No Data Found.`**'
 
     <figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 12. You can also download the report on your local machine using the **`Download Report`** icon at the bottom of this page.
@@ -55,12 +55,12 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 14. Next, select one of the actions listed below:
 
     * **`Update Change:`** The changes to the metadata components get updated in the same Org.
-    * **`Update & Deploy:`** The changes will be updated in the selected source org and deployed to the Destination Org(s).
+    * **`Update & Deploy:`** The changes will be updated in the selected source Org and deployed to the Destination Org(s).
     * **`Deploy:`** The changes get deployed only in the selected Destination Org(s). No changes occur in the Source Org.
 
     <figure><img src="../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
 15. Click **`OK`**.
-16. You will be redirected to the [**`Deployment History`**](broken-reference) screen, where you can find the deployment process.
+16. You will be redirected to the **`Deployment History`** screen, where you can find the deployment process.
 
 {% hint style="info" %}
 **Important Note:** You can list the previous profile manager labels from the [**`Profile Manager`**](../../../arm/arm-features/deployment/deploying-the-profile-and-permissionsets.md) screen.

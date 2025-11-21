@@ -10,8 +10,8 @@ Removing dead code is an important software development aspect that is often neg
 
 #### Types of Destructive Changes <a href="#types-of-destructive-changes" id="types-of-destructive-changes"></a>
 
-1. **`Post Destructive Changes:`** The post Destructive Changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
-2. **`Pre Destructive Changes:`** Pre Destructive Changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
+1. **`Post-Destructive Changes:`** The Post-Destructive Changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
+2. **`Pre-Destructive Changes:`** Pre-Destructive Changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
 
 ### Deploying Destructive Changes <a href="#deploying-destructive-changes" id="deploying-destructive-changes"></a>
 
@@ -37,7 +37,7 @@ Finally, the components assigned for destructive changes will be deleted from th
 
 ### Destructive Changes on a Custom Object <a href="#destructive-changes-on-a-custom-object" id="destructive-changes-on-a-custom-object"></a>
 
-When you select a custom object for the destructive changes, the following files will get deleted from your target org:
+When you select a custom object for the destructive changes, the following files will be deleted from your target org:
 
 * The custom object file will be deleted.
 * The translation file(s) will be deleted.
@@ -48,11 +48,11 @@ When you select a custom object for the destructive changes, the following files
 * The object permissions in profiles and permission sets will be deleted.
 * The field permissions in profiles and permission sets will be deleted.
 
-If you need to delete the files mentioned above from your source org, you need to get them deleted manually.
+If you need to delete the files mentioned above from your source org, you need to delete them manually.
 
 ### Destructive Changes on a Custom Field <a href="#destructive-changes-on-a-custom-field" id="destructive-changes-on-a-custom-field"></a>
 
-When you select a custom field for the destructive changes, the following files will get deleted from your target org:
+When you select a custom field for the destructive changes, the following files will be deleted from your target org:
 
 * The custom field will be deleted from the object and removed from the associated page layouts, reports, record types, and list views.
 * The field permissions in profiles and permission sets will be deleted.

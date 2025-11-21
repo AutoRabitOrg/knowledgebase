@@ -15,8 +15,7 @@ To perform org synchronization, follow the below steps:
 1. Log in to your ARM account.
 2. Click on the **`Deployment`** tile on the left side of the screen.
 3. Go to the **`Org Synchronization History`** tab.
-4.  Click on the **`Get Org Differences`** call-to-action button.\
-
+4.  Click on the **`Get Org Differences`** call-to-action button.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  In the **`Org Differences`** dialog box, you will need to:
@@ -25,49 +24,45 @@ To perform org synchronization, follow the below steps:
     * Select your **`Source Org`** and **`Destination Org`**.
     * Select the **`Exclude baseline Managed Package changes`** checkbox if you do not wish to include baseline Managed Package changes during org sync.
     * Select the **`Generate Member Differences`** checkbox to view the metadata member's differences between two Salesforce orgs based on file/data level comparison.
-    * Specify the **`Batch size for Profile Components`** and the **`Batch size for other Components`** to retrieve records. So, the default size for the profile is **500**, and for other components is **2000**. You can modify it as per your requirement. The bulk retrieve option helps run large jobs that exceed normal processing limits – you can deploy up to **10000 files** at once or a maximum size of **14Mb**. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is the best option.
+    * Specify the **`Batch size for Profile Components`** and the **`Batch size for other Components`** to retrieve records. So, the default size for the profile is **500**, and for other components is **2,000**. You can modify it as per your requirement. The bulk retrieve option helps run large jobs that exceed normal processing limits – you can deploy up to **10,000 files** at once or a maximum size of **14MB**. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is the best option.
 
     To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 6.  On the next screen, you can:
 
-    * view the metadata list included in both source and target org
-    * add or delete metadata components to/from the target org
-    * view the metadata member's difference report (if any)
+    * View the metadata list included in both source and target org
+    * Add or delete metadata components to/from the target org
+    * View the metadata member's difference report (if any)
 
     <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Once done with your selection, click on **`Synchronize Orgs`**.
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
-9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each apex test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md)
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md)
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 
 10. Click on **`Deploy`**.
-11. You'll be navigated to the [**`Deployment History`**](../../../arm/arm-features/deployment/monitor-deployments.md) page, where the current synchronization progress can be seen.
+11. You'll be taken to the [**`Deployment History`**](../../../arm/arm-features/deployment/monitor-deployments.md) page, where the current synchronization progress can be seen.
 
 #### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
 
-Synchronization summary information such as label name, source org, destination org, and so on.. can be seen on the **`Org Synchronization History`** page.\
-
+Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  **`Info:`** Click the![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the detailed synchronization report.\
-    \
-
+    <br>
 
     <figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 2. **`Delete:`** Click on the![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
 3. **`Schedule:`** Click the![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>)icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
 4. **`Run:`** Click the![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>)icon to rerun the org synchronization process.
 5. **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
-   *   **Log Report:** Click on the![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>)icon under the **`Status`** column to view the log report for the sync process.\
-
+   *   **Log Report:** Click on the![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>)icon under the **`Status`** column to view the log report for the sync process.<br>
 
        <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-20 at 12.00.15 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 6. **`Report:`**&#x54;here are two options in this column.

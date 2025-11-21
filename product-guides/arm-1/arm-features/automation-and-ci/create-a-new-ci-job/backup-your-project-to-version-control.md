@@ -1,7 +1,7 @@
 # Backup your project to Version Control
 
 {% hint style="info" %}
-The **CI JOBS** screen is easiest to read at **80 %** zoom in Chrome or Firefox.
+The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox browsers.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>

@@ -9,9 +9,9 @@ To facilitate the development of robust, error-free code, Apex supports the crea
 Salesforce recommends the following components that need to be tested:
 
 1. **Single Records:** This includes testing to verify that a single record produces the correct, expected result.
-2. **Bulk Records:** Any apex code, whether a trigger, a class, or an extension, may be used for 1 to 200 records. We must test not only the single record case but the bulk cases as well.
-3. **Positive scenarios:** This type of component testing expects a system to save a record without error.
-4. **Negative scenarios:** This type of component testing expects a system to give an error.
+2. **Bulk Records:** Any Apex code, whether a trigger, a class, or an extension, may be used for 1 to 200 records. We must test not only the single record case but the bulk cases as well.
+3. **Positive Scenarios:** This type of component testing expects a system to save a record without error.
+4. **Negative Scenarios:** This type of component testing expects a system to give an error.
 5. **Restricted User:** Test whether users with restricted access to the objects used in the code see the expected behavior, i.e., whether they can run the code or receive error messages.
 
 ### Choose which Tests to Run <a href="#choose-which-tests-to-run" id="choose-which-tests-to-run"></a>
@@ -21,11 +21,11 @@ The following test options are available when you deploy or commit or use CI job
 <figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 * **`No Test Run:`** No tests are run. This test level applies only to deployments to development environments like Sandbox, Developer Edition, or trial organizations. This test level is the default for development environments.
-* **`Run Specified Tests:`** Only the tests that you specify are run. Provide the names of test classes in a comma-separated list.Make sure for the runTests parameter, and you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to **`Run Specified Tests`**.\
+* **`Run Specified Tests:`** Only the tests that you specify are run. Provide the names of test classes in a comma-separated list. Make sure for the runTests parameter that you're specifying the test class names separated by ",". The runTests parameter will be used only when the test level is set to **`Run Specified Tests`**.\
   Code coverage requirements differ from the default coverage requirements when using this test level. The executed tests must cover each class and trigger in the deployment package for a minimum of 75% code coverage. This coverage is computed for each class and trigger individually and differs from the overall coverage percentage.
 * **`Run Local Tests:`** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 * **`Run All Tests In Org:`** All tests are run. The tests include all tests in your organization, including tests of managed packages.
-* **`Run Tests Based On Changes:`** This option will identify apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified apex classes from the packages in your [default apex test class configuration](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the "**`Do you want us to update the test classes`**" checkbox.
+* **`Run Tests Based On Changes:`** This option will identify Apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified Apex classes from the packages in your [default apex test class configuration](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the "**`Do you want us to update the test classes`**" checkbox.
 
 {% hint style="info" %}
 **Points to Note**:&#x20;
@@ -60,24 +60,21 @@ In the **`Submit for Validation`** screen, select the **`Validate Deployment`** 
 #### During EZ-Merge Prevalidation <a href="#during-ezmerge-prevalidation" id="during-ezmerge-prevalidation"></a>
 
 In the **`New Merge`** screen and under the **`Prevalidate Merge`** section, select the **`Validate Deployment`** checkbox and choose an org to validate your merge. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.\
-\
-
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### During Deployment <a href="#during-deployment" id="during-deployment"></a>
 
-In the **`Deployment Settings`** screen, you can choose the apex test level to validate the deployment.\
-\
-
+In the **`Deployment Settings`** screen, you can choose the Apex test level to validate the deployment.\
+<br>
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 #### During Continuous Integration (CI) Jobs <a href="#during-continuous-integration-ci-jobs" id="during-continuous-integration-ci-jobs"></a>
 
-You can set the apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.\
-
+You can set the Apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="446"><figcaption></figcaption></figure>
 
-For more information on Apex unit tests, Refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex_testing/units/apex_testing_intro) module on Apex test level testing.
+For more information on Apex unit tests, refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex_testing/units/apex_testing_intro) module on Apex test level testing.

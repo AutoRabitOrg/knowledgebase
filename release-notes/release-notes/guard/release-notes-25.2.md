@@ -10,23 +10,23 @@
 
 * Added Change Monitoring and Data Classification widgets to the Salesforce Org Dashboard.&#x20;
 * Widgets link directly to their respective feature pages.&#x20;
-* Updated the Executive Report to include Change Monitoring and Data Classification insights&#x20;
+* Updated the Executive Report to include Change Monitoring and Data Classification insights.
 
 #### Password Hints&#x20;
 
-* Added clear password requirement hints to the New Password screen&#x20;
+* Added clear password requirement hints to the New Password screen.
 * Helps users understand the strict password criteria and successfully set up their account.&#x20;
 
 ### &#x20;Bug Fixes&#x20;
 
 #### Risk Assessment: Certificate Values&#x20;
 
-* Fixed the formatting of certificate details&#x20;
+* Fixed the formatting of certificate details.
 * Shows “No certificate created” when no certificates are available.&#x20;
 
 #### “Sync to Salesforce” button&#x20;
 
-* Fixed an issue with the Sync to Salesforce button appearing multiple times in Data Classification&#x20;
+* Fixed an issue with the Sync to Salesforce button appearing multiple times in Data Classification.
 
 #### Placeholder in Permission Explorer&#x20;
 

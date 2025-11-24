@@ -1,5 +1,25 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.2.3 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date: 26 November 2025**
+
+#### **Suffix Masking Incorrectly Duplicating Hyphens in Email Fields** <a href="#suffix-masking-incorrectly-duplicating-hyphens-in-email-fields" id="suffix-masking-incorrectly-duplicating-hyphens-in-email-fields"></a>
+
+Resolved an issue in **Masking** where the **Suffix** masking rule incorrectly produced a double hyphen in email addresses containing a hyphen. Previously, values such as `john-smith@gmail.com` were updated to `john--smith@gmail.com` after masking. The masking logic has been corrected to preserve the original hyphen structure and apply the suffix mask as intended.
+
+#### **Enhancement: Backup Stability Improved for Share Object** <a href="#enhancement-backup-stability-improved-for-share-object" id="enhancement-backup-stability-improved-for-share-object"></a>
+
+Addressed a performance limitation where incremental backups on the **Share** object could time out when large datasets were filtered using a `LastModifiedDate` range. Engineering has introduced optimizations to improve query handling for high-volume environments, ensuring greater stability for both full and incremental backups.
+
+#### **MFA OTP Validation Failure During SSO Login** <a href="#mfa-otp-validation-failure-during-sso-login" id="mfa-otp-validation-failure-during-sso-login"></a>
+
+Resolved an issue where users logging in through **SSO with MFA** encountered the error message _“Failed to verify MFA OTP.”_ The MFA validation flow has been corrected to properly route OTP verification through the SSO validation mechanism. Login now functions as expected across all login types, including **SSO with MFA**, **SSO without MFA**, and **standard login with MFA**.
+
+#### **Handling of PermissionSetAssignment During Restore Operations** <a href="#handling-of-permissionsetassignment-during-restore-operations" id="handling-of-permissionsetassignment-during-restore-operations"></a>
+
+Enhanced the support for the **PermissionSetAssignment** object during restore. Attempts to restore this object previously resulted in unexpected exceptions, which caused confusion for customers attempting permission recovery. This update provides clear guidance on supported restore behavior, ensuring administrators understand limitations and valid recovery approaches for PermissionSetAssignment data.
+
 ## Vault Release Notes 25.2.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 19 November 2025**

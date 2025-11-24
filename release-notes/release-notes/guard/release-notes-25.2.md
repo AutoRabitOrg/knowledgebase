@@ -1,5 +1,40 @@
 # Guard Release Notes 25.2
 
+## Guard 25.2.8 Release Notes&#x20;
+
+**Release Date:  26 November 2025**&#x20;
+
+### Improvements&#x20;
+
+#### Salesforce Org Dashboard Enhancements&#x20;
+
+* Added Change Monitoring and Data Classification widgets to the Salesforce Org Dashboard.&#x20;
+* Widgets link directly to their respective feature pages.&#x20;
+* Updated the Executive Report to include Change Monitoring and Data Classification insights&#x20;
+
+#### Password Hints&#x20;
+
+* Added clear password requirement hints to the New Password screen&#x20;
+* Helps users understand the strict password criteria and successfully set up their account.&#x20;
+
+### &#x20;Bug Fixes&#x20;
+
+#### Risk Assessment: Certificate Values&#x20;
+
+* Fixed the formatting of certificate details&#x20;
+* Shows “No certificate created” when no certificates are available.&#x20;
+
+#### “Sync to Salesforce” button&#x20;
+
+* Fixed an issue with the Sync to Salesforce button appearing multiple times in Data Classification&#x20;
+
+#### Placeholder in Permission Explorer&#x20;
+
+* Improved placeholder text shown in the Permission Explorer.&#x20;
+* The placeholder now displays the intended guidance.&#x20;
+
+***
+
 ## Guard 25.2.7 Release Notes&#x20;
 
 **Release Date: 29 October 2025**&#x20;

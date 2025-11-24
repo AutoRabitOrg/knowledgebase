@@ -60,6 +60,49 @@ _**starts-with**_ can also be replaced with:
 eg. **\\.** will become **\\\\.**
 {% endhint %}
 
+#### **Working Example: Creating a Custom XPath Rule to Detect a Method Named `setup`**
+
+**Sample Apex Code**
+
+```
+public class Foo {
+
+    static void setup() {
+
+        List<Account> accounts = new List<Account>{
+            new Account(Name='TestAcct0'),
+            new Account(Name='TestAcct1')
+        };
+        insert accounts;
+    }
+}
+```
+
+**Goal**
+
+We want to detect all method declarations where the method name is **setup**.
+
+**XPath Expression**
+
+To find methods with the name `setup`, use this XPath:
+
+```xpath
+//MethodDeclaration[@MethodName='setup']
+```
+
+**Explanation**
+
+* `MethodDeclaration` nodes represent method definitions in Apex.
+* `@MethodName='setup'` filters the nodes to only those whose method name matches `setup`.
+
+**Screenshot (PMD Rule Designer):**
+
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+In the Rule Designer, the analysis is performed solely on the **file’s source code**, from which an Abstract Syntax Tree (AST) is generated. Because the tool does not process the file as a whole, any metadata associated with the file—such as its **name, path, or other file-level attributes—cannot be accessed or retrieved during analysis**.”
+{% endhint %}
+
 ### Visualforce and Aura Lightning <a href="#visualforce-and-aura-lightning" id="visualforce-and-aura-lightning"></a>
 
 You can also use this technique for VisualForce (in the Apex-Custom Rule designer, select the **VisualForce** language and use **XPath 2.0** instead of **XPath 1.0**).

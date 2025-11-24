@@ -112,7 +112,7 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
     1. After selecting the desired field, a value is entered in the Search box to locate matching records. Selecting GO initiates the filter and updates the results accordingly.
     2. Once the filter is applied, the results table displays only those records that match the specified value in the chosen field. Pagination controls at the bottom allow navigation through the filtered dataset as needed.
 
-    <figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (23) (6).png" alt=""><figcaption></figcaption></figure>
 31. **View Records**
     1. Displays a list of comparison results with a View Records icon for each row, allowing detailed inspection of the selected record.
     2.  Each icon opens a modal window showing a side-by-side comparison of Backup(s) Data for the corresponding object record.

@@ -10,7 +10,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Login to your ARM account.
+1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
 <figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
@@ -31,11 +31,11 @@ Under the **Build** section, fill in the below details:
 1. Select the source **Salesforce org**.
 2.  Select the **Package type** to retrieve and bundle the changes from a source sandbox.
 
-    * **Unpackaged Mode:** This fetches the metadata members in your org that have got modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
+    * **Unpackaged Mode:** This fetches the metadata members in your org that have been modified from the last ARM cycle. On selection, specify a date in the Start Date field from which changes in Salesforce Org will fetch. If a date is not specified, then the project creation date will become the start date and changes will get fetched.
     * **Unmanaged packages:** These provide developers with basic building blocks for an application as application templates. The user can edit the components after installing this package in a Salesforce Org.
     * **Managed packages:** Salesforce partners use these packages to distribute and sell applications to their users. These packages get created from a Developer Edition organization.
 
-    For more information, refer to the link below: [https://help.salesforce.com/HTViewHelpDoc?id=sharing\_apps.htm\&language=en\_US](https://help.salesforce.com/HTViewHelpDoc?id=sharing_apps.htm\&language=en_US)
+    For more information, refer to [https://help.salesforce.com/HTViewHelpDoc?id=sharing\_apps.htm\&language=en\_US](https://help.salesforce.com/HTViewHelpDoc?id=sharing_apps.htm\&language=en_US).
 
 **Additional options in the Build section**
 

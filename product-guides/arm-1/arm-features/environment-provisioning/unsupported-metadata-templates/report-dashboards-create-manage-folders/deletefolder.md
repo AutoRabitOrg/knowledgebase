@@ -4,7 +4,7 @@ The **DeleteFolder** template allows you to delete report or dashboard folders i
 
 ## Steps to Create the DeleteFolder Template
 
-1. Log in to your [AutoRABIT](https://www.autorabit.com/) account.
+1. Log in to your AutoRABIT account.
 2. Navigate to the **Env. Pro.** module.
 3. Click on **Create New Template**.
 4. Select the **Create Unsupported Metadata Template** tab.

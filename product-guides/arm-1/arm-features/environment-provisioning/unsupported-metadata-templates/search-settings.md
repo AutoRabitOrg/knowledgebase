@@ -25,5 +25,5 @@ The **SearchSetting** template enables users to configure and schedule search in
 10. Once saved, you’ll be redirected to the [**Environment Provisioning History**](../../../../arm/arm-features/environment-provisioning/) screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select your **destination org** and enter **email address(es)** to receive notifications.
-13. In the **Post Deployment Steps**, select the test cases you have recently created.
+13. In the **Post-Deployment Steps**, select the test cases you have recently created.
 14. Visit the **View History** page for a detailed summary of the operation.

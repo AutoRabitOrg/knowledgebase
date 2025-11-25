@@ -28,7 +28,7 @@ Refer to the following Salesforce screens to update the details under **Deploy >
 
 <figure><img src="../../../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
-9. To refresh a sandbox, select **Production Org** in the **Source Sandbox** field or, to clone an existing sandbox, select the name of the sandbox as selected in the **Create From** dropdown in the **Sandbox Information** section.&#x20;
+9. To refresh a sandbox, select **Production Org** in the **Source Sandbox** field, or to clone an existing sandbox, select the name of the sandbox as selected in the **Create From** dropdown in the **Sandbox Information** section.&#x20;
 10. Click **Save** to save this page.&#x20;
 11. Next, click **Save** to save the template.&#x20;
 12. Once the template is created successfully, you'll be redirected to the **Environment Provisioning History** screen.
@@ -45,5 +45,5 @@ Refer to the following Salesforce screens to update the details under **Deploy >
 <figure><img src="../../../../../.gitbook/assets/image (41) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 15. Enter the **email address(es)** to receive an email notification when the template is run.
-16. In the **Post Deployment Steps**, select the test cases you recently **created**.&#x20;
+16. In the **Post-Deployment Steps**, select the test cases you recently **created**.&#x20;
 17. For a detailed summary report of the operation carried out, see the **View History** page.

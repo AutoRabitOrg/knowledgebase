@@ -1,4 +1,4 @@
-# Update Url for Remote Site Settings
+# Update URL for Remote Site Settings
 
 To create this template, follow the below steps:
 
@@ -7,7 +7,7 @@ To create this template, follow the below steps:
 3. Click on **Create New Template**.
 4. Go to the **Create Unsupported Metadata Template** tab.
 5. Give the template a **name** and a **short description** of it.
-6. Select the **Update Url for Remote Site Settings** checkbox.
+6. Select the **Update URL for Remote Site Settings** checkbox.
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** and **Remote Site Settings Name** that appear automatically by default. To add the custom test data, click on **Add** button.
 9. However, you'll need to add more custom settings for the auto-generated or your custom test case name. To add, do the following:

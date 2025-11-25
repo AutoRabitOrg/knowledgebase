@@ -1,8 +1,8 @@
 # Web to Case
 
-To create a Web to Case template, follow the steps below:
+To create a Web to Case template, follow the below below:
 
-1. Log in to your [AutoRABIT](https://www.autorabit.com/) account.
+1. Log in to your AutoRABIT account.
 2. Navigate to the **Env. Pro.** module.
 3. Click **Create New Template**.
 4. Open the **Create** tab and select [**Unsupported Metadata Template**](../../../../arm/arm-features/environment-provisioning/unsupported-metadata-templates/).

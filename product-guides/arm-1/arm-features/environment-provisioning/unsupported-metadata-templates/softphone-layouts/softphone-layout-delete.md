@@ -4,7 +4,7 @@ The **SoftPhoneLayoutDel** template enables the deletion of a specific SoftPhone
 
 ## Steps to Create the SoftPhoneLayoutDel Template
 
-1. Log in to your [AutoRABIT](https://www.autorabit.com/) account.
+1. Log in to your AutoRABIT account.
 2. Navigate to the **Env. Pro.** module.
 3. Click **Create New Template**.
 4. Go to the **Create** [**Unsupported Metadata Template**](../../../../../arm/arm-features/environment-provisioning/unsupported-metadata-templates/) tab.

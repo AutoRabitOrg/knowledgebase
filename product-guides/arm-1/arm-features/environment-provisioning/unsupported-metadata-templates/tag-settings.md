@@ -1,8 +1,8 @@
 # Tag Settings
 
-To create this template, follow the below steps:
+To create this template, follow the steps below:
 
-1. Login to your AutoRABIT account.
+1. Log in to your AutoRABIT account.
 2. Click on **Env. Pro.** module.
 3. Click on **Create New Template**.
 4. Go to the **Create** [**Unsupported Metadata Template**](../../../../arm/arm-features/environment-provisioning/unsupported-metadata-templates/) tab.

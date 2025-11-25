@@ -1,13 +1,10 @@
-# Create a Module
+# Creating a Module
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
-Modularization lets you break your org’s customizations into **unlocked packages**.\
-Each package becomes the single source of truth for the metadata it contains, and you can update any environment—scratch org, sandbox, or production—by installing the latest version.
+Modularization lets you break your org’s customizations into **unlocked packages**. Each package becomes the single source of truth for the metadata it contains, and you can update any environment—scratch org, sandbox, or production—by installing the latest version.
 
 Whenever you change the package’s [metadata](https://www.autorabit.com/blog/the-role-of-metadata-in-devops-for-salesforce/), you simply create a **new package version** and install it wherever it’s needed.
-
-***
 
 ### Creating a Module <a href="#creating-a-module" id="creating-a-module"></a>
 
@@ -42,7 +39,7 @@ Follow these steps to create a module in AutoRABIT:
 
     <figure><img src="../../../../.gitbook/assets/image (1442).png" alt="Validate and Push"><figcaption></figcaption></figure>
 7.  **Validate dependencies**\
-    Compare the Source Org with another [Salesforce Org](broken-reference) to ensure no dependent components are omitted.
+    Compare the Source Org with another Salesforce Org to ensure no dependent components are omitted.
 
     <figure><img src="../../../../.gitbook/assets/image (1443).png" alt="Validation options"><figcaption></figcaption></figure>
 8. **Additional options**
@@ -53,7 +50,7 @@ Follow these steps to create a module in AutoRABIT:
 **Note:** _Standard fields_ are **not** supported for **Ignore Missing Visibility Settings**.
 {% endhint %}
 
-9.  **Publish To** – configure commit and package settings.
+9.  **Publish To:** Configure commit and package settings.
 
     * **Repository / Branch** – pick where to commit the metadata (use **+** to create a branch).
     * **Development Hub (Dev Hub)** – select the Dev Hub that will own the unlocked package.
@@ -71,7 +68,7 @@ Follow these steps to create a module in AutoRABIT:
 
 {% hint style="info" %}
 ```
-**Conditions:**  
+Conditions:  
 * The dependent package was created in AutoRABIT **and**  
 * It has at least one successful version.
 ```

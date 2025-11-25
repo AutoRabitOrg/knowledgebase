@@ -28,11 +28,11 @@ Last 24 hours
 
 Custom Range: Specify your own date and time range.
 
-<figure><img src="../../../../.gitbook/assets/image (1183).png" alt="Date Range Filter" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2263).png" alt=""><figcaption></figcaption></figure>
 
 Advanced Filter Options :
 
-<figure><img src="../../../../.gitbook/assets/image (1185).png" alt="Filter Panel" width="401"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2264).png" alt=""><figcaption></figcaption></figure>
 
 Job Source Type:
 
@@ -40,13 +40,13 @@ Sandbox: Choose the Source Org. Select All to include all orgs.
 
 Version Control: Choose the Source Repository and Source Branch. Select All to include all repos and branches.
 
-<figure><img src="../../../../.gitbook/assets/image (1186).png" alt="Source Type Filters" width="563"><figcaption></figcaption></figure>
-
 Destination Org: Select a specific org or choose All to include jobs targeting any destination org.
+
+<figure><img src="../../../../.gitbook/assets/image (2265).png" alt="" width="157"><figcaption></figcaption></figure>
 
 Additional Options
 
-<figure><img src="../../../../.gitbook/assets/image (1187).png" alt="CI Job Actions" width="550"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-25 at 14.12.52.png" alt=""><figcaption></figcaption></figure>
 
 Info: View job metadata including source/destination orgs, repositories, branches, timestamps, etc.
 

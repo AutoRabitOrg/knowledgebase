@@ -2,7 +2,7 @@
 
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 
-### About Salesforce org synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
+### About Salesforce Org Synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
 
 The org synchronization provides a mechanism to export single data, or all content items, from a source to a target Salesforce org effortlessly, thereby establishing consistency among data.
 
@@ -22,8 +22,8 @@ To perform org synchronization, follow the below steps:
 
     * Give the process a **`Name`**.
     * Select your **`Source Org`** and **`Destination Org`**.
-    * Select the **`Exclude baseline Managed Package changes`** checkbox if you do not wish to include baseline Managed Package changes during org sync.
-    * Select the **`Generate Member Differences`** checkbox to view the metadata member's differences between two Salesforce orgs based on file/data level comparison.
+    * Select the **`Exclude Baseline Managed Package Changes`** checkbox if you do not wish to include baseline Managed Package changes during org sync.
+    * Select the **`Generate Member Differences`** checkbox to view the metadata member's differences between two Salesforce orgs based on file/data-level comparison.
     * Specify the **`Batch size for Profile Components`** and the **`Batch size for other Components`** to retrieve records. So, the default size for the profile is **500**, and for other components is **2,000**. You can modify it as per your requirement. The bulk retrieve option helps run large jobs that exceed normal processing limits – you can deploy up to **10,000 files** at once or a maximum size of **14MB**. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is the best option.
 
     To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.\
@@ -32,16 +32,16 @@ To perform org synchronization, follow the below steps:
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 6.  On the next screen, you can:
 
-    * View the metadata list included in both source and target org
-    * Add or delete metadata components to/from the target org
-    * View the metadata member's difference report (if any)
+    * View the metadata list included in both source and target org.
+    * Add or delete metadata components to/from the target org.
+    * View the metadata member's difference report (if any).
 
     <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Once done with your selection, click on **`Synchronize Orgs`**.
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
-9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md)
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md).
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 

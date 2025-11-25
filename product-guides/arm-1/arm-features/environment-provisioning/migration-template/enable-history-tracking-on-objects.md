@@ -2,7 +2,7 @@
 
 Using this template, you can enable field history tracking for custom and standard objects.
 
-To create this template, follow the below steps:
+To create this template, follow the steps below:
 
 1. In the **Create Migration Template** screen, select the checkbox: **Enable History Tracking on Objects.**
 2. Next, upload the package manifest XML file. Click **Choose File** and upload the required XML file from your local system.

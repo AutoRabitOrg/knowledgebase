@@ -6,13 +6,13 @@ For optimal viewing, set your browser zoom level to 80% in Chrome or Firefox.
 
 The CI Job List screen displays all CI jobs created in ARM, listed in reverse chronological order — the most recent jobs appear at the top.
 
-<figure><img src="../../../../.gitbook/assets/image (1179).png" alt="CI Job List UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2261).png" alt=""><figcaption></figcaption></figure>
 
 Jobs that have been deployed display the icon , while jobs that have only been validated display .
 
 Filtering Options Use the filters to refine your search for specific CI jobs.
 
-<figure><img src="../../../../.gitbook/assets/image (1182).png" alt="Filtering Options UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2262).png" alt=""><figcaption></figcaption></figure>
 
 Group By: Select a specific job group from the dropdown or type the group name. Choose All Groups to view jobs from all groups.
 

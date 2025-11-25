@@ -23,5 +23,5 @@ The **ActivityButtonOverrides** template allows you to configure custom behavior
 10. After successful creation, you will be redirected to the [**Environment Provisioning**](../../../../arm/arm-features/environment-provisioning/) **History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Choose your **destination org** and enter the **email address(es)** to receive notification upon completion.
-13. In the **Post Deployment Steps**, select the test cases you created.
+13. In the **Post-Deployment Steps**, select the test cases you created.
 14. Review the **View History** page for a detailed summary of the deployment.

@@ -746,7 +746,7 @@
       * [Registering a Dev Hub](product-guides/arm-1/arm-features/salesforce-dx/registering-a-devhub.md)
       * [Creating a Scratch Org](product-guides/arm-1/arm-features/salesforce-dx/create-a-scratch-org.md)
       * [Creating a Module](product-guides/arm-1/arm-features/salesforce-dx/create-a-module.md)
-      * [Create an Unlocked/Managed Package](product-guides/arm-1/arm-features/salesforce-dx/create-an-unlocked-managed-package.md)
+      * [Creating an Unlocked/Managed Package](product-guides/arm-1/arm-features/salesforce-dx/create-an-unlocked-managed-package.md)
       * [Import an Unlocked/Managed Package](product-guides/arm-1/arm-features/salesforce-dx/import-an-unlocked-managed-package.md)
     * [Reports](product-guides/arm-1/arm-features/reports/README.md)
       * [Analytics](product-guides/arm-1/arm-features/reports/reports-overview.md)

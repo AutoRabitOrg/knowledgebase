@@ -1,24 +1,20 @@
-# Create an Unlocked/Managed Package
+# Creating an Unlocked/Managed Package
 
 ### What’s a Package? <a href="#whats-a-package" id="whats-a-package"></a>
 
-A **package** is a container of related metadata—features, customizations, and schema—that you move from one [Salesforce org](broken-reference) to another.
+A **package** is a container of related metadata—features, customizations, and schema—that you move from one Salesforce org to another.
 
 There are two kinds:
 
 * **Unlocked packages** – ideal for internal development; they let you add, edit, and remove metadata across multiple orgs in a traceable way.
 * **Managed packages** – created by Salesforce partners to distribute or sell apps. They bundle code and configuration into a single, versioned unit.
 
-***
-
-### Create a Package <a href="#create-a-package" id="create-a-package"></a>
+### Creating a Package <a href="#create-a-package" id="create-a-package"></a>
 
 Creating a package involves two steps:
 
 1. **Create the package** – define static info such as the name and description.
 2. **Create a package version** – the deployable artifact you install in any org.
-
-***
 
 #### Step 1: Create a Package <a href="#step-1-creating-a-package" id="step-1-creating-a-package"></a>
 
@@ -116,11 +112,9 @@ Promote a package version to make it installable outside scratch orgs.\
 You may promote only **once** per version number.
 
 {% hint style="info" %}
-* Code coverage must be **≥ 75 %** for promotion.
-* Older versions created before code-coverage checks show **0 %** but remain unaffected.
+* Code coverage must be **≥ 75%** for promotion.
+* Older versions created before code-coverage checks show **0%** but remain unaffected.
 {% endhint %}
-
-***
 
 #### Package Info Tooltip
 

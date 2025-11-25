@@ -21,5 +21,5 @@ The **SortAlphabetically** template automatically reorders all picklist values a
 10. You will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your target org.
 12. Choose the **destination org** from the dropdown and provide **email address(es)** for notifications.
-13. In **Post Deployment Steps**, select the test cases created.
+13. In **Post-Deployment Steps**, select the test cases created.
 14. Visit the **View History** page to access a detailed summary report of the deployment.

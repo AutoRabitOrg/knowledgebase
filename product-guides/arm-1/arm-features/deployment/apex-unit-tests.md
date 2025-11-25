@@ -9,7 +9,7 @@ To facilitate the development of robust, error-free code, Apex supports the crea
 Salesforce recommends the following components that need to be tested:
 
 1. **Single Records:** This includes testing to verify that a single record produces the correct, expected result.
-2. **Bulk Records:** Any Apex code, whether a trigger, a class, or an extension, may be used for 1 to 200 records. We must test not only the single record case but the bulk cases as well.
+2. **Bulk Records:** Any Apex code, whether a trigger, a class, or an extension, may be used for 1 to 200 records. We test not only the single record case, but the bulk cases as well.
 3. **Positive Scenarios:** This type of component testing expects a system to save a record without error.
 4. **Negative Scenarios:** This type of component testing expects a system to give an error.
 5. **Restricted User:** Test whether users with restricted access to the objects used in the code see the expected behavior, i.e., whether they can run the code or receive error messages.
@@ -25,13 +25,13 @@ The following test options are available when you deploy or commit or use CI job
   Code coverage requirements differ from the default coverage requirements when using this test level. The executed tests must cover each class and trigger in the deployment package for a minimum of 75% code coverage. This coverage is computed for each class and trigger individually and differs from the overall coverage percentage.
 * **`Run Local Tests:`** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 * **`Run All Tests In Org:`** All tests are run. The tests include all tests in your organization, including tests of managed packages.
-* **`Run Tests Based On Changes:`** This option will identify Apex test classes from your source package in addition to the default configured apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified Apex classes from the packages in your [default apex test class configuration](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the "**`Do you want us to update the test classes`**" checkbox.
+* **`Run Tests Based On Changes:`** This option will identify Apex test classes from your source package in addition to the default configured Apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified Apex classes from the packages in your [default Apex test class configuration](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the "**`Do you want us to update the test classes`**" checkbox.
 
 {% hint style="info" %}
 **Points to Note**:&#x20;
 
-1. Only CI Jobs have the "**`Do you want us to update the test classes`**" checkbox enabled. This feature is yet to be implemented in other modules.
-2. With our current "Run Tests Based on Changes" functionality, we still expect a test class for a wrapper class with appropriate code coverage, even if the wrapper class doesn't contain any executable code. Otherwise, we will encounter a code coverage error:
+1. Only CI Jobs have the "**`Do you want us to update the test classes`**" checkbox enabled. This feature has yet to be implemented in other modules.
+2. With our current "Run Tests Based on Changes" functionality, we still expect a test class for a wrapper class with appropriate code coverage, even if the wrapper class doesn't contain any executable code. Otherwise, you will encounter a code coverage error:
 
 _Code Coverage Failures:_\
 &#xNAN;_&#x43;lass: TransactionHistoryActionParameters -- Test coverage of selected Apex Class is 0%, at least 75% test coverage is required_\
@@ -43,10 +43,10 @@ _Code Coverage Failures:_\
 {% hint style="info" %}
 **Point to Note**:
 
-1. Please make sure to execute all apex tests before configuring this option. This allows you to configure the mapping between the main class and the test class.
+1. Please make sure to execute all Apex tests before configuring this option. This allows you to configure the mapping between the main class and the test class.
 2. If you have cleared the last run history in your destination org, you must again execute run all tests. If not done, the dependent test execution will fail.
 3. If you have refreshed your sandbox, then again you are required to execute run all tests. If not done, the dependent test execution will fail.
-4. If the test classes do not exist in the package, the test level is configured based on the Run local Tests.
+4. If the test classes do not exist in the package, the test level is configured based on the Run Local Tests.
 {% endhint %}
 
 ### Where can I choose the Apex Tests level in ARM? <a href="#where-can-i-choose-the-apex-tests-level-in-arm" id="where-can-i-choose-the-apex-tests-level-in-arm"></a>

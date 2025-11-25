@@ -695,7 +695,7 @@
         * [Deploy from SFDX branch to a Salesforce Org](product-guides/arm-1/arm-features/automation-and-ci/create-a-new-ci-job/deploy-from-sfdx-branch-to-a-salesforce-org.md)
         * [Run Test Automation Scripts](product-guides/arm-1/arm-features/automation-and-ci/create-a-new-ci-job/run-test-automation-scripts.md)
         * [Install an Unlocked Package from Version Control Branch](product-guides/arm-1/arm-features/automation-and-ci/create-a-new-ci-job/install-an-unlocked-package-from-version-control-branch.md)
-      * [Triggering Builds for your CI Job](product-guides/arm-1/arm-features/automation-and-ci/triggering-builds-for-your-ci-job.md)
+      * [Triggering Builds for Your CI Job](product-guides/arm-1/arm-features/automation-and-ci/triggering-builds-for-your-ci-job.md)
       * [CI Job History](product-guides/arm-1/arm-features/automation-and-ci/ci-job-history.md)
       * [CI Job List](product-guides/arm-1/arm-features/automation-and-ci/ci-job-list.md)
       * [Configure Callout URL](product-guides/arm-1/arm-features/automation-and-ci/configure-callout-url.md)

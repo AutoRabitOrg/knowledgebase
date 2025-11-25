@@ -1,7 +1,7 @@
-# Triggering Builds for your CI Job
+# Triggering Builds for Your CI Job
 
 {% hint style="info" %}
-The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on your chrome/firefox browser.
+The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
@@ -58,7 +58,7 @@ ALM-integrated CI Jobs display ALM work item information from the source version
 {% hint style="info" %}
 **Important Note:**
 
-1. **ALM Label Type: Commit** — If a label is selected, results show all commits regardless of status.
+1. **ALM Label Type: Commit:** If a label is selected, results show all commits regardless of status.
 2. If no label is selected, all committed and merged revisions matching the CI Job configuration will be packaged. This applies to scheduled CI Jobs as well.
 {% endhint %}
 
@@ -72,21 +72,21 @@ CI Jobs without ALM integration show the following build input screen:
 
 * Enter a **Title** and optional **Comments**
 * Choose **Deployment Type**:
-  * **Deploy**: Executes a full deployment to destination org or branch
-  * **Validate only**: Runs validations without deployment
+  * **Deploy**: Executes a full deployment to destination org or branch.
+  * **Validate only**: Runs validations without deployment.
 
 **Additional Options:**
 
 1. **Run Code Coverage On Destination**
-   * Enabled if test execution is configured in the CI Job
-   * Generates Apex test coverage reports
+   * Enabled if test execution is configured in the CI Job.
+   * Generates Apex test coverage reports.
 2. **Enable Rollback For Deployment**
-   * Enabled if **Rollback** was selected in the CI Job's **Deploy** section
+   * Enabled if **Rollback** was selected in the CI Job's **Deploy** section.
 3. **Ignore Warnings**
-   * Allows deployment to continue despite warnings
+   * Allows deployment to continue despite warnings.
 
-* Use the **Notes** field to enter optional information
-* Click **Trigger Build** to validate and execute the build
+* Use the **Notes** field to enter optional information.
+* Click **Trigger Build** to validate and execute the build.
 
 {% hint style="info" %}
 **Important Notes:**

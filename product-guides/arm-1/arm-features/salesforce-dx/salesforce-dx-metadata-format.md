@@ -3,8 +3,6 @@
 Modern DevOps workflows rely on **Salesforce DX (SFDX)** to treat org configuration like code.\
 Instead of a monolithic ZIP, your metadata lives in a **source-tracked directory structure** that maps cleanly to Git and CI/CD pipelines. AutoRABIT embraces this model and adds automation on top—but it needs to know which folder(s) contain your DX-formatted source.
 
-***
-
 ### Overview <a href="#overview" id="overview"></a>
 
 AutoRABIT identifies an SFDX repository by locating an **`sfdx-project.json`** file in the root:

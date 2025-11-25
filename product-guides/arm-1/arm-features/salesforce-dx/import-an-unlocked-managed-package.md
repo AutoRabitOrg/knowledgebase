@@ -1,9 +1,7 @@
-# Import an Unlocked/Managed Package
+# Importing an Unlocked/Managed Package
 
 Learn how to bring an existing unlocked or managed package into AutoRABIT for further management.\
 (Need a refresher on packages? See [Create an Unlocked/Managed Package](../../../arm/create-an-unlocked-managed-package.md).)
-
-***
 
 ### Step 1: Import a Package <a href="#step-1-importing-a-package" id="step-1-importing-a-package"></a>
 
@@ -24,10 +22,10 @@ Learn how to bring an existing unlocked or managed package into AutoRABIT for fu
 8.  Click **Save** to review the summary.
 
     <figure><img src="../../../../.gitbook/assets/image (1470).png" alt="Save confirmation window" width="559"><figcaption></figcaption></figure>
-9.  Click **IMPORT** to begin. The **Import Packages Log** opens.
+9.  Click **Import** to begin. The **Import Packages Log** opens.
 
     <figure><img src="../../../../.gitbook/assets/image (1471).png" alt="Import Packages Log dialog" width="496"><figcaption></figcaption></figure>
-10. Click **CLOSE**. You return to the **Packages** home page, where the newly imported package appears.
+10. Click **Close**. You return to the **Packages** home page, where the newly imported package appears.
 
     <figure><img src="../../../../.gitbook/assets/image (1472).png" alt="Packages home showing imported package"><figcaption></figcaption></figure>
 

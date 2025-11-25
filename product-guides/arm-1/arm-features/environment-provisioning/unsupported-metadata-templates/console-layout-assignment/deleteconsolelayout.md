@@ -19,5 +19,5 @@ The **DeleteConsoleLayout** template allows you to delete Console Layout Assignm
 10. You will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select your **destination org** from the dropdown and provide **email address(es)** to receive notifications.
-13. In **Post Deployment Steps**, choose the recently created test cases.
+13. In **Post-Deployment Steps**, choose the recently created test cases.
 14. For a detailed report of the operation, check the **View History** page.

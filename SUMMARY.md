@@ -841,7 +841,7 @@
           * [Mobile Salesforce Settings](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/mobile-administration/mobile-salesforce-settings.md)
           * [Salesforce Navigation](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/mobile-administration/salesforce-navigation.md)
           * [Salesforce Offline](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/mobile-administration/salesforce-offline.md)
-        * [Multi Line Layout Fields For Contract Line Items](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/multilinelayoutfieldsforcontractlineitems.md)
+        * [Multi-Line Layout Fields For Contract Line Items](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/multilinelayoutfieldsforcontractlineitems.md)
         * [Multi Line Layout Fields for Opportunity Teams](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/multi-line-layout-fields-for-opportunity-teams.md)
         * [Offline Briefcase Configuration](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/offline-briefcase-configuration/README.md)
           * [Offline Briefcase Configuration New](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/offline-briefcase-configuration/offlinebriefcaseconfigurationnew.md)

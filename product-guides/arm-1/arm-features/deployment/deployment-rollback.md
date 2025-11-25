@@ -28,7 +28,7 @@ Next,
 **Note:** In previous releases, ARM didn't have the option to exclude the members while doing the rollback. However, in the recent release, you will now have the ability to exclude/deselect the metadata members from the **`Constructive Changes`** section.
 {% endhint %}
 
-4. In the "**`Choose your Pre/ Post Destructive Changes`**" screen, you’ll see the list of metadata components present in your target org but not in your source org. Select the checkbox next to a component you want to delete, which is deleted when you deploy. The excluded components' details are logged and can be found in **Rollback Iteration Log**.
+4. In the "**`Choose your Pre/Post-Destructive Changes`**" screen, you’ll see the list of metadata components present in your target org but not in your source org. Select the checkbox next to a component you want to delete, which is deleted when you deploy. The excluded components' details are logged and can be found in **Rollback Iteration Log**.
 5.  You can choose the destructive changes method to delete your components from your target org to sync up the orgs.
 
     * **`Post-Destructive Changes:`** The post-destructive changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
@@ -47,7 +47,7 @@ Next,
 <figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. Next, you will find two more deployment options to choose from:
-   * **Deploy purge on delete**: Salesforce uses a recycle bin metaphor for data that users delete. Instead of removing the data, Salesforce flags it as deleted and makes it visible through the recycle bin. ARM has a provision to identify the components that users want to delete and permanently delete them from their Salesforce environment instead of keeping the deleted components in recycle bin. Once purged, they can not be recovered.
+   * **Deploy purge on delete**: Salesforce uses a recycle bin metaphor for data that users delete. Instead of removing the data, Salesforce flags it as deleted and makes it visible through the recycle bin. ARM has a provision to identify the components that users want to delete and permanently delete them from their Salesforce environment instead of keeping the deleted components in recycle bin. Once purged, they cannot be recovered.
    * **Ignore warnings:** This option will allow the rollback to continue even if warnings can cause the deployment to fail.
 8. Add information about the current rollback deployment process in the **`Deployment Notes`** box.
 9. Type **`Rollback`** in the field provided and click on **`Yes`**.

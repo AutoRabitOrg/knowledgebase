@@ -1,14 +1,14 @@
 # Configure Callout URL
 
 {% hint style="info" %}
-The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on your chrome/firefox browser.
+The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
 
 The callout URL lets you call another service from the ARM application via an HTTP request. For an HTTP callout to work correctly, all the HTTP callout parameters and the entities associated with the callout must be configured correctly.
 
-### Where can I find Configure Callout URL option? <a href="#where-can-i-find-configure-callout-url-option" id="where-can-i-find-configure-callout-url-option"></a>
+### Where Can I Find the Configure Callout URL option? <a href="#where-can-i-find-configure-callout-url-option" id="where-can-i-find-configure-callout-url-option"></a>
 
 A new section, i.e., **Callout URL**, is available for the following CI jobs:
 

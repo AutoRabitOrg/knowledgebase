@@ -1,12 +1,14 @@
 # Monitor Deployments
 
+{% hint style="info" %}
+The **Deployment History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+{% endhint %}
+
 ### Overview <a href="#overview" id="overview"></a>
 
 You can monitor deployments in progress, check which deployments are validated successfully/failed, check which deployments are in a queue, and view the results of completed deployments on the **`Deployment History`** screen.
 
-The **Deployment History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/firefox browser.
-
-This page lists all deployments that you have triggered in ARM. Use the **Filter** option to scope down the list of deployments based on the deployment label name, date range, or deployment status.
+This page lists all deployments that you have triggered in ARM. Use the **Filter** option to pare down the list of deployments based on the deployment label name, date range, or deployment status.
 
 When running a deployment, the **`Deployment History`** page shows you the real-time progress of your current deployment. This page contains charts that visually represent the overall deployment progress. If the current deployment has errors, you can view these errors before the deployment finishes by clicking on the **Deployment Log** button.
 
@@ -14,35 +16,35 @@ When running a deployment, the **`Deployment History`** page shows you the real-
 
 You’ll need the **`Deployment History`** access permission.
 
-#### List of fields available on the Deployment History screen <a href="#list-of-fields-available-on-the-deployment-history-screen" id="list-of-fields-available-on-the-deployment-history-screen"></a>
+### List of fields available on the Deployment History screen <a href="#list-of-fields-available-on-the-deployment-history-screen" id="list-of-fields-available-on-the-deployment-history-screen"></a>
 
 <figure><img src="../../../../.gitbook/assets/image (2141).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Deployment Label:`** Deployment label along with the name of the user performing the deployment, the date and time when the deployment started, and the deployment status.
 2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
-3.  **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.<br>
+3.  **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last 7 days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for when you want to view the jobs.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2142).png" alt="" width="563"><figcaption></figcaption></figure>
 4.  **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.\
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (2144).png" alt=""><figcaption></figcaption></figure>
-5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.
+5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration, which gives you information about the entire deployment process run for the selected deployment label.
 
 {% hint style="info" %}
 **Important Notes:**
 
-1. For Salesforce DX custom deployments, multiple deployments can be rendered in one go, and the results are shown separately. Suppose you have invoked several deployment requests, but you have chosen to abort the deployment phase for one of the deployments, in such case the deployment will be aborted, but the other deployment will continue to operate in parallel.
+1. For Salesforce DX custom deployments, multiple deployments can be rendered at one time, and the results are shown separately. Suppose you have invoked several deployment requests, but you have chosen to abort the deployment phase for one of the deployments; in such case, the deployment will be aborted, but the other deployment will continue to operate in parallel.
 2. Detailed information on which deployment was triggered and canceled will appear in the **Log** report.
 {% endhint %}
 
 6. **`Async ID:`** A unique identifier ID assigned to each deployment that helps track the deployment process.
 7. **`Deployment Status:`** A visual representation of the overall deployment progress. The first chart shows how many components have already been deployed and includes the number of components with errors. After all components have been deployed without errors, Apex tests start executing, if required or enabled. A second chart shows how many Apex tests have run out of the total number of tests and the number of errors returned. In addition, the chart shows the name of the currently running test.
-8. List of Options available under Deployment History screen.
+8. List of Options available under the Deployment History screen.
    1. As a User:
-      1.  The user who initiated the deployment can see the history screen and the deployment with details like who the approvers are and the status of the deployment. Also, they can see the list of components part of the deployment with any comments from the approvers. If it is a Salesforce deployment, they are able to view the SCA report as well.
+      1.  The user who initiated the deployment can see the history screen and the deployment with details, like who the approvers are and the status of the deployment. Also, they can see the list of components' part of the deployment with any comments from the approvers. If it is a Salesforce deployment, they are able to view the SCA report as well.
 
-          Users can also add any comments if required, e.g., "Deployment is waiting for approval. "\
+          Users can also add any comments if required, e.g., "Deployment is waiting for approval."\
           \
           <br>
 
@@ -55,16 +57,16 @@ You’ll need the **`Deployment History`** access permission.
           <figure><img src="../../../../.gitbook/assets/image (2145).png" alt=""><figcaption></figcaption></figure>
    2.  #### As an Approver <a href="#as-an-approver" id="as-an-approver"></a>
 
-       As soon as the approver comes to the Deployment history screen, the approver clicks on Deployment, which is pending approval
+       As soon as the approver comes to the Deployment history screen, the approver clicks on the Deployment that is pending approval.
 
-       1. What do we show the approver?\
-          \- Basic information on the deployment.\
-          \- Metadata selected for deployment, which has been changed or added\
-          \- Level 1 and Level 2 Approvers list.\
-          \- Comment history of Approvers & Users.\
-          \- If the user enables SCA (Only available for Salesforce not for Vlocity Deployments)\
-          SCA will run before it goes to the Approver. If it fails, the deployment gets automatically rejected.\
-          If SCA passes, the deployment will go for approval. An email will be sent to the Approver.
+       1. What do we show the approver?
+          1. Basic information on the deployment.
+          2. Metadata selected for deployment, which has been changed or added
+          3. Level 1 and Level 2 Approvers list.
+          4. Comment history of Approvers & Users.
+          5. If the user enables SCA (Only available for Salesforce not for Vlocity Deployments),\
+             SCA will run before it goes to the Approver. If it fails, the deployment gets automatically rejected.
+          6. If SCA passes, the deployment will go for approval. An email will be sent to the Approver.
        2.  Once the Approver clicks on Approve → It is Auto-deployed. Users and approvers are notified via email.\
            Pending L1 Approval<br>
 
@@ -108,13 +110,6 @@ You’ll need the **`Deployment History`** access permission.
    * **`Test Results:`** View the Apex test result that you have configured during the deployment.
    * **`Deployed Issues:`** Any issues found during deployment can be seen here.
    * **`Quick Deploy:`** With Quick Deploy, the components validated successfully for the target environment within the last **96 hours** can be deployed quickly.
-
-{% hint style="info" %}
-**Important Note:**
-
-1. AutoRABIT stores the Static Code Analysis source content for 90 days. Post 90 days, the report will be auto-deleted.
-2. For those PMD reports generated before 90 days, those source content files will not be seen in the Static Analysis Report.
-{% endhint %}
 
 **Note:** If the Quick Deploy button is grayed out after successful validation, the issue is that there are invalid characters in the metadata file. To fix this issue, please follow these steps:
 

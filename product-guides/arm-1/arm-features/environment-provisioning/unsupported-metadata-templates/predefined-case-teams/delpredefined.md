@@ -2,7 +2,7 @@
 
 Delete the Predefined Case Team using the **DelPredefined** template.
 
-To create this template, follow the below steps:
+To create this template, follow the steps below:
 
 1. Log in to your AutoRABIT account.
 2. Click on **Env. Pro.** module.

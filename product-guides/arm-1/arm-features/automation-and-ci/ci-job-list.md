@@ -8,9 +8,9 @@ The CI Job List screen displays all CI jobs created in ARM, listed in reverse ch
 
 <figure><img src="../../../../.gitbook/assets/image (2261).png" alt=""><figcaption></figcaption></figure>
 
-Jobs that have been deployed display the icon , while jobs that have only been validated display .
+Jobs that have been deployed display the icon, while jobs that have only been validated display none.
 
-Filtering Options Use the filters to refine your search for specific CI jobs.
+Filtering Options: Use the filters to refine your search for specific CI jobs.
 
 <figure><img src="../../../../.gitbook/assets/image (2262).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,17 +20,15 @@ Job Name: Search by typing or selecting a job name from the dropdown.
 
 Last Modified Date Range: Filter jobs by modification date. Defaults to the last 7 days. Additional options include:
 
-Last 14 days
-
-Last 30 days
-
-Last 24 hours
+* Last 14 days
+* Last 30 days
+* Last 24 hours
 
 Custom Range: Specify your own date and time range.
 
 <figure><img src="../../../../.gitbook/assets/image (2263).png" alt=""><figcaption></figcaption></figure>
 
-Advanced Filter Options :
+Advanced Filter Options:
 
 <figure><img src="../../../../.gitbook/assets/image (2264).png" alt=""><figcaption></figcaption></figure>
 
@@ -44,7 +42,7 @@ Destination Org: Select a specific org or choose All to include jobs targeting a
 
 <figure><img src="../../../../.gitbook/assets/image (2265).png" alt="" width="157"><figcaption></figcaption></figure>
 
-Additional Options
+#### Additional Options
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-25 at 14.12.52.png" alt=""><figcaption></figcaption></figure>
 
@@ -64,7 +62,7 @@ Selecting NO discards changes.
 
 For Vlocity (FlexCard/OmniScript) deployments:
 
-The destination org must be registered with OAuth. If it's registered with Standard, re-register with OAuth or deployment will fail. The following log message appears:
+The destination org must be registered with OAuth. If it's registered with Standard, re-register with OAuth or the deployment will fail. The following log message appears:
 
 To deploy compiled versions of OmniScript and FlexCards, Please re-register your destination org with OAuth and update the Local Compilation key in the My Account section
 

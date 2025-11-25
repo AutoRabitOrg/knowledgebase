@@ -1,8 +1,8 @@
-# Registering a DevHub
+# Registering a Dev Hub
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
-Dev Hub is the main Salesforce Org that you and your team use to create, delete and manage your Salesforce Scratch Orgs. A [Scratch Org](../../../arm/create-a-scratch-org.md) is a temporary deployment of Salesforce source code and metadata. Any number of Salesforce Scratch Orgs can be created to start a new project, to start a new feature branch, to test a new feature, start automated testing, perform development tasks directly in an Org, and start from scratch with a fresh new org.
+Dev Hub is the main Salesforce Org that you and your team use to create, delete, and manage your Salesforce Scratch Orgs. A [Scratch Org](../../../arm/create-a-scratch-org.md) is a temporary deployment of Salesforce source code and metadata. Any number of Salesforce Scratch Orgs can be created to start a new project, start a new feature branch, test a new feature, start automated testing, perform development tasks directly in an Org, and start from scratch with a fresh new org.
 
 ### Prerequisite <a href="#prerequisite" id="prerequisite"></a>
 
@@ -25,19 +25,19 @@ To register a Dev Hub, you must **enable Dev Hub**, and configure **Salesforce D
 
 <figure><img src="../../../../.gitbook/assets/image (1406).png" alt="" width="204"><figcaption></figcaption></figure>
 
-2. Click **REGISTER DEV HUB**.
+2. Click **Register Dev Hub**.
 
 <figure><img src="../../../../.gitbook/assets/image (1407).png" alt=""><figcaption></figcaption></figure>
 
-3. In the **Register Dev HUB** screen, enter the **Dev Hub** name.
+3. In the **Register Dev Hub** screen, enter the **Dev Hub** name.
 4. Select the **Environment**.
 5. The remaining fields are populated by default. Click **Register Dev Hub**.
 
 <figure><img src="../../../../.gitbook/assets/image (1408).png" alt="" width="375"><figcaption></figcaption></figure>
 
 6. It will redirect to the **Salesforce** login page where you need to click **Allow** to allow access to your Salesforce Org.
-7. When your **Dev Hub** is ready, it will appear on the **HUB MANAGEMENT** page.
-8. Now, user with owner or admin access to the dev Hub, can limit activity to certain users and restrict all other users from interacting with it. This can be achieved using the **HUB LEVEL PERMISSIONS** option.
+7. When your **Dev Hub** is ready, it will appear on the **Hub Management** page.
+8. Now, user with owner or admin access to the dev Hub, can limit activity to certain users and restrict all other users from interacting with it. This can be achieved using the **Hub Level Permissions** option.
 
 <figure><img src="../../../../.gitbook/assets/image (1409).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,7 +45,7 @@ To register a Dev Hub, you must **enable Dev Hub**, and configure **Salesforce D
 
 <figure><img src="../../../../.gitbook/assets/image (1410).png" alt="" width="452"><figcaption></figcaption></figure>
 
-10. In order to view your org’s limits and how close you are to reaching them, you can view such information using View Org's API Limits. Click on the **VIEW ORG's API LIMITS** button and it will display the remaining and maximum calls and events for your org.
+10. In order to view your org’s limits and how close you are to reaching them, you can view such information using View Org's API Limits. Click on the **View Org's API Limits** button, and it will display the remaining and maximum calls and events for your org.
 
 <figure><img src="../../../../.gitbook/assets/image (1411).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,15 +53,15 @@ To register a Dev Hub, you must **enable Dev Hub**, and configure **Salesforce D
 
 ### View Packages <a href="#view-packages" id="view-packages"></a>
 
-To view the managed/unlocked packages for your dev hub, click on the **VIEW PACKAGES** button.
+To view the managed/unlocked packages for your dev hub, click on the **View Packages** button.
 
 <figure><img src="../../../../.gitbook/assets/image (1413).png" alt=""><figcaption></figcaption></figure>
 
-This lists down all the packages available in your dev hub in the record view. Click on the **expand** arrow for each package to view the version of the package in chronological order along with package details.
+This lists all the packages available in your dev hub in the record view. Click on the **expand** arrow for each package to view the version of the package in chronological order along with package details.
 
 <figure><img src="../../../../.gitbook/assets/image (1414).png" alt=""><figcaption></figcaption></figure>
 
-Scroll to the right side of the screen to view the **Anchestors** for your managed packages only.
+Scroll to the right side of the screen to view the **Ancestors** for your managed packages only.
 
 <figure><img src="../../../../.gitbook/assets/image (1415).png" alt=""><figcaption></figcaption></figure>
 

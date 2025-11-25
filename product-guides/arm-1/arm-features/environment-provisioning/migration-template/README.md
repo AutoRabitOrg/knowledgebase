@@ -22,11 +22,11 @@
 
 To create a new migration template, please follow the below steps:
 
-1. Login to your AutoRABIT account.
+1. Log in to your AutoRABIT account.
 2. Click on **Env. Pro.** module.
 3. Click on **Create New Template**.
-4. The **Create Migration Template** tab will be auto-selected by default, if not, select it.
-5. Give the template a **name** and a **short description** of it.
+4. The **Create Migration Template** tab is auto-selected by default; if not, select it.
+5. Give the template a **name** and a **short description**.
 6. Select the checkboxes for the template types for which you want to create a template. You can create multiple templates at the same time.&#x20;
 7. You must upload the **package manifest XML** file for each template type that you have selected. Failure to insert the correct XML file will result in the migration template being created unsuccessfully.
 8. Click **Save**.
@@ -61,19 +61,19 @@ Click on the **Log** icon to view the log report on the right side of the page.
 
 #### More Information on Environment Provisioning Screen
 
-The following information will be displayed for each template created on the Environment Provisioning History screen.
+The following information will be displayed for each template created on the **Environment Provisioning History** screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (7).png" alt=""><figcaption></figcaption></figure>
 
-1. **Template Name:** Name of the template along with the template created date/time
-2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template
-3. **Last Modified By:** User detail who last modified this template&#x20;
-4. **Salesforce Org:** Destination org where the template was run
-5. **Last Run:** The date/time stamp the template was last run
-6. **Status:** Template status, i.e., successfully run or failed
-7. **Run:** Run the template
-8. **Delete:** Delete the template
-9. **Edit:** Edit the template fields
-10. **Share:** Click on the share button; if you want to share the template with others, users in the org will be able to access it.
+1. **Template Name:** Name of the template along with the template created date/time.
+2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template.
+3. **Last Modified By:** User detail who last modified this template.
+4. **Salesforce Org:** Destination org where the template was run.
+5. **Last Run:** The date/time stamp the template was last run.
+6. **Status:** Template status, i.e., successfully run or failed.
+7. **Run:** Run the template.
+8. **Delete:** Delete the template.
+9. **Edit:** Edit the template fields.
+10. **Share:** Click on the share button; if you want to share the template with others, users in the org will be able to access it..
 11. **Revoke**: Click on the revoke button; if you don't want to share the template with others, users in the org will not be able to access it.
 12. **View History:** Detailed info on the template, such as the last modified date/time of the template, log details, etc.

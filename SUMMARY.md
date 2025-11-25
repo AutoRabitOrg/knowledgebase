@@ -817,7 +817,7 @@
           * [DelegatedAdministrationEdit](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/delegated-administration/delegatedadministrationedit.md)
         * [Delete Outbound Messages](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/delete-outbound-messages.md)
         * [Delete Scheduled Jobs](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/delete-scheduled-jobs.md)
-        * [Delete Time Based Workflow](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/delete-time-based-workflow.md)
+        * [Delete Time-Based Workflow](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/delete-time-based-workflow.md)
         * [Disable Scheduled Reports](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/disablescheduledreports.md)
         * [Edit Lead](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/editlead.md)
         * [Edit Queue](product-guides/arm-1/arm-features/environment-provisioning/unsupported-metadata-templates/edit-queue.md)

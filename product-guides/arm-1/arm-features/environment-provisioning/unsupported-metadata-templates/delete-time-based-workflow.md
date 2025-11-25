@@ -1,4 +1,4 @@
-# Delete Time Based Workflow
+# Delete Time-Based Workflow
 
 The **TimeBasedWorkflow** template enables users to delete time-based workflow actions in Salesforce using AutoRABIT.
 
@@ -25,5 +25,5 @@ The **TimeBasedWorkflow** template enables users to delete time-based workflow a
 11. Once saved, you'll be redirected to the [**Environment Provisioning History**](https://knowledgebase.autorabit.com/docs/environment-provisioning) screen.
 12. Click **Run** to execute the template on your destination org.
 13. Choose your **destination org** and specify **email address(es)** to receive execution notifications.
-14. Under **Post Deployment Steps**, select the test cases you recently created.
+14. Under **Post-Deployment Steps**, select the test cases you recently created.
 15. Visit the **View History** page for a detailed summary report of the execution.

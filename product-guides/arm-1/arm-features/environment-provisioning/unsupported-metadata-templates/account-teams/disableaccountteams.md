@@ -20,5 +20,5 @@ The **DisableAccountTeams** template disables the **Account Team** object in Sal
 10. After creation, you’ll be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select the **destination org** from the dropdown and enter the **email address(es)** to receive notification emails.
-13. Under **Post Deployment Steps**, select the test cases you recently created.
+13. Under **Post-Deployment Steps**, select the test cases you recently created.
 14. Check the **View History** page for a detailed summary of the operation.

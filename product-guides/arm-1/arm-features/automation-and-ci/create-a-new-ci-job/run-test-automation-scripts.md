@@ -1,12 +1,12 @@
 # Run Test Automation Scripts
 
 {% hint style="info" %}
-**Important Note**: The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+**Important Note**: The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
 ## Overview <a href="#overview" id="overview"></a>
 
-Run your automated test cases independently of the build or deployment outcome, targeting any Salesforce Org. Tests may include Selenium scripts (Maven/non-Maven) stored in ARM’s Test Automation Framework (TAF) or your Version Control System. You can also integrate external test automation tools like Provar and AccelQ.
+Run your automated test cases independently of the build or deployment outcome, targeting any Salesforce Org. Tests may include Selenium scripts (Maven/non-Maven) stored in ARM’s Test Automation Framework (TAF) or your Version Control System (VCS). You can also integrate external test automation tools like Provar and AccelQ.
 
 ## Procedure <a href="#procedure" id="procedure"></a>
 
@@ -77,12 +77,12 @@ Select the Salesforce Org where test cases will run. This org will be pre-authen
 
 Configure when the job should run:
 
-* **Daily**: Runs daily at set time
-* **Weekly**: Runs weekly on selected days
-* **No Schedule**: Save job to run manually
+* **Daily**: Runs daily at a set time.
+* **Weekly**: Runs weekly on selected days.
+* **No Schedule**: Save job to run manually.
 
 > For credential usage info in CI jobs, refer to [this FAQ](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
 
-### What Next? <a href="#what-next" id="what-next"></a>
+### What's Next? <a href="#what-next" id="what-next"></a>
 
-Once setup is complete, you'll be redirected to the [CI Job Results](broken-reference) page where you can trigger a build for this CI job.
+Once setup is complete, you'll be redirected to the CI Job Results page, where you can trigger a build for this CI job.

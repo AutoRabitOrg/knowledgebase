@@ -14,11 +14,11 @@ Trigger a new build for an existing CI job
 
 Access build and deployment details, SCA reports, and more
 
-<figure><img src="../../../../.gitbook/assets/image (1152).png" alt="CI Job History UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2254).png" alt=""><figcaption></figcaption></figure>
 
 Deployment Workspace On the right-hand side of the CI Job History page, the Deployment Workspace displays builds in the deployment queue and the reasons for their queue status.
 
-<figure><img src="../../../../.gitbook/assets/image (1153).png" alt="Deployment Workspace"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2255).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1154).png" alt="Deployment Queue - Screenshot" width="563"><figcaption></figcaption></figure>
 
@@ -50,13 +50,13 @@ Build Status: Indicates if the build is successful, in progress, or failed. Buil
 
 Warnings, Changes, Check-ins, and SCA Hover over the icon in Build Details to access additional build data:
 
-<figure><img src="../../../../.gitbook/assets/image (1159).png" alt="Hover Options Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2256).png" alt=""><figcaption></figcaption></figure>
 
 Warning Displays build-time warnings. If none, a "No Warnings Found" message appears.
 
 Changes Metadata Changes: Lists all modified metadata in the build.
 
-<figure><img src="../../../../.gitbook/assets/image (1160).png" alt="Metadata Changes Tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2257).png" alt=""><figcaption></figcaption></figure>
 
 Destructive Changes: Shows components marked for deletion. (Learn More)
 
@@ -72,7 +72,7 @@ Individual file diffs are downloadable:
 
 Check-ins Displays a summary of revisions included in the build:
 
-<figure><img src="../../../../.gitbook/assets/image (1164).png" alt="Check-in Summary" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2258).png" alt=""><figcaption></figcaption></figure>
 
 Important Notes: Diffs for large files may only be downloadable, not viewable in UI.
 
@@ -100,7 +100,7 @@ Click a file to view violations, and select a violation to jump to its correspon
 
 Deployment Details
 
-<figure><img src="../../../../.gitbook/assets/image (1168).png" alt="Deployment Details UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-25 at 12.40.43.png" alt=""><figcaption></figcaption></figure>
 
 Deployment Status:
 
@@ -126,13 +126,13 @@ Includes Dependency Analyzer for failed components.
 
 Downloadable in Manifest (JSON) or XLS.
 
-<figure><img src="../../../../.gitbook/assets/image (1175).png" alt="Dependency Analyzer"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2259).png" alt=""><figcaption></figcaption></figure>
 
 Reports older than 30 days are unavailable.
 
 Quick Deployment Report:
 
-<figure><img src="../../../../.gitbook/assets/image (1176).png" alt="Quick Deployment Report"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2260).png" alt=""><figcaption></figcaption></figure>
 
 Rollback History:
 

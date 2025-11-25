@@ -1,11 +1,9 @@
-# Create a Scratch Org
+# Creating a Scratch Org
 
 ### What is a Scratch Org? <a href="#what-is-scratch-org" id="what-is-scratch-org"></a>
 
 A **Scratch Org** is a short-lived Salesforce environment you spin up from your **Developer Hub (Dev Hub)**.\
 Developers use scratch orgs to validate proofs of concept, build and test unlocked packages, and experiment safely. You can create—and delete—any number of scratch orgs for each Salesforce DX project.
-
-***
 
 ### Requirements <a href="#requirements" id="requirements"></a>
 
@@ -53,7 +51,7 @@ You can define the org in **three** ways:
     * **Edition** (Developer, Enterprise, …)
     * **Wait Time** (1–15 min, default 6)
 
-    Click **NEXT** when done.
+    Click **Next** when done.
 
     <figure><img src="../../../../.gitbook/assets/image (1422).png" alt="Manual Scratch Org details form"><figcaption></figcaption></figure>
 
@@ -90,7 +88,7 @@ Choose your deployment source—**Salesforce Org**, **Version Control**, or an e
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Note:</strong> <em>Standard fields</em> are <strong>not</strong> supported for <strong>Ignore Missing Visibility Settings</strong>.</p></div>
 8. Optionally enable **Static Code Analysis**.
-9. Apply **SEARCH / SUBSTITUTE** rules if configured.
+9. Apply **Search / Substitute** rules if configured.
 10. Add **Deployment Notes**.
 11. Click **Next** to view the **Deployment Summary** before execution.
 
@@ -121,8 +119,6 @@ Use an existing module in AutoRABIT:
 Click **Show Members** to review metadata, then **Next** to continue to **Assign Branch and ALM**.
 
 <figure><img src="../../../../.gitbook/assets/image (1430).png" alt="Show Members list"><figcaption></figcaption></figure>
-
-***
 
 #### Assign Branch and ALM <a href="#assign-branch-and-alm" id="assign-branch-and-alm"></a>
 

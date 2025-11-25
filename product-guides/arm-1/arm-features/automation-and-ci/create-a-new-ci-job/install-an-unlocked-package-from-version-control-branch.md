@@ -79,7 +79,7 @@ Deploy the package to a target Salesforce org or a new scratch org.
 
 #### Dependency Analyzer
 
-Query and analyze metadata dependencies to prevent deployment issues. Results can be viewed in the **Deployment Report** or exported as JSON or XLS.
+Query and analyze metadata dependencies to prevent deployment issues. Results can be viewed in the **Deployment Report** or exported as JSON or XLS files.
 
 #### Tests
 
@@ -94,7 +94,7 @@ Run functional test cases pre-deployment. Fetch options include:
 
 * **Stop Deployment if Tests Fail to Compile**
 * **Run Tests even if Deployment Fails**
-* **Cross-Browser Testing**: Select preferred browsers
+* **Cross-Browser Testing**: Select preferred browsers.
 
 #### Callout URL
 

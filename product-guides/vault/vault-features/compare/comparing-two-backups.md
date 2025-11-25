@@ -12,9 +12,9 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
 1. Click on the “Job Configs” section under the “Compare” module to observer the list of backups available for compare operations.
 2.  Select the required backup(s) from the list of backups available to perform a “Backup-to-Backup” compare operation.
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (13).png" alt=""><figcaption></figcaption></figure>
 3. On selecting the backups, observe the details of the Snapshot1 and Sanpahot2.
 4. The Snapshot1 represents the older backup among the selected backups for the comparison to be performed.
 5. The Snapshot 2 represents the latest among the backups selected.
@@ -22,16 +22,16 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
 7. After selecting the required backup. Click “COMPARE” to initiate the compare operation.
 8.  The compare operation will fetch and display the objects that are part of the backups in the next screen.
 
-    <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (11).png" alt=""><figcaption></figcaption></figure>
 9.  Choose the object to perform the compare operation on.
 
-    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (9).png" alt=""><figcaption></figcaption></figure>
 10. Both the **Account** and **Fields to Compare** sections display the fields available for evaluation. These sections are reviewed to identify and confirm the fields included in the comparison.
 
-    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (8).png" alt=""><figcaption></figcaption></figure>
 11. Click on the object to observe the fields in the object.
 
-    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (9).png" alt=""><figcaption></figcaption></figure>
 12. Click on the field “Fields To Compare” to observe the list of fields.
 
     <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>

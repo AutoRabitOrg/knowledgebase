@@ -20,46 +20,49 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 ### Configuring Callout URL <a href="#configuring-callout-url" id="configuring-callout-url"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (1190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **Configure Callout URL** checkbox under the **Callout URL** section.
 2. Choose the **Callout Type**:
    * **Pre-Deployment**: ARM performs the HTTP request before the deployment starts (after a successful build).
-   *   **Post-Deployment**: By default, ARM performs the HTTP request after the deployment completes. You can further specify:
+   * **Post-Deployment**: By default, ARM performs the HTTP request after the deployment completes. You can further specify:
+     * **On Success**
+     * **On Failure**
 
-       * **On Success**
-       * **On Failure**
 
-       <figure><img src="../../../../.gitbook/assets/image (1191).png" alt=""><figcaption></figcaption></figure>
-3. The callout method defaults to **POST**.
-4. Enter the endpoint in the **URL** field.
-5. Select an **Authorization** type:
-   *   **Basic**: Standard username and password.
 
-       <figure><img src="../../../../.gitbook/assets/image (1192).png" alt=""><figcaption></figcaption></figure>
-   *   **Custom**: Uses `username: API Token`. Prefix the token with the keyword `token`.
+1. The callout method defaults to **POST**.
+2. Enter the endpoint in the **URL** field.
+3. Select an **Authorization** type:
+   * **Basic**: Standard username and password.
 
-       <figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-31 at 12.18.51 PM.png" alt="" width="563"><figcaption></figcaption></figure>
-   * **OAuth**: Supports **Client Credentials** grant type. Required fields:
-     * **URL** (OAuth 2.0 provider)
-     * **Client ID**
-     * **Client Secret** (hidden when editing an existing CI job)
-     * **Access Token URL**
-     * **Scope** (optional)
-     * **Grant Type**: Defaults to **Client Credentials**
-6.  The **Content-Type** header defines the request body format (e.g., JSON or XML):
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-25 at 14.19.35.png" alt=""><figcaption></figcaption></figure>
 
-    * Use `application/json` for JSON requests.
-    * Use `application/xml` for XML requests.
+* **Custom**: Uses `username: API Token`. Prefix the token with the keyword `token`.
 
-    <figure><img src="../../../../.gitbook/assets/image (1194).png" alt=""><figcaption></figcaption></figure>
-7.  To add custom headers, click **Add Header** and define key-value pairs. You can add multiple.
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-    * Default headers include:\
-      `"Accept": "application/json", "Content-Type": "application/json"`
+* **OAuth**: Supports **Client Credentials** grant type. Required fields:
+  * **URL** (OAuth 2.0 provider)
+  * **Client ID**
+  * **Client Secret** (hidden when editing an existing CI job)
+  * **Access Token URL**
+  * **Scope** (optional)
+  * **Grant Type**: Defaults to **Client Credentials**
 
-    <figure><img src="../../../../.gitbook/assets/image (1195).png" alt=""><figcaption></figcaption></figure>
-8. Click **Save**.
+1. The **Content-Type** header defines the request body format (e.g., JSON or XML):
+   * Use `application/json` for JSON requests.
+   * Use `application/xml` for XML requests.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+1. To add custom headers, click **Add Header** and define key-value pairs. You can add multiple.
+   * Default headers include:\
+     `"Accept": "application/json", "Content-Type": "application/json"`
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+1. Click **Save**.
 
 ### Dynamic Parameters <a href="#dynamic-parameters" id="dynamic-parameters"></a>
 
@@ -79,7 +82,7 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 View detailed logs under the **Build Log** section.
 
-<figure><img src="../../../../.gitbook/assets/image (1196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-25 at 14.23.23.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1197).png" alt=""><figcaption></figcaption></figure>
 
@@ -87,6 +90,6 @@ View detailed logs under the **Build Log** section.
 
 Logs are available under the **Deployment Log** section.
 
-<figure><img src="../../../../.gitbook/assets/image (1198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-25 at 14.24.49.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1199).png" alt=""><figcaption></figcaption></figure>

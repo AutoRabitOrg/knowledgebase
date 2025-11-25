@@ -14,7 +14,7 @@ The deployment process allows you to quickly and safely transfer new development
     <figure><img src="../../../../.gitbook/assets/image (2171).png" alt="" width="136"><figcaption></figcaption></figure>
 4. On the **`New Deployment`** page, choose the basic parameters of your deployment, including the source org from which you'll be retrieving output and the destination org from which you'll be deploying the retrieved components.
 5. Give your deployment a name.
-6.  Choose the deployment method from the **`Deployment From`** dropdown to carry out the deployment. There are approx. 10-14 different deployment ways to carry out your deployment in the ARM application.<br>
+6.  Choose the deployment method from the **`Deployment From`** dropdown to carry out the deployment. There are approximately 10-14 different deployment ways to carry out your deployment in the ARM application.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2172).png" alt=""><figcaption></figcaption></figure>
 

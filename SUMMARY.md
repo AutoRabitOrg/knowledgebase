@@ -751,7 +751,7 @@
     * [Reports](product-guides/arm-1/arm-features/reports/README.md)
       * [Analytics](product-guides/arm-1/arm-features/reports/reports-overview.md)
       * [Code Coverage Reports](product-guides/arm-1/arm-features/reports/code-coverage-reports.md)
-      * [Audit Report](product-guides/arm-1/arm-features/reports/audit-report.md)
+      * [Audit Reports](product-guides/arm-1/arm-features/reports/audit-report.md)
       * [Deployment Reports](product-guides/arm-1/arm-features/reports/deployment-reports.md)
       * [Static Code Analysis](product-guides/arm-1/arm-features/reports/static-code-analysis.md)
     * [Environment Provisioning](product-guides/arm-1/arm-features/environment-provisioning/README.md)

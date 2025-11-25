@@ -1,4 +1,4 @@
-# Audit Report
+# Audit Reports
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -7,14 +7,14 @@ The ARM **Audit Report** provides a searchable, exportable record of activity ac
 To generate a report:
 
 1.  **Select a Salesforce Org.**\
-    In the drop-down, choose the target [**Salesforce Org**](broken-reference).\
+    In the dropdown, choose the target **Salesforce Org**.\
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (2152).png" alt=""><figcaption></figcaption></figure>
 2. **Set a date range.**\
    Specify the **From** and **To** dates for the period you want to analyze.
 3.  **Run the search.**\
-    Click **SEARCH** to generate the report. When the results appear, click **Download** to save the CSV locally.\
+    Click **Search** to generate the report. When the results appear, click **Download** to save the CSV locally.\
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (2153).png" alt=""><figcaption></figcaption></figure>
@@ -25,7 +25,7 @@ To generate a report:
 
 ### Job Audit Report <a href="#job-audit-report" id="job-audit-report"></a>
 
-On the **CI Job Results** page you’ll see a **Job Audit Report** button. Click it to download a PDF that captures the full deployment history for that job—ideal for internal or external audits.\
+On the **CI Job Results** page, you’ll see a **Job Audit Report** button. Click it to download a PDF that captures the full deployment history for that job—ideal for internal or external audits.\
 \
 You can narrow the report to a specific time window—up to **120 days**—using either preset ranges or custom **From / To** dates.<br>
 

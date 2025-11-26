@@ -1,5 +1,6 @@
 ---
 hidden: true
+noIndex: true
 ---
 
 # Copy of SIEM Logs - Copied on Fri 27, 2025

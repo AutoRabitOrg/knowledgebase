@@ -21,11 +21,11 @@ You can configure Jenkins to trigger jobs automatically after a successful deplo
 
     ![New CI Job](<../../../.gitbook/assets/image (879).png>)
 2. Choose a CI Job type from:
-   * _Deploy SFDX source from Version Control_
-   * _Deploy from Salesforce Org_
-   * _Deploy from Salesforce Org with a Version Control backup_
-   * _Deploy from Version Control_
-   * _Install an Unlocked Package from a Version Control Branch_
+   * Deploy SFDX source from Version Control
+   * Deploy from Salesforce Org
+   * Deploy from Salesforce Org with a Version Control backup
+   * Deploy from Version Control
+   * Install an Unlocked Package from a Version Control Branch
 3. Navigate to the **Deploy** section.
 4. Check **On Successful Deployment** to enable post-deployment actions.
 5.  Check **Trigger Jenkins Job** to enable Jenkins job execution upon success.

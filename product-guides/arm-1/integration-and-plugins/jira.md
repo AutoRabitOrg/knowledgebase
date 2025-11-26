@@ -4,9 +4,9 @@
 
 ARM-JIRA integration automatically posts updates to Jira tickets when you run validations and deployments, with a link back to the full report in ARM. It makes tracking the status of your user stories and support tickets faster and easier. Tasks can be organized by project, allowing an organization to track issues within projects transparently.
 
-**To put it simply:** JIRA allows you to track any kind of unit of work (be it an issue, bug, story, project task, etc.) through a predefined workflow. However, in order to integrate JIRA as a plugin with ARM, it does require some steps in ARM to get it configured. The below section will help you out to get JIRA configured in ARM in easy steps.
+**To put it simply:** JIRA allows you to track any kind of unit of work (be it an issue, bug, story, project task, etc.) through a predefined workflow. However, in order to integrate JIRA as a plugin with ARM, it does require some steps in ARM to get it configured. The section below will help you get JIRA configured in ARM in easy steps.
 
-Point to Note:**Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
+Point to Note: **JIRA OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
 
 ### Integrate JIRA with ARM <a href="#integrate-jira-with-arm" id="integrate-jira-with-arm"></a>
 
@@ -34,18 +34,18 @@ This is an initial step where the user's JIRA credential, such as username and p
 {% hint style="warning" %}
 **Troubleshooting:**
 
-While registering JIRA with ARM, JIRA fails to connect and results in **"Authentication Failure,"** please use the below steps to re-authenticate the JIRA.
+While registering JIRA with ARM, if JIRA fails to connect and results in **"Authentication Failure,"** please use the steps below to re-authenticate the JIRA.
 
 1. Use the **"https://id.atlassian.com/manage/api-tokens"** link to generate a new API token.
-2. Click on **"Create API Token,"** provide the label name and click on **Create**.
+2. Click on **"Create API Token,"** provide the label name, and click on **Create**.
 3. The token gets created. You will be able to see the **"Your new API token"** popup; click on the **"Copy to Clipboard."**
 4. Use the copied token as a password for creating/updating the credential in ARM.
-5. Once updated, please use the same credential to authenticate the JIRA.
+5. Once updated, please use the same credential to authenticate JIRA.
 {% endhint %}
 
 #### Step 2: Integrate JIRA with ARM <a href="#step-2-integrate-jira-with-arm" id="step-2-integrate-jira-with-arm"></a>
 
-1. If you're logged out from your account, log in again into ARM with your credentials.
+1. If you're logged out from your account, log in again in ARM with your credentials.
 2. Go to **Admin > My Account** section.
 3. Click on **New ALM System** under the **ALM Management** section.
 
@@ -59,18 +59,18 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 6. Enter your JIRA subdomain (e.g., _https://\[subdomain].atlassian.net_) in the **URL** field.
 7. Select the same **user's credential** created in **Step 1**.
 8. Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
-9. Click **Save** and your Jira integration are ready.
+9. Click **Save** and your JIRA integration is ready.
 10. Once you log in, JIRA is integrated with your ARM account, and you can start logging bugs and issues with just one click directly to JIRA.
 
-{% hint style="danger" %}
+{% hint style="info" %}
 **Limitation:**
 
 **Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
 {% endhint %}
 
-### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
+### Mapping JIRA to Salesforce Org or Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 
-Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org/ Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your Jira projects and teams.&#x20;
+Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org or Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your JIRA projects and teams.&#x20;
 
 1. Go to the **Salesforce Org Management(Admin > SF Org Mgmt.)** page.
 2. Select the **Salesforce org** for which you like to map the JIRA as a plugin.
@@ -82,7 +82,7 @@ Once you are done registering the plugins with ARM, make sure you map the JIRA A
 
 ### Configuring JIRA Work items in ARM <a href="#configuring-jira-work-items-in-arm" id="configuring-jira-work-items-in-arm"></a>
 
-You and your team members have a provision to perform actions on Jira issues or update the JIRA work items while running a commit or during a CI job.
+You and your team members have a provision to perform actions on JIRA issues or update the JIRA work items while running a commit or during a CI Job.
 
 #### In EZ-Commit <a href="#in-ezcommit" id="in-ezcommit"></a>
 
@@ -102,7 +102,7 @@ In the **EZ-Commit** screen and under the **Post Commit** section, you need to:
 {% hint style="info" %}
 **Important Notes:**&#x20;
 
-Configuring the Jira work items is applicable to the following CI jobs:
+Configuring the Jira work items is applicable to the following CI Jobs:
 
 * Package from Version Control
 * Deploy from Version Control
@@ -121,7 +121,7 @@ Configuring the Jira work items is applicable to the following CI jobs:
 
 <figure><img src="../../../.gitbook/assets/image (31) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-6. The active sprint(s) for the above-selected Project will be available in the **Sprint** drop-down. ARM has given provisions for you to update multiple sprints related to tasks or bugs and update the status on the go when running the CI Job. You can select either one of the sprints or if you wish to update the status for all the sprints, leave it as default, i.e., keep **'All Active Sprints'** in the selected mode.
+6. The active sprint(s) for the above-selected Project will be available in the **Sprint** dropdown. ARM has given provisions for you to update multiple sprints related to tasks or bugs and update the status on the go when running the CI Job. You can select either one of the sprints or if you wish to update the status for all the sprints, leave it as default, i.e., keep **'All Active Sprints'** in the selected mode.
 
 <figure><img src="../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

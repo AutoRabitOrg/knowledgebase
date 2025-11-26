@@ -4,7 +4,7 @@
 
 Integrating Checkmarx One into your Continuous Integration (CI) pipeline enhances code security by automating static code analysis. By configuring validation criteria, managing build statuses based on scan results, and utilizing Checkmarx One reporting features, development teams can maintain high code quality and address vulnerabilities promptly. This proactive approach ensures security is embedded throughout the software development lifecycle, aligning with modern DevSecOps practices.
 
-## **Configure the Checkmarx One Plugin in ARM**&#x20;
+## **Configuring the Checkmarx One Plugin in ARM**&#x20;
 
 From the Admin module, navigate to My Account > Plugins. In the Static Code Analysis category, select Checkmarx One.
 

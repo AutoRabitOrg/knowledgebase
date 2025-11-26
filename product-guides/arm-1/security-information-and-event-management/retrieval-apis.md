@@ -114,8 +114,8 @@ The response will contain the audit logs based on the specified parameters.
 
 #### Parameters
 
-* `startTime` (required): The start date for the audit logs in ISO 8601 format.
-* `endTime` (optional): The end date for the audit logs in ISO 8601 format. If not specified, the logs are provided until the current day, provided the duration is within 90 days from the `startTime`.
+* `startTime` (required): The start date for the audit logs is in ISO 8601 format.
+* `endTime` (optional): The end date for the audit logs is in ISO 8601 format. If not specified, the logs are provided until the current day, provided the duration is within 90 days from the `startTime`.
 
 #### Example Request Using Curl
 

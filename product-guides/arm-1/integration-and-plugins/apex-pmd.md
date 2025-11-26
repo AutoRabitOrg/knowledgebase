@@ -44,7 +44,7 @@ Supported Version: ApexPMD upgraded to the latest 6.49 version.
 
 <figure><img src="../../../.gitbook/assets/image (869).png" alt=""><figcaption></figcaption></figure>
 
-6. AutoRABIT allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from when it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
+6. AutoRABIT allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the Apex classes or stating the period for when it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 7. Fill in the remaining fields as per your requirements and click on **Save**.
 8. Once the build is triggered for your CI Job, the SCA report can be found under the **Build Details** section on the **CI Job Result** page.
 

@@ -995,7 +995,7 @@
       * [Default Apex Class Configuration](product-guides/arm-1/troubleshoot/how-tos/default-apex-class-configuration.md)
       * [Enable Delta on PermissionSets](product-guides/arm-1/troubleshoot/how-tos/enable-delta-on-permissionsets.md)
       * [Enable Enhanced Domains](product-guides/arm-1/troubleshoot/how-tos/enable-enhanced-domains.md)
-      * [Enable SCA Apex PMD validation criteria.](product-guides/arm-1/troubleshoot/how-tos/enable-sca-apex-pmd-validation-criteria..md)
+      * [Enable SCA ApexPMD Validation Criteria](product-guides/arm-1/troubleshoot/how-tos/enable-sca-apex-pmd-validation-criteria..md)
       * [Notifications (Mail Server Settings)](product-guides/arm-1/troubleshoot/how-tos/notifications-mail-server-settings.md)
       * [Provide branch access to users](product-guides/arm-1/troubleshoot/how-tos/provide-branch-access-to-users.md)
     * [FAQs](product-guides/arm-1/troubleshoot/faqs.md)

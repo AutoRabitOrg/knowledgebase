@@ -1,10 +1,10 @@
-# Enable SCA Apex PMD validation criteria.
+# Enable SCA ApexPMD Validation Criteria
 
-The **org administrator** can define global validation criteria to enforce Static Code Analysis (SCA) tools such as Apex PMD across CI jobs, gated commits, and merge jobs. Based on the priority set, the build will be successful only if the criteria are met.
+The **org administrator** can define global validation criteria to enforce Static Code Analysis (SCA) tools such as ApexPMD across CI jobs, gated commits, and merge jobs. Based on the priority set, the build will be successful only if the criteria are met.
 
 Before you set the SCA criteria, ensure the following:
 
-* Apex PMD is integrated with ARM.
+* ApexPMD is integrated with ARM.
 * You are an **org administrator** or have the privilege to access the **My Account** page.
 
 ## How to set the Apex PMD criteria? <a href="#how-to-set-the-apex-pmd-criteria" id="how-to-set-the-apex-pmd-criteria"></a>

@@ -16,7 +16,7 @@ You’ll then be presented with a screen divided into **Mail Settings,** **Send 
 
 #### Mail Settings <a href="#mail-settings" id="mail-settings"></a>
 
-To set up a mail client it’s necessary to configure the server that will take care of the delivery of your emails. And here’s the standard procedure of mail configuration and adding the right parameters in the **Mail Settings** section:
+To set up a mail client, it’s necessary to configure the server that will take care of the delivery of your emails. And here’s the standard procedure of mail configuration and adding the right parameters in the **Mail Settings** section:
 
 <figure><img src="../../../../.gitbook/assets/image (755).png" alt="" width="536"><figcaption></figcaption></figure>
 
@@ -34,7 +34,9 @@ Fill in the required details as listed below (mandatory fields are marked with a
 
 <figure><img src="../../../../.gitbook/assets/image (756).png" alt="" width="563"><figcaption></figcaption></figure>
 
-How to reset your Mail preferences?You won't be able to switch back to the default AutoRABIT mail preferences once you have configured your own email template. To switch back to the default email style, you can email us at [support@autorabit.com](mailto:%20support@autorabit.com) and we can get it done for you.
+#### How to reset your mail preferences?
+
+You won't be able to switch back to the default AutoRABIT mail preferences once you have configured your own email template. To switch back to the default email style, you can email us at [support@autorabit.com](mailto:%20support@autorabit.com) and we can get it done for you.
 
 #### Send a Test Mail <a href="#send-a-test-mail" id="send-a-test-mail"></a>
 
@@ -100,7 +102,7 @@ This guide walks AutoRABIT administrators through configuring outbound **email**
 ### 1  Accessing the Page
 
 1. Sign in with an account that has **Admin** privileges.
-2. In the global navigation bar choose **Admin › Notifications**.
+2. In the global navigation bar, choose **Admin › Notifications**.
 3. The page opens with **three** stacked configuration sections:
    * **Mail Settings** (SMTP)
    * **Send a Test Email**
@@ -110,18 +112,9 @@ This guide walks AutoRABIT administrators through configuring outbound **email**
 
 ### 2  Mail Settings (SMTP)
 
-| Field                     | Description                                                | Typical Examples               |
-| ------------------------- | ---------------------------------------------------------- | ------------------------------ |
-| **Host Name**             | FQDN or IP address of your SMTP server.                    | `smtp.company.com`             |
-| **Port**                  | Network port the server listens on.                        | `25`, `465` (SSL), `587` (TLS) |
-| **User Name**             | Service account allowed to relay mail.                     | `notifications@company.com`    |
-| **Password**              | Password or app‑specific token for the above user.         | _••••••_                       |
-| **Protocol**              | Transport security: `SMTP`, `SMTP (SSL)`, or `SMTP (TLS)`. | `SMTP (TLS)`                   |
-| **Email From**            | The **From:** address recipients will see.                 | `noreply@company.com`          |
-| **Email Notifications**   | Toggle **Enabled / Disabled** globally.                    | _Enabled_                      |
-| **Custom Email Template** | Toggle to enable org‑specific templates.                   | _Enabled_                      |
+<table><thead><tr><th width="142">Field</th><th width="350">Description</th><th>Typical Examples</th></tr></thead><tbody><tr><td><strong>Host Name</strong></td><td>FQDN or IP address of your SMTP server.</td><td><code>smtp.company.com</code></td></tr><tr><td><strong>Port</strong></td><td>Network port the server listens on.</td><td><code>25</code>, <code>465</code> (SSL), <code>587</code> (TLS)</td></tr><tr><td><strong>User Name</strong></td><td>Service account allowed to relay mail.</td><td><code>notifications@company.com</code></td></tr><tr><td><strong>Password</strong></td><td>Password or app‑specific token for the above user.</td><td><em>••••••</em></td></tr><tr><td><strong>Protocol</strong></td><td>Transport security: <code>SMTP</code>, <code>SMTP (SSL)</code>, or <code>SMTP (TLS)</code>.</td><td><code>SMTP (TLS)</code></td></tr><tr><td><strong>Email From</strong></td><td>The <strong>From:</strong> address recipients will see.</td><td><code>noreply@company.com</code></td></tr><tr><td><strong>Email Notifications</strong></td><td>Toggle <strong>Enabled / Disabled</strong> globally.</td><td><em>Enabled</em></td></tr><tr><td><strong>Custom Email Template</strong></td><td>Toggle to enable org‑specific templates.</td><td><em>Enabled</em></td></tr></tbody></table>
 
-> **Remember:** Click **Save** (upper right) after any change. Settings apply immediately to future emails.
+> **Remember:** Click **Save** (upper right) after any changes. Settings apply immediately to future emails.
 
 #### 2.1  Send a Test Email
 
@@ -146,10 +139,7 @@ Block specific addresses from ever receiving system mail (e.g., DLs, test accoun
 
 Map **system events** to **delivery channels**.
 
-| Column                | Purpose                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------ |
-| **Notification Type** | Event emitted by AutoRABIT (e.g., _EZ‑Commit Gated Check‑in_, _Merge Request_, _PRD Deploy – Custom_). |
-| **Select Channel**    | Dropdown containing **Email** or _None_.                                                               |
+<table><thead><tr><th width="179">Column</th><th>Purpose</th></tr></thead><tbody><tr><td><strong>Notification Type</strong></td><td>Event emitted by AutoRABIT (e.g., <em>EZ‑Commit Gated Check‑in</em>, <em>Merge Request</em>, <em>PRD Deploy – Custom</em>).</td></tr><tr><td><strong>Select Channel</strong></td><td>Dropdown containing <strong>Email</strong> or <em>None</em>.</td></tr></tbody></table>
 
 **Steps**
 
@@ -163,10 +153,6 @@ Map **system events** to **delivery channels**.
 
 ### 5  Best Practices & Troubleshooting
 
-| Issue                      | Resolution                                                                                          |
-| -------------------------- | --------------------------------------------------------------------------------------------------- |
-| Test email fails           | Verify SMTP host/port, credentials, firewall, and that the **From** address is authorized.          |
-| Emails marked as spam      | Use a real domain and configure SPF/DKIM/DMARC.                                                     |
-| No notifications delivered | Ensure **Email Notifications** toggle is _Enabled_, event checkboxes are ticked, and page is saved. |
+<table><thead><tr><th width="216">Issue</th><th>Resolution</th></tr></thead><tbody><tr><td>Test email fails</td><td>Verify SMTP host/port, credentials, firewall, and that the <strong>From</strong> address is authorized.</td></tr><tr><td>Emails marked as spam</td><td>Use a real domain and configure SPF/DKIM/DMARC.</td></tr><tr><td>No notifications delivered</td><td>Ensure <strong>Email Notifications</strong> toggle is <em>Enabled</em>, event checkboxes are ticked, and page is saved.</td></tr></tbody></table>
 
 &#x20;

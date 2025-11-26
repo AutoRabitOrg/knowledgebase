@@ -41,7 +41,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 
 3.  Fill in the below details to integrate AccelQ:
 
-    * **URL:** Enter the AccelQ registered endpoint URL. For ex- poc.accelq.io
+    * **URL:** Enter the AccelQ registered endpoint URL. For example, poc.accelq.io
     * **Tenant Code:** Enter the Tenant code received from AccelQ. If you're not aware of this, you can retrieve your Tenant code from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ.
 
     <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
@@ -87,7 +87,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 <figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Save**.
-9. So, once the configured CI job is run and the build is triggered, AccelQ will review the code changes and functional review information can be found in the **CI Job Result** under the **Functional Tests** section. Here, you can find the status of the functional test done along with other details such as the number of components that successfully got reviewed, the number of components failed to review, components that are about to get reviewed or are in the queue.
+9. So, once the configured CI Job is run and the build is triggered, AccelQ will review the code changes and functional review information can be found in the **CI Job Result** under the **Functional Tests** section. Here, you can find the status of the functional test done, along with other details, such as the number of components that successfully got reviewed, the number of components failed to review, and components that are about to get reviewed or are in the queue.
 
 <figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -114,7 +114,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 
     <figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
 
-    * You can find your project name from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ.
+    * You can find your project name from the **"Auth Properties"** section in the User's Profile card on AccelQ.
 
     <figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -122,7 +122,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 
     <figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Click **Save**.
-4. When the deployment is executed, you can find the AccelQ test cases report in the **Deployment History** screen.Click on the **Test Results** button for the detailed AccelQ report.
+4. When the deployment is executed, you can find the AccelQ test cases report in the **Deployment History** screen. Click on the **Test Results** button for the detailed AccelQ report.
 
 <figure><img src="../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 

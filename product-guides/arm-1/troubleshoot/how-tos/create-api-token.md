@@ -1,6 +1,6 @@
 # Create API Token
 
-Important Note:This article is for **Org Administrators** in particular. The actions discussed in the article are not available to general users. &#x20;
+Important Note: This article is for **Org Administrators** in particular. The actions discussed in the article are not available to general users. &#x20;
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -10,7 +10,7 @@ An API token is a unique identifier of an application requesting access to your 
 
 You must have a unique personal access token to interact with the API. This is used to authenticate yourself in the API.&#x20;
 
-Important Note:The token is the equivalent of the user name and password pair. Once generated, it identifies your account. So it's best to be careful and not disclose it to any untrusted party or application.
+Important Note: The token is the equivalent of the user name and password pair. Once generated, it identifies your account. So it's best to be careful and not disclose it to any untrusted party or application.
 
 To generate your access token, you should:
 
@@ -37,6 +37,6 @@ To generate your access token, you should:
 
 ### Token Deactivation <a href="#token-deactivation" id="token-deactivation"></a>
 
-If an ARM user account is deactivated, the API Token will be deactivated simultaneously. In some cases, ARM needs to revoke or invalidate tokens, for example, when a user logs out of the ARM application. If you revoke a token, it can be re-approved anytime before it expires.
+If an ARM user account is deactivated, the API Token will be deactivated simultaneously. In some cases, ARM needs to revoke or invalidate tokens, for example, when a user logs out of the ARM application. If you revoke a token, it can be reapproved any time before it expires.
 
 <figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

@@ -77,13 +77,13 @@ Track this issue for impacted environments and monitor Salesforce updates for a 
 9. If the **Flow Entry** criteria formulas are failing to **Commit/Deploy**, we recommend updating the **Salesforce API** **version** to **55.0** or later in ARM, then re-perform the commit/deployment, because the entry-related attributes for the **Flow** metadata were introduced in the **API version 55.0**.\
    Here's a list of the entry attributes only present in **API 55.0** from Flow metadata documentation:
 
-<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm)
 
     To update the Salesforce API version, go to **Admin** > **My Account** > **Salesforce Settings**.
 
-<figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Version Control <a href="#version-control" id="version-control"></a>
 
@@ -148,7 +148,7 @@ AutoRABIT is committed to delivering an exceptional customer experience. Please 
      * When fetching parents and child records that are linked to the master objects and
      * When extracting data of a particular object with all the linked fields. Since there are millions of records, there are more chances of the query being timed out. Therefore, it is highly recommended to create two or more jobs rather than creating a single job; apply proper filters on the master objects and select a minimum multiple reference option during execution.
 2. Salesforce does not retrieve Validation rules from destination org for a particular object if the same object is duplicated and is available in **Deleted objects** list.
-3. Salesforce restricts access to create an **External Id** for the following objects in AutoRABIT. These listed objects are not supported in **Dataloader Pro&#x20;**_**(**&#x66;or more details, refer_ _to_ [_How to perform Dataloader Pro Operation_](../../../../arm/arm-features/dataloader/dataloader-pro.md), step &#x36;_**)**_ and **Test Environment Setup&#x20;**_**(**&#x66;or more details, refer to_ [_Create a New Test Environment Setup_](../../../../arm/arm-features/dataloader/test-environment-setup.md)_, step &#x35;**)**_.
+3. Salesforce restricts access to create an **External Id** for the following objects in AutoRABIT. These listed objects are not supported in **Dataloader Pro&#x20;**_**(**&#x66;or more details, refer_ _to_ [_How to perform Dataloader Pro Operation_](../../../arm/arm-features/dataloader/dataloader-pro.md), step &#x36;_**)**_ and **Test Environment Setup&#x20;**_**(**&#x66;or more details, refer to_ [_Create a New Test Environment Setup_](../../../arm/arm-features/dataloader/test-environment-setup.md)_, step &#x35;**)**_.
 
 | ActionLinkGroupTemplate | ActivityHistory       | AccountTeamMember      | AggregateResult      | EmailStatus              | DuplicateRecordItem             | DandBCompany             |
 | ----------------------- | --------------------- | ---------------------- | -------------------- | ------------------------ | ------------------------------- | ------------------------ |

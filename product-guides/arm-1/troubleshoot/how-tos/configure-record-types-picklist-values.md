@@ -6,7 +6,7 @@ The Record Type node contains certain picklist fields and their corresponding pi
 
 <figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1).png" alt="" width="389"><figcaption></figcaption></figure>
 
-As per the behavior of Salesforce, if a user likes to retrieve a certain picklist field along with the Record type, only those picklist values in the Record Type Node get retrieved.
+As per the behavior of Salesforce, if a user wants to retrieve a certain picklist field along with the Record type, only those picklist values in the Record Type Node get retrieved.
 
 * **RecordTypes PicklistValues** configuration as **Replace**: For every EZ-Commit operation, if the Record Type has no picklist values, it will override the Record Type node in the version control even it has more than one picklist field value.
 * **RecordTypes PicklistValues** configuration as **Replace All**: This is the same as **'Replace,'** the only difference is it will replace the entire existing picklist values.
@@ -23,11 +23,7 @@ The below table highlights the expected behavior on **Picklist Fields** and **Pi
 | Replace (Partial Overwrite)                    | <ol><li><strong>Modified:</strong> Reads the existing Picklist fields in the CustomObject file and overwrites it with the newly introduced CHANGE in the RecordType Assignment.</li><li><strong>Added:</strong> Reads the existing Picklist fields in the CustomObject file and adds the  CHANGE into the RecordType Assignment. </li></ol><p><br></p> | Deleted Picklist Fields/Values will be permanently removed from the Version Control system.                                                                                                                                                                                                                                 |             |
 | Replace All (Complete Overwrite)               | <ol><li><strong>Modified/Added:</strong> Overrides the entire RecordType in the CustomObject file with the CHANGE</li></ol>                                                                                                                                                                                                                            | <p>Deletes the entire Picklist Fields/Values as the action will overwrite the entire RecordType Picklist Assignment.<br><strong>Note:</strong> To delete a Picklist field assignment from RecordType node in your VCS, select the entire Picklist fields and its corresponding Record type in your EZ-Commit operation.</p> |             |
 
-| **Added**    | A new Picklist Field/value has been introduced in the Salesforce Org    |
-| ------------ | ----------------------------------------------------------------------- |
-| **Modified** | An existing Picklist Field/value has been changed in the Salesforce Org |
-| **Deleted**  | A Picklist Field/Value has been deleted in the Salesforce Org           |
-| **Change**   | Difference pulled from the Salesforce Org                               |
+<table data-header-hidden><thead><tr><th width="151"></th><th></th></tr></thead><tbody><tr><td><strong>Added</strong></td><td>A new Picklist Field/value has been introduced in the Salesforce Org.</td></tr><tr><td><strong>Modified</strong></td><td>An existing Picklist Field/value has been changed in the Salesforce Org.</td></tr><tr><td><strong>Deleted</strong></td><td>A Picklist Field/Value has been deleted in the Salesforce Org.</td></tr><tr><td><strong>Change</strong></td><td>Difference pulled from the Salesforce Org.</td></tr></tbody></table>
 
 #### Example: <a href="#example" id="example"></a>
 
@@ -53,7 +49,7 @@ The below table highlights the expected behavior on **Picklist Fields** and **Pi
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**After:** Picklist field 2 not being available, it gets added to the Record Type thereby acting as an append operation
+**After:** Picklist field 2 not being available, it gets added to the Record Type thereby acting as an append operation.
 
 **B. Configuration for recordTypes picklistValues as 'Replace ALL'**
 
@@ -79,7 +75,7 @@ There can also be two possible scenarios:
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**After:** Picklist field 1 being available, new Picklist Values gets added
+**After:** Picklist field 1 being available, new Picklist Values gets added.
 
 
 

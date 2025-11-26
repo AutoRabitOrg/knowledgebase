@@ -33,18 +33,14 @@ Before executing any deployment or CI activities in ARM, you must **reauthentica
 
 ## Use Cases <a href="#use-cases" id="use-cases"></a>
 
-### Query 1:
+#### How is the backup request ID hitting the redirect URL successfully while deployment fails (prior to Salesforce Org reauthentication)?
 
-**Q:** How is the backup request ID hitting the redirect URL successfully while deployment fails (prior to Salesforce Org reauthentication)?
-
-**A:** Deployment runs on the agent side based on the CI job configuration, while backup is performed on the ARM server side using a refreshed token. If the Salesforce Org's redirection URL changed and reauthentication has not been completed, deployment fails due to outdated redirect configurations.
+Deployment runs on the agent side based on the CI job configuration, while backup is performed on the ARM server side using a refreshed token. If the Salesforce Org's redirection URL changed and reauthentication has not been completed, deployment fails due to outdated redirect configurations.
 
 **Solution:** Reauthenticate the Salesforce Org and then re-save the job in ARM.
 
 ***
 
-### Query 2:
+#### If only the build package is backed up, why does the deployment log reference the target org?
 
-**Q:** If only the build package is backed up, why does the deployment log reference the target org?
-
-**A:** Backup packaging pulls deployable components from the **target org**, which is why the deployment log reflects the target org's context.
+Backup packaging pulls deployable components from the **target org**, which is why the deployment log reflects the target org's context.

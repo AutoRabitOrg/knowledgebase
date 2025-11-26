@@ -34,7 +34,9 @@ Fill in the required details as listed below (mandatory fields are marked with a
 
 <figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-How to reset your Mail preferences?You won't be able to switch back to the default ARM mail preferences once you have configured your email template. If you want to switch back to the default email style, please email us at [support@autorabit.com](mailto:%20support@autorabit.com), and we can do it for you.
+#### How to reset your mail preferences?&#x20;
+
+You won't be able to switch back to the default ARM mail preferences once you have configured your email template. If you want to switch back to the default email style, please email us at [support@autorabit.com](mailto:%20support@autorabit.com), and we can do it for you.
 
 #### Send a Test Mail <a href="#send-a-test-mail" id="send-a-test-mail"></a>
 
@@ -52,11 +54,11 @@ The email address of a user who has been deactivated by an admin is immediately 
 
 To remove all users from the **`Restricted Emails`** list, click **`Delete All`**, and then click **`Yes`** to confirm.
 
-NoteIf you are not receiving any emails related to the application, you can contact your admin to check if you've been added to the restricted emails list. After the admin removes you from the list, you will receive any new emails from that point forward.
+Note: If you are not receiving any emails related to the application, you can contact your admin to check if you've been added to the restricted emails list. After the admin removes you from the list, you will receive any new emails from that point forward.
 
 #### Teams/Slack Settings <a href="#teamsslack-settings" id="teamsslack-settings"></a>
 
-When an event is triggered in ARM, email notifications are sent to the selected individuals. If you want to send notifications for particular events to an entire group within your organization through **`Teams`** or **`Slack`**, then integrate your Teams or Slack application with ARM using the respective **`Webhook Integration URL`**. For more information on configuring a webhook on **`Teams`**, click [HERE](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-teams.md). For **`Slack`**, click [HERE](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-slack.md).
+When an event is triggered in ARM, email notifications are sent to the selected individuals. If you want to send notifications for particular events to an entire group within your organization through **`Teams`** or **`Slack`**, then integrate your Teams or Slack application with ARM using the respective **`Webhook Integration URL`**. For more information on configuring a webhook on **`Teams`**, click [here](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-teams.md). For **`Slack`**, click [here](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-slack.md).
 
 1. Select either **`Teams`** or **`Slack`** as per your organization's requirements.
 

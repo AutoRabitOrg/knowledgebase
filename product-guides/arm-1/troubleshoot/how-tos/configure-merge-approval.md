@@ -11,7 +11,7 @@ You can enforce this workflow using merge approvals to ensure one or more people
 
 To configure the merge approvals:
 
-1. Login to ARM with the admin credentials.
+1. Log in to ARM with admin credentials.
 2. Navigate to **Admin > My Account** and expand the **Merge Settings**
 3. Tick the **Enable criteria-based Review Process** checkbox.
 4. Select the **Enable Merge Approver** checkbox.
@@ -33,7 +33,7 @@ To configure the merge approvals:
 2. The org admin can approve their merges even if the **Disable Merge Self Approval** checkbox is selected.
 3. The **EZ-Merge Approver** _(non-admin user)_ cannot approve their merges if the **Disable Merge Self Approval** checkbox is selected.
 4. No more approval is needed if the approval level is set to 2 and the org admin approves the merge.
-5. The L1 and L2 approver email ids cannot be the same when the approval level is set to 2.
+5. The L1 and L2 approver email IDs cannot be the same when the approval level is set to 2.
 
 ### More Information <a href="#more-informations" id="more-informations"></a>
 

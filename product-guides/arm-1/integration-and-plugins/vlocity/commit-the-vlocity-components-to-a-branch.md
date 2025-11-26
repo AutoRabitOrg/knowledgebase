@@ -1,6 +1,6 @@
 # Committing OmniStudio Components to a Branch
 
-This section deals with exporting of OmniStudio data packs from a Salesforce Org through a YAML manifest describing your project and committing the same to a Version Control System. The primary goal is to enable Continuous Integration for OmniStudio metadata through source control.
+This section explains exporting OmniStudio data packs from a Salesforce Org through a YAML manifest, describing your project and committing the same to a Version Control System. The primary goal is to enable Continuous Integration for OmniStudio metadata through source control.
 
 ### Commit OmniStudio Components <a href="#commit-vlocity-components" id="commit-vlocity-components"></a>
 
@@ -15,7 +15,7 @@ This section deals with exporting of OmniStudio data packs from a Salesforce Org
 <figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section.  Otherwise, the branch will automatically be selected based on the org mappings and it is not editable.
+**Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section.  Otherwise, the branch will automatically be selected based on the org mappings, and it is not editable.
 {% endhint %}
 
 5. Under **Fetch Changes**, select the components as **OmniStudio Components**.
@@ -26,7 +26,7 @@ This section deals with exporting of OmniStudio data packs from a Salesforce Org
 
 **1. Auto Draft**
 
-This will bring all the changes which the Author has done in the Salesforce Org which have not been committed yet to Version Control (AutoRABIT does the calculation by using the last modified date in the Salesforce org and comparing against the last commit date to Version Control branch).
+This will bring all the changes which the Author has made in the Salesforce Org that have not yet been committed to Version Control (AutoRABIT does the calculation by using the last modified date in the Salesforce org and comparing against the last commit date to Version Control branch).
 
 **2. Select Manually**
 
@@ -34,13 +34,13 @@ This will export OmniStudio components from a Salesforce Org through a YAML mani
 
 **3. Max Depth**
 
-Max Depth decides the level of dependencies that will be executed while fetching and committing vlocity components. The value of Max Depth that was set while configuring OmniStudio will be used globally
+Max Depth decides the level of dependencies that will be executed while fetching and committing Vlocity components. The value of Max Depth that was set while configuring OmniStudio will be used globally.
 
-However, the user can modify the value based on his requirement.
+However, the user can modify the value based on their requirements.
 
-* When Max Depth Values is set to **-1** means it will execute all-level dependencies of the selected data pack record
-* When Max Depth Values is set to **0** means it will execute only selected data pack records and
-* When Max Depth Values is set to **1** means it will execute only first-level dependencies of the selected data pack record.
+* When Max Depth Values is set to **-1** means, it will execute all-level dependencies of the selected data pack record
+* When Max Depth Values is set to **0** means, it will execute only selected data pack records and
+* When Max Depth Values is set to **1** means, it will execute only first-level dependencies of the selected data pack record.
 
 **4. Custom YAML File**
 
@@ -48,17 +48,17 @@ The user also has an option to upload a custom **YAML file** (Project path and m
 
 **5. Compile on Build**
 
-When checked, it compiles the data you are attempting to deploy in your branch. **However, AutoRABIT recommends that you keep this checkbox unselected.** This is because the tool can throw a compilation error when you're trying to commit data that doesn't have dependent components keeping the '**Compile On Build'** checkbox selected.
+When checked, it compiles the data you are attempting to deploy in your branch. **However, AutoRABIT recommends that you keep this checkbox unselected.** This is because the tool can throw a compilation error when you're trying to commit data that doesn't have dependent components when keeping the '**Compile On Build'** checkbox selected.
 
 **6. Auto Update Settings**
 
-This option ensures you have the latest DataPack settings before each export and deployment. This check is quick and you are advised to allow it.
+This option ensures you have the latest Data Pack settings before each export and deployment. This check is quick, and you are advised to allow it.
 
 **7. Separate Matrix Versions**
 
-Add Ability to Export Matrix Versions separately.
+Adds the ability to Export Matrix Versions separately.
 
-Fill in the remaining fields as per your requirements, and proceed to the next screen. The OmniStudio components will get retrieved based on the difference between the Salesforce org and below-mentioned retrieval path. Select the components you would like to commit to the branch.
+Fill in the remaining fields as per your requirements, and proceed to the next screen. The OmniStudio components will be retrieved based on the difference between the Salesforce org and the below-mentioned retrieval path. Select the components you would like to commit to the branch.
 
 ### Possible Retrieval Path <a href="#possible-retrieval-path" id="possible-retrieval-path"></a>
 
@@ -70,7 +70,7 @@ Fill in the remaining fields as per your requirements, and proceed to the next s
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="452"><figcaption></figcaption></figure>
 
-**Retrieval Path:**_**"\<repoURL>/\<yaml project path>"**_**Scenario 2:** The metadata folder path is available. In such case, the OmniStudio components will get retrieved from _**repoURL>/\<metadata folder path>/\<yaml project path>**_.
+**Retrieval Path:**_**"\<repoURL>/\<yaml project path>"**_**Scenario 2:** The metadata folder path is available. In such case, the OmniStudio components will be retrieved from _**repoURL>/\<metadata folder path>/\<yaml project path>**_.
 
 **Example:**
 
@@ -88,7 +88,7 @@ Fill in the remaining fields as per your requirements, and proceed to the next s
 
 **Retrieval Path**: _**"\<repoURL>/\<autorabit\_alldefault\_OmniStudio\_build>"**_
 
-**Scenario 2:** The metadata folder path is available. In such case, the OmniStudio components will get retrieved from _**\<repoURL>/\<metadata folder path>**_.
+**Scenario 2:** The metadata folder path is available. In such case, the OmniStudio components will be retrieved from _**\<repoURL>/\<metadata folder path>**_.
 
 **Example:**
 

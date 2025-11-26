@@ -10,28 +10,11 @@ SonarQube is an automated code review tool that helps detect bugs, security vuln
 
 ### Architecture
 
-| Concept  | Definition                                                            |
-| -------- | --------------------------------------------------------------------- |
-| Analyzer | A client that analyzes source code and computes snapshots.            |
-| Database | Stores configuration and snapshots.                                   |
-| Server   | Web interface for browsing snapshot data and managing configurations. |
+<table><thead><tr><th width="156">Concept</th><th>Definition</th></tr></thead><tbody><tr><td>Analyzer</td><td>A client that analyzes source code and computes snapshots.</td></tr><tr><td>Database</td><td>Stores configuration and snapshots.</td></tr><tr><td>Server</td><td>Web interface for browsing snapshot data and managing configurations.</td></tr></tbody></table>
 
 ### Quality
 
-| Concept          | Definition                                                          |
-| ---------------- | ------------------------------------------------------------------- |
-| Clean Code       | Reliable, secure, maintainable code adhering to defined attributes. |
-| Bug              | A code issue that may cause a failure. Needs immediate fixing.      |
-| Code Smell       | A maintainability issue. Increases developer confusion and risk.    |
-| Technical Debt   | Estimated time to fix code smells.                                  |
-| Issue            | A violation of a coding rule in source or test files.               |
-| Measure          | Metric value for a file/project at a given time.                    |
-| Metric           | A type of measurement (e.g., LOC, complexity).                      |
-| Quality Profile  | Set of rules used in a project.                                     |
-| Remediation Cost | Estimated time to fix reliability/security issues.                  |
-| Snapshot         | A project’s analysis result at a given time.                        |
-| Security Hotspot | Code that needs manual review for potential vulnerabilities.        |
-| Rule             | Coding standards to avoid issues and vulnerabilities.               |
+<table><thead><tr><th width="161">Concept</th><th>Definition</th></tr></thead><tbody><tr><td>Clean Code</td><td>Reliable, secure, maintainable code adhering to defined attributes.</td></tr><tr><td>Bug</td><td>A code issue that may cause a failure. Needs immediate fixing.</td></tr><tr><td>Code Smell</td><td>A maintainability issue. Increases developer confusion and risk.</td></tr><tr><td>Technical Debt</td><td>Estimated time to fix code smells.</td></tr><tr><td>Issue</td><td>A violation of a coding rule in source or test files.</td></tr><tr><td>Measure</td><td>Metric value for a file/project at a given time.</td></tr><tr><td>Metric</td><td>A type of measurement (e.g., LOC, complexity).</td></tr><tr><td>Quality Profile</td><td>Set of rules used in a project.</td></tr><tr><td>Remediation Cost</td><td>Estimated time to fix reliability/security issues.</td></tr><tr><td>Snapshot</td><td>A project’s analysis result at a given time.</td></tr><tr><td>Security Hotspot</td><td>Code that needs manual review for potential vulnerabilities.</td></tr><tr><td>Rule</td><td>Coding standards to avoid issues and vulnerabilities.</td></tr></tbody></table>
 
 ***
 

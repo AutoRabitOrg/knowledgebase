@@ -12,15 +12,7 @@ AutoRABIT provides CI/CD support for Salesforce Data Cloud, enabling organizatio
 
 AutoRABIT supports deployment of the following Data Cloud metadata types through the Salesforce Metadata API:&#x20;
 
-| Activation           | ActivationPlatform, ActivationPlatformField, ActvPfrmDataConnectorS3, ActvPlatformAdncIdentifier, ActvPlatformFieldValue  |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Data Connectors      | DataConnectorIngestApi, DataConnectorS3, ExternalDataConnector                                                            |
-| Data Sources         | DataSource, DataSourceField, DataSourceObject, DataSourceBundleDefinition                                                 |
-| Data Streams         | DataStreamDefinition, DataStreamTemplate                                                                                  |
-| Mapping & Relations  | DataSrcDataModelFieldMap, FieldSrcTrgtRelationship, ObjectSourceTargetMap                                                 |
-| External Data        | ExternalDataSource, ExternalDataTranObject                                                                                |
-| Marketing            | MktCalcInsightObjectDef, MktDataTranObject                                                                                |
-| Other                | SharingAppDefinition, DataPackageKitObject                                                                                |
+<table><thead><tr><th width="206">Category</th><th>Supported Types</th></tr></thead><tbody><tr><td>Activation </td><td>ActivationPlatform, ActivationPlatformField, ActvPfrmDataConnectorS3, ActvPlatformAdncIdentifier, ActvPlatformFieldValue </td></tr><tr><td>Data Connectors </td><td>DataConnectorIngestApi, DataConnectorS3, ExternalDataConnector </td></tr><tr><td>Data Sources </td><td>DataSource, DataSourceField, DataSourceObject, DataSourceBundleDefinition </td></tr><tr><td>Data Streams </td><td>DataStreamDefinition, DataStreamTemplate </td></tr><tr><td>Mapping &#x26; Relations </td><td>DataSrcDataModelFieldMap, FieldSrcTrgtRelationship, ObjectSourceTargetMap </td></tr><tr><td>External Data </td><td>ExternalDataSource, ExternalDataTranObject </td></tr><tr><td>Marketing </td><td>MktCalcInsightObjectDef, MktDataTranObject </td></tr><tr><td>Other </td><td>SharingAppDefinition, DataPackageKitObject </td></tr></tbody></table>
 
 ### Currently Unsupported Types&#x20;
 

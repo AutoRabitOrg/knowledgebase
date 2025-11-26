@@ -6,17 +6,17 @@ This guide explains how to set up Single Sign-On (SSO) in AutoRABIT with any Ide
 
 When you integrate AutoRABIT with a SAML 2.0 IdP, you can:&#x20;
 
-* Control access to AutoRABIT through your IdP&#x20;
-* Enable users to sign in to AutoRABIT with their IdP credentials&#x20;
-* Manage user permissions centrally in your IdP&#x20;
+* Control access to AutoRABIT through your IdP.
+* Enable users to sign in to AutoRABIT with their IdP credentials.&#x20;
+* Manage user permissions centrally in your IdP.&#x20;
 
 ### Prerequisites&#x20;
 
 To get started, you need the following:&#x20;
 
-* An IdP that supports SAML 2.0&#x20;
-* Administrator access to AutoRABIT and your IdP&#x20;
-* The ability to configure a custom or non-gallery SAML application in your IdP&#x20;
+* An IdP that supports SAML 2.0.&#x20;
+* Administrator access to AutoRABIT and your IdP.&#x20;
+* The ability to configure a custom or non-gallery SAML application in your IdP.&#x20;
 
 **Step 1: Configure Your Identity Provider**&#x20;
 

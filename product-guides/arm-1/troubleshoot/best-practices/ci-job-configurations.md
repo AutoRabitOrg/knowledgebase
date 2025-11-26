@@ -39,9 +39,9 @@ Best practices for performing CI/CD based on [Version Control](https://www.autor
 
 **Limitations:**
 
-* Manual deployment needed to sync with Production
-* Manual baseline revision updates required
-* Risks if manual pre-deployment steps are involved; frequent smaller releases mitigate this
+* Manual deployment needed to sync with Production.
+* Manual baseline revision updates required.
+* Risks if manual pre-deployment steps are involved; frequent smaller releases mitigate this.
 
 ### 5. Automatic Validation
 
@@ -51,13 +51,13 @@ Best practices for performing CI/CD based on [Version Control](https://www.autor
 
 **Limitations:**
 
-* Manual deployment needed post-release to sync with Production
-* Requires manual baseline update
-* Risk of failure with manual pre-deployment steps
+* Manual deployment needed post-release to sync with Production.
+* Requires manual baseline update.
+* Risk of failure with manual pre-deployment steps.
 
 ### 6. Backup
 
-A scheduled job that pulls changes post a given date into a backup repository.
+A scheduled job that pulls changes after a given date into a backup repository.
 
 > **Important Note:** Not a replacement for Branching Baseline. Relies on modification date and is subject to API limits. Should supplement but not replace periodic manual execution of Branching Baseline.
 

@@ -16,13 +16,13 @@
    * **Job-specific:** In the _BUILD_ section of the CI job, use **Exclude Metadata Types** to define exclusions for that job only.
 3. **Remove Login IP Ranges:** Enable this in the _Additional Profile Packaging Options_ under the _Build_ section to avoid overriding whitelisted IP ranges in Salesforce.
 4. **Use Incremental Builds** instead of Full Builds:
-   * Only deploys delta changes (avoids redundant deployments)
-   * Prevents governor limits from being exceeded
-   * Skips execution if no changes are detected
+   * Only deploys delta changes (avoids redundant deployments).
+   * Prevents governor limits from being exceeded.
+   * Skips execution if no changes are detected.
 5. **Manage Destructive Changes:**
-   * Select **Prepare Destructive Changes** in the _Build_ section
-   * Select **Run Destructive Changes** in the _Deploy_ section
-   * Ensures deleted metadata components in the branch are also removed from the destination
+   * Select **Prepare Destructive Changes** in the _Build_ section.
+   * Select **Run Destructive Changes** in the _Deploy_ section.
+   * Ensures deleted metadata components in the branch are also removed from the destination.
 6. **Set Baseline Revision:** To fetch changes from a specific revision onward, configure the **Baseline Revision** during CI job setup.\
    **Example:** If the baseline is set to 9, changes from revisions 10 onward will be fetched.
 

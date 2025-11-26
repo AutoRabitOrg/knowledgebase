@@ -10,7 +10,7 @@ Salesforce flows fall into five main categories:
 
 1. **Screen Flows** – Include user interface elements; require user input. They can be launched via actions or embedded in Lightning pages.
 2. **Schedule-Triggered Flows** – Run in the background at specified intervals for each record in a batch.
-3. **Autolaunched Flows** – Perform tasks without user interaction. These can be triggered from Process Builder, Apex, schedules, record changes, or platform events.
+3. **Auto-launched Flows** – Perform tasks without user interaction. These can be triggered from Process Builder, Apex, schedules, record changes, or platform events.
 4. **Record-Triggered Flows** – Automatically triggered in the background when a record is created, updated, or deleted.
 5. **Platform Event-Triggered Flows** – Triggered when a platform event message is received.
 

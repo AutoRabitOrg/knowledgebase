@@ -1,6 +1,6 @@
 # Vlocity
 
-Vlocity, as of June 1, 2020, is now a Salesforce company. Vlocity is a set of applications built solely on the Salesforce platform and caters to a number of industries including healthcare, energy, government, entertainment, and insurance. Vlocity is popular among many of our healthcare clients.
+Vlocity, as of June 1, 2020, is now a Salesforce company. Vlocity is a set of applications built solely on the Salesforce platform that caters to a number of industries, including healthcare, energy, government, entertainment, and insurance. Vlocity is popular among many of our healthcare clients.
 
 For best tracking and visibility, it’s recommended to set a metadata folder path for a repository. This can be completed through the use of the branch settings column in the Repository details. This will enable the metadata to be placed in the specified directory rather than the root directory. This should be completed before any baseline and commits as part of your VC Repo’s registration.
 
@@ -69,7 +69,7 @@ Seeding a master repository within ARM is possible for both Salesforce and Vloci
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (17).png" alt="" width="511"><figcaption></figcaption></figure>
 
-Upon successfully executing the Branching Baseline by selecting Salesforce and Vlocity for the retrieval type all metadata is placed into the master repository.  The Salesforce metadata should be placed in the src directory within the master repository.  Additionally, a **vlocity.yaml** file is created as part of the baseline process.  Here is an example of a **vlocity.yaml** file:
+Upon successfully executing the Branching Baseline by selecting Salesforce and Vlocity for the retrieval type, all metadata is placed into the master repository. The Salesforce metadata should be placed in the src directory within the master repository. Additionally, a **vlocity.yaml** file is created as part of the baseline process. Here is an example of a **vlocity.yaml** file:
 
 **Project path:** _./autorabit\_alldefault\_vlocity\_buildmanifest_
 

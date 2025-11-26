@@ -14,12 +14,12 @@ In order to translate custom objects for a variety of languages, you need to com
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Point to Note:**
+**Points to Note:**
 
 * The translation will not take place and nothing will be retrieved if you merely use the `CustomObjectTranslation` metadata type and leave out the `Custom Object`.
 * The translation should be activated for the custom object in the destination org.
 
-### B. Commit and deploy 'Custom Field' Translations with ARM <a href="#b-commit-and-deploy-custom-field-translations-with-arm" id="b-commit-and-deploy-custom-field-translations-with-arm"></a>
+### B. Commit and Deploy 'Custom Field' Translations with ARM <a href="#b-commit-and-deploy-custom-field-translations-with-arm" id="b-commit-and-deploy-custom-field-translations-with-arm"></a>
 
 To commit and deploy custom field translations with ARM, you need to commit the following components.
 
@@ -33,7 +33,7 @@ To commit and deploy custom field translations with ARM, you need to commit the 
 
 **Troubleshooting:**
 
-In some circumstances, the `CustomObjectTranslation` might just have the opening and closing xml tags. In this situation, we advise you to do a commit while selecting the **Review Artifacts** option, allowing you to inspect the contents of the files before committing them.
+In some circumstances, the `CustomObjectTranslation` might only have the opening and closing xml tags. In this situation, we advise you to do a commit while selecting the **Review Artifacts** option, allowing you to inspect the contents of the files before committing them.
 
 ### C. Commit and Deploy 'Custom Label' Translations with ARM <a href="#c-commit-and-deploy-custom-label-translations-with-arm" id="c-commit-and-deploy-custom-label-translations-with-arm"></a>
 
@@ -51,9 +51,9 @@ To commit or deploy custom label translations with ARM, you need to commit the f
 
 ### D. Commit and Deploy 'Field Set' Translations with ARM <a href="#d-commit-and-deploy-field-set-translations-with-arm" id="d-commit-and-deploy-field-set-translations-with-arm"></a>
 
-A field set is a group of different fields. For example, a field set that contains fields describing a user's first name, last name, occupation, etc.
+A field set is a group of different fields. For example, a field set contains fields describing a user's first name, last name, occupation, etc.
 
-In order to commit and deploy field set translations with ARM, you need to commit the following components.
+In order to commit and deploy field set translations with ARM, you need to commit the following components:
 
 1. Select the `FieldSet` metadata type and select the specific field set(s) that you want to move the translation.
 

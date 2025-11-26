@@ -25,7 +25,7 @@ Together, these products form the industry’s most complete DevSecOps solution 
   Precision answers, fast. Use our embedded AI assistant to extract exact steps, explanations, and insights from our full documentation library.
 * [**Release Notes**](release-notes/release-notes/)\
   Stay informed. Track feature updates, patch releases, and roadmap-aligned improvements—built for enterprise-readiness.
-* [**Step-by-Step Product Guides**](broken-reference)\
+* [**Step-by-Step Product Guides**](/broken/pages/IJtS5gIgd8Fpput4LEzV)\
   From initial configuration to advanced workflows—our user guides provide structured clarity for every role and function.
 * [**Troubleshooting & FAQs**](fundamentals/faq/)\
   Self-serve solutions to unblock your team and reduce downtime.

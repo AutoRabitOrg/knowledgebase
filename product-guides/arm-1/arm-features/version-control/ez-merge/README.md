@@ -9,7 +9,7 @@ Merging is simply putting a forked history back together again. Say you have a n
 Before a merge, there are several preparation steps you must take to ensure the merge goes smoothly. Most of these steps must be performed by an Admin.
 
 1. [**`Register your Version Control Repository in ARM`**](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)**`:`** Only an Admin can perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
-2. [**`Register your Salesforce Organization in ARM`**](broken-reference)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.&#x20;
+2. [**`Register your Salesforce Organization in ARM`**](/broken/pages/9pLgfInGvztETx4cXCc2)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.&#x20;
 3. [**`Set Up a Branch`**](https://knowledgebase.autorabit.com/product-guides/arm/getting-started/registration/version-control-branch/git-branch-creation#overview)**`:`** Instead of making changes directly to the code base, you can branch off from the main line and work on a specific feature in an isolated branch. Only an Admin can perform this step.&#x20;
 4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../../../../arm/arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
 5. **`Fetch the latest remote commits:`** Ensure the receiving branch and the merging branch are up-to-date with the latest remote changes.
@@ -23,17 +23,17 @@ The merge process is generally performed when a feature is ready for user testin
 1. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) module and select **`Commits.`**
 2. Click on the **`New EZ-Merge`** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The **`New EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
 
 1. You can also reach the **`New Merge`** screen directly by selecting **`Create New > New EZ-Merge`** from the top navigation bar.
 2. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 3. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **`Merge Type`** from the dropdown:
    * `Entire Branch`&#x20;
@@ -42,7 +42,7 @@ The merge process is generally performed when a feature is ready for user testin
    * `Release Label`
    * `ALM Label`
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 
@@ -70,7 +70,7 @@ There could be a situation where you have entered an incorrect revision number a
 
 You can also use the **`'Get All Revisions'`** button to get all the revisions and check for your revision from the list.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **C. Commit Label**
 
@@ -78,11 +78,11 @@ Select the commit labels created while committing to the Version Control System.
 
 For example, **DXTES-19\_EZ-Commit:** here, **DXTES-19** indicates the _commit label_ _name_, and **EZ-Commit** denotes the label created during the **EZ-Commit** process.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2107).png" alt=""><figcaption></figcaption></figure>
 
@@ -208,7 +208,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 1. **Back Merge Indicator**:
    * After performing the merge, you will see an indicator confirming that the validation is being skipped automatically as it is a back merge.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Prevalidate Merge <a href="#prevalidate-merge" id="prevalidate-merge"></a>
 

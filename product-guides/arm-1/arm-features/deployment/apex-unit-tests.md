@@ -55,26 +55,26 @@ _Code Coverage Failures:_\
 
 In the **`Submit for Validation`** screen, select the **`Validate Deployment`** checkbox and choose an org to validate your commit. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
 
 #### During EZ-Merge Prevalidation <a href="#during-ezmerge-prevalidation" id="during-ezmerge-prevalidation"></a>
 
 In the **`New Merge`** screen and under the **`Prevalidate Merge`** section, select the **`Validate Deployment`** checkbox and choose an org to validate your merge. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### During Deployment <a href="#during-deployment" id="during-deployment"></a>
 
 In the **`Deployment Settings`** screen, you can choose the Apex test level to validate the deployment.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 #### During Continuous Integration (CI) Jobs <a href="#during-continuous-integration-ci-jobs" id="during-continuous-integration-ci-jobs"></a>
 
 You can set the Apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt="" width="446"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="446"><figcaption></figcaption></figure>
 
 For more information on Apex unit tests, refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex_testing/units/apex_testing_intro) module on Apex test level testing.

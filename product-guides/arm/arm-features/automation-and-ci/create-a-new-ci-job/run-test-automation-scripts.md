@@ -84,4 +84,4 @@ Configure when the job should run:
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once setup is complete, you'll be redirected to the [CI Job Results](broken-reference) page where you can trigger a build for this CI job.
+Once setup is complete, you'll be redirected to the [CI Job Results](/broken/pages/empQ5i682Aq3NuuUalqa) page where you can trigger a build for this CI job.

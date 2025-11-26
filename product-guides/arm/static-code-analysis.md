@@ -14,7 +14,7 @@ Static analysis is generally good at finding coding issues, such as:
 
 ### Run Static Code Analysis <a href="#run-static-code-analysis" id="run-static-code-analysis"></a>
 
-To run a static code tool on your [Salesforce Org](broken-reference) or Version Control Branch, follow the below steps:
+To run a static code tool on your [Salesforce Org](/broken/pages/9pLgfInGvztETx4cXCc2) or Version Control Branch, follow the below steps:
 
 1. Hover your mouse over the **REPORTS** module and choose the option: [**STATIC CODE ANALYSIS**](https://www.autorabit.com/products/codescan/)
 

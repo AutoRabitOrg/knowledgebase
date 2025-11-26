@@ -12,7 +12,7 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
 1. Click on the “Job Configs” section under the “Compare” module to observer the list of backups available for compare operations.
 2.  Select the required backup(s) from the list of backups available to perform a “Backup-to-Backup” compare operation.
 
-    <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (9).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (1) (13).png" alt=""><figcaption></figcaption></figure>
 3. On selecting the backups, observe the details of the Snapshot1 and Sanpahot2.
@@ -31,17 +31,17 @@ To compare two backup activities of a Salesforce org or to compare one of the ba
     <figure><img src="../../../../.gitbook/assets/image (4) (8).png" alt=""><figcaption></figcaption></figure>
 11. Click on the object to observe the fields in the object.
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (9) (1).png" alt=""><figcaption></figcaption></figure>
 12. Click on the field “Fields To Compare” to observe the list of fields.
 
-    <figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (9).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (7) (8).png" alt=""><figcaption></figcaption></figure>
 13. The “Clickable Object” and the “Fields To Compare” is useful to specify the fields that should be part of the compare operation.
     1. Only the fields selected under these will be part of the compare operation.
 14. Click on the “COMPARE” button to initiate the compare operation.
 
-    <figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (7).png" alt=""><figcaption></figcaption></figure>
 15. Clicking compare will show the “Compare -Save Config” screen.
 
     <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>

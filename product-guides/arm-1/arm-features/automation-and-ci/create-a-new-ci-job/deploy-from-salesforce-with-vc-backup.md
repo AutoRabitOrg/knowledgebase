@@ -17,7 +17,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 1. Choose the tile: **Deploy from Salesforce with a Version Control backup.**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. On the next screen, give the job a descriptive name in the **Job Name** field.
 2. Add a brief **description** of the current CI job.
@@ -39,7 +39,7 @@ Under the **Build** section, fill in the below details:
 
 **Additional options in the Build section**
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Auto switch to bulk retrieve service, if job is hitting metadata retrieving governor limit:** This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 39 MB. Using Batch Size, you can process metadata in batches to stay within platform limits. If you do not have a lot of metadata, processing records through batches are your best solution. Specify the batch size for both profile and remaining components to retrieve metadata types. 10 K is the max batch size that you can set per batch.
 2. **Exclude Installed (Managed) components and changes:** This option will exclude any **Managed packages** that the user may have installed.
@@ -50,11 +50,11 @@ Under the **Build** section, fill in the below details:
 6. **Generate Code Coverage Report:** This option generates a code overage report. This has info about the apex tests run, the classes covered, and the assertions that have failed.
 7. **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **For ApexPMD** and **Checkmarx**: ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-![](<../../../../../.gitbook/assets/image (4) (1) (1).png>)<br>
+![](<../../../../../.gitbook/assets/image (4) (1) (1) (1).png>)<br>
 
 **For CodeScan** and **SonarQube:** Set the criteria for running the [CodeScan](https://www.codescan.io/) or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
@@ -281,4 +281,4 @@ For more information on **Credential Usage** for different types of CI jobs, ref
 
 ### What Next? <a href="#what-next" id="what-next"></a>
 
-Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](broken-reference) page where you can trigger a build for your CI job.
+Once you filled in all the details for your CI job, you will be redirected to the [CI Job Results](/broken/pages/empQ5i682Aq3NuuUalqa) page where you can trigger a build for your CI job.

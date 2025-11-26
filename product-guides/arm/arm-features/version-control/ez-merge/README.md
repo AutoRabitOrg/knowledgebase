@@ -9,7 +9,7 @@ Merging is simply putting a forked history back together again. Say you have a n
 Before a merge, there are several preparation steps you must take to ensure the merge goes smoothly. Most of these steps must be performed by an Admin.
 
 1. [**`Register your Version Control Repository in ARM`**](../introduction-to-version-control/version-control-repositories-summary.md)**`:`** Only an Admin can perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
-2. [**`Register your Salesforce Organization in ARM`**](broken-reference)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.&#x20;
+2. [**`Register your Salesforce Organization in ARM`**](/broken/pages/9pLgfInGvztETx4cXCc2)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.&#x20;
 3. [**`Set Up a Branch`**](https://knowledgebase.autorabit.com/product-guides/arm/getting-started/registration/version-control-branch/git-branch-creation#overview)**`:`** Instead of making changes directly to the code base, you can branch off from the main line and work on a specific feature in an isolated branch. Only an Admin can perform this step.&#x20;
 4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../../../arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
 5. **`Fetch the latest remote commits:`** Ensure the receiving branch and the merging branch are up-to-date with the latest remote changes.
@@ -28,12 +28,12 @@ The merge process is generally performed when a feature is ready for user testin
 
     * The **`New EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
 
-    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
 3. You can also reach the **`New Merge`** screen directly by selecting **`Create New > New EZ-Merge`** from the top navigation bar.
 4. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 5. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Source &#x26; Target Branches</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Source &#x26; Target Branches</p></figcaption></figure>
 
 6.  Select the **`Merge Type`** from the dropdown:
 
@@ -43,7 +43,7 @@ The merge process is generally performed when a feature is ready for user testin
     * `Release Label`
     * `ALM Label`
 
-    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption><p>Merge Type</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="431"><figcaption><p>Merge Type</p></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 

@@ -25,7 +25,7 @@ AutoRABIT Guard’s Data Classification enhances your organization's ability to 
   Why It Matters? It's not enough to know a field is sensitive—you need to know how widely it's used and in what contexts. Guard tells you:&#x20;
   * **Where the field lives**: See where the field appears across your org in Page Layouts, Apex Classes, Flows, Validation Rules, etc.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Field Usage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Field Usage</p></figcaption></figure>
 
 * **Access Visibility: See Who Has Keys**\
   Even well-protected data becomes a risk if too many people have access to it. With Guard, you can instantly view which Profiles, Permission Sets, and Permission Set Groups have access to a sensitive field.

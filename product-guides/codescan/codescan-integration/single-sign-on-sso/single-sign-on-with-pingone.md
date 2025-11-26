@@ -21,10 +21,10 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
     <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
 2.  Go to **`Administration > SAML Connections`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>SAML Connections</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>SAML Connections</p></figcaption></figure>
 3.  Click on **`Create Connection`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `PingOne-SAML`
 5. Enter a valid domain name of the organization in the **`Corporate domain`** field that can be authenticated in the Identity Provider. _**This property cannot be updated after SAML Connection creation.**_\
@@ -135,6 +135,6 @@ It’s necessary to sync attributes of IDP users with properties of CodeScan use
 ### Step 5: Testing the Single Sign-On Configuration <a href="#step-5-testing-the-single-signon-configuration" id="step-5-testing-the-single-signon-configuration"></a>
 
 1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.\
-   ![](<../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+   ![](<../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 2. Enter the domain name of your organization in the **`Your Company email`** field. **For example**- _autorabit.com_.
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.

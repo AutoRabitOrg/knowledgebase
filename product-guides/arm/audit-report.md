@@ -7,7 +7,7 @@ The ARM **Audit Report** provides a searchable, exportable record of activity ac
 To generate a report:
 
 1.  **Select a Salesforce Org.**\
-    In the drop-down, choose the target [**Salesforce Org**](broken-reference).
+    In the drop-down, choose the target [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2).
 
     <figure><img src="../../.gitbook/assets/image (47) (1) (1) (1).png" alt="Select Salesforce Org" width="563"><figcaption></figcaption></figure>
 2.  **Set a date range.**\

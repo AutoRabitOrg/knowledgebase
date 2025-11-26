@@ -18,6 +18,130 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.15
+
+**Release Date: 30 November 2025**
+
+### Summary
+
+CodeScan 25.1.15 is comprised of the following 4 components:
+
+* 1 Rule Enhancement
+* 3 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Rule Enhancements
+
+**1.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
+
+{Rule ID: sf:UnnecessaryBooleanAssertion}
+
+Several customers have reported that the current rule detects unnecessary Boolean assertions only when using the System.assert() method.
+
+However, it does **not** flag similar patterns when assertions are made through the Assert class methods such as Assert.isTrue(true) or Assert.isFalse(false).
+
+To improve coverage, we enhanced the rule logic to include these Assert class scenarios, ensuring consistency across both assertion types.
+
+**Fix Summary**
+
+* Extended the rule logic to detect unnecessary boolean assertions in the following cases:
+  * Assert.isTrue(true)
+  * Assert.isFalse(false)
+* Updated the rule message and description to clearly explain why these patterns are redundant.
+
+&#x20;**Updated Rule Description**:&#x20;
+
+&#x20;A Unit test assertion with a Boolean literal is unnecessary since it always will evaluate to the same thing. Consider using flow control (in case of assertTrue(false) or similar) or simply removing statements like System.assert(true) and Assert.isFalse(false).\
+\
+If you just want a test to halt after finding an error, use the System.assert(false, 'message') or Assert.isFalse(false, 'message') methods and provide an indication message of why it did.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;Verified the following scenarios are working as expected:
+
+* Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
+* Compliant scenarios have been tested. (by using only string values).
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+**1.   Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
+
+{Rule ID: vf:RequireConfirmationToken}
+
+During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
+
+**Summary**:
+
+The current xpath for this rule is:
+
+//Document//Element\[@Name='confirmationtokenrequired']\[Text\[@Image='false']]
+
+We recognize that this will not work as expected, as the confirmation token is actually in the metadata of the page and the tag is in camel-case (confirmationTokenRequired).
+
+The logic was updated to:
+
+//Document//Element\[lower-case(@Name)='confirmationtokenrequired']\[Text\[@Image='false']]
+
+With this enhancement, the rule will:
+
+* find the correct tag
+* look in the page-meta.xml metadata file (not the page itself)
+
+Verified the following scenarios and confirmed that the updated rule logic is working as expected.
+
+_“vf:RequireConfirmationToken” getting triggered only_ when the corresponding meta.xml has false for ConfirmationToken tag .
+
+* Verified the rule behavior using by uploading only page file and then with corresponding meta.xml file with true and meta.xml file with false.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2.   Fixed an issue in the rule “Switch statements should not have too many case clauses”**
+
+{Rule ID: sf:MaximumNumberOfCase }
+
+Some customers have reported that this rule throws out of bounds exceptions. Upon investigation, we determined that this is caused by an empty switch statement, which manifests as a parser error when this class is added in Salesforce.
+
+The aim of fix is to make sure that the CodeScan parser sees empty switch statements as syntax errors.
+
+Verified that the below scenarios are working as expected.
+
+* Verified that the rule does not throw out of bounds exceptions in the analysis logs (it should not throw this and, as such, has been validated as working as expected).
+* Verified “sf:MaximumNumberOfCase” rule is triggered only when the maximum limit is exceeded.
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**3.    Fixed an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.**
+
+Some customers reported an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+This fix remediates that issue in full.
+
+Verified the below scenarios and validated that the fix is working as expected.
+
+* Verified that the “author name” filed does not overlap with the “action taken” field.
+* Verified with different actions (Updated, Activated, Deactivated).
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## CodeScan Release 25.1.14
 
 **Release Date: 16 November 2025**
@@ -382,7 +506,7 @@ _of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80
 
 Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -396,11 +520,11 @@ This rule detects ESLint rule references written in code comments that are not c
 
 We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -483,17 +607,17 @@ We have verified the fix via the following scenarios and confirm that Admins are
 
 1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Admins can also view the records displayed in the correct order under the All tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -511,7 +635,7 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
    * \*.marketingcloudapis.com
 2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <br>
 
@@ -1946,7 +2070,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -1974,19 +2098,19 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -1994,7 +2118,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -2666,7 +2790,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

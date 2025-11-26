@@ -2,14 +2,14 @@
 
 ### What is HashiCorp Vault?&#x20;
 
-HashiCorp Vault is a secrets management solution that brokers access for both humans and machines, through programmatic access, to systems. Secrets can be stored, dynamically generated, and in the case of encryption, keys can be consumed as a service without the need to expose the underlying key materials.
+HashiCorp Vault is a secrets management solution that brokers access for both humans and machines, through programmatic access to systems. Secrets can be stored, dynamically generated, and in the case of encryption, keys can be consumed as a service without the need to expose the underlying key materials.
 
 ### What is the purpose of Hashicorp Vault?
 
-1. Ease of use for developers to access/use confidential secrets, keys, and credentials
-2. Confidentiality for secrets, keys, and credentials
-3. Provide mechanisms for key rotation in case of compromise
-4. Create an audit log to keep track of what systems and users access confidential data
+1. Ease of use for developers to access/use confidential secrets, keys, and credentials.
+2. Confidentiality for secrets, keys, and credentials.
+3. Provide mechanisms for key rotation in case of compromise.
+4. Create an audit log to keep track of what systems and users access confidential data.
 
 ## Set up a HashiCorp server
 
@@ -30,7 +30,7 @@ The first step is to install and configure Consul on Ubuntu 18.04.
 1. Start by navigating to the [Consul webpage](https://www.consul.io/) and clicking on the **Download** icon.
 2. The browser then takes you to the Download page with all the available packages. Search for the Linux section and right-click on the 32 or 64-bit version. Copy the link location, as you will need it in the next step.
 3. Open the terminal (**Ctrl**+**Alt**+**T**) and use the **wget** command to download the Consul package: **wget** [https://releases.hashicorp.com/consul/1.6.1/consul\_1.6.1\_linux\_amd64.zip](https://releases.hashicorp.com/consul/1.6.1/consul_1.6.1_linux_amd64.zip)
-4. Next, unzip the package with the command: **unzip consul\_1.6.1\_linux\_amd64.zip**Note:To download unzip software, use the command: **sudo apt install unzip –y**.
+4. Next, unzip the package with the command: **unzip consul\_1.6.1\_linux\_amd64.zip** Note: To download unzip software, use the command: **sudo apt install unzip –y**.
 5. Then, move the installation package by typing the following command: **sudo mv consul /usr/bin**
 6. End by verifying the installation with the command: **consul**
 7. The output should list all available consul commands, as in the image below:
@@ -104,7 +104,7 @@ With Consul in place, move on to installing Vault on your Ubuntu 18.04 system.
 
 <figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
 
-3. Using the wget command, download the package by pasting the link location copied in the previous step: **wget** [https://releases.hashicorp.com/vault/1.2.3/vault\_1.2.3\_linux\_amd64.zip](https://releases.hashicorp.com/vault/1.2.3/vault_1.2.3_linux_amd64.zip)
+3. Using the wget command, download the package by pasting the link location copied in the previous step: **wget** [https://releases.hashicorp.com/vault/1.2.3/vault\_1.2.3\_linux\_amd64.zip](https://releases.hashicorp.com/vault/1.2.3/vault_1.2.3_linux_amd64.zip).
 4. Next, unzip the package using the following command: **unzip vault\_1.2.3\_linux\_amd64.zip**
 5. Then, move the package to the **/usr/bin** directory: **mv vault /usr/bin**
 6. Check the installation using the following command: **vault**
@@ -216,7 +216,7 @@ As a result, a list of all available vault commands should appear, as in the ima
 
 #### Initialize Vault
 
-As you have already installed Consul to serve as the back-end storage, you’ll now need to initialize Vault manually for it to work correctly.
+As you have already installed Consul to serve as the backend storage, you’ll now need to initialize Vault manually for it to work correctly.
 
 1. First, run the following command to see current Vault status: **vault status.**
 
@@ -240,9 +240,8 @@ As you have already installed Consul to serve as the back-end storage, you’ll 
 2. Open PowerShell with Admin privileges
 3.  Enter the below command:ActionScript
 
-    ```actionscript
-    “Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))”“Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))”
-    ```
+    <pre class="language-actionscript" data-overflow="wrap"><code class="lang-actionscript">“Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))”“Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))”
+    </code></pre>
 4. Open PowerShell and enter the below command: **choco install vault**
 5. After installing Vault, verify the installation worked by opening a new terminal session and checking that the vault binary is available. By executing vault, you should see help output similar to the following:
 
@@ -272,7 +271,7 @@ Vault operates as a client/server application. The Vault server is the only piec
 
     <figure><img src="../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## HashiCorp Vault- Basic Commands
+## HashiCorp Vault Basic Commands
 
 Once you start the server (as mentioned in the section: **Starting the Dev Server**), the server will be on sealed mode, by default. Therefore, it is required to initialize the server first.
 
@@ -360,22 +359,22 @@ Follow the below steps to integrate HashiCorp Vault with AutoRABIT:
 2. On the next pop-up screen, give a **Credential Name**.
 3. Choose the **Credential Type** as **HashiCorp Vault**
 4. Choose the **Credential Scope**. The Credential Scope lets you specify exactly what type of access you need.
-   * **Global:** Credential can be accessed within the team
-   * **Private:** Credential to be used for private usage
+   * **Global:** Credential can be accessed within the team.
+   * **Private:** Credential to be used for private usage.
 5. Fill in the below details:
    * **Vault Server URL:** Enter the Vault server to configure with AutoRABIT. The Vault dev server defaults to running at **http://127.0.0.1:8200**. The server is initialized and unsealed.
    *   **Authentication Method AWS:** This checkbox will be selected by default. After you enter the remaining details, the Vault token will automatically be generated through the AWS login authentication method whenever the existing token expires.
 
        <figure><img src="../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="293"><figcaption></figcaption></figure>
 
-       * If you deselect the **Authentication Method AWS** checkbox, then the below **Vault Token** mandatory field will be displayed.
+       * If you deselect the **Authentication Method AWS** checkbox, then the following **Vault Token** mandatory field will be displayed.
 
        <figure><img src="../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="288"><figcaption></figcaption></figure>
-   * **Vault Token:** Enter the Vault token that you generated earlier using unseal key. For more information, refer [HERE](https://learn.hashicorp.com/tutorials/vault/generate-root?in=vault/operations).
+   * **Vault Token:** Enter the Vault token that you generated earlier using unseal key. For more information, refer [here](https://learn.hashicorp.com/tutorials/vault/generate-root?in=vault/operations).
    * **Key Name**: Enter the **Key Name** that you have obtained in HashiCorp CLI.
    * **Secret Path**: Enter the Secret Path.
 6. Click **Validate and Save**. This validates the credentials and if all the fields are correctly added, the credentials get saved in AutoRABIT.
 
-## TLS Support for Hashicorp Vault Integration
+## TLS Support for HashiCorp Vault Integration
 
-Hashicorp Vault integration runs on **TLS 1.2** version.
+HashiCorp Vault integration runs on **TLS 1.2** version.

@@ -1,6 +1,6 @@
 # SSO for OKTA
 
-This article explains how to configure Single Sign-On (SSO) in AutoRABIT with Okta as your **SAML 2.0** Identity Provider. When SSO is enabled, by default users and groups logging into AutoRABIT are redirected to the Okta login page. After successful authentication, they are redirected to the AutoRABIT Dashboard.
+This article explains how to configure Single Sign-On (SSO) in AutoRABIT with Okta as your **SAML 2.0** Identity Provider. When SSO is enabled, by default users and groups logging into AutoRABIT are redirected to the Okta login page. After successful authentication, users are redirected to the AutoRABIT Dashboard.
 
 ### Add AutoRABIT Application to Okta <a href="#add-autorabit-application-to-okta" id="add-autorabit-application-to-okta"></a>
 
@@ -22,7 +22,7 @@ To add the AutoRABIT application to Okta:
 
 <figure><img src="../../../../.gitbook/assets/image (786).png" alt="" width="518"><figcaption></figcaption></figure>
 
-6. In the next auto-populated dialog box, select the second option i.e., **SAML 2.0,** and click on **Next**.
+6. In the next auto-populated dialog box, select the second option, **SAML 2.0,** and click on **Next**.
 
 <figure><img src="../../../../.gitbook/assets/image (787).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -45,11 +45,11 @@ To add the AutoRABIT application to Okta:
 <figure><img src="../../../../.gitbook/assets/image (790).png" alt="" width="549"><figcaption></figcaption></figure>
 
 10. Click **Next** to continue.
-11. Under **the Feedback** section, select the option: **I'm an Okta customer adding an internal app** and click the checkbox next to the text **"This is an internal application that we created"**, and click on the **Finish** button.
+11. Under **the Feedback** section, select the option: **I'm an Okta customer adding an internal app** and click the checkbox next to the text **"This is an internal application that we created,"** and click on the **Finish** button.
 
 <figure><img src="../../../../.gitbook/assets/image (791).png" alt="" width="549"><figcaption></figcaption></figure>
 
-12. Navigate your mouse to the **Assignment** tab, click **Assign > Assign to People.**
+12. Navigate to the **Assignment** tab, click **Assign > Assign to People.**
 
 <figure><img src="../../../../.gitbook/assets/image (792).png" alt="" width="563"><figcaption></figcaption></figure>
 

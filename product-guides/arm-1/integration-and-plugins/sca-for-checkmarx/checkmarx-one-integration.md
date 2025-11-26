@@ -68,7 +68,7 @@ This will bring you to the Submit for Validation Step. Since Checkmarx One has b
 
 
 
-Finailze setting up the Validation reports and click Finish.&#x20;
+Finalize setting up the Validation reports and click Finish.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-03-24 at 4.31.30 PM.png" alt=""><figcaption></figcaption></figure>
 

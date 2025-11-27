@@ -1,11 +1,11 @@
 # Comparing Two Backups
 
-To compare two backup activities of a Salesforce org in Salesforce, do the following:
+To compare two backup activities of a Salesforce org:
 
-1. Login to your **Vault** account.
-2. Click **COMPARE**.
-3. On the **Compare** screen, select the desired **Salesforce org** and the **Configurations** of your choice and click on **GET DETAILS**.&#x20;
-4. The list of backups performed to date will display. **Hierarchica**l and **archival backups** are not supported for **Compare** functionality.
+1. Log in to Vault and navigate to **COMPARE**.
+2. Select the Salesforce org and any required configurations, then click **GET DETAILS**.
+3. The list of available backups is displayed.\
+   &#xNAN;_&#x4E;ote: Hierarchical and archival backups are not supported for compare operations._
 
 #### Step-By-Step Guide:
 

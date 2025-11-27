@@ -1,6 +1,6 @@
 # Comparing Two Backups
 
-To compare two backup activities of a Salesforce org or to compare one of the back-ups with live data in Salesforce, do the following:
+To compare two backup activities of a Salesforce org in Salesforce, do the following:
 
 1. Login to your **Vault** account.
 2. Click **COMPARE**.

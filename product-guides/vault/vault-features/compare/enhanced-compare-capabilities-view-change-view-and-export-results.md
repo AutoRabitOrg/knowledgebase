@@ -1,4 +1,8 @@
-# Enhanced Compare Capabilities: View, Change View, and Export Results
+---
+hidden: true
+---
+
+# Copy of Live Compare
 
 Vault's Compare feature now includes three powerful options to enhance data review and usability:
 

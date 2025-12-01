@@ -20,6 +20,8 @@ Resolved an issue where users logging in through **SSO with MFA** encountered th
 
 Enhanced the support for the **PermissionSetAssignment** object during restore. Attempts to restore this object previously resulted in unexpected exceptions, which caused confusion for customers attempting permission recovery. This update provides clear guidance on supported restore behavior, ensuring administrators understand limitations and valid recovery approaches for PermissionSetAssignment data.
 
+***
+
 ## Vault Release Notes 25.2.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 19 November 2025**

@@ -65,7 +65,7 @@ Under the **Build** section, fill in the below details:
 
 <figure><img src="../../../../../.gitbook/assets/image (1263).png" alt=""><figcaption></figcaption></figure>
 
-For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../../arm/arm-administration/registration/static-code-analysis-in-ci-cd.md).
+For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md).
 
 #### **Additional Profile Packaging Options**
 

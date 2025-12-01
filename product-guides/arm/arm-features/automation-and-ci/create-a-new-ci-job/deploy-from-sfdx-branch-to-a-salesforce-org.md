@@ -102,7 +102,7 @@ Under the **Build** section, fill in the below details:
 
 <figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1).png" alt="" width="368"><figcaption></figcaption></figure>
 
-For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
+For more information on running **Static Code Analysis in CI Jobs**, refer [HERE](../../../arm-administration/static-code-analysis-in-ci-cd.md).
 
 7. **Additional Profile Packaging Options:**
    1. **Remove login IP Ranges:** If you want to log in with a Salesforce org, you have an option to restrict IP ranges. Upon selection, login IP details will not be deployed to Salesforce Org.

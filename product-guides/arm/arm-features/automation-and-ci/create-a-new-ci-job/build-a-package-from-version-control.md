@@ -88,7 +88,7 @@ Important Notes:
 
             <figure><img src="../../../../../.gitbook/assets/image (1225).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
 
-        For details on running **Static Code Analysis in CI jobs**, see [this guide](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
+        For details on running **Static Code Analysis in CI jobs**, see [this guide](../../../arm-administration/static-code-analysis-in-ci-cd.md).
 9. **Additional Profile Packaging Options**
    * **Remove Login IP Ranges** – Omit IP-range restrictions from profiles.
    * **Remove System and User Permissions** – Omit profile permissions from deployment.

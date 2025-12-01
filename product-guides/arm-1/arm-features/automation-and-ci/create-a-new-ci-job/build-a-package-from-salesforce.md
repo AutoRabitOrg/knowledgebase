@@ -49,7 +49,7 @@ Under **Build**, provide:
 
     * **Apex PMD / Salesforce Scanner** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold.
 
-    For details on running **static code analysis in CI jobs**, see [this guide](../../../../arm/arm-administration/registration/static-code-analysis-in-ci-cd.md).
+    For details on running **static code analysis in CI jobs**, see [this guide](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md).
 
 <figure><img src="../../../../../.gitbook/assets/image (2182).png" alt=""><figcaption></figcaption></figure>
 

@@ -58,7 +58,7 @@ Under **Build**, provide:
 
             <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
 
-    For details on running **static code analysis in CI jobs**, see [this guide](../../../arm-administration/registration/static-code-analysis-in-ci-cd.md).
+    For details on running **static code analysis in CI jobs**, see [this guide](../../../arm-administration/static-code-analysis-in-ci-cd.md).
 6. **Additional profile packaging options**
    * **Remove login IP ranges** – Omit IP-range settings from profiles.
    * **Remove system and user permissions** – Omit profile permissions from deployment.

@@ -1,5 +1,33 @@
 # nCino Release Notes 25.4
 
+## nCino + DataLoader Release 25.4.9 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** 30 November 2025
+
+#### **DL Pro – Multi-Level Parent Hierarchy Fix** <a href="#dl-pro-multi-level-parent-hierarchy-fix" id="dl-pro-multi-level-parent-hierarchy-fix"></a>
+
+**A fix was implemented to correctly handle multi-level parent relationships during DL Pro migrations. An issue where ancestor object failures caused master and parent objects to fail has been resolved. The migration flow now isolates such failures and works reliably, including when Automatic Apply Filter is enabled.**
+
+#### **DL Module – DB Optimization** <a href="#dl-module-db-optimization" id="dl-module-db-optimization"></a>
+
+Redundant database calls across DL Pro and Single DataLoader execution flows were removed, including unnecessary process, job, and object lookups. Job execution now fetches only relevant in-progress records, minimizing load. These enhancements significantly reduce DB usage and prevent connection pool shutdown issues.
+
+#### **DL Pro – Child Object Selection Fix** <a href="#dl-pro-child-object-selection-fix" id="dl-pro-child-object-selection-fix"></a>
+
+A fix was implemented to ensure that, when editing a DL Pro job, the child object list correctly displays all available child objects rather than only the previously selected ones. This resolves inconsistencies in object visibility during job configuration.
+
+#### **DL Pro – Incorrect Parent Object Identification** <a href="#dl-pro-incorrect-parent-object-identification" id="dl-pro-incorrect-parent-object-identification"></a>
+
+A fix was applied to ensure only the intended parent objects are included during job execution. The issue occurred when an object acted as both a parent and a child to the master object. The logic has been corrected to prevent additional, unintended parents from being identified and processed.
+
+#### **DL Pro – Job Redirect Issue Resolved** <a href="#dl-pro-job-redirect-issue-resolved" id="dl-pro-job-redirect-issue-resolved"></a>
+
+A fix was implemented to ensure that, after running a DL Pro job, the application correctly redirects back to the same job. Previously, it always loaded the first job in the list. The redirect logic on the DL Pro landing page has now been corrected.
+
+#### **Corrected Error Message Handling** <a href="#corrected-error-message-handling" id="corrected-error-message-handling"></a>
+
+**Resolved an issue where an incorrect authentication error was shown for query-related failures. The system now displays the proper error message when a connection exception occurs.**
+
 ## nCino + DataLoader Release 25.4.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** 16 November 2025

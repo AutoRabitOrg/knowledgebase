@@ -1,5 +1,15 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.4.9
+
+**Release date : Nov 30, 2025**\
+\
+Fixed an issue where scheduled jobs could not be deleted through Environment Provisioning. The system now correctly validates permissions and job eligibility, enabling successful scheduled job removals from target environments.\
+Support Case: #159287
+
+A performance optimization was implemented to improve how UserVersionControl details are retrieved. Instead of fetching data individually for each user, the system now retrieves the required information in a single bulk operation and processes it efficiently. This significantly reduces load time and restores a responsive user experience in EZ-Merge.\
+Support Case: #158633
+
 ## ARM Release Notes 25.4.8
 
 **Release date : Nov 23, 2025**\

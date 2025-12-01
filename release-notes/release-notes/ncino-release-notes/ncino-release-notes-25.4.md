@@ -28,6 +28,18 @@ A fix was implemented to ensure that, after running a DL Pro job, the applicatio
 
 **Resolved an issue where an incorrect authentication error was shown for query-related failures. The system now displays the proper error message when a connection exception occurs.**
 
+## nCino + DataLoader Release 25.4.8 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** 23 November 2025
+
+### **Proxy Connectivity Issue – nCino & Data Loader** <a href="#proxy-connectivity-issue-ncino-and-data-loader" id="proxy-connectivity-issue-ncino-and-data-loader"></a>
+
+A fix was implemented to resolve failures in nCino and Data Loader operations when Salesforce connectivity was routed through a proxy. Bulk API requests now establish connections reliably without timing out when the proxy is enabled.
+
+### **Schema Synchronization for Feature Migration Templates** <a href="#schema-synchronization-for-feature-migration-templates" id="schema-synchronization-for-feature-migration-templates"></a>
+
+A new option has been added to synchronize schema metadata directly within the Feature Migration Template. Triggering a sync refreshes the latest objects, fields, and attribute changes from Salesforce, ensuring templates remain up-to-date and reducing deployment failures caused by outdated schema definitions.
+
 ## nCino + DataLoader Release 25.4.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** 16 November 2025

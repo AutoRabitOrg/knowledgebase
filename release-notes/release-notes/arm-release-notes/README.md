@@ -2,7 +2,7 @@
 
 ## ARM Release Notes 25.4.9
 
-**Release date : Nov 30, 2025**\
+**Release Date: 30 November 2025**\
 \
 Fixed an issue where scheduled jobs could not be deleted through Environment Provisioning. The system now correctly validates permissions and job eligibility, enabling successful scheduled job removals from target environments.\
 Support Case: #159287
@@ -10,21 +10,25 @@ Support Case: #159287
 A performance optimization was implemented to improve how UserVersionControl details are retrieved. Instead of fetching data individually for each user, the system now retrieves the required information in a single bulk operation and processes it efficiently. This significantly reduces load time and restores a responsive user experience in EZ-Merge.\
 Support Case: #158633
 
+***
+
 ## ARM Release Notes 25.4.8
 
-**Release date : Nov 23, 2025**\
+**Release Date: 23 November 2025**\
 \
 EZ-Merge report timestamps now adjust accurately to each user’s time-zone settings, ensuring Merge Submission, L1 Review, and L2 Review dates display consistently across regions.\
-Support Case: 156046
+Support Case: #156046
 
-CI Job validation behaviour has been streamlined so that the Build Now option becomes available in the UI whenever the job’s deploy and overall status reach a completed state, providing a more consistent experience.\
-Support Case: 158357
+CI Job validation behavior has been streamlined so that the Build Now option becomes available in the UI whenever the job’s deploy and overall status reach a completed state, providing a more consistent experience.\
+Support Case: #158357
 
-Backup-to-VC jobs now present the appropriate Git message during push scenarios such as permission or hook restrictions, while clearly indicating “No modifications” only when no updates are present—offering more accurate visibility into job outcomes.\
-Support Case: 159296
+Backup-to-VC jobs now present the appropriate Git message during push scenarios, such as permission or hook restrictions, while clearly indicating “No modifications” only when no updates are present—offering more accurate visibility into job outcomes.\
+Support Case: #159296
 
 Delta commit results now reflect completion accurately, ensuring that the commit status aligns with the actual execution of the delta operation.\
-Support Case: 150240
+Support Case: #150240
+
+***
 
 ## ARM Release Notes 25.4.7
 

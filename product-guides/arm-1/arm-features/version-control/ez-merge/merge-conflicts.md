@@ -67,13 +67,13 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 1. Go to the **Commits** screen and search for your merge label that has conflict. Click on the **Resolve Conflict** icon.
 2. The list of conflicted files or merged files will display on the next screen.&#x20;
-3.  There is an easier method to resolve the conflicted files in one go. Select all the files and click on the 3 dots as shown in the image below and choose either of the criteria to resolve the files.
+3. There is an easier method to resolve the conflicted files in one go. Select all the files and click on the 3 dots as shown in the image below and choose either of the criteria to resolve the files.
+   * **Use Source:** This option retains the revisions located in the source branch
+   * **Use Destination:** This option retains the revisions located in the destination branch
 
-    * **Use Source:** This option retains the revisions located in the source branch
-    * **Use Destination:** This option retains the revisions located in the destination branch
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.44.37.png" alt="" width="375"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="538"><figcaption></figcaption></figure>
-4. Or, click on a conflicted file to see its related conflict blocks. This tab will display the number of insertions and deletions to each metadata file. The lines highlighted in **GREEN** color indicate those are updated (added/modified) in the source branch and for **RED** color indicates those are updated (added/modified) in the destination branch. The highlighted lines are the modified lines.
+1. Or, click on a conflicted file to see its related conflict blocks. This tab will display the number of insertions and deletions to each metadata file. The lines highlighted in **GREEN** color indicate those are updated (added/modified) in the source branch and for **RED** color indicates those are updated (added/modified) in the destination branch. The highlighted lines are the modified lines.
 
 <figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

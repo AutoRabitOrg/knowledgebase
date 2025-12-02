@@ -1,5 +1,74 @@
 # Guard Release Notes 25.2
 
+## Guard 25.2.9 Release Notes
+
+**Release Date:** 3 December 2025&#x20;
+
+### New Features&#x20;
+
+#### Embedded Virtual Assistant&#x20;
+
+A new in-product chatbot that provides real-time guidance on product features, navigation, troubleshooting, and best practices.&#x20;
+
+\
+Includes:&#x20;
+
+* Floating in-app widget&#x20;
+* Natural language Q\&A&#x20;
+* Documentation-backed responses&#x20;
+* Smart fallback and escalation to Support&#x20;
+
+### Enhancements&#x20;
+
+#### Permissions Explorer Enhancements&#x20;
+
+**Permission History**&#x20;
+
+A new Permission History feature allows users to select one or multiple permissions and view history of all modification events across profiles, permission sets, and permission set groups. Results are auto sorted by permission name for streamlined review.&#x20;
+
+**Alternative View by Profile/Permission Set**&#x20;
+
+A new view selector supports switching between:&#x20;
+
+* Matching Users (default)&#x20;
+* Matching Profiles&#x20;
+* Matching Permission Sets&#x20;
+* Matching Permission Set Groups&#x20;
+
+Available in both Permissions Explorer and Explore Object Access.&#x20;
+
+#### Session-Wide Org Preselection&#x20;
+
+Selecting a Salesforce org in any feature now auto-selects it across all features for the duration of the session. Logging out clears the selection.&#x20;
+
+#### Salesforce Orgs Accessible from Main Menu&#x20;
+
+Salesforce orgs are now directly accessible from the main navigation menu, improving discoverability and reducing navigation steps.&#x20;
+
+#### Tenant Name Displayed in UI&#x20;
+
+Users can now see their tenant's name next to the Release version in the bottom-left corner of the interface, providing better environment awareness.&#x20;
+
+#### Spring Boot Upgrade
+
+The platform has been upgraded to Spring Boot 4.0 for enhanced performance, security, and framework stability. &#x20;
+
+### Bug Fixes&#x20;
+
+#### Missing Salesforce Field&#x20;
+
+User Activity Monitoring now works even in orgs missing the User.LastPasswordChangeDate field, preventing GQL errors.&#x20;
+
+#### **Risk Assessment**&#x20;
+
+Multiple issues have been fixed, including:&#x20;
+
+* Incomplete Risk Assessment results
+* Failure to refresh after Permission Explorer errors&#x20;
+* Errors parsing Salesforce API usage statistics&#x20;
+
+***
+
 ## Guard 25.2.8 Release Notes&#x20;
 
 **Release Date:  26 November 2025**&#x20;

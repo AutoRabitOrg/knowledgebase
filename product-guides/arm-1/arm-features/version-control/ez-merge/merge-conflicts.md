@@ -22,25 +22,25 @@ To do so,
 1. Go to the **Commits** screen.&#x20;
 2. Search for your merge label that has a conflict. Click on the **Resolve Conflict** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.28.02.png" alt=""><figcaption></figcaption></figure>
 
-3. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
+1. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-4.  To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
+1. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
+   * ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
+   * ![](<../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
 
-    * ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
-    * ![](<../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.38.26 1.png" alt="" width="363"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
-5. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Tree view** displays the parent-child relationships of the conflicted/merged files.
+1. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Tree view** displays the parent-child relationships of the conflicted/merged files.
 
-<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="549"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.40.06.png" alt="" width="375"><figcaption></figcaption></figure>
 
-6. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
+1. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
 
-<figure><img src="../../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="533"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt="" width="362"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** If there is a conflict related to file tree, then GIT shows that the file does not have any conflicts.

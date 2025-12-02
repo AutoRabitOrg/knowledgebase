@@ -56,18 +56,18 @@ To improve coverage, we enhanced the rule logic to include these Assert class sc
 \
 If you just want a test to halt after finding an error, use the System.assert(false, 'message') or Assert.isFalse(false, 'message') methods and provide an indication message of why it did.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Verified the following scenarios are working as expected:
 
 * Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
 * Compliant scenarios have been tested. (by using only string values).
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (14).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (12).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 

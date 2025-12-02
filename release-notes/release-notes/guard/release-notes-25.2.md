@@ -10,7 +10,6 @@
 
 A new in-product chatbot that provides real-time guidance on product features, navigation, troubleshooting, and best practices.&#x20;
 
-\
 Includes:&#x20;
 
 * Floating in-app widget&#x20;

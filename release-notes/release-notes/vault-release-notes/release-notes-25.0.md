@@ -1,5 +1,39 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date: 17 December 2025**
+
+#### **Enhancement: Upgraded Data Loading to Salesforce Bulk API 2.0** <a href="#enhancement-upgraded-data-loading-to-salesforce-bulk-api-2.0" id="enhancement-upgraded-data-loading-to-salesforce-bulk-api-2.0"></a>
+
+Vault’s data loading operations have been upgraded from **Salesforce Bulk API 1.0** to **Bulk API 2.0**. This enhancement delivers improved handling of large data volumes, and more reliable error reporting. The update increases overall performance and efficiency in data loading workflows, resulting in a smoother user experience and improved operational reliability.
+
+#### **Search and Filter Panel for Schema Objects** <a href="#search-and-filter-panel-for-schema-objects" id="search-and-filter-panel-for-schema-objects"></a>
+
+A new search and filtering panel makes it easier to locate objects, navigate complex relationships, and focus only on the schema elements that matter. This improvement helps users quickly identify required parent or child objects and reduces the effort needed to work within large data structures.
+
+<figure><img src="../../../.gitbook/assets/Release Notes Screenshot - 0 (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/Release Notes Screenshot - 1.png" alt=""><figcaption></figcaption></figure>
+
+#### **Vulnerability Patches Updated** <a href="#vulnerability-patches-updated" id="vulnerability-patches-updated"></a>
+
+Addressed customer-reported vulnerabilities in the ARVault 25.2 release by applying the required security patches. This update strengthens platform security and ensures continued compliance with the latest security standards.
+
+#### **Improved Large Dataset Export Handling** <a href="#improved-large-dataset-export-handling" id="improved-large-dataset-export-handling"></a>
+
+Vault now supports exporting up to **1 million records per Excel file**, automatically splitting large datasets into multiple files and packaging them into a single ZIP. This ensures exported data remains accessible and avoids Excel size limitations.
+
+#### Improvements to Masking Job Handling and Automation Controls <a href="#improvements-to-masking-job-handling-and-automation-controls" id="improvements-to-masking-job-handling-and-automation-controls"></a>
+
+* **Disabled the delete option for in-progress masking jobs** to ensure that active jobs cannot be removed while execution is underway.
+* **Corrected automation rule handling** by using proper object API names, ensuring triggers and validation rules are disabled during masking.
+* **No product changes made** for extended job duration, as the issue was not reproducible and appears to be Salesforce-related.
+
+#### **SSO Metadata File Upload Failure** <a href="#sso-metadata-file-upload-failure" id="sso-metadata-file-upload-failure"></a>
+
+Resolved an issue where SSO metadata file uploads were failing. The upload process has been updated, and SSO configuration via metadata file now works as expected.
+
 ## Vault Release Notes 25.2.3 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 26 November 2025**

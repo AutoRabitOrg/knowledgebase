@@ -34,7 +34,7 @@ To do so,
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.38.26 1.png" alt="" width="363"><figcaption></figcaption></figure>
 
-1. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Tree view** displays the parent-child relationships of the conflicted/merged files.
+1. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Show Path** displays the parent-child relationships of the conflicted/merged files.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.40.06.png" alt="" width="375"><figcaption></figcaption></figure>
 

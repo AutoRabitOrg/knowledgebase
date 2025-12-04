@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # IDP Group Mapping
 
 {% hint style="info" %}

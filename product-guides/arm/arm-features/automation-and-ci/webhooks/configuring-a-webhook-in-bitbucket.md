@@ -16,6 +16,20 @@ Updated URL: [https://na25.autorabit.com/api/webhook/v2/\<OrgName>/trigger-scm-p
 Unless you update the Payload URL, you might face pull request/trigger build-on-commit jobs triggering.
 {% endhint %}
 
+## Creating an API Token
+
+1. Go to Settings → **Account settings** (Atlassian account settings)
+2. Go to **Security** → **API tokens with scope**
+3.  Once the API token is generated, the customer should use the Bitbucket repository URL while configuring the connection.
+
+    **Example:**\
+    Repo URL: [`https://bitbucket.org/pavankumar_kodange/arm-test.git`](https://bitbucket.org/pavankumar_kodange/arm-test.git)
+
+    * **Username:** `pavankumar_kodange`
+    * **Password:** _(API token generated from Atlassian Account Settings → Security → API tokens with scope)_
+
+
+
 ## Create a Webhook API Token from ARM
 
 1. Log in to ARM.

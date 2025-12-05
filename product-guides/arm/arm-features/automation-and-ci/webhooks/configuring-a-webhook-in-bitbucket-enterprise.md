@@ -8,6 +8,20 @@ description: The following documentation is specific to Bitbucket Enterprise cus
 As of 9 September 2025, app username and passwords have been deprecated as a type of authentication method. However, as of 9 June 2026, all existing app passwords will be disabled. Users are required to create API tokens and migrate this function prior to the deadline to avoid disruptions. [https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/](https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/)
 {% endhint %}
 
+## Creating an API Token
+
+1. Go to Settings → **Account settings** (Atlassian account settings)
+2. Go to **Security** → **API tokens with scope**
+3.  Once the API token is generated, the customer should use the Bitbucket repository URL while configuring the connection.
+
+    **Example:**\
+    Repo URL: [`https://bitbucket.org/pavankumar_kodange/arm-test.git`](https://bitbucket.org/pavankumar_kodange/arm-test.git)
+
+    * **Username:** `pavankumar_kodange`
+    * **Password:** _(API token generated from Atlassian Account Settings → Security → API tokens with scope)_
+
+
+
 ## A. Create a Webhook API Token in ARM
 
 1. Log in to ARM.

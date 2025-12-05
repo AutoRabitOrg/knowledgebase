@@ -18,7 +18,7 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 
 ## Creating an API Token
 
-1. Go to Settings → **Account settings** (Atlassian account settings)
+1. Go to **Settings** → **Account settings** (Atlassian account settings)
 2. Go to **Security** → **API tokens with scope**
 3.  Once the API token is generated, the customer should use the Bitbucket repository URL while configuring the connection.
 

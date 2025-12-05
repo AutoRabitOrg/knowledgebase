@@ -8,6 +8,9 @@ Support Case: #160228
 
 Resolved an issue where the **IgnoreWarnings** flag from the UI was not passed correctly, causing prevalidation to fail on warnings even when the checkbox was selected. Updated the UI request mapping so the correct value is stored and processed by the backend.
 
+Support Case: #172715\
+"The issue preventing users from selecting the **Release Label** and other options in the **Change Label** module under VC has been resolved by updating the routing mechanism to `router.go`, restoring proper navigation from both the left menu and top bar"
+
 ## ARM Release Notes 25.4.9
 
 **Release Date: 30 November 2025**\

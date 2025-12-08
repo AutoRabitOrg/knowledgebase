@@ -80,7 +80,7 @@ Run the following command to generate a new SSH key pair:
 
 
 
-**Step 7: Authorize the SSH Key with GitHub SSO**
+**Step 7: Authorize the SSH Key with GitHub SSO (Optional)**
 
 1. Under SSH and GPG keys, find the key you just added.
 2. Click the Configure SSO option next to it.

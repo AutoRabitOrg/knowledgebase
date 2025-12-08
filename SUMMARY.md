@@ -115,6 +115,7 @@
       * [Delegating Approvals to Another User](product-guides/arm/arm-administration/user-management/delegate-approvals-to-another-user.md)
       * [Enforcing Single Sign-On (SSO)](product-guides/arm/arm-administration/user-management/enforce-single-sign-on-sso.md)
       * [Exporting User Details](product-guides/arm/arm-administration/user-management/export-users-details.md)
+      * [Generating SSH Keys and Configuring Git Repo Access](product-guides/arm/arm-administration/user-management/generating-ssh-keys-and-configuring-git-repo-access.md)
       * [Managing User Account Settings](product-guides/arm/arm-administration/user-management/manage-users-account-settings.md)
       * [Permissions](product-guides/arm/arm-administration/user-management/arm-user-permissions.md)
       * [Predefined Roles](product-guides/arm/arm-administration/user-management/arm-predefined-roles.md)

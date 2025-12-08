@@ -1,5 +1,21 @@
 # nCino Release Notes 25.4
 
+## nCino + DataLoader Release 25.4.10 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** 07 December 2025
+
+#### **nCino – Deployment History Action Button Fix** <a href="#ncino-deployment-history-action-button-fix" id="ncino-deployment-history-action-button-fix"></a>
+
+A fix has been implemented to restore the functionality of the action button next to the download icon in Deployment History. The button now correctly expands the object set view, as intended.
+
+#### **Dataloader Pro – UI Sync Issue After Bulk Delete** <a href="#dataloader-pro-ui-sync-issue-after-bulk-delete" id="dataloader-pro-ui-sync-issue-after-bulk-delete"></a>
+
+A fix has been implemented to ensure that all jobs are immediately removed from the list after a bulk delete operation. Previously, one job continued to appear until the page was manually refreshed. The job list now updates correctly without requiring a browser refresh.
+
+#### **Login Screen Loading Issue – Template Dependency Optimization** <a href="#login-screen-loading-issue-template-dependency-optimization" id="login-screen-loading-issue-template-dependency-optimization"></a>
+
+A fix has been applied to prevent heap-space and restart issues caused by processing objects with complex parent dependencies during initial template creation. The system now skips non-selected standard and non-nCino package objects, ensuring the login screen loads reliably.
+
 ## nCino + DataLoader Release 25.4.9 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** 30 November 2025

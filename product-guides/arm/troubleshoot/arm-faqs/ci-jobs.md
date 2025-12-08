@@ -125,3 +125,11 @@ This configuration for RecordType PicklistValues option only works in the EZ-Com
 <figure><img src="../../../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
 
 Refer to [How to Configure Record Types Picklist Values](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) for more information.
+
+
+
+### Why is my CI Job failing when using an application token?
+
+The **Application Token** credential type is **not supported for ARM CI Jobs**.\
+It is intended only for **enterprise Jira integration** using a Personal Access Token (PAT).\
+Do **not** configure Application Token as the credential type for CI Jobs. For CI Jobs, use supported SCM credentials (for example, **Username and Password or others**) instead.

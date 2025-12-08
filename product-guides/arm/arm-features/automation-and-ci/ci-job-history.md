@@ -1,6 +1,6 @@
 # CI Job History
 
-CI Job History
+## CI Job History
 
 {% hint style="info" %}
 For the best viewing experience, set your browser zoom level to 80% in Chrome or Firefox.

@@ -24,3 +24,7 @@ For example, even if only a `.csv` file is committed, the CI job includes all fi
 
 **Recommended Approach:**\
 Before committing changes, **manually clean the Static Resource folder** in the branch to ensure only intended files are present. Use **destructive changes** if you need to remove obsolete metadata components.
+
+
+
+For more Frequently Asked Questions on CI Jobs, visit the FAQ page [here](../../troubleshoot/arm-faqs/ci-jobs.md).&#x20;

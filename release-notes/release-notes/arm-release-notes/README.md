@@ -2,24 +2,23 @@
 
 ## ARM Release Notes 25.4.10
 
-**Release Date: 7th December 2025**
+**Release Date: 7 December 2025**
 
-Support Case: #160228
+* Resolved an issue where the **IgnoreWarnings** flag from the UI was not passed correctly, causing prevalidation to fail on warnings even when the checkbox was selected. Updated the UI request mapping so the correct value is stored and processed by the backend.\
+  Support Case: #160228
+* The issue preventing users from selecting the **Release Label** and other options in the **Change Label** module under VC has been resolved by updating the routing mechanism to `router.go`, restoring proper navigation from both the left menu and top bar.\
+  Support Case: #172715
 
-Resolved an issue where the **IgnoreWarnings** flag from the UI was not passed correctly, causing prevalidation to fail on warnings even when the checkbox was selected. Updated the UI request mapping so the correct value is stored and processed by the backend.
-
-Support Case: #172715\
-"The issue preventing users from selecting the **Release Label** and other options in the **Change Label** module under VC has been resolved by updating the routing mechanism to `router.go`, restoring proper navigation from both the left menu and top bar"
+***
 
 ## ARM Release Notes 25.4.9
 
-**Release Date: 30 November 2025**\
-\
-Fixed an issue where scheduled jobs could not be deleted through Environment Provisioning. The system now correctly validates permissions and job eligibility, enabling successful scheduled job removals from target environments.\
-Support Case: #159287
+**Release Date: 30 November 2025**<br>
 
-A performance optimization was implemented to improve how UserVersionControl details are retrieved. Instead of fetching data individually for each user, the system now retrieves the required information in a single bulk operation and processes it efficiently. This significantly reduces load time and restores a responsive user experience in EZ-Merge.\
-Support Case: #158633
+* Fixed an issue where scheduled jobs could not be deleted through Environment Provisioning. The system now correctly validates permissions and job eligibility, enabling successful scheduled job removals from target environments.\
+  Support Case: #159287
+* A performance optimization was implemented to improve how UserVersionControl details are retrieved. Instead of fetching data individually for each user, the system now retrieves the required information in a single bulk operation and processes it efficiently. This significantly reduces load time and restores a responsive user experience in EZ-Merge.\
+  Support Case: #158633
 
 ***
 

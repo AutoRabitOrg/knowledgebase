@@ -24,19 +24,16 @@
 
 ## ARM Release Notes 25.4.8
 
-**Release Date: 23 November 2025**\
-\
-EZ-Merge report timestamps now adjust accurately to each user’s time-zone settings, ensuring Merge Submission, L1 Review, and L2 Review dates display consistently across regions.\
-Support Case: #156046
+**Release Date: 23 November 2025**<br>
 
-CI Job validation behavior has been streamlined so that the Build Now option becomes available in the UI whenever the job’s deploy and overall status reach a completed state, providing a more consistent experience.\
-Support Case: #158357
-
-Backup-to-VC jobs now present the appropriate Git message during push scenarios, such as permission or hook restrictions, while clearly indicating “No modifications” only when no updates are present—offering more accurate visibility into job outcomes.\
-Support Case: #159296
-
-Delta commit results now reflect completion accurately, ensuring that the commit status aligns with the actual execution of the delta operation.\
-Support Case: #150240
+* EZ-Merge report timestamps now adjust accurately to each user’s time-zone settings, ensuring Merge Submission, L1 Review, and L2 Review dates display consistently across regions.\
+  Support Case: #156046
+* CI Job validation behavior has been streamlined so that the Build Now option becomes available in the UI whenever the job’s deploy and overall status reach a completed state, providing a more consistent experience.\
+  Support Case: #158357
+* Backup-to-VC jobs now present the appropriate Git message during push scenarios, such as permission or hook restrictions, while clearly indicating “No modifications” only when no updates are present—offering more accurate visibility into job outcomes.\
+  Support Case: #159296
+* Delta commit results now reflect completion accurately, ensuring that the commit status aligns with the actual execution of the delta operation.\
+  Support Case: #150240
 
 ***
 

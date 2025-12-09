@@ -88,7 +88,7 @@ _For details, see the dedicated_ [_HashiCorp Vault guide_](arm-credential-manage
 
 ***
 
-### Application Token (Enterprise Only) <a href="#application-token-for-enterprise-users-only" id="application-token-for-enterprise-users-only"></a>
+### Application Token (for Enterprise Users Only) <a href="#application-token-for-enterprise-users-only" id="application-token-for-enterprise-users-only"></a>
 
 Connect ARM to Jira via **Personal Access Token (PAT)** to meet enterprise compliance.
 
@@ -98,6 +98,12 @@ Connect ARM to Jira via **Personal Access Token (PAT)** to meet enterprise compl
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1938).png" alt="" width="375"><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+**Important Note:** The **Application Token** credential type is **not supported for ARM CI Jobs**.\
+It is intended only for **enterprise Jira integration** using a Personal Access Token (PAT).\
+Do **not** configure Application Token as the credential type for CI Jobs. For CI Jobs, use supported SCM credentials (for example, **Username and Password or others**) instead.
+{% endhint %}
 
 Need PAT access? Email **support@autorabit.com**.\
 How to create a PAT in Jira: [Atlassian docs](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html).

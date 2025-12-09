@@ -4,6 +4,8 @@ description: CodeScan Cloud Release Notes
 
 # Cloud Release Notes 25.1
 
+{% @mailchimp/mailchimpSubscribe cta="CodeScan Release Notes Mailing List!" %}
+
 ## Integration Requirements for CodeScan v25.1.0+
 
 Please note that there are updated requirements for customers who are using one or more of the following to integrate with CodeScan:

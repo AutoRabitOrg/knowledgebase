@@ -6,7 +6,7 @@
 
 #### **Enhancement: Upgraded Data Loading to Salesforce Bulk API 2.0** <a href="#enhancement-upgraded-data-loading-to-salesforce-bulk-api-2.0" id="enhancement-upgraded-data-loading-to-salesforce-bulk-api-2.0"></a>
 
-Vault’s data loading operations have been upgraded from **Salesforce Bulk API 1.0** to **Bulk API 2.0**. This enhancement delivers improved handling of large data volumes, and more reliable error reporting. The update increases overall performance and efficiency in data loading workflows, resulting in a smoother user experience and improved operational reliability.
+Vault’s data loading operations have been upgraded from **Salesforce Bulk API 1.0** to **Bulk API 2.0**. This enhancement delivers improved handling of large data volumes and more reliable error reporting. The update increases overall performance and efficiency in data loading workflows, resulting in a smoother user experience and improved operational reliability.
 
 #### **Search and Filter Panel for Schema Objects** <a href="#search-and-filter-panel-for-schema-objects" id="search-and-filter-panel-for-schema-objects"></a>
 
@@ -18,7 +18,7 @@ A new search and filtering panel makes it easier to locate objects, navigate com
 
 #### **Vulnerability Patches Updated** <a href="#vulnerability-patches-updated" id="vulnerability-patches-updated"></a>
 
-Addressed customer-reported vulnerabilities in the ARVault 25.2 release by applying the required security patches. This update strengthens platform security and ensures continued compliance with the latest security standards.
+Addressed customer-reported vulnerabilities in the Vault 25.2 release by applying the required security patches. This update strengthens platform security and ensures continued compliance with the latest security standards.
 
 #### **Improved Large Dataset Export Handling** <a href="#improved-large-dataset-export-handling" id="improved-large-dataset-export-handling"></a>
 
@@ -33,6 +33,8 @@ Vault now supports exporting up to **1 million records per Excel file**, automat
 #### **SSO Metadata File Upload Failure** <a href="#sso-metadata-file-upload-failure" id="sso-metadata-file-upload-failure"></a>
 
 Resolved an issue where SSO metadata file uploads were failing. The upload process has been updated, and SSO configuration via metadata file now works as expected.
+
+***
 
 ## Vault Release Notes 25.2.3 <a href="#heading-title-text" id="heading-title-text"></a>
 

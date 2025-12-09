@@ -2,7 +2,7 @@
 
 ## Guard 25.2.9 Release Notes
 
-**Release Date:** 3 December 2025&#x20;
+**Release Date:  3 December 2025**&#x20;
 
 ### New Features&#x20;
 

@@ -4,10 +4,6 @@
 
 **Release Date: 17 December 2025**
 
-#### **Enhancement: Upgraded Data Loading to Salesforce Bulk API 2.0** <a href="#enhancement-upgraded-data-loading-to-salesforce-bulk-api-2.0" id="enhancement-upgraded-data-loading-to-salesforce-bulk-api-2.0"></a>
-
-Vault’s data loading operations have been upgraded from **Salesforce Bulk API 1.0** to **Bulk API 2.0**. This enhancement delivers improved handling of large data volumes and more reliable error reporting. The update increases overall performance and efficiency in data loading workflows, resulting in a smoother user experience and improved operational reliability.
-
 #### **Search and Filter Panel for Schema Objects** <a href="#search-and-filter-panel-for-schema-objects" id="search-and-filter-panel-for-schema-objects"></a>
 
 A new search and filtering panel makes it easier to locate objects, navigate complex relationships, and focus only on the schema elements that matter. This improvement helps users quickly identify required parent or child objects and reduces the effort needed to work within large data structures.

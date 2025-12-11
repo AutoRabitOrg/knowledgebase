@@ -1,5 +1,36 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.4.11
+
+Release Date: 14th December 2025.
+
+**Internal Ticket:**
+
+**Fix for Duplicate Deployment Logs in Org Sync History:**\
+Resolved an issue where performing actions like _Add to Destination Org_ or _Delete from Destination Org_ followed by _Synchronize Orgs_ with **Validate Deploy** enabled resulted in duplicate deployment logs for the same label. The system now correctly generates a single log per deployment.
+
+**Internal Ticket:**
+
+**Fix for Team Name Validation and Warning Message:**\
+Addressed an issue where an empty warning message appeared and the feature did not work in both the old and new UI. Validation has been enhanced to ensure team names cannot contain spaces, and the warning message now displays correctly.
+
+**Internal Ticket:**
+
+**Fix for Merge Criteria Validation in Merge Settings**\
+Resolved an issue where merge settings could be saved even when no merge criteria options were selected. The system now correctly prevents saving unless at least one option is chosen when merge criteria are enabled, ensuring proper validation.
+
+\
+**Support Ticket: #161454**
+
+**Fix for Field Persistence Issues When Editing CI Jobs:**\
+Resolved an issue where editing a CI Job with a configured Parallel Processor caused certain fields to clear unexpectedly and triggered validation errors. Additionally, updating the Baseline Revision previously cleared the Package Directory. The **Client ID**, **Client Secret**, and **Access Token URL** fields now persist correctly, and the editing workflow functions as expected.
+
+\
+**Support Ticket: #158630**
+
+**Fix for Incorrect File Count and Missing Metadata in EZ Commit Code Scan**\
+Addressed an issue where EZ Commit using **“Only Newly Added Supported Metadata Types”** produced inaccurate scan results. Some metadata types—such as Custom Fields and Permission Sets—were not included in the static code analysis, and the SCA logs always reported **“Total number of files identified for static analysis: 1”** regardless of the actual count. The logic has been updated to correctly include Custom Fields and Permission Sets during analysis and to display an accurate file count in the logs.
+
 ## ARM Release Notes 25.4.10
 
 **Release Date: 7 December 2025**

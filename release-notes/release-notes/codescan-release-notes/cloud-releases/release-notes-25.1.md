@@ -20,6 +20,216 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.16
+
+**Release Date: 14 December 2025**
+
+### **Summary**
+
+CodeScan 25.1.16 is comprised of the following 4 components:
+
+* 2 Rule Enhancements
+* 2 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Rule Enhancements
+
+**1.     Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
+
+{Rule ID: sf: ServerSideRequestForgery}
+
+**Description**:
+
+Update the issue description for the sf:ServerSideRequestForgery rule to include data flow information once tracking is implemented.
+
+Highlight how untrusted user input influences outbound requests or endpoint URLs used in HttpRequest.setEndpoint() or similar methods.
+
+**Hypothesis**:\
+Providing a traceable flow from input source to request endpoint will help developers clearly identify unsafe URL usage leading to SSRF vulnerabilities.
+
+**Value/Purpose**:\
+Improves clarity and helps prioritize high-risk SSRF issues by showing the complete journey of untrusted data to outbound request logic.
+
+Code Example:
+
+public class Negative {
+
+&#x20; public void otherMethod() {
+
+&#x20;   String oneMore = 'somethingHere';
+
+&#x20;   init(oneMore);
+
+&#x20; }
+
+&#x20;
+
+&#x20; public PageReference init(String Lastname){
+
+&#x20;     String FirstName = getName();
+
+&#x20;     try {
+
+&#x20;       HttpRequest req = new HttpRequest();
+
+&#x20;       req.setEndpoint('callout:Third\_Party\_Authorization/v1'+Lastname);
+
+&#x20;       request.setMethod ('POST');
+
+&#x20;     }
+
+&#x20; }
+
+}
+
+&#x20;
+
+**Existing Message**:
+
+Sanitize input to avoid possible SSRF.  Data Flow Trace: Negative.otherMethod: line 4
+
+&#x20;
+
+**Updated Message**:
+
+Sanitize input to avoid possible SSRF.  Data Flow Trace -
+
+&#x20;   CALL (Negative.otherMethod: line 4)
+
+&#x20;
+
+Make sure to check for internal methods also (E.g. FirstName variable on line 8 if used in the set endpoint call on line 11)
+
+<figure><img src="../../../../.gitbook/assets/image (2281).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2282).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2283).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2.     Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
+
+**Description**:
+
+Update the issue description for sf:ResourceInjection to display how untrusted input propagates to resource-loading statements, such as dynamic resource identifiers or file references.\
+The new description should include the identified source and sink with a trace of intermediate transformations.
+
+**Hypothesis**:\
+If developers can visualize which variable or parameter is used to form a resource path without sanitization, they will better understand the exploit path and fix it faster.
+
+**Value/Purpose**:\
+Increases the usability and accuracy of Resource Injection findings by offering transparent, contextual information about the data flow chain.
+
+**Acceptance Criteria**
+
+Sanitize input to avoid possible resource injection. Data Flow Trace : {Class.method}: line {line number} --> {Class.method}: line {line number}
+
+Example:
+
+Sanitize input to avoid possible resource injection. Data Flow Trace : APIVersionsRetiredTrigger.processOldAPIVersionReferences: line 88 --> APIVersionsRetiredTrigger.processOldAPIVersionReferences: line 92
+
+
+
+Code Example:
+
+public class Negative {
+
+&#x20; public void otherMethod() {
+
+&#x20;   String oneMore = 'somethingHere';
+
+&#x20;   init(oneMore);
+
+&#x20; }
+
+&#x20;
+
+&#x20; public PageReference init(String Lastname){
+
+&#x20;     String FirstName = getName();
+
+&#x20;     try {
+
+&#x20;       HttpRequest req = new HttpRequest();
+
+&#x20;       req.setEndpoint('/Third\_Party\_Authorization/v1'+Lastname);
+
+&#x20;       request.setMethod ('POST');
+
+&#x20;     }
+
+&#x20; }
+
+}
+
+**Existing Message**:
+
+Sanitize input to avoid possible resource injection.  Data Flow Trace: Negative.otherMethod: line 4
+
+**Updated Message**:
+
+Sanitize input to avoid possible resource injection. Data Flow Trace -
+
+&#x20;   CALL (Negative.otherMethod: line 4)
+
+&#x20;
+
+Make sure to check for internal methods also (e.g., FirstName variable on line 8 if used in the set endpoint call on line 11)
+
+<figure><img src="../../../../.gitbook/assets/image (2284).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2285).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2286).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2287).png" alt=""><figcaption></figcaption></figure>
+
+### Rule Deprecations
+
+There are no Rule Deprecations in this release.
+
+### Fixes
+
+**1.     Fixed an issue in the APEX rule “Field Level Security Vulnerabilities**”
+
+{Rule ID: sf:FieldLevelSecurity}
+
+Several customers reported that they were receiving the error message “Permissions should be checked before accessing resource SObject” even though they were providing suitable permissions using DML and/or SOQL statements.  It was determined that CodeScan was not recognizing both DML and SOQL statements.  As such, we overhauled the rule logic to address this issue and have ensured that CodeScan is now recognizing the AccessLevel.\* commands in DML calls.
+
+We have validated this new logic and verified that no vulnerabilities were raised (which is the expected and correct behavior for this updated rule logic).
+
+<figure><img src="../../../../.gitbook/assets/image (2288).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../../.gitbook/assets/image (2289).png" alt=""><figcaption></figcaption></figure>
+
+**2.     Fixed an issue in the APEX rule “Resource Injection”**
+
+{Rule ID: sf: ResourceInjection}
+
+Resource injections occur when user-controllable data is used to specify a resource identifier without proper validation. This rule identifies potential resource injection vulnerabilities by detecting unsafe URL construction for internal network requests. Input can be cleansed by using Id.valueOf, Date.valueOf, etc. Or escaped using String.escapeSingleQuotes().
+
+However, several customers reported that this rule was firing improperly, even when the recommended methods have been applied. After reviewing, we confirmed cases of false positives and determined that the rule required a minor update to the rule logic.
+
+We verified the new logic and validated that the rule is now working as originally designed.
+
+<figure><img src="../../../../.gitbook/assets/image (2290).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## CodeScan Release 25.1.15
 
 **Release Date: 30 November 2025**

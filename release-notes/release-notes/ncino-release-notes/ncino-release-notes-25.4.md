@@ -1,5 +1,31 @@
 # nCino Release Notes 25.4
 
+## nCino Release Notes 25.4.11 <a href="#heading-title-text" id="heading-title-text"></a>
+
+#### **DL Pro – Reference-Based Object Migration**
+
+A fix has been implemented to ensure that objects with reference dependencies are no longer skipped during DL Pro execution. The updated handling correctly processes referenced objects, ensuring complete and consistent data migration when reference relationships are involved.
+
+#### **DataLoader Extract – Query Validation Performance**
+
+Improved the DataLoader extract flow by optimizing query validation handling. This enhancement prevents long-running validation delays and ensures extract jobs proceed reliably even for large datasets.
+
+#### **CI Jobs – Backup Snapshot Download**
+
+Resolved an issue where backup snapshot downloads failed with a “File not found” error for CI jobs using a baseline source. Backup artifacts are now generated and retrieved correctly, ensuring reliable snapshot access after job execution.
+
+#### **Feature Deployment – Deployment Status Handling**
+
+Fixed an issue where redeployments using selective deployment remained stuck in the _In Progress_ state despite successful completion. Deployment iterations are now correctly finalized by saving only the selected objects, ensuring accurate status updates in Deployment History.
+
+#### **DataLoader – Large File Download Handling**
+
+Fixed an issue where large extract jobs produced invalid or incomplete CSV downloads. Extract results are now correctly packaged and downloaded in ZIP format, ensuring reliable access to full datasets for high-volume jobs.
+
+#### **Feature Commit – CSV File Ordering**
+
+Resolved an issue where object CSV files committed to version control were not consistently sorted. CSV files are now committed in a deterministic, sorted order, ensuring consistency across Feature Deployments and CI Jobs.
+
 ## nCino + DataLoader Release 25.4.10 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** **07 December 2025**

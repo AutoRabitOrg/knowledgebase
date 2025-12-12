@@ -96,6 +96,14 @@ Click on “Success Count” for the pop-up to appear. A download option will be
 
 <figure><img src="../../../../../.gitbook/assets/image (1538).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+#### Record ID Resolution in Job Error Results
+
+In some scenarios, Salesforce may return **destination record IDs** in job error results instead of source record IDs. This behavior typically occurs when errors are generated after records are created or partially processed in the destination org.
+
+When this happens, the application first attempts to resolve the record ID in the **source org** by default. If the record is not found, the system automatically checks the **destination org** as a secondary fallback. This ensures that error records can still be identified and reviewed accurately.
+{% endhint %}
+
 **Deployment Log**
 
 View individual deployment steps that are carried out under the **Deployment Log** section. Each deployment has a number of "steps", which contain a subset of logs, such logs can be seen here. You can either view compete log information in the user interface or save it to your local machine using ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-297.png)icon. The file usually gets downloaded in **ZIP** format.&#x20;

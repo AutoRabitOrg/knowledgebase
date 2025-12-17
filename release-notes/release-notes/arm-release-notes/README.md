@@ -2,21 +2,19 @@
 
 ## ARM Release Notes 25.4.12
 
-**Release Date:** Dec 21, 202&#x35;**.**
-
-**Release Notes:**
+**Release Date: 21 December 2025**
 
 **User Story:  Commit Retrieval Issue**
 
-We’ve introduced a new **feature flag** that allows customers to continue using the **legacy “Select Manually” behaviour** in EZ Commit.
+We’ve introduced a new **feature flag** that allows customers to continue using the **legacy “Select Manually” behavior** in EZ Commit.
 
-When this feature is enabled, selecting **“Select Manually”** will retrieve **all detected changes across all authors**, regardless of the author selected in the user interface. This helps support existing workflows that depend on the earlier behaviour for managing metadata dependencies.
+When this feature is enabled, selecting **“Select Manually”** will retrieve **all detected changes across all authors**, regardless of the author selected in the user interface. This helps support existing workflows that depend on the earlier behavior for managing metadata dependencies.
 
 If the feature is not enabled, EZ Commit will continue to behave as it does today, retrieving changes only for the selected author.
 
 **Support Case: #172610**
 
-Subject:EZ Commit – Package Manifest Selection Fix
+Subject: EZ Commit – Package Manifest Selection Fix
 
 We fixed an issue where component selections made using **“Select All”** in the Package Manifest flow were reset when navigating between pages. Selections now persist correctly across all pages, improving bulk commits for larger packages in both **Autodraft** and **Package Manifest** workflows.
 
@@ -32,9 +30,11 @@ Vlocity Component Selection Warning Fixed
 
 We fixed an issue where a misleading warning message, **“Please select at least one metadata type or member,”** was shown during Vlocity component deployments after users selected all members of a metadata type and then deselected a few. The selection logic has been improved to correctly reflect user choices and prevent this unnecessary warning.\\
 
+***
+
 ## ARM Release Notes 25.4.11
 
-Release Date: 14th December 2025.
+**Release Date: 14 December 2025**
 
 **Internal Ticket:**
 
@@ -62,6 +62,8 @@ Resolved an issue where editing a CI Job with a configured Parallel Processor ca
 
 **Fix for Incorrect File Count and Missing Metadata in EZ Commit Code Scan**\
 Addressed an issue where EZ Commit using **“Only Newly Added Supported Metadata Types”** produced inaccurate scan results. Some metadata types—such as Custom Fields and Permission Sets—were not included in the static code analysis, and the SCA logs always reported **“Total number of files identified for static analysis: 1”** regardless of the actual count. The logic has been updated to correctly include Custom Fields and Permission Sets during analysis and to display an accurate file count in the logs.
+
+***
 
 ## ARM Release Notes 25.4.10
 

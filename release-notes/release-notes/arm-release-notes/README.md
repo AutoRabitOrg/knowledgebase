@@ -1,5 +1,37 @@
 # ARM Release Notes
 
+## ARM Release Notes 25.4.12
+
+**Release Date:** Dec 21, 202&#x35;**.**
+
+**Release Notes:**
+
+**User Story:  Commit Retrieval Issue**
+
+We’ve introduced a new **feature flag** that allows customers to continue using the **legacy “Select Manually” behaviour** in EZ Commit.
+
+When this feature is enabled, selecting **“Select Manually”** will retrieve **all detected changes across all authors**, regardless of the author selected in the user interface. This helps support existing workflows that depend on the earlier behaviour for managing metadata dependencies.
+
+If the feature is not enabled, EZ Commit will continue to behave as it does today, retrieving changes only for the selected author.
+
+**Support Case: #172610**
+
+Subject:EZ Commit – Package Manifest Selection Fix
+
+We fixed an issue where component selections made using **“Select All”** in the Package Manifest flow were reset when navigating between pages. Selections now persist correctly across all pages, improving bulk commits for larger packages in both **Autodraft** and **Package Manifest** workflows.
+
+**Support Case: #169831**
+
+Subject: Deployment Logs Display Restored After Quick Deploy
+
+We fixed an issue introduced after the instance upgrade where **deployment logs were not visible in the UI** following a **Quick Deploy**. Customers can now view both **validation and deployment logs** as expected, restoring full visibility into deployment activity.
+
+&#x20;**Support Case: #169858**
+
+Vlocity Component Selection Warning Fixed
+
+We fixed an issue where a misleading warning message, **“Please select at least one metadata type or member,”** was shown during Vlocity component deployments after users selected all members of a metadata type and then deselected a few. The selection logic has been improved to correctly reflect user choices and prevent this unnecessary warning.\\
+
 ## ARM Release Notes 25.4.11
 
 Release Date: 14th December 2025.

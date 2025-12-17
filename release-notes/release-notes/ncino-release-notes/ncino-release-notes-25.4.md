@@ -4,9 +4,9 @@
 
 **Release Date:** **14 December 2025**
 
-#### **DL Pro – Reference-Based Object Migration**
+#### **DataLoader Pro – Reference-Based Object Migration**
 
-A fix has been implemented to ensure that objects with reference dependencies are no longer skipped during DL Pro execution. The updated handling correctly processes referenced objects, ensuring complete and consistent data migration when reference relationships are involved.
+A fix has been implemented to ensure that objects with reference dependencies are no longer skipped during DataLoader Pro execution. The updated handling correctly processes referenced objects, ensuring complete and consistent data migration when reference relationships are involved.
 
 #### **DataLoader Extract – Query Validation Performance**
 

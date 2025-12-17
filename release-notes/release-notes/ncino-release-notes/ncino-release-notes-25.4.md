@@ -28,6 +28,8 @@ Fixed an issue where large extract jobs produced invalid or incomplete CSV downl
 
 Resolved an issue where object CSV files committed to version control were not consistently sorted. CSV files are now committed in a deterministic, sorted order, ensuring consistency across Feature Deployments and CI Jobs.
 
+***
+
 ## nCino + DataLoader Release 25.4.10 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** **07 December 2025**

@@ -2,8 +2,6 @@
 
 ## Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:**
-
 #### **Search and Filter Panel for Schema Objects** <a href="#search-and-filter-panel-for-schema-objects" id="search-and-filter-panel-for-schema-objects"></a>
 
 A new search and filtering panel makes it easier to locate objects, navigate complex relationships, and focus only on the schema elements that matter. This improvement helps users quickly identify required parent or child objects and reduces the effort needed to work within large data structures.

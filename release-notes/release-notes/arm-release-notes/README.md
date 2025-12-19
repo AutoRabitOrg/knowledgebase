@@ -24,11 +24,11 @@ Subject: Deployment Logs Display Restored After Quick Deploy
 
 We fixed an issue introduced after the instance upgrade where **deployment logs were not visible in the UI** following a **Quick Deploy**. Customers can now view both **validation and deployment logs** as expected, restoring full visibility into deployment activity.
 
-&#x20;**Support Case: #169858**
+**Support Case: #169858**
 
 Vlocity Component Selection Warning Fixed
 
-We fixed an issue where a misleading warning message, **“Please select at least one metadata type or member,”** was shown during Vlocity component deployments after users selected all members of a metadata type and then deselected a few. The selection logic has been improved to correctly reflect user choices and prevent this unnecessary warning.\\
+We fixed an issue where a misleading warning message, **“Please select at least one metadata type or member,”** was shown during Vlocity component deployments after users selected all members of a metadata type and then deselected a few. The selection logic has been improved to correctly reflect user choices and prevent this unnecessary warning.
 
 ***
 

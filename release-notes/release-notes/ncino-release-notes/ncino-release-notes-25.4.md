@@ -2,7 +2,7 @@
 
 ## nCino Release Notes 25.4.13 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date:** 28 **December 2025**
+**Release Date:** **28 December 2025**
 
 **Query Length Handling Improvement**
 
@@ -12,9 +12,11 @@ Resolved an issue where _MALFORMED\_QUERY_ exceptions were logged when queries e
 
 Fixed an issue where attachment migration failed during Feature Deployments when Rollback was enabled. The update ensures proper handling of bucket object values, preventing errors and allowing migrations to complete successfully.
 
-## nCino Release Notes 25.4.11 <a href="#heading-title-text" id="heading-title-text"></a>
+***
 
-**Release Date:** 2**1 December 2025**
+## nCino Release Notes 25.4.12 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** **21 December 2025**
 
 **Job Error Record ID Handling**
 
@@ -31,6 +33,8 @@ Fixed an issue where Salesforce records with blank lookup fields failed during n
 **Field Mapping UI – API and Label Name Display**
 
 Updated the mapping UI to display field API names directly, with corresponding label names shown on hover. This improves clarity during mapping while retaining access to user-friendly labels.
+
+***
 
 ## nCino Release Notes 25.4.11 <a href="#heading-title-text" id="heading-title-text"></a>
 

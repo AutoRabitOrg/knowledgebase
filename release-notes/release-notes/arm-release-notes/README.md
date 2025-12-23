@@ -2,7 +2,7 @@
 
 ## ARM Release Notes 25.4.13
 
-**Release Date: 28th December 2025**
+**Release Date: 28 December 2025**
 
 **Support Case: #150240**
 
@@ -10,15 +10,17 @@ Resolved an issue where the Delta step was incorrectly marked as failed during c
 
 **Support Case: #165779**
 
-Fixed an issue where the validation deployment report was not visible for a failed CI job build due to a missing deployment Async ID. The backend logic has been updated to handle such exceptions gracefully, ensuring deployment reports are displayed correctly in CI Job deployment reports<br>
+Fixed an issue where the validation deployment report was not visible for a failed CI job build due to a missing deployment Async ID. The backend logic has been updated to handle such exceptions gracefully, ensuring deployment reports are displayed correctly in CI Job deployment reports
 
 **Support Case: #161304**
 
-Resolved an issue where CI jobs did not detect picklist value name changes even when _Include Picklist Modification&#x73;_&#x77;as enabled. Backend logic has been updated to correctly track picklist value changes based on manageable states, ensuring CI jobs now pick up these updates reliabl**y.**\
+Resolved an issue where CI jobs did not detect picklist value name changes even when _Include Picklist Modifications_ was enabled. Backend logic has been updated to correctly track picklist value changes based on manageable states, ensuring CI jobs now pick up these updates reliabl**y.**\
 \
 **Support Case: #161295**
 
 Fixed an issue where scheduled CI jobs for rebasing hotfix and pre-prod branches consistently failed due to a null pointer exception. The update improves CI job stability by correctly handling backup-to-VC flows with auto-switch to bulk retrieve service when metadata governor limits are hit, including support for Custom Objects and Custom Fields.
+
+***
 
 ## ARM Release Notes 25.4.12
 

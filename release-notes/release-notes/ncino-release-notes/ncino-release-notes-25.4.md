@@ -1,5 +1,37 @@
 # nCino Release Notes 25.4
 
+## nCino Release Notes 25.4.13 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** 28 **December 2025**
+
+**Query Length Handling Improvement**
+
+Resolved an issue where _MALFORMED\_QUERY_ exceptions were logged when queries exceeded the maximum length. Queries are now split and processed correctly to prevent execution failures.
+
+**Attachments Migration with Rollback Enabled**
+
+Fixed an issue where attachment migration failed during Feature Deployments when Rollback was enabled. The update ensures proper handling of bucket object values, preventing errors and allowing migrations to complete successfully.
+
+## nCino Release Notes 25.4.11 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date:** 2**1 December 2025**
+
+**Job Error Record ID Handling**
+
+Improved handling of job error results to accurately resolve record IDs when Salesforce returns destination record IDs instead of source IDs, ensuring reliable identification and review of failed records.
+
+**CI Jobs – VC Baseline Revision Rollback**
+
+Resolved an issue where rollback for VC Baseline Revision CI jobs failed due to missing templates and incorrect backup snapshot handling. The fix ensures rollback builds execute successfully and backup snapshots are correctly located and accessible.
+
+**RBC Deployment – Blank Lookup Field Handling**
+
+Fixed an issue where Salesforce records with blank lookup fields failed during nCino RBC migrations. The update ensures lookup field data is handled correctly even when the parent object has no retrieved records, allowing empty lookup values to be updated successfully in the target org.
+
+**Field Mapping UI – API and Label Name Display**
+
+Updated the mapping UI to display field API names directly, with corresponding label names shown on hover. This improves clarity during mapping while retaining access to user-friendly labels.
+
 ## nCino Release Notes 25.4.11 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date:** **14 December 2025**

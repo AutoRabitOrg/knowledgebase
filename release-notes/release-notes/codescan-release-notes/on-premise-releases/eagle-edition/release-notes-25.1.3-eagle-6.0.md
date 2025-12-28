@@ -2,6 +2,8 @@
 
 ## CodeScan Self-Hosted Release Notes 25.1.3 Eagle 6.0
 
+**Release Date: 28 December 2025**
+
 ### Summary
 
 CodeScan Self-Hosted (version 25.1.3 (Eagle v6) is comprised of the following 25 components:

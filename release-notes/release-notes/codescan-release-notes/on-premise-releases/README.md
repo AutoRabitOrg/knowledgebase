@@ -2,7 +2,7 @@
 
 ### CodeScan Self-Hosted Editions: Latest Release Dates&#x20;
 
-* Eagle Edition v5 was released on 17 October 2025.&#x20;
+* Eagle Edition v6 was released on 28 December 2025.&#x20;
 * Tiger Edition v3 was released on 26 February 2025.&#x20;
 
 {% hint style="info" %}
@@ -35,7 +35,7 @@ Additionally, the following diagram provides more detailed information regarding
 
 ### Recommendations on Editions&#x20;
 
-_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v5.0 (25.1.2). This release is generally available as of October 17, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3, 25.4, and SQ 10.6–10.8. Please refer to the release notes for [Eagle Edition v5](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.
+_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v6.0 (25.1.3). This release is generally available as of December 28, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3, 25.4, and SQ 10.6–10.8. Please refer to the release notes for [Eagle Edition v6](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.
 
 _For customers running older versions of SonarQube,_ we encourage you to upgrade to our CodeScan Self-Hosted Tiger Edition v3.0 (25.0.1). This allows customers to have a newer version of the CodeScan plug-in while utilizing older versions of SonarQube™.
 

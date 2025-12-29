@@ -1,5 +1,9 @@
 # Bitbucket
 
+{% hint style="warning" %}
+As of 9 September 2025, app username and passwords have been deprecated as a type of authentication method. However, as of 9 June 2026, all existing app passwords will be disabled. Users are required to create API tokens and migrate this function prior to the deadline to avoid disruptions: [https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/](https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/). Follow the steps below for creating an API token instead of a password.
+{% endhint %}
+
 ### About Bitbucket <a href="#about-bitbucket" id="about-bitbucket"></a>
 
 **Bitbucket** from Atlassian is a cloud/self-hosted version control application. It provides effective ways to manage repositories, issue tracking, and technical projects. In the most basic terms, Bitbucket empowers you with total authority over the DevOps lifecycle.
@@ -24,23 +28,25 @@ GitHub and Bitbucket are hosting platforms that offer developers access to both 
 * You must have permission to register a repository.
 * Store your Bitbucket’s credentials in ARM.
 
-#### Store your Bitbucket credential in ARM <a href="#store-your-bitbucket-credential-in-arm" id="store-your-bitbucket-credential-in-arm"></a>
+### Creating Your Bitbucket Credential in ARM <a href="#store-your-bitbucket-credential-in-arm" id="store-your-bitbucket-credential-in-arm"></a>
 
-This is an initial step where you store your user's credential (usually a username, password, or token) in ARM.\
-To authenticate Bitbucket, you’ll have to use **App Password** instead of the regular password to login to your Bitbucket account.
+This is an initial step where you store your user's credential (usually a username, password, or token) in ARM.
 
-**Steps to generate a Bitbucket App Password**
+To authenticate Bitbucket, you’ll have to use **API Token** instead of the regular password to login to your Bitbucket account.
 
-1. Log into to your Bitbucket account.
-2. Locate your account’s **`profile picture`** in the top right-corner of the Bitbucket webpage.
-3. Click the **`Personal Settings`** link to the left of the profile picture in the dropdown menu.
-4. Select the link on the left labeled **`App Passwords`**. It is under the **`Access Management`** heading.
-5. Click on **`Create App Password`** button.
-6. Give a **`label name`** and check all the necessary permissions that you’d want to provide. Typically, we will require **`repository`**, **`webhook`**, and **`pull request permissions`**.
-7. Click **`Create`** to generate the Bitbucket App Passwords and copy the access token’s value. You will not be able to view this password again once you close this window.
-8. Click **`Save`**.
+### Creating an API Token
 
-**Store your Bitbucket credential in ARM**
+1. Go to **Settings** → **Account settings** (Atlassian account settings)
+2. Go to **Security** → **API tokens with scope**
+3.  Once the API token is generated, the customer should use the Bitbucket repository URL while configuring the connection.
+
+    **Example:**\
+    Repo URL: [`https://bitbucket.org/pavankumar_kodange/arm-test.git`](https://bitbucket.org/pavankumar_kodange/arm-test.git)
+
+    * **Username:** `pavankumar_kodange`
+    * **Password:** _(API token generated from Atlassian Account Settings → Security → API tokens with scope)_
+
+### **Storing your Bitbucket credential in ARM**
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
@@ -50,7 +56,7 @@ To authenticate Bitbucket, you’ll have to use **App Password** instead of the 
 6. Enter your Bitbucket **`username`** and **`App Password`**.
 7. Click **`Save`**.
 
-#### Registering a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
+### Registering a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
 
 If you wish to set up a Bitbucket repository, ensure that you have an account created and configured at Bitbucket. Next, follow these steps:
 
@@ -59,7 +65,7 @@ If you wish to set up a Bitbucket repository, ensure that you have an account cr
 3. Click on the **`Register Repository`** available on the right corner of the screen.
 4. On the **`Register Repository`** page, select the **`Version Control System`** as **`GIT`**.
 5. Enter the **`name`** of the repository to display it locally.
-6. Paste the **`Clone URL`** that BitBucket provides you.
+6. Paste the **`Clone URL`** that Bitbucket provides you.
 
 > Follow the steps to copy the URL from the Bitbucket account:\
 > a. Select your registered Bitbucket repository.\

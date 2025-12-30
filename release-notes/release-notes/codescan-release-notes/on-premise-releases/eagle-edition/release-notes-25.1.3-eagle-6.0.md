@@ -429,7 +429,23 @@ Verified the rule description and confirmed that the updated description is disp
 
 <figure><img src="../../../../../.gitbook/assets/image (2310).png" alt=""><figcaption></figcaption></figure>
 
-**8.   Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
+**8. Updated the Rule Description and Example for rule “Check for Lightning Migration Issues for Salesforce.com and Force.com Links” {Rule ID: vf:LightningAvoidHardcodedSalesforceDomain}**
+
+This rule was updated with this new description and example:
+
+“URL references may not work as expected in Lightning Experience or if you decide to swap to My Domain. If you decide to use My Domain, you have to replace hard-coded references to your original URL with references to your new domain. Using something like {!Site.BaseUrl} will avoid this hassle.
+
+See: [Considerations Before Transitioning to Lightning Experience](https://resources.docs.salesforce.com/198/latest/en-us/sfdc/pdf/lex_considerations.pdf)”
+
+Example:
+
+![](https://internal-kb.autorabit.com/~gitbook/image?url=https%3A%2F%2F3078893355-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FsVI1KPpGaAiGiskLR12x%252Fuploads%252FNaUaCdibOr99gGX5pLTA%252Fimage.png%3Falt%3Dmedia%26token%3De9253ae6-c4b9-4149-b535-fc878d34c0bc\&width=768\&dpr=4\&quality=100\&sign=35b71da9\&sv=2)
+
+Verified these rules updated by confirming that users are able to see the updated description and the example.<br>
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**9.   Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:
 
@@ -448,7 +464,7 @@ We have verified the rule logic and validated that users are able to see the vio
 
 <figure><img src="../../../../../.gitbook/assets/image (2311).png" alt=""><figcaption></figcaption></figure>
 
-**9.  Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
+**10.  Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
 
 Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case sensitive.  This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase).  However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
 
@@ -459,7 +475,7 @@ Verified the below scenarios and validated that both are working as expected:
 
 Further verified the sf:AuraControllerNaming rule by setting ControllerSuffix = “Controller” in first run of Project and then changed ControllerSuffix to “controller”. Both projects triggered the same number of violations based on the provided data.
 
-**10.  Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
+**11.  Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
 
 We have updated the rule description for the rule "CodeScan Other Rules" rule key
 
@@ -473,7 +489,7 @@ We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:
 
 <figure><img src="../../../../../.gitbook/assets/image (2313).png" alt=""><figcaption></figcaption></figure>
 
-**11.   Enhancement to “sf:AvoidLogicInTrigger” Rule**
+**12.   Enhancement to “sf:AvoidLogicInTrigger” Rule**
 
 Historically, this rule finds any blocks of code in a trigger and throws a violation.
 
@@ -514,7 +530,7 @@ But: for, while, do-while, SOQL, DML → always Violation (allow-list does not s
 
 <figure><img src="../../../../../.gitbook/assets/image (2316).png" alt=""><figcaption></figcaption></figure>
 
-**12.     Enhancement to “Use Annotation on Test Class” Rule**
+**13.     Enhancement to “Use Annotation on Test Class” Rule**
 
 During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword.  It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
 
@@ -534,7 +550,7 @@ Verified the enhanced rule logic in “Use Annotation on Test Class” via on th
 
 <figure><img src="../../../../../.gitbook/assets/image (2319).png" alt=""><figcaption></figcaption></figure>
 
-**13.  Enhancement to sf:ServerSideRequestForgery Rule**
+**14.  Enhancement to sf:ServerSideRequestForgery Rule**
 
 As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.
 
@@ -554,7 +570,7 @@ Verified that the rule ServerSideRequestForgery is throwing violations when the 
 
 <figure><img src="../../../../../.gitbook/assets/image (2320).png" alt=""><figcaption></figcaption></figure>
 
-**14.     Enhancement to Resource Injection Rule**
+**15.     Enhancement to Resource Injection Rule**
 
 As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.
 

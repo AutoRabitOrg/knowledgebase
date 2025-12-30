@@ -12,7 +12,7 @@ Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitboo
 
 <div align="center"><figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="264"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
@@ -51,7 +51,7 @@ The Git tags created or branches registered for the version control repository w
 
 Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](version-control-branch-workflow.md))
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **B. Register a Branch**
 

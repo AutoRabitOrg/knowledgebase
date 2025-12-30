@@ -976,6 +976,7 @@
       * [IP Whitelist](product-guides/arm-1/troubleshoot/best-practices/ip-whitelist.md)
       * [Metadata comparison between two Salesforce Orgs](product-guides/arm-1/troubleshoot/best-practices/metadata-comparison-between-two-salesforce-orgs.md)
       * [Prerequisites to Commits](product-guides/arm-1/troubleshoot/best-practices/prerequisite-while-performing-a-commit-using-autorabit.md)
+      * [Reports](product-guides/arm-1/troubleshoot/best-practices/reports.md)
       * [Revision Range & Release Label Deployment](product-guides/arm-1/troubleshoot/best-practices/revision-range-and-release-label-deployment.md)
       * [Salesforce API Version Mismatch for the CI Build and Custom Deployment](product-guides/arm-1/troubleshoot/best-practices/salesforce-api-version-mismatch-for-the-ci-build-and-custom-deployment.md)
       * [Salesforce Deployment Best Practices](product-guides/arm-1/troubleshoot/best-practices/salesforce-deployment-best-practices.md)

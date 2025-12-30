@@ -1,4 +1,8 @@
-# Salesforce Authentication using OAuth
+---
+description: How to Authenticate Your Salesforce Org Using OAuth
+---
+
+# Authentication using OAuth
 
 The Salesforce platform implements the OAuth 2.0 Authorization Framework, so users can authorize applications to access Force.com resources. When configuring ARM and Salesforce source, you must know the **Client\_ID** and **Client\_Secret** token values for the Salesforce organization you want to index.&#x20;
 

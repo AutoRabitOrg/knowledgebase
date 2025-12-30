@@ -11,9 +11,9 @@ Note regarding the two different CodeScan Self-Hosted editions:&#x20;
 We recognize that our self-hosted customers have different requirements regarding the SonarQube (SQ) versions that are supported/allowed by their organizations. As such, CodeScan is committed to supporting a wide spectrum of versions to accommodate this variance.&#x20;
 {% endhint %}
 
-Currently, the most recent Long-Term Active version of SonarQube is 2025.1 LTA. Recently, SonarQube released Community Build 25.10, while the latest version for their other editions is 2025 Release 5.&#x20;
+Currently, the most recent Long-Term Active version of SonarQube is 2025.1 LTA. Recently, SonarQube released Community Build 25.12, while the latest version for their other editions is 2025 Release 6.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2342).png" alt=""><figcaption></figcaption></figure>
 
 The previous version of SonarQube Long-Term Active was 9.9 LTA. In between, SonarQube released 9 other versions (10.0–10.8).
 

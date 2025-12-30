@@ -1,4 +1,4 @@
-# Salesforce Org
+# Registering Your Salesforce Org
 
 You must register the organization to use any Salesforce Org functionality inside ARM. When you register your Salesforce organization in ARM, ARM connects to your organization with the required permissions.
 
@@ -42,17 +42,17 @@ Important Note:If your Salesforce Org is configured with nCino objects, you can 
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677751417003.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Important Note:If your Salesforce Org is configured with nCino objects, you can select the **`Is nCino Installed`** checkbox. The nCino logo is added for each nCino configured Salesforce Org for easier identification from other Salesforce Org.
+Important Note: If your Salesforce Org is configured with nCino objects, you can select the **`Is nCino Installed`** checkbox. The nCino logo is added for each nCino configured Salesforce Org for easier identification from other Salesforce Org.
 
 ### What is Salesforce Security Token, and How Do I Find It? <a href="#what-is-salesforce-security-token-and-how-do-i-find-it" id="what-is-salesforce-security-token-and-how-do-i-find-it"></a>
 
 Your Salesforce security token is a case-sensitive alphanumeric key used with a password to access Salesforce via API. The token aims to improve the security between Salesforce users and Salesforce.com in the case of a compromised account. It ensures, among other things, that if a user’s account credentials are compromised, a third party cannot access Salesforce.
 
-#### Losing the security token <a href="#losing-the-security-token" id="losing-the-security-token"></a>
+### Losing the security token <a href="#losing-the-security-token" id="losing-the-security-token"></a>
 
 If you can’t remember your security token and have deleted the email containing the token, the only way to retrieve it is by resetting the token. Salesforce does not provide an option to view your token within the web application; the only option is resetting it.
 
-#### Getting the Security Token for Your Salesforce Account <a href="#getting-the-security-token-for-your-salesforce-account" id="getting-the-security-token-for-your-salesforce-account"></a>
+### Getting the Security Token for Your Salesforce Account <a href="#getting-the-security-token-for-your-salesforce-account" id="getting-the-security-token-for-your-salesforce-account"></a>
 
 When you create a Salesforce account, Salesforce sends an email message from support@salesforce.com with the subject: _salesforce.com security token confirmation_ to the email address associated with the account. This email message contains the Security Token for the account and is the only place where you can find the Security Token value. When you change the account password, the security token is regenerated (the previous one expires), and a similar email is sent.
 
@@ -66,9 +66,9 @@ If you cannot find the latest email with the security token, reset the security 
 4. A new email message will be sent.
 5. Open the message and then copy the **`Security Token value`**.
 
-Important Note:We recommend saving this email in a secure location, so you don’t have to reset your security token whenever needed.
+Important Note: We recommend saving this email in a secure location, so you don’t have to reset your security token whenever needed.
 
-### Edit Salesforce Org details after registration <a href="#edit-salesforce-org-details-after-registration" id="edit-salesforce-org-details-after-registration"></a>
+### Editing Salesforce Org Details after Registration <a href="#edit-salesforce-org-details-after-registration" id="edit-salesforce-org-details-after-registration"></a>
 
 You can change the **`Environment`** type, the **`Access Type`**, or both.
 

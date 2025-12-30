@@ -608,7 +608,7 @@ Verified the Rule Deprecation for cs-vf:no-octal-escape and cs-js:no-octal-escap
 
 ### Fixes&#x20;
 
-1\.  Fixed an issue in the APEX rule “Field Level Security Vulnerabilities”
+**1.  Fixed an issue in the APEX rule “Field Level Security Vulnerabilities”**
 
 {Rule ID: sf:FieldLevelSecurity}
 
@@ -620,7 +620,7 @@ We have validated this new logic and verified that no vulnerabilities were raise
 
 <figure><img src="../../../../../.gitbook/assets/image (2328).png" alt=""><figcaption></figcaption></figure>
 
-2\.     Fixed an issue in the APEX rule “Resource Injection”
+**2.     Fixed an issue in the APEX rule “Resource Injection”**
 
 {Rule ID: sf: ResourceInjection}
 
@@ -632,7 +632,7 @@ We verified the new logic and validated that the rule is now working as original
 
 <figure><img src="../../../../../.gitbook/assets/image (2329).png" alt=""><figcaption></figcaption></figure>
 
-3\.  Fixed an issue in the APEX rule “URLs of Salesforce pages should be relative, not absolute”
+**3.  Fixed an issue in the APEX rule “URLs of Salesforce pages should be relative, not absolute”**
 
 {Rule ID: sf:AvoidAbsoluteURL}
 
@@ -658,13 +658,13 @@ Verified the updated logic to the rule AvoidAbsoluteURL by validating that the u
 
 <figure><img src="../../../../../.gitbook/assets/image (2331).png" alt=""><figcaption></figcaption></figure>
 
-1\.     Fixed an issue in the rule “Require CSRF Protection On GET Requests”
+**4.     Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
 
 {Rule ID: vf:RequireConfirmationToken}
 
 During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
 
-Summary:
+**Summary**:
 
 The current xpath for this rule is:
 
@@ -691,7 +691,7 @@ _“vf:RequireConfirmationToken” getting triggered only_ when the correspondin
 
 <figure><img src="../../../../../.gitbook/assets/image (2333).png" alt=""><figcaption></figcaption></figure>
 
-5\.   Fixed an issue in the rule “Switch statements should not have too many case clauses”
+**5.   Fixed an issue in the rule “Switch statements should not have too many case clauses”**
 
 {Rule ID: sf:MaximumNumberOfCase }
 
@@ -706,7 +706,7 @@ Verified that the below scenarios are working as expected.
 
 <figure><img src="../../../../../.gitbook/assets/image (2334).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;6\.  Fixed an issue in the rule “Immutable Field”, which was causing false positives {Rule ID: sf:ImmutableField}
+**6.  Fixed an issue in the rule “Immutable Field”, which was causing false positives {Rule ID: sf:ImmutableField}**
 
 Several customers have reported that the current rule logic incorrectly flags propertyVal as a candidate for final, even though its value can be modified indirectly through a property getter/setter. In the following example, the field propertyVal is updated within the getter of anotherPropertyVal via this.propertyVal = 'test' and subsequently returned:
 
@@ -723,7 +723,7 @@ Verified that the “sf:ImmutableField” is getting triggered only when the pri
 
 <figure><img src="../../../../../.gitbook/assets/image (2337).png" alt=""><figcaption></figcaption></figure>
 
-7\.     Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}
+**7.     Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
 
 During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
 

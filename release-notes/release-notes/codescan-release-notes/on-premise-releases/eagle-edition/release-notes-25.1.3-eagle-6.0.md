@@ -17,7 +17,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-1\.     New Rules to Identify Potential Sensitive Data/PII Fields
+**1.     New Rules to Identify Potential Sensitive Data/PII Fields**
 
 **Description**
 
@@ -578,7 +578,7 @@ Verified that the rule Resource Injection is throwing violations when the follow
 
 ### Rule Deprecations
 
-1\.     Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}
+**1.     Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}**
 
 The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of irregular white space are no longer even seen as parsing JavaScript.
 
@@ -592,7 +592,7 @@ Verified the Rule Deprecations of cs-vf:no-irregular-whitespace and cs-js:no-irr
 
 <figure><img src="../../../../../.gitbook/assets/image (2324).png" alt=""><figcaption></figcaption></figure>
 
-2\.   Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}
+**2.   Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
 
 The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of octal escapes are no longer even seen as parsing JavaScript.
 

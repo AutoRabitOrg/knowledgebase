@@ -1,4 +1,4 @@
-# Automate Merge When CI Builds Pass
+# Automating the Merge Process
 
 ### Overview
 
@@ -9,7 +9,7 @@ The **Run Merge process on successful deployment** feature keeps track of builds
 > * Package and deploy SFDX source from version control
 > * Deploy from version control
 
-### Automate Merge Process Settings
+### Automating Merge Process Settings
 
 #### Enabling auto-merge
 

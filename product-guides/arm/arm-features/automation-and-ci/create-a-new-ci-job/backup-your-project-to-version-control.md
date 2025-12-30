@@ -1,4 +1,8 @@
-# Backup your project to Version Control
+---
+description: How to Backup Your Project to Version Control
+---
+
+# Backing Up Your Project to Version Control
 
 {% hint style="info" %}
 The **CI JOBS** screen is easiest to read at **80 %** zoom in Chrome or Firefox.

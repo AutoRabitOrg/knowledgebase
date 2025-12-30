@@ -1,4 +1,8 @@
-# Deploy a package from a Salesforce Org
+---
+description: How to Deploy a Package from a Salesforce Org
+---
+
+# Deploying a Package from a Salesforce Org
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.

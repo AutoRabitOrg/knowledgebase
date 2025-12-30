@@ -1,12 +1,12 @@
-# Branching Baseline
+# Using Branching Baselines
 
 {% hint style="info" %}
 **Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article are not available to general users. &#x20;
 {% endhint %}
 
-### Branching Baseline: Overview <a href="#branching-baseline-overview" id="branching-baseline-overview"></a>
+### Branching Baselines: Overview <a href="#branching-baseline-overview" id="branching-baseline-overview"></a>
 
-Components are retrieved and committed from a Salesforce org to a version control branch using **Branching Baseline**. This helpful feature can deal with a lot of metadata and is ideal for (but not limited to) the following two scenarios:
+Components are retrieved and committed from a Salesforce org to a version control branch using a **Branching Baseline**. This helpful feature can deal with a lot of metadata and is ideal for (but not limited to) the following two scenarios:
 
 * Branching Baseline will sync the branch to its mapped Salesforce org, so they are in sync.
 * Users can create a new branch and update it with an existing Salesforce Org.
@@ -16,11 +16,11 @@ Components are retrieved and committed from a Salesforce org to a version contro
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on **`Branching Baseline`**.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (3).png" alt="" width="217"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (3).png" alt="" width="217"><figcaption></figcaption></figure>
 
 3. From the Branching Baseline screen, click on New Branching Baseline.
 
-<figure><img src="../../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -29,7 +29,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
    2. Select your Salesforce Org as the source of the commit.&#x20;
    3. Select your Repository and Branch to which you would like to commit code.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown (1) (1).png" alt="" width="511"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (1) (1).png" alt="" width="511"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** For Version Control registered in the SFDX structure, specify the Source Folder from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the Package Directory under the sfdx-project.json file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/salesforce-dx-metadata-format).
@@ -52,11 +52,11 @@ Components are retrieved and committed from a Salesforce org to a version contro
 **Point to Note:** Branching baseline commits for the SVN repository may take 10 minutes to complete.&#x20;
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/unknown (3).png" alt="" width="500"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (3).png" alt="" width="500"><figcaption></figcaption></figure>
 
 **More Options**
 
-<figure><img src="../../../../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
 
 1. Info: This will give information about the Salesforce Org and the Version Control Repository/ Branch selected for the Branching Baseline operation.&#x20;
 2. Revision: View the revision generated at the Version Control along with the filename status. You can even download the report if required.&#x20;

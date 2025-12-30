@@ -1,4 +1,8 @@
-# Deploy from SFDX branch to a Salesforce Org
+---
+description: How to Deploy from an SFDX Branch to a Salesforce Org
+---
+
+# Deploying from SFDX Branch to a Salesforce Org
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.

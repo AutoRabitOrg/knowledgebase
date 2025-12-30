@@ -1,4 +1,8 @@
-# Run Test Automation Scripts
+---
+description: How to Run Test Automation Scripts
+---
+
+# Running Test Automation Scripts
 
 {% hint style="info" %}
 **Important Note**: The **CI JOBS** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.

@@ -1,6 +1,6 @@
-# ALM Management
+# Connecting Your ALM
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Important Note:** The actions described here are available **only to Org Administrators**. General ARM users cannot access ALM Management.
 {% endhint %}
 

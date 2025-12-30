@@ -1,4 +1,8 @@
-# Deploy from Salesforce with VC backup
+---
+description: How to Deploy from Salesforce with Version Control Backup
+---
+
+# Deploying from Salesforce with VC Backup
 
 {% hint style="info" %}
 **Note:** The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.

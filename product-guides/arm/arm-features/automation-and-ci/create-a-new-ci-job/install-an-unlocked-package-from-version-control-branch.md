@@ -1,8 +1,14 @@
-# Install an Unlocked Package from Version Control Branch
+---
+description: How to Install an Unlocked Package from a Version Control Branch
+---
+
+# Installing an Unlocked Package from VC Branch
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed at **80%** zoom in Chrome/Firefox browsers.
 {% endhint %}
+
+## Installing an Unlocked Package from a Version Control Branch
 
 ### Overview
 

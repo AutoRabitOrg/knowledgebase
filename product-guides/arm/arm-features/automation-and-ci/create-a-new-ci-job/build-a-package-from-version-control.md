@@ -1,4 +1,8 @@
-# Build a package from Version Control
+---
+description: How to build a package from version control.
+---
+
+# Building a Package from Version Control
 
 {% hint style="info" %}
 The **CI JOBS** screen is best viewed when the zoom is set to **80%** on your Chrome/Firefox browser.

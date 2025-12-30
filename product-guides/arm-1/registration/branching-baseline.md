@@ -1,12 +1,12 @@
-# Branching Baseline
+# Using Branching Baselines
 
 {% hint style="info" %}
 **Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article are not available to general users. &#x20;
 {% endhint %}
 
-### Branching Baseline: Overview <a href="#branching-baseline-overview" id="branching-baseline-overview"></a>
+### Branching Baselines: Overview <a href="#branching-baseline-overview" id="branching-baseline-overview"></a>
 
-Components are retrieved and committed from a Salesforce org to a version control branch using **Branching Baseline**. This helpful feature can deal with a lot of metadata and is ideal for (but not limited to) the following two scenarios:
+Components are retrieved and committed from a Salesforce org to a version control branch using a **Branching Baseline**. This helpful feature can deal with a lot of metadata and is ideal for (but not limited to) the following two scenarios:
 
 * Branching Baseline will sync the branch to its mapped Salesforce org, so they are in sync.
 * Users can create a new branch and update it with an existing Salesforce Org.

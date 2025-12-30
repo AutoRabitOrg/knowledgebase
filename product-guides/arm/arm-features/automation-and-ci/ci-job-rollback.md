@@ -1,4 +1,8 @@
-# CI Job Rollback
+---
+description: How to Roll Back a CI Job
+---
+
+# Rolling Back a CI Job
 
 {% hint style="info" %}
 For the best experience, set your browser zoom to **80%** in Chrome or Firefox.

@@ -68,9 +68,9 @@ Verified that sf:SecurePIIFields rules are being triggered in following scenario
 
 ### Rule Enhancements
 
-1\.  Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”
+**1.  Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
 
-{Rule ID: sf: ServerSideRequestForgery}
+**{Rule ID: sf: ServerSideRequestForgery}**
 
 **Description:**
 
@@ -138,7 +138,7 @@ Make sure to check for internal methods also (e.g., FirstName variable on line 8
 
 <figure><img src="../../../../../.gitbook/assets/image (2294).png" alt=""><figcaption></figcaption></figure>
 
-2\.     Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}
+**2.     Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
 
 **Description:**
 
@@ -189,11 +189,11 @@ public class Negative {
 
 }
 
-Existing Message:
+**Existing Message**:
 
 Sanitize input to avoid possible resource injection.  Data Flow Trace: Negative.otherMethod: line 4
 
-Updated Message:
+**Updated Message**:
 
 Sanitize input to avoid possible resource injection. Data Flow Trace -
 
@@ -207,9 +207,9 @@ Make sure to check for internal methods also (E.g. FirstName variable on line 8 
 
 <figure><img src="../../../../../.gitbook/assets/image (2297).png" alt=""><figcaption></figcaption></figure>
 
-3\.     Updated the description in the CodeScan APEX rule “Avoid Calling SOQL and DML Inside Loops”
+**3.     Updated the description in the CodeScan APEX rule “Avoid Calling SOQL and DML Inside Loops”**
 
-{Rule ID: sf:AvoidSoqlInLoops}
+**{Rule ID: sf:AvoidSoqlInLoops}**
 
 **Description:**
 
@@ -267,13 +267,13 @@ public class CaseProcessor {
 
 &#x20;
 
-Existing Message:
+**Existing Message**:
 
 Avoid running Soql and DML inside loops.  Loop Trace : CaseProcessor.fetchOwnerDetails: line 16 --> CaseProcessor.processCase: line 11 --> CaseProcessor.processAllCases: line 6
 
 &#x20;
 
-Updated Message:
+**Updated Message**:
 
 Avoid Running SOQL and DML inside loops. Data Flow Trace -
 
@@ -299,9 +299,9 @@ Executed the Above scenario and validated the rule description was updated as ex
 
 <figure><img src="../../../../../.gitbook/assets/image (2300).png" alt=""><figcaption></figcaption></figure>
 
-4\.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”
+**4.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
 
-{Rule ID: sf:UnnecessaryBooleanAssertion}
+**{Rule ID: sf:UnnecessaryBooleanAssertion}**
 
 Several customers have reported that the current rule detects unnecessary boolean assertions only when using the System.assert() method.
 
@@ -316,7 +316,7 @@ To improve coverage, we enhanced the rule logic to include these Assert class sc
   * Assert.isFalse(false)
 * Updated the rule message and description to clearly explain why these patterns are redundant.
 
-Updated Rule Description:&#x20;
+**Updated Rule Description**:&#x20;
 
 A Unit test assertion with a Boolean literal is unnecessary since it always will evaluate to the same thing. Consider using flow control (in case of assertTrue(false) or similar) or simply removing statements like System.assert(true) and Assert.isFalse(false).\
 \
@@ -324,7 +324,7 @@ If you just want a test to halt after finding an error, use the System.assert(fa
 
 <figure><img src="../../../../../.gitbook/assets/image (2301).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;Verified the below scenarios are working as expected:
+&#x20;Verified the following scenarios are working as expected:
 
 * Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
 * Compliant scenarios have been tested. (by using only string values).
@@ -335,7 +335,7 @@ If you just want a test to halt after finding an error, use the System.assert(fa
 
 <figure><img src="../../../../../.gitbook/assets/image (2303).png" alt=""><figcaption></figcaption></figure>
 
-5\.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}
+**5.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}**
 
 The sf:GodClass rule currently uses fixed threshold values to identify “God Class” design flaws:
 
@@ -378,7 +378,7 @@ When users provide the following Threshold values:
 
 <figure><img src="../../../../../.gitbook/assets/image (2307).png" alt=""><figcaption></figcaption></figure>
 
-6\.     Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}
+**6.     Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}**
 
 **Description:**
 
@@ -406,7 +406,7 @@ Verified the Updated God Class Rule Description and confirmed that users are abl
 
 <figure><img src="../../../../../.gitbook/assets/image (2308).png" alt=""><figcaption></figcaption></figure>
 
-7\.     Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}&#x20;
+**7.     Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**&#x20;
 
 We recognized that this description was out of date and determined it needed to change to:
 
@@ -429,7 +429,7 @@ Verified the rule description and confirmed that the updated description is disp
 
 <figure><img src="../../../../../.gitbook/assets/image (2310).png" alt=""><figcaption></figcaption></figure>
 
-8\.   Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}
+**8.   Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:
 
@@ -448,7 +448,7 @@ We have verified the rule logic and validated that users are able to see the vio
 
 <figure><img src="../../../../../.gitbook/assets/image (2311).png" alt=""><figcaption></figcaption></figure>
 
-9\.  Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}
+**9.  Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
 
 Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case sensitive.  This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase).  However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
 
@@ -459,7 +459,7 @@ Verified the below scenarios and validated that both are working as expected:
 
 Further verified the sf:AuraControllerNaming rule by setting ControllerSuffix = “Controller” in first run of Project and then changed ControllerSuffix to “controller”. Both projects triggered the same number of violations based on the provided data.
 
-10\.  Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}
+**10.  Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
 
 We have updated the rule description for the rule "CodeScan Other Rules" rule key
 
@@ -473,7 +473,7 @@ We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:
 
 <figure><img src="../../../../../.gitbook/assets/image (2313).png" alt=""><figcaption></figcaption></figure>
 
-11\.   Enhancement to “sf:AvoidLogicInTrigger” Rule
+**11.   Enhancement to “sf:AvoidLogicInTrigger” Rule**
 
 Historically, this rule finds any blocks of code in a trigger and throws a violation.
 
@@ -514,7 +514,7 @@ But: for, while, do-while, SOQL, DML → always Violation (allow-list does not s
 
 <figure><img src="../../../../../.gitbook/assets/image (2316).png" alt=""><figcaption></figcaption></figure>
 
-12\.     Enhancement to “Use Annotation on Test Class” Rule
+**12.     Enhancement to “Use Annotation on Test Class” Rule**
 
 During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword.  It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
 
@@ -534,7 +534,7 @@ Verified the enhanced rule logic in “Use Annotation on Test Class” via on th
 
 <figure><img src="../../../../../.gitbook/assets/image (2319).png" alt=""><figcaption></figcaption></figure>
 
-13\.  Enhancement to sf:ServerSideRequestForgery Rule
+**13.  Enhancement to sf:ServerSideRequestForgery Rule**
 
 As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.
 
@@ -554,7 +554,7 @@ Verified that the rule ServerSideRequestForgery is throwing violations when the 
 
 <figure><img src="../../../../../.gitbook/assets/image (2320).png" alt=""><figcaption></figcaption></figure>
 
-14\.     Enhancement to Resource Injection Rule
+**14.     Enhancement to Resource Injection Rule**
 
 As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.
 

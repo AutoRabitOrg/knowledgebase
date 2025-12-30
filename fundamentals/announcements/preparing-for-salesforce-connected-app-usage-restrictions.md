@@ -27,7 +27,7 @@ _For existing customers with an already connected Org/s to AutoRABIT_\
 No action is required.
 
 Recommended configuration:\
-&#xNAN;_&#x46;or existing customers, adding net new Salesforce Sandbox Orgs_
+\&#xNAN;_For existing customers, adding net new Salesforce Sandbox Orgs_
 
 **Install Connected App**
 
@@ -36,7 +36,7 @@ Recommended configuration:\
 3. Click Install, then confirm on the subsequent page.
 
 **Optional Configuration:**\
-&#xNAN;_&#x41;pplies to initial authentications with AutoRABIT made after the connected apps security change made by Salesforce, or net new production orgs (this will be updated, as more information becomes available from Salesforce)_
+\&#xNAN;_Applies to initial authentications with AutoRABIT made after the connected apps security change made by Salesforce, or net new production orgs (this will be updated, as more information becomes available from Salesforce)_
 
 Actions Required
 
@@ -78,6 +78,6 @@ Refer to the [Salesforce documentation](https://help.salesforce.com/s/articleVie
 
 **Do I need to reinstall AutoRABIT in my Salesforce org?** No reinstallation is required. You only need to ensure the correct Salesforce permissions are assigned to your integration user for new connections after September 2025.
 
-**Where can I read Salesforce’s official announcement?** You can view Salesforce’s official article (here)[ https://help.salesforce.com/s/articleView?id=005132365&type=1]
+**Where can I read Salesforce’s official announcement?** You can view Salesforce’s official article at [https://help.salesforce.com/s/articleView?id=005132365\&type=1](https://help.salesforce.com/s/articleView?id=005132365\&type=1).&#x20;
 
 **Who should I contact if I face issues?** Please contact AutoRABIT Support (support@autorabit.com) for assistance with setup, permissions, or troubleshooting.

@@ -1,16 +1,15 @@
 # ARM for Salesforce Data Cloud
 
-## &#x20;<a href="#deploying-salesforce-data-cloud-metadata-using-autorabit-arm" id="deploying-salesforce-data-cloud-metadata-using-autorabit-arm"></a>
-
-**Last Updated:** Oct 31st 2025\
+**Last Updated:** 31 October 2025\
 **Applies to:** AutoRABIT ARM 25.4.5 and later<br>
 
 ### Overview <a href="#overview" id="overview"></a>
 
-**Salesforce Data Cloud** (formerly Customer Data Platform) is not just another Salesforce cloud — it’s a **real-time customer data platform (CDP)** that unifies, harmonizes, and activates data across systems.\
+**Salesforce Data Cloud** (formerly Customer Data Platform) is not just another Salesforce cloud; it’s a **real-time customer data platform (CDP)** that unifies, harmonizes, and activates data across systems.
+
 ARM now supports full **Data Cloud metadata deployment** through **Data Kits**, enabling seamless movement of Data Cloud configurations between orgs.
 
-This guide walks you through **end-to-end deployment** of Data Cloud metadata even if you’ve never used Data Cloud before.
+This guide walks you through **end-to-end deployment** of Data Cloud metadata, even if you’ve never used Data Cloud before.
 
 ### What is Data Cloud? <a href="#what-is-data-cloud" id="what-is-data-cloud"></a>
 
@@ -48,9 +47,9 @@ Make sure you meet the following **prerequisites** before attempting a deploymen
 
 **System Permissions:**
 
-* API Enabled — so the user can call the APIs needed for ingestion, metadata, streams, etc.
-* Modify Metadata Through Metadata API Functions — to allow changes to metadata (objects, fields, permission sets) via Metadata API.
-* View Setup and Configuration — required to access Setup, enabling features like Data Cloud Setup, Data Spaces, etc.
+* API Enabled: So the user can call the APIs needed for ingestion, metadata, streams, etc.
+* Modify Metadata Through Metadata API Functions: Allow changes to metadata (objects, fields, permission sets) via Metadata API.
+* View Setup and Configuration: Required to access Setup, enabling features like Data Cloud Setup, Data Spaces, etc.
 
 **Object and Field Access:**\
 Ensure the deployment user has full access to all **Data Cloud objects and fields** referenced in Data Streams and Data Model Objects.
@@ -146,11 +145,11 @@ After the deployment succeeds:
 | ExternalDataTranObject       | Yes                     |  -                        |  No         |
 
 \
-**Testing Conclusions** -
+**Testing Conclusions**
 
 1. The metadata types which have **Package.xml - Yes** should follow the above mentioned steps for Commit, Deployments & CI Jobs.
 2. The metadata types which have **Package.xml - No** can follow the regular steps \[any type] for Commit, Deployments & CI Jobs. (Deployments might fail for the components \[Details are mentioned in the table]).
-3. Merge, Release Label, Branching Baseline is working for all the metadata types with both DX & NON DX repositories.
+3. Merge, Release Label, Branching Baseline is working for all the metadata types with both DX & NON-DX repositories.
 
 \*\* All the above implies for both Constructive and Destructive changes.
 

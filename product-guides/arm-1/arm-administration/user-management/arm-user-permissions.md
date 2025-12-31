@@ -7,7 +7,7 @@ _Users with the **Admin** role manage their own permissions under that role and 
 
 ***
 
-**Assign Permissions to Users**
+### **Assigning Permissions to Users**
 
 1.  Open **Settings › Permissions**.<br>
 
@@ -28,7 +28,7 @@ Admins are hidden on this screen because they already hold full access.
 
 ***
 
-## Provide Branch Access to a User <a href="#to-provide-branch-access-to-a-user" id="to-provide-branch-access-to-a-user"></a>
+### Providing Branch Access to a User <a href="#to-provide-branch-access-to-a-user" id="to-provide-branch-access-to-a-user"></a>
 
 Need to restrict or expand Git access? Grant repository or branch permissions here.
 

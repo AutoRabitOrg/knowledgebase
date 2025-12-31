@@ -1,6 +1,6 @@
 # User Types
 
-AutoRABIT (ARM) separates users into three distinct categories—each with its own set of privileges and responsibilities. Understanding these roles helps administrators grant the right level of access and manage the platform efficiently.
+AutoRABIT (ARM) separates users into three distinct categories, each with its own set of privileges and responsibilities. Understanding these roles helps administrators grant the right level of access and manage the platform efficiently.
 
 ***
 

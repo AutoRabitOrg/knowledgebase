@@ -4,13 +4,17 @@
 
 **What's New:**
 
-CodeScan Self-Hosted now has two versions available to meet your operating system needs:
+CodeScan Self-Hosted now has multiple versions available to meet your operating system needs:
 
-**CodeScan version 25.1.3 Eagle Edition v6.0** (now compatible with _**SonarQube™ versions 10.6 to 2025.4)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
+**CodeScan version 25.1.3 Eagle Edition v6.0** (now compatible with _**SonarQube™ Community Build versions 10.6 to 25.10)**_ is the latest CodeScan release. We strongly recommend all CodeScan users upgrade to this iteration.
 
-**CodeScan version 25.0.1 Tiger Edition v3.0** (now compatible with _**SonarQube™ version 9.9 LTA and 10.0 to 10.3)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
+**CodeScan version 25.1.2 Eagle Edition v.5.0** (now compatible with _**SonarQube™ versions 10.6 to 25.4).**_
 
-[**SonarQube Compatibility Matrix**](installing-codescan-self-hosted.md#sonarqube-tm-download-1)
+For customers running on older versions of SonarQube, we still have you covered!
+
+**CodeScan version 25.0.1 Tiger Edition v3.0** (compatible with _**SonarQube™ version 9.9 LTA and 10.0 to 10.3)**_ is a newer version of the CodeScan release for users running older versions of SonarQube™.&#x20;
+
+[**Legacy SonarQube Compatibility Matrix**](installing-codescan-self-hosted.md#sonarqube-tm-download-1)
 
 [**CodeScan Downloads & Compatibility Chart**](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-downloads-and-compatibility-chart)
 

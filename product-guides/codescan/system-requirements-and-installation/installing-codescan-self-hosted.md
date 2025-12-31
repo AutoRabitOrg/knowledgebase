@@ -48,7 +48,7 @@ Provide the following information in the email:\
 
 You must have a SonarQube™ server currently running in your environment. If not, please visit [SonarQube.org](https://www.sonarqube.org/) to download the latest Community version.
 
-The following matrix identifies the current versions of SonarQube™ supported for CodeScan Self-Hosted clients:
+The following matrix identifies the historic versions of SonarQube™ supported for CodeScan Self-Hosted clients:
 
 ## Legacy SonarQube™ Compatibility Matrix <a href="#sonarqube-tm-download" id="sonarqube-tm-download"></a>
 

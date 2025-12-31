@@ -1,46 +1,43 @@
 # Self-Hosted Releases
 
-### CodeScan Self-Hosted Editions: Latest Release Dates&#x20;
+### CodeScan Self-Hosted Editions: Latest Release Dates &#x20;
 
-* Eagle Edition v6 was released on 28 December 2025.&#x20;
-* Tiger Edition v3 was released on 26 February 2025.&#x20;
+Our latest release of CodeScan is our Eagle Edition v6 (25.1.3), which was released in December 2025. Please refer to the release notes for [Eagle Edition v6](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.&#x20;
 
-{% hint style="info" %}
-Note regarding the two different CodeScan Self-Hosted editions:&#x20;
+Our Eagle Editions are designed for those customers who run newer versions of SonarQube (Dec 2024–Dec 2025).&#x20;
 
-We recognize that our self-hosted customers have different requirements regarding the SonarQube (SQ) versions that are supported/allowed by their organizations. As such, CodeScan is committed to supporting a wide spectrum of versions to accommodate this variance.&#x20;
-{% endhint %}
-
-Currently, the most recent Long-Term Active version of SonarQube is 2025.1 LTA. Recently, SonarQube released Community Build 25.12, while the latest version for their other editions is 2025 Release 6.&#x20;
+It is important to note that in December 2024, SonarQube made the decision to separate their Community Build release from their other editions (Developer, Enterprise, and Data Center). As such, the version numbers of SonarQube Community Edition are different from the version numbers of these other editions (see below):&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (2342).png" alt=""><figcaption></figcaption></figure>
 
-The previous version of SonarQube Long-Term Active was 9.9 LTA. In between, SonarQube released 9 other versions (10.0–10.8).
+Please note that once this split occurred, SonarQube released Community Build 24.12 in Dec 2024, and then released a new Community Build each month (25.1 – 25.12) for the calendar year of 2025.&#x20;
 
-In order to support a wide range of these SonarQube versions, AutoRABIT decided to provide two versions of CodeScan self-hosted editions to the market to ensure ongoing SonarQube compatibility. Please note that we currently only certify CodeScan on the Community Build. We are working closely with SonarQube to extend our verifications on their other editions as well.&#x20;
+We have chosen to validate our CodeScan plugin for SonarQube on their Community Builds, as most of our customers use these editions of SonarQube. Our latest two Eagle Editions (v5 and v6) are validated on nearly each of these builds, up to and including Community Build 25.10. We are currently in the process of validating 25.11 and 25.12.  More detailed information can be found in our latest compatibility matrix for CodeScan Eagle v5 and v6. &#x20;
 
-Our Eagle Edition is designed for those customers who run on SonarQube 10.6, 2025.1 LTA, 25.2, 25.3, and 25.4.&#x20;
+<figure><img src="../../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
 
-Our Tiger Edition is designed for those customers who run on SonarQube 9.9 LTA–10.3. &#x20;
+However, we also recognize that some of our customers are running either the Developer, Enterprise, or Data Center editions of SonarQube. As such, we have also listed these corresponding editions within this matrix. Please note that we do not currently validate CodeScan on these editions; however, we believe this information proves useful in determining which of these SonarQube editions should be compatible with CodeScan. Further, we are working closely with the SonarQube Alliances organization and intend to validate CodeScan on all SonarQube editions in the future.&#x20;
 
-Please see our corresponding [SonarQube Compatibility Matrix ](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1)for detailed guidance.&#x20;
+Currently, the most recent Long-Term Active version of SonarQube is 2025.4 LTA (released in July 2025), which is compatible with CodeScan Eagle Edition v6.&#x20;
 
-We do intend to keep as much feature parity with the editions as possible; however, there will be slight variances. Please review our release notes for detailed information regarding each edition’s respective capabilities.&#x20;
+Additionally, in order to support a wide range of these SonarQube versions, AutoRABIT provides two different versions of CodeScan self-hosted editions (Eagle and Tiger), thereby ensuring broad SonarQube compatibility. &#x20;
 
-Additionally, the following diagram provides more detailed information regarding release versioning and release dates. &#x20;
+For customers running newer versions of SonarQube, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v5 (25.1.2) or v6 (25.1.3). These releases became generally available in October and December 2025, respectively. Together, they can run on nearly each of the last 13 Community Builds, up to and including Community Build 25.10.&#x20;
+
+Separately, for customers running older versions of SonarQube (prior to Dec 2024), we encourage you to upgrade to our CodeScan Self-Hosted Tiger Edition. The latest version is Tiger Edition v3, which was released in February 2025.&#x20;
+
+We do intend to keep as much feature parity with the editions as possible; however, there will be slight variances. Please review our release notes for detailed information regarding each edition’s respective capabilities. &#x20;
+
+Please see our corresponding [Legacy SonarQube Compatibility Matrix ](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#sonarqube-tm-download-1)for detailed guidance. &#x20;
+
+Additionally, the following diagram provides more detailed information regarding release versioning and release dates.  &#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (2343).png" alt=""><figcaption></figcaption></figure>
 
 **Regarding earlier CodeScan Versions**: Our July 2024 release (24.0.8) fully supports SQ 9.9 LTA as well as SQ 10.0, 10.1, and 10.2. &#x20;
 
-### Recommendations on Editions&#x20;
-
-_For customers running newer versions of SonarQube_, we encourage you to upgrade to our CodeScan Self-Hosted Eagle Edition v6.0 (25.1.3). This release is generally available as of December 28, 2025, and is compatible with SQ 2025.1 LTA, 25.2, 25.3, 25.4, and SQ 10.6–10.8. Please refer to the release notes for [Eagle Edition v6](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.
-
-_For customers running older versions of SonarQube,_ we encourage you to upgrade to our CodeScan Self-Hosted Tiger Edition v3.0 (25.0.1). This allows customers to have a newer version of the CodeScan plug-in while utilizing older versions of SonarQube™.
-
 **Downloads:** After identifying your version of SonarQube, refer to the Installing CodeScan Self-Hosted page to view the [CodeScan Downloads & Compatibility Chart](https://knowledgebase.autorabit.com/product-guides/codescan/system-requirements-and-installation/installing-codescan-self-hosted#codescan-download-versions-and-compatibility-chart).&#x20;
 
-**Future SonarQube Releases:** We aim to have support for the latest versions of SonarQube approximately 12 weeks after their release date. Each version will be supported for 12 months.&#x20;
+**Future SonarQube Releases:** We aim to have support for the latest versions of SonarQube Community builds approximately 12 weeks after their release date. Each version will be supported for 12 months.&#x20;
 
-**Additional Support:** If you have any questions, comments, or concerns, please contact your Account Team directly.&#x20;
+**Additional Support:** If you have any questions, comments, or concerns, please contact your Account Team directly. Alternatively, we invite you to log a Support Case.

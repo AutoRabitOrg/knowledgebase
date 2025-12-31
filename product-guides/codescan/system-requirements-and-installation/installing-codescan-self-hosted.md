@@ -46,7 +46,7 @@ You must have a SonarQube™ server currently running in your environment. If no
 
 The following matrix identifies the current versions of SonarQube™ supported for CodeScan Self-Hosted clients:
 
-## SonarQube™ Compatibility Matrix <a href="#sonarqube-tm-download" id="sonarqube-tm-download"></a>
+## Legacy SonarQube™ Compatibility Matrix <a href="#sonarqube-tm-download" id="sonarqube-tm-download"></a>
 
 Check your SonarQube compatibility in the matrices below based on your CodeScan version.
 

@@ -14,7 +14,7 @@ Please note that once this split occurred, SonarQube released Community Build 24
 
 We have chosen to validate our CodeScan plugin for SonarQube on their Community Builds, as most of our customers use these editions of SonarQube. Our latest two Eagle Editions (v5 and v6) are validated on nearly each of these builds, up to and including Community Build 25.10. We are currently in the process of validating 25.11 and 25.12.  More detailed information can be found in our latest compatibility matrix for CodeScan Eagle v5 and v6. &#x20;
 
-<figure><img src="../../../../.gitbook/assets/unknown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2344).png" alt=""><figcaption></figcaption></figure>
 
 However, we also recognize that some of our customers are running either the Developer, Enterprise, or Data Center editions of SonarQube. As such, we have also listed these corresponding editions within this matrix. Please note that we do not currently validate CodeScan on these editions; however, we believe this information proves useful in determining which of these SonarQube editions should be compatible with CodeScan. Further, we are working closely with the SonarQube Alliances organization and intend to validate CodeScan on all SonarQube editions in the future.&#x20;
 

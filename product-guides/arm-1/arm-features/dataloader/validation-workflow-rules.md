@@ -6,7 +6,7 @@ Validation rules ensure that data entered into a Salesforce record meets specifi
 
 ***
 
-#### Disable Validation Rules & Workflow Rules
+#### Disabling Validation Rules & Workflow Rules
 
 When running a DataLoader job, both the validation rules and workflow rules can be disabled.
 

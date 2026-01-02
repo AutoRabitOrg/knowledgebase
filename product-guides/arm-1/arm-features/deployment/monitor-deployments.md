@@ -1,4 +1,4 @@
-# Monitor Deployments
+# Monitoring Deployment History
 
 {% hint style="info" %}
 The **Deployment History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
@@ -274,7 +274,7 @@ Here is the list of changes that Audit Trail tracks:&#x20;
 * Packages from Salesforce AppExchange that you installed or uninstalled&#x20;
 * Notification delivery settings for custom and standard notification types&#x20;
 
-**Using the application**
+**Using the Application**
 
 * Account team and opportunity team selling settings&#x20;
 * Activating Google Apps services&#x20;

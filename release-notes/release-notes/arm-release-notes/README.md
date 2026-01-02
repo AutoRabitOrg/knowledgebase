@@ -2,27 +2,27 @@
 
 ## ARM Release Notes 26.1.1
 
-**Release Date:** Jan 4, 2026
+**Release Date: 4 January 2026**
 
-**Release Notes:**
-
-Support Case: #160652
+**Support Case: #160652**
 
 **Improved handling of Record Type picklist values in CI delta jobs:** CI jobs now more accurately process Record Type changes when delta is enabled. If picklist values are added or removed, only the actual differences are included in the build as expected. If a Record Type change does not involve picklist values (for example, updating only the description), the generated build file excludes picklist value tags. This prevents unintended dependency issues and ensures existing picklist values in the target org are not accidentally overwritten during deployment.
 
 Impacted Areas: Commits, CI job and Deployments.
 
-Support Case: #173939
+**Support Case: #173939**
 
 **Improved commit stability during concurrent approvals:** Commits no longer fail when reviewers approve multiple commits at the same time. The commit processing logic has been updated to correctly handle queued commits, preventing unnecessary failures and eliminating the need for developers to recommit their changes when approvals occur concurrently.
 
 Impacted Areas: Commits
 
-Support Case: #174471
+**Support Case: #174471**
 
 **Fixed deployment failures when using “Ignore missing visibility settings”:** Deployments using the _Ignore missing visibility settings_ option now work correctly for single-revision delta deployments. An issue where Profile metadata was not fully packaged—resulting in truncated files and deployment failures—has been resolved by improving the file copying mechanism used during deployment processing. This ensures Profile metadata is included correctly and deployments behave consistently with CI jobs.
 
 Impacted Ares: Deployments
+
+***
 
 ## ARM Release Notes 25.4.13
 

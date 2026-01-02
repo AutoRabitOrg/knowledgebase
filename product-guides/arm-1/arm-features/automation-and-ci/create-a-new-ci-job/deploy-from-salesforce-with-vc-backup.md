@@ -1,4 +1,4 @@
-# Deploy from Salesforce with VC backup
+# Deploying from Salesforce with VC backup
 
 {% hint style="info" %}
 **Note:** The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
@@ -17,7 +17,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 1. Choose the tile: **Deploy from Salesforce with a Version Control backup.**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. On the next screen, give the job a descriptive name in the **Job Name** field.
 2. Add a brief **description** of the current CI job.

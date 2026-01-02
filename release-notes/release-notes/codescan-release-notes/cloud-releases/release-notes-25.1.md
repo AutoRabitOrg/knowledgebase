@@ -20,6 +20,235 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
+## CodeScan Release 25.1.17
+
+**Release Date: 04 January 2026**
+
+### Summary
+
+CodeScan 25.1.17 is comprised of the following 5 components:
+
+* 2 New Features
+* 3 Rule Enhancements
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+**1.     Data Flow Analysis**
+
+CodeScan has implanted new logic in some of our rules that detect vulnerabilities. This advanced logic provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.
+
+In this first release, we have added this advanced “source to sink” logic in 3 rules:
+
+* Unescaped Error Message XSS {Rule ID: sf:UnescapedOutput}
+* URL Parameters should be Escaped/Sanitized {Rule ID: sf:UnescapedSource}
+* Avoid Calling SOQL and DML Inside Loops {Rule ID: sf:AvoidSoqlInLoops}
+
+You can find specific details about each of these rules in the “Rule Enhancements” section of these release notes.
+
+**2.     COMING SOON: New GitLeaks Rules in CodeScan**
+
+CodeScan has implanted new logic within the Rules Engine that can detect GitLeaks vulnerabilities.  GitLeaks is a tool for detecting secrets like passwords, API keys, and tokens. We have extended this logic to cover Salesforce specific languages and components including:
+
+* GitLeaks Secret Detection in Apex source files
+* GitLeaks Secret Detection in Salesforce Metadata Files
+* GitLeaks Secret Detection in Visualforce & Lightning Files
+
+Please note that these rules are not yet available for your scans (but will be available soon).  However, these rules are now visible within your CodeScan orgs so that you can begin planning and reviewing for incorporation within your analyses once fully available.
+
+We will provide detailed rule descriptions with the NEW RULES section of the corresponding release notes once they become generally available for use.
+
+**Description**
+
+Implement a GitLeaks rule that triggers scans specifically on Salesforce files, so that all standard and custom GitLeaks rules (e.g., AWS keys, OAuth tokens, passwords, PEM files) are applied to these files, and any detected issues are surfaced directly in CodeScan>Issues.
+
+Implementing GitLeaks rules within CodeScan provides tremendous value to our customers, enabling them to automatically scan Salesforce files and ensure:
+
+* Any secrets or sensitive credentials hardcoded in Apex classes or triggers(\*.cls, \*.trigger), Visualforce pages, Lightning components, etc. will be detected early.
+* Developers will see security issues integrated into their existing CodeScan reports without needing to run GitLeaks separately.
+
+**Value / Purpose**
+
+* Security Guardrail: Prevents exposure of secrets in Salesforce code (API tokens, passwords, OAuth client secrets).
+* Compliance & Governance: Helps organizations enforce security best practices and avoid regulatory violations due to hardcoded secrets.
+
+**Summary**
+
+These rules run GitLeaks on Salesforce source files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
+
+### Rule Enhancements
+
+**1.     Updated the Apex rule “Unescaped Error Message XSS” to include data flow analysis logic {Rule ID: sf:UnescapedOutput}**
+
+([https://autorabit.atlassian.net/browse/CD-7383](https://autorabit.atlassian.net/browse/CD-7383))
+
+**Description**
+
+1\. Reimplement the sf:UnescapedOutput rule to include data flow tracing for variables passed to addError() (e.g., addError(html, false)).
+
+This will determine whether variables originate from unsanitized sources by tracing them across methods and assignments. Use UrlSanitizationRule logic as reference for tracking unescaped values.
+
+2\. Update the issue description to include the exact source variable and its data path before being rendered.
+
+**Hypothesis**\
+If we trace the data flow from unescaped or unsanitized sources to the point of output in addError, developers can clearly see how unsafe data reaches the output layer, making the issue more actionable.
+
+**Value/Purpose**\
+Provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.
+
+&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Verified the data flow tracking logic for unescaped output in Apex is working and the updated description has been applied.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+**2.     Updated the Apex rule “URL Parameters should be Escaped/Sanitized” to include data flow analysis logic {Rule ID: sf:UnescapedSource}**
+
+&#x20;([https://autorabit.atlassian.net/browse/CD-7384](https://autorabit.atlassian.net/browse/CD-7384))
+
+**Description**
+
+1\. Extend the sf:UnescapedSource rule to track the flow of URL parameters retrieved from ApexPages.currentPage().getParameters().get(...).\
+The data flow analysis will identify whether these variables are properly sanitized or escaped before reaching any sensitive sink or being rendered.
+
+2\. Update issue descriptions to show both the untrusted source and its usage path.
+
+**Hypothesis**\
+If the system highlights the full journey of parameters from getParameters() to their usage points, developers will better understand how unescaped data can lead to vulnerabilities and where sanitization is missing.
+
+**Value/Purpose**\
+Enables developers to pinpoint missing sanitization in their Apex controllers by visualizing data flow paths, thus improving the security posture of Visualforce and Lightning pages.
+
+**Acceptance Criteria**
+
+public class ClassAbc {
+
+&#x20; public Foo() {
+
+&#x20;   String unescapedstring = ApexPages.currentPage().getParameters().get('url\_param');
+
+&#x20; &#x20;
+
+&#x20;   someOtherFunction(unescapedstring);    //Bad: this string is used elsewhere and may lead to an XSS vulnerability
+
+&#x20;   someOtherFunction(integer.valueof(unescapedstring));   //Good: the string is safely checked as an integer&#x20;
+
+&#x20; }
+
+}
+
+&#x20;
+
+**Existing Message**: URL parameters should be escaped/sanitized XSS
+
+**Updated Message**: URL parameters should be escaped/sanitized XSS. Data Flow Trace -
+
+&#x20; DECLARATION (ClassAbc.Foo line: 3)
+
+The rule behavior was validated by testing multiple scenarios involving URL parameters retrieved using ApexPages.currentPage().getParameters().get(...). on Preview Instance.
+
+Verified scenarios:
+
+* Usage after type validation with Integer.valueOf() — no violation raised (expected behavior).
+* Direct usage of URL parameters without sanitization — violation raised.
+* Propagation of URL parameters through variable assignment without sanitization — violation raised.
+* Passing URL parameters through multiple methods without sanitization — violation raised with correct data flow trace.
+* Usage of URL parameters in dynamic SOQL without sanitization — violation raised.
+
+For all violating cases, the rule correctly reported the issue with an appropriate data flow trace (e.g., declaration point and usage path). The observed results match the expected behavior.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+**3.     Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops” to include data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
+
+([https://autorabit.atlassian.net/browse/CD-7388](https://autorabit.atlassian.net/browse/CD-7388))
+
+**Description**
+
+Refine the issue description for sf:AvoidSoqlInLoops to clearly identify the loop structure and the query being executed inside it.\
+Include variable references and contextual flow details showing how data or parameters within the loop lead to repeated queries.
+
+**Hypothesis**\
+Providing contextual information about where and how SOQL queries are invoked within loops will improve developer understanding and reduce rework in optimizing code performance.
+
+**Value/Purpose**\
+Enhances readability and educational value of performance warnings by showing contextual flow, helping developers refactor code more efficiently.
+
+**Acceptance Criteria**
+
+public class CaseProcessor {
+
+&#x20;
+
+&#x20;   public void processAllCases(List\<Case> caseList) {
+
+&#x20;       // LOOP
+
+&#x20;       for (Case c : caseList) {
+
+&#x20;           processCase(c);                     // hop 1
+
+&#x20;       }
+
+&#x20;   }
+
+&#x20;
+
+&#x20;   void processCase(Case c) {
+
+&#x20;       fetchOwnerDetails(c.OwnerId);           // hop 2
+
+&#x20;   }
+
+&#x20;
+
+&#x20;   List\<User> fetchOwnerDetails(Id ownerId) {
+
+&#x20;       return \[
+
+&#x20;           SELECT Id, Name FROM User
+
+&#x20;           WHERE Id = :ownerId                // SINK (SOQL)
+
+&#x20;       ];
+
+&#x20;   }
+
+}
+
+**Existing Message:**
+
+Avoid running SOQL and DML inside loops.  Loop Trace : CaseProcessor.fetchOwnerDetails: line 16 --> CaseProcessor.processCase: line 11 --> CaseProcessor.processAllCases: line 6
+
+**Updated Message:**
+
+Avoid Running Soql and DML inside loops. Data Flow Trace -
+
+&#x20; SOQL (CaseProcessor.fetchOwnerDetails: line 16) -->
+
+&#x20; CALL (CaseProcessor.processCase: line 11) -->
+
+&#x20; LOOP (CaseProcessor.processAllCases: line 6)&#x20;
+
+Executed the following scenarios and validated that the advanced logic is working as expected.
+
+* Verified the updated behavior of the sf:AvoidSoqlInLoops rule.
+* Multi-hop scenarios (loop → method → method → SOQL) correctly show the full Data Flow Trace with SOQL → CALL → LOOP.
+* Direct SOQL-in-loop scenarios correctly show the simplified message, which is the expected behavior.
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+***
+
 ## CodeScan Release 25.1.16
 
 **Release Date: 14 December 2025**
@@ -268,7 +497,7 @@ To improve coverage, we enhanced the rule logic to include these Assert class sc
 \
 If you just want a test to halt after finding an error, use the System.assert(false, 'message') or Assert.isFalse(false, 'message') methods and provide an indication message of why it did.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (12).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Verified the following scenarios are working as expected:
 
@@ -279,7 +508,7 @@ If you just want a test to halt after finding an error, use the System.assert(fa
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2) (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -312,9 +541,9 @@ _“vf:RequireConfirmationToken” getting triggered only_ when the correspondin
 
 * Verified the rule behavior using by uploading only page file and then with corresponding meta.xml file with true and meta.xml file with false.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (9).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -331,7 +560,7 @@ Verified that the below scenarios are working as expected.
 * Verified that the rule does not throw out of bounds exceptions in the analysis logs (it should not throw this and, as such, has been validated as working as expected).
 * Verified “sf:MaximumNumberOfCase” rule is triggered only when the maximum limit is exceeded.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (10).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -339,7 +568,7 @@ Verified that the below scenarios are working as expected.
 
 Some customers reported an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (10).png" alt=""><figcaption></figcaption></figure>
 
 This fix remediates that issue in full.
 
@@ -718,7 +947,7 @@ _of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80
 
 Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -819,10 +1048,10 @@ We have verified the fix via the following scenarios and confirm that Admins are
 
 1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Admins can also view the records displayed in the correct order under the All tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -2282,7 +2511,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -2310,7 +2539,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -3002,7 +3231,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

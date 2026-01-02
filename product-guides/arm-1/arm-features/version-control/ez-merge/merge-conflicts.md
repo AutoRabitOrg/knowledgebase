@@ -26,7 +26,7 @@ To do so,
 
 1. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
    * ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
@@ -40,7 +40,7 @@ To do so,
 
 1. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="362"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** If there is a conflict related to file tree, then GIT shows that the file does not have any conflicts.

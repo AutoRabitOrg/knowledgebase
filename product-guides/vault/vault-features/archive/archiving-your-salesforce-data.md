@@ -54,7 +54,7 @@ Validate your query to see whether the criteria set is correct and view the numb
         2. On selecting the required automation configurations, continue to **“Save Config”**.
         3.  Once saved, the set job configurations can be observed under the **“Archive Config Details”**.
 
-            <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
         4.  Clicking the information icon under the **"Archive Config Details"** column opens a pop-up displaying the configuration details associated with the respective archive job. This provides a quick view of the selected archive parameters without navigating away from the main screen.
 
             <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -112,7 +112,7 @@ This provision is useful in filtering the “backed up” and archived records. 
 3. Click on the “Label Name” to open the backup details
 4.  On landing on the backup details section, click on the “Records”
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. On opening the backup “Records”, observe the “Downloads” option.
 6.  The download has three values in the drop-down
 
@@ -120,7 +120,7 @@ This provision is useful in filtering the “backed up” and archived records. 
     2. Download Records On Screen
     3. Download Filtered Results
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. 6\.    Download All Records: Selecting this option will download all the backed up records
 8.  7\.    Download Record On Screen: Selecting this option will download all the records available on that current page
 

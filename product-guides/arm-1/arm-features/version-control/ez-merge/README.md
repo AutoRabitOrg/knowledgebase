@@ -78,7 +78,7 @@ Select the commit labels created while committing to the Version Control System.
 
 For example, **DXTES-19\_EZ-Commit:** here, **DXTES-19** indicates the _commit label_ _name_, and **EZ-Commit** denotes the label created during the **EZ-Commit** process.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
 
@@ -208,7 +208,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 1. **Back Merge Indicator**:
    * After performing the merge, you will see an indicator confirming that the validation is being skipped automatically as it is a back merge.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Prevalidate Merge <a href="#prevalidate-merge" id="prevalidate-merge"></a>
 

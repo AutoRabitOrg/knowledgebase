@@ -70,6 +70,7 @@
       * [AR GovCloud Release Notes](release-notes/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/README.md)
         * [CodeScan Release Notes (GovCloud)](release-notes/release-notes/ar-govcloud-documentation/ar-govcloud-release-notes/codescan-release-notes-govcloud.md)
   * [nCino Release Notes](release-notes/release-notes/ncino-release-notes/README.md)
+    * [nCino Release Notes 26.0](release-notes/release-notes/ncino-release-notes/ncino-release-notes-26.0.md)
     * [nCino Release Notes 25.4](release-notes/release-notes/ncino-release-notes/ncino-release-notes-25.4.md)
     * [nCino Release Notes 25.3](release-notes/release-notes/ncino-release-notes/ncino-release-notes-25.3.md)
     * [nCino Release Notes 25.2](release-notes/release-notes/ncino-release-notes/release-notes-25.2.md)

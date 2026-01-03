@@ -1,5 +1,7 @@
 # ARM Release Notes
 
+{% @mailchimp/mailchimpSubscribe cta="ARM Release Notes Mailing List:" %}
+
 ## ARM Release Notes 26.1.1
 
 **Release Date: 4 January 2026**

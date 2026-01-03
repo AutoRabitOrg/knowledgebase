@@ -20,7 +20,7 @@ Impacted Areas: Commits
 
 **Fixed deployment failures when using “Ignore missing visibility settings”:** Deployments using the _Ignore missing visibility settings_ option now work correctly for single-revision delta deployments. An issue where Profile metadata was not fully packaged—resulting in truncated files and deployment failures—has been resolved by improving the file copying mechanism used during deployment processing. This ensures Profile metadata is included correctly and deployments behave consistently with CI jobs.
 
-Impacted Ares: Deployments
+Impacted Areas: Deployments
 
 ***
 

@@ -32,6 +32,8 @@ Together, these products form the industry’s most complete DevSecOps solution 
 * **How-To Tutorials**\
   Get practical. Resolve common challenges, optimize configurations, and apply best practices confidently.
 
+{% @mailchimp/mailchimpSubscribe cta="Release Notes Mailing List:" %}
+
 ***
 
 #### Can’t Find What You’re Looking For?

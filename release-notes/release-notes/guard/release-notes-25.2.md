@@ -1,5 +1,7 @@
 # Guard Release Notes 25.2
 
+{% @mailchimp/mailchimpSubscribe cta="Guard Release Notes Mailing List:" %}
+
 ## Guard 25.2.9 Release Notes
 
 **Release Date:  3 December 2025**&#x20;

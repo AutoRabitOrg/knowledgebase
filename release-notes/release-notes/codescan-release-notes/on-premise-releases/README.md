@@ -1,5 +1,7 @@
 # Self-Hosted Releases
 
+{% @mailchimp/mailchimpSubscribe cta="CodeScan Release Notes Mailing List:" %}
+
 ### CodeScan Self-Hosted Editions: Latest Release Dates &#x20;
 
 Our latest release of CodeScan is our Eagle Edition v6 (25.1.3), which was released in December 2025. Please refer to the release notes for [Eagle Edition v6](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0) for complete documentation of features.&#x20;

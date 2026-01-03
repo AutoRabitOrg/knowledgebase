@@ -7,3 +7,7 @@ CodeScan for Government is a secure, compliance-focused solution designed to mee
 
 \
 &#xNAN;_**Please note: Access to CodeScan for Government release notes is currently limited to government license holders only**._
+
+
+
+{% @mailchimp/mailchimpSubscribe cta="CodeScan Release Notes Mailing List:" %}

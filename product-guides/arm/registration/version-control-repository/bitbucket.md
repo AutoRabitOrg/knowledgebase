@@ -34,6 +34,22 @@ This is an initial step where you store your user's credential (usually a userna
 
 To authenticate Bitbucket, you’ll have to use **API Token** instead of the regular password to login to your Bitbucket account.
 
+For ARM and Bitbucket connectivity to work end-to-end, you will need the following minimal permissions to be enabled as part of the API scope:
+
+* admin:project:bitbucket
+* admin:repository:bitbucket
+* read:account
+* read:me
+* read:permission:bitbucket
+* read:project:bitbucket
+* read:pullrequest:bitbucket
+* read:repository:bitbucket
+* read:webhook:bitbucket
+* write:permission:bitbucket
+* write:pullrequest:bitbucket
+* write:repository:bitbucket
+* write:webhook:bitbucket
+
 ### Creating an API Token
 
 1. Go to **Settings** → **Account settings** (Atlassian account settings)

@@ -1,6 +1,4 @@
-# Upgrade Guides
-
-## Instance Upgrade Requests
+# Instance Upgrade Requests
 
 ### Introduction
 

@@ -1,16 +1,8 @@
-# Upgrade Guides
-
-## On-Premises Upgrade Document
-
-### Version 22.3 to 23.1
-
-{% file src="../../../.gitbook/assets/ARM On-Premises Upgrade 22.3 to 23.1 March 2024 (1).pdf" %}
-
-## Instance Upgrade Requests
+# Dedicated Instance Upgrade Requests 
 
 ### Introduction
 
-To ensure a seamless instance upgrade, please follow the instructions below to schedule downtime with the AutoRABIT Support Team.
+To ensure a seamless instance upgrade (for dedicated instance only), please follow the instructions below to schedule downtime with the AutoRABIT Support Team.
 
 ### Overview
 

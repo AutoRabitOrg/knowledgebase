@@ -30,6 +30,7 @@ CodeScan 25.1.17 is comprised of the following 5 components:
 
 * 2 New Features
 * 3 Rule Enhancements
+* 1 Fix
 
 Component details are listed in their corresponding sections within this document.
 
@@ -248,6 +249,10 @@ Executed the following scenarios and validated that the advanced logic is workin
 
 
 ***
+
+### Fixes
+
+1. **Improved License Limit Enforcement**: When a customer exceeds their licensed limits, CodeScan will no longer block access to the platform or restrict any previously licensed features. Customers can continue to use all features they are entitled to without interruption, ensuring uninterrupted workflows while they address licensing limits.
 
 ## CodeScan Release 25.1.16
 

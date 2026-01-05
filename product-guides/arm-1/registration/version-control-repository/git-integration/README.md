@@ -6,13 +6,13 @@
 
 ### What is a Git host? <a href="#what-is-a-git-host" id="what-is-a-git-host"></a>
 
-A Git host is a service provider who hosts Git repositories. Git hosts may be on the cloud or in corporate on-premise infrastructure. A Git host provides a central place for teams to synchronize their changes, provides a central backup of the Git repository, and provides other services such as APIs, a user interface, and the ability to create merge requests (aka pull requests). There are many Git hosts. The most popular ones are:
+A Git host is a service provider who hosts Git repositories. Git hosts may be on the cloud or in corporate, on-premises infrastructure. A Git host provides a central place for teams to synchronize their changes, provides a central backup of the Git repository, and provides other services such as APIs, a user interface, and the ability to create merge requests (aka pull requests). There are many Git hosts. The most popular ones are:
 
 * GitHub
-* BitBucket
+* Bitbucket
 * GitLab
 * Azure Repos
-* AWS CodeCommit (not accepting new customers)
+* AWS Code Commit (not accepting new customers)
 
 ### Prerequisites for registering a Git repository with ARM <a href="#prerequisites-for-registering-git-with-arm" id="prerequisites-for-registering-git-with-arm"></a>
 

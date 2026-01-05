@@ -1,6 +1,6 @@
-# Creation of a TFS Branch
+# Creating a TFS Branch
 
-### Creation of a TFS Branch <a href="#creation-of-a-tfs-branch" id="creation-of-a-tfs-branch"></a>
+### Creating a Team Foundation Server (TFS) Branch <a href="#creation-of-a-tfs-branch" id="creation-of-a-tfs-branch"></a>
 
 1. Log in to your ARM account.
 2. Go to the **`Repositories`**` ``tab.`
@@ -22,7 +22,7 @@
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677743479516.png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Registration of an existing TFS branch <a href="#registration-of-an-existing-tfs-branch" id="registration-of-an-existing-tfs-branch"></a>
+### Registering an existing TFS branch <a href="#registration-of-an-existing-tfs-branch" id="registration-of-an-existing-tfs-branch"></a>
 
 1. On the **`VC Repo's`** page, select a TFS repository from the **`Repository List`**.
 2.  Click on **`Register`**.<br>

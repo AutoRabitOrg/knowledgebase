@@ -1,6 +1,6 @@
-# Creation of SVN Branch
+# Creating an SVN Branch
 
-### Creation of SVN Branch <a href="#creation-of-svn-branch" id="creation-of-svn-branch"></a>
+### Creating an SVN Branch <a href="#creation-of-svn-branch" id="creation-of-svn-branch"></a>
 
 1. Log in to your ARM account.
 2. Go to the **`Repositories`** tab.
@@ -16,7 +16,7 @@
 
     <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1677741239425.png" alt="" width="375"><figcaption></figcaption></figure>
 
-### Registration of an existing SVN branch <a href="#registration-of-an-existing-svn-branch" id="registration-of-an-existing-svn-branch"></a>
+### Registering an existing SVN branch <a href="#registration-of-an-existing-svn-branch" id="registration-of-an-existing-svn-branch"></a>
 
 1.  On the **`VC Repo's`** page, select one SVN repository from the **`Repository List`**.<br>
 

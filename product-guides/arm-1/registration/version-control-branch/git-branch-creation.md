@@ -1,4 +1,4 @@
-# GIT Branch Creation
+# Creating a GIT Branch
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -6,7 +6,7 @@ Developers can create a branch to work on a new version of an existing applicati
 
 Creating a new branch for each task is a common practice because it allows others to identify what changes to expect and, for backtracking purposes, to understand why a particular code change is implemented.
 
-### Creation of a GIT Branch <a href="#creation-of-a-git-branch" id="creation-of-a-git-branch"></a>
+### Creating a GIT Branch <a href="#creation-of-a-git-branch" id="creation-of-a-git-branch"></a>
 
 1. Log in to your ARM account.
 2.  From the ARM home page, click on the **`Admin`** module and go to the **`VC Repo's`** tab.<br>
@@ -27,7 +27,7 @@ Creating a new branch for each task is a common practice because it allows other
 
 6. Click **`Create`** to complete the creation process.
 
-### Registration of an existing GIT branch <a href="#registration-of-an-existing-git-branch" id="registration-of-an-existing-git-branch"></a>
+### Registering an existing GIT branch <a href="#registration-of-an-existing-git-branch" id="registration-of-an-existing-git-branch"></a>
 
 1. On the **`Repositoires`** page, select a GIT repository from the repositories list.
 2.  Click **`Register`**.<br>
@@ -41,7 +41,7 @@ Creating a new branch for each task is a common practice because it allows other
 
     <figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-### Registration of nCino configured GIT branch <a href="#registration-of-ncino-configured-git-branch" id="registration-of-ncino-configured-git-branch"></a>
+### Registering an nCino-configured GIT branch <a href="#registration-of-ncino-configured-git-branch" id="registration-of-ncino-configured-git-branch"></a>
 
 1. On the **`Version Control Repositories`** page, select a GIT repository marked with the **`nCino`** logo.
 2.  Click **`Register`**.<br>

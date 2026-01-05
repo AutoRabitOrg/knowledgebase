@@ -1,6 +1,7 @@
 # TFS
 
-Integrating a **Team Foundation Server (TFS)** repository with AutoRABIT (ARM) lets you automate commits, merges, and CI/CD pipelines against code stored in your on-premises or Azure DevOps–hosted TFS project.\
+Integrating a **Team Foundation Server (TFS)** repository with AutoRABIT (ARM) lets you automate commits, merges, and CI/CD pipelines against code stored in your on-premises or Azure DevOps–hosted TFS project.
+
 The steps below show an Org Admin how to register a TFS repo so ARM can authenticate, index metadata, and launch jobs.
 
 ***

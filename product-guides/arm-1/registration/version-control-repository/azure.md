@@ -1,6 +1,6 @@
 # Azure
 
-## Steps to register AzureDevOps Repository/ VCS within ARM
+## Steps to register AzureDevOps Repository/VCS within ARM
 
 ### #1 Prerequisites for registering Azure with ARM
 

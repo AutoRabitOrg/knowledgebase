@@ -1,4 +1,4 @@
-# non-SFDX Repos
+# Configuring Metadata Folder Paths
 
 ## Overview
 
@@ -18,7 +18,7 @@ This step must be completed immediately after branch creation or registration.
 
 ### Why It Matters
 
-If the metadata folder path is not correctly set for non-default folder structures, metadata changes will not be detected when triggering CI jobs, which can lead to failed or incomplete deployments.
+If the metadata folder path is not correctly set up for non-default folder structures, metadata changes will not be detected when triggering CI jobs, which can lead to failed or incomplete deployments.
 
 **When Using the Default SFDX Structure**
 

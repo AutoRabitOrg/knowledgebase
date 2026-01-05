@@ -1,4 +1,4 @@
-# Automation and CI
+# Automation and CI Jobs
 
 ### What is Continuous Integration? <a href="#what-is-continuous-integration" id="what-is-continuous-integration"></a>
 
@@ -24,3 +24,8 @@ For example, even if only a `.csv` file is committed, the CI job includes all fi
 
 **Recommended Approach:**\
 Before committing changes, **manually clean the Static Resource folder** in the branch to ensure only intended files are present. Use **destructive changes** if you need to remove obsolete metadata components.
+
+
+
+For the answer to many other CI Job FAQs, visit the [FAQ page](../../../arm/troubleshoot/arm-faqs/ci-jobs.md).&#x20;
+

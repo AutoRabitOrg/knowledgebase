@@ -12,9 +12,9 @@ A new search and filtering panel makes it easier to locate objects, navigate com
 
 <figure><img src="../../../.gitbook/assets/Release Notes Screenshot - 1.png" alt=""><figcaption></figcaption></figure>
 
-#### **Vulnerability Patches Updated** <a href="#vulnerability-patches-updated" id="vulnerability-patches-updated"></a>
+#### **Security Updates** <a href="#security-vulnerability-patch-updates" id="security-vulnerability-patch-updates"></a>
 
-Addressed customer-reported vulnerabilities in the Vault 25.2 release by applying the required security patches. This update strengthens platform security and ensures continued compliance with the latest security standards.
+Applied security enhancements to address the latest identified vulnerabilities.
 
 #### **Improved Large Dataset Export Handling** <a href="#improved-large-dataset-export-handling" id="improved-large-dataset-export-handling"></a>
 
@@ -42,7 +42,7 @@ Resolved an issue in **Masking** where the **Suffix** masking rule incorrectly p
 
 #### **Enhancement: Backup Stability Improved for Share Object** <a href="#enhancement-backup-stability-improved-for-share-object" id="enhancement-backup-stability-improved-for-share-object"></a>
 
-Addressed a performance limitation where incremental backups on the **Share** object could time out when large datasets were filtered using a `LastModifiedDate` range. Engineering has introduced optimizations to improve query handling for high-volume environments, ensuring greater stability for both full and incremental backups.
+Addressed a performance limitation where incremental backups on the **Share** object could time out when large datasets were filtered using a `LastModifiedDate` range. Introduced optimizations to improve query handling for high-volume environments, ensuring greater stability for both full and incremental backups.
 
 #### **MFA OTP Validation Failure During SSO Login** <a href="#mfa-otp-validation-failure-during-sso-login" id="mfa-otp-validation-failure-during-sso-login"></a>
 
@@ -70,29 +70,21 @@ Secrets are no longer stored in application configs and can now be centrally con
 
 #### **Salesforce API Upgrade for Upcoming Platform Releases** <a href="#salesforce-api-upgrade-for-upcoming-platform-releases" id="salesforce-api-upgrade-for-upcoming-platform-releases"></a>
 
-Vault has been upgraded to use the latest Salesforce API versions (v63,v64 & v65) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations—SOAP, REST, Bulk, and Tooling APIs—are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
+Vault has been upgraded to use the latest Salesforce API versions (v63,v64 & v65) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
 
 #### **Salesforce SOAP Login Deprecation Notice**
 
 Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth (JWT Bearer) authentication to ensure uninterrupted connectivity. The migration can be done through Connections → \{{ConnectionName\}} → Migrate to OAuth, followed by the on-screen steps to confirm the connection status as “OAuth (JWT)”.
 
-#### **Enhanced MFA Security for JWT Authentication** <a href="#enhanced-mfa-security-for-jwt-authentication" id="enhanced-mfa-security-for-jwt-authentication"></a>
+#### **Enhanced MFA Security for Authentication** <a href="#enhanced-mfa-security-for-jwt-authentication" id="enhanced-mfa-security-for-jwt-authentication"></a>
 
-A fix has been implemented to enforce proper MFA validation during JWT-based login.\
+A fix has been implemented to enforce proper MFA validation during login.\
 Previously, users could authenticate without providing the required OTP when MFA was enabled.\
 The updated flow now ensures OTP verification is mandatory, restoring full MFA security compliance.
 
-#### **Stateless Session Management Enforcement** <a href="#stateless-session-management-enforcement" id="stateless-session-management-enforcement"></a>
+#### **Security Updates** <a href="#security-vulnerability-patch-updates" id="security-vulnerability-patch-updates"></a>
 
-Spring Security is now explicitly configured to use stateless session management, preventing unnecessary HTTP session creation in our JWT-based REST architecture.
-
-#### **Fix for Backup Schedule Update Failure** <a href="#fix-for-backup-schedule-update-failure" id="fix-for-backup-schedule-update-failure"></a>
-
-Resolved a _502 Bad Gateway_ error that occurred when updating scheduled backup configurations for the **GS Prod** org by optimizing the request payload during save operations.
-
-#### **Security Vulnerability Patch Updates** <a href="#security-vulnerability-patch-updates" id="security-vulnerability-patch-updates"></a>
-
-Addressed and upgraded identified vulnerability patches in the ARVault 25.2 release to ensure strengthened security and compliance.
+Applied security enhancements to address the latest identified vulnerabilities.
 
 ***
 

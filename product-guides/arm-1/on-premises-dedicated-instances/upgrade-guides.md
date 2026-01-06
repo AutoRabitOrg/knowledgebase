@@ -1,12 +1,4 @@
-# Upgrade Guides
-
-## On-Premises Upgrade Document
-
-### Version 22.3 to 23.1
-
-{% file src="../../../.gitbook/assets/ARM On-Premises Upgrade 22.3 to 23.1 March 2024 (1).pdf" %}
-
-## Instance Upgrade Requests
+# Dedicated Instance Upgrades
 
 ### Introduction
 
@@ -24,8 +16,8 @@ If you wish to proceed with an upgrade after reviewing the release notes, please
 
 You may select one of the following maintenance windows for your instance upgrade:
 
-* **Slot 1:** 8:30 p.m. – 12:30 a.m. PST
-* **Slot 2:** 1:00 a.m. – 5:00 a.m. PST
+* **Slot 1:** 8:30 PM – 12:30 AM PST
+* **Slot 2:** 1:00 AM – 5:00 AM PST
 
 ### Requesting Downtime
 

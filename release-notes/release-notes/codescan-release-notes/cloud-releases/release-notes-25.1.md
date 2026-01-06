@@ -157,13 +157,13 @@ For all violating cases, the rule correctly reported the issue with an appropria
 
 <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-**3.     Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops” to include data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
+**3.     Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops”  message to include detailed data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
 
 ([https://autorabit.atlassian.net/browse/CD-7388](https://autorabit.atlassian.net/browse/CD-7388))
 
 **Description**
 
-Refine the issue description for sf:AvoidSoqlInLoops to clearly identify the loop structure and the query being executed inside it.\
+Refine the issue message for sf:AvoidSoqlInLoops to clearly identify the loop structure and the query being executed inside it.\
 Include variable references and contextual flow details showing how data or parameters within the loop lead to repeated queries.
 
 **Hypothesis**\

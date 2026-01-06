@@ -125,23 +125,15 @@ Enables developers to pinpoint missing sanitization in their Apex controllers by
 
 **Acceptance Criteria**
 
+```java
 public class ClassAbc {
-
-&#x20; public Foo() {
-
-&#x20;   String unescapedstring = ApexPages.currentPage().getParameters().get('url\_param');
-
-&#x20; &#x20;
-
-&#x20;   someOtherFunction(unescapedstring);    //Bad: this string is used elsewhere and may lead to an XSS vulnerability
-
-&#x20;   someOtherFunction(integer.valueof(unescapedstring));   //Good: the string is safely checked as an integer&#x20;
-
-&#x20; }
-
+  public Foo() {
+    String unescapedstring = ApexPages.currentPage().getParameters().get('url_param');
+    someOtherFunction(unescapedstring);    //Bad: this string is used elsewhere and may lead to an XSS vulnerability
+    someOtherFunction(integer.valueof(unescapedstring));   //Good: the string is safely checked as an integer 
+  }
 }
-
-&#x20;
+```
 
 **Existing Message**: URL parameters should be escaped/sanitized XSS
 
@@ -182,45 +174,28 @@ Enhances readability and educational value of performance warnings by showing co
 
 **Acceptance Criteria**
 
+```csharp
 public class CaseProcessor {
-
-&#x20;
-
-&#x20;   public void processAllCases(List\<Case> caseList) {
-
-&#x20;       // LOOP
-
-&#x20;       for (Case c : caseList) {
-
-&#x20;           processCase(c);                     // hop 1
-
-&#x20;       }
-
-&#x20;   }
-
-&#x20;
-
-&#x20;   void processCase(Case c) {
-
-&#x20;       fetchOwnerDetails(c.OwnerId);           // hop 2
-
-&#x20;   }
-
-&#x20;
-
-&#x20;   List\<User> fetchOwnerDetails(Id ownerId) {
-
-&#x20;       return \[
-
-&#x20;           SELECT Id, Name FROM User
-
-&#x20;           WHERE Id = :ownerId                // SINK (SOQL)
-
-&#x20;       ];
-
-&#x20;   }
-
+ 
+    public void processAllCases(List<Case> caseList) {
+        // LOOP
+        for (Case c : caseList) {
+            processCase(c);                     // hop 1
+        }
+    }
+ 
+    void processCase(Case c) {
+        fetchOwnerDetails(c.OwnerId);           // hop 2
+    }
+ 
+    List<User> fetchOwnerDetails(Id ownerId) {
+        return [
+            SELECT Id, Name FROM User
+            WHERE Id = :ownerId                // SINK (SOQL)
+        ];
+    }
 }
+```
 
 **Existing Message:**
 
@@ -287,35 +262,23 @@ Improves clarity and helps prioritize high-risk SSRF issues by showing the compl
 
 Code Example:
 
+```java
 public class Negative {
-
-&#x20; public void otherMethod() {
-
-&#x20;   String oneMore = 'somethingHere';
-
-&#x20;   init(oneMore);
-
-&#x20; }
-
-&#x20;
-
-&#x20; public PageReference init(String Lastname){
-
-&#x20;     String FirstName = getName();
-
-&#x20;     try {
-
-&#x20;       HttpRequest req = new HttpRequest();
-
-&#x20;       req.setEndpoint('callout:Third\_Party\_Authorization/v1'+Lastname);
-
-&#x20;       request.setMethod ('POST');
-
-&#x20;     }
-
-&#x20; }
-
+  public void otherMethod() {
+    String oneMore = 'somethingHere';
+    init(oneMore);
+  }
+ 
+  public PageReference init(String Lastname){
+      String FirstName = getName();
+      try {
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint('callout:Third_Party_Authorization/v1'+Lastname);
+        request.setMethod ('POST');
+      }
+  }
 }
+```
 
 &#x20;
 
@@ -372,35 +335,23 @@ Sanitize input to avoid possible resource injection. Data Flow Trace : APIVersio
 
 Code Example:
 
+```java
 public class Negative {
-
-&#x20; public void otherMethod() {
-
-&#x20;   String oneMore = 'somethingHere';
-
-&#x20;   init(oneMore);
-
-&#x20; }
-
-&#x20;
-
-&#x20; public PageReference init(String Lastname){
-
-&#x20;     String FirstName = getName();
-
-&#x20;     try {
-
-&#x20;       HttpRequest req = new HttpRequest();
-
-&#x20;       req.setEndpoint('/Third\_Party\_Authorization/v1'+Lastname);
-
-&#x20;       request.setMethod ('POST');
-
-&#x20;     }
-
-&#x20; }
-
+  public void otherMethod() {
+    String oneMore = 'somethingHere';
+    init(oneMore);
+  }
+ 
+  public PageReference init(String Lastname){
+      String FirstName = getName();
+      try {
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint('/Third_Party_Authorization/v1'+Lastname);
+        request.setMethod ('POST');
+      }
+  }
 }
+```
 
 **Existing Message**:
 

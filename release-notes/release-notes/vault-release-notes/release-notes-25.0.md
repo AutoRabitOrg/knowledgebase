@@ -24,7 +24,6 @@ Vault now supports exporting up to **1 million records per Excel file**, automat
 
 * **Disabled the delete option for in-progress masking jobs** to ensure that active jobs cannot be removed while execution is underway.
 * **Corrected automation rule handling** by using proper object API names, ensuring triggers and validation rules are disabled during masking.
-* **No product changes made** for extended job duration, as the issue was not reproducible and appears to be Salesforce-related.
 
 #### **SSO Metadata File Upload Failure** <a href="#sso-metadata-file-upload-failure" id="sso-metadata-file-upload-failure"></a>
 
@@ -78,9 +77,7 @@ Salesforce has deprecated the “username + password + security token” authent
 
 #### **Enhanced MFA Security for Authentication** <a href="#enhanced-mfa-security-for-jwt-authentication" id="enhanced-mfa-security-for-jwt-authentication"></a>
 
-A fix has been implemented to enforce proper MFA validation during login.\
-Previously, users could authenticate without providing the required OTP when MFA was enabled.\
-The updated flow now ensures OTP verification is mandatory, restoring full MFA security compliance.
+Multi-factor authentication (MFA) has been further strengthened with the introduction of an additional security layer, enhancing protection against unauthorized access.
 
 #### **Security Updates** <a href="#security-vulnerability-patch-updates" id="security-vulnerability-patch-updates"></a>
 

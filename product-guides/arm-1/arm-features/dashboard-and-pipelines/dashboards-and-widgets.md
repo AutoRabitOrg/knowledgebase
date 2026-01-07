@@ -34,7 +34,7 @@ Filters refine the Dashboard view. To begin, click the **Filter** icon located a
 
 ***
 
-### Use Dashboards to: <a href="#use-dashboards-to" id="use-dashboards-to"></a>
+### **Use Dashboards to:** <a href="#use-dashboards-to" id="use-dashboards-to"></a>
 
 * Monitor daily Salesforce Org activities.
 * Access frequently used information.

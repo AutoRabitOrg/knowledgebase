@@ -1,6 +1,6 @@
-# Automation and CI Jobs
+# Run Automatic CI Builds and Checks (CI Jobs)
 
-### What is Continuous Integration? <a href="#what-is-continuous-integration" id="what-is-continuous-integration"></a>
+### What is Continuous Integration? - CI Jobs <a href="#what-is-continuous-integration" id="what-is-continuous-integration"></a>
 
 Continuous Integration (CI) is a software development best practice of automating your test suite, so all your integration and unit tests run on every merge or pull request automatically. This way you know before you merge if problems are going to be introduced. You use a CI tool with a [Version Control System](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) (VCS) and it is best practice to require a review via pull request and enforce passing tests before the pull request can be merged. Early fixes save your company money and keep your team and users happy.
 

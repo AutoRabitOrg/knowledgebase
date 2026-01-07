@@ -657,7 +657,7 @@
     * [Deploy to Salesforce](product-guides/arm-1/arm-features/deployment/README.md)
       * [Connect & Sync Your Salesforce Orgs](product-guides/arm-1/arm-features/deployment/connecting-and-syncing-salesforce-orgs.md)
       * [Create & Deploy Changes](product-guides/arm-1/arm-features/deployment/create-and-deploy-changes-in-autorabit.md)
-      * [Delete Components in Salesforce](product-guides/arm-1/arm-features/deployment/destructive-changes.md)
+      * [Remove Components from an Org](product-guides/arm-1/arm-features/deployment/destructive-changes.md)
       * [Deploy Profiles & Permission Sets](product-guides/arm-1/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
       * [Run Apex Tests Before Deployment](product-guides/arm-1/arm-features/deployment/apex-unit-tests.md)
       * [Track Deployment History](product-guides/arm-1/arm-features/deployment/monitor-deployments.md)

@@ -1,4 +1,4 @@
-# Feature Deployment Summary
+# Feature Deployments
 
 ### Feature Deployment <a href="#feature-deployment" id="feature-deployment"></a>
 
@@ -10,7 +10,7 @@ The **Feature Deployment History** lists every deployment you have previously ru
 
 ### Accessing Feature Deployment History Page <a href="#accessing-feature-deployment-history-page" id="accessing-feature-deployment-history-page"></a>
 
-You can visit **ncino > Deployment History** to view the Feature Deployment summary page or you'll be auto-redirected to this page whenever you trigger a deployment (using Feature Deployment).
+You can visit **nCino > Deployment History** to view the Feature Deployment summary page or you'll be auto-redirected to this page whenever you trigger a deployment (using Feature Deployment).
 
 <figure><img src="../../../../../.gitbook/assets/image (48) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -117,3 +117,4 @@ Once the deployment is re-triggered, a new iteration gets auto-generated with ne
 {% hint style="info" %}
 **Important Note**: AutoRABIT recommends fixing the errors generated and redeploying the process once again until the status changes to **Success**.
 {% endhint %}
+

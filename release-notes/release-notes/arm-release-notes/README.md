@@ -4,7 +4,7 @@
 
 ## ARM Release Notes 26.1.2
 
-**Release Date: 11th January 2026**
+**Release Date: 11 January 2026**
 
 **Internal Case**\
 An issue where adding a user to a team completed user creation but returned an API 404 error has been resolved. The user creation process now completes successfully without errors.
@@ -12,14 +12,14 @@ An issue where adding a user to a team completed user creation but returned an A
 _Impacted Area:_\
 Admin → Subscriptions → Team User Management
 
-***
-
 **Support Case: #173910**
 
 Single Revision Merge now validates that the selected revision belongs to the chosen source branch. If a revision from a different branch is entered, the merge is blocked with a clear validation message.
 
 _Impacted Area:_\
 Version Control → EZ-Merge (Single Revision)
+
+***
 
 ## ARM Release Notes 26.1.1
 

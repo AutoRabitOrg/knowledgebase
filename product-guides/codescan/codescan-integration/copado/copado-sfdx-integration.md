@@ -66,6 +66,7 @@ echo $branchesAndFileIdJson
 echo $git_json
 USER_STORY=$(jq -r '.userStoryId' <<< $DataJson)
 BRANCH=$(jq -r '.originBranch' <<< $branchesAndFileIdJson)
+RESULT_ID=$(jq -r '.resultIds[0]' <<< $DataJson)
 echo "param branchesAndFileIdJson =  $branchesAndFileIdJson"
 echo "param TOKEN = $TOKEN"
 echo "param SERVER = $SERVER"
@@ -394,7 +395,11 @@ FAILED=$(echo "$JOB_STATUS" | jq -r '.numberRecordsFailed // 0')
 echo "Bulk insert done. Processed=$PROCESSED Failed=$FAILED"
 
 # UPLOAD FINAL CSV
-copado -u "$OUTPUT_CSV" --name "$OUTPUT_CSV"
+  if [ -z "$RESULT_ID" ]; then
+    copado -u "$OUTPUT_CSV" --name "$OUTPUT_CSV"
+  else
+    copado -u "$OUTPUT_CSV" --name "$OUTPUT_CSV" --parentid "$RESULT_ID"
+  fi
 
 # Update Result record (if present)
 if [ -n "$PARENT_ID" ] && [ "$PARENT_ID" != "" ]; then

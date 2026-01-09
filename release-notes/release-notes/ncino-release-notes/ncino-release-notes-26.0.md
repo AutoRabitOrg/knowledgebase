@@ -2,7 +2,7 @@
 
 ## nCino + DL - Release 26.1.1
 
-**Release Date: Jan 04, 2026**
+**Release Date: 04 January 2026**
 
 ### **Version Control Source Reset in CI Jobs** <a href="#version-control-source-reset-in-ci-jobs" id="version-control-source-reset-in-ci-jobs"></a>
 

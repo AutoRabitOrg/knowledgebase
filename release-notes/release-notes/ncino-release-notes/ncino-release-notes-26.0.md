@@ -1,6 +1,6 @@
 # nCino Release Notes 26.0
 
-## nCino + DL - Release 26.1.1
+## nCino + DataLoader - Release 26.1.1
 
 **Release Date: 04 January 2026**
 

@@ -1191,6 +1191,7 @@
       * [Stale Jobs](product-guides/vault/vault-features/reporting/stale-jobs.md)
     * [Restore](product-guides/vault/vault-features/restore/README.md)
       * [Restoring Metadata/Data to a Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org.md)
+      * [Copy of Restoring Metadata/Data to a Salesforce Org](product-guides/vault/vault-features/restore/restoring-the-metadata-data-to-the-salesforce-org-1.md)
       * [Retry Failed Records](product-guides/vault/vault-features/restore/retry-failed-records.md)
     * [SIEM Logs](product-guides/vault/vault-features/siem-logging.md)
     * [Copy of SIEM Logs - Copied on Fri 27, 2025](product-guides/vault/vault-features/siem-logging-1.md)

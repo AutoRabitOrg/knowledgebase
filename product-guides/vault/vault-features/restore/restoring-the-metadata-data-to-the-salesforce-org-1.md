@@ -1,4 +1,8 @@
-# Restoring Metadata/Data to a Salesforce Org
+---
+hidden: true
+---
+
+# Copy of Restoring Metadata/Data to a Salesforce Org
 
 ## Overview <a href="#overview" id="overview"></a>
 
@@ -93,112 +97,121 @@ The next screen displays the metadata and data objects that will be replicated. 
 3.  #### **Schema Viewer:**
 
     The schema viewer feature in Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
+4. **Accessing Account Hierarchy**
+   1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
+   2.  Selecting the Hierarchy icon corresponding to an object opens the Account Hierarchy view.
 
-    1. **Accessing Account Hierarchy**
-       1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
-       2.  Selecting the Hierarchy icon corresponding to an object opens the Account Hierarchy view.
+       <figure><img src="../../../../.gitbook/assets/image (2368).png" alt=""><figcaption></figcaption></figure>
+   3. The hierarchy view opens in a modal window, preserving the current configuration context.
+5. **Hierarchy Layout and Navigation**
+   1. The selected object is displayed as the root node of the hierarchy.
+   2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
 
-           <figure><img src="../../../../.gitbook/assets/image (2368).png" alt=""><figcaption></figcaption></figure>
-       3. The hierarchy view opens in a modal window, preserving the current configuration context.
-    2. **Hierarchy Layout and Navigation**
-       1. The selected object is displayed as the root node of the hierarchy.
-       2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
+       <figure><img src="../../../../.gitbook/assets/image (2369).png" alt=""><figcaption></figcaption></figure>
+   3. Expand and collapse controls allow traversal across multiple hierarchy levels.
+   4. **Each object card displays:**
+      * Object name
+      * Relationship type (Lookup or Master-Detail)
+      * Selection checkbox
+      * Visual hierarchy connector
+6. **Search Functionality within Hierarchy**
+   1. The search bar is available at the top of the hierarchy view.
+   2.  As typing begins in the search bar:
 
-           <figure><img src="../../../../.gitbook/assets/image (2369).png" alt=""><figcaption></figcaption></figure>
-       3. Expand and collapse controls allow traversal across multiple hierarchy levels.
-       4. **Each object card displays:**
-          * Object name
-          * Relationship type (Lookup or Master-Detail)
-          * Selection checkbox
-          * Visual hierarchy connector
-    3. **Search Functionality within Hierarchy**
-       1. The search bar is available at the top of the hierarchy view.
-       2.  As typing begins in the search bar:
+       1. Matching objects within the current hierarchy are highlighted.
+       2. The info icon is automatically opened the first time typing is initiated.
 
-           1. Matching objects within the current hierarchy are highlighted.
-           2. The info icon is automatically opened the first time typing is initiated.
+       <figure><img src="../../../../.gitbook/assets/image (2372).png" alt=""><figcaption></figcaption></figure>
 
-           <figure><img src="../../../../.gitbook/assets/image (2372).png" alt=""><figcaption></figcaption></figure>
-       3. The info icon can be manually reopened at any time by selecting the icon.
-    4.  **Search Help (Info Icon)**
 
-        The Search Help panel explains how search operates within the hierarchy:
 
-        1. **Typing**
-           1. Highlights matching objects only within the currently displayed hierarchy.
-           2. Does not change navigation or hierarchy depth.
-        2. **Selecting from results**
-           1. Performs a global hierarchy search.
-           2. Automatically navigates to the object’s location within the schema tree.
-    5.  **Search Direction Options**
+       1. The info icon can be manually reopened at any time by selecting the icon.
+7.  **Search Help (Info Icon)**
 
-        The Search Direction dropdown controls how search results are evaluated:
+    The Search Help panel explains how search operates within the hierarchy:
 
-        1. **Children Only**
-           1. Searches only downstream child objects of the current root.
-        2. **Parents Only**
-           1. Searches only upstream parent objects.
-        3.  **Both (Parents & Children)**
+    1. **Typing**
+       1. Highlights matching objects only within the currently displayed hierarchy.
+       2. Does not change navigation or hierarchy depth.
+    2. **Selecting from results**
+       1. Performs a global hierarchy search.
+       2. Automatically navigates to the object’s location within the schema tree.
+8.  **Search Direction Options**
 
-            1. Searches across the entire hierarchy path.
+    The Search Direction dropdown controls how search results are evaluated:
 
-            <figure><img src="../../../../.gitbook/assets/image (2373).png" alt=""><figcaption></figcaption></figure>
-        4.  If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
+    1. **Children Only**
+       1. Searches only downstream child objects of the current root.
+    2. **Parents Only**
+       1. Searches only upstream parent objects.
+    3.  **Both (Parents & Children)**
 
-            <figure><img src="../../../../.gitbook/assets/image (2374).png" alt=""><figcaption></figcaption></figure>
-    6. **Search Results Feedback**
-       1. **A result banner displays:**
-          1. Number of matches found on the current page.
-          2. Navigation arrows to move between matches.
-       2. **When a match is located successfully:**
-          1. A confirmation message indicates the object has been found.
-          2. The hierarchy scrolls automatically to the object’s position.
-    7. **“Only Matches” Toggle**
-       1.  The Only Matches toggle is available alongside search results.
+        1. Searches across the entire hierarchy path.
 
-           <figure><img src="../../../../.gitbook/assets/image (2375).png" alt=""><figcaption></figcaption></figure>
-       2. **When enabled:**
-          1. Only objects matching the search criteria are displayed.
-          2. Non-relevant hierarchy nodes are temporarily hidden.
-       3. **When disabled:**
-          1. The full hierarchy view is restored.
-    8. **Root Object Navigation**
-       1. The Root option is displayed at the top of the hierarchy view.
-       2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
+        <figure><img src="../../../../.gitbook/assets/image (2373).png" alt=""><figcaption></figcaption></figure>
 
-           <figure><img src="../../../../.gitbook/assets/image (2376).png" alt=""><figcaption></figcaption></figure>
+        1. If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
 
-           1. This action resets the navigation context without clearing selected objects.
-    9. **Path and Navigation Indicators**
-       1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
+        <figure><img src="../../../../.gitbook/assets/image (2374).png" alt=""><figcaption></figcaption></figure>
+9. **Search Results Feedback**
+   1. **A result banner displays:**
+      1. Number of matches found on the current page.
+      2. Navigation arrows to move between matches.
+   2. **When a match is located successfully:**
+      1. A confirmation message indicates the object has been found.
+      2. The hierarchy scrolls automatically to the object’s position.
+10. **“Only Matches” Toggle**
+    1.  The Only Matches toggle is available alongside search results.
 
-           <figure><img src="../../../../.gitbook/assets/image (2377).png" alt=""><figcaption></figcaption></figure>
-       2. A Go Back option allows navigation to the previous hierarchy level.
-       3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
-    10. **Object Selection Behaviour**
-        1. Selecting an object automatically selects dependent objects based on relationship rules.
-        2. Objects selected due to dependency are visually marked.
-        3. If cascading relationships exist:
-           1. A Cascade Delete indicator is shown for impacted child objects.
-        4. Deselection follows dependency rules to prevent inconsistent configurations.
-    11. **Visual Indicators and States**
-        1. Highlighted text indicates active search matches.
-        2. Color-coded badges differentiate:
-           1. Root objects
-           2. Selected objects
-    12. **Saving Hierarchy Configuration**
-        1.  The Save button persists all selections made within the hierarchy view.
+        <figure><img src="../../../../.gitbook/assets/image (2375).png" alt=""><figcaption></figcaption></figure>
+    2. **When enabled:**
+       1. Only objects matching the search criteria are displayed.
+       2. Non-relevant hierarchy nodes are temporarily hidden.
+    3. **When disabled:**
+       1. The full hierarchy view is restored.
+11. **Root Object Navigation**
+    1. The Root option is displayed at the top of the hierarchy view.
+    2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
 
-            <figure><img src="../../../../.gitbook/assets/image (2378).png" alt=""><figcaption></figcaption></figure>
-        2. Validation is performed before saving to ensure dependency consistency.
-        3. On successful save, the hierarchy modal closes and returns to the configuration screen.
-    13. **Key Functional Notes**
-        1. Clicking the Root option always redirects to the root object.
-        2. The info icon auto-opens only on the first typing interaction and remains manually accessible thereafter.
-        3. Enabling Only Matches limits results strictly to relevant search outcomes without altering selection state.
-    14. **Summary**
+        <figure><img src="../../../../.gitbook/assets/image (2376).png" alt=""><figcaption></figcaption></figure>
+    3. This action resets the navigation context without clearing selected objects.
+12. Path and Navigation Indicators
+    1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
 
-        The schema viewer feature in Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations
+        <figure><img src="../../../../.gitbook/assets/image (2377).png" alt=""><figcaption></figcaption></figure>
+    2. A Go Back option allows navigation to the previous hierarchy level.
+    3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
+13. **Object Selection Behaviour**
+    1. Selecting an object automatically selects dependent objects based on relationship rules.
+    2. Objects selected due to dependency are visually marked.
+    3. If cascading relationships exist:
+       1. A Cascade Delete indicator is shown for impacted child objects.
+    4. Deselection follows dependency rules to prevent inconsistent configurations.
+14. **Visual Indicators and States**
+    1. Highlighted text indicates active search matches.
+    2. Color-coded badges differentiate:
+       1. Root objects
+       2. Selected objects
+15. **Saving Hierarchy Configuration**
+    1.  The Save button persists all selections made within the hierarchy view.
+
+        <figure><img src="../../../../.gitbook/assets/image (2378).png" alt=""><figcaption></figcaption></figure>
+    2. Validation is performed before saving to ensure dependency consistency.
+    3. On successful save, the hierarchy modal closes and returns to the configuration screen.
+16. Key Functional Notes
+    1. Clicking the Root option always redirects to the root object.
+    2.  The info icon auto-opens only on the first typing interaction and remains manually accessible thereafter.
+
+        Enabling Only Matches limits results strictly to relevant search outcomes without altering selection state.
+17.
+18.
+19.
+20. s
+21.
+22.
+23. s
+24.
+25. s
 
 <figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

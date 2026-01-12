@@ -1,4 +1,8 @@
-# Archiving Your Salesforce Data
+---
+hidden: true
+---
+
+# Copy of Archiving Your Salesforce Data
 
 1. Log in to your Vault account.
 2. Go to the **Setup** module.
@@ -22,127 +26,28 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 <figure><img src="../../../../.gitbook/assets/image (233).png" alt=""><figcaption><p>Filters</p></figcaption></figure>
 
-8.  #### **Schema Viewer**
+8.  The **Hierarchy** option will allow you to view all the corresponding child objects for your selected object. These child objects will also get archived once you archive their parent object. Such a hierarchy schema view can be seen using the **Hierarchy** option.
 
-    The schema viewer feature in Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Hierarchy</p></figcaption></figure>
 
-    1. Accessing Account Hierarchy
-       1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
-       2.  Selecting the Hierarchy icon corresponding to an object opens the Account Hierarchy view.
+    You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object, which will be deleted if the parent object is selected for archival per policy. However, for other objects that are related to the selected object in some other way, you may have the option to choose them manually for archival. Visit the Mandatory Child Archival page for more information.
 
-           <figure><img src="../../../../.gitbook/assets/image (2345).png" alt=""><figcaption></figcaption></figure>
-       3. The hierarchy view opens in a modal window, preserving the current configuration context.
-    2. Hierarchy Layout and Navigation
-       1. The selected object is displayed as the root node of the hierarchy.
-       2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
+    <figure><img src="../../../../.gitbook/assets/image (1612).png" alt=""><figcaption><p>Schema</p></figcaption></figure>
 
-           <figure><img src="../../../../.gitbook/assets/image (2346).png" alt=""><figcaption></figcaption></figure>
-       3. Expand and collapse controls allow traversal across multiple hierarchy levels.
-       4. Each object card displays:
-          * Object name
-          * Relationship type (Lookup or Master-Detail)
-          * Selection checkbox
-          * Visual hierarchy connector
-    3. Search Functionality within Hierarchy
-       1. The search bar is available at the top of the hierarchy view.
-       2.  **As typing begins in the search bar:**
+    <figure><img src="../../../../.gitbook/assets/image (1613).png" alt=""><figcaption><p>Child Schema</p></figcaption></figure>
+9.  Once done, click **Save** to close the hierarchy-schema screen. Similar to **filter** criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.<br>
 
-           1. Matching objects within the current hierarchy are highlighted.
-           2. The info icon is automatically opened the first time typing is initiated.
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+10. Click **Next.** On the next screen, do the following:
+    * Give the process a **name**.
+    * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.
+    * Select the date and time interval for the archive process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, monthly, or input any duration manually.
+    * You can specify till what time period you want to retain the archived data under the **Archive retention period** section.
+    * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
+    *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.
 
-           <figure><img src="../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
-       3. The info icon can be manually reopened at any time by selecting the icon.
-    4.  Search Help (Info Icon)
-
-        The Search Help panel explains how search operates within the hierarchy:
-
-        1.  **Typing**
-
-            * Highlights matching objects only within the currently displayed hierarchy.
-            * Does not change navigation or hierarchy depth.
-
-            <figure><img src="../../../../.gitbook/assets/image (2349).png" alt=""><figcaption></figcaption></figure>
-        2. **Selecting from results**
-           * Performs a global hierarchy search.
-           * Automatically navigates to the object’s location within the schema tree.
-    5.  **Search Direction Options**
-
-        The Search Direction dropdown controls how search results are evaluated:
-
-        1. **Children Only**
-           1. Searches only downstream child objects of the current root.
-        2. **Parents Only**
-           1. Searches only upstream parent objects.
-        3.  **Both (Parents & Children)**
-
-            1. Searches across the entire hierarchy path.
-
-            <figure><img src="../../../../.gitbook/assets/image (2351).png" alt=""><figcaption></figcaption></figure>
-    6.  If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
-
-        <figure><img src="../../../../.gitbook/assets/image (2352).png" alt=""><figcaption></figcaption></figure>
-    7. **Search Results Feedback**
-       1. **A result banner displays:**
-          * Number of matches found on the current page.
-          * Navigation arrows to move between matches.
-       2. **When a match is located successfully:**
-          * A confirmation message indicates the object has been found.
-          * The hierarchy scrolls automatically to the object’s position.
-    8. “Only Matches” Toggle
-       1.  The Only Matches toggle is available alongside search results.
-
-           <figure><img src="../../../../.gitbook/assets/image (2354).png" alt=""><figcaption></figcaption></figure>
-       2. **When enabled:**
-          1. Only objects matching the search criteria are displayed.
-          2. Non-relevant hierarchy nodes are temporarily hidden.
-       3. **When disabled:**
-          1. The full hierarchy view is restored.
-    9. Root Object Navigation
-       1. The Root option is displayed at the top of the hierarchy view.
-       2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
-
-           <figure><img src="../../../../.gitbook/assets/image (2355).png" alt=""><figcaption></figcaption></figure>
-       3. This action resets the navigation context without clearing selected objects.
-    10. Path and Navigation Indicators
-        1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
-
-            <figure><img src="../../../../.gitbook/assets/image (2356).png" alt=""><figcaption></figcaption></figure>
-        2. A Go Back option allows navigation to the previous hierarchy level.
-        3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
-    11. Object Selection Behaviour
-        1. Selecting an object automatically selects dependent objects based on relationship rules.
-        2. Objects selected due to dependency are visually marked.
-        3. If cascading relationships exist:
-           1. A **Cascade Delete** indicator is shown for impacted child objects.
-        4. Deselection follows dependency rules to prevent inconsistent configurations.
-    12. **Visual Indicators and States**
-        1. Highlighted text indicates active search matches.
-        2. Color-coded badges differentiate:
-           1. Root objects
-           2. Selected objects
-    13. **Saving Hierarchy Configuration**
-        1.  The Save button persists all selections made within the hierarchy view.
-
-            <figure><img src="../../../../.gitbook/assets/image (2358).png" alt=""><figcaption></figcaption></figure>
-        2. Validation is performed before saving to ensure dependency consistency.
-        3. On successful save, the hierarchy modal closes and returns to the configuration screen.
-    14. Key Functional Notes
-        * Clicking the Root option always redirects to the root object.
-        * The info icon auto-opens only on the first typing interaction and remains manually accessible thereafter.
-        * Enabling Only Matches limits results strictly to relevant search outcomes without altering selection state.
-    15. **Summary**
-
-        The schema viewer feature in Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations.
-9. Click **Next.** On the next screen, do the following:
-   * Give the process a **name**.
-   * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.
-   * Select the date and time interval for the archive process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, monthly, or input any duration manually.
-   * You can specify till what time period you want to retain the archived data under the **Archive retention period** section.
-   * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
-   *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.
-
-       <figure><img src="../../../../.gitbook/assets/1.1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
-10. **Disable Automation Rules**
+        <figure><img src="../../../../.gitbook/assets/1.1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
+11. **Disable Automation Rules**
     1.  This provision to disable the automation rules is useful in making sure the automation rules created on various fields in Salesforce will not impact the Archival process midway.
 
         **Step-By-Step Guide:**
@@ -175,26 +80,26 @@ Validate your query to see whether the criteria set is correct and view the numb
 
             <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
         12. Once the archive job is completed, any automations that were temporarily disabled during job creation will be restored to their original state as they were before the job was triggered.
-11. Click **Save Config**.
-12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
+12. Click **Save Config**.
+13. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
-13. Now go to the **Archive** tab.
-14. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.&#x20;
-15. Select the **Environment**.
-16. Select the archive configured recently under **Configurations** drop-down field.
+14. Now go to the **Archive** tab.
+15. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.&#x20;
+16. Select the **Environment**.
+17. Select the archive configured recently under **Configurations** drop-down field.
 
     <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
-17. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
-18. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
-19. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
-20. &#x20;Select your configuration and click **Archive**.
+18. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
+19. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
+20. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
+21. &#x20;Select your configuration and click **Archive**.
 
     <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
-21. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
+22. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
 
     <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
-22. &#x20;For each archive job, the following information will be displayed:
+23. &#x20;For each archive job, the following information will be displayed:
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 

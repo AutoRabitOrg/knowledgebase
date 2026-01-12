@@ -1168,6 +1168,7 @@
     * [Page](product-guides/vault/vault-features/page.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)
       * [Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
+      * [Copy of Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data-1.md)
       * [Parent-Child Record Archival](product-guides/vault/vault-features/archive/parent-child-record-archival.md)
       * [Retry Failed Records](product-guides/vault/vault-features/archive/retry-failed-records.md)
     * [Backup](product-guides/vault/vault-features/backup/README.md)

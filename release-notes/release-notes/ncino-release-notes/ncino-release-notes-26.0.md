@@ -1,5 +1,17 @@
 # nCino Release Notes 26.0
 
+## nCino + DL - Release 26.1.2
+
+**Release Date: 11 January 2026**
+
+**Clone Version – Bucket Filter Retention**
+
+Fixed an issue where filters applied to entry objects were not retained when switching between buckets in a cloned version, ensuring filter configurations persist consistently across buckets.
+
+**Create Version – Entry Object Query Not Retained Across Object Sets**
+
+Fixed an issue where entry object filter queries from the original version were not fully populated when creating a new version of a multi-bucket feature template. The filter queries are now consistently carried forward for all object sets during version creation.
+
 ## nCino + DataLoader - Release 26.1.1
 
 **Release Date: 04 January 2026**

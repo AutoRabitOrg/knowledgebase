@@ -2,7 +2,7 @@
 
 ## Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date: 07 January 2026**
+**Release Date: 7 January 2026**
 
 #### **Search and Filter Panel for Schema Objects** <a href="#search-and-filter-panel-for-schema-objects" id="search-and-filter-panel-for-schema-objects"></a>
 

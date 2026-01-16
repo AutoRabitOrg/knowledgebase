@@ -1,5 +1,25 @@
 # Vault Release Notes 25.0
 
+## Vault Release Notes 25.3.1 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date: 21 January 2026**
+
+**Content Version Large File Handling**
+
+Enhanced Content Version processing to seamlessly support files up to **2 GB**, improving reliability when handling large content files.
+
+**Improved Child Record Processing in Live Replicate**
+
+Child records selected through the **Schema Viewer** are now processed seamlessly during Live Replicate operations, ensuring complete and accurate data replication.
+
+**File Download Fix**
+
+Resolved an issue with file downloads caused by file name mismatches, ensuring files are downloaded correctly and reliably.
+
+#### **Optimized Update Flow for Attachments and Content Versions** <a href="#optimized-update-flow-for-attachments-and-content-versions" id="optimized-update-flow-for-attachments-and-content-versions"></a>
+
+Improved the update process for **Attachment** and **ContentVersion** records by skipping unnecessary binary data reprocessing when only metadata fields are updated. This optimization reduces data transfer, improves performance, and speeds up update operations
+
 ## Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 7 January 2026**

@@ -16,7 +16,7 @@ Child records selected through the **Schema Viewer** are now processed seamlessl
 
 Resolved an issue with file downloads caused by file name mismatches, ensuring files are downloaded correctly and reliably.
 
-#### **Optimized Update Flow for Attachments and Content Versions** <a href="#optimized-update-flow-for-attachments-and-content-versions" id="optimized-update-flow-for-attachments-and-content-versions"></a>
+**Optimized Update Flow for Attachments and Content Versions**
 
 Improved the update process for **Attachment** and **ContentVersion** records by skipping unnecessary binary data reprocessing when only metadata fields are updated. This optimization reduces data transfer, improves performance, and speeds up update operations
 

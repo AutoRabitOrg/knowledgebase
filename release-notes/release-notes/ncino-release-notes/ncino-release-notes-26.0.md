@@ -1,5 +1,20 @@
 # nCino Release Notes 26.0
 
+## nCino - Release 26.1.3
+
+**Release Date:** 18 January 2026
+
+#### **Query Editor Validation Fix (nCino)** <a href="#query-editor-validation-fix-ncino" id="query-editor-validation-fix-ncino"></a>
+
+Resolved an issue where valid queries entered in the **Query Editor** were incorrectly rejected with a validation error, preventing query execution during template configuration.
+
+\
+**nCino CI Job Deployment Consistency Fix**
+
+Resolved an issue where the same **nCino template** produced inconsistent results between Deployment and CI Jobs. The fix ensures consistent behavior by correcting record type ID update logic during nCino CI job deployments.
+
+##
+
 ## nCino + DataLoader - Release 26.1.2
 
 **Release Date: 11 January 2026**

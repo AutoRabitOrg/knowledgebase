@@ -34,6 +34,34 @@ Backend logic has been updated to avoid unnecessary workspace creation, allowing
 * Version Control → EZ-Commits
 * Version Control → Merges
 
+## DL & DL PRO Release Notes 26.1.3
+
+**Release Date**: **18 January 2026**
+
+#### **DL - Validation and Workflow Rules Visibility Fix**
+
+Resolved an issue where **Validation Rules and Workflow Rules** were not displayed in the Data Loader job pop-up when disabled during Insert, Update, or Upsert operations. This was fixed by updating the parsing logic to correctly process rule details.
+
+#### **DL - Test Environment Dropdown Fix** <a href="#data-loader-test-environment-dropdown-fix" id="data-loader-test-environment-dropdown-fix"></a>
+
+Fixed an issue where the **“All Groups”** dropdown remained disabled after creating a Data Loader job in the Test environment and required a manual page refresh. The dropdown is now enabled immediately, improving usability.
+
+#### **DL PRO - Data Loader Pro Custom Mapping Fix** <a href="#dl-pro-data-loader-pro-custom-mapping-fix" id="dl-pro-data-loader-pro-custom-mapping-fix"></a>
+
+Resolved an issue where **Data Loader Pro jobs** failed when custom object mappings were selected. The issue has been fixed to ensure successful job execution with custom mappings.
+
+#### DL PRO - **Group Job Clone Filter Restoration Fix**
+
+Resolved an issue where **object filters were not restored when cloning group jobs** in Data Loader Pro. Filters are now correctly retained and displayed after cloning.
+
+#### **DL Pro - Upsert Fix for Knowledge Objects** <a href="#data-loader-pro-upsert-fix-for-knowledge-objects" id="data-loader-pro-upsert-fix-for-knowledge-objects"></a>
+
+Resolved an issue where **Data Loader Pro upsert jobs** processed zero records despite valid source data being present. The issue was fixed by correctly handling **external ID fields for Knowledge (KAV) objects**.
+
+#### **DL PRO - Skip Object Selection UI Fix** <a href="#skip-object-selection-ui-fix" id="skip-object-selection-ui-fix"></a>
+
+Resolved an issue where the **Skip** checkbox was not reflected in the UI after an ancestor object was skipped. The selection state is now correctly saved and displayed.
+
 ***
 
 ## ARM Release Notes 26.1.2

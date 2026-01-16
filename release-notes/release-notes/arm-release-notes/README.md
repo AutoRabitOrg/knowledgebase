@@ -34,17 +34,21 @@ Backend logic has been updated to avoid unnecessary workspace creation, allowing
 * Version Control → EZ-Commits
 * Version Control → Merges
 
-## DL & DL PRO Release Notes 26.1.3
+## Data Loader PRO Release Notes 26.1.3
 
 **Release Date**: **18 January 2026**
 
 #### **DL - Validation and Workflow Rules Visibility Fix**
 
-Resolved an issue where **Validation Rules and Workflow Rules** were not displayed in the Data Loader job pop-up when disabled during Insert, Update, or Upsert operations. This was fixed by updating the parsing logic to correctly process rule details.
+Resolved an issue where **Validation Rules and Workflow Rules** were not displayed in the Data Loader job pop-up when disabled during Insert, Update, or Upsert operations.
 
 #### **DL - Test Environment Dropdown Fix** <a href="#data-loader-test-environment-dropdown-fix" id="data-loader-test-environment-dropdown-fix"></a>
 
 Fixed an issue where the **“All Groups”** dropdown remained disabled after creating a Data Loader job in the Test environment and required a manual page refresh. The dropdown is now enabled immediately, improving usability.
+
+## Data Loader PRO Release Notes 26.1.3
+
+**Release Notes: 18 January 2026**
 
 #### **DL PRO - Data Loader Pro Custom Mapping Fix** <a href="#dl-pro-data-loader-pro-custom-mapping-fix" id="dl-pro-data-loader-pro-custom-mapping-fix"></a>
 

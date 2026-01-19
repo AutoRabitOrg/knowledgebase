@@ -57,7 +57,7 @@ On the left-hand side of the application, you see a list of icons with the conte
 Let's examine each of these links in detail:\
 <br>
 
-<figure><img src="../../../.gitbook/assets/image (1901).png" alt="" width="246"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2379).png" alt=""><figcaption></figcaption></figure>
 
 ### [Dashboard](../../arm/arm-features/dashboard-and-pipelines/dashboards-and-widgets.md) <a href="#dashboard" id="dashboard"></a>
 
@@ -92,7 +92,7 @@ ARM allows its users to view all the deployment, merge, and data loader-related 
 
 Environment Provisioning is a unique interface ARM provides to quickly facilitate a Salesforce sandbox with metadata and data requirements that suit specific needs. These can be created as a template and stored in ARM. The same templates can be reused multiple times across various modules in ARM. For example, you can create an Environment Provisioning template to disable validation rules, enable history tracking, anonymous Apex, etc., of a particular object as a post-deployment setup.
 
-### [Admin](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration) <a href="#admin" id="admin"></a>
+### [Admin](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration)/<mark style="color:blue;">Settings</mark> <a href="#admin" id="admin"></a>
 
 Admin-related items are displayed here, such as registering a Salesforce Org, Version Control, adding team members, etc.
 

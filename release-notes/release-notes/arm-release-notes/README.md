@@ -6,6 +6,14 @@
 
 **Release Date: 18 January 2026**
 
+**Refreshed UI – APAC only**\
+The refreshed ARM UI is now available to customers in the APAC region as part of a phased, region-based rollout. This update refreshes the UI layout only, with no changes to functionality or core workflows. Some UI elements have been repositioned to improve usability and consistency.
+
+Customers can switch between the existing UI and the refreshed UI at any time using the provided toggle. No configuration, data, or in-progress work is lost when switching between experiences.
+
+Availability will expand to additional regions in upcoming releases.\
+\
+\
 **Support Case #178052 – Unable to View Compare Changes**\
 Fixed an issue in **EZ-Commit** where users could not view **Compare Changes** on the review page during diff generation, resulting in an error.
 
@@ -13,16 +21,12 @@ A new backend API now clears any stuck _live status_ key from in-memory storage,
 
 **Impacted Area:** Version Control → EZ-Commit (Review → Compare Changes / Diff Generation)
 
-
-
 **Support Case #175864 – Skip Org Mappings Missing During Role Creation**\
 Fixed an issue where the **Skip Org Mappings** option was not visible during role creation or editing, even when it was expected to be configurable.
 
 The visibility condition has been corrected to ensure the option is displayed appropriately based on configuration and not incorrectly hidden at the org level.
 
 **Impacted Area:** Admin → Roles (Create / Edit Roles)
-
-
 
 **Internal Case – Workspace Limit Error During Pre-validation Commit**\
 Fixed an issue where **Pre-validation commits** in the ARM–SIT integration branch failed during the **Delta** step due to a workspace limit error.

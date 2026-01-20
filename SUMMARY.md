@@ -91,6 +91,7 @@
   * [Guard Release Notes](release-notes/release-notes/guard.md)
     * [Guard Release Notes 25.2](release-notes/release-notes/guard/release-notes-25.2.md)
     * [Guard Release Notes 25.1](release-notes/release-notes/guard/release-notes-25.1.md)
+    * [Guard Release Notes 26.1](release-notes/release-notes/guard/guard-release-notes-26.1.md)
 
 ## Product Guides
 

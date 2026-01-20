@@ -133,6 +133,17 @@ If the backup configuration is deleted, all its related backup snapshots are als
 
 Once a backup has reached its expiration, it will move to lower tier storage, such as Glacier. The backup will stay there for a month after this, and then it will be permanently deleted. During the time it stays in Glacier, we can retrieve it with the help of SRO and share to customer if required.
 
+### **Content Version Large File Processing**
+
+1. **What is the enhancement?**\
+   Vault now supports processing **ContentVersion files up to 2 GB**, compared to the earlier limit of 10 MB.
+2. **Is this feature enabled by default?**\
+   No. This capability is **controlled by a feature flag** and must be explicitly enabled.
+3. **Is there any performance impact?**\
+   Yes. Large ContentVersion files are processed **one-by-one**, which may result in slower processing times. This is an expected trade-off to ensure reliable handling of large files.
+4. **Who should enable this feature?**\
+   This feature is recommended for customers who need to process large content files and can accommodate the additional processing time.
+
 ***
 
 ## Restore and Replicate

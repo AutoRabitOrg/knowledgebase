@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Deployment Using Feature Migration Template
 
 This article will walk you through deploying nCino data using the Feature Migration template. This provides a step-by-step procedure for creating a fresh migration using the "Deploy from template configuration." If you're referring to this article for the first time, please navigate to [Feature Migration Templates](../feature-migration/create-a-feature-migration-template.md), which guides you through the process of creating a new migration template in AutoRABIT.&#x20;

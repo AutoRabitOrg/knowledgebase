@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Feature Migration Summary Page
 
 ### Overview <a href="#overview" id="overview"></a>

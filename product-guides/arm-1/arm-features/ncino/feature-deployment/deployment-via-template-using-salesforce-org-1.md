@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Deployment via Template using Salesforce Org
 
 This article describes the process of deploying the nCino data via the Salesforce ORG dataset

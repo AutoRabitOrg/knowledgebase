@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Create a Feature Migration Template with Predefined nCino Objects
 
 ### Overview <a href="#overview" id="overview"></a>

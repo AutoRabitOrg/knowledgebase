@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Create a Feature Migration Template
 
 ### Overview <a href="#overview" id="overview"></a>

@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# Copy of Deployment Using Version Control
+# Deployment Using Version Control
 
 
 

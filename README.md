@@ -8,14 +8,14 @@ description: Your Source of Truth for All Things AutoRABIT
 
 #### Built for Precision at Scale
 
-AutoRABIT is not just a toolset—it’s a system. Our enterprise-grade DevSecOps platform is purpose-built for Salesforce, enabling controlled speed, secure scalability, and intelligent automation across development, compliance, and data management workflows.
+AutoRABIT is not just a toolset, it’s a system. Our enterprise-grade DevSecOps platform is purpose-built for Salesforce, enabling controlled speed, secure scalability, and intelligent automation across development, compliance, and data management workflows.
 
 **Our ecosystem includes:**
 
-* [**ARM**](product-guides/arm/) — Structured CI/CD pipelines for Salesforce. Aligns governance with acceleration.
-* [**CodeScan**](product-guides/codescan/) — Industry leading static analysis to enforce quality and secure code before it ships.
-* [**Vault**](product-guides/vault/) — Resilient, compliant backup and recovery tailored for complex Salesforce data models.
-* [**Guard**](product-guides/guard.md) — Real-time permission intelligence and compliance automation. Prevents access risk before it becomes exposure.
+* [**ARM**](product-guides/arm/)**:** Structured CI/CD pipelines for Salesforce. Aligns governance with acceleration.
+* [**CodeScan**](product-guides/codescan/)**:** Industry leading static analysis to enforce quality and secure code before it ships.
+* [**Vault**](product-guides/vault/)**:** Resilient, compliant backup and recovery tailored for complex Salesforce data models.
+* [**Guard**](product-guides/guard.md)**:** Real-time permission intelligence and compliance automation. Prevents access risk before it becomes exposure.
 
 Together, these products form the industry’s most complete DevSecOps solution for Salesforce, trusted by the most security-conscious and performance-driven teams in the world.
 
@@ -24,9 +24,9 @@ Together, these products form the industry’s most complete DevSecOps solution 
 * [**AI-Powered Search**](https://knowledgebase.autorabit.com/?q=)\
   Precision answers, fast. Use our embedded AI assistant to extract exact steps, explanations, and insights from our full documentation library.
 * [**Release Notes**](release-notes/release-notes/)\
-  Stay informed. Track feature updates, patch releases, and roadmap-aligned improvements—built for enterprise-readiness.
+  Stay informed. Track feature updates, patch releases, and roadmap-aligned improvements - built for enterprise-readiness.
 * [**Step-by-Step Product Guides**](/broken/pages/IJtS5gIgd8Fpput4LEzV)\
-  From initial configuration to advanced workflows—our user guides provide structured clarity for every role and function.
+  From initial configuration to advanced workflows, our user guides provide structured clarity for every role and function.
 * [**Troubleshooting & FAQs**](fundamentals/faq/)\
   Self-serve solutions to unblock your team and reduce downtime.
 * **How-To Tutorials**\

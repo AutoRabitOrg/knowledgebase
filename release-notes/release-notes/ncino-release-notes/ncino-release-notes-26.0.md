@@ -8,8 +8,7 @@
 
 Resolved an issue where valid queries entered in the **Query Editor** were incorrectly rejected with a validation error, preventing query execution during template configuration.
 
-\
-**nCino CI Job Deployment Consistency Fix**
+#### **nCino CI Job Deployment Consistency Fix**
 
 Resolved an issue where the same **nCino template** produced inconsistent results between Deployment and CI Jobs. The fix ensures consistent behavior by correcting record type ID update logic during nCino CI job deployments.
 

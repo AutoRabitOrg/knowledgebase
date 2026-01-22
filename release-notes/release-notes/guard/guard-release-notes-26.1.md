@@ -2,7 +2,7 @@
 
 ## Guard Release Notes 26.1.1
 
-**Release Date: 21 January 2026**
+**Release Date: 25 January 2026**
 
 ### New Features
 
@@ -12,7 +12,7 @@ Guard now goes beyond metadata analysis and can scan field data to identify sens
 
 Sensitive data often resides in free-text or unstructured fields, such as comments or notes. With Deep Data Scanning, Guard can now detect regulated data patterns (such as emails, phone numbers, or other sensitive content) directly within field values.
 
-Note: Deep Data Scanning is disabled by default and can only be enabled when explicitly allowing for it.
+Note: Deep Data Scanning is disabled by default and can only be enabled when explicitly allowing it.
 
 Key capabilities include:
 

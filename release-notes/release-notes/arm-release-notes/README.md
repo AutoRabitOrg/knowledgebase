@@ -2,6 +2,29 @@
 
 {% @mailchimp/mailchimpSubscribe cta="ARM Release Notes Mailing List:" %}
 
+## ARM Release Notes 26.1.4
+
+**Release Date: 25th Jan 2026**\
+\
+**Refreshed UI – Phase 2 – Europe / Canada / Middle East Region**\
+The refreshed ARM UI is now available to customers in the APAC region as part of a phased, region-based rollout. This update refreshes the UI layout only, with no changes to functionality or core workflows. Some UI elements have been repositioned to improve usability and consistency.
+
+Customers can switch between the existing UI and the refreshed UI at any time using the provided toggle. No configuration, data, or in-progress work is lost when switching between experiences.
+
+Availability will expand to additional regions in upcoming releases.\
+\
+**Support Case: 160127 :** Pagination added for Single Revision deployments\
+The Single Revision deployment page could become unresponsive when handling a large number of revisions on a branch. Pagination has been introduced in the UI to efficiently manage large revision lists and prevent page freezes during deployments across CI Jobs and Deployments modules.\
+\
+**Support Case: 177903:** EZ-Merge reverse sync conflict resolution loop\
+When performing a reverse sync using Entire Branch EZ-Merge with the conflict resolution strategy set to Source changes, AutoRABIT continued to prompt for manual conflict resolution and surfaced new conflicts repeatedly. This issue has been fixed to ensure conflicts are automatically resolved using source branch changes as expected, allowing the operation to complete successfully.\
+\
+**Support Case: 180026:** CI Job deployment fails with “no local changes to deploy”\
+CI Jobs were unable to correctly determine whether a Matching Rule was installed or org-created because the NamespacePrefix was not being evaluated. The CI Jobs module has been updated to check NamespacePrefix and apply the same installed versus unmanaged filtering logic used in the Deployments module.\
+\
+**Support Case: 173748:** Branching Baseline status mismatch between UI and backend\
+In Branching Baseline, the UI logs showed the process as completed while the backend status was failed, leading to confusing and unclear logs. This has been fixed to correctly surface backend failures in the UI and display clear error information.
+
 ## ARM Release Notes 26.1.3
 
 **Release Date: 18 January 2026**
@@ -21,16 +44,12 @@ A new backend API now clears any stuck _live status_ key from in-memory storage,
 
 **Impacted Area:** Version Control → EZ-Commit (Review → Compare Changes / Diff Generation)
 
-
-
 **Support Case #175864 – Skip Org Mappings Missing During Role Creation**\
 Fixed an issue where the **Skip Org Mappings** option was not visible during role creation or editing, even when it was expected to be configurable.
 
 The visibility condition has been corrected to ensure the option is displayed appropriately based on configuration and not incorrectly hidden at the org level.
 
 **Impacted Area:** Admin → Roles (Create / Edit Roles)
-
-
 
 **Internal Case – Workspace Limit Error During Pre-validation Commit**\
 Fixed an issue where **Pre-validation commits** in the ARM–SIT integration branch failed during the **Delta** step due to a workspace limit error.
@@ -41,8 +60,6 @@ Backend logic has been updated to avoid unnecessary workspace creation, allowing
 
 * Version Control → EZ-Commits
 * Version Control → Merges
-
-***
 
 ## DataLoader Pro Release Notes 26.1.3
 

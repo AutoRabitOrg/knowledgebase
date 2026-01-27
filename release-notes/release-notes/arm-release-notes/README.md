@@ -27,6 +27,8 @@ In Branching Baseline, the UI logs showed the process as completed while the bac
 
 ## DataLoader Pro Release Notes 26.1.4
 
+**Release Date:** 25 January 2026
+
 #### DL Pro – FeedItem & ContentDocumentLink Status Handling <a href="#dl-pro-feeditem-and-contentdocumentlink-status-handling" id="dl-pro-feeditem-and-contentdocumentlink-status-handling"></a>
 
 Improved DL Pro job execution for Account migrations by correctly handling field mappings for objects processed via **Bulk API v1**, ensuring accurate status reporting for related objects such as **FeedItem** and **ContentDocumentLink**.
@@ -40,6 +42,8 @@ Enhanced DL Pro data retrieval logic to ensure that when filters are applied, **
 Fixed an issue where DL Pro jobs completed with a “No Records” status when a batch size was specified for Screen Section objects by improving handling of recursive processing scenarios.
 
 ## DataLoader Release Notes 26.1.4
+
+**Release Date:** 25 January 2026
 
 #### Data Loader Extract – Limit Not Applied <a href="#data-loader-extract-limit-not-applied" id="data-loader-extract-limit-not-applied"></a>
 

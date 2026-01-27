@@ -23,7 +23,7 @@ Before registering Git with ARM, you must check off some of the boxes on the pre
 
 ### Store your GIT credential in ARM <a href="#store-your-git-credential-in-arm" id="store-your-git-credential-in-arm"></a>
 
-This is an initial step in storing your user's credentials (usually a username, password, or token) in ARM. GitHub no longer supports basic authentication using a username and password. You must now authenticate to GitHub with an **API token**, such as an **OAuth** access token, GitHub App installation access token, or personal access token. For more information, see the [blog](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api/) post.
+This is an initial step in storing your user's credentials (usually a username, password, or token) in ARM. GitHub no longer supports basic authentication using a username and password. You must now authenticate to GitHub personal access token. For more information, see the [blog](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api/) post.
 
 1. Log in to your ARM account.
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
@@ -67,7 +67,7 @@ Points to Remember:
 
 ### Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
-While registering GIT with ARM, GIT fails to connect, resulting in _Authenticate Failure_**.** This is because GitHub no longer supports basic username and password authentication. You must now authenticate to GitHub with an API token, such as an OAuth access token, GitHub App installation access token, or personal access token, depending on what you need to do with the token. For more information, see the [blog](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api/) post.
+While registering GIT with ARM, GIT fails to connect, resulting in _Authenticate Failure_**.** This is because GitHub no longer supports basic username and password authentication. You must now authenticate to GitHub personal access token, depending on what you need to do with the token. For more information, see the [blog](https://developer.github.com/changes/2019-11-05-deprecated-passwords-and-authorizations-api/) post.
 
 #### Creating a Personal Access Token <a href="#creating-a-personal-access-token" id="creating-a-personal-access-token"></a>
 

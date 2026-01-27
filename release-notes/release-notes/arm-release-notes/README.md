@@ -25,6 +25,32 @@ CI Jobs were unable to correctly determine whether a Matching Rule was installed
 **Support Case: 173748:** Branching Baseline status mismatch between UI and backend\
 In Branching Baseline, the UI logs showed the process as completed while the backend status was failed, leading to confusing and unclear logs. This has been fixed to correctly surface backend failures in the UI and display clear error information.
 
+## DataLoader Pro Release Notes 26.1.4
+
+#### DL Pro – FeedItem & ContentDocumentLink Status Handling <a href="#dl-pro-feeditem-and-contentdocumentlink-status-handling" id="dl-pro-feeditem-and-contentdocumentlink-status-handling"></a>
+
+Improved DL Pro job execution for Account migrations by correctly handling field mappings for objects processed via **Bulk API v1**, ensuring accurate status reporting for related objects such as **FeedItem** and **ContentDocumentLink**.
+
+#### DL Pro – Parent Record Handling with Filters <a href="#dl-pro-parent-record-handling-with-filters" id="dl-pro-parent-record-handling-with-filters"></a>
+
+Enhanced DL Pro data retrieval logic to ensure that when filters are applied, **all related parent records (including self-referenced and multi-level parents)** are automatically identified and migrated up to the top level, preventing partial data migration when filters are used.
+
+#### DL Pro – Batch Size Handling for Screen Section Objects <a href="#dl-pro-batch-size-handling-for-screen-section-objects" id="dl-pro-batch-size-handling-for-screen-section-objects"></a>
+
+Fixed an issue where DL Pro jobs completed with a “No Records” status when a batch size was specified for Screen Section objects by improving handling of recursive processing scenarios.
+
+## DataLoader Release Notes 26.1.4
+
+#### Data Loader Extract – Limit Not Applied <a href="#data-loader-extract-limit-not-applied" id="data-loader-extract-limit-not-applied"></a>
+
+Fixed an issue where the **Limit** specified in the Extract Job configuration pop-up was not being honored during execution, causing all records to be extracted instead of the defined subset.
+
+#### Data Loader – Insert Operation Stability
+
+Fixed an issue where Data Loader insert jobs failed without producing success or error records by handling duplicate column generation during CSV preparation for lookup-mapped fields.
+
+***
+
 ## ARM Release Notes 26.1.3
 
 **Release Date: 18 January 2026**

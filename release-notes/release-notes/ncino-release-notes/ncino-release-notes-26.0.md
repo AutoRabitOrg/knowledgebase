@@ -1,5 +1,21 @@
 # nCino Release Notes 26.0
 
+## nCino - Release 26.1.4
+
+**Release Date:** 25 January 2026
+
+#### Batch Size Support for Data Migration <a href="#batch-size-support-for-data-migration" id="batch-size-support-for-data-migration"></a>
+
+Reintroduced the **Batch Size** option for data migration to process records in controlled batches, helping manage system load and ensure proper trigger execution during create or update operations in the target org.
+
+#### Feature Deployment – Screens Template Batch Size Handling <a href="#feature-deployment-screens-template-batch-size-handling" id="feature-deployment-screens-template-batch-size-handling"></a>
+
+Resolved an issue where enabling a batch size during the Screens template deployment caused failures by adding validation for CSV file size limits in bulk operations.
+
+#### Forms Manager Template Deployment <a href="#forms-manager-template-deployment" id="forms-manager-template-deployment"></a>
+
+Resolved an issue where Forms Manager template deployments remained stuck in an _In Progress_ state by correcting the handling of self-referenced records during entry object data retrieval.&#x20;
+
 ## nCino - Release 26.1.3
 
 **Release Date:** **18 January 2026**

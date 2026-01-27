@@ -52,8 +52,7 @@ This article outlines the most common Flow deployment errors, their causes, and 
 
 #### 1. Issue: Salesforce deployment fails with **“Invalid version number** `<x>`**”** for the `FlowDefinition` metadata type.
 
-**Cause:** `FlowDefinition` controls Flow activation and references a specific Flow version. This error occurs when the referenced version does not exist in the target org, commonly due to mismatched Flow version histories, partial deployments, or CI/CD pipelines attempting to activate Flows before all dependencies are available.\
-<br>
+**Cause:** `FlowDefinition` controls Flow activation and references a specific Flow version. This error occurs when the referenced version does not exist in the target org, commonly due to mismatched Flow version histories, partial deployments, or CI/CD pipelines attempting to activate Flows before all dependencies are available.
 
 **Resolution (Recommended):** Exclude the `FlowDefinition` file from deployment. Deploy the Flow metadata (`Flow`) as inactive and activate the Flow separately after deployment.\
 **Why This Works:** `FlowDefinition` is not required to deploy Flow logic. Excluding it avoids version mismatch and activation-related validation errors, making deployments more reliable across environments.

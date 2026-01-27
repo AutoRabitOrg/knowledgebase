@@ -4,7 +4,7 @@
 
 ## ARM Release Notes 26.1.4
 
-**Release Date: 25th Jan 2026**\
+**Release Date: 25 January 2026**\
 \
 **Refreshed UI – Phase 2 – Europe / Canada / Middle East Region**\
 The refreshed ARM UI is now available to customers in the APAC region as part of a phased, region-based rollout. This update refreshes the UI layout only, with no changes to functionality or core workflows. Some UI elements have been repositioned to improve usability and consistency.
@@ -25,33 +25,37 @@ CI Jobs were unable to correctly determine whether a Matching Rule was installed
 **Support Case: 173748:** Branching Baseline status mismatch between UI and backend\
 In Branching Baseline, the UI logs showed the process as completed while the backend status was failed, leading to confusing and unclear logs. This has been fixed to correctly surface backend failures in the UI and display clear error information.
 
+***
+
 ## DataLoader Pro Release Notes 26.1.4
 
-**Release Date:** 25 January 2026
+**Release Date:** **25 January 2026**
 
-#### DL Pro – FeedItem & ContentDocumentLink Status Handling <a href="#dl-pro-feeditem-and-contentdocumentlink-status-handling" id="dl-pro-feeditem-and-contentdocumentlink-status-handling"></a>
+#### DataLoader Pro – FeedItem & ContentDocumentLink Status Handling <a href="#dl-pro-feeditem-and-contentdocumentlink-status-handling" id="dl-pro-feeditem-and-contentdocumentlink-status-handling"></a>
 
-Improved DL Pro job execution for Account migrations by correctly handling field mappings for objects processed via **Bulk API v1**, ensuring accurate status reporting for related objects such as **FeedItem** and **ContentDocumentLink**.
+Improved DataLoader Pro job execution for Account migrations by correctly handling field mappings for objects processed via **Bulk API v1**, ensuring accurate status reporting for related objects such as **FeedItem** and **ContentDocumentLink**.
 
-#### DL Pro – Parent Record Handling with Filters <a href="#dl-pro-parent-record-handling-with-filters" id="dl-pro-parent-record-handling-with-filters"></a>
+#### DataLoader Pro – Parent Record Handling with Filters <a href="#dl-pro-parent-record-handling-with-filters" id="dl-pro-parent-record-handling-with-filters"></a>
 
-Enhanced DL Pro data retrieval logic to ensure that when filters are applied, **all related parent records (including self-referenced and multi-level parents)** are automatically identified and migrated up to the top level, preventing partial data migration when filters are used.
+Enhanced DataLoader Pro data retrieval logic to ensure that when filters are applied, **all related parent records (including self-referenced and multi-level parents)** are automatically identified and migrated up to the top level, preventing partial data migration when filters are used.
 
-#### DL Pro – Batch Size Handling for Screen Section Objects <a href="#dl-pro-batch-size-handling-for-screen-section-objects" id="dl-pro-batch-size-handling-for-screen-section-objects"></a>
+#### DataLoader Pro – Batch Size Handling for Screen Section Objects <a href="#dl-pro-batch-size-handling-for-screen-section-objects" id="dl-pro-batch-size-handling-for-screen-section-objects"></a>
 
-Fixed an issue where DL Pro jobs completed with a “No Records” status when a batch size was specified for Screen Section objects by improving handling of recursive processing scenarios.
+Fixed an issue where DataLoader Pro jobs completed with a “No Records” status when a batch size was specified for Screen Section objects by improving handling of recursive processing scenarios.
+
+***
 
 ## DataLoader Release Notes 26.1.4
 
-**Release Date:** 25 January 2026
+**Release Date:** **25 January 2026**
 
-#### Data Loader Extract – Limit Not Applied <a href="#data-loader-extract-limit-not-applied" id="data-loader-extract-limit-not-applied"></a>
+#### DataLoader Extract – Limit Not Applied <a href="#data-loader-extract-limit-not-applied" id="data-loader-extract-limit-not-applied"></a>
 
 Fixed an issue where the **Limit** specified in the Extract Job configuration pop-up was not being honored during execution, causing all records to be extracted instead of the defined subset.
 
-#### Data Loader – Insert Operation Stability
+#### DataLoader – Insert Operation Stability
 
-Fixed an issue where Data Loader insert jobs failed without producing success or error records by handling duplicate column generation during CSV preparation for lookup-mapped fields.
+Fixed an issue where DataLoader insert jobs failed without producing success or error records by handling duplicate column generation during CSV preparation for lookup-mapped fields.
 
 ***
 
@@ -90,6 +94,8 @@ Backend logic has been updated to avoid unnecessary workspace creation, allowing
 
 * Version Control → EZ-Commits
 * Version Control → Merges
+
+***
 
 ## DataLoader Pro Release Notes 26.1.3
 

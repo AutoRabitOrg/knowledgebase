@@ -100,11 +100,11 @@ Provides precise visibility into where unsafe data originates and how it propaga
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Verified the data flow tracking logic for unescaped output in Apex is working and the updated description has been applied.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (15).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Updated the Apex rule “URL Parameters should be Escaped/Sanitized” to include data flow analysis logic {Rule ID: sf:UnescapedSource}**
 
@@ -153,9 +153,9 @@ Verified scenarios:
 
 For all violating cases, the rule correctly reported the issue with an appropriate data flow trace (e.g., declaration point and usage path). The observed results match the expected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (9).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (11).png" alt=""><figcaption></figcaption></figure>
 
 **3.     Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops”  message to include detailed data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
 
@@ -217,9 +217,9 @@ Executed the following scenarios and validated that the advanced logic is workin
 * Multi-hop scenarios (loop → method → method → SOQL) correctly show the full Data Flow Trace with SOQL → CALL → LOOP.
 * Direct SOQL-in-loop scenarios correctly show the simplified message, which is the expected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (11).png" alt=""><figcaption></figcaption></figure>
 
 
 

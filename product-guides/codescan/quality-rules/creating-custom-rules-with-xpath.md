@@ -97,7 +97,7 @@ To find methods with the name `setup`, use this XPath:
 
 **Screenshot (PMD Rule Designer):**
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (7).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 In the Rule Designer, the analysis is performed solely on the **file’s source code**, from which an Abstract Syntax Tree (AST) is generated. Because the tool does not process the file as a whole, any metadata associated with the file—such as its **name, path, or other file-level attributes—cannot be accessed or retrieved during analysis**.”

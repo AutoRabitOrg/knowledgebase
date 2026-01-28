@@ -1,8 +1,4 @@
----
-hidden: true
----
-
-# Copy of Deployment via Version Control using Salesforce Org
+# Deployment via Version Control using Salesforce Org
 
 This section covers the deployment of **nCino metadata and data** through **version control**, leveraging the **Salesforce dataset** for streamlined and traceable delivery.
 

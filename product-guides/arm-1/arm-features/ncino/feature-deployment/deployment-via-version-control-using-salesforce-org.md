@@ -1,4 +1,8 @@
-# Deployment via Version Control using Salesforce Org
+---
+hidden: true
+---
+
+# Deploy via Version Control using Salesforce Org (Old)
 
 This section is about deploying the nCino metadata and data via version control using the Salesforce dataset.
 

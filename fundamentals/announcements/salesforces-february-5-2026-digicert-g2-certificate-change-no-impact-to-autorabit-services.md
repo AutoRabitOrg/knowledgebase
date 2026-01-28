@@ -18,3 +18,7 @@ AutoRABIT has reviewed the change and proactively ensured full alignment so your
 **Do I Need to Update Anything?**
 
 No. Everything has already been handled by the AutoRABIT team.
+
+**Can I Continue Using AutoRABIT Normally?**
+
+Yes—there will be no disruption to your backups, CI/CD processes, or any other features.

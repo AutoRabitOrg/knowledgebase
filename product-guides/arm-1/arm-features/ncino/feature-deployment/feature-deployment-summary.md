@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Feature Deployments
 
 ### Feature Deployment <a href="#feature-deployment" id="feature-deployment"></a>

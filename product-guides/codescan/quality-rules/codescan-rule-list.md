@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # CodeScan Rule List
 
 The CodeScan rule list is always expanding. You can view the complete current list in the latest file below.

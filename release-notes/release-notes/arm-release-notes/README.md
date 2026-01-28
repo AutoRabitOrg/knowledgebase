@@ -2,6 +2,31 @@
 
 {% @mailchimp/mailchimpSubscribe cta="ARM Release Notes Mailing List:" %}
 
+## ARM Release Notes 26.1.5
+
+**Release Date: 1st Feb 2026**
+
+\
+**Support Case: #182599**
+
+**CI Job Not Updating Branch After Multiple Builds**
+
+Fixed an issue where CI jobs continued to run successfully but stopped updating the target branch after multiple builds. The backend logic has been updated to correctly detect metadata changes and commit them to the branch, ensuring the repository stays in sync with the latest successful CI job execution.
+
+This fix applies to CI jobs regardless of whether **“Check-out with user credentials and commit changes with the actual modified user credentials”** is enabled or disabled.
+
+**Impacted Area:** Version Control → CI Jobs
+
+**Support Case: #184383**
+
+**Admin Visibility of DevHub-Enabled Salesforce Orgs**
+
+Fixed an issue where Salesforce orgs registered with **DevHub enabled** were visible in **Admin → Salesforce Org Management** but not shown under **My Profile → My Salesforce Orgs** for other Admin users. Backend logic has been corrected to ensure that any org present in Salesforce Org Management is also visible in My Salesforce Orgs for **all Admin users**, regardless of DevHub configuration.
+
+**Impacted Area:**\
+Admin → Salesforce Org Management\
+Profile → My Salesforce Orgs
+
 ## ARM Release Notes 26.1.4
 
 **Release Date: 25 January 2026**\

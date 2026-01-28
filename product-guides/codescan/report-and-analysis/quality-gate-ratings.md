@@ -26,7 +26,7 @@ The Reliability Rating is based on the highest severity Bug that is present in y
 
 The Maintainability Rating is based on the Technical Debt Ratio.  in CodeScan, each issue is given an issue remediation effort which represents the estimated time to fix that issue.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 The Technical Debt Ratio is the ratio between the cost of developing code and the cost of fixing it. This is calculated with the following formula (where the cost to develop one line is 30 minutes:
 

@@ -1,4 +1,4 @@
-# ALM Management
+# Connecting Your ALM
 
 {% hint style="info" %}
 **Important Note:** The actions described here are available **only to Org Administrators**. General ARM users cannot access ALM Management.
@@ -33,7 +33,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
        * **`Credentials:`** Specify your credentials. Refer to the [Credential Manager](../troubleshoot/how-tos/create-users-credentials.md) section for more info on creating and storing your credential inside ARM.
 
        <figure><img src="../../../.gitbook/assets/image (740).png" alt="" width="414"><figcaption></figcaption></figure>
-   2.  For **`JIRA:`**&#x20;
+   2.  For **`JIRA:`**
 
        <figure><img src="../../../.gitbook/assets/image (742).png" alt="" width="414"><figcaption></figcaption></figure>
 
@@ -44,13 +44,12 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
          * **`OAuth:`** Select the access type as **`OAuth`**, and click on **`Validate & Save`**. You will be redirected to the ALM's website to authenticate your credentials and grant permission.
 
 {% hint style="info" %}
-
 **Important Notes:**
 
 * Jira OAuth access type is currently supported for **Cloud versions** only.
 * OAuth access type will only be available while registering ALM if the credentials have been successfully registered in the **ALM Settings** section. For more information on registering Jira OAuth credentials, click [here](user-management/manage-users-account-settings.md).
 
-![](<../../../.gitbook/assets/image (744).png>)
+<img src="../../../.gitbook/assets/image (744).png" alt="" data-size="original">
 
 * The **Access Token** expires in one hour. The **Refresh Token** expires every **90 days**.
 {% endhint %}
@@ -79,23 +78,18 @@ If the steps above do not work, create a new credential and link it to your ALM 
 
 1. Log in to ARM as an administrator.
 2. Navigate to **Admin › ALM Mgmt**.
-3.  Click **Register ALM**.\
-
+3.  Click **Register ALM**.\\
 
     <figure><img src="../../../.gitbook/assets/image (1869).png" alt=""><figcaption></figcaption></figure>
-4.  Fill the form:
-
-    1. **ALM Name** – friendly label.
-    2. **ALM Type** – choose the platform.\
-       ![](<../../../.gitbook/assets/image (1870).png>)
-
-
+4. Fill the form:
+   1. **ALM Name** – friendly label.
+   2. **ALM Type** – choose the platform.\
+      ![](<../../../.gitbook/assets/image (1870).png>)
 
 **Field Mapping for Work Item Updates in Salesforce**
 
 To enable AutoRABIT to update your Work Items (e.g., User Stories or Bugs) based on commit actions, please configure the following fields from your registered Salesforce Org:\
-![](<../../../.gitbook/assets/image (1872).png>)\
-
+![](<../../../.gitbook/assets/image (1872).png>)\\
 
 c. Salesforce Org\
 Select the Salesforce Org from your list of registered orgs where the work item updates should be applied.
@@ -130,8 +124,7 @@ Fill in the required fields to ensure the correct ALM Work Item is updated post-
 * ALM Project: Pick the project or module name (e.g., User Story, Bug).
 * ALM Work item: Select the Work Item ID you wish to update.
 * ALM Work Item Status: Choose the new status you want to set (e.g., To Do, In Progress, Done).
-*   Current Status: Shows the status of the item (e.g., In Testing).\
-
+*   Current Status: Shows the status of the item (e.g., In Testing).\\
 
     <figure><img src="../../../.gitbook/assets/image (1873).png" alt=""><figcaption></figcaption></figure>
 
@@ -144,37 +137,35 @@ Click Commit after configuring all required fields. The system will:
 * Post-commit, automatically update the ALM Work Item to the new selected status.
 * Add relevant commit information to the comment field (if configured), including metadata, user, and validation results.
 
-&#x20;
-
 **Sample Outcome Post Commit Comment Format:**\
 \
 The selected Work Item will reflect the updated status in your ALM tool and include commit metadata like:
 
-\[Message] \[************]# Saas tool Integration-2&#x20;
+\[Message] \[\*\*\*\*\*\*\*\*\*\*\*\*]# Saas tool Integration-2
 
-\[Repository] **********;
+\[Repository] \*\*\*\*\*\*\*\*\*\*;
 
-\[Branch] 18235\_test&#x20;
+\[Branch] 18235\_test
 
-\[Revision] 3637289&#x20;
+\[Revision] 3637289
 
-\[Committed by] ************@******.com&#x20;
+\[Committed by] \*\*\*\*\*\***@**.com
 
-\[Committed metadata members] {Apex Class=\[A000, A0000]}&#x20;
+\[Committed metadata members] {Apex Class=\[A000, A0000]}
 
-\[Pre-validation Results]&#x20;
+\[Pre-validation Results]
 
-&#x20; Label Name = **************.******&#x20;
+Label Name = \*\*\*\*\*\*\*\*\*\***.**\*\*
 
-&#x20; Apex Test Results = NA&#x20;
+Apex Test Results = NA
 
-&#x20; Static Analysis = NA&#x20;
+Static Analysis = NA
 
-&#x20; Deployment Org = NA&#x20;
+Deployment Org = NA
 
-&#x20; Overall Validate Deployment Status = NA&#x20;
+Overall Validate Deployment Status = NA
 
-&#x20; Approved By = *********.******@******.com&#x20;
+Approved By = _**.@**_\*\*\*.com
 
 ***
 

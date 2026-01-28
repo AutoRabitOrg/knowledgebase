@@ -1,4 +1,4 @@
-# nCino Compare
+# Compare nCino Environments
 
 #### **Introduction**
 
@@ -25,7 +25,7 @@ The Compare and Selective Deployment functionality in nCino enables users to per
 
 #### Feature Deployment – Template & Version Control&#x20;
 
-1.  Click on "Create Feature Dployment" to initate the featre deployment creation
+1.  Click on "Create Feature Deployment" to initiate the feature deployment creation.
 
 
 

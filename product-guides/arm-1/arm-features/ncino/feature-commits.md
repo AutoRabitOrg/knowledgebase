@@ -1,9 +1,5 @@
 # Feature Commits
 
-## Copy of Feature Commits
-
-
-
 The Feature Commit History provides a comprehensive record of all commits executed during the feature migration deployment. It includes detailed commit logs and enumerates the objects committed to the version control system.
 
 #### **Step-By-Step Guide**:

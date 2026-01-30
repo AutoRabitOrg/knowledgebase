@@ -80,6 +80,32 @@ A fix has been provided to address a null pointer exception occurring in instanc
 
 ***
 
+## nCino + **DataLoader** - Release 25.3.9.1
+
+**Release Date:** September 07, 2025
+
+#### RBC Commit Data Merging Enhancements <a href="#rbc-commit-data-merging-enhancements" id="rbc-commit-data-merging-enhancements"></a>
+
+Enhanced the nCino RBC commit workflow to intelligently merge record-based configuration changes (CSV and JSON) in version control. This ensures existing data is preserved while new changes are appended during commits, enabling seamless multi-version management and more reliable deployments across environments.
+
+#### DL Test Configuration – Failure Count Logging Fix <a href="#dl-test-configuration-failure-count-logging-fix" id="dl-test-configuration-failure-count-logging-fix"></a>
+
+Fixed an issue where the failed records count was not accurately reflected in the logs for Data Loader configuration jobs. The logs now display the correct failure count after job execution.
+
+#### CI Jobs – Build Failure After Cloning <a href="#ci-jobs-build-failure-after-cloning" id="ci-jobs-build-failure-after-cloning"></a>
+
+Fixed an issue where cloned CI Jobs failed during the build when executed against a different target branch. The build process now correctly handles scenarios where no data is found for the selected template by updating the appropriate status and response, ensuring stable job execution.
+
+#### DataLoader Pro – Job Stuck in In-Progress State <a href="#dataloader-pro-job-stuck-in-in-progress-state" id="dataloader-pro-job-stuck-in-in-progress-state"></a>
+
+Resolved an issue where DataLoader Pro jobs processing parent–child records could remain in an _In Progress_ state for an extended period. A fix has been applied to handle a null pointer exception and to ensure the overall job status is updated correctly upon completion.
+
+#### Feature Commit – Log Step Update <a href="#feature-commit-log-step-update" id="feature-commit-log-step-update"></a>
+
+Implemented a migration to correctly update the current log step in the Feature Commit Label table, ensuring accurate tracking of feature commit progress.
+
+***
+
 ## nCino + **DataLoader** - Release 25.3.8
 
 **Release Date:** August 31, 2025

@@ -80,7 +80,7 @@ A fix has been provided to address a null pointer exception occurring in instanc
 
 ***
 
-## nCino + **DataLoader** - Release 25.3.9.1
+## nCino + **DataLoader** - Release 25.3.9
 
 **Release Date:** September 07, 2025
 

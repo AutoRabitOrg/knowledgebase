@@ -1,5 +1,21 @@
 # nCino Release Notes 26.0
 
+## nCino - Release 26.1.5
+
+**Release Date:** 01 February 2026
+
+#### Feature Deployment Status Handling <a href="#feature-deployment-status-handling" id="feature-deployment-status-handling"></a>
+
+An issue was resolved where a feature deployment could remain stuck in an **IN PROGRESS** state even after successful execution, blocking subsequent deployments. The deployment status handling logic has been corrected to ensure the final state transitions properly, preventing further deployment or integration blocks.
+
+#### Staging Deployment Data Scope <a href="#staging-deployment-data-scope" id="staging-deployment-data-scope"></a>
+
+An issue was fixed where deployments triggered after staging would incorrectly process the entire dataset instead of only the staged data. The deployment logic has been updated to ensure the latest staging iteration is correctly used during deployment.
+
+#### Selective Re-Deployment – External ID Mappings <a href="#selective-re-deployment-external-id-mappings" id="selective-re-deployment-external-id-mappings"></a>
+
+An issue was resolved where External ID mappings were not loading during selective re-deployment iterations. The fix ensures External ID mappings are correctly stored and retrieved as part of the dataset, enabling accurate re-deployments.
+
 ## nCino - Release 26.1.4
 
 **Release Date:** 25 January 2026

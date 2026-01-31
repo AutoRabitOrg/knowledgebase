@@ -1,5 +1,7 @@
 # Guard Release Notes 26.1
 
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" fullWidth="true" %}
+
 ## Guard Release Notes 26.1.1
 
 **Release Date: 25 January 2026**

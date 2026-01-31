@@ -1,5 +1,7 @@
 # Cloud Release Notes 26.0
 
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" %}
+
 ## CodeScan Release 26.0.2
 
 **Release Date: 01 February 2026**

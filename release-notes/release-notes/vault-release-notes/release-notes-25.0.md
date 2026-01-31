@@ -1,5 +1,7 @@
 # Vault Release Notes 25.0
 
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Vault updates!" %}
+
 ## Vault Release Notes 25.3.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 21 January 2026**

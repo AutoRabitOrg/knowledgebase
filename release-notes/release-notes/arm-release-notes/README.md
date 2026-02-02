@@ -6,6 +6,13 @@
 
 **Release Date: 1st Feb 2026**
 
+**Refreshed UI** \
+\
+The refreshed ARM UI is now available to all customers on shared instances.
+
+Customers on shared instances can access the refreshed UI immediately and switch between the existing UI and the refreshed UI at any time using the in-app toggle. Switching does not impact configuration, data, or any in-progress work.
+
+For customers on dedicated instances, the refreshed UI can be enabled on request. Please contact AutoRABIT Support or your Customer Success Manager to schedule the upgrade.\
 \
 **Support Case: #182599**
 

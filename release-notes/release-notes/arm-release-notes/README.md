@@ -4,7 +4,7 @@
 
 ## ARM Release Notes 26.1.5
 
-**Release Date: 1st Feb 2026**
+**Release Date: 01 February 2026**
 
 **Refreshed UI** \
 \
@@ -33,6 +33,8 @@ Fixed an issue where Salesforce orgs registered with **DevHub enabled** were vis
 **Impacted Area:**\
 Admin → Salesforce Org Management\
 Profile → My Salesforce Orgs
+
+***
 
 ## ARM Release Notes 26.1.4
 

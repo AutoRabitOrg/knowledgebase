@@ -22,6 +22,8 @@ Resolved an issue with file downloads caused by file name mismatches, ensuring f
 
 Improved the update process for **Attachment** and **ContentVersion** records by skipping unnecessary binary data reprocessing when only metadata fields are updated. This optimization reduces data transfer, improves performance, and speeds up update operations
 
+***
+
 ## Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 7 January 2026**

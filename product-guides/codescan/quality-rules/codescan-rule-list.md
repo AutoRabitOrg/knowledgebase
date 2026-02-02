@@ -10,7 +10,7 @@ Our [Release Notes](../../../release-notes/release-notes/codescan-release-notes/
 
 You can download the list of CodeScan rules from here:&#x20;
 
-{% file src="../../../.gitbook/assets/CodeScan Rules List 25.1.14.xlsx" %}
+{% file src="../../../.gitbook/assets/CodeScan Rules List 26.0.2.xlsx" %}
 
 ### Rules Not Available for On-Premises Applications
 

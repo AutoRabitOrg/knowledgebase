@@ -1,6 +1,6 @@
 # Vault Release Notes
 
-{% @mailchimp/mailchimpSubscribe cta="Vault Release Notes Mailing List:" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Vault release notes!" %}
 
 This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions or details about additional improvements in this release over your current release.
 

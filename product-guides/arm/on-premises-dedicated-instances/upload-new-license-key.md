@@ -55,3 +55,7 @@ Super Admins can upload and activate new license keys for on-premises deployment
   Check that the file is not corrupted (redownload and try again) and was provided by AutoRABIT.
 * **Still Locked Out?**\
   Contact AutoRABIT Support with your instance details and license key file.
+
+
+
+Updating your license key is a quick process that ensures uninterrupted access to ARM. Always verify the file name and source before uploading. For any issues, reach out to AutoRABIT Support.

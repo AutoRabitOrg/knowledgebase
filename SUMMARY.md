@@ -484,6 +484,7 @@
     * [ARM Supported Metadata Types](product-guides/arm/getting-started/understanding-arm/arm-supported-metadata-types.md)
   * [On-Premises / Dedicated Instances](product-guides/arm/on-premises-dedicated-instances/README.md)
     * [Dedicated Instance Upgrades](product-guides/arm/on-premises-dedicated-instances/upgrade-guides.md)
+    * [Upload New License Key](product-guides/arm/on-premises-dedicated-instances/upload-new-license-key.md)
   * [Troubleshooting](product-guides/arm/troubleshoot/README.md)
     * [ARM-FAQs](product-guides/arm/troubleshoot/arm-faqs/README.md)
       * [Account & Administrator](product-guides/arm/troubleshoot/arm-faqs/account-and-administrator.md)

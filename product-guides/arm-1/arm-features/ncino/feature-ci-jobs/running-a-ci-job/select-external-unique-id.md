@@ -11,6 +11,6 @@ This provision allows you to go through the list of external unique IDs availabl
 
 The external unique ID field is available in the “Deploy” page.
 
-<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2380).png" alt=""><figcaption></figcaption></figure>
 
 If the source for the deployment is a CSV file, then all the fields will be displayed in the dropdowns.

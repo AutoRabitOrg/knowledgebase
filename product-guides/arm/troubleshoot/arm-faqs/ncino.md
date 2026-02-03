@@ -104,7 +104,7 @@ The _views_ and the _self-references_ screens sections were not picked up during
 
 When deploying nCino Form Templates with attachments, the template records deploy fine, but all attachments may fail.\
 \
-There is a limitation when parsing the attachment name. If you have a slash in your attachment name, like the example below, the nCino job will fail: \
+There is a limitation when parsing the attachment name. If you have a slash in your attachment name, like the example below, then the nCino job will fail: \
 ncino-Forms/Attachment/DocPrep/Officer/Comments.html\
 \
-If you need to divide the file name, please change it to an underscore or a hyphen, like in the example below: ncino-Forms/Attachment/DocPrep/Officer\_Comments.htm
+If you need to divide the file name, please change it to an underscore or a hyphen, like in the example here: ncino-Forms/Attachment/DocPrep/Officer\_Comments.htm

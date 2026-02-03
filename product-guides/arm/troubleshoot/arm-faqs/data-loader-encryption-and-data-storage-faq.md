@@ -46,3 +46,22 @@ The current Data Loader setup in AutoRABIT requires parent objects to be include
 ## Is AutoRABIT compatible with the deployment of CPQ data? <a href="#is-autorabit-compatible-with-the-deployment-of-cpq-data" id="is-autorabit-compatible-with-the-deployment-of-cpq-data"></a>
 
 Currently, we are supporting CPQ data deployment through DataLoader Pro only. We plan to release a beta version exclusively for CPQ deployments in the coming months.
+
+## **Clarifying the Dataloader Pro Behavior**
+
+**Object-Level Flow:**\
+When a master object is selected, the job execution automatically includes:
+
+* Its direct child objects
+* Its direct parent objects
+* All ancestor (parent) objects up to the _nth_ level
+
+This ensures that all relevant hierarchical dependencies of the master object are processed.
+
+**Record-Level Flow:**\
+When records are retrieved (for Master, Parent, or Child objects) through dependencies or applied filters, and those records reference other records within the same object, it is treated as a _self-referential scenario_.
+
+In these cases:
+
+* The retrieved records, their parent records, and the entire parent hierarchy up to the nth level are included.
+* Child records from the retrieved sets are not included in the processing.

@@ -99,3 +99,12 @@ Please refer to the article: [Working with Translation in ARM](../best-practices
 ### Conditional rendering references in the 'Screen' sections are not included when using the nCino standard UI template <a href="#conditional-rendering-references-in-the-screen-sections-are-not-included-when-using-the-ncino-standa" id="conditional-rendering-references-in-the-screen-sections-are-not-included-when-using-the-ncino-standa"></a>
 
 The _views_ and the _self-references_ screens sections were not picked up during the feature deployment using the nCino standard UI migration template. This is our top priority, and our development team is working hard to remedy the problem as quickly as possible. After running the nCino UI migration template, please run the Screen UI template to pick up all the missing components as a workaround.
+
+### Why are attachments failing when deploying nCino Form Templates?
+
+When deploying nCino Form Templates with attachments, the template records deploy fine, but all attachments may fail.\
+\
+There is a limitation when parsing the attachment name. If you have a slash in your attachment name, like the example below, the nCino job will fail: \
+ncino-Forms/Attachment/DocPrep/Officer/Comments.html\
+\
+If you need to divide the file name, please change it to an underscore or a hyphen, like in the example below: ncino-Forms/Attachment/DocPrep/Officer\_Comments.htm

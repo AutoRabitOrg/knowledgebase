@@ -646,7 +646,7 @@
       * [Rolling Back a CI Build](product-guides/arm-1/arm-features/automation-and-ci/ci-job-rollback.md)
       * [Start a CI Build Automatically or Manually](product-guides/arm-1/arm-features/automation-and-ci/triggering-builds-for-your-ci-job.md)
     * [Dashboard & Pipelines](product-guides/arm-1/arm-features/dashboard-and-pipelines/README.md)
-      * [Dashboards & Widgets](product-guides/arm-1/arm-features/dashboard-and-pipelines/dashboards-and-widgets.md)
+      * [Dashboards](product-guides/arm-1/arm-features/dashboard-and-pipelines/dashboards-and-widgets.md)
       * [Pipeline](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/README.md)
         * [Most recent runs](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/most-recent-runs/README.md)
           * [Release Pipeline Run Details](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/most-recent-runs/release-pipeline-run-details.md)

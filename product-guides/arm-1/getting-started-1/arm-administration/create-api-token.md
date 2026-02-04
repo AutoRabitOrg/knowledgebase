@@ -1,4 +1,4 @@
-# Managing Your API Token
+# API Token Manager
 
 Important Note: This article is for **Org Administrators** in particular. The actions discussed in the article are not available to general users. &#x20;
 

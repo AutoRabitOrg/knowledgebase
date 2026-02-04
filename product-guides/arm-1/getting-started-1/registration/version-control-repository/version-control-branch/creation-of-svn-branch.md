@@ -7,7 +7,7 @@
 3. Select the SVN repository for which the branch needs to be created.
 4.  Click on **`Create`** button.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 5. In the **`Create Branch`** screen, give the branch a name in the **`Display Name`** field.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
 6. Select your **`Credential`** from the drop-down field.
 7. In the **`Branch URL`** field, enter the branch name beside the parent branch. _**For example,**_ _branches/Development_.
@@ -20,7 +20,7 @@
 
 1.  On the **`VC Repo's`** page, select one SVN repository from the **`Repository List`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 2. Click **`Register`**.
 3. On the next screen, enter the **branch name** you want to register in ARM.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
 4. The **`Repository`** field is auto-filled with the repository root. Give a branch name beside the parent branch. _**For example,**_ _branches/Integration_.

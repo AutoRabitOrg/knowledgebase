@@ -23,10 +23,10 @@ Key benefits:
 
 1.  Hover over **`Admin`** and click **`Credentials`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1933).png" alt="" width="236"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1933).png" alt="" width="236"><figcaption></figcaption></figure>
 2.  Click **Create Credential**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.43.44 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.43.44 PM.png" alt=""><figcaption></figcaption></figure>
 3. In the pop-up, enter a **Credential name** and choose a **Credential Type**:
    * **Username with Password**
    * **SSH**
@@ -44,7 +44,7 @@ Provide the service **username** and **password**. Choose a **Credential Scope**
 *   **Private** – visible only to you.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1934).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1934).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -53,7 +53,7 @@ Provide the service **username** and **password**. Choose a **Credential Scope**
 Upload or paste your **private key** (optionally protected by a passphrase). ARM stores the key and uses it for Git operations over SSH.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (1935).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1935).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 * **Recommended** – SSH keys are more secure than user/password.
@@ -68,9 +68,9 @@ Upload or paste your **private key** (optionally protected by a passphrase). ARM
 Add HashiCorp Vault credentials once; ARM can now generate a new **Vault Token** automatically via **AWS authentication** whenever the old token expires.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (1936).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1936).png" alt="" width="375"><figcaption></figcaption></figure>
 
-_For details, see the dedicated_ [_HashiCorp Vault guide_](arm-credential-manager.md#hashicorp-vault)_._
+_For details, see the dedicated_ [_HashiCorp Vault guide_](./#hashicorp-vault)_._
 
 ***
 
@@ -82,7 +82,7 @@ _For details, see the dedicated_ [_HashiCorp Vault guide_](arm-credential-manage
 *   Supported for **GitHub Enterprise Cloud** orgs.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1937).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1937).png" alt="" width="375"><figcaption></figcaption></figure>
 
 > **Limitation:** Available only for GitHub Enterprise Cloud.
 
@@ -97,7 +97,7 @@ Connect ARM to Jira via **Personal Access Token (PAT)** to meet enterprise compl
 3.  Click **Save**.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1938).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1938).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Important Note:** The **Application Token** credential type is **not supported for ARM CI Jobs**.\

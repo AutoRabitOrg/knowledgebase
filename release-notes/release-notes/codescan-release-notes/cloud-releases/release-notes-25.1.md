@@ -533,9 +533,9 @@ Verified the below scenarios and validated that the fix is working as expected.
 * Verified that the “author name” filed does not overlap with the “action taken” field.
 * Verified with different actions (Updated, Activated, Deactivated).
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

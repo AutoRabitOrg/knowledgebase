@@ -40,7 +40,7 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 * **Custom**: Uses `username: API Token`. Prefix the token with the keyword `token`.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **OAuth**: Supports **Client Credentials** grant type. Required fields:
   * **URL** (OAuth 2.0 provider)
@@ -54,13 +54,13 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
    * Use `application/json` for JSON requests.
    * Use `application/xml` for XML requests.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. To add custom headers, click **Add Header** and define key-value pairs. You can add multiple.
    * Default headers include:\
      `"Accept": "application/json", "Content-Type": "application/json"`
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Click **Save**.
 

@@ -41,8 +41,11 @@ NOTE:
 
     To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
-2. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
+<p align="center"><img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.22.29.png" alt=""></p>
+
+<p align="center"><img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.20.41.png" alt=""></p>
+
+1. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
 {% endhint %}
 
 View the **`Salesforce Orgs`** assigned to you, or you have permission to view.\

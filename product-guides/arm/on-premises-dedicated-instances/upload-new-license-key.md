@@ -36,7 +36,7 @@ Super Admins can upload and activate new license keys for on-premises deployment
 * **Click on “Choose File” and Click on the Correct License Key**\
   Confirm that the file name is exactly `rabitkey.l4j`.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -46,7 +46,7 @@ Super Admins can upload and activate new license keys for on-premises deployment
 
 
 
-    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Troubleshooting
 

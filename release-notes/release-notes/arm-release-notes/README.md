@@ -4,7 +4,7 @@
 
 ## ARM Release Notes 26.1.6
 
-**Release Date: 8th February 2026**
+**Release Date: 08 February 2026**
 
 \
 **Support Ticket: #186267**
@@ -26,6 +26,8 @@ Fixed an issue where changing the page size after applying a group filter could 
 The filtering logic has been improved to ensure group and other applied filters are retained correctly when the page size is changed, providing consistent and accurate CI job history results.
 
 **Impacted Areas:** CI Job Results, CI Job History Page
+
+***
 
 ## ARM Release Notes 26.1.5
 

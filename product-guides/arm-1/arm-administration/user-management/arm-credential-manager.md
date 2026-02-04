@@ -1,0 +1,111 @@
+# Credential Manager
+
+{% hint style="info" %}
+**Important Note:** The actions described here are visible only to **Org Administrators**. General users cannot access Credential Manager.
+{% endhint %}
+
+***
+
+## Credential Manager: Overview <a href="#credential-manager-overview" id="credential-manager-overview"></a>
+
+**Credential Manager (CM)** is your encrypted “digital locker” inside AutoRABIT.\
+Store usernames, passwords, SSH keys, tokens, and certificates once, then reuse them across repositories and integrations without re-entering secrets each time.
+
+Key benefits:
+
+* Centralized, encrypted storage managed by ARM.
+* Role-based sharing (global vs. private).
+* Eliminates hard-coding credentials in jobs or scripts.
+
+***
+
+## Create a New Credential <a href="#create-a-new-credential" id="create-a-new-credential"></a>
+
+1.  Hover over **`Admin`** and click **`Credentials`**.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (1933).png" alt="" width="236"><figcaption></figcaption></figure>
+2.  Click **Create Credential**.<br>
+
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 7.43.44 PM.png" alt=""><figcaption></figcaption></figure>
+3. In the pop-up, enter a **Credential name** and choose a **Credential Type**:
+   * **Username with Password**
+   * **SSH**
+   * **HashiCorp Vault**
+   * **SSH Certificate**
+   * **Application Token** (Enterprise only)
+
+***
+
+### Username with Password <a href="#username-with-password" id="username-with-password"></a>
+
+Provide the service **username** and **password**. Choose a **Credential Scope**:
+
+* **Global** – share with the team.
+*   **Private** – visible only to you.\
+    <br>
+
+    <figure><img src="../../../../.gitbook/assets/image (1934).png" alt="" width="375"><figcaption></figcaption></figure>
+
+***
+
+### SSH <a href="#ssh" id="ssh"></a>
+
+Upload or paste your **private key** (optionally protected by a passphrase). ARM stores the key and uses it for Git operations over SSH.\
+<br>
+
+<figure><img src="../../../../.gitbook/assets/image (1935).png" alt="" width="375"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+* **Recommended** – SSH keys are more secure than user/password.
+* Choose **Global** or **Private** scope.
+* Paste or upload the private key file; ARM never exposes it in plain text.
+{% endhint %}
+
+***
+
+### HashiCorp Vault <a href="#hashicorp-vault" id="hashicorp-vault"></a>
+
+Add HashiCorp Vault credentials once; ARM can now generate a new **Vault Token** automatically via **AWS authentication** whenever the old token expires.\
+<br>
+
+<figure><img src="../../../../.gitbook/assets/image (1936).png" alt="" width="375"><figcaption></figcaption></figure>
+
+_For details, see the dedicated_ [_HashiCorp Vault guide_](arm-credential-manager.md#hashicorp-vault)_._
+
+***
+
+### Authentication Using SSH Certificates <a href="#authentication-using-ssh-certificates" id="authentication-using-ssh-certificates"></a>
+
+**SSH certificates** pair a public key with a signature from a trusted Certificate Authority (CA). A Git server that trusts the CA accepts any certificate signed by it.
+
+* Upload the **certificate-signed key** while creating the credential.
+*   Supported for **GitHub Enterprise Cloud** orgs.\
+    <br>
+
+    <figure><img src="../../../../.gitbook/assets/image (1937).png" alt="" width="375"><figcaption></figcaption></figure>
+
+> **Limitation:** Available only for GitHub Enterprise Cloud.
+
+***
+
+### Application Token (for Enterprise Users Only) <a href="#application-token-for-enterprise-users-only" id="application-token-for-enterprise-users-only"></a>
+
+Connect ARM to Jira via **Personal Access Token (PAT)** to meet enterprise compliance.
+
+1. Select **Application Token** as **Credential Type**.
+2. Paste the **PAT** generated in Jira.
+3.  Click **Save**.\
+    <br>
+
+    <figure><img src="../../../../.gitbook/assets/image (1938).png" alt="" width="375"><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+**Important Note:** The **Application Token** credential type is **not supported for ARM CI Jobs**.\
+It is intended only for **enterprise Jira integration** using a Personal Access Token (PAT).\
+Do **not** configure Application Token as the credential type for CI Jobs. For CI Jobs, use supported SCM credentials (for example, **Username and Password or others**) instead.
+{% endhint %}
+
+Need PAT access? Email **support@autorabit.com**.\
+How to create a PAT in Jira: [Atlassian docs](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html).
+
+***

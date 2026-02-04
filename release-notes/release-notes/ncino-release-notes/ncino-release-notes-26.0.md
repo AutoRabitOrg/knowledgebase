@@ -4,7 +4,7 @@
 
 ## nCino - Release 26.1.5
 
-**Release Date:** 01 February 2026
+**Release Date:** **01 February 2026**
 
 #### Feature Deployment Status Handling <a href="#feature-deployment-status-handling" id="feature-deployment-status-handling"></a>
 
@@ -18,9 +18,11 @@ An issue was fixed where deployments triggered after staging would incorrectly p
 
 An issue was resolved where External ID mappings were not loading during selective re-deployment iterations. The fix ensures External ID mappings are correctly stored and retrieved as part of the dataset, enabling accurate re-deployments.
 
+***
+
 ## nCino - Release 26.1.4
 
-**Release Date:** 25 January 2026
+**Release Date:** **25 January 2026**
 
 #### Batch Size Support for Data Migration <a href="#batch-size-support-for-data-migration" id="batch-size-support-for-data-migration"></a>
 
@@ -33,6 +35,8 @@ Resolved an issue where enabling a batch size during the Screens template deploy
 #### Forms Manager Template Deployment <a href="#forms-manager-template-deployment" id="forms-manager-template-deployment"></a>
 
 Resolved an issue where Forms Manager template deployments remained stuck in an _In Progress_ state by correcting the handling of self-referenced records during entry object data retrieval.&#x20;
+
+***
 
 ## nCino - Release 26.1.3
 

@@ -34,7 +34,7 @@ Release Pipelines – viewing runs and drill down (step-by-step)
     *   Delete pipeline: removes the pipeline configuration from the Releases list. This does not deploy or change anything in Salesforce; it only affects the pipeline record/configuration in ARM.\
         <br>
 
-        <figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -15,7 +15,7 @@ Release Pipelines allow teams to take a single artifact generated from a build p
 When you navigate to Pipelines → Releases, the landing page displays **Most recent runs** by default. This view shows the latest execution for each release pipeline, allowing users to quickly understand the current state of deployments.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 From this page, users can:\
 \

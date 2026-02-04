@@ -4,9 +4,6 @@ The ARM signup and activation process has several steps — some on our end and 
 
 1. Go to [https://www.autorabit.com/](https://www.autorabit.com/) and log in or go directly to [https://login.autorabit.com/](https://login.autorabit.com/).
 2. Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.
-
-<figure><img src="../../../../.gitbook/assets/image (37) (2).png" alt="" width="563"><figcaption><p>Login Screen</p></figcaption></figure>
-
 3. Fill in the registration details, and then click **`Register.`**
 
 <figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt="" width="563"><figcaption><p>New Registration Screen</p></figcaption></figure>
@@ -24,9 +21,10 @@ The ARM login screen allows you to log in to your instance.
 1. Go to your web browser to your instance's URL (for example, _https://instance.autorabit.com_).&#x20;
 2. The ARM login screen appears.&#x20;
 3. Enter your login credentials (username and password), and then click on **`Login.`**
-4. Contact your org administrator if you do not know your instance's URL or login credentials.
+4.  Contact your org administrator if you do not know your instance's URL or login credentials.\
+    <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt="" width="368"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Password Requirements
 

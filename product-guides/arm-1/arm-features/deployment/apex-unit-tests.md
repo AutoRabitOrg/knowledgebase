@@ -55,7 +55,7 @@ _Code Coverage Failures:_\
 
 In the **`Submit for Validation`** screen, select the **`Validate Deployment`** checkbox and choose an org to validate your commit. Next, choose the test level of validation from the **`Apex Test Level`** dropdown.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
 
 #### During EZ-Merge Prevalidation <a href="#during-ezmerge-prevalidation" id="during-ezmerge-prevalidation"></a>
 

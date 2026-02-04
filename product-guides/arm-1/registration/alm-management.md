@@ -107,7 +107,7 @@ git commit -m "\[PROJECT-123] add README"
 
 ***
 
-## Repository Mappings <a href="#repository-mappings" id="repository-mappings"></a>
+## Merge request settings/ Repository Mappings <a href="#repository-mappings" id="repository-mappings"></a>
 
 Repository mappings let AutoRABIT update ALM work-item status after a successful merge.
 

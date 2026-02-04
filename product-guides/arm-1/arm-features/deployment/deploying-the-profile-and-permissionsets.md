@@ -1,26 +1,22 @@
-# Deploying Profile and Permission Sets
+# Deploy Profiles & Permission Sets
 
 {% hint style="info" %}
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
 1. Log in to your ARM account.
-2. From the top navigation pane, navigate to **`Create New > New Deployment`**.
-3. Click on the **`Profile Manager`** button.
-
-<figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+2. From the top navigation pane, navigate to **`Create > Profile Compare`**.
+3. Click on the **`Profile Compare`** button.\
+   \
+   ![](<../../../../.gitbook/assets/image (2402).png>)<br>
 4. In the **`Profile/PermissionSet Manager`** screen, select the **`Salesforce orgs`** that need to be compared (max 3 Orgs).
-5.  Click on either the **`Get Profiles`** or the **`Get PermissionSets`**&#x62;utton.
+5. Click on either the **`Get Profiles`** or the **`Get PermissionSets`**&#x62;utton.
+   * **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
+   *   **`Get PermissionSets`** will list all available permission sets in Salesforce Orgs.\
+       <br>
 
-    * **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
-    * **`Get PermissionSets`** will list all available permission sets in Salesforce Orgs.
-
-    <figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2403).png" alt=""><figcaption></figcaption></figure>
 6. Select the **`Profile/PermissionSets`** type based on the above selection.
-
-<figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 7. Select the metadata components (including its metadata members) for which you want to view the selected profile/permissionset comparison report. A minimum of one metadata component selection is required to proceed further.
 
 <figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
@@ -42,23 +38,21 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 {% endhint %}
 
 11. On the next page, you can see a list of permissions available for each metadata component. Here, you can update the permissions for each component for all the orgs at once.
-
     * Permissions/Components that are not available will be denoted by **`X`** in the org.
-    * For the fields that are left blank. For example, in **`Apps`** and **`Datasources`**, no related record type is assigned; hence, nothing shows up or will display '**`No Data Found.`**'
+    * For the fields that are left blank. For example, in **`Apps`** and **`Datasources`**, no related record type is assigned; hence, nothing shows up or will display '**`No Data Found.`**'\
+      \
+      <br>
+12. You can also download the report on your local machine using the **`Download Report`** icon at the bottom of this page.\
+    <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (54) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-12. You can also download the report on your local machine using the **`Download Report`** icon at the bottom of this page.
-
-<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 10.30.59 AM.png" alt=""><figcaption></figcaption></figure>
 13. Select the permissions/components that you want to update.
 14. Next, select one of the actions listed below:
-
     * **`Update Change:`** The changes to the metadata components get updated in the same Org.
     * **`Update & Deploy:`** The changes will be updated in the selected source Org and deployed to the Destination Org(s).
-    * **`Deploy:`** The changes get deployed only in the selected Destination Org(s). No changes occur in the Source Org.
+    *   **`Ok/Deploy:`** The changes get deployed only in the selected Destination Org(s). No changes occur in the Source Org.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (56) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (2404).png" alt=""><figcaption></figcaption></figure>
 15. Click **`OK`**.
 16. You will be redirected to the **`Deployment History`** screen, where you can find the deployment process.
 

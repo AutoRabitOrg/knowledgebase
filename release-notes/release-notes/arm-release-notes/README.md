@@ -29,6 +29,20 @@ The filtering logic has been improved to ensure group and other applied filters 
 
 ***
 
+## DataLoader Pro Release Notes 26.1.6
+
+**Release Date:** **08 February 2026**
+
+#### Improved Filtered Data Migration <a href="#dl-pro-improved-filtered-data-migration" id="dl-pro-improved-filtered-data-migration"></a>
+
+Resolved an issue where data migrations could fail when filters were applied to master objects. The system now ensures that all required related records are included automatically, preventing migration failures due to missing references.
+
+#### Selective Deployment – Improved Log Visibility <a href="#selective-deployment-improved-log-visibility" id="selective-deployment-improved-log-visibility"></a>
+
+Fixed an issue where data retrieval logs were not visible during selective deployments. Logs are now displayed correctly and only when applicable, providing clearer visibility into deployment progress.
+
+***
+
 ## ARM Release Notes 26.1.5
 
 **Release Date: 01 February 2026**

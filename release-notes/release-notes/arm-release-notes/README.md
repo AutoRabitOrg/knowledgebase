@@ -411,10 +411,20 @@ ARM’s application runtime has been upgraded to Tomcat 11.0.13, delivering impr
 \
 **Highlights**
 
-Salesforce is deprecating the “username + password + security token” login method for SOAP API integrations, and ARM now supports OAuth (JWT) authentication to ensure uninterrupted connectivity from API 65. This release also adds support for Salesforce Metadata API version 65, introduces a CodeScan configuration wizard for easier setup, enhances audit visibility with CEF login logs, and fixes CaseTeamRole handling for multi-word names in environment templates.\
+Salesforce is deprecating the **username + password + security token** method for SOAP API integrations. To ensure compatibility with **API version 65**, ARM now supports **OAuth (JWT) authentication**.
+
+This release also includes:
+
+* Support for **Salesforce Metadata API v65**
+* A new **CodeScan Configuration Wizard** for simplified setup
+* Enhanced audit visibility with **CEF login logs**
+* Fix for **CaseTeamRole** handling of multi-word names in environment templates
+
+**Limitation:** OAuth (JWT) is currently supported only for **Salesforce Dev Hub**. Regular Salesforce orgs continue to use **OAuth 2.0 Web Server Flow**. Other authentication methods are not supported in this release.\
 \
 **Salesforce SOAP Login Deprecation Notice**\
-Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth (JWT Bearer) authentication to ensure uninterrupted connectivity. The migration can be done through Connections → \{{ConnectionName\}} → Migrate to OAuth, followed by the on-screen steps to confirm the connection status as “OAuth (JWT)”.\
+Salesforce has deprecated the “username + password + security token” authentication method for integrations using the SOAP API starting with version 65. This legacy method will be completely disabled by Summer ’27 for API versions 31–64. Customers using this method in AutoRABIT connections (e.g., \{{ConnectionName\}}) must migrate to OAuth authentication to ensure uninterrupted connectivity.
+
 \
 **Salesforce Metadata API Version 65 Support**\
 ARM now supports Salesforce Metadata API version 65, ensuring full compatibility with the latest metadata structures introduced by Salesforce. As part of this release, ARM has validated several metadata types across both DX and Non-DX environments, enabling consistent retrieval, validation, deployment, and CI/CD operations.

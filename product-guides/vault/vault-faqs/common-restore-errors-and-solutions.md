@@ -160,6 +160,12 @@ No, the order of a Restore operation is established by internal logic using data
 
 API calls are not currently displayed on the user interface during the Restore process. &#x20;
 
+### Handling Existing Parent Records
+
+During **Restore** or **Replicate** operations, the system checks whether parent records already exist in the destination org. If a parent record is found to be already present, the system skips migrating that record to prevent duplicate creation.
+
+The skipped parent record is recorded as an **error entry in the result file**, clearly indicating that the record was ignored because it already exists in the destination. All other eligible records continue to be processed without interruption, ensuring the overall operation completes as expected.
+
 ***
 
 ## **Data Encryption**

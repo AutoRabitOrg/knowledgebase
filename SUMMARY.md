@@ -354,7 +354,7 @@
           * [Edit Territory View Rules](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/territory-view-rules/edit-territory-view-rules.md)
           * [New Territory View Rules](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/territory-view-rules/new-territory-view-rules.md)
         * [Update Custom Label](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/updatecustomlabel.md)
-        * [Update Url for Remote Site Settings](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/updateurlforremotesitesettings.md)
+        * [Update URL for Remote Site Settings](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/updateurlforremotesitesettings.md)
         * [User Interface Settings](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/userinterface.md)
         * [Web to Case](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/web-to-case.md)
         * [Web to Lead](product-guides/arm/arm-features/environment-provisioning/unsupported-metadata-templates/web-to-lead/README.md)

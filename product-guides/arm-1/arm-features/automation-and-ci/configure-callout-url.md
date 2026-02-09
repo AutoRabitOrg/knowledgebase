@@ -40,7 +40,7 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 * **Custom**: Uses `username: API Token`. Prefix the token with the keyword `token`.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **OAuth**: Supports **Client Credentials** grant type. Required fields:
   * **URL** (OAuth 2.0 provider)

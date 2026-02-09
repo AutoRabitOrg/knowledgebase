@@ -25,13 +25,13 @@ The following articles describe how to trigger a new build for your CI Job creat
 1. Jobs with deployments display the icon: ![](<../../../../.gitbook/assets/image (1141).png>), while validated-only jobs show: ![](<../../../../.gitbook/assets/image (1142).png>)
 2. Use the **Select Job** dropdown to choose your CI job.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. If no builds exist yet, you'll see:\
    &#xNAN;**"No builds found for this job. Please trigger a new build for results."**\
    Click **Build Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. If previous builds exist, click **Build Now** to trigger a new build.
 

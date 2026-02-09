@@ -196,6 +196,7 @@
       * [Deploying Profile and Permission Sets](product-guides/arm/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
       * [Deployment Rollback](product-guides/arm/arm-features/deployment/deployment-rollback.md)
       * [Destructive Changes](product-guides/arm/arm-features/deployment/destructive-changes.md)
+      * [Sharing Settings for Custom Objects](product-guides/arm/arm-features/deployment/sharing-settings-for-custom-objects.md)
     * [Environment Provisioning](product-guides/arm/arm-features/environment-provisioning/README.md)
       * [Migration Template](product-guides/arm/arm-features/environment-provisioning/migration-template/README.md)
         * [Enable History Tracking on Objects](product-guides/arm/arm-features/environment-provisioning/migration-template/enable-history-tracking-on-objects.md)

@@ -17,7 +17,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 
 1. Choose the tile: **Deploy from Salesforce with a Version Control backup.**
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. On the next screen, give the job a descriptive name in the **Job Name** field.
 2. Add a brief **description** of the current CI job.
@@ -39,7 +39,7 @@ Under the **Build** section, fill in the below details:
 
 **Additional options in the Build section**
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 1. **Auto switch to bulk retrieve service, if job is hitting metadata retrieving governor limit:** This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 39 MB. Using Batch Size, you can process metadata in batches to stay within platform limits. If you do not have a lot of metadata, processing records through batches are your best solution. Specify the batch size for both profile and remaining components to retrieve metadata types. 10 K is the max batch size that you can set per batch.
 2. **Exclude Installed (Managed) components and changes:** This option will exclude any **Managed packages** that the user may have installed.

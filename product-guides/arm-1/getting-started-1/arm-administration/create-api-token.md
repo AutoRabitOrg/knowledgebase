@@ -24,11 +24,11 @@ To generate your access token, you should:
 2.  Click on the **`Create API Token`** button to generate a new token.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Enter the API **`Token Name`** on the next screen.&#x20;
 4. Click **`Create`**.\
    \
-   ![](<../../../../.gitbook/assets/image (2) (1).png>)<br>
+   ![](<../../../../.gitbook/assets/image (2) (1) (1).png>)<br>
 5.  Write down your newly generated token as you will need it soon.\
     <br>
 

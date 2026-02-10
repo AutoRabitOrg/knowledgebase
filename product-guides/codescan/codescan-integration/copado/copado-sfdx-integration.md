@@ -48,6 +48,16 @@ First, you will need to add two fields to the copado\_\_Static\_Code\_Analysis\_
    **Length**: 255\
    **ExternalId**: false
 
+### Job Template Modifications
+
+Navigate to the Job Templates list and open Run CodeScan QIF.
+
+Check that the value of the **PROJECT\_ID** Function Execution Parameter is **{$Pipeline.Property.CS\_PROJECT\_ID}**
+
+If this property has a different value, please edit and change it as seen in the image below.
+
+<figure><img src="../../../../.gitbook/assets/image (2421).png" alt=""><figcaption></figcaption></figure>
+
 ### Function Modifications
 
 Then, navigate to the functions tab and find the **Run CodeScan QIF** function.

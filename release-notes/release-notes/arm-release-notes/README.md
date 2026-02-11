@@ -2,6 +2,125 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
+## ARM Release Notes 26.1.7
+
+**Release Date: 15th February 2026**
+
+#### Internal Cases <a href="#internal-cases" id="internal-cases"></a>
+
+#### Inline Comments Cleanup on Commit Deletion <a href="#internal-cases" id="internal-cases"></a>
+
+Fixed an issue where inline comments associated with deleted pre-validation commits were not removed from the Inline Comments table.
+
+Added backend logic to automatically delete related inline comment records when a label is deleted. Additionally, updated the system to use the SCM History Key (for EZ-Commit / commit without validation) instead of the label name to ensure accurate comment mapping and prevent duplication.
+
+A migration has been introduced to replace label names with SCM History Keys in the InlineComment table and clean up legacy entries.
+
+**Impacted Areas:** Label-level comments (commits, merges, merge requests) and file diff comments for pre-validation commits and merges
+
+#### Smart Commit Pattern & Webhook Selection Not Persisting <a href="#smart-commit-pattern-and-webhook-selection-not-persisting" id="smart-commit-pattern-and-webhook-selection-not-persisting"></a>
+
+Fixed an issue where the selected Smart Commit pattern and enabled Webhook settings under ALM Management were getting cleared after saving the Integration configuration.
+
+The issue was caused by null values overwriting existing records in the database during update operations. The update logic has been modified to prevent null fields from overriding saved configurations, ensuring selections are retained correctly.
+
+**Impacted Areas:** ALM Configuration Updation
+
+#### Default Branch Not Updated After Deletion via Sync Branches <a href="#default-branch-not-updated-after-deletion-via-sync-branches" id="default-branch-not-updated-after-deletion-via-sync-branches"></a>
+
+Fixed an issue where ARM did not automatically assign a new default branch after the existing default branch was deleted using the **Sync Branches** operation.
+
+When the default branch was removed, the system failed to promote the last-used branch as the new default. The logic has been enhanced to detect deletion of the default branch and automatically update the last-used branch as the new default.
+
+The implementation introduces a streamlined default-branch update flow (without unnecessary workspace creation) and consolidates common logic to avoid duplication.
+
+**Impacted Areas:**\
+Branch Management (Sync Branches), Branch Creation, Registration, Deletion, and Updation
+
+#### Org Sync Schedule Entry Not Removed on Label Deletion <a href="#org-sync-schedule-entry-not-removed-on-label-deletion" id="org-sync-schedule-entry-not-removed-on-label-deletion"></a>
+
+Fixed an issue where deleting an Org Sync label from the **Org Synchronization History** page did not remove the corresponding entry from the **SFOrgSyncSchedule** table. The scheduled job and database record remained even after the label was deleted via the UI.
+
+The deletion flow has been updated to ensure that when an Org Sync label is removed, the associated scheduled job is cancelled and the related record is properly deleted from the SFOrgSyncSchedule table.
+
+**Impacted Areas :**\
+Org Sync scheduling and label deletion flows, including SFOrgSyncSchedule table updates
+
+#### Default Branch Not Reflected in UI After Sync (New UI) <a href="#default-branch-not-reflected-in-ui-after-sync-new-ui" id="default-branch-not-reflected-in-ui-after-sync-new-ui"></a>
+
+Fixed an issue in the New UI where, after deleting the current default branch via the **Sync Branches** operation, the updated default branch was not immediately reflected in the UI. The system required a full page refresh for the new default branch to appear correctly.
+
+The backend correctly promoted the next available branch as the default; however, the UI state was not refreshed automatically. The flow has been updated to call the repository details API after sync, ensuring the updated default branch is reflected instantly without requiring a manual refresh.
+
+**Impacted Areas :**\
+Sync Branches in VC Repositories
+
+#### Time Zone Discrepancy in Default Date Range (New UI) <a href="#time-zone-discrepancy-in-default-date-range-new-ui" id="time-zone-discrepancy-in-default-date-range-new-ui"></a>
+
+Fixed an issue in the New UI where the default calendar date range was calculated using the system time zone instead of the time zone configured in the user’s profile. This resulted in incorrect date ranges and missing recent entries across history-related screens.
+
+The logic has been updated to apply the user-specific time zone when determining the default date range, aligning the New UI behavior with the Old UI.
+
+**Impacted Areas :**\
+Default date range handling in CI Jobs, Deployments, Dashboards, and Analytics
+
+#### Repository Search Not Updating Branch Details Panel <a href="#repository-search-not-updating-branch-details-panel" id="repository-search-not-updating-branch-details-panel"></a>
+
+Fixed an issue where searching for a repository on the **Repositories** screen filtered the list correctly but did not update the right-hand **Branches** detail panel. The previously selected repository’s branch data remained visible, and the newly searched repository could not be selected to load its details.
+
+The behavior has been corrected to reset the detail view after search and default to the first tab selection, ensuring that users can select a searched repository and immediately view the corresponding Branches data.
+
+**Impacted Areas :**\
+Search functionality in VC Repositories
+
+#### Support Cases: <a href="#support-cases" id="support-cases"></a>
+
+**Support Case: #186557**
+
+#### Sandbox Mapping Failure in My Salesforce Orgs <a href="#sandbox-mapping-failure-in-my-salesforce-orgs" id="sandbox-mapping-failure-in-my-salesforce-orgs"></a>
+
+Fixed an issue where mapping a specific sandbox under **Profile → My Salesforce Orgs** resulted in an error, even after re-registering the sandbox.
+
+The issue was caused by a SOQL query length limit being exceeded (100,000 character limit) while retrieving Salesforce users for sandboxes with large user datasets.
+
+The logic in `getSfUsers` has been enhanced to partition large SOQL queries into manageable chunks, ensuring successful user retrieval and sandbox mapping without errors.
+
+**Impacted Areas :**\
+Profile → My Salesforce Orgs (Sandbox User Mapping)\
+Salesforce Integration – User Retrieval
+
+**Support Case: #174294**
+
+#### Reports with Subfolders Not Recognized in EZ Commit <a href="#reports-with-subfolders-not-recognized-in-ez-commit" id="reports-with-subfolders-not-recognized-in-ez-commit"></a>
+
+Fixed an issue where Reports containing subfolders were not retrieved in **EZ Commit** when uploading a `package.xml`, although the same worked correctly in the Deployment module.
+
+Enhanced metadata handling to correctly process members with subfolder paths ("/"), ensuring proper retrieval and commit of Report, Document, and EmailTemplate metadata in both DX and non-DX modes.
+
+**Impacted Areas:** EZ Commit (Report, Document, EmailTemplate metadata – DX & Non-DX)
+
+**Support Case: #186894**
+
+#### Workflow Deletion – Destructive Merge Validation Failure <a href="#workflow-deletion-destructive-merge-validation-failure" id="workflow-deletion-destructive-merge-validation-failure"></a>
+
+Fixed an issue where **Merge Validation** failed for revisions containing only destructive metadata (e.g., deleted Workflow components) when **Run Destructive = Enabled** and **Type = Post**.
+
+Previously, the system generated the destructive XML only if at least one non-destructive component was present. As a result, revisions with only destructive members produced an empty `package.xml`, causing validation failure.
+
+The logic has been updated to always process destructive components and generate the destructive XML package correctly, even when no non-destructive components are included.
+
+**Impacted Areas:** EZ-Merge (Pre-Validation)
+
+**Support Case: #189316**
+
+#### Incorrect Storage Display in Super Admin Workspace Management <a href="#incorrect-storage-display-in-super-admin-workspace-management" id="incorrect-storage-display-in-super-admin-workspace-management"></a>
+
+Fixed a UI issue where increasing workspace storage from the **Super Admin** account did not correctly update the displayed used and remaining storage values. The discrepancy was visible only in the Super Admin view, while registered user accounts displayed accurate values.
+
+The calculation logic for available storage has been corrected in the Super Admin → Workspace Management UI to ensure accurate storage metrics are shown.
+
+**Impacted Areas :** Super Admin → Workspace Management
+
 ## ARM Release Notes 26.1.6
 
 **Release Date: 08 February 2026**

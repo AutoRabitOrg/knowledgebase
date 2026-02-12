@@ -8,16 +8,6 @@
 
 #### Internal Cases <a href="#internal-cases" id="internal-cases"></a>
 
-#### Inline Comments Cleanup on Commit Deletion <a href="#internal-cases" id="internal-cases"></a>
-
-Fixed an issue where inline comments associated with deleted pre-validation commits were not removed from the Inline Comments table.
-
-Added backend logic to automatically delete related inline comment records when a label is deleted. Additionally, updated the system to use the SCM History Key (for EZ-Commit / commit without validation) instead of the label name to ensure accurate comment mapping and prevent duplication.
-
-A migration has been introduced to replace label names with SCM History Keys in the InlineComment table and clean up legacy entries.
-
-**Impacted Areas:** Label-level comments (commits, merges, merge requests) and file diff comments for pre-validation commits and merges
-
 #### Smart Commit Pattern & Webhook Selection Not Persisting <a href="#smart-commit-pattern-and-webhook-selection-not-persisting" id="smart-commit-pattern-and-webhook-selection-not-persisting"></a>
 
 Fixed an issue where the selected Smart Commit pattern and enabled Webhook settings under ALM Management were getting cleared after saving the Integration configuration.
@@ -64,7 +54,7 @@ The logic has been updated to apply the user-specific time zone when determining
 **Impacted Areas :**\
 Default date range handling in CI Jobs, Deployments, Dashboards, and Analytics
 
-#### Repository Search Not Updating Branch Details Panel <a href="#repository-search-not-updating-branch-details-panel" id="repository-search-not-updating-branch-details-panel"></a>
+#### Repository Search Not Updating Branch Details Panel (New UI) <a href="#repository-search-not-updating-branch-details-panel" id="repository-search-not-updating-branch-details-panel"></a>
 
 Fixed an issue where searching for a repository on the **Repositories** screen filtered the list correctly but did not update the right-hand **Branches** detail panel. The previously selected repository’s branch data remained visible, and the newly searched repository could not be selected to load its details.
 
@@ -120,6 +110,16 @@ Fixed a UI issue where increasing workspace storage from the **Super Admin** acc
 The calculation logic for available storage has been corrected in the Super Admin → Workspace Management UI to ensure accurate storage metrics are shown.
 
 **Impacted Areas :** Super Admin → Workspace Management
+
+**Support Case: #177966**
+
+**CI Jobs – Parallel Processor Endpoint Handling**
+
+Enhanced Parallel Processor configuration to support scenarios where the target API does not accept the default `/version/parallelexec` suffix appended at runtime.
+
+A new internal flag (`AR_37880_PARALLEL_EXEC_ENDPOINT_IGNORE_LAST_SEGMENT`) allows trimming of the auto-appended version and `parallelexec` segments, enabling compatibility with custom API endpoint structures.
+
+**Impacted Areas:** CI Jobs – Parallel Processor
 
 ## ARM Release Notes 26.1.6
 

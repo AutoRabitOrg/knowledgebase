@@ -4,7 +4,7 @@
 
 ## ARM Release Notes 26.1.7
 
-**Release Date: 15th February 2026**
+**Release Date: 15 February 2026**
 
 #### Internal Cases <a href="#internal-cases" id="internal-cases"></a>
 
@@ -33,7 +33,7 @@ Fixed an issue in the New UI where, after deleting the current default branch vi
 
 The backend correctly promoted the next available branch as the default; however, the UI state was not refreshed automatically. The flow has been updated to call the repository details API after sync, ensuring the updated default branch is reflected instantly without requiring a manual refresh.
 
-**Impacted Areas :**\
+**Impacted Areas:**\
 Sync Branches in VC Repositories
 
 #### Time Zone Discrepancy in Default Date Range (New UI) <a href="#time-zone-discrepancy-in-default-date-range-new-ui" id="time-zone-discrepancy-in-default-date-range-new-ui"></a>
@@ -42,7 +42,7 @@ Fixed an issue in the New UI where the default calendar date range was calculate
 
 The logic has been updated to apply the user-specific time zone when determining the default date range, aligning the New UI behavior with the Old UI.
 
-**Impacted Areas :**\
+**Impacted Areas:**\
 Default date range handling in CI Jobs, Deployments, Dashboards, and Analytics
 
 #### Repository Search Not Updating Branch Details Panel (New UI) <a href="#repository-search-not-updating-branch-details-panel" id="repository-search-not-updating-branch-details-panel"></a>
@@ -51,7 +51,7 @@ Fixed an issue where searching for a repository on the **Repositories** screen f
 
 The behavior has been corrected to reset the detail view after search and default to the first tab selection, ensuring that users can select a searched repository and immediately view the corresponding Branches data.
 
-**Impacted Areas :**\
+**Impacted Areas:**\
 Search functionality in VC Repositories
 
 #### Support Cases: <a href="#support-cases" id="support-cases"></a>
@@ -66,7 +66,7 @@ The issue was caused by a SOQL query length limit being exceeded (100,000 charac
 
 The logic in `getSfUsers` has been enhanced to partition large SOQL queries into manageable chunks, ensuring successful user retrieval and sandbox mapping without errors.
 
-**Impacted Areas :**\
+**Impacted Areas:**\
 Profile → My Salesforce Orgs (Sandbox User Mapping)\
 Salesforce Integration – User Retrieval
 
@@ -111,6 +111,8 @@ Enhanced Parallel Processor configuration to support scenarios where the target 
 A new internal flag (`AR_37880_PARALLEL_EXEC_ENDPOINT_IGNORE_LAST_SEGMENT`) allows trimming of the auto-appended version and `parallelexec` segments, enabling compatibility with custom API endpoint structures.
 
 **Impacted Areas:** CI Jobs – Parallel Processor
+
+***
 
 ## ARM Release Notes 26.1.6
 

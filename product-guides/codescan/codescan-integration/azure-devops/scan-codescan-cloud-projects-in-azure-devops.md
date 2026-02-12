@@ -1,4 +1,8 @@
-# Scan CodeScan Cloud projects in Azure DevOps
+---
+hidden: true
+---
+
+# Azure DevOps Classic Pipeline
 
 ## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 

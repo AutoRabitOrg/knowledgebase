@@ -27,15 +27,6 @@ The implementation introduces a streamlined default-branch update flow (without 
 **Impacted Areas:**\
 Branch Management (Sync Branches), Branch Creation, Registration, Deletion, and Updation
 
-#### Org Sync Schedule Entry Not Removed on Label Deletion <a href="#org-sync-schedule-entry-not-removed-on-label-deletion" id="org-sync-schedule-entry-not-removed-on-label-deletion"></a>
-
-Fixed an issue where deleting an Org Sync label from the **Org Synchronization History** page did not remove the corresponding entry from the **SFOrgSyncSchedule** table. The scheduled job and database record remained even after the label was deleted via the UI.
-
-The deletion flow has been updated to ensure that when an Org Sync label is removed, the associated scheduled job is cancelled and the related record is properly deleted from the SFOrgSyncSchedule table.
-
-**Impacted Areas :**\
-Org Sync scheduling and label deletion flows, including SFOrgSyncSchedule table updates
-
 #### Default Branch Not Reflected in UI After Sync (New UI) <a href="#default-branch-not-reflected-in-ui-after-sync-new-ui" id="default-branch-not-reflected-in-ui-after-sync-new-ui"></a>
 
 Fixed an issue in the New UI where, after deleting the current default branch via the **Sync Branches** operation, the updated default branch was not immediately reflected in the UI. The system required a full page refresh for the new default branch to appear correctly.

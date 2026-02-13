@@ -4,6 +4,8 @@
 
 ## nCino - Release 26.1.6
 
+**Release Date:** **15 February 2026**
+
 **Relational Compare – Select All Fix**
 
 Resolved an issue where selecting **“All”** in Parent or Child relational compare was staging all object records instead of only the related records. The logic has been corrected to ensure only the relevant, user-selected records are included.

@@ -2,6 +2,16 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino updates!" %}
 
+## nCino - Release 26.1.6
+
+**Relational Compare – Select All Fix**
+
+Resolved an issue where selecting **“All”** in Parent or Child relational compare was staging all object records instead of only the related records. The logic has been corrected to ensure only the relevant, user-selected records are included.
+
+**Data Comparison Step Status Display Fix**
+
+Fixed an issue where the **Data Comparison** step was not marked as completed. The correct current step is now updated in staging iteration details, and irrelevant steps are skipped in the UI.
+
 ## nCino - Release 26.1.5
 
 **Release Date:** **01 February 2026**

@@ -2,6 +2,264 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" %}
 
+## CodeScan Release 26.0.3&#x20;
+
+**Release Date: 15 February 2026**
+
+### Summary
+
+CodeScan 26.0.3 is comprised of the following 5 components:
+
+* 1 New Feature
+* 2 Application Enhancements
+* 1 New Rule
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+**1.     Expiry Dates for Exception Status on Security Hotspots**
+
+**Description**
+
+The Exception Status has previously been added to the CodeScan Security hotspots.
+
+This new feature allows for configurable expiry dates for the Status.
+
+The user wants to add the status with an expiry date so when changing the hotspot status, they can supply a date when the issue will reopen as “To review”.
+
+Default will be no expiry. It will stay in the Exception Status until it is moved manually or given an expiry date.
+
+**Acceptance Criteria**
+
+* The ability to add an expiry date to the Security Hotspot resolution
+* The HotSpot needs to return to “to review” status when the expiry date is reached.
+* The expiry is optional and configurable; further, it can be any date in the future.
+* The Expiry date selector can be the same style as found in the issues page under creation date
+
+Verified the Security Hotspot Exception expiry behavior from the CodeScan UI on Staging Environment.
+
+* Users can optionally set an expiry date while changing a hotspot status to **Exception**.
+* Hotspots without an expiry remain in **Exception** status.
+* Hotspots with an expiry date automatically reappear in “**To review**” after the expiry is reached.
+
+<figure><img src="../../../../.gitbook/assets/image (2425).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2426).png" alt=""><figcaption></figcaption></figure>
+
+Also verified the scheduled job functionality for the Security Hotspots.
+
+* Security Hotspots marked as **Exception** remain unchanged when no expiry date is provided.
+* When an expiry date is set, the scheduled job automatically transitions the hotspot back to “**To review**” after the expiry is reached.
+
+<figure><img src="../../../../.gitbook/assets/image (2428).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2429).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2430).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2431).png" alt=""><figcaption></figcaption></figure>
+
+### Application Enhancements
+
+**1.     CVSS Metrics: Advanced Calculations**
+
+**Description**
+
+The current descriptions of our vulnerabilities do not contain the metrics for CVSS. There are multiple variables that determine a CVSS score and with this update, users will now be able to see this level of detail.
+
+Use the following vulnerability rule values in CodeScan to provide all necessary inputs for calculating the CVSS score.
+
+Vulnerability Rule Details
+
+Rule Title: Array is Stored Directly
+
+Rule Name: sf:ArrayIsStoredDirectly
+
+Type: Vulnerability
+
+Language: Apex
+
+Description:
+
+Constructors and methods receiving arrays should clone objects and store the copy.
+
+This prevents future changes from the user affecting the internal functionality.
+
+See
+
+MITRE, CWE-374 - Passing Mutable Objects to an Untrusted Method
+
+CERT, OBJ06-J. - Defensively copy mutable inputs and mutable internal components
+
+CERT, OBJ13-J. - Ensure that references to mutable objects are not exposed
+
+Rule Message: (Not specified)
+
+Severity Level: Major
+
+Example:
+
+public class Foo {
+
+&#x20; private String \[] x;
+
+&#x20;   public void foo (String \[] param) {
+
+&#x20;     this.x=param;                //Bad: don't do this, make a copy of the array at least.
+
+&#x20;   }
+
+}
+
+Tags: cwe, cert, unpredictable
+
+Remediation Effort:  5min-constant\_issue
+
+**Additional Information**:
+
+Meaning of severity in CodeScan, use this to calculate CIA:
+
+BLOCKER has a value of 1
+
+CRITICAL 2
+
+MAJOR 3
+
+MINOR  4
+
+INFO has a value of 5
+
+With this completed, we now provide the following values in tabular form, specify the vector and give the CVSS score:
+
+**Base Score Metrics**
+
+* Attack Vector (AV) (specify)
+* Attack Complexity (AC) (specify)
+* Privileges Required (PR) (specify)
+* User Interaction (UI) (specify)
+* Scope (S) (specify)
+* Confidentiality Impact (C) (specify)
+* Integrity Impact (I) (specify)
+* Availability Impact (A) (specify)
+
+**Temporal Score Metrics**
+
+* Exploit Code Maturity (E) (specify)
+* Remediation Level (RL) (specify)
+* Report Confidence (RC) (specify)
+
+**Environmental Score Metrics**
+
+* Modified Attack Vector (MAV) (specify)
+* Modified Attack Complexity (MAC) (specify)
+* Modified Privileges Required (MPR) (specify)
+* Modified User Interaction (MUI) (specify)
+* Modified Scope (MS) (specify)
+* Modified Confidentiality Impact (MC) (specify)
+* Modified Integrity Impact (MI) (specify)
+* Modified Availability Impact (MA) (specify)
+* Confidentiality Requirement (CR) (specify)
+* Integrity Requirement (IR) (specify)
+* Availability Requirement (AR) (specify)
+
+**CVSS Descriptions UI/UX Update**
+
+**2.      CVSS: UI/UX Update**
+
+**Description**
+
+Per the enhancement above, all the CVSS rules are now updated with CVSS score values in the CVSS Break Down tab UI provided (below Metric category specific tabs).
+
+<figure><img src="../../../../.gitbook/assets/image (2432).png" alt=""><figcaption></figcaption></figure>
+
+All the below Vector Metric names and values of score table are now visible in above UI
+
+<figure><img src="../../../../.gitbook/assets/image (2433).png" alt=""><figcaption></figcaption></figure>
+
+Verified the CVSS UI/UX update via the following scenarios:
+
+* The CVSS Breakdown tab correctly shows Base, Temporal, and Environmental score sections.
+* All vector metric names and values are displayed as per the updated CVSS v3.1 table for CodeScan vulnerability rules (VF, SF, Apex).
+* Update is visible and working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2434).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2435).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2436).png" alt=""><figcaption></figcaption></figure>
+
+### New Rules
+
+**1.     New Rule: “Avoid Using Unfiled Public Folders” {Rule ID: sf-meta:AvoidUnfiledPublic}**
+
+**Description**
+
+This rule detects when Salesforce records are stored in unfiled public folders (identified by the path "unfiled$public").
+
+Unfiled public folders pose several security and governance risks:
+
+* **Lack of Organization**: Records in unfiled public folders are difficult to manage, locate, and maintain, leading to poor data governance
+* **Excessive Access**: Public folders are accessible to all users in the organization by default, potentially exposing sensitive data to unauthorized users
+* **No Access Controls**: Unfiled public folders typically lack granular permission settings, making it impossible to restrict access based on role or profile
+* **Compliance Risk**: Storing records in unsecured, publicly accessible locations may violate data privacy regulations (GDPR, HIPAA, etc.)
+* **Audit Trail Issues**: Unfiled public folders make it difficult to track who accessed or modified records
+
+Best practices recommend organizing all Salesforce records into properly structured folders with:
+
+* Clear naming conventions
+* Appropriate sharing settings
+* Role-based access controls
+* Regular audits and cleanup processes
+
+Move metadata from unfiled public folders to dedicated folders with restricted access aligns to business requirements and the principle of least privilege.
+
+**Type**: Vulnerability
+
+**Message**: Metadata should not be stored in unfiled public folders
+
+**Tags**: **CWE**: 732\
+**Remediation**: 5 minutes
+
+Verified the newly added CodeScan rule **sf-meta:AvoidUnfiledPublic (Avoid Using Unfiled Public Folders**) via the following scenarios:
+
+* The rule description is visible in CodeScan and correctly explains the security and governance risks associated with storing Salesforce metadata in unfiled public folders.
+* The rule is working as expected and consistently raises violations whenever Salesforce metadata is stored under a file path containing /unfiled$public/.
+* This behavior is expected, as metadata placed in unfiled public folders can lead to unrestricted access, lack of proper organization, and potential compliance concerns.
+* No issues were observed with the rule configuration or behavior.
+
+<figure><img src="../../../../.gitbook/assets/image (2437).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2438).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+**1.       Fixed issue with rule “Sf:fieldlevelsecurity” where user mode subquery false positive was reported**
+
+**Description**
+
+If code is running in the user mode, it should not need to check FLS, since user mode already does that. As such, CodeScan should not flag the rule/violation if it is in user mode. Only if it is not in user mode should the rule be triggered. However, several customers have reported that this behavior is not occurring properly.
+
+We have determined the root cause, and have concluded that there is an edge case that was not accounted for in our logic. Specifically, when the mode is defined via AccessLevel in the return statement, the rule incorrectly flags it as a violation, resulting in a false positive.
+
+For further reference, please see Salesforce Developers - Accesslevel Class [Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_class_System_AccessLevel.htm)
+
+This scenario wasn’t currently handled by the rule logic but has been addressed with a logic update.
+
+The issue has now been fully remediated with this release.
+
+Verified the Sf:fieldlevelsecurity – USER\_MODE subquery false positive via several scenarios and confirm that the rule now correctly skips FLS violations when AccessLevel.USER\_MODE is provided via **direct assignment**, including:
+
+* Inline usage in Database.getQueryLocator
+* Simple variable assignment (AccessLevel mode = AccessLevel.USER\_MODE)
+
+which resolves the originally reported false positive.
+
+<figure><img src="../../../../.gitbook/assets/image (2439).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## CodeScan Release 26.0.2
 
 **Release Date: 01 February 2026**

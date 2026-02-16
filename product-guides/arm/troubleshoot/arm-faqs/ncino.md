@@ -108,3 +108,134 @@ There is a limitation when parsing the attachment name. If you have a slash in y
 ncino-Forms/Attachment/DocPrep/Officer/Comments.html\
 \
 If you need to divide the file name, please change it to an underscore or a hyphen, like in the example here: ncino-Forms/Attachment/DocPrep/Officer\_Comments.htm
+
+### Why am I unable to perform transactional data migration through the nCino feature migration template?
+
+nCino Feature Migration template is restricted to transactional data due to the package’s schema\
+design. Transactional objects do not include "Lookup Keys" (External IDs) for record synchronization.
+
+**Solution through Dataloader Pro**
+
+Utilize Dataloader Pro to perform this migration. This tool allows for advanced record matching and\
+relationship mapping without requiring native Lookup Keys, ensuring data integrity for both\
+transactional and non-transactional objects during migration.
+
+Key Comparison of the Data Gap
+
+<table><thead><tr><th valign="top">Feature</th><th valign="top">Non-Transactional Data</th><th valign="top">Transactional Data</th></tr></thead><tbody><tr><td valign="top"><p> </p><p>Example</p></td><td valign="top"><p> </p><p>Product Templates, Fees</p></td><td valign="top"><p> </p><p>Loans, Covenants, Collateral</p></td></tr><tr><td valign="top"><p> </p><p>Lookup Key</p></td><td valign="top"><p> </p><p>Provided by nCino</p></td><td valign="top"><p> </p><p>Not Provided</p></td></tr><tr><td valign="top"><p> </p><p>Migration Tool</p></td><td valign="top"><p> </p><p>nCino Feature Management</p></td><td valign="top"><p> </p><p>Data Loader Pro</p></td></tr></tbody></table>
+
+**Prerequisites before creation and execution of Dataloader Pro Job**
+
+Step 1: Identify the type of object.
+
+* TYPE 1: nCino objects common for both transactional and non-transactional data where Lookup key field exists.
+* TYPE 2: nCino objects using only for transactional data.
+
+A.  Lookup key field exists.
+
+B.  Lookup key field doesn’t exist, and no external ID field is maintained.
+
+* TYPE 3: Non-nCino objects where customer has their own external ID field and maintaining the values in it.
+* TYPE 4: Non-nCino object where customer is not maintaining external ID.
+
+Step 2: When object belongs to Type 2-B and Type 4 are involved and if the target org is not empty, where the objects contain data but not the “AutorabitExtId  c“ field, then perform Dataloader Configuration job on source and destination orgs by selecting all relevant objects to generate AutoRABIT’s unique external Id (AutorabitExtId  c) field and populate source record IDs for the records that are identified as common based on the unique field(s) selected in the job.
+
+How to create and run DataLoader configuration job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-configuration)
+
+Step 3: When object belongs to Type 1 and Type 2A and data for the Lookup field is not maintained for the records, then contact nCino team to populate look up key values for existing records.
+
+**Create Dataloader Pro Jobs**
+
+1\.      Log in to your ARM account.
+
+2\.      Hover your mouse over the DataLoader module and select DataLoader Pro.
+
+3\.      Click on Create New Job.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+4. On the next screen, choose the Source Org and the Destination Org that automatically populate the selected sandbox's details.
+5. Click Login and Fetch Objects.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+6. Next, Select Master Object. Example: LLC\_BI\_\_Loan\_\_c
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+7. View the relationship between child objects/ancestor objects and the master object in the Schema (Grid View) section.&#x20;
+
+Change the grid view to a graph view by clicking the Switch to Graph View button. Click on the icon to view the graphical representation on full screen.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+8. Filters and Mappings: You can extract records by using specified criteria in the Filters section
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Extract a single record by providing unique external ID field value.
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+Extract multiple records by applying SOQL in the query editor.
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+Validate the query and apply filter condition to get required records.\
+Once filters applied, we need to map the external id fields between source and destination\
+based on the type of the object that are defined in above section.
+
+* TYPE 1: Map Lookup Key field as external id field mapping in both Source and  \
+  Destination.
+* TYPE 2A: Map Lookup Key field as external id field mapping in both Source and  \
+  Destination.
+* Type 2B: No mapping is required.
+* TYPE 3: Map the external if field which customer is maintaining on both Source and  \
+  Destination.
+* TYPE 4: No mapping is required.
+
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Using the Automap feature, you can map the fields automatically based on fetched object\
+fields with destination fields. To set up manual mappings, automapping needs to be\
+disabled. Click on Clear Mappings to remove the automapping and set up the desired manual\
+mappings.
+
+9. Dependency objects selection:&#x20;
+
+* Select the checkbox under Skip Records for those Ancestor objects which you do not want to migrate data. Selecting this checkbox will only omit data migrating, but relational object fetching happens as usual.
+
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+* Next select the checkboxes for child objects which you want to migrate data.
+
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+10. Once done with mappings, then save the job with required job configuration and job details.
+
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+Note: Enable Automatically apply master object filter on other dependency objects\
+checkbox.
+
+This option avoids picking of additional records due to self-references and multiple\
+references. All objects in the hierarchy are calculated based on the Master Object filter.
+
+11. Save the job and run it. Later verify the job results from main window.
+
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+Helpful Knowledge Base Links:\
+How to configure DataLoader job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-configuration)\
+How to configure DataLoader Pro job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-pro)
+
+
+

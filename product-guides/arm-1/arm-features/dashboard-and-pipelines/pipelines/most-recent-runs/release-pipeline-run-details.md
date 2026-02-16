@@ -25,7 +25,7 @@ At the top of the page, the pipeline is displayed as a visual flow starting from
 This view helps you quickly understand how the artifact moved across environments during this run.\
 <br>
 
-<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Step 2: Stage cards and execution status\
 Each stage is represented as a card in the flow and displays:
@@ -43,7 +43,7 @@ For each stage, you can:
 
 Logs provide detailed information about deployment steps, validations, and any errors or warnings encountered during execution.\
 \
-![](<../../../../../../.gitbook/assets/image (5).png>)
+![](<../../../../../../.gitbook/assets/image (5) (1).png>)
 
 Step 4: Stage-level deployment details\
 Clicking on a stage opens detailed information specific to that stage, including:
@@ -53,12 +53,12 @@ Clicking on a stage opens detailed information specific to that stage, including
 * Deployment logs
 *   Post Activities Report (If applicable)<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
 <br>
 
-<figure><img src="../../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 These details are useful for troubleshooting failures, validating successful deployments, and supporting audits or reviews.\
 <br>

@@ -44,7 +44,7 @@ To compare two backup activities of a Salesforce org:
     <figure><img src="../../../../.gitbook/assets/image (9) (7).png" alt=""><figcaption></figcaption></figure>
 15. Clicking compare will show the “Compare -Save Config” screen.
 
-    <figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 16. **Observe the following fields on the screen:**
     1. **Label(required field):** Enter a label for the job
     2. **Preserve the result for:** will specify the retention period for the compare results. _The minimum retention period is for “7 Days” and the maximum retention period for the compare results will be for “30 Days” only._
@@ -54,10 +54,10 @@ To compare two backup activities of a Salesforce org:
     1. &#x20;Once the compare job is completed, an email will be triggered to the user.
 19. Click “OK” to be redirected to the “JOB HISTORY” page of the flow.
 
-    <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 20. Observe the list of jobs on the page.
 
-    <figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 21. The recently triggered job will be initially in progress, until the job run is completed.
 
     <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

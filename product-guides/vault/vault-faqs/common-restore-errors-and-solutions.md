@@ -166,6 +166,28 @@ During **Restore** or **Replicate** operations, the system checks whether parent
 
 The skipped parent record is recorded as an **error entry in the result file**, clearly indicating that the record was ignored because it already exists in the destination. All other eligible records continue to be processed without interruption, ensuring the overall operation completes as expected.
 
+### Can AccountTeamMember Be Inserted with an Inactive User? (Vault Context)
+
+**Q: Will Salesforce allow inserting AccountTeamMember records with an inactive user during Vault restore?**
+
+**Answer:**\
+No. Salesforce does **not** allow inserting an `AccountTeamMember` record if the referenced `UserId` is inactive.
+
+#### Why?
+
+The `AccountTeamMember` object requires:
+
+* A valid **AccountId**
+* An **active UserId**
+* A Team Role
+
+If the user referenced in the backup is:
+
+* Deactivated, or
+* No longer present in the org
+
+Salesforce will reject the insert operation and throw an error (commonly `INVALID_CROSS_REFERENCE_KEY` or a user-related validation error).
+
 ***
 
 ## **Data Encryption**

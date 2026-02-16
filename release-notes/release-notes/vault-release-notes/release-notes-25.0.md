@@ -2,6 +2,24 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Vault updates!" %}
 
+## Vault Release Notes 25.3.2 <a href="#heading-title-text" id="heading-title-text"></a>
+
+**Release Date: 18 February 2026**
+
+**Masking – Special Characters at Beginning of Masked Email addresses**
+
+Fixed an issue in masking where special characters (such as a leading dot in email addresses) were moved to the beginning of the masked value, causing masking rule failures. Special characters are now handled correctly to ensure valid masked output.
+
+**Masking – Visibility for Skipped Records**
+
+We have enhanced the masking process to improve transparency and reporting. Records that are skipped during masking are no longer omitted from the results file. Instead, they are now included and clearly marked as _Skipped_, along with the specific reason for skipping (for example, no data available for masking in the selected fields).
+
+This update ensures better traceability and provides clearer insights into masking outcomes.
+
+**Live Data Masking – Enhanced Job-Level Logging**
+
+Enhanced job-level logs for Live Data Masking to provide clear visibility into execution status, progress, and errors for each job.
+
 ## Vault Release Notes 25.3.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 21 January 2026**

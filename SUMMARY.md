@@ -1079,6 +1079,7 @@
     * [Importing Salesforce CLI Code Coverage](product-guides/codescan/report-and-analysis/importing-salesforce-cli-code-coverage.md)
     * [Scheduled Reports](product-guides/codescan/report-and-analysis/scheduled-reports.md)
     * [Quality Gate Ratings](product-guides/codescan/report-and-analysis/quality-gate-ratings.md)
+    * [Background Tasks](product-guides/codescan/report-and-analysis/background-tasks.md)
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)
   * [CodeScan Integrations](product-guides/codescan/codescan-integration/README.md)

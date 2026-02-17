@@ -87,7 +87,3 @@ For credential-usage details across CI job types, see the [FAQ](../../../trouble
 ### What next? <a href="#what-next" id="what-next"></a>
 
 After saving the job, ARM redirects you to the [CI job results](../ci-job-history.md) page, where you can start the first build.
-
-### What next? <a href="#what-next" id="what-next"></a>
-
-After saving the job, ARM redirects you to the [CI job results](../ci-job-history.md) page, where you can start the first build.

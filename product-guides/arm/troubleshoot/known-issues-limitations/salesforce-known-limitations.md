@@ -85,6 +85,67 @@ Track this issue for impacted environments and monitor Salesforce updates for a 
 
 <figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
+### Deploying Case Creation Notification Template in Support Settings (Case Settings)
+
+**Summary**
+
+When the **Case Creation Notification Template** is set to **None** in the Salesforce UI, Salesforce removes the related node from the Case.settings-meta.xml file. As a result, this value cannot be deployed or cleared via metadata deployment (including CI jobs) and must be updated manually in the target org UI.
+
+**Details**
+
+When you configure **Case Creation Notification Template** to **None** in Salesforce (Setup → Support Settings), Salesforce updates the underlying metadata by **removing** the corresponding XML node from Case.settings-meta.xml.
+
+For example, when a template is configured, the metadata contains:
+
+{% code overflow="wrap" %}
+```
+<caseCreateNotificationTemplate>unfiled$public/SalesNewCustomerEmail</caseCreateNotificationTemplate>
+```
+{% endcode %}
+
+When this template is changed to **None** in the UI, Salesforce removes the `<caseCreateNotificationTemplate> node entirely from Case.settings-meta.xml`.
+
+**Impact on Deployments**
+
+* **Deployments complete successfully** (no validation or deployment errors are reported).
+* However, **the Case Creation Notification Template value is not updated in the target org** when trying to deploy a state where the template is set to **None**.
+* Because the \<caseCreateNotificationTemplate> node is missing from the source metadata, there is **no instruction in the deployment** to remove or clear the value in the target org.
+
+We validated this behavior using the **Salesforce CLI** as well and observed the same outcome. This confirms that the behavior is a **Salesforce platform / Metadata API limitation**, not an issue specific to AutoRABIT or any other deployment tooling.
+
+**Scope and Affected Deployment Methods**
+
+This limitation applies regardless of the deployment mechanism:
+
+* Salesforce CLI (SF CLI)
+* Metadata API–based deployments
+* CI/CD pipelines and deployment tools (including AutoRABIT)
+
+Any tool relying on the Metadata API will be subject to the same behaviour.
+
+**Recommended Workarounds**
+
+To manage the **Case Creation Notification Template** when you need to set it to **None** or change it:
+
+1. **To clear/unset the template (set to None):**
+   * Perform the change **directly in the target org UI** (Setup → Support Settings → Case Creation Notification Template → set to **None**).
+   * This action **cannot** be automated via metadata deployment.
+2. **To set a specific valid template via deployment:**
+   * Ensure the desired template is available and active in both source and target orgs.
+   * Include the \<caseCreateNotificationTemplate> node in Case.settings-meta.xml with the correct template API name.
+   * Deploy the updated Case.settings-meta.xml as usual.
+3. **Important constraint:**
+   * Metadata deployment can **set** a valid, existing template value.
+   * Metadata deployment **cannot explicitly unset** the value to **None**, because the platform represents **None** by omitting the node entirely.
+
+**Key Takeaways**
+
+* Setting **Case Creation Notification Template** to **None** removes the corresponding XML node from `Case.settings-meta.xml`.
+* Because the node is missing, deployments cannot propagate the "None" state to target orgs.
+* This is a **Salesforce Metadata API limitation**, not a defect in AutoRABIT.
+* Clearing or setting the value to **None** must be done **manually in the target org UI**.
+* Deployments can only **assign** a valid existing template, not **unset** it.
+
 ### CI Job Deployment Error: Required Field is Missing: activateRSS
 
 During a CI Job deployment involving Salesforce `InstalledPackage` metadata, the job fails. The error log contains the following specific message: `Error: Required field is missing: activateRSS (line 0, column 0)`&#x20;

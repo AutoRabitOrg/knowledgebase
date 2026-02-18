@@ -566,7 +566,7 @@
       * [Enable Enhanced Domains](product-guides/arm/troubleshoot/how-tos/enable-enhanced-domains.md)
       * [Enable SCA Apex PMD validation criteria.](product-guides/arm/troubleshoot/how-tos/enable-sca-apex-pmd-validation-criteria..md)
       * [Notifications (Mail Server Settings)](product-guides/arm/troubleshoot/how-tos/notifications-mail-server-settings.md)
-      * [Provide branch access to users](product-guides/arm/troubleshoot/how-tos/provide-branch-access-to-users.md)
+      * [Provide Branch Access to Users](product-guides/arm/troubleshoot/how-tos/provide-branch-access-to-users.md)
     * [Known Issues / Limitations](product-guides/arm/troubleshoot/known-issues-limitations/README.md)
       * [ARM Known Issues](product-guides/arm/troubleshoot/known-issues-limitations/arm-known-issues.md)
       * [ARM Known Limitations](product-guides/arm/troubleshoot/known-issues-limitations/arm-known-limitations.md)

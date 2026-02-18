@@ -9,32 +9,27 @@
 To configure the default **Apex Test Class** for your Salesforce org, follow the below steps:&#x20;
 
 1. Log in to your ARM account.
-2. Hover your mouse over the **`Admin`** tab and click on the option: **`SF Org Mgmt`**.
+2. Hover your mouse over the Settings tab and click on the option: **`Salesforce Org`**.
 
-<figure><img src="../../../../.gitbook/assets/image (769).png" alt="" width="173"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2441).png" alt="" width="267"><figcaption></figcaption></figure>
 
-3. Select your **`Salesforce Org`** from the list and go to the **`Salesforce Org - Default Apex Test Class Configuration`** section. While deploying through ARM, this works in sync with the **Run Test** based on the **Changes Test** level option. If ARM cannot find dependent test classes, these default classes will run as Specified Tests.
+1. Select your **`Salesforce Org`** from the list and go to the **`Salesforce Org - Configure Default Apex Test Class`** section. While deploying through ARM, this works in sync with the **Run Test** based on the **Changes Test** level option. If ARM cannot find dependent test classes, these default classes will run as Specified Tests.
 
-<figure><img src="../../../../.gitbook/assets/image (770).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (1609) (1).png" alt=""><figcaption></figcaption></figure>
-
-* Delete: You can delete the Apex Test Class from the Default Apex Test Class Configuration.
-* Edit: You can add or delete Apex Class/Trigger for the Apex Test Class.
-* Checkbox: This for selecting the Apex Test Class as part of the Default Apex Test Class, and you can click on save.
-* Clear: This will clear your Default Apex Test Class Configuration for your Salesforce Org.
-
-4. Different options to choose from:
+<figure><img src="../../../../.gitbook/assets/image (2442).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;    **`a. Fetch Current Set:`** This option fetches Apex and Test classes dependency. From the list     fetched, select the required Apex Test Class that you would like to configure and run into the Destination Org
 
-<figure><img src="../../../../.gitbook/assets/image (772).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2443).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;    **`b. Auto-populate:`** This option will run all local tests and get the complete dependency map
 
-<figure><img src="../../../../.gitbook/assets/image (773).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2444).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (774).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-02-18 at 12.25.47.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 {% hint style="warning" %}
 **Troubleshooting:** If it takes longer to fetch the test classes using Auto-Populate, refresh the status by clicking the![](<../../../../.gitbook/assets/image (775).png>)icon.
@@ -78,3 +73,111 @@ Once you have added an Apex test class or classes, you can perform various actio
 {% hint style="info" %}
 **Important Note:** For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh its Salesforce org from the [**`Salesforce Org Management`**](../../registration/salesforce-org/salesforce-org-management.md) section.
 {% endhint %}
+
+## Bulk Management of Apex Test Mappings (New UI)
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-02-18 at 12.27.16.png" alt=""><figcaption></figcaption></figure>
+
+#### Overview
+
+ARM now supports bulk management of Apex Test Class mappings in the **New UI** using a **CSV file**. You can download the current mappings, edit them offline, and upload them back to replace the existing configuration. This reduces unnecessary test execution and improves CI/CD efficiency.
+
+***
+
+### A. Download Current Test Mappings (CSV)
+
+1. **Open ARM (New UI)** and go to **Test Mapping**.
+2. Click **Download Test Cases**.
+3. Save the downloaded CSV file to your machine.
+
+**What happens next**
+
+* The downloaded file contains **all active mappings**.
+* A **success message** appears after download.
+* Download is available only to users with access.
+
+**CSV Columns (supported / required)**
+
+* **Sno**
+* **Apex Test Class**
+* **Apex Class/Trigger**
+
+> Only these three columns are processed during import.
+
+***
+
+### B. Update the CSV File
+
+1. Open the downloaded CSV file in Excel / Google Sheets / a CSV editor.
+2. Update mappings as needed (add, remove, or modify rows).
+3. Ensure the file remains in **CSV format** with the same column headers.
+4. Save the file.
+
+**Important**
+
+* Keep column names exactly as provided.
+* Avoid extra columns (they will be ignored or may cause validation issues depending on implementation).
+
+***
+
+### C. Upload Updated Test Mappings (Replace Existing Set)
+
+1. In **Test Mapping** (New UI), click **Upload Test Cases**.
+2. Select your edited **CSV** file.
+3. ARM validates the file:
+   * Checks CSV format
+   * Checks required columns exist
+   * Validates structure and entries
+4. If validation passes, a **confirmation prompt** appears.
+5. Click **Confirm** to proceed.
+
+**If validation fails**
+
+* Upload is stopped
+* Clear error messages are shown
+* Existing mappings remain unchanged
+
+***
+
+### D. What “Replace” Means (After Successful Upload)
+
+After confirmation and successful upload:
+
+* The **entire existing mapping set is replaced**
+* Old mappings are **removed** and **no longer visible**
+* Only the newly uploaded mappings are used moving forward
+* **Partial updates are not supported**
+
+***
+
+### E. Automatic Backup (Safety Net)
+
+ARM automatically keeps **one backup** of the previous file.
+
+**How it works**
+
+* On every successful upload, the current active file is stored as a **backup**
+* Only **one backup version** is retained
+* Backup is available only **after at least one successful import**
+* When you upload again, the backup is **overwritten** with the most recent previous file
+
+***
+
+### F. Download Backup (If Needed)
+
+1. Go to **Test Mapping** (New UI).
+2. If a backup exists, click **Download Backup**.
+3. Save the backup CSV locally.
+
+***
+
+### Key Notes
+
+* Available only in the **New UI**
+* **CSV only** is supported
+* Only these columns are supported:
+  * **Sno**
+  * **Apex Test Class**
+  * **Apex Class/Trigger**
+* Every upload **replaces the full mapping set**
+* Only **one backup** file is maintained at a time

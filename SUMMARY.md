@@ -86,6 +86,7 @@
     * [nCino Release Notes 23.1](release-notes/release-notes/ncino-release-notes/release-notes-23.1.md)
     * [nCino Release Notes 22.3](release-notes/release-notes/ncino-release-notes/release-notes-22.3.md)
   * [Vault Release Notes](release-notes/release-notes/vault-release-notes/README.md)
+    * [Vault Release Notes 26.0](release-notes/release-notes/vault-release-notes/vault-release-notes-26.0.md)
     * [Vault Release Notes 25.0](release-notes/release-notes/vault-release-notes/release-notes-25.0.md)
     * [Vault Release Notes 24.0](release-notes/release-notes/vault-release-notes/release-notes-24.0.md)
     * [Vault Release Notes 23.0](release-notes/release-notes/vault-release-notes/vault-release-notes-23.0.md)

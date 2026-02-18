@@ -115,10 +115,9 @@ The Salesforce Org- Skip Members section shows a summary of the selected metadat
 
 ### Salesforce Org - Default Apex Test Class Configuration <a href="#salesforce-org-default-apex-test-class-configuration" id="salesforce-org-default-apex-test-class-configuration"></a>
 
-This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md).\
-<br>
+This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md).
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<p align="center"><br><img src="../../../../.gitbook/assets/image (2440).png" alt="" data-size="original"><br></p>
 
 ### Salesforce Org - User Permissions <a href="#salesforce-org-user-permissions" id="salesforce-org-user-permissions"></a>
 

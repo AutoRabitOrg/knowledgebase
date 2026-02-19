@@ -122,6 +122,15 @@ If the backup configuration is deleted, all its related backup snapshots are als
 1. If the Backup snapshots are available in the storage, i.e., not expired, you can **Replicate** them to another org (Restore is for the same org, which is not possible if the org is decommissioned).
 2. If the configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The Backup will be available in the storage, but it will be in Excel format. Restoring/Replicating, along with the relationships, will be a challenge and must be done manually, which is why we recommend users not delete any configurations unless they are certain they won't be needed in the future.
 
+### How can I identify who triggered a specific backup?
+
+1. Navigate to the backup section.
+2. Select the relevant Salesforce org and configuration.
+3. Navigate to the "Backup Label" which includes the required date.
+4. Download the logs.
+
+The logs will contain information about who initiated the backup (starting).
+
 ### How do I download backups?
 
 1. Select the Backup mode and choose your Salesforce Org.&#x20;

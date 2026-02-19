@@ -6,6 +6,12 @@
 
 If a user does not have approval/permission to run a scan, when they try to add a project for analysis, the **Add & Run Scan** tab will be grayed out.
 
+### How do I change the Project Name?
+
+Names can be changed for projects created from CodeScan (directly connected to org/repo). You can navigate to **Project -> Project Analysis -> Edit Project** -> Change name field. Changes will be reflected in the UI after the next analysis.
+
+But for Projects triggered by a third party (such as ARM), names won't be adjustable from the UI, as they are owned and referenced by the tool that created them.
+
 ## Errors <a href="#error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml" id="error-salesforceforceappmaindefaultapplicationschatterdeleteblockerappmetaxml"></a>
 
 #### Error: Project reports are not available for branches created outside the CodeScan Cloud.

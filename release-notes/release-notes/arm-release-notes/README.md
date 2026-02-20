@@ -4,17 +4,17 @@
 
 ### Release Notes – Version 26.1.8 <a href="#release-notes-version-26.1.8" id="release-notes-version-26.1.8"></a>
 
-Release Date: \[22 Feb 2026]
+**Release Date: 22 February 2026**
 
 #### Test Mapping Management – Bulk Import/Export (New UI) <a href="#test-mapping-management-bulk-import-export-new-ui" id="test-mapping-management-bulk-import-export-new-ui"></a>
 
-Enhanced Test Mapping management is now available in the New UI to simplify maintenance and reduce unnecessary test executions.
+Enhanced Test Mapping management is now available in the new UI to simplify maintenance and reduce unnecessary test executions.
 
 Users can now download existing test mappings, edit them offline, and re-upload via CSV for bulk updates. The uploaded file fully replaces the existing mapping set after confirmation. System validations ensure correct file format and structure before processing.
 
-A backup of the previous file is automatically maintained (one version at a time) and can be downloaded if needed. The UI also displays last updated date and updated by details, with changes tracked in backend tables.
+A backup of the previous file is automatically maintained (one version at a time) and can be downloaded if needed. The UI also displays last updated date and updated by details, with changes tracked in back-end tables.
 
-**Note:** Only three columns are supported in import – Sno, Apex Test Class, and Apex Class/Trigger.
+**Note:** Only three columns are supported in import: Sno, Apex Test Class, and Apex Class/Trigger.
 
 **Impacted Areas (DEV)**\
 CI Jobs – Test Mapping Configuration (New UI)
@@ -25,7 +25,7 @@ Test Mapping Management (New UI Only)\*\*
 
 #### Rollback Log – Org Name Display Fix <a href="#rollback-log-org-name-display-fix" id="rollback-log-org-name-display-fix"></a>
 
-Fixed an issue where the **Org Name** was displayed as `null` on the Rollback Log page after executing a CI Job with Rollback enabled.
+Fixed an issue where the **Org Name** was displayed as `null` on the Rollback Log page after executing a CI Job with rollback enabled.
 
 The internal Org Name value was not populated during rollback execution, resulting in unclear log entries. Logging logic has been corrected to prevent null internal values from being displayed.
 
@@ -37,15 +37,15 @@ Rollback Log Page
 **Functional Impact Areas (QA)**\
 CI Rollback
 
-#### CI Job History – Pagination Missing for Sub Users <a href="#ci-job-history-pagination-missing-for-sub-users" id="ci-job-history-pagination-missing-for-sub-users"></a>
+#### CI Job History – Pagination Missing for Sub-users <a href="#ci-job-history-pagination-missing-for-sub-users" id="ci-job-history-pagination-missing-for-sub-users"></a>
 
-Fixed an issue where **Sub Users** could not see pagination controls on the **CI Job History** page. As a result, only the first **25** job records were shown and users could not navigate to additional history entries.
+Fixed an issue where **Sub-users** could not see pagination controls on the **CI Job History** page. As a result, only the first **25** job records were shown and users could not navigate to additional history entries.
 
-Sub Users can now view pagination (Next/Previous/page numbers) and access all available CI Job History records.
+Sub-users can now view pagination (Next/Previous/page numbers) and access all available CI Job History records.
 
 #### Sync Branch – Unregister Button Visibility Fix <a href="#sync-branch-unregister-button-visibility-fix" id="sync-branch-unregister-button-visibility-fix"></a>
 
-Fixed a UI issue in the **Sync Branch** popup where the **Unregister** button was not visible when a large number of branches (100+) were listed. The modal did not provide scrolling, preventing users from accessing the action button.
+Fixed a UI issue in the **Sync Branch** pop-up where the **Unregister** button was not visible when a large number of branches (100+) were listed. The modal did not provide scrolling, preventing users from accessing the action button.
 
 A scrollable container has now been added to the branch list to ensure proper responsiveness. The Unregister button remains accessible regardless of the number of branches displayed or screen resolution.
 
@@ -60,7 +60,7 @@ Sync Branches Popup
 Fixed an issue where Report deployments were failing with the error:\
 &#xNAN;_“An object '\<reportfolder/reportname>' of type Report was named in package.xml, but was not found in zipped directory.”_
 
-The failure occurred due to additional child folder entries being incorrectly added to the generated `package.xml` during deployment. Package generation logic has been corrected to include only the required Report folders and Report components, preventing mismatches between the package.xml and the zipped directory.
+The failure occurred due to additional child folder entries being incorrectly added to the generated `package.xml` during deployment. Package-generation logic has been corrected to include only the required Report folders and Report components, preventing mismatches between the package.xml and the zipped directory.
 
 **Impacted Areas (DEV)**\
 Deployments, CI Jobs (Org to Org, SCM Repo to Org), Commits including Reports
@@ -84,7 +84,7 @@ EZ-Merge – ALM Work Items (New UI)\*\*
 
 #### Pagination Count & Record Display Fix <a href="#pagination-count-and-record-display-fix" id="pagination-count-and-record-display-fix"></a>
 
-Fixed an issue where changing the pagination dropdown (e.g., 10 to 20 or 50 records) did not update the displayed results on the **CI Job History and Details** pages. The backend logic has been corrected to properly apply the selected page size.
+Fixed an issue where changing the pagination dropdown (e.g., 10 to 20 or 50 records) did not update the displayed results on the **CI Job History and Details** pages. The back-end logic has been corrected to properly apply the selected page size.
 
 Also resolved pagination count mismatches observed in the following modules:
 
@@ -103,7 +103,7 @@ CI Job History and Related Modules
 
 #### Default Apex Test Cases – Success Message Added <a href="#default-apex-test-cases-success-message-added" id="default-apex-test-cases-success-message-added"></a>
 
-Fixed an issue where no confirmation message was shown after successfully downloading the **Default Apex Test Cases**file.
+Fixed an issue where no confirmation message was shown after successfully downloading the **Default Apex Test Cases** file.
 
 A success toast notification is now displayed once the export action completes, providing clear confirmation to the user.
 
@@ -112,6 +112,8 @@ Salesforce Org – Export (Default Apex Test Cases)
 
 **Functional Impact Areas (QA)**\
 UI/UX Validation – Toast Notifications & Front-End Response Handling
+
+***
 
 ## ARM Release Notes 26.1.7
 

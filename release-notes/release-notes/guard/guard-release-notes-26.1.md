@@ -4,7 +4,7 @@
 
 ## Guard 26.1.3 Release Notes
 
-**Release Date:** 22 February 2026&#x20;
+**Release Date: 22 February 2026**&#x20;
 
 ### Enhancements&#x20;
 

@@ -4,9 +4,13 @@
 
 ## Vault Release Notes 25.3.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
-**Release Date: 18 February 2026**
+**Release Date: 25 February 2026**
 
-**Masking – Special Characters at Beginning of Masked Email addresses**
+**Replication Performance Enhancement**
+
+Enhanced the Vault Replication process to improve performance and optimize overall replication efficiency.
+
+**Masking – Special Characters at the Beginning of Masked Email Addresses**
 
 Fixed an issue in masking where special characters (such as a leading dot in email addresses) were moved to the beginning of the masked value, causing masking rule failures. Special characters are now handled correctly to ensure valid masked output.
 
@@ -19,6 +23,10 @@ This update ensures better traceability and provides clearer insights into maski
 **Live Data Masking – Enhanced Job-Level Logging**
 
 Enhanced job-level logs for Live Data Masking to provide clear visibility into execution status, progress, and errors for each job.
+
+**Masking Configuration Stability Improvement**
+
+Resolved an issue where updates to a Masking Configuration impacted previously executed jobs created from that configuration. Jobs now retain their original configuration identifiers at the time of execution, ensuring that subsequent configuration changes do not affect historical job runs.
 
 ## Vault Release Notes 25.3.1 <a href="#heading-title-text" id="heading-title-text"></a>
 

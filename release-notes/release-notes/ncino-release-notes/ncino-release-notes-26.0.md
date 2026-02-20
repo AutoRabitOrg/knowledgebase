@@ -14,6 +14,8 @@ Resolved an issue where selecting **“All”** in Parent or Child relational co
 
 Fixed an issue where the **Data Comparison** step was not marked as completed. The correct current step is now updated in staging iteration details, and irrelevant steps are skipped in the UI.
 
+***
+
 ## nCino - Release 26.1.5
 
 **Release Date:** **01 February 2026**

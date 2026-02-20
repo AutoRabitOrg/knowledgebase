@@ -2,6 +2,56 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" fullWidth="true" %}
 
+## Guard 26.1.3 Release Notes
+
+**Release Date:** 22 February 2026&#x20;
+
+### Enhancements&#x20;
+
+#### External Connected App (ECA) Authentication Migration&#x20;
+
+To align with Salesforce Spring ’26 security requirements, Guard has updated the authentication flow for External Connected Apps (ECA).&#x20;
+
+What’s changed:&#x20;
+
+* Guard now enforces Salesforce’s updated authentication standards for External Connected Apps.&#x20;
+* Connectivity remains seamless once authentication is configured.&#x20;
+
+Customer Action Required:&#x20;
+
+* When adding new Salesforce orgs via External Connected Apps, the following to be provided:&#x20;
+* Client ID&#x20;
+* Client Secret&#x20;
+
+What stays the same:&#x20;
+
+* No changes to core Guard functionality.&#x20;
+* No changes to user workflows after successful authentication.&#x20;
+
+This update ensures continued secure and compliant integration with Salesforce orgs under updated platform security requirements. &#x20;
+
+Learn more [here](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).&#x20;
+
+### Bug Fixes&#x20;
+
+#### Duplicate Success Popups When Creating Real-Time Notifications&#x20;
+
+Duplicate success messages when creating Real-Time Notifications are no longer shown. The system now displays a single, clear confirmation message.&#x20;
+
+#### Session Token Expiration Error in Permission Explorer&#x20;
+
+Fixed an intermittent issue that caused a “Session Token Expired” error when accessing Permission Explorer, ensuring uninterrupted usage.&#x20;
+
+#### Permission Explorer Stuck on Org Switch&#x20;
+
+Resolved loading issue when switching orgs with multiple permissions selected. Org switching complete successfully now (where applicable)&#x20;
+
+#### Invalid ZIP when no Records found&#x20;
+
+Exporting with no records was generating an invalid ZIP file. No-data exports are disabled now.&#x20;
+
+***
+
 ## Guard 26.1.2 Release Notes&#x20;
 
 **Release Date:  15 February 2026**&#x20;

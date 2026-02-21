@@ -1060,7 +1060,6 @@
     * [Assigning Specific Quality Gates to a Project](product-guides/codescan/quality-gates/assigning-quality-gate-to-specific-projects.md)
     * [Customizing Quality Gates](product-guides/codescan/quality-gates/customizing-quality-gates.md)
   * [CodeScan Rules](product-guides/codescan/quality-rules/README.md)
-    * [CodeScan Rule List](product-guides/codescan/quality-rules/codescan-rule-list.md)
     * [Security-Related Rules](product-guides/codescan/quality-rules/security-related-rules.md)
     * [Creating Custom Rules with XPath](product-guides/codescan/quality-rules/creating-custom-rules-with-xpath.md)
     * [Configuration for Polyfill.io Vulnerability Rules](product-guides/codescan/quality-rules/configuration-for-polyfill.io-vulnerability-rules.md)

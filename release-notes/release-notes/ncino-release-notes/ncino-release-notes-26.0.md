@@ -1,8 +1,6 @@
 # nCino Release Notes 26.0
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino updates!" %}
-
-## nCino - Release 26.1.6
+## nCino - Release 26.1.7
 
 **Release Date:** **15 February 2026**
 

@@ -8,7 +8,7 @@
 
 Enhanced version control behavior to ensure data from **CI Jobs & Feature Deployment** branches is seamlessly merged into the intended target branches. Merging into the same source branch is now restricted to prevent unintended updates.
 
-**CI Jobs – “Features (X of X)” Selection Improvement**
+**CI Jobs – “Features” Selection Improvement**
 
 Resolved an issue with the select all **“Features”** functionality in CI Jobs to ensure accurate and seamless selection of all available features.
 

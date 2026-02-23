@@ -22,26 +22,17 @@ This is a Salesforce platform change intended to modernize the integration and a
 
 ### Who is affected by this change?
 
-You may be impacted if:
-
-* You are registering a new Salesforce org in AutoRABIT’s products.
-* You recently created or refreshed a Salesforce sandbox.
-* You are onboarding AutoRABIT’s products for the first time.
-
-If your Salesforce org is already connected to AutoRABIT’s products, you are not impacted.
+You may be impacted if you are using connected app and registering a new Salesforce org/sandbox in AutoRABIT’s products.If your Salesforce org is already connected to AutoRABIT’s products, you are not impacted.
 
 ### What happens if I try to register a new org today?
 
-Until AutoRABIT’s support for External Client Apps is released, new Salesforce org registrations using the updated Salesforce framework may not complete successfully.
-
 Salesforce has indicated the following regarding continued use of connected apps as part of the Spring ’26 release:
 
-> If you need to continue using existing connected apps, you can do so. However, no new connected apps can be created with the Spring ‘26 release unless enabled by Salesforce Support. In future releases, Salesforce Support won’t be able to enable the creation of new connected apps.
+> What happens to existing connected apps? There is no change to existing connected apps. Connected app editing, installing (packaging, OAuth install), and deleting will not be affected by this change. 
 
-**Workaround:**\
-If you must register a new Salesforce org with AutoRABIT before our ECA support is available, you can open a case with Salesforce Support and request that they temporarily enable the creation of new connected apps for your org (where applicable, per Salesforce policy). Once enabled, you can complete the org registration using a Connected App as before.
+> What is the longer-term plan for connected apps? Connected apps will be replaced with external client apps. We are giving customers time to work on transitioning their connected apps to ECAs by gradually moving to End of Support.
 
-We are actively working on full compatibility with External Client Apps and will notify customers as soon as support is available.
+AutoRABIT is actively working on full compatibility with External Client Apps and will notify customers as soon as support is available.
 
 ### Will I need to reconnect my existing Salesforce orgs?
 

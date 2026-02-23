@@ -12,6 +12,8 @@ Enhanced version control behavior to ensure data from **CI Jobs & Feature Deploy
 
 Resolved an issue with the select all **“Features”** functionality in CI Jobs to ensure accurate and seamless selection of all available features.
 
+***
+
 ## nCino - Release 26.1.7
 
 **Release Date:** **15 February 2026**

@@ -2,7 +2,23 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" %}
 
-## nCino - Release 26.1.6
+***
+
+## nCino - Release 26.1.8
+
+**Release Date:** 22 **February 2026**
+
+**CI Jobs & Feature Deployment – Version Control Merge Enhancement**
+
+Enhanced version control behavior to ensure data from **CI Jobs & Feature Deployment** branches is seamlessly merged into the intended target branches. Merging into the same source branch is now restricted to prevent unintended updates.
+
+**CI Jobs – “Features” Selection Improvement**
+
+Resolved an issue with the select all **“Features”** functionality in CI Jobs to ensure accurate and seamless selection of all available features.
+
+***
+
+## nCino - Release 26.1.7
 
 **Release Date:** **15 February 2026**
 

@@ -1,4 +1,4 @@
-# Version Control Best Practices
+# Version Control
 
 ## Registering a Version Control Repository
 
@@ -35,3 +35,42 @@
 
 * Adopt a **standard commit message format** for easier tracking and traceability.\
   **Recommended Format:** `<ProjectName#SPRINT#UserStory#Module#DevName#>`
+
+## Why EZ-Commit Displays Components Only for the Selected Salesforce Author
+
+**Overview**
+
+In **AutoRABIT ARM – EZ-Commit**, users may notice that when initiating a commit, the component list—particularly under **Select Manually** mode—only displays metadata items modified by the **Salesforce Org Author** chosen on the initial screen.
+
+This behavior is **intentional** and aligns with ARM’s **metadata filtering best practices** to ensure precise commit operations and traceability.
+
+**Background**
+
+Prior to version **25.4.4**, the EZ-Commit author filter did not consistently apply, leading to a broader list of components that included changes from multiple users.
+
+This was corrected in **v25.4.4**, aligning the functionality with the intended design—retrieving only metadata changes associated with the **selected author** (or all authors, if explicitly chosen).
+
+This change promotes **commit accuracy**, **audit compliance**, and **developer accountability**—key elements in mature **Salesforce DevOps pipelines**.
+
+**Expected Behavior Scenarios**
+
+| **Mode**        | **Author Selected** | **Expected Result**                           |
+| --------------- | ------------------- | --------------------------------------------- |
+| AutoDraft       | All                 | Retrieves changes made by all users.          |
+| AutoDraft       | Specific User       | Retrieves changes made by that specific user. |
+| Select Manually | All                 | Retrieves changes made by all users.          |
+| Select Manually | Specific User       | Retrieves changes made by that specific user. |
+
+**Note for Sub Users**
+
+If **Skip Mappings** is disabled in **PROFILE → My Role**, the sub-user must be mapped to the correct Salesforce user to view their changes. This ensures accurate retrieval of metadata associated with that user’s commits.
+
+**Summary**
+
+This enhancement reinforces ARM’s **DevOps best practices** by ensuring:
+
+* Precise author-based metadata tracking
+* Reduced risk of unintended component commits
+* Better visibility into code ownership and change management
+
+The current behavior is **by design** and supports a **more consistent and traceable deployment workflow** in Salesforce DevOps environments.

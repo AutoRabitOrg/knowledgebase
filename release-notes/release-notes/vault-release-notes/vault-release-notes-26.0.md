@@ -30,7 +30,7 @@ Updated the Salesforce Org registration flow to use OAuth 2.0 aligned with Sales
 
 Resolved an issue where the Archive job for the Case object incorrectly returned a Success status despite unprocessed records. The job status now accurately reflects processing outcomes, ensuring all records are either successfully archived or explicitly marked as failed with proper visibility.
 
-**Backup Job Log Loading Fix (QA)**
+**Backup Job Log Loading Fix**
 
 Resolved an issue where Backup Jobs failed with a “Failed to load backup log” error, preventing log details from being displayed. Backup execution and log retrieval now function correctly, ensuring proper job completion visibility.
 

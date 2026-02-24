@@ -67,7 +67,7 @@ Add HashiCorp Vault credentials once; ARM can now generate a new **Vault Token**
 
 <figure><img src="../../../../.gitbook/assets/image (635).png" alt="HashiCorp Vault credential form with AWS Auth option" width="563"><figcaption></figcaption></figure>
 
-_For details, see the dedicated_ [_HashiCorp Vault guide_](arm-credential-manager.md#hashicorp-vault)_._
+_For details, see the dedicated_ [_HashiCorp Vault guide_](https://knowledgebase.autorabit.com/product-guides/arm-1/integration-and-plugins/hashicorp-vault#what-is-hashicorp-vault)_._
 
 ***
 

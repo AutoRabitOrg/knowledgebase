@@ -133,3 +133,10 @@ Refer to [How to Configure Record Types Picklist Values](https://knowledgebase.a
 The **Application Token** credential type is **not supported for ARM CI Jobs**.\
 It is intended only for **enterprise Jira integration** using a Personal Access Token (PAT).\
 Do **not** configure Application Token as the credential type for CI Jobs. For CI Jobs, use supported SCM credentials (for example, **Username and Password or others**) instead.
+
+### Why is only one repository visible when creating a CI Job?
+
+Repository visibility depends on the **CI job type** selected.
+
+* For a **non-DX** CI job, only **non-DX repositories** are shown.
+* For an **SFDX** CI job, only **DX repositories** are shown.

@@ -123,6 +123,9 @@ This section summarizes the deployment limits that ARM users should consider:
 
     At this time, delta generation is limited to these components, and no other metadata is supported when utilizing Release Label Deployments.&#x20;
 14. **Translations**: The API can’t perform **destructive changes** with the translation value. The API can **add** existing `<translation>` to custom object translation but not **delete** them.
+15. As of **AutoRABIT ARM release 25.4.4**, the platform **does not support destructive changes for Profile IP Ranges** during deployment. This means deleted IP Ranges in the source branch are not removed from the target org through AutoRABIT deployments. In contrast, tools that use the Salesforce Metadata API, such as **Workbench** or the **Salesforce CLI**, will fully replace the target org’s IP Ranges with those from the deployment package, effectively applying deletions as well.
+
+    Customers who need to remove Profile IP Ranges should perform this step manually in the target org, as this cannot be achieved from AutoRABIT as of 25.4.4.
 
 ### Version Control Known Limitations <a href="#version-control-known-limitations" id="version-control-known-limitations"></a>
 

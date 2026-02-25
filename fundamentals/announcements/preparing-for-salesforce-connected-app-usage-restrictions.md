@@ -1,7 +1,7 @@
 # Preparing for Salesforce Connected App Usage Restrictions
 
 {% hint style="info" %}
-The information on this page has been deprecated as of **25 February 2026**. Please see the following page for additional information on the [Salesforce Oath External Client App (ECA) Transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).&#x20;
+**The information on this page has been deprecated as of 25 February 2026.** Please see the following page for additional information on the [**Salesforce Oath External Client App (ECA) Transition**](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).&#x20;
 {% endhint %}
 
 ### **Overview**

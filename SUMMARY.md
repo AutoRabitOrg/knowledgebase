@@ -483,7 +483,7 @@
     * [Authentication](product-guides/arm/introduction-to-arm-developer-apis/authentication.md)
     * [Errors](product-guides/arm/introduction-to-arm-developer-apis/errors.md)
   * [Salesforce Extensions](product-guides/arm/salesforce-extensions/README.md)
-    * [ARM for Salesforce Data Cloud](product-guides/arm/integration-and-plugins/arm-for-salesforce-data-cloud.md)
+    * [ARM for Data Cloud](product-guides/arm/integration-and-plugins/arm-for-salesforce-data-cloud.md)
     * [ARM Supported Metadata Types](product-guides/arm/getting-started/understanding-arm/arm-supported-metadata-types.md)
     * [ARM for Agentforce](product-guides/arm/salesforce-extensions/arm-for-agentforce.md)
   * [On-Premises / Dedicated Instances](product-guides/arm/on-premises-dedicated-instances/README.md)

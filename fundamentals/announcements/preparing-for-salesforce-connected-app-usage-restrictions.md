@@ -1,5 +1,9 @@
 # Preparing for Salesforce Connected App Usage Restrictions
 
+{% hint style="info" %}
+The information on this page has been deprecated as of **25 February 2026**. Please see the following page for additional information on the [Salesforce Oath External Client App (ECA) Transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).&#x20;
+{% endhint %}
+
 ### **Overview**
 
 Salesforce has announced changes to how uninstalled connected apps function in customer orgs, effective September 2025. These changes impact AutoRABIT products that connect to your Salesforce environments using the OAuth 2.0 Client Credentials Flow.
@@ -27,7 +31,7 @@ _For existing customers with an already connected Org/s to AutoRABIT_\
 No action is required.
 
 Recommended configuration:\
-\&#xNAN;_For existing customers, adding net new Salesforce Sandbox Orgs_
+&#xNAN;_&#x46;or existing customers, adding net new Salesforce Sandbox Orgs_
 
 **Install Connected App**
 
@@ -36,7 +40,7 @@ Recommended configuration:\
 3. Click Install, then confirm on the subsequent page.
 
 **Optional Configuration:**\
-\&#xNAN;_Applies to initial authentications with AutoRABIT made after the connected apps security change made by Salesforce, or net new production orgs (this will be updated, as more information becomes available from Salesforce)_
+&#xNAN;_&#x41;pplies to initial authentications with AutoRABIT made after the connected apps security change made by Salesforce, or net new production orgs (this will be updated, as more information becomes available from Salesforce)_
 
 Actions Required
 

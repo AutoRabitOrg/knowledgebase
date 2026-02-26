@@ -2,6 +2,84 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" %}
 
+## CodeScan Release 26.0.4
+
+Release Date: 01 March 2026
+
+### Summary
+
+CodeScan 26.0.4 is comprised of the following 2 components:
+
+* 1 Application Enhancement
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+There are no New Features in this release.&#x20;
+
+### Application Enhancements
+
+**1.     Salesforce External App Connection**
+
+**Description**
+
+To align with Salesforce Spring ’26 security requirements, CodeScan now offers an authentication flow for External Connected Apps (ECA).
+
+What’s changed:
+
+* CodeScan now supports Salesforce’s updated authentication standards for External Connected Apps.
+* Connectivity remains seamless once authentication is configured.
+
+Customer Action Required:
+
+* When adding new Salesforce orgs via External Connected Apps, the following to be provided:
+* Client ID
+* Client Secret
+
+What stays the same:
+
+* No changes to core CodeScan functionality.
+* No changes to user workflows after successful authentication.
+
+This update ensures continued secure and compliant integration with Salesforce orgs under updated platform security requirements.
+
+For more detailed information, please review to AutoRABIT’s published article “Salesforce OAuth External Client App (ECA) Transition” at [https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition)
+
+### New Rules
+
+There are no New Rules in this release.&#x20;
+
+### Rule Enhancements
+
+There are no Rule Enhancements in this release.
+
+### Rule Deprecations
+
+There are no Rule Deprecations in this release.
+
+### Fixes
+
+1\.       Fixed issue with data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
+
+**Description**
+
+We identified an issue in CodeScan where the Data Flow Trace for a SOQL injection rule where the trace repeatedly shows the same assignment instead of a clean, non-duplicated trace.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+We determined the root cause of the issue and updated the rule logic accordingly.  With this fix, this issue is now fully remediated.Top of Form
+
+Verified the following scenarios and report that the rule is now working as expected.
+
+* Verified for duplicated traces : verified along with test instance\
+  in preview: no duplicated traces
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## CodeScan Release 26.0.3&#x20;
 
 **Release Date: 15 February 2026**
@@ -699,7 +777,7 @@ Faster time to market with business requirements
 * Integrated seamlessly with CICD workflows
 * Delivers on the Cursor promise of “making developers extraordinarily productive”
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Application Enhancements
 
@@ -714,7 +792,7 @@ If issue comments are included in the CSV export with clear attribution & timest
 
 _The image below illustrates the new format for comments added into CSV exports:_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -772,7 +850,7 @@ We have verified all the fixes related to user license counting and orphan membe
    2. Executed dev-provided cleanup SQL query.
    3. Confirmed Orphan entries were successfully deleted.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

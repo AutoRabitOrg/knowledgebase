@@ -4,7 +4,7 @@
 
 ## CodeScan Release 26.0.4
 
-Release Date: 01 March 2026
+**Release Date: 01 March 2026**
 
 ### Summary
 

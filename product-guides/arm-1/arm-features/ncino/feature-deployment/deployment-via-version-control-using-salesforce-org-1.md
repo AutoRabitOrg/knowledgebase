@@ -46,13 +46,18 @@ This section covers the deployment of **nCino metadata and data** through **vers
 
           <figure><img src="../../../../../.gitbook/assets/4.1 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
 6. Based on the selected revisions, the respective "feature versions" will be displayed.
-7.  Click on the "Next" to continue to the "Destination" section of the Feature Deployment flow
+7. **`NOTE`:**
+   1. **`No manual merge conflict resolution is supported.`**` ``In case of data conflicts, the dataset collected from the source environment will be committed by default, even if corresponding data already exists in the target branch.`
+   2. **`Destructive changes are currently not supported.`**` ``If a record is deleted in the source environment after being committed to Version Control, subsequent commits will not remove that record from the branch. The previously committed record will remain intact.`
+8.  Click on the "Next" to continue to the "Destination" section of the Feature Deployment flow
 
-    <figure><img src="../../../../../.gitbook/assets/5 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
-8. You can configure several options for your objects before proceeding with a deployment or commit, including:
+
+
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2026-02-27 at 5.54.35 PM.png" alt=""><figcaption></figcaption></figure>
+9. You can configure several options for your objects before proceeding with a deployment or commit, including:
    * **External Id Mappings**
    * **Applied Filters**
-9.  **External ID Mappings**
+10. **External ID Mappings**
 
     This section allows you to use an **External ID** instead of a Salesforce **Record ID** to establish relationships between records during an **Upsert** operation.\
     For example, if **Object B** has a lookup to **Object A**, you can reference a field on Object A marked as an _External ID_ to relate Object B records to the correct Object A records.

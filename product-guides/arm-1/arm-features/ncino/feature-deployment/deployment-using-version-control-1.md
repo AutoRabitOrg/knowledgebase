@@ -67,14 +67,16 @@ This article describes the process of deploying nCino data via Version Control.
 9. The Object Configuration section dynamically displays the selected objects and applies the corresponding filters and mappings based on the selections.
 10. The "External Id Mappings" can be configured accordingly.
 
-    <figure><img src="../../../../../.gitbook/assets/6.0 - Deployment From Version Control (1).png" alt=""><figcaption></figcaption></figure>
+
+
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2026-02-27 at 4.15.40 PM 2.png" alt=""><figcaption></figcaption></figure>
 11. In this section, you can use an external ID in place of a related record's Salesforce record ID to relate or associate records to each other as you process an Upsert operation. For example, if **Object B** has a lookup field to another **Object A,** you can use the values in a field marked as an External ID on **Object A** to relate the two (**Object B** to **Object A** records).
 
     In the **Source** field: Select your source field whose values will be populated in the destination External Id field.
 
     In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-    <figure><img src="../../../../../.gitbook/assets/6.1 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/3 - External ID.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings):**

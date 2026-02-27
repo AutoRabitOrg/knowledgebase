@@ -46,9 +46,7 @@ Now users can seamlessly specify the baseline revision from a set of revisions a
     <figure><img src="https://github.com/AutoRabitOrg/knowledgebase/raw/7744f310785293503dd3729fd9d0403cae3b8211/.gitbook/assets/4%20-%20Baseline%20Revision.png" alt=""><figcaption></figcaption></figure>
 5.  **Destination**: Select the target org where the deployment should be executed.
 
-
-
-    <figure><img src="https://github.com/AutoRabitOrg/knowledgebase/raw/7744f310785293503dd3729fd9d0403cae3b8211/.gitbook/assets/5%20-%20Baseline%20Revision.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2026-02-27 at 7.40.34 PM.png" alt=""><figcaption></figcaption></figure>
 6.  **Job Settings**: The "Job Settings" screen allows configuration of deployment behaviors, scheduling options, user notifications, and post-deployment dataset propagation in a CI Job.
 
 

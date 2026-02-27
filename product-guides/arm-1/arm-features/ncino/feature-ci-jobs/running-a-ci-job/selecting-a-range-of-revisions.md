@@ -58,7 +58,7 @@ This method provides controlled, incremental deployments by targeting a precise 
 
 
 
-    <figure><img src="https://github.com/AutoRabitOrg/knowledgebase/raw/7744f310785293503dd3729fd9d0403cae3b8211/.gitbook/assets/7%20-%20Range%20of%20Revisions.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2026-02-27 at 7.36.31 PM.png" alt=""><figcaption></figcaption></figure>
 9.  Preview: At this section the selections made for the "CI Job" configuration can be reviewed here
 
 

@@ -40,18 +40,28 @@ This article describes the process of deploying nCino data via Version Control.
       3.  **Single Revision**: This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
 
           <figure><img src="../../../../../.gitbook/assets/5.1 - Deployment From Version Control (1).png" alt=""><figcaption></figcaption></figure>
-      4. **n Range**: This option allows you to specify a commit range from which the revisions are to be deployed.
+      4. **Revision Range**: This option allows you to specify a commit range from which the revisions are to be deployed.
       5.
 
           <figure><img src="../../../../../.gitbook/assets/5.2 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
-      6.
-      7. "Deploy To" field
-6.
+6. **Destination:** Select the destinations onto which the data can be deployed to.
+   1. **Deploy To:** lists the ORGs that can be selected for deployment.
+   2. **Commit To:** Lists the branches selected for deployment to "Version Control".
+7.
 
-    <figure><img src="../../../../../.gitbook/assets/6 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/FD - Deploy from temp config.png" alt=""><figcaption></figcaption></figure>
+
+
 
 {% hint style="info" %}
-Change hint typeCommentShare feedback on the editor**Important Note**: The dataset is already prepared at the time of the commit, so you can’t edit it at this point. However, if you like to edit the filter, use the feature: [Deployment via Version Control using Salesforce or](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/~/changes/2715/product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org)
+**Note**: The dataset is already prepared at the time of the commit, so you can’t edit it at this point. However, if you like to edit the filter, use the feature: [Deployment via Version Control using Salesforce org](../../../../arm/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org.md)
+{% endhint %}
+
+{% hint style="info" %}
+**Note:**
+
+* **No manual merge conflict resolution is supported.** In case of data conflicts, the dataset collected from the source environment will be committed by default, even if corresponding data already exists in the target branch.
+* **Destructive changes are currently not supported.** If a record is deleted in the source environment after being committed to Version Control, subsequent commits will not remove that record from the branch. The previously committed record will remain intact.
 {% endhint %}
 
 9. The Object Configuration section dynamically displays the selected objects and applies the corresponding filters and mappings based on the selections.

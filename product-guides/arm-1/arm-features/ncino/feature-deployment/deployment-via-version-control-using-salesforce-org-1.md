@@ -54,9 +54,14 @@ This section covers the deployment of **nCino metadata and data** through **vers
 
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2026-02-27 at 5.54.35 PM.png" alt=""><figcaption></figcaption></figure>
-9. You can configure several options for your objects before proceeding with a deployment or commit, including:
-   * **External Id Mappings**
-   * **Applied Filters**
+9.  You can configure several options for your objects before proceeding with a deployment or commit, including:
+
+    * **External Id Mappings**
+    * **Applied Filters**
+
+    <figure><img src="../../../../../.gitbook/assets/2 - FD Using VC SF.png" alt=""><figcaption></figcaption></figure>
+
+
 10. **External ID Mappings**
 
     This section allows you to use an **External ID** instead of a Salesforce **Record ID** to establish relationships between records during an **Upsert** operation.\
@@ -65,7 +70,9 @@ This section covers the deployment of **nCino metadata and data** through **vers
     * **Source Field**: Select the source field whose values will be used to match and populate the destination’s External ID field.
     * **Destination Field**: Choose a field from the destination org that is marked as an External ID and holds **unique values** across all records.
 
-    <figure><img src="../../../../../.gitbook/assets/5.0 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
+
+
+    <figure><img src="../../../../../.gitbook/assets/3 - FD Using VC SF.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 #### **Important Note on External ID Mappings**
@@ -78,11 +85,18 @@ When deploying via **Template** or **Version Control**, the **source** is a **CS
 Please note that **AutoRABIT-defined External ID fields** are **not supported** for the **Upsert** operation.
 {% endhint %}
 
+{% hint style="info" %}
+**Note:**
+
+* **No manual merge conflict resolution is supported.** In case of data conflicts, the dataset collected from the source environment will be committed by default, even if corresponding data already exists in the target branch.
+* **Destructive changes are currently not supported.** If a record is deleted in the source environment after being committed to Version Control, subsequent commits will not remove that record from the branch. The previously committed record will remain intact.
+{% endhint %}
+
 10. **Applied Filters**: If any filters have been applied to the objects, they will be displayed in this section. You can modify an existing filter at any time by selecting **Edit Filter**.
 
+    <figure><img src="../../../../../.gitbook/assets/4 - FD Using VC SF.png" alt=""><figcaption></figcaption></figure>
 
 
-    <figure><img src="../../../../../.gitbook/assets/6 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
 11. On completing the required selection click next to continue to the "Job Settings" section of the "Feature Deployment" flow.
 12. Observe the following screenshot for the "Deployment Options" available on this section:
 

@@ -65,15 +65,17 @@ OAuth registration now works seamlessly in both Old UI and New UI.
 
 ### Salesforce Org Registration via OAuth – External Client App (ECA)
 
-ARM now supports **OAuth via External Client App (ECA)** as a modern Salesforce authentication method.
+ARM now supports OAuth via External Client App (ECA) as a modern Salesforce authentication method.
 
 #### What’s New
 
-* New authentication option: **OAuth via External Client App**
+* New authentication option: OAuth via External Client App
 * Secure OAuth authorization
 * Encrypted token storage
 * Token lifecycle management
-* Re-authentication support with editable Client ID and Client Secret
+* Re-authentication support with editable **Consumer ID** and **Consumer Key**
+* Please use the link below for Step by Step guidance
+*
 
 #### Migration Support
 
@@ -83,9 +85,9 @@ Existing Salesforce orgs using Standard or Connected App OAuth can migrate to EC
 * Losing pipelines, jobs, or configurations
 * Affecting existing mappings
 
-Authentication type and connection status update automatically upon successful migration.
+The authentication type and connection status update automatically upon successful migration.
 
-This enhancement provides improved security and modern Salesforce authentication compatibility.
+This enhancement strengthens security and aligns with modern Salesforce authentication standards.
 
 ### Salesforce Org Visibility After Permission Update (New UI)
 

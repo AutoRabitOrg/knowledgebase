@@ -75,7 +75,7 @@ ARM now supports OAuth via External Client App (ECA) as a modern Salesforce auth
 * Token lifecycle management
 * Re-authentication support with editable **Consumer ID** and **Consumer Key**
 * Please use the link below for Step by Step guidance
-*
+* [https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca)
 
 #### Migration Support
 

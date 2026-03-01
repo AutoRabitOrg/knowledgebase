@@ -612,6 +612,7 @@
         * [Salesforce Org Management](product-guides/arm-1/registration/salesforce-org/salesforce-org-management.md)
         * [Salesforce Authentication using OAuth](product-guides/arm-1/registration/salesforce-org/salesforce-authentication-using-oauth.md)
         * [Salesforce Org Reauthentication](product-guides/arm-1/registration/salesforce-org/salesforce-org-re-authentication.md)
+        * [Register Salesforce Org using OAuth via External Client App (ECA)](product-guides/arm-1/getting-started-1/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca.md)
       * [Version Control Repositories](product-guides/arm-1/registration/version-control-repository/README.md)
         * [Azure](product-guides/arm-1/registration/version-control-repository/azure.md)
         * [Bitbucket](product-guides/arm-1/registration/version-control-repository/bitbucket.md)

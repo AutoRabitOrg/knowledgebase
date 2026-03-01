@@ -1,7 +1,5 @@
 # Register Salesforce Org using OAuth via External Client App (ECA)
 
-## Registering Your Salesforce Org in ARM Using OAuth via External Client App (ECA)
-
 ### Overview
 
 To use Salesforce Org functionality within ARM, you must first register your Salesforce organization. Registration allows ARM to securely connect to your Salesforce org with the required permissions.

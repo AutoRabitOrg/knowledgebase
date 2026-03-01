@@ -141,6 +141,7 @@
       * [Authentication using OAuth](product-guides/arm/registration/salesforce-org/salesforce-authentication-using-oauth.md)
       * [Salesforce Org Management Page](product-guides/arm/registration/salesforce-org/salesforce-org-management.md)
       * [Reauthenticating Your Salesforce Org](product-guides/arm/registration/salesforce-org/salesforce-org-re-authentication.md)
+      * [Register Salesforce Org using OAuth via External Client App (ECA)](product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca.md)
     * [Running Static Code Analysis](product-guides/arm/registration/static-code-analysis-in-ci-cd.md)
     * [Version Control Branch](product-guides/arm/registration/version-control-branch/README.md)
       * [Configuring Metadata Folder Paths](product-guides/arm/registration/version-control-branch/non-sfdx-repos.md)

@@ -1,7 +1,63 @@
 # Register Salesforce Org using OAuth via External Client App (ECA)
 
-* Authorization Code and Credentials Flow
-* Device Flow
+### Overview
+
+To use Salesforce Org functionality within ARM, you must register your Salesforce organization. Registration enables ARM to securely connect to your Salesforce org with the required permissions.
+
+ARM supports the following authentication methods:
+
+* Standard Authentication
+* OAuth via Connected App
+* OAuth via External Client App (ECA)
+
+This article explains:
+
+* How to register a new Salesforce org using OAuth via External Client App (ECA)
+* How to migrate an existing org to this authentication type
+* Important considerations and limitations
+
+***
+
+## Part 1: Salesforce Prerequisites
+
+Before registering your org in ARM, complete the following configuration in Salesforce.
+
+### Step 1: Create an External Client App
+
+1. Navigate to **Salesforce Setup**.
+2. Search for **External Client Apps**.
+3. Click **New External Client App**.
+4. Enter the required details.
+
+#### Basic Information
+
+* **External Client App Name**
+* **API Name** (auto-populated)
+* **Contact Email**
+
+#### Enable OAuth Settings
+
+1. Select **Enable OAuth Settings**.
+2. Provide the **Callback URL** exactly as displayed in the ARM UI.
+3. Add the following OAuth scopes:
+
+* Access the identity URL service (id, profile, email, address, phone)
+* Manage user data via APIs (api)
+* Full access (full)
+* Access Connect REST API resources (chatter\_api)
+* Perform requests at any time (refresh\_token, offline\_access)
+* Access custom permissions (custom\_permissions)
+
+#### Flow Enablement
+
+Enable the following:
+
+* **Authorization Code and Credentials Flow**\
+  &#xNAN;_(Sub-options are not required.)_
+
+#### Security Settings
+
+* **Uncheck**: _Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows_
 
 #### Save and Activate
 
@@ -9,12 +65,12 @@ Save the application and activate it.
 
 ### Step 2: Collect Client Credentials
 
-After activation, copy the following:
+After activation, copy the following credentials:
 
 * **Consumer ID (Consumer Key)**
 * **Consumer Secret**
 
-> **Note:** Newly generated credentials may take up to 10 minutes to become active in Salesforce. If verification fails, wait and retry.
+> **Note:** Newly generated credentials may take up to 10 minutes to become active. If verification fails, wait and retry.
 
 ***
 
@@ -48,7 +104,7 @@ Click **Verify / Connect**.
 
 * You will be redirected to the Salesforce login page.
 * Log in and approve ARM access.
-* Salesforce redirects you back to ARM.
+* Salesforce will redirect you back to ARM.
 
 ### Step 5: Successful Registration
 
@@ -56,23 +112,25 @@ After successful authorization:
 
 * The org is registered.
 * Tokens are securely encrypted and stored.
-* The org is available across applicable ARM modules.
-* Connection status displays as **Connected**.
+* The org becomes available across applicable ARM modules.
+* The connection status displays as **Connected**.
+
+***
 
 ## Part 3: Reauthentication
 
 To reauthenticate an existing org:
 
-1. Navigate to **Org Details**
-2. Click **Reauthenticate**
-3. Update Consumer ID / Consumer Secret (if required)
-4. Click **Authenticate**
-5. Complete Salesforce authorization
+1. Navigate to **Org Details**.
+2. Click **Reauthenticate**.
+3. Update the Consumer ID and/or Consumer Secret (if required).
+4. Click **Authenticate**.
+5. Complete the Salesforce authorization process.
 
 After successful completion:
 
-* Connection status updates automatically
-* Last authenticated timestamp is refreshed
+* The connection status updates automatically.
+* The last authenticated timestamp is refreshed.
 
 ***
 
@@ -118,26 +176,28 @@ Click **Connect**.
 
 * You will be redirected to Salesforce.
 * Log in and approve access.
-* Salesforce redirects back to ARM.
+* Salesforce will redirect back to ARM.
 
 ### Step 6: Migration Completion
 
 Upon successful authorization:
 
-* Authentication type updates to **OAuth via ECA**
-* The same org record is retained
-* Pipelines, jobs, and mappings remain unchanged
-* No new org entry is created
-* Connection status displays as **Connected**
-* Last authenticated timestamp is updated
+* The authentication type updates to **OAuth via ECA**.
+* The same org record is retained.
+* Pipelines, jobs, and mappings remain unchanged.
+* No new org entry is created.
+* The connection status displays as **Connected**.
+* The last authenticated timestamp is updated.
+
+***
 
 ### Failure Handling
 
 If authentication fails:
 
-* A clear error message is displayed
-* The existing connection remains unaffected
-* You can retry without impacting current configurations
+* A clear error message is displayed.
+* The existing connection remains unaffected.
+* You can retry without impacting current configurations.
 
 ***
 
@@ -147,10 +207,13 @@ Please note the following limitations:
 
 * Dev Hub registration is supported **only through OAuth (Connected App)**.
 * Dev Hub registration is **not supported** using:
-  * Standard authentication
+  * Standard Authentication
   * OAuth via External Client App (ECA)
-* Dev Hub registration is available only under:
-  * **Settings → Salesforce Org**
+
+Additional notes:
+
+* Dev Hub registration is available only under:\
+  **Settings → Salesforce Org**
 * Dev Hub registration is no longer available in the SFDX module.
 * Existing Dev Hubs cannot be reauthenticated.
 * New Dev Hubs can be created using OAuth (Connected App) without issues.
@@ -165,15 +228,15 @@ When updating credentials for an existing OAuth via ECA connection, the followin
 
 If you:
 
-* Update Consumer ID or Consumer Secret
+* Update the Consumer ID or Consumer Secret
 * Click **Test Connection**
 * Do not complete OAuth authorization
 
 Then:
 
-* The test may still show **Success**
-* The system continues using previously authorized credentials stored in the backend
-* The new values are not applied yet
+* The test may still display **Success**.
+* The system continues using previously authorized credentials stored in the backend.
+* The updated values are not applied yet.
 
 ***
 
@@ -183,9 +246,9 @@ New credentials take effect **only after completing the OAuth authorization flow
 
 Until authorization is completed:
 
-* Existing tokens remain active
-* Previous credentials remain in effect
-* Backend values are not replaced
+* Existing tokens remain active.
+* Previous credentials remain in effect.
+* Backend values are not replaced.
 
 ***
 
@@ -193,8 +256,8 @@ Until authorization is completed:
 
 After updating credentials:
 
-1. Click **Authenticate / Connect**
-2. Complete Salesforce authorization
-3. Confirm the connection status updates successfully
+1. Click **Authenticate / Connect**.
+2. Complete Salesforce authorization.
+3. Confirm that the connection status updates successfully.
 
 Without completing authorization, the new credentials will not be validated or activated.

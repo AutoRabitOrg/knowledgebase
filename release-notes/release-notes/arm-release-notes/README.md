@@ -4,11 +4,11 @@
 
 ## Release Notes – Version 26.1.9
 
-**Release Date:** March 1, 2026
+**Release Date: 01 March 2026**
 
 This release includes usability improvements, UI consistency enhancements, deployment fixes, and expanded authentication support.
 
-### Merge Request – Delete Feature Branch Behavior Improvement
+#### Merge Request – Delete Feature Branch Behavior Improvement
 
 We’ve improved the behavior of the **“Delete Feature Branch”** option in Merge Requests to ensure a smoother and more predictable user experience.
 
@@ -20,11 +20,11 @@ We’ve improved the behavior of the **“Delete Feature Branch”** option in M
 
 This enhancement prevents accidental multiple deletions and improves workflow clarity.
 
-### Clear AutorabitExtId – Status & Log Visibility Fix
+#### Clear AutorabitExtId – Status & Log Visibility Fix
 
 Resolved icon visibility issues during the **Clear AutorabitExtId** operation in both Old UI and New UI.
 
-#### Improvements
+### Improvements
 
 * Status and Log icons no longer disappear during or after execution.
 * Status now correctly updates to **Success** or **Failed** upon completion.
@@ -33,11 +33,11 @@ Resolved icon visibility issues during the **Clear AutorabitExtId** operation in
 
 This ensures better execution tracking and improved transparency.
 
-### Static Resource Deletion Fix – CI Deployment
+#### Static Resource Deletion Fix – CI Deployment
 
 Addressed a CI deployment issue related to incomplete Static Resource deletions.
 
-#### Enhancement
+### Enhancement
 
 * Static Resources are now fully removed during deletion.
 * Prevents deployment errors caused by residual metadata.
@@ -45,7 +45,7 @@ Addressed a CI deployment issue related to incomplete Static Resource deletions.
 
 This improves deployment reliability and consistency.
 
-### Search Functionality Enhancement – Metadata Filters
+#### Search Functionality Enhancement – Metadata Filters
 
 Search functionality has been improved and aligned across Old UI and New UI.
 
@@ -57,13 +57,13 @@ Search functionality has been improved and aligned across Old UI and New UI.
 
 This resolves previous inconsistencies and ensures consistent filtering behavior across interfaces.
 
-### JIRA OAuth Redirection – 413 Error Fix
+#### JIRA OAuth Redirection – 413 Error Fix
 
 Resolved a **413 – Request Entity Too Large** error occurring during JIRA OAuth registration in the New UI.
 
 OAuth registration now works seamlessly in both Old UI and New UI.
 
-### Salesforce Org Registration via OAuth – External Client App (ECA)
+#### Salesforce Org Registration via OAuth – External Client App (ECA)
 
 ARM now supports OAuth via External Client App (ECA) as a modern Salesforce authentication method.
 
@@ -89,11 +89,13 @@ The authentication type and connection status update automatically upon successf
 
 This enhancement strengthens security and aligns with modern Salesforce authentication standards.
 
-### Salesforce Org Visibility After Permission Update (New UI)
+#### Salesforce Org Visibility After Permission Update (New UI)
 
 Fixed an issue where updating User Permissions in the New UI caused the associated Salesforce Org to disappear from **My Profile → My Salesforce Orgs**.
 
 The save logic has been corrected to ensure the Org association remains intact after permission updates.
+
+***
 
 ### Release Notes – Version 26.1.8 <a href="#release-notes-version-26.1.8" id="release-notes-version-26.1.8"></a>
 

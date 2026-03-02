@@ -6,7 +6,7 @@
 
 ## nCino - Release 26.1.8
 
-**Release Date:** 22 **February 2026**
+**Release Date: 22 February 2026**
 
 **CI Jobs & Feature Deployment – Version Control Merge Enhancement**
 

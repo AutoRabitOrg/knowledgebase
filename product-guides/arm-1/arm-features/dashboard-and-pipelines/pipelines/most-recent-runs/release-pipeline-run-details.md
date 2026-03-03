@@ -43,7 +43,7 @@ For each stage, you can:
 
 Logs provide detailed information about deployment steps, validations, and any errors or warnings encountered during execution.\
 \
-![](<../../../../../../.gitbook/assets/image (5) (1).png>)
+![](<../../../../../../.gitbook/assets/image (5) (1) (1).png>)
 
 Step 4: Stage-level deployment details\
 Clicking on a stage opens detailed information specific to that stage, including:

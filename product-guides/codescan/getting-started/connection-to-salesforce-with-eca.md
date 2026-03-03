@@ -18,13 +18,13 @@ https://perf.codescan.io/\_codescan/oauth2/authorize
 
 1. Login into Salesforce
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 2. In **Salesforce**, go to **Setup**.
 3. In **Quick Find**, search **External Client Apps**.
 4. Open **External Client App Manager** (or the External Client Apps area).
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **New External Client App**.
 3. Fill in the basics:
@@ -33,10 +33,6 @@ https://perf.codescan.io/\_codescan/oauth2/authorize
    * **Contact Email**
    * **Distribution State**:
      * **Local** (only for this org)
-
-&#x20;![](<../../../.gitbook/assets/image (3).png>)
-
-***
 
 ### 3) Enable OAuth + set callback URL + scopes <a href="#id-3-enable-oauth--set-callback-url--scopes" id="id-3-enable-oauth--set-callback-url--scopes"></a>
 
@@ -50,14 +46,10 @@ https://perf.codescan.io/\_codescan/oauth2/authorize
    * Manage user data via Web browsers (web)
    * Perform requests at any time (refresh\_token, offline\_access)
 
-***
-
 ### 4) Turnment <a href="#id-4-turnment" id="id-4-turnment"></a>
 
 1. In **Flow Enablement**, select **Enable Authorization Code and Credentials Flow**.
 2. **user credentials are required in the POST body** (Salesforce shows this option when you choose that flow) should be disabled.
-
-***
 
 ### 5) Security toggles (common defaults) <a href="#id-5-security-toggles-common-defaults" id="id-5-security-toggles-common-defaults"></a>
 
@@ -65,8 +57,6 @@ In the **Security** section the next options should be enabled:
 
 * **Require secret for Web Server Flow**
 * **Require secret for Refresh Token Flow**
-
-***
 
 ### 6) Create the app and capture Client ID / Secret <a href="#id-6-create-the-app-and-capture-client-id-secret" id="id-6-create-the-app-and-capture-client-id-secret"></a>
 
@@ -81,16 +71,12 @@ After getting the code and verify in Salesforce the Consumer Key (CliendID) and 
 
 **IMPORTANT: STORE THIS VALUES IN A SAFE PLACE WHERE CAN BE EASILY USED FOR FUTURE REFERECES.**
 
-***
-
 ### 7) Configure Policies (very important) <a href="#id-7-configure-policies-very-important" id="id-7-configure-policies-very-important"></a>
 
 After creating the ECA, open the **Policies** tab and adjust as needed (exact options vary by org/security posture), commonly:
 
 * **Permitted Users**: often set to **Admin approved users are pre-authorized** for controlled rollouts.
 * Add the required **profiles/permission sets** (or approved users) for who is allowed to authorize.
-
-***
 
 ### 8) What you’ll use in AutoRABIT <a href="#id-8-what-youll-use-in-autorabit" id="id-8-what-youll-use-in-autorabit"></a>
 
@@ -100,8 +86,6 @@ Once created, the set of values you’ll reference in your CodeScan configuratio
 * **Client Secret**
 
 Also, the internal direction is to be clear that **one ECA per customer org** can be used across products (rather than creating one per AR product).
-
-***
 
 After the configuration in salesforce is complete, and you have obtained the ClientID and Client Secret, we can go to CodeScan to create the connection
 
@@ -122,4 +106,3 @@ A message from Salesforce will show to require granting the permissions for the 
 Then, you will be returned to configure the new Analysis, fill up the form.
 
 Then the analysis with the connection will be added to the list.
-

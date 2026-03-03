@@ -45,7 +45,7 @@ Important Notes:
 
 * **Time Range** – Specify a period so ARM fetches only revisions in that window.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Additional options in the Build section
 

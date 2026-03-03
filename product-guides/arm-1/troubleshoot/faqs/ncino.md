@@ -175,7 +175,7 @@ Change the grid view to a graph view by clicking the Switch to Graph View button
 
 8. Filters and Mappings: You can extract records by using specified criteria in the Filters section
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Extract a single record by providing unique external ID field value.
 

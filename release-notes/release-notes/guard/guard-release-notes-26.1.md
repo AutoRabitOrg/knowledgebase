@@ -1,6 +1,6 @@
 # Guard Release Notes 26.1
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" fullWidth="true" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" fullWidth="false" %}
 
 ## Guard 26.1.3 Release Notes
 

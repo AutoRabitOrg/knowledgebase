@@ -30,7 +30,11 @@ What stays the same:&#x20;
 
 This update ensures continued secure and compliant integration with Salesforce orgs under updated platform security requirements. &#x20;
 
-Learn more [here](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).&#x20;
+Learn more here:
+
+[Salesforce OAuth External Client App (ECA) Transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition)
+
+[How to Set Up Guard via ECA](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/how-to-set-up-guard-via-eca)
 
 ### Bug Fixes&#x20;
 

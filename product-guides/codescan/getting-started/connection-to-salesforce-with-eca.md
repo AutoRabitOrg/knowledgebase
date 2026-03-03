@@ -8,11 +8,11 @@ For AutoRABIT’s CodeScan ECA setup, you need **the callback URL**
 
 Callback URL is depending on the instance:
 
-{$isntancename}/\_codescan/oauth2/authorize
+_{$isntancename}/\_codescan/oauth2/authorize_
 
 Example:
 
-https://perf.codescan.io/\_codescan/oauth2/authorize
+_https://perf.codescan.io/\_codescan/oauth2/authorize_
 
 ### 2) Create the External Client App (ECA) in your Salesforce Org <a href="#id-2-create-the-external-client-app-eca-in-your-salesforce-org" id="id-2-create-the-external-client-app-eca-in-your-salesforce-org"></a>
 

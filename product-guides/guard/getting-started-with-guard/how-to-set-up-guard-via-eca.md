@@ -90,7 +90,7 @@ Click **Login with Salesforce**.
 
 * You will be redirected to the Salesforce login page.
 * Log in and approve Guard access.
-* Salesforce will redirect you back to Guardrd.
+* Salesforce will redirect you back to Guard.
 
 #### Step 5: Successful Registration <a href="#step-5-successful-registration" id="step-5-successful-registration"></a>
 

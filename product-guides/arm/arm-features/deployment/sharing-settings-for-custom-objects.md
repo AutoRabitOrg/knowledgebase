@@ -25,4 +25,4 @@ Currently, the **only safe and supported approach** to commit _only_ the OWD cha
 
 This ensures that **only the intended Sharing Settings change** is committed, without promoting any unintended metadata.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

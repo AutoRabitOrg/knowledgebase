@@ -9,7 +9,6 @@
 * [FAQs](fundamentals/faq/README.md)
   * [General User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
   * [Salesforce ECA Configuration for AutoRABIT](fundamentals/faq/salesforce-eca-configuration-for-autorabit/README.md)
-    * [ARM: Salesforce ECA (Local) Connection Setup](fundamentals/faq/salesforce-eca-configuration-for-autorabit/arm-salesforce-eca-local-connection-setup.md)
     * [ARM: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-eca-configuration-for-autorabit/arm-salesforce-eca-local-connection-setup-steps.md)
     * [CodeScan: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-eca-configuration-for-autorabit/codescan-salesforce-eca-local-connection-setup-steps.md)
     * [Guard: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-eca-configuration-for-autorabit/guard-salesforce-eca-local-connection-setup-steps.md)

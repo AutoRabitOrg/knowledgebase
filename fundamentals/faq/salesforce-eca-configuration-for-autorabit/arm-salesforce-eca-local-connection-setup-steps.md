@@ -3,7 +3,7 @@ description: >-
   This is a step by step on how to implement the Local ECA solution to establish
   a new connection with ARM.
 layout:
-  width: wide
+  width: default
   title:
     visible: true
   description:

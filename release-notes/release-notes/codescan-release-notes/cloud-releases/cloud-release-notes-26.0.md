@@ -15,9 +15,9 @@ Key points:
 
 1. If you have an existing Salesforce org registered, you are using the existing Connected App flow.  No action is required at this time, and your analyses will run as expected\
    \
-   2\.  Please note that any new Salesforce org that you wish to register in CodeScan must use the new local ECA flow (which is documented in detail below)\
+   2\.  Please note that any new Salesforce org that you wish to register in CodeScan must use the new [local ECA flow](../../../../product-guides/codescan/getting-started/connection-to-salesforce-with-eca.md).\
    \
-   3\.  Please note that if your existing Salesforce orgs need to be reattached, or if your tokens expire, your Connected App flow will no longer work, and you will need to re-register your org using the local ECA flow\
+   3\.  Please note that if your existing Salesforce orgs need to be reattached, or if your tokens expire, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca).\
    \
    Additionally, please note that in these circumstances, your comparison branches in Salesforce will need to be set up again
 {% endhint %}

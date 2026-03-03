@@ -97,6 +97,20 @@ The save logic has been corrected to ensure the Org association remains intact a
 
 ***
 
+### Data Loader PRO - 26.1.9 Release Notes
+
+**Release Date:** 01 March, 2026
+
+#### Hierarchical Object Handling Enhancement – Consistent Parent Resolution  <a href="#dl-pro-hierarchical-object-handling-enhancement-consistent-parent-resolution-dt-12221-dt-12270" id="dl-pro-hierarchical-object-handling-enhancement-consistent-parent-resolution-dt-12221-dt-12270"></a>
+
+Improved the handling of hierarchical object relationships during job creation and execution.
+
+In scenarios where an object appears as a child in the UI but also functions as a parent in the object hierarchy (parent-of-parent), the system previously fetched additional parent objects during job execution that were not explicitly selected during job creation.
+
+This enhancement ensures consistency between the object selection during job configuration and the objects processed during execution. Parent objects will now be fetched only if they are explicitly selected or identified as mandatory dependencies.
+
+***
+
 ### Release Notes – Version 26.1.8 <a href="#release-notes-version-26.1.8" id="release-notes-version-26.1.8"></a>
 
 **Release Date: 22 February 2026**

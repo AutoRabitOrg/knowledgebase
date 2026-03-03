@@ -35,7 +35,7 @@ The following articles describe how to trigger a new build for your CI Job creat
 
 1. If previous builds exist, click **Build Now** to trigger a new build.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 1. The build initiation screen will differ depending on whether your CI Job is configured with ALM.
 
@@ -68,7 +68,7 @@ ALM-integrated CI Jobs display ALM work item information from the source version
 
 CI Jobs without ALM integration show the following build input screen:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Enter a **Title** and optional **Comments**
 * Choose **Deployment Type**:

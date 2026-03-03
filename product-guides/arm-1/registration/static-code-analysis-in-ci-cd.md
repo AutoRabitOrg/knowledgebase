@@ -94,11 +94,11 @@ Apex PMD ships with a comprehensive default rule set, but you can supply your ow
 * These repositories or orgs are then mapped to the chosen CodeScan project and branch, establishing the link between the source (ARM) and the analysis destination (CodeScan).
 * Users can review, confirm, or override any mapping if required.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Optional Setup Behavior**
 
-* The configuration is not mandatory. only optional.&#x20;
+* The configuration is not mandatory. only optional.
 * If skipped, ARM follows the normal scanning process—scans will run in the default CodeScan project/branch setup.
 * Once mappings are configured, all future scans will run in the specified project/branch instead of creating new ones.
 

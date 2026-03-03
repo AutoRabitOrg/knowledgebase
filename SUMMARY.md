@@ -1040,6 +1040,7 @@
       * [Finding your Project Key](product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/finding-your-project-key.md)
       * [Finding your Organization Key](product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/finding-your-organization-key.md)
       * [Setting up Payment](product-guides/codescan/getting-started/setting-up-a-codescan-cloud-organization/setting-up-payment.md)
+    * [Connection to Salesforce with ECA](product-guides/codescan/getting-started/connection-to-salesforce-with-eca.md)
     * [Using CodeScan](product-guides/codescan/getting-started/using-codescan/README.md)
       * [Understanding Branches in CodeScan Cloud](product-guides/codescan/getting-started/using-codescan/understanding-branches-in-codescan-cloud.md)
       * [Understanding Branches for Salesforce projects](product-guides/codescan/getting-started/using-codescan/understanding-branches-for-salesforce-project.md)

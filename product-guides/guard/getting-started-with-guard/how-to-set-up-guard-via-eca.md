@@ -23,8 +23,10 @@ Before registering your org in Guard, please complete the following configuratio
 
 1. Select **Enable OAuth Settings**.
 2. Provide the **Callback URL** in the format:&#x20;
-3. {$isntancename}_/oauth/\_callback_
-4. Add the following OAuth scopes:
+
+_{$isntancename}/oauth/\_callback_
+
+1. Add the following OAuth scopes:
 
 * Access the identity URL service (id, profile, email, address, phone)
 * Full access (full)

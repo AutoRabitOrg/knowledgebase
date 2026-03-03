@@ -167,5 +167,9 @@ A message from Salesforce will show to require granted permissions for the user 
 <figure><img src="../../../.gitbook/assets/e6cc1945-e43c-4c68-802b-873dacaa0b2f.png" alt=""><figcaption></figcaption></figure>
 
 Then, the org will be added successfully.
+
+{% hint style="info" %}
+**Important:** This setup is **Salesforce org-specific**. You must repeat this process **for each customer Salesforce org** you want to connect, since the External Client App is created inside (and scoped to) that org and produces org-specific credentials.
+{% endhint %}
 {% endstep %}
 {% endstepper %}

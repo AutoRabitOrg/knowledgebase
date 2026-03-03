@@ -171,6 +171,10 @@ Then you will be returned and the connection will be saved.
 Click finish and the success message will appear
 
 <figure><img src="../../../.gitbook/assets/5caba430-fb77-494d-a717-1958d333d168.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Important:** This setup is **Salesforce org-specific**. You must repeat this process **for each customer Salesforce org** you want to connect, since the External Client App is created inside (and scoped to) that org and produces org-specific credentials.
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 

@@ -180,5 +180,11 @@ Then, you will be returned to configure the new Analysis, fill up the form.
 Then the analysis with the connection will be added to the list.
 
 <figure><img src="../../../.gitbook/assets/12a84570-c4ba-4104-bbd0-9e6a9ddd4c98.png" alt=""><figcaption></figcaption></figure>
+
+
+
+{% hint style="info" %}
+**Important:** This setup is **Salesforce org-specific**. You must repeat this process **for each customer Salesforce org** you want to connect, since the External Client App is created inside (and scoped to) that org and produces org-specific credentials.
+{% endhint %}
 {% endstep %}
 {% endstepper %}

@@ -170,3 +170,7 @@ Then, you will be returned to ARM and the connection will be saved.
 <figure><img src="../../../.gitbook/assets/ca4660be-2228-4c3a-acb0-3ef154c56c91.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
+
+{% hint style="info" %}
+**Important:** This setup is **Salesforce org-specific**. You must repeat this process **for each customer Salesforce org** you want to connect, since the External Client App is created inside (and scoped to) that org and produces org-specific credentials.
+{% endhint %}

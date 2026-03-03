@@ -1,4 +1,4 @@
-# Salesforce Org Management
+# SF Org Management
 
 {% hint style="info" %}
 **Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users. &#x20;
@@ -17,14 +17,14 @@ The **Salesforce Org Management** page shows information about:
 5.  User Permissions assigned to your Salesforce org\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.14.29 PM.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.14.29 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Salesforce Org - Details <a href="#salesforce-org-details" id="salesforce-org-details"></a>
 
 A summary of the Salesforce org registered with ARM is displayed in this area.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The fields displayed in this section are described in the table below:&#x20;
 
@@ -45,33 +45,33 @@ About nCino Package Enabled: Selecting the **Enable nCino package** previously r
 
 **Additional options under 'Salesforce Org - Details' section**<br>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.15.59 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.15.59 PM.png" alt=""><figcaption></figcaption></figure>
 
 1. **`Clone:`** ARM clone functionality creates duplicate records to reduce unnecessary retyping.
 2. **`View/Download Audit Log:`** The audit log shows the recent changes made to your org. It lists the date of the change, who made it, and what the change was. All objects include fields to store the name of the user who created the record and who last modified the record. This provides some basic auditing information. Use the **`Download Audit Log`** button to save the audit log in your local system.
 3.  **`Generate Code Coverage Report:`** This function allows you to run all available Apex Test Classes in the Salesforce org and generate a code coverage report. The code coverage report will be emailed to your registered email id with the CSV file attached. The CSV file will contain the failed test classes that require the user's attention to resolve. Select **`Do you want us to update the test classes?`** checkbox to avoid classes from getting overwritten after deployment.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 4.  Attached is the sample email that will be notified to the user whenever the code coverage is run.
 
     * Code Coverage with a success rate of more than 75%
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (8) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
     * Code Coverage with a failure count of more than 20
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (2).png" alt="" width="341"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (9) (2).png" alt="" width="341"><figcaption></figcaption></figure>
 
     * Code Coverage with failure count of less than 20 (detailed error report will be included in the email body)
 
-    <figure><img src="../../../../.gitbook/assets/image (10) (2).png" alt="" width="301"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (10) (2).png" alt="" width="301"><figcaption></figcaption></figure>
 
 ### Salesforce Org - Mappings <a href="#salesforce-org-mappings" id="salesforce-org-mappings"></a>
 
 Mapping your Salesforce org with your version control system or ALM configured in ARM. This helps create a control during a commit, merge, or deployment action performed on your Salesforce org or version control branch.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.13.05 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.13.05 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Suppose you want to connect your Salesforce Org with Version Control as a **`GIT`**.&#x20;
 
@@ -79,13 +79,13 @@ Suppose you want to connect your Salesforce Org with Version Control as a **`GIT
 2. Select the respective version control **`Repository`** and the **`Branch`** for your GIT.
 3.  Click **`Test Connection`** to authenticate your connection.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 4. Remember to click on **`Save Mappings`** to save the details, or else you need to repeat the above steps.
 
 In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.&#x20;
 
 {% hint style="info" %}
-**Important Note:** To proceed ahead with the below steps, make sure the JIRA is successfully integrated with ARM ([LEARN MORE](../../../arm/integration-and-plugins/jira.md))
+**Important Note:** To proceed ahead with the below steps, make sure the JIRA is successfully integrated with ARM ([LEARN MORE](../../../../../arm/integration-and-plugins/jira.md))
 {% endhint %}
 
 1. Click on the **`Mapping`** button beside JIRA.&#x20;
@@ -93,38 +93,38 @@ In another scenario, let us assume you also like to configure JIRA (ALM tool) wi
 3.  Click on **`Save Mappings`** to save the details, and you're done.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Salesforce Org - Skip Members <a href="#salesforce-org-skip-members" id="salesforce-org-skip-members"></a>
 
 In this section, you can add certain metadata members from your Salesforce org that will be skipped whenever any deployment happens to the org.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.28.02 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.28.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 Suppose you want to skip **Analytics Cloud Integration User**, **Analytics Cloud Security User**, and **Authenticated Website** metadata members for the **`Profile`** metadata type. In such a case, select the **`Type`** as **`Profile`** under and click the **`Fetch Members`** button.
 
 Select the metadata members from the list. These members will be skipped each time the deployment is performed on the above Salesforce org. Click **`OK`**.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (15) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Similarly, you can add different metadata members for various metadata types. Additionally, if you remember certain members you like to add manually, you can enter the **`Enter members manually`** field and click **`Add`**.
 
 The Salesforce Org- Skip Members section shows a summary of the selected metadata members. Click on **`Save Members`** to save the steps configured.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.28.02 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.28.02 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Salesforce Org - Default Apex Test Class Configuration <a href="#salesforce-org-default-apex-test-class-configuration" id="salesforce-org-default-apex-test-class-configuration"></a>
 
-This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md).
+This section is about configuring the default Apex Class for your Salesforce Org. This topic is covered in a separate article. Refer to the article [HERE](../../../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md).
 
-<p align="center"><br><img src="../../../../.gitbook/assets/image (2440).png" alt="" data-size="original"><br></p>
+<p align="center"><br><img src="../../../../../../.gitbook/assets/image (2440).png" alt="" data-size="original"><br></p>
 
 ### Salesforce Org - User Permissions <a href="#salesforce-org-user-permissions" id="salesforce-org-user-permissions"></a>
 
 The list of users allowed to work with your Salesforce Org is available in this section. The administrator may assign permission to its users on various modules of ARM that are feasible with the Salesforce Org.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.37.48 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.37.48 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### How do I update or change the username in all of the Salesforce Orgs specified in AutoRABIT? <a href="#how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au" id="how-would-i-go-about-updating-or-changing-the-username-in-all-of-the-salesforce-orgs-specified-in-au"></a>
 

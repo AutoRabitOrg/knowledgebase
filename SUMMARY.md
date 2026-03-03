@@ -8,6 +8,7 @@
 * [LearningHub](https://learninghub.autorabit.com/)
 * [FAQs](fundamentals/faq/README.md)
   * [General User Definitions](fundamentals/faq/autorabit-platform-user-definitions.md)
+  * [Salesforce ECA Configuration for AutoRABIT](fundamentals/faq/salesforce-eca-configuration-for-autorabit.md)
   * [ARM FAQs](fundamentals/faq/arm-faqs.md)
   * [CodeScan FAQs](fundamentals/faq/codescan-faqs.md)
   * [Vault FAQs](fundamentals/faq/vault-faqs.md)

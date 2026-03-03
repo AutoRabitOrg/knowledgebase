@@ -20,7 +20,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
 
 3. From the Branching Baseline screen, click on New Branching Baseline.
 
-<figure><img src="../../../.gitbook/assets/unknown (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -52,11 +52,11 @@ Components are retrieved and committed from a Salesforce org to a version contro
 **Point to Note:** Branching baseline commits for the SVN repository may take 10 minutes to complete.&#x20;
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/unknown (3).png" alt="" width="500"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (3) (1).png" alt="" width="500"><figcaption></figcaption></figure>
 
 **More Options**
 
-<figure><img src="../../../.gitbook/assets/unknown (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Info: This will give information about the Salesforce Org and the Version Control Repository/ Branch selected for the Branching Baseline operation.&#x20;
 2. Revision: View the revision generated at the Version Control along with the filename status. You can even download the report if required.&#x20;

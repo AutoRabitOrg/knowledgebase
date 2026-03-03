@@ -846,7 +846,7 @@ Component details are listed in their corresponding sections within this documen
 &#x20;**1.  Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:\
-![](<../../../../.gitbook/assets/unknown (1).png>)
+![](<../../../../.gitbook/assets/unknown (1) (3).png>)
 
 This exception was originally introduced to reduce noise and was added to our rule logic before Salesforce introduced USER\_MODE. However, with Salesforce’s updated guidance requiring all database operations to consistently enforce permissions, the exemption is no longer valid. Getters can still expose data through bindings, so excluding them would not align with best practices.
 

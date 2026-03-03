@@ -87,7 +87,7 @@ The URL you collected in step 1.
 {% endstep %}
 
 {% step %}
-### Turnment <a href="#arm-4-turnment" id="arm-4-turnment"></a>
+### Flow Enablement <a href="#arm-4-turnment" id="arm-4-turnment"></a>
 
 1. In **Flow Enablement**, select **Enable Authorization Code and Credentials Flow**.
 2. **user credentials are required in the POST body** (Salesforce shows this option when you choose that flow) should be disabled.

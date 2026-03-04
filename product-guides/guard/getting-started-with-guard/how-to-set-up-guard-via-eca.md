@@ -1,4 +1,4 @@
-# How to Set Up Guard via ECA
+# Connecting a Salesforce Org to Guard using local ECA flow
 
 {% hint style="info" %}
 Salesforce has introduced External Client Apps as the new standard for org connections. Learn more [here](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).
@@ -103,5 +103,5 @@ After successful authorization:
 
 * The org is registered.
 * Tokens are securely encrypted and stored.
-* The org becomes available across applicable ARM modules.
+* The org becomes available across applicable Guard modules.
 * The connection status displays as **Connected**.

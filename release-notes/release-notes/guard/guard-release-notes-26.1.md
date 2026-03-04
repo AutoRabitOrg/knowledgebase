@@ -34,7 +34,7 @@ Learn more here:
 
 [Salesforce OAuth External Client App (ECA) Transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition)
 
-[How to Set Up Guard via ECA](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/how-to-set-up-guard-via-eca)
+[Connecting a Salesforce Org to Guard using local ECA flow](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/connecting-a-salesforce-org-to-guard-using-local-eca-flow)
 
 ### Bug Fixes&#x20;
 

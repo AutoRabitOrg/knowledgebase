@@ -69,12 +69,12 @@ In the **`New Merge`** screen and under the **`Prevalidate Merge`** section, sel
 In the **`Deployment Settings`** screen, you can choose the Apex test level to validate the deployment.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt="" width="467"><figcaption></figcaption></figure>
 
 #### During Continuous Integration (CI) Jobs <a href="#during-continuous-integration-ci-jobs" id="during-continuous-integration-ci-jobs"></a>
 
 You can set the Apex test level when creating or editing a CI job in the **New/Edit CI job** screen under the **`Deploy`** section.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="446"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt="" width="446"><figcaption></figcaption></figure>
 
 For more information on Apex unit tests, refer to the [Salesforce Trailhead](https://trailhead.salesforce.com/en/modules/apex_testing/units/apex_testing_intro) module on Apex test level testing.

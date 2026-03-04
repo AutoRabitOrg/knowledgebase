@@ -34,7 +34,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 
     <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Important Notes:
@@ -45,7 +45,7 @@ Important Notes:
 
 * **Time Range** – Specify a period so ARM fetches only revisions in that window.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Additional options in the Build section
 
@@ -76,7 +76,7 @@ Important Notes:
 7. **Prepare Destructive Changes** – Delete unwanted metadata from the destination org before deployment.
 8. **Run Static Analysis Report** – Identify code quality issues before production.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Apex PMD / Checkmarx** – Set criteria such as date range and **Priority**. If the priority threshold is not met, the build is marked unstable.
 

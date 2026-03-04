@@ -7,10 +7,10 @@ Key points:
 
 1. If you have an existing Salesforce org registered, you are using the existing Connected App flow. No action is required at this time, and your analyses will run as expected.
 2. Please note that any new Salesforce org that you wish to register in CodeScan must use the new local ECA flow.
-3. Please note that if your existing Salesforce orgs need to be reattached, or if your tokens expire, your Connected App flow will no longer work, and you will need to re-register your org using the local ECA flow. Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
+3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the local ECA flow. Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
-This is a step-by-step guide on how to implement the ECA solution to establish a new connection with CodeScan.
+This is a step-by-step guide on how to implement the local ECA flow to establish a new connection with CodeScan.
 
 ### 1) Pre-requisite: get your Callback URL (redirect URI) <a href="#id-1-pre-req-get-your-callback-url-redirect-uri" id="id-1-pre-req-get-your-callback-url-redirect-uri"></a>
 
@@ -28,13 +28,13 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 
 1. Login into Salesforce
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-2. In **Salesforce**, go to **Setup**.
-3. In **Quick Find**, search **External Client Apps**.
-4. Open **External Client App Manager** (or the External Client Apps area).
+1. In **Salesforce**, go to **Setup**.
+2. In **Quick Find**, search **External Client Apps**.
+3. Open **External Client App Manager** (or the External Client Apps area).
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **New External Client App**.
 3. Fill in the basics:
@@ -44,7 +44,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
    * **Distribution State**:
      * **Local** (only for this org)
 
-<figure><img src="../../../.gitbook/assets/image (2447).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3) Enable OAuth + set callback URL + scopes <a href="#id-3-enable-oauth--set-callback-url--scopes" id="id-3-enable-oauth--set-callback-url--scopes"></a>
 
@@ -58,7 +58,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
    * Manage user data via Web browsers (web)
    * Perform requests at any time (refresh\_token, offline\_access)
 
-<figure><img src="../../../.gitbook/assets/image (2448).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 4) Flow Enablement <a href="#id-4-turnment" id="id-4-turnment"></a>
 
@@ -87,7 +87,9 @@ When you click the button for Consumer Key and Secret, a code will be sent to th
 
 <figure><img src="../../../.gitbook/assets/image (2451).png" alt=""><figcaption></figcaption></figure>
 
-After receiving the code and verifying in Salesforce, the Consumer Key (ClientID) and Consumer Secret (Client Secret) will be displayed.
+After receiving the code and verifying in Salesforce, the Consumer Key (Client ID) and Consumer Secret (Client Secret) will be displayed:
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Store these values in a safe place and make sure you can access them as needed
@@ -131,15 +133,15 @@ Once the connection is created, go back and add a new Analysis. Please click on 
 
 <figure><img src="../../../.gitbook/assets/image (2456).png" alt=""><figcaption></figcaption></figure>
 
-Once confirmed, the Salesforce login page will be shown. Please login again.
+Once confirmed, the Salesforce login page will be shown. Please log in again.
 
-<figure><img src="../../../.gitbook/assets/image (2457).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 A message from Salesforce will appear. Click "Allow":
 
-<figure><img src="../../../.gitbook/assets/image (2458).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-Then, you will be redirected to configure the new Analysis. Fill in the details below:
+Then, you will be redirected to configure the new Analysis. Fill in the details:
 
 <figure><img src="../../../.gitbook/assets/image (2459).png" alt=""><figcaption></figcaption></figure>
 

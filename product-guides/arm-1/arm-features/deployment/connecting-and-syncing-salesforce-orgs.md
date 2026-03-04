@@ -17,7 +17,7 @@ To perform org synchronization, follow the below steps:
 3. Go to the **`Org Synchronization History`** tab.
 4.  Click on the **`Get Org Differences`** call-to-action button.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  In the **`Org Differences`** dialog box, you will need to:
 
     * Give the process a **`Name`**.
@@ -29,7 +29,7 @@ To perform org synchronization, follow the below steps:
     To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 6.  On the next screen, you can:
 
     * View the metadata list included in both source and target org.

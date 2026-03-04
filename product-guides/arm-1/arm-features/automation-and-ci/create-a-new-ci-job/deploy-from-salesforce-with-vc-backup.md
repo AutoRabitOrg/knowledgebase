@@ -13,7 +13,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Choose the tile: **Deploy from Salesforce with a Version Control backup.**
 
@@ -50,15 +50,15 @@ Under the **Build** section, fill in the below details:
 6. **Generate Code Coverage Report:** This option generates a code overage report. This has info about the apex tests run, the classes covered, and the assertions that have failed.
 7. **Run Static Analysis Report:** This will identify potential software quality issues before code moves to production.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **For ApexPMD** and **Checkmarx**: ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-![](<../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1).png>)<br>
+![](<../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1) (1).png>)<br>
 
 **For CodeScan** and **SonarQube:** Set the criteria for running the [CodeScan](https://www.codescan.io/) or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. This means running for all the apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported Metadata types:** Analysis is performed on all the metadata types that are supported. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 Triggers in the build.
 * **Run on Newly added supported Metadata types:** Analysis is performed only on those components which are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components.
@@ -88,7 +88,7 @@ Auto Commit option allows you to automatically commit the required changes from 
    * **Check-out with the user credentials and commit the changes with actual modified user credentials:** This option fetches all the changes from the Salesforce org and commits the changes with the actually modified user credential.
    * **Configuration for recordTypes picklistValues:** Here you can choose the configuration for the recordTypes picklistValues i.e., either replace or replace all or append. ([Learn More](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values))
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Deploy <a href="#deploy" id="deploy"></a>
 

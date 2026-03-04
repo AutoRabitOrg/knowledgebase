@@ -2,6 +2,17 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
+## Release Notes – Version 26.1.10
+
+**Release Date: 08 March 2026**
+
+#### RecordType Picklist Values Detection Fix #190557
+
+Resolved an issue where newly added `<picklistValues>` in **RecordType metadata** were not detected during **CI Job runs** or **Single Revision deployments** when the file contained a `<description>` node. The delta generation logic has been updated to ensure picklist value changes are correctly identified and included in deployment packages.
+
+**Impacted Areas**\
+Deployments, CI Jobs
+
 ## Release Notes – Version 26.1.9
 
 **Release Date: 01 March 2026**

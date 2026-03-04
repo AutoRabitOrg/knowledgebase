@@ -1,12 +1,22 @@
-# Connection to Salesforce with ECA
+# Connecting a Salesforce Org to CodeScan using local ECA flow
+
+{% hint style="info" %}
+As of release 26.0.4, CodeScan has adopted the External Connect App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.
+
+Key points:
+
+1. If you have an existing Salesforce org registered, you are using the existing Connected App flow. No action is required at this time, and your analyses will run as expected.
+2. Please note that any new Salesforce org that you wish to register in CodeScan must use the new local ECA flow.
+3. Please note that if your existing Salesforce orgs need to be reattached, or if your tokens expire, your Connected App flow will no longer work, and you will need to re-register your org using the local ECA flow. Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
+{% endhint %}
 
 This is a step-by-step guide on how to implement the ECA solution to establish a new connection with CodeScan.
 
-### 1) Pre-req: get your Callback URL (redirect URI) <a href="#id-1-pre-req-get-your-callback-url-redirect-uri" id="id-1-pre-req-get-your-callback-url-redirect-uri"></a>
+### 1) Pre-requisite: get your Callback URL (redirect URI) <a href="#id-1-pre-req-get-your-callback-url-redirect-uri" id="id-1-pre-req-get-your-callback-url-redirect-uri"></a>
 
 For AutoRABIT’s CodeScan ECA setup, you need **the callback URL**
 
-Callback URL is depending on the instance:
+Callback URL depends on the instance:
 
 _{$isntancename}/\_codescan/oauth2/authorize_
 
@@ -50,10 +60,10 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 
 <figure><img src="../../../.gitbook/assets/image (2448).png" alt=""><figcaption></figcaption></figure>
 
-### 4) Turnment <a href="#id-4-turnment" id="id-4-turnment"></a>
+### 4) Flow Enablement <a href="#id-4-turnment" id="id-4-turnment"></a>
 
 1. In **Flow Enablement**, select **Enable Authorization Code and Credentials Flow**.
-2. **user credentials are required in the POST body** (Salesforce shows this option when you choose that flow) should be disabled.
+2. **User credentials are required in the POST body** (Salesforce shows this option when you choose that flow) should be disabled.
 
 <figure><img src="../../../.gitbook/assets/image (2449).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,11 +83,11 @@ In the **Security** section the next options should be enabled:
 
 <figure><img src="../../../.gitbook/assets/image (2450).png" alt=""><figcaption></figcaption></figure>
 
-When you click the button for Consumer Key and Secret a code will be sent to the registered email for the user creating the configuration
+When you click the button for Consumer Key and Secret, a code will be sent to the registered email for the user creating the configuration:
 
 <figure><img src="../../../.gitbook/assets/image (2451).png" alt=""><figcaption></figcaption></figure>
 
-After getting the code and verify in Salesforce the Consumer Key (CliendID) and Consumer Secret (Client Secret) will be displayed.
+After receiving the code and verifying in Salesforce, the Consumer Key (ClientID) and Consumer Secret (Client Secret) will be displayed.
 
 {% hint style="info" %}
 Store these values in a safe place and make sure you can access them as needed
@@ -99,37 +109,37 @@ Once created, the set of values you’ll reference in your CodeScan configuratio
 
 Also, the internal direction is to be clear that **one ECA per customer org** can be used across products (rather than creating one per AR product).
 
-After the configuration in salesforce is complete, and you have obtained the ClientID and Client Secret, we can go to CodeScan to create the connection
+After the configuration in Salesforce is complete, and you have obtained the ClientID and Client Secret, we can go to CodeScan to create the connection.
 
-In Project analysis click on Add Analysis Project
+In Project analysis, click on Add Analysis Project
 
 <figure><img src="../../../.gitbook/assets/image (2452).png" alt=""><figcaption></figcaption></figure>
 
-If no previous connections are found or the required org is not present in the Connection list, a message to go into the Salesforce Connections page is displayed.
+If no previous connections are found or the required org is not present in the Connection list, a message to navigate to the Salesforce Connections page is displayed.
 
 <figure><img src="../../../.gitbook/assets/image (2453).png" alt=""><figcaption></figcaption></figure>
 
-If that is the case, go in the Salesforce Connections page, click on the existing connection or click on the Create connection button
+If that is the case, move the Salesforce Connections page, click on the existing connection, or select the Create connection button
 
 <figure><img src="../../../.gitbook/assets/image (2454).png" alt=""><figcaption></figcaption></figure>
 
-Create the connections filling the required information obtained from Salesforce.
+Create the connection by entering the required information obtained from Salesforce.
 
 <figure><img src="../../../.gitbook/assets/image (2455).png" alt=""><figcaption></figcaption></figure>
 
-Once the connection is created, go back into adding a new Analysis page and click again in Add Analysis Project and select the desired connection.
+Once the connection is created, go back and add a new Analysis. Please click on Add Analysis Project and select the desired connection:
 
 <figure><img src="../../../.gitbook/assets/image (2456).png" alt=""><figcaption></figcaption></figure>
 
-Once the Confirm button is clicked a salesforce login is shown to login with the user we intend to use for the analysis.
+Once confirmed, the Salesforce login page will be shown. Please login again.
 
 <figure><img src="../../../.gitbook/assets/image (2457).png" alt=""><figcaption></figcaption></figure>
 
-A message from Salesforce will show to require granting the permissions for the user to use the scopes we defined in the ECA, Click in Allow
+A message from Salesforce will appear. Click "Allow":
 
 <figure><img src="../../../.gitbook/assets/image (2458).png" alt=""><figcaption></figcaption></figure>
 
-Then, you will be returned to configure the new Analysis, fill up the form.
+Then, you will be redirected to configure the new Analysis. Fill in the details below:
 
 <figure><img src="../../../.gitbook/assets/image (2459).png" alt=""><figcaption></figcaption></figure>
 
@@ -137,3 +147,4 @@ Then the analysis with the connection will be added to the list:
 
 <figure><img src="../../../.gitbook/assets/image (2460).png" alt=""><figcaption></figcaption></figure>
 
+At this point, the setup for local ECA flow has been completed; your Salesforce analyses will now run as expected.

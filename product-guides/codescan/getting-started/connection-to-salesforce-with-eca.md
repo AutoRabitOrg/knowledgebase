@@ -18,7 +18,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 
 1. Login into Salesforce
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In **Salesforce**, go to **Setup**.
 3. In **Quick Find**, search **External Client Apps**.

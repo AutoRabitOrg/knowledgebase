@@ -1,7 +1,7 @@
 # How to Set Up Guard via ECA
 
 {% hint style="info" %}
-Salesforce has introduced External Client Apps as the new standard for org connections. Learn more [here](https://help.salesforce.com/s/articleView?language=en_US\&id=xcloud.external_integrations.htm\&type=5).
+Salesforce has introduced External Client Apps as the new standard for org connections. Learn more [here](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).
 {% endhint %}
 
 Before registering your org in Guard, please complete the following configuration in Salesforce.
@@ -11,7 +11,10 @@ Before registering your org in Guard, please complete the following configuratio
 1. Navigate to **Salesforce Setup**.
 2. Search for **External Client Apps**.
 3. Click **New External Client App**.
-4. Enter the required details.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+4. Enter the required details:
 
 **Basic Information**
 
@@ -26,7 +29,7 @@ Before registering your org in Guard, please complete the following configuratio
 
 _{$isntancename}/oauth/\_callback_
 
-1. Add the following OAuth scopes:
+3. Add the following OAuth scopes:
 
 * Access the identity URL service (id, profile, email, address, phone)
 * Full access (full)
@@ -44,6 +47,8 @@ Enable the following:
 
 * Keep the first 2 options checked
 * **Uncheck**: _Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows_
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Save and Activate**
 

@@ -1254,7 +1254,7 @@
     * [Restoring nCino Features](product-guides/vault/ncino/restoring-ncino-features.md)
 * [Guard](product-guides/guard.md)
   * [Getting Started with Guard](product-guides/guard/getting-started-with-guard/README.md)
-    * [How to Set Up Guard via Connected App](product-guides/guard/getting-started-with-guard/how-to-set-up-guard.md)
+    * [Connecting a Salesforce Org to Guard using Connected Apps flow](product-guides/guard/getting-started-with-guard/how-to-set-up-guard.md)
     * [Connecting a Salesforce Org to Guard using local ECA flow](product-guides/guard/getting-started-with-guard/how-to-set-up-guard-via-eca.md)
     * [User Management](product-guides/guard/getting-started-with-guard/user-management.md)
     * [Integration User](product-guides/guard/integration-user-license.md)

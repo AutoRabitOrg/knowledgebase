@@ -17,7 +17,7 @@
   * [CodeScan FAQs](fundamentals/faq/codescan-faqs.md)
   * [Vault FAQs](fundamentals/faq/vault-faqs.md)
 * [Announcements](fundamentals/announcements/README.md)
-  * [Page 3](fundamentals/announcements/page-3.md)
+  * [Status of AutoRABIT in the Middle East](fundamentals/announcements/status-of-autorabit-in-the-middle-east.md)
   * [Preparing for Salesforce Connected App Usage Restrictions](fundamentals/announcements/preparing-for-salesforce-connected-app-usage-restrictions.md)
   * [Salesforce’s February 5, 2026 DigiCert G2 certificate change – No Impact to AutoRABIT Services](fundamentals/announcements/salesforces-february-5-2026-digicert-g2-certificate-change-no-impact-to-autorabit-services.md)
   * [Salesforce OAuth External Client App (ECA) Transition](fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition.md)

@@ -13,6 +13,18 @@ Resolved an issue where newly added `<picklistValues>` in **RecordType metadata*
 **Impacted Areas**\
 Deployments, CI Jobs
 
+## DataLoader PRO - 26.1.10 Release Notes
+
+**Release Date: 08 March 2026**
+
+#### Processing Rule Migration – Parent-Child Relationship Fix
+
+Resolved an issue where **Processing Rule child records were not created during sandbox migration**, causing all rules to be imported as parent records.
+
+The migration logic has been updated to correctly handle **self-referential parent-child relationships**, ensuring that both parent and associated child rules are migrated as expected.
+
+***
+
 ## Release Notes – Version 26.1.9
 
 **Release Date: 01 March 2026**

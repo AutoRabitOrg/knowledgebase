@@ -37,16 +37,16 @@ There are no New Features in this release.&#x20;
 
 **Description**
 
-To align with Salesforce Spring ’26 security requirements, CodeScan now offers an authentication flow for External Connected Apps (ECA).
+To align with Salesforce Spring ’26 security requirements, CodeScan now offers an authentication flow for External Client Apps (ECA).
 
 What’s changed:
 
-* CodeScan now supports Salesforce’s updated authentication standards for External Connected Apps.
+* CodeScan now supports Salesforce’s updated authentication standards for External Client Apps.
 * Connectivity remains seamless once authentication is configured.
 
 Customer Action Required:
 
-* When adding new Salesforce orgs via External Connected Apps, the following to be provided:
+* When adding new Salesforce orgs via External Client Apps, the following needs to be provided:
 * Client ID
 * Client Secret
 
@@ -57,7 +57,7 @@ What stays the same:
 
 This update ensures continued secure and compliant integration with Salesforce orgs under updated platform security requirements.
 
-For more detailed information, please review to AutoRABIT’s published article “Salesforce OAuth External Client App (ECA) Transition” at [https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition)
+For more detailed information, please review AutoRABIT’s published article “Salesforce OAuth External Client App (ECA) Transition” at [https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition)
 
 ### New Rules
 

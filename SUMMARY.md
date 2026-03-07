@@ -568,6 +568,7 @@
       * [Configure Merge Approval](product-guides/arm/troubleshoot/how-tos/configure-merge-approval.md)
       * [Configure Multi-Proxy](product-guides/arm/troubleshoot/how-tos/configure-multi-proxy.md)
       * [Configure Record Types Picklist Values](product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values.md)
+      * [Ensure Complete Record Type XML Retrieval from Salesforce](product-guides/arm/troubleshoot/how-tos/ensure-complete-record-type-xml-retrieval-from-salesforce.md)
       * [Create API Token](product-guides/arm/troubleshoot/how-tos/create-api-token.md)
       * [Create Users' Credentials](product-guides/arm/troubleshoot/how-tos/create-users-credentials.md)
       * [Default Apex Class Configuration](product-guides/arm/troubleshoot/how-tos/default-apex-class-configuration.md)

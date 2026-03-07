@@ -581,7 +581,7 @@
       * [ARM Known Issues](product-guides/arm/troubleshoot/known-issues-limitations/arm-known-issues.md)
       * [ARM Known Limitations](product-guides/arm/troubleshoot/known-issues-limitations/arm-known-limitations.md)
       * [Salesforce Known Limitations](product-guides/arm/troubleshoot/known-issues-limitations/salesforce-known-limitations.md)
-* [ARM 2.0](product-guides/arm-1/README.md)
+* [ARMOR (New UI)](product-guides/arm-1/README.md)
   * [Getting Started](product-guides/arm-1/getting-started/README.md)
     * [Signing Up with ARM](product-guides/arm-1/getting-started/signing-up-with-arm/README.md)
       * [Supported Browsers](product-guides/arm-1/getting-started/signing-up-with-arm/browser-support.md)

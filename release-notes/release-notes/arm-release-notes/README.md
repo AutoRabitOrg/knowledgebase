@@ -13,7 +13,9 @@ Resolved an issue where newly added `<picklistValues>` in **RecordType metadata*
 **Impacted Areas**\
 Deployments, CI Jobs
 
-## DataLoader PRO - 26.1.10 Release Notes
+***
+
+## DataLoader Pro - 26.1.10 Release Notes
 
 **Release Date: 08 March 2026**
 

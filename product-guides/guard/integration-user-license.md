@@ -46,14 +46,6 @@ A Permission Set defines specific access to Salesforce objects and features. Onc
 | Public File Exposure                              | No specific permissions required                                                                                 | Salesforce applies the following access rules: [https://developer.salesforce.com/docs/atlas.en-us.260.0.object\_reference.meta/object\_reference/sforce\_api\_objects\_contentdistribution.htm](https://developer.salesforce.com/docs/atlas.en-us.260.0.object_reference.meta/object_reference/sforce_api_objects_contentdistribution.htm)                                                                         |
 | Connecting a Salesforce org to Guard              | Approve Uninstalled Connected Apps                                                                               | <p>The very first time an admin connects to the AutoRABIT Connected App, this permission is required so that Salesforce does not block the connection.</p><p>Once the connection is established, the admin should formally install the app and grant access through profile and permission sets. Future users will not need this permission.</p><p>An alternative is to use the AutoRABIT External Client App.</p> |
 
-* Modify All Data
-* View Health Check
-* Customize Application
-* Manage Password Policies
-* Assign Permission Sets
-* Manage Users
-* Approve Uninstalled Connected Apps
-
 {% hint style="info" %}
 The Integration User requires elevated permissions to allow Guard to access and evaluate Salesforce configuration, security settings, and user access controls. These permissions are necessary for the application to function as intended and provide full visibility into the org’s security and configuration posture.
 {% endhint %}

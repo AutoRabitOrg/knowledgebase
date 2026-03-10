@@ -4,18 +4,6 @@ description: Your Source of Truth for All Things AutoRABIT
 
 # Welcome to the Knowledge Base
 
-{% hint style="info" icon="info" %}
-_Status of AutoRABIT in the Middle East - Update: 5 March, 2026_\
-\
-&#xNAN;_&#x41;WS has indicated that services in this region continue to experience disruption, which is impacting certain AutoRABIT services. Our teams continue to actively monitor the situation and remain engaged with AWS as they work toward full service restoration._\
-\
-&#xNAN;_&#x41;s AWS services have begun to recover, we have successfully restored one impacted AutoRABIT Vault instance (ME106). We have validated that the instance is functioning normally, and are now coordinating directly with affected customers to confirm operational status._\
-\
-&#xNAN;_&#x41;t this time, service restoration for other impacted environments remains dependent on AWS recovery efforts. We will continue to monitor developments closely and will share additional updates as more information becomes available._
-
-Please refer to our [announcements](fundamentals/announcements/page-3.md) post for past context.&#x20;
-{% endhint %}
-
 **The Knowledge Base** is your centralized, always-evolving source for technical documentation, product guidance, release notes, FAQs, and operational support across the AutoRABIT ecosystem. Whether you’re leading enterprise-scale transformation or optimizing daily flows, this is where insight meets action.
 
 #### Built for Precision at Scale

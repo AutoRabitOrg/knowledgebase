@@ -2,6 +2,120 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
+## Release Notes – Version 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+
+**Release Date:** Mar 15, 2026
+
+***
+
+#### Backup to Version Control – Credential Refresh Fix <a href="#backup-to-version-control-credential-refresh-fix" id="backup-to-version-control-credential-refresh-fix"></a>
+
+Fixed an issue in **CI → Jobs → Backup to Version Control** where changing the selected repository or branch did not refresh the associated credentials. The system previously continued using credentials from the initial selection, which could lead to authentication failures or incorrect commit identities. The credential refresh logic has been corrected to ensure the appropriate credentials are loaded whenever the repository or branch selection changes.
+
+**Impacted Areas**\
+CI → Jobs → Backup to Version Control
+
+***
+
+#### EZ-Commit – Retrieval Logs Button Fix <a href="#ez-commit-retrieval-logs-button-fix" id="ez-commit-retrieval-logs-button-fix"></a>
+
+Fixed an issue in **Version Control → EZ-Commit (Review Artifact screen)** where the **Retrieval Logs** button became unresponsive after the first click. Users can now open the logs panel multiple times without interruption, ensuring smooth review of retrieval logs during the commit process.
+
+**Impacted Areas**\
+EZ-Commit (Version Control) → Retrieval Logs Button
+
+***
+
+#### Mail Extension Placeholder & Validation Fix – New UI <a href="#mail-extension-placeholder-and-validation-fix-new-ui" id="mail-extension-placeholder-and-validation-fix-new-ui"></a>
+
+Fixed an issue in the **New UI → My Account → Mail Extensions** where the placeholder text in the **Extension Name field** suggested using an “@” symbol even though the system does not allow it. The placeholder and validation message have been updated to display valid examples and ensure consistency with the accepted input format.
+
+**Impacted Areas**\
+New UI → My Account → Mail Extensions
+
+***
+
+#### Env Provisioning – Unsupported Metadata Template Execution Fix <a href="#env-provisioning-unsupported-metadata-template-execution-fix" id="env-provisioning-unsupported-metadata-template-execution-fix"></a>
+
+Fixed an issue in **Env Provisioning** where executing the **“DisableTeams” template (Environment Provisioning Unsupported Metadata)** returned a **Succeeded** status, but the changes were not reflected in the target Salesforce Org. The template creation logic has been updated to ensure the configuration is properly processed so that all expected settings are applied after execution.
+
+**Impacted Areas**\
+Env Provisioning
+
+***
+
+#### Environment Provisioning History – Pagination Fix <a href="#environment-provisioning-history-pagination-fix" id="environment-provisioning-history-pagination-fix"></a>
+
+Fixed an issue in the **Environment Provisioning History** page where the grid displayed only **10 records** even when a higher page size was selected. Pagination has been corrected to ensure the grid displays the number of records based on the selected page size.
+
+**Impacted Areas**\
+Environment Provisioning History Page
+
+***
+
+#### Environment Provisioning – Duplicate Template Name Validation <a href="#environment-provisioning-duplicate-template-name-validation" id="environment-provisioning-duplicate-template-name-validation"></a>
+
+Fixed an issue in **New UI → Environment Provisioning → Templates** where the system allowed creation of templates with duplicate names without any validation. A validation check has been added to prevent duplicate template names and ensure users receive an appropriate error message when attempting to create one.
+
+**Impacted Areas**\
+Create New Environment Provisioning Template
+
+***
+
+#### #200317 – CI Jobs: Email Notification After Quick Deploy <a href="#id-200317-ci-jobs-email-notification-after-quick-deploy" id="id-200317-ci-jobs-email-notification-after-quick-deploy"></a>
+
+Enhanced **CI Job notifications** to support sending report emails after **Quick Deploy** execution. Previously, email notifications were sent only after the **Validate** stage. With this update, users will also receive CI Job report emails once the **Quick Deploy** process is completed.
+
+**Impacted Areas**\
+CI Jobs with notification enabled and Quick Deploy applicable
+
+***
+
+#### #201002 – Revision Range Deployment Commit Selection Fix <a href="#id-201002-revision-range-deployment-commit-selection-fix" id="id-201002-revision-range-deployment-commit-selection-fix"></a>
+
+Fixed an issue in **Deployment → Revision Range Deployments** where users were unable to select commits from the **first page of the “To” revision list** during a revision-range deployment. The UI logic has been corrected to allow proper selection of commits from the displayed list.
+
+**Impacted Areas**\
+Deployment → Revision Range Deployments
+
+***
+
+#### #198567 – Quick Merge Continue Button Fix (New UI) <a href="#id-198567-quick-merge-continue-button-fix-new-ui" id="id-198567-quick-merge-continue-button-fix-new-ui"></a>
+
+Fixed an issue in **New UI → Version Control → Commit History** where the **Continue** button in **Quick Merge** was disabled immediately after performing a new **EZ-Commit**. Users can now proceed with Quick Merge without needing to exit and reopen the page.
+
+**Impacted Areas**\
+Version Control → Commit History → Quick Merge
+
+***
+
+#### #202013 – CheckmarxOne Project Creation During EZ-Merge <a href="#id-202013-checkmarxone-project-creation-during-ez-merge" id="id-202013-checkmarxone-project-creation-during-ez-merge"></a>
+
+Resolved an issue where **AutoRABIT EZ-Merge operations with CheckmarxOne SCA validation** created a **new project in CheckmarxOne for every execution**. With the fix, scans executed during EZ-Merge will use a **single common project** instead of creating multiple projects.
+
+To apply this behavior, enable the feature flag **ENABLE\_CHECKMARK\_COMMON\_PROJECT\_EZMERGE**, which ensures all EZ-Merge scans are executed under the project **“AR-Merge.”**
+
+**Impacted Areas**\
+EZ-Merge with CheckmarxOne SCA Validation
+
+***
+
+#### #203270 – CI Job Validate Only Execution Fix <a href="#id-203270-ci-job-validate-only-execution-fix" id="id-203270-ci-job-validate-only-execution-fix"></a>
+
+Fixed an issue in **CI Jobs** where a queued job triggered with the **Validate Only** option executed as a **regular deployment**instead of validation. The issue occurred when multiple jobs were triggered and one entered the queue. The logic has been corrected to ensure queued jobs retain the **Validate Only** configuration and execute accordingly.
+
+**Impacted Areas**\
+CI Jobs with Deployment (Validate Only and Real Deployment) option
+
+***
+
+#### GitHub OAuth Authentication Support for Repository Integration <a href="#github-oauth-authentication-support-for-repository-integration" id="github-oauth-authentication-support-for-repository-integration"></a>
+
+Introduced **OAuth-based authentication support for GitHub repository integration** in ARM alongside the existing **Personal Access Token (PAT)** method. During repository registration, users can select **OAuth as the connection type**, provide the required client ID and client Secret, and authorize access through the GitHub OAuth flow. Upon successful authorization, the repository is securely registered and connected in ARM.
+
+**Impacted Areas**\
+Version Control → Repository Registration (GitHub OAuth)
+
 ## Release Notes – Version 26.1.10
 
 **Release Date: 08 March 2026**

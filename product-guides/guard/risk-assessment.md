@@ -1,6 +1,6 @@
 # Risk Assessment
 
-## Overview
+### Overview
 
 The **Risk Assessment** feature provides a comprehensive overview of your Salesforce organization’s security posture. It analyzes your orgs, checks security settings, and identifies areas of risk—helping you stay compliant and mitigate potential vulnerabilities.
 

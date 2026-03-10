@@ -1,6 +1,6 @@
 # Permissions Explorer
 
-## Overview
+### Overview
 
 The **Permission Explorer** feature provides deep visibility into Salesforce user access. It helps administrators quickly identify sensitive or overprivileged permissions and understand exactly how those permissions are granted. With two modes—**User Permissions** and **Object Access**—Permission Explorer makes it easier to strengthen security, maintain compliance, and prevent unauthorized access.
 

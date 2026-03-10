@@ -1,8 +1,10 @@
 # API Security
 
-New **API Security** feature has been introduced in Guard to help customers identify and mitigate risks from third-party apps connected to Salesforce. As attacks on Salesforce orgs increase, including from unverified or over-permissive apps, this feature gives teams visibility into which apps are connected to your Salesforce, how they’re being used, and whether they pose a risk.
+### Overview
 
-**API Security** tab is located under the **Risk** section. From here, users can inspect API activity for all Salesforce orgs registered in Guard:
+The **API Security** feature has been introduced in Guard to help customers identify and mitigate risks from third-party apps connected to Salesforce. As attacks on Salesforce orgs increase, including from unverified or over-permissive apps, this feature gives teams visibility into which apps are connected to your Salesforce, how they’re being used, and whether they pose a risk.
+
+The **API Security** tab is located under the **Risk** section. From here, users can inspect API activity for all Salesforce orgs registered in Guard:
 
 <figure><img src="../../.gitbook/assets/image (2051).png" alt=""><figcaption><p>API Security Dashboard</p></figcaption></figure>
 

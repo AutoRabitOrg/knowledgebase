@@ -20,7 +20,7 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 ### Configuring Callout URL <a href="#configuring-callout-url" id="configuring-callout-url"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **Configure Callout URL** checkbox under the **Callout URL** section.
 2. Choose the **Callout Type**:

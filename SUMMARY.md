@@ -1220,6 +1220,8 @@
       * [GDPR - Secure and Comply](product-guides/vault/vault-features/gdpr-secure-and-comply/README.md)
         * [Right to Be Forgotten Request](product-guides/vault/vault-features/gdpr-secure-and-comply/right-to-be-forgotten-request.md)
       * [PCI DSS](product-guides/vault/vault-features/compliance/pci-dss.md)
+    * [Search & Compare](product-guides/vault/vault-features/search-and-compare/README.md)
+      * [Search & Compare](product-guides/vault/vault-features/search-and-compare/search-and-compare.md)
     * [Live Data Masking](product-guides/vault/vault-features/live-data-masking.md)
     * [Replicate](product-guides/vault/vault-features/replicate/README.md)
       * [Job Configuration](product-guides/vault/vault-features/replicate/job-configuration.md)

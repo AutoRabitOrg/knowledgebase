@@ -13,7 +13,7 @@ Convert and package your version control files to [Salesforce Metadata](https://
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New >** [**New CI Job**](../../../../arm/arm-features/automation-and-ci/ci-job-history.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 1. Choose the tile: **Package from** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/).
 
@@ -76,15 +76,15 @@ Important Notes:
 7. **Prepare Destructive Changes** – Delete unwanted metadata from the destination org before deployment.
 8. **Run Static Analysis Report** – Identify code quality issues before production.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Apex PMD / Checkmarx** – Set criteria such as date range and **Priority**. If the priority threshold is not met, the build is marked unstable.
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **CodeScan / SonarQube** – Choose to scan all metadata or only newly added components, then set a **Priority**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 * **Run on newly added supported metadata types** – Scan only newly added components.

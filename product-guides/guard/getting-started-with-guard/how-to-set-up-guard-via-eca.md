@@ -12,7 +12,7 @@ Before registering your org in Guard, please complete the following configuratio
 2. Search for **External Client Apps**.
 3. Click **New External Client App**.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter the required details:
 
@@ -48,7 +48,7 @@ Enable the following:
 * Keep the first 2 options checked
 * **Uncheck**: _Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows_
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Save and Activate**
 

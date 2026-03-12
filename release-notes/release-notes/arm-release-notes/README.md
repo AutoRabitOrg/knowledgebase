@@ -236,9 +236,9 @@ The save logic has been corrected to ensure the Org association remains intact a
 
 ***
 
-## Data Loader PRO - 26.1.9 Release Notes
+## Data Loader Pro - 26.1.9 Release Notes
 
-**Release Date:** 01 March, 2026
+**Release Date: 01 March 2026**
 
 #### Hierarchical Object Handling – Parent Resolution Consistency
 
@@ -855,27 +855,27 @@ AutoRABIT now allows downstream CI jobs to trigger even when a parent job comple
 **Expanded Agentforce metadata support**\
 ARM now supports a wider set of Agentforce metadata types across CI, Deployments, and Version Control flows.
 
-| **Agentforce Metadata Type**                         | **Supported** | **Verified** |
-| ---------------------------------------------------- | ------------- | ------------ |
-| GenAiPromptTemplate                                  | Yes           | No           |
-| GenAiPromptTemplateActv                              | Yes           | No           |
-| GenAiPlugin                                          | Yes           | Yes          |
-| GenAiFunction                                        | Yes           | Yes          |
-| GenAiPlanner (API 60 to 63)                          | Yes           | Yes          |
-| ​GenAiPlannerBundle (API 64 and Above)               | Yes           | Yes          |
-| Bot                                                  | Yes           | Yes          |
-| BotVersion                                           | Yes           | Yes          |
-| Custom Apex invoked by agents (ApexClass)            | Yes           | Yes          |
-| Flows used by agents (Flow)                          | Yes           | Yes          |
-| Permission Sets assigned to the Agent User           | Yes           | No           |
-| CustomSite                                           | Yes           | Yes          |
-| Network                                              | Yes           | Yes          |
-| DigitalExperienceBundle                              | Yes           | Yes          |
-| EmbeddedServiceConfig                                | Yes           | Yes          |
-| MessagingChannel                                     | Yes           | Yes          |
-| Flow (specifically the Omnichannel flow for routing) | Yes           | Yes          |
-| Queue                                                | Yes           | Yes          |
-| QueueRoutingConfig                                   | Yes           | Yes          |
+| **Agentforce Metadata Type**                         | **Supported** |
+| ---------------------------------------------------- | ------------- |
+| GenAiPromptTemplate                                  | Yes           |
+| GenAiPromptTemplateActv                              | Yes           |
+| GenAiPlugin                                          | Yes           |
+| GenAiFunction                                        | Yes           |
+| GenAiPlanner (API 60 to 63)                          | Yes           |
+| ​GenAiPlannerBundle (API 64 and Above)               | Yes           |
+| Bot                                                  | Yes           |
+| BotVersion                                           | Yes           |
+| Custom Apex invoked by agents (ApexClass)            | Yes           |
+| Flows used by agents (Flow)                          | Yes           |
+| Permission Sets assigned to the Agent User           | Yes           |
+| CustomSite                                           | Yes           |
+| Network                                              | Yes           |
+| DigitalExperienceBundle                              | Yes           |
+| EmbeddedServiceConfig                                | Yes           |
+| MessagingChannel                                     | Yes           |
+| Flow (specifically the Omnichannel flow for routing) | Yes           |
+| Queue                                                | Yes           |
+| QueueRoutingConfig                                   | Yes           |
 
 \
 **Rollback failure fix for DX CI Jobs involving consecutive RecordTypes and StandardValueSets**\

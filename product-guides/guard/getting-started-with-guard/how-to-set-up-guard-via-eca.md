@@ -31,7 +31,7 @@ _{$_&#x69;nstanc&#x65;_}/oauth/\_callback_
 
 For example:
 
-_https://yourguard.autorabit.com//oauth/\_callback_
+_https://yourguard.autorabit.com/oauth/\_callback_
 
 3. Add the following OAuth scopes:
 

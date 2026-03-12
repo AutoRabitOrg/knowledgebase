@@ -27,7 +27,11 @@ Before registering your org in Guard, please complete the following configuratio
 1. Select **Enable OAuth Settings**.
 2. Provide the **Callback URL** in the format:&#x20;
 
-_{$isntancename}/oauth/\_callback_
+_{$_&#x69;nstanc&#x65;_}/oauth/\_callback_
+
+For example:
+
+_https://yourguard.autorabit.com//oauth/\_callback_
 
 3. Add the following OAuth scopes:
 

@@ -160,6 +160,7 @@
       * [Bitbucket](product-guides/arm/registration/version-control-repository/bitbucket.md)
       * [GIT Integration](product-guides/arm/registration/version-control-repository/git-integration/README.md)
         * [GIT Tag](product-guides/arm/registration/version-control-repository/git-integration/git-tag.md)
+        * [OAuth Support for GitHub](product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github.md)
       * [SVN](product-guides/arm/registration/version-control-repository/svn.md)
       * [TFS](product-guides/arm/registration/version-control-repository/tfs.md)
   * [ARM Features](product-guides/arm/arm-features/README.md)

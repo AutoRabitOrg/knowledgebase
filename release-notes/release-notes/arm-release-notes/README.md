@@ -116,6 +116,10 @@ Introduced **OAuth-based authentication support for GitHub repository integratio
 **Impacted Areas**\
 Version Control → Repository Registration (GitHub OAuth)
 
+Please use the link below for step-by-step guidance to register a GitHub repository using OAuth
+
+[https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github](https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github)
+
 ## Release Notes – Version 26.1.10
 
 **Release Date: 08 March 2026**

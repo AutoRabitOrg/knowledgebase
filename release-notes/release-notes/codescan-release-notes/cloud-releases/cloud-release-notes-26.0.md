@@ -157,7 +157,7 @@ Concluding that the CSV export now accurately reflects the issues, including clo
 
 <figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-### New Rules
+### New Rule
 
 **1.     New Rule: “Locale Formats in API Versions pre-v45.0” {Rule ID: sf:LocaleInOldApi}**
 
@@ -290,9 +290,9 @@ Validated the fix for the Sf:testclassnaming rule by verifying the following sce
 
 <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-### Fixes
+### Fix
 
-1\.       Set default value to “false” for “is\_archived” column in organizations table
+**1.       Set default value to “false” for “is\_archived” column in organizations table.**
 
 **Summary of Issue**: Several customers were reporting an issue where users were unable to log in via SAML after their instance was upgraded to 26.0.3\
 \

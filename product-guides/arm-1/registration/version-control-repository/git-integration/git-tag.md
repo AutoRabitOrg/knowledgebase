@@ -13,7 +13,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
 3.  Select your [Version Control ](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)Repository under **Repository List.**\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Go to the **Tags** tab and click on the **Create** button.\
     <br>
 
@@ -45,7 +45,7 @@ Once the merge process is completed and pushed to the remote branch, AutoRABIT w
 
 1.  From the top navigation pane, navigate to **Create New > New EZ-Merge.**<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (12) (1) (1).png" alt="" width="310"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="" width="310"><figcaption></figcaption></figure>
 2.  On the New Merge screen, select your **GIT Version Control Repository, Base Branch,** and the **Target Branch**.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (14) (1) (3).png" alt=""><figcaption></figcaption></figure>

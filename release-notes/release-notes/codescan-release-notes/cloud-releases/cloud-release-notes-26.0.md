@@ -14,6 +14,300 @@ Key points:
 3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca).  Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
+***
+
+## CodeScan Release 26.0.5
+
+**Release Date: 15 March 2026**
+
+### Summary
+
+CodeScan 26.0.5 is comprised of the following 8 components:
+
+* 4 Application Enhancements
+* 1 New Rule
+* 2 Rule Enhancements
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### Application Enhancements
+
+**1.     CSV ISSUE EXPORT – Added Issue Status User**
+
+**Description**
+
+Enhanced the Issues CSV export to include a separate column called “**Status Marked By**” that shows the user name of the person who marked the current status of an issue, so that audit/user can clearly understand who last set or changed the issue’s status when reviewing exported data.
+
+**Hypothesis**
+
+If the CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing issues outside the platform, reducing ambiguity about ownership and status changes.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**Value / Purpose**
+
+* Improves transparency and auditability of issue status changes in exported reports.
+* Enables teams and managers to identify responsibility and follow up more effectively.
+
+
+
+Verified the following scenarios and confirmed that all are working as expected.
+
+* Verified with multiple users, users getting updated as expected.
+* Verified with root user - status marked by updated as administrator.
+* Verified by removing org user, name is still shown in CSV - working as expected.
+* Verified with deactivated user, name is still shown in CSV - working as expected.
+* Verified with deleted user, the status marked by field is empty.
+
+
+
+**2.     CSV HOTSPOT EXPORT – Added Hotspot Status User**
+
+**Description**
+
+Enhanced the Security Hotspot CSV export to include a separate column called “**Status Marked By**” that shows the user name of the person who marked the current status of an hotspot, so that audit/user can clearly understand who last set or changed the hotspot’s status when reviewing exported data.
+
+**Hypothesis**
+
+If the Hotspot CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing hotspots outside the platform, reducing ambiguity about ownership and status changes.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+**Value / Purpose**
+
+* Improves transparency and auditability of hotspot status changes in exported reports.
+* Enables teams and managers to identify responsibility and follow up more effectively.&#x20;
+
+
+
+Verified the following scenarios are all working as expected.
+
+* Verified with multiple users, users getting updated as expected.
+* Verified with root user - status marked by updated as administrator.
+* Verified by removing org user, name is still shown in CSV - working as expected.
+* Verified with deactivated user, name is still shown in CSV - working as expected.
+* Verified with deleted user, the status marked by field is empty.
+
+
+
+* Issues:
+  * Also, verified that if user clicked on export after selecting the project and branch - only those security hotspots that are available for review are getting download (not the reviewed ones)
+  * Also, if the user selects only certain reviewed options, all the reviewed getting downloaded.
+
+
+
+**3.     Enhanced CSV Export with Detailed Security Hotspot Statuses**
+
+**Description**
+
+Enhanced the CSV export for Security Hotspots to include the full set of hotspot statuses—**TO\_REVIEW, SAFE, FIXED, EXCEPTION, ACKNOWLEDGED**—so that the exported data accurately reflects the current review and remediation state instead of the simplified **To\_Review** and **Reviewed** statuses.
+
+**Hypothesis**
+
+If the CSV Security Hotspots export includes granular and accurate hotspot statuses, users will be able to perform better reporting, auditing, and compliance tracking without relying on the UI or manual interpretation.
+
+**Value / Purpose**
+
+* Provides **accurate and actionable data** in exports for security reviews and audits.
+* Enables **better integration** with external reporting, GRC, and compliance tools.&#x20;
+
+Validated the CSV Security Hotspot Export with Detailed Statuses; below is the validation summary of the Exports:
+
+* Verified CSV includes each of the listed statuses when present in results.
+* Verified status values are exported accurately.
+* Verified export remains consistent with UI status for the same hotspot set.
+* Confirmed export works for mixed-status datasets and filters/sorting do not alter status values.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**4.     Added Closed Issue Statuses to CSV Reports**
+
+**Description**
+
+Currently, CSV reports do not clearly distinguish closed issue statuses, such as **Closed** and **Removed**. As such, we have enhanced the CSV export functionality to include these closed statuses explicitly in the Status column. The exported CSV now accurately reflects the latest lifecycle state of each issue, including closed states, ensuring consistency with what users see in the UI.
+
+**Hypothesis:**
+
+If CSV reports include detailed closed statuses (Closed, Removed ), users will gain better visibility into issue resolution outcomes, enabling more accurate reporting, compliance tracking, and stakeholder communication. This will reduce manual effort in categorizing closed issues after export.
+
+**Value / Purpose:**
+
+* Improves reporting accuracy and transparency.
+* Supports audit and compliance requirements with clear issue disposition tracking.
+
+The enhancement for including closed issue statuses in CSV reports has been validated successfully
+
+1. **Status: FIXED**
+   * When an issue status is manually changed to **FIXED** in the Issues view, the exported CSV report correctly displays the status as **FIXED** in the **Status** column.
+2. **Status: CLOSED**
+   * When the source code is modified to resolve the issue and a **new analysis is executed**, the issue is automatically transitioned to **CLOSED**.
+   * The exported CSV report correctly reflects the status as **CLOSED**.
+3. **Status: REMOVED**
+   * When the **Quality Profile is modified** such that the rule generating the issue is removed or disabled, and a new **analysis is executed**, the issue status changes to **REMOVED**.
+   * The exported CSV report correctly displays **REMOVED** in the **Status** column.
+
+Concluding that the CSV export now accurately reflects the issues, including closed statuses (**FIXED, CLOSED, REMOVED**), ensuring consistency with the UI.
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+### New Rules
+
+**1.     New Rule: “Locale Formats in API Versions pre-v45.0” {Rule ID: sf:LocaleInOldApi}**
+
+**Description**
+
+This rule finds locale methods in Apex classes with API versions below v45.0.  Locale formats before Salesforce API v45.0 default to JDK format. Now, locale formats default to ICU. It is recommended to update all components using API versions prior to v45.0 or use locale-neutral methods.
+
+Failure to upgrade to API v45.0 or above could result in date and time formatting issues, affecting user experience and functionality.
+
+* **Issue Type**: Bug
+* **Severity**: Major
+* **Message**: Avoid Using JDK Locale Formats
+* **Tags**: retired
+* **Remediation**: 30 minutes
+
+Please also refer to the following documentation on Salesforce Help:&#x20;
+
+[JDK Locale Format Retirement and the Enable ICU Locale Formats Salesforce Release Update](https://help.salesforce.com/s/articleView?id=000380618\&type=1) –
+
+[Use Locale-Neutral Methods in Code](https://help.salesforce.com/s/articleView?id=xcloud.admin_locales_code_methods.htm\&type=5)
+
+<mark style="color:red;">NOTE: This new rule is also associated with our existing rule, “Adopt the ICU Locale Formats instead of JDK locale formats”</mark> {Rule ID: sfmeta:ICULocaleFormats}
+
+The rule sf:LocaleInOldApi was validated for the following methods:
+
+* Date.format
+* Datetime.format
+* Date.parse
+* Datetime.parse
+* Date.toStartOfWeek
+
+&#x20;
+
+1. **Positive Validation (API Version < 45.0)**
+   * Created Apex classes with API version 44.0 and used the above locale-dependent methods.
+   * These cases are expected to be flagged since API versions prior to v45.0 rely on JDK locale formatting.
+2. **Negative Validation (API Version ≥ 45.0)**
+   * Created Apex classes with API version 45.0 and above using the same methods.
+   * These cases are not expected to be flagged, since API v45.0+ uses ICU locale formatting by default.
+3. **Verification Outcome**
+   * The rule behavior was validated against the defined conditions.
+   * Classes with API versions prior to v45.0 and using locale-dependent methods are considered for detection, while classes with API v45.0+ are treated as compliant.
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+### Rule Enhancements
+
+1\.       Enhanced data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
+
+**Description**
+
+**Scenario 1: Sanitized parameter still flagged**
+
+* When a variable comes from a method parameter, the rule sometimes reports SOQL Injection **even if the variable is sanitized or overwritten later**.
+* This happens because the rule uses **DataFlowNode**, which tracks where the variable originally came from.
+
+**Scenario 2: “At least once” assignment not detected**
+
+* DataFlowNode can detect whether an assignment is inside a condition.
+* However, in some cases assignments happen **inside loops**, where the variable is still assigned at least once.
+* DataFlowNode wasn’t originally designed to reliably confirm this loop behavior.
+* Because of this limitation, these cases could not be properly handled and would likely result in producing false positives.
+
+We remediated these issues with this fix, greatly improving the value of the data flow logic in tracing the vulnerability from sink to source.
+
+Verified the following scenarios and confirmed that the are all working as expected.
+
+* Verified error duplications are thrown - resolved (earlier)
+* Verified whether a parameter is sanitized using escapeSingleQuotes but still flagged or not - after sanitized, no issue was thrown.
+
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+* Verified when a variable is reassigned multiple times - the issue will be thrown based on the last assigned value.
+
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+* Verified when a variable is sanitized first and later overwritten with random function. - error thrown.
+* In a condition, Verified when a variable is sanitized first and later overwritten with random function. - error thrown.
+
+<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+* Verified when a variable is assigned inside a loop before being used in the query. - If loop has non sanitized parameters then issue is thrown
+* Verified when a user input flows through multiple helper methods before reaching the query. - trace throws error up to 5 params.
+
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+**2.     Added a new parameter to the rule “Test Class Names Should Include Test”**{Rule ID: sf:SOQLInjection}
+
+**Description**
+
+Several customers had reported that the CodeScan rule “Sf:testclassnaming” was producing false positives for classes containing “test”.
+
+We verified the rule expression, and confirmed that we did not support the naming pattern PR\_TestClassName.
+
+Instead, the rule supported only the following naming convention:\
+TestClassName - prefix\
+ClassNameTest - suffix\
+ClassName\_Test - Underscore
+
+As such, we enhanced this rule by adding a new parameter to Sf:testclassnaming to define allowed naming conventions.
+
+The parameter is called allowedPatterns.
+
+The description of the parameter is:
+
+“A comma separated string of regular expressions matching allowed naming conventions for test classes.”
+
+The default of this parameter is to use the preexisting current functionality of the rule.
+
+Further, we decided that the parameter field should never be empty.
+
+The value of this parameter is providing customers with the flexibility to add any patterns that they allow as acceptable naming conventions without restriction to our logic.
+
+
+
+Validated the fix for the Sf:testclassnaming rule by verifying the following scenarios:
+
+* Able to see the configurable parameter allowedPatterns (comma-separated regex list) to support custom naming conventions.
+* Default behavior remains unchanged.
+* Validation ensures parameter cannot be empty.
+* Particular Reg expressions given in the allowed parameters skips the violations Accordingly.
+
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+1\.       Set default value to “false” for “is\_archived” column in organizations table
+
+**Summary of Issue**: Several customers were reporting an issue where users were unable to log in via SAML after their instance was upgraded to 26.0.3\
+\
+**Cause of Issue**: During our analysis, we identified that, as part of the upgrade process, a database field was unintentionally set to NULL instead of the defined default value. This disrupted the login via SAML.
+
+**What was done to resolve**: A query was run to update the Null value to the default value.
+
+**What we did to prevent it from happening again**: We have documented the corrective measures required to prevent this scenario in future upgrades. These improvements will be incorporated in an upcoming release to further strengthen the reliability of the upgrade process
+
+Verified the database for the orgs table, confirming that the “is\_archived field” is not NULL, and that DBAs are able to see the value set as **false** for all organizations in the environment.
+
+Also verified that users who login with SAML are unblocked, which we confirmed by creating a new SAML connection on a new organization. All users are able to log in successfully without any issues.
+
+***
+
 ## CodeScan Release 26.0.4
 
 **Release Date: 01 March 2026**
@@ -79,7 +373,7 @@ There are no Rule Deprecations in this release.
 
 We identified an issue in CodeScan where the Data Flow Trace for a SOQL injection rule where the trace repeatedly shows the same assignment instead of a clean, non-duplicated trace.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We determined the root cause of the issue and updated the rule logic accordingly.  With this fix, this issue is now fully remediated.Top of Form
 
@@ -88,7 +382,7 @@ Verified the following scenarios and report that the rule is now working as expe
 * Verified for duplicated traces : verified along with test instance\
   in preview: no duplicated traces
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -789,7 +1083,7 @@ Faster time to market with business requirements
 * Integrated seamlessly with CICD workflows
 * Delivers on the Cursor promise of “making developers extraordinarily productive”
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Application Enhancements
 
@@ -804,7 +1098,7 @@ If issue comments are included in the CSV export with clear attribution & timest
 
 _The image below illustrates the new format for comments added into CSV exports:_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -862,13 +1156,13 @@ We have verified all the fixes related to user license counting and orphan membe
    2. Executed dev-provided cleanup SQL query.
    3. Confirmed Orphan entries were successfully deleted.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Fixed an issue with “Issues” assignment and status update, where filters are not working (as "Bulkchange and Bulkassign" API returns 500 Internal error)**
 

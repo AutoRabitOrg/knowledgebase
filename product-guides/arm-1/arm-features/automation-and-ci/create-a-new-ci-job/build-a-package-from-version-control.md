@@ -80,11 +80,11 @@ Important Notes:
 
 * **Apex PMD / Checkmarx** – Set criteria such as date range and **Priority**. If the priority threshold is not met, the build is marked unstable.
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **CodeScan / SonarQube** – Choose to scan all metadata or only newly added components, then set a **Priority**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 * **Run on newly added supported metadata types** – Scan only newly added components.

@@ -57,7 +57,7 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Choose the Salesforce **Object** to be searched and compared.
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 2.  The object selection determines the available fields and filtering options.
 
 
@@ -85,9 +85,9 @@ Search results are presented in a structured comparison view, allowing users to 
 1. Enter the following details:
    1.  Enter a unique <mark style="color:red;">**Label**</mark><mark style="color:red;">\*</mark>. (Alphanumerics, underscores, hyphens, and spaces are allowed.)
 
-       <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 2. Specify **Preserve The Result For**\* in days (Maximum: 30 days).
 3. Enter a **Description**, if required.
 4.  Click **Save** to create the configuration.
@@ -192,7 +192,7 @@ Search results are presented in a structured comparison view, allowing users to 
 1. Initiate Run
    1.  In the **Job Config** grid, click the **Run (▶)** icon under the Actions column for the required configuration.
 
-       <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 2. Configure Job Run Details
    1. The **Job Run Details** dialog is displayed.
    2.  **The dialog shows:**&#x20;
@@ -200,7 +200,7 @@ Search results are presented in a structured comparison view, allowing users to 
        1. **Object Name**&#x20;
        2. Auto-generated **Label**
 
-       <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 3. Under **Emails**, select the email addresses to receive job notifications.
 4. Click **Search** to execute the configuration.
 5. Click **Cancel** to exit without running the job.
@@ -211,11 +211,11 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  As soon as the run is initiated, a new job will be start running, with an option to terminate the job run.
 
-    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Access Job History**: Navigate to **Search & Compare → Job History**.
    1. The page displays the list of executed Search and Compare jobs with the following details:
       1. **Label**
@@ -230,7 +230,7 @@ Vault displays the list of backups and archives identified based on the selected
       10. **Actions**
    2.  Click on the required **Label** to view job details.
 
-       <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 3. **View Job Details**
    1.  The job details page displays:&#x20;
 
@@ -241,7 +241,7 @@ Vault displays the list of backups and archives identified based on the selected
        5. **From Date**
        6. **To Date**
 
-       <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
    2. The page lists associated backup jobs, including:
       1. **Label Name**
       2. **Configuration Name**
@@ -259,7 +259,7 @@ Vault displays the list of backups and archives identified based on the selected
        4. Download results
        5. Change view
 
-       <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
    3. Select the required records from the list.
    4. Click Restore to initiate the restore process.
    5. Click **Cancel** to exit.
@@ -271,7 +271,7 @@ Vault displays the list of backups and archives identified based on the selected
        3. Inactive owners
        4. Missing dependencies
 
-       <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
    2. Review the information and click **Got It** to continue.
 6. Restore Summary
    1.  The **Restore Summary** dialog displays:
@@ -282,7 +282,7 @@ Vault displays the list of backups and archives identified based on the selected
        4. **Email Notification**
        5. **Salesforce Automation controls**
 
-       <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
    2. It also provides a summary of:
       1. Selected **Metadata**
       2. Selected **Data**
@@ -394,7 +394,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  Click **Select Field**.
 
-    <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Map or modify required fields.
 
     <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>

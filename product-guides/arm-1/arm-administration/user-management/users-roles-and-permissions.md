@@ -115,7 +115,7 @@ Admins can download all user data as CSV.
 3.  Provide a **Role Name**, **Description**, and tick permissions.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 4. Click **Save**.
 
 > _The default **Admin** role has full permissions and cannot be edited or renamed._

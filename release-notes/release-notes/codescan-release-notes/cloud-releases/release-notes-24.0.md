@@ -134,7 +134,7 @@ If both rules are active, check the violations that were reported and disable on
     \
     Also, the text in the “Branches” menu did not reflect the branch retention length change:
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
     Verified the Retention Period fix for the following scenarios:
 

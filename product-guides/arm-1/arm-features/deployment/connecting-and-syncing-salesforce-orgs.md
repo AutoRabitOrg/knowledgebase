@@ -52,12 +52,12 @@ To perform org synchronization, follow the below steps:
 
 Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  **`Info:`** Click the![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the detailed synchronization report.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 2. **`Delete:`** Click on the![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
 3. **`Schedule:`** Click the![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>)icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
 4. **`Run:`** Click the![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>)icon to rerun the org synchronization process.
@@ -69,4 +69,4 @@ Synchronization summary information, such as label name, source org, destination
    * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the metadata components difference report between the source and the target org.
    * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png>)icon to download the Diff report in your local system (in PDF or CSV format).
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -5,13 +5,11 @@
 {% hint style="info" %}
 As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.&#x20;
 
-
-
 Key points:
 
-1. If you have an existing Salesforce org registered, you are using the existing Connected App flow.  No action is required at this time, and your analyses will run as expected.<br>
-2. Please note that any new Salesforce org that you wish to register in CodeScan must use the new [local ECA flow](../../../../product-guides/codescan/getting-started/connection-to-salesforce-with-eca.md).<br>
-3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca).  Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
+1. If you have an existing Salesforce org registered, you are using the existing Connected App flow. No action is required at this time, and your analyses will run as expected.
+2. Please note that any new Salesforce org you wish to register in CodeScan must use the new [local ECA flow](../../../../product-guides/codescan/getting-started/connection-to-salesforce-with-eca.md).
+3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
 ***

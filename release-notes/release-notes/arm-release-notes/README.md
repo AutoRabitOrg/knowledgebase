@@ -120,6 +120,36 @@ Version Control → Repository Registration (GitHub OAuth)
 
 [**https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github**](https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github)
 
+***
+
+## DataLoader Pro - 26.1.11 Release Notes
+
+Release Date: March 15, 2026
+
+**DL Pro – Corrected Record Count Display for Objects with Similar Names**
+
+An issue was resolved where the **success count and error count** were displayed incorrectly in the **DL Pro results table** when multiple objects had the same name but different prefixes. The system now correctly distinguishes between such objects, ensuring that **success, error, and extracted record counts** are displayed accurately in the DataLoader parent and child relations result table.
+
+***
+
+## DataLoader - 26.1.11 Release Notes
+
+Release Date: March 15, 2026
+
+**Deployment from Deployment History Fix**
+
+An issue was resolved where deploying a dataset directly from the **Deployment History** screen resulted in the error _“Unable to fetch feature deployment iteration objects.”_ This has been fixed, and datasets can now be deployed successfully from the **Deployment History** view as expected.
+
+**Relational Compare Fix in Deploy using Template**
+
+An issue was resolved where performing a **relational compare** during **Deploy using Template** failed with the error _“Cannot retrieve data from Salesforce with the unique identifier.”_ This occurred when parent records were not fetched during the relational compare process. The issue has been fixed, and relational compare now retrieves data correctly and proceeds without errors.
+
+**Aggregate Query Handling Improvement**
+
+An issue was addressed in **DataLoader** where running aggregate SOQL queries resulted in the error _“Field must be grouped or aggregated.”_ Query validation and extract operations have been improved to correctly support relational field extraction when using **GROUP BY** and **ORDER BY** clauses, ensuring aggregate queries execute successfully.
+
+***
+
 ## Release Notes – Version 26.1.10
 
 **Release Date: 08 March 2026**

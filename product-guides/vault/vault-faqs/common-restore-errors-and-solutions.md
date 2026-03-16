@@ -55,7 +55,7 @@ For specific estimates, contact the product team.
 
 ***
 
-### Sandbox Refresh vs Sandbox Seeding
+## Sandbox Refresh vs Sandbox Seeding
 
 #### Understanding Salesforce Sandbox Refresh Limitations
 

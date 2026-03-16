@@ -1,81 +1,472 @@
-# Registering Salesforce Org
+# Registering Salesforce Org Using External Connected App
 
-### Overview <a href="#overview" id="overview"></a>
+## Introduction
 
-When you register your Salesforce Organization, Vault is connected to your Salesforce org with required permissions that enable you to backup your data and metadata information.
+Salesforce has introduced the **External Client App (ECA)** framework as the new standard for managing OAuth-based integrations. This framework replaces the legacy **Connected App** model for newly created integrations and provides a more secure and structured way to configure external applications that access Salesforce resources.
 
-### Prerequisite <a href="#prerequisite" id="prerequisite"></a>
+To align with Salesforce’s updated authentication framework, Vault now supports integration using **External Client Apps**. This approach ensures compatibility with Salesforce’s latest OAuth standards while maintaining secure access between Vault and Salesforce environments.
 
-You will need a Salesforce account. To sign up for your developer account in Salesforce, refer to the link: [`https://developer.salesforce.com/signup`](https://developer.salesforce.com/signup). Once you fill in all the details with a valid **email address**, you'll get an invitation link in your email to activate your account.
+This guide explains how to register a Salesforce organization in Vault using the **External Client App (ECA)** configuration and authorize Vault to access Salesforce through OAuth.
 
-### Registering a Salesforce Account <a href="#registering-a-salesforce-account" id="registering-a-salesforce-account"></a>
+## Overview
 
-To register a Salesforce org with Vault, follow the steps below in sequence:
+Registering a Salesforce organization in Vault involves configuring an OAuth connection using a **Salesforce External Client App**. This process establishes a secure authorization flow that allows Vault to interact with Salesforce APIs.
 
-1. Authenticate your Salesforce Org via HTTP Basic Auth or OAuth 2.0.
-2. Set up a backup configuration for your Salesforce Org.
-3. Schedule a backup for your Salesforce Org.
-4. Set up an archive configuration for your Salesforce Org.
+The setup process includes the following stages:
 
-#### _Salesforce Org Authentication via HTTP Basic Auth or OAuth 2.0_ <a href="#salesforce-org-authentication-via-http-basic-auth-or-oauth-20" id="salesforce-org-authentication-via-http-basic-auth-or-oauth-20"></a>
+1. **Registering the Salesforce organization in Vault** by providing environment details.
+2. **Creating an External Client App in Salesforce** to enable OAuth authentication.
+3. **Configuring required OAuth scopes and callback settings** within Salesforce.
+4. **Providing the Client ID and Client Secret in Vault**.
+5. **Authorizing Vault to access Salesforce** through the OAuth authorization process.
+6. **Validating the connection** and completing the org registration.
 
-1. Log in to your **Vault** account using your credentials.
-2. Visit **`Setup > Register New Org`** from the Vault homepage.
+Once the setup is complete, the Salesforce organization becomes available in Vault and can be used for operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Data Masking**.
 
-<figure><img src="../../../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+## Step-By-Step Guide: Registering a Source Salesforce Org in Vault
 
-3. Next, choose an authentication type to register the org. Usually, there are two ways to authenticate your Salesforce org: **`OAuth`** or **`Standard (username/password)`**.
-   * **OAuth Authentication**: An industry-standard protocol specification enables third-party applications (such as Salesforce) to gain delegated access to protected resources in Vault via an API. To use **OAuth authentication**, you must choose the **`Environment`** as **Salesforce** and select the **`Salesforce API version`** from the dropdown. Select your **`Salesforce Org type,`** i.e., _productions_, _sandbox_, or enter your _custom org type_. Enter the desired name for the org in the **`Org Title`** field and the **`Salesforce username`**. On selecting **`Authenticate`**, the page redirects you to the **Salesforce** login screen, where you enter your authentication details. You will be redirected to the Vault login page after successful authentication.
+### Navigate to the Salesforce Orgs Setup Page
 
-<figure><img src="../../../../.gitbook/assets/image (197).png" alt="" width="500"><figcaption></figcaption></figure>
+On the **Vault Setup** page, the **Salesforce Orgs List** displays all registered Salesforce environments.
 
-* **Standard Authentication**: In **`Standard`** authentication, the desired **`Salesforce Cloud environment`**, the **`username`**, **`password`**, and the **`security token`** of Salesforce are entered, and Vault authenticates the connection. You would have received the security token through email when you initially set up your account or reset your password on the most recent occasion. Your token can also be reset independently. To reset your security token, go to **`My Settings > Personal > Reset My Security Token`** in Salesforce.\
-  To test whether Vault can connect to the target Salesforce organization when using the credentials of the target Salesforce user, click on **`Test Connection`**.
+To register a new Salesforce organization:
 
-<figure><img src="../../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+1.  Click **REGISTER NEW ORG**.
 
-4. Finally, click on the **`Save`** button to complete the authentication process.
-5. When the user selects the '**Custom**' option under the '**Org Type**' dropdown, the following note will be visible beside the '**Authenticate**' button: **“Use only Salesforce Classic URL for the 'Instance URL'; Lightning URL is not supported.”**
 
-<figure><img src="../../../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
-### What's Next? <a href="#whats-next" id="whats-next"></a>
+    ![](<../../../../.gitbook/assets/Unknown image>)
 
-Once you register your Salesforce Org with  Vault, you will automatically navigate to the **`Configs`** tab. The next step is to set up a [backup configuration for your Salesforce Org](setup-backup-configuration-for-salesforce-org.md). The configuration backup job creates a snapshot of the data/metadata from your Salesforce org and retrieves the data required for a successful restore. If you're not redirected in the first place, you can always do so by navigating to **`Setup > Selecting your Salesforce Org >`** **`Configs > Add Backup Config`**. Proceed with the backup or archival configurations when you register your Salesforce org. [**Read More---->**](setup-backup-configuration-for-salesforce-org.md)
+This action opens the **Source Org Integration** setup wizard.
 
-Similarly, you can set up an [archive configuration](archival-configuration.md) using  **`Add Archive Config`** on the **`Configs`** screen. Data Archive is about moving unwanted data components from your Salesforce Org and freeing up space for new data. With Vault, this data is safely stored for future use. In a nutshell, Vault makes Salesforce data archiving and backup a simple, productive, and effective process. [**Read More---->**](archival-configuration.md)
+### Configure Environment Details
 
-### Manage ORG Details
+The **Source Org Integration** wizard begins with **Environment Details**.This step captures the basic configuration required to connect the Salesforce environment.
 
-Managing ORG login details is now more streamlined with the new capability to edit and authenticate registered ORGs. The newly introduced **“EDIT”** option allows updating outdated or incorrect login credentials, ensuring that stale user details are removed from the Vault application and replaced with active, verified credentials.
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1)>)
 
-About The Feature
+Configure the following fields:
 
-This feature enables the secure update of login credentials for an existing ORG without affecting any associated configurations or jobs. Once the new credentials are authenticated, they are seamlessly bound to the existing ORG, ensuring uninterrupted access to configurations and scheduled jobs. This enhances operational continuity and supports compliance requirements where regular credential updates are necessary.
+* **Environment Type** – Select the appropriate environment:
+  * **Salesforce** – Standard Salesforce organization.
+  * **nCino** – nCino environment running on Salesforce.
+* **Salesforce API Version** – Select the API version used for integration.
+* **Org Title** – Enter a recognizable name for the organization.This name helps identify the org within Vault.
+* **User Name** – Enter the Salesforce username used for authentication.
 
-Step-By-Step Guide:
+### Select Salesforce Environment Type
 
-1.  Open any ORG through the “Setup” of the Vault application.
+After entering the username, select the type of Salesforce environment.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. On opening the ORG click on the EDIT button to initiate editing the ORG details.
-3.  Upon clicking the **EDIT** button, the fields **Org Type**, **Org Title**, and **User Name** become editable, allowing the user to make the intended updates.
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (2)>)
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. Based on the requirement update the fields “Org Type” and “Org Title” as required.
-5. For updating the “User Name” authentication is required, as the login is tied to the ORG, changing the username requires authentication.
-6.  Enter the required “User Name” and click on “AUTHENTICATE” to initiate the authentication.
+Available options include:
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-7. On clicking the “AUTHENTICATE” the flow will navigate to the Salesforce login page.
-8.  Observe the username and continue to enter the password.
+* **Production** – Used for live Salesforce environments.
+* **Sandbox** – Used for development or testing environments.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Once the environment type is selected, provide the **Salesforce Login URL**.
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-9. On clicking “ALLOW” the flow will navigate to the Vault application where a message will be displayed referring to the change in the user details.
-10. Read through the message and click on “OK” or “CANCEL”, to continue with the message.
-11. On clicking “OK”, the login details will be updated and a message inferring the same will be displayed on the application.
+This field supports both:
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-12. With this the user details are updated successfully on the existing ORG
+* Default Salesforce login URLs
+* Custom **My Domain** login URLs
+
+If Salesforce enforces **My Domain**, the login URL must match the configured domain.
+
+Click **Continue** to proceed.
+
+### Create the Salesforce External Client App
+
+The next step guides the creation of a **Salesforce External Client App** required for OAuth authentication.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3)>)
+
+Vault displays the configuration steps that must be completed in Salesforce.
+
+**Complete the following actions in Salesforce:**
+
+1. Navigate to **Setup → App Manager**.
+2. Click **New External Client App**.
+3. Enable **OAuth Plugin**.
+4. Select **Authorization Code (Web Server) Flow**.
+5. Disable the **PKCE security option**.
+6. Add the **Callback URL** provided in Vault.
+
+After completing the configuration in Salesforce, return to Vault.
+
+Click **I've completed the setup** to continue.
+
+### Configure OAuth Scopes
+
+Add the required OAuth scopes in the Salesforce External Client App.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (4)>)
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (5)>)
+
+The following scopes must be enabled:
+
+* **Access the identity URL service (id, profile, email, address, phone)**
+* **Manage user data via APIs (api)**
+* **Manage user data via Web browsers (web)**
+* **Full access (full)**
+* **Perform requests at any time (refresh\_token, offline\_access)**
+
+Ensure the **Callback URL (Redirect URI)** matches exactly with the value provided in Vault.
+
+Any mismatch will result in connection failure.
+
+### Enter OAuth Credentials
+
+After completing the Salesforce External Client App configuration, provide the OAuth credentials in Vault.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6)>)
+
+Enter the following details:
+
+* **Client ID** – The Consumer Key generated from the Salesforce External Client App.
+* **Client Secret** – The Consumer Secret generated from the Salesforce External Client App.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (7)>)
+
+These values are available in Salesforce under the External Client App configuration.
+
+#### Where to Find the Credentials in Salesforce
+
+1. Navigate to **Setup → App Manager**.
+2. Locate the created **External Client App**.
+3. Open the dropdown menu and select **View**.
+4. Click **Manage Consumer Details**.
+5. Copy the **Consumer Key (Client ID)** and **Consumer Secret (Client Secret)**.
+
+Paste these values into the corresponding fields in Vault.
+
+Click **Continue** to proceed to the authorization step.
+
+### Authorize Vault to Access Salesforce
+
+The **Connect to Salesforce** step initiates the OAuth authorization process.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (8)>)
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9)>)
+
+Vault displays the connection details for verification:
+
+* **Org Title** – The name assigned during configuration.
+* **Type** – The selected Salesforce environment (Production or Sandbox).
+* **Login URL** – The Salesforce login endpoint used for authentication.
+
+This step establishes a secure connection between Vault and the Salesforce organization.
+
+Click **Connect to Salesforce** to begin the authorization process.
+
+### Complete Salesforce Authorization
+
+After clicking **Connect to Salesforce**, the following process occurs:
+
+1. The browser redirects to the Salesforce login page.
+
+![A screenshot of a web page AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10)>)
+
+1. Authentication occurs using the provided Salesforce credentials.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11)>)
+
+1.  Salesforce displays the permissions requested by Vault.
+
+    <figure><img src="../../../../.gitbook/assets/image (2463).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (2464).png" alt=""><figcaption></figcaption></figure>
+2. Select **Allow** to grant the required access.
+3. After authorization, Salesforce redirects back to Vault automatically.
+
+Vault then completes the validation and confirms the connection.
+
+### Validation and Setup Completion
+
+After the authorization process is completed, Vault validates the Salesforce connection and displays a **Connection Successful** confirmation.
+
+![](<../../../../.gitbook/assets/Unknown image (14)>)
+
+The **Validation & Confirmation** step displays the environment details of the connected Salesforce org, including:
+
+* **Org Title** – The name assigned during org registration.
+* **Salesforce Org ID** – The unique identifier of the Salesforce environment.
+* **Instance URL** – The Salesforce instance endpoint used for API communication.
+* **Login URL** – The login endpoint used for authentication.
+
+This confirmation indicates that the Salesforce organization has been successfully connected to Vault.
+
+### Test the API Connection
+
+To verify that Vault can communicate with the Salesforce environment, perform an API connectivity test.
+
+1. In the **Test Your Connection** section, click **Test API Connection**.
+
+![](<../../../../.gitbook/assets/Unknown image (15)>)
+
+### Verify the API Connection Status
+
+If the connection test succeeds, Vault displays a confirmation message indicating that the API communication is working correctly.
+
+![](<../../../../.gitbook/assets/Unknown image (16)>)
+
+A notification message appears confirming that the **API connection test was successful**.
+
+This validation ensures that Vault can securely interact with the Salesforce environment using the configured OAuth credentials.
+
+### Complete the Org Registration
+
+After the connection test is successful:
+
+1. Click **Finish**.
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (17)>)
+
+Vault completes the org registration process and closes the **Source Org Integration** wizard.
+
+The newly connected Salesforce organization now appears in the **Salesforce Orgs List** within the **Setup** section and is available for Vault operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Masking**.
+
+### Confirm Successful Org Registration
+
+After clicking **Finish**, Vault displays a confirmation message indicating that the Salesforce organization has been successfully registered.
+
+![](<../../../../.gitbook/assets/Unknown image (18)>)
+
+This confirmation verifies that the integration process has completed successfully and the Salesforce environment is now available for Vault operations.
+
+Click **OK** to close the confirmation message.
+
+### Verify the Registered Salesforce Org
+
+After the confirmation message is closed, the **Salesforce Orgs List** page displays the newly registered organization.
+
+![](<../../../../.gitbook/assets/Unknown image (19)>)
+
+The list provides key details for each connected environment, including:
+
+1. **Org Title**
+2. **Org ID**
+3. **Environment Type**
+4. **Username**
+5. **Last Updated Time**
+6. **Authentication Type**
+7. **Instance URL**
+
+The newly added organization now appears in this list and is ready to be used within Vault.
+
+### Re-authenticate an Existing Org (If Required)
+
+If authentication credentials expire or require renewal, the Salesforce organization can be re-authenticated directly from the **Salesforce Orgs List**.
+
+![](<../../../../.gitbook/assets/Unknown image (19)>)
+
+To re-authenticate an organization:
+
+1. Locate the required org in the **Salesforce Orgs List**.
+2. Navigate to the **Actions** column.
+3. Click the **Re-authenticate** icon.
+
+Vault redirects to the Salesforce login page to complete the authentication process.
+
+### Authenticate Through Salesforce Login
+
+When the **Re-authenticate** action is initiated, the Salesforce login screen appears.
+
+![](<../../../../.gitbook/assets/Unknown image (20)>)
+
+Enter the following credentials:
+
+* **Username**
+* **Password**
+
+Click **Log In** to authenticate the connection.
+
+After successful authentication, Vault restores the secure connection with the Salesforce environment.
+
+### Access Additional Org Actions
+
+After the Salesforce org is successfully registered, additional management options are available for the connected org.
+
+1. Navigate to **Setup**.
+2. Locate the required org in the **Salesforce Orgs List**.
+3. In the **Actions** column, click the **More actions (⋮)** icon.
+
+![A list of numbers and numbers AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (21)>)
+
+A menu appears displaying additional management options for the selected Salesforce org.
+
+### View Org Configurations
+
+The **More actions** menu provides multiple options for managing the registered Salesforce org.
+
+![A list of numbers and numbers AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (22)>)
+
+To view the configurations associated with the org:
+
+1. Click **View Configs**.
+
+Vault opens the configuration view for the selected Salesforce org, allowing management of backup and archive configurations.
+
+### View Backup Configurations
+
+The **Configs** page displays the configurations created for the selected Salesforce org.
+
+This page includes the following sections:
+
+* **Configs Tab** – Displays configuration settings associated with the org.
+* **Backup** – Lists backup configurations created for the org.
+* **Archive** – Displays archive configurations, if configured.
+
+The **Backup** section provides details such as:
+
+* **Backup Config Name**
+* **Config Type**
+* **Frequency**
+* **Schedule Time**
+* **Backup Config Details**
+* **Actions**
+* **Last Backup Status**
+
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (23)>)
+
+From this page, new configurations can be created using:
+
+* **Add Backup Config** – Create a new backup configuration.
+* **Add Archive Config** – Create a new archive configuration.
+
+The **Back to Orgs List** option allows navigation back to the **Salesforce Orgs List** page.
+
+### Open the Salesforce Org Edit Option
+
+Vault allows updating the configuration details of a registered Salesforce org.
+
+1. Navigate to **Setup**.
+2. Locate the required org in the **Salesforce Orgs List**.
+3. In the **Actions** column, click the **More actions (⋮)** icon.
+4. Select **Edit Salesforce Org**.
+
+![A list of data on a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (66)>)
+
+Vault opens the **Environment Details** window for the selected Salesforce environment.
+
+### Update Salesforce Org Configuration
+
+1.  The **Environment Details** window allows modification of the registered Salesforce org configuration.
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (67)>)
+
+    ![](<../../../../.gitbook/assets/Unknown image (68)>)
+2. Update the required fields as needed:
+
+* **Environment Type** – Select **Salesforce** or **nCino**.
+* **Salesforce API Version** – Choose the API version used for integration.
+* **Org Title** – Modify the display name for the org.
+* **Org Type** – Select **Production** or **Sandbox**.
+* **Salesforce Login URL** – Verify or update the login endpoint if a **My Domain** or custom login URL is used.
+
+2. After reviewing the changes, click **Save** to apply the updated configuration.
+
+Vault updates the Salesforce org details while maintaining the existing connection settings.
+
+### Open Client Key Configuration
+
+1. In the **Salesforce Orgs List**, locate the required org.
+2. Click the **More Actions (⋮)** menu under the **Actions** column.
+3.  Select **Edit Client Keys**.
+
+    <figure><img src="../../../../.gitbook/assets/image (2465).png" alt=""><figcaption></figcaption></figure>
+
+The **Edit Credentials** configuration wizard opens, allowing the External Client App credentials to be configured.
+
+### Configure Salesforce External Client App
+
+The first stage of the wizard provides guidance for creating an **External Client App** in Salesforce.
+
+1. In the **Salesforce Admin Setup** section, follow the instructions to create an External Client App in Salesforce:
+
+* Navigate to **Setup → App Manager**.
+* Create a **New External Client App**.
+* Enable the **OAuth Plugin**.
+* Select **Authorization Code (Web Server) Flow**.
+*   Disable the **PKCE security option** if required.
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (70)>)
+
+1.  Copy the **Callback URL (Redirect URI)** displayed in Vault and add it to the External Client App configuration in Salesforce.
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (71)>)
+2. Configure the following **OAuth scopes** in Salesforce:
+
+* Access the identity URL service
+* Manage user data via APIs
+* Manage user data via Web browsers
+* Full access
+*   Perform requests at any time (refresh\_token, offline\_access)
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (72)>)
+
+1. Ensure that the **Redirect URI in Salesforce exactly matches the Callback URL displayed in Vault** to prevent connection failures.
+2. After completing the Salesforce configuration, click **Next** to proceed.
+
+### Enter Client Credentials
+
+1. In the **Edit Credentials** step, enter the following values from the Salesforce External Client App:
+
+*   **Client ID** – The Consumer Key generated in Salesforce.
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (73)>)
+*   **Client Secret** – The Consumer Secret generated in Salesforce.
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (74)>)
+
+1. These values can be retrieved in Salesforce by navigating to:**Setup → App Manager → External Client App → Manage Consumer Details**.
+2. After entering the credentials, proceed to save and re-authenticate the connection.
+
+Vault uses these credentials to securely establish OAuth authentication with the Salesforce org.
+
+### Open Connect Configuration
+
+1. In the **Salesforce Orgs List**, locate the required Salesforce org.
+2. Click the **More Actions (⋮)** menu under the **Actions** column.
+3.  Select **Connect (Beta)**.
+
+
+
+    ![](<../../../../.gitbook/assets/Unknown image (75)>)
+
+The **Connect (Beta)** configuration page opens for the selected org.
+
+### Access the Connect (Beta) Page
+
+1.  After selecting **Connect (Beta)**, the **Connect (Beta)** tab opens within the org configuration screen.
+
+
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (76)>)
+2. This page displays all configured **Connect jobs** for the selected org.
+3. The following options are available on this page:
+
+* **Sync with Salesforce** – Synchronizes connect configurations with Salesforce.
+* **Add Connect Config** – Creates a new Connect configuration.
+* **Refresh** – Reloads the connect configuration list.
+
+3. If no configurations exist, the page displays the message **“No Connects.”**
+4. To create a new configuration, click **Add Connect Config**.
+
+
+

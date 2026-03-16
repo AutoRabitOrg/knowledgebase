@@ -28,3 +28,6 @@ Resolved an issue where the QR code was not displayed during the multi-factor au
 
 <figure><img src="../../../.gitbook/assets/image (2461).png" alt=""><figcaption></figcaption></figure>
 
+**SSO Login – SAML Issuer Handling Fix**
+
+Resolved an issue where users could encounter login failures when authenticating through SSO due to improper handling of the SAML issuer during validation. The authentication process has been updated to correctly process the issuer value, ensuring successful login when the required attributes are provided by the Identity Provider.

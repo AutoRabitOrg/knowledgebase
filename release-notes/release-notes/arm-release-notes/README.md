@@ -2,6 +2,131 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
+## Release Notes – Version 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+
+**Release Date:** Mar 22, 2026
+
+***
+
+#### **Code Coverage & Test Class Report Structure Enhancement (New Enhancement)** <a href="#code-coverage-and-test-class-report-structure-enhancement-new-enhancement" id="code-coverage-and-test-class-report-structure-enhancement-new-enhancement"></a>
+
+Improved the structure of the **Code Coverage Report CSV** and **Test Class report** so that the test class name is now repeated on every row for each test method. This makes sorting, filtering, and analysis by class and method more reliable, especially for larger orgs.
+
+**Impacted Areas**\
+Code Coverage Report CSV\
+Test Class Report
+
+***
+
+#### **Parallel Processor Support in CI Jobs – New UI** <a href="#parallel-processor-support-in-ci-jobs-new-ui" id="parallel-processor-support-in-ci-jobs-new-ui"></a>
+
+The **Parallel Processor** configuration is now available in the **New UI** for CI Jobs. This feature allows users to configure **GET or POST requests** to be executed before or after a Salesforce deployment as part of the CI job execution.
+
+This capability was previously available in the **Old UI** and has now been integrated into the **New UI** with the same functionality and behavior, ensuring feature parity across both interfaces.
+
+**Impacted Areas**\
+CI Jobs – New UI Configuration
+
+***
+
+#### **Scratch Org Deployment – Access Token Retrieval Fix** <a href="#scratch-org-deployment-access-token-retrieval-fix" id="scratch-org-deployment-access-token-retrieval-fix"></a>
+
+Fixed an issue where **CI Job deployments from a Salesforce Org to a Scratch Org** could fail with a **400 Bad Request error** while attempting to fetch an access token using the stored refresh token. This occurred when the **destination org was registered using Standard authentication and had a different login URL than the source org** (for example, Production/Developer source org and Sandbox destination org).
+
+The token retrieval logic has been updated to correctly handle such scenarios, preventing CI job failures during Scratch Org deployments.
+
+**Impacted Areas**\
+CI Jobs – Deploy from Salesforce Org to Scratch Org
+
+***
+
+#### **Dev Hub Selection Retention Fix – Create Unlocked Package Version and Install It to Salesforce (New UI)** <a href="#dev-hub-selection-retention-fix-create-unlocked-package-version-and-install-it-to-salesforce-new-ui" id="dev-hub-selection-retention-fix-create-unlocked-package-version-and-install-it-to-salesforce-new-ui"></a>
+
+Fixed an issue in the **New UI** where the selected **Dev Hub** was not retained in the CI Job type **“Create Unlocked Package Version and Install It to Salesforce.”** After saving the job configuration and completing deployment, returning to the **Edit Deployment** screen showed the **Dev Hub** field as empty, even though a value had been previously selected.
+
+The initialization logic has been corrected to ensure the saved **Dev Hub selection is retained and displayed properly** when reopening the job configuration.
+
+**Impacted Areas**\
+CI Job → Create Unlocked Package Version and Install It to Salesforce → Deployment Settings → Dev Hub Selection (New UI)
+
+***
+
+#### **ContentAsset Handling Fix – Release Label Artifacts** <a href="#contentasset-handling-fix-release-label-artifacts" id="contentasset-handling-fix-release-label-artifacts"></a>
+
+Fixed an issue where **including a ContentAsset modification revision in a Release Label artifact** caused package generation to fail with an error indicating missing source files for the **ContentAsset** type.
+
+The packaging logic has been updated to ensure that when a **ContentAsset** `.meta.xml` **file** is detected, the corresponding **binary asset file** is also included in the generated package if it exists in the repository. This prevents manifest generation failures and ensures ContentAssets are packaged correctly.
+
+**Impacted Areas**\
+Release Labels in Version Control (DX and Non-DX)\
+Release Label Deployment and Merge (ContentAsset changes)
+
+***
+
+#### **CI Job Backup Failure Fix – Unsupported Metadata Type Handling** <a href="#ci-job-backup-failure-fix-unsupported-metadata-type-handling" id="ci-job-backup-failure-fix-unsupported-metadata-type-handling"></a>
+
+Fixed an issue where **CI Jobs configured for Backup to Version Control** could fail with the error **“Missing metadata type definition in registry for id 'CustomObjectBinding'.”**
+
+This occurred because Salesforce exposes the **CustomObjectBinding** metadata type during discovery, even though it is not currently supported for retrieval. The system previously attempted to include this metadata in retrieval batches, causing the job to fail.
+
+The metadata type has now been **added to the exclusion map**, preventing retrieval attempts and allowing CI backup jobs to complete successfully.
+
+**Impacted Areas**\
+CI Jobs – Backup to Version Control
+
+***
+
+#### **1-Month Data Retention Policy Option** <a href="#id-1-month-data-retention-policy-option" id="id-1-month-data-retention-policy-option"></a>
+
+ARM now supports a **1-Month retention policy** to provide greater flexibility in managing system data. Previously, retention policies were limited to **3 months, 6 months, and 12 months**.
+
+With this enhancement, administrators can configure a **30-day retention period**, enabling automatic removal of data older than one month. This helps organizations better manage storage usage, improve system performance, and align with internal compliance or governance requirements.
+
+Existing configurations using **3-month, 6-month, or 12-month** retention policies remain unchanged.
+
+**Impacted Areas**\
+Administration → Retention Policy Settings
+
+***
+
+#### **Multiple Approver Support for EZ-Merge – New UI** <a href="#multiple-approver-support-for-ez-merge-new-ui" id="multiple-approver-support-for-ez-merge-new-ui"></a>
+
+Added support for selecting **multiple approvers in EZ-Merge** within the **New UI**. Previously, users were limited to selecting only a **single approver** when creating a merge request, unlike the Old UI which allowed multiple approvers.
+
+This enhancement restores the ability to **select multiple approvers for merge approvals**, aligning the New UI behavior with the functionality available in the Old UI.
+
+**Impacted Areas**\
+EZ-Merge – New UI
+
+***
+
+#### **CI Job Configuration Save Fix – Install Package Job (New UI)** <a href="#ci-job-configuration-save-fix-install-package-job-new-ui" id="ci-job-configuration-save-fix-install-package-job-new-ui"></a>
+
+Fixed an issue in the **New UI** where configuration changes were not saved correctly for the CI Job type **“Install an Unlocked or Managed Package from a Version Control Branch.”** In some cases, fields such as **Run Apex Compile, Security Type, and Upgrade Type** reverted to different values when switching between the New UI and Old UI.
+
+The issue was caused by values not being properly retained in **disabled fields** during the save operation. This has been corrected to ensure the selected configuration values are saved and displayed accurately.
+
+**Impacted Areas**\
+CI Job → Edit Job → Deploy Page (New UI)
+
+***
+
+#### **Salesforce Spring ’26 (API 66) Metadata Support** <a href="#salesforce-spring-26-api-66-metadata-support" id="salesforce-spring-26-api-66-metadata-support"></a>
+
+ARM now supports additional metadata types introduced with **Salesforce Spring ’26 (API 66)**. The following metadata types are now supported:
+
+* AffinityScoreDefinition
+* CleanDataService
+* DuplicateRule
+* ExtlClntAppCanvasSettings
+* Flow sub-types (FlowSchedule, FlowScreenStyleSetting)
+* GiftEntryGridTemplate
+
+**Impacted Areas**\
+Version Control\
+Deployments\
+CI Jobs
+
 ## Release Notes – Version 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
 
 **Release Date:** Mar 15, 2026

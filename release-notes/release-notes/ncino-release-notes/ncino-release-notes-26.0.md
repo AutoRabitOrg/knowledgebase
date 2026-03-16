@@ -4,6 +4,22 @@
 
 ***
 
+## nCino - Release 26.1.11
+
+Release Date: 15 March 2026
+
+**View Dataset Pagination Improvement**
+
+Pagination has been improved in the **View Dataset** functionality to ensure records are retrieved and displayed in paginated responses instead of loading the entire dataset at once. This enhancement improves performance and reduces response times when working with large datasets.
+
+**Feature Management – Change Log Action Stability Fix**
+
+An issue was resolved in the **Feature Management** module where clicking the **Change Log** action triggered a console error in the New UI. The issue occurred due to an undefined reference while accessing the change log data. This has been fixed, and the **Change Log** action now loads correctly without any console errors.
+
+**Compare Module – Icon Update**
+
+The icons for **Global Compare** and **Field-Level Compare** in the **Compare module** have been updated with new icons to improve visual clarity and consistency in the user interface.
+
 ## nCino - Release 26.1.8
 
 **Release Date: 22 February 2026**

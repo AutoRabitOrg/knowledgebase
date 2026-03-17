@@ -4,9 +4,7 @@
 
 ## Release Notes – Version 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
-**Release Date:** Mar 22, 2026
-
-***
+**Release Date:** **22 March 2026**
 
 #### **Code Coverage & Test Class Report Structure Enhancement (New Enhancement)** <a href="#code-coverage-and-test-class-report-structure-enhancement-new-enhancement" id="code-coverage-and-test-class-report-structure-enhancement-new-enhancement"></a>
 
@@ -127,11 +125,11 @@ Version Control\
 Deployments\
 CI Jobs
 
+***
+
 ## Release Notes – Version 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
 
-**Release Date:** Mar 15, 2026
-
-***
+**Release Date:** **15 March 2026**
 
 #### Backup to Version Control – Credential Refresh Fix <a href="#backup-to-version-control-credential-refresh-fix" id="backup-to-version-control-credential-refresh-fix"></a>
 
@@ -249,7 +247,7 @@ Version Control → Repository Registration (GitHub OAuth)
 
 ## DataLoader Pro - 26.1.11 Release Notes
 
-Release Date: March 15, 2026
+**Release Date: 15 March 2026**
 
 **DL Pro – Corrected Record Count Display for Objects with Similar Names**
 
@@ -259,7 +257,7 @@ An issue was resolved where the **success count and error count** were displayed
 
 ## DataLoader - 26.1.11 Release Notes
 
-Release Date: March 15, 2026
+**Release Date: 15 March 2026**
 
 **Deployment from Deployment History Fix**
 

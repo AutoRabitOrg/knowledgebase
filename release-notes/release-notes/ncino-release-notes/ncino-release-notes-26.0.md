@@ -2,11 +2,9 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" %}
 
-***
-
 ## nCino - Release 26.1.11
 
-Release Date: 15 March 2026
+**Release Date: 15 March 2026**
 
 **View Dataset Pagination Improvement**
 
@@ -19,6 +17,8 @@ An issue was resolved in the **Feature Management** module where clicking the **
 **Compare Module – Icon Update**
 
 The icons for **Global Compare** and **Field-Level Compare** in the **Compare module** have been updated with new icons to improve visual clarity and consistency in the user interface.
+
+***
 
 ## nCino - Release 26.1.8
 

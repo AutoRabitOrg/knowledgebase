@@ -47,10 +47,10 @@ This feature allows users to select a range of commits from the available commit
 9. After the required revisions are selected, continue with the configuration of the CI Job creation.
 10. Select the required configurations under the “Job Settings” tab of the flow.<br>
 
-    <div align="center" data-full-width="false"><figure><img src="../../../../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure></div>
+    <div align="center" data-full-width="false"><figure><img src="../../../../../../.gitbook/assets/1 (1) (3).png" alt=""><figcaption></figcaption></figure></div>
 11. Once the required configuration is selected, click ‘Save’ on the ‘Preview & Save’ section of the ‘CI Job’ creation screen.
 
-<figure><img src="../../../../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/2 (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 11. Once ‘Save’ is clicked, users are redirected to the ‘CI Job’ list page.
 

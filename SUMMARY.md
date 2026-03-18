@@ -1083,6 +1083,7 @@
     * [Creating Custom Rules with XPath](product-guides/codescan/quality-rules/creating-custom-rules-with-xpath.md)
     * [Configuration for Polyfill.io Vulnerability Rules](product-guides/codescan/quality-rules/configuration-for-polyfill.io-vulnerability-rules.md)
     * [Configuration for Salesforce Metadata Rules](product-guides/codescan/quality-rules/creating-custom-salesforce-metadata-rules.md)
+    * [DUDataflowAnomalyAnalysis Rule](product-guides/codescan/quality-rules/dudataflowanomalyanalysis-rule.md)
     * [Metadata Rules on CodeScan Self-Hosted](product-guides/codescan/quality-rules/metadata-rules-on-codescan-self-hosted.md)
   * [Issues](product-guides/codescan/issues/README.md)
     * [About Issue Status](product-guides/codescan/issues/about-issue-status.md)

@@ -65,6 +65,8 @@ Resolved an issue where certain restore jobs are not retaining the partial selec
 **Unable to replicate files larger than 10MB**\
 Fixed an issue that prevented replication of files larger than 10 MB, ensuring large files are now handled correctly during replication.
 
+***
+
 ## Vault Release Notes 26.1.0
 
 **Release Date: 4 March 2026**

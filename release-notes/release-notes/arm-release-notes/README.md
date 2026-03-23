@@ -127,6 +127,35 @@ CI Jobs
 
 ***
 
+## Data Loader Pro - Release Notes - Version 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+
+Release Date: 22 March 2026
+
+**Flexible Result File Downloads**\
+Users can now download Dataloader Pro job results in their preferred file format, making it easier to consume and share output data. This enhancement allows teams to align exports with their reporting standards or downstream tools without needing manual conversions after download.
+
+***
+
+**Default Columns in Dataloader UI**\
+Default column configurations have been introduced and corrected across Dataloader Basic and Pro screens. Previously, no default view options were applied, forcing users to manually adjust columns each time they accessed a screen. With this fix, users now see a sensible default column set, improving usability and reducing setup time for common workflows.
+
+**Correct Status for Aborted DL Pro Jobs**\
+Aborted DL Pro jobs from the old UI now show an accurate status instead of incorrectly appearing as “Failed” in both the old and new interfaces. This fix improves the reliability of job status reporting, enabling teams to distinguish between genuine failures and intentional aborts, and to analyze actual failure trends more accurately.
+
+***
+
+## DataLoader - Release Notes - Version 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+
+Release Date: 22 March 2026
+
+**Accurate Count(id) in DL Basic Extract**\
+The Count(id) column now correctly displays record counts in the new UI for DL Basic Extract jobs. Earlier, the column appeared empty in the new UI while still showing values in the old UI, leading to confusion and forcing users to cross-check between interfaces. The fix aligns both UIs so users can confidently rely on the new interface for record counts.
+
+**Accurate Count(id) in DL Basic Extract**\
+The Count(id) column now correctly displays record counts in the new UI for DL Basic Extract jobs. Earlier, the column appeared empty in the new UI while still showing values in the old UI, leading to confusion and forcing users to cross-check between interfaces. The fix aligns both UIs so users can confidently rely on the new interface for record counts.
+
+***
+
 ## Release Notes – Version 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
 
 **Release Date:** **15 March 2026**

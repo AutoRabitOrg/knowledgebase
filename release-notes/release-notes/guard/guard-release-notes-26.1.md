@@ -2,9 +2,57 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" fullWidth="false" %}
 
+## Guard 26.1.4 Release Notes
+
+**Release Date:** 25 March 2026
+
+### New Features&#x20;
+
+#### User Security Overview&#x20;
+
+AutoRABIT Guard introduces the **User Security Overview**, a centralized dashboard that provides administrators with a comprehensive, per-user view of security and access within a connected Salesforce org. This feature allows users to select an org and a specific Salesforce user, then review their security posture across multiple dimensions in a single place.&#x20;
+
+The User Security Overview makes it easier to understand what a user can access, why they have that access, and how their account is being used. It brings together key information such as user profile details, effective permissions, connected applications, and login activity into a unified, tabbed interface.&#x20;
+
+Key capabilities:&#x20;
+
+* **User Details**: View profile information, role, status, and last login details. &#x20;
+* **Object-Level Access**: Analyze effective CRUD permissions across all Salesforce objects. &#x20;
+* **Permission Source Transparency**: Understand which profiles and permission sets grant access. &#x20;
+* **Field-Level Security**: Review Read/Edit access at the field level with drill-down visibility. &#x20;
+* **Permission Sets**: Audit assigned permission sets and identify expired or unnecessary access. &#x20;
+* **Connected Applications**: View active OAuth-connected apps and their usage. &#x20;
+* **Login Activity Monitoring**: Analyze login history, including IP, location, and device details. &#x20;
+
+This feature helps security teams quickly investigate access, identify over-permissioned users, detect suspicious activity, and improve overall governance. The feature is read-only and does not impact existing permissions, configurations, or system performance.&#x20;
+
+### Enhancements&#x20;
+
+#### Prevent Password Reuse&#x20;
+
+AutoRABIT Guard now enforces a password reuse restriction, preventing users from reusing previously used passwords. This enhancement improves overall security posture by ensuring stronger password hygiene and reducing the risk of compromised credentials being reused. &#x20;
+
+#### Access Controls become Authorization Policies&#x20;
+
+This update aligns AutoRABIT Guard with industry-standard infosec terminology and better reflects the scope and value of the feature. All references in the UI, workflows, notifications, and documentation have been updated accordingly. There are no changes to functionality, and existing configurations and permissions remain unaffected.&#x20;
+
+#### Improved External Connected App (ECA) Credential Management&#x20;
+
+The External Connected App (ECA) authentication flow has been enhanced to allow users to update OAuth credentials for existing org connections.&#x20;
+
+Users can now update the Client ID and Client Secret and trigger a fresh authentication flow without needing to delete and re-register the org. This reduces operational friction when credentials change and improves overall usability. Existing connected orgs are not impacted.&#x20;
+
+### Bug Fixes&#x20;
+
+#### Improved Export Stability for Large Datasets&#x20;
+
+Export processing has been improved to better handle large datasets, ensuring exports complete successfully even in high-volume environments. Export behavior and format remain unchanged.&#x20;
+
+***
+
 ## Guard 26.1.3 Release Notes
 
-**Release Date: 25 February 2026**&#x20;
+**Release Date:** 25 February 2026&#x20;
 
 ### Enhancements&#x20;
 

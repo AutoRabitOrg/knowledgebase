@@ -20,7 +20,7 @@ If you are in the **AUS** region:
 
 | AUS Instance                    | Elastic IP addresses |
 | ------------------------------- | -------------------- |
-| **https://app-aus.codescan.io** | 54.66.17.50          |
+| **https://app-aus.codescan.io** | 13.237.233.237       |
 
 
 

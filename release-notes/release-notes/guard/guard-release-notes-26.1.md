@@ -108,7 +108,7 @@ Exporting with no records was generating an invalid ZIP file. No-data exports ar
 
 **Release Date:  15 February 2026**&#x20;
 
-### New features&#x20;
+### New Features&#x20;
 
 #### Public Links – Visibility into Exposed Salesforce Files&#x20;
 

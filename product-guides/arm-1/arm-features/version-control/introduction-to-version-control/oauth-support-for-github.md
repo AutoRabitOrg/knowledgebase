@@ -40,7 +40,7 @@ GitHub → Settings → Developer Settings → OAuth Apps → New OAuth App
 
 ***
 
-### Option 2 — GitHub App (Recommended)
+### Option 2 — GitHub App
 
 GitHub Apps are recommended for automation and integrations.
 

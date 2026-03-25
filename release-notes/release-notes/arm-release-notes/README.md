@@ -370,8 +370,9 @@ Introduced OAuth-based authentication support for GitHub repository integration 
 
 > **Note:** This feature is currently available only in the New UI.
 
-For step-by-step guidance, refer to the documentation:\
-[https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github](https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github)
+For step-by-step guidance, refer to the documentation:<br>
+
+[https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/introduction-to-version-control/oauth-support-for-github](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/introduction-to-version-control/oauth-support-for-github)
 
 **Impacted Areas:**\
 Version Control → Repository Registration (GitHub OAuth)

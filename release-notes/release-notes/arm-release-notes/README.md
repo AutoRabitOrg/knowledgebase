@@ -4,9 +4,7 @@
 
 ## Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.13" id="release-notes-version-26.1.13"></a>
 
-**Release Date:** Mar 29, 2026
-
-***
+**Release Date:** **29 March 2026**
 
 #### **Automatic Dependency Fetch for Data Cloud Data Kits**
 
@@ -104,6 +102,8 @@ The system now correctly detects and processes this metadata across workflows.
 
 **Impacted Areas:**\
 EZ Commit, EZ Merge, CI Jobs, Deployments
+
+***
 
 ## Release Notes – Version 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 

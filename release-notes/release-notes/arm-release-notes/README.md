@@ -2,6 +2,109 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
+## Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.13" id="release-notes-version-26.1.13"></a>
+
+**Release Date:** Mar 29, 2026
+
+***
+
+#### **Automatic Dependency Fetch for Data Cloud Data Kits**
+
+ARM now automatically retrieves all dependent metadata for a selected Salesforce Data Cloud Data Kit using connected org credentials. This eliminates the need to manually download and upload the package manifest (`package.xml`) during commit or deployment workflows.
+
+This enhancement streamlines the process, reduces manual effort, and minimizes errors.
+
+**Impacted Areas:**\
+Data Cloud Deployments, Commit Workflow, Org-to-Org Deployment
+
+***
+
+#### **Provar Download Icon Visibility Fix – New UI**
+
+Fixed an issue where the Provar download icon was not displayed for the latest CI job cycle in the **All CI Jobs History** page in the New UI. Previously, it was only visible within individual job history.
+
+The icon is now correctly available for both completed and unstable builds directly from the history view.
+
+**Impacted Areas:**\
+All CI Jobs History (New UI), Provar Downloads
+
+***
+
+#### **Environment Provisioning – Post Deployment Behavior Fix**
+
+Fixed issues with the Post Deployment step to ensure templates are only included when the option is explicitly selected.
+
+This update improves usability and ensures more reliable execution of provisioning steps.
+
+**Impacted Areas:**\
+Environment Provisioning, Migration Templates
+
+***
+
+#### **CodeScan Baseline Not Applied in EZ Commit – Fix**
+
+Resolved an issue where the configured CodeScan baseline was not applied during EZ Commit or Merge operations for mapped Salesforce orgs.
+
+The system now correctly uses the defined baseline for analysis.
+
+**Impacted Areas:**\
+EZ Commit, EZ Merge, SCA Module
+
+***
+
+#### **OmniStudio Components Missing in CI Deployments – Fix**
+
+Fixed an issue where OmniStudio components (such as OmniScript and OmniDataTransform) were excluded from CI deployments when listed under excluded metadata types.
+
+Improved visibility to help identify such configurations and ensure accurate deployments.
+
+**Impacted Areas:**\
+CI Jobs, OmniStudio Deployments
+
+***
+
+#### **CI Jobs History – “More Info” Text Selection Fix**
+
+Fixed a regression in the New UI where users could not select or copy text from the **More Info** popup in CI Jobs History.
+
+Text can now be selected and copied as expected.
+
+**Impacted Areas:**\
+CI Jobs History, More Info Popup (New UI)
+
+***
+
+#### **Missing Bot & GenAI Metadata in Deployments – Fix**
+
+Fixed an issue where GenAI and GenAI Planner Bundle metadata were not included during deployments using Release Labels, even when selected.
+
+Deployments now correctly include all selected metadata components.
+
+**Impacted Areas:**\
+Commits, Deployments
+
+***
+
+#### **Assessment Metadata Missing in Release Label Deployments – Fix**
+
+Resolved an issue where AssessmentQuestionSet and AssessmentQuestion metadata were not included during Release Label deployments.
+
+These components are now properly processed and deployed.
+
+**Impacted Areas:**\
+Deployments, CI Jobs
+
+***
+
+#### **LightningTypeBundle Metadata Not Detected in EZ Commit – Fix**
+
+Fixed an issue where LightningTypeBundle metadata was not retrieved or displayed in Review Artifacts during EZ Commit, resulting in missing diffs.
+
+The system now correctly detects and processes this metadata across workflows.
+
+**Impacted Areas:**\
+EZ Commit, EZ Merge, CI Jobs, Deployments
+
 ## Release Notes – Version 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **22 March 2026**
@@ -261,16 +364,17 @@ CI Jobs with Deployment (Validate Only and Real Deployment) option
 
 ***
 
-#### GitHub OAuth Authentication Support for Repository Integration <a href="#github-oauth-authentication-support-for-repository-integration" id="github-oauth-authentication-support-for-repository-integration"></a>
+#### **GitHub OAuth Authentication Support for Repository Integration (New UI)**
 
-Introduced **OAuth-based authentication support for GitHub repository integration** in ARM alongside the existing **Personal Access Token (PAT)** method. During repository registration, users can select **OAuth as the connection type**, provide the required client ID and client Secret, and authorize access through the GitHub OAuth flow. Upon successful authorization, the repository is securely registered and connected in ARM.
+Introduced OAuth-based authentication support for GitHub repository integration in ARM, alongside the existing Personal Access Token (PAT) method. Users can now select OAuth during repository registration, authorize access via GitHub, and securely connect repositories without manually managing tokens.
 
-**Impacted Areas**\
+> **Note:** This feature is currently available only in the New UI.
+
+For step-by-step guidance, refer to the documentation:\
+[https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github](https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github)
+
+**Impacted Areas:**\
 Version Control → Repository Registration (GitHub OAuth)
-
-**Please use the link below for step-by-step guidance to register a GitHub repository using OAuth**
-
-[**https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github**](https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/git-integration/oauth-support-for-github)
 
 ***
 

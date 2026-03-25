@@ -4,7 +4,7 @@
 
 ## Guard 26.1.4 Release Notes
 
-**Release Date:** 25 March 2026
+**Release Date: 25 March 2026**
 
 ### New Features&#x20;
 
@@ -52,7 +52,7 @@ Export processing has been improved to better handle large datasets, ensuring ex
 
 ## Guard 26.1.3 Release Notes
 
-**Release Date:** 25 February 2026&#x20;
+**Release Date: 25 February 2026**&#x20;
 
 ### Enhancements&#x20;
 

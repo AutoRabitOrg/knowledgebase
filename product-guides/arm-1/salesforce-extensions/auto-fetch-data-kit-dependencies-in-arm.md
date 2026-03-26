@@ -1,4 +1,4 @@
-# Auto-Fetch Data Kit Dependencies in ARM
+# Auto-Fetch Data Kit Dependencies
 
 #### Overview
 

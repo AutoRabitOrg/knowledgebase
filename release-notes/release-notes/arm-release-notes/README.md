@@ -2,13 +2,15 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
-## Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.13" id="release-notes-version-26.1.13"></a>
+### **Release Notes – Version 26.1.13**
 
-**Release Date:** **29 March 2026**
+**Release Date:** March 29, 2026
+
+***
 
 #### **Automatic Dependency Fetch for Data Cloud Data Kits**
 
-ARM now automatically retrieves all dependent metadata for a selected Salesforce Data Cloud Data Kit using connected org credentials. This eliminates the need to manually download and upload the package manifest (`package.xml`) during commit or deployment workflows.
+ARM now automatically retrieves all dependent metadata for a selected Salesforce Data Cloud Data Kit using connected org credentials. This eliminates the need to manually download and upload the package manifest (_package.xml_) during commit or deployment workflows.
 
 This enhancement streamlines the process, reduces manual effort, and minimizes errors.
 
@@ -30,7 +32,7 @@ All CI Jobs History (New UI), Provar Downloads
 
 #### **Environment Provisioning – Post Deployment Behavior Fix**
 
-Fixed issues with the Post Deployment step to ensure templates are only included when the option is explicitly selected.
+Fixed issues with the Post Deployment step to ensure templates are included only when explicitly selected.
 
 This update improves usability and ensures more reliable execution of provisioning steps.
 
@@ -41,7 +43,7 @@ Environment Provisioning, Migration Templates
 
 #### **CodeScan Baseline Not Applied in EZ Commit – Fix**
 
-Resolved an issue where the configured CodeScan baseline was not applied during EZ Commit or Merge operations for mapped Salesforce orgs.
+Resolved an issue where the configured CodeScan baseline was not applied during **EZ Commit** or **EZ Merge** operations for mapped Salesforce orgs.
 
 The system now correctly uses the defined baseline for analysis.
 
@@ -52,9 +54,9 @@ EZ Commit, EZ Merge, SCA Module
 
 #### **OmniStudio Components Missing in CI Deployments – Fix**
 
-Fixed an issue where OmniStudio components (such as OmniScript and OmniDataTransform) were excluded from CI deployments when listed under excluded metadata types.
+Fixed an issue where OmniStudio components (such as **OmniScript** and **OmniDataTransform**) were excluded from CI deployments when listed under excluded metadata types.
 
-Improved visibility to help identify such configurations and ensure accurate deployments.
+Improved visibility helps identify such configurations and ensures accurate deployments.
 
 **Impacted Areas:**\
 CI Jobs, OmniStudio Deployments
@@ -63,9 +65,9 @@ CI Jobs, OmniStudio Deployments
 
 #### **CI Jobs History – “More Info” Text Selection Fix**
 
-Fixed a regression in the New UI where users could not select or copy text from the **More Info** popup in CI Jobs History.
+Fixed a regression in the New UI where users were unable to select or copy text from the **More Info** popup in CI Jobs History.
 
-Text can now be selected and copied as expected.
+Text selection and copying now work as expected.
 
 **Impacted Areas:**\
 CI Jobs History, More Info Popup (New UI)
@@ -74,7 +76,7 @@ CI Jobs History, More Info Popup (New UI)
 
 #### **Missing Bot & GenAI Metadata in Deployments – Fix**
 
-Fixed an issue where GenAI and GenAI Planner Bundle metadata were not included during deployments using Release Labels, even when selected.
+Fixed an issue where **GenAI** and **GenAI Planner Bundle** metadata were not included during deployments using Release Labels, even when selected.
 
 Deployments now correctly include all selected metadata components.
 
@@ -85,7 +87,7 @@ Commits, Deployments
 
 #### **Assessment Metadata Missing in Release Label Deployments – Fix**
 
-Resolved an issue where AssessmentQuestionSet and AssessmentQuestion metadata were not included during Release Label deployments.
+Resolved an issue where **AssessmentQuestionSet** and **AssessmentQuestion** metadata were not included during Release Label deployments.
 
 These components are now properly processed and deployed.
 
@@ -96,12 +98,45 @@ Deployments, CI Jobs
 
 #### **LightningTypeBundle Metadata Not Detected in EZ Commit – Fix**
 
-Fixed an issue where LightningTypeBundle metadata was not retrieved or displayed in Review Artifacts during EZ Commit, resulting in missing diffs.
+Fixed an issue where **LightningTypeBundle** metadata was not retrieved or displayed in **Review Artifacts** during EZ Commit, resulting in missing diffs.
 
 The system now correctly detects and processes this metadata across workflows.
 
 **Impacted Areas:**\
 EZ Commit, EZ Merge, CI Jobs, Deployments
+
+***
+
+#### **GenAI Planner Bundle Inclusion Fix**
+
+Fixed an issue where unselected components from the **GenAI Planner Bundle** were included in deployments when using **Release Label** or **Single Revision**.
+
+Deployments now include only the explicitly selected GenAI components.
+
+**Impacted Areas:**\
+Deployments
+
+***
+
+#### **GenAI Function Retrieval Fix (Non-DX)**
+
+Fixed an issue where **GenAI Function** metadata was not retrieved in the **Deployment Tree** during Single Revision deployments in Non-DX.
+
+The metadata is now correctly fetched from committed revisions for deployment.
+
+**Impacted Areas:**\
+Deployments
+
+***
+
+#### **GenAI Function Packaging Fix (Non-DX Release Label)**
+
+Fixed an issue where **GenAI Function** metadata was missing from the package after **Artifact Preparation** in Non-DX Release Label deployments.
+
+The delta package is now generated correctly during Release Label creation and EZ Commit.
+
+**Impacted Areas:**\
+Release Label Creation, EZ Commit
 
 ***
 

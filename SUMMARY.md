@@ -494,6 +494,7 @@
     * [ARM for Data Cloud](product-guides/arm/integration-and-plugins/arm-for-salesforce-data-cloud.md)
     * [ARM Supported Metadata Types](product-guides/arm/getting-started/understanding-arm/arm-supported-metadata-types.md)
     * [ARM for Agentforce](product-guides/arm/salesforce-extensions/arm-for-agentforce.md)
+    * [Auto-Fetch Data Kit Dependencies in ARM](product-guides/arm/salesforce-extensions/auto-fetch-data-kit-dependencies-in-arm.md)
   * [On-Premises / Dedicated Instances](product-guides/arm/on-premises-dedicated-instances/README.md)
     * [Dedicated Instance Upgrades](product-guides/arm/on-premises-dedicated-instances/upgrade-guides.md)
     * [Upload New License Key](product-guides/arm/on-premises-dedicated-instances/upload-new-license-key.md)

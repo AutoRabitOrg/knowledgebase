@@ -19,18 +19,7 @@ Data Cloud Deployments, Commit Workflow, Org-to-Org Deployment
 
 ***
 
-#### **Provar Download Icon Visibility Fix – New UI**
-
-Fixed an issue where the Provar download icon was not displayed for the latest CI job cycle in the **All CI Jobs History** page in the New UI. Previously, it was only visible within individual job history.
-
-The icon is now correctly available for both completed and unstable builds directly from the history view.
-
-**Impacted Areas:**\
-All CI Jobs History (New UI), Provar Downloads
-
-***
-
-#### **Environment Provisioning – Post Deployment Behavior Fix**
+#### **Environment Provisioning – Post Deployment Behavior Fix -** #201758
 
 Fixed issues with the Post Deployment step to ensure templates are included only when explicitly selected.
 
@@ -41,7 +30,7 @@ Environment Provisioning, Migration Templates
 
 ***
 
-#### **CodeScan Baseline Not Applied in EZ Commit – Fix**
+#### **CodeScan Baseline Not Applied in EZ Commit – Fix - (**#199417,#204388,#204387)
 
 Resolved an issue where the configured CodeScan baseline was not applied during **EZ Commit** or **EZ Merge** operations for mapped Salesforce orgs.
 
@@ -52,7 +41,7 @@ EZ Commit, EZ Merge, SCA Module
 
 ***
 
-#### **OmniStudio Components Missing in CI Deployments – Fix**
+#### **OmniStudio Components Missing in CI Deployments – Fix -** #206010
 
 Fixed an issue where OmniStudio components (such as **OmniScript** and **OmniDataTransform**) were excluded from CI deployments when listed under excluded metadata types.
 
@@ -63,7 +52,7 @@ CI Jobs, OmniStudio Deployments
 
 ***
 
-#### **CI Jobs History – “More Info” Text Selection Fix**
+#### **CI Jobs History – “More Info” Text Selection Fix -** #209352
 
 Fixed a regression in the New UI where users were unable to select or copy text from the **More Info** popup in CI Jobs History.
 
@@ -74,7 +63,7 @@ CI Jobs History, More Info Popup (New UI)
 
 ***
 
-#### **Missing Bot & GenAI Metadata in Deployments – Fix**
+#### **Missing Bot & GenAI Metadata in Deployments – Fix -** #209232
 
 Fixed an issue where **GenAI** and **GenAI Planner Bundle** metadata were not included during deployments using Release Labels, even when selected.
 
@@ -85,7 +74,7 @@ Commits, Deployments
 
 ***
 
-#### **Assessment Metadata Missing in Release Label Deployments – Fix**
+#### **Assessment Metadata Missing in Release Label Deployments – Fix -** #204091
 
 Resolved an issue where **AssessmentQuestionSet** and **AssessmentQuestion** metadata were not included during Release Label deployments.
 
@@ -96,7 +85,7 @@ Deployments, CI Jobs
 
 ***
 
-#### **LightningTypeBundle Metadata Not Detected in EZ Commit – Fix**
+#### **LightningTypeBundle Metadata Not Detected in EZ Commit – Fix -** #210860
 
 Fixed an issue where **LightningTypeBundle** metadata was not retrieved or displayed in **Review Artifacts** during EZ Commit, resulting in missing diffs.
 
@@ -104,39 +93,6 @@ The system now correctly detects and processes this metadata across workflows.
 
 **Impacted Areas:**\
 EZ Commit, EZ Merge, CI Jobs, Deployments
-
-***
-
-#### **GenAI Planner Bundle Inclusion Fix**
-
-Fixed an issue where unselected components from the **GenAI Planner Bundle** were included in deployments when using **Release Label** or **Single Revision**.
-
-Deployments now include only the explicitly selected GenAI components.
-
-**Impacted Areas:**\
-Deployments
-
-***
-
-#### **GenAI Function Retrieval Fix (Non-DX)**
-
-Fixed an issue where **GenAI Function** metadata was not retrieved in the **Deployment Tree** during Single Revision deployments in Non-DX.
-
-The metadata is now correctly fetched from committed revisions for deployment.
-
-**Impacted Areas:**\
-Deployments
-
-***
-
-#### **GenAI Function Packaging Fix (Non-DX Release Label)**
-
-Fixed an issue where **GenAI Function** metadata was missing from the package after **Artifact Preparation** in Non-DX Release Label deployments.
-
-The delta package is now generated correctly during Release Label creation and EZ Commit.
-
-**Impacted Areas:**\
-Release Label Creation, EZ Commit
 
 ***
 

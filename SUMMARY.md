@@ -984,7 +984,7 @@
     * [ARM for Data Cloud](product-guides/arm-1/salesforce-extensions/arm-for-salesforce-data-cloud.md)
     * [Supported Metadata Types](product-guides/arm-1/salesforce-extensions/arm-supported-metadata-types.md)
     * [ARM for Agentforce](product-guides/arm-1/salesforce-extensions/arm-for-agentforce.md)
-    * [Auto-Fetch Data Kit Dependencies in ARM](product-guides/arm-1/salesforce-extensions/auto-fetch-data-kit-dependencies-in-arm.md)
+    * [Auto-Fetch Data Kit Dependencies](product-guides/arm-1/salesforce-extensions/auto-fetch-data-kit-dependencies.md)
   * [Troubleshooting](product-guides/arm-1/troubleshoot/README.md)
     * [Best Practices](product-guides/arm-1/troubleshoot/best-practices/README.md)
       * [API Version Mismatch](product-guides/arm-1/troubleshoot/best-practices/salesforce-api-version-mismatch-for-the-ci-build-and-custom-deployment.md)

@@ -44,7 +44,7 @@ https://vault-qa.autorabit.com/dashboard/setup/addSfOrg
 
 1. Login into Salesforce
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. In **Salesforce**, go to **Setup**.
 3. In **Quick Find**, search **External Client Apps**.

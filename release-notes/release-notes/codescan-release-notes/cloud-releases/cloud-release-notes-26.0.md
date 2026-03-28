@@ -14,6 +14,152 @@ Key points:
 
 ***
 
+## CodeScan Release 26.0.6
+
+**Release Date: 29 March 2026**
+
+### Summary
+
+CodeScan 26.0.6 is comprised of the following 5 components:
+
+* 1 New Feature
+* 4 Application Enhancements
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+**1.     CodeScan Audit Logs API**
+
+**Description**
+
+Currently, the Audit Logging API is available only for internal use by AutoRABIT. This new feature enables our customers to access audit logs via a secure, user-facing API (which is restricted to organization-level administrators with _Administer System_ permissions.
+
+The API will allow these authorized org admins to view system and user activity events related to their organization, ensuring appropriate access controls and data isolation.
+
+**Hypothesis**
+
+If organization administrators are given access to audit logs for their organization, they will be better equipped to monitor platform usage, investigate issues, and meet internal governance or compliance requirements, reducing reliance on CodeScan support for routine operational visibility.
+
+**Value / Purpose**
+
+* Provides greater transparency and trust for enterprise and security-conscious customers.
+* Empowers org admins to self-serve audit and usage insights without support intervention.
+* Supports compliance, security reviews, and internal audits.
+
+### Application Enhancements
+
+**1.     Configurable Default User Role for SSO-Provisioned Users**
+
+**Description**
+
+Currently, users created via SSO are **always provisioned as CodeScan Standard Users**. This creates manual overhead for admins who need certain users to be assigned **Platform User** roles after login.
+
+This new feature allows organization admins to configure the default CodeScan user role (Standard User or Platform User) for users provisioned via SSO, including UI updates in SSO setup, back-end role assignment logic, data model impacts, security considerations, and backward compatibility with existing SSO configurations.
+
+**How It Works**
+
+User type selection directly in the SSO/SAML configuration page to select either Platform Integration Users or Standard users.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The following scenarios have been verified and are working as expected:
+
+* **SAML Connection Creation (New Org)**
+  * Created a SAML connection on a new organization.
+  * Verified login with a user.
+  * Result: User was able to log in successfully.
+* **Platform User Login Validation**
+  * Updated the user type to **Platform User**.
+  * Logged in using a newly created user.
+  * Result: Login was successful, and the user could access **only the My Account page**, as expected for Platform users.
+* **Standard User Login Validation**
+  * Updated the user type to **Standard User.**
+  * Logged in using the new user.
+  * Result: Login was successful as a **Standard User**.
+
+Further, we verified the behavior for the previous user also, and it is working as expected via SAML authentication.&#x20;
+
+**2.     Track Cursor IDE Usage on CodeScan 'IDE USAGE' Page**
+
+**Description**
+
+This CodeScan feature captures the Cursor IDE usage details (User Name, IDE Type = Cursor, Timestamp) within CodeScan Cloud, allowing customers to track IDE adoption, user activity, and engagement trends alongside existing usage data.
+
+Additional details regarding the Cursor IDE usage data:
+
+* Stored consistently with existing IDE usage records
+* Viewable using existing filters:
+  * Individual user
+  * All users
+  * Last X days
+* Can be exported as CSV for reporting and analysis
+
+Verified the Cursor IDE Usage on CodeScan in the page 'IDE USAGE' of the Adminstration and confirmed users are able to see the added Cursor symbol through the API call in the UI of the application. We also verified that existing behavior for VS Code and Intellij is working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;**3.     Updated Filter Message for Security Hotspot CSV Export**
+
+**Description**
+
+When exporting Security Hotspots, if the user chooses a list of filters that do not match any security hotspots, the current message displayed was: **"Security Hotspots not found."**
+
+We have updated the message to provide greater clarity: **"No Security Hotspots have been found with the current filters."**
+
+Verified the updated Security Hotspot export filter message.
+
+* The message displayed is **“No Security Hotspots have been found with the current filters,”** instead of **“Security hotspot is not found.”**
+* Validated exporting Security Hotspots by changing the status to **Acknowledged, Exception, Fixed, and Safe** — the exported count matches the respective status correctly.
+* Validated exporting Security Hotspots with status **To Review** — the export shows the exact count of items currently in the **To Review** state.
+
+All the above scenarios are working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+**4.     Automatically generate Callback URL when adding ECA in Salesforce Org**
+
+**Description**
+
+Currently, while adding an ECA in Salesforce Org, the application does not provide a dynamically generated Callback URL for External Client App (ECA) configuration.
+
+* Users are required to manually construct and enter the Callback URL in Salesforce during ECA setup. The system does not display the exact instance-specific Callback URL within the application, nor does it provide a copy-to-clipboard option.
+* Users will assume the Call back URL as https://**\{{hostname\}}**.codescan.io, but the actual Callback URL that needs to be given while creating the ECA could be different.
+
+This manual process increases the risk of:
+
+* Typographical errors
+* Missing or incomplete URL entries
+* Configuration failures due to incorrect Callback URL
+* Increased onboarding/support effort
+
+**As such, we decided to enhance this feature by:**
+
+* Automatically generating the Callback URL.
+* Dynamically constructing it based on the selected/connected instance/environment (e.g., test, preview).
+* Ensure correct and consistent formatting.
+* Clearly display the generated Callback URL on the “Add Salesforce Org” screen.
+* Make it visible at the point of ECA configuration.
+* Provide a **“Copy”** button next to the generated URL.
+* Allow one-click copying of the exact URL.
+* Prevent manual typing errors.
+
+Steps Taken
+
+Implemented Callback URL button in the UI.
+
+Added a custom tooltip, copy icon and copied label when user copies the URL
+
+We have verified that **Callback URL** is displayed correctly, and the **Copy** button is working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**NOTE:** When hovering over the Callback URL button, the notes are displayed. The notes do not disappear when clicking on the Callback URL. They only disappear when clicking anywhere else on the page. This is the expected behavior.
+{% endhint %}
+
+***
+
 ## CodeScan Release 26.0.5
 
 **Release Date: 15 March 2026**
@@ -41,7 +187,7 @@ Enhanced the Issues CSV export to include a separate column called “**Status M
 
 If the CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing issues outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -70,7 +216,7 @@ Enhanced the Security Hotspot CSV export to include a separate column called “
 
 If the Hotspot CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing hotspots outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -117,11 +263,11 @@ Validated the CSV Security Hotspot Export with Detailed Statuses; below is the v
 * Verified export remains consistent with UI status for the same hotspot set.
 * Confirmed export works for mixed-status datasets and filters/sorting do not alter status values.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -380,7 +526,7 @@ Verified the following scenarios and report that the rule is now working as expe
 * Verified for duplicated traces : verified along with test instance\
   in preview: no duplicated traces
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1081,7 +1227,7 @@ Faster time to market with business requirements
 * Integrated seamlessly with CICD workflows
 * Delivers on the Cursor promise of “making developers extraordinarily productive”
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Application Enhancements
 
@@ -1096,7 +1242,7 @@ If issue comments are included in the CSV export with clear attribution & timest
 
 _The image below illustrates the new format for comments added into CSV exports:_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -1154,11 +1300,11 @@ We have verified all the fixes related to user license counting and orphan membe
    2. Executed dev-provided cleanup SQL query.
    3. Confirmed Orphan entries were successfully deleted.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

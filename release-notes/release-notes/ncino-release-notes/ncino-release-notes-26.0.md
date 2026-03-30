@@ -2,6 +2,14 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" %}
 
+## nCino - Release 26.1.13
+
+**Release Date: 29 March 2026**
+
+**Streamlined Feature Migration Logging**
+
+HTTP response bodies are no longer logged in standard logs. Logging now captures only essential details such as status, endpoint, request ID, and response time—reducing log noise and improving security.
+
 ## nCino - Release 26.1.11
 
 **Release Date: 15 March 2026**

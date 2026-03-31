@@ -72,13 +72,36 @@ Search results are presented in a structured comparison view, allowing users to 
 
 
     ![](<../../../.gitbook/assets/Unknown image (21) (1)>)
-3. Modify the auto-generated query if customization is needed.
-4.  The query section dynamically updates based on the selected fields and filters.
+3.  Locate the **Case Sensitive** toggle at the bottom of the screen.
+
+    Enable or disable the **Case Sensitive** option based on the requirement:
+
+    * Enabled: Applies case-sensitive filtering to text-based fields
+    * Disabled: Applies case-insensitive filtering
+
+    Click the **info (i)** icon next to the toggle to view additional details.
+
+
+
+    <figure><img src="../../../.gitbook/assets/62.png" alt=""><figcaption></figcaption></figure>
+4.  The **Case sensitivity info** popup is displayed.
+
+    Review the details:
+
+    * Case-sensitive search is enabled by default for text-based fields when using operators such as **Starts with**, **Ends with**, **Contains**, **Equals**, and **Not Equals**
+    * Disabling this option enables case-insensitive search, which may impact query performance
+
+
+
+    <figure><img src="../../../.gitbook/assets/63.png" alt=""><figcaption></figcaption></figure>
+5. Click **OK** to close the popup.
+6. Modify the auto-generated query if customization is needed.
+7.  The query section dynamically updates based on the selected fields and filters.
 
 
 
     ![](<../../../.gitbook/assets/Unknown image (22) (1)>)
-5. Click **Next** to proceed.
+8. Click **Next** to proceed.
 
 #### **Save Configuration**
 

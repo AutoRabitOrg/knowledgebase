@@ -188,25 +188,81 @@
     <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 51. Click on the “info” icon under the “Job Info” to open the “Live Masking Config Info”.
 
+***
 
+## Date Range-Based Masking
 
+#### **Step 1: Select Object and Open Masking Rules**
 
+Navigate to **Live Data Masking → Job Config**.\
+Locate the required object from the list.
 
+<figure><img src="../../../.gitbook/assets/1 (5).png" alt=""><figcaption></figcaption></figure>
 
+Select the checkbox for the object.\
+Click the **Masking Rules** icon under the **Masking Rules** column.
 
+#### **Step 2: Open Masking Rules Popup**
 
+The **Selected Object** window is displayed.
 
+<figure><img src="../../../.gitbook/assets/2 (5).png" alt=""><figcaption></figcaption></figure>
 
+Review the existing masking rules for the selected object.\
+Click **NEW MASKING RULE** to create a new rule.
 
+#### **Step 3: Enter Masking Rule Details**
 
+The **Masking Rule** screen is displayed.
 
+<figure><img src="../../../.gitbook/assets/3 (6).png" alt=""><figcaption></figcaption></figure>
 
+Enter the **Rule Name**.\
+Ensure the rule name follows the allowed format (alphanumeric, `_`, `-`, and spaces).
 
+Verify that the **Select Object** field is pre-populated (e.g., **Account**).
 
+#### **Step 4: Select Field Type**
 
+Click the **Field Type** dropdown.
 
+<figure><img src="../../../.gitbook/assets/4 (6).png" alt=""><figcaption></figcaption></figure>
 
+Select the required field type (e.g., **date**, **double**, **picklist**, **textarea**, **encryptedstring**, **url**).
 
+#### **Step 5: Select Masking Style**
 
+Click the **Masking Style** dropdown.
 
+<figure><img src="../../../.gitbook/assets/5 (5).png" alt=""><figcaption></figcaption></figure>
+
+Select the required masking style (e.g., **substitution**, **dateRange**).
+
+#### **Step 6: Configure Date Range**
+
+If **dateRange** is selected:
+
+<figure><img src="../../../.gitbook/assets/6 (5).png" alt=""><figcaption></figcaption></figure>
+
+Enter the required date range in the **Enter a date range** field.\
+Use the calendar icon to select dates.
+
+#### **Step 7: Select Date Range from Calendar**
+
+Choose the start and end dates from the calendar.
+
+<figure><img src="../../../.gitbook/assets/7 (4).png" alt=""><figcaption></figcaption></figure>
+
+Verify that the selected range is populated in the **Enter a date range** field.\
+Confirm that the corresponding **Masking Value** is auto-generated.
+
+#### **Screenshot 8: Select Fields and Save Rule**
+
+Select the required fields from the list using the checkboxes.
+
+<figure><img src="../../../.gitbook/assets/8 (5).png" alt=""><figcaption></figcaption></figure>
+
+(Optional) Enable **Add to Org - 'Org Name' Masking Rules List** to save the rule at the org level.
+
+Click **SAVE** to create the masking rule.
 

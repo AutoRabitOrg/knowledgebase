@@ -4,9 +4,7 @@
 
 ### **Release Notes – Version 26.1.13**
 
-**Release Date:** March 29, 2026
-
-***
+**Release Date: 29 March 2026**
 
 #### **Automatic Dependency Fetch for Data Cloud Data Kits**
 
@@ -94,19 +92,23 @@ The system now correctly detects and processes this metadata across workflows.
 **Impacted Areas:**\
 EZ Commit, EZ Merge, CI Jobs, Deployments
 
-## Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+***
+
+## DataLoader Pro Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **29 March 2026**
 
-DL PRO - **Pagination Issue in DataLoader Pro (New UI)**
+**DataLoader Pro - Pagination Issue in DataLoader Pro (New UI)**
 
 Resolved an issue where pagination did not function correctly after fetching objects in DataLoader Pro job configuration. Pagination now works as expected when navigating through master objects.
 
-## Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+***
+
+## DataLoader Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **29 March 2026**
 
-DL Basic - **Concurrent Job Validation in Data Loader Basic (New UI)**
+**DataLoader Basic** - **Concurrent Job Validation in Data Loader Basic (New UI)**
 
 Fixed an issue where multiple jobs could be triggered for the same org without proper validation. The system now correctly prevents concurrent job execution and displays an appropriate error message when a job is already in progress.
 

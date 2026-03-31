@@ -593,6 +593,7 @@
       * [What can I do with ARM?](product-guides/arm-1/getting-started/understanding-arm/what-can-i-do-with-arm.md)
       * [Who can use ARM?](product-guides/arm-1/getting-started/understanding-arm/who-can-use-arm.md)
       * [ARM Supported Metadata Types](product-guides/arm-1/getting-started/understanding-arm/arm-supported-metadata-types.md)
+      * [Excluded Metadata Types in ARM](product-guides/arm-1/getting-started/understanding-arm/excluded-metadata-types-in-arm.md)
     * [Navigating ARM](product-guides/arm-1/getting-started/navigating-arm.md)
   * [Settings (ADMIN)](product-guides/arm-1/getting-started-1/README.md)
     * [Access Management](product-guides/arm-1/arm-administration/README.md)

@@ -2,6 +2,60 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
+### **Release Notes – Version 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
+
+**Release Date:** Apr 5, 2026
+
+***
+
+#### Here’s your content with proper numbering: <a href="#heres-your-content-with-proper-numbering" id="heres-your-content-with-proper-numbering"></a>
+
+1. **Custom Setting Migration Template – Save Confirmation Pop-up Fix (New UI) \[SupportCase#205885]**\
+   Fixed an issue where newly provisioned data values were not displayed in the Save confirmation pop-up while creating or editing a Custom Setting migration template in the New UI. This prevented users from verifying configuration details before saving.\
+   This issue was limited to the New UI and did not impact the Old UI.\
+   **Impacted Areas:**\
+   Environment Provisioning, Custom Setting Migration Template (Save & Edit – New UI)
+2. **Quick Deploy Not Enabled for UseSalesforceDefaults – Fix \[Support Case #203174]**\
+   Fixed an issue where the Quick Deploy option was not available in CI jobs when using the UseSalesforceDefaults test level, even though it was supported and enabled in the Salesforce Production org.\
+   This update ensures ARM behavior aligns with Salesforce by correctly enabling Quick Deploy based on the selected test level.\
+   **Impacted Areas:**\
+   CI Jobs (Org-to-Org, VC-to-Org Deployments)
+3. **CI Job Stuck in In-Progress State Blocking PR Validation Trigger – Fix \[Support Case #201347]**\
+   Fixed an issue where CI jobs remained in an In-progress state in the Job History UI even after successful validation. This prevented subsequent CI builds, including PR validation jobs, from triggering automatically.\
+   The issue also caused abort actions from the UI to fail. With this fix, CI job statuses are now correctly updated upon completion, ensuring normal job execution flow.\
+   **Impacted Areas:**\
+   CI Jobs
+4. **AI Metadata Components Not Processed in Org-to-Org Deployments – Fix \[Support Case #201393]**\
+   Fixed an issue where AI metadata components (GenAiFunction) were not properly processed during Org-to-Org deployments, causing compare operations to hang indefinitely and direct deployments to fail with a “No changes found” message.\
+   This update ensures AI metadata components are correctly considered during deployment and comparison workflows, enabling successful execution.\
+   **Impacted Areas:**\
+   Deployments (Org-to-Org)
+5. **Release Label Not Fetching Latest HEAD Revisions – Fix \[Support Case #201799]**\
+   Fixed an issue where merged revisions from pull requests were not being fetched during Release Label creation, even though they were present in the remote repository. This led to discrepancies where revisions were visible in EZ-Merge but missing in Release Label selection.\
+   This update improves the revision-fetching logic to include all relevant folder-based and merged revisions, ensuring consistency across features.\
+   **Impacted Areas:**\
+   Release Labels, EZ-Merge, CI Job Configuration, Deployments (Single Revision & Range), nCino Flows
+6. **Commit History Date Format Inconsistency – Fix \[Support Case #209987]**\
+   Fixed an issue where the commit history date format in the New UI differed from the Old UI. Previously, the New UI displayed dates in DD/MM/YY format, while the Old UI followed MM/DD/YY, leading to inconsistency.\
+   This update standardizes the date format in the New UI to match the Old UI for a consistent user experience.\
+   **Impacted Areas:**\
+   Commit History, Version Control
+7. **Save Button Triggering Re-authentication in Salesforce Org Details – Fix \[Support Case #213381]**\
+   Fixed an issue where clicking the Save button in the Salesforce Org Detail page incorrectly triggered the re-authentication flow, redirecting users to the Salesforce login page.\
+   This update ensures that the Save action only updates org details within the application, while the Re-authenticate action correctly handles the login flow, maintaining clear separation of functionality.\
+   **Impacted Areas:**\
+   Settings → Salesforce Org
+8. **EZ Commit Pagination Infinite Loop in New UI – Fix \[Support Case #213239]**\
+   Fixed an issue in the EZ Commit flow where the paginated component list entered an infinite loop when users rapidly navigated between pages after setting a higher pagination limit.\
+   This update improves pagination handling to ensure smooth and stable navigation across component lists.\
+   **Impacted Areas:**\
+   Version Control (EZ Commit), Metadata Selection Pagination (New UI)
+9. **Unable to Add Users in New UI Due to Missing Mail Extension – Fix \[Support Case #214523]**\
+   Fixed an issue where admins were unable to add new users in the New UI because the mail extension dropdown appeared empty, preventing user creation.\
+   This update ensures the default domain is correctly handled and displayed, allowing admins to successfully add users.\
+   **Impacted Areas:**\
+   Admin → User Management (New UI)
+
 ### **Release Notes – Version 26.1.13**
 
 **Release Date: 29 March 2026**

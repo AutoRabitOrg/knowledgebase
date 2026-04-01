@@ -1,4 +1,4 @@
-# Athena Access Permissions
+# AWS IAM Permissions Setup for Athena, Glue, and KMS (Vault Integration)
 
 #### 1) Purpose <a href="#id-1-purpose" id="id-1-purpose"></a>
 
@@ -8,7 +8,7 @@ Provide **required permissions** for a user/role to run queries in **Amazon Athe
 
 ### 2) Scope <a href="#id-2-scope" id="id-2-scope"></a>
 
-This runbook applies to:
+This applies to:
 
 * AWS Account: **\<account-id / name>**
 * IAM Entity to grant access:

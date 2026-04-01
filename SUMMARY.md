@@ -1253,7 +1253,7 @@
   * [Vault Best Practices](product-guides/vault/vault-best-practices.md)
   * [Vault-FAQs](product-guides/vault/vault-faqs/README.md)
     * [Vault-FAQs](product-guides/vault/vault-faqs/common-restore-errors-and-solutions/README.md)
-      * [Athena Access Permissions](product-guides/vault/vault-faqs/common-restore-errors-and-solutions/athena-access-permissions.md)
+      * [AWS IAM Permissions Setup for Athena, Glue, and KMS (Vault Integration)](product-guides/vault/vault-faqs/common-restore-errors-and-solutions/aws-iam-permissions-setup-for-athena-glue-and-kms-vault-integration.md)
     * [Common Error Messages](product-guides/vault/vault-faqs/common-restore-errors-and-solutions-1.md)
     * [Limitations](product-guides/vault/vault-faqs/limitations.md)
     * [Unsupported Metadata Types](product-guides/vault/vault-faqs/page-1.md)

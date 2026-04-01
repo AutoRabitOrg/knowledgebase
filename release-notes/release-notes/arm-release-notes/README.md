@@ -6,51 +6,49 @@
 
 **Release Date:** April 5, 2026
 
-***
-
-#### Here’s your content with proper numbering: <a href="#heres-your-content-with-proper-numbering" id="heres-your-content-with-proper-numbering"></a>
+#### &#x20;<a href="#heres-your-content-with-proper-numbering" id="heres-your-content-with-proper-numbering"></a>
 
 1. **Custom Setting Migration Template – Save Confirmation Pop-up Fix (New UI) \[SupportCase#205885]**\
    Fixed an issue where newly provisioned data values were not displayed in the Save confirmation pop-up while creating or editing a Custom Setting migration template in the New UI. This prevented users from verifying configuration details before saving.\
    This issue was limited to the New UI and did not impact the Old UI.\
    **Impacted Areas:**\
-   Environment Provisioning, Custom Setting Migration Template (Save & Edit – New UI)
-2. **Quick Deploy Not Enabled for UseSalesforceDefaults – Fix \[Support Case #203174]**\
+   Environment Provisioning, Custom Setting Migration Template (Save & Edit – New UI)<br>
+2. **Quick Deploy Not Enabled for UseSalesforceDefaults – \[Support Case #203174]**\
    Fixed an issue where the Quick Deploy option was not available in CI jobs when using the UseSalesforceDefaults test level, even though it was supported and enabled in the Salesforce Production org.\
    This update ensures ARM behavior aligns with Salesforce by correctly enabling Quick Deploy based on the selected test level.\
    **Impacted Areas:**\
-   CI Jobs (Org-to-Org, VC-to-Org Deployments)
-3. **CI Job Stuck in In-Progress State Blocking PR Validation Trigger – Fix \[Support Case #201347]**\
+   CI Jobs (Org-to-Org, VC-to-Org Deployments)<br>
+3. **CI Job Stuck in In-Progress State Blocking PR Validation Trigger – \[Support Case #201347]**\
    Fixed an issue where CI jobs remained in an In-progress state in the Job History UI even after successful validation. This prevented subsequent CI builds, including PR validation jobs, from triggering automatically.\
    The issue also caused abort actions from the UI to fail. With this fix, CI job statuses are now correctly updated upon completion, ensuring normal job execution flow.\
    **Impacted Areas:**\
-   CI Jobs
-4. **AI Metadata Components Not Processed in Org-to-Org Deployments – Fix \[Support Case #201393]**\
+   CI Jobs<br>
+4. **AI Metadata Components Not Processed in Org-to-Org Deployments –  \[Support Case #201393]**\
    Fixed an issue where AI metadata components (GenAiFunction) were not properly processed during Org-to-Org deployments, causing compare operations to hang indefinitely and direct deployments to fail with a “No changes found” message.\
    This update ensures AI metadata components are correctly considered during deployment and comparison workflows, enabling successful execution.\
    **Impacted Areas:**\
-   Deployments (Org-to-Org)
-5. **Release Label Not Fetching Latest HEAD Revisions – Fix \[Support Case #201799]**\
+   Deployments (Org-to-Org)<br>
+5. **Release Label Not Fetching Latest HEAD Revisions –  \[Support Case #201799]**\
    Fixed an issue where merged revisions from pull requests were not being fetched during Release Label creation, even though they were present in the remote repository. This led to discrepancies where revisions were visible in EZ-Merge but missing in Release Label selection.\
    This update improves the revision-fetching logic to include all relevant folder-based and merged revisions, ensuring consistency across features.\
    **Impacted Areas:**\
-   Release Labels, EZ-Merge, CI Job Configuration, Deployments (Single Revision & Range), nCino Flows
-6. **Commit History Date Format Inconsistency – Fix \[Support Case #209987]**\
+   Release Labels, EZ-Merge, CI Job Configuration, Deployments (Single Revision & Range), nCino Flows<br>
+6. **Commit History Date Format Inconsistency –  \[Support Case #209987]**\
    Fixed an issue where the commit history date format in the New UI differed from the Old UI. Previously, the New UI displayed dates in DD/MM/YY format, while the Old UI followed MM/DD/YY, leading to inconsistency.\
    This update standardizes the date format in the New UI to match the Old UI for a consistent user experience.\
    **Impacted Areas:**\
-   Commit History, Version Control
-7. **Save Button Triggering Re-authentication in Salesforce Org Details – Fix \[Support Case #213381]**\
+   Commit History, Version Control<br>
+7. **Save Button Triggering Re-authentication in Salesforce Org Details –  \[Support Case #213381]**\
    Fixed an issue where clicking the Save button in the Salesforce Org Detail page incorrectly triggered the re-authentication flow, redirecting users to the Salesforce login page.\
    This update ensures that the Save action only updates org details within the application, while the Re-authenticate action correctly handles the login flow, maintaining clear separation of functionality.\
    **Impacted Areas:**\
-   Settings → Salesforce Org
-8. **EZ Commit Pagination Infinite Loop in New UI – Fix \[Support Case #213239]**\
+   Settings → Salesforce Org<br>
+8. **EZ Commit Pagination Infinite Loop in New UI –  \[Support Case #213239]**\
    Fixed an issue in the EZ Commit flow where the paginated component list entered an infinite loop when users rapidly navigated between pages after setting a higher pagination limit.\
    This update improves pagination handling to ensure smooth and stable navigation across component lists.\
    **Impacted Areas:**\
-   Version Control (EZ Commit), Metadata Selection Pagination (New UI)
-9. **Unable to Add Users in New UI Due to Missing Mail Extension – Fix \[Support Case #214523]**\
+   Version Control (EZ Commit), Metadata Selection Pagination (New UI)<br>
+9. **Unable to Add Users in New UI Due to Missing Mail Extension –  \[Support Case #214523]**\
    Fixed an issue where admins were unable to add new users in the New UI because the mail extension dropdown appeared empty, preventing user creation.\
    This update ensures the default domain is correctly handled and displayed, allowing admins to successfully add users.\
    **Impacted Areas:**\
@@ -60,7 +58,7 @@
 
 **Release Date: 29 March 2026**
 
-#### **Automatic Dependency Fetch for Data Cloud Data Kits**
+#### **Automatic Dependency Fetch for Data Cloud Data Kits (DX only) - New UI**
 
 ARM now automatically retrieves all dependent metadata for a selected Salesforce Data Cloud Data Kit using connected org credentials. This eliminates the need to manually download and upload the package manifest (_package.xml_) during commit or deployment workflows.
 
@@ -71,7 +69,7 @@ Data Cloud Deployments, Commit Workflow, Org-to-Org Deployment
 
 ***
 
-#### **Environment Provisioning – Post Deployment Behavior Fix -** #201758
+#### **Environment Provisioning – Post Deployment Behaviour Fix -** #201758
 
 Fixed issues with the Post Deployment step to ensure templates are included only when explicitly selected.
 
@@ -79,8 +77,6 @@ This update improves usability and ensures more reliable execution of provisioni
 
 **Impacted Areas:**\
 Environment Provisioning, Migration Templates
-
-***
 
 #### **CodeScan Baseline Not Applied in EZ Commit – Fix - (**#199417,#204388,#204387)
 
@@ -91,8 +87,6 @@ The system now correctly uses the defined baseline for analysis.
 **Impacted Areas:**\
 EZ Commit, EZ Merge, SCA Module
 
-***
-
 #### **OmniStudio Components Missing in CI Deployments – Fix -** #206010
 
 Fixed an issue where OmniStudio components (such as **OmniScript** and **OmniDataTransform**) were excluded from CI deployments when listed under excluded metadata types.
@@ -101,8 +95,6 @@ Improved visibility helps identify such configurations and ensures accurate depl
 
 **Impacted Areas:**\
 CI Jobs, OmniStudio Deployments
-
-***
 
 #### **CI Jobs History – “More Info” Text Selection Fix -** #209352
 
@@ -113,8 +105,6 @@ Text selection and copying now work as expected.
 **Impacted Areas:**\
 CI Jobs History, More Info Popup (New UI)
 
-***
-
 #### **Missing Bot & GenAI Metadata in Deployments – Fix -** #209232
 
 Fixed an issue where **GenAI** and **GenAI Planner Bundle** metadata were not included during deployments using Release Labels, even when selected.
@@ -124,8 +114,6 @@ Deployments now correctly include all selected metadata components.
 **Impacted Areas:**\
 Commits, Deployments
 
-***
-
 #### **Assessment Metadata Missing in Release Label Deployments – Fix -** #204091
 
 Resolved an issue where **AssessmentQuestionSet** and **AssessmentQuestion** metadata were not included during Release Label deployments.
@@ -134,8 +122,6 @@ These components are now properly processed and deployed.
 
 **Impacted Areas:**\
 Deployments, CI Jobs
-
-***
 
 #### **LightningTypeBundle Metadata Not Detected in EZ Commit – Fix -** #210860
 

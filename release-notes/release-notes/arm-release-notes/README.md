@@ -4,7 +4,7 @@
 
 ### **Release Notes – Version 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
 
-**Release Date:** Apr 5, 2026
+**Release Date:** April 5, 2026
 
 ***
 

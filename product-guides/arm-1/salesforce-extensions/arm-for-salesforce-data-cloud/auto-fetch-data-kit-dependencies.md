@@ -57,14 +57,14 @@ Select the option that supports Data Kit-based retrieval.
 **Step 5: Select the Required Data Kit**\
 From the list of available Data Kits, select the Data Kit you want to commit.
 
-<figure><img src="../../../.gitbook/assets/image (2466).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2466).png" alt=""><figcaption></figcaption></figure>
 
 **Step 6: Fetch Dependencies Automatically**\
 Once the Data Kit is selected, ARM automatically connects to Salesforce and retrieves all dependent metadata associated with that Data Kit.
 
 No manual manifest upload is required.
 
-<figure><img src="../../../.gitbook/assets/image (2467).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2467).png" alt=""><figcaption></figcaption></figure>
 
 **Step 7: Review Retrieved Components**\
 Review the list of fetched metadata members displayed in the workflow.

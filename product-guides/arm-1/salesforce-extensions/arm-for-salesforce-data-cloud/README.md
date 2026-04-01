@@ -1,4 +1,4 @@
-# ARM for Salesforce Data Cloud
+# ARM for Data Cloud
 
 **Last Updated:** 31 October 2025\
 **Applies to:** AutoRABIT ARM 25.4.5 and later<br>
@@ -71,7 +71,7 @@ Ensure the deployment user has full access to all **Data Cloud objects and field
 
 _Note: Standard Data Kits (used in customer solutions) lock certain metadata post-installation._
 
-### &#x20;Step 2: Commit in AutoRABIT ARM <a href="#step-2-commit-in-autorabit-arm" id="step-2-commit-in-autorabit-arm"></a>
+### Step 2: Commit in AutoRABIT ARM <a href="#step-2-commit-in-autorabit-arm" id="step-2-commit-in-autorabit-arm"></a>
 
 1. Navigate to **Create New → New EZ-Commit**.
 2. Select the **Data Cloud Source Org** and **DX repository** (recommended).
@@ -118,45 +118,39 @@ After the deployment succeeds:
 | FieldSrcTrgtRelationship     | Yes                     | Yes                       | -           |
 | DataKitObjectDependency      | Yes                     | Yes                       | -           |
 | DataKitObjectTemplate        | Yes                     | Yes                       | -           |
-| ActivationPlatform           | Yes                     |  -                        | Yes         |
-| ActvPlatformAdncIdentifier   | Yes                     |  -                        | Yes         |
-| CustomerDataPlatformSettings | Yes                     |  -                        | Yes         |
-| DataConnectorIngestApi       | Yes                     |  -                        | Yes         |
-| DataSourceTenant             | Yes                     |  -                        | Yes         |
-| DataStreamDefinition         | Yes                     |  -                        | Yes         |
-| ExternalDataConnector        | Yes                     |  -                        | Yes         |
-| ExternalDataSource           | Yes                     |  -                        | Yes         |
-| ExtDataTranFieldTemplate     | Yes                     |  -                        | Yes         |
-| ExtDataTranObjectTemplate    | Yes                     |  -                        | Yes         |
-| InternalDataConnector        | Yes                     |  -                        | Yes         |
-| MarketSegmentDefinition      | Yes                     |  -                        | Yes         |
-| MktCalcInsightObjectDef      | Yes                     |  -                        | Yes         |
-| MktDataTranObject            | Yes                     |  -                        | Yes         |
-| ObjectSourceTargetMap        | Yes                     |  -                        | Yes         |
-| ActivationPlatformActvAttr   | Yes                     |  -                        | Yes         |
-| StreamingAppDataConnector    | Yes                     |  -                        | Yes         |
-| ActivationPlatformField      | Yes                     |  -                        |  No         |
-| ActvPfrmDataConnectorS3      | Yes (Excluded for SFDX) |  -                        |             |
-| ActvPlatformFieldValue       | Yes (Excluded for SFDX) |  -                        |  No         |
-| AIPlugInUtteranceDef         | Yes                     |  -                        |             |
-| DataConnector                | Yes                     |  -                        |             |
-| DataConnectorS3              | Yes                     |  -                        |             |
-| DataSourceField              | Yes                     |  -                        |             |
-| ExternalDataTranObject       | Yes                     |  -                        |  No         |
+| ActivationPlatform           | Yes                     | -                         | Yes         |
+| ActvPlatformAdncIdentifier   | Yes                     | -                         | Yes         |
+| CustomerDataPlatformSettings | Yes                     | -                         | Yes         |
+| DataConnectorIngestApi       | Yes                     | -                         | Yes         |
+| DataSourceTenant             | Yes                     | -                         | Yes         |
+| DataStreamDefinition         | Yes                     | -                         | Yes         |
+| ExternalDataConnector        | Yes                     | -                         | Yes         |
+| ExternalDataSource           | Yes                     | -                         | Yes         |
+| ExtDataTranFieldTemplate     | Yes                     | -                         | Yes         |
+| ExtDataTranObjectTemplate    | Yes                     | -                         | Yes         |
+| InternalDataConnector        | Yes                     | -                         | Yes         |
+| MarketSegmentDefinition      | Yes                     | -                         | Yes         |
+| MktCalcInsightObjectDef      | Yes                     | -                         | Yes         |
+| MktDataTranObject            | Yes                     | -                         | Yes         |
+| ObjectSourceTargetMap        | Yes                     | -                         | Yes         |
+| ActivationPlatformActvAttr   | Yes                     | -                         | Yes         |
+| StreamingAppDataConnector    | Yes                     | -                         | Yes         |
+| ActivationPlatformField      | Yes                     | -                         | No          |
+| ActvPfrmDataConnectorS3      | Yes (Excluded for SFDX) | -                         |             |
+| ActvPlatformFieldValue       | Yes (Excluded for SFDX) | -                         | No          |
+| AIPlugInUtteranceDef         | Yes                     | -                         |             |
+| DataConnector                | Yes                     | -                         |             |
+| DataConnectorS3              | Yes                     | -                         |             |
+| DataSourceField              | Yes                     | -                         |             |
+| ExternalDataTranObject       | Yes                     | -                         | No          |
 
-\
-**Testing Conclusions**
 
-1. The metadata types which have **Package.xml - Yes** should follow the above mentioned steps for Commit, Deployments & CI Jobs.
-2. The metadata types which have **Package.xml - No** can follow the regular steps \[any type] for Commit, Deployments & CI Jobs. (Deployments might fail for the components \[Details are mentioned in the table]).
-3. Merge, Release Label, Branching Baseline is working for all the metadata types with both DX & NON-DX repositories.
-
-\*\* All the above implies for both Constructive and Destructive changes.
 
 ### Quick Summary for New Users <a href="#quick-summary-for-new-users" id="quick-summary-for-new-users"></a>
 
 * Create a **DevOps Data Kit** with all your Data Cloud metadata.
 * Use **EZ-Commit** with `package.xml` (DX repo only).
+* Non DX Repo's are not supported as of now.
 * Deploy via **Single Revision** and activate from **Data Cloud Setup**.
 * Always reauthorize connectors and verify Data Space configurations.
 * Do **not** mix standard Salesforce metadata with Data Cloud types.

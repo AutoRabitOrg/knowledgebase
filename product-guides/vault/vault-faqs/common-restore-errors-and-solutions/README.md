@@ -204,7 +204,7 @@ It is impossible to mask existing data in a backup, as backups are kept immutabl
 
 Users can verify the expiry date by reviewing the backup history in Vault. In our application, a column will display the backup's expiration date.
 
-<figure><img src="../../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
 
 ### Can I migrate data from other Salesforce backup solutions?
 

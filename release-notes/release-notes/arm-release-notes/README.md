@@ -2,11 +2,11 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
 
-### **Release Notes – Version 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
+## **ARM Release Notes 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
 
-**Release Date:** April 5, 2026
+**Release Date: 05 April 2026**
 
-#### &#x20;<a href="#heres-your-content-with-proper-numbering" id="heres-your-content-with-proper-numbering"></a>
+
 
 1. **Custom Setting Migration Template – Save Confirmation Pop-up Fix (New UI) \[SupportCase#205885]**\
    Fixed an issue where newly provisioned data values were not displayed in the Save confirmation pop-up while creating or editing a Custom Setting migration template in the New UI. This prevented users from verifying configuration details before saving.\
@@ -54,7 +54,9 @@
    **Impacted Areas:**\
    Admin → User Management (New UI)
 
-### **Release Notes – Version 26.1.13**
+***
+
+### **ARM Release Notes – Version 26.1.13**
 
 **Release Date: 29 March 2026**
 
@@ -69,7 +71,7 @@ Data Cloud Deployments, Commit Workflow, Org-to-Org Deployment
 
 ***
 
-#### **Environment Provisioning – Post Deployment Behaviour Fix -** #201758
+#### **Environment Provisioning – Post Deployment Behavior Fix -** #201758
 
 Fixed issues with the Post Deployment step to ensure templates are included only when explicitly selected.
 

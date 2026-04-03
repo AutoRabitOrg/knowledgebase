@@ -2,6 +2,82 @@
 
 ## Vault Release Notes 26.1.1
 
+**Release Date: 08 April 2026**
+
+**Vault On‑prem search & compare failure**
+
+* Resolved failures in Vault On‑prem search and compare jobs to ensure jobs complete successfully.
+
+**Partial child records Fetched When “Include All Child Objects” selected**
+
+* Corrected Replicate behavior so “Include All Child Objects” now processes all expected child records.
+
+**HIVE\_BAD\_DATA due to isDeleted type mismatch**
+
+* Fixed a type mismatch between Parquet files and table schema for `isDeleted` that caused HIVE\_BAD\_DATA errors in Search jobs.
+
+**Masking info icon shown without rules**
+
+* Updated UI to hide the masking info icon when no masking rules are configured.
+
+**Slow compare jobs for same dataset**
+
+* Improved Search & Compare performance where compare jobs were taking significantly longer than earlier runs on the same dataset.
+
+**Restore module missing for sub‑user**
+
+* Identified that the missing module issue was caused by insufficient permissions, and enhanced the error handling to display a clear and informative message indicating the permission constraint.
+
+**nCino backup retention mismatch**
+
+* Aligned backup retention details so configuration and edit views show consistent values for nCino backups.
+
+**Sub‑user org registration failure**
+
+* Resolved issues causing org registration to fail for sub‑users.
+
+**Date range masking timestamp shift**
+
+* Fixed a defect where date range masking altered the timestamp for datetime records.
+
+**“Edit Client Keys” auth flow issues**
+
+* Addressed authentication flow problems in the “Edit Client Keys” screen to provide a reliable sign‑in experience.
+
+**Retention period edit view mismatch**
+
+* Corrected retention period editing so years, months, and days are all displayed consistently instead of only days.
+
+**No max limit shown for retention period**
+
+* Added validation/feedback so the maximum allowed retention limit is enforced and clearly shown.
+
+**Task restore records mismatch**
+
+* Fixed Task Restore so it now restores the correct set of records as expected.
+
+**Date range masking issues in Replicate & Live Masking**
+
+* Resolved date range masking inconsistencies affecting both Replicate and Live Data Masking configurations.
+
+**Synthetic backup record count higher than actual**
+
+* Fixed synthetic backup logic so generated record counts now align with actual data volumes.
+
+**Vault on‑prem checklist**
+
+* Introduced/updated an on‑prem validation checklist for Vault deployments to standardize setup and verification.
+
+**Performance degradation in parallel Search & Compare**
+
+* Optimized system resources and job handling to reduce CPU, memory, and I/O bottlenecks during parallel Search & Compare jobs.
+
+**401 errors when exporting >100K records**
+
+* Resolved authentication issues that caused 401 errors when exporting large datasets
+
+## Vault Release Notes 26.1.1
+
 **Release Date: 25 March 2026**
 
 **Range-Based Date Masking for Sensitive Date Fields**\

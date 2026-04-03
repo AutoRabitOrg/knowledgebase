@@ -1,6 +1,6 @@
 # Vault Release Notes 26.0
 
-## Vault Release Notes 26.1.1
+## Vault Release Notes 26.1.2
 
 **Release Date: 08 April 2026**
 

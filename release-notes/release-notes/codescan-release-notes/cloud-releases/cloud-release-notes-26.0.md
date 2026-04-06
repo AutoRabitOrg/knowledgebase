@@ -47,6 +47,52 @@ If organization administrators are given access to audit logs for their organiza
 * Empowers org admins to self-serve audit and usage insights without support intervention.
 * Supports compliance, security reviews, and internal audits.
 
+### Introduction / Overview
+
+The **Audit Logs API** provides a structured way to retrieve audit log records for a given organization. It is designed to help administrators **track and review actions performed within the system** by capturing detailed event data.
+
+This API returns audit events based on **filter criteria provided in the request body**, allowing users to narrow down results using:
+
+* Organization identifier (organizationKey)
+* User who performed the action (userLogin)
+* Audit category (category)
+* Operation performed (operation)
+* Event timestamp (createdAt)D
+* Trigger source (userTriggered)x\`
+
+Each audit log entry includes:
+
+* The **user or system** that initiated the action
+* The **type of operation performed**
+* The **category of the event**
+* The **timestamp of occurrence**
+* The **resulting value or change (**&#x6E;ewValu&#x65;**)**
+
+The API supports **pagination via query parameters**, enabling efficient retrieval of large audit datasets.
+
+### Permissions Required
+
+Access to this API is restricted to:
+
+* **Organization Admin**
+* **Super Admin**
+
+### Endpoint Details
+
+* **HTTP Method:** POST
+* **URL:**
+
+{% code lineNumbers="true" %}
+```
+<CODESCAN_DOMAIN_URL>/_codescan/audit/logs?p=<PAGE_NUMBER>&ps=<PAGE_SIZE>
+
+```
+{% endcode %}
+
+***
+
+### Query Parameters
+
 ### Application Enhancements
 
 **1.     Configurable Default User Role for SSO-Provisioned Users**

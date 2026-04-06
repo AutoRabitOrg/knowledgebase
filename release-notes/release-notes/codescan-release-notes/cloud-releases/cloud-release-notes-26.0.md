@@ -93,6 +93,142 @@ Access to this API is restricted to:
 
 ### Query Parameters
 
+<table><thead><tr><th width="116.79998779296875">Name</th><th>Type</th><th>Required</th><th width="120">Default</th><th>Max</th><th width="166.4000244140625">Description</th></tr></thead><tbody><tr><td><code>p</code></td><td>integer</td><td>No</td><td>1</td><td>—</td><td>Page number</td></tr><tr><td><code>ps</code></td><td>integer</td><td>No</td><td>500</td><td>500</td><td>Page size</td></tr></tbody></table>
+
+***
+
+### Request Body
+
+{% code lineNumbers="true" %}
+```
+{
+  "organizationKey": "<ORG_KEY>",
+  "userLogin": "<USER_LOGIN>",
+  "category": "<CATEGORY>",
+  "operation": "<OPERATION>",
+  "createdAt": "<DATE>",
+  "userTriggered": <BOOLEAN>
+}
+
+```
+{% endcode %}
+
+### Request Field Details
+
+<table data-header-hidden><thead><tr><th width="147.39996337890625"></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Field</td><td>Type</td><td>Required</td><td>Description</td><td>Possible Values</td></tr><tr><td>organizationKey</td><td>string</td><td>Yes</td><td>Organization key</td><td>—</td></tr><tr><td>userLogin</td><td>string</td><td>No</td><td>Login of user who triggered the action</td><td>—</td></tr><tr><td>category</td><td>string</td><td>No</td><td>Audit log category</td><td>PROJECT, USER_TOKEN, GROUP_PERMISSION, PERMISSION_TEMPLATE, PLUGIN, PROPERTY, QUALITY_GATE, QUALITY_PROFILE, USER, USER_GROUP, USER_PERMISSION</td></tr><tr><td>operation</td><td>enum</td><td>No</td><td>Operation performed</td><td>ADD, ADD_CHARACTERISTIC, ADD_EDITOR, ADD_GROUP, ADD_USER, DEACTIVATE, DELETE, DELETE_EDITOR, DELETE_GROUP, DELETE_USER, COMPONENT_KEY_UPDATE, COMPONENT_KEY_BRANCH_UPDATE, SET, SET_LICENSE, UPDATE, UPDATE_CHARACTERISTIC, UPDATE_COMPONENT_VISIBILITY</td></tr><tr><td>createdAt</td><td>string</td><td>No</td><td>Creation date or datetime of the audit event</td><td>Format: yyyy-MM-dd or yyyy-MM-dd'T'HH:mm:ssZExample: 2017-10-19 or 2017-10-19T13:00:00+0200</td></tr><tr><td>userTriggered</td><td>boolean</td><td>No</td><td>Whether the event was triggered by a user action</td><td>true, false</td></tr></tbody></table>
+
+### Example Request
+
+{% code lineNumbers="true" %}
+```
+POST https://app.codescan.io/_codescan/audit/logs?p=1&ps=10
+
+```
+{% endcode %}
+
+{% code lineNumbers="true" %}
+```
+{
+  "organizationKey": "org1",
+  "userLogin": "652d14eeedabb7xxxxxd",
+  "category": "PROJECT",
+  "operation": "UPDATE",
+  "createdAt": "2025-07-14",
+  "userTriggered": true
+}
+
+```
+{% endcode %}
+
+### 📤 Example Response
+
+{% code lineNumbers="true" %}
+```
+{
+  "content": [
+    {
+      "organizationUuid": "org-uuid-123",
+      "userLogin": "jdoe",
+      "userUuid": "user-uuid-456",
+      "category": "PROJECT",
+      "operation": "UPDATE",
+      "newValue": "<changed value>",
+      "createdAt": "2025-07-14T09:00:12.314+00:00",
+      "userTriggered": true
+    }
+  ],
+  "pageable": {
+    "pageNumber": 0,
+    "pageSize": 100
+  },
+  "totalElements": 1,
+  "totalPages": 1,
+  "first": true,
+  "last": true,
+  "empty": false
+}
+
+```
+{% endcode %}
+
+### Response Field Details
+
+**Audit Log Entry** (`content`)
+
+| Field              | Description                                          |
+| ------------------ | ---------------------------------------------------- |
+| `organizationUuid` | Unique identifier of the organization                |
+| `userLogin`        | Login of the user who performed the action           |
+| `userUuid`         | Unique identifier of the user                        |
+| `category`         | Audit log category                                   |
+| `operation`        | Operation performed                                  |
+| `newValue`         | Updated value or details of the change (JSON string) |
+| `createdAt`        | Timestamp of the audit event                         |
+| `userTriggered`    | Indicates whether the action was triggered by a user |
+
+**Example: Project Analysis Event**
+
+{% code lineNumbers="true" %}
+```
+{
+  "category": "PROJECT_ANALYSIS",
+  "operation": "ADD",
+  "userLogin": "System",
+  "userTriggered": false,
+  "newValue": {
+    "projectKey": "prod-project",
+    "projectName": "prod-project",
+    "jobId": "aefe9a9e-d8cf-4faa-811b-7ebc4ab8a0ca",
+    "ncloc": "335"
+  }
+}
+
+```
+{% endcode %}
+
+***
+
+**Example: Group permission Assignment**
+
+{% code lineNumbers="true" %}
+```
+{
+  "category": "GROUP_PERMISSION",
+  "operation": "ADD",
+  "userLogin": "thammisetti-vanaja-priya79347",
+  "userTriggered": true,
+  "newValue": {
+    "permission": "codeviewer",
+    "groupName": "Members",
+    "componentKey": "prod-project",
+    "permissionTemplateName": "Default template",
+    "qualifier": "project"
+  }
+}
+
+```
+{% endcode %}
+
 ### Application Enhancements
 
 **1.     Configurable Default User Role for SSO-Provisioned Users**

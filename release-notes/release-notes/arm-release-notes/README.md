@@ -56,6 +56,28 @@
 
 ***
 
+## DataLoader Pro Release Notes – Version 26.2.1 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+
+**Release Date:** **05 April 2026**
+
+**New UI: DataLoader Pro CSV validation incorrect**
+
+Fixed DataLoader Pro in the new UI so invalid CSV input is correctly validated and flagged.
+
+## DataLoader Release Notes – Version 26.2.1
+
+**Release Date:** **05 April 2026**
+
+**DataLoader Basic job stuck / Salesforce error during extract**
+
+Fixed an issue where DataLoader Basic extract jobs showed a stuck status and unexpected Salesforce errors during execution.
+
+**Fields and query not loading when editing extract job**
+
+Fixed DataLoader extract job editing so fields and the saved query now load correctly.
+
+***
+
 ### **ARM Release Notes – Version 26.1.13**
 
 **Release Date: 29 March 2026**
@@ -143,8 +165,6 @@ EZ Commit, EZ Merge, CI Jobs, Deployments
 **DataLoader Pro - Pagination Issue in DataLoader Pro (New UI)**
 
 Resolved an issue where pagination did not function correctly after fetching objects in DataLoader Pro job configuration. Pagination now works as expected when navigating through master objects.
-
-***
 
 ## DataLoader Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 

@@ -54,10 +54,27 @@ Under the **Salesforce Org** **Details** section, do the following:
 4. Choose your **Salesforce Org**.
 5. Click **Fetch Objects** to retrieve all available objects in the selected Source Org.
 6. By default, only nCino objects available in the Source Org will be auto-populated. To view all the objects available, click on **Show All** **Objects**.&#x20;
-7. Using![](<../../../../../.gitbook/assets/image (1298).png>)/![](<../../../../../.gitbook/assets/image (1299).png>)button, you can select/deselect all the objects for your template. Or, use the **Ctrl** key and select multiple objects of your choice and move them to the selected tab using the![](<../../../../../.gitbook/assets/image (1300).png>)/![](<../../../../../.gitbook/assets/image (1301).png>)button. Once you have selected the object, [ARM](https://www.autorabit.com/) will retrieve the fields included in that object behind the scenes.
+7.  Using![](<../../../../../.gitbook/assets/image (1298).png>)/![](<../../../../../.gitbook/assets/image (1299).png>)button, you can select/deselect all the objects for your template. Or, use the **Ctrl** key and select multiple objects of your choice and move them to the selected tab using the![](<../../../../../.gitbook/assets/image (1300).png>)/![](<../../../../../.gitbook/assets/image (1301).png>)button. Once you have selected the object, [ARM](https://www.autorabit.com/) will retrieve the fields included in that object behind the scenes.
 
-<figure><img src="../../../../../.gitbook/assets/image (1302).png" alt=""><figcaption></figcaption></figure>
 
+
+    <figure><img src="../../../../../.gitbook/assets/Old UI - Ability To Sync The Metadata - 3.png" alt=""><figcaption></figcaption></figure>
+
+    1. **Sync Schena:**
+       1.  **Overview**
+
+           The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
+       2. **Functionality:** &#x20;
+          1. When the Sync Schema option is enabled:
+             1. The system fetches the latest metadata from the source org for the selected object.
+             2. Newly added fields are included.
+             3. Updated field properties (data type, required status, etc.) are refreshed.
+             4. Deprecated or inactive fields are removed.
+             5. The object schema in the template is updated before proceeding.
+       3. **Behavior:**
+          1. Sync is applied only to selected objects.
+          2. The operation occurs during schema retrieval or object fetch.
+          3. Existing configurations are updated to match the source org structure.
 8. Click on **Next** to go to the **Record Configuration** Tab.
 
 {% hint style="info" %}

@@ -1149,7 +1149,7 @@
     * [Webhooks for CodeScan](product-guides/codescan/codescan-integration/webhooks/README.md)
       * [Slack integration with Zapier](product-guides/codescan/codescan-integration/webhooks/slack-integration-with-zapier.md)
   * [CodeScan API Documentation](product-guides/codescan/codescan-api-documentation/README.md)
-    * [CodeScan API Overview](product-guides/codescan/codescan-api-documentation/codescan-api-overview.md)
+    * [Audit Logs API](product-guides/codescan/codescan-api-documentation/audit-logs-api.md)
   * [CodeScan-FAQs](product-guides/codescan/codescan-faqs/README.md)
     * [Common Issues and Solutions](product-guides/codescan/codescan-faqs/common-issues-and-solutions.md)
     * [General](product-guides/codescan/codescan-faqs/general/README.md)

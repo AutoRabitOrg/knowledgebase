@@ -12,7 +12,7 @@
 
 * Corrected Replicate behavior so “Include All Child Objects” now processes all expected child records.
 
-**Search | Resolved Data Type Mismatch in Search Jobs**
+**Resolved Data Type Mismatch in Search Jobs**
 
 Fixed an issue where data type mismatches between source data and schema caused errors during Search job execution.
 

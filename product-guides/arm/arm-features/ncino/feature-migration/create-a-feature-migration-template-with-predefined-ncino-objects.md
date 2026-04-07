@@ -58,32 +58,22 @@ Under the **`Salesforce Org Details`** section, do the following:
     <figure><img src="../../../../../.gitbook/assets/Old UI - Ability To Sync The Metadata - 1.png" alt=""><figcaption></figcaption></figure>
 
 
-7. **Sync Schena:**
-   1.  Overview
 
-       The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
-   2.  **Location**
+    1. **Sync Schena:**
+       1.  Overview
 
-       The Sync Schema checkbox is available at the object level within the Metadata Configuration step of the Feature Template creation or versioning flow.
-   3. **Functionality:**  When the Sync Schema option is enabled:
-      1. &#x20;The system fetches the latest metadata from the source org for the selected object.
-      2. Newly added fields are included.
-      3. Updated field properties (data type, required status, etc.) are refreshed.
-      4. Deprecated or inactive fields are removed.
-      5. The object schema in the template is updated before proceeding.
-   4. **Behavior**
-      1. Sync is applied only to selected objects.
-      2. The operation occurs during schema retrieval or object fetch.
-      3. Existing configurations are updated to match the source org structure.
-   5. **Use Cases**
-      1. When new fields or changes are introduced in the source org.
-      2. When ensuring templates reflect the current Salesforce metadata.
-      3. When avoiding failures due to outdated schema definitions.
-   6. **Important Notes**
-      1. Recommended for frequently changing objects.
-      2. Disabling retains previously captured schema.
-      3. Sync Schema updates metadata only and does not affect data.
-8. Click **`Next`** to go to the **`Record Configuration`** tab.
+           The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
+       2. **Functionality:**  When the Sync Schema option is enabled:
+          1. &#x20;The system fetches the latest metadata from the source org for the selected object.
+          2. Newly added fields are included.
+          3. Updated field properties (data type, required status, etc.) are refreshed.
+          4. Deprecated or inactive fields are removed.
+          5. The object schema in the template is updated before proceeding.
+       3. **Behavior**
+          1. Sync is applied only to selected objects.
+          2. The operation occurs during schema retrieval or object fetch.
+          3. Existing configurations are updated to match the source org structure.
+7. Click **`Next`** to go to the **`Record Configuration`** tab.
 
 ### Record Configuration <a href="#record-configuration" id="record-configuration"></a>
 

@@ -1,6 +1,6 @@
 # Release Notes
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT updates!" listId="a085e26e7e" %}
 
 **Welcome to the AutoRABIT Release Notes page! This is your go-to resource for the latest updates and changes to all of our key products, including ARM, CodeScan, Vault, Guard, and nCino integrations.**
 

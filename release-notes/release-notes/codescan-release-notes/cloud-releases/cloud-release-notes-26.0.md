@@ -51,7 +51,7 @@ If organization administrators are given access to audit logs for their organiza
 
 For more details, refer to the&#x20;
 
-https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/codescan/codescan-api-documentation
+[https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/codescan/codescan-api-documentation](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-api-documentation)
 
 ### Application Enhancements
 

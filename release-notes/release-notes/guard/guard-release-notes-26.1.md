@@ -2,6 +2,74 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" fullWidth="false" %}
 
+## Guard 26.1.5 Release Notes
+
+**Release Date: 12 April 2026**
+
+### New features
+
+#### Permissions Explorer – Agentforce Visibility
+
+Guard now has Agentforce coverage in Permissions Explorer to help teams understand what Salesforce AI agents can access and the actions they can take within your Salesforce orgs.
+
+There is now a dedicated Agentforce permission category that makes it easier to investigate users with Agentforce-related capabilities, including permissions tied to managing agents, prompt templates, and Agentforce-specific features. Users can select one or multiple Agentforce permissions and trace how access is granted across profiles, permission sets, and permission set groups.
+
+In addition, a new “Explore Agentforce” experience from the Permissions Explorer home page allows users to identify Agentforce-related users and review the profiles, permission sets and permission set groups assigned to them. Results also show the source of each permission, making it easier to audit AI agent access and support least-privilege reviews.
+
+#### Risk Assessment – Historical Tracking
+
+Risk Assessment now includes historical tracking to provide visibility into how an org’s security posture changes over time.
+
+Guard captures daily snapshots for each connected org and makes them available in a new History view. The history table includes a timestamp and a count of the org’s auto-resolvable risks, manual risks, and compliant settings, helping teams review past states and establish a foundation for future trend analysis.
+
+### Enhancements
+
+#### Change Monitoring – Other Tab Export
+
+Change Monitoring now supports export from the Other tab.
+
+Exports follow the same experience used in other Guard modules: select filters and results are delivered in a CSV file by email. This makes it easier to share and review event data captured outside the main Changes tab.
+
+#### Public File Exposure – Export
+
+Public File Exposure now supports export.
+
+Teams can export the records currently shown in the view, with applied filters reflected in the output. The export includes all table columns and is delivered by email.
+
+#### User Monitoring – Chart Synchronization
+
+User Activity Monitoring charts now stay aligned with the filters applied in the Users table.
+
+When users apply filters, the User Count by Profile and License Usage charts update to reflect the same filtered population. This creates a more consistent experience between tabular and visual analysis.
+
+#### User Monitoring – Updated Users Table
+
+The Users table in User Activity Monitoring has been refreshed with a lighter, more user-friendly layout.
+
+The updated experience brings Name and Username together, introduces flag icons, and makes it easier to navigate directly to the User Detail page while preserving export behavior and filtering support.
+
+#### Salesforce Orgs – Callback URL Copy Support
+
+Guard now dynamically generates the callback URL during Salesforce org setup and provides a copy option directly in the Add Salesforce Org flow.
+
+This streamlines configuration, improves accuracy across environments, and helps reduce setup friction when configuring the external client app in Salesforce.
+
+### Bug Fixes
+
+#### Salesforce Orgs – Reauthentication Flow
+
+Improved the reauthentication experience for Salesforce orgs so responses are handled correctly and there is a smoother flow.
+
+#### User Activity Monitoring – Inactive User Details
+
+Improved User Activity Monitoring so inactive user details are presented more clearly.
+
+#### Notifications  – **Invalid URL**
+
+URLs have been updated in Change Notifications email templates.
+
+***
+
 ## Guard 26.1.4 Release Notes
 
 **Release Date: 25 March 2026**

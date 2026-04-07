@@ -1,6 +1,6 @@
 # ARM Release Notes
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" listId="a085e26e7e" %}
 
 ## **ARM Release Notes 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
 

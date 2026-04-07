@@ -1,6 +1,6 @@
 # Guard Release Notes 25.2
 
-{% @mailchimp/mailchimpSubscribe cta="Guard Release Notes Mailing List:" %}
+{% @mailchimp/mailchimpSubscribe cta="Guard Release Notes Mailing List:" listId="a085e26e7e" %}
 
 ## Guard 25.2.9 Release Notes
 

@@ -1,6 +1,6 @@
 # Self-Hosted Releases
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
 ### CodeScan Self-Hosted Editions: Latest Release Dates &#x20;
 

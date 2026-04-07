@@ -1,6 +1,6 @@
 # Cloud Release Notes 26.0
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
 {% hint style="info" %}
 As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.&#x20;

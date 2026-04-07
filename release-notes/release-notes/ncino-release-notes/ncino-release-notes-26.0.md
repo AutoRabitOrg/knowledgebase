@@ -1,6 +1,6 @@
 # nCino Release Notes 26.0
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
 ## nCino - Release 26.1.13
 

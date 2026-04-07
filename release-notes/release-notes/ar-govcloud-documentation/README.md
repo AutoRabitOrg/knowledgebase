@@ -10,4 +10,4 @@ CodeScan for Government is a secure, compliance-focused solution designed to mee
 
 
 
-{% @mailchimp/mailchimpSubscribe cta="CodeScan Release Notes Mailing List:" %}
+{% @mailchimp/mailchimpSubscribe cta="CodeScan Release Notes Mailing List:" listId="a085e26e7e" %}

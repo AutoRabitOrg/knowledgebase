@@ -1,6 +1,6 @@
 # Signing Up with ARM
 
-The ARM signup and activation process has several steps — some on our end and others on yours.&#x20;
+The ARM signup and activation process has several steps - some on our end and others on yours.&#x20;
 
 1. Go to [https://www.autorabit.com/](https://www.autorabit.com/) and log in or go directly to [https://login.autorabit.com/](https://login.autorabit.com/).
 2. Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.
@@ -79,6 +79,12 @@ ARM requires you to change your password every 90 days.&#x20;
 ### How do I reset my password?&#x20;
 
 Follow the instructions [here](../../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+
+
+
+
+
+
 
 
 

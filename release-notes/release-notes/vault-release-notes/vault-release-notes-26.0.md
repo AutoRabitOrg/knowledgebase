@@ -12,9 +12,9 @@
 
 * Corrected Replicate behavior so “Include All Child Objects” now processes all expected child records.
 
-**HIVE\_BAD\_DATA due to isDeleted type mismatch**
+**Search | Resolved Data Type Mismatch in Search Jobs**
 
-* Fixed a type mismatch between Parquet files and table schema for `isDeleted` that caused HIVE\_BAD\_DATA errors in Search jobs.
+Fixed an issue where data type mismatches between source data and schema caused errors during Search job execution.
 
 **Masking info icon shown without rules**
 
@@ -72,9 +72,9 @@
 
 * Optimized system resources and job handling to reduce CPU, memory, and I/O bottlenecks during parallel Search & Compare jobs.
 
-**401 errors when exporting >100K records**
+**Errors when exporting >100K records**
 
-* Resolved authentication issues that caused 401 errors when exporting large datasets
+* Resolved authentication issues that caused errors when exporting large datasets
 
 ## Vault Release Notes 26.1.1
 

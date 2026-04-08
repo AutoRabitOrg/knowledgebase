@@ -2,6 +2,82 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" listId="a085e26e7e" %}
 
+### **Release Notes – Version 26.2.2** <a href="#release-notes-version-26.2.2" id="release-notes-version-26.2.2"></a>
+
+**Release Date:** Apr 12, 2026
+
+***
+
+#### ARM Deployment: Improved Error Message Rendering (Support Case #206745 – New UI) <a href="#arm-deployment-improved-error-message-rendering-support-case-206745-new-ui" id="arm-deployment-improved-error-message-rendering-support-case-206745-new-ui"></a>
+
+Fixed an issue in the New UI where ARM did not correctly parse or escape `< >` characters in error messages returned from Salesforce during deployments. This caused error details to display incorrectly in the **Failed Components** section of the deployment report.
+
+With this fix, error messages are now properly rendered, ensuring accurate and readable visibility into deployment failures.
+
+**Impacted Areas:**\
+Deployment Report (Failed Components Section)
+
+***
+
+#### Permission Set XML Consistency for Data Cloud (Support Case #211123) <a href="#permission-set-xml-consistency-for-data-cloud-support-case-211123" id="permission-set-xml-consistency-for-data-cloud-support-case-211123"></a>
+
+Resolved an issue where Data Cloud-enabled Permission Sets showed inconsistencies between ARM IDE and Compare Files, due to the `<dataspaceScopes>` node missing in comparison results. This prevented users from committing changes successfully.
+
+Support for the `dataspaceScopes` field has now been added, ensuring accurate metadata mapping when present in the Salesforce org. This enables seamless comparison, commit, and deployment of Permission Sets.
+
+**Impacted Areas:**\
+EZ Commit, Merge, Deployment, CI Jobs (DX and Non-DX)
+
+***
+
+#### EZ Commit: Duplicate Component Selection Prevention (Support Case #212351 – New UI) <a href="#ez-commit-duplicate-component-selection-prevention-support-case-212351-new-ui" id="ez-commit-duplicate-component-selection-prevention-support-case-212351-new-ui"></a>
+
+Fixed an issue in the New UI where components selected under the **Added/Modified Components** tab in EZ Commit (with Autodraft enabled) were not reflected in the **All Metadata Components** tab. This allowed duplicate selections during commit.
+
+With this fix, component selections are now synchronized across tabs, preventing duplicates and ensuring accurate commit lists.
+
+**Impacted Areas:**\
+EZ Commit Flow
+
+***
+
+#### CI & Selective Deployment: Consistent Component Evaluation (Support Case #210095) <a href="#ci-and-selective-deployment-consistent-component-evaluation-support-case-210095" id="ci-and-selective-deployment-consistent-component-evaluation-support-case-210095"></a>
+
+Addressed inconsistent behavior between CI Jobs and Selective Deployment when using the **Ignore Installed Components** option.
+
+* In CI Jobs, component evaluation was correctly performed at the parent level, resulting in the expected “No local changes to deploy” message.
+* In Selective Deployment, evaluation was limited to the child level, leading to incorrect deployment eligibility.
+
+This fix aligns Selective Deployment logic with CI behavior, ensuring consistent and accurate component evaluation across deployment flows.
+
+**Impacted Areas:**\
+Org-to-Org Deployment, VC-to-Org Deployment (Workflow Metadata)
+
+***
+
+### ALM Integration Enhancements (Salesforce) <a href="#alm-integration-enhancements-salesforce" id="alm-integration-enhancements-salesforce"></a>
+
+> **Note:** These enhancements are available only in the **New UI**.
+
+#### Overview <a href="#overview" id="overview"></a>
+
+This release enhances AutoRABIT’s ALM integration by extending automatic Work Item status updates beyond commit operations. Updates are now supported across multiple modules, enabling consistent lifecycle tracking within Salesforce ALM.
+
+***
+
+#### What’s New <a href="#whats-new" id="whats-new"></a>
+
+**Work Item Status Updates Across Modules**
+
+Work Item status updates are now supported in:
+
+* EZ Commit _(existing support)_
+* Merge Requests _(new)_
+* EZ Merge _(new)_
+* CI Jobs _(new)_
+
+These enhancements enable automatic synchronization of Work Item statuses during key development activities such as commits, merges, and CI pipeline executions, improving traceability and process consistency.
+
 ## **ARM Release Notes 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
 
 **Release Date: 05 April 2026**

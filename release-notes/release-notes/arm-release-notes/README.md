@@ -4,9 +4,7 @@
 
 ### **Release Notes – Version 26.2.2** <a href="#release-notes-version-26.2.2" id="release-notes-version-26.2.2"></a>
 
-**Release Date:** Apr 12, 2026
-
-***
+**Release Date: 12 April 2026**
 
 #### ARM Deployment: Improved Error Message Rendering (Support Case #206745 – New UI) <a href="#arm-deployment-improved-error-message-rendering-support-case-206745-new-ui" id="arm-deployment-improved-error-message-rendering-support-case-206745-new-ui"></a>
 
@@ -32,12 +30,12 @@ EZ Commit, Merge, Deployment, CI Jobs (DX and Non-DX)
 
 #### EZ Commit: Duplicate Component Selection Prevention (Support Case #212351 – New UI) <a href="#ez-commit-duplicate-component-selection-prevention-support-case-212351-new-ui" id="ez-commit-duplicate-component-selection-prevention-support-case-212351-new-ui"></a>
 
-Fixed an issue in the New UI where components selected under the **Added/Modified Components** tab in EZ Commit (with Autodraft enabled) were not reflected in the **All Metadata Components** tab. This allowed duplicate selections during commit.
+Fixed an issue in the New UI where components selected under the **Added/Modified Components** tab in EZ-Commit (with Autodraft enabled) were not reflected in the **All Metadata Components** tab. This allowed duplicate selections during commit.
 
 With this fix, component selections are now synchronized across tabs, preventing duplicates and ensuring accurate commit lists.
 
 **Impacted Areas:**\
-EZ Commit Flow
+EZ-Commit Flow
 
 ***
 
@@ -71,12 +69,14 @@ This release enhances AutoRABIT’s ALM integration by extending automatic Work 
 
 Work Item status updates are now supported in:
 
-* EZ Commit _(existing support)_
+* EZ-Commit _(existing support)_
 * Merge Requests _(new)_
-* EZ Merge _(new)_
+* EZ-Merge _(new)_
 * CI Jobs _(new)_
 
 These enhancements enable automatic synchronization of Work Item statuses during key development activities such as commits, merges, and CI pipeline executions, improving traceability and process consistency.
+
+***
 
 ## **ARM Release Notes 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
 

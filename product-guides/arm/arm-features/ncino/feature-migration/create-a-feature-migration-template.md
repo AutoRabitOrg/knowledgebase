@@ -6,7 +6,7 @@ This details the step-by-step process to create a standard/community nCino migra
 
 ## What is a Feature Migration Template?&#x20;
 
-A Feature Migration Template in AutoRABIT is essentially a blueprint that helps you manage and automate the process of moving features from one environment to another. It’s like a checklist that defines exactly what should be moved, how it should be transferred, and in what order — ensuring everything gets to the new environment correctly, without missing any critical steps.&#x20;
+A Feature Migration Template in AutoRABIT is essentially a blueprint that helps you manage and automate the process of moving features from one environment to another. It’s like a checklist that defines exactly what should be moved, how it should be transferred, and in what order, ensuring everything gets to the new environment correctly, without missing any critical steps.&#x20;
 
 The template saves time and effort by letting you set up migration rules once and use them repeatedly for consistent, error-free deployments. Whether you're moving configurations, customizations, or entire features, the template streamlines the whole process, making it much smoother and more predictable.&#x20;
 
@@ -156,7 +156,7 @@ Once done, click **Next** to proceed to the **Preview and Save** screen.
 
 #### Preview and Save <a href="#preview-and-save" id="preview-and-save"></a>
 
-This is the summary page for the Feature Migration template you're about to create. You can view the features details, and filters you have applied for the last time before the template is created. Any change log information that needs to be added can be mentioned in the **Change Log** box.
+This is the summary page for the Feature Migration template you're about to create. You can view the feature details and filters you have applied for the last time before the template is created. Any change log information that needs to be added can be mentioned in the **Change Log** box.
 
 <figure><img src="../../../../../.gitbook/assets/image (1313).png" alt="" width="563"><figcaption><p>Summary Page</p></figcaption></figure>
 

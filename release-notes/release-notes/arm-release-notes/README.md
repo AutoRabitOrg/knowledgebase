@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" listId="a085e26e7e" %}
 
-### **Release Notes – Version 26.2.2** <a href="#release-notes-version-26.2.2" id="release-notes-version-26.2.2"></a>
+### **Release Notes 26.2.2** <a href="#release-notes-version-26.2.2" id="release-notes-version-26.2.2"></a>
 
 **Release Date: 12 April 2026**
 

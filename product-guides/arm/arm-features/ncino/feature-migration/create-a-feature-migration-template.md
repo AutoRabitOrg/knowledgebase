@@ -60,7 +60,7 @@ Under the **Salesforce Org** **Details** section, do the following:
 
     <figure><img src="../../../../../.gitbook/assets/Old UI - Ability To Sync The Metadata - 3.png" alt=""><figcaption></figcaption></figure>
 
-    1. **Sync Schena:**
+    1. **Sync Schema:**
        1.  **Overview**
 
            The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.

@@ -61,8 +61,6 @@ Org-to-Org Deployment, VC-to-Org Deployment (Workflow Metadata)
 
 This release enhances AutoRABIT’s ALM integration by extending automatic Work Item status updates beyond commit operations. Updates are now supported across multiple modules, enabling consistent lifecycle tracking within Salesforce ALM.
 
-***
-
 #### What’s New <a href="#whats-new" id="whats-new"></a>
 
 **Work Item Status Updates Across Modules**

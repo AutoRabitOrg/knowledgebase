@@ -1,4 +1,4 @@
-# CodeScan API Overview
+# Audit Logs API
 
 #### Introduction / Overview <a href="#introduction-overview" id="introduction-overview"></a>
 
@@ -33,20 +33,7 @@ Access to this API is restricted to:
 #### Endpoint Details <a href="#endpoint-details" id="endpoint-details"></a>
 
 * **HTTP Method:** POST
-* **URL:**
-
-<pre data-line-numbers><code><strong>&#x3C;CODESCAN_DOMAIN_URL>/_codescan/audit/logs?p=&#x3C;PAGE_NUMBER>&#x26;ps=&#x3C;PAGE_SIZE>
-</strong><strong>
-</strong></code></pre>
-
-***
-
-#### Query Parameters <a href="#query-parameters" id="query-parameters"></a>
-
-| Name | Type    | Required | Default | Max | Description |
-| ---- | ------- | -------- | ------- | --- | ----------- |
-| `p`  | integer | No       | 1       | —   | Page number |
-| `ps` | integer | No       | 500     | 500 | Page size   |
+* **URL:** \<CODESCAN\_DOMAIN\_URL>/\_codescan/audit/logs?p=\<PAGE\_NUMBER>\&ps=\<PAGE\_SIZE>
 
 ***
 
@@ -68,18 +55,15 @@ Access to this API is restricted to:
 
 #### Request Field Details <a href="#request-field-details" id="request-field-details"></a>
 
-<table data-header-hidden><thead><tr><th></th><th></th><th></th><th></th><th width="172"></th></tr></thead><tbody><tr><td>Field</td><td>Type</td><td>Required</td><td>Description</td><td>Possible Values</td></tr><tr><td><code>organizationKey</code></td><td>string</td><td>Yes</td><td>Organization key</td><td>—</td></tr><tr><td><code>userLogin</code></td><td>string</td><td>No</td><td>Login of user who triggered the action</td><td>—</td></tr><tr><td><code>category</code></td><td>string</td><td>No</td><td>Audit log category</td><td>PROJECT, USER_TOKEN, GROUP_PERMISSION, PERMISSION_TEMPLATE, PLUGIN, PROPERTY, QUALITY_GATE, QUALITY_PROFILE, USER, USER_GROUP, USER_PERMISSION</td></tr><tr><td><code>operation</code></td><td>enum</td><td>No</td><td>Operation performed</td><td>ADD, ADD_CHARACTERISTIC, ADD_EDITOR, ADD_GROUP, ADD_USER, DEACTIVATE, DELETE, DELETE_EDITOR, DELETE_GROUP, DELETE_USER, COMPONENT_KEY_UPDATE, COMPONENT_KEY_BRANCH_UPDATE, SET, SET_LICENSE, UPDATE, UPDATE_CHARACTERISTIC, UPDATE_COMPONENT_VISIBILITY</td></tr><tr><td><code>createdAt</code></td><td>string</td><td>No</td><td>Creation date or datetime of the audit event</td><td>Format: yyyy-MM-dd or yyyy-MM-dd'T'HH:mm:ssZExample: 2017-10-19 or 2017-10-19T13:00:00+0200</td></tr><tr><td><code>userTriggered</code></td><td>boolean</td><td>No</td><td>Whether the event was triggered by a user action</td><td>true, false</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th></th><th></th><th></th><th></th><th width="172"></th></tr></thead><tbody><tr><td><strong>Field</strong></td><td><strong>Type</strong></td><td><strong>Required</strong></td><td><strong>Description</strong></td><td><strong>Possible Values</strong></td></tr><tr><td><code>organizationKey</code></td><td>string</td><td>Yes</td><td>Organization key</td><td>—</td></tr><tr><td><code>userLogin</code></td><td>string</td><td>No</td><td>Login of user who triggered the action</td><td>—</td></tr><tr><td><code>category</code></td><td>string</td><td>No</td><td>Audit log category</td><td>PROJECT, USER_TOKEN, GROUP_PERMISSION, PERMISSION_TEMPLATE, PLUGIN, PROPERTY, QUALITY_GATE, QUALITY_PROFILE, USER, USER_GROUP, USER_PERMISSION</td></tr><tr><td><code>operation</code></td><td>enum</td><td>No</td><td>Operation performed</td><td>ADD, ADD_CHARACTERISTIC, ADD_EDITOR, ADD_GROUP, ADD_USER, DEACTIVATE, DELETE, DELETE_EDITOR, DELETE_GROUP, DELETE_USER, COMPONENT_KEY_UPDATE, COMPONENT_KEY_BRANCH_UPDATE, SET, SET_LICENSE, UPDATE, UPDATE_CHARACTERISTIC, UPDATE_COMPONENT_VISIBILITY</td></tr><tr><td><code>createdAt</code></td><td>string</td><td>No</td><td>Creation date or datetime of the audit event</td><td>Format: yyyy-MM-dd or yyyy-MM-dd'T'HH:mm:ssZExample: 2017-10-19 or 2017-10-19T13:00:00+0200</td></tr><tr><td><code>userTriggered</code></td><td>boolean</td><td>No</td><td>Whether the event was triggered by a user action</td><td>true, false</td></tr><tr><td><code>p</code></td><td>integer</td><td>No</td><td>The results page number.</td><td>1</td></tr><tr><td><code>ps</code></td><td>integer</td><td>No</td><td>The amount of results on each page.  Max is 500</td><td>500</td></tr></tbody></table>
 
 #### Example Request <a href="#example-request" id="example-request"></a>
 
 {% code lineNumbers="true" %}
 ```
 POST https://app.codescan.io/_codescan/audit/logs?p=1&ps=10
-
 ```
 {% endcode %}
-
-<a class="button secondary">Copy</a>
 
 {% code lineNumbers="true" %}
 ```
@@ -91,7 +75,6 @@ POST https://app.codescan.io/_codescan/audit/logs?p=1&ps=10
   "createdAt": "2025-07-14",
   "userTriggered": true
 }
-
 ```
 {% endcode %}
 
@@ -122,7 +105,6 @@ POST https://app.codescan.io/_codescan/audit/logs?p=1&ps=10
   "last": true,
   "empty": false
 }
-
 ```
 {% endcode %}
 

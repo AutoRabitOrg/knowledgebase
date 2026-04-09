@@ -34,7 +34,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 2. In **Quick Find**, search **External Client Apps**.
 3. Open **External Client App Manager** (or the External Client Apps area).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **New External Client App**.
 3. Fill in the basics:
@@ -44,7 +44,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
    * **Distribution State**:
      * **Local** (only for this org)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3) Enable OAuth + set callback URL + scopes <a href="#id-3-enable-oauth--set-callback-url--scopes" id="id-3-enable-oauth--set-callback-url--scopes"></a>
 
@@ -58,7 +58,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
    * Manage user data via Web browsers (web)
    * Perform requests at any time (refresh\_token, offline\_access)
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4) Flow Enablement <a href="#id-4-turnment" id="id-4-turnment"></a>
 
@@ -89,7 +89,7 @@ When you click the button for Consumer Key and Secret, a code will be sent to th
 
 After receiving the code and verifying in Salesforce, the Consumer Key (Client ID) and Consumer Secret (Client Secret) will be displayed:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Store these values in a safe place and make sure you can access them as needed

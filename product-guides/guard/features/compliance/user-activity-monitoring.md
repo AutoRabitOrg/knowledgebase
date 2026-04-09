@@ -19,12 +19,14 @@ The **User Activity Monitoring** feature provides full visibility into user acti
 * **User Count by Profiles**: A chart showing how many users are assigned to which Profiles, making it easy to spot overuse or misallocation.
 * **License Utilization Chart**: Visual breakdown of Used vs. Unused licenses for optimization.
 * **Users Table**: A detailed list of all Salesforce users, including:
-  * Name, Email, Username
+  * Name
   * License Type
-  * Profile & Role
-  * User Status (Active/Frozen)
-  * Password Status (Locked)
+  * Profile
   * Last Modified Date
+  * Last Login Date
+  * User Flags (if applicable)
+    * ![](../../../../.gitbook/assets/image.png)= Locked. User has had their password locked and is unable to sign in until it is reset.
+    * ![](<../../../../.gitbook/assets/image (2).png>)= Frozen. User is blocked from logging in.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-25 104438.png" alt=""><figcaption><p>User Activity Monitoring</p></figcaption></figure>
 

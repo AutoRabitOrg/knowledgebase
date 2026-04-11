@@ -14,6 +14,331 @@ Key points:
 
 ***
 
+## CodeScan Release 26.0.7
+
+**Release Date: 12 April 2026**
+
+### Summary
+
+CodeScan 26.0.7 is comprised of the following 8 components:
+
+* 3 New Features
+* 1 Application Enhancement
+* 4 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+**1.     GitHub Apps Integration for GitHub Enterprise in CodeScan**
+
+**Description**
+
+Users of GitHub Enterprise can now connect their GitHub Enterprise organization to CodeScan using a GitHub App. This allows CodeScan to securely access repositories, receive webhook events, and perform code analysis without relying on personal access tokens or user-owned credentials.
+
+**Benefit**
+
+Because CodeScan can now integrate with GitHub Enterprise via a GitHub App, authentication is now more secure, scalable, and enterprise compliant. This reduces credential management issues while enabling reliable multi-repo and multi-org analysis.
+
+**Value / Purpose**
+
+* Enables enterprise-grade authentication aligned with GitHub’s recommended model.
+* Supports secure, scalable access across multiple organizations and repositories.
+* Improves compliance, auditability, and long-term maintainability of CodeScan’s GitHub integrations.
+
+We have validated the GitHub Enterprise flow in CodeScan for the following scenarios and verify that all are working as expected:
+
+* Main branch analysis
+* Pull Request analysis
+* Merge request analysis
+* Run manual analysis
+* Re-run analysis
+* Schedule jobs analysis
+* Delete analysis
+* Rename analysis
+
+For creating a GitHub App for an Enterprise account, users need to follow the steps outlined in the documentation [CodeScan GitHub Apps Integration (Technical Approach)](https://autorabit.atlassian.net/wiki/spaces/CodeScan/pages/2239234054/Codescan+Github+Apps+Integration+Technical+Approach). Once completed, users need to create an ALM connection in the CodeScan application by providing the following details:
+
+* App ID
+* Client ID
+* Client Secret
+
+After successfully creating the connection with the GitHub Enterprise account, users will be able to run the analysis.
+
+<figure><img src="../../../../.gitbook/assets/image (2470).png" alt=""><figcaption></figcaption></figure>
+
+Please note these important TECHNICAL details:
+
+1\. GitHub Apps Authentication Flow Change:
+
+After implementing the GitHub Apps feature, the flow of authorization has changed for the user.  For the first-time user, they will be navigated to the GitHub apps installation page where they need to Authorize and Install the app. Then, the user will be navigated to the CodeScan GitHub Integration pop-up to run the analysis.
+
+&#x20;2\. GitHub Apps - Token Refresh:
+
+How it works:
+
+* Before API calls, check if token expired
+* If expired, automatically refresh (generate new JWT → get new token)
+* NOTE: We have updated all API call methods to support both OAuth and GitHub Apps, and verified that OAuth continues to work (it is backward compatible).
+* Additionally, analysis execution was verified after 8 hours, confirming that the token refresh mechanism (every 8 hours) is functioning as designed.
+
+**2.     Added a new {Resolution} Status for Issues – “Exception”**
+
+**Description**
+
+We have introduced a new **Exception** status in the issue lifecycle that allows users to mark an issue as an approved exception when the organization decides not to remediate it due to valid business or technical reasons.
+
+When an issue is moved to the **Exception** status, CodeScan captures and stores the justification for auditing and tracking purposes. The status appears alongside existing issue statuses and is visible in issue details, filters, and reports.
+
+NOTE: The following description has been added the Exception status: “The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.“
+
+**Benefit**\
+Users are provided with a dedicated **Exception** status, allowing them to clearly differentiate between resolved issues and intentionally accepted risks. This improved issue tracking, compliance transparency, and auditability.
+
+**Value / Purpose**
+
+* Enables teams to formally document and track approved risk exceptions.
+* Improves visibility and governance over issues that are intentionally not fixed.
+
+Validated this new feature via the following scenarios and have verified that all scenarios are working as expected.
+
+1.  Exception status is available in the status list in issues page.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2471).png" alt=""><figcaption></figcaption></figure>
+2.  Issues status changed to Exception (through single assign and bulk assign).<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2472).png" alt=""><figcaption></figcaption></figure>
+
+
+3.  Issues status changed from Exception to Open (Rollback) (through single assign and bulk assign).<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2473).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (2474).png" alt=""><figcaption></figcaption></figure>
+
+
+4.  Able to view the Exception status in CSV Issues export (in list and downloaded CSV).<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2475).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/image (2476).png" alt=""><figcaption></figcaption></figure>
+
+
+5.  Status visible in single rule.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2477).png" alt=""><figcaption></figcaption></figure>
+
+
+6.  Comments in Activity.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2478).png" alt=""><figcaption></figcaption></figure>
+
+    Comments in the activity section for Exception, are able to deleted by the user (after these issues are moved into exception).<br>
+
+    Also, user already assigned to issues will remain assigned, even when moved to exception (if issue assigned before moving or while moving the issues to exception).
+
+
+
+**3.     New Email Notifications alert admins when (Pre & Post) Project Analysis Errors occur** &#x20;
+
+**Description**
+
+Currently, users receive email notifications primarily for Quality Gate results, but failures occurring during the **project analysis lifecycle** are not communicated. This enhancement aims to include **pre-analysis and post-analysis errors** via email subscriptions, so users can be proactively informed when analysis fails.
+
+The scope includes:
+
+* **Pre-Analysis Errors**
+  * Queue setup failures
+  * Branch does not exist
+  * Salesforce authentication issues
+  * Authorization token (Auth token) failures
+* **Post-Analysis Errors**
+  * Compute Engine (CE) job timeout
+  * Cleanup job delays or long-running failures
+
+When such errors occur, an email notification is triggered (based on user subscription preferences), providing high-level error details and guidance for resolution.
+
+**Benefit**
+
+Users are notified about analysis failures (both pre and post stages) via email, enabling them to quickly identify and resolve issues, reducing failed analysis cycles, improving system trust, and decreasing support dependency.
+
+**Value / Purpose**
+
+* Improves visibility into analysis failures beyond Quality Gate results
+* Reduces turnaround time for issue resolution
+
+Validated that users are able to receive the email notifications for pre/post analysis errors, and verified that these users are able to receive notifications as expected.  Several examples have been provided (below) for illustrative purposes.
+
+<figure><img src="../../../../.gitbook/assets/image (2479).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2480).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2481).png" alt=""><figcaption></figcaption></figure>
+
+Please note these important TECHNICAL details:
+
+1\. We have included the ability for users to Enable / Disable Subscription for Analysis Failure Notifications so that users can manage whether they need to receive failure alerts based on chosen preferences.
+
+The system will leverage the **existing subscription-specific UI** i.e. _**Profile> My Account>Notifications> Overall Notifications**_ to allow users to opt in or opt out of analysis failure notifications.
+
+<figure><img src="../../../../.gitbook/assets/image (2482).png" alt=""><figcaption></figcaption></figure>
+
+User preferences will be persisted using APIs, and any changes will be applied immediately when resolving notification recipients for analysis failures.
+
+**Benefit**
+
+End users can independently manage their own subscriptions for analysis failure notifications,\
+then notifications will be **more relevant at an individual level**, reducing alert fatigue while ensuring the right users stay informed.
+
+**Value / Purpose**
+
+* Empowers **all end users** to manage their own notification preferences
+* Reduces **unwanted or noisy alerts** from intermittent analysis failures
+
+**Acceptance Criteria**
+
+* The **“Project analysis execution failures”** checkbox is available under **Overall Notifications** for all users.
+* Users can **enable or disable** the checkbox to manage their personal subscription.
+* The checkbox state **reflects the user’s current saved preference** on page load.
+* Any change to the checkbox is **persisted immediatel**y via the notification subscription APIs.
+* Subscription changes take effect **without page refresh**.
+* Only users with the checkbox **enabled receive email notifications** when a project analysis execution failure occurs.
+* Users with the checkbox **disabled do not receive** analysis execution failure notifications.
+* Changes to the subscription are **applied immediately** during notification recipient resolution.
+* Users subscribed to get the notification should receive emails for only the projects to which they have access. Users should not get mail notification for projects they are not part of.
+
+The ticket “Enable / Disable Subscription for Analysis Failure Notifications” has been verified successfully.
+
+* The user is able to view the option “Project analysis execution failure on my administered projects.”
+* A checkbox is available alongside this option.
+* The user can enable and disable the checkbox as expected without any issues.
+
+Functionality is working as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2483).png" alt=""><figcaption></figcaption></figure>
+
+2\. Triggered Email Notifications are immediately sent to Subscribed Users on Analysis Failure, so they can be promptly informed and subsequently take action without waiting for manual checks or follow-up runs.
+
+When an intermittent project analysis failure is detected, the system will **trigger notifications in real time**, resolve recipients using the **Notification Subscribers module**, and send **email notifications containing relevant project context and failure details**.
+
+**Benefit**
+
+Subscribed users are notified immediately when intermittent analysis failures occur; teams can quickly **identify and address failures faster**, reducing downtime, re-runs, and uncertainty around analysis results.
+
+**Value / Purpose**
+
+* Provides **timely visibility** into intermittent analysis failures
+* Ensures notifications are sent **only to subscribed users**
+* Enables **faster troubleshooting and recovery**
+
+### Application Enhancements
+
+**1.     Track Cursor IDE Usage in the VS Code Extension**
+
+**Description**
+
+In our previous release (CodeScan 26.0.6), we delivered a new CodeScan feature that captures the Cursor IDE usage details (User Name, IDE Type = Cursor, Timestamp) within CodeScan Cloud.  This allows customers to track IDE adoption, user activity, and engagement trends alongside existing usage data. {you can find more details under “Track Cursor IDE Usage on CodeScan 'IDE USAGE' Page” within those release notes as well as our knowledge base).
+
+In this release, we have enhanced this capability within the IDE plug-in which allows us to more precisely determine whether the user is currently on Cursor or VS Code.  We then send this value to CodeScan Cloud.
+
+1. Verified the Cursor plugin using the provided VSIX file across multiple file types .cls, .page, .java, .js, .trigger, .css, .ts, .cmp. Violations are displayed as expected.
+2. Also verified the IDE Usage page, where Cursor usage is correctly reflected. We have tested and validated with multiple users, and verified cross-user usage visibility is working as expected on the IDE Usage page.
+3. Additionally, verified the VS Code plugin using the same VSIX file. Violations are displayed correctly for all supported file types .cls, .page, .java, .js, .trigger, .css, .ts, .cmp in the PREVIEW environment.
+4. Confirmed that VS Code usage is accurately shown on the IDE Usage page and validated that cross-user usage visibility is also functioning as expected.
+
+<figure><img src="../../../../.gitbook/assets/image (2484).png" alt=""><figcaption></figcaption></figure>
+
+### Fixes
+
+**1.     Fixed issue with rule “Unescaped Error Message XSS” {Rule ID: sf:UnescapedOutput}**
+
+**Summary**
+
+Several customers were reporting a StackOverflowError for the rule “Unescaped Error Message XSS” {Rule ID: sf:UnescapedOutput}
+
+Earlier, the Unescaped Output Rule was able to trace data flow through methods but not through assignment chains effectively.  Due to missing/inefficient assignment data flow handling, the rule repeatedly re-entered isSanitized while resolving sanitization status for variables passed through assignments. This resulted in deep recursive calls and ultimately a StackOverflowError, instead of reporting a violation.
+
+**Reproduction Analysis:**\
+Initial attempts with small assignment chains did not reproduce the issue. The issue was successfully reproduced only with very deep assignment chains (\~5000 assignments).
+
+This indicates that:
+
+* The problem is related to **depth of assignment traversal**
+* Recursive evaluation of isSanitized leads to stack overflow at large depths
+
+**Validation**
+
+✔ Rule evaluation now terminates correctly without recursion overflow\
+→ Verified. No StackOverflowError observed even for deep assignment chains.
+
+✔ isSanitized now handles edge cases without re-entering indefinitely\
+→ Verified. Deep assignment chains no longer cause recursive overflow.
+
+As such, we confirm that issue has been successfully remediated. The rule now handles deep assignment chains correctly, avoids infinite recursion in isSanitized, and without causing StackOverflowError.
+
+<figure><img src="../../../../.gitbook/assets/image (2485).png" alt=""><figcaption></figcaption></figure>
+
+
+
+**2.     Fixed issue with rule “Avoid Cleartext Transmission of Sensitive Information”**
+
+{Rule ID: sf:InsecureEndpoint}
+
+**Summary**
+
+Previously, the rule InsecureEndpointRule was throwing a ClassCastException due to an invalid cast from ClassNameDeclaration to VariableNameDeclaration when analyzing endpoint expressions involving enum/class references (e.g., MODE.ERASE).&#x20;
+
+**After the fix:**
+
+* Proper type checking has been implemented before casting symbol table declarations.
+* The rule now safely handles enum and class references without making incorrect assumptions.
+* No runtime exceptions are observed during analysis.
+
+**Result:**
+
+* No ClassCastException observed.
+* Rule executes as expected across all tested scenarios.&#x20;
+
+
+
+**3.     Fixed issue with rule “Field Level Security Vulnerabilities” {Rule ID: sf:FieldLevelSecurity}**
+
+**Summary**
+
+Previously, the rule FieldLevelSecurityRule was throwing a NullPointerException when analyzing DML operations (Database.update) inside a trigger body due to the absence of an enclosing ASTMethodDeclaration. The failure was a NullPointerException caused by attempting to invoke findChildNodesWithXPath on a null methodDeclaration object within FieldLevelSecurityRule.
+
+**After the fix:**
+
+* Proper null handling for methodDeclaration has been implemented.
+* The rule no longer assumes the presence of a method context.
+* Trigger-based DML scenarios are now handled gracefully without runtime exceptions.
+
+**Result**:
+
+* No NullPointerException observed.
+* Rule behaves as expected.&#x20;
+
+
+
+**4.     Fixed issue with rule “Resource Injection”** {Rule ID: sf:ResourceInjection}
+
+**Description**
+
+Several customers were reporting a StackOverflowError for the rule “Resource Injection” {Rule ID: sf:ResourceInjection}. Based on the analysis of logs and review of implementation, we uncovered an infinite recursive call in the isSanitized method in the UrlSanitization.java and determined that this is the reason for the StackOverflowError.
+
+Previously, the analysis stayed in Running state and logs showed a StackOverflowError for the mutual-recursion flow (methodA -> methodB -> methodA) with no exit condition, ending in req.setEndpoint(url) with the Rule Resource Injection. After the fix, the same code analyzes successfully, completes normally, and no StackOverflowError is observed in logs.
+
+**Validation after fix:**
+
+* Ran analysis on CodeScan
+* Analysis completed successfully
+* Analysis no longer remained in Running state
+* StackOverflowError was no longer seen in logs
+
+As such, we are reporting that this issue has been fully remediated.
+
+***
+
 ## CodeScan Release 26.0.6
 
 **Release Date: 29 March 2026**

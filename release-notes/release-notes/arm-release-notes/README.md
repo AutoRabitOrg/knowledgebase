@@ -4,9 +4,7 @@
 
 ### **Release Notes 26.2.2**
 
-**Release Date:** 12 April 2026
-
-***
+**Release Date:** **12 April 2026**
 
 #### **1. ARM Deployment: Improved Error Message Rendering (Support Case #206745 – New UI)**
 

@@ -6,7 +6,7 @@
 
 **Release Date: 12 April 2026**
 
-### New features
+### New Features
 
 #### Permissions Explorer – Agentforce Visibility
 
@@ -14,7 +14,7 @@ Guard now has Agentforce coverage in Permissions Explorer to help teams understa
 
 There is now a dedicated Agentforce permission category that makes it easier to investigate users with Agentforce-related capabilities, including permissions tied to managing agents, prompt templates, and Agentforce-specific features. Users can select one or multiple Agentforce permissions and trace how access is granted across profiles, permission sets, and permission set groups.
 
-In addition, a new “Explore Agentforce” experience from the Permissions Explorer home page allows users to identify Agentforce-related users and review the profiles, permission sets and permission set groups assigned to them. Results also show the source of each permission, making it easier to audit AI agent access and support least-privilege reviews.
+In addition, a new “Explore Agentforce” experience from the Permissions Explorer home page allows users to identify Agentforce-related users and review the profiles, permission sets, and permission set groups assigned to them. Results also show the source of each permission, making it easier to audit AI agent access and support least-privilege reviews.
 
 #### Risk Assessment – Historical Tracking
 

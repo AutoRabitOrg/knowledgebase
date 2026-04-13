@@ -76,6 +76,8 @@ Fixed an issue where data type mismatches between source data and schema caused 
 
 * Resolved authentication issues that caused errors when exporting large datasets
 
+***
+
 ## Vault Release Notes 26.1.1
 
 **Release Date: 25 March 2026**

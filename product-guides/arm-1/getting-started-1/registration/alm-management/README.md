@@ -22,21 +22,21 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 2. Navigate to **Settings › ALM Mgmt**.
 3.  Click **Register ALM**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1959).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1959).png" alt=""><figcaption></figcaption></figure>
 4.  Fill the form:
 
     **IBM RTC, CA Agile Central, Salesforce, ServiceNow VersionOne, or Azure DevOps**\
     \
-    ![](<../../../.gitbook/assets/image (1961).png>)<br>
+    ![](<../../../../../.gitbook/assets/image (1961).png>)<br>
 
     * **ALM Name** – friendly label.
     * **ALM Type** – choose the platform.
     * **ALM URL** – base server URL.
-    * **Credentials** – select stored credentials (see [Credential Manager](../../arm/troubleshoot/how-tos/create-users-credentials.md)).
+    * **Credentials** – select stored credentials (see [Credential Manager](../../../../arm/troubleshoot/how-tos/create-users-credentials.md)).
 
     **Jira**\
     \
-    ![](<../../../.gitbook/assets/image (1962).png>)
+    ![](<../../../../../.gitbook/assets/image (1962).png>)
 
     * **ALM Name** – friendly label.
     * **ALM Type** – _Jira_.
@@ -46,7 +46,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 
 {% hint style="info" %}
 * Jira **OAuth** is supported for **Cloud** editions only.
-* OAuth appears only after you register Jira OAuth credentials in **ALM Settings**. Learn how [here](../../arm/arm-administration/user-management/manage-users-account-settings.md).
+* OAuth appears only after you register Jira OAuth credentials in **ALM Settings**. Learn how [here](../../../../arm/arm-administration/user-management/manage-users-account-settings.md).
 * **Access Token** expires after 1 hour; **Refresh Token** after 90 days.
 
 
@@ -82,7 +82,7 @@ Configure how work items are shown and filtered:
 3.  Click **Save Settings**.\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (1963).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1963).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 To remove a field’s filter, click the trash-can icon next to the rule.
@@ -100,9 +100,9 @@ git commit -m "\[PROJECT-123] add README"
 
 ```
 
-<figure><img src="../../../.gitbook/assets/image (746).png" alt="Smart Commits pattern settings" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (746).png" alt="Smart Commits pattern settings" width="488"><figcaption></figcaption></figure>
 
-* **Enable auto update on webhook** – reveals a webhook URL you can add to your VCS so external commits update the ALM automatically. See setup guides [here](../../arm/arm-features/automation-and-ci/webhooks/).
+* **Enable auto update on webhook** – reveals a webhook URL you can add to your VCS so external commits update the ALM automatically. See setup guides [here](../../../../arm/arm-features/automation-and-ci/webhooks/).
 * Optionally **sync external smart commits** made outside AutoRABIT.
 
 ***
@@ -118,7 +118,7 @@ Repository mappings let AutoRABIT update ALM work-item status after a successful
 
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1964).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1964).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Choose the version-control **Repository**.
 2. Select the **Source Branch** (click _Register here_ if it’s missing).
@@ -128,7 +128,7 @@ Repository mappings let AutoRABIT update ALM work-item status after a successful
    * Current status
    *   Target status after merge<br>
 
-       <figure><img src="../../../.gitbook/assets/image (1965).png" alt="" width="375"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (1965).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Click **Save**.
 
 {% hint style="info" %}
@@ -138,7 +138,7 @@ Branches and repos you **can’t** access won’t appear in the dropdowns.
 6.  Suppress ALM email noise by listing addresses in **Notify exception status updates to**.\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 10.01.11 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 10.01.11 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 
 
@@ -148,12 +148,12 @@ Branches and repos you **can’t** access won’t appear in the dropdowns.
 2. Navigate to Settings **› ALM**.
 3. Click **Register ALM**.\\
 
-<figure><img src="../../../.gitbook/assets/image (2487).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2487).png" alt=""><figcaption></figcaption></figure>
 
 1. Fill the form:
    1. **ALM Name** – friendly label.
 
-<figure><img src="../../../.gitbook/assets/image (2488).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2488).png" alt="" width="188"><figcaption></figcaption></figure>
 
 **Field Mapping for Work Item Updates in Salesforce**
 

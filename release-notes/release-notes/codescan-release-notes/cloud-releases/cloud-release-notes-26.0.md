@@ -349,6 +349,7 @@ CodeScan 26.0.6 is comprised of the following 5 components:
 
 * 1 New Feature
 * 4 Application Enhancements
+* 1 Fix
 
 Component details are listed in their corresponding sections within this document.
 
@@ -486,6 +487,13 @@ We have verified that **Callback URL** is displayed correctly, and the **Copy** 
 {% hint style="info" %}
 **NOTE:** When hovering over the Callback URL button, the notes are displayed. The notes do not disappear when clicking on the Callback URL. They only disappear when clicking anywhere else on the page. This is the expected behavior.
 {% endhint %}
+
+### Fixes
+
+**Custom Rule creation validation update:**
+
+1. Resolved an inconsistency between custom rule creation and update workflows. Previously, the update flow enforced stricter validation on the description field, restricting certain formats (e.g., descriptions containing HTTP/HTTPS protocols). \
+   With this fix, the additional validation has been removed from the update flow. Users can now update rule descriptions with any valid content, including URLs or HTTP/HTTPS references, ensuring consistency with the rule creation behavior.
 
 ***
 

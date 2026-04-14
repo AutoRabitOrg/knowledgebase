@@ -731,7 +731,7 @@ Verified the following scenarios and confirmed that the are all working as expec
 
 &#x20;
 
-**2.     Added a new parameter to the rule “Test Class Names Should Include Test”**{Rule ID: sf:SOQLInjection}
+**2.     Added a new parameter to the rule “Test Class Names Should Include Test”**{Rule ID: sf:TestClassNaming}
 
 **Description**
 
@@ -757,8 +757,6 @@ The default of this parameter is to use the preexisting current functionality of
 Further, we decided that the parameter field should never be empty.
 
 The value of this parameter is providing customers with the flexibility to add any patterns that they allow as acceptable naming conventions without restriction to our logic.
-
-
 
 Validated the fix for the Sf:testclassnaming rule by verifying the following scenarios:
 

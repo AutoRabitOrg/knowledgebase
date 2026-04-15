@@ -23,6 +23,10 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 
 <figure><img src="../../../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
 
+_**\*\*\*\*\*The branch creation process in ARM has been enhanced to improve responsiveness by creating the branch instantly using the GitHub API when the user initiates the action. This allows users to access and start working on the branch immediately without any delay. The required registration process is handled asynchronously in the background, ensuring a seamless experience without impacting performance or existing repository integrity.**_
+
+_**Note: This optimized flow is applicable only when GitHub Pull Request functionality is enabled for the repository; otherwise, the system will fall back to the existing branch creation process.**_
+
 {% hint style="info" %}
 **Important Notes:**
 

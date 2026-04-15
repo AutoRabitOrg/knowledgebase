@@ -2,6 +2,109 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive ARM updates!" listId="a085e26e7e" %}
 
+### **Release Notes 26.2.3** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+
+**Release Date:** Apr 19, 2026
+
+***
+
+#### **Accurate Error Message Display for Deployment Failures (Support Case #207169)** <a href="#accurate-error-message-display-for-deployment-failures-support-case-207169" id="accurate-error-message-display-for-deployment-failures-support-case-207169"></a>
+
+Fixed an issue where incorrect or misleading error messages were displayed in the Deployment UI logs. In certain cases, users saw generic authentication-related errors, even when the actual failure was due to invalid deployment configurations (e.g., selecting “No Test Run” for Production deployments).
+
+With this fix, the UI now reflects the correct backend error messages, providing clear and accurate insights into deployment failures. This helps users quickly identify and resolve issues.
+
+**Impacted Areas:**\
+Deployment, CI Jobs
+
+***
+
+#### **Template Sharing for Subusers – Environment Provisioning (Both UIs) - New Enhancement** <a href="#template-sharing-for-subusers-environment-provisioning-both-uis-new-enhancement" id="template-sharing-for-subusers-environment-provisioning-both-uis-new-enhancement"></a>
+
+Introduced an enhancement to allow Subusers to share environment provisioning templates they have created. Previously, only Admin users could share templates.
+
+With this update:
+
+* Subusers can now share their own templates.
+* Sharing remains restricted for templates created by other users.
+* Admin users continue to have full sharing access across all templates.
+
+This improvement reduces dependency on Admins and enables better collaboration.
+
+**Impacted Areas:**\
+Environment Provisioning (Template Management) – Old UI & New UI
+
+***
+
+#### **Multiple Diff View Support in EZCommit – New UI (Support Case #215475)** <a href="#multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475" id="multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475"></a>
+
+Enhanced the EZCommit experience in the New UI to allow users to view multiple file diffs simultaneously. Previously, opening a diff would automatically close any previously opened diff, limiting comparison across components.
+
+With this update, users can expand multiple diff sections at the same time, enabling easier side-by-side review and improved validation before committing.
+
+**Impacted Areas:**\
+EZCommit, CI Jobs, Deployments, Version Control, Merge Requests
+
+***
+
+#### **Baseline Revision Selection Display Fix – Classic UI (Support Case #211183)** <a href="#baseline-revision-selection-display-fix-classic-ui-support-case-211183" id="baseline-revision-selection-display-fix-classic-ui-support-case-211183"></a>
+
+Fixed an issue in the Classic UI where the selected Baseline Revision was not visually reflected in the CI Job edit screen, even though it was correctly saved. This caused confusion and unnecessary validation errors.
+
+With this fix, the selected revision is now properly highlighted, and users are automatically navigated to the relevant page. If no revision is selected, the default view is shown without disruption.
+
+**Impacted Areas:**\
+CI Jobs, Deployments, Merge Requests (Revision Selection Popup)
+
+***
+
+#### **Merge Conflict Email Notification Accuracy Fix (Support Case #210042)** <a href="#merge-conflict-email-notification-accuracy-fix-support-case-210042" id="merge-conflict-email-notification-accuracy-fix-support-case-210042"></a>
+
+Fixed an issue where non-conflicting files were incorrectly listed under the “Conflicted Files” section in merge conflict email notifications.
+
+With this fix, only the actual conflicting files are displayed in the “Conflicted Files” section, while successfully merged files are shown correctly under “Merged Files,” improving clarity and accuracy of notifications.
+
+**Impacted Areas:**\
+Version Control – EZ-Merge
+
+***
+
+#### **Apache Tomcat Upgrade for On-Prem Instances** <a href="#apache-tomcat-upgrade-for-on-prem-instances" id="apache-tomcat-upgrade-for-on-prem-instances"></a>
+
+Upgraded Apache Tomcat from version 11.0.13 to 11.0.21 for all On-Prem Instances. This update ensures improved performance, enhanced security, and better stability of the ARM application environment.
+
+**Impacted Areas:**\
+On-Prem Instances
+
+***
+
+#### **Login Redirection Issue Fix – New UI (Support Case #214960)** <a href="#login-redirection-issue-fix-new-ui-support-case-214960" id="login-redirection-issue-fix-new-ui-support-case-214960"></a>
+
+Fixed an issue where users were unable to log in correctly after enabling the New UI and were repeatedly redirected despite switching back to the Old UI.
+
+This fix ensures stable login behavior by restoring failed script handling and improving error visibility, allowing users to successfully access the application across browsers.
+
+**Impacted Areas:**\
+Login, UI Navigation (Old UI & New UI)
+
+***
+
+#### **Faster Branch Creation Using GitHub API (Both UIs) - New Enhancement** <a href="#faster-branch-creation-using-github-api-both-uis-new-enhancement" id="faster-branch-creation-using-github-api-both-uis-new-enhancement"></a>
+
+Introduced an enhancement to improve branch creation performance by creating branches instantly using the GitHub API. Previously, branch creation was delayed due to synchronous workspace copy and setup processes.
+
+With this update:
+
+* Branches are created immediately upon user action.
+* Workspace checkout and related processes run asynchronously in the background.
+* Users can access and start working on the branch without delay.
+* The system falls back to the existing process if GitHub pull request support is not enabled.
+
+This enhancement improves responsiveness and overall user experience.
+
+**Impacted Areas:**\
+Version Control, EZ-Commit (Old UI & New UI)
+
 ### **Release Notes 26.2.2**
 
 **Release Date:** **12 April 2026**

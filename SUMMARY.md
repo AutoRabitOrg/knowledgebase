@@ -648,7 +648,7 @@
   * [ARM Features](product-guides/arm-1/arm-features/README.md)
     * [Dashboard & Pipelines](product-guides/arm-1/arm-features/dashboard-and-pipelines/README.md)
       * [Dashboards](product-guides/arm-1/arm-features/dashboard-and-pipelines/dashboards-and-widgets.md)
-      * [Pipeline](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/README.md)
+      * [Pipeline(Upcoming)](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/README.md)
         * [Most recent runs](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/most-recent-runs/README.md)
           * [Release Pipeline Run Details](product-guides/arm-1/arm-features/dashboard-and-pipelines/pipelines/most-recent-runs/release-pipeline-run-details.md)
     * [Version Control](product-guides/arm-1/arm-features/version-control/README.md)

@@ -1,5 +1,17 @@
 # Add a project to CodeScan from GitHub
 
+{% hint style="info" %}
+**This integration has recently switched from using OAuth 2.0 to GitHub Apps.** &#x20;
+
+If you are currently using the OAuth version of this integration, **you do not have to change anything**. **AutoRABIT will continue to support all current projects of this type**. However, all future connections must be made using GitHub Apps.
+
+For users moving from OAuth to Apps, you can remove the CodeScan OAuth App manually from your repository. You can do this in **Organization Settings > Applications > Authorized OAuth Apps.**
+
+Be careful as any projects still connected with OAuth will be disconnected if you delete the OAuth App without reconnecting your GitHub projects.
+{% endhint %}
+
+
+
 This document guides you how to add a **GitHub** project to your CodeScan cloud account and run the analysis.
 
 1. Log in to your **CodeScan** account.

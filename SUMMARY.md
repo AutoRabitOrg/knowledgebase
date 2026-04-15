@@ -1068,7 +1068,7 @@
       * [Viewing Project Activity](product-guides/codescan/getting-started/using-codescan/viewing-project-activity.md)
       * [Adding Projects to CodeScan](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/README.md)
         * [Enterprise Git Connections](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/README.md)
-          * [GitHub Authentication using OAuth (CodeScan)](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/github-authentication-using-oauth-codescan.md)
+          * [GitHub Authentication using GitHub Apps (CodeScan)](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/github-authentication-using-oauth-codescan.md)
           * [GitLab Authentication using OAuth (CodeScan)](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/gitlab-authentication-using-oauth-codescan.md)
           * [Bitbucket Authentication using OAuth (CodeScan)](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/bitbucket-authentication-using-oauth-codescan.md)
           * [Configuring and Managing ALM Integrations](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/configuring-and-managing-alm-integrations.md)

@@ -25,7 +25,7 @@ The **User Activity Monitoring** feature provides full visibility into user acti
   * Last Modified Date
   * Last Login Date
   * User Flags (if applicable)
-    * ![](../../../../.gitbook/assets/image.png)= Locked. User has had their password locked and is unable to sign in until it is reset.
+    * ![](<../../../../.gitbook/assets/image (1).png>)= Locked. User has had their password locked and is unable to sign in until it is reset.
     * ![](<../../../../.gitbook/assets/image (2).png>)= Frozen. User is blocked from logging in.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-09-25 104438.png" alt=""><figcaption><p>User Activity Monitoring</p></figcaption></figure>

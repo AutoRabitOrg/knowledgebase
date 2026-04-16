@@ -34,13 +34,12 @@ Before configuring SSO in ADFS, you must enable SSO in CodeScan.
 3. If the **Enforce SSO** checkbox is enabled prematurely, it will prohibit all **users in their organization** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 {% endhint %}
 
-7. Keep the **SAML Connection status** checkbox as **Enabled** and click on the **Create** button.
+7.  Keep the **SAML Connection status** checkbox as **Enabled** and click on the **Create** button.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="383"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+8.  You can see the **Metadata URL** generated for your SSO configuration. Copy the **Metadata URL** in a new browser tab to download the XML file on your local device.<br>
 
-8. You can see the **Metadata URL** generated for your SSO configuration. Copy the **Metadata URL** in a new browser tab to download the XML file on your local device.
-
-<figure><img src="../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2490).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 2: Setting up Single Sign-On using Active Directory with ADFS and SAML 2.0**
 

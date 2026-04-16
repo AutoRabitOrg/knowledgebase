@@ -36,7 +36,7 @@ Before configuring SSO in ADFS, you must enable SSO in CodeScan.
 
 7.  Keep the **SAML Connection status** checkbox as **Enabled** and click on the **Create** button.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 8.  You can see the **Metadata URL** generated for your SSO configuration. Copy the **Metadata URL** in a new browser tab to download the XML file on your local device.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2490).png" alt=""><figcaption></figcaption></figure>

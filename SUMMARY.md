@@ -1111,6 +1111,7 @@
   * [CodeScan Support](product-guides/codescan/codescan-support/README.md)
     * [Raise a Service Request](product-guides/codescan/codescan-support/raise-a-service-request.md)
   * [CodeScan Integrations](product-guides/codescan/codescan-integration/README.md)
+    * [CodeScan GitHub Apps Integration for GitHub Enterprise](product-guides/codescan/codescan-integration/codescan-github-apps-integration-for-github-enterprise.md)
     * [ALM/Enterprise Git](product-guides/codescan/codescan-integration/alm-enterprise-git.md)
     * [ARM for CodeScan](product-guides/codescan/codescan-integration/arm/README.md)
       * [CodeScan Integration with ARM](product-guides/codescan/codescan-integration/arm/codescan-integration-with-arm.md)

@@ -25,7 +25,7 @@ At the top of the page, the pipeline is displayed as a visual flow starting from
 This view helps you quickly understand how the artifact moved across environments during this run.\
 <br>
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Step 2: Stage cards and execution status\
 Each stage is represented as a card in the flow and displays:

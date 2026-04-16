@@ -108,9 +108,9 @@ Search results are presented in a structured comparison view, allowing users to 
 1. Enter the following details:
    1.  Enter a unique <mark style="color:red;">**Label**</mark><mark style="color:red;">\*</mark>. (Alphanumerics, underscores, hyphens, and spaces are allowed.)
 
-       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Specify **Preserve The Result For**\* in days (Maximum: 30 days).
 3. Enter a **Description**, if required.
 4.  Click **Save** to create the configuration.
@@ -215,7 +215,7 @@ Search results are presented in a structured comparison view, allowing users to 
 1. Initiate Run
    1.  In the **Job Config** grid, click the **Run (▶)** icon under the Actions column for the required configuration.
 
-       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Configure Job Run Details
    1. The **Job Run Details** dialog is displayed.
    2.  **The dialog shows:**&#x20;
@@ -223,7 +223,7 @@ Search results are presented in a structured comparison view, allowing users to 
        1. **Object Name**&#x20;
        2. Auto-generated **Label**
 
-       <figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Under **Emails**, select the email addresses to receive job notifications.
 4. Click **Search** to execute the configuration.
 5. Click **Cancel** to exit without running the job.

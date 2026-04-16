@@ -57,7 +57,7 @@ We have validated the GitHub Enterprise flow in CodeScan for the following scena
 * Delete analysis
 * Rename analysis
 
-For creating a GitHub App for an Enterprise account, users need to follow the steps outlined in the documentation [CodeScan GitHub Apps Integration (Technical Approach)](https://autorabit.atlassian.net/wiki/spaces/CodeScan/pages/2239234054/Codescan+Github+Apps+Integration+Technical+Approach). Once completed, users need to create an ALM connection in the CodeScan application by providing the following details:
+For creating a GitHub App for an Enterprise account, users need to follow the steps outlined in the documentation [ CodeScan GitHub Apps Integration (Technical Approach)](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/codescan/codescan-integration/codescan-github-apps-integration-for-github-enterprise). Once completed, users need to create an ALM connection in the CodeScan application by providing the following details:
 
 * App ID
 * Client ID

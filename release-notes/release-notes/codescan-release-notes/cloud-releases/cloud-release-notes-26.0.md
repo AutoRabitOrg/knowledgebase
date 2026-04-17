@@ -57,7 +57,7 @@ We have validated the GitHub Enterprise flow in CodeScan for the following scena
 * Delete analysis
 * Rename analysis
 
-For creating a GitHub App for an Enterprise account, users need to follow the steps outlined in the documentation [ CodeScan GitHub Apps Integration (Technical Approach)](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/codescan/codescan-integration/codescan-github-apps-integration-for-github-enterprise). Once completed, users need to create an ALM connection in the CodeScan application by providing the following details:
+For creating a GitHub App for an Enterprise account, users need to follow the steps outlined in the documentation [CodeScan GitHub Apps Integration (Technical Approach)](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/product-guides/codescan/codescan-integration/codescan-github-apps-integration-for-github-enterprise). Once completed, users need to create an ALM connection in the CodeScan application by providing the following details:
 
 * App ID
 * Client ID
@@ -71,14 +71,14 @@ Please note these important TECHNICAL details:
 
 1\. GitHub Apps Authentication Flow Change:
 
-After implementing the GitHub Apps feature, the flow of authorization has changed for the user.  For the first-time user, they will be navigated to the GitHub apps installation page where they need to Authorize and Install the app. Then, the user will be navigated to the CodeScan GitHub Integration pop-up to run the analysis.
+After implementing the GitHub Apps feature, the flow of authorization has changed for the user. For the first-time user, they will be navigated to the GitHub apps installation page, where they need to Authorize and Install the app. Then, the user will be navigated to the CodeScan GitHub Integration pop-up to run the analysis.
 
 &#x20;2\. GitHub Apps - Token Refresh:
 
 How it works:
 
 * Before API calls, check if token expired
-* If expired, automatically refresh (generate new JWT → get new token)
+  * If expired, automatically refresh (generate new JWT → get new token)
 * NOTE: We have updated all API call methods to support both OAuth and GitHub Apps, and verified that OAuth continues to work (it is backward compatible).
 * Additionally, analysis execution was verified after 8 hours, confirming that the token refresh mechanism (every 8 hours) is functioning as designed.
 
@@ -90,10 +90,10 @@ We have introduced a new **Exception** status in the issue lifecycle that allows
 
 When an issue is moved to the **Exception** status, CodeScan captures and stores the justification for auditing and tracking purposes. The status appears alongside existing issue statuses and is visible in issue details, filters, and reports.
 
-NOTE: The following description has been added the Exception status: “The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.“
+NOTE: The following description has been added to the Exception status: “The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.“
 
 **Benefit**\
-Users are provided with a dedicated **Exception** status, allowing them to clearly differentiate between resolved issues and intentionally accepted risks. This improved issue tracking, compliance transparency, and auditability.
+Users are provided with a dedicated **Exception** status, allowing them to clearly differentiate between resolved issues and intentionally accepted risks. This improves issue tracking, compliance transparency, and auditability.
 
 **Value / Purpose**
 
@@ -133,7 +133,7 @@ Validated this new feature via the following scenarios and have verified that al
 
     <figure><img src="../../../../.gitbook/assets/image (2478).png" alt=""><figcaption></figcaption></figure>
 
-    Comments in the activity section for Exception, are able to deleted by the user (after these issues are moved into exception).<br>
+    Comments in the activity section for Exception are able to deleted by the user (after these issues are moved into exception).<br>
 
     Also, user already assigned to issues will remain assigned, even when moved to exception (if issue assigned before moving or while moving the issues to exception).
 
@@ -167,7 +167,7 @@ Users are notified about analysis failures (both pre and post stages) via email,
 * Improves visibility into analysis failures beyond Quality Gate results
 * Reduces turnaround time for issue resolution
 
-Validated that users are able to receive the email notifications for pre/post analysis errors, and verified that these users are able to receive notifications as expected.  Several examples have been provided (below) for illustrative purposes.
+Validated that users are able to receive the email notifications for pre/post analysis errors, and verified that these users are able to receive notifications as expected. Several examples have been provided below for illustrative purposes.
 
 <figure><img src="../../../../.gitbook/assets/image (2479).png" alt=""><figcaption></figcaption></figure>
 
@@ -179,7 +179,7 @@ Please note these important TECHNICAL details:
 
 1\. We have included the ability for users to Enable / Disable Subscription for Analysis Failure Notifications so that users can manage whether they need to receive failure alerts based on chosen preferences.
 
-The system will leverage the **existing subscription-specific UI** i.e. _**Profile> My Account>Notifications> Overall Notifications**_ to allow users to opt in or opt out of analysis failure notifications.
+The system will leverage the **existing subscription-specific UI,** i.e., _**Profile> My Account>Notifications> Overall Notifications,**_ to allow users to opt in or opt out of analysis failure notifications.
 
 <figure><img src="../../../../.gitbook/assets/image (2482).png" alt=""><figcaption></figcaption></figure>
 
@@ -192,8 +192,8 @@ then notifications will be **more relevant at an individual level**, reducing al
 
 **Value / Purpose**
 
-* Empowers **all end users** to manage their own notification preferences
-* Reduces **unwanted or noisy alerts** from intermittent analysis failures
+* Empowers **all end users** to manage their own notification preferences.
+* Reduces **unwanted or noisy alerts** from intermittent analysis failures.
 
 **Acceptance Criteria**
 
@@ -237,13 +237,13 @@ Subscribed users are notified immediately when intermittent analysis failures oc
 
 **Description**
 
-In our previous release (CodeScan 26.0.6), we delivered a new CodeScan feature that captures the Cursor IDE usage details (User Name, IDE Type = Cursor, Timestamp) within CodeScan Cloud.  This allows customers to track IDE adoption, user activity, and engagement trends alongside existing usage data. {you can find more details under “Track Cursor IDE Usage on CodeScan 'IDE USAGE' Page” within those release notes as well as our knowledge base).
+In our previous release (CodeScan 26.0.6), we delivered a new CodeScan feature that captures the Cursor IDE usage details (User Name, IDE Type = Cursor, Timestamp) within CodeScan Cloud. This allows customers to track IDE adoption, user activity, and engagement trends alongside existing usage data. (You can find more details under “Track Cursor IDE Usage on CodeScan 'IDE USAGE' Page” within those release notes as well as our Knowledge Base.)
 
-In this release, we have enhanced this capability within the IDE plug-in which allows us to more precisely determine whether the user is currently on Cursor or VS Code.  We then send this value to CodeScan Cloud.
+In this release, we have enhanced this capability within the IDE plug-in, which allows us to more precisely determine whether the user is currently on Cursor or VS Code. We then send this value to CodeScan Cloud.
 
-1. Verified the Cursor plugin using the provided VSIX file across multiple file types .cls, .page, .java, .js, .trigger, .css, .ts, .cmp. Violations are displayed as expected.
-2. Also verified the IDE Usage page, where Cursor usage is correctly reflected. We have tested and validated with multiple users, and verified cross-user usage visibility is working as expected on the IDE Usage page.
-3. Additionally, verified the VS Code plugin using the same VSIX file. Violations are displayed correctly for all supported file types .cls, .page, .java, .js, .trigger, .css, .ts, .cmp in the PREVIEW environment.
+1. Verified the Cursor plugin using the provided VSIX file across multiple file types: .cls, .page, .java, .js, .trigger, .css, .ts, and .cmp. Violations are displayed as expected.
+2. Also verified the IDE Usage page, where Cursor usage is correctly reflected. We have tested and validated with multiple users and verified cross-user usage visibility is working as expected on the IDE Usage page.
+3. Additionally, verified the VS Code plugin using the same VSIX file. Violations are displayed correctly for all supported file types, e.g., .cls, .page, .java, .js, .trigger, .css, .ts, .cmp, in the PREVIEW environment.
 4. Confirmed that VS Code usage is accurately shown on the IDE Usage page and validated that cross-user usage visibility is also functioning as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (2484).png" alt=""><figcaption></figcaption></figure>
@@ -256,10 +256,10 @@ In this release, we have enhanced this capability within the IDE plug-in which a
 
 Several customers were reporting a StackOverflowError for the rule “Unescaped Error Message XSS” {Rule ID: sf:UnescapedOutput}
 
-Earlier, the Unescaped Output Rule was able to trace data flow through methods but not through assignment chains effectively.  Due to missing/inefficient assignment data flow handling, the rule repeatedly re-entered isSanitized while resolving sanitization status for variables passed through assignments. This resulted in deep recursive calls and ultimately a StackOverflowError, instead of reporting a violation.
+Earlier, the Unescaped Output Rule was able to trace data flow through methods but not through assignment chains effectively. Due to missing/inefficient assignment data flow handling, the rule repeatedly re-entered isSanitized while resolving sanitization status for variables passed through assignments. This resulted in deep recursive calls and ultimately a StackOverflowError, instead of reporting a violation.
 
 **Reproduction Analysis:**\
-Initial attempts with small assignment chains did not reproduce the issue. The issue was successfully reproduced only with very deep assignment chains (\~5000 assignments).
+Initial attempts with small assignment chains did not reproduce the issue. The issue was successfully reproduced only with very deep assignment chains (\~5,000 assignments).
 
 This indicates that:
 
@@ -274,7 +274,7 @@ This indicates that:
 ✔ isSanitized now handles edge cases without re-entering indefinitely\
 → Verified. Deep assignment chains no longer cause recursive overflow.
 
-As such, we confirm that issue has been successfully remediated. The rule now handles deep assignment chains correctly, avoids infinite recursion in isSanitized, and without causing StackOverflowError.
+As such, we confirm that the issue has been successfully remediated. The rule now handles deep assignment chains correctly and avoids infinite recursion in isSanitized, without causing a StackOverflowError.
 
 <figure><img src="../../../../.gitbook/assets/image (2485).png" alt=""><figcaption></figcaption></figure>
 

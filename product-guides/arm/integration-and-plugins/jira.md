@@ -85,6 +85,10 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note:** In multi-user environments, ensure that the Jira OAuth application is set to **“Sharing”** in the Atlassian Developer Console (Distribution section). If it remains in **“Not Sharing”** mode, only the app owner will be able to authenticate, and other users may encounter authorization errors during re-authentication.
+{% endhint %}
+
 ### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 
 Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org/ Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your Jira projects and teams.&#x20;

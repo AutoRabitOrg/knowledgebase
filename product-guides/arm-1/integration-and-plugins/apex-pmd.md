@@ -4,7 +4,7 @@
 
 PMD stands for Programming Mistake Detector. It is a source code analyzer that finds common mistakes in your code, like unused variables, if-else statements without braces, naming conventions of methods, SOQL in loops, and many more. It also includes CPD (for Copy/Paste Detector), which finds duplicate code in your files and makes you aware of improvements to make your code reusable.
 
-Supported Version: ApexPMD upgraded to the latest 6.49 version.
+Supported Version: ApexPMD upgraded to the latest 7.15.0 version.
 
 ### Setting up PMD in AutoRABIT <a href="#setting-up-pmd-in-autorabit" id="setting-up-pmd-in-autorabit"></a>
 

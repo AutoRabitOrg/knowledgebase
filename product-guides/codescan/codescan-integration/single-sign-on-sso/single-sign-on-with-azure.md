@@ -122,13 +122,17 @@ Now that your Azure SSO implementation is set up, you’ll need to follow just a
 
     <figure><img src="../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * Open the **Certificate (Base64)** that you have downloaded from Azure in your Notepad++, copy the entire content and paste into the **`X509 Signing Certificate`** field of the CodeScan SAML connection.
+    *   Open the **Certificate (Base64)** that you have downloaded from Azure in your Notepad++, copy the entire content and paste into the **`X509 Signing Certificate`** field of the CodeScan SAML connection.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="396"><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (2491).png" alt=""><figcaption></figcaption></figure>
 4. Click **`Update`** on the CodeScan page.
 5. The next step is to confirm your corporate domain to get the SSO working. You can confirm your domain by submitting a request to [CodeScan Support](https://mailto:support@autorabit.com/).
 
-### Step 4: Testing the Single Sign-On Configuration <a href="#step-4-testing-the-single-signon-configuration" id="step-4-testing-the-single-signon-configuration"></a>
+### Step 4: Include user as Member to current Org <a href="#step-4-testing-the-single-signon-configuration" id="step-4-testing-the-single-signon-configuration"></a>
+
+1. Make sure the "Include user as Member to current Organization" checkbox is enabled under Groups synchronization.
+
+### Step 5: Testing the Single Sign-On Configuration <a href="#step-4-testing-the-single-signon-configuration" id="step-4-testing-the-single-signon-configuration"></a>
 
 1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.
 2. Enter the corporate domain name you have configured when enabling SSO inside CodeScan in the **`Your Company email`** field. **For example:** _autorabit.com_

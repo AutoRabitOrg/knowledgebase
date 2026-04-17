@@ -137,8 +137,9 @@ Once the application is created, you will need to enter the identity provider da
     *   Copy the content of the downloaded certificate \[_refer to **Step 2** above to download the certificate_] into the **`X509 Signing Certificate`** field of Codescan SAML connection.<br>
 
         <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-8. Click **`Update`** on the CodeScan page.
-9. The next step is to confirm your corporate domain to get the SSO working. You can confirm domain by raising a request via [Codescan Support](https://mailto:support@autorabit.com/).
+8. Make sure the "Include user as Member to current Organization" checkbox is enabled under Groups synchronization.&#x20;
+9. Click **`Update`** on the CodeScan page.
+10. The next step is to confirm your corporate domain to get the SSO working. You can confirm domain by raising a request via [Codescan Support](https://mailto:support@autorabit.com/).
 
 ### Step 4: Testing the Single Sign-On Configuration <a href="#step-4-testing-the-single-signon-configuration" id="step-4-testing-the-single-signon-configuration"></a>
 

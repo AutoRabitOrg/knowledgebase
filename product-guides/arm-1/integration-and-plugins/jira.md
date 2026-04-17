@@ -6,7 +6,7 @@ ARM-JIRA integration automatically posts updates to Jira tickets when you run va
 
 **To put it simply:** JIRA allows you to track any kind of unit of work (be it an issue, bug, story, project task, etc.) through a predefined workflow. However, in order to integrate JIRA as a plugin with ARM, it does require some steps in ARM to get it configured. The section below will help you get JIRA configured in ARM in easy steps.
 
-Point to Note: **JIRA OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
+Point to Note: **JIRA OAuth** access type is currently supported for **Cloud versions** only. This function is on demand, so if you want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
 
 ### Integrate JIRA with ARM <a href="#integrate-jira-with-arm" id="integrate-jira-with-arm"></a>
 
@@ -68,11 +68,15 @@ While registering JIRA with ARM, if JIRA fails to connect and results in **"Auth
 **Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
 {% endhint %}
 
+{% hint style="info" %}
+**Note:** In multi-user environments, ensure that the Jira OAuth application is set to **“Sharing”** in the Atlassian Developer Console (Distribution section). If it remains in **“Not Sharing”** mode, only the app owner will be able to authenticate, and other users may encounter authorization errors during re-authentication.
+{% endhint %}
+
 ### Mapping JIRA to Salesforce Org or Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 
 Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org or Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your JIRA projects and teams.&#x20;
 
-1. Go to the **Salesforce Org Management(Admin > SF Org Mgmt.)** page.
+1. Go to the **Salesforce Org Management (Admin > SF Org Mgmt.)** page.
 2. Select the **Salesforce org** for which you like to map the JIRA as a plugin.
 3. Under **Salesforce Org- Mappings** tab, choose **JIRA** as ALM type and click on **Mapping**.
 4. Select the **label** and the **project**.

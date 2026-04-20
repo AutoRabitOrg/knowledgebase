@@ -10,39 +10,6 @@ After completing this unit, you'll be able to:
 * [Compatibility with Agentforce](installing-codescan-for-vs-code.md#compatibility-with-agentforce)
 * [Troubleshooting steps if you experienced VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
 
-### Installing the CodeScan IDE Plugin version 2.1.0
-
-These step-by-step instructions will show you how to install the CodeScan plugin.&#x20;
-
-1. Click the CodeScan icon on the left panel.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/image (477).png" alt="" width="375"><figcaption></figcaption></figure>
-
-2. Click on ‘Add CodeScan Connection.’
-
-<figure><img src="../../../../.gitbook/assets/image (478).png" alt="" width="563"><figcaption></figcaption></figure>
-
-3. Add your CodeScan URL.
-4. Click on 'Generate Token.' This will open CodeScan in a browser.
-5. Click 'Allow Connection' to send the newly generated token back to your IDE.
-6. Add your organization key.
-7. Enter a Unique Connection Name.
-8. Click on 'Save Connection.' You will see your connection appear in your connected mode window.
-
-<figure><img src="../../../../.gitbook/assets/image (479).png" alt="" width="293"><figcaption></figcaption></figure>
-
-9. Click on your connection (CodeScan Cloud in the example.)
-
-<figure><img src="../../../../.gitbook/assets/image (480).png" alt="" width="563"><figcaption></figcaption></figure>
-
-10. Click the + symbol to the right. This will show you a list of projects from the Command palette.
-11. Select the project you would like to connect to.
-12. The project you connect to determines the rules for scanning your open files.
-
-{% hint style="info" %}
-**Note:** If the project you have open in VS Code matches the project you connect to in CodeScan Cloud, your IDE scans will ignore any Won’t Fix or False Positive issues.
-{% endhint %}
-
 ### Getting Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
 
 The **CodeScan VS Code** extension provides immediate feedback to developers on bugs and quality issues; it is a fully integrated user experience in Visual Studio Code (we'll refer to it as VS Code).
@@ -85,7 +52,7 @@ Follow the installation instructions for the CodeScan extension and bind the ext
 **Note:** You can also press the Shortcut Key combination **`Ctrl + Shift + X`** to launch the Extensions side panel.
 {% endhint %}
 
-2. Search for **CodeScan** and click on **Install** to install the CodeScan latest extension, preferably **version 1.6.8** or above.
+2. Search for **CodeScan** and click on **Install** to install the latest CodeScan extension.
 3. Once installed, restart or reload VS Code to ensure it's taken effect.
 
 **Step 2: Java Runtime (JRE) 17 Installation**
@@ -98,131 +65,37 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 
 2. Next, confirm the **JAVA\_HOME** variable is set properly on your system. Enter the command echo **%JAVA\_HOME%**. This should output the path to your Java installation folder. Reach out to your IT department if the **JAVA\_HOME** variable is not set.
 
-**Step 3: Generate CodeScan token**
+**Step 3: Create the Connection**
 
-You can generate new tokens at **User > My Account > Security** or use an existing token if you have one saved. Copy the generated token and add it to the **settings.json** file (discussed later).
+1. Click the CodeScan icon on the left panel.&#x20;
 
-**Step 4: Obtain the Project Key**
+<figure><img src="../../../../.gitbook/assets/image (477).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Log in to CodeScan, click on the **Projects** tab, and find the project you need to configure. Click on the **Project Information** tab to find your project key at the bottom right of your screen.
+2. Click on ‘Add CodeScan Connection.’
 
-**Step 5: Obtain the Organization Key**
+<figure><img src="../../../../.gitbook/assets/image (478).png" alt="" width="563"><figcaption></figcaption></figure>
 
-You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.<br>
+3. Add your CodeScan URL.
+4. Click on 'Generate Token.' This will open CodeScan in a browser.
+5. Click 'Allow Connection' to send the newly generated token back to your IDE.
+6. Add your organization key.
+7. You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.<br>
+8. Enter a Unique Connection Name.
+9. Click on 'Save Connection.' You will see your connection appear in your connected mode window.
 
-<figure><img src="../../../../.gitbook/assets/image (1704).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (479).png" alt="" width="293"><figcaption></figcaption></figure>
 
-**Step 6: Add CodeScan Configuration**
+9. Click on your connection (CodeScan Cloud in the example.)
 
-1. Press **Ctrl + Shift + P** in the VS Code, and search for **Settings** and select **Open User Settings (JSON)**.
+<figure><img src="../../../../.gitbook/assets/image (480).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
-
-2. On the **settings.json** tab, inside the curly braces ({ }), copy and paste the following text, and add the parameters shown in the table below:
-
-<figure><img src="../../../../.gitbook/assets/image (484).png" alt="" width="563"><figcaption></figcaption></figure>
-
-_**Example:**_
-
-<figure><img src="../../../../.gitbook/assets/image (485).png" alt=""><figcaption></figcaption></figure>
-
-| PARAMETER                                                                                           | DESCRIPTION                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| serverID                                                                                            | Add _serverId_ with a value you will remember. You will need to enter the same value in both of the _serverId_ parameters.                                 |
-| [organizationKey](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys) | Add your CodeScan organization key. If you are using CodeScan Self-Hosted, enter your default-organization.                                                |
-| serverUrl                                                                                           | <p>For CodeScan Cloud, enter:<br>https://app.codescan.io/for U.S. region, https://app-eu.codescan.io/ for EU, and https://app-aus.codescan.io/for AUS.</p> |
-
-For Self-Hosted CodeScan, add _serverUrl_ as your SonarQube™ _server URL_ (default is _**http://localhost:9000**_). |\
-\| [token](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token) | Add your security token. For **Self-Hosted CodeScan**, add token generated in SonarQube™. |\
-\| [cell](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key) | Add your CodeScan project key.|\
-\| codescan.httpclient.version | (applicable for VS Code v1.6.10 or later)\
-\| Enter the Apache HTTP client protocol version (**FORCE\_HTTP\_1**, **FORCE\_HTTP\_2**, or **NEGOTIATE**). |
+10. Click the + symbol to the right. This will show you a list of projects from the Command palette.
+11. Select the project you would like to connect to.
+12. The project you connect to determines the rules for scanning your open files.
 
 {% hint style="info" %}
-**Note:** If no protocol version is set, the default protocol is **NEGOTIATE**.
+**Note:** If the project you have open in VS Code matches the project you connect to in CodeScan Cloud, your IDE scans will ignore any Won’t Fix or False Positive issues.
 {% endhint %}
-
-3. Save the **settings.json** file.
-
-**Step 7: Configure the Project Binding**
-
-Next, you will need to update the CodeScan bindings for the workspace to ensure the rules are in sync.
-
-Select **-**\
-**Shift+Command+P** or **-**\
-**Shift+Command+P** (Mac) to open the Command Palette. Type in CodeScan to bring up the CodeScan commands and run **Update CodeScan binding to SonarQube/CodeScan Cloud**.
-
-An **All CodeScan bindings successfully updated** notification appears once the binding is completed successfully.
-
-**Step 8: Verifying**
-
-You can verify this by opening a file that has problems. They will now be highlighted within your code:
-
-* An underline shows a pop-up of the issue when hovering
-
-<figure><img src="../../../../.gitbook/assets/image (486).png" alt=""><figcaption></figcaption></figure>
-
-* Within the VS Code problems panel
-
-<figure><img src="../../../../.gitbook/assets/image (487).png" alt=""><figcaption></figcaption></figure>
-
-### Integrating VS Code with the CodeScan extension <a href="#integrate-vs-code-with-codescan-extension" id="integrate-vs-code-with-codescan-extension"></a>
-
-Once you're done installing the CodeScan extension from the marketplace,
-
-1. Restart the Visual Studio Code.
-2. Press **`Ctrl + Shift + P`** and search for **`Settings`** and select **`Open User Settings (JSON).`**
-
-<figure><img src="../../../../.gitbook/assets/image (488).png" alt=""><figcaption></figcaption></figure>
-
-3. On the **settings.json** tab, inside the curly braces ({ }), copy and paste the following text:
-
-```none
-"codescan.servers": [
-       {
-            "serverId": "**************",
-            "organizationKey": "**************",
-            "serverUrl": "**************",
-            "token": "**************"
-        },
-    ],
-
-    "codescan.project": {
-        "serverId": "**************",
-        "projectKey": "**************"
-    }
-    "codescan.httpclient.version": "***********",
-```
-
-Plain text Copy
-
-<figure><img src="../../../../.gitbook/assets/image (489).png" alt="" width="464"><figcaption></figcaption></figure>
-
-| Parameters                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| serverId                                                                                                  | Add _serverId_ with a value you will remember. You will need to enter the same value in both of the _serverId_ parameters.                                                                                                                                                                                                                                                                             |
-| [organizationKey](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys)       | Add your CodeScan organization key. If you are using CodeScan Self Hosted, please enter your _default-organization_.                                                                                                                                                                                                                                                                                   |
-| serverUrl                                                                                                 | <p>For <em>CodeScan cloud</em>, please enter:<br><code>https://app.codescan.io/</code>for US region,<br><code>https://app-eu.codescan.io/</code> for EU, and<br><code>https://app-aus.codescan.io/</code>for AUS.<br><br>For <strong>Self-Hosted CodeScan</strong>, add <em>serverUrl</em> as your <em>SonarQube™ server URL</em> (default is <strong><code>http://localhost:9000</code></strong>)</p> |
-| [token](https://knowledgebase.autorabit.com/codescan/docs/generate-a-security-token)                      | Add your security token. For _Self-Hosted CodeScan_, add token generated in SonarQube™.                                                                                                                                                                                                                                                                                                                |
-| [projectKey](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key)                  | Add your CodeScan project key.                                                                                                                                                                                                                                                                                                                                                                         |
-| <p>codescan.httpclient.version<br><em>(applicable for VS Code <strong>v1.6.10</strong> or later)</em></p> | <p>Enter the Apache HTTP client protocol version (<strong><code>FORCE_HTTP_1</code></strong>, <strong><code>FORCE_HTTP_2</code></strong> or <strong><code>NEGOTIATE</code></strong>).<br><strong>Note:</strong> If no protocol version is set, the default protocol <strong><code>NEGOTIATE</code></strong> is used.</p>                                                                               |
-
-4. Save the **settings.json** file.
-5. Now select **`Ctrl+Shift+P (Windows/Linux)`** or **`Shift+Command+P(Mac)`** to open the **Command Palette**.
-6. Type in **`CodeScan`** to bring up the CodeScan commands and run **`Update CodeScan binding to SonarQube/CodeScan Cloud`**.
-7. Go to **View > Output** to view the logs details. If a problem does occur, you are able to trace it via logs.
-
-<figure><img src="../../../../.gitbook/assets/image (491).png" alt=""><figcaption></figcaption></figure>
-
-8. Select **`Terminal > New Terminal`** or press **Ctrl+Shift +\`**, if you are not able to view the **Output** section at the bottom of the screen.
-9. An **`All CodeScan bindings successfully updated`** notification appears if the binding is successfully completed.
-10. If any changes are made on the SonarQube™ server, then repeat this step.
-
-<figure><img src="../../../../.gitbook/assets/image (492).png" alt=""><figcaption></figcaption></figure>
-
-11. Open a file, and you should see the issues in your code underlined.
-
-<figure><img src="../../../../.gitbook/assets/image (493).png" alt=""><figcaption></figcaption></figure>
 
 ### Visual Studio Code Behind a Proxy <a href="#visual-studio-code-behind-a-proxy" id="visual-studio-code-behind-a-proxy"></a>
 

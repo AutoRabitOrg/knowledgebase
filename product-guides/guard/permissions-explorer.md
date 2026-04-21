@@ -88,7 +88,7 @@ The queries retrieve users who are active and not frozen. The results will only 
 ### Which Permissions Can Be Inspected?
 
 * The list of permissions available for analysis is predefined and includes the most common permissions. Some examples might include permissions like Modify All Data, Export Reports, and Author Apex.
-* **Permissions not on the list**: Currently, customers cannot inspect permissions outside the predefined list. However, if there’s demand for a specific permission, AutoRABIT’s product team can consider adding it in future releases.
+* Permissions will only be visible if they have been enabled on the org.
 
 ### Why Use the Permissions Explorer?
 

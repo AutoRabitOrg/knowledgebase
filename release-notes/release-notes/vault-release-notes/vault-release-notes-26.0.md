@@ -42,6 +42,8 @@ This fix ensures:
 * Accurate reporting of component-level results
 * Proper handling of empty data sets, eliminating false error indications
 
+***
+
 ## Vault Release Notes 26.1.2
 
 **Release Date: 08 April 2026**

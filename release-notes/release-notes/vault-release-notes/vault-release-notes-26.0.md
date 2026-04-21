@@ -1,5 +1,47 @@
 # Vault Release Notes 26.0
 
+## Vault Release Notes 26.1.3
+
+**Release Date: 22 April 2026**
+
+**Configurable** **Session Timeout**\
+Administrators can now define session timeout duration from **Settings → General**. The configured value is centrally enforced for all users during authenticated API sessions.
+
+* Applies to all users within the customer environment
+* Enforced from the next login session onward
+* Does not impact already active sessions
+
+This enhancement improves session management and security control across the organization.
+
+**High‑Frequency Logging**
+
+Introduces fine-grained logging for storage operations to enhance troubleshooting and observability of I/O operations to storage.
+
+**Backup Logging Improvements**
+
+Refined logs to provide clearer insights into backup status processes, balancing visibility and log volume.
+
+**Enhanced Audit Logging for User Sessions & Role Changes**
+
+Added detailed audit logs for user sessions and role management activities to improve traceability for compliance and security.
+
+**Backup Performance Improvement**
+
+Optimized rich text field processing during backup to significantly reduce backup runtime, especially for orgs with extensive rich text content.
+
+**Restore Fix — Hierarchical Child Object Not Processed**
+
+Corrected an issue where restore jobs were not processing child objects in hierarchical schemas, ensuring complete data restoration.
+
+**Improved Backup Status Reporting**\
+Addressed an issue where the overall backup summary status did not align with the detailed component-level results. In some cases, components marked as failed in the summary were shown as successful in the detailed view. Additionally, certain data sets incorrectly reported errors despite having no records.
+
+This fix ensures:
+
+* Consistency between summary and detailed backup statuses
+* Accurate reporting of component-level results
+* Proper handling of empty data sets, eliminating false error indications
+
 ## Vault Release Notes 26.1.2
 
 **Release Date: 08 April 2026**

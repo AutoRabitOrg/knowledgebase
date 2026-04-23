@@ -1,5 +1,130 @@
 # ARM Release Notes
 
+### **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+
+**Release Date:** Apr 26, 2026
+
+***
+
+#### **Accurate Error Message Display for Deployment Failures (Support Case #207169)** <a href="#accurate-error-message-display-for-deployment-failures-support-case-207169" id="accurate-error-message-display-for-deployment-failures-support-case-207169"></a>
+
+Fixed an issue where incorrect or misleading error messages were displayed in the Deployment UI logs. In certain cases, users saw generic authentication-related errors, even when the actual failure was due to invalid deployment configurations (e.g., selecting “No Test Run” for Production deployments).
+
+With this fix, the UI now reflects the correct backend error messages, providing clear and accurate insights into deployment failures. This helps users quickly identify and resolve issues.
+
+**Impacted Areas:**\
+Deployment, CI Jobs
+
+#### **Template Sharing for Subusers – Environment Provisioning (Both UIs) - New Enhancement** <a href="#template-sharing-for-subusers-environment-provisioning-both-uis-new-enhancement" id="template-sharing-for-subusers-environment-provisioning-both-uis-new-enhancement"></a>
+
+Introduced an enhancement to allow Subusers to share environment provisioning templates they have created. Previously, only Admin users could share templates.
+
+With this update:
+
+* Subusers can now share their own templates.
+* Sharing remains restricted for templates created by other users.
+* Admin users continue to have full sharing access across all templates.
+
+This improvement reduces dependency on Admins and enables better collaboration.
+
+**Impacted Areas:**\
+Environment Provisioning (Template Management) – Old UI & New UI
+
+#### **Multiple Diff View Support in EZCommit – New UI (Support Case #215475)** <a href="#multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475" id="multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475"></a>
+
+Enhanced the EZCommit experience in the New UI to allow users to view multiple file diffs simultaneously. Previously, opening a diff would automatically close any previously opened diff, limiting comparison across components.
+
+With this update, users can expand multiple diff sections at the same time, enabling easier side-by-side review and improved validation before committing.
+
+**Impacted Areas:**\
+EZCommit, CI Jobs, Deployments, Version Control, Merge Requests
+
+#### **Baseline Revision Selection Display Fix – Classic UI (Support Case #211183)** <a href="#baseline-revision-selection-display-fix-classic-ui-support-case-211183" id="baseline-revision-selection-display-fix-classic-ui-support-case-211183"></a>
+
+Fixed an issue in the Classic UI where the selected Baseline Revision was not visually reflected in the CI Job edit screen, even though it was correctly saved. This caused confusion and unnecessary validation errors.
+
+With this fix, the selected revision is now properly highlighted, and users are automatically navigated to the relevant page. If no revision is selected, the default view is shown without disruption.
+
+**Impacted Areas:**\
+CI Jobs, Deployments, Merge Requests (Revision Selection Popup)
+
+#### **Merge Conflict Email Notification Accuracy Fix (Support Case #210042)** <a href="#merge-conflict-email-notification-accuracy-fix-support-case-210042" id="merge-conflict-email-notification-accuracy-fix-support-case-210042"></a>
+
+Fixed an issue where non-conflicting files were incorrectly listed under the “Conflicted Files” section in merge conflict email notifications.
+
+With this fix, only the actual conflicting files are displayed in the “Conflicted Files” section, while successfully merged files are shown correctly under “Merged Files,” improving clarity and accuracy of notifications.
+
+**Impacted Areas:**\
+Version Control – EZ-Merge
+
+#### **Apache Tomcat Upgrade for On-Prem Instances** <a href="#apache-tomcat-upgrade-for-on-prem-instances" id="apache-tomcat-upgrade-for-on-prem-instances"></a>
+
+Upgraded Apache Tomcat from version 11.0.13 to 11.0.21 for all On-Prem deployments. This update ensures improved performance, enhanced security, and better stability of the ARM application environment.
+
+**Impacted Areas:**\
+On-Prem Installations
+
+#### **Login Redirection Issue Fix – New UI (Support Case #214960)** <a href="#login-redirection-issue-fix-new-ui-support-case-214960" id="login-redirection-issue-fix-new-ui-support-case-214960"></a>
+
+Fixed an issue where users were unable to log in correctly after enabling the New UI and were repeatedly redirected despite switching back to the Old UI.
+
+This fix ensures stable login behavior by restoring failed script handling and improving error visibility, allowing users to successfully access the application across browsers.
+
+**Impacted Areas:**\
+Login, UI Navigation (Old UI & New UI)
+
+#### **Faster Branch Creation Using GitHub API (Both UIs) - New Enhancement** <a href="#faster-branch-creation-using-github-api-both-uis-new-enhancement" id="faster-branch-creation-using-github-api-both-uis-new-enhancement"></a>
+
+Introduced an enhancement to improve branch creation performance by creating branches instantly using the GitHub API. Previously, branch creation was delayed due to synchronous workspace copy and setup processes.
+
+With this update:
+
+* Branches are created immediately upon user action.
+* Workspace checkout and related processes run asynchronously in the background.
+* Users can access and start working on the branch without delay.
+* The system falls back to the existing process if GitHub pull request support is not enabled.
+
+This enhancement improves responsiveness and overall user experience.
+
+**Impacted Areas:**\
+Version Control, EZ-Commit (Old UI & New UI)
+
+#### **CI Jobs List Auto-Refresh Fix After Activate/Deactivate (Support Case #217089 – New UI)** <a href="#ci-jobs-list-auto-refresh-fix-after-activate-deactivate-support-case-217089-new-ui" id="ci-jobs-list-auto-refresh-fix-after-activate-deactivate-support-case-217089-new-ui"></a>
+
+Fixed an issue in the New UI where the CI Jobs list did not automatically refresh after activating or deactivating a job. Previously, although the change was successfully applied in the backend, the UI did not reflect the updated _Last Date Modified_ or reorder the job in the list until a manual refresh was performed.
+
+With this fix, the CI Jobs list now refreshes automatically upon successful activation or deactivation. The _Last Date Modified_ timestamp is updated instantly, and the modified job is moved to the top of the list, ensuring consistency with the default sorting behavior.
+
+**Impacted Areas:**\
+CI Jobs – List Page (New UI)
+
+#### **Users/Permissions Access Issue for Non-Admin Users (Support Case #216643 – New UI)** <a href="#users-permissions-access-issue-for-non-admin-users-support-case-216643-new-ui" id="users-permissions-access-issue-for-non-admin-users-support-case-216643-new-ui"></a>
+
+Fixed an issue where non-admin users were unable to directly access the Users/Permissions section in the New UI despite having the required permissions. Access was only possible after navigating via the Old UI, leading to inconsistent behavior.
+
+With this fix, routing logic now correctly validates user permissions, allowing direct access from the New UI and ensuring consistent behavior across both interfaces.
+
+**Impacted Areas:**\
+User Management – Navigation (Old UI & New UI)
+
+#### **Apache Tomcat Upgrade to Version 11.0.21 (Shared & Dedicated Environments)** <a href="#apache-tomcat-upgrade-to-version-11.0.21-shared-and-dedicated-environments" id="apache-tomcat-upgrade-to-version-11.0.21-shared-and-dedicated-environments"></a>
+
+Upgraded Apache Tomcat from version 11.0.13 to 11.0.21 across both Shared (SaaS) and Dedicated environments to address known security vulnerabilities and improve overall platform stability.
+
+This upgrade ensures a secure and reliable runtime environment, with validation confirming compatibility across multi-tenant and customer-specific setups. Core functionalities, performance, and environment-specific configurations continue to operate as expected post-upgrade.
+
+**Impacted Areas:**\
+Platform Infrastructure – Shared (SaaS) & Dedicated Environments
+
+#### **Salesforce CLI Upgrade to v2.130.9 (Support Case #219699)** <a href="#salesforce-cli-upgrade-to-v2.130.9-support-case-219699" id="salesforce-cli-upgrade-to-v2.130.9-support-case-219699"></a>
+
+Upgraded the Salesforce CLI from version 2.125.2 to 2.130.9 across development and CI/CD environments to ensure compatibility with the latest Salesforce features, bug fixes, and security updates.
+
+Post-upgrade validation confirmed that existing workflows—including deployments, org authentication, and package operations—continue to function as expected, with no impact on automation or pipelines.
+
+**Impacted Areas:**\
+Development Environments, CI/CD Pipelines, Deployment Workflows
+
 ### **Release Notes 26.2.2**
 
 **Release Date:** **12 April 2026**

@@ -64,7 +64,7 @@ Upgraded Apache Tomcat from version 11.0.13 to 11.0.21 for all On-Prem deploymen
 **Impacted Areas:**\
 On-Prem Installations
 
-#### **Login Redirection Issue Fix – New UI (Support Case #214960)** <a href="#login-redirection-issue-fix-new-ui-support-case-214960" id="login-redirection-issue-fix-new-ui-support-case-214960"></a>
+#### **Login Redirection Issue Fix – New UI (Support Case #214960,#222145,#218645)** <a href="#login-redirection-issue-fix-new-ui-support-case-214960" id="login-redirection-issue-fix-new-ui-support-case-214960"></a>
 
 Fixed an issue where users were unable to log in correctly after enabling the New UI and were repeatedly redirected despite switching back to the Old UI.
 

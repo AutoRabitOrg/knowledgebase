@@ -12,11 +12,214 @@ Key points:
 3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
+## CodeScan Release 26.0.8&#x20;
+
+&#x20;**Release date:** 26 April 2026
+
+### Summary&#x20;
+
+CodeScan 26.0.8 is comprised of the following 6 components:&#x20;
+
+* 2 Application Enhancements&#x20;
+* 4 Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Application Enhancements&#x20;
+
+
+
+1. #### Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs&#x20;
+
+Bitbucket integration was updated to replace deprecated repository APIs with workspace-scoped APIs.&#x20;
+
+Now CodeScan fetches repositories by:&#x20;
+
+1. Retrieving user workspaces&#x20;
+2. Fetching repositories per workspace&#x20;
+3. Aggregating results&#x20;
+
+**Outcomes:**&#x20;
+
+* Continued compatibility with Bitbucket API changes&#x20;
+* Failures due to deprecated endpoints prevented&#x20;
+* Improved reliability of repository fetching &#x20;
+
+**Validation:**&#x20;
+
+Verified the Bitbucket project analysis. Users are able to see the repos as expected, and  the Project analysis and PR analysis are working as expected.
+
+&#x20;
+
+2. #### Enhanced Parsersing for Methods Named “void”&#x20;
+
+Earlier, CodeScan parser wouldn’t process Apex methods named **void**.&#x20;
+
+**This enhancement:** &#x20;
+
+* Ensures accurate parsing of valid Apex code &#x20;
+* Improves analysis reliability &#x20;
+
+The parser enhancement to support Apex methods named void has been thoroughly validated by QA across multiple scenarios on Preview instance.&#x20;
+
+**Positive Validation Scenarios:**&#x20;
+
+The following valid Apex patterns were tested and are now parsed correctly:&#x20;
+
+* Basic Cases&#x20;
+
+public void void() {}&#x20;
+
+Method with body statements&#x20;
+
+* Access Modifiers&#x20;
+
+private void void() {}&#x20;
+
+protected void void() {}&#x20;
+
+global void void() {}&#x20;
+
+* Modifiers & Combinations&#x20;
+
+public static void void() {}&#x20;
+
+public final static void void() {}&#x20;
+
+* Parameterized Methods&#x20;
+
+public void void(String name, Integer count) {}&#x20;
+
+* Annotations&#x20;
+
+@AuraEnabled public static void void() {}&#x20;
+
+* Exception Handling&#x20;
+
+Method containing throw statements&#x20;
+
+* Constructor + Method Coexistence&#x20;
+
+Class containing both constructor and method named void&#x20;
+
+* Multiple Methods&#x20;
+
+Classes with multiple methods including one named void&#x20;
+
+* Method Overloading&#x20;
+
+Multiple overloaded methods named void with different parameters&#x20;
+
+* Nested Structures&#x20;
+
+Method inside inner classes&#x20;
+
+* Test Classes&#x20;
+
+@IsTest classes with method named void&#x20;
+
+* Interface & Implementation Context&#x20;
+
+Class implementing interface along with method named void&#x20;
+
+* Formatting Variations&#x20;
+
+Extra spacing in declaration&#x20;
+
+Multiline method signatures&#x20;
+
+Inline and line comments within method declaration&#x20;
+
+**Negative Validation (Expected to Fail – Parser Strictness Maintained)**&#x20;
+
+The following invalid syntaxes were tested and correctly rejected:&#x20;
+
+* Missing method name \
+  public void () {} → Parse error&#x20;
+* Duplicate return type \
+  public void void void() {} → Parse error&#x20;
+* Missing parentheses \
+  public void void {} → Parse error&#x20;
+* Invalid keyword as method name \
+  public void class() {} → Parse error&#x20;
+
+These failures are expected and confirm that parser strictness is preserved.&#x20;
+
+**Conclusion**&#x20;
+
+* Parser now correctly supports void as a valid method name in Apex&#x20;
+* All valid usage patterns are successfully parsed across different contexts&#x20;
+* Invalid syntax continues to be rejected as expected&#x20;
+* No regressions observed in parsing behavior&#x20;
+
+### Fixes&#x20;
+
+1. #### Improved Validation for Salesforce User Permissions During ECA Authentication&#x20;
+
+Fixed an issue where users with insufficient Salesforce permissions could authenticate Salesforce successfully but encountered failures later during analysis.&#x20;
+
+**Resolution:**&#x20;
+
+* Permissions are now validated immediately after authentication &#x20;
+* Users without required permissions are blocked early with a clear error message &#x20;
+
+&#x20;
+
+2. #### Resolved 403 Error When Activating Rules in US Instance&#x20;
+
+Fixed an issue where rule activation failed with a 403 Forbidden error in the US instance.&#x20;
+
+**Result:**&#x20;
+
+Rule activation now works consistently across environments &#x20;
+
+&#x20;
+
+3. #### Resolved “Component cannot be null” Error in Cross Object Formula Overuse Rule&#x20;
+
+Fixed a runtime error occurring during PR and subset analyses when related metadata files were not included in the scan.&#x20;
+
+**Result:**&#x20;
+
+* Improved stability of rule execution &#x20;
+* Graceful handling of missing metadata &#x20;
+
+QA verified the fix in the Preview environment:&#x20;
+
+* Re-ran the same reproduction steps after the fix deployment&#x20;
+* Confirmed that the analysis completes successfully without any errors&#x20;
+* Overuse Rule now handles the scenario correctly when the parent .object-meta.xml is not part of analyzed sources&#x20;
+
+&#x20;
+
+4. #### Resolved False Positives in Field Level Security Rule for USER\_MODE Queries&#x20;
+
+Fixed an issue where queries executed in USER\_MODE were incorrectly flagged.&#x20;
+
+**Result:**&#x20;
+
+* Eliminates false positives &#x20;
+* Aligns rule behavior with Salesforce FLS enforcement&#x20;
+
+The fix for handling AccessLevel.USER\_MODE has been validated across multiple scenarios on the preview Instance.&#x20;
+
+The following cases were tested and are no longer flagged, as expected:&#x20;
+
+* Direct usage of AccessLevel.USER\_MODE&#x20;
+* USER\_MODE via variable assignment&#x20;
+* USER\_MODE passed through method parameters&#x20;
+* USER\_MODE returned from methods&#x20;
+* USER\_MODE used in ternary expressions&#x20;
+* Formatting variations of USER\_MODE usage&#x20;
+
+This confirms that the rule now correctly recognizes USER\_MODE across different usage patterns and does not raise false positives when FLS is enforced by Salesforce. \
+&#x20;
+
 ***
 
 ## CodeScan Release 26.0.7
 
-**Release Date: 12 April 2026**
+**Release Date:** 12 April 2026
 
 ### Summary
 
@@ -113,10 +316,6 @@ Validated this new feature via the following scenarios and have verified that al
 3.  Issues status changed from Exception to Open (Rollback) (through single assign and bulk assign).<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2473).png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../.gitbook/assets/image (2474).png" alt=""><figcaption></figcaption></figure>
-
-
 4.  Able to view the Exception status in CSV Issues export (in list and downloaded CSV).<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2475).png" alt=""><figcaption></figcaption></figure>
@@ -124,7 +323,7 @@ Validated this new feature via the following scenarios and have verified that al
     <figure><img src="../../../../.gitbook/assets/image (2476).png" alt=""><figcaption></figcaption></figure>
 
 
-5.  Status visible in single rule.<br>
+5.  Status visible in a single rule.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2477).png" alt=""><figcaption></figcaption></figure>
 

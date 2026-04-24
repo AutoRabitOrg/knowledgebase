@@ -2,6 +2,18 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.2.3
+
+**Release Date:** 26 March 2026
+
+**Re-login prompt when going to nCino Deployment History tab in new UI**
+
+* Non-admin users were prompted to re-login when accessing the Deployment History tab in the nCino module on the new UI. After re-login, they still could not view the module. This issue did not occur in the old UI. Fixed to allow proper access without re-login prompts.
+
+**nCino Rollback not working**
+
+* nCino CI Job rollback was failing because the agent could not locate the required backup directory from the previous build. The baseline revision was also incorrectly updating on failed/partial/rollback builds. Fixed rollback flow and ensured baseline revision only updates on successful deploy builds.
+
 ## nCino - Release 26.1.13
 
 **Release Date: 29 March 2026**

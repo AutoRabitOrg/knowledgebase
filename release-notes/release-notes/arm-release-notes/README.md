@@ -125,6 +125,18 @@ Post-upgrade validation confirmed that existing workflows—including deployment
 **Impacted Areas:**\
 Development Environments, CI/CD Pipelines, Deployment Workflows
 
+***
+
+### DataLoader Release Notes – Version 26.2.3
+
+**Release Date: 26 April 2026**
+
+**Dataloader Extract Job not returning all field columns**&#x20;
+
+* When using a DataLoader Extract job with a WHERE IN clause, the downloaded file did not include all field columns from the query. Removing the WHERE IN clause returned all columns correctly. Fixed to ensure all queried fields are present in the extracted output, regardless of clause type.
+
+***
+
 ### **Release Notes 26.2.2**
 
 **Release Date:** **12 April 2026**

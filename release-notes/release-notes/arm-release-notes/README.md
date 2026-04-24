@@ -127,6 +127,14 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
+### DataLoader Release Notes – Version 26.2.4
+
+**Release Date: 26 April 2026**
+
+**Data Retention Policy for nCino & DataLoader** — Admins can now enable automatic cleanup of unused jobs (DataLoader processes, Feature Deployments, CI Job histories, etc.) via a configurable retention policy under My Account.
+
+***
+
 ### DataLoader Release Notes – Version 26.2.3
 
 **Release Date: 26 April 2026**

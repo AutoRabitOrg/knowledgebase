@@ -1134,7 +1134,7 @@
       * [Integrating CodeScan in GitLab](product-guides/codescan/codescan-integration/gitlab/integrating-codescan-in-gitlab.md)
     * [IDE Plugins](product-guides/codescan/codescan-integration/ide-plugins/README.md)
       * [Installing CodeScan for VS Code](product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-vs-code.md)
-      * [Installing CodeScan for Cursor](product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-vs-code-1.md)
+      * [Installing CodeScan for Cursor](product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-cursor.md)
       * [Installing CodeScan for IntelliJ](product-guides/codescan/codescan-integration/ide-plugins/installing-codescan-for-intellij.md)
     * [Integration Requirements](product-guides/codescan/codescan-integration/integration-requirements.md)
     * [Jenkins for CodeScan](product-guides/codescan/codescan-integration/jenkins/README.md)

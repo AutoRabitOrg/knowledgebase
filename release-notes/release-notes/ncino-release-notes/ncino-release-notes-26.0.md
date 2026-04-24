@@ -2,9 +2,31 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.2.4
+
+**Release Date:** 26 April 2026
+
+**Server start issue on data retention bucket update**\
+Server failed to start when the data retention bucket was updated in the installation file. Fixed to handle bucket configuration changes gracefully.
+
+**nCino Delta jobs failing**\
+Delta-based CI Jobs were incorrectly migrating extra objects, causing upsert failures on parent field updates. Fixed delta logic to deploy only the intended object.
+
+**Re-login prompt for sub-users without Commit History access**\
+Sub-users without Commit History permission were shown commit-related actions and prompted to re-login on click. Fixed to hide these options for users lacking the required permission.
+
+**Compare for sub-users**\
+Sub-users with Feature Deployment and Deployment History access received a 401 Unauthorized error on Compare. Fixed authorization to allow Compare for users with correct permissions.
+
+**Sub-user permission and roles issue in new UI**\
+Feature Deployment module was visible to sub-users even without permission, and granting creation access didn't auto-grant history access. Fixed permission enforcement and default role assignment.
+
+**Field Configuration RBC failures**\
+Parent Route values were being cleared during deployment when multiple references to the same parent existed. Also fixed self-referencing parent Screen Sections not being picked up.
+
 ## nCino - Release 26.2.3
 
-**Release Date:** 26 March 2026
+**Release Date:** 26 April 2026
 
 **Re-login prompt when going to nCino Deployment History tab in new UI**
 

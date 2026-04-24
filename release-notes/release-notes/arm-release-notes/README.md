@@ -296,7 +296,7 @@ ARM now automatically retrieves all dependent metadata for a selected Salesforce
 This enhancement streamlines the process, reduces manual effort, and minimizes errors.
 
 **Impacted Areas:**\
-Data Cloud Deployments, Commit Workflow, Org-to-Org Deployment
+Data Cloud Deployments, Commit Workflow.
 
 ***
 

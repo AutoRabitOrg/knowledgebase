@@ -14,7 +14,7 @@ Key points:
 
 ## CodeScan Release 26.0.8&#x20;
 
-&#x20;**Release date:** 26 April 2026
+&#x20;**Release date: 26 April 2026**
 
 ### Summary&#x20;
 
@@ -29,7 +29,7 @@ Component details are listed in their corresponding sections within this documen
 
 
 
-1. #### Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs&#x20;
+1. **Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs**&#x20;
 
 Bitbucket integration was updated to replace deprecated repository APIs with workspace-scoped APIs.&#x20;
 
@@ -51,7 +51,7 @@ Verified the Bitbucket project analysis. Users are able to see the repos as expe
 
 &#x20;
 
-2. #### Enhanced Parsersing for Methods Named “void”&#x20;
+2. **Enhanced Parsering for Methods Named “void”**&#x20;
 
 Earlier, CodeScan parser wouldn’t process Apex methods named **void**.&#x20;
 
@@ -67,29 +67,19 @@ The parser enhancement to support Apex methods named void has been thoroughly va
 The following valid Apex patterns were tested and are now parsed correctly:&#x20;
 
 * Basic Cases&#x20;
-
-public void void() {}&#x20;
+  * public void void() {}&#x20;
 
 Method with body statements&#x20;
 
 * Access Modifiers&#x20;
-
-private void void() {}&#x20;
-
-protected void void() {}&#x20;
-
-global void void() {}&#x20;
-
+  * private void void() {}&#x20;
+  * protected void void() {}&#x20;
+  * global void void() {}&#x20;
 * Modifiers & Combinations&#x20;
-
-public static void void() {}&#x20;
-
-public final static void void() {}&#x20;
-
+  * public static void void() {}&#x20;
+  * public final static void void() {}&#x20;
 * Parameterized Methods&#x20;
-
-public void void(String name, Integer count) {}&#x20;
-
+  * public void void(String name, Integer count) {}&#x20;
 * Annotations&#x20;
 
 @AuraEnabled public static void void() {}&#x20;
@@ -134,27 +124,27 @@ Inline and line comments within method declaration&#x20;
 
 The following invalid syntaxes were tested and correctly rejected:&#x20;
 
-* Missing method name \
-  public void () {} → Parse error&#x20;
-* Duplicate return type \
-  public void void void() {} → Parse error&#x20;
-* Missing parentheses \
-  public void void {} → Parse error&#x20;
-* Invalid keyword as method name \
-  public void class() {} → Parse error&#x20;
+* Missing method name&#x20;
+  * public void () {} → Parse error&#x20;
+* Duplicate return type&#x20;
+  * public void void void() {} → Parse error&#x20;
+* Missing parentheses&#x20;
+  * public void void {} → Parse error&#x20;
+* Invalid keyword as method name&#x20;
+  * public void class() {} → Parse error&#x20;
 
 These failures are expected and confirm that parser strictness is preserved.&#x20;
 
 **Conclusion**&#x20;
 
-* Parser now correctly supports void as a valid method name in Apex&#x20;
-* All valid usage patterns are successfully parsed across different contexts&#x20;
-* Invalid syntax continues to be rejected as expected&#x20;
-* No regressions observed in parsing behavior&#x20;
+* Parser now correctly supports void as a valid method name in Apex.&#x20;
+* All valid usage patterns are successfully parsed across different contexts.&#x20;
+* Invalid syntax continues to be rejected as expected.&#x20;
+* No regressions observed in parsing behavior.&#x20;
 
 ### Fixes&#x20;
 
-1. #### Improved Validation for Salesforce User Permissions During ECA Authentication&#x20;
+1. **Improved Validation for Salesforce User Permissions During ECA Authentication**&#x20;
 
 Fixed an issue where users with insufficient Salesforce permissions could authenticate Salesforce successfully but encountered failures later during analysis.&#x20;
 
@@ -165,7 +155,7 @@ Fixed an issue where users with insufficient Salesforce permissions could authen
 
 &#x20;
 
-2. #### Resolved 403 Error When Activating Rules in US Instance&#x20;
+2. **Resolved 403 Error When Activating Rules in US Instance**&#x20;
 
 Fixed an issue where rule activation failed with a 403 Forbidden error in the US instance.&#x20;
 
@@ -175,7 +165,7 @@ Rule activation now works consistently across environments &#x20;
 
 &#x20;
 
-3. #### Resolved “Component cannot be null” Error in Cross Object Formula Overuse Rule&#x20;
+3. **Resolved “Component cannot be null” Error in Cross Object Formula Overuse Rule**&#x20;
 
 Fixed a runtime error occurring during PR and subset analyses when related metadata files were not included in the scan.&#x20;
 
@@ -192,7 +182,7 @@ QA verified the fix in the Preview environment:&#x20;
 
 &#x20;
 
-4. #### Resolved False Positives in Field Level Security Rule for USER\_MODE Queries&#x20;
+4. **Resolved False Positives in Field Level Security Rule for USER\_MODE Queries**&#x20;
 
 Fixed an issue where queries executed in USER\_MODE were incorrectly flagged.&#x20;
 

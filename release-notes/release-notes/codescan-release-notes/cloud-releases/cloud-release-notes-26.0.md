@@ -22,6 +22,7 @@ CodeScan 26.0.8 is comprised of the following 6 components:&#x20;
 
 * 2 Application Enhancements&#x20;
 * 4 Fixes&#x20;
+* 4 New GitLeaks specific rules introduced
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
@@ -202,7 +203,32 @@ The following cases were tested and are no longer flagged, as expected:&#x20;
 * USER\_MODE used in ternary expressions&#x20;
 * Formatting variations of USER\_MODE usage&#x20;
 
-This confirms that the rule now correctly recognizes USER\_MODE across different usage patterns and does not raise false positives when FLS is enforced by Salesforce. \
+This confirms that the rule now correctly recognizes USER\_MODE across different usage patterns and does not raise false positives when FLS is enforced by Salesforce.&#x20;
+
+### New GitLeaks Rules in CodeScan
+
+CodeScan has implanted new logic within the Rules Engine that can detect GitLeaks vulnerabilities. GitLeaks is a tool for detecting secrets like passwords, API keys, and tokens. We have extended this logic to cover Salesforce specific languages and components.
+
+The following rules are introduced:
+
+1. **Rule Name:** GitLeaks Secret Detection in Apex Files\
+   **Rule ID:** sf:ApexGitLeaksSecrets\
+   This rule runs GitLeaks on Apex source files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
+2. **Rule Name:** GitLeaks Secret Detection in Salesforce Metadata Files\
+   **Rule ID:** sfmeta:MetadataGitLeaksSecrets\
+   **Description:** GitLeaks Secret Detection in Salesforce Metadata Files: This rule runs GitLeaks on Salesforce Metadata files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
+3. **Rule Name:** GitLeaks Secret Detection in Visualforce & Lightning Files\
+   **Rule ID:** vf:VFLightningGitLeaksSecrets\
+   **Description:** This rule runs GitLeaks on Visualforce source files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
+4. **Rule Name:** GitLeaks Secret Detection in Javascript\
+   **Rule ID:** cs-js:javascript-gitLeaks-secrets\
+   **Description:** This rule runs GitLeaks on Javascript files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
+
+**Summary**\
+These rules run GitLeaks on Salesforce source files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
+
+**Availability:**\
+This feature is currently available on **AUS and EU instances**.\
 &#x20;
 
 ***

@@ -27,4 +27,4 @@ GitLeaks is a widely used tool for identifying sensitive information such as API
 
 #### **Availability**
 
-These GitLeaks-based detection rules are currently available on **AUS and US instances**.
+These GitLeaks-based detection rules are currently available on **AUS and EU instances**.

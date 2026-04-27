@@ -95,7 +95,14 @@ Here are a couple of implementation examples:
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (3) (1).png" alt=""><figcaption><p>Source File Exclusions</p></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (3) (1).png" alt=""><figcaption><p>Classes</p></figcaption></figure>
+
+
+In the example above, replace generic patterns (such as \*\*/apex.cls) with the actual component name (for example, \*\*/SiteLoginController.cls).
+
+
+
+<figure><img src="../../../.gitbook/assets/image (5) (1) (3) (1).png" alt=""><figcaption><p>Classes</p></figcaption></figure>
+
 *   **For Source File Inclusions**:<br>
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (3) (1).png" alt=""><figcaption><p>Source File Inclusions</p></figcaption></figure>

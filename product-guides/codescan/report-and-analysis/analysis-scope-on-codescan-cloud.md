@@ -29,8 +29,63 @@ CodeScan can scan 3rd party libraries only when the code is present in the file,
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>File Exclusions</p></figcaption></figure>
 
     * **Source File Exclusions**: to exclude source code files. Specifying an exclusion means that everything under your directory will be included in analysis except the files with paths that match your exclusion pattern.
-    * **Source File Inclusions**: Helps include only the specific source code files in the analysis. In a few corner cases, it is necessary to be explicit about what's included in analysis and leave out everything else, but that is not the normal case, and setting inclusions should not be the first thing you try when configuring a new project.
-4.  Once the analysis is completed, go to the **Code** tab to view the files as per your specified settings.<br>
+
+### **Use Case: Excluding Standard Salesforce Files from Analysis**
+
+In some Salesforce projects, standard files such as SiteLoginController.cls and SiteRegister.page are present across multiple Salesforce organizations. These files may generate issues during analysis, even though they may not be relevant to the customer’s use case. At the same time, customers may want to keep all CodeScan rules active in the Quality Profile.
+
+#### Solution Approach
+
+&#x20;In this scenario, use Source File Exclusions under Analysis Scope. This allows you to completely exclude specific files from analysis while keeping all rules active for the rest of the codebase.
+
+#### Configuration Steps
+
+1. Open the required project.
+2. Navigate to Project Settings.
+3. Click on General Settings.
+4. Select Analysis Scope.
+5. Under File Exclusions, locate Source File Exclusions.
+6. Enter the file path pattern using the actual component name.
+7. Save the configuration.
+8. Run the analysis again.
+
+#### Example
+
+To exclude specific Salesforce components, use the actual component name in the file path pattern.
+
+For example:
+
+{% code lineNumbers="true" %}
+```
+**/SiteLoginController.cls
+**/SiteRegister.page
+```
+{% endcode %}
+
+You can also use a generic format:
+
+{% code lineNumbers="true" %}
+```
+**/componentname.cls
+**/componentname.page
+```
+{% endcode %}
+
+These patterns ensure that the specified files are excluded from analysis wherever they exist in the project structure.
+
+#### Note
+
+Analysis Scope is configured at the project level. If you need to exclude the same files across multiple projects, you must add the same Source File Exclusion patterns in each project.
+
+#### Expected Outcome
+
+After applying the configuration, the specified files are excluded from analysis.  CodeScan rules remain active in the Quality Profile and continue to run on all other relevant files, helping reduce unnecessary noise in the analysis results.
+
+
+
+* **Source File Inclusions**: Helps include only the specific source code files in the analysis. In a few corner cases, it is necessary to be explicit about what's included in analysis and leave out everything else, but that is not the normal case, and setting inclusions should not be the first thing you try when configuring a new project.
+
+1.  Once the analysis is completed, go to the **Code** tab to view the files as per your specified settings.<br>
 
     <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption><p>Code Tab</p></figcaption></figure>
 

@@ -41,7 +41,32 @@ Use the following as the baseline. Replace placeholders where needed.
 
 `{ "Version": "2012-10-17", "Statement": [ { "Sid": "Athena", "Effect": "Allow", "Action": [ "athena:StartQueryExecution", "athena:GetQueryExecution", "athena:GetQueryResults", "athena:StopQueryExecution", "athena:GetWorkGroup" ], "Resource": [ "arn:aws:athena:<Region1>:<Account Id>:workgroup/primary", "arn:aws:athena:<Region2>:<Account Id>:workgroup/primary", "arn:aws:athena:<Region3>:<Account Id>:workgroup/primary" ] }, { "Sid": "Glue", "Effect": "Allow", "Action": [ "glue:GetDatabase", "glue:GetDatabases", "glue:GetTable", "glue:GetTables", "glue:GetPartition", "glue:GetPartitions", "glue:CreateTable", "glue:UpdateTable", "glue:CreateDatabase", "glue:DeleteTable" ], "Resource": [ "arn:aws:glue:<Region1>:<Account Id>:catalog", "arn:aws:glue:<Region1>:<Account Id>:database/vault_db", "arn:aws:glue:<Region1>:<Account Id>:table/vault_db/*", "arn:aws:glue:<Region2>:<Account Id>:catalog", "arn:aws:glue:<Region2>:<Account Id>:database/vault_db", "arn:aws:glue:<Region2>:<Account Id>:table/vault_db/*" ] } ] }`
 
-\
-Note:
+{% hint style="info" %}
+/Note: The regions list should get form instance database and specify each region in this police
+{% endhint %}
 
-1. The regions list should get form instance database and specify each region in this police
+{
+
+&#x20; "Version": "2012-10-17",
+
+&#x20; "Statement": \[
+
+&#x20;   {
+
+&#x20;     "Effect": "Allow",
+
+&#x20;     "Action": \[
+
+&#x20;       "s3:DeleteObject",
+
+&#x20;       "s3:DeleteObjectVersion"
+
+&#x20;     ],
+
+&#x20;     "Resource": "arn:aws:s3:::penfed-sf-backup-pr/AdvancedSearch/\*"
+
+&#x20;   }
+
+&#x20; ]
+
+}

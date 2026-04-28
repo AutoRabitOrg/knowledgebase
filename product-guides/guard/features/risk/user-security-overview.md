@@ -2,9 +2,7 @@
 
 ### Overview
 
-AutoRABIT Guard’s User Security Overview gives administrators a single place to inspect who a Salesforce user is, what they can access, and how they have been authenticating. By combining profile-level context with effective object and field permissions, permission set assignments, OAuth usage, and login history, Guard supports access reviews, incident response, and day-to-day security operations without jumping between multiple Salesforce setup screens.
-
-***
+AutoRABIT Guard’s User Security Overview offers a single place to inspect Salesforce users, what they can access, and how they have been authenticating. By combining profile-level context with effective object and field permissions, permission set assignments, OAuth usage, and login history, Guard supports access reviews, incident response, and day-to-day security operations without jumping between multiple Salesforce setup screens.
 
 ### Key Capabilities
 
@@ -39,55 +37,50 @@ From the object access table, the detail dialog provides:
 * Field Permissions — Effective read and edit per field, with a field name filter and expandable panels that load which profiles and permission sets contribute field-level access.
 * Object Permissions — For eligible administrators, which profiles and permission sets grant object-level CRUD and View All / Modify All (see note on roles below).
 
-***
-
 ### Why It Matters?
 
-Access reviews and least privilege — Seeing effective permissions in one view makes it practical to validate whether a user still needs broad object or “View All / Modify All” rights.
+* Access reviews and least privilege:
 
-Faster investigations — Login history, IP, application, and TLS details support questions about where and how a user signed in; the login map adds location context when coordinates are available.
+Seeing effective permissions in one view makes it practical to validate whether a user still needs broad object or “View All / Modify All” rights.
 
-Integration and session risk — OAuth token summaries surface which connected apps hold tokens and whether they are still in use, complementing object-level reviews.
+* Faster investigations:&#x20;
 
-Traceability of grants — Field-level expansion shows Profile vs. Permission Set sources for read/edit, so you can plan remediation (remove assignment, adjust permission set, or profile change) with less guesswork.
+Login history, IP, application, and TLS details support questions about where and how a user signed in; the login map adds location context when coordinates are available.
 
-Note (object permission sources): In Guard, the GraphQL API that supplies object-level permission sources (profiles and permission sets behind object access) is restricted to users with the Tenant Manager role. Other authorized roles still see effective object permissions, field permissions, and field permission detail as implemented in the product.
+* Integration and session risk:
 
-***
+OAuth token summaries surface which connected apps hold tokens and whether they are still in use, complementing object-level reviews.
+
+* Traceability of grants:
+
+Field-level expansion shows Profile vs. Permission Set sources for read/edit, so you can plan remediation (remove assignment, adjust permission set, or profile change) with less guesswork.
 
 ### Getting Started
 
-To use User Security Overview in Guard:
-
-1. Open Guard and go to User Security Overview (for example from the home hub under Manage access & permissions — _Inspect access, logins, and privileges for each user in one place_).
+1. Open Guard and go to User Security Overview.
 2. Salesforce org: Choose one of your orgs registered in Guard.
 3. User: Pick the user to review (the list loads from the org; you can filter the dropdown).
 4. Work through the tabs: User Info → Object and Field Access → Permission Sets → Active OAuth Tokens → Login History as needed.
 5. On Object and Field Access, use Object and Access filters, then click an object to open Object Permissions and Field Permissions for deeper analysis.
 
-***
-
-### Additional capabilities (detail)
-
-* Persisted filters on the object access table (filters can be saved per context) for repeatable reviews.
-* Lazy-loaded login history for large histories without loading everything at once.
-* Maximizable dialog for object/field detail when you need more screen space.
-
-***
-
 ### Benefits
 
-* Increased visibility — One screen ties together identity, permissions, integrations, and sign-in evidence for a chosen user and org.
-* Operational efficiency — Reduces time spent correlating Setup, permission sets, and login reports manually.
-* Stronger governance — Supports periodic access reviews and validation of permission set expirations.
-* Risk awareness — Surfaces broad object rights, OAuth usage, and login anomalies in a structured way.
+* Increased visibility:
 
-***
+One screen ties together identity, permissions, integrations, and sign-in evidence for a chosen user and org.
+
+* Operational efficiency:
+
+Reduces time spent correlating Setup, permission sets, and login reports manually.
+
+* Stronger governance:
+
+Supports periodic access reviews and validation of permission set expirations.
+
+* Risk awareness:
+
+Surfaces broad object rights, OAuth usage, and login anomalies in a structured way.
 
 ### Conclusion
 
 User Security Overview helps organizations understand and audit Salesforce user access and activity in context: from profile and role through effective permissions and field-level sources, to permission sets, OAuth-connected apps, and login history with optional map visualization. Used as part of Guard’s broader access and compliance tools, it makes user-level security review practical and repeatable.
-
-***
-
-If you want this saved as a `.md` file in the repo or tuned to your exact marketing names (e.g. “SPM” vs “Guard”), say where it should live and any naming constraints.

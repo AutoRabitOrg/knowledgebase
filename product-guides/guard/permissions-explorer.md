@@ -2,106 +2,155 @@
 
 ### Overview
 
-The **Permission Explorer** feature provides deep visibility into Salesforce user access. It helps administrators quickly identify sensitive or overprivileged permissions and understand exactly how those permissions are granted. With two modes—**User Permissions** and **Object Access**—Permission Explorer makes it easier to strengthen security, maintain compliance, and prevent unauthorized access.
+AutoRABIT Guard’s Permissions Explorer is a hub for answering who has which Salesforce permissions, how those grants are wired (Profiles, Permission sets, and Permission set groups), and how access has changed over time.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>Permissions Explorer Home Page</p></figcaption></figure>
+### Explore User Permissions
 
-### Key Benefits
+Find users (or permission containers) that match general org permissions (such as Author Apex or API Enabled) and inspect how those permissions were granted.
 
-* **Identify Risky Access**: Detect users with sensitive or overly broad permissions.
-* **Trace Permissions**: See where access comes from.
-* **Explore Object Access**: Understand who can read, edit, create, or delete specific objects.
-* **Predefined Templates**: Start quickly with built-in queries for common risk scenarios.
-* **Compliance & Audit Support**: Demonstrate clear oversight of access control during audits.
+#### Key capabilities
 
-## Modes of Permission Explorer
+* Quick Explorer:
 
-### 1. Explore User Permissions
+Use predefined templates to answer critical questions such as:
 
+1. Who can access everything without restriction?
+2. Who can deploy code directly to production?
+3. Who can take over user accounts?
+4. Who can grant elevated access to themselves or others?
+5. Who can move large volumes of data in and out?
+6. Who can weaken password policies?
 
+These templates accelerate common security investigations and reduce manual query building.
 
-*   **Quick Explorer**\
-    Use predefined templates to answer critical questions such as:&#x20;
+<figure><img src="../../.gitbook/assets/image (2495).png" alt=""><figcaption></figcaption></figure>
 
-    * Who can access everything without restriction?
-    * Who can deploy code directly to production?
-    * Who can take over user accounts?
-    * Who can grant elevated access to themselves or others?
-    * Who can move large volumes of data in and out?
-    * Who can weaken password policies?
+* Saved Queries:
 
-    These templates accelerate common security investigations and reduce manual query building.
+Any custom queries you’ve created are saved and easily accessible from the Permission Explorer homepage.
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Quick Explorer</p></figcaption></figure>
+* Custom Explorer:
 
-* **Saved Queries**\
-  Any custom queries you’ve created are saved and easily accessible from the Permission Explorer homepage.
-*   **Custom Explorer**\
-    For deeper analysis, create your own queries by selecting permissions grouped into categories such as:
+For deeper analysis, create your own queries by selecting permissions grouped into categories such as:
 
-    * Access Control
-    * Custom Code
-    * Data Export / Data Input
-    * Integration
-    * Password Management
-    * Super Admin Permissions (full permissions reserved for only a few trusted users)
-    * User Management
+1. Access Control
+2. Custom Code
+3. Data Export / Data Input
+4. Integration
+5. Password Management
+6. Super Admin Permissions (full permissions reserved for only a few trusted users)
+7. User Management
+8. Other permissions
 
-    Once permissions are selected, the tool shows:
+Once permissions are selected, the tool shows:
 
-    * Which users hold the permissions
-    * The **source of access** (profile or permission set)
-    * A **User Detail Page** with account status, creator, and activity insights
+* Which users hold the permissions
+* The **source of access** (profile or permission set)
+* A **User Detail Page** with account status, creator, and activity insights
 
-### 2. Explore Object Access
+#### Why it matters
 
-This mode helps you evaluate **Object-level permissions** across your Salesforce orgs.
+It connects risky permission combinations to real users and granting paths, which supports least-privilege reviews, SOX-style access controls, and faster answers to “who can do X in production?”
 
-Steps:
+#### Getting started (User permissions)
 
-1. Select a Salesforce org.
-2. Choose **Standard** or **Custom** objects.
-3. Select the type of access to check: **Read, Create, Edit,** and/or **Delete**.
-4. Submit the query.
+1. Open Permissions Explorer.
+2. Choose Explore User Permissions.
+3. Select a Salesforce org.
+4. Use Quick Explorer or Custom Explorer, add optional user criteria, then run the exploration.
+5. Pick an entity type on the left, select a row, and use Diagram / Tree (for users) or the users' view (for profiles and permission sets).
 
-Results show:
+### Explore Object Access
 
-* Which users have the selected access level.
-* Why they have access (via profile or permission set).
+Understand which users have access to which objects and at what leve, again with optional user scoping and grant-path style analysis in the shared results UI.
 
-This mode is especially useful for compliance checks and ensuring the proper protection of sensitive objects (such as customer data).
+#### Key capabilities
 
-### Best Practices
+* Object + access selection:&#x20;
 
-* **Start with Quick Explorer**: Use templates to spot the most common and risky scenarios.
-* **Audit Super Admins**: Regularly review who has full permissions and validate their necessity.
-* **Save Custom Queries**: Build queries that align with your internal policies or compliance frameworks and revisit them regularly.
-* **Review Object Access Quarterly**: Ensure sensitive custom objects aren’t unintentionally exposed.
-* **Combine with User Activity Monitoring**: Use insights from Permission Explorer alongside activity data for a complete security picture.
+A tree control lets you multi-select object access entries (object type paired with permission type).&#x20;
 
-## How We Determine Which Users Have Selected Permissions
+* Same user criteria builder:
 
-To find users with specific permissions, we run complex SOQL queries (Salesforce Object Query Language) to the Salesforce org.
+Include frozen users and up to four criteria rows (Profile, Role, Company, Domain) with operators and org-resolved values, matching the permission explorer filter model.
 
-The queries retrieve users who are active and not frozen. The results will only show users who have the selected permissions, including those granted via profiles, permission sets, or permission set groups.
+* Saved queries:
 
-### Which Permissions Can Be Inspected?
+Object-access queries are stored and listed separately so teams can reuse common object-access reviews.
 
-* The list of permissions available for analysis is predefined and includes the most common permissions. Some examples might include permissions like Modify All Data, Export Reports, and Author Apex.
-* Permissions will only be visible if they have been enabled on the org.
+#### Why it matters
 
-### Why Use the Permissions Explorer?
+Object permissions drive data exposure and bulk data operations. Exploring by object and access level makes data-governance and segmentation reviews practical without manual SOQL and setup digging.
 
-* **Identify Overprivileged Users**: Quickly locate users who have excessive or unnecessary permissions, helping to enforce the principle of least privilege.
-* **Simplify Permission Audits**: Gain a clear understanding of who has access to critical permissions and how they were granted, making compliance audits more efficient.
-* **Enhance Security Posture**: By classifying permissions into familiar security categories, security teams can more easily identify and mitigate potential risks, aligning Salesforce permissions with traditional security policies.
+#### Getting started (Object access)
 
-### Example scenarios
+1. From the hub, choose Explore Object Access.
+2. Select Salesforce org and object access in the tree (one or more object/permission combinations).
+3. Optionally configure user criteria and Include frozen users.
+4. Click Explore and interpret results using the entity selector on the left.
 
-1. **Security Audits**: Verify that only approved users have high-level permissions.
-2. **Compliance Reviews**: Map permissions to regulatory requirements and flag risky access.
-3. **Troubleshooting**: Investigate unexpected user activity by tracing their assigned permissions.
-4. **Access Optimization**: Identify and reduce overprivileged accounts.
+### Explore Permission History
+
+Review audit-style changes for selected user permissions: when something changed, which permission, who made the change, and a change detail label.
+
+#### Key capabilities
+
+* Permission + org selection:
+
+Pick one or more permissions via the shared permission selector (scoped to the org) and an org, then Explore.
+
+* History table:
+
+Columns include Date, Permission (with category icon when available), Changed by, and Change detail.
+
+#### Why it matters
+
+Knowing who changed what permission and when supports investigations, change control, and proving that remediations actually landed in the org.
+
+#### Getting started (History)
+
+1. Choose Explore Permission History.
+2. Select the Salesforce org and one or more permissions.
+3. Click Explore to load the history grid.
+4. Use Back to adjust permissions or return to the hub.
+
+### Explore Agentforce
+
+Surface permissions for Agentforce agents and related users in the selected org: a focused slice of the same “who has what and how” model as user-permission exploration, without manually assembling Agentforce-related permission lists.
+
+#### Why it matters
+
+Agent and automation identities often accumulate broad API and data permissions.&#x20;
+
+A dedicated entry point speeds security and compliance review of those identities.
+
+#### Getting started (Agentforce)
+
+1. Choose Explore Agentforce.
+2. Select Salesforce org.
+3. Click Explore, then review users and grant paths.
+
+### Benefits
+
+* Visibility
+
+Clear answers across users, profiles, permission sets, and permission set groups.
+
+* Traceability
+
+Grant paths and history reduce guesswork about how access appeared.
+
+* Efficiency
+
+Quick Explorer and saved queries shorten recurring audits.
+
+* Risk focus
+
+Object access and high-risk permission bundles align reviews with data exposure and privileged actions.
+
+### Conclusion
+
+Permissions Explorer bundles user-level permission analysis, object-level access exploration, Agentforce-focused reviews, and permission change history into one Guard module. Used together, these views help teams find over-privileged access, prove how it was granted, and track how it changes, supporting both operational security and compliance workflows.
 
 
 

@@ -1287,14 +1287,15 @@
       * [Data Classification](product-guides/guard/data-classification.md)
     * [Risk](product-guides/guard/features/risk/README.md)
       * [API Security](product-guides/guard/api-security.md)
-      * [Risk Assessment](product-guides/guard/risk-assessment.md)
       * [Permissions Explorer](product-guides/guard/permissions-explorer.md)
       * [Public File Exposure](product-guides/guard/features/risk/public-file-exposure.md)
+      * [Risk Assessment](product-guides/guard/risk-assessment.md)
+      * [User Security Overview](product-guides/guard/features/risk/user-security-overview.md)
     * [Compliance](product-guides/guard/features/compliance/README.md)
-      * [Change Monitoring](product-guides/guard/change-monitoring.md)
       * [Authorization Policies](product-guides/guard/policies.md)
-      * [User Activity Monitoring](product-guides/guard/features/compliance/user-activity-monitoring.md)
+      * [Change Monitoring](product-guides/guard/change-monitoring.md)
       * [Real-time Change Notifications](product-guides/guard/features/compliance/real-time-change-notifications.md)
+      * [User Activity Monitoring](product-guides/guard/features/compliance/user-activity-monitoring.md)
 
 ## Resources
 

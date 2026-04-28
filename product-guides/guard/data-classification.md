@@ -1,6 +1,6 @@
 # Data Classification
 
-## Overview
+### Overview
 
 AutoRABIT Guard’s Data Classification enhances your organization's ability to identify and manage sensitive data within Salesforce environments. By automatically classifying and categorizing data based on sensitivity and compliance requirements, AutoRABIT supports your data governance and security strategies.
 

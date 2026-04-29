@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" fullWidth="false" %}
 
-## Release Notes 26.1.6
+## AutoRABIT Guard Release Notes 26.1.6
 
 **Release Date: 3 May 2026**
 
@@ -60,7 +60,7 @@ Guard Expert now handles organization context more reliably, preventing intermit
 
 ***
 
-## Guard 26.1.5 Release Notes
+## AutoRABIT Guard 26.1.5 Release Notes
 
 **Release Date: 12 April 2026**
 
@@ -128,7 +128,7 @@ URLs have been updated in Change Notifications email templates.
 
 ***
 
-## Guard 26.1.4 Release Notes
+## AutoRABIT Guard 26.1.4 Release Notes
 
 **Release Date: 25 March 2026**
 
@@ -176,7 +176,7 @@ Export processing has been improved to better handle large datasets, ensuring ex
 
 ***
 
-## Guard 26.1.3 Release Notes
+## AutoRABIT Guard 26.1.3 Release Notes
 
 **Release Date: 25 February 2026**&#x20;
 
@@ -230,7 +230,7 @@ Exporting with no records was generating an invalid ZIP file. No-data exports ar
 
 ***
 
-## Guard 26.1.2 Release Notes&#x20;
+## AutoRABIT Guard 26.1.2 Release Notes&#x20;
 
 **Release Date:  15 February 2026**&#x20;
 
@@ -316,7 +316,7 @@ Resolved an intermittent “Subscription Error” pop-up that occurred when swit
 
 ***
 
-## Guard Release Notes 26.1.1
+## AutoRABIT Guard Release Notes 26.1.1
 
 **Release Date: 25 January 2026**
 

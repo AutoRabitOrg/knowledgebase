@@ -47,6 +47,11 @@ Note: The regions list should get form instance database and specify each region
 
 #### 4.2 S3 Delete Permissions – AdvancedSearch
 
+{% hint style="info" %}
+**Note:**\
+This policy grants permission to delete objects and object versions only within the `AdvancedSearch` path of the specified S3 bucket.
+{% endhint %}
+
 {
 
 &#x20; "Version": "2012-10-17",
@@ -65,7 +70,7 @@ Note: The regions list should get form instance database and specify each region
 
 &#x20;     ],
 
-&#x20;     "Resource": "arn:aws:s3:::penfed-sf-backup-pr/AdvancedSearch/\*"
+&#x20;     "Resource": "arn:aws:s3:::\<BUCKET NAME>/AdvancedSearch/\*"
 
 &#x20;   }
 

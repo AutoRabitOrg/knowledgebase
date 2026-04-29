@@ -21,7 +21,7 @@ Salesforce has announced changes to how uninstalled connected apps function in c
 
 ### Impact on AutoRABIT Products
 
-1. Vault, ARM, and CodeScan Cloud connect to Salesforce via Client Credentials Flow, which creates an uninstalled connected app.
+1. AutoRABIT Vault, ARM, and CodeScan Cloud connect to Salesforce via Client Credentials Flow, which creates an uninstalled connected app.
 2. Existing connections (before September 2025): Will continue to work.
 3. New connections (after September 2025): May fail unless permissions are updated by your Salesforce admin.
 

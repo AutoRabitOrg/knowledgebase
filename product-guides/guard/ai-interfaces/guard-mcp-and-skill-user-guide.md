@@ -1,6 +1,6 @@
 # Guard MCP & Skill: User Guide
 
-### Executive Overview
+## Executive Overview
 
 #### What this enables
 
@@ -15,7 +15,7 @@ AutoRABIT Guard can now be operated directly from your AI coding assistant of ch
 * **No credentials leave your machine.** Authentication is handled automatically via OAuth when you connect, using the same identity provider your team already uses. No tokens are stored in config files or passed manually.
 * **Permissions are your Guard permissions.** The AI assistant can only do what your logged-in user is allowed to do in Guard. No privilege escalation is possible.
 
-### Compatible tools
+## Compatible tools
 
 Guard's MCP works with any AI coding assistant that supports MCP over HTTPS and can complete the OAuth login flow. The table below lists the tools we have tested and the level of support each offers.
 
@@ -32,11 +32,11 @@ Any tool not listed here that supports MCP over a custom HTTPS endpoint may also
 
 ***
 
-### Quickstart
+## Quickstart
 
 Follow the path for the tool you are using.
 
-#### Claude
+### Claude
 
 **Step 1: Add the MCP connector**
 
@@ -71,7 +71,7 @@ If you see org names and IDs returned, everything is working. You may need to ex
 
 ***
 
-#### Codex
+### Codex
 
 **Step 1: Add the MCP server**
 
@@ -117,7 +117,7 @@ If you see org names and IDs returned, everything is working. Cross-check one or
 
 ***
 
-#### Cursor
+### Cursor
 
 **Step 1: Add the MCP server**
 
@@ -149,7 +149,7 @@ If you see org names and IDs returned, everything is working. Cross-check one or
 
 ***
 
-### Authentication
+## Authentication
 
 #### How authentication works
 
@@ -183,7 +183,7 @@ Other supported overrides for advanced use:
 | GUARD\_API\_TOKEN set but getting 401         | Token is expired or has insufficient permissions          | Rotate the token in Guard and update your secret |
 | Method not found or Unknown tool              | The connector is connected but something is misconfigured | Remove and re-add the connector                  |
 
-### JSON Output Contract
+## JSON Output Contract
 
 You only need to understand this section if you're building tooling around the MCP server directly. Your AI assistant will handle all of this for you in normal use.
 
@@ -269,7 +269,7 @@ The MCP server does not retry automatically. If a command fails with isError: tr
 3. For transient network errors, a simple retry of the same runCmd call is safe. Guard read commands (get) are idempotent.
 4. For write commands (run, admin), check the Guard UI before retrying to avoid duplicate operations.
 
-### Troubleshooting Runbooks
+## Troubleshooting Runbooks
 
 #### "I don't have access to Guard" / no Guard tools appearing
 

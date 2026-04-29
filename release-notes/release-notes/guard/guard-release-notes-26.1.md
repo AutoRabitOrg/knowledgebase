@@ -4,7 +4,7 @@
 
 ## AutoRABIT Guard Release Notes 26.1.6
 
-**Release Date: 3 May 2026**
+**Release Date: 6 May 2026**
 
 ### New features
 

@@ -45,6 +45,8 @@ Use the following as the baseline. Replace placeholders where needed.
 Note: The regions list should get form instance database and specify each region in this police
 {% endhint %}
 
+#### 4.2 S3 Delete Permissions – AdvancedSearch
+
 {
 
 &#x20; "Version": "2012-10-17",

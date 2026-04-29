@@ -2,6 +2,64 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" fullWidth="false" %}
 
+## Release Notes 26.1.6
+
+**Release Date: 3 May 2026**
+
+### New features
+
+#### AI Interfaces for AutoRABIT Guard
+
+Guard now includes new AI interfaces that allow users and AI assistants to interact with Guard through natural language workflows.
+
+A built-in MCP server enables compatible AI clients to securely query Guard data, run supported tools, and access Guard capabilities through authenticated requests. The MCP server uses the existing Guard backend, security model, tenant isolation, and service layer.
+
+For more detailed information on the MCP setup, please see the User Guide and Technical Specification in the Knowledge Base.
+
+#### User Activity Monitoring – Historical Tracking
+
+User Activity Monitoring now captures historical user activity data through daily snapshots.
+
+Guard stores daily per-user snapshots and org-level aggregate counts, allowing customers to review how user access and activity change over time. The UAM dashboard now includes historical aggregate data, and user detail pages include daily history for individual Salesforce users.
+
+#### API Security – Historical Tracking
+
+API Security now supports historical tracking through daily posture snapshots.
+
+Guard stores daily API Security summary data for connected orgs, including unverified apps, over-permissive apps, verified apps, total usage, and last used time. A new read-only history view allows users to review past API Security posture over time.
+
+### Enhancements
+
+#### Risk Assessment – Auto Resolve Configuration
+
+Risk Assessment now supports tenant-level configuration for Auto Resolve.
+
+When Auto Resolve is disabled for a tenant, the Auto Resolve button is unavailable in Risk Assessment and displays a tooltip explaining that auto-resolve is disabled for the instance. When enabled, Auto Resolve continues to behave as before.
+
+#### AutoRABIT Guard™ Naming Updates
+
+Customer-facing product naming has been updated across Guard for consistency.
+
+UI copy, browser title, help areas, notification email templates, chatbot prompts, CLI help text, MCP references, and skill references now use AutoRABIT Guard™ consistently where product naming appears.
+
+#### User Activity Monitoring – Flag Icon Tooltips
+
+Flag icons in the User Activity Monitoring table now include tooltips so users can quickly understand each status indicator.
+
+Frozen users and password-locked users are now clearly identified on hover and keyboard focus, improving usability and accessibility without affecting table layout.
+
+### Bug fixes
+
+#### Guard Expert – Latest Release Notes Response
+
+Guard Expert now returns release information that aligns with the official Guard Knowledge Base release notes, helping users receive accurate and current product release details.
+
+#### Guard Expert – Organization Selection Handling
+
+Guard Expert now handles organization context more reliably, preventing intermittent failures caused by missing organization IDs.
+
+***
+
 ## Guard 26.1.5 Release Notes
 
 **Release Date: 12 April 2026**

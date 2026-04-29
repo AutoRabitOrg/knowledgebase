@@ -1296,6 +1296,9 @@
       * [Change Monitoring](product-guides/guard/change-monitoring.md)
       * [Real-time Change Notifications](product-guides/guard/features/compliance/real-time-change-notifications.md)
       * [User Activity Monitoring](product-guides/guard/features/compliance/user-activity-monitoring.md)
+  * [AI Interfaces](product-guides/guard/ai-interfaces/README.md)
+    * [Guard MCP & Skill: User Guide](product-guides/guard/ai-interfaces/guard-mcp-and-skill-user-guide.md)
+    * [AI Interfaces for AutoRABIT Guard: Technical Specification](product-guides/guard/ai-interfaces/ai-interfaces-for-autorabit-guard-technical-specification.md)
 
 ## Resources
 

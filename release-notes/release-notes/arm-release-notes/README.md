@@ -6,96 +6,85 @@
 
 ***
 
-#### **Enable Configurable Deployment Behavior for Profile IP Ranges**
+### **Configurable Deployment Behavior for Profile IP Ranges (New Enhancement)**
 
-Introduced a new configuration to control how Profile IP Ranges are handled during deployments. This feature is available behind a Feature Flag, and Deployment Mode options are visible only when the flag is enabled.
+Introduced a new configuration to control how Profile IP Ranges are handled during deployments. This feature is enabled via a Feature Flag, and the Deployment Mode options are visible only when the flag is turned ON.
 
 **Deployment Mode Options:**
 
 * **Append (Default):** Adds new IP ranges without removing existing ones in the target.
-* **Replace All:** Ensures the target matches the source/package by deploying only the included IP ranges and removing any others from the target.
+* **Replace All:** Ensures the target matches the source/package by deploying only the IP ranges included and removing any others from the target.
 
 **Important Notes:**
 
 * The **Replace All** option is fully supported for Org-to-Org deployments, where it aligns the target exactly with the source.
-* For other deployment types (CI Jobs, Single Revision, Commit Label, Revision Range), behavior depends on package preparation. Only IP ranges included in the deployment package are applied, and others are removed.
-* As these deployments follow a delta-based mechanism, users should carefully prepare packages when using **Replace All** to avoid unintended removals.
+* For other deployment types (such as CI Jobs, Single Revision, Commit Label, and Revision Range), behavior depends on package preparation. Only the IP ranges included in the deployment package are applied, and any others are removed from the target.
+* Since these deployments follow a delta-based mechanism, users should carefully prepare packages when using **Replace All** to avoid unintended removal of IP ranges.
+
+**Impacted Areas:**\
+Org-to-Org Deployment, CI Jobs (delta-based behavior), Salesforce Settings (Feature Flag Configuration)
 
 ***
 
-#### **Fix Security Issue Causing Full Path Exposure in BotOne V Metadata Upload (Support Case #213285)**
+### **BotOne V Metadata Upload – Full Path Exposure Fix (Support Case #213285)**
 
-Fixed an issue where full file path details were exposed during metadata ZIP uploads for the BotOne V type, posing a potential security concern.
+Fixed an issue where full file path details were exposed during metadata ZIP upload for the BotOne V type, posing a potential security concern.
 
-This occurred due to missing bot metadata during Release Label package generation. The fix ensures required metadata is included, preventing path exposure and ensuring correct upload behavior.
+This issue occurred due to missing bot metadata during Release Label package generation. The fix ensures that the required bot metadata is included, preventing path exposure and ensuring correct upload behavior.
 
 **Impacted Areas:**\
 Release Labels, DX Deployments, DX ZIP Deployment, CI Jobs (DX with Bot metadata)
 
 ***
 
-#### **Improve Flexibility of Permission Set Commit Options in EZ Commit**
+### **Independent Visibility for Permission Set Commit Options (Enhancement)**
 
-Enhanced the EZ Commit experience by making Permission Set commit options independently visible in the Submit Validation panel.
+Improved the EZ Commit experience by making Permission Set commit options visible independently in the Submit Validation panel. Previously, the **Remove user permissions** option was only shown when **Commit access settings for selected metadata** was enabled, causing confusion.
 
-Previously, the **Remove user permissions** option was only displayed when **Commit access settings for selected metadata** was enabled, leading to confusion.
-
-With this update:
+With this enhancement:
 
 * Both options are now displayed by default when a Permission Set is selected.
-* Users can use either option independently or combine both without dependency.
+* Users can choose either option independently or use both together, without any dependency between them.
 
 **Impacted Areas:**\
 Version Control – EZ Commit
 
 ***
 
-#### **Fix SonarQube New Code Detection for Pull Request Analysis (Support Case #204387)**
+### **SonarQube New Code Identification Fix for PR Analysis (Support Case #204387)**
 
-Resolved an issue where SonarQube analysis did not correctly identify new code for commits made to non-main branches without an associated Pull Request.
+Fixed an issue where SonarQube analysis from ARM did not correctly identify new code for commits made to non-main branches without an associated Pull Request. Previously, such analyses were treated as standalone branches, leading to incorrect reporting.
 
-Previously, such analyses were treated as standalone branches, resulting in inaccurate reporting.
-
-With this fix:
-
-* The selected baseline branch is now correctly used during Pull Request analysis.
-* Changes are accurately reflected under **New Code** in SonarQube.
+With this fix, the selected baseline branch is now correctly used during Pull Request analysis. This ensures that changes are properly compared and reflected under **New Code** in SonarQube, improving accuracy and consistency in reporting.
 
 **Impacted Areas:**\
 EZ Commit, EZ Merge, SCA Reports, Deployments with SCA (SonarQube Integration)
 
 ***
 
-#### **Fix Stale Scheduled Job Executions for ACCELQ Jobs (Support Case #222962)**
+### **Stale Scheduled Job Execution Fix for ACCELQ Jobs (Support Case #222962)**
 
-Fixed an issue where scheduled jobs were triggered even when they were deleted, not present, or not properly saved in the UI. This caused inconsistencies between the UI and scheduler.
+Fixed an issue where scheduled jobs were triggering even when they were not present, deleted, or not properly saved in the UI. This caused inconsistencies between the UI and scheduler, leading to repeated and unnecessary job executions.
 
-With this fix:
-
-* Cleanup logic removes stale and orphaned scheduler (cron) entries.
-* Only valid and properly configured jobs are executed.
-* Scheduler behavior is now fully aligned with the UI state.
+With this fix, cleanup logic has been implemented to remove stale and orphaned scheduler (cron) entries for ACCELQ jobs. Jobs that are deleted or not properly configured are no longer triggered, ensuring alignment between the UI and scheduler state.
 
 **Impacted Areas:**\
 CI Jobs, Scheduler (ACCELQ Jobs), Deployment Execution
 
 ***
 
-#### **Enable Pattern-Based Substitution for Named Credential Parameters**
+### **Pattern-Based Substitution Support for Named Credentials (Enhancement)**
 
-Enhanced the Search & Substitute feature to support pattern/wildcard-based substitution for Named Credential parameter values.
+Enhanced the Search & Substitute feature to support pattern/wildcard-based substitution for Named Credential parameter values. Previously, only exact-match substitutions were supported, requiring multiple rules for similar URL patterns.
 
-Previously, only exact-match substitutions were supported, requiring multiple rules for similar patterns.
+With this enhancement, a new subelement, **namedCredential.parameterValueMatchExpression**, allows users to define a single rule to handle multiple URL variations dynamically. This reduces duplication and simplifies maintenance by replacing only the matched portion while preserving the remaining value.
 
-With this enhancement:
-
-* A new subelement, **namedCredential.parameterValueMatchExpression**, allows dynamic matching.
-* A single rule can now handle multiple URL variations.
-* Only the matched portion is replaced, preserving the rest of the value.
-* Existing exact-match behavior using **namedCredential.parameterValue** remains unchanged.
+Existing exact-match behavior using **namedCredential.parameterValue** remains unchanged.
 
 **Impacted Areas:**\
 Admin – Search & Substitute, CI Jobs, Deployment Configuration
+
+***
 
 ### **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 

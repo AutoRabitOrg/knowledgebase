@@ -4,6 +4,17 @@
 
 ## nCino - Release 26.2.4
 
+**Release Date:** 03 May 2026
+
+**Selective Deployment Download Scope**\
+Fixed an issue where downloading data from a selective deployment iteration exported the entire dataset instead of only the records belonging to that iteration. Downloads now correctly scope to the current iteration.
+
+##
+
+##
+
+## nCino - Release 26.2.4
+
 **Release Date:** 26 April 2026
 
 **Server start issue on data retention bucket update**\

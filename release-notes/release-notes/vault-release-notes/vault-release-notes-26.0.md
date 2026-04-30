@@ -4,6 +4,22 @@
 
 ## Vault Release Notes 26.1.3
 
+**Release Date: 29 April 2026**
+
+**Replication Job Configuration — Target Org Update Issue**\
+Resolved an issue where modifying a Replication Job Configuration to update the Target Org resulted in an "Invalid Request" error, requiring the job to be recreated. Additionally, records uploaded via CSV were not displaying correctly during edit. Both issues have been addressed, allowing seamless updates and proper data visibility.
+
+**Accounts Backup Download Issue**\
+Fixed a problem where downloading the Accounts object from a backup job failed with a request error, causing the loading process to stall indefinitely. The download process now completes successfully across environments.
+
+**Activity Log User Information Display**\
+Addressed an intermittent issue where Activity Log entries displayed null values instead of the associated user details. User information is now consistently captured and displayed correctly.
+
+**Archive Deletion Navigation Behavior**\
+Corrected the navigation flow after deleting a configuration from the Archive section. The interface now remains within the Archive view instead of redirecting to another section.
+
+## Vault Release Notes 26.1.3
+
 **Release Date: 22 April 2026**
 
 **Configurable** **Session Timeout**\

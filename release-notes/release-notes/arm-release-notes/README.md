@@ -89,7 +89,7 @@ Admin – Search & Substitute, CI Jobs, Deployment Configuration
 ### DataLoader Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **DataLoader Pro Job Result Inaccessible**\
-Fixed a bug where viewing success records after a successful DataLoader Pro job returned a "File Not Found" error (HTTP 500). Users can now view and download result files as expected.
+Resolved an issue where result files from completed DataLoader Pro jobs were not accessible. Users can now successfully view and download job results as expected.
 
 ***
 

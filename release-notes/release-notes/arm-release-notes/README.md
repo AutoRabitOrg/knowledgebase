@@ -1,5 +1,102 @@
 # ARM Release Notes
 
+### **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
+
+**Release Date:** May 3, 2026
+
+***
+
+#### **Enable Configurable Deployment Behavior for Profile IP Ranges**
+
+Introduced a new configuration to control how Profile IP Ranges are handled during deployments. This feature is available behind a Feature Flag, and Deployment Mode options are visible only when the flag is enabled.
+
+**Deployment Mode Options:**
+
+* **Append (Default):** Adds new IP ranges without removing existing ones in the target.
+* **Replace All:** Ensures the target matches the source/package by deploying only the included IP ranges and removing any others from the target.
+
+**Important Notes:**
+
+* The **Replace All** option is fully supported for Org-to-Org deployments, where it aligns the target exactly with the source.
+* For other deployment types (CI Jobs, Single Revision, Commit Label, Revision Range), behavior depends on package preparation. Only IP ranges included in the deployment package are applied, and others are removed.
+* As these deployments follow a delta-based mechanism, users should carefully prepare packages when using **Replace All** to avoid unintended removals.
+
+***
+
+#### **Fix Security Issue Causing Full Path Exposure in BotOne V Metadata Upload (Support Case #213285)**
+
+Fixed an issue where full file path details were exposed during metadata ZIP uploads for the BotOne V type, posing a potential security concern.
+
+This occurred due to missing bot metadata during Release Label package generation. The fix ensures required metadata is included, preventing path exposure and ensuring correct upload behavior.
+
+**Impacted Areas:**\
+Release Labels, DX Deployments, DX ZIP Deployment, CI Jobs (DX with Bot metadata)
+
+***
+
+#### **Improve Flexibility of Permission Set Commit Options in EZ Commit**
+
+Enhanced the EZ Commit experience by making Permission Set commit options independently visible in the Submit Validation panel.
+
+Previously, the **Remove user permissions** option was only displayed when **Commit access settings for selected metadata** was enabled, leading to confusion.
+
+With this update:
+
+* Both options are now displayed by default when a Permission Set is selected.
+* Users can use either option independently or combine both without dependency.
+
+**Impacted Areas:**\
+Version Control – EZ Commit
+
+***
+
+#### **Fix SonarQube New Code Detection for Pull Request Analysis (Support Case #204387)**
+
+Resolved an issue where SonarQube analysis did not correctly identify new code for commits made to non-main branches without an associated Pull Request.
+
+Previously, such analyses were treated as standalone branches, resulting in inaccurate reporting.
+
+With this fix:
+
+* The selected baseline branch is now correctly used during Pull Request analysis.
+* Changes are accurately reflected under **New Code** in SonarQube.
+
+**Impacted Areas:**\
+EZ Commit, EZ Merge, SCA Reports, Deployments with SCA (SonarQube Integration)
+
+***
+
+#### **Fix Stale Scheduled Job Executions for ACCELQ Jobs (Support Case #222962)**
+
+Fixed an issue where scheduled jobs were triggered even when they were deleted, not present, or not properly saved in the UI. This caused inconsistencies between the UI and scheduler.
+
+With this fix:
+
+* Cleanup logic removes stale and orphaned scheduler (cron) entries.
+* Only valid and properly configured jobs are executed.
+* Scheduler behavior is now fully aligned with the UI state.
+
+**Impacted Areas:**\
+CI Jobs, Scheduler (ACCELQ Jobs), Deployment Execution
+
+***
+
+#### **Enable Pattern-Based Substitution for Named Credential Parameters**
+
+Enhanced the Search & Substitute feature to support pattern/wildcard-based substitution for Named Credential parameter values.
+
+Previously, only exact-match substitutions were supported, requiring multiple rules for similar patterns.
+
+With this enhancement:
+
+* A new subelement, **namedCredential.parameterValueMatchExpression**, allows dynamic matching.
+* A single rule can now handle multiple URL variations.
+* Only the matched portion is replaced, preserving the rest of the value.
+* Existing exact-match behavior using **namedCredential.parameterValue** remains unchanged.
+
+**Impacted Areas:**\
+Admin – Search & Substitute, CI Jobs, Deployment Configuration
+
 ### **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **Release Date:** Apr 26, 2026

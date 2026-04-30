@@ -88,6 +88,8 @@ Admin – Search & Substitute, CI Jobs, Deployment Configuration
 
 ### DataLoader Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
+**Release Date:** May 03, 2026
+
 **DataLoader Pro Job Result Inaccessible**\
 Resolved an issue where result files from completed DataLoader Pro jobs were not accessible. Users can now successfully view and download job results as expected.
 

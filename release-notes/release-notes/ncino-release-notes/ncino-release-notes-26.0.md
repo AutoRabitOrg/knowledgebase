@@ -2,16 +2,12 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.2.4
+## nCino - Release 26.2.5
 
 **Release Date:** 03 May 2026
 
 **Selective Deployment Download Scope**\
 Fixed an issue where downloading data from a selective deployment iteration exported the entire dataset instead of only the records belonging to that iteration. Downloads now correctly scope to the current iteration.
-
-##
-
-##
 
 ## nCino - Release 26.2.4
 

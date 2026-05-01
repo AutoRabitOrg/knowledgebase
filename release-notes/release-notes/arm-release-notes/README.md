@@ -92,7 +92,7 @@ Resolved an issue where result files from completed DataLoader Pro jobs were not
 
 ### **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
-**Release Date:** Apr 26, 2026
+**Release Date:** **26 April 2026**
 
 #### **Accurate Error Message Display for Deployment Failures (Support Case #207169)** <a href="#accurate-error-message-display-for-deployment-failures-support-case-207169" id="accurate-error-message-display-for-deployment-failures-support-case-207169"></a>
 

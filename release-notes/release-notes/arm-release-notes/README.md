@@ -6,26 +6,6 @@
 
 ***
 
-### **Configurable Deployment Behavior for Profile IP Ranges (New Enhancement)**
-
-Introduced a new configuration to control how Profile IP Ranges are handled during deployments. This feature is enabled via a Feature Flag, and the Deployment Mode options are visible only when the flag is turned ON.
-
-**Deployment Mode Options:**
-
-* **Append (Default):** Adds new IP ranges without removing existing ones in the target.
-* **Replace All:** Ensures the target matches the source/package by deploying only the IP ranges included and removing any others from the target.
-
-**Important Notes:**
-
-* The **Replace All** option is fully supported for Org-to-Org deployments, where it aligns the target exactly with the source.
-* For other deployment types (such as CI Jobs, Single Revision, Commit Label, and Revision Range), behavior depends on package preparation. Only the IP ranges included in the deployment package are applied, and any others are removed from the target.
-* Since these deployments follow a delta-based mechanism, users should carefully prepare packages when using **Replace All** to avoid unintended removal of IP ranges.
-
-**Impacted Areas:**\
-Org-to-Org Deployment, CI Jobs (delta-based behavior), Salesforce Settings (Feature Flag Configuration)
-
-***
-
 ### **BotOne V Metadata Upload – Full Path Exposure Fix (Support Case #213285)**
 
 Fixed an issue where full file path details were exposed during metadata ZIP upload for the BotOne V type, posing a potential security concern.

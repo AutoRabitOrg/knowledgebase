@@ -71,7 +71,7 @@ Admin – Search & Substitute, CI Jobs, Deployment Configuration
 
 ***
 
-## DataLoader Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## DataLoader Pro Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **Release Date:** **03 May 2026**
 

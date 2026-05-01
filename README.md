@@ -12,8 +12,8 @@ AutoRABIT is not just a toolset, it’s a system. Our enterprise-grade DevSecOps
 
 **Our ecosystem includes:**
 
-* [**ARM**](product-guides/arm/)**:** Structured CI/CD pipelines for Salesforce. Aligns governance with acceleration.
-* [**CodeScan**](product-guides/codescan/)**:** Industry leading static analysis to enforce quality and secure code before it ships.
+* **AutoRABIT** [**ARM**](product-guides/arm/)**:** Structured CI/CD pipelines for Salesforce. Aligns governance with acceleration.
+* **AutoRABIT** [**CodeScan**](product-guides/codescan/)**:** Industry leading static analysis to enforce quality and secure code before it ships.
 * **AutoRABIT** [**Vault**](product-guides/vault/)**:** Resilient, compliant backup and recovery tailored for complex Salesforce data models.
 * **AutoRABIT** [**Guard**](product-guides/guard.md)**:** Real-time permission intelligence and compliance automation. Prevents access risk before it becomes exposure.
 

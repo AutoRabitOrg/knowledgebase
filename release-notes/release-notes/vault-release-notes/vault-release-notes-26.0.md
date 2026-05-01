@@ -18,6 +18,8 @@ Addressed an intermittent issue where Activity Log entries displayed null values
 **Archive Deletion Navigation Behavior**\
 Corrected the navigation flow after deleting a configuration from the Archive section. The interface now remains within the Archive view instead of redirecting to another section.
 
+***
+
 ## Vault Release Notes 26.1.3
 
 **Release Date: 22 April 2026**

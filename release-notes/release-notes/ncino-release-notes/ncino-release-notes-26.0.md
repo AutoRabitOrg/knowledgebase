@@ -4,14 +4,16 @@
 
 ## nCino - Release 26.2.5
 
-**Release Date:** 03 May 2026
+**Release Date:** **03 May 2026**
 
 **Selective Deployment Download Scope**\
 Fixed an issue where downloading data from a selective deployment iteration exported the entire dataset instead of only the records belonging to that iteration. Downloads now correctly scope to the current iteration.
 
+***
+
 ## nCino - Release 26.2.4
 
-**Release Date:** 26 April 2026
+**Release Date:** **26 April 2026**
 
 **Server start issue on data retention bucket update**\
 Server failed to start when the data retention bucket was updated in the installation file. Fixed to handle bucket configuration changes gracefully.
@@ -31,9 +33,11 @@ Feature Deployment module was visible to sub-users even without permission, and 
 **Field Configuration RBC failures**\
 Parent Route values were being cleared during deployment when multiple references to the same parent existed. Also fixed self-referencing parent Screen Sections not being picked up.
 
+***
+
 ## nCino - Release 26.2.3
 
-**Release Date:** 26 April 2026
+**Release Date:** **26 April 2026**
 
 **Re-login prompt when going to nCino Deployment History tab in new UI**
 
@@ -43,6 +47,8 @@ Parent Route values were being cleared during deployment when multiple reference
 
 * nCino CI Job rollback was failing because the agent could not locate the required backup directory from the previous build. The baseline revision was also incorrectly updating on failed/partial/rollback builds. Fixed rollback flow and ensured baseline revision only updates on successful deploy builds.
 
+***
+
 ## nCino - Release 26.1.13
 
 **Release Date: 29 March 2026**
@@ -50,6 +56,8 @@ Parent Route values were being cleared during deployment when multiple reference
 **Streamlined Feature Migration Logging**
 
 HTTP response bodies are no longer logged in standard logs. Logging now captures only essential details such as status, endpoint, request ID, and response time—reducing log noise and improving security.
+
+***
 
 ## nCino - Release 26.1.11
 

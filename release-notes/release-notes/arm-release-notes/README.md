@@ -2,9 +2,7 @@
 
 ### **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
 
-**Release Date:** May 3, 2026
-
-***
+**Release Date: 3 May 2026**
 
 #### **Configurable Deployment Behavior for Profile IP Ranges (Limited)** <a href="#id-1.-configurable-deployment-behavior-for-profile-ip-ranges-new-enhancement" id="id-1.-configurable-deployment-behavior-for-profile-ip-ranges-new-enhancement"></a>
 
@@ -95,8 +93,6 @@ Resolved an issue where result files from completed DataLoader Pro jobs were not
 ### **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **Release Date:** Apr 26, 2026
-
-***
 
 #### **Accurate Error Message Display for Deployment Failures (Support Case #207169)** <a href="#accurate-error-message-display-for-deployment-failures-support-case-207169" id="accurate-error-message-display-for-deployment-failures-support-case-207169"></a>
 

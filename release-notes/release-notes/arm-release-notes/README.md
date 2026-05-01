@@ -1,6 +1,6 @@
 # ARM Release Notes
 
-### **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
+## ARM **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
 
 **Release Date: 3 May 2026**
 
@@ -71,16 +71,16 @@ Admin – Search & Substitute, CI Jobs, Deployment Configuration
 
 ***
 
-### DataLoader Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## DataLoader Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
-**Release Date:** May 03, 2026
+**Release Date:** **03 May 2026**
 
 **DataLoader Pro Job Result Inaccessible**\
 Resolved an issue where result files from completed DataLoader Pro jobs were not accessible. Users can now successfully view and download job results as expected.
 
 ***
 
-### **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **Release Date:** **26 April 2026**
 
@@ -108,14 +108,14 @@ This improvement reduces dependency on Admins and enables better collaboration.
 **Impacted Areas:**\
 Environment Provisioning (Template Management) – Old UI & New UI
 
-#### **Multiple Diff View Support in EZCommit – New UI (Support Case #215475)** <a href="#multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475" id="multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475"></a>
+#### **Multiple Diff View Support in EZ-Commit – New UI (Support Case #215475)** <a href="#multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475" id="multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475"></a>
 
-Enhanced the EZCommit experience in the New UI to allow users to view multiple file diffs simultaneously. Previously, opening a diff would automatically close any previously opened diff, limiting comparison across components.
+Enhanced the EZ-Commit experience in the New UI to allow users to view multiple file diffs simultaneously. Previously, opening a diff would automatically close any previously opened diff, limiting comparison across components.
 
 With this update, users can expand multiple diff sections at the same time, enabling easier side-by-side review and improved validation before committing.
 
 **Impacted Areas:**\
-EZCommit, CI Jobs, Deployments, Version Control, Merge Requests
+EZ-Commit, CI Jobs, Deployments, Version Control, Merge Requests
 
 #### **Baseline Revision Selection Display Fix – Classic UI (Support Case #211183)** <a href="#baseline-revision-selection-display-fix-classic-ui-support-case-211183" id="baseline-revision-selection-display-fix-classic-ui-support-case-211183"></a>
 
@@ -205,7 +205,7 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-### DataLoader Release Notes – Version 26.2.4
+## DataLoader Release Notes – Version 26.2.4
 
 **Release Date: 26 April 2026**
 
@@ -213,7 +213,7 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-### DataLoader Release Notes – Version 26.2.3
+## DataLoader Release Notes – Version 26.2.3
 
 **Release Date: 26 April 2026**
 

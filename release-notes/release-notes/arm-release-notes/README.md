@@ -19,7 +19,7 @@ Introduced a new configuration to control how Profile IP Ranges are handled duri
 * For other deployment types (such as CI Jobs, Single Revision, Commit Label, and Revision Range), behavior depends on **package preparation**. Only the IP ranges included in the deployment package are applied, and any others **will be removed** from the target.
 * Since these deployments follow a **delta-based mechanism**, users should carefully prepare packages when using **Replace All** to avoid unintended removal of IP ranges.
 
-### **BotOne V Metadata Upload – Full Path Exposure Fix (Support Case #213285)**
+#### **BotOne V Metadata Upload – Full Path Exposure Fix (Support Case #213285)**
 
 Fixed an issue where full file path details were exposed during metadata ZIP upload for the BotOne V type, posing a potential security concern.
 
@@ -28,7 +28,7 @@ This issue occurred due to missing bot metadata during Release Label package gen
 **Impacted Areas:**\
 Release Labels, DX Deployments, DX ZIP Deployment, CI Jobs (DX with Bot metadata)
 
-### **Independent Visibility for Permission Set Commit Options (Enhancement)**
+#### **Independent Visibility for Permission Set Commit Options (Enhancement)**
 
 Improved the EZ Commit experience by making Permission Set commit options visible independently in the Submit Validation panel. Previously, the **Remove user permissions** option was only shown when **Commit access settings for selected metadata** was enabled, causing confusion.
 
@@ -40,7 +40,7 @@ With this enhancement:
 **Impacted Areas:**\
 Version Control – EZ Commit
 
-### **SonarQube New Code Identification Fix for PR Analysis (Support Case #204387)**
+#### **SonarQube New Code Identification Fix for PR Analysis (Support Case #204387)**
 
 Fixed an issue where SonarQube analysis from ARM did not correctly identify new code for commits made to non-main branches without an associated Pull Request. Previously, such analyses were treated as standalone branches, leading to incorrect reporting.
 
@@ -49,7 +49,7 @@ With this fix, the selected baseline branch is now correctly used during Pull Re
 **Impacted Areas:**\
 EZ Commit, EZ Merge, SCA Reports, Deployments with SCA (SonarQube Integration)
 
-### **Stale Scheduled Job Execution Fix for ACCELQ Jobs (Support Case #222962)**
+#### **Stale Scheduled Job Execution Fix for ACCELQ Jobs (Support Case #222962)**
 
 Fixed an issue where scheduled jobs were triggering even when they were not present, deleted, or not properly saved in the UI. This caused inconsistencies between the UI and scheduler, leading to repeated and unnecessary job executions.
 
@@ -58,7 +58,7 @@ With this fix, cleanup logic has been implemented to remove stale and orphaned s
 **Impacted Areas:**\
 CI Jobs, Scheduler (ACCELQ Jobs), Deployment Execution
 
-### **Pattern-Based Substitution Support for Named Credentials (Enhancement)**
+#### **Pattern-Based Substitution Support for Named Credentials (Enhancement)**
 
 Enhanced the Search & Substitute feature to support pattern/wildcard-based substitution for Named Credential parameter values. Previously, only exact-match substitutions were supported, requiring multiple rules for similar URL patterns.
 

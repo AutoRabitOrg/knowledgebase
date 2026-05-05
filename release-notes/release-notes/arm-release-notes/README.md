@@ -2,11 +2,9 @@
 
 ### **Release Notes 26.2.6**
 
-**Release Date: 10th May 2026**
+**Release Date: 10 May 2026**
 
-***
-
-### Testim Integration with ARM CI Jobs – New UI
+#### Testim Integration with ARM CI Jobs – New UI
 
 Testim is now integrated with ARM CI Jobs to enable automated testing, rollback handling, and improved deployment visibility.
 
@@ -20,7 +18,7 @@ More Information: https://knowledgebase.autorabit.com/product-guides/arm-1/integ
 
 ***
 
-### Date Filter UX Improvements – New UI
+#### Date Filter UX Improvements – New UI
 
 **Support Tickets:** #217101
 
@@ -32,7 +30,7 @@ Enhancements to the date filter improve usability and accuracy in the New UI.
 
 ***
 
-### SCM Authentication Improvements for Branch Registration
+#### SCM Authentication Improvements for Branch Registration
 
 **Support Case:** #212466
 
@@ -44,7 +42,7 @@ Improvements to repository credential handling ensure consistent authentication 
 
 ***
 
-### CI Job History – Job Name Visibility Enhancements – New UI
+#### CI Job History – Job Name Visibility Enhancements – New UI
 
 **Support Tickets:** #225070, #223138, #216246
 
@@ -56,7 +54,7 @@ Enhancements improve visibility and readability of CI job names.
 
 ***
 
-### EZ Commit Label Validation Fix – New UI
+#### EZ Commit Label Validation Fix – New UI
 
 **Support Case:** #222706
 
@@ -68,7 +66,7 @@ Resolved inconsistency in label validation between New UI and Old UI.
 
 ***
 
-### Run Specified Tests – Multiple Test Input Fix – New UI
+#### Run Specified Tests – Multiple Test Input Fix – New UI
 
 **Support Case:** #222711
 
@@ -80,7 +78,7 @@ Resolved issue with handling multiple test class inputs during deployments.
 
 ***
 
-### Commit Fetching Fix for SFDX Repositories
+#### Commit Fetching Fix for SFDX Repositories
 
 **Support Case:** #217928
 

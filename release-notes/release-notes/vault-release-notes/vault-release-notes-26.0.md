@@ -2,6 +2,21 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
+## Vault Release Notes 26.1.5
+
+**Release Date: 06 May 2026**
+
+1. **Enhance Authentication Event Logging with Detailed Failure Reasons**
+   * Enhanced the authentication logging framework to capture granular failure reasons for all authentication attempts across UI login, API, and service-to-service flows. Logs follow a structured CEF format and are searchable by username, customerId, failureReason, and timestamp.
+2. **Upgrade Salesforce APIs to Spring '26 (v66)**
+   * Upgraded all Salesforce APIs from the current version to v66 (Spring '26) to leverage new capabilities, improved performance, and stay compliant with customer Salesforce org versions.
+3. **Field-Level Restoration Not Working as Expected**
+   * Fixed an issue where field-level restoration from a compare job failed to restore blank/null values when using the "Select field" option, even with "Override data with blank values" enabled. Full-record restoration worked correctly; the fix ensures field-level selection also honors the override setting.
+4. **Schema Search Showing "Path Not Found"**
+   * Fixed an issue in Archive Configuration where searching for parent or child schemas incorrectly displayed a "Path Not Found" message instead of the expected schema hierarchy results.
+5. **Backup Configuration Screen Freezing on Object Deselection**
+   * Fixed a UI freeze that occurred when selecting/deselecting Data or Metadata objects during Backup and Replication configuration setup.
+
 ## Vault Release Notes 26.1.4
 
 **Release Date: 29 April 2026**

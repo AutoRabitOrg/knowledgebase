@@ -1,5 +1,96 @@
 # ARM Release Notes
 
+### **Release Notes 26.2.6**
+
+**Release Date: 10th May 2026**
+
+***
+
+### Testim Integration with ARM CI Jobs – New UI
+
+Testim is now integrated with ARM CI Jobs to enable automated testing, rollback handling, and improved deployment visibility.
+
+* Enabled execution of Testim tests (Suite, Label, Plan) within CI Jobs
+* Added automatic test execution during CI runs
+* Introduced rollback on failure based on test results
+* Added email notifications with test results, job details, and rollback status
+* Provided execution logs and results in CI Job history
+
+More Information: https://knowledgebase.autorabit.com/product-guides/arm-1/integration-and-plugins/testim
+
+***
+
+### Date Filter UX Improvements – New UI
+
+**Support Tickets:** #217101
+
+Enhancements to the date filter improve usability and accuracy in the New UI.
+
+* Calendar now opens only for Custom Range selection
+* Predefined ranges apply instantly without requiring Apply
+* Fixed incorrect month display and removed future month visibility
+
+***
+
+### SCM Authentication Improvements for Branch Registration
+
+**Support Case:** #212466
+
+Improvements to repository credential handling ensure consistent authentication during branch registration.
+
+* Save button enabled only when changes are made
+* Validates last modified user’s credentials during branch registration
+* Automatically falls back to repository-level credentials if validation fails
+
+***
+
+### CI Job History – Job Name Visibility Enhancements – New UI
+
+**Support Tickets:** #225070, #223138, #216246
+
+Enhancements improve visibility and readability of CI job names.
+
+* Job Name column is now resizable in CI List and Job History pages
+* Column width persists after refresh and filter application
+* Improved handling of long job names to reduce truncation
+
+***
+
+### EZ Commit Label Validation Fix – New UI
+
+**Support Case:** #222706
+
+Resolved inconsistency in label validation between New UI and Old UI.
+
+* Updated validation logic to support special characters
+* Fixed regex for allowed and invalid characters
+* Labels with characters like -, ., +, \[ ] are now accepted
+
+***
+
+### Run Specified Tests – Multiple Test Input Fix – New UI
+
+**Support Case:** #222711
+
+Resolved issue with handling multiple test class inputs during deployments.
+
+* Restored support for comma-separated test classes
+* Supports input via comma, Enter key, and pasted values
+* Each test class is correctly parsed as an individual entry
+
+***
+
+### Commit Fetching Fix for SFDX Repositories
+
+**Support Case:** #217928
+
+Resolved issue where commits were not fetched for SFDX repositories.
+
+* Updated SSH-based logic to fetch revisions based on selected package directory
+* Ensures commits are retrieved correctly when a package folder is selected
+
+***
+
 ## ARM **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
 
 **Release Date: 3 May 2026**

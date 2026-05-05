@@ -975,6 +975,7 @@
       * [Installation](product-guides/arm-1/integration-and-plugins/visual-code-extension/installing-vs-code-extension.md)
       * [Configuration](product-guides/arm-1/integration-and-plugins/visual-code-extension/configuring-vscode-extension.md)
       * [Usage](product-guides/arm-1/integration-and-plugins/visual-code-extension/working-with-vscode-extension.md)
+    * [TestIm](product-guides/arm-1/integration-and-plugins/testim.md)
   * [SIEM](product-guides/arm-1/security-information-and-event-management/README.md)
     * [Event Types](product-guides/arm-1/security-information-and-event-management/arm-event-type.md)
     * [CEF Data](product-guides/arm-1/security-information-and-event-management/common-event-format-cef-data.md)

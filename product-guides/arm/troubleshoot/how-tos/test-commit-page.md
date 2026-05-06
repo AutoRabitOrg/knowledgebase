@@ -2,7 +2,7 @@
 
 ### Purpose
 
-The purpose of this page is to test the commit workflow, confirm that changes are tracked properly, and ensure updates can be pushed and reviewed successfully.
+The intended purpose of this page is to test the commit workflow, confirm that changes are tracked properly, and ensure updates can be pushed and reviewed successfully.
 
 ### Test Content
 

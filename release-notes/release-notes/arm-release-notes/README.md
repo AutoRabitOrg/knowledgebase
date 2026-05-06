@@ -43,7 +43,6 @@ Improvements to repository credential handling ensure consistent authentication 
 Enhancements improve visibility and readability of CI job names.
 
 * Job Name column is now resizable in CI List and Job History pages
-* Column width persists after refresh and filter application
 * Improved handling of long job names to reduce truncation
 
 ***

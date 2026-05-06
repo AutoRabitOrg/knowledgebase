@@ -205,7 +205,7 @@ The following cases were tested and are no longer flagged, as expected:&#x20;
 
 This confirms that the rule now correctly recognizes USER\_MODE across different usage patterns and does not raise false positives when FLS is enforced by Salesforce.&#x20;
 
-### New GitLeaks Rules in CodeScan
+#### New GitLeaks Rules in CodeScan
 
 CodeScan has implanted new logic within the Rules Engine that can detect GitLeaks vulnerabilities. GitLeaks is a tool for detecting secrets like passwords, API keys, and tokens. We have extended this logic to cover Salesforce specific languages and components.
 
@@ -235,7 +235,7 @@ This feature is currently available on **AUS and EU instances**.\
 
 ## CodeScan Release 26.0.7
 
-**Release Date:** 12 April 2026
+**Release Date: 12 April 2026**
 
 ### Summary
 

@@ -61,6 +61,18 @@ Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto
 * If left unchecked, the components will be compared only with Salesforce, and any changed or newly added components will be shown on the next screen.
 {% endhint %}
 
+#### Choosing between Auto Draft and Select Manually
+
+EZ-Commit provides different ways to retrieve Salesforce metadata changes depending on the developer’s intent.
+
+Use **Auto Draft** when you want ARM to identify metadata changes from the Salesforce org that have not yet been committed to the selected version control branch. Auto Draft performs metadata analysis and comparison work, so the time required depends on the size and complexity of the Salesforce org.
+
+Use **Select Manually** when you already know which metadata components need to be committed. This path avoids the full Auto Draft analysis and allows you to choose the required components directly.
+
+For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate a larger metadata set. If the developer already knows the target components, Select Manually is the recommended and faster workflow.
+
+
+
 * **`Re-use Previous Validated Commit Label:`** If you placed changes related to a user story or task, etc., under a specific commit label, you can choose the same in this field. The main advantage of creating a commit label is to reuse the labels and perform multiple commits under a given label.
 
 <figure><img src="../../../../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>

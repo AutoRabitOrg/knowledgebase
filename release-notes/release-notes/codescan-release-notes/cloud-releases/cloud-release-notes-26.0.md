@@ -24,7 +24,7 @@ CodeScan 26.0.8 is comprised of the following 6 components:&#x20;
 * 4 Fixes&#x20;
 * 4 New GitLeaks specific rules introduced
 
-Component details are listed in their corresponding sections within this document.&#x20;
+Component details are listed in their corresponding sections within this release document.&#x20;
 
 ### Application Enhancements&#x20;
 

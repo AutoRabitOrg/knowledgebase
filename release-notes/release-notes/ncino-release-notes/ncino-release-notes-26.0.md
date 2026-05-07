@@ -26,6 +26,8 @@ Fixed a "Request parameters are empty/null" error in the New UI when clicking on
 
 Fixed the build trigger dialog not auto-closing after a build is successfully queued. The dialog now dismisses automatically.
 
+***
+
 ## nCino - Release 26.2.5
 
 **Release Date:** **03 May 2026**

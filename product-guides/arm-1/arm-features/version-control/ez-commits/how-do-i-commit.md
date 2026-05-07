@@ -311,3 +311,9 @@ Here are the steps to reproduce the scenario:
 ### Can I deploy/commit system permission sets to ARM?
 
 By default, when we commit by selecting only Profile metadata, it retrieves User Permissions and IP ranges. However, it depends on what kind of system permissions you're looking for, and if it has metadata API retrieval support from Salesforce, then it is possible to commit via AutoRABIT.
+
+### Why does Auto Draft take longer than Select Manually?
+
+Auto Draft analyzes metadata changes in the Salesforce org and compares them with the selected version control branch. The time required depends on the number of metadata components and the complexity of the org. In large orgs, Auto Draft may take longer because there is more metadata to evaluate.
+
+If you already know which components need to be committed, use **Select Manually** to go directly to component selection.

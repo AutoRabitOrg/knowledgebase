@@ -2,6 +2,30 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.2.6
+
+**Release Date:** **10 May 2026**
+
+**Create Branch from Feature Deployment**&#x20;
+
+Users can now create a new branch in Version Control directly from the Feature Deployment screen via a new "+" button next to the Branch field. This eliminates the need to navigate to Admin → VC Repos, reducing context switching.
+
+**Null-Safety Fix for nCino Operations**
+
+Fixed a null pointer exception with proper null-safety checks during nCino operations.
+
+**New UI Deployment Screen Freeze Fix**
+
+Fixed the New UI deployment screen freezing when encountering unsupported sObject types. The UI now correctly blocks deployment and stays responsive, matching Old UI behavior.
+
+**CI Build Results Object Click Error Fix**
+
+Fixed a "Request parameters are empty/null" error in the New UI when clicking on objects in successful CI Build Results, which was caused by incorrect API parameter passing.
+
+**Build Trigger Dialog Auto-Close Fix**
+
+Fixed the build trigger dialog not auto-closing after a build is successfully queued. The dialog now dismisses automatically.
+
 ## nCino - Release 26.2.5
 
 **Release Date:** **03 May 2026**

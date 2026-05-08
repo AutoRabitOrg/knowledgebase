@@ -12,6 +12,331 @@ Key points:
 3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
+## CodeScan Release 26.0.9
+
+**Release Date: 10 May 2026**
+
+### Summary
+
+CodeScan 26.0.9 is comprised of the following 12 components:
+
+* 1 New Feature
+  * NOTE: This New Feature consists of 2 components
+* 4 Application Enhancements
+  * NOTE: 1 of the Application Enhancements consists of 2 components
+* 2 Rule Enhancements
+* 3 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### New Feature
+
+**1.    Cross-File Analysis in IDE**
+
+**a.     Configurable Cross-File Analysis in IDE Extensions**
+
+Introduced configurable Cross-File Analysis support in the IDE extension to improve rule accuracy for scenarios where analysis depends on context across multiple files.
+
+Previously, the IDE extension performed file-wise analysis only, which could miss issues where logic was split across classes, triggers, or dependent files.
+
+**Behavior**
+
+When Cross-File Analysis is enabled:
+
+* The engine traverses relevant files required by cross-file rules.
+* Only issues related to the currently opened file are displayed in the IDE.
+* Issues found in other files during traversal are used for context but not shown in the IDE panel.
+* Traversal is rule-aware and profile-aware to avoid unnecessary scanning.
+
+**Optimization**
+
+* If a class file is opened, class files are prioritized first.
+* If no cross-file rules are active in the Quality Profile, full traversal is skipped.
+* Cross-file analysis is disabled by default to preserve performance.
+
+**Outcome**
+
+* More accurate detection for interdependent rules.
+* Reduced missed violations in IDE analysis.
+* Focused developer feedback without showing unrelated issues.&#x20;
+
+**b.     Cross-File Analysis Controls in UI at Project and Admin Levels**
+
+Added UI controls to enable or disable Cross-File Analysis from both project-level and admin-level settings.
+
+**Project-Level Control**
+
+Users can enable Cross-File Analysis for individual projects through:
+
+Project Settings → General Settings → Cross-File Analysis
+
+**Admin-Level Control**
+
+Admins can enable Cross-File Analysis globally through:
+
+Administration → Configuration → General Settings → CodeScan
+
+**Outcome**
+
+* Project teams can enable the feature only where needed.
+* Admins can centrally manage the setting across projects.
+* Improves usability and configurability of Cross-File Analysis.&#x20;
+
+### Application Enhancements
+
+**1.    Issue Exceptions Enhancements**
+
+**a.     Manual Expiry Date for Exception Issues**
+
+Enhanced Exception issue handling by allowing users to manually set an expiry date when marking issue an Exception.
+
+**Behavior**
+
+Users can:
+
+* Select any future expiry date.
+* Leave expiry unselected, resulting in No Expiry.
+* Override admin-configured default expiry duration.
+
+**System Behavior**
+
+* When the selected expiry date is reached, the issue transitions from Exception → Open.
+* Issues with No Expiry remain in Exception status.
+* Admin expiry setting changes do not affect issues with manually selected expiry dates.
+
+**Validation**
+
+Validated across UI, API, functional behavior, admin configuration interaction, auto-transition behavior, and bulk issue transitions.
+
+**Outcome**
+
+Improves flexibility and aligns Exception handling with existing hotspot expiry workflows.
+
+
+
+**b.     Auto-Assign Expiry Dates for Issue Exceptions**
+
+Enhanced Exception issue handling by allowing Admins to configure automatic expiry dates based on issue severity.
+
+**Admin Configuration**
+
+Instance Admins can enable or disable auto-expiry and configure default expiry duration by severities:
+
+* Blocker
+* Critical
+* Major
+* Minor
+* Info
+
+**Behavior**
+
+When enabled:
+
+* Expiry date is calculated as current date plus configured severity duration.
+* Expiry is assigned automatically when an issue is moved to Exception.
+* Auto-assigned expiry is not editable at project or user level.
+* Existing issues are not affected by later admin configuration changes.
+
+**Validation**
+
+Validated through UI, API, workflow transitions, invalid input handling, permissions, bulk assignment, time zone behavior, and regression testing.
+
+**Outcome**
+
+Standardizes SLA handling for exceptions and reduces manual administrative effort.
+
+
+
+**2.    Showing Invited Users in Members List with pending status**
+
+We have enhanced user management by showing invited users in the Members list immediately after an invitation is sent:
+
+<figure><img src="../../../../.gitbook/assets/image (2500).png" alt=""><figcaption></figcaption></figure>
+
+Previously, invited users did not appear in the Members tab until they accepted the invitation, making it difficult for admins to track pending invites.
+
+**Behavior**
+
+* Invited users appear under Pending Invitations.
+* Status is shown as Invited.
+* Once accepted, status changes from Invited → Active Member.
+* Empty state displays:\
+  &#x20;“No pending invitations. Invite new members to collaborate.”
+
+**Validation**
+
+Validated at organization level, including multiple invites, invite cleanup after 7 days, DB record creation, UI consistency, and status transition.
+
+**Outcome**
+
+Improves administrator visibility, reduces duplicate invite confusion, and provides clearer user management.
+
+
+
+**3.    Improved Error Messaging in Invite Module for Existing Users**
+
+Enhanced flow where inviting a user who already exists in the organization displayed a generic error message:
+
+_“An unknown error occurred”_
+
+**Behavior**
+
+The UI now displays the actual backend validation message, such as:
+
+_“This email already exists in the organization”_
+
+**Outcome**
+
+Provides clearer feedback and reduces confusion during user invitations.
+
+&#x20;
+
+**4.    Add Default Salesforce Metadata file suffixes to CodeScan for customers running DX projects**
+
+**Description**
+
+Previously, we only had default settings for files and projects using the metadata type.
+
+This enhancement ensures that CodeScan defaults now cover all types in both metadata and source format.
+
+**The new defaults are now:**
+
+settings
+
+object
+
+profile
+
+flow
+
+workflow
+
+permissionset
+
+profileSessionSetting
+
+sharingRules
+
+profilePasswordPolicy
+
+settings-meta.xml
+
+object-meta.xml
+
+field-meta.xml
+
+profile-meta.xml
+
+flow-meta.xml
+
+workflow-meta.xml
+
+permissionset-meta.xml
+
+profileSessionSetting-meta.xml
+
+sharingRules-meta.xml
+
+profilePasswordPolicy-meta.xml
+
+<figure><img src="../../../../.gitbook/assets/image (2501).png" alt=""><figcaption></figcaption></figure>
+
+### Rule Enhancements
+
+**1.    Added CVSS Scoring for Security Rules**
+
+Enhanced selected security rules by adding standardized CVSS scoring.
+
+**Rules Updated:**
+
+* Avoid Using Unfiled Public Folders
+* GitLeaks Secret Detection in Apex Files
+* GitLeaks Secret Detection in Salesforce Metadata Files
+* GitLeaks Secret Detection in Visualforce & Lightning Files
+* Identify Potential Sensitive PII Fields
+* Resource Injection
+* Server Side Request Forgery
+* Validate Flow Run Context Mode
+
+**CVSS Details Added**
+
+* Base Score
+* Temporal Score
+* Environmental Score
+* Severity Rating
+* Vector String, where applicable
+
+**Validation**
+
+Validated in rule details view and CVSS filters. No impact was observed on rule execution or detection logic.
+
+**Outcome**
+
+Improves severity visibility and helps users prioritize remediation more effectively.
+
+
+
+**2.    Enhanced AvoidDMLInLoops Rule with Interprocedural Analysis**
+
+Rule key: sf:AvoidSoqlInLoops
+
+Enhanced the Avoid DML/SOQL Inside Loops rule to detect violations across method calls, files, and nested execution paths.
+
+Previously, some violations were missed when DML or SOQL was executed indirectly through methods called inside loops.
+
+**Scenarios Now Supported**
+
+* Recursive call paths
+* Deep and nested method chains
+* Cross-class traces
+* Cross-file scenarios
+* While-loop scenarios
+* Transitive call chains such as A → B → C → SOQL/DML
+
+**Outcome**
+
+Improves rule accuracy and helps detect governor-limit risks that were previously missed.
+
+### Fixes&#x20;
+
+**1.     Resolved Tag Filter Issue on CodeScan Rules Page**
+
+Fixed an issue where searching for a custom tag on the Rules page returned no results and showed a count of 0 unless additional filters were applied.
+
+**Resolution**
+
+Corrected tag filtering behavior, so matching rules appear immediately when searching by tag.
+
+**Outcome**
+
+* Accurate tag counts.
+* Correct rule results.
+* No need for extra filtering steps.
+
+&#x20;
+
+**2.     UI Now Displays Actual Duplicate Project Key Message During Project Creation instead of Generic “Unknown Error” Message**
+
+**Description**
+
+While creating a project, if the entered project key already exists, the UI displays a generic error message: “An unknown error occurred”.
+
+However, the actual API response in the Network tab contains a meaningful validation message stating: _“Could not create Project with key: ‘gitleaks’. A similar key already exists: ‘gitleaks’”_.
+
+As such, we have enhanced the UI to now display the backend validation message instead of the generic error so users can clearly understand the reason for the failure.
+
+<figure><img src="../../../../.gitbook/assets/image (2502).png" alt=""><figcaption></figcaption></figure>
+
+**3.     Resolved Blank Edit Project Settings Page for S3 Integration Projects**
+
+Fixed an issue where the Edit Project Settings page appeared blank for S3 integration projects, and console errors were shown.
+
+**Outcome**
+
+Users can now open and update settings for S3-based projects, including memory allocation, without errors.
+
+***
+
 ## CodeScan Release 26.0.8&#x20;
 
 &#x20;**Release date: 26 April 2026**

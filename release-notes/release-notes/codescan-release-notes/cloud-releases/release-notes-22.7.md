@@ -38,7 +38,7 @@ For more information, see [Scheduled Reports](https://knowledgebase.autorabit.co
 
 Fig 1: Old Screen<br>
 
-![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-GQ2NQX2R.png)
+<img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-GQ2NQX2R.png" alt="image.png" height="445" width="445">
 
 Fig 2: New Screen<br>
 

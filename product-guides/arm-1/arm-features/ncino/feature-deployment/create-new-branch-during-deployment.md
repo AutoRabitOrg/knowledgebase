@@ -6,7 +6,7 @@ This document explains the process of creating a new branch directly from the nC
 
 ## 2. Use Case
 
-Deploy metadata changes to a new branch that does not yet exist in the repository. Rather than leaving the deployment flow to update version control settings, the branch can be created directly from the nCino application during deployment configuration, helping maintain context and improve efficiency.
+Deploy changes to a new branch that does not yet exist in the repository. Rather than leaving the deployment flow to update version control settings, the branch can be created directly from the nCino application during deployment configuration, helping maintain context and improve efficiency.
 
 ## 3. Feature Overview
 

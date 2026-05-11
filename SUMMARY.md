@@ -905,6 +905,7 @@
         * [Deployment via Version Control using Salesforce Org](product-guides/arm-1/arm-features/ncino/feature-deployment/deployment-via-version-control-using-salesforce-org-1.md)
         * [Feature Deployments](product-guides/arm-1/arm-features/ncino/feature-deployment/feature-deployment-summary.md)
         * [Feature Deployment History](product-guides/arm-1/arm-features/ncino/feature-deployment/feature-deployment-summary-1.md)
+        * [Create New Branch During Deployment](product-guides/arm-1/arm-features/ncino/feature-deployment/create-new-branch-during-deployment.md)
       * [Feature Commits](product-guides/arm-1/arm-features/ncino/feature-commits.md)
       * [Run CI Jobs](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/README.md)
         * [Run a CI Job](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/running-a-ci-job/README.md)

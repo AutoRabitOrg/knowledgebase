@@ -1,10 +1,8 @@
 # ARM Release Notes
 
-### **Release Notes 26.2.6.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
+## ARM **Release Notes 26.2.6.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
 
-**Release Date:** May 13, 2026
-
-***
+**Release Date: 13 May 2026**
 
 #### Deployment and Validation Status Reporting Failure for Salesforce Summer ’26 Sandboxes <a href="#deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes" id="deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes"></a>
 
@@ -25,7 +23,7 @@ Upgraded Salesforce Metadata API libraries to version 67 to support Salesforce S
 
 ***
 
-### **Release Notes 26.2.6**
+## **ARM Release Notes 26.2.6**
 
 **Release Date: 10 May 2026**
 
@@ -181,7 +179,7 @@ Resolved an issue where result files from completed DataLoader Pro jobs were not
 
 ***
 
-## **Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## **ARM Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **Release Date:** **26 April 2026**
 
@@ -324,7 +322,7 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-### **Release Notes 26.2.2**
+## **ARM Release Notes 26.2.2**
 
 **Release Date:** **12 April 2026**
 
@@ -484,7 +482,7 @@ Fixed DataLoader extract job editing so fields and the saved query now load corr
 
 ***
 
-### **ARM Release Notes – Version 26.1.13**
+## **ARM Release Notes – Version 26.1.13**
 
 **Release Date: 29 March 2026**
 

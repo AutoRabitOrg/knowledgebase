@@ -1,5 +1,30 @@
 # ARM Release Notes
 
+### **Release Notes 26.2.6.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
+
+**Release Date:** May 13, 2026
+
+***
+
+#### Deployment and Validation Status Reporting Failure for Salesforce Summer ’26 Sandboxes <a href="#deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes" id="deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes"></a>
+
+Resolved an issue where Merge/Commit validations and deployments were incorrectly reported as failed in ARM for Salesforce Sandbox/Production environments upgraded to Salesforce Summer ’26 (API version 67).
+
+Customers experienced the following error in ARM UI popup messages and logs when using any Test Level option:
+
+* Run Local Tests
+* Run All Tests
+* Run Specified Tests
+* Use Salesforce Default
+
+`com.sforce.ws.ConnectionException: unable to find end tag at: START_TAG seen ...`
+
+**Resolution**
+
+Upgraded Salesforce Metadata API libraries to version 67 to support Salesforce Summer ’26 API response changes and ensure accurate deployment and validation status reporting.
+
+***
+
 ### **Release Notes 26.2.6**
 
 **Release Date: 10 May 2026**

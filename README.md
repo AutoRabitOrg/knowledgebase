@@ -4,7 +4,7 @@ description: Your Source of Truth for All Things AutoRABIT
 
 # Welcome to the Knowledge Base
 
-**The Knowledge Base** is your centralized, always-evolving source for technical documentation, product guidance, release notes, FAQs, and operational support across the AutoRABIT ecosystem. Whether you’re leading enterprise-scale transformation or optimizing daily flows, this is where insight meets action.
+**The Knowledge Base** is a centralized, always-evolving source for technical documentation, product guidance, release notes, FAQs, and operational support across the AutoRABIT ecosystem. Whether you’re leading enterprise-scale transformation or optimizing daily flows, this is where insight meets action.
 
 #### Built for Precision at Scale
 

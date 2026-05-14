@@ -66,6 +66,8 @@ Added support for the `AiAuthoringBundle` metadata type across ARM metadata oper
 * Deployment Module
 * Version Control
 
+***
+
 ## ARM **Release Notes 26.2.6.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
 
 **Release Date: 13 May 2026**

@@ -2,6 +2,58 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" fullWidth="false" %}
 
+## AutoRABIT Guard Release Notes 26.1.7
+
+**Release Date: 17 May 2026**
+
+### **Enhancements**
+
+#### Risk Assessment – New Salesforce Security Check Details
+
+Risk Assessment now includes curated Overview and Impact descriptions for additional Salesforce security checks, including MFA, SAML, external client application metadata access, session settings, trusted IP ranges, and administrator access levels.
+
+These descriptions help users understand what each check means and why it matters, rather than relying only on raw Salesforce labels.
+
+### **Bug Fixes**
+
+#### Authorization Policies – Profile Selection
+
+Authorization Policy creation now loads profile options more reliably for Salesforce orgs during policy setup, allowing users to continue policy configuration without profile dropdown interruptions.
+
+#### User Security Overview – Permission Set Names
+
+Permission Sets in User Security Overview now display readable Salesforce labels or names, making it easier for reviewers to understand assigned access without cross-checking technical values in Salesforce Setup.
+
+#### Salesforce Org Authentication Redirect
+
+After adding and authenticating an existing Salesforce org, Guard now completes the redirect flow cleanly and shows the organization as expected.
+
+#### User Activity Monitoring – Name Sorting
+
+Sorting by Name in User Activity Monitoring now correctly supports both ascending and descending order.
+
+#### User Activity Monitoring – Locked User Status
+
+Locked user indicators are now consistent across User Activity Monitoring and User Data details.
+
+#### User Security Overview – Login History
+
+Login History now displays accurate counts and supports pagination without request errors.
+
+#### Login Experience – Deactivated Users
+
+Users who are deactivated now receive a clear account-disabled message when attempting to log in.
+
+#### Permission Explorer – Custom Query Filters
+
+Permission Explorer custom queries now support additional filter fields more reliably, including profile-based conditions in Custom Explorer.
+
+#### User Activity Monitoring – Last Password Change Filter
+
+Filtering User Activity Monitoring by Last Password Change Date now completes successfully.
+
+***
+
 ## AutoRABIT Guard Release Notes 26.1.6
 
 **Release Date: 6 May 2026**

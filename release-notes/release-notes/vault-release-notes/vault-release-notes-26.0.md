@@ -2,6 +2,14 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
+## Vault Release Notes 26.1.6
+
+**Release Date: 20 May 2026**
+
+**Restore Summary Not Visible in Vault Job**
+
+Fixed an issue where the Restore Summary was not visible in the Vault job.
+
 ## Vault Release Notes 26.1.5
 
 **Release Date: 06 May 2026**

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # CodeScan GitHub Apps Integration for GitHub Enterprise
 
 This page provides a customer-facing overview of CodeScan GitHub Apps Integration for GitHub Enterprise and explains how to set up and configure the integration.

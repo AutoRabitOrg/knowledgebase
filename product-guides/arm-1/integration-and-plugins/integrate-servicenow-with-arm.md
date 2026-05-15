@@ -1,22 +1,24 @@
-# Integrate ServiceNow with ARM
+# ServiceNow
 
 ## Step 1: Store Your ServiceNow Credentials in ARM
 
 1. Log in to your ARM account.
-2.  Navigate to the **Admin** module and click the **Credentials** tab.
+2.  Navigate to the **Admin** module and click the **Credentials** tab.<br>
 
-    ![Credential Tab](<../../../.gitbook/assets/image (900).png>)
-3.  Click **Create Credential** from the right navigation.
+    <figure><img src="../../../.gitbook/assets/image (2514).png" alt=""><figcaption></figcaption></figure>
+3.  Click **Create Credential** from the right navigation.\
+    <br>
 
-    ![Create Credential](<../../../.gitbook/assets/image (901).png>)
+    <figure><img src="../../../.gitbook/assets/image (2515).png" alt=""><figcaption></figcaption></figure>
 4. In the popup:
    * Enter a **Credential Name**
    * Set **Credential Type** to _User name with Password_
    * Input your **ServiceNow username** and **password**
    * Ensure you're using your **username**, not your login email
-5.  Click **Save**
+5.  Click **Save**\
+    <br>
 
-    ![Credential Entry](<../../../.gitbook/assets/image (902).png>)
+    <figure><img src="../../../.gitbook/assets/image (2516).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -24,12 +26,12 @@
 
 1. Log in to ARM (if not already logged in).
 2. Go to **Admin > My Account**
-3.  Click **New ALM System** under the **ALM Management** section
+3. Click **New ALM System** under the **ALM Management** section
+4.  Set **ALM Type** as **SERVICENOW**\
+    \
+    <br>
 
-    ![New ALM System](<../../../.gitbook/assets/image (903).png>)
-4.  Set **ALM Type** as _SERVICENOW_
-
-    ![ALM Type](<../../../.gitbook/assets/image (904).png>)
+    <figure><img src="../../../.gitbook/assets/image (2517).png" alt=""><figcaption></figcaption></figure>
 5. Enter:
    * A **Label Name**
    * Your ServiceNow **subdomain URL** (e.g., `https://[subdomain].service-now.com`)

@@ -1,17 +1,17 @@
 # Add a Project to CodeScan from GitHub Enterprise Cloud (with GitHub App)
 
-### Prerequisites&#x20;
+## Prerequisites&#x20;
 
 Please ensure the person performing the setup has administrator privileges for both GitHub Enterprise and CodeScan. These are required:
 
 * Admin access to GitHub Enterprise
 * Admin access to CodeScan
 
-### Create a GitHub app&#x20;
+## Create a GitHub app&#x20;
 
 Log in to your GitHub Enterprise Server with an Admin account and select one of the following approaches to create a GitHub app.
 
-#### a. Recommended approach
+### a. Recommended approach
 
 To create a GitHub App, just copy the URL below:
 
@@ -25,7 +25,7 @@ YOUR\_PUBLIC\_BASE = URL of the CodeScan instance (Example: [_app.codescan.io_](
 
 Click **Save**.
 
-#### b. Manual creation
+### b. Manual creation
 
 1. Log in to your GitHub Enterprise Server as an Admin (make sure to switch to Enterprise Level), and navigate to **Settings**.
 
@@ -89,7 +89,7 @@ Webhooks: Read and write&#x20;
 
 3. Click **Create GitHub App.**
 
-### Trigger Analysis from CodeScan&#x20;
+## Trigger Analysis from CodeScan&#x20;
 
 1. Log in to your CodeScan account as an Admin.
 2. In the top right corner, click on the **'+'** icon and select **Analyze new project**.
@@ -127,7 +127,7 @@ If you do not specify the Branch Name during GitHub integration, then it will ta
 * Make sure you select the checkbox under **Check Pull Requests**.&#x20;
 
 {% hint style="info" %}
-Admin permissions in GitHub are **required,** otherwise pull requests will not be trigger, even though a user may be able to select the box to "check pull requests" during GitHub integration.
+Admin permissions in GitHub are **required,** otherwise pull requests will not be triggered, even though a user may be able to select the box to "check pull requests" during GitHub integration.
 {% endhint %}
 
 * The **Project Key** and the **Project Name** are automatically generated. You can edit these values as needed.

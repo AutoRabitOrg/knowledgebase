@@ -1035,6 +1035,7 @@
       * [Multi-Proxy Setup](product-guides/arm-1/troubleshoot/how-tos/configure-multi-proxy.md)
       * [Ensure Complete Record Type XML Retrieval from Salesforce](product-guides/arm-1/troubleshoot/how-tos/ensure-complete-record-type-xml-retrieval-from-salesforce.md)
       * [Record Types Picklist](product-guides/arm-1/troubleshoot/how-tos/configure-record-types-picklist-values.md)
+      * [Article Creation Test](product-guides/arm-1/troubleshoot/how-tos/article-creation-test.md)
     * [Known Issues](product-guides/arm-1/troubleshoot/known-issues-limitations/README.md)
       * [ARM Known Issues](product-guides/arm-1/troubleshoot/known-issues-limitations/arm-known-issues.md)
       * [ARM Limitations](product-guides/arm-1/troubleshoot/known-issues-limitations/arm-known-limitations.md)

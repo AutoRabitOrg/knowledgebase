@@ -1,5 +1,17 @@
 # CodeScan Overview
 
+{% hint style="info" %}
+With the constantly evolving security landscape, we are evolving too. Please note that a number of CodeScan rules will be fully deactivated in 60 days.  The rules in question are:
+
+* Custom fields must have a description field (sfmeta:RequireDescriptionField, Salesforce Metadata)
+* Unnecessary Parentheses (sf:UnnecessaryParentheses, Apex)
+* Use System.Assert instead of System.assertEquals (sf:UseAssertInsteadOfAssertEquals, Apex)
+* Use System.assertEquals instead of System.assert (sf:UseAssertEqualsInsteadOfAssertEquality, Apex)
+* Use System.assertEquals instead of System.assert (sf:UseAssertEqualsInsteadOfAssert, Apex)
+
+To understand the potential impact on your organisation, we recommend reviewing whether any of the soon-to-be-deactivated rules are currently included in your Quality Profiles.You can do so by navigating to _Quality Profiles_ - rules subject to deactivation will be highlighted in red next to the overall rule count within your profiles. Each deprecated rule also includes a reason for deactivation (for example, replacement with an improved rule).Thank you for your continued partnership. Should you have any questions or require assistance, please contact us at [support@autorabit.com](mailto:support@autorabit.com)&#x20;
+{% endhint %}
+
 ### Market Overview <a href="#market-overview" id="market-overview"></a>
 
 Salesforce code quality and security are mission-critical factors. Salesforce is a key driver of digital transformation, and at risk from the development supply chain. Sensitive data pervades the platform, which is complicated by Salesforce metadata used to encode security roles, access controls, permissions, and other platform customizations. The risk of introducing errors via metadata is high, and directly affected by code quality. Poor code quality slows feature velocity and creates additional challenges for compliance and security.

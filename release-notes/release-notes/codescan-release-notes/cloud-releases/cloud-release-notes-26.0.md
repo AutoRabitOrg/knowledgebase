@@ -68,18 +68,11 @@ Added UI controls to enable or disable Cross-File Analysis from both project-lev
 
 Users can enable Cross-File Analysis for individual projects through:
 
-Project Settings → General Settings → Cross-File Analysis
-
-**Admin-Level Control**
-
-Admins can enable Cross-File Analysis globally through:
-
-Administration → Configuration → General Settings → CodeScan
+Project Settings → General Settings → CodeScan → CodeScan Lang → Cross-file Analysis Control
 
 **Outcome**
 
 * Project teams can enable the feature only where needed.
-* Admins can centrally manage the setting across projects.
 * Improves usability and configurability of Cross-File Analysis.&#x20;
 
 ### Application Enhancements

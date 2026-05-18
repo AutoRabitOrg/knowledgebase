@@ -259,6 +259,14 @@ This enhancement streamlines historical data analysis and controlled restoration
 
 <figure><img src="../../../.gitbook/assets/3 (5).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+**Note:**
+
+The **Search & Compare** functionality is supported only for data available in **AWS S3**. Data stored outside AWS S3 is not supported for Search & Compare operations.
+{% endhint %}
+
+
+
 **Salesforce Org Registration – Enhanced to Support External Client Apps**
 
 Updated the Salesforce Org registration flow to use OAuth 2.0 aligned with Salesforce’s requirement to support OAuth flow through External Connected Apps. The enhanced guided setup enables secure onboarding of Production and Sandbox environments with real-time validation, encrypted credential storage, automatic token management, actionable error guidance, environment health visibility, and complete audit logging.

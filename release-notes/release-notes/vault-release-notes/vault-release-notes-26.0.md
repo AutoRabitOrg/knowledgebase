@@ -10,6 +10,8 @@
 
 Fixed an issue where the Restore Summary was not visible in the Vault job.
 
+***
+
 ## Vault Release Notes 26.1.5
 
 **Release Date: 06 May 2026**

@@ -2,11 +2,9 @@
 
 ## ARM **Release Notes 26.2.7** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
 
-**Release Date:** May 17, 2026
+**Release Date:** **17 May 2026**
 
-***
-
-### Report Folder Selection Handling <a href="#report-folder-selection-handling" id="report-folder-selection-handling"></a>
+#### Report Folder Selection Handling <a href="#report-folder-selection-handling" id="report-folder-selection-handling"></a>
 
 Improved metadata filtering in VC-EZ-Commit to correctly recognize nested Report folders from `package.xml` uploads, even when a corresponding metadata file is not present. This ensures complete folder hierarchies are properly detected and displayed during metadata selection.
 
@@ -14,7 +12,7 @@ Improved metadata filtering in VC-EZ-Commit to correctly recognize nested Report
 
 ***
 
-### Azure Logic App Audit Log API Compatibility <a href="#azure-logic-app-audit-log-api-compatibility" id="azure-logic-app-audit-log-api-compatibility"></a>
+#### Azure Logic App Audit Log API Compatibility <a href="#azure-logic-app-audit-log-api-compatibility" id="azure-logic-app-audit-log-api-compatibility"></a>
 
 Enhanced the Audit Logs service to improve compatibility with Azure Logic Apps by removing mandatory header validation for GET requests. This resolves issues where audit log API calls were failing due to automatically stripped `Content-Type` headers in Azure Logic App integrations.
 
@@ -22,7 +20,7 @@ Enhanced the Audit Logs service to improve compatibility with Azure Logic Apps b
 
 ***
 
-### Branch Credential Mapping Improvement <a href="#branch-credential-mapping-improvement" id="branch-credential-mapping-improvement"></a>
+#### Branch Credential Mapping Improvement <a href="#branch-credential-mapping-improvement" id="branch-credential-mapping-improvement"></a>
 
 Improved branch credential mapping in ARM Version Control to ensure branches created through the EZ-Commit workflow are correctly associated with the user-selected credentials. This resolves issues where feature branches created by sub-users were not searchable during PR creation workflows.
 
@@ -35,7 +33,7 @@ Improved branch credential mapping in ARM Version Control to ensure branches cre
 
 ***
 
-### Enhanced Pagination Support - New UI <a href="#enhanced-pagination-support-new-ui" id="enhanced-pagination-support-new-ui"></a>
+#### Enhanced Pagination Support - New UI <a href="#enhanced-pagination-support-new-ui" id="enhanced-pagination-support-new-ui"></a>
 
 Improved pagination options across deployment reporting screens by adding support for viewing up to 100 records per page. This enhancement helps users review large datasets more efficiently within Deployment History, Release Labels, and related deployment report views.
 
@@ -46,7 +44,7 @@ Improved pagination options across deployment reporting screens by adding suppor
 
 ***
 
-### Active CI Job Filtering in Permissions - New UI <a href="#active-ci-job-filtering-in-permissions-new-ui" id="active-ci-job-filtering-in-permissions-new-ui"></a>
+#### Active CI Job Filtering in Permissions - New UI <a href="#active-ci-job-filtering-in-permissions-new-ui" id="active-ci-job-filtering-in-permissions-new-ui"></a>
 
 Updated the New UI permissions workflow to display only active CI jobs during user permission assignment, aligning the behavior with the Old UI experience. This prevents inactive jobs from appearing in CI job selection lists across permission management screens.
 
@@ -56,7 +54,7 @@ Updated the New UI permissions workflow to display only active CI jobs during us
 
 ***
 
-### AiAuthoringBundle Metadata Support <a href="#aiauthoringbundle-metadata-support" id="aiauthoringbundle-metadata-support"></a>
+#### AiAuthoringBundle Metadata Support <a href="#aiauthoringbundle-metadata-support" id="aiauthoringbundle-metadata-support"></a>
 
 Added support for the `AiAuthoringBundle` metadata type across ARM metadata operations, enabling proper handling during deployments, exclusions, skip-member configurations, and CI job processing. This resolves issues where deployments involving `AiAuthoringBundle` components were failing or not being recognized correctly.
 

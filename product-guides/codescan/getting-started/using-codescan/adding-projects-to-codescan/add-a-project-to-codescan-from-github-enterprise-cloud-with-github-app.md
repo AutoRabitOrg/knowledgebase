@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Add a Project to CodeScan from GitHub Enterprise Cloud (with GitHub App)
 
 ## Prerequisites&#x20;

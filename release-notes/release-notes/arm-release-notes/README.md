@@ -1,5 +1,49 @@
 # ARM Release Notes
 
+### **Release Notes 26.2.8** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date:** May 24, 2026
+
+***
+
+## Improvements to Log Viewer Experience <a href="#improvements-to-log-viewer-experience" id="improvements-to-log-viewer-experience"></a>
+
+We’ve enhanced the log viewing experience across multiple ARM modules to improve usability and performance.
+
+### What’s Improved <a href="#whats-improved" id="whats-improved"></a>
+
+* Removed unwanted auto-scroll behavior for completed jobs and logs
+* Users can now freely interact with the page without UI locking
+* Added quick navigation buttons to:
+  * Scroll to Top
+  * Scroll to Bottom
+* Added Full-Screen mode for easier log analysis
+* Improved live log streaming and polling for running jobs
+* Enhanced handling of large logs for smoother scrolling and improved responsiveness
+
+### Impacted Areas <a href="#impacted-areas" id="impacted-areas"></a>
+
+CI Jobs, Deployment, Dataloader, Reports, SFDX, Admin Settings, and Version Control.
+
+***
+
+## Improvements to EZ-Commit Destructive Changes Handling <a href="#improvements-to-ez-commit-destructive-changes-handling" id="improvements-to-ez-commit-destructive-changes-handling"></a>
+
+Enhanced the handling and display of deleted metadata changes in EZ-Commit for improved consistency and accuracy.
+
+### What’s Improved <a href="#whats-improved.1" id="whats-improved.1"></a>
+
+* Added support for displaying `Action = D` for deleted metadata changes in the Old UI
+* Improved consistency between the Old UI and New UI for destructive changes handling
+* Updated deleted changes behavior during the `package.xml` upload flow:
+  * `Modified By` and `Modified Date` fields will now remain empty for destructive changes to avoid misleading information
+
+### Impacted Areas <a href="#impacted-areas.1" id="impacted-areas.1"></a>
+
+EZ-Commit – Deleted Metadata Changes Handling (Destructive Changes)
+
+***
+
 ## ARM **Release Notes 26.2.7** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
 
 **Release Date:** **17 May 2026**

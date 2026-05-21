@@ -6,7 +6,7 @@
 
 ***
 
-## Improvements to Log Viewer Experience <a href="#improvements-to-log-viewer-experience" id="improvements-to-log-viewer-experience"></a>
+## Improvements to Log Viewer Experience - New UI <a href="#improvements-to-log-viewer-experience" id="improvements-to-log-viewer-experience"></a>
 
 We’ve enhanced the log viewing experience across multiple ARM modules to improve usability and performance.
 

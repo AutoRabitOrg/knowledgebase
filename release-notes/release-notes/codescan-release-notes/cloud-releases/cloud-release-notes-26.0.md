@@ -60,9 +60,9 @@ When Cross-File Analysis is enabled:
 * Reduced missed violations in IDE analysis.
 * Focused developer feedback without showing unrelated issues.&#x20;
 
-**b.     Cross-File Analysis Controls in UI at Project and Admin Levels**
+**b.     Cross-File Analysis Controls in UI**
 
-Added UI controls to enable or disable Cross-File Analysis from both project-level and admin-level settings.
+Added UI controls to enable or disable Cross-File Analysis from project-level settings.
 
 **Project-Level Control**
 

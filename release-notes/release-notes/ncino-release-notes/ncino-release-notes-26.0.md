@@ -14,6 +14,8 @@ The pagination now properly refreshes and displays the most up-to-date job data 
 
 The removed org is now correctly cleared and no longer reappears after navigating back and forth during CI Job creation.
 
+***
+
 ## nCino - Release 26.2.7
 
 **Release Date:** **17 May 2026**

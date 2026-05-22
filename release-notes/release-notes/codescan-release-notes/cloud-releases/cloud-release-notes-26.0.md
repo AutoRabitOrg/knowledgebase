@@ -12,6 +12,49 @@ Key points:
 3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
+
+
+***
+
+## CodeScan Release Notes 26.0.10
+
+**Release Date: 17 May 2026**
+
+### Summary
+
+CodeScan 26.0.10 is comprised of the following 2 components:
+
+·       2 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Fixes
+
+#### 1.     Resolved “No Scan Access for Project” Errors Caused by Expired Salesforce Tokens
+
+Fixed an issue where users could encounter a “No scan access for project”/ “expired access/refresh token” error when running scans against Salesforce-connected projects after Salesforce authentication token expiration.
+
+The issue affected environments using Salesforce connected app integrations where expired or invalid access/refresh tokens prevented scan authorization and project access validation.
+
+**Outcome**
+
+* Improved handling of expired Salesforce authentication tokens
+* Restored scan access reliability for affected projects
+* Reduced scan interruptions caused by token validation failures
+* Improved compatibility with Salesforce authentication changes introduced in May 2026
+
+#### 2.     Resolved Intermittent Delays in PR-Scoped EZ-Commit Analysis Jobs
+
+Fixed an issue where PR-scoped EZ-Commit analysis jobs could intermittently remain in the preparing state for an extended period during the “Compute new coverage” step.
+
+In affected scenarios, jobs scanning only a small number of Salesforce metadata files could take significantly longer than expected to complete, eventually resulting in a Start Job Timeout from AutoRABIT ARM™.
+
+**Outcome**
+
+PR-scoped EZ-Commit analysis jobs now complete the new coverage computation step reliably and within the expected processing time.
+
+***
+
 ## CodeScan Release 26.0.9
 
 **Release Date: 10 May 2026**

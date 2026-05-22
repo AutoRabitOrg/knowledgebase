@@ -2,6 +2,30 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.2.8
+
+**Release Date:** **24 May 2026**
+
+#### CI Job History Pagination Shows Stale Data on Back Navigation <a href="#ci-job-history-pagination-shows-stale-data-on-back-navigation" id="ci-job-history-pagination-shows-stale-data-on-back-navigation"></a>
+
+The pagination now properly refreshes and displays the most up-to-date job data when navigating back and forth, including any newly completed jobs.
+
+#### Removed Salesforce Org Persists in Post-Deployment Activities After Navigation <a href="#removed-salesforce-org-persists-in-post-deployment-activities-after-navigation" id="removed-salesforce-org-persists-in-post-deployment-activities-after-navigation"></a>
+
+The removed org is now correctly cleared and no longer reappears after navigating back and forth during CI Job creation.
+
+## nCino - Release 26.2.7
+
+**Release Date:** **17 May 2026**
+
+#### CI Job History Pagination Shows Stale Data on Back Navigation <a href="#ci-job-history-pagination-shows-stale-data-on-back-navigation" id="ci-job-history-pagination-shows-stale-data-on-back-navigation"></a>
+
+Code refactoring for the Feature Commit History module in the New UI, improving maintainability and code quality.
+
+#### Create Feature: New UI Code Refactoring
+
+Code refactoring for the Create Feature module in the New UI, improving maintainability and code quality.
+
 ## nCino - Release 26.2.6
 
 **Release Date:** **10 May 2026**

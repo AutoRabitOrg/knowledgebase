@@ -110,6 +110,16 @@ Added support for the `AiAuthoringBundle` metadata type across ARM metadata oper
 
 ***
 
+## DataLoader Pro Release Notes – Version **26.2.7** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+
+**Release Date:** **17 May 2026**
+
+#### **ZIP File Attachments Not Migrating via Data Loader Pro**
+
+Resolved an issue where ZIP file attachments associated with HTML Report object records were not being migrated from Production to sandbox environments using Data Loader Pro. PDF and other attachment types migrated correctly, but ZIP files were silently skipped. All attachment types now migrate as expected.
+
+***
+
 ## ARM **Release Notes 26.2.6.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
 
 **Release Date: 13 May 2026**

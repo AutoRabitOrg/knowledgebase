@@ -12,7 +12,317 @@ Key points:
 3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
+## CodeScan Release Notes 26.0.11
 
+**Release Date: 24 May 2026**
+
+### Summary
+
+CodeScan 26.0.11 is comprised of the following 8 components:
+
+* 1 Application Enhancements
+* 1 New Rule
+* 6 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Application Enhancements
+
+**1.    Severity Selection for Custom Security Hotspots**
+
+Added support for assigning severity levels when creating or editing custom Security Hotspot rules.
+
+Previously, severity levels were available for standard Security Hotspot rules, but custom Security Hotspots did not provide a severity selection option. This created inconsistency in rule configuration and made it harder for users to prioritize custom hotspot findings.
+
+**Behavior**
+
+* Severity selection is now available during custom Security Hotspot rule creation.
+* Severity can also be configured when editing custom Security Hotspots.
+* Supported severity values include:
+  * Blocker
+  * Critical
+  * Major
+  * Minor
+  * Info
+* Custom Security Hotspots now follow the same severity flow as standard rules.
+* Severity filters on the Rules page correctly return matching custom Security Hotspots.
+
+**Outcome**
+
+* Provides consistent severity configuration across standard and custom Security Hotspot rules.
+* Improves risk prioritization for custom security findings.
+* Enhances filtering accuracy and rule management usability.
+
+{% hint style="info" %}
+NOTE:  Severity selection wasn’t available for custom Security Hotspots. To ensure consistency across standard and custom rules, we expanded functionality, and users can now select and assign a severity level during the creation and editing of custom Security Hotspots.
+{% endhint %}
+
+### New Rules
+
+**1.    Avoid Plain Text Values in External Credential Parameters**
+
+Added a new Salesforce Metadata security rule to detect plain text values in External Credential parameter values.
+
+**Rule Details**
+
+* Rule key: _sfmeta:ExternalCredentialPlainTextValue_
+* Type: Vulnerability
+* Default Severity: Critical
+* CWE: CWE-798
+* Remediation effort: 5 minutes
+
+**Behavior**
+
+The rule raises a violation when an External Credential metadata file contains a static plain text value in a _parameterValue_ field.
+
+The rule does not raise a violation when:
+
+* parameterValue uses a dynamic merge field reference.
+* The sibling parameterName is Content-Type.
+* The file does not contain any parameterValue fields.
+
+**Message**
+
+_Plain text value detected in parameterValue field. Use a dynamic merge field reference instead to avoid exposing sensitive credentials._
+
+**Outcome**
+
+Helps prevent sensitive credentials such as API keys, client IDs, and authentication tokens from being exposed in source control.&#x20;
+
+### Fixes
+
+**1.     Improved Handling for Invalid Base Branches in Comparison and Pull Request Analysis**
+
+Fixed an issue where analyses configured with branch comparison or pull request parameters could create invalid comparison branches and display unclear errors when the specified base branch did not exist.
+
+**Affected Parameters**
+
+Comparison Analysis:
+
+* sonar.comparison.base
+* sonar.comparison.branch
+
+Pull Request Analysis:
+
+* sonar.pullRequest.branch
+* sonar.pullRequest.key
+* sonar.pullRequest.base
+
+Previously, when an invalid or nonexisting base branch was provided:
+
+* Analysis did not fail immediately.
+* A 404 error appeared later in analysis logs.
+* Invalid comparison or PR branches could still appear in the dashboard.
+* Users received limited visibility into the root cause.
+
+**Behavior**
+
+* Analysis now validates base branch existence before proceeding.
+* Comparison and PR branches are no longer created when the base branch is invalid or missing.
+* Analysis fails gracefully with clear and verbose error messaging in logs.
+* Failure occurs earlier in the analysis lifecycle whenever possible.&#x20;
+
+**Validation**
+
+Validated across multiple integrations and analysis entry points, including:
+
+* Sonar Scanner
+* SFDX Scanner
+* GitHub Analysis
+* GitLab Analysis
+* Salesforce Integration
+* Bitbucket
+* GitHub Actions
+* Copado Integration
+* Azure DevOps Pipelines
+* IDE Plugin workflows
+
+**Outcome**
+
+* Prevents invalid branch artifacts from being created in the dashboard.
+* Improves troubleshooting with clearer failure visibility.
+* Provides more reliable branch comparison and pull request analysis behavior across integrations.&#x20;
+
+**2.     Improved Validation for Comparison Branch Analysis Without Main Branch Baseline**
+
+Fixed an issue in Salesforce Integration where comparison branch analysis could complete successfully even when the configured main branch had not been analyzed.
+
+Previously, users could create and analyze comparison branches without a valid analyzed baseline branch. This resulted in inconsistent behavior where:
+
+* The analysis appeared as successfully completed.
+* Quality Gate and metric calculations could not be computed.
+* The UI displayed the error:
+  * _metric.level.NOT\_COMPUTED_
+
+**Behavior**
+
+* Comparison branch creation and analysis validation was improved to ensure a valid analyzed main branch exists before processing.
+* Users are now prevented from creating comparison branches when the main branch analysis is incomplete or interrupted.
+* Improved user-facing messaging was added for incomplete analysis states.
+* Instead of displaying technical metric computation errors, the UI now shows a clearer status message:
+  * _Branch is not yet analyzed_
+
+**Validation**
+
+Validated through Salesforce Integration workflows using scenarios where:
+
+* Main branch analysis was not executed.
+* Main branch analysis was interrupted.
+* Comparison branch analysis was interrupted.
+
+Confirmed that:
+
+* Comparison branch analysis no longer proceeds without a valid baseline.
+* Invalid comparison states are blocked correctly.
+* User-facing messages are displayed consistently without metric computation errors.
+
+**Outcome**
+
+* Prevents inconsistent comparison analysis states.
+* Improves reliability of branch comparison workflows.
+* Provides clearer and more user-friendly error handling for missing baseline scenarios.
+
+**3.     Support for Special Characters in Salesforce Organization Names**
+
+Fixed an issue where project creation could fail when Salesforce Organization Names contained special characters such as registered trademark (®) or trademark (™) symbols.
+
+Previously, organizations using special characters in the Salesforce Organization Name could encounter the following error during project creation:
+
+_Error attempting to apply attribute converter_
+
+This could result in partially created projects with missing associated data such as issues, code, and analysis information.
+
+**Behavior**
+
+* Special characters in Salesforce Organization Names are now properly supported.
+* UTF-8 safe handling was added for organization name processing and database conversion logic.
+* Attribute conversion handling was improved to prevent failures during project creation.
+* Input validation and sanitization were enhanced while preserving expected functionality.
+
+**Validation**
+
+Validated using Salesforce organizations containing special characters including:
+
+* ®
+* ™
+* Other UTF-8 supported characters
+
+Verified successful project creation without attribute converter failures or data inconsistencies.
+
+**Outcome**
+
+* Prevents project creation failures caused by special characters in organization names.
+* Eliminates incomplete project records and reduces manual database cleanup.
+* Improves onboarding reliability and overall customer experience.
+
+**4.     Resolved Salesforce Connection Deletion Issue with Special Characters in Connection Names**
+
+Fixed an issue where creating a Salesforce connection using special characters in the connection name could trigger attribute converter errors and unexpectedly remove existing Salesforce connections from the application.
+
+Previously, when users created a Salesforce connection with characters such as ® in the connection name:
+
+* The create request failed with an attribute converter error.
+* Existing Salesforce connections could disappear from the UI.
+* The new connection was not created correctly.
+
+**Behavior**
+
+* Salesforce connection names now properly support special characters and UTF-8 input handling.
+* Existing Salesforce connections remain unaffected during new connection creation.
+* Attribute converter handling was improved to prevent unintended data impact.
+* Validation and persistence behavior were stabilized for connection management workflows.
+
+**Validation**
+
+Validated by creating Salesforce connections using special characters including:
+
+* ®
+* ™
+* Other supported UTF-8 characters
+
+Confirmed that:
+
+* New connections are created successfully.
+* Existing Salesforce connections remain intact.
+* No attribute converter errors occur in API or UI flows.
+
+**Outcome**
+
+* Prevents accidental removal of existing Salesforce connections.
+* Improves reliability of Salesforce connection management.
+* Enhances support for organizations using special characters in naming conventions.
+
+**5.     Resolved Duplicate Email Notifications and Organization Deletion Exceptions**
+
+Fixed issues related to organization deletion workflows where duplicate email notifications and unexpected exceptions could occur during archive cleanup processing.
+
+Previously, under specific conditions involving missing Quality Gate associations:
+
+* Organizations could become inaccessible from the UI while still remaining in the database.
+* Both success and exception notification emails could be triggered for the same deletion event.
+* Instance Admin users were unable to fully remove affected organizations through the UI or API.
+* Exceptions could occur during cleanup processing when Quality Gate data was missing.
+
+The issue was identified in the Delete Archive Job flow, where:
+
+* Exception emails were incorrectly triggered for all organizations instead of only failed deletions.
+* Missing presence validation for Quality Gate data caused runtime exceptions during processing.
+
+**Behavior**
+
+* Email notifications are now triggered correctly based on actual deletion outcomes.
+* Exception notifications are sent only for failed deletion scenarios.
+* Additional validation checks were added before accessing Quality Gate data.
+* Organization cleanup handling was improved to prevent inconsistent deletion states.
+
+**Validation**
+
+Validated organization deletion workflows under scenarios involving missing or invalid Quality Gate associations.
+
+Confirmed that:
+
+* Organizations are removed cleanly without residual inaccessible records.
+* Duplicate email notifications no longer occur.
+* No exceptions are triggered during archive cleanup processing.
+* Instance Admin deletion workflows behave correctly.
+
+**Outcome**
+
+* Improves reliability of organization deletion workflows.
+* Prevents inconsistent organization states between UI and database records.
+* Reduces unnecessary exception notifications and administrative overhead.
+
+**6.     Resolved Stack Overflow Issue in Field Level Security Rule Analysis**
+
+Fixed an issue where project analysis could become stuck or fail due to a stack overflow error in the Field Level Security rule during Apex analysis.
+
+Previously, specific Apex files containing deeply nested or recursive method call patterns could trigger repeated recursive evaluation within the _FieldLevelSecurityRule_, resulting in:
+
+* Stack overflow exceptions during analysis.
+* Excessively long analysis execution times.
+* Analysis workflows appearing stuck or unresponsive.
+
+**Behavior**
+
+* Improved handling of recursive and nested method traversal within the Field Level Security rule.
+* Added safeguards to prevent stack overflow conditions during rule evaluation.
+* Analysis now completes successfully for previously failing customer scenarios.
+
+**Validation**
+
+Validated using customer-reported files and additional large project analysis scenarios.
+
+Confirmed that:
+
+* Stack overflow errors no longer occur during analysis.
+* Analysis workflows complete successfully without interruption.
+* Existing Field Level Security rule detection behavior continues to function correctly.
+
+**Outcome**
+
+* Improves stability and reliability of Apex security analysis.
+* Prevents analysis failures caused by recursive execution paths.
+* Reduces risk of stalled or incomplete project analysis workflows.
 
 ***
 
@@ -24,7 +334,7 @@ Key points:
 
 CodeScan 26.0.10 is comprised of the following 2 components:
 
-·       2 Fixes
+* 2 Fixes
 
 Component details are listed in their corresponding sections within this document.
 

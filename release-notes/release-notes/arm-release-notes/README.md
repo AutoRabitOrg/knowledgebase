@@ -1,12 +1,10 @@
 # ARM Release Notes
 
-### **Release Notes 26.2.8** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.8** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
-**Release Date:** May 24, 2026
+**Release Date: 24 May 2026**
 
-***
-
-**Improvements to Log Viewer Experience - New UI**
+#### **Improvements to Log Viewer Experience - New UI** <a href="#improvements-to-log-viewer-experience" id="improvements-to-log-viewer-experience"></a>
 
 We’ve enhanced the log viewing experience across multiple ARM modules to improve usability and performance.
 

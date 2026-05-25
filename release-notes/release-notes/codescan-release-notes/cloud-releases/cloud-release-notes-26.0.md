@@ -18,11 +18,11 @@ Key points:
 
 ### Summary
 
-CodeScan 26.0.11 is comprised of the following 8 components:
+CodeScan 26.0.11 is comprised of the following 10 components:
 
 * 1 Application Enhancements
 * 1 New Rule
-* 7 Fixes
+* 8 Fixes
 
 Component details are listed in their corresponding sections within this document.
 
@@ -91,7 +91,7 @@ Helps prevent sensitive credentials such as API keys, client IDs, and authentica
 
 ### Fixes
 
-**1.     Improved Handling for Invalid Base Branches in Comparison and Pull Request Analysis**
+1. **Improved Handling for Invalid Base Branches in Comparison and Pull Request Analysis**
 
 Fixed an issue where analyses configured with branch comparison or pull request parameters could create invalid comparison branches and display unclear errors when the specified base branch did not exist.
 
@@ -143,7 +143,7 @@ Validated across multiple integrations and analysis entry points, including:
 * Improves troubleshooting with clearer failure visibility.
 * Provides more reliable branch comparison and pull request analysis behavior across integrations.&#x20;
 
-**2.     Improved Validation for Comparison Branch Analysis Without Main Branch Baseline**
+2. **Improved Validation for Comparison Branch Analysis Without Main Branch Baseline**
 
 Fixed an issue in Salesforce Integration where comparison branch analysis could complete successfully even when the configured main branch had not been analyzed.
 
@@ -182,7 +182,7 @@ Confirmed that:
 * Improves reliability of branch comparison workflows.
 * Provides clearer and more user-friendly error handling for missing baseline scenarios.
 
-**3.     Support for Special Characters in Salesforce Organization Names**
+3. &#x20;  **Support for Special Characters in Salesforce Organization Names**
 
 Fixed an issue where project creation could fail when Salesforce Organization Names contained special characters such as registered trademark (®) or trademark (™) symbols.
 
@@ -215,7 +215,7 @@ Verified successful project creation without attribute converter failures or dat
 * Eliminates incomplete project records and reduces manual database cleanup.
 * Improves onboarding reliability and overall customer experience.
 
-**4.     Resolved Salesforce Connection Deletion Issue with Special Characters in Connection Names**
+4. &#x20; **Resolved Salesforce Connection Deletion Issue with Special Characters in Connection Names**
 
 Fixed an issue where creating a Salesforce connection using special characters in the connection name could trigger attribute converter errors and unexpectedly remove existing Salesforce connections from the application.
 
@@ -252,7 +252,7 @@ Confirmed that:
 * Improves reliability of Salesforce connection management.
 * Enhances support for organizations using special characters in naming conventions.
 
-**5.     Resolved Duplicate Email Notifications and Organization Deletion Exceptions**
+5. &#x20;    **Resolved Duplicate Email Notifications and Organization Deletion Exceptions**
 
 Fixed issues related to organization deletion workflows where duplicate email notifications and unexpected exceptions could occur during archive cleanup processing.
 
@@ -292,7 +292,7 @@ Confirmed that:
 * Prevents inconsistent organization states between UI and database records.
 * Reduces unnecessary exception notifications and administrative overhead.
 
-**6.     Resolved Stack Overflow Issue in Field Level Security Rule Analysis**
+6. &#x20;**Resolved Stack Overflow Issue in Field Level Security Rule Analysis**
 
 Fixed an issue where project analysis could become stuck or fail due to a stack overflow error in the Field Level Security rule during Apex analysis.
 
@@ -324,7 +324,7 @@ Confirmed that:
 * Prevents analysis failures caused by recursive execution paths.
 * Reduces risk of stalled or incomplete project analysis workflows.
 
-**7.Fix for Incorrect "No Scan Access for Project" Error During Analysis Execution**
+7. **Fix for Incorrect "No Scan Access for Project" Error During Analysis Execution**
 
 Fixed an issue where analysis jobs were failing to proceed and displaying the error message: **"No scan access for project"**.\
 The access validation logic for analysis jobs was updated to correctly verify user scan permissions before initiating the scan process.
@@ -343,6 +343,27 @@ When users attempted to run an analysis on certain projects, the scan would not 
 **Outcome**
 
 Users with valid project scan access can now successfully start and complete analysis jobs without encountering the erroneous **"No scan access for project"** failure. The fix improves reliability and accuracy of permission validation during scan execution.
+
+8. Resolved “No Scan Access for Project” Error During Analysis Execution
+
+Fixed an issue where project analysis could fail to start and remain stuck while displaying the error:
+
+_No scan access for project_
+
+**Previous Behavior**
+
+When users attempted to run an analysis on certain projects, the scan would not progress further and would fail with a "No scan access for project" error, even in scenarios with valid access.
+
+**Validation**
+
+* Verified analysis execution for users with valid scan permissions.
+* Confirmed that the access validation logic correctly handles project-level scan authorization.
+* Tested scenarios for both authorized and unauthorized users to ensure expected behavior.
+* Ensured analysis jobs now proceed successfully when appropriate access is available.
+
+**Outcome**
+
+Users with valid project scan access can now successfully start and complete analysis jobs without encountering "No scan access for project" error. The fix improves reliability and accuracy of permission validation during scan execution.
 
 ***
 

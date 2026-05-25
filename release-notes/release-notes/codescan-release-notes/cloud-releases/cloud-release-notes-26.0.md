@@ -22,7 +22,7 @@ CodeScan 26.0.11 is comprised of the following 8 components:
 
 * 1 Application Enhancements
 * 1 New Rule
-* 6 Fixes
+* 7 Fixes
 
 Component details are listed in their corresponding sections within this document.
 
@@ -323,6 +323,26 @@ Confirmed that:
 * Improves stability and reliability of Apex security analysis.
 * Prevents analysis failures caused by recursive execution paths.
 * Reduces risk of stalled or incomplete project analysis workflows.
+
+**7.Fix for Incorrect "No Scan Access for Project" Error During Analysis Execution**
+
+Fixed an issue where analysis jobs were failing to proceed and displaying the error message: **"No scan access for project"**.\
+The access validation logic for analysis jobs was updated to correctly verify user scan permissions before initiating the scan process.
+
+**Previous Behavior**
+
+When users attempted to run an analysis on certain projects, the scan would not progress further and would fail with a **"No scan access for project"** error, even in scenarios where valid access should have been permitted.
+
+**Validation**
+
+* Verified analysis execution for users with valid scan permissions.
+* Confirmed that the access validation logic correctly handles project-level scan authorization.
+* Tested scenarios for both authorized and unauthorized users to ensure expected behavior.
+* Ensured analysis jobs now proceed successfully when appropriate access is available.
+
+**Outcome**
+
+Users with valid project scan access can now successfully start and complete analysis jobs without encountering the erroneous **"No scan access for project"** failure. The fix improves reliability and accuracy of permission validation during scan execution.
 
 ***
 

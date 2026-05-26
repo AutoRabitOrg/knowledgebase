@@ -1,5 +1,32 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.2.8.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date: 27 May 2026**
+
+***
+
+### Conflict File Truncation Fix <a href="#conflict-file-truncation-fix" id="conflict-file-truncation-fix"></a>
+
+Fixed an issue in EZ-Merge where conflicted files could become truncated during conflict resolution, causing merge failures for certain profile files. The file copy handling has been improved to ensure complete file content is preserved during conflict processing.
+
+**Impacted Areas:**
+
+* EZ-Merge
+
+### Multiple Branch Mapping Retention Fix <a href="#multiple-branch-mapping-retention-fix" id="multiple-branch-mapping-retention-fix"></a>
+
+Fixed an issue in My Version Control Mappings where selecting and saving a new branch caused previously mapped branches to become unselected. The credential update logic has been improved to retain mappings for existing branches while updating credentials only for the selected branch.
+
+**Impacted Areas:**
+
+* My Version Control Mappings
+* Branch Creation
+* Branch Registration
+* Credential Mapping Workflows
+
+***
+
 ## ARM **Release Notes 26.2.8** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 24 May 2026**

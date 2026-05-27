@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Deprecation of Node 20 on GitHub Actions Runners
 
 {% hint style="info" %}

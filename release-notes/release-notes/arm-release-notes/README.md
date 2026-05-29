@@ -19,7 +19,11 @@ Review and update your Bitbucket credentials to use Token authentication and pro
 
 For complete details, configuration steps, and migration guidance, please refer to the documentation link below:
 
-**Documentation:** \[Link to be provided]&#x20;
+**Documentation:**
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/registration/version-control-repository/bitbucket/configuring-bitbucket-token-authentication-and-email-support" %}
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/bitbucket/configuring-bitbucket-token-authentication-and-email-support" %}
 
 ### Pin/Favorite CI Jobs for Quick Access - New UI <a href="#pin-favorite-ci-jobs-for-quick-access-new-ui" id="pin-favorite-ci-jobs-for-quick-access-new-ui"></a>
 

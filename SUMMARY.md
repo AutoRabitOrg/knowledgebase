@@ -1075,7 +1075,7 @@
       * [Adding Projects to CodeScan](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/README.md)
         * [Add a project to CodeScan from Salesforce](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-salesforce.md)
         * [Add a project to CodeScan from GitHub](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github.md)
-        * [Add a Project to CodeScan from GitHub Enterprise Cloud (with GitHub App)](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github-enterprise-cloud-with-github-app.md)
+        * [Add a Project to CodeScan from GitHub Enterprise](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github-enterprise.md)
         * [Add a Project to CodeScan from Bitbucket](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-bitbucket.md)
         * [Add a Project to CodeScan from Git](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-git.md)
         * [Add a project to CodeScan from GitLab](product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/adding-a-project-to-codescan-from-gitlab.md)

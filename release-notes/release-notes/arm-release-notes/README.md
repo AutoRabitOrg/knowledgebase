@@ -2,13 +2,11 @@
 
 ## ARM **Release Notes 26.2.9** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
-**Release Date:31 May 2026**
-
-***
+**Release Date: 31 May 2026**
 
 #### Bitbucket Token Authentication & Email Support Update <a href="#bitbucket-token-authentication-and-email-support-update" id="bitbucket-token-authentication-and-email-support-update"></a>
 
-**Effective Date:** June 9, 2026
+**Effective Date: 9 June 2026**
 
 To align with Bitbucket's deprecation of App Passwords, ARM now supports Token-based authentication for Bitbucket integrations and introduces an optional **Email Address** field for Bitbucket credentials. The email address is used for Bitbucket API operations such as Pull Request creation, while Git operations (Clone, Fetch, Push) continue to work using Token or SSH authentication.
 
@@ -62,8 +60,6 @@ Fixed an issue where SonarQube violations were not displayed in the ARM Analysis
 ## ARM **Release Notes 26.2.8.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 27 May 2026**
-
-***
 
 ### Conflict File Truncation Fix <a href="#conflict-file-truncation-fix" id="conflict-file-truncation-fix"></a>
 

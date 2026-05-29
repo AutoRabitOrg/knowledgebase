@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Add a Project to CodeScan from GitHub Enterprise
 
 CodeScan supports the GitHub App authentication flow across all supported GitHub editions. This article covers the supported editions, the end-to-end authentication flow, and known limitations.
@@ -18,7 +14,7 @@ CodeScan supports the GitHub App authentication flow across all supported GitHub
 
 ## GitHub Enterprise Cloud Flow <a href="#github-free-pro-team-and-github-enterprise-cloud-flow" id="github-free-pro-team-and-github-enterprise-cloud-flow"></a>
 
-### First-Time Authentication Flow <a href="#first-time-authentication-flow" id="first-time-authentication-flow"></a>
+### Step-by-step guide <a href="#first-time-authentication-flow" id="first-time-authentication-flow"></a>
 
 When attaching a GitHub repository to an analysis project for the first time:
 
@@ -66,8 +62,6 @@ If the user attaching the analysis is an organization member and does not have p
 Approval is required only once per organization. Once the CodeScan GitHub App is installed on an organization, subsequent users from that organization will not need any further approval; authentication is seamless for them.
 {% endhint %}
 
-
-
 #### Pending Approval / Rejected Scenarios <a href="#pending-approval-rejected-scenarios" id="pending-approval-rejected-scenarios"></a>
 
 If a user retries the GitHub authentication flow while their installation request is still awaiting approval (or has been rejected), the following message will be displayed:
@@ -76,7 +70,7 @@ If a user retries the GitHub authentication flow while their installation reques
 
 This means that your installation request has already been submitted and is waiting for your organization's owner approval. Because you are a member of the organization (not an owner), the request was sent.&#x20;
 
-To follow up, you can connect with the owner of your organization and ask them to approve it under **GitHub → Organization Settings → GitHub Apps → Pending requests**. Once approved, return to CodeScan and click **Add Analysis Project** again.
+To follow up, you can connect with the owner of your organization and ask them to approve it under **GitHub → Organization Settings → GitHub Apps → Pending requests**. Once approved, return to CodeScan and click **Add Analysis Project** again. You should be able to connect project successfully now.
 
 This message appears when:
 
@@ -88,21 +82,22 @@ This message appears when:
 
 For GitHub Enterprise Server (GHES), a GitHub App should be created on the GHES instance and connected to CodeScan via an ALM Connections.
 
-#### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+### Step-by-Step guide <a href="#setup-process" id="setup-process"></a>
 
-Before attaching a project, please:
+Before attaching a project in CodeScan, you should:
 
 * Create a dedicated GitHub App on your GHES instance.
-* Configure the GitHub App with the required permissions, events, and callback URL (see below).
+* Configure the GitHub App with the required permissions, events, and callback URL&#x20;
 
-#### Setup Process <a href="#setup-process" id="setup-process"></a>
+1. **Creating the GitHub App on GHES.**
 
-1. **Creating the GitHub App on GHES.**&#x20;
+On your GHES instance, navigate to Settings → Developer settings → GitHub Apps → New GitHub App, and create the App with the permissions listed here: [GitHub Authentication using GitHub Apps (CodeScan) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/github-authentication-using-oauth-codescan)
 
-On your GHES instance, navigate to Settings → Developer settings → GitHub Apps → New GitHub App, and create the App with the permissions listed in the documentation: [GitHub Authentication using GitHub Apps (CodeScan) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/github-authentication-using-oauth-codescan)
+2. **Add the ALM Connection in CodeScan.**&#x20;
 
-2. **Add the ALM Connection in CodeScan.** Navigate to CodeScan → Administration → ALM Integrations → GitHub Enterprise Server → Add Connection, and paste in the App ID, Client ID, Client Secret from the GitHub App you created in Step 1, along with your GHES base URL.
-3. **Authenticate and analyze repositories.**&#x20;
+Navigate to CodeScan → Administration → ALM Integrations → GitHub Enterprise Server → Add Connection, and paste in the App ID, Client ID, Client Secret from the GitHub App you created in Step 1, along with your GHES base URL.
+
+2. **Authenticate and analyze repositories.**&#x20;
 
 Users in your GHES organizations can now navigate to **Add Analysis Project** → **GitHub** and follow the same authentication flow described for GitHub Enterprise Cloud above.
 
@@ -123,39 +118,3 @@ If your GitHub organization has enabled **Allow repository admins to install Git
 However, due to a GitHub limitation, repositories outside their administration are not visible during install and remain inaccessible until the Organization Owner explicitly grants access.
 
 <figure><img src="../../../../../.gitbook/assets/image (2525).png" alt="" width="375"><figcaption></figcaption></figure>
-
-#### How to Install the CodeScan GitHub App on a different GitHub Org or Personal Account <a href="#how-to-install-the-codescan-github-app-on-another-github-org-or-personal-account" id="how-to-install-the-codescan-github-app-on-another-github-org-or-personal-account"></a>
-
-If you need to integrate CodeScan to a different GitHub organization or personal account, you cannot do it from the CodeScan UI again. Instead, follow the steps in the section below ("How to Install the CodeScan GitHub App on Another GitHub Org or Personal Account") to install the app directly from GitHub using your install link.
-
-1. Step 1: Find Your Install Link
-
-Take your CodeScan URL → replace every dot (.) with a dash (-) → put it after [https://github.com/apps/](https://github.com/apps/)
-
-Examples:
-
-| **CodeScan URL**                                                     | **GitHub App Install Link**                                                                                  |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [app.codescan.io](http://app.codescan.io/)                           | [https://github.com/apps/app-codescan-io](https://github.com/apps/app-codescan-io)                           |
-| [app-eu.codescan.io](http://app-eu.codescan.io/)                     | [https://github.com/apps/app-eu-codescan-io](https://github.com/apps/app-eu-codescan-io)                     |
-| [bank-codescan.autorabit.com](http://penfed-codescan.autorabit.com/) | [https://github.com/apps/bank-codescan-autorabit-com](https://github.com/apps/penfed-codescan-autorabit-com) |
-
-2. Step 2: Open the Link
-3. Choose the org / account for Installation
-4. Step 3: Choose Repo Access
-
-* **All repositories (recommended) — covers future repos automatically.**
-* Only select repositories — you'll have to come back and add every new repo manually.
-
-Pick All repositories if you want new repos to be scanned by CodeScan without extra work.
-
-4. Step 4: Click Install
-
-* Owner: The app installs right away. In CodeScan, click Add Analysis Project to begin scanning.
-* Member (non-owner): GitHub will show that an installation request was submitted. See the steps below for approval.
-* Ask your organization owner to approve via the email notification or manually at GitHub Org → Settings → GitHub Apps → Pending requests → Approve (set access to All repositories if desired), then retry Add Analysis Project.
-
-5. Step 5: After Install — Verify
-
-Navigate to GitHub → Settings → GitHub Apps → CodeScan → Configure and confirm your repositories are listed.\
-Switch to All repositories to have CodeScan automatically include any new repositories you create later.

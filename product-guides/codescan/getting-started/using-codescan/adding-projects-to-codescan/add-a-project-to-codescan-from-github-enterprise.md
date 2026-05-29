@@ -4,7 +4,7 @@ CodeScan supports the GitHub App authentication flow across all supported GitHub
 
 ## Supported GitHub Editions <a href="#supported-github-editions" id="supported-github-editions"></a>
 
-<table data-header-hidden><thead><tr><th></th><th></th><th width="210.609375"></th><th></th></tr></thead><tbody><tr><td><strong>GitHub Edition</strong></td><td><strong>Should GitHub App be created manually?</strong></td><td><strong>Authentication Flow</strong></td><td><strong>Guide</strong></td></tr><tr><td><strong>GitHub.com (Free / Pro / Team)</strong></td><td>No</td><td>GitHub App authorization and installation are managed by CodeScan.</td><td><a href="https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github">Follow these steps</a></td></tr><tr><td><strong>GitHub.com (GitHub Enterprise Cloud) (GHEC)</strong></td><td>No</td><td>GitHub App authorization and installation are managed by CodeScan.</td><td><a href="https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github-enterprise">Follow these steps</a></td></tr><tr><td><strong>GitHub Enterprise Server (GHES) — Self-Hosted</strong></td><td>Yes</td><td>User should create and configure the GitHub App; GitHub App details to be added in ALM Connections by a CodeScan Admin.</td><td><a href="https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/enterprise-git-connections/github-authentication-using-oauth-codescan">Follow these steps</a></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th></th><th></th><th width="210.609375"></th><th></th></tr></thead><tbody><tr><td><strong>GitHub Edition</strong></td><td><strong>Should GitHub App be created manually?</strong></td><td><strong>Authentication Flow</strong></td><td><strong>Guide</strong></td></tr><tr><td><strong>GitHub.com (Free / Pro / Team)</strong></td><td>No</td><td>GitHub App authorization and installation are managed by CodeScan.</td><td><a href="https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github">Follow these steps</a></td></tr><tr><td><strong>GitHub.com (GitHub Enterprise Cloud) (GHEC)</strong></td><td>No</td><td>GitHub App authorization and installation are managed by CodeScan.</td><td><a href="https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/add-a-project-to-codescan-from-github-enterprise#github-free-pro-team-and-github-enterprise-cloud-flow">Follow these steps</a></td></tr><tr><td><strong>GitHub Enterprise Server (GHES) — Self-Hosted</strong></td><td>Yes</td><td>User should create and configure the GitHub App; GitHub App details to be added in ALM Connections by a CodeScan Admin.</td><td><a href="https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/enterprise-git-connections/github-authentication-using-oauth-codescan">Follow these steps</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 "GitHub Enterprise Cloud" is the SaaS offering hosted by GitHub.&#x20;
@@ -91,7 +91,9 @@ Before attaching a project in CodeScan, you should:
 
 1. **Creating the GitHub App on GHES.**
 
-On your GHES instance, navigate to Settings → Developer settings → GitHub Apps → New GitHub App, and create the App with the permissions listed here: [GitHub Authentication using GitHub Apps (CodeScan) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/github-authentication-using-oauth-codescan)
+On your GHES instance, navigate to Settings → Developer settings → GitHub Apps → New GitHub App, and create the App with the permissions listed here:
+
+&#x20;[GitHub Authentication using GitHub Apps (CodeScan) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections/github-authentication-using-oauth-codescan)
 
 2. **Add the ALM Connection in CodeScan.**&#x20;
 
@@ -101,9 +103,9 @@ Navigate to CodeScan → Administration → ALM Integrations → GitHub Enterpri
 
 Users in your GHES organizations can now navigate to **Add Analysis Project** → **GitHub** and follow the same authentication flow described for GitHub Enterprise Cloud above.
 
-### Known limitations <a href="#faq" id="faq"></a>
+## Known limitations <a href="#faq" id="faq"></a>
 
-#### Repository Visibility limitation <a href="#github-limitation-repository-visibility-for-repo-admins" id="github-limitation-repository-visibility-for-repo-admins"></a>
+### Repository Visibility limitation <a href="#github-limitation-repository-visibility-for-repo-admins" id="github-limitation-repository-visibility-for-repo-admins"></a>
 
 {% hint style="info" %}
 This section can be skipped unless your organization has enabled the 'Allow repository admins to install GitHub Apps' setting.

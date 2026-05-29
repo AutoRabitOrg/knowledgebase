@@ -1,5 +1,60 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.2.9** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date:31 May 2026**
+
+***
+
+#### Bitbucket Token Authentication & Email Support Update <a href="#bitbucket-token-authentication-and-email-support-update" id="bitbucket-token-authentication-and-email-support-update"></a>
+
+**Effective Date:** June 9, 2026
+
+To align with Bitbucket's deprecation of App Passwords, ARM now supports Token-based authentication for Bitbucket integrations and introduces an optional **Email Address** field for Bitbucket credentials. The email address is used for Bitbucket API operations such as Pull Request creation, while Git operations (Clone, Fetch, Push) continue to work using Token or SSH authentication.
+
+Existing App Password credentials will continue to function until Bitbucket's deprecation date. Customers are encouraged to migrate to Token-based authentication and update their Bitbucket credentials with an email address to ensure uninterrupted API functionality.
+
+**Action Required:**\
+Review and update your Bitbucket credentials to use Token authentication and provide an email address for API-based operations.
+
+For complete details, configuration steps, and migration guidance, please refer to the documentation link below:
+
+**Documentation:** \[Link to be provided]&#x20;
+
+### Pin/Favorite CI Jobs for Quick Access - New UI <a href="#pin-favorite-ci-jobs-for-quick-access-new-ui" id="pin-favorite-ci-jobs-for-quick-access-new-ui"></a>
+
+Introduced the ability to pin or favorite CI Jobs in the New UI, allowing users to quickly access frequently used jobs without searching through the full job list. Pinned jobs are displayed in a dedicated section at the top of the CI Job List and are maintained individually for each user.
+
+**Impacted Area:**
+
+* CI Jobs List (New UI)
+
+### SiteDotCom Metadata Retrieval Fix <a href="#sitedotcom-metadata-retrieval-fix" id="sitedotcom-metadata-retrieval-fix"></a>
+
+Fixed an issue where `SiteDotComSite` metadata changes were not included in Single Revision Deployments and Release Labels when only the `.site` file was modified. Metadata processing has been improved to correctly retain and retrieve associated SiteDotCom components, ensuring changes are accurately captured across deployment workflows.
+
+**Impacted Areas:**
+
+* Single Revision Deployment
+* Revision Range Deployment
+* Release Labels
+* Org-to-Org Deployments
+* CI Jobs (DX & Non-DX)
+* SiteDotCom Metadata Processing
+
+### SonarQube Analysis Result Synchronization Fix <a href="#sonarqube-analysis-result-synchronization-fix" id="sonarqube-analysis-result-synchronization-fix"></a>
+
+Fixed an issue where SonarQube violations were not displayed in the ARM Analysis Dashboard despite being available in SonarQube. The result retrieval process has been updated to correctly fetch and synchronize SonarQube scan results, ensuring accurate visibility of violations within ARM.
+
+**Impacted Areas:**
+
+* EZ-Commit
+* EZ-Merge
+* Static Code Analysis (SCA)
+* CI Jobs using SonarQube Integration
+
+***
+
 ## ARM **Release Notes 26.2.8.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 27 May 2026**

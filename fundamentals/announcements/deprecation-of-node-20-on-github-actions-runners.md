@@ -10,14 +10,15 @@ hidden: true
 
 #### **Overview**
 
-As part of GitHub's ongoing platform maintenance, the Node 20 runtime on GitHub Actions runners is being retired and replaced by Node 24. To ensure a seamless transition, CodeScan has released an updated scanner action that runs on Node 24, and we recommend updating your workflow to the latest action versions ahead of GitHub's deadlines.
+As part of GitHub's ongoing platform maintenance, the Node 20 runtime on GitHub Actions runners is being retired and replaced by Node 24. To ensure your scans continue running without interruption, CodeScan will release an updated scanner action (`@3.0`) on **July 31, 2026**. We recommend updating your workflow ahead of GitHub's key deadline: **September 16, 2026**, when Node 20 is removed entirely.
 
 Your scan functionality remains the same—this is a runtime update only.
 
 #### Key Dates
 
 1. **June 2, 2026:** Runners begin using Node 24 by default. Workflows on older action versions may start to fail.
-2. **September 16, 2026:** Node 20 is fully removed. Any workflows not yet updated will stop running.
+2. **July 31, 2026:** Updated CodeScan scanner action release.
+3. **September 16, 2026:** Node 20 is fully removed. Any workflows not yet updated will stop running.
 
 #### Actions Required
 
@@ -28,6 +29,15 @@ Update the following action versions in your `codescan.yml` workflow:
 3. `actions/cache` : `@v4` → `@v5`
 4. `github/codeql-action/upload-sarif` : `@v3` → `@v4`
 5. `actions/upload-artifact` : `@v3`/`@v4` → `@v6`
+
+#### Custom (Self-Hosted) Runners
+
+If you run your GitHub Actions workflows on custom (self-hosted) runners rather than GitHub-hosted ones, an additional step is required beyond updating your action versions:
+
+1. **Update your action versions** in `codescan.yml` (as listed in _Actions Required_ above).
+2. **Upgrade your runner** to a version that supports Node 24 (**v2.328.0 or later**), and confirm operating system and architecture compatibility:
+   * Node 24 is **not compatible with macOS 13.4 or earlier** — please upgrade the operating system on affected runners.
+   * **ARM32 is no longer supported** — these runners will stop working once Node 20 is removed.
 
 #### Runtime Configuration Options
 

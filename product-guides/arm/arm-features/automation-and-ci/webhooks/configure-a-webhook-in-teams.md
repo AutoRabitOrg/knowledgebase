@@ -1,3 +1,10 @@
+---
+description: >-
+  Important: Microsoft Teams Incoming Webhooks are deprecated. AutoRABIT is
+  developing support for the new Workflows app. Updated integration guidance
+  will be published in a future release.
+---
+
 # Configure a Webhook in Teams
 
 {% hint style="info" %}

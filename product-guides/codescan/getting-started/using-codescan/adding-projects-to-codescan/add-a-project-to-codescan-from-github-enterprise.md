@@ -99,7 +99,7 @@ On your GHES instance, navigate to Settings → Developer settings → GitHub Ap
 
 Navigate to CodeScan → Administration → ALM Integrations → GitHub Enterprise Server → Add Connection, and paste in the App ID, Client ID, Client Secret from the GitHub App you created in Step 1, along with your GHES base URL.
 
-2. **Authenticate and analyze repositories.**&#x20;
+3. **Authenticate and analyze repositories.**&#x20;
 
 Users in your GHES organizations can now navigate to **Add Analysis Project** → **GitHub** and follow the same authentication flow described for GitHub Enterprise Cloud above.
 

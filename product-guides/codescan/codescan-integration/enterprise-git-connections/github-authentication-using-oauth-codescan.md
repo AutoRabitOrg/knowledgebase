@@ -16,7 +16,7 @@ Connecting AutoRABIT (CodeScan) to GitHub Enterprise requires a secure handshake
 
 1. Log in to your GitHub Enterprise Server with an admin account.
 2. To create a GitHub App, copy the URL below.  \
-   `https://YOUR_GHES_HOSTNAME/settings/apps/new?name=codescan-enterprise-app&description=GitHub App for CodeScan integration&url=https://autorabit.com&callback_urls[]=https://YOUR_PUBLIC_BASE/_codescan/oauth2/authorize&request_oauth_on_install=true&public=true&contents=read&metadata=read&repository_hooks=write&setup_on_update=true&webhook_active=false`
+   [`https://YOUR_GHES_HOSTNAME/settings/apps/new?name=codescan-enterprise-app&description=GitHub%20App%20for%20CodeScan%20integration&url=https://autorabit.com&callback_urls[]=https://YOUR_PUBLIC_BASE/_codescan/oauth2/authorize&request_oauth_on_install=true&public=true&contents=read&metadata=read&statuses=write&pull_requests=read&repository_hooks=write&setup_on_update=true&webhook_active=false`](https://your_ghes_hostname/settings/apps/new?name=codescan-enterprise-app\&description=GitHub%20App%20for%20CodeScan%20integration\&url=https://autorabit.com\&callback_urls\[]=https://YOUR_PUBLIC_BASE/_codescan/oauth2/authorize\&request_oauth_on_install=true\&public=true\&contents=read\&metadata=read\&statuses=write\&pull_requests=read\&repository_hooks=write\&setup_on_update=true\&webhook_active=false)
 3.  Edit the URL by replacing the following placeholders:
 
     * `YOUR_GHES_HOSTNAME` → Your GitHub Enterprise Server URL\
@@ -28,6 +28,6 @@ Connecting AutoRABIT (CodeScan) to GitHub Enterprise requires a secure handshake
 4. Paste the URL into your browser.
 5.  Keep the app public by enabling **Any Account.**<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2489).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2489).png" alt=""><figcaption></figcaption></figure>
 6. Click **Create GitHub App**
 7. After creation, copy the App ID, Client ID and Client Secret, and use our [ALM Configuration Article](configuring-and-managing-alm-integrations.md) to complete your setup.

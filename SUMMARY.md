@@ -23,6 +23,7 @@
   * [Salesforce’s February 5, 2026 DigiCert G2 certificate change – No Impact to AutoRABIT Services](fundamentals/announcements/salesforces-february-5-2026-digicert-g2-certificate-change-no-impact-to-autorabit-services.md)
   * [Salesforce OAuth External Client App (ECA) Transition](fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition.md)
   * [Salesforce Summer ’27 Update: Retirement of SOAP API login() Authentication](fundamentals/announcements/salesforce-summer-27-update-retirement-of-soap-api-login-authentication.md)
+  * [Bitbucket App Password Deprecation – Action Required Before June 9, 2026](fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026.md)
 
 ## Release Notes
 

@@ -4,6 +4,36 @@
 
 ## Vault Release Notes 26.1.6
 
+**Release Date: 03 Jun 2026**
+
+**Export Vault User List with Access & Login Details**
+
+Vault Admins can now export the complete list of users along with key access and activity details. This enables faster user access reviews, simplifies compliance and audit reporting, and reduces dependency on support for user access reports.
+
+**Vault Logging Out Immediately After Login**
+
+Fixed an issue where Vault was logging users out immediately after a successful login, preventing access to the application entirely.
+
+**Email Messages & Campaign Members Failing During Replication**
+
+Resolved replication failures for Email Messages and Campaign Members. Email Messages and Campaign Members are failing with errors, even though the associated Leads and Contacts were successfully created in the target org. Cross-reference ID resolution during replication has been corrected.
+
+**Corrupted Log Files for Failed Records**
+
+Fixed an issue where downloading failed records log files resulted in corrupted files that could not be opened in Excel or CSV viewers. The root cause was a file format mismatch; now the log files will be downloaded in a format that opens correctly without manual renaming or extraction.
+
+**Search & Compare Job History Table Data Misalignment**
+
+Fixed a display issue in the Search & Compare Job History page where table data was misaligned with column headers. Row values appeared under incorrect columns, and Job Info icons were stacked vertically instead of being aligned with their respective rows. The table now renders correctly with proper column alignment.
+
+**Schema Settings Lost When Saving Replication Configuration**
+
+Fixed a bug where saved schema settings were lost after editing and saving a Replication Configuration. If a schema was already associated with a config and the user edited other fields, the schema would be silently removed upon saving. Schema selections are now correctly preserved across edits.
+
+***
+
+## Vault Release Notes 26.1.6
+
 **Release Date: 20 May 2026**
 
 **Restore Summary Not Visible in Vault Job**

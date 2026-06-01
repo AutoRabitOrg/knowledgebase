@@ -14,7 +14,7 @@ CodeScan supports the GitHub App authentication flow across all supported GitHub
 
 ## GitHub Enterprise Cloud Flow <a href="#github-free-pro-team-and-github-enterprise-cloud-flow" id="github-free-pro-team-and-github-enterprise-cloud-flow"></a>
 
-### Step-by-step guide <a href="#first-time-authentication-flow" id="first-time-authentication-flow"></a>
+### Step-by-Step guide <a href="#first-time-authentication-flow" id="first-time-authentication-flow"></a>
 
 When attaching a GitHub repository to an analysis project for the first time:
 

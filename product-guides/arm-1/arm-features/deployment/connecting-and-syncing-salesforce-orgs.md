@@ -41,7 +41,7 @@ To perform org synchronization, follow the below steps:
     <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Once done with your selection, click on **`Synchronize Orgs`**.
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
-9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md).
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 

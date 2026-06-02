@@ -40,7 +40,7 @@ Follow the path for the tool you are using.
 
 **Step 1: Add the MCP connector**
 
-1. Go to **Settings → Connectors** and select **Add custom connector**.
+1. Go to **Customize → Connectors** and select **Add custom connector**.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-04-28 143405.png" alt="" width="563"><figcaption></figcaption></figure>
 

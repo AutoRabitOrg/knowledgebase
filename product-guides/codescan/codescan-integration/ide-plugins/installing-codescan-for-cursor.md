@@ -1,14 +1,6 @@
 # Installing CodeScan for Cursor
 
-### Learning Objectives: <a href="#learning-objectives" id="learning-objectives"></a>
-
-After completing this unit, you'll be able to:
-
-* [Install the 'CodeScan for Visual Studio (VS) Code' extension](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#installing-the-codescan-for-vs-code-extension)
-* [Integrate VS Code with CodeScan](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#integrate-vs-code-with-codescan-extension)
-* [Troubleshooting steps if you experienced VS Code issues](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code#vs-code-troubleshooting)
-
-### Getting Started with VS Code <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
+### Getting Started with Cursor <a href="#get-started-with-vs-code" id="get-started-with-vs-code"></a>
 
 The **CodeScan Cursor** extension provides immediate feedback to developers on bugs and quality issues; it is a fully integrated user experience in Cursor.
 

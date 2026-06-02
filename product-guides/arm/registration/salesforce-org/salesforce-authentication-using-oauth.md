@@ -7,9 +7,7 @@ description: How to Authenticate Your Salesforce Org Using OAuth
 The Salesforce platform implements the OAuth 2.0 Authorization Framework, so users can authorize applications to access Force.com resources. When configuring ARM and Salesforce source, you must know the **Client\_ID** and **Client\_Secret** token values for the Salesforce organization you want to index.&#x20;
 
 {% hint style="warning" %}
-I**mportant Note**: The following article is only applicable to **self-hosted** and **dedicated** instances. It is **NOT** applicable to Cloud users.
-
-For shared cloud customers, ARM has a preconfigured connected app via Salesforce; therefore, client\_id and client\_secret fields are not exposed in the user interface. For more information, please refer to the link: [Adding a Salesforce Org connection via OAuth](/broken/pages/pH4sl79OknjYdVbdlBtG).
+I**mportant Note**: The following article is only applicable to **self-hosted** and **dedicated** instances. It is **NOT** applicable to Cloud users. For Cloud users, please refer to the following documentation: [Register Salesforce Org using OAuth via External Client App (ECA) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca).
 {% endhint %}
 
 ## To get the Salesforce Client\_ID and Client\_Secret values

@@ -33,7 +33,7 @@ For AutoRABIT’s Guard ECA setup, you need **the callback URL**
 Callback URL is depending on the instance:
 
 ```
-{$isntancename}/oauth/_callback
+{$instancename}/oauth/_callback
 ```
 
 Example:

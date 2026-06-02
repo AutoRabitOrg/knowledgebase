@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # ARM: Salesforce ECA (Local) Connection Setup Steps
@@ -31,7 +33,7 @@ For AutoRABIT’s ARM ECA setup, you need **the callback URL**
 Callback URL is depending on the instance:
 
 ```
-{$isntancename}/oauth/_callback
+{$instancename}/oauth/_callback
 ```
 
 Example:

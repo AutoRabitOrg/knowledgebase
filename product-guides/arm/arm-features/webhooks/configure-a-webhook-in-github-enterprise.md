@@ -87,6 +87,6 @@ GitHub Enterprise users should raise a support ticket to [support@autorabit.com]
 
 Use the following endpoints for enterprise configurations:
 
-/api/webhook/v2//enterprise/trigger-scm-push-request
+[api/webhook/v2/\<OrgName>/trigger-scm-push-request](https://na25.autorabit.com/api/webhook/v2/%3COrgName%3E/trigger-scm-push-request)
 
 /api/webhook/v2//enterprise/sync-alm-commits

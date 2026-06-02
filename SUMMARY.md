@@ -121,7 +121,7 @@
       * [ARM Supported Metadata Types](product-guides/arm/getting-started-with-arm/understanding-arm/arm-supported-metadata-types.md)
       * [Excluded Metadata Types in ARM](product-guides/arm/getting-started-with-arm/understanding-arm/excluded-metadata-types-in-arm.md)
     * [Navigating ARM](product-guides/arm/getting-started-with-arm/navigating-arm.md)
-  * [ARM Settings](product-guides/arm/arm-administration/README.md)
+  * [Settings (ADMIN)](product-guides/arm/arm-administration/README.md)
     * [Connecting Your ALM](product-guides/arm/arm-administration/alm-management.md)
     * [Integrating Static Code Analysis](product-guides/arm/arm-administration/static-code-analysis-in-ci-cd.md)
     * [Managing Your Subscription](product-guides/arm/arm-administration/subscription-management.md)

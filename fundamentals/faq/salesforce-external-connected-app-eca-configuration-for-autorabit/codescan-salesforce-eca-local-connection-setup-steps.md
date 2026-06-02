@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # CodeScan: Salesforce ECA (Local) Connection Setup Steps
@@ -31,7 +33,7 @@ For AutoRABIT’s CodeScan ECA setup, you need **the callback URL**
 Callback URL is depending on the instance:
 
 ```
-{$isntancename}/_codescan/oauth2/authorize
+{$instancename}/_codescan/oauth2/authorize
 ```
 
 Example:

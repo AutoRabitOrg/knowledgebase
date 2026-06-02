@@ -18,7 +18,7 @@ For AutoRABIT’s CodeScan ECA setup, you need **the callback URL**
 
 Callback URL depends on the instance:
 
-_{$isntancename}/\_codescan/oauth2/authorize_
+_{$instancename}/\_codescan/oauth2/authorize_
 
 Example:
 

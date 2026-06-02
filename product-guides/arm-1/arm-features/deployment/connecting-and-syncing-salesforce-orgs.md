@@ -46,7 +46,7 @@ To perform org synchronization, follow the below steps:
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 
 10. Click on **`Deploy`**.
-11. You'll be taken to the [**`Deployment History`**](../../../arm/arm-features/deployment/monitor-deployments.md) page, where the current synchronization progress can be seen.
+11. You'll be taken to the [Track Deployment History](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/monitor-deployments) page, where the current synchronization progress can be seen.
 
 #### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
 

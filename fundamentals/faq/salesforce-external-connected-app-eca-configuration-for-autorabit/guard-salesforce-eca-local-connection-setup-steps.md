@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Guard: Salesforce ECA (Local) Connection Setup Steps
@@ -37,7 +39,7 @@ Callback URL is depending on the instance:
 Example:
 
 ```
-https://perf.codescan.io/_codescan/oauth2/authorize
+https://yourguard.autorabit.com/oauth/_callback
 ```
 {% endstep %}
 

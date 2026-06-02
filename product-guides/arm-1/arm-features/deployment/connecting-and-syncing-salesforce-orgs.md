@@ -50,7 +50,7 @@ To perform org synchronization, follow the below steps:
 
 #### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
 
-Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page.<br>
+Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page. Additional options are available, such as View Info, Schedule, Delete, Download PDF Report, and Download CSV Report, by clicking the three dot (...) menu corresponding to a particular job on the Org Synchronization Summary Page.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

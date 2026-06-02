@@ -9,7 +9,15 @@ The Deployment process allows you to transfer new developments easily and safely
 Once you are done with your development, you need to migrate your code from your development organization to the organization where business users can use your code. So, in this section, we will learn different methods of deploying the changes to a target/production org:
 
 * **Deploy from Salesforce Org:** Deploys the latest changes made in your source sandbox to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.
-* **Deploy from AutoRABIT Build:** Deploys from AutoRABIT build to your target org.
+*   **Deploy from AutoRABIT Build:** Deploy from AutoRABIT Build allows teams to reuse a previously generated CI build and deploy it to any environment manually without running the CI job again. Instead of running the CI job again, you can reuse an existing successful build.
+
+    Example: A CI job generates Build #45 after developers commit code. QA tests this build successfully. Later, the release manager selects Build #45 from the Deployment module and deploys it to the UAT org. This ensures the same tested build is promoted across environments without rebuilding. This option is useful in following scenarios:
+
+    * You have multiple builds in the CI job history and need to deploy a specific successful build.
+    * The target environment (QA/UAT/Sandbox) was not available when the CI build completed.
+    * A hotfix build is created to fix a critical production issue.
+    * You want to reuse the same build artifact across environments.
+    * A deployment fails due to environment configuration issues.
 * **Deploy from Package.xml:** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as a project manifest. Using this type of control file allows you to initiate a deployment without manually selecting metadata components to be included in the deployment.
 * **Deploy from Metadata Zip:** Upload the zip file and deploy to the [sandbox](https://www.autorabit.com/blog/the-impact-of-automation-in-salesforce-sandbox-management/) using the Metadata Zip facility.
 * **Deploy from Version Control (Full Profiles):** Deploy the latest changes made in your version control repository to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.

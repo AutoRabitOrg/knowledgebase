@@ -647,7 +647,7 @@
         * [Salesforce Authentication using OAuth](product-guides/arm-1/registration/salesforce-org/salesforce-authentication-using-oauth.md)
         * [Salesforce Org Reauthentication](product-guides/arm-1/registration/salesforce-org/salesforce-org-re-authentication.md)
         * [Register Salesforce Org using OAuth via External Client App (ECA)](product-guides/arm-1/getting-started-1/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca.md)
-      * [Branching Baselines](product-guides/arm-1/registration/branching-baseline.md)
+      * [Branching Baseline](product-guides/arm-1/registration/branching-baseline.md)
       * [Notifications](product-guides/arm-1/getting-started-1/registration/notifications-mail-server-settings.md)
       * [Search and Substitute](product-guides/arm-1/registration/search-and-substitute.md)
       * [Workspaces](product-guides/arm-1/getting-started-1/registration/workspaces.md)

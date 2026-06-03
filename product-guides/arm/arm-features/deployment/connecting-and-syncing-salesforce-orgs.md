@@ -4,9 +4,17 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
 ### About Salesforce org synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
 
-The org synchronization provides a mechanism to export single data, or all content items, from a source to a target Salesforce org effortlessly, thereby establishing consistency among data.
+Salesforce Org Synchronisation allows teams to compare and align metadata between a source Salesforce org and a target Salesforce org to maintain consistency across environments. It identifies metadata differences and enables users to reconcile them efficiently.
 
-When you move changes from a source org to a production org, the [metadata](https://www.autorabit.com/blog/6-benefits-of-restoring-your-metadata-in-salesforce-after-an-outage/) types would be the same. But when you make changes in the production org, there would be an inconsistency between the source org and production org. Org synchronization helps you compare the differences between the metadata types, so you can add or delete metadata types and ensure that both the orgs are in sync.
+Example: If a hotfix is implemented directly in Production after a deployment, discrepancies may arise between Production and Sandbox. Org Synchronisation helps detect these differences and allows teams to update the source org accordingly, ensuring both environments remain aligned.
+
+This option is useful when:
+
+* Changes are made directly in Production.
+* Multiple teams work across parallel environments.
+* There is a need to prevent configuration drift.
+* Deployments fail due to unexpected metadata differences.
+* Preparing environments before a major release.
 
 ### How can I connect and sync metadata between two Salesforce orgs? <a href="#how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs" id="how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs"></a>
 

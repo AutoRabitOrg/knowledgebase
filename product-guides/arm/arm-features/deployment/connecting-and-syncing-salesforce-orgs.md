@@ -55,6 +55,8 @@ Synchronization summary information such as label name, source org, destination 
 
 <figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+**Note:** In the ARMOR (new UI), options such as **View Info, Schedule, Delete, Download PDF Report, and Download CSV Report** are available from the **three-dot (...) menu** corresponding to each synchronization job on the **Org Synchronisation Summary** page. Select the required job and click the three-dot menu to access these actions.
+
 1. **`Info:`** Click the![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the detailed synchronization report.
 
 <figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="503"><figcaption></figcaption></figure>

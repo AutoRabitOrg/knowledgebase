@@ -3,7 +3,9 @@
 ### What is Deployment? <a href="#what-is-deployment" id="what-is-deployment"></a>
 
 “Deployment” allows teams to transfer metadata changes from one Salesforce environment to another in a controlled and secure manner. It is typically used to move configurations and customizations—such as validation rules, custom objects, fields, Apex classes, and other components—from a Sandbox (development/testing environment) to Production (live environment).\
-Example: A developer creates a new custom object and validation rule in a Sandbox. After testing is completed successfully, the release manager deploys these changes to the Production org. This ensures that only tested and approved components are introduced into the live environment, minimizing risk to business operations.\
+Example: A developer creates a new custom object and validation rule in a Sandbox. After testing is completed successfully, the release manager deploys these changes to the Production org. This ensures that only tested and approved components are introduced into the live environment, minimizing risk to business operations.
+
+\
 **Deployment is useful in the following scenarios:**\
 Moving tested developments from Sandbox to Production.\
 Promoting changes across multiple environments (Dev → QA → UAT → Prod).\

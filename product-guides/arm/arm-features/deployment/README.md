@@ -29,7 +29,17 @@ Once you are done with your development, you need to migrate your code from your
 * **Deploy from Revision Range:** Deployment based on a range of committed revisions.
 * **Deploy from Release label:** Deploy using the Release Labels. A release label is simply a group of single revisions combined.
 * **Deploy from Commit Label:** Deploy the EZ-Commit labels to your target sandbox. The commit label will send the entire file from the latest commit, rather than utilizing a delta approach.
-* **Deploy from Validate & Commit Label:** Deploy using the validate commit labels.
+*   **Deploy from Validate & Commit Label:** Allows teams to deploy commit labels that have already been successfully validated against a target org. Instead of validating the same changes again, users can directly promote a pre-validated commit label to the destination environment.
+
+    Example: A developer creates a commit label for a set of changes and runs validation against the UAT org. The validation completes successfully without errors. Later, the release manager selects the validated commit label from the Deployment module and deploys it to Production. This ensures that only pre-validated and approved changes are promoted.
+
+    This option is useful in the following scenarios:
+
+    * When you want to deploy only changes that have already passed validation.
+    * When multiple commit labels exist and you need to promote a specific validated label.
+    * When you want to reduce deployment risk by avoiding re-validation errors.
+    * When the release process requires validation approval before Production deployment.
+    * When you need controlled promotion of tested changes across environments.
 * **Deploy from Previous Deployment Labels:** Redeploy a previously used deployment label to your destination org.
 * **Deploy from Unlocked Package:** Deploy using the Salesforce DX unlocked package.
 * **Deploy from Tag:** Deploy using the version control GIT tags.

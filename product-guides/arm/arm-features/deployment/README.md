@@ -6,7 +6,7 @@ Deployment allows teams to transfer metadata changes from one Salesforce environ
 
 Example: A developer creates a new custom object and validation rule in a Sandbox. After testing is completed successfully, the release manager deploys these changes to the Production org. This ensures that only tested and approved components are introduced into the live environment, minimizing risk to business operations.
 
-Deployment is useful in the following scenarios:
+**Deployment is useful in the following scenarios:**
 
 Moving tested developments from Sandbox to Production.\
 Promoting changes across multiple environments, such as Dev → QA → UAT → Prod.\

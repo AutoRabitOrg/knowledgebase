@@ -20,7 +20,11 @@ Once you are done with your development, you need to migrate your code from your
     * A deployment fails due to environment configuration issues.
 * **Deploy from Package.xml:** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as a project manifest. Using this type of control file allows you to initiate a deployment without manually selecting metadata components to be included in the deployment.
 * **Deploy from Metadata Zip:** Upload the zip file and deploy to the [sandbox](https://www.autorabit.com/blog/the-impact-of-automation-in-salesforce-sandbox-management/) using the Metadata Zip facility.
-* **Deploy from Version Control (Full Profiles):** Deploy the latest changes made in your version control repository to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.
+*   **Deploy from Version Control (Full Profiles):** Allows users to deploy complete Salesforce profile metadata directly from the version control repository to a target org. It retrieves the entire profile, including permissions, object access, field permissions, app visibility, and related settings, instead of deploying only selected profile components. This ensures the profile is deployed exactly as it exists in the repository.
+
+    Example Scenario: Suppose a new profile called "Sales\_User\_Profile" is created in the repository with multiple permissions, including object access, field permissions, and app visibility settings. When deploying to a QA or UAT org, users can select Deploy from Version Control (Full Profiles) to ensure the complete profile and all its associated settings are deployed together.
+
+    This option is best used when creating new profiles or when the full profile configuration must remain consistent across environments.
 * **Deploy from Single Revision:** Deploy the changes using [version control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) revision.
 * **Deploy from Revision Range:** Deployment based on a range of committed revisions.
 * **Deploy from Release label:** Deploy using the Release Labels. A release label is simply a group of single revisions combined.

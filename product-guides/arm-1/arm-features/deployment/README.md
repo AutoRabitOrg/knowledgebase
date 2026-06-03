@@ -13,15 +13,33 @@ The Deployment process allows you to transfer new developments easily and safely
 Once you are done with your development, you need to migrate your code from your development organization to the organization where business users can use your code. So, in this section, we will learn different methods of deploying the changes to a target/production org:
 
 * **Deploy from Salesforce Org:** Deploys the latest changes made in your source sandbox to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.
-* **Deploy from AutoRABIT Build:** Deploys from AutoRABIT build to your target org.
+*   **Deploy from AutoRABIT Build:** This feature allows teams to reuse a previously generated CI build and deploy it to any environment manually without running the CI job again. Instead of running the CI job again, you can reuse an existing successful build.
+
+    Example: A CI job generates Build #45 after developers commit code. QA tests this build successfully. Later, the release manager selects Build #45 from the Deployment module and deploys it to the UAT org. This ensures the same tested build is promoted across environments without rebuilding. This option is useful in following scenarios:
+
+    * You have multiple builds in the CI job history and need to deploy a specific successful build.
+    * The target environment (QA/UAT/Sandbox) was not available when the CI build completed.
+    * A hotfix build is created to fix a critical production issue.
+    * You want to reuse the same build artifact across environments.
+    * A deployment fails due to environment configuration issues.
 * **Deploy from Package.xml:** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as a project manifest. Using this type of control file allows you to initiate a deployment without manually selecting metadata components to be included in the deployment.
 * **Deploy from Metadata Zip:** Upload the zip file and deploy to the [sandbox](https://www.autorabit.com/blog/the-impact-of-automation-in-salesforce-sandbox-management/) using the Metadata Zip facility.
-* **Deploy from Version Control (Full Profiles):** Deploy the latest changes made in your version control repository to a destination sandbox, using either a selective deployment of only the metadata types you’ve chosen or full deployment of all the objects in a build.
+*   **Deploy from Version Control (Full Profiles):** Deploy from Version Control (Full Profiles) allows you to deploy complete Salesforce profile metadata directly from the version control repository to a target org. It retrieves the entire profile, including all permissions, object access, field permissions, and settings, instead of deploying only selected parts. This ensures the profile is deployed exactly as it exists in the repository.
+
+    Example scenario: Suppose a new profile called “Sales\_User\_Profile” is created in the repository with multiple permissions (object access, field permissions, app visibility). When deploying to a QA or UAT org, you choose Deploy from Version Control (Full Profiles) so the entire profile and all its references are deployed together.
+
+    This option is best used when creating new profiles or when the full profile configuration must remain consistent across environments.
 * **Deploy from Single Revision:** Deploy the changes using [version control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) revision.
 * **Deploy from Revision Range:** Deployment based on a range of committed revisions.
 * **Deploy from Release label:** Deploy using the Release Labels. A release label is simply a group of single revisions combined.
 * **Deploy from Commit Label:** Deploy the EZ-Commit labels to your target sandbox. The commit label will send the entire file from the latest commit, rather than utilizing a delta approach.
-* **Deploy from Validate & Commit Label:** Deploy using the validate commit labels.
+* **Deploy from Validate & Commit Label:** Deploy from Validate & Commit Label” allows teams to deploy commit labels that have already been successfully validated against a target org. Instead of validating the same changes again, you can directly promote a pre-validated commit label to the destination environment.  \
+  Example: A developer creates a commit label for a set of changes and runs validation against the UAT org. The validation completes successfully with no errors. Later, the release manager selects that validated commit label from the Deployment module and deploys it to Production. This ensures that only pre-validated and approved changes are promoted. This option is useful in the following scenarios:
+  * You want to deploy only changes that have already passed validation.
+  * Multiple commit labels exist, and you need to promote a specific validated one.
+  * You want to reduce deployment risk by avoiding re-validation errors.
+  * A release process requires prior validation approval before Production deployment.
+  * You want controlled promotion of tested changes across environments.
 * **Deploy from Previous Deployment Labels:** Redeploy a previously used deployment label to your destination org.
 * **Deploy from Unlocked Package:** Deploy using the Salesforce DX unlocked package.
 * **Deploy from Tag:** Deploy using the version control GIT tags.

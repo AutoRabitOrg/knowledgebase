@@ -24,10 +24,6 @@ layout:
 
 # ARM: Salesforce ECA (Local) Connection Setup Steps
 
-{% hint style="info" %}
-**Important Note**: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, then try again to allow the Salesforce configuration to sync completely.
-{% endhint %}
-
 {% stepper %}
 {% step %}
 ### Pre-req: get your Callback URL (redirect URI)
@@ -70,6 +66,12 @@ https://arm-qan5.autorabit.com/oauth/_callback
   * **Local** (only for this org)
 
 <figure><img src="../../../.gitbook/assets/f306f55b-5110-4872-bbec-20b722c50b29.png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+{% hint style="info" %}
+**Important Note**: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, then try again to allow the Salesforce configuration to sync completely
+{% endhint %}
 {% endstep %}
 
 {% step %}

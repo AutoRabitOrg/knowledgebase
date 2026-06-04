@@ -159,6 +159,8 @@ Create the connections filling the required information obtained from Salesforce
 
 <figure><img src="../../../.gitbook/assets/5202c6a0-6bef-4a59-a0d0-9e108b4ca0e0.png" alt=""><figcaption></figcaption></figure>
 
+Important Note: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, and try again to allow the Salesforce configuration to sync completely.
+
 Once the Validate and save button is clicked a salesforce login is shown to login with the user we intend to use for the Connection.
 
 <figure><img src="../../../.gitbook/assets/6de79ea8-99c8-483f-909f-9f8059097022.png" alt=""><figcaption></figcaption></figure>

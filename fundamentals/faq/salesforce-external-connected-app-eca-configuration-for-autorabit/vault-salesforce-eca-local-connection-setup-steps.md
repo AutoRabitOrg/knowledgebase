@@ -18,6 +18,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Vault: Salesforce ECA (Local) Connection Setup Steps
@@ -62,6 +64,14 @@ https://vault-qa.autorabit.com/dashboard/setup/addSfOrg
   * **Local** (only for this org)
 
 <figure><img src="../../../.gitbook/assets/f306f55b-5110-4872-bbec-20b722c50b29.png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+{% hint style="info" %}
+### **Important Note:**  After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, then try again to allow the Salesforce configuration to sync completely.
+{% endhint %}
+
+
 {% endstep %}
 
 {% step %}

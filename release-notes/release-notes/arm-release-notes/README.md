@@ -1,5 +1,29 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.2.10** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date: 7th June 2026**
+
+### Support for Salesforce Run Relevant Tests in Deployments(New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
+
+AutoRABIT now supports Salesforce’s **Run Relevant Tests** test level for deployment validations and deployments. This option executes only the Apex tests identified by Salesforce as impacted by the changes being deployed, helping reduce deployment time and improve CI/CD efficiency while maintaining required test coverage. Support is available across validation, deployment, and Quick Deploy workflows.
+
+### Salesforce Summer ’26 (API Version 67) Support(New) <a href="#salesforce-summer-26-api-version-67-support-new" id="salesforce-summer-26-api-version-67-support-new"></a>
+
+AutoRABIT now supports **Salesforce API Version 67**, enabling compatibility with the latest Salesforce Summer ’26 release. This update includes support for newly introduced metadata types such as **FlowValueMap, EmailAuthorizationSettings, InsPlcyLimitConsumptionRule, and OrchestrationPlanCtxMapping**, along with support for Salesforce metadata enhancements in Queue, DataSrcDataModelFieldMap, Network, InvocableActionExtension, and Flow.
+
+### EZ-Commit Performance Improvements for Large Salesforce Schemas <a href="#ez-commit-performance-improvements-for-large-salesforce-schemas" id="ez-commit-performance-improvements-for-large-salesforce-schemas"></a>
+
+Enhanced EZ-Commit performance for Salesforce orgs containing large volumes of custom fields and metadata components. Optimizations to schema processing and change detection improve component loading, retrieval responsiveness, and overall user experience across EZ-Commit, AutoDraft, and Package Manifest workflows.
+
+### My Profile – VC Mappings Performance Improvements <a href="#my-profile-vc-mappings-performance-improvements" id="my-profile-vc-mappings-performance-improvements"></a>
+
+Improved performance of the **My Profile → VC Mappings** page for environments with a large number of branches. Backend pagination and loading optimizations reduce page load times and improve responsiveness when viewing and managing version control mappings.
+
+### EZ-Commit User Experience Improvements <a href="#ez-commit-user-experience-improvements" id="ez-commit-user-experience-improvements"></a>
+
+Enhanced the EZ-Commit save experience by improving validation feedback for required fields. Mandatory fields are now clearly highlighted when left unselected, helping users identify missing information more quickly and reducing submission errors.
+
 ## ARM **Release Notes 26.2.9** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 31 May 2026**

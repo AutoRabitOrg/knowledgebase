@@ -112,7 +112,9 @@ In the **Security** section the next options should be enabled:
 * **Consumer Key** = **Client ID**
 * **Consumer Secret** = **Client Secret**
 
-Important Note: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, and try again to allow the Salesforce configuration to sync completely.
+{% hint style="info" %}
+**Important Note**: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, and try again to allow the Salesforce configuration to sync completely.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/d27e1bed-b3fa-4eaf-8853-49349a61c8d1.png" alt=""><figcaption></figcaption></figure>
 

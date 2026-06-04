@@ -97,6 +97,8 @@ Complete the following actions in Salesforce:
 
 After completing the configuration in Salesforce, return to Vault.
 
+Important Note: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, and try again to allow the Salesforce configuration to sync completely.
+
 Click **I've completed the setup** to continue.
 
 ### Configure OAuth Scopes

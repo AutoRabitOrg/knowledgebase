@@ -123,6 +123,8 @@ Any mismatch will result in connection failure.
 
 After completing the Salesforce External Client App configuration, provide the OAuth credentials in Vault.
 
+Important Note: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, and try again to allow the Salesforce configuration to sync completely.
+
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6)>)
 
 Enter the following details:

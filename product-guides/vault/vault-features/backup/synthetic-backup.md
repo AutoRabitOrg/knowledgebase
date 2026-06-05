@@ -67,10 +67,35 @@ Yes, you can switch back to full backups at any point based on your operational 
 
 * The team has discussed and agreed that both backup types will remain available, and you can choose full backups if a scenario demands a more complete restore baseline or addresses automation-related deletion challenges.
 
-<br>
+## Understanding Synthetic Backup Performance
 
-&#x20;
+**1. Why did Synthetic Backup take similar time as Full Backup for only 8,000 records?**\
+This is expected behavior. With a small dataset of around 8,000 records, the time required for a Full Backup to query and retrieve all records from Salesforce is already very low. Synthetic Backup saves time by retrieving only incremental changes, but it also performs an additional delta merge step. For small data volumes, that merge overhead can offset the savings.
 
-&#x20;
+**2. Why was Synthetic Backup slightly slower than Full Backup?**\
+Synthetic Backup includes extra processing after retrieving incremental changes. It must merge the changed data with the existing backup set to create a complete backup view. When the dataset is small, this additional processing may make Synthetic Backup similar to or slightly slower than Full Backup.
 
-&#x20;
+**3. Does this mean Synthetic Backup is not working correctly?**\
+No. Similar runtime between Synthetic Backup and Full Backup on a small org does not indicate an issue. It aligns with how Synthetic Backup is designed to work.
+
+**4. How does Full Backup work?**\
+Full Backup retrieves all records from Salesforce during every backup run. Its performance depends mainly on the total number of records that need to be queried and downloaded.
+
+**5. How does Synthetic Backup work?**\
+Synthetic Backup retrieves only the incremental changes since the previous backup. After collecting those changes, it performs a delta merge process to combine the incremental data with the existing backup set.
+
+**6. Why were the API calls similar for both backup types?**\
+Both backup types still need to query configured Salesforce objects to determine whether records exist and whether changes need to be processed. In a small dataset, these object-level queries can represent a significant portion of total API usage, so the API call count may look similar.
+
+**7. When does Synthetic Backup provide clear benefits?**\
+Synthetic Backup is most beneficial in large Salesforce environments, such as orgs with hundreds of thousands or millions of records. In those cases, Full Backup must retrieve the entire dataset every time, while Synthetic Backup retrieves only the changes.
+
+**8. What kind of environment shows the best improvement with Synthetic Backup?**\
+The best improvement is seen when the total dataset is large, but the number of changed records between backup runs is relatively small. This allows Synthetic Backup to reduce Salesforce data retrieval time and API consumption.
+
+**9. Why are the benefits less visible in small orgs?**\
+In small orgs, the total data retrieval time for Full Backup is already minimal. Because there is not much data to avoid retrieving, Synthetic Backup has limited opportunity to reduce runtime or API calls.
+
+**10. What should we tell the customer?**\
+You can explain that the observed result is expected for a small dataset. Synthetic Backup is designed to optimize larger environments where retrieving the full dataset repeatedly is expensive. For an org with only around 8,000 records, similar runtime and API usage between Full Backup and Synthetic Backup is normal.
+

@@ -40,7 +40,8 @@ Fixed a bug where saved schema settings were lost after editing and saving a Rep
 
 Fixed an issue where the Restore Summary was not visible in the Vault job.
 
-**Backup Jobs Not Loading in the Replicate Module**\
+**Backup Jobs Not Loading in the Replicate Module**
+
 Resolved an issue where Backup Job details were not displayed in the Replicate module. The issue was caused by a missing null check in the backend query, which prevented backup job information from loading correctly.
 
 ***

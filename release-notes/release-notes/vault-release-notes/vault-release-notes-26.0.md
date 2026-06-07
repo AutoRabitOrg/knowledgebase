@@ -2,6 +2,18 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
+## Vault Release Notes 26.1.8
+
+**Release Date: 10 Jun 2026**
+
+**Backup Configuration Retention Period Fix**
+
+Fixed a validation issue where the Backup Configuration retention field was restricted to a maximum of 9 years. Users can now configure retention values up to 99 years, enabling proper long-term retention policies.
+
+**Vault Replicate Job Schedule Issue**
+
+Fixed an issue where scheduled Replication Jobs were not triggering at their configured times. Customers who configured a Replication Job with a daily schedule and specific interval observed that the job would not trigger as expected.
+
 ## Vault Release Notes 26.1.7
 
 **Release Date: 03 Jun 2026**

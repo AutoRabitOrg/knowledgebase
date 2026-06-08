@@ -100,6 +100,3 @@ The best improvement is seen when the total dataset is large, but the number of 
 **9. Why are the benefits less visible in small orgs?**\
 In small orgs, the total data retrieval time for Full Backup is already minimal. Because there is not much data to avoid retrieving, Synthetic Backup has limited opportunity to reduce runtime or API calls.
 
-**10. What should we tell the customer?**\
-You can explain that the observed result is expected for a small dataset. Synthetic Backup is designed to optimize larger environments where retrieving the full dataset repeatedly is expensive. For an org with only around 8,000 records, similar runtime and API usage between Full Backup and Synthetic Backup is normal.
-

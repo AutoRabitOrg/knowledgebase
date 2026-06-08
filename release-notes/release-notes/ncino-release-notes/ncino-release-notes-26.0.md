@@ -2,6 +2,48 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.2.10
+
+**Release Date:** **07 Jun 2026**
+
+#### Multi-Level Approvals for nCino Deployments and Commits <a href="#multi-level-approvals-for-ncino-deployments-and-commits" id="multi-level-approvals-for-ncino-deployments-and-commits"></a>
+
+Introduced a configurable multi-level approval workflow for **nCino Data Deployments** and **nCino Commits**, enabling organizations to define **Level 1 (L1)** and **Level 2 (L2)** approvers for deployment and commit activities.
+
+**Key Highlights:**
+
+* Configure L1 and L2 approvers at the branch level.
+*   CI JOBs Approver Selection
+
+    <figure><img src="../../../.gitbook/assets/2 (6).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/3 (7).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/4 (7).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/5 (6).png" alt=""><figcaption></figcaption></figure>
+*   **Feature Deployment Approver Selection**
+
+    <figure><img src="../../../.gitbook/assets/3 (8).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/4 (8).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/5 (7).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/6 (6).png" alt=""><figcaption></figcaption></figure>
+* Approval requests are automatically sent to designated approvers via email.
+* Supports one-approver completion logic, where approval from any configured approver completes the respective approval stage.
+* Provides approval status notifications, approval reports, and deployment progress updates.
+* Includes approval history with approver details, approval status, and comments.
+* Automatically rejects pending approval requests after 14 days of inactivity.
+* Supports reminder notifications for pending approvals before expiration.
+* Prevents users from approving deployments or commits that they created themselves.
+* Provides end-to-end visibility into approval status through deployment and commit workflows.
+
+#### RBC Deployment Label Name Auto-Population <a href="#rbc-deployment-label-name-auto-population" id="rbc-deployment-label-name-auto-population"></a>
+
+Fixed an issue where the deployment label name was not auto-populating with the selected Feature/Template name during RBC deployments in the new UI. The label name now auto-fills as expected, matching the old UI behavior.
+
 ## nCino - Release 26.2.8
 
 **Release Date:** **24 May 2026**

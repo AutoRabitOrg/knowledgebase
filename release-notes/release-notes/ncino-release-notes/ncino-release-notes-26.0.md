@@ -32,7 +32,21 @@ Introduced a configurable multi-level approval workflow for **nCino Data Deploym
 
     <figure><img src="../../../.gitbook/assets/6 (6).png" alt=""><figcaption></figcaption></figure>
 * Approval requests are automatically sent to designated approvers via email.
-* Supports one-approver completion logic, where approval from any configured approver completes the respective approval stage.
+*   Supports one-approver completion logic, where approval from any configured approver completes the respective approval stage.
+
+    **CI JOB Approvals Flow**
+
+    <figure><img src="../../../.gitbook/assets/7 (6).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/8 (7).png" alt=""><figcaption></figcaption></figure>
+
+    **Feature Deployment Flow**
+
+    <figure><img src="../../../.gitbook/assets/13 (3).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/15 (3).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/16 (3).png" alt=""><figcaption></figcaption></figure>
 * Provides approval status notifications, approval reports, and deployment progress updates.
 * Includes approval history with approver details, approval status, and comments.
 * Automatically rejects pending approval requests after 14 days of inactivity.

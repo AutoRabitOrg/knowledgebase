@@ -12,6 +12,325 @@ Key points:
 3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
 {% endhint %}
 
+## CodeScan Release Notes 26.0.12
+
+**Release Date: 7 June 2026**
+
+### Summary
+
+CodeScan 26.0.12 is comprised of the following 8 components:
+
+* 3 Application Enhancements
+* 1 New Rule
+* 1 Rule Enhancement
+* 3 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### Application Enhancements
+
+1. &#x20;**Instance-Level Severity Masking**
+
+Added support for instance-level severity masking, allowing CodeScan Administrators to centrally customize how severity labels are displayed across the platform while preserving underlying severity values, analysis behavior, and reporting logic.&#x20;
+
+Previously, severity labels were displayed using the default values throughout CodeScan and could not be customized at the instance level. This enhancement introduces centralized severity masking that is consistently applied across the Web UI, reports, exports, APIs, and IDE plugins.&#x20;
+
+**Behavior**&#x20;
+
+* Administrators can configure severity label mappings through the Admin UI. &#x20;
+* Severity masking settings are stored and managed at the instance level. &#x20;
+* Severity mappings are exposed through secure APIs and applied consistently across the platform. &#x20;
+* Custom severity labels are displayed throughout: &#x20;
+* Web UI &#x20;
+* Reports &#x20;
+* CSV exports &#x20;
+* SARIF exports &#x20;
+* IDE plugins &#x20;
+* Default severity labels are automatically used when no severity masking configuration exists. &#x20;
+* Changes are applied immediately without requiring a refresh.&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (64).png" alt="" height="308" width="624">
+
+**Supported Default Severity Labels**&#x20;
+
+* Blocker &#x20;
+* Critical &#x20;
+* Major &#x20;
+* Minor &#x20;
+* Info&#x20;
+
+**Validation**&#x20;
+
+* Validation is enforced at both API and UI levels. &#x20;
+* Invalid severity mappings are rejected with clear error messages. &#x20;
+* Only administrators can modify severity masking settings. &#x20;
+* Unauthorized users are restricted from making configuration changes. &#x20;
+
+**Functional Integrity**&#x20;
+
+Severity masking affects display labels only. The following behaviors remain unchanged:&#x20;
+
+* Underlying severity values &#x20;
+* Issue counts and metrics &#x20;
+* Quality Gate evaluations &#x20;
+* Severity-based sorting &#x20;
+* Severity-based filtering &#x20;
+* Analysis processing &#x20;
+* Reporting calculations &#x20;
+* Export generation &#x20;
+* SARIF standards compliance &#x20;
+* IDE plugin workflows &#x20;
+* Downstream integrations &#x20;
+
+**Outcome**&#x20;
+
+* Provides consistent severity representation across the entire CodeScan platform. &#x20;
+* Enables centralized governance of severity terminology. &#x20;
+* Reduces inconsistencies between Web UI, reports, exports, and IDE plugins. &#x20;
+* Preserves existing functionality and compatibility with integrations. &#x20;
+
+
+
+2. **Exception Expiry Notifications**
+
+Added subscription-based exception expiry notifications for Issues and Security Hotspots, enabling users to receive automated reminders before approved exceptions reach their expiry date.&#x20;
+
+**Subscription Management**&#x20;
+
+Users can now manage exception expiry notification preferences through:&#x20;
+
+Profile → My Account → Notifications&#x20;
+
+Notification options are available in:&#x20;
+
+* Overall Notifications &#x20;
+* Project Notifications &#x20;
+* Project-level notification settings &#x20;
+
+Users can enable or disable exception expiry notifications based on their preferences.&#x20;
+
+**Reminder Notifications**&#x20;
+
+Subscribed users receive automated email reminders for Issues and Security Hotspots with approved exceptions.&#x20;
+
+Notifications are sent:&#x20;
+
+* One week before expiry &#x20;
+* One business day before expiry &#x20;
+
+Business-day scheduling is automatically applied.&#x20;
+
+**Notification Controls**&#x20;
+
+Notifications respect:&#x20;
+
+* User notification preferences &#x20;
+* Project notification settings &#x20;
+* User permission settings &#x20;
+
+Notifications are not sent for:&#x20;
+
+* Archived organizations &#x20;
+* Deleted projects &#x20;
+* Unsubscribed users &#x20;
+
+**Outcome**&#x20;
+
+* Helps teams proactively review exceptions before they expire. &#x20;
+* Reduces the risk of unnoticed expired exceptions. &#x20;
+* Improves compliance and governance processes. &#x20;
+* Provides users direct control over exception-related notifications.&#x20;
+
+
+
+3. **Rules Evaluation Export Report**
+
+Added a new Rules Evaluation Export Report that provides visibility into all rules evaluated during a scan, including scans where no issues are detected.&#x20;
+
+**Behavior**&#x20;
+
+A new export option, CSV Rules Evaluation Report, is available from the More menu.&#x20;
+
+Users can select:&#x20;
+
+* Project &#x20;
+* Branch &#x20;
+
+and export a report containing all rules evaluated during the selected scan.&#x20;
+
+**Report Contents**&#x20;
+
+The report includes:&#x20;
+
+* rule\_key &#x20;
+* rule\_name &#x20;
+* rule\_language &#x20;
+* rule\_category &#x20;
+* rule\_severity &#x20;
+* issues\_found &#x20;
+
+Rules are included regardless of whether violations were detected.&#x20;
+
+**Outcome**&#x20;
+
+* Improves auditability and compliance reporting. &#x20;
+* Provides visibility into scan coverage. &#x20;
+* Allows users to validate rule execution even when no issues are found. &#x20;
+* Preserves historical accuracy based on the quality profiles used during the scan.
+
+### &#x20;New Rules
+
+1. **Connected App Uses High-Risk OAuth Scopes**
+
+Added a new Salesforce Metadata security rule to identify Connected Apps configured with high-risk OAuth scopes that may grant excessive or persistent access to organizational data and APIs.&#x20;
+
+**Rule Details**&#x20;
+
+* Rule key: _ConnectedAppHighRiskScopes_ &#x20;
+* Type: Vulnerability &#x20;
+* Default Severity: Major &#x20;
+* CWE: CWE-272 &#x20;
+* Remediation effort: 10 minutes &#x20;
+
+**Behavior**&#x20;
+
+The rule analyzes Salesforce Connected App metadata and raises a violation when high-risk OAuth scopes are detected within the Connected App configuration.&#x20;
+
+The following OAuth scopes are currently identified as high-risk:&#x20;
+
+* full &#x20;
+* api &#x20;
+* refresh\_token &#x20;
+
+When one or more of these scopes are present, the rule reports the detected values in the violation message.&#x20;
+
+**Message**&#x20;
+
+_Connected App contains high-risk OAuth scopes: {scopes}. Review and restrict access._&#x20;
+
+**Outcome**&#x20;
+
+* Helps security teams identify over-privileged Salesforce integrations. &#x20;
+* Improves visibility into Connected Apps that may expose organizational data through excessive OAuth permissions. &#x20;
+* Encourages implementation of least-privilege access principles. &#x20;
+* Reduces the risk of unauthorized or persistent access through overly permissive OAuth scope configurations.&#x20;
+
+### Rule Enhancements
+
+1. **Enhanced Avoid Calling SOQL and DML Inside Loops Rule**
+
+Enhanced the _sf:AvoidSoqlInLoops_ rule to optionally detect Salesforce platform methods that consume SOQL queries internally when executed within loops.&#x20;
+
+**New Parameter**&#x20;
+
+| Parameter          | Default  | Description                                                           |
+| ------------------ | -------- | --------------------------------------------------------------------- |
+| checkInternalSoql  | false    | Checks for methods with internal SOQL consumption used within loops.  |
+
+**Behavior**&#x20;
+
+When enabled, the rule identifies supported platform methods that may consume hidden SOQL queries inside loops, for example:&#x20;
+
+* Messaging APIs &#x20;
+* UserInfo APIs &#x20;
+* FeatureManagement APIs &#x20;
+* Approval APIs &#x20;
+* Flow invocation APIs &#x20;
+* ConnectApi operations &#x20;
+* Visualforce content APIs &#x20;
+
+Outcome&#x20;
+
+* Improves detection of governor limit risks. &#x20;
+* Identifies hidden SOQL consumption. &#x20;
+* Helps developers avoid query-limit violations. &#x20;
+* Preserves existing behavior unless explicitly enabled.&#x20;
+
+### Fixes
+
+1. **GitHub Enterprise Integration Improvements**
+
+Resolved multiple GitHub App integration issues affecting project creation, Pull Request analysis, and commit status reporting.&#x20;
+
+a. GitHub App Installation Flow&#x20;
+
+* Fixed an issue where organization members could receive a 404 error during GitHub App installation and project creation workflows.&#x20;
+
+b. Pull Request Analysis Scope&#x20;
+
+* Fixed an issue where PR analysis could process unrelated base branch files when the GitHub App lacked required permissions to retrieve changed PR files.&#x20;
+* Required permission (PR): Read &#x20;
+
+c. Commit Status Reporting&#x20;
+
+* Fixed an issue where CodeScan could not publish analysis status updates to GitHub Pull Requests due to insufficient GitHub App permissions.&#x20;
+* Required permission (Commit statuses): Read & Write &#x20;
+
+Outcome&#x20;
+
+* Improves GitHub project onboarding. &#x20;
+* Ensures PR analysis processes only changed files. &#x20;
+* Restores CodeScan status reporting on Pull Requests. &#x20;
+* Improves support for all types of environments.&#x20;
+
+{% hint style="info" %}
+**GitHub App Permission Update**
+
+**As** part of this release, we have updated the permissions required by the CodeScan GitHub App. GitHub will send a permission update request to any account or organization that has the CodeScan GitHub App installed.
+
+\
+The account or organization Owner should review and approve this request in GitHub:\
+Settings → GitHub Apps&#x20;
+
+(or Applications → Installed GitHub Apps → CodeScan → Review Request)
+
+\
+Once the request is approved, no further action is required.
+{% endhint %}
+
+2. **Resolved User Invitation and Group Assignment Issues**
+
+Fixed issues in the user invitation workflow where invited or re-created users were not being assigned correctly to organizations and default groups.&#x20;
+
+Previously:&#x20;
+
+* Users invited from an organization were not always added to that organization after signup. &#x20;
+* Users who were deleted or deactivated from the UI and later re-created were not added back to the default Members group. &#x20;
+* This could prevent invited users from accessing the expected organization context after completing signup. &#x20;
+
+**Behavior**&#x20;
+
+* New users now follow the invite link flow correctly after signup and are added to the intended organization. &#x20;
+* Email verification handling was updated so first-time signup flows redirect users through the invite workflow as expected. &#x20;
+* Re-created users are now added back to the default Members group after activation. &#x20;
+* Invite validation and post-login handling were improved to ensure organization and group membership are applied correctly. &#x20;
+
+**Outcome**&#x20;
+
+* Ensures invited users are added to the correct organization after signup. &#x20;
+* Restores default group assignment for users who are re-created after deletion or deactivation. &#x20;
+* Improves reliability of onboarding and access management workflows.&#x20;
+
+
+
+3. **Analysis Permission Validation Improvements**
+
+Fixed an issue where users with valid scan permissions could receive unauthorized errors when executing analyses.&#x20;
+
+**Behavior**&#x20;
+
+* Improved user-level scan permission validation. &#x20;
+* Improved group-level scan permission validation. &#x20;
+* Corrected effective permission evaluation during analysis startup. &#x20;
+
+**Outcome**&#x20;
+
+* Prevents false authorization failures. &#x20;
+* Improves the reliability of project analysis execution. &#x20;
+* Ensures consistent permission enforcement across user and group access models.&#x20;
+
+***
+
 ## CodeScan Release Notes 26.0.11
 
 **Release Date: 24 May 2026**

@@ -35,7 +35,7 @@ To register a new Salesforce organization:
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image>)
+    ![](<../../../../.gitbook/assets/Unknown image (28)>)
 
 This action opens the **Source Org Integration** setup wizard.
 
@@ -43,7 +43,7 @@ This action opens the **Source Org Integration** setup wizard.
 
 The **Source Org Integration** wizard begins with **Environment Details**.This step captures the basic configuration required to connect the Salesforce environment.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1) (1)>)
 
 Configure the following fields:
 
@@ -58,7 +58,7 @@ Configure the following fields:
 
 After entering the username, select the type of Salesforce environment.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (2)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (2) (1)>)
 
 Available options include:
 
@@ -80,7 +80,7 @@ Click **Continue** to proceed.
 
 The next step guides the creation of a **Salesforce External Client App** required for OAuth authentication.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3) (1)>)
 
 Vault displays the configuration steps that must be completed in Salesforce.
 
@@ -101,9 +101,9 @@ Click **I've completed the setup** to continue.
 
 Add the required OAuth scopes in the Salesforce External Client App.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (4)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (4) (1)>)
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (5)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (5) (1)>)
 
 The following scopes must be enabled:
 
@@ -121,14 +121,14 @@ Any mismatch will result in connection failure.
 
 After completing the Salesforce External Client App configuration, provide the OAuth credentials in Vault.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6) (1)>)
 
 Enter the following details:
 
 * **Client ID** – The Consumer Key generated from the Salesforce External Client App.
 * **Client Secret** – The Consumer Secret generated from the Salesforce External Client App.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (7)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (7) (1)>)
 
 These values are available in Salesforce under the External Client App configuration.
 
@@ -148,9 +148,9 @@ Click **Continue** to proceed to the authorization step.
 
 The **Connect to Salesforce** step initiates the OAuth authorization process.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (8)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (8) (1)>)
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1)>)
 
 Vault displays the connection details for verification:
 
@@ -168,11 +168,11 @@ After clicking **Connect to Salesforce**, the following process occurs:
 
 1. The browser redirects to the Salesforce login page.
 
-![A screenshot of a web page AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10)>)
+![A screenshot of a web page AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10) (1)>)
 
 1. Authentication occurs using the provided Salesforce credentials.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11) (1)>)
 
 1.  Salesforce displays the permissions requested by Vault.
 
@@ -188,7 +188,7 @@ Vault then completes the validation and confirms the connection.
 
 After the authorization process is completed, Vault validates the Salesforce connection and displays a **Connection Successful** confirmation.
 
-![](<../../../../.gitbook/assets/Unknown image (14)>)
+![](<../../../../.gitbook/assets/Unknown image (14) (1)>)
 
 The **Validation & Confirmation** step displays the environment details of the connected Salesforce org, including:
 
@@ -205,13 +205,13 @@ To verify that Vault can communicate with the Salesforce environment, perform an
 
 1. In the **Test Your Connection** section, click **Test API Connection**.
 
-![](<../../../../.gitbook/assets/Unknown image (15)>)
+![](<../../../../.gitbook/assets/Unknown image (15) (1)>)
 
 ### Verify the API Connection Status
 
 If the connection test succeeds, Vault displays a confirmation message indicating that the API communication is working correctly.
 
-![](<../../../../.gitbook/assets/Unknown image (16)>)
+![](<../../../../.gitbook/assets/Unknown image (16) (1)>)
 
 A notification message appears confirming that the **API connection test was successful**.
 
@@ -223,7 +223,7 @@ After the connection test is successful:
 
 1. Click **Finish**.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (17)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (17) (1)>)
 
 Vault completes the org registration process and closes the **Source Org Integration** wizard.
 
@@ -233,7 +233,7 @@ The newly connected Salesforce organization now appears in the **Salesforce Orgs
 
 After clicking **Finish**, Vault displays a confirmation message indicating that the Salesforce organization has been successfully registered.
 
-![](<../../../../.gitbook/assets/Unknown image (18)>)
+![](<../../../../.gitbook/assets/Unknown image (18) (1)>)
 
 This confirmation verifies that the integration process has completed successfully and the Salesforce environment is now available for Vault operations.
 
@@ -243,7 +243,7 @@ Click **OK** to close the confirmation message.
 
 After the confirmation message is closed, the **Salesforce Orgs List** page displays the newly registered organization.
 
-![](<../../../../.gitbook/assets/Unknown image (19)>)
+![](<../../../../.gitbook/assets/Unknown image (19) (1)>)
 
 The list provides key details for each connected environment, including:
 
@@ -261,7 +261,7 @@ The newly added organization now appears in this list and is ready to be used wi
 
 If authentication credentials expire or require renewal, the Salesforce organization can be re-authenticated directly from the **Salesforce Orgs List**.
 
-![](<../../../../.gitbook/assets/Unknown image (19)>)
+![](<../../../../.gitbook/assets/Unknown image (19) (1)>)
 
 To re-authenticate an organization:
 
@@ -275,7 +275,7 @@ Vault redirects to the Salesforce login page to complete the authentication proc
 
 When the **Re-authenticate** action is initiated, the Salesforce login screen appears.
 
-![](<../../../../.gitbook/assets/Unknown image (20)>)
+![](<../../../../.gitbook/assets/Unknown image (20) (1)>)
 
 Enter the following credentials:
 
@@ -294,7 +294,7 @@ After the Salesforce org is successfully registered, additional management optio
 2. Locate the required org in the **Salesforce Orgs List**.
 3. In the **Actions** column, click the **More actions (⋮)** icon.
 
-![A list of numbers and numbers AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (21)>)
+![A list of numbers and numbers AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (21) (1)>)
 
 A menu appears displaying additional management options for the selected Salesforce org.
 
@@ -302,7 +302,7 @@ A menu appears displaying additional management options for the selected Salesfo
 
 The **More actions** menu provides multiple options for managing the registered Salesforce org.
 
-![A list of numbers and numbers AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (22)>)
+![A list of numbers and numbers AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (22) (1)>)
 
 To view the configurations associated with the org:
 
@@ -330,7 +330,7 @@ The **Backup** section provides details such as:
 * **Actions**
 * **Last Backup Status**
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (23)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (23) (1)>)
 
 From this page, new configurations can be created using:
 

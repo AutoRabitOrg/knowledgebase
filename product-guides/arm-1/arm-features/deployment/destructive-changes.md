@@ -1,4 +1,4 @@
-# Destructive Changes
+# Handling Deletions or Destructive Changes
 
 {% hint style="info" %}
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
@@ -6,7 +6,17 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
 ### About Destructive Changes <a href="#destructive-changes" id="destructive-changes"></a>
 
-Removing dead code is an important software development aspect that is often neglected. In the world of Salesforce and Apex development, removing dead code promotes a cleaner code base, improves test coverage, and helps reduce deployment time. Unused code will slow you down in both the speed of your application and the speed of your developers in their ability to improve the application. Regularly cleaning up unused code is a good thing to do.
+“Destructive Changes” allows users to remove metadata components from a target Salesforce org as part of the deployment process. This includes deleting components such as classes, fields, objects, or other configurations that are no longer required.
+
+Example: A custom field created during development is no longer needed in Production. Instead of manually deleting it, the user includes it as a destructive change during deployment, ensuring it is removed in a controlled and trackable manner.
+
+This option is useful in the following scenarios:
+
+* Removing unused or deprecated metadata components.
+* Cleaning up technical debt in the org.
+* Aligning target org with source by deleting extra components.
+* Reducing deployment errors caused by obsolete configurations.
+* Maintaining a clean and optimized Salesforce environment.
 
 #### Types of Destructive Changes <a href="#types-of-destructive-changes" id="types-of-destructive-changes"></a>
 

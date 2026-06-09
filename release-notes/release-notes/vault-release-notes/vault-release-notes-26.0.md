@@ -14,9 +14,11 @@ Fixed a validation issue where the Backup Configuration retention field was rest
 
 Fixed an issue where scheduled Replication Jobs were not triggering at their configured times. Customers who configured a Replication Job with a daily schedule and specific interval observed that the job would not trigger as expected.
 
+***
+
 ## Vault Release Notes 26.1.7
 
-**Release Date: 03 Jun 2026**
+**Release Date: 3 June 2026**
 
 **Export Vault User List with Access & Login Details**
 

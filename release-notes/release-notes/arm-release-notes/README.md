@@ -2,7 +2,7 @@
 
 ## ARM **Release Notes 26.2.10** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
-**Release Date: 7th June 2026**
+**Release Date: 7 June 2026**
 
 ### Support for Salesforce Run Relevant Tests in Deployments(New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
 
@@ -23,6 +23,8 @@ Improved performance of the **My Profile → VC Mappings** page for environments
 ### EZ-Commit User Experience Improvements <a href="#ez-commit-user-experience-improvements" id="ez-commit-user-experience-improvements"></a>
 
 Enhanced the EZ-Commit save experience by improving validation feedback for required fields. Mandatory fields are now clearly highlighted when left unselected, helping users identify missing information more quickly and reducing submission errors.
+
+***
 
 ## ARM **Release Notes 26.2.9** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 

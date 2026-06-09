@@ -1,8 +1,10 @@
-# Deploy Profiles & Permission Sets
+# Profile Compare
 
 {% hint style="info" %}
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
+
+This functionality allows users to compare profile components between source and target orgs, review differences in permissions and settings, and then selectively deploy the required changes. It allows users to compare profile permissions and settings between orgs before deploying selected changes.
 
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **`Create > Profile Compare`**.

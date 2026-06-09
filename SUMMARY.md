@@ -714,7 +714,7 @@
       * [Handling Deletions or Destructive Changes](product-guides/arm-1/arm-features/deployment/destructive-changes.md)
       * [Run Apex Tests Before Deployment](product-guides/arm-1/arm-features/deployment/apex-unit-tests.md)
       * [Connect & Sync Your Salesforce Orgs](product-guides/arm-1/arm-features/deployment/connecting-and-syncing-salesforce-orgs.md)
-      * [Deploy Profiles & Permission Sets](product-guides/arm-1/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
+      * [Profile Compare](product-guides/arm-1/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
       * [Track Profile & Permissions Compare History](product-guides/arm-1/arm-features/deployment/monitor-deployments-1.md)
       * [Sharing Settings for Custom Objects](product-guides/arm-1/arm-features/deployment/sharing-settings-for-custom-objects.md)
     * [Dataloader (Import Your Data)](product-guides/arm-1/arm-features/dataloader/README.md)

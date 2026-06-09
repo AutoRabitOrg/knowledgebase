@@ -53,9 +53,7 @@ This option is useful in the following scenarios:
 
 11. On the next page, you can see a list of permissions available for each metadata component. Here, you can update the permissions for each component for all the orgs at once.
     * Permissions/Components that are not available will be denoted by **`X`** in the org.
-    * For the fields that are left blank. For example, in **`Apps`** and **`Datasources`**, no related record type is assigned; hence, nothing shows up or will display '**`No Data Found.`**'\
-      \
-      <br>
+    * For the fields that are left blank. For example, in **`Apps`** and **`Datasources`**, no related record type is assigned; hence, nothing shows up or will display '**`No Data Found.`**'<br>
 12. You can also download the report on your local machine using the **`Download Report`** icon at the bottom of this page.\
     <br>
 

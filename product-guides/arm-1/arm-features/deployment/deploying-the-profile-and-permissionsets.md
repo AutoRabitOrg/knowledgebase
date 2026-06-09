@@ -4,7 +4,19 @@
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
-This functionality allows users to compare profile components between source and target orgs, review differences in permissions and settings, and then selectively deploy the required changes. It allows users to compare profile permissions and settings between orgs before deploying selected changes.
+“Profile Compare” allows users to compare profile and permission set components between a source and a target Salesforce org before deployment. It helps identify differences in object permissions, field-level security, system permissions, and other access settings, enabling users to selectively deploy only the required changes.
+
+Example: If a new field is added in a Sandbox and access is granted to specific profiles, Profile Compare allows the user to review permission differences between Sandbox and Production and deploy only the necessary profile updates.
+
+This option is useful in the following scenarios:
+
+* Profile permissions differ between environments.
+*  You want to selectively deploy permission changes instead of full profile metadata.
+* A new feature requires controlled access updates in Production.
+* You want to avoid overwriting existing permissions unintentionally.
+* Security and access changes need validation before deployment.
+
+
 
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **`Create > Profile Compare`**.

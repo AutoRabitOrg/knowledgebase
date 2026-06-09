@@ -4,11 +4,11 @@
 
 **Release Date: 7 June 2026**
 
-### Support for Salesforce Run Relevant Tests in Deployments(New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
+### Support for Salesforce Run Relevant Tests in Deployments (New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
 
 AutoRABIT now supports Salesforce’s **Run Relevant Tests** test level for deployment validations and deployments. This option executes only the Apex tests identified by Salesforce as impacted by the changes being deployed, helping reduce deployment time and improve CI/CD efficiency while maintaining required test coverage. Support is available across validation, deployment, and Quick Deploy workflows.
 
-### Salesforce Summer ’26 (API Version 67) Support(New) <a href="#salesforce-summer-26-api-version-67-support-new" id="salesforce-summer-26-api-version-67-support-new"></a>
+### Salesforce Summer ’26 (API Version 67) Support (New) <a href="#salesforce-summer-26-api-version-67-support-new" id="salesforce-summer-26-api-version-67-support-new"></a>
 
 AutoRABIT now supports **Salesforce API Version 67**, enabling compatibility with the latest Salesforce Summer ’26 release. This update includes support for newly introduced metadata types such as **FlowValueMap, EmailAuthorizationSettings, InsPlcyLimitConsumptionRule, and OrchestrationPlanCtxMapping**, along with support for Salesforce metadata enhancements in Queue, DataSrcDataModelFieldMap, Network, InvocableActionExtension, and Flow.
 

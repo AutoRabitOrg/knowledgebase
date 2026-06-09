@@ -136,7 +136,7 @@ The next screen is the **`Deployment Summary`** page, where you can view the com
 
 <figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1).png" alt="" width="440"><figcaption></figcaption></figure>
 
-Click on **`Validate Deployment.`** You will be redirected to the [Deployment Summary](../../../arm/arm-features/deployment/monitor-deployments.md) screen, showing the deployment progress.
+Click on **`Validate Deployment.`** You will be redirected to the [Track Deployment History](https://knowledgebase.autorabit.com/~/changes/4384/product-guides/arm-1/arm-features/deployment/monitor-deployments) screen, showing the deployment progress.
 
 ## Frequently Asked Questions
 

@@ -4,7 +4,7 @@
 
 ## nCino - Release 26.2.10
 
-**Release Date:** **07 Jun 2026**
+**Release Date:** **7 June 2026**
 
 #### Multi-Level Approvals for nCino Deployments and Commits <a href="#multi-level-approvals-for-ncino-deployments-and-commits" id="multi-level-approvals-for-ncino-deployments-and-commits"></a>
 
@@ -57,6 +57,8 @@ Introduced a configurable multi-level approval workflow for **nCino Data Deploym
 #### RBC Deployment Label Name Auto-Population <a href="#rbc-deployment-label-name-auto-population" id="rbc-deployment-label-name-auto-population"></a>
 
 Fixed an issue where the deployment label name was not auto-populating with the selected Feature/Template name during RBC deployments in the new UI. The label name now auto-fills as expected, matching the old UI behavior.
+
+***
 
 ## nCino - Release 26.2.8
 

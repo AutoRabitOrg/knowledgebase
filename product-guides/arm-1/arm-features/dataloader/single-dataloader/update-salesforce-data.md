@@ -1,6 +1,17 @@
-# Update Salesforce Data
+# Updating Salesforce Data
 
-The basic DataLoader provides a potent yet easy-to-use application to update data into Salesforce seamlessly.&#x20;
+“Updating Salesforce Data” allows users to modify existing records in a Salesforce org using the DataLoader module. This feature enables bulk updates to field values through structured data uploads, making it easier to manage and maintain large volumes of records efficiently.
+
+Example:\
+If multiple Account records require updates to fields such as Industry, Status, or Ownership, users can prepare a data file with the updated values and execute a bulk update instead of manually editing each record individually.
+
+This option is useful in the following scenarios:
+
+*  Performing bulk updates to existing Salesforce records.
+*  Correcting or standardizing field values across large datasets.
+*  Updating data after business or process changes.
+*  Maintaining data accuracy and consistency at scale.
+*  Reducing manual effort when handling large record volumes.
 
 **Step-By-Step Guide:**
 

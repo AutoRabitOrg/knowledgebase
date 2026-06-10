@@ -8,6 +8,12 @@ The Search & Compare feature enables users to identify, analyze, and restore dat
 
 This functionality helps ensure data integrity, supports audit requirements, and enables controlled restoration of records when needed.
 
+{% hint style="info" %}
+**Note:**
+
+The **Search & Compare** functionality is supported only for data available in **AWS S3**. Data stored outside AWS S3 is not supported for Search & Compare operations.
+{% endhint %}
+
 ### Overview
 
 **Search & Compare allows users to:**

@@ -2,7 +2,17 @@
 
 ### DataLoader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
 
-The DataLoader module in ARM is key to migrating data between Salesforce orgs. To prevent duplicate record creation during migration, ARM supports data synchronization using an **external ID**. This ensures consistent, reliable data movement between source and destination environments.
+“Dataloader Configuration” allows users to configure and define an External ID field that is used during data migration to prevent duplicate record creation. By mapping records based on a unique External ID, the system ensures that existing records are updated instead of creating duplicates.
+
+Example:\
+If Account records are migrated from Sandbox to Production, and some records already exist in Production, configuring an External ID ensures that matching records are updated rather than duplicated. This maintains data integrity and consistency across environments.
+
+This option is useful in the following scenarios:\
+Preventing duplicate record creation during data migration.\
+Synchronizing data between Salesforce orgs using a unique identifier.\
+Performing Upsert operations safely.\
+Maintaining data consistency across environments.\
+Managing repeated data loads without creating redundant records.
 
 ***
 

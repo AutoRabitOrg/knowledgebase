@@ -16,8 +16,8 @@ ARM **DataLoader** allows you to configure your data loading operations in conve
 1. [Extracting Data from Salesforce](../../../arm/arm-features/dataloader/single-dataloader/extract-salesforce-data.md)
 2. [Importing Data into Salesforce](https://knowledgebase.autorabit.com/~/revisions/VeHZ8mcI6dMtGtRmikDE/product-guides/arm-1/arm-features/dataloader/single-dataloader/insert-salesforce-data)
 3. [Deleting Data from Salesforce](https://knowledgebase.autorabit.com/~/revisions/XiCA2Suw9gTFDLOmAdbe/product-guides/arm-1/arm-features/dataloader/single-dataloader/delete-salesforce-data)
-4. [Updating Data in Salesforce](../../../arm/arm-features/dataloader/single-dataloader/update-salesforce-data.md)
-5. [Upserting Data into Salesforce](../../../arm/arm-features/dataloader/single-dataloader/upsert-salesforce-data.md)
+4. [Updating Data in Salesforce](https://knowledgebase.autorabit.com/~/revisions/YKJ8rU4FZ2SDTfP7KP8c/product-guides/arm-1/arm-features/dataloader/single-dataloader/update-salesforce-data)
+5. [Upserting Data into Salesforce](https://knowledgebase.autorabit.com/~/revisions/YKJ8rU4FZ2SDTfP7KP8c/product-guides/arm-1/arm-features/dataloader/single-dataloader/upsert-salesforce-data)
 
 ### DataLoader Pro: Overview <a href="#dataloader-pro-overview" id="dataloader-pro-overview"></a>
 

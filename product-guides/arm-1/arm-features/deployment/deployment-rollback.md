@@ -1,4 +1,4 @@
-# Deployment Rollback
+# Rolling Back a Deployment
 
 {% hint style="info" %}
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
@@ -54,7 +54,7 @@ Next,
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](../../../arm/arm-features/deployment/monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
+10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](https://knowledgebase.autorabit.com/~/revisions/SklNBS1Oownlt5T6Es4V/product-guides/arm-1/arm-features/deployment/monitor-deployments) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
 ### Selective Rollback
 

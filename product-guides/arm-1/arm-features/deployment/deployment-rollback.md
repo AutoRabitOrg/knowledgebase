@@ -42,7 +42,7 @@ Next,
 **Point to Remember:** You must add the version number before continuing with destructive changes for active flow metadata. See the [FlowDefinition guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_flowdefinition.htm) for more detail.
 {% endhint %}
 
-6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Apex Unit Tests](../../../arm/arm-features/deployment/apex-unit-tests.md).
+6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Apex Unit Tests](https://knowledgebase.autorabit.com/~/revisions/VLU9yPmP4DSTi9m5DU71/product-guides/arm-1/arm-features/deployment/apex-unit-tests).
 
 <figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -54,7 +54,7 @@ Next,
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](https://knowledgebase.autorabit.com/~/revisions/SklNBS1Oownlt5T6Es4V/product-guides/arm-1/arm-features/deployment/monitor-deployments) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
+10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](https://knowledgebase.autorabit.com/~/revisions/VLU9yPmP4DSTi9m5DU71/product-guides/arm-1/arm-features/deployment/monitor-deployments) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
 ### Selective Rollback
 

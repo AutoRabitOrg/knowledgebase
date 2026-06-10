@@ -6,7 +6,16 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
 ### About Deployment Rollback <a href="#about-deployment-rollback" id="about-deployment-rollback"></a>
 
-ARM can take a snapshot of your orgs' metadata and copy or deploy it to another org. This will allow you to deploy/rollback changes in a few clicks. The ability to compare two different snapshots (from other orgs) and see the details of what changed can help you track down the cause of problems when they arise.
+“Deployment Rollback” allows users to restore a Salesforce org to a previously captured metadata snapshot in case a deployment causes issues. The system captures metadata snapshots that can be compared and redeployed to revert changes safely.
+
+Example: After deploying new changes to Production, users encounter unexpected errors. Instead of manually identifying and reverting each change, the release manager selects a previously captured snapshot and rolls back the org to its prior stable state in just a few clicks.
+
+This option is useful in the following scenarios:\
+A deployment introduces errors in Production.\
+A hotfix deployment needs to be reversed quickly.\
+You need to compare metadata snapshots to identify what changed.\
+Critical business functionality is impacted after release.\
+A quick and controlled restoration to a known stable state is required.
 
 ### How can I roll back my deployment? <a href="#how-can-i-roll-back-my-deployment" id="how-can-i-roll-back-my-deployment"></a>
 

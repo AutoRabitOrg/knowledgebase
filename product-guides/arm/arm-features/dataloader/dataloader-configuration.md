@@ -7,12 +7,13 @@
 Example:\
 If Account records are migrated from Sandbox to Production, and some records already exist in Production, configuring an External ID ensures that matching records are updated rather than duplicated. This maintains data integrity and consistency across environments.
 
-This option is useful in the following scenarios:\
-Preventing duplicate record creation during data migration.\
-Synchronizing data between Salesforce orgs using a unique identifier.\
-Performing Upsert operations safely.\
-Maintaining data consistency across environments.\
-Managing repeated data loads without creating redundant records.
+This option is useful in the following scenarios:
+
+*  Preventing duplicate record creation during data migration.
+*  Synchronizing data between Salesforce orgs using a unique identifier.
+*  Performing Upsert operations safely.
+*  Maintaining data consistency across environments.
+*  Managing repeated data loads without creating redundant records.
 
 ***
 

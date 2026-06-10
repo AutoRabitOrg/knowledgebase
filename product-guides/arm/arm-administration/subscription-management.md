@@ -146,7 +146,7 @@ Current assigned users: **12 users**
 
 Renewal purchase: **10 licenses**
 
-In this scenario, the subscription cannot be reduced from 11 licenses to 9 licenses while all 11 licenses remain assigned.
+In this scenario, the subscription cannot be reduced from 12 licenses to 10 licenses while all 12 licenses remain assigned.
 
 The customer must first identify which 2 users no longer require access and remove or unassign those users.
 

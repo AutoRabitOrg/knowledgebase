@@ -1,4 +1,4 @@
-# DataLoader
+# Dataloader (Import Your Data)
 
 ### Single DataLoader: Overview <a href="#single-dataloader-overview" id="single-dataloader-overview"></a>
 
@@ -14,8 +14,8 @@ ARM **DataLoader** allows you to configure your data loading operations in conve
 #### Features of Single DataLoader <a href="#features-of-single-dataloader" id="features-of-single-dataloader"></a>
 
 1. [Extracting Data from Salesforce](../../../arm/arm-features/dataloader/single-dataloader/extract-salesforce-data.md)
-2. [Importing Data into Salesforce](../../../arm/arm-features/dataloader/single-dataloader/insert-salesforce-data.md)
-3. [Deleting Data from Salesforce](../../../arm/arm-features/dataloader/single-dataloader/delete-salesforce-data.md)
+2. [Importing Data into Salesforce](https://knowledgebase.autorabit.com/~/revisions/VeHZ8mcI6dMtGtRmikDE/product-guides/arm-1/arm-features/dataloader/single-dataloader/insert-salesforce-data)
+3. [Deleting Data from Salesforce](https://knowledgebase.autorabit.com/~/revisions/XiCA2Suw9gTFDLOmAdbe/product-guides/arm-1/arm-features/dataloader/single-dataloader/delete-salesforce-data)
 4. [Updating Data in Salesforce](../../../arm/arm-features/dataloader/single-dataloader/update-salesforce-data.md)
 5. [Upserting Data into Salesforce](../../../arm/arm-features/dataloader/single-dataloader/upsert-salesforce-data.md)
 

@@ -1,4 +1,4 @@
-# Managing Your Subscription
+# Subscriptions
 
 {% hint style="info" %}
 **Important Notes**:
@@ -113,7 +113,68 @@ After uploading the license key, the administrator can allot the available subsc
 
 All fields on the **Subscription Management** page will get updated.
 
-### FAQ's
+
+
+## Managing License Reductions During Subscription Renewals
+
+### **Overview** <a href="#overview" id="overview"></a>
+
+When a subscription is renewed with a lower license count than the number of currently assigned users, the license reduction cannot be completed automatically.
+
+This is because AutoRABIT cannot determine which users should retain access and which users should be removed from the subscription.
+
+To avoid unintentionally revoking access for active users, customers must review and adjust their user assignments before the license reduction can be applied.
+
+### **Example Scenario** <a href="#example-scenario" id="example-scenario"></a>
+
+Current license allocation: **12 licenses**
+
+Current assigned users: **12 users**
+
+Renewal purchase: **10 licenses**
+
+In this scenario, the subscription cannot be reduced from 11 licenses to 9 licenses while all 11 licenses remain assigned.
+
+The customer must first identify which 2 users no longer require access and remove or unassign those users.
+
+### **Why Customer Action Is Required** <a href="#why-customer-action-is-required" id="why-customer-action-is-required"></a>
+
+User access decisions are customer-specific and may depend on:
+
+* Employee roles and responsibilities
+* Active projects
+* Team assignments
+* Organizational access requirements
+
+AutoRABIT Support and Operations teams do not have visibility into which users should be removed and therefore cannot make this decision on behalf of the customer.
+
+### **How to Delete a User** <a href="#how-to-delete-a-user" id="how-to-delete-a-user"></a>
+
+1. Sign in with an administrator account.
+2. Navigate to Settings › Users.
+3.  Locate the user you want to modify<br>
+
+    <figure><img src="../../../.gitbook/assets/image (2533).png" alt=""><figcaption></figcaption></figure>
+
+
+4.  Delete User – Select the User and click on Delete Selected and Confirm the pop up icon to erase the account permanently.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (2534).png" alt=""><figcaption></figcaption></figure>
+5. Confirm the action by clicking OK in the dialog.
+
+
+
+### **What Happens Next?**
+
+* The license reduction can be completed without impacting the remaining assigned users.
+* Active users who remain assigned will retain uninterrupted access to ARM.
+* Removed users will no longer consume a license.
+* The organization will be aligned with its renewed subscription entitlement.
+* Future user assignments will be limited by the newly purchased license count.
+
+***
+
+## FAQ's
 
 ### Why does my account show the outdated subscription list rather than the amended count list? <a href="#my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list" id="my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list"></a>
 

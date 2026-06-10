@@ -1,13 +1,15 @@
-# Subscription Management
+# Managing Your Subscription
+
+
 
 {% hint style="info" %}
-**Important Notes**:&#x20;
+**Important Notes**:
 
 This article is for the **registered user** in particular. **General users** do not have access to the Subscriptions tab.
 
 * Only the **Registered User** can view the **Subscription Management** page.
 * The **Team Administrator** cannot view the **Subscription Management** page.
-* **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page. 
+* **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page.
 {% endhint %}
 
 ## Feature Availability
@@ -26,28 +28,28 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Log in to your ARM account using the **Registered User** credentials.&#x20;
+1. Log in to your ARM account using the **Registered User** credentials.
 2. Hover your mouse over the **`Admin`** tab and click on **`Subscriptions`**.
 
 <figure><img src="../../../.gitbook/assets/image (709).png" alt="" width="189"><figcaption></figcaption></figure>
 
 3.  Your active plan details will be shown on the dashboard with details like:
 
-    * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.&#x20;
+    * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.
     * **`Total Subscription Allotted:`** Number of licenses utilized to date.
     * **`Total Subscription Available:`** Total number of licenses available.
 
     <figure><img src="../../../.gitbook/assets/image (710).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note**: By default, ARM considers you as part of a team, and if the subscription available denotes 'zero', it means you completely utilize the entire team subscription for your team only.&#x20;
+**Important Note**: By default, ARM considers you as part of a team, and if the subscription available denotes 'zero', it means you completely utilize the entire team subscription for your team only.
 {% endhint %}
 
-### Adding and Configuring Teams  <a href="#adding-and-configuring-teams" id="adding-and-configuring-teams"></a>
+### Adding and Configuring Teams <a href="#adding-and-configuring-teams" id="adding-and-configuring-teams"></a>
 
-This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.&#x20;
+This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.
 
-1. Log in to the **`Subscription Management`** dashboard using the Registered User credential.&#x20;
+1. Log in to the **`Subscription Management`** dashboard using the Registered User credential.
 2. On the right side of the screen, click **`Create Team`**.
 
 <figure><img src="../../../.gitbook/assets/image (711).png" alt=""><figcaption></figcaption></figure>
@@ -69,11 +71,11 @@ This section is about creating the teams and assigning members to those teams. T
 **Important Note**: The granted user will not be counted as a part of the subscribed licenses on the team.
 {% endhint %}
 
-7. &#x20;Click **`Save`**.
+7. Click **`Save`**.
 
 <figure><img src="../../../.gitbook/assets/image (713).png" alt="" width="563"><figcaption></figcaption></figure>
 
-8. The newly created team will be displayed on the **`Subscription Management`** home page.&#x20;
+8. The newly created team will be displayed on the **`Subscription Management`** home page.
 9. For each team created, the following information is displayed:
    * **`Team Name:`** Name of the Team
    * **`Created Date:`** Date/time stamp for the team created
@@ -83,7 +85,7 @@ This section is about creating the teams and assigning members to those teams. T
    * **`Subs. Available:`** Number of licenses pending
 10. Additional options:
     * **`Add New Resource:`** Click on the![](<../../../.gitbook/assets/image (714).png>)symbol to add new resources to the team. The team administrator can create users with their login. However, if you need to add resources from the existing login, follow the steps mentioned in the [Delegate Users](user-management/delegate-approvals-to-another-user.md) section.
-    * **`Edit Team:`** Click on the![](<../../../.gitbook/assets/image (715).png>)icon to modify the team details, like assigning a new team administrator, changing the subscription licenses, etc.&#x20;
+    * **`Edit Team:`** Click on the![](<../../../.gitbook/assets/image (715).png>)icon to modify the team details, like assigning a new team administrator, changing the subscription licenses, etc.
     * **`Delete a Team:`** Click on the![](<../../../.gitbook/assets/image (716).png>)icon to delete the team. This process cannot be undone.
 
 {% hint style="info" %}
@@ -100,9 +102,9 @@ You must submit a support ticket to purchase extra licenses for your organizatio
 
 **Step 1: Upload License Key**
 
-Navigate to **`Admin > Subscription Management`** once you've received the license key file from us. You'll see a summary of the _Total Subscription_ count, _Total Subscription Allotted_ so far, and _Total Subscription Available_ (which can be assigned to a user or team).&#x20;
+Navigate to **`Admin > Subscription Management`** once you've received the license key file from us. You'll see a summary of the _Total Subscription_ count, _Total Subscription Allotted_ so far, and _Total Subscription Available_ (which can be assigned to a user or team).
 
-Click on **`Choose File`** and upload the **`license key`** (.l4j file format). Click **`Upload`**.&#x20;
+Click on **`Choose File`** and upload the **`license key`** (.l4j file format). Click **`Upload`**.
 
 <figure><img src="../../../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
 
@@ -126,7 +128,66 @@ After uploading the license key, the administrator can allot the available subsc
 
 All fields on the **Subscription Management** page will get updated.
 
-### FAQ's
+## Managing License Reductions During Subscription Renewals
+
+### **Overview** <a href="#overview" id="overview"></a>
+
+When a subscription is renewed with a lower license count than the number of currently assigned users, the license reduction cannot be completed automatically.
+
+This is because AutoRABIT cannot determine which users should retain access and which users should be removed from the subscription.
+
+To avoid unintentionally revoking access for active users, customers must review and adjust their user assignments before the license reduction can be applied.
+
+### **Example Scenario** <a href="#example-scenario" id="example-scenario"></a>
+
+Current license allocation: **12 licenses**
+
+Current assigned users: **12 users**
+
+Renewal purchase: **10 licenses**
+
+In this scenario, the subscription cannot be reduced from 11 licenses to 9 licenses while all 11 licenses remain assigned.
+
+The customer must first identify which 2 users no longer require access and remove or unassign those users.
+
+### **Why Customer Action Is Required** <a href="#why-customer-action-is-required" id="why-customer-action-is-required"></a>
+
+User access decisions are customer-specific and may depend on:
+
+* Employee roles and responsibilities
+* Active projects
+* Team assignments
+* Organizational access requirements
+
+AutoRABIT Support and Operations teams do not have visibility into which users should be removed and therefore cannot make this decision on behalf of the customer.
+
+### **How to Delete a User** <a href="#how-to-delete-a-user" id="how-to-delete-a-user"></a>
+
+1. Sign in with an administrator account.
+2. Navigate to Settings › Users.
+3.  Locate the user you want to modify<br>
+
+    <figure><img src="../../../.gitbook/assets/image (2533).png" alt=""><figcaption></figcaption></figure>
+
+
+4.  Delete User – Select the User and click on Delete Selected and Confirm the pop up icon to erase the account permanently.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (2534).png" alt=""><figcaption></figcaption></figure>
+5. Confirm the action by clicking OK in the dialog.
+
+
+
+### **What Happens Next?**
+
+* The license reduction can be completed without impacting the remaining assigned users.
+* Active users who remain assigned will retain uninterrupted access to ARM.
+* Removed users will no longer consume a license.
+* The organization will be aligned with its renewed subscription entitlement.
+* Future user assignments will be limited by the newly purchased license count.
+
+***
+
+## FAQ's
 
 ### Why does my account show the outdated subscription list rather than the amended count list? <a href="#my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list" id="my-account-shows-the-outdated-subscription-list-rather-than-the-amended-count-list"></a>
 

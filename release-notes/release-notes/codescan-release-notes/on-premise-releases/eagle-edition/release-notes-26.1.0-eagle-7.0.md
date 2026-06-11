@@ -635,7 +635,7 @@ Validation after fix:&#x20;
 
 As such, we are reporting that this issue has been fully remediated.&#x20;
 
-#### 5. Fixed issue with rule “Unescaped Error Message XSS”&#x20;
+#### 5. Fixed issue with Unescaped Error Message XSS Rule
 
 Earlier, the Unescaped Output Rule was able to trace data flow through methods but not through assignment chains effectively. Due to missing/inefficient assignment data flow handling, the rule repeatedly re-entered isSanitized while resolving sanitization status for variables passed through assignments. This resulted in deep recursive calls and ultimately a StackOverflowError, instead of reporting a violation&#x20;
 

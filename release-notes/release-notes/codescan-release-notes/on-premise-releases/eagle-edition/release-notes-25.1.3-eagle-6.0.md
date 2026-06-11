@@ -6,7 +6,7 @@
 
 ### Summary
 
-CodeScan Self-Hosted (version 25.1.3 (Eagle v6) is comprised of the following 25 components:
+CodeScan Self-Hosted version 25.1.3 (Eagle v6) is comprised of the following 25 components:
 
 * 1 New Feature
 * 15 Rule Enhancements

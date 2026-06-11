@@ -1,5 +1,84 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.2.11** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date: 14th June 2026**
+
+***
+
+### Parallel Processor Execution Fix <a href="#parallel-processor-execution-fix" id="parallel-processor-execution-fix"></a>
+
+Fixed an issue in CI Jobs where Parallel Processor executions could fail to trigger external automation workflows due to backend request handling inconsistencies. The execution logic has been updated to ensure parallel processor requests are processed correctly, improving the reliability of post-deployment automation integrations.
+
+**Impacted Areas:**
+
+* CI Jobs
+* Parallel Processor Integration
+* Post-Deployment Automation Workflows
+
+### Branching Baseline Deletion Control Improvement <a href="#branching-baseline-deletion-control-improvement" id="branching-baseline-deletion-control-improvement"></a>
+
+Improved Branching Baseline handling by restricting deletion actions when an abort operation is already in progress. This prevents users from performing conflicting actions on baseline iterations and helps maintain consistent baseline processing behavior.
+
+**Impacted Area:**
+
+* Settings → Branching Baseline Module
+
+### Connected App Search & Substitute Support <a href="#connected-app-search-and-substitute-support" id="connected-app-search-and-substitute-support"></a>
+
+Enhanced Search & Substitute to support `ConnectedApp` metadata, allowing users to dynamically replace Connected App configuration values during Commit, CI Job, and Deployment execution.
+
+This enhancement helps manage environment-specific Connected App configurations without manual XML updates.
+
+**Impacted Areas:**
+
+* Search & Substitute
+
+### Permission Set Agent Access Support <a href="#permission-set-agent-access-support" id="permission-set-agent-access-support"></a>
+
+Added support for the `<agentAccesses>` node in Salesforce Permission Sets to ensure agent access configurations are correctly retained during metadata operations. Previously, these entries were retrieved successfully but were excluded during commit processing. With this enhancement, agent access configurations are now preserved across version control and deployment workflows.
+
+**Impacted Areas:**
+
+* Version Control
+* Deployments
+
+### Package.xml Custom Object Retrieval Fix <a href="#package.xml-custom-object-retrieval-fix" id="package.xml-custom-object-retrieval-fix"></a>
+
+Fixed an issue in EZ-Commit where certain metadata components, including Custom Objects, could be skipped when retrieving components using an uploaded `package.xml`. The package.xml retrieval logic has been improved to ensure valid metadata components are retained and displayed correctly in the Added/Modified Metadata Components tab.
+
+**Impacted Area:**
+
+* EZ-Commit using `package.xml`
+
+### Merge Approval Link Fix - New UI <a href="#merge-approval-link-fix-new-ui" id="merge-approval-link-fix-new-ui"></a>
+
+Fixed an issue in the New UI where approvers saw an “Unknown Error” after clicking the approval link from an EZ-Merge email notification. The approval link now redirects correctly to the Merge Label approval pop-up, allowing users to review and approve merge requests as expected.
+
+**Impacted Area:**
+
+* EZ-Merge Approval Workflow (New UI)
+
+### Branch Permission Inheritance for Commit Visibility <a href="#branch-permission-inheritance-for-commit-visibility" id="branch-permission-inheritance-for-commit-visibility"></a>
+
+Fixed an issue where commit labels created by sub-users were not visible to Custom Admins when branches were created through the EZ-Commit workflow. Branch permissions are now automatically inherited and synchronized during branch creation, ensuring authorized users can view and approve commits without requiring manual branch access assignment.
+
+**Impacted Areas:**
+
+* EZ-Commit Branch Creation
+* Commit Label Visibility
+
+### Commit Label Visibility for Custom Admins <a href="#commit-label-visibility-for-custom-admins" id="commit-label-visibility-for-custom-admins"></a>
+
+Fixed an issue where Custom Admins could not view or approve commit labels created by sub-users when branches were created through the EZ-Commit workflow. Branch permissions are now automatically inherited from the parent branch and synchronized during branch creation, ensuring commit labels remain visible and accessible to authorized approvers.
+
+**Impacted Areas:**
+
+* EZ-Commit Branch Creation
+* Commit Label Visibility
+
+***
+
 ## ARM **Release Notes 26.2.10** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 7 June 2026**

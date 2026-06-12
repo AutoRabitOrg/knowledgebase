@@ -42,4 +42,4 @@ Output options include structured JSON, reports (`.guard/reports/`), and upload 
 3. Add a pipeline step: `sf guard review --pr --check-tests --progress --url <your-guard-url> <workspace>`.
 4. In Guard, open **Analysis Findings** to review detected issues, policies, and scan history.
 
-See the User Guide for more details on getting set up, and for the full range of commands available in the CLI.
+See the [Agentic Code Analysis User Guide](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide) for more details on getting set up, and for the [full range of commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference) available in the CLI.

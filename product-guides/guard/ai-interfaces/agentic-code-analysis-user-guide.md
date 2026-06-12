@@ -3,11 +3,11 @@
 {% hint style="info" %}
 **How to Use this Guide**
 
-&#x20;⁉️ Not sure what Agentic Code Analysis is? → Start here
+&#x20;⁉️ Not sure what Agentic Code Analysis is? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-1.-what-is-agentic-code-analysis)
 
-&#x20;💻 Just want to know how to get setup? → Start here
+&#x20;💻 Just want to know how to get setup? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-2.-api-keys)
 
-&#x20;💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with your results, learn about additional commands, and unlock Advanced AI Suggestions.
+&#x20;💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with [your results](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results), learn about [additional commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference), and unlock [Advanced AI Suggestions](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-8.-advanced-ai-suggestions).
 {% endhint %}
 
 ### What is Agentic Code Analysis? <a href="#id-1.-what-is-agentic-code-analysis" id="id-1.-what-is-agentic-code-analysis"></a>
@@ -58,7 +58,9 @@ The Repositories page links your source control repositories to AutoRABIT Guard 
 * PR-scoped reviews (`--pr`) can map CI environment variables to the registered repo.
 * History, dashboards, and filters work by repository.
 
+{% hint style="info" %}
 Repositories are added to Guard automatically when a scan is first executed from the Guard CLI.
+{% endhint %}
 
 #### How to Manually Register a Repository (optional) <a href="#how-to-manually-register-a-repository-optional" id="how-to-manually-register-a-repository-optional"></a>
 
@@ -110,18 +112,18 @@ Agentic scans are currently only supported from the CLI interface. Agentic Code 
 
 #### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-| Requirement | Notes                                                                                                     |
-| ----------- | --------------------------------------------------------------------------------------------------------- |
-| **Node.js** | Node **20+** required (22+ recommended); the Salesforce CLI bundles its own runtime for plugin install.   |
-| **Access**  | Access to your Guard host (e.g. `https://fc-dev.autorabit.com`) and `npm` registry for `@salesforce/cli`. |
-| **API key** | `GUARD_API_KEY` set within Guard (see Section 2).                                                         |
+| Requirement | Notes                                                                                                                                                                      |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Node.js** | Node **20+** required (22+ recommended); the Salesforce CLI bundles its own runtime for plugin install.                                                                    |
+| **Access**  | Access to your Guard host (e.g. `https://fc-dev.autorabit.com`) and `npm` registry for `@salesforce/cli`.                                                                  |
+| **API key** | `GUARD_API_KEY` set within Guard (see [API Keys](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-2.-api-keys)). |
 
-#### &#x20;Installation: Salesforce CLI plugin <a href="#installation-salesforce-cli-plugin" id="installation-salesforce-cli-plugin"></a>
+#### Installation: Salesforce CLI plugin <a href="#installation-salesforce-cli-plugin" id="installation-salesforce-cli-plugin"></a>
 
 In this option Guard runs as a Salesforce plugin. This is the recommended option for most users.
 
 1. In your terminal, run `npm install -g @salesforce/cli`. This installs the Salesforce CLI globally.
-2. Insert your API Key (from Section 2) (YOUR\_GUARD\_API\_KEY) and Guard URL (YOUR\_GUARD\_URL e.g. [https://na1.autorabit.com](https://na1.autorabit.com/)) into the following command
+2. Insert your API Key (YOUR\_GUARD\_API\_KEY) and Guard URL (YOUR\_GUARD\_URL e.g. [https://na1.autorabit.com](https://na1.autorabit.com/)) into the following command
    1. `curl -kSL -H "X-API-Key: YOUR_GUARD_API_KEY" \`\
       `-o /tmp/sf-guard-cli.tgz \`\
       `YOUR_GUARD_URL/cli/sf-guard-cli.tgz`
@@ -151,7 +153,7 @@ Additional commands:
 * `--json` : machine-readable `GuardReviewResult` on stdout for downstream gates.
 * `--no-upload` : local-only run (debugging).
 
-For more commands to run in the CLI, see Appendix 1.
+For more commands to run in the CLI, see [Appendix 1](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference).
 
 {% hint style="info" %}
 All agentic code scan results are saved in the Guard platform under **Agentic Code Analysis** → **Analysis Findings**.
@@ -177,9 +179,11 @@ All agentic code scan results are saved in the Guard platform under **Agentic Co
 
 ### Advanced AI Suggestions <a href="#id-8.-advanced-ai-suggestions" id="id-8.-advanced-ai-suggestions"></a>
 
-Advanced AI Suggestions enrich your findings with file-by-file code fixes. These show where the issue and exactly what to change, add, or delete. When enabled, suggested patches span all affected files, and you can download them for the whole scan or per finding (see Section 7).
+Advanced AI Suggestions enrich your findings with file-by-file code fixes. These show where the issue and exactly what to change, add, or delete. When enabled, suggested patches span all affected files, and you can download them for the whole scan or per finding (see [Section 7](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results)).
 
-Advanced AI Suggestions is configured **per repository** and is **off by default**. When it is off, scans will still produce findings but without suggested patches.
+{% hint style="info" %}
+Advanced AI Suggestions is configured **per repository** and is **off by default**. When it is off, scans will still produce findings, but without suggested patches.
+{% endhint %}
 
 #### How to enable Advanced AI Suggestions <a href="#how-to-enable-advanced-ai-suggestions" id="how-to-enable-advanced-ai-suggestions"></a>
 

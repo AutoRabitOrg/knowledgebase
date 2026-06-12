@@ -2,9 +2,7 @@
 
 ## ARM **Release Notes 26.2.11** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
-**Release Date: 14th June 2026**
-
-***
+**Release Date: 14 June 2026**
 
 ### Parallel Processor Execution Fix <a href="#parallel-processor-execution-fix" id="parallel-processor-execution-fix"></a>
 

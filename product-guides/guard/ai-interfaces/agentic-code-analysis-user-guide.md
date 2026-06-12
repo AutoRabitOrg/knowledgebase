@@ -1,0 +1,271 @@
+# Agentic Code Analysis User Guide
+
+{% hint style="info" %}
+**How to Use this Guide**
+
+&#x20;⁉️ Not sure what Agentic Code Analysis is? → Start here
+
+&#x20;💻 Just want to know how to get setup? → Start here
+
+&#x20;💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with your results, learn about additional commands, and unlock Advanced AI Suggestions.
+{% endhint %}
+
+### What is Agentic Code Analysis? <a href="#id-1.-what-is-agentic-code-analysis" id="id-1.-what-is-agentic-code-analysis"></a>
+
+Get actionable, high-quality insights on your Salesforce code.
+
+#### Features: <a href="#features" id="features"></a>
+
+* **Drag and drop rule creation.** Drop in a policy document. Guard extracts the requirements and translates them into rules.
+* **Fully customisable.** Review, edit, and toggle each rule on or off before you run it.
+* **Downloadable patches.** Get suggested code fixes and add them to your code base.
+* **Transparent cost reporting.** Credit usage is displayed per scan.
+
+### API Keys <a href="#id-2.-api-keys" id="id-2.-api-keys"></a>
+
+The API Keys page lets tenant administrators create long-lived API keys used by automation (Bitbucket Pipelines, GitHub Actions, Jenkins, local CLI) to authenticate to Guard without an interactive Keycloak login. The CLI reads the key from the `GUARD_API_KEY` environment variable or the `--api-key` flag.
+
+Only users with Guard administration permissions can access API Keys. Keys are tenant-scoped so one key works for all repositories registered within your tenant environment (unless your admin configures restrictions).
+
+#### Page overview <a href="#page-overview" id="page-overview"></a>
+
+| Area                | Description                                                            |
+| ------------------- | ---------------------------------------------------------------------- |
+| **Key list**        | Active keys with name, created date, last used (if shown), and status. |
+| **Create key**      | Opens a dialog to name the key and generate a secret.                  |
+| **Revoke / delete** | Immediately invalidates a compromised or rotated key.                  |
+
+#### How to generate an API key <a href="#how-to-generate-an-api-key" id="how-to-generate-an-api-key"></a>
+
+1. Sign in to **AutoRABIT Guard** (e.g. `https://fc-dev.autorabit.com` for dev).
+2. Open **Settings** → **API Keys** (or **Integrations** → **API Keys**, per your build).
+3. Click **Create API Key** (or **Generate key**).
+4. Enter a **descriptive name** (e.g. `bitbucket-pipeline-prod`, `developer-laptop-jane`).
+5. Confirm creation.
+6. **Copy the secret immediately** — it is shown **once**. Store it in your CI secret store (Bitbucket repository variables, GitHub Secrets, Vault, etc.).
+
+#### Recommended Security practices <a href="#recommended-security-practices" id="recommended-security-practices"></a>
+
+* Use one key per environment (dev / staging / prod).
+* Rotate on schedule or after personnel changes.
+* Use CI secret variables over plain text in `bitbucket-pipelines.yml`.
+
+### Repositories <a href="#id-3.-repositories" id="id-3.-repositories"></a>
+
+The Repositories page links your source control repositories to AutoRABIT Guard so that:
+
+* Scan results are attributed to the correct repo.
+* PR-scoped reviews (`--pr`) can map CI environment variables to the registered repo.
+* History, dashboards, and filters work by repository.
+
+Repositories are added to Guard automatically when a scan is first executed from the Guard CLI.
+
+#### How to Manually Register a Repository (optional) <a href="#how-to-manually-register-a-repository-optional" id="how-to-manually-register-a-repository-optional"></a>
+
+You **do not need to** manually register a repository before using the AutoRABIT Guard CLI. However, if you choose you can do so by:
+
+1. In Guard, go to **Settings** → **Repositories**.
+2. Click **Add repository**.
+3. Provide:
+   * **Name**: label for your reference (e.g. `flowcenter-services`).
+   * **Repository URL:** full URL e.g. `https://bitbucket.org/ar-engineering/flowcenter-services`
+   * **CLI timeout:** The maximum time a Guard CLI execution can run before timing out, in minutes e.g. 30 minutes
+4. Save. The repository appears in the list.
+
+<figure><img src="../../../.gitbook/assets/image (2540).png" alt=""><figcaption></figcaption></figure>
+
+### Customise your Ruleset <a href="#id-4.-customise-your-ruleset" id="id-4.-customise-your-ruleset"></a>
+
+By default, Agentic Code Analysis uses a carefully created ruleset of best-practice security checks on your Salesforce code. But of course, we appreciate that every organisation has it’s own unique requirements, so the rule set is fully customisable.
+
+Each rule from the Standard ruleset can be edited within AutoRABIT Guard or disabled. Within **Agentic Code Analysis** → **Rules,** select a rule you would like to edit to open the editing pop-up. Click **Save Changes** to apply your edits.
+
+In addition, you can create new Custom Rules either by uploading a pdf file or typing your rule in natural language. Go to **Agentic Code Analysis** → **Rules** and click the **Create Rule** button.
+
+<figure><img src="../../../.gitbook/assets/image (2542).png" alt="" width="375"><figcaption></figcaption></figure>
+
+1. **Create from text**. Type your rule or intention and get it validated by an AI agent.
+
+<figure><img src="../../../.gitbook/assets/image (2543).png" alt="" width="375"><figcaption></figcaption></figure>
+
+2. For the best results, be as specific as possible. For example, “Block any code that looks suspicious” is too generic, and the agent will not be able to suggest an improvement. But instead a good prompt could be “Block Apex code that uses dynamic SOQL without validation”.
+3. After successful validation, the properties of the rule (Name, Type, Severity, Category and Framework) will be populated automatically. Please review these and edit if necessary - AI can make mistakes.
+4.  **Generate from File.** Upload a PDF of your security policies or related documentation to bulk upload a set of rules.
+
+    1. An AI agent will analyse the file and extract rules - depending on the size of the file this might take a few minutes.
+
+    <figure><img src="../../../.gitbook/assets/image (2544).png" alt="" width="375"><figcaption></figcaption></figure>
+
+    b. You will then be taken through each extracted rule for review. Please check these carefully, along with the properties associated with each rule, as AI can make mistakes. The flow will first take you through rules that have an existing match within your rule set (across both standard and custom) - you can choose to remove one of the duplicates or keep both.
+
+    <figure><img src="../../../.gitbook/assets/image (2545).png" alt="" width="375"><figcaption></figcaption></figure>
+
+&#x20;
+
+Once you are happy with your rule set, you are ready to run a scan from the CLI. If you already have the Guard CLI set up, continue running Agentic Code Review.
+
+### Download and install the CLI <a href="#id-5.-download-and-install-the-cli" id="id-5.-download-and-install-the-cli"></a>
+
+Agentic scans are currently only supported from the CLI interface. Agentic Code Analysis uses the Guard CLI distributed as a Salesforce CLI plugin (`sf guard …`). This requires a bit of technical setup - so if you don’t have these installed already, you need Node.js, the global Salesforce CLI, and the plugin bundle from your Guard instance.
+
+#### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+
+| Requirement | Notes                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| **Node.js** | Node **20+** required (22+ recommended); the Salesforce CLI bundles its own runtime for plugin install.   |
+| **Access**  | Access to your Guard host (e.g. `https://fc-dev.autorabit.com`) and `npm` registry for `@salesforce/cli`. |
+| **API key** | `GUARD_API_KEY` set within Guard (see Section 2).                                                         |
+
+#### &#x20;Installation: Salesforce CLI plugin <a href="#installation-salesforce-cli-plugin" id="installation-salesforce-cli-plugin"></a>
+
+In this option Guard runs as a Salesforce plugin. This is the recommended option for most users.
+
+1. In your terminal, run `npm install -g @salesforce/cli`. This installs the Salesforce CLI globally.
+2. Insert your API Key (from Section 2) (YOUR\_GUARD\_API\_KEY) and Guard URL (YOUR\_GUARD\_URL e.g. [https://na1.autorabit.com](https://na1.autorabit.com/)) into the following command
+   1. `curl -kSL -H "X-API-Key: YOUR_GUARD_API_KEY" \`\
+      `-o /tmp/sf-guard-cli.tgz \`\
+      `YOUR_GUARD_URL/cli/sf-guard-cli.tgz`
+3. Install the downloaded file as a Salesforce plugin. Run `echo y | sf plugins install file:///tmp/sf-guard-cli.tgz`
+
+### Run an Agentic Code Review <a href="#id-6.-run-an-agentic-code-review" id="id-6.-run-an-agentic-code-review"></a>
+
+Once you’ve completed steps 1-5, you’re ready to use Agentic Code Analysis on your repository. This is performed from your terminal.
+
+{% hint style="info" %}
+The ruleset applied to the scan will reflect the currently enabled rules on your Rules page within Guard (both Standard and Custom).
+{% endhint %}
+
+Here we outline suggested commands to run your first code review. Please speak to your Technical team to refine the command. A full list of commands is available here.
+
+The Guard CLI is invoked as `sf guard review`. Replace the placeholders in the following command with your Guard instance URL (e.g. `https://na1.autorabit.com`) and the workspace path to review (e.g. `$BITBUCKET_CLONE_DIR`):
+
+* Salesforce CLI plugin:
+  * `sf guard review --check-tests --progress --pr \`\
+    `--url "YOUR_GUARD_URL" \`\
+    `"YOUR_WORKSPACE"`
+
+Additional commands:
+
+* `export GUARD_API_KEY=...` in pipeline variables (required if not passed via `--api-key`).
+* `--html` : write `.guard/reports/<stem>.html` as a build artifact.
+* `--json` : machine-readable `GuardReviewResult` on stdout for downstream gates.
+* `--no-upload` : local-only run (debugging).
+
+For more commands to run in the CLI, see Appendix 1.
+
+{% hint style="info" %}
+All agentic code scan results are saved in the Guard platform under **Agentic Code Analysis** → **Analysis Findings**.
+{% endhint %}
+
+### Viewing results <a href="#id-7.-viewing-results" id="id-7.-viewing-results"></a>
+
+#### Main entry: AutoRABIT Guard <a href="#main-entry-autorabit-guard" id="main-entry-autorabit-guard"></a>
+
+1. From the Guard navigation, open **Agentic Code Analysis** → **Analysis Findings.**
+2. Filter by **context, period, repository** or **status**.
+3.  Open a scan to see:
+
+    * Breakdown of findings by severity type.
+    * AI credits consumed.
+    * **Findings list**: file, line, rule id, severity.
+
+    <figure><img src="../../../.gitbook/assets/image (2546).png" alt=""><figcaption></figcaption></figure>
+4.  Drill into a finding to see the code context and suggested fix.
+
+    <figure><img src="../../../.gitbook/assets/image (2547).png" alt="" width="563"><figcaption></figcaption></figure>
+5. Download the patches for the whole scan or for each finding. Downloadable patches are produced only when **Advanced AI Suggestions** is enabled for the repository.
+
+### Advanced AI Suggestions <a href="#id-8.-advanced-ai-suggestions" id="id-8.-advanced-ai-suggestions"></a>
+
+Advanced AI Suggestions enrich your findings with file-by-file code fixes. These show where the issue and exactly what to change, add, or delete. When enabled, suggested patches span all affected files, and you can download them for the whole scan or per finding (see Section 7).
+
+Advanced AI Suggestions is configured **per repository** and is **off by default**. When it is off, scans will still produce findings but without suggested patches.
+
+#### How to enable Advanced AI Suggestions <a href="#how-to-enable-advanced-ai-suggestions" id="how-to-enable-advanced-ai-suggestions"></a>
+
+Only Guard administrators can change this setting.
+
+1. In Guard, go to **Settings** → **Repositories**.
+2. Find the repository and toggle **Advanced AI Suggestions** on.
+3. The setting applies to **future** scans; it does not change results from scans you have already run.
+
+### Command reference <a href="#id-9.-command-reference" id="id-9.-command-reference"></a>
+
+#### Positional argument <a href="#positional-argument" id="positional-argument"></a>
+
+| Argument   | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| `<folder>` | Workspace root to review. Defaults to current working directory. |
+
+#### Guard connection flags <a href="#guard-connection-flags" id="guard-connection-flags"></a>
+
+| Flag                       | Description                                                      |
+| -------------------------- | ---------------------------------------------------------------- |
+| `--endpoint <url>`         | Override Guard GraphQL endpoint.                                 |
+| `--url <url>`              | Override Guard application URL (bootstrap / Keycloak discovery). |
+| `--api-key <key>`          | API key override (same as `GUARD_API_KEY`).                      |
+| `--trust-all-certificates` | Disable TLS validation. Default `false`. Dev only.               |
+
+#### Review-specific flags <a href="#review-specific-flags" id="review-specific-flags"></a>
+
+| Flag                      | Description                                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `--check-tests`           | Analyze test files with `test-quality-<framework>` agents; exclude tests from normal policy pass. Default `false`. |
+| `--test-frameworks <csv>` | Restrict test agents: `apex`, `java`, `typescript`, `angular`. Only with `--check-tests`.                          |
+| `--pr`                    | PR base from CI; **hard-restrict** scan to changed files only. Default `false`.                                    |
+| `--progress`              | Live dashboard (phase, tokens, tool calls). Default `false`.                                                       |
+| `--html`                  | Write HTML report to `.guard/reports/<stem>.html`. Default `false`.                                                |
+| `--no-upload`             | Skip backend upload; local report still works with `--html`. Default `false`.                                      |
+
+#### Built-in oclif flags <a href="#built-in-oclif-flags" id="built-in-oclif-flags"></a>
+
+| Flag     | Description                              |
+| -------- | ---------------------------------------- |
+| `--json` | Emit `GuardReviewResult` JSON on stdout. |
+| `--help` | Command help.                            |
+
+#### Environment variables <a href="#environment-variables" id="environment-variables"></a>
+
+| Variable                                 | Purpose                                                                                                                  |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `GUARD_API_KEY`                          | Auth token (same as `--api-key`).                                                                                        |
+| `GUARD_APP_URL`                          | Guard application URL (same as `--url`; used for bootstrap / Keycloak discovery).                                        |
+| `GUARD_GRAPHQL_ENDPOINT`                 | Guard GraphQL endpoint override (same as `--endpoint`).                                                                  |
+| `GUARD_DEBUG`                            | When set, prints the path of the per-scan JSONL debug trace to stderr.                                                   |
+| `GUARD_RULE_BUNDLES`                     | Set to `off` to skip downloading rule bundles from the backend and use the CLI’s embedded rules (offline runs).          |
+| `GUARD_NO_UPDATE_CHECK`                  | Skip the plugin version-skew check that runs before a review.                                                            |
+| `GUARD_MODEL_HINT`                       | Label stored on uploaded scan `llmModel`; does not change runtime model.                                                 |
+| `GUARD_REVIEWER_MAX_INPUT_TOKENS`        | Reviewer batch input cap (default \~180,000).                                                                            |
+| `GUARD_REVIEWER_MAX_SAMPLES_PER_CLUSTER` | Max sample findings per dedup cluster before summary (default `5`).                                                      |
+| `GUARD_REVIEWER_MAX_FINDINGS_PER_BATCH`  | Max findings handed to a single reviewer batch (advanced tuning; default derived from the reviewer output-token budget). |
+| `GUARD_REVIEWER_OUTPUT_TOKEN_LIMIT`      | Reviewer output-token budget used to size batches; must match the backend’s `max_tokens` (default `8192`). Advanced.     |
+
+#### Example commands <a href="#example-commands" id="example-commands"></a>
+
+**Full PR review in CI:**
+
+`sf guard review --pr --check-tests --progress \ --url "https://fc-dev.autorabit.com" \ /path/to/repo`
+
+**Local HTML report without upload:**
+
+`sf guard review --html --no-upload ./my-sfdx-project`
+
+**JSON for quality gate:**
+
+`sf guard review --json --pr ./repo > guard-result.json`
+
+#### Related `sf guard` commands <a href="#related-sf-guard-commands" id="related-sf-guard-commands"></a>
+
+The `sf guard` Salesforce plugin ships two commands:
+
+| Command | Purpose |
+| ------- | ------- |
+
+| Command           | Purpose                                                                                                                                                                 |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sf guard review` | Run an AI-powered Agentic Code Analysis review (the command documented throughout this guide).                                                                          |
+| `sf guard update` | Re-download and reinstall the Guard plugin so it matches the version your backend currently serves. Use this to upgrade instead of repeating the manual `curl` install. |
+
+{% hint style="info" %}
+The `standards convert` / `standards violations` commands you may see elsewhere belong to the separate AutoRABIT Guard **Skill** package (a different distribution), not the `sf guard` Salesforce plugin described in this guide.
+{% endhint %}

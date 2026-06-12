@@ -104,6 +104,7 @@
     * [Vault Release Notes 22.0](release-notes/release-notes/vault-release-notes/vault-release-notes-22.0.md)
     * [Vault Release Notes 21.0](release-notes/release-notes/vault-release-notes/vault-release-notes-21.0.md)
   * [Guard Release Notes](release-notes/release-notes/guard.md)
+    * [Guard Release Notes 26.2](release-notes/release-notes/guard/guard-release-notes-26.2.md)
     * [Guard Release Notes 26.1](release-notes/release-notes/guard/guard-release-notes-26.1.md)
     * [Guard Release Notes 25.2](release-notes/release-notes/guard/release-notes-25.2.md)
     * [Guard Release Notes 25.1](release-notes/release-notes/guard/release-notes-25.1.md)
@@ -1300,6 +1301,7 @@
       * [Data Classification](product-guides/guard/data-classification.md)
     * [Risk](product-guides/guard/features/risk/README.md)
       * [API Security](product-guides/guard/api-security.md)
+      * [Drift Policies](product-guides/guard/features/risk/drift-policies.md)
       * [Permissions Explorer](product-guides/guard/permissions-explorer.md)
       * [Public File Exposure](product-guides/guard/features/risk/public-file-exposure.md)
       * [Risk Assessment](product-guides/guard/risk-assessment.md)
@@ -1309,8 +1311,10 @@
       * [Change Monitoring](product-guides/guard/change-monitoring.md)
       * [Real-time Change Notifications](product-guides/guard/features/compliance/real-time-change-notifications.md)
       * [User Activity Monitoring](product-guides/guard/features/compliance/user-activity-monitoring.md)
+    * [Agentic Code Analysis](product-guides/guard/features/agentic-code-analysis.md)
   * [AI Interfaces](product-guides/guard/ai-interfaces/README.md)
     * [Guard MCP & Skill: User Guide](product-guides/guard/ai-interfaces/guard-mcp-and-skill-user-guide.md)
+    * [Agentic Code Analysis User Guide](product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide.md)
     * [AI Interfaces for AutoRABIT Guard: Technical Specification](product-guides/guard/ai-interfaces/ai-interfaces-for-autorabit-guard-technical-specification.md)
 
 ## Resources

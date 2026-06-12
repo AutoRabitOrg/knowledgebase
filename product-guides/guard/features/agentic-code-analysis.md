@@ -1,5 +1,15 @@
 # Agentic Code Analysis
 
+{% hint style="info" %}
+### Important Disclaimers <a href="#important-disclaimers" id="important-disclaimers"></a>
+
+Custom rule creation has built-in validation that uses AI to analyse the logic, specificity and uniqueness of the rule. AI can make mistakes, and we cannot guarantee that a “validated” rule in Guard will give the desired results.
+
+Every scan in Agentic Code Analysis uses AI credits, and the number of credits a scan uses will vary. Speak to us about increasing your credit limit.
+
+Also, Agentic Code Analysis is not enabled in AutoRABIT Guard by default. Please contact us to get started.
+{% endhint %}
+
 ### Overview <a href="#overview" id="overview"></a>
 
 **Agentic Code Analysis** in AutoRABIT Guard reviews your code with AI-powered agents, achieving more accurate and reliable results than pattern-based scanning alone. It runs in your CI/CD pipeline via the **Guard CLI** , uploads structured results to Guard and recommends code patches.
@@ -43,13 +53,3 @@ Output options include structured JSON, reports (`.guard/reports/`), and upload 
 4. In Guard, open **Analysis Findings** to review detected issues, policies, and scan history.
 
 See the [Agentic Code Analysis User Guide](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide) for more details on getting set up, and for the [full range of commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference) available in the CLI.
-
-{% hint style="info" %}
-### Important Disclaimers <a href="#important-disclaimers" id="important-disclaimers"></a>
-
-Custom rule creation has built-in validation that uses AI to analyse the logic, specificity and uniqueness of the rule. AI can make mistakes, and we cannot guarantee that a “validated” rule in Guard will give the desired results.
-
-Every scan in Agentic Code Analysis uses AI credits, and the number of credits a scan uses will vary. Speak to us about increasing your credit limit.
-
-Agentic Code Analysis is not enabled in AutoRABIT Guard by default. Please contact us to get started.
-{% endhint %}

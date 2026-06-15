@@ -73,8 +73,12 @@ You’ll need the **`Deployment History`** access permission.
 
             <figure><img src="../../../../.gitbook/assets/image (2549).png" alt=""><figcaption></figcaption></figure>
 
-            \
-            Pending L2 Approval
+            Email to Approver\
+            ![](<../../../../.gitbook/assets/image (2552).png>)<br>
+
+
+
+        Pending L2 Approval
 
         <figure><img src="../../../../.gitbook/assets/image (2551).png" alt=""><figcaption></figcaption></figure>
 

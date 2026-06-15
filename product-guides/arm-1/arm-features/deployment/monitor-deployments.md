@@ -138,9 +138,9 @@ You’ll need the **`Deployment History`** access permission.
 
 A new section called the **`Audit Log`** has been added under the **`Deployment Information`** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="560"><figcaption></figcaption></figure>
-
 The audit log lists the user's changes made during the deployment timestamp (based on the start time and end time of deployment).
+
+<figure><img src="/broken/files/zUSc5pEtFyEBIfOFjugq" alt=""><figcaption></figcaption></figure>
 
 Here is the list of changes that Audit Trail tracks:&#x20;
 

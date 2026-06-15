@@ -2,6 +2,56 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
+## Vault Release Notes 26.2.0
+
+**Release Date: 24 Jun 2026**
+
+#### Vault Freemium <a href="#dt-12158-vault-freemium" id="dt-12158-vault-freemium"></a>
+
+Vault now supports a freemium version. Prospects can sign up, explore key Vault features, and experience the product independently within defined usage boundaries.
+
+<figure><img src="../../../.gitbook/assets/1 (6).png" alt=""><figcaption></figcaption></figure>
+
+#### Salesforce Data Anomaly Detection and Recovery <a href="#dt-10279-salesforce-data-anomaly-detection-and-recovery" id="dt-10279-salesforce-data-anomaly-detection-and-recovery"></a>
+
+Vault now includes Salesforce data anomaly detection and recovery capabilities. This enhancement helps identify unusual Salesforce data changes, review anomalies through dashboards and alerts, and recover affected records with greater precision.
+
+<figure><img src="../../../.gitbook/assets/1 (7).png" alt=""><figcaption></figcaption></figure>
+
+#### Context-Aware Synthetic Data Masking <a href="#dt-10880-context-aware-synthetic-data-masking" id="dt-10880-context-aware-synthetic-data-masking"></a>
+
+Vault now supports synthetic data masking. Masked values are generated based on the original data type, such as names, email addresses, and phone numbers, that are realistic while helping protect sensitive information.
+
+<figure><img src="../../../.gitbook/assets/Synthetic Data Gen.png" alt=""><figcaption></figcaption></figure>
+
+#### Pattern-Based Field Masking <a href="#dt-10986-pattern-based-field-masking" id="dt-10986-pattern-based-field-masking"></a>
+
+Pattern-based field masking has been added to support more precise protection of sensitive data. This enhancement identifies and replaces only the sensitive portions of field values, such as embedded email addresses, account numbers, and other sensitive text.
+
+<figure><img src="../../../.gitbook/assets/Pattern Based Masking.png" alt=""><figcaption></figcaption></figure>
+
+#### Secure Vault APIs for AutoRABIT Tool Integrations <a href="#dt-10874-secure-vault-apis-for-autorabit-tool-integrations" id="dt-10874-secure-vault-apis-for-autorabit-tool-integrations"></a>
+
+Secure Vault APIs have been introduced to support machine-to-machine integrations with other AutoRABIT tools. These APIs enable external workflows to trigger Vault jobs, track job progress, and retrieve results more efficiently.
+
+<figure><img src="../../../.gitbook/assets/Token Gen (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Enhanced Log Segregation <a href="#dt-10901-enhanced-log-segregation" id="dt-10901-enhanced-log-segregation"></a>
+
+Log files are now enhanced for faster troubleshooting, more targeted support investigations, and more efficient audit-related analysis.
+
+#### AWS SDK Upgrade <a href="#dt-11420-aws-sdk-upgrade" id="dt-11420-aws-sdk-upgrade"></a>
+
+AWS SDK is upgraded to address known vulnerabilities and long-term maintainability.
+
+#### Column Adjustment and View Customization <a href="#dt-12135-column-adjustment-and-view-customization" id="dt-12135-column-adjustment-and-view-customization"></a>
+
+Supported Vault views now allow columns to be resized and selected based on preference. This improves readability and helps focus on the most relevant information in table-based views.
+
+#### Full Backup Execution Reliability for Sandbox Orgs <a href="#dt-13341-full-backup-execution-reliability-for-sandbox-orgs" id="dt-13341-full-backup-execution-reliability-for-sandbox-orgs"></a>
+
+An issue where full backup jobs for sandbox orgs could remain stuck for an extended period has been resolved. This improves backup reliability and reduces interruptions caused by long-running jobs.
+
 ## Vault Release Notes 26.1.8
 
 **Release Date: 10 Jun 2026**

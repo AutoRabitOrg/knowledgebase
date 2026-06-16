@@ -1,6 +1,6 @@
 # Release Notes 26.1.0 Eagle 7.0
 
-**Release Date: 28 May 2026**
+**Release Date: 1 June 2026**
 
 ### Summary
 

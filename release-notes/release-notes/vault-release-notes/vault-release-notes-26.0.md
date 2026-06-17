@@ -52,6 +52,8 @@ Supported Vault views now allow columns to be resized and selected based on pref
 
 An issue where full backup jobs for sandbox orgs could remain stuck for an extended period has been resolved. This improves backup reliability and reduces interruptions caused by long-running jobs.
 
+***
+
 ## Vault Release Notes 26.1.8
 
 **Release Date: 10 Jun 2026**

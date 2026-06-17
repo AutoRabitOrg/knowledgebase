@@ -41,7 +41,8 @@ _**Note: This optimized flow is applicable only when GitHub Pull Request functio
 
          <figure><img src="../../../../../.gitbook/assets/image (1976).png" alt=""><figcaption></figcaption></figure>
      2. **`Select Manually:`** Choose the metadata components individually to be committed to the destination branch.
-     3. **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.
+     3. **Detect Changes:** When enabled, compares the source(Org) and destination branches and displays component change status (A–Added, M–Modified, D–Deleted); when disabled, metadata components are loaded directly from the Salesforce org without change analysis for faster performance in large orgs
+     4. **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.
 
 {% hint style="info" %}
 **Important Note:**&#x20;
@@ -59,6 +60,8 @@ EZ-Commit provides different ways to retrieve Salesforce metadata changes depend
 Use **Auto Draft** when you want ARM to identify metadata changes from the Salesforce org that have not yet been committed to the selected version control branch. Auto Draft performs metadata analysis and comparison work, so the time required depends on the size and complexity of the Salesforce org.
 
 Use **Select Manually** when you already know which metadata components need to be committed. This path avoids the full Auto Draft analysis and allows you to choose the required components directly.
+
+**Detect Changes:** When enabled, compares the source and destination branches and displays component change status (A–Added, M–Modified, D–Deleted); when disabled, metadata components are loaded directly from the Salesforce org without change analysis for faster performance in large orgs
 
 For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate a larger metadata set. If the developer already knows the target components, Select Manually is the recommended and faster workflow.
 

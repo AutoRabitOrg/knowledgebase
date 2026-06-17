@@ -1,4 +1,4 @@
-# Deploy a package from a Salesforce Org
+# Deploying a package from a Salesforce Org
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
@@ -94,6 +94,7 @@ Deploy or validate the package in a destination org:
 4. **Run Local Tests** – Run all tests except those from managed packages.
 5. **Run All Tests in Org** – Run every test, including managed-package tests.
 6. **Run Tests Based on Changes** – Identify and run relevant test classes; optionally update the default test-class list.
+7. **Run Relevant Tests** – Executes only Salesforce-identified impacted Apex tests during validations, deployments, and Quick Deploys to reduce deployment time while maintaining required test coverage.
 
 {% hint style="info" %}
 **Important Notes:**

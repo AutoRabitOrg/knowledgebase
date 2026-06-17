@@ -1,4 +1,4 @@
-# Deploy from SFDX branch to a Salesforce Org
+# Deploying from an SFDX branch to a Salesforce Org
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
@@ -135,6 +135,7 @@ This section is about deploying or validating the above package onto a different
 6. **Run Local Tests:** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 7. **Run All Tests in Org:** In this, all tests in the organization are run, including tests of managed packages.
 8. **Run Tests Based On Changes:** This option will identify Apex test classes from your source package in addition to the default configured Apex classes and run the identified tests to the destination environment. Also, if you would like to include the newly identified Apex classes from the packages in your [default Apex test class configuration](../../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the **"Do you want us to update the test classes"** checkbox.
+9. **Run Relevant Tests** – Executes only Salesforce-identified impacted Apex tests during validations, deployments, and Quick Deploys to reduce deployment time while maintaining required test coverage.
 
 {% hint style="info" %}
 **Important Notes:**

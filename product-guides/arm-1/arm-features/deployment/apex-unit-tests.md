@@ -26,6 +26,7 @@ The following test options are available when you deploy or commit or use CI job
 * **`Run Local Tests:`** All tests in your organization are run, except the ones that originate from installed managed packages. This test level is the default for production deployments that include Apex classes or triggers.
 * **`Run All Tests In Org:`** All tests are run. The tests include all tests in your organization, including tests of managed packages.
 * **`Run Tests Based On Changes:`** This option will identify Apex test classes from your source package in addition to the default configured Apex classes and run the identified tests to the destination environment. Also, if you want to include the newly identified Apex classes from the packages in your [default Apex test class configuration](../../../arm/troubleshoot/how-tos/default-apex-class-configuration.md) list, please check the "**`Do you want us to update the test classes`**" checkbox.
+* **Run Relevant Tests** – Executes only Salesforce-identified impacted Apex tests during validations, deployments, and Quick Deploys to reduce deployment time while maintaining required test coverage.
 
 {% hint style="info" %}
 **Points to Note**:&#x20;

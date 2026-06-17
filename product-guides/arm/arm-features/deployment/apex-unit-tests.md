@@ -41,6 +41,7 @@ _Code Coverage Failures:_\
 {% endhint %}
 
 * **`User Salesforce Defaults:`** Keeps the default behavior for all tests. In the sandbox, no tests are executed. All local tests are executed in the production if they contain Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If your package doesn’t contain Apex components, no tests are run.
+* **Run Relevant Tests** – Executes only Salesforce-identified impacted Apex tests during validations, deployments, and Quick Deploys to reduce deployment time while maintaining required test coverage.
 
 {% hint style="info" %}
 **Point to Note**:

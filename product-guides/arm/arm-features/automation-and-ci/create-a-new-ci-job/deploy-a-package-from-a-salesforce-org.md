@@ -92,6 +92,7 @@ Deploy or validate the package in a destination org:
     4. **Run Local Tests** – Run all tests except those from managed packages.
     5. **Run All Tests in Org** – Run every test, including managed-package tests.
     6. **Run Tests Based on Changes** – Identify and run relevant test classes; optionally update the default test-class list.
+    7. AutoRABIT supports Salesforce **Run Relevant Tests** to execute only impacted Apex tests during validations, deployments, and Quick Deploys.
 
 {% hint style="info" %}
 **Important Notes:**

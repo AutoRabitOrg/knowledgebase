@@ -1164,7 +1164,7 @@
       * [Single Sign-On with Entra ID](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-azure.md)
       * [Single Sign-On with ADFS](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-adfs.md)
       * [Single Sign-On with PingOne](product-guides/codescan/codescan-integration/single-sign-on-sso/single-sign-on-with-pingone.md)
-      * [IdP Group Mapping \[WIP\]](product-guides/codescan/codescan-integration/single-sign-on-sso/idp-group-mapping-wip.md)
+      * [IdP Group Mapping for Dedicated Instances](product-guides/codescan/codescan-integration/single-sign-on-sso/idp-group-mapping-wip.md)
     * [Webhooks for CodeScan](product-guides/codescan/codescan-integration/webhooks/README.md)
       * [Slack integration with Zapier](product-guides/codescan/codescan-integration/webhooks/slack-integration-with-zapier.md)
   * [CodeScan API Documentation](product-guides/codescan/codescan-api-documentation/README.md)

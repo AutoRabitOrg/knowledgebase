@@ -1,5 +1,69 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.2.12** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date: 21 June 2026**
+
+### Merge Conflict Resolution Progress Indicator
+
+Enhanced the merge conflict resolution workflow to provide better visibility and prevent duplicate actions during commit processing. A progress indicator is now displayed when conflict resolution commits and related background downloads are initiated, and user actions are properly synchronized to prevent multiple commit requests and UI exceptions.
+
+**Impacted Area:**
+
+* Version Control → Commit History → Conflict Resolution Workflow
+
+### AccelQ Error Details Display Fix
+
+Fixed an issue where error details for failed AccelQ test cases were not displayed in the Old UI. Users can now view failure information, including error messages and test execution details, directly from the test report, providing consistent behavior across both Old and New UI experiences.
+
+**Impacted Areas:**
+
+* CI Jobs – Test Results
+* Deployment Module – Test Results
+* AccelQ Integration (Old UI)
+
+### Deployment Comparison Handling for Destructive Changes
+
+Fixed an issue in the New UI where deployment comparisons could become unresponsive when only destructive changes were selected. Comparison handling has been improved to correctly process destructive metadata selections and prevent comparison workflows from getting stuck during metadata retrieval.
+
+**Impacted Areas:**
+
+* Org-to-Org Deployments
+* Deployment Comparison (New UI)
+* Destructive Change Processing
+
+### Register Branch Usability Improvements
+
+Enhanced the Register Branch experience by enabling branch searches to be executed using the **Enter** key in the Branch Name Search field, providing a faster and more intuitive workflow. Additionally, the informational Note  message has been updated for improved clarity.
+
+**Updated Note Message:**
+
+* **Previous:** _Support to "src" as default folder is no more exists._
+* **Updated:** _Support to "src" as default folder if no other folders exist._
+
+**Impacted Areas:**
+
+* Register Branch (Classic UI)
+* User Interface Messaging
+
+### Deployment Compare Screen Validation Message Fix - New UI
+
+Fixed an issue in the New UI where an incorrect destructive-change confirmation dialog was displayed on the Compare screen when no constructive members were selected. Users now receive an appropriate validation message prompting them to select at least one member before proceeding, ensuring a clearer and more consistent deployment experience.
+
+**Impacted Areas:**
+
+* Deployment Compare Screen (New UI)
+
+### Dataloader Post-Activity Status Handling Fix
+
+Fixed an issue in CI Jobs where Dataloader post-activity processing could continue logging repeated status checks even after the Dataloader job had completed. Status handling has been improved to correctly recognize completion states and stop further polling, ensuring post-activity logs accurately reflect the final execution status.
+
+**Impacted Area:**
+
+* CI Jobs – Post Activities
+
+***
+
 ## ARM **Release Notes 26.2.11** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 14 June 2026**

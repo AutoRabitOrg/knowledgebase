@@ -31,6 +31,10 @@ Component details are listed in their corresponding sections within this documen
 
 1. &#x20;**Instance-Level Severity Masking**
 
+{% hint style="info" %}
+NOTE: This feature is only available to customers who have a dedicated instance. It is not available for customers who are deployed on our SaaS multi-tenant instances.
+{% endhint %}
+
 Added support for instance-level severity masking, allowing CodeScan Administrators to centrally customize how severity labels are displayed across the platform while preserving underlying severity values, analysis behavior, and reporting logic.&#x20;
 
 Previously, severity labels were displayed using the default values throughout CodeScan and could not be customized at the instance level. This enhancement introduces centralized severity masking that is consistently applied across the Web UI, reports, exports, APIs, and IDE plugins.&#x20;

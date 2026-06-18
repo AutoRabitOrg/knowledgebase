@@ -1317,6 +1317,14 @@
     * [AI Interfaces for AutoRABIT Guard: Technical Specification](product-guides/guard/ai-interfaces/ai-interfaces-for-autorabit-guard-technical-specification.md)
 * [IZ Suite](product-guides/iz-suite/README.md)
   * [About](product-guides/iz-suite/about.md)
+  * [Agent](product-guides/iz-suite/agent/README.md)
+    * [Agent Types](product-guides/iz-suite/agent/agent-types/README.md)
+      * [Agent Modes](product-guides/iz-suite/agent/agent-types/agent-modes.md)
+      * [Cloud Hosted Agent](product-guides/iz-suite/agent/agent-types/cloud-hosted-agent.md)
+      * [Self Hosted Agent](product-guides/iz-suite/agent/agent-types/self-hosted-agent.md)
+    * [Agent Job Types](product-guides/iz-suite/agent/agent-job-types.md)
+    * [Create Agent](product-guides/iz-suite/agent/create-agent.md)
+    * [Update Agent](product-guides/iz-suite/agent/update-agent.md)
 
 ## Resources
 

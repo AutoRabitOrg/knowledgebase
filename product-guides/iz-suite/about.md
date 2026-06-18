@@ -1,5 +1,12 @@
 # About
 
+## Steps for migration&#x20;
+
+* Take files from the folders in IZ Suite Docs that chethan sent&#x20;
+* Copy markdown in the same filestructure that is present
+* Add images that are linked to the file by searching for them in the file&#x20;
+*
+
 ## Introduction
 
 **IZ Eye** continuously monitors all environments, verifying that the deployed applications are identical. This gives organizations assurance that the code in promoted environments are consistent and the Dev Sec Ops process is working as expected without any exceptions.

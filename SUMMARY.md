@@ -1346,6 +1346,7 @@
       * [MCP Server Installation](product-guides/iz-suite/iz-core/mcp-server/mcp-server-installation.md)
       * [MCP Tools](product-guides/iz-suite/iz-core/mcp-server/mcp-tools.md)
     * [IZ-Core Notifications](product-guides/iz-suite/iz-core/iz-core-notifications.md)
+    * [IZ-Core Rules](product-guides/iz-suite/iz-core/iz-core-rules.md)
 
 ## Resources
 

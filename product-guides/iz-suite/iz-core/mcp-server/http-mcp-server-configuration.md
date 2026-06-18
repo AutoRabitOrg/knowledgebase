@@ -48,7 +48,7 @@ The following section describes the steps required to configure the IZ HTTP MCP 
 
 ### See Also
 
-* Enabling MCP Server
-* Generating MCP Token
-* Configuring STDIO MCP Server
-* MCP Tools
+* [Enabling MCP Server](mcp-server-installation.md)
+* [Generating MCP Token](generating-mcp-token.md)
+* [Configuring STDIO MCP Server](stdio-mcp-server-configuration.md)
+* [MCP Tools](mcp-tools.md)

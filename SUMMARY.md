@@ -1342,6 +1342,9 @@
     * [MCP Server](product-guides/iz-suite/iz-core/mcp-server/README.md)
       * [Generating MCP Token](product-guides/iz-suite/iz-core/mcp-server/generating-mcp-token.md)
       * [HTTP MCP Server Configuration](product-guides/iz-suite/iz-core/mcp-server/http-mcp-server-configuration.md)
+      * [STDIO MCP Server Configuration](product-guides/iz-suite/iz-core/mcp-server/stdio-mcp-server-configuration.md)
+      * [MCP Server Installation](product-guides/iz-suite/iz-core/mcp-server/mcp-server-installation.md)
+      * [MCP Tools](product-guides/iz-suite/iz-core/mcp-server/mcp-tools.md)
 
 ## Resources
 

@@ -28,7 +28,7 @@ To configure the IZ MCP Server, you must generate a valid access token. Follow t
 
 ### See Also
 
-* Enabling MCP Server
-* Configuring STDIO MCP Server
-* Configuring HTTP MCP Server
-* MCP Tools
+* [Enabling MCP Server](mcp-server-installation.md)
+* [Configuring STDIO MCP Server](stdio-mcp-server-configuration.md)
+* [Configuring HTTP MCP Server](http-mcp-server-configuration.md)
+* [MCP Tools](mcp-tools.md)

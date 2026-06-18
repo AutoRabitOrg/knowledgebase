@@ -10,7 +10,7 @@ With IZ Suite by your side, say goodbye to manual code reviews and time consumin
 
 ### Marketplace Listing
 
-1. Navigate to **`AWS Marketplace`** - https://aws.amazon.com/marketplace
+1. Navigate to **`AWS Marketplace`** : [https://aws.amazon.com/marketplace](https://aws.amazon.com/marketplace)
 2.  Search for **`IZ Suite`** <br>
 
     <figure><img src="../../../.gitbook/assets/aws-search.png" alt=""><figcaption></figcaption></figure>
@@ -38,7 +38,7 @@ With IZ Suite by your side, say goodbye to manual code reviews and time consumin
 * This step can be ignored if the marketplace product instance is being updated to a new version.
 {% endhint %}
 
-1. Login to AWS management console. https://aws.amazon.com/console/
+1. Log in to AWS management console. https://aws.amazon.com/console/
 2. Navigate to **`Services`** -> **`RDS`** and click on **`Create Database`**
 3.  Select **`PostgreSQL`** engine type, username, password, storage, backup options and click on `Create Database` <br>
 
@@ -53,7 +53,7 @@ With IZ Suite by your side, say goodbye to manual code reviews and time consumin
 
 ### Configure Database details and start the server
 
-1. Login to the created EC2 instance using the downloaded pem file. Eg: ssh -i \<downloaded.pem> ubuntu@\<publicip>
+1. Log in to the created EC2 instance using the downloaded pem file. Eg: ssh -i \<downloaded.pem> ubuntu@\<publicip>
 2. Navigate to **`/home/ubuntu/iz-server`**
 3. Open .env.defaults file and update the database connection details
    1. Search for **`DATABASE_URL`** key replace the **`dbhost`**, **`port`**, **`username`**, **`password`** and **`dbname`**

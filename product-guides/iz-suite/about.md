@@ -4,8 +4,8 @@
 
 * Take files from the folders in IZ Suite Docs that chethan sent&#x20;
 * Copy markdown in the same filestructure that is present
-* Add images that are linked to the file by searching for them in the file&#x20;
-*
+* Add images that are linked to the file by searching for them in the file sent by chethan, MUST CHECK when opening markdown, because it doesn't show up once pasted in gitbook.&#x20;
+* Add in references to other pages linked at bottom of each page.&#x20;
 
 ## Introduction
 

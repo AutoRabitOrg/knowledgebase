@@ -16,8 +16,11 @@ Self hosted agents can be used when you do not want -
    4. Select the Job Types handled by agent. If you are not sure, all the available job types can be selected
    5. Click on Submit
 2. Once the agent is created, click on the **`Download Agent`** action and follow the instructions&#x20;
-3. After starting the agent, make sure the agent status is **RUNNING**
-4. Relogin, and start configuring the schedules
+
+<figure><img src="../../../../.gitbook/assets/download-agent.png" alt="" width="536"><figcaption></figcaption></figure>
+
+1. After starting the agent, make sure the agent status is **RUNNING**
+2. Relogin, and start configuring the schedules
 
 ### See Also
 

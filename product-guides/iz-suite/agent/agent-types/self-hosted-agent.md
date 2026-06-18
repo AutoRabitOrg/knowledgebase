@@ -14,15 +14,15 @@ Self hosted agents can be used when you do not want -
    2. Specify number of worker. For example, a value of 3 indicates that the agent can perform 3 parallel scans/jobs at a time.
    3. Specify tge Agent type as **`SELF HOSTED`**
    4. Select the Job Types handled by agent. If you are not sure, all the available job types can be selected
-   5. Click on Submit
+   5. Click on Submit&#x20;
 2. Once the agent is created, click on the **`Download Agent`** action and follow the instructions&#x20;
 
 <figure><img src="../../../../.gitbook/assets/download-agent.png" alt="" width="536"><figcaption></figcaption></figure>
 
-1. After starting the agent, make sure the agent status is **RUNNING**
-2. Relogin, and start configuring the schedules
+3. After starting the agent, make sure the agent status is **RUNNING**
+4. Relogin, and start configuring the schedules
 
 ### See Also
 
-* Cloud Hosted Agent
-* Agent Job Types
+* [Cloud Hosted Agent](cloud-hosted-agent.md)
+* [Agent Job Types](../agent-job-types.md)

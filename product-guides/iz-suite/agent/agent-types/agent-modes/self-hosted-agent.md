@@ -17,7 +17,7 @@ Self hosted agents can be used when you do not want -
    5. Click on Submit&#x20;
 2. Once the agent is created, click on the **`Download Agent`** action and follow the instructions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/download-agent.png" alt="" width="536"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/download-agent.png" alt="" width="536"><figcaption></figcaption></figure>
 
 3. After starting the agent, make sure the agent status is **RUNNING**
 4. Re-log in, and start configuring the schedules
@@ -25,4 +25,4 @@ Self hosted agents can be used when you do not want -
 ### See Also
 
 * [Cloud-Hosted Agent](cloud-hosted-agent.md)
-* [Agent Job Types](../agent-job-types.md)
+* [Agent Job Types](../../agent-job-types.md)

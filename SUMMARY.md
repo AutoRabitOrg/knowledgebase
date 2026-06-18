@@ -1319,9 +1319,9 @@
   * [About](product-guides/iz-suite/about.md)
   * [Agent](product-guides/iz-suite/agent/README.md)
     * [Agent Types](product-guides/iz-suite/agent/agent-types/README.md)
-      * [Agent Modes](product-guides/iz-suite/agent/agent-types/agent-modes.md)
-      * [Cloud-Hosted Agent](product-guides/iz-suite/agent/agent-types/cloud-hosted-agent.md)
-      * [Self-Hosted Agent](product-guides/iz-suite/agent/agent-types/self-hosted-agent.md)
+      * [Agent Modes](product-guides/iz-suite/agent/agent-types/agent-modes/README.md)
+        * [Cloud-Hosted Agent](product-guides/iz-suite/agent/agent-types/agent-modes/cloud-hosted-agent.md)
+        * [Self-Hosted Agent](product-guides/iz-suite/agent/agent-types/agent-modes/self-hosted-agent.md)
     * [Agent Job Types](product-guides/iz-suite/agent/agent-job-types.md)
     * [Create Agent](product-guides/iz-suite/agent/create-agent.md)
     * [Update Agent](product-guides/iz-suite/agent/update-agent.md)
@@ -1335,6 +1335,13 @@
     * [Server Installation](product-guides/iz-suite/installation/server-installation.md)
     * [Server Upgrade](product-guides/iz-suite/installation/server-upgrade.md)
     * [Single Server Installation](product-guides/iz-suite/installation/single-server-installation.md)
+  * [IZ-Core](product-guides/iz-suite/iz-core/README.md)
+    * [Records Archival](product-guides/iz-suite/iz-core/records-archival.md)
+    * [System Audit Logs](product-guides/iz-suite/iz-core/system-audit-logs.md)
+    * [License Usage](product-guides/iz-suite/iz-core/license-usage.md)
+    * [MCP Server](product-guides/iz-suite/iz-core/mcp-server/README.md)
+      * [Generating MCP Token](product-guides/iz-suite/iz-core/mcp-server/generating-mcp-token.md)
+      * [HTTP MCP Server Configuration](product-guides/iz-suite/iz-core/mcp-server/http-mcp-server-configuration.md)
 
 ## Resources
 

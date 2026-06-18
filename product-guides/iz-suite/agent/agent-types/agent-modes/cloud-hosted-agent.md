@@ -19,5 +19,5 @@ Cloud hosted agents can be used when you do not want -
 
 ### See Also
 
-* [Agent Job Types](../agent-job-types.md)
+* [Agent Job Types](../../agent-job-types.md)
 * [Self-Hosted Agent](self-hosted-agent.md)

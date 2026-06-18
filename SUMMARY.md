@@ -1334,6 +1334,7 @@
     * [Cluster Installation](product-guides/iz-suite/installation/cluster-installation.md)
     * [Server Installation](product-guides/iz-suite/installation/server-installation.md)
     * [Server Upgrade](product-guides/iz-suite/installation/server-upgrade.md)
+    * [Single Server Installation](product-guides/iz-suite/installation/single-server-installation.md)
 
 ## Resources
 

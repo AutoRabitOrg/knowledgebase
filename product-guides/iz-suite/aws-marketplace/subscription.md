@@ -65,7 +65,7 @@ With IZ Suite by your side, say goodbye to manual code reviews and time consumin
 ### Configure SSO
 
 {% hint style="info" %}
-* This step is required if the instance is being configuring for the first time.
+* This step is required if the instance is being configured for the first time.
 * This step can be ignored if the marketplace product instance is being updated to a new version.
 {% endhint %}
 

@@ -1327,6 +1327,12 @@
     * [Update Agent](product-guides/iz-suite/agent/update-agent.md)
   * [AWS Marketplace](product-guides/iz-suite/aws-marketplace/README.md)
     * [Subscription](product-guides/iz-suite/aws-marketplace/subscription.md)
+  * [Installation](product-guides/iz-suite/installation/README.md)
+    * [Getting Started](product-guides/iz-suite/installation/getting-started.md)
+    * [Installation Requirements](product-guides/iz-suite/installation/installation-requirements.md)
+    * [Agent Installation](product-guides/iz-suite/installation/agent-installation.md)
+    * [Cluster Installation](product-guides/iz-suite/installation/cluster-installation.md)
+    * [Server Installation](product-guides/iz-suite/installation/server-installation.md)
 
 ## Resources
 

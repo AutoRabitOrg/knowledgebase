@@ -12,5 +12,5 @@ Agents and workers are responsible for executing the schedules
 
 ### See Also
 
-* Agent Job Types
-  * Creating an Agent
+* [Agent Job Types](agent-job-types.md)
+* [Creating an Agent](create-agent.md)

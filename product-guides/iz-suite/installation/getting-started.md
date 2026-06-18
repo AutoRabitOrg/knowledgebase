@@ -100,5 +100,5 @@ The following step is applicable only for **`IZ Eye`** and **`IZ Pulse`**.
 
 ### See Also
 
-* Prerequisites
-* Cluster Mode
+* [Prerequisites](installation-requirements.md)
+* [Cluster Mode](cluster-installation.md)

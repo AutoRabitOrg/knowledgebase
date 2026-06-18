@@ -188,5 +188,5 @@ EOF
 
 ### See Also
 
-* Prerequisites
-* Cluster Mode
+* [Prerequisites](installation-requirements.md)
+* [Cluster Mode](cluster-installation.md)

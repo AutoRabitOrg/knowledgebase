@@ -32,5 +32,5 @@ All IZ suite server nodes should be identical in terms of hardware and software.
 
 ### See Also
 
-* Prerequisites
-* Single Server Installation
+* [Prerequisites](installation-requirements.md)
+* [Single Server Installation](single-server-installation.md)

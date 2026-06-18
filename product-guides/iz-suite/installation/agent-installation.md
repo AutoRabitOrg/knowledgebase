@@ -21,5 +21,5 @@ Before installing, make sure you have:
 
 ### See Also
 
-* Prerequisites
-* Server Installation
+* [Prerequisites](installation-requirements.md)
+* [Server Installation](server-installation.md)

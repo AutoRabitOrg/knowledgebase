@@ -26,5 +26,5 @@ This document outlines the hardware and software requirements required for insta
 
 ### See Also
 
-* Single Server Installation
-* Cluster Mode
+* [Single Server Installation](single-server-installation.md)
+* [Cluster Mode](cluster-installation.md)

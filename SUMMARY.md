@@ -1333,6 +1333,7 @@
     * [Agent Installation](product-guides/iz-suite/installation/agent-installation.md)
     * [Cluster Installation](product-guides/iz-suite/installation/cluster-installation.md)
     * [Server Installation](product-guides/iz-suite/installation/server-installation.md)
+    * [Server Upgrade](product-guides/iz-suite/installation/server-upgrade.md)
 
 ## Resources
 

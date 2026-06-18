@@ -1325,6 +1325,8 @@
     * [Agent Job Types](product-guides/iz-suite/agent/agent-job-types.md)
     * [Create Agent](product-guides/iz-suite/agent/create-agent.md)
     * [Update Agent](product-guides/iz-suite/agent/update-agent.md)
+  * [AWS Marketplace](product-guides/iz-suite/aws-marketplace/README.md)
+    * [Subscription](product-guides/iz-suite/aws-marketplace/subscription.md)
 
 ## Resources
 

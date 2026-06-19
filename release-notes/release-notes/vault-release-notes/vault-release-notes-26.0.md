@@ -54,6 +54,15 @@ An issue where full backup jobs for sandbox orgs could remain stuck for an exten
 
 ***
 
+## Vault Release Notes 26.1.9
+
+**Release Date: 24 Jun 2026**
+
+**Sandbox Backup — Incorrect Failure Status on Partial Component Errors**\
+Addressed an issue in the Vault Sandbox Backup module where a backup job was reported as **Failed** even when the majority of components were successfully backed up. The failure was triggered by specific error types in individual components, causing the entire job status to reflect as a complete failure rather than a partial success. This fix improves the accuracy and clarity of backup job status reporting.
+
+***
+
 ## Vault Release Notes 26.1.8
 
 **Release Date: 10 Jun 2026**

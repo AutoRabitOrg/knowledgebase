@@ -2,6 +2,28 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.2.12
+
+**Release Date:** 21 **June 2026**
+
+#### Custom Field Exclusion for Cleaner nCino Commits and Deployments <a href="#custom-field-exclusion-for-cleaner-ncino-commits-and-deployments" id="custom-field-exclusion-for-cleaner-ncino-commits-and-deployments"></a>
+
+Users can now exclude unwanted Salesforce system fields during nCino commit and deployment review — reducing noise in pull requests and keeping change reviews focused on meaningful business changes.&#x20;
+
+#### Rollback Enabled for Partially Successful Deployments <a href="#rollback-enabled-for-partially-successful-deployments" id="rollback-enabled-for-partially-successful-deployments"></a>
+
+Rollback is now available when a deployment partially succeeds before hitting an error. Previously, any error incorrectly blocked rollback for components that deployed successfully.
+
+#### Fixed Undefined Error When Opening CI Jobs in Old UI <a href="#fixed-undefined-error-when-opening-ci-jobs-in-old-ui" id="fixed-undefined-error-when-opening-ci-jobs-in-old-ui"></a>
+
+Resolved a blocking `undefined` error that appeared when navigating to CI Jobs in the Old UI. CI Jobs now load correctly.
+
+#### Improved Notification Email Visibility in Preview Screens <a href="#improved-notification-email-visibility-in-preview-screens" id="improved-notification-email-visibility-in-preview-screens"></a>
+
+Long notification email addresses in the Deployment and CI Jobs Preview screens now wrap properly instead of being truncated, making it easier to verify notification recipients.&#x20;
+
+***
+
 ## nCino - Release 26.2.10
 
 **Release Date:** **7 June 2026**

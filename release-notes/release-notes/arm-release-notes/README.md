@@ -62,6 +62,14 @@ Fixed an issue in CI Jobs where Dataloader post-activity processing could contin
 
 * CI Jobs – Post Activities
 
+### CodeScan Report Synchronization Fix
+
+Fixed an issue where ARM displayed incorrect CodeScan analysis results by retrieving report data from an unrelated scan instead of the executed analysis. Report retrieval logic has been updated to ensure ARM displays the correct violations and file counts, keeping SCA results synchronized with the corresponding CodeScan execution.
+
+**Impacted Areas:**
+
+* Static Code Analysis (SCA) Reports
+
 ***
 
 ## ARM **Release Notes 26.2.11** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>

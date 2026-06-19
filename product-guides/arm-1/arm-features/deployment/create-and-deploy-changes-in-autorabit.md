@@ -30,6 +30,20 @@ The deployment process allows you to quickly and safely transfer new development
 10. Choose the **`Deployment Type:`**
     * **`Selective Deployment`** is a deployment in which only the metadata types you’ve selected are deployed from the source org to the destination org.
     * **`Full Deployment`** transfers all metadata types in the source org to the destination org. However, a few metadata types, such as dynamic package XML files, can’t be retrieved in this process. In this case, the irretrievable data types will generate warnings during deployment, but ARM will continue the deployment and transfer the retrievable metadata types.
+11. &#x20;**Enable Comparison:** When the **Enable Comparison** option is selected under **Configuring Deployment Details**, AutoRABIT adds a **Compare** step to the deployment workflow.
+
+    After selecting the required metadata components and clicking **Next**, the **Compare** page displays metadata differences between the source and destination organizations.
+
+    Users can:
+
+    * Review metadata differences.
+    * Compare source and destination components.
+    * View file-level differences.
+    * Validate deployment changes before deployment.
+
+    > [**Important Note:** The Compare page is displayed only when the **Enable Comparison** option is enabled during deployment creation.](#user-content-fn-1)[^1]
+    >
+    >
 
 #### Metadata Filter (optional) <a href="#id-2-metadata-filter-optional" id="id-2-metadata-filter-optional"></a>
 
@@ -149,3 +163,5 @@ Change the access permission to **"True"** in all profile objects and deploy to 
 ### Why can’t I select the Report Type for deployment? <a href="#why-cant-i-select-the-report-type-for-deployment" id="why-cant-i-select-the-report-type-for-deployment"></a>
 
 Please go to Admin->My account-> Salesforce Settings->Included Metadata Types, and check if the Report and Report Type are included in the Salesforce Settings. If these are not included, please include them to see them during the metadata selection for deployment.
+
+[^1]: 

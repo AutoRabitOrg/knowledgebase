@@ -237,3 +237,61 @@ Helpful Knowledge Base Links:\
 How to configure DataLoader job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-configuration)\
 How to configure DataLoader Pro job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-pro)
 
+## nCino Template Version Updates – New, Updated, and Deprecated Templates
+
+### Overview <a href="#overview" id="overview"></a>
+
+The latest nCino template update includes changes to selected templates, newly introduced templates, and templates marked for deprecation. Templates marked with the **-D** suffix are deprecated and will be deleted in a future update.
+
+### Updated Templates <a href="#updated-templates" id="updated-templates"></a>
+
+The latest versions of the following templates include changes in objects:
+
+| Template Name                   |
+| ------------------------------- |
+| ncino-Document Manager          |
+| ncino-Product Hierarchy         |
+| ncino-Product Hierarchy w Group |
+| ncino-Spread Templates          |
+
+### Deprecated Templates <a href="#deprecated-templates" id="deprecated-templates"></a>
+
+The following templates are prefixed with **-D**, indicating that they are deprecated and will be deleted soon.
+
+| Template Name                   | Reason                                    |
+| ------------------------------- | ----------------------------------------- |
+| ncino-Configuration Values      | Duplicative                               |
+| ncino-Configuration Values      | Duplicative                               |
+| ncino-Ownership Structure Roles | Duplicative                               |
+| ncino-Retail Closing Checklist  | Erroneously created originally. Not used. |
+| ncino-Product Collateral Types  | Duplicative                               |
+| ncino-State Routing Number 2    | No longer used. Custom object deprecated. |
+| ncino-Team Management           | Duplicative                               |
+| ncino-Tiers                     | Duplicative                               |
+
+### Newly Introduced Template <a href="#newly-introduced-template" id="newly-introduced-template"></a>
+
+The following template has been newly introduced:
+
+| Template Name                 |
+| ----------------------------- |
+| ncino - SDPOC Custom Mappings |
+
+### Impact <a href="#impact" id="impact"></a>
+
+The updated templates contain the latest object-level changes and should be reviewed before use. Deprecated templates are retained temporarily with the **-D** prefix to indicate that they are no longer recommended for use and will be removed in a future release.
+
+### Recommended Action <a href="#recommended-action" id="recommended-action"></a>
+
+Review the updated and newly introduced templates before using them in active workflows. Avoid using templates marked with the **-D** prefix, as they are deprecated and planned for removal.
+
+### Notes <a href="#notes" id="notes"></a>
+
+Templates marked as deprecated are retained only for temporary visibility and transition purposes. They should not be used for new configurations or implementations.
+
+
+
+
+
+
+

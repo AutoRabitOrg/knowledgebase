@@ -30,18 +30,18 @@ To perform org synchronization, follow the below steps:
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-6.  On the next screen, you can:
+6. On the next screen, you can:
+   * View the metadata list included in both source and target org.
+   * Add or delete metadata components to/from the target org.
+   * View the metadata member's difference report (if any).
 
-    * View the metadata list included in both source and target org.
-    * Add or delete metadata components to/from the target org.
-    * View the metadata member's difference report (if any).
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-19 at 7.22.29 AM.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-19 at 7.24.44 AM.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-7. Once done with your selection, click on **`Synchronize Orgs`**.
-8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
-9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
+1. Once done with your selection, click on **`Synchronize Orgs`**.
+2. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
+3. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 

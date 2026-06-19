@@ -32,7 +32,7 @@ The deployment process allows you to quickly and safely transfer new development
     * **`Full Deployment`** transfers all metadata types in the source org to the destination org. However, a few metadata types, such as dynamic package XML files, can’t be retrieved in this process. In this case, the irretrievable data types will generate warnings during deployment, but ARM will continue the deployment and transfer the retrievable metadata types.
 11. &#x20;**Enable Comparison:** When the **Enable Comparison** option is selected under **Configuring Deployment Details**, AutoRABIT adds a **Compare** step to the deployment workflow.
 
-    After selecting the required metadata components and clicking **Next**, the **Compare** page displays metadata differences between the source and destination organizations.
+    After selecting the required metadata components and clicking **Next**, the **Compare** page is displayed. This page shows the differences between the source and destination organizations before deployment.
 
     Users can:
 
@@ -97,11 +97,11 @@ The **`Diff`** tab will indicate if there are any differences between the member
 * If there are no differences, the right column will display the![](<../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png>)icon for each member.
 * If there are any differences, the right column will display the![](<../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png>)icon.
 
-<figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Compare 1.png" alt=""><figcaption></figcaption></figure>
 
 Clicking on the difference icon in the right column will display a new page with details of the differences between the orgs. You will have the option to download the log from this page. If the difference report contains more than 10,000 lines, it is best practice to download the report first and view its changes.
 
-<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Diff .png" alt=""><figcaption></figcaption></figure>
 
 When you have determined which metadata members to include in the deployment, click the checkbox next to each member to select it, and then click the **`Deploy`** button. It will take you to the **`Deployment Settings`** page.
 

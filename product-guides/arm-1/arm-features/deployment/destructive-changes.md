@@ -31,17 +31,15 @@ If certain components should only be removed after ensuring the new deployment i
 
 ### Deploying Destructive Changes <a href="#deploying-destructive-changes" id="deploying-destructive-changes"></a>
 
-After selecting the list of components to be deployed to the target Salesforce org, go to the **`Destructive Items`** tab.
+After selecting the list of components to be deployed to the target Salesforce org, go to the **`Destructive Members`** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (65) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Destructive Changes2.png" alt=""><figcaption></figcaption></figure>
 
 You’ll see the list of metadata components in your target org but not in your source under the **`Post-Destructive Changes`** tab. Select the checkbox next to a component you want to delete, and that component will be deleted when you deploy.
 
 You can also delete some undesired components from your target org by going to **`Modify`** and selecting the components and their destructive natures.
 
-<figure><img src="../../../../.gitbook/assets/image (66) (1).png" alt="" width="485"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Destructive changes1.png" alt=""><figcaption></figcaption></figure>
 
 Use the **`Clear All`** button to clear all the components you've opted for destructive changes (pre- and post-destructive). The **`Reset`** button resets the entire components selection except for the auto-populated components.&#x20;
 

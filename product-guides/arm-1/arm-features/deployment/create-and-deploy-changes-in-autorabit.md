@@ -41,9 +41,9 @@ The deployment process allows you to quickly and safely transfer new development
     * View file-level differences.
     * Validate deployment changes before deployment.
 
-    > [**Important Note:** The Compare page is displayed only when the **Enable Comparison** option is enabled during deployment creation.](#user-content-fn-1)[^1]
-    >
-    >
+{% hint style="info" %}
+**Important Note:** The Compare page is displayed only when the **Enable Comparison** option is enabled during deployment creation.
+{% endhint %}
 
 #### Metadata Filter (optional) <a href="#id-2-metadata-filter-optional" id="id-2-metadata-filter-optional"></a>
 
@@ -163,5 +163,3 @@ Change the access permission to **"True"** in all profile objects and deploy to 
 ### Why can’t I select the Report Type for deployment? <a href="#why-cant-i-select-the-report-type-for-deployment" id="why-cant-i-select-the-report-type-for-deployment"></a>
 
 Please go to Admin->My account-> Salesforce Settings->Included Metadata Types, and check if the Report and Report Type are included in the Salesforce Settings. If these are not included, please include them to see them during the metadata selection for deployment.
-
-[^1]: 

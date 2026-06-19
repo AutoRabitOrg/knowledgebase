@@ -2,15 +2,247 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
-{% hint style="info" %}
-As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.&#x20;
+## CodeScan Release Notes 26.0.13
 
-Key points:
+**Release Date: 21 June 2026**
 
-1. If you have an existing Salesforce org registered, you are using the existing Connected App flow. No action is required at this time, and your analyses will run as expected.
-2. Please note that any new Salesforce org you wish to register in CodeScan must use the new [local ECA flow](../../../../product-guides/codescan/getting-started/connection-to-salesforce-with-eca.md).
-3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
-{% endhint %}
+### Summary&#x20;
+
+CodeScan 26.0.13 is comprised of the following 6 components:&#x20;
+
+* 0 New Features&#x20;
+* 1 Application Enhancements&#x20;
+* 1 New Rule&#x20;
+* 2 Rule Enhancements&#x20;
+* 0 Rule Deprecations&#x20;
+* 2 Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Application Enhancements&#x20;
+
+1. **Enhanced CSV Export Reporting for Issues and Security Hotspots**&#x20;
+
+Enhanced CSV export reporting for both Issues and Security Hotspots to provide additional information for ownership tracking, exception management, auditing, and compliance reporting.&#x20;
+
+Previously, CSV exports contained limited information, requiring users to manually retrieve assignment, severity, and exception details from within the CodeScan application.&#x20;
+
+**New Export Fields**&#x20;
+
+Issue and Security Hotspot CSV exports now include:&#x20;
+
+* Severity &#x20;
+* Assigned To &#x20;
+* Assigned Date &#x20;
+* Exception Expiry Date &#x20;
+* Exception Reason &#x20;
+
+Exported data reflects the current state of issues and hotspots at the time of export.&#x20;
+
+**Exception Reason Tracking Improvements**&#x20;
+
+Issue exception reasons are now stored separately from standard issue comments, improving traceability and reporting accuracy.&#x20;
+
+Previously, exception reasons for Issues were stored using the same change type as standard comments, making it difficult to distinguish exception justifications from normal discussion history.&#x20;
+
+**Reporting Improvements**&#x20;
+
+The enhanced exports provide greater visibility into:&#x20;
+
+* Severity classification &#x20;
+* Ownership and assignment history &#x20;
+* Exception lifecycle management &#x20;
+* Expiring exceptions &#x20;
+* Compliance and audit reporting activities &#x20;
+
+Issue CSV exports now clearly distinguish between:&#x20;
+
+* Issue Comments &#x20;
+* Exception Reasons &#x20;
+
+Fields are clearly labeled and consistently formatted within the generated CSV files.&#x20;
+
+The updated exports provide users with improved visibility into severity, ownership, exception status, and exception lifecycle details, making it easier to perform external analysis, compliance reviews, and governance activities.&#x20;
+
+O**utcome**&#x20;
+
+* Improves auditability and compliance reporting. &#x20;
+* Provides greater visibility into issue and hotspot ownership. &#x20;
+* Simplifies exception tracking and lifecycle management. &#x20;
+* Reduces the need to manually gather information from multiple areas of the platform. &#x20;
+* Enhances offline analysis and reporting workflows.&#x20;
+
+### New Rules&#x20;
+
+1. **Connected App Missing Description**&#x20;
+
+Added a new Salesforce Metadata rule to identify Connected Apps that do not have a defined description in metadata.&#x20;
+
+Connected Apps without descriptions can be difficult to govern because administrators may not have enough context about the app’s purpose, ownership, or access usage.&#x20;
+
+**Rule Details**&#x20;
+
+* Rule key: _ConnectedAppMissingDescription_&#x20;
+* Type: Code Smell &#x20;
+* Default Severity: Major &#x20;
+* Remediation effort: 2 minutes &#x20;
+* Tags: salesforce &#x20;
+
+**Behavior**&#x20;
+
+The rule raises a violation when a Connected App metadata file does not contain a valid description.&#x20;
+
+Violations are raised when the description is:&#x20;
+
+* Missing &#x20;
+* Empty &#x20;
+* Self-closing &#x20;
+* Commented out &#x20;
+* Whitespace-only &#x20;
+* Defined only in an unrelated nested location &#x20;
+
+The rule does not raise a violation when a valid description is present, including descriptions with multiline text or special characters.&#x20;
+
+**Message**&#x20;
+
+_Connected App does not have a description defined. Add a description for better governance and traceability._&#x20;
+
+**Outcome**&#x20;
+
+* Improves governance and documentation of Salesforce Connected Apps. &#x20;
+* Helps identify orphaned, unmanaged, or poorly documented integrations. &#x20;
+* Supports security audits and compliance reviews. &#x20;
+* Provides better visibility into app purpose and ownership.&#x20;
+
+### Rule Enhancements&#x20;
+
+**1. Improved Rule Engine Stability and Error Handling**&#x20;
+
+Improved the stability and resilience of Apex rule execution by addressing multiple edge cases that could result in internal exceptions being exposed in analysis logs.&#x20;
+
+Previously, certain rule evaluation scenarios could generate internal exceptions during analysis, resulting in Java stack traces being written to logs. Although analysis often completed successfully, these errors could lead to incomplete rule evaluation and reduced confidence in results.&#x20;
+
+Edge cases addressed:&#x20;
+
+* _SOQL Injection Rule Stability_&#x20;
+
+Improved handling of Apex data-flow analysis scenarios that could previously result in internal type-casting exceptions during rule evaluation.&#x20;
+
+* _LocaleInOldApiRule Stability_&#x20;
+
+Improved handling of chained method invocations such as DateTime.now().format()to prevent internal rule execution errors while analyzing valid Apex code.&#x20;
+
+* _Defensive Null Handling Across Rule Execution_&#x20;
+
+Enhanced null-safety handling for multiple Apex rules, including:&#x20;
+
+* Unescaped Output &#x20;
+* SOQL Injection &#x20;
+* Avoid SOQL in Loops &#x20;
+
+Additional validation and defensive checks were introduced to ensure rule execution can safely handle unresolved AST and semantic-analysis paths without exposing internal exceptions.&#x20;
+
+**Outcome**&#x20;
+
+* Improves overall rule engine stability. &#x20;
+* Prevents internal implementation details from appearing in analysis logs. &#x20;
+* Reduces the risk of incomplete rule evaluation. &#x20;
+* Provides more reliable and professional analysis output. &#x20;
+* Improves confidence in analysis results for Apex projects.&#x20;
+
+2. **Enhanced Documentation for Sensitive PII Field Detection Rule**&#x20;
+
+Updated the documentation and guidance for the Identify Potential Sensitive PII Fields rule (sf:SecurePIIFields) to provide clearer information about the types of data covered by the rule and how organizations can extend detection coverage.&#x20;
+
+**Documentation Improvements**&#x20;
+
+The updated rule description now clarifies that certain standard Salesforce objects may contain sensitive personal information, including:&#x20;
+
+* Contact &#x20;
+* Lead &#x20;
+* User &#x20;
+* Account &#x20;
+* Person Account &#x20;
+* Opportunity &#x20;
+
+Examples of potentially sensitive data include:&#x20;
+
+* Names &#x20;
+* Email addresses &#x20;
+* Phone numbers &#x20;
+* Physical addresses &#x20;
+* Birth dates &#x20;
+* Other personal identifiers &#x20;
+
+The documentation also highlights the importance of protecting this information in accordance with privacy and security regulations such as:&#x20;
+
+* GDPR &#x20;
+* CCPA &#x20;
+* HIPAA &#x20;
+
+**Configuration Guidance**&#x20;
+
+Organizations can define additional sensitive field names through rule parameters, including:&#x20;
+
+* SSN &#x20;
+* Social\_Security\_Number &#x20;
+* Credit\_Card &#x20;
+* Passport &#x20;
+
+and other organization-specific fields that may contain regulated personal information.&#x20;
+
+**Outcome**&#x20;
+
+* Improves understanding of the rules' purpose and scope. &#x20;
+* Provides clearer guidance for identifying and protecting sensitive data. &#x20;
+* Helps organizations extend detection coverage to custom fields. &#x20;
+* Supports privacy, security, and compliance initiatives through improved rule documentation.&#x20;
+
+### Fixes&#x20;
+
+1. **Resolved SAML Login Issue with Uppercase Organization Domains**&#x20;
+
+Fixed an issue where users could be unable to log in when the organization's domain name contained uppercase letters.&#x20;
+
+Previously, the SAML login flow treated organization domains as case-sensitive. As a result, valid domains entered with uppercase or mixed-case characters could fail authentication, even though domain names should be handled case-insensitively.&#x20;
+
+**Behavior**&#x20;
+
+* Organization domain matching is now handled case-insensitively during SAML login. &#x20;
+* SAML connection creation now stores organization domain names consistently in lowercase. &#x20;
+* Domains entered in lowercase, uppercase, or mixed case are handled correctly. &#x20;
+* Leading and trailing spaces in domain input are handled safely. &#x20;
+* Invalid domains continue to be rejected as expected. &#x20;
+
+**Outcome**&#x20;
+
+* Improves SAML login reliability for organizations using mixed-case or uppercase domain entries.&#x20;
+* Aligns organization domain handling with standard case-insensitive domain behavior. &#x20;
+* Prevents valid users from being blocked due to domain capitalization differences.&#x20;
+
+&#x20;
+
+2. **Resolved Salesforce Integration Error When Using Previous Test Run Results**&#x20;
+
+Fixed an issue that could prevent Salesforce integrations from running successfully when configured to use unit test results from a previous execution.&#x20;
+
+Previously, analyses configured with the _Use previous run_ option could fail while attempting to retrieve historical test execution data.&#x20;
+
+**Behavior**&#x20;
+
+* Corrected the retrieval of previous unit test execution results. &#x20;
+* Improved handling of Salesforce test coverage queries and historical test result lookups. &#x20;
+* Analysis now successfully reuses previously executed unit test results when available. &#x20;
+* Organizations without prior test execution history are handled gracefully. &#x20;
+
+**Outcome**&#x20;
+
+* Improves the reliability of Salesforce integrations using previously executed unit tests. &#x20;
+* Prevents failures caused by test result retrieval errors. &#x20;
+* Reduces unnecessary test execution by allowing the successful reuse of historical test results. &#x20;
+* Provides more resilient handling of organizations with limited or no prior test execution history.&#x20;
+
+***
 
 ## CodeScan Release Notes 26.0.12
 
@@ -1910,8 +2142,6 @@ Please also refer to the following documentation on Salesforce Help:&#x20;
 
 [Use Locale-Neutral Methods in Code](https://help.salesforce.com/s/articleView?id=xcloud.admin_locales_code_methods.htm\&type=5)
 
-<mark style="color:red;">NOTE: This new rule is also associated with our existing rule, “Adopt the ICU Locale Formats instead of JDK locale formats”</mark> {Rule ID: sfmeta:ICULocaleFormats}
-
 The rule sf:LocaleInOldApi was validated for the following methods:
 
 * Date.format
@@ -2019,7 +2249,7 @@ Validated the fix for the Sf:testclassnaming rule by verifying the following sce
 
 <figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-### Fix
+### Fixes
 
 **1.       Set default value to “false” for “is\_archived” column in organizations table.**
 
@@ -2040,6 +2270,16 @@ Also verified that users who login with SAML are unblocked, which we confirmed b
 ## CodeScan Release 26.0.4
 
 **Release Date: 01 March 2026**
+
+{% hint style="info" %}
+As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.&#x20;
+
+Key points:
+
+1. If you have an existing Salesforce org registered, you are using the existing Connected App flow. No action is required at this time, and your analyses will run as expected.
+2. Please note that any new Salesforce org you wish to register in CodeScan must use the new [local ECA flow](../../../../product-guides/codescan/getting-started/connection-to-salesforce-with-eca.md).
+3. Please note that if your existing Salesforce orgs need to be reattached, if your tokens expire, or after Sandbox refresh, your Connected App flow will no longer work, and you will need to re-register your org using the[ local ECA flow](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/connection-to-salesforce-with-eca). Please note that in these circumstances, your comparison branches in Salesforce will need to be set up again.
+{% endhint %}
 
 ### Summary
 

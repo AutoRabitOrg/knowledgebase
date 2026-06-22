@@ -1,8 +1,6 @@
 # Dashboard
 
-## Dashboard
-
-Dashboard provides a bird’s eye view of all the issues and metrics across all the organizations and environments. Issues can also be drilled down from organization level to application level.
+The dashboard provides a bird’s eye view of all the issues and metrics across all the organizations and environments. Issues can also be drilled down from organization level to application level.
 
 1. Navigate to **`Dashboard`** -> **`Org Dashboard`**
 2.  **`Summary Statistics`** displays the count of all issues grouped by rule severity and category across all organizations <br>

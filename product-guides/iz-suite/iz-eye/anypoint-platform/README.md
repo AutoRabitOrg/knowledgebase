@@ -1,3 +1,2 @@
 # Anypoint Platform
 
-##

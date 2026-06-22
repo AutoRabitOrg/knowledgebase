@@ -1,6 +1,4 @@
-# SSO Configuration
-
-## Anypoint SSO Configuration
+# Anypoint SSO Configuration
 
 IZ Suite can be configured to integrate with Anypoint SSO to enable secure, centralized authentication across the platform. By connecting IZ Suite with the organization’s Anypoint identity provider configuration, users can authenticate using their existing enterprise credentials.
 
@@ -29,6 +27,8 @@ Follow the below steps to create a Connected App in Anypoint Platform -
    2. **Client Id** - The client id from the Anypoint's Connected App's page
    3. **Client Secret** - The secret copied while generating the Client secret
 4. Click on save
+
+<figure><img src="../../../../.gitbook/assets/anypoint_sso.png" alt=""><figcaption></figcaption></figure>
 
 ### See Also
 

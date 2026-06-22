@@ -1357,6 +1357,12 @@
     * [Automation Tasks](product-guides/iz-suite/iz-insights/automation-tasks.md)
     * [Code with AI](product-guides/iz-suite/iz-insights/code-with-ai.md)
     * [AI Agent Configuration](product-guides/iz-suite/iz-insights/ai-agent-configuration.md)
+  * [IZ-Lens](product-guides/iz-suite/iz-lens/README.md)
+    * [Deprecations](product-guides/iz-suite/iz-lens/deprecations/README.md)
+      * [Deprecated Applications](product-guides/iz-suite/iz-lens/deprecations/deprecated-applications.md)
+    * [Inventory](product-guides/iz-suite/iz-lens/inventory.md)
+    * [Vulnerabilities](product-guides/iz-suite/iz-lens/vulnerabilities/README.md)
+      * [Vulnerable Applications](product-guides/iz-suite/iz-lens/vulnerabilities/vulnerable-applications.md)
 
 ## Resources
 

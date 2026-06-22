@@ -1316,7 +1316,7 @@
     * [Agentic Code Analysis User Guide](product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide.md)
     * [AI Interfaces for AutoRABIT Guard: Technical Specification](product-guides/guard/ai-interfaces/ai-interfaces-for-autorabit-guard-technical-specification.md)
 * [IZ Suite](product-guides/iz-suite/README.md)
-  * [About](product-guides/iz-suite/about.md)
+  * [About IZ-Suite](product-guides/iz-suite/about-iz-suite.md)
   * [Agent](product-guides/iz-suite/agent/README.md)
     * [Agent Types](product-guides/iz-suite/agent/agent-types/README.md)
       * [Agent Modes](product-guides/iz-suite/agent/agent-types/agent-modes/README.md)

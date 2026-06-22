@@ -10,11 +10,13 @@ Runtime code analyzer tool like **`IZ Eye`** fills this gap by continuously scan
 
 It can identify whether the same code in dev environment has been promoted to Staging and Production environments or whether its a modified/new code deployed to the environments.
 
-It analyzes the code deployed if new and alerts based on any new vulnerabilities introduced with the deployment - so that even if the static code analysis didn’t capture the issues or if the process is by passed, it will capture and provide upto date state of the organization clearly.
+It analyzes the code deployed if new and alerts based on any new vulnerabilities introduced with the deployment - so that even if the static code analysis didn’t capture the issues or if the process is by passed, it will capture and provide up to date state of the organization clearly.
 
 This helps make sure that the organization can have a reliable way to check the runtime state of the estate - rather than just assuming that process works or to miss checking for any unauthorized deployments or changes at all!
 
 ### Keep Compliance Current (KCC)
+
+<figure><img src="../../../.gitbook/assets/kcc.png" alt=""><figcaption></figcaption></figure>
 
 When we have deployed hundreds of APIs/Applications which utilized various java packages or modules, in built connectors, custom connectors and libraries, we encountered two main types of changes to the security profile:
 

@@ -1354,6 +1354,9 @@
       * [SSO Configuration](product-guides/iz-suite/iz-eye/anypoint-platform/sso-configuration.md)
   * [IZ-Insights](product-guides/iz-suite/iz-insights/README.md)
     * [Automation Task Logs](product-guides/iz-suite/iz-insights/automation-task-logs.md)
+    * [Automation Tasks](product-guides/iz-suite/iz-insights/automation-tasks.md)
+    * [Code with AI](product-guides/iz-suite/iz-insights/code-with-ai.md)
+    * [AI Agent Configuration](product-guides/iz-suite/iz-insights/ai-agent-configuration.md)
 
 ## Resources
 

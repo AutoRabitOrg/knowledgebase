@@ -24,6 +24,6 @@ Endpoints for which the health check will be performed based on the configured i
 
 ### See Also
 
-* Configure Schedule
-* Categories
-* Status Pages
+* [Configure Schedule](../configure-schedule.md)
+* [Categories](../../categories/)
+* [Status Pages](../status-pages/)

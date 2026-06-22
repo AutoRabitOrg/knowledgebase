@@ -16,7 +16,7 @@
 
 ### See Also
 
-* Configure Schedule
-* Endpoints
-* Categories
-* Status Pages
+* [Configure Schedule](../about-iz-pulse/configure-schedule.md)
+* [Endpoints](../about-iz-pulse/endpoints/)
+* [Categories](./)
+* [Status Pages](../about-iz-pulse/status-pages/)

@@ -1373,8 +1373,15 @@
     * [About IZ-Pulse](product-guides/iz-suite/iz-pulse/about-iz-pulse/README.md)
       * [Endpoints](product-guides/iz-suite/iz-pulse/about-iz-pulse/endpoints/README.md)
         * [Configure Endpoint](product-guides/iz-suite/iz-pulse/about-iz-pulse/endpoints/configure-endpoint.md)
+      * [Status Pages](product-guides/iz-suite/iz-pulse/about-iz-pulse/status-pages/README.md)
+        * [Configure Status Page](product-guides/iz-suite/iz-pulse/about-iz-pulse/status-pages/configure-status-page.md)
+        * [Private Status Page](product-guides/iz-suite/iz-pulse/about-iz-pulse/status-pages/private-status-page.md)
+        * [Public Status Page](product-guides/iz-suite/iz-pulse/about-iz-pulse/status-pages/public-status-page.md)
+      * [Configure Schedule](product-guides/iz-suite/iz-pulse/about-iz-pulse/configure-schedule.md)
     * [Categories](product-guides/iz-suite/iz-pulse/categories/README.md)
       * [Configure Category](product-guides/iz-suite/iz-pulse/categories/configure-category.md)
+    * [Maintenance Windows](product-guides/iz-suite/iz-pulse/maintenance-windows/README.md)
+      * [Configure Maintenance Window](product-guides/iz-suite/iz-pulse/maintenance-windows/configure-maintenance-window.md)
 
 ## Resources
 

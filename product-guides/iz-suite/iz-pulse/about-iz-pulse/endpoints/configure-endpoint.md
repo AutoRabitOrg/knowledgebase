@@ -51,7 +51,7 @@
 
 ### See Also
 
-* Configure Schedule
-* Endpoints
-* Categories
-* Status Pages
+* [Configure Schedule](../configure-schedule.md)
+* [Endpoints](./)
+* [Categories](../../categories/)
+* [Status Pages](../status-pages/)

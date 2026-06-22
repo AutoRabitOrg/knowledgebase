@@ -14,6 +14,8 @@ List of all the Vulnerable applications in the system.
   * **`Metadata`** - Complete group id and asset id of the library.
   * **`Value`** - Indicated the vulnerable version used
 
+<figure><img src="/broken/files/XDCkFmAZBpQDssrHjoZC" alt=""><figcaption></figcaption></figure>
+
 ### See Also
 
 * Inventory

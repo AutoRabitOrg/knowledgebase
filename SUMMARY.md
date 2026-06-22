@@ -1369,6 +1369,12 @@
     * [Inventory](product-guides/iz-suite/iz-lens/inventory.md)
     * [Vulnerabilities](product-guides/iz-suite/iz-lens/vulnerabilities/README.md)
       * [Vulnerable Applications](product-guides/iz-suite/iz-lens/vulnerabilities/vulnerable-applications.md)
+  * [IZ-Pulse](product-guides/iz-suite/iz-pulse/README.md)
+    * [About IZ-Pulse](product-guides/iz-suite/iz-pulse/about-iz-pulse/README.md)
+      * [Endpoints](product-guides/iz-suite/iz-pulse/about-iz-pulse/endpoints/README.md)
+        * [Configure Endpoint](product-guides/iz-suite/iz-pulse/about-iz-pulse/endpoints/configure-endpoint.md)
+    * [Categories](product-guides/iz-suite/iz-pulse/categories/README.md)
+      * [Configure Category](product-guides/iz-suite/iz-pulse/categories/configure-category.md)
 
 ## Resources
 

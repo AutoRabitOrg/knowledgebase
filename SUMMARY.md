@@ -1387,6 +1387,16 @@
     * [Configure Application Report](product-guides/iz-suite/iz-reports/configure-application-report.md)
     * [Configure  Organization Report](product-guides/iz-suite/iz-reports/configure-organization-report.md)
     * [Configure Report Storage](product-guides/iz-suite/iz-reports/configure-report-storage.md)
+  * [IZ-Scan](product-guides/iz-suite/iz-scan/README.md)
+    * [Anypoint Studio](product-guides/iz-suite/iz-scan/anypoint-studio/README.md)
+      * [Analyzer Configuration](product-guides/iz-suite/iz-scan/anypoint-studio/analyzer-configuration.md)
+      * [Anypoint Studio Analysis](product-guides/iz-suite/iz-scan/anypoint-studio/anypoint-studio-analysis.md)
+      * [Autofix](product-guides/iz-suite/iz-scan/anypoint-studio/autofix.md)
+      * [Install IZ Analyzer Studio](product-guides/iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md)
+      * [IZ-Suite Configuration](product-guides/iz-suite/iz-scan/anypoint-studio/iz-suite-configuration.md)
+      * [Remove IZ Analyzer Studio Plugin](product-guides/iz-suite/iz-scan/anypoint-studio/remove-iz-analyzer-studio-plugin.md)
+      * [Rules Playground](product-guides/iz-suite/iz-scan/anypoint-studio/rules-playground.md)
+      * [Update IZ Analyzer Studio](product-guides/iz-suite/iz-scan/anypoint-studio/update-iz-analyzer-studio.md)
 
 ## Resources
 

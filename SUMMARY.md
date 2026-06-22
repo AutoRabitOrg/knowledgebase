@@ -1352,6 +1352,8 @@
     * [Anypoint Platform](product-guides/iz-suite/iz-eye/anypoint-platform/README.md)
       * [Overview](product-guides/iz-suite/iz-eye/anypoint-platform/overview.md)
       * [SSO Configuration](product-guides/iz-suite/iz-eye/anypoint-platform/sso-configuration.md)
+  * [IZ-Insights](product-guides/iz-suite/iz-insights/README.md)
+    * [Automation Task Logs](product-guides/iz-suite/iz-insights/automation-task-logs.md)
 
 ## Resources
 

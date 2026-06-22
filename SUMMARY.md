@@ -1347,6 +1347,11 @@
       * [MCP Tools](product-guides/iz-suite/iz-core/mcp-server/mcp-tools.md)
     * [IZ-Core Notifications](product-guides/iz-suite/iz-core/iz-core-notifications.md)
     * [IZ-Core Rules](product-guides/iz-suite/iz-core/iz-core-rules.md)
+  * [IZ-Eye](product-guides/iz-suite/iz-eye/README.md)
+    * [About IZ-Eye](product-guides/iz-suite/iz-eye/about-iz-eye.md)
+    * [Anypoint Platform](product-guides/iz-suite/iz-eye/anypoint-platform/README.md)
+      * [Overview](product-guides/iz-suite/iz-eye/anypoint-platform/overview.md)
+      * [SSO Configuration](product-guides/iz-suite/iz-eye/anypoint-platform/sso-configuration.md)
 
 ## Resources
 

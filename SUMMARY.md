@@ -1363,6 +1363,7 @@
       * [Automation Tasks](product-guides/iz-suite/iz-eye/iz-insights/automation-tasks.md)
       * [Code with AI](product-guides/iz-suite/iz-eye/iz-insights/code-with-ai.md)
       * [AI Agent Configuration](product-guides/iz-suite/iz-eye/iz-insights/ai-agent-configuration.md)
+    * [Dashboard](product-guides/iz-suite/iz-eye/dashboard.md)
   * [IZ-Lens](product-guides/iz-suite/iz-lens/README.md)
     * [Deprecations](product-guides/iz-suite/iz-lens/deprecations/README.md)
       * [Deprecated Applications](product-guides/iz-suite/iz-lens/deprecations/deprecated-applications.md)
@@ -1382,6 +1383,10 @@
       * [Configure Category](product-guides/iz-suite/iz-pulse/categories/configure-category.md)
     * [Maintenance Windows](product-guides/iz-suite/iz-pulse/maintenance-windows/README.md)
       * [Configure Maintenance Window](product-guides/iz-suite/iz-pulse/maintenance-windows/configure-maintenance-window.md)
+  * [IZ-Reports](product-guides/iz-suite/iz-reports/README.md)
+    * [Configure Application Report](product-guides/iz-suite/iz-reports/configure-application-report.md)
+    * [Configure  Organization Report](product-guides/iz-suite/iz-reports/configure-organization-report.md)
+    * [Configure Report Storage](product-guides/iz-suite/iz-reports/configure-report-storage.md)
 
 ## Resources
 

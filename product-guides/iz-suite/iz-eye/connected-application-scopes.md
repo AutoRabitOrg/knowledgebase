@@ -36,7 +36,10 @@ Appropriate permissions might be required to create Connect App in Anypoint Plat
 1. Navigate to **`Global Settings`** -> **`Job types`**
 2. Search for **`Anypoint Sync`** job type and click on edit&#x20;
 3. Update the value of **`Client ID`** key with the Connected App’s Client ID
-4. Update the value of **`Client Secret`** key to the Connected App’s Client Secret&#x20;
+4.  Update the value of **`Client Secret`** key to the Connected App’s Client Secret\
+    &#x20;
+
+    <figure><img src="../../../.gitbook/assets/anypoint-sync-job-type-configure.png" alt=""><figcaption></figcaption></figure>
 5. Click on **`Ok`**
 6. The **`Anypoint Sync`** scheduler will now automatically sync the appropriate Organizations/Business Groups and Environments which it has access to
 

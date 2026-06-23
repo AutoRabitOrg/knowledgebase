@@ -24,7 +24,9 @@
 4. Actions include -
    1. **`View Dashboard`** - Summary report of all the issues. [View Dashboard](../dashboard.md)
    2. **`View Issues`** - Detailed report of the issues with file names and line numbers. [View Issues](application-issues.md)
-5. Click on the settings icon to view additional columns like total worker, worker size, domain, etc.&#x20;
+5.  Click on the settings icon to view additional columns like total worker, worker size, domain, etc. <br>
+
+    <figure><img src="../../../../.gitbook/assets/mule-app-col-settings.png" alt=""><figcaption></figcaption></figure>
 
 ### See Also
 

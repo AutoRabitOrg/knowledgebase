@@ -1374,7 +1374,7 @@
       * [Applications](product-guides/iz-suite/iz-eye/salesforce/applications/README.md)
         * [Apex Classes and Triggers](product-guides/iz-suite/iz-eye/salesforce/applications/apex-classes-and-triggers.md)
     * [Anypoint Teams Synchronization](product-guides/iz-suite/iz-eye/anypoint-teams-synchronization.md)
-    * [Schedule Configuration](product-guides/iz-suite/iz-eye/schedule-configuration.md)
+    * [Code Scan Schedule Configuration](product-guides/iz-suite/iz-eye/code-scan-schedule-configuration.md)
     * [Connected Application Scopes](product-guides/iz-suite/iz-eye/connected-application-scopes.md)
     * [Dashboard](product-guides/iz-suite/iz-eye/dashboard.md)
   * [IZ-Insights](product-guides/iz-suite/iz-insights/README.md)

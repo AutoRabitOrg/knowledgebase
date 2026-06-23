@@ -1,5 +1,13 @@
 # Bitbucket
 
+{% hint style="warning" %}
+Bitbucket App Passwords are being deprecated by Atlassian and **will no longer be supported after June 9, 2026**. Depending on your Bitbucket environment and rollout status, you may already be unable to create new App Passwords. AutoRABIT recommends using Bitbucket API Tokens for all new integrations.\
+\
+For all new Bitbucket integrations, AutoRABIT recommends using **Bitbucket API Tokens** instead of App Passwords.
+
+For more information, see: [**Bitbucket App Password Deprecation – Action Required Before June 9, 2026**](../../../../../../fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026.md)**.**
+{% endhint %}
+
 ### About Bitbucket <a href="#about-bitbucket" id="about-bitbucket"></a>
 
 **Bitbucket** from Atlassian is a cloud/self-hosted version control application. It provides effective ways to manage repositories, issue tracking, and technical projects. In the most basic terms, Bitbucket empowers you with total authority over the DevOps lifecycle.
@@ -26,19 +34,39 @@ GitHub and Bitbucket are hosting platforms that offer developers access to both 
 
 #### Store your Bitbucket credential in ARM <a href="#store-your-bitbucket-credential-in-arm" id="store-your-bitbucket-credential-in-arm"></a>
 
-This is an initial step where you store your user's credential (usually a username, password, or token) in ARM.\
-To authenticate Bitbucket, you’ll have to use **App Password** instead of the regular password to login to your Bitbucket account.
+This is an initial step where you store your user's credential (usually a username, password, or token) in ARM.
 
-**Steps to generate a Bitbucket App Password**
+To authenticate Bitbucket, you’ll have to use **API Tokens** instead of the regular password to log in to your Bitbucket account.
 
-1. Log into to your Bitbucket account.
+**Steps to generate a Bitbucket API Token**
+
+1. Log in to your Bitbucket account.
 2. Click your account’s **`profile picture`** in the top right-corner of the Bitbucket webpage.
 3. Click the **`Personal Settings`** link in the dropdown menu.
-4. Select the link on the left labeled **`App Passwords`**. It is under the **`Access Management`** heading.
-5. Click on **`Create App Password`** button.
-6. Give a **`label name`** and check all the necessary permissions that you’d want to provide. Typically, we will require **`repository`**, **`webhook`**, and **`pull request permissions`**.
-7. Click **`Create`** to generate the Bitbucket App Passwords and copy the access token’s value. You will not be able to view this password again once you close this window.
-8. Click **`Save`**.
+4. Navigate to **`API Tokens`**.
+5. Select the link on the left labeled **`Create API Token with Scopes`**. It is under the **`Access Management`** heading.
+6. Click on **`Create API Tokens`** button.
+7. Enter a **`label name`** and check all the necessary permissions that you’d want to provide.&#x20;
+   1. Select the following required scopes:
+      * admin:project:bitbucket
+      * admin:repository:bitbucket
+      * read:account
+      * read:me
+      * read:permission:bitbucket
+      * read:project:bitbucket
+      * read:pullrequest:bitbucket
+      * read:repository:bitbucket
+      * read:webhook:bitbucket
+      * write:permission:bitbucket
+      * write:pullrequest:bitbucket
+      * write:repository:bitbucket
+      * write:webhook:bitbucket
+8. Click **`Create`** to generate the Bitbucket API Token and copy the access token’s value. You will not be able to view this token again once you close this window.
+9. Click **`Save`**.
+
+{% hint style="info" %}
+Tokens created without the required scopes may fail authentication or repository registration.
+{% endhint %}
 
 **Store your Bitbucket credential in ARM**
 
@@ -46,9 +74,11 @@ To authenticate Bitbucket, you’ll have to use **App Password** instead of the 
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
 3. Next, click **`Create Credential`**.
 4. On the next pop-up screen, give a **`credential name`**.
-5. Choose the **`Credential Type`** as **`Username with Password`**.
-6. Enter your Bitbucket **`username`** and **`App Password`**.
+5. Choose the **`Credential Type`** as **`Username with API Token`**.
+6. Enter your Bitbucket **`username`** and **`API Token`**.
 7. Click **`Save`**.
+
+The credential is now available for use when registering Bitbucket repositories in ARM.
 
 #### Registering a Bitbucket repository in ARM <a href="#registering-a-bitbucket-repository-in-arm" id="registering-a-bitbucket-repository-in-arm"></a>
 
@@ -59,7 +89,7 @@ If you wish to set up a Bitbucket repository, ensure that you have an account cr
 3. Click on the **`Register Repository`** available on the right corner of the screen.
 4. On the **`Register Repository`** page, select the **`Version Control System`** as **`GIT`**.
 5. Enter the **`name`** of the repository to display it locally.
-6. Paste the **`Clone URL`** that BitBucket provides you.
+6. Paste the **`Clone URL`** that Bitbucket provides you.
 
 > Follow the steps to copy the URL from the Bitbucket account:\
 > a. Select your registered Bitbucket repository.\
@@ -71,3 +101,33 @@ If you wish to set up a Bitbucket repository, ensure that you have an account cr
 8. The **`Default Branch`** selection will be in disabled mode by default. Click on the **`refresh`** button to fetch and list down all the available branches on your remote repository.
 9. Select one of the default branches from the list.
 10. Once the registration is successfully done, you can find the newly added repository on **`VC Repo's`** home page.
+
+
+
+### Troubleshooting
+
+#### Unable to Create an App Password
+
+Bitbucket App Passwords are being deprecated by Atlassian and may no longer be available in some environments. Link to announcement: [https://knowledgebase.autorabit.com/fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026#overview](https://knowledgebase.autorabit.com/fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026#overview)
+
+Create and use a Bitbucket API Token instead.
+
+#### Authentication Failed
+
+Verify that:
+
+* The API Token is active.
+* The API Token was created using **Create API Token with Scopes**.
+* All required scopes have been assigned.
+* The Bitbucket user has access to the repository.
+
+#### Repository Registration Failed
+
+Verify:
+
+* Repository URL and configuration details.
+* API Token permissions.
+* Repository access permissions.
+* Connectivity between ARM and Bitbucket.
+
+If the issue persists, contact AutoRABIT Support.

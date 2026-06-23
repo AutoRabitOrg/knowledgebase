@@ -8,11 +8,19 @@
 
 ### To view all the APIs
 
-1. Navigate to **`IZ Eye`** -> **`Azure API Management`**. Overview includes -&#x20;
-   1. **`Name`** - Name of the API prefixed with Resource Group name
-   2. **`Organization`** - Subscription to which the API belongs to
-   3. **`Environment`** - Resource Group to which the API belongs to
-2. Click on the **`Plus`** icon to view all the versions of the API&#x20;
+1.  Navigate to **`IZ Eye`** -> **`Azure API Management`**. Overview includes
+
+    <figure><img src="../../../../../.gitbook/assets/azure_ais_apim_apps_1.png" alt=""><figcaption></figcaption></figure>
+
+a. **`Name`** - Name of the API prefixed with Resource Group name
+
+b. **`Organization`** - Subscription to which the API belongs to
+
+c. **`Environment`** - Resource Group to which the API belongs to<br>
+
+2.  Click on the **`Plus`** icon to view all the versions of the API <br>
+
+    <figure><img src="../../../../../.gitbook/assets/azure_ais_apim_apps_2.png" alt=""><figcaption></figcaption></figure>
 3. Summary details include -
    1. **`Total Issues`** - Indicates total number of issues once the application is scanned
    2. **`Status`** - Indicated the status of class / trigger in Salesforce
@@ -23,7 +31,7 @@
 
 ### See Also
 
-* App Registration
-* Configure Code Scan Schedules
-* Logic Apps
-* Function Apps
+* [App Registration](../application-registration.md)
+* [Configure Code Scan Schedules](../../../iz-pulse/about-iz-pulse/configure-schedule.md)
+* [Logic Apps](logic-applications.md)
+* [Function Apps](function-applications.md)

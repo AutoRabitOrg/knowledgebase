@@ -4,7 +4,7 @@
 
 ## nCino - Release 26.2.12
 
-**Release Date:** 21 **June 2026**
+**Release Date:** **21 June 2026**
 
 #### Custom Field Exclusion for Cleaner nCino Commits and Deployments <a href="#custom-field-exclusion-for-cleaner-ncino-commits-and-deployments" id="custom-field-exclusion-for-cleaner-ncino-commits-and-deployments"></a>
 

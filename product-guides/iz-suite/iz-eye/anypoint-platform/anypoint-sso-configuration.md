@@ -32,7 +32,7 @@ Follow the below steps to create a Connected App in Anypoint Platform -
 
 ### See Also
 
-* Configure Code Scan Schedules
-* Logic Apps
-* API Management
-* Function Apps
+* [Configure Code Scan Schedules](../azure-ai-services/schedule-configuration.md)
+* [Logic Apps](../azure-ai-services/applications/logic-applications.md)
+* [API Management](../azure-ai-services/applications/apim-applications.md)
+* [Function Apps](../azure-ai-services/applications/function-applications.md)

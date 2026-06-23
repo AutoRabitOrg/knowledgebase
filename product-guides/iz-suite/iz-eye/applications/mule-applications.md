@@ -14,10 +14,12 @@
 
 ### To view all the applications
 
-1. Navigate to **`IZ Eye`** -> **`Mule Projects`**&#x20;
+1.  Navigate to **`IZ Eye`** -> **`Mule Projects`** <br>
+
+    <figure><img src="/broken/files/XrzV4tF26mXErT30BSFo" alt=""><figcaption></figcaption></figure>
 2. The **`Status`** column indicates whether the application is running in Anypoint Platform **`Runtime Manager`**
 3. Summary details include -
-   1. **`Target`** - Indicates the deployment target E.g. CloudHub or CloudHub 2.0
+   1. **`Target`** - Indicates the deployment target, e.g. CloudHub or CloudHub 2.0
    2. **`Total Issues`** - Indicates total number of issues once the application is scanned
    3. **`App Size`** - Total size of the deployed artifact
    4. **`Last Scan`** - Time since the last scan was performed

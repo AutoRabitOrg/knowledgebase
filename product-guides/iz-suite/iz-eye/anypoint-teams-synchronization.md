@@ -113,8 +113,8 @@ This section provides a detailed guide on how to synchronize users and permissio
 
 ### See Also
 
-* Aggregated Dashboard
-* Application Dashboard
-* Agent Job Types
-* Mule Projects
-* API Applications
+* [Aggregated Dashboard](dashboard.md)
+* [Application Dashboard](applications/application-dashboard.md)
+* [Agent Job Types](../agent/agent-job-types.md)
+* [Mule Projects](applications/mule-applications.md)
+* [API Applications](applications/api-applications.md)

@@ -1415,6 +1415,9 @@
       * [Remove IZ Analyzer Studio Plugin](product-guides/iz-suite/iz-scan/anypoint-studio/remove-iz-analyzer-studio-plugin.md)
       * [Rules Playground](product-guides/iz-suite/iz-scan/anypoint-studio/rules-playground.md)
       * [Update IZ Analyzer Studio](product-guides/iz-suite/iz-scan/anypoint-studio/update-iz-analyzer-studio.md)
+  * [Jobs](product-guides/iz-suite/jobs/README.md)
+    * [Job Executions](product-guides/iz-suite/jobs/job-executions.md)
+    * [Job Schedules](product-guides/iz-suite/jobs/job-schedules.md)
 
 ## Resources
 

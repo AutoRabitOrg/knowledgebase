@@ -1,13 +1,13 @@
 # API Instances
 
 {% hint style="warning" %}
-* To start scanning the API Instances, a schedule has to be created to scan the applications deployed to `API Manager` in Anypoint Platform
-* To create a schedule follow the steps mentioned at Configure Schedule
+* To start scanning the API Instances, a schedule has to be created to scan the applications deployed to `API Manager` in Anypoint Platform.
+* To create a schedule follow the steps mentioned at [Configure Schedule](../azure-ai-services/schedule-configuration.md).
 {% endhint %}
 
 ### Configuring Schedule
 
-1. While configuring the schedule select `Anypoint API Instance Analysis` job type
+1. While configuring the schedule, select `Anypoint API Instance Analysis` job type
 2. In the next step, select the required `Organizations` and `Environments`
 3. Choose the appropriate schedule
 

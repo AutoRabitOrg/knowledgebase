@@ -9,7 +9,9 @@ This section provides a detailed guide on how to synchronize users and permissio
 1. Login to IZ Suite Web application
 2. Navigate to **`Settings`** -> **`Global Settings`**
 3. Search for **`Anypoint Team Sync`** and click on **`Edit`** action
-4. Update the value to **`true`** and click on Submit.&#x20;
+4.  Update the value to **`true`** and click on Submit. <br>
+
+    <figure><img src="../../../.gitbook/assets/enable-teams-sync.png" alt=""><figcaption></figcaption></figure>
 
 ### Schedule - Anypoint Teams Sync
 

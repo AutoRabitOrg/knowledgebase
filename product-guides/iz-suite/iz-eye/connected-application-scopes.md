@@ -3,12 +3,12 @@
 ## Connected App Scopes
 
 {% hint style="info" %}
-* Appropriate permission might be required to create Connect App in Anypoint Platform
+Appropriate permissions might be required to create Connect App in Anypoint Platform.
 {% endhint %}
 
 ### Creating Connected App
 
-1. Login to https://anypoint.mulesoft.com/
+1. Log in to https://anypoint.mulesoft.com/
 2. Navigate to **`Access Management`** -> **`Connected Apps`**
 3. Click on **`Create App`** and select the following details
    1. Name - IZ Suite Agent
@@ -31,11 +31,11 @@
 | View environments the Connected App has access to | **`View Environments in a particular organization`**     | View environments the Connected App has access to in a specific organization |
 | **`View Users in a particular organization`**     | Required if Anypoint Teams Sync is enabled to sync users | **`Access Controls Viewer`**                                                 |
 
-### Applying Client Id and Secret
+### Applying Client ID and Secret
 
 1. Navigate to **`Global Settings`** -> **`Job types`**
 2. Search for **`Anypoint Sync`** job type and click on edit&#x20;
-3. Update the value of **`Client Id`** key with the Connected App’s Client Id
+3. Update the value of **`Client ID`** key with the Connected App’s Client ID
 4. Update the value of **`Client Secret`** key to the Connected App’s Client Secret&#x20;
 5. Click on **`Ok`**
 6. The **`Anypoint Sync`** scheduler will now automatically sync the appropriate Organizations/Business Groups and Environments which it has access to

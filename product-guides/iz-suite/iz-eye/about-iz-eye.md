@@ -6,6 +6,8 @@
 
 ### Continuous Runtime Monitoring
 
+<figure><img src="../../../.gitbook/assets/about.png" alt=""><figcaption></figcaption></figure>
+
 Runtime code analyzer tool like **`IZ Eye`** fills this gap by continuously scanning any changes to all the environments based on the configuration and can intelligently determine when new code or API has been deployed to any of the servers.
 
 It can identify whether the same code in dev environment has been promoted to Staging and Production environments or whether its a modified/new code deployed to the environments.

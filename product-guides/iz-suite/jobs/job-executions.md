@@ -15,4 +15,4 @@ After the jobs are executed according to the set schedule, the status and logs f
 
 ### See Also
 
-* Job Schedules
+* [Job Schedules](job-schedules.md)

@@ -35,6 +35,8 @@ In summary, IZ Runtime analyzer provides ability to rescan the entire applicatio
 
 ### Coverage Analysis
 
+<figure><img src="../../../.gitbook/assets/coverage_analysis.png" alt=""><figcaption></figcaption></figure>
+
 In **`IZ Eye`**, not only component level code/specification is scanned with issues and metrics captured, it provides a capability of linking the assets across the entire estate.
 
 This enables easy way of analyzing the compliance data in one shot - whether you would like to understand it at component level, summary level or based on custom tag level!

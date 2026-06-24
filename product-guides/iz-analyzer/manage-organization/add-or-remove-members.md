@@ -28,4 +28,4 @@
 ### See Also
 
 * [Create Organization](create-organization.md)
-* Activate Rules
+* [Activate Rules](../manage-rules/activate-rules.md)

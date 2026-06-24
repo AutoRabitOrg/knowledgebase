@@ -8,7 +8,7 @@ Appropriate permissions might be required to create Connect App in Anypoint Plat
 
 ### Creating Connected App
 
-1. Log in to https://anypoint.mulesoft.com/
+1. Log in to [https://anypoint.mulesoft.com](https://anypoint.mulesoft.com/)/
 2. Navigate to **`Access Management`** -> **`Connected Apps`**
 3. Click on **`Create App`** and select the following details
    1. Name - IZ Suite Agent

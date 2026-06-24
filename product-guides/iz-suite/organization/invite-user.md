@@ -1,9 +1,9 @@
-# Invite-User
+# Invite User
 
-Invite user to the organization
+Invite user to the organization:
 
 1. Navigate to **`Organization`** -> **`Users`** and click on **`Invite User`**
-2. Enter the basic details -&#x20;
+2. Enter the basic details:&#x20;
 
 <figure><img src="../../../.gitbook/assets/invite-user1.png" alt=""><figcaption></figcaption></figure>
 

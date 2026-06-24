@@ -15,6 +15,8 @@ Azure Integration Services (such as Logic Apps and API Management) deliver scala
 
 ### Solution: Visibility and Governance
 
+<figure><img src="../../../../.gitbook/assets/iz_ais_banner.webp" alt=""><figcaption></figcaption></figure>
+
 IZ Suite brings automated visibility and governance to Azure Integration Services, helping teams manage and scale their Azure integration landscapes with confidence.
 
 ### Key Benefits

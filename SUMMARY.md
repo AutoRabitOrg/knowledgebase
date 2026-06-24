@@ -1419,10 +1419,15 @@
     * [Job Executions](product-guides/iz-suite/jobs/job-executions.md)
     * [Job Schedules](product-guides/iz-suite/jobs/job-schedules.md)
   * [Organization](product-guides/iz-suite/organization/README.md)
-    * [Invite-User](product-guides/iz-suite/organization/invite-user.md)
+    * [Invite User](product-guides/iz-suite/organization/invite-user.md)
     * [Organizations](product-guides/iz-suite/organization/organizations.md)
     * [Roles](product-guides/iz-suite/organization/roles.md)
     * [Users](product-guides/iz-suite/organization/users.md)
+  * [Settings](product-guides/iz-suite/settings/README.md)
+    * [Configure system](product-guides/iz-suite/settings/configure-system.md)
+    * [Custom dashboard filters](product-guides/iz-suite/settings/custom-dashboard-filters.md)
+    * [Initial setup](product-guides/iz-suite/settings/initial-setup.md)
+    * [IZ eye scan patterns](product-guides/iz-suite/settings/iz-eye-scan-patterns.md)
 
 ## Resources
 

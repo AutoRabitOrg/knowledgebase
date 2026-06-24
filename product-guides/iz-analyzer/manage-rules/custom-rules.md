@@ -29,7 +29,7 @@ Before creating a custom rule, make sure you have:
 4. Fill in all the required attributes. Refer to Custom Rule Attributes for more information
 5. Click on **`Create`** to create the custom rule
 
-Rules should be activated in at least one of the custom **`Quality Profiles`** for it to be applied on the projects being scanned (usually the default Quality Profile). Follow the below steps to activate the rule -
+Rules should be activated in at least one of the custom **`Quality Profiles`** for it to be applied on the projects being scanned (usually the default Quality Profile). Follow the below steps to activate the rule:
 
 1. Select the custom rule created earlier
 2. Click on **`Activate`**&#x20;

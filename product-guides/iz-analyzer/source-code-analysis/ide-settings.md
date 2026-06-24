@@ -14,4 +14,4 @@ Configuration to control the projects that are being scanned from the IDE
 
 ### See Also
 
-* Code Analysis In Server
+* [Code Analysis In Server](../install/install-iz-analyzer-server-plugin.md)

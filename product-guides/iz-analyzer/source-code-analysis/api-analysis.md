@@ -6,16 +6,16 @@
 
 In an API and micro services world, quality of the deliverable becomes paramount – since a weak link can break the whole chain.
 
-Now with API Analyzer plugin, APIs can be quality tested in an automated manner. Make sure that only the quality integration without security issues/vulnerability will make it through the quality gate. API Analyzer plugin supports scanning multiple APIs within the same project. Supported versions include –
+Now with API Analyzer plugin, APIs can be quality tested in an automated manner. Make sure that only the quality integration without security issues/vulnerability will make it through the quality gate. API Analyzer plugin supports scanning multiple APIs within the same project. Supported versions include:
 
-1. RAML 0.8
-2. RAML 1.0
-3. OAS / Swagger 2.0
-4. OAS 3.0
+* RAML 0.8
+* RAML 1.0
+* OAS / Swagger 2.0
+* OAS 3.0
 
 ### Analyzing or Scanning APIs
 
-API projects can be scanned for issues using any of the following approached -
+API projects can be scanned for issues using any of the following approaches:
 
 1. Anypoint Studio plugin - Get the results in real time as when the APIs are being developed.
 2. Sonar Scanner - API projects can be scanned using sonar scanner to view the scan results in web dashboard.
@@ -37,4 +37,4 @@ In the example below, only api\_1.raml and api\_2.raml will be considered during
 
 ### See Also
 
-* Code Analysis In Server
+* [Code Analysis In Server](../install/install-iz-analyzer-server-plugin.md)

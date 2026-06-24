@@ -5,7 +5,7 @@ Autofix is a feature where static code analysis issues can be fixed automaticall
 {% hint style="warning" %}
 Make sure you have:
 
-* Installed the latest version of Anypoint Studio / WSO2 Integration Studio Plugin
+* Installed the latest version of [Anypoint Studio / WSO2](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md) Integration Studio Plugin
 * Configured the Business Group/Organization associated with the issued license.
 * Valid license with Auto Fix module enabled
 {% endhint %}
@@ -36,8 +36,8 @@ Make sure you have:
 
 #### Details
 
-* Manage Anypoint Studio Plugin
-* Manage Server Plugin
+* [Manage Anypoint Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md)
+* [Manage Server Plugin](../install/install-iz-analyzer-server-plugin.md)
 
 ***
 

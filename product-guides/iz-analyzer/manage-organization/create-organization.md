@@ -1,7 +1,5 @@
 # Create Organization
 
-## Manage Organization
-
 ### Create New Organization:
 
 1. Browse to **`[IZ Analyzer](https://analyzer.integralzone.com/)`** -> **`Login with your credentials`**. +
@@ -16,4 +14,4 @@
 
 ### See Also
 
-* Activate Rules
+* [Activate Rules](../manage-rules/activate-rules.md)

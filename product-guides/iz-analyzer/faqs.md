@@ -4,8 +4,8 @@
 
 Yes, custom rules can be created in IZ Analyzer using simple groovy scripts. Rules can be created by using either of the following ways -
 
-1. [Rules Playground in Studio](https://docs.integralzone.com/iz-analyzer/1.0.0/manage-rules/rules-playground.html) - Rules playground is part of Anypoint Studio plug-in, where custom rules can be evaluated and published to server.
-2. [Rules Template in Server](https://docs.integralzone.com/iz-analyzer/1.0.0/manage-rules/custom-rules.html) - Custom rules can also be created directly in server using the custom rule template.
+1. [Rules Playground in Studio](../iz-suite/iz-scan/anypoint-studio/rules-playground.md) - Rules playground is part of Anypoint Studio plug-in, where custom rules can be evaluated and published to server.
+2. [Rules Template in Server](manage-rules/custom-rules.md) - Custom rules can also be created directly in server using the custom rule template.
 
 ### If we start using this product will our code remain secure? How much of access will Integral Zone have in viewing our code?
 
@@ -13,7 +13,7 @@ Yes, custom rules can be created in IZ Analyzer using simple groovy scripts. Rul
 
 ### What are the different installation options?
 
-IZ Analyzer is available in both Cloud and On premise installation options. With similar user experiences, each installation options provides benefits of its own. To view a more comprehensive document on the installations options for IZ Analyzer, please follow the link [On-Premises vs Cloud](https://docs.integralzone.com/iz-analyzer/1.0.0/onprem_vs_cloud.htmlhttps://docs.integralzone.com/iz-analyzer/1.0.0/onprem_vs_cloud.html).
+IZ Analyzer is available in both Cloud and On premise installation options. With similar user experiences, each installation options provides benefits of its own. To view a more comprehensive document on the installations options for IZ Analyzer, please follow the link [On-Premises vs Cloud](on-prem-vs.-cloud.md).
 
 ### How frequently are the updates and the support provided?
 
@@ -23,12 +23,12 @@ IZ Analyzer is available in both Cloud and On premise installation options. With
 
 Due to the ever evolving nature of the MuleSoft landscape and also the exciting new features we provide every year as part of your user experience of IZ Analyzer, we do not provide a perpetual license option.
 
-### How easy is it to fit IZ Analyzer in our CICD?
+### How easy is it to fit IZ Analyzer in our CI/CD?
 
-Its as easy as executing a simple maven command in any of your existing CICD pipelines. There are options available to use `sonar-scanner` if maven cannot be used in your pipelines. Follow the below references to know more about integrating IZ Analyzer within your CICD pipeline
+Its as easy as executing a simple maven command in any of your existing CI/CD pipelines. There are options available to use `sonar-scanner` if maven cannot be used in your pipelines. Follow the below references to know more about integrating IZ Analyzer within your CI/CD pipeline
 
-1. [mvn](https://docs.integralzone.com/iz-analyzer/1.0.0/source-code-analysis/in-sonarqube-server.html#_using_maven_plugin) - Using maven in your CICD pipeline
-2. [sonar-scanner](https://docs.integralzone.com/iz-analyzer/1.0.0/source-code-analysis/in-sonarqube-server.html#_using_sonar_scanner) - Using sonar scanner plugin in your CICD pipeline
+1. [mvn](https://docs.integralzone.com/iz-analyzer/1.0.0/source-code-analysis/in-sonarqube-server.html#_using_maven_plugin) - Using maven in your CI/CD pipeline
+2. [sonar-scanner](https://docs.integralzone.com/iz-analyzer/1.0.0/source-code-analysis/in-sonarqube-server.html#_using_sonar_scanner) - Using sonar scanner plugin in your CI/CD pipeline
 
 ### How can a quality gate be setup so that after matching a certain criteria, the build can be failed or progressed accordingly?
 
@@ -38,7 +38,7 @@ Here is a reference example to validate Quality Gate status in Jenkins pipeline 
 
 ### Does IZ Analyzer Studio plug-in work offline too?
 
-There are 2 instances where Studio plug-in will work offline -
+There are 2 instances where Studio plug-in will work offline:
 
 1. Without Service URL - When a service URL is not configured, Studio plug-in will make use of the default rules available as part of the plug-in release.
 2. With Service URL - When a service URL is configured, Studio plug-in will download the rules configured in the server to local Studio instance (when online, if not the default rules as mentioned above will be used). Once the rules are downloaded to local, `On The Fly Results` will be evaluated offline.
@@ -51,7 +51,7 @@ IZ Analyzer Studio plug-in is very lightweight and all the scans will be done in
 
 \<TBA>
 
-### Is it a real-time Analyzer?
+### Is it a real-time analyzer?
 
 Yes, IZ Analyzer Studio plugin scans the project in real time as the developer starts working on the project. So, developers would get a real-time feedback as and when they start adding new components, connectors, properties, etc. into the project.
 
@@ -87,7 +87,7 @@ Yes, all the issues generated for Mule applications are based on the rules defin
 
 ### Can IZ Analyzer be run part of maven build and report created?
 
-Yes, IZ Analyzer can be invoked to scan your Mule projects by invoking a simple maven command without making any changes in your pom.xml or settings.xml. More information on using maven scanner can be found [here](https://docs.integralzone.com/iz-analyzer/1.0.0/source-code-analysis/in-sonarqube-server.html#_using_maven_plugin)
+Yes, IZ Analyzer can be invoked to scan your Mule projects by invoking a simple maven command without making any changes in your pom.xml or settings.xml. More information on using maven scanner can be found [here](https://docs.integralzone.com/iz-analyzer/1.0.0/source-code-analysis/in-sonarqube-server.html#_using_maven_plugin).
 
 ### Can the users of IZ Analyzer create their own dashboards?
 
@@ -110,14 +110,7 @@ Current version of IZ Analyzer does not support scanning MUnit coverage reports.
 
 ### Where is IZ Analyzer being hosted?
 
-IZ Analyzer is hosted on Google Cloud Platform(GCP) in Europe region.
-
-### What is the cost for using IZ Analyzer for my project?
-
-Pricing varies based on cloud and on-premise versions.
-
-1. Cloud - Different pricing options for cloud can be found [here](https://analyzer.integralzone.com/iz/org/upgrade)
-2. On-premise - Please feel free to get in touch with our sales team (sales@integralzone.com) to get more info.
+IZ Analyzer is hosted on Google Cloud Platform (GCP) in the European region.
 
 ### How does IZ Analyzer compare to its closest alternatives in the market?
 
@@ -135,12 +128,12 @@ IZ Analyzer stands alone as the enterprise ready option for code quality, analys
 
 ### Is IZ Analyzer a CI/CD tool or aligned more towards DevOps?
 
-IZ Analyzer is a product designed to optimize your DevOps and increase productivity and drive cost effective operation. Given its strong presence as an automation tool in the CI/CD pipelining stages, IZ Analyzer plays an important role here too
+IZ Analyzer is a product designed to optimize your DevOps and increase productivity and drive cost effective operation. Given its strong presence as an automation tool in the CI/CD pipelining stages, IZ Analyzer plays an important role here too.
 
 ### How frequently does Anypoint studio sync rules from the server? Can we sync the rules manually if required?
 
-Anypoint Studio plugin syncs the rules from server in an interval of 6 hours. Rules ca also be manually/force synced from server using the `Force Sync Rules` option in `On The Fly Results` pane
+Anypoint Studio plugin syncs the rules from server in an interval of 6 hours. Rules ca also be manually/force synced from server using the `Force Sync Rules` option in `On The Fly Results` pane.
 
 ### Can I deactivate a built-in rule if it’s not relevant to my organization?
 
-Yes, built-in rules can be deactivated if it’s not relevant to the organization. Follow the link to know more about deactivating built-in rules:[ De-activate built-in rules](manage-rules/deactivate-rules.md)
+Yes, built-in rules can be deactivated if it’s not relevant to the organization. Follow the link to know more about deactivating built-in rules:[ De-activate built-in rules](manage-rules/deactivate-rules.md).

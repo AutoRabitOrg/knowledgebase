@@ -11,17 +11,17 @@ Make sure you have a:
 ### Enable Auto Fix
 
 1. Autofix can be enabled by passing **`analyzer.<plugin>.auto.fix.all`** system property while running the sonarscanner/mvn command to analyze the project. For more information refer Code Analysis In Server
-   1. Ex: -Danalyzer.mule.auto.fix.all=true\
-      &#xNAN;_&#x54;o enable auto fix for Mule plugin_
-   2. Ex: -Danalyzer.api.auto.fix.all=true\
-      &#xNAN;_&#x54;o enable auto fix for API plugin_
+   * Ex: -Danalyzer.mule.auto.fix.all=true\
+     &#xNAN;_&#x54;o enable auto fix for Mule plugin_
+   * Ex: -Danalyzer.api.auto.fix.all=true\
+     &#xNAN;_&#x54;o enable auto fix for API plugin_
 2. Preview mode can be enabled to get the list of changes that would be performed by Auto Fix without updating any of the files.
-   1. Can be enabled using **`-Danalyzer.<plugin>.auto.fix.preview`** system property
+   * Can be enabled using **`-Danalyzer.<plugin>.auto.fix.preview`** system property
 3. Default log location is **`target/autofix_log.csv`** relative to the project from which scanner is invoked. This property can be customized using **`analyzer.<plugin>.auto.fix.log.location`** system property.
 4. Fix can also be applied only on certain issues by passing various filters. Every rule will be associated with a **`Type`**, **`Severity`** and **`Tag`**, any of these properties can be used to specify the filters
-   1. Ex: -Danalyzer.\<plugin>.auto.fix.rule.severities can be set to MAJOR,MINOR to fix only major and minor issues
-   2. Ex: -Danalyzer.\<plugin>.auto.fix.rule.types can be set to CODE\_SMELL to fix only Code Smells
-   3. Ex: -Danalyzer.\<plugin>.auto.fix.rule.tags can be set to any custom tags attached to the rule. Only rules with specified tags will be auto fixed in this case.
+   * Ex: -Danalyzer.\<plugin>.auto.fix.rule.severities can be set to MAJOR,MINOR to fix only major and minor issues
+   * Ex: -Danalyzer.\<plugin>.auto.fix.rule.types can be set to CODE\_SMELL to fix only Code Smells
+   * Ex: -Danalyzer.\<plugin>.auto.fix.rule.tags can be set to any custom tags attached to the rule. Only rules with specified tags will be auto fixed in this case.
 
 ### Mule Scanner Properties
 
@@ -55,13 +55,13 @@ While scanning the Mule projects, by default Mule and API Analyzer plugins would
 
 As a resolution the scanner command should be executed again without **`analyzer.<plugin>.auto.fix.all`** system property.
 
-1. Scan 1 - To auto Fix issues \_sonar-scanner -Dsonar.projectKey=\<key> -Dsonar.sources=. -Dsonar.host.url=\<host> -Dsonar.login=\<token> -Dsonar.exclusions=target/\*\* -Danalyzer.api.auto.fix.all=true -Danalyzer.mule.auto.fix.all=true \_
-2. Scan 2 - To upload results to the server \_sonar-scanner -Dsonar.projectKey=\<key> -Dsonar.sources=. -Dsonar.host.url=\<host> -Dsonar.login=\<token> -Dsonar.exclusions=target/\*\* \_
+* Scan 1 - To auto Fix issues \_sonar-scanner -Dsonar.projectKey=\<key> -Dsonar.sources=. -Dsonar.host.url=\<host> -Dsonar.login=\<token> -Dsonar.exclusions=target/\*\* -Danalyzer.api.auto.fix.all=true -Danalyzer.mule.auto.fix.all=true \_
+* Scan 2 - To upload results to the server \_sonar-scanner -Dsonar.projectKey=\<key> -Dsonar.sources=. -Dsonar.host.url=\<host> -Dsonar.login=\<token> -Dsonar.exclusions=target/\*\* \_
 
 #### Details
 
-* Manage Anypoint Studio Plugin
-* Manage Server Plugin
+* [Manage Anypoint Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md)
+* [Manage Server Plugin](../install/install-iz-analyzer-server-plugin.md)
 
 ***
 

@@ -19,7 +19,7 @@ Provides a consolidated view of the license subscription, its validity and entit
 
 ### See Also
 
-* Code Analysis In Anypoint Studio
+* [Code Analysis In Anypoint Studio](source-code-analysis/code-analysis-in-studio.md)
 
 ***
 

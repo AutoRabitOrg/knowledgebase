@@ -5,8 +5,8 @@
 {% hint style="info" %}
 Before analyzing the source code using **`[SonarScanner™](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)`**, make sure you have
 
-* Downloaded and installed **`[SonarScanner™](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)`** CLI plugin. Refer to [Installing Sonar Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner)
-* Follow the instructions here to generate security token
+* Downloaded and installed **`[SonarScanner™](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/)`** CLI plugin. Refer to [Installing Sonar Scanner](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md)
+* Follow the instructions [here](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md) to generate security token
 * For on-premises instances, please use your organization-specific service URL instead of [https://analyzer.integralzone.com](https://analyzer.integralzone.com/)
 {% endhint %}
 
@@ -57,7 +57,7 @@ Steps outlined below uses the command line approach
 Before analyzing the source code using **`Maven Plugin`**, make sure you have:
 
 * Downloaded and installed **`Apache Maven`**. Refer to [Installing Apache Maven](https://maven.apache.org/)
-* Follow the instructions here to generate security token
+* Follow the instructions [here](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md) to generate security token
 {% endhint %}
 
 1. Go to the project root directory from command line/terminal

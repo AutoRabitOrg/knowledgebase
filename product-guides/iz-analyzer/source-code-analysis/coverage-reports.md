@@ -33,4 +33,4 @@
 
 ## See Also
 
-* Code Analysis In Server
+* [Code Analysis In Server](../install/install-iz-analyzer-server-plugin.md)

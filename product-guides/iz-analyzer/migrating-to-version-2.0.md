@@ -9,7 +9,7 @@ IZ Analyzer 1.5 and below had a single plugin (iz-analyzer-server-plugin-1.x) to
 
 Details for migrating from 1.x version to 2.x can be found below for various deployment options -
 
-### On-premises Users
+### On-Premises Users
 
 1. Navigate to **`SONAR_HOME/extensions/plugins`** remove the old version of plugin (iz-analyzer-server-plugin-x.x.jar)
 2. Download the latest versions on Mule and API Analyzer plugins from [Releases](https://support.integralzone.com)

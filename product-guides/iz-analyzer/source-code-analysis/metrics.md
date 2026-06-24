@@ -1,6 +1,6 @@
 # Metrics
 
-## Metrics calculated for Mule projects
+## Metrics Calculated for Mule Projects
 
 ### Mule Metrics
 

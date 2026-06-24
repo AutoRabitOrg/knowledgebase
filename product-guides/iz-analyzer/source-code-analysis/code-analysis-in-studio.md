@@ -4,7 +4,7 @@
 Before analyzing the source code in Studio, make sure you have either
 
 * Installed and configured IZ Analyzer - [Anypoint Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md).
-* Installed and configured IZ Analyzer - [WSO2 Integration Studio Plugin](../releases/server-plugin/wso2/).
+* Installed and configured IZ Analyzer - [WSO2 Integration Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md).
 {% endhint %}
 
 ### On The Fly Results:
@@ -60,11 +60,11 @@ Issue fix recommendation helps to deal with this scenario with detailed descript
 
     <figure><img src="../../../.gitbook/assets/studio_rule_description_view (1).png" alt=""><figcaption></figcaption></figure>
 2. **`Rule Description`** view provides information about:
-   1. Type of Issue. E.g.: **`Code Smell`**, **`Bug`**
-   2. Detailed description of the violated rule/issue
-   3. Non Compliant Code Example
-   4. Compliant Code Example, which guides developers on how to fix the issue
-   5. Optionally, an external link to any official documentation for further information about the fix
+   * Type of Issue. E.g.: **`Code Smell`**, **`Bug`**
+   * Detailed description of the violated rule/issue
+   * Non Compliant Code Example
+   * Compliant Code Example, which guides developers on how to fix the issue
+   * Optionally, an external link to any official documentation for further information about the fix
 
 ### Upload to Server
 
@@ -92,4 +92,4 @@ This step assumes that the server details are configured well in advance as ment
 
 ### See Also
 
-* Code Analysis In Server
+* [Code Analysis In Server](../install/install-iz-analyzer-server-plugin.md)

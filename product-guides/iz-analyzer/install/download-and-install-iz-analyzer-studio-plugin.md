@@ -7,8 +7,8 @@ We recommend installing **`IZ Scan`** Anypoint Studio plugin instead of **`IZ An
 
 The latest Anypoint Studio plugin update site is [https://plugins.integralzone.com/v4](https://plugins.integralzone.com/v4). Users can still continue to use the old plugin update site [https://plugins.integralzone.com/v2](https://plugins.integralzone.com/v2), but all the new updated will only be published to [https://plugins.integralzone.com/v4](https://plugins.integralzone.com/v4).
 
-* Refer to [https://docs.integralzone.com/iz-suite/1.0.0/iz-scan/anypoint-studio/install-iz-analyzer-studio.html](https://docs.integralzone.com/iz-suite/1.0.0/iz-scan/anypoint-studio/install-iz-analyzer-studio.html) to install the latest plugin
-* Refer to [https://docs.integralzone.com/iz-suite/1.0.0/iz-scan/anypoint-studio/analyzer-configuration.html](https://docs.integralzone.com/iz-suite/1.0.0/iz-scan/anypoint-studio/analyzer-configuration.html) to configure IZ Analyzer plugin
+* Refer to [Install Analyzer Suite](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md) to install the latest plugin
+* Refer to [Analyzer Configuration](../../iz-suite/iz-scan/anypoint-studio/analyzer-configuration.md) to configure IZ Analyzer plugin
 {% endhint %}
 
 {% hint style="warning" %}
@@ -16,7 +16,7 @@ Before installing and using IZ Anypoint Studio Plugin, make sure you have:
 
 * Purchased a valid license.
 * Business Group/Organization associated with the issued license.
-* For on-premises instances, please use your organization-specific service URL instead of https://analyzer.integralzone.com
+* For on-premises instances, please use your organization-specific service URL instead of [https://analyzer.integralzone.com](https://analyzer.integralzone.com/)
 {% endhint %}
 
 ### Install Plugin

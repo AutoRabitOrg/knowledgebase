@@ -4,7 +4,7 @@
 
 ## Vault Release Notes 26.2.0
 
-**Release Date: 24 Jun 2026**
+**Release Date: 08 Jul 2026**
 
 #### Vault Freemium <a href="#dt-12158-vault-freemium" id="dt-12158-vault-freemium"></a>
 

@@ -61,9 +61,9 @@ An issue where full backup jobs for sandbox orgs could remain stuck for an exten
 **Sandbox Backup — Incorrect Failure Status on Partial Component Errors**\
 Addressed an issue in the Vault Sandbox Backup module where a backup job was reported as **Failed** even when the majority of components were successfully backed up. The failure was triggered by specific error types in individual components, causing the entire job status to reflect as a complete failure rather than a partial success. This fix improves the accuracy and clarity of backup job status reporting.
 
-**Toggle On/Off Functionality Fix — Backup Data Tab**
+**Backup Module: Toggle State Retention on the Data Tab**
 
-Fixed an incorrect flow in the Backup module where toggling the switch on the **Data** tab caused the view to automatically revert to the **MetaData** tab. The toggle now correctly retains the active tab and updates the ON/OFF state as expected.
+Fixed an issue in the Backup module where changing the ON/OFF toggle on the **Data** tab incorrectly redirected the view to the **MetaData** tab. The **Data** tab now remains active after the toggle state is updated.
 
 ***
 

@@ -12,7 +12,7 @@ Follow the below steps to register an App in Entra ID -
 2. Enter the basic details -
    1. **`Name`** - Name of the new App
    2. **`Supported account types`** - Single Tenant Only
-   3. **`Redirect URI`** - Should be Web, https://\<iz\_suite\_url>/azure\_auth
+   3. **`Redirect URI`** - Should be Web, **`https://<iz_suite_url>/azure_auth`**
 3. Click on Save
 4. Once the app is created, click on **`Add a certificate or secret`** under Client credentials
 5. Click on **`Client secrets`** -> **`New Client Secret`**
@@ -31,9 +31,11 @@ Follow the below steps to register an App in Entra ID -
    4. **`Client Secret`** - The secret copied while generating the Client secret
 4. Click on save.&#x20;
 
+<figure><img src="../../../../.gitbook/assets/azure_sso.png" alt=""><figcaption></figcaption></figure>
+
 ### See Also
 
-* Configure Code Scan Schedules
-* Logic Apps
-* API Management
-* Function Apps
+* [Configure Code Scan Schedules](../code-scan-schedule-configuration.md)
+* [Logic Apps](applications/logic-applications.md)
+* [API Management](applications/apim-applications.md)
+* [Function Apps](applications/function-applications.md)

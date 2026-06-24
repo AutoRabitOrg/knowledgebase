@@ -1446,6 +1446,20 @@
     * [IZ Server](product-guides/iz-suite/releases/iz-server/README.md)
       * [v1.x](product-guides/iz-suite/releases/iz-server/v1.x.md)
       * [Latest](product-guides/iz-suite/releases/iz-server/latest.md)
+  * [Quality Control](product-guides/iz-suite/quality-control/README.md)
+    * [Gates](product-guides/iz-suite/quality-control/gates/README.md)
+      * [Create Quality Gates](product-guides/iz-suite/quality-control/gates/create-quality-gates.md)
+      * [Quality Gates](product-guides/iz-suite/quality-control/gates/quality-gates.md)
+    * [Profiles](product-guides/iz-suite/quality-control/profiles/README.md)
+      * [Rule Activate and De-activate](product-guides/iz-suite/quality-control/profiles/rule-activate-and-de-activate.md)
+      * [Metric Profiles](product-guides/iz-suite/quality-control/profiles/metric-profiles.md)
+      * [Quality Profiles](product-guides/iz-suite/quality-control/profiles/quality-profiles.md)
+    * [Rules](product-guides/iz-suite/quality-control/rules/README.md)
+      * [Clone Built-in Rule](product-guides/iz-suite/quality-control/rules/clone-built-in-rule.md)
+      * [Create Metric Rule](product-guides/iz-suite/quality-control/rules/create-metric-rule.md)
+      * [Create Quality Rule](product-guides/iz-suite/quality-control/rules/create-quality-rule.md)
+      * [Metric Rules](product-guides/iz-suite/quality-control/rules/metric-rules.md)
+      * [Quality Rules](product-guides/iz-suite/quality-control/rules/quality-rules.md)
 
 ## Resources
 

@@ -52,6 +52,9 @@ Follow the below steps to create an External Client App in Salesforce -
 
 1. Navigate to **`Setup`** -> **`Apps`** -> **`External Client Apps`** -> **`External Client App Manager`** and click on the created client app
 2. Click on **`Settings`** -> **`OAuth Settings`** -> **`Consumer Key and Secret`**&#x20;
+
+<figure><img src="../../../../.gitbook/assets/sf_retrieve_clientid.png" alt=""><figcaption></figcaption></figure>
+
 3. The displayed **`Consumer Key`** is the Client Id, which will be used while configuring the Client app in IZ Suite
 
 ### Configuring the Client App details in IZ Suite
@@ -61,6 +64,9 @@ Follow the below steps to create an External Client App in Salesforce -
    1. **`Organization Name`** - The name of the Organization. For example - **`IZ APAC`**
    2. **`Source`** - Choose **`Salesforce`** as source
 3. Click on save.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/sf_configure_org.png" alt=""><figcaption></figcaption></figure>
+
 4. Once the Organization is created, click on the **`View Environments`** action item
 5. Click on **`Create Environment`** to create a new environment
 6. Enter the following details -
@@ -70,6 +76,9 @@ Follow the below steps to create an External Client App in Salesforce -
    4. **`Client Id`** - Client Id retrieved from the Salesforce External Client App
    5. **`User Name`** - Name of the user assigned to the External Client App
    6. **`Private Key`** - Contents of the private key generated from the previous step. (Eg: Contents of server.key)&#x20;
+
+<figure><img src="../../../../.gitbook/assets/sf_configure_env.png" alt=""><figcaption></figcaption></figure>
+
 7. Follow the same steps to add additional environments or organization
 
 ### Configuring Role for accessing IZ Eye
@@ -80,8 +89,12 @@ Once the environment is configured, create / edit a role add required permission
 2. Enter the following details
    1. Role Name - Name for the role Eg; IZ APAC IZ Eye Admin
    2. Permissions - Expand **`IZ Eye Salesforce`** and select the required permissions&#x20;
-   3. Select the required organizations and environments to associate with the role&#x20;
-3. Click on Submit
+
+<figure><img src="../../../../.gitbook/assets/sf_configure_role.png" alt=""><figcaption></figcaption></figure>
+
+&#x20;       c. Select the required organizations and environments to associate with the role&#x20;
+
+4. Click on Submit
 
 Once the role is configured, assign the same to users based on the requirement
 
@@ -91,5 +104,5 @@ Once the role is configured, assign the same to users based on the requirement
 
 ### See Also
 
-* Configure Code Scan Schedule
-* Apex Classes & Triggers
+* [Configure Code Scan Schedule](../code-scan-schedule-configuration.md)
+* [Apex Classes & Triggers](applications/apex-classes-and-triggers.md)

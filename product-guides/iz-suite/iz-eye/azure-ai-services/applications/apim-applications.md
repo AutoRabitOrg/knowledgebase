@@ -3,7 +3,7 @@
 ## Azure API Management
 
 {% hint style="warning" %}
-* To start scanning the applications, a schedule has to be created to scan the deployed API Management Instances - Configure Code Scan Schedules
+* To start scanning the applications, a schedule has to be created to scan the deployed API Management Instances - [Configure Code Scan Schedules](../../code-scan-schedule-configuration.md)
 {% endhint %}
 
 ### To view all the APIs

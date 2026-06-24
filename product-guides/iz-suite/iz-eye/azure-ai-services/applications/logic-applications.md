@@ -3,7 +3,7 @@
 ## Azure Logic Apps
 
 {% hint style="warning" %}
-* To start scanning the applications, a schedule has to be created to scan the deployed Logic Apps - Configure Code Scan Schedules
+* To start scanning the applications, a schedule has to be created to scan the deployed Logic Apps - [Configure Code Scan Schedules](../../code-scan-schedule-configuration.md)
 {% endhint %}
 
 ### To view all the Consumption and Standard apps
@@ -23,7 +23,7 @@
 
 ### See Also
 
-* App Registration
-* Configure Code Scan Schedules
-* API Management
-* Function Apps
+* [App Registration](../application-registration.md)
+* [Configure Code Scan Schedules](../../code-scan-schedule-configuration.md)
+* [API Management](apim-applications.md)
+* [Function Apps](function-applications.md)

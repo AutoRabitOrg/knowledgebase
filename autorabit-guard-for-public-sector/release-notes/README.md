@@ -1,10 +1,10 @@
 # Release Notes
 
-{% content-ref url="release-notes-26.x.md" %}
-[release-notes-26.x.md](release-notes-26.x.md)
+{% content-ref url="release-notes-26.0.md" %}
+[release-notes-26.0.md](release-notes-26.0.md)
 {% endcontent-ref %}
 
-{% content-ref url="release-notes-25.x.md" %}
-[release-notes-25.x.md](release-notes-25.x.md)
+{% content-ref url="release-notes-25.0.md" %}
+[release-notes-25.0.md](release-notes-25.0.md)
 {% endcontent-ref %}
 

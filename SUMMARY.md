@@ -29,8 +29,8 @@
 ## AutoRABIT Guard for Public Sector
 
 * [Release Notes](autorabit-guard-for-public-sector/release-notes/README.md)
-  * [Release Notes 26.x](autorabit-guard-for-public-sector/release-notes/release-notes-26.x.md)
-  * [Release Notes 25.x](autorabit-guard-for-public-sector/release-notes/release-notes-25.x.md)
+  * [Release Notes 26.0](autorabit-guard-for-public-sector/release-notes/release-notes-26.0.md)
+  * [Release Notes 25.0](autorabit-guard-for-public-sector/release-notes/release-notes-25.0.md)
 * [Product Guides](autorabit-guard-for-public-sector/product-guides.md)
 * [Support](autorabit-guard-for-public-sector/support.md)
 * [FAQ](autorabit-guard-for-public-sector/faq.md)

@@ -1315,6 +1315,8 @@
     * [Guard MCP & Skill: User Guide](product-guides/guard/ai-interfaces/guard-mcp-and-skill-user-guide.md)
     * [Agentic Code Analysis User Guide](product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide.md)
     * [AI Interfaces for AutoRABIT Guard: Technical Specification](product-guides/guard/ai-interfaces/ai-interfaces-for-autorabit-guard-technical-specification.md)
+* [IZ Analyzer](product-guides/iz-analyzer/README.md)
+  * [About IZ Analyzer](product-guides/iz-analyzer/about-iz-analyzer.md)
 * [IZ Suite](product-guides/iz-suite/README.md)
   * [About IZ-Suite](product-guides/iz-suite/about-iz-suite.md)
   * [Agent](product-guides/iz-suite/agent/README.md)

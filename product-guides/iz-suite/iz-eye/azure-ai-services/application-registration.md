@@ -45,9 +45,11 @@ Follow the below steps to assign permissions to the registered app -
    3. **`Client Secret`** - The secret copied while generating the Client secret
 4. Click on save.&#x20;
 
+<figure><img src="../../../../.gitbook/assets/azure_ais_sync_auth.png" alt=""><figcaption></figcaption></figure>
+
 ### See Also
 
-* Configure Code Scan Schedules
-* Logic Apps
-* API Management
-* Function Apps
+* [Configure Code Scan Schedules](../code-scan-schedule-configuration.md)
+* [Logic Apps](applications/logic-applications.md)
+* [API Management](applications/apim-applications.md)
+* [Function Apps](applications/function-applications.md)

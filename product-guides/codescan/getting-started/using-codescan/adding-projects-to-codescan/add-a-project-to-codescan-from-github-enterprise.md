@@ -120,3 +120,42 @@ If your GitHub organization has enabled **Allow repository admins to install Git
 However, due to a GitHub limitation, repositories outside their administration are not visible during install and remain inaccessible until the Organization Owner explicitly grants access.
 
 <figure><img src="../../../../../.gitbook/assets/image (2532).png" alt="" width="375"><figcaption></figcaption></figure>
+
+## FAQ <a href="#faq" id="faq"></a>
+
+Q: I already installed the CodeScan GitHub App on one GitHub organization (or personal account) through the CodeScan UI. How do I install it on another organization or personal account?
+
+A: The CodeScan UI only walks you through the GitHub App installation for one account or organization at a time — whichever you select on the first install screen. If you need to add CodeScan to a different GitHub organization or personal account, you cannot do it from the CodeScan UI again. Instead, follow the steps in the section below ("How to Install the CodeScan GitHub App on Another GitHub Org or Personal Account") to install the app directly from GitHub using your install link.
+
+### How to Install the CodeScan GitHub App on Another GitHub Org or Personal Account <a href="#how-to-install-the-codescan-github-app-on-another-github-org-or-personal-account" id="how-to-install-the-codescan-github-app-on-another-github-org-or-personal-account"></a>
+
+<figure><img src="../../../../../.gitbook/assets/image (2559).png" alt=""><figcaption></figcaption></figure>
+
+1. **Step 1: Find Your Install Link**
+
+Take your CodeScan URL → replace every dot (.) with a dash (-) → put it after [https://github.com/apps/](https://github.com/apps/)
+
+Examples:
+
+| **CodeScan URL**                                                     | **GitHub App Install Link**                                                                                  |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [app.codescan.io](http://app.codescan.io/)                           | [https://github.com/apps/app-codescan-io](https://github.com/apps/app-codescan-io)                           |
+| [app-eu.codescan.io](http://app-eu.codescan.io/)                     | [https://github.com/apps/app-eu-codescan-io](https://github.com/apps/app-eu-codescan-io)                     |
+| [bank-codescan.autorabit.com](http://penfed-codescan.autorabit.com/) | [https://github.com/apps/bank-codescan-autorabit-com](https://github.com/apps/penfed-codescan-autorabit-com) |
+
+2. **Step 2: Open the Link**
+3. **Step 3: Choose the org / account for Installation**
+4.  **Step 4: Choose Repo Access**
+
+    * **All repositories (recommended) — covers future repos automatically.**
+    * Only select repositories — you'll have to come back and add every new repo manually.
+
+    Pick All repositories if you want new repos to be scanned by CodeScan without extra work.
+5. **Step 5: Click Install**
+   1. Owner: The app installs right away. In CodeScan, click Add Analysis Project to begin scanning.
+   2. Member (non-owner): GitHub will show that an installation request was submitted. See the steps below for approval.
+   3. Ask your organization owner to approve via the email notification or manually at GitHub Org → Settings → GitHub Apps → Pending requests → Approve (set access to All repositories if desired), then retry Add Analysis Project.
+6. **Step 6: After Install — Verify**
+
+Go to GitHub → Settings → GitHub Apps → CodeScan → Configure and confirm your repositories are listed.\
+Switch to All repositories to have CodeScan automatically include any new repositories you create later.

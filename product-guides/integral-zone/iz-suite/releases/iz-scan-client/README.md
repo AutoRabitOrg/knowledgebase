@@ -1,2 +1,0 @@
-# IZ Scan Cli
-

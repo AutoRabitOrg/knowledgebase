@@ -1,5 +1,71 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.2.13** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date: 28th June 2026**
+
+### Environment Provisioning History Performance Improvement
+
+Improved the Environment Provisioning History screen performance by implementing backend pagination. This ensures history records load based on the selected page size, reducing load time during initial access and page refresh.
+
+**Impacted Area:**
+
+* Environment Provisioning History
+
+### CodeScan Project-Level Exclusions Support
+
+Improved CodeScan integration to correctly honor project-level file exclusions configured in the CodeScan UI when no exclusions are defined in the ARM CodeScan plugin. ARM-defined exclusions continue to take precedence when explicitly configured, ensuring consistent and expected scan behavior across analysis workflows.
+
+**Impacted Areas:**
+
+* CodeScan Integration
+
+### Profile IP Ranges Handling Enhancement
+
+Enhanced Profile IP Range handling to support consistent **Append**, **Replace All**, and **Remove IP Ranges** behavior across commit and deployment workflows. The **Replace All** option now ensures Profile IP ranges are fully synchronized from the source or branch metadata, aligning target org values with the selected deployment source while keeping other Profile metadata behavior unchanged.
+
+**Impacted Areas:**
+
+* Commit Workflows
+* Deployments
+
+### GitHub Enterprise OAuth Validation
+
+Improved repository registration by validating GitHub repository URLs before allowing OAuth authentication. OAuth registration is now restricted to GitHub Cloud repositories, and users attempting to register GitHub Enterprise repositories are prompted to use Username/PAT authentication instead, preventing unsupported configurations and subsequent branch operation failures.
+
+**Impacted Area:**
+
+* Repository Registration (New UI)
+* GitHub OAuth Authentication
+
+### CI Job Repository Cloning Performance Improvement
+
+Improved CI Job execution performance by resolving an issue that caused unnecessary repository cloning during Repo-to-Org workflows. Repository configuration handling has been enhanced to reuse existing repository data where applicable, reducing clone operations and improving overall CI Job execution time.
+
+**Impacted Areas:**
+
+* CI Jobs – Repo-to-Org (DX & Non-DX)
+* Repository Cloning Performance
+
+### GitHub OAuth Branch Creation UI Improvement
+
+Improved the EZ-Commit branch creation experience for GitHub OAuth repositories by hiding the **Credentials** selection when OAuth authentication is in use. This ensures the branch creation dialog displays only relevant options, providing a cleaner and more intuitive user experience.
+
+**Impacted Area:**
+
+* EZ-Commit Branch Creation
+* GitHub OAuth Repository Integration (New UI)
+
+### Pre-Validation Commit SCA Date Filter Fix - New UI
+
+Fixed an issue in the New UI where Pre-Validation Commit SCA did not correctly apply the selected date range due to a date format parsing error. The date selection handling has been updated so SCA analyzes only the components within the chosen date range.
+
+**Impacted Area:**
+
+* EZ-Commit → Pre-Validation Commit
+
+***
+
 ## ARM **Release Notes 26.2.12** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 21 June 2026**

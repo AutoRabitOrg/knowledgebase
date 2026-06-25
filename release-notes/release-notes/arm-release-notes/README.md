@@ -2,9 +2,9 @@
 
 ## ARM **Release Notes 26.2.13** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
-**Release Date: 28th June 2026**
+**Release Date: 28 June 2026**
 
-### Environment Provisioning History Performance Improvement
+#### Environment Provisioning History Performance Improvement
 
 Improved the Environment Provisioning History screen performance by implementing backend pagination. This ensures history records load based on the selected page size, reducing load time during initial access and page refresh.
 
@@ -12,7 +12,7 @@ Improved the Environment Provisioning History screen performance by implementing
 
 * Environment Provisioning History
 
-### CodeScan Project-Level Exclusions Support
+#### CodeScan Project-Level Exclusions Support
 
 Improved CodeScan integration to correctly honor project-level file exclusions configured in the CodeScan UI when no exclusions are defined in the ARM CodeScan plugin. ARM-defined exclusions continue to take precedence when explicitly configured, ensuring consistent and expected scan behavior across analysis workflows.
 
@@ -20,7 +20,7 @@ Improved CodeScan integration to correctly honor project-level file exclusions c
 
 * CodeScan Integration
 
-### Profile IP Ranges Handling Enhancement
+#### Profile IP Ranges Handling Enhancement
 
 Enhanced Profile IP Range handling to support consistent **Append**, **Replace All**, and **Remove IP Ranges** behavior across commit and deployment workflows. The **Replace All** option now ensures Profile IP ranges are fully synchronized from the source or branch metadata, aligning target org values with the selected deployment source while keeping other Profile metadata behavior unchanged.
 
@@ -33,7 +33,7 @@ Enhanced Profile IP Range handling to support consistent **Append**, **Replace A
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/profile-ip-range-handling" %}
 
-### GitHub Enterprise OAuth Validation
+#### GitHub Enterprise OAuth Validation
 
 Improved repository registration by validating GitHub repository URLs before allowing OAuth authentication. OAuth registration is now restricted to GitHub Cloud repositories, and users attempting to register GitHub Enterprise repositories are prompted to use Username/PAT authentication instead, preventing unsupported configurations and subsequent branch operation failures.
 
@@ -42,7 +42,7 @@ Improved repository registration by validating GitHub repository URLs before all
 * Repository Registration (New UI)
 * GitHub OAuth Authentication
 
-### CI Job Repository Cloning Performance Improvement
+#### CI Job Repository Cloning Performance Improvement
 
 Improved CI Job execution performance by resolving an issue that caused unnecessary repository cloning during Repo-to-Org workflows. Repository configuration handling has been enhanced to reuse existing repository data where applicable, reducing clone operations and improving overall CI Job execution time.
 
@@ -51,7 +51,7 @@ Improved CI Job execution performance by resolving an issue that caused unnecess
 * CI Jobs – Repo-to-Org (DX & Non-DX)
 * Repository Cloning Performance
 
-### GitHub OAuth Branch Creation UI Improvement
+#### GitHub OAuth Branch Creation UI Improvement
 
 Improved the EZ-Commit branch creation experience for GitHub OAuth repositories by hiding the **Credentials** selection when OAuth authentication is in use. This ensures the branch creation dialog displays only relevant options, providing a cleaner and more intuitive user experience.
 
@@ -60,7 +60,7 @@ Improved the EZ-Commit branch creation experience for GitHub OAuth repositories 
 * EZ-Commit Branch Creation
 * GitHub OAuth Repository Integration (New UI)
 
-### Pre-Validation Commit SCA Date Filter Fix - New UI
+#### Pre-Validation Commit SCA Date Filter Fix - New UI
 
 Fixed an issue in the New UI where Pre-Validation Commit SCA did not correctly apply the selected date range due to a date format parsing error. The date selection handling has been updated so SCA analyzes only the components within the chosen date range.
 
@@ -74,7 +74,7 @@ Fixed an issue in the New UI where Pre-Validation Commit SCA did not correctly a
 
 **Release Date: 21 June 2026**
 
-### Merge Conflict Resolution Progress Indicator
+#### Merge Conflict Resolution Progress Indicator
 
 Enhanced the merge conflict resolution workflow to provide better visibility and prevent duplicate actions during commit processing. A progress indicator is now displayed when conflict resolution commits and related background downloads are initiated, and user actions are properly synchronized to prevent multiple commit requests and UI exceptions.
 
@@ -82,7 +82,7 @@ Enhanced the merge conflict resolution workflow to provide better visibility and
 
 * Version Control → Commit History → Conflict Resolution Workflow
 
-### AccelQ Error Details Display Fix
+#### AccelQ Error Details Display Fix
 
 Fixed an issue where error details for failed AccelQ test cases were not displayed in the Old UI. Users can now view failure information, including error messages and test execution details, directly from the test report, providing consistent behavior across both Old and New UI experiences.
 
@@ -92,7 +92,7 @@ Fixed an issue where error details for failed AccelQ test cases were not display
 * Deployment Module – Test Results
 * AccelQ Integration (Old UI)
 
-### Deployment Comparison Handling for Destructive Changes
+#### Deployment Comparison Handling for Destructive Changes
 
 Fixed an issue in the New UI where deployment comparisons could become unresponsive when only destructive changes were selected. Comparison handling has been improved to correctly process destructive metadata selections and prevent comparison workflows from getting stuck during metadata retrieval.
 
@@ -102,7 +102,7 @@ Fixed an issue in the New UI where deployment comparisons could become unrespons
 * Deployment Comparison (New UI)
 * Destructive Change Processing
 
-### Register Branch Usability Improvements
+#### Register Branch Usability Improvements
 
 Enhanced the Register Branch experience by enabling branch searches to be executed using the **Enter** key in the Branch Name Search field, providing a faster and more intuitive workflow. Additionally, the informational Note  message has been updated for improved clarity.
 
@@ -116,7 +116,7 @@ Enhanced the Register Branch experience by enabling branch searches to be execut
 * Register Branch (Classic UI)
 * User Interface Messaging
 
-### Deployment Compare Screen Validation Message Fix - New UI
+#### Deployment Compare Screen Validation Message Fix - New UI
 
 Fixed an issue in the New UI where an incorrect destructive-change confirmation dialog was displayed on the Compare screen when no constructive members were selected. Users now receive an appropriate validation message prompting them to select at least one member before proceeding, ensuring a clearer and more consistent deployment experience.
 
@@ -124,7 +124,7 @@ Fixed an issue in the New UI where an incorrect destructive-change confirmation 
 
 * Deployment Compare Screen (New UI)
 
-### Dataloader Post-Activity Status Handling Fix
+#### Dataloader Post-Activity Status Handling Fix
 
 Fixed an issue in CI Jobs where Dataloader post-activity processing could continue logging repeated status checks even after the Dataloader job had completed. Status handling has been improved to correctly recognize completion states and stop further polling, ensuring post-activity logs accurately reflect the final execution status.
 
@@ -132,7 +132,7 @@ Fixed an issue in CI Jobs where Dataloader post-activity processing could contin
 
 * CI Jobs – Post Activities
 
-### CodeScan Report Synchronization Fix
+#### CodeScan Report Synchronization Fix
 
 Fixed an issue where ARM displayed incorrect CodeScan analysis results by retrieving report data from an unrelated scan instead of the executed analysis. Report retrieval logic has been updated to ensure ARM displays the correct violations and file counts, keeping SCA results synchronized with the corresponding CodeScan execution.
 
@@ -146,7 +146,7 @@ Fixed an issue where ARM displayed incorrect CodeScan analysis results by retrie
 
 **Release Date: 14 June 2026**
 
-### Parallel Processor Execution Fix <a href="#parallel-processor-execution-fix" id="parallel-processor-execution-fix"></a>
+#### Parallel Processor Execution Fix <a href="#parallel-processor-execution-fix" id="parallel-processor-execution-fix"></a>
 
 Fixed an issue in CI Jobs where Parallel Processor executions could fail to trigger external automation workflows due to backend request handling inconsistencies. The execution logic has been updated to ensure parallel processor requests are processed correctly, improving the reliability of post-deployment automation integrations.
 
@@ -156,7 +156,7 @@ Fixed an issue in CI Jobs where Parallel Processor executions could fail to trig
 * Parallel Processor Integration
 * Post-Deployment Automation Workflows
 
-### Branching Baseline Deletion Control Improvement <a href="#branching-baseline-deletion-control-improvement" id="branching-baseline-deletion-control-improvement"></a>
+#### Branching Baseline Deletion Control Improvement <a href="#branching-baseline-deletion-control-improvement" id="branching-baseline-deletion-control-improvement"></a>
 
 Improved Branching Baseline handling by restricting deletion actions when an abort operation is already in progress. This prevents users from performing conflicting actions on baseline iterations and helps maintain consistent baseline processing behavior.
 
@@ -164,7 +164,7 @@ Improved Branching Baseline handling by restricting deletion actions when an abo
 
 * Settings → Branching Baseline Module
 
-### Connected App Search & Substitute Support <a href="#connected-app-search-and-substitute-support" id="connected-app-search-and-substitute-support"></a>
+#### Connected App Search & Substitute Support <a href="#connected-app-search-and-substitute-support" id="connected-app-search-and-substitute-support"></a>
 
 Enhanced Search & Substitute to support `ConnectedApp` metadata, allowing users to dynamically replace Connected App configuration values during Commit, CI Job, and Deployment execution.
 
@@ -174,7 +174,7 @@ This enhancement helps manage environment-specific Connected App configurations 
 
 * Search & Substitute
 
-### Permission Set Agent Access Support <a href="#permission-set-agent-access-support" id="permission-set-agent-access-support"></a>
+#### Permission Set Agent Access Support <a href="#permission-set-agent-access-support" id="permission-set-agent-access-support"></a>
 
 Added support for the `<agentAccesses>` node in Salesforce Permission Sets to ensure agent access configurations are correctly retained during metadata operations. Previously, these entries were retrieved successfully but were excluded during commit processing. With this enhancement, agent access configurations are now preserved across version control and deployment workflows.
 
@@ -183,7 +183,7 @@ Added support for the `<agentAccesses>` node in Salesforce Permission Sets to en
 * Version Control
 * Deployments
 
-### Package.xml Custom Object Retrieval Fix <a href="#package.xml-custom-object-retrieval-fix" id="package.xml-custom-object-retrieval-fix"></a>
+#### Package.xml Custom Object Retrieval Fix <a href="#package.xml-custom-object-retrieval-fix" id="package.xml-custom-object-retrieval-fix"></a>
 
 Fixed an issue in EZ-Commit where certain metadata components, including Custom Objects, could be skipped when retrieving components using an uploaded `package.xml`. The package.xml retrieval logic has been improved to ensure valid metadata components are retained and displayed correctly in the Added/Modified Metadata Components tab.
 
@@ -191,7 +191,7 @@ Fixed an issue in EZ-Commit where certain metadata components, including Custom 
 
 * EZ-Commit using `package.xml`
 
-### Merge Approval Link Fix - New UI <a href="#merge-approval-link-fix-new-ui" id="merge-approval-link-fix-new-ui"></a>
+#### Merge Approval Link Fix - New UI <a href="#merge-approval-link-fix-new-ui" id="merge-approval-link-fix-new-ui"></a>
 
 Fixed an issue in the New UI where approvers saw an “Unknown Error” after clicking the approval link from an EZ-Merge email notification. The approval link now redirects correctly to the Merge Label approval pop-up, allowing users to review and approve merge requests as expected.
 
@@ -199,7 +199,7 @@ Fixed an issue in the New UI where approvers saw an “Unknown Error” after cl
 
 * EZ-Merge Approval Workflow (New UI)
 
-### Branch Permission Inheritance for Commit Visibility <a href="#branch-permission-inheritance-for-commit-visibility" id="branch-permission-inheritance-for-commit-visibility"></a>
+#### Branch Permission Inheritance for Commit Visibility <a href="#branch-permission-inheritance-for-commit-visibility" id="branch-permission-inheritance-for-commit-visibility"></a>
 
 Fixed an issue where commit labels created by sub-users were not visible to Custom Admins when branches were created through the EZ-Commit workflow. Branch permissions are now automatically inherited and synchronized during branch creation, ensuring authorized users can view and approve commits without requiring manual branch access assignment.
 
@@ -208,7 +208,7 @@ Fixed an issue where commit labels created by sub-users were not visible to Cust
 * EZ-Commit Branch Creation
 * Commit Label Visibility
 
-### Commit Label Visibility for Custom Admins <a href="#commit-label-visibility-for-custom-admins" id="commit-label-visibility-for-custom-admins"></a>
+#### Commit Label Visibility for Custom Admins <a href="#commit-label-visibility-for-custom-admins" id="commit-label-visibility-for-custom-admins"></a>
 
 Fixed an issue where Custom Admins could not view or approve commit labels created by sub-users when branches were created through the EZ-Commit workflow. Branch permissions are now automatically inherited from the parent branch and synchronized during branch creation, ensuring commit labels remain visible and accessible to authorized approvers.
 

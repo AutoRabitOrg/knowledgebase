@@ -63,12 +63,6 @@ While registering JIRA with ARM, if JIRA fails to connect and results in **"Auth
 10. Once you log in, JIRA is integrated with your ARM account, and you can start logging bugs and issues with just one click directly to JIRA.
 
 {% hint style="info" %}
-**Limitation:**
-
-**Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
-{% endhint %}
-
-{% hint style="info" %}
 **Note:** In multi-user environments, ensure that the Jira OAuth application is set to **“Sharing”** in the Atlassian Developer Console (Distribution section). If it remains in **“Not Sharing”** mode, only the app owner will be able to authenticate, and other users may encounter authorization errors during re-authentication.
 {% endhint %}
 

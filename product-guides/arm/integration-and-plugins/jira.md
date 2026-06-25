@@ -62,12 +62,6 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 9. Click **Save** and your Jira integration are ready.
 10. Once you log in, JIRA is integrated with your ARM account, and you can start logging bugs and issues with just one click directly to JIRA.
 
-{% hint style="danger" %}
-**Limitation:**
-
-**Jira OAuth** access type is currently supported for **Cloud versions** only. This function is on-demand, so if you'd want to make it available for your organization, please get in touch with our experts at [support@autorabit.com](mailto:support@autorabit.com).
-{% endhint %}
-
 ### Steps to Configure OAuth in ARM
 
 1. **Create an OAuth App in Atlassian**

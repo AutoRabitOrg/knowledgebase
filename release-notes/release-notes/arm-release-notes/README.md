@@ -29,6 +29,10 @@ Enhanced Profile IP Range handling to support consistent **Append**, **Replace A
 * Commit Workflows
 * Deployments
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/arm-administration/manage-users-account-settings/profile-ip-range-handling" %}
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/profile-ip-range-handling" %}
+
 ### GitHub Enterprise OAuth Validation
 
 Improved repository registration by validating GitHub repository URLs before allowing OAuth authentication. OAuth registration is now restricted to GitHub Cloud repositories, and users attempting to register GitHub Enterprise repositories are prompted to use Username/PAT authentication instead, preventing unsupported configurations and subsequent branch operation failures.

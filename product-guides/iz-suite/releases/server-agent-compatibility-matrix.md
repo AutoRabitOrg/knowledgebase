@@ -42,5 +42,6 @@ This section outlines the compatibility matrix between various server and CLI Sc
 
 ### See Also
 
-* [Latest Server Version](../installation/single-server-installation.md)
-* [Latest Agent Version](../iz-insights/ai-agent-configuration.md)
+* Latest Server Version
+* Latest  Agent Version
+

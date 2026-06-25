@@ -1,3 +1,9 @@
+---
+description: >-
+  Note: OAuth is currently supported only for GitHub Cloud repositories. GitHub
+  Enterprise repositories must use Standard access type.
+---
+
 # OAuth Support for GitHub
 
 ## Register a GitHub Repository in ARM Using OAuth

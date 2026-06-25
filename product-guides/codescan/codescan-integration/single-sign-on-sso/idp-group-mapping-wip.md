@@ -1,5 +1,4 @@
 ---
-hidden: true
 layout:
   width: default
   title:

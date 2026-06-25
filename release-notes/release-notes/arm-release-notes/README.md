@@ -223,23 +223,23 @@ Fixed an issue where Custom Admins could not view or approve commit labels creat
 
 **Release Date: 7 June 2026**
 
-### Support for Salesforce Run Relevant Tests in Deployments (New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
+#### Support for Salesforce Run Relevant Tests in Deployments (New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
 
 AutoRABIT now supports Salesforce’s **Run Relevant Tests** test level for deployment validations and deployments. This option executes only the Apex tests identified by Salesforce as impacted by the changes being deployed, helping reduce deployment time and improve CI/CD efficiency while maintaining required test coverage. Support is available across validation, deployment, and Quick Deploy workflows.
 
-### Salesforce Summer ’26 (API Version 67) Support (New) <a href="#salesforce-summer-26-api-version-67-support-new" id="salesforce-summer-26-api-version-67-support-new"></a>
+#### Salesforce Summer ’26 (API Version 67) Support (New) <a href="#salesforce-summer-26-api-version-67-support-new" id="salesforce-summer-26-api-version-67-support-new"></a>
 
 AutoRABIT now supports **Salesforce API Version 67**, enabling compatibility with the latest Salesforce Summer ’26 release. This update includes support for newly introduced metadata types such as **FlowValueMap, EmailAuthorizationSettings, InsPlcyLimitConsumptionRule, and OrchestrationPlanCtxMapping**, along with support for Salesforce metadata enhancements in Queue, DataSrcDataModelFieldMap, Network, InvocableActionExtension, and Flow.
 
-### EZ-Commit Performance Improvements for Large Salesforce Schemas <a href="#ez-commit-performance-improvements-for-large-salesforce-schemas" id="ez-commit-performance-improvements-for-large-salesforce-schemas"></a>
+#### EZ-Commit Performance Improvements for Large Salesforce Schemas <a href="#ez-commit-performance-improvements-for-large-salesforce-schemas" id="ez-commit-performance-improvements-for-large-salesforce-schemas"></a>
 
 Enhanced EZ-Commit performance for Salesforce orgs containing large volumes of custom fields and metadata components. Optimizations to schema processing and change detection improve component loading, retrieval responsiveness, and overall user experience across EZ-Commit, AutoDraft, and Package Manifest workflows.
 
-### My Profile – VC Mappings Performance Improvements <a href="#my-profile-vc-mappings-performance-improvements" id="my-profile-vc-mappings-performance-improvements"></a>
+#### My Profile – VC Mappings Performance Improvements <a href="#my-profile-vc-mappings-performance-improvements" id="my-profile-vc-mappings-performance-improvements"></a>
 
 Improved performance of the **My Profile → VC Mappings** page for environments with a large number of branches. Backend pagination and loading optimizations reduce page load times and improve responsiveness when viewing and managing version control mappings.
 
-### EZ-Commit User Experience Improvements <a href="#ez-commit-user-experience-improvements" id="ez-commit-user-experience-improvements"></a>
+#### EZ-Commit User Experience Improvements <a href="#ez-commit-user-experience-improvements" id="ez-commit-user-experience-improvements"></a>
 
 Enhanced the EZ-Commit save experience by improving validation feedback for required fields. Mandatory fields are now clearly highlighted when left unselected, helping users identify missing information more quickly and reducing submission errors.
 
@@ -268,7 +268,7 @@ For complete details, configuration steps, and migration guidance, please refer 
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/bitbucket/configuring-bitbucket-token-authentication-and-email-support" %}
 
-### Pin/Favorite CI Jobs for Quick Access - New UI <a href="#pin-favorite-ci-jobs-for-quick-access-new-ui" id="pin-favorite-ci-jobs-for-quick-access-new-ui"></a>
+#### Pin/Favorite CI Jobs for Quick Access - New UI <a href="#pin-favorite-ci-jobs-for-quick-access-new-ui" id="pin-favorite-ci-jobs-for-quick-access-new-ui"></a>
 
 Introduced the ability to pin or favorite CI Jobs in the New UI, allowing users to quickly access frequently used jobs without searching through the full job list. Pinned jobs are displayed in a dedicated section at the top of the CI Job List and are maintained individually for each user.
 
@@ -276,7 +276,7 @@ Introduced the ability to pin or favorite CI Jobs in the New UI, allowing users 
 
 * CI Jobs List (New UI)
 
-### SiteDotCom Metadata Retrieval Fix <a href="#sitedotcom-metadata-retrieval-fix" id="sitedotcom-metadata-retrieval-fix"></a>
+#### SiteDotCom Metadata Retrieval Fix <a href="#sitedotcom-metadata-retrieval-fix" id="sitedotcom-metadata-retrieval-fix"></a>
 
 Fixed an issue where `SiteDotComSite` metadata changes were not included in Single Revision Deployments and Release Labels when only the `.site` file was modified. Metadata processing has been improved to correctly retain and retrieve associated SiteDotCom components, ensuring changes are accurately captured across deployment workflows.
 
@@ -289,7 +289,7 @@ Fixed an issue where `SiteDotComSite` metadata changes were not included in Sing
 * CI Jobs (DX & Non-DX)
 * SiteDotCom Metadata Processing
 
-### SonarQube Analysis Result Synchronization Fix <a href="#sonarqube-analysis-result-synchronization-fix" id="sonarqube-analysis-result-synchronization-fix"></a>
+#### SonarQube Analysis Result Synchronization Fix <a href="#sonarqube-analysis-result-synchronization-fix" id="sonarqube-analysis-result-synchronization-fix"></a>
 
 Fixed an issue where SonarQube violations were not displayed in the ARM Analysis Dashboard despite being available in SonarQube. The result retrieval process has been updated to correctly fetch and synchronize SonarQube scan results, ensuring accurate visibility of violations within ARM.
 
@@ -306,7 +306,7 @@ Fixed an issue where SonarQube violations were not displayed in the ARM Analysis
 
 **Release Date: 27 May 2026**
 
-### Conflict File Truncation Fix <a href="#conflict-file-truncation-fix" id="conflict-file-truncation-fix"></a>
+#### Conflict File Truncation Fix <a href="#conflict-file-truncation-fix" id="conflict-file-truncation-fix"></a>
 
 Fixed an issue in EZ-Merge where conflicted files could become truncated during conflict resolution, causing merge failures for certain profile files. The file copy handling has been improved to ensure complete file content is preserved during conflict processing.
 
@@ -314,7 +314,7 @@ Fixed an issue in EZ-Merge where conflicted files could become truncated during 
 
 * EZ-Merge
 
-### Multiple Branch Mapping Retention Fix <a href="#multiple-branch-mapping-retention-fix" id="multiple-branch-mapping-retention-fix"></a>
+#### Multiple Branch Mapping Retention Fix <a href="#multiple-branch-mapping-retention-fix" id="multiple-branch-mapping-retention-fix"></a>
 
 Fixed an issue in My Version Control Mappings where selecting and saving a new branch caused previously mapped branches to become unselected. The credential update logic has been improved to retain mappings for existing branches while updating credentials only for the selected branch.
 
@@ -350,9 +350,7 @@ We’ve enhanced the log viewing experience across multiple ARM modules to impro
 
 CI Jobs, Deployment, Dataloader, Reports, SFDX, Admin Settings, and Version Control.
 
-***
-
-**Improvements to EZ-Commit Destructive Changes Handling**
+#### **Improvements to EZ-Commit Destructive Changes Handling** <a href="#improvements-to-ez-commit-destructive-changes-handling" id="improvements-to-ez-commit-destructive-changes-handling"></a>
 
 Enhanced the handling and display of deleted metadata changes in EZ-Commit for improved consistency and accuracy.
 
@@ -379,15 +377,11 @@ Improved metadata filtering in VC-EZ-Commit to correctly recognize nested Report
 
 **Impacted Area:** VC-EZ-Commit
 
-***
-
 #### Azure Logic App Audit Log API Compatibility <a href="#azure-logic-app-audit-log-api-compatibility" id="azure-logic-app-audit-log-api-compatibility"></a>
 
 Enhanced the Audit Logs service to improve compatibility with Azure Logic Apps by removing mandatory header validation for GET requests. This resolves issues where audit log API calls were failing due to automatically stripped `Content-Type` headers in Azure Logic App integrations.
 
 **Impacted Area:** Audit Logs Service
-
-***
 
 #### Branch Credential Mapping Improvement <a href="#branch-credential-mapping-improvement" id="branch-credential-mapping-improvement"></a>
 
@@ -400,8 +394,6 @@ Improved branch credential mapping in ARM Version Control to ensure branches cre
 * Branch Registration & Credential Mapping
 * Version Control Repository Integration
 
-***
-
 #### Enhanced Pagination Support - New UI <a href="#enhanced-pagination-support-new-ui" id="enhanced-pagination-support-new-ui"></a>
 
 Improved pagination options across deployment reporting screens by adding support for viewing up to 100 records per page. This enhancement helps users review large datasets more efficiently within Deployment History, Release Labels, and related deployment report views.
@@ -411,8 +403,6 @@ Improved pagination options across deployment reporting screens by adding suppor
 * Deployment History
 * Release Labels
 
-***
-
 #### Active CI Job Filtering in Permissions - New UI <a href="#active-ci-job-filtering-in-permissions-new-ui" id="active-ci-job-filtering-in-permissions-new-ui"></a>
 
 Updated the New UI permissions workflow to display only active CI jobs during user permission assignment, aligning the behavior with the Old UI experience. This prevents inactive jobs from appearing in CI job selection lists across permission management screens.
@@ -420,8 +410,6 @@ Updated the New UI permissions workflow to display only active CI jobs during us
 **Impacted Areas:**
 
 * Users & Permissions
-
-***
 
 #### AiAuthoringBundle Metadata Support <a href="#aiauthoringbundle-metadata-support" id="aiauthoringbundle-metadata-support"></a>
 

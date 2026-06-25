@@ -84,6 +84,8 @@ Apex PMD ships with a comprehensive default rule set, but you can supply your ow
 
 4. Click **Save**, then rerun the analysis.
 
+**Note:** ARM exclusion settings take precedence over CodeScan exclusions. If exclusions are configured in ARM, ARM uses its own exclusion configuration. If no exclusions are configured in ARM, ARM automatically applies the exclusions configured in the CodeScan UI.
+
 #### **CodeScan/SonarQube configuration**
 
 **Select CodeScan Project & Branch**

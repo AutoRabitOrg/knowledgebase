@@ -74,7 +74,7 @@ Tokens created without the required scopes may fail authentication or repository
 2. Hover your mouse over the **`Admin`** module and click on the **`Credentials`** tab.
 3. Next, click **`Create Credential`**.
 4. On the next pop-up screen, give a **`credential name`**.
-5. Choose the **`Credential Type`** as **`Username with API Token`**.
+5. Choose the **`Credential Type`** as **`Username with Password`**.
 6. Enter your Bitbucket **`username`** and **`API Token`**.
 7. Click **`Save`**.
 

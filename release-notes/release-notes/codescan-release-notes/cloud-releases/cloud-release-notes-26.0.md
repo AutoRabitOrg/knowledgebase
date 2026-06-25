@@ -64,7 +64,7 @@ Fields are clearly labeled and consistently formatted within the generated CSV f
 
 The updated exports provide users with improved visibility into severity, ownership, exception status, and exception lifecycle details, making it easier to perform external analysis, compliance reviews, and governance activities.&#x20;
 
-O**utcome**&#x20;
+**Outcome**&#x20;
 
 * Improves auditability and compliance reporting. &#x20;
 * Provides greater visibility into issue and hotspot ownership. &#x20;

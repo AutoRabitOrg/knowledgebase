@@ -128,4 +128,4 @@ The following tables list every vulnerability addressed in this release, grouped
 | SEC-2182 | 3        | Red Hat Update for Open Secure Sockets Layer (OpenSSL) (RHSA-2026:19218) |
 | SEC-2183 | 3        | Red Hat Update for systemd (RHSA-2026:19213)                             |
 
-> **Note on Implementation:** All fixes were delivered by updating the relevant container base images or rebuilding service images with patched dependency versions. No source code changes to ARMOR business logic were required. Exact patched versions and full CVE mappings (where published) are documented in the individual JIRA issues.
+> **Note on Implementation:** These security updates were delivered by updating the relevant container base images and rebuilding the affected service images with patched dependency versions. No source code changes were made to ARMOR business logic or customer-facing functionality.

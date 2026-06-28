@@ -2,6 +2,40 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.14
+
+**Release Date: 28 June 2026**
+
+### Summary&#x20;
+
+CodeScan 26.0.14 is comprised of the following 6 components:&#x20;
+
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Fixes&#x20;
+
+1. **Resolved CI Jobs Analyzing Entire Codebase Instead of Delta Changes**
+
+Fixed an issue where CodeScan CI jobs could analyze the entire repository instead of only the files modified in the current pull request or commit.
+
+Previously, delta analysis was not consistently applied in certain CI execution scenarios, causing CodeScan to process all files in the repository. This could result in longer analysis times, increased resource consumption, and findings unrelated to the current code changes.
+
+**Behavior**
+
+* CI jobs now correctly analyze only the files included in the current delta (changed files).
+* Delta analysis is consistently applied across supported CI integrations.
+* Unmodified files are excluded from analysis when delta scanning is enabled.
+* Analysis execution time and resource utilization are reduced for incremental scans.
+* Results are focused on issues introduced or affected by the current changes.
+
+**Outcome**
+
+Improves CI pipeline performance and ensures analysis results remain relevant to the code changes being reviewed.
+
+
+
 ## CodeScan Release Notes 26.0.13
 
 **Release Date: 21 June 2026**

@@ -219,6 +219,20 @@ Fixed an issue where Custom Admins could not view or approve commit labels creat
 
 ***
 
+## DataLoader Pro Release Notes – Version **26.2.11** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+
+**Release Date:** **14 Jun 2026**
+
+#### DL Data Retention Policy Fix <a href="#dt-13273-ncino-and-dl-data-retention-policy-fix" id="dt-13273-ncino-and-dl-data-retention-policy-fix"></a>
+
+Fixed missing components in the data retention policy for "DL & DL PRO". Single DataLoader bulk file deletion was not being executed, and "DL & DL PRO" S3 backup deletions were targeting the wrong bucket. ARM data retention settings now apply to "DL & DL PRO" by default without requiring a separate checkbox.
+
+#### DataLoader Pro Query Failure on Knowledge\_\_kav Object <a href="#dt-13345-dataloader-pro-query-failure-on-knowledge__kav-object-support-case-234338" id="dt-13345-dataloader-pro-query-failure-on-knowledge__kav-object-support-case-234338"></a>
+
+Fixed an issue where DataLoader Pro jobs failed when a custom query was applied to the `Knowledge__kav` object. The error occurred because the system incorrectly appended a `WHERE` clause to queries that already contained filtering conditions (e.g., `LIMIT`), resulting in a syntax error. Query construction logic has been corrected to handle Knowledge objects properly.
+
+***
+
 ## ARM **Release Notes 26.2.10** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 7 June 2026**

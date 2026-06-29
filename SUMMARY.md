@@ -915,6 +915,7 @@
         * [Feature Deployments](product-guides/arm-1/arm-features/ncino/feature-deployment/feature-deployment-summary.md)
         * [Feature Deployment History](product-guides/arm-1/arm-features/ncino/feature-deployment/feature-deployment-summary-1.md)
         * [Create New Branch During Deployment](product-guides/arm-1/arm-features/ncino/feature-deployment/create-new-branch-during-deployment.md)
+        * [Field Exclusion Settings](product-guides/arm-1/arm-features/ncino/feature-deployment/field-exclusion-settings.md)
       * [Feature Commits](product-guides/arm-1/arm-features/ncino/feature-commits.md)
       * [Run CI Jobs](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/README.md)
         * [Run a CI Job](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/running-a-ci-job/README.md)

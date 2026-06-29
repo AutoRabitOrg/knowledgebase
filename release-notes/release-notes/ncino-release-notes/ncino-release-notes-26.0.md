@@ -2,6 +2,32 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+### Release Notes — nCino+DL 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+
+**Release Date:** 2026-06-28
+
+#### New Feature <a href="#new-feature" id="new-feature"></a>
+
+#### Latest Templates and Versions Sorting in CI Jobs Features Dropdown _(DT-13172)_ <a href="#latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172" id="latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172"></a>
+
+The **Features** template list and the related **Version/Versions** dropdown in CI Jobs and Feature Deployments now display the most recently changed items first. This allows users to quickly locate and select the latest updated template and version without scrolling through the entire list.
+
+#### Consistent Deploy Destination Org Dropdown Across UIs _(DT-13458)_ <a href="#consistent-deploy-destination-org-dropdown-across-uis-dt-13458" id="consistent-deploy-destination-org-dropdown-across-uis-dt-13458"></a>
+
+Fixed an inconsistency where the **Deploy – Dest Org** dropdown in the New UI listed the source org as a selectable target, while the Old UI did not. The behavior is now aligned across both UIs to prevent accidental same-org deployments and eliminate user confusion.
+
+#### External Field Mappings Retained for Post-Approval Deployments _(DT-13356)_ <a href="#external-field-mappings-retained-for-post-approval-deployments-dt-13356" id="external-field-mappings-retained-for-post-approval-deployments-dt-13356"></a>
+
+Fixed an issue where configured **external field mappings** were missing when deploying a dataset from **Deployment History** after it had passed the approval process. All mapped fields are now correctly applied during post-approval deployments.
+
+#### Accurate Deployment Status for Dataset Retrieval in Deployment History _(DT-13476)_ <a href="#accurate-deployment-status-for-dataset-retrieval-in-deployment-history-dt-13476" id="accurate-deployment-status-for-dataset-retrieval-in-deployment-history-dt-13476"></a>
+
+Fixed an issue where performing a **dataset retrieval** (without an actual deployment) incorrectly showed the status as **Success** in Deployment History. The status now accurately reflects that only retrieval was performed, preventing misleading audit and release validation records.
+
+#### VC-to-VC Commit Deployment to Org Fix _(DT-13459)_ <a href="#vc-to-vc-commit-deployment-to-org-fix-dt-13459" id="vc-to-vc-commit-deployment-to-org-fix-dt-13459"></a>
+
+Fixed an issue where a successful **VC-to-VC commit** was followed by a deployment failure with the error _"No objects were retrieved for label: {}"_. The deployment process now correctly retrieves committed components and completes successfully.
+
 ## nCino - Release 26.2.12
 
 **Release Date:** **21 June 2026**

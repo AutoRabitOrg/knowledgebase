@@ -930,6 +930,7 @@
         * [CI Job List](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/ci-job-list-screen.md)
         * [nCino Webhooks](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/ncino-webhooks.md)
         * [Create New Branch During Deployment](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/create-new-branch-during-deployment.md)
+        * [Field Exclusion Settings](product-guides/arm-1/arm-features/ncino/feature-ci-jobs/field-exclusion-settings.md)
       * [nCino Developer APIs](product-guides/arm-1/arm-features/ncino/developer-apis/README.md)
         * [nCino API References](product-guides/arm-1/arm-features/ncino/developer-apis/api-references.md)
       * [nCino Compare](product-guides/arm-1/arm-features/ncino/page-2.md)

@@ -4,7 +4,7 @@
 
 ### Release Notes — nCino+DL 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
 
-**Release Date:** 2026-06-28
+**Release Date:** 28 June 2026
 
 #### Latest Templates and Versions Sorting in CI Jobs Features Dropdown  <a href="#latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172" id="latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172"></a>
 
@@ -47,6 +47,18 @@ Resolved a blocking `undefined` error that appeared when navigating to CI Jobs i
 Long notification email addresses in the Deployment and CI Jobs Preview screens now wrap properly instead of being truncated, making it easier to verify notification recipients.&#x20;
 
 ***
+
+### Release Notes — nCino+DL 26.2.11 <a href="#release-notes-ncinodl-26.2.11" id="release-notes-ncinodl-26.2.11"></a>
+
+**Release Date:** June 14 2026
+
+#### nCino Retention Policy Fix <a href="#dt-13273-ncino-and-dl-data-retention-policy-fix" id="dt-13273-ncino-and-dl-data-retention-policy-fix"></a>
+
+Fixed missing components in the data retention policy for nCino. Single DataLoader bulk file deletion was not being executed, and nCino S3 backup deletions were targeting the wrong bucket. ARM data retention settings now apply to nCino by default without requiring a separate checkbox.
+
+#### Classic UI Deployment Approval Settings Not Loading <a href="#dt-13427-classic-ui-deployment-approval-settings-not-loading" id="dt-13427-classic-ui-deployment-approval-settings-not-loading"></a>
+
+Fixed a blocking issue where the Deployment Approval settings fragment in the Classic UI failed to load due to an API error. Admins can now access and configure deployment approval settings under **My Account** as expected.
 
 ## nCino - Release 26.2.10
 

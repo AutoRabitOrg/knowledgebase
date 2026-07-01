@@ -8,7 +8,7 @@
 
 ### Summary&#x20;
 
-CodeScan 26.0.14 is comprised of the following 6 components:&#x20;
+CodeScan 26.0.14 is comprised of the following components:&#x20;
 
 * 1 Fix
 

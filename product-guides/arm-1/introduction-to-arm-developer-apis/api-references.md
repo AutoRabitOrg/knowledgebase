@@ -27,15 +27,12 @@ AutoRABIT API endpoints are listed below.
 
 The Deployment APIs allow external applications to retrieve deployment information, execution details, deployment components, Jira stories, logs, and test coverage reports.
 
-| API                                                                             | Description                                                                                                                              |
-| ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **GET** `/api/deployments/v1/list`                                              | Returns the list of deployments. Supports filtering by deployment status, label name, destination Salesforce org, date range, and limit. |
-| **GET** `/api/deployments/v1/{label}`                                           | Returns detailed information for the specified deployment.                                                                               |
-| **GET** `/api/deployments/v1/{label}/components`                                | Returns the metadata components included in the specified deployment.                                                                    |
-| **GET** `/api/deployments/v1/{label}/stories`                                   | Returns the Jira stories and associated commits linked to the deployment.                                                                |
-| **GET** `/api/deployments/v1/{label}/stories?iterationNumber={iterationNumber}` | Returns the Jira stories for a specific deployment iteration.                                                                            |
-| **GET** `/api/deployments/v1/{label}/logs/{iterationNumber}`                    | Returns the deployment execution log for the specified iteration.                                                                        |
-| **GET** `/api/deployments/v1/{label}/coverage/{iterationNumber}`                | Returns the Apex test results and code coverage report for the specified deployment iteration.                                           |
+[/api/deployments/v1/listdeployments](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#1650a778-8a7d-4d5c-8c9d-14e7cd1747c6)\
+[/api/deployments/v1/deploymentdetails](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#25ddfae2-5dfa-4698-827f-3929f844269f)\
+[/api/deployments/v1/deploymentcomponents](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#815cf38a-5c96-4db6-bd75-a833789457db)\
+[/api/deployments/v1/deploymentstories](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#459491d5-27ec-4006-a5b8-365e43543d24)\
+[/api/deployments/v1/promotionlog](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#3098e19f-9d04-4771-a38a-fe820b354578)\
+[/api/deployments/v1/testcoveragereport](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#7b01d81c-47bf-4f22-9e46-5a799773c6af)
 
 > **Note:** All Deployment APIs require a valid API token in the `token` request header. Generate an API token from **Administration → API Token Manager**.
 

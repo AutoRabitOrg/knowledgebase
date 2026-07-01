@@ -2,9 +2,9 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-### Release Notes — nCino+DL 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+### Release Notes — nCino + DL 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
 
-**Release Date:** 28 June 2026
+**Release Date: 28 June 2026**
 
 #### Latest Templates and Versions Sorting in CI Jobs Features Dropdown  <a href="#latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172" id="latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172"></a>
 
@@ -25,6 +25,8 @@ Fixed an issue where performing a **dataset retrieval** (without an actual deplo
 #### VC-to-VC Commit Deployment to Org Fix <a href="#vc-to-vc-commit-deployment-to-org-fix-dt-13459" id="vc-to-vc-commit-deployment-to-org-fix-dt-13459"></a>
 
 Fixed an issue where a successful **VC-to-VC commit** was followed by a deployment failure with the error _"No objects were retrieved for label: {}"_. The deployment process now correctly retrieves committed components and completes successfully.
+
+***
 
 ## nCino - Release 26.2.12
 

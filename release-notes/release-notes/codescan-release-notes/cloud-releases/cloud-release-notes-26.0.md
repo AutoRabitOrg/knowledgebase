@@ -34,7 +34,7 @@ Previously, delta analysis was not consistently applied in certain CI execution 
 
 Improves CI pipeline performance and ensures analysis results remain relevant to the code changes being reviewed.
 
-
+***
 
 ## CodeScan Release Notes 26.0.13
 

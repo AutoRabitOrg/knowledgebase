@@ -127,3 +127,9 @@ Configuring the Jira work items is applicable to the following CI Jobs:
 8. Based on the above work item selected, you need to update the status for each work item type. See the screenshot attached.
 
 <figure><img src="../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### #Mandatory Scopes are listed below:
+
+_**Classic Scope**_ -  `read:jira-work` , `manage:jira-project` ,`read:jira-user` , `write:jira-work` ,`manage:jira-configuration`
+
+_**Granular Scope**_ - `read:board-scope:jira-software` , `read:issue-details:jira` , `read:jql:jira` ,`read:sprint:jira-software` ,`read:project:jira` `read:project.avatar:jira` ,`read:project.avatar:jira`,`read:project-category:jira` , `read:project.property:jira`, `read:user:jira`,`read:application-role:jira` , `read:avatar:jira` , `read:group:jira`, `read:issue-type-hierarchy:jira` ,  `read:project-version:jira` , `read:project.component:jira`

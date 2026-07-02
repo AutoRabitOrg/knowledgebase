@@ -1,5 +1,37 @@
 # Guard Release Notes 26.2
 
+## AutoRABIT Guard Release Notes 26.2.2
+
+**Release Date: 8 July 2026**
+
+### Enhancements
+
+#### Main Navigation Link for IZ Suite
+
+AutoRABIT Guard now includes an IZ Suite item in the main navigation. Selecting this option opens the Integral Zone login page in a new browser tab.
+
+#### Immediate Drift Policy Evaluation
+
+When creating a new Drift Policy, users can now choose to evaluate the policy immediately using the two most recent snapshots. This helps users see whether a newly created policy would trigger without waiting for the next scheduled daily evaluation.
+
+#### Multiple Real-Time Change Notification Recipients
+
+Real-time change notifications now support multiple email recipients. Users can select one or more Guard users from the same tenant as notification recipients, making it easier to keep the right teams informed.
+
+Recipient selection is also aligned across Real-Time Change Notifications and Drift Policies.
+
+#### User Management Date Visibility
+
+The User Management interface now displays each user’s Creation Date and Last Login. These fields are available in the Users table and in the User Details view, helping admins review account age and identify inactive users.
+
+### Bug Fixes
+
+#### Drift Policy Direct Links
+
+Opening a Drift Policy from a direct link, such as a notification email, will no longer take the user to a blank page.
+
+***
+
 ## AutoRABIT Guard Release Notes 26.2.1
 
 **Release Date: 17 June 2026**

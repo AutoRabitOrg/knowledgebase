@@ -3,18 +3,18 @@
 ## Mule - Code Coverage Reports
 
 {% hint style="warning" %}
-* IZ Scan does not execute munit tests or produce coverage reports. Instead, it solely imports pre-generated reports in json format.
+* IZ Scan does not execute MUnit tests or produce coverage reports. Instead, it solely imports pre-generated reports in JSON format.
 {% endhint %}
 
-### How to generate coverage report
+### How to generate a coverage report
 
-1. Coverage report should be configured in JSON format for IZ Scan to scan and upload the report. Refer [Maven Configuration for Coverage](https://docs.mulesoft.com/munit/latest/coverage-maven-concept)
-2. Before scanning the project, make sure MUnit test cases are executed and coverage report is generated
+1. The Coverage Report should be configured in JSON format for IZ Scan to scan and upload the report. Refer to [Maven Configuration for Coverage](using-maven.md).
+2. Before scanning the project, make sure MUnit test cases are executed and the coverage report is generated.
 
 ### Coverage report upload
 
-1. IZ Scan parses the JSON coverage report from default path **`target/site/munit/coverage/munit-coverage.json`**. No additional configuration parameters are required to enable scanning of coverage reports
-2.  On successful analysis, coverage report will be uploaded to server with following statistics -
+1. IZ Scan parses the JSON coverage report from the default path **`target/site/munit/coverage/munit-coverage.json`**. No additional configuration parameters are required to enable scanning of coverage reports
+2.  On successful analysis, the coverage report will be uploaded to the server with the following statistics -
 
     1. Overall coverage percentage - Click on the actions and select **`Code Coverage Report`**&#x20;
 
@@ -36,7 +36,7 @@
 
 ### See Also
 
-* [Install IZ Scan for Cloud](using-iz-scan-cli.md)
-* Install IZ Scan for Desktop
-* Aborting Builds
+* [Install IZ Scan for Cloud](../vs-code-extension/install-vs-code-extension-cloud.md)
+* [Install IZ Scan for Desktop](../vs-code-extension/install-vs-code-extension-desktop.md)
+* [Aborting Builds](terminate-build.md)
 

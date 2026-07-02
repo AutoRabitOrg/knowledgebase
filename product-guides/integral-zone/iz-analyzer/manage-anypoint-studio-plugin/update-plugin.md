@@ -14,5 +14,5 @@ If a new version of the plugin is not available, then **`All items are installed
 
 ### See Also
 
-* [Install IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md)
-* [Remove IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-plugin.md)
+* [Install IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md)
+* [Remove IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-iz-analyzer-studio.md)

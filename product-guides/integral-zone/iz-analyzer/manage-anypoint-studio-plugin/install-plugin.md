@@ -7,8 +7,8 @@ We recommend installing **`IZ Scan`** Anypoint Studio plugin instead of **`IZ An
 
 The latest Anypoint Studio plugin update site is [https://plugins.integralzone.com/v4](https://plugins.integralzone.com/v4). Users can still continue to use the old plugin update site [https://plugins.integralzone.com/v2](https://plugins.integralzone.com/v2), but all the new updated will only be published to [https://plugins.integralzone.com/v4](https://plugins.integralzone.com/v4).
 
-* Refer to [Install Analyzer Suite](../../iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md) to install the latest plugin
-* Refer to [Analyzer Configuration](../../iz-suite/iz-scan/anypoint-studio/configuration/iz-analyzer-plugin.md) to configure IZ Analyzer plugin
+* Refer to [Install Analyzer Suite](../../iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md) to install the latest plugin
+* Refer to [Analyzer Configuration](../../iz-suite/iz-scan/anypoint-studio/configuration/iz-analyzer-configuration.md) to configure IZ Analyzer plugin
 {% endhint %}
 
 {% hint style="warning" %}
@@ -43,5 +43,5 @@ Before installing and using IZ Anypoint Studio Plugin, make sure you have:
 
 ### See Also
 
-* [Update IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/update-plugin.md)
-* [Remove IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-plugin.md)
+* [Update IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/update-iz-analyzer-studio.md)
+* [Remove IZ Analyzer Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-iz-analyzer-studio.md)

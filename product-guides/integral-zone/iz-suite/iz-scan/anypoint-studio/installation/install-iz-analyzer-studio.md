@@ -1,4 +1,4 @@
-# Install Plugin
+# Install IZ Analyzer Studio
 
 ## Download and Install IZ Scan Studio Plugin
 
@@ -6,7 +6,7 @@
 Before installing and using IZ Scan Anypoint Studio Plugin, make sure you have:
 
 * Purchased a valid license.
-* For on-premises or hybrid instances, please use your organization specific service URL.
+* For on-premises or hybrid instances, please use your organization-specific service URL.
 {% endhint %}
 
 ### Install Plugin
@@ -20,6 +20,6 @@ Before installing and using IZ Scan Anypoint Studio Plugin, make sure you have:
 
 ### See Also
 
-* [Update Studio Plugin](update-plugin.md)
-* [Remove Studio Plugin](remove-plugin.md)
-* [Configure Studio Plugin](../configuration/iz-scan-plugin.md)
+* [Update Studio Plugin](update-iz-analyzer-studio.md)
+* [Remove Studio Plugin](remove-iz-analyzer-studio.md)
+* [Configure Studio Plugin](../configuration/iz-suite-configuration.md)

@@ -35,8 +35,8 @@ License Key and Email will be provided by IZ as part of license activation
 
 ### See Also
 
-* [Update IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/update-plugin.md)
-* [Remove IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-plugin.md)
+* [Update IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/update-iz-analyzer-studio.md)
+* [Remove IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-iz-analyzer-studio.md)
 
 ***
 

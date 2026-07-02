@@ -3,8 +3,8 @@
 {% hint style="warning" %}
 Before analyzing the source code in Studio, make sure you have either
 
-* Installed and configured IZ Analyzer - [Anypoint Studio Plugin](../../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md).
-* Installed and configured IZ Analyzer - [WSO2 Integration Studio Plugin](../../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md).
+* Installed and configured IZ Analyzer - [Anypoint Studio Plugin](../../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md).
+* Installed and configured IZ Analyzer - [WSO2 Integration Studio Plugin](../../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md).
 {% endhint %}
 
 ### On The Fly Results:

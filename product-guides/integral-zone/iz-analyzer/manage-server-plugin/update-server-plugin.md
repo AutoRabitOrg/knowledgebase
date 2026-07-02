@@ -16,8 +16,8 @@ Taking a backup of the current database before upgrading plugins is strongly adv
 
 ### See Also
 
-* [Install IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md)
-* [Remove IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-plugin.md)
+* [Install IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md)
+* [Remove IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/remove-iz-analyzer-studio.md)
 
 ***
 

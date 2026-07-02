@@ -1,4 +1,4 @@
-# Update Plugin
+# Update IZ Analyzer Studio
 
 ## Update IZ Scan Studio Plugin
 
@@ -18,6 +18,6 @@
 
 ### See Also
 
-* [Install Studio Plugin](install-plugin.md)
-* [Remove Studio Plugin](remove-plugin.md)
-* [Configure Studio Plugin](../configuration/iz-analyzer-plugin.md)
+* [Install Studio Plugin](install-iz-analyzer-studio.md)
+* [Remove Studio Plugin](remove-iz-analyzer-studio.md)
+* [Configure Studio Plugin](../configuration/iz-analyzer-configuration.md)

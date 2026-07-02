@@ -1,19 +1,17 @@
-# Rules Playground
-
-## Anypoint Studio - Rules Playground
+# Anypoint Studio - Rules Playground
 
 Rules Playground is a tool for quick and easy development of **`Custom Rules`**
 
 {% hint style="warning" %}
-* Rules Playground functionality is part of Anypoint Studio plugin. Refer to [Installing Anypoint Studio plugin](../installation/install-plugin.md) for more information.
+* Rules Playground functionality is part of Anypoint Studio plugin. Refer to [Installing Anypoint Studio plugin](../installation/install-iz-analyzer-studio.md) for more information.
 {% endhint %}
 
 ### Features
 
 1. Develop/Create a custom rule definition and evaluate against the project
 2. Provides feedback about any syntax errors in the rule definition
-3. Capability to evaluate the rule definition on Mule components, APIs, property files, pom.xml etc.
-4. Publish the rule definition to configured server and activate it
+3. Capability to evaluate the rule definition on Mule components, APIs, property files, pom.xml, etc.
+4. Publish the rule definition to the configured server and activate it
 
 ### Custom Rule Editor
 
@@ -65,9 +63,9 @@ Before publishing a custom rule, make sure you have:
        &#x20;
 
        <figure><img src="../../../../../../.gitbook/assets/custom-rules-publish.png" alt=""><figcaption></figcaption></figure>
-3. Click on **`Publish Rule`** to upload the rule to configured server. Rule will be activated in the selected Quality Profile.
+3. Click on **`Publish Rule`** to upload the rule to the configured server. Rule will be activated in the selected Quality Profile.
 
 ### See Also
 
-* [On The Fly Results](on-the-fly-results.md)
-* [Source Code Analysis - Auto Fix Issues](autofix.md)
+* [On The Fly Results](anypoint-studio-analysis.md)
+* [Source Code Analysis - Auto Fix Issues](../../vs-code-extension/autofix.md)

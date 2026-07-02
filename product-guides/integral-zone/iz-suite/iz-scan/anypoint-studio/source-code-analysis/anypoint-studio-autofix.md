@@ -1,14 +1,12 @@
-# Autofix
+# Anypoint Studio - Autofix
 
-## Anypoint Studio - Autofix
-
-Autofix is a feature, where static code analysis issues can be fixed automatically with the click of a button.
+Autofix is a feature where static code analysis issues can be fixed automatically with the click of a button.
 
 {% hint style="warning" %}
 Make sure you have:
 
-* Installed the latest version of IZ Scan - Anypoint Studio Studio Plugin
-* Configured the plugin with appropriate connection type, Service URL and Access Token.
+* Installed the latest version of [IZ Scan - Anypoint Studio Studio Plugin](../installation/install-iz-analyzer-studio.md)
+* Configured the plugin with the appropriate connection type, Service URL, and Access Token.
 * Valid license with Auto Fix module enabled
 {% endhint %}
 
@@ -40,5 +38,5 @@ Make sure you have:
 
 #### See Also
 
-* [On The Fly Results](on-the-fly-results.md)
-* [Rules Playground - Custom Rules Editor](rules-playground.md)
+* [On The Fly Results](anypoint-studio-analysis.md)
+* [Rules Playground - Custom Rules Editor](anypoint-studio-rules-playground.md)

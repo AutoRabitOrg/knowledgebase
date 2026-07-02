@@ -11,8 +11,8 @@
 
 ### See Also
 
-* [Install IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md)
-* [Update IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/update-plugin.md)
+* [Install IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md)
+* [Update IZ Analyzer Server Plugin](../../iz-suite/iz-scan/anypoint-studio/installation/update-iz-analyzer-studio.md)
 
 ***
 

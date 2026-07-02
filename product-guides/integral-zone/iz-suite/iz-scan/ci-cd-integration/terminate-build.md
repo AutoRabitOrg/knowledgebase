@@ -1,14 +1,14 @@
 # Terminate Build
 
-Terminate CICD Builds
+## Terminate CI/CD Builds
 
 ### Aborting Builds
 
-1. CICD builds can be terminated based on the Quality Gate status. This step / configuration is mandatory to make sure all projects follow the organization standards.
+1. CI/CD builds can be terminated based on the Quality Gate status. This step / configuration is mandatory to make sure all projects follow the organization's standards.
 2. Builds can be terminated automatically by passing an additional parameter while scanning the applications.
 3. **`abortOnQualityGateFailure`** will terminate the build when **`Quality Gate`** fails - abortOnQualityGateFailure=true
 
 ### See Also
 
-* Install IZ Scan for Cloud
-* Install IZ Scan for Desktop
+* [Install IZ Scan for Cloud](../vs-code-extension/install-vs-code-extension-cloud.md)
+* [Install IZ Scan for Desktop](../vs-code-extension/install-vs-code-extension-desktop.md)

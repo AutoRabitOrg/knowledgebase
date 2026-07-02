@@ -6,14 +6,14 @@
 Before scanning applications using IZ Scan, make sure you have:
 
 * Purchased a valid license for IZ Scan.
-* Downloaded and installed **`Apache Maven`** 3.6.3 or higher. Refer [Installing Apache Maven](https://maven.apache.org/)
+* Downloaded and installed **`Apache Maven`** 3.6.3 or higher. Refer to [Installing Apache Maven](https://maven.apache.org/)
 * Downloaded and installed JDK 11
-* Follow the instructions [Generating Security Token](generate-security-token.md) to generate security token
+* Follow the instructions on [Generating Security Token](generate-security-token.md) to generate a security token
 {% endhint %}
 
 ### Adding Repositories
 
-1. The binaries required to scan the projects are available in **`IZ Maven Central`** repository. Include following repositories and plugin repositories in settings.xml
+1. The binaries required to scan the projects are available in **`IZ Maven Central`** repository. Include the following repositories and plugin repositories in settings.xml
 
 ```xml
 &lt;repositories>
@@ -34,20 +34,20 @@ Before scanning applications using IZ Scan, make sure you have:
 &lt;/pluginRepositories>
 ```
 
-### CICD Integration
+### CI/CD Integration
 
-1. Go to the project root directory from command line/terminal
-2. Run **`mvn com.integralzone.iz:iz-scan-cli:scan`** command with following options
+1. Go to the project root directory from the command line/terminal
+2. Run **`mvn com.integralzone.iz:iz-scan-cli:scan`** command with the following options
    1. -DserviceHost=xxx\
       &#xNAN;_&#x49;Z Scan service URL_
    2. -DauthToken=xxx\
       &#xNAN;_&#x53;ecurity token generated from the server_
    3. -DapplicationKey=x.x\
-      &#xNAN;_&#x55;nique id of the application / project being scanned_
+      &#xNAN;_&#x55;nique ID of the application / project being scanned_
    4. -DapplicationName=.\
       &#xNAN;_&#x4E;ame of the application being scanned_
    5. -Dsource=xxx\
-      &#xNAN;_&#x4F;ptional. Location of the project source directory. If ignored, current directory will be used as the project source directory_
+      &#xNAN;_&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
    6. -DscmBranchName=xxx + _Optional. SCM branch for which code is being analyzed. If ignored, the default value will be **`master`**_
    7. -DpullRequestId=xxx + \_Optional.SCM Pull request name for which code is being analyzed
    8. -Dorganization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id_
@@ -55,7 +55,7 @@ Before scanning applications using IZ Scan, make sure you have:
 
 Please refer to the section [below](using-maven.md) for instructions on how to retrieve the organization ID.
 
-1. Complete example may look like&#x20;
+1. A complete example may look like&#x20;
 
 ```
 PROJECT_ROOT_DIR> mvn com.integralzone.iz:iz-scan-cli:scan 
@@ -68,7 +68,7 @@ PROJECT_ROOT_DIR> mvn com.integralzone.iz:iz-scan-cli:scan
 
 ### Retrieve Organization ID
 
-1. Navigate to main menu **`Organizations`** -> **`Organizations`**
+1. Navigate to the main menu **`Organizations`** -> **`Organizations`**
 2. In the displayed list of organizations, each one will have an associated **`Id`** as shown below.&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/organization_ids.png" alt=""><figcaption></figcaption></figure>
@@ -81,7 +81,7 @@ _For example: -Dorganization=cm0oy5hht00efv640wm935np9_
 
 ### Setting Proxy Details
 
-If the system from which the projects are analyzed is configured with proxy, then set the following arguments with proxy server details -
+If the system from which the projects are analyzed is configured with a proxy, then set the following arguments with proxy server details -
 
 1. Windows&#x20;
 
@@ -99,6 +99,6 @@ If the system from which the projects are analyzed is configured with proxy, the
 
 * [Mule Code Coverage](page-2.md)
 * [Aborting Builds](terminate-build.md)
-* Install IZ Scan for Cloud
-* Install IZ Scan for Desktop
+* [Install IZ Scan for Cloud](../vs-code-extension/install-vs-code-extension-cloud.md)
+* [Install IZ Scan for Desktop](../vs-code-extension/install-vs-code-extension-desktop.md)
 

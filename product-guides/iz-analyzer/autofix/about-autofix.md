@@ -16,7 +16,7 @@ Some of the key benefits are:
 
 ### See Also
 
-* [Auto Fix - In Anypoint Studio](../../iz-suite/iz-scan/anypoint-studio/autofix.md)
+* [Auto Fix - In Anypoint Studio](../../integral-zone/iz-suite/iz-scan/anypoint-studio/source-code-analysis/autofix.md)
 * [Custom Rules](../manage-rules/custom-rules.md)
 
 ***

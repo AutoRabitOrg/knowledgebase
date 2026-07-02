@@ -42,6 +42,6 @@ This section outlines the compatibility matrix between various server and CLI Sc
 
 ### See Also
 
-* Latest Server Version
-* Latest  Agent Version
+* [Latest Server Version](iz-server/)
+* [Latest Agent Version](iz-agent/)
 

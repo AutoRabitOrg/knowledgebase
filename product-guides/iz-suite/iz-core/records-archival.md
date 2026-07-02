@@ -52,5 +52,5 @@ Users can modify the archival settings by navigating to **`Global Settings`** > 
 
 ### See Also
 
-* [Creating an Agent](../agent/create-agent.md)
-* [Updating an Agent](../agent/update-agent.md)
+* [Creating an Agent](../../integral-zone/iz-suite/iz-core/agent/create-agent.md)
+* [Updating an Agent](../../integral-zone/iz-suite/iz-core/agent/update-agent.md)

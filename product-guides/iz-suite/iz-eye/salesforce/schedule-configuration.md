@@ -12,7 +12,7 @@
 1. Navigate to **`Schedules`** -> **`Schedules`** and click on **`Configure Schedule`**
 2. Select **`Salesforce Apex Analysis`** job type&#x20;
 
-<figure><img src="/broken/files/BphtAcFXBjh4drdhgUx9" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sf_configure_schedule_1.png" alt=""><figcaption></figcaption></figure>
 
 3. Select the Organizations and Environments to perform the scan&#x20;
 

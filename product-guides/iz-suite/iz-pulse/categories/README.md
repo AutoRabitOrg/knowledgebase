@@ -11,6 +11,6 @@ Category is a collection of Endpoints. Multiple endpoints can be added to each c
 
 ### See Also
 
-* [Configure Schedule](../about-iz-pulse/configure-schedule.md)
-* [Endpoints](../about-iz-pulse/endpoints/)
-* [Status Pages](../about-iz-pulse/status-pages/)
+* [Configure Schedule](../../../integral-zone/iz-suite/iz-pulse/configure-schedule.md)
+* [Endpoints](../../../integral-zone/iz-suite/iz-pulse/endpoints/)
+* [Status Pages](../../../integral-zone/iz-suite/iz-pulse/status-pages/)

@@ -104,5 +104,5 @@ Once the role is configured, assign the same to users based on the requirement
 
 ### See Also
 
-* [Configure Code Scan Schedule](../code-scan-schedule-configuration.md)
+* [Configure Code Scan Schedule](../../../integral-zone/iz-suite/iz-eye/anypoint-platform/code-scan-schedule-configuration.md)
 * [Apex Classes & Triggers](applications/apex-classes-and-triggers.md)

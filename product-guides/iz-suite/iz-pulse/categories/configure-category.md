@@ -16,7 +16,7 @@
 
 ### See Also
 
-* [Configure Schedule](../about-iz-pulse/configure-schedule.md)
-* [Endpoints](../about-iz-pulse/endpoints/)
+* [Configure Schedule](../../../integral-zone/iz-suite/iz-pulse/configure-schedule.md)
+* [Endpoints](../../../integral-zone/iz-suite/iz-pulse/endpoints/)
 * [Categories](./)
-* [Status Pages](../about-iz-pulse/status-pages/)
+* [Status Pages](../../../integral-zone/iz-suite/iz-pulse/status-pages/)

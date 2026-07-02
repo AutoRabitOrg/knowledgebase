@@ -3,7 +3,7 @@
 Rules Playground is a tool for quick and easy development of **`Custom Rules`.**
 
 {% hint style="warning" %}
-Rules Playground functionality is part of Anypoint Studio plugin. Refer to [Installing Anypoint Studio](../install/) plugin for more information.
+Rules Playground functionality is part of Anypoint Studio plugin. Refer to [Installing Anypoint Studio](/broken/pages/AplzbTSqyanR07dsxguU) plugin for more information.
 {% endhint %}
 
 ### Features:

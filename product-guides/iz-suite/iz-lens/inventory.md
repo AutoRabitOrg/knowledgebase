@@ -38,8 +38,8 @@ More details about the inventory for each organization can be drilled down by cl
 
 ### See Also
 
-* Deprecations
-* Aggregated Dashboard
-* Application Dashboard
-* Mule Projects
-* API Applications
+* [Deprecations](../../integral-zone/iz-suite/iz-lens/deprecations.md)
+* [Aggregated Dashboard](../../integral-zone/iz-suite/iz-eye/anypoint-platform/application-dashboard.md)
+* [Application Dashboard](../../integral-zone/iz-suite/iz-eye/anypoint-platform/application-dashboard.md)
+* [Mule Projects](../../integral-zone/iz-suite/iz-eye/anypoint-platform/applications/mule-applications.md)
+* [API Applications](../../integral-zone/iz-suite/iz-eye/anypoint-platform/applications/exchange-apis.md)

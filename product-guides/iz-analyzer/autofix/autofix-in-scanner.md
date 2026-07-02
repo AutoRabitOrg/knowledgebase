@@ -60,8 +60,8 @@ As a resolution the scanner command should be executed again without **`analyzer
 
 #### Details
 
-* [Manage Anypoint Studio Plugin](../../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md)
-* [Manage Server Plugin](../install/install-iz-analyzer-server-plugin.md)
+* [Manage Anypoint Studio Plugin](../../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md)
+* [Manage Server Plugin](../../integral-zone/iz-analyzer/manage-server-plugin/install-server-plugin.md)
 
 ***
 

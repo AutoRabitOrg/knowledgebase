@@ -15,12 +15,12 @@ Details for migrating from 1.x version to 2.x can be found below for various dep
 2. Download the latest versions on Mule and API Analyzer plugins from [Releases](https://support.integralzone.com)
 3. Copy the latest plugin jar files (mule-analyzer-plugin-x.x.jar & api-analyzer-plugin-x.x.jar) to **`SONAR_HOME/extensions/plugins`**
 4. Restart [SonarQube™](https://www.sonarqube.org) server
-5. Update Anypoint Studio plugin by following the document [here](install/update-iz-analyzer-studio-plugin.md)
+5. Update Anypoint Studio plugin by following the document [here](../integral-zone/iz-analyzer/manage-anypoint-studio-plugin/update-plugin.md)
 
 ### Cloud Users
 
 1. All migration/deployment related activities will be managed by [Integral Zone](https://integralzone.com).
-2. All cloud users are only required to update the Anypoint Studio plugin by following the document [here](install/update-iz-analyzer-studio-plugin.md)
+2. All cloud users are only required to update the Anypoint Studio plugin by following the document [here](../integral-zone/iz-analyzer/manage-anypoint-studio-plugin/update-plugin.md)
 
 ### API Rules
 
@@ -28,5 +28,5 @@ All built-in API rules will now be available as part of API plugin under Quality
 
 ### See Also
 
-* [Update IZ Analyzer Anypoint Studio Plugin](install/update-iz-analyzer-studio-plugin.md)
-* [Remove IZ Analyzer Anypoint Studio Plugin](install/remove-iz-analyzer-studio-plugin.md)
+* [Update IZ Analyzer Anypoint Studio Plugin](../integral-zone/iz-analyzer/manage-anypoint-studio-plugin/update-plugin.md)
+* [Remove IZ Analyzer Anypoint Studio Plugin](../integral-zone/iz-analyzer/manage-anypoint-studio-plugin/remove-plugin.md)

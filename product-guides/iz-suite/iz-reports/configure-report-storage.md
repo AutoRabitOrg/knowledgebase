@@ -69,8 +69,8 @@ Reports can currently be configured to be stored in any of the following cloud s
 
 ### See Also
 
-* [Deprecations](../iz-lens/deprecations/)
+* [Deprecations](../../integral-zone/iz-suite/iz-lens/deprecations.md)
 * [Aggregated Dashboard](../iz-eye/dashboard.md)
-* [Application Dashboard](../iz-eye/applications/application-dashboard.md)
-* [Mule Projects](../iz-eye/applications/mule-applications.md)
-* [API Applications](../iz-eye/applications/api-applications.md)
+* [Application Dashboard](../../integral-zone/iz-suite/iz-eye/anypoint-platform/application-dashboard.md)
+* [Mule Projects](../../integral-zone/iz-suite/iz-eye/anypoint-platform/applications/mule-applications.md)
+* [API Applications](../../integral-zone/iz-suite/iz-eye/anypoint-platform/applications/exchange-apis.md)

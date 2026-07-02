@@ -30,5 +30,5 @@ List of tools available in the IZ MCP server along with the permissions required
 
 ### See Also
 
-* [Create Agent](../../agent/create-agent.md)
-* [Update Agent](../../agent/update-agent.md)
+* [Create Agent](../../../integral-zone/iz-suite/iz-core/agent/create-agent.md)
+* [Update Agent](../../../integral-zone/iz-suite/iz-core/agent/update-agent.md)

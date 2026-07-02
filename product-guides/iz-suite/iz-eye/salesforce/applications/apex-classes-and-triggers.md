@@ -4,7 +4,7 @@
 
 {% hint style="warning" %}
 * Create Organization and Environment with appropriate external client app credentials - [Configure External Client App](../external-client-application-configuration.md)
-* To start scanning the applications, a schedule has to be created to scan the Classes and Triggers deployed in Salesforce Instance - [Configure Code Scan Schedule](../../code-scan-schedule-configuration.md)
+* To start scanning the applications, a schedule has to be created to scan the Classes and Triggers deployed in Salesforce Instance - [Configure Code Scan Schedule](../../../../integral-zone/iz-suite/iz-eye/anypoint-platform/code-scan-schedule-configuration.md)
 {% endhint %}
 
 ### To view all the applications
@@ -51,4 +51,4 @@ Use these filters to narrow the list quickly, then open the application details 
 ### See Also
 
 * [Configure External Client App](../external-client-application-configuration.md)
-* [Configure Code Scan Schedule](../../code-scan-schedule-configuration.md)
+* [Configure Code Scan Schedule](../../../../integral-zone/iz-suite/iz-eye/anypoint-platform/code-scan-schedule-configuration.md)

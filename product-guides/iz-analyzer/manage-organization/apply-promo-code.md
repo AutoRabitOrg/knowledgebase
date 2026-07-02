@@ -23,5 +23,5 @@ Before applying the promo code, make sure you have:
 ### See Also
 
 * [Code Analysis in Anypoint Studio](../source-code-analysis/code-analysis-in-studio.md)
-* [Code Analysis in CICD pipelines](../source-code-analysis/code-analysis-in-server.md)
+* [Code Analysis in CICD pipelines](../../integral-zone/iz-analyzer/source-code-analysis/code-analysis-in-cicd.md)
 * [Uploading Coverage Reports](../source-code-analysis/coverage-reports.md)

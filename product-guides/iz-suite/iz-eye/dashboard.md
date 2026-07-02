@@ -28,8 +28,8 @@ The dashboard provides a bird’s eye view of all the issues and metrics across 
 
 ### See Also
 
-* [Configure Schedule](../iz-pulse/about-iz-pulse/configure-schedule.md)
-* [Application Dashboard](applications/application-dashboard.md)
-* [Agent Job Types](../agent/agent-job-types.md)
-* [Mule Projects](applications/mule-applications.md)
-* [API Applications](applications/api-applications.md)
+* [Configure Schedule](../../integral-zone/iz-suite/iz-pulse/configure-schedule.md)
+* [Application Dashboard](../../integral-zone/iz-suite/iz-eye/anypoint-platform/application-dashboard.md)
+* [Agent Job Types](../../integral-zone/iz-suite/iz-core/agent/agent-job-types.md)
+* [Mule Projects](../../integral-zone/iz-suite/iz-eye/anypoint-platform/applications/mule-applications.md)
+* [API Applications](../../integral-zone/iz-suite/iz-eye/anypoint-platform/applications/exchange-apis.md)

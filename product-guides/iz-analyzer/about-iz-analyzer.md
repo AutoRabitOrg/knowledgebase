@@ -26,8 +26,8 @@
 
 #### Details
 
-* [Manage Studio Plugin](../iz-suite/iz-scan/anypoint-studio/install-iz-analyzer-studio.md)
-* [Manage Server Plugin](install/install-iz-analyzer-server-plugin.md)
+* [Manage Studio Plugin](../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-plugin.md)
+* [Manage Server Plugin](../integral-zone/iz-analyzer/manage-server-plugin/install-server-plugin.md)
 
 ***
 

@@ -189,4 +189,4 @@ EOF
 ### See Also
 
 * [Prerequisites](installation-requirements.md)
-* [Cluster Mode](cluster-installation.md)
+* [Cluster Mode](../../integral-zone/iz-suite/installation/modes/cluster-installation.md)

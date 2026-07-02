@@ -29,4 +29,4 @@ If the installation is managed by **`Integral Zone`**, the following will be han
 
 * [Server Installation](server-installation.md)
 * [Prerequisites](installation-requirements.md)
-* [Cluster Mode](cluster-installation.md)
+* [Cluster Mode](../../integral-zone/iz-suite/installation/modes/cluster-installation.md)

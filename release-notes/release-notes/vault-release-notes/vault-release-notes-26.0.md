@@ -6,12 +6,6 @@
 
 **Release Date: 08 Jul 2026**
 
-#### Vault Freemium <a href="#dt-12158-vault-freemium" id="dt-12158-vault-freemium"></a>
-
-Vault now supports a freemium version. Prospects can sign up, explore key Vault features, and experience the product independently within defined usage boundaries.
-
-<figure><img src="../../../.gitbook/assets/1 (6).png" alt=""><figcaption></figcaption></figure>
-
 #### Salesforce Data Anomaly Detection and Recovery <a href="#dt-10279-salesforce-data-anomaly-detection-and-recovery" id="dt-10279-salesforce-data-anomaly-detection-and-recovery"></a>
 
 Vault now includes Salesforce data anomaly detection and recovery capabilities. This enhancement helps identify unusual Salesforce data changes, review anomalies through dashboards and alerts, and recover affected records with greater precision.

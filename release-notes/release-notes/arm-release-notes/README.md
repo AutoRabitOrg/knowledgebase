@@ -55,6 +55,8 @@ Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notif
 
 * Notification Integrations
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/webhooks/teams-workflows" %}
+
 ***
 
 ## ARM **Release Notes 26.2.13** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>

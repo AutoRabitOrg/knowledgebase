@@ -1,5 +1,62 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.3.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+
+**Release Date: 5th July 2026**
+
+### Backup-Enabled Validation Metadata Retrieval Fix <a href="#backup-enabled-validation-metadata-retrieval-fix" id="backup-enabled-validation-metadata-retrieval-fix"></a>
+
+Fixed an issue where Validate Only deployments with Backup enabled could fail due to additional metadata retrieval during the backup flow. The backup metadata retrieval process has been improved to correctly handle validation scenarios and avoid unnecessary failures when deployment components are limited to selected metadata.
+
+**Impacted Areas:**
+
+* Deployment Module
+
+### Branch Unregistration Improvements <a href="#branch-unregistration-improvements" id="branch-unregistration-improvements"></a>
+
+Improved the branch unregistration process to ensure branch-related records are cleaned up correctly during synchronization. The update enhances multi-branch unregistration handling, removes stale branch mapping data, and improves logging to provide more accurate status reporting and consistent behavior across branch synchronization workflows.
+
+**Impacted Areas:**
+
+* Version Control Repository Settings
+* Sync Branches
+
+### Apache Tomcat 11.0.22 Upgrade <a href="#apache-tomcat-11.0.22-upgrade" id="apache-tomcat-11.0.22-upgrade"></a>
+
+Upgraded Apache Tomcat from **11.0.21** to **11.0.22** across Shared, Dedicated, and On-Prem environments to incorporate the latest security fixes and stability improvements. This update enhances platform security while maintaining compatibility and consistent performance across all deployment models.
+
+**Impacted Areas:**
+
+* Shared Instances
+* Dedicated Instances
+* On-Prem Deployments
+
+### Permission Set Compare Changes Consistency Fix <a href="#permission-set-compare-changes-consistency-fix" id="permission-set-compare-changes-consistency-fix"></a>
+
+Fixed an issue where the **Compare Changes** view did not match the actual changes committed to GitHub when using **Create/Append Revision to Existing Label** in EZ-Commit. Permission Set commit options are now applied consistently throughout the commit workflow, ensuring the Compare Changes view accurately reflects the final commit content.
+
+**Impacted Areas:**
+
+* EZ-Commit
+
+### CI Job File Changes Retention Fix <a href="#ci-job-file-changes-retention-fix" id="ci-job-file-changes-retention-fix"></a>
+
+Fixed an issue where the **File Changes** tab in CI Job history could appear empty after historical CI Job data was cleaned up. The retention process has been updated to preserve the required file difference information, ensuring deployed file changes remain available for supported CI Job history records.
+
+**Impacted Areas:**
+
+* CI Jobs
+
+### Microsoft Teams Workflows Webhook Support <a href="#microsoft-teams-workflows-webhook-support" id="microsoft-teams-workflows-webhook-support"></a>
+
+Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notifications to continue working as Microsoft phases out traditional Incoming Webhooks. ARM can now deliver deployment and system notifications using the new Teams Workflows integration, helping customers transition seamlessly to Microsoft's supported notification model.
+
+**Impacted Areas:**
+
+* Notification Integrations
+
+***
+
 ## ARM **Release Notes 26.2.13** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 28 June 2026**

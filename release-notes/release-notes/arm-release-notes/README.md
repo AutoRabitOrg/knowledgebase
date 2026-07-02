@@ -1,6 +1,6 @@
 # ARM Release Notes
 
-## ARM **Release Notes 26.3.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+### ARM **Release Notes 26.3.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
 
 **Release Date: 5th July 2026**
 

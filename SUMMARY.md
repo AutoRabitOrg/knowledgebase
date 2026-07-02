@@ -1452,7 +1452,7 @@
       * [Applications](product-guides/integral-zone/iz-suite/iz-scan/applications.md)
       * [CI/CD Integration](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/README.md)
         * [Generate Security Token](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/generate-security-token.md)
-        * [Mule Coverage Reports](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/mule-coverage-reports.md)
+        * [Mule Coverage Reports](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/page-2.md)
         * [Terminate Build](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/terminate-build.md)
         * [Using IZ Scan CLI](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/using-iz-scan-cli.md)
         * [Using Maven](product-guides/integral-zone/iz-suite/iz-scan/ci-cd-integration/using-maven.md)

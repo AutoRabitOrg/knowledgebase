@@ -26,23 +26,23 @@
    2. Navigate to **`Organization`** main menu -> **`Tokens`**
    3. Click on **`Generate Token`**, enter the token name and select **`IZ CLI Scanner`** role.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/iz-generate-token.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/iz-generate-token.png" alt="" width="539"><figcaption></figcaption></figure>
 
 d. Click **`Ok`** to generate the token. Copy the token and save it securely as the token will not be displayed again.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/iz-token-generated (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/iz-token-generated (1).png" alt="" width="542"><figcaption></figcaption></figure>
 
 ### Custom Rule Publisher Role
 
 1. Navigate to **`Organization`** -> **`Roles`** and click on **`Create Role`**
 2. Enter the **`Role Name`** and click on next. For example - Custom Rule Publisher&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/custom-rule-publisher-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/custom-rule-publisher-1.png" alt="" width="552"><figcaption></figcaption></figure>
 
 3. Select **`Edit Quality Rule`**, **`Activate Rule in Profile`** permissions and click on next&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/custom-rule-publisher-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/custom-rule-publisher-2.png" alt="" width="552"><figcaption></figcaption></figure>
 
 4. Submit to create the new role&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/custom-rule-publisher-3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/custom-rule-publisher-3.png" alt="" width="552"><figcaption></figcaption></figure>

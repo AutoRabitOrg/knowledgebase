@@ -59,7 +59,7 @@ Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notif
 
 ***
 
-## ARM **Release Notes 26.2.13** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.13**
 
 **Release Date: 28 June 2026**
 
@@ -129,7 +129,7 @@ Fixed an issue in the New UI where Pre-Validation Commit SCA did not correctly a
 
 ***
 
-## ARM **Release Notes 26.2.12** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.12**
 
 **Release Date: 21 June 2026**
 
@@ -201,7 +201,7 @@ Fixed an issue where ARM displayed incorrect CodeScan analysis results by retrie
 
 ***
 
-## ARM **Release Notes 26.2.11** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.11**
 
 **Release Date: 14 June 2026**
 
@@ -278,7 +278,7 @@ Fixed an issue where Custom Admins could not view or approve commit labels creat
 
 ***
 
-## DataLoader Pro Release Notes – Version **26.2.11** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## DataLoader Pro Release Notes – Version **26.2.11**
 
 **Release Date:** **14 Jun 2026**
 
@@ -292,7 +292,7 @@ Fixed an issue where DataLoader Pro jobs failed when a custom query was applied 
 
 ***
 
-## ARM **Release Notes 26.2.10** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.10**
 
 **Release Date: 7 June 2026**
 
@@ -318,7 +318,7 @@ Enhanced the EZ-Commit save experience by improving validation feedback for requ
 
 ***
 
-## ARM **Release Notes 26.2.9** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.9**
 
 **Release Date: 31 May 2026**
 
@@ -375,7 +375,7 @@ Fixed an issue where SonarQube violations were not displayed in the ARM Analysis
 
 ***
 
-## ARM **Release Notes 26.2.8.1** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.8.1**
 
 **Release Date: 27 May 2026**
 
@@ -400,7 +400,7 @@ Fixed an issue in My Version Control Mappings where selecting and saving a new b
 
 ***
 
-## ARM **Release Notes 26.2.8** <a href="#release-notes-26.2.8" id="release-notes-26.2.8"></a>
+## ARM **Release Notes 26.2.8**
 
 **Release Date: 24 May 2026**
 
@@ -440,7 +440,7 @@ EZ-Commit – Deleted Metadata Changes Handling (Destructive Changes)
 
 ***
 
-## ARM **Release Notes 26.2.7** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
+## ARM **Release Notes 26.2.7**
 
 **Release Date:** **17 May 2026**
 
@@ -496,7 +496,7 @@ Added support for the `AiAuthoringBundle` metadata type across ARM metadata oper
 
 ***
 
-## DataLoader Pro Release Notes – Version **26.2.7** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## DataLoader Pro Release Notes – Version **26.2.7**
 
 **Release Date:** **17 May 2026**
 

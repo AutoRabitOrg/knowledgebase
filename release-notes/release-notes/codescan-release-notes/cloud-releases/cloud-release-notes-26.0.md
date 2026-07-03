@@ -19,7 +19,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features:&#x20;
 
-1. CodeScan now has “salesforce-project-only” tags for Rules with SF queries&#x20;
+1. **CodeScan now has “salesforce-project-only” tags for Rules with SF queries**&#x20;
 
 **Description**&#x20;
 
@@ -94,7 +94,7 @@ We have verified that the tag "salesforce-project-only" has been added to all 13
 
 ### New Rules:&#x20;
 
-1. New CodeScan Metadata Rule: “Communities With Guest Access” &#x20;
+1. **New CodeScan Metadata Rule: “Communities With Guest Access”** &#x20;
 
 {Rule ID: sfmeta:CommunityGuestUserAccess"} &#x20;
 
@@ -186,7 +186,7 @@ Name: Community Guest User Has Excessive Permissions \
 Key: CommunityGuestUserAccess&#x20;
 
 \
-Description: This rule identifies Salesforce Experience Cloud communities that allow guest access and where the associated Guest User Profile has elevated permissions such as object-level permissions (read, create, edit, delete), field-level access to sensitive data, or Apex class access. This may expose sensitive data to unauthenticated users.&#x20;
+**Description**: This rule identifies Salesforce Experience Cloud communities that allow guest access and where the associated Guest User Profile has elevated permissions such as object-level permissions (read, create, edit, delete), field-level access to sensitive data, or Apex class access. This may expose sensitive data to unauthenticated users.&#x20;
 
 Type: Vulnerability \
 Severity: Critical \
@@ -203,7 +203,7 @@ Remediation: 15 Minutes&#x20;
 NOTE:  This is a project level rule.&#x20;
 {% endhint %}
 
-Verification: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:&#x20;
+**Verification**: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:&#x20;
 
 * Rule correctly detects communities with guest access enabled.&#x20;
 
@@ -257,7 +257,7 @@ All verification use cases passed successfully, the rule is working as expected,
 
 1. Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}&#x20;
 
-Description&#x20;
+**Description**&#x20;
 
 Several customers had reported false positives associated with this rule.  Upon analysis, we determined that at the Salesforce level, when parameters are consumed as SOQL bind variables inside a dynamically built query string, these parameters are generally used (and resolved from local scope at runtime).  \
 &#x20;\
@@ -309,7 +309,7 @@ The "Status Marked By" column should display the name of the user who performed 
 
 We analyzed the :Status Marked By” population logic and found that bulk status change records were being skipped due to a startsWith() check. Updated the logic to correctly process bulk change entries and populate the user information.  With this logic change, this issue has been fully remediated.&#x20;
 
-Scenarios Validated:&#x20;
+**Scenarios Validated:**&#x20;
 
 1. Bulk status change to CONFIRMED – "Status Marked By" column correctly populated with the user name&#x20;
 2. Bulk status change to EXCEPTION – Column populated as expected&#x20;

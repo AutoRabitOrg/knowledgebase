@@ -2,6 +2,352 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.15
+
+**Release Date: 05 July 2026**
+
+### Summary
+
+CodeScan 26.0.15 is comprised of the following 5 components:&#x20;
+
+* 1 New Feature&#x20;
+* 1 New Rule&#x20;
+* 1 Rule Enhancement&#x20;
+* 2 Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+New Features:&#x20;
+
+1. CodeScan now has “salesforce-project-only” tags for Rules with SF queries&#x20;
+
+Description&#x20;
+
+Several CodeScan rules perform queries directly against Salesforce to execute their analysis. These rules require an active Salesforce project connection and cannot be used in a standard static analysis context. To improve discoverability and filterability, the tag salesforce-project-only should be added to each of these rules.&#x20;
+
+The following rules require this tag:&#x20;
+
+* sfmeta:NcinoDuplicateLabels&#x20;
+* sfmeta:NcinoComponentNamingDuplicate&#x20;
+* sfmeta:NcinoIntUserConfig&#x20;
+* sfmeta:NcinoDeprecatedFields&#x20;
+* sfmeta:NcinoDuplicateLookupKeys&#x20;
+* sfmeta:NcinoFeeTemplateScreenSection&#x20;
+* sfmeta:NcinoNullLookupKeys&#x20;
+* sfmeta:NcinoProductFeatureNotExist&#x20;
+* sfmeta:NcinoProductFeatureSharing&#x20;
+* sfmeta:NcinoNullCollateral&#x20;
+* sfmeta:ExcessivePageLayout&#x20;
+* sfmeta:CheckSystemAdministrator&#x20;
+* sfmeta:CustomProfilesPermission&#x20;
+
+Value&#x20;
+
+Users working in non-Salesforce-connected environments are exposed to rules that will never produce valid results for their project type. By tagging these rules with salesforce-project-only, users can quickly filter them in or out of their rule sets, reducing noise and improving the overall rule browsing experience. It also makes it clearer to new users why certain rules may not be firing.&#x20;
+
+Acceptance Criteria&#x20;
+
+* The tag salesforce-project-only is added to all 13 rules listed above.&#x20;
+* The tag appears on the rule detail page for each affected rule in the CodeScan UI.&#x20;
+* Users can filter the rules list by the tag salesforce-project-only and only the 13 listed rules (and any others previously tagged) are returned.&#x20;
+* No existing tags on any of the affected rules are removed or modified.&#x20;
+* The tag is consistent in formatting (lowercase, hyphenated) with salesforce-project-only across all rules.&#x20;
+* A smoke test has been performed to confirm the tag is visible and filterable in a non-production environment before release.
+
+We have verified that the tag "salesforce-project-only" has been added to all 13 rules, and that the tag is visible, consistent, and filterable in the CodeScan UI. &#x20;
+
+Test Scenarios Validated:&#x20;
+
+1: Tag presence — All 13 rules have "salesforce-project-only" tag&#x20;
+
+* sfmeta:NcinoDuplicateLabels&#x20;
+* sfmeta:NcinoComponentNamingDuplicate&#x20;
+* sfmeta:NcinoIntUserConfig&#x20;
+* sfmeta:NcinoDeprecatedFields&#x20;
+* sfmeta:NcinoDuplicateLookupKeys&#x20;
+* sfmeta:NcinoFeeTemplateScreenSection&#x20;
+* sfmeta:NcinoNullLookupKeys&#x20;
+* sfmeta:NcinoProductFeatureNotExist&#x20;
+* sfmeta:NcinoProductFeatureSharing&#x20;
+* sfmeta:NcinoNullCollateral&#x20;
+* sfmeta:ExcessivePageLayout&#x20;
+* sfmeta:CheckSystemAdministrator&#x20;
+* sfmeta:CustomProfilesPermission&#x20;
+
+&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (87).png" alt="" height="386" width="594">
+
+2: Tag visible on rule detail page for each affected rule&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (88).png" alt="" height="312" width="624">
+
+3: Filter by "salesforce-project-only" returns all 13 rules&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (89).png" alt="" height="365" width="562">
+
+4: No existing tags removed or modified on any of the 13 rules&#x20;
+
+5: Issue got triggered for a random rule, working as expected. Hence closing this user story.&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (90).png" alt="" height="320" width="578">
+
+New Rules:&#x20;
+
+1. New CodeScan Metadata Rule: “Communities With Guest Access” &#x20;
+
+{Rule ID: sfmeta:CommunityGuestUserAccess"} &#x20;
+
+Description
+
+Identify Salesforce Experience Cloud communities (Network metadata) that allow guest user access and correlate them with associated Guest User Profile metadata to detect excessive permissions (object, field, or Apex access). The rule flags communities where unauthenticated users may access or modify sensitive data.&#x20;
+
+Hypothesis&#x20;
+
+If a community allows guest access and the associated guest user profile has elevated permissions, then sensitive data or functionality may be exposed to unauthenticated users, leading to potential data breaches or unauthorized actions.&#x20;
+
+EXACT CONDITIONS TO FLAG &#x20;
+
+A. Object-Level Permissions &#x20;
+
+From:&#x20;
+
+\<objectPermissions>&#x20;
+
+Flag if ANY of the following:&#x20;
+
+* allowRead = true on standard objects: &#x20;
+* Account &#x20;
+* Contact &#x20;
+* Lead&#x20;
+* User&#x20;
+* OR any custom object (\_\_c) &#x20;
+
+OR&#x20;
+
+* Any of these are true: &#x20;
+* allowCreate = true &#x20;
+* allowEdit = true &#x20;
+* allowDelete = true &#x20;
+
+B. Field-Level Access (Sensitive Data Exposure)&#x20;
+
+From:&#x20;
+
+\<fieldPermissions>&#x20;
+
+Flag if:&#x20;
+
+* readable = true for sensitive fields like: &#x20;
+* Contact.Email &#x20;
+* Contact.Phone &#x20;
+* Lead.Email &#x20;
+* Any field matching patterns: &#x20;
+* \*Email\* &#x20;
+* \*Phone\* &#x20;
+* \*SSN\* &#x20;
+* \*Password\* &#x20;
+
+👉 This is your PII exposure condition&#x20;
+
+C. Apex Class Access (Public Logic Exposure)&#x20;
+
+From:&#x20;
+
+\<classAccesses>&#x20;
+
+Flag if:&#x20;
+
+\<enabled>true\</enabled>&#x20;
+
+👉 Especially risky if:&#x20;
+
+* Classes expose: &#x20;
+* @AuraEnabled &#x20;
+* REST endpoints  &#x20;
+
+Parameters should be displayed as below:&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (91).png" alt="" height="165" width="624">
+
+Note: Regarding fields, the functionality should work as PII rule. &#x20;
+
+Value / Purpose&#x20;
+
+* Detects real-world data exposure risks from misconfigured guest access&#x20;
+* Prevents unauthenticated access to sensitive objects and fields&#x20;
+* Ensures secure configuration of Experience Cloud communities&#x20;
+* Reduces risk of public data leaks and compliance violations&#x20;
+* Provides context-aware, high-confidence vulnerability detection&#x20;
+
+Acceptance Criteria&#x20;
+
+Name: Community Guest User Has Excessive Permissions \
+Key: CommunityGuestUserAccess&#x20;
+
+\
+Description: This rule identifies Salesforce Experience Cloud communities that allow guest access and where the associated Guest User Profile has elevated permissions such as object-level permissions (read, create, edit, delete), field-level access to sensitive data, or Apex class access. This may expose sensitive data to unauthenticated users.&#x20;
+
+Type: Vulnerability \
+Severity: Critical \
+Message: Guest user profile has elevated permissions in a community, which may expose sensitive data or allow unauthorized actions.&#x20;
+
+\
+Tags: salesforce, security&#x20;
+
+CWE : 732&#x20;
+
+Remediation: 15 Minutes&#x20;
+
+NOTE:  This is a project level rule.&#x20;
+
+Verification: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:&#x20;
+
+* Rule correctly detects communities with guest access enabled.&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (92).png" alt="" height="405" width="624">
+
+* Flags guest user profiles with elevated object-level permissions (read, create) on standard objects.&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (93).png" alt="" height="350" width="624">
+
+* Flags guest user profiles with elevated object-level permissions (read, create) on custom objects.
+
+<img src="../../../../.gitbook/assets/unknown (94).png" alt="" height="343" width="624">
+
+* Identifies sensitive/PII field-level access (Email, Phone, SSN patterns) on guest profiles.
+
+<img src="../../../../.gitbook/assets/unknown (95).png" alt="" height="344" width="624">
+
+* Detects enabled Apex class access on guest profiles.
+
+<img src="../../../../.gitbook/assets/unknown (96).png" alt="" height="345" width="624">
+
+* Configurable parameters (Sensitive Fields, Include Custom Objects) work as expected.
+
+<img src="../../../../.gitbook/assets/unknown (97).png" alt="" height="346" width="624">
+
+<img src="../../../../.gitbook/assets/unknown (98).png" alt="" height="344" width="624">
+
+* Rule severity correctly classified as Critical Vulnerability.&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (99).png" alt="" height="318" width="624">
+
+* Above scenarios verified with Comparison branch as well, work as expected.
+
+<img src="../../../../.gitbook/assets/unknown (100).png" alt="" height="341" width="624">
+
+* Re-run & Run manual verified regarding the new changes, work as expected.
+
+Notes: &#x20;
+
+* To get the rule triggered correctly make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.&#x20;
+* To give guest users access to the site's APIs, enable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (or Builder > Settings > Public access)&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (101).png" alt="" height="314" width="624">
+
+* To take away guest users access to the site's APIs, disable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (Also verify Builder > Settings > Public access is disabled)&#x20;
+* For custom sensitive/PII field-level access, configure “Filed Name” in the rule parameters. ( Field name and Field label can be different, get field name from sf org)&#x20;
+
+All verification use cases passed successfully, the rule is working as expected, and no issues were reported during verification. &#x20;
+
+Rule Enhancements&#x20;
+
+1. Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}&#x20;
+
+Description&#x20;
+
+Several customers had reported false positives associated with this rule.  Upon analysis, we determined that at the Salesforce level, when parameters are consumed as SOQL bind variables inside a dynamically built query string, these parameters are generally used (and resolved from local scope at runtime).  \
+&#x20;\
+CodeScan was flagging them because its bind-detection only covers the IN :var form passed as a direct argument — not as strings built through the QueryFactory chain.  &#x20;
+
+As such, we enhanced the rule logic to ensure that the rule (sf:UnusedFormalParameter) will not raise a violation when a method parameter is referenced as a SOQL bind variable within a string passed to dynamic SOQL execution.&#x20;
+
+The rule shall recognize bind variable usage for operators such as =, !=, >, <, >=, <=, and IN.&#x20;
+
+Existing support for IN :variable patterns shall remain unchanged.&#x20;
+
+A violation shall still be reported when a method parameter is genuinely unused.&#x20;
+
+We have verified that the rule sf:UnusedFormalParameter no longer raises false positives for formal parameters consumed as SOQL/SOSL bind variables (:var) in dynamic query patterns including fflib\_QueryFactory and Database.query().&#x20;
+
+Fixes&#x20;
+
+1. Fixed grammatical error in CodeScan Project Summary Report&#x20;
+
+Description of issue:  Misspelling in Project Report&#x20;
+
+Details:  When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet".&#x20;
+
+We have updated error message to now display: “There are currently no issues in the project analysis.”&#x20;
+
+We have verified that the error messages have been properly updated to “There are currently no issues in the project analysis.” in the project reports. All reports are working as expected.  &#x20;
+
+1. Verified in the new project’s report&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (102).png" alt="" height="349" width="452">
+
+2. Verified in the old project’s report
+
+<img src="../../../../.gitbook/assets/unknown (103).png" alt="" height="312" width="399">
+
+3. Verified in the scheduled cron job reports&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (104).png" alt="" height="412" width="416">
+
+2. Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations&#x20;
+
+Summary&#x20;
+
+The "Status Marked By" column in the CSV Issue Export is empty when issue statuses are changed via bulk operations (api/issues/bulk\_change). The column works correctly when statuses are changed via single-issue operations (api/issues/do\_transition).&#x20;
+
+Expected Result&#x20;
+
+The "Status Marked By" column should display the name of the user who performed the bulk status change for all affected issues.&#x20;
+
+We analyzed the :Status Marked By” population logic and found that bulk status change records were being skipped due to a startsWith() check. Updated the logic to correctly process bulk change entries and populate the user information.  With this logic change, this issue has been fully remediated.&#x20;
+
+Scenarios Validated:&#x20;
+
+1. Bulk status change to CONFIRMED – "Status Marked By" column correctly populated with the user name&#x20;
+2. Bulk status change to EXCEPTION – Column populated as expected&#x20;
+3. Bulk status change to FALSE\_POSITIVE – Column populated as expected&#x20;
+4. Bulk status change to ACCEPTED – Column populated as expected&#x20;
+5. Mixed bulk + single-issue transitions in same CSV export – Both reflect correct user names&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (105).png" alt="" height="486" width="624">
+
+6. Multiple bulk operations by different users – Each row shows the respective user who performed the action&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (106).png" alt="" height="69" width="624">
+
+<img src="../../../../.gitbook/assets/unknown (107).png" alt="" height="52" width="624">
+
+<img src="../../../../.gitbook/assets/unknown (108).png" alt="" height="72" width="624">
+
+7. Single-issue regression – No regression, column still works correctly for single transitions
+
+<img src="../../../../.gitbook/assets/unknown (109).png" alt="" height="104" width="624">
+
+8. Re-transition after bulk change – "Status Marked By" updates to the latest user
+
+<img src="../../../../.gitbook/assets/unknown (110).png" alt="" height="69" width="624">
+
+<img src="../../../../.gitbook/assets/unknown (111).png" alt="" height="52" width="624">
+
+<img src="../../../../.gitbook/assets/unknown (112).png" alt="" height="72" width="624">
+
+9. Issues with no status change – "Status Marked By" appropriately empty only for untouched issues - OPEN Sate&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (113).png" alt="" height="173" width="624">
+
+Verified the same scenarios with Root level admin, working as expected.\
+Verified the same scenarios with PR, working as expected.
+
+<img src="../../../../.gitbook/assets/unknown (114).png" alt="" height="122" width="624">
+
+\--
+
 ## CodeScan Release Notes 26.0.14
 
 **Release Date: 28 June 2026**

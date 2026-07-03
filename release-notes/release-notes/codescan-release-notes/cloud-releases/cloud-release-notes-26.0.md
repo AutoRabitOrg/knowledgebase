@@ -17,11 +17,11 @@ CodeScan 26.0.15 is comprised of the following 5 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-New Features:&#x20;
+### New Features:&#x20;
 
 1. CodeScan now has “salesforce-project-only” tags for Rules with SF queries&#x20;
 
-Description&#x20;
+**Description**&#x20;
 
 Several CodeScan rules perform queries directly against Salesforce to execute their analysis. These rules require an active Salesforce project connection and cannot be used in a standard static analysis context. To improve discoverability and filterability, the tag salesforce-project-only should be added to each of these rules.&#x20;
 
@@ -41,11 +41,11 @@ The following rules require this tag:&#x20;
 * sfmeta:CheckSystemAdministrator&#x20;
 * sfmeta:CustomProfilesPermission&#x20;
 
-Value&#x20;
+**Value**&#x20;
 
 Users working in non-Salesforce-connected environments are exposed to rules that will never produce valid results for their project type. By tagging these rules with salesforce-project-only, users can quickly filter them in or out of their rule sets, reducing noise and improving the overall rule browsing experience. It also makes it clearer to new users why certain rules may not be firing.&#x20;
 
-Acceptance Criteria&#x20;
+**Acceptance Criteria**&#x20;
 
 * The tag salesforce-project-only is added to all 13 rules listed above.&#x20;
 * The tag appears on the rule detail page for each affected rule in the CodeScan UI.&#x20;
@@ -56,7 +56,7 @@ Acceptance Criteria&#x20;
 
 We have verified that the tag "salesforce-project-only" has been added to all 13 rules, and that the tag is visible, consistent, and filterable in the CodeScan UI. &#x20;
 
-Test Scenarios Validated:&#x20;
+### Test Scenarios Validated:&#x20;
 
 1: Tag presence — All 13 rules have "salesforce-project-only" tag&#x20;
 
@@ -92,21 +92,21 @@ Test Scenarios Validated:&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (90).png" alt="" height="320" width="578">
 
-New Rules:&#x20;
+### New Rules:&#x20;
 
 1. New CodeScan Metadata Rule: “Communities With Guest Access” &#x20;
 
 {Rule ID: sfmeta:CommunityGuestUserAccess"} &#x20;
 
-Description
+**Description**
 
 Identify Salesforce Experience Cloud communities (Network metadata) that allow guest user access and correlate them with associated Guest User Profile metadata to detect excessive permissions (object, field, or Apex access). The rule flags communities where unauthenticated users may access or modify sensitive data.&#x20;
 
-Hypothesis&#x20;
+**Hypothesis**&#x20;
 
 If a community allows guest access and the associated guest user profile has elevated permissions, then sensitive data or functionality may be exposed to unauthenticated users, leading to potential data breaches or unauthorized actions.&#x20;
 
-EXACT CONDITIONS TO FLAG &#x20;
+### EXACT CONDITIONS TO FLAG &#x20;
 
 A. Object-Level Permissions &#x20;
 
@@ -172,7 +172,7 @@ Parameters should be displayed as below:&#x20;
 
 Note: Regarding fields, the functionality should work as PII rule. &#x20;
 
-Value / Purpose&#x20;
+**Value / Purpose**&#x20;
 
 * Detects real-world data exposure risks from misconfigured guest access&#x20;
 * Prevents unauthenticated access to sensitive objects and fields&#x20;
@@ -199,7 +199,9 @@ CWE : 732&#x20;
 
 Remediation: 15 Minutes&#x20;
 
+{% hint style="info" %}
 NOTE:  This is a project level rule.&#x20;
+{% endhint %}
 
 Verification: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:&#x20;
 
@@ -239,7 +241,7 @@ Verification: We have verified the new Salesforce Metadata rule "CommunityGuestU
 
 * Re-run & Run manual verified regarding the new changes, work as expected.
 
-Notes: &#x20;
+**Notes**: &#x20;
 
 * To get the rule triggered correctly make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.&#x20;
 * To give guest users access to the site's APIs, enable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (or Builder > Settings > Public access)&#x20;
@@ -251,7 +253,7 @@ Notes: &#x20;
 
 All verification use cases passed successfully, the rule is working as expected, and no issues were reported during verification. &#x20;
 
-Rule Enhancements&#x20;
+### Rule Enhancements&#x20;
 
 1. Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}&#x20;
 
@@ -271,7 +273,7 @@ A violation shall still be reported when a method parameter is genuinely unused.
 
 We have verified that the rule sf:UnusedFormalParameter no longer raises false positives for formal parameters consumed as SOQL/SOSL bind variables (:var) in dynamic query patterns including fflib\_QueryFactory and Database.query().&#x20;
 
-Fixes&#x20;
+### Fixes&#x20;
 
 1. Fixed grammatical error in CodeScan Project Summary Report&#x20;
 
@@ -297,11 +299,11 @@ We have verified that the error messages have been properly updated to “There 
 
 2. Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations&#x20;
 
-Summary&#x20;
+**Summary**&#x20;
 
 The "Status Marked By" column in the CSV Issue Export is empty when issue statuses are changed via bulk operations (api/issues/bulk\_change). The column works correctly when statuses are changed via single-issue operations (api/issues/do\_transition).&#x20;
 
-Expected Result&#x20;
+**Expected Result**&#x20;
 
 The "Status Marked By" column should display the name of the user who performed the bulk status change for all affected issues.&#x20;
 
@@ -346,7 +348,7 @@ Verified the same scenarios with PR, working as expected.
 
 <img src="../../../../.gitbook/assets/unknown (114).png" alt="" height="122" width="624">
 
-\--
+***
 
 ## CodeScan Release Notes 26.0.14
 

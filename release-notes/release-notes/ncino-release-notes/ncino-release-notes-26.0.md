@@ -2,6 +2,18 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+### Release Notes — nCino + DL 26.3.1 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+
+**Release Date: 05 June 2026**
+
+#### nCino CI Job Failure Due to DynamoDB Throughput Error
+
+Fixed an issue where nCino CI job builds failed with a DynamoDB throughput capacity error during build status updates. The system now handles DynamoDB auto-scaling scenarios gracefully, preventing job failures under high-throughput conditions.
+
+#### Feature Version Creation Error Fix
+
+Resolved an error where creating a new version for an existing feature failed with the message _"No feature with name \[Feature Name]-."_ The feature versioning flow now correctly identifies and resolves the feature name, allowing new versions to be created without errors.
+
 ### Release Notes — nCino + DL 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
 
 **Release Date: 28 June 2026**

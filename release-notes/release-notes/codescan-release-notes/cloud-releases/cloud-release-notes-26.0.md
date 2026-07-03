@@ -180,7 +180,7 @@ Note: Regarding fields, the functionality should work as PII rule. &#x20;
 * Reduces risk of public data leaks and compliance violations&#x20;
 * Provides context-aware, high-confidence vulnerability detection&#x20;
 
-Acceptance Criteria&#x20;
+**Acceptance Criteria**&#x20;
 
 Name: Community Guest User Has Excessive Permissions \
 Key: CommunityGuestUserAccess&#x20;

@@ -17,7 +17,7 @@ CodeScan 26.0.15 is comprised of the following 5 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### New Features:&#x20;
+### New Features
 
 1. **CodeScan now has “salesforce-project-only” tags for Rules with SF queries**&#x20;
 
@@ -56,7 +56,7 @@ Users working in non-Salesforce-connected environments are exposed to rules that
 
 We have verified that the tag "salesforce-project-only" has been added to all 13 rules, and that the tag is visible, consistent, and filterable in the CodeScan UI. &#x20;
 
-### Test Scenarios Validated:&#x20;
+#### Test Scenarios Validated:&#x20;
 
 1: Tag presence — All 13 rules have "salesforce-project-only" tag&#x20;
 
@@ -92,7 +92,7 @@ We have verified that the tag "salesforce-project-only" has been added to all 13
 
 <img src="../../../../.gitbook/assets/unknown (90).png" alt="" height="320" width="578">
 
-### New Rules:&#x20;
+### New Rules&#x20;
 
 1. **New CodeScan Metadata Rule: “Communities With Guest Access”** &#x20;
 
@@ -106,7 +106,7 @@ Identify Salesforce Experience Cloud communities (Network metadata) that allow g
 
 If a community allows guest access and the associated guest user profile has elevated permissions, then sensitive data or functionality may be exposed to unauthenticated users, leading to potential data breaches or unauthorized actions.&#x20;
 
-### EXACT CONDITIONS TO FLAG &#x20;
+#### EXACT CONDITIONS TO FLAG &#x20;
 
 A. Object-Level Permissions &#x20;
 
@@ -200,7 +200,7 @@ CWE : 732&#x20;
 Remediation: 15 Minutes&#x20;
 
 {% hint style="info" %}
-NOTE:  This is a project level rule.&#x20;
+NOTE:  This is a project-level rule.&#x20;
 {% endhint %}
 
 **Verification**: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:&#x20;
@@ -239,11 +239,11 @@ NOTE:  This is a project level rule.&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (100).png" alt="" height="341" width="624">
 
-* Re-run & Run manual verified regarding the new changes, work as expected.
+* Re-run & Run manual verified regarding the new changes, both work as expected.
 
 **Notes**: &#x20;
 
-* To get the rule triggered correctly make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.&#x20;
+* To get the rule triggered correctly, make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.&#x20;
 * To give guest users access to the site's APIs, enable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (or Builder > Settings > Public access)&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (101).png" alt="" height="314" width="624">
@@ -255,7 +255,7 @@ All verification use cases passed successfully, the rule is working as expected,
 
 ### Rule Enhancements&#x20;
 
-1. Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}&#x20;
+1. **Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}**&#x20;
 
 **Description**&#x20;
 
@@ -275,29 +275,29 @@ We have verified that the rule sf:UnusedFormalParameter no longer raises false p
 
 ### Fixes&#x20;
 
-1. Fixed grammatical error in CodeScan Project Summary Report&#x20;
+1. **Fixed grammatical error in CodeScan Project Summary Report**&#x20;
 
-Description of issue:  Misspelling in Project Report&#x20;
+**Description of issue:**  Misspelling in Project Report&#x20;
 
-Details:  When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet".&#x20;
+**Details**:  When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet".&#x20;
 
 We have updated error message to now display: “There are currently no issues in the project analysis.”&#x20;
 
 We have verified that the error messages have been properly updated to “There are currently no issues in the project analysis.” in the project reports. All reports are working as expected.  &#x20;
 
-1. Verified in the new project’s report&#x20;
+* Verified in the new project’s report&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (102).png" alt="" height="349" width="452">
 
-2. Verified in the old project’s report
+* Verified in the old project’s report
 
 <img src="../../../../.gitbook/assets/unknown (103).png" alt="" height="312" width="399">
 
-3. Verified in the scheduled cron job reports&#x20;
+* Verified in the scheduled cron job reports&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (104).png" alt="" height="412" width="416">
 
-2. Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations&#x20;
+2. **Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations**&#x20;
 
 **Summary**&#x20;
 
@@ -307,7 +307,7 @@ The "Status Marked By" column in the CSV Issue Export is empty when issue status
 
 The "Status Marked By" column should display the name of the user who performed the bulk status change for all affected issues.&#x20;
 
-We analyzed the :Status Marked By” population logic and found that bulk status change records were being skipped due to a startsWith() check. Updated the logic to correctly process bulk change entries and populate the user information.  With this logic change, this issue has been fully remediated.&#x20;
+We analyzed the "Status Marked By” population logic and found that bulk status change records were being skipped due to a startsWith() check. Updated the logic to correctly process bulk change entries and populate the user information. With this logic change, this issue has been fully remediated.&#x20;
 
 **Scenarios Validated:**&#x20;
 
@@ -339,11 +339,11 @@ We analyzed the :Status Marked By” population logic and found that bulk status
 
 <img src="../../../../.gitbook/assets/unknown (112).png" alt="" height="72" width="624">
 
-9. Issues with no status change – "Status Marked By" appropriately empty only for untouched issues - OPEN Sate&#x20;
+9. Issues with no status change – "Status Marked By" appropriately empty only for untouched issues - OPEN Status&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (113).png" alt="" height="173" width="624">
 
-Verified the same scenarios with Root level admin, working as expected.\
+Verified the same scenarios with Root-level admin, working as expected.\
 Verified the same scenarios with PR, working as expected.
 
 <img src="../../../../.gitbook/assets/unknown (114).png" alt="" height="122" width="624">

@@ -1,11 +1,11 @@
-# VS Code Extension - Rules Playground
+# Rules Playground
 
 Rules Playground is a tool for quick and easy development of **`Custom Rules`**
 
 {% hint style="warning" %}
 Before analyzing the source code in VS Code, make sure you have
 
-* Installed and configured the [IZ Scan Extension](install-vs-code-extension-desktop.md).
+* Installed and configured the [IZ Scan Extension](../installation/desktop-version.md).
 * Purchased a valid license or generated a trial license for IZ Scan.
 {% endhint %}
 
@@ -37,7 +37,7 @@ Before analyzing the source code in VS Code, make sure you have
 8. API - Custom rule for APIs (i.e. RAML or OAS specs)
    1.  **`Rule Definition`** - Groovy definition for the custom rule
 
-       <figure><img src="../../../../../.gitbook/assets/custom-rules-editor-vs.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../../.gitbook/assets/custom-rules-editor-vs.png" alt=""><figcaption></figcaption></figure>
 
 ### Evaluating Custom Rule:
 
@@ -45,10 +45,10 @@ Before analyzing the source code in VS Code, make sure you have
 2. Custom rule will be applied on the current project and results will be displayed in **`Evaluation Results`** section
 3.  Results in case of valid rule definition
 
-    <figure><img src="../../../../../.gitbook/assets/custom-rules-eval-results-vs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/custom-rules-eval-results-vs.png" alt=""><figcaption></figcaption></figure>
 4.  Results in case of syntax errors in the rule definition
 
-    <figure><img src="../../../../../.gitbook/assets/custom-rules-eval-results-error-vs.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/custom-rules-eval-results-error-vs.png" alt=""><figcaption></figcaption></figure>
 
 ### Publishing Custom Rule:
 
@@ -64,5 +64,5 @@ Before publishing a custom rule, make sure you have:
    1. **`Key`** - Unique key for the custom rule. The key will be auto-populated, which can be changed if there are any conflicts
    2.  **`Description`** - Description of the rule. Markdown syntax can be used to describe the rule
 
-       <figure><img src="../../../../../.gitbook/assets/custom-rules-publish-vs.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../../.gitbook/assets/custom-rules-publish-vs.png" alt=""><figcaption></figcaption></figure>
 3. Click on **`Publish Rule`** to upload the rule to the configured server. The rule will be activated in the selected Quality Profile.

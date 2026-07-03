@@ -20,6 +20,6 @@ IZ Scan is a powerful code analysis tool for VS Code, empowering developers to e
 
 ### See Also
 
-* [Install IZ Scan for Desktop](install-vs-code-extension-desktop.md)
-* [IZ Analyzer Configuration](analyzer-configuration.md)
-* [IZ Scan Extension Configuration](iz-scan-extension-configuration.md)
+* [Install IZ Scan for Desktop](installation/desktop-version.md)
+* [IZ Analyzer Configuration](configuration/iz-analyzer.md)
+* [IZ Scan Extension Configuration](configuration/iz-scan-extension.md)

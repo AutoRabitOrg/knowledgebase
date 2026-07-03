@@ -23,11 +23,11 @@ Java installation will be checked in the following order, and if none of them ar
 
 1.  If a valid version of Java is not found from any of the above steps, a prompt will be shown to install the required Java version.
 
-    <figure><img src="../../../../../.gitbook/assets/install_jre.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/install_jre.png" alt=""><figcaption></figcaption></figure>
 2. Click on "Install" to proceed with the Java installation, and once completed, restart the Visual Studio instance.
 
 ### See Also
 
-* [Install IZ Scan for Desktop](install-vs-code-extension-desktop.md)
-* [Install IZ Scan for Cloud](install-vs-code-extension-cloud.md)
-* [IZ Analyzer Configuration](analyzer-configuration.md)
+* [Install IZ Scan for Desktop](desktop-version.md)
+* [Install IZ Scan for Cloud](cloud-version.md)
+* [IZ Analyzer Configuration](../configuration/iz-analyzer.md)

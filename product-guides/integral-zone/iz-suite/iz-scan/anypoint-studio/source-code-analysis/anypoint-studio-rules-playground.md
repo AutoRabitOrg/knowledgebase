@@ -68,4 +68,4 @@ Before publishing a custom rule, make sure you have:
 ### See Also
 
 * [On The Fly Results](anypoint-studio-analysis.md)
-* [Source Code Analysis - Auto Fix Issues](../../vs-code-extension/autofix.md)
+* [Source Code Analysis - Auto Fix Issues](../../vs-code-extension/source-code-analysis/autofix.md)

@@ -10,5 +10,5 @@
 
 ### See Also
 
-* [Install IZ Scan for Cloud](../vs-code-extension/install-vs-code-extension-cloud.md)
-* [Install IZ Scan for Desktop](../vs-code-extension/install-vs-code-extension-desktop.md)
+* [Install IZ Scan for Cloud](../vs-code-extension/installation/cloud-version.md)
+* [Install IZ Scan for Desktop](../vs-code-extension/installation/desktop-version.md)

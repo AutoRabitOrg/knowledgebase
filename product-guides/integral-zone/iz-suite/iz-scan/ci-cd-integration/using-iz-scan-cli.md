@@ -60,6 +60,6 @@ If the system from which the projects are analyzed is configured with a proxy, t
 ### See Also
 
 * [Mule Code Coverage](page-2.md)
-* [Install IZ Scan for Cloud](../vs-code-extension/install-vs-code-extension-cloud.md)
-* [Install IZ Scan for Desktop](../vs-code-extension/install-vs-code-extension-desktop.md)
+* [Install IZ Scan for Cloud](../vs-code-extension/installation/cloud-version.md)
+* [Install IZ Scan for Desktop](../vs-code-extension/installation/desktop-version.md)
 * [Aborting Builds](terminate-build.md)

@@ -59,6 +59,16 @@ Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notif
 
 ***
 
+## DataLoader & DataLoader Pro Release Notes **26.3.1**
+
+**Release Date:** **05 June 2026**
+
+#### Query Editor Workflow for Dynamic and Custom Queries – DL & DL PRO
+
+The Query Editor in DataLoader Basic and DataLoader Pro now supports two modes: **Query Builder Mode** (build queries using field selections, filters, and order-by options) and **Manual Query Edit Mode** (edit queries directly in the text editor). Users can seamlessly switch between modes with clear confirmation prompts, and the system correctly manages state transitions to prevent conflicts between manual edits and dynamic query generation.
+
+***
+
 ## ARM **Release Notes 26.2.13**
 
 **Release Date: 28 June 2026**

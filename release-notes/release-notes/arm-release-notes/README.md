@@ -1,10 +1,10 @@
 # ARM Release Notes
 
-### ARM **Release Notes 26.3.1**
+## ARM **Release Notes 26.3.1**
 
-**Release Date: 5th July 2026**
+**Release Date: 5 July 2026**
 
-### Backup-Enabled Validation Metadata Retrieval Fix <a href="#backup-enabled-validation-metadata-retrieval-fix" id="backup-enabled-validation-metadata-retrieval-fix"></a>
+#### Backup-Enabled Validation Metadata Retrieval Fix <a href="#backup-enabled-validation-metadata-retrieval-fix" id="backup-enabled-validation-metadata-retrieval-fix"></a>
 
 Fixed an issue where Validate Only deployments with Backup enabled could fail due to additional metadata retrieval during the backup flow. The backup metadata retrieval process has been improved to correctly handle validation scenarios and avoid unnecessary failures when deployment components are limited to selected metadata.
 
@@ -12,7 +12,7 @@ Fixed an issue where Validate Only deployments with Backup enabled could fail du
 
 * Deployment Module
 
-### Branch Unregistration Improvements <a href="#branch-unregistration-improvements" id="branch-unregistration-improvements"></a>
+#### Branch Unregistration Improvements <a href="#branch-unregistration-improvements" id="branch-unregistration-improvements"></a>
 
 Improved the branch unregistration process to ensure branch-related records are cleaned up correctly during synchronization. The update enhances multi-branch unregistration handling, removes stale branch mapping data, and improves logging to provide more accurate status reporting and consistent behavior across branch synchronization workflows.
 
@@ -21,7 +21,7 @@ Improved the branch unregistration process to ensure branch-related records are 
 * Version Control Repository Settings
 * Sync Branches
 
-### Apache Tomcat 11.0.22 Upgrade <a href="#apache-tomcat-11.0.22-upgrade" id="apache-tomcat-11.0.22-upgrade"></a>
+#### Apache Tomcat 11.0.22 Upgrade <a href="#apache-tomcat-11.0.22-upgrade" id="apache-tomcat-11.0.22-upgrade"></a>
 
 Upgraded Apache Tomcat from **11.0.21** to **11.0.22** across Shared, Dedicated, and On-Prem environments to incorporate the latest security fixes and stability improvements. This update enhances platform security while maintaining compatibility and consistent performance across all deployment models.
 
@@ -31,7 +31,7 @@ Upgraded Apache Tomcat from **11.0.21** to **11.0.22** across Shared, Dedicated,
 * Dedicated Instances
 * On-Prem Deployments
 
-### Permission Set Compare Changes Consistency Fix <a href="#permission-set-compare-changes-consistency-fix" id="permission-set-compare-changes-consistency-fix"></a>
+#### Permission Set Compare Changes Consistency Fix <a href="#permission-set-compare-changes-consistency-fix" id="permission-set-compare-changes-consistency-fix"></a>
 
 Fixed an issue where the **Compare Changes** view did not match the actual changes committed to GitHub when using **Create/Append Revision to Existing Label** in EZ-Commit. Permission Set commit options are now applied consistently throughout the commit workflow, ensuring the Compare Changes view accurately reflects the final commit content.
 
@@ -39,7 +39,7 @@ Fixed an issue where the **Compare Changes** view did not match the actual chang
 
 * EZ-Commit
 
-### CI Job File Changes Retention Fix <a href="#ci-job-file-changes-retention-fix" id="ci-job-file-changes-retention-fix"></a>
+#### CI Job File Changes Retention Fix <a href="#ci-job-file-changes-retention-fix" id="ci-job-file-changes-retention-fix"></a>
 
 Fixed an issue where the **File Changes** tab in CI Job history could appear empty after historical CI Job data was cleaned up. The retention process has been updated to preserve the required file difference information, ensuring deployed file changes remain available for supported CI Job history records.
 
@@ -47,7 +47,7 @@ Fixed an issue where the **File Changes** tab in CI Job history could appear emp
 
 * CI Jobs
 
-### Microsoft Teams Workflows Webhook Support <a href="#microsoft-teams-workflows-webhook-support" id="microsoft-teams-workflows-webhook-support"></a>
+#### Microsoft Teams Workflows Webhook Support <a href="#microsoft-teams-workflows-webhook-support" id="microsoft-teams-workflows-webhook-support"></a>
 
 Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notifications to continue working as Microsoft phases out traditional Incoming Webhooks. ARM can now deliver deployment and system notifications using the new Teams Workflows integration, helping customers transition seamlessly to Microsoft's supported notification model.
 
@@ -278,9 +278,9 @@ Fixed an issue where Custom Admins could not view or approve commit labels creat
 
 ***
 
-## DataLoader Pro Release Notes – Version **26.2.11**
+## DataLoader Pro Release Notes **26.2.11**
 
-**Release Date:** **14 Jun 2026**
+**Release Date:** **14 June 2026**
 
 #### DL Data Retention Policy Fix <a href="#dt-13273-ncino-and-dl-data-retention-policy-fix" id="dt-13273-ncino-and-dl-data-retention-policy-fix"></a>
 
@@ -496,7 +496,7 @@ Added support for the `AiAuthoringBundle` metadata type across ARM metadata oper
 
 ***
 
-## DataLoader Pro Release Notes – Version **26.2.7**
+## DataLoader Pro Release Notes **26.2.7**
 
 **Release Date:** **17 May 2026**
 
@@ -626,6 +626,8 @@ Customers experienced the following error in ARM UI popup messages and logs when
 
 Upgraded Salesforce Metadata API libraries to version 67 to support Salesforce Summer ’26 API response changes and ensure accurate deployment and validation status reporting.
 
+***
+
 ## ARM **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
 
 **Release Date: 3 May 2026**
@@ -697,7 +699,7 @@ Admin – Search & Substitute, CI Jobs, Deployment Configuration
 
 ***
 
-## DataLoader Pro Release Notes – Version **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## DataLoader Pro Release Notes **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
 
 **Release Date:** **03 May 2026**
 
@@ -831,7 +833,7 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-## DataLoader Release Notes – Version 26.2.4
+## DataLoader Release Notes 26.2.4
 
 **Release Date: 26 April 2026**
 
@@ -839,7 +841,7 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-## DataLoader Release Notes – Version 26.2.3
+## DataLoader Release Notes 26.2.3
 
 **Release Date: 26 April 2026**
 
@@ -937,8 +939,6 @@ These enhancements enable automatic synchronization of Work Item statuses during
 
 **Release Date: 05 April 2026**
 
-
-
 1. **Custom Setting Migration Template – Save Confirmation Pop-up Fix (New UI) \[SupportCase#205885]**\
    Fixed an issue where newly provisioned data values were not displayed in the Save confirmation pop-up while creating or editing a Custom Setting migration template in the New UI. This prevented users from verifying configuration details before saving.\
    This issue was limited to the New UI and did not impact the Old UI.\
@@ -987,7 +987,7 @@ These enhancements enable automatic synchronization of Work Item statuses during
 
 ***
 
-## DataLoader Pro Release Notes – Version 26.2.1 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## DataLoader Pro Release Notes 26.2.1 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **05 April 2026**
 
@@ -995,7 +995,9 @@ These enhancements enable automatic synchronization of Work Item statuses during
 
 Fixed DataLoader Pro in the new UI so invalid CSV input is correctly validated and flagged.
 
-## DataLoader Release Notes – Version 26.2.1
+***
+
+## DataLoader Release Notes 26.2.1
 
 **Release Date:** **05 April 2026**
 
@@ -1009,7 +1011,7 @@ Fixed DataLoader extract job editing so fields and the saved query now load corr
 
 ***
 
-## **ARM Release Notes – Version 26.1.13**
+## **ARM Release Notes 26.1.13**
 
 **Release Date: 29 March 2026**
 
@@ -1089,7 +1091,7 @@ EZ Commit, EZ Merge, CI Jobs, Deployments
 
 ***
 
-## DataLoader Pro Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## DataLoader Pro Release Notes 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **29 March 2026**
 
@@ -1097,7 +1099,9 @@ EZ Commit, EZ Merge, CI Jobs, Deployments
 
 Resolved an issue where pagination did not function correctly after fetching objects in DataLoader Pro job configuration. Pagination now works as expected when navigating through master objects.
 
-## DataLoader Release Notes – Version 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+***
+
+## DataLoader Release Notes 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **29 March 2026**
 
@@ -1107,7 +1111,7 @@ Fixed an issue where multiple jobs could be triggered for the same org without p
 
 ***
 
-## Release Notes – Version 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## ARM Release Notes 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
 
 **Release Date:** **22 March 2026**
 
@@ -1230,9 +1234,11 @@ Version Control\
 Deployments\
 CI Jobs
 
-## Data Loader Pro - Release Notes - Version 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+***
 
-Release Date: 22 March 2026
+## Data Loader Pro Release Notes 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+
+**Release Date: 22 March 2026**
 
 **Flexible Result File Downloads**\
 Users can now download Dataloader Pro job results in their preferred file format, making it easier to consume and share output data. This enhancement allows teams to align exports with their reporting standards or downstream tools without needing manual conversions after download.
@@ -1243,9 +1249,11 @@ Default column configurations have been introduced and corrected across Dataload
 **Correct Status for Aborted DL Pro Jobs**\
 Aborted DL Pro jobs from the old UI now show an accurate status instead of incorrectly appearing as “Failed” in both the old and new interfaces. This fix improves the reliability of job status reporting, enabling teams to distinguish between genuine failures and intentional aborts, and to analyze actual failure trends more accurately.
 
-## DataLoader - Release Notes - Version 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+***
 
-Release Date: 22 March 2026
+## DataLoader Release Notes 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+
+**Release Date: 22 March 2026**
 
 **Accurate Count(id) in DL Basic Extract**\
 The Count(id) column now correctly displays record counts in the new UI for DL Basic Extract jobs. Earlier, the column appeared empty in the new UI while still showing values in the old UI, leading to confusion and forcing users to cross-check between interfaces. The fix aligns both UIs so users can confidently rely on the new interface for record counts.
@@ -1255,7 +1263,7 @@ The Count(id) column now correctly displays record counts in the new UI for DL B
 
 ***
 
-## Release Notes – Version 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+## ARM Release Notes 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
 
 **Release Date:** **15 March 2026**
 
@@ -1375,7 +1383,7 @@ Version Control → Repository Registration (GitHub OAuth)
 
 ***
 
-## DataLoader Pro - 26.1.11 Release Notes
+## DataLoader Pro Release Notes 26.1.11&#x20;
 
 **Release Date: 15 March 2026**
 
@@ -1385,7 +1393,7 @@ An issue was resolved where the **success count and error count** were displayed
 
 ***
 
-## DataLoader - 26.1.11 Release Notes
+## DataLoader Release Notes 26.1.11&#x20;
 
 **Release Date: 15 March 2026**
 
@@ -1403,7 +1411,7 @@ An issue was addressed in **DataLoader** where running aggregate SOQL queries re
 
 ***
 
-## Release Notes – Version 26.1.10
+## ARM Release Notes 26.1.10
 
 **Release Date: 08 March 2026**
 
@@ -1416,7 +1424,7 @@ Deployments, CI Jobs
 
 ***
 
-## DataLoader Pro - 26.1.10 Release Notes
+## DataLoader Pro Release Notes 26.1.10&#x20;
 
 **Release Date: 08 March 2026**
 
@@ -1428,7 +1436,7 @@ The migration logic has been updated to correctly handle **self-referential pare
 
 ***
 
-## Release Notes – Version 26.1.9
+## ARM Release Notes 26.1.9
 
 **Release Date: 01 March 2026**
 
@@ -1500,7 +1508,7 @@ ARM now supports OAuth via External Client App (ECA) as a modern Salesforce auth
 * Encrypted token storage
 * Token lifecycle management
 * Re-authentication support with editable **Consumer ID** and **Consumer Key**
-* Please use the link below for Step by Step guidance
+* Please use the link below for Step-by-Step guidance
 * [https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca)
 
 #### Migration Support
@@ -1523,7 +1531,7 @@ The save logic has been corrected to ensure the Org association remains intact a
 
 ***
 
-## Data Loader Pro - 26.1.9 Release Notes
+## DataLoader Pro Release Notes 26.1.9&#x20;
 
 **Release Date: 01 March 2026**
 
@@ -1537,7 +1545,7 @@ With this fix, only the objects selected during configuration will be processed 
 
 ***
 
-### Release Notes – Version 26.1.8 <a href="#release-notes-version-26.1.8" id="release-notes-version-26.1.8"></a>
+## ARM Release Notes 26.1.8 <a href="#release-notes-version-26.1.8" id="release-notes-version-26.1.8"></a>
 
 **Release Date: 22 February 2026**
 

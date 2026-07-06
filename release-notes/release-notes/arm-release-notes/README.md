@@ -1,5 +1,17 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.3.1.1**
+
+**Release Date: 6th July 2026**
+
+### SSO Login Redirection Fix
+
+Fixed an issue that prevented users from logging in through Single Sign-On (SSO) due to an overly restrictive Content Security Policy (CSP). The SSO redirection flow has been updated to allow successful authentication and seamless redirection to the configured identity provider.
+
+**Impacted Areas:**
+
+* SSO Authentication
+
 ## ARM **Release Notes 26.3.1**
 
 **Release Date: 5 July 2026**

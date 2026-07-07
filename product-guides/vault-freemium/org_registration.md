@@ -20,34 +20,23 @@ After the source org is registered successfully, Vault displays the connected or
 
 The source org registration starts from the Vault Dashboard. When registration begins, Vault opens the Source Org Registration workflow and displays the Environment Details step. A guided callout introduces the setup and explains that the first Salesforce org must be connected before Vault activities such as backups, restores, replication, and related operations can proceed.
 
-_Source Org Registration begins from the Vault Dashboard (1.png)_
-
 ![](<../../.gitbook/assets/Unknown image (252)>)
 
 The Environment Details step captures the basic Salesforce environment information. The Environment Name identifies the org across Vault activities. The Salesforce username identifies the account used for registration. Org Type defines whether the connection targets a Production org or a Sandbox org.
 
 After the org type is selected, the Salesforce Login URL is reviewed. For Sandbox connections, the sandbox login URL is used by default. If the Salesforce org uses a custom domain, the login URL is updated to match the custom domain. The Salesforce API Version is then selected from the available list. The latest supported API version is preferred unless a specific compatibility requirement applies.
 
-| \*\*Note:\*\*The login URL must point to the same Salesforce environment where the External Client App is configured. A mismatch can prevent successful authorization. |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-_Environment Details are reviewed before continuing the registration (2.png)_
+{% hint style="info" %}
+**Note:** The login URL must point to the same Salesforce environment where the External Client App is configured. A mismatch can prevent successful authorization.
+{% endhint %}
 
 ![](<../../.gitbook/assets/Unknown image (253)>)
 
-_Environment Details are reviewed before continuing the registration (3.png)_
-
 ![](<../../.gitbook/assets/Unknown image (254)>)
-
-_Environment Details are reviewed before continuing the registration (4.png)_
 
 ![](<../../.gitbook/assets/Unknown image (255)>)
 
-_Environment Details are reviewed before continuing the registration (5.png)_
-
 ![](<../../.gitbook/assets/Unknown image (256)>)
-
-_Environment Details are reviewed before continuing the registration (6.png)_
 
 ![](<../../.gitbook/assets/Unknown image (257)>)
 
@@ -57,38 +46,23 @@ Vault displays the Callback URL directly in the workflow. The value is copied us
 
 The Required OAuth Scopes section identifies the permissions that must be selected in Salesforce. These scopes allow Vault to access identity information, use Salesforce APIs, use browser-based OAuth authorization, access the connected org, and perform requests when needed after the initial login.
 
-| \*\*Note:\*\*The Salesforce setup must be completed before authorization starts. The Callback URL, OAuth scopes, Client ID, and Client Secret must match the External Client App configuration in Salesforce. |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-_Salesforce Admin Setup continues through External Client App configuration (7.png)_
+{% hint style="info" %}
+**Note:** The Salesforce setup must be completed before authorization starts. The Callback URL, OAuth scopes, Client ID, and Client Secret must match the External Client App configuration in Salesforce.
+{% endhint %}
 
 ![](<../../.gitbook/assets/Unknown image (258)>)
 
-_Salesforce Admin Setup continues through External Client App configuration (8.png)_
-
 ![](<../../.gitbook/assets/Unknown image (259)>)
-
-_Salesforce Admin Setup continues through External Client App configuration (9.png)_
 
 ![](<../../.gitbook/assets/Unknown image (260)>)
 
-_Salesforce Admin Setup continues through External Client App configuration (10.png)_
-
 ![](<../../.gitbook/assets/Unknown image (261)>)
-
-_Salesforce Admin Setup continues through External Client App configuration (11.png)_
 
 ![](<../../.gitbook/assets/Unknown image (262)>)
 
-_Salesforce Admin Setup continues through External Client App configuration (12.png)_
-
 ![](<../../.gitbook/assets/Unknown image (263)>)
 
-_Salesforce Admin Setup continues through External Client App configuration (13.png)_
-
 ![](<../../.gitbook/assets/Unknown image (264)>)
-
-_Salesforce Admin Setup continues through External Client App configuration (14.png)_
 
 ![](<../../.gitbook/assets/Unknown image (265)>)
 
@@ -96,14 +70,11 @@ Once the Salesforce setup is complete, Vault displays the Enter Credentials step
 
 Vault also displays guidance for locating the required values in Salesforce. The Client ID and Client Secret are available from the External Client App details after the consumer credentials are revealed in Salesforce.
 
-| \*\*Note:\*\*A dedicated Salesforce integration account is recommended for API integrations. This provides better audit trails, permission control, and stability when personal accounts change. |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-
-_The Client ID and Client Secret are entered before authorization starts (15.png)_
+{% hint style="info" %}
+**Note**: A dedicated Salesforce integration account is recommended for API integrations. This provides better audit trails, permission control, and stability when personal accounts change
+{% endhint %}
 
 ![](<../../.gitbook/assets/Unknown image (266)>)
-
-_The Client ID and Client Secret are entered before authorization starts (16.png)_
 
 ![](<../../.gitbook/assets/Unknown image (267)>)
 
@@ -111,19 +82,11 @@ After the credentials are added, Vault displays the Authorize Vault to Access Sa
 
 Selecting Connect to Salesforce redirects to the Salesforce login page. Salesforce handles authentication directly. After successful login, Salesforce displays the access request for the External Client App. Selecting Allow grants the required permissions and redirects the session back to Vault automatically.
 
-_Salesforce authorization is completed before Vault returns to the registration workflow (17.png)_
-
 ![](<../../.gitbook/assets/Unknown image (28)>)
-
-_Salesforce authorization is completed before Vault returns to the registration workflow (18.png)_
 
 ![](<../../.gitbook/assets/Unknown image (29)>)
 
-_Salesforce authorization is completed before Vault returns to the registration workflow (19.png)_
-
 ![](<../../.gitbook/assets/Unknown image (30)>)
-
-_Salesforce authorization is completed before Vault returns to the registration workflow (20.png)_
 
 ![](<../../.gitbook/assets/Unknown image (31)>)
 
@@ -131,19 +94,11 @@ After Salesforce authorization is approved, Vault completes the Salesforce conne
 
 When the API connection test succeeds, Vault displays a success notification. The Complete action finalizes the registration. Vault then confirms that the Salesforce org is registered successfully and returns to the Dashboard.
 
-_The API connection is tested before completing the source org registration (21.png)_
-
 ![](<../../.gitbook/assets/Unknown image (32)>)
-
-_The API connection is tested before completing the source org registration (22.png)_
 
 ![](<../../.gitbook/assets/Unknown image (33)>)
 
-_The API connection is tested before completing the source org registration (23.png)_
-
 ![](<../../.gitbook/assets/Unknown image (34)>)
-
-_The API connection is tested before completing the source org registration (24.png)_
 
 ![](<../../.gitbook/assets/Unknown image (35)>)
 
@@ -151,27 +106,17 @@ After registration is complete, the Dashboard displays the registered Source Org
 
 The source org details view displays the org name, registered username, org ID, API version, instance URL, environment type, platform, org edition, authentication type, and registration time. These details provide a quick confirmation of the registered Salesforce connection.
 
-_The registered Source Org appears on the Dashboard and details are available for review (25.png)_
-
 ![](<../../.gitbook/assets/Unknown image (36)>)
-
-_The registered Source Org appears on the Dashboard and details are available for review (26.png)_
 
 ![](<../../.gitbook/assets/Unknown image (37)>)
 
-_The registered Source Org appears on the Dashboard and details are available for review (27.png)_
-
 ![](<../../.gitbook/assets/Unknown image (38)>)
-
-_The registered Source Org appears on the Dashboard and details are available for review (Extra / 26.png)_
 
 ![](<../../.gitbook/assets/Unknown image (39)>)
 
 ## Re-Authenticate the Source Org
 
 Vault displays Re-Authenticate beside the registered Source Org. Re-authentication is used when the Salesforce authorization needs to be refreshed, such as after credential changes, permission updates, or authorization issues. Selecting Re-Authenticate redirects to Salesforce login and follows the same authorization pattern used during the initial connection.
-
-_Salesforce authentication starts again when re-authentication is initiated (28.png)_
 
 ![](<../../.gitbook/assets/Unknown image (205)>)
 

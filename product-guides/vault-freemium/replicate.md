@@ -107,7 +107,7 @@ The rule details view displays the saved rule values and selected fields in a re
 
 After the masking rule is reviewed, Next moves the workflow to Config Details.
 
-Masking Rules stage after rule configuration
+<figure><img src="../../.gitbook/assets/image (2576).png" alt=""><figcaption></figcaption></figure>
 
 ## Configure Replicate Details
 

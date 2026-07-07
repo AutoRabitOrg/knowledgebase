@@ -14,15 +14,11 @@ A source org and destination org must be connected before the backup configurati
 
 ![](<../../.gitbook/assets/Unknown image (238)>)
 
-_Dashboard with Backup Configs access_
-
 ## Open the Backup Configuration List
 
 The Backup Configs card opens the Backup Config List. When no configuration exists, the list displays an empty state and provides the Create Config action. This starts the backup configuration workflow.
 
 ![](<../../.gitbook/assets/Unknown image (239)>)
-
-_Backup Config List with Create Config action_
 
 ## Select Objects for Backup
 
@@ -32,8 +28,6 @@ After the required objects are selected, Next moves the workflow to Options. Can
 
 ![](<../../.gitbook/assets/Unknown image (240)>)
 
-_Select Objects step in the Create Backup workflow_
-
 ## Configure Backup Options
 
 The Options step captures the configuration details. Config Label identifies the backup configuration, while Description provides supporting context for the configuration purpose. The Exclude Deleted Records From the backup option controls whether deleted records are excluded from the backup scope.
@@ -42,13 +36,9 @@ Next remains unavailable until the required configuration details are entered. B
 
 ![](<../../.gitbook/assets/Unknown image (241)>)
 
-_Options step before the required details are entered_
-
 Once the required values are provided, Next becomes available. The configuration can then proceed to Review & Run.
 
 ![](<../../.gitbook/assets/Unknown image (242)>)
-
-_Options step after configuration details are completed_
 
 ## Review and Save the Backup Configuration
 
@@ -58,11 +48,7 @@ Save Backup Config saves the configuration. During the save operation, the butto
 
 ![](<../../.gitbook/assets/Unknown image (243)>)
 
-_Review Backup Configuration before saving_
-
 ![](<../../.gitbook/assets/Unknown image (244)>)
-
-_Save Backup Config processing state_
 
 ## Confirm Configuration Creation
 
@@ -70,13 +56,9 @@ After the configuration is saved, Vault returns to the Dashboard. The Backup Con
 
 ![](<../../.gitbook/assets/Unknown image (245)>)
 
-_Dashboard after the backup configuration is created_
-
 Opening the Backup Config List displays the newly created configuration. The list includes the Configuration Name, Config Type, Last Config Status, and available actions. The status confirms whether the configuration creation completed successfully.
 
 ![](<../../.gitbook/assets/Unknown image (246)>)
-
-_Backup Config List with the saved configuration_
 
 ## Result
 

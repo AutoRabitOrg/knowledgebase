@@ -6,8 +6,9 @@
 
 The flow begins after the source org and destination org are registered and authenticated in Vault. The Dashboard displays the connected org indicators at the top of the page, along with the available Vault actions and usage summaries.
 
-| Note: The values displayed for the destination org depend on the connected Salesforce environment and remain specific to the selected org. |
-| ------------------------------------------------------------------------------------------------------------------------------------------ |
+{% hint style="info" %}
+**Note:** The values displayed for the destination org depend on the connected Salesforce environment and remain specific to the selected org.
+{% endhint %}
 
 ## Destination ORG Status on the Dashboard
 
@@ -17,8 +18,6 @@ The rest of the Dashboard continues to show key Vault areas, including Backup Co
 
 ![](<../../.gitbook/assets/Unknown image (236)>)
 
-Dashboard with connected Source Org and Destination ORG indicators
-
 ## Review Destination Org Details
 
 Selecting the Destination ORG indicator opens the Destination org details dialog. The dialog displays the registered destination org information in a read-only view, including Org name, Username, Org ID, API version, Instance URL, Environment type, Platform, Org edition, Auth type, and Registered details.
@@ -26,8 +25,6 @@ Selecting the Destination ORG indicator opens the Destination org details dialog
 This information helps confirm that Vault is connected to the intended destination org before backup, restore, replication, or related data operations proceed. The displayed values reflect the authenticated Salesforce destination org and are not edited from this dialog.
 
 ![](<../../.gitbook/assets/Unknown image (237)>)
-
-Destination org details dialog
 
 ## Close the Details Dialog
 

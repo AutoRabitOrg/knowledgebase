@@ -1,6 +1,6 @@
 # Backup
 
-Vault Backup Job Creation User Guide
+## Vault Backup Job Creation User Guide
 
 _Create and start a backup job from an existing backup configuration_
 
@@ -14,8 +14,6 @@ A source org and backup configuration must already be available. The Backup Jobs
 
 ![](<../../.gitbook/assets/Unknown image (247)>)
 
-Backup Jobs page with the selected org, environment, configuration, and Backup Summary.
-
 ## Create a Backup Job
 
 The Backup module opens on the Backup Jobs page. The page displays the selected Salesforce Org, Environment, and Configurations values at the top of the workspace. The Backup Summary table lists existing backup jobs for the selected configuration. When no backup has been created for the current selection, the table displays an empty state.
@@ -24,13 +22,9 @@ Selecting Backup Now opens the Start Backup dialog. Vault automatically generate
 
 ![](<../../.gitbook/assets/Unknown image (248)>)
 
-Start Backup dialog with the generated Backup Label and selected configuration.
-
 The Configurations field supports selection or confirmation of the backup configuration that must be used for the job. After the configuration is selected, the Data section displays Full Backup as the backup type. The Exclude Deleted Records from Backups option remains available to control whether deleted records are excluded from the backup processing.
 
 ![](<../../.gitbook/assets/Unknown image (249)>)
-
-Start Backup dialog showing Full Backup and the Exclude Deleted Records from Backups option.
 
 ## Start the Backup
 
@@ -38,13 +32,9 @@ Selecting Start Backup submits the backup request. During submission, the Start 
 
 ![](<../../.gitbook/assets/Unknown image (250)>)
 
-Start Backup dialog while the backup request is being submitted.
-
 After the request is accepted, Vault closes the dialog and displays a confirmation notification indicating that the backup has started. The Backup Summary refreshes with the created backup record. The record displays the backup label, configuration name, date and time, expiry date, duration, record count, API calls, data backup indicator, status, and available actions.
 
 ![](<../../.gitbook/assets/Unknown image (251)>)
-
-Backup Summary showing the created backup records and backup started notification.
 
 ## Result
 

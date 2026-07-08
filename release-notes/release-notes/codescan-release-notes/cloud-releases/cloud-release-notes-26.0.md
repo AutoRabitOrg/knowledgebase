@@ -3213,7 +3213,7 @@ This parameter allows to control whether the rule should enforce explicit sharin
 \
 Current Behavior (After Fix):
 
-<figure><img src="../../../../.gitbook/assets/unknown (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 This behavior aligns with the intended design:
 

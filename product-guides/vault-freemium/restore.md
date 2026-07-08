@@ -16,63 +16,63 @@ The restore process also provides review controls, Salesforce automation options
 
 The workflow starts from the Restore module. The Salesforce Orgs and Restore Source fields define the context for the restore list. When no restore jobs are available for the selected criteria, the list displays a No Data state while still keeping restore creation actions available.
 
-![](<../../.gitbook/assets/Unknown image>)
+![](<../../.gitbook/assets/Unknown image (12)>)
 
 After selecting the Salesforce org, restore source, and configuration, Get Details retrieves the available backup records. The backup list displays the label, configuration, date and time, expiry date, record count, type, and status. A backup record is selected before starting a restore action.
 
-![](<../../.gitbook/assets/Unknown image (1)>)
+![](<../../.gitbook/assets/Unknown image (1) (1)>)
 
 ## Start an EZ Restore
 
 EZ Restore is used when the selected backup needs to be restored without manually refining objects, records, or fields. Before the restore summary opens, Vault presents restore considerations that may affect job execution. These include Salesforce automation behavior, metadata size limits, inactive owners, and dependency requirements. Got It confirms the message and continues the restore flow.
 
-![](<../../.gitbook/assets/Unknown image (2)>)
+![](<../../.gitbook/assets/Unknown image (2) (1)>)
 
 The Restore Summary opens with the generated restore label, batch size, email notification recipient, and Salesforce Automations controls. The summary also lists the selected data scope. Automation options allow restore execution to disable or adjust selected Salesforce behaviors during processing, such as workflows, validation rules, triggers, flows, and Bulk API serial mode. Restore Now submits the job.
 
-![](<../../.gitbook/assets/Unknown image (3)>)
+![](<../../.gitbook/assets/Unknown image (3) (1)>)
 
 After submission, Vault starts creating the restore job and displays a processing state. The restore action remains in progress until the job record is created and made available in the restore history list.
 
-![](<../../.gitbook/assets/Unknown image (4)>)
+![](<../../.gitbook/assets/Unknown image (4) (1)>)
 
 Once the restore job is created, Vault displays a confirmation message. OK closes the message and returns to the restore list.
 
-![](<../../.gitbook/assets/Unknown image (5)>)
+![](<../../.gitbook/assets/Unknown image (5) (1)>)
 
 ## Monitor the Restore Job
 
 The restore history list shows the submitted restore job with its label, date and time, duration, success records, failed records, status, and available actions. While the job is running, the status indicator shows progress, and the action area provides job-level options such as summary or log access when available.
 
-![](<../../.gitbook/assets/Unknown image (6)>)
+![](<../../.gitbook/assets/Unknown image (6) (1)>)
 
 As processing continues, the status and action indicators update on the same restore history list. The page can be refreshed to check the latest job state.
 
-![](<../../.gitbook/assets/Unknown image (7)>)
+![](<../../.gitbook/assets/Unknown image (7) (1)>)
 
 When the job completes, the restore history shows the final duration, successful record count, failed record count, and completed status. The completed job remains available for review through the actions column.
 
-![](<../../.gitbook/assets/Unknown image (8)>)
+![](<../../.gitbook/assets/Unknown image (8) (1)>)
 
 ## Start a Selective Restore
 
 Selective Restore begins from the same backup retrieval flow. The backup record is selected, and Selective Restore opens the data selection workflow for controlled restore execution. This option supports a narrower restore scope by object, related objects, records, and fields.
 
-![](<../../.gitbook/assets/Unknown image (9)>)
+![](<../../.gitbook/assets/Unknown image (9) (1)>)
 
 The Data step lists the objects available in the selected backup. The Objects with records toggle limits the list to objects that contain backed-up records. The object row provides controls for schema review, child object inclusion, common child object selection, records, selection criteria, and selected fields. Review and Restore becomes available after the required restore scope is selected.
 
-![](<../../.gitbook/assets/Unknown image (10)>)
+![](<../../.gitbook/assets/Unknown image (10) (1)>)
 
 ## Review Object Relationships
 
 The schema view presents the selected object and its related objects. Search Objects helps locate related objects, and Search Direction controls whether parent, child, or both relationship directions are shown. Related objects can be expanded and selected as needed before saving the relationship selection.
 
-![](<../../.gitbook/assets/Unknown image (11)>)
+![](<../../.gitbook/assets/Unknown image (11) (1)>)
 
 Include All Child Objects marks child object inclusion for the selected object. The Common Child Objects control identifies child objects that can be included as part of the restore scope. These relationship controls help ensure dependent data is available when the restore job runs.
 
-![](<../../.gitbook/assets/Unknown image (12)>)
+![](<../../.gitbook/assets/Unknown image (12) (1)>)
 
 ## Refine Records and Fields
 

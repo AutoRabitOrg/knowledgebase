@@ -25,27 +25,27 @@ To compare a backup with live Salesforce data:
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1) (1)>)
 10. Click on the object to observe the fields in the object.
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1) (1)>)
 11. Click on the field, “Fields To Compare”, to observe the list of fields.
 
-    ![](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1) (1)>)
 
-    ![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1) (1)>)
 12. **The “Clickable Object” and the “Fields To Compare” is useful to specify the fields that should be part of the compare operation.**
     1. **Only the fields selected under these will be part of the compare operation.**&#x43;lick on the “COMPARE” button to initiate the compare operation.
 13.
 
-    ![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1) (1)>)
 14. Clicking compare will show the **“Compare -Save Config”** screen.
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1) (1)>)
 15. Observe the following fields on the screen:
     1. **Label(required field):** Enter a label for the job
     2. **Preserve the result for:** will specify the retention period for the compare results. _**The minimum retention period is for “7 Days” and the maximum retention period for the compare results will be for “30 Days” only.**_
@@ -58,18 +58,18 @@ To compare a backup with live Salesforce data:
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (7) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (7) (1) (1) (1) (1) (1)>)
 21. The recently triggered job will be initially in progress, until the job run is completed.
 22. Once the jobs run is completed successfully, a blue tick”![Tick with solid fill](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAPCAYAAAAyPTUwAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAACQAAAAAQAAAJAAAAABAAKgAgAEAAAAAQAAAAugAwAEAAAAAQAAAA8AAAAA0dUkjgAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAPdJREFUKBVjYBgFJISA284X3A77/7OAtDDh05d87ru8jLDAfAXOT25gxQ3//zOFrrrKhq4p7sI36f8M/ycxMv2XZ2RjegBWfPfEc3U+JaXIpCOveWEa0s580mD+/X/W/3//Of//ZYycb8R7DSTHwsTGz/Xv3590Bk5uneRjH9t/szHp/2ZkbmRg/H+N4S9j6zwzjscwQ1i+GXFd4Dr9ZQIzw/8yRnb2/8z//+gxMPy/8+fP787F5gJwhSANjCAC5O4HJz7YMbNzdf7782sH059/E+da8b8DySEDsGKQAEjD4+sfZH/9FnizWJ/xK7IirGyQBqwSUEEAnmpeCMrHoKEAAAAASUVORK5CYII=)” will be displayed at the status of the triggered job.
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1) (1) (1) (1) (1)>)
 23. Click on the “Compare Label” to navigate to the compare results screen.
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10) (1) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10) (1) (1) (1) (1) (1)>)
 24. **Compare Results – View All Records**
     1. Displays a consolidated list of comparison results for the selected object using the chosen snapshot pair.
     2. Shows _All_ records by default, including unchanged, modified, and deleted entries.
@@ -81,7 +81,7 @@ To compare a backup with live Salesforce data:
 
 
 
-        ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11) (1) (1) (1) (1)>)
+        ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11) (1) (1) (1) (1) (1)>)
     2. Highlights the No Changes filter as selected, narrowing the view to stable or unaffected records.
     3. Provides quick access to view record-level details using the View Records icon.
     4. All action buttons, such as **Fields to Compare, Compare, and Export**, remain available for further analysis.

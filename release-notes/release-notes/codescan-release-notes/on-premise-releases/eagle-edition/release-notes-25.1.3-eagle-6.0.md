@@ -449,7 +449,7 @@ Verified these rules updated by confirming that users are able to see the update
 
 Previously, CodeScan did not raise violations if a method matched the condition:
 
-<figure><img src="../../../../../.gitbook/assets/unknown (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/unknown (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 This exception was originally introduced to reduce noise and was added to our rule logic before Salesforce introduced USER\_MODE. However, with Salesforce’s updated guidance requiring all database operations to consistently enforce permissions, the exemption is no longer valid. Getters can still expose data through bindings, so excluding them would not align with best practices.
 

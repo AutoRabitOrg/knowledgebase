@@ -20,7 +20,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
 
 3. From the Branching Baseline screen, click on New Branching Baseline.
 
-<figure><img src="../../../.gitbook/assets/unknown (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -29,7 +29,7 @@ Components are retrieved and committed from a Salesforce org to a version contro
    2. Select your Salesforce Org as the source of the commit.&#x20;
    3. Select your Repository and Branch to which you would like to commit code.&#x20;
 
-<figure><img src="../../../.gitbook/assets/unknown (1) (1) (1).png" alt="" width="511"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (1) (1) (1) (1).png" alt="" width="511"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** For Version Control registered in the SFDX structure, specify the Source Folder from where the metadata will get fetched. If you cannot view the source folder in the drop-down, the source folder is not listed in the Package Directory under the sfdx-project.json file in your local directory. For a detailed procedure of adding the source folder in the Package Directory, do refer to the article: [Salesforce DX metadata format](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/salesforce-dx/salesforce-dx-metadata-format).
@@ -52,11 +52,11 @@ Components are retrieved and committed from a Salesforce org to a version contro
 **Point to Note:** Branching baseline commits for the SVN repository may take 10 minutes to complete.&#x20;
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/unknown (3) (1) (1).png" alt="" width="500"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (3) (1) (1) (1).png" alt="" width="500"><figcaption></figcaption></figure>
 
 **More Options**
 
-<figure><img src="../../../.gitbook/assets/unknown (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unknown (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Info: This will give information about the Salesforce Org and the Version Control Repository/ Branch selected for the Branching Baseline operation.&#x20;
 2. Revision: View the revision generated at the Version Control along with the filename status. You can even download the report if required.&#x20;

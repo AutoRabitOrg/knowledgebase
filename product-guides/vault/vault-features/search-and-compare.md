@@ -468,7 +468,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (1) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1)>)
 2. Click **Review and Restore**.
 
 #### Restore Guidelines
@@ -477,7 +477,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (2) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1)>)
 2. Click **Got It** to proceed.
 
 #### Restore Summary
@@ -486,7 +486,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (3) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1)>)
 2. Enter the required **Batch Size** (maximum limit 9999).
 3. Select or modify the email notification address if required.
 4. Configure restore options such as disabling workflows, triggers, validation rules, flows, or enabling serial mode.
@@ -499,7 +499,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (4) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1)>)
 2. Review the restore job entry with date, duration, success records, and status.
 3. Monitor the job status until completion.
 
@@ -509,11 +509,11 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (5) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1)>)
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (6) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1)>)
 
 ## Clone Configuration
 
@@ -522,7 +522,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (7) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (7) (1) (1) (1) (1)>)
 
 #### Config Clone Window
 
@@ -531,7 +531,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (8) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (8) (1) (1) (1) (1)>)
 3. Click the **Configurations** dropdown to choose the required configuration(s).
 4. Enter a new **Label** for the cloned configuration.
 5. Click **Clone**.
@@ -542,12 +542,12 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (9) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (9) (1) (1) (1) (1)>)
 2.  On completing the required selections click “CLONE” to initiate the cloning
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (10) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (10) (1) (1) (1) (1)>)
 
 #### Metadata Validation Warning
 
@@ -556,7 +556,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (11) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (11) (1) (1) (1) (1)>)
 3. Click **Confirm** to proceed or **Cancel** to abort the cloning process.
 
 #### Clone Success Message
@@ -565,7 +565,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (12) (1) (1) (1)>)
+    ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (12) (1) (1) (1) (1)>)
 2. Click **OK** to close the message.
 3. Verify the cloned configuration in the destination org by selecting it from the Salesforce Org dropdown and clicking **Apply**.
 

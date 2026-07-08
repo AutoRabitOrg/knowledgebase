@@ -43,7 +43,7 @@ This action opens the **Source Org Integration** setup wizard.
 
 The **Source Org Integration** wizard begins with **Environment Details**.This step captures the basic configuration required to connect the Salesforce environment.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1)>)
 
 Configure the following fields:
 
@@ -58,7 +58,7 @@ Configure the following fields:
 
 After entering the username, select the type of Salesforce environment.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (2) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1)>)
 
 Available options include:
 
@@ -80,7 +80,7 @@ Click **Continue** to proceed.
 
 The next step guides the creation of a **Salesforce External Client App** required for OAuth authentication.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1)>)
 
 Vault displays the configuration steps that must be completed in Salesforce.
 
@@ -101,9 +101,9 @@ Click **I've completed the setup** to continue.
 
 Add the required OAuth scopes in the Salesforce External Client App.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (4) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1)>)
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (5) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1)>)
 
 The following scopes must be enabled:
 
@@ -121,14 +121,14 @@ Any mismatch will result in connection failure.
 
 After completing the Salesforce External Client App configuration, provide the OAuth credentials in Vault.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1)>)
 
 Enter the following details:
 
 * **Client ID** – The Consumer Key generated from the Salesforce External Client App.
 * **Client Secret** – The Consumer Secret generated from the Salesforce External Client App.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (7) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (7) (1) (1) (1)>)
 
 These values are available in Salesforce under the External Client App configuration.
 
@@ -148,9 +148,9 @@ Click **Continue** to proceed to the authorization step.
 
 The **Connect to Salesforce** step initiates the OAuth authorization process.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (8) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (8) (1) (1) (1)>)
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1) (1) (1)>)
 
 Vault displays the connection details for verification:
 
@@ -168,11 +168,11 @@ After clicking **Connect to Salesforce**, the following process occurs:
 
 1. The browser redirects to the Salesforce login page.
 
-![A screenshot of a web page AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10) (1) (1)>)
+![A screenshot of a web page AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (10) (1) (1) (1)>)
 
 1. Authentication occurs using the provided Salesforce credentials.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11) (1) (1) (1)>)
 
 1.  Salesforce displays the permissions requested by Vault.
 

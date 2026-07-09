@@ -19,8 +19,6 @@ No new features, functional enhancements, UI changes, or non-security bug fixes 
 
 This release applies targeted updates to underlying Red Hat Enterprise Linux packages within container images and specific Java/Node.js dependencies across four core platform services. The goal is to maintain a strong security posture and support ongoing compliance requirements for Public Sector customers.
 
-All fixes have been tracked and validated under the JIRA filter `ARMOR_FIXED_VULNS_REL_26.1.6.1` (labels: `PubSec-Vulns`).
-
 ***
 
 ## 2. Scope of Changes

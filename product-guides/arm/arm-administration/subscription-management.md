@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Important Notes**:
 
-* Only the **Registered User** and Team Admins can view the **Subscription Management** page.
+* Only the **Registered User** and **Team Admins** can view the **Subscription Management** page.
 {% endhint %}
 
 ### Subscription Tab Feature Availability
@@ -36,7 +36,7 @@ ARM offers an easy and centralized solution for a **Registered User and ADMIN** 
 ### Adding and Configuring Teams <a href="#adding-and-configuring-teams" id="adding-and-configuring-teams"></a>
 
 {% hint style="info" %}
-The Create Team option will not be visible for customers with fewer than 20 licenses.
+**The Create Team option will not be visible for customers with fewer than 20 licenses.**
 {% endhint %}
 
 This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.

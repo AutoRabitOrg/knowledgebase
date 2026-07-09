@@ -1,41 +1,29 @@
 # Managing Your Subscription
 
-
-
 {% hint style="info" %}
 **Important Notes**:
 
-This article is for the **registered user** in particular. **General users** do not have access to the Subscriptions tab.
-
-* Only the **Registered User** can view the **Subscription Management** page.
-* The **Team Administrator** cannot view the **Subscription Management** page.
-* **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page.
+* Only the **Registered User** and Team Admins can view the **Subscription Management** page.
 {% endhint %}
-
-## Feature Availability
 
 ### Subscription Tab Feature Availability
-
-{% hint style="info" %}
-**Note:** The below-highlighted Subscription button will only appear if a customer procures more than 20+ licenses to manage different Teams.
-{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (708).png" alt=""><figcaption></figcaption></figure>
 
 ## Subscription Management: Overview <a href="#subscription-management-overview" id="subscription-management-overview"></a>
 
-ARM offers an easy and centralized solution for a **Registered User** of your organization to manage team subscriptions and accounts. This ensures tracking of all subscription activity, making sure everything is logged. You use the **Subscription Management (SM)** interface to review and manage how purchased subscriptions are used on your production instance.
+ARM offers an easy and centralized solution for a **Registered User and ADMIN** of your organization to manage team subscriptions and accounts. This ensures tracking of all subscription activity, making sure everything is logged. You use the **Subscription Management (SM)** interface to review and manage how purchased subscriptions are used on your production instance.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Log in to your ARM account using the **Registered User** credentials.
+1. Log in to your ARM account using the **Registered User/ADMIN** credentials.
 2. Hover your mouse over the **`Admin`** tab and click on **`Subscriptions`**.
 
 <figure><img src="../../../.gitbook/assets/image (709).png" alt="" width="189"><figcaption></figcaption></figure>
 
 3.  Your active plan details will be shown on the dashboard with details like:
 
-    * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.
+    * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User/ADMIN of your organization can view the Subscription Management section.
     * **`Total Subscription Allotted:`** Number of licenses utilized to date.
     * **`Total Subscription Available:`** Total number of licenses available.
 
@@ -46,6 +34,10 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 {% endhint %}
 
 ### Adding and Configuring Teams <a href="#adding-and-configuring-teams" id="adding-and-configuring-teams"></a>
+
+{% hint style="info" %}
+The Create Team option will not be visible for customers with fewer than 20 licenses.
+{% endhint %}
 
 This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.
 

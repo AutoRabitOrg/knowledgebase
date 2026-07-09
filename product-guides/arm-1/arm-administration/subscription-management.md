@@ -3,11 +3,7 @@
 {% hint style="info" %}
 **Important Notes**:
 
-This article is for the **registered user** in particular. **General users** do not have access to the Subscriptions tab.
-
-* Only the **Registered User** can view the **Subscription Management** page.
-* The **Team Administrator** cannot view the **Subscription Management** page.
-* **Org Admins** added by the **Registered User** also cannot view the **Subscriptions** page.
+Only the **Registered User** and Team Admins can view the **Subscription Management** page.
 {% endhint %}
 
 ## Subscription Management: Overview <a href="#subscription-management-overview" id="subscription-management-overview"></a>
@@ -16,12 +12,12 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Log in to your ARM account using the **Registered User** credentials.
+1. Log in to your ARM account using the **Registered User/ADMIN** credentials.
 2.  Hover your mouse over the **`Settings`** tab and click on **`Subscriptions`**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1947).png" alt="" width="229"><figcaption></figcaption></figure>
 3. Your active plan details will be shown on the dashboard with details like:
-   * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User of your organization can view the Subscription Management section.
+   * **`Total Subscriptions:`** Number of licenses purchased by the organization. Only the Registered User/ADMIN of your organization can view the Subscription Management section.
    * **`Total Subscription Allotted:`** Number of licenses utilized to date.
    *   **`Total Subscription Available:`** Total number of licenses available.\
        <br>
@@ -33,6 +29,10 @@ ARM offers an easy and centralized solution for a **Registered User** of your or
 {% endhint %}
 
 ### Adding and Configuring Teams <a href="#adding-and-configuring-teams" id="adding-and-configuring-teams"></a>
+
+{% hint style="info" %}
+The Create Team option will not be visible for customers with fewer than 20 licenses.
+{% endhint %}
 
 This section is about creating the teams and assigning members to those teams. This allows you to assign tasks to specific groups of people in your organization.
 

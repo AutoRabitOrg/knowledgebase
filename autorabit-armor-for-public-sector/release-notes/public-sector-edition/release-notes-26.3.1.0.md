@@ -94,8 +94,6 @@ The following tables list every vulnerability addressed in this release, grouped
 | -------- | -------- | ------------------------------------------------------------------------------- |
 | SEC-2102 | 3        | Java (Maven) Security Update for org.bouncycastle:bc-fips (GHSA-mx76-r943-rf8g) |
 
-***
-
-[**Note on Implementation:** These updates were delivered by updating the relevant container base images and rebuilding the affected service images with patched dependency versions. No source code changes were made to ARMOR business logic or customer-facing functionality. The bug fix for email password handling was implemented as part of this release.](#user-content-fn-1)[^1]
-
-[^1]: 
+> **Note on Implementation:** These security updates were delivered by updating the relevant container base images and rebuilding the affected service images with patched dependency versions. No source code changes were made to ARMOR business logic or customer-facing functionality.
+>
+> The bug fix for removing plain-text passwords from emails (replaced with Update Password link) was also delivered as part of this release.

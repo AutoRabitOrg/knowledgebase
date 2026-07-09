@@ -2,65 +2,47 @@
 
 ## ARM **Release Notes 26.3.2**
 
-**Release Date: 12th July 2026**
+**Release Date: 12 July 2026**
 
-### SonarQube Analysis Report Synchronization Fix <a href="#sonarqube-analysis-report-synchronization-fix" id="sonarqube-analysis-report-synchronization-fix"></a>
+#### SonarQube Analysis Report Synchronization Fix <a href="#sonarqube-analysis-report-synchronization-fix" id="sonarqube-analysis-report-synchronization-fix"></a>
 
 Fixed an issue where ARM displayed empty SonarQube SCA reports despite successful analysis and available findings in SonarQube. The SonarQube integration has been updated to correctly retrieve and display analysis results, ensuring ARM accurately reflects the corresponding SonarQube findings across EZ-Commit, EZ-Merge, Deployments, and CI Jobs.
 
-***
-
-### Salesforce CLI Upgrade <a href="#salesforce-cli-upgrade" id="salesforce-cli-upgrade"></a>
+#### Salesforce CLI Upgrade <a href="#salesforce-cli-upgrade" id="salesforce-cli-upgrade"></a>
 
 Upgraded the bundled **Salesforce CLI (SF CLI)** from **v2.130.9** to **v2.140.6** to incorporate the latest Salesforce CLI enhancements, stability improvements, and bug fixes. This update improves compatibility with the latest Salesforce platform capabilities and ensures continued support for ARM operations that rely on the Salesforce CLI.
 
-***
-
-### EZ-Merge Multi-Level Approval Fix - New UI <a href="#ez-merge-multi-level-approval-fix-new-ui" id="ez-merge-multi-level-approval-fix-new-ui"></a>
+#### EZ-Merge Multi-Level Approval Fix - New UI <a href="#ez-merge-multi-level-approval-fix-new-ui" id="ez-merge-multi-level-approval-fix-new-ui"></a>
 
 Fixed an issue in the New UI where EZ-Merge requests requiring multiple approval levels could complete after the first approval instead of progressing through the configured approval workflow. The approval flow has been corrected to properly process all configured approvers, ensuring merge requests follow the expected approval sequence before completion.
 
-***
-
-### Subscription Management for All Customers <a href="#subscription-management-for-all-customers" id="subscription-management-for-all-customers"></a>
+#### Subscription Management for All Customers <a href="#subscription-management-for-all-customers" id="subscription-management-for-all-customers"></a>
 
 Enhanced **Subscription Management** to be available for all ARM customers, regardless of the number of purchased licenses. Customers with fewer than 20 licenses can now access subscription details, release allocated licenses, and manage license usage without requiring manual intervention for license downgrades. Team management remains unchanged for customers with 20 or more licenses, while the **Create Team** option is unavailable for customers with fewer than 20 licenses.
 
 This enhancement simplifies license management and enables a smoother license downgrade process.
 
-***
-
-### Vlocity Build Tool CLI Upgrade <a href="#vlocity-build-tool-cli-upgrade" id="vlocity-build-tool-cli-upgrade"></a>
+#### Vlocity Build Tool CLI Upgrade <a href="#vlocity-build-tool-cli-upgrade" id="vlocity-build-tool-cli-upgrade"></a>
 
 Upgraded the bundled **Vlocity Build Tool (VBT) CLI** from **v1.17.20** to **v1.17.24** to include the latest fixes, stability improvements, and compatibility updates for Vlocity-related operations in ARM.
 
-***
-
-### Compare Process Notification Improvement <a href="#compare-process-notification-improvement" id="compare-process-notification-improvement"></a>
+#### Compare Process Notification Improvement <a href="#compare-process-notification-improvement" id="compare-process-notification-improvement"></a>
 
 Updated the Compare Changes workflow to display a clear warning message instead of an error when a compare or commit operation is already in progress in another browser tab or session. This provides a more accurate user experience and better communicates the operation status during concurrent Compare Changes activities.
 
-***
-
-### External Client Application File Diff Fix <a href="#external-client-application-file-diff-fix" id="external-client-application-file-diff-fix"></a>
+#### External Client Application File Diff Fix <a href="#external-client-application-file-diff-fix" id="external-client-application-file-diff-fix"></a>
 
 Fixed an issue where deleting an **External Client Application (ECA)** through EZ-Commit did not generate the expected file diff, causing the commit process to fail. Support for ECA metadata has been added to ensure file differences are generated correctly during both direct commits and pre-validation commit workflows involving metadata deletions.
 
-***
-
-### EZ-Merge File Difference Consistency Fix <a href="#ez-merge-file-difference-consistency-fix" id="ez-merge-file-difference-consistency-fix"></a>
+#### EZ-Merge File Difference Consistency Fix <a href="#ez-merge-file-difference-consistency-fix" id="ez-merge-file-difference-consistency-fix"></a>
 
 Fixed an issue where the file changes displayed during EZ-Merge did not match the changes shown during the corresponding EZ-Commit. The merge file comparison logic has been corrected to ensure the merge preview accurately reflects the committed changes, providing consistent and reliable file difference information during conflict resolution.
 
-***
-
-### Provar Configuration Display Fix - New UI <a href="#provar-configuration-display-fix-new-ui" id="provar-configuration-display-fix-new-ui"></a>
+#### Provar Configuration Display Fix - New UI <a href="#provar-configuration-display-fix-new-ui" id="provar-configuration-display-fix-new-ui"></a>
 
 Fixed an issue in the New UI where Provar configuration fields were not displayed after selecting **Provar** in the CI Job Tests screen. The configuration options now load correctly, allowing users to configure the required Provar settings, including Repository, Branch, Test Cases Root Path, and Test Cases Execution Path.
 
-***
-
-### SonarQube Baseline Branch Support - New UI <a href="#sonarqube-baseline-branch-support-new-ui" id="sonarqube-baseline-branch-support-new-ui"></a>
+#### SonarQube Baseline Branch Support - New UI <a href="#sonarqube-baseline-branch-support-new-ui" id="sonarqube-baseline-branch-support-new-ui"></a>
 
 Fixed multiple issues in the New UI where the **Baseline Branch** dropdown was not displayed for SonarQube Static Code Analysis. The Baseline Branch selection is now available and retained correctly across EZ-Merge, CI Job Edit, and SCA Label workflows, ensuring a consistent configuration experience with CodeScan.
 
@@ -70,7 +52,7 @@ Fixed multiple issues in the New UI where the **Baseline Branch** dropdown was n
 
 **Release Date: 6th July 2026**
 
-### SSO Login Redirection Fix
+#### SSO Login Redirection Fix
 
 Fixed an issue that prevented users from logging in through Single Sign-On (SSO) due to an overly restrictive Content Security Policy (CSP). The SSO redirection flow has been updated to allow successful authentication and seamless redirection to the configured identity provider.
 

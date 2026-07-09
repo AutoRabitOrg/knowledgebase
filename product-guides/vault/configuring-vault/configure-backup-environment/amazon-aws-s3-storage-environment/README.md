@@ -42,29 +42,58 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
     "Statement": [
         { 
             "Action": [ 
-                "s3:ListAllMyBuckets" 
+        "s3:GetLifecycleConfiguration",
+				"s3:GetBucketTagging",
+				"s3:PauseReplication",
+				"s3:UntagResource",
+				"s3:ListCallerAccessGrants",
+				"s3:ListBucketVersions",
+				"s3:RestoreObject",
+				"s3:ListBucket",
+				"s3:ListStorageLensGroups",
+				"s3:GetStorageLensConfigurationTagging",
+				"s3:ListTagsForResource",
+				"s3:GetObjectAcl",
+				"s3:Replicate*",
+				"s3:GetStorageLensGroup",
+				"s3:AbortMultipartUpload",
+				"s3:DeleteJobTagging",
+				"s3:PutBucketTagging",
+				"s3:PutLifecycleConfiguration",
+				"s3:DeleteStorageLensGroup",
+				"s3:GetObjectTagging",
+				"s3:DeleteObject*",
+				"s3:PutBucketVersioning",
+				"s3:GetObjectRetention",
+				"s3:GetJobTagging",
+				"s3:TagResource",
+				"s3:UpdateStorageLensGroup",
+				"s3:DeleteStorageLensConfigurationTagging",
+				"s3:CreateStorageLensGroup",
+				"s3:PutStorageLensConfigurationTagging",
+				"s3:PutObject*",
+				"s3:PutJobTagging",
+				"s3:InitiateReplication",
+				"s3:GetBucketVersioning",
+				"s3:GetObjectLegalHold",
+				"s3:BypassGovernanceRetention",
+				"s3:ListMultipartUploadParts",
+				"s3:GetObject",
+				"s3:ObjectOwnerOverrideToBucketOwner",
+				"s3:GetObjectTorrent",
+				"s3:ListAllMyBuckets",
+				"s3:GetObjectVersion*",
+				"s3:PutAccessPointPublicAccessBlock",
+				"s3:GetBucketCORS",
+				"s3:PutBucketPolicy",
+				"s3:GetBucketLocation"
             ], 
             "Effect": "Allow", 
             "Resource": [ 
                 "arn:aws:s3:::*" 
             ] 
-        }, 
-        { 
-            "Effect": "Allow", 
-            "Action": "s3:*", 
-            "Resource": [ 
-                "arn:aws:s3:::bucket_name", 
-                "arn:aws:s3:::bucket_name/*" 
-            ] 
-        }, 
-        { 
-            "Effect": "Deny", 
-            "NotAction": "s3:*", 
-            "NotResource": [ 
-                "arn:aws:s3:::bucket_name", 
-            "arn:aws:s3:::bucket_name/*" 
-            ] 
-        } 
+        }
+         
     ] 
 }
 ```

@@ -2,9 +2,9 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-### Release Notes — nCino + DL 26.3.1 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+## nCino + DataLoader - Release 26.3.1 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
 
-**Release Date: 05 June 2026**
+**Release Date: 05 July 2026**
 
 #### nCino CI Job Failure Due to DynamoDB Throughput Error
 
@@ -14,7 +14,9 @@ Fixed an issue where nCino CI job builds failed with a DynamoDB throughput capac
 
 Resolved an error where creating a new version for an existing feature failed with the message _"No feature with name \[Feature Name]-."_ The feature versioning flow now correctly identifies and resolves the feature name, allowing new versions to be created without errors.
 
-### Release Notes — nCino + DL 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+***
+
+## nCino + DataLoader - Release 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
 
 **Release Date: 28 June 2026**
 
@@ -62,9 +64,9 @@ Long notification email addresses in the Deployment and CI Jobs Preview screens 
 
 ***
 
-### Release Notes — nCino+DL 26.2.11 <a href="#release-notes-ncinodl-26.2.11" id="release-notes-ncinodl-26.2.11"></a>
+## nCino + DataLoader - Release 26.2.11 <a href="#release-notes-ncinodl-26.2.11" id="release-notes-ncinodl-26.2.11"></a>
 
-**Release Date:** June 14 2026
+**Release Date:** **14 June 2026**
 
 #### nCino Retention Policy Fix <a href="#dt-13273-ncino-and-dl-data-retention-policy-fix" id="dt-13273-ncino-and-dl-data-retention-policy-fix"></a>
 
@@ -73,6 +75,8 @@ Fixed missing components in the data retention policy for nCino. Single DataLoad
 #### Classic UI Deployment Approval Settings Not Loading <a href="#dt-13427-classic-ui-deployment-approval-settings-not-loading" id="dt-13427-classic-ui-deployment-approval-settings-not-loading"></a>
 
 Fixed a blocking issue where the Deployment Approval settings fragment in the Classic UI failed to load due to an API error. Admins can now access and configure deployment approval settings under **My Account** as expected.
+
+***
 
 ## nCino - Release 26.2.10
 
@@ -355,19 +359,19 @@ Fixed an issue where entry object filter queries from the original version were 
 
 **Release Date: 04 January 2026**
 
-### **Version Control Source Reset in CI Jobs** <a href="#version-control-source-reset-in-ci-jobs" id="version-control-source-reset-in-ci-jobs"></a>
+#### **Version Control Source Reset in CI Jobs** <a href="#version-control-source-reset-in-ci-jobs" id="version-control-source-reset-in-ci-jobs"></a>
 
 Resolved an issue where source details were not refreshed when changing the source type or repository during CI Job editing. The source configuration now resets correctly, ensuring accurate and consistent setup.
 
-### **Single DataLoader – Limit Value Persistence Issue** <a href="#single-dataloader-limit-value-persistence-issue" id="single-dataloader-limit-value-persistence-issue"></a>
+#### **Single DataLoader – Limit Value Persistence Issue** <a href="#single-dataloader-limit-value-persistence-issue" id="single-dataloader-limit-value-persistence-issue"></a>
 
 Fixed an issue where an unintended record limit was applied to subsequent Single DataLoader jobs. The system now correctly resets and applies record counts and limits when running jobs again or switching between extract, insert, and update operations with new CSV files.
 
-### **DataLoader Extract – Download Performance Improvement** <a href="#dataloader-extract-download-performance-improvement" id="dataloader-extract-download-performance-improvement"></a>
+#### **DataLoader Extract – Download Performance Improvement** <a href="#dataloader-extract-download-performance-improvement" id="dataloader-extract-download-performance-improvement"></a>
 
 Improved the performance of the DataLoader Extract file download process. The download now initiates promptly upon user action, reducing extended pending time and ensuring faster response and file availability compared to earlier behavior.
 
-### **nCino Object Migration with Rollback – Stability Fix** <a href="#ncino-object-migration-with-rollback-stability-fix" id="ncino-object-migration-with-rollback-stability-fix"></a>
+#### **nCino Object Migration with Rollback – Stability Fix** <a href="#ncino-object-migration-with-rollback-stability-fix" id="ncino-object-migration-with-rollback-stability-fix"></a>
 
 Resolved an issue where nCino object migrations failed during rollback-enabled feature deployments. The rollback process has been stabilized to prevent errors and ensure successful execution during rollback builds.
 

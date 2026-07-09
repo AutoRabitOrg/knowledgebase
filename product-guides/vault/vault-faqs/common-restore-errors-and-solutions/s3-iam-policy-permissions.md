@@ -56,17 +56,13 @@ Do not create a new policy — edit the JSON that is already in the editor. Loca
 
 <table data-header-hidden><thead><tr><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p>"s3:GetBucketVersioning",</p><p>"s3:PutBucketVersioning",</p><p>"s3:ListBucketVersions"</p></td></tr></tbody></table>
 
-The example below shows an existing policy before and after the change — the highlighted lines are the only ones added; everything else stays exactly as it was:
-
-<table data-header-hidden><thead><tr><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p>{</p><p>  "Version": "2012-10-17",</p><p>  "Statement": [</p><p>    {</p><p>      "Sid": "S3Access",</p><p>      "Effect": "Allow",</p><p>      "Action": [</p><p>        "s3:GetObject",</p><p>        "s3:PutObject",</p><p>        "s3:ListBucket",</p><p>        "s3:GetBucketVersioning",</p><p>        "s3:PutBucketVersioning",</p><p>        "s3:ListBucketVersions"</p><p>      ],</p><p>      "Resource": [</p><p>        "arn:aws:s3:::my-example-bucket",</p><p>        "arn:aws:s3:::my-example-bucket/*"</p><p>      ]</p><p>    }</p><p>  ]</p><p>}</p></td></tr></tbody></table>
-
-&#x20;
-
-These three are bucket-level actions, so make sure the statement's Resource includes the bucket ARN itself (arn:aws:s3:::my-example-bucket) — not only the /\* object ARN.
+The example below shows an existing policy after the change — the highlighted lines are the only ones added; everything else stays exactly as it was:
 
 <figure><img src="../../../../.gitbook/assets/image (2581).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>JSON editor — the three actions added into the existing Action array (illustrative)</em></p>
+
+These three are bucket-level actions, so make sure the statement's Resource includes the bucket ARN itself (arn:aws:s3:::my-example-bucket) — not only the /\* object ARN.
 
 Choose Next, review the summary, and click Save changes. IAM saves the update as a new default version of the same policy, and it takes effect immediately for every user, group, and role the policy is attached to.
 

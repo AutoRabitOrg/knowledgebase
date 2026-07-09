@@ -2,7 +2,7 @@
 
 ## AutoRABIT Guard Release Notes 26.2.2
 
-**Release Date: 8 July 2026**
+**Release Date: 15 July 2026**
 
 ### Enhancements
 

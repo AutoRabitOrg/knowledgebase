@@ -1,6 +1,6 @@
 # Restore
 
-## **Vault Restore Job User Guide**
+## AutoRABIT Vault **Restore Job User Guide**
 
 Restore data from a selected backup using EZ Restore or Selective Restore
 
@@ -24,7 +24,7 @@ After selecting the Salesforce org, restore source, and configuration, Get Detai
 
 ## Start an EZ Restore
 
-EZ Restore is used when the selected backup needs to be restored without manually refining objects, records, or fields. Before the restore summary opens, Vault presents restore considerations that may affect job execution. These include Salesforce automation behavior, metadata size limits, inactive owners, and dependency requirements. Got It confirms the message and continues the restore flow.
+EZ Restore is used when the selected backup needs to be restored without manually refining objects, records, or fields. Before the restore summary opens, AutoRABIT Vault presents restore considerations that may affect job execution. These include Salesforce automation behavior, metadata size limits, inactive owners, and dependency requirements. Got It confirms the message and continues the restore flow.
 
 ![](<../../.gitbook/assets/Unknown image (2) (1)>)
 
@@ -32,11 +32,11 @@ The Restore Summary opens with the generated restore label, batch size, email no
 
 ![](<../../.gitbook/assets/Unknown image (3) (1)>)
 
-After submission, Vault starts creating the restore job and displays a processing state. The restore action remains in progress until the job record is created and made available in the restore history list.
+After submission, AutoRABIT Vault starts creating the restore job and displays a processing state. The restore action remains in progress until the job record is created and made available in the restore history list.
 
 ![](<../../.gitbook/assets/Unknown image (4) (1)>)
 
-Once the restore job is created, Vault displays a confirmation message. OK closes the message and returns to the restore list.
+Once the restore job is created, AutoRABIT Vault displays a confirmation message. OK closes the message and returns to the restore list.
 
 ![](<../../.gitbook/assets/Unknown image (5) (1)>)
 
@@ -94,7 +94,7 @@ The field mapping dialog lists source fields and corresponding mapping fields. F
 
 ## Review and Create the Selective Restore Job
 
-After object, relationship, record, and field selections are finalized, Review and Restore opens the final restore submission flow. Vault again displays restore considerations before the summary step. The message reinforces validation, automation, size limit, inactive owner, and dependency considerations that may affect restore success.
+After object, relationship, record, and field selections are finalized, Review and Restore opens the final restore submission flow. AutoRABIT Vault again displays restore considerations before the summary step. The message reinforces validation, automation, size limit, inactive owner, and dependency considerations that may affect restore success.
 
 ![](<../../.gitbook/assets/Unknown image (17)>)
 
@@ -104,7 +104,7 @@ The Restore Summary confirms the selected restore scope, generated restore label
 
 ![](<../../.gitbook/assets/Unknown image (19)>)
 
-Vault confirms successful restore job creation after submission. The confirmation message closes with OK and returns to the restore history list.
+AutoRABIT Vault confirms successful restore job creation after submission. The confirmation message closes with OK and returns to the restore history list.
 
 ![](<../../.gitbook/assets/Unknown image (20)>)
 
@@ -114,4 +114,4 @@ The restore history list shows the latest restore jobs and their processing outc
 
 ## Result
 
-At the end of the workflow, Vault creates a restore job from the selected backup source. EZ Restore restores the selected backup using the full available scope, while Selective Restore creates a controlled restore job based on object, relationship, record, and field selections. The restore history provides visibility into progress, completion status, record counts, failures, and job-level actions.
+At the end of the workflow, AutoRABIT Vault creates a restore job from the selected backup source. EZ Restore restores the selected backup using the full available scope, while Selective Restore creates a controlled restore job based on object, relationship, record, and field selections. The restore history provides visibility into progress, completion status, record counts, failures, and job-level actions.

@@ -1,6 +1,6 @@
 # Backup
 
-## Vault Backup Job Creation User Guide
+## AutoRABIT Vault Backup Job Creation User Guide
 
 _Create and start a backup job from an existing backup configuration_
 
@@ -18,7 +18,7 @@ A source org and backup configuration must already be available. The Backup Jobs
 
 The Backup module opens on the Backup Jobs page. The page displays the selected Salesforce Org, Environment, and Configurations values at the top of the workspace. The Backup Summary table lists existing backup jobs for the selected configuration. When no backup has been created for the current selection, the table displays an empty state.
 
-Selecting Backup Now opens the Start Backup dialog. Vault automatically generates a Backup Label and carries forward the selected configuration into the Configurations field. The dialog provides the review point before the backup job is started.
+Selecting Backup Now opens the Start Backup dialog. AutoRABIT Vault automatically generates a Backup Label and carries forward the selected configuration into the Configurations field. The dialog provides the review point before the backup job is started.
 
 ![](<../../.gitbook/assets/Unknown image (248)>)
 
@@ -28,7 +28,7 @@ The Configurations field supports selection or confirmation of the backup config
 
 ## Start the Backup
 
-Selecting Start Backup submits the backup request. During submission, the Start Backup button shows an in-progress state to indicate that Vault is processing the request and creating the backup job.
+Selecting Start Backup submits the backup request. During submission, the Start Backup button shows an in-progress state to indicate that AutoRABIT Vault is processing the request and creating the backup job.
 
 ![](<../../.gitbook/assets/Unknown image (250)>)
 
@@ -48,4 +48,4 @@ The generated Backup Label can be reviewed before the job is started.
 
 The Exclude Deleted Records from Backups option determines whether deleted records are excluded during backup processing.
 
-The Backup Summary reflects the job after Vault accepts the backup request.
+The Backup Summary reflects the job after AutoRABIT Vault accepts the backup request.

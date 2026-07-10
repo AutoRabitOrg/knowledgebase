@@ -1,12 +1,12 @@
 # Backup\_Config
 
-This guide explains the process for creating a backup configuration in Vault. The flow starts from the Dashboard, continues through object selection and configuration options, and ends with the saved backup configuration available from the Backup Config List.
+This guide explains the process for creating a backup configuration in AutoRABIT Vault. The flow starts from the Dashboard, continues through object selection and configuration options, and ends with the saved backup configuration available from the Backup Config List.
 
-| **Feature Area**    | Backup                                                            |
-| ------------------- | ----------------------------------------------------------------- |
-| **Workflow**        | Backup configuration creation                                     |
-| **Primary Outcome** | A saved backup configuration is created for the selected objects. |
-| **Applies To**      | Vault Free Trial and applicable Vault environments                |
+| **Feature Area**    | Backup                                                                 |
+| ------------------- | ---------------------------------------------------------------------- |
+| **Workflow**        | Backup configuration creation                                          |
+| **Primary Outcome** | A saved backup configuration is created for the selected objects.      |
+| **Applies To**      | AutoRABIT Vault Free Trial and applicable AutoRABIT Vault environments |
 
 ## Before Starting
 
@@ -52,7 +52,7 @@ Save Backup Config saves the configuration. During the save operation, the butto
 
 ## Confirm Configuration Creation
 
-After the configuration is saved, Vault returns to the Dashboard. The Backup Configs count updates to reflect the new configuration. Related dashboard indicators and recommended actions update based on the current environment state.
+After the configuration is saved, AutoRABIT Vault returns to the Dashboard. The Backup Configs count updates to reflect the new configuration. Related dashboard indicators and recommended actions update based on the current environment state.
 
 ![](<../../.gitbook/assets/Unknown image (245)>)
 

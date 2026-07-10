@@ -1,25 +1,25 @@
-# 1 User\_Registration
+# User\_Registration
 
 ## AutoRABIT Vault Freemium Registration User Guide
 
-End-to-end workflow for creating and verifying a Vault freemium account
+End-to-end workflow for creating and verifying a AutoRABIT Vault freemium account
 
 ## Purpose
 
-This guide explains the Vault freemium registration workflow. The flow starts from the Vault welcome page, continues through account detail submission and agreement confirmation, and completes after OTP verification from the registered email address.
+This guide explains the Vault freemium registration workflow. The flow starts from the AutoRABIT Vault welcome page, continues through account detail submission and agreement confirmation, and completes after OTP verification from the registered email address.
 
 | **Workflow stage**               | **Outcome**                                                             |
 | -------------------------------- | ----------------------------------------------------------------------- |
-| **Welcome and access selection** | The registration flow begins from the Vault welcome page.               |
+| **Welcome and access selection** | The registration flow begins from the AutoRABIT Vault welcome page.     |
 | **Account information**          | Required details are entered for the freemium account.                  |
 | **Agreement confirmation**       | The agreement is reviewed and accepted before OTP generation.           |
 | **Email verification**           | The authentication code received through email is entered and verified. |
 
-The Vault welcome page provides access to sign-in and registration actions. The email field and Send OTP action support existing account access, while the Sign up link starts the freemium registration journey for a new account.
+The AutoRABIT Vault welcome page provides access to sign-in and registration actions. The email field and Send OTP action support existing account access, while the Sign up link starts the freemium registration journey for a new account.
 
 ![](<../../.gitbook/assets/Unknown image>)
 
-Registration starts from the Vault welcome page.
+Registration starts from the AutoRABIT Vault welcome page.
 
 Selecting Sign up opens the registration form. The form collects the information required to create the freemium account and associate it with the intended organization.
 
@@ -45,7 +45,7 @@ The agreement checkbox confirms acceptance of the applicable Terms and Condition
 
 The agreement checkbox enables progression toward OTP generation.
 
-After the agreement is accepted, the Generate OTP action is used to submit the registration details. Vault starts the OTP generation process and shows the request in progress.
+After the agreement is accepted, the Generate OTP action is used to submit the registration details. AutoRABIT Vault starts the OTP generation process and shows the request in progress.
 
 ![](<../../.gitbook/assets/Unknown image (5)>)
 
@@ -59,11 +59,11 @@ The agreement page opens from the Terms and Conditions link.
 
 ![](<../../.gitbook/assets/Unknown image (7)>)
 
-Vault displays the OTP generation request in progress.
+AutoRABIT Vault displays the OTP generation request in progress.
 
 ## Receive the Verification Code
 
-Vault sends the authentication code to the registered email address. The email contains the verification code and the registration details associated with the request.
+AutoRABIT Vault sends the authentication code to the registered email address. The email contains the verification code and the registration details associated with the request.
 
 ![](<../../.gitbook/assets/Unknown image (8)>)
 

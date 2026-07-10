@@ -1295,7 +1295,7 @@
     * [Registering nCino configured Salesforce Org](product-guides/vault/ncino/registering-ncino-configured-salesforce-org.md)
     * [Restoring nCino Features](product-guides/vault/ncino/restoring-ncino-features.md)
 * [Vault Freemium](product-guides/vault-freemium/README.md)
-  * [1 User\_Registration](product-guides/vault-freemium/1-user_registration.md)
+  * [User\_Registration](product-guides/vault-freemium/user_registration.md)
   * [ORG\_Registration](product-guides/vault-freemium/org_registration.md)
   * [Destination\_ORG](product-guides/vault-freemium/destination_org.md)
   * [Backup\_Config](product-guides/vault-freemium/backup_config.md)

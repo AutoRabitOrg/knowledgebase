@@ -1,4 +1,4 @@
-# Backup\_Config
+# Backup Config
 
 This guide explains the process for creating a backup configuration in AutoRABIT Vault. The flow starts from the Dashboard, continues through object selection and configuration options, and ends with the saved backup configuration available from the Backup Config List.
 

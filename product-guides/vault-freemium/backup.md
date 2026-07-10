@@ -32,7 +32,7 @@ Selecting Start Backup submits the backup request. During submission, the Start 
 
 ![](<../../.gitbook/assets/Unknown image (250)>)
 
-After the request is accepted, Vault closes the dialog and displays a confirmation notification indicating that the backup has started. The Backup Summary refreshes with the created backup record. The record displays the backup label, configuration name, date and time, expiry date, duration, record count, API calls, data backup indicator, status, and available actions.
+After the request is accepted, AutoRABIT Vault closes the dialog and displays a confirmation notification indicating that the backup has started. The Backup Summary refreshes with the created backup record. The record displays the backup label, configuration name, date and time, expiry date, duration, record count, API calls, data backup indicator, status, and available actions.
 
 ![](<../../.gitbook/assets/Unknown image (251)>)
 

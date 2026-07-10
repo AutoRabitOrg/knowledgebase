@@ -61,21 +61,57 @@ The agreement page opens from the Terms and Conditions link.
 
 AutoRABIT Vault displays the OTP generation request in progress.
 
-## Receive the Verification Code
+### Registration Email Notifications
 
-AutoRABIT Vault sends the authentication code to the registered email address. The email contains the verification code and the registration details associated with the request.
+During the Freemium registration workflow, AutoRABIT Vault sends email notifications to support account verification and trial activation. These emails provide the required verification code, confirm successful registration, and share the trial access details required to begin using AutoRABIT Vault.
+
+#### Verification Code Email
+
+After the registration details are submitted and **Generate OTP** is selected, AutoRABIT Vault sends a verification email to the registered email address. The email is sent from **No Reply Freemium** and uses the subject **Your** AutoRABIT Vault **Verification Code**.
+
+The email contains the **Login OTP**, which is required to complete account verification on the registration screen. The OTP must be entered in the verification field before the registration can proceed. This step confirms that the registered email address is valid and accessible.
+
+The verification email also includes the standard AutoRABIT email footer, support contact information, and a note indicating that the message is auto-generated.
 
 ![](<../../.gitbook/assets/Unknown image (8)>)
 
-The first part of the verification email displays the authentication code.
+#### Trial Activation Email
+
+After the OTP is validated successfully, AutoRABIT Vault completes the registration and sends a trial activation email. The email is sent from **No Reply Freemium** and uses the subject **Welcome to** AutoRABIT Vault **– Your Free Trial is Active!**
+
+The email confirms that the registration is complete and that the account is active. It also indicates the next step in the onboarding flow, where a **Source Org** must be added from the AutoRABIT Vault dashboard to begin configuring backup and related activities.
 
 ![](<../../.gitbook/assets/Unknown image (9)>)
 
-The verification email includes the welcome message and account details.
-
 ![](<../../.gitbook/assets/Unknown image (10)>)
 
-The email also lists the freemium plan information and usage limits.
+The activation email includes the following access details:
+
+| Detail                      | Description                                                                        |
+| --------------------------- | ---------------------------------------------------------------------------------- |
+| **Subscription Start Date** | Displays the date on which the Freemium trial becomes active.                      |
+| **Trial Period**            | Displays the total duration of the Freemium trial.                                 |
+| **Trial Expiry Date**       | Displays the date on which the trial access expires.                               |
+| **Email**                   | Displays the registered email address associated with the Freemium account.        |
+| **Storage Location**        | Displays the configured storage region for the trial account.                      |
+| **Instance URL**            | Provides the AutoRABIT Vault instance URL used to access the Freemium environment. |
+| **Master Code**             | Provides the account-level code used for verification support where applicable.    |
+
+The email also lists the Freemium trial limits configured for the account:
+
+| Limit                             | Description                                                    |
+| --------------------------------- | -------------------------------------------------------------- |
+| **Storage**                       | Displays the storage capacity available for the trial.         |
+| **Files**                         | Displays the file storage capacity available for the trial.    |
+| **Users**                         | Displays the number of admin users allowed in the trial.       |
+| **Environments**                  | Displays the number of Salesforce orgs that can be configured. |
+| **Backup Configs**                | Displays the number of backup configurations allowed.          |
+| **Backup Jobs**                   | Displays the number of backup jobs supported during the trial. |
+| **Restore Jobs**                  | Displays the number of restore jobs allowed.                   |
+| **Replicate / Data Seeding Jobs** | Displays the number of replicate or data seeding jobs allowed. |
+| **Retention Period**              | Displays the retention duration available for trial data.      |
+
+The email confirms that usage and limits can be monitored from the AutoRABIT Vault dashboard. It also includes the standard AutoRABIT footer, support contact information, and the auto-generated email note.
 
 ## Complete OTP Verification
 
@@ -87,7 +123,7 @@ The OTP Verification page validates the authentication code.
 
 ## Result
 
-After successful OTP verification, the freemium account registration is completed. The account can then proceed to the next applicable onboarding step within Vault.
+After successful OTP verification, the freemium account registration is completed. The account can then proceed to the next applicable onboarding step within AutoRABIT Vault.
 
 | \*\*Note:\*\*OTP verification must be completed using the code sent to the registered email address. The code should be entered before it expires or becomes invalid. |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

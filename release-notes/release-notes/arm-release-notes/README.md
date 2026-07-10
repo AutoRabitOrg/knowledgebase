@@ -46,6 +46,14 @@ Fixed an issue in the New UI where Provar configuration fields were not displaye
 
 Fixed multiple issues in the New UI where the **Baseline Branch** dropdown was not displayed for SonarQube Static Code Analysis. The Baseline Branch selection is now available and retained correctly across EZ-Merge, CI Job Edit, and SCA Label workflows, ensuring a consistent configuration experience with CodeScan.
 
+### Credential Creation Save Button Fix - Old UI
+
+Fixed an issue in the Old UI where the **Save** button did not respond when creating a new credential due to a client-side loading error. The credential creation dialog now loads correctly, allowing users to save new credentials successfully.
+
+### Release Labels Loading Fix - New UI
+
+Fixed an issue in the New UI where navigating directly to the **Release Labels** page from the left-side menu caused the page to remain in an infinite loading state. The navigation flow has been corrected to ensure the Release Labels page loads successfully when accessed directly.
+
 ***
 
 ## ARM **Release Notes 26.3.1.1**

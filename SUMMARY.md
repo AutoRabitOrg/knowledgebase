@@ -1298,7 +1298,7 @@
   * [User\_Registration](product-guides/vault-freemium/user_registration.md)
   * [ORG\_Registration](product-guides/vault-freemium/org_registration.md)
   * [Destination\_ORG](product-guides/vault-freemium/destination_org.md)
-  * [Backup\_Config](product-guides/vault-freemium/backup_config.md)
+  * [Backup Config](product-guides/vault-freemium/backup-config.md)
   * [Backup](product-guides/vault-freemium/backup.md)
   * [Restore](product-guides/vault-freemium/restore.md)
   * [Replicate](product-guides/vault-freemium/replicate.md)

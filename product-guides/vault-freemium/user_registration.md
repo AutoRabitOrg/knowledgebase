@@ -6,7 +6,7 @@ End-to-end workflow for creating and verifying a AutoRABIT Vault freemium accoun
 
 ## Purpose
 
-This guide explains the Vault freemium registration workflow. The flow starts from the AutoRABIT Vault welcome page, continues through account detail submission and agreement confirmation, and completes after OTP verification from the registered email address.
+This guide explains the AutoRABIT Vault freemium registration workflow. The flow starts from the AutoRABIT Vault welcome page, continues through account detail submission and agreement confirmation, and completes after OTP verification from the registered email address.
 
 | **Workflow stage**               | **Outcome**                                                             |
 | -------------------------------- | ----------------------------------------------------------------------- |

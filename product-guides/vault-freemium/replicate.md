@@ -1,6 +1,6 @@
 # Replicate
 
-## Vault Replicate User Guide
+## AutoRABIT Vault Replicate User Guide
 
 _Creating, configuring, and running a Replicate job_
 
@@ -19,7 +19,7 @@ The Replicate Config flow is organized into four main stages: Choose Backup, Sel
 
 The workflow begins from Replicate > Job Config. A new Replicate Config is created by selecting the required Source Org, Destination Org, and Replicate Source. After these values are selected, Proceed opens the step-based configuration flow.
 
-The Replicate Source determines the type of source data used for the configuration. In this workflow, Backup is selected as the source, so Vault displays backup snapshots available for the selected org combination.
+The Replicate Source determines the type of source data used for the configuration. In this workflow, Backup is selected as the source, so AutoRABIT Vault displays backup snapshots available for the selected org combination.
 
 ![](<../../.gitbook/assets/Unknown image (206)>)
 
@@ -93,7 +93,7 @@ The Add to Org masking rules option makes the rule available in the destination 
 
 ![](<../../.gitbook/assets/Unknown image (221)>)
 
-After the rule is saved, Vault confirms that the masking rule has been created successfully.
+After the rule is saved, AutoRABIT Vault confirms that the masking rule has been created successfully.
 
 ![](<../../.gitbook/assets/Unknown image (222)>)
 
@@ -121,7 +121,7 @@ The Data section summarizes the selected objects and record scope. The Masking I
 
 ![](<../../.gitbook/assets/Unknown image (226)>)
 
-Before saving or running the job, Vault displays important replication considerations. These include potential failures caused by active triggers, process builders, workflows, flows, and validation rules; Salesforce metadata size limits; inactive owners; and missing dependencies.
+Before saving or running the job, AutoRABIT Vault displays important replication considerations. These include potential failures caused by active triggers, process builders, workflows, flows, and validation rules; Salesforce metadata size limits; inactive owners; and missing dependencies.
 
 ![](<../../.gitbook/assets/Unknown image (227)>)
 
@@ -131,7 +131,7 @@ The Replication Config Info window provides a final review of configuration deta
 
 ## Review Replicate History
 
-When Save & Run is used, Vault creates the Replicate job and displays the execution result in Replicate History. The history table shows the label, configuration name, job info, source org, destination org, date and time, duration, metadata success and failure counts, successful records, failed records, and available actions.
+When Save & Run is used, AutoRABIT Vault creates the Replicate job and displays the execution result in Replicate History. The history table shows the label, configuration name, job info, source org, destination org, date and time, duration, metadata success and failure counts, successful records, failed records, and available actions.
 
 The action icons provide access to job details, logs, reports, delete, and rerun options depending on the available job state and permissions.
 
@@ -159,7 +159,7 @@ The Replication Config Info window provides the final review when the configurat
 
 ![](<../../.gitbook/assets/Unknown image (233)>)
 
-Vault confirms that the Replicate Config is created successfully after the configuration is saved.
+AutoRABIT Vault confirms that the Replicate Config is created successfully after the configuration is saved.
 
 ![](<../../.gitbook/assets/Unknown image (234)>)
 

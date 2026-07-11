@@ -2,7 +2,7 @@
 
 ## AutoRABIT CodeScan PubSec 26.0.13 Release Notes
 
-**Release Date: July 2026**
+**Release Date: 12 July 2026**
 
 ### Summary
 

@@ -1,4 +1,4 @@
-# Release Notes 25.0
+# Release Notes 25
 
 ## AutoRABIT Guard PubSec 25.2.9 Release Notes
 
@@ -270,7 +270,7 @@ Fixed an issue where the Delete Org confirmation modal displayed unrelated notif
 
 **Impact:** Now shows only items tied to the org being deleted, eliminating confusion.
 
-### Additional fixes:
+### Additional fixes
 
 * Salesforce Org Registration OAuth Error: Fixed an issue preventing new Salesforce Orgs from being registered due to OAuth flow failures.
 * Password Reset Flow: Password policy error messages now clearly display complete requirements

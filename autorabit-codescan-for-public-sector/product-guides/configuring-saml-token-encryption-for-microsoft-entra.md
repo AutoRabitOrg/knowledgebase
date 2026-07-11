@@ -45,7 +45,7 @@ To conﬁgure SAML token encryption, import the formatted `.cer` certiﬁcate in
 3. On the application's page, select **Token encryption**.
 4.  On the **Token encryption** page, select **Import Certiﬁcate** to import the `.cer` ﬁle created.<br>
 
-    <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Import Certificate screenshot</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Import Certificate screenshot</p></figcaption></figure>
 
 
 5. Once the certiﬁcate is imported, activate encryption by selecting the ... next to the thumbprint status, and then select **Activate token encryption** from the options in the dropdown menu.
@@ -66,13 +66,13 @@ To conﬁrm the SAML assertions for the application are encrypted, perform the f
 2. In the Developer Tools, go to the **Network** tab to capture network traﬃc during login.
 3.  Look for a network request with `POST` data to the **application's ACS URL** (where the SAML assertion is sent).<br>
 
-    <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 4. Go to the **Payload** section to view the SAML response.
 5.  Look for the `SAMLResponse` ﬁeld, which contains the Base64-encoded SAML response.<br>
 
-    <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 6. Decode the SAML Response
    * Copy the `SAMLResponse` value and decode it using a Base64 decoder (many online tools, like SAMLTool, can decode the SAML response).
 7. Verify Encryption

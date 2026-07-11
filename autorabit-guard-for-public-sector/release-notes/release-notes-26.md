@@ -1,8 +1,8 @@
-# Release Notes 26.0
+# Release Notes 26
 
-## AutoRABIT Guard PubSec 26.1.0 Release Notes
+## AutoRABIT Guard PubSec 26.1.1 Release Notes
 
-**Release Date: 17 June 2026**
+**Release Date: July 2026**
 
 ### New features <a href="#new-features" id="new-features"></a>
 

@@ -1,12 +1,12 @@
-# Release Notes 25.0
+# Release Notes 25
 
-## AutoRABIT CodeScan 25.1.0 Release Notes
+## AutoRABIT CodeScan PubSec 25.1.0 Release Notes
 
 **Release Date: 24 December 2025**
 
 ### **Summary**
 
-AutoRABIT CodeScan 25.1.0 is comprised of the following 4 components:
+AutoRABIT CodeScan PubSec 25.1.0 is comprised of the following 4 components:
 
 * 2 Rule Enhancements
 * 2 Fixes
@@ -146,13 +146,13 @@ We verified the new logic and validated that the rule is now working as original
 
 ***
 
-## AutoRABIT CodeScan 25.0.2 Release Notes
+## AutoRABIT CodeScan PubSec 25.0.2 Release Notes
 
 **Release Date: 28 October 2025**
 
 ### Summary
 
-AutoRABIT CodeScan 25.0.2 is comprised of the following 3 components:
+AutoRABIT CodeScan PubSec 25.0.2 is comprised of the following 3 components:
 
 * 1 New Feature
 * 2 Fixes
@@ -243,13 +243,13 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
 
 ***
 
-## AutoRABIT CodeScan 25.0.1 Release Notes
+## AutoRABIT CodeScan PubSec 25.0.1 Release Notes
 
 **Release Date: 14 April 2025**
 
 ### Summary
 
-AutoRABIT CodeScan 25.0.1 is comprised of the following 17 components:
+AutoRABIT CodeScan PubSec 25.0.1 is comprised of the following 17 components:
 
 ·       4 New Features
 

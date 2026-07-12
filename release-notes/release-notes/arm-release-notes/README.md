@@ -56,6 +56,16 @@ Fixed an issue in the New UI where navigating directly to the **Release Labels**
 
 ***
 
+## DataLoader & DataLoader Pro Release Notes **26.3.2**
+
+**Release Date:** **12 July 2026**
+
+### Knowledge KAV language filter not auto-populating in New UI <a href="#dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui" id="dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui"></a>
+
+Fixed an issue in the New UI where the **Language** filter on the Knowledge KAV object did not prefill with the existing language value. The filter behavior now matches the Old UI.
+
+***
+
 ## ARM **Release Notes 26.3.1.1**
 
 **Release Date: 6th July 2026**

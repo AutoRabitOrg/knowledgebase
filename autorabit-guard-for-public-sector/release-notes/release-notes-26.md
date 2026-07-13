@@ -4,7 +4,7 @@
 
 **Release Date: 12 July 2026**
 
-### New features <a href="#new-features" id="new-features"></a>
+### New Features <a href="#new-features" id="new-features"></a>
 
 #### **AI Interfaces for AutoRABIT Guard**
 
@@ -74,8 +74,8 @@ Note: Deep Data Scanning is disabled by default and can only be enabled when exp
 
 Key capabilities include:
 
-* Automatic Deep Data Scanning Users can define common field name patterns (comments, notes, info). Guard automatically scans matching fields to identify potential regulatory exposure.
-* Manual Deep Data Scanning Users can manually trigger a one-time scan directly from a field’s detail page. Scan progress and results are clearly displayed for easy review.
+* Automatic Deep Data Scanning: Users can define common field name patterns (comments, notes, info). Guard automatically scans matching fields to identify potential regulatory exposure.
+* Manual Deep Data Scanning: Users can manually trigger a one-time scan directly from a field’s detail page. Scan progress and results are clearly displayed for easy review.
 
 User Benefits:
 
@@ -247,13 +247,13 @@ These events are parsed and displayed in Change Monitoring in the Other tab, pro
 #### Additional Enhancements
 
 * Access Controls – Support All Permissions Access Controls now support all permissions available in a Salesforce org, including permissions outside predefined categories.
-* Partial syncing of Data Classifications to Salesforce Users can now choose which detected regulations to sync back to Salesforce on a per-field basis, with clear indicators for not synced classifications.
-* Improved default view for Data Classification fields The Data Classification table now shows only fields created in the past three months by default, helping to focus on recent changes.
-* Additional filtering in Data Classification New filters allow fields to be selected by Field Name and/or Sync status (Synced, Not Synced, Partially Synced).
-* Visibility for unclassified fields Fields that weren’t classified now appear in the Data Classification table and are clearly marked as “None Detected,” with optional manual data scan action available.
-* Expanded email domain support for Support Login Access (autorabit.com, autorabit.us) Support Login Access now allows authorized AutoRABIT support users from an additional approved email domain, while maintaining existing validation and audit.
-* Improved stability of chatbot responses Enhanced handling and validation ensure more consistent and reliable responses from Guard’s expert.
-* Updated menu and refreshed logo Minor UI updates improve visual consistency and overall user experience.
+* Partial syncing of Data Classifications to Salesforce - Users can now choose which detected regulations to sync back to Salesforce on a per-field basis, with clear indicators for not synced classifications.
+* Improved default view for Data Classification fields - The Data Classification table now shows only fields created in the past three months by default, helping to focus on recent changes.
+* Additional filtering in Data Classification - New filters allow fields to be selected by Field Name and/or Sync status (Synced, Not Synced, Partially Synced).
+* Visibility for unclassified fields - Fields that weren’t classified now appear in the Data Classification table and are clearly marked as “None Detected,” with optional manual data scan action available.
+* Expanded email domain support for Support Login Access (autorabit.com, autorabit.us) - Support Login Access now allows authorized AutoRABIT support users from an additional approved email domain, while maintaining existing validation and audit.
+* Improved stability of chatbot responses - Enhanced handling and validation ensure more consistent and reliable responses from Guard’s expert.
+* Updated menu and refreshed logo - Minor UI updates improve visual consistency and overall user experience.
 
 ### **Bug Fixes** <a href="#bug-fixes" id="bug-fixes"></a>
 
@@ -327,7 +327,7 @@ Fixed an intermittent issue that caused a “Session Token Expired” error when
 
 #### **Permission Explorer Stuck on Org Switch**
 
-Resolved loading issue when switching orgs with multiple permissions selected. Org switching complete successfully now (where applicable)
+Resolved loading issue when switching orgs with multiple permissions selected. Org switching completes successfully now (where applicable)
 
 #### **Invalid ZIP when no Records found**
 

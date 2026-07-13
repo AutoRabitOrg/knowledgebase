@@ -725,6 +725,7 @@
         * [Deleting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/delete-salesforce-data.md)
         * [Extracting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/extract-salesforce-data.md)
         * [Copy of Extracting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/extract-salesforce-data-1.md)
+        * [Copy of Extracting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/extract-salesforce-data-2.md)
         * [Inserting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/insert-salesforce-data.md)
         * [Updating Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/update-salesforce-data.md)
         * [Upserting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/upsert-salesforce-data.md)

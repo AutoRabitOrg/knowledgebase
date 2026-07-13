@@ -148,7 +148,7 @@ Flag if:&#x20;
 * \*SSN\* &#x20;
 * \*Password\* &#x20;
 
-👉 This is your PII exposure condition&#x20;
+This is your PII exposure condition&#x20;
 
 C. Apex Class Access (Public Logic Exposure)&#x20;
 
@@ -160,13 +160,13 @@ Flag if:&#x20;
 
 \<enabled>true\</enabled>&#x20;
 
-👉 Especially risky if:&#x20;
+Especially risky if:&#x20;
 
 * Classes expose: &#x20;
 * @AuraEnabled &#x20;
 * REST endpoints  &#x20;
 
-Parameters should be displayed as below:&#x20;
+Parameters should be displayed as shown below:&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (91).png" alt="" height="165" width="624">
 
@@ -279,7 +279,7 @@ We have verified that the rule sf:UnusedFormalParameter no longer raises false p
 
 **Description of issue:**  Misspelling in Project Report&#x20;
 
-**Details**:  When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet".&#x20;
+**Details**:  When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet."&#x20;
 
 We have updated error message to now display: “There are currently no issues in the project analysis.”&#x20;
 

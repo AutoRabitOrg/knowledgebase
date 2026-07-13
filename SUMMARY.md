@@ -1294,6 +1294,7 @@
     * [Backup Configuration for your Salesforce Org](product-guides/vault/ncino/backup-configuration-for-your-salesforce-org.md)
     * [Registering nCino configured Salesforce Org](product-guides/vault/ncino/registering-ncino-configured-salesforce-org.md)
     * [Restoring nCino Features](product-guides/vault/ncino/restoring-ncino-features.md)
+  * [Anomaly Detection](product-guides/vault/anomaly-detection.md)
 * [AutoRABIT Vault Freemium](product-guides/autorabit-vault-freemium/README.md)
   * [User\_Registration](product-guides/autorabit-vault-freemium/user_registration.md)
   * [ORG\_Registration](product-guides/autorabit-vault-freemium/org_registration.md)

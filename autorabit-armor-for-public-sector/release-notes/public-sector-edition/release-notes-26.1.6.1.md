@@ -11,7 +11,7 @@
 
 ***
 
-## 1. Overview
+### 1. Overview
 
 ARMOR release 26.1.6.1 is a **security-only patch release** focused exclusively on addressing identified vulnerabilities in the Public Sector environment.
 
@@ -21,9 +21,9 @@ This release applies targeted updates to underlying Red Hat Enterprise Linux pac
 
 ***
 
-## 2. Scope of Changes
+### 2. Scope of Changes
 
-### In Scope
+#### In Scope
 
 Security vulnerability remediation only:
 
@@ -32,13 +32,13 @@ Security vulnerability remediation only:
 * `arm-worker` service
 * `arm-keycloak-service`
 
-### Out of Scope
+#### Out of Scope
 
 Any new functionality, customer-facing features, architecture changes, performance optimizations, or non-security-related issues are explicitly excluded from this release.
 
 ***
 
-## 3. Security Fixes Summary
+### 3. Security Fixes Summary
 
 A total of **36 individual vulnerability fixes** have been applied. These primarily consist of:
 
@@ -46,7 +46,7 @@ A total of **36 individual vulnerability fixes** have been applied. These primar
 * Java/Maven dependency updates (OpenTelemetry API and multiple Tomcat Embedded Core security advisories)
 * Node.js/npm package update (`ws` websocket library)
 
-### Vulnerability Count by Severity
+#### Vulnerability Count by Severity
 
 | Severity     | Count  |
 | ------------ | ------ |
@@ -58,11 +58,11 @@ A total of **36 individual vulnerability fixes** have been applied. These primar
 
 ***
 
-## 4. Detailed Fixes by Component
+### 4. Detailed Fixes by Component
 
 The following tables list every vulnerability addressed in this release, grouped by the affected ARMOR service. Each entry corresponds to a tracked JIRA issue under the `PubSec-Vulns` label set.
 
-### arm-build-deploy
+#### arm-build-deploy
 
 **1 vulnerability addressed** – OpenTelemetry Java client library update.
 
@@ -70,7 +70,7 @@ The following tables list every vulnerability addressed in this release, grouped
 | -------- | -------- | ----------------------------------------------------------------------------------------- |
 | SEC-2132 | 3        | Java (Maven) Security Update for io.opentelemetry:opentelemetry-api (GHSA-rcgg-9c38-7xpx) |
 
-### arm-version-control
+#### arm-version-control
 
 **11 vulnerabilities addressed** – Mix of Red Hat OS package updates and one Node.js `ws` library fix.
 
@@ -88,7 +88,7 @@ The following tables list every vulnerability addressed in this release, grouped
 | SEC-2147 | 3        | Red Hat Update for glibc (RHSA-2026:20597)                               |
 | SEC-2148 | 3        | Red Hat Update for p11-kit (RHSA-2026:18599)                             |
 
-### arm-worker
+#### arm-worker
 
 **15 vulnerabilities addressed** – Includes the single Sev 2 Tomcat Embedded Core issue plus multiple Red Hat package and additional Tomcat GHSAs.
 
@@ -110,7 +110,7 @@ The following tables list every vulnerability addressed in this release, grouped
 | SEC-2168 | 3        | Red Hat Update for Open Secure Sockets Layer (OpenSSL) (RHSA-2026:19218)                         |
 | SEC-2169 | 3        | Red Hat Update for systemd (RHSA-2026:19213)                                                     |
 
-### arm-keycloak-service
+#### arm-keycloak-service
 
 **9 vulnerabilities addressed** – Red Hat OS package updates (including a python3.9 update specific to this service).
 

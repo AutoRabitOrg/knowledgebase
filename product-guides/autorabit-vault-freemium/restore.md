@@ -70,7 +70,7 @@ The schema view presents the selected object and its related objects. Search Obj
 
 ![](<../../.gitbook/assets/Unknown image (11) (1)>)
 
-Include All Child Objects marks child object inclusion for the selected object. The Common Child Objects control identifies child objects that can be included as part of the restore scope. These relationship controls help ensure dependent data is available when the restore job runs.
+Include All Child Objects marks child object inclusion for the selected object. The Common Child Objects control identifies child objects that can be included as part of the restore scope. These relationship controls help make dependent data is available when the restore job runs.
 
 ![](<../../.gitbook/assets/Unknown image (12) (1)>)
 

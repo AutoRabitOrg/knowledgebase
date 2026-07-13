@@ -54,6 +54,10 @@ Fixed an issue in the Old UI where the **Save** button did not respond when crea
 
 Fixed an issue in the New UI where navigating directly to the **Release Labels** page from the left-side menu caused the page to remain in an infinite loading state. The navigation flow has been corrected to ensure the Release Labels page loads successfully when accessed directly.
 
+#### **Package.xml Upload Fix (Old UI)**
+
+Fixed an issue in the Classic (Old) UI where clicking **Select Package.xml** while creating a Custom Deployment from **Package.xml** did not respond or open the local file browser. The upload component has been corrected to initialize properly, allowing users to successfully select and upload **Package.xml** and ZIP deployment files during deployment creation. This issue was limited to the Classic UI and did not affect the New UI.
+
 ***
 
 ## DataLoader & DataLoader Pro Release Notes **26.3.2**

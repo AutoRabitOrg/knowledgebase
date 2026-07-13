@@ -109,3 +109,23 @@ You can suspend users if you have Manage Users permissions or Administrator priv
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Click on the **Email** icon to resend email activation to a user email id.
+
+## Download User Information
+
+The Manage Users module opens with the USERS tab selected. Vault displays the available user records in a table with columns for Name, Email, Created Date, Type, Activate, MFA, Roles, and Actions.
+
+The Search field supports narrowing the visible records. The Columns control manages the columns displayed in the table. The pagination controls show the number of records available in the current view.
+
+When org-level access control is enabled, the Enable org. access control toggle appears in the enabled state. This setting controls whether org access can be managed at the user level.
+
+<figure><img src="../../../.gitbook/assets/image (2667).png" alt=""><figcaption></figcaption></figure>
+
+## Export Users
+
+The EXPORT USERS action is available from the USERS tab. Selecting EXPORT USERS starts the export process for the user records available from the Manage Users view.
+
+After the export is triggered, the button changes to EXPORTING... and becomes inactive while Vault processes the request. This prevents duplicate export requests from being submitted during the same operation.
+
+Once the export process completes, Vault provides the generated user export file through the browser download behavior configured for the application session.
+
+<figure><img src="../../../.gitbook/assets/image (2668).png" alt=""><figcaption></figcaption></figure>

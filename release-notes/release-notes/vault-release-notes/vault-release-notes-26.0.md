@@ -4,7 +4,7 @@
 
 ## Vault Release Notes 26.2.1
 
-**Release Date: 15 Jul 2026**
+**Release Date:** 15 Jul 2026
 
 #### Search & Compare Logs Downloaded in CSV Instead of ZIP Format <a href="#search-and-compare-logs-downloaded-in-csv-instead-of-zip-format" id="search-and-compare-logs-downloaded-in-csv-instead-of-zip-format"></a>
 
@@ -20,13 +20,13 @@ Implemented the  MSA(Master Software Agreement) terms & conditions on the AutoRA
 
 Resolved an issue where Live Data Masking jobs failed in GCP and Azure environments despite records being processed successfully. The failure was caused by a missing log file during the cloud storage upload step. Jobs now complete successfully across all supported cloud setups.
 
-#### User Creation Failing Due to Null USER\_TIER Value
+#### Failed Sub User Creation
 
 Fixed a critical issue where adding new users in Vault failed with a database constraint violation. The User Tier field is now correctly populated during user creation, ensuring users can be added without errors.
 
 #### Suppress Bucket Versioning Validation with Exception Logging <a href="#suppress-bucket-versioning-validation-with-exception-logging" id="suppress-bucket-versioning-validation-with-exception-logging"></a>
 
-Bucket versioning permission validation is temporarily suppressed to assess customer impact before enforcement. Exceptions are now logged to a dedicated file to identify affected customers, enabling a controlled rollout of the validation.<br>
+Bucket versioning permission validation is temporarily suppressed to assess customer impact before enforcement. Exceptions are now logged to a dedicated file to identify affected customers, enabling a controlled rollout of the validation.
 
 ## Vault Release Notes 26.2.0
 

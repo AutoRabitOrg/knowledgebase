@@ -4,10 +4,6 @@
 
 **Release Date: 12 July 2026**
 
-#### SonarQube Analysis Report Synchronization Fix <a href="#sonarqube-analysis-report-synchronization-fix" id="sonarqube-analysis-report-synchronization-fix"></a>
-
-Fixed an issue where ARM displayed empty SonarQube SCA reports despite successful analysis and available findings in SonarQube. The SonarQube integration has been updated to correctly retrieve and display analysis results, ensuring ARM accurately reflects the corresponding SonarQube findings across EZ-Commit, EZ-Merge, Deployments, and CI Jobs.
-
 #### Salesforce CLI Upgrade <a href="#salesforce-cli-upgrade" id="salesforce-cli-upgrade"></a>
 
 Upgraded the bundled **Salesforce CLI (SF CLI)** from **v2.130.9** to **v2.140.6** to incorporate the latest Salesforce CLI enhancements, stability improvements, and bug fixes. This update improves compatibility with the latest Salesforce platform capabilities and ensures continued support for ARM operations that rely on the Salesforce CLI.
@@ -46,11 +42,11 @@ Fixed an issue in the New UI where Provar configuration fields were not displaye
 
 Fixed multiple issues in the New UI where the **Baseline Branch** dropdown was not displayed for SonarQube Static Code Analysis. The Baseline Branch selection is now available and retained correctly across EZ-Merge, CI Job Edit, and SCA Label workflows, ensuring a consistent configuration experience with CodeScan.
 
-### Credential Creation Save Button Fix - Old UI
+#### Credential Creation Save Button Fix - Old UI
 
 Fixed an issue in the Old UI where the **Save** button did not respond when creating a new credential due to a client-side loading error. The credential creation dialog now loads correctly, allowing users to save new credentials successfully.
 
-### Release Labels Loading Fix - New UI
+#### Release Labels Loading Fix - New UI
 
 Fixed an issue in the New UI where navigating directly to the **Release Labels** page from the left-side menu caused the page to remain in an infinite loading state. The navigation flow has been corrected to ensure the Release Labels page loads successfully when accessed directly.
 
@@ -64,7 +60,7 @@ Fixed an issue in the Classic (Old) UI where clicking **Select Package.xml** whi
 
 **Release Date:** **12 July 2026**
 
-### Knowledge KAV language filter not auto-populating in New UI <a href="#dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui" id="dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui"></a>
+#### Knowledge KAV language filter not auto-populating in New UI <a href="#dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui" id="dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui"></a>
 
 Fixed an issue in the New UI where the **Language** filter on the Knowledge KAV object did not prefill with the existing language value. The filter behavior now matches the Old UI.
 
@@ -72,7 +68,7 @@ Fixed an issue in the New UI where the **Language** filter on the Knowledge KAV 
 
 ## ARM **Release Notes 26.3.1.1**
 
-**Release Date: 6th July 2026**
+**Release Date: 6 July 2026**
 
 #### SSO Login Redirection Fix
 
@@ -81,6 +77,8 @@ Fixed an issue that prevented users from logging in through Single Sign-On (SSO)
 **Impacted Areas:**
 
 * SSO Authentication
+
+***
 
 ## ARM **Release Notes 26.3.1**
 

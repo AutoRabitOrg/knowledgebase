@@ -1,11 +1,6 @@
-# About IZ-Suite
+# About IZ Suite
 
-## Steps for migration&#x20;
 
-* Take files from the folders in IZ Suite Docs that Chethan sent&#x20;
-* Copy markdown in the same file structure that is present
-* Add images that are linked to the file by searching for them in the file sent by Chethan, MUST CHECK when opening markdown, because it doesn't show up once pasted in Gitbook.&#x20;
-* Add in references to other pages linked at bottom of each page.&#x20;
 
 ## Introduction
 

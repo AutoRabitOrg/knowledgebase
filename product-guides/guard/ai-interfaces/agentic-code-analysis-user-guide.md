@@ -115,7 +115,7 @@ Each repository has an **Actions** menu that lets you manage that specific repos
 | Edit            | Edit the repository's registration details and scan settings (name, CLI timeout, visibility, tests analysis, exclusions, severities, access token, etc).                                                                                                                                                                                       |
 | Re-Authenticate | Update or refresh the access token used to authenticate.                                                                                                                                                                                                                                                                                       |
 | Rules           | View and customise the ruleset applied to this repository (edit or toggle Standard rules and create Custom Rules (see [Customise your Ruleset](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/~/edit/~/changes/4694/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-4.-customise-your-ruleset)). |
-| Analyse Rules   | Run an AI analysis of the repository's ruleset.                                                                                                                                                                                                                                                                                                |
+| Analyse Rules   | Run AI-powered noisy rule detection.                                                                                                                                                                                                                                                                                                           |
 | Scan Branch     | Trigger a scan of a branch for this repository.                                                                                                                                                                                                                                                                                                |
 | Delete          | Remove the repository.                                                                                                                                                                                                                                                                                                                         |
 
@@ -152,6 +152,26 @@ b. You will then be taken through each extracted rule for review. Please check t
 &#x20;
 
 Once you are happy with your rule set, you are ready to run a scan from the CLI. If you already have the Guard CLI set up, continue running Agentic Code Review.
+
+### Analyse Rules (Noisy rules detection) <a href="#id-5.-download-and-install-the-cli" id="id-5.-download-and-install-the-cli"></a>
+
+Over time, some rules generate a high volume of low-value findings for a given codebase, stylistic or convention-based rules that a team is unlikely to act on. **Analyse Rules** uses AI to inspect the rules enabled for a repository against a branch's code and suggest which ones are likely noise, so you can disable them for that repository.
+
+To run it, go to **Agentic Code Analysis** → **Repositories**, open the **Actions** menu for the repository, and select **Analyse Rules:**
+
+1. Pick a branch.&#x20;
+2. Wait for analysis.&#x20;
+3.  Review the suggested rules. The AI presents the rules it identified as likely noise for the repository, with:
+
+    * Rule — the rule identifier (e.g. `sonar:S103`).
+    * Name — the rule name (where available).
+    * Reason — an explanation of why the rule is considered noisy for this codebase.
+    * Confidence — the AI's confidence in the suggestion (e.g., High).
+
+    All suggested rules are checked by default. Checked rules will be disabled for this repository only. Uncheck any rules you want to keep enabled.
+4. Click Disable selected to apply.&#x20;
+
+The selected rules will be disabled for this repository (other repositories are unaffected).
 
 ### Download and install the CLI <a href="#id-5.-download-and-install-the-cli" id="id-5.-download-and-install-the-cli"></a>
 

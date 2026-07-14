@@ -60,6 +60,10 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+By default, refresh tokens are valid for **365 days**.
+{% endhint %}
+
 ### 4) Flow Enablement <a href="#id-4-turnment" id="id-4-turnment"></a>
 
 1. In **Flow Enablement**, select **Enable Authorization Code and Credentials Flow**.

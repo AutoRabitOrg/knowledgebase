@@ -173,6 +173,16 @@ To run it, go to **Agentic Code Analysis** → **Repositories**, open the **Acti
 
 The selected rules will be disabled for this repository (other repositories are unaffected).
 
+### Test Quality
+
+Agentic Code Analysis can assess the quality of your tests, not just your source code. Test analysis must be enabled for the repository (turn on **Enable tests analysis** in the repository's settings **Agentic Code Analysis** → **Repositories** → **Actions** → **Edit**), where you can also configure the Tests Folders glob patterns that tell AutoRABIT Guard which files to treat as tests.&#x20;
+
+Once enabled, tests are analyzed automatically on future scans (and can also be run from the CLI with `--check-tests`).
+
+When a scan includes test analysis, the scan detail view shows a Test Quality section giving you an at-a-glance view of how well your tests are written. It summarises an overall Avg score across all scored tests, a breakdown by severity band (Critical, Major, Minor, Info), and results grouped by test files.
+
+If a repository doesn't have test analysis enabled, scans still run normally, and the scan simply shows _No tests analyzed in this scan_.
+
 ### Download and install the CLI <a href="#id-5.-download-and-install-the-cli" id="id-5.-download-and-install-the-cli"></a>
 
 Agentic scans are currently only supported from the CLI interface. Agentic Code Analysis uses the Guard CLI distributed as a Salesforce CLI plugin (`sf guard …`). This requires a bit of technical setup - so if you don’t have these installed already, you need Node.js, the global Salesforce CLI, and the plugin bundle from your Guard instance.

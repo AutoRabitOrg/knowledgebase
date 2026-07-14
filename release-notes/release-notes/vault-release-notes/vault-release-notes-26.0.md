@@ -1,46 +1,47 @@
-# Vault Release Notes 26.0
+# AutoRABIT Vault Release Notes 26.0
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
-## Vault Release Notes 26.2.1
+## AutoRABIT Vault Release Notes 26.2.1
 
 **Release Date:** 15 Jul 2026
 
 #### Search & Compare Logs Downloaded in CSV Instead of ZIP Format <a href="#search-and-compare-logs-downloaded-in-csv-instead-of-zip-format" id="search-and-compare-logs-downloaded-in-csv-instead-of-zip-format"></a>
 
-Fixed an issue where downloading logs from the Search & Compare Job History page produced a CSV file instead of the expected ZIP format. Logs are now correctly downloaded as a ZIP archive containing the complete log files.
-
-#### Freemium Signup & Sign-In Experience
-
-Implemented the  MSA(Master Software Agreement) terms & conditions on the AutoRABIT Vault Freemium flow.
-
-<figure><img src="../../../.gitbook/assets/4.1.png" alt=""><figcaption></figcaption></figure>
+Fixed an issue where downloading logs from the Search & Compare Job History page produced a CSV file instead of the expected ZIP format. Logs are now correctly downloaded as a ZIP archive containing the complete log files.<br>
 
 #### Live Data Masking Job Failing in GCP and Azure Setups <a href="#live-data-masking-job-failing-in-gcp-and-azure-setups" id="live-data-masking-job-failing-in-gcp-and-azure-setups"></a>
 
-Resolved an issue where Live Data Masking jobs failed in GCP and Azure environments despite records being processed successfully. The failure was caused by a missing log file during the cloud storage upload step. Jobs now complete successfully across all supported cloud setups.
+Resolved an issue where Live Data Masking jobs failed in GCP and Azure environments despite records being processed successfully. The failure was caused by a missing log file during the cloud storage upload step. Jobs now complete successfully across all supported cloud setups.<br>
 
-#### Failed Sub User Creation
+#### Fixed an Issue With Sub-User Creation <a href="#fixed-an-issue-with-sub-user-creation" id="fixed-an-issue-with-sub-user-creation"></a>
 
-Fixed a critical issue where adding new users in Vault failed with a database constraint violation. The User Tier field is now correctly populated during user creation, ensuring users can be added without errors.
+Fixed a critical issue where adding sub-users failed. The user is now correctly populated during user creation, ensuring users can be added without errors.<br>
 
-#### Suppress Bucket Versioning Validation with Exception Logging <a href="#suppress-bucket-versioning-validation-with-exception-logging" id="suppress-bucket-versioning-validation-with-exception-logging"></a>
+#### Support for S3 Bucket Versioning <a href="#support-for-s3-bucket-versioning.1" id="support-for-s3-bucket-versioning.1"></a>
 
-Bucket versioning permission validation is temporarily suppressed to assess customer impact before enforcement. Exceptions are now logged to a dedicated file to identify affected customers, enabling a controlled rollout of the validation.
+AutoRABIT Vault now supports Amazon S3 bucket versioning as an additional security measure to protect backup files from accidental overwrites or deletions.
 
-## Vault Release Notes 26.2.0
+Customers using their own S3 storage buckets are strongly encouraged to enable the required versioning permissions in the bucket’s IAM policy to improve backup resilience and recoverability.
+
+For the recommended IAM policy updates, refer to the following documentation:
+
+[S3 IAM Policy Permissions | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/vault-faqs/common-restore-errors-and-solutions/s3-iam-policy-permissions#step-6-add-the-s3-versioning-permissions-to-the-existing-policy)\
+[DT-13716: Ignore Bucket Version check validationDone](https://autorabit.atlassian.net/browse/DT-13716)
+
+## AutoRABIT Vault Release Notes 26.2.0
 
 **Release Date: 08 Jul 2026**
 
 #### Salesforce Data Anomaly Detection and Recovery <a href="#dt-10279-salesforce-data-anomaly-detection-and-recovery" id="dt-10279-salesforce-data-anomaly-detection-and-recovery"></a>
 
-Vault now includes Salesforce data anomaly detection and recovery capabilities. This enhancement helps identify unusual Salesforce data changes, review anomalies through dashboards and alerts, and recover affected records with greater precision.
+AutoRABIT Vault now includes Salesforce data anomaly detection and recovery capabilities. This enhancement helps identify unusual Salesforce data changes, review anomalies through dashboards and alerts, and recover affected records with greater precision.
 
 <figure><img src="../../../.gitbook/assets/1 (7).png" alt=""><figcaption></figcaption></figure>
 
 #### Context-Aware Synthetic Data Masking <a href="#dt-10880-context-aware-synthetic-data-masking" id="dt-10880-context-aware-synthetic-data-masking"></a>
 
-Vault now supports synthetic data masking. Masked values are generated based on the original data type, such as names, email addresses, and phone numbers, that are realistic while helping protect sensitive information.
+AutoRABIT Vault now supports synthetic data masking. Masked values are generated based on the original data type, such as names, email addresses, and phone numbers, that are realistic while helping protect sensitive information.
 
 <figure><img src="../../../.gitbook/assets/Synthetic Data Gen.png" alt=""><figcaption></figcaption></figure>
 
@@ -50,9 +51,9 @@ Pattern-based field masking has been added to support more precise protection of
 
 <figure><img src="../../../.gitbook/assets/Pattern Based Masking.png" alt=""><figcaption></figcaption></figure>
 
-#### Secure Vault APIs for AutoRABIT Tool Integrations <a href="#dt-10874-secure-vault-apis-for-autorabit-tool-integrations" id="dt-10874-secure-vault-apis-for-autorabit-tool-integrations"></a>
+#### Secure AutoRABIT Vault APIs for AutoRABIT Tool Integrations <a href="#dt-10874-secure-vault-apis-for-autorabit-tool-integrations" id="dt-10874-secure-vault-apis-for-autorabit-tool-integrations"></a>
 
-Secure Vault APIs have been introduced to support machine-to-machine integrations with other AutoRABIT tools. These APIs enable external workflows to trigger Vault jobs, track job progress, and retrieve results more efficiently.
+Secure AutoRABIT Vault APIs have been introduced to support machine-to-machine integrations with other AutoRABIT tools. These APIs enable external workflows to trigger AutoRABIT Vault jobs, track job progress, and retrieve results more efficiently.
 
 <figure><img src="../../../.gitbook/assets/Token Gen (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +67,7 @@ AWS SDK is upgraded to address known vulnerabilities and long-term maintainabili
 
 #### Column Adjustment and View Customization <a href="#dt-12135-column-adjustment-and-view-customization" id="dt-12135-column-adjustment-and-view-customization"></a>
 
-Supported Vault views now allow columns to be resized and selected based on preference. This improves readability and helps focus on the most relevant information in table-based views.
+Supported AutoRABIT AutoRABIT Vault views now allow columns to be resized and selected based on preference. This improves readability and helps focus on the most relevant information in table-based views.
 
 #### Full Backup Execution Reliability for Sandbox Orgs <a href="#dt-13341-full-backup-execution-reliability-for-sandbox-orgs" id="dt-13341-full-backup-execution-reliability-for-sandbox-orgs"></a>
 
@@ -74,12 +75,12 @@ An issue where full backup jobs for sandbox orgs could remain stuck for an exten
 
 ***
 
-## Vault Release Notes 26.1.9
+## AutoRABIT Vault Release Notes 26.1.9
 
 **Release Date: 24 Jun 2026**
 
 **Sandbox Backup — Incorrect Failure Status on Partial Component Errors**\
-Addressed an issue in the Vault Sandbox Backup module where a backup job was reported as **Failed** even when the majority of components were successfully backed up. The failure was triggered by specific error types in individual components, causing the entire job status to reflect as a complete failure rather than a partial success. This fix improves the accuracy and clarity of backup job status reporting.
+Addressed an issue in the AutoRABIT Vault Sandbox Backup module where a backup job was reported as **Failed** even when the majority of components were successfully backed up. The failure was triggered by specific error types in individual components, causing the entire job status to reflect as a complete failure rather than a partial success. This fix improves the accuracy and clarity of backup job status reporting.
 
 **Backup Module: Toggle State Retention on the Data Tab**
 
@@ -87,7 +88,7 @@ Fixed an issue in the Backup module where changing the ON/OFF toggle on the **Da
 
 ***
 
-## Vault Release Notes 26.1.8
+## AutoRABIT Vault Release Notes 26.1.8
 
 **Release Date: 10 Jun 2026**
 
@@ -95,23 +96,23 @@ Fixed an issue in the Backup module where changing the ON/OFF toggle on the **Da
 
 Fixed a validation issue where the Backup Configuration retention field was restricted to a maximum of 9 years. Users can now configure retention values up to 99 years, enabling proper long-term retention policies.
 
-**Vault Replicate Job Schedule Issue**
+AutoRABIT **Vault Replicate Job Schedule Issue**
 
 Fixed an issue where scheduled Replication Jobs were not triggering at their configured times. Customers who configured a Replication Job with a daily schedule and specific interval observed that the job would not trigger as expected.
 
 ***
 
-## Vault Release Notes 26.1.7
+## AutoRABIT Vault Release Notes 26.1.7
 
 **Release Date: 3 June 2026**
 
-**Export Vault User List with Access & Login Details**
+**Export** AutoRABIT **Vault User List with Access & Login Details**
 
-Vault Admins can now export the complete list of users along with key access and activity details. This enables faster user access reviews, simplifies compliance and audit reporting, and reduces dependency on support for user access reports.
+AutoRABIT Vault Admins can now export the complete list of users along with key access and activity details. This enables faster user access reviews, simplifies compliance and audit reporting, and reduces dependency on support for user access reports.
 
-**Vault Logging Out Immediately After Login**
+AutoRABIT **Vault Logging Out Immediately After Login**
 
-Fixed an issue where Vault was logging users out immediately after a successful login, preventing access to the application entirely.
+Fixed an issue where AutoRABIT Vault was logging users out immediately after a successful login, preventing access to the application entirely.
 
 **Email Messages & Campaign Members Failing During Replication**
 
@@ -131,13 +132,13 @@ Fixed a bug where saved schema settings were lost after editing and saving a Rep
 
 ***
 
-## Vault Release Notes 26.1.6
+## AutoRABIT Vault Release Notes 26.1.6
 
 **Release Date: 20 May 2026**
 
-**Restore Summary Not Visible in Vault Job**
+**Restore Summary Not Visible in** AutoRABIT **Vault Job**
 
-Fixed an issue where the Restore Summary was not visible in the Vault job.
+Fixed an issue where the Restore Summary was not visible in the AutoRABIT Vault job.
 
 **Backup Jobs Not Loading in the Replicate Module**
 
@@ -145,7 +146,7 @@ Resolved an issue where Backup Job details were not displayed in the Replicate m
 
 ***
 
-## Vault Release Notes 26.1.5
+## AutoRABIT Vault Release Notes 26.1.5
 
 **Release Date: 06 May 2026**
 
@@ -169,7 +170,7 @@ Resolved an issue where Backup Job details were not displayed in the Replicate m
 
 * Fixed a UI freeze that occurred when selecting/deselecting Data or Metadata objects during Backup and Replication configuration setup.
 
-## Vault Release Notes 26.1.4
+## AutoRABIT Vault Release Notes 26.1.4
 
 **Release Date: 29 April 2026**
 
@@ -187,7 +188,7 @@ Corrected the navigation flow after deleting a configuration from the Archive se
 
 ***
 
-## Vault Release Notes 26.1.3
+## AutoRABIT Vault Release Notes 26.1.3
 
 **Release Date: 22 April 2026**
 
@@ -231,13 +232,13 @@ This fix ensures:
 
 ***
 
-## Vault Release Notes 26.1.2
+## AutoRABIT Vault Release Notes 26.1.2
 
 **Release Date: 08 April 2026**
 
-**Vault On‑prem search & compare failure**
+AutoRABIT **Vault On‑prem search & compare failure**
 
-* Resolved failures in Vault On‑prem search and compare jobs to ensure jobs complete successfully.
+* Resolved failures in AutoRABIT Vault On‑prem search and compare jobs to ensure jobs complete successfully.
 
 **Partial child records Fetched When “Include All Child Objects” selected**
 
@@ -295,9 +296,9 @@ Fixed an issue where data type mismatches between source data and schema caused 
 
 * Fixed synthetic backup logic so generated record counts now align with actual data volumes.
 
-**Vault on‑prem checklist**
+AutoRABIT **Vault on‑prem checklist**
 
-* Introduced/updated an on‑prem validation checklist for Vault deployments to standardize setup and verification.
+* Introduced/updated an on‑prem validation checklist for AutoRABIT Vault deployments to standardize setup and verification.
 
 **Performance degradation in parallel Search & Compare**
 
@@ -309,7 +310,7 @@ Fixed an issue where data type mismatches between source data and schema caused 
 
 ***
 
-## Vault Release Notes 26.1.1
+## AutoRABIT Vault Release Notes 26.1.1
 
 **Release Date: 25 March 2026**
 
@@ -365,8 +366,8 @@ Fixed an issue where updates to the selected object in Search & Compare configur
 **Provided Retry option for Live Data Masking**\
 Introduced a Retry option for Live Data Masking jobs, allowing users to quickly rerun failed masking operations without recreating the configuration.
 
-**Unable to access/login to Vault**\
-Fixed a login issue that prevented some users from accessing Vault, improving authentication stability and reducing access errors.
+**Unable to access/login to** AutoRABIT **Vault**\
+Fixed a login issue that prevented some users from accessing AutoRABIT Vault, improving authentication stability and reducing access errors.
 
 **Restore seems stuck**\
 Resolved an issue where certain restore jobs are not retaining the partial selection of the records. After the fix is rolled-out the partial selection of the records is being retained.
@@ -376,13 +377,13 @@ Fixed an issue that prevented replication of files larger than 10 MB, ensuring l
 
 ***
 
-## Vault Release Notes 26.1.0
+## AutoRABIT Vault Release Notes 26.1.0
 
 **Release Date: 4 March 2026**
 
 **Search Across Backups and Archives**
 
-Vault now enables advanced searches across Backups and Archives within a selectable six-month time span using an intuitive query builder. Users can define specific criteria, execute the search configuration, and identify data from Archives & Backups.
+AutoRABIT Vault now enables advanced searches across Backups and Archives within a selectable six-month time span using an intuitive query builder. Users can define specific criteria, execute the search configuration, and identify data from Archives & Backups.
 
 <figure><img src="../../../.gitbook/assets/1 (4).png" alt=""><figcaption></figcaption></figure>
 

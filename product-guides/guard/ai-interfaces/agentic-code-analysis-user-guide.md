@@ -62,27 +62,70 @@ The Repositories page links your source control repositories to AutoRABIT Guard 
 Repositories are added to Guard automatically when a scan is first executed from the Guard CLI.
 {% endhint %}
 
+You can find your registered repositories under **Agentic Code Analysis** → **Repositories** in the navigation menu. This page manages registered repositories and repository-level Agentic Code Analysis settings.&#x20;
+
+Each entry shows the repository Name, URL, Provider (e.g. GitHub, Bitbucket Cloud), Created At date, Visibility (Public / Private), and Status, along with an Actions menu for managing the repository.
+
 #### How to Manually Register a Repository (optional) <a href="#how-to-manually-register-a-repository-optional" id="how-to-manually-register-a-repository-optional"></a>
 
-You **do not need to** manually register a repository before using the AutoRABIT Guard CLI. However, if you choose you can do so by:
+You **do not need to** manually register a repository before using the AutoRABIT Guard CLI. However, if you choose, you can do so by:
 
-1. In Guard, go to **Settings** → **Repositories**.
-2. Click **Add repository**.
-3. Provide:
-   * **Name**: label for your reference (e.g. `flowcenter-services`).
-   * **Repository URL:** full URL e.g. `https://bitbucket.org/ar-engineering/flowcenter-services`
-   * **CLI timeout:** The maximum time a Guard CLI execution can run before timing out, in minutes e.g. 30 minutes
+1. In AutoRABIT Guard, go to **Agentic Code Analysis** → **Repositories**.
+2. Click **Add Repository**.
+3.  Provide the following:
+
+    * Repository Name
+
+    A label for your reference (leave blank to derive the name automatically from the URL).
+
+    * Repository URL
+
+    The full URL, e.g. `https://github.com/org/repo`.
+
+    * CLI Timeout
+
+    The maximum time (in minutes) a Guard CLI execution can run. If a run exceeds this limit it will be automatically stopped (e.g. 30 minutes).
+
+    * Visibility
+
+    Set the repository to Private or Public.
+
+    * Enable tests analysis: Toggle on to analyze test files. When enabled, you can configure Tests Folders — glob patterns whose files are treated as tests. These files are excluded from copy-paste detection and used for test analysis (e.g. `**/test/**`, `**/*.spec.*`, `**/*Test.java`).
+    * Sources Exclusions
+
+    Folder glob patterns excluded from all scans, additive to `.gitignore` (e.g. `**/node_modules/**`, `**/dist/**`, `**/build/**`).
+
+    * Severities included in AI review
+
+    Select which severities are reviewed by AI. Only selected severities will be reviewed by AI; unselected severities will be reported without AI review.&#x20;
+
+    * Authenticate Repository (Optional) → Access Token
+
+    A personal or service account token from your provider (GitHub, GitLab, etc.). AutoRABIT Guard uses it to authenticate CLI calls and post recommendations as pull request comments on your behalf.
 4. Save. The repository appears in the list.
 
-<figure><img src="../../../.gitbook/assets/image (2540).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-07-13 134723.png" alt="" width="374"><figcaption></figcaption></figure>
+
+#### Repository Actions
+
+Each repository has an **Actions** menu that lets you manage that specific repository and its Agentic Code Analysis settings:
+
+| Action          | Description                                                                                                                                                                                                                                                                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Edit            | Edit the repository's registration details and scan settings (name, CLI timeout, visibility, tests analysis, exclusions, severities, access token, etc).                                                                                                                                                                                       |
+| Re-Authenticate | Update or refresh the access token used to authenticate.                                                                                                                                                                                                                                                                                       |
+| Rules           | View and customise the ruleset applied to this repository (edit or toggle Standard rules and create Custom Rules (see [Customise your Ruleset](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/~/edit/~/changes/4694/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-4.-customise-your-ruleset)). |
+| Analyse Rules   | Run an AI analysis of the repository's ruleset.                                                                                                                                                                                                                                                                                                |
+| Scan Branch     | Trigger a scan of a branch for this repository.                                                                                                                                                                                                                                                                                                |
+| Delete          | Remove the repository.                                                                                                                                                                                                                                                                                                                         |
 
 ### Customise your Ruleset <a href="#id-4.-customise-your-ruleset" id="id-4.-customise-your-ruleset"></a>
 
 By default, Agentic Code Analysis uses a carefully created ruleset of best-practice security checks on your Salesforce code. But of course, we appreciate that every organisation has it’s own unique requirements, so the rule set is fully customisable.
 
-Each rule from the Standard ruleset can be edited within AutoRABIT Guard or disabled. Within **Agentic Code Analysis** → **Rules,** select a rule you would like to edit to open the editing pop-up. Click **Save Changes** to apply your edits.
+Each rule from the Standard ruleset can be edited within AutoRABIT Guard or disabled. Within **Agentic Code Analysis** → **Repositories** → **Actions** → **Rules,** select a rule you would like to edit to open the editing pop-up. Click **Save Changes** to apply your edits.
 
-In addition, you can create new Custom Rules either by uploading a pdf file or typing your rule in natural language. Go to **Agentic Code Analysis** → **Rules** and click the **Create Rule** button.
+In addition, you can create new Custom Rules either by uploading a pdf file or typing your rule in natural language. Go to **Agentic Code Analysis** → **Repositories** → **Actions** → **Rules** → **Custom Rules** and click the **Create Rule** button.
 
 <figure><img src="../../../.gitbook/assets/image (2542).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -98,9 +141,13 @@ In addition, you can create new Custom Rules either by uploading a pdf file or t
 
     <figure><img src="../../../.gitbook/assets/image (2544).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    b. You will then be taken through each extracted rule for review. Please check these carefully, along with the properties associated with each rule, as AI can make mistakes. The flow will first take you through rules that have an existing match within your rule set (across both standard and custom) - you can choose to remove one of the duplicates or keep both.
 
-    <figure><img src="../../../.gitbook/assets/image (2545).png" alt="" width="375"><figcaption></figcaption></figure>
+
+b. You will then be taken through each extracted rule for review. Please check these carefully, along with the properties associated with each rule, as AI can make mistakes. The flow will first take you through rules that have an existing match within your rule set (across both standard and custom) - you can choose to remove one of the duplicates or keep both.
+
+
+
+<figure><img src="../../../.gitbook/assets/image (2545).png" alt="" width="375"><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -163,35 +210,66 @@ All agentic code scan results are saved in the Guard platform under **Agentic Co
 
 #### Main entry: AutoRABIT Guard <a href="#main-entry-autorabit-guard" id="main-entry-autorabit-guard"></a>
 
-1. From the Guard navigation, open **Agentic Code Analysis** → **Analysis Findings.**
-2. Filter by **context, period, repository** or **status**.
-3.  Open a scan to see:
+All Agentic Code Analysis scan results are saved in the AutoRABIT Guard platform. From the navigation menu, open **Agentic Code Analysis** → **Analysis Findings** to explore detected issues across your codebase, review details, and apply recommended fixes.
 
-    * Breakdown of findings by severity type.
-    * AI credits consumed.
-    * **Findings list**: file, line, rule id, severity.
+#### Analysis Findings list
 
-    <figure><img src="../../../.gitbook/assets/image (2546).png" alt=""><figcaption></figcaption></figure>
-4.  Drill into a finding to see the code context and suggested fix.
+The Analysis Findings page lists every scan with the following columns:
 
-    <figure><img src="../../../.gitbook/assets/image (2547).png" alt="" width="563"><figcaption></figcaption></figure>
-5. Download the patches for the whole scan or for each finding. Downloadable patches are produced only when **Advanced AI Suggestions** is enabled for the repository.
+| Column     | Description                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
+| Scan ID    | Unique identifier for the scan (e.g. `SCA-836`).                                                             |
+| Repository | The repository the scan was run against.                                                                     |
+| Findings   | Total number of findings detected in the scan.                                                               |
+| Context    | The scope of the scan — a Full Scan (entire project) or a Pull Request (showing the source → target branch). |
+| Date       | When the scan was run.                                                                                       |
+| Status     | Outcome of the scan (e.g. Success, Blocked).                                                                 |
 
-### Advanced AI Suggestions <a href="#id-8.-advanced-ai-suggestions" id="id-8.-advanced-ai-suggestions"></a>
+Use **Add Filter** to narrow the list. You can filter by:
 
-Advanced AI Suggestions enrich your findings with file-by-file code fixes. These show where the issue and exactly what to change, add, or delete. When enabled, suggested patches span all affected files, and you can download them for the whole scan or per finding (see [Section 7](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results)).
+* Context
 
-{% hint style="info" %}
-Advanced AI Suggestions is configured **per repository** and is **off by default**. When it is off, scans will still produce findings, but without suggested patches.
-{% endhint %}
+Full Scan or Pull Request.
 
-#### How to enable Advanced AI Suggestions <a href="#how-to-enable-advanced-ai-suggestions" id="how-to-enable-advanced-ai-suggestions"></a>
+* Period
 
-Only Guard administrators can change this setting.
+The time range of the scans.
 
-1. In Guard, go to **Settings** → **Repositories**.
-2. Find the repository and toggle **Advanced AI Suggestions** on.
-3. The setting applies to **future** scans; it does not change results from scans you have already run.
+* Repository
+
+A specific registered repository.
+
+* Status
+
+Scan outcome.
+
+#### Scan detail view
+
+Open a scan to see a full breakdown of the run.&#x20;
+
+Summary cards at the top of the scan show:
+
+| Card             | Description                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| Total Findings   | Total findings detected, with a breakdown.                                         |
+| Agents Succeeded | Number of analysis agents that completed successfully out of the total agents run. |
+| Credits Consumed | AI credits used by the scan, alongside the number of findings produced.            |
+| Cache Saved      | Percentage of work served from cache, with cached read/write detail.               |
+
+Below the summary, the Findings section groups results and shows counts by type & severity. You can:
+
+* Search findings using the search bar.
+* Browse findings grouped by category (e.g. Code Quality, Security), each showing its finding count.
+* Mark as **Accepted** to accept findings you have reviewed.
+* Expand a category and drill into an individual finding to see the code context, rule details, and suggested fix.
+
+Where no tests were analyzed, the scan indicates No tests analyzed in this scan.
+
+Findings the AI considers low-confidence are grouped under Flagged by AI as likely false positives, with a count. You can review these separately or use Accept all AI-filtered to accept them in bulk.
+
+#### Downloading patches
+
+Download the patches for the whole scan or for each finding.&#x20;
 
 ### Command reference <a href="#id-9.-command-reference" id="id-9.-command-reference"></a>
 

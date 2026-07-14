@@ -88,7 +88,7 @@ The Selected Fields option controls which fields are restored for the selected o
 
 ![](<../../.gitbook/assets/Unknown image (15)>)
 
-The field mapping dialog lists source fields and corresponding mapping fields. Field selections can be searched, reset, adjusted, and applied. Required identity fields remain protected where applicable.
+The field mapping dialog lists source fields and corresponding mapping fields. Field selections can be searched, reset, adjusted, and applied. Required identity fields remain protected where applicable, ensuring dependent data is available.
 
 ![](<../../.gitbook/assets/Unknown image (16)>)
 

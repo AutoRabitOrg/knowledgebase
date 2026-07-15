@@ -6,21 +6,23 @@
 
 **Release Date: 12 July 2026**
 
-### Feature Migration API triggered repeatedly <a href="#dt-13608-feature-migration-api-triggered-repeatedly" id="dt-13608-feature-migration-api-triggered-repeatedly"></a>
+#### Feature Migration API triggered repeatedly <a href="#dt-13608-feature-migration-api-triggered-repeatedly" id="dt-13608-feature-migration-api-triggered-repeatedly"></a>
 
 Fixed an issue where the `1.0?completeInfo=true` API was triggered repeatedly during Feature Migration until the action was cancelled. The call now runs only as intended, reducing unnecessary server load and UI confusion.
 
-### nCino user type not retained in Edit Mode <a href="#dt-12925-ncino-user-type-not-retained-in-edit-mode" id="dt-12925-ncino-user-type-not-retained-in-edit-mode"></a>
+#### nCino user type not retained in Edit Mode <a href="#dt-12925-ncino-user-type-not-retained-in-edit-mode" id="dt-12925-ncino-user-type-not-retained-in-edit-mode"></a>
 
 Fixed an issue in Super Admin where the selected nCino user type was not retained after saving. The saved value now remains correctly set in Edit Mode across both Old and New UI.
 
-### Post-deployment status mismatch between New UI and Old UI <a href="#dt-13574-post-deployment-status-mismatch-between-new-ui-and-old-ui" id="dt-13574-post-deployment-status-mismatch-between-new-ui-and-old-ui"></a>
+#### Post-deployment status mismatch between New UI and Old UI <a href="#dt-13574-post-deployment-status-mismatch-between-new-ui-and-old-ui" id="dt-13574-post-deployment-status-mismatch-between-new-ui-and-old-ui"></a>
 
 Resolved an inconsistency where the New UI showed post-deployment orgs as **Success** and displayed **No Objects found** while deployment was still in progress. Deployment status messaging is now consistent across both UIs.
 
-### Deploy from Version Control failed while loading External ID Mappings <a href="#dt-13629-deploy-from-version-control-failed-while-loading-external-id-mappings" id="dt-13629-deploy-from-version-control-failed-while-loading-external-id-mappings"></a>
+#### Deploy from Version Control failed while loading External ID Mappings <a href="#dt-13629-deploy-from-version-control-failed-while-loading-external-id-mappings" id="dt-13629-deploy-from-version-control-failed-while-loading-external-id-mappings"></a>
 
 Fixed an issue where deployment from Version Control could fail for Salesforce Org sources because the External ID Mappings API returned a backend exception when `featureName` was null. External ID Mappings now load correctly and no longer block deployment.
+
+***
 
 ## nCino + DataLoader - Release 26.3.1 <a href="#release-notes-ncinodl-26.3.1" id="release-notes-ncinodl-26.3.1"></a>
 

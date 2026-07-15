@@ -2,6 +2,7 @@
 description: >-
   Five CodeScan rules are being fully deactivated in 60 days. Review your  
   Quality Profiles and switch to the replacement rules listed below.
+hidden: true
 ---
 
 # CodeScan Rules Deactivation

@@ -38,15 +38,6 @@ Opening a Drift Policy from a direct link, such as a notification email, will no
 
 ### New Features
 
-#### **Agentic Code Analysis**
-
-Guard introduces Agentic Code Analysis: an AI-powered code review experience that runs through the Guard CLI in CI/CD pipelines, displays structured scan results in Guard, and helps teams review findings with actionable remediation guidance, including recommended code patches. This first release includes:
-
-* Optional Advanced AI Suggestions. For a slightly longer run time, you get more insightful results that allow you to quickly make changes to your code. Enabling this feature gives downloadable, file-by-file patch support for all findings.
-* Custom rule validation. Create additional policies for your Salesforce code by uploading a PDF or writing in natural language. Get the rules checked by AI for quality and duplication before running your first scan.
-
-For more information, please see our [Agentic Code Analysis article](https://knowledgebase.autorabit.com/product-guides/guard/features/agentic-code-analysis) and [Agentic Code Analysis User Guide](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide).
-
 #### **Drift Policies**
 
 This release also introduces Drift Policies: a dedicated area for monitoring meaningful changes in security posture across supported Guard data sources. Users can:

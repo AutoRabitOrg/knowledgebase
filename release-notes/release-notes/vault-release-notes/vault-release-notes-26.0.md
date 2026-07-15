@@ -4,19 +4,19 @@
 
 ## AutoRABIT Vault Release Notes 26.2.1
 
-**Release Date:** 15 Jul 2026
+**Release Date: 15 July 2026**
 
 #### Search & Compare Logs Downloaded in CSV Instead of ZIP Format <a href="#search-and-compare-logs-downloaded-in-csv-instead-of-zip-format" id="search-and-compare-logs-downloaded-in-csv-instead-of-zip-format"></a>
 
-Fixed an issue where downloading logs from the Search & Compare Job History page produced a CSV file instead of the expected ZIP format. Logs are now correctly downloaded as a ZIP archive containing the complete log files.<br>
+Fixed an issue where downloading logs from the Search & Compare Job History page produced a CSV file instead of the expected ZIP format. Logs are now correctly downloaded as a ZIP archive containing the complete log files.
 
 #### Live Data Masking Job Failing in GCP and Azure Setups <a href="#live-data-masking-job-failing-in-gcp-and-azure-setups" id="live-data-masking-job-failing-in-gcp-and-azure-setups"></a>
 
-Resolved an issue where Live Data Masking jobs failed in GCP and Azure environments despite records being processed successfully. The failure was caused by a missing log file during the cloud storage upload step. Jobs now complete successfully across all supported cloud setups.<br>
+Resolved an issue where Live Data Masking jobs failed in GCP and Azure environments despite records being processed successfully. The failure was caused by a missing log file during the cloud storage upload step. Jobs now complete successfully across all supported cloud setups.
 
 #### Fixed an Issue With Sub-User Creation <a href="#fixed-an-issue-with-sub-user-creation" id="fixed-an-issue-with-sub-user-creation"></a>
 
-Fixed a critical issue where adding sub-users failed. The user is now correctly populated during user creation, ensuring users can be added without errors.<br>
+Fixed a critical issue where adding sub-users failed. The user is now correctly populated during user creation, ensuring users can be added without errors.
 
 #### Support for S3 Bucket Versioning <a href="#support-for-s3-bucket-versioning.1" id="support-for-s3-bucket-versioning.1"></a>
 
@@ -28,6 +28,8 @@ For the recommended IAM policy updates, refer to the following documentation:
 
 [S3 IAM Policy Permissions | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/vault-faqs/common-restore-errors-and-solutions/s3-iam-policy-permissions#step-6-add-the-s3-versioning-permissions-to-the-existing-policy)\
 [DT-13716: Ignore Bucket Version check validationDone](https://autorabit.atlassian.net/browse/DT-13716)
+
+***
 
 ## AutoRABIT Vault Release Notes 26.2.0
 

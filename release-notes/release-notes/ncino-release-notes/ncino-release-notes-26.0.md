@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino + DataLoader - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.1" id="release-notes-ncinodl-26.3.1"></a>
+## nCino + DataLoader - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 12 July 2026**
 

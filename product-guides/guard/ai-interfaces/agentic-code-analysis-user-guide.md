@@ -7,7 +7,7 @@
 
 &#x20;💻 Just want to know how to get setup? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-2.-api-keys)
 
-&#x20;💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with [your results](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results), learn about [additional commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference), and unlock [Advanced AI Suggestions](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-8.-advanced-ai-suggestions).
+&#x20;💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with [your results](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results), and learn about [additional commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference).
 {% endhint %}
 
 ### What is Agentic Code Analysis? <a href="#id-1.-what-is-agentic-code-analysis" id="id-1.-what-is-agentic-code-analysis"></a>

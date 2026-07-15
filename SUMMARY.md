@@ -1244,6 +1244,7 @@
     * [Creating and Configuring Proxy Servers](product-guides/vault/configuring-vault/creating-and-configuring-proxy-servers.md)
   * [AutoRABIT Vault Features](product-guides/vault/vault-features/README.md)
     * [Page](product-guides/vault/vault-features/page.md)
+    * [Token Management](product-guides/vault/vault-features/token-management.md)
     * [Archive](product-guides/vault/vault-features/archive/README.md)
       * [Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data.md)
       * [Copy of Archiving Your Salesforce Data](product-guides/vault/vault-features/archive/archiving-your-salesforce-data-1.md)

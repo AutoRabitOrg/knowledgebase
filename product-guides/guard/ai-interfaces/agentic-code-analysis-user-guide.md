@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Agentic Code Analysis User Guide
 
 {% hint style="info" %}

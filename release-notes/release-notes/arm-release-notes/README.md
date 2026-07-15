@@ -56,7 +56,7 @@ Fixed an issue in the Classic (Old) UI where clicking **Select Package.xml** whi
 
 ***
 
-## DataLoader & DataLoader Pro Release Notes **26.3.2**
+## DataLoader + DataLoader Pro Release Notes **26.3.2**
 
 **Release Date:** **12 July 2026**
 

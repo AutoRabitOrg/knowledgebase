@@ -30,7 +30,7 @@ Please see our corresponding [Legacy SonarQube Compatibility Matrix ](https://kn
 
 Additionally, the following diagram provides more detailed information regarding release versioning and release dates.  &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2669).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-07-17 113004.png" alt=""><figcaption></figcaption></figure>
 
 **Regarding earlier CodeScan Versions**: Our July 2024 release (24.0.8) fully supports SQ 9.9 LTA as well as SQ 10.0, 10.1, and 10.2. &#x20;
 

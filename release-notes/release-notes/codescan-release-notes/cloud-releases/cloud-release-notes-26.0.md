@@ -21,7 +21,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Application Enhancements&#x20;
 
-1. Added Support for Salesforce Refresh Token Rotation (RTR)&#x20;
+1. **Added Support for Salesforce Refresh Token Rotation (RTR)**&#x20;
 
 Enhanced the Salesforce integration to support Refresh Token Rotation (RTR) for OAuth authentication.&#x20;
 
@@ -61,7 +61,7 @@ Support is available across Salesforce analysis workflows, including:&#x20;
 
 ### Fixes&#x20;
 
-1. Improved SOQL in Loops Rule Accuracy&#x20;
+1. **Improved SOQL in Loops Rule Accuracy**&#x20;
 
 Resolved an issue where the Avoid SOQL in Loops rule (_sf:AvoidSoqlInLoops_) could incorrectly report violations for certain method invocation patterns, resulting in false positives.&#x20;
 
@@ -92,7 +92,7 @@ The rule now provides more accurate reporting by distinguishing between nested m
 
 &#x20;
 
-2. Clarified Configuration Limits for SOQL/DML Inside Loops Rule&#x20;
+2. **Clarified Configuration Limits for SOQL/DML Inside Loops Rule**&#x20;
 
 Updated the documentation for the Avoid SOQL/DML Inside Loops rule (_sf:AvoidSoqlInLoops_) to clearly communicate the supported configuration limits for method traversal depth.&#x20;
 
@@ -116,7 +116,7 @@ The updated default guidance:&#x20;
 
 &#x20;
 
-3. Updated Guidance for Custom Field Requirement Configuration Rule&#x20;
+3. **Updated Guidance for Custom Field Requirement Configuration Rule**&#x20;
 
 Updated the documentation and messaging for the Custom Field Security in Standard Object rule (_sfmeta:CustomFieldSecurityInStandardObject_) to provide clearer guidance on the recommended approach for configuring required custom fields on Salesforce standard and shared objects.&#x20;
 
@@ -128,7 +128,7 @@ The following rule metadata has been updated:&#x20;
 * Message: Use the Page Layout to mark the custom field as required. &#x20;
 * Description: Expanded to clarify that custom fields on standard and shared objects should be marked as required through page layouts rather than at the schema (system) level. &#x20;
 
-The updated guidance explains that using page layouts limits the requirement to users interacting through the Salesforce UI, while avoiding unintended impacts on other data entry points such as:&#x20;
+The updated guidance explains that using page layouts limits the requirement to users interacting through the Salesforce UI, while avoiding unintended impacts on other data entry points, such as:&#x20;
 
 * APIs &#x20;
 * Data Loader &#x20;

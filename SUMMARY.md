@@ -63,6 +63,7 @@
           * [Release Notes 4.2](release-notes/release-notes/codescan-release-notes/cloud-releases/release-notes-4.2.md)
     * [Self-Hosted Releases](release-notes/release-notes/codescan-release-notes/on-premise-releases/README.md)
       * [Eagle Edition](release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/README.md)
+        * [Release Notes 26.1.1 Eagle 8.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-26.1.1-eagle-8.0.md)
         * [Release Notes 26.1.0 Eagle 7.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-26.1.0-eagle-7.0.md)
         * [Release Notes 25.1.3 Eagle 6.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.3-eagle-6.0.md)
         * [Release Notes 25.1.2 Eagle 5.0](release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-25.1.2-eagle-5.0.md)

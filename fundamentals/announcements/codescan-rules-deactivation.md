@@ -1,16 +1,17 @@
 ---
 description: >-
-  Five CodeScan rules are being fully deactivated in 60 days. Review your  
-  Quality Profiles and switch to the replacement rules listed below.
+  Five CodeScan rules are being fully deactivated as of the 21st of September.
+  Review your   Quality Profiles and switch to the replacement rules listed
+  below.
 hidden: true
 ---
 
 # CodeScan Rules Deactivation
 
-## Upcoming Rule Deactivations: 5 Rules Retiring in 60 Days
+## Upcoming Rule Deactivations: 5 Rules Retiring on the 21st of September 2026
 
 {% hint style="warning" %}
-**Five CodeScan rules will be fully deactivated in 60 days, as of 21st September 2026.** Each rule below has already been marked **Deprecated** and superseded by an improved rule with better or more accurate coverage.
+**Five CodeScan rules will be fully deactivated as of 21st September 2026.** Each rule below has already been marked **Deprecated** and superseded by an improved rule with better or more accurate coverage.
 {% endhint %}
 
 ### How to check if you're affected

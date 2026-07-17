@@ -30,6 +30,8 @@ Fixed a visibility issue where nCino-specific approval and notification options 
 
 Resolved an error where dataset creation failed with **"Repository/Branch/UniqueId details not found"** when using **Version Control using Salesforce Org** as the source type in nCino Deployments. Datasets are now generated successfully with the correct configuration.
 
+***
+
 ## nCino - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 12 July 2026**

@@ -40,7 +40,7 @@ Opening a Drift Policy from a direct link, such as a notification email, will no
 
 #### **Drift Policies**
 
-This release also introduces Drift Policies: a dedicated area for monitoring meaningful changes in security posture across supported Guard data sources. Users can:
+This release introduces Drift Policies: a dedicated area for monitoring meaningful changes in security posture across supported Guard data sources. Users can:
 
 * Create policies from recommended templates;
 * Define your own criteria using custom conditions;

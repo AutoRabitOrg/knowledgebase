@@ -2,6 +2,148 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.16
+
+**Release Date: 19 July 2026**&#x20;
+
+### Summary&#x20;
+
+AutoRABIT CodeScan 26.0.16 is comprised of the following 4 components:&#x20;
+
+* 0 New Features&#x20;
+* 1 Application Enhancement&#x20;
+* 0 New Rules&#x20;
+* 0 Rule Enhancements&#x20;
+* 0 Rule Deprecations&#x20;
+* 3 Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### Application Enhancements&#x20;
+
+1. Added Support for Salesforce Refresh Token Rotation (RTR)&#x20;
+
+Enhanced the Salesforce integration to support Refresh Token Rotation (RTR) for OAuth authentication.&#x20;
+
+Salesforce now enables Refresh Token Rotation by default for newly created External Client Applications (ECAs). With RTR enabled, refresh tokens are rotated after use instead of remaining static. This enhancement updates the CodeScan Salesforce integration to correctly manage rotating refresh tokens, ensuring uninterrupted authentication for new and existing Salesforce connections.&#x20;
+
+**Behavior**&#x20;
+
+The Salesforce integration now:&#x20;
+
+* Supports refresh token rotation for OAuth-based Salesforce connections. &#x20;
+* Automatically manages refresh token updates during token renewal. &#x20;
+* Maintains connection health across successive token refresh cycles. &#x20;
+* Supports both RTR-enabled and non-RTR Salesforce External Client Applications. &#x20;
+* Continues to use existing authentication flows for previously configured Salesforce connections. &#x20;
+
+**Compatibility Improvements**&#x20;
+
+The enhancement provides compatibility with:&#x20;
+
+* Salesforce Production organizations &#x20;
+* Salesforce Sandbox organizations &#x20;
+* Newly created External Client Applications with Refresh Token Rotation enabled &#x20;
+* Existing External Client Applications with Refresh Token Rotation disabled &#x20;
+
+Support is available across Salesforce analysis workflows, including:&#x20;
+
+* Main branch analysis &#x20;
+* Comparison branch analysis &#x20;
+* Scheduled analyses &#x20;
+
+**Outcome**&#x20;
+
+* Ensures compatibility with Salesforce's latest OAuth security model. &#x20;
+* Prevents unnecessary reauthorization for long-lived Salesforce connections. &#x20;
+* Improves the reliability of Salesforce project analysis across repeated authentication cycles. &#x20;
+* Maintains backward compatibility with existing Salesforce integrations while supporting new Salesforce security defaults.&#x20;
+
+### Fixes&#x20;
+
+1. Improved SOQL in Loops Rule Accuracy&#x20;
+
+Resolved an issue where the Avoid SOQL in Loops rule (_sf:AvoidSoqlInLoops_) could incorrectly report violations for certain method invocation patterns, resulting in false positives.&#x20;
+
+Previously, the rule could identify SOQL or DML operations as being executed within a loop based solely on nested method call analysis, even when the queried method was not actually invoked from a looping execution path. In some scenarios, method calls originating from Apex test classes could also be included in the analysis, contributing to incorrect findings.&#x20;
+
+**Behavior**&#x20;
+
+The rule has been enhanced to improve analysis accuracy by validating the actual execution path before reporting nested-call violations.&#x20;
+
+Improvements include:&#x20;
+
+* Reduced false positives for SOQL and DML operations that are not executed within loop constructs. &#x20;
+* Improved evaluation of nested method invocation chains. &#x20;
+* Exclusion of Apex test class method calls from nested execution path analysis. &#x20;
+* Improved validation to ensure nested-call violations are reported only when a genuine loop execution path exists. &#x20;
+
+**Improved Diagnostics**&#x20;
+
+The rule now provides more accurate reporting by distinguishing between nested method calls and actual SOQL/DML execution within loops, reducing misleading violations for valid code.&#x20;
+
+**Outcome**&#x20;
+
+* Reduces false positives reported by the Avoid SOQL in Loops rule. &#x20;
+* Improves accuracy of data flow and nested-call analysis. &#x20;
+* Prevents Apex test classes from influencing production rule evaluation. &#x20;
+* Provides developers with more reliable and actionable rule findings. &#x20;
+* Improves confidence in SOQL and DML loop detection for complex Apex applications.&#x20;
+
+&#x20;
+
+2. Clarified Configuration Limits for SOQL/DML Inside Loops Rule&#x20;
+
+Updated the documentation for the Avoid SOQL/DML Inside Loops rule (_sf:AvoidSoqlInLoops_) to clearly communicate the supported configuration limits for method traversal depth.&#x20;
+
+Previously, the rule parameter documentation did not specify the recommended maximum value for the maxMethodTraversalDepth parameter, which could lead to unsupported or excessive configuration values being entered.&#x20;
+
+**Documentation Improvements**&#x20;
+
+The parameter description has been updated to clearly indicate the supported range for method traversal depth, helping administrators configure the rule appropriately.&#x20;
+
+The updated default guidance:&#x20;
+
+* MaxMethodTraversalDepth = 5&#x20;
+* MaxMethodVisitedCount = 200&#x20;
+
+**Outcome**&#x20;
+
+* Provides clearer guidance for configuring method traversal depth. &#x20;
+* Helps administrators understand the recommended operating limits for the rule. &#x20;
+* Improves usability of Quality Profile configuration. &#x20;
+* Reduces the likelihood of unsupported rule parameter configurations.&#x20;
+
+&#x20;
+
+3. Updated Guidance for Custom Field Requirement Configuration Rule&#x20;
+
+Updated the documentation and messaging for the Custom Field Security in Standard Object rule (_sfmeta:CustomFieldSecurityInStandardObject_) to provide clearer guidance on the recommended approach for configuring required custom fields on Salesforce standard and shared objects.&#x20;
+
+Previously, the rule messaging did not clearly explain why marking custom fields as required at the schema level could have unintended consequences across different data entry mechanisms.&#x20;
+
+The following rule metadata has been updated:&#x20;
+
+* Title: Use the Page Layout to mark the custom field as required. &#x20;
+* Message: Use the Page Layout to mark the custom field as required. &#x20;
+* Description: Expanded to clarify that custom fields on standard and shared objects should be marked as required through page layouts rather than at the schema (system) level. &#x20;
+
+The updated guidance explains that using page layouts limits the requirement to users interacting through the Salesforce UI, while avoiding unintended impacts on other data entry points such as:&#x20;
+
+* APIs &#x20;
+* Data Loader &#x20;
+* Apex &#x20;
+* Integrations &#x20;
+
+**Outcome**&#x20;
+
+* Provides clearer remediation guidance for Salesforce administrators. &#x20;
+* Encourages Salesforce best practices for configuring required custom fields. &#x20;
+* Helps prevent unintended validation issues across integrations and automated processes. &#x20;
+* Improves the usability and clarity of rule findings.&#x20;
+
+***
+
 ## CodeScan Release Notes 26.0.15
 
 **Release Date: 05 July 2026**

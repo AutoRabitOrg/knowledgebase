@@ -2,6 +2,34 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino + DataLoader - Release 26.3.3 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
+
+**Release Date: 19 July 2026**
+
+#### Fixed Queue Item Persistence Failure During Data Retrieval Processing <a href="#dt-13651-fixed-queue-item-persistence-failure-during-data-retrieval-processing" id="dt-13651-fixed-queue-item-persistence-failure-during-data-retrieval-processing"></a>
+
+Resolved an exception that occurred when writing queue items to DynamoDB due to a null attribute in the table schema mapping. Queue items are now persisted successfully even when optional fields are absent, preventing queue processing interruptions.
+
+#### Fixed "Request Parameter: empty/null" Error in nCino CI Job Creation
+
+Fixed an issue where creating a CI Job with **Deploy from VC Configuration** displayed a generic "Request Parameter: empty/null" error when External ID Mappings were not fully loaded. The application now handles the loading state properly before allowing users to proceed.
+
+#### Fixed Incorrect Post-Deployment Org Status in nCino CI Jobs
+
+Corrected the job status reporting for nCino CI Jobs where individual post-deployment org status was shown as **"Success"** instead of **"Partially Successful"** when one or more post-deployment orgs encountered failures. The status now accurately reflects mixed outcomes.
+
+#### Fixed nCino Feature Deployment Stuck at Retrieving Dataset
+
+Resolved an issue where nCino jobs would stall in the queue during the **Retrieving Dataset** step, even after removing and re-initiating the job. The fix ensures dataset retrieval proceeds without requiring an instance restart.
+
+#### Hidden nCino-Specific Settings for Non-nCino Customers
+
+Fixed a visibility issue where nCino-specific approval and notification options (e.g., Data Deployment Approval, Commit Approval) were displayed under **Settings → My Account** and **Settings → Notifications** for non-nCino customers. These sections are now hidden for tenants without the nCino module.
+
+#### Fixed Dataset Creation Failure with "Repository/Branch/UniqueId details not found"
+
+Resolved an error where dataset creation failed with **"Repository/Branch/UniqueId details not found"** when using **Version Control using Salesforce Org** as the source type in nCino Deployments. Datasets are now generated successfully with the correct configuration.
+
 ## nCino + DataLoader - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 12 July 2026**

@@ -1,5 +1,54 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.3.3**
+
+**Release Date: 19 July 2026**
+
+***
+
+#### Release Label Artifact Update Fix <a href="#release-label-artifact-update-fix" id="release-label-artifact-update-fix"></a>
+
+Fixed an issue where updating an existing Release Label with a new revision did not regenerate the associated artifact correctly, resulting in missing delta files. ARM now regenerates the package manifest using the latest revision data whenever a Release Label is updated, ensuring the generated artifact accurately reflects all changes included in the updated Release Label.
+
+***
+
+#### Ignore Installed Components Information Update <a href="#ignore-installed-components-information-update" id="ignore-installed-components-information-update"></a>
+
+Updated the **Ignore Installed Components** option across ARM to provide clearer guidance on its behavior. An informational message is now displayed wherever this option is available, helping users understand when installed components will be skipped during deployment and CI Job execution. This enhancement improves usability by setting the correct expectations before the operation is initiated.
+
+***
+
+#### Additional Vlocity DataPack Metadata Support <a href="#additional-vlocity-datapack-metadata-support" id="additional-vlocity-datapack-metadata-support"></a>
+
+Added support for the following Vlocity DataPack metadata types in ARM:
+
+* OfferMigrationPlan
+* CpqConfigurationSetup
+* IntegrationRetryPolicy
+* String
+
+These metadata types can now be retrieved through Vlocity commit workflows, committed to version control, and deployed between Salesforce orgs while preserving the required matching keys, parent-child relationships, and Global Key handling.
+
+***
+
+#### Financial Cloud Standard Value Set Support <a href="#financial-cloud-standard-value-set-support" id="financial-cloud-standard-value-set-support"></a>
+
+Added support for additional Salesforce Financial Cloud Standard Value Sets to ensure standard picklist values are correctly retrieved during metadata operations. This enhancement improves compatibility with Salesforce Financial Cloud by enabling standard value sets to be included in EZ-Commit, Review Artifact creation, and selective deployment workflows.
+
+***
+
+#### Deployment History Visibility Fix <a href="#deployment-history-visibility-fix" id="deployment-history-visibility-fix"></a>
+
+Fixed an issue where newly initiated deployments could temporarily disappear from the **Deployment History** page after clicking **Deploy**, requiring multiple page refreshes before becoming visible. The deployment processing flow has been updated to ensure deployment jobs are displayed immediately after they are initiated, providing a more consistent and reliable user experience.
+
+***
+
+#### Sharing Rule Destructive Change Detection Fix <a href="#sharing-rule-destructive-change-detection-fix" id="sharing-rule-destructive-change-detection-fix"></a>
+
+Fixed an issue where deleted **Sharing Rule** metadata was not automatically detected as a destructive change during Version Control deployments. ARM now correctly identifies deleted Sharing Rule components and automatically includes them in the **Destructive Items** list, ensuring consistent destructive change handling across DX, Non-DX, and Release Label deployment workflows.
+
+***
+
 ## ARM **Release Notes 26.3.2**
 
 **Release Date: 12 July 2026**

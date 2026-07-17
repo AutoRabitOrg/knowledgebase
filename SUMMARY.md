@@ -110,6 +110,8 @@
     * [Guard Release Notes 26.1](release-notes/release-notes/guard/guard-release-notes-26.1.md)
     * [Guard Release Notes 25.2](release-notes/release-notes/guard/release-notes-25.2.md)
     * [Guard Release Notes 25.1](release-notes/release-notes/guard/release-notes-25.1.md)
+  * [Data Gen By Vault - Beta](release-notes/release-notes/data-gen-by-vault-beta/README.md)
+    * [Data Gen - Beta](release-notes/release-notes/data-gen-by-vault-beta/data-gen-beta.md)
 
 ## Product Guides
 

@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino + DataLoader - Release 26.3.3 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
+## nCino - Release 26.3.3 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 19 July 2026**
 
@@ -30,7 +30,7 @@ Fixed a visibility issue where nCino-specific approval and notification options 
 
 Resolved an error where dataset creation failed with **"Repository/Branch/UniqueId details not found"** when using **Version Control using Salesforce Org** as the source type in nCino Deployments. Datasets are now generated successfully with the correct configuration.
 
-## nCino + DataLoader - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
+## nCino - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 12 July 2026**
 
@@ -52,7 +52,7 @@ Fixed an issue where deployment from Version Control could fail for Salesforce O
 
 ***
 
-## nCino + DataLoader - Release 26.3.1 <a href="#release-notes-ncinodl-26.3.1" id="release-notes-ncinodl-26.3.1"></a>
+## nCino - Release 26.3.1 <a href="#release-notes-ncinodl-26.3.1" id="release-notes-ncinodl-26.3.1"></a>
 
 **Release Date: 05 July 2026**
 
@@ -66,7 +66,7 @@ Resolved an error where creating a new version for an existing feature failed wi
 
 ***
 
-## nCino + DataLoader - Release 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+## nCino - Release 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
 
 **Release Date: 28 June 2026**
 
@@ -114,7 +114,7 @@ Long notification email addresses in the Deployment and CI Jobs Preview screens 
 
 ***
 
-## nCino + DataLoader - Release 26.2.11 <a href="#release-notes-ncinodl-26.2.11" id="release-notes-ncinodl-26.2.11"></a>
+## nCino - Release 26.2.11 <a href="#release-notes-ncinodl-26.2.11" id="release-notes-ncinodl-26.2.11"></a>
 
 **Release Date:** **14 June 2026**
 
@@ -405,7 +405,7 @@ Fixed an issue where entry object filter queries from the original version were 
 
 ***
 
-## nCino + DataLoader - Release 26.1.1
+## nCino - Release 26.1.1
 
 **Release Date: 04 January 2026**
 

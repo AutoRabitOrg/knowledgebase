@@ -133,6 +133,3 @@ Activation email showing free trial limits
 
 ![](<../../.gitbook/assets/Unknown image (418)>)
 
-## Result
-
-The registration flow ends with a verified and active AutoRABIT Vault free trial account. The activation email provides the account access information and the trial limits. The next action is to access the instance URL and add a Source Org from the dashboard.

@@ -10,8 +10,6 @@ The Restore workflow supports restoration of backed-up Salesforce data from a se
 
 The restore process also provides review controls, Salesforce automation options, progress tracking, and job-level results after the restore job is submitted.
 
-**Guide scope:** This guide covers restore job creation from Backup as the restore source, including EZ Restore, Selective Restore, restore review, job submission, and restore history tracking.
-
 ## Open Restore and Retrieve Backup Details
 
 The workflow starts from the Restore module. The Salesforce Orgs and Restore Source fields define the context for the restore list. When no restore jobs are available for the selected criteria, the list displays a No Data state while still keeping restore creation actions available.
@@ -88,7 +86,7 @@ The Selected Fields option controls which fields are restored for the selected o
 
 ![](<../../.gitbook/assets/Unknown image (15)>)
 
-The field mapping dialog lists source fields and corresponding mapping fields. Field selections can be searched, reset, adjusted, and applied. Required identity fields remain protected where applicable, ensuring dependent data is available.
+The field mapping dialog lists source fields and corresponding mapping fields. Field selections can be searched, reset, adjusted, and applied. Required identity fields remain protected where applicable, help make dependent data available.
 
 ![](<../../.gitbook/assets/Unknown image (16)>)
 

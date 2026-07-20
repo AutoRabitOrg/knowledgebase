@@ -1309,6 +1309,7 @@
     * [Restoring nCino Features](product-guides/vault/ncino/restoring-ncino-features.md)
 * [AutoRABIT Vault Freemium](product-guides/autorabit-vault-freemium/README.md)
   * [User Registration](product-guides/autorabit-vault-freemium/user-registration.md)
+  * [User Registration](product-guides/autorabit-vault-freemium/user-registration-1.md)
   * [Source ORG Registration](product-guides/autorabit-vault-freemium/source-org-registration.md)
   * [Destination ORG](product-guides/autorabit-vault-freemium/destination-org.md)
   * [Backup Config](product-guides/autorabit-vault-freemium/backup-config.md)

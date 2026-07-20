@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # User Registration
 
 ## Vault Freemium User Registration

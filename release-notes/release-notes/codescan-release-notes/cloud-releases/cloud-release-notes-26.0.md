@@ -75,7 +75,6 @@ Improvements include:&#x20;
 
 * Reduced false positives for SOQL and DML operations that are not executed within loop constructs. &#x20;
 * Improved evaluation of nested method invocation chains. &#x20;
-* Exclusion of Apex test class method calls from nested execution path analysis. &#x20;
 * Improved validation to ensure nested-call violations are reported only when a genuine loop execution path exists. &#x20;
 
 **Improved Diagnostics**&#x20;
@@ -86,7 +85,6 @@ The rule now provides more accurate reporting by distinguishing between nested m
 
 * Reduces false positives reported by the Avoid SOQL in Loops rule. &#x20;
 * Improves accuracy of data flow and nested-call analysis. &#x20;
-* Prevents Apex test classes from influencing production rule evaluation. &#x20;
 * Provides developers with more reliable and actionable rule findings. &#x20;
 * Improves confidence in SOQL and DML loop detection for complex Apex applications.&#x20;
 

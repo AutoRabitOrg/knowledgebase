@@ -24,25 +24,25 @@ After approval levels are configured, they are assigned to a CI Job during desti
 
 ### Destination approval fields are available during CI Job setup
 
-![](<../../../../.gitbook/assets/Unknown image (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1)>)
 
 During CI Job configuration, the Destination step displays separate approval fields for deployment and commit activities. Selecting the destination org makes the Level 1 approval and Level 2 approval fields available for deployment. The commit section provides the corresponding Commit level 1 approval and Commit level 2 approval fields after repository and branch information is selected.
 
 ### Level 2 deployment approval selection
 
-![](<../../../../.gitbook/assets/Unknown image (2) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1)>)
 
 The Level 2 approval field provides the list of configured approvers for the selected destination. This selection completes the secondary deployment approval configuration for the job and determines who can review the deployment request at the second approval level.
 
 ### Commit approval selection after branch selection
 
-![](<../../../../.gitbook/assets/Unknown image (3) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1)>)
 
 After the repository and branch are selected, the commit approval fields become active. The Commit level 1 approval list displays available approvers for the first commit approval stage. The approval selection is linked to the configured repository and branch context.
 
 ### Commit Level 2 approval selection
 
-![](<../../../../.gitbook/assets/Unknown image (4) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1)>)
 
 The Commit level 2 approval field captures the final commit approver for the job. A note on the page explains that deployment and commit approvals that remain inactive for 14 days from the time of job creation are automatically rejected, ensuring that pending approval requests do not remain open indefinitely.
 
@@ -52,13 +52,13 @@ The build trigger starts the approval-controlled lifecycle. The build status, de
 
 ### CI Job List with trigger build action
 
-![](<../../../../.gitbook/assets/Unknown image (5) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1)>)
 
 After the CI Job is configured, it appears in the CI Job List. The Trigger build action is available from the Actions column and starts the approval-controlled build workflow for the selected job.
 
 ### Trigger build panel with approval details
 
-![](<../../../../.gitbook/assets/Unknown image (6) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1)>)
 
 The Trigger build panel summarizes the CI job details, source details, destination details, selected deployment approvers, and selected commit approvers. This review confirms the approval chain before the build is submitted.
 

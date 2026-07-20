@@ -52,23 +52,23 @@
 
 
 
-    ![](../../../.gitbook/assets/7.png)
+    ![](<../../../.gitbook/assets/7 (1).png>)
 17. Click on the “Masking Rules” icon to initiate the rules creation.
 
 
 
-    ![](../../../.gitbook/assets/8.png)
+    ![](<../../../.gitbook/assets/8 (1).png>)
 18. A “Selected Object” window will be opened, for creating a new rule.
 19. Click on the “NEW MASKING RULE” button to initiate the rule creation.
 
 
 
-    ![](../../../.gitbook/assets/9.png)
+    ![](<../../../.gitbook/assets/9 (1).png>)
 20. A “Masking Rule” window will be opened to create the rule.
 
 
 
-    ![](../../../.gitbook/assets/10.png)
+    ![](<../../../.gitbook/assets/10 (1).png>)
 21. **Observe the following on the window**:
     1. **Org Name**: Provides the org name.
     2. **Rule Name**: Enter the rule name here.
@@ -82,7 +82,7 @@
 
 
 
-    ![](../../../.gitbook/assets/11.png)
+    ![](<../../../.gitbook/assets/11 (1).png>)
 24. Select the “Add to Org ‘ORG NAME” Masking Rule List”, if the rule should be a global rule.
 25. On entering all the required details, click on the “SAVE” button to save the created masking rule.
 26. On clicking save a dialogue with info would be displayed confirming the save on the masking rule.
@@ -234,7 +234,7 @@ Select the required field type (e.g., **date**, **double**, **picklist**, **text
 
 Click the **Masking Style** dropdown.
 
-<figure><img src="../../../.gitbook/assets/5 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Select the required masking style (e.g., **substitution**, **dateRange**).
 

@@ -25,27 +25,27 @@ To compare a backup with live Salesforce data:
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1) (1) (1)>)
 10. Click on the object to observe the fields in the object.
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1) (1) (1)>)
 11. Click on the field, “Fields To Compare”, to observe the list of fields.
 
-    ![](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1) (1) (1)>)
 
-    ![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1) (1) (1)>)
 12. **The “Clickable Object” and the “Fields To Compare” is useful to specify the fields that should be part of the compare operation.**
     1. **Only the fields selected under these will be part of the compare operation.**&#x43;lick on the “COMPARE” button to initiate the compare operation.
 13.
 
-    ![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1) (1) (1)>)
 14. Clicking compare will show the **“Compare -Save Config”** screen.
 
 
 
-    ![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1) (1)>)
+    ![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1) (1) (1)>)
 15. Observe the following fields on the screen:
     1. **Label(required field):** Enter a label for the job
     2. **Preserve the result for:** will specify the retention period for the compare results. _**The minimum retention period is for “7 Days” and the maximum retention period for the compare results will be for “30 Days” only.**_

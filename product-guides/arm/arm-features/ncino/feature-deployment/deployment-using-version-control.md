@@ -87,7 +87,7 @@ Click on **Deploy** to proceed to the next screen. The next screen will display 
 3. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in source org) in destination org.
 4. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process.
 

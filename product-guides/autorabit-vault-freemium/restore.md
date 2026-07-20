@@ -18,31 +18,31 @@ The workflow starts from the Restore module. The Salesforce Orgs and Restore Sou
 
 After selecting the Salesforce org, restore source, and configuration, Get Details retrieves the available backup records. The backup list displays the label, configuration, date and time, expiry date, record count, type, and status. A backup record is selected before starting a restore action.
 
-![](<../../.gitbook/assets/Unknown image (1) (1)>)
+![](<../../.gitbook/assets/Unknown image (1) (1) (1)>)
 
 ## Start an EZ Restore
 
 EZ Restore is used when the selected backup needs to be restored without manually refining objects, records, or fields. Before the restore summary opens, AutoRABIT Vault presents restore considerations that may affect job execution. These include Salesforce automation behavior, metadata size limits, inactive owners, and dependency requirements. Got It confirms the message and continues the restore flow.
 
-![](<../../.gitbook/assets/Unknown image (2) (1)>)
+![](<../../.gitbook/assets/Unknown image (2) (1) (1)>)
 
 The Restore Summary opens with the generated restore label, batch size, email notification recipient, and Salesforce Automations controls. The summary also lists the selected data scope. Automation options allow restore execution to disable or adjust selected Salesforce behaviors during processing, such as workflows, validation rules, triggers, flows, and Bulk API serial mode. Restore Now submits the job.
 
-![](<../../.gitbook/assets/Unknown image (3) (1)>)
+![](<../../.gitbook/assets/Unknown image (3) (1) (1)>)
 
 After submission, AutoRABIT Vault starts creating the restore job and displays a processing state. The restore action remains in progress until the job record is created and made available in the restore history list.
 
-![](<../../.gitbook/assets/Unknown image (4) (1)>)
+![](<../../.gitbook/assets/Unknown image (4) (1) (1)>)
 
 Once the restore job is created, AutoRABIT Vault displays a confirmation message. OK closes the message and returns to the restore list.
 
-![](<../../.gitbook/assets/Unknown image (5) (1)>)
+![](<../../.gitbook/assets/Unknown image (5) (1) (1)>)
 
 ## Monitor the Restore Job
 
 The restore history list shows the submitted restore job with its label, date and time, duration, success records, failed records, status, and available actions. While the job is running, the status indicator shows progress, and the action area provides job-level options such as summary or log access when available.
 
-![](<../../.gitbook/assets/Unknown image (6) (1)>)
+![](<../../.gitbook/assets/Unknown image (6) (1) (1)>)
 
 As processing continues, the status and action indicators update on the same restore history list. The page can be refreshed to check the latest job state.
 

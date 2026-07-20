@@ -86,6 +86,6 @@ For deploying to the destination org, you will find the list of deployment crite
 3. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in Source Org) in Destination Org
 4. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/4 (1).png" alt=""><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process. You'll be redirected to the [Feature Deployment Summary](feature-deployment-summary.md) page, where you can view detailed deployment reports or re-deploy the nCino objects to your Salesforce Org once again.

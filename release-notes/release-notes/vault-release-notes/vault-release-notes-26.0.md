@@ -319,9 +319,9 @@ AutoRABIT **Vault on‑prem checklist**
 **Range-Based Date Masking for Sensitive Date Fields**\
 Introduced range‑based date masking for sensitive date fields, enabling more flexible and realistic anonymization by shifting dates within configurable ranges.
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Error while creating backup config with filter**\
 Fixed an error occurring when creating backup configurations with filters, so filtered backup configs can now be created reliably.

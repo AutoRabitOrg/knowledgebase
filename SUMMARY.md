@@ -654,7 +654,7 @@
           * [Default Apex Class Configuration](product-guides/arm-1/getting-started-1/registration/salesforce-org/salesforce-org-management/default-apex-class-configuration.md)
         * [Salesforce Authentication using OAuth](product-guides/arm-1/registration/salesforce-org/salesforce-authentication-using-oauth.md)
         * [Salesforce Org Reauthentication](product-guides/arm-1/registration/salesforce-org/salesforce-org-re-authentication.md)
-        * [Register Salesforce Org using OAuth via External Client App (ECA)](product-guides/arm-1/getting-started-1/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca.md)
+        * [ARM: Salesforce ECA Connection Setup Steps](product-guides/arm-1/getting-started-1/registration/salesforce-org/arm-salesforce-eca-local-connection-setup-steps.md)
       * [Running Static Code Analysis](product-guides/arm-1/registration/static-code-analysis-in-ci-cd.md)
       * [Branching Baseline](product-guides/arm-1/registration/branching-baseline.md)
       * [Notifications](product-guides/arm-1/getting-started-1/registration/notifications-mail-server-settings.md)

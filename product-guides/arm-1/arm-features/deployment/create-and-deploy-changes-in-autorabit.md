@@ -30,7 +30,7 @@ The deployment process allows you to quickly and safely transfer new development
 10. Choose the **`Deployment Type:`**
     * **`Selective Deployment`** is a deployment in which only the metadata types you’ve selected are deployed from the source org to the destination org.
     * **`Full Deployment`** transfers all metadata types in the source org to the destination org. However, a few metadata types, such as dynamic package XML files, can’t be retrieved in this process. In this case, the irretrievable data types will generate warnings during deployment, but ARM will continue the deployment and transfer the retrievable metadata types.
-11. **Enable Comparison:** When the **Enable Comparison** option is selected under **Configuring Deployment Details**, AutoRABIT adds a **Compare** step to the deployment workflow.
+11. &#x20;**Enable Comparison:** When the **Enable Comparison** option is selected under **Configuring Deployment Details**, AutoRABIT adds a **Compare** step to the deployment workflow.
 
     After selecting the required metadata components and clicking **Next**, the **Compare** page is displayed. This page shows the differences between the source and destination organizations before deployment.
 
@@ -88,11 +88,11 @@ Once you’ve chosen the metadata members to include in the deployment, select o
 
 On this screen, you will be presented with a list of metadata types and their respective member lists.
 
-**Deployment via Salesforce Org**
+**Deployment via Salesforce Org**&#x20;
 
 Further expanding the member's list will allow you to view the members' dependent components, and selecting them means deploying the dependent components to the destination org.
 
-The **`Diff`** tab will indicate if there are any differences between the members from the source and the target org.
+The **`Diff`** tab will indicate if there are any differences between the members from the source and the target org.&#x20;
 
 * If there are no differences, the right column will display the![](<../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png>)icon for each member.
 * If there are any differences, the right column will display the![](<../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png>)icon.
@@ -132,9 +132,9 @@ Also, you can select the recipients for the alert under the **`SCA Mail Notifica
 
 <figure><img src="../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-[**`Search and Substitute`**](../../../arm/arm-administration/search-and-substitute.md)**`:`** If you have created the search and substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, such rule can be found here.
+[**`Search and Substitute`**](../../../arm/arm-administration/search-and-substitute.md)**`:`** If you have created the search and substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, such rule can be found here.&#x20;
 
-From the **`Apply Search and Substitute Rules`** list, select the rule that will be associated with the current deployment process. Use the![](<../../../../.gitbook/assets/image (734).png>)/![](<../../../../.gitbook/assets/image (735).png>)button to add/remove the rule and using the![](<../../../../.gitbook/assets/image (1447).png>)/![](<../../../../.gitbook/assets/image (1448).png>)button, move the rules list up and down. Based on the selection, the top rule will be deployed initially, and the process will continue for the remaining rules.
+From the **`Apply Search and Substitute Rules`** list, select the rule that will be associated with the current deployment process. Use the![](<../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1).png>)/![](<../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1).png>)button to add/remove the rule and using the![](<../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1).png>)/![](<../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1).png>)button, move the rules list up and down. Based on the selection, the top rule will be deployed initially, and the process will continue for the remaining rules.
 
 **`Fetch the Test Cases:`** Before running the deployment, you may choose to run the functional test cases to test the code's functionality being deployed to the Destination Environment. Therefore, select how you would like to fetch the test cases.
 

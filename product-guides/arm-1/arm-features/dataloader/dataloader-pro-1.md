@@ -8,7 +8,7 @@ When running **DataLoader Pro** on objects for the first time, ensure that **Dat
 
 DataLoader Pro plays a crucial role in migrating data from a source sandbox to a destination sandbox. However, during this migration process, there is always a risk of creating duplicate records. To address this, ARM provides a synchronization feature that leverages the **ARM External ID** field (`AutorabitExtid__c`) to match and align records between orgs, helping prevent duplication.
 
-#### Step-By-Step Guide:
+#### &#x20;Step-By-Step Guide:
 
 1. Log in to ARM application
 2. Click on the PRO option in the left side navigation
@@ -17,7 +17,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 4.  In **Create DataLoader Job – Login and select object**, choose the **Source Org** and **Destination Org** from the dropdowns.<br>
 
-    <figure><img src="../../../../.gitbook/assets/2 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 5.  Click **Login and fetch objects** to authenticate and load available objects from the source org.
 
     <figure><img src="../../../../.gitbook/assets/3 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -50,7 +50,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 11. Apply the filter\
     – Click **Apply** to save the rule to the object.
 
-    <figure><img src="../../../../.gitbook/assets/9 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/9 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 
     – A success message will be displayed on the screen, on clicking the "Apply" button.
 
@@ -76,27 +76,27 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     * ARM Data Loader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
     * Ensure you have a column header and rows of data populated for all system-required fields, such as **`Account Name`** or **`Contact Last Name`**.
-    * There can be only one column header.
+    * There can be only one column header.&#x20;
 
     For more information, see [Preparing the CSV file for Data Loader](../../../arm/arm-features/dataloader/preparing-the-csv-file-for-arm-dataloader.md).
 14. **Confirm the upload**
 
     1. After the CSV uploads, a success message will be displayed.
 
-    <figure><img src="../../../../.gitbook/assets/13 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/13 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 15. **Auto-generate the filter**
 
     1. Click **Auto Populate** to build the SOQL filter from the uploaded CSV values.
 
     <figure><img src="../../../../.gitbook/assets/14 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-16. **Validate and apply**
+16. &#x20;**Validate and apply**
 
     1. Review the generated query in the editor (e.g., `… WHERE nFORCE__Look_Up_Key__c IN ('…')`).
 
-    <figure><img src="../../../../.gitbook/assets/15 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/15 - DL PRO (3).png" alt=""><figcaption></figcaption></figure>
 17. Click **Validate** to preview the fetch count, then click **Apply**.
 
-    <figure><img src="../../../../.gitbook/assets/16 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/16 - DL PRO (3).png" alt=""><figcaption></figcaption></figure>
 18. Back on **Schema**, verify the green **Success** toast and the active **Filters** icon.
 
     <figure><img src="../../../../.gitbook/assets/17 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -108,11 +108,11 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     1. In **Create Mapping**, use **Auto Map** to map identical field names or **Clear Mapping** to reset.
 
-    <figure><img src="../../../../.gitbook/assets/18 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/18 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 
     1. Click "Clear" to clear the mappings
 
-    <figure><img src="../../../../.gitbook/assets/19.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/19.1 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 
     1. Click on "Automap" to map the similar fields
 
@@ -138,7 +138,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * Click **Clear Mapping** to reset if needed.\
       Finish by clicking **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/24 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/24 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 24. **Field Extraction**\
     Data Loader Pro retrieves only the fields explicitly mapped by the user, avoiding unnecessary data fetches. When checking for `AutorabitExtId__c`, the system validates that it is marked as both **External ID** and **Unique**; if not, these attributes are set automatically. Newly identified objects are saved to the database to improve processing efficiency.
 25. **External ID Field Mapping**\
@@ -160,17 +160,17 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 29. **Choose the Masking Style**
 
     * **Prefix** – Adds a specified value before the original field value.\
-      \&#xNAN;_Example:_ Source value `ABC` with prefix `123` → Deployed value `123.ABC`.
+      &#xNAN;_&#x45;xample:_ Source value `ABC` with prefix `123` → Deployed value `123.ABC`.
     * **Suffix** – Adds a specified value after the original field value.\
-      \&#xNAN;_Example:_ Source value `ABC` with suffix `123` → Deployed value `ABC.123`.
+      &#xNAN;_&#x45;xample:_ Source value `ABC` with suffix `123` → Deployed value `ABC.123`.
     * **Replace** – Replaces the original field value entirely with the specified masking value.\
-      \&#xNAN;_Example:_ Source value `ABC` replaced with `123` → Deployed value `123`.
+      &#xNAN;_&#x45;xample:_ Source value `ABC` replaced with `123` → Deployed value `123`.
     * **Shuffle** – Randomly rearranges characters in the field value while leaving other columns unaffected.\
-      \&#xNAN;_Example:_ Source value `ABCDE` → Deployed value `DCBEA`.
+      &#xNAN;_&#x45;xample:_ Source value `ABCDE` → Deployed value `DCBEA`.
     * **Generate Random** – Replaces the original value with a randomly generated value of a defined length.\
-      \&#xNAN;_Example:_ Source value `ABC` with random length `7` → Deployed value `15d3aRG`.
+      &#xNAN;_&#x45;xample:_ Source value `ABC` with random length `7` → Deployed value `15d3aRG`.
 
-    _**`Note:`**` `` ``Masking is not applied if the field value is empty. `_
+    _**`Note:`**` ``Masking is not applied if the field value is empty.`_
 30. **Select target fields & save**\
     Select the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**.
 
@@ -186,7 +186,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 33. **Edit if needed**\
     Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/28 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/30.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 34. Observe the rule created for masking.
 
     <figure><img src="../../../../.gitbook/assets/31 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -220,6 +220,8 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * Choose when the schedule ends: **Never**, **X Occurrences from creation**, or a specific end date.
 
     <figure><img src="../../../../.gitbook/assets/37 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+
+
 40. Click **Next** to move to **Job Configuration**.
 
     The table below lists the configurations to choose from, along with their descriptions:
@@ -243,7 +245,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
        * (Optional) **Ignore Community Users**: Check if you don’t want to migrate community users.
        * Review the **Master Object** shown on the right.
 
-    <figure><img src="../../../../.gitbook/assets/40 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/40 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 42. **Save**
     * Click **Save** (bottom-right).
 43. **Confirmation**
@@ -273,7 +275,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     * Click the **VR/WFR** icon (stacked lines) beside the object.
 
-    <figure><img src="../../../../.gitbook/assets/46 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/46 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 48. Check Validation Rules:
 
     * In the **Validation Rules** tab, review the listed rules (Previous State, Current State).
@@ -285,7 +287,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * Switch to the **Workflow Rules** tab and review similarly (enable/disable as needed).
     * Click **Ok** to close.
 
-    <figure><img src="../../../../.gitbook/assets/48 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/48 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 50. Open and Review Filters
 
     * Back on **Summary**, click the **Filter** icon.
@@ -311,13 +313,13 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     1. From **Summary → Master Object**, locate **Results of last run**.
     2. Click the **Success:** 🔍 icon (**Click to View**) for the master object.
 
-    <figure><img src="../../../../.gitbook/assets/52.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/52.1 - DL PRO (2).png" alt=""><figcaption></figcaption></figure>
 54. See Success Details (CSV)
 
     1. Review the **Destination Id** and **Status** for each processed record.
     2. Use **Search** and pagination as needed, then close the dialog.
 
-    <figure><img src="../../../../.gitbook/assets/52.2 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/52.2 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 55. Review Ancestor Object Results
 
     1. Open **Summary → Ancestor Objects**.
@@ -325,14 +327,14 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     3. Use the **download** icon to export results if required.
     4. The toggle **Skip Records** is in "inactive" state as the records are not choosen to be skipped while creating the job.
 
-    <figure><img src="../../../../.gitbook/assets/53 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/53 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 56. Review Child Object Results
 
     1. Open **Summary → Child Objects**.
     2. Click the **Success** 🔍 or **Failure** 🔍 icons to view child-object run results.
     3. Use the **download** icon to export results if needed.
 
-    <figure><img src="../../../../.gitbook/assets/54 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/54 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
 57. Open Masking Rule Actions
 
     1. Go to **Summary → Masking Rules**.
@@ -392,7 +394,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 66. **Set Scheduling Type**
 
     * In the **Schedule** panel, choose **No Schedule**, **Daily**, or **Weekly**.
-    * Follow the [scheduling process](<dataloader-pro-1.md#:~:text=Open the Schedule step>) to set up a schedule.
+    * Follow the [scheduling process](dataloader-pro-1.md#:~:text=Open%20the%20Schedule%20step) to set up a schedule.
     * Configure any timing options shown, then click **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/64 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -475,3 +477,4 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * In the confirmation dialog, click **Delete** to permanently remove the encrypted files, or **Cancel** to keep them.
 
     <figure><img src="../../../../.gitbook/assets/77 - DL PRO.png" alt=""><figcaption></figcaption></figure>
+

@@ -51,4 +51,4 @@ Now users can seamlessly specify the baseline revision from a set of revisions a
 
     * On the ‘New Build’ screen, users can view the ‘Baseline Revision’ selected, under the ‘Baseline Revision’, as shown below.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (40) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (41) (3).png" alt=""><figcaption></figcaption></figure>

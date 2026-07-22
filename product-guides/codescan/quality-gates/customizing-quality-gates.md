@@ -7,13 +7,13 @@ To create a new Quality Gate, follow the steps below:
 1.  Navigate to your organization's page and select the **Quality Gates** tab.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1712).png" alt=""><figcaption><p>Quality Gates tab</p></figcaption></figure>
-2. **Copy** an existing Quality Gate to use as a template or select **Create** to design it from scratch.
+2. **Copy** an existing Quality Gate to use as a template or select **Create** to design it from scratch.&#x20;
 3.  Give it a unique name and select **Save**.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1713).png" alt="" width="375"><figcaption><p>Create Quality Gate</p></figcaption></figure>
-4. To add desired conditions with their Warning and Error thresholds, click on **Add Condition**.
+4. To add desired conditions with their Warning and Error thresholds, click on **Add Condition**.&#x20;
 
-<figure><img src="../../../.gitbook/assets/QG Add Condition 9.9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/QG Add Condition 9.9 (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note: To customize a Quality Gate that is already in use, click on **Unlock editing** first, as shown below.

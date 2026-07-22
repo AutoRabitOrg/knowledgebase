@@ -1,6 +1,6 @@
 # AutoRABIT Vault Release Notes 26.0
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to our mailing list to receive AutoRABIT updates!" listId="a085e26e7e" %}
+{% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
 ## AutoRABIT Vault Release Notes 26.2.2
 
@@ -69,7 +69,7 @@ Pattern-based field masking has been added to support more precise protection of
 
 Secure AutoRABIT Vault APIs have been introduced to support machine-to-machine integrations with other AutoRABIT tools. These APIs enable external workflows to trigger AutoRABIT Vault jobs, track job progress, and retrieve results more efficiently.
 
-<figure><img src="../../../.gitbook/assets/Token Gen.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Token Gen (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Enhanced Log Segregation <a href="#dt-10901-enhanced-log-segregation" id="dt-10901-enhanced-log-segregation"></a>
 
@@ -414,6 +414,8 @@ This enhancement streamlines historical data analysis and controlled restoration
 
 The **Search & Compare** functionality is supported only for data available in **AWS S3**. Data stored outside AWS S3 is not supported for Search & Compare operations.
 {% endhint %}
+
+
 
 **Salesforce Org Registration – Enhanced to Support External Client Apps**
 

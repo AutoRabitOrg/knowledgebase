@@ -52,7 +52,7 @@ Next,
 8. Add information about the current rollback deployment process in the **`Deployment Notes`** box.
 9. Type **`Rollback`** in the field provided and click on **`Yes`**.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](https://knowledgebase.autorabit.com/~/revisions/VLU9yPmP4DSTi9m5DU71/product-guides/arm-1/arm-features/deployment/monitor-deployments) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
@@ -81,3 +81,4 @@ In AutoRABIT, selective rollback can be performed using the following steps:
 5. The selective rollback was successfully completed.
 
 <figure><img src="../../../../.gitbook/assets/image (1667).png" alt=""><figcaption><p>Successful Selective Rollback</p></figcaption></figure>
+

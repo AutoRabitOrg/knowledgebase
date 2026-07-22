@@ -1,4 +1,4 @@
-# Upserting Salesforce Data
+# Upsert Salesforce Data
 
 **Upsert** is a combination of Updating and Inserting. If a record in a file matches an existing record, the existing record is updated with the values in your file. The record is created as a new entity if no match is found.
 
@@ -19,11 +19,11 @@ Step-By-Step Guide:
    *   This retrieves the list of objects available for the upsert operation.
 
        <figure><img src="../../../../../.gitbook/assets/3 - Upsert.png" alt=""><figcaption></figcaption></figure>
-4. #### Select Object
+4. #### Select Object&#x20;
    * From the fetched list, choose the required object (e.g., **Contact**).
    *   Click **Next** to proceed with field mapping.
 
-       <figure><img src="../../../../../.gitbook/assets/4 - Upsert.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/4 - Upsert (1).png" alt=""><figcaption></figcaption></figure>
 5. **Upload File for Upsert**
    *   In the **Create upsert process** screen, select **Choose File** or drag and drop to upload a CSV file.
 
@@ -75,6 +75,8 @@ Step-By-Step Guide:
     * The selected Salesforce field is shown, along with the applied lookup conditions.
 14. **Schedule Configuration – No Schedule**
     *   In the **Schedule** step, select **No Schedule** to run the upsert job manually.
+
+
 
         <figure><img src="../../../../../.gitbook/assets/15 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * The job will only execute when triggered directly.
@@ -131,6 +133,8 @@ Step-By-Step Guide:
     * Upon successful upload, a confirmation message displays the number of records impacted.
 21. **Job In Progress**
     *   After execution begins, the job status updates to **In Progress** on the Dataloader Basic page.
+
+
 
         <figure><img src="../../../../../.gitbook/assets/23 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * This indicates that processing has started but is not yet complete.
@@ -213,6 +217,8 @@ Step-By-Step Guide:
     * Use this option to quickly validate both success and failure counts before downloading detailed logs.
 35. **CSV Result View**
     *   The **CSV Result** window displays record-level details from the last job execution.
+
+
 
         <figure><img src="../../../../../.gitbook/assets/30 - Upsert.png" alt=""><figcaption></figcaption></figure>
     * Each row shows Salesforce fields such as _ID, AccountId, FirstName, LastName,_ and other mapped fields.

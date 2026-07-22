@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Developers can create a branch to work on a new version of an existing application. Changes in the primary or other branches will only affect your branch if you pull the latest changes from those branches.
+Developers can create a branch to work on a new version of an existing application. Changes in the primary or other branches will only affect your branch if you pull the latest changes from those branches.&#x20;
 
 Creating a new branch for each task is a common practice because it allows others to identify what changes to expect and, for backtracking purposes, to understand why a particular code change is implemented.
 
@@ -11,8 +11,8 @@ Creating a new branch for each task is a common practice because it allows other
 1. Log in to your ARM account.
 2.  From the ARM home page, click on the **`Admin`** module and go to the **`VC Repo's`** tab.<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.27.09 PM.png" alt="" width="232"><figcaption></figcaption></figure>
-3. Select a **GIT** repository for which the branch needs to be created.Note:If your GIT repository is **nCino** enabled, the nCino logo will be marked in front of your repository.
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.27.09 PM (1).png" alt="" width="232"><figcaption></figcaption></figure>
+3. Select a **GIT** repository for which the branch needs to be created.Note:If your GIT repository is **nCino** enabled, the nCino logo will be marked in front of your repository.&#x20;
 4.  Under **`Branches`**, click on **`Create`** button.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
@@ -32,7 +32,7 @@ Creating a new branch for each task is a common practice because it allows other
 1. On the **`Repositoires`** page, select a GIT repository from the repositories list.
 2.  Click **`Register`**.<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.00.25 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 9.00.25 PM (2).png" alt="" width="563"><figcaption></figcaption></figure>
 3. Checkbox the branches you need to register and enter the following details:
    * **`Parent Branch:`** Choose its parent branch from the drop-down.
    * **`Last commit date`**: The last commit date is fetched from Salesforce Org in EZ-Commit based on the specified date.
@@ -51,3 +51,6 @@ Creating a new branch for each task is a common practice because it allows other
 4.  Click the **`Register`** button to complete the branch registration.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (23) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+

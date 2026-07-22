@@ -35,7 +35,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
        <figure><img src="../../../.gitbook/assets/image (740).png" alt="" width="414"><figcaption></figcaption></figure>
    2.  For **`JIRA:`**
 
-       <figure><img src="../../../.gitbook/assets/image (741).png" alt="" width="414"><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (742).png" alt="" width="414"><figcaption></figcaption></figure>
 
        * **`ALM Name:`** Enter a name for your ALM connection.
        * **`ALM Type:`** Select **`JIRA`**.
@@ -49,7 +49,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 * Jira OAuth access type is currently supported for **Cloud versions** only.
 * OAuth access type will only be available while registering ALM if the credentials have been successfully registered in the **ALM Settings** section. For more information on registering Jira OAuth credentials, click [here](user-management/manage-users-account-settings.md).
 
-<img src="../../../.gitbook/assets/image (743).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (744).png" alt="" data-size="original">
 
 * The **Access Token** expires in one hour. The **Refresh Token** expires every **90 days**.
 {% endhint %}
@@ -89,7 +89,7 @@ If the steps above do not work, create a new credential and link it to your ALM 
 **Field Mapping for Work Item Updates in Salesforce**
 
 To enable AutoRABIT to update your Work Items (e.g., User Stories or Bugs) based on commit actions, please configure the following fields from your registered Salesforce Org:\
-![](<../../../.gitbook/assets/image (1871).png>)\\
+![](<../../../.gitbook/assets/image (1872).png>)\\
 
 c. Salesforce Org\
 Select the Salesforce Org from your list of registered orgs where the work item updates should be applied.

@@ -19,7 +19,7 @@ The **SalesforceNavigation** template allows you to configure mobile navigation 
     ![Salesforce Navigation Setup](<../../../../../../.gitbook/assets/image (86).png>)
 
     * To add additional menu items:
-      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (58).png>)
+      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (87).png>)
       * Enter names such as **Task** or **People** into the **Available Member** field.
       * Use the **Add/Remove** checkboxes to control their activation.
       * To add multiple items, click the **+** symbol and repeat the above steps.

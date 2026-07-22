@@ -88,9 +88,9 @@ Parent Revisions are blank for builds before 22.1.18-RELEASE.
 
 Static Code Analysis (SCA): SCA is part of the secure development lifecycle, conducted during code review using tools like CodeScan, ApexPMD, and Checkmarx.
 
-<figure><img src="../../../../.gitbook/assets/image (871).png" alt="SCA Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1165).png" alt="SCA Overview"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (872).png" alt="SCA Detail View" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1166).png" alt="SCA Detail View" width="563"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1167).png" alt="Violation Highlights"><figcaption></figcaption></figure>
 
@@ -130,7 +130,7 @@ Reports older than 30 days are unavailable.
 
 **Quick Deployment Report**:
 
-<figure><img src="../../../../.gitbook/assets/image (2259).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2260).png" alt=""><figcaption></figcaption></figure>
 
 **Rollback History**:
 

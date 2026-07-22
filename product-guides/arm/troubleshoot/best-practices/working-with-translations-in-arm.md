@@ -12,7 +12,7 @@ In order to translate custom objects for a variety of languages, you need to com
 
 2. Select the `CustomObjectTranslation` metadata type and select the translations associated with the custom object.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Point to Note:**
 
@@ -79,6 +79,11 @@ In order to commit and deploy global value set translations with ARM, you need t
 2. Select the `GlobalValuesetTranslation` metadata type and select the global value set translations metadata members from the list.
 3. Select the metadata type `Translations` and select the language you want the translations to be moved. This deploys the global value sets along with the translations for the language selected to the Version Control branch.
 
+
+
 {% hint style="info" %}
 **NOTE**: The API can’t perform **destructive changes** with the translation value. The API can **add** existing `<translation>` to custom object translation but not **delete** them.
 {% endhint %}
+
+
+

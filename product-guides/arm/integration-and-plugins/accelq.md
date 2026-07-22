@@ -2,7 +2,7 @@
 
 ### AccelQ: Overview
 
-With every release, AutoRABIT is looking to improve its application quality, achieve in-sprint automation to align with continuous delivery.
+With every release, AutoRABIT is looking to improve its application quality, achieve in-sprint automation to align with continuous delivery.&#x20;
 
 AccelQ's Quality Driven Development (QDD) implements an innovative Agile Quality Life Cycle approach, integrating the usual test silos into an end-to-end automated process. AccelQ is built on a cognitive core engine bringing the power of predictive analytics in scenario design, autonomics in test automation, and adaptive change management in traceability.
 
@@ -22,7 +22,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 2. Go to the **Credentials** tab.
 3. Click on **Create Credential** button from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (901).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **credential name**.
 5. Choose the **Credential Type** as **"User name with Password."**
@@ -30,7 +30,7 @@ This is an initial step where the user's AccelQ credential such as username and 
 7. Please double-check that you use your AccelQ username instead of the email address that you use to log in to AccelQ.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (902).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
 
 #### Step 2: Integrate AccelQ with AutoRABIT
 
@@ -49,13 +49,13 @@ This is an initial step where the user's AccelQ credential such as username and 
     * **Select Credential:** Select the user's credential registered as mentioned in Step 1.
 
     <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. Once you're done filling the AccelQ fields, click on **Save** to complete the integration process.
+4. Once you're done filling the AccelQ fields, click on **Save** to complete the integration process.&#x20;
 
 ### Adding AccelQ configuration in CI Job
 
 1. Go to the **New CI Job** screen.
 
-<figure><img src="../../../.gitbook/assets/image (867).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.  Select any one of the below criteria for your CI job:
 
@@ -66,7 +66,7 @@ This is an initial step where the user's AccelQ credential such as username and 
     * Run Test Automation Scripts
     * Install an Unlocked Package from a Version Control Branch
 
-    <figure><img src="../../../.gitbook/assets/image (868).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Give the job a descriptive name in the **CI Job Name** field.
 4. Go to the **Test** section. Here you will need to select _AccelQ_ to run the functional test cases to test the functionality of the code being deployed to production.
 5. Select **Fetch Test Cases From** as **AccelQ**.
@@ -79,12 +79,12 @@ This is an initial step where the user's AccelQ credential such as username and 
 
     <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (64) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (65) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Set the **parameter(s)** for your AccelQ test cases as shown below.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. Click **Save**.
 9. So, once the configured CI job is run and the build is triggered, AccelQ will review the code changes and functional review information can be found in the **CI Job Result** under the **Functional Tests** section. Here, you can find the status of the functional test done along with other details such as the number of components that successfully got reviewed, the number of components failed to review, components that are about to get reviewed or are in the queue.
@@ -116,11 +116,11 @@ This is an initial step where the user's AccelQ credential such as username and 
 
     * You can find your project name from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ.
 
-    <figure><img src="../../../.gitbook/assets/image (64) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Similarly, the test job name will be available in the Job section on AccelQ.
 
-    <figure><img src="../../../.gitbook/assets/image (65) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Click **Save**.
 4. When the deployment is executed, you can find the AccelQ test cases report in the **Deployment History** screen.Click on the **Test Results** button for the detailed AccelQ report.
 

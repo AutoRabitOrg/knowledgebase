@@ -1,6 +1,6 @@
 # Profiles
 
-Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc.<br>
+Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc. <br>
 
 To access user preferences, click your user name in the upper right corner and select **`Profile`**.<br>
 
@@ -26,7 +26,7 @@ The **`My Projects`** section will list all the projects that you have created o
 
 ### My Roles <a href="#my-roles" id="my-roles"></a>
 
-The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.
+The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.&#x20;
 
 ### About Skip Mappings
 
@@ -41,7 +41,7 @@ NOTE:
 
     To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (2).png" alt=""><figcaption></figcaption></figure>
 2. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
 {% endhint %}
 
@@ -52,7 +52,7 @@ View the **`Salesforce Orgs`** assigned to you, or you have permission to view.\
 
 ### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
 
-View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section.\
+View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. \
 You can view the list of all repositories configured under each version control system (VC). Select a repository to display its branches. From there, map the required branches by choosing the appropriate **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -68,7 +68,9 @@ Under **`My ALM Mappings`** section, you can map your ALM using your credentials
 
 For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have added the filter to fetch specific work items according to the filter applied.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.18.24 PM.png" alt=""><figcaption></figcaption></figure>
 

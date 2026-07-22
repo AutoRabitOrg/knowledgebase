@@ -37,7 +37,7 @@ There are no new features associated with this release.
 
         <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Updated the message for Security Hotspot Status “Exception”**\
-    We recently added a new status type for Hotspots (status = “Exception”). Its intent is to serve as a more accurate status than 'Acknowledged' or 'Open' for issues being treated as exceptions.\
+    We recently added a new status type for Hotspots (status = “Exception”). Its intent is to serve as a more accurate status than 'Acknowledged' or 'Open' for issues being treated as exceptions. \
     \
     When we first delivered an “Exception” status, the associated message was: “The code has been reviewed and does not pose a risk currently. Further review is needed at a later date.” Based upon numerous client suggestions, we have enhanced the message to read: "The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.”
 
@@ -105,11 +105,11 @@ If both rules are active, check the violations that were reported and disable on
 2.  **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}}” {Permissions should be checked before accessing resource}.**\
     Previously, this rule was throwing violations that were false positives. This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.\
     \
-    \&#xNAN;_NOTE: We addressed a similar issue related to SOQL queries in a previous release. That update has been extended in this release to also include SOSL queries._\
+    &#xNAN;_&#x4E;OTE: We addressed a similar issue related to SOQL queries in a previous release. That update has been extended in this release to also include SOSL queries._\
     \
     As per Salesforce documentation, when checking the Access for the inner query object, it allows to check by using \_\_c, but while making inner query on related Objects, it must be in plural and end with \_\_r.\
     \
-    \&#xNAN;_This fix corrects this issue._ In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
+    &#xNAN;_&#x54;his fix corrects this issue._ In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
     \
     Verified the rule “Field Level Security Vulnerabilities” for the following scenarios:
 
@@ -118,7 +118,7 @@ If both rules are active, check the violations that were reported and disable on
         <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
 
-        <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     **REMINDER**: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
     \
@@ -134,7 +134,7 @@ If both rules are active, check the violations that were reported and disable on
     \
     Also, the text in the “Branches” menu did not reflect the branch retention length change:
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
     Verified the Retention Period fix for the following scenarios:
 
@@ -153,12 +153,12 @@ If both rules are active, check the violations that were reported and disable on
 
 ### Summary
 
-CodeScan 24.0.13 is comprised of the following 4 components:
+CodeScan 24.0.13 is comprised of the following 4 components:&#x20;
 
 * [1 Enhancement](release-notes-24.0.md#enhancement)
-* [3 Fixes](release-notes-24.0.md#fixes)
+* [3 Fixes](release-notes-24.0.md#fixes)&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
 ### New Features
 
@@ -166,11 +166,11 @@ There are no new features associated with this release.
 
 ### Enhancement
 
-1. **Enhancement to Rule for VF: “"vf:AvoidJavaScriptScriptlets”**\
+1. **Enhancement to Rule for VF: “"vf:AvoidJavaScriptScriptlets”** \
    \
-   We recognize that using direct \<script> tags in components or pages can pose a security risk by increasing the likelihood of cross-site scripting (XSS) attacks.\
+   We recognize that using direct \<script> tags in components or pages can pose a security risk by increasing the likelihood of cross-site scripting (XSS) attacks. \
    \
-   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_visualforce.htm).\
+   Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_visualforce.htm). \
    \
    Considering both of these items together, we recognize that there was limitation on this rule where customers were getting violations flagged as false positives. This enhancement involves implementing Regex to detect the use of Lightning components within a \{{\<script>\}} tag in Visualforce pages. The rule \{{vf:AvoidJavaScriptScriptlets\}} should not trigger a violation if only Lightning components are found. However, if any additional lines of non-Lightning code are detected within the script, a violation will be raised. This ensures the proper use of Lightning components while avoiding insecure or outdated practices in scriptlets.
 
@@ -183,33 +183,37 @@ There are no new rules associated with this release.
 1.  **Fixed issue with reference branch analyses:** Branch initially fails the quality gate, then passes on subsequent scans without changes.
 
     \
-    Previously within CodeScan, branches with new code consistently failed the quality gate when they contained unresolved new issues (such as bugs, vulnerabilities, code smells, or security hotspots). This failure persisted until all new issues were addressed, ensuring only clean code passed the quality gate.<br>
+    Previously within CodeScan, branches with new code consistently failed the quality gate when they contained unresolved new issues (such as bugs, vulnerabilities, code smells, or security hotspots). This failure persisted until all new issues were addressed, ensuring only clean code passed the quality gate. <br>
 
-    Recently it was reported that "New Code -> Reference Branch" functionality was no longer working as designed, which was impacting quality gate evaluations for new code on branches for some customers. Indeed, branches with new code were initially failing the quality gate if new issues are detected (as expected and desired). However, on subsequent analyses of the same branch—without addressing the new issues—the quality gate was incorrectly passing.
+    Recently it was reported that "New Code -> Reference Branch" functionality was no longer working as designed, which was impacting quality gate evaluations for new code on branches for some customers. Indeed, branches with new code were initially failing the quality gate if new issues are detected (as expected and desired). However, on subsequent analyses of the same branch—without addressing the new issues—the quality gate was incorrectly passing. &#x20;
 
-    We recognize that this behavior could result in code potentially being deployed to production despite unresolved issues, as the quality gate no longer blocks the release after the first analysis. As such, a fix has been implemented to ensure the quality gate consistently fails whenever unresolved new issues exist in the code, preventing deployment until all issues are addressed.
+    &#x20;
 
-    Verified the functionality of reference branch for the following scenarios:
+    We recognize that this behavior could result in code potentially being deployed to production despite unresolved issues, as the quality gate no longer blocks the release after the first analysis.  As such, a fix has been implemented to ensure the quality gate consistently fails whenever unresolved new issues exist in the code, preventing deployment until all issues are addressed.&#x20;
 
-    * Verified the new code of a branch where user is able to see the issues exactly when compared with the reference branch.
-    * Verified that the quality gate failed status if the new branch has any new code compared to the reference branch.
-    * Verified that the quality gate passed status if the new branch has no new code compared to the reference branch.
-    * Verified that we can change the reference branch in the UI and run the analysis locally, with or without specifying the reference branch in the command. (If we didn’t specify the reference branch, it should take master as RB.)
-    * Verified that renaming of the reference branch and using the new name for analysis are working correctly.
-    * Verified that when a branch is deleted in the UI and then used as a reference branch in the SFDX command, a 404 error is returned.
-    * Verified the version option on activity page by providing name and editing name.
+    &#x20;
+
+    Verified the functionality of reference branch for the following scenarios:&#x20;
+
+    * Verified the new code of a branch where user is able to see the issues exactly when compared with the reference branch.&#x20;
+    * Verified that the quality gate failed status if the new branch has any new code compared to the reference branch.&#x20;
+    * Verified that the quality gate passed status if the new branch has no new code compared to the reference branch.&#x20;
+    * Verified that we can change the reference branch in the UI and run the analysis locally, with or without specifying the reference branch in the command. (If we didn’t specify the reference branch, it should take master as RB.)&#x20;
+    * Verified that renaming of the reference branch and using the new name for analysis are working correctly.&#x20;
+    * Verified that when a branch is deleted in the UI and then used as a reference branch in the SFDX command, a 404 error is returned.&#x20;
+    * Verified the version option on activity page by providing name and editing name.&#x20;
     * Verified the following options that are present under new code period for any branch under specific settings for a branch.
-      * Previous version
-      * Number of days
-      * Specific analysis
-      * Reference branch
-    * Verified the functionality by adding new code with vulnerabilities and fixed some issues that were marked as false positives in the UI.
+      * Previous version&#x20;
+      * Number of days&#x20;
+      * Specific analysis&#x20;
+      * Reference branch&#x20;
+    * Verified the functionality by adding new code with vulnerabilities and fixed some issues that were marked as false positives in the UI.&#x20;
     * Verified the sonar scanner command as well for the reference branch.<br>
-2.  **Fixed issue in rule “sf:OptimizeParallelUnitTests” (IsParallel)**\
+2.  **Fixed issue in rule “sf:OptimizeParallelUnitTests” (IsParallel)** \
     \
-    This rule is designed to ensure that isParallel is present, either True or False. Previously, when a second flag was added to a test, the rule threw a violation, e.g., @IsTest(SomeFlag=True IsParallel=False). This should not throw a violation since IsParallel is specified. Instead, something like @IsTest(SomeFlag=True) should throw a violation, as IsParallel is not specified.\
+    This rule is designed to ensure that isParallel is present, either True or False. Previously, when a second flag was added to a test, the rule threw a violation, e.g., @IsTest(SomeFlag=True IsParallel=False). This should not throw a violation since IsParallel is specified. Instead, something like @IsTest(SomeFlag=True) should throw a violation, as IsParallel is not specified. \
     \
-    This issue was occurring because the rule detection logic was looking for “@isTest(isParallel=true/false)” annotation being defined/set individually on its own (only), but not when used in combination with other annotations. Not being able to detect combination annotations setting was thereby causing false positive violations.\
+    This issue was occurring because the rule detection logic was looking for “@isTest(isParallel=true/false)” annotation being defined/set individually on its own (only), but not when used in combination with other annotations. Not being able to detect combination annotations setting was thereby causing false positive violations. \
     \
     Various scenarios tested outcomes for the rule BEFORE the fix was added:
 
@@ -219,9 +223,9 @@ There are no new rules associated with this release.
     4. Setting @isTest(SeeAllData=False isParallel=True) – Violation – Incorrect behavior as isParallel is set.
 
     \
-    Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true)\
+    Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true) \
     \
-    \&#xNAN;_This fix corrects the issue._\
+    &#xNAN;_&#x54;his fix corrects the issue._ \
     \
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.
 
@@ -230,73 +234,73 @@ There are no new rules associated with this release.
 \
 ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2F1912836914-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9vAxMuDrkUkB4OXlH9CL%252Fuploads%252FDlYCkab1cVQk7Qig0moW%252Fimage.png%3Falt%3Dmedia%26token%3D9a1f95db-0724-4930-8b4a-4880b725efdf\&width=768\&dpr=4\&quality=100\&sign=86914d0b\&sv=1)<br>
 
-3. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives).\
+3. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives). \
    \
-   Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations.\
+   Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations. \
    \
    This fix ensures that the check is limited to the **“value”** attribute only, to avoid false positives and ensure the rule functions as intended. As an example, the following will NOT be flagged as a violation:\
    \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/> //Good: Uses a static resource.<br>
 
-## **Release Notes 24.0.12**
+## **Release Notes 24.0.12**&#x20;
 
-**Release Date: 9 October 2024**
+**Release Date: 9 October 2024**&#x20;
 
 ### Summary
 
-CodeScan 24.0.12 is comprised of the following 2 components:
+CodeScan 24.0.12 is comprised of the following 2 components:&#x20;
 
-* 1 Rule Enhancement
-* 1 Fix
+* 1 Rule Enhancement&#x20;
+* 1 Fix&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
 ### Enhancements
 
-1. **Enhanced the rule sf: \{{FieldLevelSecurity\}} to eliminate false positives**
+1. **Enhanced the rule sf: \{{FieldLevelSecurity\}} to eliminate false positives**&#x20;
 
-Summary: Previously, this rule was flagging issues that were actually false positives. This was occurring when an SOQL query has an inner query calling the related Object.
+Summary:  Previously, this rule was flagging issues that were actually false positives. This was occurring when an SOQL query has an inner query calling the related Object. &#x20;
 
-In this enhancement, the Object is checked using isAccessible() before accessing its data.
+In this enhancement, the Object is checked using isAccessible() before accessing its data.&#x20;
 
-Per Salesforce, when checking the Access for the inner query object, it allows you to check by using \_\_c, but while making an inner query on related Objects, it must be plural and end with \_\_r.
+Per Salesforce, when checking the Access for the inner query object, it allows you to check by using \_\_c, but while making an inner query on related Objects, it must be plural and end with \_\_r. &#x20;
 
-Further, we added SYSTEM\_MODE support to the rule enhancement via a rule parameter (where rules admins can choose true or false to include SYSTEM\_MODE).
+Further, we added SYSTEM\_MODE support to the rule enhancement via a rule parameter (where rules admins can choose true or false to include SYSTEM\_MODE). &#x20;
 
-For additional info on Object permission Checks and SYSTEM\_MODE, refer to: [https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|https:/developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|smart-link)
+For additional info on Object permission Checks and SYSTEM\_MODE, refer to: [https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|https:/developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|smart-link) &#x20;
 
-### Fixes
+### Fixes&#x20;
 
-1. **Fixed errors when reattaching Bitbucket projects using new enhanced security.**
+1. &#x20;**Fixed errors when reattaching Bitbucket projects using new enhanced security.**&#x20;
 
-In the previous CodeScan release (24.0.11), we enhanced the security of our Bitbucket webhooks to stay current with the guidelines provided in Bitbucket’s documentation ([https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks)).
+In the previous CodeScan release (24.0.11), we enhanced the security of our Bitbucket webhooks to stay current with the guidelines provided in Bitbucket’s documentation ([https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks)).&#x20;
 
-We also implemented a process to make this update easier for existing customers using Bitbucket projects.
+We also implemented a process to make this update easier for existing customers using Bitbucket projects.&#x20;
 
-Some customers were experiencing errors with this process. This fix has corrected those errors in full, and we have validated that the process works as expected.
+Some customers were experiencing errors with this process. This fix has corrected those errors in full, and we have validated that the process works as expected.&#x20;
 
-For more information on reattaching Bitbucket projects, please refer to our Knowledge Base:
+For more information on reattaching Bitbucket projects, please refer to our Knowledge Base:&#x20;
 
-[https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects](https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects)
+[https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects](https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/codescan-cloud-issues/reattaching-bitbucket-projects)&#x20;
 
-For your convenience, we are also including the documentation from CodeScan release 24.0.11 regarding the enhanced security for Bitbucket projects.
+For your convenience, we are also including the documentation from CodeScan release 24.0.11 regarding the enhanced security for Bitbucket projects.&#x20;
 
-With this enhancement (in 24.0.11), when you create a new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.
+With this enhancement (in 24.0.11), when you create a new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
 
 {% hint style="info" %}
-NOTE: We recognize our customers may have existing Bitbucket projects running in their CodeScan org that were created without this enhanced security feature.
+NOTE:  We recognize our customers may have existing Bitbucket projects running in their CodeScan org that were created without this enhanced security feature. &#x20;
 
-To avoid having errors occur in these existing projects, we have intentionally added a retention period for clients to migrate the projects (reattach them).
+To avoid having errors occur in these existing projects, we have intentionally added a retention period for clients to migrate the projects (reattach them). &#x20;
 
-We have set **31 December 2024** as the _deprecation date_. This is the final day to perform the migration before these projects will break (at that point, customers will have to reattach their projects using the enhanced security webhook).
+We have set **31 December 2024** as the _deprecation date_. This is the final day to perform the migration before these projects will break (at that point, customers will have to reattach their projects using the enhanced security webhook). &#x20;
 
-Further, to highlight this notification more visibly, customers with existing Bitbucket projects will receive a new type of Organization Notification directly within the CodeScan UI.
+Further, to highlight this notification more visibly, customers with existing Bitbucket projects will receive a new type of Organization Notification directly within the CodeScan UI.  &#x20;
 
-To maximize effectiveness (and only deliver this notification when relevant), CodeScan will check if your organization has any Bitbucket projects without these enhanced security settings.
+To maximize effectiveness (and only deliver this notification when relevant), CodeScan will check if your organization has any Bitbucket projects without these enhanced security settings. &#x20;
 
-If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance security: project\_key\_1, project\_key\_2, project\_key\_3, etc."
+If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance security: project\_key\_1, project\_key\_2, project\_key\_3, etc."&#x20;
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-05 at 11.21.58 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-05 at 11.21.58 AM (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Starting **1 January 2025**, you will not be allowed to trigger the analysis for Bitbucket if that project doesn’t have the secret key configured. Further, instead of the WARNING message, an _ERROR_ message will be displayed.
@@ -304,74 +308,74 @@ Starting **1 January 2025**, you will not be allowed to trigger the analysis for
 
 ***
 
-## Release Notes 24.0.11
+## Release Notes 24.0.11&#x20;
 
-**Release Date: 25 September 2024**
+**Release Date: 25 September 2024**&#x20;
 
 ### Summary
 
-CodeScan 24.0.11 is comprised of the following 3 components:
+CodeScan 24.0.11 is comprised of the following 3 components:&#x20;
 
-* 2 Functional Enhancements
-* 1 Security Enhancement
+* 2 Functional Enhancements&#x20;
+* 1 Security Enhancement&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
-### Functional Enhancements
+### Functional Enhancements&#x20;
 
-1. **Org Names are no longer restricted to a single word only**
+1. **Org Names are no longer restricted to a single word only**&#x20;
 
-Summary: Previously, customers had a restriction limiting Org Names to a single word. With this enhancement, that restriction has been removed.
+Summary:  Previously, customers had a restriction limiting Org Names to a single word. With this enhancement, that restriction has been removed.&#x20;
 
-Valid strings now include names such as:
+Valid strings now include names such as:&#x20;
 
-* "My Organization"
-* "Organization-123"
-* "My Organization-123"
-* "Org 123"
+* "My Organization"&#x20;
+* "Organization-123"&#x20;
+* "My Organization-123"&#x20;
+* "Org 123"&#x20;
 
-However, there are some restrictions regarding leading spaces, trailing spaces, trailing hyphens, and invalid characters, such as:
+However, there are some restrictions regarding leading spaces, trailing spaces, trailing hyphens, and invalid characters, such as:&#x20;
 
-* " Organization" (leading space)
-* "Organization " (trailing space)
-* "Organization-" (trailing hyphen)
-* "My Organization-" (trailing hyphen)
-* "Org-!Name" (contains an invalid character !)
+* " Organization" (leading space)&#x20;
+* "Organization " (trailing space)&#x20;
+* "Organization-" (trailing hyphen)&#x20;
+* "My Organization-" (trailing hyphen)&#x20;
+* "Org-!Name" (contains an invalid character !)&#x20;
 
-2. **Enhancement of rule “sf:AvoidPublicFields” (reducing false positives on private classes).**
+2. **Enhancement of rule “sf:AvoidPublicFields” (reducing false positives on private classes).**&#x20;
 
-The rule sf:AvoidPublicFields identifies when public fields are used and flags them as issues. Two of the three reasons this rule is important are:
+The rule sf:AvoidPublicFields identifies when public fields are used and flags them as issues. Two of the three reasons this rule is important are:&#x20;
 
-* The internal representation is exposed and, thus, cannot be easily changed.
-* When the value is changed in an unexpected way (for example nulled), the implementation may not handle it correctly.
+* The internal representation is exposed and, thus, cannot be easily changed.&#x20;
+* When the value is changed in an unexpected way (for example nulled), the implementation may not handle it correctly.&#x20;
 
-But these are not concerns when those public fields are on a private class.
+But these are not concerns when those public fields are on a private class. &#x20;
 
-This enhancement adds a private class validation check first and will not flag the two previously mentioned issues if the class is a private class.
+This enhancement adds a private class validation check first and will not flag the two previously mentioned issues if the class is a private class.&#x20;
 
-### Security Enhancement
+### Security Enhancement&#x20;
 
-**Enhanced security for Bitbucket webhooks**
+**Enhanced security for Bitbucket webhooks**&#x20;
 
-We have enhanced the security of our Bitbucket webhooks to stay current with the guidelines provided in Bitbucket’s documentation ([https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks))
+We have enhanced the security of our Bitbucket webhooks to stay current with the guidelines provided in Bitbucket’s documentation ([https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Secure-webhooks))&#x20;
 
-With this enhancement, when you create a new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.
+With this enhancement, when you create a new Bitbucket project, you must generate a “secret” key and send it to Bitbucket to create a Webhook. In the Webhook endpoint, you should validate the \{{X-Hub-Signature\}} header value in accordance with Bitbucket guides.  &#x20;
 
 {% hint style="info" %}
-NOTE: We recognize our customers may have existing Bitbucket projects running in their CodeScan org that were created without this enhanced security feature.
+NOTE:  We recognize our customers may have existing Bitbucket projects running in their CodeScan org that were created without this enhanced security feature. &#x20;
 
-To avoid having errors occur in these existing projects, we have intentionally added a retention period for clients to migrate the projects (reattach them).
+To avoid having errors occur in these existing projects, we have intentionally added a retention period for clients to migrate the projects (reattach them). &#x20;
 
-We have set **31 December 2024** as the _deprecation date_. This is the final day to perform the migration before these projects will break (at that point, customers will have to reattach their projects using the enhanced security webhook).
+We have set **31 December 2024** as the _deprecation date_. This is the final day to perform the migration before these projects will break (at that point, customers will have to reattach their projects using the enhanced security webhook). &#x20;
 
-Further, to highlight this notification more visibly, customers with existing Bitbucket projects will receive a new type of Organization Notification directly within the CodeScan UI.
+Further, to highlight this notification more visibly, customers with existing Bitbucket projects will receive a new type of Organization Notification directly within the CodeScan UI.  &#x20;
 
-To maximize effectiveness (and only deliver this notification when relevant), CodeScan will check if your organization has any Bitbucket projects without these enhanced security settings.
+To maximize effectiveness (and only deliver this notification when relevant), CodeScan will check if your organization has any Bitbucket projects without these enhanced security settings. &#x20;
 
-If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance security: project\_key\_1, project\_key\_2, project\_key\_3, etc."
+If true, when Org Admins log in, they will receive this \*WARNING\* message: “You have to reattach the following Bitbucket projects by the end of 2024 to enhance security: project\_key\_1, project\_key\_2, project\_key\_3, etc."&#x20;
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-05 at 11.21.58 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-05 at 11.21.58 AM (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Starting **1 January 2025**, you will not be allowed to trigger the analysis for Bitbucket if that project doesn’t have the secret key configured. Further, instead of the WARNING message, an _ERROR_ message will be displayed.
@@ -381,128 +385,128 @@ Starting **1 January 2025**, you will not be allowed to trigger the analysis for
 
 ## Release Notes 24.0.10
 
-**Release Date: 28 August 2024**
+**Release Date: 28 August 2024**&#x20;
 
 ### **Summary**
 
-**CodeScan 24.0.10 is comprised of the following components:**
+**CodeScan 24.0.10 is comprised of the following components:**&#x20;
 
-* **1 Enhancement**
-* **2 New Rules**
-* **6 Fixes**
+* **1 Enhancement**&#x20;
+* **2 New Rules**&#x20;
+* **6 Fixes**&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
 ### Enhancements
 
-**1. Enhancement to rule “Use the null coalescing operator instead of ternary”**
+**1.     Enhancement to rule “Use the null coalescing operator instead of ternary”**&#x20;
 
-The original aim of this rule is to identify ternary statements and suggest potential use of "??" operator.  Previously, CodeScan was checking for ternary statements only.
+The original aim of this rule is to identify ternary statements and suggest potential use of "??" operator.  Previously, CodeScan was checking for ternary statements only.&#x20;
 
-This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary. However, it can be applied in scenarios involving if-else and return statements. As such, we have adjusted the rule to account for these use cases. With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary, then they are likely considering null coalescing operator as well).
+This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary. However, it can be applied in scenarios involving if-else and return statements.  As such, we have adjusted the rule to account for these use cases. With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary, then they are likely considering null coalescing operator as well).&#x20;
 
-### New Rules
+### New Rules&#x20;
 
-**1. New Rule for APEX: “IsBlankForNullChecks”**
+**1.     New Rule for APEX: “IsBlankForNullChecks”** &#x20;
 
-This is a new rule that leverages the built-in \{{isBlank\}} and \{{isNotBlank\}} methods instead of the \{{!=\}} and \{{==\}} operators to check for null or empty values.
+This is a new rule that leverages the built-in \{{isBlank\}} and \{{isNotBlank\}} methods instead of the \{{!=\}} and \{{==\}} operators to check for null or empty values.&#x20;
 
-This approach is especially relevant in programming environments and languages where \{{IsBlank\}} or equivalent methods are provided for more readable, maintainable, and less error-prone code. Using the \{{IsBlank\}} method for null checks improves code clarity, reduces the likelihood of bugs, and enhances maintainability compared to using the \{{!=\}} operator. Developers are less likely to encounter unexpected behavior due to differences in how null and empty values are handled. Additionally, built-in methods like \{{IsBlank\}} are optimized and tested to handle various edge cases, reducing the potential for errors compared to using the \{{!=\}} operator. It also makes the code easier to read and understand.
+This approach is especially relevant in programming environments and languages where \{{IsBlank\}} or equivalent methods are provided for more readable, maintainable, and less error-prone code. Using the \{{IsBlank\}} method for null checks improves code clarity, reduces the likelihood of bugs, and enhances maintainability compared to using the \{{!=\}} operator. Developers are less likely to encounter unexpected behavior due to differences in how null and empty values are handled. Additionally, built-in methods like \{{IsBlank\}} are optimized and tested to handle various edge cases, reducing the potential for errors compared to using the \{{!=\}} operator. It also makes the code easier to read and understand.&#x20;
 
-**2. New Rule for APEX: “Avoid Classes Without Explicit Sharing”**
+**2.     New Rule for APEX: “Avoid Classes Without Explicit Sharing”** &#x20;
 
-**New Rule to Enforce Sharing Rules in Classes**
+**New Rule to Enforce Sharing Rules in Classes**&#x20;
 
-Summary: Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.
+Summary:  Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.&#x20;
 
-### Fixes
+### Fixes&#x20;
 
-**1. Make fields of CustomObject Compatible with SFDX**
+**1.     Make fields of CustomObject Compatible with SFDX**&#x20;
 
-CodeScan is in the process of updating all of our Salesforce metadata rules to ensure they support both the Salesforce metadata API as well as SFDX formats for the issues they were built to find.
+CodeScan is in the process of updating all of our Salesforce metadata rules to ensure they support both the Salesforce metadata API as well as SFDX formats for the issues they were built to find.&#x20;
 
-We’ve architected this change because metadata pulled with SFDX has a different structure than metadata pulled with Salesforce’s metadata API. CodeScan can scan these different structures with some additions to the sf-meta suffixes. For this release, we have ensured that the differences are covered within the types of metadata that have these differences (specifically, the Object metadata contains all field metadata when pulled from the metadata API; however, when this is pulled with SFDX, the object and field metadata are separate).
+We’ve architected this change because metadata pulled with SFDX has a different structure than metadata pulled with Salesforce’s metadata API. CodeScan can scan these different structures with some additions to the sf-meta suffixes. For this release, we have ensured that the differences are covered within the types of metadata that have these differences (specifically, the Object metadata contains all field metadata when pulled from the metadata API; however, when this is pulled with SFDX, the object and field metadata are separate). &#x20;
 
-See the following SF article for details of these differences: [https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|smart-link)
+See the following SF article for details of these differences: [https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|https://developer.salesforce.com/docs/atlas.en-us.sfdx\_dev.meta/sfdx\_dev/sfdx\_dev\_source\_file\_format.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|https:/developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_source_file_format.htm|smart-link) &#x20;
 
-**2. Fixed issue in rule “sf:AvoidSoqlInLoops”**
+**2.     Fixed issue in rule “sf:AvoidSoqlInLoops”** &#x20;
 
-This CodeScan rule was found to have two issues:
+This CodeScan rule was found to have two issues:&#x20;
 
-* SOQL in the code does not appear to be in a loop, but CodeScan is flagging as a violation.
-* A violation message is displayed multiple times for the perceived detected violation.
+* SOQL in the code does not appear to be in a loop, but CodeScan is flagging as a violation.&#x20;
+* A violation message is displayed multiple times for the perceived detected violation.&#x20;
 
-The root causes of these issues were identified, and the following enhancements were added:
+The root causes of these issues were identified, and the following enhancements were added:&#x20;
 
-Top of Form
+Top of Form&#x20;
 
 * Added condition to check if the method call matches the Method name; if not, do not flag as a violation
 
-Bottom of Form
+Bottom of Form&#x20;
 
-Top of Form
+Top of Form&#x20;
 
-* When checking the nested method call, if method name matches, only then it will throw violation.
-* Bottom of Form
+* When checking the nested method call, if method name matches, only then it will throw violation.&#x20;
+* Bottom of Form&#x20;
 
-Top of Form
+Top of Form&#x20;
 
-* Avoid false positives when a recursive call happens without matching the method name
+* Avoid false positives when a recursive call happens without matching the method name&#x20;
 
-Bottom of Form
+Bottom of Form&#x20;
 
-**3. Fixed issue when attaching a GIT project for a second time after initially canceling the request**
+**3.     Fixed issue when attaching a GIT project for a second time after initially canceling the request** &#x20;
 
-CodeScan UI was inaccessible (page greys out) during scenarios where users were attaching Git analysis to a project in CodeScan where those projects previously had an unattached analysis.
+CodeScan UI was inaccessible (page greys out) during scenarios where users were attaching Git analysis to a project in CodeScan where those projects previously had an unattached analysis.&#x20;
 
-Detail: When users would follow this navigation, they would encounter an error:
+Detail:  When users would follow this navigation, they would encounter an error:&#x20;
 
-1. Select a project with an unattached analysis ->
-2. Attach analysis ->
-3. select Git ->
-4. cancel ->
-5. select Git again ->
+1. &#x20;Select a project with an unattached analysis -> &#x20;
+2. Attach analysis -> &#x20;
+3. select Git -> &#x20;
+4. cancel -> &#x20;
+5. select Git again -> &#x20;
 
-RESULT: Page is grayed out until the page is refreshed.
+RESULT: Page is grayed out until the page is refreshed.&#x20;
 
 The root cause of the issue was identified and fixed. Verification the issue is now resolved included:
 
-1. Creating an empty project and subsequently attaching a Git analysis to the project
-2. Deleting the project analysis and attaching a new Git analysis
-3. Validating attaching analyses with no issues for:
+1. Creating an empty project and subsequently attaching a Git analysis to the project&#x20;
+2. Deleting the project analysis and attaching a new Git analysis&#x20;
+3. Validating attaching analyses with no issues for:&#x20;
 
-* Salesforce
-* GITHUB
-* BITBUCKET
-* GITLAB
-* GIT
-* WEBHOOK
+* Salesforce &#x20;
+* GITHUB&#x20;
+* BITBUCKET&#x20;
+* GITLAB&#x20;
+* GIT &#x20;
+* WEBHOOK &#x20;
 
-**4. Fixed issue in rule “sf:FixDuplicateMethods”, where Nested statements were being flagged (which was a false positive issue).**
+**4.     Fixed issue in rule “sf:FixDuplicateMethods”, where Nested statements were being flagged (which was a false positive issue).**&#x20;
 
 Previously, the sf:FixDuplicateMethods rule was throwing violations for nested statements, which is not the intended behavior. The root cause was identified and fixed, and now the rule is working as designed and expected.
 
-**5. Fixed issue with Date Filter on IDE Usage Page**
+**5.     Fixed issue with Date Filter on IDE Usage Page**&#x20;
 
-In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a date filter for:
+In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a date filter for:&#x20;
 
-* Last 30 days
-* Last 60 days
-* Last 90 days
-* Last 180 days
+* Last 30 days&#x20;
+* Last 60 days &#x20;
+* Last 90 days &#x20;
+* Last 180 days  &#x20;
 
-However, the action “On click” wasn’t showing the filtered list as expected. The root cause was identified and the issue has been remediated. The date filter now works as designed and expected.
+However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified and the issue has been remediated.  The date filter now works as designed and expected.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/unknown (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-**6. Fixed issue with Individual / All Filter on IDE Usage Page**
+**6.     Fixed issue with Individual / All Filter on IDE Usage Page** &#x20;
 
-In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a filter toggle for Individual / All where:
+In the 24.0.9 release, we made several UI enhancements to the “IDE Usage” page, including the addition of a filter toggle for Individual / All where:&#x20;
 
-* Upon toggling to “Individual,” the last connection for each individual unique user list is shown.
-* Upon toggling to “All," the full list of activity is shown (every connection for the selected duration).
+* Upon toggling to “Individual,” the last connection for each individual unique user list is shown.&#x20;
+* Upon toggling to “All," the full list of activity is shown (every connection for the selected duration).&#x20;
 
-However, the action “On click” wasn’t showing the filtered list as expected. The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.
+However, the action “On click” wasn’t showing the filtered list as expected.  The root cause was identified, and the issue has been remediated. The date filter now works as designed and expected.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/unknown (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -514,16 +518,16 @@ However, the action “On click” wasn’t showing the filtered list as expecte
 
 The latest CodeScan release is comprised of the following components:
 
-* [Enhancements](release-notes-24.0.md#enhancements)
+* [Enhancements](release-notes-24.0.md#enhancements)&#x20;
 * [New Rule](release-notes-24.0.md#new-rule)
 * [Fix](release-notes-24.0.md#fix)
 
-### Enhancements
+### Enhancements&#x20;
 
-1. **Feature Enhances the “sf.testfile” parameter in project settings UI**\
-   Summary: Previously, customers using our Git integration could store their test coverage in their repository branches by using a parameter called sf.testfile, which allows you to add coverage to your code with SFDX JSON outputs.\
+1. **Feature Enhances the “sf.testfile” parameter in project settings UI** \
+   Summary:  Previously, customers using our Git integration could store their test coverage in their repository branches by using a parameter called sf.testfile, which allows you to add coverage to your code with SFDX JSON outputs.\
    \
-   With this enhancement, CodeScan allows the parameter to be configurable at a project level. Adding this parameter will allow teams to view the coverage on the CodeScan dashboard. The addition of this parameter notably provides more value for SFDX workflows.\
+   With this enhancement, CodeScan allows the parameter to be configurable at a project level.  Adding this parameter will allow teams to view the coverage on the CodeScan dashboard. The addition of this parameter notably provides more value for SFDX workflows.\
    \
    Further details are available at the following link: [Importing Code Coverage from SFDX Projects](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/codescan-sfdx-plugin/importing-code-coverage-from-sfdx-projects).
 2.  **UI Enhancements to the IDE Usage Page**\
@@ -543,7 +547,7 @@ Last 180 days\
 Updated the Column title of “Use at” to “Time Stamp.“\
 Added a filter toggle for Individual / All as shown.\
 Upon toggling to “Individual,” the last connection for each unique user list is shown.\
-Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.
+Upon toggling to “All," the full list of activity—every connection for the selected duration—is shown.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -562,8 +566,8 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
 
 * Ignore structures that allow multiple statements to be readably shorthanded into one.\
   Increment (add one) for each break in the linear flow of the code.
-* Increment when flow-breaking structures are nested.
-* Additionally, a complexity score is made up of four different types of increments:
+* Increment when flow-breaking structures are nested.&#x20;
+* Additionally, a complexity score is made up of four different types of increments:&#x20;
   * Nesting – Assessed for nesting control flow structures inside each other
   * Structural – Assessed on control flow structures that are subject to a nesting increment and that increase the nesting count.
   * Fundamental – Assessed on statements not subject to a nesting increment.
@@ -581,50 +585,50 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
 
 **Release Date: 10 July 2024**
 
-### New Features
+### New Features&#x20;
 
-This update includes several New Features within CodeScan’s Visual Studio Code IDE Extension:
+This update includes several New Features within CodeScan’s Visual Studio Code IDE Extension: &#x20;
 
-1. New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.
+1. New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1279).png" alt=""><figcaption></figcaption></figure>
 
-2. Fixed a plugin issue that failed to recognize CodeScan-specific JavaScript (JS) and VisualForce (VF) rules.
-3. Resolved duplicate issue detection for specific Apex rules.
-4. Added automatic token generation and connection flow UI.
+2. Fixed a plugin issue that failed to recognize CodeScan-specific JavaScript (JS) and VisualForce (VF) rules. &#x20;
+3. Resolved duplicate issue detection for specific Apex rules. &#x20;
+4. Added automatic token generation and connection flow UI. &#x20;
 5. Added support for SonarQube 9.9 and later versions.
 
 ### Enhancements
 
-1. **Rule Enhancement for “Avoid Using Test.isRunningTest()” {APEX Rule}:**\
-   **Summary**: Previously, this rule was flagging violations when finding methods written as Test.isRunningTest(). This rule has been enhanced to also flag violations when finding methods written as System.Test.isRunningTest().<br>
-2. **Decrease False Positives reported for Rule “sf:FixDuplicateMethods”**\
-   **Summary**: CodeScan recognizes that methods should not share the same implementations. As such, the scope of the rule will be limited to methods with actual implementations, rather than including interface method declarations. This means the rule will now focus solely on detecting and addressing duplicate implementations within concrete classes, ensuring that only methods containing executable code are evaluated. Violations reported by this rule will now include details of all duplicate methods affected. This means each violation will list every instance of a method that shares the same implementation, making it easier to identify and resolve duplicated code.\
-   These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness.<br>
+1. **Rule Enhancement for “Avoid Using Test.isRunningTest()” {APEX Rule}:** \
+   **Summary**: Previously, this rule was flagging violations when finding methods written as  Test.isRunningTest(). This rule has been enhanced to also flag violations when finding methods written as System.Test.isRunningTest(). <br>
+2. **Decrease False Positives reported for Rule “sf:FixDuplicateMethods”** \
+   **Summary**: CodeScan recognizes that methods should not share the same implementations. As such, the scope of the rule will be limited to methods with actual implementations, rather than including interface method declarations. This means the rule will now focus solely on detecting and addressing duplicate implementations within concrete classes, ensuring that only methods containing executable code are evaluated.  Violations reported by this rule will now include details of all duplicate methods affected. This means each violation will list every instance of a method that shares the same implementation, making it easier to identify and resolve duplicated code.  \
+   These updates will make the rule more precise, and its violation reports more comprehensive, enhancing its effectiveness. <br>
 3. **Enhancement to Rule: "Field-Level Security" (FLS)**\
-   CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan and an enhancement to the rule was applied, which corrected the syntax detection.<br>
-4. **Enhancement to Rule: "Cyclomatic Complexity"**\
-   **Summary**: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'.<br>
-5. **Added dashboard Url to Job status API**\
+   CodeScan’s FLS rule did not detect DML methods called when syntax is insert (record), update (record), etc. Instead, FLS was only detecting when “insert record;” syntax was used. We made a parser update within CodeScan and an enhancement to the rule was applied, which corrected the syntax detection. <br>
+4. **Enhancement to Rule: "Cyclomatic Complexity"** \
+   **Summary**: Several enhancements were applied to the rule cyclomatic complexity, including adding the decision points '?', '&&', '||', and 'catch'. <br>
+5. **Added dashboard Url to Job status API** \
    **Summary**: On the Project Analysis page, we have added dashboard Url to Job status API on success/failure of analysis:
 
 <figure><img src="../../../../.gitbook/assets/image (1280).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
-1.  **UI Improvement on Rule “NullCoalescing operator”**\
-    We completed an alignment adjustment within the CodeScan UI for this specific rule.\
-    **Previous UI:**<br>
+1.  **UI Improvement on Rule “NullCoalescing operator”** \
+    We completed an alignment adjustment within the CodeScan UI for this specific rule. \
+    **Previous UI:** <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1281).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Adjusted UI:**
 
 <div align="center" data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (1282).png" alt=""><figcaption></figcaption></figure></div>
 
 2. **UI Improvement on Rule “Lightning channel Exposed”**\
-   We completed an alignment adjustment within the CodeScan UI for this specific rule.\
-   **Previous UI:**
+   We completed an alignment adjustment within the CodeScan UI for this specific rule. \
+   **Previous UI:**&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1283).png" alt=""><figcaption></figcaption></figure>
 
@@ -632,51 +636,51 @@ This update includes several New Features within CodeScan’s Visual Studio Code
 
 <figure><img src="../../../../.gitbook/assets/image (1284).png" alt=""><figcaption></figcaption></figure>
 
-3. **Improved IDE Usage Tracking**\
-   Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code. <mark style="background-color:yellow;">NOTE: Only VS Code updates on the page.</mark> Additionally, instead of login ID, we now display the name of the user and the email under a single column called ‘User’. Also, we changed the title to IDE Usage instead of “IDE Usages” \* Finally, we removed the token information, as it is not needed. 
-4. **Fixed CodeScan IntelliJ Plugin error**\
-   Previously, the CodeScan IntelliJ Plugin was throwing an error during binding updates when connected to SonarQube 10. The issue was caused by self-hosted connections being incorrectly detected as cloud connections, resulting in an error popup. This issue occurred when connecting to self-hosted SQ 10.x versions in both 2023 and 2024-based IntelliJ versions. The issue error message (popup) resulted from an API call failure. This issue has now been remedied with this fix.
-5. **Generated SARIF now associated with the branch being scanned**\
-   Previously when SARIF was generated while scanning from our SFDX plugin, the SARIF was generated from the main branch of the project and NOT the branch being scanned. This has been corrected, and now the SARIF is generated from the branch of the project that has just been scanned.
+3. **Improved IDE Usage Tracking** \
+   Previously, the IDE tracking page was tracking every use of a token by a user and displaying it on this page. The updated functionality is: 1 entry per user, where the tracking page gets updated / refreshed when a user token is used within VS Code. <mark style="background-color:yellow;">NOTE: Only VS Code updates on the page.</mark> Additionally, instead of login ID, we now display the name of the user and the email under a single column called ‘User’.  Also, we changed the title to IDE Usage instead of “IDE Usages” \* Finally, we removed the token information, as it is not needed. &#x20;
+4. **Fixed CodeScan IntelliJ Plugin error**  \
+   Previously, the CodeScan IntelliJ Plugin was throwing an error during binding updates when connected to SonarQube 10. The issue was caused by self-hosted connections being incorrectly detected as cloud connections, resulting in an error popup. This issue occurred when connecting to self-hosted SQ 10.x versions in both 2023 and 2024-based IntelliJ versions. The issue error message (popup) resulted from an API call failure. This issue has now been remedied with this fix.&#x20;
+5. **Generated SARIF now associated with the branch being scanned** \
+   Previously when SARIF was generated while scanning from our SFDX plugin, the SARIF was generated from the main branch of the project and NOT the branch being scanned. This has been corrected, and now the SARIF is generated from the branch of the project that has just been scanned.&#x20;
 
 ## CodeScan Polyfill Protection Release
 
 **Release Date: 6 July 2024**
 
-We are excited to announce that CodeScan has been updated with crucial enhancements to address recent security concerns related to polyfills. Recent advisories have highlighted significant threats stemming from polyfills, particularly those distributed via the CDN polyfill.io, which are linked to malware.
+We are excited to announce that CodeScan has been updated with crucial enhancements to address recent security concerns related to polyfills. Recent advisories have highlighted significant threats stemming from polyfills, particularly those distributed via the CDN polyfill.io, which are linked to malware.&#x20;
 
-This update, effective **July 6th**, introduces advanced protection mechanisms to ensure your Salesforce environment remains secure.
+This update, effective **July 6th**, introduces advanced protection mechanisms to ensure your Salesforce environment remains secure.&#x20;
 
-Here’s how CodeScan is advancing your security:
+Here’s how CodeScan is advancing your security:&#x20;
 
-1. **Configuration Scanning:** Our enhanced system now scans the configuration settings of Salesforce components, including Salesforce Sites, Salesforce CORS (Cross-Origin Resource Sharing), and Salesforce CSP (Content Security Policy), to detect any unauthorized calls to polyfill.io domains.
-2. **Component Scanning:** We are scanning the core Salesforce components that enable developers to build sophisticated, custom user interfaces including Visualforce, Aura, Lightning, and other web components
-3. **Package Scanning:** Our updated scanning mechanism checks downloaded packages from Salesforce AppExchange to ensure they do not contain insecure calls to polyfill.io domains
+1. **Configuration Scanning:** Our enhanced system now scans the configuration settings of Salesforce components, including Salesforce Sites, Salesforce CORS (Cross-Origin Resource Sharing), and Salesforce CSP (Content Security Policy), to detect any unauthorized calls to polyfill.io domains.&#x20;
+2. **Component Scanning:** We are scanning the core Salesforce components that enable developers to build sophisticated, custom user interfaces including Visualforce, Aura, Lightning, and other web components&#x20;
+3. **Package Scanning:** Our updated scanning mechanism checks downloaded packages from Salesforce AppExchange to ensure they do not contain insecure calls to polyfill.io domains&#x20;
 
-**Why This Matters**
+**Why This Matters**&#x20;
 
-Recent security advisories highlight the risks associated with compromised polyfills.
+Recent security advisories highlight the risks associated with compromised polyfills. &#x20;
 
-**What Do I Need to Do?**
+**What Do I Need to Do?**&#x20;
 
-For our SaaS Cloud clients, these updates were included in the most recent maintenance release on July 06, so no action is required on your side. For our On Prem clients, these rules will be included in the 24.0.8 On Prem release, which is scheduled for July 17. For our Dedicated Cloud clients, please contact your Account Team to schedule your upgrade.
+For our SaaS Cloud clients, these updates were included in the most recent maintenance release on July 06, so no action is required on your side.  For our On Prem clients, these rules will be included in the 24.0.8 On Prem release, which is scheduled for July 17.  For our Dedicated Cloud clients, please contact your Account Team to schedule your upgrade. &#x20;
 
 ## Release Notes 24.0.7
 
 **Release Date: 19 June 2024**
 
-### Rule Updates
+### Rule Updates&#x20;
 
-1. The 'Hard Coded Credentials' rule name has been changed to 'Use Named Credentials' for clarity.
+1. The 'Hard Coded Credentials' rule name has been changed to 'Use Named Credentials' for clarity.&#x20;
 2. 'Use Named Credentials' and 'Field Level Security' rules have updated descriptions highlighting Salesforce best practices and better paths to resolution.
 
-### Bug Fixes
+### Bug Fixes&#x20;
 
-Fixed a false positive in the rule 'Avoid using methods getDescribe and getMap inside Loops' when using custom methods with similar names.
+Fixed a false positive in the rule 'Avoid using methods getDescribe and getMap inside Loops' when using custom methods with similar names.&#x20;
 
-A link was fixed on the rule description pages.
+A link was fixed on the rule description pages.&#x20;
 
-Filtering the list by project, the rule now works correctly.
+Filtering the list by project, the rule now works correctly.&#x20;
 
 New code settings no longer switch depending on the main branch of the project; all branches can be configured independently. A warning will be shown if the setting chosen will have no effect.
 
@@ -684,42 +688,50 @@ New code settings no longer switch depending on the main branch of the project; 
 
 **Release Date: 5 June 2024**
 
-### **Summary:**
+### **Summary:**&#x20;
 
-CodeScan 24.0.6 is comprised of the following 3 enhancements:
+CodeScan 24.0.6 is comprised of the following 3 enhancements:&#x20;
 
-1. **SBOM Upgrade for ADO extension:**
-   * CodeScan currently provides an ADO extension to integrate with Azure DevOps. For this enhancement, we have upgraded components and libraries (within our SBOM), eliminating all high-severity vulnerabilities.
-2. **Severity added to SARIF output:**
-   * CodeScan currently generates SARIF output; however, that SARIF output in GitHub does not contain the severity. By adding severity to our SARIF output, CodeScan can now provide a more verbose presentation of the issues in GitHub. This change will provide a better experience for our customers working in GitHub Actions.
+1.  **SBOM Upgrade for ADO extension:**&#x20;
+
+    * CodeScan currently provides an ADO extension to integrate with Azure DevOps. For this enhancement, we have upgraded components and libraries (within our SBOM), eliminating all high-severity vulnerabilities.&#x20;
+
+
+2.  &#x20;**Severity added to SARIF output:**&#x20;
+
+    * CodeScan currently generates SARIF output; however, that SARIF output in GitHub does not contain the severity. By adding severity to our SARIF output, CodeScan can now provide a more verbose presentation of the issues in GitHub. This change will provide a better experience for our customers working in GitHub Actions.&#x20;
+
+
 3.  **Added more fields in our Report Header:**
 
-    * CodeScan report header contained limited information regarding the context of the report. This enhancement provides much more detailed information including:
+    * CodeScan report header contained limited information regarding the context of the report.  This enhancement provides much more detailed information including:&#x20;
 
-    **Field 1**
+
+
+    **Field 1**&#x20;
 
     * Label = "Report Generation Date"
     * Value = Date report was created
 
     **Field 2**
 
-    * Label = “Project Name”
-    * Value = Name of project
+    * Label = “Project Name”&#x20;
+    * Value = Name of project&#x20;
 
     **Field 3**
 
-    * Label = “Main Branch”
-    * Value = Name of the main branch
+    * Label = “Main Branch”&#x20;
+    * Value = Name of the main branch&#x20;
 
     **Field 4**
 
-    * Label = “Main Branch – Last Analysis Date”
-    * Value = Date of the last analysis of the main branch
+    * Label = “Main Branch – Last Analysis Date”&#x20;
+    * Value = Date of the last analysis of the main branch&#x20;
 
     **Field 5**
 
-    * Label = “Comparison Branch”
-    * Value = Name of the comparison branch or pull request branch
+    * Label = “Comparison Branch”&#x20;
+    * Value = Name of the comparison branch or pull request branch&#x20;
 
 {% hint style="info" %}
 NOTE: If there is not a corresponding comparison branch or pull request branch, the value should be “Not Applicable.”
@@ -727,7 +739,7 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 **Field 6**
 
-* Label = “Comparison Branch – Last Analysis Date”
+* Label = “Comparison Branch – Last Analysis Date”&#x20;
 * Value = Date of the last analysis of the comparison branch
 
 {% hint style="info" %}
@@ -736,8 +748,8 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 **Field 7**
 
-* Label = “Version”
-* Value = The corresponding version number listed in version history / measure history
+* Label = “Version”&#x20;
+* Value = The corresponding version number listed in version history / measure history&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-06-01 at 9.25.18 AM.png" alt=""><figcaption></figcaption></figure>
 
@@ -749,15 +761,19 @@ NOTE: If there is not a corresponding comparison branch or pull request branch, 
 
 Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules. Support ticket #114684
 
+
+
 **13 June 2024**
 
-**v. 2.0.2**
+**v. 2.0.2** &#x20;
 
 New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review. You can click on the specific _Type_ or _Severity_ to only see issues of that type.
 
 <figure><img src="../../../../.gitbook/assets/image (567).png" alt=""><figcaption></figcaption></figure>
 
 The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
+
+
 
 ***
 
@@ -783,7 +799,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Detail**: In Salesforce's Spring '24 release, the null-coalescing operator has been introduced in Apex. This rule will identify where this operator could be used but isn’t being utilized.\
    \
-   For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_NullCoalescingOperator.htm).\
+   For further information, please refer to Salesforce Release Documentation - [Null Coalescing Operator](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_NullCoalescingOperator.htm). \
    <br>
 3. **Rule Name: “**_**Use Accessibility Attributes”**_\
    \
@@ -795,7 +811,7 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    Salesforce’s ARIA attributes allow accessibility software to gather more information on the state of the page and align with the ARIA standard.\
    \
-   For further information, please refer to:\
+   For further information, please refer to: \
    [Component Accessibility Attributes](https://developer.salesforce.com/docs/platform/lwc/guide/create-components-accessibility-attributes.html)\
    [Accessible Rich Internet Applications (WAI-ARIA)](https://w3c.github.io/aria/)\
    <br>
@@ -809,13 +825,15 @@ The released plugin can be updated directly from VSCode and also can be found in
 
 <div align="left" data-full-width="false"><figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
+
+
 5. **Rule Name: “**_**Avoid JavaScript Scriptlets in Aura Components and Apex Pages”**_\
    \
    **Category**: New Aura / Lightning / Visualforce Rule in CodeScan\
    \
    **Purpose/Detail**: JavaScript scriptlets should not be directly embedded within the markup of Aura components or Apex pages. Instead, utilize Salesforce Static resources for including JavaScript code. Using direct \<script> tags in components or pages can pose a security risk, increasing the likelihood of cross-site scripting (XSS) attacks.\
    \
-   For further information, please refer to: [https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review) -\
+   For further information, please refer to: [https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review) - \
    [The Top 20 Vulnerabilities Found in the AppExchange Security Review](https://developer.salesforce.com/blogs/2023/08/the-top-20-vulnerabilities-found-in-the-appexchange-security-review)\
    [MITRE, CWE-79](https://cwe.mitre.org/data/definitions/79.html) - Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')\
    <br>
@@ -833,25 +851,27 @@ The released plugin can be updated directly from VSCode and also can be found in
    \
    **Category**: New APEX rule in CodeScan\
    \
-   **Purpose**: The annotation “@isTest(isParallel=true/false)” can be set in Apex test classes to indicate whether the particular test can be executed parallelly or sequentially (performance enhancement).\
+   **Purpose**:  The annotation “@isTest(isParallel=true/false)” can be set in Apex test classes to indicate whether the particular test can be executed parallelly or sequentially (performance enhancement).\
    \
-   **Detail**: When writing Apex unit tests, ensure that the @IsTest(IsParallel) annotation is set, whether true or false. This keeps the option of running tests in parallel visible through development to optimize test execution times. However, it should only be enabled in scenarios where it adds value without introducing risks or conflicts.\
+   **Detail**:  When writing Apex unit tests, ensure that the @IsTest(IsParallel) annotation is set, whether true or false. This keeps the option of running tests in parallel visible through development to optimize test execution times. However, it should only be enabled in scenarios where it adds value without introducing risks or conflicts.\
    \
-   **Further information**: When utilizing Apex unit tests with the annotation @IsTest(IsParallel=true), it's essential to be aware of potential drawbacks to ensure smooth execution and accurate results. Enabling parallel testing with @IsTest(IsParallel=true) may lead to UNABLE\_TO\_LOCK\_ROW errors due to resource competition, which in turn can result in rerunning failed tests in serial mode.\
+   **Further information**: When utilizing Apex unit tests with the annotation @IsTest(IsParallel=true), it's essential to be aware of potential drawbacks to ensure smooth execution and accurate results. Enabling parallel testing with @IsTest(IsParallel=true) may lead to UNABLE\_TO\_LOCK\_ROW errors due to resource competition, which in turn can result in rerunning failed tests in serial mode. \
    \
-   Additionally, it's important to note that this setting does not affect change set deployment or package upload processes.\
+   Additionally, it's important to note that this setting does not affect change set deployment or package upload processes. \
    \
    By understanding these drawbacks, developers can effectively manage test execution and deployment processes, minimizing errors, and ensuring the reliability of test results.<br>
 
 ### Fixes
 
-1. **Updated the rule “Avoid duplicate conditions in "if"/"else if" and "switch" statements to eliminate dead code."**\
+1. **Updated the rule “Avoid duplicate conditions in "if"/"else if" and "switch" statements to eliminate dead code."**  \
    \
-   **Detail**: In the Initial implementation, the "if/else-if" statements and the nested "if/else-if" statements present within them were not allowed to have duplicate conditions. Now only the related "if/else-if" statements are checked for duplicate conditions, without considering the nested "if/else-if" statements present within them.\
+   **Detail**:  In the Initial implementation, the "if/else-if" statements and the nested "if/else-if" statements present within them were not allowed to have duplicate conditions. Now only the related "if/else-if" statements are checked for duplicate conditions, without considering the nested "if/else-if" statements present within them.\
    \
    **Value**: The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch." This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, but in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior.
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 2. **Updated the documentation and example on rule “API Version is Too Old” to:** “This rule identifies visual force pages which are using older versions of the API. Change the API Version of this visual force page.”\
    \
@@ -899,6 +919,8 @@ Any suffix with .\[dot] present will be treated as a correct suffix and not be m
 * Fixed a NullPointerException with the Apex rule “Null Coalescing Operator.”
 * Fixed an issue with New Code settings. Customers who were changing new code settings while selecting the reference branch as “main” were receiving a notification that the settings had been saved. However, the change was not reflected/applied properly to the CodeScan engine. This issue is now resolved.
 
+
+
 ***
 
 ## Release Notes 24.0.3
@@ -910,7 +932,7 @@ This release has several new features that support enhanced user capabilities.
 <figure><img src="../../../../.gitbook/assets/CodeScan slide 2024-04-17.jpg" alt=""><figcaption></figcaption></figure>
 
 1. **CSV Export**: With this fix, we added a URL column to the CSV Export that enables teams to quickly navigate to the Issue and get a fix in place.
-2. **CSV Export not exporting all issues**: To avoid doubling up the queries, when a user presses the **Export** button, the **Export** and **Reset** buttons are grayed out and unusable. After the buttons are clicked, the following message should show underneath: "Please remain on this page while your report is generated. Depending on the number of issues in your report, this may take up to 5 minutes. Your download will start shortly."
+2. **CSV Export not exporting all issues**: To avoid doubling up the queries, when a user presses the **Export** button, the **Export** and **Reset** buttons are grayed out and unusable. After the buttons are clicked, the following message should show underneath: "Please remain on this page while your report is generated. Depending on the number of issues in your report, this may take up to 5 minutes. Your download will start shortly."&#x20;
 3. **CSV Export added functionality – Pull Requests**: This enables CSV Exports to include the options to filter and group code issues by specific pull request(s).
 4. **Quality Profile error**: A bug that caused project analysis issues is now fixed in the sfmeta:FlowNullHandler rule.
 5. **NullPointerException in IdempotentBinaryOperatorsRule:** This fixes an exception when a null pointer is thrown in IdempotentBinaryOperatorRule.txt.
@@ -919,8 +941,7 @@ This release has several new features that support enhanced user capabilities.
 8. **Null Pointer Exception for IfElseDefaultCase Rule**: This fixes a null pointer exception thrown for triggers.
 9.  **False Positives**: This fixes false positive errors for the sf:FixDuplicateConditions rule. The same conditions can cause duplication and lead to dead code in statements such as "if"/"else if" and "switch". This issue often occurs due to a copy/paste error. In the best-case scenario, it results in dead code that serves no purpose, while in the worst-case scenario, it introduces bugs that may propagate as the code is maintained, potentially leading to unexpected behavior. Addressing false positives for cases such as:
 
-    ```java
-    public class sample{
+    <pre class="language-java"><code class="lang-java">public class sample{
     public static void main(){
         if(a==true){}
         else if(a == null){}
@@ -932,14 +953,16 @@ This release has several new features that support enhanced user capabilities.
         else if(this.b){}
         }
     }
-
-    ```
+    <strong>
+    </strong></code></pre>
 10. **Use Relative, not Absolute URLs**: Code that uses absolute URLs for Salesforce pages will only work when running on the corresponding Salesforce instances. This can cause code to fail when deployed in another sandbox or production environment. Use relative URLs to avoid this issue.
 11. **Null Pointer Exception – sf:AvoidAbsoluteURL rule**: Fixed a null pointer exception during analysis associated with the sf:AvoidAbsoluteURL rule.
 
+
+
 ***
 
-## Release Notes 24.0.2
+## Release Notes 24.0.2&#x20;
 
 **March 2024**
 
@@ -989,6 +1012,8 @@ This update introduces several new rules and bug fixes for current rules. This i
 * The rule "**sf:AvoidPublicFields"** was updated to exclude public fields with the **`@InvocableVariable`** annotation.
 * We provided a fix for the rule's missing root element in "**RuleSet**."
 * We provided a fix for the **"Consider removing inactive flows"** rule not working correctly.
+
+
 
 ***
 

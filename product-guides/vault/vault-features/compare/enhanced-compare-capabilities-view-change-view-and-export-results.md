@@ -24,7 +24,7 @@ By clicking on the ‘View Records’ button at record level, a new window will 
 
 By clicking on the ‘Change View’ option available on the screen, a new window with list of fields will be displayed to the user. By default 20 fields will be auto selected on the screen. New fields can be added to the list to view any additional fields, to add new fields existing fields should be unselected.
 
-<figure><img src="../../../../.gitbook/assets/image (1678).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1680).png" alt=""><figcaption></figcaption></figure>
 
 ## Export - Compare
 
@@ -32,7 +32,7 @@ By clicking on the ‘Change View’ option available on the screen, a new windo
    1. **All Records**: will export all of the records retrieved from the compare operation.
    2. **Record Displayed On The Current Page**: will export the records available on the current page.
 
-<figure><img src="../../../../.gitbook/assets/image (1681).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1682).png" alt=""><figcaption></figcaption></figure>
 
 ## Export – Live Compare
 
@@ -42,3 +42,7 @@ By clicking on the ‘Change View’ option available on the screen, a new windo
    3. **Selected Records**: will export only the records that are selected from the compare operation.
 
 <figure><img src="../../../../.gitbook/assets/image (1683).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+&#x20;

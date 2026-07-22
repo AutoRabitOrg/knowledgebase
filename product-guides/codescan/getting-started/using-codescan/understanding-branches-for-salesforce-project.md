@@ -1,4 +1,4 @@
-# Understanding Branches for Salesforce projects
+# Understanding branches for Salesforce projects
 
 When you create an analysis project from Salesforce, the org or sandbox you authorize will become your main branch. You can add your sandboxes as analysis project branches by editing your project (from the **Project Analysis** page). This allows for easy comparison between the production orgs or sandboxes and is especially good for checking features before production.
 
@@ -93,7 +93,7 @@ On this page, you can:
 
 #### Delete a branch <a href="#delete-a-branch" id="delete-a-branch"></a>
 
-For example, to delete a comparison branch, navigate to the **Comparisons Branches** tab, click on <img src="../../../../.gitbook/assets/image (1688).png" alt="" data-size="line">icon and click on **Delete Comparison Branch**. Note that this process cannot be undone.
+For example, to delete a comparison branch, navigate to the **Comparisons Branches** tab, click on <img src="../../../../.gitbook/assets/image (1689).png" alt="" data-size="line">icon and click on **Delete Comparison Branch**. Note that this process cannot be undone.
 
 <figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -108,14 +108,14 @@ Give the main branch a new name and click on **Rename**.
 
 ### Comparing Branches <a href="#comparing-branches" id="comparing-branches"></a>
 
-<figure><img src="../../../../.gitbook/assets/Comparision.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Comparision (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Select your Salesforce project from the **My Projects** page.
 2. When you click on the main branch dropdown for your project, you can see the list of all branches that you have created or added.
 3. If there are any violations for your branch, such details will appear. If you click on a branch, the details of the violations can be seen on the **Quality Gate Status** screen.
 
 {% hint style="info" %}
-**Important Note:**
+**Important Note:**&#x20;
 
 All new branches added in this way will be deleted in **30 days** if they are not analyzed again. If you have any further questions about CodeScan Cloud, please [contact us](https://www.codescan.io/contact/).
 {% endhint %}

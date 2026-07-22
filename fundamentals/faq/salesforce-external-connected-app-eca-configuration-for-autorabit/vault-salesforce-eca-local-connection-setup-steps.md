@@ -68,12 +68,14 @@ https://vault-qa.autorabit.com/dashboard/setup/addSfOrg
 
 {% step %}
 {% hint style="info" %}
-### **Important Note:** After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, then try again to allow the Salesforce configuration to sync completely.
+### **Important Note:**  After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, then try again to allow the Salesforce configuration to sync completely.
 {% endhint %}
+
+
 {% endstep %}
 
 {% step %}
-### Enable OAuth + set callback URL + scopes <a href="#arm-3-enableoauthsetcallbackurlscopes" id="arm-3-enableoauthsetcallbackurlscopes"></a>
+### &#x20;Enable OAuth + set callback URL + scopes <a href="#arm-3-enableoauthsetcallbackurlscopes" id="arm-3-enableoauthsetcallbackurlscopes"></a>
 
 1. Click **Enable OAuth** (or expand **API (Enable OAuth Settings)** and check **Enable OAuth**).
 2.  Set \*_Callback URL_
@@ -108,7 +110,7 @@ In the **Security** section the next options should be enabled:
 {% endstep %}
 
 {% step %}
-### Create the app and capture Client ID / Secret <a href="#arm-6-createtheappandcaptureclientid-secret" id="arm-6-createtheappandcaptureclientid-secret"></a>
+### &#x20;Create the app and capture Client ID / Secret <a href="#arm-6-createtheappandcaptureclientid-secret" id="arm-6-createtheappandcaptureclientid-secret"></a>
 
 1. Click **Create**.
 2. Open the app’s **Settings** tab and locate **Consumer Key and Secret**:
@@ -120,7 +122,7 @@ In the **Security** section the next options should be enabled:
 
 When you click the button for Consumer Key and Secret a code will be sent to the registered email for the user creating the configuration
 
-<figure><img src="../../../.gitbook/assets/5caba430-fb77-494d-a717-1958d333d168.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/b5d12e36-9af7-4655-998e-b1cbbd0aa7b6.png" alt=""><figcaption></figcaption></figure>
 
 After getting the code and verify in Salesforce the Consumer Key (CliendID) and Consumer Secret (Client Secret) will be displayed.
 
@@ -174,7 +176,7 @@ A message from Salesforce will show to require granted permissions for the user 
 
 Then you will be returned and the connection will be saved.
 
-<figure><img src="../../../.gitbook/assets/37254284-9b62-4fd6-940f-df5576eb0718.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/841c3e49-3380-470a-b4f6-c19ee797a362.png" alt=""><figcaption></figcaption></figure>
 
 Click finish and the success message will appear
 
@@ -185,3 +187,4 @@ Click finish and the success message will appear
 {% endhint %}
 {% endstep %}
 {% endstepper %}
+

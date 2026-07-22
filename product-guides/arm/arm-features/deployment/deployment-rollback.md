@@ -12,7 +12,7 @@ Example: After deploying new changes to Production, users encounter unexpected e
 
 This option is useful in the following scenarios:
 
-* A deployment introduces errors in Production.
+*  A deployment introduces errors in Production.
 * A hotfix deployment needs to be reversed quickly.
 * You need to compare metadata snapshots to identify what changed.
 * Critical business functionality is impacted after release.
@@ -62,7 +62,7 @@ Next,
 8. Add information about the current rollback deployment process in the **`Deployment Notes`** box.
 9. Type **`Rollback`** in the field provided and click on **`Yes`**.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
@@ -91,3 +91,4 @@ In AutoRABIT, selective rollback can be performed using the following steps:
 5. The selective rollback was successfully completed.
 
 <figure><img src="../../../../.gitbook/assets/image (1667).png" alt=""><figcaption><p>Successful Selective Rollback</p></figcaption></figure>
+

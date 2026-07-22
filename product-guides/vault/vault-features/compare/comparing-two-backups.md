@@ -5,7 +5,7 @@ To compare two backup activities of a Salesforce org:
 1. Log in to Vault and navigate to **COMPARE**.
 2. Select the Salesforce org and any required configurations, then click **GET DETAILS**.
 3. The list of available backups is displayed.\
-   \&#xNAN;_Note: Hierarchical and archival backups are not supported for compare operations._
+   &#xNAN;_&#x4E;ote: Hierarchical and archival backups are not supported for compare operations._
 
 #### Step-By-Step Guide:
 
@@ -41,7 +41,7 @@ To compare two backup activities of a Salesforce org:
     1. Only the fields selected under these will be part of the compare operation.
 14. Click on the “COMPARE” button to initiate the compare operation.
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (7).png" alt=""><figcaption></figcaption></figure>
 15. Clicking compare will show the “Compare -Save Config” screen.
 
     <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
@@ -51,7 +51,7 @@ To compare two backup activities of a Salesforce org:
     3. **Description:** allows to enter a fitting description to the job.
 17. Click “SAVE” on entering all the required details.
 18. Clicking “SAVE” will show a pop-up saying, “Comparison is initiated successfully. Notification will be sent to your email once the comparison is completed.”
-    1. Once the compare job is completed, an email will be triggered to the user.
+    1. &#x20;Once the compare job is completed, an email will be triggered to the user.
 19. Click “OK” to be redirected to the “JOB HISTORY” page of the flow.
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
@@ -60,7 +60,7 @@ To compare two backup activities of a Salesforce org:
     <figure><img src="../../../../.gitbook/assets/image (12) (1) (3).png" alt=""><figcaption></figcaption></figure>
 21. The recently triggered job will be initially in progress, until the job run is completed.
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (14) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (15) (1) (4).png" alt=""><figcaption></figcaption></figure>
 22. Once the jobs run is completed successfully, a blue tick”![Tick with solid fill](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAPCAYAAAAyPTUwAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABQESAAMAAAABAAEAAAEaAAUAAAABAAAASgEbAAUAAAABAAAAUgEoAAMAAAABAAIAAIdpAAQAAAABAAAAWgAAAAAAAACQAAAAAQAAAJAAAAABAAKgAgAEAAAAAQAAAAugAwAEAAAAAQAAAA8AAAAA0dUkjgAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAPdJREFUKBVjYBgFJISA284X3A77/7OAtDDh05d87ru8jLDAfAXOT25gxQ3//zOFrrrKhq4p7sI36f8M/ycxMv2XZ2RjegBWfPfEc3U+JaXIpCOveWEa0s580mD+/X/W/3//Of//ZYycb8R7DSTHwsTGz/Xv3590Bk5uneRjH9t/szHp/2ZkbmRg/H+N4S9j6zwzjscwQ1i+GXFd4Dr9ZQIzw/8yRnb2/8z//+gxMPy/8+fP787F5gJwhSANjCAC5O4HJz7YMbNzdf7782sH059/E+da8b8DySEDsGKQAEjD4+sfZH/9FnizWJ/xK7IirGyQBqwSUEEAnmpeCMrHoKEAAAAASUVORK5CYII=)” will be displayed at the status of the triggered job.
@@ -117,7 +117,11 @@ To compare two backup activities of a Salesforce org:
     1. Displays a list of comparison results with a View Records icon for each row, allowing detailed inspection of the selected record.
     2.  Each icon opens a modal window showing a side-by-side comparison of Backup(s) Data for the corresponding object record.
 
+
+
         <figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+
 
         <figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
     3. Shows three columns:
@@ -168,7 +172,7 @@ To compare two backup activities of a Salesforce org:
 
            <figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
        2. In the Actions column, click the Re-Run icon for the desired job.
-    2. **Confirm Re-Run**
+    2. **Confirm Re-Run**&#x20;
        1.  A confirmation dialog appears. Select OK to continue or Cancel to abort.
 
            <figure><img src="../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
@@ -200,13 +204,23 @@ To compare two backup activities of a Salesforce org:
 47.
 48.
 
+
+
+
+
+
+
+
+
+
+
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. Next,
 
 * Select **one backup** from the list to compare the backup data with live data from Salesforce org or,
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select **two backup activities** to compare them and show the metadata and data difference results.
 

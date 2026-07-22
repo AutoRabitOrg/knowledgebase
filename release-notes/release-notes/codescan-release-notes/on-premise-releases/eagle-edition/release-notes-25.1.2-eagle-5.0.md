@@ -15,7 +15,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Rule Enhancements
 
-**1. Enhancement to “Switch Statements Should Have a When-Else Case” Rule**
+**1.     Enhancement to “Switch Statements Should Have a When-Else Case” Rule**
 
 Currently, the rule is not working as expected, as it does not raise violations when a switch statement lacks a when-else block. We have modified that logic to correctly identify switch statements that are missing a when-else case, so users can ensure the code is more robust, future-proof, and does not miss handling unexpected cases.
 
@@ -44,7 +44,7 @@ Expected Behavior:
   * x =- y; assigns -y instead of subtracting.
   * x =+ y; assigns +y instead of adding.
 
-This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse. Further, we updated the rule example with the following:
+This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse.  Further, we updated the rule example with the following:
 
 <figure><img src="../../../../../.gitbook/assets/image (2075).png" alt=""><figcaption></figcaption></figure>
 
@@ -57,7 +57,7 @@ Verified the new logic via the following scenarios:\
 
 <figure><img src="../../../../../.gitbook/assets/image (2077).png" alt=""><figcaption></figcaption></figure>
 
-**3. Enhancement to “CouplingBetweenObjects” Rule**
+**3.   Enhancement to “CouplingBetweenObjects” Rule**
 
 Modified the rule logic to correctly detect and report violations, so users can identify classes with excessive dependencies and reduce code complexity for better maintainability and testability.
 
@@ -65,11 +65,13 @@ Verified that the violation is triggered when the number of classes used exceeds
 
 <figure><img src="../../../../../.gitbook/assets/image (2078).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;
+
 <figure><img src="../../../../../.gitbook/assets/image (2079).png" alt=""><figcaption></figcaption></figure>
 
-**4. Enhancement to “Add Empty String” Rule**
+**4.   Enhancement to “Add Empty String” Rule**
 
-Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + ""). Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.
+Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + "").  Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.
 
 Verified the following scenarios are all working as expected:<br>
 
@@ -86,7 +88,7 @@ Verified the following scenarios are all working as expected:<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (2080).png" alt=""><figcaption></figcaption></figure>
 
-**5. Enhancement to “Avoid Hard-Coded Resource References” Rule**
+**5.  Enhancement to “Avoid Hard-Coded Resource References” Rule**
 
 Enhanced the rule logic to identify hard-coded file path references and raise violations with a clear issue message.
 
@@ -98,7 +100,7 @@ Validated the logic by verifying that users are able to see violations for use o
 
 <figure><img src="../../../../../.gitbook/assets/image (2083).png" alt=""><figcaption></figcaption></figure>
 
-**6. Enhancement to Suppress Warnings Rule**
+**6.  Enhancement to Suppress Warnings Rule**
 
 Our rule, TrackSuppressWarnings, had logic to find @SuppressWarnings, but the logic didn’t include find @suppresswarnings.
 
@@ -110,7 +112,7 @@ Verified the SuppressWarnings rule enhancement and validated that the suppressio
 
 <figure><img src="../../../../../.gitbook/assets/image (2084).png" alt=""><figcaption></figcaption></figure>
 
-**7. Enhancement to Apex rule “Unused Formal Parameter” {sf:UnusedFormalParameter}**
+**7.  Enhancement to Apex rule “Unused Formal Parameter” {sf:UnusedFormalParameter}**
 
 CodeScan has offered this rule since Dec 2017. Recently, a customer reported that the Unused Formal parameter doesn’t find when variables are used in SOQL. We replicated this issue where CodeScan flagged a variable as an unused variable, even though it is used in the SOQL string.
 
@@ -121,15 +123,17 @@ Verified the enhanced logic of rule “UnusedFormalParameter” via the followin
 1.  Previously, a parameter (e.g., encounterIds) used in a SOQL string (e.g., WHERE Id IN :encounterIds) was wrongly reported as unused. Now, this is correctly detected as usage — no violation.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2085).png" alt=""><figcaption></figcaption></figure>
-2.  Also verified the following cases are all working as expected:\
-    Verified: Parameter used in SOQL with bind variable (:encounterIds) — no violation\
-    Verified: Parameter used via clause string assembly — no violation\
-    Verified: Parameter incorrectly concatenated into SOQL string — violation\
+2.  Also verified the following cases are all working as expected: \
+    Verified: Parameter used in SOQL with bind variable (:encounterIds) — no violation \
+    Verified: Parameter used via clause string assembly — no violation \
+    Verified: Parameter incorrectly concatenated into SOQL string — violation \
     Verified: Parameter declared but not used anywhere — violation<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2086).png" alt=""><figcaption></figcaption></figure>
 
-**8. Another Rule Enhancement for sf:UnusedFormalParameter**
+
+
+**8.  Another Rule Enhancement for sf:UnusedFormalParameter**
 
 In this rule enhancement, we introduce a configuration flag, ignoreUnusedParametersInInterfaceOverrides, in the sf:UnusedFormalParameter rule, so unused parameters in valid interface implementations and method overrides can be conditionally suppressed. By default, violations will continue to be reported unless this flag is explicitly set to true.
 
@@ -160,7 +164,7 @@ When designing your rule improvement, the logic should:
     * Prevent misleading or incorrect violations in valid interface and override implementations (e.g., execute(SchedulableContext)).
     * Preserve backward compatibility by keeping the rule strict by default.
 
-Additionally, we updated the Rule Description to “Avoid passing parameters to methods or constructors without actually referencing them in the method body. Use the ignoreUnusedParametersInInterfaceOverrides parameter to suppress violations for unused parameters in valid interface implementations and method overrides.”
+Additionally, we updated the Rule Description to “Avoid passing parameters to methods or constructors without actually referencing them in the method body.  Use the ignoreUnusedParametersInInterfaceOverrides parameter to suppress violations for unused parameters in valid interface implementations and method overrides.”
 
 Verified the rule sf:UnusedFormalParameter and validated the following conditions:
 
@@ -181,7 +185,7 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
 
     <figure><img src="../../../../../.gitbook/assets/image (2089).png" alt=""><figcaption></figcaption></figure>
 
-### Fixes
+### Fixes&#x20;
 
 1.  **Fixed issue with CodeScan rule detecting SOQL Injections, which was causing analyses to break**\
     Previously, while analyzing for SOQL Injection, if a local variable is declared using a class-level variable of the same name, then CodeScan analyses were erroring with StackOverflowError, as it was stuck in a loop while resolving the reference.\
@@ -193,4 +197,5 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
     \
     Verified the SOQL Injection rule fix (which was causing stack overflow error). Validated that now users are not encountering the error and project analyses are working as expected.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2007).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2090).png" alt=""><figcaption></figcaption></figure>
+

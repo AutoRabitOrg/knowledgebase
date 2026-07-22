@@ -14,29 +14,29 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 3. Select the desired Salesforce Org.
 4. The next step is to create Archival Config, navigate to the **Configs** tab, and click on **Add Archival Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archival policy.
 
-<figure><img src="../../../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 5. Select the components that you need to archive on the next screen.
 
-<figure><img src="../../../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 6. Using **Filter** you can define the criteria on which the records will get fetched.\
    **For ex-** If you can define criteria to fetch Case records that are older than 1000 days and are in the closed state Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. For easy identification of objects on which filter is applied, the filter icon is highlighted.
 
-<figure><img src="../../../.gitbook/assets/image (221).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (282).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (222).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (283).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. The **Hierarchy** option will allow you to view all the corresponding child objects for your selected object. These child objects will also get archived once you archive their parent object. Such a hierarchy schema view can be seen using the **Hierarchy** option.
    * You may notice in the schema view that some of the objects are auto-selected by default and cannot be unchecked. These are the child objects of its parent object which will be deleted for sure if its parent object is selected for archival policy. However, for other objects which are related to the selected object in some other way, you may have the option to choose them manually for archival.
 
-<figure><img src="../../../.gitbook/assets/image (223).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (284).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (224).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (285).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Once done, click **Save** to close the hierarchy-schema screen. Similar to Filter criteria addition, the hierarchy icon gets highlighted corresponding to the object for which hierarchy is selected.
 
-<figure><img src="../../../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
 
 9.  Click **Next.** On the next screen, do the following:
 
@@ -47,11 +47,11 @@ Data archives can be thought of as a data repository for infrequently accessed, 
     * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
     * **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.
 
-    <figure><img src="../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
 10. Click **Save Config**.
 11. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archival policy gets configured. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (227).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
 12. Now go to the **Archival** tab.
 13. Select your [**Salesforce Org**](https://knowledgebase.autorabit.com/docs/org-synchronization) for which you configured the archival recently.

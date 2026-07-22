@@ -19,19 +19,19 @@ ARM has given a provision to the user to download the conflicted files in their 
 
 To do so,
 
-1. Go to the **Commits** screen.
+1. Go to the **Commits** screen.&#x20;
 2. Search for your merge label that has a conflict. Click on the **Resolve Conflict** button.
 
 <figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. The list of **conflicted files** or **merged files** will display on the next screen.
+3. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
 
 4.  To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
 
-    * ![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
-    * ![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
+    * ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
+    * ![](<../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
 
     <figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
 5. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Tree view** displays the parent-child relationships of the conflicted/merged files.
@@ -53,7 +53,7 @@ To do so,
 
 <figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-9. Now, work on the conflicted files using your merge tool (example- TortoiseSVN, TortoiseGit) and make necessary changes to it.
+9. Now, work on the conflicted files using your merge tool (example- TortoiseSVN, TortoiseGit) and make necessary changes to it.&#x20;
 10. Click on the **Upload** (![](<../../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon and upload the resolved files. Make sure the file uploaded is in **zipped** format.
 11. Finally, click on **Commit** to commit the changes in the destination branch.
 
@@ -66,7 +66,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 {% endhint %}
 
 1. Go to the **Commits** screen and search for your merge label that has conflict. Click on the **Resolve Conflict** icon.
-2. The list of conflicted files or merged files will display on the next screen.
+2. The list of conflicted files or merged files will display on the next screen.&#x20;
 3.  There is an easier method to resolve the conflicted files in one go. Select all the files and click on the 3 dots as shown in the image below and choose either of the criteria to resolve the files.
 
     * **Use Source:** This option retains the revisions located in the source branch
@@ -83,7 +83,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
     * **Dest. file**: This option retains the revisions located in the Destination Branch.
     * **Src. file**: This option retains the revisions located in the Source Branch.
     * **Block**: Select this option to resolve using either Source or Destination block. Here, two options will be auto-populated and you need to select either of the options mentioned below:
-      1. **Destination**: The changes in the destination block will be used in the resulting merged file.
+      1. **Destination**: The changes in the destination block will be used in the resulting merged file.&#x20;
       2. **Source**: The changes in the source block will be used in the resulting merged file.
     * **Block from ‘Dest.’ before ‘Src.’**: This allows you to use both the blocks; first changes in the **destination** block and later **source** block. The changes are used in the resulting **Merged** file.
     * **Block from ‘Src.’ before ‘Dest.’**: This allows you to use both the blocks; first changes in the **source** block and later **destination** block. The changes are used in the resulting **Merged** file.
@@ -116,6 +116,8 @@ This tab will list all duplicate entries for your profile/permission sets and yo
 **Important Points to Note:**
 
 1. If you receive the following error as highlighted below for duplicate entry, we suggest you download the file locally in such a case and search for any duplicity. Or, you can continue to commit directly by resolving the conflicting files (using the **Resolve Duplicates** button).
+
+
 
 <img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 

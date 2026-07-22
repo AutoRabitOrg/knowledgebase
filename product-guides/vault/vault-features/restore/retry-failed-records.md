@@ -18,4 +18,4 @@ The retry failed records feature provides a streamlined way to reprocess only th
 4. The retry option remains available for seven days from the time the job is initiated.
 5.  After the retention period elapses, the retry button is disabled (grayed out).
 
-    <figure><img src="../../../../.gitbook/assets/image (2069).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

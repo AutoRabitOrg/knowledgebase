@@ -50,9 +50,9 @@ To configure IAM Role support in Vault:
 3. Set **Storage Type** to **AWS S3**.
 4. Enter a **Label Name** (this is a user-defined reference name).
 5. Enable the checkbox:\
-   \&#xNAN;**"Role-based control for dedicated/On-Prem Instance"**
+   &#xNAN;**"Role-based control for dedicated/On-Prem Instance"**
 
-<figure><img src="../../../../../.gitbook/assets/image (98) (1).png" alt="IAM Role configuration in Vault settings" width="377"><figcaption><p>Selecting IAM role option for S3 access</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (99) (1).png" alt="IAM Role configuration in Vault settings" width="377"><figcaption><p>Selecting IAM role option for S3 access</p></figcaption></figure>
 
 6. Enter the **S3 Bucket Name** in the corresponding field.
 7. Select an **encryption method**: either **AES-256** or **AWS-KMS**.

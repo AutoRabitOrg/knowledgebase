@@ -5,8 +5,8 @@
 1. Click on the "IZ" icon from the activity bar
 2.  Click on **`IZ Scan Extension`** to request a trial license
 
-    <figure><img src="../../../../../../.gitbook/assets/new-connection.png" alt=""><figcaption></figcaption></figure>
-3.  Enter the Email ID, Company Name, and click on **`Generate License`**<br>
+    <figure><img src="../../../../../../.gitbook/assets/new-connection (1).png" alt=""><figcaption></figcaption></figure>
+3.  Enter the Email ID, Company Name, and click on **`Generate License`** <br>
 
     <figure><img src="../../../../../../.gitbook/assets/generate-license.png" alt=""><figcaption></figcaption></figure>
 4. A trial license will be generated for 15 days, and the license key will be sent to the email ID

@@ -18,7 +18,7 @@ This article explains how to enable the Salesforce Metadata rules in the CodeSca
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption><p>Create Quality Profiles</p></figcaption></figure>
 3.  Create a new rule by selecting the language as **`Salesforce Metadata`** and name your new profile. You can choose the **`Parent rule`** as optional.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1728).png" alt=""><figcaption><p>Create New Quality Profile</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3) (1).png" alt=""><figcaption><p>Create New Quality Profile</p></figcaption></figure>
 4.  Once you create the new quality profile, you will navigate to a new page where you need to click on the **`Activate More`** button on the left.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3) (1).png" alt=""><figcaption><p>Activate More</p></figcaption></figure>
@@ -36,7 +36,7 @@ This article explains how to enable the Salesforce Metadata rules in the CodeSca
 
 ### Adding Salesforce metadata types for Salesforce Org analysis <a href="#adding-salesforce-metadata-types-for-the-analysis" id="adding-salesforce-metadata-types-for-the-analysis"></a>
 
-To enable downloading metadata for your Salesforce project, you will need to change some project settings. Remember that the following will only work with code being pulled from Salesforce.
+To enable downloading metadata for your Salesforce project, you will need to change some project settings. Remember that the following will only work with code being pulled from Salesforce. &#x20;
 
 If you are using a Git repository or any other method of scanning, please skip to the next step.
 

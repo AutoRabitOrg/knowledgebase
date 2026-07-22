@@ -1,4 +1,4 @@
-# Update Remote Site URLs
+# Update URL for Remote Site Settings
 
 To create this template, follow the below steps:
 
@@ -11,7 +11,7 @@ To create this template, follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** and **Remote Site Settings Name** that appear automatically by default. To add the custom test data, click on **Add** button.
 9. However, you'll need to add more custom settings for the auto-generated or your custom test case name. To add, do the following:
-   * Click on![](<../../../../../.gitbook/assets/image (58).png>)icon.
+   * Click on![](<../../../../../.gitbook/assets/image (1480).png>)icon.
    * Enter the required details in the **Remote Site Name** and **New URL** fields.
    * You can even add multiple settings for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.
    * Click **OK**. Once you are finished, click **Save** to save this page.

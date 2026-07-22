@@ -4,9 +4,9 @@
 
 ### Update Plugin
 
-1.  Go to **`Help`** -> **`Install New Software`** and add the plugin download link http://plugins.integralzone.com/v5 in the address bar.<br>
+1.  Go to **`Help`** -> **`Install New Software`** and add the plugin download link http://plugins.integralzone.com/v5 in the address bar. <br>
 
-    <figure><img src="../../../../../../.gitbook/assets/studio_install_v5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/studio_install_v5 (1).png" alt=""><figcaption></figcaption></figure>
 2. Select the required features, click on **`Next`** and follow the installation instructions
 3. Restart Studio after installation
 

@@ -10,11 +10,11 @@ As a Salesforce developer, you can collaborate on proposed changes to source cod
 
 1. Provide visibility on changed files in your commits that you are introducing to the source code.
 2. Visualize, review, and comment on these potential changes with other members of your team.
-3. Set up CI jobs to execute and report Apex test results, SAST (Static Application Security Testing) test results, and Functional test results on your source branch for every check-in.
+3. Set up CI jobs to execute and report Apex test results, SAST (Static Application Security Testing) test results, and Functional test results on your source branch for every check-in.&#x20;
 4. Add follow-up commits before your changes are merged to the base branch.
 5. In case of a conflict, you can use our IDE-powered conflict editor to resolve them and merge your changes.
 
-## How to create a merge request <a href="#how-to-create-a-merge-request" id="how-to-create-a-merge-request"></a>
+## How to create a merge request  <a href="#how-to-create-a-merge-request" id="how-to-create-a-merge-request"></a>
 
 To initiate a new merge request, go to the [**Version Control**](https://www.autorabit.com/8-benefits-of-version-control-in-salesforce-development/) module and click on the **New Merge Requests** call-to-action button.
 
@@ -29,7 +29,7 @@ The **Merge Request History** screen is best viewed when the zoom setting is set
 
 3. On the next screen, give the merge request a **name** and a short **description** (if required).
 4. Enter the **assignee** username. You can assign the merge request to yourself by clicking on the _assign to yourself_ link. The assignee will be notified by email about the created merge request.
-5. In the **Approver** field, enter the user email address from whom you want to request a review. It is also possible to assign multiple approvers to review your merge request.
+5. In the **Approver** field, enter the user email address from whom you want to request a review. It is also possible to assign multiple approvers to review your merge request.&#x20;
 6. Enable the **"Delete Source Branch when Merge Request is closed"** option to keep your repository clean. By doing this, the source branch will be automatically deleted right after the merge request is accepted. This is optional.
 7. **Squash and Merge**: Sometimes, when merging a long list of changes from a development branch into the master, it’s useful to squash those commits into one change for ease of review and to declutter the repo’s commit history. AutoRABIT now offers the option to squash all of the commits in a merge request into one commit after the merge is approved and completed. **(**[**Learn More**](squash-and-merge.md)**)**
 
@@ -43,7 +43,7 @@ The **Merge Request History** screen is best viewed when the zoom setting is set
 
 ### Running a Merge Request During a CI Job <a href="#running-a-merge-request-during-ci-job" id="running-a-merge-request-during-ci-job"></a>
 
-While triggering a new CI job, you can run a merge request on your GitHub version control repository. To do so, select the **Merge Request** checkbox for your repo under the **Build** section.
+While triggering a new CI job, you can run a merge request on your GitHub version control repository. To do so, select the **Merge Request** checkbox for your repo under the **Build** section.&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -59,7 +59,7 @@ When the assignee initiates a new merge request, an email notification is sent t
 
 ### Merge Request History <a href="#merge-request-history" id="merge-request-history"></a>
 
-The merge request screen displays the list of merge requests created to date along with their current statuses.
+The merge request screen displays the list of merge requests created to date along with their current statuses.&#x20;
 
 It's a good idea to break data into multiple pages when dealing with multiple merge request records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
 
@@ -73,13 +73,13 @@ It's a good idea to break data into multiple pages when dealing with multiple me
 
 <figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3.  The merge request log details, together with the metadata changes report, commits, and the comments can be viewed here.
+3.  The merge request log details, together with the metadata changes report, commits, and the comments can be viewed here.&#x20;
 
     * **Log**: Contains the detailed history of the check-in performed.
 
     <figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1).png" alt="" width="497"><figcaption></figcaption></figure>
 
-    * **Log Statuses:** For each operation performed in the commit phase, the log report will be available. A (![](<../../../../../.gitbook/assets/image (1073).png>)) mark against each log segment shows the completion of the operation; you will have (![](<../../../../../.gitbook/assets/image (1074).png>)) and (![](<../../../../../.gitbook/assets/image (1075).png>)) icons, respectively present against each log segment for a failed or a partially successful operation.
+    * **Log Statuses:** For each operation performed in the commit phase, the log report will be available. A (![](<../../../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1).png>)) mark against each log segment shows the completion of the operation; you will have (![](<../../../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1).png>)) and (![](<../../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1).png>)) icons, respectively present against each log segment for a failed or a partially successful operation.
     * **Files Changed**: This tab displays the number of insertions and deletions to each metadata file. The lines highlighted in **RED** color indicate those are updated (added/deleted/modified) in the source branch and in **GREEN** color indicate those are updated (added/deleted/modified) in the destination branch. The highlighted lines are the modified lines.
 
     <figure><img src="../../../../../.gitbook/assets/image (69) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -175,3 +175,4 @@ For the Merge Request to receive updates:
 #### Why This Matters
 
 Without the correct webhook configuration, the system lacks visibility of the push event, so the Merge Request remains outdated. Ensuring the webhook is active for push events ensures continuous synchronization between your repository and ARM’s Merge Request view.
+

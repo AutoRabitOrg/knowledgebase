@@ -1,4 +1,4 @@
-# Inserting Salesforce Data
+# Insert Salesforce Data
 
 **The "Basic DataLoader" feature offers a user-friendly and efficient way to insert data into Salesforce using a CSV file.** It simplifies the data load process while maintaining accuracy and speed, making it ideal for quick and straightforward data uploads.
 
@@ -10,7 +10,7 @@
     <figure><img src="../../../../../.gitbook/assets/1 - Insert.png" alt=""><figcaption></figcaption></figure>
 3.  Clicking on "Insert" will navigate the flow to the "Login and select object" section.
 
-    <figure><img src="../../../../../.gitbook/assets/2 - Insert.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/2 - Insert (3).png" alt=""><figcaption></figcaption></figure>
 4.  Click on login to fetch the object details.
 
     <figure><img src="../../../../../.gitbook/assets/3 - Insert.png" alt=""><figcaption></figcaption></figure>
@@ -50,10 +50,10 @@
     <figure><img src="../../../../../.gitbook/assets/12 - Insert.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/13 - Insert.png" alt=""><figcaption></figcaption></figure>
-15. On completing the scheduling, click on "Next" to continue to "Process Details".
+15. On completing the scheduling, click on "Next"  to continue to "Process Details".
 
     <figure><img src="../../../../../.gitbook/assets/14 - Insert.png" alt=""><figcaption></figcaption></figure>
-16. Input a name for the job and click on "Save" to save the job.
+16. Input a name for the job and click on  "Save" to save the job.
 
     <figure><img src="../../../../../.gitbook/assets/15 - Insert.png" alt=""><figcaption></figcaption></figure>
 17. **Use Bulk API**\
@@ -100,7 +100,7 @@
     <figure><img src="../../../../../.gitbook/assets/21 - Insert.png" alt=""><figcaption></figcaption></figure>
 28. On completing the job run observe the success and "Failure" records
 
-    <figure><img src="../../../../../.gitbook/assets/24 - Insert.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/24 - Insert (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/25 - Insert.png" alt=""><figcaption></figcaption></figure>
 29. Click on the "Log" to view the details of the job.
@@ -108,3 +108,4 @@
     <figure><img src="../../../../../.gitbook/assets/22 - Insert.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/23 - Insert.png" alt=""><figcaption></figcaption></figure>
+

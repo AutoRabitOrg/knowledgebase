@@ -10,7 +10,7 @@ You can specify which branch you'd like to merge your changes into when you crea
 
 **Merge Request** and **Pull Request** are equivalent. Both are means of pulling changes from another branch or fork into your branch and merging the changes with your existing code.
 
-#### Merge Request <a href="#merge-request" id="merge-request"></a>
+#### Merge Request  <a href="#merge-request" id="merge-request"></a>
 
 Merge Request is essentially a **request** to merge one branch into another. With Merge Request, AutoRABIT allows you (the reviewer) to go through the suggested changes. From here, you can choose to apply them or add comments to make further changes to the code. It is particularly useful as it helps merge code from different branches and make sure the code that gets deployed to production is bug-free.
 
@@ -47,7 +47,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 2. Users have appropriate **roles** or **permissions** to integrate their Version Control Repository for pull requests. Such privileges are granted by their account owner or admin. They can assign the required permission to the employees by visiting the **Admin > Roles** tab and selecting the **'Create Pull Request'** checkbox under the **'Special Permissions In** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/)**'** section.
 3. The Approver should have the **Pull Request Approver** permission.
 
-<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Users are allowed to access the **'External Pull Requests'** page. The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and selecting the **'External Pull Requests'** checkbox under the **Version Control** section.
 
@@ -93,19 +93,19 @@ Pull requests are a mechanism for a developer to notify team members that they h
 
 1. From the top navigation pane, go to **Create New > New EZ-Commit**.
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. On the EZ-Commit screen, select the [**Salesforce Org**](https://knowledgebase.autorabit.com/docs/salesforce-org) from which the metadata components will get fetched. Select the Salesforce Org registered **Author**.
 3. Select the **Version Control Repository** for which the pull request support is enabled. Select its mapped branch.
 4. Select the way to fetch the metadata components from the selected Salesforce Org under the **Fetch Changes** section. Choose the one that best fits your needs.
 5. Under **Perform** section, select the option: **Create a Pull Request.**
 
-<figure><img src="../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Leave the remaining field as default and click on the **Next** button to proceed ahead.
 7. On the next page, select the metadata components and their members to be committed to the Version Control branch. Click **Next**.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 8.  On the next screen, you need to do the following:
 
@@ -113,28 +113,28 @@ Pull requests are a mechanism for a developer to notify team members that they h
     * **Apply Search and Substitute Rules:** If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules, AutoRABIT applies whenever you commit and deploy files from one Sandbox to another Sandbox one Sandbox to Version Control or vice-versa, such rule can be found here.
     * Enter the **Commit Comment**. This is a mandatory step.
 
-    <figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 9. Under **Create a Pull Request** section, choose where you like to commit i.e., in your base branch, or create a new branch and commit under it.
 10. To create a new branch and later commit the changes, enter the new branch name.
 11. Give the Pull Request a **Label Name**.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1) (1) (1).png" alt="" width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="506"><figcaption></figcaption></figure>
 
 12. Once all the fields are filled in, click on **Finish**. This concludes the creation of a pull request and is ready for review. After you create a pull request, you can ask a specific person to review your proposed changes.
 13. Once the commit process is initiated, you will be redirected to the **Commits** screen where you can view the progress of your commit operation initiated.
 
-<figure><img src="../../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating Pull Request during CI Job <a href="#creating-pull-request-during-ci-job" id="creating-pull-request-during-ci-job"></a>
 
-Now since you have enabled pull requests for your Version Control Repository, you can trigger CI Job via AutoRABIT using the pull request webhook.
+Now since you have enabled pull requests for your Version Control Repository, you can trigger CI Job via AutoRABIT using the pull request webhook.&#x20;
 
 The CI Job will get triggered for the newly created pull requests and are in the **OPEN** state.
 
 1. Go to **Create New > New CI Job**.
 2.  On the next screen, select one of the below criteria for running the CI Job:
 
-    * _Package from Version Control_
+    * _Package from Version Control_&#x20;
     * _Deploy from Version Control_
     * _Deploy SFDX source from Version Control_
 
@@ -148,6 +148,6 @@ The CI Job will get triggered for the newly created pull requests and are in the
 6. Pull Request facilitation is provided for both GitHub and Bitbucket (cloud and enterprise) services.
 7. When Pull Request is validated via CI job, the **'Validate Only'** option (under **Deploy** section) will be in the selected mode. The user won't be able to deselect it.
 8. Choose the remaining fields that best fit your needs and click **Save**.
-9. Go to the **'External Pull Requests'** page, where you can find the CI Job details that were triggered via webhook pull request. Upon successful Build/Deploy, comments get updated to the pull request. The revisions associated with the pull request will be packaged. These changes will be validated and the results will get updated back to the pull request as a comment.
+9. &#x20;Go to the **'External Pull Requests'** page, where you can find the CI Job details that were triggered via webhook pull request. Upon successful Build/Deploy, comments get updated to the pull request. The revisions associated with the pull request will be packaged. These changes will be validated and the results will get updated back to the pull request as a comment.
 
 <figure><img src="../../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

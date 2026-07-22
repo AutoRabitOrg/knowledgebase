@@ -14,7 +14,7 @@ Please note that there are updated requirements for customers who are using one 
 * SonarScanner
 * ADO
 * VS Code
-* IntelliJ
+* IntelliJ&#x20;
 
 [**Please refer to our integration requirements page for further details.**](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/integration-requirements)
 
@@ -36,7 +36,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1. Data Flow Analysis**
+**1.     Data Flow Analysis**
 
 CodeScan has implanted new logic in some of our rules that detect vulnerabilities. This advanced logic provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.
 
@@ -48,15 +48,15 @@ In this first release, we have added this advanced “source to sink” logic in
 
 You can find specific details about each of these rules in the “Rule Enhancements” section of these release notes.
 
-**2. COMING SOON: New GitLeaks Rules in CodeScan**
+**2.     COMING SOON: New GitLeaks Rules in CodeScan**
 
-CodeScan has implanted new logic within the Rules Engine that can detect GitLeaks vulnerabilities. GitLeaks is a tool for detecting secrets like passwords, API keys, and tokens. We have extended this logic to cover Salesforce specific languages and components including:
+CodeScan has implanted new logic within the Rules Engine that can detect GitLeaks vulnerabilities.  GitLeaks is a tool for detecting secrets like passwords, API keys, and tokens. We have extended this logic to cover Salesforce specific languages and components including:
 
 * GitLeaks Secret Detection in Apex source files
 * GitLeaks Secret Detection in Salesforce Metadata Files
 * GitLeaks Secret Detection in Visualforce & Lightning Files
 
-Please note that these rules are not yet available for your scans (but will be available soon). However, these rules are now visible within your CodeScan orgs so that you can begin planning and reviewing for incorporation within your analyses once fully available.
+Please note that these rules are not yet available for your scans (but will be available soon).  However, these rules are now visible within your CodeScan orgs so that you can begin planning and reviewing for incorporation within your analyses once fully available.
 
 We will provide detailed rule descriptions with the NEW RULES section of the corresponding release notes once they become generally available for use.
 
@@ -80,7 +80,7 @@ These rules run GitLeaks on Salesforce source files to detect hardcoded secrets 
 
 ### Rule Enhancements
 
-**1. Updated the Apex rule “Unescaped Error Message XSS” to include data flow analysis logic {Rule ID: sf:UnescapedOutput}**
+**1.     Updated the Apex rule “Unescaped Error Message XSS” to include data flow analysis logic {Rule ID: sf:UnescapedOutput}**
 
 ([https://autorabit.atlassian.net/browse/CD-7383](https://autorabit.atlassian.net/browse/CD-7383))
 
@@ -98,15 +98,17 @@ If we trace the data flow from unescaped or unsanitized sources to the point of 
 **Value/Purpose**\
 Provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.
 
+&#x20;
+
 <figure><img src="../../../../.gitbook/assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>
 
 Verified the data flow tracking logic for unescaped output in Apex is working and the updated description has been applied.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (15).png" alt=""><figcaption></figcaption></figure>
 
-**2. Updated the Apex rule “URL Parameters should be Escaped/Sanitized” to include data flow analysis logic {Rule ID: sf:UnescapedSource}**
+**2.     Updated the Apex rule “URL Parameters should be Escaped/Sanitized” to include data flow analysis logic {Rule ID: sf:UnescapedSource}**
 
-([https://autorabit.atlassian.net/browse/CD-7384](https://autorabit.atlassian.net/browse/CD-7384))
+&#x20;([https://autorabit.atlassian.net/browse/CD-7384](https://autorabit.atlassian.net/browse/CD-7384))
 
 **Description**
 
@@ -137,7 +139,7 @@ public class ClassAbc {
 
 **Updated Message**: URL parameters should be escaped/sanitized XSS. Data Flow Trace -
 
-DECLARATION (ClassAbc.Foo line: 3)
+&#x20; DECLARATION (ClassAbc.Foo line: 3)
 
 The rule behavior was validated by testing multiple scenarios involving URL parameters retrieved using ApexPages.currentPage().getParameters().get(...). on Preview Instance.
 
@@ -155,7 +157,7 @@ For all violating cases, the rule correctly reported the issue with an appropria
 
 <figure><img src="../../../../.gitbook/assets/image (3) (11).png" alt=""><figcaption></figcaption></figure>
 
-**3. Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops” message to include detailed data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
+**3.     Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops”  message to include detailed data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
 
 ([https://autorabit.atlassian.net/browse/CD-7388](https://autorabit.atlassian.net/browse/CD-7388))
 
@@ -197,17 +199,17 @@ public class CaseProcessor {
 
 **Existing Message:**
 
-Avoid running SOQL and DML inside loops. Loop Trace : CaseProcessor.fetchOwnerDetails: line 16 --> CaseProcessor.processCase: line 11 --> CaseProcessor.processAllCases: line 6
+Avoid running SOQL and DML inside loops.  Loop Trace : CaseProcessor.fetchOwnerDetails: line 16 --> CaseProcessor.processCase: line 11 --> CaseProcessor.processAllCases: line 6
 
 **Updated Message:**
 
 Avoid Running Soql and DML inside loops. Data Flow Trace -
 
-SOQL (CaseProcessor.fetchOwnerDetails: line 16) -->
+&#x20; SOQL (CaseProcessor.fetchOwnerDetails: line 16) -->
 
-CALL (CaseProcessor.processCase: line 11) -->
+&#x20; CALL (CaseProcessor.processCase: line 11) -->
 
-LOOP (CaseProcessor.processAllCases: line 6)
+&#x20; LOOP (CaseProcessor.processAllCases: line 6)&#x20;
 
 Executed the following scenarios and validated that the advanced logic is working as expected.
 
@@ -218,6 +220,8 @@ Executed the following scenarios and validated that the advanced logic is workin
 <figure><img src="../../../../.gitbook/assets/image (4) (10).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (5) (11).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
@@ -240,7 +244,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Rule Enhancements
 
-**1. Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
+**1.     Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
 
 {Rule ID: sf: ServerSideRequestForgery}
 
@@ -276,25 +280,37 @@ public class Negative {
 }
 ```
 
+&#x20;
+
 **Existing Message**:
 
-Sanitize input to avoid possible SSRF. Data Flow Trace: Negative.otherMethod: line 4
+Sanitize input to avoid possible SSRF.  Data Flow Trace: Negative.otherMethod: line 4
+
+&#x20;
 
 **Updated Message**:
 
-Sanitize input to avoid possible SSRF. Data Flow Trace -
+Sanitize input to avoid possible SSRF.  Data Flow Trace -
 
-CALL (Negative.otherMethod: line 4)
+&#x20;   CALL (Negative.otherMethod: line 4)
+
+&#x20;
 
 Make sure to check for internal methods also (E.g. FirstName variable on line 8 if used in the set endpoint call on line 11)
 
 <figure><img src="../../../../.gitbook/assets/image (2281).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2282).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (2283).png" alt=""><figcaption></figcaption></figure>
 
-**2. Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
+
+
+**2.     Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
 
 **Description**:
 
@@ -314,6 +330,8 @@ Sanitize input to avoid possible resource injection. Data Flow Trace : {Class.me
 Example:
 
 Sanitize input to avoid possible resource injection. Data Flow Trace : APIVersionsRetiredTrigger.processOldAPIVersionReferences: line 88 --> APIVersionsRetiredTrigger.processOldAPIVersionReferences: line 92
+
+
 
 Code Example:
 
@@ -337,21 +355,29 @@ public class Negative {
 
 **Existing Message**:
 
-Sanitize input to avoid possible resource injection. Data Flow Trace: Negative.otherMethod: line 4
+Sanitize input to avoid possible resource injection.  Data Flow Trace: Negative.otherMethod: line 4
 
 **Updated Message**:
 
 Sanitize input to avoid possible resource injection. Data Flow Trace -
 
-CALL (Negative.otherMethod: line 4)
+&#x20;   CALL (Negative.otherMethod: line 4)
+
+&#x20;
 
 Make sure to check for internal methods also (e.g., FirstName variable on line 8 if used in the set endpoint call on line 11)
 
 <figure><img src="../../../../.gitbook/assets/image (2284).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2285).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2286).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (2287).png" alt=""><figcaption></figcaption></figure>
 
@@ -361,19 +387,21 @@ There are no Rule Deprecations in this release.
 
 ### Fixes
 
-**1. Fixed an issue in the APEX rule “Field Level Security Vulnerabilities**”
+**1.     Fixed an issue in the APEX rule “Field Level Security Vulnerabilities**”
 
 {Rule ID: sf:FieldLevelSecurity}
 
-Several customers reported that they were receiving the error message “Permissions should be checked before accessing resource SObject” even though they were providing suitable permissions using DML and/or SOQL statements. It was determined that CodeScan was not recognizing both DML and SOQL statements. As such, we overhauled the rule logic to address this issue and have ensured that CodeScan is now recognizing the AccessLevel.\* commands in DML calls.
+Several customers reported that they were receiving the error message “Permissions should be checked before accessing resource SObject” even though they were providing suitable permissions using DML and/or SOQL statements.  It was determined that CodeScan was not recognizing both DML and SOQL statements.  As such, we overhauled the rule logic to address this issue and have ensured that CodeScan is now recognizing the AccessLevel.\* commands in DML calls.
 
 We have validated this new logic and verified that no vulnerabilities were raised (which is the expected and correct behavior for this updated rule logic).
 
 <figure><img src="../../../../.gitbook/assets/image (2288).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2289).png" alt=""><figcaption></figcaption></figure>
 
-**2. Fixed an issue in the APEX rule “Resource Injection”**
+**2.     Fixed an issue in the APEX rule “Resource Injection”**
 
 {Rule ID: sf: ResourceInjection}
 
@@ -402,7 +430,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Rule Enhancements
 
-**1. Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
+**1.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
 
 {Rule ID: sf:UnnecessaryBooleanAssertion}
 
@@ -419,30 +447,32 @@ To improve coverage, we enhanced the rule logic to include these Assert class sc
   * Assert.isFalse(false)
 * Updated the rule message and description to clearly explain why these patterns are redundant.
 
-**Updated Rule Description**:
+&#x20;**Updated Rule Description**:&#x20;
 
-A Unit test assertion with a Boolean literal is unnecessary since it always will evaluate to the same thing. Consider using flow control (in case of assertTrue(false) or similar) or simply removing statements like System.assert(true) and Assert.isFalse(false).\
+&#x20;A Unit test assertion with a Boolean literal is unnecessary since it always will evaluate to the same thing. Consider using flow control (in case of assertTrue(false) or similar) or simply removing statements like System.assert(true) and Assert.isFalse(false).\
 \
 If you just want a test to halt after finding an error, use the System.assert(false, 'message') or Assert.isFalse(false, 'message') methods and provide an indication message of why it did.
 
-<figure><img src="../../../../.gitbook/assets/image (2301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (12).png" alt=""><figcaption></figcaption></figure>
 
-Verified the following scenarios are working as expected:
+&#x20;Verified the following scenarios are working as expected:
 
 * Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
 * Compliant scenarios have been tested. (by using only string values).
 
-<figure><img src="../../../../.gitbook/assets/image (2302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (14).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (2) (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
-**1. Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
+**1.   Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
 
 {Rule ID: vf:RequireConfirmationToken}
 
-During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected. As such, we overhauled the rule logic to address this issue.
+During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
 
 **Summary**:
 
@@ -467,11 +497,13 @@ _“vf:RequireConfirmationToken” getting triggered only_ when the correspondin
 
 * Verified the rule behavior using by uploading only page file and then with corresponding meta.xml file with true and meta.xml file with false.
 
-<figure><img src="../../../../.gitbook/assets/image (2332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2333).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (9).png" alt=""><figcaption></figcaption></figure>
 
-**2. Fixed an issue in the rule “Switch statements should not have too many case clauses”**
+
+
+**2.   Fixed an issue in the rule “Switch statements should not have too many case clauses”**
 
 {Rule ID: sf:MaximumNumberOfCase }
 
@@ -484,9 +516,11 @@ Verified that the below scenarios are working as expected.
 * Verified that the rule does not throw out of bounds exceptions in the analysis logs (it should not throw this and, as such, has been validated as working as expected).
 * Verified “sf:MaximumNumberOfCase” rule is triggered only when the maximum limit is exceeded.
 
-<figure><img src="../../../../.gitbook/assets/image (2334).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (10).png" alt=""><figcaption></figcaption></figure>
 
-**3. Fixed an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.**
+
+
+**3.    Fixed an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.**
 
 Some customers reported an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.
 
@@ -522,7 +556,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1. New rules to Identify Potential Sensitive Data /PII Fields**
+**1.     New rules to Identify Potential Sensitive Data /PII Fields**
 
 **Description**
 
@@ -535,6 +569,8 @@ By implementing these rules to identify potential sensitive PII fields, CodeScan
 CodeScan Sensitive Data Scanning uses regular expression patterns to search for potential sensitive PII field names. It looks for common identifiers listed below and some custom objects/fields such as "name," "social\_security\_number," "credit\_card," or "passport" and determines if they are being assigned string literals or used in an insecure way (exposed in debug).
 
 <table data-header-hidden><thead><tr><th width="225" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Object</td><td valign="top">Fields Likely to Contain PII</td></tr><tr><td valign="top">Contact</td><td valign="top">Birthdate, Department, Email, Fax, FirstName, HomePhone, LastName, MailingAddress, MiddleName, MobilePhone, Name, OtherAddress, OtherPhone, Phone, PhotoUrl, Title</td></tr><tr><td valign="top">Lead</td><td valign="top">Address, Company, Email, Fax, FirstName, Industry, LastName, MiddleName, MobilePhone, Name, Phone, PhotoUrl, Title, Website</td></tr><tr><td valign="top">User</td><td valign="top">Address, CompanyName, Department, Email, Fax, FederationIdentifier, FirstName, FullPhotoUrl, LastName, MiddleName, MobilePhone, Name, Phone, Title, Username</td></tr><tr><td valign="top">Account (Business)</td><td valign="top">BillingAddress, Fax, Name, Phone, PhotoUrl, ShippingAddress</td></tr><tr><td valign="top">Account (Person Account Fields)</td><td valign="top">FirstName, LastName, MiddleName, PersonBirthDate, PersonEmail, PersonHomePhone, PersonMailingAddress, PersonMobilePhone, PersonOtherPhone, PersonTitle</td></tr></tbody></table>
+
+&#x20;
 
 _NOTE: We implemented advanced logic to Ignore Violations on Dummy/Masked data as shown below:_
 
@@ -571,11 +607,15 @@ Verified that **sf:SecurePIIFields** rules are being triggered in following scen
 
 <figure><img src="../../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
 
 ### Rule Enhancements
 
-**1. Enhanced God Class Rule by adding parameters {Rule ID: sf:GodClass}**
+&#x20;**1.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}**
 
 The sf:GodClass rule currently uses fixed threshold values to identify “God Class” design flaws:
 
@@ -597,22 +637,28 @@ Verified the sf:GodClass by validating that users are able to see the violations
 
 When users provide the below Threshold values:
 
-* wmc=47, atfd=5, tcc=0.33 Result: Violation
-* wmc=10, atfd=5, tcc=0.50 Result: Violation
-* wmc=60, atfd=10, tcc=0.90 Result: Violation
-* wmc=30, atfd=2, tcc=0.8 Result: Violation
-* wmc=100, atfd=10, tcc=0.2 Result: No violation
-* wmc=9999, atfd=9999, tcc=0 Result: No violation
-* wmc=0, atfd=0, tcc=0 Result: No violation
-* wmc=0, atfd=0, tcc=1 Result: Everything violates
+* wmc=47, atfd=5, tcc=0.33             Result: Violation
+* wmc=10, atfd=5, tcc=0.50             Result: Violation
+* wmc=60, atfd=10, tcc=0.90          Result: Violation
+* wmc=30, atfd=2, tcc=0.8               Result: Violation
+* wmc=100, atfd=10, tcc=0.2            Result: No violation
+* wmc=9999, atfd=9999, tcc=0      Result: No violation
+* wmc=0, atfd=0, tcc=0                     Result: No violation
+* wmc=0, atfd=0, tcc=1                      Result: Everything violates
 
 <figure><img src="../../../../.gitbook/assets/image (2119).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2120).png" alt=""><figcaption></figcaption></figure>
+
+
 
 <figure><img src="../../../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
 
-**2. Updated the Rule Description and Example for rule “Check for Lightning Migration Issues for Salesforce.com and Force.com Links” {Rule ID: vf:LightningAvoidHardcodedSalesforceDomain}**
+
+
+**2.     Updated the Rule Description and Example for rule “Check for Lightning Migration Issues for Salesforce.com and Force.com Links” {Rule ID: vf:LightningAvoidHardcodedSalesforceDomain}**
 
 This rule was updated with this new description and example:
 
@@ -628,9 +674,11 @@ Verified these rule updated by confirming that users are able to see the updated
 
 <figure><img src="../../../../.gitbook/assets/image (2123).png" alt=""><figcaption></figcaption></figure>
 
-**3. Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**
 
-We recognized that this description was out of date and determined it needed to change to:\
+
+**3.     Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**
+
+We recognized that this description was out of date and determined it needed to change to: \
 “The \<strong>/\<b> and \<em>/\<i> tags have exactly the same effect in most web browsers, but there is a fundamental difference between them: \<strong> and \<em> have a semantic meaning, whereas \<b> and \<i> only convey styling information like CSS.
 
 When \<b> can have simply no effect on a device with limited display or when a screen reader software is used by a visually impaired person, \<strong> will:
@@ -648,60 +696,70 @@ Verified the rule description and confirmed that the updated description which i
 
 <figure><img src="../../../../.gitbook/assets/image (2124).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;
+
 ### Rule Deprecations
 
-**1. Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}**
+**1.     Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}**
 
 The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of irregular white space are no longer even seen as parsing JavaScript.
 
-Further, we have updated the descriptions for these rules to include:\
+Further, we have updated the descriptions for these rules to include: \
 “This rule has been deprecated due to these types of white space being caught by the JavaScript parser before a rule can be fired. Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
 
 Verified the Rule Deprecations of cs-vf:no-irregular-whitespace and cs-js:no-irregular-whitespace and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
 <figure><img src="../../../../.gitbook/assets/image (2125).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;
+
 <figure><img src="../../../../.gitbook/assets/image (2126).png" alt=""><figcaption></figcaption></figure>
 
-**2. Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
+
+
+&#x20;**2.   Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
 
 The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of octal escapes are no longer even seen as parsing JavaScript.
 
-Further, we have updated the descriptions for these rules to include:
+Further, we have updated the descriptions for these rules to include:&#x20;
 
-“This rule has been deprecated due to these types of octal escapes being caught by the JavaScript parser before a rule can be fired. Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
+“This rule has been deprecated due to these types of octal escapes being caught by the JavaScript parser before a rule can be fired.  Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
 
 Verified the Rule Deprecation for cs-vf:no-octal-escape and cs-js:no-octal-escape and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
 <figure><img src="../../../../.gitbook/assets/image (2127).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2128).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Fixes
 
-**1. Fixed project deletion issues occurring on WEBHOOK type projects with SFDX/Sonar-Scanner**
+**1.     Fixed project deletion issues occurring on WEBHOOK type projects with SFDX/Sonar-Scanner**
 
 Several customers have reported unexpected issue under the specific circumstance of:
 
-1\. Create a WEBHOOK type empty project.
+1\.      Create a WEBHOOK type empty project.
 
-2\. Run the analysis for the created empty type project using SFDX/Sonar-Scanner
+2\.      Run the analysis for the created empty type project using SFDX/Sonar-Scanner
 
-3\. The Analysis will be successful (as expected).
+3\.      The Analysis will be successful (as expected).
 
-4\. Then create a branch analysis for the same project type.
+4\.      Then create a branch analysis for the same project type.
 
-5\. Switch the branch analysis to main branch analysis.
+5\.      Switch the branch analysis to main branch analysis.
 
-6\. Then delete the project from Project settings.
+6\.      Then delete the project from Project settings.&#x20;
 
 **Outcome:**
 
 Users are able to see that the project has been deleted successfully (expected behavior).
 
-However, if users then search for projects, these users are able to see the project which was deleted previously. This is not expected behavior.
+However, if users then search for projects, these users are able to see the project which was deleted previously.  This is not expected behavior.&#x20;
 
-We have identified that the root cause of this issue is that the Project is not actually getting deleted when the default branch for a project is changed. This issue has been fully remediated with this fix.
+&#x20;We have identified that the root cause of this issue is that the Project is not actually getting deleted when the default branch for a project is changed. This issue has been fully remediated with this fix.
 
 Verified the fix via the following scenarios
 
@@ -715,7 +773,9 @@ Verified the below scenarios via the CodeScan APIs:
 * Verified deleting projects without having access
 * Verified deleting old projects.
 
-**2. Fixed issue where the bulk deletion of analyzed projects fails, while single project deletion works successfully**
+&#x20;
+
+**2.     Fixed issue where the bulk deletion of analyzed projects fails, while single project deletion works successfully**
 
 We have detected this issue under the following circumstance:
 
@@ -727,15 +787,21 @@ Verified the Bulk delete option for all project integrations, including comparis
 
 <figure><img src="../../../../.gitbook/assets/image (2129).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;
+
 <figure><img src="../../../../.gitbook/assets/image (2130).png" alt=""><figcaption></figcaption></figure>
 
-**3. Fixed an issue in the rule “Immutable Field,” which was causing false positives {Rule ID: sf:ImmutableField}**
+
+
+**3.     Fixed an issue in the rule “Immutable Field,” which was causing false positives {Rule ID: sf:ImmutableField}**
 
 Several customers have reported that the current rule logic incorrectly flags propertyVal as a candidate for final, even though its value can be modified indirectly through a property getter/setter. In the following example, the field propertyVal is updated within the getter of anotherPropertyVal via this.propertyVal = 'test' and subsequently returned:
 
 Example code:
 
 <figure><img src="../../../../.gitbook/assets/image (2131).png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Expected Behavior:**\
 The rule should **not** raise a violation when the private field’s value can be modified through class property accessors (get/set methods) or other internal logic. Such fields are **not immutable** and marking them as final would cause compilation errors.
@@ -744,15 +810,21 @@ Verified that the “sf:ImmutableField” is getting triggered only when the pri
 
 <figure><img src="../../../../.gitbook/assets/image (2132).png" alt=""><figcaption></figcaption></figure>
 
+
+
 <figure><img src="../../../../.gitbook/assets/image (2133).png" alt=""><figcaption></figcaption></figure>
 
-**4. Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
 
-During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected. As such, we overhauled the rule logic to address this issue.
+
+**4.     Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
+
+During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
 
 Verified the sf:HotspotTypeReflection rule by activating the rule in a specified Quality Profile. Then, in a subsequent project analysis, validated that the rule is now working as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (2134).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
@@ -771,7 +843,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Rule Enhancements
 
-**1. Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
+&#x20;**1.  Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:\
 ![](<../../../../.gitbook/assets/unknown (1) (3).png>)
@@ -788,9 +860,11 @@ We have verified the rule logic and validated that users are able to see the vio
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+
+
 **2. Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
 
-Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case-sensitive. This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase). However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
+Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case-sensitive. This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase).  However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
 
 Verified the below scenarios and validated that both are working as expected:
 
@@ -798,6 +872,8 @@ Verified the below scenarios and validated that both are working as expected:
 * ControllerSuffix = "controller"
 
 Further verified the sf:AuraControllerNaming rule by setting ControllerSuffix = “Controller” in first run of Project and then changed ControllerSuffix to “controller.” Both projects triggered the same number of violations based on the provided data.
+
+&#x20;
 
 **3. Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}**
 
@@ -822,12 +898,14 @@ The violations are reported against the entire class.
 
 {% hint style="info" %}
 Note: For more information, please refer to Michele Lanza and Radu Marinescu. _Object-Oriented Metrics in Practice: Using Software Metrics to Characterize, Evaluate, and Improve the Design_\
-&#xNAN;_&#x6F;f Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80}.
+_of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80}.
 {% endhint %}
 
-Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.
+Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 **4. Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
 
@@ -839,13 +917,15 @@ This rule detects ESLint rule references written in code comments that are not c
 
 We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
 
-<figure><img src="../../../../.gitbook/assets/image (2312).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2313).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
-**1. Fixed issue where issue page was not properly loading (under specific condition)**
+**1.  Fixed issue where issue page was not properly loading (under specific condition)**
 
 Several customers have reported that under the specific circumstance of:
 
@@ -855,7 +935,7 @@ Users are presented with a blank page instead of being redirected to the issue p
 
 This issue has been fully remediated with this fix.
 
-Verified that users are now able to navigate to the Rule description page. Also verified that the “Why is this an issue link” (as well as other associated pages) are all working as expected.
+Verified that users are now able to navigate to the Rule description page. Also verified that the “Why is this an issue link”  (as well as other associated pages) are all working as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (2092).png" alt=""><figcaption></figcaption></figure>
 
@@ -876,7 +956,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1. Better Management of CodeScan Orgs via Soft Deletion**
+**1.  Better Management of CodeScan Orgs via Soft Deletion**
 
 **Description**
 
@@ -914,7 +994,7 @@ Note: Instance-level Admins and Org Admins (customers) are able to manage delete
 
 ### Fixes
 
-**1. Fixed issue where the IDE usage was not being captured properly**
+**1.     Fixed issue where the IDE usage was not being captured properly**
 
 Several customers have reported that Admins are not able to see any details in the IDE Usage screen in their Org, while others reported that while they see the records, they do not see the records in Order.
 
@@ -932,9 +1012,13 @@ We have verified the fix via the following scenarios and confirm that Admins are
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+
+
     <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**2. Fix to AvoidAbsoluteURL Rule**
+
+
+**2.     Fix to AvoidAbsoluteURL Rule**
 
 We have witnessed that, periodically, this rule does not seem to pick up new Salesforce URLs. As such, we updated the rule logic to detect and violate URLs matching the following patterns: \{{\*.salesforce.com\}} \{{\*.force.com\}} \{{\*.site.com\}} \{{\*.documentforce.com\}} \{{\*.marketingcloudapis.com\}}.
 
@@ -1060,7 +1144,7 @@ Verified the new parameter on the sf:AvoidLogicInTrigger rule to ensure compatib
 
 2. **Enhancement to “Use Annotation on Test Class” Rule**
 
-During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword. It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
+During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword.  It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
 
 **Fix**\
 Updated the rule logic to support detection of @IsTest annotation on test classes, ensuring compliance with current Apex best practices.
@@ -1133,7 +1217,7 @@ Verified the fix for “Issues Filter is not working with CWE tags” via the fo
 
 ***
 
-## CodeScan Release 25.1.10
+## CodeScan Release 25.1.10&#x20;
 
 **Release Date: 21 September 2025**
 
@@ -1148,7 +1232,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-1. CodeScan now imposes verification logic on email signup to enhance security. Previously, users were able to register and log in without verifying their email. We recognize that this could potentially lead to the creation of fake or fraudulent accounts. In this release, we have implemented an email verification via unique links to a one-time verification link. Additionally, we have added logic that restricts access to functionalities for unverified accounts.\
+1. CodeScan now imposes verification logic on email signup to enhance security. Previously, users were able to register and log in without verifying their email.  We recognize that this could potentially lead to the creation of fake or fraudulent accounts. In this release, we have implemented an email verification via unique links to a one-time verification link.  Additionally, we have added logic that restricts access to functionalities for unverified accounts.\
    \
    Verified the Migrate email verification Rule to Action in Auth0 via the following scenarios:\
    After signing up, the user receives a verification email. Only after successfully verifying the account, the user is able to log in to the instance as expected.
@@ -1164,11 +1248,11 @@ Component details are listed in their corresponding sections within this documen
 ### Rule Enhancements
 
 1. **Enhancement to sf:ServerSideRequestForgery Rule**\
-   As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery). We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.\
+   As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.\
    \
    As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.\
    \
-   This is the list of methods we have added as sinks (these are in addition to the issues that this rule is currently finding):
+   This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding):
 
 * Http.send(HttpRequest)
 * HttpRequest.setEndpoint(String)
@@ -1184,7 +1268,7 @@ Component details are listed in their corresponding sections within this documen
    \
    As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.\
    \
-   This is the list of methods we have added as sinks (these are in addition to the issues that this rule is currently finding):
+   This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding):
 
 * Http.send(HttpRequest)
 * HttpRequest.setEndpoint(String)
@@ -1226,14 +1310,14 @@ Verified that the updated rule now correctly flags switch statements without a w
     * x =- y; assigns -y instead of subtracting.
     * x =+ y; assigns +y instead of adding.
 
-    This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse. Further, we updated the rule example with the following:
+    This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse.  Further, we updated the rule example with the following:
 
 <figure><img src="../../../../.gitbook/assets/image (2030).png" alt=""><figcaption></figcaption></figure>
 
 Verified the new logic via the following scenarios:\
-1\. Rule sf:AvoidReversedOperators raises violations for reversed operator cases (=-, =+).
+1\.  Rule sf:AvoidReversedOperators raises violations for reversed operator cases (=-, =+).
 
-2\. Rule does not raise false positives on valid operator usage (+=, -=).
+2\.  Rule does not raise false positives on valid operator usage (+=, -=).
 
 <figure><img src="../../../../.gitbook/assets/image (2031).png" alt="" width="386"><figcaption></figcaption></figure>
 
@@ -1255,7 +1339,7 @@ Verified the new logic via the following scenarios:\
 
 * Detect any instance or usage of MD5 or SHA-1 for hashing/digesting.
 * Report violations with clear remediation guidance.
-* Suggest secure alternatives such as SHA-256 or SHA-512.\
+* Suggest secure alternatives such as SHA-256 or SHA-512. \
   \
   Verified the new logic via the following scenario:\
   Validated that users are able to see a violation for the rule _AvoidInsecureMessageDigests_. This violation indicates the use of insecure message digest algorithms such as MD5 or SHA-1.
@@ -1264,8 +1348,10 @@ Verified the new logic via the following scenarios:\
 
 <figure><img src="../../../../.gitbook/assets/image (2036).png" alt="" width="431"><figcaption></figcaption></figure>
 
+
+
 7. **Enhancement to “Add Empty String” Rule**\
-   Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + ""). Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.\
+   Updated the rule logic to identify and flag expressions where literals are concatenated with an empty string (e.g., "" + 123 or 123 + "").  Also ensured that violations are reported with a clear message and that valid concatenations and type-specific toString() methods are not falsely flagged.\
    \
    Verified the below scenarios all are working as expected.\
    1\. Empty string with numeric or Boolean literals\
@@ -1326,9 +1412,11 @@ This suppression tag works in any case and we recognized that our TrackSuppressW
 
 This logic was added to this rule in this enhancement.
 
-Verified the SuppressWarnings Rule enhancement and validated that the suppression tag is working in all case-insensitive instances and our TrackSuppressWarnings rule is throwing violation for all cases.
+Verified the  SuppressWarnings Rule enhancement and validated that the suppression tag is working in all case-insensitive instances and our TrackSuppressWarnings rule is throwing violation for all cases.
 
 <figure><img src="../../../../.gitbook/assets/image (2003).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
 
 2. Rule Enhancement for sf:UnusedFormalParameter
 
@@ -1381,7 +1469,7 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
 
 <figure><img src="../../../../.gitbook/assets/image (2006).png" alt=""><figcaption></figcaption></figure>
 
-### Fixes
+### Fixes&#x20;
 
 1. Fixed issue with CodeScan rule detecting SOQL Injections, which was causing analyses to break.
 
@@ -1399,11 +1487,11 @@ Verified the SOQL injection rule fix (which was causing stack overflow error) by
 
 2. Fixed an Error that was occurring when Deleting CodeScan Projects
 
-Some customers have reported that when attempting to do a project deletion, the task sometimes fails. We have determined that the root cause is that the system is trying to fetch project details after the project has already been removed, which leads to missing information and, subsequently, unexpected errors.
+Some customers have reported that when attempting to do a project deletion, the task sometimes fails.  We have determined that the root cause is that the system is trying to fetch project details after the project has already been removed, which leads to missing information and, subsequently, unexpected errors.
 
 This fix includes logic to delete projects properly.
 
-We have verified the fix for Error When Deleting CodeScan Projects and validated that users are able to delete their projects without any errors.
+We have verified the fix for Error When Deleting CodeScan Projects  and validated that users are able to delete their projects without any errors.
 
 <figure><img src="../../../../.gitbook/assets/image (2008).png" alt=""><figcaption></figcaption></figure>
 
@@ -1413,23 +1501,23 @@ We have verified the fix for Error When Deleting CodeScan Projects and validated
 
 ## CodeScan Release 25.1.8
 
-**Release Date: 31 August 2025**
+**Release Date: 31 August 2025**&#x20;
 
-### Summary:
+### Summary:&#x20;
 
-CodeScan 25.1.8 is comprised of the following 1 component:
+CodeScan 25.1.8 is comprised of the following 1 component:&#x20;
 
-* 1 Fix
+* 1 Fix&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
-### Fixes
+### Fixes&#x20;
 
-1. Fixed issue where CodeScan Project Analysis jobs getting stuck at "finalizing" stage.
+1. Fixed issue where CodeScan Project Analysis jobs getting stuck at "finalizing" stage.&#x20;
 
-Previously, CodeScan project analysis jobs were getting stuck at "finalizing" stage, and not returning the result to GitHub PR, thus blocking all PRs.
+Previously, CodeScan project analysis jobs were getting stuck at "finalizing" stage, and not returning the result to GitHub PR, thus blocking all PRs.&#x20;
 
-The root cause of the issue was that db-pool-limit-reached was occurring. This fix remediates this issue.
+The root cause of the issue was that db-pool-limit-reached was occurring.  This fix remediates this issue.
 
 After applying the fix, we validated the fix by creating jobs with alternating pass/fail quality gate statuses. Once the fix had been applied, we observed all jobs completing successfully (without getting stuck)\
 \
@@ -1458,62 +1546,62 @@ Also, Verified the category Quality Gates and checked the below details which ar
 
 ***
 
-## CodeScan Release 25.1.7
+## CodeScan Release 25.1.7&#x20;
 
-#### Release Date: 24 August 2025
+#### Release Date: 24 August 2025&#x20;
 
-### Summary
+### Summary&#x20;
 
-CodeScan 25.1.7 is comprised of the following 5 components:
+CodeScan 25.1.7 is comprised of the following 5 components:&#x20;
 
-* 1 New Feature
-* 4 Fixes
+* 1 New Feature&#x20;
+* 4 Fixes&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
-### New Features
+### New Features&#x20;
 
-1. Enable/Disable feature of Mapping to multiple orgs from one SAML Connection at instance level.
+1. Enable/Disable feature of Mapping to multiple orgs from one SAML Connection at instance level.&#x20;
 
 {% hint style="info" %}
-_NOTE: This feature is only available to customers who have a dedicated instance. It is not available for customers who are deployed on our SaaS multi-tenant instances._
+_NOTE:  This feature is only available to customers who have a dedicated instance. It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
 {% endhint %}
 
 This new feature enables customers to map to multiple orgs from one SAML Connection at their instance level.
 
-Verified the following scenarios for SAML users, and all scenarios are working as expected.
+Verified the following scenarios for SAML users, and all scenarios are working as expected.&#x20;
 
-1. Verified the User when CodeScan idp-group-mapping is disabled, user is able to log in through SSO when the Group synchronization and IDP mapping is not used.
-2. Verified the User when CodeScan idp-group-mapping is disabled, user is able to log in through SSO when the Group synchronization and IDP mapping are used.
-3. Verified the User when CodeScan idp-group-mapping is enabled, user is able to log in through SSO when the Group synchronization and IDP mapping are used.
-4. Verified the User when CodeScan idp-group-mapping is enabled, user is able to log in through SSO when the Group synchronization and IDP mapping are not used.
-5. Validated the SAML connection creation and login through SSO in the created Org.
-6. Validated the SAML connection creation and login through SSO with the other Org.
-7. Created a new user and checked the login through SSO with the same above SAML config.
-8. Verified the IDP group mapping where the user is mapped to the organization where SAML connection is created.
+1. Verified the User when CodeScan idp-group-mapping is disabled, user is able to log in through SSO when the Group synchronization and IDP mapping is not used.&#x20;
+2. Verified the User when CodeScan idp-group-mapping is disabled, user is able to log in through SSO when the Group synchronization and IDP mapping are used.&#x20;
+3. Verified the User when CodeScan idp-group-mapping is enabled, user is able to log in through SSO when the Group synchronization and IDP mapping are used.&#x20;
+4. Verified the User when CodeScan idp-group-mapping is enabled, user is able to log in through SSO when the Group synchronization and IDP mapping are not used.&#x20;
+5. Validated the SAML connection creation and login through SSO in the created Org.&#x20;
+6. Validated the SAML connection creation and login through SSO with the other Org.&#x20;
+7. Created a new user and checked the login through SSO with the same above SAML config.&#x20;
+8. Verified the IDP group mapping where the user is mapped to the organization where SAML connection is created.&#x20;
 
 {% hint style="info" %}
-_NOTE: This feature needs to be enabled in customers’ organizations. It is NOT available by default_
+_NOTE:  This feature needs to be enabled in customers’ organizations.  It is NOT available by default_&#x20;
 {% endhint %}
 
 {% hint style="info" %}
-_NOTE: This feature is only available to customers who have a dedicated Instance. It is not available for customers who are deployed on our SaaS multi-tenant instances._
+_NOTE:  This feature is only available to customers who have a dedicated Instance.  It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
 {% endhint %}
 
-### Fixes
+### Fixes&#x20;
 
-1. **Fixed Broken Documentation Link in Status Module**
+1. **Fixed Broken Documentation Link in Status Module**&#x20;
 
-It has been reported that the "Status" module in all CodeScan application contains a broken documentation link:\
-[https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle](https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle)
+It has been reported that the "Status" module in all CodeScan application contains a broken documentation link: \
+[https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle](https://knowledgebase.autorabit.com/user-guide/issues/solution-overview/#life-cycle)&#x20;
 
-This link provides users with detailed information on the lifecycle of issue statuses but currently leads to a nonexistent page. The correct, working link should be:\
-[https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status)
+This link provides users with detailed information on the lifecycle of issue statuses but currently leads to a nonexistent page. The correct, working link should be: \
+[https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status)&#x20;
 
-This fix remediates this issue in full.
+This fix remediates this issue in full.&#x20;
 
-Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page.\
-The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status)
+Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page. \
+The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status) &#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="483"><figcaption></figcaption></figure>
 
@@ -1521,7 +1609,7 @@ The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://k
 
 2. **URIs are not Valid in decorated SARIF output**
 
-It has been reported that the URLs are not valid in the SARIF file due to spaces. To remediate, we added logic to make certain that they are escaped.
+It has been reported that the URLs are not valid in the SARIF file due to spaces.  To remediate, we added logic to make certain that they are escaped.
 
 Verified that users are now able to see valid URLs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
 
@@ -1531,7 +1619,7 @@ Verified that users are now able to see valid URLs in the SARIF report even when
 
 3. **Fixed issue where scheduled analyses are not running for SF projects and its comparison branches**
 
-Several customers have reported that their daily scheduled analyses were not running for Salesforce integration projects and their corresponding comparison branches within the same project. We determined that the Scheduled Jobs were getting stuck, even though they were consuming memory and CPU. Further, we identified that the root cause of the issue stemmed from changes made in the previous release (25.1.6), and that scheduled jobs on our AWS infrastructure were running into “out-of-memory” issues.
+Several customers have reported that their daily scheduled analyses were not running for Salesforce integration projects and their corresponding comparison branches within the same project.  We determined that the Scheduled Jobs were getting stuck, even though they were consuming memory and CPU.  Further, we identified that the root cause of the issue stemmed from changes made in the previous release (25.1.6), and that scheduled jobs on our AWS infrastructure were running into “out-of-memory” issues.
 
 This fix remediates this issue in full.
 
@@ -1577,11 +1665,13 @@ CodeScan 25.1.6 is comprised of the following 6 components:
 
 Component details are listed in their corresponding sections within this document.
 
+&#x20;
+
 ### New Features
 
 1. **Categories for Project Types**
 
-Often, customers will have a lot of projects in CodeScan. Several customers have requested the ability to filter their projects by the type of integration including:
+Often, customers will have a lot of projects in CodeScan.  Several customers have requested the ability to filter their projects by the type of integration including:
 
 GitHub: github\
 Bitbucket: bitbucket\
@@ -1593,7 +1683,7 @@ To deliver this feature, we created custom tags with the ability to add these ta
 
 Unlike most tags, we designed integration type tags to remain once assigned. If the user tries to remove it the following error will occur: “Integration type tags cannot be removed from projects.”
 
-NOTE: Due to the change in permissions needed in the API for these tags to be added, we also adjusted the text in the API doc as well. For the endpoint api/project\_tags/set the text now states:
+NOTE:  Due to the change in permissions needed in the API for these tags to be added, we also adjusted the text in the API doc as well. For the endpoint api/project\_tags/set the text now states:
 
 “Requires the ‘Administer’ or ‘Create Project’ permissions on the specified project.”
 
@@ -1602,17 +1692,17 @@ Here are the tag API references: [CodeScanCloud](https://app.codescan.io/web_api
 Verified Categories for Project Types in the following scenarios, and have verified that all are working as expected:
 
 1. **Verify that the user is able to see the correct tag for the project on the Project Information page after completing the analysis.**\
-   \&#xNAN;_Example: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
+   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
-   \&#xNAN;_Example: For a Salesforce integration, the tag should display as “Salesforce.”_
+   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
-    \&#xNAN;_Example: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
+    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**<br>
@@ -1624,21 +1714,23 @@ Verified Categories for Project Types in the following scenarios, and have verif
 
 ### Enhancements
 
-**1. Users getting error when trying to restore quality profiles.**
+**1.     Users getting error when trying to restore quality profiles.**
 
 Currently, when a Quality Profile import fails, CodeScan displays the following error: _"An error occurred. Please contact your admin."_
 
-We recognize that it would be a better experience (and more helpful) to make this error more verbose to allow the customer to remediate the issue themselves. Mostly these errors are thrown because of a rule present in their Quality Profile which is not present in their organization. In these cases, the error message is now “An error occurred. A rule in your Quality Profile is not available in this organization.”
+We recognize that it would be a better experience (and more helpful) to make this error more verbose to allow the customer to remediate the issue themselves.  Mostly these errors are thrown because of a rule present in their Quality Profile which is not present in their organization. In these cases, the error message is now “An error occurred. A rule in your Quality Profile is not available in this organization.”
 
-The second most common error occurs when the QP is corrupted or malformed. In these cases, the error message now states “An error occurred. The Quality Profile backup is malformed. Please export your Quality Profile again.”
+The second most common error occurs when the QP is corrupted or malformed.  In these cases, the error message now states “An error occurred. The Quality Profile backup is malformed. Please export your Quality Profile again.”
 
-We believe that these more verbose error messages will help our customers remediate their issue much more easily. However, if they require assistance, they can create a support ticket.
+We believe that these more verbose error messages will help our customers remediate their issue much more easily.  However, if they require assistance, they can create a support ticket.
 
 Verified this enhancement via validating the below scenarios
 
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."<br>
 
@@ -1654,9 +1746,11 @@ Verified this enhancement via validating the below scenarios
 
     <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**2. Pagination in Projects and Previous Analysis**
 
-To provide a better experience, we have added separate pagination controls, allowing users to navigate Projects Analysis and Previous Analysis sections more easily. This enhancement includes Projects Analysis displaying 10 entries per page and Previous Analysis displaying 15 entries per page. This allows the user interface to remain responsive and readable even when there are many entries.
+
+**2.     Pagination in Projects and Previous Analysis**
+
+To provide a better experience, we have added separate pagination controls, allowing users to navigate Projects Analysis and Previous Analysis sections more easily.   This enhancement includes Projects Analysis displaying 10 entries per page and Previous Analysis displaying 15 entries per page.  This allows the user interface to remain responsive and readable even when there are many entries.
 
 Verified the Pagination enhancement via validating the following scenarios:
 
@@ -1668,9 +1762,9 @@ Verified the Pagination enhancement via validating the following scenarios:
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Pagination controls (e.g., next, previous, specific result numbers) are present and functional in both sections independently.
 
-**3. Email Limit & Validation for Multi-User Invites**
+**3.     Email Limit & Validation for Multi-User Invites**
 
-To improve the user experience for admins inviting users to their CodeScan org, we have implemented the ability to invite multiple users at once (up to 50) using the same user type (Standard User or Platform Integration User). Additionally, this enhancement ensures that only valid email addresses are accepted in the batch. This ensures that the invite experience remains consistent and controlled; additionally, user onboarding will be faster and more efficient. Further, Admins are still able to maintain control over user type classification, email validation, and system performance.
+To improve the user experience for admins inviting users to their CodeScan org, we have implemented the ability to invite multiple users at once (up to 50) using the same user type (Standard User or Platform Integration User).  Additionally, this enhancement ensures that only valid email addresses are accepted in the batch.  This ensures that the invite experience remains consistent and controlled; additionally, user onboarding will be faster and more efficient.  Further, Admins are still able to maintain control over user type classification, email validation, and system performance.
 
 The main components of this enhancement are:
 
@@ -1702,9 +1796,9 @@ We have verified the enhancement for Email Limit & Validation for Multi-User Inv
 
 ### Fixes
 
-1\. Align CSV Export filter status with Latest SQ Issue status
+1\.     Align CSV Export filter status with Latest SQ Issue status
 
-This enhancement implements issue status values in the CSV export filters to reflect the latest status terminology introduced after CodeScan 25.1.0 release (which occurred in April 2025). Prior to this enhancement, the filters in CSV Issue Export were showing outdated statuses such as Opened, Confirmed, ReOpened, Resolved, and Closed. This was in contrast to the updated statuses including Open, Accepted, False Positive, Confirmed, and Fixed. This inconsistency was reported by several users who cited confusion and data integrity issues when analyzing or reporting exported results.
+This enhancement implements issue status values in the CSV export filters to reflect the latest status terminology introduced after CodeScan 25.1.0 release (which occurred in April 2025).  Prior to this enhancement, the filters in CSV Issue Export were showing outdated statuses such as Opened, Confirmed, ReOpened, Resolved, and Closed.  This was in contrast to the updated statuses including Open, Accepted, False Positive, Confirmed, and Fixed.  This inconsistency was reported by several users who cited confusion and data integrity issues when analyzing or reporting exported results.
 
 Value / Purpose:
 
@@ -1768,11 +1862,13 @@ However, this issue does not occur when multiple users are invited, including at
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-This issue has been fully remediated. We have verified the fix via the following scenario:\
+This issue has been fully remediated.  We have verified the fix via the following scenario:\
 \
 Validated that the proper error message is displayed when invite is sent only to non-corporate email addresses.
 
 <figure><img src="../../../../.gitbook/assets/image (23) (1) (2).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
 
 ***
 
@@ -1784,39 +1880,45 @@ Validated that the proper error message is displayed when invite is sent only to
 
 CodeScan 25.1.5 is comprised of the following 17 components:
 
-· 4 New Features
+·       4 New Features
 
-· 2 Enhancements
+·       2 Enhancements
 
-· 4 Fixes
+·       4 Fixes
 
-· 1 Revenue Org Improvement
+·       1 Revenue Org Improvement
 
-· 6 Architecture Improvements
+·       6 Architecture Improvements
 
 Component details are listed in their corresponding sections within this document.
+
+&#x20;
 
 ### New Features
 
 1. **Support Intelligent Prompts for A.I. LLMs**
 
-CodeScan can now generate prompts for LLMs including Agentforce, Copilot, ChatGPT, and Claude AI. This feature is a component of the CodeScan extension for VS Code.
+&#x20;CodeScan can now generate prompts for LLMs including Agentforce, Copilot, ChatGPT, and Claude AI.  This feature is a component of the CodeScan extension for VS Code.
+
+&#x20;
 
 Requirements:
 
-Your CodeScan environment must be running version 25.1.5 (or higher). In addition, you need to be running the latest version of the CodeScan VS Code extension (v 2.1.1), which can be downloaded here: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
+Your CodeScan environment must be running version 25.1.5 (or higher).  In addition, you need to be running the latest version of the CodeScan VS Code extension (v 2.1.1), which can be downloaded here:  [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
 
 What Problem Are We Solving?
 
-Adoption of AI can be challenging for companies for several reasons. CodeScan can help catalyze your AI initiatives.
+Adoption of AI can be challenging for companies for several reasons.  CodeScan can help catalyze your AI initiatives.
 
 User Benefits
 
-• Generate prompt in the IDE
+•       Generate prompt in the IDE
 
-• Directly update existing code with generated code
+•       Directly update existing code with generated code
 
-• Ensures security issues are addressed
+•       Ensures security issues are addressed
+
+&#x20;
 
 Verified Intelligent Prompts for cls, page, component, trigger, and cmp files, all working as expected by validating the below scenarios:
 
@@ -1843,14 +1945,14 @@ Verified Intelligent Prompts for cls, page, component, trigger, and cmp files, a
 {% hint style="info" %}
 Notes:
 
-If the file content isn’t too long (less than 1000 characters) the \<FILE\_CONTENT> placeholder gets the contents of the entire file. Else, only selected items will be passed (needs to be selected manually by the user). This is intentional because although Salesforce maintains that Agentforce’s input limit is 27k, we have discovered that when we do pass large code in the prompt the response generation is only for the first few lines (around 1000 chars) then stops (causing the response to be incomplete).
+If the file content isn’t too long (less than 1000 characters) the \<FILE\_CONTENT> placeholder gets the contents of the entire file.  Else, only selected items will be passed (needs to be selected manually by the user).  This is intentional because although Salesforce maintains that Agentforce’s input limit is 27k, we have discovered that when we do pass large code in the prompt the response generation is only for the first few lines (around 1000 chars) then stops (causing the response to be incomplete).
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (1831).png" alt="" width="536"><figcaption></figcaption></figure>
 
 2. **CVSS Implementation for Security Vulnerabilities**
 
-The Common Vulnerability Scoring System is a technical standard for assessing the severity of vulnerabilities in computing systems. Scores are calculated based on a formula with several metrics that approximate ease and impact of an exploit. Scores range from 0 to 10, with 10 being the most severe. In this release, CodeScan has applied this quantitative scoring to all security vulnerabilities, allowing organizations to more systematically prioritize the security remediations.
+The Common Vulnerability Scoring System is a technical standard for assessing the severity of vulnerabilities in computing systems. Scores are calculated based on a formula with several metrics that approximate ease and impact of an exploit. Scores range from 0 to 10, with 10 being the most severe.  In this release, CodeScan has applied this quantitative scoring to all security vulnerabilities, allowing organizations to more systematically prioritize the security remediations.
 
 _The following metrics were used to generate our CVSS scores:_
 
@@ -1898,11 +2000,11 @@ Verified the CVSS Category on RULES page, ISSUES page and also verified the CVSS
 
 <figure><img src="../../../../.gitbook/assets/image (1834).png" alt="" width="495"><figcaption></figcaption></figure>
 
-**3. When encountering an Incorrect Custom XPath rule, CodeScan Analysis continues**
+&#x20;**3. When encountering an Incorrect Custom XPath rule, CodeScan Analysis continues**
 
-Currently, if a customer’s Xpath Rule has incorrect XPath syntax, an error is shown in the analysis log and no further checks are run on the file that the custom rule was being applied to.
+&#x20;Currently, if a customer’s Xpath Rule has incorrect XPath syntax, an error is shown in the analysis log and no further checks are run on the file that the custom rule was being applied to.
 
-We decided to make this more visible to users, as there was no further explanation of skipping the file outside of reviewing the associated logs. Instead, users would see the issues disappearing from their files.
+We decided to make this more visible to users, as there was no further explanation of skipping the file outside of reviewing the associated logs.  Instead, users would see the issues disappearing from their files.
 
 In this release, the following improvements were added:
 
@@ -1911,9 +2013,11 @@ In this release, the following improvements were added:
 * implemented the logic for a project level violation that appears when this issue occurs
 * created an associated message: “The custom XPath rule {rule key} failed to parse. Your {language} files were not able to display this issue. Please check your custom rule in the rule designer before your next analysis”
 
+&#x20;
+
 4. **Define User Type While Inviting or Adding Member**
 
-CodeScan now allows admins to define the user type when inviting or adding a member (either "Standard User" or "Platform Integration User"). This ensures that each user is onboarded with the appropriate role, purpose, and permissions.
+&#x20;CodeScan now allows admins to define the user type when inviting or adding a member (either "Standard User" or "Platform Integration User").  This ensures that each user is onboarded with the appropriate role, purpose, and permissions.
 
 \
 Since the system now allows for the designation of users as either Standard Users or Platform Integration Users during the invitation or member addition process, admins are now able to manage users more effectively (and thereby Ensuring Standard Users have the appropriate access (All the features of CodeScan), and Platform Integration Users are recognized distinctly for integration IDE purposes (or similar integration purposes).
@@ -1925,6 +2029,8 @@ Value / Purpose:
 * Enhances audit logs, billing accuracy, and license management.
 * Reduces post-invite administrative tasks by setting the correct user type up front.
 * Supports security and compliance needs by maintaining a clear separation between user types.
+
+&#x20;
 
 Verified the ability to define User Type While Inviting or Adding Member by validating the below scenarios:
 
@@ -1944,11 +2050,11 @@ Verified the ability to define User Type While Inviting or Adding Member by vali
 
 * Platform Integration Users get limited access scoped to integration IDE tasks.
 
-<figure><img src="../../../../.gitbook/assets/image (1837).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1838).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. User type must be clearly labeled in the member management.
 
-<figure><img src="../../../../.gitbook/assets/image (1837).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1839).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. “Platform user cannot be added to the Owner group.” — should be displayed when the Owners group is selected for a Platform user. Additionally, the Send Invite button should be disabled in this case.
 
@@ -1956,27 +2062,27 @@ Verified the ability to define User Type While Inviting or Adding Member by vali
 
 7. For multi-user invites, the flow should be the same as for a single invite. Invites can be sent in batches, but only for one user type at a time.
 
-<figure><img src="../../../../.gitbook/assets/image (1837).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1841).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Able to see the standard and platform user type while adding a member to the organization
 
-<figure><img src="../../../../.gitbook/assets/image (1837).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1842).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Enhancements
 
-1. Add ESLint rules from @lwc/eslint-plugin-lwc
+1. &#x20;Add ESLint rules from @lwc/eslint-plugin-lwc
 
-CodeScan has traditionally provided ESLint rules within our rules library. Separately, Salesforce has an official ESLint plugin to analyze LWC code:[https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc).
+CodeScan has traditionally provided ESLint rules within our rules library.  Separately, Salesforce has an official ESLint plugin to analyze LWC code:[https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc).
 
 The rules in this plugin are different to our current set and expand on it; expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components.
 
 Our aim was to include all rules from the GitHub - salesforce/eslint-plugin-lwc:
 
-Official ESLint rules for LWC repository added to our current list. However, there are a few rules from this plugin that were not included.
+Official ESLint rules for LWC repository added to our current list.  However, there are a few rules from this plugin that were not included.
 
 Rules that weren’t added as part of LWC set:
 
-* Disallow duplicate class members (no-dupe-class-members). This wasn’t added because it’s a Deprecated Rule
+* Disallow duplicate class members (no-dupe-class-members).  This wasn’t added because it’s a Deprecated Rule
 
 Additionally, we did not include these 3 rules because of the Complex Parameter Type:
 
@@ -1984,7 +2090,11 @@ Additionally, we did not include these 3 rules because of the Complex Parameter 
 * Disallow usage of unknown wire adapters (no-unknown-wire-adapters)
 * Disallow access to global browser APIs during SSR (no-restricted-browser-globals-during-ssr)
 
-Note that all of these LWC rules were added to our Salesforce Lightning Quality Profile.
+&#x20;
+
+Note that all of these LWC  rules were added to our Salesforce Lightning Quality Profile.
+
+&#x20;
 
 Verified the Add Eslint rules from @lwc/eslint-plugin-lwc for the below scenarios:\
 \
@@ -1996,11 +2106,11 @@ Verified the Add Eslint rules from @lwc/eslint-plugin-lwc for the below scenario
 
 <figure><img src="../../../../.gitbook/assets/image (1843).png" alt="" width="503"><figcaption></figcaption></figure>
 
-2. Enhancement to Apex rule “Unused Formal Parameter” {sf:UnusedFormalParameter}
+2. &#x20;Enhancement to Apex rule “Unused Formal Parameter” {sf:UnusedFormalParameter}
 
-CodeScan has offered this rule since Dec 2017. Recently a customer reported that Unused Formal parameter doesn’t find when variables used in SOQL. We replicated this issue where CodeScan flagged a variable as an unused variable even though it is used in the SOQL string.
+CodeScan has offered this rule since Dec 2017.  Recently a customer reported that Unused Formal parameter doesn’t find when variables used in SOQL.  We replicated this issue where CodeScan flagged a variable as an unused variable even though it is used in the SOQL string.
 
-We have enhanced this rule to detect additional cases where string parameters are part of SOQL. The rule now detects cases where string params are used as part of building soql query.
+We have enhanced this rule to detect additional cases where string parameters are part of SOQL.  The rule now detects cases where string params are used as part of building soql query.
 
 Verified the enhanced logic of rule “UnusedFormalParameter” via the following scenarios.\
 \
@@ -2013,7 +2123,7 @@ Now, this is correctly detected as usage — no violation.
 
 <figure><img src="../../../../.gitbook/assets/image (1845).png" alt="" width="518"><figcaption></figcaption></figure>
 
-### Fixes
+### Fixes&#x20;
 
 1. **Fixed issue ARM users recieving an error: “Component can't be null” while running a CodeScan analysis from ARM.**
 
@@ -2068,15 +2178,20 @@ Verified the below scenarios regarding users being displayed in Members page, an
 3. Deactivate User from Instance- User no longer appears in the Members list. Behavior confirms that deactivated users are excluded from the UI display
 4. Verify SAML Login for New User- Authentication via SAML was successful
 5. Billing Page User Count Verification- User count reflects the new user addition appropriately. Billing data is updated as per user assignments
-6. **Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}**
+
+&#x20;
+
+3. **Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}**
 
 Recently, some customers reported unexpected behavior in this rule, producing false positives.
 
-The root cause of the false positives is that when a method of an object is invoked within another method, and both methods share the same name, the current rule implementation incorrectly interprets this as a recursive call and subsequently triggers a violation. Further, the Stack Loop trace is indefinite.
+The root cause of the false positives is that when a method of an object is invoked within another method, and both methods share the same name, the current rule implementation incorrectly interprets this as a recursive call and subsequently triggers a violation.  Further, the Stack Loop trace is indefinite.
 
-This had been remediated in a previous release (25.1.2 release in June 2025). The updated rule logic now handles these edge cases by checking for method image to be exactly the same (method != diffObj.method).
+This had been remediated in a previous release (25.1.2 release in June 2025).  The updated rule logic now handles these edge cases by checking for method image to be exactly the same (method != diffObj.method).
 
-However, there’s more to this issue and fix! A scenario which was earlier covered stopped working as expected as a result of the fix made above. This new issue was reported to us, and has been fully remediated in this release by adding additional logic to the rule implementation was made to accommodate both scenarios (the pre-existing condition but also indefinite stack loop trace).
+However, there’s more to this issue and fix!  A scenario which was earlier covered stopped working as expected as a result of the fix made above.  This new issue was reported to us, and has been fully remediated in this release by adding additional logic to the rule implementation was made to accommodate both scenarios (the pre-existing condition but also indefinite stack loop trace).
+
+&#x20;
 
 Verified the Fix for rule sf:AvoidSoqlInLoops via several scenarios, including:
 
@@ -2123,11 +2238,13 @@ Violations Expected for the below scenarios
 
 14\. Verified SOQL inside constructor called from a loop — no violation (as expected for shallow analyzers)
 
+&#x20;
+
 4. **Fixed issue regarding restricted access for CodeScan Platform Integration Users**
 
-Some users were reporting that their platform integration users has the same accessibility to CodeScan as their standard users. This issue is remediated in this release.
+Some users were reporting that their platform integration users has the same accessibility to CodeScan as their standard users.  This issue is remediated in this release.
 
-As a PIU (Platform Integration User) with restricted access in the CodeScan platform, PIU should only be able to view the Account section after logging in. All other features like Project Analysis, Project View, Issues View, and Search etc. (All except Account Section) should be inaccessible. Within the Account section, PIU should see the following tabs:
+As a PIU (Platform Integration User) with restricted access in the CodeScan platform, PIU should only be able to view the Account section after logging in. All other features like Project Analysis, Project View, Issues View, and Search etc. (All except Account Section) should be inaccessible.  Within the Account section, PIU should see the following tabs:
 
 * Profile
 * Security
@@ -2177,7 +2294,7 @@ Verified Restricted Access for CodeScan Platform Integration User by validating 
 * My Account
 * Logout option
 
-8\. Verified Billing & Revenue Compliance for both Standard and Platform users.
+&#x20;8\. Verified Billing & Revenue Compliance for both Standard and Platform users.
 
 9. Users who are Standard users in some organizations and Platform Integration users in other organizations should be shown the homepage of the organizations where they are Standard users upon login.
 10. If Standard users do not have any homepage, they should be shown the My Projects page (All Projects), which should only display projects from the organizations where they are Standard users.
@@ -2210,19 +2327,19 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-1\. Support for Enterprise Git Connections / Configuring & Managing ALM Integrations
+1\.     Support for Enterprise Git Connections / Configuring & Managing ALM Integrations
 
 In CodeScan, Enterprise Git Connections enable organizations to securely integrate with self-hosted or enterprise instances of GitHub, GitLab, and Bitbucket. Admins can configure these connections at the organization level using OAuth credentials and define allowed IP ranges for secure access. Once connected, these integrations streamline project onboarding by allowing users to directly link Git repositories during project setup for automated analysis and CI/CD workflows.
 
 <figure><img src="../../../../.gitbook/assets/image (1737).png" alt=""><figcaption><p>ALM Connections</p></figcaption></figure>
 
-More detailed info can be found in our Knowledge Base here:
+More detailed info can be found in our Knowledge Base here:&#x20;
 
 [https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/using-codescan/adding-projects-to-codescan/enterprise-git-connections)
 
 ### Enhancements
 
-1\. Enhancement to CodeScan Rule “URL Redirection to Untrusted Site” {sf:OpenRedirect}
+1\.     Enhancement to CodeScan Rule “URL Redirection to Untrusted Site” {sf:OpenRedirect}
 
 CodeScan has traditionally used this rule to check against redirects to user-controlled locations. This is important because untrusted input could cause an attacker to redirect the user to a malicious site, thereby allowing the attacker to launch a phishing scam and steal user credentials.
 
@@ -2240,9 +2357,9 @@ This rule has now been enhanced with this logic, and we have verified that users
 
 More details regarding the Network class can be found here: [Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_network.htm#apex_System_Network_forwardToAuthPage).
 
-1\. Enhancement to CodeScan decorations of SARIF Reports
+1\.     Enhancement to CodeScan decorations of SARIF Reports
 
-Since the 24.0.6 release (June 2024), CodeScan was enhanced to decorate standard SARIF output. While CodeScan had been able to generate SARIF output before the 24.0.6 release, it’s noteworthy to mention that the SARIF output in GitHub does not contain the severity. As such, we added severity to our SARIF output, thereby allowing CodeScan to provide a more verbose presentation of the issues in GitHub. This change has been providing a better experience for our customers working in GitHub Actions.
+Since the 24.0.6 release (June 2024), CodeScan was enhanced to decorate standard SARIF output.  While CodeScan had been able to generate SARIF output before the 24.0.6 release, it’s noteworthy to mention that the SARIF output in GitHub does not contain the severity. As such, we added severity to our SARIF output, thereby allowing CodeScan to provide a more verbose presentation of the issues in GitHub. This change has been providing a better experience for our customers working in GitHub Actions.
 
 The way this feature was originally designed was:
 
@@ -2260,7 +2377,9 @@ With this release, when generateSarifFile: false or generateReportFile: true, th
 * Contains only open issues respective to the branch and PR
 * Includes full metadata for each issue, including Type and Severity for rules and results
 
-More detailed information can be found here: [https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/generating-decorated-sarif-reports](https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/generating-decorated-sarif-reports)
+
+
+More detailed information can be found here:  [https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/generating-decorated-sarif-reports](https://knowledgebase.autorabit.com/product-guides/codescan/report-and-analysis/generating-decorated-sarif-reports)
 
 Verified the below types of analyses with SARIF report all are working as expected:
 
@@ -2271,15 +2390,15 @@ Verified the below types of analyses with SARIF report all are working as expect
 
 Verified the SARIF report with the parameter generateSarifFile: false/true in the YML file user is able to see the open issues of the specific branch or pr and also able to see the issue TYPE and SEVERITY in the SARIF report.
 
-2\. On the Billing Page, a banner was added that details the level of access users have within the CodeScan UI based on user license type
+2\.     On the Billing Page, a banner was added that details the level of access users have within the CodeScan UI based on user license type
 
-Customers who are using a user-based license model will now have a banner on their Billing Page that provides additional clarity regarding the CodeScan features available to users based upon their license type. Standard users will have access to all CodeScan features (although access can be restricted by admin based on user privileges). Platform Integration Users will only have access to their Profile, along with access to the Security Tab and the Notifications Tab. Additionally, both types of users can fully use the CodeScan extension for VS Code and IntelliJ.
+Customers who are using a user-based license model will now have a banner on their Billing Page that provides additional clarity regarding the CodeScan features available to users based upon their license type.  Standard users will have access to all CodeScan features (although access can be restricted by admin based on user privileges).  Platform Integration Users will only have access to their Profile, along with access to the Security Tab and the Notifications Tab.  Additionally, both types of users can fully use the CodeScan extension for VS Code and IntelliJ.
 
 <figure><img src="../../../../.gitbook/assets/image (1742).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
-1\. Fixed issue where after a user is deactivated, the user is still displayed on Members page
+1\.      Fixed issue where after a user is deactivated, the user is still displayed on Members page
 
 Some users were reporting that after a user is deactivated, the user is still displayed on the Members page.
 
@@ -2297,7 +2416,7 @@ Verified the below scenarios regarding users being displayed in Members page, an
 4. Verify SAML Login for New User: Authentication via SAML was successful
 5. Billing Page User Count Verification: User count reflects the new user addition appropriately. Billing data is updated as per user assignments
 
-2\. Fixed issue with codescan-scanner-action (occurring after CodeScan upgrade)
+2\.     Fixed issue with codescan-scanner-action (occurring after CodeScan upgrade)
 
 Some users were reporting that when their CodeScan project was upgraded to CodeScan 24.12.0.100206, it was incompatible with our codescan-io/codescan-scanner-action (and thus breaks customers’ GitHub Actions pipelines for pull request scanning).
 
@@ -2314,7 +2433,7 @@ Validated that all below scenarios are working as expected.
    * PR analysis.
    * Merge analysis.
    * SARIF reports.
-6. Verified the SFDX analysis (with SARIF report) the analysis is successful and able to generate the SARIF file locally where user is able to see the tags, rule text, results, type of the Bug and type of the Severity.
+6. Verified the SFDX analysis (with SARIF report) the analysis is successful and  able to generate the SARIF file locally where user is able to see the tags, rule text, results, type of the Bug and type of the Severity.
 7. Verified the S3 integration the analysis is successful.
 8. Verified the CodeScan extension in the Azure DEVOPS plugin on the TEST instance working as expected.
    * Verified the main/default analysis which is successful.
@@ -2329,7 +2448,7 @@ Validated that all below scenarios are working as expected.
 
 ## CodeScan Release 25.1.3
 
-**Release Date: 22 June 2025**
+**Release Date: 22 June 2025**&#x20;
 
 Summary:
 
@@ -2342,29 +2461,35 @@ Component details are listed in their corresponding sections within this documen
 
 ### Enhancements
 
-**1. New Banner in billing when license entitlements exceeded**
+**1.     New Banner in billing when license entitlements exceeded**
 
-In this release, we created a new banner to inform admins when their licenses entitlements have been exceeded. It advises the admins to contact their account team to get their entitlements amended.
+In this release, we created a new banner to inform admins when their licenses entitlements have been exceeded.  It advises the admins to contact their account team to get their entitlements amended.
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org. As such, the banner appears to advise the admins of this discrepancy.
+In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
 Additionally, this new banner is coupled with additional billing logic (detailed in the next note) aimed to ensure that user operations are not disrupted when license entitlements are exceeded, providing a better user experience for our customers.
 
-**2. New logic in billing allows users continued operations**
 
-In this release, we made an update so that users are not blocked when an organization exceeds their license entitlements. Instead, a new banner will appear on the billing page advising the admins that their license entitlements have been exceeded (see previous note above).
+
+**2.     New logic in billing allows users continued operations**
+
+In this release, we made an update so that users are not blocked when an organization exceeds their license entitlements.   Instead, a new banner will appear on the billing page advising the admins that their license entitlements have been exceeded (see previous note above).
 
 This feature also ensures that user operations are not disrupted when license entitlements are exceeded, providing a better user experience for our customers.
 
-**3. Project Report Status update in UI**
 
-Several customers had previously reported that on the Project Report page, the UI displays the Project Report as “stuck” in the queue. This status persists even after users receive the corresponding email notification in Outlook.
 
-We have remediated this issue with this release by updating the status in the UI to "Your project report is currently being processed. You will receive it via email shortly."
+**3.   Project Report Status update in UI**
+
+Several customers had previously reported that on the Project Report page, the UI displays the Project Report as “stuck” in the queue.  This status persists even after users receive the corresponding email notification in Outlook.
+
+We have remediated this issue with this release by updating the status in the UI to "Your project report is currently being processed.  You will receive it via email shortly."
+
+
 
 _Verified that the 4 scenarios below are working as expected_
 
@@ -2372,15 +2497,23 @@ _Verified that the 4 scenarios below are working as expected_
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;
+
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+&#x20;
+
 3.4 - Able to receive the project reports via email for all the above three case
+
+&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -2396,7 +2529,9 @@ This issue has been remediated in this release.
 
 The dialog box was resized.
 
-We have verified that with this fix, users are able to scroll down in the Quality Profiles section within the Project Settings. We also verified that the dialog box is resized.
+We have verified that with this fix, users are able to scroll down in the Quality Profiles section within the Project Settings.  We also verified that the dialog box is resized.
+
+&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -2406,7 +2541,7 @@ Some customers were reporting that they were
 
 receiving deprecation warnings in their scans indicating that the use of sonar.login is deprecated, and that instead, going forward, authentication should be done using sonar.token.
 
-This issue has been remediated in this release. CodeScan now supports both sonar.login and sonar.token for authentication during Codescan analyses.
+This issue has been remediated in this release.  CodeScan now supports both sonar.login and sonar.token for authentication during Codescan analyses.
 
 Verified the below plugins by using sonar.token and sonar.login parameters in the sonar command and sfdx; both scenarios are working as expected.
 
@@ -2421,27 +2556,29 @@ Sonar-scanner - 5.0.1.3006V
 
 ## CodeScan Release 25.1.2
 
-**Release Date: June 11, 2025**
+**Release Date: June 11, 2025**&#x20;
 
 ### Summary
 
 CodeScan 25.1.2 is comprised of the following 19 components:
 
-· 3 New Features
+·       3 New Features
 
-· 3 Enhancements
+·       3 Enhancements
 
-· 2 New Rules
+·       2 New Rules
 
-· 11 Fixes
+·       11 Fixes
 
 Component details are listed in their corresponding sections within this document.
+
+&#x20;
 
 ### New Features
 
 #### 1. CWE Numbers Added to Vulnerability Rule “Unescaped Value Could Cause XSS”
 
-We have added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80.html) and additional CWE numbers (95 and 470) to the rule “Unescaped Value Could Cause XSS”
+We have added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80.html) and additional CWE numbers (95 and 470) to the rule “Unescaped Value Could Cause XSS” &#x20;
 
 Verified the CWE number on the rule Unescaped Value Could Cause XSS by confirming that user is able to see the added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80.html) (along with additional CWE numbers 95 and 470)
 
@@ -2449,11 +2586,13 @@ Verified the CWE number on the rule Unescaped Value Could Cause XSS by confirmin
 
 Please note, these rules are only available for projects created with CodeScan's direct Salesforce integration due to being based on a direct query to a Salesforce Org.
 
+
+
 **2. Disable “Invite Members" option**
 
-Invite members is a feature in CodeScan designed for organizations using Auth0 for authentication. In contrast, it is not applicable for SSO enabled environments.
+Invite members is a feature in CodeScan designed for organizations using Auth0 for authentication.  In contrast, it is not applicable for SSO enabled environments.
 
-To date, SSO customers would have access to this feature, even though the functionality would not be enabled for them. We recognize that this can cause confusion and lessen the user experience. As such, we have added a new option in CodeScan allowing any organization to disable the “Invite Members” functionality in CodeScan.
+To date, SSO customers would have access to this feature, even though the functionality would not be enabled for them.  We recognize that this can cause confusion and lessen the user experience.  As such, we have added a new option in CodeScan allowing any organization to disable the “Invite Members” functionality in CodeScan.
 
 **Description**
 
@@ -2499,7 +2638,7 @@ Preventing Standard users with System Admin Permission from switching to a Platf
 
 On the Members page, the following alert "You are a System Admin. You are required to have a Standard User License.“ is displayed.
 
-Verified the Restricting Platform Integration User Access for Standard Users via the following:\
+&#x20;Verified the Restricting Platform Integration User Access for Standard Users via the following:\
 \
 1\. Verified admins are able to see the alert “You are a System Admin. You are required to have a Standard User License.“ if Standard users with System Admin Permission try switching to a Platform Integration User.
 
@@ -2511,13 +2650,13 @@ Verified the Restricting Platform Integration User Access for Standard Users via
 
 3. Verified admins are able to see the alert “You are a System Admin. You are required to have a Standard User License.“ if user is owner and trying to switch from standard to platform user
 
-<figure><img src="../../../../.gitbook/assets/image (13) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
-1\. Enhanced rule “vf:AvoidJavaScriptScriptlets” by adding a new parameter to the rule
+1\.      Enhanced rule “vf:AvoidJavaScriptScriptlets” by adding a new parameter to the rule
 
-Historically, CodeScan has offered our “Avoid JavaScript Scriptlets” rule to inspect customer’s code and flag where there JavaScript Scriplets.
+Historically, CodeScan has offered our “Avoid JavaScript Scriptlets” rule to inspect customer’s code and flag where there JavaScript Scriplets.&#x20;
 
 With this release, a new parameter was introduced to allow users to choose whether to include or ignore violations related to code supporting the Lightning functions within script.
 
@@ -2525,6 +2664,8 @@ With this release, a new parameter was introduced to allow users to choose wheth
 * Type: Boolean (true or false)
 * Default: false
 * Description: This option allows users to ignore violations related to code supporting the Lightning functions within script. By default, it is set to false.
+
+&#x20;
 
 Verified the below scenarios for rule vf:AvoidJavaScriptScriptlets and report that all scenarios are working as expected.
 
@@ -2535,7 +2676,7 @@ Verified the below scenarios for rule vf:AvoidJavaScriptScriptlets and report th
 
 <figure><img src="../../../../.gitbook/assets/image (15) (5).png" alt=""><figcaption></figcaption></figure>
 
-1\. Enhanced rule “Controller Naming Convention” for Apex and Visualforce
+1\.     Enhanced rule “Controller Naming Convention” for Apex and Visualforce
 
 Some customers are reporting that CodeScan is flagging violations on components that should not be flagged (i.e., SandboxRefreshAdminController)
 
@@ -2548,9 +2689,15 @@ We validated the fix by:
 * Setting parameters for controller naming in CS, try the parameters with different cased letters ex: ConTroLLer etc.
 * After scanning false positives should not be visible
 
-2\. Updated description for Deprecated rules
+&#x20;
 
-Historically, CodeScan has deprecated rules over time. However, we recognize that we can be clearer about why the rule is being deprecated. In this release, we have initiated this practice (and plan to adhere to this practice in the future).
+2\.     Updated description for Deprecated rules
+
+&#x20;
+
+Historically, CodeScan has deprecated rules over time.  However, we recognize that we can be clearer about why the rule is being deprecated.  In this release, we have initiated this practice (and plan to adhere to this practice in the future).
+
+
 
 **1.Update the description of deprecated Apex Rule “Use System.assertEquals instead of System.assert“ and key”sf:UseAssertEqualsInsteadOfAssertEquality” with the following:**
 
@@ -2578,7 +2725,7 @@ This rule has been deprecated. Please remove it from your custom Quality Profile
 
 ### New Rules
 
-**1. Server Side Request Forgery**
+**1.     Server Side Request Forgery**
 
 This is a rule that checks for any changeable inputs to a url string in a method that returns a PageReference.
 
@@ -2619,7 +2766,7 @@ CWE: 918
 
 5.Validated the presence of a malicious SSRF-style payload embedded in the URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (20) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (5).png" alt=""><figcaption></figcaption></figure>
 
 6.Validated the attempt at "sanitization" using regex, which is not an approved method, resulting in a violation (Improper sanitization) as expected
 
@@ -2627,7 +2774,7 @@ CWE: 918
 
 Test Cases with No Violations
 
-1\. Validated input sanitized using Id.valueOf, resulting in no violation as expected.
+1\.     Validated input sanitized using Id.valueOf, resulting in no violation as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (23) (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -2653,11 +2800,17 @@ Test Cases with No Violations
 
 _NOTE: The implementation currently addresses the most common scenarios related to resource injection and SSRF vulnerabilities. However, due to the dynamic and context-dependent nature of these issues—especially when influenced by external inputs, indirect references, or complex backend behaviors—there may be edge cases that are not readily identifiable or testable. These may only surface under specific configurations or data conditions._
 
+
+
 2. **Resource Injection**
+
+&#x20;
 
 Prior to this new rule, CodeScan did not catch resource injection in Apex.
 
-This is very similar to [our new rule “Server Side Request Forgery”](https://autorabit.atlassian.net/browse/CD-6437) (also included in this release)
+This is very similar to [our new rule  “Server Side Request Forgery”](https://autorabit.atlassian.net/browse/CD-6437) (also included in this release)
+
+&#x20;
 
 However, there are some basic things that make it resource injection and not SSRF.
 
@@ -2665,25 +2818,29 @@ However, there are some basic things that make it resource injection and not SSR
 
 `public PageReference init(){`
 
-`AccListString = 'INIT';`
+&#x20;   `AccListString = 'INIT';`
 
-`BaseObjId = system.label.MY_Label;`
+&#x20;   `BaseObjId = system.label.MY_Label;`
 
-`return null;`
+&#x20;   `return null;`
 
 `}`
+
+&#x20;
 
 `public PageReference prepareAccs(){`
 
-`String newUrl = '/apex/maps__Maps?baseOjectId='+BaseObjId+'&recordIds='+AccListString;`
+&#x20;   `String newUrl = '/apex/maps__Maps?baseOjectId='+BaseObjId+'&recordIds='+AccListString;`
 
-`PageReference p = new PageReference(newUrl);`
+&#x20;   `PageReference p = new PageReference(newUrl);`
 
-`p.setRedirect(true);`
+&#x20;   `p.setRedirect(true);`
 
-`return p;`
+&#x20;   `return p;`
 
 `}`
+
+&#x20;
 
 Here, we are looking at resource injection because the URL is internal (starts with / )
 
@@ -2758,9 +2915,9 @@ _NOTE: This implementation currently addresses the most common scenarios related
 
 **1. Fixed issue with the CSV Export not functioning properly with all nCino projects**
 
-We detected that some nCino projects are unable to export to CSV. The issue occurs after 500 records are returned (where the request does not contain the necessary data).
+We detected that some nCino projects are unable to export to CSV.  The issue occurs after 500 records are returned (where the request does not contain the necessary data).
 
-This issue is remediated in this release. We verified the fix and are now able to export the issues exceeding 500 records for all ncino projects (as expected)
+This issue is remediated in this release.  We verified the fix and are now able to export the issues exceeding 500 records for all ncino projects (as expected)
 
 **2. Fixed 2 issues with our SOQL Injection rule**
 
@@ -2776,7 +2933,7 @@ This issue has been remediated in this release.
 
 **4. Fixed issue with the rule “vf:UnescapedAttributes vulnerability” {where false positive violations were being flagged}**
 
-CodeScan suggests the remediation for this issue is to use JSENCODE() to escape values. However, some customers reported that when this is added to their code, the issue was still being flagged as a violation. We validated the fix by:
+CodeScan suggests the remediation for this issue is to use JSENCODE() to escape values. However, some customers reported that when this is added to their code, the issue was still being flagged as a violation.  We validated the fix by:
 
 * Verified the updated description and example under rule: vf:UnescapedAttributes vulnerability
 
@@ -2802,9 +2959,9 @@ For Aura components, sepcifically aura:unescapedHtml, make sure to sanitize vari
 
 Example :
 
-`<aura:component>`
+`<aura:component>`   &#x20;
 
-`<aura:unescapedHtml value="{!v.htmlstring}"/>. //Bad: not recommended.`
+&#x20; `<aura:unescapedHtml value="{!v.htmlstring}"/>.  //Bad: not recommended.`
 
 `</aura:component>`
 
@@ -2826,7 +2983,7 @@ More info regarding “Network class” can be found here:
 
 [Network Class | Apex Reference Guide | Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_network.htm#apex_System_Network_forwardToAuthPage)
 
-6. **Fixed issue with the rule “Field Level Security Vulnerabilities” (sfmeta:PageLayoutNaming) for classes using “Without Sharing” {where false positive violations were being flagged}**
+6. &#x20;**Fixed issue with the rule “Field Level Security Vulnerabilities” (sfmeta:PageLayoutNaming) for classes using “Without Sharing” {where false positive violations were being flagged}**
 
 Some customers have reported an issue with CodeScan's reporting of "Permissions should be checked before accessing resource" vulnerabilities in our Apex codebase, specifically within classes that are declared without sharing.
 
@@ -2858,32 +3015,34 @@ Some customers reported that the CodeScan parser was incorrectly flagging valid 
 
 This issue has been remediated with this release.
 
-We had previously verified the Parsing error in APEX Code for DML queries if user using UPDATE AS SYSTEM syntax would throw the parser exception. With this fix, users are now able to see the violations as expected for the file.
+We had previously verified the Parsing error in APEX Code for DML queries if user using UPDATE AS SYSTEM syntax would throw the parser exception.  With this fix, users are now able to see the violations as expected for the file.
 
 Verified the below queries in Apex code that users do not get any Parser errors; instead the updated CodeScan parser is working as expected.
 
 * INSERT AS SYSTEM
 * DELETE AS SYSTEM
 * UNDELETE AS SYSTEM
-* UPDATE AS SYSTEM
+* UPDATE AS SYSTEM&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
-8. Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}
+8. &#x20; Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}
+
+&#x20;
 
 Some customers reported unexpected behavior in this rule, producing false positives.
 
-The root cause of the false positives is that when a method of an object is invoked within another method, and both methods share the same name, the current rule implementation incorrectly interprets this as a recursive call and subsequently triggers a violation. Further, the Stack Loop trace is indefinite.
+The root cause of the false positives is that when a method of an object is invoked within another method, and both methods share the same name, the current rule implementation incorrectly interprets this as a recursive call and subsequently triggers a violation.  Further, the Stack Loop trace is indefinite.
 
-This has been remediated in this release. The updated rule logic now handles these edge cases by checking for method image to be exactly the same (method != diffObj.method).
+This has been remediated in this release.  The updated rule logic now handles these edge cases by checking for method image to be exactly the same (method != diffObj.method).
 
 We have verified the fix across related and existing test cases and edge conditions by confirming that if a method of an object is invoked within another method, and both methods share the same name, the user will not see the violation (as it is false positive).
 
-9. **Fixed issue with rule “RequireDescriptionComponent”**
+9. &#x20; **Fixed issue with rule “RequireDescriptionComponent”**
 
 Some customers reported that the CodeScan rule “RequireDescriptionComponent” rule was not working for custom fields on standard objects.
 
-This issue has been remediated in this release. Previously, CodeScan offered a rule “_sfmeta:RequireDescriptionField_” which had been deprecated for this updated rule. But the updated rule was not designed for standard objects. When we tested the logic of the deprecated rule, we found that it could be used for reference for this update to the new rule “RequireDescriptionComponent”
+This issue has been remediated in this release.  Previously, CodeScan offered a rule “_sfmeta:RequireDescriptionField_” which had been deprecated for this updated rule.  But the updated rule was not designed for standard objects.  When we tested the logic of the deprecated rule, we found that it could be used for reference for this update to the new rule “RequireDescriptionComponent”
 
 The rule enhancement was verified via the below scenarios\
 \
@@ -2907,7 +3066,9 @@ The rule enhancement was verified via the below scenarios\
 
 <figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
-**10. Fixed issue with rule “sf: FieldLevelSecurityRule”**
+**10.  Fixed issue with rule “sf: FieldLevelSecurityRule”**
+
+&#x20;
 
 During maintenance testing, we discovered that this rule was triggering the null pointer exception when parsed through the trigger files. In the rule logic it was searching for relevant ASTClassOrInterfaceBody to get all the constructors in that class. Since triggers don't have constructors, control flow proceeds further if we get a non-null node for ASTClassOrInterfaceBody.\
 \
@@ -2917,11 +3078,11 @@ We tested the fix to the Null pointer Exception with sf: FieldLevelSecurityRule 
 
 <figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
-**11. Fixed issue with Organization images displaying as large icons in the org list**
+**11.  Fixed issue with Organization images displaying as large icons in the org list**
 
-CodeScan has historically allowed images to be added under Organization settings by our customers. These images are then displayed on the organization home page and in the Org list.
+CodeScan has historically allowed images to be added under Organization settings by our customers.  These images are then displayed on the organization home page and in the Org list.  &#x20;
 
-After we released CodeScan 25.1.0 (April 2025), customers org icon images could appear as large icons. This issue was remediated in this release by restricting the size of the image on the Org page to the size of a usual non-image icon (around 30px).
+After we released CodeScan 25.1.0 (April 2025), customers org icon images could appear as large icons.  This issue was remediated in this release by restricting the size of the image on the Org page to the size of a usual non-image icon (around 30px).
 
 We have verified the Organization image is now restricted in size, and users are able to see the image as expected.
 
@@ -2929,108 +3090,121 @@ We have verified the Organization image is now restricted in size, and users are
 
 ***
 
-## CodeScan Release 25.1.1
+## CodeScan Release 25.1.1&#x20;
 
-**Release Date: May 11, 2025**
+**Release Date: May 11, 2025**&#x20;
 
 ### Summary
 
-**CodeScan 25.1.1 is comprised of the following 3 components:**
+**CodeScan 25.1.1 is comprised of the following 3 components:**&#x20;
 
-* 3 Fixes
+* 3 Fixes&#x20;
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
 ### **New Features**
 
-There are no New Features associated with this release
+There are no New Features associated with this release&#x20;
 
-### **Enhancements**
+### **Enhancements**&#x20;
 
-There are no Enhancements associated with this release
+There are no Enhancements associated with this release&#x20;
 
 ### **New Rules**
 
-There are no New Rules associated with this release
+There are no New Rules associated with this release&#x20;
 
 ### **Fixes**
 
-1. **Fixed an issue with rule tags blocking analyses**
+1. **Fixed an issue with rule tags blocking analyses**&#x20;
 
-Several customers reported that, after the recent CodeScan upgrade to 25.1.0, some of their analyses were not properly executing. We uncovered that this was due to new logic added to a database table. This fix corrects this issue and will allow all blocked analyses to run properly.
+Several customers reported that, after the recent CodeScan upgrade to 25.1.0, some of their analyses were not properly executing.  We uncovered that this was due to new logic added to a database table.  This fix corrects this issue and will allow all blocked analyses to run properly.&#x20;
 
-We have verified the below scenarios and report that all are working as expected.
+We have verified the below scenarios and report that all are working as expected.&#x20;
 
-* Tags which are system default
-* Tags which are not system default
-* Custom tags
+* Tags which are system default&#x20;
+* Tags which are not system default&#x20;
+* Custom tags&#x20;
 
-1. Verified the vf:exception and sf:exception rule by adding tags in one organization and seeing the analysis working without any issue in that org or any other org.
-2. Verified the analysis for the rule sf:exception by assigning the tags. Confirmed analysis was successful and that users are able to see the assigned tags in the issues page.
-3. Verified the analysis when the tags are not assigned. If there are any new violations the user is unable to see any tags for the violations (which is expected).
-4. **Fixed Error: \[CS] API GET status code: 404 when users try to generate Sarif File on their environment**
+1. Verified the vf:exception and sf:exception rule by adding tags in one organization and seeing the analysis working without any issue in that org or any other org.&#x20;
+2. Verified the analysis for the rule sf:exception by assigning the tags.  Confirmed analysis was successful and that users are able to see the assigned tags in the issues page.&#x20;
+3. Verified the analysis when the tags are not assigned. If there are any new violations the user is unable to see any tags for the violations (which is expected). &#x20;
 
-Several customers reported the following error “Error: \[CS] API GET status code: 404 “when users try to generate Sarif File on their environment.
+&#x20;
 
-This fix corrects this issue and will allow users to generate Sarif files on their environment.
+2. **Fixed Error: \[CS] API GET status code: 404 when users try to generate Sarif File on their environment**&#x20;
 
-We have verified the below scenarios for GitHub Actions SARIF report on TEST environment and are able to generate SARIF reports successfully.
+Several customers reported the following error “Error: \[CS] API GET status code: 404 “when users try to generate Sarif File on their environment.&#x20;
 
-1. Analysis is getting “success” and able to get the SARIF report where the results are same in the report and on CodeScan UI
-2. Validated the Pull request analysis in GitHub actions we are able see that the PR analysis is happening for the changed files.
+This fix corrects this issue and will allow users to generate Sarif files on their environment.&#x20;
 
-* Validated the Commit request analysis.
-* Validated the PR analysis.
-* Validated Merge analysis.
+We have verified the below scenarios for GitHub Actions SARIF report on TEST environment and are able to generate SARIF reports successfully.&#x20;
 
-3. **Fixed Error: \[CS] API GET status code: 404 when users try to generate Sarif File on their environment**
+1. Analysis is getting “success” and able to get the SARIF report where the results are same in the report and on CodeScan UI&#x20;
+2. Validated the Pull request analysis in GitHub actions we are able see that the PR analysis is happening for the changed files.&#x20;
 
-**After the upgrade to 25.1.0, we uncovered 2 minor issues:**
+* Validated the Commit request analysis.&#x20;
+* Validated the PR analysis.&#x20;
+* Validated Merge analysis.&#x20;
 
-1. The IDP group mapping feature flag was not working as expected.
-2. If an ID user is member of org 1 and owner of org 2, then from org2 SAML connection she was able to make anyone an owner of org1.
 
-This update remediates these 2 issues.
 
-Verified the IDP Group Mapping flag by Enabling and Disabling the instance is now working as expected.
+3. **Fixed Error: \[CS] API GET status code: 404 when users try to generate Sarif File on their environment**&#x20;
+
+**After the upgrade to 25.1.0, we uncovered 2 minor issues:**&#x20;
+
+1. The IDP group mapping feature flag was not working as expected.&#x20;
+2. If an ID user is member of org 1 and owner of org 2, then from org2 SAML connection she was able to make anyone an owner of org1.&#x20;
+
+This update remediates these 2 issues.&#x20;
+
+Verified the IDP Group Mapping flag by Enabling and Disabling the instance is now working as expected.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1672).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
-## Release Notes 25.1.0
+## Release Notes 25.1.0&#x20;
 
-**Release Date: 20 April 2025**
+**Release Date: 20 April 2025**&#x20;
 
 ### Summary
 
-CodeScan 25.1.0 is comprised of three main components / features:
+CodeScan 25.1.0 is comprised of three main components / features:&#x20;
 
-* [New User Interface](release-notes-25.1.md#new-user-interface)
-* [Technical Architecture Improvements](release-notes-25.1.md#technical-architecture-improvements)
+* [New User Interface ](release-notes-25.1.md#new-user-interface)
+* [Technical Architecture Improvements ](release-notes-25.1.md#technical-architecture-improvements)
 * [Fixes](release-notes-25.1.md#fixes-1)
 
-Component details are listed in their corresponding sections within this document.
+Component details are listed in their corresponding sections within this document.&#x20;
 
-### New User Interface
+### New User Interface&#x20;
 
-In this release, we have updated the CodeScan User Interface order to provide four key benefits:
+In this release, we have updated the CodeScan User Interface order to provide four key benefits:&#x20;
 
 * Easier navigation, which provides both an improved, intuitive experience for more advanced users, while reducing the learning curve for new users
-* Consistency in screen layout, providing a more cohesive experience throughout the application
-* Enhanced performance and responsiveness within CodeScan
-* Brand modernization alignment with other AutoRABIT solutions
+* Consistency in screen layout, providing a more cohesive experience throughout the application  &#x20;
+* Enhanced performance and responsiveness within CodeScan&#x20;
+* Brand modernization alignment with other AutoRABIT solutions&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
-Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.
+Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;
 {% endhint %}
 
-### Technical Architecture Improvements
+### Technical Architecture Improvements&#x20;
 
 * The CodeScan 25.1.0 contains various technical architecture improvements and upgrades to various libraries. We have also included several enhancements to CodeScan’s security architecture.
 
 ### **Fixes**
 
 * Fixed a false positive in the 'sf:AvoidGlobalModifier' rule. The violation is now ignored for global classes used as return types in any global static method.
+
+
+
+&#x20;&#x20;
+
+&#x20;
+
+&#x20;

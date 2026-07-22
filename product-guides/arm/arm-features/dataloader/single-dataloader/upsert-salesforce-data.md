@@ -30,12 +30,12 @@ The following articles describe using **Single DataLoader** to upsert data into 
 
 10. Click **`OK`** on the notification popup showing impacted records.
 
-<figure><img src="../../../../../.gitbook/assets/image (83) (1) (1).png" alt="Notification on number of records affected"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (67) (1) (1) (1).png" alt="Notification on number of records affected"><figcaption></figcaption></figure>
 
 11. Prepare field mappings: Match CSV columns to Salesforce fields.
 12. Use **`Automap`** to match fields automatically if names align.
 
-<figure><img src="../../../../../.gitbook/assets/image (84) (1) (1).png" alt="Field mapping with Automap"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68) (1) (1) (1).png" alt="Field mapping with Automap"><figcaption></figcaption></figure>
 
 13. Confirm all required fields are mapped, then click **`Next`**.
 
@@ -80,7 +80,7 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 
 ### More Options
 
-<figure><img src="../../../../../.gitbook/assets/image (78) (1) (1).png" alt="More options menu" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1).png" alt="More options menu" width="563"><figcaption></figcaption></figure>
 
 1. **Edit:** Update job configuration.
 2. **Abort:** Stop a running job.

@@ -19,7 +19,7 @@ You can configure Jenkins to trigger jobs automatically after a successful deplo
 
 1.  Go to the **New CI Job** screen.
 
-    ![New CI Job](<../../../.gitbook/assets/image (867).png>)
+    ![New CI Job](<../../../.gitbook/assets/image (879).png>)
 2. Choose a CI Job type from:
    * Deploy SFDX source from Version Control
    * Deploy from Salesforce Org
@@ -33,14 +33,14 @@ You can configure Jenkins to trigger jobs automatically after a successful deplo
     ![Trigger Jenkins](<../../../.gitbook/assets/image (880).png>)
 6. Fill in the required fields:
    *   **URL:** Full Jenkins server URL\
-       \&#xNAN;_Example:_ `http://localhost:8080` or `http://<hostname>:8080`
+       &#xNAN;_&#x45;xample:_ `http://localhost:8080` or `http://<hostname>:8080`
 
        ![Jenkins URL](<../../../.gitbook/assets/image (881).png>)
    *   **Job Name:** Name of the Jenkins project (e.g., `HelloWorld`)
 
        ![Job Name](<../../../.gitbook/assets/image (882).png>)
    *   **Job URL:** Relative job path\
-       \&#xNAN;_Example:_ `job/HelloWorld`
+       &#xNAN;_&#x45;xample:_ `job/HelloWorld`
 
        ![Job URL](<../../../.gitbook/assets/image (883).png>)
    *   **User ID:** Jenkins user triggering the job

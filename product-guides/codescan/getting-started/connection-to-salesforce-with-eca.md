@@ -34,7 +34,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 2. In **Quick Find**, search **External Client Apps**.
 3. Open **External Client App Manager** (or the External Client Apps area).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **New External Client App**.
 3. Fill in the basics:

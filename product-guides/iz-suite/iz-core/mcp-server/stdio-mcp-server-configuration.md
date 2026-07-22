@@ -51,9 +51,9 @@ The following section describes the steps required to configure the IZ STDIO MCP
 
 * To generate a token, refer token generation
 * Save the mcp.json file.
-*   Navigate back to Cursor Settings tab and toggle the enable switch.<br>
+*   Navigate back to Cursor Settings tab and toggle the enable switch. <br>
 
-    <figure><img src="../../../../.gitbook/assets/cursor_mcp.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/cursor_mcp (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Claude Desktop
 
@@ -78,7 +78,7 @@ The following section describes the steps required to configure the IZ STDIO MCP
 * To generate a token, refer token generation.
 * Save the **`claude_desktop_config.json`** file.
 * Restart Claude Desktop
-* Navigate to **`Settings`** -> **`Developer`** and if every thing is configured correctly, the status should be **`running`**.
+* Navigate to **`Settings`** -> **`Developer`** and if every thing is configured correctly, the status should be **`running`**.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/claude_mcp.png" alt=""><figcaption></figcaption></figure>
 

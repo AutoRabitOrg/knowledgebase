@@ -11,20 +11,22 @@ The **SalesforceNavigation** template allows you to configure mobile navigation 
 5. Provide a **template name** and a **short description**.
 6. Select the **SalesforceNavigation** checkbox under **Mobile Administration**.
 7. Click **Add**.
-8.  On the next screen:
 
-    * A **Test Case Name**, **Object Name**, and **Navigation Menu Items** appear by default.
-    * Click **Add** to define custom test data and enter values for the available fields.
+8. On the next screen:
+   - A **Test Case Name**, **Object Name**, and **Navigation Menu Items** appear by default.
+   - Click **Add** to define custom test data and enter values for the available fields.
 
-    ![Salesforce Navigation Setup](<../../../../../../.gitbook/assets/image (86).png>)
+   ![Salesforce Navigation Setup](../../../../../../.gitbook/assets/image%20(86).png)
 
-    * To add additional menu items:
-      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (58).png>)
-      * Enter names such as **Task** or **People** into the **Available Member** field.
-      * Use the **Add/Remove** checkboxes to control their activation.
-      * To add multiple items, click the **+** symbol and repeat the above steps.
-      * Click **OK**, then click **Save** to finalize the test case.
+   - To add additional menu items:
+     - Click the edit icon ![Edit Icon](../../../../../../.gitbook/assets/image%20(87).png)
+     - Enter names such as **Task** or **People** into the **Available Member** field.
+     - Use the **Add/Remove** checkboxes to control their activation.
+     - To add multiple items, click the **+** symbol and repeat the above steps.
+     - Click **OK**, then click **Save** to finalize the test case.
+
 9. Click **Save** again to store the template.
+
 10. Upon successful creation, you will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select your **destination org** from the dropdown and provide **email address(es)** for notifications.

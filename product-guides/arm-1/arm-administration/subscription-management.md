@@ -102,7 +102,7 @@ ErrorIf an incorrect file is selected, a notification popup stating that the fil
 After uploading the license key, the administrator can allot the available subscriptions to the desired team.
 
 1. Look for the desired team on the **Subscription Management** page.
-2.  Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (715).png>)**)** icon to update the subscription count for a team.<br>
+2.  Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (718).png>)**)** icon to update the subscription count for a team.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1949).png" alt="" width="563"><figcaption></figcaption></figure>
 3. The number of user licenses available for your account is displayed in the **`Subscriptions Available`** field.
@@ -112,6 +112,8 @@ After uploading the license key, the administrator can allot the available subsc
     <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-16 at 9.36.39 PM.png" alt="" width="375"><figcaption></figcaption></figure>
 
 All fields on the **Subscription Management** page will get updated.
+
+
 
 ## Managing License Reductions During Subscription Renewals
 
@@ -153,10 +155,14 @@ AutoRABIT Support and Operations teams do not have visibility into which users s
 3.  Locate the user you want to modify<br>
 
     <figure><img src="../../../.gitbook/assets/image (2533).png" alt=""><figcaption></figcaption></figure>
+
+
 4.  Delete User – Select the User and click on Delete Selected and Confirm the pop up icon to erase the account permanently.<br>
 
     <figure><img src="../../../.gitbook/assets/image (2534).png" alt=""><figcaption></figcaption></figure>
 5. Confirm the action by clicking OK in the dialog.
+
+
 
 ### **What Happens Next?**
 

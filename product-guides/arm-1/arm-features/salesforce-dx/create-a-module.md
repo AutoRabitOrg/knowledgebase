@@ -1,4 +1,4 @@
-# Create a Module
+# Creating a Module
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -76,7 +76,7 @@ Conditions:
 
 11. **Add / arrange dependencies**
 
-    * Select packages in **Available Packages** and use the ![](<../../../../.gitbook/assets/image (734).png>) / ![](<../../../../.gitbook/assets/image (735).png>) icons to add or remove them.
+    * Select packages in **Available Packages** and use the ![](<../../../../.gitbook/assets/image (1445).png>) / ![](<../../../../.gitbook/assets/image (1446).png>) icons to add or remove them.
     * Use ![](<../../../../.gitbook/assets/image (1447).png>) / ![](<../../../../.gitbook/assets/image (1448).png>) to reorder; the top package deploys first.
 
     <figure><img src="../../../../.gitbook/assets/image (1449).png" alt="Package dependencies"><figcaption></figcaption></figure>

@@ -41,13 +41,13 @@ The ARM test environment enables efficient data transfer from CSV files into des
     * In **Create Mapping: Account**, click **Auto Map** to match like-named fields.
     * Use **Search** to locate specific fields if needed.
 
-    <figure><img src="../../../../.gitbook/assets/16 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/16 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
 11. Save Master Object Mapping
 
     * Review the mapped **Fields (Destination)** and complete any unmapped ones.
     * Click **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/17 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/17 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
 12. Open Ancestor Object Mapping
 
     * Switch to the **Ancestor Objects** tab.
@@ -78,7 +78,7 @@ The ARM test environment enables efficient data transfer from CSV files into des
     * Select or enter a **Job Group Name**.
     * Click **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/22 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/22 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
 17. #### View Job in Test Environment List
 
     * Clicking "Save" will redirect to the "Test Environment" dashboard..
@@ -96,12 +96,12 @@ The ARM test environment enables efficient data transfer from CSV files into des
       * Batch Size
     * Review details and close the summary.
 
-    <figure><img src="../../../../.gitbook/assets/24 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/24 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
 19. #### Run the Test Environment Job
 
     * From the job list, click the **Run icon** under **Actions** for the created job.
 
-    <figure><img src="../../../../.gitbook/assets/25 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/25 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
 20. #### Run Configuration Settings
 
     * In the **Run Configuration** panel, set the following:
@@ -169,15 +169,15 @@ The ARM test environment enables efficient data transfer from CSV files into des
     * Use **Auto Map** to match fields automatically, or manually map unmapped fields.
     * Click **Save** to update mappings.
 
-    <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
 30. **View Job Run Results – Success**
 
     * Under **Results of Last Run**, click the **Success count** icon.
     * A list of records with **Destination IDs** and **Status: Item Created** is displayed.
 
-    <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/35 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/36 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/36 - Test Environment Setup (2).png" alt=""><figcaption></figcaption></figure>
 31. **View Job Run Results – Failure**
 
     * Under **Results of Last Run**, click the **Failure count** icon.
@@ -227,12 +227,16 @@ The ARM test environment enables efficient data transfer from CSV files into des
 37. #### Running a Job
     *   Identify the desired job in the job list.
 
+
+
         <figure><img src="../../../../.gitbook/assets/44 - Test Environment Setup (1).png" alt=""><figcaption></figcaption></figure>
     * Click the **Run** button under the _Actions_ column.
     * A configuration panel opens with the following options:
       * **Disable workflow rules**
       * **Disable validation rules**
     *   Adjust the options if required, then click **Run**.
+
+
 
         <figure><img src="../../../../.gitbook/assets/46 - Test Environment Setup.png" alt=""><figcaption></figcaption></figure>
     * A confirmation message _“Run Process Initiated Successfully”_ appears.

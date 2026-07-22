@@ -1,4 +1,4 @@
-# Add Users to a CodeScan Cloud Org
+# Adding Users to a CodeScan Cloud Organization
 
 {% hint style="danger" %}
 **Important note:** The steps described in this article are only applicable to teams using **Auth0** as an authentication method. If your CodeScan organization has any **SAML** connections enabled—even if not enforced—then new users should be added through the Identity Provider. Please find more details [here](https://knowledgebase.autorabit.com/fundamentals/faq/codescan-faqs/general/single-sign-on-sso-faqs#how-do-i-add-users-to-codescan-after-sso-is-enabled).
@@ -14,7 +14,7 @@ User invitations to join the CodeScan organization are sent out by the org admin
 
 4. In the **`Invite Users`** screen, enter the **`email`** (or emails) of the users you would like to add.<br>
 
-<figure><img src="../../../../../.gitbook/assets/Invite User.png" alt="" width="355"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Invite User 1.8.png" alt="" width="355"><figcaption></figcaption></figure>
 
 5. Invited user will get an automated email from CodeScan. The user must click on the **`link`** to accept the invitation (see "accepting invitations" section for details).
 6.  Once the user is added to your organization, you can **edit** their permissions through the **`Groups`**, **`Permissions`**, and **`Permission Templates`** under the **`Administration`** menu.<br>

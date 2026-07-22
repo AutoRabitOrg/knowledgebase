@@ -1,4 +1,4 @@
-# Backing up your project to Version Control
+# Backup your project to Version Control
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox browsers.
@@ -13,7 +13,7 @@ Use ARM to back up changes from your Salesforce org to your [version control](ht
 1. Log in to ARM.
 2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2185).png" alt=""><figcaption></figcaption></figure>
 
 1.  Click the **Backup to Version Control** tile.
 
@@ -46,16 +46,18 @@ Under **Build**, provide:
 6. **Run static analysis report** – Run an SCA tool before committing.
    * **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-<figure><img src="../../../../../.gitbook/assets/image (2187).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2188).png" alt=""><figcaption></figcaption></figure>
+
+
 
 * **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (2183).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2189).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
 
 1. **Additional profile packaging options:**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
@@ -84,7 +86,7 @@ Enable **Auto commit** to push changes directly to your VCS:
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (2184).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2191).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

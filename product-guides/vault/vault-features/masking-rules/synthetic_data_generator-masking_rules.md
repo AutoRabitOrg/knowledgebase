@@ -10,7 +10,7 @@ The Masking Rules page displays the selected Salesforce org and the available ru
 
 The Salesforce org is selected from Salesforce Orgs. The required rule can then be created by selecting NEW MASKING RULE.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-07-14 at 2.06.52 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-07-14 at 2.06.52 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Start a New Masking Rule
 
@@ -20,7 +20,7 @@ Rule Name is mandatory. The field supports alphanumerics, hyphen, underscore, an
 
 SAVE remains inactive until the mandatory configuration is completed. CANCEL closes the dialog without saving the rule.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-07-14 at 2.01.43 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-07-14 at 2.01.43 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Define the Rule Scope
 

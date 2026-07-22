@@ -61,7 +61,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     <figure><img src="../../../../../.gitbook/assets/image (2612).png" alt=""><figcaption></figcaption></figure>
 
-    Action menu showing available options after file upload.
+    &#x20;                                   Action menu showing available options after file upload.
 9.  ### Auto-populate and review the query
 
     Auto populate reads the uploaded CSV values and generates the corresponding query in the query editor. The generated query uses the selected object and field, then inserts the uploaded values into the filter condition.
@@ -74,7 +74,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     <figure><img src="../../../../../.gitbook/assets/image (2614).png" alt=""><figcaption></figcaption></figure>
 
-    Record Count area available for limiting returned records.
+    &#x20;                                   Record Count area available for limiting returned records.
 10. ### Validate and apply the filter
 
     Validate checks whether the generated query is valid before the filter is applied. If the query is valid, Vault displays a success notification.
@@ -99,7 +99,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     <figure><img src="../../../../../.gitbook/assets/image (2619).png" alt=""><figcaption></figcaption></figure>
 
-    Schema step showing the configured filter after the panel closes.
+    &#x20;                            Schema step showing the configured filter after the panel closes.
 11. Multiple schedule options are available to schedule the job
 
     <figure><img src="../../../../../.gitbook/assets/14 - Extract.png" alt=""><figcaption></figcaption></figure>
@@ -134,7 +134,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
     <figure><img src="../../../../../.gitbook/assets/24 - Extract.png" alt=""><figcaption></figcaption></figure>
 21. Click the **Schedule** option to view any existing schedule configured during job creation. A new schedule can also be set at this stage, which will apply specifically to the current job.
 
-    <figure><img src="../../../../../.gitbook/assets/25 - Extract.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/25 - Extract (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/26 - Extract.png" alt=""><figcaption></figcaption></figure>
 22. To delete the job, click on the "Delete" option.
@@ -162,3 +162,4 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 28. Click on the "Success" icon to observe the success records
 
     <figure><img src="../../../../../.gitbook/assets/35 - Extract.png" alt=""><figcaption></figcaption></figure>
+

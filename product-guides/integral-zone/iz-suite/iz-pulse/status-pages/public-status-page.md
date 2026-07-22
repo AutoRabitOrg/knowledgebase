@@ -2,10 +2,11 @@
 
 Public Status Pages displays only the public endpoints and the status page URL is unauthenticated. To view the public status page -
 
-1.  Navigate to **`IZ Pulse`** -> **`Status Pages`**<br>
+1.  Navigate to **`IZ Pulse`** -> **`Status Pages`** <br>
 
-    <figure><img src="../../../../../.gitbook/assets/statuspages.png" alt=""><figcaption></figcaption></figure>
-2.  Click on `View Public Page` action to view the public page<br>
+    <figure><img src="../../../../../.gitbook/assets/statuspages (2).png" alt=""><figcaption></figcaption></figure>
+2.  Click on `View Public Page` action to view the public page\
+    &#x20;
 
     <figure><img src="../../../../../.gitbook/assets/public-statuspage.png" alt=""><figcaption></figcaption></figure>
 3. Details includ:

@@ -29,20 +29,22 @@ Rules Playground functionality is part of Anypoint Studio plugin. Refer to [Inst
       3. Major
       4. Minor
       5. Info
-   4.  **`Rule Definition`** - Groovy definition for the custom rule<br>
+   4.  **`Rule Definition`** - Groovy definition for the custom rule\
+       &#x20;
 
-       <figure><img src="../../../.gitbook/assets/custom-rules-editor.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/custom-rules-editor (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Evaluating Custom Rule:
 
 1. Click on **`Evaluate Rule`** button to validate and execute the rule definition
 2. Custom rule will be applied on the current project and results will be displayed in **`Evaluation Results`** section
-3.  Results in case of valid rule definition<br>
+3.  Results in case of valid rule definition\
+    &#x20;
 
-    <figure><img src="../../../.gitbook/assets/custom-rules-eval-results.png" alt=""><figcaption></figcaption></figure>
-4.  Results in case of syntax errors in the rule definition<br>
+    <figure><img src="../../../.gitbook/assets/custom-rules-eval-results (1).png" alt=""><figcaption></figcaption></figure>
+4.  Results in case of syntax errors in the rule definition <br>
 
-    <figure><img src="../../../.gitbook/assets/custom-rules-eval-results-error.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/custom-rules-eval-results-error (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Publishing Custom Rule:
 
@@ -56,9 +58,10 @@ Before publishing a custom rule, make sure you have:
 1. Expand the **`Publish Rule`** section
 2. Enter the Rule Key and Description -
    1. **`Key`** - Unique key for the custom rule. The key will be auto populated, which can be changed if there are any conflicts
-   2.  **`Description`** - Description of the rule. Markdown syntax can be used to describe the rule<br>
+   2.  **`Description`** - Description of the rule. Markdown syntax can be used to describe the rule\
+       &#x20;
 
-       <figure><img src="../../../.gitbook/assets/custom-rules-publish.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/custom-rules-publish (1).png" alt=""><figcaption></figcaption></figure>
 3. Click on **`Publish Rule`** to upload the rule to configured server. Rule will be activated in the selected Quality Profile.
 
 ### See Also

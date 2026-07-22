@@ -28,7 +28,7 @@
 
     However, for the SFDX and Vlocity jobs, users will not get notified of any failed revisions.
 
-<figure><img src="../../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Code coverage results during the CI job come from any tests you've run from the AutoRABIT application, however, you will be able to view the report only if the code coverage is more than **0%**.
 7. For CI Jobs builds that are more than 30 days old, **deployment/ quick deployment/ rollback reports** will not be accessible.

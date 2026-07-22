@@ -9,7 +9,7 @@ The **CodeScan Cursor** extension provides immediate feedback to developers on b
 Make sure you:
 
 1. Install the latest Cursor version.
-2. Have a CodeScan **Cloud** account:
+2. Have a CodeScan **Cloud** account:&#x20;
    * Have a valid enterprise license (or a **cloud** trial version—trial **not** available with self-hosted)
 3. For CodeScan **Self Hosted**:
    * Have a working **SonarQube™ 9.9+ LTA** server
@@ -37,7 +37,7 @@ Follow the installation instructions for the CodeScan extension and bind the ext
 **Step 1: Install the CodeScan Extension**
 
 1. Open the **Extensions** tab
-2. Search for **CodeScan** and click on **Install** to install the latest CodeScan extension. You will notice the extension page mentions Visual Studio Code, this is expected. Cursor is originally forked from VS Code.
+2. Search for **CodeScan** and click on **Install** to install the latest CodeScan extension.  You will notice the extension page mentions Visual Studio Code, this is expected.  Cursor is originally forked from VS Code.
 3. Once installed, restart or reload Cursor to ensure it's taken effect.
 
 **Step 2: Java Runtime (JRE) 17 Installation**
@@ -49,7 +49,7 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 
 **Step 3: Create the Connection**
 
-1.  Navigate to the CodeScan tab in the left Panel.<br>
+1.  Navigate to the CodeScan tab in the left Panel. <br>
 
     <figure><img src="../../../../.gitbook/assets/image (2492).png" alt=""><figcaption></figcaption></figure>
 2. Click on ‘Add CodeScan Connection.’
@@ -106,22 +106,22 @@ unable to find valid certification path to requested target.
 
 **Steps:**
 
-1. In your browser, to the left of the URL, there is a lock icon (![](<../../../../.gitbook/assets/image (437).png>)).
+1. In your browser, to the left of the URL, there is a lock icon (![](<../../../../.gitbook/assets/image (494).png>)).
 2. Click on this icon and a window will pop up. From the window, select **Connection is secure**.
 
-<figure><img src="../../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (495).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the second option, i.e., **`Certificate is valid`**.
 
-<figure><img src="../../../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (496).png" alt=""><figcaption></figcaption></figure>
 
 4. Go to the **Details** tab and click on **Export**.
 
-<figure><img src="../../../../.gitbook/assets/image (435).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (497).png" alt="" width="452"><figcaption></figcaption></figure>
 
 5. Rename the certificate (e.g., _**codescan-certificate**_), then choose a location and save the certificate.
 
-<figure><img src="../../../../.gitbook/assets/image (436).png" alt="" width="540"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (498).png" alt="" width="540"><figcaption></figcaption></figure>
 
 6. The next process is to install the certificate in the **cacerts** file of the jdk installed in the system using the command line.
 
@@ -196,6 +196,8 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 * Some useful debugging information is available under the **`Output`** window under the ‘**`CodeScan`**’ tab.
 * Also, you can check for any serious errors by going to **`Help > Toggle Developer Tools`** to bring up the console.
 
+
+
 ***
 
 ### Changelogs
@@ -204,17 +206,21 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 
 **v. 2.0.3**
 
-Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.
+Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.&#x20;
+
+
 
 **13 June 2024**
 
-**v. 2.0.2**
+**v. 2.0.2** &#x20;
 
 New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review. You can click on the specific _Type_ or _Severity_ to only see issues of that type.
 
 <figure><img src="../../../../.gitbook/assets/image (567).png" alt=""><figcaption></figcaption></figure>
 
 The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
+
+
 
 ***
 

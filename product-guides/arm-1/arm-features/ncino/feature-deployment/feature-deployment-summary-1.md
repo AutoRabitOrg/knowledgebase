@@ -6,7 +6,7 @@
 
 ### Step-By-Step Guide:
 
-The following flow provides detailed information about the "Feature Deployment History" page layout.
+The following flow provides detailed information about the "Feature Deployment History" page layout.&#x20;
 
 1. The **Feature Deployment History** provides a comprehensive log of all deployments previously executed through **AutoRABIT**
 2.  Click on the **"Deployment History"** option under the "nCino" module
@@ -27,7 +27,7 @@ The following flow provides detailed information about the "Feature Deployment H
 
        <figure><img src="../../../../../.gitbook/assets/2.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
-       1.  This is helpful in quickly locating the relevant deployments without manually scrolling through large records.
+       1.  &#x20;This is helpful in quickly locating the relevant deployments without manually scrolling through large records.
 
            **Available Filter Options:**
 
@@ -48,9 +48,11 @@ The following flow provides detailed information about the "Feature Deployment H
              Applies the selected filters to the deployment history list and displays the results instantly.
    5.  **Column Headers Overview**
 
-       The highlighted section displays the key columns in the **Deployment History** table, which provides a comprehensive view of all the feature deployments.
+       The highlighted section displays the key columns in the **Deployment History** table, which provides a comprehensive view of all the feature deployments.&#x20;
 
        <figure><img src="../../../../../.gitbook/assets/3 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+
+
    6. Here's what each column represents:
       1.  **Deployment Label**
 
@@ -104,7 +106,7 @@ The following flow provides detailed information about the "Feature Deployment H
 
        Use the dropdown to select the Salesforce org to which the deployment should be executed.
 
-       <figure><img src="../../../../../.gitbook/assets/6.2 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/6.2 - Feature Deployment History Page (1).png" alt=""><figcaption></figcaption></figure>
    4.  **Deployment Options**
 
        Toggle the following settings as needed for the deployment:
@@ -137,7 +139,9 @@ The following flow provides detailed information about the "Feature Deployment H
 
     The **External Field Mappings** section displays object-level mappings between source and destination environments. Each row in the mapping table includes:
 
-    <figure><img src="../../../../../.gitbook/assets/7.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+
+
+    <figure><img src="../../../../../.gitbook/assets/7.0 - Feature Deployment History Page (2).png" alt=""><figcaption></figcaption></figure>
 
     *   **Object Name**: Identifies the object included in the deployment.
 
@@ -148,12 +152,12 @@ The following flow provides detailed information about the "Feature Deployment H
           * ✅ Confirm the mapping.
           * ❌ Remove the mapping.
 
-        <figure><img src="../../../../../.gitbook/assets/7.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/7.1 - Feature Deployment History Page (3).png" alt=""><figcaption></figcaption></figure>
 7.  #### **Deployment History – Summary and Iterations**
 
     The **Actions** menu for each entry in the Deployment History includes two key options: **Summary** and **Iterations**. These provide detailed insights into individual deployments and their versioned executions.
 
-    <figure><img src="../../../../../.gitbook/assets/8 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/8 - Feature Deployment History Page (1).png" alt=""><figcaption></figcaption></figure>
 8.  #### **Deployment Summary**
 
     Selecting **Summary** opens a side panel displaying key information related to the selected deployment:
@@ -168,6 +172,8 @@ The following flow provides detailed information about the "Feature Deployment H
     * **Source Branch**: Git branch from which the deployment was triggered.
     * **Source Repository**: The Git repository associated with the deployment.
     * **Description**: Any notes or context added for the deployment (if available).
+
+
 
     <figure><img src="../../../../../.gitbook/assets/8.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 9. This view provides a quick snapshot of the deployment details for auditing and traceability.
@@ -188,7 +194,7 @@ The following flow provides detailed information about the "Feature Deployment H
     This screen allows tracking of multiple deployment attempts for a single feature, ensuring version control and deployment consistency.
 
     <figure><img src="../../../../../.gitbook/assets/9.0 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
-12. #### Re-Deploy Panel: When selecting “Re-Deploy,” a side panel opens with redeployment options.
+12. #### Re-Deploy Panel:  When selecting “Re-Deploy,” a side panel opens with redeployment options.
 
     1. **Destination Org**: Dropdown to select the target Salesforce org.
     2. **Deployment Settings**:
@@ -254,10 +260,13 @@ The following flow provides detailed information about the "Feature Deployment H
 
     *   Confirms that all retrieved records were processed successfully.
 
-        <figure><img src="../../../../../.gitbook/assets/9.9 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/9.9 - Feature Deployment History Page (1).png" alt=""><figcaption></figcaption></figure>
 
-        <figure><img src="../../../../../.gitbook/assets/9.8.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/9.9.1 - Feature Deployment History Page.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: AutoRABIT recommends fixing the errors generated and redeploying the process once again until the status changes to **Success**.
 {% endhint %}
+
+
+

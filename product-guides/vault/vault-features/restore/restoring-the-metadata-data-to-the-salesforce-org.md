@@ -8,7 +8,7 @@ This article discusses the procedure for restoring metadata and data to your Sal
 
 Ensure you have the following:
 
-* Salesforce Org registered with Vault.
+* Salesforce Org registered with Vault.&#x20;
 * Backup configured for your Salesforce Org. \[[Learn More](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md)]
 * At least one backup operation is triggered for your Salesforce Org in Vault.
 
@@ -53,7 +53,7 @@ EZ-Restore copies everything from the source to the destination, including new, 
 1.  Select the backup(s) from the list and click on the **`EZ Restore`** button.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1562).png" alt=""><figcaption></figcaption></figure>
-2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button.<br>
+2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button. <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1561).png" alt=""><figcaption></figcaption></figure>
 3. On the next screen:
@@ -65,7 +65,7 @@ EZ-Restore copies everything from the source to the destination, including new, 
    * **`Disable Validation Rules:`** Validation rules verify that the data a user enters in a record meets your specified criteria before the user can save the record. On selection, all the validation rules of the Salesforce objects are deactivated, and the data will be transferred from the source to the destination sandbox. Once the restore is done, validation rules are reactivated.
    * **`Enable serial mode for Bulk API:`** Serial mode processes batch one at a time; however, it increases the processing time for a load.
    * **`Disable Relationship Mapping:`** The child objects related to selected objects will not be fetched on selection.
-   * **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may wish to disable any triggers you have set. _This feature disables Salesforce triggers only. Any managed package triggers will not be disabled._
+   * **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may wish to disable any triggers you have set. _This feature disables Salesforce triggers only.  Any managed package triggers will not be disabled._
 5. The list of **metadata** and **data** objects replicated will be displayed for the last time before the restore process begins. You will not have options to select individual objects as it is an entire restore process.
 6.  Click **`Restore Now`**.<br>
 
@@ -73,7 +73,7 @@ EZ-Restore copies everything from the source to the destination, including new, 
 
 ### Selective Restore <a href="#selective-restore" id="selective-restore"></a>
 
-This option allows you to select specific metadata or data that gets restored only to the target organization.
+This option allows you to select specific metadata or data that gets restored only to the target organization.&#x20;
 
 Select the backup(s) from the list and click on the **`Selective Restore`** button.
 
@@ -85,7 +85,7 @@ The next screen displays the metadata and data objects that will be replicated. 
 
 <figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -104,7 +104,7 @@ The next screen displays the metadata and data objects that will be replicated. 
        1. The selected object is displayed as the root node of the hierarchy.
        2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
 
-           <figure><img src="../../../../.gitbook/assets/image (2346).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (2369).png" alt=""><figcaption></figcaption></figure>
        3. Expand and collapse controls allow traversal across multiple hierarchy levels.
        4. **Each object card displays:**
           * Object name
@@ -118,7 +118,7 @@ The next screen displays the metadata and data objects that will be replicated. 
            1. Matching objects within the current hierarchy are highlighted.
            2. The info icon is automatically opened the first time typing is initiated.
 
-           <figure><img src="../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (2372).png" alt=""><figcaption></figcaption></figure>
        3. The info icon can be manually reopened at any time by selecting the icon.
     4.  **Search Help (Info Icon)**
 
@@ -142,10 +142,10 @@ The next screen displays the metadata and data objects that will be replicated. 
 
             1. Searches across the entire hierarchy path.
 
-            <figure><img src="../../../../.gitbook/assets/image (2350).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (2373).png" alt=""><figcaption></figcaption></figure>
         4.  If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
 
-            <figure><img src="../../../../.gitbook/assets/image (2352).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (2374).png" alt=""><figcaption></figcaption></figure>
     6. **Search Results Feedback**
        1. **A result banner displays:**
           1. Number of matches found on the current page.
@@ -156,7 +156,7 @@ The next screen displays the metadata and data objects that will be replicated. 
     7. **“Only Matches” Toggle**
        1.  The Only Matches toggle is available alongside search results.
 
-           <figure><img src="../../../../.gitbook/assets/image (2353).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (2375).png" alt=""><figcaption></figcaption></figure>
        2. **When enabled:**
           1. Only objects matching the search criteria are displayed.
           2. Non-relevant hierarchy nodes are temporarily hidden.
@@ -166,13 +166,13 @@ The next screen displays the metadata and data objects that will be replicated. 
        1. The Root option is displayed at the top of the hierarchy view.
        2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
 
-           <figure><img src="../../../../.gitbook/assets/image (2355).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (2376).png" alt=""><figcaption></figcaption></figure>
 
            1. This action resets the navigation context without clearing selected objects.
     9. **Path and Navigation Indicators**
        1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
 
-           <figure><img src="../../../../.gitbook/assets/image (2356).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (2377).png" alt=""><figcaption></figcaption></figure>
        2. A Go Back option allows navigation to the previous hierarchy level.
        3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
     10. **Object Selection Behaviour**
@@ -189,7 +189,7 @@ The next screen displays the metadata and data objects that will be replicated. 
     12. **Saving Hierarchy Configuration**
         1.  The Save button persists all selections made within the hierarchy view.
 
-            <figure><img src="../../../../.gitbook/assets/image (2357).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (2378).png" alt=""><figcaption></figcaption></figure>
         2. Validation is performed before saving to ensure dependency consistency.
         3. On successful save, the hierarchy modal closes and returns to the configuration screen.
     13. **Key Functional Notes**
@@ -232,7 +232,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1644318580634.png" alt=""><figcaption></figcaption></figure>
 
-*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup.<br>
+*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup. <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
 
@@ -279,6 +279,6 @@ For each restore activity triggered in Vault, you will find the details below:
 
 <figure><img src="../../../../.gitbook/assets/image (1567).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="210">Attribute</th><th>Description</th></tr></thead><tbody><tr><td><code>Label</code></td><td>The label name you assigned for your restore activity.<br>Click on the label to find the list of successful/failed metadata and data members that are part of the restore operation. Also, you can <strong>export</strong> to save the restored metadata/data info in CSV format locally.</td></tr><tr><td><code>Backup Info</code></td><td>Get a snapshot of your restore operation</td></tr><tr><td><code>Date/Time</code></td><td>Date and time stamp for your restore operation</td></tr><tr><td><code>Duration</code></td><td>Total time to complete the restore operation</td></tr><tr><td><code>MetaSuccess</code></td><td>The total count of metadata objects successfully restored</td></tr><tr><td><code>MetaFailure</code></td><td>Total count of metadata objects that failed to restore</td></tr><tr><td><code>SuccessRecords</code></td><td>The total count of data objects successfully restored</td></tr><tr><td><code>FailedRecords</code></td><td>Total count of data objects that was unable to restore</td></tr><tr><td><code>Status</code></td><td>Restore status (success or failure)</td></tr><tr><td><code>Actions</code></td><td><p>Additional actions:</p><ul><li><strong><code>Restore summary:</code></strong> View the restore summary report</li><li><strong><code>Log:</code></strong> Find the log details for your restore operation</li><li><strong><code>Abort:</code></strong> For an ongoing replicate operation, you can abort the process in between using the <strong><code>Abort</code></strong> icon</li></ul></td></tr></tbody></table>
+<table><thead><tr><th width="210">Attribute</th><th>Description</th></tr></thead><tbody><tr><td><code>Label</code></td><td>The label name you assigned for your restore activity.<br>Click on the label to find the list of successful/failed metadata and data members that are part of the restore operation. Also, you can <strong>export</strong> to save the restored metadata/data info in CSV format locally. </td></tr><tr><td><code>Backup Info</code></td><td>Get a snapshot of your restore operation</td></tr><tr><td><code>Date/Time</code></td><td>Date and time stamp for your restore operation</td></tr><tr><td><code>Duration</code></td><td>Total time to complete the restore operation</td></tr><tr><td><code>MetaSuccess</code></td><td>The total count of metadata objects successfully restored</td></tr><tr><td><code>MetaFailure</code></td><td>Total count of metadata objects that failed to restore</td></tr><tr><td><code>SuccessRecords</code></td><td>The total count of data objects successfully restored</td></tr><tr><td><code>FailedRecords</code></td><td>Total count of data objects that was unable to restore</td></tr><tr><td><code>Status</code></td><td>Restore status (success or failure)</td></tr><tr><td><code>Actions</code></td><td><p>Additional actions:</p><ul><li><strong><code>Restore summary:</code></strong> View the restore summary report</li><li><strong><code>Log:</code></strong> Find the log details for your restore operation</li><li><strong><code>Abort:</code></strong> For an ongoing replicate operation, you can abort the process in between using the <strong><code>Abort</code></strong> icon</li></ul></td></tr></tbody></table>
 
 <br>

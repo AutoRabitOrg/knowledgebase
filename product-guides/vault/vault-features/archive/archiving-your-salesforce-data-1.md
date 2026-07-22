@@ -18,7 +18,7 @@ hidden: true
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
 7.  Using **Filters,** you can define the criteria for which the records will get fetched. For example, you can define criteria to fetch **AccountBrand** records that are older than _1,000 days_ and _field Id_ is not empty.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
 
 Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. To easily identify the objects for which the filter is applied, the filter icon is highlighted.
 
@@ -83,9 +83,9 @@ Validate your query to see whether the criteria set is correct and view the numb
 12. Click **Save Config**.
 13. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1615).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
 14. Now go to the **Archive** tab.
-15. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.
+15. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.&#x20;
 16. Select the **Environment**.
 17. Select the archive configured recently under **Configurations** drop-down field.
 
@@ -93,13 +93,13 @@ Validate your query to see whether the criteria set is correct and view the numb
 18. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
 19. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
 20. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
-21. Select your configuration and click **Archive**.
+21. &#x20;Select your configuration and click **Archive**.
 
     <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
 22. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
 
     <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
-23. For each archive job, the following information will be displayed:
+23. &#x20;For each archive job, the following information will be displayed:
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
@@ -125,8 +125,8 @@ This provision is useful in filtering the “backed up” and archived records. 
     3. Download Filtered Results
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-7. 6\. Download All Records: Selecting this option will download all the backed up records
-8.  7\. Download Record On Screen: Selecting this option will download all the records available on that current page
+7. 6\.    Download All Records: Selecting this option will download all the backed up records
+8.  7\.    Download Record On Screen: Selecting this option will download all the records available on that current page
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 9.  Download Filtered Records: Selecting this option will download the records filtered

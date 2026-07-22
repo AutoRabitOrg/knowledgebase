@@ -2,16 +2,16 @@
 
 ### What is EZ-Merge? <a href="#what-is-ezmerge" id="what-is-ezmerge"></a>
 
-Merging is simply putting a forked history back together again. Say you have a new branch feature based on the master branch. You now want to merge this feature branch into the master. Using the merge process in ARM will merge the specified branch feature into the current branch...we'll assume the master.
+Merging is simply putting a forked history back together again. Say you have a new branch feature based on the master branch. You now want to merge this feature branch into the master. Using the merge process in ARM will merge the specified branch feature into the current branch...we'll assume the master.&#x20;
 
 ### Before you begin <a href="#before-you-begin" id="before-you-begin"></a>
 
 Before a merge, there are several preparation steps you must take to ensure the merge goes smoothly. Most of these steps must be performed by an Admin.
 
-1. [**`Register your Version Control Repository in ARM`**](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)**`:`** Only an Admin can perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.
-2. [**`Register your Salesforce Organization in ARM`**](/broken/pages/9pLgfInGvztETx4cXCc2)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.
-3. [**`Set Up a Branch`**](https://knowledgebase.autorabit.com/product-guides/arm/getting-started/registration/version-control-branch/git-branch-creation#overview)**`:`** Instead of making changes directly to the code base, you can branch off from the main line and work on a specific feature in an isolated branch. Only an Admin can perform this step.
-4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../../../../arm/arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.
+1. [**`Register your Version Control Repository in ARM`**](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)**`:`** Only an Admin can perform this step. Register your Version Control Repositories, such as GIT, SVN, or TFS, in ARM.&#x20;
+2. [**`Register your Salesforce Organization in ARM`**](/broken/pages/9pLgfInGvztETx4cXCc2)**`:`** ARM connects to your Salesforce Org using the secure OAuth method or username/password connections. Only an Admin can perform this step.&#x20;
+3. [**`Set Up a Branch`**](https://knowledgebase.autorabit.com/product-guides/arm/getting-started/registration/version-control-branch/git-branch-creation#overview)**`:`** Instead of making changes directly to the code base, you can branch off from the main line and work on a specific feature in an isolated branch. Only an Admin can perform this step.&#x20;
+4. [**`Mapping the users with the Version Control and Salesforce Orgs`**](../../../../arm/arm-administration/user-management/view-my-profile.md) **`in the "My Profile" section:`** Set up the permissions to create a project in ARM.&#x20;
 5. **`Fetch the latest remote commits:`** Ensure the receiving branch and the merging branch are up-to-date with the latest remote changes.
 
 ### How do I merge my changes to a branch? <a href="#how-do-i-merge-my-changes-to-a-branch" id="how-do-i-merge-my-changes-to-a-branch"></a>
@@ -36,7 +36,7 @@ The merge process is generally performed when a feature is ready for user testin
 <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **`Merge Type`** from the dropdown:
-   * `Entire Branch`
+   * `Entire Branch`&#x20;
    * `Single Revision`
    * `Commit Label`
    * `Release Label`
@@ -48,9 +48,9 @@ The merge process is generally performed when a feature is ready for user testin
 
 **A. Entire Branch**
 
-This option will merge the entire change from one branch to another branch.
+This option will merge the entire change from one branch to another branch.&#x20;
 
-**Different options for `"Entire Branch"` merge type**
+**Different options for `"Entire Branch"` merge type**&#x20;
 
 * **`Delete Source Branch:`** Once you have successfully merged the changes from the source branch to another, you can permanently delete the source branch. Select the **`Delete Source Branch`** checkbox to delete the source branch, which auto-populates whenever 'Entire Branch' as a merge type is selected.
 
@@ -58,7 +58,7 @@ This option will merge the entire change from one branch to another branch.
 
 **B. Single Revision**
 
-Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (665).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
+Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
 
 <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -95,7 +95,7 @@ You can select the release labels created using the committed revisions and the 
 <figure><img src="../../../../../.gitbook/assets/image (2108).png" alt=""><figcaption></figcaption></figure>
 
 1. The **`Release Labels`** field populates with all the available release labels in that repository/branch. If no release label is created for the above repository/ branch, an error notification states, **`"No Release Labels found."`**
-2. Select your **Release Label.**
+2. Select your **Release Label.**&#x20;
 3. Click on the **`View Revisions`** link to view the list of revisions for the release label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
 
 <figure><img src="../../../../../.gitbook/assets/image (2109).png" alt=""><figcaption></figcaption></figure>
@@ -122,61 +122,61 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 1. **Merge Initiated:** This stage marks the beginning of the merge process. It indicates that a merge operation has been triggered, and the system is preparing to consolidate or merge data.
 2. **Awaiting User Action**: During this stage, the system is waiting for user input or action. Users may be required to review and confirm merge decisions, resolve conflicts, or provide additional information before the process proceeds.
 3. **Commit Generated**: The commit generation stage involves creating changes or transactions that will be applied to the system once the user confirms the merge. It represents the proposed changes resulting from the merge operation.
-4. **Validating Salesforce XML**: This stage involves checking and validating the Salesforce XML (eXtensible Markup Language) files associated with the merge. It ensures that the data conforms to the expected format and requirements, preventing issues during the merge.
+4. **Validating Salesforce XML**:  This stage involves checking and validating the Salesforce XML (eXtensible Markup Language) files associated with the merge. It ensures that the data conforms to the expected format and requirements, preventing issues during the merge.
 5. **Duplicate Access Settings**: This stage involves checking and managing access settings for potential duplicates. It ensures that security and access controls are appropriately configured for the merged data.
 6. **Generating Delta**: The delta generation involves identifying the changes or differences between the original data and the updated data resulting from the merge. This information is crucial for understanding the impact of the merge on the existing records.
 7. **Pending User Approval**: In this stage, the system has completed the necessary preparations, and the merge changes are pending final approval from the user. Users may review and confirm or reject the proposed changes based on their assessment.
 8. **Green Checkmark (**<mark style="color:green;">**✓**</mark>**)**: A green checkmark indicates a process or operation has been completed. It confirms that the task, such as a data merge or deployment, has been executed without errors and meets the required criteria.
-9. **Red Cross Mark (**<mark style="color:red;">**X**</mark>**):** On the other hand, the appearance of a red cross mark (<mark style="color:red;">**X**</mark>) signifies that a process has encountered an issue or has failed to complete successfully. This could be due to various reasons, such as validation errors, data conflicts, or system issues. Users should investigate the details of the failure to identify and address the issue.
+9. **Red Cross Mark (**<mark style="color:red;">**X**</mark>**):** On the other hand, the appearance of a red cross mark (<mark style="color:red;">**X**</mark>) signifies that a process has encountered an issue or has failed to complete successfully. This could be due to various reasons, such as validation errors, data conflicts, or system issues. Users should investigate the details of the failure to identify and address the issue.&#x20;
 
 ### Pass/Fail Result Takeaway
 
-1. **Validating Credentials** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>):\
-   o Description: This step involves verifying the credentials' authenticity to ensure proper access to the target systems.\
-   o Success (<mark style="color:green;">**✓**</mark>): Credentials are valid and provide the necessary access.\
+1. **Validating Credentials** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
+   o Description: This step involves verifying the credentials' authenticity to ensure proper access to the target systems. \
+   o Success (<mark style="color:green;">**✓**</mark>): Credentials are valid and provide the necessary access. \
    o Failure (<mark style="color:red;">**X**</mark>): Credentials are invalid, leading to an authentication error.
-2. **Applying Merge** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>):\
-   o Description: Merging code changes from different branches into the main branch.\
-   o Success (<mark style="color:green;">**✓**</mark>): The merge process completes without conflicts and successfully integrates changes.\
+2. **Applying Merge** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
+   o Description: Merging code changes from different branches into the main branch. \
+   o Success (<mark style="color:green;">**✓**</mark>): The merge process completes without conflicts and successfully integrates changes. \
    o Failure (<mark style="color:red;">**X**</mark>): Merge conflicts occur, requiring manual resolution.
-3. **Validating Salesforce XML** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>):\
-   o Description: Ensuring that Salesforce XML files conform to the expected structure and standards.\
-   o Success (<mark style="color:green;">**✓**</mark>): Salesforce XML files are valid and meet the required criteria.\
+3. **Validating Salesforce XML** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
+   o Description: Ensuring that Salesforce XML files conform to the expected structure and standards. \
+   o Success (<mark style="color:green;">**✓**</mark>): Salesforce XML files are valid and meet the required criteria. \
    o Failure (<mark style="color:red;">**X**</mark>): XML files have errors or deviations from the expected structure.
-4. **Checking Missing Meta XML** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>):\
-   o Description: Verifying the presence of necessary metadata XML files.\
-   o Success (<mark style="color:green;">**✓**</mark>): All required meta XML files are present.\
+4. **Checking Missing Meta XML** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
+   o Description: Verifying the presence of necessary metadata XML files. \
+   o Success (<mark style="color:green;">**✓**</mark>): All required meta XML files are present. \
    o Failure (<mark style="color:red;">**X**</mark>): Missing meta XML files, indicating incomplete configuration.
-5. **Merge Pre-validation Process** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>):\
+5. **Merge Pre-validation Process** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
    o Description: Performing preliminary checks before the actual merge to identify potential issues.\
    o Success (<mark style="color:green;">**✓**</mark>): When the Merge Pre-validation Process returns a green check mark (<mark style="color:green;">**✓**</mark>), it signifies that the pre-validation check has been successfully completed. It does not indicate whether or not the process returns errors - only that the process itself has run. To check for errors please refer to logs and validate the deploy.\
    o Failure (<mark style="color:red;">**X**</mark>): The appearance of a red cross mark (<mark style="color:red;">**X**</mark>) signifies that a process has encountered an issue or has failed to complete successfully.
-6. **File Diff** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>):\
-   o Description: Comparing files to identify the differences between the source and target.\
-   o Success (<mark style="color:green;">**✓**</mark>): No significant differences or conflicts were detected during the file comparison.\
+6. **File Diff** (<mark style="color:green;">**✓**</mark> / <mark style="color:red;">**X**</mark>): \
+   o Description: Comparing files to identify the differences between the source and target. \
+   o Success (<mark style="color:green;">**✓**</mark>): No significant differences or conflicts were detected during the file comparison. \
    o Failure (<mark style="color:red;">**X**</mark>): Differences or conflicts require attention and resolution.
-7. **Static Code Analysis** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>):\
-   o Description: Analyzing the code for potential issues, bugs, or security vulnerabilities.\
-   o Success (<mark style="color:green;">**✓**</mark>): Code analysis passes without critical issues.\
+7. **Static Code Analysis** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>): \
+   o Description: Analyzing the code for potential issues, bugs, or security vulnerabilities. \
+   o Success (<mark style="color:green;">**✓**</mark>): Code analysis passes without critical issues. \
    o Failure (<mark style="color:red;">**X**</mark>): Static code analysis identifies issues that need correction.
-8. **Validate Deploy** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>):\
-   o Description: Validating the deployment package to ensure it meets deployment requirements.\
-   o Success (<mark style="color:green;">**✓**</mark>): The deployment package is valid and ready for deployment.\
+8. **Validate Deploy** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>): \
+   o Description: Validating the deployment package to ensure it meets deployment requirements. \
+   o Success (<mark style="color:green;">**✓**</mark>): The deployment package is valid and ready for deployment. \
    o Failure (<mark style="color:red;">**X**</mark>): Deployment package validation fails due to issues.
-9. **Commit** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>):\
-   o Description: Committing the merged changes to the version control system.\
-   o Success (<mark style="color:green;">**✓**</mark>): Changes are successfully committed without errors.\
+9. **Commit** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>): \
+   o Description: Committing the merged changes to the version control system. \
+   o Success (<mark style="color:green;">**✓**</mark>): Changes are successfully committed without errors. \
    o Failure (<mark style="color:red;">**X**</mark>): Commit fails, indicating issues with the version control system.
-10. **Post Merge Updates** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>):\
-    o Description: Performing necessary updates and checks after the merge process.\
-    o Success (<mark style="color:green;">**✓**</mark>): Post-merge updates are completed without issues.\
+10. **Post Merge Updates** (<mark style="color:green;">**✓**</mark>/ <mark style="color:red;">**X**</mark>): \
+    o Description: Performing necessary updates and checks after the merge process. \
+    o Success (<mark style="color:green;">**✓**</mark>): Post-merge updates are completed without issues. \
     o Failure (<mark style="color:red;">**X**</mark>): Issues arise during post-merge activities, requiring attention.
 
-### Conflict Resolution
+### &#x20;Conflict Resolution
 
 1. **Conflict Resolution Strategy**: This field allows you to select how to resolve the conflicts. If you and another user change the same file in different sandboxes or on different branches, a conflict arises when you try to commit your modified files. When the conflict occurs, ARM will use the below resolve method:
    * **Manually resolve conflicts**: Resolve the conflicts manually.
-   * **Choose the file from the source**: Replaces the copy of the file in your workspace with the version in the repo, discarding your changes.
+   * **Choose the file from the source**: Replaces the copy of the file in your workspace with the version in the repo, discarding your changes.&#x20;
    * **Choose the file from the destination**: Accept the file in your workspace, overwriting the version in the repo when you submit the file.
 2. Enter the **Merge Label name** and **comment** (if any).
 3. Enter the **Email ID(s)** to send an email notification of the merge reports.
@@ -203,6 +203,8 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 
 <figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+
+
 1. **Back Merge Indicator**:
    * After performing the merge, you will see an indicator confirming that the validation is being skipped automatically as it is a back merge.
 
@@ -227,6 +229,8 @@ Use these options to customize and control your pre-validation merge operations,
    * The skip members option will only be visible if it has been configured. Ensure that this configuration is in place if you intend to use this feature.
 
 <figure><img src="../../../../../.gitbook/assets/image (2115).png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Different Prevalidate Merge Criteria:**
 
@@ -254,12 +258,12 @@ Use these options to customize and control your pre-validation merge operations,
 * **Ignore Missing Visibility:** With this option, differences in visibility settings between the source and destination branches will not cause the merge to fail. ARM will compare the source and destination branches and keep only the common settings between both branches.\
   \
   **Important Note**: **Standard fields** are not supported for **Ignore Missing Visible Settings**.<br>
-* **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.
+* **Ignore installed components:** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files while the remaining components are deployed.&#x20;
 * **Apex Test Level:** Choose your [Apex Test Level](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/deployment/apex-unit-tests) to validate your merge.
 
 <figure><img src="../../../../../.gitbook/assets/image (2136).png" alt=""><figcaption></figcaption></figure>
 
-* **Apex Test Class selection:**
+* **Apex Test Class selection:**&#x20;
 
 Select Org 1 by clicking on the drop-down of destination:
 
@@ -275,8 +279,8 @@ Select Org 2 by clicking on the drop-down of destination:
 
 **Points to Remember**:
 
-1. **Prevalidate Merge** section will only be visible if the Admin has enabled the **'Merge Setting'** checkbox under the **My Account** section.
-2. Users with the **'Merge Review Overridable'** role have special permission to check or uncheck the pre-validate option. However, each time they try to commit to the branch, a notification alert mail gets triggered to the email ID as specified in **My Account > Merge Settings**.
+1. **Prevalidate Merge** section will only be visible if the Admin has enabled the **'Merge Setting'** checkbox under the **My Account** section.&#x20;
+2. Users with the **'Merge Review Overridable'** role have special permission to check or uncheck the pre-validate option. However, each time they try to commit to the branch, a notification alert mail gets triggered to the email ID as specified in **My Account > Merge Settings**.&#x20;
 3. **Prevalidate Merge** section will not be displayed for Version control repositories registered in the **'SFDX'** structure.
 4. Suppose the meta-XML file does not exist in the Destination Branch and is available in the Source Branch. The meta-XML file is copied from the source to the destination branch before committing to the remote repository. The newly added meta-XML file will be added to the files list, committed to the remote repository, and added to the **Validate Deployment** package.
 5. Based on the permission assigned by your Admin, you will see the options in the active state. Suppose your Admin has assigned you permission to run a static code analysis tool only to review your code before merging them. In that case, the **Run Static Code Analysis** option will remain inactive, while other options will remain disabled or won't be seen.
@@ -298,6 +302,8 @@ You can update the status of the ALM work item through the **ALM Integration** s
 | <ul><li>The dry run option will show the user how the merge will execute without making any changes.</li><li>Don’t merge anything; show what would be done.</li><li>Lists what will be pushed to the Integration branch from the Dev branch.</li><li>The status shows as <strong>"MERGE NOT COMMITTED."</strong></li><li>View the conflicts if there are any during the dry run merge. Later, it will ask to initiate a merge in the <strong>View Conflict</strong> screen, which gets converted to a standard validation merge.</li></ul> | <ul><li>Changes are validated and later merged from the Dev branch to the Integration branch without committing to the remote repository.</li><li>The difference report and the static code analysis report are published based on the delta and shared with the user.</li><li>The admin/reviewer can approve or reject the changes.</li><li>The user can merge the changes to the remote repository if approved.</li></ul> |
 
 <figure><img src="../../../../../.gitbook/assets/image (2140).png" alt=""><figcaption></figcaption></figure>
+
+
 
 5. A notification appears that the merge request has been submitted for Entire Branch and Single Revision merge types. Click **OK**, and you will be auto-redirected to the **Commits** screen, where you can find the status of the initiated merge.
 
@@ -321,7 +327,7 @@ For merge labels that are either in progress or have some conflicts, in such a s
 
 **Issue references in stackoverflow link:** [https://stackoverflow.com/questions/63365836/git-is-showing-a-file-as-moved-on-bitbucket-i-want-it-as-a-new-file-for-pull-r](https://stackoverflow.com/questions/63365836/git-is-showing-a-file-as-moved-on-bitbucket-i-want-it-as-a-new-file-for-pull-r)
 
-**What do I need to do outside of ARM?**
+&#x20;**What do I need to do outside of ARM?**
 
 1. Checkout to the target branch.
 2. Merge the branch by executing the command shown in the ‘applying merge’ log.

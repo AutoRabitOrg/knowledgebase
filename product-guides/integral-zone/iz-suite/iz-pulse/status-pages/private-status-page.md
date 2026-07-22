@@ -2,10 +2,11 @@
 
 Private Status Pages displays both public & private endpoints and status page URLs are authenticated. To view the private status page -
 
-1.  Navigate to **`IZ Pulse`** -> **`Status Pages`**<br>
+1.  Navigate to **`IZ Pulse`** -> **`Status Pages`**\
+    &#x20;
 
-    <figure><img src="../../../../../.gitbook/assets/statuspages.png" alt=""><figcaption></figcaption></figure>
-2.  Click on `View Private Page` action to view the private page<br>
+    <figure><img src="../../../../../.gitbook/assets/statuspages (1).png" alt=""><figcaption></figcaption></figure>
+2.  Click on `View Private Page` action to view the private page <br>
 
     <figure><img src="../../../../../.gitbook/assets/private-statuspage.png" alt=""><figcaption></figcaption></figure>
 3. Details include -

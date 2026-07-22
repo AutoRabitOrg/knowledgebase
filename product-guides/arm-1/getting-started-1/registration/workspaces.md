@@ -36,7 +36,7 @@ Only **Org Administrators** can view, reset, or delete workspaces.
 3.  The list shows every workspace ever created:\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1952).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1953).png" alt=""><figcaption></figcaption></figure>
 
 | Field                | Description                                           |
 | -------------------- | ----------------------------------------------------- |

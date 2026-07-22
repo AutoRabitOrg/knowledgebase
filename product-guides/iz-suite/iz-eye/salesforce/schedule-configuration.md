@@ -10,17 +10,17 @@
 ### Configuring schedule for continuous code scans
 
 1. Navigate to **`Schedules`** -> **`Schedules`** and click on **`Configure Schedule`**
-2. Select **`Salesforce Apex Analysis`** job type
+2. Select **`Salesforce Apex Analysis`** job type&#x20;
 
 <figure><img src="../../../../.gitbook/assets/sf_configure_schedule_1.png" alt=""><figcaption></figcaption></figure>
 
-3. Select the Organizations and Environments to perform the scan
+3. Select the Organizations and Environments to perform the scan&#x20;
 
 <figure><img src="../../../../.gitbook/assets/sf_configure_schedule_2.png" alt=""><figcaption></figcaption></figure>
 
 4. Select the schedule/frequency at which the analysis should be performed
 
-![](../../../../.gitbook/assets/sf_configure_schedule_3.png)<br>
+![](<../../../../.gitbook/assets/sf_configure_schedule_3 (1).png>)<br>
 
 5. Click on **`Submit`** to configure the schedule
 

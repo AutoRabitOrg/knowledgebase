@@ -16,7 +16,7 @@ To generate your access token, you should:
 3. Enter the **API token name** on the next screen.
 4.  Note down your newly generated token - you are going to need it soon.
 
-    <figure><img src="../../../.gitbook/assets/image (751).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (752).png" alt=""><figcaption></figcaption></figure>
 
     * For security reasons, it is not possible to view the token after closing the creation dialog. If necessary, create a new token. Max of **10 tokens** is permitted for each user license.
     * You should store the token securely, as for any password.

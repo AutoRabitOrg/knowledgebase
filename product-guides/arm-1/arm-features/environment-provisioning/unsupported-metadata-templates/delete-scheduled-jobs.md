@@ -15,7 +15,7 @@ The **DeleteScheduledJobs** template enables users to remove scheduled jobs in S
    * A **Test Case Name** is auto-generated.
    * Click **Add** to insert custom test data.
 9. To include a **Report Name** for your test cases:
-   * Click the ![Add Icon](<../../../../../.gitbook/assets/image (58).png>) icon.
+   * Click the ![Add Icon](<../../../../../.gitbook/assets/image (59).png>) icon.
    * Enter the report name in the **Report Name** field.
    * To add multiple reports for the same test case, click the **+** symbol and complete the additional fields.
    * Click **OK**, then **Save** to complete this step.

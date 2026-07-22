@@ -14,7 +14,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 
     * The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and selecting the **'External Pull Requests'** checkbox under the [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) section
 
-    <figure><img src="../../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 2.  Pull Request support is enabled for the **Azure Cloud plugin**.
 
     * Make sure the [**Azure Cloud**](../../../../arm/arm-features/version-control/external-pull-request/azure-cloud-authentication.md) checkbox is selected under the **My Account** > **Plugins** > **Pull Request Support** section.
@@ -60,7 +60,7 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
     * Select your [**version control repository**](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md). Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
     * Choose the **Source branch** and the **Destination Branch** to compare.
     * Enter a **Title** and detailed **Description** of your changes, so others can see what problems the changes solve.
-    * Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.
+    * Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.&#x20;
     * Additional checkbox to **delete the source branch once the pull request has been approved**.
 
     <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="428"><figcaption></figcaption></figure>

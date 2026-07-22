@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# nCino Compare
+# Page 2
 
 ## nCino Compare
 
@@ -36,7 +36,7 @@ The Compare and Selective Deployment functionality in nCino enables users to per
     <figure><img src="../../../../.gitbook/assets/image (2446).png" alt=""><figcaption></figcaption></figure>
 2.  Select **“Template”** or **“Version Control”** to reveal the **Retrieve Dataset** option.
 
-    <figure><img src="../../../../.gitbook/assets/Compare - 1.1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Compare - 1.1 (2).png" alt=""><figcaption></figcaption></figure>
 3. Clicking it redirects to the **Deployment History** page.
 4. On that page, use **View Dataset** to open the dataset.
 
@@ -45,7 +45,7 @@ The Compare and Selective Deployment functionality in nCino enables users to per
 1. Select **Template Using Salesforce Org** or **VC Using Salesforce Org** to see **Create Dataset**.
 2.  Refer the "[Feature Deployment](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/ncino/feature-deployment)" section for the creation of a feature deployment.
 
-    <figure><img src="../../../../.gitbook/assets/Compare - 1.2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Compare - 1.2 (1).png" alt=""><figcaption></figcaption></figure>
 3. Click **Retrieve Dataset** to start a comparison.
 4. This would redirect the flow to the Deployment History.
 
@@ -54,19 +54,19 @@ The Compare and Selective Deployment functionality in nCino enables users to per
 1. **Access Compare Option**
    *   From the **Deployment Iterations** page, select the ellipsis (three dots) for a specific iteration.
 
-       <figure><img src="../../../../.gitbook/assets/Compare - 2.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Compare - 2 (1).png" alt=""><figcaption></figcaption></figure>
    *   Choose **Compare** to analyze dataset differences between environments.
 
-       <figure><img src="../../../../.gitbook/assets/Compare - 2.1.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Compare - 2.1 (1).png" alt=""><figcaption></figcaption></figure>
    * This helps validate consistency of deployed records.
 2. **Select Comparison Destination**
    * In the **Compare** window, select between the destination type:
      *   **Salesforce Org**: Compares records with another Salesforce environment.
 
-         <figure><img src="../../../../.gitbook/assets/Compare - 3.png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../../../.gitbook/assets/Compare - 3 (1).png" alt=""><figcaption></figcaption></figure>
      *   **Version Control**: Compares records with version-controlled data.
 
-         <figure><img src="../../../../.gitbook/assets/Compare - 3.1.png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../../../.gitbook/assets/Compare - 3.1 (3).png" alt=""><figcaption></figcaption></figure>
      * Choose the destination org or repository to proceed.
 3. **Configure Comparison Parameters**
    *   Provide details such as:
@@ -75,20 +75,40 @@ The Compare and Selective Deployment functionality in nCino enables users to per
        * **Object**
        * **Unique Id** (used to uniquely identify records)
 
-       <figure><img src="../../../../.gitbook/assets/Compare - 4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Compare - 4 (1).png" alt=""><figcaption></figcaption></figure>
+
+
    *   Optionally, select fields to **exclude from comparison** (e.g., system fields like CreatedDate).
 
-       <figure><img src="../../../../.gitbook/assets/Compare - 4.1.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Compare - 4.1 (1).png" alt=""><figcaption></figcaption></figure>
    * Excluding non-essential fields avoids unnecessary mismatches.
-4.  **Run Comparison**
+4. **Run Comparison**
+   *   After configuring all parameters, click **Compare**.
 
-    *   After configuring all parameters, click **Compare**.
+       <figure><img src="../../../../.gitbook/assets/Compare - 5 (1).png" alt=""><figcaption></figcaption></figure>
+   *
 
-        <figure><img src="../../../../.gitbook/assets/Compare - 5.png" alt=""><figcaption></figcaption></figure>
-    *
+       [<br>](https://github.com/AutoRabitOrg/knowledgebase/blob/7b2fb680c2e173abe9167088ba9aadb8ee2e1012/.gitbook/assets/Compare%20-%205.png)
 
-    ```
-    [<br>](https://github.com/AutoRabitOrg/knowledgebase/blob/7b2fb680c2e173abe9167088ba9aadb8ee2e1012/.gitbook/assets/Compare%20-%205.png)
-    ```
+
+
+
 
 [<br>](https://github.com/AutoRabitOrg/knowledgebase/blob/7b2fb680c2e173abe9167088ba9aadb8ee2e1012/.gitbook/assets/Compare%20-%201.1%20\(1\).png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

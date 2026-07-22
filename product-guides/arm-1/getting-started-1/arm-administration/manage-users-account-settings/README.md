@@ -38,6 +38,8 @@ Go to the **Teams** tab.
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 6.44.59 PM.png" alt=""><figcaption></figcaption></figure>
 
+
+
 #### 3. SSO Configuration <a href="#id-3-sso-configuration" id="id-3-sso-configuration"></a>
 
 Single Sign-On (SSO) is an authentication process that allows users to access multiple applications with one set of credentials. ARM supports **SAML 2.0 (Security Assertion Markup Language)**, a secure and widely adopted industry standard. This ensures easy integration with most large identity providers (IdPs) that support SAML 2.0.
@@ -71,7 +73,7 @@ However, an Org Admin can override SSO for specific users or groups:
     * Always verify SSO settings with your IdP before saving.
     * Incorrect configuration may prevent users from accessing ARM.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 6.46.45 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-16 at 6.46.45 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** When the **`Disable login with AutoRABIT credentials`** option is selected, the **`Enforce SSO`** checkboxes are automatically checked for all the users.
@@ -91,14 +93,14 @@ This allows new users to sign up for the ARM account by giving their mail extens
 
 #### 5. Plugins <a href="#id-5-plugins" id="id-5-plugins"></a>
 
-This section lists various plugins that are configured in ARM. Based on the organization's requirements, admins can select the desired plugins to be used and register by giving the correct credentials.
+This section lists various plugins that are configured in ARM. Based on the organization's requirements, admins can select the desired plugins to be used and register by giving the correct credentials.&#x20;
 
-In addition to this, the admin can select the desired browsers to execute the selenium test cases. Selenium cannot automate desktop applications; it can only be used in browsers.
+In addition to this, the admin can select the desired browsers to execute the selenium test cases. Selenium cannot automate desktop applications; it can only be used in browsers.&#x20;
 
 Browsers Supported:
 
-* Google Chrome 12+
-* Internet Explorer 7+
+* Google Chrome 12+&#x20;
+* Internet Explorer 7+&#x20;
 *   Firefox 3+\
     <br>
 
@@ -139,7 +141,7 @@ Here the admin can specify specific evaluation criteria for which the commit wil
 
 **Auto reject commit after XX days**
 
-Auto rejects an approval for pre-validation commit after the days mentioned here.
+Auto rejects an approval for pre-validation commit after the days mentioned here.&#x20;
 
 **User Criteria - Based Review Process**
 
@@ -148,14 +150,14 @@ Select the **`User criteria based Review Process`** checkbox to enable the commi
 
 <figure><img src="../../../../../.gitbook/assets/image (1912).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Next, choose the approval criteria based on your requirement:
+Next, choose the approval criteria based on your requirement:&#x20;
 
 * **`Enable file comparison reports:`** When selected, this generates a code difference report upon completion of the commit operation.
 * **`Should pass validation criteria for Static Code Analysis:`** Select this option if you would like to run a static code analysis tool to identify potential software quality issues before the code moves to production.
   *   Select the SCA tool according to your requirements.\
       <br>
 
-      <figure><img src="../../../../../.gitbook/assets/image (1913).png" alt="" width="375"><figcaption></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (1914).png" alt="" width="375"><figcaption></figcaption></figure>
 * Select the **`Auto reject commits if the criteria are not met`** checkbox to auto-reject the commit if the set criteria are not met.
 * **`Auto approve on commit validation success:`** If all the criteria selected under **`Enable criteria based Review Process`** are successfully validated, selecting this checkbox will automatically approve the commit.
 
@@ -184,7 +186,7 @@ Admins can configure the approvals process for the **Custom Deployment** module 
 
 You cannot select the same user as an approver for both **Level 1** and **Level 2**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1916).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1917).png" alt=""><figcaption></figcaption></figure>
 
 #### 9. Merge Settings <a href="#id-9-merge-settings" id="id-9-merge-settings"></a>
 
@@ -213,13 +215,13 @@ Select the API version to see the supported metadata types and avoid errors whil
 
 <figure><img src="../../../../../.gitbook/assets/image (1919).png" alt="" width="375"><figcaption></figcaption></figure>
 
-1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.
+1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
 3.  **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
     <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1920).png" alt="" width="563"><figcaption></figcaption></figure>
-4.  **Packaging and Deployment Settings:** Several options can be configured in this section:
+4.  **Packaging and Deployment Settings:** Several options can be configured in this section:&#x20;
 
     1. **Manageable States**: In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
        * **Beta**: The component is in a managed package version marked as beta, suitable for testing but not for production use.
@@ -243,10 +245,12 @@ Select the API version to see the supported metadata types and avoid errors whil
     <figure><img src="../../../../../.gitbook/assets/image (1922).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:**
+**Important Note:**&#x20;
 
 Enabling the **`Configuration for running delta on RecordType Picklist values`** checkbox may lead to more time for the build. If you deselect it, your build cycles will be shorter.
 {% endhint %}
+
+
 
 **Rollback Settings**
 
@@ -289,7 +293,7 @@ Create permission sets to grant access among logical groupings of users, regardl
 | Editable   | Indicates whether this field is editable (true) or not (false). |
 | Readable   | Indicates whether this field is readable (true) or not (false). |
 
-**Object Permissions** represent a user's access to custom objects.
+**Object Permissions** represent a user's access to custom objects.&#x20;
 
 | Field Name       | Description                                                                                                                                                                                                 |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -299,6 +303,8 @@ Create permission sets to grant access among logical groupings of users, regardl
 | allowRead        | Indicates whether the object referenced by the object field can be seen by the users assigned to this profile (true) or not (false).                                                                        |
 | modifyAllRecords | Indicates whether the object referenced by the object field can be read, edited, or deleted by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object. |
 | viewAllRecords   | Indicates whether the object referenced by the object field can be read by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object.                     |
+
+
 
 #### 11. Vlocity Configuration Settings <a href="#id-11-vlocity-configuration-settings" id="id-11-vlocity-configuration-settings"></a>
 
@@ -333,7 +339,7 @@ After logging in, a user establishes a session with the ARM platform. As an admi
 
 #### 13. Retention Policy <a href="#id-13-retention-policy" id="id-13-retention-policy"></a>
 
-In this section, the admin can define the period for which data is retained by ARM in the history tables.
+In this section, the admin can define the period for which data is retained by ARM in the history tables.&#x20;
 
 Clearing historical and irrelevant data from the database helps prevent the application from lagging, resulting in better performance in all modules. The default retention period is set as **`12 months`**. Data older than 12 months will be automatically cleaned. Admins can later change it to **`6 months`** or **`3 months`**.\
 <br>

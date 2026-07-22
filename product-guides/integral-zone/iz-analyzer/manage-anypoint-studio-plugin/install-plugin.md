@@ -21,21 +21,22 @@ Before installing and using IZ Anypoint Studio Plugin, make sure you have:
 
 ### Install Plugin
 
-1.  Go to **`Help`** -> **`Install New Software`** and add the plugin update site [https://plugins.integralzone.com/v2](https://plugins.integralzone.com/v2) in the address bar.<br>
+1.  Go to **`Help`** -> **`Install New Software`** and add the plugin update site [https://plugins.integralzone.com/v2](https://plugins.integralzone.com/v2) in the address bar. <br>
 
     <figure><img src="../../../../.gitbook/assets/studio_install_add_url.png" alt=""><figcaption></figcaption></figure>
 2. Select the appropriate feature, click on **`Next`** and follow the installation instructions.
    1. In case of Anypoint Studio, choose **`IZ Mule Analysis`**
    2. In case of WSO2 Integration Studio, choose **`IZ WSO2 Analysis`**
 3. Restart Anypoint Studio after installation
-4.  Log in to [https://analyzer.integralzone.com/](https://analyzer.integralzone.com/). Click on your Profile icon and navigate to **`My Account`**. Select the **`Security`** tab and generate a new token by providing a token name.<br>
+4.  Log in to [https://analyzer.integralzone.com/](https://analyzer.integralzone.com/). Click on your Profile icon and navigate to **`My Account`**. Select the **`Security`** tab and generate a new token by providing a token name.\
+    &#x20;
 
-    <figure><img src="../../../../.gitbook/assets/sonar-cloud-generate-token.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/sonar-cloud-generate-token (1).png" alt=""><figcaption></figcaption></figure>
 5. Go to **`Window`** -> **`Preferences`** -> **`IZ Preferences`**, provide the `Service Url` and enter the access token generated in the previous step for the `Access Token` field. `Service Url` for cloud users will be [https://analyzer.integralzone.com/](https://analyzer.integralzone.com/) and for on-premises installations, please use your organization-specific URL.
    1. Click on **`Test Connection`** to ensure connection is successful.
    2. Click on **`Sync Metadata`** to sync the `Organization` and available `Quality Profiles` -
       1. `Organization` -> Organization feature is applicable only if connecting to IZ Analyzer cloud.
-      2.  `Quality Profiles` -> Choose the required Quality Profile to sync the rules from server. If none of the Quality Profiles are selected, default one will be used.<br>
+      2.  `Quality Profiles` -> Choose the required Quality Profile to sync the rules from server. If none of the Quality Profiles are selected, default one will be used. <br>
 
           <figure><img src="../../../../.gitbook/assets/studio-iz-preferences.png" alt=""><figcaption></figcaption></figure>
    3. Choose **`Apply`** and Select **`Apply and Close`**

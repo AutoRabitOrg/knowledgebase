@@ -1,4 +1,4 @@
-# Scheduling Scans
+# Scheduling External Repositories
 
 ## Scheduling Scans For External Repositories
 
@@ -10,12 +10,13 @@
 4. External Sources can either be -
    1. Bitbucket
    2. GitHub
-   3.  Anypoint Design Center<br>
+   3.  Anypoint Design Center <br>
 
-       <figure><img src="../../../../../.gitbook/assets/image (2570).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (2571).png" alt=""><figcaption></figcaption></figure>
 5. Select the required schedule. Schedule can either be -
    1. One Time
-   2.  Recurring<br>
+   2.  Recurring\
+       &#x20;
 
        <figure><img src="../../../../../.gitbook/assets/image (2572).png" alt=""><figcaption></figcaption></figure>
 
@@ -27,14 +28,16 @@
 4. External Sources can either be -
    1. Bitbucket
    2. GitHub
-   3.  Anypoint Design Center<br>
+   3.  Anypoint Design Center\
+       &#x20;
 
        <figure><img src="../../../../../.gitbook/assets/image (2570).png" alt=""><figcaption></figcaption></figure>
 5. Select the required schedule. Schedule can either be -
    1. One Time
-   2.  Recurring<br>
+   2.  Recurring\
+       &#x20;
 
-       <figure><img src="../../../../../.gitbook/assets/image (2572).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (2573).png" alt=""><figcaption></figcaption></figure>
 
 ### See Also
 

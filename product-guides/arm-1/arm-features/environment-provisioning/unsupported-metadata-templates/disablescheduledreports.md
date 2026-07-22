@@ -15,7 +15,7 @@ The **DisableScheduledReports** template allows users to delete scheduled report
    * A **Test Case Name** is auto-generated.
    * Click **Add** to insert custom test data.
    * To define the scheduled report(s) for deletion:
-     * Click the add icon (![Add Icon](<../../../../../.gitbook/assets/image (58).png>)).
+     * Click the add icon (![Add Icon](<../../../../../.gitbook/assets/image (64).png>)).
      * Enter the report job in the **Job Name** field under **Deleting Schedule**.
      * To add multiple schedules, click the **+** symbol and repeat the steps above.
      * Click **OK**.

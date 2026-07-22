@@ -1,4 +1,4 @@
-# Visual Studio Git Enterprise
+# Configure a Webhook in Visual Studio GIT Enterprise
 
 {% hint style="info" %}
 After the 25.3.9 release, the structure of the webhook payload URL was updated. Customers need to update the webhook URL in the repository settings of their remote repo. Some customers are still using the old webhook URL containing **autorabitrest**, which should now be replaced with api.
@@ -18,14 +18,14 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 2. Navigate to **Admin Section > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (940).png" alt="API Token creation screen in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1000).png" alt="API Token creation screen in ARM"><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Enter a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (941).png" alt="ARM webhook API token created confirmation screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1001).png" alt="ARM webhook API token created confirmation screen"><figcaption></figcaption></figure>
 
 8. Your webhook API token is now created.
 
@@ -37,18 +37,18 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 2. Navigate to the project’s **Service Hooks** page:\
    `https://{orgName}/{projectname}/settings/serviceHooks`
 
-<figure><img src="../../../../.gitbook/assets/image (993).png" alt="Service Hooks tab in Visual Studio Git settings"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1002).png" alt="Service Hooks tab in Visual Studio Git settings"><figcaption></figcaption></figure>
 
 3. Click **Create Subscription**.
 4. The wizard will list all services available for integration.
 
-<figure><img src="../../../../.gitbook/assets/image (994).png" alt="Integration services selection wizard" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1003).png" alt="Integration services selection wizard" width="563"><figcaption></figcaption></figure>
 
 5. Click **Next** to view a list of trigger events. Select a trigger and set filters as needed.
 
-<figure><img src="../../../../.gitbook/assets/image (995).png" alt="List of webhook trigger events in Visual Studio Git"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1004).png" alt="List of webhook trigger events in Visual Studio Git"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (996).png" alt="Filter configuration options for webhook events"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1005).png" alt="Filter configuration options for webhook events"><figcaption></figcaption></figure>
 
 6. Enter the **Payload URL**, which is the endpoint to receive webhook POST requests. Use the URL format:
 
@@ -60,7 +60,7 @@ Example:\
 * **Username:** Your AutoRABIT login username
 * **Password:** Webhook API Token from ARM
 
-<figure><img src="../../../../.gitbook/assets/image (997).png" alt="Authentication setup for webhook in Visual Studio Git"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1006).png" alt="Authentication setup for webhook in Visual Studio Git"><figcaption></figcaption></figure>
 
 8. Re-enter your AutoRABIT username and API token to authenticate.
 
@@ -70,11 +70,11 @@ Example:\
 
 9. Confirm your settings, test the subscription, and finish the wizard.
 
-<figure><img src="../../../../.gitbook/assets/image (998).png" alt="Service hook test and confirmation screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1007).png" alt="Service hook test and confirmation screen" width="563"><figcaption></figcaption></figure>
 
 10. Click **Finish**. The new webhook will be listed under **Service Hooks**.
 
-<figure><img src="../../../../.gitbook/assets/image (999).png" alt="List of active service hooks in Visual Studio Git"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1008).png" alt="List of active service hooks in Visual Studio Git"><figcaption></figcaption></figure>
 
 11. After a build is triggered via webhook and completes successfully, refresh the tab to verify success. Use the webhook history to review trigger events and results.
 
@@ -85,7 +85,7 @@ Example:\
 Define a pattern to associate commits with ALM stories.\
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image (952).png" alt="Smart commit pattern configuration screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1009).png" alt="Smart commit pattern configuration screen" width="563"><figcaption></figcaption></figure>
 
 To configure a webhook in your repository:
 

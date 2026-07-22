@@ -2,15 +2,15 @@
 
 “Updating Salesforce Data” allows users to modify existing records in a Salesforce org using the DataLoader module. This feature enables bulk updates to field values through structured data uploads, making it easier to manage and maintain large volumes of records efficiently.
 
-Example: If multiple Account records require updates to fields such as Industry, Status, or Ownership, users can prepare a data file with the updated values and execute a bulk update instead of manually editing each record individually.
+Example:If multiple Account records require updates to fields such as Industry, Status, or Ownership, users can prepare a data file with the updated values and execute a bulk update instead of manually editing each record individually.
 
 This option is useful in the following scenarios:
 
-* Performing bulk updates to existing Salesforce records.
-* Correcting or standardizing field values across large datasets.
-* Updating data after business or process changes.
-* Maintaining data accuracy and consistency at scale.
-* Reducing manual effort when handling large record volumes.
+*  Performing bulk updates to existing Salesforce records.
+*  Correcting or standardizing field values across large datasets.
+*  Updating data after business or process changes.
+*  Maintaining data accuracy and consistency at scale.
+*  Reducing manual effort when handling large record volumes.
 
 **Step-By-Step Guide:**
 
@@ -23,7 +23,7 @@ This option is useful in the following scenarios:
 
     <figure><img src="../../../../../.gitbook/assets/Update - 3.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/Update - 4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Update - 4 (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/Update - 5.png" alt=""><figcaption></figcaption></figure>
 3. After selecting the required object, click **Next** to proceed to the **Field Mapping** section.
@@ -63,10 +63,10 @@ This option is useful in the following scenarios:
 
     <figure><img src="../../../../../.gitbook/assets/Update - 14.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/Update - 15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Update - 15 (3).png" alt=""><figcaption></figcaption></figure>
 14. On setting up the required schedule, click on "Next" to move to the "Process Details" section of the flow
 
-    <figure><img src="../../../../../.gitbook/assets/Update - 16 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Update - 16 (2).png" alt=""><figcaption></figcaption></figure>
 15. To assign a job to a group, select a group from the list or create a new group by clicking on the "+" icon
 16. For faster processing of the records, use the "BULK API" option.
 
@@ -103,7 +103,7 @@ This option is useful in the following scenarios:
     <figure><img src="../../../../../.gitbook/assets/Update - 23.png" alt=""><figcaption></figcaption></figure>
 27. Cick on the magnifying glass icon under the respective "Success & Failure" sections to observe the actual "Success & Failure" records.
 
-    <figure><img src="../../../../../.gitbook/assets/Update - 23.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Update - 23 (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/Update - 24.png" alt=""><figcaption></figcaption></figure>
 28. Click on the ellipses icon to observe the job optoins.
@@ -121,3 +121,6 @@ This option is useful in the following scenarios:
     <figure><img src="../../../../../.gitbook/assets/Update - 29.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/Update - 30.png" alt=""><figcaption></figcaption></figure>
+
+
+

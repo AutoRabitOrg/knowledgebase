@@ -14,7 +14,7 @@ To create this template, follow the below steps:
 8.  On the next screen, you'll notice that a **Test Case Name** appears by default. Click the **Add** button to add the custom test data. Fill in the required information in the fields below.
 
     * Enter the **User Name, Role of User,** and **Profile Name.**
-    * To Enable the user setting, Click on![](<../../../../../.gitbook/assets/image (58).png>)icon.
+    * To Enable the user setting, Click on![](<../../../../../.gitbook/assets/image (83).png>)icon.
     * Enter the Permission Setting Name and check the **Active** checkbox to activate this.
     * You can even add multiple user settings for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.
     * Click **OK**. Once you are finished, click **Save** to save this page.

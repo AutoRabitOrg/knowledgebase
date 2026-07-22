@@ -72,7 +72,7 @@ Resolved an error where creating a new version for an existing feature failed wi
 
 **Release Date: 28 June 2026**
 
-#### Latest Templates and Versions Sorting in CI Jobs Features Dropdown <a href="#latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172" id="latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172"></a>
+#### Latest Templates and Versions Sorting in CI Jobs Features Dropdown  <a href="#latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172" id="latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172"></a>
 
 The **Features** template list and the related **Version/Versions** dropdown in CI Jobs and Feature Deployments now display the most recently changed items first. This allows users to quickly locate and select the latest updated template and version without scrolling through the entire list.
 
@@ -100,7 +100,7 @@ Fixed an issue where a successful **VC-to-VC commit** was followed by a deployme
 
 #### Custom Field Exclusion for Cleaner nCino Commits and Deployments <a href="#custom-field-exclusion-for-cleaner-ncino-commits-and-deployments" id="custom-field-exclusion-for-cleaner-ncino-commits-and-deployments"></a>
 
-Users can now exclude unwanted Salesforce system fields during nCino commit and deployment review — reducing noise in pull requests and keeping change reviews focused on meaningful business changes.
+Users can now exclude unwanted Salesforce system fields during nCino commit and deployment review — reducing noise in pull requests and keeping change reviews focused on meaningful business changes.&#x20;
 
 #### Rollback Enabled for Partially Successful Deployments <a href="#rollback-enabled-for-partially-successful-deployments" id="rollback-enabled-for-partially-successful-deployments"></a>
 
@@ -112,7 +112,7 @@ Resolved a blocking `undefined` error that appeared when navigating to CI Jobs i
 
 #### Improved Notification Email Visibility in Preview Screens <a href="#improved-notification-email-visibility-in-preview-screens" id="improved-notification-email-visibility-in-preview-screens"></a>
 
-Long notification email addresses in the Deployment and CI Jobs Preview screens now wrap properly instead of being truncated, making it easier to verify notification recipients.
+Long notification email addresses in the Deployment and CI Jobs Preview screens now wrap properly instead of being truncated, making it easier to verify notification recipients.&#x20;
 
 ***
 
@@ -164,9 +164,9 @@ Introduced a configurable multi-level approval workflow for **nCino Data Deploym
 
     **CI JOB Approvals Flow**
 
-    <figure><img src="../../../.gitbook/assets/7 (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/7 (6).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/8 (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/8 (7).png" alt=""><figcaption></figcaption></figure>
 
     **Feature Deployment Flow**
 
@@ -218,7 +218,7 @@ Code refactoring for the Create Feature module in the New UI, improving maintain
 
 **Release Date:** **10 May 2026**
 
-**Create Branch from Feature Deployment**
+**Create Branch from Feature Deployment**&#x20;
 
 Users can now create a new branch in Version Control directly from the Feature Deployment screen via a new "+" button next to the Branch field. This eliminates the need to navigate to Admin → VC Repos, reducing context switching.
 
@@ -375,7 +375,7 @@ Resolved an issue where enabling a batch size during the Screens template deploy
 
 #### Forms Manager Template Deployment <a href="#forms-manager-template-deployment" id="forms-manager-template-deployment"></a>
 
-Resolved an issue where Forms Manager template deployments remained stuck in an _In Progress_ state by correcting the handling of self-referenced records during entry object data retrieval.
+Resolved an issue where Forms Manager template deployments remained stuck in an _In Progress_ state by correcting the handling of self-referenced records during entry object data retrieval.&#x20;
 
 ***
 
@@ -426,3 +426,22 @@ Improved the performance of the DataLoader Extract file download process. The do
 #### **nCino Object Migration with Rollback – Stability Fix** <a href="#ncino-object-migration-with-rollback-stability-fix" id="ncino-object-migration-with-rollback-stability-fix"></a>
 
 Resolved an issue where nCino object migrations failed during rollback-enabled feature deployments. The rollback process has been stabilized to prevent errors and ensure successful execution during rollback builds.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

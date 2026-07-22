@@ -1,6 +1,6 @@
 # HashiCorp Vault
 
-### What is HashiCorp Vault?
+### What is HashiCorp Vault?&#x20;
 
 HashiCorp Vault is a secrets management solution that brokers access for both humans and machines, through programmatic access, to systems. Secrets can be stored, dynamically generated, and in the case of encryption, keys can be consumed as a service without the need to expose the underlying key materials.
 
@@ -23,7 +23,7 @@ HashiCorp Vault is a secrets management solution that brokers access for both hu
 
 #### Install Consul
 
-Consul is a highly scalable and distributed service discovery and configuration system. You can coordinate Consul Storage as a backend to Vault to ensure the software is highly available and fault-tolerant.
+Consul is a highly scalable and distributed service discovery and configuration system. You can coordinate Consul Storage as a backend to Vault to ensure the software is highly available and fault-tolerant.&#x20;
 
 The first step is to install and configure Consul on Ubuntu 18.04.
 
@@ -62,6 +62,8 @@ The first step is to install and configure Consul on Ubuntu 18.04.
     WantedBy=multi-user.target
     ```
 
+
+
     <figure><img src="../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Save** and **exit** the file.
 4.  Then, move on to creating a configuration directory and adding a new **.json** file in it: ActionScript
@@ -86,7 +88,7 @@ The first step is to install and configure Consul on Ubuntu 18.04.
     ```
 6. Make sure to save before exiting the file.
 7. For the changes to occur, you must reload, start, and enable the consul service.
-8. Reload the system with the command: **systemctl daemon-reload**
+8. Reload the system with the command: **systemctl daemon-reload** &#x20;
 9. Run the command for **starting** the service: **systemctl start consul**
 10. Then, **enable** it by using: **systemctl enable consul**
 11. Verify that the service is up and running with the command: **journalctl –f –u consul**
@@ -100,7 +102,7 @@ With Consul in place, move on to installing Vault on your Ubuntu 18.04 system.
 1. Go to [Vault’s official website](https://www.vaultproject.io/), click on **Download**, and find the available package for Linux distributions.
 2. Right-click on the **Download** icon and copy the link location.
 
-<figure><img src="../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
 
 3. Using the wget command, download the package by pasting the link location copied in the previous step: **wget** [https://releases.hashicorp.com/vault/1.2.3/vault\_1.2.3\_linux\_amd64.zip](https://releases.hashicorp.com/vault/1.2.3/vault_1.2.3_linux_amd64.zip)
 4. Next, unzip the package using the following command: **unzip vault\_1.2.3\_linux\_amd64.zip**
@@ -246,7 +248,7 @@ As you have already installed Consul to serve as the back-end storage, you’ll 
 
 <figure><img src="../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Vault Server**
+&#x20;**Vault Server**
 
 Vault operates as a client/server application. The Vault server is the only piece of the Vault architecture that interacts with the data storage and backends. All operations are done via the Vault CLI interact with the server over a TLS connection.
 
@@ -304,12 +306,12 @@ The unseal process is done by running vault operator unseal or via the API. This
 
 <figure><img src="../../../.gitbook/assets/image (45) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### Log in to the Vault Server
+#### &#x20;Log in to the Vault Server
 
 Authenticate by using root key:
 
-| <p><strong>vault login &#x3C;Initial_Root_Token></strong></p><p>or,</p><p><strong>set VAULT_TOKEN=&#x3C;Initial_Root_Token></strong></p> |
-| ---------------------------------------------------------------------------------------------------------------------------------------- |
+| <p><strong>vault login &#x3C;Initial_Root_Token></strong></p><p>or, </p><p><strong>set VAULT_TOKEN=&#x3C;Initial_Root_Token></strong></p> |
+| ----------------------------------------------------------------------------------------------------------------------------------------- |
 
 <figure><img src="../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -327,7 +329,7 @@ An existing version 1 kv can be upgraded to a version 2 KV store with the CLI co
 <figure><img src="../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note:** Above all steps are one-time setup only.
+**Note:** Above all steps are one-time setup only.&#x20;
 {% endhint %}
 
 #### Commands to add or get secrets from Vault

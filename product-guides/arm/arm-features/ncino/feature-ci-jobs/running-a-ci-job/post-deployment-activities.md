@@ -21,7 +21,7 @@ Using this feature, users can perform the deployments to the Orgs selected on th
 
 3. Click on the ‘Build Now’ button to trigger the build.
 
-<figure><img src="../../../../../../.gitbook/assets/image (24) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (25) (4).png" alt=""><figcaption></figcaption></figure>
 
 4. Upon completion of the CI Job deployment, the post-deployment activities will be triggered, as shown in the following figure.
 

@@ -2,15 +2,15 @@
 
 <h2 align="center">Modifying an Existing IAM Policy to Add S3 Bucket Versioning Permissions</h2>
 
-<p align="center">s3:GetBucketVersioning | s3:PutBucketVersioning | s3:ListBucketVersions</p>
+<p align="center">s3:GetBucketVersioning  |  s3:PutBucketVersioning  |  s3:ListBucketVersions</p>
 
 ## 1. Overview
 
 This guide shows how to modify an existing IAM policy in the AWS Management Console by adding the following Amazon S3 permissions to it:
 
-1. s3:GetBucketVersioning — read the versioning state of a bucket
-2. s3:PutBucketVersioning — enable or suspend versioning on a bucket
-3. s3:ListBucketVersions — list object versions in a bucket
+1. s3:GetBucketVersioning  — read the versioning state of a bucket
+2. s3:PutBucketVersioning  — enable or suspend versioning on a bucket
+3. s3:ListBucketVersions  — list object versions in a bucket
 
 {% hint style="info" %}
 Note: The screenshots in this document are illustrative recreations of the AWS console. Names such as my-s3-access-policy and my-example-bucket are placeholders — replace them with your actual policy and bucket names.
@@ -42,7 +42,7 @@ In the search box, type the policy name and select it from the results list by c
 
 On the policy detail page, make sure the Permissions tab is selected, then click Edit.
 
-<figure><img src="../../../../.gitbook/assets/image (2579).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2580).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>Policy detail page — Permissions tab → Edit (illustrative)</em></p>
 
@@ -69,3 +69,4 @@ Choose Next, review the summary, and click Save changes. IAM saves the update as
 <figure><img src="../../../../.gitbook/assets/image (2582).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>Review and save — the change becomes the default policy version (illustrative)</em></p>
+

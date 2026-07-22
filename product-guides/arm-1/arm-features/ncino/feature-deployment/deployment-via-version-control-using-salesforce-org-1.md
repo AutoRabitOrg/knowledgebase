@@ -5,8 +5,14 @@ This section covers the deployment of **nCino metadata and data** through **vers
 1. The "Feature Deployment" can be triggered in the following way
    1.  Click on the "Create" drop-down to observe the options to select the "Feature Deployment" as option
 
-       <figure><img src="../../../../../.gitbook/assets/1 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
+
+
+       <figure><img src="../../../../../.gitbook/assets/1 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
+
+
 2.  Click on the "Deployment History" under the nCino tab to access the "Create feature deployment"
+
+
 
     <figure><img src="../../../../../.gitbook/assets/1.1 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 3.  Upon clicking on the **"Create Feature Deployment" or** selecting the **"Feature Deployment," the** Source Type screen will appear—choose from the available options to proceed.
@@ -22,18 +28,18 @@ This section covers the deployment of **nCino metadata and data** through **vers
    4. **Version Control**: Select the version control type here
    5. **Repository**: Select the repository here
    6. **Branch**: Select the required branch here
-   7. **VC Fetch Type**: Select the option to perform the deployment.
+   7. **VC Fetch Type**: Select the option to perform the deployment.&#x20;
       1. The following options are available at "VC Fetch Type":
-         1. Entire Branch
+         1. Entire Branch&#x20;
          2.  Single Revision
 
              <figure><img src="../../../../../.gitbook/assets/2.0 - Deploy Using SF and VC (1).png" alt=""><figcaption></figcaption></figure>
       2.  **Entire Branch**: This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **feature/template** and **version when selecting** the entire branch option.
 
-          <figure><img src="../../../../../.gitbook/assets/3- Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../../.gitbook/assets/3- Deploy Using SF and VC (2).png" alt=""><figcaption></figcaption></figure>
       3.  **Single Revision**: This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
 
-          <figure><img src="../../../../../.gitbook/assets/4 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../../.gitbook/assets/4 - Deploy Using SF and VC (1).png" alt=""><figcaption></figcaption></figure>
 
           <figure><img src="../../../../../.gitbook/assets/4.0 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
       4.  Observe the values selected at the revision
@@ -41,9 +47,11 @@ This section covers the deployment of **nCino metadata and data** through **vers
           <figure><img src="../../../../../.gitbook/assets/4.1 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
 6. Based on the selected revisions, the respective "feature versions" will be displayed.
 7. **`NOTE`:**
-   1. **`No manual merge conflict resolution is supported.`**` `` ``In case of data conflicts, the dataset collected from the source environment will be committed by default, even if corresponding data already exists in the target branch. `
-   2. **`Destructive changes are currently not supported.`**` `` ``If a record is deleted in the source environment after being committed to Version Control, subsequent commits will not remove that record from the branch. The previously committed record will remain intact. `
+   1. **`No manual merge conflict resolution is supported.`**` ``In case of data conflicts, the dataset collected from the source environment will be committed by default, even if corresponding data already exists in the target branch.`
+   2. **`Destructive changes are currently not supported.`**` ``If a record is deleted in the source environment after being committed to Version Control, subsequent commits will not remove that record from the branch. The previously committed record will remain intact.`
 8.  Click on the "Next" to continue to the "Destination" section of the Feature Deployment flow
+
+
 
     <figure><img src="../../../../../.gitbook/assets/Screenshot 2026-02-27 at 5.54.35 PM.png" alt=""><figcaption></figcaption></figure>
 9.  You can configure several options for your objects before proceeding with a deployment or commit, including:
@@ -52,6 +60,8 @@ This section covers the deployment of **nCino metadata and data** through **vers
     * **Applied Filters**
 
     <figure><img src="../../../../../.gitbook/assets/2 - FD Using VC SF.png" alt=""><figcaption></figcaption></figure>
+
+
 10. **External ID Mappings**
 
     This section allows you to use an **External ID** instead of a Salesforce **Record ID** to establish relationships between records during an **Upsert** operation.\
@@ -59,6 +69,8 @@ This section covers the deployment of **nCino metadata and data** through **vers
 
     * **Source Field**: Select the source field whose values will be used to match and populate the destination’s External ID field.
     * **Destination Field**: Choose a field from the destination org that is marked as an External ID and holds **unique values** across all records.
+
+
 
     <figure><img src="../../../../../.gitbook/assets/3 - FD Using VC SF.png" alt=""><figcaption></figcaption></figure>
 
@@ -83,10 +95,12 @@ Please note that **AutoRABIT-defined External ID fields** are **not supported** 
 10. **Applied Filters**: If any filters have been applied to the objects, they will be displayed in this section. You can modify an existing filter at any time by selecting **Edit Filter**.
 
     <figure><img src="../../../../../.gitbook/assets/4 - FD Using VC SF.png" alt=""><figcaption></figcaption></figure>
+
+
 11. On completing the required selection click next to continue to the "Job Settings" section of the "Feature Deployment" flow.
 12. Observe the following screenshot for the "Deployment Options" available on this section:
 
-    <figure><img src="../../../../../.gitbook/assets/7 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/7 - Deploy Using SF and VC (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Disable Workflow Rules:** This option will deactivate the workflow rules associated with objects part of the deployment
 * **Use Bulk API (Batch API will be used if the option is not enabled):** You can transfer bulk records in a go from the source and destination org.
@@ -94,7 +108,7 @@ Please note that **AutoRABIT-defined External ID fields** are **not supported** 
   * **Enable UTF-8** if your data contains **only English alphabets**.
   * **Disable UTF-8** if your data includes **non-English characters** to avoid encoding issues.
   * UTF-8 should be **enabled by default**, aligning with Salesforce’s recommended encoding standards.
-* **Automap User/Owner Data:**
+* **Automap User/Owner Data:**&#x20;
 * **Disable Validation Rules:** Select this option to temporarily deactivate validation rules on objects included in the deployment. This helps ensure smoother deployments without interruptions caused by rule enforcement.
 * **Insert/Update with Null Values:** When enabled, this option allows fields with `null` values in the source org to be inserted or updated as `null` in the destination org. It ensures data consistency by reflecting blank or cleared values during migration.
 * **Enable Rollback:** Enable this option to allow rollback of the deployment, if needed. Only components explicitly marked for **“Rollback”** during deployment will be eligible for rollback after completion.
@@ -105,5 +119,9 @@ Please note that **AutoRABIT-defined External ID fields** are **not supported** 
 14. Clicking on ether of the deployment options available "**Create Dataset" or "Create Dataset Commit & Deploy"**, the flow will be redirected to the "Deployment History" page.
 
     <figure><img src="../../../../../.gitbook/assets/8 - Deploy Using SF and VC.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 #### &#x20;<a href="#deployment-option" id="deployment-option"></a>

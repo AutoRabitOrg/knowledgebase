@@ -2,8 +2,6 @@
 
 ## ARM **Release Notes 26.3.4**
 
-**Release Date:**&#x20;
-
 #### Provar CI Job Execution Fix (New UI) <a href="#provar-ci-job-execution-fix-new-ui" id="provar-ci-job-execution-fix-new-ui"></a>
 
 Fixed an issue where CI Jobs configured by selecting the **Provar Plugin** before entering Version Control details failed to execute due to missing credential and test file information. The configuration flow has been corrected so Provar jobs execute successfully regardless of the order in which the Provar and Version Control options are selected.

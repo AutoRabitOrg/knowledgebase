@@ -1,4 +1,4 @@
-# Destination\_ORG
+# Destination ORG
 
 ## Reviewing destination org connection status and org details from the AutoRABIT Vault Dashboard
 
@@ -16,7 +16,7 @@ The Dashboard shows both Source Org and Destination Org connection indicators ne
 
 The rest of the Dashboard continues to show key AutoRABIT Vault areas, including Backup Configs, Backup Jobs, Restore Jobs, Replicate Jobs, storage usage, and Recommended Actions. These sections provide the next operational paths after org registration is complete.
 
-![](<../../.gitbook/assets/Unknown image (236)>)
+<figure><img src="../../.gitbook/assets/1 (9).png" alt=""><figcaption></figcaption></figure>
 
 ## Review Destination Org Details
 
@@ -24,7 +24,7 @@ Selecting the Destination ORG indicator opens the Destination org details dialog
 
 This information helps confirm that AutoRABIT Vault is connected to the intended destination org before backup, restore, replication, or related data operations proceed. The displayed values reflect the authenticated Salesforce destination org and are not edited from this dialog.
 
-![](<../../.gitbook/assets/Unknown image (237)>)
+<figure><img src="../../.gitbook/assets/2 (7).png" alt=""><figcaption></figcaption></figure>
 
 ## Close the Details Dialog
 

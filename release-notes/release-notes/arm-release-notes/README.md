@@ -6,37 +6,25 @@
 
 Fixed an issue where CI Jobs configured by selecting the **Provar Plugin** before entering Version Control details failed to execute due to missing credential and test file information. The configuration flow has been corrected so Provar jobs execute successfully regardless of the order in which the Provar and Version Control options are selected.
 
-***
-
 #### GitHub Enterprise Pull Request Webhook Fix <a href="#github-enterprise-pull-request-webhook-fix" id="github-enterprise-pull-request-webhook-fix"></a>
 
 Fixed an issue where CI Jobs configured to trigger on Pull Request events in GitHub Enterprise were not starting automatically, even though the webhook payload was successfully received. The webhook processing logic has been updated to correctly identify the configured repository and process Pull Request events, ensuring CI Jobs are triggered as expected.
-
-***
 
 #### Deployment History Search Fix New UI <a href="#deployment-history-search-fix" id="deployment-history-search-fix"></a>
 
 Fixed an issue where searching by **Deployment Label** in the Deployment History page did not return matching deployment records, even though the deployments were present in the history. The search logic has been updated to use the correct deployment label field, ensuring accurate results when searching by full or partial deployment label names.
 
-***
-
 #### Scratch Org ALM Mapping Validation Fix <a href="#scratch-org-alm-mapping-validation-fix" id="scratch-org-alm-mapping-validation-fix"></a>
 
 Fixed an issue where creating a Scratch Org failed with the error **"Please fill in all required ALM mapping fields"** even when all required mappings were configured. The validation logic has been updated to correctly recognize ServiceNow ALM mappings, allowing users to proceed with Scratch Org creation successfully.
-
-***
 
 #### Org Synchronization Deployment Navigation Fix (New UI) <a href="#org-synchronization-deployment-navigation-fix-new-ui" id="org-synchronization-deployment-navigation-fix-new-ui"></a>
 
 Fixed an issue where initiating an Org Synchronization deployment did not automatically redirect users to the Deployment History page. The navigation flow has been updated to redirect users after deployment initiation, and automatic log polling has been added so deployment progress and status are displayed without requiring manual page refreshes.
 
-***
-
 #### Automatic OAuth Token Refresh for External Connected Apps <a href="#automatic-oauth-token-refresh-for-external-connected-apps" id="automatic-oauth-token-refresh-for-external-connected-apps"></a>
 
 Enhanced Salesforce External Connected App authentication to automatically refresh expired OAuth access tokens for newly registered Salesforce organizations. When an access token expires, ARM now uses the stored refresh token to obtain a new access token and automatically retries the original Salesforce API request without requiring manual reauthorization.
-
-***
 
 #### AiAuthoringBundle Merge Validation Fix <a href="#aiauthoringbundle-merge-validation-fix" id="aiauthoringbundle-merge-validation-fix"></a>
 

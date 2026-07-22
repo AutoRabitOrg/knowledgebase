@@ -2,6 +2,18 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
+## AutoRABIT Vault Release Notes 26.2.2
+
+**Release Date: 22 July 2026**
+
+#### OAuth Client Credentials Flow for Salesforce Org Connection <a href="#dt-13561-oauth-client-credentials-flow-for-salesforce-org-connection" id="dt-13561-oauth-client-credentials-flow-for-salesforce-org-connection"></a>
+
+Vault now supports connecting Salesforce orgs using the OAuth Client Credentials Flow. Administrators can authenticate Vault with Salesforce through a connected app without requiring interactive user login, enabling seamless machine-to-machine integration for automated backup, restore, and masking operations.
+
+#### Support for Salesforce Refresh Token Rotation (Local External Client Apps) <a href="#dt-13707-support-for-salesforce-refresh-token-rotation-local-external-client-apps" id="dt-13707-support-for-salesforce-refresh-token-rotation-local-external-client-apps"></a>
+
+Vault now handles Salesforce's Refresh Token Rotation for Local External Client Apps (ECAs). When Salesforce issues a new refresh token during an access token refresh, Vault securely persists the updated token and continues authentication without manual intervention. This ensures uninterrupted operations and compliance with Salesforce's latest OAuth security requirements.
+
 ## AutoRABIT Vault Release Notes 26.2.1
 
 **Release Date: 15 July 2026**

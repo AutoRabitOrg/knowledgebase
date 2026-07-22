@@ -18,7 +18,7 @@ The workflow starts from the Restore module. The Salesforce Orgs and Restore Sou
 
 After selecting the Salesforce org, restore source, and configuration, Get Details retrieves the available backup records. The backup list displays the label, configuration, date and time, expiry date, record count, type, and status. A backup record is selected before starting a restore action.
 
-![](<../../.gitbook/assets/Unknown image (1) (1) (1)>)
+<figure><img src="../../.gitbook/assets/2 (11).png" alt=""><figcaption></figcaption></figure>
 
 ## Start an EZ Restore
 
@@ -32,11 +32,11 @@ The Restore Summary opens with the generated restore label, batch size, email no
 
 After submission, AutoRABIT Vault starts creating the restore job and displays a processing state. The restore action remains in progress until the job record is created and made available in the restore history list.
 
-![](<../../.gitbook/assets/Unknown image (4) (1) (1)>)
+<figure><img src="../../.gitbook/assets/5 (10).png" alt=""><figcaption></figcaption></figure>
 
 Once the restore job is created, AutoRABIT Vault displays a confirmation message. OK closes the message and returns to the restore list.
 
-![](<../../.gitbook/assets/Unknown image (5) (1) (1)>)
+<figure><img src="../../.gitbook/assets/6 (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Monitor the Restore Job
 
@@ -56,7 +56,7 @@ When the job completes, the restore history shows the final duration, successful
 
 Selective Restore begins from the same backup retrieval flow. The backup record is selected, and Selective Restore opens the data selection workflow for controlled restore execution. This option supports a narrower restore scope by object, related objects, records, and fields.
 
-![](<../../.gitbook/assets/Unknown image (9) (1)>)
+<figure><img src="../../.gitbook/assets/10 (4).png" alt=""><figcaption></figcaption></figure>
 
 The Data step lists the objects available in the selected backup. The Objects with records toggle limits the list to objects that contain backed-up records. The object row provides controls for schema review, child object inclusion, common child object selection, records, selection criteria, and selected fields. Review and Restore becomes available after the required restore scope is selected.
 
@@ -109,7 +109,3 @@ AutoRABIT Vault confirms successful restore job creation after submission. The c
 The restore history list shows the latest restore jobs and their processing outcomes. Completed rows display duration, success records, failed records, status, and job actions for follow-up review.
 
 ![](<../../.gitbook/assets/Unknown image (21)>)
-
-## Result
-
-At the end of the workflow, AutoRABIT Vault creates a restore job from the selected backup source. EZ Restore restores the selected backup using the full available scope, while Selective Restore creates a controlled restore job based on object, relationship, record, and field selections. The restore history provides visibility into progress, completion status, record counts, failures, and job-level actions.

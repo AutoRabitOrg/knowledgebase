@@ -7,7 +7,7 @@
 CodeScan Self-Hosted version 26.1.0 (Eagle v7) is comprised of the following 23 components:
 
 * 1 New Feature
-* 4 New Rules
+* 5 New Rules
 * 12 Rule Enhancements
 * 6 Fixes
 
@@ -166,6 +166,45 @@ _Plain text value detected in parameterValue field. Use a dynamic merge field re
 **Outcome**&#x20;
 
 Helps prevent sensitive credentials such as API keys, client IDs, and authentication tokens from being exposed in source control.&#x20;
+
+#### **5. Avoid Using Unfiled Public Folders Rule**
+
+**Rule ID:** _sf-meta:AvoidUnfiledPublic_
+
+**Description**
+
+This rule detects when Salesforce records are stored in unfiled public folders (identified by the path "unfiled$public").
+
+Unfiled public folders pose several security and governance risks:
+
+* **Lack of Organization**: Records in unfiled public folders are difficult to manage, locate, and maintain, leading to poor data governance
+* **Excessive Access**: Public folders are accessible to all users in the organization by default, potentially exposing sensitive data to unauthorized users
+* **No Access Controls**: Unfiled public folders typically lack granular permission settings, making it impossible to restrict access based on role or profile
+* **Compliance Risk**: Storing records in unsecured, publicly accessible locations may violate data privacy regulations (GDPR, HIPAA, etc.)
+* **Audit Trail Issues**: Unfiled public folders make it difficult to track who accessed or modified records
+
+Best practices recommend organizing all Salesforce records into properly structured folders with:
+
+* Clear naming conventions
+* Appropriate sharing settings
+* Role-based access controls
+* Regular audits and cleanup processes
+
+Move metadata from unfiled public folders to dedicated folders with restricted access aligns to business requirements and the principle of least privilege.
+
+**Type**: Vulnerability
+
+**Message**: Metadata should not be stored in unfiled public folders
+
+**Tags**: **CWE**: 732\
+**Remediation**: 5 minutes
+
+Verified the newly added rule _sf-meta:AvoidUnfiledPublic_ **(Avoid Using Unfiled Public Folders**) via the following scenarios:
+
+* The rule description is visible in CodeScan and correctly explains the security and governance risks associated with storing Salesforce metadata in unfiled public folders.
+* The rule is working as expected and consistently raises violations whenever Salesforce metadata is stored under a file path containing /unfiled$public/.
+* This behavior is expected, as metadata placed in unfiled public folders can lead to unrestricted access, lack of proper organization, and potential compliance concerns.
+* No issues were observed with the rule configuration or behavior.
 
 ### Rule Enhancements&#x20;
 

@@ -82,7 +82,7 @@ Follow the defined folder structure when creating new branches in Git to maintai
 
 Refer to the attached ZIP file for the above recommended folder structure.
 
-{% file src="../../../../../.gitbook/assets/CommitStructure (1).zip" %}
+{% file src="../../../../../.gitbook/assets/CommitStructure.zip" %}
 
 ### Individual File Structures
 
@@ -116,8 +116,6 @@ The configuration files—`manifest.yaml`, `project-def`, the corresponding data
     }
     ```
 3.  1\_nFORCE\_\_Brand\_\_c.json
-
-
 
     ```json
     {
@@ -179,8 +177,3 @@ The configuration files—`manifest.yaml`, `project-def`, the corresponding data
       "query": "Select Id From nFORCE__Brand__c Where Id \u003d \u0027a1uKa000000NwxxIAC\u0027"
     }
     ```
-
-
-
-
-

@@ -1,4 +1,4 @@
-# User Account
+# User Accounts
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -49,7 +49,7 @@ To add notifications for a specific project, select **`Add a Project`** and **`S
 * Issues resolved as false positive or won't fix
 * New issues
 
-<figure><img src="../../../../.gitbook/assets/Notification Per Project 1.5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Notification Per Project 1.5.png" alt=""><figcaption></figcaption></figure>
 
 ### Projects <a href="#projects" id="projects"></a>
 

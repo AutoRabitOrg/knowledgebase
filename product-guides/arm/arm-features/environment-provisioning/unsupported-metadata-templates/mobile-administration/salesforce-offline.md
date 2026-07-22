@@ -11,22 +11,20 @@ The **SalesforceOffline** template allows the configuration of offline settings 
 5. Provide a **template name** and a **short description**.
 6. Select the **SalesforceOffline** checkbox under **Mobile Administration**.
 7. Click **Add**.
+8.  On the next screen:
 
-8. On the next screen:
-   - A **Test Case Name**, **Object Name**, and **Offline Settings** appear by default.
-   - Click **Add** to input custom test data.
+    * A **Test Case Name**, **Object Name**, and **Offline Settings** appear by default.
+    * Click **Add** to input custom test data.
 
-   ![Salesforce Offline Setup](../../../../../../.gitbook/assets/image%20(89).png)
+    ![Salesforce Offline Setup](<../../../../../../.gitbook/assets/image (88).png>)
 
-   - To add more settings:
-     - Click the edit icon ![Edit Icon](../../../../../../.gitbook/assets/image%20(90).png)
-     - Enter the **Setting Name**.
-     - Use the **Enable/Disable** checkboxes as needed.
-     - For additional settings, click the **+** symbol and complete the new entry.
-     - Click **OK**, then **Save** to finalize this screen.
-
+    * To add more settings:
+      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (58).png>)
+      * Enter the **Setting Name**.
+      * Use the **Enable/Disable** checkboxes as needed.
+      * For additional settings, click the **+** symbol and complete the new entry.
+      * Click **OK**, then **Save** to finalize this screen.
 9. Click **Save** again to store the template.
-
 10. Once the template is successfully created, you’ll be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select your **destination org** from the dropdown and provide **email address(es)** for run notifications.

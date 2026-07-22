@@ -29,7 +29,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     <figure><img src="../../../../../.gitbook/assets/image (2584).png" alt=""><figcaption></figcaption></figure>
 
-    &#x20;                                                         _Add Filters step with the generated query_
+    _Add Filters step with the generated query_
 9.  **Building the Query from Fields**
 
     The Fields panel lists the fields available for the selected object. Selecting fields adds them to the generated query. The query editor updates automatically as selections are made.
@@ -40,7 +40,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     The Search option narrows the field list and helps locate the required field. The Select all option selects the displayed fields in the list.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2587).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2586).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center"><em>Field search and field selection</em></p>
 
@@ -48,7 +48,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     <figure><img src="../../../../../.gitbook/assets/image (2588).png" alt=""><figcaption></figcaption></figure>
 
-    &#x20;                                                        _API names displayed for selected fields_
+    _API names displayed for selected fields_
 10. **Adding and Managing Filter Conditions**
 
     The Filters section limits records returned by the query. A condition is configured by selecting the reference object, field, operator, and value. The Add Condition icon adds the condition to the filter grid.
@@ -70,21 +70,15 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
     <p align="center"><em>Multiple filter conditions added</em></p>
 
     A filter condition can be removed from the grid. Removing a condition updates the query and reflects the remaining filter logic only.
-
-    <p align="center"></p>
 11. **Applying Order By and Record Count**
 
     The Order By section controls the sorting of extracted records. Selecting the object, field, and direction adds the order-by clause to the generated query.
-
-
 
     <figure><img src="../../../../../.gitbook/assets/image (2592).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center"><em>Order By configuration</em></p>
 
     The Record Count field limits the number of records returned by the query. After a count is entered, the query updates with the corresponding limit.
-
-
 
     <figure><img src="../../../../../.gitbook/assets/image (2593).png" alt=""><figcaption></figcaption></figure>
 
@@ -93,16 +87,12 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     The Include deleted records option controls whether deleted records are considered during extraction. When enabled, the setting remains part of the query validation context.
 
-
-
     <figure><img src="../../../../../.gitbook/assets/image (2594).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center"><em>Include deleted records option enabled</em></p>
 13. **Validating the Query**
 
     Selecting Validate checks whether the generated query is valid. During validation, the screen displays a processing state while the query is evaluated.
-
-
 
     <figure><img src="../../../../../.gitbook/assets/image (2595).png" alt=""><figcaption></figcaption></figure>
 
@@ -144,7 +134,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     Selecting Switch to query builder returns the workflow to field-based query creation. Before switching, the system displays a confirmation message explaining that the existing query will be cleared and query builder options will be enabled.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2603).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2598).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center"><em>Switch to query builder confirmation</em></p>
 
@@ -187,7 +177,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
     <figure><img src="../../../../../.gitbook/assets/24 - Extract.png" alt=""><figcaption></figcaption></figure>
 26. Click the **Schedule** option to view any existing schedule configured during job creation. A new schedule can also be set at this stage, which will apply specifically to the current job.
 
-    <figure><img src="../../../../../.gitbook/assets/25 - Extract (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/25 - Extract.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/26 - Extract.png" alt=""><figcaption></figcaption></figure>
 27. To delete the job, click on the "Delete" option.
@@ -215,4 +205,3 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 33. Click on the "Success" icon to observe the success records
 
     <figure><img src="../../../../../.gitbook/assets/35 - Extract.png" alt=""><figcaption></figcaption></figure>
-

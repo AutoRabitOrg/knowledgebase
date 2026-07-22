@@ -17,7 +17,7 @@ Convert and package your version-control files to [Salesforce Metadata](https://
 1. Log in to your ARM account.
 2.  From the top navigation pane, navigate to **Create New >** [**New CI Job**](../ci-job-history.md).
 
-    <figure><img src="../../../../../.gitbook/assets/image (1229).png" alt="New CI Job button"><figcaption><p>New CI Job button</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1208).png" alt="New CI Job button"><figcaption><p>New CI Job button</p></figcaption></figure>
 3.  Choose the tile: **Package from** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/).
 
     <figure><img src="../../../../../.gitbook/assets/image (1230).png" alt="Package from Version Control tile"><figcaption><p>Package from Version Control tile</p></figcaption></figure>
@@ -31,7 +31,7 @@ Convert and package your version-control files to [Salesforce Metadata](https://
 1. Select your [**Version Control**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) **system** – ARM supports Git, SVN, and TFS.
 2. Choose the **Repository** and **Branch**.
 3. Under **Build Using**, pick one option:
-   *   **Baseline Revision** – Enter a revision manually or click **Edit** (![edit icon](<../../../../../.gitbook/assets/image (90) (1).png>)) to select it from a list.
+   *   **Baseline Revision** – Enter a revision manually or click **Edit** (![edit icon](<../../../../../.gitbook/assets/image (1232).png>)) to select it from a list.
 
        <figure><img src="../../../../../.gitbook/assets/image (1231).png" alt="Select baseline revision"><figcaption><p>Select baseline revision</p></figcaption></figure>
 
@@ -110,7 +110,7 @@ Important Notes:
 
 Send email notifications on build success or failure.
 
-<figure><img src="../../../../../.gitbook/assets/image (1224).png" alt="Notification recipient list"><figcaption><p>Notification recipient list</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1215).png" alt="Notification recipient list"><figcaption><p>Notification recipient list</p></figcaption></figure>
 
 ### Schedule <a href="#schedule" id="schedule"></a>
 

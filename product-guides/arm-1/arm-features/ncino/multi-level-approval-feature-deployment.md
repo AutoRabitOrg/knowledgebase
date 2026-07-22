@@ -10,7 +10,7 @@ The nCino Deployment Approval workflow adds controlled review to deployment and 
 
 The approval workflow begins in My Account, where deployment, data deployment, and feature commit approval settings are mapped to Salesforce orgs, repositories, and branches. The configured Level 1 approver and Level 2 approver fields define the approver groups available later in the deployment workflow. Saving these settings makes the approval levels available during nCino deployment and commit configuration.
 
-![](<../../../../.gitbook/assets/Unknown image (115)>)
+![](<../../../../.gitbook/assets/Unknown image (40)>)
 
 ## Deployment History and Workflow Entry Point
 
@@ -18,7 +18,7 @@ The approval workflow begins in My Account, where deployment, data deployment, a
 
 The Deployment History page displays deployment records with build, deploy, commit, and post deploy status indicators. The status columns provide the first operational view of whether a deployment has completed, failed, or is waiting for approval. The action menu remains the central location for reviewing build details, approval actions, notifications, and logs.
 
-![](<../../../../.gitbook/assets/Unknown image (116)>)
+![](<../../../../.gitbook/assets/Unknown image (91)>)
 
 ## Configuring Approvals During Deployment Setup
 
@@ -26,31 +26,31 @@ The Deployment History page displays deployment records with build, deploy, comm
 
 During nCino deployment configuration, the Destination step presents approval fields when the Deploy to option is enabled. The Level 1 approval field is used to select the first-level deployment approvers for the selected destination org.
 
-![](<../../../../.gitbook/assets/Unknown image (117)>)
+![](<../../../../.gitbook/assets/3 (8).png>)
 
 ### Select Level 2 deployment approvers
 
 The Level 2 approval field is configured alongside the destination org. Selecting Level 2 approvers prepares the deployment request for a second approval stage after Level 1 approval is completed.
 
-![](<../../../../.gitbook/assets/Unknown image (118)>)
+![](<../../../../.gitbook/assets/4 (8).png>)
 
 ### Configure commit approval approvers
 
 When Commit to is enabled, the commit approval fields become part of the same Destination step. The Commit level 1 approval and Commit level 2 approval fields define the commit approval path that runs along with the deployment approval path.
 
-![](<../../../../.gitbook/assets/Unknown image (119)>)
+![](<../../../../.gitbook/assets/5 (7).png>)
 
 ### Review configured approval selections
 
 After approvers are selected for deployment and commit approval levels, the Destination step displays the selected values. The approval inactivity note explains that deployment and commit approvals remaining inactive for 14 days from job creation are automatically rejected.
 
-![](<../../../../.gitbook/assets/Unknown image (120)>)
+![](<../../../../.gitbook/assets/6 (6).png>)
 
 ### Preview deployment details
 
 The Preview step consolidates source details, destination details, job settings, and approval selections before execution. This screen confirms the destination org, deployment approval levels, commit repository, commit branch, and commit approval levels before the deployment request is submitted.
 
-![](<../../../../.gitbook/assets/Unknown image (121)>)
+![](<../../../../.gitbook/assets/Unknown image (96)>)
 
 ## Submitting and Reviewing the Deployment Request
 
@@ -58,31 +58,31 @@ The Preview step consolidates source details, destination details, job settings,
 
 After the deployment is submitted, the Deployment History page displays the latest deployment entry. The record becomes the control point for monitoring statuses and accessing actions throughout the approval workflow.
 
-![](<../../../../.gitbook/assets/Unknown image (122)>)
+![](<../../../../.gitbook/assets/Unknown image (84)>)
 
 ### Access the Deploy action
 
 The Deploy action is available from the deployment record when the workflow allows deployment execution.
 
-![](<../../../../.gitbook/assets/Unknown image (123)>)
+![](<../../../../.gitbook/assets/Unknown image (85)>)
 
 ### Review configured approvers before deployment
 
 The Deploy panel displays the configured approvers for Deployment Level 1, Deployment Level 2, Commit Level 1, and Commit Level 2. This provides a final review of the approval chain before the deployment request is submitted.
 
-![](<../../../../.gitbook/assets/Unknown image (124)>)
+![](<../../../../.gitbook/assets/Unknown image (86)>)
 
 ### Track deployment approval status
 
 The deployment status indicator displays Waiting for L2 Approval when the request has advanced past the first approval level and is waiting for second-level deployment approval. Hovering over the icon reveals the exact status.
 
-![](<../../../../.gitbook/assets/Unknown image (125)>)
+![](<../../../../.gitbook/assets/13 (3).png>)
 
 ### Preview approval details before deploy and commit
 
 The Preview step can also display configured approval details in the context of review deployment and deploy-and-commit actions. This confirms the approval selections that govern the request before execution continues.
 
-![](<../../../../.gitbook/assets/Unknown image (126)>)
+![](<../../../../.gitbook/assets/Unknown image (88)>)
 
 ## Approval Status Visibility and Workflow Actions
 
@@ -90,19 +90,19 @@ The Preview step can also display configured approval details in the context of 
 
 The Deploy Status column displays Waiting for L1 Approval when the deployment approval request is pending at the first approval level. This status confirms that deployment cannot proceed until the first-level deployment approval is completed.
 
-![](<../../../../.gitbook/assets/Unknown image (127)>)
+![](<../../../../.gitbook/assets/15 (3).png>)
 
 ### Identify Waiting for L1 Approval in Commit Status
 
 The Commit Status column displays Waiting for L1 Approval when the commit approval request is pending at the first approval level. The deployment and commit approval paths are visible together on the same deployment record.
 
-![](<../../../../.gitbook/assets/Unknown image (128)>)
+![](<../../../../.gitbook/assets/16 (3).png>)
 
 ### Open workflow actions
 
 The action menu provides access to review and approval functions, including Summary, Revisions, Build Approvals, and Notify Approvals. These options support monitoring, approval action, and reminder notification workflows for the selected deployment.
 
-![](<../../../../.gitbook/assets/Unknown image (129)>)
+![](<../../../../.gitbook/assets/Unknown image (98)>)
 
 ## Managing Approval Assignments and Notifications
 
@@ -110,25 +110,25 @@ The action menu provides access to review and approval functions, including Summ
 
 The Edit Approvals panel allows approvers to be reviewed or updated after the deployment record is created. Deployment approvals and commit approvals are separated into Level 1 and Level 2 fields so each stage can be managed independently.
 
-![](<../../../../.gitbook/assets/Unknown image (130)>)
+![](<../../../../.gitbook/assets/Unknown image (99)>)
 
 ### Modify approver selections
 
 Opening an approval selector displays the available approver list. Additional approvers can be selected when approval responsibility needs to be adjusted before the pending stage is completed.
 
-![](<../../../../.gitbook/assets/Unknown image (131)>)
+![](<../../../../.gitbook/assets/Unknown image (100)>)
 
 ### Save updated approvers
 
 After the approval selections are updated, the Save action applies the changes to the deployment record. Updated approver assignments are then used for the remaining approval workflow.
 
-![](<../../../../.gitbook/assets/Unknown image (132)>)
+![](<../../../../.gitbook/assets/Unknown image (101)>)
 
 ### Notify approvers
 
 The Notify Approvals action is available from the action menu. It sends or resends approval notifications to the configured approvers so pending approval requests can be acted upon.
 
-![](<../../../../.gitbook/assets/Unknown image (133)>)
+![](<../../../../.gitbook/assets/Unknown image (102)>)
 
 ## Deployment Revision Review
 
@@ -136,13 +136,13 @@ The Notify Approvals action is available from the action menu. It sends or resen
 
 The Deployment Revisions page displays revision-level status for the selected deployment label. The same status indicators are available here, including Waiting for L1 Approval in the Deploy Status column.
 
-![](<../../../../.gitbook/assets/Unknown image (134)>)
+![](<../../../../.gitbook/assets/Unknown image (103)>)
 
 ### Review commit approval status in revisions
 
 The Deployment Revisions page also shows the Commit Status column. When the commit request is pending, the tooltip displays Waiting for L1 Approval.
 
-![](<../../../../.gitbook/assets/Unknown image (135)>)
+![](<../../../../.gitbook/assets/Unknown image (104)>)
 
 ## Completing Level 1 Approvals
 
@@ -152,43 +152,43 @@ The approval flow progresses as a single coordinated workflow. Deployment L1 app
 
 The Deploy Approval action opens the approval dialog for the current deployment approval stage. This action is used by the assigned approver to submit the deployment approval decision.
 
-![](<../../../../.gitbook/assets/Unknown image (136)>)
+![](<../../../../.gitbook/assets/Unknown image (105)>)
 
 ### Complete Deployment L1 approval
 
 The Deployment L1 Approvals dialog presents the approval action selector with Approve and Reject options. The approver selects the appropriate action and provides comments before submitting the decision.
 
-![](<../../../../.gitbook/assets/Unknown image (137)>)
+![](<../../../../.gitbook/assets/Unknown image (106)>)
 
 ### Validate approval comments
 
 Approval comments are mandatory. When the Submit action is attempted without comments, the system displays the warning Please enter a comment. The request cannot proceed until comments are provided.
 
-![](<../../../../.gitbook/assets/Unknown image (138)>)
+![](<../../../../.gitbook/assets/Unknown image (107)>)
 
 ### Move deployment approval to L2
 
 After Deployment L1 approval is submitted successfully, the Deploy Status changes to Waiting for L2 Approval. This indicates that the deployment request has progressed to the second approval level.
 
-![](<../../../../.gitbook/assets/Unknown image (139)>)
+![](<../../../../.gitbook/assets/Unknown image (108)>)
 
 ### Continue with Commit L1 approval
 
 The Commit Status remains Waiting for L1 Approval until the first-level commit approver submits a decision. This keeps the deployment and commit approval paths visible as part of the same workflow.
 
-![](<../../../../.gitbook/assets/Unknown image (140)>)
+![](<../../../../.gitbook/assets/Unknown image (109)>)
 
 ### Open Commit Approval
 
 The Commit Approval action opens the approval dialog for the current commit approval stage. This action becomes the next required activity after Deployment L1 approval has progressed.
 
-![](<../../../../.gitbook/assets/Unknown image (141)>)
+![](<../../../../.gitbook/assets/Unknown image (110)>)
 
 ### Complete Commit L1 approval
 
 The Commit L1 Approvals dialog captures the approval decision and comments for the commit workflow. Submitting the approval advances the commit approval path to the next level.
 
-![](<../../../../.gitbook/assets/Unknown image (142)>)
+![](<../../../../.gitbook/assets/Unknown image (111)>)
 
 ## Completing Level 2 Approvals
 
@@ -198,37 +198,37 @@ After the Level 1 approvals are completed, the workflow proceeds to Level 2. Dep
 
 After the first-level approvals are completed, the workflow shows the request waiting for second-level approval. The status indicators identify the remaining approval stage before execution actions become available.
 
-![](<../../../../.gitbook/assets/Unknown image (143)>)
+![](<../../../../.gitbook/assets/Unknown image (112)>)
 
 ### Confirm deployment L2 pending status
 
 The Deploy Status tooltip displays Waiting for L2 Approval while the deployment approval request is awaiting the second-level approver decision.
 
-![](<../../../../.gitbook/assets/Unknown image (139)>)
+![](<../../../../.gitbook/assets/Unknown image (108)>)
 
 ### Open the next approval action
 
 The action menu is used again to access the remaining approval action. The available approval option corresponds to the current pending approval state.
 
-![](<../../../../.gitbook/assets/Unknown image (144)>)
+![](<../../../../.gitbook/assets/Unknown image (113)>)
 
 ### Complete Deployment L2 approval
 
 The Deployment L2 Approvals dialog records the second-level deployment approval decision. The approver selects the approval action, enters comments, and submits the decision to complete the deployment approval path.
 
-![](<../../../../.gitbook/assets/Unknown image (145)>)
+![](<../../../../.gitbook/assets/Unknown image (114)>)
 
 ### Open Commit L2 approval
 
 After Deployment L2 approval is completed, the workflow proceeds to the commit approval path at Level 2. The Commit Approval action opens the final commit approval dialog.
 
-![](<../../../../.gitbook/assets/Unknown image (146)>)
+![](<../../../../.gitbook/assets/Unknown image (77)>)
 
 ### Complete Commit L2 approval
 
 The Commit L2 Approvals dialog captures the final commit approval decision and comments. Once submitted, the commit approval path is completed.
 
-![](<../../../../.gitbook/assets/Unknown image (147)>)
+![](<../../../../.gitbook/assets/Unknown image (78)>)
 
 ## Approved State and Summary Review
 
@@ -236,19 +236,19 @@ The Commit L2 Approvals dialog captures the final commit approval decision and c
 
 The Deploy Status indicator changes to Approved after all required deployment approvals are completed. The tooltip confirms that deployment approval has been approved.
 
-![](<../../../../.gitbook/assets/Unknown image (148)>)
+![](<../../../../.gitbook/assets/Unknown image (79)>)
 
 ### Confirm commit approval completion
 
 The Commit Status indicator changes to Approved after all required commit approvals are completed. At this point, the deployment and commit approval requirements have both been satisfied.
 
-![](<../../../../.gitbook/assets/Unknown image (149)>)
+![](<../../../../.gitbook/assets/Unknown image (80)>)
 
 ### Review deployment summary
 
 The Deployment Summary panel provides a consolidated view of deployment metadata, source and destination details, approval status, and approval comments. This view supports audit review after approval decisions are recorded.
 
-![](<../../../../.gitbook/assets/Unknown image (150)>)
+![](<../../../../.gitbook/assets/Unknown image (81)>)
 
 ## Executing Approved Deployment and Commit Actions
 
@@ -256,13 +256,13 @@ The Deployment Summary panel provides a consolidated view of deployment metadata
 
 The Deployment Revisions page provides the Deploy action after approvals are completed. The tooltip identifies the deploy action that initiates deployment execution for the approved revision.
 
-![](<../../../../.gitbook/assets/Unknown image (151)>)
+![](<../../../../.gitbook/assets/Unknown image (82)>)
 
 ### Commit approved changes
 
 The Commit action becomes available when commit approval is complete. The tooltip identifies the commit action used to initiate the commit operation.
 
-![](<../../../../.gitbook/assets/Unknown image (152)>)
+![](<../../../../.gitbook/assets/Unknown image (83)>)
 
 ### Deploy and commit together
 

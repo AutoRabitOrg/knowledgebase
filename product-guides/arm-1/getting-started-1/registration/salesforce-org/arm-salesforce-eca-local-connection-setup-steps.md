@@ -75,7 +75,7 @@ https://arm-qan5.autorabit.com/oauth/_callback
 {% endstep %}
 
 {% step %}
-### &#x20;Enable OAuth + set callback URL + scopes <a href="#arm-3-enableoauthsetcallbackurlscopes" id="arm-3-enableoauthsetcallbackurlscopes"></a>
+### Enable OAuth + set callback URL + scopes <a href="#arm-3-enableoauthsetcallbackurlscopes" id="arm-3-enableoauthsetcallbackurlscopes"></a>
 
 1. Click **Enable OAuth** (or expand **API (Enable OAuth Settings)** and check **Enable OAuth**).
 2. Set \*_Callback URL_
@@ -117,7 +117,7 @@ In the **Security** section the next options should be enabled:
 {% endstep %}
 
 {% step %}
-### &#x20;Create the app and capture Client ID / Secret <a href="#arm-6-createtheappandcaptureclientid-secret" id="arm-6-createtheappandcaptureclientid-secret"></a>
+### Create the app and capture Client ID / Secret <a href="#arm-6-createtheappandcaptureclientid-secret" id="arm-6-createtheappandcaptureclientid-secret"></a>
 
 1. Click **Create**.
 2. Open the app’s **Settings** tab and locate **Consumer Key and Secret**:
@@ -173,7 +173,7 @@ Important Note: After creating the ECA in Salesforce, there may be a replication
 
 Once the Validate and save button is clicked a salesforce login is shown to login with the user we intend to use for the Connection.
 
-<figure><img src="../../../../../.gitbook/assets/6de79ea8-99c8-483f-909f-9f8059097022.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2ee0edd6-fd45-4ca0-9114-356995ca5351.png" alt=""><figcaption></figcaption></figure>
 
 A message from Salesforce will show to require granted permissions for the user to use the scopes defined in the ECA, Click Allow
 

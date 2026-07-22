@@ -1,7 +1,7 @@
 # SF Org Management
 
 {% hint style="info" %}
-**Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users. &#x20;
+**Important Note:** This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users.
 {% endhint %}
 
 ### Overview <a href="#overview" id="overview"></a>
@@ -26,7 +26,7 @@ A summary of the Salesforce org registered with ARM is displayed in this area.\
 
 <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-The fields displayed in this section are described in the table below:&#x20;
+The fields displayed in this section are described in the table below:
 
 | Field Name                    | Indicates                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -73,7 +73,7 @@ Mapping your Salesforce org with your version control system or ALM configured i
 
 <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.13.05 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Suppose you want to connect your Salesforce Org with Version Control as a **`GIT`**.&#x20;
+Suppose you want to connect your Salesforce Org with Version Control as a **`GIT`**.
 
 1. Click on the **`Mapping`** button for Version Control as **`GIT`**.
 2. Select the respective version control **`Repository`** and the **`Branch`** for your GIT.
@@ -82,14 +82,14 @@ Suppose you want to connect your Salesforce Org with Version Control as a **`GIT
     <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 4. Remember to click on **`Save Mappings`** to save the details, or else you need to repeat the above steps.
 
-In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.&#x20;
+In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.
 
 {% hint style="info" %}
 **Important Note:** To proceed ahead with the below steps, make sure the JIRA is successfully integrated with ARM ([LEARN MORE](../../../../../arm/integration-and-plugins/jira.md))
 {% endhint %}
 
-1. Click on the **`Mapping`** button beside JIRA.&#x20;
-2. Select the **`Jira`** label and the **`Project`** from the drop-down list.&#x20;
+1. Click on the **`Mapping`** button beside JIRA.
+2. Select the **`Jira`** label and the **`Project`** from the drop-down list.
 3.  Click on **`Save Mappings`** to save the details, and you're done.\
     <br>
 
@@ -111,7 +111,7 @@ Similarly, you can add different metadata members for various metadata types. Ad
 
 The Salesforce Org- Skip Members section shows a summary of the selected metadata members. Click on **`Save Members`** to save the steps configured.
 
-<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.28.02 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.28.02 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Salesforce Org - Default Apex Test Class Configuration <a href="#salesforce-org-default-apex-test-class-configuration" id="salesforce-org-default-apex-test-class-configuration"></a>
 

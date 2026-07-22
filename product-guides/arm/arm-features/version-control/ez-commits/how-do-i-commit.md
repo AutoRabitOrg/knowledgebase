@@ -30,22 +30,22 @@ _**Note: This optimized flow is applicable only when GitHub Pull Request functio
 {% hint style="info" %}
 **Important Notes:**
 
-1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.&#x20;
+1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.
 2. In addition to the ALL provision, any Salesforce Org Authors who have access to create, edit, or delete data through either profile or permission-set assignments will be listed and can be selected individually.
-3. These options are accessible only to ARM administrators or users who have permission to commit on behalf of others.&#x20;
+3. These options are accessible only to ARM administrators or users who have permission to commit on behalf of others.
 4. When **Skip Mapping** is set to false, users cannot choose associated child branches of a mapped branch. In the recent release, ARM reads the mapped branch for your version control repository and displays the related child branches during commit, even if skip mapping is disabled.
 {% endhint %}
 
 7. Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.<br>
 8.  Under the **`Fetch Changes`** tab, select how the components are to be fetched from the above-selected source org.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
     *   **`Metadata Components:`** When selected, this retrieves all the metadata components available in the source Salesforce Org. Different ways to fetch the [**`Metadata Components`**](https://www.autorabit.com/blog/7-salesforce-security-concerns-relating-to-metadata/)are:
 
         1. **`Auto Draft:`** This brings all the changes the author has made in the Salesforce org that is not yet committed to the Version Control (ARM does the calculation by using the last modified date in the Salesforce Org and comparing it against the last commit date to Version Control branch).
 
-        <figure><img src="../../../../../.gitbook/assets/image (1047).png" alt="" width="443"><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (1046).png" alt="" width="443"><figcaption></figcaption></figure>
 
         1. **`Select Manually:`** Choose the metadata components individually to be committed to the destination branch.
         2. **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.
@@ -53,9 +53,9 @@ _**Note: This optimized flow is applicable only when GitHub Pull Request functio
         <figure><img src="../../../../../.gitbook/assets/image (1048).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:**&#x20;
+**Important Note:**
 
-Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto Draft`**.&#x20;
+Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto Draft`**.
 
 * If you click the checkbox above, the metadata components in the uploaded XML file will be compared to your source control and Salesforce, and any modified/added components will be displayed on the next Commits screen.
 * If left unchecked, the components will be compared only with Salesforce, and any changed or newly added components will be shown on the next screen.
@@ -71,8 +71,6 @@ Use **Select Manually** when you already know which metadata components need to 
 
 For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate a larger metadata set. If the developer already knows the target components, Select Manually is the recommended and faster workflow.
 
-
-
 * **`Re-use Previous Validated Commit Label:`** If you placed changes related to a user story or task, etc., under a specific commit label, you can choose the same in this field. The main advantage of creating a commit label is to reuse the labels and perform multiple commits under a given label.
 
 <figure><img src="../../../../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
@@ -82,11 +80,11 @@ For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate 
 <figure><img src="../../../../../.gitbook/assets/image (1050).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note about Review Artifact:**&#x20;
+**Important Note about Review Artifact:**
 
-* You can create a review of selected artifacts or a module or collection.&#x20;
+* You can create a review of selected artifacts or a module or collection.
 * You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
-* When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below: \
+* When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below:\
   ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png>)
 {% endhint %}
 
@@ -155,15 +153,12 @@ ARM allows performing a validation deployment before actually committing the cha
 
           * **All Supported Metadata Types:** This option executes a comprehensive security analysis across all selected metadata components, irrespective of their creation or modification timestamps. This approach is recommended for complete security audits.
           * **Only Newly Added Supported Metadata Types:** This option performs a targeted analysis, focusing solely on metadata components created on a specific date. It is designed to evaluate recent additions efficiently.
-
-
-
           * Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.
 
           <figure><img src="../../../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
 
           <figure><img src="../../../../../.gitbook/assets/image (1057).png" alt="" width="375"><figcaption></figcaption></figure>
-   3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. <br>
+   3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org.<br>
 
        #### Selecting Salesforce Orgs for Validation
 
@@ -268,7 +263,7 @@ Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that 
 
 ### Why is the API name change showing under Deleted Components in Commit? <a href="#why-is-api-name-change-showing-under-deleted-components-in-commit" id="why-is-api-name-change-showing-under-deleted-components-in-commit"></a>
 
-When there is an **API name change**, Salesforce considers it a **new metadata API** while the retrieved call occurs.&#x20;
+When there is an **API name change**, Salesforce considers it a **new metadata API** while the retrieved call occurs.
 
 When committing such API name change components, please select the new API name, and the older one can be deleted as a destructive commit.
 

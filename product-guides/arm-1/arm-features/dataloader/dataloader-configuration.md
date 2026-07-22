@@ -1,4 +1,4 @@
-# DataLoader Configuration
+# Configuring DataLoader
 
 ### DataLoader Configuration: Overview <a href="#dataloader-configuration-overview" id="dataloader-configuration-overview"></a>
 
@@ -9,17 +9,17 @@ The DataLoader module in ARM is key to migrating data between Salesforce orgs. T
 1. **Create New Configuration**
    *   From the **DataLoader Configuration** page, click **New Configuration** to initiate a new setup.
 
-       <figure><img src="../../../../.gitbook/assets/1 - Configuring Dataloader (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/1 - Configuring Dataloader.png" alt=""><figcaption></figcaption></figure>
    * This action opens the **New Configuration** page, where Salesforce Org details must be defined.
    * Configuration creation allows establishing connections between source and destination orgs for data migration.
 2. **Enter Salesforce Org Details**
    *   On the **New Configuration** page, enter a **Name** for the configuration.
 
-       <figure><img src="../../../../.gitbook/assets/2 - Configuring Dataloader (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/2 - Configuring Dataloader.png" alt=""><figcaption></figcaption></figure>
    * Select the **Source Org** from the dropdown menu.
    * Select the **Destination Org** from the dropdown menu.
    * Click **Login and fetch objects** to proceed with retrieving available objects.
-3. **Provide Configuration Information**&#x20;
+3. **Provide Configuration Information**
    *   Input a meaningful configuration name in the **Name** field for easy identification.
 
        <figure><img src="../../../../.gitbook/assets/3 - Configuring Dataloader.png" alt=""><figcaption></figcaption></figure>
@@ -37,7 +37,7 @@ The DataLoader module in ARM is key to migrating data between Salesforce orgs. T
        <figure><img src="../../../../.gitbook/assets/5 - Configuring Dataloader.png" alt=""><figcaption></figcaption></figure>
    * Select the required objects by marking the checkbox next to each entry.
    * Use the search bar if needed to quickly locate a specific object.
-6. **Choose Object Fields**&#x20;
+6. **Choose Object Fields**
    *   Expand the selected object to display its available fields.
 
        <figure><img src="../../../../.gitbook/assets/6 - Configuring Dataloader.png" alt=""><figcaption></figcaption></figure>
@@ -91,8 +91,6 @@ The DataLoader module in ARM is key to migrating data between Salesforce orgs. T
     * The notification confirms that the **Unique Fields Set** has been successfully copied.
 15. #### View Success Results
     *   From the **Dataloader Configuration Details** page, locate the **Results of Last Run** section.
-
-
 
         <figure><img src="../../../../.gitbook/assets/14 - Configuring Dataloader.png" alt=""><figcaption></figcaption></figure>
     * Select the **Success count** link (e.g., “Success: 623”) to review detailed results of successfully processed records.

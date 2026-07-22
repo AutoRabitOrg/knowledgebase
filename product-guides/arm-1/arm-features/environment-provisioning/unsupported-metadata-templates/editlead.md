@@ -1,4 +1,4 @@
-# Edit Lead
+# Edit Lead Settings
 
 The **EditLead** template allows users to modify lead ownership and conversion settings in Salesforce using AutoRABIT.
 
@@ -18,7 +18,7 @@ The **EditLead** template allows users to modify lead ownership and conversion s
 
        * **Lead Type:** Specify a queue or user to assign the lead if assignment rules fail.
        * **Lead Owner:** Enter the designated lead owner.
-       * **Lead Conversion Setting:** Click the configuration icon ![icon](<../../../../../.gitbook/assets/image (71).png>) to open the settings panel and configure:
+       * **Lead Conversion Setting:** Click the configuration icon ![icon](<../../../../../.gitbook/assets/image (58).png>) to open the settings panel and configure:
          * **Require Validation for Converted Leads:** Enforces field-level validations, workflow actions, and triggers on conversion.
          * **Preserve Lead Status:** Retains the lead's original status instead of using the new owner’s default.
          * **Enable Conversions for Salesforce Mobile:** Allows lead conversion from the Salesforce mobile app.

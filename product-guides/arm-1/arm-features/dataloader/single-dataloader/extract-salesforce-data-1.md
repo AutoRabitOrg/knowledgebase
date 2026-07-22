@@ -70,7 +70,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     <figure><img src="../../../../../.gitbook/assets/13 - Extract.png" alt=""><figcaption></figcaption></figure>
 24. On validating the query, a success message will be displayed with the number of records to be extracted.
-25. On successfully  validating the query, click on "Next" to continue to the "Schedule" option
+25. On successfully validating the query, click on "Next" to continue to the "Schedule" option
 26. Multiple schedule options are available to schedule the job
 
     <figure><img src="../../../../../.gitbook/assets/14 - Extract.png" alt=""><figcaption></figcaption></figure>
@@ -105,7 +105,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
     <figure><img src="../../../../../.gitbook/assets/24 - Extract.png" alt=""><figcaption></figcaption></figure>
 36. Click the **Schedule** option to view any existing schedule configured during job creation. A new schedule can also be set at this stage, which will apply specifically to the current job.
 
-    <figure><img src="../../../../../.gitbook/assets/25 - Extract (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/25 - Extract.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/26 - Extract.png" alt=""><figcaption></figcaption></figure>
 37. To delete the job, click on the "Delete" option.
@@ -133,4 +133,3 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 43. Click on the "Success" icon to observe the success records
 
     <figure><img src="../../../../../.gitbook/assets/35 - Extract.png" alt=""><figcaption></figcaption></figure>
-

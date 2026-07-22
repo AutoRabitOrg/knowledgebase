@@ -11,7 +11,7 @@
 
 1. Navigate to **`IZ Eye`** -> **`Salesforce Apex`**. Overview includes -
 
-<figure><img src="../../../../../.gitbook/assets/sf_applications (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/sf_applications.png" alt=""><figcaption></figcaption></figure>
 
 a. **`Name`** - Name of the Apex Class or Trigger
 
@@ -25,17 +25,17 @@ c. **`Environment`** - Environment to which the app belongs to
 
 3. Summary details include -
 
-&#x20;    a. **`Total Issues`** - Indicates total number of issues once the application is scanned
+a. **`Total Issues`** - Indicates total number of issues once the application is scanned
 
-&#x20;    b. **`Status`** - Indicated the status of class / trigger in Salesforce
+b. **`Status`** - Indicated the status of class / trigger in Salesforce
 
-&#x20;    c. **`Last Scan`** - Time since the last scan was performed
+c. **`Last Scan`** - Time since the last scan was performed
 
 4. Actions include -
 
-&#x20;     a.**`View Dashboard`** - Summary report of all the issues.
+a.**`View Dashboard`** - Summary report of all the issues.
 
-&#x20;     b.**`View Issues`** - Detailed report of the issues with file names and line numbers.
+b.**`View Issues`** - Detailed report of the issues with file names and line numbers.
 
 ### To view only Apex Classes or Triggers
 

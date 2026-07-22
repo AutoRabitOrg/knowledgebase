@@ -17,13 +17,13 @@ To create this template, follow the steps below:
 
     <figure><img src="../../../../../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    * Click on![](<../../../../../../.gitbook/assets/image (28) (1) (1) (1).png>)icon.
-    * Enter the replacing value name in the **Deleting Fields** section.&#x20;
-    * You can even add multiple deleting fields for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
+    * Click on![](<../../../../../../.gitbook/assets/image (58).png>)icon.
+    * Enter the replacing value name in the **Deleting Fields** section.
+    * You can even add multiple deleting fields for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.
     * Click **OK**. Once done, click **Save** to save this page.
     * Click **Save** to save the template.
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click on the **Run** button to run the current template on your destination org.
 13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post-Deployment Steps**, select the test cases that you have recently created.&#x20;
+14. In the **Post-Deployment Steps**, select the test cases that you have recently created.
 15. For a detailed summary report of the operation carried out, please check the **View History** page.

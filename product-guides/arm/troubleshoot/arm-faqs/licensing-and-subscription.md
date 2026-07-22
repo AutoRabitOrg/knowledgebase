@@ -16,11 +16,11 @@ Update the total subscription allotted on your account. To do so, go to the **Ad
 
 You're getting this because you've used up all of your membership licenses, and you won't be able to add any more users. For any discrepancies or additional licenses, please contact to your account manager or reach out to us via support.
 
-### Why am I not able to assign more users to my team?&#x20;
+### Why am I not able to assign more users to my team?
 
 The below-highlighted Subscription button will appear only if the customer procures more than 20+ licenses to manage different Teams.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Team</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Team</p></figcaption></figure>
 
 ### ()I see some plugins require keys. Is this a license issue or can we get these keys and use the Static Code Analysis feature? <a href="#i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get" id="i-see-from-the-instructions-that-these-plugins-require-some-keys-is-it-a-license-issue-or-can-we-get"></a>
 
@@ -30,4 +30,3 @@ You can use Apex PMD and execute SCA without having to obtain a license for it. 
 * [SCA for Checkmarx](../../integration-and-plugins/sca-for-checkmarx.md)
 * [SCA for Apex PMD](../../integration-and-plugins/apex-pmd.md)
 * [SCA for SonarQube](../../integration-and-plugins/sonarqube.md)
-

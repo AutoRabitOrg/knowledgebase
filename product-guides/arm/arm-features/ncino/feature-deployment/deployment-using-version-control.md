@@ -4,11 +4,11 @@ This section is all about deploying the nCino data using [Version Control](https
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74) (1).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description**.
 4. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
@@ -24,9 +24,7 @@ This section is all about deploying the nCino data using [Version Control](https
 
     <figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1).png" alt="" width="454"><figcaption></figcaption></figure>
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
 

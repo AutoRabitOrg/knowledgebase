@@ -1,4 +1,4 @@
-# Configure a Webhook in GitLab
+# GitLab
 
 {% hint style="info" %}
 After the 25.3.9 release, the structure of the webhook payload URL was updated. Customers need to update the webhook URL in the repository settings of their remote repo. Some customers are still using the old webhook URL containing **autorabitrest**, which should now be replaced with api.
@@ -18,14 +18,14 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 2. Navigate to **Admin > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (940).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Add a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (975).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (941).png" alt=""><figcaption></figcaption></figure>
 
 8. Your API token is now created.
 
@@ -37,7 +37,7 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 
 2. Go to **Settings > Integrations**.
 
-<figure><img src="../../../../.gitbook/assets/image (977).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (948).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **URL** field, enter the webhook endpoint:
 
@@ -52,7 +52,7 @@ For example:\
 
 Define the pattern used to extract ALM-related information from commit messages. For example:
 
-<figure><img src="../../../../.gitbook/assets/image (979).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (952).png" alt=""><figcaption></figcaption></figure>
 
 To enable automatic updates via webhook:
 

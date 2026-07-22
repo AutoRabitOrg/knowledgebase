@@ -10,7 +10,7 @@ This article describes the process of deploying the nCino data via the Salesforc
 
 1. Upon clicking on **"Create Feature Deployment"** or selecting the **"Feature Deployment**,**"** a Source Type screen will appear. Choose "**Deploy using Salesforce template**" to proceed.
 
-<figure><img src="../../../../../.gitbook/assets/2 - Feature Deployment (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2 - Feature Deployment (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Continue to input the fields on the screen with the required inputs.
 
@@ -23,7 +23,7 @@ This article describes the process of deploying the nCino data via the Salesforc
    4. **Feature Type:** Select the feature type from the available list. The following are the available values:
       * Standard
       * Community
-   5. **Feature:** Select the required feature&#x20;
+   5. **Feature:** Select the required feature
    6. **Version**: Select the version based on the feature selection.
 4. After entering all the details, click on '**Next**' to continue to the "**Destination**" screen.
 
@@ -46,7 +46,7 @@ This article describes the process of deploying the nCino data via the Salesforc
        1. **Source**: Select your source field whose values will be populated in the destination External Id field.
        2. **Destination**: Select the required field from the destination org whose values will remain unique for all the records.
 
-    <figure><img src="../../../../../.gitbook/assets/5 - Feature Deployment (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/5 - Feature Deployment (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/5.0 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
@@ -76,7 +76,7 @@ This article describes the process of deploying the nCino data via the Salesforc
 
 <figure><img src="../../../../../.gitbook/assets/7 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
-12. &#x20;**Deployment Filters**
+12. **Deployment Filters**
     1. **Disable Workflow Rules:** This option will deactivate the workflow rules associated with objects part of the deployment.
     2. **Use Bulk API (Batch API will be used if the option is not enabled):** You can transfer bulk records all at one time from the source and destination org.
     3. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
@@ -94,4 +94,3 @@ This article describes the process of deploying the nCino data via the Salesforc
 14. Clicking on ether of the deployment options available above, you will be redirected to the "Deployment History" page.
 
 <figure><img src="../../../../../.gitbook/assets/9 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
-

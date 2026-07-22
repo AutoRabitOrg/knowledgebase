@@ -15,7 +15,7 @@ Our Integration with Copado SFDX pipelines is currently a modification of their 
 
 ### CodeScan Project Setup
 
-First create a GitHub, BitBucket, or GitLab project in CodeScan.  This will serve as the project for your Copado Pipeline and will run the analysis in CodeScan for all Production deployments automatically.  Make sure to create the project on the main/master branch of your repository.
+First create a GitHub, BitBucket, or GitLab project in CodeScan. This will serve as the project for your Copado Pipeline and will run the analysis in CodeScan for all Production deployments automatically. Make sure to create the project on the main/master branch of your repository.
 
 See below for our articles on creating these projects:
 
@@ -25,7 +25,7 @@ See below for our articles on creating these projects:
 
 ### Copado Extensions Setup
 
-As mentioned, this is an extension of Copado's SFDX integration with CodeScan. &#x20;
+As mentioned, this is an extension of Copado's SFDX integration with CodeScan.
 
 If you haven't already, please follow the instructions on their SFDX Pipelines documentation or use the PDF attached here.
 
@@ -435,7 +435,7 @@ exit $exitCode
 
 </details>
 
-If the main branch of your repository is not **main**, please change the **CS\_MAIN\_BRANCH** variable on line 15.  This should match the branch name as it is shown in CodeScan.
+If the main branch of your repository is not **main**, please change the **CS\_MAIN\_BRANCH** variable on line 15. This should match the branch name as it is shown in CodeScan.
 
 Click **save**.
 
@@ -462,28 +462,28 @@ Click **Add New Parameter** and add the following parameters:
 **Name:** PARENT\_ID\
 **Value:** {$Context.copado\_\_JobExecution\_\_r.copado\_\_ParentRecord\_Id\_\_c}
 
-Click **Save.** &#x20;
+Click **Save.**
 
 ### Quality Gate Rule
 
-The Quality Gate rule should show **After Commit** as a Trigger.  This is the default setup as described in the Copado documentation.
+The Quality Gate rule should show **After Commit** as a Trigger. This is the default setup as described in the Copado documentation.
 
 ### User Story Page
 
 We recommend adding the Static Code Analysis results related list to the User Story page to make them easier to access.
 
-<figure><img src="../../../../.gitbook/assets/image (1550).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1548).png" alt=""><figcaption></figcaption></figure>
 
 Violations will be stored as Static Code Analysis Violations.
 
-<figure><img src="../../../../.gitbook/assets/image (1551).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1549).png" alt=""><figcaption></figcaption></figure>
 
 ### Using the "Run CodeScan" button or running functions directly from the User Story page
 
 {% hint style="info" %}
 These approaches are not recommended due to the fact that **it will not update the Test record Pass/Fail for the User Story** as it is not executing in Copado's Quality Integration Framework like the function above.
 
-The supported use case above will scan every time code is committed in the User Story.  This means you will always have:
+The supported use case above will scan every time code is committed in the User Story. This means you will always have:
 
 * The most up-to-date scan of your committed code in CodeScan
 * The most up-to-date result of your committed code in Copado (Pass/Fail)

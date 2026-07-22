@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-OmniStudio integration with ARM allows you to retrieve and deploy OmniStudio metadata in the same way as Salesforce metadata and deploy OmniStudio components to the destination Salesforce org directly from ARM. Using the Deployment feature in ARM, you can quickly deploy components to your destination environment.&#x20;
+OmniStudio integration with ARM allows you to retrieve and deploy OmniStudio metadata in the same way as Salesforce metadata and deploy OmniStudio components to the destination Salesforce org directly from ARM. Using the Deployment feature in ARM, you can quickly deploy components to your destination environment.
 
 ### Before you begin <a href="#before-you-begin" id="before-you-begin"></a>
 
@@ -63,14 +63,14 @@ Before you proceed with the deployment, it is mandatory to configure your OmniSt
 18. The detailed report can be viewed on this page, such as total OmniStudio components successfully deployed, failed components (if any), code coverage details, etc. In addition to viewing the report, you can also download the OmniStudio components packs for the selected deployment.
 
 {% hint style="info" %}
-**Important Note:** **Redeploy** and **Rollback** are currently not supported for OmniStudio deployments.&#x20;
+**Important Note:** **Redeploy** and **Rollback** are currently not supported for OmniStudio deployments.
 {% endhint %}
 
 ### Using Continuous Integration (CI) Job <a href="#using-continuous-integration-ci-job" id="using-continuous-integration-ci-job"></a>
 
 1. Go to the **New CI Job** screen.
 
-<figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1208).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the **Deploy from the Version Control** tile.
 

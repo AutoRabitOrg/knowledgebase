@@ -16,13 +16,13 @@ To create a personal access token, you have to follow the following steps:
 
 If you select **Custom defined** access, then you must select the below options:
 
-1. &#x20;**Code**: Select at least **Read** or any other option, except status, so that we are able to enable the pull request.
+1. **Code**: Select at least **Read** or any other option, except status, so that we are able to enable the pull request.
 
 <figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. **Member Entitlement Management**: Select at least the **Read** option, so that we are able to fetch users, i.e. reviewers; and can perform approval-related operations.
 
-<figure><img src="../../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Limitations:**

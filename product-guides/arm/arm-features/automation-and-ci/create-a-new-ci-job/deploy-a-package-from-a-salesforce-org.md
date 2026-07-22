@@ -19,7 +19,7 @@ Back up your Salesforce metadata to version control and trigger a deployment to 
 1. Log in to your ARM account.
 2.  From the top navigation pane, navigate to **Create New > New CI Job**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1236).png" alt="Create New ➜ New CI Job"><figcaption><p>Create New ➜ New CI Job</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1208).png" alt="Create New ➜ New CI Job"><figcaption><p>Create New ➜ New CI Job</p></figcaption></figure>
 3.  Choose the tile: **Deploy From Salesforce Org**
 
     <figure><img src="../../../../../.gitbook/assets/image (1237).png" alt="Deploy From Salesforce Org tile"><figcaption><p>Deploy From Salesforce Org tile</p></figcaption></figure>
@@ -54,16 +54,16 @@ Under **Build**, provide:
 6. **Generate Code Coverage Report:** Include Apex test-coverage details.
 7.  **Run Static Analysis Report:** Identify code-quality issues before production.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1239).png" alt="Static analysis options"><figcaption><p>Static Analysis Options</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1228).png" alt="Static analysis options"><figcaption><p>Static Analysis Options</p></figcaption></figure>
 
     *   **Apex PMD / Checkmarx:** Set scan criteria and **Priority**. If the threshold is not met, the build is marked unstable.
 
-        <figure><img src="../../../../../.gitbook/assets/image (1240).png" alt="Criteria for Apex PMD and Checkmarx"><figcaption><p>Criteria for Apex PMD and Checkmarx</p></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (1227).png" alt="Criteria for Apex PMD and Checkmarx"><figcaption><p>Criteria for Apex PMD and Checkmarx</p></figcaption></figure>
     * **CodeScan / SonarQube:** Choose to scan all metadata or only newly added components, then set a **Priority**.
       * **Run on All Supported Metadata Types:** Scan every retrieved component.
       *   **Run on Newly Added Supported Metadata Types:** Scan only newly added components.
 
-          <figure><img src="../../../../../.gitbook/assets/image (1241).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
+          <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
 
     _For more information on running **Static Code Analysis in CI Jobs**, see_ [_this guide_](../../../arm-administration/static-code-analysis-in-ci-cd.md)_._
 8. **Additional Profile Packaging Options:**
@@ -140,7 +140,7 @@ Analyze metadata dependencies to avoid breaking changes:
 
 Run functional tests before deployment:
 
-<figure><img src="../../../../../.gitbook/assets/image (1896).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1895).png" alt="" width="375"><figcaption></figcaption></figure>
 
 *   **Version Control:** Choose repository, branch, and test type (Selenium Maven, Selenium Non-Maven).
 
@@ -160,7 +160,7 @@ Configure HTTP callouts to external services. See the [Callout URL guide](../con
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1255).png" alt="Notification settings"><figcaption><p>Notification Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1215).png" alt="Notification settings"><figcaption><p>Notification Settings</p></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 
@@ -174,7 +174,7 @@ Click **Save** to store the CI job settings.
 
 If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 
-<figure><img src="../../../../../.gitbook/assets/image (1256).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1189).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
 
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.

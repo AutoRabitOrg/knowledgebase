@@ -19,7 +19,7 @@ The **CodeScan VS Code** extension provides immediate feedback to developers on 
 Make sure you:
 
 1. Install the latest VS Code version.
-2. Have a CodeScan **cloud** account:&#x20;
+2. Have a CodeScan **cloud** account:
    * Have a valid enterprise license (or a **cloud** trial version—trial **not** available with self-hosted)
 3. For CodeScan **Self Hosted**:
    * Have a working **SonarQube™ 9.9+ LTA** server
@@ -46,7 +46,7 @@ Follow the installation instructions for the CodeScan extension and bind the ext
 
 **Step 1: Install CodeScan for VS Code Extension**
 
-1. Open **Visual Studio Code** and go to the **Activity Bar** on your left. The last button on the Activity Bar is the **Extensions** button.&#x20;
+1. Open **Visual Studio Code** and go to the **Activity Bar** on your left. The last button on the Activity Bar is the **Extensions** button.
 
 {% hint style="info" %}
 **Note:** You can also press the Shortcut Key combination **`Ctrl + Shift + X`** to launch the Extensions side panel.
@@ -67,7 +67,7 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 
 **Step 3: Create the Connection**
 
-1. Click the CodeScan icon on the left panel.&#x20;
+1. Click the CodeScan icon on the left panel.
 
 <figure><img src="../../../../.gitbook/assets/image (477).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -107,9 +107,9 @@ Follow these steps to set your environment variables:
 
 1. Press Windows + R to open the Windows Run prompt.
 2. Type in `sysdm.cpl` and click OK.\
-   ![](<../../../../.gitbook/assets/1 Run (1).png>)
+   ![](<../../../../.gitbook/assets/1 Run.png>)
 3. Open the Advanced tab and click on the Environment Variables button in the System Properties window.\
-   ![](<../../../../.gitbook/assets/2 System_properties (2).png>)
+   ![](<../../../../.gitbook/assets/2 System_properties.png>)
 4. The Environment Variables window is divided into two sections. Click the New… button on the top section.\
    ![](<../../../../.gitbook/assets/3 Variables.png>)
 5. In the New User Variable prompt, enter the Variable Name as JAVA\_TOOL\_OPTIONS, enter the following Variable Value, and click OK.\
@@ -127,7 +127,7 @@ In your terminal, type the following line:\
 \
 All options for these variables are listed below.
 
-PLEASE NOTE:  This setting only lasts until the terminal session is closed.
+PLEASE NOTE: This setting only lasts until the terminal session is closed.
 
 **Permanent Setup (for all future sessions):**
 
@@ -137,7 +137,7 @@ For Bash:\
 `nano ~/.bashrc`
 
 For Zsh (default for mac since macOS Catalina):\
-`nano ~/.zshrc`&#x20;
+`nano ~/.zshrc`
 
 1. Add the following line:\
    `export JAVA_TOOL_OPTIONS="-Dhttp.proxyHost= [YOUR_PROXY_HOST] -`\
@@ -223,22 +223,22 @@ unable to find valid certification path to requested target.
 
 **Steps:**
 
-1. In your browser, to the left of the URL, there is a lock icon (![](<../../../../.gitbook/assets/image (494).png>)).
+1. In your browser, to the left of the URL, there is a lock icon (![](<../../../../.gitbook/assets/image (437).png>)).
 2. Click on this icon and a window will pop up. From the window, select **Connection is secure**.
 
-<figure><img src="../../../../.gitbook/assets/image (495).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the second option, i.e., **`Certificate is valid`**.
 
-<figure><img src="../../../../.gitbook/assets/image (496).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
 
 4. Go to the **Details** tab and click on **Export**.
 
-<figure><img src="../../../../.gitbook/assets/image (497).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (435).png" alt="" width="452"><figcaption></figcaption></figure>
 
 5. Rename the certificate (e.g., _**codescan-certificate**_), then choose a location and save the certificate.
 
-<figure><img src="../../../../.gitbook/assets/image (498).png" alt="" width="540"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (436).png" alt="" width="540"><figcaption></figcaption></figure>
 
 6. The next process is to install the certificate in the **cacerts** file of the jdk installed in the system using the command line.
 
@@ -313,8 +313,6 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 * Some useful debugging information is available under the **`Output`** window under the ‘**`CodeScan`**’ tab.
 * Also, you can check for any serious errors by going to **`Help > Toggle Developer Tools`** to bring up the console.
 
-
-
 ***
 
 ### Changelogs
@@ -323,21 +321,17 @@ You can click on the summary or press **`Ctrl+Shift+M`** to display the **`PROBL
 
 **v. 2.0.3**
 
-Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.&#x20;
-
-
+Changes were required to support fixes and enhancements of the **VS Code CodeScan Plugin (v2.0.3)** to VS Code Extension Marketplace; specifically, we fixed a plugin issue that caused non-recognition of CodeScan-specific JS and VF rules.
 
 **13 June 2024**
 
-**v. 2.0.2** &#x20;
+**v. 2.0.2**
 
 New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review. You can click on the specific _Type_ or _Severity_ to only see issues of that type.
 
 <figure><img src="../../../../.gitbook/assets/image (567).png" alt=""><figcaption></figcaption></figure>
 
 The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
-
-
 
 ***
 

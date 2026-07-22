@@ -40,7 +40,7 @@ Under the **Salesforce Org** **Details** section, do the following:
 
 4. Select the required “Source ORG”
 5. On selecting the required “Source ORG”, the related objects will be fetched automatically.
-6.  By default, only nCino objects available in the Source Org will be auto-populated. To view all the objects available, click on **Show All** **Objects**.&#x20;
+6.  By default, only nCino objects available in the Source Org will be auto-populated. To view all the objects available, click on **Show All** **Objects**.
 
     <figure><img src="../../../../../.gitbook/assets/New UI - Ability To Sync The Metadata - 1.png" alt=""><figcaption></figcaption></figure>
 
@@ -49,8 +49,8 @@ Under the **Salesforce Org** **Details** section, do the following:
 
            The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
 
-           1. **Functionality:**  When the Sync Schema option is enabled:
-              1. &#x20;The system fetches the latest metadata from the source org for the selected object.
+           1. **Functionality:** When the Sync Schema option is enabled:
+              1. The system fetches the latest metadata from the source org for the selected object.
               2. Newly added fields are included.
               3. Updated field properties (data type, required status, etc.) are refreshed.
               4. Deprecated or inactive fields are removed.
@@ -65,7 +65,7 @@ Under the **Salesforce Org** **Details** section, do the following:
 **Important Note:** Only those objects will be considered nCino objects if their related prefix is included in the **Plugins** section under the [**My Account**](../../../../arm/arm-administration/user-management/manage-users-account-settings.md) page.
 {% endhint %}
 
-#### &#x20;Record Configuration <a href="#record-configuration" id="record-configuration"></a>
+#### Record Configuration <a href="#record-configuration" id="record-configuration"></a>
 
 1. The filters can be applied on the entry objects under this tab
 2. The following can be observed under this tab:
@@ -83,7 +83,7 @@ The filter criteria can be entered and the query can be built under this tab.
 
 1. Click on the pencil icon beside the query.
 
-<figure><img src="../../../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1646).png" alt=""><figcaption></figcaption></figure>
 
 2. On clicking the pencil icon, the ‘query builder’ will be opened.
 
@@ -95,7 +95,7 @@ The filter criteria can be entered and the query can be built under this tab.
 
 4. Clicking on the operator drop-down field the available list of operators can be observed
 
-<figure><img src="../../../../../.gitbook/assets/image (1651).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1650).png" alt=""><figcaption></figcaption></figure>
 
 5. On completing the field selection, click on the ‘ADD’ icon to add the query to the ‘query editor’ below.
 
@@ -122,7 +122,7 @@ Important Note:
 {% hint style="info" %}
 **Important Note:**
 
-1. &#x20;If your nCino objects include an Attachment object, users must confirm whether they want to fetch the Attachment dataset.
+1. If your nCino objects include an Attachment object, users must confirm whether they want to fetch the Attachment dataset.
 2. Check the number of attachments pulled for the job once the attachment object is selected for the data deployment. For each API call, Salesforce returns at least one and a maximum of five attachments based on the size of the attachments. More APIs calls will get triggered for more attachments, which may result in the API limit being exceeded and the application reporting an error.
 {% endhint %}
 
@@ -135,14 +135,10 @@ This is the summary of the “Feature Migration Template” that is being create
 <figure><img src="../../../../../.gitbook/assets/image (1655).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:** **Related List** section will display only if the **Attachment** object is part of the Feature Migration Template.&#x20;
+**Important Note:** **Related List** section will display only if the **Attachment** object is part of the Feature Migration Template.
 {% endhint %}
 
 1. On verifying all the details on the ‘Preview and Save’ page, save the template by clicking on the 'Save' button.
 2. On clicking 'Save,' you will be redirected to the “Feature Management” page.
 
 <figure><img src="../../../../../.gitbook/assets/image (1656).png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
-
-&#x20;

@@ -1,4 +1,4 @@
-# Migration Template
+# Choose Deployment Template
 
 ### List of Migration Templates supported <a href="#list-of-migration-templates-supported" id="list-of-migration-templates-supported"></a>
 
@@ -27,7 +27,7 @@ To create a new migration template, please follow the below steps:
 3. Click on **Create New Template**.
 4. The **Create Migration Template** tab is auto-selected by default; if not, select it.
 5. Give the template a **name** and a **short description**.
-6. Select the checkboxes for the template types for which you want to create a template. You can create multiple templates at the same time.&#x20;
+6. Select the checkboxes for the template types for which you want to create a template. You can create multiple templates at the same time.
 7. You must upload the **package manifest XML** file for each template type that you have selected. Failure to insert the correct XML file will result in the migration template being created unsuccessfully.
 8. Click **Save**.
 9. You can find your recently created template on the **Environment Provisioning History** page.
@@ -40,7 +40,7 @@ To create a new migration template, please follow the below steps:
 
 The **View History** screen will display the detailed summary report of the template operation being carried out.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (6).png" alt=""><figcaption></figcaption></figure>
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
@@ -51,9 +51,9 @@ Click on the **Log** icon to view the log report on the right side of the page.
 <figure><img src="../../../../../.gitbook/assets/image (1) (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 \
-**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more. \
+**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.\
 \
-**Re-Run** option allows you to run the template once again.&#x20;
+**Re-Run** option allows you to run the template once again.
 
 <figure><img src="../../../../../.gitbook/assets/image (3) (8).png" alt=""><figcaption></figcaption></figure>
 

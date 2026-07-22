@@ -43,7 +43,7 @@ Before configuring SSO in ADFS, you must enable SSO in CodeScan.
 
 ### **Step 2: Setting up Single Sign-On using Active Directory with ADFS and SAML 2.0**
 
-**2.1  Adding a Relying Party Trust**
+**2.1 Adding a Relying Party Trust**
 
 To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), follow the below steps:
 
@@ -58,7 +58,7 @@ To set up the ADFS connection with CodeScan using a Relying Party Trust (RPT), f
 <figure><img src="../../../../.gitbook/assets/image (46) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. On the **Select Data Source** screen, select the second option: **Import data about the relying party from a file**.
-6. Browse for the **metadata XML** file from your local computer and upload it in the **Federation**  **metadata file location**.
+6. Browse for the **metadata XML** file from your local computer and upload it in the **Federation** **metadata file location**.
 
 <figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -137,7 +137,7 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
 
 <figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-8.  To download the **X509 Signing Certificate**, navigate to **Service > Certificates** under the ADFS Management Console.&#x20;
+8.  To download the **X509 Signing Certificate**, navigate to **Service > Certificates** under the ADFS Management Console.
 
     * Export the Token-signing certificates from ADFS and add them to the CodeScan SAML configuration. When using the certificate exporting wizard, select **Base-64 encoded X.509 (.CER)** for the encoding format.
     * Open the exported file in a text editor to get the certificate value.
@@ -154,17 +154,17 @@ Now that your ADFS SSO implementation is set up, you must follow a few more step
 2. Go to the tab of your browser where you have kept the metadata XML certificate open.
 3.  In the **Edit SAML Connection** dialog box on **CodeScan**, enter the following values:
 
-    * **Provider Entity Id:** Copy the **entityID** value from the ADFS Metadata XML file and paste it into **Provider Entity Id** inside CodeScan. \
+    * **Provider Entity Id:** Copy the **entityID** value from the ADFS Metadata XML file and paste it into **Provider Entity Id** inside CodeScan.\
       The entity Id format would be in _**https://\<ADFS\_DOMAIN\_NAME>/adfs/services/trust.**_
 
-    <figure><img src="../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * **Sign In URL:** Copy the **SingleSignOnService Location** value and paste it into the **Sign-In URL** inside CodeScan.
 
     <figure><img src="../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Open the **Certificate (.CER)** you downloaded from ADFS in your text editor, copy the entire content, and paste it into the **X509 Signing Certificate** field of the CodeScan SAML connection.
 
-<figure><img src="../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="398"><figcaption></figcaption></figure>
 
@@ -177,6 +177,6 @@ Now that your ADFS SSO implementation is set up, you must follow a few more step
 
 ### **Step 4: Testing the Single Sign-On Configuration**
 
-1. Log out of the **CodeScan Console**, and then log back in using the **Log in with SAML2**  option.
+1. Log out of the **CodeScan Console**, and then log back in using the **Log in with SAML2** option.
 2. Enter the corporate domain name you have configured when enabling SSO inside CodeScan in the **Your Company email** field. _**For example - autorabit.com**_
 3. You should now successfully redirect to the CodeScan **Organization** page after authentication.

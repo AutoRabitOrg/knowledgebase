@@ -17,7 +17,7 @@ Use ARM to back up changes from your Salesforce org to your [version-control](ht
 1. Log in to ARM.
 2.  From the top navigation bar, select **`Create New > New CI Job`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1216).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New CI Job</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1208).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New CI Job</p></figcaption></figure>
 3.  Click the **Backup to Version Control** tile.
 
     <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
@@ -50,15 +50,15 @@ Under **Build**, provide:
 6. **Run static analysis report** – Run an SCA tool before committing.
    *   **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-       <figure><img src="../../../../../.gitbook/assets/image (1219).png" alt="Apex PMD and Checkmarx criteria configuration"><figcaption><p>Apex PMD / Checkmarx</p></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (1212).png" alt="Apex PMD and Checkmarx criteria configuration"><figcaption><p>Apex PMD / Checkmarx</p></figcaption></figure>
    *   **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-       <figure><img src="../../../../../.gitbook/assets/image (1220).png" alt="CodeScan and SonarQube criteria configuration"><figcaption><p>CodeScan / SonarQube</p></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (1213).png" alt="CodeScan and SonarQube criteria configuration"><figcaption><p>CodeScan / SonarQube</p></figcaption></figure>
 
        * **Run on all supported metadata types** – Scan every retrieved component.
        *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-           <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+           <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
 7. **Additional profile packaging options**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
    * **Remove system and user permissions** – Omit profile permissions from deployment.
@@ -87,7 +87,7 @@ Enable **Auto commit** to push changes directly to your VCS:
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1223).png" alt="Notification recipient list"><figcaption><p>Notifications</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1215).png" alt="Notification recipient list"><figcaption><p>Notifications</p></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

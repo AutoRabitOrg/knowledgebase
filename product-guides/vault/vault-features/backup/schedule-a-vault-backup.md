@@ -2,7 +2,7 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Vault gives you the possibility of a one-time backup configuration, setting frequency, e.g., every day at 03:00 PM for your Salesforce, and ... that is all you need to have your data/metadata backed up in Vault.&#x20;
+Vault gives you the possibility of a one-time backup configuration, setting frequency, e.g., every day at 03:00 PM for your Salesforce, and ... that is all you need to have your data/metadata backed up in Vault.
 
 ### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
@@ -25,33 +25,33 @@ When you are done with the metadata/data selection, you will be navigated to the
     <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the <img src="../../../../.gitbook/assets/image (70) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line"> icon to go to the **`Backup Settings`** page.
 
-    * For **`Data`** objects, you can **`enable Bulk API`**. Bulk API is optimized to load or delete extensive records asynchronously due to parallel processing.&#x20;
+    * For **`Data`** objects, you can **`enable Bulk API`**. Bulk API is optimized to load or delete extensive records asynchronously due to parallel processing.
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
     * For **`Metadata`** types, specify the batch size for both profile and remaining components to retrieve records. The max batch is **10,000** records. This option helps run large jobs that exceed normal processing limits. Per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of **40 MB**. You can process records in batches using the batch size to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 4. Keep the **`"Allow multiple backups to run in parallel"`** toggle to **Yes**. If you turn it off, the backup jobs will run sequentially, meaning that only the next scheduled job will be initiated after one is finished. Additionally, deactivating this option will prevent the scheduled jobs from running concurrently with earlier scheduled backups that haven't finished. The backup status will indicate the **"Stopped"** status for the recently scheduled jobs if the previously scheduled jobs are not completed.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
 5. Select the **`email notification`** icon to receive an email notification whenever the objects are backed up from your Salesforce Org.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
 6. Next, choose the **`frequency`** for backup, i.e., daily, weekly, monthly, or at any specific interval. If you want the schedule of the backup process to run every 4 hours, select the **`Specific interval`** option and indicate the time frame as 4 hours.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
 7. You can specify until what period you want to retain the backed-up data under the **`Backup Retention period`** field.
 8. Click **`Save Config`**.
 9. The next screen will display the summary list of metadata and data members selected for your salesforce and how the backup will be carried out.
    * Click **`Save`**. A confirmation message stating the backup is successfully configured for your Salesforce org will be displayed.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 * You can find the backup configured for your Salesforce Org under the **`Setup > Configs`** tab.
 

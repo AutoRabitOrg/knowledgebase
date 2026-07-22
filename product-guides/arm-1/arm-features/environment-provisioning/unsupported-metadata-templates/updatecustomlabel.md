@@ -1,4 +1,4 @@
-# Update Custom Label
+# Update Custom Labels
 
 The **UpdateCustomLabel** template enables you to update existing custom label values within your Salesforce org via AutoRABIT.
 
@@ -15,7 +15,7 @@ The **UpdateCustomLabel** template enables you to update existing custom label v
    * A **Test Case Name** and **Custom Label Name** are auto-generated.
    * Click **Add** to insert custom test data.
 9. To define additional custom label updates:
-   * Click the edit icon ![Edit](<../../../../../.gitbook/assets/image (1479).png>).
+   * Click the edit icon ![Edit](<../../../../../.gitbook/assets/image (58).png>).
    * Input values in the **Custom Label Name** and **New Value** fields.
    * To add multiple entries for the same test case, click the **+** symbol and repeat the process.
    * Click **OK**, then click **Save** to preserve the test case.

@@ -263,7 +263,7 @@ The column headers in the **Archive Summary** screen have been updated to improv
 
 1.  A new capability has been added to **Vault Connect**, enabling backups to be selected as a source in the configuration.
 
-    <figure><img src="../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1891).png" alt=""><figcaption></figcaption></figure>
 2.  This enhancement empowers customers to strengthen their business continuity strategies by seamlessly leveraging backup data during critical scenarios.
 
     <figure><img src="../../../.gitbook/assets/image (1893).png" alt=""><figcaption></figcaption></figure>
@@ -400,7 +400,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 **Release Date: 04 June 2025**
 
-* **Vault Compare Enhancements**: Enhanced the user experience with easier navigation to specific fields and more intuitive change review capabilities.&#x20;
+* **Vault Compare Enhancements**: Enhanced the user experience with easier navigation to specific fields and more intuitive change review capabilities.
 * **Enhanced Scheduler Architecture**: Improved tracking and queuing of jobs for more efficient and reliable execution.
 * **Additional Validations During Cloning of Replicate Jobs**: Introduced environment validation checks to alert users of any missing metadata before initiating the cloning process of replicate jobs.
 * **Synthetic Backup**: Full backups now utilize delta changes from the previous successful full backup, significantly reducing backup duration.

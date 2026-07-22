@@ -28,22 +28,20 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
     * **Username:** `pavankumar_kodange`
     * **Password:** _(API token generated from Atlassian Account Settings → Security → API tokens with scope)_
 
-
-
 ## Create a Webhook API Token from ARM
 
 1. Log in to ARM.
 2. Navigate to **Admin Section > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../../.gitbook/assets/image (980).png" alt="API Token creation screen in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (940).png" alt="API Token creation screen in ARM"><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Add a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../../.gitbook/assets/image (981).png" alt="Webhook token configuration form in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (941).png" alt="Webhook token configuration form in ARM"><figcaption></figcaption></figure>
 
 8. Your webhook API token is now created.
 

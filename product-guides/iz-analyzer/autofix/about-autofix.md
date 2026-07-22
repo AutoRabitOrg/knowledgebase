@@ -12,7 +12,7 @@ Some of the key benefits are:
 * Preview the fix before applying on the project
 * Audit log of all the issues fixed using Auto Fix feature
 
-<figure><img src="../../../.gitbook/assets/auto_fix_apply (2).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/auto_fix_apply.gif" alt=""><figcaption></figcaption></figure>
 
 ### See Also
 

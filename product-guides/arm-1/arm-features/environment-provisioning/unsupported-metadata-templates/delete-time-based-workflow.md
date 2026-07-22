@@ -16,10 +16,10 @@ The **TimeBasedWorkflow** template enables users to delete time-based workflow a
    * Click **Add** to insert custom test data.
    *   Under the **Monitoring Queue**, enter the **Field Name**, **Operator Name**, and **Monitoring Value**, then click **OK**.
 
-       ![Monitoring Queue](<../../../../../.gitbook/assets/image (62).png>)
+       ![Monitoring Queue](<../../../../../.gitbook/assets/image (60).png>)
    *   Under the **Record To Delete** section, enter the specific records to be deleted, then click **OK**.
 
-       ![Record To Delete](<../../../../../.gitbook/assets/image (63).png>)
+       ![Record To Delete](<../../../../../.gitbook/assets/image (61).png>)
 9. Click **Save** to save the test case.
 10. Click **Save** again to finalize the template.
 11. Once saved, you'll be redirected to the [**Environment Provisioning History**](https://knowledgebase.autorabit.com/docs/environment-provisioning) screen.

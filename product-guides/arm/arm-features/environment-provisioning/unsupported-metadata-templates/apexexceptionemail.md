@@ -10,12 +10,12 @@ To create this template, follow the below steps:
 4. Go to the **Create Unsupported Metadata Template** tab.
 5. Give the template a **name** and a **short description** of it.
 6. Select the **ApexExceptionalEmail** checkbox available under **Add Apex Exception Email.**
-7. Click **Add**.&#x20;
+7. Click **Add**.
 8. On the next screen, a **Test Case Name** appears automatically by default. To add the custom test data, click on **Add** button.
-9.  Users can add the required details in the fields of **Salesforce User, External Email Addresses, and Delete Salesforce User.** To add further details, click on![](<../../../../../.gitbook/assets/image (34) (1) (1).png>)icon.
+9.  Users can add the required details in the fields of **Salesforce User, External Email Addresses, and Delete Salesforce User.** To add further details, click on![](<../../../../../.gitbook/assets/image (58).png>)icon.
 
-    * You can even add multiple pages for the above-generated test cases. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;
-    * Click **OK**.&#x20;
+    * You can even add multiple pages for the above-generated test cases. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.
+    * Click **OK**.
     * Once done, click on the **Save** button to save this page.
 
     <figure><img src="../../../../../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -27,5 +27,5 @@ To create this template, follow the below steps:
 11. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 12. Click the **Run** button to run the template on your destination org.
 13. Select your **destination org** from the dropdown and enter the **email address(es)** to receive an email notification whenever the template is run.
-14. In the **Post Deployment Steps**, select the test cases that you have recently created.&#x20;
+14. In the **Post Deployment Steps**, select the test cases that you have recently created.
 15. Please check the **View History** page for a detailed summary report of the operation carried out.

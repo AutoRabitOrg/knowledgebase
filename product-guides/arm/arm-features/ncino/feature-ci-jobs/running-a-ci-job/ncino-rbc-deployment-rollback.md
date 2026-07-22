@@ -61,7 +61,7 @@ To be able to perform rollbacks on the deployments, users must mark the deployme
 
 13. On triggering the “RollBack” button either on the “Job Results” window or the “Job Details” page, the RollBack window will be displayed. Observe the following screenshot for reference.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 14. Click on the “Salesforce Orgs” to expand and observe the ORGs available. The list of ORGs include both the direct deployment and the post-deployment ORGs.
 
@@ -115,7 +115,7 @@ Observe the ‘**Rollback**’ option, both on the '**Deployment History**' page
 
 <figure><img src="../../../../../../.gitbook/assets/image (71) (2).png" alt=""><figcaption></figcaption></figure>
 
-11. &#x20;On clicking the Rollback, a window will be displayed with the option to select the feature(s) intended to be rolledback.
+11. On clicking the Rollback, a window will be displayed with the option to select the feature(s) intended to be rolledback.
 
 <figure><img src="../../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

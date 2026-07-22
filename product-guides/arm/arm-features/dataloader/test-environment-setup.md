@@ -52,7 +52,7 @@ The test environment in ARM supports convenient data transfer from CSV files to 
 12. You’ll be redirected to the **Test Environment Setup Summary** page.
 13. Click **Run** to initiate the data migration job.
 
-<figure><img src="../../../../.gitbook/assets/image (1126).png" alt="Job summary page showing list of configurations and run option"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1125).png" alt="Job summary page showing list of configurations and run option"><figcaption></figcaption></figure>
 
 ***
 

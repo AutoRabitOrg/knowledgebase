@@ -15,7 +15,7 @@ The **UserInterface** template allows administrators to configure user interface
    * A **Test Case Name** and **Enable Collapsible Sections** field are auto-generated.
    * Click **Add** to enter custom test data.
 9. To configure user interface settings:
-   * Click the edit icon ![Edit](<../../../../../.gitbook/assets/image (1478).png>).
+   * Click the edit icon ![Edit](<../../../../../.gitbook/assets/image (58).png>).
    * Enter the required values in the **User Interface** field.
    * Enable the configuration by selecting the **Active** checkbox.
    * To add multiple configurations for the same test case, click the **+** symbol and repeat the steps.

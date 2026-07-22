@@ -11,7 +11,7 @@ The following articles describe using **Single DataLoader** to extract data from
 4. Choose your [**`Salesforce org`**](/broken/pages/9pLgfInGvztETx4cXCc2) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.
 6. Click **`Login and Fetch objects`** to fetch all the objects from your Salesforce org.
-7. Select the object from which you wish to extract the data. For example, **Account**, **Contact**, **Lead**, etc. You can use the **`Search`** function to search through your objects and  **`filter`** to filter your standard/custom objects quickly.
+7. Select the object from which you wish to extract the data. For example, **Account**, **Contact**, **Lead**, etc. You can use the **`Search`** function to search through your objects and **`filter`** to filter your standard/custom objects quickly.
 8. Click **`Next`**.
 
 <figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -29,7 +29,7 @@ The following articles describe using **Single DataLoader** to extract data from
     * For your object _(example- Account)_ selected, choose a **`field`** _(example- CreatedDate)._
     * Select the **`operator`**.
     * Enter the **`filter value`** _(example- Date Literals, Last\_week)_.
-    * Click on the **+** icon to add the filter.&#x20;
+    * Click on the **+** icon to add the filter.
     * To delete a filter, click on the **x** icon.
 
     <figure><img src="../../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -51,7 +51,7 @@ The following articles describe using **Single DataLoader** to extract data from
     * View the main **`Object`**.
     * View the operation **`Type`** (**`Extract`**).
     * View the number of extracted **`Records`**.
-    * **`Limit`** the export row count. Use this option to retrieve some rows from your export results.&#x20;
+    * **`Limit`** the export row count. Use this option to retrieve some rows from your export results.
 15. You can schedule your tasks so they start running regularly. You can choose between **`Daily`**, **`Weekly`**, or **`On-demand`** schedules.
 16. Finally, click **`Save`** to save your task and run it later.
 
@@ -60,7 +60,7 @@ The following articles describe using **Single DataLoader** to extract data from
 17. Your task is shown on top of the lists on the **`DataLoader Summary`** screen.
 18. Click **`Run`** to start the DataLoader immediately before the scheduled time.
 
-<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (70) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 19. Select the configurations here:
     * **Use Batch Size** whenever the Bulk API checkbox is left unchecked, the Batch API is used.
@@ -73,22 +73,22 @@ The following articles describe using **Single DataLoader** to extract data from
 
 21. The **`Results of Last Run`** section shows the number of successful or failed records extracted. You can view the records or download them to your local system. The records are generated in ZIP format.
 
-<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (72) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (78) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-1. **`Edit:`** Modifies or updates the process details.&#x20;
+1. **`Edit:`** Modifies or updates the process details.
 2. **`Abort:`** Aborts the process while it is still running.
 3. **`Schedule:`** Sets the schedule at which the process must run.
 4. **`Delete:`** Deletes the extract process.
 5. **`Log:`** Provides information about the execution of the extracted task.
 6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../validation-workflow-rules.md). Sample VR/WFR attached:
 
-<figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (75) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (77) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 7. **`Clone:`** Creates a copy (clone) of the extract process. Operation type and object name are displayed. Enter the **`Process Name`** in the field. The default **`Salesforce Org`** is automatically selected. To choose a different org, use the dropdown list. Use the **`Edit`** button to change the query filter, then click **`Validate`**. Finally, click **`Clone`**.
 

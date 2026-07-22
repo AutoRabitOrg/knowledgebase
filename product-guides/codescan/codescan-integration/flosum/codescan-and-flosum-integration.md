@@ -10,30 +10,26 @@
 
 ## How to Integrate Flosum with CodeScan <a href="#how-to-integrate-flosum-with-codescan" id="how-to-integrate-flosum-with-codescan"></a>
 
-1. **Install CodeScan.**&#x20;
-   1. Obtain the CodeScan package URL from your Flosum Customer Success Manager.&#x20;
-   2. Install the CodeScan package in your Flosum organization.&#x20;
+1. **Install CodeScan.**
+   1. Obtain the CodeScan package URL from your Flosum Customer Success Manager.
+   2. Install the CodeScan package in your Flosum organization.
    3. After installation, click on the app launcher and open Flosum-CodeScan.
 
 <figure><img src="../../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
-2.  **Authorize** CodeScan.
+2. **Authorize** CodeScan.
+   *   Go to the **Authorization** tab in Flosum-CodeScan.<br>
 
-    *   Go to the **Authorization** tab in Flosum-CodeScan.<br>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+   * Enter the following details to sync CodeScan with your Flosum organization.
+     * **CodeScan URL**: Use the appropriate URL for your CodeScan instance:
+       * **US** region: [_https://app.codescan.io_](https://app.codescan.io)
+       * **EU** region: [_https://app-eu.codescan.io_](https://app-eu.codescan.io)
+       * **AUS** region: [_https://app-aus.codescan.io_](https://app-aus.codescan.io)
+     * **Organization Key**: Obtain this key from your hosted CodeScan instance.
+     *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."<br>
 
-        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-    * Enter the following details to sync CodeScan with your Flosum organization.
-      * **CodeScan URL**: Use the appropriate URL for your CodeScan instance:
-        * **US** region: [_https://app.codescan.io_](https://app.codescan.io)
-        * **EU** region: [_https://app-eu.codescan.io_](https://app-eu.codescan.io)
-        * **AUS** region: [_https://app-aus.codescan.io_](https://app-aus.codescan.io)
-      * **Organization Key**: Obtain this key from your hosted CodeScan instance.
-      *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."<br>
-
-          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. **Flosum Branch Configuration**:
    1. On the **Branch Configuration** tab, choose the branch you want to scan.
       * Select all or specific component types from the six supported profiles:
@@ -46,8 +42,8 @@
       *   Check the boxes for the components you want to scan and click **Save**.<br>
 
           <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. **Finalize Setup**:&#x20;
-   *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server. <br>
+4. **Finalize Setup**:
+   *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server.<br>
 
        <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
    *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.<br>
@@ -69,6 +65,3 @@
        <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Your Flosum-CodeScan integration is complete!
-
-
-

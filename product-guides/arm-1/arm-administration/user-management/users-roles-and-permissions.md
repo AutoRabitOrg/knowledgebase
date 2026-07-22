@@ -15,7 +15,7 @@ The **Super Administrator** (Super Admin) has the highest privileges in ARM.
 * Add users to admin groups
 
 > **Super Admin safeguards**\
-> &#xNAN;_&#x53;uper Admin_ and **the currently logged-in user** are locked for **all** user-management actions: they cannot be added, deleted, suspended, edited, or delegated.
+> \&#xNAN;_Super Admin_ and **the currently logged-in user** are locked for **all** user-management actions: they cannot be added, deleted, suspended, edited, or delegated.
 
 ### Org Administrators <a href="#org-administrators" id="org-administrators"></a>
 
@@ -94,7 +94,7 @@ Admins can download all user data as CSV.
 
 1.  In **Settings › Users**, click **Export All Users**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1904).png" alt=""><figcaption></figcaption></figure>
 2.  Select fields and click **Export**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -108,10 +108,10 @@ Admins can download all user data as CSV.
 
 1.  Go to **Settings › Users › Roles**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 2.  Click **Create Role**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 3.  Provide a **Role Name**, **Description**, and tick permissions.\
     <br>
 

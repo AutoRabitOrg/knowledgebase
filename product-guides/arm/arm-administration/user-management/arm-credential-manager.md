@@ -78,7 +78,7 @@ _For details, see the dedicated_ [_HashiCorp Vault guide_](https://knowledgebase
 * Upload the **certificate-signed key** while creating the credential.
 * Supported for **GitHub Enterprise Cloud** orgs.
 
-<figure><img src="../../../../.gitbook/assets/image (636).png" alt="SSH Certificate credential form" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (634).png" alt="SSH Certificate credential form" width="563"><figcaption></figcaption></figure>
 
 > **Limitation:** Available only for GitHub Enterprise Cloud.
 

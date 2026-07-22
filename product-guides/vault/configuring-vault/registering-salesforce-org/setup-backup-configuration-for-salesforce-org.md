@@ -21,7 +21,7 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
    * **Metadata and data excluding special objects**
    * **Special objects (history, audit logs, KAV, etc.)**
 
-<figure><img src="../../../../.gitbook/assets/image (202).png" alt="Configuration type selection screen in Vault"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (200).png" alt="Configuration type selection screen in Vault"><figcaption></figcaption></figure>
 
 3. Select metadata types from the list to include in the backup.\
    Click **`Next`**.

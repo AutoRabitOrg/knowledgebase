@@ -86,10 +86,10 @@ To create a new unsupported metadata template, please follow the below steps:
 
 9.  However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
 
-    * Click on![](<../../../../../.gitbook/assets/image (23) (1) (1) (1) (1).png>)icon.
-    * Enter the page layout name in the **Page Layout** field.&#x20;
-    * Activate the page layout by selecting the **Active** checkbox.&#x20;
-    * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
+    * Click on![](<../../../../../.gitbook/assets/image (58).png>)icon.
+    * Enter the page layout name in the **Page Layout** field.
+    * Activate the page layout by selecting the **Active** checkbox.
+    * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.
     * Click **OK**.
 
     <figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
@@ -112,8 +112,8 @@ Click on the **Log** icon to view the log report on the right side of the page.
 
 <figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.&#x20;
+**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.
 
-**Re-Run** option allows you to run the template once again.&#x20;
+**Re-Run** option allows you to run the template once again.
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.

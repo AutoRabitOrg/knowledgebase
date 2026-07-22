@@ -44,18 +44,12 @@ Search results are presented in a structured comparison view, allowing users to 
 1. Specify the required parameters:
    1.  <mark style="color:red;">**From Date**</mark><mark style="color:red;">\*</mark> – Select the start date.
 
-
-
        ![](<../../../.gitbook/assets/Unknown image (16) (1) (1) (1)>)
    2.  <mark style="color:red;">**To Date**</mark><mark style="color:red;">\*</mark> – Select the end date.
-
-
 
        ![](<../../../.gitbook/assets/Unknown image (17) (1) (1) (1)>)
    3. <mark style="color:red;">**Configurations**</mark><mark style="color:red;">\*</mark> – Select one or more backup/archive configurations.
 2.  All mandatory fields must be completed before proceeding.
-
-
 
     ![](<../../../.gitbook/assets/Unknown image (18) (1) (1) (1)>)
 
@@ -66,16 +60,12 @@ Search results are presented in a structured comparison view, allowing users to 
     <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 2.  The object selection determines the available fields and filtering options.
 
-
-
     ![](<../../../.gitbook/assets/Unknown image (20) (1) (1) (1)>)
 
 #### **Select Fields and Apply Filters**
 
 1. Select the required **Fields** from the list.
 2.  Click **Add Filter** to define filter conditions, if required.
-
-
 
     ![](<../../../.gitbook/assets/Unknown image (21) (1) (1) (1)>)
 3.  Locate the **Case Sensitive** toggle at the bottom of the screen.
@@ -87,8 +77,6 @@ Search results are presented in a structured comparison view, allowing users to 
 
     Click the **info (i)** icon next to the toggle to view additional details.
 
-
-
     <figure><img src="../../../.gitbook/assets/62.png" alt=""><figcaption></figcaption></figure>
 4.  The **Case sensitivity info** popup is displayed.
 
@@ -97,14 +85,10 @@ Search results are presented in a structured comparison view, allowing users to 
     * Case-sensitive search is enabled by default for text-based fields when using operators such as **Starts with**, **Ends with**, **Contains**, **Equals**, and **Not Equals**
     * Disabling this option enables case-insensitive search, which may impact query performance
 
-
-
     <figure><img src="../../../.gitbook/assets/63.png" alt=""><figcaption></figcaption></figure>
 5. Click **OK** to close the popup.
 6. Modify the auto-generated query if customization is needed.
 7.  The query section dynamically updates based on the selected fields and filters.
-
-
 
     ![](<../../../.gitbook/assets/Unknown image (22) (1) (1) (1)>)
 8. Click **Next** to proceed.
@@ -121,14 +105,10 @@ Search results are presented in a structured comparison view, allowing users to 
 3. Enter a **Description**, if required.
 4.  Click **Save** to create the configuration.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (25) (1) (1) (1)>)
 5. Click **Cancel** to discard the changes.
 6. After saving, a confirmation message is displayed:
 7.  _Search And Compare config '' created successfully_
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (26) (1) (1) (1)>)
 8. Click **OK** to close the message and return to the configuration screen.
@@ -136,8 +116,6 @@ Search results are presented in a structured comparison view, allowing users to 
 ## View Available Configurations
 
 1.  After selecting the Salesforce Org and clicking **Apply**, the configured records are displayed in the **Job Config** grid.
-
-
 
     ![](<../../../.gitbook/assets/Unknown image (27) (1) (1) (1)>)
 2. **The grid displays:**
@@ -156,12 +134,8 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Click the **Query (\</>)** icon under the _Query_ column to view the configured query.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (28) (1) (1) (1)>)
 2.  The query is displayed in a dialog window.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (29) (1) (1)>)
 3. Click OK to close the dialog.
@@ -170,15 +144,11 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Click the **Run (**<mark style="color:blue;">**▶**</mark>**)** icon under the Actions column to execute the configuration.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (30) (1) (1)>)
 
 ### Edit Configuration
 
 1.  Click the **Edit (**<mark style="color:blue;">**✎**</mark>**)** icon to modify the existing configuration details.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (62)>)
 
@@ -186,15 +156,11 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Click the **Clone (**<mark style="color:blue;">**📄**</mark>**)** icon to create a duplicate of the selected configuration.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (63)>)
 
 ### Delete Configuration
 
 1.  Click the **Delete (🗑)** icon to remove the selected configuration.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (64)>)
 
@@ -202,15 +168,11 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Click the **Config Names** column to view all associated configuration names.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (31) (1) (1)>)
 2. The **Config Names** dialog displays:
 
 * A search field to filter config names
 *   The list of associated configurations
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (32) (1) (1)>)
 
@@ -224,9 +186,9 @@ Search results are presented in a structured comparison view, allowing users to 
        <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Configure Job Run Details
    1. The **Job Run Details** dialog is displayed.
-   2.  **The dialog shows:**&#x20;
+   2.  **The dialog shows:**
 
-       1. **Object Name**&#x20;
+       1. **Object Name**
        2. Auto-generated **Label**
 
        <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -240,7 +202,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  As soon as the run is initiated, a new job will be start running, with an option to terminate the job run.
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -261,12 +223,12 @@ Vault displays the list of backups and archives identified based on the selected
 
        <figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 3. **View Job Details**
-   1.  The job details page displays:&#x20;
+   1.  The job details page displays:
 
-       1. **Org Name**&#x20;
-       2. **Job Label**&#x20;
-       3. **Configuration Label**&#x20;
-       4. **Selected Object**&#x20;
+       1. **Org Name**
+       2. **Job Label**
+       3. **Configuration Label**
+       4. **Selected Object**
        5. **From Date**
        6. **To Date**
 
@@ -288,7 +250,7 @@ Vault displays the list of backups and archives identified based on the selected
        4. Download results
        5. Change view
 
-       <figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
    3. Select the required records from the list.
    4. Click Restore to initiate the restore process.
    5. Click **Cancel** to exit.
@@ -321,18 +283,12 @@ Vault displays the list of backups and archives identified based on the selected
 7. Restore Job Confirmation
    1.  A confirmation message is displayed indicating that the restore job has been created successfully.
 
-
-
        ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (43)>)
    2. Click **OK** to continue.
 8. Access Restore Page: Click “OK” will redirects the navigation to the “Restore” module.
 9.  Observe the restore page for job details
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (44)>)
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (45)>)
 10. View Restore Job Details
@@ -350,22 +306,16 @@ Vault displays the list of backups and archives identified based on the selected
 3. Review the list of backup jobs displayed with configuration name, object name, duration, and status.
 4.  Click the required **Label** to proceed with comparison.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (46)>)
 
 #### Select Backups for Comparison
 
 1.  From all the listed backups, at least should be selected to perform comparison
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (47)>)
 2. Select two backup labels using the checkboxes.
 3. Ensure two backups are selected.
 4.  Click the **Compare** button to initiate the comparison process.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (48)>)
 5. Click **Compare**.
@@ -375,12 +325,8 @@ Vault displays the list of backups and archives identified based on the selected
 1. Enter a **Label** for the comparison.
 2.  Specify the number of days to preserve the result (maximum 30 days).
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (49)>)
 3.  Add a description if required.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (50)>)
 4. Click **Save**.
@@ -395,8 +341,6 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  The recently triggered job would be running on the top of the list.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (51)>)
 
 #### Compare Result View
@@ -404,12 +348,8 @@ Vault displays the list of backups and archives identified based on the selected
 1. Review the selected object and snapshot details displayed at the top.
 2.  Use filters such as **All**, **No Changes**, **Modifications**, or **Deletions to navigate across the changes identified in the application**.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (52)>)
 3.  Click the **View Records** icon to view field-level differences.
-
-
 
     ![A white notebook with black text AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (53)>)
 
@@ -443,8 +383,6 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  Review the confirmation message for re-execution.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (58)>)
 2. Click **OK**.
 3. Monitor the status update in Compare History.
@@ -466,8 +404,6 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  From the compare results page, select the required record.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1) (1)>)
 2. Click **Review and Restore**.
 
@@ -475,16 +411,12 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  Review the restore considerations displayed (triggers, workflows, dependencies, metadata limits, etc.).
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1) (1)>)
 2. Click **Got It** to proceed.
 
 #### Restore Summary
 
 1.  Verify the **Org Name** and **Restore Label**.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1) (1)>)
 2. Enter the required **Batch Size** (maximum limit 9999).
@@ -497,8 +429,6 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  Navigate to **Restore** from the left panel.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1) (1)>)
 2. Review the restore job entry with date, duration, success records, and status.
 3. Monitor the job status until completion.
@@ -507,11 +437,7 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  Click the “pencil icon” to edit the already created job
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1) (1)>)
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1) (1)>)
 
@@ -520,16 +446,12 @@ Vault displays the list of backups and archives identified based on the selected
 1. Navigate to **Search & Compare → Job Config**.
 2.  In the configuration list, click the **Clone** icon under the **Actions** column for the required configuration.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (7) (1) (1) (1) (1)>)
 
 #### Config Clone Window
 
 1. In the **Config Clone** window, verify the **Source Org**.
 2.  Select the **Destination Org**.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (8) (1) (1) (1) (1)>)
 3. Click the **Configurations** dropdown to choose the required configuration(s).
@@ -540,12 +462,8 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  From the dropdown list, select one or more configurations to clone.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (9) (1) (1) (1) (1)>)
 2.  On completing the required selections click “CLONE” to initiate the cloning
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (10) (1) (1) (1) (1)>)
 
@@ -554,16 +472,12 @@ Vault displays the list of backups and archives identified based on the selected
 1. If metadata differences are detected, review the warning message.
 2.  Check the listed **Objects** and **Fields** that may be missing in the target org.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (11) (1) (1) (1) (1)>)
 3. Click **Confirm** to proceed or **Cancel** to abort the cloning process.
 
 #### Clone Success Message
 
 1.  Upon successful cloning, a confirmation message is displayed indicating the target org.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (12) (1) (1) (1) (1)>)
 2. Click **OK** to close the message.
@@ -573,16 +487,12 @@ Vault displays the list of backups and archives identified based on the selected
 
 1.  In the configuration list, locate the required config.
 
-
-
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (13) (1) (1) (1)>)
 2. Click the **Delete** icon under the **Actions** column.
 
 #### Delete Confirmation
 
 1.  A confirmation message is displayed with the configuration name.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (14) (1) (1) (1)>)
 2. Click **Delete** to permanently remove the configuration.

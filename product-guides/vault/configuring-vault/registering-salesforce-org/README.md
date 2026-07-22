@@ -33,8 +33,6 @@ To register a new Salesforce organization:
 
 1.  Click **REGISTER NEW ORG**.
 
-
-
     ![](<../../../../.gitbook/assets/Unknown image (28) (1)>)
 
 This action opens the **Source Org Integration** setup wizard.
@@ -43,7 +41,7 @@ This action opens the **Source Org Integration** setup wizard.
 
 The **Source Org Integration** wizard begins with **Environment Details**.This step captures the basic configuration required to connect the Salesforce environment.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (25) (1) (1)>)
 
 Configure the following fields:
 
@@ -58,7 +56,7 @@ Configure the following fields:
 
 After entering the username, select the type of Salesforce environment.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (26) (1) (1)>)
 
 Available options include:
 
@@ -80,7 +78,7 @@ Click **Continue** to proceed.
 
 The next step guides the creation of a **Salesforce External Client App** required for OAuth authentication.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (27) (1) (1)>)
 
 Vault displays the configuration steps that must be completed in Salesforce.
 
@@ -101,9 +99,9 @@ Click **I've completed the setup** to continue.
 
 Add the required OAuth scopes in the Salesforce External Client App.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (28) (1) (1)>)
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (29) (1)>)
 
 The following scopes must be enabled:
 
@@ -121,14 +119,14 @@ Any mismatch will result in connection failure.
 
 After completing the Salesforce External Client App configuration, provide the OAuth credentials in Vault.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (30) (1)>)
 
 Enter the following details:
 
 * **Client ID** – The Consumer Key generated from the Salesforce External Client App.
 * **Client Secret** – The Consumer Secret generated from the Salesforce External Client App.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (7) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (31) (1)>)
 
 These values are available in Salesforce under the External Client App configuration.
 
@@ -148,9 +146,9 @@ Click **Continue** to proceed to the authorization step.
 
 The **Connect to Salesforce** step initiates the OAuth authorization process.
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (8) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (32) (1)>)
 
-![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1) (1) (1)>)
+![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (33) (1)>)
 
 Vault displays the connection details for verification:
 
@@ -356,8 +354,6 @@ Vault opens the **Environment Details** window for the selected Salesforce envir
 
 1.  The **Environment Details** window allows modification of the registered Salesforce org configuration.
 
-
-
     ![](<../../../../.gitbook/assets/Unknown image (67)>)
 
     ![](<../../../../.gitbook/assets/Unknown image (68)>)
@@ -395,13 +391,9 @@ The first stage of the wizard provides guidance for creating an **External Clien
 * Select **Authorization Code (Web Server) Flow**.
 *   Disable the **PKCE security option** if required.
 
-
-
     ![](<../../../../.gitbook/assets/Unknown image (70)>)
 
 1.  Copy the **Callback URL (Redirect URI)** displayed in Vault and add it to the External Client App configuration in Salesforce.
-
-
 
     ![](<../../../../.gitbook/assets/Unknown image (71)>)
 2. Configure the following **OAuth scopes** in Salesforce:
@@ -411,8 +403,6 @@ The first stage of the wizard provides guidance for creating an **External Clien
 * Manage user data via Web browsers
 * Full access
 *   Perform requests at any time (refresh\_token, offline\_access)
-
-
 
     ![](<../../../../.gitbook/assets/Unknown image (72)>)
 
@@ -425,12 +415,8 @@ The first stage of the wizard provides guidance for creating an **External Clien
 
 *   **Client ID** – The Consumer Key generated in Salesforce.
 
-
-
     ![](<../../../../.gitbook/assets/Unknown image (73)>)
 *   **Client Secret** – The Consumer Secret generated in Salesforce.
-
-
 
     ![](<../../../../.gitbook/assets/Unknown image (74)>)
 
@@ -445,8 +431,6 @@ Vault uses these credentials to securely establish OAuth authentication with the
 2. Click the **More Actions (⋮)** menu under the **Actions** column.
 3.  Select **Connect (Beta)**.
 
-
-
     ![](<../../../../.gitbook/assets/Unknown image (75)>)
 
 The **Connect (Beta)** configuration page opens for the selected org.
@@ -454,8 +438,6 @@ The **Connect (Beta)** configuration page opens for the selected org.
 ### Access the Connect (Beta) Page
 
 1.  After selecting **Connect (Beta)**, the **Connect (Beta)** tab opens within the org configuration screen.
-
-
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (76)>)
 2. This page displays all configured **Connect jobs** for the selected org.
@@ -467,6 +449,3 @@ The **Connect (Beta)** configuration page opens for the selected org.
 
 3. If no configurations exist, the page displays the message **“No Connects.”**
 4. To create a new configuration, click **Add Connect Config**.
-
-
-

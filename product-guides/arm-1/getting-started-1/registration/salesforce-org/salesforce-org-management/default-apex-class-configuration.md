@@ -1,12 +1,12 @@
 # Default Apex Class Configuration
 
 {% hint style="info" %}
-**Important Note:** This article is for **Org Administrators** in particular. The actions discussed in this article are not available to general users. &#x20;
+**Important Note:** This article is for **Org Administrators** in particular. The actions discussed in this article are not available to general users.
 {% endhint %}
 
 ### Configure Default Apex Test Class for your Salesforce Org <a href="#configure-default-apex-text-class-for-your-salesforce-org" id="configure-default-apex-text-class-for-your-salesforce-org"></a>
 
-To configure the default **Apex Test Class** for your Salesforce org, follow the below steps:&#x20;
+To configure the default **Apex Test Class** for your Salesforce org, follow the below steps:
 
 1. Log in to your ARM account.
 2. Hover your mouse over the Settings tab and click on the option: **`Salesforce Org`**.
@@ -17,19 +17,15 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 <figure><img src="../../../../../../.gitbook/assets/image (2442).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;    **`a. Fetch Current Set:`** This option fetches Apex and Test classes dependency. From the list     fetched, select the required Apex Test Class that you would like to configure and run into the Destination Org
+**`a. Fetch Current Set:`** This option fetches Apex and Test classes dependency. From the list fetched, select the required Apex Test Class that you would like to configure and run into the Destination Org
 
-<figure><img src="../../../../../../.gitbook/assets/image (2443).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2442).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;    **`b. Auto-populate:`** This option will run all local tests and get the complete dependency map
+**`b. Auto-populate:`** This option will run all local tests and get the complete dependency map
 
 <figure><img src="../../../../../../.gitbook/assets/image (2444).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../../.gitbook/assets/Screenshot 2026-02-18 at 12.25.47.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
 
 {% hint style="warning" %}
 **Troubleshooting:** If it takes longer to fetch the test classes using Auto-Populate, refresh the status by clicking the![](<../../../../../../.gitbook/assets/image (775).png>)icon.
@@ -42,17 +38,17 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 2. Go to **Setup**.
 3. Use the **Quick Find/Search** box to open the **Apex Test Execution** page.<br>
 
-![](<../../../../../../.gitbook/assets/image (776).png>)
+<img src="../../../../../../.gitbook/assets/image (776).png" alt="" data-size="original">
 
 4. Click on **Options**. The **Apex Test Execution Options** pop-up appears.
 
-![](<../../../../../../.gitbook/assets/image (777).png>)
+<img src="../../../../../../.gitbook/assets/image (777).png" alt="" data-size="original">
 
 5. Ensure that the **Store Only Aggregated Code Coverage** check box is unselected.
 6. Click **OK**, and return to ARM.
 {% endhint %}
 
-&#x20;    **`c. Add Manually:`**&#x4D;anually configure your default Apex Test class.
+**`c. Add Manually:`**&#x4D;anually configure your default Apex Test class.
 
 5. On the next auto-populated screen, enter the **`Apex Test Class`** name and **`Apex Class/Trigger`** name in the respective fields. Mark the Apex class as default, and select the **`Default`** checkbox for such a test class.
 6. Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.

@@ -20,8 +20,6 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 
     <figure><img src="../../../../../.gitbook/assets/image (1973).png" alt=""><figcaption></figcaption></figure>
 
-
-
 _**\*\*\*\*\*The branch creation process in ARM has been enhanced to improve responsiveness by creating the branch instantly using the GitHub API when the user initiates the action. This allows users to access and start working on the branch immediately without any delay. The required registration process is handled asynchronously in the background, ensuring a seamless experience without impacting performance or existing repository integrity.**_
 
 _**Note: This optimized flow is applicable only when GitHub Pull Request functionality is enabled for the repository; otherwise, the system will fall back to the existing branch creation process.**_
@@ -29,9 +27,9 @@ _**Note: This optimized flow is applicable only when GitHub Pull Request functio
 {% hint style="info" %}
 **Important Notes:**
 
-1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.&#x20;
+1. There is a provision to choose **`All`** in the **`Salesforce Org Author`** field. Upon selection, this commits changes across the org irrespective of the user registered to that Salesforce org.
 2. In addition to the ALL provision, any Salesforce Org Authors who have access to create, edit, or delete data through either profile or permission-set assignments will be listed and can be selected individually.
-3. These options are accessible only to ARM administrators or users who have permission to commit on behalf of others.&#x20;
+3. These options are accessible only to ARM administrators or users who have permission to commit on behalf of others.
 4. When **Skip Mapping** is set to false, users cannot choose associated child branches of a mapped branch. In the recent release, ARM reads the mapped branch for your version control repository and displays the related child branches during commit, even if skip mapping is disabled.<br>
 {% endhint %}
 
@@ -45,9 +43,9 @@ _**Note: This optimized flow is applicable only when GitHub Pull Request functio
      4. **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.
 
 {% hint style="info" %}
-**Important Note:**&#x20;
+**Important Note:**
 
-Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto Draft`**.&#x20;
+Under the **`Package Manifest`** option, you can find the checkbox **`Apply Auto Draft`**.
 
 * If you click the checkbox above, the metadata components in the uploaded XML file will be compared to your source control and Salesforce, and any modified/added components will be displayed on the next Commits screen.
 * If left unchecked, the components will be compared only with Salesforce, and any changed or newly added components will be shown on the next screen.
@@ -65,8 +63,6 @@ Use **Select Manually** when you already know which metadata components need to 
 
 For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate a larger metadata set. If the developer already knows the target components, Select Manually is the recommended and faster workflow.
 
-
-
 *   **`Re-use Previous Validated Commit Label:`** If you placed changes related to a user story or task, etc., under a specific commit label, you can choose the same in this field. The main advantage of creating a commit label is to reuse the labels and perform multiple commits under a given label.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1977).png" alt=""><figcaption></figcaption></figure>
@@ -75,11 +71,11 @@ For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate 
 <figure><img src="../../../../../.gitbook/assets/image (1050).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note about Review Artifact:**&#x20;
+**Important Note about Review Artifact:**
 
-* You can create a review of selected artifacts or a module or collection.&#x20;
+* You can create a review of selected artifacts or a module or collection.
 * You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
-* When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below: \
+* When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below:\
   ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png>)
 {% endhint %}
 
@@ -142,20 +138,16 @@ ARM allows performing a validation deployment before actually committing the cha
 1. Under the **`Validation Report`** section, you can:
    1. **`Generate Diff Report at current Head:`**&#x53;elect this option to auto-generate a code difference report upon commit completion.Important Note:In some scenarios, this option is selected by default. This usually occurs if you set the criteria for the commit process globally, which enables you to generate a Diff Report by default. Your commit criteria are under the **`My Account > Commit Validation - Approval Settings`** section. However, remember that once the criteria is set, the commit is automatically rejected if you deselect the **`Generate Diff Report`** checkbox.
    2. **`Run Static Code Analysis:`** You can initiate a [Static Code Analysis tool](https://www.autorabit.com/products/codescan/) to identify potential software quality issues before the code moves to production. Like **`Generate Diff Report at current HEAD`**, this option is auto-selected by default if the criteria are set globally (under the **`My Account > Commit Validation - Approval Settings`** section).
-      *   For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components:
+      * For _ApexPMD_, _Checkmarx_, _CodeScan_, and _SonarQube_: ARM allows you to set the criteria for running the SCA tool, whether to run on all supported metadata types from the full source or to run on the newly added components:
+        * **All Supported Metadata Types:** This option executes a comprehensive security analysis across all selected metadata components, irrespective of their creation or modification timestamps. This approach is recommended for complete security audits.
+        * **Only Newly Added Supported Metadata Types:** This option performs a targeted analysis, focusing solely on metadata components created on a specific date. It is designed to evaluate recent additions efficiently.
+        *   Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.\
+            <br>
 
-          * **All Supported Metadata Types:** This option executes a comprehensive security analysis across all selected metadata components, irrespective of their creation or modification timestamps. This approach is recommended for complete security audits.
-          * **Only Newly Added Supported Metadata Types:** This option performs a targeted analysis, focusing solely on metadata components created on a specific date. It is designed to evaluate recent additions efficiently.
+            <figure><img src="../../../../../.gitbook/assets/image (1982).png" alt="" width="375"><figcaption></figcaption></figure>
 
-
-
-          *   Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.\
-              <br>
-
-              <figure><img src="../../../../../.gitbook/assets/image (1982).png" alt="" width="375"><figcaption></figcaption></figure>
-
-              <figure><img src="../../../../../.gitbook/assets/image (1983).png" alt="" width="375"><figcaption></figcaption></figure>
-   3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. <br>
+            <figure><img src="../../../../../.gitbook/assets/image (1983).png" alt="" width="375"><figcaption></figcaption></figure>
+   3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org.<br>
 
        #### Selecting Salesforce Orgs for Validation
 
@@ -257,7 +249,7 @@ Suppose the error REJECTED\_NONFASTFORWARD is thrown in your EZ-Commit; in that 
 
 ### Why is the API name change showing under Deleted Components in Commit? <a href="#why-is-api-name-change-showing-under-deleted-components-in-commit" id="why-is-api-name-change-showing-under-deleted-components-in-commit"></a>
 
-When there is an **API name change**, Salesforce considers it a **new metadata API** while the retrieved call occurs.&#x20;
+When there is an **API name change**, Salesforce considers it a **new metadata API** while the retrieved call occurs.
 
 When committing such API name change components, please select the new API name, and the older one can be deleted as a destructive commit.
 
@@ -272,13 +264,13 @@ Salesforce Orgs are displayed on the EZ-Commit screen if an admin selects the **
 
 If the admin does not enable **Skip Mappings**, users must map their respective **Version Control repository** branch to their **Salesforce Org:** Go to **Admin > Salesforce Org Mgmt > Selected Salesforce Org > Salesforce Org- Mapping**, then map the respective branches individually.
 
-<figure><img src="../../../../../.gitbook/assets/image (1988).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1987).png" alt="" width="563"><figcaption></figcaption></figure>
 
 To avoid this, contact your admin to select the **Skip Mappings** checkbox under the **My Roles** section on the **Profile** page. More information on how to map a branch to a Salesforce org is available [here](https://knowledgebase.autorabit.com/docs/salesforce-org-management#salesforce-org-mappings).
 
 ### How can I commit restricted 'Profile User Permissions'? <a href="#how-can-i-commit-restricted-profile-user-permissions" id="how-can-i-commit-restricted-profile-user-permissions"></a>
 
-CommentShare feedback on the editorDue to limitations from Salesforce, **User Permissions** set to **`False`** cannot be retrieved via **Metadata API** call. Hence, those changes are not displayed under the **File Diff** report in **EZ-Commit** for **Profiles**. This is an expected behavior. \
+CommentShare feedback on the editorDue to limitations from Salesforce, **User Permissions** set to **`False`** cannot be retrieved via **Metadata API** call. Hence, those changes are not displayed under the **File Diff** report in **EZ-Commit** for **Profiles**. This is an expected behavior.\
 For more information on the Profile Metadata, click [here](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_profile.htm?q=profile).
 
 <img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-AFEGV45F.png" alt="" data-size="original">

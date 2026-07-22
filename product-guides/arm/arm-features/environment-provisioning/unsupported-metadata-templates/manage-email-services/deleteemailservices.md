@@ -1,4 +1,4 @@
-# Delete Email Services
+# DeleteEmailServices
 
 The **DeleteEmailServices** template allows you to remove specific fields from existing email service configurations in Salesforce.
 
@@ -11,16 +11,13 @@ The **DeleteEmailServices** template allows you to remove specific fields from e
 5. Enter a **template name** and a **short description**.
 6. Select the **DeleteEmailServices** checkbox under **Manage Email Services**.
 7. Click **Add**.
-
 8. On the next screen, a **Test Case Name** and **Fields To Delete** are auto-populated. To add custom test data, click **Add**.
-
 9. To change field names for auto-generated or custom test cases:
-   - Click the ![Edit Field Icon](../../../../../../.gitbook/assets/image%20(75).png) icon.
-   - Enter the new field name in the provided text box.
-   - To add multiple fields, click the **+** symbol and repeat the above steps.
-   - Click **OK** once done.
-   - Click **Save** to finalize the configuration for this test case.
-
+   * Click the ![Edit Field Icon](<../../../../../../.gitbook/assets/image (58).png>) icon.
+   * Enter the new field name in the provided text box.
+   * To add multiple fields, click the **+** symbol and repeat the above steps.
+   * Click **OK** once done.
+   * Click **Save** to finalize the configuration for this test case.
 10. Click **Save** again to store the template.
 11. After successful creation, you will be redirected to the **Environment Provisioning History** screen.
 12. Click **Run** to apply the template to your destination org.

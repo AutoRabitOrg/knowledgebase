@@ -57,9 +57,9 @@ Fill in the **Package Version** section:
 If the Dev Hub owns other packages, they appear here.
 
 * Move items between lists with
-  * ![Add dependency](<../../.gitbook/assets/image (1445).png>) and ![Remove dependency](<../../.gitbook/assets/image (1446).png>)
+  * ![Add dependency](<../../.gitbook/assets/image (734).png>) and ![Remove dependency](<../../.gitbook/assets/image (735).png>)
 * Re-order with
-  * ![Move up](<../../.gitbook/assets/image (1455).png>) and ![Move down](<../../.gitbook/assets/image (1457).png>)
+  * ![Move up](<../../.gitbook/assets/image (1447).png>) and ![Move down](<../../.gitbook/assets/image (1448).png>)
 
 <figure><img src="../../.gitbook/assets/image (1458).png" alt="Package Dependencies list"><figcaption></figcaption></figure>
 
@@ -87,7 +87,7 @@ Progress appears on the **Unlocked Package** home screen.
 1. **Status** – view success/failure and download the log.
 2. **Actions**
    * **Delete Package** – permanently removes the package.
-   * **Create Version** ![Plus icon](<../../.gitbook/assets/image (1445).png>) – add a new version.
+   * **Create Version** ![Plus icon](<../../.gitbook/assets/image (734).png>) – add a new version.
 3. **Info** – hover for package metadata.
 
 **View Packaged Versions** ![View versions icon](<../../.gitbook/assets/image (1463).png>) – shows each version’s details.

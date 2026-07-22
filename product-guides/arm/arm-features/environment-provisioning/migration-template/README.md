@@ -27,7 +27,7 @@ To create a new migration template, please follow the below steps:
 3. Click on **Create New Template**.
 4. The **Create Migration Template** tab will be auto-selected by default, if not, select it.
 5. Give the template a **name** and a **short description** of it.
-6. Select the checkboxes for the template types for which you want to create a template. You can create multiple templates at the same time.&#x20;
+6. Select the checkboxes for the template types for which you want to create a template. You can create multiple templates at the same time.
 7. You must upload the **package manifest XML** file for each template type that you have selected. Failure to insert the correct XML file will result in the migration template being created unsuccessfully.
 8. Click **Save**.
 9. You can find your recently created template on the **Environment Provisioning History** page.
@@ -42,15 +42,15 @@ The **View History** screen will display the detailed summary report of the temp
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.&#x20;
+**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.
 
-**Re-Run** option allows you to run the template once again.&#x20;
+**Re-Run** option allows you to run the template once again.
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.
 
@@ -62,7 +62,7 @@ The following information will be displayed for each template created on the Env
 
 1. **Template Name:** Name of the template along with the template created date/time
 2. **Template Type:** Template type, i.e., migration template or an unsupported metadata template
-3. **Last Modified By:** User detail who last modified this template&#x20;
+3. **Last Modified By:** User detail who last modified this template
 4. **Salesforce Org:** Destination org where the template was run
 5. **Last Run:** The date/time stamp the template was last run
 6. **Status:** Template status, i.e., successfully run or failed

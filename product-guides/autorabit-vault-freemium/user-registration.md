@@ -92,7 +92,7 @@ The trial activation email confirms that the registration has been completed and
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Email area</td><td valign="top">Details shown in the screenshot</td></tr><tr><td valign="top">Usage guidance</td><td valign="top">Usage and limits can be monitored directly from the Vault dashboard at any time.</td></tr><tr><td valign="top">Support sign-off</td><td valign="top">Regards, Team AutoRABIT, support@autorabit.com</td></tr><tr><td valign="top">Footer navigation</td><td valign="top">Setup > Backup > Compare > Restore > Replicate > Archive > GDPR</td></tr><tr><td valign="top">Company footer</td><td valign="top">AutoRABIT, Inc, 548 Market Street PMB 98272, San Francisco CA, info@autorabit.com</td></tr><tr><td valign="top">Footer tagline</td><td valign="top">RELEASE MANAGEMENT | DEVOPS | ENABLING ENTERPRISE AGILITY</td></tr><tr><td valign="top">Email type</td><td valign="top">Auto-generated email</td></tr><tr><td valign="top">Confidentiality notice</td><td valign="top">The message includes a confidentiality notice below the email body.</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image (2663).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2662).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2664).png" alt=""><figcaption></figcaption></figure>
 

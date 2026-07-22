@@ -76,7 +76,7 @@ On this screen, you will be presented with a list of metadata types and their re
 
 Deployment via Salesforce Org Further expanding the member's list will allow you to view the members' dependent components, and selecting them means deploying the dependent components to the destination org.
 
-The **`Diff`** tab will indicate if there are any differences between the members from the source and the target org.&#x20;
+The **`Diff`** tab will indicate if there are any differences between the members from the source and the target org.
 
 * If there are no differences, the right column will display the![](<../../../../.gitbook/assets/image (33) (1) (1) (1) (1) (1).png>)icon for each member.
 * If there are any differences, the right column will display the![](<../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1).png>)icon.
@@ -126,9 +126,9 @@ Also, you can select the recipients for the alert under the **`SCA Mail Notifica
 
 <figure><img src="../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-[**`Search and Substitute`**](../../arm-administration/search-and-substitute.md) If you have created the search and substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, such rule can be found here.&#x20;
+[**`Search and Substitute`**](../../arm-administration/search-and-substitute.md) If you have created the search and substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, such rule can be found here.
 
-From the **`Apply Search and Substitute Rules`** list, select the rule that will be associated with the current deployment process. Use the![](<../../../../.gitbook/assets/image (41) (1) (1) (1) (1) (1).png>)/![](<../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1).png>)button to add/remove the rule and using the![](<../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1).png>)/![](<../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1).png>)button, move the rules list up and down. Based on the selection, the top rule will be deployed initially, and the process will continue for the remaining rules.
+From the **`Apply Search and Substitute Rules`** list, select the rule that will be associated with the current deployment process. Use the![](<../../../../.gitbook/assets/image (734).png>)/![](<../../../../.gitbook/assets/image (735).png>)button to add/remove the rule and using the![](<../../../../.gitbook/assets/image (1447).png>)/![](<../../../../.gitbook/assets/image (1448).png>)button, move the rules list up and down. Based on the selection, the top rule will be deployed initially, and the process will continue for the remaining rules.
 
 **`Fetch the Test Cases:`** Before running the deployment, you may like to run the functional test cases to test the code's functionality being deployed to the Destination Environment. Therefore, select how you would like to fetch the test cases.
 

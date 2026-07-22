@@ -5,15 +5,15 @@ This document is a guide on how to add a Bitbucket project to your CodeScan clou
 1. Login to your CodeScan account.
 2. Once you login into your [CodeScan](https://www.codescan.io/) account, on the top right corner, click on the (**+**) icon and select **Analyze new project**.
 
-<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9.png" alt=""><figcaption></figcaption></figure>
 
 3. It takes you to a different window. Choose the **Organization** for which you'd like to create a project.
 
-<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7 (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7.png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. In the next window, click on **Add Analysis Project** option.
 
-<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1.png" alt=""><figcaption></figcaption></figure>
 
 5. You will now see a new popup window, select [**Bitbucket**](https://knowledgebase.autorabit.com/codescan/docs/integrating-codescan-in-bitbucket-pipelines) from the given options.
 

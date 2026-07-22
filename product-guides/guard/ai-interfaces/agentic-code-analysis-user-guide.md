@@ -7,11 +7,11 @@ hidden: true
 {% hint style="info" %}
 **How to Use this Guide**
 
-&#x20;⁉️ Not sure what Agentic Code Analysis is? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-1.-what-is-agentic-code-analysis)
+⁉️ Not sure what Agentic Code Analysis is? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-1.-what-is-agentic-code-analysis)
 
-&#x20;💻 Just want to know how to get setup? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-2.-api-keys)
+💻 Just want to know how to get setup? → Start [here](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-2.-api-keys)
 
-&#x20;💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with [your results](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results), and learn about [additional commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference).
+💡 Already set up for your scans and want to learn about additional capabilities? → See what you can do with [your results](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-7.-viewing-results), and learn about [additional commands](https://knowledgebase.autorabit.com/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-9.-command-reference).
 {% endhint %}
 
 ### What is Agentic Code Analysis? <a href="#id-1.-what-is-agentic-code-analysis" id="id-1.-what-is-agentic-code-analysis"></a>
@@ -66,7 +66,7 @@ The Repositories page links your source control repositories to AutoRABIT Guard 
 Repositories are added to Guard automatically when a scan is first executed from the Guard CLI.
 {% endhint %}
 
-You can find your registered repositories under **Agentic Code Analysis** → **Repositories** in the navigation menu. This page manages registered repositories and repository-level Agentic Code Analysis settings.&#x20;
+You can find your registered repositories under **Agentic Code Analysis** → **Repositories** in the navigation menu. This page manages registered repositories and repository-level Agentic Code Analysis settings.
 
 Each entry shows the repository Name, URL, Provider (e.g. GitHub, Bitbucket Cloud), Created At date, Visibility (Public / Private), and Status, along with an Actions menu for managing the repository.
 
@@ -101,7 +101,7 @@ You **do not need to** manually register a repository before using the AutoRABIT
 
     * Severities included in AI review
 
-    Select which severities are reviewed by AI. Only selected severities will be reviewed by AI; unselected severities will be reported without AI review.&#x20;
+    Select which severities are reviewed by AI. Only selected severities will be reviewed by AI; unselected severities will be reported without AI review.
 
     * Authenticate Repository (Optional) → Access Token
 
@@ -114,14 +114,14 @@ You **do not need to** manually register a repository before using the AutoRABIT
 
 Each repository has an **Actions** menu that lets you manage that specific repository and its Agentic Code Analysis settings:
 
-| Action          | Description                                                                                                                                                                                                                                                                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Edit            | Edit the repository's registration details and scan settings (name, CLI timeout, visibility, tests analysis, exclusions, severities, access token, etc).                                                                                                                                                                                       |
-| Re-Authenticate | Update or refresh the access token used to authenticate.                                                                                                                                                                                                                                                                                       |
-| Rules           | View and customise the ruleset applied to this repository (edit or toggle Standard rules and create Custom Rules (see [Customise your Ruleset](https://app.gitbook.com/o/vIHQCTOOUDcNoPic3AQi/s/9vAxMuDrkUkB4OXlH9CL/~/edit/~/changes/4694/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-4.-customise-your-ruleset)). |
-| Analyse Rules   | Run AI-powered noisy rule detection.                                                                                                                                                                                                                                                                                                           |
-| Scan Branch     | Trigger a scan of a branch for this repository.                                                                                                                                                                                                                                                                                                |
-| Delete          | Remove the repository.                                                                                                                                                                                                                                                                                                                         |
+| Action          | Description                                                                                                                                                                                                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Edit            | Edit the repository's registration details and scan settings (name, CLI timeout, visibility, tests analysis, exclusions, severities, access token, etc).                                                                                                                                          |
+| Re-Authenticate | Update or refresh the access token used to authenticate.                                                                                                                                                                                                                                          |
+| Rules           | View and customise the ruleset applied to this repository (edit or toggle Standard rules and create Custom Rules (see [Customise your Ruleset](https://app.gitbook.com/s/9vAxMuDrkUkB4OXlH9CL/product-guides/guard/ai-interfaces/agentic-code-analysis-user-guide#id-4.-customise-your-ruleset)). |
+| Analyse Rules   | Run AI-powered noisy rule detection.                                                                                                                                                                                                                                                              |
+| Scan Branch     | Trigger a scan of a branch for this repository.                                                                                                                                                                                                                                                   |
+| Delete          | Remove the repository.                                                                                                                                                                                                                                                                            |
 
 ### Customise your Ruleset <a href="#id-4.-customise-your-ruleset" id="id-4.-customise-your-ruleset"></a>
 
@@ -145,15 +145,9 @@ In addition, you can create new Custom Rules either by uploading a pdf file or t
 
     <figure><img src="../../../.gitbook/assets/image (2544).png" alt="" width="375"><figcaption></figcaption></figure>
 
-
-
 b. You will then be taken through each extracted rule for review. Please check these carefully, along with the properties associated with each rule, as AI can make mistakes. The flow will first take you through rules that have an existing match within your rule set (across both standard and custom) - you can choose to remove one of the duplicates or keep both.
 
-
-
 <figure><img src="../../../.gitbook/assets/image (2545).png" alt="" width="375"><figcaption></figcaption></figure>
-
-&#x20;
 
 Once you are happy with your rule set, you are ready to run a scan from the CLI. If you already have the Guard CLI set up, continue running Agentic Code Review.
 
@@ -163,8 +157,8 @@ Over time, some rules generate a high volume of low-value findings for a given c
 
 To run it, go to **Agentic Code Analysis** → **Repositories**, open the **Actions** menu for the repository, and select **Analyse Rules:**
 
-1. Pick a branch.&#x20;
-2. Wait for analysis.&#x20;
+1. Pick a branch.
+2. Wait for analysis.
 3.  Review the suggested rules. The AI presents the rules it identified as likely noise for the repository, with:
 
     * Rule — the rule identifier (e.g. `sonar:S103`).
@@ -173,13 +167,13 @@ To run it, go to **Agentic Code Analysis** → **Repositories**, open the **Acti
     * Confidence — the AI's confidence in the suggestion (e.g., High).
 
     All suggested rules are checked by default. Checked rules will be disabled for this repository only. Uncheck any rules you want to keep enabled.
-4. Click Disable selected to apply.&#x20;
+4. Click Disable selected to apply.
 
 The selected rules will be disabled for this repository (other repositories are unaffected).
 
 ### Test Quality
 
-Agentic Code Analysis can assess the quality of your tests, not just your source code. Test analysis must be enabled for the repository (turn on **Enable tests analysis** in the repository's settings **Agentic Code Analysis** → **Repositories** → **Actions** → **Edit**), where you can also configure the Tests Folders glob patterns that tell AutoRABIT Guard which files to treat as tests.&#x20;
+Agentic Code Analysis can assess the quality of your tests, not just your source code. Test analysis must be enabled for the repository (turn on **Enable tests analysis** in the repository's settings **Agentic Code Analysis** → **Repositories** → **Actions** → **Edit**), where you can also configure the Tests Folders glob patterns that tell AutoRABIT Guard which files to treat as tests.
 
 Once enabled, tests are analyzed automatically on future scans (and can also be run from the CLI with `--check-tests`).
 
@@ -279,7 +273,7 @@ Scan outcome.
 
 #### Scan detail view
 
-Open a scan to see a full breakdown of the run.&#x20;
+Open a scan to see a full breakdown of the run.
 
 Summary cards at the top of the scan show:
 
@@ -303,7 +297,7 @@ Findings the AI considers low-confidence are grouped under Flagged by AI as like
 
 #### Downloading patches
 
-Download the patches for the whole scan or for each finding.&#x20;
+Download the patches for the whole scan or for each finding.
 
 ### Command reference <a href="#id-9.-command-reference" id="id-9.-command-reference"></a>
 

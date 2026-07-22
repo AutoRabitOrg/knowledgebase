@@ -1,6 +1,6 @@
 # Deployment Using Feature Migration Template
 
-This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](../feature-migration/create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.&#x20;
+This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](../feature-migration/create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
@@ -8,7 +8,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description**.
 4. In the **Source** section, select **Deployment From** as **Template**.
@@ -42,7 +42,7 @@ In this section, you can use an external ID in place of a related record's Sales
 * In the **Source** field: Select your source field whose values will be populated in the destination External Id field.
 * In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings)**:
@@ -55,11 +55,11 @@ In this section, you can use an external ID in place of a related record's Sales
 
 This new feature allows you to sort fields for nCino objects while committing. Based on the sorting order set, the record order in the JSON files will get fetched. The users will be provided a default sorting order that can be changed. **XXXXX\_lookupkey\_\_c** is the most preferred field for sorting, and that would be the default field. If this field is not present, the **Name** for _custom settings_ and **Id** for _non-custom settings_ would be selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For the objects with sorting fields opted, the sorting icon gets changed.
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Filters <a href="#applied-filters" id="applied-filters"></a>
 
@@ -68,7 +68,7 @@ Such filters will be displayed here if any filter is applied to the objects.
 <figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note**: At the time of template creation, the filter is applied to your object, so it can't be edited.&#x20;
+**Important Note**: At the time of template creation, the filter is applied to your object, so it can't be edited.
 {% endhint %}
 
 #### Deployment Option <a href="#deployment-option" id="deployment-option"></a>
@@ -81,7 +81,7 @@ Based on your destination selection, you will have different deployment buttons 
 
 <figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.&#x20;
+For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.
 
 **Deployment Filters**
 

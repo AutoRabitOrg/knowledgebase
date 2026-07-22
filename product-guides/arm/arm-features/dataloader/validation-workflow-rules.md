@@ -40,7 +40,7 @@ Selecting the **Disable workflow rules** checkbox during the DataLoader job will
 
 Similar to validation rules, ARM also displays all workflow rules, allowing users to re-enable them if needed.
 
-<figure><img src="../../../../.gitbook/assets/image (1136).png" alt="List of workflow rules in ARM UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1132).png" alt="List of workflow rules in ARM UI"><figcaption></figcaption></figure>
 
 **Screen 1: Successful Workflow Rule Execution**
 

@@ -4,7 +4,7 @@
 
 ### Viewing Your User Profile
 
-Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc.&#x20;
+Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc.
 
 To access user preferences, click your user name on the upper right corner and select **`Profile`**.
 
@@ -29,7 +29,7 @@ The **`My Projects`** section will list all the projects that you have created o
 
 #### My Roles <a href="#my-roles" id="my-roles"></a>
 
-The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.&#x20;
+The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.
 
 About Skip MappingsIf users maintain an individual version control branch for every release, they must map every branch to Salesforce Org and Version Control branches to keep synchronizing with Salesforce Org. To overcome this daily routine, ARM provides the option to skip the Org Mappings part and directly perform commits.
 
@@ -55,11 +55,7 @@ For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have ad
 
 <figure><img src="../../../../.gitbook/assets/image (2099).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2101).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
+<figure><img src="../../../../.gitbook/assets/image (2100).png" alt=""><figcaption></figcaption></figure>
 
 According to the filter set, only specific work items will get fetched. When the developers progress (via EZ-Commit or merge operation in ARM) on updating the ALM status, they are reflected on the corresponding work items. If the user wishes to discard the filter selected, uncheck the **`Apply My Filter`** option, and all work items will get fetched.
 

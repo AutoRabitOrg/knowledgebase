@@ -17,7 +17,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1.     New Rules to Identify Potential Sensitive Data/PII Fields**
+**1. New Rules to Identify Potential Sensitive Data/PII Fields**
 
 **Description**
 
@@ -62,13 +62,13 @@ Verified that sf:SecurePIIFields rules are being triggered in following scenario
 * Verified by giving custom parameters (ssn, credit\_card, passport) and validated that they are working as expected.
 * Verified by sending both string and integer value for credit\_card.
 
-<figure><img src="../../../../../.gitbook/assets/image (2291).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
-**1.  Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
+**1. Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
 
 **{Rule ID: sf: ServerSideRequestForgery}**
 
@@ -76,7 +76,7 @@ Verified that sf:SecurePIIFields rules are being triggered in following scenario
 
 Update the issue description for the sf:ServerSideRequestForgery rule to include data flow information once tracking is implemented.
 
-Highlight how untrusted user input influences outbound requests or endpoint URLs used in HttpRequest.setEndpoint() or similar methods.&#x20;
+Highlight how untrusted user input influences outbound requests or endpoint URLs used in HttpRequest.setEndpoint() or similar methods.
 
 **Hypothesis:**\
 Providing a traceable flow from input source to request endpoint will help developers clearly identify unsafe URL usage leading to SSRF vulnerabilities.
@@ -84,61 +84,53 @@ Providing a traceable flow from input source to request endpoint will help devel
 **Value/Purpose:**\
 Improves clarity and helps prioritize high-risk SSRF issues by showing the complete journey of untrusted data to outbound request logic.
 
-&#x20;
-
 **Code Example**:
 
 public class Negative {
 
-&#x20; public void otherMethod() {
+public void otherMethod() {
 
-&#x20;   String oneMore = 'somethingHere';
+String oneMore = 'somethingHere';
 
-&#x20;   init(oneMore);
+init(oneMore);
 
-&#x20; }
+}
 
-&#x20;
+public PageReference init(String Lastname){
 
-&#x20; public PageReference init(String Lastname){
+String FirstName = getName();
 
-&#x20;     String FirstName = getName();
+try {
 
-&#x20;     try {
+HttpRequest req = new HttpRequest();
 
-&#x20;       HttpRequest req = new HttpRequest();
+req.setEndpoint('callout:Third\_Party\_Authorization/v1'+Lastname);
 
-&#x20;       req.setEndpoint('callout:Third\_Party\_Authorization/v1'+Lastname);
+request.setMethod ('POST');
 
-&#x20;       request.setMethod ('POST');
+}
 
-&#x20;     }
-
-&#x20; }
+}
 
 }
 
 #### Existing Message:
 
-Sanitize input to avoid possible SSRF.  Data Flow Trace: Negative.otherMethod: line 4&#x20;
+Sanitize input to avoid possible SSRF. Data Flow Trace: Negative.otherMethod: line 4
 
 #### Updated Message:
 
-Sanitize input to avoid possible SSRF.  Data Flow Trace -
+Sanitize input to avoid possible SSRF. Data Flow Trace -
 
-&#x20;   CALL (Negative.otherMethod: line 4)
-
-&#x20;
+CALL (Negative.otherMethod: line 4)
 
 Make sure to check for internal methods also (e.g., FirstName variable on line 8 if used in the set endpoint call on line 11).
 
 <figure><img src="../../../../../.gitbook/assets/image (2293).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../../../../.gitbook/assets/image (2294).png" alt=""><figcaption></figcaption></figure>
 
-**2.     Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
+**2. Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
 
 **Description:**
 
@@ -163,41 +155,41 @@ Sanitize input to avoid possible resource injection. Data Flow Trace : APIVersio
 
 public class Negative {
 
-&#x20; public void otherMethod() {
+public void otherMethod() {
 
-&#x20;   String oneMore = 'somethingHere';
+String oneMore = 'somethingHere';
 
-&#x20;   init(oneMore);
+init(oneMore);
 
-&#x20; }
+}
 
-&#x20;public PageReference init(String Lastname){
+public PageReference init(String Lastname){
 
-&#x20;     String FirstName = getName();
+String FirstName = getName();
 
-&#x20;     try {
+try {
 
-&#x20;       HttpRequest req = new HttpRequest();
+HttpRequest req = new HttpRequest();
 
-&#x20;       req.setEndpoint('/Third\_Party\_Authorization/v1'+Lastname);
+req.setEndpoint('/Third\_Party\_Authorization/v1'+Lastname);
 
-&#x20;       request.setMethod ('POST');
+request.setMethod ('POST');
 
-&#x20;     }
+}
 
-&#x20; }
+}
 
 }
 
 **Existing Message**:
 
-Sanitize input to avoid possible resource injection.  Data Flow Trace: Negative.otherMethod: line 4
+Sanitize input to avoid possible resource injection. Data Flow Trace: Negative.otherMethod: line 4
 
 **Updated Message**:
 
 Sanitize input to avoid possible resource injection. Data Flow Trace -
 
-&#x20;   CALL (Negative.otherMethod: line 4)
+CALL (Negative.otherMethod: line 4)
 
 Make sure to check for internal methods also (E.g. FirstName variable on line 8 if used in the set endpoint call on line 11)
 
@@ -207,13 +199,13 @@ Make sure to check for internal methods also (E.g. FirstName variable on line 8 
 
 <figure><img src="../../../../../.gitbook/assets/image (2297).png" alt=""><figcaption></figcaption></figure>
 
-**3.     Updated the description in the CodeScan APEX rule “Avoid Calling SOQL and DML Inside Loops”**
+**3. Updated the description in the CodeScan APEX rule “Avoid Calling SOQL and DML Inside Loops”**
 
 **{Rule ID: sf:AvoidSoqlInLoops}**
 
 **Description:**
 
-Refine the issue description for sf:AvoidSoqlInLoops to clearly identify the loop structure and the query being executed inside it.  Include variable references and contextual flow details showing how data or parameters within the loop lead to repeated queries.
+Refine the issue description for sf:AvoidSoqlInLoops to clearly identify the loop structure and the query being executed inside it. Include variable references and contextual flow details showing how data or parameters within the loop lead to repeated queries.
 
 **Hypothesis:**
 
@@ -221,7 +213,7 @@ Providing contextual information about where and how SOQL queries are invoked wi
 
 **Value/Purpose:**
 
-Enhances readability and educational value of performance warnings by showing contextual flow, helping developers refactor code more efficiently.  Top of Form
+Enhances readability and educational value of performance warnings by showing contextual flow, helping developers refactor code more efficiently. Top of Form
 
 Update the issue description for the sf:ServerSideRequestForgery rule to include data flow information once tracking is implemented.
 
@@ -229,61 +221,51 @@ Update the issue description for the sf:ServerSideRequestForgery rule to include
 
 public class CaseProcessor {
 
-&#x20;    public void processAllCases(List\<Case> caseList) {
+public void processAllCases(List\<Case> caseList) {
 
-&#x20;       // LOOP
+// LOOP
 
-&#x20;       for (Case c : caseList) {
+for (Case c : caseList) {
 
-&#x20;           processCase(c);                     // hop 1
-
-&#x20;       }
-
-&#x20;   }
-
-&#x20;
-
-&#x20;   void processCase(Case c) {
-
-&#x20;       fetchOwnerDetails(c.OwnerId);           // hop 2
-
-&#x20;   }
-
-&#x20;
-
-&#x20;   List\<User> fetchOwnerDetails(Id ownerId) {
-
-&#x20;       return \[
-
-&#x20;           SELECT Id, Name FROM User
-
-&#x20;           WHERE Id = :ownerId                // SINK (SOQL)
-
-&#x20;       ];
-
-&#x20;   }
+processCase(c); // hop 1
 
 }
 
-&#x20;
+}
+
+void processCase(Case c) {
+
+fetchOwnerDetails(c.OwnerId); // hop 2
+
+}
+
+List\<User> fetchOwnerDetails(Id ownerId) {
+
+return \[
+
+SELECT Id, Name FROM User
+
+WHERE Id = :ownerId // SINK (SOQL)
+
+];
+
+}
+
+}
 
 **Existing Message**:
 
-Avoid running Soql and DML inside loops.  Loop Trace : CaseProcessor.fetchOwnerDetails: line 16 --> CaseProcessor.processCase: line 11 --> CaseProcessor.processAllCases: line 6
-
-&#x20;
+Avoid running Soql and DML inside loops. Loop Trace : CaseProcessor.fetchOwnerDetails: line 16 --> CaseProcessor.processCase: line 11 --> CaseProcessor.processAllCases: line 6
 
 **Updated Message**:
 
 Avoid Running SOQL and DML inside loops. Data Flow Trace -
 
-&#x20; SOQL (CaseProcessor.fetchOwnerDetails: line 16) -->
+SOQL (CaseProcessor.fetchOwnerDetails: line 16) -->
 
-&#x20; CALL (CaseProcessor.processCase: line 11) -->
+CALL (CaseProcessor.processCase: line 11) -->
 
-&#x20; LOOP (CaseProcessor.processAllCases: line 6)
-
-&#x20;
+LOOP (CaseProcessor.processAllCases: line 6)
 
 Executed the Above scenario and validated the rule description was updated as expected.
 
@@ -291,15 +273,11 @@ Executed the Above scenario and validated the rule description was updated as ex
 * Multi-hop scenarios (loop → method → method → SOQL) correctly show the full Data Flow Trace with SOQL → CALL → LOOP.
 * Direct SOQL-in-loop scenarios correctly show the simplified message, which is the expected behavior.
 
-
-
-<figure><img src="../../../../../.gitbook/assets/image (2299).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../../.gitbook/assets/image (2298).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2300).png" alt=""><figcaption></figcaption></figure>
 
-**4.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
+**4. Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
 
 **{Rule ID: sf:UnnecessaryBooleanAssertion}**
 
@@ -316,7 +294,7 @@ To improve coverage, we enhanced the rule logic to include these Assert class sc
   * Assert.isFalse(false)
 * Updated the rule message and description to clearly explain why these patterns are redundant.
 
-**Updated Rule Description**:&#x20;
+**Updated Rule Description**:
 
 A Unit test assertion with a Boolean literal is unnecessary since it always will evaluate to the same thing. Consider using flow control (in case of assertTrue(false) or similar) or simply removing statements like System.assert(true) and Assert.isFalse(false).\
 \
@@ -324,18 +302,16 @@ If you just want a test to halt after finding an error, use the System.assert(fa
 
 <figure><img src="../../../../../.gitbook/assets/image (2301).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;Verified the following scenarios are working as expected:
+Verified the following scenarios are working as expected:
 
 * Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
 * Compliant scenarios have been tested. (by using only string values).
 
 <figure><img src="../../../../../.gitbook/assets/image (2302).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
-
 <figure><img src="../../../../../.gitbook/assets/image (2303).png" alt=""><figcaption></figcaption></figure>
 
-**5.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}**
+**5. Enhanced God Class Rule by adding parameters {Rule ID: sf:GodClass}**
 
 The sf:GodClass rule currently uses fixed threshold values to identify “God Class” design flaws:
 
@@ -343,7 +319,7 @@ The sf:GodClass rule currently uses fixed threshold values to identify “God Cl
 * ATFD (Access to Foreign Data): > 5
 * TCC (Tight Class Cohesion): < 1/3 (33%)
 
-These thresholds are hardcoded and not configurable. We decided to introduce parameters to allow users to customize these values based on their project requirements.  By making these thresholds configurable, users can fine-tune the rule according to their project’s code complexity and quality standards, reducing false positives and improving detection accuracy.
+These thresholds are hardcoded and not configurable. We decided to introduce parameters to allow users to customize these values based on their project requirements. By making these thresholds configurable, users can fine-tune the rule according to their project’s code complexity and quality standards, reducing false positives and improving detection accuracy.
 
 **Value / Purpose:**
 
@@ -357,28 +333,22 @@ Verified the sf:GodClass by validating that users are able to see the violations
 
 When users provide the following Threshold values:
 
-* wmc=47, atfd=5, tcc=0.33                      Result: Violation
-* wmc=10, atfd=5, tcc=0.50                      Result: Violation
-* wmc=60, atfd=10, tcc=0.90                    Result: Violation
-* wmc=30, atfd=2, tcc=0.8                       Result: Violation
+* wmc=47, atfd=5, tcc=0.33 Result: Violation
+* wmc=10, atfd=5, tcc=0.50 Result: Violation
+* wmc=60, atfd=10, tcc=0.90 Result: Violation
+* wmc=30, atfd=2, tcc=0.8 Result: Violation
+* wmc=100, atfd=10, tcc=0.2 Result: No violation
+* wmc=9999, atfd=9999, tcc=0 Result: No violation
+* wmc=0, atfd=0, tcc=0 Result: No violation
+* wmc=0, atfd=0, tcc=1 Result: Everything violates
 
-&#x20;
+<figure><img src="../../../../../.gitbook/assets/image (2119).png" alt=""><figcaption></figcaption></figure>
 
-* wmc=100, atfd=10, tcc=0.2                    Result: No violation
-* wmc=9999, atfd=9999, tcc=0                 Result: No violation
-* wmc=0, atfd=0, tcc=0                            Result: No violation
+<figure><img src="../../../../../.gitbook/assets/image (2120).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+<figure><img src="../../../../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
 
-* wmc=0, atfd=0, tcc=1                            Result: Everything violates
-
-<figure><img src="../../../../../.gitbook/assets/image (2305).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (2306).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/image (2307).png" alt=""><figcaption></figcaption></figure>
-
-**6.     Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}**
+**6. Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}**
 
 **Description:**
 
@@ -406,7 +376,7 @@ Verified the Updated God Class Rule Description and confirmed that users are abl
 
 <figure><img src="../../../../../.gitbook/assets/image (2308).png" alt=""><figcaption></figcaption></figure>
 
-**7.     Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**&#x20;
+**7. Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**
 
 We recognized that this description was out of date and determined it needed to change to:
 
@@ -445,7 +415,7 @@ Verified these rules updated by confirming that users are able to see the update
 
 <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-**9.   Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
+**9. Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:
 
@@ -456,17 +426,15 @@ This exception was originally introduced to reduce noise and was added to our ru
 Now, DML operations in getter methods that do not enforce permissions (e.g., without USER\_MODE) will correctly raise violations.
 
 \
-&#xNAN;_&#x4E;ote:_ _The update has been refined to cover all scenarios — we’ve implemented logic to trigger violations for all getter method cases where there is no permission check, SOQL, or DML operation, and removed the previous conditional checks. As a result, violations will now be raised for every return type except_ void _(since it doesn’t return any value).  Please note that due to these rule changes, there may be a slight increase/decrease in reported issues for the FLS rule._
+\&#xNAN;_Note:_ _The update has been refined to cover all scenarios — we’ve implemented logic to trigger violations for all getter method cases where there is no permission check, SOQL, or DML operation, and removed the previous conditional checks. As a result, violations will now be raised for every return type except_ void _(since it doesn’t return any value). Please note that due to these rule changes, there may be a slight increase/decrease in reported issues for the FLS rule._
 
 We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
 
-&#x20;
-
 <figure><img src="../../../../../.gitbook/assets/image (2311).png" alt=""><figcaption></figcaption></figure>
 
-**10.  Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
+**10. Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
 
-Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case sensitive.  This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase).  However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
+Previously, CodeScan Controller Suffix in the rule Aura Controller Naming Convention was incorrectly case sensitive. This meant that a violation was not triggered (expected behavior) when the suffix to controller (lowercase). However, if the class name instead included "Controller" (uppercase), a violation was being thrown (i.e., when we set ControllerSuffix = Controller).
 
 Verified the below scenarios and validated that both are working as expected:
 
@@ -475,7 +443,7 @@ Verified the below scenarios and validated that both are working as expected:
 
 Further verified the sf:AuraControllerNaming rule by setting ControllerSuffix = “Controller” in first run of Project and then changed ControllerSuffix to “controller”. Both projects triggered the same number of violations based on the provided data.
 
-**11.  Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
+**11. Updated the rule descriptions for “CodeScan Other Rules” {Rule ID: cs-vf:unknown and Rule ID: cs-js:unknown}**
 
 We have updated the rule description for the rule "CodeScan Other Rules" rule key
 
@@ -489,7 +457,7 @@ We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:
 
 <figure><img src="../../../../../.gitbook/assets/image (2313).png" alt=""><figcaption></figcaption></figure>
 
-**12.   Enhancement to “sf:AvoidLogicInTrigger” Rule**
+**12. Enhancement to “sf:AvoidLogicInTrigger” Rule**
 
 Historically, this rule finds any blocks of code in a trigger and throws a violation.
 
@@ -530,9 +498,9 @@ But: for, while, do-while, SOQL, DML → always Violation (allow-list does not s
 
 <figure><img src="../../../../../.gitbook/assets/image (2316).png" alt=""><figcaption></figcaption></figure>
 
-**13.     Enhancement to “Use Annotation on Test Class” Rule**
+**13. Enhancement to “Use Annotation on Test Class” Rule**
 
-During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword.  It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
+During our routine testing of our rules, we noted that this rule is outdated, as it only detects the testMethod keyword. It does not work with the newer @IsTest annotation, causing missed violations in modern Apex test classes.
 
 **Fix:**\
 Updated the rule logic to support detection of @IsTest annotation on test classes, ensuring compliance with current Apex best practices
@@ -550,13 +518,13 @@ Verified the enhanced rule logic in “Use Annotation on Test Class” via on th
 
 <figure><img src="../../../../../.gitbook/assets/image (2319).png" alt=""><figcaption></figcaption></figure>
 
-**14.  Enhancement to sf:ServerSideRequestForgery Rule**
+**14. Enhancement to sf:ServerSideRequestForgery Rule**
 
-As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.
+As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery). We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.
 
 As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.
 
-This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding)\
+This is the list of methods we have added as sinks (these are in addition to the issues that this rule is currently finding)\
 \
 Http.send(HttpRequest)\
 HttpRequest.setEndpoint(String)\
@@ -570,13 +538,13 @@ Verified that the rule ServerSideRequestForgery is throwing violations when the 
 
 <figure><img src="../../../../../.gitbook/assets/image (2320).png" alt=""><figcaption></figcaption></figure>
 
-**15.     Enhancement to Resource Injection Rule**
+**15. Enhancement to Resource Injection Rule**
 
-As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.
+As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Resource Injection). We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the issues.
 
 As such, we have enhanced this rule to find all the sinks for these issues with concatenated URLs to all methods that take an HttpRequest as an input.
 
-This is the list of methods we have added as sinks (these are in addition to the issues that this rule is  currently finding)\
+This is the list of methods we have added as sinks (these are in addition to the issues that this rule is currently finding)\
 \
 Http.send(HttpRequest)\
 HttpRequest.setEndpoint(String)\
@@ -594,41 +562,41 @@ Verified that the rule Resource Injection is throwing violations when the follow
 
 ### Rule Deprecations
 
-**1.     Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}**
+**1. Deprecation of 2 rules for “disallow irregular whitespace outside of strings and comments” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-irregular-whitespace and Rule ID: cs-js:no-irregular-whitespace}**
 
 The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of irregular white space are no longer even seen as parsing JavaScript.
 
-Further, we have updated the descriptions for these rules to include:&#x20;
+Further, we have updated the descriptions for these rules to include:
 
-“This rule has been deprecated due to these types of white space being caught by the JavaScript parser before a rule can be fired.  Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
+“This rule has been deprecated due to these types of white space being caught by the JavaScript parser before a rule can be fired. Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
 
 Verified the Rule Deprecations of cs-vf:no-irregular-whitespace and cs-js:no-irregular-whitespace and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
-<figure><img src="../../../../../.gitbook/assets/image (2323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2125).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2324).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2126).png" alt=""><figcaption></figcaption></figure>
 
-**2.   Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
+**2. Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
 
 The reason these rules are being deprecated is because they do not fire before the parser catches the issue. These types of octal escapes are no longer even seen as parsing JavaScript.
 
-Further, we have updated the descriptions for these rules to include:&#x20;
+Further, we have updated the descriptions for these rules to include:
 
-“This rule has been deprecated due to these types of octal escapes being caught by the JavaScript parser before a rule can be fired.  Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
+“This rule has been deprecated due to these types of octal escapes being caught by the JavaScript parser before a rule can be fired. Please make sure you have the cs-js:exception rule in your javascript Quality Profile to be made aware of these errors.”
 
 Verified the Rule Deprecation for cs-vf:no-octal-escape and cs-js:no-octal-escape and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
-<figure><img src="../../../../../.gitbook/assets/image (2325).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2127).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2326).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2128).png" alt=""><figcaption></figcaption></figure>
 
-### Fixes&#x20;
+### Fixes
 
-**1.  Fixed an issue in the APEX rule “Field Level Security Vulnerabilities”**
+**1. Fixed an issue in the APEX rule “Field Level Security Vulnerabilities”**
 
 {Rule ID: sf:FieldLevelSecurity}
 
-Several customers reported that they were receiving the error message “Permissions should be checked before accessing resource SObject” even though they were providing suitable permissions using DML and/or SOQL statements.  It was determined that CodeScan was not recognizing both DML and SOQL statements.  As such, we overhauled the rule logic to address this issue and have ensured that CodeScan is now recognizing the AccessLevel.\* commands in DML calls.
+Several customers reported that they were receiving the error message “Permissions should be checked before accessing resource SObject” even though they were providing suitable permissions using DML and/or SOQL statements. It was determined that CodeScan was not recognizing both DML and SOQL statements. As such, we overhauled the rule logic to address this issue and have ensured that CodeScan is now recognizing the AccessLevel.\* commands in DML calls.
 
 We have validated this new logic and verified that no vulnerabilities were raised (which is the expected and correct behavior for this updated rule logic).
 
@@ -636,19 +604,19 @@ We have validated this new logic and verified that no vulnerabilities were raise
 
 <figure><img src="../../../../../.gitbook/assets/image (2328).png" alt=""><figcaption></figcaption></figure>
 
-**2.     Fixed an issue in the APEX rule “Resource Injection”**
+**2. Fixed an issue in the APEX rule “Resource Injection”**
 
 {Rule ID: sf: ResourceInjection}
 
-Resource injections occur when user-controllable data is used to specify a resource identifier without proper validation.  This rule identifies potential resource injection vulnerabilities by detecting unsafe URL construction for internal network requests.  Input can be cleansed by using Id.valueOf, Date.valueOf, etc. Or escaped using String.escapeSingleQuotes().
+Resource injections occur when user-controllable data is used to specify a resource identifier without proper validation. This rule identifies potential resource injection vulnerabilities by detecting unsafe URL construction for internal network requests. Input can be cleansed by using Id.valueOf, Date.valueOf, etc. Or escaped using String.escapeSingleQuotes().
 
-However, several customers reported that this rule was firing improperly, even when the recommended methods have been applied.  After reviewing, we confirmed cases of false positives and determined that the rule required a minor update to the rule logic.
+However, several customers reported that this rule was firing improperly, even when the recommended methods have been applied. After reviewing, we confirmed cases of false positives and determined that the rule required a minor update to the rule logic.
 
 We verified the new logic and validated that the rule is now working as originally designed.
 
 <figure><img src="../../../../../.gitbook/assets/image (2329).png" alt=""><figcaption></figcaption></figure>
 
-**3.  Fixed an issue in the APEX rule “URLs of Salesforce pages should be relative, not absolute”**
+**3. Fixed an issue in the APEX rule “URLs of Salesforce pages should be relative, not absolute”**
 
 {Rule ID: sf:AvoidAbsoluteURL}
 
@@ -674,11 +642,11 @@ Verified the updated logic to the rule AvoidAbsoluteURL by validating that the u
 
 <figure><img src="../../../../../.gitbook/assets/image (2331).png" alt=""><figcaption></figcaption></figure>
 
-**4.     Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
+**4. Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
 
 {Rule ID: vf:RequireConfirmationToken}
 
-During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
+During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected. As such, we overhauled the rule logic to address this issue.
 
 **Summary**:
 
@@ -707,11 +675,11 @@ _“vf:RequireConfirmationToken” getting triggered only_ when the correspondin
 
 <figure><img src="../../../../../.gitbook/assets/image (2333).png" alt=""><figcaption></figcaption></figure>
 
-**5.   Fixed an issue in the rule “Switch statements should not have too many case clauses”**
+**5. Fixed an issue in the rule “Switch statements should not have too many case clauses”**
 
 {Rule ID: sf:MaximumNumberOfCase }
 
-Some customers have reported that this rule throws out of bounds exceptions.  Upon investigation, we determined that this is caused by an empty switch statement, which manifests as a parser error when this class is added in Salesforce.
+Some customers have reported that this rule throws out of bounds exceptions. Upon investigation, we determined that this is caused by an empty switch statement, which manifests as a parser error when this class is added in Salesforce.
 
 The aim of fix is to make sure that the CodeScan parser sees empty switch statements as syntax errors.
 
@@ -722,28 +690,27 @@ Verified that the below scenarios are working as expected.
 
 <figure><img src="../../../../../.gitbook/assets/image (2334).png" alt=""><figcaption></figcaption></figure>
 
-**6.  Fixed an issue in the rule “Immutable Field”, which was causing false positives {Rule ID: sf:ImmutableField}**
+**6. Fixed an issue in the rule “Immutable Field”, which was causing false positives {Rule ID: sf:ImmutableField}**
 
 Several customers have reported that the current rule logic incorrectly flags propertyVal as a candidate for final, even though its value can be modified indirectly through a property getter/setter. In the following example, the field propertyVal is updated within the getter of anotherPropertyVal via this.propertyVal = 'test' and subsequently returned:
 
 Example code:
 
-<figure><img src="../../../../../.gitbook/assets/image (2335).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2131).png" alt=""><figcaption></figcaption></figure>
 
 **Expected Behavior:**\
 The rule should not raise a violation when the private field’s value can be modified through class property accessors (get/set methods) or other internal logic. Such fields are not immutable, and marking them as final would cause compilation errors
 
-Verified that the “sf:ImmutableField” is getting triggered only when the private field’s value cannot be modified.  Further, we verified the rule behavior using both mutable and immutable field patterns.
+Verified that the “sf:ImmutableField” is getting triggered only when the private field’s value cannot be modified. Further, we verified the rule behavior using both mutable and immutable field patterns.
 
-<figure><img src="../../../../../.gitbook/assets/image (2336).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2132).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2337).png" alt=""><figcaption></figcaption></figure>
 
-**7.     Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
+**7. Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
 
-During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected.  As such, we overhauled the rule logic to address this issue.
+During our routine, internal rule evaluation process, we discovered that this rule wasn’t firing as expected. As such, we overhauled the rule logic to address this issue.
 
 Verified the sf:HotspotTypeReflection rule by activating the rule in a specified Quality Profile. Then, in a subsequent project analysis, validated that the rule is now working as expected.
 
-<figure><img src="../../../../../.gitbook/assets/image (2338).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../../.gitbook/assets/image (2134).png" alt=""><figcaption></figcaption></figure>

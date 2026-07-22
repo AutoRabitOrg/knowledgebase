@@ -13,8 +13,6 @@ These are the known limitations in **ARM® 22.3**.
 
 Jira OAuth access type is currently supported for **Cloud versions** only.
 
-
-
 ### Understanding Why Selected Files May Not Appear in the Artifact ZIP
 
 **Plain Language Summary** Think of creating an artifact ZIP like packing a suitcase from your laundry. You pick items from three different laundry days, but when you actually pack, you only grab clothes from your **most recent laundry pile**.If a shirt you wanted was already thrown away before that last laundry day, it won’t make it into your suitcase — even if it was in an earlier pile you selected. That’s how the artifact ZIP works: it only includes files that still exist in the latest revision you checked out.
@@ -92,15 +90,15 @@ This section summarizes the deployment limits that ARM users should consider:
 8. Due to current ARM behavior, an **object file** is considered as a **destructive change** in deployment if the object file does not exist in the branch, you commit only a field (child), and then the newly committed field is deleted from the branch. This is the case only for **Metadata API** code, not for **SFDX**.
 9. In case of **Vlocity Custom Deployment**, if the **Access Key** for **Local Compilation** is incorrect, ARM is unable to capture it in the logs.
 10. In **Compare Org and Deploy functionality**, a file diff will not be generated between the source and the target for **Bot Version files**.
-11. If a user uses the **SFDX extension** in a **non-SFDX repository** for any metadata type, then it will not be displayed in UI as a **metadata change** and won't be picked up for deployment in **package.XML**, but the file contents will stay in the promotional **ZIP** file.&#x20;
+11. If a user uses the **SFDX extension** in a **non-SFDX repository** for any metadata type, then it will not be displayed in UI as a **metadata change** and won't be picked up for deployment in **package.XML**, but the file contents will stay in the promotional **ZIP** file.
 12. When dealing with the limitations of integrating Salesforce DX (SFDX) with Vlocity components, several key considerations must be taken into account to ensure effective management and deployment of these components. Below are the **compatibility issues** that must be considered for this feature:
     * **Metadata Types**: Understand the differences in metadata types between SFDX and Vlocity. SFDX does not natively support Vlocity-specific metadata, which requires using specialized tools like the Vlocity Build Tool.
     * **Deployment Methods**: SFDX deployment methods (e.g., packages, change sets) are not fully compatible with Vlocity DataPacks, necessitating alternative deployment strategies.
-    * **Hybrid Approach**:&#x20;
-      * Maintain separate repositories for SFDX and Vlocity components.&#x20;
-      * Use SFDX for Salesforce metadata and development, while managing Vlocity components through their own repository and tools.&#x20;
+    * **Hybrid Approach**:
+      * Maintain separate repositories for SFDX and Vlocity components.
+      * Use SFDX for Salesforce metadata and development, while managing Vlocity components through their own repository and tools.
       * Follow the specific guidelines and best practices provided by Vlocity and Salesforce DX for managing and deploying each type of component.
-13. For **Release Label Deployments**, ARM generates **delta metadata only** for the components listed below:&#x20;
+13. For **Release Label Deployments**, ARM generates **delta metadata only** for the components listed below:
 
     * For **DX Repo Release Labels**, the supported components are:
       * autoResponseRules
@@ -121,7 +119,7 @@ This section summarizes the deployment limits that ARM users should consider:
       * sharingRules
       * workflow
 
-    At this time, delta generation is limited to these components, and no other metadata is supported when utilizing Release Label Deployments.&#x20;
+    At this time, delta generation is limited to these components, and no other metadata is supported when utilizing Release Label Deployments.
 14. **Translations**: The API can’t perform **destructive changes** with the translation value. The API can **add** existing `<translation>` to custom object translation but not **delete** them.
 15. As of **AutoRABIT ARM release 25.4.4**, the platform **does not support destructive changes for Profile IP Ranges** during deployment. This means deleted IP Ranges in the source branch are not removed from the target org through AutoRABIT deployments. In contrast, tools that use the Salesforce Metadata API, such as **Workbench** or the **Salesforce CLI**, will fully replace the target org’s IP Ranges with those from the deployment package, effectively applying deletions as well.
 
@@ -140,14 +138,12 @@ This section summarizes the Version control limits that ARM users should conside
 5. During an **EZ-Commit**, some of the standard fields like **Account.BillingCountry**, **Account.BillingGeocodeAccuracy**, etc. are not getting fetched from the Salesforce org. This is because there is no proper API to fetch these standard fields from Salesforce.
 6.  SFDX structure methods (e.g., packages, change sets) are not fully compatible with Vlocity DataPacks, necessitating non-SFDX repositories, therefore, what is suggested is as follows:
 
-    &#x20;
-
     **Hybrid Approach**:
 
     * Maintain separate repositories for SFDX and Vlocity components.
     * Use SFDX for Salesforce metadata and development, while managing Vlocity components through their own repository and tools.
     * Follow the specific guidelines and best practices provided by Vlocity and Salesforce DX for managing and deploying each type of component.
-7. During the EZ-Commit process, you may observe that translation files containing only comments within certain tags (such as , , etc.) are reformatted after a commit. This is an expected and cosmetic change. \
+7. During the EZ-Commit process, you may observe that translation files containing only comments within certain tags (such as , , etc.) are reformatted after a commit. This is an expected and cosmetic change.\
    Before Commit: \<label><--AC211-->\</label>\
    After Commit: \<label/>\
    This occurs because translation XML files are temporarily converted into Java objects to detect changes during an EZ-Commit.\
@@ -246,7 +242,7 @@ Below are the limitations of ARM related to salesforce dx:
 
     However, for the SFDX and vlocity jobs, users will not get notified of any failed revisions.
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Code coverage results during the CI job come from any tests you've run from the AutoRABIT application, however, you will be able to view the report only if the code coverage is more than **0%**.
 7. For CI Jobs builds that are more than 30 days old, **deployment/ quick deployment/ rollback reports** will not be accessible.

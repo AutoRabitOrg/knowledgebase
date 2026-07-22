@@ -17,11 +17,11 @@ This is an initial step where the user's JIRA credential, such as username and p
 1. Log in to your ARM account.
 2. Hover your mouse over the **Admin** module and click on the **Credentials** tab.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (900).png" alt="" width="353"><figcaption></figcaption></figure>
 
 3. Next, click on **Create Credential** from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (901).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **Credential name**.
 5. Choose the **Credential Type** as '**User name with Password.'**
@@ -29,7 +29,7 @@ This is an initial step where the user's JIRA credential, such as username and p
 7. Please double-check that you use your JIRA username instead of the email address that you use to log in to JIRA.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (902).png" alt="" width="416"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Troubleshooting:**
@@ -49,7 +49,7 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 2. Go to **Admin > My Account** section.
 3. Click on **New ALM System** under the **ALM Management** section.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (903).png" alt=""><figcaption></figcaption></figure>
 
 4. Select **ALM type** as '**JIRA'** from the drop-down.
 
@@ -85,7 +85,7 @@ While registering JIRA with ARM, JIRA fails to connect and results in **"Authent
 
 ### Mapping JIRA to Salesforce Org/ Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 
-Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org/ Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your Jira projects and teams.&#x20;
+Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org/ Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your Jira projects and teams.
 
 1. Go to the **Salesforce Org Management(Admin > SF Org Mgmt.)** page.
 2. Select the **Salesforce org** for which you like to map the JIRA as a plugin.
@@ -115,7 +115,7 @@ In the **EZ-Commit** screen and under the **Post Commit** section, you need to:
 #### In CI Job <a href="#in-ci-job" id="in-ci-job"></a>
 
 {% hint style="info" %}
-**Important Notes:**&#x20;
+**Important Notes:**
 
 Configuring the Jira work items is applicable to the following CI jobs:
 
@@ -128,7 +128,7 @@ Configuring the Jira work items is applicable to the following CI jobs:
 1. Go to the **Build** section under the **New Create CI Job** screen.
 2. Tick the **Map ALM Project (Ex: Jira)** checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="441"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (906).png" alt="" width="441"><figcaption></figcaption></figure>
 
 3. Go to the **ALM** section. Here you can configure the work item type status in JIRA ALM to include in the build.
 4. Select the **ALM type** as **JIRA.**
@@ -147,6 +147,6 @@ Configuring the Jira work items is applicable to the following CI jobs:
 
 #### #Mandatory Scopes are listed below:
 
-_**Classic Scope**_ -  `read:jira-work` , `manage:jira-project` ,`read:jira-user` , `write:jira-work` ,`manage:jira-configuration`
+_**Classic Scope**_ - `read:jira-work` , `manage:jira-project` ,`read:jira-user` , `write:jira-work` ,`manage:jira-configuration`
 
-_**Granular Scope**_ - `read:board-scope:jira-software` , `read:issue-details:jira` , `read:jql:jira` ,`read:sprint:jira-software` ,`read:project:jira` `read:project.avatar:jira` ,`read:project.avatar:jira`,`read:project-category:jira` , `read:project.property:jira`, `read:user:jira`,`read:application-role:jira` , `read:avatar:jira` , `read:group:jira`, `read:issue-type-hierarchy:jira` ,  `read:project-version:jira` , `read:project.component:jira`
+_**Granular Scope**_ - `read:board-scope:jira-software` , `read:issue-details:jira` , `read:jql:jira` ,`read:sprint:jira-software` ,`read:project:jira` `read:project.avatar:jira` ,`read:project.avatar:jira`,`read:project-category:jira` , `read:project.property:jira`, `read:user:jira`,`read:application-role:jira` , `read:avatar:jira` , `read:group:jira`, `read:issue-type-hierarchy:jira` , `read:project-version:jira` , `read:project.component:jira`

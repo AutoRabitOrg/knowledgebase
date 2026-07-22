@@ -8,17 +8,17 @@
 
 ### To view all the APIs
 
-1. Navigate to **`IZ Eye`** -> **`Azure API Management`**. Overview includes -&#x20;
+1. Navigate to **`IZ Eye`** -> **`Azure API Management`**. Overview includes -
 
-<figure><img src="../../../../../../.gitbook/assets/azure_ais_apim_apps_1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/azure_ais_apim_apps_1.png" alt=""><figcaption></figcaption></figure>
 
 * **`Name`** - Name of the API prefixed with Resource Group name
 * **`Organization`** - Subscription to which the API belongs to
 * **`Environment`** - Resource Group to which the API belongs to
 
-2. Click on the **`Plus`** icon to view all the versions of the API&#x20;
+2. Click on the **`Plus`** icon to view all the versions of the API
 
-<figure><img src="../../../../../../.gitbook/assets/azure_ais_apim_apps_2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/azure_ais_apim_apps_2.png" alt=""><figcaption></figcaption></figure>
 
 3. Summary details include -
 

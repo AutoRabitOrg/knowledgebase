@@ -4,141 +4,137 @@
 
 ## CodeScan Release Notes 26.0.16
 
-**Release Date: 19 July 2026**&#x20;
+**Release Date: 19 July 2026**
 
-### Summary&#x20;
+### Summary
 
-AutoRABIT CodeScan 26.0.16 is comprised of the following 4 components:&#x20;
+AutoRABIT CodeScan 26.0.16 is comprised of the following 4 components:
 
-* 0 New Features&#x20;
-* 1 Application Enhancement&#x20;
-* 0 New Rules&#x20;
-* 0 Rule Enhancements&#x20;
-* 0 Rule Deprecations&#x20;
-* 3 Fixes&#x20;
+* 0 New Features
+* 1 Application Enhancement
+* 0 New Rules
+* 0 Rule Enhancements
+* 0 Rule Deprecations
+* 3 Fixes
 
-Component details are listed in their corresponding sections within this document.&#x20;
+Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements&#x20;
+### Application Enhancements
 
-1. **Added Support for Salesforce Refresh Token Rotation (RTR)**&#x20;
+1. **Added Support for Salesforce Refresh Token Rotation (RTR)**
 
-Enhanced the Salesforce integration to support Refresh Token Rotation (RTR) for OAuth authentication.&#x20;
+Enhanced the Salesforce integration to support Refresh Token Rotation (RTR) for OAuth authentication.
 
-Salesforce now enables Refresh Token Rotation by default for newly created External Client Applications (ECAs). With RTR enabled, refresh tokens are rotated after use instead of remaining static. This enhancement updates the CodeScan Salesforce integration to correctly manage rotating refresh tokens, ensuring uninterrupted authentication for new and existing Salesforce connections.&#x20;
+Salesforce now enables Refresh Token Rotation by default for newly created External Client Applications (ECAs). With RTR enabled, refresh tokens are rotated after use instead of remaining static. This enhancement updates the CodeScan Salesforce integration to correctly manage rotating refresh tokens, ensuring uninterrupted authentication for new and existing Salesforce connections.
 
-**Behavior**&#x20;
+**Behavior**
 
-The Salesforce integration now:&#x20;
+The Salesforce integration now:
 
-* Supports refresh token rotation for OAuth-based Salesforce connections. &#x20;
-* Automatically manages refresh token updates during token renewal. &#x20;
-* Maintains connection health across successive token refresh cycles. &#x20;
-* Supports both RTR-enabled and non-RTR Salesforce External Client Applications. &#x20;
-* Continues to use existing authentication flows for previously configured Salesforce connections. &#x20;
+* Supports refresh token rotation for OAuth-based Salesforce connections.
+* Automatically manages refresh token updates during token renewal.
+* Maintains connection health across successive token refresh cycles.
+* Supports both RTR-enabled and non-RTR Salesforce External Client Applications.
+* Continues to use existing authentication flows for previously configured Salesforce connections.
 
-**Compatibility Improvements**&#x20;
+**Compatibility Improvements**
 
-The enhancement provides compatibility with:&#x20;
+The enhancement provides compatibility with:
 
-* Salesforce Production organizations &#x20;
-* Salesforce Sandbox organizations &#x20;
-* Newly created External Client Applications with Refresh Token Rotation enabled &#x20;
-* Existing External Client Applications with Refresh Token Rotation disabled &#x20;
+* Salesforce Production organizations
+* Salesforce Sandbox organizations
+* Newly created External Client Applications with Refresh Token Rotation enabled
+* Existing External Client Applications with Refresh Token Rotation disabled
 
-Support is available across Salesforce analysis workflows, including:&#x20;
+Support is available across Salesforce analysis workflows, including:
 
-* Main branch analysis &#x20;
-* Comparison branch analysis &#x20;
-* Scheduled analyses &#x20;
+* Main branch analysis
+* Comparison branch analysis
+* Scheduled analyses
 
-**Outcome**&#x20;
+**Outcome**
 
-* Ensures compatibility with Salesforce's latest OAuth security model. &#x20;
-* Prevents unnecessary reauthorization for long-lived Salesforce connections. &#x20;
-* Improves the reliability of Salesforce project analysis across repeated authentication cycles. &#x20;
-* Maintains backward compatibility with existing Salesforce integrations while supporting new Salesforce security defaults.&#x20;
+* Ensures compatibility with Salesforce's latest OAuth security model.
+* Prevents unnecessary reauthorization for long-lived Salesforce connections.
+* Improves the reliability of Salesforce project analysis across repeated authentication cycles.
+* Maintains backward compatibility with existing Salesforce integrations while supporting new Salesforce security defaults.
 
-### Fixes&#x20;
+### Fixes
 
-1. **Improved SOQL in Loops Rule Accuracy**&#x20;
+1. **Improved SOQL in Loops Rule Accuracy**
 
-Resolved an issue where the Avoid SOQL in Loops rule (_sf:AvoidSoqlInLoops_) could incorrectly report violations for certain method invocation patterns, resulting in false positives.&#x20;
+Resolved an issue where the Avoid SOQL in Loops rule (_sf:AvoidSoqlInLoops_) could incorrectly report violations for certain method invocation patterns, resulting in false positives.
 
-Previously, the rule could identify SOQL or DML operations as being executed within a loop based solely on nested method call analysis, even when the queried method was not actually invoked from a looping execution path. In some scenarios, method calls originating from Apex test classes could also be included in the analysis, contributing to incorrect findings.&#x20;
+Previously, the rule could identify SOQL or DML operations as being executed within a loop based solely on nested method call analysis, even when the queried method was not actually invoked from a looping execution path. In some scenarios, method calls originating from Apex test classes could also be included in the analysis, contributing to incorrect findings.
 
-**Behavior**&#x20;
+**Behavior**
 
-The rule has been enhanced to improve analysis accuracy by validating the actual execution path before reporting nested-call violations.&#x20;
+The rule has been enhanced to improve analysis accuracy by validating the actual execution path before reporting nested-call violations.
 
-Improvements include:&#x20;
+Improvements include:
 
-* Reduced false positives for SOQL and DML operations that are not executed within loop constructs. &#x20;
-* Improved evaluation of nested method invocation chains. &#x20;
-* Improved validation to ensure nested-call violations are reported only when a genuine loop execution path exists. &#x20;
+* Reduced false positives for SOQL and DML operations that are not executed within loop constructs.
+* Improved evaluation of nested method invocation chains.
+* Improved validation to ensure nested-call violations are reported only when a genuine loop execution path exists.
 
-**Improved Diagnostics**&#x20;
+**Improved Diagnostics**
 
-The rule now provides more accurate reporting by distinguishing between nested method calls and actual SOQL/DML execution within loops, reducing misleading violations for valid code.&#x20;
+The rule now provides more accurate reporting by distinguishing between nested method calls and actual SOQL/DML execution within loops, reducing misleading violations for valid code.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Reduces false positives reported by the Avoid SOQL in Loops rule. &#x20;
-* Improves accuracy of data flow and nested-call analysis. &#x20;
-* Provides developers with more reliable and actionable rule findings. &#x20;
-* Improves confidence in SOQL and DML loop detection for complex Apex applications.&#x20;
+* Reduces false positives reported by the Avoid SOQL in Loops rule.
+* Improves accuracy of data flow and nested-call analysis.
+* Provides developers with more reliable and actionable rule findings.
+* Improves confidence in SOQL and DML loop detection for complex Apex applications.
 
-&#x20;
+2. **Clarified Configuration Limits for SOQL/DML Inside Loops Rule**
 
-2. **Clarified Configuration Limits for SOQL/DML Inside Loops Rule**&#x20;
+Updated the documentation for the Avoid SOQL/DML Inside Loops rule (_sf:AvoidSoqlInLoops_) to clearly communicate the supported configuration limits for method traversal depth.
 
-Updated the documentation for the Avoid SOQL/DML Inside Loops rule (_sf:AvoidSoqlInLoops_) to clearly communicate the supported configuration limits for method traversal depth.&#x20;
+Previously, the rule parameter documentation did not specify the recommended maximum value for the maxMethodTraversalDepth parameter, which could lead to unsupported or excessive configuration values being entered.
 
-Previously, the rule parameter documentation did not specify the recommended maximum value for the maxMethodTraversalDepth parameter, which could lead to unsupported or excessive configuration values being entered.&#x20;
+**Documentation Improvements**
 
-**Documentation Improvements**&#x20;
+The parameter description has been updated to clearly indicate the supported range for method traversal depth, helping administrators configure the rule appropriately.
 
-The parameter description has been updated to clearly indicate the supported range for method traversal depth, helping administrators configure the rule appropriately.&#x20;
+The updated default guidance:
 
-The updated default guidance:&#x20;
+* MaxMethodTraversalDepth = 5
+* MaxMethodVisitedCount = 200
 
-* MaxMethodTraversalDepth = 5&#x20;
-* MaxMethodVisitedCount = 200&#x20;
+**Outcome**
 
-**Outcome**&#x20;
+* Provides clearer guidance for configuring method traversal depth.
+* Helps administrators understand the recommended operating limits for the rule.
+* Improves usability of Quality Profile configuration.
+* Reduces the likelihood of unsupported rule parameter configurations.
 
-* Provides clearer guidance for configuring method traversal depth. &#x20;
-* Helps administrators understand the recommended operating limits for the rule. &#x20;
-* Improves usability of Quality Profile configuration. &#x20;
-* Reduces the likelihood of unsupported rule parameter configurations.&#x20;
+3. **Updated Guidance for Custom Field Requirement Configuration Rule**
 
-&#x20;
+Updated the documentation and messaging for the Custom Field Security in Standard Object rule (_sfmeta:CustomFieldSecurityInStandardObject_) to provide clearer guidance on the recommended approach for configuring required custom fields on Salesforce standard and shared objects.
 
-3. **Updated Guidance for Custom Field Requirement Configuration Rule**&#x20;
+Previously, the rule messaging did not clearly explain why marking custom fields as required at the schema level could have unintended consequences across different data entry mechanisms.
 
-Updated the documentation and messaging for the Custom Field Security in Standard Object rule (_sfmeta:CustomFieldSecurityInStandardObject_) to provide clearer guidance on the recommended approach for configuring required custom fields on Salesforce standard and shared objects.&#x20;
+The following rule metadata has been updated:
 
-Previously, the rule messaging did not clearly explain why marking custom fields as required at the schema level could have unintended consequences across different data entry mechanisms.&#x20;
+* Title: Use the Page Layout to mark the custom field as required.
+* Message: Use the Page Layout to mark the custom field as required.
+* Description: Expanded to clarify that custom fields on standard and shared objects should be marked as required through page layouts rather than at the schema (system) level.
 
-The following rule metadata has been updated:&#x20;
+The updated guidance explains that using page layouts limits the requirement to users interacting through the Salesforce UI, while avoiding unintended impacts on other data entry points, such as:
 
-* Title: Use the Page Layout to mark the custom field as required. &#x20;
-* Message: Use the Page Layout to mark the custom field as required. &#x20;
-* Description: Expanded to clarify that custom fields on standard and shared objects should be marked as required through page layouts rather than at the schema (system) level. &#x20;
+* APIs
+* Data Loader
+* Apex
+* Integrations
 
-The updated guidance explains that using page layouts limits the requirement to users interacting through the Salesforce UI, while avoiding unintended impacts on other data entry points, such as:&#x20;
+**Outcome**
 
-* APIs &#x20;
-* Data Loader &#x20;
-* Apex &#x20;
-* Integrations &#x20;
-
-**Outcome**&#x20;
-
-* Provides clearer remediation guidance for Salesforce administrators. &#x20;
-* Encourages Salesforce best practices for configuring required custom fields. &#x20;
-* Helps prevent unintended validation issues across integrations and automated processes. &#x20;
-* Improves the usability and clarity of rule findings.&#x20;
+* Provides clearer remediation guidance for Salesforce administrators.
+* Encourages Salesforce best practices for configuring required custom fields.
+* Helps prevent unintended validation issues across integrations and automated processes.
+* Improves the usability and clarity of rule findings.
 
 ***
 
@@ -148,208 +144,206 @@ The updated guidance explains that using page layouts limits the requirement to 
 
 ### Summary
 
-CodeScan 26.0.15 is comprised of the following 5 components:&#x20;
+CodeScan 26.0.15 is comprised of the following 5 components:
 
-* 1 New Feature&#x20;
-* 1 New Rule&#x20;
-* 1 Rule Enhancement&#x20;
-* 2 Fixes&#x20;
+* 1 New Feature
+* 1 New Rule
+* 1 Rule Enhancement
+* 2 Fixes
 
-Component details are listed in their corresponding sections within this document.&#x20;
+Component details are listed in their corresponding sections within this document.
 
 ### New Features
 
-1. **CodeScan now has “salesforce-project-only” tags for Rules with SF queries**&#x20;
-
-**Description**&#x20;
-
-Several CodeScan rules perform queries directly against Salesforce to execute their analysis. These rules require an active Salesforce project connection and cannot be used in a standard static analysis context. To improve discoverability and filterability, the tag salesforce-project-only should be added to each of these rules.&#x20;
-
-The following rules require this tag:&#x20;
-
-* sfmeta:NcinoDuplicateLabels&#x20;
-* sfmeta:NcinoComponentNamingDuplicate&#x20;
-* sfmeta:NcinoIntUserConfig&#x20;
-* sfmeta:NcinoDeprecatedFields&#x20;
-* sfmeta:NcinoDuplicateLookupKeys&#x20;
-* sfmeta:NcinoFeeTemplateScreenSection&#x20;
-* sfmeta:NcinoNullLookupKeys&#x20;
-* sfmeta:NcinoProductFeatureNotExist&#x20;
-* sfmeta:NcinoProductFeatureSharing&#x20;
-* sfmeta:NcinoNullCollateral&#x20;
-* sfmeta:ExcessivePageLayout&#x20;
-* sfmeta:CheckSystemAdministrator&#x20;
-* sfmeta:CustomProfilesPermission&#x20;
-
-**Value**&#x20;
-
-Users working in non-Salesforce-connected environments are exposed to rules that will never produce valid results for their project type. By tagging these rules with salesforce-project-only, users can quickly filter them in or out of their rule sets, reducing noise and improving the overall rule browsing experience. It also makes it clearer to new users why certain rules may not be firing.&#x20;
-
-**Acceptance Criteria**&#x20;
-
-* The tag salesforce-project-only is added to all 13 rules listed above.&#x20;
-* The tag appears on the rule detail page for each affected rule in the CodeScan UI.&#x20;
-* Users can filter the rules list by the tag salesforce-project-only and only the 13 listed rules (and any others previously tagged) are returned.&#x20;
-* No existing tags on any of the affected rules are removed or modified.&#x20;
-* The tag is consistent in formatting (lowercase, hyphenated) with salesforce-project-only across all rules.&#x20;
-* A smoke test has been performed to confirm the tag is visible and filterable in a non-production environment before release.
-
-We have verified that the tag "salesforce-project-only" has been added to all 13 rules, and that the tag is visible, consistent, and filterable in the CodeScan UI. &#x20;
-
-#### Test Scenarios Validated:&#x20;
-
-1: Tag presence — All 13 rules have "salesforce-project-only" tag&#x20;
-
-* sfmeta:NcinoDuplicateLabels&#x20;
-* sfmeta:NcinoComponentNamingDuplicate&#x20;
-* sfmeta:NcinoIntUserConfig&#x20;
-* sfmeta:NcinoDeprecatedFields&#x20;
-* sfmeta:NcinoDuplicateLookupKeys&#x20;
-* sfmeta:NcinoFeeTemplateScreenSection&#x20;
-* sfmeta:NcinoNullLookupKeys&#x20;
-* sfmeta:NcinoProductFeatureNotExist&#x20;
-* sfmeta:NcinoProductFeatureSharing&#x20;
-* sfmeta:NcinoNullCollateral&#x20;
-* sfmeta:ExcessivePageLayout&#x20;
-* sfmeta:CheckSystemAdministrator&#x20;
-* sfmeta:CustomProfilesPermission&#x20;
-
-&#x20;
-
-<img src="../../../../.gitbook/assets/unknown (87).png" alt="" height="386" width="594">
-
-2: Tag visible on rule detail page for each affected rule&#x20;
-
-<img src="../../../../.gitbook/assets/unknown (88).png" alt="" height="312" width="624">
-
-3: Filter by "salesforce-project-only" returns all 13 rules&#x20;
-
-<img src="../../../../.gitbook/assets/unknown (89).png" alt="" height="365" width="562">
-
-4: No existing tags removed or modified on any of the 13 rules&#x20;
-
-5: Issue got triggered for a random rule, working as expected. Hence closing this user story.&#x20;
-
-<img src="../../../../.gitbook/assets/unknown (90).png" alt="" height="320" width="578">
-
-### New Rules&#x20;
-
-1. **New CodeScan Metadata Rule: “Communities With Guest Access”** &#x20;
-
-{Rule ID: sfmeta:CommunityGuestUserAccess"} &#x20;
+1. **CodeScan now has “salesforce-project-only” tags for Rules with SF queries**
 
 **Description**
 
-Identify Salesforce Experience Cloud communities (Network metadata) that allow guest user access and correlate them with associated Guest User Profile metadata to detect excessive permissions (object, field, or Apex access). The rule flags communities where unauthenticated users may access or modify sensitive data.&#x20;
+Several CodeScan rules perform queries directly against Salesforce to execute their analysis. These rules require an active Salesforce project connection and cannot be used in a standard static analysis context. To improve discoverability and filterability, the tag salesforce-project-only should be added to each of these rules.
 
-**Hypothesis**&#x20;
+The following rules require this tag:
 
-If a community allows guest access and the associated guest user profile has elevated permissions, then sensitive data or functionality may be exposed to unauthenticated users, leading to potential data breaches or unauthorized actions.&#x20;
+* sfmeta:NcinoDuplicateLabels
+* sfmeta:NcinoComponentNamingDuplicate
+* sfmeta:NcinoIntUserConfig
+* sfmeta:NcinoDeprecatedFields
+* sfmeta:NcinoDuplicateLookupKeys
+* sfmeta:NcinoFeeTemplateScreenSection
+* sfmeta:NcinoNullLookupKeys
+* sfmeta:NcinoProductFeatureNotExist
+* sfmeta:NcinoProductFeatureSharing
+* sfmeta:NcinoNullCollateral
+* sfmeta:ExcessivePageLayout
+* sfmeta:CheckSystemAdministrator
+* sfmeta:CustomProfilesPermission
 
-#### EXACT CONDITIONS TO FLAG &#x20;
+**Value**
 
-A. Object-Level Permissions &#x20;
+Users working in non-Salesforce-connected environments are exposed to rules that will never produce valid results for their project type. By tagging these rules with salesforce-project-only, users can quickly filter them in or out of their rule sets, reducing noise and improving the overall rule browsing experience. It also makes it clearer to new users why certain rules may not be firing.
 
-From:&#x20;
+**Acceptance Criteria**
 
-\<objectPermissions>&#x20;
+* The tag salesforce-project-only is added to all 13 rules listed above.
+* The tag appears on the rule detail page for each affected rule in the CodeScan UI.
+* Users can filter the rules list by the tag salesforce-project-only and only the 13 listed rules (and any others previously tagged) are returned.
+* No existing tags on any of the affected rules are removed or modified.
+* The tag is consistent in formatting (lowercase, hyphenated) with salesforce-project-only across all rules.
+* A smoke test has been performed to confirm the tag is visible and filterable in a non-production environment before release.
 
-Flag if ANY of the following:&#x20;
+We have verified that the tag "salesforce-project-only" has been added to all 13 rules, and that the tag is visible, consistent, and filterable in the CodeScan UI.
 
-* allowRead = true on standard objects: &#x20;
-* Account &#x20;
-* Contact &#x20;
-* Lead&#x20;
-* User&#x20;
-* OR any custom object (\_\_c) &#x20;
+#### Test Scenarios Validated:
 
-OR&#x20;
+1: Tag presence — All 13 rules have "salesforce-project-only" tag
 
-* Any of these are true: &#x20;
-* allowCreate = true &#x20;
-* allowEdit = true &#x20;
-* allowDelete = true &#x20;
+* sfmeta:NcinoDuplicateLabels
+* sfmeta:NcinoComponentNamingDuplicate
+* sfmeta:NcinoIntUserConfig
+* sfmeta:NcinoDeprecatedFields
+* sfmeta:NcinoDuplicateLookupKeys
+* sfmeta:NcinoFeeTemplateScreenSection
+* sfmeta:NcinoNullLookupKeys
+* sfmeta:NcinoProductFeatureNotExist
+* sfmeta:NcinoProductFeatureSharing
+* sfmeta:NcinoNullCollateral
+* sfmeta:ExcessivePageLayout
+* sfmeta:CheckSystemAdministrator
+* sfmeta:CustomProfilesPermission
 
-B. Field-Level Access (Sensitive Data Exposure)&#x20;
+<img src="../../../../.gitbook/assets/unknown (83).png" alt="" height="386" width="594">
 
-From:&#x20;
+2: Tag visible on rule detail page for each affected rule
 
-\<fieldPermissions>&#x20;
+<img src="../../../../.gitbook/assets/unknown (84).png" alt="" height="312" width="624">
 
-Flag if:&#x20;
+3: Filter by "salesforce-project-only" returns all 13 rules
 
-* readable = true for sensitive fields like: &#x20;
-* Contact.Email &#x20;
-* Contact.Phone &#x20;
-* Lead.Email &#x20;
-* Any field matching patterns: &#x20;
-* \*Email\* &#x20;
-* \*Phone\* &#x20;
-* \*SSN\* &#x20;
-* \*Password\* &#x20;
+<img src="../../../../.gitbook/assets/unknown (89).png" alt="" height="365" width="562">
 
-This is your PII exposure condition&#x20;
+4: No existing tags removed or modified on any of the 13 rules
 
-C. Apex Class Access (Public Logic Exposure)&#x20;
+5: Issue got triggered for a random rule, working as expected. Hence closing this user story.
 
-From:&#x20;
+<img src="../../../../.gitbook/assets/unknown (90).png" alt="" height="320" width="578">
 
-\<classAccesses>&#x20;
+### New Rules
 
-Flag if:&#x20;
+1. **New CodeScan Metadata Rule: “Communities With Guest Access”**
 
-\<enabled>true\</enabled>&#x20;
+{Rule ID: sfmeta:CommunityGuestUserAccess"}
 
-Especially risky if:&#x20;
+**Description**
 
-* Classes expose: &#x20;
-* @AuraEnabled &#x20;
-* REST endpoints  &#x20;
+Identify Salesforce Experience Cloud communities (Network metadata) that allow guest user access and correlate them with associated Guest User Profile metadata to detect excessive permissions (object, field, or Apex access). The rule flags communities where unauthenticated users may access or modify sensitive data.
 
-Parameters should be displayed as shown below:&#x20;
+**Hypothesis**
+
+If a community allows guest access and the associated guest user profile has elevated permissions, then sensitive data or functionality may be exposed to unauthenticated users, leading to potential data breaches or unauthorized actions.
+
+#### EXACT CONDITIONS TO FLAG
+
+A. Object-Level Permissions
+
+From:
+
+\<objectPermissions>
+
+Flag if ANY of the following:
+
+* allowRead = true on standard objects:
+* Account
+* Contact
+* Lead
+* User
+* OR any custom object (\_\_c)
+
+OR
+
+* Any of these are true:
+* allowCreate = true
+* allowEdit = true
+* allowDelete = true
+
+B. Field-Level Access (Sensitive Data Exposure)
+
+From:
+
+\<fieldPermissions>
+
+Flag if:
+
+* readable = true for sensitive fields like:
+* Contact.Email
+* Contact.Phone
+* Lead.Email
+* Any field matching patterns:
+* \*Email\*
+* \*Phone\*
+* \*SSN\*
+* \*Password\*
+
+This is your PII exposure condition
+
+C. Apex Class Access (Public Logic Exposure)
+
+From:
+
+\<classAccesses>
+
+Flag if:
+
+\<enabled>true\</enabled>
+
+Especially risky if:
+
+* Classes expose:
+* @AuraEnabled
+* REST endpoints
+
+Parameters should be displayed as shown below:
 
 <img src="../../../../.gitbook/assets/unknown (91).png" alt="" height="165" width="624">
 
-Note: Regarding fields, the functionality should work as PII rule. &#x20;
+Note: Regarding fields, the functionality should work as PII rule.
 
-**Value / Purpose**&#x20;
+**Value / Purpose**
 
-* Detects real-world data exposure risks from misconfigured guest access&#x20;
-* Prevents unauthenticated access to sensitive objects and fields&#x20;
-* Ensures secure configuration of Experience Cloud communities&#x20;
-* Reduces risk of public data leaks and compliance violations&#x20;
-* Provides context-aware, high-confidence vulnerability detection&#x20;
+* Detects real-world data exposure risks from misconfigured guest access
+* Prevents unauthenticated access to sensitive objects and fields
+* Ensures secure configuration of Experience Cloud communities
+* Reduces risk of public data leaks and compliance violations
+* Provides context-aware, high-confidence vulnerability detection
 
-**Acceptance Criteria**&#x20;
+**Acceptance Criteria**
 
-Name: Community Guest User Has Excessive Permissions \
-Key: CommunityGuestUserAccess&#x20;
-
-\
-**Description**: This rule identifies Salesforce Experience Cloud communities that allow guest access and where the associated Guest User Profile has elevated permissions such as object-level permissions (read, create, edit, delete), field-level access to sensitive data, or Apex class access. This may expose sensitive data to unauthenticated users.&#x20;
-
-Type: Vulnerability \
-Severity: Critical \
-Message: Guest user profile has elevated permissions in a community, which may expose sensitive data or allow unauthorized actions.&#x20;
+Name: Community Guest User Has Excessive Permissions\
+Key: CommunityGuestUserAccess
 
 \
-Tags: salesforce, security&#x20;
+**Description**: This rule identifies Salesforce Experience Cloud communities that allow guest access and where the associated Guest User Profile has elevated permissions such as object-level permissions (read, create, edit, delete), field-level access to sensitive data, or Apex class access. This may expose sensitive data to unauthenticated users.
 
-CWE : 732&#x20;
+Type: Vulnerability\
+Severity: Critical\
+Message: Guest user profile has elevated permissions in a community, which may expose sensitive data or allow unauthorized actions.
 
-Remediation: 15 Minutes&#x20;
+\
+Tags: salesforce, security
+
+CWE : 732
+
+Remediation: 15 Minutes
 
 {% hint style="info" %}
-NOTE:  This is a project-level rule.&#x20;
+NOTE: This is a project-level rule.
 {% endhint %}
 
-**Verification**: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:&#x20;
+**Verification**: We have verified the new Salesforce Metadata rule "CommunityGuestUserAccess" (Communities With Guest Access) and have validated via the following scenarios:
 
-* Rule correctly detects communities with guest access enabled.&#x20;
+* Rule correctly detects communities with guest access enabled.
 
 <img src="../../../../.gitbook/assets/unknown (92).png" alt="" height="405" width="624">
 
-* Flags guest user profiles with elevated object-level permissions (read, create) on standard objects.&#x20;
+* Flags guest user profiles with elevated object-level permissions (read, create) on standard objects.
 
 <img src="../../../../.gitbook/assets/unknown (93).png" alt="" height="350" width="624">
 
@@ -369,9 +363,11 @@ NOTE:  This is a project-level rule.&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (97).png" alt="" height="346" width="624">
 
+&#x20;
+
 <img src="../../../../.gitbook/assets/unknown (98).png" alt="" height="344" width="624">
 
-* Rule severity correctly classified as Critical Vulnerability.&#x20;
+* Rule severity correctly classified as Critical Vulnerability.
 
 <img src="../../../../.gitbook/assets/unknown (99).png" alt="" height="318" width="624">
 
@@ -381,51 +377,51 @@ NOTE:  This is a project-level rule.&#x20;
 
 * Re-run & Run manual verified regarding the new changes, both work as expected.
 
-**Notes**: &#x20;
+**Notes**:
 
-* To get the rule triggered correctly, make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.&#x20;
-* To give guest users access to the site's APIs, enable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (or Builder > Settings > Public access)&#x20;
+* To get the rule triggered correctly, make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.
+* To give guest users access to the site's APIs, enable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (or Builder > Settings > Public access)
 
 <img src="../../../../.gitbook/assets/unknown (101).png" alt="" height="314" width="624">
 
-* To take away guest users access to the site's APIs, disable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (Also verify Builder > Settings > Public access is disabled)&#x20;
-* For custom sensitive/PII field-level access, configure “Filed Name” in the rule parameters. ( Field name and Field label can be different, get field name from sf org)&#x20;
+* To take away guest users access to the site's APIs, disable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (Also verify Builder > Settings > Public access is disabled)
+* For custom sensitive/PII field-level access, configure “Filed Name” in the rule parameters. ( Field name and Field label can be different, get field name from sf org)
 
-All verification use cases passed successfully, the rule is working as expected, and no issues were reported during verification. &#x20;
+All verification use cases passed successfully, the rule is working as expected, and no issues were reported during verification.
 
-### Rule Enhancements&#x20;
+### Rule Enhancements
 
-1. **Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}**&#x20;
+1. **Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}**
 
-**Description**&#x20;
+**Description**
 
-Several customers had reported false positives associated with this rule.  Upon analysis, we determined that at the Salesforce level, when parameters are consumed as SOQL bind variables inside a dynamically built query string, these parameters are generally used (and resolved from local scope at runtime).  \
-&#x20;\
-CodeScan was flagging them because its bind-detection only covers the IN :var form passed as a direct argument — not as strings built through the QueryFactory chain.  &#x20;
+Several customers had reported false positives associated with this rule. Upon analysis, we determined that at the Salesforce level, when parameters are consumed as SOQL bind variables inside a dynamically built query string, these parameters are generally used (and resolved from local scope at runtime).\
+\
+CodeScan was flagging them because its bind-detection only covers the IN :var form passed as a direct argument — not as strings built through the QueryFactory chain.
 
-As such, we enhanced the rule logic to ensure that the rule (sf:UnusedFormalParameter) will not raise a violation when a method parameter is referenced as a SOQL bind variable within a string passed to dynamic SOQL execution.&#x20;
+As such, we enhanced the rule logic to ensure that the rule (sf:UnusedFormalParameter) will not raise a violation when a method parameter is referenced as a SOQL bind variable within a string passed to dynamic SOQL execution.
 
-The rule shall recognize bind variable usage for operators such as =, !=, >, <, >=, <=, and IN.&#x20;
+The rule shall recognize bind variable usage for operators such as =, !=, >, <, >=, <=, and IN.
 
-Existing support for IN :variable patterns shall remain unchanged.&#x20;
+Existing support for IN :variable patterns shall remain unchanged.
 
-A violation shall still be reported when a method parameter is genuinely unused.&#x20;
+A violation shall still be reported when a method parameter is genuinely unused.
 
-We have verified that the rule sf:UnusedFormalParameter no longer raises false positives for formal parameters consumed as SOQL/SOSL bind variables (:var) in dynamic query patterns including fflib\_QueryFactory and Database.query().&#x20;
+We have verified that the rule sf:UnusedFormalParameter no longer raises false positives for formal parameters consumed as SOQL/SOSL bind variables (:var) in dynamic query patterns including fflib\_QueryFactory and Database.query().
 
-### Fixes&#x20;
+### Fixes
 
-1. **Fixed grammatical error in CodeScan Project Summary Report**&#x20;
+1. **Fixed grammatical error in CodeScan Project Summary Report**
 
-**Description of issue:**  Misspelling in Project Report&#x20;
+**Description of issue:** Misspelling in Project Report
 
-**Details**:  When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet."&#x20;
+**Details**: When users access the second page of a CodeScan Project report, there was a grammatical error in the error message: "There is no any issues in the project analysis yet."
 
-We have updated error message to now display: “There are currently no issues in the project analysis.”&#x20;
+We have updated error message to now display: “There are currently no issues in the project analysis.”
 
-We have verified that the error messages have been properly updated to “There are currently no issues in the project analysis.” in the project reports. All reports are working as expected.  &#x20;
+We have verified that the error messages have been properly updated to “There are currently no issues in the project analysis.” in the project reports. All reports are working as expected.
 
-* Verified in the new project’s report&#x20;
+* Verified in the new project’s report
 
 <img src="../../../../.gitbook/assets/unknown (102).png" alt="" height="349" width="452">
 
@@ -433,37 +429,41 @@ We have verified that the error messages have been properly updated to “There 
 
 <img src="../../../../.gitbook/assets/unknown (103).png" alt="" height="312" width="399">
 
-* Verified in the scheduled cron job reports&#x20;
+* Verified in the scheduled cron job reports
 
 <img src="../../../../.gitbook/assets/unknown (104).png" alt="" height="412" width="416">
 
-2. **Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations**&#x20;
+2. **Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations**
 
-**Summary**&#x20;
+**Summary**
 
-The "Status Marked By" column in the CSV Issue Export is empty when issue statuses are changed via bulk operations (api/issues/bulk\_change). The column works correctly when statuses are changed via single-issue operations (api/issues/do\_transition).&#x20;
+The "Status Marked By" column in the CSV Issue Export is empty when issue statuses are changed via bulk operations (api/issues/bulk\_change). The column works correctly when statuses are changed via single-issue operations (api/issues/do\_transition).
 
-**Expected Result**&#x20;
+**Expected Result**
 
-The "Status Marked By" column should display the name of the user who performed the bulk status change for all affected issues.&#x20;
+The "Status Marked By" column should display the name of the user who performed the bulk status change for all affected issues.
 
-We analyzed the "Status Marked By” population logic and found that bulk status change records were being skipped due to a startsWith() check. Updated the logic to correctly process bulk change entries and populate the user information. With this logic change, this issue has been fully remediated.&#x20;
+We analyzed the "Status Marked By” population logic and found that bulk status change records were being skipped due to a startsWith() check. Updated the logic to correctly process bulk change entries and populate the user information. With this logic change, this issue has been fully remediated.
 
-**Scenarios Validated:**&#x20;
+**Scenarios Validated:**
 
-1. Bulk status change to CONFIRMED – "Status Marked By" column correctly populated with the user name&#x20;
-2. Bulk status change to EXCEPTION – Column populated as expected&#x20;
-3. Bulk status change to FALSE\_POSITIVE – Column populated as expected&#x20;
-4. Bulk status change to ACCEPTED – Column populated as expected&#x20;
-5. Mixed bulk + single-issue transitions in same CSV export – Both reflect correct user names&#x20;
+1. Bulk status change to CONFIRMED – "Status Marked By" column correctly populated with the user name
+2. Bulk status change to EXCEPTION – Column populated as expected
+3. Bulk status change to FALSE\_POSITIVE – Column populated as expected
+4. Bulk status change to ACCEPTED – Column populated as expected
+5. Mixed bulk + single-issue transitions in same CSV export – Both reflect correct user names
 
 <img src="../../../../.gitbook/assets/unknown (105).png" alt="" height="486" width="624">
 
-6. Multiple bulk operations by different users – Each row shows the respective user who performed the action&#x20;
+6. Multiple bulk operations by different users – Each row shows the respective user who performed the action
 
 <img src="../../../../.gitbook/assets/unknown (106).png" alt="" height="69" width="624">
 
+&#x20;
+
 <img src="../../../../.gitbook/assets/unknown (107).png" alt="" height="52" width="624">
+
+&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (108).png" alt="" height="72" width="624">
 
@@ -473,13 +473,17 @@ We analyzed the "Status Marked By” population logic and found that bulk status
 
 8. Re-transition after bulk change – "Status Marked By" updates to the latest user
 
-<img src="../../../../.gitbook/assets/unknown (110).png" alt="" height="69" width="624">
+<img src="../../../../.gitbook/assets/unknown (106).png" alt="" height="69" width="624">
 
-<img src="../../../../.gitbook/assets/unknown (111).png" alt="" height="52" width="624">
+&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (112).png" alt="" height="72" width="624">
+<img src="../../../../.gitbook/assets/unknown (107).png" alt="" height="52" width="624">
 
-9. Issues with no status change – "Status Marked By" appropriately empty only for untouched issues - OPEN Status&#x20;
+&#x20;
+
+<img src="../../../../.gitbook/assets/unknown (108).png" alt="" height="72" width="624">
+
+9. Issues with no status change – "Status Marked By" appropriately empty only for untouched issues - OPEN Status
 
 <img src="../../../../.gitbook/assets/unknown (113).png" alt="" height="173" width="624">
 
@@ -494,15 +498,15 @@ Verified the same scenarios with PR, working as expected.
 
 **Release Date: 28 June 2026**
 
-### Summary&#x20;
+### Summary
 
-CodeScan 26.0.14 is comprised of the following components:&#x20;
+CodeScan 26.0.14 is comprised of the following components:
 
 * 1 Fix
 
-Component details are listed in their corresponding sections within this document.&#x20;
+Component details are listed in their corresponding sections within this document.
 
-### Fixes&#x20;
+### Fixes
 
 1. **Resolved CI Jobs Analyzing Entire Codebase Instead of Delta Changes**
 
@@ -528,241 +532,239 @@ Improves CI pipeline performance and ensures analysis results remain relevant to
 
 **Release Date: 21 June 2026**
 
-### Summary&#x20;
+### Summary
 
-CodeScan 26.0.13 is comprised of the following 6 components:&#x20;
+CodeScan 26.0.13 is comprised of the following 6 components:
 
-* 0 New Features&#x20;
-* 1 Application Enhancements&#x20;
-* 1 New Rule&#x20;
-* 2 Rule Enhancements&#x20;
-* 0 Rule Deprecations&#x20;
-* 2 Fixes&#x20;
+* 0 New Features
+* 1 Application Enhancements
+* 1 New Rule
+* 2 Rule Enhancements
+* 0 Rule Deprecations
+* 2 Fixes
 
-Component details are listed in their corresponding sections within this document.&#x20;
+Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements&#x20;
+### Application Enhancements
 
-1. **Enhanced CSV Export Reporting for Issues and Security Hotspots**&#x20;
+1. **Enhanced CSV Export Reporting for Issues and Security Hotspots**
 
-Enhanced CSV export reporting for both Issues and Security Hotspots to provide additional information for ownership tracking, exception management, auditing, and compliance reporting.&#x20;
+Enhanced CSV export reporting for both Issues and Security Hotspots to provide additional information for ownership tracking, exception management, auditing, and compliance reporting.
 
-Previously, CSV exports contained limited information, requiring users to manually retrieve assignment, severity, and exception details from within the CodeScan application.&#x20;
+Previously, CSV exports contained limited information, requiring users to manually retrieve assignment, severity, and exception details from within the CodeScan application.
 
-**New Export Fields**&#x20;
+**New Export Fields**
 
-Issue and Security Hotspot CSV exports now include:&#x20;
+Issue and Security Hotspot CSV exports now include:
 
-* Severity &#x20;
-* Assigned To &#x20;
-* Assigned Date &#x20;
-* Exception Expiry Date &#x20;
-* Exception Reason &#x20;
+* Severity
+* Assigned To
+* Assigned Date
+* Exception Expiry Date
+* Exception Reason
 
-Exported data reflects the current state of issues and hotspots at the time of export.&#x20;
+Exported data reflects the current state of issues and hotspots at the time of export.
 
-**Exception Reason Tracking Improvements**&#x20;
+**Exception Reason Tracking Improvements**
 
-Issue exception reasons are now stored separately from standard issue comments, improving traceability and reporting accuracy.&#x20;
+Issue exception reasons are now stored separately from standard issue comments, improving traceability and reporting accuracy.
 
-Previously, exception reasons for Issues were stored using the same change type as standard comments, making it difficult to distinguish exception justifications from normal discussion history.&#x20;
+Previously, exception reasons for Issues were stored using the same change type as standard comments, making it difficult to distinguish exception justifications from normal discussion history.
 
-**Reporting Improvements**&#x20;
+**Reporting Improvements**
 
-The enhanced exports provide greater visibility into:&#x20;
+The enhanced exports provide greater visibility into:
 
-* Severity classification &#x20;
-* Ownership and assignment history &#x20;
-* Exception lifecycle management &#x20;
-* Expiring exceptions &#x20;
-* Compliance and audit reporting activities &#x20;
+* Severity classification
+* Ownership and assignment history
+* Exception lifecycle management
+* Expiring exceptions
+* Compliance and audit reporting activities
 
-Issue CSV exports now clearly distinguish between:&#x20;
+Issue CSV exports now clearly distinguish between:
 
-* Issue Comments &#x20;
-* Exception Reasons &#x20;
+* Issue Comments
+* Exception Reasons
 
-Fields are clearly labeled and consistently formatted within the generated CSV files.&#x20;
+Fields are clearly labeled and consistently formatted within the generated CSV files.
 
-The updated exports provide users with improved visibility into severity, ownership, exception status, and exception lifecycle details, making it easier to perform external analysis, compliance reviews, and governance activities.&#x20;
+The updated exports provide users with improved visibility into severity, ownership, exception status, and exception lifecycle details, making it easier to perform external analysis, compliance reviews, and governance activities.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Improves auditability and compliance reporting. &#x20;
-* Provides greater visibility into issue and hotspot ownership. &#x20;
-* Simplifies exception tracking and lifecycle management. &#x20;
-* Reduces the need to manually gather information from multiple areas of the platform. &#x20;
-* Enhances offline analysis and reporting workflows.&#x20;
+* Improves auditability and compliance reporting.
+* Provides greater visibility into issue and hotspot ownership.
+* Simplifies exception tracking and lifecycle management.
+* Reduces the need to manually gather information from multiple areas of the platform.
+* Enhances offline analysis and reporting workflows.
 
-### New Rules&#x20;
+### New Rules
 
-1. **Connected App Missing Description**&#x20;
+1. **Connected App Missing Description**
 
-Added a new Salesforce Metadata rule to identify Connected Apps that do not have a defined description in metadata.&#x20;
+Added a new Salesforce Metadata rule to identify Connected Apps that do not have a defined description in metadata.
 
-Connected Apps without descriptions can be difficult to govern because administrators may not have enough context about the app’s purpose, ownership, or access usage.&#x20;
+Connected Apps without descriptions can be difficult to govern because administrators may not have enough context about the app’s purpose, ownership, or access usage.
 
-**Rule Details**&#x20;
+**Rule Details**
 
-* Rule key: _ConnectedAppMissingDescription_&#x20;
-* Type: Code Smell &#x20;
-* Default Severity: Major &#x20;
-* Remediation effort: 2 minutes &#x20;
-* Tags: salesforce &#x20;
+* Rule key: _ConnectedAppMissingDescription_
+* Type: Code Smell
+* Default Severity: Major
+* Remediation effort: 2 minutes
+* Tags: salesforce
 
-**Behavior**&#x20;
+**Behavior**
 
-The rule raises a violation when a Connected App metadata file does not contain a valid description.&#x20;
+The rule raises a violation when a Connected App metadata file does not contain a valid description.
 
-Violations are raised when the description is:&#x20;
+Violations are raised when the description is:
 
-* Missing &#x20;
-* Empty &#x20;
-* Self-closing &#x20;
-* Commented out &#x20;
-* Whitespace-only &#x20;
-* Defined only in an unrelated nested location &#x20;
+* Missing
+* Empty
+* Self-closing
+* Commented out
+* Whitespace-only
+* Defined only in an unrelated nested location
 
-The rule does not raise a violation when a valid description is present, including descriptions with multiline text or special characters.&#x20;
+The rule does not raise a violation when a valid description is present, including descriptions with multiline text or special characters.
 
-**Message**&#x20;
+**Message**
 
-_Connected App does not have a description defined. Add a description for better governance and traceability._&#x20;
+_Connected App does not have a description defined. Add a description for better governance and traceability._
 
-**Outcome**&#x20;
+**Outcome**
 
-* Improves governance and documentation of Salesforce Connected Apps. &#x20;
-* Helps identify orphaned, unmanaged, or poorly documented integrations. &#x20;
-* Supports security audits and compliance reviews. &#x20;
-* Provides better visibility into app purpose and ownership.&#x20;
+* Improves governance and documentation of Salesforce Connected Apps.
+* Helps identify orphaned, unmanaged, or poorly documented integrations.
+* Supports security audits and compliance reviews.
+* Provides better visibility into app purpose and ownership.
 
-### Rule Enhancements&#x20;
+### Rule Enhancements
 
-**1. Improved Rule Engine Stability and Error Handling**&#x20;
+**1. Improved Rule Engine Stability and Error Handling**
 
-Improved the stability and resilience of Apex rule execution by addressing multiple edge cases that could result in internal exceptions being exposed in analysis logs.&#x20;
+Improved the stability and resilience of Apex rule execution by addressing multiple edge cases that could result in internal exceptions being exposed in analysis logs.
 
-Previously, certain rule evaluation scenarios could generate internal exceptions during analysis, resulting in Java stack traces being written to logs. Although analysis often completed successfully, these errors could lead to incomplete rule evaluation and reduced confidence in results.&#x20;
+Previously, certain rule evaluation scenarios could generate internal exceptions during analysis, resulting in Java stack traces being written to logs. Although analysis often completed successfully, these errors could lead to incomplete rule evaluation and reduced confidence in results.
 
-Edge cases addressed:&#x20;
+Edge cases addressed:
 
-* _SOQL Injection Rule Stability_&#x20;
+* _SOQL Injection Rule Stability_
 
-Improved handling of Apex data-flow analysis scenarios that could previously result in internal type-casting exceptions during rule evaluation.&#x20;
+Improved handling of Apex data-flow analysis scenarios that could previously result in internal type-casting exceptions during rule evaluation.
 
-* _LocaleInOldApiRule Stability_&#x20;
+* _LocaleInOldApiRule Stability_
 
-Improved handling of chained method invocations such as DateTime.now().format()to prevent internal rule execution errors while analyzing valid Apex code.&#x20;
+Improved handling of chained method invocations such as DateTime.now().format()to prevent internal rule execution errors while analyzing valid Apex code.
 
-* _Defensive Null Handling Across Rule Execution_&#x20;
+* _Defensive Null Handling Across Rule Execution_
 
-Enhanced null-safety handling for multiple Apex rules, including:&#x20;
+Enhanced null-safety handling for multiple Apex rules, including:
 
-* Unescaped Output &#x20;
-* SOQL Injection &#x20;
-* Avoid SOQL in Loops &#x20;
+* Unescaped Output
+* SOQL Injection
+* Avoid SOQL in Loops
 
-Additional validation and defensive checks were introduced to ensure rule execution can safely handle unresolved AST and semantic-analysis paths without exposing internal exceptions.&#x20;
+Additional validation and defensive checks were introduced to ensure rule execution can safely handle unresolved AST and semantic-analysis paths without exposing internal exceptions.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Improves overall rule engine stability. &#x20;
-* Prevents internal implementation details from appearing in analysis logs. &#x20;
-* Reduces the risk of incomplete rule evaluation. &#x20;
-* Provides more reliable and professional analysis output. &#x20;
-* Improves confidence in analysis results for Apex projects.&#x20;
+* Improves overall rule engine stability.
+* Prevents internal implementation details from appearing in analysis logs.
+* Reduces the risk of incomplete rule evaluation.
+* Provides more reliable and professional analysis output.
+* Improves confidence in analysis results for Apex projects.
 
-2. **Enhanced Documentation for Sensitive PII Field Detection Rule**&#x20;
+2. **Enhanced Documentation for Sensitive PII Field Detection Rule**
 
-Updated the documentation and guidance for the Identify Potential Sensitive PII Fields rule (sf:SecurePIIFields) to provide clearer information about the types of data covered by the rule and how organizations can extend detection coverage.&#x20;
+Updated the documentation and guidance for the Identify Potential Sensitive PII Fields rule (sf:SecurePIIFields) to provide clearer information about the types of data covered by the rule and how organizations can extend detection coverage.
 
-**Documentation Improvements**&#x20;
+**Documentation Improvements**
 
-The updated rule description now clarifies that certain standard Salesforce objects may contain sensitive personal information, including:&#x20;
+The updated rule description now clarifies that certain standard Salesforce objects may contain sensitive personal information, including:
 
-* Contact &#x20;
-* Lead &#x20;
-* User &#x20;
-* Account &#x20;
-* Person Account &#x20;
-* Opportunity &#x20;
+* Contact
+* Lead
+* User
+* Account
+* Person Account
+* Opportunity
 
-Examples of potentially sensitive data include:&#x20;
+Examples of potentially sensitive data include:
 
-* Names &#x20;
-* Email addresses &#x20;
-* Phone numbers &#x20;
-* Physical addresses &#x20;
-* Birth dates &#x20;
-* Other personal identifiers &#x20;
+* Names
+* Email addresses
+* Phone numbers
+* Physical addresses
+* Birth dates
+* Other personal identifiers
 
-The documentation also highlights the importance of protecting this information in accordance with privacy and security regulations such as:&#x20;
+The documentation also highlights the importance of protecting this information in accordance with privacy and security regulations such as:
 
-* GDPR &#x20;
-* CCPA &#x20;
-* HIPAA &#x20;
+* GDPR
+* CCPA
+* HIPAA
 
-**Configuration Guidance**&#x20;
+**Configuration Guidance**
 
-Organizations can define additional sensitive field names through rule parameters, including:&#x20;
+Organizations can define additional sensitive field names through rule parameters, including:
 
-* SSN &#x20;
-* Social\_Security\_Number &#x20;
-* Credit\_Card &#x20;
-* Passport &#x20;
+* SSN
+* Social\_Security\_Number
+* Credit\_Card
+* Passport
 
-and other organization-specific fields that may contain regulated personal information.&#x20;
+and other organization-specific fields that may contain regulated personal information.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Improves understanding of the rules' purpose and scope. &#x20;
-* Provides clearer guidance for identifying and protecting sensitive data. &#x20;
-* Helps organizations extend detection coverage to custom fields. &#x20;
-* Supports privacy, security, and compliance initiatives through improved rule documentation.&#x20;
+* Improves understanding of the rules' purpose and scope.
+* Provides clearer guidance for identifying and protecting sensitive data.
+* Helps organizations extend detection coverage to custom fields.
+* Supports privacy, security, and compliance initiatives through improved rule documentation.
 
-### Fixes&#x20;
+### Fixes
 
-1. **Resolved SAML Login Issue with Uppercase Organization Domains**&#x20;
+1. **Resolved SAML Login Issue with Uppercase Organization Domains**
 
-Fixed an issue where users could be unable to log in when the organization's domain name contained uppercase letters.&#x20;
+Fixed an issue where users could be unable to log in when the organization's domain name contained uppercase letters.
 
-Previously, the SAML login flow treated organization domains as case-sensitive. As a result, valid domains entered with uppercase or mixed-case characters could fail authentication, even though domain names should be handled case-insensitively.&#x20;
+Previously, the SAML login flow treated organization domains as case-sensitive. As a result, valid domains entered with uppercase or mixed-case characters could fail authentication, even though domain names should be handled case-insensitively.
 
-**Behavior**&#x20;
+**Behavior**
 
-* Organization domain matching is now handled case-insensitively during SAML login. &#x20;
-* SAML connection creation now stores organization domain names consistently in lowercase. &#x20;
-* Domains entered in lowercase, uppercase, or mixed case are handled correctly. &#x20;
-* Leading and trailing spaces in domain input are handled safely. &#x20;
-* Invalid domains continue to be rejected as expected. &#x20;
+* Organization domain matching is now handled case-insensitively during SAML login.
+* SAML connection creation now stores organization domain names consistently in lowercase.
+* Domains entered in lowercase, uppercase, or mixed case are handled correctly.
+* Leading and trailing spaces in domain input are handled safely.
+* Invalid domains continue to be rejected as expected.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Improves SAML login reliability for organizations using mixed-case or uppercase domain entries.&#x20;
-* Aligns organization domain handling with standard case-insensitive domain behavior. &#x20;
-* Prevents valid users from being blocked due to domain capitalization differences.&#x20;
+* Improves SAML login reliability for organizations using mixed-case or uppercase domain entries.
+* Aligns organization domain handling with standard case-insensitive domain behavior.
+* Prevents valid users from being blocked due to domain capitalization differences.
 
-&#x20;
+2. **Resolved Salesforce Integration Error When Using Previous Test Run Results**
 
-2. **Resolved Salesforce Integration Error When Using Previous Test Run Results**&#x20;
+Fixed an issue that could prevent Salesforce integrations from running successfully when configured to use unit test results from a previous execution.
 
-Fixed an issue that could prevent Salesforce integrations from running successfully when configured to use unit test results from a previous execution.&#x20;
+Previously, analyses configured with the _Use previous run_ option could fail while attempting to retrieve historical test execution data.
 
-Previously, analyses configured with the _Use previous run_ option could fail while attempting to retrieve historical test execution data.&#x20;
+**Behavior**
 
-**Behavior**&#x20;
+* Corrected the retrieval of previous unit test execution results.
+* Improved handling of Salesforce test coverage queries and historical test result lookups.
+* Analysis now successfully reuses previously executed unit test results when available.
+* Organizations without prior test execution history are handled gracefully.
 
-* Corrected the retrieval of previous unit test execution results. &#x20;
-* Improved handling of Salesforce test coverage queries and historical test result lookups. &#x20;
-* Analysis now successfully reuses previously executed unit test results when available. &#x20;
-* Organizations without prior test execution history are handled gracefully. &#x20;
+**Outcome**
 
-**Outcome**&#x20;
-
-* Improves the reliability of Salesforce integrations using previously executed unit tests. &#x20;
-* Prevents failures caused by test result retrieval errors. &#x20;
-* Reduces unnecessary test execution by allowing the successful reuse of historical test results. &#x20;
-* Provides more resilient handling of organizations with limited or no prior test execution history.&#x20;
+* Improves the reliability of Salesforce integrations using previously executed unit tests.
+* Prevents failures caused by test result retrieval errors.
+* Reduces unnecessary test execution by allowing the successful reuse of historical test results.
+* Provides more resilient handling of organizations with limited or no prior test execution history.
 
 ***
 
@@ -783,253 +785,249 @@ Component details are listed in their corresponding sections within this documen
 
 ### Application Enhancements
 
-1. &#x20;**Instance-Level Severity Masking**
+1. **Instance-Level Severity Masking**
 
 {% hint style="info" %}
 NOTE: This feature is only available to customers who have a dedicated instance. It is not available for customers who are deployed on our SaaS multi-tenant instances.
 {% endhint %}
 
-Added support for instance-level severity masking, allowing CodeScan Administrators to centrally customize how severity labels are displayed across the platform while preserving underlying severity values, analysis behavior, and reporting logic.&#x20;
+Added support for instance-level severity masking, allowing CodeScan Administrators to centrally customize how severity labels are displayed across the platform while preserving underlying severity values, analysis behavior, and reporting logic.
 
-Previously, severity labels were displayed using the default values throughout CodeScan and could not be customized at the instance level. This enhancement introduces centralized severity masking that is consistently applied across the Web UI, reports, exports, APIs, and IDE plugins.&#x20;
+Previously, severity labels were displayed using the default values throughout CodeScan and could not be customized at the instance level. This enhancement introduces centralized severity masking that is consistently applied across the Web UI, reports, exports, APIs, and IDE plugins.
 
-**Behavior**&#x20;
+**Behavior**
 
-* Administrators can configure severity label mappings through the Admin UI. &#x20;
-* Severity masking settings are stored and managed at the instance level. &#x20;
-* Severity mappings are exposed through secure APIs and applied consistently across the platform. &#x20;
-* Custom severity labels are displayed throughout: &#x20;
-* Web UI &#x20;
-* Reports &#x20;
-* CSV exports &#x20;
-* SARIF exports &#x20;
-* IDE plugins &#x20;
-* Default severity labels are automatically used when no severity masking configuration exists. &#x20;
-* Changes are applied immediately without requiring a refresh.&#x20;
+* Administrators can configure severity label mappings through the Admin UI.
+* Severity masking settings are stored and managed at the instance level.
+* Severity mappings are exposed through secure APIs and applied consistently across the platform.
+* Custom severity labels are displayed throughout:
+* Web UI
+* Reports
+* CSV exports
+* SARIF exports
+* IDE plugins
+* Default severity labels are automatically used when no severity masking configuration exists.
+* Changes are applied immediately without requiring a refresh.
 
-<img src="../../../../.gitbook/assets/unknown (64).png" alt="" height="308" width="624">
+<img src="../../../../.gitbook/assets/unknown (63).png" alt="" height="308" width="624">
 
-**Supported Default Severity Labels**&#x20;
+**Supported Default Severity Labels**
 
-* Blocker &#x20;
-* Critical &#x20;
-* Major &#x20;
-* Minor &#x20;
-* Info&#x20;
+* Blocker
+* Critical
+* Major
+* Minor
+* Info
 
-**Validation**&#x20;
+**Validation**
 
-* Validation is enforced at both API and UI levels. &#x20;
-* Invalid severity mappings are rejected with clear error messages. &#x20;
-* Only administrators can modify severity masking settings. &#x20;
-* Unauthorized users are restricted from making configuration changes. &#x20;
+* Validation is enforced at both API and UI levels.
+* Invalid severity mappings are rejected with clear error messages.
+* Only administrators can modify severity masking settings.
+* Unauthorized users are restricted from making configuration changes.
 
-**Functional Integrity**&#x20;
+**Functional Integrity**
 
-Severity masking affects display labels only. The following behaviors remain unchanged:&#x20;
+Severity masking affects display labels only. The following behaviors remain unchanged:
 
-* Underlying severity values &#x20;
-* Issue counts and metrics &#x20;
-* Quality Gate evaluations &#x20;
-* Severity-based sorting &#x20;
-* Severity-based filtering &#x20;
-* Analysis processing &#x20;
-* Reporting calculations &#x20;
-* Export generation &#x20;
-* SARIF standards compliance &#x20;
-* IDE plugin workflows &#x20;
-* Downstream integrations &#x20;
+* Underlying severity values
+* Issue counts and metrics
+* Quality Gate evaluations
+* Severity-based sorting
+* Severity-based filtering
+* Analysis processing
+* Reporting calculations
+* Export generation
+* SARIF standards compliance
+* IDE plugin workflows
+* Downstream integrations
 
-**Outcome**&#x20;
+**Outcome**
 
-* Provides consistent severity representation across the entire CodeScan platform. &#x20;
-* Enables centralized governance of severity terminology. &#x20;
-* Reduces inconsistencies between Web UI, reports, exports, and IDE plugins. &#x20;
-* Preserves existing functionality and compatibility with integrations. &#x20;
-
-
+* Provides consistent severity representation across the entire CodeScan platform.
+* Enables centralized governance of severity terminology.
+* Reduces inconsistencies between Web UI, reports, exports, and IDE plugins.
+* Preserves existing functionality and compatibility with integrations.
 
 2. **Exception Expiry Notifications**
 
-Added subscription-based exception expiry notifications for Issues and Security Hotspots, enabling users to receive automated reminders before approved exceptions reach their expiry date.&#x20;
+Added subscription-based exception expiry notifications for Issues and Security Hotspots, enabling users to receive automated reminders before approved exceptions reach their expiry date.
 
-**Subscription Management**&#x20;
+**Subscription Management**
 
-Users can now manage exception expiry notification preferences through:&#x20;
+Users can now manage exception expiry notification preferences through:
 
-Profile → My Account → Notifications&#x20;
+Profile → My Account → Notifications
 
-Notification options are available in:&#x20;
+Notification options are available in:
 
-* Overall Notifications &#x20;
-* Project Notifications &#x20;
-* Project-level notification settings &#x20;
+* Overall Notifications
+* Project Notifications
+* Project-level notification settings
 
-Users can enable or disable exception expiry notifications based on their preferences.&#x20;
+Users can enable or disable exception expiry notifications based on their preferences.
 
-**Reminder Notifications**&#x20;
+**Reminder Notifications**
 
-Subscribed users receive automated email reminders for Issues and Security Hotspots with approved exceptions.&#x20;
+Subscribed users receive automated email reminders for Issues and Security Hotspots with approved exceptions.
 
-Notifications are sent:&#x20;
+Notifications are sent:
 
-* One week before expiry &#x20;
-* One business day before expiry &#x20;
+* One week before expiry
+* One business day before expiry
 
-Business-day scheduling is automatically applied.&#x20;
+Business-day scheduling is automatically applied.
 
-**Notification Controls**&#x20;
+**Notification Controls**
 
-Notifications respect:&#x20;
+Notifications respect:
 
-* User notification preferences &#x20;
-* Project notification settings &#x20;
-* User permission settings &#x20;
+* User notification preferences
+* Project notification settings
+* User permission settings
 
-Notifications are not sent for:&#x20;
+Notifications are not sent for:
 
-* Archived organizations &#x20;
-* Deleted projects &#x20;
-* Unsubscribed users &#x20;
+* Archived organizations
+* Deleted projects
+* Unsubscribed users
 
-**Outcome**&#x20;
+**Outcome**
 
-* Helps teams proactively review exceptions before they expire. &#x20;
-* Reduces the risk of unnoticed expired exceptions. &#x20;
-* Improves compliance and governance processes. &#x20;
-* Provides users direct control over exception-related notifications.&#x20;
-
-
+* Helps teams proactively review exceptions before they expire.
+* Reduces the risk of unnoticed expired exceptions.
+* Improves compliance and governance processes.
+* Provides users direct control over exception-related notifications.
 
 3. **Rules Evaluation Export Report**
 
-Added a new Rules Evaluation Export Report that provides visibility into all rules evaluated during a scan, including scans where no issues are detected.&#x20;
+Added a new Rules Evaluation Export Report that provides visibility into all rules evaluated during a scan, including scans where no issues are detected.
 
-**Behavior**&#x20;
+**Behavior**
 
-A new export option, CSV Rules Evaluation Report, is available from the More menu.&#x20;
+A new export option, CSV Rules Evaluation Report, is available from the More menu.
 
-Users can select:&#x20;
+Users can select:
 
-* Project &#x20;
-* Branch &#x20;
+* Project
+* Branch
 
-and export a report containing all rules evaluated during the selected scan.&#x20;
+and export a report containing all rules evaluated during the selected scan.
 
-**Report Contents**&#x20;
+**Report Contents**
 
-The report includes:&#x20;
+The report includes:
 
-* rule\_key &#x20;
-* rule\_name &#x20;
-* rule\_language &#x20;
-* rule\_category &#x20;
-* rule\_severity &#x20;
-* issues\_found &#x20;
+* rule\_key
+* rule\_name
+* rule\_language
+* rule\_category
+* rule\_severity
+* issues\_found
 
-Rules are included regardless of whether violations were detected.&#x20;
+Rules are included regardless of whether violations were detected.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Improves auditability and compliance reporting. &#x20;
-* Provides visibility into scan coverage. &#x20;
-* Allows users to validate rule execution even when no issues are found. &#x20;
+* Improves auditability and compliance reporting.
+* Provides visibility into scan coverage.
+* Allows users to validate rule execution even when no issues are found.
 * Preserves historical accuracy based on the quality profiles used during the scan.
 
-### &#x20;New Rules
+### New Rules
 
 1. **Connected App Uses High-Risk OAuth Scopes**
 
-Added a new Salesforce Metadata security rule to identify Connected Apps configured with high-risk OAuth scopes that may grant excessive or persistent access to organizational data and APIs.&#x20;
+Added a new Salesforce Metadata security rule to identify Connected Apps configured with high-risk OAuth scopes that may grant excessive or persistent access to organizational data and APIs.
 
-**Rule Details**&#x20;
+**Rule Details**
 
-* Rule key: _ConnectedAppHighRiskScopes_ &#x20;
-* Type: Vulnerability &#x20;
-* Default Severity: Major &#x20;
-* CWE: CWE-272 &#x20;
-* Remediation effort: 10 minutes &#x20;
+* Rule key: _ConnectedAppHighRiskScopes_
+* Type: Vulnerability
+* Default Severity: Major
+* CWE: CWE-272
+* Remediation effort: 10 minutes
 
-**Behavior**&#x20;
+**Behavior**
 
-The rule analyzes Salesforce Connected App metadata and raises a violation when high-risk OAuth scopes are detected within the Connected App configuration.&#x20;
+The rule analyzes Salesforce Connected App metadata and raises a violation when high-risk OAuth scopes are detected within the Connected App configuration.
 
-The following OAuth scopes are currently identified as high-risk:&#x20;
+The following OAuth scopes are currently identified as high-risk:
 
-* full &#x20;
-* api &#x20;
-* refresh\_token &#x20;
+* full
+* api
+* refresh\_token
 
-When one or more of these scopes are present, the rule reports the detected values in the violation message.&#x20;
+When one or more of these scopes are present, the rule reports the detected values in the violation message.
 
-**Message**&#x20;
+**Message**
 
-_Connected App contains high-risk OAuth scopes: {scopes}. Review and restrict access._&#x20;
+_Connected App contains high-risk OAuth scopes: {scopes}. Review and restrict access._
 
-**Outcome**&#x20;
+**Outcome**
 
-* Helps security teams identify over-privileged Salesforce integrations. &#x20;
-* Improves visibility into Connected Apps that may expose organizational data through excessive OAuth permissions. &#x20;
-* Encourages implementation of least-privilege access principles. &#x20;
-* Reduces the risk of unauthorized or persistent access through overly permissive OAuth scope configurations.&#x20;
+* Helps security teams identify over-privileged Salesforce integrations.
+* Improves visibility into Connected Apps that may expose organizational data through excessive OAuth permissions.
+* Encourages implementation of least-privilege access principles.
+* Reduces the risk of unauthorized or persistent access through overly permissive OAuth scope configurations.
 
 ### Rule Enhancements
 
 1. **Enhanced Avoid Calling SOQL and DML Inside Loops Rule**
 
-Enhanced the _sf:AvoidSoqlInLoops_ rule to optionally detect Salesforce platform methods that consume SOQL queries internally when executed within loops.&#x20;
+Enhanced the _sf:AvoidSoqlInLoops_ rule to optionally detect Salesforce platform methods that consume SOQL queries internally when executed within loops.
 
-**New Parameter**&#x20;
+**New Parameter**
 
-| Parameter          | Default  | Description                                                           |
-| ------------------ | -------- | --------------------------------------------------------------------- |
-| checkInternalSoql  | false    | Checks for methods with internal SOQL consumption used within loops.  |
+| Parameter         | Default | Description                                                          |
+| ----------------- | ------- | -------------------------------------------------------------------- |
+| checkInternalSoql | false   | Checks for methods with internal SOQL consumption used within loops. |
 
-**Behavior**&#x20;
+**Behavior**
 
-When enabled, the rule identifies supported platform methods that may consume hidden SOQL queries inside loops, for example:&#x20;
+When enabled, the rule identifies supported platform methods that may consume hidden SOQL queries inside loops, for example:
 
-* Messaging APIs &#x20;
-* UserInfo APIs &#x20;
-* FeatureManagement APIs &#x20;
-* Approval APIs &#x20;
-* Flow invocation APIs &#x20;
-* ConnectApi operations &#x20;
-* Visualforce content APIs &#x20;
+* Messaging APIs
+* UserInfo APIs
+* FeatureManagement APIs
+* Approval APIs
+* Flow invocation APIs
+* ConnectApi operations
+* Visualforce content APIs
 
-Outcome&#x20;
+Outcome
 
-* Improves detection of governor limit risks. &#x20;
-* Identifies hidden SOQL consumption. &#x20;
-* Helps developers avoid query-limit violations. &#x20;
-* Preserves existing behavior unless explicitly enabled.&#x20;
+* Improves detection of governor limit risks.
+* Identifies hidden SOQL consumption.
+* Helps developers avoid query-limit violations.
+* Preserves existing behavior unless explicitly enabled.
 
 ### Fixes
 
 1. **GitHub Enterprise Integration Improvements**
 
-Resolved multiple GitHub App integration issues affecting project creation, Pull Request analysis, and commit status reporting.&#x20;
+Resolved multiple GitHub App integration issues affecting project creation, Pull Request analysis, and commit status reporting.
 
-a. GitHub App Installation Flow&#x20;
+a. GitHub App Installation Flow
 
-* Fixed an issue where organization members could receive a 404 error during GitHub App installation and project creation workflows.&#x20;
+* Fixed an issue where organization members could receive a 404 error during GitHub App installation and project creation workflows.
 
-b. Pull Request Analysis Scope&#x20;
+b. Pull Request Analysis Scope
 
-* Fixed an issue where PR analysis could process unrelated base branch files when the GitHub App lacked required permissions to retrieve changed PR files.&#x20;
-* Required permission (PR): Read &#x20;
+* Fixed an issue where PR analysis could process unrelated base branch files when the GitHub App lacked required permissions to retrieve changed PR files.
+* Required permission (PR): Read
 
-c. Commit Status Reporting&#x20;
+c. Commit Status Reporting
 
-* Fixed an issue where CodeScan could not publish analysis status updates to GitHub Pull Requests due to insufficient GitHub App permissions.&#x20;
-* Required permission (Commit statuses): Read & Write &#x20;
+* Fixed an issue where CodeScan could not publish analysis status updates to GitHub Pull Requests due to insufficient GitHub App permissions.
+* Required permission (Commit statuses): Read & Write
 
-Outcome&#x20;
+Outcome
 
-* Improves GitHub project onboarding. &#x20;
-* Ensures PR analysis processes only changed files. &#x20;
-* Restores CodeScan status reporting on Pull Requests. &#x20;
-* Improves support for all types of environments.&#x20;
+* Improves GitHub project onboarding.
+* Ensures PR analysis processes only changed files.
+* Restores CodeScan status reporting on Pull Requests.
+* Improves support for all types of environments.
 
 {% hint style="info" %}
 **GitHub App Permission Update**
@@ -1038,7 +1036,7 @@ Outcome&#x20;
 
 \
 The account or organization Owner should review and approve this request in GitHub:\
-Settings → GitHub Apps&#x20;
+Settings → GitHub Apps
 
 (or Applications → Installed GitHub Apps → CodeScan → Review Request)
 
@@ -1048,44 +1046,42 @@ Once the request is approved, no further action is required.
 
 2. **Resolved User Invitation and Group Assignment Issues**
 
-Fixed issues in the user invitation workflow where invited or re-created users were not being assigned correctly to organizations and default groups.&#x20;
+Fixed issues in the user invitation workflow where invited or re-created users were not being assigned correctly to organizations and default groups.
 
-Previously:&#x20;
+Previously:
 
-* Users invited from an organization were not always added to that organization after signup. &#x20;
-* Users who were deleted or deactivated from the UI and later re-created were not added back to the default Members group. &#x20;
-* This could prevent invited users from accessing the expected organization context after completing signup. &#x20;
+* Users invited from an organization were not always added to that organization after signup.
+* Users who were deleted or deactivated from the UI and later re-created were not added back to the default Members group.
+* This could prevent invited users from accessing the expected organization context after completing signup.
 
-**Behavior**&#x20;
+**Behavior**
 
-* New users now follow the invite link flow correctly after signup and are added to the intended organization. &#x20;
-* Email verification handling was updated so first-time signup flows redirect users through the invite workflow as expected. &#x20;
-* Re-created users are now added back to the default Members group after activation. &#x20;
-* Invite validation and post-login handling were improved to ensure organization and group membership are applied correctly. &#x20;
+* New users now follow the invite link flow correctly after signup and are added to the intended organization.
+* Email verification handling was updated so first-time signup flows redirect users through the invite workflow as expected.
+* Re-created users are now added back to the default Members group after activation.
+* Invite validation and post-login handling were improved to ensure organization and group membership are applied correctly.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Ensures invited users are added to the correct organization after signup. &#x20;
-* Restores default group assignment for users who are re-created after deletion or deactivation. &#x20;
-* Improves reliability of onboarding and access management workflows.&#x20;
-
-
+* Ensures invited users are added to the correct organization after signup.
+* Restores default group assignment for users who are re-created after deletion or deactivation.
+* Improves reliability of onboarding and access management workflows.
 
 3. **Analysis Permission Validation Improvements**
 
-Fixed an issue where users with valid scan permissions could receive unauthorized errors when executing analyses.&#x20;
+Fixed an issue where users with valid scan permissions could receive unauthorized errors when executing analyses.
 
-**Behavior**&#x20;
+**Behavior**
 
-* Improved user-level scan permission validation. &#x20;
-* Improved group-level scan permission validation. &#x20;
-* Corrected effective permission evaluation during analysis startup. &#x20;
+* Improved user-level scan permission validation.
+* Improved group-level scan permission validation.
+* Corrected effective permission evaluation during analysis startup.
 
-**Outcome**&#x20;
+**Outcome**
 
-* Prevents false authorization failures. &#x20;
-* Improves the reliability of project analysis execution. &#x20;
-* Ensures consistent permission enforcement across user and group access models.&#x20;
+* Prevents false authorization failures.
+* Improves the reliability of project analysis execution.
+* Ensures consistent permission enforcement across user and group access models.
 
 ***
 
@@ -1105,7 +1101,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Application Enhancements
 
-**1.    Severity Selection for Custom Security Hotspots**
+**1. Severity Selection for Custom Security Hotspots**
 
 Added support for assigning severity levels when creating or editing custom Security Hotspot rules.
 
@@ -1131,12 +1127,12 @@ Previously, severity levels were available for standard Security Hotspot rules, 
 * Enhances filtering accuracy and rule management usability.
 
 {% hint style="info" %}
-NOTE:  Severity selection wasn’t available for custom Security Hotspots. To ensure consistency across standard and custom rules, we expanded functionality, and users can now select and assign a severity level during the creation and editing of custom Security Hotspots.
+NOTE: Severity selection wasn’t available for custom Security Hotspots. To ensure consistency across standard and custom rules, we expanded functionality, and users can now select and assign a severity level during the creation and editing of custom Security Hotspots.
 {% endhint %}
 
 ### New Rules
 
-**1.    Avoid Plain Text Values in External Credential Parameters**
+**1. Avoid Plain Text Values in External Credential Parameters**
 
 Added a new Salesforce Metadata security rule to detect plain text values in External Credential parameter values.
 
@@ -1164,7 +1160,7 @@ _Plain text value detected in parameterValue field. Use a dynamic merge field re
 
 **Outcome**
 
-Helps prevent sensitive credentials such as API keys, client IDs, and authentication tokens from being exposed in source control.&#x20;
+Helps prevent sensitive credentials such as API keys, client IDs, and authentication tokens from being exposed in source control.
 
 ### Fixes
 
@@ -1197,7 +1193,7 @@ Previously, when an invalid or nonexisting base branch was provided:
 * Analysis now validates base branch existence before proceeding.
 * Comparison and PR branches are no longer created when the base branch is invalid or missing.
 * Analysis fails gracefully with clear and verbose error messaging in logs.
-* Failure occurs earlier in the analysis lifecycle whenever possible.&#x20;
+* Failure occurs earlier in the analysis lifecycle whenever possible.
 
 **Validation**
 
@@ -1218,7 +1214,7 @@ Validated across multiple integrations and analysis entry points, including:
 
 * Prevents invalid branch artifacts from being created in the dashboard.
 * Improves troubleshooting with clearer failure visibility.
-* Provides more reliable branch comparison and pull request analysis behavior across integrations.&#x20;
+* Provides more reliable branch comparison and pull request analysis behavior across integrations.
 
 2. **Improved Validation for Comparison Branch Analysis Without Main Branch Baseline**
 
@@ -1259,7 +1255,7 @@ Confirmed that:
 * Improves reliability of branch comparison workflows.
 * Provides clearer and more user-friendly error handling for missing baseline scenarios.
 
-3. &#x20;  **Support for Special Characters in Salesforce Organization Names**
+3. **Support for Special Characters in Salesforce Organization Names**
 
 Fixed an issue where project creation could fail when Salesforce Organization Names contained special characters such as registered trademark (®) or trademark (™) symbols.
 
@@ -1292,7 +1288,7 @@ Verified successful project creation without attribute converter failures or dat
 * Eliminates incomplete project records and reduces manual database cleanup.
 * Improves onboarding reliability and overall customer experience.
 
-4. &#x20; **Resolved Salesforce Connection Deletion Issue with Special Characters in Connection Names**
+4. **Resolved Salesforce Connection Deletion Issue with Special Characters in Connection Names**
 
 Fixed an issue where creating a Salesforce connection using special characters in the connection name could trigger attribute converter errors and unexpectedly remove existing Salesforce connections from the application.
 
@@ -1329,7 +1325,7 @@ Confirmed that:
 * Improves reliability of Salesforce connection management.
 * Enhances support for organizations using special characters in naming conventions.
 
-5. &#x20;    **Resolved Duplicate Email Notifications and Organization Deletion Exceptions**
+5. **Resolved Duplicate Email Notifications and Organization Deletion Exceptions**
 
 Fixed issues related to organization deletion workflows where duplicate email notifications and unexpected exceptions could occur during archive cleanup processing.
 
@@ -1369,7 +1365,7 @@ Confirmed that:
 * Prevents inconsistent organization states between UI and database records.
 * Reduces unnecessary exception notifications and administrative overhead.
 
-6. &#x20;**Resolved Stack Overflow Issue in Field Level Security Rule Analysis**
+6. **Resolved Stack Overflow Issue in Field Level Security Rule Analysis**
 
 Fixed an issue where project analysis could become stuck or fail due to a stack overflow error in the Field Level Security rule during Apex analysis.
 
@@ -1458,7 +1454,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Fixes
 
-#### 1.     Resolved “No Scan Access for Project” Errors Caused by Expired Salesforce Tokens
+#### 1. Resolved “No Scan Access for Project” Errors Caused by Expired Salesforce Tokens
 
 Fixed an issue where users could encounter a “No scan access for project”/ “expired access/refresh token” error when running scans against Salesforce-connected projects after Salesforce authentication token expiration.
 
@@ -1471,7 +1467,7 @@ The issue affected environments using Salesforce connected app integrations wher
 * Reduced scan interruptions caused by token validation failures
 * Improved compatibility with Salesforce authentication changes introduced in May 2026
 
-#### 2.     Resolved Intermittent Delays in PR-Scoped EZ-Commit Analysis Jobs
+#### 2. Resolved Intermittent Delays in PR-Scoped EZ-Commit Analysis Jobs
 
 Fixed an issue where PR-scoped EZ-Commit analysis jobs could intermittently remain in the preparing state for an extended period during the “Compute new coverage” step.
 
@@ -1502,9 +1498,9 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Feature
 
-**1.    Cross-File Analysis in IDE**
+**1. Cross-File Analysis in IDE**
 
-**a.     Configurable Cross-File Analysis in IDE Extensions**
+**a. Configurable Cross-File Analysis in IDE Extensions**
 
 Introduced configurable Cross-File Analysis support in the IDE extension to improve rule accuracy for scenarios where analysis depends on context across multiple files.
 
@@ -1529,9 +1525,9 @@ When Cross-File Analysis is enabled:
 
 * More accurate detection for interdependent rules.
 * Reduced missed violations in IDE analysis.
-* Focused developer feedback without showing unrelated issues.&#x20;
+* Focused developer feedback without showing unrelated issues.
 
-**b.     Cross-File Analysis Controls in UI**
+**b. Cross-File Analysis Controls in UI**
 
 Added UI controls to enable or disable Cross-File Analysis from project-level settings.
 
@@ -1544,13 +1540,13 @@ Project Settings → General Settings → CodeScan → CodeScan Lang → Cross-f
 **Outcome**
 
 * Project teams can enable the feature only where needed.
-* Improves usability and configurability of Cross-File Analysis.&#x20;
+* Improves usability and configurability of Cross-File Analysis.
 
 ### Application Enhancements
 
-**1.    Issue Exceptions Enhancements**
+**1. Issue Exceptions Enhancements**
 
-**a.     Manual Expiry Date for Exception Issues**
+**a. Manual Expiry Date for Exception Issues**
 
 Enhanced Exception issue handling by allowing users to manually set an expiry date when marking issue an Exception.
 
@@ -1576,9 +1572,7 @@ Validated across UI, API, functional behavior, admin configuration interaction, 
 
 Improves flexibility and aligns Exception handling with existing hotspot expiry workflows.
 
-
-
-**b.     Auto-Assign Expiry Dates for Issue Exceptions**
+**b. Auto-Assign Expiry Dates for Issue Exceptions**
 
 Enhanced Exception issue handling by allowing Admins to configure automatic expiry dates based on issue severity.
 
@@ -1609,9 +1603,7 @@ Validated through UI, API, workflow transitions, invalid input handling, permiss
 
 Standardizes SLA handling for exceptions and reduces manual administrative effort.
 
-
-
-**2.    Showing Invited Users in Members List with pending status**
+**2. Showing Invited Users in Members List with pending status**
 
 We have enhanced user management by showing invited users in the Members list immediately after an invitation is sent:
 
@@ -1625,7 +1617,7 @@ Previously, invited users did not appear in the Members tab until they accepted 
 * Status is shown as Invited.
 * Once accepted, status changes from Invited → Active Member.
 * Empty state displays:\
-  &#x20;“No pending invitations. Invite new members to collaborate.”
+  “No pending invitations. Invite new members to collaborate.”
 
 **Validation**
 
@@ -1635,9 +1627,7 @@ Validated at organization level, including multiple invites, invite cleanup afte
 
 Improves administrator visibility, reduces duplicate invite confusion, and provides clearer user management.
 
-
-
-**3.    Improved Error Messaging in Invite Module for Existing Users**
+**3. Improved Error Messaging in Invite Module for Existing Users**
 
 Enhanced flow where inviting a user who already exists in the organization displayed a generic error message:
 
@@ -1653,9 +1643,7 @@ _“This email already exists in the organization”_
 
 Provides clearer feedback and reduces confusion during user invitations.
 
-&#x20;
-
-**4.    Add Default Salesforce Metadata file suffixes to CodeScan for customers running DX projects**
+**4. Add Default Salesforce Metadata file suffixes to CodeScan for customers running DX projects**
 
 **Description**
 
@@ -1707,7 +1695,7 @@ profilePasswordPolicy-meta.xml
 
 ### Rule Enhancements
 
-**1.    Added CVSS Scoring for Security Rules**
+**1. Added CVSS Scoring for Security Rules**
 
 Enhanced selected security rules by adding standardized CVSS scoring.
 
@@ -1738,9 +1726,7 @@ Validated in rule details view and CVSS filters. No impact was observed on rule 
 
 Improves severity visibility and helps users prioritize remediation more effectively.
 
-
-
-**2.    Enhanced AvoidDMLInLoops Rule with Interprocedural Analysis**
+**2. Enhanced AvoidDMLInLoops Rule with Interprocedural Analysis**
 
 Rule key: sf:AvoidSoqlInLoops
 
@@ -1761,9 +1747,9 @@ Previously, some violations were missed when DML or SOQL was executed indirectly
 
 Improves rule accuracy and helps detect governor-limit risks that were previously missed.
 
-### Fixes&#x20;
+### Fixes
 
-**1.     Resolved Tag Filter Issue on CodeScan Rules Page**
+**1. Resolved Tag Filter Issue on CodeScan Rules Page**
 
 Fixed an issue where searching for a custom tag on the Rules page returned no results and showed a count of 0 unless additional filters were applied.
 
@@ -1777,9 +1763,7 @@ Corrected tag filtering behavior, so matching rules appear immediately when sear
 * Correct rule results.
 * No need for extra filtering steps.
 
-&#x20;
-
-**2.     UI Now Displays Actual Duplicate Project Key Message During Project Creation instead of Generic “Unknown Error” Message**
+**2. UI Now Displays Actual Duplicate Project Key Message During Project Creation instead of Generic “Unknown Error” Message**
 
 **Description**
 
@@ -1791,7 +1775,7 @@ As such, we have enhanced the UI to now display the backend validation message i
 
 <figure><img src="../../../../.gitbook/assets/image (2502).png" alt=""><figcaption></figcaption></figure>
 
-**3.     Resolved Blank Edit Project Settings Page for S3 Integration Projects**
+**3. Resolved Blank Edit Project Settings Page for S3 Integration Projects**
 
 Fixed an issue where the Edit Project Settings page appeared blank for S3 integration projects, and console errors were shown.
 
@@ -1801,198 +1785,188 @@ Users can now open and update settings for S3-based projects, including memory a
 
 ***
 
-## CodeScan Release 26.0.8&#x20;
+## CodeScan Release 26.0.8
 
-&#x20;**Release date: 26 April 2026**
+**Release date: 26 April 2026**
 
-### Summary&#x20;
+### Summary
 
-CodeScan 26.0.8 is comprised of the following 6 components:&#x20;
+CodeScan 26.0.8 is comprised of the following 6 components:
 
-* 2 Application Enhancements&#x20;
-* 4 Fixes&#x20;
+* 2 Application Enhancements
+* 4 Fixes
 * 4 New GitLeaks specific rules introduced
 
-Component details are listed in their corresponding sections within this release document.&#x20;
+Component details are listed in their corresponding sections within this release document.
 
-### Application Enhancements&#x20;
+### Application Enhancements
 
+1. **Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs**
 
+Bitbucket integration was updated to replace deprecated repository APIs with workspace-scoped APIs.
 
-1. **Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs**&#x20;
+Now CodeScan fetches repositories by:
 
-Bitbucket integration was updated to replace deprecated repository APIs with workspace-scoped APIs.&#x20;
+1. Retrieving user workspaces
+2. Fetching repositories per workspace
+3. Aggregating results
 
-Now CodeScan fetches repositories by:&#x20;
+**Outcomes:**
 
-1. Retrieving user workspaces&#x20;
-2. Fetching repositories per workspace&#x20;
-3. Aggregating results&#x20;
+* Continued compatibility with Bitbucket API changes
+* Failures due to deprecated endpoints prevented
+* Improved reliability of repository fetching
 
-**Outcomes:**&#x20;
+**Validation:**
 
-* Continued compatibility with Bitbucket API changes&#x20;
-* Failures due to deprecated endpoints prevented&#x20;
-* Improved reliability of repository fetching &#x20;
+Verified the Bitbucket project analysis. Users are able to see the repos as expected, and the Project analysis and PR analysis are working as expected.
 
-**Validation:**&#x20;
+2. **Enhanced Parsering for Methods Named “void”**
 
-Verified the Bitbucket project analysis. Users are able to see the repos as expected, and  the Project analysis and PR analysis are working as expected.
+Earlier, CodeScan parser wouldn’t process Apex methods named **void**.
 
-&#x20;
+**This enhancement:**
 
-2. **Enhanced Parsering for Methods Named “void”**&#x20;
+* Ensures accurate parsing of valid Apex code
+* Improves analysis reliability
 
-Earlier, CodeScan parser wouldn’t process Apex methods named **void**.&#x20;
+The parser enhancement to support Apex methods named void has been thoroughly validated by QA across multiple scenarios on Preview instance.
 
-**This enhancement:** &#x20;
+**Positive Validation Scenarios:**
 
-* Ensures accurate parsing of valid Apex code &#x20;
-* Improves analysis reliability &#x20;
+The following valid Apex patterns were tested and are now parsed correctly:
 
-The parser enhancement to support Apex methods named void has been thoroughly validated by QA across multiple scenarios on Preview instance.&#x20;
+* Basic Cases
+  * public void void() {}
 
-**Positive Validation Scenarios:**&#x20;
+Method with body statements
 
-The following valid Apex patterns were tested and are now parsed correctly:&#x20;
+* Access Modifiers
+  * private void void() {}
+  * protected void void() {}
+  * global void void() {}
+* Modifiers & Combinations
+  * public static void void() {}
+  * public final static void void() {}
+* Parameterized Methods
+  * public void void(String name, Integer count) {}
+* Annotations
 
-* Basic Cases&#x20;
-  * public void void() {}&#x20;
+@AuraEnabled public static void void() {}
 
-Method with body statements&#x20;
+* Exception Handling
 
-* Access Modifiers&#x20;
-  * private void void() {}&#x20;
-  * protected void void() {}&#x20;
-  * global void void() {}&#x20;
-* Modifiers & Combinations&#x20;
-  * public static void void() {}&#x20;
-  * public final static void void() {}&#x20;
-* Parameterized Methods&#x20;
-  * public void void(String name, Integer count) {}&#x20;
-* Annotations&#x20;
+Method containing throw statements
 
-@AuraEnabled public static void void() {}&#x20;
+* Constructor + Method Coexistence
 
-* Exception Handling&#x20;
+Class containing both constructor and method named void
 
-Method containing throw statements&#x20;
+* Multiple Methods
 
-* Constructor + Method Coexistence&#x20;
+Classes with multiple methods including one named void
 
-Class containing both constructor and method named void&#x20;
+* Method Overloading
 
-* Multiple Methods&#x20;
+Multiple overloaded methods named void with different parameters
 
-Classes with multiple methods including one named void&#x20;
+* Nested Structures
 
-* Method Overloading&#x20;
+Method inside inner classes
 
-Multiple overloaded methods named void with different parameters&#x20;
+* Test Classes
 
-* Nested Structures&#x20;
+@IsTest classes with method named void
 
-Method inside inner classes&#x20;
+* Interface & Implementation Context
 
-* Test Classes&#x20;
+Class implementing interface along with method named void
 
-@IsTest classes with method named void&#x20;
+* Formatting Variations
 
-* Interface & Implementation Context&#x20;
+Extra spacing in declaration
 
-Class implementing interface along with method named void&#x20;
+Multiline method signatures
 
-* Formatting Variations&#x20;
+Inline and line comments within method declaration
 
-Extra spacing in declaration&#x20;
+**Negative Validation (Expected to Fail – Parser Strictness Maintained)**
 
-Multiline method signatures&#x20;
+The following invalid syntaxes were tested and correctly rejected:
 
-Inline and line comments within method declaration&#x20;
+* Missing method name
+  * public void () {} → Parse error
+* Duplicate return type
+  * public void void void() {} → Parse error
+* Missing parentheses
+  * public void void {} → Parse error
+* Invalid keyword as method name
+  * public void class() {} → Parse error
 
-**Negative Validation (Expected to Fail – Parser Strictness Maintained)**&#x20;
+These failures are expected and confirm that parser strictness is preserved.
 
-The following invalid syntaxes were tested and correctly rejected:&#x20;
+**Conclusion**
 
-* Missing method name&#x20;
-  * public void () {} → Parse error&#x20;
-* Duplicate return type&#x20;
-  * public void void void() {} → Parse error&#x20;
-* Missing parentheses&#x20;
-  * public void void {} → Parse error&#x20;
-* Invalid keyword as method name&#x20;
-  * public void class() {} → Parse error&#x20;
+* Parser now correctly supports void as a valid method name in Apex.
+* All valid usage patterns are successfully parsed across different contexts.
+* Invalid syntax continues to be rejected as expected.
+* No regressions observed in parsing behavior.
 
-These failures are expected and confirm that parser strictness is preserved.&#x20;
+### Fixes
 
-**Conclusion**&#x20;
+1. **Improved Validation for Salesforce User Permissions During ECA Authentication**
 
-* Parser now correctly supports void as a valid method name in Apex.&#x20;
-* All valid usage patterns are successfully parsed across different contexts.&#x20;
-* Invalid syntax continues to be rejected as expected.&#x20;
-* No regressions observed in parsing behavior.&#x20;
+Fixed an issue where users with insufficient Salesforce permissions could authenticate Salesforce successfully but encountered failures later during analysis.
 
-### Fixes&#x20;
+**Resolution:**
 
-1. **Improved Validation for Salesforce User Permissions During ECA Authentication**&#x20;
+* Permissions are now validated immediately after authentication
+* Users without required permissions are blocked early with a clear error message
 
-Fixed an issue where users with insufficient Salesforce permissions could authenticate Salesforce successfully but encountered failures later during analysis.&#x20;
+2. **Resolved 403 Error When Activating Rules in US Instance**
 
-**Resolution:**&#x20;
+Fixed an issue where rule activation failed with a 403 Forbidden error in the US instance.
 
-* Permissions are now validated immediately after authentication &#x20;
-* Users without required permissions are blocked early with a clear error message &#x20;
+**Result:**
 
-&#x20;
+Rule activation now works consistently across environments
 
-2. **Resolved 403 Error When Activating Rules in US Instance**&#x20;
+3. **Resolved “Component cannot be null” Error in Cross Object Formula Overuse Rule**
 
-Fixed an issue where rule activation failed with a 403 Forbidden error in the US instance.&#x20;
+Fixed a runtime error occurring during PR and subset analyses when related metadata files were not included in the scan.
 
-**Result:**&#x20;
+**Result:**
 
-Rule activation now works consistently across environments &#x20;
+* Improved stability of rule execution
+* Graceful handling of missing metadata
 
-&#x20;
+QA verified the fix in the Preview environment:
 
-3. **Resolved “Component cannot be null” Error in Cross Object Formula Overuse Rule**&#x20;
+* Re-ran the same reproduction steps after the fix deployment
+* Confirmed that the analysis completes successfully without any errors
+* Overuse Rule now handles the scenario correctly when the parent .object-meta.xml is not part of analyzed sources
 
-Fixed a runtime error occurring during PR and subset analyses when related metadata files were not included in the scan.&#x20;
+4. **Resolved False Positives in Field Level Security Rule for USER\_MODE Queries**
 
-**Result:**&#x20;
+Fixed an issue where queries executed in USER\_MODE were incorrectly flagged.
 
-* Improved stability of rule execution &#x20;
-* Graceful handling of missing metadata &#x20;
+**Result:**
 
-QA verified the fix in the Preview environment:&#x20;
+* Eliminates false positives
+* Aligns rule behavior with Salesforce FLS enforcement
 
-* Re-ran the same reproduction steps after the fix deployment&#x20;
-* Confirmed that the analysis completes successfully without any errors&#x20;
-* Overuse Rule now handles the scenario correctly when the parent .object-meta.xml is not part of analyzed sources&#x20;
+The fix for handling AccessLevel.USER\_MODE has been validated across multiple scenarios on the preview Instance.
 
-&#x20;
+The following cases were tested and are no longer flagged, as expected:
 
-4. **Resolved False Positives in Field Level Security Rule for USER\_MODE Queries**&#x20;
+* Direct usage of AccessLevel.USER\_MODE
+* USER\_MODE via variable assignment
+* USER\_MODE passed through method parameters
+* USER\_MODE returned from methods
+* USER\_MODE used in ternary expressions
+* Formatting variations of USER\_MODE usage
 
-Fixed an issue where queries executed in USER\_MODE were incorrectly flagged.&#x20;
-
-**Result:**&#x20;
-
-* Eliminates false positives &#x20;
-* Aligns rule behavior with Salesforce FLS enforcement&#x20;
-
-The fix for handling AccessLevel.USER\_MODE has been validated across multiple scenarios on the preview Instance.&#x20;
-
-The following cases were tested and are no longer flagged, as expected:&#x20;
-
-* Direct usage of AccessLevel.USER\_MODE&#x20;
-* USER\_MODE via variable assignment&#x20;
-* USER\_MODE passed through method parameters&#x20;
-* USER\_MODE returned from methods&#x20;
-* USER\_MODE used in ternary expressions&#x20;
-* Formatting variations of USER\_MODE usage&#x20;
-
-This confirms that the rule now correctly recognizes USER\_MODE across different usage patterns and does not raise false positives when FLS is enforced by Salesforce.&#x20;
+This confirms that the rule now correctly recognizes USER\_MODE across different usage patterns and does not raise false positives when FLS is enforced by Salesforce.
 
 #### New GitLeaks Rules in CodeScan
 
@@ -2017,8 +1991,7 @@ The following rules are introduced:
 These rules run GitLeaks on Salesforce source files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
 
 **Availability:**\
-This feature is currently available on **AUS and EU instances**.\
-&#x20;
+This feature is currently available on **AUS and EU instances**.<br>
 
 ***
 
@@ -2038,7 +2011,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1.     GitHub Apps Integration for GitHub Enterprise in CodeScan**
+**1. GitHub Apps Integration for GitHub Enterprise in CodeScan**
 
 **Description**
 
@@ -2073,7 +2046,7 @@ For creating a GitHub App for an Enterprise account, users need to follow the st
 
 After successfully creating the connection with the GitHub Enterprise account, users will be able to run the analysis.
 
-<figure><img src="../../../../.gitbook/assets/image (2470).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2469).png" alt=""><figcaption></figcaption></figure>
 
 Please note these important TECHNICAL details:
 
@@ -2081,7 +2054,7 @@ Please note these important TECHNICAL details:
 
 After implementing the GitHub Apps feature, the flow of authorization has changed for the user. For the first-time user, they will be navigated to the GitHub apps installation page, where they need to Authorize and Install the app. Then, the user will be navigated to the CodeScan GitHub Integration pop-up to run the analysis.
 
-&#x20;2\. GitHub Apps - Token Refresh:
+2\. GitHub Apps - Token Refresh:
 
 How it works:
 
@@ -2090,7 +2063,7 @@ How it works:
 * NOTE: We have updated all API call methods to support both OAuth and GitHub Apps, and verified that OAuth continues to work (it is backward compatible).
 * Additionally, analysis execution was verified after 8 hours, confirming that the token refresh mechanism (every 8 hours) is functioning as designed.
 
-**2.     Added a new {Resolution} Status for Issues – “Exception”**
+**2. Added a new {Resolution} Status for Issues – “Exception”**
 
 **Description**
 
@@ -2116,8 +2089,6 @@ Validated this new feature via the following scenarios and have verified that al
 2.  Issues status changed to Exception (through single assign and bulk assign).<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2472).png" alt=""><figcaption></figcaption></figure>
-
-
 3.  Issues status changed from Exception to Open (Rollback) (through single assign and bulk assign).<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2473).png" alt=""><figcaption></figcaption></figure>
@@ -2126,24 +2097,18 @@ Validated this new feature via the following scenarios and have verified that al
     <figure><img src="../../../../.gitbook/assets/image (2475).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (2476).png" alt=""><figcaption></figcaption></figure>
-
-
 5.  Status visible in a single rule.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2477).png" alt=""><figcaption></figcaption></figure>
-
-
 6.  Comments in Activity.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2478).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2477).png" alt=""><figcaption></figcaption></figure>
 
     Comments in the activity section for Exception are able to deleted by the user (after these issues are moved into exception).<br>
 
     Also, user already assigned to issues will remain assigned, even when moved to exception (if issue assigned before moving or while moving the issues to exception).
 
-
-
-**3.     New Email Notifications alert admins when (Pre & Post) Project Analysis Errors occur** &#x20;
+**3. New Email Notifications alert admins when (Pre & Post) Project Analysis Errors occur**
 
 **Description**
 
@@ -2237,7 +2202,7 @@ Subscribed users are notified immediately when intermittent analysis failures oc
 
 ### Application Enhancements
 
-**1.     Track Cursor IDE Usage in the VS Code Extension**
+**1. Track Cursor IDE Usage in the VS Code Extension**
 
 **Description**
 
@@ -2254,7 +2219,7 @@ In this release, we have enhanced this capability within the IDE plug-in, which 
 
 ### Fixes
 
-**1.     Fixed issue with rule “Unescaped Error Message XSS” {Rule ID: sf:UnescapedOutput}**
+**1. Fixed issue with rule “Unescaped Error Message XSS” {Rule ID: sf:UnescapedOutput}**
 
 **Summary**
 
@@ -2282,15 +2247,13 @@ As such, we confirm that the issue has been successfully remediated. The rule no
 
 <figure><img src="../../../../.gitbook/assets/image (2485).png" alt=""><figcaption></figcaption></figure>
 
-
-
-**2.     Fixed issue with rule “Avoid Cleartext Transmission of Sensitive Information”**
+**2. Fixed issue with rule “Avoid Cleartext Transmission of Sensitive Information”**
 
 {Rule ID: sf:InsecureEndpoint}
 
 **Summary**
 
-Previously, the rule InsecureEndpointRule was throwing a ClassCastException due to an invalid cast from ClassNameDeclaration to VariableNameDeclaration when analyzing endpoint expressions involving enum/class references (e.g., MODE.ERASE).&#x20;
+Previously, the rule InsecureEndpointRule was throwing a ClassCastException due to an invalid cast from ClassNameDeclaration to VariableNameDeclaration when analyzing endpoint expressions involving enum/class references (e.g., MODE.ERASE).
 
 **After the fix:**
 
@@ -2301,11 +2264,9 @@ Previously, the rule InsecureEndpointRule was throwing a ClassCastException due 
 **Result:**
 
 * No ClassCastException observed.
-* Rule executes as expected across all tested scenarios.&#x20;
+* Rule executes as expected across all tested scenarios.
 
-
-
-**3.     Fixed issue with rule “Field Level Security Vulnerabilities” {Rule ID: sf:FieldLevelSecurity}**
+**3. Fixed issue with rule “Field Level Security Vulnerabilities” {Rule ID: sf:FieldLevelSecurity}**
 
 **Summary**
 
@@ -2320,11 +2281,9 @@ Previously, the rule FieldLevelSecurityRule was throwing a NullPointerException 
 **Result**:
 
 * No NullPointerException observed.
-* Rule behaves as expected.&#x20;
+* Rule behaves as expected.
 
-
-
-**4.     Fixed issue with rule “Resource Injection”** {Rule ID: sf:ResourceInjection}
+**4. Fixed issue with rule “Resource Injection”** {Rule ID: sf:ResourceInjection}
 
 **Description**
 
@@ -2359,7 +2318,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1.     CodeScan Audit Logs API**
+**1. CodeScan Audit Logs API**
 
 **Description**
 
@@ -2383,7 +2342,7 @@ For more details, refer to the [CodeScan API Documentation.](../../../../product
 
 ### Application Enhancements
 
-**1.     Configurable Default User Role for SSO-Provisioned Users**
+**1. Configurable Default User Role for SSO-Provisioned Users**
 
 **Description**
 
@@ -2412,9 +2371,9 @@ The following scenarios have been verified and are working as expected:
   * Logged in using the new user.
   * Result: Login was successful as a **Standard User**.
 
-Further, we verified the behavior for the previous user also, and it is working as expected via SAML authentication.&#x20;
+Further, we verified the behavior for the previous user also, and it is working as expected via SAML authentication.
 
-**2.     Track Cursor IDE Usage on CodeScan 'IDE USAGE' Page**
+**2. Track Cursor IDE Usage on CodeScan 'IDE USAGE' Page**
 
 **Description**
 
@@ -2433,7 +2392,7 @@ Verified the Cursor IDE Usage on CodeScan in the page 'IDE USAGE' of the Adminst
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;**3.     Updated Filter Message for Security Hotspot CSV Export**
+**3. Updated Filter Message for Security Hotspot CSV Export**
 
 **Description**
 
@@ -2451,7 +2410,7 @@ All the above scenarios are working as expected.
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**4.     Automatically generate Callback URL when adding ECA in Salesforce Org**
+**4. Automatically generate Callback URL when adding ECA in Salesforce Org**
 
 **Description**
 
@@ -2496,7 +2455,7 @@ We have verified that **Callback URL** is displayed correctly, and the **Copy** 
 
 **Custom Rule creation validation update:**
 
-1. Resolved an inconsistency between custom rule creation and update workflows. Previously, the update flow enforced stricter validation on the description field, restricting certain formats (e.g., descriptions containing HTTP/HTTPS protocols). \
+1. Resolved an inconsistency between custom rule creation and update workflows. Previously, the update flow enforced stricter validation on the description field, restricting certain formats (e.g., descriptions containing HTTP/HTTPS protocols).\
    With this fix, the additional validation has been removed from the update flow. Users can now update rule descriptions with any valid content, including URLs or HTTP/HTTPS references, ensuring consistency with the rule creation behavior.
 
 ***
@@ -2518,7 +2477,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Application Enhancements
 
-**1.     CSV ISSUE EXPORT – Added Issue Status User**
+**1. CSV ISSUE EXPORT – Added Issue Status User**
 
 **Description**
 
@@ -2535,8 +2494,6 @@ If the CSV export includes the “Status Marked By” column with the correspond
 * Improves transparency and auditability of issue status changes in exported reports.
 * Enables teams and managers to identify responsibility and follow up more effectively.
 
-
-
 Verified the following scenarios and confirmed that all are working as expected.
 
 * Verified with multiple users, users getting updated as expected.
@@ -2545,9 +2502,7 @@ Verified the following scenarios and confirmed that all are working as expected.
 * Verified with deactivated user, name is still shown in CSV - working as expected.
 * Verified with deleted user, the status marked by field is empty.
 
-
-
-**2.     CSV HOTSPOT EXPORT – Added Hotspot Status User**
+**2. CSV HOTSPOT EXPORT – Added Hotspot Status User**
 
 **Description**
 
@@ -2557,14 +2512,12 @@ Enhanced the Security Hotspot CSV export to include a separate column called “
 
 If the Hotspot CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing hotspots outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
 * Improves transparency and auditability of hotspot status changes in exported reports.
-* Enables teams and managers to identify responsibility and follow up more effectively.&#x20;
-
-
+* Enables teams and managers to identify responsibility and follow up more effectively.
 
 Verified the following scenarios are all working as expected.
 
@@ -2573,16 +2526,11 @@ Verified the following scenarios are all working as expected.
 * Verified by removing org user, name is still shown in CSV - working as expected.
 * Verified with deactivated user, name is still shown in CSV - working as expected.
 * Verified with deleted user, the status marked by field is empty.
-
-
-
 * Issues:
   * Also, verified that if user clicked on export after selecting the project and branch - only those security hotspots that are available for review are getting download (not the reviewed ones)
   * Also, if the user selects only certain reviewed options, all the reviewed getting downloaded.
 
-
-
-**3.     Enhanced CSV Export with Detailed Security Hotspot Statuses**
+**3. Enhanced CSV Export with Detailed Security Hotspot Statuses**
 
 **Description**
 
@@ -2595,7 +2543,7 @@ If the CSV Security Hotspots export includes granular and accurate hotspot statu
 **Value / Purpose**
 
 * Provides **accurate and actionable data** in exports for security reviews and audits.
-* Enables **better integration** with external reporting, GRC, and compliance tools.&#x20;
+* Enables **better integration** with external reporting, GRC, and compliance tools.
 
 Validated the CSV Security Hotspot Export with Detailed Statuses; below is the validation summary of the Exports:
 
@@ -2610,9 +2558,7 @@ Validated the CSV Security Hotspot Export with Detailed Statuses; below is the v
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
-**4.     Added Closed Issue Statuses to CSV Reports**
+**4. Added Closed Issue Statuses to CSV Reports**
 
 **Description**
 
@@ -2644,11 +2590,11 @@ Concluding that the CSV export now accurately reflects the issues, including clo
 
 ### New Rule
 
-**1.     New Rule: “Locale Formats in API Versions pre-v45.0” {Rule ID: sf:LocaleInOldApi}**
+**1. New Rule: “Locale Formats in API Versions pre-v45.0” {Rule ID: sf:LocaleInOldApi}**
 
 **Description**
 
-This rule finds locale methods in Apex classes with API versions below v45.0.  Locale formats before Salesforce API v45.0 default to JDK format. Now, locale formats default to ICU. It is recommended to update all components using API versions prior to v45.0 or use locale-neutral methods.
+This rule finds locale methods in Apex classes with API versions below v45.0. Locale formats before Salesforce API v45.0 default to JDK format. Now, locale formats default to ICU. It is recommended to update all components using API versions prior to v45.0 or use locale-neutral methods.
 
 Failure to upgrade to API v45.0 or above could result in date and time formatting issues, affecting user experience and functionality.
 
@@ -2658,7 +2604,7 @@ Failure to upgrade to API v45.0 or above could result in date and time formattin
 * **Tags**: retired
 * **Remediation**: 30 minutes
 
-Please also refer to the following documentation on Salesforce Help:&#x20;
+Please also refer to the following documentation on Salesforce Help:
 
 [JDK Locale Format Retirement and the Enable ICU Locale Formats Salesforce Release Update](https://help.salesforce.com/s/articleView?id=000380618\&type=1) –
 
@@ -2671,8 +2617,6 @@ The rule sf:LocaleInOldApi was validated for the following methods:
 * Date.parse
 * Datetime.parse
 * Date.toStartOfWeek
-
-&#x20;
 
 1. **Positive Validation (API Version < 45.0)**
    * Created Apex classes with API version 44.0 and used the above locale-dependent methods.
@@ -2690,7 +2634,7 @@ The rule sf:LocaleInOldApi was validated for the following methods:
 
 ### Rule Enhancements
 
-1\.       Enhanced data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
+1\. Enhanced data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
 
 **Description**
 
@@ -2731,9 +2675,7 @@ Verified the following scenarios and confirmed that the are all working as expec
 
 <figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
-
-**2.     Added a new parameter to the rule “Test Class Names Should Include Test”**{Rule ID: sf:TestClassNaming}
+**2. Added a new parameter to the rule “Test Class Names Should Include Test”**{Rule ID: sf:TestClassNaming}
 
 **Description**
 
@@ -2773,7 +2715,7 @@ Validated the fix for the Sf:testclassnaming rule by verifying the following sce
 
 ### Fixes
 
-**1.       Set default value to “false” for “is\_archived” column in organizations table.**
+**1. Set default value to “false” for “is\_archived” column in organizations table.**
 
 **Summary of Issue**: Several customers were reporting an issue where users were unable to log in via SAML after their instance was upgraded to 26.0.3\
 \
@@ -2794,7 +2736,7 @@ Also verified that users who login with SAML are unblocked, which we confirmed b
 **Release Date: 01 March 2026**
 
 {% hint style="info" %}
-As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.&#x20;
+As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.
 
 Key points:
 
@@ -2814,11 +2756,11 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-There are no New Features in this release.&#x20;
+There are no New Features in this release.
 
 ### Application Enhancements
 
-**1.     Salesforce External App Connection**
+**1. Salesforce External App Connection**
 
 **Description**
 
@@ -2846,7 +2788,7 @@ For more detailed information, please review AutoRABIT’s published article “
 
 ### New Rules
 
-There are no New Rules in this release.&#x20;
+There are no New Rules in this release.
 
 ### Rule Enhancements
 
@@ -2858,7 +2800,7 @@ There are no Rule Deprecations in this release.
 
 ### Fixes
 
-1\.       Fixed issue with data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
+1\. Fixed issue with data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
 
 **Description**
 
@@ -2866,7 +2808,7 @@ We identified an issue in CodeScan where the Data Flow Trace for a SOQL injectio
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-We determined the root cause of the issue and updated the rule logic accordingly.  With this fix, this issue is now fully remediated.Top of Form
+We determined the root cause of the issue and updated the rule logic accordingly. With this fix, this issue is now fully remediated.Top of Form
 
 Verified the following scenarios and report that the rule is now working as expected.
 
@@ -2877,7 +2819,7 @@ Verified the following scenarios and report that the rule is now working as expe
 
 ***
 
-## CodeScan Release 26.0.3&#x20;
+## CodeScan Release 26.0.3
 
 **Release Date: 15 February 2026**
 
@@ -2894,7 +2836,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1.     Expiry Dates for Exception Status on Security Hotspots**
+**1. Expiry Dates for Exception Status on Security Hotspots**
 
 **Description**
 
@@ -2928,7 +2870,7 @@ Also verified the scheduled job functionality for the Security Hotspots.
 * Security Hotspots marked as **Exception** remain unchanged when no expiry date is provided.
 * When an expiry date is set, the scheduled job automatically transitions the hotspot back to “**To review**” after the expiry is reached.
 
-<figure><img src="../../../../.gitbook/assets/image (2428).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2427).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (2429).png" alt=""><figcaption></figcaption></figure>
 
@@ -2938,7 +2880,7 @@ Also verified the scheduled job functionality for the Security Hotspots.
 
 ### Application Enhancements
 
-**1.     CVSS Metrics: Advanced Calculations**
+**1. CVSS Metrics: Advanced Calculations**
 
 **Description**
 
@@ -2978,19 +2920,19 @@ Example:
 
 public class Foo {
 
-&#x20; private String \[] x;
+private String \[] x;
 
-&#x20;   public void foo (String \[] param) {
+public void foo (String \[] param) {
 
-&#x20;     this.x=param;                //Bad: don't do this, make a copy of the array at least.
+this.x=param; //Bad: don't do this, make a copy of the array at least.
 
-&#x20;   }
+}
 
 }
 
 Tags: cwe, cert, unpredictable
 
-Remediation Effort:  5min-constant\_issue
+Remediation Effort: 5min-constant\_issue
 
 **Additional Information**:
 
@@ -3002,7 +2944,7 @@ CRITICAL 2
 
 MAJOR 3
 
-MINOR  4
+MINOR 4
 
 INFO has a value of 5
 
@@ -3041,7 +2983,7 @@ With this completed, we now provide the following values in tabular form, specif
 
 **CVSS Descriptions UI/UX Update**
 
-**2.      CVSS: UI/UX Update**
+**2. CVSS: UI/UX Update**
 
 **Description**
 
@@ -3067,7 +3009,7 @@ Verified the CVSS UI/UX update via the following scenarios:
 
 ### New Rules
 
-**1.     New Rule: “Avoid Using Unfiled Public Folders” {Rule ID: sf-meta:AvoidUnfiledPublic}**
+**1. New Rule: “Avoid Using Unfiled Public Folders” {Rule ID: sf-meta:AvoidUnfiledPublic}**
 
 **Description**
 
@@ -3110,7 +3052,7 @@ Verified the newly added CodeScan rule **sf-meta:AvoidUnfiledPublic (Avoid Using
 
 ### Fixes
 
-**1.       Fixed issue with rule “Sf:fieldlevelsecurity” where user mode subquery false positive was reported**
+**1. Fixed issue with rule “Sf:fieldlevelsecurity” where user mode subquery false positive was reported**
 
 **Description**
 
@@ -3152,7 +3094,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-**1.     Data Flow Analysis**
+**1. Data Flow Analysis**
 
 In our CodeScan 25.1.17 release (Jan 04, 2026), we announced that CodeScan had implanted new logic in some of our rules that detect vulnerabilities. This advanced logic provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.
 
@@ -3172,7 +3114,7 @@ You can find specific details about each of these 3 newly updated rules in the �
 
 ### Application Enhancements
 
-**1.     Updated the UI for the CVSS Filter**
+**1. Updated the UI for the CVSS Filter**
 
 **Description**
 
@@ -3191,7 +3133,7 @@ No functional or UI issues were encountered or reported during testing.
 
 <figure><img src="../../../../.gitbook/assets/image (2381).png" alt=""><figcaption></figcaption></figure>
 
-**2.     Added the ability to Download/Export IDE Usage Data from the IDE Usage page**
+**2. Added the ability to Download/Export IDE Usage Data from the IDE Usage page**
 
 **Description**
 
@@ -3206,7 +3148,7 @@ Testing was done with 18,000 records to validate performance standards.
 
 <figure><img src="../../../../.gitbook/assets/image (2382).png" alt=""><figcaption></figcaption></figure>
 
-**3.     Added Enhanced our logic for Queries in JavaScript to only contain fields that are used**
+**3. Added Enhanced our logic for Queries in JavaScript to only contain fields that are used**
 
 **Description**
 
@@ -3251,7 +3193,7 @@ Validated the newly added CodeScan rule UnusedQueryField via the following scena
 
 ### New Rules
 
-**1.     New Rule that validates the runInMode (or equivalent context property) of a Flow**
+**1. New Rule that validates the runInMode (or equivalent context property) of a Flow**
 
 **Description**
 
@@ -3309,13 +3251,13 @@ We validated this newly added CodeScan rule “Validate Flow Run Context Mode (F
 
 ### Rule Enhancements
 
-**1.     New Parameter added to rule “Outer Class Explicit Sharing” allowing configurable enforcement of the rule for abstract and virtual classes**
+**1. New Parameter added to rule “Outer Class Explicit Sharing” allowing configurable enforcement of the rule for abstract and virtual classes**
 
 **{Rule ID: sf:OuterClassExplicitSharing }**
 
 **Description**
 
-We have updated the rule sf:OuterClassExplicitSharing to provide a configurable parameter that controls whether violations are raised for abstract and virtual outer classes.  With this new parameter, users can avoid false positives in framework or base classes while still having the option to enforce explicit sharing when required by the security standards.
+We have updated the rule sf:OuterClassExplicitSharing to provide a configurable parameter that controls whether violations are raised for abstract and virtual outer classes. With this new parameter, users can avoid false positives in framework or base classes while still having the option to enforce explicit sharing when required by the security standards.
 
 **Hypothesis**:\
 Introducing a configurable parameter to disable rule enforcement for abstract and virtual outer classes by default will reduce noise in scan results while preserving flexibility for teams that require strict sharing enforcement across all Apex class types.
@@ -3370,7 +3312,7 @@ This behavior aligns with the intended design:
 
 <figure><img src="../../../../.gitbook/assets/image (2391).png" alt=""><figcaption></figcaption></figure>
 
-**2.     Added Data Flow Tracking for SOQL Injection Detection to rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}**
+**2. Added Data Flow Tracking for SOQL Injection Detection to rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}**
 
 **Description**
 
@@ -3403,7 +3345,7 @@ Verified the enhancement for sf:SOQLInjection via the following scenarios:
 
 <figure><img src="../../../../.gitbook/assets/image (2392).png" alt=""><figcaption></figcaption></figure>
 
-**3.     Enhancement to Cross-Site Scripting (Reflected) Detection with Data Flow Tracing logic**
+**3. Enhancement to Cross-Site Scripting (Reflected) Detection with Data Flow Tracing logic**
 
 **{Rule ID: vf:CrossSiteScriptingReflected}**
 
@@ -3427,7 +3369,7 @@ Verified the enhancement logic of Cross-Site Scripting (Reflected) Detection wit
 * Intermediate variable propagation
 * The final sink where the vulnerability occurs
 
-**4.     Implemented Data Flow Tracking Logic for rule “Flow DML in Loops”**
+**4. Implemented Data Flow Tracking Logic for rule “Flow DML in Loops”**
 
 **{Rule ID: sfmeta:DmlInFlowLoop}**
 
@@ -3457,7 +3399,7 @@ Verified the enhancement of the rule **sfmeta:DmlInFlowLoop** via the following 
 
 <figure><img src="../../../../.gitbook/assets/image (2393).png" alt=""><figcaption></figcaption></figure>
 
-**5.     Added New Parameters for rule “Flow DML Should Not Be Called In Loops”**
+**5. Added New Parameters for rule “Flow DML Should Not Be Called In Loops”**
 
 **{Rule ID: sfmeta:DmlInFlowLoop}**
 
@@ -3550,7 +3492,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### New Features
 
-1\.     CodeScan extension for Cursor
+1\. CodeScan extension for Cursor
 
 With this release, CodeScan introduces first-class support for Cursor, a rapidly adopted AI-focused IDE used heavily by both our customers and internal teams. By bringing CodeScan capabilities directly into Cursor, we strengthen our AI value proposition and ensure we’re present where modern development workflows are shifting.
 
@@ -3578,7 +3520,7 @@ Faster time to market with business requirements
 
 ### Application Enhancements
 
-**1.     Include Issue Comments in CSV Issues Export**
+**1. Include Issue Comments in CSV Issues Export**
 
 **Description**
 
@@ -3614,9 +3556,9 @@ Member Comment Export
 * Verified that the comment remains in the CSV export with a “Deleted” tag.
 * Confirmed that no additional user information is shown for the deleted user, which matches the expected behavior.
 
-### &#x20;Fixes
+### Fixes
 
-&#x20;**1.     Fixed three issue with CodeScan User Licenses**
+**1. Fixed three issue with CodeScan User Licenses**
 
 Several customers reported that they were not able to activate all their team members, even though they had proper licensing. It appears that CodeScan was consuming 1 license spot.
 
@@ -3655,9 +3597,9 @@ We have verified all the fixes related to user license counting and orphan membe
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**2.     Fixed an issue with “Issues” assignment and status update, where filters are not working (as "Bulkchange and Bulkassign" API returns 500 Internal error)**
+**2. Fixed an issue with “Issues” assignment and status update, where filters are not working (as "Bulkchange and Bulkassign" API returns 500 Internal error)**
 
-Several customers reported issue with “Bulk Issue Assignments.”  We identified 2 main causes:
+Several customers reported issue with “Bulk Issue Assignments.” We identified 2 main causes:
 
 * Issue 1: Main Branch – Unable to Roll Back Issue Status to Open
 * Issue 2: PR Branch – Unable to Assign Issues
@@ -3671,5 +3613,3 @@ Verified the following issues have been remediated and are now working as expect
 * API able to assign/unassign multiple issues to org user
 * Regarding Issue 2: PR Branch
 * Issues in PR branches should be assignable to users through Bulk Issues, similar to main branch behavior.
-
-&#x20;

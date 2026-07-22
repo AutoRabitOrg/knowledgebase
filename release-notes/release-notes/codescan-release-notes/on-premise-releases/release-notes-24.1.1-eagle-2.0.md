@@ -2,7 +2,7 @@
 
 ## CodeScan Self-Hosted/On-Premises
 
-## Release Notes Eagle 2.0 (v. 24.1.1)&#x20;
+## Release Notes Eagle 2.0 (v. 24.1.1)
 
 **Release Date: November 13, 2024**
 
@@ -28,8 +28,6 @@ Component details are listed in their corresponding sections within this documen
     *   Verified the rules: Name, Key, Description, Type, Severity, Message, Tags, and Remediation.
 
         <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
     *   Verified that a violation is thrown for **layout** and **.layout-meta.xml** files when file names include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**
 
         <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -37,7 +35,7 @@ Component details are listed in their corresponding sections within this documen
     * Verified that **NO** violation is thrown for **layout** and **.layout-meta.xml** files when file names **do not** include: **- ! @ # $ % ^ & \* ? ' : ; ” + =**<br>
 2.  **New Rules for LWC: Added ESLint rules from @lwc/eslint-plugin-lwc**\
     \
-    Expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components. This new set expands our list of LWC rules significantly. This library is comprised of Salesforce’s official ESLint plugin, allowing CodeScan to analyze LWC code more effectively.  Detailed documentation is available at [https://github.com/salesforce/eslint-plugin-lwc|https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc|https:/github.com/salesforce/eslint-plugin-lwc)<br>
+    Expanding the rules in our LWC set is vital to support the needs of our customers using Lightning Web Components. This new set expands our list of LWC rules significantly. This library is comprised of Salesforce’s official ESLint plugin, allowing CodeScan to analyze LWC code more effectively. Detailed documentation is available at [https://github.com/salesforce/eslint-plugin-lwc|https://github.com/salesforce/eslint-plugin-lwc](https://github.com/salesforce/eslint-plugin-lwc|https:/github.com/salesforce/eslint-plugin-lwc)<br>
 
     <div align="center"><figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
@@ -65,13 +63,13 @@ Component details are listed in their corresponding sections within this documen
    Verified the new LWC rule (API Version is Too Old) for these scenarios:
    *   Verified the description, issue type, severity, message, tags, remediation, and parameters of the rule.
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is lower than the minimum version allowed.<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   Verified that a violation is thrown if the API version used is higher than the maximum version allowed.<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    * Verified that no violation is thrown when the API version is between the minimum and maximum versions allowed.
 
 ### Enhancements
@@ -96,7 +94,7 @@ Component details are listed in their corresponding sections within this documen
    Separately, but importantly, you cannot use “includeScript” to embed an Aura Application to a Visualforce page (as the $Lightning global object is not available if put in a separate .js file as a static resource). To address this, Salesforce details how to “create a component on a Page,” advising you to add your top-level component to a page using $Lightning.createComponent(String type, Object attributes, String domLocator, function callback). Note that this function is similar to $A.createComponent(), but it includes an additional parameter, domLocator, which specifies the DOM element where you want the component inserted. Access the full documentation at[https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components\_visualforce.htm](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_visualforce.htm).\
    \
    Considering both of these items together, we recognize that there was limitation on this rule where customers were getting violations flagged as false positives. This enhancement involves implementing Regex to detect the use of Lightning components within a \{{\<script>\}} tag in Visualforce pages. The rule \{{vf:AvoidJavaScriptScriptlets\}} should not trigger a violation if only Lightning components are found. However, if any additional lines of non-Lightning code are detected within the script, a violation will be raised. This ensures the proper use of Lightning components while avoiding insecure or outdated practices in scriptlets.<br>
-3. **Enhancement to ECMA Intrinsic Methods** \
+3. **Enhancement to ECMA Intrinsic Methods**\
    \
    We recognize that the listed ECMA methods and their properties should be updated dynamically upon any new updates. This custom ESLint list will be maintained by CodeScan; as such, if any violation is thrown based on the ESLint Salesforce Repo, this custom ESLint library will be checked. If the latest method is available, we will not violate it, including:
    * [The Global Object](https://tc39.es/ecma262/#sec-global-object)
@@ -130,7 +128,7 @@ Component details are listed in their corresponding sections within this documen
     \
     Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true)\
     \
-    &#xNAN;_&#x54;his fix corrects the issue._\
+    \&#xNAN;_This fix corrects the issue._\
     \
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.<br>
 
@@ -139,37 +137,32 @@ Component details are listed in their corresponding sections within this documen
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2.  **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives).\
-    \
-    Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations.\
-    \
-    This fix ensures that the check is limited to the **“value”** attribute only, to avoid false positives and ensure the rule functions as intended.\
-    \
-    As an example, the following will NOT be flagged as a violation:
-
-    * \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/>    //Good: Uses a static resource.
-
-
+2. **Fixed issue in rule for VF “vf:AvoidExternalResources”** (in which the rule was checking **ALL** attributes for external resources, producing false positives).\
+   \
+   Previously, the rule vf:AvoidExternalResources was checking **ALL** attributes for external resources, which it should not do. This resulted in false positives being flagged as violations.\
+   \
+   This fix ensures that the check is limited to the **“value”** attribute only, to avoid false positives and ensure the rule functions as intended.\
+   \
+   As an example, the following will NOT be flagged as a violation:
+   * \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/> //Good: Uses a static resource.
 3.  **Fixed issue in APEX rule “sf:AvoidPublicFields”, in which issues were being flagged on private classes (which are false positives)**
 
     \
-    The rule sf:AvoidPublicFields identifies when public fields are used and flags them as issues. Two of the three reasons this rule is important are:&#x20;
+    The rule sf:AvoidPublicFields identifies when public fields are used and flags them as issues. Two of the three reasons this rule is important are:
 
     * The internal representation is exposed, and thus cannot be easily changed.
     * When the value is changed in an unexpected way (for example nulled), the implementation may not handle it correctly.
 
     But these are not concerns when those public fields are on a private class.
 
-    &#x20;
-
     This enhancement adds a private class validation check first and will not flag these two issues if the class is a private class.<br>
-4. **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}}”** **(Permissions should be checked before accessing resource).** \
+4. **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}}”** **(Permissions should be checked before accessing resource).**\
    \
    Previously, this rule was throwing violations that were false positives. This was occurring when an SOQL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.\
    \
    As per Salesforce documentation, when checking the Access for the inner query object, it allows to check by using \_\_c, but while making inner query on related Objects, it must be in plural and end with \_\_r.\
    \
-   &#xNAN;_&#x54;his fix corrects this issue._  In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
+   \&#xNAN;_This fix corrects this issue._ In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
    \
    We also added support for the SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
    \
@@ -180,4 +173,3 @@ Component details are listed in their corresponding sections within this documen
 5.  **Fixed issue in rule “sf:FixDuplicateMethods”, in which nested statements were being flagged (which was a false positive issue).**<br>
 
     Previously, the sf:FixDuplicateMethods rule was throwing violations for nested statements, which is not the intended behavior. The root cause was identified and fixed, and now the rule is working as designed and expected.
-

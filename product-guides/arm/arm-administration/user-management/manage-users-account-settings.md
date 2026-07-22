@@ -38,7 +38,7 @@ SAML-based SSO enables two-way communication between an authentication server (t
 
 Using the information you gathered from your IdP (the Identity Provider), fill in the below details:
 
-* **`Entity ID:`** String that uniquely identifies your IdP (your IdP generally provides it).&#x20;
+* **`Entity ID:`** String that uniquely identifies your IdP (your IdP generally provides it).
 * **`Uploaded File Name:`** You must upload the XML file generated from IdP. (For more information, please refer to the Integration section on[ SSO](../../integration-and-plugins/sso/).
 * **`Disable login with ARM credentials:`** When selected, passwords on ARM are no longer used once the SSO is activated. The system forces you and your sub-users to log in via SSO rather than entering their username and password on the login page. However, once disabled, all the authentication requests will go through the classic login interface.
 
@@ -64,14 +64,14 @@ This allows new users to sign up for the ARM account by giving their mail extens
 
 #### 5. Plugins <a href="#id-5-plugins" id="id-5-plugins"></a>
 
-This section lists various plugins that are configured in ARM. Based on the organization's requirements, admins can select the desired plugins to be used and register by giving the correct credentials.&#x20;
+This section lists various plugins that are configured in ARM. Based on the organization's requirements, admins can select the desired plugins to be used and register by giving the correct credentials.
 
-In addition to this, the admin can select the desired browsers to execute the selenium test cases. Selenium cannot automate desktop applications; it can only be used in browsers.&#x20;
+In addition to this, the admin can select the desired browsers to execute the selenium test cases. Selenium cannot automate desktop applications; it can only be used in browsers.
 
 Browsers Supported:
 
-* Google Chrome 12+&#x20;
-* Internet Explorer 7+&#x20;
+* Google Chrome 12+
+* Internet Explorer 7+
 * Firefox 3+
 
 <figure><img src="../../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
@@ -109,7 +109,7 @@ Here the admin can specify specific evaluation criteria for which the commit wil
 
 **Auto reject commit after XX days**
 
-Auto rejects an approval for pre-validation commit after the days mentioned here.&#x20;
+Auto rejects an approval for pre-validation commit after the days mentioned here.
 
 **Enable criteria-based Review Process**
 
@@ -117,7 +117,7 @@ Select the **`Enable criteria based Review Process`** checkbox to enable the com
 
 <figure><img src="../../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
 
-Next, choose the approval criteria based on your requirement:&#x20;
+Next, choose the approval criteria based on your requirement:
 
 * **`Enable file comparison reports:`** When selected, this generates a code difference report upon completion of the commit operation.
 *   **`Should pass validation criteria for Static Code Analysis:`** Select this option if you would like to run a static code analysis tool to identify potential software quality issues before the code moves to production.
@@ -140,7 +140,7 @@ Once the reviewer has approved the changes, or if you have opted to auto-approve
 
 #### Deployment - Approval Settings
 
-Admins are now able to configure the approvals process for the custom deployment module.&#x20;
+Admins are now able to configure the approvals process for the custom deployment module.
 
 1. By Admin → My Profile -> Deployment Approval Settings.
 2.  Select the Salesforce Org from the drop-down menu, which requires approval before deployment. (This menu provides a list of Orgs that you have already configured in SF Org MGMT.)<br>
@@ -180,12 +180,12 @@ Select the API version to see the supported metadata types and avoid errors whil
 
 <figure><img src="../../../../.gitbook/assets/image (1687).png" alt=""><figcaption></figcaption></figure>
 
-1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.&#x20;
+1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. [Click here](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) to go directly to the mentioned topic.
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
 3.  **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1583).png" alt=""><figcaption></figcaption></figure>
-4.  **Packaging and Deployment Settings:** Several options can be configured in this section:&#x20;
+    <figure><img src="../../../../.gitbook/assets/image (1581).png" alt=""><figcaption></figcaption></figure>
+4.  **Packaging and Deployment Settings:** Several options can be configured in this section:
 
     1. **Manageable States**: In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
        * **Beta**: The component is in a managed package version marked as beta, suitable for testing but not for production use.
@@ -196,8 +196,6 @@ Select the API version to see the supported metadata types and avoid errors whil
        * **Installed**: The component is part of a managed package installed in a subscriber's org, and it can't be edited or deleted by the subscriber.
        * **InstalledEditable**: The component is part of an installed managed package but can be edited by the subscriber.
        * **DeprecatedEditable**: The component is deprecated but remains editable.
-
-
 
     <figure><img src="../../../../.gitbook/assets/image (1578).png" alt=""><figcaption></figcaption></figure>
 
@@ -210,12 +208,10 @@ Select the API version to see the supported metadata types and avoid errors whil
 <figure><img src="../../../../.gitbook/assets/image (1580).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:**&#x20;
+**Important Note:**
 
 Enabling the **`Configuration for running delta on RecordType Picklist values`** checkbox may lead to more time for the build. If you deselect it, your build cycles will be shorter.
 {% endhint %}
-
-
 
 **Rollback Settings**
 
@@ -258,7 +254,7 @@ Create permission sets to grant access among logical groupings of users, regardl
 | Editable   | Indicates whether this field is editable (true) or not (false). |
 | Readable   | Indicates whether this field is readable (true) or not (false). |
 
-**Object Permissions** represent a user's access to custom objects.&#x20;
+**Object Permissions** represent a user's access to custom objects.
 
 | Field Name       | Description                                                                                                                                                                                                 |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -268,8 +264,6 @@ Create permission sets to grant access among logical groupings of users, regardl
 | allowRead        | Indicates whether the object referenced by the object field can be seen by the users assigned to this profile (true) or not (false).                                                                        |
 | modifyAllRecords | Indicates whether the object referenced by the object field can be read, edited, or deleted by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object. |
 | viewAllRecords   | Indicates whether the object referenced by the object field can be read by the users assigned to this profile (true) or not (false), regardless of the sharing settings for the object.                     |
-
-
 
 #### 11. Vlocity Configuration Settings <a href="#id-11-vlocity-configuration-settings" id="id-11-vlocity-configuration-settings"></a>
 
@@ -304,7 +298,7 @@ After logging in, a user establishes a session with the ARM platform. As an admi
 
 #### 13. Retention Policy <a href="#id-13-retention-policy" id="id-13-retention-policy"></a>
 
-In this section, the admin can define the period for which data is retained by ARM in the history tables.&#x20;
+In this section, the admin can define the period for which data is retained by ARM in the history tables.
 
 Clearing historical and irrelevant data from the database helps prevent the application from lagging, resulting in better performance in all modules. The default retention period is set as **`12 months`**. Data older than 12 months will be automatically cleaned. Admins can later change it to **`6 months`** or **`3 months`**.
 

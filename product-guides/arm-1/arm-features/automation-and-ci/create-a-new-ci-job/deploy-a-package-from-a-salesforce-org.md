@@ -64,7 +64,7 @@ Under **Build**, provide:
   * **Run on All Supported Metadata Types:** Scan every retrieved component.
   *   **Run on Newly Added Supported Metadata Types:** Scan only newly added components.
 
-      <figure><img src="../../../../../.gitbook/assets/image (1241).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
 
 _For more information on running **Static Code Analysis in CI Jobs**, see_ [_this guide_](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md)_._
 
@@ -178,7 +178,7 @@ Click **Save** to store the CI job settings.
 
 If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 
-<figure><img src="../../../../../.gitbook/assets/image (1256).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1189).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
 
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.

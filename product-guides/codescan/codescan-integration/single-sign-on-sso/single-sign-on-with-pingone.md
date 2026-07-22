@@ -18,13 +18,13 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 
 1.  In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
 2.  Go to **`Administration > SAML Connections`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>SAML Connections</p></figcaption></figure>
 3.  Click on **`Create Connection`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `PingOne-SAML`
 5. Enter a valid domain name of the organization in the **`Corporate domain`** field that can be authenticated in the Identity Provider. _**This property cannot be updated after SAML Connection creation.**_\
@@ -39,7 +39,7 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 3. If the **`Enforce SSO`** is enabled prematurely, it will prevent all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 4. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 
-![](<../../../../.gitbook/assets/image (72) (1) (1) (1) (1).png>)
+<img src="../../../../.gitbook/assets/image (72) (1) (1) (1) (1).png" alt="" data-size="original">
 
 5. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to PingOne.
 
@@ -127,7 +127,7 @@ It’s necessary to sync attributes of IDP users with properties of CodeScan use
 
 <figure><img src="../../../../.gitbook/assets/image (87) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Click **`Save`**.&#x20;
+3. Click **`Save`**.
 4. Enable the **`CodeScan`** app.
 
 <figure><img src="../../../../.gitbook/assets/image (88) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -135,6 +135,6 @@ It’s necessary to sync attributes of IDP users with properties of CodeScan use
 ### Step 5: Testing the Single Sign-On Configuration <a href="#step-5-testing-the-single-signon-configuration" id="step-5-testing-the-single-signon-configuration"></a>
 
 1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.\
-   ![](<../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+   ![](<../../../../.gitbook/assets/image (1706).png>)
 2. Enter the domain name of your organization in the **`Your Company email`** field. **For example**- _autorabit.com_.
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.

@@ -19,20 +19,18 @@ Make sure you have:
 
 1. Go to **`Window`** -> **`Show View`** -> **`other`** -> **`IZ Analyzer`** -> select **`On the Fly Results`**
 2. **`Preview`** and **`Fix`** options will be available in **`On the Fly Results`** table against applicable rules
-3. Use the **`Preview`** option to view the list of changes that the **`Fix`** would perform. No files will be updated in preview mode&#x20;
-4.  Use the **`Fix`** option to apply the fix to applicable files\
-    &#x20;
+3. Use the **`Preview`** option to view the list of changes that the **`Fix`** would perform. No files will be updated in preview mode
+4.  Use the **`Fix`** option to apply the fix to applicable files<br>
 
-    <figure><img src="../../../.gitbook/assets/auto_fix_apply (1).gif" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/auto_fix_apply.gif" alt=""><figcaption></figcaption></figure>
 
 ### Auto Fix - Logs
 
 1. Go to **`Window`** -> **`Show View`** -> **`other`** -> **`IZ Analyzer`** -> select **`Auto Fix Logs`**
 2. An audit log of the applied fix will be generated in the **`target/izanalyzer/autofix-log.csv`** directory
-3.  HTML report of the same will be displayed in **`Auto Fix Logs`** view\
-    &#x20;
+3.  HTML report of the same will be displayed in **`Auto Fix Logs`** view<br>
 
-    <figure><img src="../../../.gitbook/assets/auto-fix-logs (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/auto-fix-logs.png" alt=""><figcaption></figcaption></figure>
 
 #### Details
 

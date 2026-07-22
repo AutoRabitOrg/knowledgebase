@@ -16,10 +16,10 @@ The **SalesforceOffline** template allows the configuration of offline settings 
     * A **Test Case Name**, **Object Name**, and **Offline Settings** appear by default.
     * Click **Add** to input custom test data.
 
-    ![Salesforce Offline Setup](<../../../../../../.gitbook/assets/image (89).png>)
+    ![Salesforce Offline Setup](<../../../../../../.gitbook/assets/image (88).png>)
 
     * To add more settings:
-      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (90).png>)
+      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (58).png>)
       * Enter the **Setting Name**.
       * Use the **Enable/Disable** checkboxes as needed.
       * For additional settings, click the **+** symbol and complete the new entry.

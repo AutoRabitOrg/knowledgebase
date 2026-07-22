@@ -15,7 +15,7 @@ The **Super Administrator** (Super Admin) has the highest privileges in ARM.
 * Add users to admin groups
 
 > **Super Admin safeguards**\
-> &#xNAN;_&#x53;uper Admin_ and **the currently logged-in user** are locked for **all** user-management actions: they cannot be added, deleted, suspended, edited, or delegated.
+> \&#xNAN;_Super Admin_ and **the currently logged-in user** are locked for **all** user-management actions: they cannot be added, deleted, suspended, edited, or delegated.
 
 ### Org Administrators <a href="#org-administrators" id="org-administrators"></a>
 
@@ -39,11 +39,11 @@ General users work in ARM modules according to permissions their Admin assigns. 
 1. Log in to ARM.
 2.  Go to **Admin › Users** and click **Add User**.
 
-    <figure><img src="../../../../.gitbook/assets/image (606).png" alt="Add User button in the Users list"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (572).png" alt="Add User button in the Users list"><figcaption></figcaption></figure>
 3. Fill **User Details** and assign **Role Permissions**.
 4.  Choose **Save & Activate** (immediate) or **Save Now & Activate Later**.
 
-    <figure><img src="../../../../.gitbook/assets/image (607).png" alt="User details form with role selection"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (573).png" alt="User details form with role selection"><figcaption></figcaption></figure>
 5. The new user receives an email to set a password.
 6. The user appears in **Admin › Users**.
 
@@ -53,7 +53,7 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 1.  In **Admin › Users**, locate the user and click **Edit**.
 
-    <figure><img src="../../../../.gitbook/assets/image (609).png" alt="Edit icon for user row"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (574).png" alt="Edit icon for user row"><figcaption></figcaption></figure>
 2. Update fields (Username and Email are immutable).
 3. Click **Save**.
 
@@ -63,10 +63,10 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 *   **Delete User** – permanently remove the account.
 
-    <figure><img src="../../../../.gitbook/assets/image (610).png" alt="Trash-can icon to delete a user"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (575).png" alt="Trash-can icon to delete a user"><figcaption></figcaption></figure>
 *   **Activate / De-activate** – toggle suspension.
 
-    <figure><img src="../../../../.gitbook/assets/image (611).png" alt="Activate/De-activate toggle button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (576).png" alt="Activate/De-activate toggle button"><figcaption></figcaption></figure>
 
 Confirm the action to proceed.
 
@@ -92,10 +92,10 @@ Admins can download all user data as CSV.
 
 1.  In **Admin › Users**, click **Export All Users**.
 
-    <figure><img src="../../../../.gitbook/assets/image (613).png" alt="Export All Users button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (577).png" alt="Export All Users button"><figcaption></figcaption></figure>
 2.  Select fields and click **Export**.
 
-    <figure><img src="../../../../.gitbook/assets/image (614).png" alt="Field-selection dialog for CSV export" width="511"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (578).png" alt="Field-selection dialog for CSV export" width="511"><figcaption></figcaption></figure>
 3. A CSV downloads to your computer.
 
 > **Location privacy** – If a user blocks location sharing, ARM uses IP-based location.
@@ -106,13 +106,13 @@ Admins can download all user data as CSV.
 
 1.  Go to **Admin › Roles**.
 
-    <figure><img src="../../../../.gitbook/assets/image (615).png" alt="Roles option in Admin menu" width="251"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (569).png" alt="Roles option in Admin menu" width="251"><figcaption></figcaption></figure>
 2.  Click **Create Role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (616).png" alt="Create Role button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (570).png" alt="Create Role button"><figcaption></figcaption></figure>
 3.  Provide a **Role Name**, **Description**, and tick permissions.
 
-    <figure><img src="../../../../.gitbook/assets/image (617).png" alt="Role permissions checklist" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (571).png" alt="Role permissions checklist" width="563"><figcaption></figcaption></figure>
 4. Click **Save**.
 
 > _The default **Admin** role has full permissions and cannot be edited or renamed._
@@ -130,7 +130,7 @@ Admins can download all user data as CSV.
 
 Admins are hidden on this screen because they already hold full access.
 
-<figure><img src="../../../../.gitbook/assets/image (622).png" alt="Assign roles and modules to selected users"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (620).png" alt="Assign roles and modules to selected users"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (621).png" alt="Save confirmation after assigning permissions" width="563"><figcaption></figcaption></figure>
 

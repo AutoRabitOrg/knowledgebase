@@ -51,7 +51,7 @@ The following articles describe using **Single DataLoader** to delete data from 
 19. Your job appears at the top in the **`DataLoader Summary`** screen.
 20. Click **`Run`** to execute the job manually.
 
-<figure><img src="../../../../../.gitbook/assets/image (86) (1) (1).png" alt="Run button in Dataloader Summary"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (70) (1) (1).png" alt="Run button in Dataloader Summary"><figcaption></figcaption></figure>
 
 21. Choose criteria for running the DataLoader job:
 
@@ -66,7 +66,7 @@ The following articles describe using **Single DataLoader** to delete data from 
 
 23. The **`Results of Last Run`** section shows live updates of successful and failed record deletions. You can view/download records in CSV format.
 
-<figure><img src="../../../../../.gitbook/assets/image (88) (1) (1).png" alt="Run results summary showing deleted records"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (72) (1) (1).png" alt="Run results summary showing deleted records"><figcaption></figcaption></figure>
 
 24. The number of impacted records is updated dynamically in the **Records** section.
 
@@ -83,10 +83,10 @@ The following articles describe using **Single DataLoader** to delete data from 
 5. **Log** – View execution logs.
 6. **VR/WFR** – Review and re-enable validation/workflow rules. See [Validation/ Workflow Rules](../validation-workflow-rules.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (76) (1) (1).png" alt="Validation/Workflow Rules list UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (75) (1) (1).png" alt="Validation/Workflow Rules list UI"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (77) (1) (1).png" alt="Sample validation rule execution log"><figcaption></figcaption></figure>
 
 7. **Clone** – Duplicate a process. You can upload a new CSV and select another Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1) (1).png" alt="Cloning an existing dataloader process"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (73) (1) (1).png" alt="Cloning an existing dataloader process"><figcaption></figcaption></figure>

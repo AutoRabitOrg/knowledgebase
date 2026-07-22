@@ -13,7 +13,7 @@ When you're triggering a new CI job, look for the **Configure Parallel Processor
 <figure><img src="../../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:**&#x20;
+**Important Note:**
 
 This feature is currently available for the following CI Jobs:
 
@@ -28,7 +28,7 @@ This feature is currently available for the following CI Jobs:
 
 1. Select the checkbox: **Configure Parallel Processor**
 2. Next, fill in the below details:
-   * **URL Path (required):** The target URL endpoint of the HTTP request&#x20;
+   * **URL Path (required):** The target URL endpoint of the HTTP request
    * **Client Id (required):** The client ID that your callout service uses to identify the AutoRABIT application
    * **Client Secret (required):** The client secret that your callout service uses to authenticate the identity of the AutoRABIT applicationThe **Client Secret** field is hidden during the editing of your current CI job, preventing you from updating the secret key. But you can insert a new secret key (if required).
    * **Access token URL (required):** The URL that the client uses to obtain an access token given an authorization code
@@ -41,7 +41,7 @@ This feature is currently available for the following CI Jobs:
     * To send **JSON** in a request, use **application/json** and add your content in the body provided
     * To send **XML** in a request, use **application/xml** and add your content in the body provided
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1194).png" alt=""><figcaption></figcaption></figure>
 5. **Dynamic URL Parameters:** AutoRABIT allows you to include the various variables from your AutoRABIT organization, for example, the name of the CI job, build number, etc
 
 **Dynamic Parameters:**
@@ -57,14 +57,14 @@ This feature is currently available for the following CI Jobs:
 {% endhint %}
 
 6. **Request API Version (required):** Enter the API versions
-7. To add a custom header, click on the **Add Header** button and enter the keys and the value to it. Multiple adding of keys and values are allowed.&#x20;
+7. To add a custom header, click on the **Add Header** button and enter the keys and the value to it. Multiple adding of keys and values are allowed.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1195).png" alt=""><figcaption></figcaption></figure>
 
-Default headers is set as _**"Accept" :"application/json", "Content-Type":"application/json"**_&#x20;
+Default headers is set as _**"Accept" :"application/json", "Content-Type":"application/json"**_
 
 8. **Poll Duration (Mins):** This allows you to define the polling duration in minutes for the job execution. This field is mandatory. AutoRABIT will perform the HTTP request based on the poll duration chosen and if a 200 OK is returned, it will continue with the next step. If the 200 response code is not seen within the given time frame, You will be shown a timeout message in the log file.
-9. **Poll Interval (Mins):** Time-bound between two consecutive API calls, for example, 1minute, 5minute. This field is mandatory.&#x20;
+9. **Poll Interval (Mins):** Time-bound between two consecutive API calls, for example, 1minute, 5minute. This field is mandatory.
 10. Click on **Save**.
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

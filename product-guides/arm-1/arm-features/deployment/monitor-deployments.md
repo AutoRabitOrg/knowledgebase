@@ -51,9 +51,7 @@ You’ll need the **`Deployment History`** access permission.
 
            <figure><img src="../../../../.gitbook/assets/image (1698).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
 
-           <figure><img src="../../../../.gitbook/assets/image (1699).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
-
-
+           <figure><img src="../../../../.gitbook/assets/image (1698).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
 
            <figure><img src="../../../../.gitbook/assets/image (2145).png" alt=""><figcaption></figcaption></figure>
     2.  #### As an Approver <a href="#as-an-approver" id="as-an-approver"></a>
@@ -71,12 +69,10 @@ You’ll need the **`Deployment History`** access permission.
         2.  Once the Approver clicks on Approve → It is Auto-deployed. Users and approvers are notified via email.\
             Pending L1 Approval<br>
 
-            <figure><img src="../../../../.gitbook/assets/image (2549).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (2548).png" alt=""><figcaption></figcaption></figure>
 
             Email to Approver\
             ![](<../../../../.gitbook/assets/image (2552).png>)<br>
-
-
 
         Pending L2 Approval
 
@@ -85,15 +81,11 @@ You’ll need the **`Deployment History`** access permission.
         \
         Approver can drop a comment, either Approve or Reject, so the user can review the comments in the comments screen.
 
-
-
     <figure><img src="../../../../.gitbook/assets/image (2550).png" alt=""><figcaption></figcaption></figure>
-
-
 
     1. Once the Approver clicks on Reject, the → Approver should reject with comments. Users and approvers are notified via email.
     2. The user can go to the rejected deployment and see the approver’s comments.
-    3. The user will only have the option to select/reselect from the redeploy/promote screen, not the metadata changes.&#x20;
+    3. The user will only have the option to select/reselect from the redeploy/promote screen, not the metadata changes.
     4. Once that is done, the User can reinitiate the deployment.
     5.  Deployment would again follow the L1 and L2 approval process.
 
@@ -119,7 +111,7 @@ You’ll need the **`Deployment History`** access permission.
 
 **Note:** If the Quick Deploy button is grayed out after successful validation, the issue is that there are invalid characters in the metadata file. To fix this issue, please follow these steps:
 
-* **Access Deployment Logs** by navigating to the Deployment History section. Select the specific deployment label where the Quick Deploy button is missing. Review the deployment logs for any errors or warnings related to special characters.&#x20;
+* **Access Deployment Logs** by navigating to the Deployment History section. Select the specific deployment label where the Quick Deploy button is missing. Review the deployment logs for any errors or warnings related to special characters.
 * **Check Deployment Metadata** to identify the files or metadata containing special characters. The common special characters include: +, &, <, >, ", ', etc. Note the specific characters and their locations in the metadata.
 * **Re-run Deployment** after you make necessary adjustments to the deployment files to ensure special characters are correctly encoded. Re-run the deployment process with the modified files. The Quick Deploy button should not be grayed out.
 * **Escalate if Unresolved**, if the issue persists, escalate to AutoRABIT support for further assistance and provide detailed logs and steps taken to resolve the issue.
@@ -142,7 +134,7 @@ The audit log lists the user's changes made during the deployment timestamp (bas
 
 <figure><img src="/broken/files/zUSc5pEtFyEBIfOFjugq" alt=""><figcaption></figcaption></figure>
 
-Here is the list of changes that Audit Trail tracks:&#x20;
+Here is the list of changes that Audit Trail tracks:
 
 **Administration**
 
@@ -150,147 +142,147 @@ Here is the list of changes that Audit Trail tracks:&#x20;
 * Multiple currencies
 * Users, portal users, roles, permission sets, and profiles
 * Email addresses for any user
-* Deleting email attachments sent as links&#x20;
-* Email footers, including creating, editing, or deleting&#x20;
-* Email deliverability settings&#x20;
+* Deleting email attachments sent as links
+* Email footers, including creating, editing, or deleting
+* Email deliverability settings
 * Divisions, including creating, editing, transferring, and changing users’ default division
-* Certificates, adding or deleting&#x20;
-* Domain names&#x20;
-* Enabling or disabling Salesforce as an identity provider&#x20;
+* Certificates, adding or deleting
+* Domain names
+* Enabling or disabling Salesforce as an identity provider
 
 **Profiles**
 
-* Permission for a standard or custom profile changed&#x20;
+* Permission for a standard or custom profile changed
 * General or admin permission changed
-* FLS changed on the profile&#x20;
-* Entity permission for a standard or custom profile changed&#x20;
-* Profile Page Layout changed&#x20;
-* Tab set on a standard or custom profile changed&#x20;
-* User tab set override changed&#x20;
-* User tab set customization override changed for standard or custom profiles&#x20;
-* Tab set visibility changed for a standard or custom profile&#x20;
-* Tab set visibility modified&#x20;
+* FLS changed on the profile
+* Entity permission for a standard or custom profile changed
+* Profile Page Layout changed
+* Tab set on a standard or custom profile changed
+* User tab set override changed
+* User tab set customization override changed for standard or custom profiles
+* Tab set visibility changed for a standard or custom profile
+* Tab set visibility modified
 * Default tab set modified
-* Custom App default changed on standard or custom profiles&#x20;
-* Profile renamed, cloned, or deleted&#x20;
-* Profile description changed&#x20;
-* Standard or custom profile cloned&#x20;
-* Console setting or layout changed&#x20;
-* View, or modify all data enabled for this profile&#x20;
+* Custom App default changed on standard or custom profiles
+* Profile renamed, cloned, or deleted
+* Profile description changed
+* Standard or custom profile cloned
+* Console setting or layout changed
+* View, or modify all data enabled for this profile
 * Login hours for the profile modified
-* Client settings for the profile modified&#x20;
-* Record type added to or removed from the profile&#x20;
-* Default record type modified&#x20;
-* Default person account record type modified&#x20;
-* Default business account record type modified&#x20;
-* Single sign-on enabled or disabled for this profile&#x20;
+* Client settings for the profile modified
+* Record type added to or removed from the profile
+* Default record type modified
+* Default person account record type modified
+* Default business account record type modified
+* Single sign-on enabled or disabled for this profile
 
 **Permission Sets/Groups**
 
-* Permission set (or group) created, cloned, or deleted&#x20;
-* Permission set created or cloned without a license&#x20;
-* Developer name, label, or description of a permission set changed&#x20;
-* Session activation changed by admin&#x20;
-* Permission in a permission set enabled or disabled by the admin&#x20;
-* FLS for an object in the permission set changed by the admin&#x20;
-* Permission set from a user assigned or unassigned by the admin&#x20;
-* Tab settings in permission set changed by admin&#x20;
-* Permission set group assigned or removed for a user&#x20;
-* Permission set group re-calculated&#x20;
+* Permission set (or group) created, cloned, or deleted
+* Permission set created or cloned without a license
+* Developer name, label, or description of a permission set changed
+* Session activation changed by admin
+* Permission in a permission set enabled or disabled by the admin
+* FLS for an object in the permission set changed by the admin
+* Permission set from a user assigned or unassigned by the admin
+* Tab settings in permission set changed by admin
+* Permission set group assigned or removed for a user
+* Permission set group re-calculated
 
 **Customizations**
 
-* User interface settings like collapsible sections, Quick Create, hover details, or related list hover links&#x20;
-* Page layout, action layout, and search layouts&#x20;
-* Compact layouts&#x20;
-* Salesforce app navigation menu&#x20;
-* Inline edits&#x20;
-* Custom fields and field-level security, including formulas, picklist values, and field attributes like the auto-number field format, field manageability, or masking of encrypted fields&#x20;
-* Lead settings, lead assignment rules, and lead queues&#x20;
-* Activity settings&#x20;
-* Support settings, business hours, case assignment and escalation rules, and case queues&#x20;
-* Requests to Salesforce Customer Support&#x20;
-* Tab names, including tabs that you reset to the original tab name&#x20;
-* Custom apps (including Salesforce console apps), custom objects, and custom tabs&#x20;
-* Contract settings&#x20;
-* Forecast settings&#x20;
-* Email-to-Case or On-Demand Email-to-Case, enabling or disabling&#x20;
-* Custom buttons, links, and s-controls, including standard button overrides&#x20;
-* Drag-and-drop scheduling, enabling or disabling&#x20;
-* Similar opportunities, enabling, disabling, or customizing&#x20;
-* Quotes, enabling or disabling&#x20;
-* Data category groups, data categories, and category-group assignments to objects&#x20;
-* Article types Category groups and categories&#x20;
-* Salesforce Knowledge settings&#x20;
-* Ideas settings&#x20;
-* Answers settings&#x20;
-* Field tracking in feeds&#x20;
-* Campaign influence settings&#x20;
-* Critical updates, activating or deactivating&#x20;
-* Chatter email notifications, enabling or disabling&#x20;
-* Chatter new user creation settings for invitations and email domains, enabling or disabling&#x20;
-* Validation rules&#x20;
+* User interface settings like collapsible sections, Quick Create, hover details, or related list hover links
+* Page layout, action layout, and search layouts
+* Compact layouts
+* Salesforce app navigation menu
+* Inline edits
+* Custom fields and field-level security, including formulas, picklist values, and field attributes like the auto-number field format, field manageability, or masking of encrypted fields
+* Lead settings, lead assignment rules, and lead queues
+* Activity settings
+* Support settings, business hours, case assignment and escalation rules, and case queues
+* Requests to Salesforce Customer Support
+* Tab names, including tabs that you reset to the original tab name
+* Custom apps (including Salesforce console apps), custom objects, and custom tabs
+* Contract settings
+* Forecast settings
+* Email-to-Case or On-Demand Email-to-Case, enabling or disabling
+* Custom buttons, links, and s-controls, including standard button overrides
+* Drag-and-drop scheduling, enabling or disabling
+* Similar opportunities, enabling, disabling, or customizing
+* Quotes, enabling or disabling
+* Data category groups, data categories, and category-group assignments to objects
+* Article types Category groups and categories
+* Salesforce Knowledge settings
+* Ideas settings
+* Answers settings
+* Field tracking in feeds
+* Campaign influence settings
+* Critical updates, activating or deactivating
+* Chatter email notifications, enabling or disabling
+* Chatter new user creation settings for invitations and email domains, enabling or disabling
+* Validation rules
 
 **Security and Sharing**
 
-* Public groups, sharing rules, and org-wide sharing, including the Grant Access Using Hierarchies option&#x20;
-* Password policies&#x20;
-* Password resets&#x20;
-* Session settings, like session timeout (excluding Session time-out after and Session security level required at login profile settings)&#x20;
-* Delegated administration groups and the items delegated admins can manage (setup changes made by delegated administrators are also tracked)&#x20;
-* Lightning Login, enabling or disabling, enrollments, and cancellations&#x20;
-* How many records a user permanently delete from their recycle bin and from the org recycle bin&#x20;
-* SAML (Security Assertion Markup Language) configuration settings&#x20;
-* Salesforce certificates&#x20;
-* Identity providers, enabling or disabling&#x20;
-* Named credentials Service providers&#x20;
-* Shield Platform Encryption setup&#x20;
-* Event Manager&#x20;
-* Transaction Security&#x20;
-* Some connected app policy and setting updates&#x20;
+* Public groups, sharing rules, and org-wide sharing, including the Grant Access Using Hierarchies option
+* Password policies
+* Password resets
+* Session settings, like session timeout (excluding Session time-out after and Session security level required at login profile settings)
+* Delegated administration groups and the items delegated admins can manage (setup changes made by delegated administrators are also tracked)
+* Lightning Login, enabling or disabling, enrollments, and cancellations
+* How many records a user permanently delete from their recycle bin and from the org recycle bin
+* SAML (Security Assertion Markup Language) configuration settings
+* Salesforce certificates
+* Identity providers, enabling or disabling
+* Named credentials Service providers
+* Shield Platform Encryption setup
+* Event Manager
+* Transaction Security
+* Some connected app policy and setting updates
 
 **Data Management**
 
-* Using mass delete, including when a mass delete exceeds the user’s Recycle Bin limit on deleted records&#x20;
-* Data export requests&#x20;
-* Mass transfer use&#x20;
-* Reporting snapshots, including defining, deleting, or changing the source report or target object on a reporting snapshot&#x20;
-* Use of the Data Import Wizard&#x20;
-* Sandbox deletions&#x20;
+* Using mass delete, including when a mass delete exceeds the user’s Recycle Bin limit on deleted records
+* Data export requests
+* Mass transfer use
+* Reporting snapshots, including defining, deleting, or changing the source report or target object on a reporting snapshot
+* Use of the Data Import Wizard
+* Sandbox deletions
 
 **Development**
 
-* Apex classes and triggers&#x20;
-* Visualforce pages, custom components, and static resources&#x20;
-* Lightning pages&#x20;
-* Action link templates&#x20;
-* Custom settings&#x20;
-* Custom metadata types and records&#x20;
-* Remote access definitions&#x20;
-* Salesforce Sites settings&#x20;
+* Apex classes and triggers
+* Visualforce pages, custom components, and static resources
+* Lightning pages
+* Action link templates
+* Custom settings
+* Custom metadata types and records
+* Remote access definitions
+* Salesforce Sites settings
 
 **Various Setups**
 
-* API usage metering notification, creating&#x20;
-* Territories&#x20;
-* Process automation settings&#x20;
-* Approval processes&#x20;
-* Workflow actions, creating or deleting&#x20;
-* Flows&#x20;
-* Packages from Salesforce AppExchange that you installed or uninstalled&#x20;
-* Notification delivery settings for custom and standard notification types&#x20;
+* API usage metering notification, creating
+* Territories
+* Process automation settings
+* Approval processes
+* Workflow actions, creating or deleting
+* Flows
+* Packages from Salesforce AppExchange that you installed or uninstalled
+* Notification delivery settings for custom and standard notification types
 
 **Using the Application**
 
-* Account team and opportunity team selling settings&#x20;
-* Activating Google Apps services&#x20;
-* Mobile configuration settings, including data sets, mobile views, and excluded fields&#x20;
-* Users with the “Manage External Users” permission logging in to the partner portal as partner users&#x20;
-* Users with the “Manage Customer Users” permission logging into the Salesforce Customer Portal as Customer Portal users&#x20;
-* Partner portal accounts, enabling or disabling&#x20;
-* Salesforce Customer Portal accounts, disabling&#x20;
-* Salesforce Customer Portal, enabling or disabling&#x20;
-* Creating multiple Customer Portals&#x20;
-* Entitlement processes and entitlement templates, changing or creating&#x20;
-* Self-registration for a Salesforce Customer Portal, enabling or disabling&#x20;
+* Account team and opportunity team selling settings
+* Activating Google Apps services
+* Mobile configuration settings, including data sets, mobile views, and excluded fields
+* Users with the “Manage External Users” permission logging in to the partner portal as partner users
+* Users with the “Manage Customer Users” permission logging into the Salesforce Customer Portal as Customer Portal users
+* Partner portal accounts, enabling or disabling
+* Salesforce Customer Portal accounts, disabling
+* Salesforce Customer Portal, enabling or disabling
+* Creating multiple Customer Portals
+* Entitlement processes and entitlement templates, changing or creating
+* Self-registration for a Salesforce Customer Portal, enabling or disabling
 * Customer Portal or partner portal users, enabling or disabling

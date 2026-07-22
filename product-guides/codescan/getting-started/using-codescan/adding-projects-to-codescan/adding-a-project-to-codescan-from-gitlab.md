@@ -5,7 +5,7 @@ This document guides you through how to add a GitLab project to your CodeScan Cl
 1. Log in to your CodeScan account.
 2. Once you log in to your [CodeScan](https://www.codescan.io/) account, click on the (**+**) icon in the top-right corner and select **Analyze new project**.
 
-<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9.png" alt=""><figcaption></figcaption></figure>
 
 3. This takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click on **Set Up**.
 
@@ -13,7 +13,7 @@ This document guides you through how to add a GitLab project to your CodeScan Cl
 
 4. On the next screen, click on **Add Analysis Project** button.
 
-<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1.png" alt=""><figcaption></figcaption></figure>
 
 5. You will now see a new popup window; click on [**GitLab**](https://knowledgebase.autorabit.com/codescan/docs/integrating-codescan-in-gitlab) from the given options.
 
@@ -39,6 +39,6 @@ This document guides you through how to add a GitLab project to your CodeScan Cl
 
 9. When you click the link, it will take you to the **CodeScan Project** page, where you can view your project analysis report.
 
-<figure><img src="../../../../../.gitbook/assets/Git Analysis 7.4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Git Analysis 7.4.png" alt=""><figcaption></figcaption></figure>
 
 Now that the webhooks have been created, every time a push or pull request is made to the tracked branch, an analysis will be triggered in CodeScan.

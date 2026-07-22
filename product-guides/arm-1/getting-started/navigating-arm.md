@@ -2,7 +2,7 @@
 
 ## Welcome to ARM!! <a href="#welcome-to-arm" id="welcome-to-arm"></a>
 
-You'll see this when you log in to your ARM account. <br>
+You'll see this when you log in to your ARM account.<br>
 
 <figure><img src="../../../.gitbook/assets/image (1899).png" alt=""><figcaption></figcaption></figure>
 
@@ -48,7 +48,7 @@ Here you can:
 3.  Logout from your ARM account\
     <br>
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-11 at 1.56.20 PM (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-08-11 at 1.56.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Left Navigation Bar <a href="#left-navigation-bar" id="left-navigation-bar"></a>
 
@@ -72,7 +72,7 @@ A list of action items related to the Version Control system will get displayed,
 
 ARM's Continuous Integration (CI) is designed to help customers rapidly release code confidently by automating the build, test, and deployment process to accomplish Continuous Delivery for Salesforce. CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository upon completing every task. You can release code faster as it allows you to track application development and metadata modifications.
 
-### [Deployment](../../arm/arm-features/deployment/)  <a href="#deployment" id="deployment"></a>
+### [Deployment](../../arm/arm-features/deployment/) <a href="#deployment" id="deployment"></a>
 
 The **Deployment** process allows you to quickly and safely transfer new developments from your sandbox instance to a production instance. You can transfer validation rules, custom objects, new fields, apex codes, and many other components from your development environment to a live production environment using the deployment process.
 

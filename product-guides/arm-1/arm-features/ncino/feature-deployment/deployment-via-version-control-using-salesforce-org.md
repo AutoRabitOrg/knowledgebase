@@ -8,7 +8,7 @@ This section is about deploying the nCino metadata and data via version control 
 
 1. Hover your mouse over the [nCino ](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/)module and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (74) (1).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 
@@ -57,7 +57,7 @@ In the **Source** field: Select your own source field whose values will get popu
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (33) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings)**:
@@ -91,6 +91,6 @@ For deploying to the destination org, you will find the list of deployment crite
 4. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in Source Org) in Destination Org
 5. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (35) (1) (1) (1) (1).png" alt="" width="510"><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process. You'll be redirected to the [Feature Deployment Summary](../../../../arm/arm-features/ncino/feature-deployment/feature-deployment-summary.md) page, where you can view detailed deployment reports or re-deploy the nCino objects to your Salesforce Org once again.

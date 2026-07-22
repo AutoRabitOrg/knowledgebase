@@ -57,7 +57,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
        1. The selected object is displayed as the root node of the hierarchy.
        2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
 
-           <figure><img src="../../../../../.gitbook/assets/image (2360).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../../.gitbook/assets/image (2346).png" alt=""><figcaption></figcaption></figure>
        3. Expand and collapse controls allow traversal across multiple hierarchy levels.
        4. Each object card displays:
           * Object name
@@ -71,13 +71,13 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
            1. Matching objects within the current hierarchy are highlighted.
            2. The info icon is automatically opened the first time typing is initiated.
 
-           <figure><img src="../../../../../.gitbook/assets/image (2361).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
     4. The info icon can be manually reopened at any time by selecting the icon.
     5.  **Search Help (Info Icon)**
 
         The Search Help panel explains how search operates within the hierarchy:
 
-        <figure><img src="../../../../../.gitbook/assets/image (2367).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
 
         1. **Typing**
            1. Highlights matching objects only within the currently displayed hierarchy.
@@ -98,7 +98,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
             Searches across the entire hierarchy path.
     7.  If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
 
-        <figure><img src="../../../../../.gitbook/assets/image (2362).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (2352).png" alt=""><figcaption></figcaption></figure>
     8. **Search Results Feedback**
        1. **A result banner displays:**
           * Number of matches found on the current page.
@@ -111,7 +111,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     9. “Only Matches” Toggle
        1.  The Only Matches toggle is available alongside search results.
 
-           <figure><img src="../../../../../.gitbook/assets/image (2363).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../../.gitbook/assets/image (2353).png" alt=""><figcaption></figcaption></figure>
     10. **When enabled:**
         1. Only objects matching the search criteria are displayed.
         2. Non-relevant hierarchy nodes are temporarily hidden.
@@ -121,12 +121,12 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
         1. The Root option is displayed at the top of the hierarchy view.
         2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
 
-            <figure><img src="../../../../../.gitbook/assets/image (2364).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../../.gitbook/assets/image (2355).png" alt=""><figcaption></figcaption></figure>
     13. This action resets the navigation context without clearing selected objects.
     14. **Path and Navigation Indicators**
         1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
 
-            <figure><img src="../../../../../.gitbook/assets/image (2365).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../../.gitbook/assets/image (2356).png" alt=""><figcaption></figcaption></figure>
     15. A Go Back option allows navigation to the previous hierarchy level.
     16. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
     17. **Object Selection Behaviour**
@@ -143,7 +143,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     19. **Saving Hierarchy Configuration**
         1.  The Save button persists all selections made within the hierarchy view.
 
-            <figure><img src="../../../../../.gitbook/assets/image (2366).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../../.gitbook/assets/image (2357).png" alt=""><figcaption></figcaption></figure>
         2. Validation is performed before saving to ensure dependency consistency.
         3. On successful save, the hierarchy modal closes and returns to the configuration screen.
     20. **Key Functional Notes**
@@ -216,7 +216,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     <figure><img src="../../../../../.gitbook/assets/image (1558).png" alt=""><figcaption></figcaption></figure>
 19. **Save:** Will save the config created. It will not trigger the job automatically while saving the job.
     * The user will observe “Save” on the “Replication Config Info” page if “Save” is selected.
-20. &#x20;**Save & Run:** Will save the config created and will trigger the job created to run, and, redirect the user to the “Job History” page.
+20. **Save & Run:** Will save the config created and will trigger the job created to run, and, redirect the user to the “Job History” page.
     * The user can observe the related job running on the “Job History” page.
     * The user will see “Save & Run” on the “Replication Config Info” page if “Save & Run” is selected.
 
@@ -237,9 +237,9 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
 4. **Include all child objects:** Ensures that all the child’s directly related and the recursively related child’s will also be included.
    * To ensure optimal performance, only fixed objects are allowed to be selected. If any further child objects are to be selected, the selection can be made by going through the schema.
-5.  **Mappings**: The user will click on the mappings to map the fields on the source against the fields on the destination.&#x20;
+5.  **Mappings**: The user will click on the mappings to map the fields on the source against the fields on the destination.
 
-    * The mappings section contains three tabs: Fields, Record Type & Related Picklist.&#x20;
+    * The mappings section contains three tabs: Fields, Record Type & Related Picklist.
     * The user can perform 'Automap' & 'Clear All' on the values of the tabs.
 
     <figure><img src="../../../../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
@@ -279,15 +279,13 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     * On clicking 'Clone', an entry will be created on the “Job History” page.
 
     <figure><img src="../../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
-
-
 5.  **Additional Cloning Validations:**
 
     1.  ### Feature Details
 
         When the cloning of a job is initiated, the following notification will be displayed upon identifying any differences between environments.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values”.
 

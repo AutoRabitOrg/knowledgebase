@@ -19,7 +19,7 @@ To integrate Azure DevOps as a plugin in AutoRABIT, follow the steps below:
 
 3. Click on **New ALM System** under **ALM Management**.
 
-<figure><img src="../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (903).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the ALM type as **Azure DevOps**.
 
@@ -35,7 +35,7 @@ To integrate Azure DevOps as a plugin in AutoRABIT, follow the steps below:
 **Note:**
 
 1. To create a new credential, you need to give a **credential name**, choose the **credential type,** e.g., user name / password credentials or basic SSH Private Key type, and the **credential scope** (global or private).
-2. For **user name/password** as credential type authentication, a secured personal access token is required. The same token should be entered in the **password** field.&#x20;
+2. For **user name/password** as credential type authentication, a secured personal access token is required. The same token should be entered in the **password** field.
 {% endhint %}
 
 ### Authentication Access via Azure DevOps Personal Access Tokens <a href="#authentication-access-via-azure-devops-personal-access-tokens" id="authentication-access-via-azure-devops-personal-access-tokens"></a>
@@ -43,7 +43,7 @@ To integrate Azure DevOps as a plugin in AutoRABIT, follow the steps below:
 1. Sign in to your organization in **Azure DevOps** _(https://dev.azure.com/{yourorganization})._
 2. From your home page, navigate to your **Profile > Security** to view your security details.
 
-<figure><img src="../../../.gitbook/assets/image (39) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="275"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="275"><figcaption></figcaption></figure>
 
 3. Go to **Security > Personal access token** and click on **+ New Token** to create a personal access token.
 

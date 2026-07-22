@@ -1316,6 +1316,7 @@
   * [Backup](product-guides/autorabit-vault-freemium/backup.md)
   * [Restore](product-guides/autorabit-vault-freemium/restore.md)
   * [Replicate](product-guides/autorabit-vault-freemium/replicate.md)
+* [Data Gen By AutoRABIT Vault - Beta](product-guides/data-gen-by-autorabit-vault-beta.md)
 * [Guard](product-guides/guard.md)
   * [Getting Started with Guard](product-guides/guard/getting-started-with-guard/README.md)
     * [Connecting a Salesforce Org to Guard using Connected Apps flow](product-guides/guard/getting-started-with-guard/how-to-set-up-guard.md)

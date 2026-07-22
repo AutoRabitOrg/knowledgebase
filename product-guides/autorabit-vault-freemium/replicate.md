@@ -29,7 +29,7 @@ The Choose Backup stage displays available backup snapshots for the selected sou
 
 The snapshot table provides the label, configuration name, date and time, expiry date, metadata members, record count, type, and status. A valid snapshot must be selected before the workflow proceeds.
 
-![](<../../.gitbook/assets/Unknown image (207)>)
+<figure><img src="../../.gitbook/assets/2 (10).png" alt=""><figcaption></figcaption></figure>
 
 ## Select Components
 

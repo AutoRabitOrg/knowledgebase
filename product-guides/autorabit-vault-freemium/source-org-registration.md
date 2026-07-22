@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Source ORG Registration
 
 ## Purpose

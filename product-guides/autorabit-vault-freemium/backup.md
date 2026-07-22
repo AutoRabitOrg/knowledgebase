@@ -12,7 +12,7 @@ Backup Job Creation allows a backup job to be started from the Backup module aft
 
 A source org and backup configuration must already be available. The Backup Jobs page uses the selected Salesforce Org, Environment, and Configurations values to display the related backup records and to start a new backup for the selected configuration.
 
-![](<../../.gitbook/assets/Unknown image (247)>)
+<figure><img src="../../.gitbook/assets/1 (12).png" alt=""><figcaption></figcaption></figure>
 
 ## Create a Backup Job
 
@@ -20,25 +20,21 @@ The Backup module opens on the Backup Jobs page. The page displays the selected 
 
 Selecting Backup Now opens the Start Backup dialog. AutoRABIT Vault automatically generates a Backup Label and carries forward the selected configuration into the Configurations field. The dialog provides the review point before the backup job is started.
 
-![](<../../.gitbook/assets/Unknown image (248)>)
+<figure><img src="../../.gitbook/assets/2 (9).png" alt=""><figcaption></figcaption></figure>
 
 The Configurations field supports selection or confirmation of the backup configuration that must be used for the job. After the configuration is selected, the Data section displays Full Backup as the backup type. The Exclude Deleted Records from Backups option remains available to control whether deleted records are excluded from the backup processing.
 
-![](<../../.gitbook/assets/Unknown image (249)>)
+<figure><img src="../../.gitbook/assets/3 (10).png" alt=""><figcaption></figcaption></figure>
 
 ## Start the Backup
 
 Selecting Start Backup submits the backup request. During submission, the Start Backup button shows an in-progress state to indicate that AutoRABIT Vault is processing the request and creating the backup job.
 
-![](<../../.gitbook/assets/Unknown image (250)>)
+<figure><img src="../../.gitbook/assets/4 (10).png" alt=""><figcaption></figcaption></figure>
 
 After the request is accepted, AutoRABIT Vault closes the dialog and displays a confirmation notification indicating that the backup has started. The Backup Summary refreshes with the created backup record. The record displays the backup label, configuration name, date and time, expiry date, duration, record count, API calls, data backup indicator, status, and available actions.
 
-![](<../../.gitbook/assets/Unknown image (251)>)
-
-## Result
-
-The backup job is created for the selected configuration and becomes available in the Backup Summary. The status and supporting job details can be monitored from the same page, and the action icons provide access to the available job-level operations.
+<figure><img src="../../.gitbook/assets/5 (9).png" alt=""><figcaption></figcaption></figure>
 
 ## Important Considerations
 

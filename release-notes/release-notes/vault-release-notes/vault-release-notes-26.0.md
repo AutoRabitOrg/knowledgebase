@@ -8,11 +8,13 @@
 
 #### OAuth Client Credentials Flow for Salesforce Org Connection <a href="#dt-13561-oauth-client-credentials-flow-for-salesforce-org-connection" id="dt-13561-oauth-client-credentials-flow-for-salesforce-org-connection"></a>
 
-Vault now supports connecting Salesforce orgs using the OAuth Client Credentials Flow. Administrators can authenticate Vault with Salesforce through a connected app without requiring interactive user login, enabling seamless machine-to-machine integration for automated backup, restore, and masking operations.
+AutoRABIT Vault now supports connecting Salesforce orgs using the OAuth Client Credentials Flow. Administrators can authenticate AutoRABIT Vault with Salesforce through a connected app without requiring interactive user login, enabling seamless machine-to-machine integration for automated backup, restore, and masking operations.
 
 #### Support for Salesforce Refresh Token Rotation (Local External Client Apps) <a href="#dt-13707-support-for-salesforce-refresh-token-rotation-local-external-client-apps" id="dt-13707-support-for-salesforce-refresh-token-rotation-local-external-client-apps"></a>
 
-Vault now handles Salesforce's Refresh Token Rotation for Local External Client Apps (ECAs). When Salesforce issues a new refresh token during an access token refresh, Vault securely persists the updated token and continues authentication without manual intervention. This ensures uninterrupted operations and compliance with Salesforce's latest OAuth security requirements.
+Vault now handles Salesforce's Refresh Token Rotation for Local External Client Apps (ECAs). When Salesforce issues a new refresh token during an access token refresh, AutoRABIT Vault securely persists the updated token and continues authentication without manual intervention. This ensures uninterrupted operations and compliance with Salesforce's latest OAuth security requirements.
+
+***
 
 ## AutoRABIT Vault Release Notes 26.2.1
 
@@ -120,11 +122,11 @@ Fixed an issue where scheduled Replication Jobs were not triggering at their con
 
 **Release Date: 3 June 2026**
 
-**Export** AutoRABIT **Vault User List with Access & Login Details**
+**Export AutoRABIT Vault User List with Access & Login Details**
 
 AutoRABIT Vault Admins can now export the complete list of users along with key access and activity details. This enables faster user access reviews, simplifies compliance and audit reporting, and reduces dependency on support for user access reports.
 
-AutoRABIT **Vault Logging Out Immediately After Login**
+**AutoRABIT** **Vault Logging Out Immediately After Login**
 
 Fixed an issue where AutoRABIT Vault was logging users out immediately after a successful login, preventing access to the application entirely.
 
@@ -183,6 +185,8 @@ Resolved an issue where Backup Job details were not displayed in the Replicate m
 **Backup Configuration Screen Freezing on Object Deselection**
 
 * Fixed a UI freeze that occurred when selecting/deselecting Data or Metadata objects during Backup and Replication configuration setup.
+
+***
 
 ## AutoRABIT Vault Release Notes 26.1.4
 
@@ -250,7 +254,7 @@ This fix ensures:
 
 **Release Date: 08 April 2026**
 
-AutoRABIT **Vault On‑prem search & compare failure**
+**AutoRABIT Vault On‑prem search & compare failure**
 
 * Resolved failures in AutoRABIT Vault On‑prem search and compare jobs to ensure jobs complete successfully.
 
@@ -310,7 +314,7 @@ Fixed an issue where data type mismatches between source data and schema caused 
 
 * Fixed synthetic backup logic so generated record counts now align with actual data volumes.
 
-AutoRABIT **Vault on‑prem checklist**
+**AutoRABIT Vault on‑prem checklist**
 
 * Introduced/updated an on‑prem validation checklist for AutoRABIT Vault deployments to standardize setup and verification.
 

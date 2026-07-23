@@ -1,14 +1,14 @@
-# Vault Release Notes 25.0
+# AutoRABIT Vault Release Notes 25.0
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Vault updates!" %}
 
-## Vault Release Notes 25.3.2 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.3.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 25 February 2026**
 
 **Replication Performance Enhancement**
 
-Enhanced the Vault Replication process to improve performance and optimize overall replication efficiency.
+Enhanced the AutoRABIT Vault Replication process to improve performance and optimize overall replication efficiency.
 
 **Masking – Special Characters at the Beginning of Masked Email Addresses**
 
@@ -28,7 +28,9 @@ Enhanced job-level logs for Live Data Masking to provide clear visibility into e
 
 Resolved an issue where updates to a Masking Configuration impacted previously executed jobs created from that configuration. Jobs now retain their original configuration identifiers at the time of execution, ensuring that subsequent configuration changes do not affect historical job runs.
 
-## Vault Release Notes 25.3.1 <a href="#heading-title-text" id="heading-title-text"></a>
+***
+
+## AutoRABIT Vault Release Notes 25.3.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 21 January 2026**
 
@@ -50,7 +52,7 @@ Improved the update process for **Attachment** and **ContentVersion** records by
 
 ***
 
-## Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.3.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 7 January 2026**
 
@@ -68,7 +70,7 @@ Applied security enhancements to address the latest identified vulnerabilities.
 
 #### **Improved Large Dataset Export Handling** <a href="#improved-large-dataset-export-handling" id="improved-large-dataset-export-handling"></a>
 
-Vault now supports exporting up to **1 million records per Excel file**, automatically splitting large datasets into multiple files and packaging them into a single ZIP. This ensures exported data remains accessible and avoids Excel size limitations.
+AutoRABIT Vault now supports exporting up to **1 million records per Excel file**, automatically splitting large datasets into multiple files and packaging them into a single ZIP. This ensures exported data remains accessible and avoids Excel size limitations.
 
 #### Improvements to Masking Job Handling and Automation Controls <a href="#improvements-to-masking-job-handling-and-automation-controls" id="improvements-to-masking-job-handling-and-automation-controls"></a>
 
@@ -81,7 +83,7 @@ Resolved an issue where SSO metadata file uploads were failing. The upload proce
 
 ***
 
-## Vault Release Notes 25.2.3 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.2.3 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 26 November 2025**
 
@@ -103,23 +105,24 @@ Enhanced the support for the **PermissionSetAssignment** object during restore. 
 
 ***
 
-## Vault Release Notes 25.2.2 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.2.2 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 19 November 2025**
 
 #### **Field-Level Comparison Filtering** <a href="#field-level-comparison-filtering" id="field-level-comparison-filtering"></a>
 
 A new enhancement allows users to filter comparison results to include only specific fields during a Compare operation. This improvement helps isolate changes in critical fields while ignoring updates to non-essential system-generated fields, such as _Last\_Login_ timestamps in the User object.\
+\
 This enhancement provides faster, more accurate comparisons by reducing false positives and improving focus on relevant data changes.
 
 #### **Azure Key Vault Integration for Secure Credential Handling** <a href="#azure-key-vault-integration-for-secure-credential-handling" id="azure-key-vault-integration-for-secure-credential-handling"></a>
 
-Vault now integrates with Azure Key Vault to securely store and manage sensitive credentials such as Salesforce tokens, database passwords, and encryption keys.\
+AutoRABIT Vault now integrates with Azure Key Vault to securely store and manage sensitive credentials such as Salesforce tokens, database passwords, and encryption keys.\
 Secrets are no longer stored in application configs and can now be centrally controlled, rotated, and audited, ensuring stronger security and compliance.
 
 #### **Salesforce API Upgrade for Upcoming Platform Releases** <a href="#salesforce-api-upgrade-for-upcoming-platform-releases" id="salesforce-api-upgrade-for-upcoming-platform-releases"></a>
 
-Vault has been upgraded to use the latest Salesforce API versions (v63,v64 & v65) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
+AutoRABIT Vault has been upgraded to use the latest Salesforce API versions (v63,v64 & v65) to stay aligned with upcoming Spring ’25, Summer ’25, and Winter ’26 releases. All core integrations are now updated to ensure compatibility, leverage new platform capabilities, and avoid feature disruptions.
 
 #### **Salesforce SOAP Login Deprecation Notice**
 
@@ -135,7 +138,7 @@ Applied security enhancements to address the latest identified vulnerabilities.
 
 ***
 
-## Vault Release Notes 25.2.1 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.2.1 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 29 October 2025**
 
@@ -157,7 +160,7 @@ Fixed an issue causing intermittent backup job failures. Code enhancements now e
 
 ***
 
-## Vault Release Notes 25.2.0 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.2.0 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 8 October 2025**
 
@@ -169,7 +172,7 @@ You can now retry only the records that failed during processing, without reproc
 
 #### **License and Usage Tracking**
 
-Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.
+AutoRABIT Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.
 
 <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2.png" alt=""><figcaption></figcaption></figure>
 
@@ -189,7 +192,7 @@ Upgraded underlying platform components to enhance security, improve performance
 
 ***
 
-## Vault Release Notes 25.1.9 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.1.9 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 24 September 2025**
 
@@ -203,7 +206,7 @@ Additional information has been added to ensure that email alerts include releva
 
 ***
 
-## Vault Release Notes 25.1.8 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.1.8 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 3 September 2025**
 
@@ -229,7 +232,7 @@ Improved memory management during archive job execution. Archive jobs now run re
 
 ***
 
-## Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
+## AutoRABIT Vault Release Notes 25.1.7 <a href="#heading-title-text" id="heading-title-text"></a>
 
 **Release Date: 20 August 2025**
 
@@ -251,7 +254,7 @@ Added additional logging to replication jobs, enabling more precise identificati
 
 ***
 
-## Vault Release Notes 25.1.6
+## AutoRABIT Vault Release Notes 25.1.6
 
 **Release Date: 13 August 2025**
 
@@ -259,9 +262,9 @@ Added additional logging to replication jobs, enabling more precise identificati
 
 The column headers in the **Archive Summary** screen have been updated to improve readability and ensure better understanding of the data presented.
 
-#### **Vault Connect – Backup as a Source** <a href="#vault-connect-backup-as-a-source" id="vault-connect-backup-as-a-source"></a>
+#### AutoRABIT **Vault Connect – Backup as a Source** <a href="#vault-connect-backup-as-a-source" id="vault-connect-backup-as-a-source"></a>
 
-1.  A new capability has been added to **Vault Connect**, enabling backups to be selected as a source in the configuration.
+1.  A new capability has been added to AutoRABIT **Vault Connect**, enabling backups to be selected as a source in the configuration.
 
     <figure><img src="../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
 2.  This enhancement empowers customers to strengthen their business continuity strategies by seamlessly leveraging backup data during critical scenarios.
@@ -281,7 +284,7 @@ Improvements have been made to the **event logging mechanism**, including:
 * Consolidation of daily logs
 * Enhanced tracking of activities performed by anonymous users for improved auditability and compliance.
 
-#### **Vault Compare Performance Optimization** <a href="#vault-compare-performance-optimization" id="vault-compare-performance-optimization"></a>
+#### AutoRABIT **Vault Compare Performance Optimization** <a href="#vault-compare-performance-optimization" id="vault-compare-performance-optimization"></a>
 
 The **Vault Compare** operation has been optimized to provide a faster and more seamless user experience during large-scale data comparisons.
 
@@ -291,7 +294,7 @@ Enhancements have been made to the logic that fetches **Salesforce Org details**
 
 ***
 
-## Vault Release Notes 25.1.5
+## AutoRABIT Vault Release Notes 25.1.5
 
 **Release Notes: 21 July 2025**
 
@@ -315,7 +318,7 @@ This enhancement provides a more efficient and secure way to manage data privacy
 
 #### **Editable Org Configuration**
 
-A new provision allows seamless editing of Salesforce org configurations within Vault. This feature simplifies compliance-driven credential updates by enabling users to re-authenticate Salesforce orgs with updated login credentials directly from the Vault interface.
+A new provision allows seamless editing of Salesforce org configurations within AutoRABIT Vault. This feature simplifies compliance-driven credential updates by enabling users to re-authenticate Salesforce orgs with updated login credentials directly from the AutoRABIT Vault interface.
 
 #### **Selected Object Processing**
 
@@ -323,7 +326,7 @@ The fix ensures that only the explicitly selected child objects are processed du
 
 #### **Consistent Verbiage Across UI**
 
-Column labels and field names across the application interface have been standardized. This update ensures improved clarity and a more consistent user experience throughout Vault.
+Column labels and field names across the application interface have been standardized. This update ensures improved clarity and a more consistent user experience throughout AutoRABIT Vault.
 
 #### **Email Message Field Handling**
 
@@ -331,7 +334,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault Release Notes 25.1.4
+## AutoRABIT Vault Release Notes 25.1.4
 
 **Release Notes:** **16 July 2025**
 
@@ -342,11 +345,11 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
     A new option has been introduced to **exclude records in the Recycle Bin** from processing. This helps streamline operations and focus only on active data.
 * **GDPR Compliance for Deleted Records**
-* A fix has been implemented to ensure that **opted-out deleted records** are no longer visible in Vault, aligning with GDPR compliance and privacy expectations.
+* A fix has been implemented to ensure that **opted-out deleted records** are no longer visible in AutoRABIT Vault, aligning with GDPR compliance and privacy expectations.
 
 ***
 
-## Vault Release Notes 25.1.3
+## AutoRABIT Vault Release Notes 25.1.3
 
 **Release Notes: 9 July 2025**
 
@@ -368,7 +371,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 *   **New Archive Enhancement: Disable Automation Rules**
 
-    Vault now allows users to **disable Salesforce automation rules during the archiving process**. This improvement helps ensure a smoother and more reliable archival experience by preventing interference from active automation rules. As a result, users can expect **fewer errors** and **increased stability** during archival operations.
+    AutoRABIT Vault now allows users to **disable Salesforce automation rules during the archiving process**. This improvement helps ensure a smoother and more reliable archival experience by preventing interference from active automation rules. As a result, users can expect **fewer errors** and **increased stability** during archival operations.
 *   **Selective Record Download for Backups and Archives**
 
     Users can now **filter and download specific records** from a backup or archive, enabling targeted data access without the need to browse through the entire dataset. The downloaded files are easily compatible with common tools like **Excel**, allowing for **quick and convenient analysis** of only the required information.
@@ -384,7 +387,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault Release Notes 25.1.1
+## AutoRABIT Vault Release Notes 25.1.1
 
 **Release Date: 18 June 2025**
 
@@ -396,11 +399,11 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault Release Notes 25.1
+## AutoRABIT Vault Release Notes 25.1
 
 **Release Date: 04 June 2025**
 
-* **Vault Compare Enhancements**: Enhanced the user experience with easier navigation to specific fields and more intuitive change review capabilities.&#x20;
+* **AutoRABIT Vault Compare Enhancements**: Enhanced the user experience with easier navigation to specific fields and more intuitive change review capabilities.&#x20;
 * **Enhanced Scheduler Architecture**: Improved tracking and queuing of jobs for more efficient and reliable execution.
 * **Additional Validations During Cloning of Replicate Jobs**: Introduced environment validation checks to alert users of any missing metadata before initiating the cloning process of replicate jobs.
 * **Synthetic Backup**: Full backups now utilize delta changes from the previous successful full backup, significantly reducing backup duration.
@@ -410,7 +413,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 * **Replicate & Restore Performance**: Optimized the data loading process, significantly improving replicate and restore performance.
 * **Restore Logic Update:** Refined logic to more effectively prevent duplicate record creation, ensuring more reliable and consistent restore operations.
 * **Salesforce Winter ’25 Upgrade:** Upgraded the Salesforce integration to support the latest Winter ’25 API version.
-* **S3 Policy Management**: Improved S3 configuration checks to surface errors early during Vault account setup.
+* **S3 Policy Management**: Improved S3 configuration checks to surface errors early during AutoRABIT Vault account setup.
 * **Tomcat Upgrade**: Upgraded Tomcat version 10 to 11 for improved security, performance, and standards compliance.
 * **Vault Data Masking**: Improved pattern recognition in specific data types to ensure accurate masking while preserving the original format required for valid data representation.
 * **Restore UI Label Updates**: Updated restore flow labels:

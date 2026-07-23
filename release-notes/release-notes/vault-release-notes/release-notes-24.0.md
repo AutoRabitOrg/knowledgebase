@@ -325,7 +325,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 8. **Thread Writing Conflict Resolution:** Previously, multiple threads were writing into a single file, causing some threads to move into a wait state. A fix has been implemented so that each thread writes to its own file, with all files being merged at the end.
 9. **Admin Session Visibility Update:** Admin users were unable to see other users' sessions. New updates have been made to address this issue.
 
-### Vault v 24.1.9
+### AutoRABIT Vault v 24.1.9
 
 **23 Mar 2024**
 
@@ -337,7 +337,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 6. **Enhanced Error/Notification Logging:** The username and refresh ID have been added to the system to ensure that users receive precise error messages and notifications.
 7. **Customer ID Replacement with Bucket Name:** The customer ID has been replaced with the bucket name to ensure that the correct folder is created during the process.
 
-### Vault v 24.1.8
+### AutoRABIT Vault v 24.1.8
 
 **13 Mar 2024**
 
@@ -350,13 +350,13 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 7. **Connect Config Deletion:** A fix has been provided to ensure that the connect configuration is properly deleted when required.
 8. **Delete Flow Corrections:** Necessary corrections have been made to ensure that the delete flow operates correctly and as intended.
 
-### Vault 24.1.7
+### AutoRABIT Vault 24.1.7
 
 **28 Feb 2024**
 
 AWS KMS support has been added for encryption and decryption to the ingestion service.
 
-### Vault 24.1.6
+### AutoRABIT Vault 24.1.6
 
 **21 Feb 2024**
 
@@ -364,10 +364,10 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 2. **Duplicate Parent IDs Restored:** A fix has been implemented to prevent the same parent IDs from being restored multiple times.
 3. **Missing Records Information in Backup/Archive:** When users select more 'Excluded Fields' for backups, the records information was not being displayed. This issue has been resolved.
 4. **Archive Job Failures with Filters:** Archive jobs were failing when filters were applied. A fix has been provided to resolve this issue.
-5. **Encrypted Vault Connect Job Logs:** The downloaded file for Vault Connect job logs was displaying in encrypted mode. This issue has been corrected.
-6. **Vault Connect UI Data Alignment:** The data alignment on the Vault Connect UI has been corrected as part of the recent fix deployment.
+5. **Encrypted AutoRABIT Vault Connect Job Logs:** The downloaded file for AutoRABIT Vault Connect job logs was displaying in encrypted mode. This issue has been corrected.
+6. **AutoRABIT Vault Connect UI Data Alignment:** The data alignment on the AutoRABIT Vault Connect UI has been corrected as part of the recent fix deployment.
 
-### Vault v24.1.5
+### AutoRABIT Vault v24.1.5
 
 **14 Feb 2024**
 
@@ -376,18 +376,18 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 3. **Batch Processing Failure Count:** For data processed in batches, the failure count was previously calculated on a batch basis rather than as a consolidated total. This has been reviewed to ensure accurate reporting.
 4. **Data Sorting Issue:** Data in Salesforce is stored in ascending order, but retrieving it in descending order was taking longer than expected, causing job delays. This issue has been identified as a cause of jobs getting stuck, and steps are being taken to address it.
 
-### Vault v24.1.4
+### AutoRABIT Vault v24.1.4
 
 **07 Feb 2024**
 
 1. **Attachment and Content Version Processing:** Previously, selecting both the attachment and content version led to errors. With the new fix, these records will now be processed without issues.
 2. **Org Registration Error Messaging**: Users were encountering vague errors due to insufficient permissions during Org registration. The error message has been updated to provide clearer information.
-3. **nCino Feature Visibility Issue**: Users couldn't view nCino features in Vault because property files were being read from the wrong location. This has been corrected.
+3. **nCino Feature Visibility Issue**: Users couldn't view nCino features in AutoRABIT Vault because property files were being read from the wrong location. This has been corrected.
 4. **Email Trigger Update**: A fix has been implemented to allow users to change the recipient of triggered emails.
 5. **Log Output Simplification**: Logs have been streamlined to print on a single line instead of across three lines.
 6. **Null Pointer Exception Handling:** A fix has been provided to handle null pointer exceptions, ensuring successful records are processed without failure.
 
-### Vault v24.1.3
+### AutoRABIT Vault v24.1.3
 
 **31 Jan 2024**
 
@@ -398,7 +398,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 5. **Parent-Child Mapping Bug Fix:** A bug related to the `isDisableParentChildMapping` flag, which was disrupting the flow, has been addressed by introducing a new flag, `disableParentChildMappingForCommonObjects`.
 6. **Restore and Replicate Bug Fix:** A fix has been rolled out to resolve issues causing restore and replicate failures.
 
-### Vault v24.1.2
+### AutoRABIT Vault v24.1.2
 
 **24 Jan 2024**
 
@@ -410,17 +410,17 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 
 ***
 
-## **Vault 24.1 Release Notes** <a href="#whats-new" id="whats-new"></a>
+## AutoRABIT **Vault 24.1 Release Notes** <a href="#whats-new" id="whats-new"></a>
 
 **Anticipated Release Date: 17 April 2024**
 
-These release notes contain important information about **Vault® 24.1**.
+These release notes contain important information about AutoRABIT **Vault® 24.1**.
 
 This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of Vault, check the release notes for any interim versions or details about additional improvements in this release over your current release.
 
 **What’s new?**
 
-**Exciting New Security Enhancements Await in Vault's Latest Release!**
+**Exciting New Security Enhancements Await in AutoRABIT Vault's Latest Release!**
 
 Security is paramount, and we're thrilled to introduce a range of robust features designed to fortify your data protection strategies. Get ready to bolster your defenses and streamline your workflows with these groundbreaking additions:
 
@@ -431,10 +431,10 @@ Take control of your data security like never before. Now, you can define maskin
 Empower your enterprise security with enhanced user activity and application event logging. Logs are now provided in CEF format, enabling seamless integration with tools like Splunk for comprehensive analysis and continuous monitoring.
 
 **3. Advanced Encryption: AWS KMS Support for Vault Connect**\
-Securely access archived data from AWS KMS encrypted storage using your own key with Vault Connect. Enjoy peace of mind knowing your data is protected while viewing it directly in Salesforce through external objects.
+Securely access archived data from AWS KMS-encrypted storage using your own key with AutoRABIT Vault Connect. Enjoy peace of mind knowing your data is protected while viewing it directly in Salesforce through external objects.
 
 **4. Supporting Vault with Azure Private Link**\
-Experience seamless and secure access to BLOB storage from Azure VMs with support for Azure private link in the Vault application, eliminating the need for access keys.
+Experience seamless and secure access to BLOB storage from Azure VMs with support for Azure private link in the AutoRABIT Vault application, eliminating the need for access keys.
 
 Now, let's dive into additional enhancements aimed at optimizing your data management processes:
 
@@ -451,7 +451,7 @@ Bring clarity and organization to your masking rules by providing them with desc
 Experience the power of near real-time data replication with support for Salesforce Live Data sources. Seamlessly seed your org with actual data without relying solely on backups.
 
 **9. Insightful Analytics: Drawing Metrics on Archived Data**\
-Unlock valuable insights from your archived data with built-in reporting capabilities within the Vault application. Now, you can analyze metrics on up to 6 months' worth of archived data effortlessly.
+Unlock valuable insights from your archived data with built-in reporting capabilities within the AutoRABIT Vault application. Now, you can analyze metrics on up to 6 months' worth of archived data effortlessly.
 
 **10. Simplified Data Management: Mapping Restricted Picklists & Record Types**\
 Streamline your data management processes with automated mapping of restricted picklist values and record types between source and destination Orgs, eliminating the need for manual intervention.
@@ -462,4 +462,4 @@ Ensure data integrity throughout the restoration process with the ability to sea
 **12. Improved Connectivity: Vault Connect - OData Connector V4.01 Support**\
 Stay connected effortlessly with support for the OData connector V4.01, ensuring seamless connectivity and data exchange while bypassing callout limits.
 
-Upgrade now and fortify your data defenses with Vault's latest release!
+Upgrade now and fortify your data defenses with AutoRABIT Vault's latest release!

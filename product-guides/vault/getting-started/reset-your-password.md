@@ -4,7 +4,7 @@
 
 In general, you’ll only need to reset your password if you’ve forgotten it, but there are some cases where resetting your password can help protect the security of your account. We recommend resetting your password in these cases:
 
-1. You notice something suspicious in your [**Vault™**](https://www.autorabit.com/products/vault-data-backup-recovery/) **account.**
+1. You notice something suspicious in your [**AutoRABIT Vault™**](https://www.autorabit.com/products/vault-data-backup-recovery/) **account.**
 2. You suspect that someone you don't trust may have your password.
 3. We ask you to change your password.
 

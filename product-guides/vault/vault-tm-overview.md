@@ -1,8 +1,8 @@
-# Vault™ Overview
+# AutoRABIT Vault™ Overview
 
-AutoRABIT, the leader in Continuous Integration and Continuous Deployment (CI/CD), developed **Vault™** for the Salesforce environment. Vault™ delivers automated, unlimited backup and recovery of Salesforce data using sophisticated compare tools, easy sandbox seeding, and comprehensive data management features to meet your IT security, risk, and compliance needs.
+AutoRABIT, the leader in Continuous Integration and Continuous Deployment (CI/CD), developed **AutoRABIT** **Vault™** for the Salesforce environment. AutoRABIT Vault™ delivers automated, unlimited backup and recovery of Salesforce data using sophisticated compare tools, easy sandbox seeding, and comprehensive data management features to meet your IT security, risk, and compliance needs.
 
-Vault™ streamlines and automates Salesforce data, simplifies data backup challenges, and offers disaster recovery and endpoint data protection. Vault™ secures Salesforce environments from accidental data loss and has a rich feature set to leverage the power of backup data.
+AutoRABIT Vault™ streamlines and automates Salesforce data, simplifies data backup challenges, and offers disaster recovery and endpoint data protection. AutoRABIT Vault™ secures Salesforce environments from accidental data loss and has a rich feature set to leverage the power of backup data.
 
 ### Feature List <a href="#feature-list" id="feature-list"></a>
 

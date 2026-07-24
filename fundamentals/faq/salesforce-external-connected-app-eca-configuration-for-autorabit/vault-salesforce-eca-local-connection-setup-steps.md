@@ -1,7 +1,7 @@
 ---
 description: >-
   This is a step by step on how to implement the Local ECA solution to establish
-  a new connection with Guard.
+  a new connection with AutoRABIT Vault.
 layout:
   width: default
   title:
@@ -22,7 +22,7 @@ layout:
     visible: true
 ---
 
-# Vault: Salesforce ECA (Local) Connection Setup Steps
+# AutoRABIT Vault: Salesforce ECA (Local) Connection Setup Steps
 
 ### Pre-req: get your Callback URL (redirect URI) <a href="#id-1-pre-req-get-your-callback-url-redirect-uri" id="id-1-pre-req-get-your-callback-url-redirect-uri"></a>
 
@@ -126,7 +126,7 @@ When you click the button for Consumer Key and Secret a code will be sent to the
 
 After getting the code and verify in Salesforce the Consumer Key (CliendID) and Consumer Secret (Client Secret) will be displayed.
 
-**IMPORTANT: STORE THIS VALUES IN A SAFE PLACE WHERE CAN BE EASILY USED FOR FUTURE REFERECES.**
+**IMPORTANT: STORE THIS VALUE IN A SAFE PLACE WHERE IT CAN BE EASILY USED FOR FUTURE REFERENCE.**
 
 <figure><img src="../../../.gitbook/assets/d6f4ece7-0cd4-4ae3-8c8f-bb1322d472dd.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -137,13 +137,13 @@ After getting the code and verify in Salesforce the Consumer Key (CliendID) and 
 After creating the ECA, open the **Policies** tab and adjust as needed (exact options vary by org/security posture), commonly:
 
 * **Permitted Users**: often set to **Admin approved users are pre-authorized** for controlled rollouts.
-* Add the required **profiles/permission sets** (or approved users) for who is allowed to authorize.
+* Add the required **profiles/permission sets** (or approved users) for whom is allowed to authorize.
 {% endstep %}
 
 {% step %}
 ### What you’ll use in AutoRABIT <a href="#arm-8-whatyoulluseinautorabit" id="arm-8-whatyoulluseinautorabit"></a>
 
-Once created, the set of values you’ll reference in your Vault configuration are:
+Once created, the set of values you’ll reference in your AutoRABIT Vault configuration are:
 
 * **Client ID**
 * **Client Secret**
@@ -158,11 +158,11 @@ In the menu Click Salesforce Org Integration
 
 <figure><img src="../../../.gitbook/assets/8245333d-b8d7-49db-a774-c1c712a8cb2e.png" alt=""><figcaption></figcaption></figure>
 
-Create the connections filling the required information.
+Create the connections, filling in the required information.
 
 <figure><img src="../../../.gitbook/assets/6d6574e8-2412-4b5b-bd33-edd0b762d4ef.png" alt=""><figcaption></figcaption></figure>
 
-Enter the Client Id and Client Secret that you received from Salesforce
+Enter the Client ID and Client Secret that you received from Salesforce.
 
 <figure><img src="../../../.gitbook/assets/4afab8d3-c577-4432-951e-2f02e69ffb42.png" alt=""><figcaption></figcaption></figure>
 
@@ -170,15 +170,15 @@ Once the continue button is clicked, a Salesforce login is shown for the user we
 
 <figure><img src="../../../.gitbook/assets/2ee0edd6-fd45-4ca0-9114-356995ca5351.png" alt=""><figcaption></figcaption></figure>
 
-A message from Salesforce will show to require granted permissions for the user to use the scopes defined in the ECA, Click Allow
+A message from Salesforce will show to require granted permissions for the user to use the scopes defined in the ECA, Click Allow.
 
 <figure><img src="../../../.gitbook/assets/e6cc1945-e43c-4c68-802b-873dacaa0b2f.png" alt=""><figcaption></figcaption></figure>
 
-Then you will be returned and the connection will be saved.
+Then you will be returned, and the connection will be saved.
 
 <figure><img src="../../../.gitbook/assets/841c3e49-3380-470a-b4f6-c19ee797a362.png" alt=""><figcaption></figcaption></figure>
 
-Click finish and the success message will appear
+Click finish, and the success message will appear.
 
 <figure><img src="../../../.gitbook/assets/5caba430-fb77-494d-a717-1958d333d168.png" alt=""><figcaption></figcaption></figure>
 

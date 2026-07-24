@@ -12,7 +12,7 @@
     * [ARM: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-external-connected-app-eca-configuration-for-autorabit/arm-salesforce-eca-local-connection-setup-steps.md)
     * [CodeScan: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-external-connected-app-eca-configuration-for-autorabit/codescan-salesforce-eca-local-connection-setup-steps.md)
     * [Guard: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-external-connected-app-eca-configuration-for-autorabit/guard-salesforce-eca-local-connection-setup-steps.md)
-    * [Vault: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-external-connected-app-eca-configuration-for-autorabit/vault-salesforce-eca-local-connection-setup-steps.md)
+    * [AutoRABIT Vault: Salesforce ECA (Local) Connection Setup Steps](fundamentals/faq/salesforce-external-connected-app-eca-configuration-for-autorabit/vault-salesforce-eca-local-connection-setup-steps.md)
   * [ARM FAQs](fundamentals/faq/arm-faqs.md)
   * [CodeScan FAQs](fundamentals/faq/codescan-faqs.md)
   * [Vault FAQs](fundamentals/faq/vault-faqs.md)

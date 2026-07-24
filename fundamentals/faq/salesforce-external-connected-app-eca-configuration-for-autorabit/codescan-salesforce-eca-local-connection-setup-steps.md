@@ -123,7 +123,7 @@ When you click the button for Consumer Key and Secret a code will be sent to the
 
 After getting the code and verify in Salesforce the Consumer Key (CliendID) and Consumer Secret (Client Secret) will be displayed.
 
-**IMPORTANT: STORE THIS VALUES IN A SAFE PLACE WHERE CAN BE EASILY USED FOR FUTURE REFERECES.**
+**IMPORTANT: STORE THIS VALUE IN A SAFE PLACE WHERE IT CAN BE EASILY USED FOR FUTURE REFERENCE.**
 
 <figure><img src="../../../.gitbook/assets/d6f4ece7-0cd4-4ae3-8c8f-bb1322d472dd.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}

@@ -129,7 +129,7 @@ When you click the button for Consumer Key and Secret a code will be sent to the
 
 After getting the code and verify in Salesforce the Consumer Key (CliendID) and Consumer Secret (Client Secret) will be displayed.
 
-**IMPORTANT: STORE THIS VALUES IN A SAFE PLACE WHERE CAN BE EASILY USED FOR FUTURE REFERECES.**
+**IMPORTANT: STORE THIS VALUE IN A SAFE PLACE WHERE IT CAN BE EASILY USED FOR FUTURE REFERENCE.**
 
 <figure><img src="../../../.gitbook/assets/d6f4ece7-0cd4-4ae3-8c8f-bb1322d472dd.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -155,7 +155,7 @@ Also, the internal direction is to be clear that **one ECA per customer org** ca
 
 ***
 
-After the configuration in salesforce is complete, and you have obtained the ClientID and Client Secret, we can go to ARM to create the connection
+After the configuration in Salesforce is complete, and you have obtained the ClientID and Client Secret, we can go to ARM to create the connection
 
 In the menu Click in Salesforce org and click in register Salesforce org
 
@@ -167,7 +167,7 @@ Create the connections filling the required information obtained from Salesforce
 
 Important Note: After creating the ECA in Salesforce, there may be a replication delay on the Salesforce side. If you encounter the error error=invalid\_client\_id\&error\_description=client%20identifier%20invalid while attempting to connect or register the org, please wait 30 minutes, and try again to allow the Salesforce configuration to sync completely.
 
-Once the Validate and save button is clicked a salesforce login is shown to login with the user we intend to use for the Connection.
+Once the Validate and save button is clicked, a Salesforce login is shown to log in with the user we intend to use for the Connection.
 
 <figure><img src="../../../.gitbook/assets/6de79ea8-99c8-483f-909f-9f8059097022.png" alt=""><figcaption></figcaption></figure>
 

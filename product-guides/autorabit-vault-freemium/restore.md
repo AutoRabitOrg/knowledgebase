@@ -1,6 +1,6 @@
 # Restore
 
-## AutoRABIT Vault **Restore Job User Guide**
+## AutoRABIT Vault Restore Job User Guide
 
 Restore data from a selected backup using EZ Restore or Selective Restore
 
@@ -86,7 +86,7 @@ The Selected Fields option controls which fields are restored for the selected o
 
 ![](<../../.gitbook/assets/Unknown image (15)>)
 
-The field mapping dialog lists source fields and corresponding mapping fields. Field selections can be searched, reset, adjusted, and applied. Required identity fields remain protected where applicable, help make dependent data available.
+The field mapping dialog lists source fields and corresponding mapping fields. Field selections can be searched, reset, adjusted, and applied. Required identity fields remain protected where applicable, helping make dependent data available.
 
 ![](<../../.gitbook/assets/Unknown image (16)>)
 

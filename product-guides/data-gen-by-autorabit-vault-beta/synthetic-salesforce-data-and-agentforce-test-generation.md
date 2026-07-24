@@ -7,7 +7,7 @@ DataGen is AutoRABIT's platform for generating realistic, schema-aware synthetic
 This guide walks through every screen a regular DataGen user works with day to day: connecting a Salesforce org, analyzing an Agentforce agent, generating synthetic records (Record Factory), generating test cases (Test Case Factory), and managing your account. A separate section at the end covers screens that only Administrators and Super Admins can see.
 
 {% hint style="info" %}
-A note on scope:\*\*Some features described in the product's menus are still under development and are not yet usable — these are called out explicitly wherever they appear so you don't spend time looking for a button that isn't wired up yet.
+A note on scope: Some features described in the product's menus are still under development and are not yet usable — these are called out explicitly wherever they appear, so you don't spend time looking for a button that isn't wired up yet.
 {% endhint %}
 
 ## 2. Getting Started — The Dashboard
@@ -69,7 +69,7 @@ Agent Analyzer reads an existing Agentforce agent directly from a connected Sale
 
 ## 5. Record Factory (Synthetic Data Generation)
 
-Record Factory is DataGen's core synthetic-data engine. It generates realistic, schema-aware Salesforce records — with correct parent-child relationships — that you can use to populate sandboxes or drive Agentforce testing, without touching real customer data. You pick a Salesforce org and one or more objects, define how many records you need (including per-parent counts for child objects, e.g. “5 Contacts per Account”), and choose how each field's value should be generated.
+Record Factory is DataGen's core synthetic-data engine. It generates realistic, schema-aware Salesforce records — with correct parent-child relationships — that you can use to populate sandboxes or drive Agentforce testing, without touching real customer data. You pick a Salesforce org and one or more objects, define how many records you need (including per-parent counts for child objects, e.g., “5 Contacts per Account”), and choose how each field's value should be generated.
 
 ![](<../../.gitbook/assets/Unknown image (429)>)
 
@@ -93,7 +93,7 @@ Agent-Aware: you pick a previously saved Agent Analyzer analysis; DataGen's AI p
 
 * From Record Factory home, click “Generate Dataset” → choose “Schema-First” (or “Agent-Aware” and pick a saved analysis).
 * Pick the Salesforce org, then search and add an object — it becomes a root of the hierarchy.
-* Set the number of records for that object; optionally click “Add Children” to attach related child objects and set records-per-parent.
+* Set the number of records for that object; optionally, click “Add Children” to attach related child objects and set records-per-parent.
 * Click “Fields” on any object to review or override each field's generation strategy (Faker vs. AI) and locale — grouped fields (like a compound Address) share one strategy.
 * Click “Generate” — name the dataset, review any active Salesforce validation rules that will be respected, and confirm.
 * Track progress on the run's detail page (per-object progress bars), then download each object's data as CSV, or push the generated records into a Salesforce org.
@@ -125,7 +125,7 @@ Coming soon: A second mode, “Prompt-Based” (describe your agent/tests in pla
 
 ## 7. Account & Settings
 
-Settings is your personal account-management screen. You can update your display name, change your password, and toggle email-based multi-factor authentication (MFA) at login (always on for admin accounts). It also includes an “AI Usage” panel showing your workspace's monthly AI-token consumption for Record Factory's AI-based field generation, with a progress bar toward the admin-configured monthly cap — once that cap is reached, AI generation automatically falls back to Faker rather than failing.
+Settings is your personal account management screen. You can update your display name, change your password, and toggle email-based multi-factor authentication (MFA) at login (always on for admin accounts). It also includes an “AI Usage” panel showing your workspace's monthly AI-token consumption for Record Factory's AI-based field generation, with a progress bar toward the admin-configured monthly cap — once that cap is reached, AI generation automatically falls back to Faker rather than failing.
 
 ![](<../../.gitbook/assets/Unknown image (431)>)
 

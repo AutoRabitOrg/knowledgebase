@@ -1,4 +1,4 @@
-# Source ORG Registration
+# Source Org Registration
 
 ## Purpose
 
@@ -8,13 +8,13 @@ After the source org is registered successfully, AutoRABIT Vault displays the co
 
 ## Workflow Overview
 
-| **Area**                                 | **Behavior**                                                                                        |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **Environment Details**                  | Captures the source org name, Salesforce username, org type, login URL, and Salesforce API Version. |
-| **Salesforce Admin Setup**               | Provides the Salesforce-side setup checklist for creating and configuring the External Client App.  |
-| **Enter Credentials**                    | Stores the Client ID and Client Secret generated in Salesforce for secure authorization.            |
-| **Authorize Vault to Access Salesforce** | Redirects to Salesforce, requests access, and returns to AutoRABIT Vault after access is approved.  |
-| **Validation & Confirmation**            | Tests the API connection and completes the registration when validation succeeds.                   |
+| **Area**                                               | **Behavior**                                                                                        |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| **Environment Details**                                | Captures the source org name, Salesforce username, org type, login URL, and Salesforce API Version. |
+| **Salesforce Admin Setup**                             | Provides the Salesforce-side setup checklist for creating and configuring the External Client App.  |
+| **Enter Credentials**                                  | Stores the Client ID and Client Secret generated in Salesforce for secure authorization.            |
+| **Authorize AutoRABIT** **Vault to Access Salesforce** | Redirects to Salesforce, requests access, and returns to AutoRABIT Vault after access is approved.  |
+| **Validation & Confirmation**                          | Tests the API connection and completes the registration when validation succeeds.                   |
 
 ## Start Source Org Registration
 

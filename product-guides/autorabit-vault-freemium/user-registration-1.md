@@ -14,7 +14,7 @@ This guide explains the Freemium registration workflow, including account sign-u
 The Freemium registration flow allows a new account to be requested and activated for a limited AutoRABIT Vault free trial. The workflow captures basic account details, requires agreement acknowledgement, verifies the registration using OTP, and sends an activation email with the trial access information.
 
 {% hint style="info" %}
-**Note:** Vault Free Trial access remains active for **14 days** from the subscription start date. After the trial period ends, account data is retained for an additional **7 days**. Once this retention period is complete, the account is permanently deleted, and no user data is retained after deletion.
+**Note:** AutoRABIT Vault Free Trial access remains active for **14 days** from the subscription start date. After the trial period ends, account data is retained for an additional **7 days**. Once this retention period is complete, the account is permanently deleted, and no user data is retained after deletion.
 {% endhint %}
 
 ## Registration Workflow Overview
@@ -43,7 +43,7 @@ Sign-in page and sign-up entry point
 
 The registration form captures the required account information. The form includes fields for the registrant name, account email, organization, and region or location. The selected region determines the free trial instance location used for the account.
 
-Required fields must be completed before the registration can continue. The regional selection is made from the available options in the Region/Location list.
+Required fields must be completed before registration can continue. The regional selection is made from the available options in the Region/Location list.
 
 Registration form and regional selection
 

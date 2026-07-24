@@ -1,4 +1,4 @@
-# Destination ORG
+# Destination Org
 
 ## Reviewing destination org connection status and org details from the AutoRABIT Vault Dashboard
 
@@ -10,9 +10,9 @@ The flow begins after the source org and destination org are registered and auth
 **Note:** The values displayed for the destination org depend on the connected Salesforce environment and remain specific to the selected org.
 {% endhint %}
 
-## Destination ORG Status on the Dashboard
+## Destination Org Status on the Dashboard
 
-The Dashboard shows both Source Org and Destination Org connection indicators near the page header. The Destination ORG indicator confirms that the destination Salesforce org is connected and ready for AutoRABIT Vault workflows. The Re-Authenticate action remains available beside the org indicator to refresh the connection when required.
+The Dashboard shows both Source Org and Destination Org connection indicators near the page header. The Destination Org indicator confirms that the destination Salesforce org is connected and ready for AutoRABIT Vault workflows. The Re-Authenticate action remains available beside the org indicator to refresh the connection when required.
 
 The rest of the Dashboard continues to show key AutoRABIT Vault areas, including Backup Configs, Backup Jobs, Restore Jobs, Replicate Jobs, storage usage, and Recommended Actions. These sections provide the next operational paths after org registration is complete.
 
@@ -20,7 +20,7 @@ The rest of the Dashboard continues to show key AutoRABIT Vault areas, including
 
 ## Review Destination Org Details
 
-Selecting the Destination ORG indicator opens the Destination org details dialog. The dialog displays the registered destination org information in a read-only view, including Org name, Username, Org ID, API version, Instance URL, Environment type, Platform, Org edition, Auth type, and Registered details.
+Selecting the Destination Org indicator opens the Destination org details dialog. The dialog displays the registered destination org information in a read-only view, including Org name, Username, Org ID, API version, Instance URL, Environment type, Platform, Org edition, Auth type, and Registered details.
 
 This information helps confirm that AutoRABIT Vault is connected to the intended destination org before backup, restore, replication, or related data operations proceed. The displayed values reflect the authenticated Salesforce destination org and are not edited from this dialog.
 

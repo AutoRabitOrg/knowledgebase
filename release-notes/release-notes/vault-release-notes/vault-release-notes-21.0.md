@@ -71,7 +71,7 @@ We’ve added support for some previously unsupported FinancialForce metadata ty
 
 ***
 
-## Vault 21.1 Release Notes <a href="#vault-211" id="vault-211"></a>
+## AutoRABIT Vault 21.1 Release Notes <a href="#vault-211" id="vault-211"></a>
 
 **Release: 25 March 2021**
 

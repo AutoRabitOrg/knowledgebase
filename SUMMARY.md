@@ -1218,7 +1218,7 @@
     * [Signing In](product-guides/vault/getting-started/sign-in.md)
     * [Resetting your Password](product-guides/vault/getting-started/reset-your-password.md)
     * [Managing Users and Roles](product-guides/vault/getting-started/managing-users-and-roles.md)
-    * [Setting Up Multifactor Authentication in Vault](product-guides/vault/getting-started/set-up-multifactor-authentication-in-vault.md)
+    * [Setting Up Multifactor Authentication in AutoRABIT Vault](product-guides/vault/getting-started/set-up-multifactor-authentication-in-vault.md)
     * [Managing User Sessions](product-guides/vault/getting-started/user-sessions.md)
     * [User Profile and Permission Access for Salesforce Users](product-guides/vault/getting-started/user-profile-and-permission-access-for-salesforce-users.md)
     * [Transferring Admin Ownership](product-guides/vault/getting-started/transfer-admin-ownership.md)

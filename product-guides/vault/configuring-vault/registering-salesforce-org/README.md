@@ -18,7 +18,7 @@ The setup process includes the following stages:
 2. **Creating an External Client App in Salesforce** to enable OAuth authentication.
 3. **Configuring required OAuth scopes and callback settings** within Salesforce.
 4. **Providing the Client ID and Client Secret in AutoRABIT Vault**.
-5. **Authorizing Vault to access Salesforce** through the OAuth authorization process.
+5. **Authorizing AutoRABIT Vault to access Salesforce** through the OAuth authorization process.
 6. **Validating the connection** and completing the org registration.
 
 Once the setup is complete, the Salesforce organization becomes available in AutoRABIT Vault and can be used for operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Data Masking**.
@@ -41,7 +41,7 @@ This action opens the **Source Org Integration** setup wizard.
 
 ### Configure Environment Details
 
-The **Source Org Integration** wizard begins with **Environment Details**.This step captures the basic configuration required to connect the Salesforce environment.
+The **Source Org Integration** wizard begins with **Environment Details**. This step captures the basic configuration required to connect the Salesforce environment.
 
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1) (1)>)
 
@@ -51,7 +51,7 @@ Configure the following fields:
   * **Salesforce** – Standard Salesforce organization.
   * **nCino** – nCino environment running on Salesforce.
 * **Salesforce API Version** – Select the API version used for integration.
-* **Org Title** – Enter a recognizable name for the organization.This name helps identify the org within AutoRABIT Vault.
+* **Org Title** – Enter a recognizable name for the organization. This name helps identify the org within AutoRABIT Vault.
 * **User Name** – Enter the Salesforce username used for authentication.
 
 ### Select Salesforce Environment Type
@@ -434,7 +434,7 @@ The first stage of the wizard provides guidance for creating an **External Clien
 
     ![](<../../../../.gitbook/assets/Unknown image (74)>)
 
-1. These values can be retrieved in Salesforce by navigating to:**Setup → App Manager → External Client App → Manage Consumer Details**.
+1. These values can be retrieved in Salesforce by navigating to: **Setup → App Manager → External Client App → Manage Consumer Details**.
 2. After entering the credentials, proceed to save and re-authenticate the connection.
 
 AutoRABIT Vault uses these credentials to securely establish OAuth authentication with the Salesforce org.

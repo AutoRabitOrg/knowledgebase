@@ -4,11 +4,11 @@
 
 You can configure alerts to notify you or your team members of events that require attention based on criteria configured in an alert. They are email-based alert notifications sent for records that have been added, modified, or deleted and meet the alert conditions. The notification includes a copy of the records. When you create a notification, you define who should receive it and under what conditions.
 
-### How to Set Up Alerts? <a href="#how-to-set-up-alerts" id="how-to-set-up-alerts"></a>
+### How to Set Up Alerts <a href="#how-to-set-up-alerts" id="how-to-set-up-alerts"></a>
 
 Follow these steps to generate an email alert when configured conditions are met for records in your Salesforce Org:
 
-1. Login to your AutoRABIT Vault account.
+1. Log in to your AutoRABIT Vault account.
 2. From the dashboard, click **Setup** and then click on your **Salesforce Org**.
 
 <figure><img src="../../../.gitbook/assets/image (141).png" alt="Setup page for selecting Salesforce Org in Vault" width="563"><figcaption><p>Selecting Salesforce Org from Setup</p></figcaption></figure>

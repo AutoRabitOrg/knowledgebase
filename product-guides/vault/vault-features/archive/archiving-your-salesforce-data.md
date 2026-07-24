@@ -109,7 +109,7 @@ Validate your query to see whether the criteria set is correct and view the numb
             <figure><img src="../../../../.gitbook/assets/image (2356).png" alt=""><figcaption></figcaption></figure>
         2. A Go Back option allows navigation to the previous hierarchy level.
         3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
-    11. Object Selection Behaviour
+    11. Object Selection Behavior
         1. Selecting an object automatically selects dependent objects based on relationship rules.
         2. Objects selected due to dependency are visually marked.
         3. If cascading relationships exist:
@@ -138,8 +138,8 @@ Validate your query to see whether the criteria set is correct and view the numb
    * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.
    * Select the date and time interval for the archive process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, monthly, or input any duration manually.
    * You can specify till what time period you want to retain the archived data under the **Archive retention period** section.
-   * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
-   *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time, however, it can increase the processing time for a load.
+   * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
+   *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time; however, it can increase the processing time for a load.
 
        <figure><img src="../../../../.gitbook/assets/1.1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
 10. **Disable Automation Rules**
@@ -161,7 +161,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
             <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
         6. The automation configurations selected during the creation of the _**Archive Config**_ will appear on the _**Start Archive**_ screen in the same state as they were initially defined.
-        7. For archive configurations where the **"Notify before deleting records in Salesforce"** option is not selected, the automation settings will still appear on the **Start Archive** page..
+        7. For archive configurations where the **"Notify before deleting records in Salesforce"** option is not selected, the automation settings will still appear on the **Start Archive** page.
         8.  On clicking the **“ARCHIVE NOW”** button, observe the automations to make sure they reflect in the same state of selection during the archive config creation.
 
             <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -185,7 +185,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 16. Select the archive configured recently under **Configurations** drop-down field.
 
     <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
-17. Click on **Get Details** to fetch all the existing archive configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
+17. Click on **Get Details** to fetch all the existing archives configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
 18. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
 19. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
 20. &#x20;Select your configuration and click **Archive**.
@@ -198,7 +198,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
+<table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in AutoRABIT Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with AutoRABIT Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
 
 ## Filter & Download Records
 

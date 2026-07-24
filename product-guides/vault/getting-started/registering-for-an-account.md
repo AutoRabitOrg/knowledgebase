@@ -12,7 +12,7 @@ Here are some things to know before you begin this process:
 
 ### Sign Up for an Account <a href="#sign-up-for-an-account" id="sign-up-for-an-account"></a>
 
-When creating a [AutoRABIT Vault™](https://www.autorabit.com/products/vault-data-backup-recovery/) account, you agree to comply with our Privacy Policy and Terms of Use. You must comply with these policies and maintain a positive reputation to keep your account in good standing.
+When creating an [AutoRABIT Vault™](https://www.autorabit.com/products/vault-data-backup-recovery/) account, you agree to comply with our Privacy Policy and Terms of Use. You must comply with these policies and maintain a positive reputation to keep your account in good standing.
 
 1. Navigate to AutoRABIT Vault's signup page and click on the **Sign Up** button.
 2. On the next screen, enter the following details to retrieve your username and generate a password:

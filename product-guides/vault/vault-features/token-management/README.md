@@ -1,12 +1,12 @@
 # Token Management
 
-## **AutoRABIT Vault Token Management User Guide**
+## **Token Management User Guide**
 
 Creating, monitoring, revoking, and deleting API tokens
 
 ## Token Management
 
-Token Management provides a centralized place to generate and maintain API tokens for **AutoRABIT** Vault. Tokens are used for API-based access and can be tracked through their status, expiry, usage details, and available actions.
+Token Management provides a centralized place to generate and maintain API tokens for **AutoRABIT Vault.** Tokens are used for API-based access and can be tracked through their status, expiry, usage details, and available actions.
 
 | **Important:** Generated tokens are displayed only once. The token must be copied and stored securely when it is generated because it cannot be retrieved later. |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ The Token Management page displays all generated tokens in a tabular view. When 
 * Status shows whether the token is Active, Revoked, Expired, or Expiring Soon.
 * Created Date and Expiry Date show the token lifecycle window.
 * Last Used, Last Used In, and IP Address show usage details when available.
-* Actions shows the operation available for the token based on its current status.
+* Actions shows the operations available for the token based on its current status.
 
 ![](<../../../../.gitbook/assets/Unknown image (389)>)
 

@@ -1,6 +1,6 @@
 # Managing Users and Roles
 
-Creating users and roles allows you to manage who can access a [**AutoRABIT Vault™**](https://www.autorabit.com/products/vault-data-backup-recovery/). You can also create different roles that restrict or allow access to certain functionalities. For example, you might have a member of your team who only needs to look at scheduling backup operations for a sandbox but should never be able to perform a **Restore** operation.
+Creating users and roles allows you to manage who can access [**AutoRABIT Vault™**](https://www.autorabit.com/products/vault-data-backup-recovery/). You can also create different roles that restrict or allow access to certain functionalities. For example, you might have a member of your team who only needs to look at scheduling backup operations for a sandbox but should never be able to perform a **Restore** operation.
 
 {% hint style="info" %}
 **Note:** You need **Administrator privileges** to manage a user account.
@@ -37,7 +37,7 @@ To create or edit a role:
 
 ### Creating Users <a href="#creating-users" id="creating-users"></a>
 
-You can create a new user with just a few clicks. It’s as simple as entering the first name, middle and last name, an email, and selecting a role, Salesforce Orgs (if required), and designation. After you invite users, they receive a confirmation email with a link to create their login password.
+You can create a new user with just a few clicks. It’s as simple as entering the first name, middle, and last name, an email, and selecting a role, Salesforce Orgs (if required), and designation. After you invite users, they receive a confirmation email with a link to create their login password.
 
 {% hint style="info" %}
 **Note:** You need **Administrator Privileges** to add user accounts.
@@ -51,15 +51,15 @@ You can create a new user with just a few clicks. It’s as simple as entering t
 3. On the **Add User** wizard:
    * Enter the user's **First**, **Middle**, and **Last Name** and **Email Address**.
    * Select the appropriate **role** from the drop-down list.
-     * The **Salesforce Orgs** field will be displayed only if the **Enable Org Access Control** toggle is turned on (in the **Manage Users** screen). In this dropdown, you must choose the Salesforce Orgs you want your user to access. The user will then be allowed to access only those Salesforce Orgs authorized for them. Based on the Salesforce Org access, users can carry out AutoRABIT Vault™ operations in their Salesforce Org such as backup, restore, replicate, compare, archival, etc.
+     * The **Salesforce Orgs** field will be displayed only if the **Enable Org Access Control** toggle is turned on (in the **Manage Users** screen). In this dropdown, you must choose the Salesforce Orgs you want your user to access. The user will then be allowed to access only those Salesforce Orgs authorized for them. Based on the Salesforce Org access, users can carry out AutoRABIT Vault™ operations in their Salesforce Org, such as backup, restore, replicate, compare, archival, etc.
      * Enter the user's **designation** and add a short **description** to the user account. These fields are optional.
 4. Click **Add User.**
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. The user will receive an email inviting them to select a password and log in. Newly created users are updated on the **Manage User** homepage. Note:
-   * The account with **the Admin** role has the maximum roles and permissions possible and cannot be edited or renamed. By default, the roles will be displayed as **All**, means, the admin has all of the privileges inside AutoRABIT Vault.
-   * The logged in administrator details are non-editable and therefore will be in disabled mode.
+   * The account with **the Admin** role has the maximum roles and permissions possible and cannot be edited or renamed. By default, the roles will be displayed as **All**, which means the admin has all of the privileges inside AutoRABIT Vault.
+   * The logged-in administrator details are non-editable and therefore will be in disabled mode.
    * The permissions you select determine which dashboard controls are in the user's console and what settings the user can manage.
    * The account verification link emailed to new users expires after **7 days.** Users who do not click the account verification link need an Admin to resend the account verification link to their email address.
    * Users must change their password the first time they log in.
@@ -92,7 +92,7 @@ After you’ve created a user, you can change most of their information and perm
 **Note**:
 
 1. By default, all existing sub-users have access to all of the Salesforce Orgs registered. However, the Org Administrator can redefine their sub-users' access to the Salesforce Orgs on the **Manage Users** screen.
-2.  The logged in administrator's details is disabled and cannot be edited.
+2.  The logged-in administrator's details are disabled and cannot be edited.
 
     <figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endhint %}
@@ -116,7 +116,7 @@ The Manage Users module opens with the USERS tab selected. AutoRABIT Vault displ
 
 The Search field supports narrowing the visible records. The Columns control manages the columns displayed in the table. The pagination controls show the number of records available in the current view.
 
-When org-level access control is enabled, the Enable org. access control toggle appears in the enabled state. This setting controls whether org access can be managed at the user level.
+When org-level access control is enabled, the Enable org access control toggle appears in the enabled state. This setting controls whether org access can be managed at the user level.
 
 <figure><img src="../../../.gitbook/assets/image (2667).png" alt=""><figcaption></figcaption></figure>
 

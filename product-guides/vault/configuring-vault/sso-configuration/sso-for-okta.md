@@ -1,4 +1,4 @@
-# AutoRABIT Vault SSO for OKTA
+# OKTA
 
 This article explains how to configure Single Sign-On (SSO) in AutoRABIT Vault using Okta as the SAML 2.0 Identity Provider. When SSO is enabled, users are redirected to Okta for authentication and, upon success, are taken to the AutoRABIT Vault Dashboard.
 
@@ -20,12 +20,12 @@ This article explains how to configure Single Sign-On (SSO) in AutoRABIT Vault u
    * **Audience URI (SP Entity ID):** `<instanceURL>/ARVault/saml/metadata`
 7. Under **Attribute Statements**:
 
-| Name                       | Value             |
-| -------------------------- | ----------------- |
-| firstname                  | `user.firstName`  |
-| lastname                   | `user.lastName`   |
-| customerid                 | Vault customer ID |
-| restrictAutoCreationOfUser | `Yes` or `No`     |
+| Name                       | Value                       |
+| -------------------------- | --------------------------- |
+| firstname                  | `user.firstName`            |
+| lastname                   | `user.lastName`             |
+| customerid                 | AutoRABIT Vault customer ID |
+| restrictAutoCreationOfUser | `Yes` or `No`               |
 
 > **Note**: Customer ID is available under the **Profile** section in your AutoRABIT Vault account.
 

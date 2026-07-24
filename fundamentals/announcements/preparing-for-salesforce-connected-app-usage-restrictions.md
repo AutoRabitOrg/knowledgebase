@@ -70,7 +70,7 @@ Refer to the [Salesforce documentation](https://help.salesforce.com/s/articleVie
 
 ### FAQ
 
-**Will my existing AutoRABIT connections stop working?** No. If you connected AutoRABIT products (Vault, ARM, CodeScan Cloud) to Salesforce before the enforcement date in September 2025, your existing integrations will continue to work.
+**Will my existing AutoRABIT connections stop working?** No. If you connected AutoRABIT products (AutoRABIT Vault, ARM, CodeScan Cloud) to Salesforce before the enforcement date in September 2025, your existing integrations will continue to work.
 
 **What happens if I try to create a new connection after September 2025?** New connections may fail unless your Salesforce administrator assigns the new permissions introduced by Salesforce (Approve Uninstalled Connected Apps or Use Any API Client).
 

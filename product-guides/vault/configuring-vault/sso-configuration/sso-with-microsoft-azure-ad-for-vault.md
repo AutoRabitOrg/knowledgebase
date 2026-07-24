@@ -1,4 +1,4 @@
-# SSO with Microsoft Entra ID for AutoRABIT Vault
+# Microsoft Entra ID
 
 ## Overview <a href="#overview" id="overview"></a>
 
@@ -38,12 +38,12 @@ Benefits:
    * Delete all **Additional claims**
    * Add these claims manually:
 
-| Name                       | Source    | Source Attribute                                     |
-| -------------------------- | --------- | ---------------------------------------------------- |
-| firstname                  | Attribute | `user.givenname`                                     |
-| lastname                   | Attribute | `user.surname`                                       |
-| customerid                 | Attribute | Vault Customer ID (from your Vault Profile section)  |
-| restrictAutoCreationOfUser | Attribute | `Yes` or `No` (controls auto user creation in Vault) |
+| Name                       | Source    | Source Attribute                                                        |
+| -------------------------- | --------- | ----------------------------------------------------------------------- |
+| firstname                  | Attribute | `user.givenname`                                                        |
+| lastname                   | Attribute | `user.surname`                                                          |
+| customerid                 | Attribute | AutoRABIT Vault Customer ID (from your AutoRABIT Vault Profile section) |
+| restrictAutoCreationOfUser | Attribute | `Yes` or `No` (controls auto user creation in Vault)                    |
 
 <figure><img src="../../../../.gitbook/assets/image (190).png" alt="Claims configuration"><figcaption></figcaption></figure>
 
@@ -79,7 +79,7 @@ Benefits:
 **Causes**:
 
 1. User not assigned in Azure to the AutoRABIT Vault app.
-2. `restrictAutoCreationOfUser` claim is set to `Yes` and user not pre-created in Vault.
+2. `restrictAutoCreationOfUser` claim is set to `Yes` and user not pre-created in AutoRABIT Vault.
 
 
 

@@ -1,4 +1,4 @@
-# Setup backup configuration for Salesforce Org
+# Set up backup configuration for Salesforce Org
 
 ## Overview <a href="#overview" id="overview"></a>
 
@@ -83,7 +83,7 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
 3. Choose **Backup Type**:
    * **Full Backup**
    * **Incremental Backup**
-4. Set **Email Notifications** recipients.
+4. Set **Email Notification** recipients.
 
 <figure><img src="../../../../.gitbook/assets/image (214).png" alt="Email notification recipient selection" width="563"><figcaption></figcaption></figure>
 

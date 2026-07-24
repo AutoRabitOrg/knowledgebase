@@ -4,7 +4,7 @@
 
 Standard backup solutions neglect knowledge articles, chatter feeds, metadata, and file attachments, which are crucial for the whole Salesforce experience.&#x20;
 
-AutoRABIT Vault is an enterprise backup and recovery solution from AutoRABIT designed for Salesforce and built for customers seeking comprehensive data protection. AutoRABIT Vault for Salesforce data security automatically performs backups for two kinds of structures:&#x20;
+AutoRABIT Vault is an enterprise backup and recovery solution designed for Salesforce and built for customers seeking comprehensive data protection. AutoRABIT Vault for Salesforce data security automatically performs backups for two kinds of structures:&#x20;
 
 * **Data:** Backup data in Salesforce is for records such as accounts, opportunities, contracts, leads, and cases. It also backs up Chatter, files, custom object records, and content.&#x20;
 * **Metadata:** Salesforce metadata backup refers to custom code like Apex and Visualforce and configuration settings like dashboards, reports, page layouts, and custom fields.&#x20;

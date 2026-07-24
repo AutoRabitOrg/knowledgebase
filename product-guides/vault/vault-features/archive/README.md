@@ -7,7 +7,7 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 ## Why Is Archival Important? <a href="#why-is-the-archival-important" id="why-is-the-archival-important"></a>
 
 1. It's necessary for optimizing data storage in Salesforce.
-2. For [Salesforce Org](../../configuring-vault/registering-salesforce-org/) with lots of data, searching for particular data is time-consuming and difficult.
+2. For a [Salesforce Org](../../configuring-vault/registering-salesforce-org/) with lots of data, searching for particular data is time-consuming and difficult.
 3. Application building in the Salesforce platform tends to run slower if unwanted data is available in your org.
 
 ## Archival Job Status and Notification Settings
@@ -35,7 +35,7 @@ To prevent accidental data loss, it is crucial to be notified before any records
 2. Select the respective **Salesforce Org** where the archival configuration is created.
 3. Navigate to the **Configs** > **Archive** tab to review the archival configurations.
 4. Click the **Edit** button on any existing **Archival Configuration** to modify the settings.
-5. Ensure the checkbox for the **“Notify before deleting records in Salesforce”** checkbox is checked.
+5. Ensure the checkbox for the **“Notify before deleting records in Salesforce”** is checked.
 6. When enabled, this setting will send notifications to users before any records are permanently deleted, ensuring that you have full awareness before data is removed.
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -24,7 +24,7 @@ To utilize Azure Blob as your storage medium for backing up metadata and data ob
 
 ***
 
-### AutoRABIT Vault Hosted Backup Environment <a href="#vault-hosted-backup-environment" id="vault-hosted-backup-environment"></a>
+### AutoRABIT Vault-Hosted Backup Environment <a href="#vault-hosted-backup-environment" id="vault-hosted-backup-environment"></a>
 
 To have AutoRABIT manage your backup environment:
 

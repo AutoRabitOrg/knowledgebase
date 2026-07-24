@@ -127,7 +127,7 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 2. Go to **Settings > Backup Environment.**
 3. Select **AWS S3** as the **Storage Type**.
 4. Provide a **label** of your choice (Need not be the same as your S3 Bucket name).
-5. Enter the name of your s3 bucket in the **Bucket Name** field.
+5. Enter the name of your S3 bucket in the **Bucket Name** field.
 6. Provide the **Access key** and **Secret key** by copying from the CSV file downloaded earlier (mentioned in _Step 23_).
 7. Select the region to be the same as the region provided for the bucket while creating in _Step 5_.
 8. Enable the checkbox: **AES-256 Encryption**

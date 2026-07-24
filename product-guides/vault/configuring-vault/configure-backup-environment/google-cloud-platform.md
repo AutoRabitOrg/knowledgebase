@@ -61,9 +61,9 @@ To use GCP as your storage environment to back up metadata and data objects, con
 
 ***
 
-## Vault Hosted Backup Environment <a href="#vault-hosted-backup-environment" id="vault-hosted-backup-environment"></a>
+## AutoRABIT Vault-Hosted Backup Environment <a href="#vault-hosted-backup-environment" id="vault-hosted-backup-environment"></a>
 
-To use Vault’s hosted environment for backups:
+To use AutoRABIT Vault’s hosted environment for backups:
 
 1. Check the box: [**AR Vault Hosted Backup Environment**](https://www.autorabit.com/products/vault-data-backup-recovery/).
 2. Select the desired **Region** for your data.

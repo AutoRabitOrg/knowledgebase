@@ -12,7 +12,7 @@ AutoRABIT Vault includes proxy details in the request headers when connecting to
 
 ### Permissions <a href="#permissions" id="permissions"></a>
 
-* Applicable **only for on-premises users**. Not supported for shared instance users.
+* Applicable **only to on-premises users**. Not supported for shared instance users.
 * Only **System Admins** can configure proxy settings.
 * Proxy can be set up **only for AWS storage environments**.
 

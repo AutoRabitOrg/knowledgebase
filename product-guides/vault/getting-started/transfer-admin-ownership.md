@@ -9,7 +9,7 @@ If you are the current Administrator of your AutoRABIT Vault account and wish to
 {% hint style="info" %}
 **Note:**
 
-* The **new Administrator** must be an **existing user** in the Vault account.
+* The **new Administrator** must be an **existing user** in the AutoRABIT Vault account.
 * Only an **authorized member** of the **Customer Support Team** can complete the ownership transfer.
 {% endhint %}
 

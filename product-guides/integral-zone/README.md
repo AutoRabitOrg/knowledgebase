@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Integral Zone
 
 ## Welcome to Integral Zone

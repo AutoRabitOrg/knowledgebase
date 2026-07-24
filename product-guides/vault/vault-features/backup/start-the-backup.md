@@ -2,26 +2,26 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Vault for Salesforce data security automatically performs backups for two kinds of structures:
+AutoRABIT Vault for Salesforce data security automatically performs backups for two kinds of structures:
 
 * **Data:** Backup data in Salesforce is for records such as accounts, opportunities, contracts, leads, and cases. It also backs up Chatter, files, custom object records, and content.
 * **Metadata:** Salesforce metadata backup refers to custom code like Apex and Visualforce and configuration settings like dashboards, reports, page layouts, and custom fields.
 
-Vault suits the Salesforce environment and is built for our customers to protect their valuable data. Some features of our Salesforce backup tool include:
+AutoRABIT Vault suits the Salesforce environment and is built for our customers to protect their valuable data. Some features of our Salesforce backup tool include:
 
-* **Dependable backups:** You can use Vault to back up your important content and recover it if the original file is compromised. Salesforce backup and recovery allows you to maintain the complete experience of Salesforce by preserving file attachments, knowledge feeds, and more.
-* **Built-in archival:** Vault’s archival capabilities reduce storage costs for a more cost-effective solution. The archive tool is based on our scalable enterprise cloud infrastructure.
+* **Dependable backups:** You can use AutoRABIT Vault to back up your important content and recover it if the original file is compromised. Salesforce backup and recovery allows you to maintain the complete experience of Salesforce by preserving file attachments, knowledge feeds, and more.
+* **Built-in archival:** AutoRABIT Vault’s archival capabilities reduce storage costs for a more cost-effective solution. The archive tool is based on our scalable enterprise cloud infrastructure.
 * **Metadata Mastery™:** Using Metadata Mastery™ with the AutoRABIT platform allows your company to back up and recover your Salesforce environment completely. This tool prevents Salesforce data loss by including metadata in its backups.
 
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
-1. A **Salesforce Org** registered inside Vault. To register a new org, navigate to **`Setup > Register New Org`**. \[[Learn More](../../configuring-vault/registering-salesforce-org/)]
+1. A **Salesforce Org** registered inside AutoRABIT Vault. To register a new org, navigate to **`Setup > Register New Org`**. \[[Learn More](../../configuring-vault/registering-salesforce-org/)]
 2. A **backup configured** for your Salesforce Org. The backup configuration job creates a snapshot of the data/metadata from your Salesforce org and is also helpful in retrieving the data required to restore successfully. \[[Learn More](../../ncino/backup-configuration-for-your-salesforce-org.md)]
 3. You have **permission** to create a backup job.
 
 ### Backing Up Your Data and Metadata <a href="#backing-up-your-data-and-metadata" id="backing-up-your-data-and-metadata"></a>
 
-1. Login to your Vault account.
+1. Login to your AutoRABIT Vault account.
 2. Go to the **`Backup`** module.
 3. Select your **`Salesforce Org`**, **`Environment (Salesforce/nCino),`** and backup **`Configurations`** from the drop-down.Note:
    * A list of all scheduled and manual backups triggered to date will get displayed under the **`Backup Summary`** section.
@@ -33,9 +33,9 @@ Vault suits the Salesforce environment and is built for our customers to protect
 5. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
    * You'll be prompted to select your backup **configuration** again.
-   * Select the **`Backup type`** for both metadata and data members. Vault recommends using the **Full-Backup** for metadata/data when performing a backup for the first time.
+   * Select the **`Backup type`** for both metadata and data members. AutoRABIT Vault recommends using the **Full-Backup** for metadata/data when performing a backup for the first time.
      1. **`Full-Backup`**: Full backup is a method of backup in which all the files and folders selected are backed up.
-     2. **`Incremental-Backup`**: This method backs up only the data or metadata that has changed since the last backup operation. Vault allows incremental backups at intervals as short as every 5 minutes. Incremental backups identify changes by comparing file modification timestamps against the timestamp of the previous backup.
+     2. **`Incremental-Backup`**: This method backs up only the data or metadata that has changed since the last backup operation. AutoRABIT Vault allows incremental backups at intervals as short as every 5 minutes. Incremental backups identify changes by comparing file modification timestamps against the timestamp of the previous backup.
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 
@@ -47,7 +47,7 @@ Vault suits the Salesforce environment and is built for our customers to protect
 
 ### Backup Summary <a href="#backup-summary" id="backup-summary"></a>
 
-For each backup performed inside Vault, you will find the details below on the **`Backup Summary`** screen.
+For each backup performed inside AutoRABIT Vault, you will find the details below on the **`Backup Summary`** screen.
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Backup Summary Screen</p></figcaption></figure>
 
@@ -69,7 +69,7 @@ For each backup performed inside Vault, you will find the details below on the *
 
 ### Downloading Files
 
-Having this feature to download the files from the backup will enable the user to download the files directly from the Vault backup of the actual Salesforce data.
+Having this feature to download the files from the backup will enable the user to download the files directly from the AutoRABIT Vault backup of the actual Salesforce data.
 
 Steps to download files:
 
@@ -97,7 +97,7 @@ ii. On selecting “Download Files”, based on the size of the file, the progre
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Download Files</p></figcaption></figure>
 
-iii. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
+iii. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the AutoRABIT Vault environment.
 
 7. Once “Download Files” is initiated, the progress of the files download is depicted through the progress icon. Following screenshot is for reference.
 8. On hovering over the in-progress download, the count(downloaded files/total files count) of files can be observed.
@@ -117,7 +117,7 @@ The new provision is useful in filtering the “backed up” and archived record
 
 Follow the following flow for the backup records download:
 
-1. Go to the backup module of the Vault application
+1. Go to the backup module of the AutoRABIT Vault application
 2. Click on the “Label Name” to open the backup details
 3.  On landing on the backup details section, click on the “Records”
 

@@ -1,6 +1,6 @@
-# Vault API Referencec
+# AutoRABIT Vault API Reference
 
-This provides a comprehencive list of the Vault APIs that can be utilized for connecting with Vault.
+This provides a comprehencive list of the AutoRABIT Vault APIs that can be utilized for connecting with Vault.
 
 1. [Configs and ORGs](https://documenter.getpostman.com/view/56788688/2sBY4Qqyk3#045d4f6b-ae0d-410a-b7ba-5613fc17bc5c)
 2. [Create (POST)](https://documenter.getpostman.com/view/56788688/2sBY4Qqyk3#7a829625-64d7-4821-b2e3-91100e4c05bd)

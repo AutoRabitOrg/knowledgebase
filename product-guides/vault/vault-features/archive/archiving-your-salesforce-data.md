@@ -1,6 +1,6 @@
 # Archiving Your Salesforce Data
 
-1. Log in to your Vault account.
+1. Log in to your AutoRABIT Vault account.
 2. Go to the **Setup** module.
 3.  Locate the Salesforce Org for which the data has to be archived. You can use the **Search** filter to easily find the required Salesforce Org.
 
@@ -24,7 +24,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
 8.  #### **Schema Viewer**
 
-    The schema viewer feature in Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
+    The schema viewer feature in AutoRABIT Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
 
     1. Accessing Account Hierarchy
        1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
@@ -132,7 +132,7 @@ Validate your query to see whether the criteria set is correct and view the numb
         * Enabling Only Matches limits results strictly to relevant search outcomes without altering selection state.
     15. **Summary**
 
-        The schema viewer feature in Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations.
+        The schema viewer feature in AutoRABIT Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations.
 9. Click **Next.** On the next screen, do the following:
    * Give the process a **name**.
    * Select the **email notification** checkbox to receive an email notification whenever the objects are getting deleted from your Salesforce Org. If unchecked, data will be automatically deleted without any prior notification.

@@ -4,7 +4,7 @@ Search & Compare
 
 ### Introduction
 
-The Search & Compare feature enables users to identify, analyze, and restore data changes across Backups and Archives within Vault. It provides a structured way to search for specific records using defined criteria and compare data across selected point-in-time snapshots.
+The Search & Compare feature enables users to identify, analyze, and restore data changes across Backups and Archives within AutoRABIT Vault. It provides a structured way to search for specific records using defined criteria and compare data across selected point-in-time snapshots.
 
 This functionality helps ensure data integrity, supports audit requirements, and enables controlled restoration of records when needed.
 
@@ -236,7 +236,7 @@ Search results are presented in a structured comparison view, allowing users to 
 
 ### **Restore Records from the Backups:**
 
-Vault displays the list of backups and archives identified based on the selected date range and the executed Search & Compare operation. From the resulting list, select the required backup to view its associated records. Individual records can then be selected and restored as needed.
+AutoRABIT Vault displays the list of backups and archives identified based on the selected date range and the executed Search & Compare operation. From the resulting list, select the required backup to view its associated records. Individual records can then be selected and restored as needed.
 
 1.  As soon as the run is initiated, a new job will be start running, with an option to terminate the job run.
 

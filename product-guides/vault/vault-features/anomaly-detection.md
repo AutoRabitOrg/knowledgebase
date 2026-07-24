@@ -1,10 +1,10 @@
 # Anomaly Detection
 
-## Vault Anomaly Detection User Guide
+## AutoRABIT Vault Anomaly Detection User Guide
 
 ## Purpose
 
-Vault Anomaly Detection monitors configured Salesforce data objects and metadata types for unusual changes. The feature helps identify unexpected activity, review affected records, compare snapshots, and roll back selected data changes where required. The workflow begins with configuration, continues through dashboard monitoring and anomaly review, and ends with rollback or comparison result tracking.
+AutoRABIT Vault Anomaly Detection monitors configured Salesforce data objects and metadata types for unusual changes. The feature helps identify unexpected activity, review affected records, compare snapshots, and roll back selected data changes where required. The workflow begins with configuration, continues through dashboard monitoring and anomaly review, and ends with rollback or comparison result tracking.
 
 ## Workflow Covered
 
@@ -16,7 +16,7 @@ Vault Anomaly Detection monitors configured Salesforce data objects and metadata
 * Use job history, compare labels, export, and field-selection controls.
 * Pause, stop, or restart anomaly detection.
 
-Anomaly Detection is configured from the Anomaly Detection workspace. The configuration defines the source org, monitored data objects, monitored metadata types, threshold percentages, notification recipients, and excluded change owners. Once the configuration is saved, Vault begins evaluating the selected scope based on the scheduled detection cycle.
+Anomaly Detection is configured from the Anomaly Detection workspace. The configuration defines the source org, monitored data objects, monitored metadata types, threshold percentages, notification recipients, and excluded change owners. Once the configuration is saved, AutoRABIT Vault begins evaluating the selected scope based on the scheduled detection cycle.
 
 ![](<../../../.gitbook/assets/Unknown image (268)>)
 
@@ -90,7 +90,7 @@ The Data anomaly details view lists detected records for the selected source org
 
 &#x20;                                                _Rollback prerequisite and behavior information_
 
-Rollback is initiated from the anomaly details or result views after eligible records are selected. Vault presents a rollback summary before submission, including rollback options and the selected record count. Once confirmed, a rollback job is created and tracked from the Anomaly Rollback section until completion.
+Rollback is initiated from the anomaly details or result views after eligible records are selected. AutoRABIT Vault presents a rollback summary before submission, including rollback options and the selected record count. Once confirmed, a rollback job is created and tracked from the Anomaly Rollback section until completion.
 
 ![](<../../../.gitbook/assets/Unknown image (284)>)
 
@@ -250,4 +250,4 @@ Anomaly detection can be temporarily paused until a selected date or permanently
 
 ## Result
 
-After the workflow is completed, Vault maintains the anomaly configuration, displays the current monitoring state on the dashboard, stores comparison jobs in job history, and tracks rollback jobs separately. This provides a controlled path to identify suspicious changes, verify field-level differences, and restore selected data where required.
+After the workflow is completed, AutoRABIT Vault maintains the anomaly configuration, displays the current monitoring state on the dashboard, stores comparison jobs in job history, and tracks rollback jobs separately. This provides a controlled path to identify suspicious changes, verify field-level differences, and restore selected data where required.

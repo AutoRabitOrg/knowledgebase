@@ -4,7 +4,7 @@ hidden: true
 
 # Copy of Archiving Your Salesforce Data
 
-1. Log in to your Vault account.
+1. Log in to your AutoRABIT Vault account.
 2. Go to the **Setup** module.
 3.  Locate the Salesforce Org for which the data has to be archived. You can use the **Search** filter to easily find the required Salesforce Org.
 
@@ -103,7 +103,7 @@ Validate your query to see whether the criteria set is correct and view the numb
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
+<table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in AutoRABIT Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with AutoRABIT Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
 
 ## Filter & Download Records
 
@@ -112,7 +112,7 @@ This provision is useful in filtering the “backed up” and archived records. 
 **Step-By-Step Guide:**
 
 1. Follow the following flow for the backup records download:
-2. Go to the backup module of the Vault application
+2. Go to the backup module of the AutoRABIT Vault application
 3. Click on the “Label Name” to open the backup details
 4.  On landing on the backup details section, click on the “Records”
 

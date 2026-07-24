@@ -2,13 +2,13 @@
 
 [Article 17 of the GDPR](https://gdpr-info.eu/art-17-gdpr/), the right to erasure, also known as the right to be forgotten or RTBF, enables individuals to request the deletion or removal of their personal data when there is no compelling reason for its continued processing.
 
-**Vault:** Your files stored in Vault are easily searchable and, based on a user’s permission level in Vault, you can delete them.
+**AutoRABIT Vault:** Your files stored in AutoRABIT Vault are easily searchable and, based on a user’s permission level in AutoRABIT Vault, you can delete them.
 
 You can initiate an RTBF request for your backed-up [Salesforce data](https://www.autorabit.com/blog/how-to-backup-salesforce-data/) to be deleted if it is no longer needed or if it has been misused.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Login to [Vault ](https://www.autorabit.com/products/vault-data-backup-recovery/)using your username and password.
+1. Login to [AutoRABIT Vault ](https://www.autorabit.com/products/vault-data-backup-recovery/)using your username and password.
 2. Go to the **GDPR** module and select your Salesforce Org.
 3. Click on **Create GDPR Request**.
 

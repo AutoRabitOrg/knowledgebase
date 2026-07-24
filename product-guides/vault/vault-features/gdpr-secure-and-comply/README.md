@@ -18,11 +18,11 @@ There are many positive business outcomes of compliance with GDPR including effi
 
 We believe in our service and can provide the level of protection for compliance with the EU General Data Protection Regulation.
 
-* All Salesforce data backed up in Vault is kept secure.
+* All Salesforce data backed up in AutoRABIT Vault is kept secure.
 * EU citizens have the right to access their Salesforce data.
-* The use of personal data collected within Vault is done in a legal, fair, and reasonable way.
+* The use of personal data collected within AutoRABIT Vault is done in a legal, fair, and reasonable way.
 
-### W**hat features within Vault support compliance with GDPR requirements?** <a href="#what-features-within-vault-support-compliance-with-gdpr-requirements" id="what-features-within-vault-support-compliance-with-gdpr-requirements"></a>
+### W**hat features within** AutoRABIT Vault **support compliance with GDPR requirements?** <a href="#what-features-within-vault-support-compliance-with-gdpr-requirements" id="what-features-within-vault-support-compliance-with-gdpr-requirements"></a>
 
 Vault provides industry-standard security measures such as encryption, multi-factor authentication, access controls, and auditing to support compliance with GDPR rules.
 
@@ -30,16 +30,16 @@ Vault provides industry-standard security measures such as encryption, multi-fac
 
 As per [Article 15 of the GDPR](https://gdpr-info.eu/art-15-gdpr/), individuals have the right to obtain access to their personal data, so that they are aware of and can verify the lawfulness of the processing. The information must be provided within 30 days of a request, free of charge.
 
-**Vault:** Upon request, we quickly respond to requests for data access that contains your Salesforce information.
+**AutoRABIT Vault:** Upon request, we quickly respond to requests for data access that contains your Salesforce information.
 
 #### R**ight to Data Portability** <a href="#right-to-data-portability" id="right-to-data-portability"></a>
 
 As per [Article 20 of the GDPR](https://gdpr-info.eu/art-20-gdpr/), individuals have the right to move, copy or transfer personal data easily and securely from one IT environment to another.
 
-**Vault:** Based on a user's permission level, entire Salesforce metadata/ data components can be removed from our platform.
+**AutoRABIT Vault:** Based on a user's permission level, entire Salesforce metadata/ data components can be removed from our platform.
 
 #### Right to Be Forgotten Request <a href="#right-to-be-forgotten-request" id="right-to-be-forgotten-request"></a>
 
 [Article 17 of the GDPR](https://gdpr-info.eu/art-17-gdpr/), the right to erasure, also known as the right to be forgotten or RTBF, enables individuals to request the deletion or removal of their personal data when there is no compelling reason for its continued processing.
 
-**Vault:** Your files stored in Vault are easily searchable and based on your user’s permission level in Vault, you can delete them.
+**AutoRABIT Vault:** Your files stored in AutoRABIT Vault are easily searchable and based on your user’s permission level in AutoRABIT Vault, you can delete them.

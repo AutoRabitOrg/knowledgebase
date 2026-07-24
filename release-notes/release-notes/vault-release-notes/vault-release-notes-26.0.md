@@ -2,6 +2,30 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
+## AutoRABIT Vault Release Notes 26.3.2
+
+**Release Date: 29 July 2026**
+
+#### Optimized Processing for Salesforce Objects with Base64/Binary Fields <a href="#id-1.-optimized-processing-for-salesforce-objects-with-base64-binary-fields" id="id-1.-optimized-processing-for-salesforce-objects-with-base64-binary-fields"></a>
+
+Extended Synthetic Backup optimization to additional Salesforce objects containing Base64/Binary fields, including EventLogFile, StaticResource, and QuoteDocument. This enhancement reduces processing delays caused by large binary fields and improves backup performance.
+
+#### Microsoft Entra ID–Based MySQL Authentication <a href="#id-2.-microsoft-entra-id-based-mysql-authentication" id="id-2.-microsoft-entra-id-based-mysql-authentication"></a>
+
+Added support for authenticating MySQL connections through Microsoft Entra ID instead of direct database credentials. This enables centralized, identity-based authentication and aligns database access with enterprise security practices.
+
+#### Product Rebranding: “Vault” to “AutoRABIT Vault” <a href="#id-3.-product-rebranding-vault-to-autorabit-vault" id="id-3.-product-rebranding-vault-to-autorabit-vault"></a>
+
+Updated applicable “Vault” references to “AutoRABIT Vault” across the application. The change covers the UI, authentication pages, emails, logs, reports, API responses, tooltips, and branding assets, including an updated product logo aligned with the latest design standards.
+
+#### Fixed Incorrect Salesforce Org Usage After Credential Update <a href="#id-4.-fixed-incorrect-salesforce-org-usage-after-credential-update" id="id-4.-fixed-incorrect-salesforce-org-usage-after-credential-update"></a>
+
+Fixed an issue where backup configurations continued retrieving data from the previously registered Salesforce org after Client Credentials and org details were updated. Backups now authenticate with the newly configured org and retrieve data from the intended source.
+
+#### Authentication Grant Type Switching <a href="#id-5.-authentication-grant-type-switching" id="id-5.-authentication-grant-type-switching"></a>
+
+Added the ability to switch an existing Salesforce org connection between Authorization Code and Client Credentials without re-registering the org. Existing configurations remain preserved, confirmation is required before switching, and unsuccessful attempts retain the previous working authentication setup. All changes are captured in the audit logs.
+
 ## AutoRABIT Vault Release Notes 26.2.2
 
 **Release Date: 22 July 2026**

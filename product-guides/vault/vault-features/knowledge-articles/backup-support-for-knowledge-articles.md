@@ -1,6 +1,6 @@
 # Backup Support for Knowledge Articles
 
-Vault introduced the ability to back up Salesforce Knowledge articles as part of the Vault Data backup feature.
+AutoRABIT Vault introduced the ability to back up Salesforce Knowledge articles as part of the AutoRABIT Vault Data backup feature.
 
 During the backup process, these articles are saved under their respective Article Types, with the addition of a suffix **"\_\_kav,"** aligning with Salesforce's classification of Articles. Default Knowledge articles are saved as **knowledge\_\_kav** records.
 
@@ -10,7 +10,7 @@ During the backup process, these articles are saved under their respective Artic
 
 ### Process <a href="#process" id="process"></a>
 
-1. Log in to your Vault account and navigate to the **Setup** module.
+1. Log in to your AutoRABIT Vault account and navigate to the **Setup** module.
 2. Select your **Salesforce org** from the list.
 3. Go to the **Configs** tab.
 4. Click on **Add Backup Config**.

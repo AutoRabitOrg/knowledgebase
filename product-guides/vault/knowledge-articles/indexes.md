@@ -2,7 +2,7 @@
 
 Indexes are critical in Salesforce for improving the performance of data retrieval, especially when dealing with large volumes of records. Salesforce uses multi-tenant architecture, meaning multiple customers share the same infrastructure, so query efficiency is extremely important. Indexes play a crucial role in databases for improving performance, especially in querying large datasets, by using Indexing on Salesforce objects we can achieve faster data retrieval, Improved query performance , Reduced load on large objects and enhanced sorting and filtering functionality.
 
-By effectively using Indexes on Salesforce objects, we can achieve efficiency in Vault Back up, Compare operations and Live replication of Salesforce orgs.
+By effectively using Indexes on Salesforce objects, we can achieve efficiency in AutoRABIT Vault Back up, Compare operations and Live replication of Salesforce orgs.
 
 Salesforce platform maintains default indexes on the following fields for most objects.
 
@@ -67,7 +67,7 @@ Important criteria to ensure a good fit for a custom index:
 
 5\. For SOQL queries executed in Apex, it is common for developers to embed data binding variables to make the query dynamic; however, for analyzing the query for custom indexing, we need to know the typical values that will actually be used at runtime.
 
-### Performance Results of Synthetic Backup using Indexes in Vault tool:
+### Performance Results of Synthetic Backup using Indexes in AutoRABIT Vault tool:
 
 As noticed on our QA Org, the below is the Impact of creating Indexes on SF Big Objects and using synthetic back ups
 

@@ -2,11 +2,11 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Data archives can be thought of as a data repository for infrequently accessed, but still readily available data. In Vault, data archival is all about moving the unwanted data components from your Salesforce Org and freeing the space for new data. This data is safely stored for future use. In a nutshell, Vault makes Salesforce data archiving and backup simple, productive, and a joy to use.
+Data archives can be thought of as a data repository for infrequently accessed, but still readily available data. In AutoRABIT Vault, data archival is all about moving the unwanted data components from your Salesforce Org and freeing the space for new data. This data is safely stored for future use. In a nutshell, AutoRABIT Vault makes Salesforce data archiving and backup simple, productive, and a joy to use.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Login to your Vault account.
+1. Login to your AutoRABIT Vault account.
 2. Go to **Setup** and search for the Salesforce Org from which the data has to be archived. You can use the **Search** filter to easily filter out the required Salesforce Org.
 
 <figure><img src="../../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
@@ -60,7 +60,7 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 
 <figure><img src="../../../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
-16. Click on **Get Details** to etch all the existing archival configured for your Salesforce Org. If you've initiated the archival process for the first time in Vault, you will not find any details on this page.
+16. Click on **Get Details** to etch all the existing archival configured for your Salesforce Org. If you've initiated the archival process for the first time in AutoRABIT Vault, you will not find any details on this page.
 17. To run on-demand archival before the scheduled archival set, use **Archive Now** button.
 
 <figure><img src="../../../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
@@ -75,10 +75,10 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 <figure><img src="../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
 
 21. For each archival job, the following information will get displayed:
-    * **Label**: An identification name for each archival performed in Vault
+    * **Label**: An identification name for each archival performed in AutoRABIT Vault
     * **Configuration Name**: Archival configuration name
     * **Date/Time**: The date and time stamp for the archival process took place
-    * **Expiry Date**: Till which date the archival job will remain with Vault
+    * **Expiry Date**: Till which date the archival job will remain with AutoRABIT Vault
     * **Duration**: Time-taken to complete the archival operation
     * **Records**: Total numbers of records archived
     * **API Calls**: Api call duration (in seconds)

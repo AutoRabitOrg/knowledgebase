@@ -1,4 +1,4 @@
-# Restoring Knowledge Articles with Vault
+# Restoring Knowledge Articles with AutoRABIT Vault
 
 ### What is Salesforce Knowledge and why do you need it? <a href="#what-is-salesforce-knowledge-and-why-do-you-need-it" id="what-is-salesforce-knowledge-and-why-do-you-need-it"></a>
 
@@ -6,7 +6,7 @@ Salesforce Knowledge allows you to build a Knowledge Base for storing and managi
 
 Users can create and manage a knowledge base with your company information and securely share it when and where it's needed. Salesforce Knowledge helps you establish a self-service model for your customers to solve their queries, leading to case deflection and increasing customer satisfaction.
 
-Vault can restore/replicate knowledge data `Knowledge__kav` records with rich text and large image files.
+AutoRABIT Vault can restore/replicate knowledge data `Knowledge__kav` records with rich text and large image files.
 
 ### Point to Consider <a href="#point-to-consider" id="point-to-consider"></a>
 
@@ -16,11 +16,11 @@ Vault can restore/replicate knowledge data `Knowledge__kav` records with rich te
 
 ### Process <a href="#process" id="process"></a>
 
-To restore Knowledge data objects with Vault, follow the below steps:
+To restore Knowledge data objects with AutoRABIT Vault, follow the below steps:
 
 > Similar steps are to be followed for **replicating** KAV objects in Vault. Replicate the KAV objects by navigating to the `Replicate` module.
 
-1. Login to your **Vault** account and navigate to the **`Restore`** module.
+1. Login to your **AutoRABIT Vault** account and navigate to the **`Restore`** module.
 2. In the **`Restore`** page, select your **`Salesforce org`** configured with KAV objects.
 
 <figure><img src="../../../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
@@ -48,7 +48,7 @@ To restore Knowledge data objects with Vault, follow the below steps:
 {% hint style="info" %}
 **Point to Note:**
 
-If you choose to deploy KAV objects along with other metadata/data objects, the Vault application will not allow you to continue further. The message below pops up:&#x20;
+If you choose to deploy KAV objects along with other metadata/data objects, the AutoRABIT Vault application will not allow you to continue further. The message below pops up:&#x20;
 
 `Ensure only KAV object is selected for this restore job. KAV is a special object and can be processed only in separate job. To restore other data objects/ metadata run another job including all the required metadata and data objects.`
 {% endhint %}

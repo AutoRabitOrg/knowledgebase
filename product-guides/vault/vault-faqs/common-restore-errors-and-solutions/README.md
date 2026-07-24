@@ -1,4 +1,4 @@
-# Vault-FAQs
+# AutoRABIT Vault-FAQs
 
 ## Archival
 
@@ -25,13 +25,13 @@ If an object has a reference from another object as both parent and a child reco
 
 ## PCI Compliance
 
-### Does Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?
+### Does AutoRABIT Vault adhere to the Payment Card Industry (PCI) Data Security Standards (DSS)?
 
-**PCI DSS** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. Vault ensures the storage and transmission of cardholder data is kept private, safe, and secure.
+**PCI DSS** is the global standard for protecting payment data. These security requirements and global access control measures are established by the Payment Card Industry Security Standards Council. AutoRABIT Vault ensures the storage and transmission of cardholder data is kept private, safe, and secure.
 
-### How does Vault ensure PCI compliance? <a href="#how-does-vault-ensure-pci-compliance" id="how-does-vault-ensure-pci-compliance"></a>
+### How does AutoRABIT Vault ensure PCI compliance? <a href="#how-does-vault-ensure-pci-compliance" id="how-does-vault-ensure-pci-compliance"></a>
 
-Vault firewalls, software, data encryption, secure passwords, transmission, and physical access to data storage all serve to protect data security. AutoRABIT performs continual software and security updates, testing to verify compliance. Data access logs are monitored regularly monitored to identify outliers.&#x20;
+AutoRABIT Vault firewalls, software, data encryption, secure passwords, transmission, and physical access to data storage all serve to protect data security. AutoRABIT performs continual software and security updates, testing to verify compliance. Data access logs are monitored regularly monitored to identify outliers.&#x20;
 
 For more information, refer to our page on [PCI Compliance](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/compliance/pci-dss).&#x20;
 
@@ -90,9 +90,9 @@ While effective for structural alignment, it is a full reset operation that intr
 
 These limitations make sandbox refresh suitable for baseline resets but less ideal for continuous DevOps-driven development and testing models.
 
-#### 4.   Vault Replicate: Controlled Data Seeding
+#### 4.   AutoRABIT Vault Replicate: Controlled Data Seeding
 
-Vault’s Replicate module addresses the operational gaps of traditional sandbox refresh by enabling selective, controlled, and incremental data replication between Salesforce environments.
+AutoRABIT Vault's Replicate module addresses the operational gaps of traditional sandbox refresh by enabling selective, controlled, and incremental data replication between Salesforce environments.
 
 * **Selective Object-Level Replication** – Copy only required objects along with dependencies/ hierarchy.
 * **Filtered Data Movement** – Replicate specific datasets (e.g., last 30 days of transactions).
@@ -101,13 +101,13 @@ Vault’s Replicate module addresses the operational gaps of traditional sandbox
 * **On-Demand or Scheduled Execution** – Support agile release cycles.
 * **Selective Metadata Replication** – Support controlled configuration alignment.
 
-Vault does not recreate the sandbox. Instead, it enhances sandbox usability by maintaining relevant, test-ready data without requiring a full refresh event.
+AutoRABIT Vault does not recreate the sandbox. Instead, it enhances sandbox usability by maintaining relevant, test-ready data without requiring a full refresh event.
 
-#### 5.   Salesforce Refresh vs. Vault Replicate
+#### 5.   Salesforce Refresh vs. AutoRABIT Vault Replicate
 
-<table><thead><tr><th valign="top">Criteria</th><th valign="top">Salesforce Sandbox Refresh</th><th valign="top">Vault Replicate (Data Seeding)</th></tr></thead><tbody><tr><td valign="top">Scope</td><td valign="top">Entire environment rebuild</td><td valign="top">Selective metadata and data replication</td></tr><tr><td valign="top">Frequency</td><td valign="top">Restricted (Full: 29 days)</td><td valign="top">On-demand / Scheduled</td></tr><tr><td valign="top">Downtime</td><td valign="top">Yes</td><td valign="top">No</td></tr><tr><td valign="top">Data Control</td><td valign="top">Limited</td><td valign="top">Highly granular</td></tr><tr><td valign="top">Incremental</td><td valign="top">No Incremental Updates - Entire</td><td valign="top">Vault Data Seeding</td></tr><tr><td valign="top">Updates</td><td valign="top">sandbox is replaced even for minor data updates.</td><td valign="top">capabilities supports granular incremental updates</td></tr><tr><td valign="top">User Reactivation Required</td><td valign="top">Yes</td><td valign="top">No</td></tr><tr><td valign="top">Integration Reconfiguration</td><td valign="top">Yes. Required (endpoints, APIs, tokens, middleware)</td><td valign="top">Not required</td></tr><tr><td valign="top">Best Use Case</td><td valign="top">Full baseline reset</td><td valign="top">Continuous data alignment</td></tr></tbody></table>
+<table><thead><tr><th valign="top">Criteria</th><th valign="top">Salesforce Sandbox Refresh</th><th valign="top">AutoRABIT Vault Replicate (Data Seeding)</th></tr></thead><tbody><tr><td valign="top">Scope</td><td valign="top">Entire environment rebuild</td><td valign="top">Selective metadata and data replication</td></tr><tr><td valign="top">Frequency</td><td valign="top">Restricted (Full: 29 days)</td><td valign="top">On-demand / Scheduled</td></tr><tr><td valign="top">Downtime</td><td valign="top">Yes</td><td valign="top">No</td></tr><tr><td valign="top">Data Control</td><td valign="top">Limited</td><td valign="top">Highly granular</td></tr><tr><td valign="top">Incremental</td><td valign="top">No Incremental Updates - Entire</td><td valign="top">AutoRABIT Vault Data Seeding</td></tr><tr><td valign="top">Updates</td><td valign="top">sandbox is replaced even for minor data updates.</td><td valign="top">capabilities supports granular incremental updates</td></tr><tr><td valign="top">User Reactivation Required</td><td valign="top">Yes</td><td valign="top">No</td></tr><tr><td valign="top">Integration Reconfiguration</td><td valign="top">Yes. Required (endpoints, APIs, tokens, middleware)</td><td valign="top">Not required</td></tr><tr><td valign="top">Best Use Case</td><td valign="top">Full baseline reset</td><td valign="top">Continuous data alignment</td></tr></tbody></table>
 
-#### 6.   How Vault Overcomes Salesforce Refresh Limitations
+#### 6.   How AutoRABIT Vault Overcomes Salesforce Refresh Limitations
 
 * **Avoids Downtime** – Data replication occurs without sandbox recreation.
 * **Eliminates 29-Day Dependency** – Data can be updated on demand. There is no need to wait for           the Full Copy refresh window.
@@ -116,7 +116,7 @@ Vault does not recreate the sandbox. Instead, it enhances sandbox usability by m
 * **Enables Incremental Testing** – Only required datasets are refreshed.
 * **Supports DevOps Agility** – Continuous sandbox readiness.
 
-#### 7.   The AutoRABIT Alternative: ARM + Vault
+#### 7.   The AutoRABIT Alternative: ARM + AutoRABIT Vault
 
 A traditional sandbox refresh performs two primary functions: metadata synchronization and data synchronization. AutoRABIT provides a modular alternative:
 
@@ -124,32 +124,32 @@ A traditional sandbox refresh performs two primary functions: metadata synchroni
 
 Compares metadata between environments, identifies differences, and enables controlled synchronization.
 
-* Vault Replicate - for data alignment
+* AutoRABIT Vault Replicate - for data alignment
 
 Enables selective, filtered, and incremental data seeding from Production to sandbox environments.
 
-Together, ARM and Vault allow organizations to align metadata and replicate necessary production data without executing a full sandbox refresh.
+Together, ARM and AutoRABIT Vault allow organizations to align metadata and replicate necessary production data without executing a full sandbox refresh.
 
 This approach avoids downtime, eliminates manual post-refresh activities, preserves integrations, and supports continuous DevOps practices.
 
 #### 8.   Important Considerations for Data Seeding Activities
 
-While Vault enables controlled and efficient data seeding, it is important to recognize that all data replication activities ultimately execute within the Salesforce platform. As such, Salesforce governor limits, validation rules, and platform constraints continue to apply during the replication process.
+While AutoRABIT Vault enables controlled and efficient data seeding, it is important to recognize that all data replication activities ultimately execute within the Salesforce platform. As such, Salesforce governor limits, validation rules, and platform constraints continue to apply during the replication process.
 
-The success of a data seeding operation depends not only on Vault configuration but also on the data hygiene and structural integrity of the target sandbox. Issues such as inactive record owners, invalid IDs, broken relationships, active validation rules, or automation conflicts may result in Salesforce-generated errors during replication.
+The success of a data seeding operation depends not only on AutoRABIT Vault configuration but also on the data hygiene and structural integrity of the target sandbox. Issues such as inactive record owners, invalid IDs, broken relationships, active validation rules, or automation conflicts may result in Salesforce-generated errors during replication.
 
 Organizations are advised to review sandbox data quality, user status, and platform limits prior to initiating large-scale data seeding activities.
 
-#### Metadata Considerations in Vault Replication
+#### Metadata Considerations in AutoRABIT Vault Replication
 
-Vault is designed to support selective metadata alignment, not full metadata restoration. Its purpose is to ensure that the necessary structural components required for data seeding are in place within the target environment.
+AutoRABIT Vault is designed to support selective metadata alignment, not full metadata restoration. Its purpose is to ensure that the necessary structural components required for data seeding are in place within the target environment.
 
 For example, when performing a data seeding operation, the primary metadata components that must exist are:
 
 * Object schema
 * Field definitions
 
-Vault supports the controlled replication of these required components to ensure that the target sandbox can properly receive and store the replicated data. It is important to note that Vault leverages Salesforce Metadata API capabilities. As a result, it operates within Salesforce platform constraints. Large-scale metadata restorations—such as deployments exceeding approximately 10,000 components or very large metadata package sizes (e.g., beyond platform-supported limits)—are subject to Salesforce API limitations.
+AutoRABIT Vault supports the controlled replication of these required components to ensure that the target sandbox can properly receive and store the replicated data. It is important to note that AutoRABIT Vault leverages Salesforce Metadata API capabilities. As a result, it operates within Salesforce platform constraints. Large-scale metadata restorations—such as deployments exceeding approximately 10,000 components or very large metadata package sizes (e.g., beyond platform-supported limits)—are subject to Salesforce API limitations.
 
 In scenarios requiring full org-level metadata restoration or very large metadata deployments, a structured metadata deployment strategy (such as using ARM) is recommended.
 
@@ -157,23 +157,23 @@ In scenarios requiring full org-level metadata restoration or very large metadat
 
 The optimal approach is to start with a sandbox refresh to establish a clean production-aligned baseline. This ensures full metadata and structural consistency.
 
-After the baseline is set, use Vault Replicate to perform periodic incremental data updates. Instead of repeatedly refreshing the sandbox, only new or modified records are synchronized.
+After the baseline is set, use AutoRABIT Vault Replicate to perform periodic incremental data updates. Instead of repeatedly refreshing the sandbox, only new or modified records are synchronized.
 
 This hybrid model reduces downtime, avoids refresh frequency constraints, preserves ongoing testing, and supports continuous DevOps practices.
 
-_It is important to note: Vault is not a replacement for sandbox refresh. Instead, ARM (metadata alignment) combined with Vault (data seeding) provides a controlled alternative when alignment—not full structural reset—is the objective._
+_It is important to note: AutoRABITVault is not a replacement for sandbox refresh. Instead, ARM (metadata alignment) combined with AutoRABIT Vault (data seeding) provides a controlled alternative when alignment—not full structural reset—is the objective._
 
 ***
 
 ## Access and Refresh Token Handling
 
-Salesforce automatically manages the life cycle of both **Access Tokens** and **Refresh Tokens**, ensuring secure and uninterrupted connectivity for Vault. Below are the scenarios you may encounter:
+Salesforce automatically manages the life cycle of both **Access Tokens** and **Refresh Tokens**, ensuring secure and uninterrupted connectivity for AutoRABIT Vault. Below are the scenarios you may encounter:
 
 #### **Scenario 1: Access Token Expiry**
 
 * The **Access Token** expires based on the duration configured in Salesforce.
 * When this happens, Salesforce automatically refreshes the Access Token using the associated **Refresh Token**.
-* This process is seamless and requires no user action. Vault operations continue without interruption.
+* This process is seamless and requires no user action. AutoRABIT Vault operations continue without interruption.
 
 #### **Scenario 2: Refresh Token Expiry**
 
@@ -185,7 +185,7 @@ A **Refresh Token** may expire in the following cases:
 **What happens next:**
 
 * Once the Refresh Token expires, automatic renewal of Access Tokens is no longer possible.
-* Vault prompts the user to **re-authenticate the connected org**.
+* AutoRABIT Vault prompts the user to **re-authenticate the connected org**.
 * After successful re-authentication, Salesforce issues new tokens, and operations resume normally.
 
 ***
@@ -194,7 +194,7 @@ A **Refresh Token** may expire in the following cases:
 
 ### Can I delete specific, condition-based data from an existing backup?
 
-No, if the data is backed up in GCP and AWS, it is not possible to delete data from a field in Vault. If you want to delete it from the Org, you can archive the whole record but not the data for a single field.
+No, if the data is backed up in GCP and AWS, it is not possible to delete data from a field in AutoRABIT Vault. If you want to delete it from the Org, you can archive the whole record but not the data for a single field.
 
 ### Is it possible to mask an existing field/record already backed up in GCP?
 
@@ -202,17 +202,17 @@ It is impossible to mask existing data in a backup, as backups are kept immutabl
 
 ### Where can I find my backup expiration date?
 
-Users can verify the expiry date by reviewing the backup history in Vault. In our application, a column will display the backup's expiration date.
+Users can verify the expiry date by reviewing the backup history in AutoRABIT Vault. In our application, a column will display the backup's expiration date.
 
 <figure><img src="../../../../.gitbook/assets/image (1587).png" alt=""><figcaption></figcaption></figure>
 
 ### Can I migrate data from other Salesforce backup solutions?
 
-All backup solutions will ideally provide an option for users to download their data, which can be uploaded to our storage bucket and connected to our application to reinstate the backups/archives as if they were done through Vault. This is considered a professional service on our end, as there is significant effort involved from us to perform the migration.
+All backup solutions will ideally provide an option for users to download their data, which can be uploaded to our storage bucket and connected to our application to reinstate the backups/archives as if they were done through AutoRABIT Vault. This is considered a professional service on our end, as there is significant effort involved from us to perform the migration.
 
-### Where in Vault can I view the attachments that were backed up?
+### Where in AutoRABIT Vault can I view the attachments that were backed up?
 
-File attachments can be downloaded from the Vault user interface or in CSV format. Refer to [https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/start-the-backup#downloading-files](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/start-the-backup#downloading-files) for further details on download options.
+File attachments can be downloaded from the AutoRABIT Vault user interface or in CSV format. Refer to [https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/start-the-backup#downloading-files](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/start-the-backup#downloading-files) for further details on download options.
 
 ### How can I filter backup data by specific dates and use it as the source to Restore/Replicate?
 
@@ -223,14 +223,14 @@ To filter data based on specific dates from a backup using a CSV file and Excel,
 3. **Create Final CSV File**: Save the filtered data in a new CSV file. This file should contain only the filtered IDs.
 4. **Upload and Filter Backup**: Use the final CSV file with the filtered IDs as the source. In the restore/replicate module, use the file upload option in the filters to filter the backup data accordingly.
 
-### If I delete the backup configuration, will the backup still exist in Vault?
+### If I delete the backup configuration, will the backup still exist in AutoRABIT Vault?
 
-If the backup configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend users do not delete any configurations unless they are certain they will not be needed in the future.
+If the backup configuration is deleted, all its related backup snapshots are also deleted from the AutoRABIT Vault UI. The backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend users do not delete any configurations unless they are certain they will not be needed in the future.
 
 ### If a Salesforce org is decommissioned, will its backup still be available and can I Replicate it to another org?
 
 1. If the Backup snapshots are available in the storage, i.e., not expired, you can **Replicate** them to another org (Restore is for the same org, which is not possible if the org is decommissioned).
-2. If the configuration is deleted, all its related backup snapshots are also deleted from the Vault UI. The Backup will be available in the storage, but it will be in Excel format. Restoring/Replicating, along with the relationships, will be a challenge and must be done manually, which is why we recommend users not delete any configurations unless they are certain they won't be needed in the future.
+2. If the configuration is deleted, all its related backup snapshots are also deleted from the AutoRABIT Vault UI. The Backup will be available in the storage, but it will be in Excel format. Restoring/Replicating, along with the relationships, will be a challenge and must be done manually, which is why we recommend users not delete any configurations unless they are certain they won't be needed in the future.
 
 ### How can I identify who triggered a specific backup?
 
@@ -248,14 +248,14 @@ The logs will contain information about who initiated the backup (starting).
 3. Upon clicking the “Download” icon, you will receive a confirmation email containing a download link.
 4. By following this link, you can conveniently view the backup's data size in your browser and proceed to download it to your computer.
 
-### Where can I find the backup after it expires in Vault?
+### Where can I find the backup after it expires in AutoRABIT Vault?
 
 Once a backup has reached its expiration, it will move to lower tier storage, such as Glacier. The backup will stay there for a month after this, and then it will be permanently deleted. During the time it stays in Glacier, we can retrieve it with the help of SRO and share to customer if required.
 
 ### Content Version Large File Processing
 
 1. **What is the enhancement?**\
-   Vault now supports processing **ContentVersion files up to 2 GB**, compared to the earlier limit of 10 MB.
+   AutoRABIT Vault now supports processing **ContentVersion files up to 2 GB**, compared to the earlier limit of 10 MB.
 2. **Is this feature enabled by default?**\
    No. This capability is **controlled by a feature flag** and must be explicitly enabled.
 3. **Is there any performance impact?**\
@@ -285,9 +285,9 @@ During **Restore** or **Replicate** operations, the system checks whether parent
 
 The skipped parent record is recorded as an **error entry in the result file**, clearly indicating that the record was ignored because it already exists in the destination. All other eligible records continue to be processed without interruption, ensuring the overall operation completes as expected.
 
-### Can AccountTeamMember Be Inserted with an Inactive User? (Vault Context)
+### Can AccountTeamMember Be Inserted with an Inactive User? (AutoRABIT Vault Context)
 
-**Q: Will Salesforce allow inserting AccountTeamMember records with an inactive user during Vault restore?**
+**Q: Will Salesforce allow inserting AccountTeamMember records with an inactive user during AutoRABIT Vault restore?**
 
 **Answer:**\
 No. Salesforce does **not** allow inserting an `AccountTeamMember` record if the referenced `UserId` is inactive.
@@ -311,9 +311,9 @@ Salesforce will reject the insert operation and throw an error (commonly `INVALI
 
 ## **Data Encryption**
 
-### **Does Vault encrypt data at rest by default?**
+### **Does** AutoRABIT Vault **encrypt data at rest by default?**
 
-Yes, by default, Vault encrypts data at rest in **Amazon S3 buckets** using **AES-256 encryption**, a highly secure encryption standard.
+Yes, by default, AutoRABIT Vault encrypts data at rest in **Amazon S3 buckets** using **AES-256 encryption**, a highly secure encryption standard.
 
 ### **What is AES-256 encryption, and why is it used?**
 
@@ -321,7 +321,7 @@ AES-256 (Advanced Encryption Standard) is a **powerful encryption algorithm** th
 
 ### **Can I disable data encryption at rest?**
 
-No, encryption at rest is enforced by default in Vault and cannot be disabled. This ensures all stored data remains secure, even in the unlikely event of unauthorized access to storage.
+No, encryption at rest is enforced by default in AutoRABIT Vault and cannot be disabled. This ensures all stored data remains secure, even in the unlikely event of unauthorized access to storage.
 
 ### **Where is encrypted data stored?**
 
@@ -331,19 +331,19 @@ Encrypted data is stored in **Amazon S3 buckets**, part of Amazon Web Services (
 
 ## **Admin**
 
-### Does Vault support the Terafina managed packages?
+### Does AutoRABIT Vault support the Terafina managed packages?
 
-Currently, Vault does not support the Terafina managed package.
+Currently, AutoRABIT Vault does not support the Terafina managed package.
 
-### Does Vault integrate with Salesforce Shield?
+### Does AutoRABIT Vault integrate with Salesforce Shield?
 
-Salesforce Shield ensures that data is encrypted at rest within Salesforce. However, when data is queried through APIs, Salesforce returns it in a decrypted format. Since Vault leverages Salesforce APIs to retrieve data, our solution fully supports the backup and restoration of Salesforce orgs where Salesforce Shield is enabled.
+Salesforce Shield ensures that data is encrypted at rest within Salesforce. However, when data is queried through APIs, Salesforce returns it in a decrypted format. Since AutoRABIT Vault leverages Salesforce APIs to retrieve data, our solution fully supports the backup and restoration of Salesforce orgs where Salesforce Shield is enabled.
 
 ***
 
-## Data Migration to Vault
+## Data Migration to AutoRABIT Vault
 
-#### **1. Should I retain existing backup snapshots after moving to Vault?**
+#### **1. Should I retain existing backup snapshots after moving to** AutoRABIT Vaul&#x74;**?**
 
 Yes. It is strongly recommended to retain your existing backup snapshots for at least **3 months**. This buffer allows for coverage in the event of immediate Salesforce failures or restoration needs.
 
@@ -352,21 +352,21 @@ Yes. It is strongly recommended to retain your existing backup snapshots for at 
 The 3-month period provides sufficient time to:
 
 * Capture multiple snapshots of both full and incremental changes in Vault.
-* Ensure data reliability in Vault moving forward.
+* Ensure data reliability in AutoRABIT Vault moving forward.
 * Account for variations in data and file size across orgs.
 
 #### **3. What happens if we were using an archival feature with our previous provider?**
 
 If you previously used an **archival feature**, check whether you utilized any **"unarchive" functionality within Salesforce**:
 
-* **If you did use unarchiving**: Vault currently does **not** support this functionality. A ticketing system or custom implementation may be necessary if unarchiving is a critical requirement.
-* **If unarchiving wasn’t used**: You can rely on Vault's archival features and proceed to delete your old archival history after ensuring everything you need is archived properly in Vault.
+* **If you did use unarchiving**: AutoRABIT Vault currently does **not** support this functionality. A ticketing system or custom implementation may be necessary if unarchiving is a critical requirement.
+* **If unarchiving wasn’t used**: You can rely on AutoRABIT Vault's archival features and proceed to delete your old archival history after ensuring everything you need is archived properly in AutoRABIT Vault.
 
 #### **4. How long should I keep archival history with the previous provider?**
 
 A **90-day period** is typically adequate. During this time:
 
-* Vault can archive the required data.
+* AutoRABIT Vault can archive the required data.
 * You can verify the completeness of archived information before decommissioning the older archive history.
 
 #### **5. What precautions should I take before deleting old archives?**
@@ -377,10 +377,10 @@ Before removing archived data from your previous solution:
 * Confirm whether any data within the legacy archive might require restoration.
 * Any restoration needs during the 90-day transition must be handled via the legacy system.
 
-#### **6. Is this a full migration of backups and snapshots into Vault?**
+#### **6. Is this a full migration of backups and snapshots into** AutoRABIT Vaul&#x74;**?**
 
-No. This process does **not** involve migrating historical snapshots into Vault. Instead:
+No. This process does **not** involve migrating historical snapshots into AutoRABIT Vault. Instead:
 
-* The focus is on setting up Vault to capture ongoing backups and archives.
+* The focus is on setting up AutoRABIT Vault to capture ongoing backups and archives.
 * This reduces engineering effort and complexity while ensuring data continuity.
 

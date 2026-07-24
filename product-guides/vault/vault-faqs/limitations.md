@@ -1,6 +1,6 @@
 # Limitations
 
-## Vault FAQs
+## AutoRABIT Vault FAQs
 
 ## Common Error Messages + Resolutions
 
@@ -107,7 +107,7 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 
 **RECORD-TYPE ACCESS ISSUE**
 
-This error indicates that the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).
+This error indicates that the Salesforce user authenticated on AutoRABIT Vault doesn’t have access to some record types of an object(s).
 
 **Resolution Steps:**
 
@@ -126,12 +126,12 @@ This error is generated when the required user permissions are missing in Salesf
 #### INVALID RECORD TYPE ID FOR THE USER
 
 * Typical error message - Record Type ID: this ID value isn't valid for the user: 012D0000000BfaLIAS:RecordTypeId --
-* This error is generated when the Salesforce user authenticated on Vault doesn’t have access to some record types of an object(s).
+* This error is generated when the Salesforce user authenticated on AutoRABIT Vault doesn’t have access to some record types of an object(s).
 
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
+2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on AutoRABIT Vault.
 
 #### CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY
 
@@ -141,7 +141,7 @@ This error is generated when the required user permissions are missing in Salesf
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Disable the triggers on the destination Org either by using the option to disable triggers in Vault or by performing the same in the Salesforce Org.
+2. Disable the triggers on the destination Org either by using the option to disable triggers in AutoRABIT Vault or by performing the same in the Salesforce Org.
 3. Alternately, try lowering the batch size of the operation to avoid more records from getting inserted/updated in parallel which may result in a CPU time limit exception.
 
 #### UNABLE\_TO\_LOCK\_ROW
@@ -177,7 +177,7 @@ Such failures occurs when such records are already present in the destination
 
 1. Click on Replicate job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. An existing automation is blocking the upsert operation. Try disabling the automation if necessary.
-3. If you would like Vault to recognize the existing records in the destination that are created/transferred outside of Vault, you can configure the unique identifier for the object and enable the option ‘Prevent duplicate record creation using unique identifiers in replicate job config to avoid Vault from attempting to recreate an existing record matching the value in the unique identifier specified.
+3. If you would like AutoRABIT Vault to recognize the existing records in the destination that are created/transferred outside of AutoRABIT Vault, you can configure the unique identifier for the object and enable the option ‘Prevent duplicate record creation using unique identifiers in replicate job config to avoid AutoRABIT Vault from attempting to recreate an existing record matching the value in the unique identifier specified.
 4. For steps on how to configure unique identifiers, go to this link:
 
 &#x20;[Unique Identifier (UID) | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/configuring-vault/registering-salesforce-org/unique-identifier-uid)
@@ -204,7 +204,7 @@ Such failures occurs when such records are already present in the destination
 
 **File Size Limits**
 
-* **Issue:** If the metadata zip file exceeds the **file size limit of 39 MB**, then Vault cannot restore the file to the destination Org.&#x20;
+* **Issue:** If the metadata zip file exceeds the **file size limit of 39 MB**, then AutoRABIT Vault cannot restore the file to the destination Org.&#x20;
 * **Details**: Use the workbench to restore larger files.&#x20;
 * **Error Message in the UI logs**: "Metadata ZIP file exceeds the maximum allowed size of 39 MB. Please refer to the  [AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/) for more details.”&#x20;
 * **Additional Info**: Refer to this [Salesforce article](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_metadata.htm) for more information on file size limitations.

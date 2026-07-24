@@ -2,12 +2,12 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-This article deals with the procedure for recovering the metadata/data to your respective Salesforce Org and provides information about the menu options that are available for restoring information in [Vault](https://www.autorabit.com/products/vault-data-backup-recovery/).
+This article deals with the procedure for recovering the metadata/data to your respective Salesforce Org and provides information about the menu options that are available for restoring information in [AutoRABIT Vault](https://www.autorabit.com/products/vault-data-backup-recovery/).
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
-1. Login to your Vault account.
-2. Click **Restore** from the Vault dashboard page and click on **Restore Now**.
+1. Login to your AutoRABIT Vault account.
+2. Click **Restore** from the AutoRABIT Vault dashboard page and click on **Restore Now**.
 
 <figure><img src="../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 

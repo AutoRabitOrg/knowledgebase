@@ -2,7 +2,7 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-Backup configuration in Vault enables you to create snapshots of your Salesforce Org’s data and metadata. These backups can be full or incremental:
+Backup configuration in AutoRABIT Vault enables you to create snapshots of your Salesforce Org’s data and metadata. These backups can be full or incremental:
 
 * **Full Backup**: Captures all data and metadata.
 * **Incremental Backup**: Captures only data/metadata changed since the last backup.
@@ -11,7 +11,7 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
 
 ## Prerequisite <a href="#prerequisite" id="prerequisite"></a>
 
-* Ensure your Salesforce Org is registered with Vault.\
+* Ensure your Salesforce Org is registered with AutoRABIT Vault.\
   [Learn More](./)
 
 ## How to Set Up a Backup Configuration <a href="#how-to-set-up-a-backup-configuration-for-your-salesforce-org" id="how-to-set-up-a-backup-configuration-for-your-salesforce-org"></a>

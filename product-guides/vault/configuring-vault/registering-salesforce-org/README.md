@@ -4,30 +4,30 @@
 
 Salesforce has introduced the **External Client App (ECA)** framework as the new standard for managing OAuth-based integrations. This framework replaces the legacy **Connected App** model for newly created integrations and provides a more secure and structured way to configure external applications that access Salesforce resources.
 
-To align with Salesforce’s updated authentication framework, Vault now supports integration using **External Client Apps**. This approach ensures compatibility with Salesforce’s latest OAuth standards while maintaining secure access between Vault and Salesforce environments.
+To align with Salesforce’s updated authentication framework, AutoRABIT Vault now supports integration using **External Client Apps**. This approach ensures compatibility with Salesforce’s latest OAuth standards while maintaining secure access between AutoRABIT Vault and Salesforce environments.
 
-This guide explains how to register a Salesforce organization in Vault using the **External Client App (ECA)** configuration and authorize Vault to access Salesforce through OAuth.
+This guide explains how to register a Salesforce organization in AutoRABIT Vault using the **External Client App (ECA)** configuration and authorize AutoRABIT Vault to access Salesforce through OAuth.
 
 ## Overview
 
-Registering a Salesforce organization in Vault involves configuring an OAuth connection using a **Salesforce External Client App**. This process establishes a secure authorization flow that allows Vault to interact with Salesforce APIs.
+Registering a Salesforce organization in AutoRABIT Vault involves configuring an OAuth connection using a **Salesforce External Client App**. This process establishes a secure authorization flow that allows AutoRABIT Vault to interact with Salesforce APIs.
 
 The setup process includes the following stages:
 
-1. **Registering the Salesforce organization in Vault** by providing environment details.
+1. **Registering the Salesforce organization in AutoRABIT Vault** by providing environment details.
 2. **Creating an External Client App in Salesforce** to enable OAuth authentication.
 3. **Configuring required OAuth scopes and callback settings** within Salesforce.
-4. **Providing the Client ID and Client Secret in Vault**.
+4. **Providing the Client ID and Client Secret in AutoRABIT Vault**.
 5. **Authorizing Vault to access Salesforce** through the OAuth authorization process.
 6. **Validating the connection** and completing the org registration.
 
-Once the setup is complete, the Salesforce organization becomes available in Vault and can be used for operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Data Masking**.
+Once the setup is complete, the Salesforce organization becomes available in AutoRABIT Vault and can be used for operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Data Masking**.
 
-## Step-By-Step Guide: Registering a Source Salesforce Org in Vault
+## Step-By-Step Guide: Registering a Source Salesforce Org in AutoRABIT Vault
 
 ### Navigate to the Salesforce Orgs Setup Page
 
-On the **Vault Setup** page, the **Salesforce Orgs List** displays all registered Salesforce environments.
+On the **AutoRABIT Vault Setup** page, the **Salesforce Orgs List** displays all registered Salesforce environments.
 
 To register a new Salesforce organization:
 
@@ -51,7 +51,7 @@ Configure the following fields:
   * **Salesforce** – Standard Salesforce organization.
   * **nCino** – nCino environment running on Salesforce.
 * **Salesforce API Version** – Select the API version used for integration.
-* **Org Title** – Enter a recognizable name for the organization.This name helps identify the org within Vault.
+* **Org Title** – Enter a recognizable name for the organization.This name helps identify the org within AutoRABIT Vault.
 * **User Name** – Enter the Salesforce username used for authentication.
 
 ### Select Salesforce Environment Type
@@ -82,7 +82,7 @@ The next step guides the creation of a **Salesforce External Client App** requir
 
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1) (1)>)
 
-Vault displays the configuration steps that must be completed in Salesforce.
+AutoRABIT Vault displays the configuration steps that must be completed in Salesforce.
 
 **Complete the following actions in Salesforce:**
 
@@ -91,9 +91,9 @@ Vault displays the configuration steps that must be completed in Salesforce.
 3. Enable **OAuth Plugin**.
 4. Select **Authorization Code (Web Server) Flow**.
 5. Disable the **PKCE security option**.
-6. Add the **Callback URL** provided in Vault.
+6. Add the **Callback URL** provided in AutoRABIT Vault.
 
-After completing the configuration in Salesforce, return to Vault.
+After completing the configuration in Salesforce, return to AutoRABIT Vault.
 
 Click **I've completed the setup** to continue.
 
@@ -113,13 +113,13 @@ The following scopes must be enabled:
 * **Full access (full)**
 * **Perform requests at any time (refresh\_token, offline\_access)**
 
-Ensure the **Callback URL (Redirect URI)** matches exactly with the value provided in Vault.
+Ensure the **Callback URL (Redirect URI)** matches exactly with the value provided in AutoRABIT Vault.
 
 Any mismatch will result in connection failure.
 
 ### Enter OAuth Credentials
 
-After completing the Salesforce External Client App configuration, provide the OAuth credentials in Vault.
+After completing the Salesforce External Client App configuration, provide the OAuth credentials in AutoRABIT Vault.
 
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1)>)
 
@@ -140,11 +140,11 @@ These values are available in Salesforce under the External Client App configura
 4. Click **Manage Consumer Details**.
 5. Copy the **Consumer Key (Client ID)** and **Consumer Secret (Client Secret)**.
 
-Paste these values into the corresponding fields in Vault.
+Paste these values into the corresponding fields in AutoRABIT Vault.
 
 Click **Continue** to proceed to the authorization step.
 
-### Authorize Vault to Access Salesforce
+### Authorize AutoRABIT Vault to Access Salesforce
 
 The **Connect to Salesforce** step initiates the OAuth authorization process.
 
@@ -152,13 +152,13 @@ The **Connect to Salesforce** step initiates the OAuth authorization process.
 
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (9) (1) (1) (1)>)
 
-Vault displays the connection details for verification:
+AutoRABIT Vault displays the connection details for verification:
 
 * **Org Title** – The name assigned during configuration.
 * **Type** – The selected Salesforce environment (Production or Sandbox).
 * **Login URL** – The Salesforce login endpoint used for authentication.
 
-This step establishes a secure connection between Vault and the Salesforce organization.
+This step establishes a secure connection between AutoRABIT Vault and the Salesforce organization.
 
 Click **Connect to Salesforce** to begin the authorization process.
 
@@ -174,19 +174,19 @@ After clicking **Connect to Salesforce**, the following process occurs:
 
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (11) (1) (1) (1)>)
 
-1.  Salesforce displays the permissions requested by Vault.
+1.  Salesforce displays the permissions requested by AutoRABIT Vault.
 
     <figure><img src="../../../../.gitbook/assets/image (2463).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (2464).png" alt=""><figcaption></figcaption></figure>
 2. Select **Allow** to grant the required access.
-3. After authorization, Salesforce redirects back to Vault automatically.
+3. After authorization, Salesforce redirects back to AutoRABIT Vault automatically.
 
-Vault then completes the validation and confirms the connection.
+AutoRABIT Vault then completes the validation and confirms the connection.
 
 ### Validation and Setup Completion
 
-After the authorization process is completed, Vault validates the Salesforce connection and displays a **Connection Successful** confirmation.
+After the authorization process is completed, AutoRABIT Vault validates the Salesforce connection and displays a **Connection Successful** confirmation.
 
 ![](<../../../../.gitbook/assets/Unknown image (14) (1) (1)>)
 
@@ -197,11 +197,11 @@ The **Validation & Confirmation** step displays the environment details of the c
 * **Instance URL** – The Salesforce instance endpoint used for API communication.
 * **Login URL** – The login endpoint used for authentication.
 
-This confirmation indicates that the Salesforce organization has been successfully connected to Vault.
+This confirmation indicates that the Salesforce organization has been successfully connected to AutoRABIT Vault.
 
 ### Test the API Connection
 
-To verify that Vault can communicate with the Salesforce environment, perform an API connectivity test.
+To verify that AutoRABIT Vault can communicate with the Salesforce environment, perform an API connectivity test.
 
 1. In the **Test Your Connection** section, click **Test API Connection**.
 
@@ -209,13 +209,13 @@ To verify that Vault can communicate with the Salesforce environment, perform an
 
 ### Verify the API Connection Status
 
-If the connection test succeeds, Vault displays a confirmation message indicating that the API communication is working correctly.
+If the connection test succeeds, AutoRABIT Vault displays a confirmation message indicating that the API communication is working correctly.
 
 ![](<../../../../.gitbook/assets/Unknown image (16) (1) (1)>)
 
 A notification message appears confirming that the **API connection test was successful**.
 
-This validation ensures that Vault can securely interact with the Salesforce environment using the configured OAuth credentials.
+This validation ensures that AutoRABIT Vault can securely interact with the Salesforce environment using the configured OAuth credentials.
 
 ### Complete the Org Registration
 
@@ -225,17 +225,17 @@ After the connection test is successful:
 
 ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (17) (1) (1)>)
 
-Vault completes the org registration process and closes the **Source Org Integration** wizard.
+AutoRABIT Vault completes the org registration process and closes the **Source Org Integration** wizard.
 
-The newly connected Salesforce organization now appears in the **Salesforce Orgs List** within the **Setup** section and is available for Vault operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Masking**.
+The newly connected Salesforce organization now appears in the **Salesforce Orgs List** within the **Setup** section and is available for AutoRABIT Vault operations such as **Backup, Compare, Search & Compare, Restore, Replication, and Masking**.
 
 ### Confirm Successful Org Registration
 
-After clicking **Finish**, Vault displays a confirmation message indicating that the Salesforce organization has been successfully registered.
+After clicking **Finish**, AutoRABIT Vault displays a confirmation message indicating that the Salesforce organization has been successfully registered.
 
 ![](<../../../../.gitbook/assets/Unknown image (18) (1) (1)>)
 
-This confirmation verifies that the integration process has completed successfully and the Salesforce environment is now available for Vault operations.
+This confirmation verifies that the integration process has completed successfully and the Salesforce environment is now available for AutoRABIT Vault operations.
 
 Click **OK** to close the confirmation message.
 
@@ -255,7 +255,7 @@ The list provides key details for each connected environment, including:
 6. **Authentication Type**
 7. **Instance URL**
 
-The newly added organization now appears in this list and is ready to be used within Vault.
+The newly added organization now appears in this list and is ready to be used within AutoRABIT Vault.
 
 ### Re-authenticate an Existing Org (If Required)
 
@@ -269,7 +269,7 @@ To re-authenticate an organization:
 2. Navigate to the **Actions** column.
 3. Click the **Re-authenticate** icon.
 
-Vault redirects to the Salesforce login page to complete the authentication process.
+AutoRABIT Vault redirects to the Salesforce login page to complete the authentication process.
 
 ### Authenticate Through Salesforce Login
 
@@ -284,7 +284,7 @@ Enter the following credentials:
 
 Click **Log In** to authenticate the connection.
 
-After successful authentication, Vault restores the secure connection with the Salesforce environment.
+After successful authentication, AutoRABIT Vault restores the secure connection with the Salesforce environment.
 
 ### Access Additional Org Actions
 
@@ -308,7 +308,7 @@ To view the configurations associated with the org:
 
 1. Click **View Configs**.
 
-Vault opens the configuration view for the selected Salesforce org, allowing management of backup and archive configurations.
+AutoRABIT Vault opens the configuration view for the selected Salesforce org, allowing management of backup and archive configurations.
 
 ### View Backup Configurations
 
@@ -341,7 +341,7 @@ The **Back to Orgs List** option allows navigation back to the **Salesforce Orgs
 
 ### Open the Salesforce Org Edit Option
 
-Vault allows updating the configuration details of a registered Salesforce org.
+AutoRABIT Vault allows updating the configuration details of a registered Salesforce org.
 
 1. Navigate to **Setup**.
 2. Locate the required org in the **Salesforce Orgs List**.
@@ -350,7 +350,7 @@ Vault allows updating the configuration details of a registered Salesforce org.
 
 ![A list of data on a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (66)>)
 
-Vault opens the **Environment Details** window for the selected Salesforce environment.
+AutoRABIT Vault opens the **Environment Details** window for the selected Salesforce environment.
 
 ### Update Salesforce Org Configuration
 
@@ -371,7 +371,7 @@ Vault opens the **Environment Details** window for the selected Salesforce envir
 
 2. After reviewing the changes, click **Save** to apply the updated configuration.
 
-Vault updates the Salesforce org details while maintaining the existing connection settings.
+AutoRABIT Vault updates the Salesforce org details while maintaining the existing connection settings.
 
 ### Open Client Key Configuration
 
@@ -399,7 +399,7 @@ The first stage of the wizard provides guidance for creating an **External Clien
 
     ![](<../../../../.gitbook/assets/Unknown image (70)>)
 
-1.  Copy the **Callback URL (Redirect URI)** displayed in Vault and add it to the External Client App configuration in Salesforce.
+1.  Copy the **Callback URL (Redirect URI)** displayed in AutoRABIT Vault and add it to the External Client App configuration in Salesforce.
 
 
 
@@ -416,7 +416,7 @@ The first stage of the wizard provides guidance for creating an **External Clien
 
     ![](<../../../../.gitbook/assets/Unknown image (72)>)
 
-1. Ensure that the **Redirect URI in Salesforce exactly matches the Callback URL displayed in Vault** to prevent connection failures.
+1. Ensure that the **Redirect URI in Salesforce exactly matches the Callback URL displayed in AutoRABIT Vault** to prevent connection failures.
 2. After completing the Salesforce configuration, click **Next** to proceed.
 
 ### Enter Client Credentials
@@ -437,7 +437,7 @@ The first stage of the wizard provides guidance for creating an **External Clien
 1. These values can be retrieved in Salesforce by navigating to:**Setup → App Manager → External Client App → Manage Consumer Details**.
 2. After entering the credentials, proceed to save and re-authenticate the connection.
 
-Vault uses these credentials to securely establish OAuth authentication with the Salesforce org.
+AutoRABIT Vault uses these credentials to securely establish OAuth authentication with the Salesforce org.
 
 ### Open Connect Configuration
 

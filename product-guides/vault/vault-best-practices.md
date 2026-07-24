@@ -1,4 +1,4 @@
-# Vault Best Practices
+# AutoRABIT Vault Best Practices
 
 ## Understanding Salesforce Backup and Recovery: Challenges, Best Practices, and Effective Strategies <a href="#title-text" id="title-text"></a>
 
@@ -18,7 +18,7 @@ Salesforce operates on a shared responsibility model, where users must take acti
 4. **Triggers and Other Process Automation**: Salesforce allows many kinds of process automation to occur when records are inserted, deleted, or updated in Salesforce. This process automation takes time to run. That time may be insignificant for individual record updates but can cause substantial delays when writing large volumes of data. It is critical for customers to architect their applications in such a way that this automation **does not execute** when doing large data loads such as restores or replications.
 5. **Constraints of Managed Packages**: Managed packages within Salesforce come with their own set of limitations, further complicating backup and recovery processes. Operations within these packages can be slow and cumbersome, adding another layer of complexity to data management. For example, attempting to back up data from a managed package that has stringent data access controls can lead to incomplete or failed backups.
 
-## Best Practices for Salesforce Disaster Recovery Using Vault <a href="#title-text" id="title-text"></a>
+## Best Practices for Salesforce Disaster Recovery Using AutoRABIT Vault <a href="#title-text" id="title-text"></a>
 
 Salesforce is a mission-critical system for many organizations, making disaster recovery a top priority. Establishing a clear Recovery Time Objective (RTO) and Recovery Point Objective (RPO) is essential to ensure business continuity in case of data corruption or system downtime. This guide outlines best practices for designing a disaster recovery strategy using AutoRABIT Vault, drawing on real-world experience with Salesforce environments.
 
@@ -29,7 +29,7 @@ When organizations attempt a full restore of Salesforce data to assess RTO and R
 * **Salesforce Validations**: Standard Salesforce validations may trigger errors during the restore, causing the process to fail.
 * **Governor Limits**: Full restores can run into Salesforce’s governor limits or max API call restrictions, making it difficult to complete the operation.
 * **Data Complexity**: The variety of data types in Salesforce adds complexity, as not all types can be restored easily or in the expected format.
-* **Infrastructure Overload**: Excessive resource consumption on Vault’s infrastructure may slow down the process, causing jobs to stall or fail.
+* **Infrastructure Overload**: Excessive resource consumption on AutoRABIT Vault’s infrastructure may slow down the process, causing jobs to stall or fail.
 
 These challenges can hinder the success of a comprehensive disaster recovery strategy. However, by following a few key best practices, organizations can mitigate these risks and run smooth recovery exercises.
 
@@ -48,7 +48,7 @@ These challenges can hinder the success of a comprehensive disaster recovery str
 
     **Recommendation**: Plan for a staggered restoration where the most critical data is restored first, reducing the likelihood of job failures and governor limits.
 4.  **Optimize Resource Usage**\
-    To prevent Vault’s infrastructure from becoming overloaded during a restore, monitor the resources used by the restore process and adjust accordingly. This will help ensure that jobs complete successfully without stalling.
+    To prevent AutoRABIT Vault's infrastructure from becoming overloaded during a restore, monitor the resources used by the restore process and adjust accordingly. This will help ensure that jobs complete successfully without stalling.
 
     **Recommendation**: Set resource usage thresholds and plan restores during off-peak hours when system load is lower.
 5.  **Test Recovery Processes Regularly**\
@@ -65,18 +65,18 @@ AutoRABIT Vault, when paired with a thoughtful recovery strategy, can provide th
 ## **Techniques and Best Practices for Effective Backup and Recovery**
 
 1. **Identify Critical Data and Objects**: AutoRABIT works with customers to determine the critical objects and data essential for business continuity. Establish Recovery Point Objectives (RPO) and Recovery Time Objectives (RTO) around these critical elements to ensure prioritized recovery in case of data loss. For example, a financial services company might prioritize backing up customer account data and transaction histories to ensure minimal disruption in case of data loss.
-2. **Using Trigger Handlers or Other Means to Disable Automation**: It is important to prevent automated jobs from executing when you are performing restore and replication jobs. While Vault has the ability to disable Triggers and Workflow rules, this is not an efficient way to disable automation since it requires a deployment to the org, which can require test execution, and will disable this automation for ALL users. By contrast, Trigger handlers allow this automation to be disabled only for the user performing the restore jobs. See [this article](https://knowledgebase.autorabit.com/product-guides/vault/vault-best-practices#restore-replicate-best-practices) for more information.
+2. **Using Trigger Handlers or Other Means to Disable Automation**: It is important to prevent automated jobs from executing when you are performing restore and replication jobs. While AutoRABIT Vault has the ability to disable Triggers and Workflow rules, this is not an efficient way to disable automation since it requires a deployment to the org, which can require test execution, and will disable this automation for ALL users. By contrast, Trigger handlers allow this automation to be disabled only for the user performing the restore jobs. See [this article](https://knowledgebase.autorabit.com/product-guides/vault/vault-best-practices#restore-replicate-best-practices) for more information.
 3. **Incremental Testing**: For large datasets, test recovery processes using smaller data chunks before scaling up. This approach helps identify potential issues early and ensures a smoother recovery process when dealing with full datasets. A practical application might involve a retail company testing the recovery of sales data for a single store before attempting to recover data for all locations.
 4. **Regular Customization Reviews**: Periodically review and assess the ongoing customizations in the Salesforce environment and their impact on the backup and recovery times. This practice helps identify changes that might complicate the 'restore' process, allowing for timely adjustments to recovery strategies and ensuring RTOs are met. For instance, a healthcare provider could regularly review custom patient data fields to ensure they are included in backup procedures and monitor for the inclusion of a rich text field in such objects, leading to increased time to recover.
 5. **Leverage Automated Solutions**: Utilize automated backup and recovery strategies to minimize manual intervention and reduce the risk of human error. For example, scheduling automated daily backups and performing regular automated recovery tests can help ensure that backups are up-to-date and reliable.
 
-## Best Practices for Salesforce Backup and Recovery Using Vault
+## Best Practices for Salesforce Backup and Recovery Using AutoRABIT Vault
 
 ### Salesforce Limitations
 
 Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail.
 
-See [Vault Archival Best Practices](vault-best-practices.md#archival-best-practices) below.
+See [AutoRABIT Vault Archival Best ](vault-best-practices.md#archival-best-practices)AutoRABIT Vault below.
 
 ### **Email Messages Attachment Limitation**
 
@@ -106,7 +106,7 @@ This structured approach ensures files are properly attached to Email Messages d
 8. Configure email addresses of users who need to be notified upon completion or failure of backups. (By default, the user who configured the backup will be notified automatically).
 9. Go through logs and results of backups every week to ensure that automated backups are happening as expected.
 10. Adjust frequency and scheduled time of backup configurations based on API call limit and API call consumption by other systems.
-11. A Salesforce user with which an org is registered on Vault should have admin-level permissions in the org. The recommendation is to create an admin user separately for Vault.
+11. A Salesforce user with which an org is registered on AutoRABIT Vault should have admin-level permissions in the org. The recommendation is to create an admin user separately for AutoRABIT Vault.
 
 ## Blob Data Backup Best Practices
 
@@ -146,10 +146,10 @@ By following these best practices, organizations can efficiently back up blob da
 
 ## Configuration Best Practices
 
-In this segment, we will go over some important points to note while configuring in Vault.
+In this segment, we will go over some important points to note while configuring in AutoRABIT Vault.
 
 1. **First Incremental Backup:** It is crucial to note that the first incremental backup you perform will be a full backup. This means that during the initial incremental backup, the entire dataset will be backed up.
-2. **Avoid Deleting Configurations:** It is highly recommended not to delete any configurations that you have set up. Deleting a configuration will result in the corresponding backup or archival jobs associated with it becoming inaccessible from Vault.
+2. **Avoid Deleting Configurations:** It is highly recommended not to delete any configurations that you have set up. Deleting a configuration will result in the corresponding backup or archival jobs associated with it becoming inaccessible from AutoRABIT Vault.
 3. **Limit on Users and Salesforce Orgs:** By default, the total number of users and Salesforce Orgs that you can register in AutoRABIT Vault is set to 10.
 4. **Number of Configurations:** AutoRABIT Vault allows you to create a maximum of 20 configurations, including both backup and archival configurations.
 5. **Increasing Configuration Count:** If you require more than the default count of 20 configurations, you have the option to contact AutoRABIT. They can assist you in increasing the configuration count to accommodate your specific requirements.

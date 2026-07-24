@@ -2,20 +2,20 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-This article discusses the procedure for restoring metadata and data to your Salesforce organization and the menu options available for restoring information in Vault.
+This article discusses the procedure for restoring metadata and data to your Salesforce organization and the menu options available for restoring information in AutoRABIT Vault.
 
 ## Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
 Ensure you have the following:
 
-* Salesforce Org registered with Vault.&#x20;
+* Salesforce Org registered with AutoRABIT Vault.&#x20;
 * Backup configured for your Salesforce Org. \[[Learn More](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md)]
-* At least one backup operation is triggered for your Salesforce Org in Vault.
+* At least one backup operation is triggered for your Salesforce Org in AutoRABIT Vault.
 
 ## How do I restore data / metadata? <a href="#how-to-do-it" id="how-to-do-it"></a>
 
-1. Log in to your Vault account.
-2. Click **`Restore`** from the Vault dashboard page and click on **`Restore Now`**.
+1. Log in to your AutoRABIT Vault account.
+2. Click **`Restore`** from the AutoRABIT Vault dashboard page and click on **`Restore Now`**.
 
 <figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -92,7 +92,7 @@ The next screen displays the metadata and data objects that will be replicated. 
 2. Under the **`Data`** tab, you have multiple configurations to choose from:
 3.  #### **Schema Viewer:**
 
-    The schema viewer feature in Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
+    The schema viewer feature in AutoRABIT Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
 
     1. **Accessing Account Hierarchy**
        1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
@@ -198,7 +198,7 @@ The next screen displays the metadata and data objects that will be replicated. 
         3. Enabling Only Matches limits results strictly to relevant search outcomes without altering selection state.
     14. **Summary**
 
-        The schema viewer feature in Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations
+        The schema viewer feature in AutoRABIT Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations
 
 * **`Selected Records:`** By default, all the records available in the objects will be auto-selected. To choose specific records, click **`All`** under **`Selected Records,`** which will lead you to a pop-up box where you can select the record. Post selection, the summary table should show the number of records set.
 
@@ -253,7 +253,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 ## Excluding System-Generated Feed Items – Restore
 
-The Vault application now automatically identifies and excludes system-generated FeedItems during the Restore processes. This ensures that, these items do not cause any failures during these operations.
+The AutoRABIT Vault application now automatically identifies and excludes system-generated FeedItems during the Restore processes. This ensures that, these items do not cause any failures during these operations.
 
 ### **Key Features**
 
@@ -273,7 +273,7 @@ Refer to these logs to verify the exclusions and ensure smooth operations during
 
 ## Restore Summary <a href="#restore-summary" id="restore-summary"></a>
 
-For each restore activity triggered in Vault, you will find the details below:
+For each restore activity triggered in AutoRABIT Vault, you will find the details below:
 
 <figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

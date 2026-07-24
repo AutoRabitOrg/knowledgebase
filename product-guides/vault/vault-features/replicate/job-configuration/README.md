@@ -45,7 +45,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 11. Navigate to the “Data” tab to make the rquired selection(s).
 12. Schema Viewer:
 
-    The schema viewer feature in Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
+    The schema viewer feature in AutoRABIT Vault provides a structured view of parent and child relationships for Salesforce objects. This capability enables efficient navigation, selection, and dependency management while configuring data operations. Enhanced search controls, visual indicators, and guided navigation improve usability when working with complex object hierarchies.
 
     1. **Accessing Account Hierarchy**
        1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
@@ -152,7 +152,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
         3. Enabling Only Matches limits results strictly to relevant search outcomes without altering selection state.
     21. **Summary**
 
-        The schema viewer feature in Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations.
+        The schema viewer feature in AutoRABIT Vault enables precise object selection, dependency awareness, and efficient navigation across complex schemas. Enhanced search controls, guided feedback, and visual indicators ensure clarity, accuracy, and confidence while configuring data operations.
 13. Click on the following sections and make the required selections:
 
     * **Include all child objects:** This selection ensures that all the child’s directly related and recursively related objects will be included.
@@ -186,7 +186,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     * **Select Object:** The object on which the rule is being created
     * **Field Type:** Type of field on which the rule is being created
     * **Masking Style:** Defines the pattern which will replace the data of the ‘Field Type” selected
-    * **“Add To VaultData Masking Rules List”:** By selecting this checkbox, the user can directly add this rule to the global rules list.
+    * **“Add To AutoRABIT Vault Data Masking Rules List”:** By selecting this checkbox, the user can directly add this rule to the global rules list.
     * The user can also publish a rule after saving the rule, by clicking the publish icon on the rule.
 
     <figure><img src="../../../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
@@ -201,7 +201,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 18. The user can fill in all required detail for the “Config Details”:
 
     * **Replicate Config Label**: The user can enter the name of the config to be created.
-    * **Batch Size**: The user can specify the custom batch size and which Vault will utilize for processing the data.
+    * **Batch Size**: The user can specify the custom batch size and which AutoRABIT Vault will utilize for processing the data.
     * **Email Notification**: The email to which the notifications can be triggered and sent.
     * The user can switch on all the required triggers available on the page.
     * **Schedule**: The user can set a custom schedule through the “Schedule” option available. The user’s set schedule will be utilized to run the job at different intervals.
@@ -309,7 +309,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
 ### Excluding Feed Items
 
-Vault now automatically identifies and excludes system-generated FeedItems during the Replicate processes. This ensures these items do not cause any failures during the operation.
+AutoRABIT Vault now automatically identifies and excludes system-generated FeedItems during the Replicate processes. This ensures these items do not cause any failures during the operation.
 
 #### Key Features
 

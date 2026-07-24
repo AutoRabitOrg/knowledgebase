@@ -4,7 +4,7 @@ hidden: true
 
 # Copy of Live Compare
 
-Vault's Compare feature now includes three powerful options to enhance data review and usability:
+AutoRABIT Vault's Compare feature now includes three powerful options to enhance data review and usability:
 
 * **View Records** – Quickly inspect individual records involved in the comparison.
 * **Change View** – Switch between different comparison layouts for better clarity.

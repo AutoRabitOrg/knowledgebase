@@ -1,10 +1,10 @@
-# Vault Connect
+# AutoRABIT Vault Connect
 
-## Vault Connect - Archive As Source
+## AutoRABIT Vault Connect - Archive As Source
 
 ## Introduction
 
-This document provides complete information about the new feature Vault Connect, which will enhance the user’s capability to better utilize Vault in viewing archived Salesforce data from an external data source.
+This document provides complete information about the new feature AutoRABIT Vault Connect, which will enhance the user’s capability to better utilize AutoRABIT Vault in viewing archived Salesforce data from an external data source.
 
 ## Feature Overview
 
@@ -16,21 +16,21 @@ This document provides complete information about the new feature Vault Connect,
 
 ### **Create Connect Config**
 
-1. Log in to the **Vault** application.
+1. Log in to the **AutoRABIT Vault** application.
 
 <figure><img src="../../../.gitbook/assets/image (307).png" alt="" width="563"><figcaption></figcaption></figure>
 
-2. Navigate to the setup module of the Vault application. Click on the required Org.
+2. Navigate to the setup module of the AutoRABIT Vault application. Click on the required Org.
 
 <figure><img src="../../../.gitbook/assets/image (351).png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Click on the **Connect (Beta)** module of the Vault application.
-4. &#x20;On landing on the Connect (Beta) tab of the Vault setup, the user will see the following message on the screen:
+3. Click on the **Connect (Beta)** module of the AutoRABIT Vault application.
+4. &#x20;On landing on the Connect (Beta) tab of the AutoRABIT Vault setup, the user will see the following message on the screen:
 
 <figure><img src="../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
 
-5. Once the customer reaches out to AutoRABIT support team as specified on the above screen, our technical team will perform due diligence to enable Vault Connect for the customer(s).
-6. When Vault Connect is enabled on the application, the user will see the following screen on the Connect (Beta) tab of the Vault Setup module.
+5. Once the customer reaches out to AutoRABIT support team as specified on the above screen, our technical team will perform due diligence to enable AutoRABIT Vault Connect for the customer(s).
+6. When AutoRABIT Vault Connect is enabled on the application, the user will see the following screen on the Connect (Beta) tab of the AutoRABIT Vault Setup module.
 
 <figure><img src="../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -90,15 +90,15 @@ This document provides complete information about the new feature Vault Connect,
 
 19. On the Connect Config Summary, you can view all the configurations created.
 
-## Vault Connect - Backup As Source
+## AutoRABIT Vault Connect - Backup As Source
 
 #### **Overview**
 
-Vault-Connect now supports backups as a source, significantly expanding its flexibility and utility. This enhancement enables multiple data sources—including both archives and backups—to be accessed seamlessly within Salesforce through external objects. By making historical and operational data available directly in Salesforce, Vault-Connect strengthens support for business continuity planning (BCP), compliance audits, and contingency operations, all without the need for manual data retrieval
+AutoRABIT Vault-Connect now supports backups as a source, significantly expanding its flexibility and utility. This enhancement enables multiple data sources—including both archives and backups—to be accessed seamlessly within Salesforce through external objects. By making historical and operational data available directly in Salesforce, AutoRABIT Vault-Connect strengthens support for business continuity planning (BCP), compliance audits, and contingency operations, all without the need for manual data retrieval
 
 #### Step-By-Step Guide:
 
-1. Login to the Vault application
+1. Login to the AutoRABIT Vault application
 2.  Click on any ORG and navigate to the Connect module under the ORG.
 
     <figure><img src="../../../.gitbook/assets/image (1875).png" alt=""><figcaption></figcaption></figure>
@@ -257,7 +257,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
 
 ### View Archived Rich Text Email Content
 
-To streamline the process and enhance functionality, the Vault Connect integration has been updated to support viewing of rich text fields (unsupported by external objects) through Visualforce pages in Salesforce, enabling the seamless viewing of images and other HTML content in rich text fields.
+To streamline the process and enhance functionality, the AutoRABIT Vault Connect integration has been updated to support viewing of rich text fields (unsupported by external objects) through Visualforce pages in Salesforce, enabling the seamless viewing of images and other HTML content in rich text fields.
 
 &#x20;**Steps to Implement the Fix:**
 
@@ -302,12 +302,12 @@ This enhancement ensures that archived email body content with rich text and ima
 
 **Overview**
 
-This feature enables the user to sync the latest metadata changes on Salesforce with Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects.
+This feature enables the user to sync the latest metadata changes on Salesforce with AutoRABIT Vault Connect. The user can also view the data in the same structure and the same relationship hierarchies in the connected external objects.
 
 **Step-by-Step Guide:**
 
 1. Log in to the Vault application.
-2.  Click on any Org to navigate to Vault – Connect.<br>
+2.  Click on any Org to navigate to AutoRABIT Vault – Connect.<br>
 
     <figure><img src="../../../.gitbook/assets/image (68) (2).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the “Connect” tab to go to the Connect application.<br>
@@ -401,11 +401,11 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 4. **Enable Free-Text Search Expressions:**
    * Enable the checkbox labeled **Use Free-Text Search Expressions**.
 
-By following these steps, you will enable **global search** functionality for **Vault Connect** in Salesforce.
+By following these steps, you will enable **global search** functionality for **AutoRABIT Vault Connect** in Salesforce.
 
 
 
-### Limitations of Querying Archived Data via Vault Connect <a href="#limitations-of-querying-archived-data-via-vault-connect" id="limitations-of-querying-archived-data-via-vault-connect"></a>
+### Limitations of Querying Archived Data via AutoRABIT Vault Connect <a href="#limitations-of-querying-archived-data-via-vault-connect" id="limitations-of-querying-archived-data-via-vault-connect"></a>
 
 #### 1. Indexed Fields Only <a href="#id-1.-indexed-fields-only" id="id-1.-indexed-fields-only"></a>
 
@@ -413,7 +413,7 @@ By following these steps, you will enable **global search** functionality for **
 * **Note**: To determine what is indexed in a Salesforce object, run the following query from the Salesforce developer console:\
   SELECT QualifiedApiName FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName =\<Salesforce object Name> and IsIndexed = true
 
-#### 2. Complete Value Searches <a href="#id-2.-complete-value-searches" id="id-2.-complete-value-searches"></a>
+#### 2. Complete AutoRABIT Vault Searches <a href="#id-2.-complete-value-searches" id="id-2.-complete-value-searches"></a>
 
 * Only complete value searches or queries using the equals (=) operator will work on indexed fields.
 
@@ -424,13 +424,13 @@ By following these steps, you will enable **global search** functionality for **
 
 &#x20;
 
-### Troubleshooting Guide: Verifying Salesforce Queries to External Database (Vault Connect) <a href="#troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect" id="troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect"></a>
+### Troubleshooting Guide: Verifying Salesforce Queries to External Database (AutoRABIT Vault Connect) <a href="#troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect" id="troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect"></a>
 
 #### Issue <a href="#issue" id="issue"></a>
 
 * **Symptom:** Records are not visible in the external object or global search is not functioning.
 
-#### Steps to Verify Salesforce Queries to Vault Connect <a href="#steps-to-verify-salesforce-queries-to-vault-connect" id="steps-to-verify-salesforce-queries-to-vault-connect"></a>
+#### Steps to Verify Salesforce Queries to AutoRABIT Vault Connect <a href="#steps-to-verify-salesforce-queries-to-vault-connect" id="steps-to-verify-salesforce-queries-to-vault-connect"></a>
 
 1. **Open Developer Console:**
    * Navigate to the Developer Console in Salesforce.
@@ -442,14 +442,14 @@ By following these steps, you will enable **global search** functionality for **
 4. **Set Callout Level to Finest:**
    * Change the callout level to **Finest**.
 5. **Check Logs:**
-   * Look for logs with the operation **"/aura"**. These logs will capture the details of the callouts from Salesforce to Vault Connect.
+   * Look for logs with the operation **"/aura"**. These logs will capture the details of the callouts from Salesforce to AutoRABIT Vault Connect.
 
 #### Resolution <a href="#resolution" id="resolution"></a>
 
 1. **Validate and Sync External Data Source:**
    * Go to **Setup**.
    * Search for **External Data Sources**.
-   * Click the external data source you created for Vault Connect.
+   * Click the external data source you created for AutoRABIT Vault Connect.
    * Click on **Validate and Sync**.
 2. **Reestablish Link:**
    * Completing the **Validate and Sync** will ensure that the link between Salesforce and the external data source is reestablished if there is any problem.

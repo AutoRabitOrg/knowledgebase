@@ -2,7 +2,7 @@
 
 ## Overview
 
-The retry failed records feature provides a streamlined way to reprocess only the failed records from Restore jobs. Instead of rerunning the entire job, Vault allows retrying failed records exclusively, saving time and improving efficiency.
+The retry failed records feature provides a streamlined way to reprocess only the failed records from Restore jobs. Instead of rerunning the entire job, AutoRABIT Vault allows retrying failed records exclusively, saving time and improving efficiency.
 
 ## Step-by-Step Guide
 

@@ -2,7 +2,7 @@
 
 To compare a backup with live Salesforce data:
 
-1. Log in to Vault and navigate to **COMPARE**.
+1. Log in to AutoRABIT Vault and navigate to **COMPARE**.
 2. Select the Salesforce org and any required configurations, then click **GET DETAILS**.
 3. The available backups are displayed.\
    &#xNAN;_&#x4E;ote: Hierarchical and archival backups are not supported for compare operations._

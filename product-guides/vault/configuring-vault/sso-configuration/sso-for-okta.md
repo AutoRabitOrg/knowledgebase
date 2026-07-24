@@ -1,8 +1,8 @@
-# SSO for OKTA
+# AutoRABIT Vault SSO for OKTA
 
-This article explains how to configure Single Sign-On (SSO) in Vault using Okta as the SAML 2.0 Identity Provider. When SSO is enabled, users are redirected to Okta for authentication and, upon success, are taken to the Vault Dashboard.
+This article explains how to configure Single Sign-On (SSO) in AutoRABIT Vault using Okta as the SAML 2.0 Identity Provider. When SSO is enabled, users are redirected to Okta for authentication and, upon success, are taken to the AutoRABIT Vault Dashboard.
 
-## Add the Vault Application to Okta <a href="#add-vault-application-to-okta" id="add-vault-application-to-okta"></a>
+## Add the AutoRABIT Vault Application to Okta <a href="#add-vault-application-to-okta" id="add-vault-application-to-okta"></a>
 
 ### Steps:
 
@@ -11,8 +11,8 @@ This article explains how to configure Single Sign-On (SSO) in Vault using Okta 
 3. Click **Create App Integration**.
 4. Choose **SAML 2.0** and click **Next**.
 5. In **General Settings**:
-   * Name: **Vault**
-   * Upload Vault logo
+   * Name: **AutoRABIT Vault**
+   * Upload AutoRABIT Vault logo
    * Click **Next**
 6. In the **Configure SAML** tab:
    * **Single sign on URL:** `<instanceURL>/ARVault/saml/SSO`\
@@ -27,7 +27,7 @@ This article explains how to configure Single Sign-On (SSO) in Vault using Okta 
 | customerid                 | Vault customer ID |
 | restrictAutoCreationOfUser | `Yes` or `No`     |
 
-> **Note**: Customer ID is available under the **Profile** section in your Vault account.
+> **Note**: Customer ID is available under the **Profile** section in your AutoRABIT Vault account.
 
 8. Click **Next**, then choose:
    * **"I'm an Okta customer adding an internal app"**
@@ -39,24 +39,24 @@ This article explains how to configure Single Sign-On (SSO) in Vault using Okta 
 10. Go to the **Sign On** tab and click **Identity Provider Metadata**.
     * Save the file as XML or copy the metadata URL.
 
-## Configure SSO in Vault <a href="#configure-sso-in-vault" id="configure-sso-in-vault"></a>
+## Configure SSO in AutoRABIT Vault <a href="#configure-sso-in-vault" id="configure-sso-in-vault"></a>
 
-1. Log in to Vault
+1. Log in to AutoRABIT Vault
 2. Navigate to **Settings > SSO Configuration**
 3. Enter a name for the config and select:
    * **Metadata URL** (paste the copied link), or
    * **Metadata File** (upload the XML file)
 4. Click **Activate**
 
-> You may disable login with Vault credentials by toggling off that option.
+> You may disable login with AutoRABIT Vault credentials by toggling off that option.
 
 ## Logging in Using SSO <a href="#logging-in-using-sso" id="logging-in-using-sso"></a>
 
-1. On the Vault login screen, click **Login with SSO**
+1. On the AutoRABIT Vault login screen, click **Login with SSO**
 2. Enter your **Customer ID**
 3. Click **Sign in**
 
-> You can also log in directly from your Okta dashboard by clicking on the Vault application icon.
+> You can also log in directly from your Okta dashboard by clicking on the AutoRABIT Vault application icon.
 
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
@@ -65,5 +65,5 @@ This article explains how to configure Single Sign-On (SSO) in Vault using Okta 
 
 **Causes**:
 
-1. The user is not assigned to the Vault app in Okta.
-2. `restrictAutoCreationOfUser` is set to **Yes** and the user has not been pre-created in Vault.
+1. The user is not assigned to the AutoRABIT Vault app in Okta.
+2. `restrictAutoCreationOfUser` is set to **Yes** and the user has not been pre-created in AutoRABIT Vault.

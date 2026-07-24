@@ -1,20 +1,20 @@
-# SSO with Microsoft Entra ID for Vault
+# SSO with Microsoft Entra ID for AutoRABIT Vault
 
 ## Overview <a href="#overview" id="overview"></a>
 
-This guide details how to configure **Single Sign-On (SSO)** in Vault using **Microsoft Entra ID** (formerly Azure AD) as a **SAML 2.0 Identity Provider**. This enables orgs to restrict login IPs via SSO.
+This guide details how to configure **Single Sign-On (SSO)** in AutoRABIT Vault using **Microsoft Entra ID** (formerly Azure AD) as a **SAML 2.0 Identity Provider**. This enables orgs to restrict login IPs via SSO.
 
 Benefits:
 
 * Centralized access control via Entra ID
-* Seamless user authentication into Vault
+* Seamless user authentication into AutoRABIT Vault
 * Simplified account management from the Azure portal
 
 ## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
 * An active **Entra ID** subscription
-* Admin privileges in both Vault and Entra ID
-* Vault added as a **non-gallery application**
+* Admin privileges in both AutoRABIT Vault and Entra ID
+* AutoRABIT Vault added as a **non-gallery application**
 
 ## Configure Entra ID <a href="#in-azure-a-d" id="in-azure-a-d"></a>
 
@@ -23,7 +23,7 @@ Benefits:
 1. Sign in to [Azure Portal](https://portal.azure.com).
 2. Go to **Entra ID > Enterprise Applications > New Application**
 3. Click **+ Create your own application**
-4. Name it `VAULT`, select **Non-gallery application**, and click **Create**
+4. Name it `AutoRABIT VAULT`, select **Non-gallery application**, and click **Create**
 
 <figure><img src="../../../../.gitbook/assets/image (181).png" alt="Create non-gallery application in Azure"><figcaption></figcaption></figure>
 
@@ -51,9 +51,9 @@ Benefits:
 
 <figure><img src="../../../../.gitbook/assets/image (191).png" alt="Download SAML Metadata"><figcaption></figcaption></figure>
 
-## Configure Vault <a href="#in-vault" id="in-vault"></a>
+## Configure AutoRABIT Vault <a href="#in-vault" id="in-vault"></a>
 
-1. Log in to Vault
+1. Log in to AutoRABIT Vault
 2. Navigate to **Settings > SSO Configurations**
 3. Enter your Azure username
 4. Choose **Metadata File**, upload the XML file from Azure
@@ -78,7 +78,7 @@ Benefits:
 
 **Causes**:
 
-1. User not assigned in Azure to the Vault app.
+1. User not assigned in Azure to the AutoRABIT Vault app.
 2. `restrictAutoCreationOfUser` claim is set to `Yes` and user not pre-created in Vault.
 
 

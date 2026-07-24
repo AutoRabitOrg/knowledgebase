@@ -8,7 +8,7 @@ You can configure alerts to notify you or your team members of events that requi
 
 Follow these steps to generate an email alert when configured conditions are met for records in your Salesforce Org:
 
-1. Login to your Vault account.
+1. Login to your AutoRABIT Vault account.
 2. From the dashboard, click **Setup** and then click on your **Salesforce Org**.
 
 <figure><img src="../../../.gitbook/assets/image (141).png" alt="Setup page for selecting Salesforce Org in Vault" width="563"><figcaption><p>Selecting Salesforce Org from Setup</p></figcaption></figure>
@@ -31,8 +31,8 @@ Follow these steps to generate an email alert when configured conditions are met
 <figure><img src="../../../.gitbook/assets/image (145).png" alt="Metadata alert configuration in Vault" width="559"><figcaption><p>Configuring metadata-based alerts</p></figcaption></figure>
 
 * Choose alert criteria — added, modified, deleted, or all.
-* Vault evaluates alert rules daily at **01:30 AM UTC**.
-* Select alert recipients. The default is the Salesforce Org author in Vault. You can add more teammates:
+* AutoRABIT Vault evaluates alert rules daily at **01:30 AM UTC**.
+* Select alert recipients. The default is the Salesforce Org author in AutoRABIT Vault. You can add more teammates:
   * Click **Edit** to choose additional recipients.
   * Click **Apply** after selection.
 

@@ -1226,7 +1226,7 @@
   * [Configuring AutoRABIT Vault](product-guides/vault/configuring-vault/README.md)
     * [Configure Backup Environment](product-guides/vault/configuring-vault/configure-backup-environment/README.md)
       * [Amazon AWS S3 Storage Environment](product-guides/vault/configuring-vault/configure-backup-environment/amazon-aws-s3-storage-environment/README.md)
-        * [Bring your own Key (BYOK) with Vault](product-guides/vault/configuring-vault/configure-backup-environment/amazon-aws-s3-storage-environment/bring-your-own-key-byok-with-vault.md)
+        * [Bring your own Key (BYOK) with AutoRABIT Vault](product-guides/vault/configuring-vault/configure-backup-environment/amazon-aws-s3-storage-environment/bring-your-own-key-byok-with-vault.md)
         * [IAM Role Support](product-guides/vault/configuring-vault/configure-backup-environment/amazon-aws-s3-storage-environment/iam-role-support.md)
       * [Google Cloud Platform](product-guides/vault/configuring-vault/configure-backup-environment/google-cloud-platform.md)
       * [Create an Azure Storage Account](product-guides/vault/configuring-vault/configure-backup-environment/create-a-azure-storage-account.md)

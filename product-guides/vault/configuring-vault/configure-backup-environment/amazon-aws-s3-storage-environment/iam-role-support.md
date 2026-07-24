@@ -9,14 +9,14 @@
 
 ## Introduction <a href="#introduction" id="introduction"></a>
 
-Vault supports AWS S3 as a storage environment to back up your metadata and data objects. Traditionally, users had to provide:
+AutoRABIT Vault supports AWS S3 as a storage environment to back up your metadata and data objects. Traditionally, users had to provide:
 
 * AWS S3 Bucket Name
 * Access Key
 * Secret Key
 * AWS Region
 
-However, Vault now supports **IAM Roles**, allowing users to connect to S3 buckets **without manually entering access or secret keys**.
+However, AutoRABIT Vault now supports **IAM Roles**, allowing users to connect to S3 buckets **without manually entering access or secret keys**.
 
 ***
 
@@ -36,16 +36,16 @@ For more information, refer to [AWS IAM Roles documentation](https://docs.aws.am
 
 ## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-To configure IAM Role support in Vault:
+To configure IAM Role support in AutoRABIT Vault:
 
 * An active AWS account with access to S3 buckets
 * An IAM user with permissions to assume roles and access S3
 
 ***
 
-## Configuring in Vault <a href="#configuring-in-vault" id="configuring-in-vault"></a>
+## Configuring in AutoRABIT Vault <a href="#configuring-in-vault" id="configuring-in-vault"></a>
 
-1. Log in to your **Vault** account.
+1. Log in to your **AutoRABIT Vault** account.
 2. Navigate to **Settings > Backup Environment**.
 3. Set **Storage Type** to **AWS S3**.
 4. Enter a **Label Name** (this is a user-defined reference name).

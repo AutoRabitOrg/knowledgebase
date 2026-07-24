@@ -1,6 +1,6 @@
 # Amazon AWS S3 Storage Environment
 
-The following article deals with configuring the AWS S3 bucket as a storage environment in your Vault account. To begin with, you will need an S3 bucket created in your AWS account.&#x20;
+The following article deals with configuring the AWS S3 bucket as a storage environment in your AutoRABIT Vault account. To begin with, you will need an S3 bucket created in your AWS account.&#x20;
 
 ### How to create and configure AWS S3 bucket <a href="#how-to-create-and-configure-aws-s3-bucket" id="how-to-create-and-configure-aws-s3-bucket"></a>
 
@@ -18,7 +18,7 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
    * Be between 3 and 63 characters long.
    * Not contain uppercase characters.
    * Start with a lowercase letter or number.
-5. In **Region**, choose the AWS Region where you want the bucket to reside (keep a note of the AWS region chosen by you. _For ex- us-east-2_). This will come in handy when you configure the bucket in Vault.
+5. In **Region**, choose the AWS Region where you want the bucket to reside (keep a note of the AWS region chosen by you. _For ex- us-east-2_). This will come in handy when you configure the bucket in AutoRABIT Vault.
 6. Choose **Create bucket**.
 
 <figure><img src="../../../../../.gitbook/assets/image (89) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
@@ -106,7 +106,7 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 
 <figure><img src="../../../../../.gitbook/assets/image (93) (1).png" alt="" width="512"><figcaption></figcaption></figure>
 
-16. Enter an IAM username specific for Vault integration.&#x20;
+16. Enter an IAM username specific for AutoRABIT Vault integration.&#x20;
 17. Select the **AWS access type** as **Programmatic access.**
 18. Click on **Next: Permissions** to go to the next page.
 
@@ -119,11 +119,11 @@ The following article deals with configuring the AWS S3 bucket as a storage envi
 20. Search for the policy created in _Steps 10-14._&#x20;
 21. Select the policy and click on **Next: Tags.**&#x20;
 22. Skip to the last screen and click on **Create user**.&#x20;
-23. Click on **Download .CSV file** for downloading the credentials (access key and secret key) to be configured in Vault.&#x20;
+23. Click on **Download .CSV file** for downloading the credentials (access key and secret key) to be configured in AutoRABIT Vault.&#x20;
 
-### Configuring in Vault <a href="#configuring-in-vault" id="configuring-in-vault"></a>
+### Configuring in AutoRABIT Vault <a href="#configuring-in-vault" id="configuring-in-vault"></a>
 
-1. Log in to your Vault account.
+1. Log in to your AutoRABIT Vault account.
 2. Go to **Settings > Backup Environment.**
 3. Select **AWS S3** as the **Storage Type**.
 4. Provide a **label** of your choice (Need not be the same as your S3 Bucket name).

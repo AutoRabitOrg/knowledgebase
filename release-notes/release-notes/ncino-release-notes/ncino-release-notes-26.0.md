@@ -2,6 +2,22 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.3.4 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
+
+**Release Date: 26 July 2026**
+
+#### Batch Size Should Not Default to Zero <a href="#batch-size-should-not-default-to-zero" id="batch-size-should-not-default-to-zero"></a>
+
+Fixed an issue where the batch size field was auto-populated with zero by default. The batch size field will no longer be pre-filled with a value in all areas involving data migration.
+
+#### \[nCino] Deployment Iteration – Step 5 Data Deployment DynamoDB Error <a href="#ncino-deployment-iteration-step-5-data-deployment-dynamodb-error" id="ncino-deployment-iteration-step-5-data-deployment-dynamodb-error"></a>
+
+Resolved a failure in **Step 5 – Data Deployment** during Feature Deployment using Deploy from Template Configuration. The deployment was failing with a DynamoDB error due to an empty attribute. Data Deployment now completes successfully without DynamoDB validation errors.
+
+#### CI Job Build Fails with "No Default External ID Found" Error <a href="#ci-job-build-fails-with-no-default-external-id-found-error" id="ci-job-build-fails-with-no-default-external-id-found-error"></a>
+
+Fixed a CI Job build failure that occurred during **Step 2 – Object Configuration** when using **Deploy using Salesforce and Version Control**. The build was throwing an exception, causing the entire CI Job to fail. The object configuration step now handles this scenario correctly.
+
 ## nCino - Release 26.3.3 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 19 July 2026**

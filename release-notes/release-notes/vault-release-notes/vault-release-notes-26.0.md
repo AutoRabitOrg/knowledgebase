@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to our mailing list to receive AutoRABIT updates!" %}
 
-## AutoRABIT Vault Release Notes 26.3.2
+## AutoRABIT Vault Release Notes 26.2.3
 
 **Release Date: 29 July 2026**
 

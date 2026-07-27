@@ -9,14 +9,14 @@ Before analyzing the source code in VS Code, make sure you have
 * Purchased a valid license or generated a trial license for IZ Scan.
 {% endhint %}
 
-### Features:
+### Features
 
 1. Develop/Create a custom rule definition and evaluate against the project.
 2. Provides feedback about any syntax errors in the rule definition.
 3. Capability to evaluate the rule definition on Mule components, APIs, property files, pom.xml, etc.
 4. Publish the rule definition to the configured server and activate it.
 
-### Custom Rule Editor:
+### Custom Rule Editor
 
 5. Use `Ctrl+Shift+P` (Cmd+Shift+P on macOS) and search for **`IZ Scan: Custom Rule Editor`** to open the view
 6. Custom rule editor properties -
@@ -39,7 +39,7 @@ Before analyzing the source code in VS Code, make sure you have
 
        <figure><img src="../../../../../../.gitbook/assets/custom-rules-editor-vs.png" alt=""><figcaption></figcaption></figure>
 
-### Evaluating Custom Rule:
+### Evaluating Custom Rule
 
 1. Click on **`Evaluate Rule`** button to validate and execute the rule definition
 2. Custom rule will be applied on the current project and results will be displayed in **`Evaluation Results`** section
@@ -50,7 +50,7 @@ Before analyzing the source code in VS Code, make sure you have
 
     <figure><img src="../../../../../../.gitbook/assets/custom-rules-eval-results-error-vs.png" alt=""><figcaption></figcaption></figure>
 
-### Publishing Custom Rule:
+### Publishing Custom Rule
 
 {% hint style="warning" %}
 Before publishing a custom rule, make sure you have:

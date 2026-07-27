@@ -2,7 +2,7 @@
 
 ## Autofix - Issues
 
-Autofix is a feature, where static code analysis issues can be fixed automatically with the click of a button.
+Autofix is a feature where static code analysis issues can be fixed automatically with the click of a button.
 
 {% hint style="warning" %}
 Make sure you have:

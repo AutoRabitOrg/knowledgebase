@@ -2,14 +2,15 @@
 
 ### Generate Security Token - IDE
 
+<figure><img src="../../../../../.gitbook/assets/generate_user_access_token.png" alt=""><figcaption></figcaption></figure>
+
 1.  Security token for configuring **`Access Tokens`** in either `Anypoint Studio` or `VS Code` can be generated from the **`IZ Server`** by following the steps below -
 
     1. Login to **`IZ Web Application`**. The URL will differ for hybrid and on-premises installations.
     2. Navigate to **`My Account`** main menu. If you are an admin and trying to generate a token on behalf of another user, navigate to **`Organization`** main menu -> **`Tokens`**
     3. Click on **`Generate Token`**, enter the token name, and select **`IZ IDE Developers`** role. Assign **`Custom Rule Publisher`** role, if applicable for the token, which will be used to publish custom rules.
 
-    \
-    ![](../../../../../.gitbook/assets/generate_user_access_token.png)
+    <br>
 
 
 

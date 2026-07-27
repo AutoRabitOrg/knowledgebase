@@ -7,7 +7,7 @@ Before analyzing the source code in VS Code, make sure you have
 * Purchased a valid license or generated a trial license for Mule Scanner or API Scanner or both.
 {% endhint %}
 
-### On The Fly Results:
+### On The Fly Results
 
 **`On The Fly Results`** table/view will display the issues related to the project that a user is working on. Project is determined based on the current active file (i.e., the file that user is working on).\
 Issues will be detected and reported as and when the connectors/components are configured in the project. With this, the issues can be fixed even before they exist.\

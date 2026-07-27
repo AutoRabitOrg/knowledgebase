@@ -8,11 +8,11 @@ Java installation will be checked in the following order, and if none of them ar
 
 ### Installation availability in the command line
 
-1. Checks whether Java version is already installed and available as part of the command line command. The following command will be executed to check the Java installation: > java -version openjdk version "11.0.15" OpenJDK Runtime Environment Homebrew (build 11.0.15+0) OpenJDK 64-Bit Server VM Homebrew (build 11.0.15+0, mixed mode)
+Checks whether Java version is already installed and available as part of the command line command. The following command will be executed to check the Java installation: > java -version openjdk version "11.0.15" OpenJDK Runtime Environment Homebrew (build 11.0.15+0) OpenJDK 64-Bit Server VM Homebrew (build 11.0.15+0, mixed mode)
 
 ### JAVA\_HOME environment variable
 
-1. Validates whether the **`JAVA_HOME`** environment variable is configured, and if configured, ensures that the Java version meets the specified requirements.
+Validates whether the **`JAVA_HOME`** environment variable is configured, and if configured, ensures that the Java version meets the specified requirements.
 
 ### Java Home directory from settings
 

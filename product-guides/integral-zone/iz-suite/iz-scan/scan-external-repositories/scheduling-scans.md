@@ -1,6 +1,6 @@
-# Scheduling External Repositories
+# Scheduling Scans
 
-## Scheduling Scans For External Repositories
+## Scheduling Scans for External Repositories
 
 ### Sync Repositories from External Sources - **`IZ Scan Sync`** Job
 

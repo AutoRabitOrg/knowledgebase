@@ -2,13 +2,13 @@
 
 {% hint style="warning" %}
 * To start scanning the APIs, a schedule has to be created to scan the APIs in Anypoint **`Exchange`**
-* To create a schedule follow the steps mentioned at [Configure Schedule](../../azure-ais/schedule-configuration.md)
+* To create a schedule, follow the steps mentioned at [Configure Schedule](../../azure-ais/schedule-configuration.md)
 * All APIs published in the configured Business Group’s **`Exchange`** will be scanned.
 {% endhint %}
 
 ### Configuring Schedule
 
-1. While configuring the schedule select `Anypoint Exchange APIs Analysis` job type
+1. While configuring the schedule, select `Anypoint Exchange APIs Analysis` job type
 2. In the next step, select the required `Organizations`
 3. Choose the appropriate schedule
 

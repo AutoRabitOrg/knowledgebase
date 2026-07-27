@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 * To start scanning the API Instances, a schedule has to be created to scan the applications deployed to `API Manager` in Anypoint Platform.
-* To create a schedule follow the steps mentioned at [Configure Schedule](../../azure-ais/schedule-configuration.md).
+* To create a schedule, follow the steps mentioned in [Configure Schedule](../../azure-ais/schedule-configuration.md).
 {% endhint %}
 
 ### Configuring Schedule

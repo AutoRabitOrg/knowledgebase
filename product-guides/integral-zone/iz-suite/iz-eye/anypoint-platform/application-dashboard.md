@@ -1,10 +1,10 @@
 # Application Dashboard
 
-Application Dashboard displays the summary / grouped report of all the issues and metrics in the application -
+Application Dashboard displays the summary / grouped report of all the issues and metrics in the application:
 
 1. Navigate to **`IZ Eye`** and select any application type. E.g.: Mule Projects or APIs
 2. Click on the **`View Dashboard`** action of any of the applications
-3. Dashboard is group by -
+3. Dashboard is grouped by:
    1. **`Application Statistics`** - Displays all the issues grouped by rule severity and category&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/issue-count-by-org (1).png" alt=""><figcaption></figcaption></figure>

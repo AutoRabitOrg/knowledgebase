@@ -43,7 +43,7 @@ Benefits:
 | firstname                  | Attribute | `user.givenname`                                                        |
 | lastname                   | Attribute | `user.surname`                                                          |
 | customerid                 | Attribute | AutoRABIT Vault Customer ID (from your AutoRABIT Vault Profile section) |
-| restrictAutoCreationOfUser | Attribute | `Yes` or `No` (controls auto user creation in Vault)                    |
+| restrictAutoCreationOfUser | Attribute | `Yes` or `No` (controls auto user creation in AutoRABIT Vault)          |
 
 <figure><img src="../../../../.gitbook/assets/image (190).png" alt="Claims configuration"><figcaption></figcaption></figure>
 

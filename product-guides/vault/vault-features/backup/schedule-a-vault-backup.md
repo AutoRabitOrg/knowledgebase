@@ -1,8 +1,8 @@
-# Schedule a Vault Backup
+# Schedule a Backup
 
 ### Overview <a href="#overview" id="overview"></a>
 
-AutoRABIT Vault gives you the possibility of a one-time backup configuration, setting frequency, e.g., every day at 03:00 PM for your Salesforce, and ... that is all you need to have your data/metadata backed up in AutoRABIT Vault.&#x20;
+AutoRABIT Vault gives you the possibility of a one-time backup configuration, setting frequency, e.g., every day at 03:00 PM for your Salesforce, and... that is all you need to have your data/metadata backed up in AutoRABIT Vault.&#x20;
 
 ### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
@@ -10,7 +10,7 @@ AutoRABIT Vault gives you the possibility of a one-time backup configuration, se
 
 ### How to do it? <a href="#how-to-do-it" id="how-to-do-it"></a>
 
-When registering your Salesforce Org in AutoRABIT Vault, you must configure the backup and set the backup schedule criteria. You will need to choose the metadata and data records as a part of the backup process before you schedule them. Head to the [Backup Configuration](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md) article for detailed information on selecting metadata and data records for your Salesforce Org.
+When registering your Salesforce Org in AutoRABIT Vault, you must configure the backup and set the backup schedule criteria. You will need to choose the metadata and data records as part of the backup process before you schedule them. Head to the [Backup Configuration](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md) article for detailed information on selecting metadata and data records for your Salesforce Org.
 
 When you are done with the metadata/data selection, you will be navigated to the **`Scheduling`** screen, where you are required to fill in the details as follows:
 
@@ -48,7 +48,7 @@ When you are done with the metadata/data selection, you will be navigated to the
 
 7. You can specify until what period you want to retain the backed-up data under the **`Backup Retention period`** field.
 8. Click **`Save Config`**.
-9. The next screen will display the summary list of metadata and data members selected for your salesforce and how the backup will be carried out.
+9. The next screen will display the summary list of metadata and data members selected for your Salesforce and how the backup will be carried out.
    * Click **`Save`**. A confirmation message stating the backup is successfully configured for your Salesforce org will be displayed.
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

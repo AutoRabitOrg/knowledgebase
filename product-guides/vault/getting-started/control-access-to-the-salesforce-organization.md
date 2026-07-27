@@ -24,5 +24,5 @@ If this toggle is **disabled**, all users in the AutoRABIT Vault account will ha
 ## When "Enable Org. Access Control" Is Turned **Off** <a href="#enable-org-access-control-is-turned-off" id="enable-org-access-control-is-turned-off"></a>
 
 1. All users in the AutoRABIT Vault account can access **all registered Salesforce orgs**.
-2. Users can perform Vault operations on **any org**, regardless of who registered it.
+2. Users can perform AutoRABIT Vault operations on **any org**, regardless of who registered it.
 3. The **Salesforce Orgs List** will display **every org** currently registered in AutoRABIT Vault for all users.

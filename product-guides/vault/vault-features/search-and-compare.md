@@ -1,7 +1,5 @@
 # Search & Compare
 
-Search & Compare
-
 ### Introduction
 
 The Search & Compare feature enables users to identify, analyze, and restore data changes across Backups and Archives within AutoRABIT Vault. It provides a structured way to search for specific records using defined criteria and compare data across selected point-in-time snapshots.
@@ -31,9 +29,9 @@ Search results are presented in a structured comparison view, allowing users to 
 
 ## Step-By-Step Guide
 
-#### **Create The Job Config**
+#### **Create the Job Config**
 
-1. Navigate to **Search & Compare module and click on the Job Config**.
+1. Navigate to **Search & Compare module** and click on the **Job Config**.
 2. Select the required **Salesforce Org** and click **Apply**.
 3. Click **New Config** to create a new Search and Compare configuration.
 
@@ -90,7 +88,7 @@ Search results are presented in a structured comparison view, allowing users to 
 
 
     <figure><img src="../../../.gitbook/assets/62.png" alt=""><figcaption></figcaption></figure>
-4.  The **Case sensitivity info** popup is displayed.
+4.  The **Case sensitivity info** pop-up is displayed.
 
     Review the details:
 
@@ -100,7 +98,7 @@ Search results are presented in a structured comparison view, allowing users to 
 
 
     <figure><img src="../../../.gitbook/assets/63.png" alt=""><figcaption></figcaption></figure>
-5. Click **OK** to close the popup.
+5. Click **OK** to close the pop-up.
 6. Modify the auto-generated query if customization is needed.
 7.  The query section dynamically updates based on the selected fields and filters.
 
@@ -389,7 +387,7 @@ AutoRABIT Vault displays the list of backups and archives identified based on th
 
 1. Review the confirmation message indicating that the comparison has started successfully.
 2. Click **OK**.
-3. Clicking OK Will redirect the navigation to the “Compare” screen.
+3. Clicking OK will redirect the navigation to the “Compare” screen.
 
 #### Compare History Page
 
@@ -464,7 +462,7 @@ AutoRABIT Vault displays the list of backups and archives identified based on th
 
 #### Review and Restore
 
-1.  From the compare results page, select the required record.
+1.  From the Compare results page, select the required record.
 
 
 
@@ -543,7 +541,7 @@ AutoRABIT Vault displays the list of backups and archives identified based on th
 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](<../../../.gitbook/assets/Unknown image (9) (1) (1) (1) (1)>)
-2.  On completing the required selections click “CLONE” to initiate the cloning
+2.  On completing the required selections, click “CLONE” to initiate the cloning.
 
 
 

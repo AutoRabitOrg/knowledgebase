@@ -194,18 +194,18 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
 <figure><img src="../../../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
-16. On clicking “OK”, the rule will be published and available with the global list of rules associated with the ORG.
+16. On clicking “OK”, the rule will be published and available with the global list of rules associated with the Org.
 17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1555).png" alt=""><figcaption></figcaption></figure>
-18. The user can fill in all required detail for the “Config Details”:
+18. The user can fill in all required details for the “Config Details”:
 
     * **Replicate Config Label**: The user can enter the name of the config to be created.
     * **Batch Size**: The user can specify the custom batch size and which AutoRABIT Vault will utilize for processing the data.
     * **Email Notification**: The email to which the notifications can be triggered and sent.
     * The user can switch on all the required triggers available on the page.
     * **Schedule**: The user can set a custom schedule through the “Schedule” option available. The user’s set schedule will be utilized to run the job at different intervals.
-    * **Metadata**: The user can observe the selected ‘meta data’ components during the config creation.
+    * **Metadata**: The user can observe the selected ‘metadata’ components during the config creation.
     * **Data:** The user can observe the objects that are selected during the config creation.
     * On completing all the required selections, the user can select either “Save” or “Save & Run”.
 
@@ -216,7 +216,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     <figure><img src="../../../../../.gitbook/assets/image (1558).png" alt=""><figcaption></figcaption></figure>
 19. **Save:** Will save the config created. It will not trigger the job automatically while saving the job.
     * The user will observe “Save” on the “Replication Config Info” page if “Save” is selected.
-20. &#x20;**Save & Run:** Will save the config created and will trigger the job created to run, and, redirect the user to the “Job History” page.
+20. &#x20;**Save & Run:** Will save the config created and will trigger the job created to run, and redirect the user to the “Job History” page.
     * The user can observe the related job running on the “Job History” page.
     * The user will see “Save & Run” on the “Replication Config Info” page if “Save & Run” is selected.
 
@@ -235,7 +235,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
 <figure><img src="../../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
-4. **Include all child objects:** Ensures that all the child’s directly related and the recursively related child’s will also be included.
+4. **Include all child objects:** Ensures that all the child’s directly related and the recursively related childs will also be included.
    * To ensure optimal performance, only fixed objects are allowed to be selected. If any further child objects are to be selected, the selection can be made by going through the schema.
 5.  **Mappings**: The user will click on the mappings to map the fields on the source against the fields on the destination.&#x20;
 
@@ -247,10 +247,10 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 7. **Record Type**: The record type on the source is mapped against the record type on the destination.
 8. **Restricted Picklist**: On selecting the ‘restricted picklist’ from the source, the source field values will be mapped against the field values on the destination.
 9. On completing the required selection on the tabs under the mappings, the users can perform ‘**Apply’ & ‘Clear All.’**
-10. **Filters**: The user can input the query and can set the filter criteria for the records to be filtered. Once the user clicks “Publish”, a popup is displayed to the user for confirmation.
-11. On clicking “OK” the rule will be published and be available with the global list of rules associated with the ORG.
+10. **Filters**: The user can input the query and can set the filter criteria for the records to be filtered. Once the user clicks “Publish”, a pop-up is displayed to the user for confirmation.
+11. On clicking “OK” the rule will be published and be available with the global list of rules associated with the Org.
 12. On completing all the required actions, the user can click “NEXT” to continue to the “Config Details” section.
-13. **Ignore Failed Records:** Enabling it will ensure that the nulls available in the source ORG will be pushed to the destination ORG.
+13. **Ignore Failed Records:** Enabling it will ensure that the nulls available in the source ORG will be pushed to the destination Org.
 14. **Save:** This saves the config created. It will not trigger the job automatically while saving the job.
 
     The user will see “Save” on the “Replication Config Info” page if “Save” is selected.
@@ -270,12 +270,12 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     * Any changes or updates done to the “Config” created will only be applicable to the entry created in the “Job History” section. The Config will remain as it is created in its original state.
 
     <figure><img src="../../../../../.gitbook/assets/image (1559).png" alt=""><figcaption></figcaption></figure>
-3. **Edit**: If the user clicks on the edit icon, the user will land on the edit flow of the Config, and, the user can perform modifications to the “Job Config” created.
+3. **Edit**: If the user clicks on the edit icon, the user will land on the edit flow of the Config, and the user can perform modifications to the “Job Config” created.
    * The changes made to the config will affect the config entirely.
-4.  **Clone**: Clicking on the clone icon will pop the “Replicate Config” window to the user.
+4.  **Clone**: Clicking on the clone icon will pop-up the “Replicate Config” window to the user.
 
-    * The user can select the “Source” and “Destination” ORGs and enter the label and click “Clone” to commence the clone operation.
-    * The “Masking Rules” of the selected destination ORG, will be displayed to the user for selection.
+    * The user can select the “Source” and “Destination” Orgs and enter the label and click “Clone” to commence the clone operation.
+    * The “Masking Rules” of the selected destination Org, will be displayed to the user for selection.
     * On clicking 'Clone', an entry will be created on the “Job History” page.
 
     <figure><img src="../../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
@@ -289,7 +289,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
     <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values”.
+    1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values.”
 
         1. A warning can be observed on the top of the pop-up, which states that the target environment is missing the respective metadata.
 
@@ -297,7 +297,7 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 
         1.  Please verify the following information displayed on the pop-up and may continue to clone by clicking on “CONFIRM”.
 
-            Only on user confirmation by clicking on “CONFIRM” button the replication will be initiated.
+            Only on user confirmation by clicking on “CONFIRM” button, the replication will be initiated.
 6.  **Schedule**: Will set a schedule for the config to automatically run periodically.
 
     * On clicking the “Schedule” icon, the “Replication Config Schedule” will be displayed to the user.

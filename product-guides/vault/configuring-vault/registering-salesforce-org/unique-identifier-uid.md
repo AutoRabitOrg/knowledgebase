@@ -4,7 +4,7 @@
 
 A Unique Identifier (UID) is a field that distinguishes one record from all others in AutoRABIT Vault. It enables AutoRABIT Vault to accurately reference, map, and synchronize individual records between Salesforce Orgs—preventing confusion or accidental duplication during operations.
 
-## Why UID is Necessary for Each Record <a href="#why-uid-is-necessary-for-each-record" id="why-uid-is-necessary-for-each-record"></a>
+## Why a UID is Necessary for Each Record <a href="#why-uid-is-necessary-for-each-record" id="why-uid-is-necessary-for-each-record"></a>
 
 AutoRABIT Vault cannot inherently track records between source and destination orgs—especially post-sandbox refresh—since the internal record mapping is not preserved. A UID allows AutoRABIT Vault to identify and match records between environments, ensuring continuity and preventing record duplication during replication or restoration.
 

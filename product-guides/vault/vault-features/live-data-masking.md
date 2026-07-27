@@ -5,10 +5,10 @@
 **Step-By-Step Guide**:
 
 1. Observe the new module “Live Data Masking” and click on the “JOB CONFIG” to land on the “Live Data Masking Config” creation screen.
-2. Observe the “Salesforce Orgs” and the NEW CONFIG creation options available on this screen
+2. Observe the “Salesforce Orgs” and the NEW CONFIG creation options available on this screen.
 3. The drop-down “Salesforce Orgs” contains the list of ORGs available for selection.
 4. Select the required ORG at the “Salesforce Orgs” drop-down.
-5.  Observe the following screen for the first time creation of the “Masking Rule Config” or first-time creation of “Masking Rule Config” on any ORG.
+5.  Observe the following screen for the first-time creation of the “Masking Rule Config” or first-time creation of “Masking Rule Config” on any ORG.
 
 
 
@@ -31,8 +31,8 @@
     ![](<../../../.gitbook/assets/3 (1) (2).png>)
 10. If there any rules available created under that object, all the available rules will come selected as depicted in the above screen.
 11. If any object doesn’t hold the rules, the following “No masking rule” will be displayed under the “Selected Masking Rules” column.
-    1. **Note: -** All the available selected rules will be displayed in a coma separated fashion under the “Selected Masking Rules”.
-12. Click on any object that holds rules to view the available rules
+    1. **Note: -** All the available selected rules will be displayed in a comma-separated fashion under the “Selected Masking Rules.”
+12. Click on any object that holds rules to view the available rules.
 
 
 
@@ -120,7 +120,7 @@
 34. Observe the screen for the details:
 
     1. **Org Name:** Represents the org name
-    2. Label: Enter the required label in this field.
+    2. **Label**: Enter the required label in this field.
     3. **Batch Size:** Specify the batch size at which the data should be processed while the data masking is being performed.
     4. **Email notification**: Select an email from the list. This will send an email to the person whose email is selected
     5. **Disable Workflows**\
@@ -130,7 +130,7 @@
     7. **Disable Triggers**\
        Enable this toggle to bypass Apex triggers during the masking process.
     8. **Disable Flows**\
-       Enable this toggle to deactivate Salesforce Flows for the duration of the data masking operation.
+       Enable this toggle to deactivate Salesforce flows for the duration of the data masking operation.
     9. **Exclude Deleted Records**\
        Enable this toggle to ensure that deleted records are excluded from the masking operation.
     10. **Enable Serial Mode for Bulk API**\
@@ -139,7 +139,7 @@
 
 
     ![](../../../.gitbook/assets/18.png)
-35. The **“Masking Info”** section of the **“Config Details”** page will provide the information about the list of rules created per object.
+35. The **“Masking Info”** section of the **“Config Details”** page will provide information about the list of rules created per object.
 
 
 
@@ -177,10 +177,10 @@
 47. On clicking the rollback, the following “Rollback” window will be displayed.
 
     <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-48. Select the required objects to rollback the masking’s. On selecting at least one object the “Rollback” button will become enabled.
+48. Select the required objects to rollback the maskings. On selecting at least one object, the “Rollback” button will become enabled.
 
     <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-49. On clicking the rollback option, the following window will be displayed for confirming the rollback
+49. On clicking the rollback option, the following window will be displayed, confirming the rollback
 
     <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 50. For every rollback operation performed, a new entry will be created at the “JOB HISTORY” page. This job can be identified with the “Job Type – Rollback”.

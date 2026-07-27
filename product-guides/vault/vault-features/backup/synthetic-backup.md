@@ -5,13 +5,13 @@ Synthetic backup accelerates the process by capturing only the delta since the l
 ### Process Flow – Backup Configuration
 
 1. Only if the “Full Backup” option is selected for any job being created.
-2.  &#x20;The “Enable Synthetic Backup (Faster Backup)” is available for selection, and, the option comes auto-enabled for the above said selections.
+2.  &#x20;The “Enable Synthetic Backup (Faster Backup)” is available for selection, and the option comes auto-enabled for the above selections.
 
     <figure><img src="../../../../.gitbook/assets/Synthetic Backup - 0.png" alt=""><figcaption></figcaption></figure>
 
 
-3. If a synthetic backup need not be run on a full backup, the “Enable Synthetic Backup (Faster Backup)” option has to be explicitly disabled.&#x20;
-4.  Observe the “Enable Synthetic Backup (Faster Backup)” option, and the info icon which provides information about the same.
+3. If a synthetic backup does not need to be run on a full backup, the “Enable Synthetic Backup (Faster Backup)” option has to be explicitly disabled.&#x20;
+4.  Observe the “Enable Synthetic Backup (Faster Backup)” option and the info icon, which provides information about the same.
 
     <figure><img src="../../../../.gitbook/assets/Synthetic Backup - 1.png" alt=""><figcaption></figcaption></figure>
 

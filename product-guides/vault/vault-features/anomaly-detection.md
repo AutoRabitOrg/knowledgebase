@@ -44,11 +44,11 @@ Anomaly Detection is configured from the Anomaly Detection workspace. The config
 
 ![](<../../../.gitbook/assets/Unknown image (274)>)
 
-&#x20;                                                _User Details selection for excluding internal application users_
+&#x20;                              _User Details selection for excluding internal application users_
 
 ![](<../../../.gitbook/assets/Unknown image (275)>)
 
-&#x20;                                                _External Changes of Users option after selecting Vault users_
+&#x20;                       _External Changes of Users option after selecting AutoRABIT Vault users_
 
 ![](<../../../.gitbook/assets/Unknown image (276)>)
 
@@ -202,7 +202,7 @@ Anomaly Detection Job History maintains the comparison and rollback activity ini
 
 ![](<../../../.gitbook/assets/Unknown image (310)>)
 
-&#x20;                                                _ob History action for detailed compare label review_
+&#x20;                                                _Job History action for detailed compare label review_
 
 ![](<../../../.gitbook/assets/Unknown image (309)>)
 

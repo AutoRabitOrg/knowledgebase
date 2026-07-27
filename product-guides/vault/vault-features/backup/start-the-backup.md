@@ -57,7 +57,6 @@ For each backup performed inside AutoRABIT Vault, you will find the details belo
 | `Configuration Name` | The configuration name you choose for the backup operation                                                                                                                                                                                                                                                                                                                      |
 | `Date/Time`          | Date and time stamp for your backup operation                                                                                                                                                                                                                                                                                                                                   |
 | `Expiry Date`        | Backup retention period                                                                                                                                                                                                                                                                                                                                                         |
-|                      |                                                                                                                                                                                                                                                                                                                                                                                 |
 | `Duration`           | Total time to complete the backup operation                                                                                                                                                                                                                                                                                                                                     |
 | `Metadata`           | Total count of metadata objects successfully backed up                                                                                                                                                                                                                                                                                                                          |
 | `Records`            | Total count of records successfully backed up                                                                                                                                                                                                                                                                                                                                   |
@@ -97,14 +96,14 @@ ii. On selecting “Download Files”, based on the size of the file, the progre
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Download Files</p></figcaption></figure>
 
-iii. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the AutoRABIT Vault environment.
+iii. Once the download is concluded, based on the actual state of the download, emails with different statuses will be triggered to the registered emails in the AutoRABIT Vault environment.
 
 7. Once “Download Files” is initiated, the progress of the files download is depicted through the progress icon. Following screenshot is for reference.
-8. On hovering over the in-progress download, the count(downloaded files/total files count) of files can be observed.
+8. On hovering over the in-progress download, the count (downloaded files/total files count) of files can be observed.
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>In Progress Downloads</p></figcaption></figure>
 
-9. Once the download is concluded, based on the actual state of the download, emails with different statues will be triggered to the registered emails in the vault environment.
+9. Once the download is concluded, based on the actual state of the download, emails with different statuses will be triggered to the registered emails in the AutoRABIT Vault environment.
 10. Using the “Download Files” column. The individual files related to the respective records can be downloaded.
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Download Files</p></figcaption></figure>
@@ -143,4 +142,4 @@ Follow the following flow for the backup records download:
 ## Limitations
 
 * Inconsistent File Download During GDPR Requests: When a GDPR request is initiated within an organization, file downloads may behave inconsistently. This issue will be resolved in the upcoming release.
-* File Download Issues with Special Characters in File Names: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release
+* File Download Issues with Special Characters in File Names: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release.

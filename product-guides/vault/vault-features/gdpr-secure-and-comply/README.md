@@ -24,7 +24,7 @@ We believe in our service and can provide the level of protection for compliance
 
 ### W**hat features within** AutoRABIT Vault **support compliance with GDPR requirements?** <a href="#what-features-within-vault-support-compliance-with-gdpr-requirements" id="what-features-within-vault-support-compliance-with-gdpr-requirements"></a>
 
-Vault provides industry-standard security measures such as encryption, multi-factor authentication, access controls, and auditing to support compliance with GDPR rules.
+AutoRABIT Vault provides industry-standard security measures such as encryption, multi-factor authentication, access controls, and auditing to support compliance with GDPR rules.
 
 #### R**ight of Access** <a href="#right-of-access" id="right-of-access"></a>
 

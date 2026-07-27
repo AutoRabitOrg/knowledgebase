@@ -1,5 +1,27 @@
 # ARM Known Limitations
 
+### Data Kit Packaging is Required for Dependent Metadata Deployments
+
+As of the current release, Data Cloud metadata components that carry inter-object dependencies cannot be deployed as fully independent, standalone components through ARM. While ARM successfully retrieves individual components—and the EZ-Commit Auto Draft feature can detect and surface granular changes within a Data Kit—deploying a single dependent component without its associated Data Kit packaging will result in a deployment with no changes in the Salesforce Target Org.\
+\
+This behavior affects metadata types classified as Dependent Metadata, including but not limited to:
+
+* DataSrcDataModelFieldMap (field mappings)
+* DataSourceObject (Data Lake Objects / Data Model Objects)
+* FieldSrcTrgtRelationship
+* DataKitObjectDependency / DataKitObjectTemplate
+* DataSourceBundleDefinition
+* DataSource
+* DataStreamTemplate
+
+For example, if only a new field mapping (DataSrcDataModelFieldMap) is added to an existing Data Lake Object and Data Model Object that are already present in both source and target orgs, the field mapping cannot be deployed in isolation. The related DLO, DMO, and field mapping must all be included in the DevOps Data Kit and deployed together for Salesforce to process the changes successfully.
+
+{% hint style="info" %}
+Important: A deployment of a single dependent component without Data Kit packaging might return a success status in ARM but will not update the target org. Always verify changes are reflected in the target org's Data Cloud Setup after deployment.
+{% endhint %}
+
+***
+
 These are the known limitations in **ARM® 22.3**.
 
 ### **List of Failure Cases / Limitations** <a href="#list-of-failure-cases-limitations" id="list-of-failure-cases-limitations"></a>

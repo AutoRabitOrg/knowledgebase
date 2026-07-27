@@ -4,12 +4,12 @@
 
 This section summarizes the deployment limits that ARM users should consider:
 
-1. **Unable to remove Field Level Security (FLS) in Profiles while performing destructive changes on fields**- As of now, ARM does not support the deletion of references from Profile on a branch level. But, it is on our roadmap, and the development team is already working on it.
-2. While performing deployment from one sandbox to sandbox, there are certain metadata types such as Email Template, Reports, Dashboards, Documents, etc. for which the selected folder path metadata will not get retrieved in the **Compare Metadata and Deploy** screen.
+1. **Unable to remove Field Level Security (FLS) in Profiles while performing destructive changes on fields**- As of now, ARM does not support the deletion of references from Profile on a branch level. But it is on our roadmap, and the development team is already working on it.
+2. While performing deployment from one sandbox to another sandbox, there are certain metadata types, such as Email Template, Reports, Dashboards, Documents, etc., for which the selected folder path metadata will not get retrieved in the **Compare Metadata and Deploy** screen.
 3. The **Compare Metadata & Deploy** functionality for **Profile** metadata will not show the correct difference since the source side displayed delta changes while the destination side retrieved the entire profile from the destination org.
-4. **AccelQ** applies only to the deployment of [Salesforce Org](/broken/pages/9pLgfInGvztETx4cXCc2) and not Vlocity.
+4. **AccelQ** applies only to the deployment of a Salesforce Org and not Vlocity.
 5. Rollback initiated for a successful deployment shows **No Changes** status in the build.
-6. **Pre-destructive changes and deployment changes run in separate threads in ARM, but the status of the deployment changes is only seen:** Pre-destructive changes and deployment will be sent to Salesforce as part of the same request, and Salesforce will treat them as separate actions. To check the status of pre-destructive changes in ARM, click on your **Deployment Label** then go to **Deleted Components** tab.
+6. **Pre-destructive changes and deployment changes run in separate threads in ARM, but the status of the deployment changes is only seen:** Pre-destructive changes and deployment will be sent to Salesforce as part of the same request, and Salesforce will treat them as separate actions. To check the status of pre-destructive changes in ARM, click on your **Deployment Label,** then go to **Deleted Components** tab.
 7. **Is it possible that my code deployment will continue if my pre-destructive changes fail for some reason?** No, because pre-destructive changes and deployment will be sent to Salesforce as part of the same request in ARM, and if one of your deployments fails, the entire process fails in ARM.
 8. Due to current ARM behavior, an **object file** is considered as a **destructive change** in deployment if the object file does not exist in the branch, you commit only a field (child), and then the newly committed field is deleted from the branch. This is the case only for **Metadata API** code, not for **SFDX**.
 9. In case of **Vlocity Custom Deployment**, if the **Access Key** for **Local Compilation** is incorrect, ARM is unable to capture it in the logs.
@@ -46,3 +46,23 @@ This section summarizes the deployment limits that ARM users should consider:
     At this time, delta generation is limited to these components, and no other metadata is supported when utilizing Release Label Deployments.&#x20;
 14. **Translations**: The API can’t perform **destructive changes** with the translation value. The API can **add** existing `<translation>` to custom object translation but not **delete** them.
 15. As of **AutoRABIT ARM release 25.4.4**, the platform **does not support destructive changes for Profile IP Ranges** during deployment. This means deleted IP Ranges in the source branch are not removed from the target org through AutoRABIT deployments. In contrast, tools that use the Salesforce Metadata API, such as **Workbench** or the **Salesforce CLI**, will fully replace the target org’s IP Ranges with those from the deployment package, effectively applying deletions as well. Customers who need to remove Profile IP Ranges should perform this step manually in the target org, as this cannot be achieved from AutoRABIT as of 25.4.4.
+
+### Data Kit Packaging is Required for Dependent Metadata Deployments
+
+As of the current release, Data Cloud metadata components that carry inter-object dependencies cannot be deployed as fully independent, standalone components through ARM. While ARM successfully retrieves individual components—and the EZ-Commit Auto Draft feature can detect and surface granular changes within a Data Kit—deploying a single dependent component without its associated Data Kit packaging will result in a deployment with no changes in the Salesforce Target Org.\
+\
+This behavior affects metadata types classified as Dependent Metadata, including but not limited to:
+
+* DataSrcDataModelFieldMap (field mappings)
+* DataSourceObject (Data Lake Objects / Data Model Objects)
+* FieldSrcTrgtRelationship
+* DataKitObjectDependency / DataKitObjectTemplate
+* DataSourceBundleDefinition
+* DataSource
+* DataStreamTemplate
+
+For example, if only a new field mapping (DataSrcDataModelFieldMap) is added to an existing Data Lake Object and Data Model Object that are already present in both source and target orgs, the field mapping cannot be deployed in isolation. The related DLO, DMO, and field mapping must all be included in the DevOps Data Kit and deployed together for Salesforce to process the changes successfully.
+
+{% hint style="info" %}
+Important: A deployment of a single dependent component without Data Kit packaging might return a success status in ARM but will not update the target org. Always verify changes are reflected in the target org's Data Cloud Setup after deployment.
+{% endhint %}

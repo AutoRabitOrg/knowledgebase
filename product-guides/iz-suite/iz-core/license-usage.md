@@ -33,7 +33,7 @@ There are 2 actions associated for each developer keys:
 
 ### See Also
 
-* Enabling MCP Server
-* Configuring STDIO MCP Server
-* Configuring HTTP MCP Server
-* MCP Tools
+* [Enabling MCP Server](mcp-server/)
+* [Configuring STDIO MCP Server](mcp-server/stdio-mcp-server-configuration.md)
+* [Configuring HTTP MCP Server](mcp-server/http-mcp-server-configuration.md)
+* [MCP Tools](mcp-server/mcp-tools.md)

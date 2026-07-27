@@ -1286,7 +1286,7 @@
       * [Retry Failed Records](product-guides/vault/vault-features/restore/retry-failed-records.md)
     * [SIEM Logs](product-guides/vault/vault-features/siem-logging.md)
     * [Copy of SIEM Logs - Copied on Fri 27, 2025](product-guides/vault/vault-features/siem-logging-1.md)
-    * [Vault Compare](product-guides/vault/vault-features/compare/README.md)
+    * [AutoRABIT Vault Compare](product-guides/vault/vault-features/compare/README.md)
       * [Comparing Two Backups](product-guides/vault/vault-features/compare/comparing-two-backups.md)
       * [Live Compare](product-guides/vault/vault-features/compare/live-compare.md)
       * [Copy of Live Compare](product-guides/vault/vault-features/compare/enhanced-compare-capabilities-view-change-view-and-export-results.md)

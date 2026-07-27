@@ -5,7 +5,7 @@
 {% hint style="warning" %}
 In case of an On-Premises or Hybrid installation model:
 
-* Navigate to your organization-specific service URL instead of [https://analyzer.integralzone.com](https://analyzer.integralzone.com/)
+* Navigate to your organization-specific service URL instead of https://analyzer.integralzone.com
 * Choosing an organization will not be required after login
 {% endhint %}
 
@@ -13,7 +13,6 @@ In case of an On-Premises or Hybrid installation model:
 Before creating a custom rule, make sure you have:
 
 * Created a custom Quality Profile from the default Profile. Refer to [Create Custom Quality Profile](activate-rules.md) for more information
-* In case of an On-Premises or Hybrid installation model, navigate to your organization-specific service URL instead of [https://analyzer.integralzone.com](https://analyzer.integralzone.com/)
 {% endhint %}
 
 ### Create Custom Rule:

@@ -10,7 +10,7 @@ Before installing and using IZ Analyzer Server Plugin, make sure you have:
 * Server plugin jar provided by IZ. Either api-analyzer-plugin-x.x.jar or mule-analyzer-plugin-x.x.jar or wso2-analyzer-plugin-x.x.jar or all.
 {% endhint %}
 
-### Install Plugin:
+### Install Plugin
 
 1. Copy the plugin jar (either api-analyzer-plugin-x.x.jar or mule-analyzer-plugin-x.x.jar or both) to **`SONAR_HOME/extensions/plugins`**
 2. Restart [SonarQube™](https://www.sonarqube.org) server
@@ -19,7 +19,7 @@ Before installing and using IZ Analyzer Server Plugin, make sure you have:
 * **`SONAR_HOME`** refers to [SonarQube™](https://www.sonarqube.org) server installation path
 {% endhint %}
 
-### Configure Plugin:
+### Configure Plugin
 
 1. Browse to **`[SonarQube™](https://www.sonarqube.org) server web`** -> **`Login with admin credentials`** -> **`Administration`**
 2. Select **`Mule`** or **`API`** or **`WSO2`** from the list of languages based on the plugins installed. Configure the following fields:

@@ -7,17 +7,9 @@ Yes, custom rules can be created in IZ Analyzer using simple groovy scripts. Rul
 1. [Rules Playground in Studio](../integral-zone/iz-suite/iz-scan/anypoint-studio/source-code-analysis/anypoint-studio-rules-playground.md) - Rules playground is part of Anypoint Studio plug-in, where custom rules can be evaluated and published to server.
 2. [Rules Template in Server](manage-rules/custom-rules.md) - Custom rules can also be created directly in server using the custom rule template.
 
-### If we start using this product will our code remain secure? How much of access will Integral Zone have in viewing our code?
-
-\<TBA>
-
 ### What are the different installation options?
 
 IZ Analyzer is available in both Cloud and On premise installation options. With similar user experiences, each installation options provides benefits of its own. To view a more comprehensive document on the installations options for IZ Analyzer, please follow the link [On-Premises vs Cloud](on-prem-vs.-cloud.md).
-
-### How frequently are the updates and the support provided?
-
-\<TBA>
 
 ### Can we get a perpetual license for IZ Analyzer?
 
@@ -46,10 +38,6 @@ There are 2 instances where Studio plug-in will work offline:
 ### How heavy is the IZ Analyzer Studio Plugin? Would it make the computer slow?
 
 IZ Analyzer Studio plug-in is very lightweight and all the scans will be done in a background thread, which does not impact the performance.
-
-### How are your current customers using it? Any stories you could share?
-
-\<TBA>
 
 ### Is it a real-time analyzer?
 

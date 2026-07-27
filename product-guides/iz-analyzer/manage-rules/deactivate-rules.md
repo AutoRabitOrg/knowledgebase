@@ -9,7 +9,7 @@ In case of an On-Premises or Hybrid installation model:
 * Choosing an organization will not be required after login
 {% endhint %}
 
-### Create Custom Quality Profile:
+### Create Custom Quality Profile
 
 1. Browse to **`[IZ Analyzer](https://analyzer.integralzone.com/)`** -> **`Login with your credentials`** -> click on your profile icon -> Select your organization under **`My Organizations`** -> click on **`Quality Profiles`** menu -> Search for **`Mule Profiles`**. +
    * NOTE: There should be one **`Built In`** rule named **`IZ Mule Rules`**, which is the default profile. Rules cannot be activated or de-activated on the **`Built In`** profile. We need to clone/extend the **`Built In`** profile and then activate or de-activate rules.
@@ -21,7 +21,7 @@ In case of an On-Premises or Hybrid installation model:
 
     <figure><img src="../../../.gitbook/assets/sonar_server_new_profile (1).png" alt=""><figcaption></figcaption></figure>
 
-### Deactivate Rules:
+### Deactivate Rules
 
 1.  Click on the created new profile **`Custom - IZ Mule Rules`** <br>
 

@@ -2,7 +2,7 @@
 
 ## Manage Organization in Server
 
-### Add new members to the Organization:
+### Add new members to the Organization
 
 1. Browse to [IZ Analyzer](https://analyzer.integralzone.com/) -> **`Login with your credentials`**. +
 2.  Click on the profile icon -> Select your organization under **`My Organizations`** -> click on **`Members`** menu -> Search users by login or name\

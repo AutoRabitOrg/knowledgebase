@@ -1,16 +1,16 @@
 # About Autofix
 
-Autofix is a feature, where static code analysis issues can be fixed automatically with the click of a button.
+Autofix is a feature where static code analysis issues can be fixed automatically with the click of a button.
 
 Autofix has the following limitations:
 
-* Auto Fix may not be available for all the built-in rules
+* Autofix may not be available for all the built-in rules
 
 Some of the key benefits are:
 
 * Fix the analysis issues with the click of a button
 * Preview the fix before applying on the project
-* Audit log of all the issues fixed using Auto Fix feature
+* Audit log of all the issues fixed using Autofix feature
 
 <figure><img src="../../../.gitbook/assets/auto_fix_apply (2).gif" alt=""><figcaption></figcaption></figure>
 

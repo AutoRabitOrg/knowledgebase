@@ -1,6 +1,6 @@
 # Remove Plugin
 
-### Remove Plugin:
+### Remove Plugin
 
 1. Go to **`Help`** -> **`Install New Software`**
    1.  Click On **`already installed`**. <br>

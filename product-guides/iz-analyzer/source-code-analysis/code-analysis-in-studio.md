@@ -7,7 +7,7 @@ Before analyzing the source code in Studio, make sure you have either
 * Installed and configured IZ Analyzer - [WSO2 Integration Studio Plugin](../../integral-zone/iz-suite/iz-scan/anypoint-studio/installation/install-iz-analyzer-studio.md).
 {% endhint %}
 
-### On The Fly Results:
+### On The Fly Results
 
 **`On The Fly Results`** table/view will display the issues related to the project that user is working on. Project is determined based on the current active file (i.e. the file that user is working on) in Anypoint Studio.
 

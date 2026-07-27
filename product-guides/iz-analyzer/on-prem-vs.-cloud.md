@@ -2,16 +2,16 @@
 
 ## On-Premises vs Cloud Offering
 
-Based on the requirements, each organization can choose between the Cloud and On-Premises versions. Table below describes the features available in each of the versions:
+Based on the requirements, each organization can choose between the Cloud and On-Premises versions. The table below describes the features available in each of the versions:
 
 ### On-Premises Installation
 
 IZ Analyzer Server Plugin will be distributed through the appropriate release channel ([IZ Releases](https://support.integralzone.com)), which can be installed on the [SonarQube™](https://www.sonarqube.org) server maintained by the Organization.
 
-A license key will be provided as part of the onboarding process, which has to be configured as part of initial setup.
+A license key will be provided as part of the onboarding process, which has to be configured as part of the initial setup.
 
 {% hint style="info" %}
-Systems from which the source code analysis will be invoked from should be able to communicate with IZ License Manager to validate the license (For example: a Jenkins instance).
+Systems from which the source code analysis will be invoked should be able to communicate with IZ License Manager to validate the license (For example: a Jenkins instance).
 {% endhint %}
 
 ### Features

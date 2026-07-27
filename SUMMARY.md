@@ -1547,7 +1547,7 @@
       * [Switch Quality Profiles](product-guides/iz-analyzer/manage-rules/switch-quality-profiles.md)
     * [Source Code Analysis](product-guides/iz-analyzer/source-code-analysis/README.md)
       * [Code Analysis in Studio](product-guides/iz-analyzer/source-code-analysis/code-analysis-in-studio.md)
-      * [Code Analysis in CICD](product-guides/integral-zone/iz-analyzer/source-code-analysis/code-analysis-in-cicd.md)
+      * [Code Analysis in CI/CD](product-guides/integral-zone/iz-analyzer/source-code-analysis/code-analysis-in-ci-cd.md)
       * [Coverage Reports](product-guides/iz-analyzer/source-code-analysis/coverage-reports.md)
       * [API Analysis](product-guides/iz-analyzer/source-code-analysis/api-analysis.md)
       * [Metrics](product-guides/iz-analyzer/source-code-analysis/metrics.md)

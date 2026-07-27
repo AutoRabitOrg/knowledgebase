@@ -4,7 +4,7 @@
 Taking a backup of the current database before upgrading plugins is strongly advised.
 {% endhint %}
 
-### Update Plugin:
+### Update Plugin
 
 1. Go to **`SONAR_HOME/extensions/plugins`** to remove the old version of plugins. Either api-analyzer-plugin-x.x.jar or mule-analyzer-plugin-x.x.jar.
 2. Copy the latest plugin jar files (either api-analyzer-plugin-x.x.jar or mule-analyzer-plugin-x.x.jar) to **`SONAR_HOME/extensions/plugins` .**

@@ -1,6 +1,6 @@
 # Using Maven
 
-## CICD Integration - Using Maven
+## CI/CD Integration - Using Maven
 
 {% hint style="warning" %}
 Before scanning applications using IZ Scan, make sure you have:

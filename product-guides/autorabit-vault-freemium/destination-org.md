@@ -12,7 +12,7 @@ The flow begins after the source org and destination org are registered and auth
 
 ## Destination Org Status on the Dashboard
 
-The Dashboard shows both Source Org and Destination Org connection indicators near the page header. The Destination Org indicator confirms that the destination Salesforce org is connected and ready for AutoRABIT Vault workflows. The Re-Authenticate action remains available beside the org indicator to refresh the connection when required.
+The Dashboard shows both Source Org and Destination Org connection indicators near the page header. The Destination Org indicator confirms that the destination Salesforce org is connected and ready for AutoRABIT Vault workflows. The Re-authenticate action remains available beside the org indicator to refresh the connection when required.
 
 The rest of the Dashboard continues to show key AutoRABIT Vault areas, including Backup Configs, Backup Jobs, Restore Jobs, Replicate Jobs, storage usage, and Recommended Actions. These sections provide the next operational paths after org registration is complete.
 
@@ -34,7 +34,7 @@ The Close action dismisses the Destination org details dialog and returns to the
 
 * AutoRABIT Vault displays the Destination ORG indicator only after the destination org is connected.
 * The Destination org details dialog provides read-only information about the registered destination org.
-* Re-Authenticate remains available when the org connection must be refreshed.
+* Re-authenticate remains available when the org connection must be refreshed.
 * Closing the dialog does not change org registration, authentication, or Dashboard state.
 
 ## Final Result

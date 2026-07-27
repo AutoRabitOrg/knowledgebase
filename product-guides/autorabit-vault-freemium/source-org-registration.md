@@ -112,9 +112,9 @@ The source org details view displays the org name, registered username, org ID, 
 
 <figure><img src="../../.gitbook/assets/27.png" alt=""><figcaption></figcaption></figure>
 
-## Re-Authenticate the Source Org
+## Re-authenticate the Source Org
 
-AutoRABIT Vault displays Re-Authenticate beside the registered Source Org. Re-authentication is used when the Salesforce authorization needs to be refreshed, such as after credential changes, permission updates, or authorization issues. Selecting Re-Authenticate redirects to Salesforce login and follows the same authorization pattern used during the initial connection.
+AutoRABIT Vault displays Re-authenticate beside the registered Source Org. Re-authentication is used when the Salesforce authorization needs to be refreshed, such as after credential changes, permission updates, or authorization issues. Selecting Re-authenticate redirects to Salesforce login and follows the same authorization pattern used during the initial connection.
 
 ![](<../../.gitbook/assets/Unknown image (205)>)
 
@@ -131,4 +131,4 @@ The source org registration is complete when AutoRABIT Vault validates the Sales
 | **OAuth scope dependency**             | The required OAuth scopes must be selected in Salesforce before authorization succeeds.              |
 | **Connection validation**              | Test API Connection verifies that AutoRABIT Vault can communicate with the connected Salesforce org. |
 | **Successful completion**              | AutoRABIT Vault displays success notifications and adds the connected Source Org to the Dashboard.   |
-| **Re-authentication**                  | AutoRABIT Vault provides Re-Authenticate to refresh the Salesforce authorization when needed.        |
+| **Re-authentication**                  | AutoRABIT Vault provides Re-authenticate to refresh the Salesforce authorization when needed.        |

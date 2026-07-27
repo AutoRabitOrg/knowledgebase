@@ -1257,7 +1257,7 @@
       * [Retry Failed Records](product-guides/vault/vault-features/archive/retry-failed-records.md)
     * [Backup](product-guides/vault/vault-features/backup/README.md)
       * [Start the Backup](product-guides/vault/vault-features/backup/start-the-backup.md)
-      * [Schedule a Vault Backup](product-guides/vault/vault-features/backup/schedule-a-vault-backup.md)
+      * [Schedule a Backup](product-guides/vault/vault-features/backup/schedule-a-vault-backup.md)
       * [Understanding Backup Behavior](product-guides/vault/vault-features/backup/understanding-backup-behavior.md)
       * [Synthetic Backup](product-guides/vault/vault-features/backup/synthetic-backup.md)
     * [Compliance](product-guides/vault/vault-features/compliance/README.md)

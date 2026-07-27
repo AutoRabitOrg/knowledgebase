@@ -5,7 +5,7 @@ Every **`Agent`** has 2 main functionalities associated with it -
 ### As Schedulers
 
 1. **`Agents`** are the main entities responsible for executing the job schedules.
-2. Each agent can handle multiple job types. For example - Scanning Anypoint Runtime Applications, Performing health ckecks for configured endpoints
+2. Each agent can handle multiple job types. For example - Scanning Anypoint Runtime Applications, Performing health checks for configured endpoints
 3. Multiple **`Agents`** can be started on different machines and one of the **`Agent`** will be chosen as a `master`
 
 ### As Workers
@@ -18,5 +18,5 @@ Every **`Agent`** has 2 main functionalities associated with it -
 
 ### See Also
 
-* Cloud Hosted Agent
-* Self Hosted Agent
+* [Cloud Hosted Agent](agent-types/agent-modes/cloud-hosted-agent.md)
+* [Self Hosted Agent](agent-types/agent-modes/self-hosted-agent.md)

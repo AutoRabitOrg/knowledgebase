@@ -11,7 +11,7 @@ Before scanning applications using IZ Scan, make sure you have:
 * Follow the instructions on [Generating Security Token](generate-security-token.md) to generate a security token
 {% endhint %}
 
-### CICD Integration
+### CI/CD Integration
 
 1. Once the appropriate version of **`IZ Scan CLI`** is downloaded, unzip the binary unzip iz-scan-cli-\[VERSION]-\[OS].zip
 2. Navigate to the **`bin`** directory within iz-scan-cli-\[VERSION]-\[OS]
@@ -52,7 +52,7 @@ If the system from which the projects are analyzed is configured with a proxy, t
     ```
 
 {% hint style="info" %}
-* Replace **`PROXY_HOST`** and **`PROXY_PORT`** with appropriate values for Porxy server host and port
+* Replace **`PROXY_HOST`** and **`PROXY_PORT`** with appropriate values for Proxy server host and port
 * If **`https.proxyPort`** is not specified default value will be 443
 * If **`http.proxyPort`** is not specified default value will be 80
 {% endhint %}

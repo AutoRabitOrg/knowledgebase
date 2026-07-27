@@ -1,20 +1,19 @@
 # Automation Task Logs
 
-Any Automation Task execution logs will be available here, including the execution logs, request, response etc.
+Any Automation Task execution logs will be available here, including the execution logs, request, response, etc.
 
 ### Automation Task Logs
 
 * Navigate to **`IZ Insights`** -> **`Automation Task Logs`**.
-*
 
-    | Column Name            | Description                                                                                            |
-    | ---------------------- | ------------------------------------------------------------------------------------------------------ |
-    | **`Automation Task`**  | Name of the automation task being executed                                                             |
-    | **`Source`**           | Source from where the automation is executed. Eg: **`MCP Server`**,**`Manual`**,**`Chat Bot`**         |
-    | **`Execution Status`** | Status of the execution. Eg: **`Completed`**,**`Rejected`**,**`Waiting for Approval`**, **`Failed`**   |
-    | **`Executed By`**      | User who executed the automation task                                                                  |
-    | **`Executed On`**      | Date and Time when the automation task was executed                                                    |
-    | **`Actions`**          | Include - Execution log of the automation task, Re run automation task, View the request and response. |
+| Column Name            | Description                                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------------------------------ |
+| **`Automation Task`**  | Name of the automation task being executed                                                             |
+| **`Source`**           | Source from where the automation is executed. Eg: **`MCP Server`**,**`Manual`**,**`Chat Bot`**         |
+| **`Execution Status`** | Status of the execution. Eg: **`Completed`**,**`Rejected`**,**`Waiting for Approval`**, **`Failed`**   |
+| **`Executed By`**      | User who executed the automation task                                                                  |
+| **`Executed On`**      | Date and Time when the automation task was executed                                                    |
+| **`Actions`**          | Include - Execution log of the automation task, Re run automation task, View the request and response. |
 
 ### Approving Automation Task
 

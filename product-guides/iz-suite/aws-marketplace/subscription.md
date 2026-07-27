@@ -73,8 +73,8 @@ With IZ Suite by your side, say goodbye to manual code reviews and time consumin
 
 ### See Also
 
-* Configure Schedule
-* Endpoints
-* Categories
-* Public Status Page
-* Private Status Page
+* [Configure Schedule](../../integral-zone/iz-suite/iz-pulse/configure-schedule.md)
+* [Endpoints](../../integral-zone/iz-suite/iz-pulse/endpoints/)
+* [Categories](../iz-pulse/categories/)
+* [Public Status Page](../../integral-zone/iz-suite/iz-pulse/status-pages/public-status-page.md)
+* [Private Status Page](../../integral-zone/iz-suite/iz-pulse/status-pages/private-status-page.md)

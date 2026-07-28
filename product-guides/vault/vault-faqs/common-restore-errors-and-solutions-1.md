@@ -16,13 +16,13 @@ This error is a result of an issue stemming from a trigger in the Org.
 #### CANNOT\_EXECUTE\_FLOW\_TRIGGER
 
 * Typical error message - We can't save this record because the ‘Online Applicant Validation’ process failed. Give your Salesforce admin these details. An error occurred when executing a flow interview. Error ID: 1545064308-45750 (1670083917)
-* This error typically indicates that there is a Process Builder process / Flow in place which is causing the upsert operation to fail.
+* This error typically indicates that there is a Process Builder process / Flow in place that is causing the upsert operation to fail.
 
 **Resolution steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Locate the process builder process / flow that caused the error. Temporarily disable the automation and rerun the job to restore/replicate failed records.
-3. Alternatively, the job can be retried by specifying a lower batch size in the job config which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
+3. Alternatively, the job can be retried by specifying a lower batch size in the job config, which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
 
 #### INACTIVE\_OWNER\_OR\_USER
 
@@ -77,7 +77,7 @@ This error is caused by the Parent record not being included in the job or permi
 
 #### CANNOT\_UPDATE\_CONVERTED\_LEAD
 
-This error is due to a Lead record once converted (to a contact) becomes read only which prevents you from updating the lead.
+This error is due to a Lead record once converted (to a contact) becomes read only, which prevents you from updating the lead.
 
 **Resolution Steps:**
 
@@ -86,7 +86,7 @@ This error is due to a Lead record once converted (to a contact) becomes read on
 
 #### FIELD\_INTEGRITY\_EXCEPTION
 
-This error typically occurs when upsert tried to populate a lookup field with a wrong ID either because the parent failed or AutoRABIT Vault is unable to recognize the parent record ID.
+This error typically occurs when upsert tried to populate a lookup field with a wrong ID, either because the parent failed or AutoRABIT Vault is unable to recognize the parent record ID.
 
 **Resolution Steps:**
 
@@ -100,8 +100,8 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 
 **Resolution Steps:**
 
-1. Click on Replicate/restore job summary-> Click on logs-> view error the 'Error' column.
-2. Reduce the number of metadata components restored/replicated in each job to less than 10,000 files
+1. Click on Replicate/restore job summary-> Click on logs-> view error in the 'Error' column.
+2. Reduce the number of metadata components restored/replicated in each job to less than 10,000 files.
 
 #### **RECORD-TYPE ACCESS ISSUE**
 
@@ -110,7 +110,7 @@ This error indicates that the Salesforce user authenticated on AutoRABIT Vault d
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
+2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on AutoRABIT Vault.
 
 #### UNKNOWN USER PERMISSION
 
@@ -129,7 +129,7 @@ This error is generated when the required user permissions are missing in Salesf
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault.
+2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on AutoRABIT Vault.
 
 #### CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY
 
@@ -169,7 +169,7 @@ This error is generated when the required user permissions are missing in Salesf
 
 #### DUPLICATE\_VALUE
 
-Such failures occurs when such records are already present in the destination
+Failures occur when such records are already present in the destination.
 
 **Resolution Steps:**
 
@@ -204,5 +204,5 @@ Such failures occurs when such records are already present in the destination
 
 * **Issue:** If the metadata zip file exceeds the **file size limit of 39 MB**, then AutoRABIT Vault cannot restore the file to the destination Org.&#x20;
 * **Details**: Use the workbench to restore larger files.&#x20;
-* **Error Message in the UI logs**: "Metadata ZIP file exceeds the maximum allowed size of 39 MB. Please refer to the  [AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/) for more details.”&#x20;
+* **Error Message in the UI logs**: "Metadata ZIP file exceeds the maximum allowed size of 39 MB. Please refer to the [AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/) for more details.”&#x20;
 * **Additional Info**: Refer to this [Salesforce article](https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_metadata.htm) for more information on file size limitations.

@@ -1,9 +1,5 @@
 # Limitations
 
-## AutoRABIT Vault FAQs
-
-## Common Error Messages + Resolutions
-
 ### Restore/Replicate
 
 #### **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY**
@@ -18,13 +14,13 @@ This error is a result of an issue stemming from a trigger in the Org.
 #### CANNOT\_EXECUTE\_FLOW\_TRIGGER
 
 * Typical error message - We can't save this record because the ‘Online Applicant Validation’ process failed. Give your Salesforce admin these details. An error occurred when executing a flow interview. Error ID: 1545064308-45750 (1670083917)
-* This error typically indicates that there is a Process Builder process / Flow in place which is causing the upsert operation to fail.
+* This error typically indicates that there is a Process Builder process / Flow in place that is causing the upsert operation to fail.
 
 **Resolution steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> view error in 'Error' column.
 2. Locate the process builder process / flow that caused the error. Temporarily disable the automation and rerun the job to restore/replicate failed records.
-3. Alternatively, the job can be retried by specifying a lower batch size in the job config which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
+3. Alternatively, the job can be retried by specifying a lower batch size in the job config, which prevents the process builders/flows from hitting the parallel processing limits in Salesforce.
 
 #### INACTIVE\_OWNER\_OR\_USER
 
@@ -75,11 +71,11 @@ This error is caused by the Parent record not being included in the job or permi
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
 2. Verify the parent object is included in the job.
 3. Review the authenticated user to ensure the user has access to the parent record that is referenced within the error.
-4. If it is a lookup relationship then ensure the parent object is included in the job.
+4. If it is a lookup relationship, then ensure the parent object is included in the job.
 
 #### CANNOT\_UPDATE\_CONVERTED\_LEAD
 
-This error is due to a Lead record once converted (to a contact) becomes read only which prevents you from updating the lead.
+This error is due to a Lead record once converted (to a contact) becomes read only, which prevents you from updating the lead.
 
 **Resolution Steps:**
 
@@ -88,7 +84,7 @@ This error is due to a Lead record once converted (to a contact) becomes read on
 
 #### FIELD\_INTEGRITY\_EXCEPTION
 
-This error typically occurs when upsert tried to populate a lookup field with a wrong ID either because the parent failed or Vault is unable to recognize the parent record Id.
+This error typically occurs when upsert tried to populate a lookup field with a wrong ID, either because the parent failed or AutoRABIT Vault is unable to recognize the parent record Id.
 
 **Resolution Steps:**
 
@@ -98,7 +94,7 @@ This error typically occurs when upsert tried to populate a lookup field with a 
 #### INVALID\_OPERATION: Too many files in zip
 
 * Typical error message - Metadata deployment error...com.sforce.ws.SoapFaultException
-* This error is generated when there are more than 10,000 files in the .zip file which violates the governor limit.
+* This error is generated when there are more than 10,000 files in the .zip file, which violates the governor limit.
 
 **Resolution Steps:**
 
@@ -112,7 +108,7 @@ This error indicates that the Salesforce user authenticated on AutoRABIT Vault d
 **Resolution Steps:**
 
 1. Click on Replicate/restore job summary-> Click on Failure records-> download details-> view error in 'Error' column.
-2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on Vault
+2. Give appropriate access using profiles and permissions to the Salesforce user authenticated on AutoRABIT Vault
 
 #### UNKNOWN USER PERMISSION
 

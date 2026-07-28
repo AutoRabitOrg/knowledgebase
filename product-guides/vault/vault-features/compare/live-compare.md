@@ -15,12 +15,12 @@ To compare a backup with live Salesforce data:
 
 
     ![](<../../../../.gitbook/assets/Unknown image (65)>)
-3. On selecting the object, observe the details of the Snapshot1 and Sanpahot2.
-4. The Snapshot1 represents the backup selected for the comparison to be performed against the “LIVE ORG”.
+3. On selecting the object, observe the details of Snapshot1 and Snapshot2.
+4. Snapshot1 represents the backup selected for the comparison to be performed against the “LIVE ORG”.
 5. The label Snapshot2 will not display any data in it until the live compare is initiated.
 6. After selecting the required backup. Click “LIVE COMPARE” to initiate the compare operation.
 7. The live compare operation will fetch and display the objects in the next screen.
-8. Observe the Snapshot2 which says **“Live Data”**.
+8. Observe the Snapshot2, which says **“Live Data”**.
 9.  Choose the object to perform the compare operation on.
 
 
@@ -37,22 +37,22 @@ To compare a backup with live Salesforce data:
 
     ![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1) (1) (1)>)
 12. **The “Clickable Object” and the “Fields To Compare” is useful to specify the fields that should be part of the compare operation.**
-    1. **Only the fields selected under these will be part of the compare operation.**&#x43;lick on the “COMPARE” button to initiate the compare operation.
+    1. **Only the fields selected under these will be part of the compare operation.** Click on the “COMPARE” button to initiate the compare operation.
 13.
 
     ![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1) (1) (1) (1)>)
-14. Clicking compare will show the **“Compare -Save Config”** screen.
+14. Clicking Compare will show the **“Compare -Save Config”** screen.
 
 
 
     ![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1) (1) (1) (1)>)
 15. Observe the following fields on the screen:
     1. **Label(required field):** Enter a label for the job
-    2. **Preserve the result for:** will specify the retention period for the compare results. _**The minimum retention period is for “7 Days” and the maximum retention period for the compare results will be for “30 Days” only.**_
-    3. Description: allows to enter a fitting description to the job.
+    2. **Preserve the result for:** Will specify the retention period for the Compare results. _**The minimum retention period is for “7 Days” and the maximum retention period for the Compare results will be for “30 Days” only.**_
+    3. Description: Allows to enter a fitting description for the job.
 16. Click **“SAVE”** on entering all the required details.
 17. Clicking “SAVE” will show a pop-up saying, “Comparison is initiated successfully. Notification will be sent to your email once the comparison is completed.”
-18. Once the compare job is completed, an email will be triggered to the user.
+18. Once the Compare job is completed, an email will be triggered to the user.
 19. Click “OK” to be redirected to the **“JOB HISTORY”** page of the flow.
 20. Observe the list of jobs on the page.
 
@@ -99,7 +99,7 @@ To compare a backup with live Salesforce data:
 
         ![A screenshot of a computer AI-generated content may be incorrect.](<../../../../.gitbook/assets/Unknown image (13) (1) (1) (1) (1)>)
     2. Highlights the Deletions filter as selected to isolate removed records.
-    3. Deleted values are **visually marked red** for easy recognition.
+    3. Deleted values are **visually marked in red** for easy recognition.
     4. Allows opening individual record details using the View Records option.
     5. Retains access to export and comparison tools for audit or restoration purposes.
 28. **View Records**
@@ -172,12 +172,12 @@ To compare a backup with live Salesforce data:
     3.  **A short data overview** lists the objects involved, the number of fields, and the number of records included. Once the settings are reviewed, selecting Restore Now initiates the restore. Choosing Cancel closes the window without proceeding.
 
         <figure><img src="../../../../.gitbook/assets/image (2278).png" alt=""><figcaption></figcaption></figure>
-35. **Restore Job Creation**After selecting records and clicking **Restore Now**, the process transitions automatically to the **Restore** module, where the newly initiated restore job becomes visible.
+35. **Restore Job Creation:** After selecting records and clicking **Restore Now**, the process transitions automatically to the **Restore** module, where the newly initiated restore job becomes visible.
     1. The system loads the Restore dashboard filtered to the org and restore source used during the compare flow.
     2. The newly created restore job appears in the results list with key details such as label, date/time, duration, metadata counts, record counts, and job status.
     3. Standard restore job actions—view details, download logs, or delete—become available as soon as the job is listed.
     4. The job executes based on the restore settings configured in the Restore Summary window.
-36. **Re-Run Compare Job**:The **Re-Run** action allows an existing compare job to be executed again using updated field selections or the same configuration.
+36. **Re-Run Compare Job**: The **Re-Run** action allows an existing compare job to be executed again using updated field selections or the same configuration.
 37. **Access the Re-Run Option** 1.&#x20;
     1.  Navigate to Compare → Job History to view the list of completed compare jobs.
 

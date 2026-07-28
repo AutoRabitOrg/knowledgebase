@@ -1,6 +1,6 @@
 # AutoRABIT Vault Connect
 
-## AutoRABIT Vault Connect - Archive As Source
+## AutoRABIT Vault Connect - Archive as Source
 
 ## Introduction
 
@@ -72,7 +72,7 @@ This document provides complete information about the new feature AutoRABIT Vaul
 
     <figure><img src="../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
 
-    * &#x20;Include/exclude the fields as required from the list of Fields available. Click on the **File** icon from the **Fields** column.
+    * Include/exclude the fields as required from the list of Fields available. Click on the **File** icon from the **Fields** column.
 
     <figure><img src="../../../.gitbook/assets/image (361).png" alt="" width="563"><figcaption></figcaption></figure>
 15. The following pop-up will be displayed, where the user can exclude the fields as required and click on **Apply** field.
@@ -94,15 +94,15 @@ This document provides complete information about the new feature AutoRABIT Vaul
 
 #### **Overview**
 
-AutoRABIT Vault-Connect now supports backups as a source, significantly expanding its flexibility and utility. This enhancement enables multiple data sources—including both archives and backups—to be accessed seamlessly within Salesforce through external objects. By making historical and operational data available directly in Salesforce, AutoRABIT Vault-Connect strengthens support for business continuity planning (BCP), compliance audits, and contingency operations, all without the need for manual data retrieval
+AutoRABIT Vault-Connect now supports backups as a source, significantly expanding its flexibility and utility. This enhancement enables multiple data sources—including both archives and backups—to be accessed seamlessly within Salesforce through external objects. By making historical and operational data available directly in Salesforce, AutoRABIT Vault-Connect strengthens support for business continuity planning (BCP), compliance audits, and contingency operations, all without the need for manual data retrieval.
 
 #### Step-By-Step Guide:
 
-1. Login to the AutoRABIT Vault application
-2.  Click on any ORG and navigate to the Connect module under the ORG.
+1. Log in to the AutoRABIT Vault application
+2.  Click on any Org and navigate to the Connect module under the Org.
 
     <figure><img src="../../../.gitbook/assets/image (1875).png" alt=""><figcaption></figcaption></figure>
-3. After landing on the “Connect” module, click on th “ADD CONNECT CONFIG” button to initiate the connect config.
+3. After landing on the “Connect” module, click on the “ADD CONNECT CONFIG” button to initiate the connect config.
 4.  A pop-up will be displayed, with the following information:
 
     1. How or where to configure the external data source.
@@ -118,7 +118,7 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 8.  Clicking on ‘ok’ will redirect to the “Backup Config” section of the flow.
 
     <figure><img src="../../../.gitbook/assets/image (1878).png" alt=""><figcaption></figcaption></figure>
-9. Select any of the backup from the list of backups available
+9. Select any of the backups from the list of backups available.
 10. Click on the “info” icon available under the “Backup Config Details” to observe the configuration details of the selected config.
 
     <figure><img src="../../../.gitbook/assets/image (1879).png" alt=""><figcaption></figcaption></figure>
@@ -126,26 +126,26 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 
     <figure><img src="../../../.gitbook/assets/image (1880).png" alt=""><figcaption></figcaption></figure>
 12. Select the required job(s) from the available list of jobs and click ‘NEXT’ to continue.
-13. **Enable the “Automatically Include New Backup Jobs” option** to ensure that any newly created jobs associated with the selected backup configuration are automatically included in future Vault Connect runs.
+13. **Enable the “Automatically Include New Backup Jobs” option** to ensure that any newly created jobs associated with the selected backup configuration are automatically included in future AutoRABIT Vault Connect runs.
 
     <figure><img src="../../../.gitbook/assets/image (1881).png" alt=""><figcaption></figcaption></figure>
 14. Now, the flow will navigate to the “Objects” section.
-15. Objects selection and the field selection can be made under this section of the flow.
+15. Object selection and the field selection can be made under this section of the flow.
 
     <figure><img src="../../../.gitbook/assets/image (1882).png" alt=""><figcaption></figcaption></figure>
 16. Click on the fields icon to observe the list of fields available under that object.
 
     <figure><img src="../../../.gitbook/assets/image (1883).png" alt=""><figcaption></figcaption></figure>
-17. Observe the list of fields available and make sure, only the required fields are only selected.
+17. Observe the list of fields available and make sure only the required fields are selected.
 
     <figure><img src="../../../.gitbook/assets/image (1884).png" alt=""><figcaption></figcaption></figure>
 18. After making the necessary selections, click “Apply” to successfully update the object list with the changes.
-19. Once all the required modifications are done, click on the “SAVE” to save the configuration created
+19. Once all the required modifications are done, click on the “SAVE” to save the configuration created.
 20. Clicking on save will prompt for entering a label for the created config.
 21. Enter the name and click on “SAVE” to save the config.
 
     <figure><img src="../../../.gitbook/assets/image (1885).png" alt=""><figcaption></figcaption></figure>
-22. On clicking the **“SAVE”** a pop-up with a success message will be displayed.
+22. On clicking the **“SAVE,”** a pop-up with a success message will be displayed.
 
     <figure><img src="../../../.gitbook/assets/image (1886).png" alt=""><figcaption></figcaption></figure>
 23. Clicking **“OK”** will create a new config.
@@ -198,7 +198,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
    2. **Enable for Device Flow**
 4. Let the "Callback URL" be the default value at this stage.
 5. From the "**Available OAuth Scopes**", select:
-   1. F**ull access (full)**
+   1. **Full access (full)**
    2. **Perform requests at any time (refresh\_token, offline\_access**).
 6. Ensure the following four checkboxes are checked:
    1. **Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows**
@@ -215,7 +215,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
 1. Go to "**Auth. Providers**" from Quick Find and click **New**.
 2. Select the "**Provider Type**" as "**Salesforce**".
 3. Provide a "**Name**" and set the "**URL Suffix**" to default.
-4. Provide the “Consumer Key” & “Consumer Secret”
+4. Provide the “**Consumer Key**” & “**Consumer Secret**”
    1.  To get the "**Consumer Key**" and "**Consumer Secret**", navigate to the connected app and select "**Manage Consumer Details**" (refer to the following screenshot for guidance).&#x20;
 
        <figure><img src="../../../.gitbook/assets/image (1589).png" alt=""><figcaption></figcaption></figure>
@@ -268,7 +268,7 @@ To streamline the process and enhance functionality, the AutoRABIT Vault Connect
 3.  Open the Developer Console by going to: Setup → Developer Console<br>
 
     <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  After Landing on the developer console, create a new Visualforce page and save it to continue with the script creation.<br>
+4.  After landing on the developer console, create a new Visualforce page and save it to continue with the script creation.<br>
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5.  Enter the script and save it.<br>
@@ -306,7 +306,7 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 
 **Step-by-Step Guide:**
 
-1. Log in to the Vault application.
+1. Log in to the AutoRABIT Vault application.
 2.  Click on any Org to navigate to AutoRABIT Vault – Connect.<br>
 
     <figure><img src="../../../.gitbook/assets/image (68) (2).png" alt=""><figcaption></figcaption></figure>
@@ -387,7 +387,7 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 
 ## Global Search: Prerequisites, Limitations, and Troubleshooting
 
-### Prerequisite: Enabling Global Search with Vault Connect <a href="#prerequisite-enabling-global-search-with-vault-connect" id="prerequisite-enabling-global-search-with-vault-connect"></a>
+### Prerequisite: Enabling Global Search with AutoRABIT Vault Connect <a href="#prerequisite-enabling-global-search-with-vault-connect" id="prerequisite-enabling-global-search-with-vault-connect"></a>
 
 #### **Steps to Enable Global Search** <a href="#steps-to-enable-global-search" id="steps-to-enable-global-search"></a>
 
@@ -396,7 +396,7 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 2. **Search for External Data Sources:**
    * In the Quick Find box, search for **External Data Sources**.
 3. **Edit External Data Source:**
-   * Select the external data source you created for Vault Connect.
+   * Select the external data source you created for AutoRABIT Vault Connect.
    * Click on **Edit**.
 4. **Enable Free-Text Search Expressions:**
    * Enable the checkbox labeled **Use Free-Text Search Expressions**.

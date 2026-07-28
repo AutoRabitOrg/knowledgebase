@@ -31,7 +31,7 @@ If an object has a reference from another object as both parent and a child reco
 
 ### How does AutoRABIT Vault ensure PCI compliance? <a href="#how-does-vault-ensure-pci-compliance" id="how-does-vault-ensure-pci-compliance"></a>
 
-AutoRABIT Vault firewalls, software, data encryption, secure passwords, transmission, and physical access to data storage all serve to protect data security. AutoRABIT performs continual software and security updates, testing to verify compliance. Data access logs are monitored regularly monitored to identify outliers.&#x20;
+AutoRABIT Vault firewalls, software, data encryption, secure passwords, transmission, and physical access to data storage all serve to protect data security. AutoRABIT performs continual software and security updates, testing to verify compliance. Data access logs are monitored regularly to identify outliers.&#x20;
 
 For more information, refer to our page on [PCI Compliance](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/compliance/pci-dss).&#x20;
 
@@ -74,7 +74,9 @@ A sandbox refresh is a Salesforce-native process that completely rebuilds a sand
 
 In contrast, data seeding selectively copies specific data (and sometimes metadata) from Production to a sandbox without recreating it. It updates targeted datasets without wiping the environment, making it ideal for keeping sandboxes test-ready between refresh cycles.
 
-Sandbox Refresh = Full Environment Reset Data Seeding = Targeted Data Update
+Sandbox Refresh = Full Environment Reset&#x20;
+
+Data Seeding = Targeted Data Update
 
 #### 3.   Challenges with Salesforce Sandbox Refresh
 
@@ -110,7 +112,7 @@ AutoRABIT Vault does not recreate the sandbox. Instead, it enhances sandbox usab
 #### 6.   How AutoRABIT Vault Overcomes Salesforce Refresh Limitations
 
 * **Avoids Downtime** – Data replication occurs without sandbox recreation.
-* **Eliminates 29-Day Dependency** – Data can be updated on demand. There is no need to wait for           the Full Copy refresh window.
+* **Eliminates 29-Day Dependency** – Data can be updated on demand. There is no need to wait for the Full Copy refresh window.
 * **Preserves In-Progress Testing** – No full environment reset required.
 * **Reduces Administrative Overhead** – No need for user reactivation or endpoint reconfiguration.
 * **Enables Incremental Testing** – Only required datasets are refreshed.
@@ -136,7 +138,7 @@ This approach avoids downtime, eliminates manual post-refresh activities, preser
 
 While AutoRABIT Vault enables controlled and efficient data seeding, it is important to recognize that all data replication activities ultimately execute within the Salesforce platform. As such, Salesforce governor limits, validation rules, and platform constraints continue to apply during the replication process.
 
-The success of a data seeding operation depends not only on AutoRABIT Vault configuration but also on the data hygiene and structural integrity of the target sandbox. Issues such as inactive record owners, invalid IDs, broken relationships, active validation rules, or automation conflicts may result in Salesforce-generated errors during replication.
+The success of a data seeding operation depends not only on AutoRABIT Vault configuration, but also on the data hygiene and structural integrity of the target sandbox. Issues such as inactive record owners, invalid IDs, broken relationships, active validation rules, or automation conflicts may result in Salesforce-generated errors during replication.
 
 Organizations are advised to review sandbox data quality, user status, and platform limits prior to initiating large-scale data seeding activities.
 
@@ -155,13 +157,13 @@ In scenarios requiring full org-level metadata restoration or very large metadat
 
 #### 9.   Recommended Best Practice
 
-The optimal approach is to start with a sandbox refresh to establish a clean production-aligned baseline. This ensures full metadata and structural consistency.
+The optimal approach is to start with a sandbox refresh to establish a clean, production-aligned baseline. This ensures full metadata and structural consistency.
 
 After the baseline is set, use AutoRABIT Vault Replicate to perform periodic incremental data updates. Instead of repeatedly refreshing the sandbox, only new or modified records are synchronized.
 
 This hybrid model reduces downtime, avoids refresh frequency constraints, preserves ongoing testing, and supports continuous DevOps practices.
 
-_It is important to note: AutoRABITVault is not a replacement for sandbox refresh. Instead, ARM (metadata alignment) combined with AutoRABIT Vault (data seeding) provides a controlled alternative when alignment—not full structural reset—is the objective._
+_It is important to note: AutoRABIT Vault is not a replacement for sandbox refresh. Instead, ARM (metadata alignment) combined with AutoRABIT Vault (data seeding) provides a controlled alternative when alignment—not full structural reset—is the objective._
 
 ***
 
@@ -194,7 +196,7 @@ A **Refresh Token** may expire in the following cases:
 
 ### Can I delete specific, condition-based data from an existing backup?
 
-No, if the data is backed up in GCP and AWS, it is not possible to delete data from a field in AutoRABIT Vault. If you want to delete it from the Org, you can archive the whole record but not the data for a single field.
+No, if the data is backed up in GCP and AWS, it is not possible to delete data from a field in AutoRABIT Vault. If you want to delete it from the Org, you can archive the whole record, but not the data for a single field.
 
 ### Is it possible to mask an existing field/record already backed up in GCP?
 
@@ -227,7 +229,7 @@ To filter data based on specific dates from a backup using a CSV file and Excel,
 
 If the backup configuration is deleted, all its related backup snapshots are also deleted from the AutoRABIT Vault UI. The backup will be available in the storage, but it'll be in Excel format. Restoring/Replicating along with the relationships will be a challenge and must be done manually. That's why we recommend users do not delete any configurations unless they are certain they will not be needed in the future.
 
-### If a Salesforce org is decommissioned, will its backup still be available and can I Replicate it to another org?
+### If a Salesforce org is decommissioned, will its backup still be available, and can I Replicate it to another org?
 
 1. If the Backup snapshots are available in the storage, i.e., not expired, you can **Replicate** them to another org (Restore is for the same org, which is not possible if the org is decommissioned).
 2. If the configuration is deleted, all its related backup snapshots are also deleted from the AutoRABIT Vault UI. The Backup will be available in the storage, but it will be in Excel format. Restoring/Replicating, along with the relationships, will be a challenge and must be done manually, which is why we recommend users not delete any configurations unless they are certain they won't be needed in the future.
@@ -236,7 +238,7 @@ If the backup configuration is deleted, all its related backup snapshots are als
 
 1. Navigate to the backup section.
 2. Select the relevant Salesforce org and configuration.
-3. Navigate to the "Backup Label" which includes the required date.
+3. Navigate to the "Backup Label," which includes the required date.
 4. Download the logs.
 
 The logs will contain information about who initiated the backup (starting).
@@ -250,7 +252,7 @@ The logs will contain information about who initiated the backup (starting).
 
 ### Where can I find the backup after it expires in AutoRABIT Vault?
 
-Once a backup has reached its expiration, it will move to lower tier storage, such as Glacier. The backup will stay there for a month after this, and then it will be permanently deleted. During the time it stays in Glacier, we can retrieve it with the help of SRO and share to customer if required.
+Once a backup has reached its expiration, it will move to lower-tier storage, such as Glacier. The backup will stay there for a month after this, and then it will be permanently deleted. During the time it stays in Glacier, we can retrieve it with the help of SRO and share to customer if required.
 
 ### Content Version Large File Processing
 

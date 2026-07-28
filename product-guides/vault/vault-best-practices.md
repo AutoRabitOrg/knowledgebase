@@ -76,7 +76,7 @@ AutoRABIT Vault, when paired with a thoughtful recovery strategy, can provide th
 
 Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail.
 
-See [AutoRABIT Vault Archival Best ](vault-best-practices.md#archival-best-practices)AutoRABIT Vault below.
+See [AutoRABIT Vault Archival Best Practices](vault-best-practices.md#archival-best-practices) below.
 
 ### **Email Messages Attachment Limitation**
 
@@ -100,9 +100,9 @@ This structured approach ensures files are properly attached to Email Messages d
 2. Configure backup for Special objects like history, system, audit logs, and KAV objects every week. Can be set to a daily basis, if needed.
 3. Configure incremental backups to include all the objects in Salesforce. The recommended frequency for this backup is daily.
 4. Configure the scheduled time for full and incremental backups with enough of a time gap between them to avoid any bottlenecks in Salesforce, which may be caused due to queries being executed on the same objects in parallel.
-5. Create backup schedules that are in sync with your production deployment schedules. Backup your entire production instance or relevant instance data before deploying to a production instance.
+5. Create backup schedules that are in sync with your production deployment schedules. Back up your entire production instance or relevant instance data before deploying to a production instance.
 6. Identify a set of business-critical objects. Configure a backup specifically to include these objects to run at higher frequency levels (recommended frequency is multiple times a day) depending on RPO and RTO requirements.
-7. Use the option to exclude formula fields in case of objects with a large number of fields, without which Salesforce queries may be errored out or give results slowly.
+7. Use the option to exclude formula fields in case of objects with a large number of fields, without which Salesforce queries may be errorred out or give results slowly.
 8. Configure email addresses of users who need to be notified upon completion or failure of backups. (By default, the user who configured the backup will be notified automatically).
 9. Go through logs and results of backups every week to ensure that automated backups are happening as expected.
 10. Adjust frequency and scheduled time of backup configurations based on API call limit and API call consumption by other systems.
@@ -146,7 +146,7 @@ By following these best practices, organizations can efficiently back up blob da
 
 ## Configuration Best Practices
 
-In this segment, we will go over some important points to note while configuring in AutoRABIT Vault.
+In this segment, we will go over some important points to note while configuring AutoRABIT Vault.
 
 1. **First Incremental Backup:** It is crucial to note that the first incremental backup you perform will be a full backup. This means that during the initial incremental backup, the entire dataset will be backed up.
 2. **Avoid Deleting Configurations:** It is highly recommended not to delete any configurations that you have set up. Deleting a configuration will result in the corresponding backup or archival jobs associated with it becoming inaccessible from AutoRABIT Vault.
@@ -157,19 +157,19 @@ In this segment, we will go over some important points to note while configuring
 ## Restore/ Replicate Best Practices
 
 1. Active validation rules, triggers, process builder, and workflow may lead to restore/replicate failures of certain data or metadata. Make sure to disable these before performing restore/replicate operations.
-2. We strongly urge everyone to implement frameworks such as Trigger Handlers that allow you to disable automation (Triggers, Flows, Workflow Rules, etc.) for certain users or at certain times. Salesforce offers brief [guidance on this on Trailhead](https://trailhead.salesforce.com/content/learn/modules/success-cloud-coding-conventions/implement-frameworks-sc), and there are multiple Trigger Handler patterns available such as the [Apex Trigger Actions Framework](https://github.com/mitchspano/apex-trigger-actions-framework). Data restore jobs generally do not need to re-process that business automation. By bypassing this automation you can reduce time to write data to Salesforce by 10x or more.
+2. We strongly urge everyone to implement frameworks such as Trigger Handlers that allow you to disable automation (Triggers, Flows, Workflow Rules, etc.) for certain users or at certain times. Salesforce offers brief [guidance on this on Trailhead](https://trailhead.salesforce.com/content/learn/modules/success-cloud-coding-conventions/implement-frameworks-sc), and there are multiple Trigger Handler patterns available, such as the [Apex Trigger Actions Framework](https://github.com/mitchspano/apex-trigger-actions-framework). Data restore jobs generally do not need to re-process that business automation. By bypassing this automation, you can reduce time to write data to Salesforce by 10x or more.
 3. Metadata API can deploy and retrieve up to 10,000 files or 400 MB at one time. If either of these limits is exceeded, the deployment or retrieval will fail. Make sure the metadata size is less than 400MB for a single job. You can split the metadata into multiple jobs to achieve restore/replicate if metadata is larger than 400 MB.
 4. Define batch size based on the size of metadata or data you want to perform jobs on.
 5. Make sure record owners are active on Salesforce, as Restore/Replicate will fail for inactive owners. If activating owners is not an option, you can enable [‘Set Audit](https://help.salesforce.com/articleView?id=000227663\&type=1) [Fields and Update Records with Inactive Owners’](https://help.salesforce.com/articleView?id=000227663\&type=1) on Salesforce.
 
 ## Archival Best Practices
 
-* Archiving parent objects will result in the deletion of all the child objects related through mandatory lookups and master-detail relationships recursively as it is an expected behavior of Salesforce. For the children related through a lookup (which is not mandatory), the reference to the parent will be removed from the child object before performing deletion of the parent.
+* Archiving parent objects will result in the deletion of all the child objects related through mandatory lookups and master-detail relationships recursively, as it is an expected behavior of Salesforce. For the children related through a lookup (which is not mandatory), the reference to the parent will be removed from the child object before performing deletion of the parent.
 * Ensure that only one object is chosen for archival at a time in an org to avoid issues with row locks and interdependencies during the deletion of the records from Salesforce.
 * Always select the option to ‘Notify before deleting data from Salesforce’ to avoid auto-deletion of the records without consent and review of the records that are going to be deleted as part of the job.
 * Use limit and offset or an auto-increment field on the object to chunk the data for deletion into smaller batches to help understand the impact and strategize the deletion of subsequent batches based on the errors experienced in the initial batches.
-* Provide a smaller Bulk API batch size when triggering the archival to avoid errors arising out of Salesforce processing capabilities.
-* Run the archival job in serial mode to avoid errors like row locks or any other issues arising out of parallel processing in Salesforce. This is recommended only if you experience errors due to parallel mode as running the job in serial mode will impact the time it takes to execute the job.
+* Provide a smaller Bulk API batch size when triggering the archival to avoid errors arising from Salesforce processing capabilities.
+* Run the archival job in serial mode to avoid errors like row locks or any other issues arising from parallel processing in Salesforce. This is recommended only if you experience errors due to parallel mode, as running the job in serial mode will impact the time it takes to execute the job.
 * Ensure that options to disable workflows, validation rules, and triggers are enabled during the initiation of the archive job to ensure the deletion of records won’t result in reaching Salesforce processing limitations and allocations.
 
 ## Unsupported Components with Metadata API

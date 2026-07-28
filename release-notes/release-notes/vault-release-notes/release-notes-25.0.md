@@ -1,6 +1,6 @@
 # AutoRABIT Vault Release Notes 25.0
 
-{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Vault updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT Vault updates!" listId="a085e26e7e" %}
 
 ## AutoRABIT Vault Release Notes 25.3.2 <a href="#heading-title-text" id="heading-title-text"></a>
 

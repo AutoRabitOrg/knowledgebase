@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT updates!" listId="a085e26e7e" %}
 
-**Welcome to the AutoRABIT Release Notes page! This is your go-to resource for the latest updates and changes to all of our key products, including ARM, CodeScan, Vault, Guard, and nCino integrations.**
+**Welcome to the AutoRABIT Release Notes page! This is your go-to resource for the latest updates and changes to all of our key products, including ARM, CodeScan, AutoRABIT Vault, Guard, and nCino integrations.**
 
 Here, you'll find detailed release notes that provide insights into new features, enhancements, and bug fixes for each product update. Our goal is to keep you informed and equipped with the knowledge to make the most of our products.
 
@@ -12,7 +12,7 @@ Here, you'll find detailed release notes that provide insights into new features
 
 {% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes" %}
 
-{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/vault-release-notes" %}
+{% embed url="https://knowledgebase.autorabit.com/~/revisions/XD9QHUxnAfKVdhwkBhK6/release-notes/release-notes/vault-release-notes" %}
 
 {% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/guard" %}
 

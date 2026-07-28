@@ -18,6 +18,8 @@ Resolved a failure in **Step 5 – Data Deployment** during Feature Deployment u
 
 Fixed a CI Job build failure that occurred during **Step 2 – Object Configuration** when using **Deploy using Salesforce and Version Control**. The build was throwing an exception, causing the entire CI Job to fail. The object configuration step now handles this scenario correctly.
 
+***
+
 ## nCino - Release 26.3.3 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 19 July 2026**

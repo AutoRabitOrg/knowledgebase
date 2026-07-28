@@ -1,15 +1,15 @@
 # User Registration
 
-**AutoRABIT Vault Freemium User Registration**
+## **AutoRABIT Vault Freemium User Registration**
 
-User Guide
+### User Guide
 
-This guide explains the Freemium registration workflow, including account sign-up, agreement acceptance, OTP verification, and the confirmation email received after the free trial account is activated.
+This guide explains the AutoRABIT Vault Freemium registration workflow, including account sign-up, agreement acceptance, OTP verification, and the confirmation email received after the free trial account is activated.
 
 | **Workflow outcome:** After registration and verification, the account is activated for the AutoRABIT Vault free trial. The activation email provides access details, the instance URL, the master code, and the applicable trial limits. |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## Purpose
+### Purpose
 
 The Freemium registration flow allows a new account to be requested and activated for a limited AutoRABIT Vault free trial. The workflow captures basic account details, requires agreement acknowledgement, verifies the registration using OTP, and sends an activation email with the trial access information.
 
@@ -17,7 +17,7 @@ The Freemium registration flow allows a new account to be requested and activate
 **Note:** AutoRABIT Vault Free Trial access remains active for **14 days** from the subscription start date. After the trial period ends, account data is retained for an additional **7 days**. Once this retention period is complete, the account is permanently deleted, and no user data is retained after deletion.
 {% endhint %}
 
-## Registration Workflow Overview
+### Registration Workflow Overview
 
 | **Step**                         | **Description**                                                                                                |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------- |

@@ -32,7 +32,7 @@ The Close action dismisses the Destination org details dialog and returns to the
 
 ## System Behavior
 
-* AutoRABIT Vault displays the Destination ORG indicator only after the destination org is connected.
+* AutoRABIT Vault displays the Destination Org indicator only after the destination org is connected.
 * The Destination org details dialog provides read-only information about the registered destination org.
 * Re-authenticate remains available when the org connection must be refreshed.
 * Closing the dialog does not change org registration, authentication, or Dashboard state.

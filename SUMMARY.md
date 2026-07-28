@@ -1306,7 +1306,7 @@
   * [nCino for AutoRABIT Vault](product-guides/vault/ncino/README.md)
     * [Archival Configuration for your Salesforce Org](product-guides/vault/ncino/archival-configuration-for-your-salesforce-org.md)
     * [Backup Configuration for your Salesforce Org](product-guides/vault/ncino/backup-configuration-for-your-salesforce-org.md)
-    * [Registering nCino configured Salesforce Org](product-guides/vault/ncino/registering-ncino-configured-salesforce-org.md)
+    * [Registering nCino-Configured Salesforce Org](product-guides/vault/ncino/registering-ncino-configured-salesforce-org.md)
     * [Restoring nCino Features](product-guides/vault/ncino/restoring-ncino-features.md)
 * [BKP of AutoRABIT Vault](product-guides/vault-1/README.md)
   * [AutoRABIT Vault™ Overview](product-guides/vault-1/vault-tm-overview.md)

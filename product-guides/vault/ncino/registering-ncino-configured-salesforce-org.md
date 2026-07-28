@@ -1,4 +1,4 @@
-# Registering nCino configured Salesforce Org
+# Registering nCino-Configured Salesforce Org
 
 Registering the nCino-installed Salesforce organization enables you to perform nCino data operations inside AutoRABIT Vault. When you register your Salesforce Organization, AutoRABIT Vault is connected to your Salesforce org with required permissions that enable you to back up your data and metadata information.
 
@@ -7,11 +7,11 @@ By default, [AutoRABIT Vault](https://www.autorabit.com/products/vault-data-back
 To register a Salesforce org configured with nCino objects, follow the steps below in order:
 
 1. Log in to **AutoRABIT Vault** using your credentials.
-2. Visit **Setup > Register New Org** from the AutoRABIT Vault homepage.
+2. Visit **Setup > Register New Org** from the AutoRABIT Vault home page.
 
 <figure><img src="../../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
 
-3. Select [**nCino**](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) as **Environment**.
+3. Select [**nCino**](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) as the **Environment**.
 4. Select your [**Salesforce Org**](https://knowledgebase.autorabit.com/vault/docs/backup-configuration-for-your-salesforce-org) **type,** e.g., Production Org, Sandbox, QA Org, etc. You can add your custom org by adding your custom URL.
 5.  Next, choose an Authentication Type to register the org. Usually, there are two ways to authenticate your Salesforce Org: **OAuth** or **Standard** (username/password).
 
@@ -21,7 +21,7 @@ To register a Salesforce org configured with nCino objects, follow the steps bel
 
     <figure><img src="../../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
-    * **Standard Authentication**: In Standard authentication, the desired Salesforce Cloud environment, your username, password, and security token of the Salesforce are entered, and AutoRABIT Vault authenticates the connection. To verify that AutoRABIT Vault can connect to the target Salesforce organization when using the credentials of the target Salesforce user, click on **Test Connection**.
+    * **Standard Authentication**: In Standard authentication, the desired Salesforce Cloud environment, your username, password, and security token of Salesforce are entered, and AutoRABIT Vault authenticates the connection. To verify that AutoRABIT Vault can connect to the target Salesforce organization when using the credentials of the target Salesforce user, click on **Test Connection**.
 
     <figure><img src="../../../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
 6. Finally, click on **Save** to complete the authentication process.

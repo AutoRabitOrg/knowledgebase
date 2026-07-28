@@ -32,16 +32,16 @@ This option allows you to select specific metadata/data that gets restored only 
 
 <figure><img src="../../../.gitbook/assets/image (304).png" alt=""><figcaption></figcaption></figure>
 
-3. On the next screen, enter the **label** of your choice or leave the default label which was auto-generated.
-4. Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches are your best solution.
-5. Next, you can select the criteria for the restore to get performed:
-   * **Disable Workflows**: On selection, all the workflows of the Salesforce objects will be deactivated, and the data would be transferred from the source to the destination sandbox. Once the restore is completed, workflows will get activated.
-   * **Disable Validation rules**: Validation rules verify that the data a user enters in a record meets the criteria you specify before the user can save the record. On selection, all the validation rules of the Salesforce objects will be deactivated, and the data would be transferred from the source to the destination sandbox. Once the restore is done, validation rules will get activated.
+3. On the next screen, enter the **label** of your choice or leave the default label that was auto-generated.
+4. Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
+5. Next, you can select the criteria for the restore to be performed:
+   * **Disable Workflows**: On selection, all the workflows of the Salesforce objects will be deactivated, and the data will be transferred from the source to the destination sandbox. Once the restore is completed, workflows will get activated.
+   * **Disable Validation rules**: Validation rules verify that the data a user enters in a record meets the criteria you specify before the user can save the record. On selection, all the validation rules of the Salesforce objects will be deactivated, and the data will be transferred from the source to the destination sandbox. Once the restore is done, validation rules will get activated.
 6. Click **Restore Now**.
 
 <figure><img src="../../../.gitbook/assets/image (305).png" alt="" width="512"><figcaption></figcaption></figure>
 
-7. You will be redirected to the **Restore** homepage which will show you the progress of the restore operation recently triggered.
+7. You will be redirected to the **Restore** home page, which will show you the progress of the restore operation recently triggered.
 8. Click on the **Restore Label** to view the list of metadata/data being replicated to the org. Click on **Export** to save the restored metadata/data info in CSV format locally.
 9. Click on the **Backup info** to get a snapshot of the backup operation performed.
 10. Under the **Action** tab:

@@ -175,7 +175,7 @@ The next screen displays the metadata and data objects that will be replicated. 
            <figure><img src="../../../../.gitbook/assets/image (2377).png" alt=""><figcaption></figcaption></figure>
        2. A Go Back option allows navigation to the previous hierarchy level.
        3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
-    10. **Object Selection Behaviour**
+    10. **Object Selection Behavior**
         1. Selecting an object automatically selects dependent objects based on relationship rules.
         2. Objects selected due to dependency are visually marked.
         3. If cascading relationships exist:
@@ -220,7 +220,7 @@ You also have the option of importing records from a CSV file. To upload the CSV
 **Important Note:**
 
 1. The mandatory fields are auto-selected, so you do not have the option to disable them. For example, the **`ID`** field.
-2. It is mandatory to select at least one field; if no field is selected and you try to proceed further, a warning popup will be displayed stating, **`“Select at least one field to proceed.”`**
+2. It is mandatory to select at least one field; if no field is selected and you try to proceed further, a warning pop-up will be displayed, stating **`“Select at least one field to proceed.”`**
 3. The unchecked fields will have a null value in the record.
 {% endhint %}
 
@@ -232,7 +232,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1644318580634.png" alt=""><figcaption></figcaption></figure>
 
-*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the popup. <br>
+*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the pop-up. <br>
 
     <figure><img src="../../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
 
@@ -253,7 +253,7 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 ## Excluding System-Generated Feed Items – Restore
 
-The AutoRABIT Vault application now automatically identifies and excludes system-generated FeedItems during the Restore processes. This ensures that, these items do not cause any failures during these operations.
+The AutoRABIT Vault application now automatically identifies and excludes system-generated FeedItems during the Restore processes. This ensures that these items do not cause any failures during these operations.
 
 ### **Key Features**
 

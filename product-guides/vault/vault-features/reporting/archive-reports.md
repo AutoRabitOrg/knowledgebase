@@ -18,7 +18,7 @@ AutoRABIT Vault's Archive Reporting feature allows users to generate data-driven
 
 ![Search By Options](<../../../../.gitbook/assets/image (245).png>)
 
-3. A popup will appear prompting for input parameters.
+3. A pop-up will appear, prompting for input parameters.
 
 ![Report Configuration Popup](<../../../../.gitbook/assets/image (246).png>)
 

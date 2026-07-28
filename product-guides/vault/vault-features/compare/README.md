@@ -1,4 +1,4 @@
-# Vault Compare
+# AutoRABIT Vault Compare
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The Compare feature in AutoRABIT Vault offers a streamlined method for identifyi
 
 The **Compare operation** in AutoRABIT Vault enables comprehensive analysis between two data sources—either **two backup snapshots** or a **backup and a live Salesforce environment**. It helps in identifying record-level and field-level discrepancies, ensuring that data across environments remains synchronized and reliable.
 
-This functionality serves as a powerful validation mechanism for teams managing frequent data changes, releases, or environment refreshes. By visually presenting differences between data sets, Vault empowers administrators to assess impacts, troubleshoot issues, and maintain data consistency across the Salesforce landscape.
+This functionality serves as a powerful validation mechanism for teams managing frequent data changes, releases, or environment refreshes. By visually presenting differences between data sets, AutoRABIT Vault empowers administrators to assess impacts, troubleshoot issues, and maintain data consistency across the Salesforce landscape.
 
 #### Key highlights include:
 
@@ -27,7 +27,7 @@ This functionality serves as a powerful validation mechanism for teams managing 
 
 #### Use Case Example
 
-For instance, when comparing "**two snapshot versions of Salesforce Accounts data, or comparing the backedup data against the live org"** Vault will highlight all record-level changes such as:
+For instance, when comparing "**two snapshot versions of Salesforce Accounts data, or comparing the backed-up data against the live org"** AutoRABIT Vault will highlight all record-level changes, such as:
 
 * New records added in the latest snapshot.
 * Modified fields in existing records.

@@ -30,14 +30,18 @@ Key behaviors:
     ![Select Org](<../../../../.gitbook/assets/image (2) (1) (1) (1) (2).png>)
 2. A list of jobs from various modules (Backup, Restore, Replicate, Archive) will be displayed for the selected Org.
 3. Navigate between module tabs to review stale jobs in each category:
-   * **Backup Jobs**\
-     ![Backup Tab](<../../../../.gitbook/assets/image (1) (1) (1) (1) (2).png>)
-   * **Restore Jobs**\
-     ![Restore Tab](<../../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png>)
-   * **Replicate Jobs**\
-     ![Replicate Tab](<../../../../.gitbook/assets/image (3) (1) (1) (2).png>)
-   * **Archive Jobs**\
-     ![Archive Tab](<../../../../.gitbook/assets/image (4) (1) (1) (2).png>)
+   *   **Backup Jobs**<br>
+
+       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+   *   **Restore Jobs**<br>
+
+       <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+   *   **Replicate Jobs**<br>
+
+       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+   *   **Archive Jobs**<br>
+
+       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

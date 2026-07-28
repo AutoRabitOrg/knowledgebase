@@ -1,8 +1,8 @@
 # Find\_Replace\_Masking\_Rule
 
-**Find & Replace Masking Rule**
+## **Find & Replace Masking Rule**
 
-AutoRABIT Vault Replicate - User Guide
+## AutoRABIT Vault Replicate - User Guide
 
 This guide explains how a Find & Replace masking rule is created during Replicate Config. The flow supports masking by searching for either a regular expression or a specific value, and replacing the matched value with either a fixed replacement or generated synthetic data.
 
@@ -26,7 +26,7 @@ During Replicate Config, the flow reaches the Masking Rules step after the backu
 
 ### Start a new masking rule
 
-Selecting New Masking Rule opens the Masking Rule panel. The rule setup begins with Rule Name, Select Object, Field Type, and Masking Style. Rule Name is mandatory and accepts alphanumeric characters, spaces, hyphen, and underscore. AutoRABIT Vault displays a validation message when unsupported characters are entered.
+Selecting New Masking Rule opens the Masking Rule panel. The rule setup begins with Rule Name, Select Object, Field Type, and Masking Style. Rule Name is mandatory and accepts alphanumeric characters, spaces, hyphens, and underscores. AutoRABIT Vault displays a validation message when unsupported characters are entered.
 
 ![](<../../../../../.gitbook/assets/Unknown image (347)>)
 
@@ -50,7 +50,7 @@ When Find & Replace is selected, AutoRABIT Vault displays Find, Replace With, an
 
 ![](<../../../../../.gitbook/assets/Unknown image (351)>)
 
-In a regular expression based setup, the pattern is entered directly in Find. AutoRABIT Vault uses this value to identify matching content within the selected fields during masking.
+In a regular expression-based setup, the pattern is entered directly in Find. AutoRABIT Vault uses this value to identify matching content within the selected fields during masking.
 
 ![](<../../../../../.gitbook/assets/Unknown image (352)>)
 

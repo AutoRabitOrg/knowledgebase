@@ -16,7 +16,7 @@ The Salesforce org is selected from Salesforce Orgs. The required rule can then 
 
 Selecting NEW MASKING RULE opens the Masking Rule dialog. The dialog displays the selected Salesforce Org and provides the required fields for rule creation.
 
-Rule Name is mandatory. The field supports alphanumerics, hyphen, underscore, and spaces. If the rule name does not follow the allowed format, a validation message is shown and the rule cannot be saved until the value is corrected.
+Rule Name is mandatory. The field supports alphanumerics, hyphens, underscores, and spaces. If the rule name does not follow the allowed format, a validation message is shown, and the rule cannot be saved until the value is corrected.
 
 SAVE remains inactive until the mandatory configuration is completed. CANCEL closes the dialog without saving the rule.
 

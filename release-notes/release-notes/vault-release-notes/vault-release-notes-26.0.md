@@ -18,6 +18,8 @@ Updated applicable “Vault” references to “AutoRABIT Vault” across the ap
 
 Added the ability to switch an existing Salesforce org connection between Authorization Code and Client Credentials without re-registering the org. Existing configurations remain preserved, confirmation is required before switching, and unsuccessful attempts retain the previous working authentication setup. All changes are captured in the audit logs.
 
+***
+
 ## AutoRABIT Vault Release Notes 26.2.2
 
 **Release Date: 22 July 2026**

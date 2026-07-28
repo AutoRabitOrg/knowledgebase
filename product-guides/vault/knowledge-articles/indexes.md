@@ -1,10 +1,10 @@
 # Indexes
 
-Indexes are critical in Salesforce for improving the performance of data retrieval, especially when dealing with large volumes of records. Salesforce uses multi-tenant architecture, meaning multiple customers share the same infrastructure, so query efficiency is extremely important. Indexes play a crucial role in databases for improving performance, especially in querying large datasets, by using Indexing on Salesforce objects we can achieve faster data retrieval, Improved query performance , Reduced load on large objects and enhanced sorting and filtering functionality.
+Indexes are critical in Salesforce for improving the performance of data retrieval, especially when dealing with large volumes of records. Salesforce uses multi-tenant architecture, meaning multiple customers share the same infrastructure, so query efficiency is extremely important. Indexes play a crucial role in databases for improving performance, especially in querying large datasets, by using Indexing on Salesforce objects, we can achieve faster data retrieval, improved query performance, reduced load on large objects, and enhanced sorting and filtering functionality.
 
-By effectively using Indexes on Salesforce objects, we can achieve efficiency in AutoRABIT Vault Back up, Compare operations and Live replication of Salesforce orgs.
+By effectively using Indexes on Salesforce objects, we can achieve efficiency in AutoRABIT Vault Backup, Compare operations, and Live replication of Salesforce orgs.
 
-Salesforce platform maintains default indexes on the following fields for most objects.
+Salesforce platform maintains default indexes on the following fields for most objects:
 
 * RecordTypeId
 * Division
@@ -47,7 +47,7 @@ For creating Indexes manually on Big Objects in Salesforce, create custom fields
 
 <figure><img src="../../../.gitbook/assets/image (1692).png" alt=""><figcaption><p>Index on Big Objects</p></figcaption></figure>
 
-Navigate to Index Tab and click New
+Navigate to Index Tab and click New.
 
 <figure><img src="../../../.gitbook/assets/image (1693).png" alt=""><figcaption><p>New Index Definition</p></figcaption></figure>
 
@@ -61,17 +61,17 @@ Important criteria to ensure a good fit for a custom index:
 
 2\. Queries should take 5 seconds or more to process.
 
-3\. Query must contain a WHERE clause with a value that somewhat unique (i.e., the custom index should be able to filter out \~ 90% of the records).
+3\. Query must contain a WHERE clause with a value that is somewhat unique (i.e., the custom index should be able to filter out \~ 90% of the records).
 
-4\. Some commonly used fields, external id fields, and reference (lookup/master-detail) fields are already standard indexed. Formula fields and certain other fields cannot be custom indexed.
+4\. Some commonly used fields, external ID fields, and reference (lookup/master-detail) fields are already standard indexed. Formula fields and certain other fields cannot be custom-indexed.
 
 5\. For SOQL queries executed in Apex, it is common for developers to embed data binding variables to make the query dynamic; however, for analyzing the query for custom indexing, we need to know the typical values that will actually be used at runtime.
 
-### Performance Results of Synthetic Backup using Indexes in AutoRABIT Vault tool:
+### Performance Results of Synthetic Backup using Indexes in AutoRABIT Vault
 
-As noticed on our QA Org, the below is the Impact of creating Indexes on SF Big Objects and using synthetic back ups
+As noticed on our QA Org, the following is the Impact of creating Indexes on Salesforce Big Objects and using synthetic backups:
 
-SF Org Back up taken prior to Indexing and Synthetic Back up ([https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/synthetic-backup](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/synthetic-backup)) took approximately 8 hours for 3.2 million records now complete 8.9 million records back up with additional metadata in 1.5 hours.
+Salesforce Org Backup taken prior to Indexing and Synthetic Backup ([https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/synthetic-backup](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/synthetic-backup)) took approximately 8 hours for 3.2 million records now complete 8.9 million records backup with additional metadata in 1.5 hours.
 
 <figure><img src="../../../.gitbook/assets/image (1695).png" alt=""><figcaption><p>Backup Summary</p></figcaption></figure>
 

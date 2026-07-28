@@ -79,12 +79,12 @@ Data archives can be thought of as a data repository for infrequently accessed, 
     * **Configuration Name**: Archival configuration name
     * **Date/Time**: The date and time stamp for the archival process took place
     * **Expiry Date**: Till which date the archival job will remain with AutoRABIT Vault
-    * **Duration**: Time-taken to complete the archival operation
-    * **Records**: Total numbers of records archived
+    * **Duration**: Time taken to complete the archival operation
+    * **Records**: Total number of records archived
     * **API Calls**: Api call duration (in seconds)
-    * **Query**: Filter or query that have been used to fetch the records
-    * **Data Backup**: Backup type for data components i.e., _Full backup_ or _Incremental backup_
-    * **Status**: Status of the archival i.e., completed, in progress or failed
+    * **Query**: Filter or query that has been used to fetch the records
+    * **Data Backup**: Backup type for data components, i.e., _Full backup_ or _Incremental backup_
+    * **Status**: Status of the archival, i.e., completed, in progress, or failed
     * **Actions:**
       1. **Summary Report**: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.
       2. **View Log**: View the log information for the archival job triggered.

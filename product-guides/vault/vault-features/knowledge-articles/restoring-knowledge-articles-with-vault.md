@@ -16,7 +16,7 @@ AutoRABIT Vault can restore/replicate knowledge data `Knowledge__kav` records wi
 
 ### Process <a href="#process" id="process"></a>
 
-To restore Knowledge data objects with AutoRABIT Vault, follow the below steps:
+To restore Knowledge data objects with AutoRABIT Vault, follow the steps below:
 
 > Similar steps are to be followed for **replicating** KAV objects in Vault. Replicate the KAV objects by navigating to the `Replicate` module.
 
@@ -40,7 +40,7 @@ To restore Knowledge data objects with AutoRABIT Vault, follow the below steps:
 <figure><img src="../../../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
 
 11. You also have multiple configurations to choose from under the **`Data`** tab:
-    * **`Schema:`** This option will allow you to view all the child objects for your selected kav object.
+    * **`Schema:`** This option will allow you to view all the child objects for your selected KAV object.
     * **`Selected Records:`** This will allow you to choose the records for your object. By default, all the records available in the objects will be auto-selected.
     * **`Selected Fields:`** This will allow you to select the fields for your object. By default, all the fields available in the objects will be auto-selected.
 12. Click on **`Trigger Restore`**.
@@ -55,7 +55,7 @@ If you choose to deploy KAV objects along with other metadata/data objects, the 
 
 13. On the **`Selected Data To Restore`** screen, enter the **label** of your choice or leave the auto-generated default label.
 14. Specify the **batch size** for components to retrieve records.
-15. Choose the recipients from the **`Email notification`** dropdown who should receive notifications whenever the action is performed. The currently logged-in recipient will automatically be checked by default.
+15. Choose the recipients from the **`Email notification`** dropdown of who should receive notifications whenever the action is performed. The currently logged-in recipient will automatically be checked by default.
 16. Select the criteria for performing the restore and click on **`Restore Now`**.
 
 <figure><img src="../../../../.gitbook/assets/image (264).png" alt="" width="563"><figcaption></figcaption></figure>
@@ -69,12 +69,12 @@ If you choose to deploy KAV objects along with other metadata/data objects, the 
     * For an ongoing restore operation, you can **abort** the process in between using the **`Abort`**![](<../../../../.gitbook/assets/image (71) (1) (1) (1) (1) (1) (1).png>)icon.
     * View the **restore summary report** using![](<../../../../.gitbook/assets/image (72) (1) (1) (1) (1) (1) (1).png>)icon.
     * View the **restore log report** using![](<../../../../.gitbook/assets/image (73) (1) (1) (1) (1) (1) (1).png>)icon.
-    * Trigger **linking kav to case** using![](<../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1).png>)icon.
+    * Trigger **linking KAV to case** using![](<../../../../.gitbook/assets/image (74) (1) (1) (1) (1) (1) (1) (1).png>)icon.
 
 {% hint style="info" %}
 **Points to Note:**
 
-* To ensure successful linking, do confirm that the **kav records** for linking are in `Published` status in Salesforce.
+* To ensure successful linking, do confirm that the **KAV records** for linking are in `Published` status in Salesforce.
 * Once the Kav record is successfully linked, the job status changes to complete (![](<../../../../.gitbook/assets/image (76) (1) (1) (1) (1) (1) (1).png>)) state.
-* The **`trigger`** (![](<../../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1).png>)) button will not be available; henceforth, linking kav to case is triggered.
+* The **`trigger`** (![](<../../../../.gitbook/assets/image (75) (1) (1) (1) (1) (1) (1).png>)) button will not be available; henceforth, linking KAV to case is triggered.
 {% endhint %}

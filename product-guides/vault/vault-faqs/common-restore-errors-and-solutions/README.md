@@ -353,7 +353,7 @@ Yes. It is strongly recommended to retain your existing backup snapshots for at 
 
 The 3-month period provides sufficient time to:
 
-* Capture multiple snapshots of both full and incremental changes in Vault.
+* Capture multiple snapshots of both full and incremental changes in AutoRABIT Vault.
 * Ensure data reliability in AutoRABIT Vault moving forward.
 * Account for variations in data and file size across orgs.
 

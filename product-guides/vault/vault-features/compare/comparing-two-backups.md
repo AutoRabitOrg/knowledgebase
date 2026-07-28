@@ -15,10 +15,10 @@ To compare two backup activities of a Salesforce org:
     <figure><img src="../../../../.gitbook/assets/image (5) (9).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (1) (13).png" alt=""><figcaption></figcaption></figure>
-3. On selecting the backups, observe the details of the Snapshot1 and Sanpahot2.
-4. The Snapshot1 represents the older backup among the selected backups for the comparison to be performed.
-5. The Snapshot 2 represents the latest among the backups selected.
-6. The Snapshot 1 will be compared against the Snapshot2.
+3. On selecting the backups, observe the details of Snapshot 1 and Snapshot 2.
+4. Snapshot 1 represents the older backup among the selected backups for the comparison to be performed.
+5. Snapshot 2 represents the latest among the backups selected.
+6. Snapshot 1 will be compared against Snapshot 2.
 7. After selecting the required backup. Click “COMPARE” to initiate the compare operation.
 8.  The compare operation will fetch and display the objects that are part of the backups in the next screen.
 
@@ -42,16 +42,16 @@ To compare two backup activities of a Salesforce org:
 14. Click on the “COMPARE” button to initiate the compare operation.
 
     <figure><img src="../../../../.gitbook/assets/image (9) (7).png" alt=""><figcaption></figcaption></figure>
-15. Clicking compare will show the “Compare -Save Config” screen.
+15. Clicking Compare will show the “Compare -Save Config” screen.
 
     <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 16. **Observe the following fields on the screen:**
     1. **Label(required field):** Enter a label for the job
-    2. **Preserve the result for:** will specify the retention period for the compare results. _The minimum retention period is for “7 Days” and the maximum retention period for the compare results will be for “30 Days” only._
-    3. **Description:** allows to enter a fitting description to the job.
+    2. **Preserve the result for:** Will specify the retention period for the compare results. _The minimum retention period is for “7 Days” and the maximum retention period for the compare results will be for “30 Days” only._
+    3. **Description:** Allows to enter a fitting description for the job.
 17. Click “SAVE” on entering all the required details.
 18. Clicking “SAVE” will show a pop-up saying, “Comparison is initiated successfully. Notification will be sent to your email once the comparison is completed.”
-    1. &#x20;Once the compare job is completed, an email will be triggered to the user.
+    1. &#x20;Once the Compare job is completed, an email will be triggered to the user.
 19. Click “OK” to be redirected to the “JOB HISTORY” page of the flow.
 
     <figure><img src="../../../../.gitbook/assets/image (11) (1) (3).png" alt=""><figcaption></figcaption></figure>
@@ -94,7 +94,7 @@ To compare two backup activities of a Salesforce org:
 
         <figure><img src="../../../../.gitbook/assets/image (20) (3).png" alt=""><figcaption></figcaption></figure>
     2. Highlights the Deletions filter as selected to isolate removed records.
-    3. Deleted values are visually marked red for easy recognition.
+    3. Deleted values are visually marked in red for easy recognition.
     4. Allows opening individual record details using the View Records option.
     5. Retains access to export and comparison tools for audit or restoration purposes.
 28. **Filtering Records by Column in Compare History**
@@ -142,7 +142,7 @@ To compare two backup activities of a Salesforce org:
     4.  Allows enabling or disabling fields using checkboxes to customize the comparison criteria.
 
         <figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-    5. Ensures essential fields remain selected and non-editable when required \`(e.g., ID field).
+    5. Ensures essential fields remain selected and non-editable when required (.g., ID field).
     6. Includes Apply and Cancel actions to confirm or discard field-selection changes.
     7. Once applied, updates the comparison results grid to display and compare only the selected fields.
 33. **Change View**
@@ -190,33 +190,10 @@ To compare two backup activities of a Salesforce org:
        1.  Once processed, the new run appears in the job history with a fresh timestamp and updated status
 
            <figure><img src="../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
-36.
-37.
-38.
-39.
-40.
-41.
-42.
-43.
-44.
-45.
-46.
-47.
-48.
-
-
-
-
-
-
-
-
-
-
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-5. Next,
+36. Next,
 
 * Select **one backup** from the list to compare the backup data with live data from Salesforce org or,
 
@@ -226,32 +203,31 @@ To compare two backup activities of a Salesforce org:
 
 <figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-6. Click **COMPARE** or **LIVE COMPARISON** based on the backup selection.
-7. On the next screen, view the **metadata/data comparisons** between two backups. Use the **Search** filter option to find any specific record.
+37. Click **COMPARE** or **LIVE COMPARISON** based on the backup selection.
+38. On the next screen, view the **metadata/data comparisons** between two backups. Use the **Search** filter option to find any specific record.
 
 <figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-8. Click on the individual **object** to view the detailed line-level comparison report between two backups.
+39. Click on the individual **object** to view the detailed line-level comparison report between two backups.
 
 <figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-9. You can filter the comparison report based on the record types i.e., whether the records were modified, deleted or no changes happened to date.
+40. You can filter the comparison report based on the record types i.e., whether the records were modified, deleted or no changes happened to date.
 
 <figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-10. You can even **search** for specific columns and text to filter and view the comparison record faster.
+41. You can even **search** for specific columns and text to filter and view the comparison record faster.
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-11.
-12. Select the **Report** you want to compare, then click on **TRIGGER RESTORE.**
+42. Select the **Report** you want to compare, then click on **TRIGGER RESTORE.**
 
 <figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-12. Follow the instructions on the Compare checklist.
+43. Follow the instructions on the Compare checklist.
 
 <figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-13. Click **Got It** after you've gone through the checklist to close the pop-up screen.
+44. Click **Got It** after you've gone through the checklist to close the pop-up screen.

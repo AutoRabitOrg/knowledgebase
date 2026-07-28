@@ -16,7 +16,7 @@ After logging in, you land on the Dashboard — a home screen that gives an at-a
 
 If your workspace is brand new and has no activity yet, the Dashboard instead shows a welcome screen prompting you to connect a Salesforce org and run your first agent analysis.
 
-![](<../../.gitbook/assets/Unknown image (426)>)
+![](<../../../.gitbook/assets/Unknown image (426)>)
 
 #### How to use it
 
@@ -33,7 +33,7 @@ Output: This is a navigation/overview screen only — there is nothing to downlo
 
 Connections is where you link DataGen to your Salesforce org(s), so that every other feature — Agent Analyzer and Record Factory — has an org to read metadata from and generate or push data into. Salesforce is currently the only supported platform (Snowflake and Databricks appear as “Coming Soon” placeholders). You authenticate to each org via OAuth, and connected orgs then appear in a table showing the org ID, environment (Production / Sandbox / Developer), username, and connection health.
 
-![](<../../.gitbook/assets/Unknown image (427)>)
+![](<../../../.gitbook/assets/Unknown image (427)>)
 
 #### How to use it
 
@@ -52,7 +52,7 @@ Caution: Connecting a Production org is discouraged and triggers a warning dialo
 
 Agent Analyzer reads an existing Agentforce agent directly from a connected Salesforce org and reverse-engineers its complete structure: every topic (sub-agent), the actions and instructions inside each topic, any top-level “direct” actions, and the Salesforce objects the agent likely reads from or writes to. The result is a clear map of what an agent can do and which data it touches — so you can generate realistic test data or test cases that actually exercise the agent's real capabilities, instead of guessing.
 
-![](<../../.gitbook/assets/Unknown image (428)>)
+![](<../../../.gitbook/assets/Unknown image (428)>)
 
 #### How to use it
 
@@ -71,7 +71,7 @@ Agent Analyzer reads an existing Agentforce agent directly from a connected Sale
 
 Record Factory is DataGen's core synthetic-data engine. It generates realistic, schema-aware Salesforce records — with correct parent-child relationships — that you can use to populate sandboxes or drive Agentforce testing, without touching real customer data. You pick a Salesforce org and one or more objects, define how many records you need (including per-parent counts for child objects, e.g., “5 Contacts per Account”), and choose how each field's value should be generated.
 
-![](<../../.gitbook/assets/Unknown image (429)>)
+![](<../../../.gitbook/assets/Unknown image (429)>)
 
 ### Faker vs. AI field generation
 
@@ -108,7 +108,7 @@ Agent-Aware: you pick a previously saved Agent Analyzer analysis; DataGen's AI p
 
 Test Case Factory generates AI-authored test-case scenarios formatted for Salesforce's Agentforce Test Center, giving QA teams ready-to-import test coverage for an agent without hand-writing test scripts. Generation is driven from a saved Agent Analyzer analysis (Agent-Aware mode): the AI reads the agent's topics, actions, and instructions and produces realistic conversational test scenarios with expected outcomes that map to what the agent actually does.
 
-![](<../../.gitbook/assets/Unknown image (430)>)
+![](<../../../.gitbook/assets/Unknown image (430)>)
 
 #### How to use it
 
@@ -127,7 +127,7 @@ Coming soon: A second mode, “Prompt-Based” (describe your agent/tests in pla
 
 Settings is your personal account management screen. You can update your display name, change your password, and toggle email-based multi-factor authentication (MFA) at login (always on for admin accounts). It also includes an “AI Usage” panel showing your workspace's monthly AI-token consumption for Record Factory's AI-based field generation, with a progress bar toward the admin-configured monthly cap — once that cap is reached, AI generation automatically falls back to Faker rather than failing.
 
-![](<../../.gitbook/assets/Unknown image (431)>)
+![](<../../../.gitbook/assets/Unknown image (431)>)
 
 #### How to use it
 
@@ -145,7 +145,7 @@ Output: No downloads — this page is entirely account configuration.
 
 Audit Logs is a searchable, chronological record of user actions and system events across your workspace — logins, connection changes, dataset generation/push events, credential updates, and more — each entry capturing the acting user, IP address, browser, and timestamp. Every logged-in user can see this page; regular users see only their own actions, while admins see the entire workspace's activity.
 
-![](<../../.gitbook/assets/Unknown image (432)>)
+![](<../../../.gitbook/assets/Unknown image (432)>)
 
 #### How to use it
 
@@ -166,7 +166,7 @@ For users who want to call DataGen programmatically — for example, from a CI p
 
 Lets you create scoped API tokens (Bearer tokens), choosing which modules the token can access (Record Factory, Connections, Schema discovery, Push, Datasets, Runs, Recipes) and an optional expiry, for programmatic access to DataGen outside the web UI.
 
-![](<../../.gitbook/assets/Unknown image (433)>)
+![](<../../../.gitbook/assets/Unknown image (433)>)
 
 #### How to use it
 
@@ -183,7 +183,7 @@ Lets you create scoped API tokens (Bearer tokens), choosing which modules the to
 
 A small hub for integrating with DataGen's API, organized into three tabs: API Tokens (same screen as above), API Docs (an interactive Swagger UI plus the raw OpenAPI 3.0 spec, for browsing and testing every DataGen API endpoint), and Getting Started (a step-by-step integration guide covering token generation, required headers/auth, available scopes, and example API calls).
 
-![](<../../.gitbook/assets/Unknown image (434)>)
+![](<../../../.gitbook/assets/Unknown image (434)>)
 
 {% hint style="info" %}
 **Navigation caveat:** Both of these pages are currently reachable only by navigating directly to their URL — they are not yet linked from the main sidebar navigation or user menu.
@@ -201,7 +201,7 @@ The Tenants screen is where Super Admins manage every workspace (“tenant”) o
 
 \*\*Max AI Tokens:\*\*the tenant's monthly AI token budget. This field only becomes editable once AI Access is turned on for that row. Enter a new value and click the checkmark to save — this is the actual, enforced limit: once a tenant's combined AI usage for the month reaches this number, AI-based generation across every feature for every user in that tenant automatically falls back to Faker (or is blocked, for features that require AI) until the next month or until an admin raises the limit. Click the reset icon next to a custom limit to return that tenant to the platform's global default instead.
 
-![](<../../.gitbook/assets/Unknown image (435)>)
+![](<../../../.gitbook/assets/Unknown image (435)>)
 
 #### How to use it
 
@@ -216,31 +216,31 @@ The Tenants screen is where Super Admins manage every workspace (“tenant”) o
 
 Sets the platform-wide default AI generation behavior — the same monthly token cap used as the fallback default for any tenant that hasn't been given a custom Max AI Tokens value on the Tenants screen, plus limits like maximum AI-generated records and guardrail settings.
 
-![](<../../.gitbook/assets/Unknown image (436)>)
+![](<../../../.gitbook/assets/Unknown image (436)>)
 
 ### 10.3 Properties
 
 System-level configuration keys/values used by the backend (API credentials and similar platform properties).
 
-![](<../../.gitbook/assets/Unknown image (437)>)
+![](<../../../.gitbook/assets/Unknown image (437)>)
 
 ### 10.4 Prompt Registry
 
 Manages the library of AI prompt templates used across every AI-powered feature (Record Factory field classification, Agent Analyzer, Test Case Factory, and more) — admins can view, edit, and version these prompts without a code deployment.
 
-![](<../../.gitbook/assets/Unknown image (438)>)
+![](<../../../.gitbook/assets/Unknown image (438)>)
 
 ### 10.5 Token Usage
 
 A workspace-wide dashboard of AI token consumption — broken down by user for visibility into who is generating the most AI usage — while the limit and remaining-budget figures shown reflect the tenant's actual configured cap from the Tenants screen.
 
-![](<../../.gitbook/assets/Unknown image (439)>)
+![](<../../../.gitbook/assets/Unknown image (439)>)
 
 ### 10.6 Data Pools
 
 A read-only, admin-facing view into the cache of previously AI-generated field values that DataGen reuses to speed up future generation runs and reduce AI token spend.
 
-![](<../../.gitbook/assets/Unknown image (440)>)
+![](<../../../.gitbook/assets/Unknown image (440)>)
 
 ## Glossary
 

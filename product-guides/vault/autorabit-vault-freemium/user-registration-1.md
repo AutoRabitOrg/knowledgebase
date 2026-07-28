@@ -33,11 +33,11 @@ The registration journey begins from the AutoRABIT Vault Freemium sign-in page. 
 
 Sign-in page and sign-up entry point
 
-![](<../../.gitbook/assets/Unknown image (406)>)
+![](<../../../.gitbook/assets/Unknown image (406)>)
 
 Sign-in page and sign-up entry point
 
-![](<../../.gitbook/assets/Unknown image (407)>)
+![](<../../../.gitbook/assets/Unknown image (407)>)
 
 ## Entering Registration Details
 
@@ -47,15 +47,15 @@ Required fields must be completed before registration can continue. The regional
 
 Registration form and regional selection
 
-![](<../../.gitbook/assets/Unknown image (408)>)
+![](<../../../.gitbook/assets/Unknown image (408)>)
 
 Registration form and regional selection
 
-![](<../../.gitbook/assets/Unknown image (409)>)
+![](<../../../.gitbook/assets/Unknown image (409)>)
 
 Registration form and regional selection
 
-![](<../../.gitbook/assets/Unknown image (410)>)
+![](<../../../.gitbook/assets/Unknown image (410)>)
 
 ## Reviewing and Accepting the Agreement
 
@@ -63,19 +63,19 @@ After the registration details are entered, AutoRABIT Vault displays the agreeme
 
 Agreement review and acceptance
 
-![](<../../.gitbook/assets/Unknown image (411)>)
+![](<../../../.gitbook/assets/Unknown image (411)>)
 
 Agreement review and acceptance
 
-![](<../../.gitbook/assets/Unknown image (412)>)
+![](<../../../.gitbook/assets/Unknown image (412)>)
 
 Agreement review and acceptance
 
-![](<../../.gitbook/assets/Unknown image (413)>)
+![](<../../../.gitbook/assets/Unknown image (413)>)
 
 Agreement review and acceptance
 
-![](<../../.gitbook/assets/Unknown image (414)>)
+![](<../../../.gitbook/assets/Unknown image (414)>)
 
 ## Completing OTP Verification
 
@@ -83,11 +83,11 @@ AutoRABIT Vault sends a verification email after the registration request is sub
 
 Verification email containing the login OTP
 
-![](<../../.gitbook/assets/Unknown image (415)>)
+![](<../../../.gitbook/assets/Unknown image (415)>)
 
 OTP verification screen
 
-![](<../../.gitbook/assets/Unknown image (416)>)
+![](<../../../.gitbook/assets/Unknown image (416)>)
 
 ## Activation Email and Trial Information
 
@@ -127,9 +127,9 @@ AutoRABIT Vault usage and trial limits can be monitored from the AutoRABIT Vault
 
 Activation email showing access details
 
-![](<../../.gitbook/assets/Unknown image (417)>)
+![](<../../../.gitbook/assets/Unknown image (417)>)
 
 Activation email showing free trial limits
 
-![](<../../.gitbook/assets/Unknown image (418)>)
+![](<../../../.gitbook/assets/Unknown image (418)>)
 

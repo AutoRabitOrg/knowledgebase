@@ -20,45 +20,45 @@ This guide explains the AutoRABIT Vault Freemium trial registration workflow. Th
 
 The AutoRABIT Vault login page provides the entry point for creating a Freemium account. Selecting Create Account opens the registration form used to request trial access.
 
-<figure><img src="../../.gitbook/assets/image (2652).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2652).png" alt=""><figcaption></figcaption></figure>
 
 ## Complete the Registration Form
 
 The registration form captures the required account details. The form includes name, account, email, organization, and region fields. The selected region determines the storage location and trial instance region associated with the account.
 
-<figure><img src="../../.gitbook/assets/image (2653).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2653).png" alt=""><figcaption></figcaption></figure>
 
 When Region / Location is selected, AutoRABIT Vault displays the available region options. After a region is selected, the form retains the selected value and continues to show the agreement acknowledgment requirement.
 
-<figure><img src="../../.gitbook/assets/image (2654).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2654).png" alt=""><figcaption></figcaption></figure>
 
 The Sign up action remains disabled until the required agreement acknowledgment is completed. This ensures that the registration request is submitted only after the agreement requirement is satisfied.
 
-<figure><img src="../../.gitbook/assets/image (2655).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2655).png" alt=""><figcaption></figcaption></figure>
 
 ## Review and Accept the Agreement
 
 Selecting the agreement acknowledgment opens the confirmation prompt. The prompt states that continuing with the AutoRABIT Vault trial indicates acceptance of the AutoRABIT Master Services Agreement and the AutoRABIT Vault Services, on behalf of the organization. It also notes that if the account is already governed by an existing MSA, the trial continues under that MSA.
 
-<figure><img src="../../.gitbook/assets/image (2656).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2656).png" alt=""><figcaption></figcaption></figure>
 
 The Agreement link opens the agreement page in a separate view. The agreement page provides the terms that can be reviewed before the acknowledgment is selected in the registration form.
 
-<figure><img src="../../.gitbook/assets/image (2657).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2657).png" alt=""><figcaption></figcaption></figure>
 
 After the acknowledgment checkbox is selected, the prompt enables the Accept and Continue action. This confirms the agreement acknowledgment and returns the flow to the registration form.
 
-<figure><img src="../../.gitbook/assets/image (2658).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2658).png" alt=""><figcaption></figcaption></figure>
 
 Selecting Accept and Continue confirms the acknowledgment and prepares the form for submission.
 
-<figure><img src="../../.gitbook/assets/image (2659).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2659).png" alt=""><figcaption></figcaption></figure>
 
 ## Submit the Registration Request
 
 After all required fields are completed and the agreement is acknowledged, selecting Sign up submits the registration request. AutoRABIT Vault displays a sending state while the request is being processed.
 
-<figure><img src="../../.gitbook/assets/image (2660).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2660).png" alt=""><figcaption></figcaption></figure>
 
 ## Email Notifications Sent After Registration
 
@@ -72,7 +72,7 @@ The verification email provides the OTP required for the OTP Verification screen
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Email field</td><td valign="top">Details shown in the screenshot</td></tr><tr><td valign="top">Subject</td><td valign="top">Your ARVault Verification Code</td></tr><tr><td valign="top">Sender</td><td valign="top">No Reply Freemium &#x3C;no-reply-freemium@autorabit.com></td></tr><tr><td valign="top">Message greeting</td><td valign="top">Hi,</td></tr><tr><td valign="top">OTP message</td><td valign="top">Login OTP is: 987627</td></tr><tr><td valign="top">Sign-off</td><td valign="top">Regards, Team AutoRABIT, support@autorabit.com</td></tr><tr><td valign="top">Footer navigation</td><td valign="top">Setup > Backup > Compare > Restore > Replicate > Archive > GDPR</td></tr><tr><td valign="top">Company footer</td><td valign="top">AutoRABIT, Inc, 548 Market Street PMB 98272, San Francisco CA, info@autorabit.com</td></tr><tr><td valign="top">Footer tagline</td><td valign="top">RELEASE MANAGEMENT | DEVOPS | ENABLING ENTERPRISE AGILITY</td></tr><tr><td valign="top">Email type</td><td valign="top">Auto-generated email</td></tr><tr><td valign="top">Confidentiality notice</td><td valign="top">The message includes a confidentiality notice below the email body.</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image (2661).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2661).png" alt=""><figcaption></figcaption></figure>
 
 ### Trial Activation Email
 
@@ -92,12 +92,12 @@ The trial activation email confirms that the registration has been completed and
 
 <table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Email area</td><td valign="top">Details shown in the screenshot</td></tr><tr><td valign="top">Usage guidance</td><td valign="top">Usage and limits can be monitored directly from the AutoRABIT Vault dashboard at any time.</td></tr><tr><td valign="top">Support sign-off</td><td valign="top">Regards, Team AutoRABIT, support@autorabit.com</td></tr><tr><td valign="top">Footer navigation</td><td valign="top">Setup > Backup > Compare > Restore > Replicate > Archive > GDPR</td></tr><tr><td valign="top">Company footer</td><td valign="top">AutoRABIT, Inc, 548 Market Street PMB 98272, San Francisco CA, info@autorabit.com</td></tr><tr><td valign="top">Footer tagline</td><td valign="top">RELEASE MANAGEMENT | DEVOPS | ENABLING ENTERPRISE AGILITY</td></tr><tr><td valign="top">Email type</td><td valign="top">Auto-generated email</td></tr><tr><td valign="top">Confidentiality notice</td><td valign="top">The message includes a confidentiality notice below the email body.</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image (2663).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2663).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (2664).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2664).png" alt=""><figcaption></figcaption></figure>
 
 ## Verify the OTP
 
 After the OTP email is received, AutoRABIT Vault displays the OTP Verification screen. The screen confirms the registered email address and provides the OTP entry fields. Entering the received OTP validates the registered email and completes the verification step for trial access.
 
-<figure><img src="../../.gitbook/assets/image (2665).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2665).png" alt=""><figcaption></figcaption></figure>

@@ -58,7 +58,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 1. Go to the **My Account** page.
 2. Under **Plugins**, select the hosting service to manage your repositories. AutoRABIT currently supports both GitHub/Bitbucket (cloud and server) and Azure Cloud in raising a pull request.
 
-<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2675).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Save**.
 4. Next, go to the **Version Control Repository** page.
@@ -69,7 +69,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 6. On the right side of the screen, select the checkbox: **Enable Pull Request Support**
 7. Next, select the pull request plugins enabled for your account. For more details, please contact your administrator.
 
-<figure><img src="../../../../../.gitbook/assets/image (32) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2676).png" alt=""><figcaption></figcaption></figure>
 
 Copy the auto-generated URL (applicable only for _Github cloud and enterprise service_) and create a webhook push event for pull requests in your repository. This integration can be used to trigger CI jobs while creating a pull request.
 

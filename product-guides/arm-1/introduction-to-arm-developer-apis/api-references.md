@@ -36,6 +36,12 @@ The Deployment APIs allow external applications to retrieve deployment informati
 [/api/deployments/v1/promotionlog](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#3098e19f-9d04-4771-a38a-fe820b354578)\
 [/api/deployments/v1/testcoveragereport](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#7b01d81c-47bf-4f22-9e46-5a799773c6af)
 
+#### Salesforce Org Registration API
+
+The Salesforce Org Registration API allows external applications to register Salesforce organizations in ARM programmatically using Basic Authentication. Users can authenticate the API request using their ARM username, password, and security token, eliminating the need to register the organization manually through the ARM user interface.
+
+[api/sforgs/v1/register](https://documenter.getpostman.com/view/46841090/2sBY4SMymF)
+
 > **Note:** All Deployment APIs require a valid API token in the `token` request header. Generate an API token from **Administration → API Token Manager**.
 
 Looking for nCino Developer API References? Follow the link [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/ncino/developer-apis/api-references).

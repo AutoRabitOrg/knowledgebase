@@ -1,6 +1,46 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.3.5**
+
+**Release Date: 2 Aug 2026**
+
+### Profile Rollback Restoration Improvement <a href="#profile-rollback-restoration-improvement" id="profile-rollback-restoration-improvement"></a>
+
+Enhanced the rollback process for **Profile** metadata to ensure profile permissions are restored correctly after a rollback operation. ARM now creates a more complete Profile backup by including the required dependent metadata, enabling Salesforce to accurately restore Profile permissions during rollback for both **CI Jobs** and **Deployments**.
+
+### GitLab Cloud Pull Request Support <a href="#gitlab-cloud-pull-request-support" id="gitlab-cloud-pull-request-support"></a>
+
+Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow.
+
+### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
+
+Fixed an issue where a **Child CI Job** triggered automatically after a successful **Parent CI Job** deployment could fail during the build phase without displaying an error. The post-deployment execution flow has been improved to handle deployment status correctly, ensuring dependent Child CI Jobs execute reliably when triggered from Parent CI Jobs.
+
+### Salesforce Org Registration API <a href="#salesforce-org-registration-api" id="salesforce-org-registration-api"></a>
+
+Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface.
+
+### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
+
+Added a new API that enables users to clone an existing **CI Job** in ARM, allowing CI Job configurations to be duplicated programmatically without using the ARM user interface. This simplifies the automation of CI/CD setup and integration with external systems.
+
+### CI Job Baseline Revision Pagination Fix <a href="#ci-job-baseline-revision-pagination-fix" id="ci-job-baseline-revision-pagination-fix"></a>
+
+Fixed an issue where the **Baseline Revision** selection dialog retained the previously selected page after clicking **Get Latest Head** or **Get All Revisions**. The revision list now refreshes from the first page, ensuring users can immediately view the latest revisions and browse the complete revision list as expected.
+
+### About Page Error Fix for On-Premises Instance <a href="#about-page-error-fix-for-on-premises-instance" id="about-page-error-fix-for-on-premises-instance"></a>
+
+Fixed an issue affecting **On-Premises** Instance where the **About** page displayed an **"Unexpected token '<'"** error message despite loading successfully. The build information generation process has been improved to ensure the About page loads correctly and displays version details without showing the erroneous message.
+
+### CI Job Log Clarity Improvement <a href="#ci-job-log-clarity-improvement" id="ci-job-log-clarity-improvement"></a>
+
+Improved CI Job deployment logs by removing transient connection error messages that can occur during automatic OAuth token refresh and retry operations. Connection-related messages are now logged only in debug mode, reducing unnecessary log noise while preserving successful deployment execution and making deployment logs easier to interpret.
+
+***
+
 ## ARM **Release Notes 26.3.4**
+
+**Release Date: 26 July 2026**
 
 #### Provar CI Job Execution Fix (New UI) <a href="#provar-ci-job-execution-fix-new-ui" id="provar-ci-job-execution-fix-new-ui"></a>
 

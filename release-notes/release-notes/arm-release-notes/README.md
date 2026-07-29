@@ -22,6 +22,8 @@ Fixed an issue where a **Child CI Job** triggered automatically after a successf
 
 Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
+
 ### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
 
 Added a new API that enables users to clone an existing **CI Job** in ARM, allowing CI Job configurations to be duplicated programmatically without using the ARM user interface. This simplifies the automation of CI/CD setup and integration with external systems.

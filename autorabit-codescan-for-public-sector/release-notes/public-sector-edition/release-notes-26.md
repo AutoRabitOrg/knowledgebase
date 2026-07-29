@@ -2,7 +2,7 @@
 
 ## AutoRABIT CodeScan PubSec 26.0.13 Release Notes
 
-**Release Date: 12 July 2026**
+**Release Date: 29 July 2026**
 
 ### Summary
 
@@ -12,7 +12,7 @@ AutoRABIT CodeScan PubSec 26.0.13 is comprised of the following components:
 * 16 Application Enhancements
 * 3 New Rules
 * 5 Rule Enhancements
-* 27 Fixes
+* 29 Fixes
 
 Component details are listed in their corresponding sections within this document.
 
@@ -1802,6 +1802,57 @@ Resolved an inconsistency between custom rule creation and update workflows. Pre
 With this fix, the additional validation has been removed from the update flow. Users can now update rule descriptions with any valid content, including URLs or HTTP/HTTPS references, ensuring consistency with the rule creation behavior.
 
 
+
+28. **Improved SOQL in Loops Rule Accuracy**
+
+Resolved an issue where the Avoid SOQL in Loops rule (_sf:AvoidSoqlInLoops_) could incorrectly report violations for certain method invocation patterns, resulting in false positives.&#x20;
+
+Previously, the rule could identify SOQL or DML operations as being executed within a loop based solely on nested method call analysis, even when the queried method was not actually invoked from a looping execution path. In some scenarios, method calls originating from Apex test classes could also be included in the analysis, contributing to incorrect findings.&#x20;
+
+**Behavior**&#x20;
+
+The rule has been enhanced to improve analysis accuracy by validating the actual execution path before reporting nested-call violations.&#x20;
+
+Improvements include:&#x20;
+
+* Reduced false positives for SOQL and DML operations that are not executed within loop constructs. &#x20;
+* Improved evaluation of nested method invocation chains. &#x20;
+* Improved validation to ensure nested-call violations are reported only when a genuine loop execution path exists. &#x20;
+
+**Improved Diagnostics**&#x20;
+
+The rule now provides more accurate reporting by distinguishing between nested method calls and actual SOQL/DML execution within loops, reducing misleading violations for valid code.&#x20;
+
+**Outcome**&#x20;
+
+* Reduces false positives reported by the Avoid SOQL in Loops rule. &#x20;
+* Improves accuracy of data flow and nested-call analysis. &#x20;
+* Provides developers with more reliable and actionable rule findings. &#x20;
+* Improves confidence in SOQL and DML loop detection for complex Apex applications.&#x20;
+
+
+
+&#x20;29\. **Clarified Configuration Limits for SOQL/DML Inside Loops Rule**&#x20;
+
+Updated the documentation for the Avoid SOQL/DML Inside Loops rule (_sf:AvoidSoqlInLoops_) to clearly communicate the supported configuration limits for method traversal depth.&#x20;
+
+Previously, the rule parameter documentation did not specify the recommended maximum value for the maxMethodTraversalDepth parameter, which could lead to unsupported or excessive configuration values being entered.&#x20;
+
+**Documentation Improvements**&#x20;
+
+The parameter description has been updated to clearly indicate the supported range for method traversal depth, helping administrators configure the rule appropriately.&#x20;
+
+The updated default guidance:&#x20;
+
+* MaxMethodTraversalDepth = 5&#x20;
+* MaxMethodVisitedCount = 200&#x20;
+
+**Outcome**&#x20;
+
+* Provides clearer guidance for configuring method traversal depth. &#x20;
+* Helps administrators understand the recommended operating limits for the rule. &#x20;
+* Improves usability of Quality Profile configuration. &#x20;
+* Reduces the likelihood of unsupported rule parameter configurations.&#x20;
 
 ***
 

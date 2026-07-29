@@ -12,6 +12,8 @@ Enhanced the rollback process for **Profile** metadata to ensure profile permiss
 
 Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request" %}
+
 ### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
 
 Fixed an issue where a **Child CI Job** triggered automatically after a successful **Parent CI Job** deployment could fail during the build phase without displaying an error. The post-deployment execution flow has been improved to handle deployment status correctly, ensuring dependent Child CI Jobs execute reliably when triggered from Parent CI Jobs.

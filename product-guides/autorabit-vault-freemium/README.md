@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # AutoRABIT Vault Freemium
 
 

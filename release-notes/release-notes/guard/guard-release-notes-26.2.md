@@ -6,39 +6,41 @@ Release Date: 5 August 2026
 
 ### Enhancements
 
-#### Drift Policies – Richer User Activity Monitoring trigger details
+#### Drift Policies – Richer User Activity Monitoring Trigger Details
 
 Drift Policy trigger details now provide clearer context for User Activity Monitoring changes.
 
 For supported events, users can review the affected users and navigate directly to the relevant User Activity Monitoring detail. This applies to password changes and changes to user license, profile, and role assignments.
 
-#### Drift Policies – Locked-user count monitoring
+#### Drift Policies – Locked-User Count Monitoring
 
 Custom Drift Policies can now monitor changes in the number of locked Salesforce users.
 
 This enables administrators to identify increases or decreases in locked user accounts using existing User Activity Monitoring history and Drift Policy notifications.
 
-#### Drift Policies – Clearer template policy setup
+#### Drift Policies – Clearer Template Policy Setup
 
 When creating a Drift Policy from a template, users can now view the metrics and comparison behavior included in the template before saving.
 
-### Bug fixes
+### Bug Fixes
 
 #### Automated Data Classification – Custom Regulations
 
-Automated Data Classification now keeps Custom Regulations up to date when a Salesforce compliance categorization is deactivated, deleted, or removed with an organization.
+Automated Data Classification now keeps Custom Regulations up to date when a Salesforce compliance categorization is deactivated, deleted, or removed from an organization.
 
-#### Drift Policies – Combined condition display
+#### Drift Policies – Combined Condition Display
 
 Drift Policy evaluations using combined AND conditions now display correctly.
 
-#### Drift Policies – Deleted organization handling
+#### Drift Policies – Deleted Organization Handling
 
 Triggered Drift Policy events associated with a deleted organization are now handled reliably, allowing policies to load as expected.
 
-#### Risk Assessment – PII labels and object counts
+#### Risk Assessment – PII Labels and Object Counts
 
-Risk Assessment now displays PII labels consistently and accurately counts distinct exposed objects for the relevant external-access risk.
+Risk Assessment now displays PII labels consistently and accurately counts distinct exposed objects for the relevant external access risk.
+
+***
 
 ## AutoRABIT Guard Release Notes 26.2.2
 

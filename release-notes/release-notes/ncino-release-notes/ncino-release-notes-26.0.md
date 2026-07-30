@@ -2,6 +2,32 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
+
+**Release Date: 31 July 2026**
+
+### Rollback Build DynamoDB Duplicate Key Error <a href="#rollback-build-dynamodb-duplicate-key-error" id="rollback-build-dynamodb-duplicate-key-error"></a>
+
+Resolved a rollback build failure caused by a DynamoDB exception ("Provided list of item keys contains duplicates"). Rollback operations after CI Job execution now handle item keys correctly without passing duplicates to the DynamoDB API.
+
+### Post Deployment Result Not Generated After Rollback with Removed Org <a href="#post-deployment-result-not-generated-after-rollback-with-removed-org" id="post-deployment-result-not-generated-after-rollback-with-removed-org"></a>
+
+Fixed a bug where removing a pre-selected Post Deployment Org before initiating rollback would result in no Post Deployment Result being generated. The rollback now correctly produces execution results for all selected orgs.
+
+### Feature Deployment Stuck at Retrieving Dataset <a href="#feature-deployment-stuck-at-retrieving-dataset-support-247963" id="feature-deployment-stuck-at-retrieving-dataset-support-247963"></a>
+
+Addressed a customer-reported issue where nCino Feature Deployment failed with "sfOrg is null" and became stuck at the dataset retrieval stage. The root cause was related to HTML content on the object.
+
+### Incorrect Post-Deploy Logs in CI Jobs (New UI) <a href="#incorrect-post-deploy-logs-in-ci-jobs-new-ui" id="incorrect-post-deploy-logs-in-ci-jobs-new-ui"></a>
+
+Fixed a display issue in the new UI where viewing Post-Deploy logs incorrectly showed deployment logs instead of the specific post-deploy org execution details.
+
+### nCino CI Jobs with ECA Orgs Failing After Initial Successful Builds <a href="#ncino-ci-jobs-with-eca-orgs-failing-after-initial-successful-builds" id="ncino-ci-jobs-with-eca-orgs-failing-after-initial-successful-builds"></a>
+
+Resolved an issue where scheduled nCino CI jobs using ECA (External Connected App) OAuth-based org connections would fail after a few successful runs. The failure was caused by OAuth token expiry or refresh token issues during subsequent scheduled executions. Token refresh now works reliably across repeated builds.
+
+***
+
 ## nCino - Release 26.3.4 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
 **Release Date: 26 July 2026**

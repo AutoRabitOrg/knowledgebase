@@ -4,7 +4,7 @@
 
 ## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
 
-**Release Date: 31 July 2026**
+**Release Date: 02 Aug 2026**
 
 ### Rollback Build DynamoDB Duplicate Key Error <a href="#rollback-build-dynamodb-duplicate-key-error" id="rollback-build-dynamodb-duplicate-key-error"></a>
 

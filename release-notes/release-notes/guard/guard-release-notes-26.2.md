@@ -1,8 +1,8 @@
 # Guard Release Notes 26.2
 
-## Guard 26.2.3 Release Notes
+## AutoRABIT Guard Release Notes 26.2.3&#x20;
 
-Release Date: 5 August 2026
+**Release Date: 5 August 2026**
 
 ### Enhancements
 
@@ -89,7 +89,7 @@ This release introduces Drift Policies: a dedicated area for monitoring meaningf
 * Apply policies to one or more Salesforce orgs;
 * Receive email notifications when policy conditions are triggered.
 
-For more information please see the [Drift Policies article](https://knowledgebase.autorabit.com/product-guides/guard/features/risk/drift-policies).
+For more information, please see the [Drift Policies article](https://knowledgebase.autorabit.com/product-guides/guard/features/risk/drift-policies).
 
 ### Enhancements
 

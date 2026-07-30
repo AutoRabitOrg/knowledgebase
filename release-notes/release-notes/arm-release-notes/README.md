@@ -4,33 +4,33 @@
 
 **Release Date: 2 Aug 2026**
 
-### Profile Rollback Restoration Improvement <a href="#profile-rollback-restoration-improvement" id="profile-rollback-restoration-improvement"></a>
+#### Profile Rollback Restoration Improvement <a href="#profile-rollback-restoration-improvement" id="profile-rollback-restoration-improvement"></a>
 
 Enhanced the rollback process for **Profile** metadata to ensure profile permissions are restored correctly after a rollback operation. ARM now creates a more complete Profile backup by including the required dependent metadata, enabling Salesforce to accurately restore Profile permissions during rollback for both **CI Jobs** and **Deployments**.
 
-### GitLab Cloud Pull Request Support <a href="#gitlab-cloud-pull-request-support" id="gitlab-cloud-pull-request-support"></a>
+#### GitLab Cloud Pull Request Support <a href="#gitlab-cloud-pull-request-support" id="gitlab-cloud-pull-request-support"></a>
 
 Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow.
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request" %}
 
-### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
+#### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
 
 Fixed an issue where a **Child CI Job** triggered automatically after a successful **Parent CI Job** deployment could fail during the build phase without displaying an error. The post-deployment execution flow has been improved to handle deployment status correctly, ensuring dependent Child CI Jobs execute reliably when triggered from Parent CI Jobs.
 
-### Salesforce Org Registration API <a href="#salesforce-org-registration-api" id="salesforce-org-registration-api"></a>
+#### Salesforce Org Registration API <a href="#salesforce-org-registration-api" id="salesforce-org-registration-api"></a>
 
 Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface.
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
 
-### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
+#### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
 
 Added a new API that enables users to clone an existing **CI Job** in ARM, allowing CI Job configurations to be duplicated programmatically without using the ARM user interface. This simplifies the automation of CI/CD setup and integration with external systems.
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
 
-### CI Job Baseline Revision Pagination Fix <a href="#ci-job-baseline-revision-pagination-fix" id="ci-job-baseline-revision-pagination-fix"></a>
+#### CI Job Baseline Revision Pagination Fix <a href="#ci-job-baseline-revision-pagination-fix" id="ci-job-baseline-revision-pagination-fix"></a>
 
 Fixed an issue where the **Baseline Revision** selection dialog retained the previously selected page after clicking **Get Latest Head** or **Get All Revisions**. The revision list now refreshes from the first page, ensuring users can immediately view the latest revisions and browse the complete revision list as expected.
 
@@ -40,7 +40,7 @@ Fixed an issue where the **Baseline Revision** selection dialog retained the pre
 
 **Release Date:** **02 Aug 2026**
 
-### DataLoader Pro Job Visibility for Subusers (DevHub Orgs) <a href="#dataloader-pro-job-visibility-for-subusers-devhub-orgs" id="dataloader-pro-job-visibility-for-subusers-devhub-orgs"></a>
+#### DataLoader Pro Job Visibility for Subusers (DevHub Orgs) <a href="#dataloader-pro-job-visibility-for-subusers-devhub-orgs" id="dataloader-pro-job-visibility-for-subusers-devhub-orgs"></a>
 
 Fixed an issue where Dataloader Pro jobs created by a subuser were not visible to the same subuser who created them. Jobs now correctly appear for both the creator (subuser) and admin users, ensuring consistent ownership-based visibility.
 

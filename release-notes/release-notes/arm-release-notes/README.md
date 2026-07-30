@@ -36,6 +36,16 @@ Fixed an issue where the **Baseline Revision** selection dialog retained the pre
 
 ***
 
+## DataLoader + DataLoader Pro Release Notes **26.3.5**
+
+**Release Date:** **02 Aug 2026**
+
+### DataLoader Pro Job Visibility for Subusers (DevHub Orgs) <a href="#dataloader-pro-job-visibility-for-subusers-devhub-orgs" id="dataloader-pro-job-visibility-for-subusers-devhub-orgs"></a>
+
+Fixed an issue where Dataloader Pro jobs created by a subuser were not visible to the same subuser who created them. Jobs now correctly appear for both the creator (subuser) and admin users, ensuring consistent ownership-based visibility.
+
+***
+
 ## ARM **Release Notes 26.3.4**
 
 **Release Date: 26 July 2026**

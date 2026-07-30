@@ -34,14 +34,6 @@ Added a new API that enables users to clone an existing **CI Job** in ARM, allow
 
 Fixed an issue where the **Baseline Revision** selection dialog retained the previously selected page after clicking **Get Latest Head** or **Get All Revisions**. The revision list now refreshes from the first page, ensuring users can immediately view the latest revisions and browse the complete revision list as expected.
 
-### About Page Error Fix for On-Premises Instance <a href="#about-page-error-fix-for-on-premises-instance" id="about-page-error-fix-for-on-premises-instance"></a>
-
-Fixed an issue affecting **On-Premises** Instance where the **About** page displayed an **"Unexpected token '<'"** error message despite loading successfully. The build information generation process has been improved to ensure the About page loads correctly and displays version details without showing the erroneous message.
-
-### CI Job Log Clarity Improvement <a href="#ci-job-log-clarity-improvement" id="ci-job-log-clarity-improvement"></a>
-
-Improved CI Job deployment logs by removing transient connection error messages that can occur during automatic OAuth token refresh and retry operations. Connection-related messages are now logged only in debug mode, reducing unnecessary log noise while preserving successful deployment execution and making deployment logs easier to interpret.
-
 ***
 
 ## ARM **Release Notes 26.3.4**
@@ -1806,7 +1798,7 @@ Sync Branches Popup
 #### Report Deployment – Package Structure Fix- #193182 <a href="#report-deployment-package-structure-fix-193182" id="report-deployment-package-structure-fix-193182"></a>
 
 Fixed an issue where Report deployments were failing with the error:\
-&#xNAN;_“An object '\<reportfolder/reportname>' of type Report was named in package.xml, but was not found in zipped directory.”_
+_“An object '\<reportfolder/reportname>' of type Report was named in package.xml, but was not found in zipped directory.”_
 
 The failure occurred due to additional child folder entries being incorrectly added to the generated `package.xml` during deployment. Package-generation logic has been corrected to include only the required Report folders and Report components, preventing mismatches between the package.xml and the zipped directory.
 
@@ -2462,7 +2454,7 @@ Key highlights include:
 * Support for both constructive and destructive changes across DX and non-DX repositories.
 * Validated Merge, Release Label, and Branching Baseline flows for all Data Cloud metadata types.\
   \
-  &#xNAN;_&#x4C;earn more_ [_https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud_](https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud)
+  _&#x4C;earn more_ [_https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud_](https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud)
 
 ### Bugs <a href="#bugs" id="bugs"></a>
 
@@ -2576,7 +2568,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 * **Jira Work Items Not Retrieved from Sprints**\
   Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.” Jira had deprecated the API (v2) used by ARM to fetch work items, causing sprint data retrieval failures.\
   ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
-  &#xNAN;_(Support Case: #150934 & #151385)_
+  _(Support Case: #150934 & #151385)_
 
 ***
 
@@ -2588,7 +2580,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
   Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
   * Jira had deprecated the API (v2) used by ARM to fetch work items, causing sprint data retrieval failures.
   * ARM now uses Jira API v3 for work item retrieval, restoring functionality across EZ-Commit, EZ-Merge, Merge Requests, and CI Jobs.\
-    &#xNAN;_(Support Case: #150934 & #151385)_
+    _(Support Case: #150934 & #151385)_
 
 ***
 
@@ -2600,16 +2592,16 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 * **EZ-Commit – Report and Dashboard Folder Retrieval**\
   Fixed an issue where report and dashboard folders were not being retrieved when using a package.xml. Now, folders and their members are correctly retrieved during EZ-Commit, covering scenarios for both DX and non-DX repos, with and without Autodraft.\
-  &#xNAN;_(Support Case: 150181)_
+  _(Support Case: 150181)_
 * **Branch Registration – Default Branch Change**\
   Resolved an issue where the main default branch was unintentionally updated when registering a new branch for the first time. The default branch is now updated only if the current default branch does not exist in the remote repository.\
-  &#xNAN;_(Support Case: 149845)_
+  _(Support Case: 149845)_
 * **SCA Validation with Special Characters**\
   Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
-  &#xNAN;_(Support Case: 152825)_
+  _(Support Case: 152825)_
 * **Webhook API Token Status**\
   Corrected an issue where the webhook API token’s last status always showed as "Never Accessed," even after being used in CI Job triggers. The last access status now updates correctly when tokens are used.\
-  &#xNAN;_(Support Case: 153909)_
+  _(Support Case: 153909)_
 
 ***
 
@@ -2619,7 +2611,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 * **SCA Validation with Special Characters**\
   Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
-  &#xNAN;_(Support Case: 152825)_
+  _(Support Case: 152825)_
 
 ***
 
@@ -2635,7 +2627,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 * **Custom Deployment – Deployment Fails with Ignore Installed Components:** Resolved an issue where deployments failed silently on the UI when the **Ignore Installed Components** option was selected. The deployment now completes as expected.
 * **Deployment Logs – UI Visibility Issue:** Customers reported deployment logs not consistently showing in the UI. While the root cause is still under review, additional logging has been added to capture scenarios when logs fail to display.
 * **Release Label – Deployment with Apex Meta Files:** Fixed an issue where Release Label deployments failed when changes existed only in the Apex `-meta.xml` file and not in the corresponding `.cls` file. Such changes are now correctly included in the manifest.\
-  &#xNAN;_&#x43;ommunication_: For existing Release Labels, customers must re-run artifact preparation to apply this fix. New Release Labels will work as expected.
+  _&#x43;ommunication_: For existing Release Labels, customers must re-run artifact preparation to apply this fix. New Release Labels will work as expected.
 * **EZ Commit – Pre-Validation Error:** Addressed a parsing error ("XML document structures must start and end within the same entity") that caused pre-validation EZ-Commits to fail. A new file copy library has been implemented to resolve this in **EZ-Commit (Validate Deploy)**, **CI Jobs**, and **Deployments**.
 * **Salesforce ALM Integration – Status Updates:** Fixed an issue where ALM work items failed to update if the **status field’s API name** differed from the picklist label. Updates now correctly use the API name for mapping.
 * **CI Jobs – Missing Debug Information in Failed Builds:** Fixed an issue where failed builds did not display detailed error logs. The UI now shows schema validation errors with file and line details, helping users quickly identify and resolve issues.

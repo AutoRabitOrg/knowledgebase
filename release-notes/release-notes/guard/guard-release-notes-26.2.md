@@ -1,5 +1,45 @@
 # Guard Release Notes 26.2
 
+## Guard 26.2.3 Release Notes
+
+Release Date: 5 August 2026
+
+### Enhancements
+
+#### Drift Policies – Richer User Activity Monitoring trigger details
+
+Drift Policy trigger details now provide clearer context for User Activity Monitoring changes.
+
+For supported events, users can review the affected users and navigate directly to the relevant User Activity Monitoring detail. This applies to password changes and changes to user license, profile, and role assignments.
+
+#### Drift Policies – Locked-user count monitoring
+
+Custom Drift Policies can now monitor changes in the number of locked Salesforce users.
+
+This enables administrators to identify increases or decreases in locked user accounts using existing User Activity Monitoring history and Drift Policy notifications.
+
+#### Drift Policies – Clearer template policy setup
+
+When creating a Drift Policy from a template, users can now view the metrics and comparison behavior included in the template before saving.
+
+### Bug fixes
+
+#### Automated Data Classification – Custom Regulations
+
+Automated Data Classification now keeps Custom Regulations up to date when a Salesforce compliance categorization is deactivated, deleted, or removed with an organization.
+
+#### Drift Policies – Combined condition display
+
+Drift Policy evaluations using combined AND conditions now display correctly.
+
+#### Drift Policies – Deleted organization handling
+
+Triggered Drift Policy events associated with a deleted organization are now handled reliably, allowing policies to load as expected.
+
+#### Risk Assessment – PII labels and object counts
+
+Risk Assessment now displays PII labels consistently and accurately counts distinct exposed objects for the relevant external-access risk.
+
 ## AutoRABIT Guard Release Notes 26.2.2
 
 **Release Date: 15 July 2026**

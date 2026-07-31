@@ -2,6 +2,66 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.17
+
+**Release Date: 2 August 2026**&#x20;
+
+### Summary&#x20;
+
+AutoRABIT CodeScan 26.0.17 is comprised of the following 3 components:&#x20;
+
+* 3 New Features&#x20;
+* 0 Application Enhancements&#x20;
+* 0 New Rules&#x20;
+* 0 Rule Enhancements&#x20;
+* 0 Rule Deprecations&#x20;
+* 0 Fixes&#x20;
+
+Component details are listed in their corresponding sections within this document.&#x20;
+
+### New Features
+
+#### AI Code Assistant (Pilot)
+
+Introducing the AI Code Assistant — an AI-powered code remediation capability built directly into CodeScan. The AI Code Assistant can generate fixes for common Apex rule violations, present changes in a side-by-side diff view for your review, and deliver approved fixes through automatically created Pull Requests.
+
+{% hint style="info" %}
+The AI Code Assistant is currently available as a Pilot feature. To learn more or request access, please contact your AutoRABIT Customer Success representative.
+{% endhint %}
+
+#### AI Credits, Usage Monitoring & Billing
+
+Added AI credit management capabilities to support AI features consumption tracking and governance.
+
+Key highlights:
+
+* AI credits integrated with subscription billing for accurate consumption tracking
+* Real-time AI usage indicator in the top navigation bar with color-coded thresholds (Healthy, Low, Critical) and hover tooltip showing exact credit counts
+* New AI Billing administration page (Administration → AI Billing) with a summary bar and searchable per-user consumption table with color-coded progress bars
+* Organization-level daily execution limits with clear notifications when limits are reached
+* Bulk assignment governance — maximum 10 issues per bulk action
+
+{% hint style="info" %}
+The AI Billing page is visible only to organizations with licensed AI features.
+{% endhint %}
+
+#### CodeScan MCP (Pilot)
+
+Introducing the CodeScan MCP Server — a hosted endpoint that brings CodeScan analysis data directly into the AI coding assistants developers already use, such as GitHub Copilot, Cursor, and Claude Desktop.
+
+Once connected, you can stay in your editor and query CodeScan conversationally:
+
+* Check which projects are passing or failing their quality gate
+* Drill into issues, security hotspots, rules, and measures without opening the web UI
+* Look up organizations, projects, branches, pull requests, and analysis job details as you code
+* Pull CodeScan data into your own reporting or review workflow on demand
+
+{% hint style="info" %}
+The CodeScan MCP Server is currently available as a Pilot feature. To learn more or request access, please contact your AutoRABIT Customer Success representative.
+{% endhint %}
+
+***
+
 ## CodeScan Release Notes 26.0.16
 
 **Release Date: 19 July 2026**&#x20;

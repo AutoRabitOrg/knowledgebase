@@ -23,7 +23,7 @@ Component details are listed in their corresponding sections within this documen
 
 #### AI Code Assistant (Pilot)
 
-Introducing the AI Code Assistant — an AI-powered code remediation capability built directly into CodeScan. The AI Code Assistant can generate fixes for common Apex rule violations, present changes in a side-by-side diff view for your review, and deliver approved fixes through automatically created Pull Requests.
+Introducing the AI Code Assistant: an AI-powered code remediation capability built directly into CodeScan. The AI Code Assistant can generate fixes for common Apex rule violations, present changes in a side-by-side diff view for your review, and deliver approved fixes through automatically created Pull Requests.
 
 {% hint style="info" %}
 The AI Code Assistant is currently available as a Pilot feature. To learn more or request access, please contact your AutoRABIT Customer Success representative.
@@ -47,7 +47,7 @@ The AI Billing page is visible only to organizations with licensed AI features.
 
 #### CodeScan MCP (Pilot)
 
-Introducing the CodeScan MCP Server — a hosted endpoint that brings CodeScan analysis data directly into the AI coding assistants developers already use, such as GitHub Copilot, Cursor, and Claude Desktop.
+Introducing the CodeScan MCP Server: a hosted endpoint that brings CodeScan analysis data directly into the AI coding assistants developers already use, such as GitHub Copilot, Cursor, and Claude Desktop.
 
 Once connected, you can stay in your editor and query CodeScan conversationally:
 

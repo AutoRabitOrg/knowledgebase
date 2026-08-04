@@ -1,2 +1,6 @@
-# Data Gen By AutoRABIT Vault - Beta
+---
+hidden: true
+---
+
+# Data Gen By AutoRABIT - Beta
 

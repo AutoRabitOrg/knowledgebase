@@ -3,7 +3,7 @@
 {% hint style="warning" %}
 Cloud hosted agents can be used when you do not want -
 
-* To install the pre-requisite softwares required by the agent (i.e. Java)
+* To install the pre-requisite software required by the agent (i.e. Java)
 * To run the agent on your own machines or if you do not have any servers
 * The Agent / Workers to download and scan applications on cloud
 * A default cloud agent will be created at part of the initial setup

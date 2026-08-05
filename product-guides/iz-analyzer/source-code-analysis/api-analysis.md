@@ -1,7 +1,5 @@
 # API Analysis
 
-## API Analysis
-
 ### Overview
 
 In an API and micro services world, quality of the deliverable becomes paramount – since a weak link can break the whole chain.

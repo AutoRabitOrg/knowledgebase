@@ -160,15 +160,15 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 29. **Choose the Masking Style**
 
     * **Prefix** – Adds a specified value before the original field value.\
-      &#xNAN;_&#x45;xample:_ Source value `ABC` with prefix `123` → Deployed value `123.ABC`.
+      _&#x45;xample:_ Source value `ABC` with prefix `123` → Deployed value `123.ABC`.
     * **Suffix** – Adds a specified value after the original field value.\
-      &#xNAN;_&#x45;xample:_ Source value `ABC` with suffix `123` → Deployed value `ABC.123`.
+      _&#x45;xample:_ Source value `ABC` with suffix `123` → Deployed value `ABC.123`.
     * **Replace** – Replaces the original field value entirely with the specified masking value.\
-      &#xNAN;_&#x45;xample:_ Source value `ABC` replaced with `123` → Deployed value `123`.
+      _&#x45;xample:_ Source value `ABC` replaced with `123` → Deployed value `123`.
     * **Shuffle** – Randomly rearranges characters in the field value while leaving other columns unaffected.\
-      &#xNAN;_&#x45;xample:_ Source value `ABCDE` → Deployed value `DCBEA`.
+      _&#x45;xample:_ Source value `ABCDE` → Deployed value `DCBEA`.
     * **Generate Random** – Replaces the original value with a randomly generated value of a defined length.\
-      &#xNAN;_&#x45;xample:_ Source value `ABC` with random length `7` → Deployed value `15d3aRG`.
+      _&#x45;xample:_ Source value `ABC` with random length `7` → Deployed value `15d3aRG`.
 
     _**`Note:`**` ``Masking is not applied if the field value is empty.`_
 30. **Select target fields & save**\

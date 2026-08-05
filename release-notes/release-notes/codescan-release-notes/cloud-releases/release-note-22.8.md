@@ -51,8 +51,8 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the **`Custom Metadata components must have a description field`** rule. The user added the description field to their quality profile's metadata and implemented the aforementioned rule, yet the problem still persists (#[65227](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000104349078)).
 * Fixed an issue where the master scan was failing in the CodeScan application. The multiple scan running for the same environment caused the issue. (#[61134](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000098014584)).
 * Fixed an issue where the rule was missing the below case when permissions are checked through a local variable instance:\
-  &#xNAN;**`{noformat}SObject objAcc;`**\
-  &#xNAN;**`if (objAcc != null && objAcc.getSObjectType().getDescribe().isUpdateable()) {{noformat}`**\
+  **`{noformat}SObject objAcc;`**\
+  **`if (objAcc != null && objAcc.getSObjectType().getDescribe().isUpdateable()) {{noformat}`**\
   This case is now added to the rule.(#[58534](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000095397001)).
 
 ***

@@ -16,7 +16,7 @@ This article explains how to configure Single Sign-On (SSO) in AutoRABIT Vault u
    * Click **Next**
 6. In the **Configure SAML** tab:
    * **Single sign on URL:** `<instanceURL>/ARVault/saml/SSO`\
-     &#xNAN;_&#x65;.g._: `https://vault-qa.autorabit.com/ARVault/saml/SSO`
+     _&#x65;.g._: `https://vault-qa.autorabit.com/ARVault/saml/SSO`
    * **Audience URI (SP Entity ID):** `<instanceURL>/ARVault/saml/metadata`
 7. Under **Attribute Statements**:
 
@@ -61,7 +61,7 @@ This article explains how to configure Single Sign-On (SSO) in AutoRABIT Vault u
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
 **Error**:\
-&#xNAN;_"Your user is not available in the account with provided customer id. Please contact the administrator to create a user for you in the account."_
+_"Your user is not available in the account with provided customer id. Please contact the administrator to create a user for you in the account."_
 
 **Causes**:
 

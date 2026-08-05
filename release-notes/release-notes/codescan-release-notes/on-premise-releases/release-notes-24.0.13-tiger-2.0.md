@@ -128,7 +128,7 @@ Component details are listed in their corresponding sections within this documen
     \
     Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true)\
     \
-    &#xNAN;_&#x54;his fix corrects this issue._\
+    _&#x54;his fix corrects this issue._\
     \
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.<br>
 
@@ -149,7 +149,7 @@ Component details are listed in their corresponding sections within this documen
    \
    As per Salesforce documentation, when checking the Access for the inner query object it allows to check by using \_\_c, but while making inner query on related Objects it must be in plural and end with\_\_r.\
    \
-   &#xNAN;_&#x54;his fix corrects this issue._  In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
+   _&#x54;his fix corrects this issue._  In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
    \
    We also added support for the SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
    \

@@ -15,7 +15,7 @@ The **Super Administrator** (Super Admin) has the highest privileges in ARM.
 * Add users to admin groups
 
 > **Super Admin safeguards**\
-> &#xNAN;_&#x53;uper Admin_ and **the currently logged-in user** are locked for **all** user-management actions: they cannot be added, deleted, suspended, edited, or delegated.
+> _&#x53;uper Admin_ and **the currently logged-in user** are locked for **all** user-management actions: they cannot be added, deleted, suspended, edited, or delegated.
 
 ### Org Administrators <a href="#org-administrators" id="org-administrators"></a>
 

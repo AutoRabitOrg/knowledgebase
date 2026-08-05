@@ -13,7 +13,7 @@ This step allows you to view available components in your Salesforce Org and def
 <figure><img src="../../../../.gitbook/assets/image (220).png" alt="Component selection screen for archival"><figcaption><p>Selecting components for archival</p></figcaption></figure>
 
 3. Use **Filter** to define criteria for fetching records.\
-   &#xNAN;_&#x45;xample_: Fetch case records older than 1,000 days and in a closed state.
+   _&#x45;xample_: Fetch case records older than 1,000 days and in a closed state.
    * Validate the query to ensure accuracy.
    * Set a record count limit if needed.
    * Click **Apply** to confirm filter settings.

@@ -456,7 +456,7 @@ This exception was originally introduced to reduce noise and was added to our ru
 Now, DML operations in getter methods that do not enforce permissions (e.g., without USER\_MODE) will correctly raise violations.
 
 \
-&#xNAN;_&#x4E;ote:_ _The update has been refined to cover all scenarios — we’ve implemented logic to trigger violations for all getter method cases where there is no permission check, SOQL, or DML operation, and removed the previous conditional checks. As a result, violations will now be raised for every return type except_ void _(since it doesn’t return any value).  Please note that due to these rule changes, there may be a slight increase/decrease in reported issues for the FLS rule._
+_&#x4E;ote:_ _The update has been refined to cover all scenarios — we’ve implemented logic to trigger violations for all getter method cases where there is no permission check, SOQL, or DML operation, and removed the previous conditional checks. As a result, violations will now be raised for every return type except_ void _(since it doesn’t return any value).  Please note that due to these rule changes, there may be a slight increase/decrease in reported issues for the FLS rule._
 
 We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
 

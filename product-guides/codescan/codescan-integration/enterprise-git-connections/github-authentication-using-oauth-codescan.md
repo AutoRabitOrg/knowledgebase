@@ -20,9 +20,9 @@ Connecting AutoRABIT (CodeScan) to GitHub Enterprise requires a secure handshake
 3.  Edit the URL by replacing the following placeholders:
 
     * `YOUR_GHES_HOSTNAME` → Your GitHub Enterprise Server URL\
-      &#xNAN;_(Example:_ [_github.company.com_](http://github.company.com/)_)_
+      _(Example:_ [_github.company.com_](http://github.company.com/)_)_
     * `YOUR_PUBLIC_BASE` → URL of the CodeScan instance\
-      &#xNAN;_(Example:_ [_app.codescan.io_](https://app.codescan.io/)_)_
+      _(Example:_ [_app.codescan.io_](https://app.codescan.io/)_)_
 
     <i class="fa-message-exclamation">:message-exclamation:</i>  NOTE: App name must remain exactly: **codescan-enterprise-app** (do not modify this).
 4. Paste the URL into your browser.

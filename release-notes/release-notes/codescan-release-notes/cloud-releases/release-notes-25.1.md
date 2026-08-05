@@ -1692,17 +1692,17 @@ Here are the tag API references: [CodeScanCloud](https://app.codescan.io/web_api
 Verified Categories for Project Types in the following scenarios, and have verified that all are working as expected:
 
 1. **Verify that the user is able to see the correct tag for the project on the Project Information page after completing the analysis.**\
-   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
+   _&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
-   &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
+   _&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
-    &#xNAN;_&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
+    _&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**<br>

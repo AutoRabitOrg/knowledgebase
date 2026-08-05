@@ -28,7 +28,7 @@ The following articles describe how to trigger a new build for your CI Job creat
 <figure><img src="../../../../.gitbook/assets/image (1143).png" alt="Select CI Job from dropdown list" width="427"><figcaption></figcaption></figure>
 
 5. If no builds exist yet, you'll see:\
-   &#xNAN;**"No builds found for this job. Please trigger a new build for results."**\
+   **"No builds found for this job. Please trigger a new build for results."**\
    Click **Build Now**.
 
 <figure><img src="../../../../.gitbook/assets/image (1144).png" alt="Build Now button for first-time build trigger"><figcaption></figcaption></figure>

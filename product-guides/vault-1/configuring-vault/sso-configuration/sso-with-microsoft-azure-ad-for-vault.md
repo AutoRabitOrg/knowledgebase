@@ -74,7 +74,7 @@ Benefits:
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
 **Error**:\
-&#xNAN;_"Your user is not available in the account with provided customer ID. Please contact the administrator to create a user for you in the account."_
+_"Your user is not available in the account with provided customer ID. Please contact the administrator to create a user for you in the account."_
 
 **Causes**:
 

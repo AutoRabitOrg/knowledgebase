@@ -17,15 +17,15 @@ Before scanning applications using IZ Scan, make sure you have:
 2. Navigate to the **`bin`** directory within iz-scan-cli-\[VERSION]-\[OS]
 3. Run **`iz-scan-cli`** command with the following options
    1. -serviceHost=xxx\
-      &#xNAN;_&#x49;Z Scan service URL_
+      _&#x49;Z Scan service URL_
    2. -authToken=xxx\
-      &#xNAN;_&#x53;ecurity token generated from the server_
+      _&#x53;ecurity token generated from the server_
    3. -applicationKey=x.x\
-      &#xNAN;_&#x55;nique ID of the application / project being scanned_
+      _&#x55;nique ID of the application / project being scanned_
    4. -applicationName=.\
-      &#xNAN;_&#x4E;ame of the application being scanned_
+      _&#x4E;ame of the application being scanned_
    5. -source=xxx\
-      &#xNAN;_&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
+      _&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
    6. -scmBranchName=xxx + _Optional. SCM branch for which code is being analyzed. If ignored, the default value will be **`master`**_
    7. -pullRequestId=xxx + \_Optional.SCM Pull request name for which code is being analyzed
    8. -organization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id_

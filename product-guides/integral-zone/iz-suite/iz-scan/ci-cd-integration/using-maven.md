@@ -39,15 +39,15 @@ Before scanning applications using IZ Scan, make sure you have:
 1. Go to the project root directory from the command line/terminal
 2. Run **`mvn com.integralzone.iz:iz-scan-cli:scan`** command with the following options
    1. -DserviceHost=xxx\
-      &#xNAN;_&#x49;Z Scan service URL_
+      _&#x49;Z Scan service URL_
    2. -DauthToken=xxx\
-      &#xNAN;_&#x53;ecurity token generated from the server_
+      _&#x53;ecurity token generated from the server_
    3. -DapplicationKey=x.x\
-      &#xNAN;_&#x55;nique ID of the application / project being scanned_
+      _&#x55;nique ID of the application / project being scanned_
    4. -DapplicationName=.\
-      &#xNAN;_&#x4E;ame of the application being scanned_
+      _&#x4E;ame of the application being scanned_
    5. -Dsource=xxx\
-      &#xNAN;_&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
+      _&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
    6. -DscmBranchName=xxx + _Optional. SCM branch for which code is being analyzed. If ignored, the default value will be **`master`**_
    7. -DpullRequestId=xxx + \_Optional.SCM Pull request name for which code is being analyzed
    8. -Dorganization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id_

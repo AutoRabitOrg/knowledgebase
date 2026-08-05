@@ -12,9 +12,9 @@ Make sure you have a:
 
 1. Autofix can be enabled by passing **`analyzer.<plugin>.auto.fix.all`** system property while running the sonarscanner/mvn command to analyze the project. For more information refer Code Analysis In Server
    * Ex: -Danalyzer.mule.auto.fix.all=true\
-     &#xNAN;_&#x54;o enable auto fix for Mule plugin_
+     _&#x54;o enable auto fix for Mule plugin_
    * Ex: -Danalyzer.api.auto.fix.all=true\
-     &#xNAN;_&#x54;o enable auto fix for API plugin_
+     _&#x54;o enable auto fix for API plugin_
 2. Preview mode can be enabled to get the list of changes that would be performed by Auto Fix without updating any of the files.
    * Can be enabled using **`-Danalyzer.<plugin>.auto.fix.preview`** system property
 3. Default log location is **`target/autofix_log.csv`** relative to the project from which scanner is invoked. This property can be customized using **`analyzer.<plugin>.auto.fix.log.location`** system property.

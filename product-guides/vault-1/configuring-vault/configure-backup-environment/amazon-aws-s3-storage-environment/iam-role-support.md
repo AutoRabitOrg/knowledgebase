@@ -50,7 +50,7 @@ To configure IAM Role support in AutoRABIT Vault:
 3. Set **Storage Type** to **AWS S3**.
 4. Enter a **Label Name** (this is a user-defined reference name).
 5. Enable the checkbox:\
-   &#xNAN;**"Role-based control for dedicated/On-Prem Instance"**
+   **"Role-based control for dedicated/On-Prem Instance"**
 
 <figure><img src="../../../../../.gitbook/assets/image (99) (1).png" alt="IAM Role configuration in Vault settings" width="377"><figcaption><p>Selecting IAM role option for S3 access</p></figcaption></figure>
 

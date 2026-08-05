@@ -105,11 +105,11 @@ If both rules are active, check the violations that were reported and disable on
 2.  **Fixed issue in rule for APEX “sf: \{{FieldLevelSecurity\}}” {Permissions should be checked before accessing resource}.**\
     Previously, this rule was throwing violations that were false positives. This was occurring when a SOSL query having an inner query calls the related Object. The Object needs to be checked by using isAccessible() before accessing its data.\
     \
-    &#xNAN;_&#x4E;OTE: We addressed a similar issue related to SOQL queries in a previous release. That update has been extended in this release to also include SOSL queries._\
+    _&#x4E;OTE: We addressed a similar issue related to SOQL queries in a previous release. That update has been extended in this release to also include SOSL queries._\
     \
     As per Salesforce documentation, when checking the Access for the inner query object, it allows to check by using \_\_c, but while making inner query on related Objects, it must be in plural and end with \_\_r.\
     \
-    &#xNAN;_&#x54;his fix corrects this issue._ In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
+    _&#x54;his fix corrects this issue._ In this enhancement, the Object is checked by using isAccessible() before accessing its data.\
     \
     Verified the rule “Field Level Security Vulnerabilities” for the following scenarios:
 
@@ -225,7 +225,7 @@ There are no new rules associated with this release.
     \
     Results demonstrated that scenarios a and b were working as expected; however, in scenarios c and d, the rule was not able to understand multiple combined annotations format of @IsTest(xxx=false yyy=true) \
     \
-    &#xNAN;_&#x54;his fix corrects the issue._ \
+    _&#x54;his fix corrects the issue._ \
     \
     We have verified the Apex rule sf:OptimizeParallelUnitTests via multiple scenarios, and all are working as expected.
 

@@ -38,7 +38,7 @@ Further details are within the following article: [https://knowledgebase.autorab
 3. **Enhancement to rule: “Validation Rule Must Reference Product”**\
    This existing CodeScan rule was enhanced to be compatible with SFDX.\
    \
-   &#xNAN;_&#x50;lease note that this rule update is part of a larger initiative where we are making “validationRules of CustomObject” Compatible with SFDX._\
+   _&#x50;lease note that this rule update is part of a larger initiative where we are making “validationRules of CustomObject” Compatible with SFDX._\
    \
    All Metadata rules need to be checked that they support both metadata API and SFDX formats of the issue they were built to find.\
    \

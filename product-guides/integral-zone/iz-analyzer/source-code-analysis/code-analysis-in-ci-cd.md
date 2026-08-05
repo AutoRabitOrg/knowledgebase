@@ -1,4 +1,4 @@
-# Code Analysis in CICD
+# Code Analysis in CI/CD
 
 ### Using Sonar Scanner:
 
@@ -20,17 +20,17 @@ Steps outlined below uses the command line approach
 1. Go to the project root directory from command line/terminal
 2. Run **`sonar-scanner`** command with following options
    1. -Dsonar.projectKey=xxx\
-      &#xNAN;_&#x55;nique key for the project being uploaded_
+      _&#x55;nique key for the project being uploaded_
    2. -Dsonar.projectName=xxx\
-      &#xNAN;_&#x44;iplay name of the project being uploaded_
+      _&#x44;iplay name of the project being uploaded_
    3. -Dsonar.projectVersion=x.x\
-      &#xNAN;_&#x56;ersion of the project being uploaded_
+      _&#x56;ersion of the project being uploaded_
    4. -Dsonar.sources=.\
-      &#xNAN;_&#x53;ource code directory_
+      _&#x53;ource code directory_
    5. -Dsonar.login=xxx\
-      &#xNAN;_&#x53;ecurity token generated from the server. This parameter is deprecated from SonarQube version > 10.x, use sonar.token instead_
+      _&#x53;ecurity token generated from the server. This parameter is deprecated from SonarQube version > 10.x, use sonar.token instead_
    6. -Dsonar.token=xxx\
-      &#xNAN;_&#x53;ecurity token generated from the server. This parameter is applicable from SonarQube version > 10.x, for versions < 10.x use sonar.login parameter_
+      _&#x53;ecurity token generated from the server. This parameter is applicable from SonarQube version > 10.x, for versions < 10.x use sonar.login parameter_
    7. -Dsonar.organization=xxx + _Optional. Applicable only for cloud version_
    8. -Dsonar.branch.name=xxx + _Optional. SCM branch for which code is being analysed. Eg: -Dsonar.branch.name=master_
 3. Complete example may look like
@@ -63,17 +63,17 @@ Before analyzing the source code using **`Maven Plugin`**, make sure you have:
 1. Go to the project root directory from command line/terminal
 2. Run **`mvn sonar:sonar`** command with following options
    * -Dsonar.projectKey=xxx\
-     &#xNAN;_&#x55;nique key for the project being uploaded_
+     _&#x55;nique key for the project being uploaded_
    * -Dsonar.projectName=xxx\
-     &#xNAN;_&#x44;iplay name of the project being uploaded_
+     _&#x44;iplay name of the project being uploaded_
    * -Dsonar.projectVersion=x.x\
-     &#xNAN;_&#x56;ersion of the project being uploaded_
+     _&#x56;ersion of the project being uploaded_
    * -Dsonar.sources=.\
-     &#xNAN;_&#x53;ource code directory_
+     _&#x53;ource code directory_
    * -Dsonar.login=xxx\
-     &#xNAN;_&#x53;ecurity token generated from the server. This parameter is deprecated from SonarQube version > 10.x, use sonar.token instead_
+     _&#x53;ecurity token generated from the server. This parameter is deprecated from SonarQube version > 10.x, use sonar.token instead_
    * -Dsonar.token=xxx\
-     &#xNAN;_&#x53;ecurity token generated from the server. This parameter is applicable from SonarQube version > 10.x, for versions < 10.x use sonar.login parameter_
+     _&#x53;ecurity token generated from the server. This parameter is applicable from SonarQube version > 10.x, for versions < 10.x use sonar.login parameter_
    * -Dsonar.organization=xxx + _Optional. Applicable only for cloud version_
    * -Dsonar.branch.name=xxx + _Optional. SCM branch for which code is being analysed. Eg: -Dsonar.branch.name=master_
 3. Complete example may look like

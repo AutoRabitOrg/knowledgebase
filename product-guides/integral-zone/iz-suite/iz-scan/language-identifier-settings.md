@@ -1,12 +1,8 @@
 # Language Identifier Settings
 
-## Language Identifier Settings
-
 {% hint style="warning" %}
 * This feature is available only in IZ Server versions later than 1.4.2.
 {% endhint %}
-
-### Language Identifier Settings
 
 Language Identifier Settings allow you to control how the static code analysis engine determines the type of a project, such as Mule, API, Python, and others, based on its structure and contents.
 

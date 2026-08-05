@@ -10,9 +10,7 @@ Enhanced the rollback process for **Profile** metadata to ensure profile permiss
 
 #### GitLab Cloud Pull Request Support <a href="#gitlab-cloud-pull-request-support" id="gitlab-cloud-pull-request-support"></a>
 
-Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow.
-
-{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request" %}
+Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow. Refer to the documentation on External Pull Requests [here](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request).&#x20;
 
 #### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
 
@@ -20,15 +18,11 @@ Fixed an issue where a **Child CI Job** triggered automatically after a successf
 
 #### Salesforce Org Registration API <a href="#salesforce-org-registration-api" id="salesforce-org-registration-api"></a>
 
-Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface.
-
-{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
+Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface. Refer to the full list of API references [here](https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references).&#x20;
 
 #### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
 
-Added a new API that enables users to clone an existing **CI Job** in ARM, allowing CI Job configurations to be duplicated programmatically without using the ARM user interface. This simplifies the automation of CI/CD setup and integration with external systems.
-
-{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
+Added a new API that enables users to clone an existing **CI Job** in ARM, allowing CI Job configurations to be duplicated programmatically without using the ARM user interface. This simplifies the automation of CI/CD setup and integration with external systems. Refer to the full list of API references [here](https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references).
 
 #### CI Job Baseline Revision Pagination Fix <a href="#ci-job-baseline-revision-pagination-fix" id="ci-job-baseline-revision-pagination-fix"></a>
 

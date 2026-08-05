@@ -1,4 +1,4 @@
-# About IZ-Eye
+# About IZ Eye
 
 ## Introduction
 
@@ -43,4 +43,4 @@ In **`IZ Eye`**, not only component level code/specification is scanned with iss
 
 This enables easy way of analyzing the compliance data in one shot - whether you would like to understand it at component level, summary level or based on custom tag level!
 
-This enables to truly have a compliance dashboard specific to whatever level of data that you desire - and analyze the risk associated with issues discovered by the tool!
+This enables you to truly have a compliance dashboard specific to whatever level of data that you desire - and analyze the risk associated with issues discovered by the tool!

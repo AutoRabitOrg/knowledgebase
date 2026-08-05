@@ -1,7 +1,5 @@
 # Organization Report
 
-## Organization Report
-
 ### Schedule Organization Report
 
 Organization reports can be scheduled to be generated and optionally emailed to users on a regular basis

@@ -1,7 +1,5 @@
 # Scan Settings
 
-### Scan Settings
-
 Configuration to control the projects that are being scanned from CICD Pipelines
 
 1. Navigate to **`Settings`** -> **`Global Settings`**.

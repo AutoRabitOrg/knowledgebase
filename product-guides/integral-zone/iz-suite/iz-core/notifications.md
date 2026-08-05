@@ -1,7 +1,5 @@
 # Notifications
 
-## Notifications
-
 ### Subscription
 
 Users can subscribe to the events listed below through any of the supported channels, such as Email, Slack, or Web.

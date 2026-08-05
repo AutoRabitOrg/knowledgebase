@@ -1,7 +1,5 @@
 # Quality Gates
 
-## Quality Gates
-
 Quality Gates make sure that all the projects follow the organization standards before being deployed/promoted to any environment
 
 1.  Navigate to **`Quality Control`** -> **`Quality Gates`** <br>

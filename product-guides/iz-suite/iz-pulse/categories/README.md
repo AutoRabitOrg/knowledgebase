@@ -1,7 +1,5 @@
 # Categories
 
-## Categories
-
 Category is a collection of Endpoints. Multiple endpoints can be added to each category, which can then be added to the status page
 
 1. Navigate to **`IZ Pulse`** -> **`Categories`**&#x20;

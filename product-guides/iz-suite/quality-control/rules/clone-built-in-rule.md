@@ -6,14 +6,14 @@ By default, users with the appropriate permissions can update the **`Name`**, **
 
 However, modifying the core rule definition or its autofix logic is not permitted, ensuring the integrity and consistency of the built-in rules. This section outlines the details for editing the configurable attributes of a built-in rule.
 
-### Role required to Clone a built-in Rule -
+### Role required to Clone a built-in Rule
 
 1. Navigate to **`Organization`** -> **`Users`**.
 2. Click on the **`Edit Permissions`** action item of the user who requires the clone rule permission
 3. Click on **`Assign Permissions`** and select **`Clone Builtin Rule`** permission.
 4. Click on save to apply the permission to the user.
 
-### Clone built-in new Rule -
+### Clone built-in new Rule
 
 1. Navigate to **`Rules`** -> **`Quality Rules`**
 2. Once the **`Clone Builtin Rule`** permission is assigned to the user, a new action item called **`Clone Rule`** will be enabled for all built-in rules.

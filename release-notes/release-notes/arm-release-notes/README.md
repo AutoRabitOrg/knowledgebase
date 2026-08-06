@@ -1,5 +1,59 @@
 # ARM Release Notes
 
+## ARM **Release Notes 26.3.6**
+
+**Release Date: 9 Aug 2026**
+
+### Azure DevOps SSO Enhancement <a href="#azure-devops-sso-enhancement" id="azure-devops-sso-enhancement"></a>
+
+Enhanced Azure DevOps Single Sign-On (SSO) to support authentication using **Microsoft Entra Tenant ID** and **Object ID**, providing greater flexibility in user identity mapping. Administrators can now configure these identifiers for users, enabling successful SSO authentication even when the Identity Provider (IDP) username differs from the ARM username. If the Tenant ID and Object ID are not configured or do not match, ARM automatically falls back to the existing username-based validation, ensuring backward compatibility with current SSO configurations.
+
+### Org-to-Org CI Job Incremental Build Fix <a href="#org-to-org-ci-job-incremental-build-fix" id="org-to-org-ci-job-incremental-build-fix"></a>
+
+Fixed an issue in **Org-to-Org CI Jobs** where destructive change tracking did not behave correctly for unpackaged deployments. The destructive change processing has been improved to correctly maintain the destructive baseline, ensuring deleted components are tracked consistently across deployment cycles while preserving the expected behavior for incremental builds.
+
+### External Credential File Diff Fix <a href="#external-credential-file-diff-fix" id="external-credential-file-diff-fix"></a>
+
+Fixed an issue where deleting **External Credential** metadata in DX repositories caused file diff generation to fail during EZ-Commit with a **"No enum constant"** error. ARM now correctly recognizes External Credential metadata during deletion workflows, enabling successful file diff generation for both direct and pre-validation commit operations.
+
+### Scratch Org Azure Boards Mapping Fix - New UI <a href="#scratch-org-azure-boards-mapping-fix-new-ui" id="scratch-org-azure-boards-mapping-fix-new-ui"></a>
+
+Fixed an issue in the New UI where the **Team Name** field was not displayed during Scratch Org creation when configuring **Azure Boards** ALM mappings. The ALM mapping workflow has been updated to correctly display the required Team Name field, allowing users to complete Scratch Org creation without additional manual configuration.
+
+### Deployment Destructive Changes Pagination Fix <a href="#deployment-destructive-changes-pagination-fix" id="deployment-destructive-changes-pagination-fix"></a>
+
+Fixed an issue where the **Destructive Changes** selection list did not display all available components during deployments, making it difficult to select destructive changes. The pagination logic has been improved to dynamically track the total number of filtered records, ensuring all matching components are displayed correctly during browsing and search.
+
+### Profile Rollback Permission Restoration Fix <a href="#profile-rollback-permission-restoration-fix" id="profile-rollback-permission-restoration-fix"></a>
+
+Enhanced the rollback process for **Profile** metadata to correctly restore **Object** and **Field** permissions to their original state. ARM now preserves the pre-deployment permission state, including cases where no permissions previously existed, ensuring newly added permissions are properly removed during rollback for both **Deployments** and **CI Jobs**.
+
+### Search & Substitute XPath Handling Fix <a href="#search-and-substitute-xpath-handling-fix" id="search-and-substitute-xpath-handling-fix"></a>
+
+Fixed an issue where **Search & Substitute** rules failed to replace values containing special characters, such as single quotes, in Custom Metadata fields. The XPath parsing logic has been corrected to properly handle these values, ensuring substitutions are applied successfully during deployment instead of being silently skipped.
+
+### Custom Field Translation Deletion Fix <a href="#custom-field-translation-deletion-fix" id="custom-field-translation-deletion-fix"></a>
+
+Fixed an issue where deleting a **Custom Field** through EZ-Commit did not remove its associated **Field Translation**metadata from the repository. ARM now automatically deletes the related field translations when a destructive commit is performed for Custom Fields, ensuring translation metadata remains synchronized with the deleted field in both DX and non-DX repositories.
+
+### Ignore Missing Visibility Settings Fix <a href="#ignore-missing-visibility-settings-fix" id="ignore-missing-visibility-settings-fix"></a>
+
+Fixed an issue in **CI Jobs** where enabling **Ignore Missing Visibility Settings, If Package Contains Profiles or Permission Sets** incorrectly removed valid Permission Set tab visibility entries during deployment. The backend logic has been updated to remove only references to metadata that are unavailable in the target org, preserving existing valid visibility settings and preventing unintended changes to Permission Sets.
+
+### EZ-Commit Object Selection Fix - New UI <a href="#ez-commit-object-selection-fix-new-ui" id="ez-commit-object-selection-fix-new-ui"></a>
+
+Fixed an issue in the New UI where duplicate object names could appear in the **EZ-Commit** object selection picklist, preventing users from accessing the required fields. The object filtering logic has been updated to correctly handle object prefixes, ensuring object names are displayed uniquely and the appropriate fields are available for selection.
+
+### Deployment Timeout Status Fix <a href="#deployment-timeout-status-fix" id="deployment-timeout-status-fix"></a>
+
+Fixed an issue where long-running **Quick Deploy** operations with a large number of components could be incorrectly marked as **Timed Out** in ARM, even though the deployment completed successfully in Salesforce. The deployment status handling has been improved to prevent active deployments from being incorrectly classified as timed out while background processing is still in progress, ensuring the deployment status accurately reflects the final outcome.
+
+### Automatic Cleanup of Deactivated Picklist Value References <a href="#automatic-cleanup-of-deactivated-picklist-value-references" id="automatic-cleanup-of-deactivated-picklist-value-references"></a>
+
+Introduced an enhancement that automatically removes references to **deactivated picklist values** from affected **Record Types** during metadata processing. When a picklist value is deactivated, ARM identifies all Record Types belonging to the same object, removes only the invalid picklist value references, and automatically includes the updated Record Types in the generated deployment or commit package. This ensures metadata consistency across branches and deployments while preserving all other Record Type configurations and unrelated metadata
+
+***
+
 ## ARM **Release Notes 26.3.5**
 
 **Release Date: 2 Aug 2026**

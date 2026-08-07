@@ -50,7 +50,7 @@ Fixed an issue where long-running **Quick Deploy** operations with a large numbe
 
 #### Automatic Cleanup of Deactivated Picklist Value References <a href="#automatic-cleanup-of-deactivated-picklist-value-references" id="automatic-cleanup-of-deactivated-picklist-value-references"></a>
 
-Introduced an enhancement that automatically removes references to **deactivated picklist values** from affected **Record Types** during metadata processing. When a picklist value is deactivated, ARM identifies all Record Types belonging to the same object, removes only the invalid picklist value references, and automatically includes the updated Record Types in the generated deployment or commit package. This ensures metadata consistency across branches and deployments while preserving all other Record Type configurations and unrelated metadata
+Introduced an enhancement that automatically removes references to **deactivated picklist values** from affected **Record Types** during metadata processing. When a picklist value is deactivated, ARM identifies all Record Types belonging to the same object, removes only the invalid picklist value references, and automatically includes the updated Record Types in the generated deployment or commit package. This ensures metadata consistency across branches and deployments while preserving all other Record Type configurations and unrelated metadata.
 
 ***
 

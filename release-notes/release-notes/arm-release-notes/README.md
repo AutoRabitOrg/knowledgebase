@@ -4,9 +4,11 @@
 
 **Release Date: 9 Aug 2026**
 
-#### Azure DevOps SSO Enhancement <a href="#azure-devops-sso-enhancement" id="azure-devops-sso-enhancement"></a>
+#### Azure DevOps SSO Enhancement New UI <a href="#azure-devops-sso-enhancement" id="azure-devops-sso-enhancement"></a>
 
 Enhanced Azure DevOps Single Sign-On (SSO) to support authentication using **Microsoft Entra Tenant ID** and **Object ID**, providing greater flexibility in user identity mapping. Administrators can now configure these identifiers for users, enabling successful SSO authentication even when the Identity Provider (IDP) username differs from the ARM username. If the Tenant ID and Object ID are not configured or do not match, ARM automatically falls back to the existing username-based validation, ensuring backward compatibility with current SSO configurations.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/integration-and-plugins/sso/sso-with-microsoft-azure-ad" %}
 
 #### Org-to-Org CI Job Incremental Build Fix <a href="#org-to-org-ci-job-incremental-build-fix" id="org-to-org-ci-job-incremental-build-fix"></a>
 

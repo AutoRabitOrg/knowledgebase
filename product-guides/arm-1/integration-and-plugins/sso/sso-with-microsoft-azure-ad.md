@@ -84,6 +84,8 @@ Before configuring this feature:
 3. Under **Basic information**, locate the **Tenant ID**.
 4. Copy the Tenant ID.
 
+<figure><img src="../../../../.gitbook/assets/080E452F-5DF2-43FB-AAB1-F4B85C07432A_1_201_a.jpeg" alt=""><figcaption></figcaption></figure>
+
 > The Tenant ID identifies the Microsoft Entra tenant associated with the user.
 
 ***
@@ -95,6 +97,8 @@ Before configuring this feature:
 3. On the user's **Overview** page, locate the **Object ID**.
 4. Copy the Object ID.
 
+<figure><img src="../../../../.gitbook/assets/11F2C04B-0EC7-4C15-BE17-6E25D676466A_1_201_a.jpeg" alt=""><figcaption></figcaption></figure>
+
 > The Object ID uniquely identifies the user within the Microsoft Entra tenant.
 
 ***
@@ -105,6 +109,8 @@ Edit the required user in AutoRABIT and configure the following fields:
 
 * **Microsoft SSO Tenant ID** – Enter the Tenant ID obtained from Microsoft Entra ID.
 * **Microsoft SSO Object ID** – Enter the Object ID of the corresponding Entra user.
+
+<figure><img src="../../../../.gitbook/assets/image (2692).png" alt=""><figcaption></figcaption></figure>
 
 Save the user configuration after entering the required details.
 

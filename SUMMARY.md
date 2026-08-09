@@ -16,6 +16,7 @@
   * [ARM FAQs](fundamentals/faq/arm-faqs.md)
   * [CodeScan FAQs](fundamentals/faq/codescan-faqs.md)
   * [AutoRABIT Vault FAQs](fundamentals/faq/vault-faqs.md)
+  * [Automatic Cleanup of Deactivated Picklist Values](fundamentals/faq/automatic-cleanup-of-deactivated-picklist-values.md)
 * [Announcements](fundamentals/announcements/README.md)
   * [Status of AutoRABIT in the Middle East](fundamentals/announcements/page-3.md)
   * [Upgrading the Node Runtime for Azure DevOps](fundamentals/announcements/upgrading-the-node-runtime-for-azure-devops.md)

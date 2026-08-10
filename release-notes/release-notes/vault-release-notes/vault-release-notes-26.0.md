@@ -10,29 +10,17 @@
 
 The System Limits tab now displays system details, providing greater visibility into the underlying infrastructure.
 
-**Search Enabled in the Object Dropdown During Masking Rule Configuration**
+**Object Search by API Name in Masking Rules**
 
-The object selection dropdown now supports search during masking rule configuration, making it easier to locate objects in environments with large datasets.
-
-**Microsoft Entra ID Authentication Supported for MySQL**
-
-MySQL databases now support authentication through Microsoft Entra ID.
+The object search field now supports identifying objects by their API names during masking rule creation. This enhancement makes it easier to find and select the required objects.
 
 **Notification Origin Instance Tracking**
 
 Notifications now identify the specific instance from which they originated, improving traceability across multiple instances.
 
-**Vault Query Handling**
+**Incremental Backup Support for Login History**
 
-Addressed the Vault query requirement reported
-
-**Daily Upload of ARVault Logs to Amazon S3**
-
-Fixed an issue that prevented production `ARVault_Info.log` files from uploading to the configured Amazon S3 bucket each day.
-
-**XML Injection Vulnerability in the Add User Endpoint**
-
-Resolved an XML injection vulnerability affecting the `/ARVault/addUser` endpoint.
+AutoRABIT Vault now supports incremental backups for **Login History**, capturing only records added or modified since the previous backup. This enhancement improves backup efficiency and reduces processing time.
 
 **Activity Logs Missing from Downloaded CEF Files**
 
@@ -41,14 +29,6 @@ Fixed an issue where downloaded CEF files did not contain activity logs for the 
 **Expired SAML Credentials Message Updated**
 
 Updated the message displayed for expired SAML credentials to provide clearer and more helpful information.
-
-**S3 Resource Management During Storage Calculation**
-
-Improved resource handling by properly closing S3 resources after storage calculations, preventing potential resource leaks.
-
-**Login Issue for Subusers with Backup and Restore Permissions**
-
-Fixed an issue that prevented subusers with only Backup and Restore permissions from signing in.
 
 **Improved Support for Missing Synthetic Data Configurations**
 

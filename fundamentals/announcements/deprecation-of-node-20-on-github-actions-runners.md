@@ -6,7 +6,7 @@
 
 #### **Overview**
 
-As part of GitHub's ongoing platform maintenance, the Node 20 runtime on GitHub Actions runners is being retired and replaced by Node 24. To ensure your scans continue running without interruption, CodeScan will release an updated scanner action (`@3.0`) on **October 16, 2026**. We recommend updating your workflow ahead of GitHub's Node 20 removal, which is currently estimated for Fall 2026 (see more [here](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/)).
+As part of GitHub's ongoing platform maintenance, the Node 20 runtime on GitHub Actions runners is being retired and replaced by Node 24. To ensure your scans continue running without interruption, CodeScan will release an updated scanner action (`@3.0`) on **October 11, 2026**. We recommend updating your workflow ahead of GitHub's Node 20 removal, which is currently estimated for Fall 2026 (see more [here](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/)).
 
 Your scan functionality remains the same—this is a runtime update only.
 

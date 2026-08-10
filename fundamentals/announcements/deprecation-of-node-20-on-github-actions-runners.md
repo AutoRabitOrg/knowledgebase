@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Deprecation of Node 20 on GitHub Actions Runners
 
 {% hint style="info" %}
@@ -10,15 +6,9 @@ hidden: true
 
 #### **Overview**
 
-As part of GitHub's ongoing platform maintenance, the Node 20 runtime on GitHub Actions runners is being retired and replaced by Node 24. To ensure your scans continue running without interruption, CodeScan will release an updated scanner action (`@3.0`) on **July 31, 2026**. We recommend updating your workflow ahead of GitHub's key deadline: **September 16, 2026**, when Node 20 is removed entirely.
+As part of GitHub's ongoing platform maintenance, the Node 20 runtime on GitHub Actions runners is being retired and replaced by Node 24. To ensure your scans continue running without interruption, CodeScan will release an updated scanner action (`@3.0`) on **October 16, 2026**. We recommend updating your workflow ahead of GitHub's Node 20 removal, which is currently estimated for Fall 2026 (see more [here](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/)).
 
 Your scan functionality remains the same—this is a runtime update only.
-
-#### Key Dates
-
-1. **June 2, 2026:** Runners begin using Node 24 by default. Workflows on older action versions may start to fail.
-2. **July 31, 2026:** Updated CodeScan scanner action release.
-3. **September 16, 2026:** Node 20 is fully removed. Any workflows not yet updated will stop running.
 
 #### Actions Required
 
@@ -39,14 +29,19 @@ If you run your GitHub Actions workflows on custom (self-hosted) runners rather 
    * Node 24 is **not compatible with macOS 13.4 or earlier** — please upgrade the operating system on affected runners.
    * **ARM32 is no longer supported** — these runners will stop working once Node 20 is removed.
 
-#### Runtime Configuration Options
+#### Runtime Configuration Option
 
-GitHub provides two environment variables to help you manage the transition on your own timeline. These are optional—updating your Action versions as described above is the recommended path.
+GitHub provides an environmental variable to help you manage the transition on your own timeline. This is optional — updating your Action versions as described above is the recommended path.
 
-1. **Test Node 24 ahead of time:** To opt in to Node 24 now and validate your workflow before the June 2, 2026 default switch, set `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` as an environment variable in your workflow file or on the runner.
-2. **Temporarily continue on Node 20:** Once Node 24 becomes the default, you can temporarily opt out by setting `ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true`. This is a short-term measure only; **it will stop working once Node 20 is removed on September 16, 2026**.
+**To temporarily continue on Node 20:**&#x20;
+
+Once Node 24 becomes the default, you can temporarily opt out by setting `ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true`&#x20;
+
+{% hint style="info" %}
+Please note that this is a temporary measure until Node 20 full removal.&#x20;
+{% endhint %}
 
 #### Need Help?
 
-1. Contact AutoRABIT Support ([support@autorabit.com](mailto:support@autorabit.com)).
-2. Refer to the [GitHub Changelog](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/) for additional details.
+1. Please refer to the [GitHub Changelog](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/) for additional details.
+2. Contact AutoRABIT Support ([support@autorabit.com](mailto:support@autorabit.com)).

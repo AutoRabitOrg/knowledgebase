@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Upgrading the Node Runtime for Azure DevOps
 
 {% hint style="info" %}
@@ -10,13 +6,9 @@ hidden: true
 
 #### **Overview**
 
-As part of our ongoing commitment to platform security and maintenance, CodeScan is upgrading the Node runtime used by our Azure DevOps extension to **Node 24** on **August 1, 2026**. To support a smooth transition, **Node 20 will remain available as a fallback** alongside Node 24, ensuring uninterrupted operation while customers validate compatibility with the new runtime.
+As part of our ongoing commitment to platform security and maintenance, CodeScan is upgrading the Node runtime used by our Azure DevOps extension to **Node 24** on **October 16, 2026**. To support a smooth transition, **Node 20 will remain available as a fallback** alongside Node 24, ensuring uninterrupted operation while customers validate compatibility with the new runtime.
 
 Your scan functionality remains the same — this is a runtime update only.
-
-#### Key Date
-
-1. **August 1, 2026** — CodeScan's Azure DevOps extension upgrades to Node 24. Node 20 remains available as a fallback.
 
 #### Actions Required
 
@@ -34,8 +26,8 @@ To confirm your self-hosted agents are ready for the upgrade:
 
 #### Need Help?
 
-1. Contact AutoRABIT Support ([support@autorabit.com](mailto:support@autorabit.com)).
-2. Refer to Microsoft's [Azure Pipelines agents documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents) for guidance on managing self-hosted agents.
+1. Refer to Microsoft's [Azure Pipelines agents documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents) for guidance on managing self-hosted agents.
+2. Contact AutoRABIT Support ([support@autorabit.com](mailto:support@autorabit.com)).
 
 #### Additional Resources
 

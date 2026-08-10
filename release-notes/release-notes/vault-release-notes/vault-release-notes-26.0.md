@@ -2,6 +2,58 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
 
+## AutoRABIT Vault Release Notes 26.2.4
+
+**Release Date: 12 Aug 2026**
+
+**System Details Displayed in the System Limits Tab**
+
+The System Limits tab now displays system details, providing greater visibility into the underlying infrastructure.
+
+**Search Enabled in the Object Dropdown During Masking Rule Configuration**
+
+The object selection dropdown now supports search during masking rule configuration, making it easier to locate objects in environments with large datasets.
+
+**Microsoft Entra ID Authentication Supported for MySQL**
+
+MySQL databases now support authentication through Microsoft Entra ID.
+
+**Notification Origin Instance Tracking**
+
+Notifications now identify the specific instance from which they originated, improving traceability across multiple instances.
+
+**Vault Query Handling**
+
+Addressed the Vault query requirement reported
+
+**Daily Upload of ARVault Logs to Amazon S3**
+
+Fixed an issue that prevented production `ARVault_Info.log` files from uploading to the configured Amazon S3 bucket each day.
+
+**XML Injection Vulnerability in the Add User Endpoint**
+
+Resolved an XML injection vulnerability affecting the `/ARVault/addUser` endpoint.
+
+**Activity Logs Missing from Downloaded CEF Files**
+
+Fixed an issue where downloaded CEF files did not contain activity logs for the selected one-month date range.
+
+**Expired SAML Credentials Message Updated**
+
+Updated the message displayed for expired SAML credentials to provide clearer and more helpful information.
+
+**S3 Resource Management During Storage Calculation**
+
+Improved resource handling by properly closing S3 resources after storage calculations, preventing potential resource leaks.
+
+**Login Issue for Subusers with Backup and Restore Permissions**
+
+Fixed an issue that prevented subusers with only Backup and Restore permissions from signing in.
+
+**Improved Support for Missing Synthetic Data Configurations**
+
+ARVault now remains operational when the Synthetic Data masking configuration or Synthetic Data Generator settings are unavailable for on-premises instances.
+
 ## AutoRABIT Vault Release Notes 26.2.3
 
 **Release Date: 29 July 2026**

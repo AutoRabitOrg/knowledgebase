@@ -6,6 +6,10 @@
 
 **Release Date: 12 Aug 2026**
 
+**Incremental Backup Support for Login History**
+
+AutoRABIT Vault now supports incremental backups for **Login History**, capturing only records added or modified since the previous backup. This enhancement improves backup efficiency and reduces processing time.
+
 **System Details Displayed in the System Limits Tab**
 
 The System Limits tab now displays system details, providing greater visibility into the underlying infrastructure.
@@ -18,10 +22,6 @@ The object search field now supports identifying objects by their API names duri
 
 Notifications now identify the specific instance from which they originated, improving traceability across multiple instances.
 
-**Incremental Backup Support for Login History**
-
-AutoRABIT Vault now supports incremental backups for **Login History**, capturing only records added or modified since the previous backup. This enhancement improves backup efficiency and reduces processing time.
-
 **Activity Logs Missing from Downloaded CEF Files**
 
 Fixed an issue where downloaded CEF files did not contain activity logs for the selected one-month date range.
@@ -32,7 +32,7 @@ Updated the message displayed for expired SAML credentials to provide clearer an
 
 **Improved Support for Missing Synthetic Data Configurations**
 
-ARVault now remains operational when the Synthetic Data masking configuration or Synthetic Data Generator settings are unavailable for on-premises instances.
+AutoRABIT Vault now remains operational when the Synthetic Data masking configuration or Synthetic Data Generator settings are unavailable for on-premises instances.
 
 ## AutoRABIT Vault Release Notes 26.2.3
 

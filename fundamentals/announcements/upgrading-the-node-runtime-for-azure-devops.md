@@ -6,7 +6,7 @@
 
 #### **Overview**
 
-As part of our ongoing commitment to platform security and maintenance, CodeScan is upgrading the Node runtime used by our Azure DevOps extension to **Node 24** on **October 16, 2026**. To support a smooth transition, **Node 20 will remain available as a fallback** alongside Node 24, ensuring uninterrupted operation while customers validate compatibility with the new runtime.
+As part of our ongoing commitment to platform security and maintenance, CodeScan is upgrading the Node runtime used by our Azure DevOps extension to **Node 24** on **October 11, 2026**. To support a smooth transition, **Node 20 will remain available as a fallback** alongside Node 24, ensuring uninterrupted operation while customers validate compatibility with the new runtime.
 
 Your scan functionality remains the same — this is a runtime update only.
 

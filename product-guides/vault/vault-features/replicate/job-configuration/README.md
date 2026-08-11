@@ -281,23 +281,19 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     <figure><img src="../../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 
-5.  **Additional Cloning Validations:**
+5. **Additional Cloning Validations:**
+   1.  ### Feature Details
 
-    1.  ### Feature Details
+       When the cloning of a job is initiated, the following notification will be displayed upon identifying any differences between environments.
 
-        When the cloning of a job is initiated, the following notification will be displayed upon identifying any differences between environments.
+       <figure><img src="../../../../../.gitbook/assets/image (2696).png" alt=""><figcaption></figcaption></figure>
+   2. For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values.”
+      1.  A warning can be observed on the top of the pop-up, which states that the target environment is missing the respective metadata.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../../.gitbook/assets/image (2697).png" alt=""><figcaption></figcaption></figure>
+      2.  Please verify the following information displayed on the pop-up and may continue to clone by clicking on “CONFIRM”.
 
-    1.  For any changes identified, the respective differences will be identified and displayed under the “Objects, Fields, Record Types and Picklist Values.”
-
-        1. A warning can be observed on the top of the pop-up, which states that the target environment is missing the respective metadata.
-
-        <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-        1.  Please verify the following information displayed on the pop-up and may continue to clone by clicking on “CONFIRM”.
-
-            Only on user confirmation by clicking on “CONFIRM” button, the replication will be initiated.
+          Only on user confirmation by clicking on “CONFIRM” button, the replication will be initiated.
 6.  **Schedule**: Will set a schedule for the config to automatically run periodically.
 
     * On clicking the “Schedule” icon, the “Replication Config Schedule” will be displayed to the user.

@@ -149,31 +149,31 @@ Validate your query to see whether the criteria set is correct and view the numb
 
         1.  Set up the configuration for the automation rules at **“Scheduling”** while creating the “Archive Config”.
 
-            <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         2. On selecting the required automation configurations, continue to **“Save Config”**.
         3.  Once saved, the set job configurations can be observed under the **“Archive Config Details”**.
 
-            <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/2 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         4.  Clicking the information icon under the **"Archive Config Details"** column opens a pop-up displaying the configuration details associated with the respective archive job. This provides a quick view of the selected archive parameters without navigating away from the main screen.
 
-            <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/3 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         5.  Run a job for the created configuration and observe the configuration details reflected on the job
 
-            <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/6 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         6. The automation configurations selected during the creation of the _**Archive Config**_ will appear on the _**Start Archive**_ screen in the same state as they were initially defined.
         7. For archive configurations where the **"Notify before deleting records in Salesforce"** option is not selected, the automation settings will still appear on the **Start Archive** page.
         8.  On clicking the **“ARCHIVE NOW”** button, observe the automations to make sure they reflect in the same state of selection during the archive config creation.
 
-            <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/6 - Archive Automation Rules copy.png" alt=""><figcaption></figcaption></figure>
         9.  For "**Archive Configs"** with **"Notify before deleting records in Salesforce"** enabled, the automation rule settings will **not** be displayed on the **Start Archive** screen when the **ARCHIVE NOW** button is clicked.
 
-            <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/7 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         10. Once the archive job is completed, observe the automation rules details on the _“Job Info”_ section.
 
-            <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/7.1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         11. Click on the information icon under the “Job Info” section to observe the job automation details configured.
 
-            <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/7.2 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         12. Once the archive job is completed, any automations that were temporarily disabled during job creation will be restored to their original state as they were before the job was triggered.
 11. Click **Save Config**.
 12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.

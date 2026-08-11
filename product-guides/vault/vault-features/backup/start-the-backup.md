@@ -45,6 +45,26 @@ AutoRABIT Vault suits the Salesforce environment and is built for our customers 
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption><p>Backup Summary</p></figcaption></figure>
 
+## Exclude Deleted Records from Backup – User Guide
+
+This feature provides flexibility in managing what data gets included in backups. By enabling the "Exclude Deleted Records From Backup" option, records that are deleted in Salesforce will not be included in the backup jobs initiated from Vault.
+
+### Step-by-Step Guide:
+
+1. Select or create a backup configuration.
+2. Locate the toggle labeled "Exclude Deleted Records From Backup" in the configuration screen.
+3. Enable this option to exclude records residing in Salesforce's Recycle Bin from being backed up.
+4.  Enabling this ensures only active data is considered during the backup process.
+
+    <figure><img src="../../../../.gitbook/assets/image (2693).png" alt=""><figcaption></figcaption></figure>
+5.  Navigate to Backup and click "Backup Now".
+
+    <figure><img src="../../../../.gitbook/assets/image (2694).png" alt=""><figcaption></figcaption></figure>
+6. In the Start Backup window, select the configuration.
+7. You will see the "Exclude Deleted Records From Backup" toggle below the Backup Type.
+8. Toggle this ON if deleted records should not be included in the manual backup.
+9. This option helps avoid redundant data in backups and ensures storage efficiency.
+
 ### Backup Summary <a href="#backup-summary" id="backup-summary"></a>
 
 For each backup performed inside AutoRABIT Vault, you will find the details below on the **`Backup Summary`** screen.

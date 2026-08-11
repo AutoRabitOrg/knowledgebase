@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
+## nCino - Release 26.3.6 <a href="#release-notes-ncinodl-26.3.6" id="release-notes-ncinodl-26.3.6"></a>
 
 **Release Date: 09 Aug 2026**
 
@@ -13,6 +13,8 @@ Fixed an issue in nCino CI Jobs where the **Job Name** field appeared blank whil
 #### Deployment History Commit Stability
 
 Resolved a **NullPointerException** in nCino Deployment History that occurred during commit actions when a feature deployment iterator reference was missing. This fix restores a more reliable commit experience and helps ensure deployment history operations complete without unexpected failures.
+
+***
 
 ## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
 

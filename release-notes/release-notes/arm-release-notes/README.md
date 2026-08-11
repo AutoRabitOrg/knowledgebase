@@ -58,6 +58,16 @@ Introduced an enhancement that automatically removes references to **deactivated
 
 ***
 
+## DataLoader + DataLoader Pro Release Notes **26.3.6**
+
+**Release Date:** **09 Aug 2026**
+
+## External ID Mapping Persistence
+
+Addressed a DataLoader issue reported through Support Case, where saved custom **External ID** field mappings reverted after a browser refresh. The mapping now persists as expected, helping users retain intended source-to-destination field relationships across sessions.
+
+***
+
 ## ARM **Release Notes 26.3.5**
 
 **Release Date: 2 Aug 2026**

@@ -139,9 +139,9 @@ Validate your query to see whether the criteria set is correct and view the numb
    * Select the date and time interval for the archive process to run under the **Schedule Archive** section. You can set the policy to run either daily, weekly, monthly, or input any duration manually.
    * You can specify till what time period you want to retain the archived data under the **Archive retention period** section.
    * Specify the **batch size** for components to retrieve records. 10K is the max batch size that you can set per batch. This option is useful in running large jobs that would exceed normal processing limits. As per the Salesforce governor limit, you can deploy or retrieve up to 10,000 files at once or a max size of 40MB. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
-   *   **Enable serial mode for Bulk API:** Serial mode processes batch one at a time; however, it can increase the processing time for a load.
+   *   **Enable serial mode for Bulk API:** Serial mode processes batches one at a time; however, it can increase the processing time for a load.
 
-       <figure><img src="../../../../.gitbook/assets/1.1 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/1.1 - Archive Automation Rules (1).png" alt=""><figcaption></figcaption></figure>
 10. **Disable Automation Rules**
     1.  This provision to disable the automation rules is useful in making sure the automation rules created on various fields in Salesforce will not impact the Archival process midway.
 

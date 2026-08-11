@@ -15,7 +15,7 @@ You can find all these permissions under Profile > Administrative Permissions in
 
 ### Minimum Permissions for the CodeScan Integration User After ECA
 
-The CodeScan integration user requires the following minimum permissions:
+The CodeScan integration user requires the following minimum permissions after ECA:
 
 * **API Enabled**
 * **Modify Metadata**

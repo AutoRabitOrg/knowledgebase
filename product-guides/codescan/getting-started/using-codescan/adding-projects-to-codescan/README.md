@@ -13,6 +13,26 @@ The minimum permissions required in the Salesforce profile to add a Salesforce p
 
 You can find all these permissions under Profile > Administrative Permissions in Salesforce.
 
+### Minimum Permissions for the CodeScan Integration User After ECA
+
+The CodeScan integration user requires the following minimum permissions:
+
+* **API Enabled**
+* **Modify Metadata**
+* **View Setup**
+* **View Roles**
+* **Customize Application**
+* **Manage Custom Permissions**
+* **View All Data**
+
+We recommend granting **View All Data** whenever possible to help ensure that the integration functions smoothly.
+
+If **View All Data** cannot be granted due to your organization’s security requirements, the CodeScan integration user must instead be granted access to the required objects and fields based on your organization’s security model and requirements.
+
+{% hint style="info" %}
+This permissions guidance applies **after ECA**.
+{% endhint %}
+
 ### Prerequisites <a href="#prerequisities" id="prerequisities"></a>
 
 You will need a CodeScan organization to add a project to it. When signing up with [CodeScan Cloud](https://www.codescan.io/products/cloud/), an organization is created automatically under your username. New organizations can be created at any time using the '**+**' icon at the top-right corner of the screen.

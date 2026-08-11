@@ -175,26 +175,38 @@ Validate your query to see whether the criteria set is correct and view the numb
 
             <figure><img src="../../../../.gitbook/assets/7.2 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         12. Once the archive job is completed, any automations that were temporarily disabled during job creation will be restored to their original state as they were before the job was triggered.
-11. Click **Save Config**.
-12. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
+        13. Confirm Archive
+
+            1. The archive job schema will be deleted from the backend once the retention period elapses.
+            2. Once the job run is completed, the Archive data will be retained for a period of “7 days”.
+            3. As the retentions period elapses, the “Confirm Archive” button will be disabled and grayed out subsequently.
+            4.  While creating a Config, if the user selects the Notify option then this note will be displayed :
+
+                **Note:** This option creates a backup of the specified data for archival purposes and then waits for user confirmation—up to a maximum of 7 days —before proceeding with data deletion from Salesforce.
+
+            <figure><img src="../../../../.gitbook/assets/image (2702).png" alt=""><figcaption></figcaption></figure>
+        14. On hovering over the “Confirm Archive”, the following message will be displayed “Your archival job confirmation option has expired because it is not confirmed within 7 days”.
+
+            <figure><img src="../../../../.gitbook/assets/image (2703).png" alt=""><figcaption></figcaption></figure>
+11. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
-13. Now go to the **Archive** tab.
-14. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.&#x20;
-15. Select the **Environment**.
-16. Select the archive configured recently under **Configurations** drop-down field.
+12. Now go to the **Archive** tab.
+13. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.&#x20;
+14. Select the **Environment**.
+15. Select the archive configured recently under **Configurations** drop-down field.
 
     <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
-17. Click on **Get Details** to fetch all the existing archives configured for your Salesforce Org. If you've initiated the archival process for the first time in AutoRABIT Vault, you will not find any details on this page.
-18. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
-19. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
-20. &#x20;Select your configuration and click **Archive**.
+16. Click on **Get Details** to fetch all the existing archives configured for your Salesforce Org. If you've initiated the archival process for the first time in AutoRABIT Vault, you will not find any details on this page.
+17. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
+18. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
+19. &#x20;Select your configuration and click **Archive**.
 
     <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
-21. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
+20. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
 
     <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
-22. &#x20;For each archive job, the following information will be displayed:
+21. &#x20;For each archive job, the following information will be displayed:
 
     <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
 

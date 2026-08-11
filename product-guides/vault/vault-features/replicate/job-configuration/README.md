@@ -156,6 +156,16 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 13. Click on the following sections and make the required selections:
 
     * **Include all child objects:** This selection ensures that all the child’s directly related and recursively related objects will be included.
+    *   **Common Object Selection:**
+
+        This provision is useful for selecting the “common objects” such as Task, Email etc, while performing the “Replicate” operations. This ensures that the selected common objects will be processed.
+
+        *   On the object selection page click on the icon under the “Common Child Objects”.
+
+            <figure><img src="../../../../../.gitbook/assets/image (2698).png" alt=""><figcaption></figcaption></figure>
+        *   A pop-up will be opened on clicking the icon. The required child objects can be selected here.
+
+            <figure><img src="../../../../../.gitbook/assets/image (2699).png" alt=""><figcaption></figcaption></figure>
     * **Mappings:** The user can click open and observe how the fields have been mapped for data transfer between the environments.
 
     <figure><img src="../../../../../.gitbook/assets/image (92) (1).png" alt=""><figcaption></figcaption></figure>

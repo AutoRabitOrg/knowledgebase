@@ -4,6 +4,18 @@
 
 ## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
 
+**Release Date: 09 Aug 2026**
+
+#### CI Job Name Display <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
+
+Fixed an issue in nCino CI Jobs where the **Job Name** field appeared blank while editing an existing job, even though a valid name had already been saved. The field now loads correctly in the edit form, making it easier for users to review and update job settings without risking accidental overwrites.
+
+#### Deployment History Commit Stability
+
+Resolved a **NullPointerException** in nCino Deployment History that occurred during commit actions when a feature deployment iterator reference was missing. This fix restores a more reliable commit experience and helps ensure deployment history operations complete without unexpected failures.
+
+## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
+
 **Release Date: 02 Aug 2026**
 
 #### Rollback Build DynamoDB Duplicate Key Error <a href="#rollback-build-dynamodb-duplicate-key-error" id="rollback-build-dynamodb-duplicate-key-error"></a>

@@ -62,7 +62,7 @@ Introduced an enhancement that automatically removes references to **deactivated
 
 **Release Date:** **09 Aug 2026**
 
-## External ID Mapping Persistence
+#### External ID Mapping Persistence
 
 Addressed a DataLoader issue reported through Support Case, where saved custom **External ID** field mappings reverted after a browser refresh. The mapping now persists as expected, helping users retain intended source-to-destination field relationships across sessions.
 

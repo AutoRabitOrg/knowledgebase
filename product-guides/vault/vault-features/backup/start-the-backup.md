@@ -140,7 +140,7 @@ Follow the following flow for the backup records download:
 2. Click on the “Label Name” to open the backup details
 3.  On landing on the backup details section, click on the “Records”
 
-    <figure><img src="../../../../.gitbook/assets/image (1744).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 - Backup - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 4. On opening the backup “Records”, observe the “Downloads” option.
 5.  The download has three values in the drop-down
 
@@ -150,14 +150,14 @@ Follow the following flow for the backup records download:
 
     c.     Download Filtered Results
 
-    <figure><img src="../../../../.gitbook/assets/image (1745).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2 - Backup - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 6. **Download All Records**: Selecting this option will download all the backed up records
 7.  **Download Record On Screen**: Selecting this option will download all the records available on that current page
 
-    <figure><img src="../../../../.gitbook/assets/image (1746).png" alt=""><figcaption></figcaption></figure>
-8.  **Download Filtered Records**: Selecting this option will download the records filtered
+    <figure><img src="../../../../.gitbook/assets/3 - Backup - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
+8.  **Download Filtered Records**: Selecting this option will download the records filtered.
 
-    <figure><img src="../../../../.gitbook/assets/image (1747).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 - Backup - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 

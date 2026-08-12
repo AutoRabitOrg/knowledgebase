@@ -2,17 +2,6 @@
 
 This document provides a description about how to create a project in CodeScan.
 
-### Salesforce Permissions
-
-The minimum permissions required in the Salesforce profile to add a Salesforce project in CodeScan are listed below:
-
-1. API Enabled (mandatory)
-2. Modify Metadata Through Metadata API Functions (mandatory)
-3. View All Data
-4. Author Apex (Needed when IncludeContentsOfPackages is enabled)
-
-You can find all these permissions under Profile > Administrative Permissions in Salesforce.
-
 ### Minimum Permissions for the CodeScan Integration User After ECA
 
 The CodeScan integration user requires the following minimum permissions after ECA:
@@ -24,6 +13,8 @@ The CodeScan integration user requires the following minimum permissions after E
 * **Customize Application**
 * **Manage Custom Permissions**
 * **View All Data**
+
+You can find all these permissions under Profile > Administrative Permissions in Salesforce.
 
 We recommend granting **View All Data** whenever possible to help ensure that the integration functions smoothly.
 

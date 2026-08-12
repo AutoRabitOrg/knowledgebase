@@ -275,7 +275,7 @@ The AutoRABIT Vault application now automatically identifies and excludes system
 
 The following is a sample log for reference, showing the excluded system-generated Feeditems:
 
-<figure><img src="../../../../.gitbook/assets/image (1577).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/kD9fDjdFtwQn3s096CPn" alt=""><figcaption></figcaption></figure>
 
 ### Restore Log
 

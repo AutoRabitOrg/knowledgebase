@@ -118,7 +118,7 @@ The Search field supports narrowing the visible records. The Columns control man
 
 When org-level access control is enabled, the Enable org access control toggle appears in the enabled state. This setting controls whether org access can be managed at the user level.
 
-<figure><img src="../../../.gitbook/assets/image (2667).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (13).png" alt=""><figcaption></figcaption></figure>
 
 ## Export Users
 
@@ -128,4 +128,4 @@ After the export is triggered, the button changes to EXPORTING... and becomes in
 
 Once the export process completes, AutoRABIT Vault provides the generated user export file through the browser download behavior configured for the application session.
 
-<figure><img src="../../../.gitbook/assets/image (2668).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (12).png" alt=""><figcaption></figcaption></figure>

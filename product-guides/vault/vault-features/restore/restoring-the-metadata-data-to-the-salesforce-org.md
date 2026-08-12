@@ -206,10 +206,10 @@ The next screen displays the metadata and data objects that will be replicated. 
 
     *   On the object selection page click on the icon under the “Common Child Objects”.
 
-        <figure><img src="../../../../.gitbook/assets/image (2700).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="/broken/files/ujft8JM3kI7LPefALHKK" alt=""><figcaption></figcaption></figure>
     *   A pop-up will be opened on clicking the icon
 
-        <figure><img src="../../../../.gitbook/assets/image (2701).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="/broken/files/ZvCxe555dppgjBqrI0rE" alt=""><figcaption></figcaption></figure>
 * **`Selected Records:`** By default, all the records available in the objects will be auto-selected. To choose specific records, click **`All`** under **`Selected Records,`** which will lead you to a pop-up box where you can select the record. Post selection, the summary table should show the number of records set.
 
 <figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

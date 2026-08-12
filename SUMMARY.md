@@ -1414,7 +1414,7 @@
     * [Registering nCino configured Salesforce Org](product-guides/vault-1/ncino/registering-ncino-configured-salesforce-org.md)
     * [Restoring nCino Features](product-guides/vault-1/ncino/restoring-ncino-features.md)
 * [Data Gen By AutoRABIT - Beta](product-guides/data-gen-by-autorabit-beta/README.md)
-  * [Synthetic Salesforce Data & Agentforce Test Generation](product-guides/data-gen-by-autorabit-beta/synthetic-salesforce-data-and-agentforce-test-generation.md)
+  * [AutoRABIT DataGen User Guide](product-guides/data-gen-by-autorabit-beta/autorabit-datagen-user-guide.md)
 * [Guard](product-guides/guard.md)
   * [Getting Started with Guard](product-guides/guard/getting-started-with-guard/README.md)
     * [Connecting a Salesforce Org to Guard using Connected Apps flow](product-guides/guard/getting-started-with-guard/how-to-set-up-guard.md)

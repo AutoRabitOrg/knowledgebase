@@ -53,9 +53,9 @@ EZ-Restore copies everything from the source to the destination, including new, 
 1.  Select the backup(s) from the list and click on the **`EZ Restore`** button.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (1562).png" alt=""><figcaption></figcaption></figure>
-2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button. <br>
+2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (1561).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/RESTORE – EZ RESTORE - 1 (1).png" alt=""><figcaption></figcaption></figure>
 3. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
    * Specify the **`batch size`** for components to retrieve records. The max batch size that you can set per batch is **10K**. This option helps run large jobs exceeding normal processing limits. Per the Salesforce governor limit, you can deploy or retrieve up to **10,000 files** at once or a max size of **40 MB**. Using Batch Size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is your best solution.
@@ -67,9 +67,9 @@ EZ-Restore copies everything from the source to the destination, including new, 
    * **`Disable Relationship Mapping:`** The child objects related to selected objects will not be fetched on selection.
    * **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may wish to disable any triggers you have set. _This feature disables Salesforce triggers only.  Any managed package triggers will not be disabled._
 5. The list of **metadata** and **data** objects replicated will be displayed for the last time before the restore process begins. You will not have options to select individual objects as it is an entire restore process.
-6.  Click **`Restore Now`**.<br>
+6.  Click **`Restore Now`**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1563).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/RESTORE – EZ RESTORE - 2 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Selective Restore <a href="#selective-restore" id="selective-restore"></a>
 
@@ -242,9 +242,9 @@ Based on your selection, the restore will happen only for selected fields. Post 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1644318580634.png" alt=""><figcaption></figcaption></figure>
 
-*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the pop-up. <br>
+*   The restore checklists are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Click **`Got It`** to dismiss the pop-up.&#x20;
 
-    <figure><img src="../../../../.gitbook/assets/image (1565).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/RESTORE – SELECTIVE RESTORE - 1.png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -256,9 +256,9 @@ Based on your selection, the restore will happen only for selected fields. Post 
      3. **`Enable serial mode for Bulk API:`** Serial mode processes batch one at a time; however, it increases the processing time for a load.
      4. **`Disable Relationship Mapping:`** The child objects related to selected objects are not fetched on selection.
      5. **`Disable Triggers:`** To ensure a successful recovery when working with data and metadata, you may disable any triggers you have set. _This feature disables Salesforce triggers only. Any managed package triggers are not disabled._
-5.  Click **`Restore Now`**.<br>
+5.  Click **`Restore Now`**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1566).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/RESTORE – SELECTIVE RESTORE - 2.png" alt=""><figcaption></figcaption></figure>
 6. You'll be taken to the **`Restore Summary`** screen, which will display the status of the recently triggered restore activity.
 
 ## Excluding System-Generated Feed Items – Restore

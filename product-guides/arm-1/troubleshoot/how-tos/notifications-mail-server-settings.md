@@ -1,4 +1,4 @@
-# Notifications (Mail Server Settings)
+# Email Notifications
 
 {% hint style="info" %}
 **Important Note**: This article is for the **'Org Administrator'** in particular. The actions discussed in the article will not be available to the General Users. &#x20;
@@ -46,7 +46,7 @@ Before using your customized email style, be sure to preview it once to be sure 
 
 #### Teams/Slack Settings <a href="#teamsslack-settings" id="teamsslack-settings"></a>
 
-When an event is triggered in ARM, email notifications are sent to the selected individuals. If you want to send notifications for particular events to an entire group within your organization through **Teams** or **Slack**, then integrate your Teams or Slack application with ARM using the respective **Webhook Integration URL**. For more information on configuring a webhook on **Teams**, click [HERE](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-teams.md). For **Slack**, click [HERE](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-slack.md).
+When an event is triggered in ARM, email notifications are sent to the selected individuals. If you want to send notifications for particular events to an entire group within your organization through **Teams** or **Slack**, then integrate your Teams or Slack application with ARM using the respective **Webhook Integration URL**. For more information on configuring a webhook on **Teams**, click [HERE](/broken/pages/8waADP8rVqvezIsahchk). For **Slack**, click [HERE](../../../arm/arm-features/automation-and-ci/webhooks/configure-a-webhook-in-slack.md).
 
 1. Select either **Teams** or **Slack** as per your organization's requirements.
 2. Enter a **Channel Name** and the **Webhook Integration URL**.&#x20;

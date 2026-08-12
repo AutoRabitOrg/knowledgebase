@@ -205,9 +205,9 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
 <figure><img src="../../../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 16. On clicking “OK”, the rule will be published and available with the global list of rules associated with the Org.
-17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.<br>
+17. On completing all the required actions, the user can click “Next” to continue to the “Config Details” section.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1555).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Replicate - 1 (1).png" alt=""><figcaption></figcaption></figure>
 18. The user can fill in all required details for the “Config Details”:
 
     * **Replicate Config Label**: The user can enter the name of the config to be created.
@@ -219,11 +219,15 @@ When creating the job configuration, select from: Backup, Hierarchical Backup, A
     * **Data:** The user can observe the objects that are selected during the config creation.
     * On completing all the required selections, the user can select either “Save” or “Save & Run”.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1556).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/Replicate - SAVE.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1557).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1558).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../../.gitbook/assets/Replicate - SAVE 1.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../../../../.gitbook/assets/Replicate - SAVE NEW.png" alt=""><figcaption></figcaption></figure>
 19. **Save:** Will save the config created. It will not trigger the job automatically while saving the job.
     * The user will observe “Save” on the “Replication Config Info” page if “Save” is selected.
 20. &#x20;**Save & Run:** Will save the config created and will trigger the job created to run, and redirect the user to the “Job History” page.

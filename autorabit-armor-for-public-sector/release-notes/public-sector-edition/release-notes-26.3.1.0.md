@@ -1,9 +1,5 @@
 # Release Notes 26.3.1.0
 
-
-
-## Release Notes 26.3.1.0
-
 **Security and Bug Fixes | Public Sector Release**
 
 **Release Date:** July 8, 2026\

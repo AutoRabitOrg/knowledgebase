@@ -331,7 +331,7 @@ AutoRABIT Vault now automatically identifies and excludes system-generated FeedI
 
 The following is a sample log for reference, showing the excluded system-generated Feeditems:
 
-<figure><img src="../../../../../.gitbook/assets/image (1576).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2704).png" alt=""><figcaption></figcaption></figure>
 
 #### Replicate Log
 

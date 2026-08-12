@@ -223,7 +223,7 @@ This provision is useful in filtering the “backed up” and archived records. 
 3. Click on the “Label Name” to open the backup details
 4.  On landing on the backup details section, click on the “Records”
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/1 - Archive - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 5. On opening the backup “Records”, observe the “Downloads” option.
 6.  The download has three values in the drop-down
 
@@ -231,16 +231,18 @@ This provision is useful in filtering the “backed up” and archived records. 
     2. Download Records On Screen
     3. Download Filtered Results
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+    <figure><img src="../../../../.gitbook/assets/2 - Archive - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 7. 6\.    Download All Records: Selecting this option will download all the backed up records
 8.  7\.    Download Record On Screen: Selecting this option will download all the records available on that current page
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-9.  Download Filtered Records: Selecting this option will download the records filtered
+    <figure><img src="../../../../.gitbook/assets/3 - Archive - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
+9.  Download Filtered Records: Selecting this option will download the records filtered.
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 - Archive - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (1743).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/5 - Archive - User Guide - Dwnld &#x26; Filter.png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 

@@ -34,6 +34,8 @@ Updated the message displayed for expired SAML credentials to provide clearer an
 
 AutoRABIT Vault now remains operational when the Synthetic Data masking configuration or Synthetic Data Generator settings are unavailable for on-premises instances.
 
+***
+
 ## AutoRABIT Vault Release Notes 26.2.3
 
 **Release Date: 29 July 2026**

@@ -176,7 +176,6 @@ Validate your query to see whether the criteria set is correct and view the numb
             <figure><img src="../../../../.gitbook/assets/7.2 - Archive Automation Rules.png" alt=""><figcaption></figcaption></figure>
         12. Once the archive job is completed, any automations that were temporarily disabled during job creation will be restored to their original state as they were before the job was triggered.
         13. Confirm Archive
-
             1. The archive job schema will be deleted from the backend once the retention period elapses.
             2. Once the job run is completed, the Archive data will be retained for a period of “7 days”.
             3. As the retentions period elapses, the “Confirm Archive” button will be disabled and grayed out subsequently.
@@ -184,10 +183,10 @@ Validate your query to see whether the criteria set is correct and view the numb
 
                 **Note:** This option creates a backup of the specified data for archival purposes and then waits for user confirmation—up to a maximum of 7 days —before proceeding with data deletion from Salesforce.
 
-            <figure><img src="../../../../.gitbook/assets/image (2702).png" alt=""><figcaption></figcaption></figure>
+                <figure><img src="../../../../.gitbook/assets/image (19) (6).png" alt=""><figcaption></figcaption></figure>
         14. On hovering over the “Confirm Archive”, the following message will be displayed “Your archival job confirmation option has expired because it is not confirmed within 7 days”.
 
-            <figure><img src="../../../../.gitbook/assets/image (2703).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/Confirm Archive.png" alt=""><figcaption></figcaption></figure>
 11. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>

@@ -4,6 +4,26 @@
 
 ## nCino - Release 26.3.6 <a href="#release-notes-ncinodl-26.3.6" id="release-notes-ncinodl-26.3.6"></a>
 
+**Release Date: 16 Aug 2026**
+
+**Feature Version Cleanup**
+
+Deleting a feature version now also removes its related entry from the featureVersionChangeLog table. This keeps version history data aligned with actual records and helps prevent stale audit entries from remaining behind.
+
+**CI Job History Build Number Validation**
+
+In nCino CI Job History, the Build Number filter now handles invalid non-numeric input more safely. Users are prevented from triggering backend numeric conversion errors when searching with alphabetic values in that field.
+
+**nCino CI Jobs Pagination**
+
+Pagination behavior in the nCino CI Jobs listing has been corrected for more reliable page navigation. Users can move across job records more consistently and review multi-page results without missing or incorrectly displayed data.
+
+**Sorting Criteria Field Availability**
+
+Field-based sorting in nCino Deployments and CI Jobs now properly loads available fields instead of showing “No fields found.” This restores the ability to configure object-level sorting rules needed for ordered execution and deployment control.
+
+## nCino - Release 26.3.6 <a href="#release-notes-ncinodl-26.3.6" id="release-notes-ncinodl-26.3.6"></a>
+
 **Release Date: 09 Aug 2026**
 
 #### CI Job Name Display <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>

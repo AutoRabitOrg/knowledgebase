@@ -2,7 +2,7 @@
 
 ### CodeScan Self-Hosted Editions&#x20;
 
-Our latest CodeScan Self-Hosted release is the Eagle Edition v10 (26.1.3), released in August 2026. Please refer to the Release Notes for Eagle Edition v10 for complete documentation.&#x20;
+Our latest CodeScan Self-Hosted release is the Eagle Edition v10 (26.1.3), released in August 2026. Please refer to the Release Notes for [Eagle Edition v10](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-26.1.3-eagle-10.0) for complete documentation.&#x20;
 
 Our Eagle Editions are designed for those customers who run newer versions of SonarQube.
 
@@ -12,9 +12,7 @@ It is important to note that in December 2024, SonarQube made the decision to se
 
 Please note that once this split occurred, SonarQube released Community Build 24.12 in Dec 2024, and then released a new Community Build each month (25.1 – 25.12) for the calendar year of 2025.&#x20;
 
-We have chosen to validate our CodeScan plugin for SonarQube on their Community Builds, as most of our customers use these editions of SonarQube. Our Eagle Editions v5 and v6 are validated on nearly each of these builds, up to and including Community Build 25.10.&#x20;
-
-However, we also recognize that some of our customers are running either the Developer, Enterprise, or Data Center editions of SonarQube. As such, we have also listed these corresponding editions within this matrix. Please note that we do not currently validate CodeScan on these editions; however, we believe this information proves useful in determining which of these SonarQube editions should be compatible with CodeScan. Further, we are working closely with the SonarQube Alliances organization and intend to validate CodeScan on all SonarQube editions in the future.&#x20;
+We have chosen to validate our CodeScan plugin for SonarQube on their Community Builds, as most of our customers use these editions of SonarQube. However, we also recognize that some of our customers are running either the Developer, Enterprise, or Data Center editions of SonarQube. As such, we have also listed these corresponding editions within this matrix. Please note that we do not currently validate CodeScan on these editions; however, we believe this information proves useful in determining which of these SonarQube editions should be compatible with CodeScan. Further, we are working closely with the SonarQube Alliances organization and intend to validate CodeScan on all SonarQube editions in the future.&#x20;
 
 Additionally, in order to support a wide range of these SonarQube versions, AutoRABIT provides two different versions of CodeScan self-hosted editions (Eagle and Tiger), thereby ensuring broad SonarQube compatibility. &#x20;
 
@@ -37,3 +35,4 @@ Additionally, the following diagram provides more detailed information regarding
 **Future SonarQube Releases:** We aim to have support for the latest versions of SonarQube Community builds approximately 12 weeks after their release date. Each version will be supported for 12 months.&#x20;
 
 **Additional Support:** If you have any questions, comments, or concerns, please contact your Account Team directly. Alternatively, we invite you to log a Support Case.
+

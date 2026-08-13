@@ -7,7 +7,7 @@
 CodeScan Self-hosted 26.1.1 is comprised of the following 6 components:&#x20;
 
 * 0 New Features&#x20;
-* 0 Application Enhancement&#x20;
+* 0 Application Enhancements
 * 0 New Rules&#x20;
 * 3 Rule Enhancements&#x20;
 * 0 Rule Deprecations&#x20;

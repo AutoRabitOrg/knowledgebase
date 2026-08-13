@@ -1,5 +1,7 @@
 # ARM Release Notes
 
+<figure><img src="../../../.gitbook/assets/ARM_Banner.png" alt=""><figcaption></figcaption></figure>
+
 ## ARM **Release Notes 26.3.7**
 
 **Release Date: 16 Aug 2026**

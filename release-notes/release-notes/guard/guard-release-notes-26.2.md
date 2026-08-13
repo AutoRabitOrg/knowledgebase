@@ -1,5 +1,7 @@
 # Guard Release Notes 26.2
 
+<figure><img src="../../../.gitbook/assets/Guard_Banner 2 (1).png" alt=""><figcaption></figcaption></figure>
+
 ## AutoRABIT Guard Release Notes 26.2.3&#x20;
 
 **Release Date: 5 August 2026**

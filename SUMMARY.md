@@ -1713,6 +1713,7 @@
         * [v1.1](product-guides/iz-analyzer/releases/studio-plugin/v1.1.md)
         * [v1.0](product-guides/iz-analyzer/releases/studio-plugin/v1.0.md)
     * [Retirements](product-guides/iz-analyzer/retirements.md)
+  * [IZ Free Services](product-guides/integral-zone/iz-free-services.md)
 
 ## Resources
 

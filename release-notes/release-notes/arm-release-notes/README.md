@@ -6,13 +6,13 @@
 
 #### Vlocity CI Job Deployment Report Fix - New UI <a href="#vlocity-ci-job-deployment-report-fix-new-ui" id="vlocity-ci-job-deployment-report-fix-new-ui"></a>
 
-Fixed an issue in the New UI where **Deployment Reports** for Vlocity CI Jobs displayed a **"Reports not available"**&#x6D;essage even when the deployment completed successfully. The CI Job deployment flow has been updated to capture and store Vlocity deployment results correctly, allowing users to view component-level deployment details directly from CI Job History.
+Fixed an issue in the New UI where **Deployment Reports** for Vlocity CI Jobs displayed a **"Reports not available"**&#x6D;essage even when the deployment completed successfully. The CI Job deployment flow has been updated to capture and store Vlocity deployment results correctly, allowing users to view component-level deployment details directly from the CI Job History.
 
 #### Vlocity Deployment Validation Flow Fix <a href="#vlocity-deployment-validation-flow-fix" id="vlocity-deployment-validation-flow-fix"></a>
 
 Fixed an issue where **Vlocity deployments and Quick Merge workflows** could fail or remain stuck due to unsupported validation and Static Code Analysis (SCA) options being processed for Vlocity components.
 
-The deployment configuration flow has been updated to correctly handle Vlocity deployments by hiding SCA, deployment validation, and their related configuration fields where they are not applicable. This ensures Vlocity deployment and Quick Merge workflows can be configured and processed without unintended validation failures.
+The deployment configuration flow has been updated to correctly handle Vlocity deployments by hiding SCA, deployment validation, and their related configuration fields when they are not applicable. This ensures Vlocity deployment and Quick Merge workflows can be configured and processed without unintended validation failures.
 
 #### Auto Populate Apex Test Classes Progress Status Fix <a href="#auto-populate-apex-test-classes-progress-status-fix" id="auto-populate-apex-test-classes-progress-status-fix"></a>
 
@@ -20,7 +20,7 @@ Fixed an issue where the **Auto Populate** progress status for default Apex test
 
 #### EZ-Commit Version Control Credential Handling Fix <a href="#ez-commit-version-control-credential-handling-fix" id="ez-commit-version-control-credential-handling-fix"></a>
 
-Fixed an issue where **EZ-Commit** used the repository credentials configured under Admin settings instead of the logged-in user's profile-mapped Version Control credentials when **Salesforce Org Author** was set to **All** and **Skip Mappings**was disabled.
+Fixed an issue where **EZ-Commit** used the repository credentials configured under Admin settings instead of the logged-in user's profile-mapped Version Control credentials when **Salesforce Org Author** was set to **All** and **Skip Mappings** was disabled.
 
 EZ-Commit now consistently uses the credentials mapped to the user performing the commit, ensuring repository permissions and branch protection rules are correctly enforced for both **Direct** and **Pre-Validated** commits.
 
@@ -30,7 +30,7 @@ Fixed an issue in the New UI where the **Rollback** button remained enabled even
 
 #### Weekly Reports Data Consistency Fix <a href="#weekly-reports-data-consistency-fix" id="weekly-reports-data-consistency-fix"></a>
 
-Fixed an issue where data generated from the **Weekly Reports** module did not match the corresponding build information displayed in **CI Job History**. The filtering logic in both the UI and backend has been corrected to ensure reports display accurate and consistent CI Job build data across both the **Classic and New UI**.
+Fixed an issue where data generated from the **Weekly Reports** module did not match the corresponding build information displayed in **CI Job History**. The filtering logic in both the UI and back end has been corrected to ensure reports display accurate and consistent CI Job build data across both the **Classic** and **New UI**.
 
 #### CI Job Apex PMD SCA Criteria Status Fix <a href="#ci-job-apex-pmd-sca-criteria-status-fix" id="ci-job-apex-pmd-sca-criteria-status-fix"></a>
 

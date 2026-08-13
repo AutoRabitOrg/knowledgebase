@@ -22,6 +22,8 @@ Pagination behavior in the nCino CI Jobs listing has been corrected for more rel
 
 Field-based sorting in nCino Deployments and CI Jobs now properly loads available fields instead of showing “No fields found.” This restores the ability to configure object-level sorting rules needed for ordered execution and deployment control.
 
+***
+
 ## nCino - Release 26.3.6 <a href="#release-notes-ncinodl-26.3.6" id="release-notes-ncinodl-26.3.6"></a>
 
 **Release Date: 09 Aug 2026**

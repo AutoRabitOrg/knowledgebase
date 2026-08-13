@@ -42,6 +42,16 @@ Fixed an issue in the Classic UI where **ALM Work Item** details were not correc
 
 ***
 
+## DataLoader + DataLoader Pro Release Notes **26.3.7**
+
+**Release Date:** **16 Aug 2026**
+
+Summary Side Panel Alignment Fix
+
+The Summary side pop-up in Dataloader Pro and DL Config now displays content with proper left alignment. This reduces unused blank space, improves readability, and helps prevent long values from appearing clipped at the right edge.
+
+***
+
 ## ARM **Release Notes 26.3.6**
 
 **Release Date: 9 Aug 2026**

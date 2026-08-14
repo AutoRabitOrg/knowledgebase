@@ -33,11 +33,11 @@ The registration journey begins from the AutoRABIT Vault Freemium sign-in page. 
 
 Sign-in page and sign-up entry point
 
-![](<../../../.gitbook/assets/Unknown image (406)>)
+<figure><img src="../../../.gitbook/assets/1 (15).png" alt=""><figcaption></figcaption></figure>
 
 Sign-in page and sign-up entry point
 
-![](<../../../.gitbook/assets/Unknown image (407)>)
+<figure><img src="../../../.gitbook/assets/2 (14).png" alt=""><figcaption></figcaption></figure>
 
 ## Entering Registration Details
 
@@ -47,15 +47,15 @@ Required fields must be completed before registration can continue. The regional
 
 Registration form and regional selection
 
-![](<../../../.gitbook/assets/Unknown image (408)>)
+<figure><img src="../../../.gitbook/assets/3 (13).png" alt=""><figcaption></figcaption></figure>
 
 Registration form and regional selection
 
-![](<../../../.gitbook/assets/Unknown image (409)>)
+<figure><img src="../../../.gitbook/assets/4 (11).png" alt=""><figcaption></figcaption></figure>
 
 Registration form and regional selection
 
-![](<../../../.gitbook/assets/Unknown image (410)>)
+<figure><img src="../../../.gitbook/assets/5 (12).png" alt=""><figcaption></figcaption></figure>
 
 ## Reviewing and Accepting the Agreement
 
@@ -63,7 +63,7 @@ After the registration details are entered, AutoRABIT Vault displays the agreeme
 
 Agreement review and acceptance
 
-![](<../../../.gitbook/assets/Unknown image (411)>)
+<figure><img src="../../../.gitbook/assets/6 (10).png" alt=""><figcaption></figcaption></figure>
 
 Agreement review and acceptance
 
@@ -71,11 +71,11 @@ Agreement review and acceptance
 
 Agreement review and acceptance
 
-![](<../../../.gitbook/assets/Unknown image (413)>)
+<figure><img src="../../../.gitbook/assets/7 (9).png" alt=""><figcaption></figcaption></figure>
 
 Agreement review and acceptance
 
-![](<../../../.gitbook/assets/Unknown image (414)>)
+<figure><img src="../../../.gitbook/assets/8 (10).png" alt=""><figcaption></figcaption></figure>
 
 ## Completing OTP Verification
 
@@ -87,7 +87,7 @@ Verification email containing the login OTP
 
 OTP verification screen
 
-![](<../../../.gitbook/assets/Unknown image (416)>)
+<figure><img src="../../../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Activation Email and Trial Information
 

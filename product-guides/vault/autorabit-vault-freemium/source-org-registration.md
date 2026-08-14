@@ -38,15 +38,7 @@ After the org type is selected, the Salesforce Login URL is reviewed. For Sandbo
 
 <figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../../.gitbook/assets/6 (11).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
-
-<figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
 
 After the environment details are submitted, AutoRABIT Vault moves to Salesforce Admin Setup. This step provides a checklist for completing the required configuration in Salesforce before authorization. The setup creates an External Client App, enables OAuth, selects the Authorization Code Flow, disables the PKCE security option when required by the displayed instructions, adds the Callback URL, assigns OAuth scopes, and saves the credentials needed by AutoRABIT Vault.
 
@@ -58,21 +50,21 @@ The Required OAuth Scopes section identifies the permissions that must be select
 **Note:** The Salesforce setup must be completed before authorization starts. The Callback URL, OAuth scopes, Client ID, and Client Secret must match the External Client App configuration in Salesforce.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/CPvAw7FKYwBJxXYRb6il" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/TzHtIZNfPor9kw9VrqR3" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/LEr2O5hZOLJLKJEuahh9" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/qd1IxuknlXXwMHVQ5TPc" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/11 (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/12 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/12 (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/13 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/13 (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/14 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/14 (5).png" alt=""><figcaption></figcaption></figure>
 
 Once the Salesforce setup is complete, AutoRABIT Vault displays the Enter Credentials step. The Client ID and Client Secret generated from the Salesforce External Client App are entered in AutoRABIT Vault. These values are used only for the secure connection process and must be copied from the same External Client App configured for this source org.
 
@@ -82,9 +74,9 @@ AutoRABIT Vault also displays guidance for locating the required values in Sales
 **Note**: A dedicated Salesforce integration account is recommended for API integrations. This provides better audit trails, permission control, and stability when personal accounts change
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/15 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/16 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/16 (6).png" alt=""><figcaption></figcaption></figure>
 
 After the credentials are added, AutoRABIT Vault displays the Authorize Vault to Access Salesforce step. The connection details are reviewed before authorization starts. AutoRABIT Vault shows the org title, org type, and login URL so the connection target can be confirmed before continuing.
 
@@ -102,23 +94,25 @@ After Salesforce authorization is approved, AutoRABIT Vault completes the Salesf
 
 When the API connection test succeeds, AutoRABIT Vault displays a success notification. The Complete action finalizes the registration. AutoRABIT Vault then confirms that the Salesforce org is registered successfully and returns to the Dashboard.
 
-![](<../../../.gitbook/assets/Unknown image (32)>)
+<figure><img src="../../../.gitbook/assets/21 (1).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/Unknown image (33)>)
+<figure><img src="../../../.gitbook/assets/22 (1).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/Unknown image (34)>)
+<figure><img src="../../../.gitbook/assets/23 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/24 (2).png" alt=""><figcaption></figcaption></figure>
 
 After registration is complete, the Dashboard displays the registered Source Org with a successful connection status. AutoRABIT Vault updates the onboarding state and enables the next recommended action, such as running the first backup. The source org details can be opened from the Dashboard to review the registered environment information.
 
 The source org details view displays the org name, registered username, org ID, API version, instance URL, environment type, platform, org edition, authentication type, and registration time. These details provide a quick confirmation of the registered Salesforce connection.
 
-<figure><img src="../../../.gitbook/assets/25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/25 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/26.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/26 (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/27.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/27 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Re-authenticate the Source Org
 

@@ -15,10 +15,9 @@ Ensure you have the following:
 ## How do I restore data / metadata? <a href="#how-to-do-it" id="how-to-do-it"></a>
 
 1. Log in to your AutoRABIT Vault account.
-2. Click **`Restore`** from the AutoRABIT Vault dashboard page and click on **`Restore Now`**.
+2.  Click **`Restore`** from the AutoRABIT Vault dashboard page and click on **`Restore Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../../.gitbook/assets/Labels Update - 0.png" alt=""><figcaption></figcaption></figure>
 3. On the next screen, select your source [**`Salesforce Org`**](../../configuring-vault/registering-salesforce-org/).
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

@@ -4,9 +4,9 @@
 
 ## AutoRABIT Guard 26.2.4 Release Notes
 
-Release Date: 19 August 2026
+**Release Date: 19 August 2026**
 
-### New features
+### New Features
 
 #### Digital Experience Assessment
 
@@ -25,8 +25,6 @@ Drift Policies can now monitor changes to individual users.
 Administrators can create rules for changes to a user’s role, profile or license. Rules can detect any change or specific transitions, and multiple conditions can be combined using match-all or match-any logic.
 
 When a matching change is detected, the alert identifies the affected user and includes the previous and new values.
-
-
 
 ### Enhancements
 
@@ -48,9 +46,7 @@ Guard now provides clearer feedback when a user is created but the invitation em
 
 Administrators can see the relevant invitation error and resend the invitation from the user page.
 
-
-
-### Bug fixes
+### Bug Fixes
 
 #### API Security: Stable dashboard rendering
 

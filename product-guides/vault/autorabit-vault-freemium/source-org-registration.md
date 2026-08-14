@@ -20,7 +20,7 @@ After the source org is registered successfully, AutoRABIT Vault displays the co
 
 The source org registration starts from the AutoRABIT Vault Dashboard. When registration begins, AutoRABIT Vault opens the Source Org Registration workflow and displays the Environment Details step. A guided callout introduces the setup and explains that the first Salesforce org must be connected before AutoRABIT Vault activities such as backups, restores, replication, and related operations can proceed.
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 The Environment Details step captures the basic Salesforce environment information. The Environment Name identifies the org across AutoRABIT Vault activities. The Salesforce username identifies the account used for registration. Org Type defines whether the connection targets a Production org or a Sandbox org.
 
@@ -30,11 +30,11 @@ After the org type is selected, the Salesforce Login URL is reviewed. For Sandbo
 **Note:** The login URL must point to the same Salesforce environment where the External Client App is configured. A mismatch can prevent successful authorization.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
 

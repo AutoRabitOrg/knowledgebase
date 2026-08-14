@@ -21,7 +21,7 @@ The workflow begins from Replicate > Job Config. A new Replicate Config is creat
 
 The Replicate Source determines the type of source data used for the configuration. In this workflow, Backup is selected as the source, so AutoRABIT Vault displays backup snapshots available for the selected org combination.
 
-![](<../../../.gitbook/assets/Unknown image (206)>)
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
 ## Choose Backup
 
@@ -29,7 +29,7 @@ The Choose Backup stage displays available backup snapshots for the selected sou
 
 The snapshot table provides the label, configuration name, date and time, expiry date, metadata members, record count, type, and status. A valid snapshot must be selected before the workflow proceeds.
 
-<figure><img src="../../../.gitbook/assets/2 (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
 ## Select Components
 
@@ -37,11 +37,11 @@ The Select Components stage defines the data scope for replication. The Data tab
 
 Each object row provides options to review the schema, include child objects, review common child objects, configure mappings, select records, and define selection criteria. Selecting an object includes it in the replication scope.
 
-![](<../../../.gitbook/assets/Unknown image (208)>)
+<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
 
 After an object is selected, the row displays the selected object state and enables the available object-level actions. The schema action opens the relationship view for the selected object.
 
-![](<../../../.gitbook/assets/Unknown image (209)>)
+<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
 
 The schema view presents parent and child relationships for the selected object. Search Objects helps locate related objects, and Search Direction controls whether parent relationships, child relationships, or both are displayed. The selected relationships are saved back to the component selection stage.
 
@@ -49,65 +49,65 @@ The schema view presents parent and child relationships for the selected object.
 
 Child object and relationship actions provide additional control over how related data is included. The object row remains selected, and the component summary reflects the selected record scope as the workflow progresses.
 
-![](<../../../.gitbook/assets/Unknown image (211)>)
+<figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
 
 The object row also provides access to record and mapping options. These controls define how fields are mapped and which records are included when the replication job runs.
 
-![](<../../../.gitbook/assets/Unknown image (212)>)
+<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 The field mapping window displays source fields and destination fields for the selected object. Auto Map maps matching fields automatically, while Clear All removes the current mappings. Individual destination field selections can also be adjusted before applying the mappings.
 
-![](<../../../.gitbook/assets/Unknown image (213)>)
+<figure><img src="../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
 
 The updated object row confirms that mapping information is available for the selected object. The workflow continues by reviewing or selecting the records that need to be replicated.
 
-![](<../../../.gitbook/assets/Unknown image (214)>)
+<figure><img src="../../../.gitbook/assets/9 (8).png" alt=""><figcaption></figcaption></figure>
 
 The record selection window displays the records available for the selected object. Columns, operators, search text, file-based input, pagination, and row checkboxes support focused record selection. Apply stores the selected record set for the replication configuration.
 
-![](<../../../.gitbook/assets/Unknown image (215)>)
+<figure><img src="../../../.gitbook/assets/10 (7).png" alt=""><figcaption></figcaption></figure>
 
 The Masking Rules stage allows job-level masking rules to be added to the Replicate Config. A note states that when job-level and organization-level masking rules share the same field, the job-level masking rule takes priority.
 
 If no masking rules are configured, the table displays No Masking Rules. New Masking Rule opens the rule creation window.
 
-![](<../../../.gitbook/assets/Unknown image (216)>)
+<figure><img src="../../../.gitbook/assets/11 (6).png" alt=""><figcaption></figcaption></figure>
 
 A masking rule is created by entering the rule name, selecting the object, selecting a field type, choosing a masking style, and selecting the required fields. The rule is associated with the selected Salesforce org shown in the masking rule window.
 
-![](<../../../.gitbook/assets/Unknown image (217)>)
+<figure><img src="../../../.gitbook/assets/12 (5).png" alt=""><figcaption></figcaption></figure>
 
 Field Type filters the available fields by data type. After a field type is selected, the matching fields become available for selection in the field list.
 
-![](<../../../.gitbook/assets/Unknown image (218)>)
+<figure><img src="../../../.gitbook/assets/13 (9).png" alt=""><figcaption></figcaption></figure>
 
 Masking Style defines how the selected fields are masked during replication. Available masking styles are displayed based on the selected field type.
 
-![](<../../../.gitbook/assets/Unknown image (219)>)
+<figure><img src="../../../.gitbook/assets/14 (7).png" alt=""><figcaption></figcaption></figure>
 
 After the masking style is selected, the applicable fields are selected from the list. Save creates the rule for the current Replicate Config.
 
-![](<../../../.gitbook/assets/Unknown image (220)>)
+<figure><img src="../../../.gitbook/assets/15 (8).png" alt=""><figcaption></figcaption></figure>
 
 The Add to Org masking rules option makes the rule available in the destination org masking rules list. This is optional and is used when the same rule must be available beyond the current job-level configuration.
 
-![](<../../../.gitbook/assets/Unknown image (221)>)
+<figure><img src="../../../.gitbook/assets/16 (8).png" alt=""><figcaption></figcaption></figure>
 
 After the rule is saved, AutoRABIT Vault confirms that the masking rule has been created successfully.
 
-![](<../../../.gitbook/assets/Unknown image (222)>)
+<figure><img src="../../../.gitbook/assets/17 (5).png" alt=""><figcaption></figcaption></figure>
 
 The newly created masking rule appears in the Masking Rules table. The table shows the rule name, rule type, object, field type, masking style, created date, modified date, and actions. The view action opens the rule details.
 
-![](<../../../.gitbook/assets/Unknown image (223)>)
+<figure><img src="../../../.gitbook/assets/18 (5).png" alt=""><figcaption></figcaption></figure>
 
 The rule details view displays the saved rule values and selected fields in a read-only view. This supports verification before the configuration moves to the final details stage.
 
-![](<../../../.gitbook/assets/Unknown image (224)>)
+<figure><img src="../../../.gitbook/assets/19 (6).png" alt=""><figcaption></figcaption></figure>
 
 After the masking rule is reviewed, Next moves the workflow to Config Details.
 
-<figure><img src="../../../.gitbook/assets/image (2576).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20 (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Configure Replicate Details
 
@@ -115,19 +115,19 @@ The Config Details stage captures the final configuration details and runtime op
 
 The runtime options control Salesforce-side behavior during replication. These include disabling workflows, validation rules, triggers, and flows, enabling serial mode for Bulk API, ignoring failed records, and overriding data with blank values when required.
 
-![](<../../../.gitbook/assets/Unknown image (225)>)
+<figure><img src="../../../.gitbook/assets/21 (3).png" alt=""><figcaption></figcaption></figure>
 
 The Data section summarizes the selected objects and record scope. The Masking Info section summarizes the masking rules applied to each selected object, including rule name, rule type, field type, and masking style.
 
-![](<../../../.gitbook/assets/Unknown image (226)>)
+<figure><img src="../../../.gitbook/assets/22 (3).png" alt=""><figcaption></figcaption></figure>
 
 Before saving or running the job, AutoRABIT Vault displays important replication considerations. These include potential failures caused by active triggers, process builders, workflows, flows, and validation rules; Salesforce metadata size limits; inactive owners; and missing dependencies.
 
-![](<../../../.gitbook/assets/Unknown image (227)>)
+<figure><img src="../../../.gitbook/assets/23 (2).png" alt=""><figcaption></figcaption></figure>
 
 The Replication Config Info window provides a final review of configuration details and masking information. Save & Run stores the configuration and immediately starts the replication job.
 
-![](<../../../.gitbook/assets/Unknown image (228)>)
+<figure><img src="../../../.gitbook/assets/24 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Review Replicate History
 
@@ -135,7 +135,7 @@ When Save & Run is used, AutoRABIT Vault creates the Replicate job and displays 
 
 The action icons provide access to job details, logs, reports, delete, and rerun options depending on the available job state and permissions.
 
-![](<../../../.gitbook/assets/Unknown image (229)>)
+<figure><img src="../../../.gitbook/assets/25 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Review and Manage Saved Replicate Configs
 
@@ -143,29 +143,29 @@ After a configuration is saved or run, it appears in Replicate > Job Config. The
 
 The available actions allow the configuration to be run, edited, or deleted. The information icon opens configuration details for review.
 
-![](<../../../.gitbook/assets/Unknown image (230)>)
+<figure><img src="../../../.gitbook/assets/26 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Save the Configuration Without Running
 
 The configuration can also be saved without immediate execution. Save stores the Replicate Config and keeps it available in Job Config for later review or execution.
 
-![](<../../../.gitbook/assets/Unknown image (231)>)
+<figure><img src="../../../.gitbook/assets/27 (3).png" alt=""><figcaption></figcaption></figure>
 
 The same replication considerations are displayed before saving the configuration. The message highlights conditions that may affect replication success and must be acknowledged before proceeding.
 
-![](<../../../.gitbook/assets/Unknown image (232)>)
+<figure><img src="../../../.gitbook/assets/28 (2).png" alt=""><figcaption></figcaption></figure>
 
 The Replication Config Info window provides the final review when the configuration is saved without running. Save stores the configuration and returns to the Job Config list.
 
-![](<../../../.gitbook/assets/Unknown image (233)>)
+<figure><img src="../../../.gitbook/assets/29 (1).png" alt=""><figcaption></figcaption></figure>
 
 AutoRABIT Vault confirms that the Replicate Config is created successfully after the configuration is saved.
 
-![](<../../../.gitbook/assets/Unknown image (234)>)
+<figure><img src="../../../.gitbook/assets/30 (1).png" alt=""><figcaption></figcaption></figure>
 
 The saved configuration remains available in Job Config and can be run later using the run action. The list also provides edit, delete, warning, and information controls as applicable.
 
-![](<../../../.gitbook/assets/Unknown image (235)>)
+<figure><img src="../../../.gitbook/assets/31 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Result
 

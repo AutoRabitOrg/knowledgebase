@@ -52,12 +52,12 @@
 
 
 
-    ![](<../../../.gitbook/assets/7 (1).png>)
+    ![](<../../../.gitbook/assets/7 (1) (2).png>)
 17. Click on the “Masking Rules” icon to initiate the rules creation.
 
 
 
-    ![](<../../../.gitbook/assets/8 (1).png>)
+    ![](<../../../.gitbook/assets/8 (1) (2).png>)
 18. A “Selected Object” window will be opened, for creating a new rule.
 19. Click on the “NEW MASKING RULE” button to initiate the rule creation.
 

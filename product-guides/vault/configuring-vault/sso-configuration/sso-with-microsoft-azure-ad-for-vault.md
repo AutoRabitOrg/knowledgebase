@@ -65,11 +65,13 @@ Benefits:
 
 6. Sign out and test login via SSO:
    * On the login page, click **Login with SSO**
-   * Enter your **Customer ID** and click **Sign In**
+   *   Enter your **Customer ID** and click **Sign In**
 
-<figure><img src="../../../../.gitbook/assets/image (194).png" alt="SSO Login screen" width="563"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.07.29 PM (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (195).png" alt="Customer ID prompt" width="563"><figcaption></figcaption></figure>
+
+
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.16.06 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 

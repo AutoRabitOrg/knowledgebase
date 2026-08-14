@@ -2,6 +2,45 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.18
+
+**Release Date: 16 August 2026**
+
+### Summary
+
+CodeScan 26.0.18 is comprised of the following components:
+
+* 0 New Features
+* 0 Application Enhancements
+* 0 New Rules
+* 0 Rule Enhancements
+* 0 Rule Deprecations
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### Fixes
+
+#### 1. GitHub App Authentication and Token Refresh Improvements
+
+Resolved multiple issues where GitHub App integration analyses would fail with authentication errors after the initial access token expired, affecting both Pull Request analysis and manual analysis runs.
+
+a. Unauthorized Status After 24 Hours
+
+Fixed an issue where GitHub Pull Request analysis reported "Unauthorized" status with "Bad credentials" (HTTP 401) errors when analyses were triggered more than 24 hours after the initial GitHub App connection. Re-creating the GitHub App temporarily resolved the issue, but the failure would recur.
+
+b. Refresh Token Expiry After \~8 Hours
+
+Fixed an issue where both Manual Analysis and Pull Request Analysis failed with "The refresh token passed is incorrect or expired" after approximately 8 hours following a successful analysis. The access token refresh mechanism has been corrected to automatically obtain new tokens when existing tokens expire.
+
+**Outcome**
+
+* Restores reliable, long-running GitHub App integration without requiring re-authorization.
+* Ensures consistent authentication for both Pull Request and manual analyses regardless of elapsed time.
+* Eliminates the need to re-create GitHub App connections as a workaround.
+
+***
+
 ## CodeScan Release Notes 26.0.17
 
 **Release Date: 2 August 2026**&#x20;

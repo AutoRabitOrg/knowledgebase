@@ -41,7 +41,7 @@
 
 
 
-    ![](<../../../.gitbook/assets/5 (1).png>)
+    ![](<../../../.gitbook/assets/5 (1) (2).png>)
 14. Observe the rule and click cancel or anywhere outside the “Masking Rule” window to close the window.
 15. Every selected object should have at least one rule associated to it. Observe the following screen flows.
 

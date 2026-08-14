@@ -40,7 +40,7 @@ The following articles describe using **Single DataLoader** to delete data from 
 15. Ensure all required fields are mapped, then click **`Next`**.
 16. On the **`Process Summary`** screen:
 
-<figure><img src="../../../../../.gitbook/assets/2 (1) (1).png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2 (1) (1) (2).png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
 
 * Name the process/job.
 * Select or create a **Category**.

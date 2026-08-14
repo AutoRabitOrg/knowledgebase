@@ -38,6 +38,14 @@ After the org type is selected, the Salesforce Login URL is reviewed. For Sandbo
 
 <figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
 
+
+
+<figure><img src="../../../.gitbook/assets/6 (11).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
 <figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
 
 After the environment details are submitted, AutoRABIT Vault moves to Salesforce Admin Setup. This step provides a checklist for completing the required configuration in Salesforce before authorization. The setup creates an External Client App, enables OAuth, selects the Authorization Code Flow, disables the PKCE security option when required by the displayed instructions, adds the Callback URL, assigns OAuth scopes, and saves the credentials needed by AutoRABIT Vault.

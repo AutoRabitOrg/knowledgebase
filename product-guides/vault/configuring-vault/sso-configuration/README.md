@@ -26,7 +26,7 @@ To enable SSO for AutoRABIT Vault, you need to perform the below steps:
       * **Metadata File:** Upload the metadata file obtained from your identity provider.
 5. Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.07.29 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 11.01.42 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### How to log in when SSO is enabled <a href="#how-to-log-in-when-sso-is-enabled" id="how-to-log-in-when-sso-is-enabled"></a>
 

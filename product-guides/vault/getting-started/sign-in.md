@@ -4,11 +4,10 @@ This section outlines the standard procedure for signing into AutoRABIT Vault™
 
 ## Sign-In Procedure <a href="#signin-procedure" id="signin-procedure"></a>
 
-1. Open a web browser and navigate to your AutoRABIT Vault™ sign-in page.\
-   **Example:** [https://na101.autorabit.com](https://na101.autorabit.com)
+1.  Open a web browser and navigate to your AutoRABIT Vault™ sign-in page.\
+    **Example:** [https://na101.autorabit.com](https://na101.autorabit.com)
 
-<figure><img src="../../../.gitbook/assets/image (126).png" alt="Vault Sign In Page"><figcaption></figcaption></figure>
-
+    <figure><img src="../../../.gitbook/assets/1 Vault Login (1).png" alt=""><figcaption></figcaption></figure>
 2. Enter your **username** and **password** associated with your AutoRABIT Vault™ account.
 3. Click **Login**. Upon successful authentication, you will be redirected to the AutoRABIT Vault™ dashboard where you can access its features.
 

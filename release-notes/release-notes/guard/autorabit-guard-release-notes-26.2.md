@@ -1,6 +1,72 @@
-# Guard Release Notes 26.2
+# AutoRABIT Guard Release Notes 26.2
 
 <figure><img src="../../../.gitbook/assets/Guard_Banner 2 (1).png" alt=""><figcaption></figcaption></figure>
+
+## AutoRABIT Guard 26.2.4 Release Notes
+
+Release Date: 19 August 2026
+
+### New features
+
+#### Digital Experience Assessment
+
+Guard now provides a dedicated Digital Experience Assessment area for Salesforce Experience Cloud sites built using Aura or LWR.
+
+Users can initiate scans, filter scan history and review detected security findings, exposed objects and fields, exposed files, external domains and trusted sites.
+
+When Automated Data Classification is enabled, scan results can also identify exposed fields containing sensitive data and display the associated regulatory classifications.
+
+A new Security Risks Library shows the checks Guard performs, including each risk’s framework, category and severity. Administrators can accept risks for selected sites, manage exclusions and review an activity log showing who changed each exclusion.
+
+#### Drift Policies: User-specific access changes
+
+Drift Policies can now monitor changes to individual users.
+
+Administrators can create rules for changes to a user’s role, profile or license. Rules can detect any change or specific transitions, and multiple conditions can be combined using match-all or match-any logic.
+
+When a matching change is detected, the alert identifies the affected user and includes the previous and new values.
+
+
+
+### Enhancements
+
+#### Permissions Explorer: CSV export
+
+Permissions Explorer results can now be exported to CSV from the User Permissions and Object Access views.
+
+Exports include all matching users and permission paths and respect the selected permissions, filters and Include Frozen Users setting.
+
+#### User Activity Monitoring: Clearer change history
+
+User history now focuses on meaningful changes instead of displaying repeated daily snapshots.
+
+A new history entry is added only when a tracked attribute changes. This will make it easier to identify changes in profile, role, license and status.
+
+#### User Management: Invitation email handling
+
+Guard now provides clearer feedback when a user is created but the invitation email cannot be sent.
+
+Administrators can see the relevant invitation error and resend the invitation from the user page.
+
+
+
+### Bug fixes
+
+#### API Security: Stable dashboard rendering
+
+The Connected Apps chart now renders smoothly at its final size and position while the API Security dashboard loads.
+
+#### Large Salesforce organization support
+
+User Activity Monitoring, Permission History and User Security Overview now handle large Salesforce organizations more efficiently.
+
+Paged retrieval, server-side search and streaming reduce long-running queries and unnecessary memory usage.
+
+#### Permission History: Organization selection
+
+The organization selector is now locked while Permission History results are being retrieved, keeping the selected organization and results consistent.
+
+***
 
 ## AutoRABIT Guard Release Notes 26.2.3&#x20;
 

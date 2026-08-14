@@ -174,7 +174,7 @@ You can now retry only the records that failed during processing, without reproc
 
 AutoRABIT Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.
 
-<figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 3.png" alt=""><figcaption></figcaption></figure>
 

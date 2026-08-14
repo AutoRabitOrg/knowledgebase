@@ -9,7 +9,7 @@ The **License and Subscription Tracking** feature in AutoRABIT Vault serves as a
 3. Enter the **License Key** provided by the AutoRABIT Vault team and click **Apply**.
 4.  The system will fetch and display license details based on the subscriptions associated with your organization.
 
-    <figure><img src="../../../.gitbook/assets/image (2070).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2.png" alt=""><figcaption></figcaption></figure>
 5. &#x20;**CustomerID:** Displays the unique **AutoRABIT Vault User ID** assigned to the customer within the AutoRABIT Vault application.
 6. **Last Sync:** Indicates the **date and time** when the data was last synchronized between Salesforce and AutoRABIT Vault.
 7.  **Subscription Information:** Provides a **comprehensive overview** of the customer’s subscription duration and related details:&#x20;
@@ -17,7 +17,7 @@ The **License and Subscription Tracking** feature in AutoRABIT Vault serves as a
     1. **Start Date:** The date when the customer’s AutoRABIT Vault subscription was activated.
     2. **End Date:** The date when the customer’s AutoRABIT Vault subscription is scheduled to expire.
 
-    <figure><img src="../../../.gitbook/assets/image (2071).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 3 (1).png" alt=""><figcaption></figcaption></figure>
 8. **Current Usage:** Shows a consolidated view of the current usage compared to the subscribed storage and license limits.
    1. **Salesforce Licenses:** Displays the total number of Salesforce licenses allocated to the customer.
    2. **AutoRABIT Vault Storage:** Presents the current AutoRABIT Vault storage consumption in comparison to the subscribed limit.

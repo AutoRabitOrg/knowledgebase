@@ -26,12 +26,12 @@ To enable SSO for AutoRABIT Vault, you need to perform the below steps:
       * **Metadata File:** Upload the metadata file obtained from your identity provider.
 5. Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.07.29 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### How to log in when SSO is enabled <a href="#how-to-log-in-when-sso-is-enabled" id="how-to-log-in-when-sso-is-enabled"></a>
 
 When SSO is enabled, you can sign in by going to the AutoRABIT Vault log-in page, click on **Login with SSO**, and providing your custom domain.
 
-<figure><img src="../../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.05.23 PM.png" alt=""><figcaption></figcaption></figure>
 
 Here is a sample doc from OKTA on how to setup network zones that restrict access to apps registered in OKTA: [https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm](https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm).

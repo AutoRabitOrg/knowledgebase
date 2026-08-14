@@ -1429,6 +1429,7 @@
       * [Data Classification](product-guides/guard/data-classification.md)
     * [Risk](product-guides/guard/features/risk/README.md)
       * [API Security](product-guides/guard/api-security.md)
+      * [Digital Experience Assessment](product-guides/guard/features/risk/digital-experience-assessment.md)
       * [Drift Policies](product-guides/guard/features/risk/drift-policies.md)
       * [Permissions Explorer](product-guides/guard/permissions-explorer.md)
       * [Public File Exposure](product-guides/guard/features/risk/public-file-exposure.md)

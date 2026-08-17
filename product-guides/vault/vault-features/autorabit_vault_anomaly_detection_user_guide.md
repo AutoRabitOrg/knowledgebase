@@ -1,13 +1,5 @@
 # AutoRABIT\_Vault\_Anomaly\_Detection\_User\_Guide
 
-**AUTORABIT VAULT**
-
-Anomaly Detection User Guide
-
-Configuration, monitoring, comparison, rollback, and lifecycle controls
-
-_Application-aligned workflow | August 2026_
-
 ## About This Guide
 
 Anomaly Detection scans configured Salesforce data and metadata for activity that exceeds defined deviation thresholds. This guide follows the supplied application flow from initial setup through anomaly review, rollback, comparison, pausing, stopping, and resuming monitoring.

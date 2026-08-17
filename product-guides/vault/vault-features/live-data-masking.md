@@ -10,65 +10,43 @@
 4. Select the required ORG at the “Salesforce Orgs” drop-down.
 5.  Observe the following screen for the first-time creation of the “Masking Rule Config” or first-time creation of “Masking Rule Config” on any ORG.
 
-
-
-    ![](../../../.gitbook/assets/0.png)
+    <figure><img src="../../../.gitbook/assets/100 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 6.  Once the object is selected, continue with the “Masking Config” creation.
 
-
-
-    ![](<../../../.gitbook/assets/1 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/1 - Live Masking (1).png" alt=""><figcaption></figcaption></figure>
 7. Click on the “NEW CONFIG” button to initiate the config creation.
 8.  Now, the flow will navigate to the “Object Info” section of the config creation.
 
-
-
-    ![](<../../../.gitbook/assets/2 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/1.1 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 9.  Select the required objects to continue with the rules creation.
 
-
-
-    ![](<../../../.gitbook/assets/3 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/2 - Live Masking (1).png" alt=""><figcaption></figcaption></figure>
 10. If there any rules available created under that object, all the available rules will come selected as depicted in the above screen.
 11. If any object doesn’t hold the rules, the following “No masking rule” will be displayed under the “Selected Masking Rules” column.
     1. **Note: -** All the available selected rules will be displayed in a comma-separated fashion under the “Selected Masking Rules.”
 12. Click on any object that holds rules to view the available rules.
 
-
-
-    ![](<../../../.gitbook/assets/4 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/3 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 13. Click on the View icon to view the masking rules.
 
-
-
-    ![](<../../../.gitbook/assets/5 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/4 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 14. Observe the rule and click cancel or anywhere outside the “Masking Rule” window to close the window.
 15. Every selected object should have at least one rule associated to it. Observe the following screen flows.
 
-
-
-    ![](<../../../.gitbook/assets/6 (4).png>)
+    <figure><img src="../../../.gitbook/assets/8.1 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 16. Clicking on ”Next” would show the following message prompting to create at least one rule for the selected object.
 
-
-
-    ![](<../../../.gitbook/assets/7 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/8.2 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 17. Click on the “Masking Rules” icon to initiate the rules creation.
 
-
-
-    ![](<../../../.gitbook/assets/8 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/9 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 18. A “Selected Object” window will be opened, for creating a new rule.
 19. Click on the “NEW MASKING RULE” button to initiate the rule creation.
 
-
-
-    ![](<../../../.gitbook/assets/9 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/10 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 20. A “Masking Rule” window will be opened to create the rule.
 
-
-
-    ![](<../../../.gitbook/assets/10 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/11 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 21. **Observe the following on the window**:
     1. **Org Name**: Provides the org name.
     2. **Rule Name**: Enter the rule name here.
@@ -80,43 +58,31 @@
     1. Selecting this will make sure, the rule being created will be a global rule.
 23. Observe the following screen for reference:
 
-
-
-    ![](<../../../.gitbook/assets/11 (1) (2).png>)
+    <figure><img src="../../../.gitbook/assets/12 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 24. Select the “Add to Org ‘ORG NAME” Masking Rule List”, if the rule should be a global rule.
 25. On entering all the required details, click on the “SAVE” button to save the created masking rule.
 26. On clicking save a dialogue with info would be displayed confirming the save on the masking rule.
 
-
-
-    ![](<../../../.gitbook/assets/12 (1).png>)
+    <figure><img src="../../../.gitbook/assets/13 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 27. Upon saving the masking rule, the workflow automatically navigates to the **Selected Object** screen, where the newly created rule will be displayed and available for further configuration or review.
 
-
-
-    ![](<../../../.gitbook/assets/13 (1).png>)
+    <figure><img src="../../../.gitbook/assets/14 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 28. Observe the upward (Publish) icon beside the “Type Of The Rule” to publish the local to become a global rule.
 29. Click on the icon to publish the local rule to become a global rule.
 
-
-
-    ![](<../../../.gitbook/assets/14 (1).png>)
+    <figure><img src="../../../.gitbook/assets/15 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 30. Click on to continue with the rule creation. The flow will navigate to the object info section of the masking config creation.
 
-
-
-    ![](<../../../.gitbook/assets/15 (1).png>)
+    <figure><img src="../../../.gitbook/assets/15.1 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 31. Observe the account object unchecked during the masking config creation. This will throw a message to the user asking for confirmation about unselecting the object from the flow creation.
 
-
-
-    ![](<../../../.gitbook/assets/16 (1).png>)
+    <figure><img src="../../../.gitbook/assets/15.2 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 32. On selecting the required objects, click on the “NEXT” to continue with the “masking config” creation
+
+    <figure><img src="../../../.gitbook/assets/16 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 33. Clicking next will navigate to the “Config Details” section of the flow.
 
-
-
-    ![](<../../../.gitbook/assets/17 (1).png>)
+    <figure><img src="../../../.gitbook/assets/17 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 34. Observe the screen for the details:
 
     1. **Org Name:** Represents the org name
@@ -136,57 +102,57 @@
     10. **Enable Serial Mode for Bulk API**\
         Enable this toggle to process Bulk API operations sequentially (one after another) to reduce the risk of record-locking or related execution errors.
 
-
-
-    ![](<../../../.gitbook/assets/18 (1).png>)
+    <figure><img src="../../../.gitbook/assets/17 - Live Masking (1).png" alt=""><figcaption></figcaption></figure>
 35. The **“Masking Info”** section of the **“Config Details”** page will provide information about the list of rules created per object.
 
-
-
-    ![](<../../../.gitbook/assets/19 (1).png>)
+    <figure><img src="../../../.gitbook/assets/18 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 36. Click **“SAVE”** or **“SAVE & RUN”** to save the config.
 37. **SAVE**: Saving the config will show the following screen, followed by a confirmation message on saving the config.
 
+    <figure><img src="../../../.gitbook/assets/19 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 
-
-    ![](<../../../.gitbook/assets/20 (1).png>)
+    <figure><img src="../../../.gitbook/assets/20 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 38. Clicking on “OK” will continue with saving the flow and navigate to the “JOB CONFIG” page.
+
+    <figure><img src="../../../.gitbook/assets/20.1 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 39. The saved job has to be run on the job config page to perform the actual data masking on the data in Salesforce.
 40. Click on the “Play” icon to run the config.
 
-    <figure><img src="../../../.gitbook/assets/image (1867).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/20.2 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 41. On initiating the job run a “Selected Data To Masking” window will be displayed to verify the details of the run.
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/20.3 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/20.4 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 42. Observe the icon on the screen below while the job run is in progress.
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/20.5 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 43. Clicking the “SAVE & RUN” will save the config and run it to perform the data masking.
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/21 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/22 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 44. On completing the saving, the flow navigates to the “JOB CONFIG” screen.
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/28 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 45. Observe the Rollback option, which provides the ability to revert any deployed masking operations, if required.
 46. Click on the rollback button available to initiate the rollback operation.
     1. To support the rollback operation, the deployed data will be retained for a period of “7 days” and on elapsing the retention period, the data will be deleted permanently.
 47. On clicking the rollback, the following “Rollback” window will be displayed.
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/29 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 48. Select the required objects to rollback the maskings. On selecting at least one object, the “Rollback” button will become enabled.
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/30 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 49. On clicking the rollback option, the following window will be displayed, confirming the rollback
 
-    <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/31 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 50. For every rollback operation performed, a new entry will be created at the “JOB HISTORY” page. This job can be identified with the “Job Type – Rollback”.
 
-    <figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/32 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 51. Click on the “info” icon under the “Job Info” to open the “Live Masking Config Info”.
+
+    <figure><img src="../../../.gitbook/assets/33 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -197,7 +163,7 @@
 Navigate to **Live Data Masking → Job Config**.\
 Locate the required object from the list.
 
-<figure><img src="../../../.gitbook/assets/1 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (21).png" alt=""><figcaption></figcaption></figure>
 
 Select the checkbox for the object.\
 Click the **Masking Rules** icon under the **Masking Rules** column.
@@ -206,7 +172,7 @@ Click the **Masking Rules** icon under the **Masking Rules** column.
 
 The **Selected Object** window is displayed.
 
-<figure><img src="../../../.gitbook/assets/2 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (20).png" alt=""><figcaption></figcaption></figure>
 
 Review the existing masking rules for the selected object.\
 Click **NEW MASKING RULE** to create a new rule.
@@ -215,7 +181,7 @@ Click **NEW MASKING RULE** to create a new rule.
 
 The **Masking Rule** screen is displayed.
 
-<figure><img src="../../../.gitbook/assets/3 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (18).png" alt=""><figcaption></figcaption></figure>
 
 Enter the **Rule Name**.\
 Ensure the rule name follows the allowed format (alphanumeric, `_`, `-`, and spaces).
@@ -226,7 +192,7 @@ Verify that the **Select Object** field is pre-populated (e.g., **Account**).
 
 Click the **Field Type** dropdown.
 
-<figure><img src="../../../.gitbook/assets/4 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (16).png" alt=""><figcaption></figcaption></figure>
 
 Select the required field type (e.g., **date**, **double**, **picklist**, **textarea**, **encryptedstring**, **url**).
 
@@ -234,7 +200,7 @@ Select the required field type (e.g., **date**, **double**, **picklist**, **text
 
 Click the **Masking Style** dropdown.
 
-<figure><img src="../../../.gitbook/assets/5 (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (17).png" alt=""><figcaption></figcaption></figure>
 
 Select the required masking style (e.g., **substitution**, **dateRange**).
 
@@ -242,7 +208,7 @@ Select the required masking style (e.g., **substitution**, **dateRange**).
 
 If **dateRange** is selected:
 
-<figure><img src="../../../.gitbook/assets/6 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (17).png" alt=""><figcaption></figcaption></figure>
 
 Enter the required date range in the **Enter a date range** field.\
 Use the calendar icon to select dates.
@@ -251,7 +217,7 @@ Use the calendar icon to select dates.
 
 Choose the start and end dates from the calendar.
 
-<figure><img src="../../../.gitbook/assets/7 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (13).png" alt=""><figcaption></figcaption></figure>
 
 Verify that the selected range is populated in the **Enter a date range** field.\
 Confirm that the corresponding **Masking Value** is auto-generated.
@@ -260,7 +226,7 @@ Confirm that the corresponding **Masking Value** is auto-generated.
 
 Select the required fields from the list using the checkboxes.
 
-<figure><img src="../../../.gitbook/assets/8 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8 (14).png" alt=""><figcaption></figcaption></figure>
 
 (Optional) Enable **Add to Org - 'Org Name' Masking Rules List** to save the rule at the org level.
 

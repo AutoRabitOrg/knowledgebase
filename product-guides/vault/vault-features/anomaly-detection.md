@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Anomaly Detection
 
 ## AutoRABIT Vault Anomaly Detection User Guide
@@ -18,23 +22,25 @@ AutoRABIT Vault Anomaly Detection monitors configured Salesforce data objects an
 
 Anomaly Detection is configured from the Anomaly Detection workspace. The configuration defines the source org, monitored data objects, monitored metadata types, threshold percentages, notification recipients, and excluded change owners. Once the configuration is saved, AutoRABIT Vault begins evaluating the selected scope based on the scheduled detection cycle.
 
-![](<../../../.gitbook/assets/Unknown image (268)>)
+<figure><img src="/broken/files/nwZGLr17Lc4yfpslNLKC" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                _Anomaly Detection landing page before configuration_
 
-![](<../../../.gitbook/assets/Unknown image (269)>)
+<figure><img src="/broken/files/t8b7VrqnfP4FM4KIOnml" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                _Config Creation window with Data threshold settings_
 
-![](<../../../.gitbook/assets/Unknown image (270)>)
+<figure><img src="../../../.gitbook/assets/3 (20).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                _Data object selection for anomaly monitoring_
 
-![](<../../../.gitbook/assets/Unknown image (271)>)
+<figure><img src="../../../.gitbook/assets/4 (17).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                _Config Creation window with Metadata threshold settings_
 
-![](<../../../.gitbook/assets/Unknown image (272)>)
+<figure><img src="../../../.gitbook/assets/5 (19).png" alt=""><figcaption></figcaption></figure>
+
+
 
 &#x20;                                                _Metadata type selection for anomaly monitoring_
 

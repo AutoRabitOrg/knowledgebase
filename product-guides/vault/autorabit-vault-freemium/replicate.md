@@ -21,7 +21,7 @@ The workflow begins from Replicate > Job Config. A new Replicate Config is creat
 
 The Replicate Source determines the type of source data used for the configuration. In this workflow, Backup is selected as the source, so AutoRABIT Vault displays backup snapshots available for the selected org combination.
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Choose Backup
 
@@ -37,11 +37,11 @@ The Select Components stage defines the data scope for replication. The Data tab
 
 Each object row provides options to review the schema, include child objects, review common child objects, configure mappings, select records, and define selection criteria. Selecting an object includes it in the replication scope.
 
-<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
 
 After an object is selected, the row displays the selected object state and enables the available object-level actions. The schema action opens the relationship view for the selected object.
 
-<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption></figcaption></figure>
 
 The schema view presents parent and child relationships for the selected object. Search Objects helps locate related objects, and Search Direction controls whether parent relationships, child relationships, or both are displayed. The selected relationships are saved back to the component selection stage.
 
@@ -49,15 +49,15 @@ The schema view presents parent and child relationships for the selected object.
 
 Child object and relationship actions provide additional control over how related data is included. The object row remains selected, and the component summary reflects the selected record scope as the workflow progresses.
 
-<figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (1).png" alt=""><figcaption></figcaption></figure>
 
 The object row also provides access to record and mapping options. These controls define how fields are mapped and which records are included when the replication job runs.
 
-<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (1).png" alt=""><figcaption></figcaption></figure>
 
 The field mapping window displays source fields and destination fields for the selected object. Auto Map maps matching fields automatically, while Clear All removes the current mappings. Individual destination field selections can also be adjusted before applying the mappings.
 
-<figure><img src="../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8 (1).png" alt=""><figcaption></figcaption></figure>
 
 The updated object row confirms that mapping information is available for the selected object. The workflow continues by reviewing or selecting the records that need to be replicated.
 

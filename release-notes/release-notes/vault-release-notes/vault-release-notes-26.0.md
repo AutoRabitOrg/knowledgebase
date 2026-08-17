@@ -389,7 +389,7 @@ Fixed an issue where data type mismatches between source data and schema caused 
 **Range-Based Date Masking for Sensitive Date Fields**\
 Introduced range‑based date masking for sensitive date fields, enabling more flexible and realistic anonymization by shifting dates within configurable ranges.
 
-<figure><img src="../../../.gitbook/assets/1 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/2 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

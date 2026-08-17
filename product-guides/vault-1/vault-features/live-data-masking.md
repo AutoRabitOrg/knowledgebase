@@ -63,12 +63,12 @@
 
 
 
-    ![](<../../../.gitbook/assets/9 (1).png>)
+    ![](<../../../.gitbook/assets/9 (1) (2).png>)
 20. A “Masking Rule” window will be opened to create the rule.
 
 
 
-    ![](<../../../.gitbook/assets/10 (1).png>)
+    ![](<../../../.gitbook/assets/10 (1) (2).png>)
 21. **Observe the following on the window**:
     1. **Org Name**: Provides the org name.
     2. **Rule Name**: Enter the rule name here.
@@ -82,41 +82,41 @@
 
 
 
-    ![](<../../../.gitbook/assets/11 (1).png>)
+    ![](<../../../.gitbook/assets/11 (1) (2).png>)
 24. Select the “Add to Org ‘ORG NAME” Masking Rule List”, if the rule should be a global rule.
 25. On entering all the required details, click on the “SAVE” button to save the created masking rule.
 26. On clicking save a dialogue with info would be displayed confirming the save on the masking rule.
 
 
 
-    ![](../../../.gitbook/assets/12.png)
+    ![](<../../../.gitbook/assets/12 (1).png>)
 27. Upon saving the masking rule, the workflow automatically navigates to the **Selected Object** screen, where the newly created rule will be displayed and available for further configuration or review.
 
 
 
-    ![](../../../.gitbook/assets/13.png)
+    ![](<../../../.gitbook/assets/13 (1).png>)
 28. Observe the upward (Publish) icon beside the “Type Of The Rule” to publish the local to become a global rule.
 29. Click on the icon to publish the local rule to become a global rule.
 
 
 
-    ![](../../../.gitbook/assets/14.png)
+    ![](<../../../.gitbook/assets/14 (1).png>)
 30. Click on to continue with the rule creation. The flow will navigate to the object info section of the masking config creation.
 
 
 
-    ![](../../../.gitbook/assets/15.png)
+    ![](<../../../.gitbook/assets/15 (1).png>)
 31. Observe the account object unchecked during the masking config creation. This will throw a message to the user asking for confirmation about unselecting the object from the flow creation.
 
 
 
-    ![](../../../.gitbook/assets/16.png)
+    ![](<../../../.gitbook/assets/16 (1).png>)
 32. On selecting the required objects, click on the “NEXT” to continue with the “masking config” creation
 33. Clicking next will navigate to the “Config Details” section of the flow.
 
 
 
-    ![](../../../.gitbook/assets/17.png)
+    ![](<../../../.gitbook/assets/17 (1).png>)
 34. Observe the screen for the details:
 
     1. **Org Name:** Represents the org name
@@ -138,18 +138,18 @@
 
 
 
-    ![](../../../.gitbook/assets/18.png)
+    ![](<../../../.gitbook/assets/18 (1).png>)
 35. The **“Masking Info”** section of the **“Config Details”** page will provide information about the list of rules created per object.
 
 
 
-    ![](../../../.gitbook/assets/19.png)
+    ![](<../../../.gitbook/assets/19 (1).png>)
 36. Click **“SAVE”** or **“SAVE & RUN”** to save the config.
 37. **SAVE**: Saving the config will show the following screen, followed by a confirmation message on saving the config.
 
 
 
-    ![](../../../.gitbook/assets/20.png)
+    ![](<../../../.gitbook/assets/20 (1).png>)
 38. Clicking on “OK” will continue with saving the flow and navigate to the “JOB CONFIG” page.
 39. The saved job has to be run on the job config page to perform the actual data masking on the data in Salesforce.
 40. Click on the “Play” icon to run the config.

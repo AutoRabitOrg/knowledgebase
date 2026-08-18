@@ -2,7 +2,7 @@
 
 ## Archival Process
 
-The archival process ensures that historical data is efficiently managed by archiving older records while retaining essential recent data. Multiple archival jobs are available, and their configurations can be adjusted under Global Settings with key named **`Archival Policies`**. Users can modify these settings based on their requirements.
+The archival process manages historical data by archiving older records while retaining essential recent data. Multiple archival jobs are available, and their configurations can be adjusted under Global Settings with key named **`Archival Policies`**. Users can modify these settings based on their requirements.
 
 ## Archival Policies
 
@@ -42,7 +42,7 @@ The archival process ensures that historical data is efficiently managed by arch
 
 ### Configuring Archival Policies
 
-Users can modify the archival settings by navigating to **`Global Settings`** > **`Archival Policies`**. These settings allow customization of retention periods and exemption rules based on organizational needs.
+Users can modify the archival settings by navigating to **`Global Settings`** > **`Archival Policies`**. These settings allow customization of retention periods and exemption rules based on organizational needs. Archival settings are customer-configurable for paid subscriptions only. Data processed under Free Services is subject to the maximum retention period stated in [Integral Zone Free Services — Scope, Limits & Data Retention](../../integral-zone/iz-free-services.md), which cannot be extended, reconfigured, or exempted from archival.
 
 ### Additional Considerations
 

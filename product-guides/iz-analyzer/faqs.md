@@ -63,7 +63,9 @@ IZ Analyzer supports all versions of Mule from 3.x to 4.x.
 
 ### Does IZ Analyzer have a trial version?
 
-IZ Analyzer has a free open source version available for every interested Muley to try. Called the Community Edition, it is completely free. For Enterprise inquiries, you can request a trial and also an exclusive free demo by following the link [Book Online Demo](https://integralzone.com/book-online-demo).
+IZ Analyzer has a free open-source version available for every interested Muley to try. Called the Community Edition, it is made available at no charge under its applicable open-source license. Community Edition is provided as-is, without warranty, service-level commitment, or support obligation.&#x20;
+
+For Enterprise inquiries, you can request a trial and also an exclusive free demo by following the link: [Book Online Demo](https://integralzone.com/book-online-demo).
 
 ### Can IZ Analyzer functionality be scripted and/or invoked from command-line or via web APIs?
 

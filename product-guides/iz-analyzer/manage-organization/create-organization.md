@@ -9,7 +9,7 @@
 3. Confirm by clicking **`Create Organization`**
 
 {% hint style="info" %}
-**By submitting, your organization will be created with a FREE subscription.** With FREE subscription all the projects you analyze will be public. Once the organization is created, choose **`Administration`** -> **`Organization Settings`** to upgrade for a PAID plan to analyze private projects.
+**By submitting, your organization will be created with a Free Services subscription.** With a Free Services subscription, all the projects you analyze will be public. Once the organization is created, choose **`Administration`** -> **`Organization Settings`** to upgrade to a PAID plan to analyze private projects. The period, usage limits, features, and data-retention rules that apply are set out in [Integral Zone Free Services - Scope, Limits, and Data Retention](../../integral-zone/iz-free-services.md).&#x20;
 {% endhint %}
 
 ### See Also

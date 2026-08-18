@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**IZ Eye** continuously monitors all environments, verifying that the deployed applications are identical. This gives organizations assurance that the code in promoted environments is consistent and the DevSecOps process is working as expected without any exceptions.
+**IZ Eye** continuously monitors configured environments and reports whether the deployed applications are identical. This helps organizations see whether the code in promoted environments is consistent and the DevSecOps process is working as expected.
 
 ### Continuous Runtime Monitoring
 

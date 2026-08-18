@@ -2,7 +2,7 @@
 
 ## IZ Suite for Anypoint Platform
 
-**`IZ Eye`** continuously monitors deployed applications to ensure they remain consistent, secure, compliant, and performant across all environments, giving teams confidence that what runs in production matches what was intended.
+**`IZ Eye`** continuously monitors deployed applications and reports on their consistency, security posture, policy compliance, and performance across configured environments, helping teams see whether what runs in production matches what was intended.
 
 ### Optimize Your Post-Deployment Workflow
 

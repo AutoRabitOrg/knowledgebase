@@ -2,11 +2,11 @@
 
 App Registration in Microsoft Azure is required to securely connect to REST APIs because it establishes a trusted identity for the IZ Suite application within the Microsoft Entra ID (formerly Azure Active Directory) ecosystem. When IZ Suite integrates with Azure services, it must authenticate itself before accessing resources such as management APIs, integration services, or other protected endpoints.
 
-App Registration creates a dedicated application identity, generates credentials (Client ID, Client Secret), and enables administrators to assign precise API permissions using OAuth 2.0 flows. This ensures secure, role-based, and auditable access to Azure REST APIs without relying on user credentials, making the integration enterprise-grade, compliant, and scalable.
+App Registration creates a dedicated application identity, generates credentials (Client ID, Client Secret), and enables administrators to assign precise API permissions using OAuth 2.0 flows. This supports secure, role-based, and auditable access to Azure REST APIs without relying on user credentials.
 
 ### New App Registration in Azure
 
-Follow the below steps to register a new app in Microsoft Entra ID -
+Follow the steps below to register a new app in Microsoft Entra ID -
 
 1. Search for **`Microsoft Entra ID`** -> **`App Registrations`** click on **`New registration`**
 2. Enter the basic details -

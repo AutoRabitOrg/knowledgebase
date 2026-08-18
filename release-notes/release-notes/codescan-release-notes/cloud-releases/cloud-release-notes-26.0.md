@@ -19,7 +19,7 @@ CodeScan 26.0.18 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Fixes
+### Fix
 
 #### 1. GitHub App Authentication and Token Refresh Improvements
 

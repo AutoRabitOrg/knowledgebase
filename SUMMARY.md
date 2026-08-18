@@ -1068,6 +1068,7 @@
         * [Vlocity](product-guides/arm-1/troubleshoot/known-issues-limitations/arm-known-limitations/vlocity.md)
       * [Salesforce Issues](product-guides/arm-1/troubleshoot/known-issues-limitations/salesforce-known-limitations.md)
         * [SFDX Limitations](product-guides/arm-1/troubleshoot/known-issues-limitations/salesforce-known-limitations/sfdx-limitations.md)
+* [ARM-X](product-guides/arm-x.md)
 * [CodeScan](product-guides/codescan/README.md)
   * [CodeScan Overview](product-guides/codescan/codescan-overview.md)
   * [System Requirements and Installation Self-Hosted](product-guides/codescan/system-requirements-and-installation/README.md)

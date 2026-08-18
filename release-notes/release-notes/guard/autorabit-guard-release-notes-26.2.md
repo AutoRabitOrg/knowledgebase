@@ -2,6 +2,8 @@
 
 <figure><img src="../../../.gitbook/assets/Guard_Banner 2 (1).png" alt=""><figcaption></figcaption></figure>
 
+{% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive Guard updates!" %}
+
 ## AutoRABIT Guard 26.2.4 Release Notes
 
 **Release Date: 19 August 2026**

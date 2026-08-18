@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # IZ Free Services
 
 ## IZ Free Services - Scope, Limits & Data Retention

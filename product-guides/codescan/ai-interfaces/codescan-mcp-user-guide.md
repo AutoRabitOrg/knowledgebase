@@ -224,7 +224,7 @@ Example questions you can ask:
 * "What rules are in the quality profile applied to project Y?"
 * "Show the coverage and code-smell trend for this project over time."
 
-### Troubleshooting runbooks
+## Troubleshooting runbooks
 
 #### **No CodeScan tools appear / assistant says it can't reach CodeScan**
 

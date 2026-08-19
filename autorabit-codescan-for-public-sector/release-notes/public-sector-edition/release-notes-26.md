@@ -1,5 +1,40 @@
 # Release Notes 26
 
+## AutoRABIT CodeScan PubSec 26.0.13 Hotfix 2 Release Notes
+
+**Release Date: 16 August 2026**
+
+### Summary
+
+AutoRABIT CodeScan PubSec 26.0.13 Hotfix 2 is comprised of the following components:
+
+* 0 New Features
+* 0 Application Enhancements
+* 0 New Rules
+* 0 Rule Enhancements
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### Fixes
+
+#### 1. Removed Third-Party Tracking Scripts
+
+Removed third-party tracking scripts from the PubSec build to comply with security requirements.
+
+Residual third-party tracking scripts were identified, and the following changes were made:
+
+1. Script removal: All third-party tracking script blocks have been completely removed from the PubSec build pipeline.
+2. Runtime guardrails: Added defensive null checks to prevent runtime errors when third-party tracking objects are not present in the environment.
+
+**Outcome**
+
+* Eliminates unauthorized third-party code from the PubSec environment.
+* Prevents related console runtime errors.
+* No unauthorized third-party calls present in network traffic.
+
+***
+
 ## AutoRABIT CodeScan PubSec 26.0.13 Release Notes
 
 **Release Date: 29 July 2026**

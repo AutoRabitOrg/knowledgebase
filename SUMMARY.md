@@ -1184,6 +1184,8 @@
   * [CodeScan API Documentation](product-guides/codescan/codescan-api-documentation/README.md)
     * [Codescan API overview](product-guides/codescan/codescan-api-documentation/codescan-api-overview.md)
     * [Audit Logs API](product-guides/codescan/codescan-api-documentation/audit-logs-api.md)
+  * [AI Interfaces](product-guides/codescan/ai-interfaces/README.md)
+    * [CodeScan MCP: User Guide](product-guides/codescan/ai-interfaces/codescan-mcp-user-guide.md)
   * [CodeScan-FAQs](product-guides/codescan/codescan-faqs/README.md)
     * [Common Issues and Solutions](product-guides/codescan/codescan-faqs/common-issues-and-solutions.md)
     * [General](product-guides/codescan/codescan-faqs/general/README.md)

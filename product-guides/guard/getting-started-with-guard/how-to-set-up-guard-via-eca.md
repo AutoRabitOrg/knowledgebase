@@ -50,7 +50,6 @@ Enable the following:
 **Security Settings**
 
 * Keep the first 2 options checked
-* **Uncheck**: _Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows_
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -50,6 +50,7 @@ Enable the following:
 **Security Settings**
 
 * Keep the first 2 options checked
+* **Check**: _Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows (will be enforced by Salesforce from Winter '27)_
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

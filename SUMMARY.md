@@ -1302,7 +1302,7 @@
       * [Live Compare](product-guides/vault/vault-features/compare/live-compare.md)
       * [Copy of Live Compare](product-guides/vault/vault-features/compare/enhanced-compare-capabilities-view-change-view-and-export-results.md)
     * [AutoRABIT Vault Connect](product-guides/vault/vault-features/vault-connect.md)
-    * [AutoRABIT\_Vault\_Anomaly\_Detection\_User\_Guide](product-guides/vault/vault-features/autorabit_vault_anomaly_detection_user_guide.md)
+    * [Anomaly Detection](product-guides/vault/vault-features/anomaly-detection-1.md)
   * [AutoRABIT Vault Best Practices](product-guides/vault/vault-best-practices.md)
   * [AutoRABIT Vault-FAQs](product-guides/vault/vault-faqs/README.md)
     * [AutoRABIT Vault-FAQs](product-guides/vault/vault-faqs/common-restore-errors-and-solutions/README.md)

@@ -4,6 +4,22 @@
 
 ## nCino - Release 26.3.7 <a href="#release-notes-ncinodl-26.3.7" id="release-notes-ncinodl-26.3.7"></a>
 
+**Release Date: 23 Aug 2026**
+
+**Approval Reminder and Auto-Rejection Reliability**: Resolved an issue where CI jobs awaiting approval could remain stuck indefinitely when approval detail records were missing. This fix ensures that approval reminders and auto-rejection triggers function correctly even when initial records are absent.
+
+**Selective Feature Deployment Cancel Action**: Fixed the Cancel button behavior on the Selective Feature Deployment page to ensure users can exit the flow without unresponsiveness. The interface now correctly handles the cancellation request, allowing for a smoother navigation experience during feature selection.
+
+**Failed Record Visibility for Baseline Revision CI Jobs**: Fixed an issue where the Failed Count link showed no records after a partially successful Deploy from Version Control CI job using Baseline Revision. Users can now correctly access and view the specific records that failed during the baseline revision deployment process.
+
+**Data Retrieval Log Availability**: Resolved an issue where the Data Retrieval step showed “Log does not exist” even after a CI job completed successfully. This ensures that comprehensive execution logs are available for review immediately following the completion of nCino data retrieval tasks.
+
+**In-Progress CI Job Log Messaging**: Improved log availability behavior while CI jobs are still running to provide more reliable access to execution logs. The "Log does not exist" message is no longer incorrectly displayed while build and deployment processes are actively in progress.
+
+**Throughput Exception Reduction**: Implemented query and data-access improvements to reduce read throughput exceptions across DL and nCino components. These optimizations enhance system stability by identifying and mitigating high-frequency data access patterns that previously triggered exceptions.
+
+## nCino - Release 26.3.7 <a href="#release-notes-ncinodl-26.3.7" id="release-notes-ncinodl-26.3.7"></a>
+
 **Release Date: 16 Aug 2026**
 
 **Feature Version Cleanup**

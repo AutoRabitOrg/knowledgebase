@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # New CodeScan Rules for LWC Server-Side Rendering (SSR) Support
 
 ### Overview

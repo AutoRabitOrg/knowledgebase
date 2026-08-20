@@ -2,6 +2,16 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner.png" alt=""><figcaption></figcaption></figure>
 
+## DataLoader + DataLoader Pro Release Notes **26.3.8**
+
+**Release Date:** **23 Aug 2026**
+
+#### **Data Loader Pro Org Re-Registration Consistency**
+
+Corrected inconsistent behavior between manual and scheduled executions after a Salesforce source org was re-registered with different name casing. The system now correctly identifies the source and destination orgs regardless of case sensitivity in the registration name.
+
+***
+
 ## ARM **Release Notes 26.3.7**
 
 **Release Date: 16 Aug 2026**

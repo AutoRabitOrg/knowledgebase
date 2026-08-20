@@ -27,6 +27,7 @@
   * [Salesforce Summer ’27 Update: Retirement of SOAP API login() Authentication](fundamentals/announcements/salesforce-summer-27-update-retirement-of-soap-api-login-authentication.md)
   * [Bitbucket App Password Deprecation – Action Required Before June 9, 2026](fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026.md)
   * [CodeScan Rules Deactivation](fundamentals/announcements/codescan-rules-deactivation.md)
+  * [New CodeScan Rules for LWC Server-Side Rendering (SSR) Support](fundamentals/announcements/new-codescan-rules-for-lwc-server-side-rendering-ssr-support.md)
 
 ## Release Notes
 

@@ -16,6 +16,7 @@ AutoRABIT is not just a toolset, it’s a system. Our enterprise-grade DevSecOps
 * **AutoRABIT** [**CodeScan**](product-guides/codescan/)**:** Industry leading static analysis to enforce quality and secure code before it ships.
 * **AutoRABIT** [**Vault**](product-guides/vault/)**:** Resilient, compliant backup and recovery tailored for complex Salesforce data models.
 * **AutoRABIT** [**Guard**](product-guides/guard.md)**:** Real-time permission intelligence and compliance automation. Prevents access risk before it becomes exposure.
+* [**Integral Zone**](product-guides/integral-zone/)**:** MuleSoft-focused API quality, security, governance, and delivery automation.
 
 Together, these products form the industry’s most complete DevSecOps solution for Salesforce, trusted by the most security-conscious and performance-driven teams in the world.
 

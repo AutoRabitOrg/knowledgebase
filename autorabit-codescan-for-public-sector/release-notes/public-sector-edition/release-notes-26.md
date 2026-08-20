@@ -6,7 +6,7 @@
 
 ### Summary
 
-AutoRABIT CodeScan PubSec 26.0.13 Hotfix 2 is comprised of the following components:
+AutoRABIT CodeScan PubSec 26.0.13 Hotfix 2 is comprised of the following component:
 
 * 0 New Features
 * 0 Application Enhancements
@@ -130,13 +130,13 @@ After successfully creating the connection with the GitHub Enterprise account, u
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Please note these important TECHNICAL details:
+**Please note these important TECHNICAL details:**
 
-1\) GitHub Apps Authentication Flow Change:
+**1) GitHub Apps Authentication Flow Change:**
 
 After implementing the GitHub Apps feature, the flow of authorization has changed for the user. For the first-time user, they will be navigated to the GitHub apps installation page, where they need to Authorize and Install the app. Then, the user will be navigated to the CodeScan GitHub Integration pop-up to run the analysis.
 
-&#x20;2\) GitHub Apps - Token Refresh:
+&#x20;**2) GitHub Apps - Token Refresh:**
 
 How it works:
 
@@ -193,7 +193,7 @@ Validated this new feature via the following scenarios and have verified that al
 
 Comments in the activity section for Exception are able to deleted by the user (after these issues are moved into exception).
 
-Also, user already assigned to issues will remain assigned, even when moved to exception (if issue assigned before moving or while moving the issues to exception).
+Also, users already assigned to issues will remain assigned, even when moved to exception (if issue was assigned before moving or while moving the issues to exception).
 
 
 
@@ -231,9 +231,9 @@ Validated that users are able to receive the email notifications for pre/post an
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-Please note these important TECHNICAL details:
+**Please note these important TECHNICAL details:**
 
-We have included the ability for users to Enable / Disable Subscription for Analysis Failure Notifications so that users can manage whether they need to receive failure alerts based on chosen preferences.
+We have included the ability for users to Enable / Disable Subscription for Analysis Failure Notifications, so users can manage whether they need to receive failure alerts based on chosen preferences.
 
 The system will leverage the **existing subscription-specific UI,** i.e., _**Profile> My Account>Notifications> Overall Notifications,**_ to allow users to opt in or opt out of analysis failure notifications.
 
@@ -332,7 +332,7 @@ Fields are clearly labeled and consistently formatted within the generated CSV f
 
 The updated exports provide users with improved visibility into severity, ownership, exception status, and exception lifecycle details, making it easier to perform external analysis, compliance reviews, and governance activities.&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves auditability and compliance reporting. &#x20;
 * Provides greater visibility into issue and hotspot ownership. &#x20;
@@ -363,6 +363,8 @@ Previously, severity labels were displayed using the default values throughout C
 * Changes are applied immediately without requiring a refresh.&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+
+
 
 3. **Exception Expiry Notifications**
 
@@ -407,7 +409,7 @@ Notifications are not sent for:&#x20;
 * Deleted projects &#x20;
 * Unsubscribed users &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Helps teams proactively review exceptions before they expire. &#x20;
 * Reduces the risk of unnoticed expired exceptions. &#x20;
@@ -444,7 +446,7 @@ The report includes:&#x20;
 
 Rules are included regardless of whether violations were detected.&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves auditability and compliance reporting. &#x20;
 * Provides visibility into scan coverage. &#x20;
@@ -472,7 +474,7 @@ Previously, severity levels were available for standard Security Hotspot rules, 
 * Custom Security Hotspots now follow the same severity flow as standard rules.
 * Severity filters on the Rules page correctly return matching custom Security Hotspots.
 
-**Outcome**
+**Outcomes**
 
 * Provides consistent severity configuration across standard and custom Security Hotspot rules.
 * Improves risk prioritization for custom security findings.
@@ -509,8 +511,6 @@ Validated across UI, API, functional behavior, admin configuration interaction, 
 **Outcome**
 
 Improves flexibility and aligns Exception handling with existing hotspot expiry workflows.
-
-
 
 **b.     Auto-Assign Expiry Dates for Issue Exceptions**
 
@@ -639,6 +639,8 @@ profilePasswordPolicy-meta.xml
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+
+
 10. **Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs**&#x20;
 
 Bitbucket integration was updated to replace deprecated repository APIs with workspace-scoped APIs.&#x20;
@@ -649,13 +651,13 @@ Now CodeScan fetches repositories by:&#x20;
 2. Fetching repositories per workspace&#x20;
 3. Aggregating results&#x20;
 
-**Outcomes:**&#x20;
+**Outcomes**&#x20;
 
 * Continued compatibility with Bitbucket API changes&#x20;
 * Failures due to deprecated endpoints prevented&#x20;
 * Improved reliability of repository fetching &#x20;
 
-**Validation:**&#x20;
+**Validation**&#x20;
 
 Verified the Bitbucket project analysis. Users are able to see the repos as expected, and  the Project analysis and PR analysis are working as expected.
 
@@ -665,14 +667,14 @@ Verified the Bitbucket project analysis. Users are able to see the repos as expe
 
 Earlier, CodeScan parser wouldn’t process Apex methods named **void**.&#x20;
 
-**This enhancement:** &#x20;
+This enhancement: &#x20;
 
 * Ensures accurate parsing of valid Apex code &#x20;
 * Improves analysis reliability &#x20;
 
 The parser enhancement to support Apex methods named void has been thoroughly validated by QA across multiple scenarios on the Preview instance.&#x20;
 
-**Positive Validation Scenarios:**&#x20;
+**Positive Validation Scenarios**&#x20;
 
 The following valid Apex patterns were tested and are now parsed correctly:&#x20;
 
@@ -824,6 +826,8 @@ Verified the Cursor IDE Usage on CodeScan in the page 'IDE USAGE' of the Adminst
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
+
+
 15. **Updated Filter Message for Security Hotspot CSV Export**
 
 **Description**
@@ -841,6 +845,8 @@ Verified the updated Security Hotspot export filter message.
 All the above scenarios are working as expected.
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+
 
 16. **Automatically generate Callback URL when adding ECA in Salesforce Org**
 
@@ -862,12 +868,12 @@ This manual process increases the risk of:
 
 * Automatically generating the Callback URL.
 * Dynamically constructing it based on the selected/connected instance/environment (e.g., test, preview).
-* Ensure correct and consistent formatting.
-* Clearly display the generated Callback URL on the “Add Salesforce Org” screen.
-* Make it visible at the point of ECA configuration.
-* Provide a **“Copy”** button next to the generated URL.
-* Allow one-click copying of the exact URL.
-* Prevent manual typing errors.
+* Ensuring correct and consistent formatting.
+* Clearly displaying the generated Callback URL on the “Add Salesforce Org” screen.
+* Making it visible at the point of ECA configuration.
+* Providing a **“Copy”** button next to the generated URL.
+* Allowing one-click copying of the exact URL.
+* Preventing manual typing errors.
 
 **Steps Taken**
 
@@ -914,7 +920,7 @@ The rule does not raise a violation when a valid description is present, includi
 
 _Connected App does not have a description defined. Add a description for better governance and traceability._&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves governance and documentation of Salesforce Connected Apps. &#x20;
 * Helps identify orphaned, unmanaged, or poorly documented integrations. &#x20;
@@ -951,7 +957,7 @@ When one or more of these scopes are present, the rule reports the detected valu
 
 _Connected App contains high-risk OAuth scopes: {scopes}. Review and restrict access._&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Helps security teams identify over-privileged Salesforce integrations. &#x20;
 * Improves visibility into Connected Apps that may expose organizational data through excessive OAuth permissions. &#x20;
@@ -1018,7 +1024,7 @@ Enhanced null-safety handling for multiple Apex rules, including:&#x20;
 
 Additional validation and defensive checks were introduced to ensure rule execution can safely handle unresolved AST and semantic-analysis paths without exposing internal exceptions.&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves overall rule engine stability. &#x20;
 * Prevents internal implementation details from appearing in analysis logs. &#x20;
@@ -1069,7 +1075,7 @@ Organizations can define additional sensitive field names through rule parameter
 
 and other organization-specific fields that may contain regulated personal information.&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves understanding of the rules' purpose and scope. &#x20;
 * Provides clearer guidance for identifying and protecting sensitive data. &#x20;
@@ -1100,7 +1106,7 @@ When enabled, the rule identifies supported platform methods that may consume hi
 * ConnectApi operations &#x20;
 * Visualforce content APIs &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves detection of governor limit risks. &#x20;
 * Identifies hidden SOQL consumption. &#x20;
@@ -1138,7 +1144,7 @@ Validated in rule details view and CVSS filters. No impact was observed on rule 
 
 **Outcome**
 
-Improves severity visibility and helps users prioritize remediation more effectively.Enhanced selected security rules by adding standardized CVSS scoring.
+Improves severity visibility and helps users prioritize remediation more effectively. Enhanced selected security rules by adding standardized CVSS scoring.
 
 **Rules Updated:**
 
@@ -1208,7 +1214,7 @@ Previously, the SAML login flow treated organization domains as case-sensitive. 
 * Leading and trailing spaces in domain input are handled safely. &#x20;
 * Invalid domains continue to be rejected as expected. &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves SAML login reliability for organizations using mixed-case or uppercase domain entries.&#x20;
 * Aligns organization domain handling with standard case-insensitive domain behavior. &#x20;
@@ -1229,7 +1235,7 @@ Previously, analyses configured with the _Use previous run_ option could fail wh
 * Analysis now successfully reuses previously executed unit test results when available. &#x20;
 * Organizations without prior test execution history are handled gracefully. &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves the reliability of Salesforce integrations using previously executed unit tests. &#x20;
 * Prevents failures caused by test result retrieval errors. &#x20;
@@ -1256,7 +1262,7 @@ c. Commit Status Reporting&#x20;
 * Fixed an issue where CodeScan could not publish analysis status updates to GitHub Pull Requests due to insufficient GitHub App permissions.&#x20;
 * Required permission (Commit statuses): Read & Write &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Improves GitHub project onboarding. &#x20;
 * Ensures PR analysis processes only changed files. &#x20;
@@ -1295,7 +1301,7 @@ Previously:&#x20;
 * Re-created users are now added back to the default Members group after activation. &#x20;
 * Invite validation and post-login handling were improved to ensure organization and group membership are applied correctly. &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Ensures invited users are added to the correct organization after signup. &#x20;
 * Restores default group assignment for users who are re-created after deletion or deactivation. &#x20;
@@ -1313,7 +1319,7 @@ Fixed an issue where users with valid scan permissions could receive unauthorize
 * Improved group-level scan permission validation. &#x20;
 * Corrected effective permission evaluation during analysis startup. &#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Prevents false authorization failures. &#x20;
 * Improves the reliability of project analysis execution. &#x20;
@@ -1367,7 +1373,7 @@ Validated across multiple integrations and analysis entry points, including:
 * Azure DevOps Pipelines
 * IDE Plugin workflows
 
-**Outcome**
+**Outcomes**
 
 * Prevents invalid branch artifacts from being created in the dashboard.
 * Improves troubleshooting with clearer failure visibility.
@@ -1408,7 +1414,7 @@ Confirmed that:
 * Invalid comparison states are blocked correctly.
 * User-facing messages are displayed consistently without metric computation errors.
 
-**Outcome**
+**Outcomes**
 
 * Prevents inconsistent comparison analysis states.
 * Improves reliability of branch comparison workflows.
@@ -1443,7 +1449,7 @@ Validated using Salesforce organizations containing special characters including
 
 Verified successful project creation without attribute converter failures or data inconsistencies.
 
-**Outcome**
+**Outcomes**
 
 * Prevents project creation failures caused by special characters in organization names.
 * Eliminates incomplete project records and reduces manual database cleanup.
@@ -1482,7 +1488,7 @@ Confirmed that:
 * Existing Salesforce connections remain intact.
 * No attribute converter errors occur in API or UI flows.
 
-**Outcome**
+**Outcomes**
 
 * Prevents accidental removal of existing Salesforce connections.
 * Improves reliability of Salesforce connection management.
@@ -1524,7 +1530,7 @@ Confirmed that:
 * No exceptions are triggered during archive cleanup processing.
 * Instance Admin deletion workflows behave correctly.
 
-**Outcome**
+**Outcomes**
 
 * Improves reliability of organization deletion workflows.
 * Prevents inconsistent organization states between UI and database records.
@@ -1558,7 +1564,7 @@ Confirmed that:
 * Analysis workflows complete successfully without interruption.
 * Existing Field Level Security rule detection behavior continues to function correctly.
 
-**Outcome**
+**Outcomes**
 
 * Improves stability and reliability of Apex security analysis.
 * Prevents analysis failures caused by recursive execution paths.
@@ -1617,7 +1623,7 @@ Fixed an issue where users could encounter a “No scan access for project”/ �
 
 The issue affected environments using Salesforce connected app integrations where expired or invalid access/refresh tokens prevented scan authorization and project access validation.
 
-**Outcome**
+**Outcomes**
 
 * Improved handling of expired Salesforce authentication tokens
 * Restored scan access reliability for affected projects
@@ -1646,7 +1652,7 @@ Fixed an issue where searching for a custom tag on the Rules page returned no re
 
 Corrected tag filtering behavior, so matching rules appear immediately when searching by tag.
 
-**Outcome**
+**Outcomes**
 
 * Accurate tag counts.
 * Correct rule results.
@@ -1662,7 +1668,7 @@ While creating a project, if the entered project key already exists, the UI disp
 
 However, the actual API response in the Network tab contains a meaningful validation message stating: _“Could not create Project with key: ‘gitleaks’. A similar key already exists: ‘gitleaks’”_.
 
-As such, we have enhanced the UI to now display the backend validation message instead of the generic error so users can clearly understand the reason for the failure.
+As such, we have enhanced the UI to now display the backend validation message instead of the generic error, so users can clearly understand the reason for the failure.
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -1680,7 +1686,7 @@ Users can now open and update settings for S3-based projects, including memory a
 
 Fixed an issue where users with insufficient Salesforce permissions could authenticate Salesforce successfully but encountered failures later during analysis.&#x20;
 
-**Resolution:**&#x20;
+**Resolution**
 
 * Permissions are now validated immediately after authentication &#x20;
 * Users without required permissions are blocked early with a clear error message&#x20;
@@ -1691,7 +1697,7 @@ Fixed an issue where users with insufficient Salesforce permissions could authen
 
 Fixed an issue where rule activation failed with a 403 Forbidden error in the US instance.&#x20;
 
-**Result:**&#x20;
+**Result**&#x20;
 
 Rule activation now works consistently across environments &#x20;
 
@@ -1701,7 +1707,7 @@ Rule activation now works consistently across environments &#x20;
 
 Fixed a runtime error occurring during PR and subset analyses when related metadata files were not included in the scan.&#x20;
 
-**Result:**&#x20;
+**Results**&#x20;
 
 * Improved stability of rule execution &#x20;
 * Graceful handling of missing metadata &#x20;
@@ -1714,11 +1720,11 @@ QA verified the fix in the Preview environment:&#x20;
 
 
 
-22. Fixed an issue where queries executed in USER\_MODE were incorrectly flagged.&#x20;
+22. **Fixed an issue where queries executed in USER\_MODE were incorrectly flagged.**&#x20;
 
 {Rule ID: sf:FieldLevelSecurity}
 
-**Result:**&#x20;
+**Results**&#x20;
 
 * Eliminates false positives &#x20;
 * Aligns rule behavior with Salesforce FLS enforcement&#x20;
@@ -1776,13 +1782,13 @@ As such, we confirm that the issue has been successfully remediated. The rule no
 
 Previously, the rule InsecureEndpointRule was throwing a ClassCastException due to an invalid cast from ClassNameDeclaration to VariableNameDeclaration when analyzing endpoint expressions involving enum/class references (e.g., MODE.ERASE).&#x20;
 
-**After the fix:**
+**After the fix**
 
 * Proper type checking has been implemented before casting symbol table declarations.
 * The rule now safely handles enum and class references without making incorrect assumptions.
 * No runtime exceptions are observed during analysis.
 
-**Result:**
+**Results**
 
 * No ClassCastException observed.
 * Rule executes as expected across all tested scenarios.&#x20;
@@ -1795,13 +1801,13 @@ Previously, the rule InsecureEndpointRule was throwing a ClassCastException due 
 
 Previously, the rule FieldLevelSecurityRule was throwing a NullPointerException when analyzing DML operations (Database.update) inside a trigger body due to the absence of an enclosing ASTMethodDeclaration. The failure was a NullPointerException caused by attempting to invoke findChildNodesWithXPath on a null method declaration object within FieldLevelSecurityRule.
 
-**After the fix:**
+**After the fix**
 
 * Proper null handling for methodDeclaration has been implemented.
 * The rule no longer assumes the presence of a method context.
 * Trigger-based DML scenarios are now handled gracefully without runtime exceptions.
 
-**Result**:
+**Results**
 
 * No NullPointerException observed.
 * Rule behaves as expected.&#x20;
@@ -1818,7 +1824,7 @@ Several customers were reporting a StackOverflowError for the rule “Resource I
 
 Previously, the analysis stayed in Running state and logs showed a StackOverflowError for the mutual-recursion flow (methodA -> methodB -> methodA) with no exit condition, ending in req.setEndpoint(url) with the Rule Resource Injection. After the fix, the same code analyzes successfully, completes normally, and no StackOverflowError is observed in logs.
 
-**Validation after fix:**
+**Validation after fix**
 
 * Ran analysis on CodeScan
 * Analysis completed successfully
@@ -1858,7 +1864,7 @@ Improvements include:&#x20;
 
 The rule now provides more accurate reporting by distinguishing between nested method calls and actual SOQL/DML execution within loops, reducing misleading violations for valid code.&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Reduces false positives reported by the Avoid SOQL in Loops rule. &#x20;
 * Improves accuracy of data flow and nested-call analysis. &#x20;
@@ -1882,7 +1888,7 @@ The updated default guidance:&#x20;
 * MaxMethodTraversalDepth = 5&#x20;
 * MaxMethodVisitedCount = 200&#x20;
 
-**Outcome**&#x20;
+**Outcomes**&#x20;
 
 * Provides clearer guidance for configuring method traversal depth. &#x20;
 * Helps administrators understand the recommended operating limits for the rule. &#x20;

@@ -1,2 +1,0 @@
-# AutoRABIT Vault Features
-

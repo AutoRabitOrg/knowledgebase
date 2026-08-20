@@ -1,8 +1,0 @@
----
-hidden: true
----
-
-# Search & Compare
-
-
-

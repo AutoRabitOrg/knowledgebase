@@ -54,13 +54,13 @@ This option will merge the entire change from one branch to another branch.&#x20
 
 * **`Delete Source Branch:`** Once you have successfully merged the changes from the source branch to another, you can permanently delete the source branch. Select the **`Delete Source Branch`** checkbox to delete the source branch, which auto-populates whenever 'Entire Branch' as a merge type is selected.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2771).png" alt=""><figcaption></figcaption></figure>
 
 **B. Single Revision**
 
 Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2772).png" alt=""><figcaption></figcaption></figure>
 
 ![](<../../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png>)
 
@@ -78,7 +78,7 @@ Select the commit labels created while committing to the Version Control System.
 
 For example, **DXTES-19\_EZ-Commit:** here, **DXTES-19** indicates the _commit label_ _name_, and **EZ-Commit** denotes the label created during the **EZ-Commit** process.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2773).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
 
@@ -92,7 +92,7 @@ You can select the release labels created using the committed revisions and the 
 
 1. Select the **`Merge Type`** as **`Release Label`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2774).png" alt=""><figcaption></figcaption></figure>
 
 1. The **`Release Labels`** field populates with all the available release labels in that repository/branch. If no release label is created for the above repository/ branch, an error notification states, **`"No Release Labels found."`**
 2. Select your **Release Label.**&#x20;
@@ -109,7 +109,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 1. Select the **`Merge Type`** as **`ALM Label`**.
 2. The Work Item will gather all of the user stories for which the ALM commits happened in the Source Branch of the chosen Version Control Repository. Click on the **`Search`** (![](<../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon to find the list of user stories or work items fetched.
 
-<figure><img src="../../../../../.gitbook/assets/image (2111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2775).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note**: You will not have the option to enter the work item details manually, you need to select the work item from the list fetched.

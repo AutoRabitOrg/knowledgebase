@@ -684,6 +684,7 @@
         * [Merge Conflicts](product-guides/arm-1/arm-features/version-control/ez-merge/merge-conflicts.md)
         * [Merge Requests](product-guides/arm-1/arm-features/version-control/ez-merge/merge-requests.md)
         * [Squash and Merge](product-guides/arm-1/arm-features/version-control/ez-merge/squash-and-merge.md)
+        * [Create Pull Request on Merged Changes in ez-Merge](product-guides/arm-1/arm-features/version-control/ez-merge/create-pull-request-on-merged-changes-in-ez-merge.md)
       * [Merge Approvals](product-guides/arm-1/arm-features/version-control/merge-approvals.md)
       * [Commit Templates](product-guides/arm-1/arm-features/version-control/commit-templates.md)
       * [Change Labels](product-guides/arm-1/arm-features/version-control/change-labels/README.md)

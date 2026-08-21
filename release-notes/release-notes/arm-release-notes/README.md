@@ -12,6 +12,8 @@ Introduced the **Create Pull Request On Merged Changes** option in ez-Merge. Whe
 
 The option is available only when **Pre-validation Merge** is configured and supports all pull-request-enabled repositories. Pull request details and the URL are available in the new **Pull Request Creation** process log.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-merge/create-pull-request-on-merged-changes-in-ez-merge" %}
+
 #### Duplicate Picklist Member Selection Fix in EZ-Commit – New UI <a href="#duplicate-picklist-member-selection-fix-in-ez-commit-new-ui" id="duplicate-picklist-member-selection-fix-in-ez-commit-new-ui"></a>
 
 Fixed an issue where a Custom Object already added as a Picklist member remained available in the dropdown and could be selected again without any feedback.

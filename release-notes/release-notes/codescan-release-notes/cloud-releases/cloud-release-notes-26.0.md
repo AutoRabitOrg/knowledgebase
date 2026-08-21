@@ -4,6 +4,74 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.19
+
+**Release Date: 23 August 2026**
+
+### Summary
+
+CodeScan 26.0.19 is comprised of the following components:
+
+* 1 New Feature
+* 0 Application Enhancements
+* 0 New Rules
+* 0 Rule Enhancements
+* 0 Rule Deprecations
+* 0 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+#### 1. Self-Service Trial Experience (PLG)
+
+Added a self-service trial experience that allows new users to sign up for a time-limited CodeScan trial directly from a dedicated trial URL, without requiring manual provisioning or sales involvement.
+
+Signup Flow
+
+* A dedicated trial signup URL routes new users through Auth0 Universal Login.
+* Personal email domains (gmail, hotmail, etc.) are blocked via Auth0 validation rules.
+* On successful signup and email verification, a trial organization is automatically provisioned and the user is assigned as Org Admin.
+* Signup information (name, email, company, phone) is sent to Salesforce to create a lead with source "CodeScan Cloud Trial".
+* Users must accept the AutoRABIT EULA during signup via a required checkbox, followed by an in-app EULA acceptance popup on first login.
+
+Trial Organization Configuration
+
+* Trial organizations are provisioned with configurable constraints:
+  * Default duration: 14 days
+  * Default maximum users: 3
+* Trial settings are configurable at the instance level by super admins through the Billing page:
+  * Trial duration (in weeks)
+  * Integration user count
+  * Standard user count
+  * Feature/plugin access toggles
+* Trial organizations do not have access to nCino, Audit Logging, MuleSoft, or AI features by default.
+* Salesforce integration is disabled for trial organizations — the Salesforce project type is removed from the Create Project dialog, and the Salesforce Connections administration menu is hidden.
+* The Billing page is hidden for non-root users in trial organizations.
+
+Trial User Experience
+
+* A persistent banner at the top of the screen displays the remaining trial time ("Trial - X days left" or "Trial - ends today").
+* Users can invite others to their trial organization. Invited users are added to the inviting organization only — no personal organizations are created for invited users.
+* User licensing limits (standard and platform users) are enforced during invitations and member management.
+
+Trial Expiry & Cleanup
+
+* Automated email notifications are sent at three milestones:
+  * 7 days before trial expiration
+  * 1 day before trial expiration
+  * On the day the trial ends
+* After the trial period ends, the organization is archived for 30 days, then permanently deleted.
+* Trial users are permanently disabled after cleanup. Their email addresses are stored to prevent re-creation of trial accounts using the same email.
+
+**Outcome**
+
+* Enables product-led growth by removing friction from the trial onboarding process.
+* Provides configurable, time-limited trial access with clear expiry communication.
+* Prevents the platform performance issues previously caused by mass personal organization creation.
+
+***
+
 ## CodeScan Release Notes 26.0.18
 
 **Release Date: 16 August 2026**

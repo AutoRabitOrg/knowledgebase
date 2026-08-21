@@ -2,6 +2,82 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.8**
+
+**Release Date: 23 Aug 2026**
+
+#### Create Pull Request for Merged Changes in ez-Merge – New Enhancement (New UI) <a href="#create-pull-request-for-merged-changes-in-ez-merge-new-enhancement-new-ui" id="create-pull-request-for-merged-changes-in-ez-merge-new-enhancement-new-ui"></a>
+
+Introduced the **Create Pull Request On Merged Changes** option in ez-Merge. When enabled, ARM applies the merged changes to a temporary branch, validates them, and creates a pull request targeting the selected destination branch instead of committing the changes directly.
+
+The option is available only when **Pre-validation Merge** is configured and supports all pull-request-enabled repositories. Pull request details and the URL are available in the new **Pull Request Creation** process log.
+
+#### Duplicate Picklist Member Selection Fix in EZ-Commit – New UI <a href="#duplicate-picklist-member-selection-fix-in-ez-commit-new-ui" id="duplicate-picklist-member-selection-fix-in-ez-commit-new-ui"></a>
+
+Fixed an issue where a Custom Object already added as a Picklist member remained available in the dropdown and could be selected again without any feedback.
+
+With this fix, previously added Custom Objects are no longer displayed in the dropdown, preventing duplicate selection and improving the metadata selection experience.
+
+#### Branching Baseline Gitignore Handling Fix <a href="#branching-baseline-gitignore-handling-fix" id="branching-baseline-gitignore-handling-fix"></a>
+
+Fixed an issue where the Branching Baseline process replaced the repository’s existing `.gitignore` file with a default version. This caused ignored files, such as `manifest/package.xml`, to be included and could trigger repository push-protection violations.
+
+With this fix, ARM retains and applies the existing `.gitignore` file during the Branching Baseline process. The default `.gitignore` file is used only when one is not already available in the repository.
+
+#### EZ-Commit File Diff Failure Fix – Old UI <a href="#ez-commit-file-diff-failure-fix-old-ui" id="ez-commit-file-diff-failure-fix-old-ui"></a>
+
+Fixed an issue where Picklist metadata was incorrectly treated as a Custom Field when reusing a previously validated EZ-Commit label. This caused false deleted components and resulted in a file-diff failure.
+
+With this fix, Picklist values are correctly processed as Picklist metadata, preventing false destructive entries and file-diff failures.
+
+#### SonarQube SCA Execution with S3 Fix <a href="#sonarqube-sca-execution-with-s3-fix" id="sonarqube-sca-execution-with-s3-fix"></a>
+
+Fixed an issue where SonarQube SCA executions failed when using S3 and incorrectly displayed the **Updating CodeScan Project** message.
+
+With this fix, the S3-specific analysis path is restricted to CodeScan, ensuring SonarQube SCA executions are processed correctly.
+
+#### Ignore Missing Visibility Setting Display Fix <a href="#ignore-missing-visibility-setting-display-fix" id="ignore-missing-visibility-setting-display-fix"></a>
+
+Fixed an issue where the **Ignore Missing Visibility** setting was not displayed in the commit history details.
+
+With this fix, the setting and its configured value are now visible under **More** on the Commit History Details page.
+
+#### Standard Field Changes Detection Fix in EZ-Commit – New UI <a href="#standard-field-changes-detection-fix-in-ez-commit-new-ui" id="standard-field-changes-detection-fix-in-ez-commit-new-ui"></a>
+
+Fixed an issue where changes to standard field permissions were not detected or displayed during comparison in EZ-Commit.
+
+With this fix, standard field permission changes are correctly retrieved and displayed in the New UI.
+
+#### Skipped Components Exclusion Fix <a href="#skipped-components-exclusion-fix" id="skipped-components-exclusion-fix"></a>
+
+Fixed an issue where components configured as skipped were still included during repository-to-org deployments, even when **Do Not Include Skip Members During Deployment** was enabled.
+
+With this fix, skipped components are correctly excluded from CI Job and Manual Deployment workflows for both DX and non-DX repositories.
+
+#### Password Reset Screen Responsiveness Fix <a href="#password-reset-screen-responsiveness-fix" id="password-reset-screen-responsiveness-fix"></a>
+
+Fixed an issue where the password reset screen became unresponsive when a Pendo survey appeared during login, preventing users from entering a new password.
+
+With this fix, users can complete the password reset process without interference from Pendo notifications.
+
+#### Support Contact Information on Password Reset – Enhancement <a href="#support-contact-information-on-password-reset-enhancement" id="support-contact-information-on-password-reset-enhancement"></a>
+
+Added the AutoRABIT Support email address to the password reset message. Users who do not receive the reset email or continue experiencing login issues can now contact [**support@autorabit.com**](mailto:support@autorabit.com) directly for assistance.
+
+#### CheckmarxOne Analysis Report Category Display Fix – New UI <a href="#checkmarxone-analysis-report-category-display-fix-new-ui" id="checkmarxone-analysis-report-category-display-fix-new-ui"></a>
+
+Fixed an issue where the **Critical** category was missing from CheckmarxOne SCA analysis reports and appeared as an unlabeled column.
+
+With this fix, all severity categories—Critical, High, Medium, Low, and Information—are displayed correctly.
+
+#### AI Bundle Metadata Processing Fix <a href="#ai-bundle-metadata-processing-fix" id="ai-bundle-metadata-processing-fix"></a>
+
+Fixed issues where **AiAuthoringBundle** and **GenAiPlannerBundle** metadata could be incorrectly included or processed during commit, CI Job, and deployment workflows.
+
+With this fix, bundle metadata is handled correctly based on user selection, exclusion lists, and skipped members for both DX and non-DX repositories, preventing unintended deployment failures.
+
+***
+
 ## DataLoader + DataLoader Pro Release Notes **26.3.8**
 
 **Release Date:** **23 Aug 2026**

@@ -274,9 +274,11 @@ Fixed an issue where creating a Scratch Org failed with the error **"Please fill
 
 Fixed an issue where initiating an Org Synchronization deployment did not automatically redirect users to the Deployment History page. The navigation flow has been updated to redirect users after deployment initiation, and automatic log polling has been added so deployment progress and status are displayed without requiring manual page refreshes.
 
-#### Automatic OAuth Token Refresh for External Connected Apps <a href="#automatic-oauth-token-refresh-for-external-connected-apps" id="automatic-oauth-token-refresh-for-external-connected-apps"></a>
+**Automatic OAuth Token Refresh and PKCE Support for External Connected Apps – Enhancement**
 
-Enhanced Salesforce External Connected App authentication to automatically refresh expired OAuth access tokens for newly registered Salesforce organizations. When an access token expires, ARM now uses the stored refresh token to obtain a new access token and automatically retries the original Salesforce API request without requiring manual reauthorization.
+Enhanced Salesforce External Connected App authentication with automatic OAuth token refresh and support for **Proof Key for Code Exchange (PKCE)** for newly registered Salesforce organizations.
+
+When an access token expires, ARM uses the stored refresh token to obtain a new access token and automatically retries the original Salesforce API request, eliminating the need for manual reauthorization. PKCE support further strengthens the security of the OAuth authorization flow.
 
 #### AiAuthoringBundle Merge Validation Fix <a href="#aiauthoringbundle-merge-validation-fix" id="aiauthoringbundle-merge-validation-fix"></a>
 

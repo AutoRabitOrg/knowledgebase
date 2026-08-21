@@ -53,11 +53,7 @@ Before registering your org in ARM, complete the following configuration in Sale
 Enable the following:
 
 * **Authorization Code and Credentials Flow**\
-  &#xNAN;_(Sub-options are not required.)_
-
-#### Security Settings
-
-* **Uncheck**: _Require Proof Key for Code Exchange (PKCE) extension for Supported Authorization Flows_
+  \&#xNAN;_(Sub-options are not required.)_
 
 #### Save and Activate
 

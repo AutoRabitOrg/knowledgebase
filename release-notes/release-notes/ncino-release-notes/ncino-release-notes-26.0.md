@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.3.7 <a href="#release-notes-ncinodl-26.3.7" id="release-notes-ncinodl-26.3.7"></a>
+## nCino - Release 26.3.8 <a href="#release-notes-ncinodl-26.3.7" id="release-notes-ncinodl-26.3.7"></a>
 
 **Release Date: 23 Aug 2026**
 
@@ -17,6 +17,10 @@
 **In-Progress CI Job Log Messaging**: Improved log availability behavior while CI jobs are still running to provide more reliable access to execution logs. The "Log does not exist" message is no longer incorrectly displayed while build and deployment processes are actively in progress.
 
 **Throughput Exception Reduction**: Implemented query and data-access improvements to reduce read throughput exceptions across DL and nCino components. These optimizations enhance system stability by identifying and mitigating high-frequency data access patterns that previously triggered exceptions.
+
+**nCino New UI Code Refactoring**: Completed code refactoring work in the new nCino UI to improve maintainability and streamline the codebase. This internal cleanup enhances the performance and long-term stability of the nCino integration components within the updated user interface.
+
+***
 
 ## nCino - Release 26.3.7 <a href="#release-notes-ncinodl-26.3.7" id="release-notes-ncinodl-26.3.7"></a>
 

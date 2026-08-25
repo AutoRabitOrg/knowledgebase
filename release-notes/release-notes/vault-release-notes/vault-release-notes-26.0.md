@@ -27,21 +27,17 @@ Resolved an incorrect **Invalid Client ID and Client Secret** error during Sales
 **Improved Timeout Handling for Large Live Data Masking Jobs**
 
 Resolved an issue causing Live Data Masking jobs to fail when large Salesforce queries timed out.\
-Previously, Vault repeated the same query until all retry attempts were exhausted. Vault now retries timed-out queries in smaller segments and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
+Previously, Vault repeated the same query until all retry attempts were exhausted. Vault now retries timed-out queries only once and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
 
 **Incremental Record Selection for Scheduled Live Data Masking**
 
 Added incremental record selection for scheduled and manual Live Data Masking jobs.\
-Each run can process newly created records, newly updated records, both record types, or all records.\
-Scheduled executions identify eligible records using the previous successful run and process each qualifying record only once.\
-This reduces processing time, Salesforce API usage, and repeated masking of unchanged records.
+Each run can process newly created records, newly updated records, both record types, or all records. Scheduled executions identify eligible records using the previous successful run and process each qualifying record only once. This reduces processing time, Salesforce API usage, and repeated masking of unchanged records.
 
 **Retry Failed Records in Live Data Masking Rollback Jobs**
 
 Added a **Retry** option for failed Live Data Masking rollback jobs.\
-Vault retries only the records that failed during the selected rollback without reprocessing successful records.\
-The retry results identify newly successful records, remaining failures, and the associated failure details.\
-Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
+Vault retries only the records that failed during the selected rollback without reprocessing successful records. The retry results identify newly successful records, remaining failures, and the associated failure details. Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
 
 ## AutoRABIT Vault Release Notes 26.2.4
 

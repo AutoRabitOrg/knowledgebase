@@ -1,11 +1,9 @@
 # Salesforce Integration User Setup
 
-## ARVault Salesforce Integration User Setup
-
-Create a dedicated Salesforce integration user and grant the permissions required for ARVault backup and restore operations.
+Create a dedicated Salesforce integration user and grant the permissions required for AutoRABIT Vault backup and restore operations.
 
 {% hint style="info" %}
-**Purpose:** The integration user is the identity that the ARVault CC token impersonates. Use a dedicated service account that is not tied to an individual user.
+**Purpose:** The integration user is the identity that the AutoRABITVault CC token impersonates. Use a dedicated service account that is not tied to an individual user.
 {% endhint %}
 
 ## Setup overview
@@ -16,7 +14,7 @@ Create a dedicated Salesforce integration user and grant the permissions require
 {% endstep %}
 
 {% step %}
-### Create and configure the ARVault permission set
+### Create and configure the AutoRABITVault permission set
 {% endstep %}
 
 {% step %}
@@ -24,7 +22,7 @@ Create a dedicated Salesforce integration user and grant the permissions require
 {% endstep %}
 
 {% step %}
-### Add conditional permissions when the corresponding ARVault functionality is required
+### Add conditional permissions when the corresponding AutoRABITVault functionality is required
 {% endstep %}
 {% endstepper %}
 
@@ -34,7 +32,7 @@ Navigate to Setup > Users > Users > New User in Salesforce.
 
 ### Enter the following user details
 
-* **First Name:** ARVault
+* **First Name:** AutoRABITVault
 * **Last Name:** Integration
 * **Alias:** arvint
 * **Email:** Use a real, monitored mailbox for password resets and administrative notifications.
@@ -63,7 +61,7 @@ Select **Save**.
 **Expected result:** The new integration user appears in Setup > Users with the status Active.
 {% endhint %}
 
-## Grant ARVault permissions
+## Grant AutoRABIT RVault permissions
 
 The default integration profile is intentionally minimal. Create a permission set to provide the data and metadata access required for backup and restore operations.
 
@@ -79,7 +77,7 @@ Go to Setup > Permission Sets > New.
 {% step %}
 ### Enter the permission set details
 
-Enter **ARVault Integration Access** in **Label**. The API Name is populated automatically.
+Enter **AutoRABITVault Integration Access** in **Label**. The API Name is populated automatically.
 
 Select **Salesforce API Integration** in **License**. Do not leave the license as --None-- and do not clone the permission set from a profile.
 {% endstep %}
@@ -131,7 +129,7 @@ In Permission Set Assignments, select **Edit Assignments**.
 {% endstep %}
 
 {% step %}
-### Enable the ARVault permission set
+### Enable the AutoRABITVault permission set
 
 Move **ARVault Integration Access** from Available to Enabled.
 {% endstep %}

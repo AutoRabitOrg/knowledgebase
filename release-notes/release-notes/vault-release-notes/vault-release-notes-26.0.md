@@ -39,6 +39,8 @@ Each run can process newly created records, newly updated records, both record t
 Added a **Retry** option for failed Live Data Masking rollback jobs.\
 Vault retries only the records that failed during the selected rollback without reprocessing successful records. The retry results identify newly successful records, remaining failures, and the associated failure details. Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
 
+***
+
 ## AutoRABIT Vault Release Notes 26.2.4
 
 **Release Date: 12 Aug 2026**

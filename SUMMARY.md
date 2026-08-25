@@ -1254,6 +1254,7 @@
     * [Register a Salesforce ORG](product-guides/vault/configuring-vault/register-a-salesforce-org/README.md)
       * [Register Salesforce Org - Authorization Code (OAuth)](product-guides/vault/configuring-vault/register-a-salesforce-org/registering-salesforce-org/README.md)
         * [ECA   User Guide](product-guides/vault/configuring-vault/register-a-salesforce-org/registering-salesforce-org/eca-user-guide.md)
+      * [Register Salesforce ORG - Client Credentials Flow](product-guides/vault/configuring-vault/register-a-salesforce-org/register-salesforce-org-client-credentials-flow.md)
       * [Set up backup configuration for Salesforce Org](product-guides/vault/configuring-vault/register-a-salesforce-org/setup-backup-configuration-for-salesforce-org.md)
       * [Archival Configuration](product-guides/vault/configuring-vault/register-a-salesforce-org/archival-configuration.md)
       * [Unique Identifier (UID)](product-guides/vault/configuring-vault/register-a-salesforce-org/unique-identifier-uid.md)

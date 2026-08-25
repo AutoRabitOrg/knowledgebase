@@ -7,7 +7,7 @@ Data archives can be thought of as a data repository for infrequently accessed, 
 ## Why Is Archival Important? <a href="#why-is-the-archival-important" id="why-is-the-archival-important"></a>
 
 1. It's necessary for optimizing data storage in Salesforce.
-2. For a [Salesforce Org](../../configuring-vault/register-a-salesforce-org/registering-salesforce-org/) with lots of data, searching for particular data is time-consuming and difficult.
+2. For a [Salesforce Org](../../configuring-vault/salesforce-org-setup/registering-salesforce-org/) with lots of data, searching for particular data is time-consuming and difficult.
 3. Application building in the Salesforce platform tends to run slower if unwanted data is available in your org.
 
 ## Archival Job Status and Notification Settings

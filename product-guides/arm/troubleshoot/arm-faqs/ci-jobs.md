@@ -140,3 +140,21 @@ Repository visibility depends on the **CI job type** selected.
 
 * For a **non-DX** CI job, only **non-DX repositories** are shown.
 * For an **SFDX** CI job, only **DX repositories** are shown.
+
+#### How does ARM determine file changes for CI Jobs and post-deployment merges?
+
+**Files Changed vs. Check-in Changes in a CI Job**
+
+For a CI Job, ARM performs a Git diff between the commit from the previous build and the current commit that triggered the build.
+
+The differences identified by this Git diff determine the changes that are processed and deployed as part of the CI Job. Therefore, the components displayed under the **Files Changed** tab may differ from the modified files shown in the **Check-in** details.
+
+This behavior is expected because the deployment scope is determined by the Git diff between the relevant build commits rather than solely by the files associated with the current check-in.
+
+**Changes Considered During a Post-Deployment Merge**
+
+A post-deployment merge works differently from the deployment process.
+
+When the post-deployment merge step is executed, ARM sends a merge request to Git to merge the applicable source and destination branches. During this operation, Git evaluates the files modified between the branches. The merge is not limited to only the components displayed under the **Files Changed** tab for the CI Job.
+
+As a result, if modified files contain conflicting changes between the source and destination branches, Git identifies them as merge conflicts. These conflicts are then reflected in ARM.

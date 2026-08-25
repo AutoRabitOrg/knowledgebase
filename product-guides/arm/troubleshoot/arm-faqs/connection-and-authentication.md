@@ -11,14 +11,14 @@
 
 Example: [https://na1.autorabit.com/saml/metadata](https://na1.autorabit.com/saml/metadata)
 
-We will update this banner once the issue is resolved. Thank you for your patience.&#x20;
+We will update this banner once the issue is resolved. Thank you for your patience.
 {% endhint %}
 
 ### Overview
 
 AutoRABIT will rotate its internal SSL certificate as part of routine maintenance. This impacts certain Single Sign-On (SSO) and Salesforce DX (SFDX) configurations in AutoRABIT.
 
-* **Date:** Saturday, August 23, 2025
+* **Date:** Saturday, September 13, 2026
 * **Time:** 12:00 AM PST
 * **Expected Duration:** \~1 hour
 * **When to Take Action:** After the maintenance window (from \~1:00 AM PST onward)
@@ -86,51 +86,51 @@ If you have questions or face login issues after the rotation:
 **In Summary:**
 
 * Action required **only if** you use **SSO with SAML encryption** or **SFDX DevHub Orgs**.
-* Perform the steps **after August 23, 2025, 1:00 AM PST**.
+* Perform the steps **after September 13, 2026, 1:00 AM PST**.
 * Not taking action will result in **login failures (SSO)** or **failed CI jobs (SFDX)**.
 
 ## Azure Hosting Migration
 
-To our valued Customer,&#x20;
+To our valued Customer,
 
-AutoRABIT is working to modernize and standardize our infrastructure to provide a better experience for you, as we to innovate in our ARM product. &#x20;
+AutoRABIT is working to modernize and standardize our infrastructure to provide a better experience for you, as we innovate in our ARM product.
 
-As part of that effort, we are deprecating our Azure hosting option in September in favor of our standard AWS hosting offering, now that AWS provides service in the UAE, and will be migrating all the services (which will impact your tenant).&#x20;
+As part of that effort, we are deprecating our Azure hosting option in September in favor of our standard AWS hosting offering, now that AWS provides service in the UAE, and will be migrating all the services (which will impact your tenant).
 
-This migration activity is planned for Sunday, September 28 (with a backup date of October 5), at 8:30AM (Dubai local time). The instance will be unavailable for up to 10 hours as we complete this activity.  &#x20;
+This migration activity is planned for Sunday, September 28 (with a backup date of October 5), at 8:30AM (Dubai local time). The instance will be unavailable for up to 10 hours as we complete this activity.
 
-We will also need your assistance to complete this migration. &#x20;
+We will also need your assistance to complete this migration.
 
-_**Your action (right away – if applicable) :**_&#x20;
+_**Your action (right away – if applicable) :**_
 
-Whitelist the following IP addresses for the new instance &#x20;
+Whitelist the following IP addresses for the new instance
 
-o        IP Addresses:&#x20;
+o IP Addresses:
 
-_3.28.164.9_ \
-&#xNAN;_&#x35;1.112.70.124_&#x20;
+_3.28.164.9_\
+\&#xNAN;_51.112.70.124_
 
-§     _Only needed if you have whitelisting in place for the current instance (for security purposes, or if required for your **Salesforce and GitHub, Gitlab, etc. related access)**_&#x20;
+§ _Only needed if you have whitelisting in place for the current instance (for security purposes, or if required for your **Salesforce and GitHub, Gitlab, etc. related access)**_
 
-We will be providing a new login URL for the new instance; the following will need to be done in the new instance, closer to the migration date.:&#x20;
+We will be providing a new login URL for the new instance; the following will need to be done in the new instance, closer to the migration date.:
 
-**Your Actions in the new instance**&#x20;
+**Your Actions in the new instance**
 
-* Re-setup SSO if you are currently using it to access your account ([KB article](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sso))&#x20;
-* Re-setup your webhooks for the new URL ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks))&#x20;
-* Reauthenticate your Salesforce Org ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/salesforce-org-re-authentication))&#x20;
-* Share the new instance URL with your team&#x20;
+* Re-setup SSO if you are currently using it to access your account ([KB article](https://knowledgebase.autorabit.com/product-guides/arm/integration-and-plugins/sso))
+* Re-setup your webhooks for the new URL ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks))
+* Reauthenticate your Salesforce Org ([KB Article](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/salesforce-org-re-authentication))
+* Share the new instance URL with your team
 
 After the migration, they will need to use the new link to access their accounts.
 
-**What you need to know:**&#x20;
+**What you need to know:**
 
 * There is no change to the application, nor will your data/configurations be impacted.
 * During and post the migration activity, all data will stay in the UAE.
-* We will set up a meeting, closer to the migration date, to review and coordinate the activities we identified.&#x20;
-* If you need any help with preparing for this change: &#x20;
+* We will set up a meeting, closer to the migration date, to review and coordinate the activities we identified.
+* If you need any help with preparing for this change:
   * Technical assistance with completing any of the above activities, please submit a ticket via the support portal.
-* Questions or concerns about the migration, please contact your Account Manager. &#x20;
+* Questions or concerns about the migration, please contact your Account Manager.
 
 ### How do I register GitHub repositories with two-factor authentication? <a href="#register-github-repositories-with-twofactor-authentication" id="register-github-repositories-with-twofactor-authentication"></a>
 
@@ -142,8 +142,8 @@ To use two-factor authentication in GitHub, create a personal access token first
 ### How do I rectify the GOLDENDOODLE vulnerability? <a href="#how-to-rectify-the-goldendoodle-vulnerability" id="how-to-rectify-the-goldendoodle-vulnerability"></a>
 
 1. **Short-term solution**: Disable support for CBC encryption ciphers. Follow the procedures below to disable weak ciphers:
-   * Run the following command to list the ciphers: \
-     &#xNAN;**- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
+   * Run the following command to list the ciphers:\
+     \&#xNAN;**- sshd -T | grep ciphers | perl -pe 's/,/\n/g' | sort -u**
    * Edit the file **- /etc/ssh/sshd\_config** and add what strong ciphers you want to have or place in this file as shown in the example below- **Ciphers aes128-ctr,aes192-ctr,aes256-ctr**
    * Now, restart your sshd service using the command:  **service sshd restart**
 2. **Long-term solution:** Enable the **TLS 1.3** protocol.
@@ -156,7 +156,7 @@ Make sure you are entering the JIRA API token in the **Password** field while re
 
 Follow the steps below to generate a new API token for JIRA:
 
-1. Go to the link: [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens)**.**&#x20;
+1. Go to the link: [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens)**.**
 2. Click on **Create API Token** and provide the label name and click on **Create**.
 3. Once the token is created, you will be able to see the **Your new API token** popup. Click on the **Copy to Clipboard**.
 4. Use the copied token as a password for creating/updating the credential in AutoRABIT.
@@ -182,4 +182,3 @@ This is because you used invalid SSH keys to register your repository. Please us
 ### How do I validate the 'src' folder under branch settings? <a href="#how-to-validate-the-src-folder-under-branch-setting" id="how-to-validate-the-src-folder-under-branch-setting"></a>
 
 When you try to create a new branch you must validate the master branch's **'src'** folder path, then select the parent branch as master, and the **'src'** folder path will be automatically set to the newly created branch.
-

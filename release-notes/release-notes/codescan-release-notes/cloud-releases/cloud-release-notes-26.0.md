@@ -27,15 +27,15 @@ Component details are listed in their corresponding sections within this documen
 
 Added a self-service trial experience that allows new users to sign up for a time-limited CodeScan trial directly from a dedicated trial URL, without requiring manual provisioning or sales involvement.
 
-Signup Flow
+**Signup Flow**
 
 * A dedicated trial signup URL routes new users through Auth0 Universal Login.
-* Personal email domains (gmail, hotmail, etc.) are blocked via Auth0 validation rules.
-* On successful signup and email verification, a trial organization is automatically provisioned and the user is assigned as Org Admin.
+* Personal email domains (e.g., gmail, hotmail, etc.) are blocked via Auth0 validation rules.
+* Upon successful signup and email verification, a trial organization is automatically provisioned, and the user is assigned as Org Admin.
 * Signup information (name, email, company, phone) is sent to Salesforce to create a lead with source "CodeScan Cloud Trial".
 * Users must accept the AutoRABIT EULA during signup via a required checkbox, followed by an in-app EULA acceptance popup on first login.
 
-Trial Organization Configuration
+**Trial Organization Configuration**
 
 * Trial organizations are provisioned with configurable constraints:
   * Default duration: 14 days
@@ -49,13 +49,13 @@ Trial Organization Configuration
 * Salesforce integration is disabled for trial organizations — the Salesforce project type is removed from the Create Project dialog, and the Salesforce Connections administration menu is hidden.
 * The Billing page is hidden for non-root users in trial organizations.
 
-Trial User Experience
+**Trial User Experience**
 
 * A persistent banner at the top of the screen displays the remaining trial time ("Trial - X days left" or "Trial - ends today").
 * Users can invite others to their trial organization. Invited users are added to the inviting organization only — no personal organizations are created for invited users.
 * User licensing limits (standard and platform users) are enforced during invitations and member management.
 
-Trial Expiry & Cleanup
+**Trial Expiry & Cleanup**
 
 * Automated email notifications are sent at three milestones:
   * 7 days before trial expiration

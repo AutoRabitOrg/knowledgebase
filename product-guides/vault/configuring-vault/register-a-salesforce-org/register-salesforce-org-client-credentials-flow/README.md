@@ -39,13 +39,13 @@ The Run-As username configured in the Salesforce External Client App must match 
 1. In AutoRABIT Vault, select **Setup**.
 2.  On the **Salesforce Orgs List** page, select **REGISTER NEW ORG**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2786).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2786).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                          Open the Salesforce org registration flow.
 
 3.  In the **Source Org Integration** window, select **Client Credentials Flow**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2787).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2787).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                          Select Client Credentials Flow.
 {% endstep %}
@@ -55,13 +55,13 @@ The Run-As username configured in the Salesforce External Client App must match 
 
 1.  For **Environment Type**, select **Salesforce**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2788).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2788).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                          Select Salesforce as the environment type.
 
 2.  From **Salesforce API Version**, select the required API version.
 
-    <figure><img src="../../../../.gitbook/assets/image (2789).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2789).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                          Select the Salesforce API version.
 
@@ -70,7 +70,7 @@ The Run-As username configured in the Salesforce External Client App must match 
 5. Select **Production** or **Sandbox** as applicable.
 6.  Enter the Salesforce host in **My Domain URL**, and then select **Continue**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2790).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2790).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 Complete the Salesforce org details.
 
@@ -89,7 +89,7 @@ The Salesforce Admin Setup step displays the settings required for the External 
 3. Enable the **OAuth Plugin**.
 4.  Choose **Client Credentials** as the OAuth flow.
 
-    <figure><img src="../../../../.gitbook/assets/image (2791).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2791).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                       Review the initial Salesforce External Client App instructions.
 
@@ -100,7 +100,7 @@ The Salesforce Admin Setup step displays the settings required for the External 
 9. Under **App Authorization > IP Relaxation**, select the appropriate IP relaxation option.
 10. Save the app, and copy its Client ID and Client Secret.
 
-    <figure><img src="../../../../.gitbook/assets/image (2792).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2792).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Configure OAuth scopes, policies, Run-As user, and IP relaxation.
 
@@ -115,7 +115,7 @@ The Salesforce Admin Setup step displays the settings required for the External 
     * Full access (full)
     * Perform requests at any time (refresh\_token, offline\_access)
 
-    <figure><img src="../../../../.gitbook/assets/image (2793).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2793).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Copy the Callback URL and confirm the required OAuth scopes.
 
@@ -123,13 +123,13 @@ The Salesforce Admin Setup step displays the settings required for the External 
 
 If the Salesforce configuration cannot be completed or validated, the user expands Common Issues & Troubleshooting and reviews the applicable guidance.
 
-<figure><img src="../../../../.gitbook/assets/image (2794).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2794).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Review common configuration issues.
 
 After completing the Salesforce configuration, select **I've completed the setup**.
 
-<figure><img src="../../../../.gitbook/assets/image (2795).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2795).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Confirm that the Salesforce setup is complete.
 {% endstep %}
@@ -143,7 +143,7 @@ After completing the Salesforce configuration, select **I've completed the setup
 4. Copy the Consumer Key and Consumer Secret from Salesforce.
 5.  In Vault, enter the Consumer Key in **Client ID** and enter the Consumer Secret in **Client Secret**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2796).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2796).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Enter the Client ID and Client Secret.
 
@@ -153,7 +153,7 @@ After completing the Salesforce configuration, select **I've completed the setup
 
 6.  Select **Continue**.
 
-    <figure><img src="../../../../.gitbook/assets/image (2797).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2797).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Continue to credential verification.
 {% endstep %}
@@ -163,7 +163,7 @@ After completing the Salesforce configuration, select **I've completed the setup
 
 On the **Review & Verify** page, review the environment details, username, My Domain URL, API version, and Consumer Key.
 
-<figure><img src="../../../../.gitbook/assets/image (2798).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2798).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Review the Salesforce environment details.
 
@@ -173,13 +173,13 @@ On the **Review & Verify** page, review the environment details, username, My Do
 
 Select **Verify & Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (2799).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2799).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Verify the credentials and save the org.
 
 Vault verifies the credentials with Salesforce.
 
-<figure><img src="../../../../.gitbook/assets/image (2800).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2800).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Credential verification in progress.
 {% endstep %}
@@ -189,25 +189,25 @@ Vault verifies the credentials with Salesforce.
 
 When verification succeeds, Vault displays Connection Successful and confirms that the Salesforce org is registered.
 
-<figure><img src="../../../../.gitbook/assets/image (2801).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2801).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Confirm successful Salesforce org registration.
 
 To validate communication with Salesforce, select **Test API Connection**.
 
-<figure><img src="../../../../.gitbook/assets/image (2802).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2802).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Start the API connection test.
 
 Vault tests the API connection with the registered Salesforce org.
 
-<figure><img src="../../../../.gitbook/assets/image (2803).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2803).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      API connection test in progress.
 
 A successful test displays the message Successfully connected to the Salesforce org.
 
-<figure><img src="../../../../.gitbook/assets/image (2804).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2804).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      Confirm the successful API connection.
 

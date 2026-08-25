@@ -141,7 +141,7 @@ Repository visibility depends on the **CI job type** selected.
 * For a **non-DX** CI job, only **non-DX repositories** are shown.
 * For an **SFDX** CI job, only **DX repositories** are shown.
 
-#### How does ARM determine file changes for CI Jobs and post-deployment merges?
+### How does ARM determine file changes for CI Jobs and post-deployment merges?
 
 **Files Changed vs. Check-in Changes in a CI Job**
 

@@ -32,8 +32,8 @@ Added a self-service trial experience that allows new users to sign up for a tim
 * A dedicated trial signup URL routes new users through Auth0 Universal Login.
 * Personal email domains (e.g., gmail, hotmail, etc.) are blocked via Auth0 validation rules.
 * Upon successful signup and email verification, a trial organization is automatically provisioned, and the user is assigned as Org Admin.
-* Signup information (name, email, company, phone) is sent to Salesforce to create a lead with source "CodeScan Cloud Trial".
-* Users must accept the AutoRABIT EULA during signup via a required checkbox, followed by an in-app EULA acceptance popup on first login.
+* Signup information (e.g., name, email, company, phone) is sent to Salesforce to create a lead with source "CodeScan Cloud Trial."
+* Users must accept the AutoRABIT EULA during signup via a required checkbox, followed by an in-app EULA acceptance pop-up upon first login.
 
 **Trial Organization Configuration**
 
@@ -46,7 +46,7 @@ Added a self-service trial experience that allows new users to sign up for a tim
   * Standard user count
   * Feature/plugin access toggles
 * Trial organizations do not have access to nCino, Audit Logging, MuleSoft, or AI features by default.
-* Salesforce integration is disabled for trial organizations — the Salesforce project type is removed from the Create Project dialog, and the Salesforce Connections administration menu is hidden.
+* Salesforce integration is disabled for trial organizations—the Salesforce project type is removed from the Create Project dialog, and the Salesforce Connections administration menu is hidden.
 * The Billing page is hidden for non-root users in trial organizations.
 
 **Trial User Experience**

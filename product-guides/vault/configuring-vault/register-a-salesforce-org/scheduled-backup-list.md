@@ -8,9 +8,9 @@ Administrators or users with administrative roles can view and manage the ongoin
 2. Navigate to **Settings > Scheduling Options** tab.
 3. Select your [**Salesforce Org**](registering-salesforce-org/). AutoRABIT Vault will display the list of scheduled backups for the selected org.
 
-<figure><img src="../../../.gitbook/assets/image (136).png" alt="Scheduled backups list view for a Salesforce Org in Vault" width="541"><figcaption><p>Scheduled backup listing</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (136).png" alt="Scheduled backups list view for a Salesforce Org in Vault" width="541"><figcaption><p>Scheduled backup listing</p></figcaption></figure>
 
 4. You can temporarily pause an ongoing backup operation. To do so, select a backup from the list and click **Pause**.
 5. To resume a paused backup, click the **Activate** button.
 
-<figure><img src="../../../.gitbook/assets/image (137).png" alt="Pause and Activate buttons to control backup operations in Vault" width="563"><figcaption><p>Pause and activate backup options</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (137).png" alt="Pause and Activate buttons to control backup operations in Vault" width="563"><figcaption><p>Pause and activate backup options</p></figcaption></figure>

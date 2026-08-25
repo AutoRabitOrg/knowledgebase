@@ -30,7 +30,7 @@ Workflow rules are business logic containers that automate actions based on spec
 
 **Structure of a Workflow Rule:**
 
-<figure><img src="../../../.gitbook/assets/image (138).png" alt="Structure of a Workflow Rule in Salesforce" width="393"><figcaption><p>Workflow Rule Components</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (138).png" alt="Structure of a Workflow Rule in Salesforce" width="393"><figcaption><p>Workflow Rule Components</p></figcaption></figure>
 
 #### Workflow Components <a href="#workflows-components" id="workflows-components"></a>
 

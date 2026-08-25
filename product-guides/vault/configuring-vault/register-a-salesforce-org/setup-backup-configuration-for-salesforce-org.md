@@ -12,7 +12,7 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
 ## Prerequisite <a href="#prerequisite" id="prerequisite"></a>
 
 * Ensure your Salesforce Org is registered with AutoRABIT Vault.\
-  [Learn More](./)
+  [Learn More](registering-salesforce-org/)
 
 ## How to Set Up a Backup Configuration <a href="#how-to-set-up-a-backup-configuration-for-your-salesforce-org" id="how-to-set-up-a-backup-configuration-for-your-salesforce-org"></a>
 

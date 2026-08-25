@@ -6,11 +6,11 @@ AutoRABIT Vault gives you the possibility of a one-time backup configuration, se
 
 ### Before you Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
-1. Register your Salesforce Org in AutoRABIT Vault. \[[Learn More](../../configuring-vault/registering-salesforce-org/)]
+1. Register your Salesforce Org in AutoRABIT Vault. \[[Learn More](../../configuring-vault/register-a-salesforce-org/registering-salesforce-org/)]
 
 ### How to do it? <a href="#how-to-do-it" id="how-to-do-it"></a>
 
-When registering your Salesforce Org in AutoRABIT Vault, you must configure the backup and set the backup schedule criteria. You will need to choose the metadata and data records as part of the backup process before you schedule them. Head to the [Backup Configuration](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md) article for detailed information on selecting metadata and data records for your Salesforce Org.
+When registering your Salesforce Org in AutoRABIT Vault, you must configure the backup and set the backup schedule criteria. You will need to choose the metadata and data records as part of the backup process before you schedule them. Head to the [Backup Configuration](../../configuring-vault/register-a-salesforce-org/setup-backup-configuration-for-salesforce-org.md) article for detailed information on selecting metadata and data records for your Salesforce Org.
 
 When you are done with the metadata/data selection, you will be navigated to the **`Scheduling`** screen, where you are required to fill in the details as follows:
 

@@ -30,9 +30,9 @@ Follow these steps to configure a proxy server:
    * Choose your **AWS storage environment**: either **AWS-S3** or **AWS-KMS** to establish the storage connection.
    * Enter the **Proxy URL**, then click **Add**. You can configure multiple URLs for a single proxy.
 
-<figure><img src="../../../.gitbook/assets/image (139).png" alt="Dialog box for creating a new proxy server in Vault" width="434"><figcaption><p>Proxy configuration form</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (139).png" alt="Dialog box for creating a new proxy server in Vault" width="434"><figcaption><p>Proxy configuration form</p></figcaption></figure>
 
 5. Click **Submit**. You'll be redirected to the **Proxy Configuration Settings** homepage. The newly created proxy appears at the top of the list.
 6. Use the **Edit** icon (!\[Edit icon]\(../../../.gitbook/assets/image (66) (1) (1) (1) (1) (1) (1) (1) (1) (1).png)) to modify proxy settings, or the **Delete** icon (!\[Delete icon]\(../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1) (1) (1) (1) (1).png)) to remove a proxy configuration.
 
-<figure><img src="../../../.gitbook/assets/image (140).png" alt="List of configured proxies in Vault" width="563"><figcaption><p>Configured proxies list</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (140).png" alt="List of configured proxies in Vault" width="563"><figcaption><p>Configured proxies list</p></figcaption></figure>

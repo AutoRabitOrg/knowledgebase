@@ -13,7 +13,7 @@ This article discusses the procedure for restoring metadata and data to your Sal
 Ensure you have the following:
 
 * Salesforce Org registered with AutoRABIT Vault.&#x20;
-* Backup configured for your Salesforce Org. \[[Learn More](../../configuring-vault/registering-salesforce-org/setup-backup-configuration-for-salesforce-org.md)]
+* Backup configured for your Salesforce Org. \[[Learn More](../../configuring-vault/register-a-salesforce-org/setup-backup-configuration-for-salesforce-org.md)]
 * At least one backup operation is triggered for your Salesforce Org in AutoRABIT Vault.
 
 ## How do I restore data / metadata? <a href="#how-to-do-it" id="how-to-do-it"></a>
@@ -23,7 +23,7 @@ Ensure you have the following:
 
 <figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. On the next screen, select your source [**`Salesforce Org`**](../../configuring-vault/registering-salesforce-org/).
+3. On the next screen, select your source [**`Salesforce Org`**](../../configuring-vault/register-a-salesforce-org/registering-salesforce-org/).
 
 <figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 

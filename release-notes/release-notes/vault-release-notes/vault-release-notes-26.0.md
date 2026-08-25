@@ -4,6 +4,45 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
 
+## AutoRABIT Vault Release Notes 26.2.5
+
+**Release Date: 26 Aug 2026**
+
+**Complete Metadata Details in Restore Job Summaries**
+
+Resolved an issue where Restore job summaries did not display all selected metadata types.\
+The summary previously showed only `Network` and `NetworkBranding` in affected restore executions.\
+Vault now includes `DigitalExperience`, `DigitalExperienceBundle`, `ExperienceBundle`, and other selected metadata types. This provides an accurate view of the metadata processed by the Restore job.
+
+**Successful Restoration of NetworkBranding Metadata**
+
+Resolved an issue that caused `NetworkBranding` metadata restores to fail with a missing `primaryColor` error.\
+The failure occurred even when the backup containing the same metadata completed successfully.\
+Vault now handles the required field correctly during the EZ Restore operation. This allows `NetworkBranding` metadata to be restored without the previous validation failure.
+
+**Salesforce Org Reauthentication Using Valid Client Credentials**
+
+Resolved an incorrect **Invalid Client ID and Client Secret** error during Salesforce org reauthentication. The issue affected existing orgs configured through the Client Credentials authentication flow. Vault now validates the provided Client ID and Client Secret correctly during reauthentication. This prevents valid Salesforce org connections from being rejected unnecessarily.
+
+**Improved Timeout Handling for Large Live Data Masking Jobs**
+
+Resolved an issue causing Live Data Masking jobs to fail when large Salesforce queries timed out.\
+Previously, Vault repeated the same query until all retry attempts were exhausted. Vault now retries timed-out queries in smaller segments and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
+
+**Incremental Record Selection for Scheduled Live Data Masking**
+
+Added incremental record selection for scheduled and manual Live Data Masking jobs.\
+Each run can process newly created records, newly updated records, both record types, or all records.\
+Scheduled executions identify eligible records using the previous successful run and process each qualifying record only once.\
+This reduces processing time, Salesforce API usage, and repeated masking of unchanged records.
+
+**Retry Failed Records in Live Data Masking Rollback Jobs**
+
+Added a **Retry** option for failed Live Data Masking rollback jobs.\
+Vault retries only the records that failed during the selected rollback without reprocessing successful records.\
+The retry results identify newly successful records, remaining failures, and the associated failure details.\
+Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
+
 ## AutoRABIT Vault Release Notes 26.2.4
 
 **Release Date: 12 Aug 2026**

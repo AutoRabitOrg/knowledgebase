@@ -1339,6 +1339,7 @@
     * [User Management](product-guides/guard/getting-started-with-guard/user-management.md)
     * [Integration User](product-guides/guard/integration-user-license.md)
     * [Single Sign-On (SSO)](product-guides/guard/getting-started-with-guard/single-sign-on-sso.md)
+    * [Refreshing a Salesforce Sandbox](product-guides/guard/getting-started-with-guard/refreshing-a-salesforce-sandbox.md)
   * [Features](product-guides/guard/features/README.md)
     * [Governance](product-guides/guard/features/governance/README.md)
       * [Data Classification](product-guides/guard/data-classification.md)

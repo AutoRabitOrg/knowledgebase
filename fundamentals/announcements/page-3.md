@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Status of AutoRABIT in the Middle East
 
 #### **Update: 5 March 2026**

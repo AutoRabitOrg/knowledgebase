@@ -2,6 +2,18 @@
 
 ## Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
+{% hint style="warning" %}
+## **Note**: The CodeScan for Azure DevOps has recently been updated to use **Node v24** as of plugin **v3.0.2**. &#x20;
+
+If you are using **custom workers**, please make sure you **update Node to v24** to avoid any interruptions.&#x20;
+
+**Failure to do this could cause your pipeline to fail during the CodeScan task steps**.
+
+If you have specified your CodeScan for Azure DevOps versions in your pipeline, you will not be automatically upgraded.  To use **v3.0.2**, specify the version using "**@3.0.2**" at the end of the Task name. eg. "**CodeScanCloudPrepare@3.0.2**". &#x20;
+
+[You can learn more about task versioning in Azure DevOps here.](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/tasks?view=azure-devops\&tabs=yaml#task-versions)
+{% endhint %}
+
 {% hint style="info" %}
 **Note**: Users have Azure SSO enabled in CodeScan. If an integration user has to be set up for Jenkins/Bitbucket projects, then the user must be created in Azure SSO.
 {% endhint %}

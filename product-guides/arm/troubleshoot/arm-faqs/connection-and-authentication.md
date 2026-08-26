@@ -2,18 +2,6 @@
 
 ## ARM SSO Certificate Rotation
 
-{% hint style="danger" %}
-**Service Notice: Metadata Download Issue**: We are currently investigating an issue where downloading the SAML metadata file from within ARM results in an empty file. Please note: a link in the format `https://[your-instance].`[`autorabit.com/?basic-auth=true/saml/metadata`](http://autorabit.com/?basic-auth=true/saml/metadata) was previously shared, but this should be disregarded.
-
-**Workaround**: Please replace `[your-instance]` with your own instance URL and use this format instead: `https://[your-instance].`[`autorabit.com/saml/metadata`](http://autorabit.com/saml/metadata)
-
-![:point\_right:](https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f449@2x.png) You can determine your instance URL by checking the current URL you are using to access ARM.
-
-Example: [https://na1.autorabit.com/saml/metadata](https://na1.autorabit.com/saml/metadata)
-
-We will update this banner once the issue is resolved. Thank you for your patience.
-{% endhint %}
-
 ### Overview
 
 AutoRABIT will rotate its internal SSL certificate as part of routine maintenance. This impacts certain Single Sign-On (SSO) and Salesforce DX (SFDX) configurations in AutoRABIT.

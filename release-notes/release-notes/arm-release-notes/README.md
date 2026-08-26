@@ -2,6 +2,88 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.9**
+
+**Release Date: 30 Aug 2026**
+
+#### Support Custom Package XML Filenames in Deployment – Enhancement
+
+Custom Deployment previously required the uploaded Salesforce package manifest to be named exactly **package.xml**. Customers maintaining multiple manifests, such as `qa.xml`, `uat.xml`, or `production.xml`, had to rename the file before each deployment.
+
+Custom Deployment now accepts any `.xml` filename that contains a valid Salesforce Package manifest, consistent with EZ-Commit. ARM validates the XML contents rather than the filename, processes accepted files internally as **package.xml**, and rejects non-package metadata files such as Profile or CustomObject XML. Existing deployments that use **package.xml** continue to work without change.
+
+#### Extend Deployment Approval Auto-Reject Timeout to 7 Days – Enhancement
+
+Pending L1 and L2 deployment approvals were automatically rejected after **3 days (72 hours)**, which did not always give approvers enough time to complete review.
+
+Pending L1 and L2 approvals now remain active for **7 days (168 hours)** before auto-rejection. A notification email is sent **24 hours before auto-rejection** to the primary and secondary approvers and the deployment creator. The notification includes the deployment identifier, pending approval level, auto-rejection date and time, and the action required to avoid rejection. Approvals or rejections completed before the warning window do not trigger the reminder. Existing approval statuses, including **Auto Rejected**, are unchanged.
+
+#### Display Actual Static Code Analysis Pass/Fail Result – Enhancement
+
+ARM previously displayed a green tick when Static Code Analysis execution completed, even when the CodeScan or SonarQube Quality Gate had failed. This made it appear as though analysis had passed.
+
+ARM now keeps the existing completion indicator and displays the actual Quality Gate result next to **Static Code Analysis** as **Analysis: PASS** or **Analysis: FAIL**. PASS and FAIL use the corresponding success and failure treatments. The result is shown only after the final outcome is received from CodeScan or SonarQube and applies to **Commit**, **Merge**, and **Quick Merge** in both the Classic UI and the New UI. This display applies to **CodeScan** and **SonarQube** only.
+
+#### ECA Concurrent Session Lockout Fix
+
+Fixed an issue where an ECA-enabled Salesforce org could be locked out with an **INVALID\_SESSION\_ID** error when a CI Job using **Deploy from Salesforce Org** and an **EZ-Commit** ran at the same time against the same source org. After the conflict, **Re-Authorize** did not reliably restore the org.
+
+With this fix, ARM coordinates refresh-token rotation for the same org so concurrent CI Job and EZ-Commit operations can complete without invalidating each other’s session. Re-authorization restores org connectivity when needed, and single-operation workflows are unchanged.
+
+\{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca" %\}
+
+#### OAuth and OAuth-with-ECA Registration and Re-Authorization Fix
+
+Fixed issues where Salesforce org registration and re-authorization failed in several OAuth flows. OAuth to **OAuth-with-ECA** re-authorization did not complete, new OAuth registrations and re-authorization below API version 64 failed, and OAuth to OAuth-with-ECA re-authorization failed when **PKCE** was disabled.
+
+With this fix, PKCE is supported for the standard OAuth flow as well as OAuth via ECA. Registration, re-authorization, token refresh, and test connection succeed with PKCE enabled or disabled, including when converting an existing org from OAuth to **OAuth via ECA**.
+
+\{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca" %\}
+
+#### EZ-Merge Git Push Status Fix
+
+Fixed an issue where **EZ-Merge** could be marked **Successful** when the remote Git push was rejected, for example by branch protection rules. The locally created commit revision was still shown as successful, and users had to inspect logs to discover that the push had failed.
+
+With this fix, ARM validates the remote Git push result before marking the merge complete. If the push is rejected, the merge is marked **Failed**, the local commit revision is not shown as a successful revision, and the Git rejection error is displayed to the user. Merges that push successfully continue to be marked **Successful**.
+
+\{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-merge" %\}
+
+#### Revision Number Display Fix in Commits, Merges, and CI Jobs
+
+Fixed an issue where the full Git commit hash was displayed after merge conflict resolution, in merge notifications, in the EZ-Commit label section, and in CI Jobs.
+
+With this fix, revision numbers are displayed as a **short SHA** across **Commit**, **Merge**, and **CI Job** views in both the Classic UI and the New UI.
+
+#### Profile Compare Deploy View Fix
+
+Fixed an issue in **Profile Compare** where **Deploy** and **Update and Deploy** applied permission changes to the target org, but the comparison grid did not refresh to show the post-deployment state. The grid could display stale or inverted source and target values.
+
+With this fix, comparison data is refreshed after Deploy and Update and Deploy so the grid reflects the actual org state. Permissions continue to be applied only to the target org.
+
+#### Vlocity Release Label Merge Board Type Fix
+
+Fixed an issue where the **Board Type** field was not auto-populated during **Release Label Merge** for Vlocity release labels. The field remained blank and required manual input, unlike non-Vlocity release label merges.
+
+With this fix, Board Type is automatically populated from the selected Vlocity release label and repository configuration for both release label and commit label merge workflows.
+
+#### CI Job DynamoDB Throughput Error Fix
+
+Fixed an issue where CI Jobs could fail during build processing with a DynamoDB throttling error indicating that throughput exceeded the current table or index capacity.
+
+With this fix, CI Job processing handles this condition correctly so scheduled, webhook, pull request, and parallel CI Job executions can complete without this failure.
+
+#### Quick Deploy After Validate Only Fix
+
+Fixed an issue where **Quick Deploy** was unavailable after a successful **Validate Only** deployment to a Production org when the test level was set to **Salesforce Defaults**. In the Classic UI, the label name was disabled. In the New UI, a valid Asynchronous ID was not available for selection.
+
+With this fix, Quick Deploy is available after a successful Validate Only deployment to Production when using Salesforce Defaults. The label name is populated and ARM-generated Asynchronous IDs are available. Quick Deploy remains unavailable after Validate Only on non-production orgs when Salesforce Defaults are used, which is expected.
+
+#### Branching Baseline Commit Log Fix
+
+Fixed an issue where initiating a **Branch Baseline** could fail with a UI exception while loading commit logs, including the message **Error parsing SCM commit log file**. Concurrent access to the commit log file could corrupt the file and block the baseline.
+
+With this fix, ARM locks the commit log file during read and write operations and releases the lock when the operation completes. Branch Baseline can retrieve commit logs and proceed even when push protection is enabled or configuration files such as `.gitignore` and `package.xml` are missing from the branch.
+
 ## ARM **Release Notes 26.3.8**
 
 **Release Date: 23 Aug 2026**

@@ -30,23 +30,17 @@ Fixed an issue where an ECA-enabled Salesforce org could be locked out with an *
 
 With this fix, ARM coordinates refresh-token rotation for the same org so concurrent CI Job and EZ-Commit operations can complete without invalidating each other’s session. Re-authorization restores org connectivity when needed, and single-operation workflows are unchanged.
 
-\{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca" %\}
-
 #### OAuth and OAuth-with-ECA Registration and Re-Authorization Fix
 
 Fixed issues where Salesforce org registration and re-authorization failed in several OAuth flows. OAuth to **OAuth-with-ECA** re-authorization did not complete, new OAuth registrations and re-authorization below API version 64 failed, and OAuth to OAuth-with-ECA re-authorization failed when **PKCE** was disabled.
 
 With this fix, PKCE is supported for the standard OAuth flow as well as OAuth via ECA. Registration, re-authorization, token refresh, and test connection succeed with PKCE enabled or disabled, including when converting an existing org from OAuth to **OAuth via ECA**.
 
-\{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca" %\}
-
 #### EZ-Merge Git Push Status Fix
 
 Fixed an issue where **EZ-Merge** could be marked **Successful** when the remote Git push was rejected, for example by branch protection rules. The locally created commit revision was still shown as successful, and users had to inspect logs to discover that the push had failed.
 
 With this fix, ARM validates the remote Git push result before marking the merge complete. If the push is rejected, the merge is marked **Failed**, the local commit revision is not shown as a successful revision, and the Git rejection error is displayed to the user. Merges that push successfully continue to be marked **Successful**.
-
-\{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/ez-merge" %\}
 
 #### Revision Number Display Fix in Commits, Merges, and CI Jobs
 

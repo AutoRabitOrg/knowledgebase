@@ -12,22 +12,22 @@
 
 Resolved an issue where Restore job summaries did not display all selected metadata types.\
 The summary previously showed only `Network` and `NetworkBranding` in affected restore executions.\
-Vault now includes `DigitalExperience`, `DigitalExperienceBundle`, `ExperienceBundle`, and other selected metadata types. This provides an accurate view of the metadata processed by the Restore job.
+AutoRABIT Vault now includes `DigitalExperience`, `DigitalExperienceBundle`, `ExperienceBundle`, and other selected metadata types. This provides an accurate view of the metadata processed by the Restore job.
 
 **Successful Restoration of NetworkBranding Metadata**
 
 Resolved an issue that caused `NetworkBranding` metadata restores to fail with a missing `primaryColor` error.\
 The failure occurred even when the backup containing the same metadata completed successfully.\
-Vault now handles the required field correctly during the EZ Restore operation. This allows `NetworkBranding` metadata to be restored without the previous validation failure.
+AutoRABIT Vault now handles the required field correctly during the EZ Restore operation. This allows `NetworkBranding` metadata to be restored without the previous validation failure.
 
 **Salesforce Org Reauthentication Using Valid Client Credentials**
 
-Resolved an incorrect **Invalid Client ID and Client Secret** error during Salesforce org reauthentication. The issue affected existing orgs configured through the Client Credentials authentication flow. Vault now validates the provided Client ID and Client Secret correctly during reauthentication. This prevents valid Salesforce org connections from being rejected unnecessarily.
+Resolved an incorrect **Invalid Client ID and Client Secret** error during Salesforce org reauthentication. The issue affected existing orgs configured through the Client Credentials authentication flow. AutoRABIT Vault now validates the provided Client ID and Client Secret correctly during reauthentication. This prevents valid Salesforce org connections from being rejected unnecessarily.
 
 **Improved Timeout Handling for Large Live Data Masking Jobs**
 
 Resolved an issue causing Live Data Masking jobs to fail when large Salesforce queries timed out.\
-Previously, Vault repeated the same query until all retry attempts were exhausted. Vault now retries timed-out queries only once and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
+Previously, AutoRABIT Vault repeated the same query until all retry attempts were exhausted. AutoRABIT Vault now retries timed-out queries only once and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
 
 **Incremental Record Selection for Scheduled Live Data Masking**
 
@@ -37,7 +37,7 @@ Each run can process newly created records, newly updated records, both record t
 **Retry Failed Records in Live Data Masking Rollback Jobs**
 
 Added a **Retry** option for failed Live Data Masking rollback jobs.\
-Vault retries only the records that failed during the selected rollback without reprocessing successful records. The retry results identify newly successful records, remaining failures, and the associated failure details. Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
+AutoRABIT Vault retries only the records that failed during the selected rollback without reprocessing successful records. The retry results identify newly successful records, remaining failures, and the associated failure details. Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
 
 ***
 

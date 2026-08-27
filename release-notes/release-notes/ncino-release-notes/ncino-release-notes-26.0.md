@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.3.8 <a href="#release-notes-ncinodl-26.3.8" id="release-notes-ncinodl-26.3.8"></a>
+## nCino - Release 26.3.8 <a href="#ncino-release-26.3.8" id="ncino-release-26.3.8"></a>
 
 **Release Date: 23 Aug 2026**
 

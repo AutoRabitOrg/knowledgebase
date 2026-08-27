@@ -127,7 +127,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 
 **Additional Deployment Options**
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Validate Only:** With ARM, you can set up validation-only CI jobs between your Salesforce Orgs or Version Control, so you can catch any problematic changes early and make sure that when the time comes to deploy, you’ll be able to release successfully. All success and error messages are displayed on the CI Job Result page.&#x20;
    * **Prevent Deployment:** With AR 20.1 release onward, ARM will make sure that you do not trigger a build deployment for the validation-only CI jobs. Therefore, the **Deploy** option will either be in disabled mode or in some cases, will not be seen to the user whenever trying to trigger a new build for the validation-only CI jobs.

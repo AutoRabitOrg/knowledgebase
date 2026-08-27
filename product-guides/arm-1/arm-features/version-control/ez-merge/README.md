@@ -33,7 +33,7 @@ The merge process is generally performed when a feature is ready for user testin
 2. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
 3. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **`Merge Type`** from the dropdown:
    * `Entire Branch`&#x20;
@@ -42,7 +42,7 @@ The merge process is generally performed when a feature is ready for user testin
    * `Release Label`
    * `ALM Label`
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 
@@ -62,7 +62,7 @@ Merge a Single Revision from the Commits that you have performed. You can either
 
 <figure><img src="../../../../../.gitbook/assets/image (2772).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png>)
+![](<../../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png>)
 
 **`Get Latest HEAD`** points out the last commit in the current checkout branch.
 
@@ -201,14 +201,14 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 2. **Automatic Skipping of Prevalidation Criteria**:
    * The pre-validation criteria will be automatically skipped during the back-merge process.
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 1. **Back Merge Indicator**:
    * After performing the merge, you will see an indicator confirming that the validation is being skipped automatically as it is a back merge.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Prevalidate Merge <a href="#prevalidate-merge" id="prevalidate-merge"></a>
 

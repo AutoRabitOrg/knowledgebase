@@ -6,7 +6,7 @@
 2. Observe the jobs created and ran for the configs created.
 3.  Upon clicking any of the job labels, you can see job-related details such as METADATA & DATA.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  You can find the “Replicate Source Info” by clicking on the info icon.<br>

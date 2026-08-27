@@ -82,7 +82,7 @@ There are no new features associated with this release.
         <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     *   Verified that a violation is thrown if not used with sharing, without sharing, or inherited sharing.
 
-        <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE**: This rule overlaps with the **ClassExplicitSharing** rule and will always overlap with violations for outer classes. This rule has been created to:
@@ -118,7 +118,7 @@ If both rules are active, check the violations that were reported and disable on
         <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     2.  Rule is not throwing the violation if isAccessible is checked for the objects used in the inner query.
 
-        <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
     **REMINDER**: In the previous release, we added support for SYSTEM\_MODE in this rule. A new parameter has been added, allowing users to choose true or false to include or ignore violations related to SYSTEM\_MODE.\
     \
@@ -134,13 +134,13 @@ If both rules are active, check the violations that were reported and disable on
     \
     Also, the text in the “Branches” menu did not reflect the branch retention length change:
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
     Verified the Retention Period fix for the following scenarios:
 
     1.  In the UI, users are able to set **Delete inactive branches and PRs after** value:
 
-        <figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
     2.  Users are able to see the same branch retention length value on the **Branches & Pull Requests** page.<br>
 
         <figure><img src="../../../../.gitbook/assets/image (1585).png" alt=""><figcaption></figcaption></figure>

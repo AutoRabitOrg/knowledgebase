@@ -1259,7 +1259,6 @@
         * [Salesforce Client Credentials Configuration](product-guides/vault/configuring-vault/salesforce-org-setup/register-salesforce-org-client-credentials-flow/salesforce-client-credentials-configuration.md)
         * [Salesforce Integration User Setup](product-guides/vault/configuring-vault/salesforce-org-setup/register-salesforce-org-client-credentials-flow/salesforce-integration-user-setup.md)
         * [API Only System Admin Configuration and Client Credentials](product-guides/vault/configuring-vault/salesforce-org-setup/register-salesforce-org-client-credentials-flow/api-only-system-admin-configuration-and-client-credentials.md)
-      * [Register Salesforce ORG - Client Credentials Flow - 1](product-guides/vault/configuring-vault/salesforce-org-setup/register-salesforce-org-client-credentials-flow-1.md)
       * [Set up backup configuration for Salesforce Org](product-guides/vault/configuring-vault/salesforce-org-setup/setup-backup-configuration-for-salesforce-org.md)
       * [Archival Configuration](product-guides/vault/configuring-vault/salesforce-org-setup/archival-configuration.md)
       * [Unique Identifier (UID)](product-guides/vault/configuring-vault/salesforce-org-setup/unique-identifier-uid.md)

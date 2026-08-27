@@ -1,24 +1,22 @@
-# 1 AutoRABIT\_Vault\_Client\_Credentials\_Flow\_User\_Guide
-
-## Register a Salesforce Org Using the Client Credentials Flow
+# Register Salesforce ORG - Client Credentials Flow
 
 Configure and verify a server-to-server connection between AutoRABIT Vault and Salesforce.
 
-| **Audience:** Vault administrators and Salesforce administrators responsible for Salesforce org registration and External Client App configuration. |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Audience:** AutoRABIT Vault administrators and Salesforce administrators responsible for Salesforce org registration and External Client App configuration. |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Overview
 
 This guide explains how to register a Salesforce org in AutoRABIT Vault by using the Client Credentials Flow. The workflow collects the Salesforce org details, presents the External Client App requirements, validates the client credentials, and provides an API connection test after registration.
 
-| **Responsibility boundary:** Vault provides the Salesforce configuration requirements and validates the completed connection. A Salesforce administrator performs the External Client App configuration in the target Salesforce org. |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Responsibility boundary:** AutoRABIT Vault provides the Salesforce configuration requirements and validates the completed connection. A Salesforce administrator performs the External Client App configuration in the target Salesforce org. |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Before You Begin
 
 Confirm that the following access and information are available before starting the registration:
 
-* Access to the Vault Setup page and permission to register a Salesforce org.
+* Access to the AutoRABIT Vault Setup page and permission to register a Salesforce org.
 * Salesforce administrative access to create or configure an External Client App.
 * The Salesforce username that will run the integration.
 * The My Domain URL for the target Salesforce org.
@@ -44,9 +42,9 @@ Confirm that the following access and information are available before starting 
 
 #### Open Salesforce org management
 
-In Vault, select **Setup** from the navigation menu. On the **Salesforce Orgs List** page, select **REGISTER NEW ORG**.
+In AutoRABIT Vault, select **Setup** from the navigation menu. On the **Salesforce Orgs List** page, select **REGISTER NEW ORG**.
 
-_Figure 1. Start a new Salesforce org registration._
+&#x20;       _Start a new Salesforce org registration._
 
 #### Select the authentication method
 
@@ -84,23 +82,23 @@ _Figure 5. Enter the Salesforce org and environment details._
 {% step %}
 ### Configure the External Client App in Salesforce
 
-Vault displays the Salesforce configuration requirements for the External Client App. Complete these activities in the target Salesforce org before confirming the setup in Vault.
+AutoRABIT Vault displays the Salesforce configuration requirements for the External Client App. Complete these activities in the target Salesforce org before confirming the setup in AutoRABIT Vault.
 
 #### Review the configuration checklist
 
-Review the initial Salesforce Admin Setup instructions displayed in Vault.
+Review the initial Salesforce Admin Setup instructions displayed in AutoRABIT Vault.
 
 _Figure 6. Review the External Client App setup requirements._
 
 #### Configure authentication and access policies
 
-In Salesforce, create or update the External Client App using the OAuth flow, scopes, policies, Run As user, and IP relaxation settings specified in Vault.
+In Salesforce, create or update the External Client App using the OAuth flow, scopes, policies, Run As user, and IP relaxation settings specified in AutoRABIT Vault.
 
 _Figure 7. Review the OAuth scopes and policy requirements._
 
 #### Copy the callback URL and confirm the scopes
 
-Select **Copy** beside the callback URL and add the copied value to the External Client App. Add every OAuth scope listed by Vault.
+Select **Copy** beside the callback URL and add the copied value to the External Client App. Add every OAuth scope listed by AutoRABIT Vault.
 
 _Figure 8. Copy the callback URL and confirm the required OAuth scopes._
 
@@ -160,7 +158,7 @@ _Figure 14. Start credential verification and save the org._
 
 #### Allow verification to complete
 
-Vault validates the supplied configuration. Do not close the registration window while verification is in progress.
+AutoRABIT Vault validates the supplied configuration. Do not close the registration window while verification is in progress.
 
 _Figure 15. Credential verification in progress._
 {% endstep %}
@@ -170,7 +168,7 @@ _Figure 15. Credential verification in progress._
 
 #### Confirm successful registration
 
-When verification succeeds, Vault displays **Connection Successful** and confirms that the Salesforce org has been registered.
+When verification succeeds, AutoRABIT Vault displays **Connection Successful** and confirms that the Salesforce org has been registered.
 
 _Figure 16. Confirm successful Salesforce org registration._
 
@@ -182,7 +180,7 @@ _Figure 17. Start the API connection test._
 
 #### Allow the connection test to complete
 
-Vault tests the API connection. Remain on the page until the test completes.
+AutoRABIT Vault tests the API connection. Remain on the page until the test completes.
 
 _Figure 18. API connection test in progress._
 
@@ -200,8 +198,8 @@ The Salesforce org is registered in AutoRABIT Vault through the Client Credentia
 
 ## Troubleshooting
 
-| **Issue**                     | **Check**                                                                                               | **Recommended action**                                                                                    |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| Callback URL is rejected      | The callback URL in Salesforce does not match the value displayed in Vault.                             | Copy the callback URL again and remove any added spaces or characters.                                    |
-| Credential verification fails | The Client ID, Client Secret, My Domain URL, or Run As user may not match the Salesforce configuration. | Compare the values in Vault with the configured External Client App and correct any differences.          |
-| API connection test fails     | The app policies, OAuth scopes, or Salesforce user permissions may be incomplete.                       | Expand **Common Issues & Troubleshooting** in the registration flow and validate each listed requirement. |
+| **Issue**                     | **Check**                                                                                               | **Recommended action**                                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Callback URL is rejected      | The callback URL in Salesforce does not match the value displayed in AutoRABIT Vault.                   | Copy the callback URL again and remove any added spaces or characters.                                     |
+| Credential verification fails | The Client ID, Client Secret, My Domain URL, or Run As user may not match the Salesforce configuration. | Compare the values in AutoRABIT Vault with the configured External Client App and correct any differences. |
+| API connection test fails     | The app policies, OAuth scopes, or Salesforce user permissions may be incomplete.                       | Expand **Common Issues & Troubleshooting** in the registration flow and validate each listed requirement.  |

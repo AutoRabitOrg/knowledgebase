@@ -2,6 +2,35 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.3.9 <a href="#ncino-release-26.3.8" id="ncino-release-26.3.8"></a>
+
+**Release Date: 30 Aug 2026**
+
+**Corrected Feature Cloning and Version Creation**
+
+Resolved an issue where feature version operations could incorrectly create a separate feature because the feature prefix was applied improperly. Cloning and version creation now follow the expected behavior for standard and community templates in both the existing and new user interfaces.
+
+**Approval Setting Deletion Not Retained**
+
+Resolved an issue where deleting an nCino approval setting for a Salesforce org was not persisted after saving. Deleted settings now remain removed when the approval configuration is reopened.
+
+**Improved Approval Reminder and Auto-Rejection Processing**
+
+Resolved an issue that could interrupt approval reminder processing across Salesforce orgs.\
+Log handling and executor shutdown have been corrected to prevent processing failures and thread leakage. Day 7 and Day 12 reminders and Day 14 automatic rejections are now processed reliably.
+
+**Sorting Criteria Not Saved for Commit-Only CI Jobs**
+
+Resolved an issue where **Sorting Criteria** configured for an nCino CI Job using the **Commit Only** trigger were not saved. The configured criteria are now retained and applied during job execution.
+
+**Improved User Interface Behavior**
+
+Resolved multiple user interface issues affecting queue notifications, filter behavior, and filter status indicators. Feature versions now reset correctly when the selected feature changes, and clearing filters no longer causes errors. The **Apply** button also remains unavailable until the required version data finishes loading.
+
+**Pre-Deployment Backup for All Objects**
+
+nCino now completes the backup of all objects included in a deployment before executing any deployment changes. The deployment proceeds only after every required object is backed up successfully. If any backup fails, the deployment is stopped to ensure that a complete recovery point remains available.
+
 ## nCino - Release 26.3.8 <a href="#ncino-release-26.3.8" id="ncino-release-26.3.8"></a>
 
 **Release Date: 23 Aug 2026**

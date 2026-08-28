@@ -78,6 +78,19 @@ Fixed an issue where initiating a **Branch Baseline** could fail with a UI excep
 
 With this fix, ARM locks the commit log file during read and write operations and releases the lock when the operation completes. Branch Baseline can retrieve commit logs and proceed even when push protection is enabled or configuration files such as `.gitignore` and `package.xml` are missing from the branch.
 
+***
+
+## DataLoader + DataLoader Pro Release Notes **26.3.9**
+
+**Release Date:** **30 Aug 2026**
+
+Data Loader Pro Job Configuration Settings Not Retained
+
+Resolved an issue where selected Data Loader Pro job settings were not retained during execution.\
+Options such as disabling workflows and validation rules and processing null values are now saved and applied correctly.
+
+***
+
 ## ARM **Release Notes 26.3.8**
 
 **Release Date: 23 Aug 2026**

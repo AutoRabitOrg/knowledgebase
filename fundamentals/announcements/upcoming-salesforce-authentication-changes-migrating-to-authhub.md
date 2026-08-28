@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Upcoming Salesforce Authentication Changes: Migrating to AuthHub
 
 ## Overview&#x20;

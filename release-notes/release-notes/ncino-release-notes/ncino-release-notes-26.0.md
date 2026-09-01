@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.3.9 <a href="#ncino-release-26.3.8" id="ncino-release-26.3.8"></a>
+## nCino - Release 26.3.9 <a href="#ncino-release-26.3.9" id="ncino-release-26.3.9"></a>
 
 **Release Date: 30 Aug 2026**
 
@@ -30,6 +30,8 @@ Resolved multiple user interface issues affecting queue notifications, filter be
 **Pre-Deployment Backup for All Objects**
 
 nCino now completes the backup of all objects included in a deployment before executing any deployment changes. The deployment proceeds only after every required object is backed up successfully. If any backup fails, the deployment is stopped to ensure that a complete recovery point remains available.
+
+***
 
 ## nCino - Release 26.3.8 <a href="#ncino-release-26.3.8" id="ncino-release-26.3.8"></a>
 

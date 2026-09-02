@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Upcoming Salesforce Authentication Changes for New AutoRABIT Guard Connections
 
 ## Overview&#x20;

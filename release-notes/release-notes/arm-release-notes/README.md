@@ -2,6 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.9.1**
+
+**Release Date: 2 Sep 2026**
+
+#### Salesforce Winter ’27 (API 68.0) Deploy Result Parsing Fix
+
+Fixed an issue that caused EZ-Merge, deployments, and CI Jobs to fail after Salesforce upgraded sandboxes to Winter ’27 (API 68.0). When an Apex test level was selected, ARM could not parse the updated Metadata API deploy result and failed with "Cannot invoke "com.sforce.soap.metadata.DeployDetails.getComponentFailures()" because "deployDetails" is null". Validations that ran without a test level completed successfully, and the same deployment could succeed directly in Salesforce. ARM Salesforce libraries are now updated to API 68.0 so deploy results and test coverage responses parse correctly across all Apex test levels.
+
+**Impacted Areas:**
+
+* EZ-Merge
+* Deployments
+* CI Jobs
+* Pre-Validated Commit
+* Pre-Validated Merge
+* Salesforce Code Coverage Reports
+
+***
+
 ## ARM **Release Notes 26.3.9**
 
 **Release Date: 30 Aug 2026**

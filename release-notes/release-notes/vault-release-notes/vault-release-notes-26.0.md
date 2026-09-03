@@ -1,6 +1,6 @@
 # AutoRABIT Vault Release Notes 26.0
 
-<figure><img src="../../../.gitbook/assets/Vault_Banner 1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/qz78m5azLmHMNWukXKsS" alt=""><figcaption></figcaption></figure>
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
 

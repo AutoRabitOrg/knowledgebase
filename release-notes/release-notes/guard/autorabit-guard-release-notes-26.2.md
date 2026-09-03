@@ -1,6 +1,6 @@
 # AutoRABIT Guard Release Notes 26.2
 
-<figure><img src="../../../.gitbook/assets/Guard_Banner 2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Guard_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive Guard updates!" %}
 

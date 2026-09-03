@@ -1,6 +1,6 @@
 # AutoRABIT Vault Release Notes
 
-<figure><img src="../../../.gitbook/assets/Vault_Banner 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/2WTXEFNGCKLK2EUtW78L" alt=""><figcaption></figcaption></figure>
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT Vault release notes!" listId="a085e26e7e" %}
 

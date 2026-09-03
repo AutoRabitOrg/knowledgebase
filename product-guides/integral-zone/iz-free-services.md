@@ -2,7 +2,7 @@
 
 ## IZ Free Services - Scope, Limits & Data Retention
 
-**Scope**. The following Integral Zone offerings are "Free Services" under the AutoRABIT Master Software Agreement: the IZ Suite trial license, the IZ Analyzer Community Edition, the IZ Analyzer Free Services organization subscription, and the IZ Analyzer/Scan IDE trial license. Free Services are provided "AS-IS," without warranty, service level commitment, support, or indemnity.&#x20;
+**Scope**. The following Integral Zone offerings are "Free Services" under the AutoRABIT Master Software Agreement: the IZ Suite trial license, the IZ Analyzer Free Services organization subscription, and the IZ Analyzer/Scan IDE trial license. Free Services are provided "AS-IS," without warranty, service level commitment, support, or indemnity.&#x20;
 
 **Duration**.&#x20;
 

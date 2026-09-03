@@ -1,8 +1,10 @@
 # Integral Zone
 
+<figure><img src="../../.gitbook/assets/IZ_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
+
 ## Welcome to Integral Zone
 
-### Extend AutoRABIT governance into your MuleSoft integration lifecycle.
+**Extend AutoRABIT governance into your MuleSoft integration lifecycle.**
 
 Integral Zone brings MuleSoft-focused API quality, security, governance, and delivery automation into the AutoRABIT platform experience. For teams building business-critical integrations, it helps make every API and project easier to review, document, secure, and release with confidence.
 
@@ -21,4 +23,4 @@ For existing AutoRABIT customers, Integral Zone expands the same focus on DevSec
 
 Whether your team is modernizing delivery, strengthening security, preparing for audits, or scaling integration development, Integral Zone helps bring structure, automation, and confidence to every stage of the MuleSoft lifecycle.
 
-### Build faster. Govern earlier. Deliver integrations with confidence.
+**Build faster. Govern earlier. Deliver integrations with confidence.**

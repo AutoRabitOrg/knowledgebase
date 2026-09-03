@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # Data Gen - Beta
 
 Data Gen introduces intelligent synthetic test data generation for Salesforce environments.

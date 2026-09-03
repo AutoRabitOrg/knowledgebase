@@ -1,6 +1,6 @@
 # Cloud Release Notes 26.0
 
-<figure><img src="../../../../.gitbook/assets/codescan 2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/CodeScan_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 

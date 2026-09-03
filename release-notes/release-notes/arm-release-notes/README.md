@@ -1,6 +1,6 @@
 # ARM Release Notes
 
-<figure><img src="../../../.gitbook/assets/ARM_Banner.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
 ## ARM **Release Notes 26.3.9.1**
 

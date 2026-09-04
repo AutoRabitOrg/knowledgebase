@@ -4,6 +4,80 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.20
+
+**Release Date: 6 September 2026**
+
+### Summary
+
+CodeScan 26.0.20 is comprised of the following components:
+
+* 0 New Features
+* 1 Application Enhancement
+* 0 New Rules
+* 0 Rule Enhancements
+* 0 Rule Deprecations
+* 2 Fixes
+* 0 Revenue Org Improvements
+* 1 Architecture Improvement
+* 0 Adjustments
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+There are no New Features in this release.
+
+### Application Enhancements
+
+#### AI Code Assistant Prompt Quality Improvement
+
+Improved AI CodeFix prompts to prevent the LLM from injecting prose, reasoning, or explanatory text into the generated code output. The worker expects only the fixed code from the AI model, but in some cases the model would include its reasoning alongside the code, which could get merged into the fixed file as if it were source code.
+
+**Behavior**
+
+* Prompts have been tightened to instruct the model to return code-only output without explanatory text.
+* Reduces cases where AI-generated fixes contain non-code content that could break compilation.
+
+**Outcome**
+
+* Improves the reliability of AI-generated code fixes.
+* Reduces manual cleanup of AI output before Pull Request creation.
+
+### Fixes
+
+#### Username Whitespace Validation on Signup
+
+Fixed an issue where users could sign up by entering only whitespace characters in the Username field. Although the field is required, the validation did not prevent whitespace-only values in production instances.
+
+**Behavior**
+
+* Username validation now rejects whitespace-only input during signup.
+* Consistent behavior is enforced across all environments.
+
+**Outcome**
+
+* Prevents creation of user accounts with invalid, whitespace-only usernames.
+* Ensures consistent signup validation across production and lower environments.
+
+#### New Code Highlighting Accuracy for Salesforce Metadata
+
+Resolved an issue where new code highlighting could misalign with the actual changed lines in Salesforce metadata files during Pull Request analysis. When an object permission block was added, the system would incorrectly display new code markers on other, unchanged object permission blocks.
+
+**Behavior**
+
+* Diff generation for Salesforce metadata files (`.sfmeta`) now uses native Git CLI instead of the JGit Myers diff algorithm, which produces more accurate line-level change detection for structured XML metadata.
+* Apex classes (`.cls`) and Visualforce pages (`.vf`) continue to use the existing diff method.
+* The Git CLI diff mode is controlled by a feature flag that can be toggled per project.
+
+**Outcome**
+
+* Eliminates false new code highlighting on unchanged metadata blocks.
+* Improves accuracy of PR-based analysis results for Salesforce metadata files.
+* Ensures reported violations align with the actual changed lines.
+
+***
+
 ## CodeScan Release Notes 26.0.19
 
 **Release Date: 23 August 2026**

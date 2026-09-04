@@ -1,5 +1,7 @@
 # AutoRABIT App Installation and Configuration Guide
 
+
+
 {% hint style="info" %}
 This guide is intended for the Salesforce administrator responsible for installing and configuring AutoRABIT in your organization. It walks you through package installation, required Salesforce OAuth settings, AutoRABIT Connector authorization, product enablement, permission assignment, and final Salesforce org registration in your licensed AutoRABIT products.&#x20;
 {% endhint %}
@@ -113,7 +115,7 @@ Salesforce may request approval for access to login.salesforce.com and test.sale
 <figure><img src="../../../.gitbook/assets/image (2821).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Why this is require**d**
+**Why this is required**
 
 The package requires these Salesforce endpoints so your AutoRABIT applications can complete the authentication and connectivity flow shown in this procedure.
 {% endhint %}
@@ -235,7 +237,7 @@ Open the AutoRABIT product your organization is licensed to use and sign in with
 <figure><img src="../../../.gitbook/assets/image (2837).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;Credential handlng
+**Credential handling**
 
 Client Secret values are sensitive. Copy them only into the intended connector field and avoid placing them in tickets, chat messages, or documentation.
 {% endhint %}
@@ -299,7 +301,7 @@ The Add New Org dialog displays the Subdomain, Client ID, and Client Secret. Cop
 Click “Authorize” in AutoRABIT Connector to complete the outbound connection.
 
 {% hint style="info" %}
-&#x20;Other Products
+**Other Products**
 
 The source procedure names CodeScan, Vault, and ARM as additional product paths but does not include separate screenshots for retrieving their connector values. Use the product-specific location that exposes the same Subdomain, Client ID, and Client Secret required by the Outbound Connection.
 {% endhint %}
@@ -317,8 +319,6 @@ After both system connections are authorized, close Configuration and open the �
 For products your organization is licensed to use, the connector displays an enable/disable toggle. Enabled products can see the registered Salesforce org in the related AutoRABIT application. If the toggle is off, that product cannot use the org in its configuration.
 
 <figure><img src="../../../.gitbook/assets/image (2847).png" alt=""><figcaption></figcaption></figure>
-
-<table data-header-hidden><thead><tr><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p>DEFAULT BEHAVIOR</p><p>After the org is registered, available licensed products are enabled by default in the flow shown. Turn off a product only when the org should not be exposed to that application.</p></td></tr></tbody></table>
 
 {% hint style="info" %}
 &#x20;**Default behavior**

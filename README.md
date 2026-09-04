@@ -4,55 +4,20 @@ description: Your Source of Truth for All Things AutoRABIT
 
 # Welcome to the Knowledge Base
 
-**The Knowledge Base** is a centralized, always-evolving source for technical documentation, product guidance, release notes, FAQs, and operational support across the AutoRABIT ecosystem. Whether you’re leading enterprise-scale transformation or optimizing daily flows, this is where insight meets action.
+The **Knowledge Base** is your centralized, always-evolving source for technical documentation across the entire AutoRABIT ecosystem.&#x20;
 
-#### Built for Precision at Scale
+Get AI-powered search support, visit our release notes, check out our FAQs, and view AutoRABIT product guides using the links below.&#x20;
 
-AutoRABIT is not just a toolset, it’s a system. Our enterprise-grade DevSecOps platform is purpose-built for Salesforce, enabling controlled speed, secure scalability, and intelligent automation across development, compliance, and data management workflows.
+<button type="button" class="button primary" data-action="ask" data-icon="gitbook-assistant">Ask a question…</button><a href="https://app.gitbook.com/s/9vAxMuDrkUkB4OXlH9CL/release-notes" class="button secondary" data-icon="rotate">Visit release notes</a><a href="fundamentals/faq/" class="button secondary" data-icon="lightbulb-on">View FAQs</a><a href="https://app.gitbook.com/s/9vAxMuDrkUkB4OXlH9CL/product-guides" class="button secondary" data-icon="layer-plus">Product Guides</a>
 
-**Our ecosystem includes:**
+## Built for Precision at Scale
 
-* **AutoRABIT** [**ARM**](product-guides/arm/)**:** Structured CI/CD pipelines for Salesforce. Aligns governance with acceleration.
-* **AutoRABIT** [**CodeScan**](product-guides/codescan/)**:** Industry leading static analysis to enforce quality and secure code before it ships.
-* **AutoRABIT** [**Vault**](product-guides/vault/)**:** Resilient, compliant backup and recovery tailored for complex Salesforce data models.
-* **AutoRABIT** [**Guard**](product-guides/guard.md)**:** Real-time permission intelligence and compliance automation. Prevents access risk before it becomes exposure.
-* [**Integral Zone**](product-guides/integral-zone/)**:** MuleSoft-focused API quality, security, governance, and delivery automation.
+AutoRABIT is not just a toolset; it’s an ecosystem. Our enterprise-grade DevSecOps platform is purpose-built for Salesforce, enabling controlled speed, secure scalability, and intelligent automation across development, compliance, and data management workflows.
 
-Together, these products form the industry’s most complete DevSecOps solution for Salesforce, trusted by the most security-conscious and performance-driven teams in the world.
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th><th data-type="content-ref"></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h4>AutoRABIT ARM</h4></td><td><a href="product-guides/arm/">arm</a></td><td><a href="product-guides/arm-1/">arm-1</a></td><td>Structured CI/CD pipelines for Salesforce. Aligns governance with acceleration.</td><td><a href="product-guides/arm-1/">arm-1</a></td><td><h4><i class="fa-layer-plus" style="color:$primary;">:layer-plus:</i></h4></td><td><a href=".gitbook/assets/ARM_Banner_1920x1080 (1).png">ARM_Banner_1920x1080 (1).png</a></td></tr><tr><td><h4>AutoRABIT CodeScan</h4></td><td><a href="product-guides/codescan/">codescan</a></td><td></td><td>Industry-leading static analysis to enforce quality and secure code before it ships.</td><td><a href="product-guides/codescan/">codescan</a></td><td><h4><i class="fa-grid-4" style="color:$primary;">:grid-4:</i></h4></td><td><a href=".gitbook/assets/CodeScan_1920x1080 (1).png">CodeScan_1920x1080 (1).png</a></td></tr><tr><td><h4>AutoRABIT Vault</h4></td><td><a href="product-guides/vault/">vault</a></td><td></td><td>Resilient, compliant backup and recovery tailored for complex Salesforce data models.</td><td><a href="product-guides/vault/">vault</a></td><td><h4><i class="fa-memory" style="color:$primary;">:memory:</i></h4></td><td><a href=".gitbook/assets/Vault_Banner_1920x1080.png">Vault_Banner_1920x1080.png</a></td></tr><tr><td><h4>AutoRABIT Guard</h4></td><td><a href="product-guides/guard.md">guard.md</a></td><td></td><td>Real-time permission intelligence and compliance automation. Prevents access risk before it becomes exposure.</td><td><a href="product-guides/guard.md">guard.md</a></td><td><h4><i class="fa-binoculars" style="color:$primary;">:binoculars:</i></h4></td><td><a href=".gitbook/assets/Guard_Banner_1920x1080 (1).png">Guard_Banner_1920x1080 (1).png</a></td></tr><tr><td><h4><strong>AutoRABIT Integral Zone</strong></h4></td><td><a href="product-guides/integral-zone/">integral-zone</a></td><td></td><td>MuleSoft-focused API quality, security, governance, and delivery automation.</td><td><a href="product-guides/integral-zone/">integral-zone</a></td><td><h4><i class="fa-rotate" style="color:$primary;">:rotate:</i></h4><h4>Integral Zone</h4></td><td><a href=".gitbook/assets/IZ_Banner_1920x1080 (1).png">IZ_Banner_1920x1080 (1).png</a></td></tr></tbody></table>
 
-#### What You’ll Find Here
+## Quick Access
 
-* [**AI-Powered Search**](https://knowledgebase.autorabit.com/?q=)\
-  Precision answers, fast. Use our embedded AI assistant to extract exact steps, explanations, and insights from our full documentation library.
-* [**Release Notes**](release-notes/release-notes/)\
-  Stay informed. Track feature updates, patch releases, and roadmap-aligned improvements - built for enterprise-readiness.
-* [**Step-by-Step Product Guides**](https://app.gitbook.com/s/9vAxMuDrkUkB4OXlH9CL/product-guides)\
-  From initial configuration to advanced workflows, our user guides provide structured clarity for every role and function.
-* [**Troubleshooting & FAQs**](fundamentals/faq/)\
-  Self-serve solutions to unblock your team and reduce downtime.
-* **How-To Tutorials**\
-  Get practical. Resolve common challenges, optimize configurations, and apply best practices confidently.
-
-{% @mailchimp/mailchimpSubscribe cta="Release Notes Mailing List:" %}
-
-***
-
-#### Can’t Find What You’re Looking For?
-
-[_**Suggest an Update via GitHub**_](https://github.com/AutoRabitOrg/knowledgebase) _**(Recommended)**_
-
-Have a clarification, correction, or improvement in mind? Every page in this Knowledge Base includes an **“Edit on GitHub”** button in the right-hand sidebar. This opens a GitHub Pull Request pre-linked to the exact page, so you can propose updates directly—whether it’s adding missing context, flagging outdated content, or refining explanations.
-
-Your suggestions help us evolve the documentation in real time—driven by the people who use it most.
-
-If there’s a concept, use case, or integration we haven’t covered yet, let us know. Our documentation team partners closely with product and support to continuously expand coverage based on real-world needs.
-
-[\[Contact the Documentation Team via Support →\]](https://support.autorabit.com/portal/en/newticket?departmentId=241415000000006907\&layoutId=241415000000074011)
-
-***
-
-#### Quick Access
-
-* [**AutoRABIT Solutions Overview**](https://www.autorabit.com/)
-* [**LearningHub: Onboarding & Certifications**](https://learninghub.autorabit.com/)
-* [**Product Release Notes**](release-notes/release-notes/)
+* [**AutoRABIT Solutions Overview**](https://www.autorabit.com/)**:** The Enterprise Platform for DevSecOps.
+* [**AutoRABIT Learning Hub**](https://learninghub.autorabit.com/)**:** Extend your AutoRABIT learning and collaborate with the AutoRABIT community.&#x20;
+* [**AutoRABIT Support Portal**](https://support.autorabit.com/portal/en/newticket?departmentId=241415000000006907\&layoutId=241415000000074011): Raise a ticket to contact the Documentation Team.

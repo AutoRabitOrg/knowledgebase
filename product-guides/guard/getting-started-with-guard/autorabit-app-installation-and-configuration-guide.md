@@ -210,8 +210,6 @@ The System Connections page contains two authorization areas. Start with Inbound
 
 <figure><img src="../../../.gitbook/assets/image (2834).png" alt=""><figcaption></figcaption></figure>
 
-<table data-header-hidden><thead><tr><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><p>INTEGRATION USER REQUIREMENT</p><p>If you are currently signed in as a different Salesforce user than the intended integration user, use the “Not you?” option on the Salesforce authorization screen and sign in as the correct user. The account completing this authorization must have the “AutoRABIT Setup User” permission set assigned before you continue.</p></td></tr></tbody></table>
-
 {% hint style="info" %}
 &#x20;**Integration User requirement**
 
@@ -242,7 +240,7 @@ Open the AutoRABIT product your organization is licensed to use and sign in with
 Client Secret values are sensitive. Copy them only into the intended connector field and avoid placing them in tickets, chat messages, or documentation.
 {% endhint %}
 
-### Guard - first-time configuration
+## Guard - first-time configuration
 
 1\. Open the Guard onboarding flow
 
@@ -274,7 +272,7 @@ Return to AutoRABIT Connector in Salesforce and populate the Outbound Connection
 
 After all three values are entered, click “Authorize”. Confirm that the outbound connection changes to an authorized state before moving on.
 
-### Guard - adding another org later
+## Guard - adding another org later
 
 1\. Open Salesforce Orgs
 
@@ -306,7 +304,7 @@ Click “Authorize” in AutoRABIT Connector to complete the outbound connection
 The source procedure names CodeScan, Vault, and ARM as additional product paths but does not include separate screenshots for retrieving their connector values. Use the product-specific location that exposes the same Subdomain, Client ID, and Client Secret required by the Outbound Connection.
 {% endhint %}
 
-## 8. Enable Products and Assign Permissions
+## Enable Products and Assign Permissions
 
 1\. Open Products
 

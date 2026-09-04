@@ -48,7 +48,7 @@ Select the AutoRABIT Salesforce DevOps Platform listing from the search results.
 
 <figure><img src="../../../.gitbook/assets/image (2811).png" alt=""><figcaption></figcaption></figure>
 
-### Install in a Production or Developer Org
+## Install in a Production or Developer Org
 
 1\. Select Get It Now
 
@@ -80,7 +80,7 @@ Review the installation details, accept the Salesforce AppExchange terms and con
 
 <figure><img src="../../../.gitbook/assets/image (2816).png" alt=""><figcaption></figcaption></figure>
 
-### Install in a Sandbox
+## Install in a Sandbox
 
 1\. Select Try It
 

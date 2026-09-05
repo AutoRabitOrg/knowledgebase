@@ -2,6 +2,66 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+### ARM **Release Notes 26.3.10**
+
+**Release Date: 6 Sep 2026**
+
+#### API 67 Metadata Types – Enhancement
+
+ARM now supports the following Salesforce API 67 metadata types across commit, constructive changes, and deployment:
+
+* AdminSuccessSettings
+* AgentforceAccountManagementSettings
+* AgenticCtxtDecorDefinition
+* DataMaskPolicy
+* DataMaskSettings
+
+These types can be retrieved, compared, committed, and deployed when the org is on API 67.0 or later. Settings types can be updated but cannot be deleted, which matches Salesforce Metadata Coverage. Existing metadata types are unchanged.
+
+#### Run Tests Based on Changes Deployment Log – Enhancement
+
+When **Run Tests Based on Changes** is used, the deployment log previously showed only the final consolidated list of Apex test classes. It was not clear which classes came from the deployed Apex, dependency mapping, or default org test classes.
+
+With this enhancement, the deployment log lists:
+
+* Test classes identified from the Apex classes in the package
+* Default Apex test classes configured on the Salesforce org
+* The final consolidated list passed to Salesforce
+
+This applies to Version Control to Org and Org to Org deployments in both the Classic UI and the New UI.
+
+#### Data Retention Audit Cleanup Fix
+
+Fixed issues where the daily Data Retention job did not delete eligible **Workspace Audit** and **Mailer Audit** records. The job could report success while old audit rows were left in place.
+
+With this fix, ARM normalizes legacy audit values and completes Workspace Audit and Mailer Audit cleanup according to the configured retention period.
+
+#### Release Label and High-Volume Page Load Fix
+
+Fixed an issue where Release Labels and other high-volume pages could stop responding with a DynamoDB throughput error. Opening a label with a large number of revisions could leave the page stuck.
+
+With this fix, ARM retries and handles temporary DynamoDB capacity limits so Release Labels, CI Jobs, Deployments, EZ-Commit, EZ-Merge, Feature Migration, Data Loader, and Administration pages can load and complete.
+
+#### EZ-Commit Prompt Metadata File Diff Fix
+
+Fixed an issue where EZ-Commit file diff failed for **Prompt** metadata destructive changes with no matching SFDX folder type. After the diff, Prompt could also show **No Modifications** because the file extension was incorrect.
+
+With this fix, Prompt metadata is recognized in DX and Non-DX repositories. File diff and constructive and destructive commits complete, and Prompt files use the **.prompt-meta.xml** extension.
+
+#### EZ-Commit Picklist Record Type Scope Fix
+
+Fixed an issue where committing picklist changes on one object could show extra file changes on Record Types for other objects. Deactivating or activating picklist values on the selected object updated unrelated objects that shared similar picklist labels.
+
+With this fix, EZ-Commit applies picklist and Record Type updates only to the selected object in both DX and Non-DX repositories.
+
+#### Unused API Token Endpoint Removal
+
+Removed an unused API endpoint that returned API token values in the HTTP response body.
+
+Token creation and use in the application and the VS Code plugin are unchanged.
+
+***
+
 ## ARM **Release Notes 26.3.9.1**
 
 **Release Date: 2 Sep 2026**

@@ -2,6 +2,14 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.3.10 <a href="#ncino-release-26.3.9" id="ncino-release-26.3.9"></a>
+
+**Release Date: 06 Sep 2026**
+
+#### Reliable nCino Full and Delta CI Job Execution
+
+Resolved an issue that could cause scheduled or manually triggered nCino Full and Delta CI Jobs to fail with the **AR-1056** error. Temporary workspaces are now cleared after commits, deployments, and CI Job activities are completed. This prevents stale workspace information from affecting subsequent job executions.
+
 ## nCino - Release 26.3.9 <a href="#ncino-release-26.3.9" id="ncino-release-26.3.9"></a>
 
 **Release Date: 30 Aug 2026**

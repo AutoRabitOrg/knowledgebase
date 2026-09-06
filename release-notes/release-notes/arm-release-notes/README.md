@@ -62,6 +62,16 @@ Token creation and use in the application and the VS Code plugin are unchanged.
 
 ***
 
+## DataLoader + DataLoader Pro Release Notes **26.3.10**
+
+**Release Date:** **06 Sep 2026**
+
+Correct Empty Relationship Fields in Data Loader Exports
+
+Resolved an issue where empty User Role or Manager fields could incorrectly display the user’s name in exported CSV files. Data Loader now leaves these relationship fields blank when no value is available. The correction applies to normal and aggregate queries in both the existing and new interfaces.
+
+***
+
 ## ARM **Release Notes 26.3.9.1**
 
 **Release Date: 2 Sep 2026**

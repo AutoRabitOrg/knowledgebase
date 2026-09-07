@@ -3,7 +3,6 @@ description: >-
   Five CodeScan rules are being fully deactivated as of the 8th of November.
   Review your   Quality Profiles and switch to the replacement rules listed
   below.
-hidden: true
 ---
 
 # CodeScan Rules Deactivation

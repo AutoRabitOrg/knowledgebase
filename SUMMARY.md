@@ -19,6 +19,7 @@
   * [Automatic Cleanup of Deactivated Picklist Values](fundamentals/faq/automatic-cleanup-of-deactivated-picklist-values.md)
 * [Announcements](fundamentals/announcements/README.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT Guard Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-migrating-to-authhub.md)
+  * [Upcoming Salesforce Authentication Changes for New CodeScan Salesforce Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-codescan-salesforce-connections.md)
   * [Status of AutoRABIT in the Middle East](fundamentals/announcements/page-3.md)
   * [Upgrading the Node Runtime for Azure DevOps](fundamentals/announcements/upgrading-the-node-runtime-for-azure-devops.md)
   * [Deprecation of Node 20 on GitHub Actions Runners](fundamentals/announcements/deprecation-of-node-20-on-github-actions-runners.md)

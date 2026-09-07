@@ -10,6 +10,35 @@ Before installing, make sure you have:
 * Installed PostgreSQL database and have the connection details handy. Supports v12 and higher
 {% endhint %}
 
+### Container Modes
+
+The IZ Suite server image starts different components depending on the **`FALCON_MODE`** environment variable:
+
+| `FALCON_MODE` | Components started                                                 | Typical use                                                                                                                                                              |
+| ------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`all`**     | Database migration, API, web UI on port 80 and a background worker | Default. Single-server installations and small clusters.                                                                                                                 |
+| **`api`**     | Database migration and API                                         | Split deployments with separate web containers.                                                                                                                          |
+| **`web`**     | Web UI only                                                        | Split deployments.                                                                                                                                                       |
+| **`worker`**  | Background worker only (no port exposed)                           | Additional background-processing capacity. See [Worker Nodes and the Server Work Queue](../../integral-zone/iz-suite/iz-core/worker-nodes-and-the-server-work-queue.md). |
+
+#### Environment Variables <a href="#environment-variables" id="environment-variables"></a>
+
+| Variable                               | Required | Description                                                                                                                                                                                                    |
+| -------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`DATABASE_URL`**                     | Yes      | PostgreSQL connection string, for example `postgres://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<DB_NAME>`. Append `?sslmode=require` to connect over TLS.                                                           |
+| **`FALCON_MODE`**                      | No       | Container mode as described above. Default `all`.                                                                                                                                                              |
+| **`AGENT_WRAPPER_SECRET`**             | No       | Shared secret that cloud agents present when they register themselves without a pre-created agent id. Required when running auto-registering (scaled) agents. See [Agent Installation](agent-installation.md). |
+| **`FALCON_SERVER_KEEP_ALIVE_SECONDS`** | No       | Seconds after which a server node that stopped sending heartbeats is considered down and a new master is elected. Default `25`. Relevant for cluster installations.                                            |
+| **`LOG_LEVEL`**                        | No       | `error`, `warn`, `info` or `debug`. Default `info`.                                                                                                                                                            |
+
+Variables for multi-tenant platforms (only relevant when the **`Multi Tenant`** license module is enabled):
+
+| Variable                                    | Description                                                                                                                                                           |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`NEW_TENANT_ADMIN_DEFAULT_ROLE_EXT_IDS`** | Comma-separated ids of the roles granted to the administrator of a newly onboarded tenant.                                                                            |
+| **`NEW_TENANT_GLOBAL_SETTING_MASK_KEYS`**   | Comma-separated names of the sign-in settings whose credentials are cleared when a tenant is onboarded. Default `Azure Auth,Anypoint Auth,Google Auth,IZ Token Auth`. |
+| **`TENANT_CLONE_CONCURRENCY`**              | Number of tables copied in parallel while onboarding a tenant. Default `10`.                                                                                          |
+
 ### Starting IZ Server - Using Docker
 
 1. Run the following command

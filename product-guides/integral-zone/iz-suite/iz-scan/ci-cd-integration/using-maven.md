@@ -16,22 +16,22 @@ Before scanning applications using IZ Scan, make sure you have:
 1. The binaries required to scan the projects are available in **`IZ Maven Central`** repository. Include the following repositories and plugin repositories in settings.xml
 
 ```xml
-&lt;repositories>
-    &lt;repository>
-        &lt;id>iz-maven-repo&lt;/id>
-        &lt;name>IZ Maven Repo&lt;/name>
-        &lt;url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases&lt;/url>
-    &lt;/repository>
-&lt;/repositories>
+<repositories>
+    <repository>
+        <id>iz-maven-repo&lt;/id>
+        <name>IZ Maven Repo&lt;/name>
+        <url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases&lt;/url>
+    </repository>
+</repositories>
 ```
 
 ```xml
-&lt;pluginRepositories>
-    &lt;pluginRepository>
-        &lt;id>iz-maven-plugin-repo&lt;/id>
-        &lt;url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases&lt;/url>
-    &lt;/pluginRepository>
-&lt;/pluginRepositories>
+<pluginRepositories>
+    <pluginRepository>
+        <id>iz-maven-plugin-repo&lt;/id>
+        <url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases&lt;/url>
+    </pluginRepository>
+</pluginRepositories>
 ```
 
 ### CI/CD Integration
@@ -50,7 +50,7 @@ Before scanning applications using IZ Scan, make sure you have:
       _&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
    6. -DscmBranchName=xxx + _Optional. SCM branch for which code is being analyzed. If ignored, the default value will be **`master`**_
    7. -DpullRequestId=xxx + \_Optional.SCM Pull request name for which code is being analyzed
-   8. -Dorganization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id_
+   8. -Dorganization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id. NOTE: In a multi tenancy environment, this parameter is mandatory._&#x20;
    9. -DsarifReport=xxx + \_Optional. Used to generate issues in SARIF format. The output report file path must be specified using this parameter.
 
 Please refer to the section [below](using-maven.md) for instructions on how to retrieve the organization ID.

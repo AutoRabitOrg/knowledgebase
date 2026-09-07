@@ -17,6 +17,8 @@ If the IZ Suite installation is managed by the client, please follow the steps b
 3. Ensure that the backup is _**verified and stored securely**_ before proceeding with the upgrade.
 4. Upgrade IZ Suite by following the steps that match your installation method, making sure to increment the IZ suite version.
 
+Database migrations run automatically when the new server container starts. If a migration fails, the container stops and prints recovery instructions in its log rather than starting on a partially migrated schema. Restore the backup, resolve the reported problem and start the container again.
+
 ### Integral Zone-Managed Installation
 
 If the installation is managed by **`Integral Zone`**, the following will be handled as part of the upgrade process:

@@ -24,6 +24,15 @@ Quality Rules serve as the guidelines utilized for conducting static code analys
 
     <figure><img src="../../../../.gitbook/assets/activate-rule-in-profile.png" alt=""><figcaption></figcaption></figure>
 
+### Built-in and Custom Rules
+
+* **Built-in rules** are delivered and updated with IZ Suite. New and revised built-in rules are applied automatically by the seed data process after an upgrade.
+* **Custom rules** are created with **`Add Rule`** or by cloning a built-in rule.
+
+{% hint style="warning" %}
+In a multi-tenant installation built-in rules are read-only. To change the name, severity, category or definition of a built-in rule, clone it and use the clone in your quality profiles
+{% endhint %}
+
 ### See Also
 
 * [Quality Profiles](../profiles/quality-profiles.md)

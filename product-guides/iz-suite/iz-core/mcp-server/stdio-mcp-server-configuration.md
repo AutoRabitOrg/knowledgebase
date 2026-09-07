@@ -2,6 +2,10 @@
 
 The following section describes the steps required to configure the IZ STDIO MCP server in various IDEs.
 
+{% hint style="info" %}
+`--serverurl` must be the tenant URL
+{% endhint %}
+
 ### Visual Studio Code
 
 * Open the preferences and search for MCP
@@ -20,9 +24,9 @@ The following section describes the steps required to configure the IZ STDIO MCP
         "--registry=https://npm.integralzone.com",
         "iz-scan-mcp",
         "--accesstoken",
-        "&lt;Token Generated from IZ Suite>",
+        "<Token Generated from IZ Suite>",
         "--serverurl",
-        "&lt;http(s)://YOUR_HOST_NAME>"
+        "<http(s)://YOUR_HOST_NAME>"
     ],
     "type": "stdio"
 }
@@ -36,15 +40,15 @@ The following section describes the steps required to configure the IZ STDIO MCP
 
 ```json
     "iz-scan-cli-mcp-server": {
-        "command": "node",
+        "command": "npx",
         "args": [
             "-y",
             "--registry=https://npm.integralzone.com",
             "iz-scan-mcp",
             "--accesstoken",
-            "&lt;Token Generated from IZ Suite>",
+            "<Token Generated from IZ Suite>",
             "--serverurl",
-            "&lt;http(s)://YOUR_HOST_NAME>"
+            "<http(s)://YOUR_HOST_NAME>"
         ]
     }
 ```
@@ -62,15 +66,15 @@ The following section describes the steps required to configure the IZ STDIO MCP
 
 ```json
     "iz-scan-cli-mcp-server": {
-        "command": "node",
+        "command": "npx",
         "args": [
             "-y",
             "--registry=https://npm.integralzone.com",
             "iz-scan-mcp",
             "--accesstoken",
-            "&lt;Token Generated from IZ Suite>",
+            "<Token Generated from IZ Suite>",
             "--serverurl",
-            "&lt;http(s)://YOUR_HOST_NAME>"
+            "<http(s)://YOUR_HOST_NAME>"
         ]
     }
 ```

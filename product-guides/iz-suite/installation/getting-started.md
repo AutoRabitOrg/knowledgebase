@@ -2,6 +2,10 @@
 
 This section outlines the initial setup and onboarding process for the IZ Suite instance.
 
+{% hint style="warning" %}
+In a multi-tenant installation, each tenant follows these steps on its own login URL (`https://<slug>.<your IZ Suite domain>`). The platform administrator onboards the tenant first. See [Onboard Tenant](../../integral-zone/iz-suite/iz-core/multi-tenancy/onboard-tenant.md).
+{% endhint %}
+
 ### Apply License
 
 1. The first time the instance is launched, a license needs to be applied.
@@ -42,6 +46,14 @@ Follow these steps to enable Anypoint CloudHub SSO:
    3. Click on Submit
 5. Log out of the application and Sign-in with CloudHub option should be enabled.
 
+{% hint style="warning" %}
+A tenant onboarded by a platform administrator starts with **`Anypoint Auth`**, **`Google Auth`** and **`Azure Auth`** disabled and without credentials. Configure the provider of your choice as described above before disabling IZ Token sign-in
+{% endhint %}
+
+### Automatic User Creation (Optional)
+
+By default every user must be invited before signing in. To let users who authenticate successfully through single sign-on be created automatically with a default set of roles, configure **`Login Settings`**. See [Login Settings](../../integral-zone/iz-suite/iz-core/login-settings.md).
+
 ### Disable `Signin with IZ Token` Option
 
 `Signin with IZ Token` feature is intended only for initial system setup and should be disabled once one of the `Single Sign-on` options is isEnabled.
@@ -77,7 +89,11 @@ The admin token generated using the steps below will be useful for signing in to
 
 The following step is applicable only for **`IZ Scan`**
 
-1. **`CICD Integration using Maven`** - Maven CICD Scanner
+1. [**`CICD Integration using Maven`**](../../integral-zone/iz-suite/iz-scan/ci-cd-integration/using-maven.md) - Maven CICD Scanner
+
+### Session Timeout
+
+Sessions expire after the period configured in **`Global Settings`** → **`Settings`** → **`Login Settings`** → **`Session Timeout Seconds`** (one hour by default). See [Login Settings](../../integral-zone/iz-suite/iz-core/login-settings.md).
 
 ### Configure Agent
 
@@ -88,15 +104,15 @@ The following step is applicable only for **`IZ Eye`** and **`IZ Pulse`**.
 
 ### Setup Anypoint Studio Plugin
 
-1. **`Anypoint Studio Plugin Installation`** - Install Plugin
-2. **`Anypoint Studio Plugin Setup`** - Configuration
-3. **`Anypoint Studio Plugin Fly Results`** - On The Fly Results
+1. [**`Anypoint Studio Plugin Installation`**](../releases/anypoint-studio-plugin/) - Install Plugin
+2. [**`Anypoint Studio Plugin Setup`**](../../integral-zone/iz-analyzer/manage-anypoint-studio-plugin/) - Configuration
+3. [**`Anypoint Studio Plugin Fly Results`**](../../integral-zone/iz-suite/iz-scan/anypoint-studio/source-code-analysis/anypoint-studio-analysis.md) - On The Fly Results
 
 ### Setup Anypoint Code Builder
 
-1. **`Anypoint Code Builder Plugin Installation`** Install Plugin
-2. **`Anypoint Code Builder Plugin Setup`** - Configuration
-3. **`Anypoint Code Builder Fly Results`** - On The Fly Results
+1. [**`Anypoint Code Builder Plugin Installation`**](../../arm/integration-and-plugins/visual-code-extension/installing-vs-code-extension.md) Install Plugin
+2. [**`Anypoint Code Builder Plugin Setup`**](../../arm/integration-and-plugins/visual-code-extension/configuring-vscode-extension.md) - Configuration
+3. [**`Anypoint Code Builder Fly Results`**](../../integral-zone/iz-suite/iz-scan/vs-code-extension/source-code-analysis/on-the-fly-results.md) - On The Fly Results
 
 ### See Also
 

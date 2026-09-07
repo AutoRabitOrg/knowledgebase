@@ -8,6 +8,7 @@ This section outlines the compatibility matrix between various server and agent 
 
 | Server Version  | Agent Version |
 | --------------- | ------------- |
+| > v26.3.1       | v26.3.1       |
 | > v1.4.0        | v1.1.5        |
 | v1.3.9          | v1.1.3        |
 | v1.3.8          | v1.1.2        |
@@ -31,6 +32,7 @@ This section outlines the compatibility matrix between various server and CLI Sc
 
 | Server Version      | Scanner Version |
 | ------------------- | --------------- |
+| >v26.3.1            | 26.3.1          |
 | 1.4.2               | >= v3.1         |
 | 1.4.1               | v3.0            |
 | Greater than v1.3.7 | >= v2.5         |

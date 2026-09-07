@@ -33,6 +33,10 @@ Appropriate permissions might be required to create Connect App in Anypoint Plat
 
 ### Applying Client ID and Secret
 
+{% hint style="danger" %}
+From version 26.3.1 and above the **`Job Types`** screen is not available to the tenants. The Client Id and Secret should be updated by navigating to **`Global Settings`** -> **`Settings`** -> Search for **`Anypoint Sync Settings`** and key in the Client Id and Secret.&#x20;
+{% endhint %}
+
 1. Navigate to **`Global Settings`** -> **`Job types`**
 2.  Search for **`Anypoint Sync`** job type and click on edit\
     &#x20;

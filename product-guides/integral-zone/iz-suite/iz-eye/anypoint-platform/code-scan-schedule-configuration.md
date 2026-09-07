@@ -5,6 +5,7 @@
 {% hint style="info" %}
 * Repeatedly creating a schedule for the same organization and environment will simply overwrite the pre-existing schedule.
 * Required Connected App scopes for each Job Type reference can be found here
+* Schedules are executed by shared workers with fair allocation if its a multi tenant environment.&#x20;
 {% endhint %}
 
 1. Navigate to **`Schedules`** -> **`Schedules`** and click on **`Configure Schedule`**

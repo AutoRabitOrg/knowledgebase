@@ -1,0 +1,96 @@
+# latest
+
+### **Release Notes 26.3.1** <a href="#release-notes-26.3.1" id="release-notes-26.3.1"></a>
+
+**Release Date:** 4 Sept 2026
+
+***
+
+This release makes IZ Suite a true multi-organisation platform and significantly raises how much load a single deployment can serve. It includes:
+
+* Full multi-tenancy with per-tenant sign-in, licensing and data isolation
+* A self-scaling agent fleet with configurable worker pools
+* Centralised, database-driven job scheduling that is reliable at any fleet size
+* Substantially faster response times under heavy concurrent load
+* Version-pinned disaster recovery with approval-gated restores
+* Safer cloud deployments: request-based autoscaling, migration-safe rolling updates, and byte-identical image promotion between environments
+
+From this release onward, **IZ Suite ships as a single certified release**: the server, the agent and all in-suite modules are built, tested and signed off together under one version. These notes cover the complete release; the component versions it contains are listed at the end.
+
+### 1. Multi-Tenancy <a href="#id-1.-multi-tenancy" id="id-1.-multi-tenancy"></a>
+
+A single IZ Suite deployment now serves multiple organisations with strict per-tenant data isolation.
+
+* **Per-tenant sign-in:** each tenant reaches IZ Suite on its own subdomain (its _tenant slug_, e.g. `acme.yourdomain.com`) and signs in against its own user directory.
+* **Per-tenant licensing:** each tenant carries its own licence and module entitlements; applying a licence activates that tenant's modules and schedules independently of every other tenant.
+* **Fast provisioning:** new tenants are created from a template in minutes, arriving with the standard roles, permissions and job types already in place.
+* **Shared catalogues, private data:** rule, metric and vulnerability catalogues are centrally managed and shared, while every tenant's connections, assets, scan results and findings remain visible only to that tenant.
+
+### 2. Elastic Agent Fleet <a href="#id-2.-elastic-agent-fleet" id="id-2.-elastic-agent-fleet"></a>
+
+The agent tier now scales like cloud infrastructure rather than like hand-registered servers.
+
+* **Self-registration with stable identity:** a newly started agent registers itself with the server and receives a durable, platform-derived identity (on AWS, the running task's identifier), so adding an agent instance adds real capacity immediately — restarts do not create duplicates, and every agent visible in the UI is directly traceable to its cloud instance.
+* **Configurable worker pools:** each agent runs a pool of parallel workers (**default 12**, editable per agent on the Agents page). Because agent jobs are largely I/O-bound, a small fleet with larger worker pools serves the same job volume that previously needed many more agent instances.
+* **Tighter agent security:** agents now operate with just-in-time, narrowly scoped credentials instead of blanket roles.
+
+### 3. Centralised Job Scheduling <a href="#id-3.-centralised-job-scheduling" id="id-3.-centralised-job-scheduling"></a>
+
+Scheduling moved out of individual agents into a central, server-side **scheduling pacemaker** that dispatches due work from the database.
+
+* Schedules fire reliably regardless of fleet size or agent restarts — there is no longer a single "master" agent whose loss pauses scheduling.
+* Discovery work is split into a scheduling phase and an execution phase, so it can run on whichever worker is free.
+* When a tenant's licence is applied, that tenant's recurring sync jobs are created automatically — enable the ones you need and set their frequency from the Jobs page.
+
+### 4. Faster Under Concurrent Load <a href="#id-4.-faster-under-concurrent-load" id="id-4.-faster-under-concurrent-load"></a>
+
+The authorisation path — exercised on every request — was reworked end to end: the permission view was repaired and indexed, permission reads are cached in-process, and hot queries now fetch only the columns they use.
+
+Measured on a 201-tenant test estate, the software changes alone cut 95th-percentile response time at 200 concurrent users by **more than 60% on identical hardware**. A tuned mid-size deployment now holds 200 concurrent users inside 1.5 seconds and served 1,000 concurrent users **without a single failed request**. No configuration is required — the improvements apply automatically.
+
+### 5. Disaster Recovery <a href="#id-5.-disaster-recovery" id="id-5.-disaster-recovery"></a>
+
+Restores are now version-pinned and pipeline-driven, built for auditability:
+
+* Every database snapshot records the **exact application version** that wrote its schema.
+* The restore pipeline redeploys that same version — byte-for-byte, not a rebuild — with preflight checks, an explicit approval gate, and a migration verification step before the application serves traffic.
+* A restore can therefore never silently pair old data with newer code, and environments can be cloned for investigation or drained on demand.
+
+### 6. Cloud Scaling and Deployment <a href="#id-6.-cloud-scaling-and-deployment" id="id-6.-cloud-scaling-and-deployment"></a>
+
+* **Request-based autoscaling:** the API tier scales out on request volume and scales back in when load subsides.
+* **Migration-safe rolling deploys:** concurrent instance starts no longer race one another on database migrations, and a **breaking-migration mode** drains old instances first when a release cannot be backward-compatible.
+* **Byte-identical promotion:** deployments can pin an exact, previously built image, so the build verified in one environment is precisely what reaches the next — with version tags protected against accidental overwrite.
+* DNS records now move with the environment automatically.
+
+### Fixes <a href="#fixes" id="fixes"></a>
+
+* Server API routes beyond the main GraphQL endpoint (event gateway, version, metrics, downloads) are now correctly proxied instead of returning the web application page.
+* Concurrent agent starts no longer race to claim the same agent identity.
+* Automation tasks no longer appear twice per tenant.
+* Server version validation no longer blocks healthy rolling deploys.
+* Organisation onboarding through an agent no longer fails for sessions without licensed modules.
+
+### Upgrade Notes <a href="#upgrade-notes" id="upgrade-notes"></a>
+
+* Schema updates apply automatically during the upgrade — no manual migration steps.
+* Agents re-register automatically after the upgrade and their worker pools expand to the new default of 12; review per-agent worker counts on the Agents page if you have tuned them.
+* Existing single-tenant deployments continue to work unchanged; multi-tenancy is additive.
+* The agent no longer carries a separate release version — it ships and is certified with the suite (see Component Versions below).
+
+### Component Versions in This Release <a href="#component-versions-in-this-release" id="component-versions-in-this-release"></a>
+
+IZ Suite is released and certified as one set. The server and agent images are built together from the same source and share the release version; the exact build artifacts are recorded immutably at release time.
+
+| Component                         | Version | Notes                                                                       |
+| --------------------------------- | ------- | --------------------------------------------------------------------------- |
+| IZ Suite Server (web + API)       | 26.3.1  | Anchor of the release; version enforced at startup                          |
+| IZ Suite Agent                    | 26.3.1  | Built and certified as a pair with the server — no separate agent release   |
+| IZ Scan CLI                       | 26.3.1  | Own release cycles and channels; compatibility noted in their release notes |
+| VS Code Extension / Studio Plugin | 26.3.1  | Own release cycles and channels; compatibility noted in their release notes |
+
+Security testing and change-control sign-off apply to this set as a whole; any post-release change to a component ships as a hotfix release (e.g. 26.3.1.1) through the same process.
+
+## Other Improvements <a href="#other-improvements" id="other-improvements"></a>
+
+Minor performance enhancements, bug fixes, and security improvements are included throughout the release.

@@ -13,10 +13,7 @@ The OSV (Open Source Vulnerabilities) database is an open-source vulnerability d
 * **`Integration with CI/CD Pipelines`** – OSV can be integrated into DevOps workflows to prevent deploying software with known security issues.
 * **`Accurate Fix Information`** – Provides affected versions, patched versions, and commit references for precise remediation.
 
-### Seed Vulnerabilities
 
-* Navigate to **`Global Settings`** -> **`Seed Data`**.
-* Click on **`Seed Vulnerabilities`** to seed the data from OSV database.
 
 ### Vulnerabilities
 

@@ -4,10 +4,11 @@
 
 {% hint style="info" %}
 * This step is required if the instance is being configuring for the first time.
+* A tenant onboarded by a platform administrator uses the one-time **`LOGIN CODE`** shown when the tenant was created instead. See [Onboard Tenant](../multi-tenancy/onboard-tenant.md)
 {% endhint %}
 
 1. Navigate to the UI and click on **`Signin with IZ Token`**
-2. Enter the default token **`clqvx342w00003b6qnxuu9bri`** and click on **`Login`**&#x20;
+2. Enter the token provided by Support Team and click on **`Login`**&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/iz-initial-setup.png" alt=""><figcaption></figcaption></figure>
 

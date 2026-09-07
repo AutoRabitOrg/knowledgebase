@@ -29,16 +29,6 @@ Hover your mouse over the **`Create New`** menu and click the drop-down icon. Th
 
 <figure><img src="../../../.gitbook/assets/image (1898).png" alt="" width="195"><figcaption></figcaption></figure>
 
-### **Quick Links** <a href="#quick-links" id="quick-links"></a>
-
-Here you can:
-
-1. Find links to [**ARM** ](https://knowledgebase.autorabit.com/product-guides/arm)**Documentation**
-2. Know about the ARM version on which you're logged in
-3. Reach out to **Support Team**<br>
-
-<figure><img src="../../../.gitbook/assets/image (1900).png" alt="" width="255"><figcaption></figcaption></figure>
-
 ### **User Details** <a href="#user-details" id="user-details"></a>
 
 Here you can:

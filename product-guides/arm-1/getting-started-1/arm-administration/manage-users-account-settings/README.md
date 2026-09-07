@@ -115,6 +115,10 @@ Admins can configure the default baseline branches for CodeScan and SonarQube SC
 
 ![](../../../../../.gitbook/assets/unknown.webp)
 
+![](<../../../../../.gitbook/assets/unknown (1).webp>)
+
+![](<../../../../../.gitbook/assets/unknown (2).webp>)
+
 **Configure the baseline branches**
 
 * Select **`CodeScan`** or **`SonarQube`**.

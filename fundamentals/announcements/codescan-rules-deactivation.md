@@ -8,10 +8,10 @@ hidden: true
 
 # CodeScan Rules Deactivation
 
-## Upcoming Rule Deactivations: 5 Rules Retiring on the 8th of November 2026
+## Upcoming Rule Deactivations: 5 Rules Retiring on the 15th of November 2026
 
 {% hint style="warning" %}
-**Five CodeScan rules will be fully deactivated as of 8th of November 2026.** Each rule below has already been marked **Deprecated** and superseded by an improved rule with better or more accurate coverage.
+**Five CodeScan rules will be fully deactivated as of 15th of November 2026.** Each rule below has already been marked **Deprecated** and superseded by an improved rule with better or more accurate coverage.
 {% endhint %}
 
 ### How to check if you're affected

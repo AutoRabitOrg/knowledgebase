@@ -1542,7 +1542,7 @@
       * [Server Agent Compatibility Matrix](product-guides/iz-suite/releases/server-agent-compatibility-matrix.md)
       * [IZ Suite](product-guides/integral-zone/iz-suite/releases/iz-suite/README.md)
         * [26.x.x](product-guides/integral-zone/iz-suite/releases/iz-suite/26.x.x.md)
-        * [latest](product-guides/integral-zone/iz-suite/releases/iz-suite/latest.md)
+        * [Latest](product-guides/integral-zone/iz-suite/releases/iz-suite/latest.md)
       * [IZ Server](product-guides/iz-suite/releases/iz-server/README.md)
         * [v1.x](product-guides/iz-suite/releases/iz-server/v1.x.md)
         * [Latest](product-guides/iz-suite/releases/iz-server/latest.md)

@@ -8,7 +8,7 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 
 1.  Ensure you enable the GIT plugin under Plugins in the My Account section to use GIT for version control.<br>
 
-    ![](../../../../.gitbook/assets/unknown.webp)
+    ![](/broken/files/KqKzGQBZjbHBVfwTNXLP)
 2. You must have an Azure account. Once you have an Azure account, you can create a new repository or use an existing one.
 3. You must have permission to register a repository.
 4. Store your Azure credentials in ARM.

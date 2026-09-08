@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # AutoRABIT App Installation and Configuration Guide: AutoRABIT CodeScan
 
 {% hint style="info" %}

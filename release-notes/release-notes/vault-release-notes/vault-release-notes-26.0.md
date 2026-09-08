@@ -11,13 +11,16 @@
 #### **Complete Metadata Details in Restore Job Summaries** <a href="#id-3.-complete-metadata-details-in-restore-job-summaries" id="id-3.-complete-metadata-details-in-restore-job-summaries"></a>
 
 Resolved an issue where Restore job summaries did not display all selected metadata types.\
-The summary previously showed only `Network` and `NetworkBranding` in affected restore executions.\
+The summary previously showed only `Network` and `NetworkBranding` in affected restore executions.
+
 AutoRABIT Vault now includes `DigitalExperience`, `DigitalExperienceBundle`, `ExperienceBundle`, and other selected metadata types. This provides an accurate view of the metadata processed by the Restore job.
 
 #### **Successful Restoration of NetworkBranding Metadata**
 
-Resolved an issue that caused `NetworkBranding` metadata restores to fail with a missing `primaryColor` error.\
-The failure occurred even when the backup containing the same metadata completed successfully.\
+Resolved an issue that caused `NetworkBranding` metadata restores to fail with a missing `primaryColor` error.
+
+The failure occurred even when the backup containing the same metadata completed successfully.
+
 AutoRABIT Vault now handles the required field correctly during the EZ Restore operation. This allows `NetworkBranding` metadata to be restored without the previous validation failure.
 
 #### **Salesforce Org Reauthentication Using Valid Client Credentials** <a href="#id-5.-salesforce-org-reauthentication-using-valid-client-credentials" id="id-5.-salesforce-org-reauthentication-using-valid-client-credentials"></a>

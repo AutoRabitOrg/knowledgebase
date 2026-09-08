@@ -8,33 +8,33 @@
 
 **Release Date: 26 Aug 2026**
 
-**Complete Metadata Details in Restore Job Summaries**
+#### **Complete Metadata Details in Restore Job Summaries** <a href="#id-3.-complete-metadata-details-in-restore-job-summaries" id="id-3.-complete-metadata-details-in-restore-job-summaries"></a>
 
 Resolved an issue where Restore job summaries did not display all selected metadata types.\
 The summary previously showed only `Network` and `NetworkBranding` in affected restore executions.\
 AutoRABIT Vault now includes `DigitalExperience`, `DigitalExperienceBundle`, `ExperienceBundle`, and other selected metadata types. This provides an accurate view of the metadata processed by the Restore job.
 
-**Successful Restoration of NetworkBranding Metadata**
+#### **Successful Restoration of NetworkBranding Metadata**
 
 Resolved an issue that caused `NetworkBranding` metadata restores to fail with a missing `primaryColor` error.\
 The failure occurred even when the backup containing the same metadata completed successfully.\
 AutoRABIT Vault now handles the required field correctly during the EZ Restore operation. This allows `NetworkBranding` metadata to be restored without the previous validation failure.
 
-**Salesforce Org Reauthentication Using Valid Client Credentials**
+#### **Salesforce Org Reauthentication Using Valid Client Credentials** <a href="#id-5.-salesforce-org-reauthentication-using-valid-client-credentials" id="id-5.-salesforce-org-reauthentication-using-valid-client-credentials"></a>
 
 Resolved an incorrect **Invalid Client ID and Client Secret** error during Salesforce org reauthentication. The issue affected existing orgs configured through the Client Credentials authentication flow. AutoRABIT Vault now validates the provided Client ID and Client Secret correctly during reauthentication. This prevents valid Salesforce org connections from being rejected unnecessarily.
 
-**Improved Timeout Handling for Large Live Data Masking Jobs**
+#### **Improved Timeout Handling for Large Live Data Masking Jobs** <a href="#id-6.-improved-timeout-handling-for-large-live-data-masking-jobs" id="id-6.-improved-timeout-handling-for-large-live-data-masking-jobs"></a>
 
 Resolved an issue causing Live Data Masking jobs to fail when large Salesforce queries timed out.\
 Previously, AutoRABIT Vault repeated the same query until all retry attempts were exhausted. AutoRABIT Vault now retries timed-out queries only once and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
 
-**Incremental Record Selection for Scheduled Live Data Masking**
+#### **Incremental Record Selection for Scheduled Live Data Masking**
 
 Added incremental record selection for scheduled and manual Live Data Masking jobs.\
 Each run can process newly created records, newly updated records, both record types, or all records. Scheduled executions identify eligible records using the previous successful run and process each qualifying record only once. This reduces processing time, Salesforce API usage, and repeated masking of unchanged records.
 
-**Retry Failed Records in Live Data Masking Rollback Jobs**
+#### **Retry Failed Records in Live Data Masking Rollback Jobs**
 
 Added a **Retry** option for failed Live Data Masking rollback jobs.\
 AutoRABIT Vault retries only the records that failed during the selected rollback without reprocessing successful records. The retry results identify newly successful records, remaining failures, and the associated failure details. Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
@@ -45,31 +45,31 @@ AutoRABIT Vault retries only the records that failed during the selected rollbac
 
 **Release Date: 12 Aug 2026**
 
-**Incremental Backup Support for Login History**
+#### **Incremental Backup Support for Login History**
 
 AutoRABIT Vault now supports incremental backups for **Login History**, capturing only records added or modified since the previous backup. This enhancement improves backup efficiency and reduces processing time.
 
-**System Details Displayed in the System Limits Tab**
+#### **System Details Displayed in the System Limits Tab**
 
 The System Limits tab now displays system details, providing greater visibility into the underlying infrastructure.
 
-**Object Search by API Name in Masking Rules**
+#### **Object Search by API Name in Masking Rules**
 
 The object search field now supports identifying objects by their API names during masking rule creation. This enhancement makes it easier to find and select the required objects.
 
-**Notification Origin Instance Tracking**
+#### **Notification Origin Instance Tracking**
 
 Notifications now identify the specific instance from which they originated, improving traceability across multiple instances.
 
-**Activity Logs Missing from Downloaded CEF Files**
+#### **Activity Logs Missing from Downloaded CEF Files**
 
 Fixed an issue where downloaded CEF files did not contain activity logs for the selected one-month date range.
 
-**Expired SAML Credentials Message Updated**
+#### **Expired SAML Credentials Message Updated**
 
 Updated the message displayed for expired SAML credentials to provide clearer and more helpful information.
 
-**Improved Support for Missing Synthetic Data Configurations**
+#### **Improved Support for Missing Synthetic Data Configurations**
 
 AutoRABIT Vault now remains operational when the Synthetic Data masking configuration or Synthetic Data Generator settings are unavailable for on-premises instances.
 

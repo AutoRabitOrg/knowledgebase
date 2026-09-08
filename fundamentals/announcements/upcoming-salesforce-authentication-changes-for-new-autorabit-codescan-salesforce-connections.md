@@ -35,7 +35,7 @@ As a Salesforce partner on AgentExchange, AutoRABIT is standardizing Salesforce 
 For most customers:&#x20;
 
 * Your existing Salesforce org connections will continue to work normally.&#x20;
-* New Salesforce org connections and refreshed sandboxes created after October 16 will use AutoRABIT's centralized Salesforce authentication service&#x20;
+* New Salesforce org connections and refreshed sandboxes created after **DATE** will use AutoRABIT's centralized Salesforce authentication service&#x20;
 * Your project history and settings will be retained.&#x20;
 * AutoRABIT will provide guidance if any action is needed from your team.&#x20;
 
@@ -47,13 +47,13 @@ In most cases, administrators will be guided through the setup experience within
 
 AutoRABIT will provide step-by-step guidance and documentation to help you complete the connection process successfully.&#x20;
 
-For detailed setup instructions, see **\[Link to CodeScan setup guide].**
+For detailed setup instructions, see [AutoRABIT App Installation and Configuration Guide: AutoRABIT CodeScan](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/autorabit-app-installation-and-configuration-guide-autorabit-codescan).
 
 ## &#x20;Do I Need to Do Anything?&#x20;
 
 If you are not creating a new Salesforce org connection or refreshing existing sandboxes, no action is required.&#x20;
 
-If you create a new Salesforce org connection or refresh sandboxes after DATE, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here: **\[Link to CodeScan setup guide].**
+If you create a new Salesforce org connection or refresh sandboxes after DATE, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here:  [AutoRABIT App Installation and Configuration Guide: AutoRABIT CodeScan](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/autorabit-app-installation-and-configuration-guide-autorabit-codescan).
 
 Your Customer Success Manager will also be available to help answer questions and guide you through the process.&#x20;
 

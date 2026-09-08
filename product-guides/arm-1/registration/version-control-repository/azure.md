@@ -8,7 +8,7 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 
 1.  Ensure you enable the GIT plugin under Plugins in the My Account section to use GIT for version control.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2013).png" alt=""><figcaption></figcaption></figure>
+    ![](../../../../.gitbook/assets/unknown.webp)
 2. You must have an Azure account. Once you have an Azure account, you can create a new repository or use an existing one.
 3. You must have permission to register a repository.
 4. Store your Azure credentials in ARM.
@@ -18,12 +18,12 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 1. Log in to your ARM account.
 2.  Hover your mouse over the Admin module and click on the Credentials tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2014).png" alt=""><figcaption></figcaption></figure>
+    ![](<../../../../.gitbook/assets/unknown (1).webp>)
 3. Next, click on Create Credential from the right navigation bar.
 4. On the next pop-up screen, give a Credential name.
 5.  Choose the Credential Type as Username with Password.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2015).png" alt="" width="563"><figcaption></figcaption></figure>
+    ![](<../../../../.gitbook/assets/unknown (4).webp>)
 6. Enter your Azure Username and API Token (in the Password field), and we will store this encrypted.
 7. Click Save.
 
@@ -32,13 +32,13 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 1. Log in to your ARM account.
 2.  Hover your mouse over the Admin module and click on VC Repo's.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2016).png" alt="" width="563"><figcaption></figcaption></figure>
+    ![](<../../../../.gitbook/assets/unknown (5).webp>)
 3.  Click on Register Repository.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2017).png" alt=""><figcaption></figcaption></figure>
+    ![](<../../../../.gitbook/assets/unknown (6).webp>)
 4.  Select the Version Control System as GIT on the Register Repository page.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2018).png" alt=""><figcaption></figcaption></figure>
+    ![](<../../../../.gitbook/assets/unknown (7).webp>)
 5. Enter the name of the repository to display it locally.
 6. Paste the Repository URL that Azure provides you.
 7. Choose the correct user's Credentials from the list. To create new credentials, click on the “+”.

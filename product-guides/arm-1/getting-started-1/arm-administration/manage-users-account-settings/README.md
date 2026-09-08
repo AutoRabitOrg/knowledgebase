@@ -113,11 +113,11 @@ Developers must select the appropriate baseline branch to compare against. If th
 Admins can configure the default baseline branches for CodeScan and SonarQube SCA plugins in the **`My Account`** section. This resolves the confusion developers previously faced when selecting baseline branches for SCA and. It also helps Admins control the default baseline branches.\
 <br>
 
-![](../../../../../.gitbook/assets/unknown.webp)
-
-![](<../../../../../.gitbook/assets/unknown (1).webp>)
-
 ![](<../../../../../.gitbook/assets/unknown (2).webp>)
+
+![](<../../../../../.gitbook/assets/unknown (1) (1).webp>)
+
+![](<../../../../../.gitbook/assets/unknown (2) (1).webp>)
 
 **Configure the baseline branches**
 

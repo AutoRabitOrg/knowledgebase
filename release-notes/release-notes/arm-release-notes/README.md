@@ -64,7 +64,7 @@ Token creation and use in the application and the VS Code plugin are unchanged.
 
 ## DataLoader + DataLoader Pro Release Notes **26.3.10**
 
-**Release Date:** **06 Sep 2026**
+**Release Date:** **6 Sep 2026**
 
 #### Correct Empty Relationship Fields in Data Loader Exports
 

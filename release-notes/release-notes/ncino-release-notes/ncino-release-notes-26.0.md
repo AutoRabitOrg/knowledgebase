@@ -4,38 +4,40 @@
 
 ## nCino - Release 26.3.10 <a href="#ncino-release-26.3.10" id="ncino-release-26.3.10"></a>
 
-**Release Date: 06 Sep 2026**
+**Release Date: 6 Sep 2026**
 
-Reliable nCino Full and Delta CI Job Execution
+#### Reliable nCino Full and Delta CI Job Execution
 
 Resolved an issue that could cause scheduled or manually triggered nCino Full and Delta CI Jobs to fail with the **AR-1056** error. Temporary workspaces are now cleared after commits, deployments, and CI Job activities are completed. This prevents stale workspace information from affecting subsequent job executions.
+
+***
 
 ## nCino - Release 26.3.9 <a href="#ncino-release-26.3.9" id="ncino-release-26.3.9"></a>
 
 **Release Date: 30 Aug 2026**
 
-**Corrected Feature Cloning and Version Creation**
+#### **Corrected Feature Cloning and Version Creation** <a href="#id-1.-corrected-feature-cloning-and-version-creation" id="id-1.-corrected-feature-cloning-and-version-creation"></a>
 
 Resolved an issue where feature version operations could incorrectly create a separate feature because the feature prefix was applied improperly. Cloning and version creation now follow the expected behavior for standard and community templates in both the existing and new user interfaces.
 
-**Approval Setting Deletion Not Retained**
+#### **Approval Setting Deletion Not Retained** <a href="#id-2.-approval-setting-deletion-not-retained" id="id-2.-approval-setting-deletion-not-retained"></a>
 
 Resolved an issue where deleting an nCino approval setting for a Salesforce org was not persisted after saving. Deleted settings now remain removed when the approval configuration is reopened.
 
-**Improved Approval Reminder and Auto-Rejection Processing**
+#### **Improved Approval Reminder and Auto-Rejection Processing** <a href="#id-3.-improved-approval-reminder-and-auto-rejection-processing" id="id-3.-improved-approval-reminder-and-auto-rejection-processing"></a>
 
 Resolved an issue that could interrupt approval reminder processing across Salesforce orgs.\
 Log handling and executor shutdown have been corrected to prevent processing failures and thread leakage. Day 7 and Day 12 reminders and Day 14 automatic rejections are now processed reliably.
 
-**Sorting Criteria Not Saved for Commit-Only CI Jobs**
+#### **Sorting Criteria Not Saved for Commit-Only CI Jobs** <a href="#id-4.-sorting-criteria-not-saved-for-commit-only-ci-jobs" id="id-4.-sorting-criteria-not-saved-for-commit-only-ci-jobs"></a>
 
 Resolved an issue where **Sorting Criteria** configured for an nCino CI Job using the **Commit Only** trigger were not saved. The configured criteria are now retained and applied during job execution.
 
-**Improved User Interface Behavior**
+#### **Improved User Interface Behavior** <a href="#id-6.-improved-user-interface-behavior" id="id-6.-improved-user-interface-behavior"></a>
 
 Resolved multiple user interface issues affecting queue notifications, filter behavior, and filter status indicators. Feature versions now reset correctly when the selected feature changes, and clearing filters no longer causes errors. The **Apply** button also remains unavailable until the required version data finishes loading.
 
-**Pre-Deployment Backup for All Objects**
+#### **Pre-Deployment Backup for All Objects** <a href="#id-7.-pre-deployment-backup-for-all-objects" id="id-7.-pre-deployment-backup-for-all-objects"></a>
 
 nCino now completes the backup of all objects included in a deployment before executing any deployment changes. The deployment proceeds only after every required object is backed up successfully. If any backup fails, the deployment is stopped to ensure that a complete recovery point remains available.
 

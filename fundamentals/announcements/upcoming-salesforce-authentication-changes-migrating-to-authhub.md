@@ -49,7 +49,7 @@ For detailed setup instructions, see [AutoRABIT App Installation and Configurati
 
 If you are not creating a new Salesforce org connection or refreshing existing sandboxes, no action is required.&#x20;
 
-If you create a new Salesforce org connection or refresh sandboxes after October 16, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here: \[Link to setup guide/runbook].&#x20;
+If you create a new Salesforce org connection or refresh sandboxes after October 16, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here:  [AutoRABIT App Installation and Configuration Guide](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/autorabit-app-installation-and-configuration-guide)
 
 Your Customer Success Manager will also be available to help answer questions and guide you through the process.&#x20;
 

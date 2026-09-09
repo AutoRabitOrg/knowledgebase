@@ -81,12 +81,12 @@ To configure Smart Commits:
 
 ![Smart Commit Configuration](<../../../../.gitbook/assets/image (964).png>)
 
-### For Enterprise Customers
+## For Enterprise Customers
 
 GitHub Enterprise users should raise a support ticket to [support@autorabit.com](mailto:support@autorabit.com) to have their repository URL added to the `webhookurls.properties` file.
 
 Use the following endpoints for enterprise configurations:
 
-/api/webhook/v2//enterprise/[\<OrgName>](https://na25.autorabit.com/api/webhook/v2/%3COrgName%3E/trigger-scm-push-request)/trigger-scm-push-request
+/api/webhook/v2/\<OrgName>/enterprise/trigger-scm-push-request
 
-/api/webhook/v2//enterprise/[\<OrgName>](https://na25.autorabit.com/api/webhook/v2/%3COrgName%3E/trigger-scm-push-request)/sync-alm-commits
+/api/webhook/v2/\<OrgName>/enterprise/sync-alm-commits

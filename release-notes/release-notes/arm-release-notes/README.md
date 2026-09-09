@@ -173,9 +173,10 @@ With this fix, ARM locks the commit log file during read and write operations an
 
 **Release Date:** **30 Aug 2026**
 
-Data Loader Pro Job Configuration Settings Not Retained
+#### Data Loader Pro Job Configuration Settings Not Retained <a href="#id-5.-data-loader-pro-job-configuration-settings-not-retained" id="id-5.-data-loader-pro-job-configuration-settings-not-retained"></a>
 
-Resolved an issue where selected Data Loader Pro job settings were not retained during execution.\
+Resolved an issue where selected Data Loader Pro job settings were not retained during execution.
+
 Options such as disabling workflows and validation rules and processing null values are now saved and applied correctly.
 
 ***

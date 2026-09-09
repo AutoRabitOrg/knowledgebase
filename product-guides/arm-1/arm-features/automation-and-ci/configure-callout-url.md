@@ -1,8 +1,10 @@
-# HTTP Callout Configuration
+# Send CI Build Results to Another Tool
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
+
+## HTTP Callout Configuration
 
 ### Overview <a href="#overview" id="overview"></a>
 

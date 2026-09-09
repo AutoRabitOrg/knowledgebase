@@ -1,4 +1,6 @@
-# Parallel Processor
+# Speed Up CI Builds with Parallel Processing
+
+## Configure Parallel Processor
 
 The **CI Jobs** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 

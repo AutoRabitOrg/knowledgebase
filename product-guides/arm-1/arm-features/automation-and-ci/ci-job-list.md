@@ -1,8 +1,10 @@
-# CI Job List
+# View All CI Builds
 
 {% hint style="info" %}
 For optimal viewing, set your browser zoom level to 80% in Chrome or Firefox.
 {% endhint %}
+
+## CI Job List
 
 The CI Job List screen displays all CI jobs created in ARM, listed in reverse chronological order — the most recent jobs appear at the top.
 

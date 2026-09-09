@@ -7,7 +7,7 @@ This release is a combination of our last 2 SaaS cloud releases:&#x20;
 * 25.1.5 (minor release)&#x20;
 * 25.1.6 (minor release)&#x20;
 
-This release is comprised of New Features, Feature Enhancements, Fixes, and Technical Enhancements. &#x20;
+This release includes New Features, Feature Enhancements, Fixes, and Technical Enhancements. &#x20;
 
 ### GOV 25.1.6 Release Summary&#x20;
 
@@ -45,20 +45,20 @@ CodeScan Release 25.1.5 is comprised of the following 17 components:&#x20;
 
 #### Fixes&#x20;
 
-* Fixed issue ARM users recieving an error: “Component can't be null” while running a CodeScan analysis from ARM&#x20;
+* Fixed issue ARM users receiving an error: “Component can't be null” while running a CodeScan analysis from ARM&#x20;
 * Fixed issue where after a user is deactivated, the user is still displayed on Members page&#x20;
 * Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}&#x20;
 * Fixed issue regarding restricted access for CodeScan Platform Integration Users&#x20;
 
 #### Technical Enhancements&#x20;
 
-* Added a new field in product database (CodeScan) to store the Salesforce account ID&#x20;
+* Added a new field in the product database (CodeScan) to store the Salesforce account ID&#x20;
 * Created API for Audit Logging Table&#x20;
 * Added “CodeScan Organization” parameter to CodeScan Audit Logs&#x20;
 * Updated Permissions message / Execute Analysis Message&#x20;
 * Fixed Incorrect Inactive Rule Counts on Quality Profiles&#x20;
 * Fixed CVSS Rule Description Error in IDE Plugins&#x20;
-* Fixed Issue:  Platform User invited as a Member is redirected to the Projects page instead of the My Account page upon login. Additionally, the user has unintended access to links on the My Account (Profile, Projects, and Organizations) page&#x20;
+* Fixed Issue: Platform Users invited as members are redirected to the Projects page instead of the My Account page upon login. Additionally, the user has unintended access to links on the My Account (Profile, Projects, and Organizations) page&#x20;
 
 ## SaaS Release 25.1.6&#x20;
 
@@ -73,7 +73,7 @@ CodeScan Release 25.1.5 is comprised of the following 17 components:&#x20;
 
 * Categories for Project Types&#x20;
 
-Often, customers will have a lot of projects in CodeScan.  Several customers have requested the ability to filter their projects by the type of integration including:&#x20;
+Often, customers will have a lot of projects in CodeScan.  Several customers have requested the ability to filter their projects by the type of integration, including:&#x20;
 
 GitHub: github \
 Bitbucket: bitbucket  \
@@ -90,13 +90,13 @@ Salesforce: salesforce&#x20;
 #### Fixes&#x20;
 
 * Align CSV Export filter status with Latest SQ Issue status&#x20;
-* Fixed an unclear error message displayed when invite is sent only to non-corporate email addresses&#x20;
+* Fixed an unclear error message displayed when an invite is sent only to non-corporate email addresses&#x20;
 
 #### Technical Enhancements&#x20;
 
 * Refactor DeleteOrgsJob&#x20;
 * Refactor Delete Orgs Email Template&#x20;
-* Deleting the custom rule should also deactivate the rule from all the Quality Profiles where rule is Activated.&#x20;
+* Deleting the custom rule should also deactivate the rule from all the Quality Profiles where the rule is activated.&#x20;
 * Addressed identified security issue with Long-String attack buffer overflow&#x20;
 * Salesforce API Usage Dashboard and Logs&#x20;
 * Fixed world-writable directory ownership in SonarQube Docker image to meet STIG requirements&#x20;
@@ -109,7 +109,7 @@ This release is a combination of our last 3 SaaS cloud releases:
 * 25.1.3 (minor release)
 * 25.1.4 (minor release)
 
-This release is comprised of New Features, Feature Enhancements, Fixes, and Technical Enhancements.
+This release includes New Features, Feature Enhancements, Fixes, and Technical Enhancements.
 
 ### GOV 25.1.4 Release Summary
 
@@ -155,7 +155,7 @@ CodeScan Release 25.1.2 is comprised of the following 29 components:
 * Fixed issue with the rule “Open Redirect” (sfmeta:PageLayoutNaming) {where false positive violations were being flagged}
 * Fixed issue with the rule “Field Level Security Vulnerabilities” (sfmeta:PageLayoutNaming) for classes using “Without Sharing” {where false positive violations were being flagged}
 * Fixed issue with CodeScan’s APEX parser
-* Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}
+* Fixed issue with rule “Avoid running SOQL and DML inside loops” {sf:AvoidSoqlInLoops}
 * Fixed issue with rule “RequireDescriptionComponent”
 * Fixed issue with rule “sf: FieldLevelSecurityRule”
 * Fixed issue with Organization images displaying as large icons in the org list
@@ -169,8 +169,8 @@ CodeScan Release 25.1.2 is comprised of the following 29 components:
 * Stopped unnecessary calls to monitor API after closing the modal of project analysis logs
 * Added email masking in Report Jobs
 * Fixed Authorization issue with IDP mapping while updating SAML connection
-* Disabled Refresh IP list for bitbucket and github cloud versions
-* Disabled the ability to see the Password related fields under “My Account” when they are a SAML / SSO user
+* Disabled Refresh IP list for Bitbucket and GitHub Cloud versions
+* Disabled the ability to see the password-related fields under “My Account” when they are a SAML / SSO user
 * Fixed Missing Column Error in New Database Setup
 
 ## SaaS Release 25.1.3
@@ -196,7 +196,7 @@ CodeScan Release 25.1.3 is comprised of the following 8 components:
 
 * IDE Usage not being captured for {specific} Dedicated cloud customer
 * Billing issue regarding standard and platform users
-* Restrict SaaS users to map only to saml org via idp group mapping
+* Restrict SaaS users to map only to SAML org via IDP group mapping
 
 &#x20;&#x20;
 

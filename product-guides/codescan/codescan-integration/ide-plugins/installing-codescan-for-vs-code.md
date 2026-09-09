@@ -27,8 +27,8 @@ Make sure you:
 4. In the **CodeScan UI**, ensure the user has permissions to execute the analysis; otherwise, a 'license not set' error will occur.
 5. Download the **CodeScan** extension from the marketplace
 6. Download the **Salesforce Extension pack** from the marketplace if you are working with Salesforce code or, at a minimum, the **Visualforce plugins**.
-7. Install **JDK version 17** or above.
-8. Install **Java Runtime (JRE) 17** version or later.
+7. Install **JDK version 17** or above (Oracle or Azul Zulu).
+8. Install **Java Runtime (JRE) 17** version or later (Oracle or Azul Zulu).
 9. Install the **Node.js 20 LTS** version.
 10. Uninstall the **Apex PMD** and **SonarLint™** plugins. The CodeScan and VS Code plugin will not work with SonarLint™ or Apex PMD installed.
 
@@ -96,6 +96,31 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 {% hint style="info" %}
 **Note:** If the project you have open in VS Code matches the project you connect to in CodeScan Cloud, your IDE scans will ignore any Won’t Fix or False Positive issues.
 {% endhint %}
+
+### Connecting Through a Corporate VPN or Proxy (e.g., Zscaler)
+
+If your organization routes traffic through a VPN client or a proxy service such as Zscaler, CodeScan may fail to connect even when the VPN itself reports a successful connection.
+
+To proceed with successful scans, the CodeScan URL has to be whitelisted.&#x20;
+
+Ask your IT team to whitelist **both**:
+
+* The CodeScan application URL for your region
+* The corresponding static IP address(es) for that instance
+
+| Region | Instance                    | Static IP(s)                                                                           |
+| ------ | --------------------------- | -------------------------------------------------------------------------------------- |
+| US     | https://app.codescan.io     | 35.169.190.187, 52.44.11.9, 44.209.244.72, 18.208.83.142, 18.211.102.177, 52.54.190.80 |
+| EU     | https://app-eu.codescan.io  | 3.121.33.223, 3.74.191.216                                                             |
+| AUS    | https://app-aus.codescan.io | 13.237.233.237                                                                         |
+
+For the current list, see [CodeScan Static IP Ranges](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-faqs/general/codescan-static-ip-ranges).
+
+{% hint style="info" %}
+Once whitelisted, you can point your IT team to the static IP ranges page above as evidence — it's the authoritative source if they need to confirm the addresses before approving the request.
+{% endhint %}
+
+**Dedicated instances:** the table above applies only to the shared US/EU/AUS servers. If you're on a dedicated instance, your server has its own URL and IP, separate from this list — whitelisting the shared addresses won't help. Contact your AutoRABIT account team or Support to get the specific address for your instance.
 
 ### Visual Studio Code Behind a Proxy <a href="#visual-studio-code-behind-a-proxy" id="visual-studio-code-behind-a-proxy"></a>
 
@@ -186,20 +211,19 @@ For **Node** installation, add the environment variable _**`NODEEXTRACA_CERTS`**
 
 ### Compatibility with Agentforce
 
-This plugin is compatible with **Agentforce version 2.2.0 and up**.
+This plugin is compatible with **Agentforce Vibes version 2.2.0 and up**.
 
-To allow CodeScan to run correctly there are 2 steps:
-
-1.  Turn off **Retrieval Augmented Generation** in the settings for Agentforce<br>
-
-    <figure><img src="../../../../.gitbook/assets/image (1636).png" alt=""><figcaption></figcaption></figure>
-2. Add the following lines to your settings.json file:
+To allow CodeScan to run correctly add the following lines to your settings.json file:
 
 ```
   "salesforce.einsteinForDevelopers.advanced": {
     "workspaceStatistics": false
   }
 ```
+
+Your settings.json file should look like this:
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-09-09 at 14.09.21.png" alt=""><figcaption></figcaption></figure>
 
 After these changes have been made, restart Visual Studio Code.
 

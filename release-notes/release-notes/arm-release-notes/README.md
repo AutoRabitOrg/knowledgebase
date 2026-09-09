@@ -263,7 +263,7 @@ With this fix, bundle metadata is handled correctly based on user selection, exc
 
 **Release Date:** **23 Aug 2026**
 
-#### **Data Loader Pro Org Re-Registration Consistency**
+#### Data Loader Pro Org Re-Registration Consistency
 
 Corrected inconsistent behavior between manual and scheduled executions after a Salesforce source org was re-registered with different name casing. The system now correctly identifies the source and destination orgs regardless of case sensitivity in the registration name.
 

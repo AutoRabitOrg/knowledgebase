@@ -605,7 +605,7 @@
       * [Salesforce Known Limitations](product-guides/arm/troubleshoot/known-issues-limitations/salesforce-known-limitations.md)
 * [ARM (New UI)](product-guides/arm-1/README.md)
   * [Getting Started](product-guides/arm-1/getting-started/README.md)
-    * [Signing Up with ARM](product-guides/arm-1/getting-started/signing-up-with-arm/README.md)
+    * [Signing Up With ARM](product-guides/arm-1/getting-started/signing-up-with-arm/README.md)
       * [Supported Browsers](product-guides/arm-1/getting-started/signing-up-with-arm/browser-support.md)
       * [User Profiles](product-guides/arm-1/getting-started/signing-up-with-arm/user-profile.md)
     * [Understanding ARM](product-guides/arm-1/getting-started/understanding-arm/README.md)

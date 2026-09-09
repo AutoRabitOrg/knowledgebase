@@ -52,26 +52,19 @@ About nCino Package Enabled: Selecting the **Enable nCino package** previously r
 3.  **`Generate Code Coverage Report:`** This function allows you to run all available Apex Test Classes in the Salesforce org and generate a code coverage report. The code coverage report will be emailed to your registered email id with the CSV file attached. The CSV file will contain the failed test classes that require the user's attention to resolve. Select **`Do you want us to update the test classes?`** checkbox to avoid classes from getting overwritten after deployment.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-4.  Attached is the sample email that will be notified to the user whenever the code coverage is run.
+4.  Attached is the sample email that will be sent to the user whenever the code coverage is run.
 
-    * Code Coverage with a success rate of more than 75%
 
-    <figure><img src="../../../../../../.gitbook/assets/image (8) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-    * Code Coverage with a failure count of more than 20
-
-    <figure><img src="../../../../../../.gitbook/assets/image (9) (2).png" alt="" width="341"><figcaption></figcaption></figure>
-
-    * Code Coverage with failure count of less than 20 (detailed error report will be included in the email body)
-
-    <figure><img src="../../../../../../.gitbook/assets/image (10) (2).png" alt="" width="301"><figcaption></figcaption></figure>
+    ![](<../../../../../../.gitbook/assets/unknown (25).webp>)
 
 ### Salesforce Org - Mappings <a href="#salesforce-org-mappings" id="salesforce-org-mappings"></a>
 
-Mapping your Salesforce org with your version control system or ALM configured in ARM. This helps create a control during a commit, merge, or deployment action performed on your Salesforce org or version control branch.\
-<br>
+Mapping your Salesforce org with your version control system or ALM configured in ARM. This helps create a control during a commit, merge, or deployment action performed on your Salesforce org or version control branch.<br>
 
-<figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.13.05 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+![Mappings](<../../../../../../.gitbook/assets/unknown (23).webp>)
+
+<br>
 
 Suppose you want to connect your Salesforce Org with Version Control as a **`GIT`**.&#x20;
 
@@ -79,13 +72,13 @@ Suppose you want to connect your Salesforce Org with Version Control as a **`GIT
 2. Select the respective version control **`Repository`** and the **`Branch`** for your GIT.
 3.  Click **`Test Connection`** to authenticate your connection.<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    ![Test Connection](<../../../../../../.gitbook/assets/unknown (24).webp>)
 4. Remember to click on **`Save Mappings`** to save the details, or else you need to repeat the above steps.
 
-In another scenario, let us assume you also like to configure JIRA (ALM tool) with your Salesforce org.&#x20;
+In another scenario, let us assume you also prefer to configure JIRA (ALM tool) with your Salesforce org.&#x20;
 
 {% hint style="info" %}
-**Important Note:** To proceed ahead with the below steps, make sure the JIRA is successfully integrated with ARM ([LEARN MORE](../../../../../arm/integration-and-plugins/jira.md))
+**Important Note:** To proceed with the following steps, make sure JIRA is successfully integrated with ARM ([LEARN MORE](../../../../../arm/integration-and-plugins/jira.md))
 {% endhint %}
 
 1. Click on the **`Mapping`** button beside JIRA.&#x20;

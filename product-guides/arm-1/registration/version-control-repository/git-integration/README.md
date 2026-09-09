@@ -105,18 +105,26 @@ While registering GIT with ARM, GIT fails to connect, resulting in _Authenticate
 This section guides you through creating your personal access token directly on GitHub.
 
 1. Log in to your GitHub account.
-2.  In the upper-right corner of any page, click your profile photo, then click **`Settings`**.
+2.  In the upper-right corner of any page, click your profile photo, then click **`Settings`**.<br>
 
-    ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677573644442.png\&width=768\&dpr=4\&quality=100\&sign=dcabb576\&sv=2)
+    ![Settings](<../../../../../.gitbook/assets/unknown (13).webp>)
+
+
 3.  In the left sidebar, click **`Developer settings`**.
 
-    ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677573747686.png\&width=768\&dpr=4\&quality=100\&sign=793f6a62\&sv=2)
+
+
+    ![Developer Settings](<../../../../../.gitbook/assets/unknown (14).webp>)
 4.  In the left sidebar, click **`Personal access tokens`**.
 
-    ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677573815455.png\&width=768\&dpr=4\&quality=100\&sign=24eeeb56\&sv=2)
+
+
+    ![Personal Access Tokens](<../../../../../.gitbook/assets/unknown (16).webp>)
 5.  Click **`Generate new token`**.
 
-    ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677573866680.png\&width=768\&dpr=4\&quality=100\&sign=ed24bf3c\&sv=2)
+
+
+    ![Generate Token](<../../../../../.gitbook/assets/unknown (17).webp>)
 6.  Give your token a descriptive name.
 
     ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677573923768.png\&width=768\&dpr=4\&quality=100\&sign=db561e6b\&sv=2)
@@ -128,6 +136,8 @@ This section guides you through creating your personal access token directly on 
     ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677574050356.png\&width=768\&dpr=4\&quality=100\&sign=e5ded83e\&sv=2)
 9.  Click ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1606156266000.png\&width=300\&dpr=4\&quality=100\&sign=25a8ef27\&sv=2) to copy the token to your clipboard. You cannot see the token again after navigating off the page for security reasons.
 
-    ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677577004671.png\&width=768\&dpr=4\&quality=100\&sign=62020c84\&sv=2)
+
+
+    ![Click the Copy icon to copy the token to your clipboard](<../../../../../.gitbook/assets/unknown (18).webp>)
 10. Use the copied token as a password for creating/updating the credential in ARM.
 11. Once updated, please use the same credential to authenticate the GIT.Important Note:Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.

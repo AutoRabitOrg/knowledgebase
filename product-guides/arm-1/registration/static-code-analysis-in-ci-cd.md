@@ -74,14 +74,12 @@ Apex PMD ships with a comprehensive default rule set, but you can supply your ow
 **Excluding a file in ARM + CodeScan**
 
 1. Go to **`Admin > My Account > Plugins > Static Code Analysis`**.
-2. Click **Edit** for CodeScan.
+2.  Click **Edit** for CodeScan.<br>
 
-<figure><img src="../../../.gitbook/assets/image (1539).png" alt="CodeScan plugin settings in ARM"><figcaption></figcaption></figure>
+    ![Edit](<../../../.gitbook/assets/unknown (28).webp>)
+3.  Use **Source File Exclusion** to list files you want to skip.<br>
 
-3. Use **Source File Exclusion** to list files you want to skip.
-
-<figure><img src="../../../.gitbook/assets/image (1540).png" alt="Source File Exclusion field in CodeScan settings"><figcaption></figcaption></figure>
-
+    ![Source File Exclusion](<../../../.gitbook/assets/unknown (29).webp>)
 4. Click **Save**, then rerun the analysis.
 
 **Note:** ARM exclusion settings take precedence over CodeScan exclusions. If exclusions are configured in ARM, ARM uses its own exclusion configuration. If no exclusions are configured in ARM, ARM automatically applies the exclusions configured in the CodeScan UI.
@@ -94,9 +92,9 @@ Apex PMD ships with a comprehensive default rule set, but you can supply your ow
 * Available branches are automatically fetched from CodeScan, allowing users to select a default branch for analysis.
 * Next, users select their ARM repositories and Salesforce orgs — automatically fetched from ARM’s registered resources.
 * These repositories or orgs are then mapped to the chosen CodeScan project and branch, establishing the link between the source (ARM) and the analysis destination (CodeScan).
-* Users can review, confirm, or override any mapping if required.
+*   Users can review, confirm, or override any mapping if required.<br>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    ![Configuration](<../../../.gitbook/assets/unknown (30).webp>)
 
 **Optional Setup Behavior**
 
@@ -156,9 +154,9 @@ You can enforce pass/fail thresholds for SCA across CI jobs, deployments, and ga
 
 1. Go to **`Admin > My Account > Validation Criteria – Static Code Analysis`**.
 2. Select **`Enable Validation Criteria – SCA`**.
-3. For each tool, define priority/severity thresholds (e.g., Apex PMD priorities 1–5). Use **`+`** to add multiple thresholds.
+3.  For each tool, define priority/severity thresholds (e.g., Apex PMD priorities 1–5). Use **`+`** to add multiple thresholds.<br>
 
-<figure><img src="../../../.gitbook/assets/image (704).png" alt="Validation criteria for static code analysis screen" width="557"><figcaption></figcaption></figure>
+    ![Setting Global Criteria for SCA](<../../../.gitbook/assets/unknown (31).webp>)
 
 ### 5. Running SCA in a CI job <a href="#id-5-running-sca-in-ci-job" id="id-5-running-sca-in-ci-job"></a>
 
@@ -198,23 +196,23 @@ To include SCA in a CI job:
 
 ### 6. Running SCA in CI job <a href="#id-6-running-sca-in-ci-job" id="id-6-running-sca-in-ci-job"></a>
 
-ARM also enforces SCA during EZ-Commits.
+ARM also enforces SCA during EZ-Commits.<br>
 
-<figure><img src="../../../.gitbook/assets/image (705).png" alt="Commit validation approval settings for static code analysis" width="450"><figcaption></figcaption></figure>
+![Commit Validation - Approval Settings](<../../../.gitbook/assets/unknown (32).webp>)
 
 1. Go to **`Admin > My Account > Commit Validation – Approval Settings`**.
 2. Select **`Enable criteria-based review process`**.
 3. Check **`Should pass validation criteria for Static Code Analysis`** and choose one or more tools.
 4. Optional:
-   * **Auto reject commit process if the criteria are not met** – reject automatically.
+   * **Auto-reject commit process if the criteria are not met** – reject automatically.
    * **Auto-approve on commit validation** – approve when thresholds pass.
    * **Auto-commit on approval** – commit immediately after approval.
 
 ### 7. Running an SCA during deployment <a href="#id-7-running-an-sca-during-deployment" id="id-7-running-an-sca-during-deployment"></a>
 
-On the **Deployment Settings** screen you can enable an SCA tool before deployment starts.
+On the **Deployment Settings** screen, you can enable an SCA tool before deployment starts.<br>
 
-<figure><img src="../../../.gitbook/assets/image (706).png" alt="Deployment settings with static code analysis option" width="466"><figcaption></figcaption></figure>
+![Deployment Settings screen](<../../../.gitbook/assets/unknown (33).webp>)
 
 ARM stores SCA source content for 90 days and deletes it afterward. PMD reports younger than 90 days omit source files from the report.
 
@@ -227,9 +225,9 @@ Select **`Stop deployment if build doesn't meet global criteria`** to block depl
 
 ### 8. Running an SCA during an EZ-Merge <a href="#id-8-running-an-sca-during-an-ezmerge" id="id-8-running-an-sca-during-an-ezmerge"></a>
 
-Choose an SCA tool during a pre-validation merge.
+Choose an SCA tool during a pre-validation merge.<br>
 
-<figure><img src="../../../.gitbook/assets/image (707).png" alt="New EZ-Merge page with static code analysis options" width="563"><figcaption></figcaption></figure>
+![Choose an SCA Tool](<../../../.gitbook/assets/unknown (35).webp>)
 
 * **Run Static Code Analysis** – enabled by default if SCA criteria are set globally.
 * **All supported metadata** – scans the whole target branch during an EZ-Merge, or only commit files during an EZ-Commit.

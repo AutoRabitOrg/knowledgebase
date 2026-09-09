@@ -45,7 +45,7 @@ Once the merge process is completed and pushed to the remote branch, AutoRABIT w
 
 1.  From the top navigation pane, navigate to **Create New > New EZ-Merge.**<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (2).png" alt="" width="310"><figcaption></figcaption></figure>
+    ![EZ-Merge](<../../../../../.gitbook/assets/unknown (20).webp>)
 2.  On the New Merge screen, select your **GIT Version Control Repository, Base Branch,** and the **Target Branch**.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (14) (1) (3).png" alt=""><figcaption></figcaption></figure>
@@ -62,7 +62,7 @@ AutoRABIT will create the GIT tag while CI Job is triggered and is successfully 
 
 1.  Go to the **New CI Job** screen.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (15) (1) (3).png" alt="" width="216"><figcaption></figcaption></figure>
+    ![CI Job Screen](<../../../../../.gitbook/assets/unknown (19).webp>)
 2. The new CI Job screen gives the job a descriptive name in the **CI Job Name** field.
 3. Under **Build**, select your **Version Control Systems,** your **Repository,** and the **Branch**.
 4. Go to the **Deploy** section.
@@ -80,8 +80,7 @@ AutoRABIT will create the GIT tag while CI Job is triggered and is successfully 
 2. Select the **Version Control Repository** and the **Tag** from the drop-down.
 3. Choose the **Destination org** for your deployment.
 4. The **Deployment Type** is auto-selected to **Full Deployment** by default. Full Deployment transfers all objects in the source org to the destination org.
-5. Once you are done with the selection, click on **Deploy**.
+5.  Once you are done with the selection, click on **Deploy**.<br>
 
-<figure><img src="../../../../../.gitbook/assets/image (675).png" alt=""><figcaption></figcaption></figure>
-
+    ![Deploy](<../../../../../.gitbook/assets/unknown (21).webp>)
 6. The remaining steps are similar to other deployments methods, do refer to the article: [Create and Deploy Changes](../../../../arm/arm-features/deployment/create-and-deploy-changes-in-autorabit.md)

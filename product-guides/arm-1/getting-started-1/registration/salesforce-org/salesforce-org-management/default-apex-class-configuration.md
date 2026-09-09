@@ -6,7 +6,7 @@
 
 ### Configure Default Apex Test Class for your Salesforce Org <a href="#configure-default-apex-text-class-for-your-salesforce-org" id="configure-default-apex-text-class-for-your-salesforce-org"></a>
 
-To configure the default **Apex Test Class** for your Salesforce org, follow the below steps:&#x20;
+To configure the default **Apex Test Class** for your Salesforce org, follow the steps below:&#x20;
 
 1. Log in to your ARM account.
 2. Hover your mouse over the Settings tab and click on the option: **`Salesforce Org`**.
@@ -55,10 +55,9 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 &#x20;    **`c. Add Manually:`**&#x4D;anually configure your default Apex Test class.
 
 5. On the next auto-populated screen, enter the **`Apex Test Class`** name and **`Apex Class/Trigger`** name in the respective fields. Mark the Apex class as default, and select the **`Default`** checkbox for such a test class.
-6. Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.
+6.  Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.<br>
 
-<figure><img src="../../../../../../.gitbook/assets/image (778).png" alt="" width="563"><figcaption></figcaption></figure>
-
+    ![Click Add or Clone](<../../../../../../.gitbook/assets/unknown (26).webp>)
 7. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../../../../arm/registration/salesforce-org/salesforce-org-management.md) page.
 
 ### Manage Apex Class <a href="#manage-apex-class" id="manage-apex-class"></a>
@@ -66,12 +65,12 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 Once you have added an Apex test class or classes, you can perform various actions:
 
 1. Click the **`edit`** icon next to the class name to modify its contents in a simple editor.
-2. Click the **`delete`** icon to delete the class from your organization. You can select individual test classes or all the apex test classes in one go.
+2.  Click the **`delete`** icon to delete the class from your organization. You can select individual test classes or all Apex test classes at once.<br>
 
-<figure><img src="../../../../../../.gitbook/assets/image (779).png" alt=""><figcaption></figcaption></figure>
+    ![Edit or Delete](<../../../../../../.gitbook/assets/unknown (27).webp>)
 
 {% hint style="info" %}
-**Important Note:** For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh its Salesforce org from the [**`Salesforce Org Management`**](../../../../../arm/registration/salesforce-org/salesforce-org-management.md) section.
+**Important Note:** For each code coverage operation executed for your Salesforce org, AutoRABIT will either update or append the Apex Test Class mapping dynamically. Therefore, to view the added or modified Apex Test classes once the code coverage operation is performed, the user must ensure to refresh their Salesforce org from the [**`Salesforce Org Management`**](../../../../../arm/registration/salesforce-org/salesforce-org-management.md) section.
 {% endhint %}
 
 ## Bulk Management of Apex Test Mappings (New UI)

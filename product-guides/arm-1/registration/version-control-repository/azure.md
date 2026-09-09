@@ -23,7 +23,7 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 4. On the next pop-up screen, give a Credential name.
 5.  Choose the Credential Type as Username with Password.<br>
 
-    ![](<../../../../.gitbook/assets/unknown (4).webp>)
+    ![Choose Credential Type as Username with Password](<../../../../.gitbook/assets/unknown (9).webp>)
 6. Enter your Azure Username and API Token (in the Password field), and we will store this encrypted.
 7. Click Save.
 
@@ -32,13 +32,13 @@ Before registering AzureDevOps Repository with ARM, you must check off some of t
 1. Log in to your ARM account.
 2.  Hover your mouse over the Admin module and click on VC Repo's.<br>
 
-    ![](<../../../../.gitbook/assets/unknown (5).webp>)
+    ![Click on VC Repo's](<../../../../.gitbook/assets/unknown (10).webp>)
 3.  Click on Register Repository.<br>
 
-    ![](<../../../../.gitbook/assets/unknown (6).webp>)
+    ![Click on Register Repository](<../../../../.gitbook/assets/unknown (11).webp>)
 4.  Select the Version Control System as GIT on the Register Repository page.<br>
 
-    ![](<../../../../.gitbook/assets/unknown (7).webp>)
+    ![Select the VCS as GIT](<../../../../.gitbook/assets/unknown (12).webp>)
 5. Enter the name of the repository to display it locally.
 6. Paste the Repository URL that Azure provides you.
 7. Choose the correct user's Credentials from the list. To create new credentials, click on the “+”.
@@ -54,7 +54,7 @@ Note: Click Test Connection to check if the connection has been authenticated or
 #### Points to Remember:
 
 1. Select the Enable SFDX checkbox to register your Azure repository in the SFDX structure.
-2. Select the Enable nCino checkbox if you want to register the Azure repository with nCino objects included. To quickly identify nCino registered Version Control Repositories among all other repositories, nCino logos are marked in front of the Repository Label.
+2. Select the Enable nCino checkbox if you want to register the Azure repository with nCino objects included. To quickly identify nCino-registered Version Control Repositories among all other repositories, nCino logos are marked in front of the Repository Label.
 3. The user can enable their Version Control Repository with SFDX or nCino enabled. Both cannot be enabled at the same time.
 
 ### Creating a Personal Access Token
@@ -62,7 +62,7 @@ Note: Click Test Connection to check if the connection has been authenticated or
 This section guides you through creating your personal access token directly on Azure.
 
 1. Log in to your Azure account.
-2.  In the upper-right corner of any page, click on the user settings beside profile photo, then click on Personal Access tokens.<br>
+2.  In the upper-right corner of any page, click on the user settings beside the profile photo, then click on Personal Access tokens.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2019).png" alt=""><figcaption></figcaption></figure>
 

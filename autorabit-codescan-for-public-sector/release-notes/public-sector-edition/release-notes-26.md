@@ -24,8 +24,8 @@ Removed third-party tracking scripts from the PubSec build to comply with securi
 
 Residual third-party tracking scripts were identified, and the following changes were made:
 
-1. Script removal: All third-party tracking script blocks have been completely removed from the PubSec build pipeline.
-2. Runtime guardrails: Added defensive null checks to prevent runtime errors when third-party tracking objects are not present in the environment.
+1. **Script removal**: All third-party tracking script blocks have been completely removed from the PubSec build pipeline.
+2. **Runtime guardrails**: Added defensive null checks to prevent runtime errors when third-party tracking objects are not present in the environment.
 
 **Outcome**
 
@@ -43,7 +43,7 @@ Residual third-party tracking scripts were identified, and the following changes
 
 AutoRABIT CodeScan PubSec 26.0.13 is comprised of the following components:
 
-* 4 New features
+* 4 New Features
 * 16 Application Enhancements
 * 3 New Rules
 * 5 Rule Enhancements
@@ -51,7 +51,7 @@ AutoRABIT CodeScan PubSec 26.0.13 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New features
+### New Features
 
 1. **Cross-File Analysis in IDE**
 
@@ -107,7 +107,7 @@ Users of GitHub Enterprise can now connect their GitHub Enterprise organization 
 
 **Benefit**
 
-Because CodeScan can now integrate with GitHub Enterprise via a GitHub App, authentication is now more secure, scalable, and enterprise compliant. This reduces credential management issues while enabling reliable multi-repo and multi-org analysis.
+Because CodeScan can now integrate with GitHub Enterprise via a GitHub App, authentication is now more secure, scalable, and enterprise-compliant. This reduces credential management issues while enabling reliable multi-repo and multi-org analysis.
 
 **Value / Purpose**
 
@@ -115,7 +115,7 @@ Because CodeScan can now integrate with GitHub Enterprise via a GitHub App, auth
 * Supports secure, scalable access across multiple organizations and repositories.
 * Improves compliance, auditability, and long-term maintainability of CodeScan’s GitHub integrations.
 
-We have validated the GitHub Enterprise flow in CodeScan for the following scenarios and verify that all are working as expected:
+We have validated the GitHub Enterprise flow in CodeScan for the following scenarios and verified that all are working as expected:
 
 * Main branch analysis
 * Pull Request analysis
@@ -142,7 +142,7 @@ How it works:
 
 * Before API calls, check if token expired
   * If expired, automatically refresh (generate new JWT → get new token)
-* NOTE: We have updated all API call methods to support both OAuth and GitHub Apps, and verified that OAuth continues to work (it is backward compatible).
+* NOTE: We have updated all API call methods to support both OAuth and GitHub Apps, and verified that OAuth continues to work (it is backwards compatible).
 * Additionally, analysis execution was verified after 8 hours, confirming that the token refresh mechanism (every 8 hours) is functioning as designed.
 
 
@@ -155,7 +155,7 @@ We have introduced a new **Exception** status in the issue lifecycle that allows
 
 When an issue is moved to the **Exception** status, CodeScan captures and stores the justification for auditing and tracking purposes. The status appears alongside existing issue statuses and is visible in issue details, filters, and reports.
 
-NOTE: The following description has been added to the Exception status: “The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.“
+**NOTE**: The following description has been added to the Exception status: “The issue has an approved exception and will be re-reviewed until mitigated or upon exception expiry.“
 
 **Benefit**\
 Users are provided with a dedicated **Exception** status, allowing them to clearly differentiate between resolved issues and intentionally accepted risks. This improves issue tracking, compliance transparency, and auditability.
@@ -165,7 +165,7 @@ Users are provided with a dedicated **Exception** status, allowing them to clear
 * Enables teams to formally document and track approved risk exceptions.
 * Improves visibility and governance over issues that are intentionally not fixed.
 
-Validated this new feature via the following scenarios and have verified that all scenarios are working as expected.
+Validated this new feature via the following scenarios and verified that all scenarios are working as expected.
 
 1\) Exception status is available in the status list on the issues page.
 
@@ -191,9 +191,9 @@ Validated this new feature via the following scenarios and have verified that al
 
 <figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-Comments in the activity section for Exception are able to deleted by the user (after these issues are moved into exception).
+Comments in the activity section for Exceptions can be deleted by the user (after these issues are moved into exception).
 
-Also, users already assigned to issues will remain assigned, even when moved to exception (if issue was assigned before moving or while moving the issues to exception).
+Also, users already assigned to issues will remain assigned, even when moved to exception (if the issue was assigned before moving or while moving the issues to exception).
 
 
 
@@ -261,7 +261,7 @@ then notifications will be **more relevant at an individual level**, reducing al
 * Only users with the checkbox **enabled receive email notifications** when a project analysis execution failure occurs.
 * Users with the checkbox **disabled do not receive** analysis execution failure notifications.
 * Changes to the subscription are **applied immediately** during notification recipient resolution.
-* Users subscribed to get the notification should receive emails for only the projects to which they have access. Users should not get mail notification for projects they are not part of.
+* Users subscribed to get notifications should receive emails only for the projects for which they have access. Users should not get mail notifications for projects they are not part of.
 
 The ticket “Enable / Disable Subscription for Analysis Failure Notifications” has been verified successfully.
 
@@ -275,7 +275,7 @@ Functionality is working as expected.
 
 Triggered Email Notifications are immediately sent to Subscribed Users on Analysis Failure, so they can be promptly informed and subsequently take action without waiting for manual checks or follow-up runs.
 
-When an intermittent project analysis failure is detected, the system will **trigger notifications in real time**, resolve recipients using the **Notification Subscribers module**, and send **email notifications containing relevant project context and failure details**.
+When an intermittent project analysis failure is detected, the system will **trigger notifications in real time**, resolve recipients using the **Notification Subscribers module**, and **send email notifications containing relevant project context and failure details**.
 
 **Benefit**
 
@@ -414,7 +414,7 @@ Notifications are not sent for:&#x20;
 * Helps teams proactively review exceptions before they expire. &#x20;
 * Reduces the risk of unnoticed expired exceptions. &#x20;
 * Improves compliance and governance processes. &#x20;
-* Provides users direct control over exception-related notifications.&#x20;
+* Provides users with direct control over exception-related notifications.&#x20;
 
 
 
@@ -488,7 +488,7 @@ NOTE:  Severity selection wasn’t available for custom Security Hotspots. To en
 
 **a.     Manual Expiry Date for Exception Issues**
 
-Enhanced Exception issue handling by allowing users to manually set an expiry date when marking issue an Exception.
+Enhanced Exception issue handling by allowing users to manually set an expiry date when marking an issue as an Exception.
 
 **Behavior**
 
@@ -518,7 +518,7 @@ Enhanced Exception issue handling by allowing Admins to configure automatic expi
 
 **Admin Configuration**
 
-Instance Admins can enable or disable auto-expiry and configure default expiry duration by severities:
+Instance Admins can enable or disable auto-expiry and configure default expiry duration by severity:
 
 * Blocker
 * Critical
@@ -530,9 +530,9 @@ Instance Admins can enable or disable auto-expiry and configure default expiry d
 
 When enabled:
 
-* Expiry date is calculated as current date plus configured severity duration.
+* Expiry date is calculated as the current date plus the configured severity duration.
 * Expiry is assigned automatically when an issue is moved to Exception.
-* Auto-assigned expiry is not editable at project or user level.
+* Auto-assigned expiry is not editable at the project or user level.
 * Existing issues are not affected by later admin configuration changes.
 
 **Validation**
@@ -563,7 +563,7 @@ Previously, invited users did not appear in the Members tab until they accepted 
 
 **Validation**
 
-Validated at organization level, including multiple invites, invite cleanup after 7 days, DB record creation, UI consistency, and status transition.
+Validated at the organization level, including multiple invites, invite cleanup after 7 days, DB record creation, UI consistency, and status transition.
 
 **Outcome**
 
@@ -659,13 +659,13 @@ Now CodeScan fetches repositories by:&#x20;
 
 **Validation**&#x20;
 
-Verified the Bitbucket project analysis. Users are able to see the repos as expected, and  the Project analysis and PR analysis are working as expected.
+Verified the Bitbucket project analysis. Users are able to see the repos as expected, and the Project analysis and PR analysis are working as expected.
 
 
 
 11. **Enhanced Parsing for Methods Named “void”**&#x20;
 
-Earlier, CodeScan parser wouldn’t process Apex methods named **void**.&#x20;
+Earlier, the CodeScan parser wouldn’t process Apex methods named **void**.&#x20;
 
 This enhancement: &#x20;
 
@@ -749,7 +749,7 @@ These failures are expected and confirm that parser strictness is preserved.&#x2
 
 **Conclusion**&#x20;
 
-* Parser now correctly supports void as a valid method name in Apex.&#x20;
+* The parser now correctly supports void as a valid method name in Apex.&#x20;
 * All valid usage patterns are successfully parsed across different contexts.&#x20;
 * Invalid syntax continues to be rejected as expected.&#x20;
 * No regressions observed in parsing behavior.&#x20;
@@ -766,7 +766,7 @@ In this release, we have enhanced this capability within the IDE plug-in, which 
 
 a. Verified the Cursor plugin using the provided VSIX file across multiple file types: .cls, .page, .java, .js, .trigger, .css, .ts, and .cmp. Violations are displayed as expected.
 
-b. Also verified the IDE Usage page, where Cursor usage is correctly reflected. We have tested and validated with multiple users and verified cross-user usage visibility is working as expected on the IDE Usage page.
+b. Also verified the IDE Usage page, where Cursor usage is correctly reflected. We have tested and validated with multiple users and verified that cross-user usage visibility is working as expected on the IDE Usage page.
 
 c. Additionally, verified the VS Code plugin using the same VSIX file. Violations are displayed correctly for all supported file types, e.g., .cls, .page, .java, .js, .trigger, .css, .ts, .cmp, in the PREVIEW environment.
 
@@ -784,7 +784,7 @@ This new feature allows organization admins to configure the default CodeScan us
 
 **How It Works**
 
-User type selection directly in the SSO/SAML configuration page to select either Platform Integration Users or Standard users.
+User type selection is done directly in the SSO/SAML configuration page to select either Platform Integration Users or Standard users.
 
 <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
@@ -822,7 +822,7 @@ Additional details regarding the Cursor IDE usage data:
   * Last X days
 * Can be exported as CSV for reporting and analysis
 
-Verified the Cursor IDE Usage on CodeScan in the page 'IDE USAGE' of the Adminstration and confirmed users are able to see the added Cursor symbol through the API call in the UI of the application. We also verified that existing behavior for VS Code and Intellij is working as expected.
+Verified the Cursor IDE Usage on CodeScan in the 'IDE USAGE' page of the Administration and confirmed users can see the added Cursor symbol through the API call in the UI of the application. We also verified that existing behavior for VS Code and IntelliJ is working as expected.
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
@@ -855,13 +855,13 @@ All the above scenarios are working as expected.
 Currently, while adding an ECA in Salesforce Org, the application does not provide a dynamically generated Callback URL for External Client App (ECA) configuration.
 
 * Users are required to manually construct and enter the Callback URL in Salesforce during ECA setup. The system does not display the exact instance-specific Callback URL within the application, nor does it provide a copy-to-clipboard option.
-* Users will assume the Call back URL as https://**\{{hostname\}}**.codescan.io, but the actual Callback URL that needs to be given while creating the ECA could be different.
+* Users will assume the callback URL is https://**\{{hostname\}}**.codescan.io, but the actual Callback URL that needs to be provided while creating the ECA could be different.
 
 This manual process increases the risk of:
 
 * Typographical errors
 * Missing or incomplete URL entries
-* Configuration failures due to incorrect Callback URL
+* Configuration failures due to an incorrect Callback URL
 * Increased onboarding/support effort
 
 **As such, we decided to enhance this feature by:**
@@ -877,11 +877,11 @@ This manual process increases the risk of:
 
 **Steps Taken**
 
-Implemented Callback URL button in the UI.
+Implemented a Callback URL button in the UI.
 
-Added a custom tooltip, copy icon and copied label when user copies the URL
+Added a custom tooltip, copy icon, and copied label when the user copies the URL.
 
-We have verified that **Callback URL** is displayed correctly, and the **Copy** button is working as expected.
+We have verified that the **Callback URL** is displayed correctly, and the **Copy** button is working as expected.
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -1127,7 +1127,7 @@ Enhanced selected security rules by adding standardized CVSS scoring.
 * GitLeaks Secret Detection in Visualforce & Lightning Files
 * Identify Potential Sensitive PII Fields
 * Resource Injection
-* Server Side Request Forgery
+* Server-Side Request Forgery
 * Validate Flow Run Context Mode
 
 **CVSS Details Added**
@@ -1154,7 +1154,7 @@ Improves severity visibility and helps users prioritize remediation more effecti
 * GitLeaks Secret Detection in Visualforce & Lightning Files
 * Identify Potential Sensitive PII Fields
 * Resource Injection
-* Server Side Request Forgery
+* Server-Side Request Forgery
 * Validate Flow Run Context Mode
 
 **CVSS Details Added**
@@ -1202,7 +1202,7 @@ Improves rule accuracy and helps detect governor-limit risks that were previousl
 
 1. **Resolved SAML Login Issue with Uppercase Organization Domains**&#x20;
 
-Fixed an issue where users could be unable to log in when the organization's domain name contained uppercase letters.&#x20;
+Fixed an issue where users were unable to log in when the organization's domain name contained uppercase letters.&#x20;
 
 Previously, the SAML login flow treated organization domains as case-sensitive. As a result, valid domains entered with uppercase or mixed-case characters could fail authentication, even though domain names should be handled case-insensitively.&#x20;
 
@@ -1344,7 +1344,7 @@ Pull Request Analysis:
 * sonar.pullRequest.key
 * sonar.pullRequest.base
 
-Previously, when an invalid or nonexisting base branch was provided:
+Previously, when an invalid or non-existing base branch was provided:
 
 * Analysis did not fail immediately.
 * A 404 error appeared later in analysis logs.
@@ -1394,7 +1394,7 @@ Previously, users could create and analyze comparison branches without a valid a
 
 **Behavior**
 
-* Comparison branch creation and analysis validation was improved to ensure a valid analyzed main branch exists before processing.
+* Comparison branch creation and analysis validation were improved to ensure a valid analyzed main branch exists before processing.
 * Users are now prevented from creating comparison branches when the main branch analysis is incomplete or interrupted.
 * Improved user-facing messaging was added for incomplete analysis states.
 * Instead of displaying technical metric computation errors, the UI now shows a clearer status message:
@@ -1435,13 +1435,13 @@ This could result in partially created projects with missing associated data suc
 **Behavior**
 
 * Special characters in Salesforce Organization Names are now properly supported.
-* UTF-8 safe handling was added for organization name processing and database conversion logic.
+* UTF-8-safe handling was added for organization name processing and database conversion logic.
 * Attribute conversion handling was improved to prevent failures during project creation.
 * Input validation and sanitization were enhanced while preserving expected functionality.
 
 **Validation**
 
-Validated using Salesforce organizations containing special characters including:
+Validated using Salesforce organizations containing special characters, including:
 
 * ®
 * ™
@@ -1613,13 +1613,13 @@ When users attempted to run an analysis on certain projects, the scan would not 
 
 **Outcome**
 
-Users with valid project scan access can now successfully start and complete analysis jobs without encountering "No scan access for project" error. The fix improves reliability and accuracy of permission validation during scan execution.
+Users with valid project scan access can now successfully start and complete analysis jobs without encountering the "No scan access for project" error. The fix improves reliability and accuracy of permission validation during scan execution.
 
 
 
 14. **Resolved “No Scan Access for Project” Errors Caused by Expired Salesforce Tokens**
 
-Fixed an issue where users could encounter a “No scan access for project”/ “expired access/refresh token” error when running scans against Salesforce-connected projects after Salesforce authentication token expiration.
+Fixed an issue where users could encounter a “No scan access for project” / “expired access/refresh token” error when running scans against Salesforce-connected projects after Salesforce authentication token expiration.
 
 The issue affected environments using Salesforce connected app integrations where expired or invalid access/refresh tokens prevented scan authorization and project access validation.
 
@@ -1650,7 +1650,7 @@ Fixed an issue where searching for a custom tag on the Rules page returned no re
 
 **Resolution**
 
-Corrected tag filtering behavior, so matching rules appear immediately when searching by tag.
+Corrected tag filtering behavior so matching rules appear immediately when searching by tag.
 
 **Outcomes**
 
@@ -1716,7 +1716,7 @@ QA verified the fix in the Preview environment:&#x20;
 
 * Re-ran the same reproduction steps after the fix deployment&#x20;
 * Confirmed that the analysis completes successfully without any errors&#x20;
-* Overuse Rule now handles the scenario correctly when the parent .object-meta.xml is not part of analyzed sources&#x20;
+* Overuse Rule now handles the scenario correctly when the parent .object-meta.xml is not part of the analyzed sources&#x20;
 
 
 
@@ -1759,7 +1759,7 @@ Initial attempts with small assignment chains did not reproduce the issue. The i
 
 This indicates that:
 
-* The problem is related to **depth of assignment traversal**
+* The problem is related to the **depth of assignment traversal**
 * Recursive evaluation of isSanitized leads to stack overflow at large depths
 
 **Validation**
@@ -1770,7 +1770,7 @@ This indicates that:
 ✔ isSanitized now handles edge cases without re-entering indefinitely\
 → Verified. Deep assignment chains no longer cause recursive overflow.
 
-As such, we confirm that the issue has been successfully remediated. The rule now handles deep assignment chains correctly and avoids infinite recursion in isSanitized, without causing a StackOverflowError.
+As such, we confirm that the issue has been successfully remediated. The rule now handles deep assignment chains correctly and avoids infinite recursion in isSanitized without causing a StackOverflowError.
 
 
 
@@ -1791,7 +1791,7 @@ Previously, the rule InsecureEndpointRule was throwing a ClassCastException due 
 **Results**
 
 * No ClassCastException observed.
-* Rule executes as expected across all tested scenarios.&#x20;
+* The rule executes as expected across all tested scenarios.&#x20;
 
 
 
@@ -1810,7 +1810,7 @@ Previously, the rule FieldLevelSecurityRule was throwing a NullPointerException 
 **Results**
 
 * No NullPointerException observed.
-* Rule behaves as expected.&#x20;
+* The rule behaves as expected.&#x20;
 
 
 
@@ -1820,9 +1820,9 @@ Previously, the rule FieldLevelSecurityRule was throwing a NullPointerException 
 
 **Description**
 
-Several customers were reporting a StackOverflowError for the rule “Resource Injection” {Rule ID: sf:ResourceInjection}. Based on the analysis of logs and review of implementation, we uncovered an infinite recursive call in the isSanitized method in the UrlSanitization.java and determined that this is the reason for the StackOverflowError.
+Several customers were reporting a StackOverflowError for the rule “Resource Injection” {Rule ID: sf:ResourceInjection}. Based on the analysis of logs and a review of the implementation, we uncovered an infinite recursive call in the isSanitized method in UrlSanitization.java and determined that this is the reason for the StackOverflowError.
 
-Previously, the analysis stayed in Running state and logs showed a StackOverflowError for the mutual-recursion flow (methodA -> methodB -> methodA) with no exit condition, ending in req.setEndpoint(url) with the Rule Resource Injection. After the fix, the same code analyzes successfully, completes normally, and no StackOverflowError is observed in logs.
+Previously, the analysis stayed in Running state, and logs showed a StackOverflowError for the mutual-recursion flow (methodA -> methodB -> methodA) with no exit condition, ending in req.setEndpoint(url) with the Rule Resource Injection. After the fix, the same code analyzes successfully, completes normally, and no StackOverflowError is observed in logs.
 
 **Validation after fix**
 

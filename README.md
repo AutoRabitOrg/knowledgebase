@@ -26,7 +26,8 @@ AutoRABIT is not just a toolset; it’s an ecosystem. Our enterprise-grade DevSe
 
 ## Knowledge Base Improvement
 
-If you have a suggestion to make the Knowledge Base more relevant and user-friendly, or a product or process improvement idea to add new or update existing content, use the Edit on GitHub feature at the top of every page under the AI-powered "Ask" icon to submit it directly to us. \
+If you have a suggestion to make the Knowledge Base more relevant and user-friendly, or a product or process improvement idea to add new or update existing content, use the Edit on GitHub feature at the top of every page under the AI-powered "Ask" icon to submit it directly to us.\
+&#x20;\
 ![](<.gitbook/assets/image (2856).png>)&#x20;
 
 Thanks for helping us make the Knowledge Base the most comprehensive, efficient AutoRABIT content repository for developers and administrators, all in one place.&#x20;

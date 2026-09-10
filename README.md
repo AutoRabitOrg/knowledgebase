@@ -22,12 +22,14 @@ AutoRABIT is not just a toolset; it’s an ecosystem. Our enterprise-grade DevSe
 * [**AutoRABIT Learning Hub**](https://learninghub.autorabit.com/)**:** Extend your AutoRABIT learning and collaborate with the AutoRABIT community.&#x20;
 * [**AutoRABIT Support Portal**](https://support.autorabit.com/portal/en/newticket?departmentId=241415000000006907\&layoutId=241415000000074011): Raise a ticket to contact the Documentation Team.
 
+<details>
 
-
-## Knowledge Base Improvement
+<summary>Submit an improvement via Pull Request </summary>
 
 If you have a suggestion to make the Knowledge Base more relevant and user-friendly, or a product or process improvement idea to add new or update existing content, use the Edit on GitHub feature at the top of every page under the AI-powered "Ask" icon to submit it directly to us.\
 &#x20;\
 ![](<.gitbook/assets/image (2856).png>)&#x20;
 
 Thanks for helping us make the Knowledge Base the most comprehensive, efficient AutoRABIT content repository for developers and administrators, all in one place.&#x20;
+
+</details>

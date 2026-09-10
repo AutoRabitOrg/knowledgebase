@@ -66,7 +66,7 @@ Need to change an invoice number format in one org only? Create a rule like this
 * **Criteria:** `a-{000}`
 * **Substitute:** `a-{001}`
 
-<figure><img src="../../../.gitbook/assets/image (732).png" alt="Example rule that changes displayFormat from a-{000} to a-{001} for a CustomObject"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2855).png" alt=""><figcaption></figcaption></figure>
 
 Click **Save** to store the rule. It appears in the list with **Edit**, **Delete**, and **Clone** icons.\
 <br>

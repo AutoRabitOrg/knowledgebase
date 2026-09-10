@@ -1,4 +1,4 @@
-# Performing Search and Substitute
+# Search and Substitute
 
 > **Audience:** Org Administrators only – general users don’t see these controls.
 
@@ -85,7 +85,7 @@ On the **Deployment Settings** screen:
 2. Move rules to **Selected** with ![](<../../../.gitbook/assets/image (734).png>) / ![](<../../../.gitbook/assets/image (735).png>).
 3. Use the arrows to order execution (top rule runs first).
 
-<figure><img src="../../../.gitbook/assets/image (736).png" alt="Deployment Settings with Search and Substitute rules selected"><figcaption></figcaption></figure>
+![](<../../../.gitbook/assets/unknown (37).webp>)
 
 ### Commit to Version Control <a href="#committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned" id="committing-the-changes-from-one-salesforce-org-to-a-version-control-branch-with-new-rules-assigned"></a>
 

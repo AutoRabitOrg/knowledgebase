@@ -18,9 +18,6 @@ CodeScan 26.0.20 is comprised of the following components:
 * 0 Rule Enhancements
 * 0 Rule Deprecations
 * 2 Fixes
-* 0 Revenue Org Improvements
-* 1 Architecture Improvement
-* 0 Adjustments
 
 Component details are listed in their corresponding sections within this document.
 

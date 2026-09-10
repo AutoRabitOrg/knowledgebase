@@ -191,6 +191,33 @@ sfdx codescan:run --token=$TOKEN --server=$SERVER --projectkey=$PROJECT_ID --org
 echo "Codescan completed. exit code: $exitCode"
 copado -u /tmp/result.json
 
+QUALITY_GATE_JSON=$(curl -s -u "$TOKEN:" --get \
+  "$SERVER/api/qualitygates/project_status" \
+  --data-urlencode "projectKey=$PROJECT_ID" \
+  --data-urlencode "pullRequest=$BRANCH")
+
+if echo "$QUALITY_GATE_JSON" | jq -e '.projectStatus' >/dev/null 2>&1; then
+  QUALITY_GATE_STATUS=$(echo "$QUALITY_GATE_JSON" | jq -r '.projectStatus.status // "UNKNOWN"')
+  QUALITY_GATE_CONDITIONS=$(echo "$QUALITY_GATE_JSON" | jq -r '
+    .projectStatus.conditions[]? |
+    "- " + (.metricKey // "Unknown metric") + ": " + (.status // "UNKNOWN") +
+    " (value: " + (.actualValue // "N/A") + ", threshold: " + (.errorThreshold // "N/A") + ")"
+  ')
+else
+  QUALITY_GATE_STATUS="UNAVAILABLE"
+  QUALITY_GATE_CONDITIONS="- Unable to retrieve quality-gate conditions from CodeScan"
+fi
+
+QUALITY_GATE_DETAILS=$(cat <<EOF
+Dashboard: $SERVER/dashboard?id=$PROJECT_ID&pullRequest=$BRANCH
+Quality Gate: $QUALITY_GATE_STATUS
+Conditions:
+$QUALITY_GATE_CONDITIONS
+EOF
+)
+QUALITY_GATE_DETAILS_B64=$(printf '%s' "$QUALITY_GATE_DETAILS" | base64 | tr -d '\n')
+echo "$QUALITY_GATE_DETAILS"
+
 copado -p "Creating Static Code Analysis Result record..."
 
 cat > /tmp/create-parent.apex <<'APEX_EOF'
@@ -208,7 +235,7 @@ if('${USER_STORY}' != ''){
     copado__Static_Code_Analysis_Result__c scar = new copado__Static_Code_Analysis_Result__c(
       recordtypeId = recTypeId,
       copado__User_Story__c = usid,
-      copado__Details__c = '${SERVER}/dashboard?id=${PROJECT_ID}&pullRequest=${BRANCH}'
+      copado__Details__c = EncodingUtil.base64Decode('${QUALITY_GATE_DETAILS_B64}').toString()
     );
     insert scar;
     System.debug('OUTPUT_SCAR_ID:' + scar.Id);
@@ -228,7 +255,7 @@ if('${USER_STORY}' != ''){
 }
 APEX_EOF
 
-sed "s|\${USER_STORY}|$USER_STORY|g; s|\${PARENT_ID}|$PARENT_ID|g; s|\${SERVER}|$SERVER|g; s|\${PROJECT_ID}|$PROJECT_ID|g; s|\${BRANCH}|$BRANCH|g" \
+sed "s|\${USER_STORY}|$USER_STORY|g; s|\${PARENT_ID}|$PARENT_ID|g; s|\${SERVER}|$SERVER|g; s|\${PROJECT_ID}|$PROJECT_ID|g; s|\${BRANCH}|$BRANCH|g; s|\${QUALITY_GATE_DETAILS_B64}|$QUALITY_GATE_DETAILS_B64|g" \
   /tmp/create-parent.apex > /tmp/create-parent-final.apex
 
 PARENT_OUTPUT=$(sf apex run --file /tmp/create-parent-final.apex --target-org copadoOrg --json)

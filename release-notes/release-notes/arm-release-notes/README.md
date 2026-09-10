@@ -2,6 +2,58 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.11**
+
+**Release Date: 13 Sep 2026**
+
+#### Apache Tomcat 11.0.24 Upgrade – Enhancement
+
+ARM now runs on **Apache Tomcat 11.0.24** on Shared, Dedicated, and On-Premise instances. This replaces **11.0.22** and includes Tomcat security and stability updates. Application startup and existing ARM workflows are unchanged.
+
+#### Salesforce Org Delete After Clone Fix
+
+Fixed an issue where a cloned Salesforce org could not be deleted if the org name contained a leading or trailing space. ARM showed **Salesforce org does not exist** even though the org was visible in the UI.
+
+With this fix, org names are trimmed when registering or cloning. Cloned orgs can be deleted in both the Classic UI and the New UI. Re-authentication no longer clears the cloned flag or the original registration date.
+
+#### EZ-Merge Validating Salesforce XML Log Fix
+
+Fixed an issue where **EZ-Merge** showed **No log data available** during the **Validating Salesforce XML** stage when **Skip Flow/Layout/Profile/Perm.Set Access-Setting Duplicity Check** was enabled.
+
+With this fix, that stage writes execution details to the process log in both the Classic UI and the New UI, for DX and Non-DX repositories.
+
+#### EZ-Commit Folder Metadata Duplicate Member Fix
+
+Fixed an issue where removing a folder-based metadata type and adding it again listed the same members twice. This affected folder types such as **ReportFolder**, **DashboardFolder**, **DocumentFolder**, and **EmailFolder**.
+
+With this fix, removing the folder clears its members. Adding the same folder again lists each member only once in both the Classic UI and the New UI, for DX and Non-DX repositories.
+
+#### CI Job Abort Cleanup Fix
+
+Fixed an issue where aborting a CI Job from the UI could leave an unhandled interruption error in the agent log during job cleanup.
+
+With this fix, abort completes for Version Control to Org and Org to Org CI Jobs without that agent error.
+
+#### Scratch Org Create Button Fix – New UI
+
+Fixed an issue in the New UI where **Create Scratch Org** stayed disabled on the last step of the Scratch Org flow when only the main user was present.
+
+With this fix, the button is enabled for a single main user and for orgs with multiple permitted users.
+
+#### SCA Job Name Validation Fix
+
+Fixed an issue where an SCA job name that included **\\** or **;** could be saved, then failed on Run or Delete. A semicolon in the name could also end the user session.
+
+With this fix, new SCA job names reject those characters. Existing jobs can still be run, scheduled, deleted, and viewed in logs and history.
+
+#### Branching Baseline Revision Details Fix – New UI
+
+Fixed an issue in the New UI where **Branching Baseline** Revision Details could fail to render the revision value.
+
+With this fix, Revision Details open from a completed baseline row and show author, date, message, file count, and revision without an error.
+
+***
+
 ## ARM **Release Notes 26.3.10**
 
 **Release Date: 6 Sep 2026**

@@ -83,12 +83,7 @@ If the **Delete** button is missing, your role lacks the required permission.
 
 Free up space by purging all workspaces idle since a given date.
 
-1.  Click **Settings**.
-
-    <figure><img src="../../../../.gitbook/assets/image (726).png" alt="Workspace Settings gear icon"><figcaption></figcaption></figure>
-2.  Choose the cutoff date and confirm.
-
-    <figure><img src="../../../../.gitbook/assets/image (727).png" alt="Delete inactive workspaces dialog" width="418"><figcaption></figcaption></figure>
+1. Click **Settings**.
 
 ***
 

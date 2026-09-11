@@ -1,14 +1,5 @@
 # Release Notes 26.3.2.0
 
-**Security and Bug Fixes | Public Sector Release**
-
-**Release Date:** August 12, 2026\
-**Release Type:** Security and Bug Fix Release (Maintenance)\
-**Build Images:** Created and documented on Confluence\
-**Previous Base:** Latest Public Sector release build prior to 26.3.2.0
-
-***
-
 ### Overview
 
 ARMOR release 26.3.2.0 includes **security fixes** and one important **configuration change** on top of the previous Public Sector release build.

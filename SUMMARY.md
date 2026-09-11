@@ -22,10 +22,10 @@
 
 * [Release Notes](autorabit-armor-for-public-sector/release-notes/README.md)
   * [Public-Sector Edition](autorabit-armor-for-public-sector/release-notes/public-sector-edition/README.md)
-    * [Release Notes 26.1.6.1](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.1.6.1.md)
-    * [Release Notes 26.3.1.0](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.3.1.0.md)
-    * [Release Notes 26.3.2.0](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.3.2.0.md)
     * [Release Notes 26.3.3.0](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.3.3.0.md)
+    * [Release Notes 26.3.2.0](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.3.2.0.md)
+    * [Release Notes 26.3.1.0](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.3.1.0.md)
+    * [Release Notes 26.1.6.1](autorabit-armor-for-public-sector/release-notes/public-sector-edition/release-notes-26.1.6.1.md)
 * [Product Guides](autorabit-armor-for-public-sector/product-guides.md)
 * [Support](autorabit-armor-for-public-sector/support.md)
 * [FAQ](autorabit-armor-for-public-sector/faq.md)

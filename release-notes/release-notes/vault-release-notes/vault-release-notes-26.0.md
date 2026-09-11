@@ -4,7 +4,7 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
 
-## AutoRABIT Vault Release Notes 26.2.5 <a href="#autorabit-vault-release-notes-26.2.5" id="autorabit-vault-release-notes-26.2.5"></a>
+## AutoRABIT Vault Release Notes 26.2.6 <a href="#autorabit-vault-release-notes-26.2.5" id="autorabit-vault-release-notes-26.2.5"></a>
 
 **Release Date: 13 Sep 2026**
 

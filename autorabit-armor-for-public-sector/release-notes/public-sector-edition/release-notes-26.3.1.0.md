@@ -1,15 +1,6 @@
 # Release Notes 26.3.1.0
 
-**Security and Bug Fixes | Public Sector Release**
-
-**Release Date:** July 8, 2026\
-**Release Type:** Security and Bug Fix Release (Maintenance)\
-**Build Images:** Created and documented on Confluence\
-**Previous Base:** Latest Public Sector release build prior to 26.3.1.0
-
-***
-
-### 1. Overview
+### Overview
 
 ARMOR release 26.3.1.0 includes **security fixes** and one important **bug fix** on top of the previous Public Sector release build.
 
@@ -21,7 +12,7 @@ No other new functional features or major changes have been introduced in this r
 
 ***
 
-### 2. Scope of Changes
+### Scope of Changes
 
 #### In Scope
 
@@ -34,7 +25,7 @@ Any new functionality, customer-facing features, architecture changes, performan
 
 ***
 
-### 3. Security Fixes Summary
+### Security Fixes Summary
 
 A total of **6 vulnerabilities** have been addressed in this release. These primarily consist of:
 
@@ -52,7 +43,7 @@ A total of **6 vulnerabilities** have been addressed in this release. These prim
 
 ***
 
-### 4. Detailed Fixes by Component
+### Detailed Fixes by Component
 
 The following tables list every vulnerability addressed in this release, grouped by the affected ARMOR service. Each entry corresponds to a tracked JIRA issue.
 

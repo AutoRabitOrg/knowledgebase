@@ -9,7 +9,7 @@
 
 ***
 
-### 1. Overview
+### Overview
 
 ARMOR release 26.3.2.0 includes **security fixes** and one important **configuration change** on top of the previous Public Sector release build.
 
@@ -22,7 +22,7 @@ Apart from the above, no new functional features or major changes have been intr
 
 ***
 
-### 2. Scope of Changes
+### Scope of Changes
 
 #### In Scope
 
@@ -35,7 +35,7 @@ Any new functionality, customer-facing features, architecture changes, performan
 
 ***
 
-### 3. Security Fixes Summary
+### Security Fixes Summary
 
 A total of **26 vulnerabilities** have been addressed in this release. These primarily consist of:
 
@@ -54,7 +54,7 @@ A total of **26 vulnerabilities** have been addressed in this release. These pri
 
 ***
 
-### 4. Detailed Fixes by Component
+### Detailed Fixes by Component
 
 The following tables list every vulnerability addressed in this release, grouped by the affected ARMOR service.
 

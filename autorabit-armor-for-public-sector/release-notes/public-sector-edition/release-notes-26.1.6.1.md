@@ -1,17 +1,6 @@
 # Release Notes 26.1.6.1
 
-**Security Vulnerability Fixes | Public Sector Release**
-
-**No Functional Changes**
-
-**Release Date:** June 26, 2026\
-**Release Type:** Security Patch Release (Maintenance)\
-**Build Images:** Created and documented on Confluence\
-**Previous Base:** Latest Public Sector release build prior to 26.1.6.1
-
-***
-
-### 1. Overview
+### Overview
 
 ARMOR release 26.1.6.1 is a **security-only patch release** focused exclusively on addressing identified vulnerabilities in the Public Sector environment.
 
@@ -21,7 +10,7 @@ This release applies targeted updates to underlying Red Hat Enterprise Linux pac
 
 ***
 
-### 2. Scope of Changes
+### Scope of Changes
 
 #### In Scope
 
@@ -38,7 +27,7 @@ Any new functionality, customer-facing features, architecture changes, performan
 
 ***
 
-### 3. Security Fixes Summary
+### Security Fixes Summary
 
 A total of **36 individual vulnerability fixes** have been applied. These primarily consist of:
 
@@ -58,7 +47,7 @@ A total of **36 individual vulnerability fixes** have been applied. These primar
 
 ***
 
-### 4. Detailed Fixes by Component
+### Detailed Fixes by Component
 
 The following tables list every vulnerability addressed in this release, grouped by the affected ARMOR service. Each entry corresponds to a tracked JIRA issue under the `PubSec-Vulns` label set.
 

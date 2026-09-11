@@ -2,13 +2,17 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.3.11 <a href="#ncino-release-26.3.10" id="ncino-release-26.3.10"></a>
+## nCino - Release 26.3.11 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
 
 **Release Date: 13 Sep 2026**
 
 #### **Automatic Cleanup of nCino CI Job Files**
 
 Resolved an issue where object files generated during nCino CI Job execution remained in the file system after the job was completed. These files are now automatically deleted after successful or failed job execution, including rollback-related processing. This prevents unnecessary file accumulation and improves storage management.
+
+#### **External ID Added to Salesforce Deployment Results**
+
+Deployment results now include the configured External ID field to help identify source records when Salesforce does not return a record ID. The External ID is available for successful and failed records in the application and downloadable result files across Feature Deployments, nCino CI Jobs, and Data Loader Pro.
 
 ## nCino - Release 26.3.10 <a href="#ncino-release-26.3.10" id="ncino-release-26.3.10"></a>
 

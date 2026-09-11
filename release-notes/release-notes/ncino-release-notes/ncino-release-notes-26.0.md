@@ -2,6 +2,14 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.3.11 <a href="#ncino-release-26.3.10" id="ncino-release-26.3.10"></a>
+
+**Release Date: 13 Sep 2026**
+
+#### **Automatic Cleanup of nCino CI Job Files**
+
+Resolved an issue where object files generated during nCino CI Job execution remained in the file system after the job was completed. These files are now automatically deleted after successful or failed job execution, including rollback-related processing. This prevents unnecessary file accumulation and improves storage management.
+
 ## nCino - Release 26.3.10 <a href="#ncino-release-26.3.10" id="ncino-release-26.3.10"></a>
 
 **Release Date: 6 Sep 2026**

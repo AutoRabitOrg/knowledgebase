@@ -2,6 +2,102 @@
 
 ## AutoRABIT Vault FAQs - Common Error Messages + Resolutions
 
+### Backup
+
+#### "Entity named '\<member\_name>' cannot be found" for Enhanced LWR Sites
+
+#### Issue
+
+During a Vault backup, customers may notice that **Enhanced LWR sites** are listed under `ExperienceBundle`and the retrieval fails with the following error:
+
+> **Entity named '\<member\_name>' cannot be found**
+
+Because of this retrieval error, Vault may show the overall backup status as **Completed** and display the failure counts.
+
+This can lead customers to believe that the Enhanced LWR site was not backed up successfully.
+
+#### Cause
+
+Salesforce provides multiple metadata types for Digital Experiences, including **DigitalExperience**, **DigitalExperienceBundle**, and **DigitalExperienceConfig**. These are separate Metadata API types. Salesforce's Metadata Coverage Report lists each of them independently.
+
+For **Enhanced LWR sites**, Salesforce uses `DigitalExperienceBundle` and `DigitalExperienceConfig` as the appropriate metadata types.
+
+In some scenarios, Salesforce may also expose the site under `ExperienceBundle`. When Vault attempts to retrieve the site through `ExperienceBundle`, Salesforce may return:
+
+> **Entity named '\<member\_name>' cannot be found**
+
+Even though Salesforce displays the data, it does not allow us to retrieve the data available under the “Experience Bundle”. Vault therefore records this as a retrieval failure and displays the overall backup as Completed.
+
+However, if the same Enhanced LWR site is successfully retrieved under `DigitalExperienceBundle`, the site has been backed up successfully.
+
+#### Important
+
+**The Completed status is expected in this scenario and does not indicate that the Enhanced LWR site was missed from the backup.**
+
+The `ExperienceBundle` retrieval failure is a non-impacting warning when the site is successfully available under `DigitalExperienceBundle`.
+
+**Note:-** Sites built on enhanced LWR (Winter '23 / API 56.0+) aren't retrievable as `ExperienceBundle` at all — they come back as `DigitalExperienceBundle`
+
+***
+
+#### Metadata Types by Digital Experience Framework
+
+| Salesforce Digital Experience Framework | Primary Metadata to Retrieve                     | Supporting Site Metadata                   | Common Dependencies                                                                                                                                                                                                    |
+| --------------------------------------- | ------------------------------------------------ | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Aura-based Experience Builder           | ExperienceBundle                                 | Network, CustomSite                        | NavigationMenu, AuraDefinitionBundle, LightningComponentBundle, ApexClass, ApexPage, CustomObject, CustomField, profiles, permission sets, static resources, documents, custom labels, and other referenced components |
+| Salesforce Tabs + Visualforce           | Network, CustomSite                              | Applicable ApexPage and ApexClass metadata | CustomTab, ApexComponent, StaticResource, CustomObject, CustomField, profiles, permission sets, documents, custom labels, and other referenced components                                                              |
+| LWR—standard/non-enhanced               | ExperienceBundle                                 | Network, CustomSite                        | NavigationMenu, LightningComponentBundle, ApexClass, CustomObject, CustomField, profiles, permission sets, static resources, custom labels, and other referenced components                                            |
+| Enhanced LWR                            | DigitalExperienceBundle, DigitalExperienceConfig | Network, CustomSite                        | NavigationMenu, LightningComponentBundle, ApexClass, CustomObject, CustomField, profiles, permission sets, static resources, custom labels, and other referenced components                                            |
+
+> **Note:** The dependencies listed above are examples and should not be considered mandatory for every site. The actual dependencies depend on the configuration and components used by the individual Digital Experience site.
+
+For example, an Aura site using a custom Apex controller would require the relevant `ApexClass`, whereas a site without custom Apex functionality would not.
+
+***
+
+#### How to Validate the Backup
+
+When an Enhanced LWR site results in a **Completed** status:
+
+1. Open the Vault backup details.
+2. Check the retrieval results for `DigitalExperienceBundle`.
+3. Confirm that the Enhanced LWR site was successfully retrieved under `DigitalExperienceBundle`.
+4. Verify that `DigitalExperienceConfig` was also successfully retrieved, where applicable.
+5. If the only failure is the `ExperienceBundle` retrieval with the error **"Entity named '\<member\_name>' cannot be found"**, the backup can be considered successful for the Enhanced LWR site.
+
+#### Example
+
+**ExperienceBundle**
+
+`Entity named '<member_name>' cannot be found` → **Failed**
+
+**DigitalExperienceBundle**
+
+Enhanced LWR site → **Successfully Retrieved**
+
+**Result:** The site is backed up successfully, and the overall **Completed** status is expected due to the unsuccessful `ExperienceBundle` retrieval.
+
+***
+
+#### Resolution / Customer Guidance
+
+No action is required if the Enhanced LWR site is successfully backed up under `DigitalExperienceBundle`.
+
+Customers should use the following metadata types for Enhanced LWR sites:
+
+* `DigitalExperienceBundle`
+* `DigitalExperienceConfig`
+* `Network`
+* `CustomSite`
+
+Additional dependencies should be included based on the actual site configuration.
+
+**Vault currently does not provide an option to suppress or ignore this specific** `ExperienceBundle` **retrieval warning.**
+
+#### Summary
+
+Under the current Vault behaviour, the backup may display a **Completed** status with a failure count when an Enhanced LWR site cannot be retrieved through `ExperienceBundle`. Enhanced LWR sites must be retrieved through `DigitalExperienceBundle` and their associated metadata types. If `DigitalExperienceBundle`, `DigitalExperienceConfig`, `Network`, `CustomSite`, and the applicable dependencies are retrieved successfully, the `ExperienceBundle` failure can be treated as a non-impacting warning and does not indicate that the Enhanced LWR site metadata was omitted.
+
 ### Restore/Replicate
 
 #### **CANNOT\_INSERT\_UPDATE\_ACTIVATE\_ENTITY**

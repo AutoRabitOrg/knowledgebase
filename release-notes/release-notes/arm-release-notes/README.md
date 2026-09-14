@@ -8,7 +8,7 @@
 
 #### Apache Tomcat 11.0.24 Upgrade – Enhancement
 
-ARM now runs on **Apache Tomcat 11.0.24** on Shared, Dedicated, and On-Premise instances. This replaces **11.0.22** and includes Tomcat security and stability updates. Application startup and existing ARM workflows are unchanged.
+ARM now runs on **Apache Tomcat 11.0.24** on Shared, Dedicated, and On-Premises instances. This replaces **11.0.22** and includes Tomcat security and stability updates. Application startup and existing ARM workflows are unchanged.
 
 #### Salesforce Org Delete After Clone Fix
 

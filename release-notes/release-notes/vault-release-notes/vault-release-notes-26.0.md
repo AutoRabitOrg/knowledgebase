@@ -10,19 +10,19 @@
 
 #### **Clone Masking Rules Across Objects**
 
-Added the ability to clone existing masking rules to compatible fields across multiple Salesforce objects. Vault identifies fields with the same data type and allows users to select the required target objects and fields. One rule per field type can be selected in a cloning operation, with support for up to five target objects. Vault identifies target fields that already have a masking rule, helping users avoid duplicate configurations. This reduces manual configuration effort and promotes consistent masking across Salesforce objects.
+Added the ability to clone existing masking rules to compatible fields across multiple Salesforce objects. AutoRABIT Vault identifies fields with the same data type and allows users to select the required target objects and fields. One rule per field type can be selected in a cloning operation, with support for up to five target objects. AutoRABIT Vault identifies target fields that already have a masking rule, helping users avoid duplicate configurations. This reduces manual configuration effort and promotes consistent masking across Salesforce objects.
 
 #### **Bulk Clone Masking Rules Across Salesforce Orgs**
 
-Added the ability to clone multiple masking rules from one Salesforce org to multiple target orgs in a single operation. Available masking rules are selected by default, and users can adjust the selection before choosing the target orgs. Vault validates the selected rules against each target org before completing the cloning operation. The summary and job logs display the outcome of the rules processed for each selected org. This simplifies the deployment of consistent masking configurations across multiple Salesforce environments.
+Added the ability to clone multiple masking rules from one Salesforce org to multiple target orgs in a single operation. Available masking rules are selected by default, and users can adjust the selection before choosing the target orgs. AutoRABIT Vault validates the selected rules against each target org before completing the cloning operation. The summary and job logs display the outcome of the rules processed for each selected org. This simplifies the deployment of consistent masking configurations across multiple Salesforce environments.
 
 #### **Archival Reports for Azure and Google Cloud Storage**
 
-Resolved an issue that prevented archival reports from being generated with Azure Blob Storage or Google Cloud Storage. Previously, report generation could fail even when the Archive job completed and archival data was available. Vault now generates archival reports successfully for supported Azure and Google Cloud storage configurations. This restores access to the reports required for archive validation and audit activities. Existing valid Archive configurations can continue to be used without changes.
+Resolved an issue that prevented archival reports from being generated with Azure Blob Storage or Google Cloud Storage. Previously, report generation could fail even when the Archive job completed and archival data was available. AutoRABIT Vault now generates archival reports successfully for supported Azure and Google Cloud storage configurations. This restores access to the reports required for archive validation and audit activities. Existing valid Archive configurations can continue to be used without changes.
 
 #### **Reliable Restoration of Experience Cloud Metadata**
 
-Resolved an issue that caused certain Experience Cloud metadata components to fail during Restore operations. Affected components could be referenced in the deployment manifest but omitted from the generated deployment package. Vault now includes the required metadata components consistently when preparing the Restore package. This allows affected ExperienceBundle and DigitalExperience components to be restored successfully. Restore operations affected by the previous behavior can be retried after upgrading.
+Resolved an issue that caused certain Experience Cloud metadata components to fail during Restore operations. Affected components could be referenced in the deployment manifest but omitted from the generated deployment package. AutoRABIT Vault now includes the required metadata components consistently when preparing the Restore package. This allows affected ExperienceBundle and DigitalExperience components to be restored successfully. Restore operations affected by the previous behavior can be retried after upgrading.
 
 #### **Search and Compare with Proxy Setup**
 
@@ -30,7 +30,9 @@ Resolved an issue affecting Search and Compare operations when Proxy Setup was e
 
 #### **Complete Profile Metadata in Full Backups**
 
-Resolved an issue that produced empty Profile metadata files in downloaded Full Metadata Backup packages. Profile-only backups were unaffected, but full backups could omit the content of included Profile files. Vault now captures and includes the complete Profile metadata during a Full Metadata Backup. This ensures downloaded backup packages contain the Profile information required for inspection and recovery. The correction applies to Full Metadata Backups created after this release.
+Resolved an issue that produced empty Profile metadata files in downloaded Full Metadata Backup packages. Profile-only backups were unaffected, but full backups could omit the content of included Profile files. AutoRABIT Vault now captures and includes the complete Profile metadata during a Full Metadata Backup. This ensures downloaded backup packages contain the Profile information required for inspection and recovery. The correction applies to Full Metadata Backups created after this release.
+
+***
 
 ## AutoRABIT Vault Release Notes 26.2.5 <a href="#autorabit-vault-release-notes-26.2.5" id="autorabit-vault-release-notes-26.2.5"></a>
 

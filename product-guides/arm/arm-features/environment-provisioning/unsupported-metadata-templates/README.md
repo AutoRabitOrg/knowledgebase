@@ -82,23 +82,24 @@ To create a new unsupported metadata template, please follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../../../.gitbook/assets/unknown (39).webp>)
 
-9.  However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
+9. However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
 
-    * Click on![](<../../../../../.gitbook/assets/image (23) (1) (1) (1) (1).png>)icon.
-    * Enter the page layout name in the **Page Layout** field.&#x20;
-    * Activate the page layout by selecting the **Active** checkbox.&#x20;
-    * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
-    * Click **OK**.
+* Click on![](<../../../../../.gitbook/assets/image (23) (1) (1) (1) (1).png>)icon.
+* Enter the page layout name in the **Page Layout** field.&#x20;
+* Activate the page layout by selecting the **Active** checkbox.&#x20;
+* You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
+* Click **OK**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
-10. Click **Save** to save the template.
-11. You can find your recently created template on the **Environment Provisioning History** page.
-12. The next step is to run the template on your destination Salesforce org.
-13. Look for your template on the **Environment Provisioning History** screen and click on **Run**.
-14. Select your **destination org** from the dropdown and enter the email address(es) to receive an email notification whenever the operation is carried out.
-15. Click **Run**.
+<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt="" width="534"><figcaption></figcaption></figure>
+
+1. Click **Save** to save the template.
+2. You can find your recently created template on the **Environment Provisioning History** page.
+3. The next step is to run the template on your destination Salesforce org.
+4. Look for your template on the **Environment Provisioning History** screen and click on **Run**.
+5. Select your **destination org** from the dropdown and enter the email address(es) to receive an email notification whenever the operation is carried out.
+6. Click **Run**.
 
 ### View History <a href="#view-history" id="view-history"></a>
 

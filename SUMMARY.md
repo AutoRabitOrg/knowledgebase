@@ -30,7 +30,7 @@
   * [Bitbucket App Password Deprecation – Action Required Before June 9, 2026](fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026.md)
   * [CodeScan Rules Deactivation](fundamentals/announcements/codescan-rules-deactivation.md)
   * [New CodeScan Rules for LWC Server-Side Rendering (SSR) Support](fundamentals/announcements/new-codescan-rules-for-lwc-server-side-rendering-ssr-support.md)
-  * [Azure DevOps Global Personal Access Token Retirement](fundamentals/announcements/azure-devops-global-personal-access-token-retirement.md)
+  * [Azure DevOps Global Personal Access Token Retirement on December 1, 2026](fundamentals/announcements/azure-devops-global-personal-access-token-retirement-on-december-1-2026.md)
 
 ## Release Notes
 
